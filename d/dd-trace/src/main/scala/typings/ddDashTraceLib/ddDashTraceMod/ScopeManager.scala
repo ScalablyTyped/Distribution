@@ -13,9 +13,9 @@ trait ScopeManager extends js.Object {
     * @param span The span for which to activate the new scope.
     * @param finishSpanOnClose Whether to automatically finish the span when the scope is closed.
     */
-  def activate(span: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Span */ js.Any): Scope = js.native
+  def activate(span: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Span */ js.Any): Scope = js.native
   def activate(
-    span: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Span */ js.Any,
+    span: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Span */ js.Any,
     finishSpanOnClose: scala.Boolean
   ): Scope = js.native
   /**

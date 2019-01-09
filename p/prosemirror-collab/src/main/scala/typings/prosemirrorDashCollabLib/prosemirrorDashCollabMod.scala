@@ -16,6 +16,6 @@ object prosemirrorDashCollabMod extends js.Object {
     steps: js.Array[prosemirrorDashTransformLib.prosemirrorDashTransformMod.Step[S]],
     clientIDs: js.Array[scala.Double | java.lang.String]
   ): prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S] = js.native
-  def sendableSteps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]): js.UndefOr[prosemirrorDashCollabLib.Anon_ClientIDSteps[S] | scala.Null] = js.native
+  def sendableSteps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]): js.UndefOr[prosemirrorDashCollabLib.Anon_ClientIDOrigins[S] | scala.Null] = js.native
 }
 

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distSdkInternalElementsMod.IElement because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-@JSImport("mendixmodelsdk/dist/sdk/internal/elements", "Element")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- mendixmodelsdkLib.distSdkInternalElementsMod.IElement because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined  */ @JSImport("mendixmodelsdk/dist/sdk/internal/elements", "Element")
 @js.native
 abstract class Element protected () extends AbstractElement {
   def this(model: mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalUnitsMod.ModelUnit, container: AbstractElement) = this()

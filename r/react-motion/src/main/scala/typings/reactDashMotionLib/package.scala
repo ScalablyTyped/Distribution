@@ -8,11 +8,11 @@ package object reactDashMotionLib {
   type InterpolateFunction = js.Function1[
     /* previousInterpolatedStyles */ js.UndefOr[
       js.Array[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify TransitionPlainStyle */ js.Any
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionPlainStyle */ js.Any
       ]
     ], 
     js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify TransitionStyle */ js.Any
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TransitionStyle */ js.Any
     ]
   ]
 }

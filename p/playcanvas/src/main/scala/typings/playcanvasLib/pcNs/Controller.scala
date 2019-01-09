@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Controller () extends js.Object {
   def this(element: stdLib.Element) = this()
-  def this(element: stdLib.Element, options: playcanvasLib.Anon_Keyboard) = this()
+  def this(element: stdLib.Element, options: playcanvasLib.Anon_Gamepads) = this()
   /**
     * @function
     * @name pc.Controller#attach

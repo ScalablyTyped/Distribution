@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait TabsRendererProps extends js.Object {
   var loadedTabs: js.Array[java.lang.String]
-  var navigationState: NavigationState[reactDashRouterDashNavigationDashCoreLib.Anon_Title]
-  var onIndexChange: js.Function1[/* index */ scala.Double, scala.Unit]
+  var navigationState: NavigationState[reactDashRouterDashNavigationDashCoreLib.Anon_TestID]
   var tabs: js.Array[Tab]
+  def onIndexChange(index: scala.Double): scala.Unit
 }
 

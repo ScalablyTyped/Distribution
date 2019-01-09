@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick<@material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, 'classes' | 'component'>>) */ trait ToggleButtonProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, 'classes' | 'component'> ]: @material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps[P]} */ trait ToggleButtonProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ToggleButtonClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[ToggleButtonProps]] = js.undefined

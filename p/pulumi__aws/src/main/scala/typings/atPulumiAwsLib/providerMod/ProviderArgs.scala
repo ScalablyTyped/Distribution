@@ -14,11 +14,9 @@ trait ProviderArgs extends js.Object {
   val allowedAccountIds: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
   ] = js.undefined
-  val assumeRole: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RoleArnSessionNameExternalId]
-  ] = js.undefined
+  val assumeRole: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ExternalIdPolicyRoleArn]] = js.undefined
   val endpoints: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_S3controlSns]]]
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AcmApigateway]]]
   ] = js.undefined
   val forbiddenAccountIds: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]

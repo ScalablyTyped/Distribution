@@ -140,7 +140,7 @@ trait SeriesPictorialBar extends js.Object {
     * "cubicOut"
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.animationEasingUpdate
     */
-  var animationEasingUpdate: js.UndefOr[echartsLib.Anon_AnimationDelayUpdate] = js.undefined
+  var animationEasingUpdate: js.UndefOr[echartsLib.Anon_AnimationDelay] = js.undefined
   /**
     * Whether to set graphic number threshold to animation.
     * Animation will be disabled when graphic number is larger than
@@ -446,9 +446,7 @@ trait SeriesPictorialBar extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.emphasis
     */
-  var emphasis: js.UndefOr[
-    echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderTypeAnonShadowOffsetXBackgroundColorShowAlign
-  ] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -505,7 +503,9 @@ trait SeriesPictorialBar extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.hoverAnimation
     */
-  var hoverAnimation: js.UndefOr[echartsLib.Anon_AnimationEasingUpdate] = js.undefined
+  var hoverAnimation: js.UndefOr[
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasingAnimationEasingUpdateAnimationThresholdBoolean
+  ] = js.undefined
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -522,7 +522,7 @@ trait SeriesPictorialBar extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -535,7 +535,7 @@ trait SeriesPictorialBar extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.label
     */
   var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlign
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily
   ] = js.undefined
   /**
     * Whether to enable highlighting chart when
@@ -555,21 +555,21 @@ trait SeriesPictorialBar extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.markArea
     */
-  var markArea: js.UndefOr[echartsLib.Anon_Silent] = js.undefined
+  var markArea: js.UndefOr[echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.markLine
     */
-  var markLine: js.UndefOr[echartsLib.Anon_Precision] = js.undefined
+  var markLine: js.UndefOr[echartsLib.Anon_AnimationAnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_SilentData] = js.undefined
+  var markPoint: js.UndefOr[echartsLib.Anon_Animation] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -1126,7 +1126,7 @@ trait SeriesPictorialBar extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pictorialBar.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "pictorialBar"

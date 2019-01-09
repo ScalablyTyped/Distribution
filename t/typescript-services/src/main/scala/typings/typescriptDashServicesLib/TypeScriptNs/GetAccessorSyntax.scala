@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typescriptDashServicesLib.TypeScriptNs.IPropertyAssignmentSyntax because Already inherited, typescriptDashServicesLib.TypeScriptNs.IMemberDeclarationSyntax because Already inherited)*/
-@JSGlobal("TypeScript.GetAccessorSyntax")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typescriptDashServicesLib.TypeScriptNs.IPropertyAssignmentSyntax because Already inherited- typescriptDashServicesLib.TypeScriptNs.IMemberDeclarationSyntax because Already inherited */ @JSGlobal("TypeScript.GetAccessorSyntax")
 @js.native
 class GetAccessorSyntax protected () extends SyntaxNode {
   def this(modifiers: ISyntaxList, getKeyword: ISyntaxToken, propertyName: ISyntaxToken, parameterList: ParameterListSyntax, typeAnnotation: TypeAnnotationSyntax, block: BlockSyntax, parsedInStrictMode: scala.Boolean) = this()

@@ -114,7 +114,7 @@ class ChartAxes ()
   def load(): ChartAxes = js.native
   def load(option: java.lang.String): ChartAxes = js.native
   def load(option: js.Array[java.lang.String]): ChartAxes = js.native
-  def load(option: officeDashJsLib.Anon_Select): ChartAxes = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ChartAxes = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.ChartAxesLoadOptions): ChartAxes = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartAxes): scala.Unit = js.native

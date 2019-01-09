@@ -19,7 +19,7 @@ class BoneIKController protected () extends js.Object {
     * @param options defines options to set up the controller
     */
   def this(mesh: AbstractMesh, bone: Bone) = this()
-  def this(mesh: AbstractMesh, bone: Bone, options: babylonjsLib.Anon_PoleTargetMesh) = this()
+  def this(mesh: AbstractMesh, bone: Bone, options: babylonjsLib.Anon_BendAxis) = this()
   var _adjustRoll: js.Any = js.native
   var _bendAxis: js.Any = js.native
   var _bone1: js.Any = js.native

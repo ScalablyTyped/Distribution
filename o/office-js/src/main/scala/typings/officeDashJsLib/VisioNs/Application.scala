@@ -47,7 +47,7 @@ class Application ()
   def load(): Application = js.native
   def load(option: java.lang.String): Application = js.native
   def load(option: js.Array[java.lang.String]): Application = js.native
-  def load(option: officeDashJsLib.Anon_Select): Application = js.native
+  def load(option: officeDashJsLib.Anon_Expand): Application = js.native
   def load(option: officeDashJsLib.VisioNs.InterfacesNs.ApplicationLoadOptions): Application = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Application): scala.Unit = js.native

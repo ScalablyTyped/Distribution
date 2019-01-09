@@ -37,7 +37,7 @@ trait Options extends js.Object {
     * Class name for the cloned DOM Element when using forceFallback
     */
   var fallbackClass: js.UndefOr[java.lang.String] = js.undefined
-  var fallbackOffset: js.UndefOr[sortablejsLib.Anon_Y] = js.undefined
+  var fallbackOffset: js.UndefOr[sortablejsLib.Anon_X] = js.undefined
   /**
     * Appends the cloned DOM Element into the Document's Body
     */
@@ -156,6 +156,6 @@ trait Options extends js.Object {
     * sorting inside list
     */
   var sort: js.UndefOr[scala.Boolean] = js.undefined
-  var store: js.UndefOr[sortablejsLib.Anon_SetSortable] = js.undefined
+  var store: js.UndefOr[sortablejsLib.Anon_Get] = js.undefined
 }
 

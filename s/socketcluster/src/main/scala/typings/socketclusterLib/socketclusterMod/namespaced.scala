@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("socketcluster", JSImport.Namespace)
 @js.native
 class namespaced () extends SocketCluster {
-  def this(options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify SCServer.SCServerOptions */ js.Any) = this()
+  def this(options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ js.Any) = this()
 }
 
 @JSImport("socketcluster", JSImport.Namespace)
@@ -16,7 +16,7 @@ class namespaced () extends SocketCluster {
 object namespaced extends js.Object {
   def create(): socketclusterLib.socketclusterMod.SocketCluster = js.native
   def create(
-    options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify SCServer.SCServerOptions */ js.Any
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ js.Any
   ): socketclusterLib.socketclusterMod.SocketCluster = js.native
 }
 

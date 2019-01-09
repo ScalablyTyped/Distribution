@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick<angular.angular.IAugmentedJQuery, {typemapped, typemapped, indexed, indexed}[keyof angular.angular.IAugmentedJQuery]>) */ trait UISortableUIItem[T] extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in {[ P in keyof angular.angular.IAugmentedJQuery ]: P} & {[ P in 'sortable' ]: never} & {[x: string] : never, [x: number] : never}[keyof angular.angular.IAugmentedJQuery] ]: angular.angular.IAugmentedJQuery[P]} */ trait UISortableUIItem[T] extends js.Object {
   var sortable: UISortableProperties[T]
 }
 

@@ -14,6 +14,6 @@ trait Auth0LockAdditionalSelectSignUpField extends js.Object {
   var placeholder: java.lang.String
   var prefill: js.UndefOr[java.lang.String | Auth0LockAdditionalSignUpFieldPrefillFunction] = js.undefined
   var `type`: js.UndefOr[auth0DashLockLib.auth0DashLockLibStrings.select] = js.undefined
-  var validator: js.UndefOr[js.Function1[/* input */ java.lang.String, Anon_Valid]] = js.undefined
+  var validator: js.UndefOr[js.Function1[/* input */ java.lang.String, Anon_Hint]] = js.undefined
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/timezone", JSImport.Namespace)
 @js.native
 object timezoneModMembers extends js.Object {
-  val Classes: atBlueprintjsTimezoneLib.Anon_TIMEZONEPICKERPOPOVER = js.native
-  val TimezoneDisplayFormat: atBlueprintjsTimezoneLib.Anon_NAME = js.native
+  val Classes: atBlueprintjsTimezoneLib.Anon_TIMEZONEPICKER = js.native
+  val TimezoneDisplayFormat: atBlueprintjsTimezoneLib.Anon_ABBREVIATION = js.native
 }
 

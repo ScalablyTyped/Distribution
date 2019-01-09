@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/es7/string", JSImport.Namespace)
 @js.native
 object libraryEs7StringMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_PadEnd]
+  extends org.scalablytyped.runtime.TopLevel[Anon_At]
 

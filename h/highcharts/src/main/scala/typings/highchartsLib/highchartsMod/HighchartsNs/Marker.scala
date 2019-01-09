@@ -12,7 +12,7 @@ trait Marker extends MarkerState {
     * @since 4.0.4
     */
   var height: js.UndefOr[scala.Double | scala.Null] = js.undefined
-  var states: js.UndefOr[highchartsLib.Anon_SelectHover] = js.undefined
+  var states: js.UndefOr[highchartsLib.Anon_HoverSelect] = js.undefined
   /**
     * A predefined shape or symbol for the marker. When null, the symbol is pulled from options.symbols. Other possible
     * values are 'circle', 'square', 'diamond', 'triangle' and 'triangle-down'.

@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(easyDashXapiDashSupertestLib.streamMod.WritableOptions because Would inherit conflicting mutable fields List(highWaterMark))*/
-
-trait TransformOptions extends ReadableOptions
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- easyDashXapiDashSupertestLib.streamMod.WritableOptions because var conflicts: highWaterMark. Inlined decodeStrings */ trait TransformOptions extends ReadableOptions {
+  var decodeStrings: js.UndefOr[scala.Boolean] = js.undefined
+}
 

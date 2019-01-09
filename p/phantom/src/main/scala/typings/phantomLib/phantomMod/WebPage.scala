@@ -130,21 +130,13 @@ trait WebPage extends js.Object {
   @JSName("on")
   def on_onError(
     event: phantomLib.phantomLibStrings.onError,
-    listener: js.Function2[
-      /* msg */ java.lang.String, 
-      /* trace */ js.Array[phantomLib.Anon_Function], 
-      scala.Unit
-    ]
+    listener: js.Function2[/* msg */ java.lang.String, /* trace */ js.Array[phantomLib.Anon_File], scala.Unit]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
   @JSName("on")
   def on_onError(
     event: phantomLib.phantomLibStrings.onError,
     runOnPhantom: phantomLib.phantomLibNumbers.`false`,
-    listener: js.Function2[
-      /* msg */ java.lang.String, 
-      /* trace */ js.Array[phantomLib.Anon_Function], 
-      scala.Unit
-    ]
+    listener: js.Function2[/* msg */ java.lang.String, /* trace */ js.Array[phantomLib.Anon_File], scala.Unit]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
   @JSName("on")
   def on_onFilePicker(
@@ -222,7 +214,7 @@ trait WebPage extends js.Object {
     event: phantomLib.phantomLibStrings.onResourceRequested,
     listener: js.Function2[
       /* requestData */ IRequestData, 
-      /* networkRequest */ phantomLib.Anon_ChangeUrl, 
+      /* networkRequest */ phantomLib.Anon_Abort, 
       scala.Unit
     ]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
@@ -232,7 +224,7 @@ trait WebPage extends js.Object {
     runOnPhantom: phantomLib.phantomLibNumbers.`false`,
     listener: js.Function2[
       /* requestData */ IRequestData, 
-      /* networkRequest */ phantomLib.Anon_ChangeUrl, 
+      /* networkRequest */ phantomLib.Anon_Abort, 
       scala.Unit
     ]
   ): js.Promise[phantomLib.Anon_PageId] = js.native
@@ -270,7 +262,7 @@ trait WebPage extends js.Object {
   @JSName("property")
   def property_canGoForward(key: phantomLib.phantomLibStrings.canGoForward): js.Promise[scala.Boolean] = js.native
   @JSName("property")
-  def property_clipRect(key: phantomLib.phantomLibStrings.clipRect): js.Promise[phantomLib.Anon_Top] = js.native
+  def property_clipRect(key: phantomLib.phantomLibStrings.clipRect): js.Promise[phantomLib.Anon_Height] = js.native
   @JSName("property")
   def property_cookies(key: phantomLib.phantomLibStrings.cookies): js.Promise[js.Array[ICookie]] = js.native
   @JSName("property")
@@ -292,13 +284,13 @@ trait WebPage extends js.Object {
   @JSName("property")
   def property_paperSize(key: phantomLib.phantomLibStrings.paperSize): js.Promise[IPaperSizeOptions] = js.native
   @JSName("property")
-  def property_scrollPosition(key: phantomLib.phantomLibStrings.scrollPosition): js.Promise[phantomLib.Anon_TopLeft] = js.native
+  def property_scrollPosition(key: phantomLib.phantomLibStrings.scrollPosition): js.Promise[phantomLib.Anon_Left] = js.native
   @JSName("property")
-  def property_viewportSize(key: phantomLib.phantomLibStrings.viewportSize): js.Promise[phantomLib.Anon_Height] = js.native
+  def property_viewportSize(key: phantomLib.phantomLibStrings.viewportSize): js.Promise[phantomLib.Anon_HeightWidth] = js.native
   @JSName("property")
   def property_zoomFactor(key: phantomLib.phantomLibStrings.zoomFactor): js.Promise[scala.Double] = js.native
   def render(filename: java.lang.String): js.Promise[scala.Unit] = js.native
-  def render(filename: java.lang.String, options: phantomLib.Anon_Quality): js.Promise[scala.Unit] = js.native
+  def render(filename: java.lang.String, options: phantomLib.Anon_Format): js.Promise[scala.Unit] = js.native
   def renderBase64(`type`: java.lang.String): js.Promise[java.lang.String] = js.native
   def sendEvent(keyboardEventType: java.lang.String, key: java.lang.String): js.Promise[scala.Unit] = js.native
   def sendEvent(keyboardEventType: java.lang.String, key: java.lang.String, null1: scala.Unit): js.Promise[scala.Unit] = js.native

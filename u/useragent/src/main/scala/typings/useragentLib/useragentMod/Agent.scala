@@ -45,7 +45,7 @@ class Agent ()
     * The representation of a parsed Operating System.
     */
   /* CompleteClass */
-  override def toJSON(): useragentLib.Anon_OsPatch = js.native
+  override def toJSON(): useragentLib.Anon_DeviceFamily = js.native
   /**
     * Outputs a compiled veersion number of the user agent.
     */

@@ -14,6 +14,6 @@ object asyncDashPollingModMembers extends js.Object {
       _
     ],
     delay: scala.Double
-  ): asyncDashPollingLib.Anon_Stop = js.native
+  ): asyncDashPollingLib.Anon_EventName = js.native
 }
 

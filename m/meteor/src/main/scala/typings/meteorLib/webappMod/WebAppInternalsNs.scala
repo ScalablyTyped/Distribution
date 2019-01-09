@@ -14,7 +14,7 @@ object WebAppInternalsNs extends js.Object {
   def generateBoilerplate(): scala.Unit = js.native
   def generateBoilerplateInstance(arch: java.lang.String, manifest: js.Any, additionalOptions: js.Any): js.Any = js.native
   def getBoilerplate(request: nodeLib.httpMod.IncomingMessage, arch: java.lang.String): java.lang.String = js.native
-  def identifyBrowser(userAgentString: java.lang.String): meteorLib.Anon_Minor = js.native
+  def identifyBrowser(userAgentString: java.lang.String): meteorLib.Anon_Major = js.native
   def inlineScriptsAllowed(): scala.Boolean = js.native
   def parsePort(port: java.lang.String): scala.Double = js.native
   def registerBoilerplateDataCallback(key: java.lang.String, callback: js.Function): js.Function = js.native

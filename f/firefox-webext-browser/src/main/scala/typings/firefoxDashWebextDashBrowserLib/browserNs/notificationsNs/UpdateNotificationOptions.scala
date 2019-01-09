@@ -12,7 +12,7 @@ trait UpdateNotificationOptions extends js.Object {
     * Text and icons for up to two notification action buttons.
     * @deprecated Unsupported on Firefox at this time.
     */
-  var buttons: js.UndefOr[js.Array[firefoxDashWebextDashBrowserLib.Anon_TitleIconUrl]] = js.undefined
+  var buttons: js.UndefOr[js.Array[firefoxDashWebextDashBrowserLib.Anon_IconUrl]] = js.undefined
   /** Alternate notification content with a lower-weight font. */
   var contextMessage: js.UndefOr[java.lang.String] = js.undefined
   /** A timestamp associated with the notification, in milliseconds past the epoch. */

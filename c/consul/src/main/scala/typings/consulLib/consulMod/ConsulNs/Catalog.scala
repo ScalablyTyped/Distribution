@@ -12,19 +12,19 @@ trait Catalog extends js.Object {
     * Lists known datacenters
     */
   @JSName("datacenters")
-  var datacenters_Original: consulLib.Anon_OptsCallbackTDataDatacentersOptions = js.native
+  var datacenters_Original: consulLib.Anon_CallbackOptsDatacentersOptions = js.native
   var node: consulLib.consulMod.ConsulNs.CatalogNs.Node = js.native
   /**
     * Lists nodes in a given DC
     */
   @JSName("nodes")
-  var nodes_Original: consulLib.Anon_DcCallbackOptsTData = js.native
+  var nodes_Original: consulLib.Anon_CallbackDcOptsNodesOptions = js.native
   var service: consulLib.consulMod.ConsulNs.CatalogNs.Service = js.native
   /**
     * Lists services in a given DC
     */
   @JSName("services")
-  var services_Original: consulLib.Anon_DcCallbackOpts = js.native
+  var services_Original: consulLib.Anon_CallbackDcOptsServicesOptions = js.native
   /**
     * Lists known datacenters
     */

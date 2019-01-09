@@ -18,9 +18,7 @@ trait ParameterGroupArgs extends js.Object {
     * The parameters of the parameter group.
     */
   val parameters: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ValueNameInput]]
-    ]
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameValue]]]
   ] = js.undefined
 }
 

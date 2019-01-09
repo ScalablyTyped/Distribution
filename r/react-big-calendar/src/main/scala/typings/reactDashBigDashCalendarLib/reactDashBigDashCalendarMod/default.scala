@@ -15,7 +15,7 @@ object default extends js.Object {
   /**
     * action constants for Navigate
     */
-  var Navigate: reactDashBigDashCalendarLib.Anon_PREVIOUS = js.native
+  var Navigate: reactDashBigDashCalendarLib.Anon_DATE = js.native
   /**
     * action constants for View
     */

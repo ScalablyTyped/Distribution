@@ -38,7 +38,7 @@ class Certificate protected ()
   /**
     * A list of attributes to feed into other resources to complete certificate validation. Can have more than one element, e.g. if SANs are defined. Only set if `DNS`-validation was used.
     */
-  val domainValidationOptions: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ResourceRecordTypeDomainName]] = js.native
+  val domainValidationOptions: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DomainName]] = js.native
   /**
     * The certificate's PEM-formatted private key
     */

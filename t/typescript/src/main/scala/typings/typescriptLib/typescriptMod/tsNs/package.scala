@@ -9,7 +9,7 @@ package object tsNs {
   type AccessorDeclaration = GetAccessorDeclaration | SetAccessorDeclaration
   type AdditiveOperator = SyntaxKind
   type AdditiveOperatorOrHigher = MultiplicativeOperatorOrHigher | AdditiveOperator
-  type AffectedFileResult[T] = js.UndefOr[typescriptLib.Anon_Result[T]]
+  type AffectedFileResult[T] = js.UndefOr[typescriptLib.Anon_Affected[T]]
   type ArrayBindingElement = BindingElement | OmittedExpression
   type ArrayBindingOrAssignmentPattern = ArrayBindingPattern | ArrayLiteralExpression
   type AssertionExpression = TypeAssertion | AsExpression

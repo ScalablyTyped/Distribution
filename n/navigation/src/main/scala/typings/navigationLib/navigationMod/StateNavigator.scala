@@ -178,7 +178,7 @@ class StateNavigator () extends js.Object {
     * Parses the url out into State and Navigation Data
     * @param url The url to parse
     */
-  def parseLink(url: java.lang.String): navigationLib.Anon_State = js.native
+  def parseLink(url: java.lang.String): navigationLib.Anon_Data = js.native
   /**
     * Navigates to the current State
     * @param navigationData The NavigationData to be passed to the current

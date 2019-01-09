@@ -7,11 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait MultiSortReturn extends js.Object {
   /**
-    * Sort property to be passed to the `Table` component.
-    * This function updates `sortBy` and `sortDirection` values.
-    */
-  var sort: js.Function1[/* params */ SortParams, scala.Unit]
-  /**
     * Specifies the fields currently responsible for sorting data,
     * In order of importance.
     */
@@ -20,5 +15,10 @@ trait MultiSortReturn extends js.Object {
     * Specifies the direction a specific field is being sorted in.
     */
   var sortDirection: SortDirectionMap
+  /**
+    * Sort property to be passed to the `Table` component.
+    * This function updates `sortBy` and `sortDirection` values.
+    */
+  def sort(params: SortParams): scala.Unit
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Company extends js.Object {
-  var company: Anon_Minimum
-  var individual: Anon_Minimum
+  var company: Anon_Additional
+  var individual: Anon_Additional
 }
 

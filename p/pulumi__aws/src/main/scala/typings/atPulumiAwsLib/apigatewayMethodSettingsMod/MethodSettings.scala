@@ -29,7 +29,7 @@ class MethodSettings protected ()
   /**
     * The settings block, see below.
     */
-  val settings: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_CacheTtlInSeconds] = js.native
+  val settings: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_CacheDataEncrypted] = js.native
   /**
     * The name of the stage
     */

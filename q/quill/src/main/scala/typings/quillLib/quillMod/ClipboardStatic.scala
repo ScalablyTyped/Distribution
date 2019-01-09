@@ -11,16 +11,16 @@ trait ClipboardStatic extends js.Object {
     selectorOrNodeType: java.lang.String,
     callback: js.Function2[
       /* node */ js.Any, 
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ /* delta */ js.Any, 
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ _
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ /* delta */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ _
     ]
   ): scala.Unit = js.native
   def addMatcher(
     selectorOrNodeType: scala.Double,
     callback: js.Function2[
       /* node */ js.Any, 
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ /* delta */ js.Any, 
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ _
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ /* delta */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ _
     ]
   ): scala.Unit = js.native
   def convert(): js.Any = js.native

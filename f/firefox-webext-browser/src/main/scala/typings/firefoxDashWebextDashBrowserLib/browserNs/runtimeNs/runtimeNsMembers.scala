@@ -12,7 +12,7 @@ object runtimeNsMembers extends js.Object {
   val id: java.lang.String = js.native
   /* runtime properties */
   /** This will be defined during an API method callback if there was an error */
-  val lastError: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_Message] = js.native
+  val lastError: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_MessageString] = js.native
   /**
     * Fired when an update for the browser is available, but isn't installed immediately because a browser restart is
     * required.
@@ -28,7 +28,7 @@ object runtimeNsMembers extends js.Object {
     * browser is updated to a new version.
     */
   val onInstalled: firefoxDashWebextDashBrowserLib.WebExtEvent[
-    js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_PreviousVersion, scala.Unit]
+    js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_IdPreviousVersion, scala.Unit]
   ] = js.native
   /**
     * Fired when a message is sent from either an extension process or a content script.
@@ -198,7 +198,7 @@ object runtimeNsMembers extends js.Object {
   def sendMessage(
     extensionId: java.lang.String,
     message: js.Any,
-    options: firefoxDashWebextDashBrowserLib.Anon_ToProxyScript
+    options: firefoxDashWebextDashBrowserLib.Anon_IncludeTlsChannelIdToProxyScript
   ): js.Promise[_] = js.native
   /**
     * Sends a single message to event listeners within your extension/app or a different extension/app. Similar to
@@ -210,7 +210,7 @@ object runtimeNsMembers extends js.Object {
     * Allowed in: Proxy scripts
     */
   def sendMessage(message: js.Any): js.Promise[_] = js.native
-  def sendMessage(message: js.Any, options: firefoxDashWebextDashBrowserLib.Anon_ToProxyScript): js.Promise[_] = js.native
+  def sendMessage(message: js.Any, options: firefoxDashWebextDashBrowserLib.Anon_IncludeTlsChannelIdToProxyScript): js.Promise[_] = js.native
   /**
     * Send a single message to a native application.
     * @param application The name of the native messaging host.

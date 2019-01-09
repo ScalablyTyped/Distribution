@@ -19,7 +19,7 @@ trait AttachmentsResource extends js.Object {
     * from a signed-in user with &#42;&#42;Is owner&#42;&#42; or &#42;&#42;Can edit&#42;&#42; permissions in the
     * Google Developers Console project.
     */
-  def batchDelete(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenPrettyPrintBearertokenProjectId): gapiDotClientLib.gapiNs.clientNs.Request[DeleteAttachmentsResponse]
+  def batchDelete(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[DeleteAttachmentsResponse]
   /**
     * Associates the given data with the specified beacon. Attachment data must
     * contain two parts:
@@ -38,9 +38,7 @@ trait AttachmentsResource extends js.Object {
     * from a signed-in user with &#42;&#42;Is owner&#42;&#42; or &#42;&#42;Can edit&#42;&#42; permissions in the
     * Google Developers Console project.
     */
-  def create(
-    request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenPrettyPrintBearertokenProjectIdCallbackQuotaUser
-  ): gapiDotClientLib.gapiNs.clientNs.Request[BeaconAttachment]
+  def create(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName): gapiDotClientLib.gapiNs.clientNs.Request[BeaconAttachment]
   /**
     * Deletes the specified attachment for the given beacon. Each attachment has
     * a unique attachment name (`attachmentName`) which is returned when you
@@ -52,9 +50,7 @@ trait AttachmentsResource extends js.Object {
     * from a signed-in user with &#42;&#42;Is owner&#42;&#42; or &#42;&#42;Can edit&#42;&#42; permissions in the
     * Google Developers Console project.
     */
-  def delete(
-    request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenPrettyPrintBearertokenProjectIdCallback
-  ): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltAttachmentName): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Returns the attachments for the specified beacon that match the specified
     * namespaced-type pattern.
@@ -68,6 +64,6 @@ trait AttachmentsResource extends js.Object {
     * from a signed-in user with &#42;&#42;viewer&#42;&#42;, &#42;&#42;Is owner&#42;&#42; or &#42;&#42;Can edit&#42;&#42;
     * permissions in the Google Developers Console project.
     */
-  def list(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenPrettyPrintBearertokenProjectId): gapiDotClientLib.gapiNs.clientNs.Request[ListBeaconAttachmentsResponse]
+  def list(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListBeaconAttachmentsResponse]
 }
 

@@ -21,12 +21,6 @@ trait Anon_Accesstoken extends js.Object {
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * Optional language code for localized friendly category names.
-    * If omitted or if localized strings are not available,
-    * en-US strings will be returned.
-    */
-  var languageCode: js.UndefOr[java.lang.String] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */

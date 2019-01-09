@@ -19,7 +19,7 @@ object electronModMembers extends js.Object {
   val inAppPurchase: electronLib.ElectronNs.InAppPurchase = js.native
   val ipcMain: electronLib.ElectronNs.IpcMain = js.native
   val ipcRenderer: electronLib.ElectronNs.IpcRenderer = js.native
-  val nativeImage: org.scalablytyped.runtime.Instantiable0[electronLib.ElectronNs.NativeImage] = js.native
+  val nativeImage: electronLib.Anon_Buffer = js.native
   val net: electronLib.ElectronNs.Net = js.native
   val netLog: electronLib.ElectronNs.NetLog = js.native
   val powerMonitor: electronLib.ElectronNs.PowerMonitor = js.native
@@ -27,10 +27,10 @@ object electronModMembers extends js.Object {
   val protocol: electronLib.ElectronNs.Protocol = js.native
   val remote: electronLib.ElectronNs.Remote = js.native
   val screen: electronLib.ElectronNs.Screen = js.native
-  val session: org.scalablytyped.runtime.Instantiable0[electronLib.ElectronNs.Session] = js.native
+  val session: electronLib.Anon_DefaultSession = js.native
   val shell: electronLib.ElectronNs.Shell = js.native
   val systemPreferences: electronLib.ElectronNs.SystemPreferences = js.native
-  val webContents: org.scalablytyped.runtime.Instantiable0[electronLib.ElectronNs.WebContents] = js.native
+  val webContents: electronLib.Anon_FromIdGetAllWebContents = js.native
   val webFrame: electronLib.ElectronNs.WebFrame = js.native
   val webviewTag: electronLib.ElectronNs.WebviewTag = js.native
 }

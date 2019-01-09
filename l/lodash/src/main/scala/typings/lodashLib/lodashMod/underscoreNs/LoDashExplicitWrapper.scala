@@ -2295,7 +2295,7 @@ trait LoDashExplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.noConflict
     */
-  def noConflict(): LoDashExplicitWrapper[LoDashStatic] = js.native
+  def noConflict(): LoDashExplicitWrapper[/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ */ _] = js.native
   /**
     * @see _.noop
     */

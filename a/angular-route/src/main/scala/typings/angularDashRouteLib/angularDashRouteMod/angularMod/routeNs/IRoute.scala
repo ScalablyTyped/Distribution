@@ -46,7 +46,7 @@ trait IRoute extends js.Object {
     * is if the `redirectTo` is a function that returns `undefined`. In this case the route transition occurs
     * as though there was no redirection.
     */
-  var redirectTo: js.UndefOr[java.lang.String | angularDashRouteLib.Anon_RouteParamsLocationPath] = js.undefined
+  var redirectTo: js.UndefOr[java.lang.String | angularDashRouteLib.Anon_LocationPath] = js.undefined
   /**
     * {boolean=true}
     * Reload route when only `$location.search()` or `$location.hash()` changes.

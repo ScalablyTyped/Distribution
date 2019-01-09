@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("mendixmodelsdk/dist/gen/appservices", "appservices")
 @js.native
 object appservicesNs extends js.Object {
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IAppServiceAction because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IAppServiceAction because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsConsumedAppService, name, parameters, asLoaded, load, load, load, load */ @js.native
   class AppServiceAction protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -18,7 +18,7 @@ object appservicesNs extends js.Object {
       */
     var actionReturnType: mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.DataType = js.native
     var caption: java.lang.String = js.native
-    val containerAsConsumedAppService: ConsumedAppService = js.native
+    val containerAsConsumedAppService: ConsumedAppService | IConsumedAppService = js.native
     var description: java.lang.String = js.native
     var image: java.lang.String = js.native
     var microflow: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflow | scala.Null = js.native
@@ -26,7 +26,7 @@ object appservicesNs extends js.Object {
     @JSName("model")
     var model_AppServiceAction: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     var name: java.lang.String = js.native
-    val parameters: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[AppServiceActionParameter] = js.native
+    val parameters: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[AppServiceActionParameter | IAppServiceActionParameter] = js.native
     val qualifiedName: java.lang.String | scala.Null = js.native
     /**
       * The value of this property is conceptually of type dataTypes.LegacyDataType.
@@ -37,13 +37,13 @@ object appservicesNs extends js.Object {
     var returnTypeCanBeEmpty: scala.Boolean = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IAppServiceActionParameter because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IAppServiceActionParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsAppServiceAction, name, asLoaded, load, load, load, load */ @js.native
   class AppServiceActionParameter protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var canBeEmpty: scala.Boolean = js.native
-    val containerAsAppServiceAction: AppServiceAction = js.native
+    val containerAsAppServiceAction: AppServiceAction | IAppServiceAction = js.native
     @JSName("model")
     var model_AppServiceActionParameter: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     var name: java.lang.String = js.native
@@ -67,12 +67,12 @@ object appservicesNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/consumed-app-services relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IConsumedAppService because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IConsumedAppService because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined actions, asLoaded, load, load, load, load */ @js.native
   class ConsumedAppService protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
-    val actions: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[AppServiceAction] = js.native
+    val actions: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[AppServiceAction | IAppServiceAction] = js.native
     var appServiceLocation: AppServiceLocationEnum = js.native
     var appStoreGuid: java.lang.String = js.native
     var appStoreVersion: java.lang.String = js.native

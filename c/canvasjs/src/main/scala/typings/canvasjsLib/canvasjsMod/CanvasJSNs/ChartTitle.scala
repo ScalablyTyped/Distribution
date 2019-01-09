@@ -10,7 +10,7 @@ trait ChartTitle extends ChartTitleOptions {
   /**
     * Can be accessed via get method or dot notation.
     */
-  val bounds: canvasjsLib.Anon_X2 = js.native
+  val bounds: canvasjsLib.Anon_X1 = js.native
   /**
     * Returns the specified property of title.
     * @param propertyName Name of the property.

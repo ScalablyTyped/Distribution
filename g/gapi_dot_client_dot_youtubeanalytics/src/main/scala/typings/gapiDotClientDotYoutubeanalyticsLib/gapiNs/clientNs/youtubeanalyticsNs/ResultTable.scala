@@ -13,7 +13,7 @@ trait ResultTable extends js.Object {
     * example, if the API request contains the parameters dimensions=ageGroup,gender&metrics=viewerPercentage, the API response will return columns in this
     * order: ageGroup,gender,viewerPercentage.
     */
-  var columnHeaders: js.UndefOr[js.Array[gapiDotClientDotYoutubeanalyticsLib.Anon_Name]] = js.undefined
+  var columnHeaders: js.UndefOr[js.Array[gapiDotClientDotYoutubeanalyticsLib.Anon_ColumnType]] = js.undefined
   /** This value specifies the type of data included in the API response. For the query method, the kind property value will be youtubeAnalytics#resultTable. */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**

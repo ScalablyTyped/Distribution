@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object xml2jsonModMembers extends js.Object {
   def toJson(xml: java.lang.String): js.Object = js.native
-  def toJson(xml: java.lang.String, options: xml2jsonLib.Anon_Object with JsonOptions): java.lang.String = js.native
-  def toJson(xml: java.lang.String, options: xml2jsonLib.Anon_ObjectTrue with JsonOptions): js.Object = js.native
+  def toJson(xml: java.lang.String, options: xml2jsonLib.Anon_False with JsonOptions): java.lang.String = js.native
+  def toJson(xml: java.lang.String, options: xml2jsonLib.Anon_Object with JsonOptions): js.Object = js.native
   @JSName("toJson")
   def toJson_String(xml: java.lang.String): java.lang.String = js.native
   def toXml(json: java.lang.String): java.lang.String = js.native

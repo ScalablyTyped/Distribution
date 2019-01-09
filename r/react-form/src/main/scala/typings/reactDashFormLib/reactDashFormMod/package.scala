@@ -11,7 +11,7 @@ package object reactDashFormMod {
   type FormValues = Nested[FormValue]
   type NestedErrors = Nested[FormErrors]
   type RenderReturn = reactLib.reactMod.Global.JSXNs.Element | reactDashFormLib.reactDashFormLibNumbers.`false` | scala.Null | js.Array[scala.Nothing]
-  type SelectOptions = js.Array[reactDashFormLib.Anon_Value]
+  type SelectOptions = js.Array[reactDashFormLib.Anon_Label]
   type Touched = Nested[scala.Boolean]
   type ValidateValuesFunction = js.Function1[/* values */ FormValues, FormErrors]
 }

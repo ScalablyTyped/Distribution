@@ -14,6 +14,6 @@ trait GetBrokerArgs extends js.Object {
     * The unique name of the mq broker.
     */
   val brokerName: js.UndefOr[java.lang.String] = js.undefined
-  val logs: js.UndefOr[atPulumiAwsLib.Anon_General] = js.undefined
+  val logs: js.UndefOr[atPulumiAwsLib.Anon_Audit] = js.undefined
 }
 

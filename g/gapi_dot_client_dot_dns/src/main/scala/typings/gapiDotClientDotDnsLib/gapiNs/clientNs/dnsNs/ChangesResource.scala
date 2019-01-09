@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait ChangesResource extends js.Object {
   /** Atomically update the ResourceRecordSet collection. */
-  def create(request: gapiDotClientDotDnsLib.Anon_ManagedZoneProjectPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Change]
+  def create(request: gapiDotClientDotDnsLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Change]
   /** Fetch the representation of an existing Change. */
-  def get(request: gapiDotClientDotDnsLib.Anon_ManagedZone): gapiDotClientLib.gapiNs.clientNs.Request[Change]
+  def get(request: gapiDotClientDotDnsLib.Anon_AltChangeId): gapiDotClientLib.gapiNs.clientNs.Request[Change]
   /** Enumerate Changes to a ResourceRecordSet collection. */
-  def list(request: gapiDotClientDotDnsLib.Anon_ManagedZoneProject): gapiDotClientLib.gapiNs.clientNs.Request[ChangesListResponse]
+  def list(request: gapiDotClientDotDnsLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[ChangesListResponse]
 }
 

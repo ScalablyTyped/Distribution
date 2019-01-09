@@ -29,7 +29,7 @@ trait IVector[T]
     * Retrieves the items that start at the specified index in the vector.
     * @param startIndex The zero-based index of the start of the items in the vector.
     */
-  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValueT[T] = js.native
+  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_Items[T] = js.native
   /**
     * Returns an immutable view of the vector.
     * @return The view of the vector.

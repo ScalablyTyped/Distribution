@@ -17,7 +17,7 @@ trait RouteArgs extends js.Object {
   /**
     * The route specification to apply.
     */
-  val spec: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HttpRouteInput]
+  val spec: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HttpRouteAnonActionMatch]
   val virtualRouterName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }
 

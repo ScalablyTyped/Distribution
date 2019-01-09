@@ -36,6 +36,6 @@ trait MotorHatOptions extends js.Object {
     * { W1: winding, W2: winding }. Each winding should be one of following: 'M1', 'M2', 'M3',
     * 'M4' depending on the port the stepper is connected to. Correct example: { W1: 'M3', W2: 'M1' }
     */
-  var steppers: js.UndefOr[js.Array[motorDashHatLib.Anon_W2W1]] = js.undefined
+  var steppers: js.UndefOr[js.Array[motorDashHatLib.Anon_W1W2]] = js.undefined
 }
 

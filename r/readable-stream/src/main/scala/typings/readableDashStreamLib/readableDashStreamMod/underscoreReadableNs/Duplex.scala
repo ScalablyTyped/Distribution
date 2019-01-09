@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(nodeLib.streamMod.Duplex because Inheritance from two classes, readableDashStreamLib.readableDashStreamMod._Readable because Inheritance from two classes)*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- nodeLib.streamMod.Duplex because Inheritance from two classes- readableDashStreamLib.readableDashStreamMod._Readable because Inheritance from two classes */ @js.native
 trait Duplex extends Writable {
   var _readableState: ReadableState = js.native
   var allowHalfOpen: scala.Boolean = js.native

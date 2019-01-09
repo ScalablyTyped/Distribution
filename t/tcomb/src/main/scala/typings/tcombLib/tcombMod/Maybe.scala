@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait Maybe[T]
   extends Type[scala.Unit | T] {
   @JSName("meta")
-  var meta_Maybe: tcombLib.Anon_Type[T] = js.native
+  var meta_Maybe: tcombLib.Anon_IdentityKindNameType[T] = js.native
   @JSName("update")
   var update_Original: tcombLib.Update[scala.Unit | T] = js.native
   def update(instance: scala.Unit | T, spec: tcombLib.UpdatePatch): scala.Unit | T = js.native

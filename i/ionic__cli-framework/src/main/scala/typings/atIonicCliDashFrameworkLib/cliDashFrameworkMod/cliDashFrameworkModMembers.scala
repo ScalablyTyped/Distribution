@@ -47,7 +47,7 @@ object cliDashFrameworkModMembers extends js.Object {
   def createTaggedFormatter(): atIonicCliDashFrameworkLib.libLoggerMod.LoggerFormatter = js.native
   def createTaggedFormatter(hasColorsPrefixTitleizeWrap: atIonicCliDashFrameworkLib.libLoggerMod.CreateTaggedFormatterOptions): atIonicCliDashFrameworkLib.libLoggerMod.LoggerFormatter = js.native
   def execute[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[I, O] */, I /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput */, O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](
-    hasNamespaceArgvEnvRest: atIonicCliDashFrameworkLib.Anon_Namespace[N] with (stdLib.Partial[atIonicCliDashFrameworkLib.libExecutorMod.BaseExecutorDeps[C, N, M, I, O]])
+    hasNamespaceArgvEnvRest: atIonicCliDashFrameworkLib.Anon_Argv[N] with (stdLib.Partial[atIonicCliDashFrameworkLib.libExecutorMod.BaseExecutorDeps[C, N, M, I, O]])
   ): js.Promise[scala.Unit] = js.native
   def filterCommandLineOptions[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](options: js.Array[O], parsedArgs: atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions): atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions = js.native
   def filterCommandLineOptions[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](

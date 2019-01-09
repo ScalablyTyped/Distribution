@@ -33,11 +33,11 @@ class DataSource protected ()
   /**
     * DynamoDB settings. See below
     */
-  val dynamodbConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RegionTableNameUseCallerCredentials]] = js.native
+  val dynamodbConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Region]] = js.native
   /**
     * Amazon Elasticsearch settings. See below
     */
-  val elasticsearchConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EndpointRegion]] = js.native
+  val elasticsearchConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Endpoint]] = js.native
   /**
     * HTTP settings. See below
     */
@@ -45,7 +45,7 @@ class DataSource protected ()
   /**
     * AWS Lambda settings. See below
     */
-  val lambdaConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_FunctionArnString]] = js.native
+  val lambdaConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_FunctionArn]] = js.native
   /**
     * A user-supplied name for the DataSource.
     */

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait TemplateBuilder[T] extends js.Object {
   // Allow users to explicitly create templates that produce ASTs, skipping the need for an intermediate function.
   @JSName("ast")
-  var ast_Original: atBabelTemplateLib.Anon_Tpl[T] = js.native
+  var ast_Original: atBabelTemplateLib.Anon_Args[T] = js.native
   /**
     * Building from a string produces an AST builder function by default.
     */

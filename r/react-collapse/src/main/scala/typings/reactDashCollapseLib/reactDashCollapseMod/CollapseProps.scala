@@ -15,9 +15,11 @@ trait CollapseProps
   var hasNestedCollapse: js.UndefOr[scala.Boolean] = js.undefined
   var isOpened: scala.Boolean
   var onMeasure: js.UndefOr[js.Function1[/* hasWidthHeight */ reactDashCollapseLib.Anon_Height, scala.Unit]] = js.undefined
-  var onRender: js.UndefOr[js.Function1[/* hasCurrentFromTo */ reactDashCollapseLib.Anon_From, scala.Unit]] = js.undefined
+  var onRender: js.UndefOr[
+    js.Function1[/* hasCurrentFromTo */ reactDashCollapseLib.Anon_Current, scala.Unit]
+  ] = js.undefined
   var onRest: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var springConfig: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Double]] = js.undefined
-  var theme: js.UndefOr[reactDashCollapseLib.Anon_Content] = js.undefined
+  var theme: js.UndefOr[reactDashCollapseLib.Anon_Collapse] = js.undefined
 }
 

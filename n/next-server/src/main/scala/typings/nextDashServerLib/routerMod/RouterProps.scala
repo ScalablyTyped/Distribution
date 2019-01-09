@@ -11,7 +11,7 @@ trait RouterProps[Q] extends js.Object {
   // property fields
   val components: org.scalablytyped.runtime.StringDictionary[nextDashServerLib.Anon_Component] = js.native
   // events API (6.1.1+)
-  val events: nextDashServerLib.Anon_On = js.native
+  val events: nextDashServerLib.Anon_EventName = js.native
   // events (deprecated soonish)
   var onBeforeHistoryChange: js.UndefOr[js.Function1[/* as */ java.lang.String, scala.Unit]] = js.native
   var onHashChangeComplete: js.UndefOr[js.Function1[/* url */ java.lang.String, scala.Unit]] = js.native

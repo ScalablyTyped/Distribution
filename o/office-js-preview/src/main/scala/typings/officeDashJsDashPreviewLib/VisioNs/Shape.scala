@@ -103,7 +103,7 @@ class Shape ()
   def load(): Shape = js.native
   def load(option: java.lang.String): Shape = js.native
   def load(option: js.Array[java.lang.String]): Shape = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Shape = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Shape = js.native
   def load(option: officeDashJsDashPreviewLib.VisioNs.InterfacesNs.ShapeLoadOptions): Shape = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

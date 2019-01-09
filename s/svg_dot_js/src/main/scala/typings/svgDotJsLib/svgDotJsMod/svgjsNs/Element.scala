@@ -57,7 +57,7 @@ trait Element
   def dy(y: NumberAlias): this.type = js.native
   def event(): stdLib.Event | stdLib.CustomEvent[_] = js.native
   def fill(color: java.lang.String): this.type = js.native
-  def fill(fill: svgDotJsLib.Anon_Rule): this.type = js.native
+  def fill(fill: svgDotJsLib.Anon_Color): this.type = js.native
   def fill(image: Image): this.type = js.native
   def fill(pattern: Element): this.type = js.native
   def fire(event: java.lang.String): this.type = js.native
@@ -115,7 +115,7 @@ trait Element
   def parent(`type`: ParentTypeAlias): Parent | stdLib.HTMLElement = js.native
   def parents(): js.Array[Parent] = js.native
   def point(): Point = js.native
-  def point(position: svgDotJsLib.Anon_Y): Point = js.native
+  def point(position: svgDotJsLib.Anon_X): Point = js.native
   def point(position: ArrayPoint): Point = js.native
   def point(x: scala.Double, y: scala.Double): Point = js.native
   def position(): scala.Double = js.native

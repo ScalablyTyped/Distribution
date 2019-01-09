@@ -248,7 +248,7 @@ class Grid[T /* <: SlickData */] protected () extends js.Object {
   		* todo: no docs or comments available
   		* @return
   		**/
-  def getSortColumns(): js.Array[slickgridLib.Anon_SortAsc] = js.native
+  def getSortColumns(): js.Array[slickgridLib.Anon_ColumnId] = js.native
   /**
   		* todo: no docs
   		* @return
@@ -387,7 +387,7 @@ class Grid[T /* <: SlickData */] protected () extends js.Object {
   		* Accepts an array of objects in the form [ { columnId: [string], sortAsc: [boolean] }, ... ]. When called, this will apply a sort glyph in either ascending or descending form to the header of each column specified in the array. Note that this does not actually sort the column. It only adds the sort glyph to the header
   		* @param cols
   		**/
-  def setSortColumns(cols: js.Array[slickgridLib.Anon_SortAsc]): scala.Unit = js.native
+  def setSortColumns(cols: js.Array[slickgridLib.Anon_ColumnId]): scala.Unit = js.native
   /**
   		* todo: no docs
   		* @param visible

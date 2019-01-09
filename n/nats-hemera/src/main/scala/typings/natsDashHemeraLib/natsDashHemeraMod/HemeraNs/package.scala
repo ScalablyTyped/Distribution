@@ -25,7 +25,7 @@ package object HemeraNs {
     scala.Unit
   ]
   type ClientResult = js.Any
-  type ExtensionBoundSchema = Schema with natsDashHemeraLib.Anon_CreateError
+  type ExtensionBoundSchema = Schema with natsDashHemeraLib.Anon_Context
   type ExtensionHandler = js.Function4[
     /* ctx */ natsDashHemeraLib.natsDashHemeraMod.Hemera, 
     /* request */ js.Any, 
@@ -37,7 +37,9 @@ package object HemeraNs {
   type ExtensionType = natsDashHemeraLib.natsDashHemeraLibStrings.onClientPreRequest | natsDashHemeraLib.natsDashHemeraLibStrings.onClientPostRequest | natsDashHemeraLib.natsDashHemeraLibStrings.onServerPreHandler | natsDashHemeraLib.natsDashHemeraLibStrings.onServerPreRequest | natsDashHemeraLib.natsDashHemeraLibStrings.onServerPreResponse
   type GuidVersions = natsDashHemeraLib.natsDashHemeraLibStrings.uuidv1 | natsDashHemeraLib.natsDashHemeraLibStrings.uuidv2 | natsDashHemeraLib.natsDashHemeraLibStrings.uuidv3 | natsDashHemeraLib.natsDashHemeraLibStrings.uuidv4 | natsDashHemeraLib.natsDashHemeraLibStrings.uuidv5
   type HemeraEvents = natsDashHemeraLib.natsDashHemeraLibStrings.error | natsDashHemeraLib.natsDashHemeraLibStrings.clientPreRequest | natsDashHemeraLib.natsDashHemeraLibStrings.clientPostRequest | natsDashHemeraLib.natsDashHemeraLibStrings.serverPreHandler | natsDashHemeraLib.natsDashHemeraLibStrings.serverPreRequest | natsDashHemeraLib.natsDashHemeraLibStrings.serverPreResponse
-  type LanguageOptions = java.lang.String | scala.Boolean | scala.Null | org.scalablytyped.runtime.StringDictionary[js.Object]
+  type LanguageOptions = java.lang.String | scala.Boolean | scala.Null | (org.scalablytyped.runtime.StringDictionary[
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias nats-hemera.nats-hemera.Hemera.LanguageOptions */ js.Object
+  ])
   type LanguageRootOptions = natsDashHemeraLib.Anon_Key with (stdLib.Partial[stdLib.Record[Types, LanguageOptions]])
   type LogLevel = natsDashHemeraLib.natsDashHemeraLibStrings.fatal | natsDashHemeraLib.natsDashHemeraLibStrings.error | natsDashHemeraLib.natsDashHemeraLibStrings.warn | natsDashHemeraLib.natsDashHemeraLibStrings.info | natsDashHemeraLib.natsDashHemeraLibStrings.debug | natsDashHemeraLib.natsDashHemeraLibStrings.trace | natsDashHemeraLib.natsDashHemeraLibStrings.silent
   type RequestType = natsDashHemeraLib.natsDashHemeraLibStrings.pubsub | natsDashHemeraLib.natsDashHemeraLibStrings.request

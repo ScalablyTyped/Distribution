@@ -5,8 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.utilNs.ISortable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait IMixedCollection extends IAbstractMixedCollection {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.utilNs.ISortable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined defaultSortDirection, sortRoot, sorters, isSortable, generateComparator, getFirstSorter, initSortable, sort */ trait IMixedCollection extends IAbstractMixedCollection {
+  /** [Config Option] (String) */
+  var defaultSortDirection: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Calculates the insertion index of the new item based upon the comparison function passed or the current sort order
   		* @param newItem Object The new object to find the insertion position of.
   		* @param sorterFn Function The function to sort by. This is the same as the sorting function passed to sortBy. It accepts 2 items from this MixedCollection, and returns -1 0, or 1 depending on the relative sort positions of the 2 compared items. If omitted, a function generated from the currently defined set of sorters will be used.
@@ -23,6 +25,8 @@ trait IMixedCollection extends IAbstractMixedCollection {
   var getFirstSorter: js.UndefOr[js.Function0[ISorter]] = js.undefined
   /** [Method] Performs initialization of this mixin  */
   var initSortable: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  /** [Property] (Boolean) */
+  var isSortable: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Reorders each of the items based on a mapping from old index to new index
   		* @param mapping Object Mapping from old item index to new item index
   		*/
@@ -54,5 +58,9 @@ trait IMixedCollection extends IAbstractMixedCollection {
       scala.Unit
     ]
   ] = js.undefined
+  /** [Config Option] (String) */
+  var sortRoot: js.UndefOr[java.lang.String] = js.undefined
+  /** [Config Option] (Ext.util.Sorter[]/Object[]) */
+  var sorters: js.UndefOr[js.Any] = js.undefined
 }
 

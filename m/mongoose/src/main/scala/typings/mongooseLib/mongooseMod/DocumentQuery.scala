@@ -227,11 +227,11 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     update: js.Any,
     callback: js.Function3[/* err */ js.Any, /* doc */ DocType | scala.Null, /* res */ js.Any, scala.Unit]
   ): (DocumentQuery[DocType | scala.Null, DocType, js.Object]) with QueryHelpers = js.native
-  def findOneAndUpdate(query: js.Any, update: js.Any, options: mongooseLib.Anon_Upsert with QueryFindOneAndUpdateOptions): (DocumentQuery[DocType | scala.Null, DocType, js.Object]) with QueryHelpers = js.native
+  def findOneAndUpdate(query: js.Any, update: js.Any, options: mongooseLib.Anon_New with QueryFindOneAndUpdateOptions): (DocumentQuery[DocType | scala.Null, DocType, js.Object]) with QueryHelpers = js.native
   def findOneAndUpdate(
     query: js.Any,
     update: js.Any,
-    options: mongooseLib.Anon_Upsert with QueryFindOneAndUpdateOptions,
+    options: mongooseLib.Anon_New with QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ DocType, /* res */ js.Any, scala.Unit]
   ): (DocumentQuery[DocType | scala.Null, DocType, js.Object]) with QueryHelpers = js.native
   def findOneAndUpdate(query: js.Any, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[DocType | scala.Null, DocType, js.Object]) with QueryHelpers = js.native
@@ -520,7 +520,7 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     */
   def tailable(): this.type = js.native
   def tailable(bool: scala.Boolean): this.type = js.native
-  def tailable(bool: scala.Boolean, opts: mongooseLib.Anon_TailableRetryInterval): this.type = js.native
+  def tailable(bool: scala.Boolean, opts: mongooseLib.Anon_NumberOfRetries): this.type = js.native
   /** Executes this query and returns a promise */
   def `then`[TRes](): js.Promise[TRes] = js.native
   def `then`[TRes](resolve: js.Function1[/* res */ T, scala.Unit | TRes | js.Thenable[TRes]]): js.Promise[TRes] = js.native

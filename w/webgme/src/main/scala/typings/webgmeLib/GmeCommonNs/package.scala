@@ -10,7 +10,7 @@ package object GmeCommonNs {
   type Aspect = java.lang.String
   type AttrMeta = js.Any
   type Buffer = js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify GLbyte */ js.Any
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GLbyte */ js.Any
   ]
   type CatchCallback = ErrorOnlyCallback
   type Constraint = java.lang.String

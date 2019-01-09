@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Primitive ()
   extends cesiumLib.cesiumMod.CesiumNs.Primitive {
-  def this(options: cesiumLib.Anon_ShowVertexCacheOptimize) = this()
+  def this(options: cesiumLib.Anon_AllowPickingAppearance) = this()
   /* CompleteClass */
   override val allowPicking: scala.Boolean = js.native
   /* CompleteClass */

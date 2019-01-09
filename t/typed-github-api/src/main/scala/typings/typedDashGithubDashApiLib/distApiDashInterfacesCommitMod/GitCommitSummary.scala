@@ -12,6 +12,6 @@ trait GitCommitSummary extends js.Object {
   var message: java.lang.String
   var tree: GitRef
   var url: java.lang.String
-  var verification: js.UndefOr[typedDashGithubDashApiLib.Anon_Verified] = js.undefined
+  var verification: js.UndefOr[typedDashGithubDashApiLib.Anon_Payload] = js.undefined
 }
 

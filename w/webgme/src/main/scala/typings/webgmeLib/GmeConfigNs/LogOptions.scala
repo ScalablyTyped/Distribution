@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LogOptions extends js.Object {
-  var log: webgmeLib.Anon_Level
+  var log: webgmeLib.Anon_LevelString
 }
 

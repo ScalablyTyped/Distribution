@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.utilNs.IBindable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses), extjsLib.ExtNs.chartNs.INavigation because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses), extjsLib.ExtNs.chartNs.IMask because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait IChart
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.utilNs.IBindable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined bindStore, bindStoreListeners, getStore, getStoreListeners, onBindStore, onUnbindStore, unbindStoreListeners- extjsLib.ExtNs.chartNs.INavigation because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined restoreZoom, setZoom- extjsLib.ExtNs.chartNs.IMask because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined mask */ trait IChart
   extends extjsLib.ExtNs.drawNs.IComponent
      with extjsLib.ExtNs.chartNs.themeNs.ITheme {
   /** [Config Option] (Ext.chart.axis.Axis[]) */
@@ -18,7 +18,7 @@ trait IChart
   		* @param initial Object
   		*/
   var bindStore: js.UndefOr[
-    js.Function2[/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], scala.Unit]
+    (js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit]) | (js.Function2[/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], scala.Unit])
   ] = js.undefined
   /** [Method] Binds listeners for this component to the store
   		* @param store Ext.data.AbstractStore The store to bind to
@@ -33,11 +33,15 @@ trait IChart
   /** [Method] Gets the listeners to bind to a new store
   		* @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
   		*/
-  var getStoreListeners: js.UndefOr[js.Function0[_]] = js.undefined
+  var getStoreListeners: js.UndefOr[
+    js.Function0[_] | (js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IStore], _])
+  ] = js.undefined
   /** [Config Option] (Number) */
   var insetPadding: js.UndefOr[scala.Double] = js.undefined
   /** [Config Option] (Boolean/Object) */
   var legend: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (Boolean/String) */
+  var mask: js.UndefOr[js.Any] = js.undefined
   /** [Method] Template method it is called when a new store is bound to the current instance
   		* @param store Ext.data.AbstractStore The store being bound
   		* @param initial Boolean True if this store is being bound as initialization of the instance.

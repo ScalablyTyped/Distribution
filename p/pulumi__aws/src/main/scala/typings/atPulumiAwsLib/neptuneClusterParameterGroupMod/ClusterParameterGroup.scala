@@ -41,7 +41,7 @@ class ClusterParameterGroup protected ()
   /**
     * A list of neptune parameters to apply.
     */
-  val parameters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ValueNameApplyMethod]]] = js.native
+  val parameters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ApplyMethod]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

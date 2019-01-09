@@ -20,12 +20,7 @@ object NeuronNs extends js.Object {
     var weight: scala.Double = js.native
   }
   
-  var connection: org.scalablytyped.runtime.Instantiable3[
-    /* from */ scala.Double, 
-    /* to */ scala.Double, 
-    /* weight */ js.UndefOr[/* weight */ scala.Double], 
-    Connection
-  ] = js.native
+  var connection: synapticLib.Anon_From = js.native
   @js.native
   object Connection extends js.Object {
     def uid(): scala.Double = js.native

@@ -100,7 +100,7 @@ class Section ()
   def load(): Section = js.native
   def load(option: java.lang.String): Section = js.native
   def load(option: js.Array[java.lang.String]): Section = js.native
-  def load(option: officeDashJsLib.Anon_Select): Section = js.native
+  def load(option: officeDashJsLib.Anon_Expand): Section = js.native
   def load(option: officeDashJsLib.WordNs.InterfacesNs.SectionLoadOptions): Section = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

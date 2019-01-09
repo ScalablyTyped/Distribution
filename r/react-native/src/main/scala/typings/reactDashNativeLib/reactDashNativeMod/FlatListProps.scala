@@ -38,7 +38,7 @@ trait FlatListProps[ItemT] extends VirtualizedListProps[ItemT] {
     js.Function2[
       /* data */ js.Array[ItemT] | scala.Null, 
       /* index */ scala.Double, 
-      reactDashNativeLib.Anon_Length
+      reactDashNativeLib.Anon_Index
     ]
   ] = js.native
   /**

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object fileSystemNsMembers extends js.Object {
   /** @enum */
-  val ChildChangeType: chromeDashAppsLib.Anon_REMOVED = js.native
+  val ChildChangeType: chromeDashAppsLib.Anon_CHANGED = js.native
   /**
     * **openFile**
     *  - Prompts the user to open an existing file and returns a FileEntry on success.
@@ -31,7 +31,7 @@ object fileSystemNsMembers extends js.Object {
     *    New in Chrome 31.
     * @enum
     */
-  val ChooseEntryType: chromeDashAppsLib.Anon_OPENFILE = js.native
+  val ChooseEntryType: chromeDashAppsLib.Anon_OPENDIRECTORY = js.native
   /**
     * Called when a list of available volumes is changed.
     * @since Chrome 44.

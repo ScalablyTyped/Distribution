@@ -11,35 +11,35 @@ trait Acl extends js.Object {
     * Creates a new token by cloning an existing token
     */
   @JSName("clone")
-  var clone_Original: consulLib.Anon_IdCallbackOptsTDataStringVoidCloneOptions = js.native
+  var clone_Original: consulLib.Anon_CallbackIdOptsCloneOptions = js.native
   var consul: Consul = js.native
   /**
     * Creates a new token with policy
     */
   @JSName("create")
-  var create_Original: consulLib.Anon_OptsCallbackTDataCreateOptions = js.native
+  var create_Original: consulLib.Anon_Callback = js.native
   /**
     * Destroys a given token
     */
   @JSName("destroy")
-  var destroy_Original: consulLib.Anon_IdCallbackOptsTDataStringVoidDestroyOptions = js.native
+  var destroy_Original: consulLib.Anon_CallbackId = js.native
   @JSName("get")
-  var get_Original: consulLib.Anon_IdCallbackOptsTDataStringVoidGetOptions = js.native
+  var get_Original: consulLib.Anon_CallbackIdOptsGetOptions = js.native
   /**
     * Queries the policy of a given token
     */
   @JSName("info")
-  var info_Original: consulLib.Anon_IdCallbackOptsTDataStringVoidInfoOptions = js.native
+  var info_Original: consulLib.Anon_CallbackIdOpts = js.native
   /**
     * Lists all the active tokens
     */
   @JSName("list")
-  var list_Original: consulLib.Anon_OptsCallbackTDataListOptionsVoidThenable = js.native
+  var list_Original: consulLib.Anon_CallbackOptsListOptions = js.native
   /**
     * Update the policy of a token
     */
   @JSName("update")
-  var update_Original: consulLib.Anon_OptsCallbackTDataUpdateOptions = js.native
+  var update_Original: consulLib.Anon_CallbackOpts = js.native
   /**
     * Creates a new token by cloning an existing token
     */

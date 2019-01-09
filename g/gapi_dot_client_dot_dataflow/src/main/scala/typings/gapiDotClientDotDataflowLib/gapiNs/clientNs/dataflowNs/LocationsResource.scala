@@ -9,6 +9,8 @@ trait LocationsResource extends js.Object {
   var jobs: JobsResource
   var templates: TemplatesResource
   /** Send a worker_message to the service. */
-  def workerMessages(request: gapiDotClientDotDataflowLib.Anon_AccesstokenLocationPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[SendWorkerMessagesResponse]
+  def workerMessages(
+    request: gapiDotClientDotDataflowLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyLocationOauthtoken
+  ): gapiDotClientLib.gapiNs.clientNs.Request[SendWorkerMessagesResponse]
 }
 

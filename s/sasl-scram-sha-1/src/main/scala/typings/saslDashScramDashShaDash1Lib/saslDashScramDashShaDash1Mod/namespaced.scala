@@ -27,11 +27,6 @@ class namespaced () extends ScramSha1Mechanism {
 @JSImport("sasl-scram-sha-1", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
-  var Mechanism: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[
-      /* options */ saslDashScramDashShaDash1Lib.saslDashScramDashShaDash1Mod.ScramSha1MechanismNs.Options
-    ], 
-    saslDashScramDashShaDash1Lib.saslDashScramDashShaDash1Mod.ScramSha1Mechanism
-  ] = js.native
+  var Mechanism: saslDashScramDashShaDash1Lib.Anon_Mechanism = js.native
 }
 

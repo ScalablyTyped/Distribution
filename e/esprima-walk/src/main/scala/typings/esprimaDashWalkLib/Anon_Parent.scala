@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Parent extends js.Object {
-  var parent: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ESTree.Node */ js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ESTree.Node */ js.Any
+  var parent: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ESTree.Node */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ESTree.Node */ js.Any
   ] = js.undefined
 }
 

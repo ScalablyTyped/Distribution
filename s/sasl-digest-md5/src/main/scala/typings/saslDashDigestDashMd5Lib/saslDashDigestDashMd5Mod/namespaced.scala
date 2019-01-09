@@ -27,11 +27,6 @@ class namespaced () extends DigestMd5Mechanism {
 @JSImport("sasl-digest-md5", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
-  var Mechanism: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[
-      /* options */ saslDashDigestDashMd5Lib.saslDashDigestDashMd5Mod.DigestMd5MechanismNs.Options
-    ], 
-    saslDashDigestDashMd5Lib.saslDashDigestDashMd5Mod.DigestMd5Mechanism
-  ] = js.native
+  var Mechanism: saslDashDigestDashMd5Lib.Anon_Mechanism = js.native
 }
 

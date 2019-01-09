@@ -31,6 +31,6 @@ object tabsMod extends js.Object {
   @JSName("on")
   def on_ready(event: jpmLib.jpmLibStrings.ready, handler: js.Function1[/* tab */ jpmLib.FFAddonSDKNs.Tab, _]): scala.Unit = js.native
   def open(options: java.lang.String): scala.Unit = js.native
-  def open(options: jpmLib.Anon_InNewWindow): scala.Unit = js.native
+  def open(options: jpmLib.Anon_InBackground): scala.Unit = js.native
 }
 

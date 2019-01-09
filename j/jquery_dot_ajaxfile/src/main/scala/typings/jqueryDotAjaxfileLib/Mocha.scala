@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Mocha")
 @js.native
 class Mocha () extends js.Object {
-  def this(options: Anon_Reporter) = this()
+  def this(options: Anon_Bail) = this()
   def addFile(file: java.lang.String): Mocha = js.native
   def asyncOnly(value: scala.Boolean): Mocha = js.native
   def bail(): Mocha = js.native

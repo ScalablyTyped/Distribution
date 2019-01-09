@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/compile_metadata", "ProviderMeta")
 @js.native
 class ProviderMeta protected () extends js.Object {
-  def this(token: js.Any, hasUseClassUseValueUseExistingUseFactoryDepsMulti: atAngularCompilerLib.Anon_UseClass) = this()
+  def this(token: js.Any, hasUseClassUseValueUseExistingUseFactoryDepsMulti: atAngularCompilerLib.Anon_Deps) = this()
   var dependencies: js.Array[js.Object] | scala.Null = js.native
   var multi: scala.Boolean = js.native
   var token: js.Any = js.native

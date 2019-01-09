@@ -13,6 +13,6 @@ class ScrollSync ()
 @JSImport("react-virtualized/dist/es/ScrollSync", "ScrollSync")
 @js.native
 object ScrollSync extends js.Object {
-  var propTypes: reactDashVirtualizedLib.Anon_ChildrenProps = js.native
+  var propTypes: reactDashVirtualizedLib.Anon_ChildrenComponentNameLocation = js.native
 }
 

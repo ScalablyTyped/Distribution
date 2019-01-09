@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
   * This is the fastest particle system in Babylon as it uses the GPU to update the individual particle data
   * @see https://www.babylonjs-playground.com/#PU4WYI#4
   */
-/* RemoveMultipleInheritance: Dropped parents List(babylonjsLib.BABYLONNs.IAnimatable because Would inherit conflicting mutable fields List(animations), babylonjsLib.BABYLONNs.IParticleSystem because Would inherit conflicting mutable fields List(animations, beginAnimationFrom, beginAnimationLoop, beginAnimationOnStart, beginAnimationTo, billboardMode, blendMode, color1, color2, colorDead, disposeOnStop, emitRate, emitter, endSpriteCellID, gravity, id, isAnimationSheetEnabled, isBillboardBased, layerMask, limitVelocityDamping, maxAngularSpeed, maxEmitPower, maxInitialRotation, maxLifeTime, maxScaleX, maxScaleY, maxSize, minAngularSpeed, minEmitPower, minInitialRotation, minLifeTime, minScaleX, minScaleY, minSize, name, noiseStrength, noiseTexture, particleEmitterType, particleTexture, preWarmCycles, preWarmStepOffset, renderingGroupId, spriteCellChangeSpeed, spriteCellHeight, spriteCellWidth, spriteRandomStartCell, startDelay, startSpriteCellID, targetStopDuration, translationPivot, updateSpeed))*/
-@JSGlobal("BABYLON.GPUParticleSystem")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- babylonjsLib.BABYLONNs.IAnimatable because var conflicts: animations. Inlined - babylonjsLib.BABYLONNs.IParticleSystem because var conflicts: animations, beginAnimationFrom, beginAnimationLoop, beginAnimationOnStart, beginAnimationTo, billboardMode, blendMode, color1, color2, colorDead, disposeOnStop, emitRate, emitter, endSpriteCellID, gravity, id, isAnimationSheetEnabled, isBillboardBased, layerMask, limitVelocityDamping, maxAngularSpeed, maxEmitPower, maxInitialRotation, maxLifeTime, maxScaleX, maxScaleY, maxSize, minAngularSpeed, minEmitPower, minInitialRotation, minLifeTime, minScaleX, minScaleY, minSize, name, noiseStrength, noiseTexture, particleEmitterType, particleTexture, preWarmCycles, preWarmStepOffset, renderingGroupId, spriteCellChangeSpeed, spriteCellHeight, spriteCellWidth, spriteRandomStartCell, startDelay, startSpriteCellID, targetStopDuration, translationPivot, updateSpeed. Inlined getCapacity, isStarted, animate, render, dispose, dispose, clone, serialize, rebuild, start, start, stop, reset, isReady, addColorGradient, addColorGradient, removeColorGradient, addSizeGradient, addSizeGradient, removeSizeGradient, getColorGradients, getSizeGradients, getAngularSpeedGradients, addAngularSpeedGradient, addAngularSpeedGradient, removeAngularSpeedGradient, getVelocityGradients, addVelocityGradient, addVelocityGradient, removeVelocityGradient, getLimitVelocityGradients, addLimitVelocityGradient, addLimitVelocityGradient, removeLimitVelocityGradient, addDragGradient, addDragGradient, removeDragGradient, getDragGradients, addEmitRateGradient, addEmitRateGradient, removeEmitRateGradient, getEmitRateGradients, addStartSizeGradient, addStartSizeGradient, removeStartSizeGradient, getStartSizeGradients, addLifeTimeGradient, addLifeTimeGradient, removeLifeTimeGradient, getLifeTimeGradients, addRampGradient, getRampGradients, useRampGradients, addColorRemapGradient, getColorRemapGradients, addAlphaRemapGradient, getAlphaRemapGradients, createPointEmitter, createHemisphericEmitter, createSphereEmitter, createDirectedSphereEmitter, createCylinderEmitter, createDirectedCylinderEmitter, createConeEmitter, createBoxEmitter, getScene */ @JSGlobal("BABYLON.GPUParticleSystem")
 @js.native
 class GPUParticleSystem protected ()
   extends BaseParticleSystem
@@ -24,8 +24,8 @@ class GPUParticleSystem protected ()
     * @param scene The scene the particle system belongs to
     * @param isAnimationSheetEnabled Must be true if using a spritesheet to animate the particles texture
     */
-  def this(name: java.lang.String, options: stdLib.Partial[babylonjsLib.Anon_RandomTextureSize], scene: Scene) = this()
-  def this(name: java.lang.String, options: stdLib.Partial[babylonjsLib.Anon_RandomTextureSize], scene: Scene, isAnimationSheetEnabled: scala.Boolean) = this()
+  def this(name: java.lang.String, options: stdLib.Partial[babylonjsLib.Anon_Capacity], scene: Scene) = this()
+  def this(name: java.lang.String, options: stdLib.Partial[babylonjsLib.Anon_Capacity], scene: Scene, isAnimationSheetEnabled: scala.Boolean) = this()
   var _accumulatedCount: js.Any = js.native
   var _activeCount: js.Any = js.native
   var _actualFrame: js.Any = js.native
@@ -98,6 +98,13 @@ class GPUParticleSystem protected ()
     * @param max defines the alpha remap maximal range
     * @returns the current particle system
     */
+  /**
+    * Adds a new alpha remap gradient
+    * @param gradient defines the gradient to use (between 0 and 1)
+    * @param min defines the alpha remap minimal range
+    * @param max defines the alpha remap maximal range
+    * @returns the current particle system
+    */
   def addAlphaRemapGradient(gradient: scala.Double, min: scala.Double, max: scala.Double): IParticleSystem = js.native
   /**
     * Adds a new angular speed gradient
@@ -106,6 +113,16 @@ class GPUParticleSystem protected ()
     * @returns the current particle system
     */
   def addAngularSpeedGradient(gradient: scala.Double, factor: scala.Double): GPUParticleSystem = js.native
+  def addAngularSpeedGradient(gradient: scala.Double, factor: scala.Double, factor2: scala.Double): IParticleSystem = js.native
+  /**
+    * Adds a new angular speed gradient
+    * @param gradient defines the gradient to use (between 0 and 1)
+    * @param factor defines the angular speed to affect to the specified gradient
+    * @param factor2 defines an additional factor used to define a range ([factor, factor2]) with main value to pick the final value from
+    * @returns the current particle system
+    */
+  @JSName("addAngularSpeedGradient")
+  def addAngularSpeedGradient_IParticleSystem(gradient: scala.Double, factor: scala.Double): IParticleSystem = js.native
   /**
     * Adds a new color gradient
     * @param gradient defines the gradient to use (between 0 and 1)
@@ -116,7 +133,25 @@ class GPUParticleSystem protected ()
   def addColorGradient(gradient: scala.Double, color1: Color4): GPUParticleSystem = js.native
   def addColorGradient(gradient: scala.Double, color1: Color4, color2: Color4): GPUParticleSystem = js.native
   /**
+    * Adds a new color gradient
+    * @param gradient defines the gradient to use (between 0 and 1)
+    * @param color1 defines the color to affect to the specified gradient
+    * @param color2 defines an additional color used to define a range ([color, color2]) with main color to pick the final color from
+    * @returns the current particle system
+    */
+  @JSName("addColorGradient")
+  def addColorGradient_IParticleSystem(gradient: scala.Double, color1: Color4): IParticleSystem = js.native
+  @JSName("addColorGradient")
+  def addColorGradient_IParticleSystem(gradient: scala.Double, color1: Color4, color2: Color4): IParticleSystem = js.native
+  /**
     * Not supported by GPUParticleSystem
+    * @param gradient defines the gradient to use (between 0 and 1)
+    * @param min defines the color remap minimal range
+    * @param max defines the color remap maximal range
+    * @returns the current particle system
+    */
+  /**
+    * Adds a new color remap gradient
     * @param gradient defines the gradient to use (between 0 and 1)
     * @param min defines the color remap minimal range
     * @param max defines the color remap maximal range
@@ -130,6 +165,16 @@ class GPUParticleSystem protected ()
     * @returns the current particle system
     */
   def addDragGradient(gradient: scala.Double, factor: scala.Double): GPUParticleSystem = js.native
+  def addDragGradient(gradient: scala.Double, factor: scala.Double, factor2: scala.Double): IParticleSystem = js.native
+  /**
+    * Adds a new drag gradient
+    * @param gradient defines the gradient to use (between 0 and 1)
+    * @param factor defines the drag to affect to the specified gradient
+    * @param factor2 defines an additional factor used to define a range ([factor, factor2]) with main value to pick the final value from
+    * @returns the current particle system
+    */
+  @JSName("addDragGradient")
+  def addDragGradient_IParticleSystem(gradient: scala.Double, factor: scala.Double): IParticleSystem = js.native
   /**
     * Not supported by GPUParticleSystem
     * @param gradient defines the gradient to use (between 0 and 1)
@@ -137,10 +182,24 @@ class GPUParticleSystem protected ()
     * @param factor2 defines an additional factor used to define a range ([factor, factor2]) with main value to pick the final value from
     * @returns the current particle system
     */
+  /**
+    * Adds a new emit rate gradient (please note that this will only work if you set the targetStopDuration property)
+    * @param gradient defines the gradient to use (between 0 and 1)
+    * @param factor defines the emit rate to affect to the specified gradient
+    * @param factor2 defines an additional factor used to define a range ([factor, factor2]) with main value to pick the final value from
+    * @returns the current particle system
+    */
   def addEmitRateGradient(gradient: scala.Double, factor: scala.Double): IParticleSystem = js.native
   def addEmitRateGradient(gradient: scala.Double, factor: scala.Double, factor2: scala.Double): IParticleSystem = js.native
   /**
     * Not supported by GPUParticleSystem
+    * @param gradient defines the gradient to use (between 0 and 1)
+    * @param factor defines the life time factor to affect to the specified gradient
+    * @param factor2 defines an additional factor used to define a range ([factor, factor2]) with main value to pick the final value from
+    * @returns the current particle system
+    */
+  /**
+    * Adds a new life time gradient
     * @param gradient defines the gradient to use (between 0 and 1)
     * @param factor defines the life time factor to affect to the specified gradient
     * @param factor2 defines an additional factor used to define a range ([factor, factor2]) with main value to pick the final value from
@@ -155,8 +214,24 @@ class GPUParticleSystem protected ()
     * @returns the current particle system
     */
   def addLimitVelocityGradient(gradient: scala.Double, factor: scala.Double): GPUParticleSystem = js.native
+  def addLimitVelocityGradient(gradient: scala.Double, factor: scala.Double, factor2: scala.Double): IParticleSystem = js.native
+  /**
+    * Adds a new limit velocity gradient
+    * @param gradient defines the gradient to use (between 0 and 1)
+    * @param factor defines the limit velocity to affect to the specified gradient
+    * @param factor2 defines an additional factor used to define a range ([factor, factor2]) with main value to pick the final value from
+    * @returns the current particle system
+    */
+  @JSName("addLimitVelocityGradient")
+  def addLimitVelocityGradient_IParticleSystem(gradient: scala.Double, factor: scala.Double): IParticleSystem = js.native
   /**
     * Not supported by GPUParticleSystem
+    * @param gradient defines the gradient to use (between 0 and 1)
+    * @param color defines the color to affect to the specified gradient
+    * @returns the current particle system
+    */
+  /**
+    * Adds a new ramp gradient used to remap particle colors
     * @param gradient defines the gradient to use (between 0 and 1)
     * @param color defines the color to affect to the specified gradient
     * @returns the current particle system
@@ -169,10 +244,27 @@ class GPUParticleSystem protected ()
     * @returns the current particle system
     */
   def addSizeGradient(gradient: scala.Double, factor: scala.Double): GPUParticleSystem = js.native
+  def addSizeGradient(gradient: scala.Double, factor: scala.Double, factor2: scala.Double): IParticleSystem = js.native
+  /**
+    * Adds a new size gradient
+    * @param gradient defines the gradient to use (between 0 and 1)
+    * @param factor defines the size factor to affect to the specified gradient
+    * @param factor2 defines an additional factor used to define a range ([factor, factor2]) with main value to pick the final value from
+    * @returns the current particle system
+    */
+  @JSName("addSizeGradient")
+  def addSizeGradient_IParticleSystem(gradient: scala.Double, factor: scala.Double): IParticleSystem = js.native
   /**
     * Not supported by GPUParticleSystem
     * @param gradient defines the gradient to use (between 0 and 1)
     * @param factor defines the start size value to affect to the specified gradient
+    * @param factor2 defines an additional factor used to define a range ([factor, factor2]) with main value to pick the final value from
+    * @returns the current particle system
+    */
+  /**
+    * Adds a new start size gradient (please note that this will only work if you set the targetStopDuration property)
+    * @param gradient defines the gradient to use (between 0 and 1)
+    * @param factor defines the start size to affect to the specified gradient
     * @param factor2 defines an additional factor used to define a range ([factor, factor2]) with main value to pick the final value from
     * @returns the current particle system
     */
@@ -185,9 +277,22 @@ class GPUParticleSystem protected ()
     * @returns the current particle system
     */
   def addVelocityGradient(gradient: scala.Double, factor: scala.Double): GPUParticleSystem = js.native
+  def addVelocityGradient(gradient: scala.Double, factor: scala.Double, factor2: scala.Double): IParticleSystem = js.native
+  /**
+    * Adds a new velocity gradient
+    * @param gradient defines the gradient to use (between 0 and 1)
+    * @param factor defines the velocity to affect to the specified gradient
+    * @param factor2 defines an additional factor used to define a range ([factor, factor2]) with main value to pick the final value from
+    * @returns the current particle system
+    */
+  @JSName("addVelocityGradient")
+  def addVelocityGradient_IParticleSystem(gradient: scala.Double, factor: scala.Double): IParticleSystem = js.native
   /**
     * Animates the particle system for the current frame by emitting new particles and or animating the living ones.
     * @param preWarm defines if we are in the pre-warmimg phase
+    */
+  /**
+    * Animates the particle system for this frame.
     */
   def animate(): scala.Unit = js.native
   def animate(preWarm: scala.Boolean): scala.Unit = js.native
@@ -198,6 +303,14 @@ class GPUParticleSystem protected ()
     * @returns the cloned particle system
     */
   def clone(name: java.lang.String, newEmitter: js.Any): GPUParticleSystem = js.native
+  /**
+    * Clones the particle system.
+    * @param name The name of the cloned object
+    * @param newEmitter The new emitter to use
+    * @returns the cloned particle system
+    */
+  @JSName("clone")
+  def clone_Nullable(name: java.lang.String, newEmitter: js.Any): Nullable[IParticleSystem] = js.native
   /**
     * Releases all held resources
     */
@@ -218,6 +331,11 @@ class GPUParticleSystem protected ()
     * Not supported by GPUParticleSystem
     * @returns the list of ramp gradients
     */
+  /**
+    * Gets the current list of ramp gradients.
+    * You must use addRampGradient and removeRampGradient to udpate this list
+    * @returns the list of ramp gradients
+    */
   def getRampGradients(): Nullable[js.Array[Color3Gradient]] = js.native
   /**
     * Is this system ready to be used/rendered
@@ -231,6 +349,9 @@ class GPUParticleSystem protected ()
   def isStarted(): scala.Boolean = js.native
   /**
     * Rebuilds the particle system
+    */
+  /**
+    * Rebuild the particle system
     */
   def rebuild(): scala.Unit = js.native
   /**
@@ -246,11 +367,25 @@ class GPUParticleSystem protected ()
     */
   def removeAngularSpeedGradient(gradient: scala.Double): GPUParticleSystem = js.native
   /**
+    * Remove a specific angular speed gradient
+    * @param gradient defines the gradient to remove
+    * @returns the current particle system
+    */
+  @JSName("removeAngularSpeedGradient")
+  def removeAngularSpeedGradient_IParticleSystem(gradient: scala.Double): IParticleSystem = js.native
+  /**
     * Remove a specific color gradient
     * @param gradient defines the gradient to remove
     * @returns the current particle system
     */
   def removeColorGradient(gradient: scala.Double): GPUParticleSystem = js.native
+  /**
+    * Remove a specific color gradient
+    * @param gradient defines the gradient to remove
+    * @returns the current particle system
+    */
+  @JSName("removeColorGradient")
+  def removeColorGradient_IParticleSystem(gradient: scala.Double): IParticleSystem = js.native
   /**
     * Not supported by GPUParticleSystem
     * @param gradient defines the gradient to remove
@@ -264,13 +399,30 @@ class GPUParticleSystem protected ()
     */
   def removeDragGradient(gradient: scala.Double): GPUParticleSystem = js.native
   /**
+    * Remove a specific drag gradient
+    * @param gradient defines the gradient to remove
+    * @returns the current particle system
+    */
+  @JSName("removeDragGradient")
+  def removeDragGradient_IParticleSystem(gradient: scala.Double): IParticleSystem = js.native
+  /**
     * Not supported by GPUParticleSystem
+    * @param gradient defines the gradient to remove
+    * @returns the current particle system
+    */
+  /**
+    * Remove a specific emit rate gradient
     * @param gradient defines the gradient to remove
     * @returns the current particle system
     */
   def removeEmitRateGradient(gradient: scala.Double): IParticleSystem = js.native
   /**
     * Not supported by GPUParticleSystem
+    * @param gradient defines the gradient to remove
+    * @returns the current particle system
+    */
+  /**
+    * Remove a specific life time gradient
     * @param gradient defines the gradient to remove
     * @returns the current particle system
     */
@@ -281,6 +433,13 @@ class GPUParticleSystem protected ()
     * @returns the current particle system
     */
   def removeLimitVelocityGradient(gradient: scala.Double): GPUParticleSystem = js.native
+  /**
+    * Remove a specific limit velocity gradient
+    * @param gradient defines the gradient to remove
+    * @returns the current particle system
+    */
+  @JSName("removeLimitVelocityGradient")
+  def removeLimitVelocityGradient_IParticleSystem(gradient: scala.Double): IParticleSystem = js.native
   /**
     * Not supported by GPUParticleSystem
     * @param gradient defines the gradient to remove
@@ -294,7 +453,19 @@ class GPUParticleSystem protected ()
     */
   def removeSizeGradient(gradient: scala.Double): GPUParticleSystem = js.native
   /**
+    * Remove a specific size gradient
+    * @param gradient defines the gradient to remove
+    * @returns the current particle system
+    */
+  @JSName("removeSizeGradient")
+  def removeSizeGradient_IParticleSystem(gradient: scala.Double): IParticleSystem = js.native
+  /**
     * Not supported by GPUParticleSystem
+    * @param gradient defines the gradient to remove
+    * @returns the current particle system
+    */
+  /**
+    * Remove a specific start size gradient
     * @param gradient defines the gradient to remove
     * @returns the current particle system
     */
@@ -306,8 +477,19 @@ class GPUParticleSystem protected ()
     */
   def removeVelocityGradient(gradient: scala.Double): GPUParticleSystem = js.native
   /**
+    * Remove a specific velocity gradient
+    * @param gradient defines the gradient to remove
+    * @returns the current particle system
+    */
+  @JSName("removeVelocityGradient")
+  def removeVelocityGradient_IParticleSystem(gradient: scala.Double): IParticleSystem = js.native
+  /**
     * Renders the particle system in its current state
     * @param preWarm defines if the system should only update the particles but not render them
+    * @returns the current number of particles
+    */
+  /**
+    * Renders the particle system in its current state.
     * @returns the current number of particles
     */
   def render(): scala.Double = js.native
@@ -324,6 +506,10 @@ class GPUParticleSystem protected ()
   /**
     * Starts the particle system and begins to emit
     * @param delay defines the delay in milliseconds before starting the system (this.startDelay by default)
+    */
+  /**
+    * Starts the particle system and begins to emit
+    * @param delay defines the delay in milliseconds before starting the system (0 by default)
     */
   def start(): scala.Unit = js.native
   def start(delay: scala.Double): scala.Unit = js.native

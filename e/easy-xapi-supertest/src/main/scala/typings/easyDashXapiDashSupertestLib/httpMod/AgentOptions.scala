@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AgentOptions extends js.Object {
   /**
   		 * Keep sockets around in a pool to be used by other requests in the future. Default = false

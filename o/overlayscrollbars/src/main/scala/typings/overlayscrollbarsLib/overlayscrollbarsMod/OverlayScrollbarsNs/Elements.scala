@@ -10,8 +10,8 @@ trait Elements extends js.Object {
   var host: stdLib.HTMLElement
   var padding: stdLib.HTMLElement
   var scrollbarCorner: stdLib.HTMLElement
-  var scrollbarHorizontal: overlayscrollbarsLib.Anon_Scrollbar
-  var scrollbarVertical: overlayscrollbarsLib.Anon_Scrollbar
+  var scrollbarHorizontal: overlayscrollbarsLib.Anon_Handle
+  var scrollbarVertical: overlayscrollbarsLib.Anon_Handle
   var target: stdLib.HTMLElement
   var viewport: stdLib.HTMLElement
 }

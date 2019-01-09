@@ -9,9 +9,7 @@ trait LoadBalancerState extends js.Object {
   /**
     * An Access Logs block. Access Logs documented below. Only valid for Load Balancers of type `application`.
     */
-  val accessLogs: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PrefixBucketEnabledInput]
-  ] = js.undefined
+  val accessLogs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketEnabledPrefix]] = js.undefined
   /**
     * The ARN of the load balancer (matches `id`).
     */
@@ -75,9 +73,7 @@ trait LoadBalancerState extends js.Object {
     */
   val subnetMappings: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SubnetIdAllocationIdInput]
-      ]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllocationIdSubnetId]]
     ]
   ] = js.undefined
   /**

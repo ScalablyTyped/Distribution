@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Account extends js.Object {
   /** Child link for an account entry. Points to the list of web properties for this account. */
-  var childLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Type] = js.undefined
+  var childLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Href] = js.undefined
   /** Time the account was created. */
   var created: js.UndefOr[java.lang.String] = js.undefined
   /** Account ID. */
@@ -17,7 +17,7 @@ trait Account extends js.Object {
   /** Account name. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** Permissions the user has for this account. */
-  var permissions: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_EffectiveArray] = js.undefined
+  var permissions: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Effective] = js.undefined
   /** Link for this account. */
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
   /** Indicates whether this account is starred or not. */

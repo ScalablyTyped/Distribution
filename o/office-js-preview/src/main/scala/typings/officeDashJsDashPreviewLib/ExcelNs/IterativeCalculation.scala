@@ -61,7 +61,7 @@ class IterativeCalculation ()
   def load(): IterativeCalculation = js.native
   def load(option: java.lang.String): IterativeCalculation = js.native
   def load(option: js.Array[java.lang.String]): IterativeCalculation = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): IterativeCalculation = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): IterativeCalculation = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.IterativeCalculationLoadOptions): IterativeCalculation = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

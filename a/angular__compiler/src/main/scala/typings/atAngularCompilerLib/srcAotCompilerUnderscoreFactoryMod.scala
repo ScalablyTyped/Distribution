@@ -11,12 +11,12 @@ object srcAotCompilerUnderscoreFactoryMod extends js.Object {
   def createAotCompiler(
     compilerHost: atAngularCompilerLib.srcAotCompilerUnderscoreHostMod.AotCompilerHost,
     options: atAngularCompilerLib.srcAotCompilerUnderscoreOptionsMod.AotCompilerOptions
-  ): atAngularCompilerLib.Anon_Reflector = js.native
+  ): atAngularCompilerLib.Anon_Compiler = js.native
   def createAotCompiler(
     compilerHost: atAngularCompilerLib.srcAotCompilerUnderscoreHostMod.AotCompilerHost,
     options: atAngularCompilerLib.srcAotCompilerUnderscoreOptionsMod.AotCompilerOptions,
     errorCollector: js.Function2[/* error */ js.Any, /* type */ js.UndefOr[js.Any], scala.Unit]
-  ): atAngularCompilerLib.Anon_Reflector = js.native
-  def createAotUrlResolver(host: atAngularCompilerLib.Anon_ResourceNameToFileName): atAngularCompilerLib.srcUrlUnderscoreResolverMod.UrlResolver = js.native
+  ): atAngularCompilerLib.Anon_Compiler = js.native
+  def createAotUrlResolver(host: atAngularCompilerLib.Anon_ContainingFileName): atAngularCompilerLib.srcUrlUnderscoreResolverMod.UrlResolver = js.native
 }
 

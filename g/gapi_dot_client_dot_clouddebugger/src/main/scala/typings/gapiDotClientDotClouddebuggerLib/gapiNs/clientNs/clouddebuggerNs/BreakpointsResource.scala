@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BreakpointsResource extends js.Object {
   /** Deletes the breakpoint from the debuggee. */
-  def delete(request: gapiDotClientDotClouddebuggerLib.Anon_AccesstokenPrettyPrintDebuggeeId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object] = js.native
+  def delete(request: gapiDotClientDotClouddebuggerLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object] = js.native
   /** Gets breakpoint information. */
-  def get(request: gapiDotClientDotClouddebuggerLib.Anon_AccesstokenPrettyPrintDebuggeeId): gapiDotClientLib.gapiNs.clientNs.Request[GetBreakpointResponse] = js.native
+  def get(request: gapiDotClientDotClouddebuggerLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[GetBreakpointResponse] = js.native
   /**
     * Returns the list of all active breakpoints for the debuggee.
     *
@@ -26,11 +26,11 @@ trait BreakpointsResource extends js.Object {
     * until the controller removes them from the active list to avoid
     * setting those breakpoints again.
     */
-  def list(request: gapiDotClientDotClouddebuggerLib.Anon_WaitToken): gapiDotClientLib.gapiNs.clientNs.Request[ListActiveBreakpointsResponse] = js.native
+  def list(request: gapiDotClientDotClouddebuggerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListActiveBreakpointsResponse] = js.native
   /** Lists all breakpoints for the debuggee. */
-  def list(request: gapiDotClientDotClouddebuggerLib.Anon_WaitTokenIncludeAllUsers): gapiDotClientLib.gapiNs.clientNs.Request[ListBreakpointsResponse] = js.native
+  def list(request: gapiDotClientDotClouddebuggerLib.Anon_AccesstokenActionvalue): gapiDotClientLib.gapiNs.clientNs.Request[ListBreakpointsResponse] = js.native
   /** Sets the breakpoint to the debuggee. */
-  def set(request: gapiDotClientDotClouddebuggerLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[SetBreakpointResponse] = js.native
+  def set(request: gapiDotClientDotClouddebuggerLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[SetBreakpointResponse] = js.native
   /**
     * Updates the breakpoint state or mutable fields.
     * The entire Breakpoint message must be sent back to the controller service.
@@ -41,6 +41,6 @@ trait BreakpointsResource extends js.Object {
     * semantics. These may only make changes such as canonicalizing a value
     * or snapping the location to the correct line of code.
     */
-  def update(request: gapiDotClientDotClouddebuggerLib.Anon_AccesstokenPrettyPrintDebuggeeIdBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object] = js.native
+  def update(request: gapiDotClientDotClouddebuggerLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[js.Object] = js.native
 }
 

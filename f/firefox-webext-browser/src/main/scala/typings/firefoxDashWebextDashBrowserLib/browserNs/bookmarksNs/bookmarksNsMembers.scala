@@ -14,7 +14,7 @@ object bookmarksNsMembers extends js.Object {
   val onChanged: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function2[
       /* id */ java.lang.String, 
-      /* changeInfo */ firefoxDashWebextDashBrowserLib.Anon_UrlTitleString, 
+      /* changeInfo */ firefoxDashWebextDashBrowserLib.Anon_TitleUrl, 
       scala.Unit
     ]
   ] = js.native
@@ -41,7 +41,7 @@ object bookmarksNsMembers extends js.Object {
   val onMoved: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function2[
       /* id */ java.lang.String, 
-      /* moveInfo */ firefoxDashWebextDashBrowserLib.Anon_OldIndex, 
+      /* moveInfo */ firefoxDashWebextDashBrowserLib.Anon_IndexOldIndex, 
       scala.Unit
     ]
   ] = js.native
@@ -52,7 +52,7 @@ object bookmarksNsMembers extends js.Object {
   val onRemoved: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function2[
       /* id */ java.lang.String, 
-      /* removeInfo */ firefoxDashWebextDashBrowserLib.Anon_Node, 
+      /* removeInfo */ firefoxDashWebextDashBrowserLib.Anon_IndexNode, 
       scala.Unit
     ]
   ] = js.native
@@ -82,12 +82,12 @@ object bookmarksNsMembers extends js.Object {
   /** Retrieves the entire Bookmarks hierarchy. */
   def getTree(): js.Promise[js.Array[BookmarkTreeNode]] = js.native
   /** Moves the specified BookmarkTreeNode to the provided location. */
-  def move(id: java.lang.String, destination: firefoxDashWebextDashBrowserLib.Anon_ParentId): js.Promise[js.UndefOr[BookmarkTreeNode]] = js.native
+  def move(id: java.lang.String, destination: firefoxDashWebextDashBrowserLib.Anon_Index): js.Promise[js.UndefOr[BookmarkTreeNode]] = js.native
   /** Removes a bookmark or an empty bookmark folder. */
   def remove(id: java.lang.String): js.Promise[scala.Unit] = js.native
   /** Recursively removes a bookmark folder. */
   def removeTree(id: java.lang.String): js.Promise[scala.Unit] = js.native
-  def search(query: firefoxDashWebextDashBrowserLib.Anon_UrlTitleQuery): js.Promise[js.Array[BookmarkTreeNode]] = js.native
+  def search(query: firefoxDashWebextDashBrowserLib.Anon_Query): js.Promise[js.Array[BookmarkTreeNode]] = js.native
   /**
     * Searches for BookmarkTreeNodes matching the given query. Queries specified with an object produce
     * BookmarkTreeNodes matching all specified properties.
@@ -100,6 +100,6 @@ object bookmarksNsMembers extends js.Object {
     * Updates the properties of a bookmark or folder. Specify only the properties that you want to change; unspecified
     * properties will be left unchanged. **Note:** Currently, only 'title' and 'url' are supported.
     */
-  def update(id: java.lang.String, changes: firefoxDashWebextDashBrowserLib.Anon_UrlTitleStringOptional): js.Promise[js.UndefOr[BookmarkTreeNode]] = js.native
+  def update(id: java.lang.String, changes: firefoxDashWebextDashBrowserLib.Anon_Title): js.Promise[js.UndefOr[BookmarkTreeNode]] = js.native
 }
 

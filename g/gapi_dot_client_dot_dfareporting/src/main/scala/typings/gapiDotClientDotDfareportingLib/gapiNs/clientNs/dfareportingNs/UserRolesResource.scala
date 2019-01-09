@@ -7,18 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait UserRolesResource extends js.Object {
   /** Deletes an existing user role. */
-  def delete(request: gapiDotClientDotDfareportingLib.Anon_ProfileIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+  def delete(request: gapiDotClientDotDfareportingLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   /** Gets one user role by ID. */
-  def get(request: gapiDotClientDotDfareportingLib.Anon_ProfileIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[UserRole]
+  def get(request: gapiDotClientDotDfareportingLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[UserRole]
   /** Inserts a new user role. */
-  def insert(request: gapiDotClientDotDfareportingLib.Anon_ProfileId): gapiDotClientLib.gapiNs.clientNs.Request[UserRole]
+  def insert(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[UserRole]
   /** Retrieves a list of user roles, possibly filtered. This method supports paging. */
-  def list(
-    request: gapiDotClientDotDfareportingLib.Anon_ProfileIdSortFieldMaxResultsPrettyPrintPageTokenQuotaUserSearchStringKeyUserIp
-  ): gapiDotClientLib.gapiNs.clientNs.Request[UserRolesListResponse]
+  def list(request: gapiDotClientDotDfareportingLib.Anon_AccountUserRoleOnly): gapiDotClientLib.gapiNs.clientNs.Request[UserRolesListResponse]
   /** Updates an existing user role. This method supports patch semantics. */
-  def patch(request: gapiDotClientDotDfareportingLib.Anon_ProfileIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[UserRole]
+  def patch(request: gapiDotClientDotDfareportingLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[UserRole]
   /** Updates an existing user role. */
-  def update(request: gapiDotClientDotDfareportingLib.Anon_ProfileId): gapiDotClientLib.gapiNs.clientNs.Request[UserRole]
+  def update(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[UserRole]
 }
 

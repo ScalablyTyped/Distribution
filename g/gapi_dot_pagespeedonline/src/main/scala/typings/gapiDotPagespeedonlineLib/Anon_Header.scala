@@ -13,6 +13,6 @@ trait Anon_Header extends js.Object {
   /**
     * List of entries that provide information about URLs in the URL block. Optional.
     */
-  var urls: js.Array[Anon_Result]
+  var urls: js.Array[Anon_Details]
 }
 

@@ -57,7 +57,7 @@ trait SmtpOptions extends js.Object {
   /**
     * see Pooled SMTP for details about connection pooling
     */
-  var pool: js.UndefOr[nodemailerDashSmtpDashTransportLib.Anon_RateLimit] = js.undefined
+  var pool: js.UndefOr[nodemailerDashSmtpDashTransportLib.Anon_MaxConnections] = js.undefined
   /**
     * is the port to connect to (defaults to 25 or 465)
     */

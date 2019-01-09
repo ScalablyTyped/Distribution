@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ @JSImport("winston-mail", "Mail")
 @js.native
 class Mail protected ()

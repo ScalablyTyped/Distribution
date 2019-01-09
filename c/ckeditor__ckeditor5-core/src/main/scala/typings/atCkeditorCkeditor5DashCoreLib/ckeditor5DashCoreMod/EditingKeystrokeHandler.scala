@@ -15,7 +15,7 @@ class EditingKeystrokeHandler protected ()
   def set(
     keystroke: java.lang.String,
     callback: java.lang.String,
-    options: atCkeditorCkeditor5DashCoreLib.Anon_Priority
+    options: atCkeditorCkeditor5DashCoreLib.Anon_PriorityNumber
   ): scala.Unit = js.native
   def set(
     keystroke: java.lang.String,
@@ -24,13 +24,13 @@ class EditingKeystrokeHandler protected ()
       /* cancel */ js.Function0[scala.Unit], 
       scala.Unit
     ],
-    options: atCkeditorCkeditor5DashCoreLib.Anon_Priority
+    options: atCkeditorCkeditor5DashCoreLib.Anon_PriorityNumber
   ): scala.Unit = js.native
   def set(keystroke: js.Array[java.lang.String | scala.Double], callback: java.lang.String): scala.Unit = js.native
   def set(
     keystroke: js.Array[java.lang.String | scala.Double],
     callback: java.lang.String,
-    options: atCkeditorCkeditor5DashCoreLib.Anon_Priority
+    options: atCkeditorCkeditor5DashCoreLib.Anon_PriorityNumber
   ): scala.Unit = js.native
   def set(
     keystroke: js.Array[java.lang.String | scala.Double],
@@ -39,7 +39,7 @@ class EditingKeystrokeHandler protected ()
       /* cancel */ js.Function0[scala.Unit], 
       scala.Unit
     ],
-    options: atCkeditorCkeditor5DashCoreLib.Anon_Priority
+    options: atCkeditorCkeditor5DashCoreLib.Anon_PriorityNumber
   ): scala.Unit = js.native
 }
 

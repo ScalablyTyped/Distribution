@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait SjclEllipticCurveCryptography extends js.Object {
   var basicKey: SjclECCBasic
   var curve: SjclEllipticalCurveStatic
-  var curves: sjclLib.Anon_C384
+  var curves: sjclLib.Anon_C192
   var ecdsa: SjclEcdsa
   var elGamal: SjclElGamal
   var point: SjclEllipticalPointStatic

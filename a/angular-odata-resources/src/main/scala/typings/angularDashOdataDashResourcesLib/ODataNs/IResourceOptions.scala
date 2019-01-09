@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 trait IResourceOptions extends js.Object {
   var isodatav4: js.UndefOr[scala.Boolean] = js.undefined
-  var odata: js.UndefOr[angularDashOdataDashResourcesLib.Anon_Url] = js.undefined
+  var odata: js.UndefOr[angularDashOdataDashResourcesLib.Anon_Method] = js.undefined
   /**
     * If true then the trailing slashes from any calculated URL will be stripped (defaults to true)
     */

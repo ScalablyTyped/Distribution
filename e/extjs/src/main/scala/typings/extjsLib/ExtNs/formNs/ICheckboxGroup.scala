@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.formNs.fieldNs.IField because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, disabled, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait ICheckboxGroup extends IFieldContainer {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.formNs.fieldNs.IField because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, disabled, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined name, submitValue, validateOnChange, value, isFormField, originalValue, batchChanges, beforeReset, checkChange, checkDirty, clearInvalid, extractFileInput, getErrors, getModelData, getName, getSubmitData, getValue, initField, initValue, isDirty, isEqual, isFileUpload, isValid, markInvalid, reset, resetOriginalValue, setValue, transformOriginalValue, validate */ trait ICheckboxGroup extends IFieldContainer {
   /** [Config Option] (Boolean) */
   var allowBlank: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] A utility for grouping a set of modifications which may trigger value changes into a single transaction to prevent e
@@ -28,7 +28,7 @@ trait ICheckboxGroup extends IFieldContainer {
   /** [Method] Only relevant if the instance s isFileUpload method returns true
   		* @returns HTMLElement
   		*/
-  var extractFileInput: js.UndefOr[js.Function0[stdLib.HTMLElement]] = js.undefined
+  var extractFileInput: js.UndefOr[js.Function0[_ | stdLib.HTMLElement]] = js.undefined
   /** [Method] Returns an Array of all checkboxes in the container which are currently checked
   		* @returns Ext.form.field.Checkbox[] Array of Ext.form.field.Checkbox components
   		*/
@@ -36,7 +36,9 @@ trait ICheckboxGroup extends IFieldContainer {
   /** [Method] Runs CheckboxGroup s validations and returns an array of any errors
   		* @returns String[] Array of all validation errors
   		*/
-  var getErrors: js.UndefOr[js.Function0[extjsLib.ExtNs.Array]] = js.undefined
+  var getErrors: js.UndefOr[
+    js.Function0[extjsLib.ExtNs.Array] | (js.Function1[/* value */ js.UndefOr[js.Any], _])
+  ] = js.undefined
   /** [Method] Don t return any data for the model the form will get the info from the individual checkboxes themselves
   		* @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
   		*/
@@ -50,7 +52,7 @@ trait ICheckboxGroup extends IFieldContainer {
   		*/
   var getSubmitData: js.UndefOr[js.Function0[_]] = js.undefined
   /** [Method] Returns an object containing the values of all checked checkboxes within the group  */
-  var getValue: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var getValue: js.UndefOr[js.Function0[_ | scala.Unit]] = js.undefined
   /** [Method] Initializes this Field mixin on the current instance  */
   var initField: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Method] Initializes the field s value based on the initial config  */
@@ -58,27 +60,31 @@ trait ICheckboxGroup extends IFieldContainer {
   /** [Method] private override
   		* @returns Boolean True if this field has been changed from its original value (and is not disabled), false otherwise.
   		*/
-  var isDirty: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
+  var isDirty: js.UndefOr[js.Function0[_ | scala.Boolean]] = js.undefined
   /** [Method] private override  the group value is a complex object compare using object serialization
   		* @param value1 Object
   		* @param value2 Object
   		* @returns Boolean True if the values are equal, false if inequal.
   		*/
   var isEqual: js.UndefOr[
-    js.Function2[/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any], scala.Boolean]
+    js.Function2[/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any], _ | scala.Boolean]
   ] = js.undefined
   /** [Method] Returns whether this Field is a file upload field if it returns true forms will use special techniques for submitti
   		* @returns Boolean
   		*/
-  var isFileUpload: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
+  var isFileUpload: js.UndefOr[js.Function0[_ | scala.Boolean]] = js.undefined
+  /** [Property] (Boolean) */
+  var isFormField: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value
   		* @returns Boolean True if the value is valid, else false
   		*/
-  var isValid: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
+  var isValid: js.UndefOr[js.Function0[_ | scala.Boolean]] = js.undefined
   /** [Method] Associate one or more error messages with this field
   		* @param errors String/String[] The error message(s) for the field.
   		*/
   var markInvalid: js.UndefOr[js.Function1[/* errors */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  /** [Config Option] (String) */
+  var name: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] When a checkbox is added to the group monitor it for changes
   		* @param field Object
   		*/
@@ -89,6 +95,8 @@ trait ICheckboxGroup extends IFieldContainer {
   		*/
   @JSName("onRemove")
   var onRemove_ICheckboxGroup: js.UndefOr[js.Function1[/* item */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  /** [Property] (Object) */
+  var originalValue: js.UndefOr[js.Any] = js.undefined
   /** [Method] Resets the checked state of all checkboxes in the group to their originally loaded values and clears any validation m  */
   var reset: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Method] Resets the field s originalValue property so it matches the current value  */
@@ -97,7 +105,9 @@ trait ICheckboxGroup extends IFieldContainer {
   		* @param value Object The mapping of checkbox names to values.
   		* @returns Ext.form.CheckboxGroup this
   		*/
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], this.type | _]] = js.undefined
+  /** [Config Option] (Boolean) */
+  var submitValue: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Allows for any necessary modifications before the original value is set
   		* @param value Object The initial value
   		* @returns Object The modified initial value
@@ -106,7 +116,11 @@ trait ICheckboxGroup extends IFieldContainer {
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value and fires the vali
   		* @returns Boolean True if the value is valid, else false
   		*/
-  var validate: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
+  var validate: js.UndefOr[js.Function0[_ | scala.Boolean]] = js.undefined
+  /** [Config Option] (Boolean) */
+  var validateOnChange: js.UndefOr[scala.Boolean] = js.undefined
+  /** [Config Option] (Object) */
+  var value: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
 }

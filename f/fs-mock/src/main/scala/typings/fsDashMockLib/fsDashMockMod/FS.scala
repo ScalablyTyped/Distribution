@@ -13,23 +13,23 @@ trait FS extends js.Object {
     data: js.Any,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def appendFile(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_Encoding): scala.Unit = js.native
-  def appendFile(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_EncodingMode): scala.Unit = js.native
+  def appendFile(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_EncodingFlag): scala.Unit = js.native
+  def appendFile(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_EncodingFlagMode): scala.Unit = js.native
   def appendFile(
     filename: java.lang.String,
     data: js.Any,
-    options: fsDashMockLib.Anon_EncodingMode,
+    options: fsDashMockLib.Anon_EncodingFlagMode,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def appendFile(
     filename: java.lang.String,
     data: js.Any,
-    options: fsDashMockLib.Anon_Encoding,
+    options: fsDashMockLib.Anon_EncodingFlag,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def appendFileSync(filename: java.lang.String, data: js.Any): scala.Unit = js.native
-  def appendFileSync(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_Encoding): scala.Unit = js.native
-  def appendFileSync(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_EncodingMode): scala.Unit = js.native
+  def appendFileSync(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_EncodingFlag): scala.Unit = js.native
+  def appendFileSync(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_EncodingFlagMode): scala.Unit = js.native
   def chmod(path: java.lang.String, mode: java.lang.String): scala.Unit = js.native
   def chmod(
     path: java.lang.String,
@@ -59,10 +59,10 @@ trait FS extends js.Object {
   ): scala.Unit = js.native
   def closeSync(fd: scala.Double): scala.Unit = js.native
   def createReadStream(path: java.lang.String): nodeLib.fsMod.ReadStream = js.native
-  def createReadStream(path: java.lang.String, options: fsDashMockLib.Anon_Flags): nodeLib.fsMod.ReadStream = js.native
-  def createReadStream(path: java.lang.String, options: fsDashMockLib.Anon_FlagsEncoding): nodeLib.fsMod.ReadStream = js.native
+  def createReadStream(path: java.lang.String, options: fsDashMockLib.Anon_BufferSize): nodeLib.fsMod.ReadStream = js.native
+  def createReadStream(path: java.lang.String, options: fsDashMockLib.Anon_BufferSizeEncoding): nodeLib.fsMod.ReadStream = js.native
   def createWriteStream(path: java.lang.String): nodeLib.fsMod.WriteStream = js.native
-  def createWriteStream(path: java.lang.String, options: fsDashMockLib.Anon_EncodingString): nodeLib.fsMod.WriteStream = js.native
+  def createWriteStream(path: java.lang.String, options: fsDashMockLib.Anon_EncodingFlags): nodeLib.fsMod.WriteStream = js.native
   def exists(path: java.lang.String): scala.Unit = js.native
   def exists(path: java.lang.String, callback: js.Function1[/* exists */ scala.Boolean, scala.Unit]): scala.Unit = js.native
   def existsSync(path: java.lang.String): scala.Boolean = js.native
@@ -238,7 +238,7 @@ trait FS extends js.Object {
   ): scala.Unit = js.native
   def readFile(
     filename: java.lang.String,
-    options: fsDashMockLib.Anon_EncodingFlag,
+    options: fsDashMockLib.Anon_Encoding,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def readFile(
@@ -248,7 +248,7 @@ trait FS extends js.Object {
   ): scala.Unit = js.native
   def readFileSync(filename: java.lang.String): nodeLib.Buffer = js.native
   def readFileSync(filename: java.lang.String, encoding: java.lang.String): java.lang.String = js.native
-  def readFileSync(filename: java.lang.String, options: fsDashMockLib.Anon_EncodingFlag): java.lang.String = js.native
+  def readFileSync(filename: java.lang.String, options: fsDashMockLib.Anon_Encoding): java.lang.String = js.native
   def readFileSync(filename: java.lang.String, options: fsDashMockLib.Anon_Flag): nodeLib.Buffer = js.native
   def readSync(
     fd: scala.Double,
@@ -371,7 +371,7 @@ trait FS extends js.Object {
   ): scala.Unit = js.native
   def watchFile(
     filename: java.lang.String,
-    options: fsDashMockLib.Anon_PersistentInterval,
+    options: fsDashMockLib.Anon_Interval,
     listener: js.Function2[/* curr */ nodeLib.fsMod.Stats, /* prev */ nodeLib.fsMod.Stats, scala.Unit]
   ): scala.Unit = js.native
   def write(
@@ -400,23 +400,23 @@ trait FS extends js.Object {
     data: js.Any,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def writeFile(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_Encoding): scala.Unit = js.native
-  def writeFile(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_EncodingMode): scala.Unit = js.native
+  def writeFile(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_EncodingFlag): scala.Unit = js.native
+  def writeFile(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_EncodingFlagMode): scala.Unit = js.native
   def writeFile(
     filename: java.lang.String,
     data: js.Any,
-    options: fsDashMockLib.Anon_EncodingMode,
+    options: fsDashMockLib.Anon_EncodingFlagMode,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def writeFile(
     filename: java.lang.String,
     data: js.Any,
-    options: fsDashMockLib.Anon_Encoding,
+    options: fsDashMockLib.Anon_EncodingFlag,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def writeFileSync(filename: java.lang.String, data: js.Any): scala.Unit = js.native
-  def writeFileSync(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_Encoding): scala.Unit = js.native
-  def writeFileSync(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_EncodingMode): scala.Unit = js.native
+  def writeFileSync(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_EncodingFlag): scala.Unit = js.native
+  def writeFileSync(filename: java.lang.String, data: js.Any, options: fsDashMockLib.Anon_EncodingFlagMode): scala.Unit = js.native
   def writeSync(
     fd: scala.Double,
     buffer: nodeLib.Buffer,

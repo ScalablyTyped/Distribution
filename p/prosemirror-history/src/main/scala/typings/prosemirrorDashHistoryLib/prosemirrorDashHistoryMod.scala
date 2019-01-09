@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object prosemirrorDashHistoryMod extends js.Object {
   def closeHistory[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](tr: prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S]): prosemirrorDashStateLib.prosemirrorDashStateMod.Transaction[S] = js.native
   def history(): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_] = js.native
-  def history(config: prosemirrorDashHistoryLib.Anon_NewGroupDelay): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_] = js.native
+  def history(config: prosemirrorDashHistoryLib.Anon_Depth): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_] = js.native
   def redo[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]): scala.Boolean = js.native
   def redo[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S],

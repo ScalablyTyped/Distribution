@@ -8,36 +8,27 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Length extends js.Object {
   /**
-    * The length of tick line, can be a pecentage value relative
+    * The length of split line, can be a pecentage value relative
     * to radius.
     *
     *
     * @default
-    * 8
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisTick.length
+    * 30
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.splitLine.length
     */
   var length: js.UndefOr[scala.Double | java.lang.String] = js.native
   /**
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisTick.lineStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.splitLine.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ShadowOffsetXShadowBlurColorShadowColor] = js.native
+  var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.native
   /**
-    * Whether to show the scale.
+    * Whether to show the split line.
     *
     *
     * @default
     * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisTick.show
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.splitLine.show
     */
   var show: js.UndefOr[scala.Boolean] = js.native
-  /**
-    * The split scale number between split line.
-    *
-    *
-    * @default
-    * 5
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisTick.splitNumber
-    */
-  var splitNumber: js.UndefOr[scala.Double] = js.native
 }
 

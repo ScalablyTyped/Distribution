@@ -12,7 +12,7 @@ trait SketchMSMetadata extends js.Object {
   var build: scala.Double
   var commit: java.lang.String
   var compatibilityVersion: scala.Double
-  var created: Anon_Commit
+  var created: Anon_App
   var fonts: js.Array[java.lang.String]
   var pagesAndArtboards: SketchMSPagesAndArtboards
   var saveHistory: js.Array[java.lang.String]

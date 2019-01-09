@@ -20,13 +20,7 @@ object FileManager extends js.Object {
     * @param binary The class type to have access to the static properties.
     * @returns If the binary is available for the operating system.
     */
-  def `checkOS_`(
-    osType: java.lang.String,
-    binary: org.scalablytyped.runtime.Instantiable1[
-      /* opt_alternativeCdn */ js.UndefOr[/* opt_alternativeCdn */ java.lang.String], 
-      webdriverDashManagerLib.builtLibBinariesMod.Binary
-    ]
-  ): scala.Boolean = js.native
+  def `checkOS_`(osType: java.lang.String, binary: webdriverDashManagerLib.Anon_OptalternativeCdn): scala.Boolean = js.native
   /**
     * For the operating system, create a list that includes the binaries
     * for selenium standalone, chrome, and internet explorer.

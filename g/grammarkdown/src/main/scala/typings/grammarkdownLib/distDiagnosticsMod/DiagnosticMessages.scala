@@ -38,11 +38,11 @@ class DiagnosticMessages () extends js.Object {
   def getDiagnostic(diagnosticIndex: scala.Double): js.UndefOr[Diagnostic] = js.native
   def getDiagnosticArguments(diagnosticIndex: scala.Double): js.UndefOr[js.Array[_]] = js.native
   def getDiagnosticInfo(diagnosticIndex: scala.Double): js.UndefOr[DiagnosticInfo] = js.native
-  def getDiagnosticInfo(diagnosticIndex: scala.Double, options: grammarkdownLib.Anon_FormatMessage): js.UndefOr[DiagnosticInfo] = js.native
+  def getDiagnosticInfo(diagnosticIndex: scala.Double, options: grammarkdownLib.Anon_DetailedMessage): js.UndefOr[DiagnosticInfo] = js.native
   def getDiagnosticInfos(): js.Array[DiagnosticInfo] = js.native
-  def getDiagnosticInfos(options: grammarkdownLib.Anon_FormatMessage): js.Array[DiagnosticInfo] = js.native
+  def getDiagnosticInfos(options: grammarkdownLib.Anon_DetailedMessage): js.Array[DiagnosticInfo] = js.native
   def getDiagnosticInfosForSourceFile(sourceFile: grammarkdownLib.distNodesMod.SourceFile): js.Array[DiagnosticInfo] = js.native
-  def getDiagnosticInfosForSourceFile(sourceFile: grammarkdownLib.distNodesMod.SourceFile, options: grammarkdownLib.Anon_FormatMessage): js.Array[DiagnosticInfo] = js.native
+  def getDiagnosticInfosForSourceFile(sourceFile: grammarkdownLib.distNodesMod.SourceFile, options: grammarkdownLib.Anon_DetailedMessage): js.Array[DiagnosticInfo] = js.native
   def getDiagnosticNode(diagnosticIndex: scala.Double): js.UndefOr[grammarkdownLib.distNodesMod.Node[grammarkdownLib.distTokensMod.SyntaxKind]] = js.native
   def getDiagnosticRange(diagnosticIndex: scala.Double): js.UndefOr[grammarkdownLib.distCoreMod.Range] = js.native
   def getDiagnosticSourceFile(diagnosticIndex: scala.Double): js.UndefOr[grammarkdownLib.distNodesMod.SourceFile] = js.native

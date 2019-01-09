@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // statics
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ @js.native
 trait PassportLocalModel[T /* <: stdLib.Document */] extends js.Object {
   def authenticate(): js.Function3[

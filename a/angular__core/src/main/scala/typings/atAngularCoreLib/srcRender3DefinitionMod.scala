@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core/src/render3/definition", JSImport.Namespace)
 @js.native
 object srcRender3DefinitionMod extends js.Object {
-  def defineBase[T](baseDefinition: atAngularCoreLib.Anon_Outputs[T]): atAngularCoreLib.srcRender3InterfacesDefinitionMod.BaseDef[T] = js.native
-  def defineComponent[T](componentDefinition: atAngularCoreLib.Anon_Directives[T]): scala.Nothing = js.native
-  def defineDirective[T](directiveDefinition: atAngularCoreLib.Anon_Features[T]): scala.Nothing = js.native
+  def defineBase[T](baseDefinition: atAngularCoreLib.Anon_Inputs[T]): atAngularCoreLib.srcRender3InterfacesDefinitionMod.BaseDef[T] = js.native
+  def defineComponent[T](componentDefinition: atAngularCoreLib.Anon_Attributes[T]): scala.Nothing = js.native
+  def defineDirective[T](directiveDefinition: atAngularCoreLib.Anon_AttributesContentQueries[T]): scala.Nothing = js.native
   def defineNgModule[T](
-    `def`: atAngularCoreLib.Anon_TypeT[T] with stdLib.Partial[atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModuleDef[T]]
+    `def`: atAngularCoreLib.Anon_Type[T] with stdLib.Partial[atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModuleDef[T]]
   ): scala.Nothing = js.native
-  def definePipe[T](pipeDef: atAngularCoreLib.Anon_Type[T]): scala.Nothing = js.native
+  def definePipe[T](pipeDef: atAngularCoreLib.Anon_FactoryName[T]): scala.Nothing = js.native
   def extractDirectiveDef(
     `type`: atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveType[_] with atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentType[_]
   ): atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[_] | atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[_] = js.native

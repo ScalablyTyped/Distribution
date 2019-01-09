@@ -9,7 +9,7 @@ trait NumberFilter extends js.Object {
   /**
   	 * Default value for the filter.
   	 */
-  var defaultValue: js.UndefOr[reactDashBootstrapDashTableLib.Anon_ComparatorNumber] = js.undefined
+  var defaultValue: js.UndefOr[reactDashBootstrapDashTableLib.Anon_Comparator] = js.undefined
   /**
   	 * Delay time in milliseconds after the last key press prior to applying the filter. Defaults to 500ms.
   	 */
@@ -29,7 +29,7 @@ trait NumberFilter extends js.Object {
   /**
   	 * CSS Style to use for the select filter.
   	 */
-  var style: js.UndefOr[reactDashBootstrapDashTableLib.Anon_Comparator] = js.undefined
+  var style: js.UndefOr[reactDashBootstrapDashTableLib.Anon_ComparatorNumber] = js.undefined
   /**
   	 * Filter type must be 'NumberFilter'
   	 */

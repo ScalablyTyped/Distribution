@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AceDiffOpts extends js.Object {
-  var classes: js.UndefOr[aceDashDiffLib.Anon_Diff] = js.undefined
+  var classes: js.UndefOr[aceDashDiffLib.Anon_Connector] = js.undefined
   var diffGranularity: js.UndefOr[
     aceDashDiffLib.aceDashDiffLibStrings.specific | aceDashDiffLib.aceDashDiffLibStrings.broad
   ] = js.undefined

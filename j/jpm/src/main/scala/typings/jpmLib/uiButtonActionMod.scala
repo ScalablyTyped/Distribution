@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
 @JSImport("sdk/ui/button/action", JSImport.Namespace)
 @js.native
 object uiButtonActionMod extends js.Object {
-  def ActionButton(options: jpmLib.Anon_OnClickStateOnChange): jpmLib.FFAddonSDKNs.ActionButton = js.native
+  def ActionButton(options: jpmLib.Anon_Badge): jpmLib.FFAddonSDKNs.ActionButton = js.native
 }
 

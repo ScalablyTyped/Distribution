@@ -12,9 +12,9 @@ object globalModMembers extends js.Object {
   val __dirname: java.lang.String = js.native
   val __filename: java.lang.String = js.native
   val argv: js.Array[js.Any] = js.native
-  val console: fibjsLib.Anon_Assert = js.native
+  val console: fibjsLib.Anon_0 = js.native
   val global: js.Object = js.native
-  val process: fibjsLib.Anon_ExecPath = js.native
+  val process: fibjsLib.Anon_Arch = js.native
   def GC(): scala.Unit = js.native
   def clearHrInterval(t: js.Any): scala.Unit = js.native
   def clearImmediate(t: js.Any): scala.Unit = js.native

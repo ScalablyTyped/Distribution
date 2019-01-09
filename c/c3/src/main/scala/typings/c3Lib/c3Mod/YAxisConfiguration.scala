@@ -28,7 +28,7 @@ trait YAxisConfiguration extends js.Object {
     * Valid horizontal positions: inner-right (Default), inner-center, inner-left, outer-right, outer-center, outer-left
     * Valid vertical positions: inner-top, inner-middle, inner-bottom, outer-top, outer-middle, outer-bottom
     */
-  var label: js.UndefOr[java.lang.String | c3Lib.Anon_Text] = js.undefined
+  var label: js.UndefOr[java.lang.String | c3Lib.Anon_Position] = js.undefined
   /**
     * Set max value of y axis.
     */
@@ -41,7 +41,7 @@ trait YAxisConfiguration extends js.Object {
     * Set padding for y axis.
     * You can set padding for y axis to create more space on the edge of the axis. This option accepts object and it can include top and bottom. top, bottom will be treated as pixels.
     */
-  var padding: js.UndefOr[c3Lib.Anon_Bottom] = js.undefined
+  var padding: js.UndefOr[c3Lib.Anon_BottomTop] = js.undefined
   /**
     * Show or hide y axis.
     */

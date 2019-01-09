@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ILightGroup extends js.Object {
-  var action: js.UndefOr[nodeDashHueDashApiLib.Anon_CtColormode] = js.undefined
+  var action: js.UndefOr[nodeDashHueDashApiLib.Anon_Bri] = js.undefined
   var `class`: js.UndefOr[RoomType] = js.undefined
   var id: java.lang.String
   var lights: js.UndefOr[js.Array[java.lang.String]] = js.undefined

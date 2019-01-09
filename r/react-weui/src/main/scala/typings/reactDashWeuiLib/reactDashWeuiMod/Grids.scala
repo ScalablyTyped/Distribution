@@ -16,6 +16,6 @@ class Grids protected () extends js.Object {
 @JSImport("react-weui", "Grids")
 @js.native
 object Grids extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_Data = js.native
+  var defaultProps: reactDashWeuiLib.Anon_DataAny = js.native
 }
 

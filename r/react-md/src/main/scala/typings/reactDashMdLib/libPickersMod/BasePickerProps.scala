@@ -12,7 +12,7 @@ trait BasePickerProps
     js.Function2[
       /* locales */ js.UndefOr[Locales | js.Array[Locales]], 
       /* options */ js.UndefOr[IntlFormat], 
-      reactDashMdLib.Anon_Format
+      reactDashMdLib.Anon_Date
     ]
   ] = js.undefined
   var animateInline: js.UndefOr[scala.Boolean] = js.undefined

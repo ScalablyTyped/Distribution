@@ -56,13 +56,15 @@ trait DocumentState extends js.Object {
     */
   val parameters: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypeDescriptionName]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DefaultValueDescriptionName]
+      ]
     ]
   ] = js.undefined
   /**
     * Additional Permissions to attach to the document. See Permissions below for details.
     */
-  val permissions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypeAccountIdsInput]] = js.undefined
+  val permissions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AccountIdsTypeInput]] = js.undefined
   /**
     * A list of OS platforms compatible with this SSM document, either "Windows" or "Linux".
     */

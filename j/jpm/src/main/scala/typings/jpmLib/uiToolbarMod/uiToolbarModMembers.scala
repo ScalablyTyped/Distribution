@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("sdk/ui/toolbar", JSImport.Namespace)
 @js.native
 object uiToolbarModMembers extends js.Object {
-  def Toolbar(options: jpmLib.Anon_OnShow): Toolbar = js.native
+  def Toolbar(options: jpmLib.Anon_Hidden): Toolbar = js.native
 }
 

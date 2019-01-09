@@ -13,8 +13,8 @@ object effectsModMembers extends js.Object {
   val put: Put = js.native
   val spawn: CallEffectFactory[ForkEffect] = js.native
   val take: Take = js.native
-  val takeLatest: reduxDashSagaLib.Anon_Channel = js.native
-  val takem: reduxDashSagaLib.Anon_Pattern = js.native
+  val takeLatest: reduxDashSagaLib.Anon_Arg1 = js.native
+  val takem: reduxDashSagaLib.Anon_Channel = js.native
   def actionChannel(pattern: Pattern): ActionChannelEffect = js.native
   def actionChannel(pattern: Pattern, buffer: reduxDashSagaLib.reduxDashSagaMod.Buffer[reduxLib.reduxMod.Action[_]]): ActionChannelEffect = js.native
   def all(effects: js.Array[Effect]): AllEffect = js.native
@@ -48,9 +48,9 @@ object effectsModMembers extends js.Object {
   @JSName("apply")
   def apply[C /* <: reduxDashSagaLib.reduxDashSagaLibStrings.apply with js.Any */, N /* <: java.lang.String */, T1, T2, T3, T4, T5](context: C, fn: N, args: js.Tuple5[T1, T2, T3, T4, T5]): CallEffect = js.native
   @JSName("apply")
-  def apply[T1, T2, T3, T4, T5, T6, AA /* <: js.Array[_] with (reduxDashSagaLib.Anon_4[T1, T3, T5, T4, T2, T6]) */](context: js.Any, fn: Func6Rest[T1, T2, T3, T4, T5, T6], args: AA): CallEffect = js.native
+  def apply[T1, T2, T3, T4, T5, T6, AA /* <: js.Array[_] with (reduxDashSagaLib.Anon_0[T1, T3, T5, T4, T2, T6]) */](context: js.Any, fn: Func6Rest[T1, T2, T3, T4, T5, T6], args: AA): CallEffect = js.native
   @JSName("apply")
-  def apply[C /* <: reduxDashSagaLib.reduxDashSagaLibStrings.apply with js.Any */, N /* <: java.lang.String */, T1, T2, T3, T4, T5, T6, AA /* <: js.Array[_] with (reduxDashSagaLib.Anon_4[T1, T3, T5, T4, T2, T6]) */](context: C, fn: N, args: AA): CallEffect = js.native
+  def apply[C /* <: reduxDashSagaLib.reduxDashSagaLibStrings.apply with js.Any */, N /* <: java.lang.String */, T1, T2, T3, T4, T5, T6, AA /* <: js.Array[_] with (reduxDashSagaLib.Anon_0[T1, T3, T5, T4, T2, T6]) */](context: C, fn: N, args: AA): CallEffect = js.native
   def cancel(): CancelEffect = js.native
   def cancel(task: reduxDashSagaLib.reduxDashSagaMod.Task): CancelEffect = js.native
   def cancel(tasks: reduxDashSagaLib.reduxDashSagaMod.Task*): js.Array[CancelEffect] = js.native

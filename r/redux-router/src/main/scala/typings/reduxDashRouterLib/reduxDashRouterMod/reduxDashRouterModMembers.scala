@@ -19,11 +19,11 @@ object reduxDashRouterModMembers extends js.Object {
   def isActive(pathname: historyLib.historyMod.Pathname): scala.Boolean = js.native
   def isActive(
     pathname: historyLib.historyMod.Pathname,
-    query: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify H.Query */ js.Any
+    query: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify H.Query */ js.Any
   ): scala.Boolean = js.native
   def isActive(
     pathname: historyLib.historyMod.Pathname,
-    query: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify H.Query */ js.Any,
+    query: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify H.Query */ js.Any,
     indexOnly: scala.Boolean
   ): scala.Boolean = js.native
   def push(args: js.Object*): reduxDashRouterLib.libActionCreatorsMod.ReduxRouterAction = js.native

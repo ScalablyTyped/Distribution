@@ -33,7 +33,7 @@ trait UserInfo extends js.Object {
   /** The URL of the user profile photo. */
   var photoUrl: js.UndefOr[java.lang.String] = js.undefined
   /** The IDP of the user. */
-  var providerUserInfo: js.UndefOr[js.Array[gapiDotClientDotIdentitytoolkitLib.Anon_DisplayNamePhoneNumber]] = js.undefined
+  var providerUserInfo: js.UndefOr[js.Array[gapiDotClientDotIdentitytoolkitLib.Anon_DisplayNameEmail]] = js.undefined
   /** The user's plain text password. */
   var rawPassword: js.UndefOr[java.lang.String] = js.undefined
   /** The user's password salt. */

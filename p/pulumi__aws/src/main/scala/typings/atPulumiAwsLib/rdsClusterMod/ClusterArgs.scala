@@ -123,11 +123,13 @@ trait ClusterArgs extends js.Object {
     * ARN of a source DB cluster or DB instance if this DB cluster is to be created as a Read Replica.
     */
   val replicationSourceIdentifier: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-  val s3Import: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SourceEngineVersion]] = js.undefined
+  val s3Import: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketNameBucketPrefixIngestionRole]
+  ] = js.undefined
   /**
     * Nested attribute with scaling properties. Only valid when `engine_mode` is set to `serverless`. More details below.
     */
-  val scalingConfiguration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SecondsUntilAutoPause]] = js.undefined
+  val scalingConfiguration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AutoPauseMaxCapacity]] = js.undefined
   /**
     * Determines whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from `final_snapshot_identifier`. Default is `false`.
     */

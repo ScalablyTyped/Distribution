@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SaveOptions ()
   extends breezeLib.breezeNs.SaveOptions {
-  def this(config: breezeLib.Anon_ResourceNameDataService) = this()
+  def this(config: breezeLib.Anon_AllowConcurrentSaves) = this()
 }
 
 @JSImport("breeze", "SaveOptions")

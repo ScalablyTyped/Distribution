@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Toast extends js.Object {
-  var POSITION: reactDashToastifyLib.Anon_TOPRIGHT = js.native
-  var TYPE: reactDashToastifyLib.Anon_WARNING = js.native
+  var POSITION: reactDashToastifyLib.Anon_BOTTOMCENTER = js.native
+  var TYPE: reactDashToastifyLib.Anon_DEFAULT = js.native
   def apply(
     content: js.Function1[
       /* props */ reactDashToastifyLib.Anon_CloseToast, 

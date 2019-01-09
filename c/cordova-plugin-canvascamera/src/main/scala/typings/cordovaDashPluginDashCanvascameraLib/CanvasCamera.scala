@@ -51,9 +51,9 @@ class CanvasCamera () extends js.Object {
     onSuccess: js.Function1[/* data */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def getUIOrientation(): cordovaDashPluginDashCanvascameraLib.cordovaDashPluginDashCanvascameraLibStrings.portrait | cordovaDashPluginDashCanvascameraLib.cordovaDashPluginDashCanvascameraLibStrings.landscape = js.native
-  def getUISize(): Anon_HeightWidth = js.native
+  def getUISize(): Anon_Height = js.native
   def initialize(fcanvas: stdLib.HTMLCanvasElement, tcanvas: stdLib.HTMLCanvasElement): scala.Unit = js.native
-  def setRenderersSize(size: Anon_HeightWidth): CanvasCamera = js.native
+  def setRenderersSize(size: Anon_Height): CanvasCamera = js.native
   def setRenderingPresets(): CanvasCamera = js.native
   def start(options: CanvasCameraOptions): scala.Unit = js.native
   def start(options: CanvasCameraOptions, onError: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]): scala.Unit = js.native

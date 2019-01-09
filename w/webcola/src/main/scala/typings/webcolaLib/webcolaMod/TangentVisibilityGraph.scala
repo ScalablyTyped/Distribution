@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class TangentVisibilityGraph protected ()
   extends webcolaLib.distSrcGeomMod.TangentVisibilityGraph {
   def this(P: js.Array[js.Array[webcolaLib.distSrcGeomMod.TVGPoint]]) = this()
-  def this(P: js.Array[js.Array[webcolaLib.distSrcGeomMod.TVGPoint]], g0: webcolaLib.Anon_V) = this()
+  def this(P: js.Array[js.Array[webcolaLib.distSrcGeomMod.TVGPoint]], g0: webcolaLib.Anon_E) = this()
 }
 

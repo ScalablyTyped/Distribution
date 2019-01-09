@@ -9,7 +9,7 @@ trait GoogleApiYouTubePlaylistItemResource extends js.Object {
   /**
     * The contentDetails object is included in the resource if the included item is a YouTube video. The object contains additional information about the video.
     */
-  var contentDetails: Anon_Note
+  var contentDetails: Anon_EndAt
   /**
     * The ETag for the playlist item resource.
     */
@@ -25,7 +25,7 @@ trait GoogleApiYouTubePlaylistItemResource extends js.Object {
   /**
     * The snippet object contains basic details about the playlist item, such as its title and position in the playlist.
     */
-  var snippet: Anon_ResourceId
+  var snippet: Anon_ChannelIdChannelTitleDescription
   /**
     * The status object contains information about the playlist items privacy status.
     */

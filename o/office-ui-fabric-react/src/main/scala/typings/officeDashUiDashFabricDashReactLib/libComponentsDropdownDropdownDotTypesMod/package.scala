@@ -10,5 +10,5 @@ package object libComponentsDropdownDropdownDotTypesMod {
   type IDropdownStyleProps = (stdLib.Pick[
     IDropdownProps, 
     officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.theme | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.className | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.disabled | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.required
-  ]) with officeDashUiDashFabricDashReactLib.Anon_PanelClassName
+  ]) with officeDashUiDashFabricDashReactLib.Anon_CalloutClassName
 }

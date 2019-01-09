@@ -13,6 +13,6 @@ class ArrowKeyStepper ()
 @JSImport("react-virtualized/dist/commonjs/ArrowKeyStepper", "ArrowKeyStepper")
 @js.native
 object ArrowKeyStepper extends js.Object {
-  var defaultProps: reactDashVirtualizedLib.Anon_IsControlled = js.native
+  var defaultProps: reactDashVirtualizedLib.Anon_0 = js.native
 }
 

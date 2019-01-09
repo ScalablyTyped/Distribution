@@ -25,6 +25,6 @@ package object routerMod {
     scala.Unit
   ]
   type Omit[T, K] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
-  type RouteComponentProps[TParams] = stdLib.Partial[TParams] with atReachRouterLib.Anon_Location
+  type RouteComponentProps[TParams] = stdLib.Partial[TParams] with atReachRouterLib.Anon_Default
   type WindowLocation = stdLib.Location with historyLib.historyMod.Location[historyLib.historyMod.LocationState]
 }

@@ -67,6 +67,9 @@ object screepsLibStrings {
   sealed trait LO extends js.Object
   
   @js.native
+  sealed trait LookForAtAreaResult extends js.Object
+  
+  @js.native
   sealed trait O extends js.Object
   
   @js.native
@@ -320,6 +323,7 @@ object screepsLibStrings {
   def LH2O: LH2O = "LH2O".asInstanceOf[LH2O]
   def LHO2: LHO2 = "LHO2".asInstanceOf[LHO2]
   def LO: LO = "LO".asInstanceOf[LO]
+  def LookForAtAreaResult: LookForAtAreaResult = "LookForAtAreaResult".asInstanceOf[LookForAtAreaResult]
   def O: O = "O".asInstanceOf[O]
   def OH: OH = "OH".asInstanceOf[OH]
   def U: U = "U".asInstanceOf[U]

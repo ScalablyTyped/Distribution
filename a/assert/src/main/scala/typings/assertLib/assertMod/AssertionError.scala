@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AssertionError ()
   extends assertLib.assertMod.assertNs.AssertionError {
-  def this(options: assertLib.Anon_Expected) = this()
+  def this(options: assertLib.Anon_Actual) = this()
   /* CompleteClass */
   override var actual: js.Any = js.native
   /* CompleteClass */

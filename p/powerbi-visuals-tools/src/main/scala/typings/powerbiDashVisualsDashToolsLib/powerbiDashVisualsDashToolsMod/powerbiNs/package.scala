@@ -27,6 +27,6 @@ package object powerbiNs {
   type PrimitiveValueRange = ValueRange[PrimitiveValue]
   type RejectablePromise[T] = RejectablePromise2[T, T]
   /** Defines instances of structural types. */
-  type StructuralObjectValue = Fill | FillRule | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify SemanticFilter */ js.Any) | DefaultValueDefinition | ImageValue | Paragraphs | GeoJson | DataBars
+  type StructuralObjectValue = Fill | FillRule | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SemanticFilter */ js.Any) | DefaultValueDefinition | ImageValue | Paragraphs | GeoJson | DataBars
   type VisualObjectInstanceEnumeration = js.Array[VisualObjectInstance] | VisualObjectInstanceEnumerationObject
 }

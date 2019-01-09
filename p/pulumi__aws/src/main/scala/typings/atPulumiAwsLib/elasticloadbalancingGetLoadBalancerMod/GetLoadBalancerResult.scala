@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetLoadBalancerResult extends js.Object {
-  val accessLogs: atPulumiAwsLib.Anon_BucketIntervalBucketPrefix
+  val accessLogs: atPulumiAwsLib.Anon_BucketBucketPrefix
   val availabilityZones: js.Array[java.lang.String]
   val connectionDraining: scala.Boolean
   val connectionDrainingTimeout: scala.Double
   val crossZoneLoadBalancing: scala.Boolean
   val dnsName: java.lang.String
-  val healthCheck: atPulumiAwsLib.Anon_HealthyThreshold
+  val healthCheck: atPulumiAwsLib.Anon_HealthyThresholdIntervalTarget
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -20,7 +20,7 @@ trait GetLoadBalancerResult extends js.Object {
   val idleTimeout: scala.Double
   val instances: js.Array[java.lang.String]
   val internal: scala.Boolean
-  val listeners: js.Array[atPulumiAwsLib.Anon_InstancePortLbPortSslCertificateId]
+  val listeners: js.Array[atPulumiAwsLib.Anon_InstancePort]
   val securityGroups: js.Array[java.lang.String]
   val sourceSecurityGroup: java.lang.String
   val sourceSecurityGroupId: java.lang.String

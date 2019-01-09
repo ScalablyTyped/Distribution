@@ -16,14 +16,14 @@ trait JQueryStatic extends js.Object {
   /**
     * Hook directly into jQuery to override how particular CSS properties are retrieved or set, normalize CSS property naming, or create custom properties.
     */
-  var cssHooks: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any = js.native
+  var cssHooks: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any = js.native
   var cssNumber: js.Any = js.native
   var expr: js.Any = js.native
   var fn: js.Any = js.native
   /**
     * Effects
     */
-  var fx: Anon_Off = js.native
+  var fx: Anon_Interval = js.native
     //TODO: Decide how we want to type this
   var isReady: scala.Boolean = js.native
   /**

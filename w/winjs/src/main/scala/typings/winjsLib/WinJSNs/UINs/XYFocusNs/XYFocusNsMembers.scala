@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object XYFocusNsMembers extends js.Object {
   var focusRoot: stdLib.HTMLElement = js.native
-  var keyCodeMap: winjsLib.Anon_Down = js.native
+  var keyCodeMap: winjsLib.Anon_Accept = js.native
   def addEventListener(`type`: java.lang.String, handler: stdLib.EventListener): scala.Unit = js.native
   def dispatchEvent(`type`: java.lang.String, eventProperties: js.Any): scala.Boolean = js.native
   def findNextFocusElement(direction: java.lang.String): stdLib.HTMLElement = js.native

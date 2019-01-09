@@ -62,7 +62,7 @@ trait BN extends js.Object {
   /**
     * @description Extended GCD results `({ a: ..., b: ..., gcd: ... })`
     */
-  def egcd(b: BN): bnDotJsLib.Anon_B = js.native
+  def egcd(b: BN): bnDotJsLib.Anon_A = js.native
   /**
     * @description a equals b
     */
@@ -293,9 +293,9 @@ trait BN extends js.Object {
   /**
     * @description convert to an instance of `type`, which must behave like an Array
     */
-  def toArrayLike(ArrayType: bnDotJsLib.Anon_IsEncoding): nodeLib.Buffer = js.native
-  def toArrayLike(ArrayType: bnDotJsLib.Anon_IsEncoding, endian: bnDotJsLib.Endianness): nodeLib.Buffer = js.native
-  def toArrayLike(ArrayType: bnDotJsLib.Anon_IsEncoding, endian: bnDotJsLib.Endianness, length: scala.Double): nodeLib.Buffer = js.native
+  def toArrayLike(ArrayType: bnDotJsLib.Anon_Alloc): nodeLib.Buffer = js.native
+  def toArrayLike(ArrayType: bnDotJsLib.Anon_Alloc, endian: bnDotJsLib.Endianness): nodeLib.Buffer = js.native
+  def toArrayLike(ArrayType: bnDotJsLib.Anon_Alloc, endian: bnDotJsLib.Endianness, length: scala.Double): nodeLib.Buffer = js.native
   def toArrayLike(ArrayType: js.Array[_]): js.Array[_] = js.native
   def toArrayLike(ArrayType: js.Array[_], endian: bnDotJsLib.Endianness): js.Array[_] = js.native
   def toArrayLike(ArrayType: js.Array[_], endian: bnDotJsLib.Endianness, length: scala.Double): js.Array[_] = js.native

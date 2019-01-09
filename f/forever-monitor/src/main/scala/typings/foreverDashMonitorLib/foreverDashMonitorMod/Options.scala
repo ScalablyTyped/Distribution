@@ -20,7 +20,7 @@ trait Options extends js.Object {
     js.Function2[
       /* command */ java.lang.String, 
       /* args */ js.Array[java.lang.String], 
-      foreverDashMonitorLib.Anon_CommandArgs
+      foreverDashMonitorLib.Anon_Args
     ]
   ] = js.undefined
   var pidFile: js.UndefOr[java.lang.String] = js.undefined

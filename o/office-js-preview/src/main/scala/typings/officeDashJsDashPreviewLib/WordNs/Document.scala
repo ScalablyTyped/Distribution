@@ -134,7 +134,7 @@ class Document ()
   def load(): Document = js.native
   def load(option: java.lang.String): Document = js.native
   def load(option: js.Array[java.lang.String]): Document = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Document = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Document = js.native
   def load(option: officeDashJsDashPreviewLib.WordNs.InterfacesNs.DocumentLoadOptions): Document = js.native
   /**
     *

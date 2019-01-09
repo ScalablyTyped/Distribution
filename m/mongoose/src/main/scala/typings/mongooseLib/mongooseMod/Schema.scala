@@ -41,7 +41,7 @@ trait Schema
     *   expires option into seconds for the expireAfterSeconds in the above link.
     */
   def index(fields: js.Any): this.type = js.native
-  def index(fields: js.Any, options: mongooseLib.Anon_Other): this.type = js.native
+  def index(fields: js.Any, options: mongooseLib.Anon_Expires): this.type = js.native
   /** Compiles indexes from fields and schema-level indexes */
   def indexes(): js.Array[_] = js.native
   /**
@@ -398,9 +398,9 @@ trait Schema
     * @param value if not passed, the current option value is returned
     */
   @JSName("set")
-  def set_capped(key: mongooseLib.mongooseLibStrings.capped): scala.Boolean | scala.Double | mongooseLib.Anon_Max = js.native
+  def set_capped(key: mongooseLib.mongooseLibStrings.capped): scala.Boolean | scala.Double | mongooseLib.Anon_AutoIndexId = js.native
   @JSName("set")
-  def set_capped(key: mongooseLib.mongooseLibStrings.capped, value: mongooseLib.Anon_Max): this.type = js.native
+  def set_capped(key: mongooseLib.mongooseLibStrings.capped, value: mongooseLib.Anon_AutoIndexId): this.type = js.native
   @JSName("set")
   def set_capped(key: mongooseLib.mongooseLibStrings.capped, value: scala.Boolean): this.type = js.native
   @JSName("set")
@@ -483,9 +483,9 @@ trait Schema
     * @param value if not passed, the current option value is returned
     */
   @JSName("set")
-  def set_safe(key: mongooseLib.mongooseLibStrings.safe): scala.Boolean | mongooseLib.Anon_W = js.native
+  def set_safe(key: mongooseLib.mongooseLibStrings.safe): scala.Boolean | mongooseLib.Anon_J = js.native
   @JSName("set")
-  def set_safe(key: mongooseLib.mongooseLibStrings.safe, value: mongooseLib.Anon_W): this.type = js.native
+  def set_safe(key: mongooseLib.mongooseLibStrings.safe, value: mongooseLib.Anon_J): this.type = js.native
   @JSName("set")
   def set_safe(key: mongooseLib.mongooseLibStrings.safe, value: scala.Boolean): this.type = js.native
   /**

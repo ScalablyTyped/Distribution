@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TextProps
-  extends reactDashNativeLib.reactDashNativeMod.TextProps {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ trait TextProps extends js.Object {
   /**
     * font family name
     */
@@ -27,5 +27,11 @@ trait TextProps
     * font size 22
     */
   var h4: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Additional styling for Text
+    */
+  var style: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
+  ] = js.undefined
 }
 

@@ -26,11 +26,13 @@ trait RuleArgs extends js.Object {
   /**
     * Scope defines which resources can trigger an evaluation for the rule as documented below.
     */
-  val scope: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ComplianceResourceTypes]] = js.undefined
+  val scope: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ComplianceResourceIdComplianceResourceTypes]
+  ] = js.undefined
   /**
     * Source specifies the rule owner, the rule identifier, and the notifications that cause
     * the function to evaluate your AWS resources as documented below.
     */
-  val source: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SourceIdentifier]
+  val source: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_OwnerSourceDetails]
 }
 

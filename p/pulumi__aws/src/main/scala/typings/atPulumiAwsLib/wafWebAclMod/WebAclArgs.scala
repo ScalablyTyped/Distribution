@@ -23,7 +23,9 @@ trait WebAclArgs extends js.Object {
     */
   val rules: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PriorityOverrideAction]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ActionOverrideActionPriority]
+      ]
     ]
   ] = js.undefined
 }

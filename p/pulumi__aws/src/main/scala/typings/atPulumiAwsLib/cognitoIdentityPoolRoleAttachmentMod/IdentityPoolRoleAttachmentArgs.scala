@@ -15,7 +15,9 @@ trait IdentityPoolRoleAttachmentArgs extends js.Object {
     */
   val roleMappings: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IdentityProviderType]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AmbiguousRoleResolutionIdentityProvider]
+      ]
     ]
   ] = js.undefined
   /**

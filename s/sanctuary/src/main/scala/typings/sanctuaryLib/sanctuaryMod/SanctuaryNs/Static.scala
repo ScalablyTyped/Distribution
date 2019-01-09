@@ -29,7 +29,7 @@ trait Static extends js.Object {
   //  Array
   //  TODO: Fantasyland overloads, non-curried versions
   def append[A](x: A): sanctuaryLib.Anon_Xs[A] = js.native
-  def at(p: sanctuaryLib.Integer): sanctuaryLib.Anon_QString = js.native
+  def at(p: sanctuaryLib.Integer): sanctuaryLib.Anon_QA = js.native
   def bimap[A, B](p: sanctuaryLib.Fn[A, B]): js.Function1[
     /* q */ sanctuaryLib.Fn[_, _], 
     js.Function1[
@@ -153,8 +153,8 @@ trait Static extends js.Object {
   def last(xs: java.lang.String): sanctuaryLib.sanctuaryMod.Maybe[java.lang.String] = js.native
   def last[A](xs: js.Array[A]): sanctuaryLib.sanctuaryMod.Maybe[A] = js.native
   def lefts[A](p: js.Array[sanctuaryLib.sanctuaryMod.Either[A, _]]): js.Array[A] = js.native
-  def lift2[A, B, C](f: sanctuaryLib.Fn2[A, B, C]): sanctuaryLib.Anon_XY[A, B, C] = js.native
-  def lift3[A, B, C, D](f: sanctuaryLib.Fn3[A, B, C, D]): sanctuaryLib.Anon_X[A, B, C, D] = js.native
+  def lift2[A, B, C](f: sanctuaryLib.Fn2[A, B, C]): sanctuaryLib.Anon_X[A, B, C] = js.native
+  def lift3[A, B, C, D](f: sanctuaryLib.Fn3[A, B, C, D]): sanctuaryLib.Anon_XY[A, B, C, D] = js.native
   def lines(s: java.lang.String): js.Array[java.lang.String] = js.native
   def lt[A](x: sanctuaryLib.sanctuaryMod.Ord[A]): js.Function1[/* y */ sanctuaryLib.sanctuaryMod.Ord[A], scala.Boolean] = js.native
   def lte[A](x: sanctuaryLib.sanctuaryMod.Ord[A]): js.Function1[/* y */ sanctuaryLib.sanctuaryMod.Ord[A], scala.Boolean] = js.native
@@ -284,7 +284,7 @@ trait Static extends js.Object {
   ] = js.native
   def trim(s: java.lang.String): java.lang.String = js.native
   //  Classify
-  def `type`(x: js.Any): sanctuaryLib.Anon_Namespace = js.native
+  def `type`(x: js.Any): sanctuaryLib.Anon_Name = js.native
   def unfoldr[A, B](f: sanctuaryLib.Fn[B, sanctuaryLib.sanctuaryMod.Maybe[sanctuaryLib.Pair[A, B]]]): js.Function1[/* x */ B, js.Array[A]] = js.native
   def unless[A](p: sanctuaryLib.Predicate[A]): js.Function1[/* q */ sanctuaryLib.Fn[A, A], sanctuaryLib.Fn[A, A]] = js.native
   def unlines(xs: js.Array[java.lang.String]): java.lang.String = js.native

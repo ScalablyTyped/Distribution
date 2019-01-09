@@ -41,14 +41,14 @@ trait GameMap extends js.Object {
     * @param opts (optional) An object with the pathfinding options.
     * @returns the route array or ERR_NO_PATH code
     */
-  def findRoute(fromRoom: java.lang.String, toRoom: java.lang.String): js.Array[Anon_Room] | ERR_NO_PATH = js.native
-  def findRoute(fromRoom: java.lang.String, toRoom: java.lang.String, opts: RouteOptions): js.Array[Anon_Room] | ERR_NO_PATH = js.native
-  def findRoute(fromRoom: java.lang.String, toRoom: Room): js.Array[Anon_Room] | ERR_NO_PATH = js.native
-  def findRoute(fromRoom: java.lang.String, toRoom: Room, opts: RouteOptions): js.Array[Anon_Room] | ERR_NO_PATH = js.native
-  def findRoute(fromRoom: Room, toRoom: java.lang.String): js.Array[Anon_Room] | ERR_NO_PATH = js.native
-  def findRoute(fromRoom: Room, toRoom: java.lang.String, opts: RouteOptions): js.Array[Anon_Room] | ERR_NO_PATH = js.native
-  def findRoute(fromRoom: Room, toRoom: Room): js.Array[Anon_Room] | ERR_NO_PATH = js.native
-  def findRoute(fromRoom: Room, toRoom: Room, opts: RouteOptions): js.Array[Anon_Room] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: java.lang.String, toRoom: java.lang.String): js.Array[Anon_Exit] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: java.lang.String, toRoom: java.lang.String, opts: RouteOptions): js.Array[Anon_Exit] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: java.lang.String, toRoom: Room): js.Array[Anon_Exit] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: java.lang.String, toRoom: Room, opts: RouteOptions): js.Array[Anon_Exit] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: Room, toRoom: java.lang.String): js.Array[Anon_Exit] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: Room, toRoom: java.lang.String, opts: RouteOptions): js.Array[Anon_Exit] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: Room, toRoom: Room): js.Array[Anon_Exit] | ERR_NO_PATH = js.native
+  def findRoute(fromRoom: Room, toRoom: Room, opts: RouteOptions): js.Array[Anon_Exit] | ERR_NO_PATH = js.native
   /**
     * Get the linear distance (in rooms) between two rooms. You can use this function to estimate the energy cost of
     * sending resources through terminals, or using observers and nukes.

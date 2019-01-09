@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object dvaMod {
-  type DvaOption = Hooks with dvaLib.Anon_InitialState
+  type DvaOption = Hooks with dvaLib.Anon_History
   type Effect = js.Function2[
     /* action */ reduxLib.reduxMod.AnyAction, 
     /* effects */ EffectsCommandMap, 

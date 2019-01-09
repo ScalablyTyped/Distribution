@@ -28,7 +28,7 @@ trait IBalanceTransaction
   /**
     * Detailed breakdown of fees (in cents/pence) paid for this transaction
     */
-  var fee_details: js.Array[stripeLib.Anon_Application]
+  var fee_details: js.Array[stripeLib.Anon_Amount]
   /**
     * Net amount of the transaction, in cents.
     */

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Key
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var access_token: js.UndefOr[java.lang.String] = js.undefined
+  var path: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait BulkGetOptions extends Options {
   var attachments: js.UndefOr[scala.Boolean] = js.undefined
   var binary: js.UndefOr[scala.Boolean] = js.undefined
-  var docs: js.Array[pouchdbDashCoreLib.Anon_RevId]
+  var docs: js.Array[pouchdbDashCoreLib.Anon_IdRev]
   var revs: js.UndefOr[scala.Boolean] = js.undefined
 }
 

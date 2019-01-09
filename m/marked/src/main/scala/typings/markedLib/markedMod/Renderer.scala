@@ -48,7 +48,7 @@ class Renderer ()
   /* CompleteClass */
   override def table(header: java.lang.String, body: java.lang.String): java.lang.String = js.native
   /* CompleteClass */
-  override def tablecell(content: java.lang.String, flags: markedLib.Anon_Header): java.lang.String = js.native
+  override def tablecell(content: java.lang.String, flags: markedLib.Anon_Align): java.lang.String = js.native
   /* CompleteClass */
   override def tablerow(content: java.lang.String): java.lang.String = js.native
   /* CompleteClass */

@@ -22,7 +22,7 @@ trait IProvider extends js.Object {
       /* headers */ js.Any, 
       /* params */ js.Any, 
       /* httpConfig */ angularLib.angularMod.angularNs.IRequestShortcutConfig, 
-      restangularLib.Anon_HttpConfig
+      restangularLib.Anon_ElementHeaders
     ]
   ): IProvider = js.native
   def addRequestInterceptor(

@@ -26,7 +26,7 @@ class TrackballControls protected ()
   var panSpeed: scala.Double = js.native
   var position0: threeLib.threeDashCoreMod.Vector3 = js.native
   var rotateSpeed: scala.Double = js.native
-  var screen: threeLib.Anon_Top = js.native
+  var screen: threeLib.Anon_HeightLeft = js.native
   var staticMoving: scala.Boolean = js.native
   var target: threeLib.threeDashCoreMod.Vector3 = js.native
   var target0: threeLib.threeDashCoreMod.Vector3 = js.native

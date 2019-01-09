@@ -14,7 +14,11 @@ trait SecurityGroupState extends js.Object {
     * A list of ingress rules.
     */
   val ingress: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Cidr]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CidrSecurityGroupNameSecurityGroupOwnerId]
+      ]
+    ]
   ] = js.undefined
   /**
     * The name of the Redshift security group.

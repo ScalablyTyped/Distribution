@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ @JSImport("dd-trace/src/opentracing/span_context", JSImport.Namespace)
 @js.native
 class namespaced protected () extends js.Object {

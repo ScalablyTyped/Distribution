@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("vso-node-api/interfaces/ProfileInterfaces", JSImport.Namespace)
 @js.native
 object interfacesProfileInterfacesModMembers extends js.Object {
-  var TypeInfo: vsoDashNodeDashApiLib.Anon_ProfileRegion = js.native
+  var TypeInfo: vsoDashNodeDashApiLib.Anon_AttributeDescriptor = js.native
 }
 

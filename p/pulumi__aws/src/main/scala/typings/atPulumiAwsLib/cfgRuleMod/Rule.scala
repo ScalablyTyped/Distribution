@@ -46,12 +46,12 @@ class Rule protected ()
   /**
     * Scope defines which resources can trigger an evaluation for the rule as documented below.
     */
-  val scope: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ComplianceResourceTypesTagKey]] = js.native
+  val scope: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ComplianceResourceId]] = js.native
   /**
     * Source specifies the rule owner, the rule identifier, and the notifications that cause
     * the function to evaluate your AWS resources as documented below.
     */
-  val source: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_SourceIdentifierOwner] = js.native
+  val source: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_Owner] = js.native
 }
 
 @JSImport("@pulumi/aws/cfg/rule", "Rule")

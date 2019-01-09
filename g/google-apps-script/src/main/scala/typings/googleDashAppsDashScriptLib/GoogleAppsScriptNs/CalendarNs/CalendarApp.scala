@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CalendarApp extends js.Object {
-  var Color: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Calendar.Color */ js.Any = js.native
-  var EventColor: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Calendar.EventColor */ js.Any = js.native
-  var GuestStatus: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Calendar.GuestStatus */ js.Any = js.native
-  var Month: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Base.Month */ js.Any = js.native
-  var Visibility: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Calendar.Visibility */ js.Any = js.native
-  var Weekday: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Base.Weekday */ js.Any = js.native
+  var Color: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Color */ js.Any = js.native
+  var EventColor: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EventColor */ js.Any = js.native
+  var GuestStatus: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GuestStatus */ js.Any = js.native
+  var Month: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.Month */ js.Any = js.native
+  var Visibility: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Visibility */ js.Any = js.native
+  var Weekday: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Base.Weekday */ js.Any = js.native
   def createAllDayEvent(title: java.lang.String, date: stdLib.Date): CalendarEvent = js.native
   def createAllDayEvent(title: java.lang.String, date: stdLib.Date, options: js.Object): CalendarEvent = js.native
   def createAllDayEvent(title: java.lang.String, startDate: stdLib.Date, endDate: stdLib.Date): CalendarEvent = js.native

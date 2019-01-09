@@ -5,6 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(cytoscapeLib.cytoscapeMod.cytoscapeNs.ExportStringOptions because Would inherit conflicting mutable fields List(bg, full, maxHeight, maxWidth, scale))*/
-trait ExportJpgStringOptions extends ExportJpgOptions
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- cytoscapeLib.cytoscapeMod.cytoscapeNs.ExportStringOptions because var conflicts: bg, full, maxHeight, maxWidth, scale. Inlined output */ trait ExportJpgStringOptions extends ExportJpgOptions {
+  /**
+    * output Whether the output should be 'base64uri' (default), 'base64', or 'blob'.
+    */
+  var output: js.UndefOr[
+    cytoscapeLib.cytoscapeLibStrings.base64uri | cytoscapeLib.cytoscapeLibStrings.base64
+  ] = js.undefined
+}
 

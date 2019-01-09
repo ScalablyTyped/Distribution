@@ -25,6 +25,6 @@ class Event protected () extends js.Object {
 @JSImport("modesl", "Event")
 @js.native
 object Event extends js.Object {
-  val PRIORITY: modeslLib.Anon_NORMAL = js.native
+  val PRIORITY: modeslLib.Anon_HIGH = js.native
 }
 

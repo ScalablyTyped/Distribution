@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<@material-ui/core.@material-ui/core/IconButton.IconButtonProps, std.Exclude<keyof @material-ui/core.@material-ui/core/IconButton.IconButtonProps, 'classes' | 'onChange' | 'value'>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/IconButton.IconButtonProps, @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseClassKey, 'onChange' | 'value'>) */ trait SwitchBaseProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/IconButton.IconButtonProps, 'classes' | 'onChange' | 'value'> ]: @material-ui/core.@material-ui/core/IconButton.IconButtonProps[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/IconButton.IconButtonProps, @material-ui/core.@material-ui/core/internal/SwitchBase.SwitchBaseClassKey, 'onChange' | 'value'>) */ trait SwitchBaseProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SwitchBaseClassKey] {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var checked: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined

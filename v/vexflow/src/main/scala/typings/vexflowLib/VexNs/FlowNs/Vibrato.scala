@@ -17,7 +17,7 @@ class Vibrato () extends Modifier {
 object Vibrato extends js.Object {
   def format(
     vibratos: js.Array[vexflowLib.VexNs.FlowNs.Vibrato],
-    state: vexflowLib.Anon_Rightshift,
+    state: vexflowLib.Anon_Leftshift,
     context: vexflowLib.VexNs.FlowNs.ModifierContext
   ): scala.Boolean = js.native
 }

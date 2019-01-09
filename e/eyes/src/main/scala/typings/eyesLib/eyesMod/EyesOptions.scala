@@ -15,6 +15,6 @@ trait EyesOptions extends js.Object {
   /** Stream to write to, or null */
   var stream: js.UndefOr[nodeLib.NodeJSNs.WritableStream] = js.undefined
   /** Styles applied to stdout */
-  var styles: js.UndefOr[eyesLib.Anon_Number] = js.undefined
+  var styles: js.UndefOr[eyesLib.Anon_All] = js.undefined
 }
 

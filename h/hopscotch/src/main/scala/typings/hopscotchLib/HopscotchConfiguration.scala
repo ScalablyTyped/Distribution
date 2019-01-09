@@ -9,7 +9,7 @@ trait HopscotchConfiguration extends js.Object {
   var arrowWidth: js.UndefOr[scala.Double] = js.undefined
   var bubbleWidth: js.UndefOr[scala.Double] = js.undefined
   var buddleHeight: js.UndefOr[scala.Double] = js.undefined
-  var i18n: js.UndefOr[Anon_NextBtn] = js.undefined
+  var i18n: js.UndefOr[Anon_CloseTooltip] = js.undefined
   var nextOnTargetClick: js.UndefOr[scala.Boolean] = js.undefined
   var onClose: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
   var onEnd: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FrameRateMonitor ()
   extends cesiumLib.cesiumMod.CesiumNs.FrameRateMonitor {
-  def this(options: cesiumLib.Anon_MinimumFrameRateDuringWarmup) = this()
+  def this(options: cesiumLib.Anon_MinimumFrameRateAfterWarmup) = this()
   /* CompleteClass */
   override var lastFramesPerSecond: scala.Double = js.native
   /* CompleteClass */

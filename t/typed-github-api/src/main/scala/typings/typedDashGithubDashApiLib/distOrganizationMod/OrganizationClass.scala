@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typedDashGithubDashApiLib.distInterfacesOrganizationMod.Organization because Would inherit conflicting mutable fields List(avatarUri, description, id, login))*/
-@JSImport("typed-github-api/dist/organization", "OrganizationClass")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typedDashGithubDashApiLib.distInterfacesOrganizationMod.Organization because var conflicts: avatarUri, description, id, login. Inlined name, company, blog, location, email, publicRepos, publicGists, followers, following, createdAt, updatedAt, htmlUri, hasOrganizationProjects, hasRepositoryProjects */ @JSImport("typed-github-api/dist/organization", "OrganizationClass")
 @js.native
 class OrganizationClass protected () extends OrganizationSummaryClass {
   def this(data: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.Organization, options: typedDashGithubDashApiLib.distGithubDashRefMod.OptionsOrRef) = this()

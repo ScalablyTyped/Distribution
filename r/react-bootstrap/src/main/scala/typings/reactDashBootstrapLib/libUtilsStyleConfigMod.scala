@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object libUtilsStyleConfigMod extends js.Object {
   val DEVICE_SIZES: js.Array[java.lang.String] = js.native
-  val SIZE_MAP: reactDashBootstrapLib.Anon_Xs = js.native
+  val SIZE_MAP: reactDashBootstrapLib.Anon_Large = js.native
   val Size: reactDashBootstrapLib.Anon_LARGE = js.native
-  val State: reactDashBootstrapLib.Anon_SUCCESS = js.native
+  val State: reactDashBootstrapLib.Anon_DANGER = js.native
   val Style: reactDashBootstrapLib.Anon_DEFAULT = js.native
 }
 

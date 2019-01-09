@@ -17,6 +17,6 @@ class Dot () extends Modifier {
 @JSGlobal("Vex.Flow.Dot")
 @js.native
 object Dot extends js.Object {
-  def format(dots: scala.Double, state: vexflowLib.Anon_Rightshift): scala.Unit = js.native
+  def format(dots: scala.Double, state: vexflowLib.Anon_Leftshift): scala.Unit = js.native
 }
 

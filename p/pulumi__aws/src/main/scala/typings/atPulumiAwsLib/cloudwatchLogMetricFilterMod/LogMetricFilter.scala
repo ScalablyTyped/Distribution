@@ -26,7 +26,7 @@ class LogMetricFilter protected ()
     * A block defining collection of information
     * needed to define how metric data gets emitted. See below.
     */
-  val metricTransformation: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_Namespace] = js.native
+  val metricTransformation: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DefaultValue] = js.native
   /**
     * A name for the metric filter.
     */

@@ -9,7 +9,9 @@ trait ClassifierArgs extends js.Object {
   /**
     * A classifier that uses grok patterns. Defined below.
     */
-  val grokClassifier: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_GrokPattern]] = js.undefined
+  val grokClassifier: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ClassificationCustomPatterns]
+  ] = js.undefined
   /**
     * A classifier for JSON content. Defined below.
     */
@@ -21,6 +23,8 @@ trait ClassifierArgs extends js.Object {
   /**
     * A classifier for XML content. Defined below.
     */
-  val xmlClassifier: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RowTag]] = js.undefined
+  val xmlClassifier: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ClassificationRowTagInput]
+  ] = js.undefined
 }
 

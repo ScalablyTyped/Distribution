@@ -5,16 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(postmanDashCollectionLib.postmanDashCollectionMod.HeaderDefinition because Would inherit conflicting mutable fields List(description, disabled, id, name))*/
-@JSImport("postman-collection", "Header")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- postmanDashCollectionLib.postmanDashCollectionMod.HeaderDefinition because var conflicts: description, disabled, id, name. Inlined key, value, system */ @JSImport("postman-collection", "Header")
 @js.native
 class Header protected () extends Property[HeaderDefinition] {
   def this(options: java.lang.String) = this()
   def this(options: HeaderDefinition) = this()
   def this(options: java.lang.String, name: java.lang.String) = this()
   def this(options: HeaderDefinition, name: java.lang.String) = this()
-  var key: java.lang.String = js.native
-  var value: java.lang.String = js.native
+  var key: java.lang.String | js.UndefOr[java.lang.String] = js.native
+  var system: js.UndefOr[scala.Boolean] = js.native
+  var value: java.lang.String | js.UndefOr[java.lang.String] = js.native
   def update(options: HeaderDefinition): scala.Unit = js.native
 }
 

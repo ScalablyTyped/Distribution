@@ -15,12 +15,12 @@ trait Hashes extends js.Object {
   var Rabbit: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.CipherHelper = js.native
   var RabbitLegacy: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.CipherHelper = js.native
   var TripleDES: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.CipherHelper = js.native
-  var algo: cryptoDashJsLib.Anon_DES = js.native
-  var enc: cryptoDashJsLib.Anon_Utf8 = js.native
+  var algo: cryptoDashJsLib.Anon_AES = js.native
+  var enc: cryptoDashJsLib.Anon_Base64 = js.native
   var format: cryptoDashJsLib.Anon_Hex = js.native
   var lib: cryptoDashJsLib.Anon_WordArray = js.native
-  var mode: cryptoDashJsLib.Anon_OFB = js.native
-  var pad: cryptoDashJsLib.Anon_Pkcs7 = js.native
+  var mode: cryptoDashJsLib.Anon_CBC = js.native
+  var pad: cryptoDashJsLib.Anon_AnsiX923 = js.native
   def HmacMD5(message: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.LibWordArray): cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.WordArray = js.native
   def HmacMD5(
     message: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.LibWordArray,

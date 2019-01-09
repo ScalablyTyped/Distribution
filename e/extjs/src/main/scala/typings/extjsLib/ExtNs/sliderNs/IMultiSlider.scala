@@ -63,7 +63,8 @@ trait IMultiSlider
   /** [Config Option] (Object/Boolean) */
   var useTips: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Number) */
-  var value: js.UndefOr[scala.Double] = js.undefined
+  @JSName("value")
+  var value_IMultiSlider: js.UndefOr[scala.Double] = js.undefined
   /** [Config Option] (Number[]) */
   var values: js.UndefOr[extjsLib.ExtNs.Array] = js.undefined
   /** [Config Option] (Boolean) */

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait TopicsResource extends js.Object {
   var subscriptions: SubscriptionsResource
   /** Creates the given topic with the given name. */
-  def create(request: gapiDotClientDotPubsubLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Topic]
+  def create(request: gapiDotClientDotPubsubLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Topic]
   /**
     * Deletes the topic with the given name. Returns `NOT_FOUND` if the topic
     * does not exist. After a topic is deleted, a new topic may be created with
@@ -16,9 +16,9 @@ trait TopicsResource extends js.Object {
     * configuration or subscriptions. Existing subscriptions to this topic are
     * not deleted, but their `topic` field is set to `_deleted-topic_`.
     */
-  def delete(request: gapiDotClientDotPubsubLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotPubsubLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /** Gets the configuration of a topic. */
-  def get(request: gapiDotClientDotPubsubLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Topic]
+  def get(request: gapiDotClientDotPubsubLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Topic]
   /**
     * Gets the access control policy for a resource.
     * Returns an empty policy if the resource exists and does not have a policy
@@ -26,13 +26,13 @@ trait TopicsResource extends js.Object {
     */
   def getIamPolicy(request: gapiDotClientDotPubsubLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
   /** Lists matching topics. */
-  def list(request: gapiDotClientDotPubsubLib.Anon_AccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListTopicsResponse]
+  def list(request: gapiDotClientDotPubsubLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[ListTopicsResponse]
   /**
     * Adds one or more messages to the topic. Returns `NOT_FOUND` if the topic
     * does not exist. The message payload must not be empty; it must contain
     * either a non-empty data field, or at least one attribute.
     */
-  def publish(request: gapiDotClientDotPubsubLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[PublishResponse]
+  def publish(request: gapiDotClientDotPubsubLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[PublishResponse]
   /**
     * Sets the access control policy on the specified resource. Replaces any
     * existing policy.

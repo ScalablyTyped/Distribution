@@ -20,6 +20,6 @@ object FormsModule extends js.Object {
     * * `warnOnDeprecatedNgFormSelector` Configures when to emit a warning when the deprecated
     * `ngForm` selector is used.
     */
-  def withConfig(opts: atAngularFormsLib.Anon_WarnOnDeprecatedNgFormSelector): atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.ModuleWithProviders[atAngularFormsLib.srcFormUnderscoreProvidersMod.FormsModule] = js.native
+  def withConfig(opts: atAngularFormsLib.Anon_Always): atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.ModuleWithProviders[atAngularFormsLib.srcFormUnderscoreProvidersMod.FormsModule] = js.native
 }
 

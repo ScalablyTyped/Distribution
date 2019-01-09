@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait ColumnsResource extends js.Object {
   /** Lists all columns for a report type */
-  def list(request: gapiDotClientDotAnalyticsLib.Anon_PrettyPrintQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[Columns]
+  def list(request: gapiDotClientDotAnalyticsLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Columns]
 }
 

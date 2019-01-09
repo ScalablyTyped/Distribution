@@ -106,7 +106,7 @@ class EnvironmentHelper protected () extends js.Object {
     * This observable will be notified with any error during the creation of the environment,
     * mainly texture creation errors.
     */
-  var onErrorObservable: Observable[babylonjsLib.Anon_Message] = js.native
+  var onErrorObservable: Observable[babylonjsLib.Anon_Exception] = js.native
   /**
     * Gets the root mesh created by the helper.
     */

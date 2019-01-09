@@ -64,7 +64,7 @@ class PivotItem ()
   def load(): PivotItem = js.native
   def load(option: java.lang.String): PivotItem = js.native
   def load(option: js.Array[java.lang.String]): PivotItem = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): PivotItem = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): PivotItem = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.PivotItemLoadOptions): PivotItem = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

@@ -12,12 +12,7 @@ class ModelFactory protected () extends js.Object {
     * Create the ModelFactory with a provided Model to use as a reference.
     * @param {Nodal.Model} modelConstructor Must pass the constructor for the type of ModelFactory you wish to create.
     */
-  def this(modelConstructor: org.scalablytyped.runtime.Instantiable3[
-      /* modelData */ js.Object, 
-      /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
-      /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
-      Model
-    ]) = this()
+  def this(modelConstructor: nodalLib.Anon_CalcField) = this()
   var Model: js.Any = js.native
   /**
     * Creates models from an array of Objects containing the model data
@@ -36,14 +31,7 @@ object ModelFactory extends js.Object {
     * @param {Function} callback What to execute upon completion
     */
   def createFromModels(
-    Models: js.Array[
-      org.scalablytyped.runtime.Instantiable3[
-        /* modelData */ js.Object, 
-        /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
-        /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
-        nodalLib.nodalMod.Model
-      ]
-    ],
+    Models: js.Array[nodalLib.Anon_CalcField],
     objModelData: nodalLib.nodalMod.IModelData,
     callback: js.Function
   ): scala.Unit = js.native

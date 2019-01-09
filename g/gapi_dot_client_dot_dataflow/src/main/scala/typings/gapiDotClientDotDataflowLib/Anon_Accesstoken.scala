@@ -19,7 +19,7 @@ trait Anon_Accesstoken extends js.Object {
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
-  /** The job id. */
+  /** The job which the WorkItem is part of. */
   var jobId: java.lang.String
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
@@ -29,7 +29,7 @@ trait Anon_Accesstoken extends js.Object {
   var pp: js.UndefOr[scala.Boolean] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
-  /** The project id. */
+  /** The project which owns the WorkItem's job. */
   var projectId: java.lang.String
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined

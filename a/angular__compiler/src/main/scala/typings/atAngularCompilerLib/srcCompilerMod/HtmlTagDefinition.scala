@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class HtmlTagDefinition ()
   extends atAngularCompilerLib.srcMlUnderscoreParserHtmlUnderscoreTagsMod.HtmlTagDefinition {
-  def this(hasClosedByChildrenRequiredParentsImplicitNamespacePrefixContentTypeClosedByParentIsVoidIgnoreFirstLf: atAngularCompilerLib.Anon_IgnoreFirstLf) = this()
+  def this(hasClosedByChildrenRequiredParentsImplicitNamespacePrefixContentTypeClosedByParentIsVoidIgnoreFirstLf: atAngularCompilerLib.Anon_ClosedByChildren) = this()
 }
 

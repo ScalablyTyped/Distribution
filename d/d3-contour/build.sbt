@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "d3-contour"
-version := "1.3-dt-20181031Z-60b01a"
-scalaVersion := "2.12.7"
+version := "1.3-dt-20181031Z-140353"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "d3-array" % "1.2-dt-20181015Z-37e35e",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20180619Z-43492e",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
+  "org.scalablytyped" %%% "d3-array" % "1.2-dt-20181015Z-6e15c4",
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20180619Z-5d845b",
+  "org.scalablytyped" %%% "std" % "3.2.2-f3cc98")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

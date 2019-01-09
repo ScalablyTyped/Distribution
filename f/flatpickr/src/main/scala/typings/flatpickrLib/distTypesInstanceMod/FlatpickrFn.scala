@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FlatpickrFn extends js.Object {
   var defaultConfig: flatpickrLib.distTypesOptionsMod.ParsedOptions = js.native
-  var l10ns: flatpickrLib.Anon_Default = js.native
+  var l10ns: flatpickrLib.flatpickrLibStrings.FlatpickrFn with js.Any with flatpickrLib.Anon_Default = js.native
   def apply(selector: java.lang.String): Instance | js.Array[Instance] = js.native
   def apply(selector: java.lang.String, config: flatpickrLib.distTypesOptionsMod.Options): Instance | js.Array[Instance] = js.native
   def apply(selector: stdLib.HTMLElement): Instance | js.Array[Instance] = js.native

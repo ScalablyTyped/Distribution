@@ -33,7 +33,7 @@ class BoneLookController protected ()
     * * adjustRoll: used to make an adjustment to the roll of the bone
     **/
   def this(mesh: babylonjsLib.BABYLONNs.AbstractMesh, bone: babylonjsLib.BABYLONNs.Bone, target: babylonjsLib.BABYLONNs.Vector3) = this()
-  def this(mesh: babylonjsLib.BABYLONNs.AbstractMesh, bone: babylonjsLib.BABYLONNs.Bone, target: babylonjsLib.BABYLONNs.Vector3, options: babylonjsLib.Anon_PitchAxis) = this()
+  def this(mesh: babylonjsLib.BABYLONNs.AbstractMesh, bone: babylonjsLib.BABYLONNs.Bone, target: babylonjsLib.BABYLONNs.Vector3, options: babylonjsLib.Anon_AdjustPitch) = this()
 }
 
 /**

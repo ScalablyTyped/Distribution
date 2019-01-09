@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerOptions extends js.Object {
   var NPNProtocols: js.UndefOr[js.Any] = js.undefined
   var SNICallback: js.UndefOr[js.Function1[/* servername */ java.lang.String, _]] = js.undefined

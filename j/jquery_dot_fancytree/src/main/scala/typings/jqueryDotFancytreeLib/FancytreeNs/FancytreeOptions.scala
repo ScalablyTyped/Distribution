@@ -12,7 +12,7 @@ trait FancytreeOptions
   /** Make sure that the active node is always visible, i.e. its parents are expanded (default: true). */
   var activeVisible: js.UndefOr[scala.Boolean] = js.undefined
   /** Default options for ajax requests. */
-  var ajax: js.UndefOr[jqueryDotFancytreeLib.Anon_Type] = js.undefined
+  var ajax: js.UndefOr[jqueryDotFancytreeLib.Anon_Cache] = js.undefined
   /** (default: false) Add WAI-ARIA attributes to markup */
   var aria: js.UndefOr[scala.Boolean] = js.undefined
   /** Activate a node when focused with the keyboard (default: true) */

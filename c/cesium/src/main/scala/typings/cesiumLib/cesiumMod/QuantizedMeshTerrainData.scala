@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class QuantizedMeshTerrainData protected ()
   extends cesiumLib.cesiumMod.CesiumNs.QuantizedMeshTerrainData {
-  def this(options: cesiumLib.Anon_CreatedByUpsamplingBoundingSphere) = this()
+  def this(options: cesiumLib.Anon_BoundingSphere) = this()
   /* CompleteClass */
   override var waterMask: stdLib.Uint8Array | stdLib.HTMLImageElement | stdLib.HTMLCanvasElement = js.native
   /* CompleteClass */

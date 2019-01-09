@@ -23,9 +23,11 @@ trait Anon_Accesstoken extends js.Object {
   var key: js.UndefOr[java.lang.String] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
+  /** The object ID of the page to retrieve. */
+  var pageObjectId: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
-  /** The presentation to apply the updates to. */
+  /** The ID of the presentation to retrieve. */
   var presentationId: java.lang.String
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("inversify-express-utils", JSImport.Namespace)
 @js.native
 object inversifyDashExpressDashUtilsModMembers extends js.Object {
-  val TYPE: inversifyDashExpressDashUtilsLib.Anon_HttpContext = js.native
+  val TYPE: inversifyDashExpressDashUtilsLib.Anon_AuthProvider = js.native
   def all(
     path: java.lang.String,
     middleware: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.Middleware*
@@ -21,11 +21,11 @@ object inversifyDashExpressDashUtilsModMembers extends js.Object {
   def cookies(): stdLib.ParameterDecorator = js.native
   def cookies(cookieName: java.lang.String): stdLib.ParameterDecorator = js.native
   def getRawMetadata(
-    container: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversifyInterfaces.Container */ js.Any
-  ): js.Array[inversifyDashExpressDashUtilsLib.Anon_MethodMetadata] = js.native
+    container: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversifyInterfaces.Container */ js.Any
+  ): js.Array[inversifyDashExpressDashUtilsLib.Anon_ControllerMetadata] = js.native
   def getRouteInfo(
-    container: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversifyInterfaces.Container */ js.Any
-  ): js.Array[inversifyDashExpressDashUtilsLib.Anon_Endpoints] = js.native
+    container: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversifyInterfaces.Container */ js.Any
+  ): js.Array[inversifyDashExpressDashUtilsLib.Anon_ControllerEndpoints] = js.native
   def httpDelete(
     path: java.lang.String,
     middleware: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.Middleware*

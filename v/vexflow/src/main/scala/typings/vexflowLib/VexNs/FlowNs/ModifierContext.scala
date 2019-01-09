@@ -13,7 +13,7 @@ class ModifierContext () extends js.Object {
   def getExtraRightPx(): scala.Double = js.native
   def getMetrics(): vexflowLib.Anon_Extraleftpx = js.native
   def getModifiers(`type`: java.lang.String): js.Array[Modifier] = js.native
-  def getState(): vexflowLib.Anon_Rightshift = js.native
+  def getState(): vexflowLib.Anon_Leftshift = js.native
   def getWidth(): scala.Double = js.native
   def postFormat(): scala.Unit = js.native
   def preFormat(): scala.Unit = js.native

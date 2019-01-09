@@ -17,6 +17,6 @@ trait UserProfilesResource extends js.Object {
     * this user profile, if no profile exists with the requested ID, or for
     * access errors.
     */
-  def get(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[UserProfile]
+  def get(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp): gapiDotClientLib.gapiNs.clientNs.Request[UserProfile]
 }
 

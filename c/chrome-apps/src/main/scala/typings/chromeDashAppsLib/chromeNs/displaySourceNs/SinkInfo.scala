@@ -15,11 +15,11 @@ trait SinkInfo extends js.Object {
     * @see SinkState
     */
   var state: chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_DISCONNECTED, 
+    chromeDashAppsLib.Anon_CONNECTED, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_DISCONNECTED[keyof chrome-apps.Anon_DISCONNECTED] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONNECTED[keyof chrome-apps.Anon_CONNECTED] */ js.Any
     ]
   ]
 }

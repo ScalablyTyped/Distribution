@@ -25,7 +25,7 @@ trait DataObject extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.downplay
     */
   var downplay: js.UndefOr[
-    echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderTypeAnonShadowOffsetXBackgroundColorShowMinAngleOptional
+    echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight
   ] = js.undefined
   /**
     * Item style when mouse is hovering. See
@@ -36,7 +36,7 @@ trait DataObject extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.emphasis
     */
   var emphasis: js.UndefOr[
-    echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderTypeAnonShadowOffsetXBackgroundColorShowMinAngleOptional
+    echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight
   ] = js.undefined
   /**
     * Item style when mouse is hovering related items. See
@@ -47,7 +47,7 @@ trait DataObject extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.highlight
     */
   var highlight: js.UndefOr[
-    echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderTypeAnonShadowOffsetXBackgroundColorShowMinAngleOptional
+    echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyleFontWeight
   ] = js.undefined
   /**
     * Style of Sunburst sectors.
@@ -84,7 +84,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
     * `label` sets the text style for every sectors.
     *
@@ -106,7 +106,9 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sunburst.data.label
     */
-  var label: js.UndefOr[echartsLib.Anon_ShadowOffsetXBackgroundColorShowMinAngleAlign] = js.undefined
+  var label: js.UndefOr[
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyle
+  ] = js.undefined
   /**
     * Link address that redirects to when this sector is clicked.
     * Only useful when

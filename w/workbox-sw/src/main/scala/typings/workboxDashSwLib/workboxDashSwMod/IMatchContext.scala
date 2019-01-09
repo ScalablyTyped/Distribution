@@ -12,6 +12,6 @@ trait IMatchContext extends IURLContext {
   /**
   	 * The service workers' fetch event.
   	 */
-  var event: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify FetchEvent */ js.Any
+  var event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
 }
 

@@ -12,6 +12,6 @@ trait MenuElement[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
     * a new state. The `update` function will return false if the
     * update hid the entire element.
     */
-  def render(pm: prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S]): prosemirrorDashMenuLib.Anon_Update[S]
+  def render(pm: prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S]): prosemirrorDashMenuLib.Anon_Dom[S]
 }
 

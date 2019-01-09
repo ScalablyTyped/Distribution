@@ -114,8 +114,8 @@ org.scalablytyped.runtime.Instantiable1[
   def autocrop(): this.type = js.native
   def autocrop(cropOnlyFrames: scala.Boolean): this.type = js.native
   def autocrop(cropOnlyFrames: scala.Boolean, cb: jimpLib.ImageCallback[_]): this.type = js.native
-  def autocrop(options: jimpLib.Anon_CropSymmetric): this.type = js.native
-  def autocrop(options: jimpLib.Anon_CropSymmetric, cb: jimpLib.ImageCallback[_]): this.type = js.native
+  def autocrop(options: jimpLib.Anon_CropOnlyFrames): this.type = js.native
+  def autocrop(options: jimpLib.Anon_CropOnlyFrames, cb: jimpLib.ImageCallback[_]): this.type = js.native
   def autocrop(tolerance: scala.Double): this.type = js.native
   def autocrop(tolerance: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
   def autocrop(tolerance: scala.Double, cropOnlyFrames: scala.Boolean): this.type = js.native
@@ -240,8 +240,8 @@ org.scalablytyped.runtime.Instantiable1[
   def deflateLevel(l: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
   def deflateStrategy(s: scala.Double): this.type = js.native
   def deflateStrategy(s: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
-  def diff(img1: Jimp, img2: Jimp): jimpLib.Anon_Percent = js.native
-  def diff(img1: Jimp, img2: Jimp, threshold: scala.Double): jimpLib.Anon_Percent = js.native
+  def diff(img1: Jimp, img2: Jimp): jimpLib.Anon_Image = js.native
+  def diff(img1: Jimp, img2: Jimp, threshold: scala.Double): jimpLib.Anon_Image = js.native
   def displace(map: Jimp, offset: scala.Double): this.type = js.native
   def displace(map: Jimp, offset: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
   def distance(img1: Jimp, img2: Jimp): scala.Double = js.native

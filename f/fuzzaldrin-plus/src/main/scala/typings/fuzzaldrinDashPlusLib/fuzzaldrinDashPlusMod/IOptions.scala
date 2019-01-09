@@ -14,6 +14,6 @@ trait IOptions extends js.Object {
   var preparedQuery: js.UndefOr[Query] = js.undefined
   var useExtensionBonus: js.UndefOr[scala.Boolean] = js.undefined
   var usePathScoring: js.UndefOr[scala.Boolean] = js.undefined
-  var wrap: js.UndefOr[fuzzaldrinDashPlusLib.Anon_TagOpen] = js.undefined
+  var wrap: js.UndefOr[fuzzaldrinDashPlusLib.Anon_TagClass] = js.undefined
 }
 

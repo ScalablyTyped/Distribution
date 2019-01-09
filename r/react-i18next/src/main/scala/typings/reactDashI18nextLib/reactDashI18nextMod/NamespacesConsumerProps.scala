@@ -12,7 +12,7 @@ trait NamespacesConsumerProps extends ReactI18NextOptions {
   var ns: js.UndefOr[reactDashI18nextLib.Namespace] = js.undefined
   def children(
     t: i18nextLib.i18nextMod.i18nextNs.TranslationFunction[_, js.Object, java.lang.String],
-    options: reactDashI18nextLib.Anon_Lng
+    options: reactDashI18nextLib.Anon_I18n
   ): reactLib.reactMod.ReactNs.ReactNode
 }
 

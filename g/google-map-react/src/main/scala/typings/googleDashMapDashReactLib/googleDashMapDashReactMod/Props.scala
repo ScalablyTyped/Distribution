@@ -39,7 +39,7 @@ trait Props extends js.Object {
   ] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* value */ ClickEventValue, _]] = js.undefined
   var onDrag: js.UndefOr[js.Function1[/* args */ js.Any, scala.Unit]] = js.undefined
-  var onGoogleApiLoaded: js.UndefOr[js.Function1[/* maps */ googleDashMapDashReactLib.Anon_Maps, scala.Unit]] = js.undefined
+  var onGoogleApiLoaded: js.UndefOr[js.Function1[/* maps */ googleDashMapDashReactLib.Anon_Map, scala.Unit]] = js.undefined
   var onMapTypeIdChange: js.UndefOr[js.Function1[/* args */ js.Any, scala.Unit]] = js.undefined
   var onTilesLoaded: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onZoomAnimationEnd: js.UndefOr[js.Function1[/* args */ js.Any, scala.Unit]] = js.undefined

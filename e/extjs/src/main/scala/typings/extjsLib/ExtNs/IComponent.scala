@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.utilNs.IFloating because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait IComponent extends IAbstractComponent {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.utilNs.IFloating because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined constrain, fixed, focusOnToFront, shadow, shadowOffset, center, doConstrain, setActive, toBack, toFront */ trait IComponent extends IAbstractComponent {
   /** [Method] Called by the layout system after the Component has been laid out  */
   @JSName("afterComponentLayout")
   var afterComponentLayout_IComponent: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -61,7 +61,7 @@ trait IComponent extends IAbstractComponent {
   /** [Method] Center this Component in its container
   		* @returns Ext.Component this
   		*/
-  var center: js.UndefOr[js.Function0[this.type]] = js.undefined
+  var center: js.UndefOr[js.Function0[this.type | IComponent]] = js.undefined
   /** [Method] Clone the current component using the original config values passed into this instance by default
   		* @param overrides Object A new config containing any properties to override in the cloned version. An id property can be passed on this object, otherwise one will be generated to avoid duplicates.
   		* @returns Ext.Component clone The cloned copy of this component
@@ -69,6 +69,8 @@ trait IComponent extends IAbstractComponent {
   var cloneConfig: js.UndefOr[js.Function1[/* overrides */ js.UndefOr[js.Any], this.type]] = js.undefined
   /** [Config Option] (Number/String) */
   var columnWidth: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (Boolean) */
+  var constrain: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Ext.util.Region/Ext.Element) */
   var constrainTo: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Object/String) */
@@ -91,6 +93,8 @@ trait IComponent extends IAbstractComponent {
   var findParentByType: js.UndefOr[
     js.Function1[/* xtype */ js.UndefOr[js.Any], extjsLib.ExtNs.containerNs.IContainer]
   ] = js.undefined
+  /** [Config Option] (Boolean) */
+  var fixed: js.UndefOr[scala.Boolean] = js.undefined
   /** [Property] (Ext.Container) */
   var floatParent: js.UndefOr[IContainer] = js.undefined
   /** [Method] Try to focus this component
@@ -109,6 +113,8 @@ trait IComponent extends IAbstractComponent {
       this.type
     ]
   ] = js.undefined
+  /** [Config Option] (Boolean) */
+  var focusOnToFront: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Boolean) */
   var formBind: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Gets the current XY position of the component s underlying element
@@ -206,7 +212,7 @@ trait IComponent extends IAbstractComponent {
   var setActive: js.UndefOr[
     js.Function2[
       /* active */ js.UndefOr[scala.Boolean], 
-      /* newActive */ js.UndefOr[this.type], 
+      /* newActive */ js.UndefOr[this.type | IComponent], 
       scala.Unit
     ]
   ] = js.undefined
@@ -273,6 +279,10 @@ trait IComponent extends IAbstractComponent {
   		* @returns Number The previous value of the weight property.
   		*/
   var setRegionWeight: js.UndefOr[js.Function1[/* weight */ js.UndefOr[scala.Double], scala.Double]] = js.undefined
+  /** [Config Option] (String/Boolean) */
+  var shadow: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (Number) */
+  var shadowOffset: js.UndefOr[scala.Double] = js.undefined
   /** [Method] Shows this Component rendering it first if autoRender or floating are true
   		* @param animateTarget String/Ext.Element only valid for floating Components such as Windows or ToolTips, or regular Components which have been configured with floating: true. The target from which the Component should animate from while opening.
   		* @param callback Function A callback function to call after the Component is displayed. Only necessary if animation was specified.
@@ -318,12 +328,14 @@ trait IComponent extends IAbstractComponent {
   /** [Method] Sends this Component to the back of lower z index than any other visible windows
   		* @returns Ext.Component this
   		*/
-  var toBack: js.UndefOr[js.Function0[this.type]] = js.undefined
+  var toBack: js.UndefOr[js.Function0[this.type | IComponent]] = js.undefined
   /** [Method] Brings this floating Component to the front of any other visible floating Components managed by the same ZIndexManag
   		* @param preventFocus Boolean Specify true to prevent the Component from being focused.
   		* @returns Ext.Component this
   		*/
-  var toFront: js.UndefOr[js.Function1[/* preventFocus */ js.UndefOr[scala.Boolean], this.type]] = js.undefined
+  var toFront: js.UndefOr[
+    js.Function1[/* preventFocus */ js.UndefOr[scala.Boolean], this.type | IComponent]
+  ] = js.undefined
   /** [Config Option] (Boolean) */
   var toFrontOnShow: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Sets the current box measurements of the component s underlying element

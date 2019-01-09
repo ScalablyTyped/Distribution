@@ -40,7 +40,7 @@ object contextMenusNsMembers extends js.Object {
     */
   val onShown: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function2[
-      /* info */ firefoxDashWebextDashBrowserLib.Anon_MediaType, 
+      /* info */ firefoxDashWebextDashBrowserLib.Anon_Contexts, 
       /* tab */ firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab, 
       scala.Unit
     ]
@@ -53,11 +53,8 @@ object contextMenusNsMembers extends js.Object {
     *     item, details will be available in `runtime.lastError`.
     * @returns The ID of the newly created item.
     */
-  def create(createProperties: firefoxDashWebextDashBrowserLib.Anon_DocumentUrlPatterns): scala.Double | java.lang.String = js.native
-  def create(
-    createProperties: firefoxDashWebextDashBrowserLib.Anon_DocumentUrlPatterns,
-    callback: js.Function0[scala.Unit]
-  ): scala.Double | java.lang.String = js.native
+  def create(createProperties: firefoxDashWebextDashBrowserLib.Anon_Checked): scala.Double | java.lang.String = js.native
+  def create(createProperties: firefoxDashWebextDashBrowserLib.Anon_Checked, callback: js.Function0[scala.Unit]): scala.Double | java.lang.String = js.native
   /**
     * Retrieve the element that was associated with a recent contextmenu event.
     * @param targetElementId The identifier of the clicked element, available as info.targetElementId in the
@@ -83,18 +80,12 @@ object contextMenusNsMembers extends js.Object {
   def remove(menuItemId: scala.Double): js.Promise[scala.Unit] = js.native
   /** Removes all context menu items added by this extension. */
   def removeAll(): js.Promise[scala.Unit] = js.native
-  def update(
-    id: java.lang.String,
-    updateProperties: firefoxDashWebextDashBrowserLib.Anon_DocumentUrlPatternsViewTypes
-  ): js.Promise[scala.Unit] = js.native
+  def update(id: java.lang.String, updateProperties: firefoxDashWebextDashBrowserLib.Anon_CheckedContexts): js.Promise[scala.Unit] = js.native
   /**
     * Updates a previously created context menu item.
     * @param id The ID of the item to update.
     * @param updateProperties The properties to update. Accepts the same values as the create function.
     */
-  def update(
-    id: scala.Double,
-    updateProperties: firefoxDashWebextDashBrowserLib.Anon_DocumentUrlPatternsViewTypes
-  ): js.Promise[scala.Unit] = js.native
+  def update(id: scala.Double, updateProperties: firefoxDashWebextDashBrowserLib.Anon_CheckedContexts): js.Promise[scala.Unit] = js.native
 }
 

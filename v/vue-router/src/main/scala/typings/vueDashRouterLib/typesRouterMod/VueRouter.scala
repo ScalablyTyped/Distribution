@@ -31,9 +31,9 @@ class VueRouter () extends js.Object {
   def replace(location: RawLocation): scala.Unit = js.native
   def replace(location: RawLocation, onComplete: js.Function): scala.Unit = js.native
   def replace(location: RawLocation, onComplete: js.Function, onAbort: ErrorHandler): scala.Unit = js.native
-  def resolve(to: RawLocation): vueDashRouterLib.Anon_Location = js.native
-  def resolve(to: RawLocation, current: Route): vueDashRouterLib.Anon_Location = js.native
-  def resolve(to: RawLocation, current: Route, append: scala.Boolean): vueDashRouterLib.Anon_Location = js.native
+  def resolve(to: RawLocation): vueDashRouterLib.Anon_Href = js.native
+  def resolve(to: RawLocation, current: Route): vueDashRouterLib.Anon_Href = js.native
+  def resolve(to: RawLocation, current: Route, append: scala.Boolean): vueDashRouterLib.Anon_Href = js.native
 }
 
 @JSImport("vue-router/types/router", "VueRouter")

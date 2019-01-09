@@ -8,22 +8,22 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Outlook.Application")
 @js.native
 class Application protected () extends js.Object {
-  val AnswerWizard: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Office.AnswerWizard */ js.Any = js.native
+  val AnswerWizard: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.AnswerWizard */ js.Any = js.native
   val Application: Application = js.native
-  val Assistance: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Office.IAssistance */ js.Any = js.native
-  val Assistant: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Office.Assistant */ js.Any = js.native
-  val COMAddIns: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Office.COMAddIns */ js.Any = js.native
+  val Assistance: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.IAssistance */ js.Any = js.native
+  val Assistant: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.Assistant */ js.Any = js.native
+  val COMAddIns: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.COMAddIns */ js.Any = js.native
   val Class: OlObjectClass = js.native
   val DefaultProfileName: java.lang.String = js.native
   val Explorers: Explorers = js.native
-  var FeatureInstall: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Office.MsoFeatureInstall */ js.Any = js.native
+  var FeatureInstall: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.MsoFeatureInstall */ js.Any = js.native
   val Inspectors: Inspectors = js.native
   val IsTrusted: scala.Boolean = js.native
-  val LanguageSettings: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Office.LanguageSettings */ js.Any = js.native
+  val LanguageSettings: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.LanguageSettings */ js.Any = js.native
   val Name: java.lang.String = js.native
   var `Outlook.Application_typekey`: Application = js.native
   val Parent: js.Any = js.native
-  val PickerDialog: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Office.PickerDialog */ js.Any = js.native
+  val PickerDialog: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.PickerDialog */ js.Any = js.native
   val ProductCode: java.lang.String = js.native
   val Reminders: Reminders = js.native
   val Session: NameSpace = js.native

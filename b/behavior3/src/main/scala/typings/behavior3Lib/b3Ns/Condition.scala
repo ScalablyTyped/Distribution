@@ -16,6 +16,6 @@ import scala.scalajs.js.annotation._
   * Creates an instance of Condition.
   */
 class Condition () extends BaseNode {
-  def this(hasNameTitleProperties: behavior3Lib.Anon_NameProperties) = this()
+  def this(hasNameTitleProperties: behavior3Lib.Anon_Name) = this()
 }
 

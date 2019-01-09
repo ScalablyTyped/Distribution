@@ -372,11 +372,11 @@ object coreNs extends js.Object {
   var defaultTransOpts: atUirouterCoreLib.libTransitionInterfaceMod.TransitionOptions = js.native
   @JSName("equals")
   val equals_FcoreNs: js.Any = js.native
-  val extend: atUirouterCoreLib.Anon_Target = js.native
+  val extend: atUirouterCoreLib.Anon_Source = js.native
   val forEach: js.Any = js.native
   val fromJson: js.Any = js.native
   val hostRegex: stdLib.RegExp = js.native
-  val inArray: atUirouterCoreLib.Anon_ArrayObj = js.native
+  val inArray: atUirouterCoreLib.Anon_Array = js.native
   val isDefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   val isNullOrUndefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   var mapObj: js.Function3[
@@ -389,8 +389,8 @@ object coreNs extends js.Object {
   ] = js.native
   val propEq: js.Function = js.native
   val pushTo: atUirouterCoreLib.Anon_Arr = js.native
-  val removeFrom: atUirouterCoreLib.Anon_Array = js.native
-  var resolvePolicies: atUirouterCoreLib.Anon_When = js.native
+  val removeFrom: atUirouterCoreLib.Anon_ArrayObj = js.native
+  var resolvePolicies: atUirouterCoreLib.Anon_Async = js.native
   val root: js.Any = js.native
   val services: atUirouterCoreLib.libCommonCoreservicesMod.CoreServices = js.native
   val toJson: js.Any = js.native
@@ -501,10 +501,10 @@ object coreNs extends js.Object {
     name: java.lang.String,
     isHtml5: scala.Boolean,
     serviceClass: atUirouterCoreLib.Anon_UiRouter,
-    configurationClass: atUirouterCoreLib.Anon_UiRouterIsHtml5
+    configurationClass: atUirouterCoreLib.Anon_IsHtml5
   ): js.Function1[
     /* uiRouter */ atUirouterCoreLib.libRouterMod.UIRouter, 
-    atUirouterCoreLib.Anon_Dispose
+    atUirouterCoreLib.Anon_Configuration
   ] = js.native
   def makeEvent(
     registry: atUirouterCoreLib.libTransitionInterfaceMod.IHookRegistry,
@@ -1024,12 +1024,7 @@ object coreNs extends js.Object {
   @js.native
   object Transition extends js.Object {
     /** @hidden */
-    var diToken: org.scalablytyped.runtime.Instantiable3[
-        /* fromPath */ js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode], 
-        /* targetState */ atUirouterCoreLib.libStateTargetStateMod.TargetState, 
-        /* router */ atUirouterCoreLib.libRouterMod.UIRouter, 
-        atUirouterCoreLib.libTransitionTransitionMod.Transition
-      ] = js.native
+    var diToken: atUirouterCoreLib.Anon_DiToken = js.native
   }
   
   @js.native
@@ -1244,8 +1239,8 @@ object coreNs extends js.Object {
       *
       * @returns the normalized uiViewName and uiViewContextAnchor that the view targets
       */
-    def normalizeUIViewTarget(context: atUirouterCoreLib.libViewInterfaceMod.ViewContext): atUirouterCoreLib.Anon_UiViewName = js.native
-    def normalizeUIViewTarget(context: atUirouterCoreLib.libViewInterfaceMod.ViewContext, rawViewName: java.lang.String): atUirouterCoreLib.Anon_UiViewName = js.native
+    def normalizeUIViewTarget(context: atUirouterCoreLib.libViewInterfaceMod.ViewContext): atUirouterCoreLib.Anon_UiViewContextAnchor = js.native
+    def normalizeUIViewTarget(context: atUirouterCoreLib.libViewInterfaceMod.ViewContext, rawViewName: java.lang.String): atUirouterCoreLib.Anon_UiViewContextAnchor = js.native
   }
   
   type Category = atUirouterCoreLib.libCommonTraceMod.Category

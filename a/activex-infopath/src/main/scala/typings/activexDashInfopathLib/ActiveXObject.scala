@@ -26,7 +26,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashInfopathLib.InfoPathNs.ApplicationEvents, 
-      /* parameter */ Anon_PWindow, 
+      /* parameter */ Anon_PDocumentPWindow, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -39,7 +39,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashInfopathLib.InfoPathNs.ApplicationEvents, 
-      /* parameter */ Anon_PWindow, 
+      /* parameter */ Anon_PDocumentPWindow, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -52,7 +52,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashInfopathLib.InfoPathNs.ApplicationEvents, 
-      /* parameter */ Anon_PWindow, 
+      /* parameter */ Anon_PDocumentPWindow, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -65,7 +65,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashInfopathLib.InfoPathNs.ApplicationEvents, 
-      /* parameter */ Anon_PfCancel, 
+      /* parameter */ Anon_PDocumentPfCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -78,7 +78,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashInfopathLib.InfoPathNs.ApplicationEvents, 
-      /* parameter */ Anon_PfCancel, 
+      /* parameter */ Anon_PDocumentPfCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -91,7 +91,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashInfopathLib.InfoPathNs.ApplicationEvents, 
-      /* parameter */ Anon_PfCancel, 
+      /* parameter */ Anon_PDocumentPfCancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -117,7 +117,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashInfopathLib.InfoPathNs.Button, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_CNames, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -141,7 +141,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashInfopathLib.InfoPathNs.Button, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -180,7 +180,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashInfopathLib.InfoPathNs.DataDOM, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_CNames, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -204,7 +204,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashInfopathLib.InfoPathNs.DataDOM, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -263,7 +263,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashInfopathLib.InfoPathNs.XDocument, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_CNames, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -287,7 +287,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashInfopathLib.InfoPathNs.XDocument, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native

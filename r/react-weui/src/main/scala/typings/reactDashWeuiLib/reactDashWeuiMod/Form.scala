@@ -15,6 +15,6 @@ class Form protected () extends js.Object {
 @JSImport("react-weui", "Form")
 @js.native
 object Form extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_Radio = js.native
+  var defaultProps: reactDashWeuiLib.Anon_Checkbox = js.native
 }
 

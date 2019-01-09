@@ -5,9 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.InteractionNode because Would inherit conflicting mutable fields List($type), bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.FlowElementsContainer because Would inherit conflicting mutable fields List($attrs, $type, documentation, extensionDefinitions, extensionElements, id))*/
-trait SubProcess extends Activity {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.InteractionNode because var conflicts: $type. Inlined incomingConversationLinks, outgoingConversationLinks- bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.FlowElementsContainer because var conflicts: $attrs, $type, documentation, extensionDefinitions, extensionElements, id. Inlined laneSets, flowElements */ trait SubProcess extends Activity {
   var artifacts: js.Array[Artifact]
+  var flowElements: js.Array[FlowElement]
+  var incomingConversationLinks: js.Array[ConversationLink]
+  var laneSets: js.Array[LaneSet]
+  var outgoingConversationLinks: js.Array[ConversationLink]
   var triggeredByEvent: scala.Boolean
 }
 

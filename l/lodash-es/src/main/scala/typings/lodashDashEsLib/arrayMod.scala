@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("lodash-es/array", JSImport.Namespace)
 @js.native
 object arrayMod extends js.Object {
-  val default: lodashDashEsLib.Anon_SortedIndexOf = js.native
+  val default: lodashDashEsLib.Anon_Chunk = js.native
 }
 

@@ -11,7 +11,7 @@ trait CollectionStatic
      with org.scalablytyped.runtime.Instantiable0[Collection[js.Object]]
      with org.scalablytyped.runtime.Instantiable2[
       (/* name */ scala.Null) | (/* name */ java.lang.String), 
-      /* options */ meteorDashTypingsLib.Anon_Transform, 
+      /* options */ meteorDashTypingsLib.Anon_Connection, 
       Collection[js.Object]
     ]
 

@@ -35,7 +35,7 @@ trait CellSizeAndPositionManager extends js.Object {
     * @param totalSize Total size (width or height) of all cells
     * @return Offset to use to ensure the specified cell is visible
     */
-  def getUpdatedOffsetForIndex(params: reactDashVirtualizedLib.Anon_TargetIndex): scala.Double
+  def getUpdatedOffsetForIndex(params: reactDashVirtualizedLib.Anon_AlignContainerSize): scala.Double
   def getVisibleCellRange(params: GetVisibleCellRangeParams): VisibleCellRange
   /**
     * Clear all cached values for cells after the specified index.

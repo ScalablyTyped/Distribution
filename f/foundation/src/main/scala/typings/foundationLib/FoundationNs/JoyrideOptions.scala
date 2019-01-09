@@ -29,7 +29,7 @@ trait JoyrideOptions extends js.Object {
   var scroll_speed: js.UndefOr[scala.Double] = js.undefined
   var start_offset: js.UndefOr[scala.Double] = js.undefined
   var start_timer_on_click: js.UndefOr[scala.Boolean] = js.undefined
-  var template: js.UndefOr[foundationLib.Anon_Modal] = js.undefined
+  var template: js.UndefOr[foundationLib.Anon_Button] = js.undefined
   var timer: js.UndefOr[scala.Double] = js.undefined
   var tip_animation: js.UndefOr[java.lang.String] = js.undefined
   var tip_animation_fade_speed: js.UndefOr[scala.Double] = js.undefined

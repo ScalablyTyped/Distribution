@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Material ()
   extends cesiumLib.cesiumMod.CesiumNs.Material {
-  def this(options: cesiumLib.Anon_Translucent) = this()
+  def this(options: cesiumLib.Anon_Fabric) = this()
   /* CompleteClass */
   override var materials: js.Any = js.native
   /* CompleteClass */

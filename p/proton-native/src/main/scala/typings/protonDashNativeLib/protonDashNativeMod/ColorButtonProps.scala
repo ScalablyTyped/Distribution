@@ -16,6 +16,6 @@ trait ColorButtonProps
   /**
     * Called when the color is changed for the ColorButton. The current color is passed as an object of RGBA.
     */
-  var onChange: js.UndefOr[js.Function1[/* color */ protonDashNativeLib.Anon_B, scala.Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* color */ protonDashNativeLib.Anon_A, scala.Unit]] = js.undefined
 }
 

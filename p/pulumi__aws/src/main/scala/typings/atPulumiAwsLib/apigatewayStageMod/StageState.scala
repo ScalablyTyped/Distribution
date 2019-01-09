@@ -9,7 +9,7 @@ trait StageState extends js.Object {
   /**
     * Enables access logs for the API stage. Detailed below.
     */
-  val accessLogSettings: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DestinationArn]] = js.undefined
+  val accessLogSettings: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DestinationArnFormat]] = js.undefined
   /**
     * Specifies whether a cache cluster is enabled for the stage
     */

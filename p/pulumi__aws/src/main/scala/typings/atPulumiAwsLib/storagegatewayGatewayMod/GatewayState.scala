@@ -38,7 +38,9 @@ trait GatewayState extends js.Object {
   /**
     * Nested argument with Active Directory domain join information for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `ActiveDirectory` authentication SMB file shares. More details below.
     */
-  val smbActiveDirectorySettings: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Username]] = js.undefined
+  val smbActiveDirectorySettings: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DomainNamePasswordUsername]
+  ] = js.undefined
   /**
     * Guest password for Server Message Block (SMB) file shares. Only valid for `FILE_S3` gateway type. Must be set before creating `GuestAccess` authentication SMB file shares. Terraform can only detect drift of the existence of a guest password, not its actual value from the gateway. Terraform can however update the password with changing the argument.
     */

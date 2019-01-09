@@ -283,6 +283,9 @@ object stdLibStrings {
   sealed trait OES_vertex_array_object extends js.Object
   
   @js.native
+  sealed trait ObjectConstructor extends js.Object
+  
+  @js.native
   sealed trait OfflineAudioCompletionEvent extends js.Object
   
   @js.native
@@ -2750,6 +2753,7 @@ object stdLibStrings {
   def OES_texture_half_float: OES_texture_half_float = "OES_texture_half_float".asInstanceOf[OES_texture_half_float]
   def OES_texture_half_float_linear: OES_texture_half_float_linear = "OES_texture_half_float_linear".asInstanceOf[OES_texture_half_float_linear]
   def OES_vertex_array_object: OES_vertex_array_object = "OES_vertex_array_object".asInstanceOf[OES_vertex_array_object]
+  def ObjectConstructor: ObjectConstructor = "ObjectConstructor".asInstanceOf[ObjectConstructor]
   def OfflineAudioCompletionEvent: OfflineAudioCompletionEvent = "OfflineAudioCompletionEvent".asInstanceOf[OfflineAudioCompletionEvent]
   def OverflowEvent: OverflowEvent = "OverflowEvent".asInstanceOf[OverflowEvent]
   def PageTransitionEvent: PageTransitionEvent = "PageTransitionEvent".asInstanceOf[PageTransitionEvent]

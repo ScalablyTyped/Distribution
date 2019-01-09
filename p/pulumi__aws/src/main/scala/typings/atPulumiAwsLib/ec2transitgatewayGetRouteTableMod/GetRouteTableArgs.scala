@@ -9,7 +9,7 @@ trait GetRouteTableArgs extends js.Object {
   /**
     * One or more configuration blocks containing name-values filters. Detailed below.
     */
-  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_Values]] = js.undefined
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   /**
     * Identifier of the EC2 Transit Gateway Route Table.
     */

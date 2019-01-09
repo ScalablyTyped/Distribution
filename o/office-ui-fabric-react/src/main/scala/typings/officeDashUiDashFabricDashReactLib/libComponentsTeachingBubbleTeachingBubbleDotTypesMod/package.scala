@@ -14,5 +14,5 @@ package object libComponentsTeachingBubbleTeachingBubbleDotTypesMod {
   ]) with (stdLib.Pick[
     ITeachingBubbleProps, 
     officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.hasCondensedHeadline | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.hasSmallHeadline | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.isWide
-  ]) with officeDashUiDashFabricDashReactLib.Anon_SecondaryButtonClassName
+  ]) with officeDashUiDashFabricDashReactLib.Anon_CalloutClassNamePrimaryButtonClassName
 }

@@ -23,7 +23,7 @@ trait ExportContext extends js.Object {
   /** This is always sql#exportContext. */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /** Options for exporting data as SQL statements. */
-  var sqlExportOptions: js.UndefOr[gapiDotClientDotSqladminLib.Anon_Tables] = js.undefined
+  var sqlExportOptions: js.UndefOr[gapiDotClientDotSqladminLib.Anon_SchemaOnly] = js.undefined
   /**
     * The path to the file in Google Cloud Storage where the export will be stored. The URI is in the form gs://bucketName/fileName. If the file already
     * exists, the operation fails. If fileType is SQL and the filename ends with .gz, the contents are compressed.

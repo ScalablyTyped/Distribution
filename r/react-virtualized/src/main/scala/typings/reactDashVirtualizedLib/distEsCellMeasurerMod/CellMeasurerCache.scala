@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Lifted 6 members from Set(react-virtualized.react-virtualized/dist/es/CellMeasurer.CellMeasurerCacheInterface) */ @JSImport("react-virtualized/dist/es/CellMeasurer", "CellMeasurerCache")
 @js.native
 class CellMeasurerCache () extends js.Object {

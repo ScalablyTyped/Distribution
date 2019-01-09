@@ -15,6 +15,6 @@ class MediaBox protected () extends js.Object {
 @JSImport("react-weui", "MediaBox")
 @js.native
 object MediaBox extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_TypeString = js.native
+  var defaultProps: reactDashWeuiLib.Anon_Type = js.native
 }
 

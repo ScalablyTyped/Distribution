@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(officeDashUiDashFabricDashReactLib.libUtilitiesDecoratorsWithResponsiveModeMod.IWithResponsiveModeState because Would inherit conflicting mutable fields List(responsiveMode))*/
-trait IDropdownInternalProps
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- officeDashUiDashFabricDashReactLib.libUtilitiesDecoratorsWithResponsiveModeMod.IWithResponsiveModeState because var conflicts: responsiveMode. Inlined  */ trait IDropdownInternalProps
   extends officeDashUiDashFabricDashReactLib.libComponentsDropdownDropdownDotTypesMod.IDropdownProps
 

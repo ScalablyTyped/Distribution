@@ -12,7 +12,7 @@ trait PatchBaselineArgs extends js.Object {
   val approvalRules: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EnableNonSecurityComplianceLevel]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ApproveAfterDaysComplianceLevel]
       ]
     ]
   ] = js.undefined
@@ -35,7 +35,7 @@ trait PatchBaselineArgs extends js.Object {
     */
   val globalFilters: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ValuesKeyInput]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyValuesArray]]
     ]
   ] = js.undefined
   /**

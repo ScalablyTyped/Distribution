@@ -21,7 +21,7 @@ trait MetaNodeParameters extends js.Object {
     */
   var multiplicity: js.UndefOr[scala.Boolean] = js.undefined
   /** the input parameters of the query. */
-  var `object`: webgmeLib.Anon_NodeChildren
+  var `object`: webgmeLib.Anon_Children
   /** 
     * if true, the query filters out the 
     * abstract and connection-like nodes 

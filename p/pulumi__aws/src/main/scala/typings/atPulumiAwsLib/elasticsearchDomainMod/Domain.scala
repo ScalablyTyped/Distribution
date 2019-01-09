@@ -37,8 +37,8 @@ class Domain protected ()
   /**
     * Cluster configuration of the domain, see below.
     */
-  val clusterConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_ZoneAwarenessEnabledDedicatedMasterEnabled] = js.native
-  val cognitoOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArnUserPoolIdIdentityPoolId]] = js.native
+  val clusterConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DedicatedMasterCount] = js.native
+  val cognitoOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EnabledIdentityPoolId]] = js.native
   /**
     * Unique identifier for the domain.
     */
@@ -50,7 +50,7 @@ class Domain protected ()
   /**
     * EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
     */
-  val ebsOptions: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_EbsEnabledVolumeType] = js.native
+  val ebsOptions: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_EbsEnabled] = js.native
   /**
     * The version of Elasticsearch to deploy. Defaults to `1.5`
     */
@@ -58,7 +58,7 @@ class Domain protected ()
   /**
     * Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
     */
-  val encryptAtRest: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_KmsKeyIdEnabled] = js.native
+  val encryptAtRest: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_EnabledKmsKeyId] = js.native
   /**
     * Domain-specific endpoint used to submit index, search, and data upload requests.
     */
@@ -72,15 +72,15 @@ class Domain protected ()
   /**
     * Options for publishing slow logs to CloudWatch Logs.
     */
-  val logPublishingOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_CloudwatchLogGroupArnLogType]]] = js.native
+  val logPublishingOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_CloudwatchLogGroupArn]]] = js.native
   /**
     * Node-to-node encryption options. See below.
     */
-  val nodeToNodeEncryption: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_EnabledBoolean] = js.native
+  val nodeToNodeEncryption: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_EnabledBoolean_204597847] = js.native
   /**
     * Snapshot related options, see below.
     */
-  val snapshotOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AutomatedSnapshotStartHourNumber]] = js.native
+  val snapshotOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AutomatedSnapshotStartHour]] = js.native
   /**
     * A mapping of tags to assign to the resource
     */
@@ -88,7 +88,7 @@ class Domain protected ()
   /**
     * VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
     */
-  val vpcOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AvailabilityZonesVpcId]] = js.native
+  val vpcOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AvailabilityZones]] = js.native
 }
 
 @JSImport("@pulumi/aws/elasticsearch/domain", "Domain")

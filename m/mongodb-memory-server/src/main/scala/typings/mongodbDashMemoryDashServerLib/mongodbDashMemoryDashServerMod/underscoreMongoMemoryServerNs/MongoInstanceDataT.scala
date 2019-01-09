@@ -12,7 +12,7 @@ trait MongoInstanceDataT extends js.Object {
   var instance: mongodbDashMemoryDashServerLib.mongodbDashMemoryDashServerMod.underscoreMongoInstanceNs.MongodbInstance
   var port: scala.Double
   var storageEngine: java.lang.String
-  var tmpDir: js.UndefOr[mongodbDashMemoryDashServerLib.Anon_RemoveCallback] = js.undefined
+  var tmpDir: js.UndefOr[mongodbDashMemoryDashServerLib.Anon_ArgsName] = js.undefined
   var uri: java.lang.String
 }
 

@@ -15,6 +15,6 @@ class Button protected () extends js.Object {
 @JSImport("react-weui", "Button")
 @js.native
 object Button extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_TypeSize = js.native
+  var defaultProps: reactDashWeuiLib.Anon_Disabled = js.native
 }
 

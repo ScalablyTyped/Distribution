@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object graspModMembers extends js.Object {
   val VERSION: java.lang.String = js.native
-  def apply(options: graspLib.Anon_TextFormat): scala.Unit = js.native
+  def apply(options: graspLib.Anon_Args): scala.Unit = js.native
   def replace(engine: graspLib.graspMod.graspNs.QueryEngineType): graspLib.graspMod.graspNs.GraspReplaceWithQueryEngine = js.native
   def replace(engine: graspLib.graspMod.graspNs.QueryEngineType, selector: java.lang.String): graspLib.graspMod.graspNs.GraspReplaceWithSelector = js.native
   def replace(

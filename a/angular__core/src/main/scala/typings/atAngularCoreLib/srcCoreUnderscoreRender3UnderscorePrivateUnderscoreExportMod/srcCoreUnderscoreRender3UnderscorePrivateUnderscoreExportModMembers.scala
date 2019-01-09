@@ -38,15 +38,15 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
     scala.Unit
   ] = js.native
   val `ɵSWITCH_ELEMENT_REF_FACTORY__POST_R3__`: js.Function1[
-    /* import warning: ImportType.apply Failed type conversion: typeof @angular/core.@angular/core/src/linker/element_ref.ElementRef */ /* ElementRefToken */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ElementRef */ /* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
   ] = js.native
   val `ɵSWITCH_IVY_ENABLED__POST_R3__`: /* true */ scala.Boolean = js.native
   val `ɵSWITCH_RENDERER2_FACTORY__POST_R3__`: js.Function0[atAngularCoreLib.srcRenderApiMod.Renderer2] = js.native
-  val `ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__`: atAngularCoreLib.Anon_TemplateRefToken = js.native
+  val `ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__`: atAngularCoreLib.Anon_ElementRefToken = js.native
   val `ɵSWITCH_VIEW_CONTAINER_REF_FACTORY__POST_R3__`: js.Function2[
-    /* import warning: ImportType.apply Failed type conversion: typeof @angular/core.@angular/core/src/linker/view_container_ref.ViewContainerRef */ /* ViewContainerRefToken */ js.Any, 
-    /* import warning: ImportType.apply Failed type conversion: typeof @angular/core.@angular/core/src/linker/element_ref.ElementRef */ /* ElementRefToken */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ViewContainerRef */ /* ViewContainerRefToken */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ElementRef */ /* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef
   ] = js.native
   def `ɵCompiler_compileModuleAndAllComponentsAsync__POST_R3__`[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): js.Promise[atAngularCoreLib.srcLinkerCompilerMod.ModuleWithComponentFactories[T]] = js.native
@@ -162,13 +162,13 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
   def ɵcontainer(index: scala.Double): scala.Unit = js.native
   def ɵcontainerRefreshEnd(): scala.Unit = js.native
   def ɵcontainerRefreshStart(index: scala.Double): scala.Unit = js.native
-  def ɵdefineBase[T](baseDefinition: atAngularCoreLib.Anon_Outputs[T]): atAngularCoreLib.srcRender3InterfacesDefinitionMod.BaseDef[T] = js.native
-  def ɵdefineComponent[T](componentDefinition: atAngularCoreLib.Anon_Directives[T]): scala.Nothing = js.native
-  def ɵdefineDirective[T](directiveDefinition: atAngularCoreLib.Anon_Features[T]): scala.Nothing = js.native
+  def ɵdefineBase[T](baseDefinition: atAngularCoreLib.Anon_Inputs[T]): atAngularCoreLib.srcRender3InterfacesDefinitionMod.BaseDef[T] = js.native
+  def ɵdefineComponent[T](componentDefinition: atAngularCoreLib.Anon_Attributes[T]): scala.Nothing = js.native
+  def ɵdefineDirective[T](directiveDefinition: atAngularCoreLib.Anon_AttributesContentQueries[T]): scala.Nothing = js.native
   def ɵdefineNgModule[T](
-    `def`: atAngularCoreLib.Anon_TypeT[T] with stdLib.Partial[atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModuleDef[T]]
+    `def`: atAngularCoreLib.Anon_Type[T] with stdLib.Partial[atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModuleDef[T]]
   ): scala.Nothing = js.native
-  def ɵdefinePipe[T](pipeDef: atAngularCoreLib.Anon_Type[T]): scala.Nothing = js.native
+  def ɵdefinePipe[T](pipeDef: atAngularCoreLib.Anon_FactoryName[T]): scala.Nothing = js.native
   def ɵdetectChanges[T](component: T): scala.Unit = js.native
   def ɵdirectiveInject[T](token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T]): T = js.native
   def ɵdirectiveInject[T](

@@ -11,7 +11,7 @@ trait IAngularStatic extends js.Object {
   def throttle(
     fn: angularLib.angularMod.Global.Function,
     throttle: scala.Double,
-    options: angularDotThrottleLib.Anon_Trailing
+    options: angularDotThrottleLib.Anon_Leading
   ): angularLib.angularMod.Global.Function = js.native
 }
 

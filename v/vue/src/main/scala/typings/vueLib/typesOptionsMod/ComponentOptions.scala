@@ -58,7 +58,7 @@ trait ComponentOptions[V /* <: vueLib.typesVueMod.Vue */, Data, Methods, Compute
       ]) | vueLib.typesVueMod.VueConstructor[vueLib.typesVueMod.Vue]
     ]
   ] = js.undefined
-  var model: js.UndefOr[vueLib.Anon_Prop] = js.undefined
+  var model: js.UndefOr[vueLib.Anon_Event] = js.undefined
   var mounted: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var parent: js.UndefOr[vueLib.typesVueMod.Vue] = js.undefined

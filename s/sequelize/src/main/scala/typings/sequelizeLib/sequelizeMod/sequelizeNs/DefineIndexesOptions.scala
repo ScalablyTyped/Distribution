@@ -23,7 +23,7 @@ trait DefineIndexesOptions extends js.Object {
     * (field name), `length` (create a prefix index of length chars), `order` (the direction the column
     * should be sorted in), `collate` (the collation (sort order) for the column)
     */
-  var fields: js.UndefOr[js.Array[java.lang.String | fn | sequelizeLib.Anon_Order]] = js.undefined
+  var fields: js.UndefOr[js.Array[java.lang.String | fn | sequelizeLib.Anon_Attribute]] = js.undefined
   /**
     * Index type. Only used by mysql. One of `UNIQUE`, `FULLTEXT` and `SPATIAL`
     */

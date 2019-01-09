@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because Would inherit conflicting mutable fields List(className))*/
-trait IControlProps
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait IControlProps
   extends reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] {
   /**
     * Alignment of the indicator within container.

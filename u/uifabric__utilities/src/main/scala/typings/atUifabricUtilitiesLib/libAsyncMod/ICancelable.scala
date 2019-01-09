@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ICancelable[T] extends js.Object {
-  var cancel: js.Function0[scala.Unit]
-  var flush: js.Function0[T]
-  var pending: js.Function0[scala.Boolean]
+  def cancel(): scala.Unit
+  def flush(): T
+  def pending(): scala.Boolean
 }
 

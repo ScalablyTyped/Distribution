@@ -40,7 +40,7 @@ class Selection ()
   def load(): Selection = js.native
   def load(option: java.lang.String): Selection = js.native
   def load(option: js.Array[java.lang.String]): Selection = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Selection = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Selection = js.native
   def toJSON(): officeDashJsDashPreviewLib.VisioNs.InterfacesNs.SelectionData = js.native
 }
 

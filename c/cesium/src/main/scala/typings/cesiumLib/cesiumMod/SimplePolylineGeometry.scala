@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SimplePolylineGeometry protected ()
   extends cesiumLib.cesiumMod.CesiumNs.SimplePolylineGeometry {
-  def this(options: cesiumLib.Anon_ColorsPerVertexEllipsoid) = this()
+  def this(options: cesiumLib.Anon_ColorsColorsPerVertex) = this()
 }
 
 @JSImport("cesium", "SimplePolylineGeometry")

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three/three-tdsloader", "TDSLoader")
 @js.native
 class TDSLoader protected () extends js.Object {
-  def this(three: threeLib.Anon_SphereBufferGeometry) = this()
+  def this(three: threeLib.Anon_AAClockwise) = this()
   /**
     * Print debug message to the console.
     *

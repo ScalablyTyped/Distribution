@@ -10,6 +10,6 @@ trait PermissionsResource extends js.Object {
     * Lists the permissions testable on a resource.
     * A permission is testable if it can be tested for an identity on a resource.
     */
-  def queryTestablePermissions(request: gapiDotClientDotIamLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[QueryTestablePermissionsResponse]
+  def queryTestablePermissions(request: gapiDotClientDotIamLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[QueryTestablePermissionsResponse]
 }
 

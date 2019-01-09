@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ trait WindowsConfiguration extends js.Object {
   /**
     * The path to an additional certificate file you want to add to the signature block.
@@ -88,8 +88,8 @@ import scala.scalajs.js.annotation._
     *
     * @default nsis
     */
-  val target: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify TargetConfigType */ js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify TargetConfigType */ js.Any
+  val target: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetConfigType */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetConfigType */ js.Any
   ] = js.undefined
   /**
     * The URL of the time stamp server.

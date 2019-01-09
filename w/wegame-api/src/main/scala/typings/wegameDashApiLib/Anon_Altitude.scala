@@ -7,32 +7,17 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Altitude extends js.Object {
   /**
-    * 位置的精确度
+    * 传入 true 会返回高度信息，由于获取高度需要较高精确度，会减慢接口返回速度	>= 1.6.0
     */
-  var accuracy: scala.Double
+  var altitude: js.UndefOr[scala.Boolean] = js.undefined
+  var complete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var fail: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* res */ Anon_Accuracy, scala.Unit]] = js.undefined
   /**
-    * 高度，单位 m
+    * wgs84 返回 gps 坐标，gcj02 返回可用于 wx.openLocation 的坐标
     */
-  var altitude: scala.Double
-  /**
-    * 水平精度，单位 m
-    */
-  var horizontalAccuracy: scala.Double
-  /**
-    * 纬度，范围为 -90~90，负数表示南纬
-    */
-  var latitude: scala.Double
-  /**
-    * 经度，范围为 -180~180，负数表示西经
-    */
-  var longitude: scala.Double
-  /**
-    * 速度，单位 m/s
-    */
-  var speed: scala.Double
-  /**
-    * 垂直精度，单位 m（Android 无法获取，返回 0）
-    */
-  var verticalAccuracy: scala.Double
+  var `type`: js.UndefOr[
+    wegameDashApiLib.wegameDashApiLibStrings.wgs84 | wegameDashApiLib.wegameDashApiLibStrings.gcj02
+  ] = js.undefined
 }
 

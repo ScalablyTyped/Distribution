@@ -12,6 +12,6 @@ class default () extends AuthorizedResource
 @JSImport("rest-io/lib/src/authorizedResource", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var ROLES: restDashIoLib.Anon_SUPERUSER = js.native
+  var ROLES: restDashIoLib.Anon_ADMIN = js.native
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AssertionError ()
   extends easyDashXapiDashSupertestLib.assertMod.internalNs.AssertionError {
-  def this(options: easyDashXapiDashSupertestLib.Anon_Expected) = this()
+  def this(options: easyDashXapiDashSupertestLib.Anon_Actual) = this()
   /* CompleteClass */
   override var actual: js.Any = js.native
   /* CompleteClass */

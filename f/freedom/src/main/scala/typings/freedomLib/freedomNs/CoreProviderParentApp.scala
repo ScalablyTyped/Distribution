@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 // object that describes the parent module the core provider instance has been
 // created for.
 trait CoreProviderParentApp extends js.Object {
-  var config: freedomLib.Anon_Views
-  var global: freedomLib.Anon_RemoveEventListener
+  var config: freedomLib.Anon_ViewName
+  var global: freedomLib.Anon_B
   var manifestId: java.lang.String
 }
 

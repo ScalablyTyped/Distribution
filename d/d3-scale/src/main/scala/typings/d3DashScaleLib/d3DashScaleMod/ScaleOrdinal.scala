@@ -57,7 +57,7 @@ trait ScaleOrdinal[Domain /* <: d3DashScaleLib.Anon_ToString */, Range] extends 
   /**
     * Returns the current unknown value, which defaults to "implicit".
     */
-  def unknown(): Range | d3DashScaleLib.Anon_Name = js.native
+  def unknown(): Range | d3DashScaleLib.Anon_Implicit = js.native
   /**
     * Sets the output value of the scale for unknown input values and returns this scale.
     * The implicit value enables implicit domain construction. scaleImplicit can be used as a convenience to set the implicit value.
@@ -65,6 +65,6 @@ trait ScaleOrdinal[Domain /* <: d3DashScaleLib.Anon_ToString */, Range] extends 
     * @param value Unknown value to be used or scaleImplicit to set implicit scale generation.
     */
   def unknown(value: Range): this.type = js.native
-  def unknown(value: d3DashScaleLib.Anon_Name): this.type = js.native
+  def unknown(value: d3DashScaleLib.Anon_Implicit): this.type = js.native
 }
 

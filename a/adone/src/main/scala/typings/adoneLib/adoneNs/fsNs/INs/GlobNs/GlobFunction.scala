@@ -19,11 +19,11 @@ trait GlobFunction extends js.Object {
   def apply(
     patterns: java.lang.String,
     options: (StreamOptions with (adoneLib.Anon_PatternIndex | adoneLib.Anon_PatternIndexTrue | adoneLib.Anon_Stat)) | StreamOptions
-  ): Stream[adoneLib.Anon_PatternIndexPath] = js.native
+  ): Stream[adoneLib.Anon_PathPatternIndex] = js.native
   def apply(patterns: js.Array[java.lang.String]): Stream[java.lang.String] = js.native
   def apply(
     patterns: js.Array[java.lang.String],
     options: (StreamOptions with (adoneLib.Anon_PatternIndex | adoneLib.Anon_PatternIndexTrue | adoneLib.Anon_Stat)) | StreamOptions
-  ): Stream[adoneLib.Anon_PatternIndexPath] = js.native
+  ): Stream[adoneLib.Anon_PathPatternIndex] = js.native
 }
 

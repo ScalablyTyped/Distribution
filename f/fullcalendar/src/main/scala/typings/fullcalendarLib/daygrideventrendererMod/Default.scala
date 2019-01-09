@@ -14,7 +14,7 @@ class Default protected ()
   var rowStructs: js.Any = js.native
   def buildSegLevels(segs: js.Any): js.Array[_] = js.native
   def groupSegRows(segs: js.Any): js.Array[_] = js.native
-  def renderSegRow(row: js.Any, rowSegs: js.Any): fullcalendarLib.Anon_SegLevels = js.native
+  def renderSegRow(row: js.Any, rowSegs: js.Any): fullcalendarLib.Anon_CellMatrix = js.native
   def renderSegRows(segs: js.Any): js.Array[_] = js.native
   def unrenderFgSegs(): scala.Unit = js.native
 }

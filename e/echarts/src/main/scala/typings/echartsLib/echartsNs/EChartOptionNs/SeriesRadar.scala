@@ -125,7 +125,7 @@ trait SeriesRadar extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.areaStyle
     */
   var areaStyle: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColorOpacityShadowOffsetYNumber
+    echartsLib.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetYNumber
   ] = js.undefined
   /**
     * The data in radar chart is multi-variable (dimension).
@@ -145,7 +145,7 @@ trait SeriesRadar extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleAreaStyle] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_AreaStyle] = js.undefined
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -161,7 +161,7 @@ trait SeriesRadar extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidthColor] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -174,7 +174,7 @@ trait SeriesRadar extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.label
     */
   var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlign
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily
   ] = js.undefined
   /**
     * Line style.
@@ -182,7 +182,7 @@ trait SeriesRadar extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.lineStyle
     */
-  var lineStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColorOpacity] = js.undefined
+  var lineStyle: js.UndefOr[echartsLib.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -323,7 +323,7 @@ trait SeriesRadar extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "radar"

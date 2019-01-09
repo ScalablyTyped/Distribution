@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(nodeLib.streamMod.Transform because Inheritance from two classes)*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- nodeLib.streamMod.Transform because Inheritance from two classes */ @js.native
 trait Transform extends Duplex {
-  var _transformState: readableDashStreamLib.Anon_Transforming = js.native
+  var _transformState: readableDashStreamLib.Anon_AfterTransform = js.native
   def _flush(
     callback: js.Function2[/* error */ js.UndefOr[nodeLib.Error], /* data */ js.UndefOr[js.Any], scala.Unit]
   ): scala.Unit = js.native

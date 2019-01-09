@@ -13,7 +13,7 @@ trait InventoryArgs extends js.Object {
   /**
     * Destination bucket where inventory list files are written (documented below).
     */
-  val destination: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketInput]
+  val destination: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketAnonAccountIdBucketArn]
   /**
     * Specifies whether the inventory is enabled or disabled.
     */
@@ -21,7 +21,7 @@ trait InventoryArgs extends js.Object {
   /**
     * Object filtering that accepts a prefix (documented below).
     */
-  val filter: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PrefixInput]] = js.undefined
+  val filter: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PrefixInputString]] = js.undefined
   /**
     * Object filtering that accepts a prefix (documented below). Can be `All` or `Current`.
     */
@@ -39,6 +39,6 @@ trait InventoryArgs extends js.Object {
   /**
     * Contains the frequency for generating inventory results (documented below).
     */
-  val schedule: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Frequency]
+  val schedule: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FrequencyInput]
 }
 

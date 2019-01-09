@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("moment-round", JSImport.Namespace)
 @js.native
 object momentDashRoundModMembers extends js.Object {
-  var HTML5_FMT: momentLib.Anon_DATETIMELOCALSECONDS = js.native
+  var HTML5_FMT: momentLib.Anon_DATE = js.native
   var ISO_8601: momentLib.momentMod.momentNs.MomentBuiltinFormat = js.native
   var RFC_2822: momentLib.momentMod.momentNs.MomentBuiltinFormat = js.native
   var defaultFormat: java.lang.String = js.native

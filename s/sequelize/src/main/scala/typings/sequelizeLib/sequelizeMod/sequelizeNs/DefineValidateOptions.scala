@@ -45,12 +45,12 @@ trait DefineValidateOptions
     * is: /^[a-z]+$/i      // same as the previous example using real RegExp
     */
   var is: js.UndefOr[
-    java.lang.String | (js.Array[java.lang.String | stdLib.RegExp]) | stdLib.RegExp | sequelizeLib.Anon_MsgArgs
+    java.lang.String | (js.Array[java.lang.String | stdLib.RegExp]) | stdLib.RegExp | sequelizeLib.Anon_Args
   ] = js.undefined
   /**
     * only allow date strings after a specific date
     */
-  var isAfter: js.UndefOr[java.lang.String | sequelizeLib.Anon_MsgArgsString] = js.undefined
+  var isAfter: js.UndefOr[java.lang.String | sequelizeLib.Anon_ArgsMsgString] = js.undefined
   /**
     * will only allow letters
     */
@@ -62,19 +62,19 @@ trait DefineValidateOptions
   /**
     * only allow arrays
     */
-  var isArray: js.UndefOr[scala.Boolean | sequelizeLib.Anon_Msg] = js.undefined
+  var isArray: js.UndefOr[scala.Boolean | sequelizeLib.Anon_ArgsMsgBoolean] = js.undefined
   /**
     * only allow date strings before a specific date
     */
-  var isBefore: js.UndefOr[java.lang.String | sequelizeLib.Anon_MsgArgsString] = js.undefined
+  var isBefore: js.UndefOr[java.lang.String | sequelizeLib.Anon_ArgsMsgString] = js.undefined
   /**
     * check for valid credit card numbers
     */
-  var isCreditCard: js.UndefOr[scala.Boolean | sequelizeLib.Anon_Msg] = js.undefined
+  var isCreditCard: js.UndefOr[scala.Boolean | sequelizeLib.Anon_ArgsMsgBoolean] = js.undefined
   /**
     * only allow date strings
     */
-  var isDate: js.UndefOr[scala.Boolean | sequelizeLib.Anon_Msg] = js.undefined
+  var isDate: js.UndefOr[scala.Boolean | sequelizeLib.Anon_ArgsMsgBoolean] = js.undefined
   /**
     * checks for any numbers
     */
@@ -102,9 +102,7 @@ trait DefineValidateOptions
   /**
     * check the value is one of these
     */
-  var isIn: js.UndefOr[
-    js.Array[js.Array[java.lang.String]] | sequelizeLib.Anon_MsgArgsStringArray_1525276583
-  ] = js.undefined
+  var isIn: js.UndefOr[js.Array[js.Array[java.lang.String]] | sequelizeLib.Anon_ArgsMsg] = js.undefined
   /**
     * checks for valid integers
     */
@@ -125,7 +123,7 @@ trait DefineValidateOptions
     * only allow uuids
     */
   var isUUID: js.UndefOr[
-    sequelizeLib.sequelizeLibNumbers.`3` | sequelizeLib.sequelizeLibNumbers.`4` | sequelizeLib.sequelizeLibNumbers.`5` | sequelizeLib.sequelizeLibStrings.`3` | sequelizeLib.sequelizeLibStrings.`4` | sequelizeLib.sequelizeLibStrings.`5` | sequelizeLib.sequelizeLibStrings.all | sequelizeLib.Anon_MsgArgsStringNumber
+    sequelizeLib.sequelizeLibNumbers.`3` | sequelizeLib.sequelizeLibNumbers.`4` | sequelizeLib.sequelizeLibNumbers.`5` | sequelizeLib.sequelizeLibStrings.`3` | sequelizeLib.sequelizeLibStrings.`4` | sequelizeLib.sequelizeLibStrings.`5` | sequelizeLib.sequelizeLibStrings.all | sequelizeLib.Anon_ArgsMsgNumberString
   ] = js.undefined
   /**
     * checks for uppercase
@@ -138,29 +136,25 @@ trait DefineValidateOptions
   /**
     * only allow values with length between 2 and 10
     */
-  var len: js.UndefOr[
-    (js.Tuple2[scala.Double, scala.Double]) | sequelizeLib.Anon_MsgArgsStringNumber_2144254094
-  ] = js.undefined
+  var len: js.UndefOr[(js.Tuple2[scala.Double, scala.Double]) | sequelizeLib.Anon_ArgsMsgNumber] = js.undefined
   /**
     * only allow values
     */
-  var max: js.UndefOr[scala.Double | sequelizeLib.Anon_MsgArgsStringNumber] = js.undefined
+  var max: js.UndefOr[scala.Double | sequelizeLib.Anon_ArgsMsgNumberString] = js.undefined
   /**
     * only allow values >= 23
     */
-  var min: js.UndefOr[scala.Double | sequelizeLib.Anon_MsgArgsStringNumber] = js.undefined
+  var min: js.UndefOr[scala.Double | sequelizeLib.Anon_ArgsMsgNumberString] = js.undefined
   /**
     * not: ["[a-z]",'i']  // will not allow letters
     */
   var not: js.UndefOr[
-    java.lang.String | (js.Array[java.lang.String | stdLib.RegExp]) | stdLib.RegExp | sequelizeLib.Anon_MsgArgs
+    java.lang.String | (js.Array[java.lang.String | stdLib.RegExp]) | stdLib.RegExp | sequelizeLib.Anon_Args
   ] = js.undefined
   /**
     * don't allow specific substrings
     */
-  var notContains: js.UndefOr[
-    js.Array[java.lang.String] | java.lang.String | sequelizeLib.Anon_MsgArgsStringArray
-  ] = js.undefined
+  var notContains: js.UndefOr[js.Array[java.lang.String] | java.lang.String | sequelizeLib.Anon_ArgsMsgArray] = js.undefined
   /**
     * don't allow empty strings
     */
@@ -168,9 +162,7 @@ trait DefineValidateOptions
   /**
     * check the value is not one of these
     */
-  var notIn: js.UndefOr[
-    js.Array[js.Array[java.lang.String]] | sequelizeLib.Anon_MsgArgsStringArray_1525276583
-  ] = js.undefined
+  var notIn: js.UndefOr[js.Array[js.Array[java.lang.String]] | sequelizeLib.Anon_ArgsMsg] = js.undefined
   /**
     * won't allow null
     */

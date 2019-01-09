@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class TextBufferGeometry protected () extends ExtrudeBufferGeometry {
   def this(text: java.lang.String) = this()
   def this(text: java.lang.String, parameters: TextGeometryParameters) = this()
-  var parameters: threeLib.Anon_SizeBevelEnabled = js.native
+  var parameters: threeLib.Anon_BevelEnabled = js.native
 }
 

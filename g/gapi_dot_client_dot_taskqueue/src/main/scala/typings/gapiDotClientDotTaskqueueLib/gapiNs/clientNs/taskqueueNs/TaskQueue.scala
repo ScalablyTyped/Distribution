@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TaskQueue extends js.Object {
   /** ACLs that are applicable to this TaskQueue object. */
-  var acl: js.UndefOr[gapiDotClientDotTaskqueueLib.Anon_ProducerEmails] = js.undefined
+  var acl: js.UndefOr[gapiDotClientDotTaskqueueLib.Anon_AdminEmails] = js.undefined
   /** Name of the taskqueue. */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /** The kind of REST object returned, in this case taskqueue. */

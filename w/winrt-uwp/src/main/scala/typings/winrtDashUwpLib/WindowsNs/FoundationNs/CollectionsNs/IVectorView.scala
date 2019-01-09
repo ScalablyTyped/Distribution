@@ -22,7 +22,7 @@ trait IVectorView[T]
     * Retrieves the items that start at the specified index in the vector view.
     * @param startIndex The zero-based index of the start of the items in the vector view.
     */
-  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValueT[T] = js.native
+  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_Items[T] = js.native
   def indexOf(value: T, extra: js.Any*): winrtDashUwpLib.Anon_Index = js.native
   /**
     * Retrieves the index of a specified item in the vector view.

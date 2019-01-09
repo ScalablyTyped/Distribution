@@ -21,7 +21,7 @@ trait CustomDimension extends js.Object {
   /** Name of the custom dimension. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** Parent link for the custom dimension. Points to the property to which the custom dimension belongs. */
-  var parentLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Type] = js.undefined
+  var parentLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Href] = js.undefined
   /** Scope of the custom dimension: HIT, SESSION, USER or PRODUCT. */
   var scope: js.UndefOr[java.lang.String] = js.undefined
   /** Link for the custom dimension */

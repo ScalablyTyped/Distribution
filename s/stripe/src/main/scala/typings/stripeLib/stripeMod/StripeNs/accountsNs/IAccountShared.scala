@@ -61,7 +61,7 @@ trait IAccountShared extends js.Object {
     * and when they are paid out to an external account.
     * See our Setting Bank and Debit Card Payouts documentation for details.
     */
-  var payout_schedule: js.UndefOr[stripeLib.Anon_Monthlyanchor] = js.undefined
+  var payout_schedule: js.UndefOr[stripeLib.Anon_Daily] = js.undefined
   /**
     * The text that appears on the bank account statement for payouts.
     * If not set, this defaults to the platform’s bank descriptor as set in the Dashboard.
@@ -97,6 +97,6 @@ trait IAccountShared extends js.Object {
     * accepted it. See our updating managed accounts guide for more
     * information
     */
-  var tos_acceptance: js.UndefOr[stripeLib.Anon_DateIp] = js.undefined
+  var tos_acceptance: js.UndefOr[stripeLib.Anon_Date] = js.undefined
 }
 

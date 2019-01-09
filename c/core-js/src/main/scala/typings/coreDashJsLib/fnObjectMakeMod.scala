@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/object/make", JSImport.Namespace)
 @js.native
 object fnObjectMakeMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_Proto]
+  extends org.scalablytyped.runtime.TopLevel[Anon_MixinProto]
 

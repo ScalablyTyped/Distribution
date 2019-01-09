@@ -14,7 +14,7 @@ trait IIterator[T] extends js.Object {
   /**
     * Retrieves all items in the collection.
     */
-  def getMany(): winrtDashUwpLib.Anon_ItemsReturnValueT[T]
+  def getMany(): winrtDashUwpLib.Anon_Items[T]
   /**
     * Advances the iterator to the next item in the collection.
     * @return True if the iterator refers to a valid item in the collection; false if the iterator passes the end of the collection.

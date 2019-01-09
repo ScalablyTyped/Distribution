@@ -13,7 +13,7 @@ trait EnvironmentState extends js.Object {
     */
   val allSettings: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NamespaceResource]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameNamespaceResource]]
     ]
   ] = js.undefined
   /**
@@ -91,7 +91,7 @@ trait EnvironmentState extends js.Object {
     */
   val settings: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NamespaceResource]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameNamespaceResource]]
     ]
   ] = js.undefined
   /**

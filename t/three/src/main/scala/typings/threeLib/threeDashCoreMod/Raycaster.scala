@@ -65,6 +65,6 @@ class Raycaster () extends js.Object {
     * @param coords 2D coordinates of the mouse, in normalized device coordinates (NDC)---X and Y components should be between -1 and 1.
     * @param camera camera from which the ray should originate
     */
-  def setFromCamera(coords: threeLib.Anon_Y, camera: Camera): scala.Unit = js.native
+  def setFromCamera(coords: threeLib.Anon_X, camera: Camera): scala.Unit = js.native
 }
 

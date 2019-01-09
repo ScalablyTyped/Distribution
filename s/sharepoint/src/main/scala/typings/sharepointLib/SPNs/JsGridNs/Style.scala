@@ -12,7 +12,7 @@ class Style () extends js.Object
 @JSGlobal("SP.JsGrid.Style")
 @js.native
 object Style extends js.Object {
-  var Type: sharepointLib.Anon_TimescaleTier = js.native
+  var Type: sharepointLib.Anon_Cell = js.native
   def ApplyCellStyle(td: stdLib.HTMLTableCellElement, style: js.Any): scala.Unit = js.native
   def ApplyColumnContextMenuStyle(domObj: stdLib.HTMLElement, style: js.Any): scala.Unit = js.native
   def ApplyCornerHeaderBorderStyle(domObj: stdLib.HTMLElement, colStyle: js.Any, rowStyle: js.Any): scala.Unit = js.native

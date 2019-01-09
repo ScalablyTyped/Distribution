@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "ProgressBar")
 @js.native
 class ProgressBar ()
-  extends Component[reactDashOnsenuiLib.Anon_IndeterminateValue, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_Indeterminate, js.Any]
 

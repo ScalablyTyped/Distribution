@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Database[Content /* <: js.Object */] extends js.Object {
-  var replicate: pouchdbDashReplicationLib.Anon_From = js.native
+  var replicate: pouchdbDashReplicationLib.Anon_Callback = js.native
   /**
     * Sync data from src to target and target to src. This is a convenience method for bidirectional data replication.
     *

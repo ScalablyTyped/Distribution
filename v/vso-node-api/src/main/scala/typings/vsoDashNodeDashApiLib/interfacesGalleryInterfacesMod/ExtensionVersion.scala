@@ -12,7 +12,7 @@ trait ExtensionVersion extends js.Object {
   var files: js.Array[ExtensionFile]
   var flags: ExtensionVersionFlags
   var lastUpdated: stdLib.Date
-  var properties: js.Array[vsoDashNodeDashApiLib.Anon_Key]
+  var properties: js.Array[vsoDashNodeDashApiLib.Anon_KeyValueString]
   var validationResultMessage: java.lang.String
   var version: java.lang.String
   var versionDescription: java.lang.String

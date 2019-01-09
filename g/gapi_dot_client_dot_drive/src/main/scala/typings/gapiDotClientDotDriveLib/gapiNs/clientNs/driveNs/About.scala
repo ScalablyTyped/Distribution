@@ -25,7 +25,7 @@ trait About extends js.Object {
   /** The user's storage quota limits and usage. All fields are measured in bytes. */
   var storageQuota: js.UndefOr[gapiDotClientDotDriveLib.Anon_Limit] = js.undefined
   /** A list of themes that are supported for Team Drives. */
-  var teamDriveThemes: js.UndefOr[js.Array[gapiDotClientDotDriveLib.Anon_ColorRgb]] = js.undefined
+  var teamDriveThemes: js.UndefOr[js.Array[gapiDotClientDotDriveLib.Anon_BackgroundImageLink]] = js.undefined
   /** The authenticated user. */
   var user: js.UndefOr[User] = js.undefined
 }

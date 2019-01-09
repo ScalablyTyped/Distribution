@@ -9,6 +9,6 @@ trait TemplateElement extends Node {
   var tail: scala.Boolean
   @JSName("type")
   var type_TemplateElement: babelDashTypesLib.babelDashTypesLibStrings.TemplateElement
-  var value: babelDashTypesLib.Anon_RawCooked
+  var value: babelDashTypesLib.Anon_Cooked
 }
 

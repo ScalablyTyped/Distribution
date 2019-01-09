@@ -581,7 +581,7 @@ object mat4Ns extends js.Object {
     */
   def perspectiveFromFieldOfView(
     out: adoneLib.adoneNs.mathNs.matrixNs.INs.mat4,
-    fov: adoneLib.Anon_UpDegrees,
+    fov: adoneLib.Anon_DownDegrees,
     near: scala.Double,
     far: scala.Double
   ): adoneLib.adoneNs.mathNs.matrixNs.INs.mat4 = js.native

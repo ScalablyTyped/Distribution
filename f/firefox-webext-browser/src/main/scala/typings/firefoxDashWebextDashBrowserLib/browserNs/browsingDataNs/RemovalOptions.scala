@@ -15,7 +15,7 @@ trait RemovalOptions extends js.Object {
     * it defaults to clearing only "unprotected" origins. Please ensure that you _really_ want to remove
     * application data before adding 'protectedWeb' or 'extensions'.
     */
-  var originTypes: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_ProtectedWeb] = js.undefined
+  var originTypes: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_Extension] = js.undefined
   /**
     * Remove data accumulated on or after this date, represented in milliseconds since the epoch (accessible via
     * the `getTime` method of the JavaScript `Date` object). If absent, defaults to 0 (which would remove all

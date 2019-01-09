@@ -7,16 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Document extends js.Object {
   var document: graphqlLib.languageAstMod.DocumentNode
-  var mutationId: java.lang.String
-  var optimisticResponse: js.UndefOr[js.Object | js.Function]
-  var update: js.UndefOr[
-    js.Function2[
-      /* proxy */ apolloDashCacheLib.libTypesDataProxyMod.DataProxy, 
-      /* mutationResult */ js.Object, 
-      scala.Unit
-    ]
-  ]
-  var updateQueries: org.scalablytyped.runtime.StringDictionary[apolloDashClientLib.dataStoreMod.QueryWithUpdater]
-  var variables: js.Any
+  var previousResult: js.Any
+  var variables: js.UndefOr[apolloDashClientLib.coreTypesMod.OperationVariables]
 }
 

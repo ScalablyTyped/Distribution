@@ -2292,7 +2292,7 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
   /**
     * @see _.noConflict
     */
-  def noConflict(): LoDashStatic = js.native
+  def noConflict(): js.Any = js.native
   /**
     * @see _.noop
     */

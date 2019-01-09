@@ -10,7 +10,7 @@ trait CollectionProperties extends js.Object {
   var isSystem: scala.Boolean
   var isVolatile: scala.Boolean
   var journalSize: scala.Double
-  var keyOptions: js.UndefOr[arangodbLib.Anon_AllowUserKeys] = js.undefined
+  var keyOptions: js.UndefOr[arangodbLib.Anon_AllowUserKeysIncrement] = js.undefined
   var numberOfShards: js.UndefOr[scala.Double] = js.undefined
   var replicationFactor: js.UndefOr[scala.Double] = js.undefined
   var shardKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined

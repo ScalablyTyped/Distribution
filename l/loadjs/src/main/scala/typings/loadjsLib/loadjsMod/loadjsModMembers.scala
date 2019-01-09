@@ -19,13 +19,13 @@ object loadjsModMembers extends js.Object {
   ): scala.Unit = js.native
   def done(bundleId: java.lang.String): scala.Unit = js.native
   def isDefined(bundleId: java.lang.String): scala.Boolean = js.native
-  def ready(bundleIds: java.lang.String, optionsOrCallback: loadjsLib.loadjsMod.loadjsNs.LoadedFn): loadjsLib.Anon_Files = js.native
-  def ready(bundleIds: java.lang.String, optionsOrCallback: loadjsLib.loadjsMod.loadjsNs.ReadyOptions): loadjsLib.Anon_Files = js.native
-  def ready(bundleIds: js.Array[java.lang.String], optionsOrCallback: loadjsLib.loadjsMod.loadjsNs.LoadedFn): loadjsLib.Anon_Files = js.native
+  def ready(bundleIds: java.lang.String, optionsOrCallback: loadjsLib.loadjsMod.loadjsNs.LoadedFn): loadjsLib.Anon_BundleId = js.native
+  def ready(bundleIds: java.lang.String, optionsOrCallback: loadjsLib.loadjsMod.loadjsNs.ReadyOptions): loadjsLib.Anon_BundleId = js.native
+  def ready(bundleIds: js.Array[java.lang.String], optionsOrCallback: loadjsLib.loadjsMod.loadjsNs.LoadedFn): loadjsLib.Anon_BundleId = js.native
   def ready(
     bundleIds: js.Array[java.lang.String],
     optionsOrCallback: loadjsLib.loadjsMod.loadjsNs.ReadyOptions
-  ): loadjsLib.Anon_Files = js.native
+  ): loadjsLib.Anon_BundleId = js.native
   def reset(): scala.Unit = js.native
 }
 

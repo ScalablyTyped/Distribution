@@ -29,7 +29,7 @@ object srcViewUtilModMembers extends js.Object {
     bindingIdx: scala.Double,
     value: js.Any
   ): scala.Unit = js.native
-  def createRendererType2(values: atAngularCoreLib.Anon_Encapsulation): atAngularCoreLib.srcRenderApiMod.RendererType2 = js.native
+  def createRendererType2(values: atAngularCoreLib.Anon_Data): atAngularCoreLib.srcRenderApiMod.RendererType2 = js.native
   def declaredViewContainer(view: atAngularCoreLib.srcViewTypesMod.ViewData): atAngularCoreLib.srcViewTypesMod.ElementData | scala.Null = js.native
   def dispatchEvent(
     view: atAngularCoreLib.srcViewTypesMod.ViewData,
@@ -85,12 +85,12 @@ object srcViewUtilModMembers extends js.Object {
     deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
     sourceName: java.lang.String
   ): js.Array[atAngularCoreLib.srcViewTypesMod.DepDef] = js.native
-  def splitMatchedQueriesDsl(): atAngularCoreLib.Anon_References = js.native
+  def splitMatchedQueriesDsl(): atAngularCoreLib.Anon_MatchedQueries = js.native
   def splitMatchedQueriesDsl(
     matchedQueriesDsl: js.Array[
       js.Tuple2[java.lang.String | scala.Double, atAngularCoreLib.srcViewTypesMod.QueryValueType]
     ]
-  ): atAngularCoreLib.Anon_References = js.native
+  ): atAngularCoreLib.Anon_MatchedQueries = js.native
   def splitNamespace(name: java.lang.String): js.Array[java.lang.String] = js.native
   def tokenKey(token: js.Any): java.lang.String = js.native
   def unwrapValue(

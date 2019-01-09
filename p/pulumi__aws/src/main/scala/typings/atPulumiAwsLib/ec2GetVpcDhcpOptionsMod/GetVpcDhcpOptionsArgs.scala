@@ -13,7 +13,7 @@ trait GetVpcDhcpOptionsArgs extends js.Object {
   /**
     * List of custom filters as described below.
     */
-  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_Values]] = js.undefined
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   val tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

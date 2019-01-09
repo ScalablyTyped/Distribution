@@ -39,7 +39,7 @@ class Association protected ()
   /**
     * An output location block. Output Location is documented below.
     */
-  val outputLocation: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_S3KeyPrefixS3BucketNameString]] = js.native
+  val outputLocation: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_S3BucketName]] = js.native
   /**
     * A block of arbitrary string parameters to pass to the SSM document.
     */
@@ -51,7 +51,7 @@ class Association protected ()
   /**
     * A block containing the targets of the SSM association. Targets are documented below. AWS currently supports a maximum of 5 targets.
     */
-  val targets: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ValuesKey]] = js.native
+  val targets: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_KeyValues]] = js.native
 }
 
 @JSImport("@pulumi/aws/ssm/association", "Association")

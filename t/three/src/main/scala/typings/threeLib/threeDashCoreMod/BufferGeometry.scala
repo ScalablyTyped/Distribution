@@ -14,12 +14,12 @@ class BufferGeometry () extends EventDispatcher {
   var attributes: org.scalablytyped.runtime.StringDictionary[BufferAttribute | InterleavedBufferAttribute] = js.native
   var boundingBox: Box3 = js.native
   var boundingSphere: Sphere = js.native
-  var drawRange: threeLib.Anon_CountStartNumber = js.native
+  var drawRange: threeLib.Anon_CountStart = js.native
   /**
     * @deprecated Use {@link BufferGeometry#groups .groups} instead.
     */
   var drawcalls: js.Any = js.native
-  var groups: js.Array[threeLib.Anon_CountStart] = js.native
+  var groups: js.Array[threeLib.Anon_CountMaterialIndex] = js.native
   /**
     * Unique number of this buffergeometry instance
     */

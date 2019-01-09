@@ -18,7 +18,7 @@ class geometry () extends js.Object {
   	 * the 0-based index of the set the point was added to and idx is the
   	 * 0-based index of the point in its set.
   	 */
-  def addPointToLastSet(pt: point): mapsjsLib.Anon_SetIdx = js.native
+  def addPointToLastSet(pt: point): mapsjsLib.Anon_Idx = js.native
   /**
   	 * Tests whether this geometry contains a given point/
   	 * @param {point} pt The reference point.
@@ -41,8 +41,8 @@ class geometry () extends js.Object {
   	 * index of the point in the set, pt is the point object, and distance
   	 * is the distance of the point to the reference point in map units.
   	 */
-  def findNearestSegment(pt: point): mapsjsLib.Anon_PtIdx = js.native
-  def findNearestSegment(pt: point, close: scala.Boolean): mapsjsLib.Anon_PtIdx = js.native
+  def findNearestSegment(pt: point): mapsjsLib.Anon_Distance = js.native
+  def findNearestSegment(pt: point, close: scala.Boolean): mapsjsLib.Anon_Distance = js.native
   /**
   	 * Finds the point in this geometry nearest to the given point.
   	 * @param {point} pt Reference point.
@@ -51,7 +51,7 @@ class geometry () extends js.Object {
   	 * index of the point in the set, pt is the point object, and distance
   	 * is the distance of the point to the reference point in map units.
   	 */
-  def findNearestVertex(pt: point): mapsjsLib.Anon_PtIdx = js.native
+  def findNearestVertex(pt: point): mapsjsLib.Anon_Distance = js.native
   /**
   	 * Iterates every vertex in the geometry and passes to the supplied 
   	 * callback. Return true from in the callback will break the iteration.

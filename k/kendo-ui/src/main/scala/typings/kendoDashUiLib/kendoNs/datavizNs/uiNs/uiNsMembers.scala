@@ -9,13 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object uiNsMembers extends js.Object {
   def plugin(widget: js.Any): scala.Unit = js.native
-  def plugin(
-    widget: org.scalablytyped.runtime.Instantiable2[
-      /* element */ stdLib.Element, 
-      /* options */ js.UndefOr[/* options */ js.Object], 
-      kendoDashUiLib.kendoNs.uiNs.Widget
-    ]
-  ): scala.Unit = js.native
+  def plugin(widget: kendoDashUiLib.Anon_Element): scala.Unit = js.native
   def registerTheme(name: java.lang.String, options: js.Any): scala.Unit = js.native
 }
 

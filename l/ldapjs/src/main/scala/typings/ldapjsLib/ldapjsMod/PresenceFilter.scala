@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ldapjs", "PresenceFilter")
 @js.native
 class PresenceFilter protected () extends Filter {
-  def this(options: ldapjsLib.Anon_Attribute) = this()
+  def this(options: ldapjsLib.Anon_AttributeString) = this()
   /* CompleteClass */
   override var `type`: java.lang.String = js.native
   /* CompleteClass */

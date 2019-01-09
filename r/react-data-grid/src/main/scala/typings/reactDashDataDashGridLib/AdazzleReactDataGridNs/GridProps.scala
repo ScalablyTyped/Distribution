@@ -100,16 +100,12 @@ trait GridProps[T] extends js.Object {
     * Called when a cell is deselected.
     * @param coordinates The row and column indices of the deselected cell.
     */
-  var onCellDeSelected: js.UndefOr[
-    js.Function1[/* coordinates */ reactDashDataDashGridLib.Anon_RowIdxIdx, scala.Unit]
-  ] = js.undefined
+  var onCellDeSelected: js.UndefOr[js.Function1[/* coordinates */ reactDashDataDashGridLib.Anon_Idx, scala.Unit]] = js.undefined
   /**
     * Called when a cell is selected.
     * @param coordinates The row and column indices of the selected cell.
     */
-  var onCellSelected: js.UndefOr[
-    js.Function1[/* coordinates */ reactDashDataDashGridLib.Anon_RowIdxIdx, scala.Unit]
-  ] = js.undefined
+  var onCellSelected: js.UndefOr[js.Function1[/* coordinates */ reactDashDataDashGridLib.Anon_Idx, scala.Unit]] = js.undefined
   /**
     * Invoked when the user pulls down the drag handle of an editable cell.
     * Should update the values of the selected cells.
@@ -212,7 +208,7 @@ trait GridProps[T] extends js.Object {
   /**
     * Options object for selecting rows
     */
-  var rowSelection: js.UndefOr[reactDashDataDashGridLib.Anon_ShowCheckbox[T]] = js.undefined
+  var rowSelection: js.UndefOr[reactDashDataDashGridLib.Anon_EnableShiftSelect[T]] = js.undefined
   /**
     * The total number of rows to render. Required.
     */

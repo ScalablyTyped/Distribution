@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait LayoutAnimationStatic extends js.Object {
-  var Presets: reactDashNativeLib.Anon_Spring = js.native
+  var Presets: reactDashNativeLib.Anon_EaseInEaseOut = js.native
   var Properties: LayoutAnimationProperties = js.native
   var Types: LayoutAnimationTypes = js.native
   def configChecker(shapeTypes: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any = js.native

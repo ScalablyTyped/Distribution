@@ -13,7 +13,7 @@ class AssistantApp () extends js.Object {
     * @actionssdk
     * @dialogflow
     */
-  val BuiltInArgNames: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof actions-on-google.actions-on-google/assistant-app.BuiltInArgNames */ js.Any = js.native
+  val BuiltInArgNames: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BuiltInArgNames */ js.Any = js.native
   /**
     * List of possible conversation stages, as defined in the
     * {@link https://developers.google.com/actions/reference/conversation#Conversation|Conversation object}.
@@ -21,64 +21,64 @@ class AssistantApp () extends js.Object {
     * @dialogflow
     * @deprecated Use {@link ConversationTypes} instead.
     */
-  val ConversationStages: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof actions-on-google.actions-on-google/assistant-app.ConversationTypes */ js.Any = js.native
+  val ConversationStages: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConversationTypes */ js.Any = js.native
   /**
     * List of possible conversation types, as defined in the
     * {@link https://developers.google.com/actions/reference/conversation#Conversation|Conversation object}.
     * @actionssdk
     * @dialogflow
     */
-  val ConversationTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof actions-on-google.actions-on-google/assistant-app.ConversationTypes */ js.Any = js.native
+  val ConversationTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ConversationTypes */ js.Any = js.native
   /**
     * SKU (Stock Keeping Units) types for Play Package Entitlements.
     */
-  val EntitlementSkuTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof actions-on-google.actions-on-google/assistant-app.EntitlementSkuTypes */ js.Any = js.native
+  val EntitlementSkuTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EntitlementSkuTypes */ js.Any = js.native
   /**
     * Values related to supporting {@link ImageDisplays}.
     */
-  val ImageDisplays: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof actions-on-google.actions-on-google/response-builder.ImageDisplays */ js.Any = js.native
+  val ImageDisplays: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ImageDisplays */ js.Any = js.native
   /**
     * List of possible user input types.
     * @actionssdk
     * @dialogflow
     */
-  val InputTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof actions-on-google.actions-on-google/assistant-app.InputTypes */ js.Any = js.native
+  val InputTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof InputTypes */ js.Any = js.native
   /**
     * Values related to supporting {@link Media}.
     */
-  val Media: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof actions-on-google.actions-on-google/response-builder.MediaValues */ js.Any = js.native
+  val Media: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MediaValues */ js.Any = js.native
   /**
     * List of possible sign in result status values.
     * @actionssdk
     * @dialogflow
     */
-  val SignInStatus: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof actions-on-google.actions-on-google/assistant-app.SignInStatus */ js.Any = js.native
+  val SignInStatus: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SignInStatus */ js.Any = js.native
   /**
     * List of standard intents that the app provides.
     * @actionssdk
     * @dialogflow
     */
-  val StandardIntents: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof actions-on-google.actions-on-google/assistant-app.StandardIntents */ js.Any = js.native
+  val StandardIntents: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof StandardIntents */ js.Any = js.native
   /**
     * List of supported permissions the app supports.
     * @actionssdk
     * @dialogflow
     */
-  val SupportedPermissions: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof actions-on-google.actions-on-google/assistant-app.SupportedPermissions */ js.Any = js.native
+  val SupportedPermissions: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SupportedPermissions */ js.Any = js.native
   /**
     * List of surface capabilities supported by the app.
     * @actionssdk
     * @dialogflow
     */
-  val SurfaceCapabilities: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof actions-on-google.actions-on-google/assistant-app.SurfaceCapabilities */ js.Any = js.native
+  val SurfaceCapabilities: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SurfaceCapabilities */ js.Any = js.native
   /**
     * Possible update trigger time context frequencies.
     */
-  val TimeContextFrequency: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof actions-on-google.actions-on-google/assistant-app.TimeContextFrequency */ js.Any = js.native
+  val TimeContextFrequency: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TimeContextFrequency */ js.Any = js.native
   /**
     * Values related to supporting {@link Transactions}.
     */
-  val Transactions: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof actions-on-google.actions-on-google/transactions.TransactionValues */ js.Any = js.native
+  val Transactions: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TransactionValues */ js.Any = js.native
   /**
     * The session data in JSON format.
     */

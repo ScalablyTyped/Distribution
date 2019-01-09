@@ -20,9 +20,9 @@ trait TimerMixin extends js.Object {
   @JSName("setImmediate")
   var setImmediate_Original: js.Function1[/* handler */ js.Function1[/* repeated */ js.Any, scala.Unit], scala.Double] = js.native
   @JSName("setInterval")
-  var setInterval_Original: reactDashNativeLib.Anon_Handler = js.native
+  var setInterval_Original: reactDashNativeLib.Anon_ArgsHandler = js.native
   @JSName("setTimeout")
-  var setTimeout_Original: reactDashNativeLib.Anon_Handler = js.native
+  var setTimeout_Original: reactDashNativeLib.Anon_ArgsHandler = js.native
   def cancelAnimationFrame(handle: scala.Double): scala.Unit = js.native
   def clearImmediate(handle: scala.Double): scala.Unit = js.native
   def clearInterval(handle: scala.Double): scala.Unit = js.native

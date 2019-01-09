@@ -36,7 +36,7 @@ class WorkbookCreated ()
   def load(): WorkbookCreated = js.native
   def load(option: java.lang.String): WorkbookCreated = js.native
   def load(option: js.Array[java.lang.String]): WorkbookCreated = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): WorkbookCreated = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): WorkbookCreated = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.WorkbookCreated object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookCreatedData`) that contains shallow copies of any loaded child properties from the original object.

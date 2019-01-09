@@ -23,7 +23,7 @@ object scryptsyMod extends js.Object {
     r: scala.Double,
     p: scala.Double,
     dkLen: scala.Double,
-    progressCallback: js.Function1[/* status */ scryptsyLib.Anon_Total, scala.Unit]
+    progressCallback: js.Function1[/* status */ scryptsyLib.Anon_Current, scala.Unit]
   ): nodeLib.Buffer = js.native
 }
 

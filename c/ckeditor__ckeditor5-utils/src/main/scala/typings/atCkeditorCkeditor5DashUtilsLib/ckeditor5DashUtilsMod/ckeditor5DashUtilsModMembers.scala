@@ -11,7 +11,7 @@ object ckeditor5DashUtilsModMembers extends js.Object {
   val DOCUMENTATION_URL: java.lang.String = js.native
   val EmitterMixin: Emitter = js.native
   val ObservableMixin: Observable = js.native
-  val keyCodes: atCkeditorCkeditor5DashUtilsLib.Anon_Esc = js.native
+  val keyCodes: atCkeditorCkeditor5DashUtilsLib.Anon_0 = js.native
   def add(
     language: java.lang.String,
     translations: org.scalablytyped.runtime.StringDictionary[java.lang.String]

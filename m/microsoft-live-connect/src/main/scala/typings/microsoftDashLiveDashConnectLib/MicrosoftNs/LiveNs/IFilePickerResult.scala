@@ -12,6 +12,6 @@ trait IFilePickerResult extends js.Object {
   /**
     * Contains data concerning the user's picked files.
     */
-  var data: microsoftDashLiveDashConnectLib.Anon_Folders
+  var data: microsoftDashLiveDashConnectLib.Anon_Files
 }
 

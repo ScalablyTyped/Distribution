@@ -9,7 +9,7 @@ trait TransitionsOptions extends js.Object {
   var create: js.UndefOr[
     js.Function2[
       /* props */ java.lang.String | js.Array[java.lang.String], 
-      /* options */ js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.Anon_Easing]], 
+      /* options */ js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.Anon_Delay]], 
       java.lang.String
     ]
   ] = js.undefined

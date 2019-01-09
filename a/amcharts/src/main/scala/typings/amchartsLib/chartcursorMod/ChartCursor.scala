@@ -104,7 +104,7 @@ trait ChartCursor extends js.Object {
     * "selected", "zoomed", "zoomStarted".
     * @param handler The event handler.
     */
-  def addListener(`type`: java.lang.String, handler: js.Function1[/* e */ amchartsLib.Anon_Delta2Y, scala.Unit]): scala.Unit = js.native
+  def addListener(`type`: java.lang.String, handler: js.Function1[/* e */ amchartsLib.Anon_ChartDelta2X, scala.Unit]): scala.Unit = js.native
   /**
     * Hides cursor.
     */

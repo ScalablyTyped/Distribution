@@ -993,7 +993,7 @@ class Range ()
   def load(): Range = js.native
   def load(option: java.lang.String): Range = js.native
   def load(option: js.Array[java.lang.String]): Range = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Range = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Range = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.RangeLoadOptions): Range = js.native
   /**
     *

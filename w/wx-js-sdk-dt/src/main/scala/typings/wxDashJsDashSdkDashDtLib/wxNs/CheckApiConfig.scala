@@ -17,6 +17,6 @@ trait CheckApiConfig extends js.Object {
     * 以键值对的形式返回，可用的 api 值 true，不可用为 false
     * 如：{"checkResult":{"chooseImage":true},"errMsg":"checkJsApi:ok"}
     */
-  def success(res: wxDashJsDashSdkDashDtLib.Anon_ErrMsg): scala.Unit
+  def success(res: wxDashJsDashSdkDashDtLib.Anon_CheckResult): scala.Unit
 }
 

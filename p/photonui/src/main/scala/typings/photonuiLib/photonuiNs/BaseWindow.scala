@@ -15,7 +15,7 @@ class BaseWindow () extends Container {
   var minHeight: scala.Double = js.native
   var minWidth: scala.Double = js.native
   var padding: scala.Double = js.native
-  var position: photonuiLib.Anon_Y = js.native
+  var position: photonuiLib.Anon_X = js.native
   var width: scala.Double = js.native
   var x: scala.Double = js.native
   var y: scala.Double = js.native

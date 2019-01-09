@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Get extends js.Object {
-  @JSName("add")
-  def add_id(
-    emoji: stdLib.Pick[
-      emojiDashMartLib.distDashEsUtilsEmojiDashIndexNimbleDashEmojiDashIndexMod.EmojiData, 
-      emojiDashMartLib.emojiDashMartLibStrings.id
-    ]
-  ): scala.Unit
-  def get(perLine: scala.Double): js.Array[java.lang.String]
+  def get(key: java.lang.String): js.Any = js.native
+  def set(key: java.lang.String, value: js.Any): scala.Unit = js.native
+  def setHandlers(): scala.Unit = js.native
+  def setHandlers(handlers: emojiDashMartLib.distDashEsUtilsStoreMod.StoreHandlers): scala.Unit = js.native
+  def setNamespace(namespace: java.lang.String): scala.Unit = js.native
+  def update(state: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
 }
 

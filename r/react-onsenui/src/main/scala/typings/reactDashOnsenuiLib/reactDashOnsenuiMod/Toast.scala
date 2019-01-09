@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Toast")
 @js.native
 class Toast ()
-  extends Component[reactDashOnsenuiLib.Anon_OnPostShowOnPreHide, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_AnimationAnimationOptionsAscend, js.Any]
 

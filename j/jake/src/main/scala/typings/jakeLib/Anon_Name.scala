@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Name
-  extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var quiet: scala.Boolean
+@js.native
+trait Anon_Name extends js.Object {
+  def apply(name: java.lang.String): java.lang.String = js.native
 }
 

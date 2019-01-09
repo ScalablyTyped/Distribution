@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Add extends js.Object {
-  var add: js.Function0[scala.Unit]
+  def add(): scala.Unit
 }
 

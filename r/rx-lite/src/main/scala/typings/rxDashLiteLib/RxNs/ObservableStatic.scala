@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ObservableStatic extends js.Object {
   @JSName("fromCallback")
-  var fromCallback_Original: rxDashLiteLib.Anon_Func = js.native
+  var fromCallback_Original: rxDashLiteLib.Anon_Arg1 = js.native
   @JSName("fromNodeCallback")
-  var fromNodeCallback_Original: rxDashLiteLib.Anon_FuncCallback = js.native
+  var fromNodeCallback_Original: rxDashLiteLib.Anon_Arg1Arg2 = js.native
   def `catch`[T](sources: (rxDashCoreLib.RxNs.IPromise[T] | Observable[T])*): Observable[T] = js.native
       // alias for throw
   def `catch`[T](sources: js.Array[rxDashCoreLib.RxNs.IPromise[T] | Observable[T]]): Observable[T] = js.native

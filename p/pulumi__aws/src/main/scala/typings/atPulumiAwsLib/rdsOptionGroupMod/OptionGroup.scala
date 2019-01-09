@@ -45,7 +45,7 @@ class OptionGroup protected ()
   /**
     * A list of Options to apply.
     */
-  val options: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_VpcSecurityGroupMemberships]]] = js.native
+  val options: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DbSecurityGroupMemberships]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

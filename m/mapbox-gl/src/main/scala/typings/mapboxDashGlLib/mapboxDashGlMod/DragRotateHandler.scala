@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class DragRotateHandler protected ()
   extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.DragRotateHandler {
   def this(map: mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Map) = this()
-  def this(map: mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Map, options: mapboxDashGlLib.Anon_PitchWithRotate) = this()
+  def this(map: mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Map, options: mapboxDashGlLib.Anon_BearingSnap) = this()
   /* CompleteClass */
   override def disable(): scala.Unit = js.native
   /* CompleteClass */

@@ -9,12 +9,10 @@ import scala.scalajs.js.annotation._
   * @todo describe
   */
 trait Pointer extends js.Object {
-  var handle: js.UndefOr[echartsLib.Anon_ShadowOffsetXMargin] = js.undefined
+  var handle: js.UndefOr[echartsLib.Anon_ColorIcon] = js.undefined
   var label: js.UndefOr[PointerLabel] = js.undefined
-  var lineStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColor] = js.undefined
-  var shadowStyle: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColorOpacityShadowOffsetYNumberString
-  ] = js.undefined
+  var lineStyle: js.UndefOr[echartsLib.Anon_ColorOpacityShadowBlur] = js.undefined
+  var shadowStyle: js.UndefOr[echartsLib.Anon_ColorOpacityShadowBlurShadowColor] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
   var snap: js.UndefOr[scala.Boolean] = js.undefined
   var status: js.UndefOr[scala.Boolean] = js.undefined

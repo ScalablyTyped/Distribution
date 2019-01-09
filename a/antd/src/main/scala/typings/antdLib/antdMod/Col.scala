@@ -13,6 +13,6 @@ class Col ()
 @JSImport("antd", "Col")
 @js.native
 object Col extends js.Object {
-  var propTypes: antdLib.Anon_Span = js.native
+  var propTypes: antdLib.Anon_Children = js.native
 }
 

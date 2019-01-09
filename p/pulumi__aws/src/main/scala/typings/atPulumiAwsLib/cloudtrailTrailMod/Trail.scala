@@ -45,7 +45,7 @@ class Trail protected ()
   /**
     * Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
     */
-  val eventSelectors: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ReadWriteTypeDataResources]]] = js.native
+  val eventSelectors: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DataResources]]] = js.native
   /**
     * The region in which the trail was created.
     */

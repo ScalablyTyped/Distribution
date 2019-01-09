@@ -11,7 +11,7 @@ trait CreateDomainOptions extends js.Object {
     * currently supports: mongodb, redis, tingodb, couchdb, azuretable, dynamodb and inmemory
     * hint settings like: [eventstore](https://github.com/adrai/node-eventstore#provide-implementation-for-storage)
     */
-  var aggregateLock: js.UndefOr[cqrsDashDomainLib.Anon_Prefix] = js.undefined
+  var aggregateLock: js.UndefOr[cqrsDashDomainLib.Anon_Db] = js.undefined
   /**
     * optional, default is 'commandRejected'
     * will be used if an error occurs and an event should be generated
@@ -23,7 +23,7 @@ trait CreateDomainOptions extends js.Object {
     * currently supports: mongodb, redis, tingodb and inmemory
     * hint settings like: [eventstore](https://github.com/adrai/node-eventstore#provide-implementation-for-storage)
     */
-  var deduplication: js.UndefOr[cqrsDashDomainLib.Anon_PrefixHost] = js.undefined
+  var deduplication: js.UndefOr[cqrsDashDomainLib.Anon_DbHost] = js.undefined
   /**
     * the path to the "working directory"
     * can be structured like
@@ -36,7 +36,7 @@ trait CreateDomainOptions extends js.Object {
     * currently supports: mongodb, redis, tingodb, azuretable and inmemory
     * hint: [eventstore](https://github.com/adrai/node-eventstore#provide-implementation-for-storage)
     */
-  var eventStore: js.UndefOr[cqrsDashDomainLib.Anon_TransactionsCollectionName] = js.undefined
+  var eventStore: js.UndefOr[cqrsDashDomainLib.Anon_AuthSource] = js.undefined
   /**
     * optional, default is 800
     * if using in scaled systems and not guaranteeing that each command for an aggregate instance

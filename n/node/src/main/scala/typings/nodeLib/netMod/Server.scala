@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 class Server ()
   extends nodeLib.eventsMod.EventEmitter {
   def this(connectionListener: js.Function1[/* socket */ Socket, scala.Unit]) = this()
-  def this(options: nodeLib.Anon_PauseOnConnect) = this()
-  def this(options: nodeLib.Anon_PauseOnConnect, connectionListener: js.Function1[/* socket */ Socket, scala.Unit]) = this()
+  def this(options: nodeLib.Anon_AllowHalfOpen) = this()
+  def this(options: nodeLib.Anon_AllowHalfOpen, connectionListener: js.Function1[/* socket */ Socket, scala.Unit]) = this()
   var connections: scala.Double = js.native
   var listening: scala.Boolean = js.native
   var maxConnections: scala.Double = js.native

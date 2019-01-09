@@ -12,7 +12,6 @@ abstract class Route ()
   var editor: Editor = js.native
   /* CompleteClass */
   override var events: yandexDashMapsLib.ymapsNs.IEventManager = js.native
-  var options: yandexDashMapsLib.ymapsNs.IOptionManager = js.native
   def getHumanJamsTime(): java.lang.String = js.native
   def getHumanLength(): java.lang.String = js.native
   def getHumanTime(): java.lang.String = js.native

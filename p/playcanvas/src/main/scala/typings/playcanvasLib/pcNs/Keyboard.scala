@@ -22,7 +22,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Keyboard () extends js.Object {
   def this(element: stdLib.Element) = this()
-  def this(element: stdLib.Element, options: playcanvasLib.Anon_StopPropagation) = this()
+  def this(element: stdLib.Element, options: playcanvasLib.Anon_PreventDefault) = this()
   /**
     * @function
     * @name pc.Keyboard#attach

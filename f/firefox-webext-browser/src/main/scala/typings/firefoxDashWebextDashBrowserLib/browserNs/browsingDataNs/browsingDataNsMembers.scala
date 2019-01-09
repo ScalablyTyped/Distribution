@@ -55,6 +55,6 @@ object browsingDataNsMembers extends js.Object {
     * data types included in this API are not available in the settings UI, and some UI settings control more than one
     * data type listed here.
     */
-  def settings(): js.Promise[firefoxDashWebextDashBrowserLib.Anon_DataToRemove] = js.native
+  def settings(): js.Promise[firefoxDashWebextDashBrowserLib.Anon_DataRemovalPermitted] = js.native
 }
 

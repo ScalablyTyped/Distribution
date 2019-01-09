@@ -11,7 +11,7 @@ trait DeveloperMetadataResource extends js.Object {
     * The caller must specify the spreadsheet ID and the developer metadata's
     * unique metadataId.
     */
-  def get(request: gapiDotClientDotSheetsLib.Anon_AccesstokenPrettyPrintSpreadsheetIdBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[DeveloperMetadata]
+  def get(request: gapiDotClientDotSheetsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[DeveloperMetadata]
   /**
     * Returns all developer metadata matching the specified DataFilter.
     * If the provided DataFilter represents a DeveloperMetadataLookup object,
@@ -19,6 +19,6 @@ trait DeveloperMetadataResource extends js.Object {
     * DataFilter represents a location in a spreadsheet, this will return all
     * developer metadata associated with locations intersecting that region.
     */
-  def search(request: gapiDotClientDotSheetsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchDeveloperMetadataResponse]
+  def search(request: gapiDotClientDotSheetsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[SearchDeveloperMetadataResponse]
 }
 

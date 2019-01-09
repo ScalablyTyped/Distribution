@@ -26,7 +26,7 @@ object pkcs12Ns extends js.Object {
   trait Pkcs12Pfx extends js.Object {
     var safeContents: js.Array[nodeDashForgeLib.Anon_Encrypted]
     var version: java.lang.String
-    def getBags(filter: BagsFilter): nodeDashForgeLib.Anon_Key
+    def getBags(filter: BagsFilter): nodeDashForgeLib.Anon_FriendlyName
     def getBagsByFriendlyName(fiendlyName: java.lang.String, bagType: java.lang.String): js.Array[Bag]
     def getBagsByLocalKeyId(localKeyId: java.lang.String, bagType: java.lang.String): js.Array[Bag]
   }

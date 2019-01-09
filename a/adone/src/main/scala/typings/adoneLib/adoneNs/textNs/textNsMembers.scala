@@ -34,7 +34,7 @@ object textNsMembers extends js.Object {
   def wordwrap(
     str: java.lang.String,
     stop: scala.Double,
-    options: adoneLib.adoneNs.textNs.INs.WordWrapOptions with adoneLib.Anon_Join
+    options: adoneLib.adoneNs.textNs.INs.WordWrapOptions with adoneLib.Anon_FalseJoin
   ): js.Array[java.lang.String] = js.native
   @JSName("wordwrap")
   def wordwrap_String(str: java.lang.String, stop: scala.Double, options: adoneLib.adoneNs.textNs.INs.WordWrapOptions): java.lang.String = js.native

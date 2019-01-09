@@ -7,16 +7,28 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Bytes extends js.Object {
   /**
-    * Total bytes send back to the client
+    * Number of bytes sent by the client
     */
   var bytes: scala.Double
   /**
-    * Bytes sent back to the client since previous call to `.progress()`
+    * The headers sent by the client
     */
-  var bytesDelta: scala.Double
+  var headers: nodeLib.httpMod.IncomingHttpHeaders
   /**
-    * Bytes per second calculated since previous call to `.progress()`
+    * The remote ip
     */
-  var speed: scala.Double
+  var ip: java.lang.String
+  /**
+    * The HTTP method used by the client
+    */
+  var method: java.lang.String
+  /**
+    * The path part of the request URL
+    */
+  var path: java.lang.String
+  /**
+    * The original `http.IncomingMessage` object
+    */
+  var raw: nodeLib.httpMod.IncomingMessage
 }
 

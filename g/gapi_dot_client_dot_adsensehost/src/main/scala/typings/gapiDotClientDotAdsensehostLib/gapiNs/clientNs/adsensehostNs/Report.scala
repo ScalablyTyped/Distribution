@@ -12,7 +12,7 @@ trait Report extends js.Object {
     * The header information of the columns requested in the report. This is a list of headers; one for each dimension in the request, followed by one for
     * each metric in the request.
     */
-  var headers: js.UndefOr[js.Array[gapiDotClientDotAdsensehostLib.Anon_TypeCurrency]] = js.undefined
+  var headers: js.UndefOr[js.Array[gapiDotClientDotAdsensehostLib.Anon_Currency]] = js.undefined
   /** Kind this is, in this case adsensehost#report. */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**

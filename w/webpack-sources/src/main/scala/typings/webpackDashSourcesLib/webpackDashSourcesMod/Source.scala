@@ -19,8 +19,8 @@ abstract class Source () extends js.Object {
   def size(): scala.Double = js.native
   def source(): java.lang.String = js.native
   def source(options: js.Any): java.lang.String = js.native
-  def sourceAndMap(): webpackDashSourcesLib.Anon_Source = js.native
-  def sourceAndMap(options: js.Any): webpackDashSourcesLib.Anon_Source = js.native
+  def sourceAndMap(): webpackDashSourcesLib.Anon_Map = js.native
+  def sourceAndMap(options: js.Any): webpackDashSourcesLib.Anon_Map = js.native
   def updateHash(hash: nodeLib.cryptoMod.Hash): scala.Unit = js.native
 }
 

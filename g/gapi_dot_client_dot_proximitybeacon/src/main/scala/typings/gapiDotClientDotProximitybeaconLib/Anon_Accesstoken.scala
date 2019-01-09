@@ -21,24 +21,12 @@ trait Anon_Accesstoken extends js.Object {
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * Resource name of this namespace. Namespaces names have the format:
-    * <code>namespaces/<var>namespace</var></code>.
-    */
-  var namespaceName: java.lang.String
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-    * The project id of the namespace to update. If the project id is not
-    * specified then the project making the request is used. The project id
-    * must match the project that owns the beacon.
-    * Optional.
-    */
-  var projectId: js.UndefOr[java.lang.String] = js.undefined
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

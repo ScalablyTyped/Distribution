@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cross-spawn", JSImport.Namespace)
 @js.native
 object crossDashSpawnMod extends js.Object {
-  val sync: crossDashSpawnLib.Anon_Command = js.native
+  val sync: crossDashSpawnLib.Anon_Args = js.native
   def apply(command: java.lang.String): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
   def apply(command: java.lang.String, args: js.Array[java.lang.String]): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
   def apply(

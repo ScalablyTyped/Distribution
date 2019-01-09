@@ -26,7 +26,9 @@ trait FieldExpression[T] extends js.Object {
   @JSName("$exists")
   var $exists: js.UndefOr[scala.Boolean] = js.native
   @JSName("$expr")
-  var $expr: js.UndefOr[js.Object] = js.native
+  var $expr: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias meteor.Mongo.FieldExpression<T> */ js.UndefOr[
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias meteor.Mongo.FieldExpression<T> */ js.Object
+  ] = js.native
   @JSName("$geoIntersects")
   var $geoIntersects: js.UndefOr[js.Any] = js.native
   @JSName("$geoWithin")
@@ -54,7 +56,9 @@ trait FieldExpression[T] extends js.Object {
   @JSName("$nin")
   var $nin: js.UndefOr[js.Array[T]] = js.native
   @JSName("$not")
-  var $not: js.UndefOr[js.Object] = js.native
+  var $not: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias meteor.Mongo.FieldExpression<T> */ js.UndefOr[
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias meteor.Mongo.FieldExpression<T> */ js.Object
+  ] = js.native
   @JSName("$options")
   var $options: js.UndefOr[java.lang.String] = js.native
   @JSName("$regex")
@@ -62,7 +66,7 @@ trait FieldExpression[T] extends js.Object {
   @JSName("$size")
   var $size: js.UndefOr[scala.Double] = js.native
   @JSName("$text")
-  var $text: js.UndefOr[meteorLib.Anon_Search] = js.native
+  var $text: js.UndefOr[meteorLib.Anon_CaseSensitive] = js.native
   @JSName("$type")
   var $type: js.UndefOr[js.Array[BsonType] | BsonType] = js.native
   @JSName("$where")

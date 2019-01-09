@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object libEsmComponentsHotkeysHotkeysModMembers extends js.Object {
   def HotkeysTarget[T /* <: atBlueprintjsCoreLib.libEsmCommonConstructorMod.IConstructor[
     atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysTargetMod.IHotkeysTargetComponent
-  ] */](WrappedComponent: T): atBlueprintjsCoreLib.Anon_DisplayName with T = js.native
+  ] */](WrappedComponent: T): atBlueprintjsCoreLib.Anon_ArgsDisplayName with T = js.native
   def comboMatches(
     a: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo,
     b: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo

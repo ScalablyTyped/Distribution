@@ -17,6 +17,6 @@ trait VirtualRouterArgs extends js.Object {
   /**
     * The virtual router specification to apply.
     */
-  val spec: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ServiceNamesInput]
+  val spec: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ServiceNamesArray]
 }
 

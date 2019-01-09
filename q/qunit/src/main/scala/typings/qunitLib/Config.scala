@@ -24,6 +24,6 @@ trait Config extends js.Object {
   var seed: java.lang.String
   var testId: js.Array[java.lang.String]
   var testTimeout: scala.Double
-  var urlConfig: js.Array[Anon_Tooltip]
+  var urlConfig: js.Array[Anon_Id]
 }
 

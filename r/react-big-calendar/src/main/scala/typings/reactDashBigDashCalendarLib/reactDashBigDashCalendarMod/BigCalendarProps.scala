@@ -57,13 +57,13 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   var onSelectSlot: js.UndefOr[js.Function1[/* slotInfo */ reactDashBigDashCalendarLib.Anon_Action, scala.Unit]] = js.undefined
   var onSelecting: js.UndefOr[
     js.Function1[
-      /* range */ reactDashBigDashCalendarLib.Anon_Start, 
+      /* range */ reactDashBigDashCalendarLib.Anon_EndStart, 
       js.UndefOr[scala.Boolean | scala.Null]
     ]
   ] = js.undefined
   var onView: js.UndefOr[js.Function1[/* view */ View, scala.Unit]] = js.undefined
   var popup: js.UndefOr[scala.Boolean] = js.undefined
-  var popupOffset: js.UndefOr[scala.Double | reactDashBigDashCalendarLib.Anon_Y] = js.undefined
+  var popupOffset: js.UndefOr[scala.Double | reactDashBigDashCalendarLib.Anon_X] = js.undefined
   var resourceAccessor: js.UndefOr[java.lang.String] = js.undefined
   var resourceIdAccessor: js.UndefOr[java.lang.String] = js.undefined
   var resourceTitleAccessor: js.UndefOr[java.lang.String] = js.undefined

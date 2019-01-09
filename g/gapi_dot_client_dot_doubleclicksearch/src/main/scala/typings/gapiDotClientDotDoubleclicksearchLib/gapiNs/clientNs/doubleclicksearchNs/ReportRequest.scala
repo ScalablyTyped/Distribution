@@ -15,7 +15,7 @@ trait ReportRequest extends js.Object {
   /** Format that the report should be returned in. Currently csv or tsv is supported. */
   var downloadFormat: js.UndefOr[java.lang.String] = js.undefined
   /** A list of filters to be applied to the report. */
-  var filters: js.UndefOr[js.Array[gapiDotClientDotDoubleclicksearchLib.Anon_Values]] = js.undefined
+  var filters: js.UndefOr[js.Array[gapiDotClientDotDoubleclicksearchLib.Anon_Column]] = js.undefined
   /** Determines if removed entities should be included in the report. Defaults to false. Deprecated, please use includeRemovedEntities instead. */
   var includeDeletedEntities: js.UndefOr[scala.Boolean] = js.undefined
   /** Determines if removed entities should be included in the report. Defaults to false. */
@@ -26,7 +26,7 @@ trait ReportRequest extends js.Object {
     */
   var maxRowsPerFile: js.UndefOr[scala.Double] = js.undefined
   /** Synchronous report only. A list of columns and directions defining sorting to be performed on the report rows. */
-  var orderBy: js.UndefOr[js.Array[gapiDotClientDotDoubleclicksearchLib.Anon_Column]] = js.undefined
+  var orderBy: js.UndefOr[js.Array[gapiDotClientDotDoubleclicksearchLib.Anon_ColumnSortOrder]] = js.undefined
   /**
     * The reportScope is a set of IDs that are used to determine which subset of entities will be returned in the report. The full lineage of IDs from the
     * lowest scoped level desired up through agency is required.
@@ -50,7 +50,7 @@ trait ReportRequest extends js.Object {
     */
   var statisticsCurrency: js.UndefOr[java.lang.String] = js.undefined
   /** If metrics are requested in a report, this argument will be used to restrict the metrics to a specific time range. */
-  var timeRange: js.UndefOr[gapiDotClientDotDoubleclicksearchLib.Anon_StartDate] = js.undefined
+  var timeRange: js.UndefOr[gapiDotClientDotDoubleclicksearchLib.Anon_ChangedAttributesSinceTimestamp] = js.undefined
   /** If true, the report would only be created if all the requested stat data are sourced from a single timezone. Defaults to false. */
   var verifySingleTimeZone: js.UndefOr[scala.Boolean] = js.undefined
 }

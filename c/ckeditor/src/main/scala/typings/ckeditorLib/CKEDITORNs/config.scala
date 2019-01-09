@@ -249,7 +249,7 @@ trait config extends js.Object {
   var templates_replaceContent: js.UndefOr[scala.Boolean] = js.undefined
   var title: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
   var toolbar: js.UndefOr[
-    java.lang.String | (js.Array[java.lang.String | js.Array[java.lang.String] | ckeditorLib.Anon_Items]) | scala.Null
+    java.lang.String | (js.Array[java.lang.String | js.Array[java.lang.String] | ckeditorLib.Anon_Groups]) | scala.Null
   ] = js.undefined
   var toolbarCanCollapse: js.UndefOr[scala.Boolean] = js.undefined
   var toolbarGroupCycling: js.UndefOr[scala.Boolean] = js.undefined

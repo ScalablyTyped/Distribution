@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.utilNs.IAnimate because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait ISprite
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.utilNs.IAnimate because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined animate, getActiveAnimation, hasActiveFx, sequenceFx, stopAnimation, stopFx, syncFx */ trait ISprite
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Method] Adds one or more CSS classes to the element
   		* @param className String/String[] The CSS class to add, or an array of classes
@@ -17,7 +17,7 @@ trait ISprite
   		* @param config Object Configuration for Ext.fx.Anim. Note that the to config is required.
   		* @returns Object this
   		*/
-  var animate: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], _]] = js.undefined
+  var animate: js.UndefOr[js.Any | (js.Function1[/* config */ js.UndefOr[js.Any], _])] = js.undefined
   /** [Property] (Ext.dd.DragSource) */
   var dd: js.UndefOr[extjsLib.ExtNs.ddNs.IDragSource] = js.undefined
   /** [Method] Removes the sprite and clears all listeners  */

@@ -104,12 +104,12 @@ class Action protected () extends js.Object {
 @JSGlobal("BABYLON.Action")
 @js.native
 object Action extends js.Object {
-  def _GetTargetProperty(target: babylonjsLib.BABYLONNs.Node): babylonjsLib.Anon_TargetType = js.native
+  def _GetTargetProperty(target: babylonjsLib.BABYLONNs.Node): babylonjsLib.Anon_Name = js.native
   /**
     * Internal only
     * @hidden
     */
-  def _GetTargetProperty(target: babylonjsLib.BABYLONNs.Scene): babylonjsLib.Anon_TargetType = js.native
+  def _GetTargetProperty(target: babylonjsLib.BABYLONNs.Scene): babylonjsLib.Anon_Name = js.native
   /**
     * Internal only
     * @hidden

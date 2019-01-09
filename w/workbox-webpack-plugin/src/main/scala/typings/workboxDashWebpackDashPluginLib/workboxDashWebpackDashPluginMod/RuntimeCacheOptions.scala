@@ -9,7 +9,7 @@ trait RuntimeCacheOptions extends js.Object {
   /**
   	 * Configure background sync.
   	 */
-  var backgroundSync: js.UndefOr[workboxDashWebpackDashPluginLib.Anon_Options] = js.undefined
+  var backgroundSync: js.UndefOr[workboxDashWebpackDashPluginLib.Anon_Name] = js.undefined
   /**
   	 * Configure the broadcast cache update plugin.
   	 */
@@ -21,11 +21,11 @@ trait RuntimeCacheOptions extends js.Object {
   /**
   	 * Configure which responses are considered cacheable.
   	 */
-  var cacheableResponse: js.UndefOr[workboxDashWebpackDashPluginLib.Anon_Statuses] = js.undefined
+  var cacheableResponse: js.UndefOr[workboxDashWebpackDashPluginLib.Anon_Header] = js.undefined
   /**
   	 * Custom cache expiration.
   	 */
-  var expiration: js.UndefOr[workboxDashWebpackDashPluginLib.Anon_MaxEntries] = js.undefined
+  var expiration: js.UndefOr[workboxDashWebpackDashPluginLib.Anon_MaxAgeSeconds] = js.undefined
   /**
   	 * Used to configure the handler.
   	 */

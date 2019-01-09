@@ -18,15 +18,15 @@ trait Window extends js.Object {
   var VRFrameData: js.Any = js.native
   var WebGLRenderingContext: WebGLRenderingContext = js.native
   var mozIndexedDB: stdLib.IDBFactory = js.native
-  var mozURL: Anon_Url = js.native
+  var mozURL: Anon_Base = js.native
   var msIndexedDB: stdLib.IDBFactory = js.native
-  var msURL: Anon_Url = js.native
+  var msURL: Anon_Base = js.native
   var onvrdisplayconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]) | scala.Null = js.native
   var onvrdisplaydisconnected: (js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]) | scala.Null = js.native
   var onvrdisplaypresentchange: (js.ThisFunction1[/* this */ this.type, /* ev */ stdLib.Event, _]) | scala.Null = js.native
   var webkitAudioContext: stdLib.AudioContext = js.native
   var webkitIndexedDB: stdLib.IDBFactory = js.native
-  var webkitURL: Anon_Url = js.native
+  var webkitURL: Anon_Base = js.native
   @JSName("addEventListener")
   def addEventListener_vrdisplayconnected(
     `type`: babylonjsLib.babylonjsLibStrings.vrdisplayconnected,

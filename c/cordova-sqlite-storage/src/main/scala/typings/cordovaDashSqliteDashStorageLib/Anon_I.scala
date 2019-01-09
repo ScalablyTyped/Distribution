@@ -1,0 +1,12 @@
+package typings
+package cordovaDashSqliteDashStorageLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_I extends js.Object {
+  var length: scala.Double
+  def item(i: scala.Double): js.Any
+}
+

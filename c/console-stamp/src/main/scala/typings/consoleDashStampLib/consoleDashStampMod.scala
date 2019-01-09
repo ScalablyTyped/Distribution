@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object consoleDashStampMod extends js.Object {
   def apply(console: js.Object): scala.Unit = js.native
-  def apply(console: js.Object, options: consoleDashStampLib.Anon_Pattern): scala.Unit = js.native
+  def apply(console: js.Object, options: consoleDashStampLib.Anon_Colors): scala.Unit = js.native
 }
 

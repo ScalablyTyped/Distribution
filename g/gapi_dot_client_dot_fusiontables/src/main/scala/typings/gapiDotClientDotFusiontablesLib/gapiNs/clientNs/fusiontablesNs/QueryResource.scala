@@ -16,13 +16,13 @@ trait QueryResource extends js.Object {
     * - DESCRIBE
     * - CREATE statement.
     */
-  def sql(request: gapiDotClientDotFusiontablesLib.Anon_Sql): gapiDotClientLib.gapiNs.clientNs.Request[Sqlresponse]
+  def sql(request: gapiDotClientDotFusiontablesLib.Anon_AltFieldsHdrs): gapiDotClientLib.gapiNs.clientNs.Request[Sqlresponse]
   /**
     * Executes a SQL statement which can be any of
     * - SELECT
     * - SHOW
     * - DESCRIBE
     */
-  def sqlGet(request: gapiDotClientDotFusiontablesLib.Anon_Sql): gapiDotClientLib.gapiNs.clientNs.Request[Sqlresponse]
+  def sqlGet(request: gapiDotClientDotFusiontablesLib.Anon_AltFieldsHdrs): gapiDotClientLib.gapiNs.clientNs.Request[Sqlresponse]
 }
 

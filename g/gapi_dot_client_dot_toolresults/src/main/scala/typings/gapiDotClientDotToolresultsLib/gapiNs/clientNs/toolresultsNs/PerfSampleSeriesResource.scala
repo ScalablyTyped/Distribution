@@ -13,13 +13,13 @@ trait PerfSampleSeriesResource extends js.Object {
     * May return any of the following error code(s): - ALREADY_EXISTS - PerfMetricSummary already exists for the given Step - NOT_FOUND - The containing Step
     * does not exist
     */
-  def create(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintHistoryIdProjectIdQuotaUserKeyUserIp): gapiDotClientLib.gapiNs.clientNs.Request[PerfSampleSeries]
+  def create(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields): gapiDotClientLib.gapiNs.clientNs.Request[PerfSampleSeries]
   /**
     * Gets a PerfSampleSeries.
     *
     * May return any of the following error code(s): - NOT_FOUND - The specified PerfSampleSeries does not exist
     */
-  def get(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintHistoryIdProjectIdQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[PerfSampleSeries]
+  def get(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryId): gapiDotClientLib.gapiNs.clientNs.Request[PerfSampleSeries]
   /**
     * Lists PerfSampleSeries for a given Step.
     *
@@ -28,6 +28,6 @@ trait PerfSampleSeriesResource extends js.Object {
     *
     * May return any of the following canonical error codes: - NOT_FOUND - The containing Step does not exist
     */
-  def list(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintHistoryIdProjectIdQuotaUserKeyFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListPerfSampleSeriesResponse]
+  def list(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListPerfSampleSeriesResponse]
 }
 

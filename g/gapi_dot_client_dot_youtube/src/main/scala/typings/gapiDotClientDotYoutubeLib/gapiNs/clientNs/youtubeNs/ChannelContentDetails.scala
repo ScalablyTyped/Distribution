@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ChannelContentDetails extends js.Object {
-  var relatedPlaylists: js.UndefOr[gapiDotClientDotYoutubeLib.Anon_WatchHistory] = js.undefined
+  var relatedPlaylists: js.UndefOr[gapiDotClientDotYoutubeLib.Anon_Favorites] = js.undefined
 }
 

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object lambdaLambdaMixinsMod {
-  type BaseCallbackFunctionArgs = atPulumiAwsLib.utilsMod.Overwrite[atPulumiAwsLib.lambdaFunctionMod.FunctionArgs, atPulumiAwsLib.Anon_Role]
+  type BaseCallbackFunctionArgs = atPulumiAwsLib.utilsMod.Overwrite[atPulumiAwsLib.lambdaFunctionMod.FunctionArgs, atPulumiAwsLib.Anon_Code]
   type Callback[E, R] = js.Function3[
     /* event */ E, 
     /* context */ Context, 

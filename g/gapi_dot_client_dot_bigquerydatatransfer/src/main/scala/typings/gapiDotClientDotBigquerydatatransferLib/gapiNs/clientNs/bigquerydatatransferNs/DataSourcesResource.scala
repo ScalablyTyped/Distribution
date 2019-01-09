@@ -14,16 +14,16 @@ trait DataSourcesResource extends js.Object {
     * token for the particular user, which is a pre-requisite before user can
     * create a transfer config.
     */
-  def checkValidCreds(request: gapiDotClientDotBigquerydatatransferLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[CheckValidCredsResponse]
+  def checkValidCreds(request: gapiDotClientDotBigquerydatatransferLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[CheckValidCredsResponse]
   /**
     * Retrieves a supported data source and returns its settings,
     * which can be used for UI rendering.
     */
-  def get(request: gapiDotClientDotBigquerydatatransferLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[DataSource]
+  def get(request: gapiDotClientDotBigquerydatatransferLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[DataSource]
   /**
     * Lists supported data sources and returns their settings,
     * which can be used for UI rendering.
     */
-  def list(request: gapiDotClientDotBigquerydatatransferLib.Anon_ParentAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListDataSourcesResponse]
+  def list(request: gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListDataSourcesResponse]
 }
 

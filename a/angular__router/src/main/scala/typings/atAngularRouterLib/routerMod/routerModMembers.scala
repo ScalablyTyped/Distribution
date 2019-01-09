@@ -88,7 +88,7 @@ object routerModMembers extends js.Object {
     (org.scalablytyped.runtime.Instantiable1[
       /* injector */ atAngularCoreLib.coreMod.Injector, 
       atAngularRouterLib.srcRouterUnderscoreModuleMod.RouterInitializer
-    ]) | atAngularRouterLib.Anon_Provide | atAngularRouterLib.Anon_ProvideCompRef | atAngularRouterLib.Anon_ProvideCompRefUseExisting
+    ]) | atAngularRouterLib.Anon_Deps | atAngularRouterLib.Anon_CompRef | atAngularRouterLib.Anon_CompRefDeps
   ] = js.native
   def ɵflatten[T](arr: js.Array[js.Array[T]]): js.Array[T] = js.native
 }

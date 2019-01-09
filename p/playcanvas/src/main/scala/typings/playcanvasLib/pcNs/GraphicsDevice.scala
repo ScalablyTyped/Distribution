@@ -102,7 +102,7 @@ class GraphicsDevice protected () extends js.Object {
     *     flags: pc.CLEARFLAG_COLOR | pc.CLEARFLAG_DEPTH
     * });
     */
-  def clear(options: playcanvasLib.Anon_Color): scala.Unit = js.native
+  def clear(options: playcanvasLib.Anon_ColorDepth): scala.Unit = js.native
   /**
     * @function
     * @name pc.GraphicsDevice#clearShaderCache
@@ -136,8 +136,8 @@ class GraphicsDevice protected () extends js.Object {
     *     indexed: false
     * )};
     */
-  def draw(primitive: playcanvasLib.Anon_Count): scala.Unit = js.native
-  def draw(primitive: playcanvasLib.Anon_Count, numInstances: scala.Double): scala.Unit = js.native
+  def draw(primitive: playcanvasLib.Anon_Base): scala.Unit = js.native
+  def draw(primitive: playcanvasLib.Anon_Base, numInstances: scala.Double): scala.Unit = js.native
   /**
     * @function
     * @name pc.GraphicsDevice#fire

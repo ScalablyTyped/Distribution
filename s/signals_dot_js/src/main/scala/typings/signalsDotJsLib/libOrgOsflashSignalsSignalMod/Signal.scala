@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(signalsDotJsLib.libOrgOsflashSignalsISignalMod.ISignal because Would inherit conflicting mutable fields List(numListeners, valueClasses))*/
-@JSImport("signals.js/lib/org/osflash/signals/Signal", "Signal")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- signalsDotJsLib.libOrgOsflashSignalsISignalMod.ISignal because var conflicts: numListeners, valueClasses. Inlined add */ @JSImport("signals.js/lib/org/osflash/signals/Signal", "Signal")
 @js.native
 class Signal protected ()
   extends signalsDotJsLib.libOrgOsflashSignalsOnceSignalMod.OnceSignal {
@@ -26,6 +26,13 @@ class Signal protected ()
     * @inheritDoc
     * @throws flash.errors.IllegalOperationError <code>IllegalOperationError</code>: You cannot addOnce() then add() the same listener without removing the relationship first.
     * @throws ArgumentError <code>ArgumentError</code>: Given listener is <code>null</code>.
+    */
+  /**
+    * Subscribes a listener for the signal.
+    * @param    listener A function with arguments
+    * that matches the value classes dispatched by the signal.
+    * If value classes are not specified (e.g. via Signal constructor), dispatch() can be called without arguments.
+    * @return a ISlot, which contains the Function passed as the parameter
     */
   def add(listener: js.Function): signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot = js.native
 }

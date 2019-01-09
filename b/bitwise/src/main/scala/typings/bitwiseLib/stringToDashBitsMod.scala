@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object stringToDashBitsMod extends js.Object {
   def default(string: java.lang.String): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_bitwise/types.Bit */ _
   ] = js.native
 }
 

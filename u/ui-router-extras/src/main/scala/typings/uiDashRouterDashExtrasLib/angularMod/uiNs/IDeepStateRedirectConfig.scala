@@ -19,7 +19,10 @@ trait IDeepStateRedirectConfig extends js.Object {
     * Return an object: IRedirectParams to change the redirect
     */
   var fn: js.UndefOr[
-    js.Function1[/* $dsr$ */ uiDashRouterDashExtrasLib.Anon_To, scala.Boolean | IRedirectParams]
+    js.Function1[
+      /* $dsr$ */ uiDashRouterDashExtrasLib.Anon_Redirect, 
+      scala.Boolean | IRedirectParams
+    ]
   ] = js.undefined
   /*
     * Specify params: true if your DSR state takes parameters.

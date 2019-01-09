@@ -31,8 +31,8 @@ trait ImageClient extends js.Object {
   /**
     * Get an image read stream.
     */
-  def getStream(name: java.lang.String): js.Promise[aliDashOssLib.Anon_Stream] = js.native
-  def getStream(name: java.lang.String, options: ImageGetOptions): js.Promise[aliDashOssLib.Anon_Stream] = js.native
+  def getStream(name: java.lang.String): js.Promise[aliDashOssLib.Anon_Res] = js.native
+  def getStream(name: java.lang.String, options: ImageGetOptions): js.Promise[aliDashOssLib.Anon_Res] = js.native
   /**
     * Get a style by name from the image channel.
     */

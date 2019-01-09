@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ReindexParams extends GenericParams {
   @JSName("body")
-  var body_ReindexParams: elasticsearchLib.Anon_Script
+  var body_ReindexParams: elasticsearchLib.Anon_Conflicts
   var refresh: js.UndefOr[scala.Boolean] = js.undefined
   var requestsPerSecond: js.UndefOr[scala.Double] = js.undefined
   var slices: js.UndefOr[scala.Double] = js.undefined

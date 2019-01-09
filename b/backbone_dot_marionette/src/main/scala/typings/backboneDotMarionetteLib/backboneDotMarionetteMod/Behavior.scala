@@ -20,7 +20,7 @@ class Behavior () extends Object {
     */
   var behaviors: js.Array[Behavior] | (org.scalablytyped.runtime.StringDictionary[
     org.scalablytyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ js.Any], Behavior]
-  ]) | js.Array[backboneDotMarionetteLib.Anon_Index] = js.native
+  ]) | js.Array[backboneDotMarionetteLib.Anon_BehaviorClass] = js.native
   /**
     * collectionEvents will respond to the view's collection events.
     */

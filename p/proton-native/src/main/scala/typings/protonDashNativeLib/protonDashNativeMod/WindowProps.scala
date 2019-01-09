@@ -45,7 +45,7 @@ trait WindowProps extends js.Object {
   /**
     * How big the window is when the application is first started.
     */
-  var size: js.UndefOr[protonDashNativeLib.Anon_W] = js.undefined
+  var size: js.UndefOr[protonDashNativeLib.Anon_HW] = js.undefined
   /**
     * The title of the window. Will be shown at the top left ribbon.
     */

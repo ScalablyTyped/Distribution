@@ -32,8 +32,8 @@ class ConstantPool () extends js.Object {
     ctx: atAngularCompilerLib.srcUtilMod.OutputContext,
     forceShared: scala.Boolean
   ): atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = js.native
-  def getLiteralFactory(literal: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.LiteralArrayExpr): atAngularCompilerLib.Anon_LiteralFactoryArguments = js.native
-  def getLiteralFactory(literal: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.LiteralMapExpr): atAngularCompilerLib.Anon_LiteralFactoryArguments = js.native
+  def getLiteralFactory(literal: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.LiteralArrayExpr): atAngularCompilerLib.Anon_LiteralFactory = js.native
+  def getLiteralFactory(literal: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.LiteralMapExpr): atAngularCompilerLib.Anon_LiteralFactory = js.native
   def propertyNameOf(kind: DefinitionKind): java.lang.String = js.native
   /**
     * Produce a unique name.

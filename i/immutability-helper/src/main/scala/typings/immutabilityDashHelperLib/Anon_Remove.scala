@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Remove[T] extends js.Object {
+trait Anon_Remove[K] extends js.Object {
   @JSName("$remove")
-  var $remove: js.Array[T]
+  var $remove: js.Array[K]
 }
 

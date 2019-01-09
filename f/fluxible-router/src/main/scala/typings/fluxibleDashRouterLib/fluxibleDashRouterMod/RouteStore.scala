@@ -20,6 +20,6 @@ class RouteStore ()
 @JSImport("fluxible-router", "RouteStore")
 @js.native
 object RouteStore extends js.Object {
-  def withStaticRoutes(routes: js.Object): org.scalablytyped.runtime.Instantiable0[fluxibleDashRouterLib.fluxibleDashRouterMod.RouteStore] = js.native
+  def withStaticRoutes(routes: js.Object): fluxibleDashRouterLib.Anon_Routes = js.native
 }
 

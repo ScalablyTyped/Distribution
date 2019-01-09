@@ -17,7 +17,7 @@ trait AmiFromInstanceArgs extends js.Object {
   val ebsBlockDevices: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceNameVolumeTypeEncryptedIops]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameEncryptedIops]
       ]
     ]
   ] = js.undefined

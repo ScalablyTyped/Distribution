@@ -91,7 +91,7 @@ object AnimationNsMembers extends js.Object {
     currentPreferredAnimation: java.lang.String,
     nextPreferredAnimation: java.lang.String,
     movingBackwards: scala.Boolean
-  ): winjsLib.Anon_EntranceExit = js.native
+  ): winjsLib.Anon_Entrance = js.native
   /**
     * Creates an object that performs a peek animation.
     * @param element Element or elements involved in the peek.

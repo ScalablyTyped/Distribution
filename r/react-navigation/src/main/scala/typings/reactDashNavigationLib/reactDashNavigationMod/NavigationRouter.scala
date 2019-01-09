@@ -25,7 +25,7 @@ trait NavigationRouter[State, Options] extends js.Object {
   def getActionForPathAndParams(path: java.lang.String, params: NavigationParams): NavigationAction | scala.Null = js.native
   def getComponentForRouteName(routeName: java.lang.String): NavigationComponent = js.native
   def getComponentForState(state: State): NavigationComponent = js.native
-  def getPathAndParamsForState(state: State): reactDashNavigationLib.Anon_Path = js.native
+  def getPathAndParamsForState(state: State): reactDashNavigationLib.Anon_Params = js.native
   /**
     * Gets the screen navigation options for a given screen.
     *

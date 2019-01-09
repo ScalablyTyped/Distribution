@@ -21,7 +21,7 @@ trait BoxProps extends js.Object {
     gestaltLib.gestaltLibStrings.blue | gestaltLib.gestaltLibStrings.darkGray | gestaltLib.gestaltLibStrings.darkWash | gestaltLib.gestaltLibStrings.eggplant | gestaltLib.gestaltLibStrings.gray | gestaltLib.gestaltLibStrings.green | gestaltLib.gestaltLibStrings.lightGray | gestaltLib.gestaltLibStrings.lightWash | gestaltLib.gestaltLibStrings.maroon | gestaltLib.gestaltLibStrings.midnight | gestaltLib.gestaltLibStrings.navy | gestaltLib.gestaltLibStrings.olive | gestaltLib.gestaltLibStrings.orange | gestaltLib.gestaltLibStrings.orchid | gestaltLib.gestaltLibStrings.pine | gestaltLib.gestaltLibStrings.purple | gestaltLib.gestaltLibStrings.red | gestaltLib.gestaltLibStrings.transparent | gestaltLib.gestaltLibStrings.watermelon | gestaltLib.gestaltLibStrings.white
   ] = js.undefined
   var column: js.UndefOr[UnsignedUpTo12] = js.undefined
-  var dangerouslySetInlineStyle: js.UndefOr[gestaltLib.Anon_Style] = js.undefined
+  var dangerouslySetInlineStyle: js.UndefOr[gestaltLib.Anon_Key] = js.undefined
   var direction: js.UndefOr[gestaltLib.gestaltLibStrings.row | gestaltLib.gestaltLibStrings.column] = js.undefined
   var display: js.UndefOr[
     gestaltLib.gestaltLibStrings.none | gestaltLib.gestaltLibStrings.flex | gestaltLib.gestaltLibStrings.block | gestaltLib.gestaltLibStrings.inlineBlock | gestaltLib.gestaltLibStrings.visuallyHidden

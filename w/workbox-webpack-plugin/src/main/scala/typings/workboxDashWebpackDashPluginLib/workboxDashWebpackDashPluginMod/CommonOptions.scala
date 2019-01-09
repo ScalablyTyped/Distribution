@@ -146,7 +146,7 @@ trait CommonOptions extends js.Object {
     (js.Array[
       js.Function1[
         /* originalManifest */ js.Array[ManifestEntry], 
-        workboxDashWebpackDashPluginLib.Anon_Warnings
+        workboxDashWebpackDashPluginLib.Anon_Manifest
       ]
     ]) | scala.Null
   ] = js.undefined

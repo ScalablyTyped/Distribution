@@ -12,8 +12,8 @@ class default () extends List
 @JSImport("antd/lib/list", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Item: org.scalablytyped.runtime.Instantiable0[antdLib.libListItemMod.default] = js.native
+  var Item: antdLib.Anon_ContextTypesMeta = js.native
   var childContextTypes: antdLib.Anon_Grid = js.native
-  var defaultProps: antdLib.Anon_BorderedLoading = js.native
+  var defaultProps: antdLib.Anon_BorderedDataSource = js.native
 }
 

@@ -7,20 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Part extends js.Object {
   /**
-    * The hl parameter specifies the language that will be used for text values in the API response.
+    * HTTP Request Body
     */
-  var hl: js.UndefOr[java.lang.String] = js.undefined
+  var RequestBody: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The id parameter specifies a comma-separated list of the YouTube channel category ID(s) for the resource(s) that are being retrieved. In a guideCategory resource, the id property specifies the YouTube channel category ID.
-    */
-  var id: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * The part parameter specifies a comma-separated list of one or more guideCategory resource properties that the API response will include. The part names that you can include in the parameter value are id and snippet. If the parameter identifies a property that contains child properties, the child properties will be included in the response. For example, in a guideCategory resource, the snippet property contains other properties, such as the category's title. If you set part=snippet, the API response will also contain all of those nested properties.
+    * The part parameter serves two purposes in this operation. It identifies the properties that the write operation will set as well as the properties that the API response will include. The part names that you can include in the parameter value are snippet and status. Note that this method will override the existing values for all of the mutable properties that are contained in any parts that the parameter value specifies. For example, a playlist's privacy setting is contained in the status part. As such, if your request is updating a private playlist, and the request's part parameter value includes the status part, the playlist's privacy setting will be updated to whatever value the request body specifies. If the request body does not specify a value, the existing privacy setting will be removed and the playlist will revert to the default privacy setting.
     */
   var part: java.lang.String
-  /**
-    * The regionCode parameter instructs the API to return the list of guide categories available in the specified country. The parameter value is an ISO 3166-1 alpha-2 country code.
-    */
-  var regionCode: js.UndefOr[java.lang.String] = js.undefined
 }
 

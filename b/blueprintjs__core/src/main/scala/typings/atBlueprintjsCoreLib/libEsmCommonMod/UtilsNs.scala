@@ -30,15 +30,15 @@ object UtilsNs extends js.Object {
     tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ java.lang.String
   ): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
   def ensureElement(child: reactLib.reactMod.ReactNs.ReactChild): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[atBlueprintjsCoreLib.Anon_ValueAKey[T]] = js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T): js.Array[atBlueprintjsCoreLib.Anon_ValueAKey[T]] = js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[atBlueprintjsCoreLib.Anon_ValueAKey[T]] = js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: js.Array[java.lang.String]): js.Array[atBlueprintjsCoreLib.Anon_ValueAKey[T]] = js.native
+  def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[atBlueprintjsCoreLib.Anon_KeyValueA[T]] = js.native
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T): js.Array[atBlueprintjsCoreLib.Anon_KeyValueA[T]] = js.native
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[atBlueprintjsCoreLib.Anon_KeyValueA[T]] = js.native
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: js.Array[java.lang.String]): js.Array[atBlueprintjsCoreLib.Anon_KeyValueA[T]] = js.native
   def getDisplayName(ComponentClass: atBlueprintjsCoreLib.libEsmCommonUtilsMod.INamed): java.lang.String = js.native
   def getDisplayName(ComponentClass: reactLib.reactMod.ReactNs.ComponentType[js.Object]): java.lang.String = js.native
-  def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[atBlueprintjsCoreLib.Anon_ValueA] = js.native
-  def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyBlacklist[T]): js.Array[atBlueprintjsCoreLib.Anon_ValueA] = js.native
-  def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyWhitelist[T]): js.Array[atBlueprintjsCoreLib.Anon_ValueA] = js.native
+  def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[atBlueprintjsCoreLib.Anon_Key] = js.native
+  def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyBlacklist[T]): js.Array[atBlueprintjsCoreLib.Anon_Key] = js.native
+  def getShallowUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: atBlueprintjsCoreLib.libEsmCommonUtilsCompareUtilsMod.IKeyWhitelist[T]): js.Array[atBlueprintjsCoreLib.Anon_Key] = js.native
   def isElementOfType[P](element: js.Any, ComponentType: reactLib.reactMod.ReactNs.ComponentType[P]): /* is react.react.React.ReactElement<P> */ scala.Boolean = js.native
   def isFunction(value: js.Any): /* is std.Function */ scala.Boolean = js.native
   def isNodeEnv(env: java.lang.String): scala.Boolean = js.native

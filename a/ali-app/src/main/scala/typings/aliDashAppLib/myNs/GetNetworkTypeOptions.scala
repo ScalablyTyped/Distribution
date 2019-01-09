@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 trait GetNetworkTypeOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_GetNetworkTypeOptions: js.UndefOr[js.Function1[/* res */ aliDashAppLib.Anon_NetworkType, scala.Unit]] = js.undefined
+  var success_GetNetworkTypeOptions: js.UndefOr[js.Function1[/* res */ aliDashAppLib.Anon_NetworkAvailable, scala.Unit]] = js.undefined
 }
 

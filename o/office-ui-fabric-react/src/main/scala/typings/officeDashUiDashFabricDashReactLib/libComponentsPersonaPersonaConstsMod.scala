@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object libComponentsPersonaPersonaConstsMod extends js.Object {
   def presenceBoolean(
     presence: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaPresence
-  ): officeDashUiDashFabricDashReactLib.Anon_IsBusy = js.native
-  def sizeBoolean(size: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize): officeDashUiDashFabricDashReactLib.Anon_IsSize48 = js.native
+  ): officeDashUiDashFabricDashReactLib.Anon_IsAvailable = js.native
+  def sizeBoolean(size: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize): officeDashUiDashFabricDashReactLib.Anon_IsSize10 = js.native
   @JSName("personaPresenceSize")
   @js.native
   object personaPresenceSizeNs extends js.Object {

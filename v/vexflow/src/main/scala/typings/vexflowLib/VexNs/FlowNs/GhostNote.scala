@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GhostNote protected () extends StemmableNote {
   def this(duration: java.lang.String) = this()
-  def this(note_struct: vexflowLib.Anon_Type) = this()
+  def this(note_struct: vexflowLib.Anon_DotsDurationType) = this()
    //inconsistent type: void -> GhostNote
   def addToModifierContext(): GhostNote = js.native
   def draw(): scala.Unit = js.native

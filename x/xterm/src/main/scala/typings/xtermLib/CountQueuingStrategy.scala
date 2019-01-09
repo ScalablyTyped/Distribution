@@ -16,5 +16,5 @@ trait CountQueuingStrategy
 @JSGlobal("CountQueuingStrategy")
 @js.native
 object CountQueuingStrategy
-  extends org.scalablytyped.runtime.Instantiable1[/* options */ Anon_HighWaterMarkNumber, CountQueuingStrategy]
+  extends org.scalablytyped.runtime.Instantiable1[/* options */ Anon_HighWaterMark, CountQueuingStrategy]
 

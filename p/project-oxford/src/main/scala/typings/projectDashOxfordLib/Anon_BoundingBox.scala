@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_BoundingBox extends js.Object {
   var boundingBox: java.lang.String
-  var words: js.Array[Anon_Text]
+  var text: java.lang.String
 }
 

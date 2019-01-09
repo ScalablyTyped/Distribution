@@ -26,11 +26,11 @@ class DefaultNetworkAcl protected ()
   /**
     * Specifies an egress rule. Parameters defined below.
     */
-  val egress: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_RuleNoIcmpType]]] = js.native
+  val egress: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionCidrBlock]]] = js.native
   /**
     * Specifies an ingress rule. Parameters defined below.
     */
-  val ingress: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_RuleNoIcmpType]]] = js.native
+  val ingress: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionCidrBlock]]] = js.native
   /**
     * The ID of the AWS account that owns the Default Network ACL
     */

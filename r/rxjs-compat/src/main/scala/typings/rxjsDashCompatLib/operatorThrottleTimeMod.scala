@@ -18,7 +18,7 @@ object operatorThrottleTimeMod extends js.Object {
     `this`: rxjsLib.rxjsMod.Observable[T],
     duration: scala.Double,
     scheduler: rxjsLib.internalTypesMod.SchedulerLike,
-    config: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ThrottleConfig */ js.Any
+    config: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ThrottleConfig */ js.Any
   ): rxjsLib.rxjsMod.Observable[T] = js.native
 }
 

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.formNs.IFieldAncestor because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait IFieldSet
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.formNs.IFieldAncestor because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined fieldDefaults, initFieldAncestor, onFieldErrorChange, onFieldValidityChange */ trait IFieldSet
   extends extjsLib.ExtNs.containerNs.IContainer {
   /** [Property] (Ext.form.field.Checkbox) */
   var checkboxCmp: js.UndefOr[extjsLib.ExtNs.formNs.fieldNs.ICheckbox] = js.undefined
@@ -38,6 +38,8 @@ trait IFieldSet
   		* @returns Ext.form.FieldSet this
   		*/
   var expand: js.UndefOr[js.Function0[this.type]] = js.undefined
+  /** [Config Option] (Object) */
+  var fieldDefaults: js.UndefOr[js.Any] = js.undefined
   /** [Method] Initializes the FieldAncestor s state this must be called from the initComponent method of any components importing */
   var initFieldAncestor: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Property] (Ext.Component) */

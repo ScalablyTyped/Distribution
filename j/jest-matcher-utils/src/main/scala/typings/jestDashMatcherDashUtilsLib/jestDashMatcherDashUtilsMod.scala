@@ -29,7 +29,7 @@ object jestDashMatcherDashUtilsMod extends js.Object {
     matcherName: java.lang.String,
     received: java.lang.String,
     expected: java.lang.String,
-    options: jestDashMatcherDashUtilsLib.Anon_SecondArgument
+    options: jestDashMatcherDashUtilsLib.Anon_IsDirectExpectCall
   ): java.lang.String = js.native
   def pluralize(word: java.lang.String, count: scala.Double): java.lang.String = js.native
   def printExpected(value: js.Any): java.lang.String = js.native

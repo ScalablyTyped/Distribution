@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Csso extends js.Object {
-  var syntax: cssoLib.Anon_Generate = js.native
+  var syntax: cssoLib.Anon_AstClone = js.native
   /**
     * Does the main task – compress an AST.
     */

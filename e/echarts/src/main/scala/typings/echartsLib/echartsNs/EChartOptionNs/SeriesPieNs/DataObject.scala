@@ -10,7 +10,7 @@ trait DataObject extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.emphasis
     */
   var emphasis: js.UndefOr[
-    echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderTypeAnonShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlignShadowBlurHeightBorderWidthFontStyleRichUserStyleBorderRadius
+    echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeight
   ] = js.undefined
   /**
     * Graphic style of , `emphasis` is the style when it is highlighted,
@@ -19,7 +19,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
     * The label configuration of a single sector.
     *
@@ -27,7 +27,7 @@ trait DataObject extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.label
     */
   var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlignShadowBlurHeightBorderWidthFontStyleRichUserStyle
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyle
   ] = js.undefined
   /**
     * The style of visual guide line.
@@ -35,7 +35,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.labelLine
     */
-  var labelLine: js.UndefOr[echartsLib.Anon_Show] = js.undefined
+  var labelLine: js.UndefOr[echartsLib.Anon_EmphasisLengthLength2LineStyle] = js.undefined
   /**
     * The name of data item.
     *
@@ -56,7 +56,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * Data value.
     *

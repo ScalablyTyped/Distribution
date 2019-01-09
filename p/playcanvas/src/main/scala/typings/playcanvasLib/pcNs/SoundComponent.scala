@@ -59,7 +59,7 @@ class SoundComponent protected () extends Component {
     * this.entity.sound.play('beep');
     */
   def addSlot(name: java.lang.String): SoundSlot = js.native
-  def addSlot(name: java.lang.String, options: playcanvasLib.Anon_Duration): SoundSlot = js.native
+  def addSlot(name: java.lang.String, options: playcanvasLib.Anon_Asset): SoundSlot = js.native
   /**
     * @function
     * @name pc.SoundComponent#pause

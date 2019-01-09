@@ -41,12 +41,12 @@ trait Camera extends js.Object {
 @js.native
 object Camera extends js.Object {
   // Camera constants, defined in Camera plugin
-  var DestinationType: cordovaDashPluginDashCameraLib.Anon_FILEURI = js.native
-  var Direction: cordovaDashPluginDashCameraLib.Anon_FRONT = js.native
+  var DestinationType: cordovaDashPluginDashCameraLib.Anon_DATAURL = js.native
+  var Direction: cordovaDashPluginDashCameraLib.Anon_BACK = js.native
   var EncodingType: cordovaDashPluginDashCameraLib.Anon_JPEG = js.native
-  var MediaType: cordovaDashPluginDashCameraLib.Anon_PICTURE = js.native
+  var MediaType: cordovaDashPluginDashCameraLib.Anon_ALLMEDIA = js.native
   var PictureSourceType: cordovaDashPluginDashCameraLib.Anon_CAMERA = js.native
   // Used only on iOS
-  var PopoverArrowDirection: cordovaDashPluginDashCameraLib.Anon_ARROWRIGHT = js.native
+  var PopoverArrowDirection: cordovaDashPluginDashCameraLib.Anon_ARROWANY = js.native
 }
 

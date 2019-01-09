@@ -227,7 +227,7 @@ trait FullPageJsOptions extends js.Object {
   /**
     * Allows to configure the parameters for the parallax backgrounds effect when using the option parallax:true.
     */ 
-  var parallaxOptions: js.UndefOr[Anon_Percentage] = js.undefined
+  var parallaxOptions: js.UndefOr[Anon_Cover] = js.undefined
   /**
     * (default true) Defines whether to push the state of the site to the browser's history. When set to true each section/slide of the site will act as a new page and the back and forward buttons of the browser will scroll the sections/slides to reach the previous or next state of the site. When set to false, the URL will keep changing but will have no effect ont he browser's history. This option is automatically turned off when using autoScrolling:false.
     */

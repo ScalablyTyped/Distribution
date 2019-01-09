@@ -12,8 +12,8 @@ class ClientFormContext () extends js.Object {
   var fieldName: java.lang.String = js.native
   var fieldSchema: FieldSchema_InForm = js.native
   var fieldValue: js.Any = js.native
-  var itemAttributes: sharepointLib.Anon_Url = js.native
-  var listAttributes: sharepointLib.Anon_Id = js.native
+  var itemAttributes: sharepointLib.Anon_ExternalListItem = js.native
+  var listAttributes: sharepointLib.Anon_BaseType = js.native
   var webAttributes: sharepointLib.Anon_AllowScriptableWebParts = js.native
   def registerClientValidator(
     fieldname: java.lang.String,

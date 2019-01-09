@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Next extends js.Object {
-  var total: qiniuDashJsLib.Anon_Total
+  var total: qiniuDashJsLib.Anon_Loaded
 }
 

@@ -1,0 +1,13 @@
+package typings
+package activexDashWordLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Itinfo extends js.Object {
+  val itinfo: scala.Double
+  val lcid: scala.Double
+  var pptinfo: js.UndefOr[scala.Nothing]
+}
+

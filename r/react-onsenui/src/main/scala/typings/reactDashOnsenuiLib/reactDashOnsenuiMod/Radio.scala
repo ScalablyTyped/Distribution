@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Radio")
 @js.native
 class Radio ()
-  extends Component[reactDashOnsenuiLib.Anon_NameChecked, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_CheckedDefaultChecked, js.Any]
 

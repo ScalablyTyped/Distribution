@@ -10,7 +10,11 @@ trait EventDestinationState extends js.Object {
     * CloudWatch destination for the events
     */
   val cloudwatchDestinations: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DimensionName]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DefaultValueDimensionNameValueSource]
+      ]
+    ]
   ] = js.undefined
   /**
     * The name of the configuration set
@@ -23,7 +27,7 @@ trait EventDestinationState extends js.Object {
   /**
     * Send the events to a kinesis firehose destination
     */
-  val kinesisDestination: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RoleArnStreamArn]] = js.undefined
+  val kinesisDestination: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RoleArnStreamArnInput]] = js.undefined
   /**
     * A list of matching types. May be any of `"send"`, `"reject"`, `"bounce"`, `"complaint"`, `"delivery"`, `"open"`, `"click"`, or `"renderingFailure"`.
     */

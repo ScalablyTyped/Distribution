@@ -10,6 +10,6 @@ trait ResultsResource extends js.Object {
     * Retrieves any survey results that have been produced so far. Results are formatted as an Excel file. You must add "?alt=media" to the URL as an
     * argument to get results.
     */
-  def get(request: gapiDotClientDotSurveysLib.Anon_SurveyUrlId): gapiDotClientLib.gapiNs.clientNs.Request[SurveyResults]
+  def get(request: gapiDotClientDotSurveysLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[SurveyResults]
 }
 

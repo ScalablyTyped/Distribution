@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Appearance ()
   extends cesiumLib.cesiumMod.CesiumNs.Appearance {
-  def this(options: cesiumLib.Anon_VertexShaderSource) = this()
+  def this(options: cesiumLib.Anon_Closed) = this()
   /* CompleteClass */
   override val closed: scala.Boolean = js.native
   /* CompleteClass */

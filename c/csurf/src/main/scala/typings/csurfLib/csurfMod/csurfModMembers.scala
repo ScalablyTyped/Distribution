@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object csurfModMembers extends js.Object {
   def apply(): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.RequestHandler = js.native
-  def apply(options: csurfLib.Anon_SessionKey): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.RequestHandler = js.native
+  def apply(options: csurfLib.Anon_Cookie): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.RequestHandler = js.native
 }
 

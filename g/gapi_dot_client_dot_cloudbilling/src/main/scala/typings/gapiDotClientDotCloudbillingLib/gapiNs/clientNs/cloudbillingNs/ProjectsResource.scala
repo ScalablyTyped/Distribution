@@ -12,13 +12,13 @@ trait ProjectsResource extends js.Object {
     * project](https://cloud.google.com/docs/permissions-overview#h.bgs0oxofvnoo
     * ).
     */
-  def getBillingInfo(request: gapiDotClientDotCloudbillingLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[ProjectBillingInfo]
+  def getBillingInfo(request: gapiDotClientDotCloudbillingLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ProjectBillingInfo]
   /**
     * Lists the projects associated with a billing account. The current
     * authenticated user must be an [owner of the billing
     * account](https://support.google.com/cloud/answer/4430947).
     */
-  def list(request: gapiDotClientDotCloudbillingLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListProjectBillingInfoResponse]
+  def list(request: gapiDotClientDotCloudbillingLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListProjectBillingInfoResponse]
   /**
     * Sets or updates the billing account associated with a project. You specify
     * the new billing account by setting the `billing_account_name` in the
@@ -52,6 +52,6 @@ trait ProjectsResource extends js.Object {
     * disable billing, you should always call this method with the name of an
     * &#42;open&#42; billing account.
     */
-  def updateBillingInfo(request: gapiDotClientDotCloudbillingLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[ProjectBillingInfo]
+  def updateBillingInfo(request: gapiDotClientDotCloudbillingLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ProjectBillingInfo]
 }
 

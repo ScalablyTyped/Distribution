@@ -10,7 +10,7 @@ trait ECKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] extend
     * Name of the curve to use.
     */
   var namedCurve: java.lang.String
-  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with nodeLib.Anon_TypeSec1
-  var publicKeyEncoding: nodeLib.Anon_TypePkcs1[PubF]
+  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with nodeLib.Anon_Pkcs8Sec1
+  var publicKeyEncoding: nodeLib.Anon_Format[PubF]
 }
 

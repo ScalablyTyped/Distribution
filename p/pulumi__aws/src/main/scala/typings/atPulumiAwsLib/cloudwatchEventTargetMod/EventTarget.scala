@@ -25,11 +25,11 @@ class EventTarget protected ()
   /**
     * Parameters used when you are using the rule to invoke an Amazon Batch Job. Documented below. A maximum of 1 are allowed.
     */
-  val batchTarget: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_JobAttemptsJobDefinition]] = js.native
+  val batchTarget: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ArraySize]] = js.native
   /**
     * Parameters used when you are using the rule to invoke Amazon ECS Task. Documented below. A maximum of 1 are allowed.
     */
-  val ecsTarget: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TaskDefinitionArnTaskCount]] = js.native
+  val ecsTarget: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Group]] = js.native
   /**
     * Valid JSON text passed to the target.
     */
@@ -42,11 +42,11 @@ class EventTarget protected ()
   /**
     * Parameters used when you are providing a custom input to a target based on certain event data.
     */
-  val inputTransformer: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_InputTemplateInputPaths]] = js.native
+  val inputTransformer: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_InputPaths]] = js.native
   /**
     * Parameters used when you are using the rule to invoke an Amazon Kinesis Stream. Documented below. A maximum of 1 are allowed.
     */
-  val kinesisTarget: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_PartitionKeyPathString]] = js.native
+  val kinesisTarget: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_PartitionKeyPath]] = js.native
   /**
     * The Amazon Resource Name (ARN) of the IAM role to be used for this target when the rule is triggered. Required if `ecs_target` is used.
     */
@@ -58,11 +58,11 @@ class EventTarget protected ()
   /**
     * Parameters used when you are using the rule to invoke Amazon EC2 Run Command. Documented below. A maximum of 5 are allowed.
     */
-  val runCommandTargets: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ValuesKey]]] = js.native
+  val runCommandTargets: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_KeyValues]]] = js.native
   /**
     * Parameters used when you are using the rule to invoke an Amazon SQS Queue. Documented below. A maximum of 1 are allowed.
     */
-  val sqsTarget: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_MessageGroupIdString]] = js.native
+  val sqsTarget: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_MessageGroupId]] = js.native
   /**
     * The unique target assignment ID.  If missing, will generate a random, unique id.
     */

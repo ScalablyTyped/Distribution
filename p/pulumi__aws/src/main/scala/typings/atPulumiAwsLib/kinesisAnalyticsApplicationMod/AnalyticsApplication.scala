@@ -27,7 +27,7 @@ class AnalyticsApplication protected ()
     * The CloudWatch log stream options to monitor application errors.
     * See CloudWatch Logging Options below for more details.
     */
-  val cloudwatchLoggingOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArnLogStreamArnId]] = js.native
+  val cloudwatchLoggingOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_IdLogStreamArn]] = js.native
   /**
     * SQL Code to transform input data, and generate output.
     */
@@ -43,7 +43,7 @@ class AnalyticsApplication protected ()
   /**
     * Input configuration of the application. See Inputs below for more details.
     */
-  val inputs: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ParallelismNamePrefix]] = js.native
+  val inputs: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_IdKinesisFirehose]] = js.native
   /**
     * The Timestamp when the application was last updated.
     */
@@ -55,12 +55,12 @@ class AnalyticsApplication protected ()
   /**
     * Output destination configuration of the application. See Outputs below for more details.
     */
-  val outputs: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameLambdaKinesisStream]]] = js.native
+  val outputs: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_IdKinesisFirehoseKinesisStream]]] = js.native
   /**
     * An S3 Reference Data Source for the application.
     * See Reference Data Sources below for more details.
     */
-  val referenceDataSources: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TableNameS3]] = js.native
+  val referenceDataSources: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_IdS3]] = js.native
   /**
     * The Status of the application.
     */

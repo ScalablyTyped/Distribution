@@ -5,9 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Deferred[T] extends js.Object {
-  var promise: Promise[T]
-  var reject: js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit]
-  var resolve: js.Function1[/* value */ js.UndefOr[Arg[T]], scala.Unit]
+  var promise: Promise[T] = js.native
+  def reject(): scala.Unit = js.native
+  def reject(reason: js.Any): scala.Unit = js.native
+  def resolve(): scala.Unit = js.native
+  def resolve(value: Arg[T]): scala.Unit = js.native
 }
 

@@ -47,7 +47,9 @@ trait TaskDefinitionArgs extends js.Object {
     * A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
     */
   val placementConstraints: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Expression]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ExpressionType]]
+    ]
   ] = js.undefined
   /**
     * A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
@@ -71,7 +73,7 @@ trait TaskDefinitionArgs extends js.Object {
   val volumes: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DockerVolumeConfiguration]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DockerVolumeConfigurationHostPath]
       ]
     ]
   ] = js.undefined

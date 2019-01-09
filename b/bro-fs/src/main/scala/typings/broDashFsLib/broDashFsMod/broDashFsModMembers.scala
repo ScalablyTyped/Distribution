@@ -31,11 +31,11 @@ object broDashFsModMembers extends js.Object {
   def isSupported(): scala.Boolean = js.native
   def mkdir(path: java.lang.String): js.Promise[filesystemLib.DirectoryEntry] = js.native
   def readFile(path: filesystemLib.FileEntry): js.Promise[java.lang.String] = js.native
-  def readFile(path: filesystemLib.FileEntry, options: broDashFsLib.Anon_Type): js.Promise[stdLib.ArrayBuffer] = js.native
-  def readFile(path: filesystemLib.FileEntry, options: broDashFsLib.Anon_TypeTextType): js.Promise[java.lang.String] = js.native
+  def readFile(path: filesystemLib.FileEntry, options: broDashFsLib.Anon_ArrayBuffer): js.Promise[stdLib.ArrayBuffer] = js.native
+  def readFile(path: filesystemLib.FileEntry, options: broDashFsLib.Anon_Type): js.Promise[java.lang.String] = js.native
   def readFile(path: java.lang.String): js.Promise[java.lang.String] = js.native
-  def readFile(path: java.lang.String, options: broDashFsLib.Anon_Type): js.Promise[stdLib.ArrayBuffer] = js.native
-  def readFile(path: java.lang.String, options: broDashFsLib.Anon_TypeTextType): js.Promise[java.lang.String] = js.native
+  def readFile(path: java.lang.String, options: broDashFsLib.Anon_ArrayBuffer): js.Promise[stdLib.ArrayBuffer] = js.native
+  def readFile(path: java.lang.String, options: broDashFsLib.Anon_Type): js.Promise[java.lang.String] = js.native
   def readdir(path: filesystemLib.DirectoryEntry): js.Promise[js.Array[filesystemLib.FileEntry]] = js.native
   def readdir(path: filesystemLib.DirectoryEntry, options: broDashFsLib.Anon_Deep): js.Promise[js.Array[filesystemLib.FileEntry]] = js.native
   def readdir(path: java.lang.String): js.Promise[js.Array[filesystemLib.FileEntry]] = js.native

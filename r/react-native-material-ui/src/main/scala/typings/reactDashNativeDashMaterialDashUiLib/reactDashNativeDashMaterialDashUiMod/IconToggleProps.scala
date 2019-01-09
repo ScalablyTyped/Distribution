@@ -14,7 +14,7 @@ trait IconToggleProps extends js.Object {
   var onPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var percent: js.UndefOr[scala.Double] = js.undefined
   var size: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_ContainerIcon] = js.undefined
+  var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_ContainerIconViewStyle] = js.undefined
   var underlayColor: js.UndefOr[java.lang.String] = js.undefined
 }
 

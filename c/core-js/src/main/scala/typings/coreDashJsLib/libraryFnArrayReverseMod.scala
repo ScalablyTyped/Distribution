@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/array/reverse", JSImport.Namespace)
 @js.native
 object libraryFnArrayReverseMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayTArrayLike_137946907]
+  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayArrayLikeT_137946907]
 

@@ -15,6 +15,6 @@ class FormCell protected () extends js.Object {
 @JSImport("react-weui", "FormCell")
 @js.native
 object FormCell extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_Switch = js.native
+  var defaultProps: reactDashWeuiLib.Anon_CheckboxRadio = js.native
 }
 

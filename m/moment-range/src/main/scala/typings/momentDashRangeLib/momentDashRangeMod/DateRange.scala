@@ -22,17 +22,17 @@ class DateRange protected () extends js.Object {
   def by(interval: momentLib.momentMod.momentNs.unitOfTimeNs.Diff): stdLib.Iterable[momentLib.momentMod.momentNs.Moment] = js.native
   def by(
     interval: momentLib.momentMod.momentNs.unitOfTimeNs.Diff,
-    options: momentDashRangeLib.Anon_Exclusive
+    options: momentDashRangeLib.Anon_ExclusiveStep
   ): stdLib.Iterable[momentLib.momentMod.momentNs.Moment] = js.native
   def byRange(interval: DateRange): stdLib.Iterable[momentLib.momentMod.momentNs.Moment] = js.native
-  def byRange(interval: DateRange, options: momentDashRangeLib.Anon_Exclusive): stdLib.Iterable[momentLib.momentMod.momentNs.Moment] = js.native
+  def byRange(interval: DateRange, options: momentDashRangeLib.Anon_ExclusiveStep): stdLib.Iterable[momentLib.momentMod.momentNs.Moment] = js.native
   def center(): momentLib.momentMod.momentNs.Moment = js.native
   def contains(other: DateRange): scala.Boolean = js.native
-  def contains(other: DateRange, options: momentDashRangeLib.Anon_ExclusiveBoolean): scala.Boolean = js.native
+  def contains(other: DateRange, options: momentDashRangeLib.Anon_Exclusive): scala.Boolean = js.native
   def contains(other: momentLib.momentMod.momentNs.Moment): scala.Boolean = js.native
-  def contains(other: momentLib.momentMod.momentNs.Moment, options: momentDashRangeLib.Anon_ExclusiveBoolean): scala.Boolean = js.native
+  def contains(other: momentLib.momentMod.momentNs.Moment, options: momentDashRangeLib.Anon_Exclusive): scala.Boolean = js.native
   def contains(other: stdLib.Date): scala.Boolean = js.native
-  def contains(other: stdLib.Date, options: momentDashRangeLib.Anon_ExclusiveBoolean): scala.Boolean = js.native
+  def contains(other: stdLib.Date, options: momentDashRangeLib.Anon_Exclusive): scala.Boolean = js.native
   def diff(): scala.Double = js.native
   def diff(unit: momentLib.momentMod.momentNs.unitOfTimeNs.Diff): scala.Double = js.native
   def diff(unit: momentLib.momentMod.momentNs.unitOfTimeNs.Diff, rounded: scala.Boolean): scala.Double = js.native
@@ -47,10 +47,10 @@ class DateRange protected () extends js.Object {
   def reverseBy(interval: momentLib.momentMod.momentNs.unitOfTimeNs.Diff): stdLib.Iterable[momentLib.momentMod.momentNs.Moment] = js.native
   def reverseBy(
     interval: momentLib.momentMod.momentNs.unitOfTimeNs.Diff,
-    options: momentDashRangeLib.Anon_Exclusive
+    options: momentDashRangeLib.Anon_ExclusiveStep
   ): stdLib.Iterable[momentLib.momentMod.momentNs.Moment] = js.native
   def reverseByRange(interval: DateRange): stdLib.Iterable[momentLib.momentMod.momentNs.Moment] = js.native
-  def reverseByRange(interval: DateRange, options: momentDashRangeLib.Anon_Exclusive): stdLib.Iterable[momentLib.momentMod.momentNs.Moment] = js.native
+  def reverseByRange(interval: DateRange, options: momentDashRangeLib.Anon_ExclusiveStep): stdLib.Iterable[momentLib.momentMod.momentNs.Moment] = js.native
   def subtract(other: DateRange): js.Array[DateRange] = js.native
   def toDate(): js.Array[stdLib.Date] = js.native
 }

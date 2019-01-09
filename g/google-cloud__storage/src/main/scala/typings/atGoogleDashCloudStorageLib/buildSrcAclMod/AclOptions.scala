@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 trait AclOptions extends js.Object {
   var pathPrefix: java.lang.String = js.native
   @JSName("request")
-  var request_Original: requestLib.requestMod.requestNs.RequestAPI[
+  var request_Original: atGoogleDashCloudStorageLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
     requestLib.requestMod.requestNs.Request, 
     requestLib.requestMod.requestNs.CoreOptions, 
     requestLib.requestMod.requestNs.RequiredUriUrl
-  ] = js.native
+  ]) = js.native
   def request(
     options: requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions
   ): requestLib.requestMod.requestNs.Request = js.native

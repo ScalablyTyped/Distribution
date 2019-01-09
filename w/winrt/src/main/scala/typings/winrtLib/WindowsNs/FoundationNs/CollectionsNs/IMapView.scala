@@ -9,6 +9,6 @@ trait IMapView[K, V] extends IIterable[IKeyValuePair[K, V]] {
   var size: scala.Double
   def hasKey(key: K): scala.Boolean
   def lookup(key: K): V
-  def split(): winrtLib.Anon_SecondFirstIMapViewK[K, V]
+  def split(): winrtLib.Anon_First[K, V]
 }
 

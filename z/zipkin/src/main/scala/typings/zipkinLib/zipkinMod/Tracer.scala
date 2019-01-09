@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Tracer protected ()
   extends zipkinLib.zipkinMod.zipkinNs.Tracer {
-  def this(args: zipkinLib.Anon_TraceId128Bit) = this()
+  def this(args: zipkinLib.Anon_CtxImpl) = this()
 }
 

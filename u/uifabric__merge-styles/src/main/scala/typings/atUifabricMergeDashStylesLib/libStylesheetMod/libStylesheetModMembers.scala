@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/merge-styles/lib/Stylesheet", JSImport.Namespace)
 @js.native
 object libStylesheetModMembers extends js.Object {
-  val InjectionMode: atUifabricMergeDashStylesLib.Anon_None = js.native
+  val InjectionMode: atUifabricMergeDashStylesLib.Anon_0 = js.native
 }
 

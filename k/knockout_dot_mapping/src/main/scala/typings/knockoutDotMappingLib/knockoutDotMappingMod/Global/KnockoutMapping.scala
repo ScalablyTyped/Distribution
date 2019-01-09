@@ -39,6 +39,6 @@ trait KnockoutMapping extends js.Object {
   def toJSON(rootObject: js.Any): java.lang.String = js.native
   def toJSON(rootObject: js.Any, options: KnockoutMappingOptions): java.lang.String = js.native
   def visitModel(rootObject: js.Any, callback: js.Function): js.Any = js.native
-  def visitModel(rootObject: js.Any, callback: js.Function, options: knockoutDotMappingLib.Anon_VisitedObjects): js.Any = js.native
+  def visitModel(rootObject: js.Any, callback: js.Function, options: knockoutDotMappingLib.Anon_Copy): js.Any = js.native
 }
 

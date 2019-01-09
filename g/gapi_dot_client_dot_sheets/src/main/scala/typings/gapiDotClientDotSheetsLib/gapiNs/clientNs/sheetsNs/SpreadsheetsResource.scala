@@ -30,9 +30,9 @@ trait SpreadsheetsResource extends js.Object {
     * collaborator changes. If there are no collaborators, the spreadsheet
     * should reflect your changes.
     */
-  def batchUpdate(request: gapiDotClientDotSheetsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateSpreadsheetResponse]
+  def batchUpdate(request: gapiDotClientDotSheetsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdateSpreadsheetResponse]
   /** Creates a spreadsheet, returning the newly created spreadsheet. */
-  def create(request: gapiDotClientDotSheetsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet]
+  def create(request: gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet]
   /**
     * Returns the spreadsheet at the given ID.
     * The caller must specify the spreadsheet ID.
@@ -56,7 +56,7 @@ trait SpreadsheetsResource extends js.Object {
     * return only the portions of the spreadsheet that intersect the requested
     * ranges. Ranges are specified using A1 notation.
     */
-  def get(request: gapiDotClientDotSheetsLib.Anon_AccesstokenPrettyPrintSpreadsheetId): gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet]
+  def get(request: gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertokenCallbackFieldsIncludeGridData): gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet]
   /**
     * Returns the spreadsheet at the given ID.
     * The caller must specify the spreadsheet ID.
@@ -81,6 +81,6 @@ trait SpreadsheetsResource extends js.Object {
     * For large spreadsheets, it is recommended to retrieve only the specific
     * fields of the spreadsheet that you want.
     */
-  def getByDataFilter(request: gapiDotClientDotSheetsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet]
+  def getByDataFilter(request: gapiDotClientDotSheetsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[Spreadsheet]
 }
 

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "dragula"
-version := "v2.1.2-dt-20181019Z-c0ec81"
-scalaVersion := "2.12.7"
+version := "v2.1.2-dt-20181019Z-1f8e03"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
+  "org.scalablytyped" %%% "std" % "3.2.2-f3cc98")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

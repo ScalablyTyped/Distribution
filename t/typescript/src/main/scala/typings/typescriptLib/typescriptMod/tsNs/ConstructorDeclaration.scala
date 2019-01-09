@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typescriptLib.typescriptMod.tsNs.ClassElement because Would inherit conflicting mutable fields List(_declarationBrand, decorators, end, flags, kind, modifiers, name, parent, pos))*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typescriptLib.typescriptMod.tsNs.ClassElement because var conflicts: _declarationBrand, decorators, end, flags, kind, modifiers, name, parent, pos. Inlined _classElementBrand */ @js.native
 trait ConstructorDeclaration extends FunctionLikeDeclarationBase {
+  var _classElementBrand: js.Any = js.native
   @JSName("body")
   var body_ConstructorDeclaration: js.UndefOr[FunctionBody] = js.native
   @JSName("parent")

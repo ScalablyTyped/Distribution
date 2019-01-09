@@ -11,14 +11,14 @@ trait OperationsResource extends js.Object {
     * Clients may use Operations.GetOperation or Operations.ListOperations to check whether the cancellation succeeded or the operation completed despite
     * cancellation.
     */
-  def cancel(request: gapiDotClientDotGenomicsLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def cancel(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyName): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Gets the latest state of a long-running operation.  Clients can use this
     * method to poll the operation result at intervals as recommended by the API
     * service.
     */
-  def get(request: gapiDotClientDotGenomicsLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def get(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyName): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Lists operations that match the specified filter in the request. */
-  def list(request: gapiDotClientDotGenomicsLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
+  def list(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
 }
 

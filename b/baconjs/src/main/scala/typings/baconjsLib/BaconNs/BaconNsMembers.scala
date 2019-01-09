@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Bacon")
 @js.native
 object BaconNsMembers extends js.Object {
-  var Bus: baconjsLib.Anon_E = js.native
-  var EventStream: baconjsLib.Anon_Subscribe = js.native
+  var Bus: baconjsLib.Anon_A = js.native
+  var EventStream: baconjsLib.Anon_Sink = js.native
   /**
     * @property more
     * @constant
@@ -434,7 +434,7 @@ object BaconNsMembers extends js.Object {
     * @param {Bacon.retry1~delay} [options.delay] - function that returns the time in milliseconds to wait before retrying. Defaults to `0`.
     * @returns {EventStream<E, A>}
     */
-  def retry[E, A](options: baconjsLib.Anon_IsRetryable[E, A]): EventStream[E, A] = js.native
+  def retry[E, A](options: baconjsLib.Anon_Context[E, A]): EventStream[E, A] = js.native
   /**
     * @callback Bacon.retry1~source
     * @description Function that produces an [Property]{@link Bacon.Property}.
@@ -464,7 +464,7 @@ object BaconNsMembers extends js.Object {
     * @param {Bacon.retry1~delay} [options.delay] - function that returns the time in milliseconds to wait before retrying. Defaults to `0`.
     * @returns {Property<E, A>}
     */
-  def retry[E, A](options: baconjsLib.Anon_IsRetryableError[E, A]): Property[E, A] = js.native
+  def retry[E, A](options: baconjsLib.Anon_ContextDelay[E, A]): Property[E, A] = js.native
   /**
     * @function
     * @description Creates a [EventStream]{@link Bacon.EventStream} containing given `values` (given as array) with the given `interval` (in milliseconds).

@@ -61,6 +61,6 @@ trait WordCloudChart extends BarChart {
     * CSS styles for the words.
     * @since 6.0.0
     */
-  var style: js.UndefOr[highchartsLib.Anon_FontWeight] = js.undefined
+  var style: js.UndefOr[highchartsLib.Anon_FontFamily] = js.undefined
 }
 

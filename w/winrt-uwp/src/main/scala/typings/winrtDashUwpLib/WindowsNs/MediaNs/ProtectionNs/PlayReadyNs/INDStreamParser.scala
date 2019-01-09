@@ -17,7 +17,7 @@ trait INDStreamParser extends js.Object {
     * Retrieves the stream type (audio or video) and stream identifier of the media stream descriptor.
     * @param descriptor The media stream from which this method gets information.
     */
-  def getStreamInformation(descriptor: winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.IMediaStreamDescriptor): winrtDashUwpLib.Anon_StreamType
+  def getStreamInformation(descriptor: winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.IMediaStreamDescriptor): winrtDashUwpLib.Anon_ReturnValueStreamType
   /**
     * Parses samples from a PlayReady-ND media stream.
     * @param dataBytes The data to be parsed.

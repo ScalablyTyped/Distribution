@@ -12,11 +12,11 @@ trait SpeechResource extends js.Object {
     * `Operation.error` or an `Operation.response` which contains
     * a `LongRunningRecognizeResponse` message.
     */
-  def longrunningrecognize(request: gapiDotClientDotSpeechLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def longrunningrecognize(request: gapiDotClientDotSpeechLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Performs synchronous speech recognition: receive results after all audio
     * has been sent and processed.
     */
-  def recognize(request: gapiDotClientDotSpeechLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[RecognizeResponse]
+  def recognize(request: gapiDotClientDotSpeechLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[RecognizeResponse]
 }
 

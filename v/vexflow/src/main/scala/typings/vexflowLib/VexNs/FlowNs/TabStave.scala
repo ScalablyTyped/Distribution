@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TabStave protected () extends Stave {
   def this(x: scala.Double, y: scala.Double, width: scala.Double) = this()
-  def this(x: scala.Double, y: scala.Double, width: scala.Double, options: vexflowLib.Anon_Numlines) = this()
+  def this(x: scala.Double, y: scala.Double, width: scala.Double, options: vexflowLib.Anon_Fillstyle) = this()
   def addTabGlyph(): TabStave = js.native
 }
 

@@ -10,7 +10,7 @@ trait Acl extends js.Object {
   var id: java.lang.String
   var kind: gapiDotCalendarLib.gapiDotCalendarLibStrings.`calendar#aclRule`
   var role: AccessRole
-  var scope: gapiDotCalendarLib.Anon_TypeValueScopeType
+  var scope: gapiDotCalendarLib.Anon_Type
 }
 
 @JSGlobal("gapi.client.calendar.acl")

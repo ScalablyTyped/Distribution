@@ -39,11 +39,11 @@ trait RegistrationsResource extends js.Object {
     * &#42; the specified `destination` cannot be located, or Classroom has not
     * been granted permission to publish to it.
     */
-  def create(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Registration]
+  def create(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Registration]
   /**
     * Deletes a `Registration`, causing Classroom to stop sending notifications
     * for that `Registration`.
     */
-  def delete(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPrettyPrintBearertokenRegistrationId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
 }
 

@@ -12,7 +12,7 @@ trait Toastr
   	 * Clear toasts
   	 */
   @JSName("clear")
-  var clear_Original: Anon_Toast = js.native
+  var clear_Original: Anon_ClearOptions = js.native
   /**
   	 * Create an error toast
   	 */
@@ -22,7 +22,7 @@ trait Toastr
   	 * Get or create a container.
   	 */
   @JSName("getContainer")
-  var getContainer_Original: Anon_Options = js.native
+  var getContainer_Original: Anon_Create = js.native
   /**
   	 * Create an info toast
   	 */

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@babel/traverse", "Binding")
 @js.native
 class Binding protected () extends js.Object {
-  def this(opts: atBabelTraverseLib.Anon_Path) = this()
+  def this(opts: atBabelTraverseLib.Anon_ConstExisting) = this()
   var constant: scala.Boolean = js.native
   var constantViolations: js.Array[NodePath[Node]] = js.native
   var identifier: atBabelTypesLib.typesMod.Identifier = js.native

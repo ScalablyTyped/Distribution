@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcOptionsMod extends js.Object {
   val englishDefaults: fullcalendarLib.Anon_DayPopoverFormat = js.native
-  val globalDefaults: fullcalendarLib.Anon_TitleRangeSeparator = js.native
-  val rtlDefaults: fullcalendarLib.Anon_ThemeButtonIcons = js.native
+  val globalDefaults: fullcalendarLib.Anon_AgendaEventMinHeight = js.native
+  val rtlDefaults: fullcalendarLib.Anon_ButtonIcons = js.native
   def mergeOptions(optionObjs: js.Any): js.Object = js.native
 }
 

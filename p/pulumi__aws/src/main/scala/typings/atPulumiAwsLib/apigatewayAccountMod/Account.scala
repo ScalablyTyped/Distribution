@@ -28,7 +28,7 @@ class Account protected ()
   /**
     * Account-Level throttle settings. See exported fields below.
     */
-  val throttleSettings: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BurstLimitRateLimitNumber] = js.native
+  val throttleSettings: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BurstLimit] = js.native
 }
 
 @JSImport("@pulumi/aws/apigateway/account", "Account")

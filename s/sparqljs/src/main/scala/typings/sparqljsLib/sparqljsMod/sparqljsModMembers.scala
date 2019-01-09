@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object sparqljsModMembers extends js.Object {
   val Generator: sparqljsLib.Anon_Options = js.native
-  val Parser: sparqljsLib.Anon_Prefixes = js.native
+  val Parser: sparqljsLib.Anon_BaseIRI = js.native
 }
 

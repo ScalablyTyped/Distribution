@@ -13,7 +13,7 @@ object libUtilitiesColorColorsModMembers extends js.Object {
   val MAX_COLOR_SATURATION: /* 100 */ scala.Double = js.native
   val MAX_COLOR_VALUE: /* 100 */ scala.Double = js.native
   def cssColor(color: java.lang.String): js.UndefOr[IRGB] = js.native
-  def getColorFromRGBA(rgba: officeDashUiDashFabricDashReactLib.Anon_B): IColor = js.native
+  def getColorFromRGBA(rgba: officeDashUiDashFabricDashReactLib.Anon_A): IColor = js.native
   def getColorFromString(inputColor: java.lang.String): js.UndefOr[IColor] = js.native
   def getFullColorString(color: IColor): java.lang.String = js.native
   def hsl2hsv(h: scala.Double, s: scala.Double, l: scala.Double): IHSV = js.native

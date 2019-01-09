@@ -9,6 +9,6 @@ trait channelBanners extends js.Object {
   /**
     * Uploads a channel banner to YouTube.
     */
-  def insert(`object`: gapiDotYoutubeLib.Anon_RequestBodyOnBehalfOfContentOwnerString): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeChannelBannerResource]
+  def insert(`object`: gapiDotYoutubeLib.Anon_OnBehalfOfContentOwner): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeChannelBannerResource]
 }
 

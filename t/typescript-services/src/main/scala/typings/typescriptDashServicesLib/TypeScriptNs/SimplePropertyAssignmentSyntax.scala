@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typescriptDashServicesLib.TypeScriptNs.IPropertyAssignmentSyntax because Already inherited)*/
-@JSGlobal("TypeScript.SimplePropertyAssignmentSyntax")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typescriptDashServicesLib.TypeScriptNs.IPropertyAssignmentSyntax because Already inherited */ @JSGlobal("TypeScript.SimplePropertyAssignmentSyntax")
 @js.native
 class SimplePropertyAssignmentSyntax protected () extends SyntaxNode {
   def this(propertyName: ISyntaxToken, colonToken: ISyntaxToken, expression: IExpressionSyntax, parsedInStrictMode: scala.Boolean) = this()

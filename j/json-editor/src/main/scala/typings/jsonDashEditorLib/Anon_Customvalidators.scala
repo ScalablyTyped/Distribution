@@ -14,7 +14,7 @@ trait Anon_Customvalidators extends js.Object {
       js.Array[JSONEditorError]
     ]
   ]
-  var editors: Anon_Object
+  var editors: Anon_Array
   var language: java.lang.String
   var languages: js.Any
   var options: JSONEditorOptions[_]

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ImageMaterialProperty ()
   extends cesiumLib.cesiumMod.CesiumNs.ImageMaterialProperty {
-  def this(options: cesiumLib.Anon_Repeat) = this()
+  def this(options: cesiumLib.Anon_Image) = this()
 }
 

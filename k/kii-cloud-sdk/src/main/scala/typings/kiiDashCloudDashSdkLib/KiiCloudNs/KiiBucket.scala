@@ -79,7 +79,7 @@ class KiiBucket () extends js.Object {
     *     );
     */
   def count(): js.Promise[js.Tuple3[KiiBucket, KiiQuery, scala.Double]] = js.native
-  def count(callbacks: kiiDashCloudDashSdkLib.Anon_Failure): js.Promise[js.Tuple3[KiiBucket, KiiQuery, scala.Double]] = js.native
+  def count(callbacks: kiiDashCloudDashSdkLib.Anon_Bucket): js.Promise[js.Tuple3[KiiBucket, KiiQuery, scala.Double]] = js.native
   /**
     * Execute count aggregation of specified query on current bucket.
     * Query that passed as nextQuery in success callback of {@link #executeQuery}, is not
@@ -142,7 +142,7 @@ class KiiBucket () extends js.Object {
     *     );
     */
   def countWithQuery(query: KiiQuery): js.Promise[js.Tuple3[KiiBucket, KiiQuery, scala.Double]] = js.native
-  def countWithQuery(query: KiiQuery, callbacks: kiiDashCloudDashSdkLib.Anon_Failure): js.Promise[js.Tuple3[KiiBucket, KiiQuery, scala.Double]] = js.native
+  def countWithQuery(query: KiiQuery, callbacks: kiiDashCloudDashSdkLib.Anon_Bucket): js.Promise[js.Tuple3[KiiBucket, KiiQuery, scala.Double]] = js.native
   /**
     * Create a KiiObject within the current bucket
     *
@@ -240,7 +240,7 @@ class KiiBucket () extends js.Object {
     *     );
     */
   def delete(): js.Promise[KiiBucket] = js.native
-  def delete(callbacks: kiiDashCloudDashSdkLib.Anon_FailureBucketToDelete): js.Promise[KiiBucket] = js.native
+  def delete(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringBucketToDelete): js.Promise[KiiBucket] = js.native
   /**
     * Perform a query on the given bucket
     *
@@ -329,7 +329,7 @@ class KiiBucket () extends js.Object {
     *     );
     */
   def executeQuery[T](query: KiiQuery): js.Promise[js.Tuple3[KiiQuery, js.Array[T], KiiQuery]] = js.native
-  def executeQuery[T](query: KiiQuery, callbacks: kiiDashCloudDashSdkLib.Anon_FailureBucket[T]): js.Promise[js.Tuple3[KiiQuery, js.Array[T], KiiQuery]] = js.native
+  def executeQuery[T](query: KiiQuery, callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringBucket[T]): js.Promise[js.Tuple3[KiiQuery, js.Array[T], KiiQuery]] = js.native
   /**
     * The name of this bucket
     *

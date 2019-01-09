@@ -16,7 +16,7 @@ trait VersionsResource extends js.Object {
     * new version to be the default, you must call
     * [projects.models.versions.setDefault](/ml-engine/reference/rest/v1/projects.models.versions/setDefault).
     */
-  def create(request: gapiDotClientDotMlLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
+  def create(request: gapiDotClientDotMlLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
   /**
     * Deletes a model version.
     *
@@ -26,7 +26,7 @@ trait VersionsResource extends js.Object {
     * Note: You cannot delete the version that is set as the default version
     * of the model unless it is the only remaining version.
     */
-  def delete(request: gapiDotClientDotMlLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
+  def delete(request: gapiDotClientDotMlLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
   /**
     * Gets information about a model version.
     *
@@ -35,7 +35,7 @@ trait VersionsResource extends js.Object {
     * to get the same information that this method returns for all of the
     * versions of a model.
     */
-  def get(request: gapiDotClientDotMlLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Version]
+  def get(request: gapiDotClientDotMlLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Version]
   /**
     * Gets basic information about all the versions of a model.
     *
@@ -43,13 +43,13 @@ trait VersionsResource extends js.Object {
     * only a limited number of results at a time, you can request that the list
     * be retrieved in batches (called pages):
     */
-  def list(request: gapiDotClientDotMlLib.Anon_ParentAccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__ListVersionsResponse]
+  def list(request: gapiDotClientDotMlLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__ListVersionsResponse]
   /**
     * Updates the specified Version resource.
     *
     * Currently the only supported field to update is `description`.
     */
-  def patch(request: gapiDotClientDotMlLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
+  def patch(request: gapiDotClientDotMlLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
   /**
     * Designates a version to be the default for the model.
     *
@@ -60,6 +60,6 @@ trait VersionsResource extends js.Object {
     * default. You must make any subsequent changes to the default version
     * setting manually using this method.
     */
-  def setDefault(request: gapiDotClientDotMlLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Version]
+  def setDefault(request: gapiDotClientDotMlLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Version]
 }
 

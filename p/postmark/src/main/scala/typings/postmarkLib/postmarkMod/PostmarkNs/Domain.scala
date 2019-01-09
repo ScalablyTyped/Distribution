@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(postmarkLib.postmarkMod.PostmarkNs.DomainBase because Would inherit conflicting mutable fields List(DKIMVerified, SPFVerified, WeakDKIM))*/
-trait Domain extends VerificationDetails
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- postmarkLib.postmarkMod.PostmarkNs.DomainBase because var conflicts: DKIMVerified, SPFVerified, WeakDKIM. Inlined ID, Name, ReturnPathDomainVerified */ trait Domain extends VerificationDetails {
+  var ID: scala.Double
+  var Name: java.lang.String
+  var ReturnPathDomainVerified: scala.Boolean
+}
 

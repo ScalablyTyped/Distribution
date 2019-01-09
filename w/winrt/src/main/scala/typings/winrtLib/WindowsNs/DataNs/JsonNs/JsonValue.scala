@@ -31,6 +31,6 @@ object JsonValue extends js.Object {
   def createNumberValue(input: scala.Double): winrtLib.WindowsNs.DataNs.JsonNs.JsonValue = js.native
   def createStringValue(input: java.lang.String): winrtLib.WindowsNs.DataNs.JsonNs.JsonValue = js.native
   def parse(input: java.lang.String): winrtLib.WindowsNs.DataNs.JsonNs.JsonValue = js.native
-  def tryParse(input: java.lang.String): winrtLib.Anon_Result = js.native
+  def tryParse(input: java.lang.String): winrtLib.Anon_ResultSucceededBoolean = js.native
 }
 

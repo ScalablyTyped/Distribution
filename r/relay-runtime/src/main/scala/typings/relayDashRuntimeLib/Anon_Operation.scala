@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Operation extends js.Object {
-  var cacheConfig: js.UndefOr[relayDashRuntimeLib.relayDashRuntimeMod.CacheConfig] = js.undefined
   var operation: relayDashRuntimeLib.relayDashRuntimeMod.OperationSelector
-  var updater: js.UndefOr[relayDashRuntimeLib.relayDashRuntimeMod.SelectorStoreUpdater[_]] = js.undefined
+  var optimisticResponse: js.UndefOr[js.Object] = js.undefined
+  var optimisticUpdater: js.UndefOr[relayDashRuntimeLib.relayDashRuntimeMod.SelectorStoreUpdater[_]] = js.undefined
 }
 

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object SimulateNsMembers extends js.Object {
   // NOTE https://github.com/DefinitelyTyped/DefinitelyTyped/pull/3135
-  var KeyCodes: siestaLib.Anon_E = js.native
+  var KeyCodes: siestaLib.`Anon_` = js.native
 }
 

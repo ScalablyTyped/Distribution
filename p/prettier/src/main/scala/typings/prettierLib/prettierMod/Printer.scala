@@ -16,7 +16,7 @@ trait Printer extends js.Object {
       Doc | scala.Null
     ]
   ] = js.undefined
-  var handleComments: js.UndefOr[prettierLib.Anon_OwnLine] = js.undefined
+  var handleComments: js.UndefOr[prettierLib.Anon_Ast] = js.undefined
   var hasPrettierIgnore: js.UndefOr[js.Function1[/* path */ FastPath[_], scala.Boolean]] = js.undefined
   var insertPragma: js.UndefOr[js.Function1[/* text */ java.lang.String, java.lang.String]] = js.undefined
   /**

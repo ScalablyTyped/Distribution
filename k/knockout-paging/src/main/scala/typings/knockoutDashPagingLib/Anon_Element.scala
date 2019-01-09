@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait Anon_Element
-  extends org.scalablytyped.runtime.Instantiable1[/* element */ stdLib.Element, KnockoutTemplateAnonymous]
+trait Anon_Element extends js.Object {
+  def readValue(element: stdLib.HTMLElement): js.Any
+  def writeValue(element: stdLib.HTMLElement, value: js.Any): scala.Unit
+}
 

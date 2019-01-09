@@ -9,6 +9,6 @@ trait MachineTypesScopedList extends js.Object {
   /** [Output Only] List of machine types contained in this scope. */
   var machineTypes: js.UndefOr[js.Array[MachineType]] = js.undefined
   /** [Output Only] An informational warning that appears when the machine types list is empty. */
-  var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Data] = js.undefined
+  var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Code] = js.undefined
 }
 

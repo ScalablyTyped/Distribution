@@ -14,7 +14,7 @@ package object grpcMod {
   type CheckServerIdentityCallback = js.Function2[/* hostname */ java.lang.String, /* cert */ Certificate, js.UndefOr[nodeLib.Error]]
   type CloseRequester = js.Function1[/* next */ js.Function, scala.Unit]
   type Deadline = scala.Double | stdLib.Date
-  type Filename = java.lang.String | grpcLib.Anon_Root
+  type Filename = java.lang.String | grpcLib.Anon_File
   type GetPeerRequester = js.Function1[/* next */ js.Function, java.lang.String]
   type MessageListener = js.Function2[/* message */ js.Any, /* next */ js.Function, scala.Unit]
   type MessageRequester = js.Function2[/* message */ js.Any, /* next */ js.Function, scala.Unit]

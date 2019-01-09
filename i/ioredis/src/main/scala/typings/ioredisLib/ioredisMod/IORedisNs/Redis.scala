@@ -353,7 +353,7 @@ trait Redis
   def multi(): Pipeline = js.native
   def multi(commands: js.Array[js.Array[java.lang.String]]): Pipeline = js.native
   def multi(commands: js.Array[js.Array[java.lang.String]], options: MultiOptions): Pipeline = js.native
-  def multi(options: ioredisLib.Anon_Pipeline): js.Promise[java.lang.String] = js.native
+  def multi(options: ioredisLib.Anon_False): js.Promise[java.lang.String] = js.native
   def `object`(subcommand: java.lang.String, args: js.Any*): js.Any = js.native
   def persist(key: KeyType): js.Promise[ioredisLib.ioredisLibNumbers.`0` | ioredisLib.ioredisLibNumbers.`1`] = js.native
   def persist(

@@ -35,8 +35,8 @@ object StellarBaseNs extends js.Object {
   
   @js.native
   class Keypair protected () extends js.Object {
-    def this(keys: stellarDashSdkLib.Anon_Type) = this()
-    def this(keys: stellarDashSdkLib.Anon_TypeEd25519) = this()
+    def this(keys: stellarDashSdkLib.Anon_Ed25519) = this()
+    def this(keys: stellarDashSdkLib.Anon_Ed25519Key) = this()
     def canSign(): scala.Boolean = js.native
     def publicKey(): java.lang.String = js.native
     def rawPublicKey(): nodeLib.Buffer = js.native

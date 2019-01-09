@@ -22,6 +22,6 @@ trait IOrderListOptions
   /**
     * Filter orders based on when they were "paid", "fulfilled", "canceled", or "returned"
     */
-  var status_transitions: js.UndefOr[stripeLib.Anon_Paid] = js.undefined
+  var status_transitions: js.UndefOr[stripeLib.Anon_CanceledFulfilled] = js.undefined
 }
 

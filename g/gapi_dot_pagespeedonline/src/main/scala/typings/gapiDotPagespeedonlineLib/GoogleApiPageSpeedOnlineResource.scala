@@ -9,7 +9,7 @@ trait GoogleApiPageSpeedOnlineResource extends js.Object {
   /**
     * Localized PageSpeed results. Contains a ruleResults entry for each PageSpeed rule instantiated and run by the server.
     */
-  var formattedResults: Anon_RuleResults
+  var formattedResults: Anon_Locale
   /**
     * Canonicalized and final URL for the document, after following page redirects (if any).
     */
@@ -25,7 +25,7 @@ trait GoogleApiPageSpeedOnlineResource extends js.Object {
   /**
     * Summary statistics for the page, such as number of JavaScript bytes, number of HTML bytes, etc.
     */
-  var pageStats: Anon_HtmlResponseBytes
+  var pageStats: Anon_CssResponsebytes
   /**
     * Response code for the document. 200 indicates a normal page load. 4xx/5xx indicates an error.
     */
@@ -41,6 +41,6 @@ trait GoogleApiPageSpeedOnlineResource extends js.Object {
   /**
     * The version of the PageSpeed SDK used to generate these results.
     */
-  var version: Anon_Minor
+  var version: Anon_Major
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait FileConstructor
   extends org.scalablytyped.runtime.Instantiable0[NullFile]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* options */ FileConstructorOptions with adoneLib.Anon_ContentsBuffer) | (/* options */ FileConstructorOptions with adoneLib.Anon_ContentsReadable) | (/* options */ FileConstructorOptions), 
+      (/* options */ FileConstructorOptions with adoneLib.Anon_Contents) | (/* options */ FileConstructorOptions with adoneLib.Anon_ContentsReadable) | (/* options */ FileConstructorOptions), 
       BufferFile | NullFile | StreamFile
     ]
 

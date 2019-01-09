@@ -21,6 +21,6 @@ object LocalAuthenticationNs extends js.Object {
   def hasHardwareAsync(): js.Promise[scala.Boolean] = js.native
   /** Determine whether the device has saved fingerprints or facial data to use for authentication. */
   def isEnrolledAsync(): js.Promise[scala.Boolean] = js.native
-  type LocalAuthenticationResult = expoLib.Anon_Success | expoLib.Anon_SuccessFalse
+  type LocalAuthenticationResult = expoLib.Anon_Success | expoLib.Anon_ErrorFalse
 }
 

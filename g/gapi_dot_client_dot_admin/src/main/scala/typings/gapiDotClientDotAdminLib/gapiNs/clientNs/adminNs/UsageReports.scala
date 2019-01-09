@@ -15,6 +15,6 @@ trait UsageReports extends js.Object {
   /** Various application parameter records. */
   var usageReports: js.UndefOr[js.Array[UsageReport]] = js.undefined
   /** Warnings if any. */
-  var warnings: js.UndefOr[js.Array[gapiDotClientDotAdminLib.Anon_Data]] = js.undefined
+  var warnings: js.UndefOr[js.Array[gapiDotClientDotAdminLib.Anon_Code]] = js.undefined
 }
 

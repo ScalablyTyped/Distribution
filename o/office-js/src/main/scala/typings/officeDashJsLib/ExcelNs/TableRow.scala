@@ -66,7 +66,7 @@ class TableRow ()
   def load(): TableRow = js.native
   def load(option: java.lang.String): TableRow = js.native
   def load(option: js.Array[java.lang.String]): TableRow = js.native
-  def load(option: officeDashJsLib.Anon_Select): TableRow = js.native
+  def load(option: officeDashJsLib.Anon_Expand): TableRow = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.TableRowLoadOptions): TableRow = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

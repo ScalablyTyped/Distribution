@@ -11,22 +11,22 @@ trait Setting extends js.Object {
     * @deprecated Unsupported on Firefox at this time.
     */
   var onChange: firefoxDashWebextDashBrowserLib.WebExtEvent[
-    js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_LevelOfControl, scala.Unit]
+    js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_IncognitoSpecific, scala.Unit]
   ]
   /**
     * Clears the setting, restoring any default value.
     * @param details Which setting to clear.
     */
-  def clear(details: firefoxDashWebextDashBrowserLib.Anon_Scope): js.Promise[scala.Unit]
+  def clear(details: firefoxDashWebextDashBrowserLib.Anon_ScopeSettingScope): js.Promise[scala.Unit]
   /**
     * Gets the value of a setting.
     * @param details Which setting to consider.
     */
-  def get(details: firefoxDashWebextDashBrowserLib.Anon_Incognito): js.Promise[firefoxDashWebextDashBrowserLib.Anon_LevelOfControl]
+  def get(details: firefoxDashWebextDashBrowserLib.Anon_Incognito): js.Promise[firefoxDashWebextDashBrowserLib.Anon_IncognitoSpecific]
   /**
     * Sets the value of a setting.
     * @param details Which setting to change.
     */
-  def set(details: firefoxDashWebextDashBrowserLib.Anon_ValueScope): js.Promise[scala.Unit]
+  def set(details: firefoxDashWebextDashBrowserLib.Anon_Scope): js.Promise[scala.Unit]
 }
 

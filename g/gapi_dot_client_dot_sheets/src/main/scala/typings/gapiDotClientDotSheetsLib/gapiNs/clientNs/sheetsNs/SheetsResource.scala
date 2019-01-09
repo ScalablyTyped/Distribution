@@ -10,6 +10,6 @@ trait SheetsResource extends js.Object {
     * Copies a single sheet from a spreadsheet to another spreadsheet.
     * Returns the properties of the newly created sheet.
     */
-  def copyTo(request: gapiDotClientDotSheetsLib.Anon_AccesstokenSheetId): gapiDotClientLib.gapiNs.clientNs.Request[SheetProperties]
+  def copyTo(request: gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[SheetProperties]
 }
 

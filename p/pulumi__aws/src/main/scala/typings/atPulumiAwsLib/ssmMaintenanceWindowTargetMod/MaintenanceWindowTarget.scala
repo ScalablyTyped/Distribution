@@ -29,7 +29,7 @@ class MaintenanceWindowTarget protected ()
   /**
     * The targets (either instances or tags). Instances are specified using Key=instanceids,Values=instanceid1,instanceid2. Tags are specified using Key=tag name,Values=tag value.
     */
-  val targets: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ValuesKey]] = js.native
+  val targets: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_KeyValues]] = js.native
   /**
     * The Id of the maintenance window to register the target with.
     */

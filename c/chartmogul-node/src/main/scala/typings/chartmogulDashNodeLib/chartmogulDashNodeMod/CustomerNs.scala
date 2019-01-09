@@ -16,7 +16,7 @@ object CustomerNs extends js.Object {
   }
   
   trait Customer extends js.Object {
-    var address: js.UndefOr[chartmogulDashNodeLib.Anon_City] = js.undefined
+    var address: js.UndefOr[chartmogulDashNodeLib.Anon_Addresszip] = js.undefined
     var arr: js.UndefOr[scala.Double] = js.undefined
     var attributes: js.UndefOr[Attributes] = js.undefined
     var city: js.UndefOr[java.lang.String] = js.undefined

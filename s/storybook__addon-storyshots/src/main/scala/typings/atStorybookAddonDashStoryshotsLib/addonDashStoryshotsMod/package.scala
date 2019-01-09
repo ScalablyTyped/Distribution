@@ -13,7 +13,7 @@ package object addonDashStoryshotsMod {
     js.UndefOr[scala.Unit | js.Promise[scala.Unit]]
   ]
   type Test = js.Function1[
-    /* options */ atStorybookAddonDashStoryshotsLib.Anon_RenderShallowTree, 
+    /* options */ atStorybookAddonDashStoryshotsLib.Anon_Context, 
     js.UndefOr[scala.Unit | js.Promise[scala.Unit]]
   ]
 }

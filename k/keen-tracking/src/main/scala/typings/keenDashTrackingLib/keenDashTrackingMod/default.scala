@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("keen-tracking", JSImport.Default)
 @js.native
 class default protected () extends KeenTracking {
-  def this(options: keenDashTrackingLib.Anon_WriteKey) = this()
+  def this(options: keenDashTrackingLib.Anon_ProjectId) = this()
   /* CompleteClass */
   override def recordEvent(collectionName: java.lang.String, event: js.Object): js.Promise[keenDashTrackingLib.Anon_Created] = js.native
   /* CompleteClass */

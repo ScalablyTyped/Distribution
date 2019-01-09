@@ -15,7 +15,7 @@ object releaseProjectModMembers extends js.Object {
     config: gulpDashTypescriptLib.releaseTypesMod.TsConfig,
     options: typescriptLib.typescriptMod.tsNs.CompilerOptions,
     projectReferences: js.Array[typescriptLib.typescriptMod.tsNs.ProjectReference],
-    typescript: gulpDashTypescriptLib.Anon_CreateFunctionExpression,
+    typescript: gulpDashTypescriptLib.Anon_08,
     finalTransformers: gulpDashTypescriptLib.releaseTypesMod.FinalTransformers
   ): Project = js.native
 }

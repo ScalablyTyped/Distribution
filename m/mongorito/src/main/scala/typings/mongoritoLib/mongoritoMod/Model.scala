@@ -57,7 +57,7 @@ object Model extends js.Object {
     * @see mongodb.CommandCursor#toArray()
     */
   def listIndexes(): js.Promise[js.Array[_]] = js.native
-  def listIndexes(options: mongoritoLib.Anon_ReadPreference): js.Promise[js.Array[_]] = js.native
+  def listIndexes(options: mongoritoLib.Anon_BatchSize): js.Promise[js.Array[_]] = js.native
   def modifyReducer(reducerModifier: mongoritoLib.mongoritoMod.ReducerModifier): scala.Unit = js.native
   def query(method: java.lang.String, query: js.Array[js.Tuple2[java.lang.String, _]]): js.Promise[js.Array[js.Object]] = js.native
   def use(): scala.Unit = js.native

@@ -39,7 +39,7 @@ package object recomposeMod {
   type predicateDiff[T] = js.Function2[/* current */ T, /* next */ T, scala.Boolean]
   // withReducer: https://github.com/acdlite/recompose/blob/master/docs/API.md#withReducer
   type reducer[TState, TAction] = js.Function2[/* s */ TState, /* a */ TAction, TState]
-  type reducerProps[TState, TAction, TStateName /* <: java.lang.String */, TDispatchName /* <: java.lang.String */] = /* import warning: ImportType.apply Failed type conversion: {typemapped, typemapped} */ js.Any
+  type reducerProps[TState, TAction, TStateName /* <: java.lang.String */, TDispatchName /* <: java.lang.String */] = recomposeLib.recomposeLibStrings.reducerProps with js.Any
   // withState: https://github.com/acdlite/recompose/blob/master/docs/API.md#withState
-  type stateProps[TState, TStateName /* <: java.lang.String */, TStateUpdaterName /* <: java.lang.String */] = /* import warning: ImportType.apply Failed type conversion: {typemapped, typemapped} */ js.Any
+  type stateProps[TState, TStateName /* <: java.lang.String */, TStateUpdaterName /* <: java.lang.String */] = recomposeLib.recomposeLibStrings.stateProps with js.Any
 }

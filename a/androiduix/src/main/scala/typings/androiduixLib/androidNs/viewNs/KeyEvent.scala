@@ -67,7 +67,7 @@ object KeyEvent extends js.Object {
   var KEYCODE_Backquote: scala.Double = js.native
   var KEYCODE_Backslash: scala.Double = js.native
   var KEYCODE_Backspace: scala.Double = js.native
-  var KEYCODE_CHANGE_ANDROID_CHROME: androiduixLib.Anon_NoMeta = js.native
+  var KEYCODE_CHANGE_ANDROID_CHROME: androiduixLib.Anon_Alt = js.native
   var KEYCODE_Colon: scala.Double = js.native
   var KEYCODE_Comma: scala.Double = js.native
   var KEYCODE_DPAD_CENTER: scala.Double = js.native

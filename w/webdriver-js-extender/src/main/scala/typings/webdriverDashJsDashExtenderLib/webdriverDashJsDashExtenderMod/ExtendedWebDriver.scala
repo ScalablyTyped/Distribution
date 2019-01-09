@@ -16,7 +16,7 @@ trait ExtendedWebDriver
   def getCurrentContext(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
   def getCurrentDeviceActivity(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
   def getDeviceTime(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
-  def getGeolocation(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[webdriverDashJsDashExtenderLib.Anon_Latitude] = js.native
+  def getGeolocation(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[webdriverDashJsDashExtenderLib.Anon_Altitude] = js.native
   def getNetworkConnection(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[
     webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`0` | webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`1` | webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`2` | webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`3` | webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`4` | webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`5` | webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`6` | webdriverDashJsDashExtenderLib.webdriverDashJsDashExtenderLibNumbers.`7`
   ] = js.native

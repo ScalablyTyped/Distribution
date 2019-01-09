@@ -742,7 +742,7 @@ object ioBrokerNs extends js.Object {
       * Finds an object by its ID or name
       * @param type - common.type of the state
       */
-    def findForeignObjectAsync(idOrName: java.lang.String, `type`: java.lang.String): js.Promise[iobrokerLib.Anon_Name] = js.native
+    def findForeignObjectAsync(idOrName: java.lang.String, `type`: java.lang.String): js.Promise[iobrokerLib.Anon_Id] = js.native
     def formatDate(dateObj: java.lang.String, format: java.lang.String): java.lang.String = js.native
     def formatDate(dateObj: java.lang.String, isDuration: java.lang.String, format: java.lang.String): java.lang.String = js.native
     def formatDate(dateObj: java.lang.String, isDuration: scala.Boolean, format: java.lang.String): java.lang.String = js.native
@@ -838,8 +838,8 @@ object ioBrokerNs extends js.Object {
     def getEnum(name: java.lang.String, callback: GetEnumCallback): scala.Unit = js.native
     def getEnum(name: java.lang.String, options: js.Any, callback: GetEnumCallback): scala.Unit = js.native
     /** Returns the enum tree, filtered by the optional enum name */
-    def getEnumAsync(name: java.lang.String): js.Promise[iobrokerLib.Anon_Result] = js.native
-    def getEnumAsync(name: java.lang.String, options: js.Any): js.Promise[iobrokerLib.Anon_Result] = js.native
+    def getEnumAsync(name: java.lang.String): js.Promise[iobrokerLib.Anon_RequestEnum] = js.native
+    def getEnumAsync(name: java.lang.String, options: js.Any): js.Promise[iobrokerLib.Anon_RequestEnum] = js.native
     /** Returns the enum tree, filtered by the optional enum name */
     def getEnums(callback: GetEnumsCallback): scala.Unit = js.native
     def getEnums(enumList: EnumList, callback: GetEnumsCallback): scala.Unit = js.native
@@ -957,7 +957,7 @@ object ioBrokerNs extends js.Object {
     def getStatesOfAsync(parentDevice: java.lang.String, parentChannel: java.lang.String): js.Promise[js.Array[GetObjectsItem[StateObject]]] = js.native
     def getStatesOfAsync(parentDevice: java.lang.String, parentChannel: java.lang.String, options: js.Any): js.Promise[js.Array[GetObjectsItem[StateObject]]] = js.native
     /** Convert ID to {device: D, channel: C, state: S} */
-    def idToDCS(id: java.lang.String): iobrokerLib.Anon_State = js.native
+    def idToDCS(id: java.lang.String): iobrokerLib.Anon_Channel = js.native
     def mkDir(adapterName: java.lang.String, path: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def mkDir(adapterName: java.lang.String, path: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     def mkDir(adapterName: scala.Null, path: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
@@ -2418,23 +2418,23 @@ object ioBrokerNs extends js.Object {
     var type_OtherPermission: iobrokerLib.iobrokerLibStrings.other
   }
   
-  /* RemoveDifficultInheritance: 
-  - Lifted 1 members from Set(std.Partial<std.Pick<iobroker.iobroker.Global.ioBroker.ChannelObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>>) */ trait PartialChannelObject extends js.Object {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in keyof std.Pick<iobroker.iobroker.Global.ioBroker.ChannelObject, '_id' | 'native' | 'enums' | 'type' | 'acl'> ]:? std.Pick<iobroker.iobroker.Global.ioBroker.ChannelObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>[P]} */ trait PartialChannelObject extends js.Object {
     var common: js.UndefOr[stdLib.Partial[ChannelCommon]] = js.undefined
   }
   
-  /* RemoveDifficultInheritance: 
-  - Lifted 1 members from Set(std.Partial<std.Pick<iobroker.iobroker.Global.ioBroker.DeviceObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>>) */ trait PartialDeviceObject extends js.Object {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in keyof std.Pick<iobroker.iobroker.Global.ioBroker.DeviceObject, '_id' | 'native' | 'enums' | 'type' | 'acl'> ]:? std.Pick<iobroker.iobroker.Global.ioBroker.DeviceObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>[P]} */ trait PartialDeviceObject extends js.Object {
     var common: js.UndefOr[stdLib.Partial[ObjectCommon]] = js.undefined
   }
   
-  /* RemoveDifficultInheritance: 
-  - Lifted 1 members from Set(std.Partial<std.Pick<iobroker.iobroker.Global.ioBroker.OtherObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>>) */ trait PartialOtherObject extends js.Object {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in keyof std.Pick<iobroker.iobroker.Global.ioBroker.OtherObject, '_id' | 'native' | 'enums' | 'type' | 'acl'> ]:? std.Pick<iobroker.iobroker.Global.ioBroker.OtherObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>[P]} */ trait PartialOtherObject extends js.Object {
     var common: js.UndefOr[stdLib.Partial[ObjectCommon]] = js.undefined
   }
   
-  /* RemoveDifficultInheritance: 
-  - Lifted 1 members from Set(std.Partial<std.Pick<iobroker.iobroker.Global.ioBroker.StateObject, '_id' | 'native' | 'enums' | 'type'>>) */ trait PartialStateObject extends js.Object {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in keyof std.Pick<iobroker.iobroker.Global.ioBroker.StateObject, '_id' | 'native' | 'enums' | 'type'> ]:? std.Pick<iobroker.iobroker.Global.ioBroker.StateObject, '_id' | 'native' | 'enums' | 'type'>[P]} */ trait PartialStateObject extends js.Object {
     var acl: js.UndefOr[stdLib.Partial[StateACL]] = js.undefined
     var common: js.UndefOr[stdLib.Partial[StateCommon]] = js.undefined
   }
@@ -2483,10 +2483,10 @@ object ioBrokerNs extends js.Object {
   }
   
   // In set[Foreign]Object[NotExists] methods, the ID and acl of the object is optional
-  /* RemoveDifficultInheritance: 
-  - Lifted 1 members from Set(std.Pick<iobroker.iobroker.Global.ioBroker.Object, std.Exclude<keyof iobroker.iobroker.Global.ioBroker.Object, '_id' | 'acl'>>) */ trait SettableObject extends js.Object {
-    var _id: js.UndefOr[js.Any] = js.undefined
-    var acl: js.UndefOr[js.Any] = js.undefined
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in std.Exclude<keyof iobroker.iobroker.Global.ioBroker.Object, '_id' | 'acl'> ]: iobroker.iobroker.Global.ioBroker.Object[P]} */ trait SettableObject extends js.Object {
+    var _id: js.UndefOr[java.lang.String] = js.undefined
+    var acl: js.UndefOr[StateACL | ObjectACL] = js.undefined
   }
   
   trait State extends js.Object {
@@ -2839,7 +2839,7 @@ object ioBrokerNs extends js.Object {
   type ErrorCallback = js.Function1[/* err */ js.UndefOr[java.lang.String], scala.Unit]
   type ExtendObjectCallback = js.Function3[
     /* err */ java.lang.String | scala.Null, 
-    /* result */ js.UndefOr[iobrokerLib.Anon_Value], 
+    /* result */ js.UndefOr[iobrokerLib.Anon_IdValue], 
     /* id */ js.UndefOr[java.lang.String], 
     scala.Unit
   ]
@@ -2874,7 +2874,7 @@ object ioBrokerNs extends js.Object {
   ]
   type GetHistoryCallback = js.Function4[
     /* err */ java.lang.String | scala.Null, 
-    /* result */ js.Array[State with iobrokerLib.Anon_IdString], 
+    /* result */ js.Array[State with iobrokerLib.Anon_IdStringOptional], 
     /* step */ scala.Double, 
     /* sessionId */ js.UndefOr[java.lang.String], 
     scala.Unit
@@ -2886,12 +2886,12 @@ object ioBrokerNs extends js.Object {
   ]
   type GetObjectListCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 
-    /* result */ js.UndefOr[iobrokerLib.Anon_Rows], 
+    /* result */ js.UndefOr[iobrokerLib.Anon_RowsArray], 
     scala.Unit
   ]
   type GetObjectViewCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 
-    /* result */ js.UndefOr[iobrokerLib.Anon_RowsArray], 
+    /* result */ js.UndefOr[iobrokerLib.Anon_Rows], 
     scala.Unit
   ]
   type GetObjectsCallback = js.Function2[
@@ -2963,7 +2963,11 @@ object ioBrokerNs extends js.Object {
   type SecondParameterOf[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
   // end interface States
   type Session = js.Any
-  type SetObjectCallback = js.Function2[/* err */ java.lang.String | scala.Null, /* obj */ iobrokerLib.Anon_Id, scala.Unit]
+  type SetObjectCallback = js.Function2[
+    /* err */ java.lang.String | scala.Null, 
+    /* obj */ iobrokerLib.Anon_IdString, 
+    scala.Unit
+  ]
   type SetStateCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 
     /* id */ js.UndefOr[java.lang.String], 

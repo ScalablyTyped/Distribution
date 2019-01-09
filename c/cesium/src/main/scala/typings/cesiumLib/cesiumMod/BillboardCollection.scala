@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class BillboardCollection ()
   extends cesiumLib.cesiumMod.CesiumNs.BillboardCollection {
-  def this(options: cesiumLib.Anon_DebugShowBoundingVolumeScene) = this()
+  def this(options: cesiumLib.Anon_BlendOption) = this()
 }
 

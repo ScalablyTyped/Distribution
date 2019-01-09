@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial<react-map-gl.react-map-gl.ViewState>) */ trait MapboxProps extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof react-map-gl.react-map-gl.ViewState ]:? react-map-gl.react-map-gl.ViewState[P]} */ trait MapboxProps extends js.Object {
   var attributionControl: js.UndefOr[scala.Boolean] = js.undefined
   var container: js.UndefOr[js.Object] = js.undefined
   var gl: js.UndefOr[js.Object] = js.undefined

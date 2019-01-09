@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Scene ()
   extends cesiumLib.cesiumMod.CesiumNs.Scene {
-  def this(options: cesiumLib.Anon_CreditContainer) = this()
+  def this(options: cesiumLib.Anon_Canvas) = this()
 }
 

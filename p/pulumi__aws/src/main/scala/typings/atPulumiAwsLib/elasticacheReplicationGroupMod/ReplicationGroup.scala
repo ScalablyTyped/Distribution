@@ -45,7 +45,7 @@ class ReplicationGroup protected ()
   /**
     * Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
     */
-  val clusterMode: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_ReplicasPerNodeGroup] = js.native
+  val clusterMode: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_NumNodeGroups] = js.native
   /**
     * The address of the replication group configuration endpoint when cluster mode is enabled.
     */

@@ -13,7 +13,7 @@ object downloadsNsMembers extends js.Object {
     * and an object containing the properties that changed.
     */
   val onChanged: firefoxDashWebextDashBrowserLib.WebExtEvent[
-    js.Function1[/* downloadDelta */ firefoxDashWebextDashBrowserLib.Anon_StartTime, scala.Unit]
+    js.Function1[/* downloadDelta */ firefoxDashWebextDashBrowserLib.Anon_CanResume, scala.Unit]
   ] = js.native
   /* downloads events */
   /** This event fires with the DownloadItem object when a download begins. */
@@ -45,7 +45,7 @@ object downloadsNsMembers extends js.Object {
     * strings are not guaranteed to remain backwards compatible between releases. You must not parse it.
     * @param options What to download and how.
     */
-  def download(options: firefoxDashWebextDashBrowserLib.Anon_MethodBody): js.Promise[js.UndefOr[scala.Double]] = js.native
+  def download(options: firefoxDashWebextDashBrowserLib.Anon_Body): js.Promise[js.UndefOr[scala.Double]] = js.native
   /**
     * Initiate dragging the file to another application.
     * @deprecated Unsupported on Firefox at this time.

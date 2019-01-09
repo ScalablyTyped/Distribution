@@ -13,7 +13,7 @@ trait NumericMenuProvided extends js.Object {
     */
   var currentRefinement: java.lang.String
   /** the list of ranges the NumericMenu can display. */
-  var items: js.Array[reactDashInstantsearchDashCoreLib.Anon_Value]
+  var items: js.Array[reactDashInstantsearchDashCoreLib.Anon_IsRefined]
   /** a function to generate a URL for the corresponding search state */
   def createURL(args: js.Any*): js.Any
   /** a function to select a range. */

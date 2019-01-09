@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class PointModel protected ()
   extends stormDashReactDashDiagramsLib.distSrcModelsPointModelMod.PointModel {
-  def this(link: stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener], points: stormDashReactDashDiagramsLib.Anon_Y) = this()
+  def this(link: stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener], points: stormDashReactDashDiagramsLib.Anon_X) = this()
 }
 

@@ -12,13 +12,13 @@ trait OrdersResource extends js.Object {
     * See _Authentication and Authorization rules_ and
     * _Get methods rules_ for more information about this method.
     */
-  def get(request: gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenOrderId): gapiDotClientLib.gapiNs.clientNs.Request[Order]
+  def get(request: gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountIdAlt): gapiDotClientLib.gapiNs.clientNs.Request[Order]
   /**
     * List Orders owned or managed by the partner.
     *
     * See _Authentication and Authorization rules_ and
     * _List methods rules_ for more information about this method.
     */
-  def list(request: gapiDotClientDotPlaymoviespartnerLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[ListOrdersResponse]
+  def list(request: gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountIdAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ListOrdersResponse]
 }
 

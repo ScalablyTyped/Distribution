@@ -11,7 +11,7 @@ trait Options extends js.Object {
   var endpoint: java.lang.String
   var error: js.UndefOr[js.Function0[_]] = js.undefined
   var format: js.UndefOr[java.lang.String] = js.undefined
-  var headers: js.UndefOr[js.Array[oDotJsLib.Anon_Value]] = js.undefined
+  var headers: js.UndefOr[js.Array[oDotJsLib.Anon_Name]] = js.undefined
   var isAsync: js.UndefOr[scala.Boolean] = js.undefined
   var isCors: js.UndefOr[scala.Boolean] = js.undefined
   var isHashRoute: js.UndefOr[scala.Boolean] = js.undefined

@@ -89,6 +89,6 @@ object markedModMembers extends js.Object {
     *
     * @param options Hash of options
     */
-  def setOptions(options: markedLib.markedMod.markedNs.MarkedOptions): markedLib.Anon_Src = js.native
+  def setOptions(options: markedLib.markedMod.markedNs.MarkedOptions): markedLib.Anon_Callback = js.native
 }
 

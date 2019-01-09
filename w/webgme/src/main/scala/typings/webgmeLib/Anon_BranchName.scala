@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_BranchName extends js.Object {
   def apply(
-    branchName: java.lang.String,
-    parents: js.Array[webgmeLib.GmeStorageNs.CommitHash],
+    branchName: webgmeLib.GmeCommonNs.Name,
+    parents: webgmeLib.GmeStorageNs.CommitHash,
     rootHash: webgmeLib.CoreNs.ObjectHash,
     coreObjects: webgmeLib.CoreNs.DataObject,
     msg: java.lang.String
   ): js.Promise[webgmeLib.GmeStorageNs.CommitResult] = js.native
   def apply(
-    branchName: java.lang.String,
-    parents: js.Array[webgmeLib.GmeStorageNs.CommitHash],
+    branchName: webgmeLib.GmeCommonNs.Name,
+    parents: webgmeLib.GmeStorageNs.CommitHash,
     rootHash: webgmeLib.CoreNs.ObjectHash,
     coreObjects: webgmeLib.CoreNs.DataObject,
     msg: java.lang.String,

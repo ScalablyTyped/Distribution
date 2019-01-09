@@ -17,11 +17,11 @@ object coreModMembers extends js.Object {
   var defaultTransOpts: atUirouterCoreLib.libTransitionInterfaceMod.TransitionOptions = js.native
   @JSName("equals")
   val equals_FcoreModMembers: js.Any = js.native
-  val extend: atUirouterCoreLib.Anon_Target = js.native
+  val extend: atUirouterCoreLib.Anon_Source = js.native
   val forEach: js.Any = js.native
   val fromJson: js.Any = js.native
   val hostRegex: stdLib.RegExp = js.native
-  val inArray: atUirouterCoreLib.Anon_ArrayObj = js.native
+  val inArray: atUirouterCoreLib.Anon_Array = js.native
   val isDefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   val isNullOrUndefined: atUirouterCoreLib.libCommonCommonMod.Predicate[js.Any] = js.native
   var mapObj: js.Function3[
@@ -34,8 +34,8 @@ object coreModMembers extends js.Object {
   ] = js.native
   val propEq: js.Function = js.native
   val pushTo: atUirouterCoreLib.Anon_Arr = js.native
-  val removeFrom: atUirouterCoreLib.Anon_Array = js.native
-  var resolvePolicies: atUirouterCoreLib.Anon_When = js.native
+  val removeFrom: atUirouterCoreLib.Anon_ArrayObj = js.native
+  var resolvePolicies: atUirouterCoreLib.Anon_Async = js.native
   val root: js.Any = js.native
   val services: atUirouterCoreLib.libCommonCoreservicesMod.CoreServices = js.native
   val toJson: js.Any = js.native
@@ -146,10 +146,10 @@ object coreModMembers extends js.Object {
     name: java.lang.String,
     isHtml5: scala.Boolean,
     serviceClass: atUirouterCoreLib.Anon_UiRouter,
-    configurationClass: atUirouterCoreLib.Anon_UiRouterIsHtml5
+    configurationClass: atUirouterCoreLib.Anon_IsHtml5
   ): js.Function1[
     /* uiRouter */ atUirouterCoreLib.libRouterMod.UIRouter, 
-    atUirouterCoreLib.Anon_Dispose
+    atUirouterCoreLib.Anon_Configuration
   ] = js.native
   def makeEvent(
     registry: atUirouterCoreLib.libTransitionInterfaceMod.IHookRegistry,

@@ -17,7 +17,9 @@ trait CertificateAuthorityState extends js.Object {
   /**
     * Nested argument containing algorithms and certificate subject information. Defined below.
     */
-  val certificateAuthorityConfiguration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyAlgorithm]] = js.undefined
+  val certificateAuthorityConfiguration: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyAlgorithmSigningAlgorithm]
+  ] = js.undefined
   /**
     * Base64-encoded certificate chain that includes any intermediate certificates and chains up to root on-premises certificate that you used to sign your private CA certificate. The chain does not include your private CA certificate. Only available after the certificate authority certificate has been imported.
     */
@@ -41,7 +43,9 @@ trait CertificateAuthorityState extends js.Object {
   /**
     * Nested argument containing revocation configuration. Defined below.
     */
-  val revocationConfiguration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CrlConfiguration]] = js.undefined
+  val revocationConfiguration: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CrlConfigurationAnonCustomCnameEnabled]
+  ] = js.undefined
   /**
     * Serial number of the certificate authority. Only available after the certificate authority certificate has been imported.
     */

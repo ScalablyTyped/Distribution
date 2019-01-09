@@ -12,7 +12,7 @@ package object typesNs {
   type GameClubButtonIcon = wegameDashApiLib.wegameDashApiLibStrings.green | wegameDashApiLib.wegameDashApiLibStrings.white | wegameDashApiLib.wegameDashApiLibStrings.dark | wegameDashApiLib.wegameDashApiLibStrings.light
   type NetworkType = wegameDashApiLib.wegameDashApiLibStrings.wifi | wegameDashApiLib.wegameDashApiLibStrings.`2g` | wegameDashApiLib.wegameDashApiLibStrings.`3g` | wegameDashApiLib.wegameDashApiLibStrings.`4g` | wegameDashApiLib.wegameDashApiLibStrings.unknown | wegameDashApiLib.wegameDashApiLibStrings.none
   type RequestMethod = wegameDashApiLib.wegameDashApiLibStrings.GET | wegameDashApiLib.wegameDashApiLibStrings.HEAD | wegameDashApiLib.wegameDashApiLibStrings.POST | wegameDashApiLib.wegameDashApiLibStrings.PUT | wegameDashApiLib.wegameDashApiLibStrings.DELETE | wegameDashApiLib.wegameDashApiLibStrings.TRACE | wegameDashApiLib.wegameDashApiLibStrings.CONNECT
-  type SocketErrorCallback = js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsgString, scala.Unit]
-  type SocketMessageCallback = js.Function1[/* res */ wegameDashApiLib.Anon_DataString, scala.Unit]
+  type SocketErrorCallback = js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsg, scala.Unit]
+  type SocketMessageCallback = js.Function1[/* res */ wegameDashApiLib.Anon_Data, scala.Unit]
   type SocketOpenCallback = js.Function1[/* res */ wegameDashApiLib.Anon_Header, scala.Unit]
 }

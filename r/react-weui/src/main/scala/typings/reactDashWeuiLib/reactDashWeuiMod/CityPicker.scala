@@ -18,6 +18,6 @@ class CityPicker protected () extends js.Object {
 @JSImport("react-weui", "CityPicker")
 @js.native
 object CityPicker extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_DataMap = js.native
+  var defaultProps: reactDashWeuiLib.Anon_Data = js.native
 }
 

@@ -45,13 +45,7 @@ trait NodeStatic extends js.Object {
     stylusLib.stylusMod.StylusNs.NodesNs.Function
   ]
   var Group: org.scalablytyped.runtime.Instantiable0[stylusLib.stylusMod.StylusNs.NodesNs.Group]
-  var HSLA: org.scalablytyped.runtime.Instantiable4[
-    /* h */ scala.Double, 
-    /* s */ scala.Double, 
-    /* l */ scala.Double, 
-    /* a */ scala.Double, 
-    stylusLib.stylusMod.StylusNs.NodesNs.HSLA
-  ]
+  var HSLA: stylusLib.Anon_A
   var Ident: org.scalablytyped.runtime.Instantiable2[
     /* name */ java.lang.String, 
     /* val */ stylusLib.stylusMod.StylusNs.NodesNs.Node, 
@@ -97,13 +91,7 @@ trait NodeStatic extends js.Object {
     stylusLib.stylusMod.StylusNs.NodesNs.QueryExpr
   ]
   var QueryList: org.scalablytyped.runtime.Instantiable0[stylusLib.stylusMod.StylusNs.NodesNs.QueryList]
-  var RGBA: org.scalablytyped.runtime.Instantiable4[
-    /* r */ scala.Double, 
-    /* g */ scala.Double, 
-    /* b */ scala.Double, 
-    /* a */ scala.Double, 
-    stylusLib.stylusMod.StylusNs.NodesNs.RGBA
-  ]
+  var RGBA: stylusLib.Anon_AB
   var Return: org.scalablytyped.runtime.Instantiable1[
     /* expr */ stylusLib.stylusMod.StylusNs.NodesNs.Expression, 
     stylusLib.stylusMod.StylusNs.NodesNs.Return

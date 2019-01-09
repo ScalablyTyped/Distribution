@@ -20,7 +20,7 @@ class DefaultLinkWidget protected ()
   def componentDidMount_MDefaultLinkWidget(): scala.Unit = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MDefaultLinkWidget(): scala.Unit = js.native
-  def findPathAndRelativePositionToRenderLabel(index: scala.Double): stormDashReactDashDiagramsLib.Anon_Position = js.native
+  def findPathAndRelativePositionToRenderLabel(index: scala.Double): stormDashReactDashDiagramsLib.Anon_Path = js.native
   def generateLabel(label: stormDashReactDashDiagramsLib.distSrcModelsLabelModelMod.LabelModel): reactLib.reactMod.Global.JSXNs.Element = js.native
   def generateLink(path: java.lang.String, extraProps: js.Any, id: java.lang.String): reactLib.reactMod.Global.JSXNs.Element = js.native
   def generateLink(path: java.lang.String, extraProps: js.Any, id: scala.Double): reactLib.reactMod.Global.JSXNs.Element = js.native

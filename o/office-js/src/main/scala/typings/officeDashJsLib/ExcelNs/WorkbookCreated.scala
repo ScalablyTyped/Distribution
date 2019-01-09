@@ -33,7 +33,7 @@ class WorkbookCreated ()
   def load(): WorkbookCreated = js.native
   def load(option: java.lang.String): WorkbookCreated = js.native
   def load(option: js.Array[java.lang.String]): WorkbookCreated = js.native
-  def load(option: officeDashJsLib.Anon_Select): WorkbookCreated = js.native
+  def load(option: officeDashJsLib.Anon_Expand): WorkbookCreated = js.native
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.WorkbookCreatedData = js.native
 }
 

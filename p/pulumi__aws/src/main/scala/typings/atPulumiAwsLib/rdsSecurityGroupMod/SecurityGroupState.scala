@@ -19,7 +19,7 @@ trait SecurityGroupState extends js.Object {
     */
   val ingress: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SecurityGroupId]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CidrSecurityGroupId]]
     ]
   ] = js.undefined
   /**

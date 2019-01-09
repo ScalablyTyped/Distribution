@@ -75,7 +75,7 @@ class ChartLegendEntry ()
   def load(): ChartLegendEntry = js.native
   def load(option: java.lang.String): ChartLegendEntry = js.native
   def load(option: js.Array[java.lang.String]): ChartLegendEntry = js.native
-  def load(option: officeDashJsLib.Anon_Select): ChartLegendEntry = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ChartLegendEntry = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.ChartLegendEntryLoadOptions): ChartLegendEntry = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartLegendEntry): scala.Unit = js.native

@@ -13,7 +13,7 @@ object libInternalModMembers extends js.Object {
   val EMPTY_ARRAY: js.Array[scala.Nothing] = js.native
   val OBFUSCATED_ERROR: /* An invariant failed, however the error is obfuscated because this is an production build. */ java.lang.String = js.native
   var action: mobxLib.libApiActionMod.IActionFactory = js.native
-  val comparer: mobxLib.Anon_Default = js.native
+  val comparer: mobxLib.Anon_A = js.native
   var computed: mobxLib.libApiComputedMod.IComputed = js.native
   val computedDecorator: js.Function = js.native
   val deepDecorator: mobxLib.libApiObservabledecoratorMod.IObservableDecorator = js.native
@@ -54,12 +54,12 @@ object libInternalModMembers extends js.Object {
     view: js.Function1[/* r */ mobxLib.libCoreReactionMod.IReactionPublic, _],
     opts: mobxLib.libApiAutorunMod.IAutorunOptions
   ): mobxLib.libCoreReactionMod.IReactionDisposer = js.native
-  def boundActionDecorator(target: js.Any, propertyName: js.Any, descriptor: js.Any): mobxLib.Anon_Set | mobxLib.Anon_SetV | scala.Null = js.native
-  def boundActionDecorator(target: js.Any, propertyName: js.Any, descriptor: js.Any, applyToInstance: scala.Boolean): mobxLib.Anon_Set | mobxLib.Anon_SetV | scala.Null = js.native
+  def boundActionDecorator(target: js.Any, propertyName: js.Any, descriptor: js.Any): mobxLib.Anon_ConfigurableEnumerableGet | mobxLib.Anon_ConfigurableEnumerableGetSet | scala.Null = js.native
+  def boundActionDecorator(target: js.Any, propertyName: js.Any, descriptor: js.Any, applyToInstance: scala.Boolean): mobxLib.Anon_ConfigurableEnumerableGet | mobxLib.Anon_ConfigurableEnumerableGetSet | scala.Null = js.native
   def changeDependenciesStateTo0(derivation: mobxLib.libCoreDerivationMod.IDerivation): scala.Unit = js.native
   def checkIfStateModificationsAreAllowed(atom: mobxLib.libCoreAtomMod.IAtom): scala.Unit = js.native
   def clearObserving(derivation: mobxLib.libCoreDerivationMod.IDerivation): scala.Unit = js.native
-  def configure(options: mobxLib.Anon_ReactionScheduler): scala.Unit = js.native
+  def configure(options: mobxLib.Anon_Always): scala.Unit = js.native
   def createAction(actionName: java.lang.String, fn: js.Function): js.Function with mobxLib.libCoreActionMod.IAction = js.native
   def createAtom(name: java.lang.String): mobxLib.libCoreAtomMod.IAtom = js.native
   def createAtom(name: java.lang.String, onBecomeObservedHandler: js.Function0[scala.Unit]): mobxLib.libCoreAtomMod.IAtom = js.native
@@ -243,7 +243,7 @@ object libInternalModMembers extends js.Object {
     /* target */ js.Any, 
     /* prop */ js.Any, 
     /* descriptor */ mobxLib.libUtilsDecoratorsMod.BabelDescriptor, 
-    scala.Unit | mobxLib.Anon_Enumerable | mobxLib.Anon_InitializerConfigurable
+    scala.Unit | mobxLib.Anon_Configurable | mobxLib.Anon_ConfigurableEnumerable
   ] = js.native
   def noop(): scala.Unit = js.native
   def notifyListeners[T](listenable: mobxLib.libTypesListenDashUtilsMod.IListenable, change: T): scala.Unit = js.native

@@ -34,8 +34,8 @@ object nativepagesNs extends js.Object {
     *
     * In version 7.21.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativeLayout because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativeLayout because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class NativeLayout protected ()
     extends mendixmodelsdkLib.distGenPagesMod.pagesNs.FormBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -51,8 +51,8 @@ object nativepagesNs extends js.Object {
     *
     * In version 7.21.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativePage because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.INativePage because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class NativePage protected ()
     extends mendixmodelsdkLib.distGenPagesMod.pagesNs.FormBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()

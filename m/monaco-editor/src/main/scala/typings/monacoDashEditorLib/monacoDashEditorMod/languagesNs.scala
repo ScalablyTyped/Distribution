@@ -899,7 +899,7 @@ object languagesNs extends js.Object {
   trait ResourceFileEdit extends js.Object {
     var newUri: monacoDashEditorLib.monacoDashEditorMod.Uri
     var oldUri: monacoDashEditorLib.monacoDashEditorMod.Uri
-    var options: monacoDashEditorLib.Anon_IgnoreIfNotExists
+    var options: monacoDashEditorLib.Anon_IgnoreIfExists
   }
   
   trait ResourceTextEdit extends js.Object {
@@ -1458,7 +1458,7 @@ object languagesNs extends js.Object {
   @js.native
   object cssNs extends js.Object {
     trait DiagnosticsOptions extends js.Object {
-      val lint: js.UndefOr[monacoDashEditorLib.Anon_ZeroUnits] = js.undefined
+      val lint: js.UndefOr[monacoDashEditorLib.Anon_ArgumentsInColorFunction] = js.undefined
       val validate: js.UndefOr[scala.Boolean] = js.undefined
     }
     
@@ -1535,7 +1535,7 @@ object languagesNs extends js.Object {
       /**
         * A list of known schemas and/or associations of schemas to file names.
         */
-      val schemas: js.UndefOr[js.Array[monacoDashEditorLib.Anon_Uri]] = js.undefined
+      val schemas: js.UndefOr[js.Array[monacoDashEditorLib.Anon_FileMatch]] = js.undefined
       /**
         * If set, the validator will be enabled and perform syntax validation as well as schema based validation.
         */
@@ -1874,6 +1874,6 @@ object languagesNs extends js.Object {
   type ProviderResult[T] = js.UndefOr[
     T | scala.Null | (monacoDashEditorLib.monacoDashEditorMod.Thenable[js.UndefOr[T | scala.Null]])
   ]
-  type TextEdit = monacoDashEditorLib.Anon_Range | monacoDashEditorLib.Anon_RangeText
+  type TextEdit = monacoDashEditorLib.Anon_Eol | monacoDashEditorLib.Anon_EolRange
 }
 

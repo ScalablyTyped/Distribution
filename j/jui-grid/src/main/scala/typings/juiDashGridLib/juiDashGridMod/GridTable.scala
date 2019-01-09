@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait GridTable
   extends juiDashCoreLib.juiDashCoreMod.UIEvent {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: juiDashGridLib.Anon_Scroll): this.type = js.native
+  def apply(selector: js.Any, options: juiDashGridLib.Anon_Asc): this.type = js.native
   /**
     * Gets the index of a row that is activated in an extended/modified/selected state.
     *

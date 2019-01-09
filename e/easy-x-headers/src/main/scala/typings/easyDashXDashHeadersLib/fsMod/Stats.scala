@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Stats extends js.Object {
   var atime: stdLib.Date
   var blksize: scala.Double

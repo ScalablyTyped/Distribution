@@ -27,14 +27,14 @@ trait ReactNativePhotoViewProps extends js.Object {
   ] = js.undefined
   var onTap: js.UndefOr[
     js.Function2[
-      /* point */ reactDashNativeDashPhotoDashViewLib.Anon_Y, 
+      /* point */ reactDashNativeDashPhotoDashViewLib.Anon_X, 
       /* target */ js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]], 
       scala.Unit
     ]
   ] = js.undefined
   var onViewTap: js.UndefOr[
     js.Function2[
-      /* point */ reactDashNativeDashPhotoDashViewLib.Anon_Y, 
+      /* point */ reactDashNativeDashPhotoDashViewLib.Anon_X, 
       /* target */ js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]], 
       scala.Unit
     ]

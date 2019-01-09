@@ -29,7 +29,7 @@ object BasicAnimator extends js.Object {
   def GetLeftOffset(element: stdLib.HTMLElement): scala.Double = js.native
   def GetRightOffset(element: stdLib.HTMLElement): scala.Double = js.native
   def GetTopOffset(element: stdLib.HTMLElement): scala.Double = js.native
-  def GetWindowScrollPosition(): sharepointLib.Anon_Y = js.native
+  def GetWindowScrollPosition(): sharepointLib.Anon_X = js.native
   def IsPositioned(element: stdLib.HTMLElement): scala.Boolean = js.native
   def Move(element: stdLib.HTMLElement, posX: scala.Double, posY: scala.Double): scala.Unit = js.native
   def Move(

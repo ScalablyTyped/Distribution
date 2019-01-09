@@ -10,6 +10,6 @@ trait IJsonValueStatics extends js.Object {
   def createNumberValue(input: scala.Double): JsonValue
   def createStringValue(input: java.lang.String): JsonValue
   def parse(input: java.lang.String): JsonValue
-  def tryParse(input: java.lang.String): winrtLib.Anon_Result
+  def tryParse(input: java.lang.String): winrtLib.Anon_ResultSucceededBoolean
 }
 

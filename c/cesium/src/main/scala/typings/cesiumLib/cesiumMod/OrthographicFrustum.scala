@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class OrthographicFrustum ()
   extends cesiumLib.cesiumMod.CesiumNs.OrthographicFrustum {
-  def this(options: cesiumLib.Anon_Near) = this()
+  def this(options: cesiumLib.Anon_AspectRatio) = this()
   /* CompleteClass */
   override var far: scala.Double = js.native
   /* CompleteClass */

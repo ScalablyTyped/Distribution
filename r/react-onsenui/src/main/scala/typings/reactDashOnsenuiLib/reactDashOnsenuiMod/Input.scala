@@ -11,7 +11,7 @@ class Input ()
   extends Component[
       (InputHTMLAttributes[
         reactDashOnsenuiLib.reactDashOnsenuiLibStrings.min | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.max | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.step
-      ]) with reactDashOnsenuiLib.Anon_OnBlur, 
+      ]) with reactDashOnsenuiLib.Anon_Checked, 
       js.Any
     ]
 

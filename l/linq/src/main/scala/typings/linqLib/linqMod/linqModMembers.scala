@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("linq", JSImport.Namespace)
 @js.native
 object linqModMembers extends js.Object {
-  var Utils: linqLib.Anon_CreateEnumerator = js.native
+  var Utils: linqLib.Anon_CreateEnumerable = js.native
   def choice[T](params: T*): linqLib.linqMod.EnumerableNs.IEnumerable[T] = js.native
   def cycle[T](params: T*): linqLib.linqMod.EnumerableNs.IEnumerable[T] = js.native
   def defer[T](enumerableFactory: js.Function0[linqLib.linqMod.EnumerableNs.IEnumerable[T]]): linqLib.linqMod.EnumerableNs.IEnumerable[T] = js.native
@@ -19,7 +19,7 @@ object linqModMembers extends js.Object {
   def from(obj: scala.Boolean): linqLib.linqMod.EnumerableNs.IEnumerable[scala.Boolean] = js.native
   def from(obj: scala.Double): linqLib.linqMod.EnumerableNs.IEnumerable[scala.Double] = js.native
   def from[T](obj: js.Array[T]): linqLib.linqMod.EnumerableNs.IEnumerable[T] = js.native
-  def from[T](obj: linqLib.Anon_X[T]): linqLib.linqMod.EnumerableNs.IEnumerable[T] = js.native
+  def from[T](obj: linqLib.Anon_Length[T]): linqLib.linqMod.EnumerableNs.IEnumerable[T] = js.native
   def from[T](obj: linqLib.linqMod.EnumerableNs.IEnumerable[T]): linqLib.linqMod.EnumerableNs.IEnumerable[T] = js.native
   def generate[T](func: js.Function0[T]): linqLib.linqMod.EnumerableNs.IEnumerable[T] = js.native
   def generate[T](func: js.Function0[T], count: scala.Double): linqLib.linqMod.EnumerableNs.IEnumerable[T] = js.native

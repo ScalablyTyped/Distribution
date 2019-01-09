@@ -13,6 +13,6 @@ class PagerPan[T /* <: Route[RouteBase] */] ()
 @JSImport("react-native-tab-view", "PagerPan")
 @js.native
 object PagerPan extends js.Object {
-  var defaultProps: reactDashNativeDashTabDashViewLib.Anon_SwipeVelocityThreshold = js.native
+  var defaultProps: reactDashNativeDashTabDashViewLib.Anon_025 = js.native
 }
 

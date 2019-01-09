@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ trait LinuxConfiguration extends CommonLinuxOptions {
   /**
     * @deprecated
@@ -39,8 +39,8 @@ import scala.scalajs.js.annotation._
     * Please [do not put an AppImage into another archive](https://github.com/probonopd/AppImageKit/wiki/Creating-AppImages#common-mistake) like a .zip or .tar.gz.
     * @default AppImage
     */
-  val target: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify TargetConfigType */ js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify TargetConfigType */ js.Any
+  val target: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetConfigType */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetConfigType */ js.Any
   ] = js.undefined
   /**
     * The vendor. Defaults to [author](/configuration/configuration#Metadata-author).

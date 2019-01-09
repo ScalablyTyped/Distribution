@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Md5 extends js.Object {
-  var md5: js.UndefOr[scala.Boolean] = js.undefined
+  var md5: js.UndefOr[java.lang.String] = js.undefined
+  var size: js.UndefOr[scala.Boolean] = js.undefined
 }
 

@@ -12,7 +12,7 @@ object reduxDashFirstDashRouterDashRestoreDashScrollMod extends js.Object {
     /* history */ historyLib.historyMod.History[historyLib.historyMod.LocationState], 
     js.Object
   ] = js.native
-  def default(options: reduxDashFirstDashRouterDashRestoreDashScrollLib.Anon_ShouldUpdateScroll): js.Function1[
+  def default(options: reduxDashFirstDashRouterDashRestoreDashScrollLib.Anon_LocationState): js.Function1[
     /* history */ historyLib.historyMod.History[historyLib.historyMod.LocationState], 
     js.Object
   ] = js.native

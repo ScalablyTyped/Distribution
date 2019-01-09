@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CrossFilterStatic extends js.Object {
   @JSName("bisect")
-  var bisect_Original: crossfilterLib.Anon_ArrayValue = js.native
+  var bisect_Original: crossfilterLib.Anon_Accessor = js.native
   @JSName("heap")
-  var heap_Original: crossfilterLib.Anon_ArrayLoHi = js.native
+  var heap_Original: crossfilterLib.Anon_Array = js.native
   @JSName("heapselect")
-  var heapselect_Original: crossfilterLib.Anon_ArrayLo = js.native
+  var heapselect_Original: crossfilterLib.Anon_ArrayBy = js.native
   @JSName("insertionsort")
-  var insertionsort_Original: crossfilterLib.Anon_Array = js.native
+  var insertionsort_Original: crossfilterLib.Anon_ArrayByHi = js.native
   @JSName("quicksort")
-  var quicksort_Original: crossfilterLib.Anon_Array = js.native
+  var quicksort_Original: crossfilterLib.Anon_ArrayByHi = js.native
   var version: java.lang.String = js.native
   def apply[T](data: js.Array[T]): CrossFilter[T] = js.native
   def bisect[T](array: js.Array[T], value: T, lo: scala.Double, hi: scala.Double): scala.Double = js.native

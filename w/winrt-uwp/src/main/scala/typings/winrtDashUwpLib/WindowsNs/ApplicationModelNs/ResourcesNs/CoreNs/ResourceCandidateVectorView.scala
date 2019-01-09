@@ -27,7 +27,7 @@ abstract class ResourceCandidateVectorView ()
     * Returns the ResourceCandidate objects that start at the specified index in the set.
     * @param startIndex The zero-based index of the start of the ResourceCandidate objects in the set to return.
     */
-  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValueResourceCandidate = js.native
+  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValueNumberResourceCandidate = js.native
   def indexOf(value: ResourceCandidate, extra: js.Any*): winrtDashUwpLib.Anon_Index = js.native
   /**
     * Returns the index of a specified ResourceCandidate in the set.

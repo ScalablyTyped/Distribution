@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(senchaUnderscoreTouchLib.ExtNs.chartNs.IMarkerHolder because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses))*/
-trait IPie3DPart
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- senchaUnderscoreTouchLib.ExtNs.chartNs.IMarkerHolder because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses. Inlined bindMarker */ trait IPie3DPart
   extends senchaUnderscoreTouchLib.ExtNs.drawNs.spriteNs.IPath {
   /** [Config Option] (Object) */
   var baseColor: js.UndefOr[js.Any] = js.undefined

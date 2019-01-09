@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object cardDashValidatorModMembers extends js.Object {
   def cvv(value: java.lang.String): valid = js.native
   def cvv(value: java.lang.String, maxLength: scala.Double): valid = js.native
-  def expirationDate(value: cardDashValidatorLib.Anon_Year): validExpirationDate = js.native
+  def expirationDate(value: cardDashValidatorLib.Anon_Month): validExpirationDate = js.native
   def expirationDate(value: java.lang.String): validExpirationDate = js.native
   def expirationMonth(value: java.lang.String): validExpirationMonth = js.native
   def expirationYear(value: java.lang.String): validExpirationYear = js.native

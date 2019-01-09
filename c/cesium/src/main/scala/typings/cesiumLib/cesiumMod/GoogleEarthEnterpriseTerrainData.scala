@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GoogleEarthEnterpriseTerrainData protected ()
   extends cesiumLib.cesiumMod.CesiumNs.GoogleEarthEnterpriseTerrainData {
-  def this(options: cesiumLib.Anon_CreatedByUpsamplingCredits) = this()
+  def this(options: cesiumLib.Anon_BufferChildTileMask) = this()
   /* CompleteClass */
   override var credits: js.Array[cesiumLib.cesiumMod.CesiumNs.Credit] = js.native
   /* CompleteClass */

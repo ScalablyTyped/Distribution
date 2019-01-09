@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CheckboxGroup
   extends reactLib.reactMod.Component[CheckboxGroupProps, CheckboxGroupState, js.Any] {
-  def getChildContext(): antdLib.Anon_CheckboxGroupAnonToggleOption = js.native
+  def getChildContext(): antdLib.Anon_CheckboxGroupAnonDisabledOption = js.native
   def getOptions(): js.Array[CheckboxOptionType] = js.native
   def renderGroup(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   @JSName("shouldComponentUpdate")

@@ -14,7 +14,7 @@ object addonDashStoryshotsModMembers extends js.Object {
   def default[Rendered](options: InitOptions[Rendered]): scala.Unit = js.native
   def getSnapshotFileName(context: StoryContext): java.lang.String = js.native
   def imageSnapshot(): Test = js.native
-  def imageSnapshot(options: atStorybookAddonDashStoryshotsLib.Anon_GetGotoOptions): Test = js.native
+  def imageSnapshot(options: atStorybookAddonDashStoryshotsLib.Anon_BeforeScreenshot): Test = js.native
   def multiSnapshotWithOptions(options: SnapshotOptions): Test = js.native
   def snapshotWithOptions(options: SnapshotOptions): Test = js.native
 }

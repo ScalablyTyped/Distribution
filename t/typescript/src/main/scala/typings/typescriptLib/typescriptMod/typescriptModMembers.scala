@@ -80,8 +80,8 @@ object typescriptModMembers extends js.Object {
     * Vn.
     */
   def collapseTextChangeRangesAcrossMultipleVersions(changes: js.Array[typescriptLib.typescriptMod.tsNs.TextChangeRange]): typescriptLib.typescriptMod.tsNs.TextChangeRange = js.native
-  def convertCompilerOptionsFromJson(jsonOptions: js.Any, basePath: java.lang.String): typescriptLib.Anon_OptionsErrors = js.native
-  def convertCompilerOptionsFromJson(jsonOptions: js.Any, basePath: java.lang.String, configFileName: java.lang.String): typescriptLib.Anon_OptionsErrors = js.native
+  def convertCompilerOptionsFromJson(jsonOptions: js.Any, basePath: java.lang.String): typescriptLib.Anon_Errors = js.native
+  def convertCompilerOptionsFromJson(jsonOptions: js.Any, basePath: java.lang.String, configFileName: java.lang.String): typescriptLib.Anon_Errors = js.native
   /**
     * Convert the json syntax tree into the json value
     */
@@ -89,8 +89,8 @@ object typescriptModMembers extends js.Object {
     sourceFile: typescriptLib.typescriptMod.tsNs.JsonSourceFile,
     errors: typescriptLib.typescriptMod.tsNs.Push[typescriptLib.typescriptMod.tsNs.Diagnostic]
   ): js.Any = js.native
-  def convertTypeAcquisitionFromJson(jsonOptions: js.Any, basePath: java.lang.String): typescriptLib.Anon_Options = js.native
-  def convertTypeAcquisitionFromJson(jsonOptions: js.Any, basePath: java.lang.String, configFileName: java.lang.String): typescriptLib.Anon_Options = js.native
+  def convertTypeAcquisitionFromJson(jsonOptions: js.Any, basePath: java.lang.String): typescriptLib.Anon_ErrorsOptions = js.native
+  def convertTypeAcquisitionFromJson(jsonOptions: js.Any, basePath: java.lang.String, configFileName: java.lang.String): typescriptLib.Anon_ErrorsOptions = js.native
   def couldStartTrivia(text: java.lang.String, pos: scala.Double): scala.Boolean = js.native
   def createAbstractBuilder(): typescriptLib.typescriptMod.tsNs.BuilderProgram = js.native
   /**
@@ -1680,7 +1680,7 @@ object typescriptModMembers extends js.Object {
     name: typescriptLib.typescriptMod.tsNs.PropertyName,
     questionToken: typescriptLib.typescriptMod.tsNs.QuestionToken
   ): typescriptLib.typescriptMod.tsNs.MethodSignature = js.native
-  def createModifier[T /* <: js.Any */](kind: T): typescriptLib.typescriptMod.tsNs.Token[T] = js.native
+  def createModifier[T /* <: js.UndefOr[typescriptLib.typescriptMod.tsNs.SyntaxKind] */](kind: T): typescriptLib.typescriptMod.tsNs.Token[T] = js.native
   def createModifiersFromModifierFlags(flags: typescriptLib.typescriptMod.tsNs.ModifierFlags): js.Array[typescriptLib.typescriptMod.tsNs.Modifier] = js.native
   def createModuleBlock(statements: js.Array[typescriptLib.typescriptMod.tsNs.Statement]): typescriptLib.typescriptMod.tsNs.ModuleBlock = js.native
   def createModuleDeclaration(
@@ -6243,10 +6243,10 @@ object typescriptModMembers extends js.Object {
     * Checks to see if the locale is in the appropriate format,
     * and if it is, attempts to set the appropriate language.
     */
-  def validateLocaleAndSetLanguage(locale: java.lang.String, sys: typescriptLib.Anon_GetExecutingFilePath): scala.Unit = js.native
+  def validateLocaleAndSetLanguage(locale: java.lang.String, sys: typescriptLib.Anon_FileExists): scala.Unit = js.native
   def validateLocaleAndSetLanguage(
     locale: java.lang.String,
-    sys: typescriptLib.Anon_GetExecutingFilePath,
+    sys: typescriptLib.Anon_FileExists,
     errors: typescriptLib.typescriptMod.tsNs.Push[typescriptLib.typescriptMod.tsNs.Diagnostic]
   ): scala.Unit = js.native
   /**
@@ -6265,13 +6265,13 @@ object typescriptModMembers extends js.Object {
     node: T,
     visitor: typescriptLib.typescriptMod.tsNs.Visitor,
     context: typescriptLib.typescriptMod.tsNs.TransformationContext,
-    nodesVisitor: typescriptLib.Anon_Nodes
+    nodesVisitor: typescriptLib.Anon_Count
   ): js.UndefOr[T] = js.native
   def visitEachChild[T /* <: typescriptLib.typescriptMod.tsNs.Node */](
     node: T,
     visitor: typescriptLib.typescriptMod.tsNs.Visitor,
     context: typescriptLib.typescriptMod.tsNs.TransformationContext,
-    nodesVisitor: typescriptLib.Anon_Nodes,
+    nodesVisitor: typescriptLib.Anon_Count,
     tokenVisitor: typescriptLib.typescriptMod.tsNs.Visitor
   ): js.UndefOr[T] = js.native
   def visitEachChild[T /* <: typescriptLib.typescriptMod.tsNs.Node */](
@@ -6283,13 +6283,13 @@ object typescriptModMembers extends js.Object {
     node: js.UndefOr[scala.Nothing],
     visitor: typescriptLib.typescriptMod.tsNs.Visitor,
     context: typescriptLib.typescriptMod.tsNs.TransformationContext,
-    nodesVisitor: typescriptLib.Anon_Nodes
+    nodesVisitor: typescriptLib.Anon_Count
   ): js.UndefOr[T] = js.native
   def visitEachChild[T /* <: typescriptLib.typescriptMod.tsNs.Node */](
     node: js.UndefOr[scala.Nothing],
     visitor: typescriptLib.typescriptMod.tsNs.Visitor,
     context: typescriptLib.typescriptMod.tsNs.TransformationContext,
-    nodesVisitor: typescriptLib.Anon_Nodes,
+    nodesVisitor: typescriptLib.Anon_Count,
     tokenVisitor: typescriptLib.typescriptMod.tsNs.Visitor
   ): js.UndefOr[T] = js.native
   /**
@@ -6626,7 +6626,7 @@ object typescriptModMembers extends js.Object {
     nodes: js.UndefOr[scala.Nothing],
     visitor: typescriptLib.typescriptMod.tsNs.Visitor,
     context: typescriptLib.typescriptMod.tsNs.TransformationContext,
-    nodesVisitor: typescriptLib.Anon_Nodes
+    nodesVisitor: typescriptLib.Anon_Count
   ): typescriptLib.typescriptMod.tsNs.NodeArray[typescriptLib.typescriptMod.tsNs.ParameterDeclaration] = js.native
   /**
     * Starts a new lexical environment and visits a parameter list, suspending the lexical
@@ -6641,7 +6641,7 @@ object typescriptModMembers extends js.Object {
     nodes: typescriptLib.typescriptMod.tsNs.NodeArray[typescriptLib.typescriptMod.tsNs.ParameterDeclaration],
     visitor: typescriptLib.typescriptMod.tsNs.Visitor,
     context: typescriptLib.typescriptMod.tsNs.TransformationContext,
-    nodesVisitor: typescriptLib.Anon_Nodes
+    nodesVisitor: typescriptLib.Anon_Count
   ): typescriptLib.typescriptMod.tsNs.NodeArray[typescriptLib.typescriptMod.tsNs.ParameterDeclaration] = js.native
   def walkUpBindingElementsAndPatterns(binding: typescriptLib.typescriptMod.tsNs.BindingElement): typescriptLib.typescriptMod.tsNs.VariableDeclaration | typescriptLib.typescriptMod.tsNs.ParameterDeclaration = js.native
 }

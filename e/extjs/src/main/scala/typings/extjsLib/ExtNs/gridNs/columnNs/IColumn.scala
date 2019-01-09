@@ -43,8 +43,6 @@ trait IColumn
   var emptyCellText: js.UndefOr[java.lang.String] = js.undefined
   /** [Config Option] (Object/String) */
   var field: js.UndefOr[js.Any] = js.undefined
-  /** [Config Option] (Boolean) */
-  var fixed: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Retrieves the editing field for editing associated with this header
   		* @param record Object The Model instance being edited.
   		* @param defaultField Object An object representing a default field to be created

@@ -187,7 +187,7 @@ object srcViewModMembers extends js.Object {
     bootstrapComponents: js.Array[atAngularCoreLib.srcTypeMod.Type[_]],
     defFactory: atAngularCoreLib.srcViewTypesMod.NgModuleDefinitionFactory
   ): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
-  def createRendererType2(values: atAngularCoreLib.Anon_Encapsulation): atAngularCoreLib.srcRenderApiMod.RendererType2 = js.native
+  def createRendererType2(values: atAngularCoreLib.Anon_Data): atAngularCoreLib.srcRenderApiMod.RendererType2 = js.native
   def detachEmbeddedView(elementData: atAngularCoreLib.srcViewTypesMod.ElementData): atAngularCoreLib.srcViewTypesMod.ViewData | scala.Null = js.native
   def detachEmbeddedView(elementData: atAngularCoreLib.srcViewTypesMod.ElementData, viewIndex: scala.Double): atAngularCoreLib.srcViewTypesMod.ViewData | scala.Null = js.native
   def directiveDef(

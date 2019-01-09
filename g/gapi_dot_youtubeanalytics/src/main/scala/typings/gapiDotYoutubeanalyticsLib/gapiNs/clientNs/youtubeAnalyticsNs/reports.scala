@@ -9,6 +9,6 @@ trait reports extends js.Object {
   /**
     * Retrieve your YouTube Analytics reports.
     */
-  def query(`object`: gapiDotYoutubeanalyticsLib.Anon_Maxresults): gapiLib.gapiNs.clientNs.HttpRequest[_]
+  def query(`object`: gapiDotYoutubeanalyticsLib.Anon_Dimensions): gapiLib.gapiNs.clientNs.HttpRequest[_]
 }
 

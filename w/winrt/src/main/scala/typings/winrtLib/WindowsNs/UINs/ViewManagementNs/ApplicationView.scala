@@ -43,7 +43,7 @@ class ApplicationView () extends js.Object {
   /**
   			 * Gets the title bar of the app.
   			**/
-  var titleBar: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ApplicationViewTitleBar */ js.Any = js.native
+  var titleBar: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ApplicationViewTitleBar */ js.Any = js.native
 }
 
 @JSGlobal("Windows.UI.ViewManagement.ApplicationView")

@@ -25,7 +25,7 @@ class BotUser () extends User {
   def transferKnuddel(
     receivingUserOrAccount: KnuddelAccount,
     knuddelAmount: KnuddelAmount,
-    parameters: knuddelsDashUserappsDashApiLib.Anon_OnErrorMessage
+    parameters: knuddelsDashUserappsDashApiLib.Anon_DisplayReasonText
   ): scala.Unit = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/BotUser.html#method_transferKnuddel
@@ -34,7 +34,7 @@ class BotUser () extends User {
   def transferKnuddel(
     receivingUserOrAccount: User,
     knuddelAmount: KnuddelAmount,
-    parameters: knuddelsDashUserappsDashApiLib.Anon_OnErrorMessage
+    parameters: knuddelsDashUserappsDashApiLib.Anon_DisplayReasonText
   ): scala.Unit = js.native
 }
 

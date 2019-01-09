@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object pemModMembers extends js.Object {
   def config(options: ModuleConfiguration): scala.Unit = js.native
-  def createCSR(callback: Callback[pemLib.Anon_Csr]): scala.Unit = js.native
-  def createCSR(options: CSRCreationOptions, callback: Callback[pemLib.Anon_Csr]): scala.Unit = js.native
+  def createCSR(callback: Callback[pemLib.Anon_ClientKey]): scala.Unit = js.native
+  def createCSR(options: CSRCreationOptions, callback: Callback[pemLib.Anon_ClientKey]): scala.Unit = js.native
   def createCertificate(callback: Callback[CertificateCreationResult]): scala.Unit = js.native
   def createCertificate(options: CertificateCreationOptions, callback: Callback[CertificateCreationResult]): scala.Unit = js.native
   def createDhparam(callback: Callback[pemLib.Anon_Dhparam]): scala.Unit = js.native

@@ -242,7 +242,7 @@ class PageLayout ()
   def load(): PageLayout = js.native
   def load(option: java.lang.String): PageLayout = js.native
   def load(option: js.Array[java.lang.String]): PageLayout = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): PageLayout = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): PageLayout = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.PageLayoutLoadOptions): PageLayout = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

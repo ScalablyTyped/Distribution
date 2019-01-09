@@ -13,11 +13,13 @@ trait FleetArgs extends js.Object {
   /**
     * Nested argument containing EC2 Launch Template configurations. Defined below.
     */
-  val launchTemplateConfig: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Overrides]
+  val launchTemplateConfig: atPulumiPulumiLib.resourceMod.Input[
+    atPulumiAwsLib.Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZoneInstanceType
+  ]
   /**
     * Nested argument containing On-Demand configurations. Defined below.
     */
-  val onDemandOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllocationStrategy]] = js.undefined
+  val onDemandOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllocationStrategyInput]] = js.undefined
   /**
     * Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
     */
@@ -25,7 +27,11 @@ trait FleetArgs extends js.Object {
   /**
     * Nested argument containing Spot configurations. Defined below.
     */
-  val spotOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_InstancePoolsToUseCount]] = js.undefined
+  val spotOptions: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[
+      atPulumiAwsLib.Anon_AllocationStrategyInstanceInterruptionBehaviorInstancePoolsToUseCount
+    ]
+  ] = js.undefined
   /**
     * Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
     */
@@ -37,7 +43,7 @@ trait FleetArgs extends js.Object {
   /**
     * Nested argument containing target capacity configurations. Defined below.
     */
-  val targetCapacitySpecification: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DefaultTargetCapacityType]
+  val targetCapacitySpecification: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DefaultTargetCapacityTypeOnDemandTargetCapacity]
   /**
     * Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
     */

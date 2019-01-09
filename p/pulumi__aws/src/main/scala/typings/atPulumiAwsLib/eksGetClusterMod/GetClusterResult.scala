@@ -13,7 +13,7 @@ trait GetClusterResult extends js.Object {
   /**
     * Nested attribute containing `certificate-authority-data` for your cluster.
     */
-  val certificateAuthority: atPulumiAwsLib.Anon_Data
+  val certificateAuthority: atPulumiAwsLib.Anon_DataString
   /**
     * The Unix epoch time stamp in seconds for when the cluster was created.
     */
@@ -41,6 +41,6 @@ trait GetClusterResult extends js.Object {
   /**
     * Nested attribute containing VPC configuration for the cluster.
     */
-  val vpcConfig: atPulumiAwsLib.Anon_VpcIdSecurityGroupIds
+  val vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
 }
 

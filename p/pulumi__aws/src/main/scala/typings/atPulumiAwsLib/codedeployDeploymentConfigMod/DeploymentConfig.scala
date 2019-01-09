@@ -33,11 +33,11 @@ class DeploymentConfig protected ()
   /**
     * A minimum_healthy_hosts block. Minimum Healthy Hosts are documented below.
     */
-  val minimumHealthyHosts: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TypeValueStringNumber]] = js.native
+  val minimumHealthyHosts: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TypeValue]] = js.native
   /**
     * A traffic_routing_config block. Traffic Routing Config is documented below.
     */
-  val trafficRoutingConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TypeTimeBasedCanaryTimeBasedLinear]] = js.native
+  val trafficRoutingConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TimeBasedCanary]] = js.native
 }
 
 @JSImport("@pulumi/aws/codedeploy/deploymentConfig", "DeploymentConfig")

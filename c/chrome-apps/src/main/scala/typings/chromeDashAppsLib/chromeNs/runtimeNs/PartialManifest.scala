@@ -44,7 +44,7 @@ trait PartialManifest extends js.Object {
     * App author information
     * @see[Not implemented anywhere in code]{@link https://github.com/chromium/chromium/blob/master/chrome/browser/chromeos/extensions/device_local_account_management_policy_provider.cc#L46}
     */
-  var author: js.UndefOr[chromeDashAppsLib.Anon_Name | js.Any] = js.undefined
+  var author: js.UndefOr[chromeDashAppsLib.Anon_Email | js.Any] = js.undefined
   /**
     * Allows inspection of page contents, not enabled on stable anyways except for whitelist.
     * @see[Docs]{@link https://github.com/chromium/chromium/blob/master/extensions/common/manifest_handlers/automation.cc}
@@ -56,12 +56,12 @@ trait PartialManifest extends js.Object {
     * chrome.bluetoothLowEnergy APIs.
     * @requires Platforms: Chrome OS, Windows and Mac
     */
-  var bluetooth: js.UndefOr[chromeDashAppsLib.Anon_Socket] = js.undefined
+  var bluetooth: js.UndefOr[chromeDashAppsLib.Anon_Lowenergy] = js.undefined
   /**
     * Use the commands API to add keyboard shortcuts that trigger actions in your app.
     * E.g. an action to open the browser action or send a command to the app.
     */
-  var commands: js.UndefOr[org.scalablytyped.runtime.StringDictionary[chromeDashAppsLib.Anon_Suggestedkey]] = js.undefined
+  var commands: js.UndefOr[org.scalablytyped.runtime.StringDictionary[chromeDashAppsLib.Anon_Description]] = js.undefined
   /**
     * An implementation detail (actually written by Chrome, not the app author).
     */
@@ -100,21 +100,21 @@ trait PartialManifest extends js.Object {
     * Declares which extensions, apps, and web pages can connect
     * to your extension via runtime.connect and runtime.sendMessage.
     */
-  var externally_connectable: chromeDashAppsLib.Anon_MatchesAccepttlschannelid
+  var externally_connectable: chromeDashAppsLib.Anon_Accepttlschannelid
   /**
     * @requires Permissions: 'fileBrowserHandle'
     * @requires Location': 'component'
     * You can specify locale-specific strings for the value of 'default_title'
     */
-  var file_browser_handlers: js.UndefOr[js.Array[chromeDashAppsLib.Anon_Defaulttitle]] = js.undefined
+  var file_browser_handlers: js.UndefOr[js.Array[chromeDashAppsLib.Anon_Defaulticon]] = js.undefined
   /**
     * Triggers a launch of the app when one of these files are handled.
     */
-  var file_handlers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[chromeDashAppsLib.Anon_Extensions]] = js.undefined
+  var file_handlers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[chromeDashAppsLib.`Anon_`]] = js.undefined
   /**
     * Files app uses above information in order to render related UI elements approprietly.
     */
-  var file_system_provider_capabilities: js.UndefOr[chromeDashAppsLib.Anon_Source] = js.undefined
+  var file_system_provider_capabilities: js.UndefOr[chromeDashAppsLib.Anon_Configurable] = js.undefined
   /**
     * One or more icons that represent the extension, app, or theme.
     * You should always provide a 128x128 icon; it's used during
@@ -203,7 +203,7 @@ trait PartialManifest extends js.Object {
     * @see[NDK Docs]{@link https://github.com/crosswalk-project/chromium-crosswalk/blob/af36cc3ce3f5fcb8033f16236725718f8012abfe/native_client_sdk/src/doc/devguide/distributing.rst}
     * @see[Chromium Source]{@link https://github.com/crosswalk-project/chromium-crosswalk/blob/af36cc3ce3f5fcb8033f16236725718f8012abfe/native_client_sdk/src/tools/fix_manifest.py}
     */
-  var platforms: js.UndefOr[js.Array[chromeDashAppsLib.Anon_Subpackagepath]] = js.undefined
+  var platforms: js.UndefOr[js.Array[chromeDashAppsLib.Anon_Naclarch]] = js.undefined
   /**
     * Technologies required by the app. Hosting sites such
     * as the Chrome Web Store may use this list to dissuade
@@ -239,7 +239,7 @@ trait PartialManifest extends js.Object {
     * The sockets manifest property declares which permissions are available
     * for the sockets.udp, sockets.tcp and sockets.tcpServer APIs.
     */
-  var sockets: js.UndefOr[chromeDashAppsLib.Anon_TcpServer] = js.undefined
+  var sockets: js.UndefOr[chromeDashAppsLib.Anon_Tcp] = js.undefined
   /**
     * Unlike the local and sync storage areas,
     * the managed storage area requires its structure
@@ -283,7 +283,7 @@ trait PartialManifest extends js.Object {
     */
   var url_handlers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[chromeDashAppsLib.Anon_Matches]] = js.undefined
   /** The usbPrinters manifest property declares which USB printers are supported by an app using the printerProvider API. */
-  var usb_printers: js.UndefOr[chromeDashAppsLib.Anon_FiltersArray] = js.undefined
+  var usb_printers: js.UndefOr[chromeDashAppsLib.Anon_Filters] = js.undefined
   /**
     * One to four dot-separated integers identifying the version of this app.
     * A couple of rules apply to the integers: they must be between 0 and 65535, inclusive,

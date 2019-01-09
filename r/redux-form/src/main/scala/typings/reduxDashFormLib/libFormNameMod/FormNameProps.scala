@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FormNameProps extends js.Object {
-  def children(props: reduxDashFormLib.Anon_FormString): reactLib.reactMod.ReactNs.ReactNode
+  def children(props: reduxDashFormLib.Anon_Form): reactLib.reactMod.ReactNs.ReactNode
 }
 

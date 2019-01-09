@@ -32,7 +32,7 @@ trait ITextParagraphFormat extends js.Object {
   def clearAllTabs(): scala.Unit
   def deleteTab(position: scala.Double): scala.Unit
   def getClone(): ITextParagraphFormat
-  def getTab(index: scala.Double): winrtLib.Anon_Position
+  def getTab(index: scala.Double): winrtLib.Anon_Align
   def isEqual(format: ITextParagraphFormat): scala.Boolean
   def setClone(format: ITextParagraphFormat): scala.Unit
   def setIndents(start: scala.Double, left: scala.Double, right: scala.Double): scala.Unit

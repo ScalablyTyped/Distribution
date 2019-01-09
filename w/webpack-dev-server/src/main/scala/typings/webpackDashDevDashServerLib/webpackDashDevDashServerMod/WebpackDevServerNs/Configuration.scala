@@ -76,7 +76,7 @@ trait Configuration extends js.Object {
   /** Specify a page to navigate to when opening the browser. */
   var openPage: js.UndefOr[java.lang.String] = js.undefined
   /** Shows a full-screen overlay in the browser when there are compiler errors or warnings. Disabled by default. */
-  var overlay: js.UndefOr[scala.Boolean | webpackDashDevDashServerLib.Anon_Warnings] = js.undefined
+  var overlay: js.UndefOr[scala.Boolean | webpackDashDevDashServerLib.Anon_Errors] = js.undefined
   /** When used via the CLI, a path to an SSL .pfx file. If used in options, it should be the bytestream of the .pfx file. */
   var pfx: js.UndefOr[java.lang.String] = js.undefined
   /** The passphrase to a SSL PFX file. */

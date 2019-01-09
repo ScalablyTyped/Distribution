@@ -11,6 +11,6 @@ trait Anon_GetMeshMixin extends js.Object {
       aframeLib.aframeMod.ObjectMap[aframeLib.aframeMod.Component[_, aframeLib.aframeMod.System[_]]]
     ]
   ]
-  def getMeshMixin(): Anon_Mappings
+  def getMeshMixin(): Anon_DefaultComponents
 }
 

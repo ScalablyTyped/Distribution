@@ -27,7 +27,7 @@ trait Options extends js.Object {
   /**
     * Hash options
     */
-  var hashOptions: js.UndefOr[postcssDashUrlLib.Anon_Shrink] = js.undefined
+  var hashOptions: js.UndefOr[postcssDashUrlLib.Anon_Append] = js.undefined
   /**
     * Do not warn when an SVG URL with a fragment is inlined.
     * PostCSS-URL does not support partial inlining.

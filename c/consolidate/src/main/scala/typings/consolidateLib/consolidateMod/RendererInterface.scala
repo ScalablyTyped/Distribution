@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation._
 trait RendererInterface extends js.Object {
   def apply(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   def apply(path: java.lang.String, fn: js.Function2[/* err */ nodeLib.Error, /* html */ java.lang.String, _]): js.Any = js.native
-  def apply(path: java.lang.String, options: consolidateLib.Anon_OtherOptions): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
+  def apply(path: java.lang.String, options: consolidateLib.Anon_Cache): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   def apply(
     path: java.lang.String,
-    options: consolidateLib.Anon_OtherOptions,
+    options: consolidateLib.Anon_Cache,
     fn: js.Function2[/* err */ nodeLib.Error, /* html */ java.lang.String, _]
   ): js.Any = js.native
   def render(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   def render(path: java.lang.String, fn: js.Function2[/* err */ nodeLib.Error, /* html */ java.lang.String, _]): js.Any = js.native
-  def render(path: java.lang.String, options: consolidateLib.Anon_OtherOptions): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
+  def render(path: java.lang.String, options: consolidateLib.Anon_Cache): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   def render(
     path: java.lang.String,
-    options: consolidateLib.Anon_OtherOptions,
+    options: consolidateLib.Anon_Cache,
     fn: js.Function2[/* err */ nodeLib.Error, /* html */ java.lang.String, _]
   ): js.Any = js.native
 }

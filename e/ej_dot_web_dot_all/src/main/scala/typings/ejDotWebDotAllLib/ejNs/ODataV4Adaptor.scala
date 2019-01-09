@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class ODataV4Adaptor () extends ODataAdaptor {
   @JSName("options")
   var options_ODataV4Adaptor: ODataAdaptorOptions = js.native
-  def processQuery(ds: js.Any, query: Query): ejDotWebDotAllLib.Anon_Url = js.native
+  def processQuery(ds: js.Any, query: Query): ejDotWebDotAllLib.Anon_ContentType = js.native
 }
 

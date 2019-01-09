@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ @js.native
 trait TraceProxy extends js.Object {
   /**
     * Get the span from the current context.
     * @returns The current span or null if outside a trace context.
     */
-  def currentSpan(): (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Span */ js.Any) | scala.Null = js.native
+  def currentSpan(): (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Span */ js.Any) | scala.Null = js.native
   /**
     * Initializes the tracer. This should be called before importing other libraries.
     */
@@ -27,7 +27,9 @@ trait TraceProxy extends js.Object {
     * @param operationName The operation name to be used for this span.
     * @param options Configuration options. These will take precedence over environment variables.
     */
-  def trace(operationName: java.lang.String, options: TraceOptions): js.Promise[/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Span */ _] = js.native
+  def trace(operationName: java.lang.String, options: TraceOptions): js.Promise[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Span */ _
+  ] = js.native
   /**
     * Initiate a trace and creates a new span.
     * @param operationName The operation name to be used for this span.
@@ -37,7 +39,7 @@ trait TraceProxy extends js.Object {
     operationName: java.lang.String,
     options: TraceOptions,
     callback: js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Span */ /* span */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Span */ /* span */ js.Any, 
       scala.Unit
     ]
   ): scala.Unit = js.native

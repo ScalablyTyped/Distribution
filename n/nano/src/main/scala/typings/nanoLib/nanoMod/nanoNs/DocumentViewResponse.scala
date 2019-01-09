@@ -10,7 +10,7 @@ trait DocumentViewResponse[V, D] extends js.Object {
   // Offset where the document list started.
   var offset: scala.Double
   //  Array of view row objects. By default the information returned contains only the document ID and revision.
-  var rows: js.Array[nanoLib.Anon_Key[D, V]]
+  var rows: js.Array[nanoLib.Anon_DocId[V, D]]
   // Number of documents in the database/view.
   var total_rows: scala.Double
   // Current update sequence for the database

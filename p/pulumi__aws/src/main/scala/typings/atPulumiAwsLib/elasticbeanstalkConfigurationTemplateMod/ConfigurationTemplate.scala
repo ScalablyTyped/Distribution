@@ -39,7 +39,7 @@ class ConfigurationTemplate protected ()
     * override specific values that are set as defaults. The format is detailed
     * below in Option Settings
     */
-  val settings: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_NamespaceResourceValue]] = js.native
+  val settings: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_NameNamespace]] = js.native
   /**
     * A solution stack to base your Template
     * off of. Example stacks can be found in the [Amazon API documentation][1]

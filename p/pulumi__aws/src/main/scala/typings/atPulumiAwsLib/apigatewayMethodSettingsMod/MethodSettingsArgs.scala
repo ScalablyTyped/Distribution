@@ -17,7 +17,7 @@ trait MethodSettingsArgs extends js.Object {
   /**
     * The settings block, see below.
     */
-  val settings: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CacheTtlInSecondsThrottlingBurstLimit]
+  val settings: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CacheDataEncryptedCacheTtlInSeconds]
   /**
     * The name of the stage
     */

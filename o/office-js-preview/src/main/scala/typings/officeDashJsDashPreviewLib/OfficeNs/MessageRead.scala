@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
   * Important: This is an internal Outlook object, not directly exposed through existing interfaces. 
   * You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
   */
-/* RemoveMultipleInheritance: Dropped parents List(officeDashJsDashPreviewLib.OfficeNs.ItemRead because Would inherit conflicting mutable fields List(body, dateTimeCreated, dateTimeModifed, itemType, notificationMessages, recurrence, seriesId))*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- officeDashJsDashPreviewLib.OfficeNs.ItemRead because var conflicts: body, dateTimeCreated, dateTimeModifed, itemType, notificationMessages, recurrence, seriesId. Inlined attachments, itemClass, itemId, normalizedSubject, subject, displayReplyAllForm, displayReplyAllForm, displayReplyForm, displayReplyForm, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getEntities, getEntitiesByType, getFilteredEntitiesByName, getRegExMatches, getRegExMatchesByName, getSelectedEntities, getSelectedRegExMatches */ @js.native
 trait MessageRead extends Message {
   /**
     * Gets the item's attachments as an array.
@@ -242,6 +242,31 @@ trait MessageRead extends Message {
     *  OR
     * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function
     */
+  /**
+    * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the 
+    * selected appointment.
+    *
+    * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+    *
+    * If any of the string parameters exceed their limits, displayReplyAllForm throws an exception.
+    *
+    * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and 
+    * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
+    * If this isn't possible, then no error message is thrown.
+    *
+    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    *
+    * [Api set: Mailbox 1.0]
+    *
+    * @remarks
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    *
+    * @param formData A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
+    *  OR
+    * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function
+    */
   def displayReplyAllForm(formData: java.lang.String): scala.Unit = js.native
   def displayReplyAllForm(formData: ReplyFormData): scala.Unit = js.native
   /**
@@ -269,6 +294,31 @@ trait MessageRead extends Message {
     * OR
     * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
     */
+  /**
+    * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
+    *
+    * In Outlook Web App, the reply form is displayed as a pop-out form in the 3-column view and a pop-up form in the 2- or 1-column view.
+    *
+    * If any of the string parameters exceed their limits, displayReplyForm throws an exception.
+    *
+    * When attachments are specified in the formData.attachments parameter, Outlook and Outlook Web App attempt to download all attachments and 
+    * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
+    * If this isn't possible, then no error message is thrown.
+    *
+    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    *
+    * [Api set: Mailbox 1.0]
+    *
+    * @remarks
+    *
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    *
+    * @param formData A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
+    * OR
+    * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    */
   def displayReplyForm(formData: java.lang.String): scala.Unit = js.native
   def displayReplyForm(formData: ReplyFormData): scala.Unit = js.native
   /**
@@ -283,6 +333,19 @@ trait MessageRead extends Message {
     * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
+    */
+  /**
+    * Gets the entities found in the selected item's body.
+    *
+    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    *
+    * [Api set: Mailbox 1.0]
+    *
+    * @remarks
+    *
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
     */
   def getEntities(): Entities = js.native
   /**
@@ -301,6 +364,71 @@ trait MessageRead extends Message {
     *
     * @remarks
     * 
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
+    *
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    * 
+    * While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the 
+    * following table.
+    * 
+    * <table>
+    *   <tr>
+    *     <th>Value of entityType</th>
+    *     <th>Type of objects in returned array</th>
+    *     <th>Required Permission Leve</th>
+    *   </tr>
+    *   <tr>
+    *     <td>Address</td>
+    *     <td>String</td>
+    *     <td>Restricted</td>
+    *   </tr>
+    *   <tr>
+    *     <td>Contact</td>
+    *     <td>Contact</td>
+    *     <td>ReadItem</td>
+    *   </tr>
+    *   <tr>
+    *     <td>EmailAddress</td>
+    *     <td>String</td>
+    *     <td>ReadItem</td>
+    *   </tr>
+    *   <tr>
+    *     <td>MeetingSuggestion</td>
+    *     <td>MeetingSuggestion</td>
+    *     <td>ReadItem</td>
+    *   </tr>
+    *   <tr>
+    *     <td>PhoneNumber</td>
+    *     <td>PhoneNumber</td>
+    *     <td>Restricted</td>
+    *   </tr>
+    *   <tr>
+    *     <td>TaskSuggestion</td>
+    *     <td>TaskSuggestion</td>
+    *     <td>ReadItem</td>
+    *   </tr>
+    *   <tr>
+    *     <td>URL</td>
+    *     <td>String</td>
+    *     <td>Restricted</td>
+    *   </tr>
+    * </table>
+    */
+  /**
+    * Gets an array of all the entities of the specified entity type found in the selected item's body.
+    *
+    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    *
+    * [Api set: Mailbox 1.0]
+    * 
+    * @param entityType One of the EntityType enumeration values.
+    *
+    * @returns
+    * If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. 
+    * If no entities of the specified type are present in the item's body, the method returns an empty array. 
+    * Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.
+    *
+    * @remarks
     * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
@@ -374,6 +502,28 @@ trait MessageRead extends Message {
     * If the name parameter does match an ItemHasKnownEntity element in the manifest, but there are no entities in the current item that match, 
     * the method return an empty array.
     */
+  /**
+    * Returns well-known entities in the selected item that pass the named filter defined in the manifest XML file.
+    *
+    * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element 
+    * in the manifest XML file with the specified FilterName element value.
+    *
+    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    *
+    * [Api set: Mailbox 1.0]
+    *
+    * @remarks
+    *
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    *
+    * @param name The name of the ItemHasKnownEntity rule element that defines the filter to match.
+    * @returns If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the name parameter, 
+    * the method returns null. 
+    * If the name parameter does match an ItemHasKnownEntity element in the manifest, but there are no entities in the current item that match, 
+    * the method return an empty array.
+    */
   def getFilteredEntitiesByName(name: java.lang.String): js.Array[java.lang.String | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion] = js.native
   def getInitializationContextAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   /**
@@ -404,6 +554,34 @@ trait MessageRead extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
     */
+  /**
+    * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
+    *
+    * The getRegExMatches method returns the strings that match the regular expression defined in each ItemHasRegularExpressionMatch or 
+    * ItemHasKnownEntity rule element in the manifest XML file. 
+    * For an ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified by that rule. 
+    * The PropertyName simple type defines the supported properties.
+    *
+    * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body 
+    * and should not attempt to return the entire body of the item. 
+    * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
+    * Instead, use the Body.getAsync method to retrieve the entire body.
+    *
+    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    *
+    * [Api set: Mailbox 1.0]
+    *
+    * @returns
+    * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. 
+    * The name of each array is equal to the corresponding value of the RegExName attribute of the matching ItemHasRegularExpressionMatch rule 
+    * or the FilterName attribute of the matching ItemHasKnownEntity rule.
+    *
+    * @remarks
+    *
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    */
   def getRegExMatches(): js.Any = js.native
   /**
     * Returns string values in the selected item that match the named regular expression defined in the manifest XML file.
@@ -430,6 +608,31 @@ trait MessageRead extends Message {
     *
     * @param name The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
     */
+  /**
+    * Returns string values in the selected item that match the named regular expression defined in the manifest XML file.
+    *
+    * The getRegExMatchesByName method returns the strings that match the regular expression defined in the ItemHasRegularExpressionMatch rule 
+    * element in the manifest XML file with the specified RegExName element value.
+    *
+    * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body 
+    * and should not attempt to return the entire body of the item. 
+    * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
+    *
+    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    *
+    * [Api set: Mailbox 1.0]
+    *
+    * @returns
+    * An array that contains the strings that match the regular expression defined in the manifest XML file.
+    *
+    * @remarks
+    *
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    *
+    * @param name The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
+    */
   def getRegExMatchesByName(name: java.lang.String): js.Array[java.lang.String] = js.native
   /**
     * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
@@ -443,6 +646,21 @@ trait MessageRead extends Message {
     * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
+    *
+    * @param name The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
+    */
+  /**
+    * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
+    *
+    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    *
+    * [Api set: Mailbox 1.6]
+    *
+    * @remarks
+    *
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
     *
     * @param name The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
     */
@@ -475,6 +693,33 @@ trait MessageRead extends Message {
     * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
+    */
+  /**
+    * Returns string values in a highlighted match that match the regular expressions defined in the manifest XML file. 
+    * Highlighted matches apply to contextual add-ins.
+    *
+    * The getSelectedRegExMatches method returns the strings that match the regular expression defined in each ItemHasRegularExpressionMatch or 
+    * ItemHasKnownEntity rule element in the manifest XML file. For an ItemHasRegularExpressionMatch rule, a matching string has to occur in the property of the item that is specified by that rule. The PropertyName simple type defines the supported properties.
+    *
+    * If you specify an ItemHasRegularExpressionMatch rule on the body property of an item, the regular expression should further filter the body 
+    * and should not attempt to return the entire body of the item. 
+    * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
+    * Instead, use the Body.getAsync method to retrieve the entire body.
+    *
+    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    *
+    * [Api set: Mailbox 1.6]
+    *
+    * @returns
+    * An object that contains arrays of strings that match the regular expressions defined in the manifest XML file. 
+    * The name of each array is equal to the corresponding value of the RegExName attribute of the matching ItemHasRegularExpressionMatch rule 
+    * or the FilterName attribute of the matching ItemHasKnownEntity rule.
+    *
+    * @remarks
+    *
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
     */
   def getSelectedRegExMatches(): js.Any = js.native
 }

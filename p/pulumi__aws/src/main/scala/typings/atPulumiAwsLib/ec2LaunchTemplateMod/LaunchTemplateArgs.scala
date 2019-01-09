@@ -13,7 +13,7 @@ trait LaunchTemplateArgs extends js.Object {
   val blockDeviceMappings: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EbsDeviceNameNoDeviceVirtualName]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceNameEbsNoDeviceVirtualName]
       ]
     ]
   ] = js.undefined
@@ -21,13 +21,13 @@ trait LaunchTemplateArgs extends js.Object {
     * Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
     */
   val capacityReservationSpecification: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CapacityReservationTargetCapacityReservationPreference]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CapacityReservationPreferenceCapacityReservationTarget]
   ] = js.undefined
   /**
     * Customize the credit specification of the instance. See Credit
     * Specification below for more details.
     */
-  val creditSpecification: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CpuCredits]] = js.undefined
+  val creditSpecification: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CpuCreditsInput]] = js.undefined
   /**
     * Description of the launch template.
     */
@@ -67,7 +67,9 @@ trait LaunchTemplateArgs extends js.Object {
     * below for details.
     */
   val instanceMarketOptions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_MarketTypeSpotOptionsInput]
+    atPulumiPulumiLib.resourceMod.Input[
+      atPulumiAwsLib.Anon_MarketTypeSpotOptionsAnonBlockDurationMinutesInstanceInterruptionBehaviorMaxPrice
+    ]
   ] = js.undefined
   /**
     * The type of the instance.
@@ -94,7 +96,7 @@ trait LaunchTemplateArgs extends js.Object {
   /**
     * The monitoring option for the instance. See Monitoring below for more details.
     */
-  val monitoring: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EnabledInput]] = js.undefined
+  val monitoring: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput]] = js.undefined
   /**
     * The name of the launch template. If you leave this blank, Terraform will auto-generate a unique name.
     */
@@ -110,7 +112,7 @@ trait LaunchTemplateArgs extends js.Object {
   val networkInterfaces: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Ipv4AddressesDescriptionSubnetId]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AssociatePublicIpAddressDeleteOnTerminationDescription]
       ]
     ]
   ] = js.undefined
@@ -136,7 +138,7 @@ trait LaunchTemplateArgs extends js.Object {
     */
   val tagSpecifications: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ResourceTypeTagsKey]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyResourceTypeTagsAny]]
     ]
   ] = js.undefined
   /**

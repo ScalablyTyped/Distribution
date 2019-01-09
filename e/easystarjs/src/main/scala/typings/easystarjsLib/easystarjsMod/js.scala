@@ -73,7 +73,7 @@ class js () extends js.Object {
     startY: scala.Double,
     endX: scala.Double,
     endY: scala.Double,
-    callback: js.Function1[/* path */ js.Array[easystarjsLib.Anon_Y], scala.Unit]
+    callback: js.Function1[/* path */ js.Array[easystarjsLib.Anon_X], scala.Unit]
   ): scala.Double = js.native
   /**
     * Remove the additional cost for a particular point.

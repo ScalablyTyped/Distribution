@@ -12,7 +12,7 @@ class default () extends Progress
 @JSImport("antd/lib/progress/progress", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: antdLib.Anon_SizeShowInfo = js.native
-  var propTypes: antdLib.Anon_Format = js.native
+  var defaultProps: antdLib.Anon_CircleDashboard = js.native
+  var propTypes: antdLib.Anon_Active = js.native
 }
 

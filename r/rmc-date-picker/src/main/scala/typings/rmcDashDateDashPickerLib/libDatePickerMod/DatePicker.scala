@@ -33,9 +33,9 @@ trait DatePicker
   def getMinMonth(): js.Any = js.native
   def getMinYear(): js.Any = js.native
   def getNewDate(values: js.Any, index: js.Any): js.Any = js.native
-  def getTimeData(date: js.Any): rmcDashDateDashPickerLib.Anon_ColsSelMinute = js.native
+  def getTimeData(date: js.Any): rmcDashDateDashPickerLib.Anon_Cols = js.native
   def getValue(): js.Any = js.native
-  def getValueCols(): rmcDashDateDashPickerLib.Anon_Cols = js.native
+  def getValueCols(): rmcDashDateDashPickerLib.Anon_ColsValue = js.native
   def onScrollChange(values: js.Any, index: js.Any): scala.Unit = js.native
   def onValueChange(values: js.Any, index: js.Any): scala.Unit = js.native
   def setAmPm(date: js.Any, index: js.Any): scala.Unit = js.native

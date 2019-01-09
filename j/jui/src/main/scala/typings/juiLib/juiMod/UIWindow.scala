@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UIWindow extends js.Object {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: juiLib.Anon_Modal): this.type = js.native
+  def apply(selector: js.Any, options: juiLib.Anon_BottomEvent): this.type = js.native
   def hide(): scala.Unit = js.native
   /**
     * Moves a window at specified coordinates

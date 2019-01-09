@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Templateid extends js.Object {
-  var campaign_id: js.UndefOr[java.lang.String] = js.undefined
-  var template_id: js.UndefOr[java.lang.String] = js.undefined
+  var template_id: java.lang.String
+  var use_draft_template: js.UndefOr[scala.Boolean] = js.undefined
 }
 

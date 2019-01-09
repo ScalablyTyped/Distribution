@@ -18,7 +18,7 @@ trait FileSystemAdapter extends js.Object {
       scala.Unit
     ], 
     scala.Unit
-  ]) with atNodelibFsDotStatLib.Anon_Promisify = js.native
+  ]) with atNodelibFsDotStatLib.Anon_Path = js.native
   @JSName("statSync")
   var statSync_Original: js.Function1[/* path */ nodeLib.fsMod.PathLike, nodeLib.fsMod.Stats] = js.native
   @JSName("stat")
@@ -30,7 +30,7 @@ trait FileSystemAdapter extends js.Object {
       scala.Unit
     ], 
     scala.Unit
-  ]) with atNodelibFsDotStatLib.Anon_Promisify = js.native
+  ]) with atNodelibFsDotStatLib.Anon_Path = js.native
   def lstat(
     path: nodeLib.fsMod.PathLike,
     callback: js.Function2[

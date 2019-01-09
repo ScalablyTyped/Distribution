@@ -16,19 +16,19 @@ trait ActionButton extends ActionButtonState {
   @JSName("removeListener")
   def removeListener_click(event: jpmLib.jpmLibStrings.click, handler: js.Function): scala.Unit = js.native
   def state(target: ActionButton): ActionButtonState = js.native
-  def state(target: ActionButton, state: jpmLib.Anon_Icon): ActionButtonState = js.native
+  def state(target: ActionButton, state: jpmLib.Anon_Disabled): ActionButtonState = js.native
   // there's a compromise here by always returning ActionButtonState. It will return undefined if no options are passed
   def state(target: BrowserWindow): ActionButtonState = js.native
-  def state(target: BrowserWindow, state: jpmLib.Anon_Icon): ActionButtonState = js.native
+  def state(target: BrowserWindow, state: jpmLib.Anon_Disabled): ActionButtonState = js.native
   def state(target: Tab): ActionButtonState = js.native
-  def state(target: Tab, state: jpmLib.Anon_Icon): ActionButtonState = js.native
+  def state(target: Tab, state: jpmLib.Anon_Disabled): ActionButtonState = js.native
   @JSName("state")
   def state_tab(target: jpmLib.jpmLibStrings.tab): ActionButtonState = js.native
   @JSName("state")
-  def state_tab(target: jpmLib.jpmLibStrings.tab, state: jpmLib.Anon_Icon): ActionButtonState = js.native
+  def state_tab(target: jpmLib.jpmLibStrings.tab, state: jpmLib.Anon_Disabled): ActionButtonState = js.native
   @JSName("state")
   def state_window(target: jpmLib.jpmLibStrings.window): ActionButtonState = js.native
   @JSName("state")
-  def state_window(target: jpmLib.jpmLibStrings.window, state: jpmLib.Anon_Icon): ActionButtonState = js.native
+  def state_window(target: jpmLib.jpmLibStrings.window, state: jpmLib.Anon_Disabled): ActionButtonState = js.native
 }
 

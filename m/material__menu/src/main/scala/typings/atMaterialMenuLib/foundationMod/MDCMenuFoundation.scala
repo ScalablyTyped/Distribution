@@ -13,7 +13,7 @@ trait MDCMenuFoundation
   def getSelectedIndex(): scala.Double = js.native
   def isOpen(): scala.Boolean = js.native
   def open(): scala.Unit = js.native
-  def open(hasFocusIndex: atMaterialMenuLib.Anon_FocusIndexNull): scala.Unit = js.native
+  def open(hasFocusIndex: atMaterialMenuLib.Anon_FocusIndex): scala.Unit = js.native
   /**
     * @param corner Default anchor corner alignment of top-left menu corner.
     */

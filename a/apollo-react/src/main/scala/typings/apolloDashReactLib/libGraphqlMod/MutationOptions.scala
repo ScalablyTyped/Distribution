@@ -13,7 +13,7 @@ trait MutationOptions extends js.Object {
   var optimisticResponse: js.UndefOr[js.Object] = js.undefined
   var resultBehaviors: js.UndefOr[
     js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify MutationBehavior */ _
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify MutationBehavior */ _
     ]
   ] = js.undefined
   var updateQueries: js.UndefOr[

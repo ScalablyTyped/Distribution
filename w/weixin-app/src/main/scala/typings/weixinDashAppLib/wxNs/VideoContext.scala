@@ -33,7 +33,7 @@ trait VideoContext extends js.Object {
   		 *  进入全屏
   		 */
   def requestFullScreen(): scala.Unit = js.native
-  def requestFullScreen(options: weixinDashAppLib.Anon_Direction): scala.Unit = js.native
+  def requestFullScreen(options: weixinDashAppLib.Anon_0): scala.Unit = js.native
   /**
   		 * 跳转到指定位置，单位 s
   		 */
@@ -41,6 +41,6 @@ trait VideoContext extends js.Object {
   /**
   		 * 发送弹幕，danmu 包含两个属性 text, color。
   		 */
-  def sendDanmu(danmu: weixinDashAppLib.Anon_Text): scala.Unit = js.native
+  def sendDanmu(danmu: weixinDashAppLib.Anon_Color): scala.Unit = js.native
 }
 

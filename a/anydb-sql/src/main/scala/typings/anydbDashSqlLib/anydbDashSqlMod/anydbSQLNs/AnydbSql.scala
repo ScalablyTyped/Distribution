@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AnydbSql extends DatabaseConnection {
-  var functions: anydbDashSqlLib.Anon_RTRIM = js.native
+  var functions: anydbDashSqlLib.Anon_LOWER = js.native
   var models: anydbDashSqlLib.anydbDashSqlMod.Dictionary[Table[_]] = js.native
   def allOf(tables: Table[_]*): js.Any = js.native
   def begin(): Transaction = js.native

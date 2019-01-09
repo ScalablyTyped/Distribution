@@ -46,7 +46,7 @@ class VideoDeviceController ()
     mediaEncodingProperties: winrtLib.WindowsNs.MediaNs.MediaPropertiesNs.IMediaEncodingProperties
   ): winrtLib.WindowsNs.FoundationNs.IAsyncAction = js.native
   /* CompleteClass */
-  override def tryGetPowerlineFrequency(): winrtLib.Anon_Value = js.native
+  override def tryGetPowerlineFrequency(): winrtLib.Anon_Succeeded = js.native
   /* CompleteClass */
   override def trySetPowerlineFrequency(value: winrtLib.WindowsNs.MediaNs.CaptureNs.PowerlineFrequency): scala.Boolean = js.native
 }

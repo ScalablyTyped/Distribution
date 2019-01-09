@@ -15,7 +15,7 @@ trait LoadBalancerPolicyState extends js.Object {
     */
   val policyAttributes: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ValueNameInputString]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameValueInput]]
     ]
   ] = js.undefined
   /**

@@ -11,7 +11,7 @@ trait Activity extends js.Object {
   /** ETag of the entry. */
   var etag: js.UndefOr[java.lang.String] = js.undefined
   /** Activity events. */
-  var events: js.UndefOr[js.Array[gapiDotClientDotAdminLib.Anon_Parameters]] = js.undefined
+  var events: js.UndefOr[js.Array[gapiDotClientDotAdminLib.Anon_Name]] = js.undefined
   /** Unique identifier for each activity record. */
   var id: js.UndefOr[gapiDotClientDotAdminLib.Anon_ApplicationName] = js.undefined
   /** IP Address of the user doing the action. */

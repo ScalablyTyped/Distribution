@@ -11,7 +11,7 @@ trait Table[T]
      with Queryable[T] {
   var _name: java.lang.String = js.native
   var columns: js.Array[Column[_]] = js.native
-  var eventEmitter: anydbDashSqlLib.Anon_Emit = js.native
+  var eventEmitter: anydbDashSqlLib.Anon_Args = js.native
   var sql: SQL = js.native
   def alter(): AlterQuery[T] = js.native
   def as(name: java.lang.String): Table[T] = js.native

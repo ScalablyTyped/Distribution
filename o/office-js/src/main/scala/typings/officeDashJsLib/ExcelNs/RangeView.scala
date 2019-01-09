@@ -124,7 +124,7 @@ class RangeView ()
   def load(): RangeView = js.native
   def load(option: java.lang.String): RangeView = js.native
   def load(option: js.Array[java.lang.String]): RangeView = js.native
-  def load(option: officeDashJsLib.Anon_Select): RangeView = js.native
+  def load(option: officeDashJsLib.Anon_Expand): RangeView = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.RangeViewLoadOptions): RangeView = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

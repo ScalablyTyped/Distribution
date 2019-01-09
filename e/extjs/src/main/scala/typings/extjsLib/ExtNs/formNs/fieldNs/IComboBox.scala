@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.utilNs.IBindable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait IComboBox extends IPicker {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.utilNs.IBindable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined bindStore, bindStoreListeners, getStore, getStoreListeners, onBindStore, onUnbindStore, unbindStoreListeners */ trait IComboBox extends IPicker {
   /** [Method] A method called when the filtering caused by the doQuery call is complete and the store has been either filtered loca
   		* @param queryPlan Object An object containing details about the query was executed.
   		*/
@@ -89,11 +89,15 @@ trait IComboBox extends IPicker {
   /** [Method] Returns the store associated with this ComboBox
   		* @returns Ext.data.Store The store
   		*/
-  var getStore: js.UndefOr[js.Function0[extjsLib.ExtNs.dataNs.IStore]] = js.undefined
+  var getStore: js.UndefOr[
+    js.Function0[extjsLib.ExtNs.dataNs.IAbstractStore | extjsLib.ExtNs.dataNs.IStore]
+  ] = js.undefined
   /** [Method] Gets the listeners to bind to a new store
   		* @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
   		*/
-  var getStoreListeners: js.UndefOr[js.Function0[_]] = js.undefined
+  var getStoreListeners: js.UndefOr[
+    js.Function0[_] | (js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IStore], _])
+  ] = js.undefined
   /** [Method] Returns the value that would be included in a standard form submit for this field
   		* @returns String The value to be submitted, or null.
   		*/
@@ -116,12 +120,22 @@ trait IComboBox extends IPicker {
   		* @param initial Object
   		*/
   var onBindStore: js.UndefOr[
-    js.Function2[/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], scala.Unit]
+    js.Function2[
+      /* store */ js.UndefOr[js.Any | extjsLib.ExtNs.dataNs.IAbstractStore], 
+      /* initial */ js.UndefOr[js.Any | scala.Boolean], 
+      scala.Unit
+    ]
   ] = js.undefined
   /** [Method] Template method it is called when an existing store is unbound from the current instance
   		* @param store Object
   		*/
-  var onUnbindStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var onUnbindStore: js.UndefOr[
+    (js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit]) | (js.Function2[
+      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
+      /* initial */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ])
+  ] = js.undefined
   /** [Config Option] (Number) */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /** [Config Option] (Boolean) */

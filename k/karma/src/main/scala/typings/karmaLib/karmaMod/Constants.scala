@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Constants extends js.Object {
   var COLOR_PATTERN: java.lang.String
-  var CONSOLE_APPENDER: karmaLib.Anon_TypeLayout
+  var CONSOLE_APPENDER: karmaLib.Anon_Layout
   var DEFAULT_HOSTNAME: java.lang.String
   var DEFAULT_LISTEN_ADDR: java.lang.String
   var DEFAULT_PORT: scala.Double

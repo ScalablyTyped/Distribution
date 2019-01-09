@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class namespaced protected ()
   extends analyticsDashNodeLib.analyticsDashNodeMod.AnalyticsNodeNs.Analytics {
   def this(writeKey: java.lang.String) = this()
-  def this(writeKey: java.lang.String, opts: analyticsDashNodeLib.Anon_FlushAt) = this()
+  def this(writeKey: java.lang.String, opts: analyticsDashNodeLib.Anon_Enable) = this()
 }
 

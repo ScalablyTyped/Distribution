@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/array/index-of", JSImport.Namespace)
 @js.native
 object libraryFnArrayIndexDashOfMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArraySearchElement]
+  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayFromIndexSearchElement]
 

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(senchaUnderscoreTouchLib.ExtNs.mixinNs.IFilterable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, currentSortFn, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses))*/
-trait ICollection
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- senchaUnderscoreTouchLib.ExtNs.mixinNs.IFilterable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, currentSortFn, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses. Inlined filterRoot, filters, dirtyFilterFn, filtered, addFilter, addFilters, filter, getFilterFn, getFilterRoot, getFilters, insertFilter, insertFilters, removeFilters, setFilterRoot, setFilters */ trait ICollection
   extends senchaUnderscoreTouchLib.ExtNs.mixinNs.ISortable {
   /** [Method] Adds an item to the collection
   		* @param key String The key to associate with the item, or the new item. If a getKey implementation was specified for this MixedCollection, or if the key of the stored items is in a property called id, the MixedCollection will be able to derive the key for the new item. In this case just pass the new item in this parameter.
@@ -28,7 +28,9 @@ trait ICollection
   		* @param filters Object
   		* @returns Object
   		*/
-  var addFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[js.Any], _]] = js.undefined
+  var addFilters: js.UndefOr[
+    js.Function1[/* filters */ js.UndefOr[js.Any | senchaUnderscoreTouchLib.ExtNs.Array], _]
+  ] = js.undefined
   /** [Property] (Array) */
   var all: js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] = js.undefined
   /** [Method] Removes all items from the collection  */
@@ -48,6 +50,8 @@ trait ICollection
   		* @returns Boolean true if the collection contains the Object as a key.
   		*/
   var containsKey: js.UndefOr[js.Function1[/* key */ js.UndefOr[java.lang.String], scala.Boolean]] = js.undefined
+  /** [Property] (Boolean) */
+  var dirtyFilterFn: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Executes the specified function once for every item in the collection
   		* @param fn Function The function to execute for each item.
   		* @param scope Object The scope (this reference) in which the function is executed. Defaults to the current item in the iteration.
@@ -70,13 +74,16 @@ trait ICollection
   		* @returns Array
   		*/
   var filter: js.UndefOr[
-    js.Function4[
+    (js.Function1[
+      /* data */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
+      senchaUnderscoreTouchLib.ExtNs.Array
+    ]) | (js.Function4[
       /* property */ js.UndefOr[js.Any], 
       /* value */ js.UndefOr[js.Any], 
       /* anyMatch */ js.UndefOr[js.Any], 
       /* caseSensitive */ js.UndefOr[js.Any], 
       senchaUnderscoreTouchLib.ExtNs.Array
-    ]
+    ])
   ] = js.undefined
   /** [Method] Filter by a function
   		* @param fn Function The function to be called.
@@ -86,6 +93,10 @@ trait ICollection
   var filterBy: js.UndefOr[
     js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IMixedCollection]
   ] = js.undefined
+  /** [Config Option] (String) */
+  var filterRoot: js.UndefOr[java.lang.String] = js.undefined
+  /** [Property] (Boolean) */
+  var filtered: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Object[]) */
   var filters: js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] = js.undefined
   /** [Method] Returns the first item in the collection which elicits a true return value from the passed selection function
@@ -257,7 +268,12 @@ trait ICollection
   		* @param filters Object
   		* @returns Ext.util.Collection this
   		*/
-  var removeFilters: js.UndefOr[js.Function1[/* filters */ js.UndefOr[js.Any], this.type]] = js.undefined
+  var removeFilters: js.UndefOr[
+    js.Function1[
+      /* filters */ js.UndefOr[js.Any | senchaUnderscoreTouchLib.ExtNs.Array], 
+      this.type | scala.Unit
+    ]
+  ] = js.undefined
   /** [Method] This method removes all the sorters in a passed array
   		* @param sorters Object
   		* @returns Ext.util.Collection this

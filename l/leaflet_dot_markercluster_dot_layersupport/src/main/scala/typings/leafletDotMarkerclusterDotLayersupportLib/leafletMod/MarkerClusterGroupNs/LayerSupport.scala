@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ @js.native
 trait LayerSupport extends js.Object {
   def checkIn(layers: js.Array[leafletLib.leafletMod.Layer]): this.type = js.native

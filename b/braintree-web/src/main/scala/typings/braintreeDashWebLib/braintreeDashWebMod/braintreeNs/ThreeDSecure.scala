@@ -53,8 +53,8 @@ trait ThreeDSecure extends js.Object {
     *   client: client
     * }, callback);
     */
-  def create(options: braintreeDashWebLib.Anon_Client_64751587): js.Promise[ThreeDSecure] = js.native
-  def create(options: braintreeDashWebLib.Anon_Client_64751587, callback: callback): scala.Unit = js.native
+  def create(options: braintreeDashWebLib.Anon_Client): js.Promise[ThreeDSecure] = js.native
+  def create(options: braintreeDashWebLib.Anon_Client, callback: callback): scala.Unit = js.native
   /**
     * @callback ThreeDSecure~removeFrameCallback
     * @description The callback used for options.removeFrame in {@link ThreeDSecure#verifyCard|verifyCard}.
@@ -114,7 +114,7 @@ trait ThreeDSecure extends js.Object {
     *   }
     * });
     */
-  def verifyCard(options: braintreeDashWebLib.Anon_Nonce): js.Promise[ThreeDSecureVerifyPayload] = js.native
-  def verifyCard(options: braintreeDashWebLib.Anon_NonceAmount, callback: callback): scala.Unit = js.native
+  def verifyCard(options: braintreeDashWebLib.Anon_AddFrame): js.Promise[ThreeDSecureVerifyPayload] = js.native
+  def verifyCard(options: braintreeDashWebLib.Anon_AddFrameAmount, callback: callback): scala.Unit = js.native
 }
 

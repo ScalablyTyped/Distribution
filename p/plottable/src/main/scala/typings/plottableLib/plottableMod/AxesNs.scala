@@ -57,9 +57,9 @@ object AxesNs extends js.Object {
     def this(scale: plottableLib.buildSrcScalesMod.Time, orientation: plottableLib.buildSrcAxesTimeAxisMod.TimeAxisOrientation, useUTC: scala.Boolean) = this()
   }
   
-  val TierLabelPosition: plottableLib.Anon_CenterBetween = js.native
+  val TierLabelPosition: plottableLib.Anon_Between = js.native
   val TimeAxisOrientation: plottableLib.Anon_BottomTop = js.native
-  val TimeInterval: plottableLib.Anon_Minute = js.native
+  val TimeInterval: plottableLib.Anon_Day = js.native
   @js.native
   object Category extends js.Object {
     /**

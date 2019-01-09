@@ -16,20 +16,20 @@ trait FirehoseDeliveryStreamState extends js.Object {
   val destination: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   val destinationId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   val elasticsearchConfiguration: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DomainArnIndexRotationPeriod]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BufferingIntervalBufferingSize]
   ] = js.undefined
   /**
     * Enhanced configuration options for the s3 destination. More details are given below.
     */
   val extendedS3Configuration: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_S3BackupConfigurationBufferInterval]
+    atPulumiPulumiLib.resourceMod.Input[
+      atPulumiAwsLib.Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptionsCompressionFormat
+    ]
   ] = js.undefined
   /**
     * Allows the ability to specify the kinesis stream that is used as the source of the firehose delivery stream.
     */
-  val kinesisSourceConfiguration: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RoleArnKinesisStreamArnInput]
-  ] = js.undefined
+  val kinesisSourceConfiguration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KinesisStreamArnRoleArn]] = js.undefined
   /**
     * A name to identify the stream. This is unique to the
     * AWS account and region the Stream is created in.
@@ -41,14 +41,18 @@ trait FirehoseDeliveryStreamState extends js.Object {
     * `s3_configuration` block. More details are given below.
     */
   val redshiftConfiguration: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_S3BackupConfigurationUsernameCloudwatchLoggingOptions]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CloudwatchLoggingOptionsClusterJdbcurl]
   ] = js.undefined
   /**
     * Configuration options for the s3 destination (or the intermediate bucket if the destination
     * is redshift). More details are given below.
     */
-  val s3Configuration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BufferIntervalPrefix]] = js.undefined
-  val splunkConfiguration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HecEndpointHecToken]] = js.undefined
+  val s3Configuration: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptions]
+  ] = js.undefined
+  val splunkConfiguration: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CloudwatchLoggingOptionsHecAcknowledgmentTimeoutHecEndpoint]
+  ] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */

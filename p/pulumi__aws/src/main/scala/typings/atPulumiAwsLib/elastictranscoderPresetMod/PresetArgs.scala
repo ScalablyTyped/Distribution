@@ -9,11 +9,11 @@ trait PresetArgs extends js.Object {
   /**
     * Audio parameters object (documented below).
     */
-  val audio: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Channels]] = js.undefined
+  val audio: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AudioPackingModeBitRate]] = js.undefined
   /**
     * Codec options for the audio parameters (documented below)
     */
-  val audioCodecOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Profile]] = js.undefined
+  val audioCodecOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BitDepthBitOrder]] = js.undefined
   /**
     * The container type for the output file. Valid values are `flac`, `flv`, `fmp4`, `gif`, `mp3`, `mp4`, `mpg`, `mxf`, `oga`, `ogg`, `ts`, and `webm`.
     */
@@ -29,12 +29,12 @@ trait PresetArgs extends js.Object {
   /**
     * Thumbnail parameters object (documented below)
     */
-  val thumbnails: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FormatAspectRatio]] = js.undefined
+  val thumbnails: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AspectRatioFormat]] = js.undefined
   val `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   /**
     * Video parameters object (documented below)
     */
-  val video: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DisplayAspectRatio]] = js.undefined
+  val video: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AspectRatioBitRateCodec]] = js.undefined
   val videoCodecOptions: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.undefined
@@ -43,7 +43,11 @@ trait PresetArgs extends js.Object {
     * * `video_codec_options` (Optional, Forces new resource) Codec options for the video parameters
     */
   val videoWatermarks: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_VerticalAlign]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HorizontalAlignHorizontalOffset]
+      ]
+    ]
   ] = js.undefined
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Report extends js.Object {
   /** Asynchronous report only. Contains a list of generated report files once the report has succesfully completed. */
-  var files: js.UndefOr[js.Array[gapiDotClientDotDoubleclicksearchLib.Anon_Url]] = js.undefined
+  var files: js.UndefOr[js.Array[gapiDotClientDotDoubleclicksearchLib.Anon_ByteCount]] = js.undefined
   /** Asynchronous report only. Id of the report. */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /** Asynchronous report only. True if and only if the report has completed successfully and the report files are ready to be downloaded. */

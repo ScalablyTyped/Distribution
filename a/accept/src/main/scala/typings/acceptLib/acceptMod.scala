@@ -30,6 +30,6 @@ object acceptMod extends js.Object {
   def mediaTypes(mediaTypeHeader: java.lang.String): js.Array[java.lang.String] = js.native
   def parseAll(
     headers: stdLib.Record[java.lang.String, js.UndefOr[java.lang.String | js.Array[java.lang.String]]]
-  ): acceptLib.Anon_Encodings = js.native
+  ): acceptLib.Anon_Charsets = js.native
 }
 

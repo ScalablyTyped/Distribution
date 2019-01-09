@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object applicationinsightsDashJsMod extends js.Object {
   val AppInsights: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.IAppInsights = js.native
-  val Util: org.scalablytyped.runtime.Instantiable0[applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.UtilHelpers] = js.native
+  val Util: applicationinsightsDashJsLib.Anon_NewId = js.native
 }
 

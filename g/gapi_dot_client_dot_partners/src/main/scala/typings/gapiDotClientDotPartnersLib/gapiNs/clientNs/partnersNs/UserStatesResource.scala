@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait UserStatesResource extends js.Object {
   /** Lists states for current user. */
-  def list(request: gapiDotClientDotPartnersLib.Anon_RequestMetadataexperimentIds): gapiDotClientLib.gapiNs.clientNs.Request[ListUserStatesResponse]
+  def list(request: gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[ListUserStatesResponse]
 }
 

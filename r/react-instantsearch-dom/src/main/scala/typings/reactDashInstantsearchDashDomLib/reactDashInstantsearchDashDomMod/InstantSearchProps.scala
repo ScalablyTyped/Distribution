@@ -15,7 +15,7 @@ trait InstantSearchProps extends js.Object {
   var onSearchStateChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var refresh: js.UndefOr[scala.Boolean] = js.undefined
   var resultsState: js.UndefOr[js.Any] = js.undefined
-  var root: js.UndefOr[reactDashInstantsearchDashDomLib.Anon_Root] = js.undefined
+  var root: js.UndefOr[reactDashInstantsearchDashDomLib.Anon_Args] = js.undefined
   var searchClient: js.UndefOr[js.Any] = js.undefined
   var searchState: js.UndefOr[js.Any] = js.undefined
 }

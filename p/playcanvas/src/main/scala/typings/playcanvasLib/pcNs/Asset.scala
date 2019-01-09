@@ -48,10 +48,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class Asset protected () extends js.Object {
   def this(name: java.lang.String, `type`: java.lang.String) = this()
-  def this(name: java.lang.String, `type`: java.lang.String, file: playcanvasLib.Anon_Url) = this()
-  def this(name: java.lang.String, `type`: java.lang.String, file: playcanvasLib.Anon_Url, data: js.Object) = this()
+  def this(name: java.lang.String, `type`: java.lang.String, file: playcanvasLib.Anon_Filename) = this()
+  def this(name: java.lang.String, `type`: java.lang.String, file: playcanvasLib.Anon_Filename, data: js.Object) = this()
   def this(name: java.lang.String, `type`: java.lang.String, file: scala.Null, data: js.Object) = this()
-  var file: playcanvasLib.Anon_Url | scala.Null = js.native
+  var file: playcanvasLib.Anon_Filename | scala.Null = js.native
   var id: scala.Double = js.native
   var loaded: scala.Boolean = js.native
   var name: java.lang.String = js.native

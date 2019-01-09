@@ -16,7 +16,7 @@ trait GetAmiIdsArgs extends js.Object {
     * are several valid keys, for a full reference, check out
     * [describe-images in the AWS CLI reference][1].
     */
-  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_Values]] = js.undefined
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   /**
     * A regex string to apply to the AMI list returned
     * by AWS. This allows more advanced filtering not supported from the AWS API.

@@ -24,7 +24,7 @@ trait Shape extends js.Object {
   /**
     * SVG shape ID related options
     */
-  var id: js.UndefOr[svgDashSpriteLib.Anon_Pseudo] = js.undefined
+  var id: js.UndefOr[svgDashSpriteLib.Anon_Generator] = js.undefined
   /**
     * Path to YAML file with meta / accessibility data
     */
@@ -32,7 +32,7 @@ trait Shape extends js.Object {
   /**
     * Spacing related options
     */
-  var spacing: js.UndefOr[svgDashSpriteLib.Anon_Padding] = js.undefined
+  var spacing: js.UndefOr[svgDashSpriteLib.Anon_Box] = js.undefined
   /**
     * List of transformations / optimizations
     */

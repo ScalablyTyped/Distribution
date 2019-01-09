@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Keypair protected ()
   extends stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Keypair {
-  def this(keys: stellarDashSdkLib.Anon_Type) = this()
-  def this(keys: stellarDashSdkLib.Anon_TypeEd25519) = this()
+  def this(keys: stellarDashSdkLib.Anon_Ed25519) = this()
+  def this(keys: stellarDashSdkLib.Anon_Ed25519Key) = this()
 }
 
 @JSImport("stellar-sdk", "Keypair")

@@ -15,11 +15,11 @@ trait NamespacesResource extends js.Object {
     * from a signed-in user with &#42;&#42;viewer&#42;&#42;, &#42;&#42;Is owner&#42;&#42; or &#42;&#42;Can edit&#42;&#42;
     * permissions in the Google Developers Console project.
     */
-  def list(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[ListNamespacesResponse]
+  def list(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[ListNamespacesResponse]
   /**
     * Updates the information about the specified namespace. Only the namespace
     * visibility can be updated.
     */
-  def update(request: gapiDotClientDotProximitybeaconLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Namespace]
+  def update(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Namespace]
 }
 

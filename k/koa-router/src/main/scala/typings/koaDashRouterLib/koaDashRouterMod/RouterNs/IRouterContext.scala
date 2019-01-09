@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Lifted 0 members from Set(koa.koa.Application.ParameterizedContext<any, {}>) */ @js.native
 trait IRouterContext
   extends koaLib.koaMod.ApplicationNs.BaseContext

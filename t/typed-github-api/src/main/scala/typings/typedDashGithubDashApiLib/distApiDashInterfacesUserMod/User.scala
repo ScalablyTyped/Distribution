@@ -5,9 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserOrOrg because Would inherit conflicting mutable fields List(avatar_url, events_url, id, login, repos_url, `type`, url))*/
-trait User extends UserSummary {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserOrOrg because var conflicts: avatar_url, events_url, id, login, repos_url, `type`, url. Inlined name, company, blog, location, email, public_repos, public_gists, followers, following, created_at, updated_at */ trait User extends UserSummary {
   var bio: java.lang.String
+  var blog: java.lang.String
+  var company: java.lang.String
+  var created_at: stdLib.Date
+  var email: java.lang.String
+  var followers: scala.Double
+  var following: scala.Double
   var hireable: scala.Boolean
+  var location: java.lang.String
+  var name: java.lang.String
+  var public_gists: scala.Double
+  var public_repos: scala.Double
+  var updated_at: stdLib.Date
 }
 

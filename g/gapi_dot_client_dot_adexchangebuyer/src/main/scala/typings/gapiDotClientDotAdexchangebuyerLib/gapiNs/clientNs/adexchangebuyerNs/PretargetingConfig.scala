@@ -15,7 +15,7 @@ trait PretargetingConfig extends js.Object {
   /** List must contain exactly one of PRETARGETING_CREATIVE_TYPE_HTML or PRETARGETING_CREATIVE_TYPE_VIDEO. */
   var creativeType: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Requests which allow one of these (width, height) pairs will match. All pairs must be supported ad dimensions. */
-  var dimensions: js.UndefOr[js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_Height]] = js.undefined
+  var dimensions: js.UndefOr[js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_HeightWidth]] = js.undefined
   /** Requests with any of these content labels will not match. Values are from content-labels.txt in the downloadable files section. */
   var excludedContentLabels: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Requests containing any of these geo criteria ids will not match. */
@@ -69,6 +69,6 @@ trait PretargetingConfig extends js.Object {
   /** Requests containing any of these vertical ids will match. */
   var verticals: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Video requests satisfying any of these player size constraints will match. */
-  var videoPlayerSizes: js.UndefOr[js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_MinWidth]] = js.undefined
+  var videoPlayerSizes: js.UndefOr[js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_AspectRatio]] = js.undefined
 }
 

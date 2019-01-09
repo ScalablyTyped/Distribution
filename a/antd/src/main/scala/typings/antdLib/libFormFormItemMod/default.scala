@@ -14,6 +14,6 @@ class default () extends FormItem
 object default extends js.Object {
   var contextTypes: antdLib.Anon_Vertical = js.native
   var defaultProps: antdLib.Anon_Colon = js.native
-  var propTypes: antdLib.Anon_ChildrenWrapperCol = js.native
+  var propTypes: antdLib.`Anon_` = js.native
 }
 

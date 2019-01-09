@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("lodash-es/util", JSImport.Namespace)
 @js.native
 object utilMod extends js.Object {
-  val default: lodashDashEsLib.Anon_ToPath = js.native
+  val default: lodashDashEsLib.Anon_Attempt = js.native
 }
 

@@ -7,24 +7,22 @@ import scala.scalajs.js.annotation._
 
 trait FirewallsResource extends js.Object {
   /** Deletes the specified firewall. */
-  def delete(request: gapiDotClientDotComputeLib.Anon_Firewall): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def delete(request: gapiDotClientDotComputeLib.Anon_AltFieldsFirewall): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Returns the specified firewall. */
-  def get(request: gapiDotClientDotComputeLib.Anon_FirewallProject): gapiDotClientLib.gapiNs.clientNs.Request[Firewall]
+  def get(request: gapiDotClientDotComputeLib.Anon_AltFieldsFirewallKey): gapiDotClientLib.gapiNs.clientNs.Request[Firewall]
   /** Creates a firewall rule in the specified project using the data included in the request. */
-  def insert(
-    request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintQuotaUserKeyUserIpOauthtokenAltFieldsRequestId
-  ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def insert(request: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Retrieves the list of firewall rules available to the specified project. */
-  def list(request: gapiDotClientDotComputeLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[FirewallList]
+  def list(request: gapiDotClientDotComputeLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[FirewallList]
   /**
     * Updates the specified firewall rule with the data included in the request. This method supports PATCH semantics and uses the JSON merge patch format
     * and processing rules.
     */
-  def patch(request: gapiDotClientDotComputeLib.Anon_Firewall): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def patch(request: gapiDotClientDotComputeLib.Anon_AltFieldsFirewall): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Updates the specified firewall rule with the data included in the request. Using PUT method, can only update following fields of firewall rule:
     * allowed, description, sourceRanges, sourceTags, targetTags.
     */
-  def update(request: gapiDotClientDotComputeLib.Anon_Firewall): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def update(request: gapiDotClientDotComputeLib.Anon_AltFieldsFirewall): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 

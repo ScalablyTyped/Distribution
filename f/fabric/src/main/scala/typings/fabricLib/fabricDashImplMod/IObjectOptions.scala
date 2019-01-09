@@ -9,7 +9,7 @@ trait IObjectOptions extends js.Object {
   /**
     * Describes the object's corner position in canvas object absolute properties.
     */
-  var aCoords: js.UndefOr[fabricLib.Anon_Tr] = js.undefined
+  var aCoords: js.UndefOr[fabricLib.Anon_BlBr] = js.undefined
   /**
   	 * Angle of rotation of an object (in degrees)
   	 */

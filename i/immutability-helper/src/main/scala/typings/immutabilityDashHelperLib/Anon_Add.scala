@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Add[T] extends js.Object {
+trait Anon_Add[K, V] extends js.Object {
   @JSName("$add")
-  var $add: js.Array[T]
+  var $add: js.Array[js.Tuple2[K, V]]
 }
 

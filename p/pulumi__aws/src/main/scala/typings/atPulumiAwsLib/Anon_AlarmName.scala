@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AlarmName extends js.Object {
-  var alarmName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  var roleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  var stateReason: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  var stateValue: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  var alarmName: java.lang.String
+  var roleArn: java.lang.String
+  var stateReason: java.lang.String
+  var stateValue: java.lang.String
 }
 

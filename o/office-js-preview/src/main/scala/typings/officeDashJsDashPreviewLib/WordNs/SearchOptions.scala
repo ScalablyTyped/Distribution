@@ -86,7 +86,7 @@ class SearchOptions ()
   def load(): SearchOptions = js.native
   def load(option: java.lang.String): SearchOptions = js.native
   def load(option: js.Array[java.lang.String]): SearchOptions = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): SearchOptions = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): SearchOptions = js.native
   def load(option: officeDashJsDashPreviewLib.WordNs.InterfacesNs.SearchOptionsLoadOptions): SearchOptions = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

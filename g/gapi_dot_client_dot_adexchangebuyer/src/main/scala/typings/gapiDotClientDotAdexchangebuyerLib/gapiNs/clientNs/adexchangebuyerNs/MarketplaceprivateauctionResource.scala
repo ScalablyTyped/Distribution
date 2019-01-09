@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait MarketplaceprivateauctionResource extends js.Object {
   /** Update a given private auction proposal */
-  def updateproposal(request: gapiDotClientDotAdexchangebuyerLib.Anon_PrettyPrintPrivateAuctionId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+  def updateproposal(request: gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
 }
 

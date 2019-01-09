@@ -15,10 +15,10 @@ trait jsPDF extends js.Object {
   // jsPDF plugin: addImage
   var color_spaces: js.Any = js.native
   // jsPDF plugin: Context2D
-  var context2d: jspdfLib.Anon_ClearRect = js.native
+  var context2d: jspdfLib.Anon_Anticlockwise = js.native
   var decode: js.Any = js.native
   var image_compression: js.Any = js.native
-  var internal: jspdfLib.Anon_PageSize = js.native
+  var internal: jspdfLib.Anon_Collections = js.native
   var version: java.lang.String = js.native
   def addFileToVFS(filename: java.lang.String, filecontent: java.lang.String): jsPDF = js.native
   def addFont(postScriptName: java.lang.String, fontName: java.lang.String, fontStyle: java.lang.String): java.lang.String = js.native

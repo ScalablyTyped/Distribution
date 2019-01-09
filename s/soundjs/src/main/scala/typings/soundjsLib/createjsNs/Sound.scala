@@ -41,10 +41,10 @@ object Sound extends js.Object {
     listener: js.Function1[/* eventObj */ js.Object, scala.Boolean | scala.Unit],
     useCapture: scala.Boolean
   ): js.Function = js.native
-  def addEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEvent): js.Object = js.native
-  def addEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEventEventObj): js.Object = js.native
-  def addEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEventEventObj, useCapture: scala.Boolean): js.Object = js.native
-  def addEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEvent, useCapture: scala.Boolean): js.Object = js.native
+  def addEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_EventObj): js.Object = js.native
+  def addEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_EventObjHandleEvent): js.Object = js.native
+  def addEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_EventObjHandleEvent, useCapture: scala.Boolean): js.Object = js.native
+  def addEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_EventObj, useCapture: scala.Boolean): js.Object = js.native
   // methods
   def createInstance(src: java.lang.String): soundjsLib.createjsNs.AbstractSoundInstance = js.native
   def dispatchEvent(eventObj: createjsDashLibLib.createjsNs.Event): scala.Boolean = js.native
@@ -72,10 +72,10 @@ object Sound extends js.Object {
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   def off(`type`: java.lang.String, listener: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
-  def off(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEvent): scala.Unit = js.native
-  def off(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEventEventObj): scala.Unit = js.native
-  def off(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEventEventObj, useCapture: scala.Boolean): scala.Unit = js.native
-  def off(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEvent, useCapture: scala.Boolean): scala.Unit = js.native
+  def off(`type`: java.lang.String, listener: soundjsLib.Anon_EventObj): scala.Unit = js.native
+  def off(`type`: java.lang.String, listener: soundjsLib.Anon_EventObjHandleEvent): scala.Unit = js.native
+  def off(`type`: java.lang.String, listener: soundjsLib.Anon_EventObjHandleEvent, useCapture: scala.Boolean): scala.Unit = js.native
+  def off(`type`: java.lang.String, listener: soundjsLib.Anon_EventObj, useCapture: scala.Boolean): scala.Unit = js.native
    // It is necessary for "arguments.callee"
   def on(
     `type`: java.lang.String,
@@ -107,47 +107,47 @@ object Sound extends js.Object {
     data: js.Any,
     useCapture: scala.Boolean
   ): js.Function = js.native
-  def on(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEvent): js.Object = js.native
-  def on(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEventEventObj): js.Object = js.native
-  def on(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEventEventObj, scope: js.Object): js.Object = js.native
+  def on(`type`: java.lang.String, listener: soundjsLib.Anon_EventObj): js.Object = js.native
+  def on(`type`: java.lang.String, listener: soundjsLib.Anon_EventObjHandleEvent): js.Object = js.native
+  def on(`type`: java.lang.String, listener: soundjsLib.Anon_EventObjHandleEvent, scope: js.Object): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: soundjsLib.Anon_HandleEventEventObj,
+    listener: soundjsLib.Anon_EventObjHandleEvent,
     scope: js.Object,
     once: scala.Boolean
   ): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: soundjsLib.Anon_HandleEventEventObj,
+    listener: soundjsLib.Anon_EventObjHandleEvent,
     scope: js.Object,
     once: scala.Boolean,
     data: js.Any
   ): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: soundjsLib.Anon_HandleEventEventObj,
+    listener: soundjsLib.Anon_EventObjHandleEvent,
     scope: js.Object,
     once: scala.Boolean,
     data: js.Any,
     useCapture: scala.Boolean
   ): js.Object = js.native
-  def on(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEvent, scope: js.Object): js.Object = js.native
+  def on(`type`: java.lang.String, listener: soundjsLib.Anon_EventObj, scope: js.Object): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: soundjsLib.Anon_HandleEvent,
+    listener: soundjsLib.Anon_EventObj,
     scope: js.Object,
     once: scala.Boolean
   ): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: soundjsLib.Anon_HandleEvent,
+    listener: soundjsLib.Anon_EventObj,
     scope: js.Object,
     once: scala.Boolean,
     data: js.Any
   ): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: soundjsLib.Anon_HandleEvent,
+    listener: soundjsLib.Anon_EventObj,
     scope: js.Object,
     once: scala.Boolean,
     data: js.Any,
@@ -192,10 +192,10 @@ object Sound extends js.Object {
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   def removeEventListener(`type`: java.lang.String, listener: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
-  def removeEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEvent): scala.Unit = js.native
-  def removeEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEventEventObj): scala.Unit = js.native
-  def removeEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEventEventObj, useCapture: scala.Boolean): scala.Unit = js.native
-  def removeEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_HandleEvent, useCapture: scala.Boolean): scala.Unit = js.native
+  def removeEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_EventObj): scala.Unit = js.native
+  def removeEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_EventObjHandleEvent): scala.Unit = js.native
+  def removeEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_EventObjHandleEvent, useCapture: scala.Boolean): scala.Unit = js.native
+  def removeEventListener(`type`: java.lang.String, listener: soundjsLib.Anon_EventObj, useCapture: scala.Boolean): scala.Unit = js.native
   def removeManifest(manifest: js.Array[_], basePath: java.lang.String): js.Object = js.native
   def removeSound(src: java.lang.String, basePath: java.lang.String): scala.Boolean = js.native
   def removeSound(src: js.Object, basePath: java.lang.String): scala.Boolean = js.native

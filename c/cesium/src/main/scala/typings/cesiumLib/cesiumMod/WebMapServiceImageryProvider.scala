@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebMapServiceImageryProvider protected ()
   extends cesiumLib.cesiumMod.CesiumNs.WebMapServiceImageryProvider {
-  def this(options: cesiumLib.Anon_Layers) = this()
+  def this(options: cesiumLib.Anon_CreditCrs) = this()
   /* CompleteClass */
   override var credit: cesiumLib.cesiumMod.CesiumNs.Credit = js.native
   /* CompleteClass */
@@ -71,7 +71,7 @@ class WebMapServiceImageryProvider protected ()
 @JSImport("cesium", "WebMapServiceImageryProvider")
 @js.native
 object WebMapServiceImageryProvider extends js.Object {
-  var DefaultParameters: cesiumLib.Anon_FormatRequest = js.native
-  var GetFeatureInfoDefaultParameters: cesiumLib.Anon_Service = js.native
+  var DefaultParameters: cesiumLib.Anon_Format = js.native
+  var GetFeatureInfoDefaultParameters: cesiumLib.Anon_Request = js.native
 }
 

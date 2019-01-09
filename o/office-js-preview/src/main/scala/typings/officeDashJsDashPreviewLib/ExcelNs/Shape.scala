@@ -260,7 +260,7 @@ class Shape ()
   def load(): Shape = js.native
   def load(option: java.lang.String): Shape = js.native
   def load(option: js.Array[java.lang.String]): Shape = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Shape = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Shape = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ShapeLoadOptions): Shape = js.native
   /**
     *

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick<jquery.JQueryAjaxSettings, select2.select2.Sub<keyof jquery.JQueryAjaxSettings, 'url'>>) */ trait AjaxOptions[Result, RemoteResult] extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in select2.select2.Sub<keyof jquery.JQueryAjaxSettings, 'url'> ]: jquery.JQueryAjaxSettings[P]} */ trait AjaxOptions[Result, RemoteResult] extends js.Object {
   var data: js.UndefOr[js.Function1[/* params */ QueryOptions, PlainObject[_]]] = js.undefined
   var delay: js.UndefOr[scala.Double] = js.undefined
   var processResults: js.UndefOr[

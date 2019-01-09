@@ -23,7 +23,7 @@ object asn1jsModMembers extends js.Object {
     * @param {ArrayBuffer} inputBuffer ASN.1 BER encoded array of bytes
     * @returns {{ offset: number; result: LocalBaseBlock }}
     */
-  def fromBER(inputBuffer: stdLib.ArrayBuffer): asn1jsLib.Anon_ResultOffset = js.native
+  def fromBER(inputBuffer: stdLib.ArrayBuffer): asn1jsLib.Anon_Offset = js.native
   /**
     * ASN.1 schema verification for ArrayBuffer data
     * 

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(reactDashToolboxLib.libRippleMod.RippleProps because Would inherit conflicting mutable fields List(children, disabled))*/
-trait ButtonProps
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- reactDashToolboxLib.libRippleMod.RippleProps because var conflicts: children, disabled. Inlined onRippleEnded, spread, theme */ trait ButtonProps
   extends reactDashToolboxLib.libButtonBaseMod.ButtonBaseProps {
   /**
     * If true, the button will have a flat look.
@@ -32,10 +32,19 @@ trait ButtonProps
     */
   var mini: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Function that will be called when the ripple animation ends.
+    */
+  var onRippleEnded: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  /**
     * If true, the button will have a raised look.
     * @default false
     */
   var raised: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Factor to indicate how much should the ripple spread under the component.
+    * @default 2
+    */
+  var spread: js.UndefOr[scala.Double] = js.undefined
   /**
     * Passed down to the root element
     */
@@ -43,6 +52,8 @@ trait ButtonProps
   /**
     * Classnames object defining the component style.
     */
-  var theme: js.UndefOr[reactDashToolboxLib.libButtonBaseMod.ButtonTheme] = js.undefined
+  var theme: js.UndefOr[
+    reactDashToolboxLib.libButtonBaseMod.ButtonTheme | reactDashToolboxLib.libRippleMod.RippleTheme
+  ] = js.undefined
 }
 

@@ -14,16 +14,10 @@ trait WindowScrollerProps
   * https://github.com/bvaughn/react-virtualized#pass-thru-props
   */
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  /**
-    * Function responsible for rendering children.
-    * This function should implement the following signature:
-    * ({ height, isScrolling, scrollLeft, scrollTop, width, onChildScroll }) => PropTypes.element
-    */
-  var children: js.Function1[/* params */ WindowScrollerChildProps, reactLib.reactMod.ReactNs.ReactNode]
   /** Callback to be invoked on-resize: ({ height, width }) */
   var onResize: js.UndefOr[js.Function1[/* params */ reactDashVirtualizedLib.Anon_Height, scala.Unit]] = js.undefined
   /** Callback to be invoked on-scroll: ({ scrollLeft, scrollTop }) */
-  var onScroll: js.UndefOr[js.Function1[/* params */ reactDashVirtualizedLib.Anon_ScrollTop, scala.Unit]] = js.undefined
+  var onScroll: js.UndefOr[js.Function1[/* params */ reactDashVirtualizedLib.Anon_ScrollLeft, scala.Unit]] = js.undefined
   /** Element to attach scroll event listeners. Defaults to window. */
   var scrollElement: js.UndefOr[stdLib.Window | reactLib.Element] = js.undefined
   /**
@@ -34,5 +28,11 @@ trait WindowScrollerProps
   var serverHeight: js.UndefOr[scala.Double] = js.undefined
   /** Width used for server-side rendering */
   var serverWidth: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * Function responsible for rendering children.
+    * This function should implement the following signature:
+    * ({ height, isScrolling, scrollLeft, scrollTop, width, onChildScroll }) => PropTypes.element
+    */
+  def children(params: WindowScrollerChildProps): reactLib.reactMod.ReactNs.ReactNode
 }
 

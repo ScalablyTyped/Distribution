@@ -13,7 +13,11 @@ trait SecurityGroupArgs extends js.Object {
   /**
     * A list of ingress rules.
     */
-  val ingress: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Cidr]]]
+  val ingress: atPulumiPulumiLib.resourceMod.Input[
+    js.Array[
+      atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CidrSecurityGroupNameSecurityGroupOwnerId]
+    ]
+  ]
   /**
     * The name of the Redshift security group.
     */

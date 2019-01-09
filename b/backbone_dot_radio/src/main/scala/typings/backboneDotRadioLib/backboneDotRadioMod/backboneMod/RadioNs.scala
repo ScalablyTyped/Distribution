@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("backbone.radio/backbone", "Radio")
 @js.native
 object RadioNs extends js.Object {
-  /* RemoveMultipleInheritance: Dropped parents List(backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Requests because Inheritance from two classes)*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Requests because Inheritance from two classes */ @js.native
   class Channel ()
     extends Commands
        with backboneLib.backboneMod.BackboneNs.Events {

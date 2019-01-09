@@ -4604,7 +4604,7 @@ trait LoDashFp extends js.Object {
   def negate[A1, A2](predicate: js.Function2[/* a1 */ A1, /* a2 */ A2, scala.Boolean]): js.Function2[/* a1 */ A1, /* a2 */ A2, scala.Boolean] = js.native
   @JSName("negate")
   def negate_A1[A1](predicate: js.Function1[/* a1 */ A1, scala.Boolean]): js.Function1[/* a1 */ A1, scala.Boolean] = js.native
-  def noConflict(): lodashLib.lodashMod.underscoreNs.LoDashStatic = js.native
+  def noConflict(): js.Any = js.native
   def noop(args: js.Any*): scala.Unit = js.native
   def now(): scala.Double = js.native
   def nth(n: scala.Double): LodashNth1x1 = js.native

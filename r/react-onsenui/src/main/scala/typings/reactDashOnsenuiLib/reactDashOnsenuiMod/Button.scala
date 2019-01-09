@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Button")
 @js.native
 class Button ()
-  extends Component[reactDashOnsenuiLib.Anon_NameOnClick, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_DisabledEModifier, js.Any]
 

@@ -36,7 +36,7 @@ trait ReplicationGroupArgs extends js.Object {
     * Create a native redis cluster. `automatic_failover_enabled` must be set to true. Cluster Mode documented below. Only 1 `cluster_mode` block is allowed.
     */
   val clusterMode: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ReplicasPerNodeGroupNumNodeGroups]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NumNodeGroupsReplicasPerNodeGroup]
   ] = js.undefined
   /**
     * The name of the cache engine to be used for the clusters in this replication group. e.g. `redis`

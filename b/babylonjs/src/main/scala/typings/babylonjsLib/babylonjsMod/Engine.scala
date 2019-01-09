@@ -84,7 +84,7 @@ object Engine extends js.Object {
   /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is equals to the stored value */
   val EQUAL: scala.Double = js.native
   /** Use this array to turn off some WebGL2 features on known buggy browsers version */
-  var ExceptionList: js.Array[babylonjsLib.Anon_CaptureConstraint | babylonjsLib.Anon_CaptureConstraintKey] = js.native
+  var ExceptionList: js.Array[babylonjsLib.Anon_Capture | babylonjsLib.Anon_CaptureCaptureConstraint] = js.native
   /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is greater than or equal to the stored value */
   val GEQUAL: scala.Double = js.native
   /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is greater than the stored value */

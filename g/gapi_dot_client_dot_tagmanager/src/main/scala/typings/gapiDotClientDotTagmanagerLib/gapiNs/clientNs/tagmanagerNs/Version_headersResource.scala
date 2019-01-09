@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Version_headersResource extends js.Object {
   /** Gets the latest container version header */
-  def latest(request: gapiDotClientDotTagmanagerLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[ContainerVersionHeader]
+  def latest(request: gapiDotClientDotTagmanagerLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[ContainerVersionHeader]
   /** Lists all Container Versions of a GTM Container. */
-  def list(request: gapiDotClientDotTagmanagerLib.Anon_ParentPrettyPrintPageToken): gapiDotClientLib.gapiNs.clientNs.Request[ListContainerVersionsResponse]
+  def list(request: gapiDotClientDotTagmanagerLib.Anon_AltFieldsIncludeDeleted): gapiDotClientLib.gapiNs.clientNs.Request[ListContainerVersionsResponse]
 }
 

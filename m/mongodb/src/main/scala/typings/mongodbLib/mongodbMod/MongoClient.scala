@@ -37,10 +37,7 @@ class MongoClient protected ()
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#watch */
   def watch(): ChangeStream = js.native
   def watch(pipeline: js.Array[js.Object]): ChangeStream = js.native
-  def watch(
-    pipeline: js.Array[js.Object],
-    options: ChangeStreamOptions with mongodbLib.Anon_SessionStartAtClusterTime
-  ): ChangeStream = js.native
+  def watch(pipeline: js.Array[js.Object], options: ChangeStreamOptions with mongodbLib.Anon_Session): ChangeStream = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#withSession */
   def withSession(operation: js.Function1[/* session */ ClientSession, js.Promise[_]]): js.Promise[scala.Unit] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#withSession */

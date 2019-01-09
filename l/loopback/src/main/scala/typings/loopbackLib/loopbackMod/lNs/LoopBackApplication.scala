@@ -135,8 +135,8 @@ trait LoopBackApplication
     * @returns {any} this (fluent API
     * @header app.middlewareFromConfig(factory, config
     */
-  def middlewareFromConfig(factory: js.Function0[scala.Unit], config: loopbackLib.Anon_Paths): js.Any = js.native
-  def model(Model: java.lang.String, config: loopbackLib.Anon_RelationsDataSource): js.Any = js.native
+  def middlewareFromConfig(factory: js.Function0[scala.Unit], config: loopbackLib.Anon_Enabled): js.Any = js.native
+  def model(Model: java.lang.String, config: loopbackLib.Anon_DataSourcePublic): js.Any = js.native
   /**
     * Listen for connections and update the configured port
     * When there are no parameters or there is only one callback parameter,
@@ -183,7 +183,7 @@ trait LoopBackApplication
     * @en
     * @returns {any} the model clas
     */
-  def model(Model: js.Any, config: loopbackLib.Anon_RelationsDataSource): js.Any = js.native
+  def model(Model: js.Any, config: loopbackLib.Anon_DataSourcePublic): js.Any = js.native
   /**
     * Get the models exported by the app. Returns only models defined using `app.model()
     * There are two ways to access models
@@ -219,7 +219,7 @@ trait LoopBackApplication
     * ``
     *  @returns {Array} Array of model classes
     */
-  def models(): js.Array[org.scalablytyped.runtime.Instantiable1[/* data */ js.Any, Model]] = js.native
+  def models(): js.Array[loopbackLib.Anon_Allowed] = js.native
   /**
     * Get all remote objects.
     * @returns {any} [Remote objects](apidocs.strongloop.com/strong-remoting/#remoteObjectsoptions).

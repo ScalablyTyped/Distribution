@@ -103,7 +103,7 @@ trait Config
     *   seleniumAddress: 'http://localhost:4444/wd/hub'
     * }
     */
-  var capabilities: js.UndefOr[protractorLib.Anon_Key] = js.undefined
+  var capabilities: js.UndefOr[protractorLib.Anon_BrowserName] = js.undefined
   /**
     * ChromeDriver location is used to help find the chromedriver binary. This will be passed to the
     * Selenium jar as the system property webdriver.chrome.driver. If the value is not set when
@@ -205,7 +205,7 @@ trait Config
     * See https://github.com/jasmine/jasmine-npm/blob/master/lib/jasmine.js
     * for the exact options available.
     */
-  var jasmineNodeOpts: js.UndefOr[protractorLib.Anon_KeyInvertGrep] = js.undefined
+  var jasmineNodeOpts: js.UndefOr[protractorLib.Anon_DefaultTimeoutInterval] = js.undefined
   var jvmArgs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
     * If kobitonUser and kobitonKey are specified, testobjectUser, testojbectKey, browserStackUser,
@@ -227,7 +227,7 @@ trait Config
     * values set via the deprecated config values `seleniumPort` and
     * `seleniumArgs`.
     */
-  var localSeleniumStandaloneOpts: js.UndefOr[protractorLib.Anon_JvmArgs] = js.undefined
+  var localSeleniumStandaloneOpts: js.UndefOr[protractorLib.Anon_ArgsJvmArgs] = js.undefined
   /**
     * Protractor log level
     *
@@ -247,7 +247,7 @@ trait Config
     *
     * See the full list at http://mochajs.org/
     */
-  var mochaOpts: js.UndefOr[protractorLib.Anon_KeyReporter] = js.undefined
+  var mochaOpts: js.UndefOr[protractorLib.Anon_Key] = js.undefined
   var mockSelenium: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * If you would like to run more than one instance of WebDriver on the same

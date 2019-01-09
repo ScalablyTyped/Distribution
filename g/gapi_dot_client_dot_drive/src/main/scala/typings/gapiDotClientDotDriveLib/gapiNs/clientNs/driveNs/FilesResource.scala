@@ -7,27 +7,27 @@ import scala.scalajs.js.annotation._
 
 trait FilesResource extends js.Object {
   /** Creates a copy of a file and applies any requested updates with patch semantics. */
-  def copy(request: gapiDotClientDotDriveLib.Anon_FileIdIgnoreDefaultVisibility): gapiDotClientLib.gapiNs.clientNs.Request[File]
+  def copy(request: gapiDotClientDotDriveLib.Anon_AltFieldsFileIdIgnoreDefaultVisibility): gapiDotClientLib.gapiNs.clientNs.Request[File]
   /** Creates a new file. */
-  def create(request: gapiDotClientDotDriveLib.Anon_IgnoreDefaultVisibility): gapiDotClientLib.gapiNs.clientNs.Request[File]
+  def create(request: gapiDotClientDotDriveLib.Anon_AltFieldsIgnoreDefaultVisibility): gapiDotClientLib.gapiNs.clientNs.Request[File]
   /**
     * Permanently deletes a file owned by the user without moving it to the trash. If the file belongs to a Team Drive the user must be an organizer on the
     * parent. If the target is a folder, all descendants owned by the user are also deleted.
     */
-  def delete(request: gapiDotClientDotDriveLib.Anon_FileIdPrettyPrintQuotaUserKeyUserIp): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+  def delete(request: gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKey): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   /** Permanently deletes all of the user's trashed files. */
-  def emptyTrash(request: gapiDotClientDotDriveLib.Anon_PrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+  def emptyTrash(request: gapiDotClientDotDriveLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   /** Exports a Google Doc to the requested MIME type and returns the exported content. Please note that the exported content is limited to 10MB. */
-  def export(request: gapiDotClientDotDriveLib.Anon_FileIdPrettyPrintQuotaUserMimeType): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+  def export(request: gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyMimeType): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   /** Generates a set of file IDs which can be provided in create requests. */
-  def generateIds(request: gapiDotClientDotDriveLib.Anon_Count): gapiDotClientLib.gapiNs.clientNs.Request[GeneratedIds]
+  def generateIds(request: gapiDotClientDotDriveLib.Anon_AltCount): gapiDotClientLib.gapiNs.clientNs.Request[GeneratedIds]
   /** Gets a file's metadata or content by ID. */
-  def get(request: gapiDotClientDotDriveLib.Anon_FileIdPrettyPrintQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[File]
+  def get(request: gapiDotClientDotDriveLib.Anon_AcknowledgeAbuse): gapiDotClientLib.gapiNs.clientNs.Request[File]
   /** Lists or searches files. */
-  def list(request: gapiDotClientDotDriveLib.Anon_Corpora): gapiDotClientLib.gapiNs.clientNs.Request[FileList]
+  def list(request: gapiDotClientDotDriveLib.Anon_AltCorpora): gapiDotClientLib.gapiNs.clientNs.Request[FileList]
   /** Updates a file's metadata and/or content with patch semantics. */
-  def update(request: gapiDotClientDotDriveLib.Anon_FileIdPrettyPrintKeepRevisionForever): gapiDotClientLib.gapiNs.clientNs.Request[File]
+  def update(request: gapiDotClientDotDriveLib.Anon_AddParents): gapiDotClientLib.gapiNs.clientNs.Request[File]
   /** Subscribes to changes to a file */
-  def watch(request: gapiDotClientDotDriveLib.Anon_FileIdPrettyPrintQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[Channel]
+  def watch(request: gapiDotClientDotDriveLib.Anon_AcknowledgeAbuse): gapiDotClientLib.gapiNs.clientNs.Request[Channel]
 }
 

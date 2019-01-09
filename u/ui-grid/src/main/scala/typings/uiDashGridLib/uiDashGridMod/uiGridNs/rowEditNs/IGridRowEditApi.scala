@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IGridRowEditApi[TEntity] extends js.Object {
   // Events
-  var on: uiDashGridLib.Anon_SaveRow[TEntity] = js.native
+  var on: uiDashGridLib.Anon_HandlerSaveRow[TEntity] = js.native
   // Methods
   /**
     * Triggers a save event for all currently dirty rows.

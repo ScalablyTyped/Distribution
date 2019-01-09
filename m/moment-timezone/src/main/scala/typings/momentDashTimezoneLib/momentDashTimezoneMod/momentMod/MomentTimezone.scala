@@ -45,7 +45,7 @@ trait MomentTimezone extends js.Object {
   def guess(ignoreCache: scala.Boolean): java.lang.String = js.native
   def link(packedLinkString: java.lang.String): scala.Unit = js.native
   def link(packedLinkString: js.Array[java.lang.String]): scala.Unit = js.native
-  def load(data: momentDashTimezoneLib.Anon_Zones): scala.Unit = js.native
+  def load(data: momentDashTimezoneLib.Anon_Links): scala.Unit = js.native
   def names(): js.Array[java.lang.String] = js.native
   def setDefault(): MomentTimezone = js.native
   def setDefault(timezone: java.lang.String): MomentTimezone = js.native

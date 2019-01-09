@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ trait Props extends js.Object {
   var changeWidth: js.UndefOr[scala.Boolean] = js.undefined
   var overflowHidden: js.UndefOr[scala.Boolean] = js.undefined

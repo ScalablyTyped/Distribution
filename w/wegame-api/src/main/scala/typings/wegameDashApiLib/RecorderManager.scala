@@ -11,7 +11,7 @@ class RecorderManager () extends js.Object {
   /**
     * 监听录音错误事件
     */
-  def onError(callback: js.Function1[/* res */ Anon_ErrMsgString, scala.Unit]): scala.Unit = js.native
+  def onError(callback: js.Function1[/* res */ Anon_ErrMsg, scala.Unit]): scala.Unit = js.native
   /**
     * 监听已录制完指定帧大小的文件事件。如果设置了 frameSize，则会回调此事件。
     * @param callback.res.frameBuffer 录音分片数据
@@ -46,7 +46,7 @@ class RecorderManager () extends js.Object {
   /**
     * 开始录音
     */
-  def start(param: Anon_Format): scala.Unit = js.native
+  def start(param: Anon_1): scala.Unit = js.native
   /**
     * 停止录音
     */

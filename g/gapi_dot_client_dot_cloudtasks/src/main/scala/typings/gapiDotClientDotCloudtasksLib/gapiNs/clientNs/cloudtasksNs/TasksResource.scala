@@ -20,7 +20,7 @@ trait TasksResource extends js.Object {
     * not be returned by a later CloudTasks.PullTasks,
     * CloudTasks.GetTask, or CloudTasks.ListTasks.
     */
-  def acknowledge(request: gapiDotClientDotCloudtasksLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def acknowledge(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Cancel a pull task's lease.
     *
@@ -28,7 +28,7 @@ trait TasksResource extends js.Object {
     * by setting Task.schedule_time to now. This will make the task
     * available to be leased to the next caller of CloudTasks.PullTasks.
     */
-  def cancelLease(request: gapiDotClientDotCloudtasksLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Task]
+  def cancelLease(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Task]
   /**
     * Creates a task and adds it to a queue.
     *
@@ -44,7 +44,7 @@ trait TasksResource extends js.Object {
     * &#42; For [pull queues](google.cloud.tasks.v2beta2.PullTarget), this
     * the maximum task size is 1MB.
     */
-  def create(request: gapiDotClientDotCloudtasksLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[Task]
+  def create(request: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[Task]
   /**
     * Deletes a task.
     *
@@ -52,9 +52,9 @@ trait TasksResource extends js.Object {
     * cannot be deleted if it has completed successfully or permanently
     * failed.
     */
-  def delete(request: gapiDotClientDotCloudtasksLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /** Gets a task. */
-  def get(request: gapiDotClientDotCloudtasksLib.Anon_NameAccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Task]
+  def get(request: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Task]
   /**
     * Lists the tasks in a queue.
     *
@@ -63,7 +63,7 @@ trait TasksResource extends js.Object {
     * considerations; ListTasksRequest.response_view controls the
     * subset of information which is returned.
     */
-  def list(request: gapiDotClientDotCloudtasksLib.Anon_ParentAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListTasksResponse]
+  def list(request: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[ListTasksResponse]
   /**
     * Pulls tasks from a pull queue and acquires a lease on them for a
     * specified PullTasksRequest.lease_duration.
@@ -83,7 +83,7 @@ trait TasksResource extends js.Object {
     * is exceeded. google.rpc.Code.RESOURCE_EXHAUSTED is also returned when
     * RateLimits.max_tasks_dispatched_per_second is exceeded.
     */
-  def pull(request: gapiDotClientDotCloudtasksLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[PullTasksResponse]
+  def pull(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[PullTasksResponse]
   /**
     * Renew the current lease of a pull task.
     *
@@ -91,7 +91,7 @@ trait TasksResource extends js.Object {
     * duration, starting from now. The new task lease will be
     * returned in Task.schedule_time.
     */
-  def renewLease(request: gapiDotClientDotCloudtasksLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Task]
+  def renewLease(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Task]
   /**
     * Forces a task to run now.
     *
@@ -119,6 +119,6 @@ trait TasksResource extends js.Object {
     * CloudTasks.RunTask is called on task that is dispatched or
     * already running.
     */
-  def run(request: gapiDotClientDotCloudtasksLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Task]
+  def run(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Task]
 }
 

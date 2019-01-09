@@ -104,7 +104,7 @@ trait AnnotationsLabelOptions extends js.Object {
     * @default "callout"
     * @since 6.0.0
     */
-  var style: js.UndefOr[highchartsLib.Anon_ColorTextAlign] = js.undefined
+  var style: js.UndefOr[highchartsLib.Anon_ColorFontFamily] = js.undefined
   /**
     * Alias for the format option.
     * @default undefined

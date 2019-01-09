@@ -12,7 +12,7 @@ trait RequestOptions
   /** 如果设为json，会尝试对返回的数据做一次 JSON.parse  默认值为json */
   var dataType: js.UndefOr[java.lang.String] = js.undefined
   @JSName("fail")
-  var fail_RequestOptions: js.UndefOr[js.Function1[/* err */ baiduDashAppLib.Anon_ErrMsgErrCode, scala.Unit]] = js.undefined
+  var fail_RequestOptions: js.UndefOr[js.Function1[/* err */ baiduDashAppLib.Anon_ErrCode, scala.Unit]] = js.undefined
   /** 设置请求的 header , header 中不能设置 Referer */
   var header: js.UndefOr[RequestHeader] = js.undefined
   /** 默认为 GET，有效值：OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT */

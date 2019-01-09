@@ -15,9 +15,9 @@ class Predicate ()
     // for any/all clauses
   def this(passthru: java.lang.String) = this()
   def this(predicate: breezeLib.breezeNs.Predicate) = this()
-  def this(property: java.lang.String, operator: breezeLib.breezeNs.FilterQueryOpSymbol, value: breezeLib.Anon_Value) = this()
+  def this(property: java.lang.String, operator: breezeLib.breezeNs.FilterQueryOpSymbol, value: breezeLib.Anon_DataType) = this()
   def this(property: java.lang.String, operator: breezeLib.breezeNs.FilterQueryOpSymbol, value: js.Any) = this()
-  def this(property: java.lang.String, operator: java.lang.String, value: breezeLib.Anon_Value) = this()
+  def this(property: java.lang.String, operator: java.lang.String, value: breezeLib.Anon_DataType) = this()
   def this(property: java.lang.String, operator: java.lang.String, value: js.Any) = this()
   def this(property: java.lang.String, filterop: breezeLib.breezeNs.FilterQueryOpSymbol, property2: java.lang.String, filterop2: breezeLib.breezeNs.FilterQueryOpSymbol, value: js.Any) = this()
     // for any/all clauses

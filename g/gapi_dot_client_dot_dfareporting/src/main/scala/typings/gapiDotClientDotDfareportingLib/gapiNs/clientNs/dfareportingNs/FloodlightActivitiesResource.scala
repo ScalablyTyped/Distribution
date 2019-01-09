@@ -7,20 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait FloodlightActivitiesResource extends js.Object {
   /** Deletes an existing floodlight activity. */
-  def delete(request: gapiDotClientDotDfareportingLib.Anon_ProfileIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+  def delete(request: gapiDotClientDotDfareportingLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   /** Generates a tag for a floodlight activity. */
-  def generatetag(
-    request: gapiDotClientDotDfareportingLib.Anon_ProfileIdPrettyPrintQuotaUserKeyUserIpOauthtokenAltFieldsFloodlightActivityId
-  ): gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivitiesGenerateTagResponse]
+  def generatetag(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsFloodlightActivityId): gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivitiesGenerateTagResponse]
   /** Gets one floodlight activity by ID. */
-  def get(request: gapiDotClientDotDfareportingLib.Anon_ProfileIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
+  def get(request: gapiDotClientDotDfareportingLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
   /** Inserts a new floodlight activity. */
-  def insert(request: gapiDotClientDotDfareportingLib.Anon_ProfileId): gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
+  def insert(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
   /** Retrieves a list of floodlight activities, possibly filtered. This method supports paging. */
-  def list(request: gapiDotClientDotDfareportingLib.Anon_ProfileIdFloodlightActivityGroupIds): gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivitiesListResponse]
+  def list(request: gapiDotClientDotDfareportingLib.Anon_AdvertiserIdAltFields): gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivitiesListResponse]
   /** Updates an existing floodlight activity. This method supports patch semantics. */
-  def patch(request: gapiDotClientDotDfareportingLib.Anon_ProfileIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
+  def patch(request: gapiDotClientDotDfareportingLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
   /** Updates an existing floodlight activity. */
-  def update(request: gapiDotClientDotDfareportingLib.Anon_ProfileId): gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
+  def update(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[FloodlightActivity]
 }
 

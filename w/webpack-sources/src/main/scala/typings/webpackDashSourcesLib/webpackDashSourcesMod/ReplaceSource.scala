@@ -29,6 +29,6 @@ class ReplaceSource protected ()
   override def map(options: webpackDashSourcesLib.Anon_Columns): sourceDashMapLib.sourceDashMapMod.RawSourceMap = js.native
   def replace(start: scala.Double, end: scala.Double, newValue: java.lang.String): scala.Unit = js.native
   /* CompleteClass */
-  override def sourceAndMap(options: webpackDashSourcesLib.Anon_Columns): webpackDashSourcesLib.Anon_Source = js.native
+  override def sourceAndMap(options: webpackDashSourcesLib.Anon_Columns): webpackDashSourcesLib.Anon_Map = js.native
 }
 

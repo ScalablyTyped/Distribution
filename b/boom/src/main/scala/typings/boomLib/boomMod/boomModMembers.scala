@@ -54,7 +54,7 @@ object boomModMembers extends js.Object {
     * @see {@link https://github.com/hapijs/boom#boomifyerror-options}
     */
   def boomify(error: stdLib.Error): Boom[scala.Null] = js.native
-  def boomify(error: stdLib.Error, options: boomLib.Anon_Override): Boom[scala.Null] = js.native
+  def boomify(error: stdLib.Error, options: boomLib.Anon_Message): Boom[scala.Null] = js.native
   /**
     * Returns a 408 Request Time-out error
     * @param message optional message.

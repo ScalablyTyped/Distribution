@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 // #region Account
 trait AccountInfo extends js.Object {
   /* 小程序账号信息 */
-  var miniProgram: baiduDashAppLib.Anon_AppIdString
+  var miniProgram: baiduDashAppLib.Anon_AppId
   /* 插件账号信息（仅在插件中调用时包含这一项）	 */
   var plugin: js.UndefOr[baiduDashAppLib.Anon_AppIdVersion] = js.undefined
 }

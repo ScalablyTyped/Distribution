@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<react.react.HTMLAttributes<react.HTMLDivElement>, std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement>, 'classes' | 'onChange' | 'onKeyUp' | 'onKeyDown' | 'defaultValue'>>, @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLDivElement>, @material-ui/core.@material-ui/core/InputBase/InputBase.InputBaseClassKey, 'onChange' | 'onKeyUp' | 'onKeyDown' | 'defaultValue'>) */ trait InputBaseProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement>, 'classes' | 'onChange' | 'onKeyUp' | 'onKeyDown' | 'defaultValue'> ]: react.react.HTMLAttributes<react.HTMLDivElement>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLDivElement>, @material-ui/core.@material-ui/core/InputBase/InputBase.InputBaseClassKey, 'onChange' | 'onKeyUp' | 'onKeyDown' | 'defaultValue'>) */ trait InputBaseProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[InputBaseClassKey] {
   var autoComplete: js.UndefOr[java.lang.String] = js.undefined
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
@@ -49,7 +50,7 @@ import scala.scalajs.js.annotation._
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
   var renderPrefix: js.UndefOr[
     js.Function1[
-      /* state */ atMaterialDashUiCoreLib.Anon_Margin, 
+      /* state */ atMaterialDashUiCoreLib.Anon_Dense, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined

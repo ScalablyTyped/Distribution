@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(skatejsLib.typesMod.WithContext because Inheritance from two classes, skatejsLib.typesMod.WithUpdate because Inheritance from two classes, skatejsLib.typesMod.WithRenderer because Inheritance from two classes, skatejsLib.typesMod.WithLifecycle because Inheritance from two classes, skatejsLib.typesMod.WithChildren because Inheritance from two classes)*/
-@JSImport("skatejs/types", "WithComponent")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- skatejsLib.typesMod.WithContext because Inheritance from two classes- skatejsLib.typesMod.WithUpdate because Inheritance from two classes- skatejsLib.typesMod.WithRenderer because Inheritance from two classes- skatejsLib.typesMod.WithLifecycle because Inheritance from two classes- skatejsLib.typesMod.WithChildren because Inheritance from two classes */ @JSImport("skatejs/types", "WithComponent")
 @js.native
 class WithComponent[P, S, C] () extends CustomElement
 

@@ -18,7 +18,7 @@ trait GraphQLApiState extends js.Object {
     * Nested argument containing logging configuration. Defined below.
     */
   val logConfig: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldLogLevelCloudwatchLogsRoleArn]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CloudwatchLogsRoleArnFieldLogLevel]
   ] = js.undefined
   /**
     * A user-supplied name for the GraphqlApi.
@@ -27,7 +27,7 @@ trait GraphQLApiState extends js.Object {
   /**
     * Nested argument containing OpenID Connect configuration. Defined below.
     */
-  val openidConnectConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AuthTtlIssuer]] = js.undefined
+  val openidConnectConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AuthTtlClientId]] = js.undefined
   /**
     * Map of URIs associated with the API. e.g. `uris["GRAPHQL"] = https://ID.appsync-api.REGION.amazonaws.com/graphql`
     */
@@ -40,7 +40,7 @@ trait GraphQLApiState extends js.Object {
     * The Amazon Cognito User Pool configuration. Defined below.
     */
   val userPoolConfig: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DefaultActionAppIdClientRegex]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AppIdClientRegexAwsRegion]
   ] = js.undefined
 }
 

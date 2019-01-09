@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_KeyAlgorithm extends js.Object {
-  var keyAlgorithm: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  var signingAlgorithm: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  var subject: atPulumiPulumiLib.resourceMod.Input[Anon_Organization]
+  var keyAlgorithm: java.lang.String
+  var signingAlgorithm: java.lang.String
+  var subject: Anon_CommonName
 }
 

@@ -5,9 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.BaseElement because Would inherit conflicting mutable fields List($type))*/
-trait Participant extends InteractionNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.BaseElement because var conflicts: $type. Inlined id, documentation, extensionDefinitions, extensionElements, $attrs */ trait Participant extends InteractionNode {
+  /**
+    * Attributes that aren't defined by the BPMN Spec such
+    * as Camunda properties
+    */
+  @JSName("$attrs")
+  var $attrs: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  /**
+    * Documentation for the element
+    */
+  var documentation: js.UndefOr[js.Array[Documentation]] = js.undefined
   var endPointRefs: js.Array[EndPoint]
+  /**
+    * Reference to the extension definitions for this element
+    */
+  var extensionDefinitions: js.UndefOr[js.Array[ExtensionDefinition]] = js.undefined
+  /**
+    * Extension Elements
+    */
+  var extensionElements: js.UndefOr[ExtensionElements] = js.undefined
+  /**
+    * Is the primary Id of the element
+    */
+  var id: java.lang.String
   var interfaceRef: js.Array[Interface]
   var name: java.lang.String
   var participantMultiplicity: ParticipantMultiplicity

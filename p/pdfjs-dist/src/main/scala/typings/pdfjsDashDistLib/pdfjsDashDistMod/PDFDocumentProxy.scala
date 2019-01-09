@@ -43,7 +43,7 @@ trait PDFDocumentProxy extends js.Object {
   /**
     * A promise that is resolved with the info and metadata of the PDF.
     **/
-  def getMetadata(): PDFPromise[pdfjsDashDistLib.Anon_Metadata]
+  def getMetadata(): PDFPromise[pdfjsDashDistLib.Anon_Info]
   /**
     *  A promise that is resolved with an array that is a tree outline (if it has one) of the PDF.  @see PDFTreeNode
     **/

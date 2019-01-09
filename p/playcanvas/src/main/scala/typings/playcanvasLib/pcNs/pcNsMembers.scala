@@ -1842,7 +1842,7 @@ object pcNsMembers extends js.Object {
     * @author Will Eastcott
     */
   def createBox(device: GraphicsDevice): Mesh = js.native
-  def createBox(device: GraphicsDevice, opts: playcanvasLib.Anon_HeightSegmentsHalfExtents): Mesh = js.native
+  def createBox(device: GraphicsDevice, opts: playcanvasLib.Anon_HalfExtentsHeightSegments): Mesh = js.native
   /**
     * @function
     * @name pc.createCapsule
@@ -1862,7 +1862,7 @@ object pcNsMembers extends js.Object {
     * @author Will Eastcott
     */
   def createCapsule(device: GraphicsDevice): Mesh = js.native
-  def createCapsule(device: GraphicsDevice, opts: playcanvasLib.Anon_HeightSegments): Mesh = js.native
+  def createCapsule(device: GraphicsDevice, opts: playcanvasLib.Anon_HeightHeightSegments): Mesh = js.native
   /**
     * @function
     * @name pc.createCone
@@ -1883,7 +1883,7 @@ object pcNsMembers extends js.Object {
     * @author Will Eastcott
     */
   def createCone(device: GraphicsDevice): Mesh = js.native
-  def createCone(device: GraphicsDevice, opts: playcanvasLib.Anon_HeightSegmentsHeight): Mesh = js.native
+  def createCone(device: GraphicsDevice, opts: playcanvasLib.Anon_BaseRadius): Mesh = js.native
   /**
     * @function
     * @name pc.createCylinder
@@ -1903,7 +1903,7 @@ object pcNsMembers extends js.Object {
     * @author Will Eastcott
     */
   def createCylinder(device: GraphicsDevice): Mesh = js.native
-  def createCylinder(device: GraphicsDevice, opts: playcanvasLib.Anon_HeightSegmentsHeightRadius): Mesh = js.native
+  def createCylinder(device: GraphicsDevice, opts: playcanvasLib.Anon_CapSegments): Mesh = js.native
   /**
     * @function
     * @name pc.createMesh
@@ -1931,7 +1931,7 @@ object pcNsMembers extends js.Object {
     * @author Will Eastcott
     */
   def createMesh(device: GraphicsDevice, positions: js.Array[scala.Double]): Mesh = js.native
-  def createMesh(device: GraphicsDevice, positions: js.Array[scala.Double], opts: playcanvasLib.Anon_Uvs): Mesh = js.native
+  def createMesh(device: GraphicsDevice, positions: js.Array[scala.Double], opts: playcanvasLib.Anon_Colors): Mesh = js.native
   /**
     * @function
     * @name pc.createPlane
@@ -2001,7 +2001,7 @@ object pcNsMembers extends js.Object {
     * @author Will Eastcott
     */
   def createSphere(device: GraphicsDevice): Mesh = js.native
-  def createSphere(device: GraphicsDevice, opts: playcanvasLib.Anon_Segments): Mesh = js.native
+  def createSphere(device: GraphicsDevice, opts: playcanvasLib.Anon_Radius): Mesh = js.native
   /**
     * @function
     * @name pc.createStyle
@@ -2033,7 +2033,7 @@ object pcNsMembers extends js.Object {
     * @author Will Eastcott
     */
   def createTorus(device: GraphicsDevice): Mesh = js.native
-  def createTorus(device: GraphicsDevice, opts: playcanvasLib.Anon_TubeRadius): Mesh = js.native
+  def createTorus(device: GraphicsDevice, opts: playcanvasLib.Anon_RingRadius): Mesh = js.native
   /**
     * @private
     * @function
@@ -2049,7 +2049,7 @@ object pcNsMembers extends js.Object {
     * @param {String} [options.fragment] The fragment section, after the # (e.g. http://example.com#<b>fragment/data</b>)
     * @returns {String} A URI string
     */
-  def createURI(options: playcanvasLib.Anon_Path): java.lang.String = js.native
+  def createURI(options: playcanvasLib.Anon_Authority): java.lang.String = js.native
   /**
     * @private
     * @function

@@ -16,7 +16,7 @@ trait sqlite3 extends js.Object {
   var OPEN_READWRITE: scala.Double
   var RunResult: RunResult
   var Statement: org.scalablytyped.runtime.Instantiable0[Statement]
-  var cached: sqlite3Lib.Anon_Database
+  var cached: sqlite3Lib.Anon_Callback
   def verbose(): this.type
 }
 

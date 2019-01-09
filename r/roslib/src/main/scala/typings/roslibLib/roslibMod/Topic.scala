@@ -27,6 +27,6 @@ class Topic protected ()
   		 *   * latch - latch the topic when publishing
   		 *   * queue_length - the queue length at bridge side used when subscribing (defaults to 0, no queueing).
   		 */
-  def this(options: roslibLib.Anon_Name) = this()
+  def this(options: roslibLib.Anon_Compression) = this()
 }
 

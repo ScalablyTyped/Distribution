@@ -29,7 +29,7 @@ trait AreaProps extends AreaBaseProps {
   /**
     * Called when the mouse is moved over the area
     */
-  var onMouseMove: js.UndefOr[js.Function1[/* event */ protonDashNativeLib.Anon_X, scala.Unit]] = js.undefined
+  var onMouseMove: js.UndefOr[js.Function1[/* event */ protonDashNativeLib.Anon_Buttons, scala.Unit]] = js.undefined
   /**
     * **Not working at the moment.**
     *

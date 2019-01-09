@@ -18,20 +18,20 @@ trait RedisStore
   def quit(): scala.Unit = js.native
   def set(
     key: java.lang.String,
-    sess: stdLib.Partial[koaDashSessionLib.koaDashSessionMod.sessionNs.Session] with koa2DashSessionDashRedisLib.Anon_MaxAge
+    sess: stdLib.Partial[koaDashSessionLib.koaDashSessionMod.sessionNs.Session] with koa2DashSessionDashRedisLib.Anon_Expire
   ): js.Any = js.native
   /**
     * set session object for key, with a maxAge (in ms)
     */
   def set(
     key: java.lang.String,
-    sess: stdLib.Partial[koaDashSessionLib.koaDashSessionMod.sessionNs.Session] with koa2DashSessionDashRedisLib.Anon_MaxAge,
+    sess: stdLib.Partial[koaDashSessionLib.koaDashSessionMod.sessionNs.Session] with koa2DashSessionDashRedisLib.Anon_Expire,
     maxAge: scala.Double
   ): js.Any = js.native
   @JSName("set")
   def set_session(
     key: java.lang.String,
-    sess: stdLib.Partial[koaDashSessionLib.koaDashSessionMod.sessionNs.Session] with koa2DashSessionDashRedisLib.Anon_MaxAge,
+    sess: stdLib.Partial[koaDashSessionLib.koaDashSessionMod.sessionNs.Session] with koa2DashSessionDashRedisLib.Anon_Expire,
     maxAge: koa2DashSessionDashRedisLib.koa2DashSessionDashRedisLibStrings.session
   ): js.Any = js.native
 }

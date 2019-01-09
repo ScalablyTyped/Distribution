@@ -13,7 +13,7 @@ trait Profile
   var emails_Profile: js.Array[ValueObject]
   var gender: java.lang.String
   @JSName("name")
-  var name_Profile: passportDashFacebookDashTokenLib.Anon_GivenName
+  var name_Profile: passportDashFacebookDashTokenLib.Anon_FamilyName
   @JSName("photos")
   var photos_Profile: js.Array[ValueObject]
 }

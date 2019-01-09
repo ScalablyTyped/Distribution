@@ -67,7 +67,7 @@ trait ClusterArgs extends js.Object {
   /**
     * Encrypt at rest options
     */
-  val serverSideEncryption: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EnabledInput]] = js.undefined
+  val serverSideEncryption: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput]] = js.undefined
   /**
     * Name of the subnet group to be used for the
     * cluster

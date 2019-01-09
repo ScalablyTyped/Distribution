@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 	 * Component组件参数
 	 */
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial<baidu-app.swan.Lifetimes>) */ trait ComponentOptions[Instance /* <: Component[Data, Props] */, Data, Methods, Props] extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof baidu-app.swan.Lifetimes ]:? baidu-app.swan.Lifetimes[P]} */ trait ComponentOptions[Instance /* <: Component[Data, Props] */, Data, Methods, Props] extends js.Object {
   /**
   		 * 类似于mixins和traits的组件间代码复用机制
   		 * 参见 [behaviors](https://smartprogram.baidu.com/docs/develop/framework/custom-component_behaviors/)
@@ -51,7 +51,7 @@ import scala.scalajs.js.annotation._
   /**
   		 * 一些组件选项，请参见文档其他部分的说明
   		 */
-  var options: js.UndefOr[stdLib.Partial[baiduDashAppLib.Anon_MultipleSlots]] = js.undefined
+  var options: js.UndefOr[stdLib.Partial[baiduDashAppLib.Anon_AddGlobalClass]] = js.undefined
   /**
   		 * 组件所在页面的生命周期声明对象，目前仅支持页面的show和hide两个生命周期
   		 */

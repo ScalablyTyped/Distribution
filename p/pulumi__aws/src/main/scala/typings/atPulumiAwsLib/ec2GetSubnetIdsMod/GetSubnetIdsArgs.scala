@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetSubnetIdsArgs extends js.Object {
-  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_Values]] = js.undefined
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   /**
     * A mapping of tags, each pair of which must exactly match
     * a pair on the desired subnets.

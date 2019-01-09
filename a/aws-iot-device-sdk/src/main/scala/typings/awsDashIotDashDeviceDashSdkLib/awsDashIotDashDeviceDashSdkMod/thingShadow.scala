@@ -196,17 +196,17 @@ class thingShadow ()
     * @param callback fired on suback
     */
   def subscribe(topic: java.lang.String): mqttLib.mqttMod.Client = js.native
-  def subscribe(topic: java.lang.String, options: awsDashIotDashDeviceDashSdkLib.Anon_Qos): mqttLib.mqttMod.Client = js.native
+  def subscribe(topic: java.lang.String, options: awsDashIotDashDeviceDashSdkLib.Anon_0): mqttLib.mqttMod.Client = js.native
   def subscribe(
     topic: java.lang.String,
-    options: awsDashIotDashDeviceDashSdkLib.Anon_Qos,
+    options: awsDashIotDashDeviceDashSdkLib.Anon_0,
     callback: mqttLib.typesLibClientMod.ClientSubscribeCallback
   ): mqttLib.mqttMod.Client = js.native
   def subscribe(topic: js.Array[java.lang.String]): mqttLib.mqttMod.Client = js.native
-  def subscribe(topic: js.Array[java.lang.String], options: awsDashIotDashDeviceDashSdkLib.Anon_Qos): mqttLib.mqttMod.Client = js.native
+  def subscribe(topic: js.Array[java.lang.String], options: awsDashIotDashDeviceDashSdkLib.Anon_0): mqttLib.mqttMod.Client = js.native
   def subscribe(
     topic: js.Array[java.lang.String],
-    options: awsDashIotDashDeviceDashSdkLib.Anon_Qos,
+    options: awsDashIotDashDeviceDashSdkLib.Anon_0,
     callback: mqttLib.typesLibClientMod.ClientSubscribeCallback
   ): mqttLib.mqttMod.Client = js.native
   /**

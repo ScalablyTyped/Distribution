@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_AccountId extends js.Object {
   var accountId: java.lang.String
-  var data: Anon_ContinuationToken
+  var data: Anon_ActionConfiguration
   var id: java.lang.String
 }
 

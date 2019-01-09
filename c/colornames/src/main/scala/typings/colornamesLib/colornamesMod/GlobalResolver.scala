@@ -14,7 +14,7 @@ trait GlobalResolver extends js.Object {
     * Provides the functionality to query colors.
     */
   @JSName("get")
-  var get_Original: colornamesLib.Anon_Name = js.native
+  var get_Original: colornamesLib.Anon_All = js.native
   /**
     * Gets the color with the specified name.
     */

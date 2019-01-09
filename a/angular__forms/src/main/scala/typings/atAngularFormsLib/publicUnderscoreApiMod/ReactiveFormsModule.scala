@@ -21,6 +21,6 @@ object ReactiveFormsModule extends js.Object {
     * * `warnOnNgModelWithFormControl` Configures when to emit a warning when an `ngModel`
     * binding is used with reactive form directives.
     */
-  def withConfig(opts: atAngularFormsLib.Anon_WarnOnNgModelWithFormControl): atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.ModuleWithProviders[atAngularFormsLib.srcFormUnderscoreProvidersMod.ReactiveFormsModule] = js.native
+  def withConfig(opts: atAngularFormsLib.Anon_AlwaysNever): atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.ModuleWithProviders[atAngularFormsLib.srcFormUnderscoreProvidersMod.ReactiveFormsModule] = js.native
 }
 

@@ -20,7 +20,7 @@ object stringDashFormatModMembers extends js.Object {
     /* template */ java.lang.String, 
     /* repeated */ org.scalablytyped.runtime.StringDictionary[js.Any] | java.lang.String, 
     java.lang.String
-  ]) with stringDashFormatLib.Anon_Extend = js.native
+  ]) with stringDashFormatLib.Anon_Create = js.native
   /**
     * @param prototype prototype which should be extended by format (usually String.prototype)
     * @param transformers functions which convert a string, indexed by a name

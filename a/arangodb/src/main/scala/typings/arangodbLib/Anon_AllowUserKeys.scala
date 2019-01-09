@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AllowUserKeys extends js.Object {
-  var allowUserKeys: scala.Boolean
+  var allowUserKeys: js.UndefOr[scala.Boolean] = js.undefined
   var increment: js.UndefOr[scala.Double] = js.undefined
   var offset: js.UndefOr[scala.Double] = js.undefined
-  var `type`: arangodbLib.ArangoDBNs.KeyGeneratorType
+  var `type`: js.UndefOr[arangodbLib.ArangoDBNs.KeyGeneratorType] = js.undefined
 }
 

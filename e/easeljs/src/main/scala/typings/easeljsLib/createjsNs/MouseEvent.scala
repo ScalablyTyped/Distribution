@@ -23,10 +23,10 @@ class MouseEvent protected ()
   var relatedTarget: DisplayObject = js.native
   var stageX: scala.Double = js.native
   var stageY: scala.Double = js.native
-  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent): js.Object = js.native
-  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj): js.Object = js.native
-  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj, useCapture: scala.Boolean): js.Object = js.native
-  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent, useCapture: scala.Boolean): js.Object = js.native
+  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj): js.Object = js.native
+  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent): js.Object = js.native
+  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent, useCapture: scala.Boolean): js.Object = js.native
+  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj, useCapture: scala.Boolean): js.Object = js.native
   // EventDispatcher mixins
   def addEventListener(
     `type`: java.lang.String,
@@ -44,10 +44,10 @@ class MouseEvent protected ()
   def dispatchEvent(eventObj: js.Object): scala.Boolean = js.native
   def dispatchEvent(eventObj: js.Object, target: js.Object): scala.Boolean = js.native
   def hasEventListener(`type`: java.lang.String): scala.Boolean = js.native
-  def off(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent): scala.Unit = js.native
-  def off(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj): scala.Unit = js.native
-  def off(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj, useCapture: scala.Boolean): scala.Unit = js.native
-  def off(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent, useCapture: scala.Boolean): scala.Unit = js.native
+  def off(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj): scala.Unit = js.native
+  def off(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent): scala.Unit = js.native
+  def off(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent, useCapture: scala.Boolean): scala.Unit = js.native
+  def off(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj, useCapture: scala.Boolean): scala.Unit = js.native
   def off(`type`: java.lang.String, listener: js.Function): scala.Unit = js.native
   def off(
     `type`: java.lang.String,
@@ -59,47 +59,47 @@ class MouseEvent protected ()
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   def off(`type`: java.lang.String, listener: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
-  def on(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent): js.Object = js.native
-  def on(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj): js.Object = js.native
-  def on(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj, scope: js.Object): js.Object = js.native
+  def on(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj): js.Object = js.native
+  def on(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent): js.Object = js.native
+  def on(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent, scope: js.Object): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: easeljsLib.Anon_HandleEventEventObj,
+    listener: easeljsLib.Anon_EventObjHandleEvent,
     scope: js.Object,
     once: scala.Boolean
   ): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: easeljsLib.Anon_HandleEventEventObj,
+    listener: easeljsLib.Anon_EventObjHandleEvent,
     scope: js.Object,
     once: scala.Boolean,
     data: js.Any
   ): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: easeljsLib.Anon_HandleEventEventObj,
+    listener: easeljsLib.Anon_EventObjHandleEvent,
     scope: js.Object,
     once: scala.Boolean,
     data: js.Any,
     useCapture: scala.Boolean
   ): js.Object = js.native
-  def on(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent, scope: js.Object): js.Object = js.native
+  def on(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj, scope: js.Object): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: easeljsLib.Anon_HandleEvent,
+    listener: easeljsLib.Anon_EventObj,
     scope: js.Object,
     once: scala.Boolean
   ): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: easeljsLib.Anon_HandleEvent,
+    listener: easeljsLib.Anon_EventObj,
     scope: js.Object,
     once: scala.Boolean,
     data: js.Any
   ): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: easeljsLib.Anon_HandleEvent,
+    listener: easeljsLib.Anon_EventObj,
     scope: js.Object,
     once: scala.Boolean,
     data: js.Any,
@@ -138,10 +138,10 @@ class MouseEvent protected ()
   ): js.Function = js.native
   def removeAllEventListeners(): scala.Unit = js.native
   def removeAllEventListeners(`type`: java.lang.String): scala.Unit = js.native
-  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent): scala.Unit = js.native
-  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj): scala.Unit = js.native
-  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj, useCapture: scala.Boolean): scala.Unit = js.native
-  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent, useCapture: scala.Boolean): scala.Unit = js.native
+  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj): scala.Unit = js.native
+  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent): scala.Unit = js.native
+  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent, useCapture: scala.Boolean): scala.Unit = js.native
+  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj, useCapture: scala.Boolean): scala.Unit = js.native
   def removeEventListener(`type`: java.lang.String, listener: js.Function): scala.Unit = js.native
   def removeEventListener(
     `type`: java.lang.String,

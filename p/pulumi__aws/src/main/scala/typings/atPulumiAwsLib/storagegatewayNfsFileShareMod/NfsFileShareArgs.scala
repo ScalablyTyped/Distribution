@@ -37,7 +37,7 @@ trait NfsFileShareArgs extends js.Object {
   /**
     * Nested argument with file share default values. More information below.
     */
-  val nfsFileShareDefaults: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_GroupId]] = js.undefined
+  val nfsFileShareDefaults: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DirectoryModeFileMode]] = js.undefined
   /**
     * Access Control List permission for S3 bucket objects. Defaults to `private`.
     */

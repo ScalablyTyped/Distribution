@@ -13,7 +13,7 @@ class Rate ()
 @JSImport("antd", "Rate")
 @js.native
 object Rate extends js.Object {
-  var defaultProps: antdLib.Anon_Character = js.native
-  var propTypes: antdLib.Anon_PrefixClsCharacter = js.native
+  var defaultProps: antdLib.Anon_CharacterElement = js.native
+  var propTypes: antdLib.Anon_Character = js.native
 }
 

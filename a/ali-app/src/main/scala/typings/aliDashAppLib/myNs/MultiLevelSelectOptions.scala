@@ -15,7 +15,7 @@ trait MultiLevelSelectOptions
   var subList: js.UndefOr[js.Array[MultiLevelSelectItem]] = js.undefined
   	// 子条目列表
   @JSName("success")
-  var success_MultiLevelSelectOptions: js.UndefOr[js.Function1[/* res */ aliDashAppLib.Anon_ResultSuccess, scala.Unit]] = js.undefined
+  var success_MultiLevelSelectOptions: js.UndefOr[js.Function1[/* res */ aliDashAppLib.Anon_Result, scala.Unit]] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 

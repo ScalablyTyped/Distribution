@@ -17,7 +17,7 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
   var HasOneRelation: Relation = js.native
   var HasOneThroughRelation: Relation = js.native
   var ManyToManyRelation: Relation = js.native
-  var QueryBuilder: org.scalablytyped.runtime.Instantiable0[QueryBuilder[Model, js.Array[Model], js.Array[Model]]] = js.native
+  var QueryBuilder: objectionLib.Anon_ForClass = js.native
   var columnNameMappers: ColumnNameMappers = js.native
   var dbRefProp: java.lang.String = js.native
   var defaultEagerAlgorithm: js.UndefOr[EagerAlgorithm] = js.native
@@ -77,16 +77,8 @@ trait ModelClass[M /* <: Model */] extends Constructor[M] {
   def relatedQuery(relationName: java.lang.String): QueryBuilder[_, js.Array[_], js.Array[_]] = js.native
   def tableMetadata(): TableMetadata = js.native
   def tableMetadata(opt: TableMetadataOptions): TableMetadata = js.native
-  def traverse(
-    filterConstructor: org.scalablytyped.runtime.Instantiable0[Model],
-    models: js.Array[Model],
-    traverser: TraverserFunction
-  ): scala.Unit = js.native
-  def traverse(
-    filterConstructor: org.scalablytyped.runtime.Instantiable0[Model],
-    models: Model,
-    traverser: TraverserFunction
-  ): scala.Unit = js.native
+  def traverse(filterConstructor: objectionLib.Anon_Args, models: js.Array[Model], traverser: TraverserFunction): scala.Unit = js.native
+  def traverse(filterConstructor: objectionLib.Anon_Args, models: Model, traverser: TraverserFunction): scala.Unit = js.native
   def traverse(models: js.Array[Model], traverser: TraverserFunction): scala.Unit = js.native
   def traverse(models: Model, traverser: TraverserFunction): scala.Unit = js.native
 }

@@ -13,8 +13,6 @@ class namespaced ()
 @JSImport("react-native-modal-dropdown", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
-  var default: org.scalablytyped.runtime.Instantiable0[
-    reactDashNativeDashModalDashDropdownLib.reactDashNativeDashModalDashDropdownMod.RNModalDropdownNs.ModalDropdown
-  ] = js.native
+  var default: reactDashNativeDashModalDashDropdownLib.Anon_Default = js.native
 }
 

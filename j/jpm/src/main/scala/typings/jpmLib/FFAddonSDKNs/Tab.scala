@@ -17,7 +17,7 @@ trait Tab extends js.Object {
   var url: java.lang.String = js.native
   var window: BrowserWindow = js.native
   def activate(): scala.Unit = js.native
-  def attach(options: jpmLib.Anon_ContentScriptContentScriptFileOnError): ContentWorker = js.native
+  def attach(options: jpmLib.Anon_ContentScriptContentScriptFile): ContentWorker = js.native
   def close(): scala.Unit = js.native
   def close(afterClose: js.Function0[_]): scala.Unit = js.native
   def getThumbnail(): java.lang.String = js.native

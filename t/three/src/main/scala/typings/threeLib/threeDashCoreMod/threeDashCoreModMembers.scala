@@ -113,8 +113,8 @@ object threeDashCoreModMembers extends js.Object {
   val ReinhardToneMapping: ToneMapping = js.native
   val RepeatWrapping: Wrapping = js.native
   val ReverseSubtractEquation: BlendingEquation = js.native
-  var ShaderChunk: threeLib.Anon_NameDepthvert = js.native
-  var ShaderLib: threeLib.Anon_Name = js.native
+  var ShaderChunk: threeLib.Anon_Alphamapfragment = js.native
+  var ShaderLib: threeLib.Anon_Basic = js.native
   val ShortType: TextureDataType = js.native
   val SmoothShading: Shading = js.native
   val SphericalReflectionMapping: Mapping = js.native
@@ -129,7 +129,7 @@ object threeDashCoreModMembers extends js.Object {
   val TrianglesDrawMode: TrianglesDrawModes = js.native
   val UVMapping: Mapping = js.native
   val Uncharted2ToneMapping: ToneMapping = js.native
-  var UniformsLib: threeLib.Anon_Lights = js.native
+  var UniformsLib: threeLib.Anon_Aomap = js.native
   val UnsignedByteType: TextureDataType = js.native
   val UnsignedInt248Type: PixelType = js.native
   val UnsignedIntType: TextureDataType = js.native

@@ -28,7 +28,7 @@ trait IdyllDocumentProps extends js.Object {
   /**
     * The React component rendered when an error occurs
     */
-  var errorComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[idyllDashDocumentLib.Anon_ClassName]] = js.undefined
+  var errorComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[idyllDashDocumentLib.Anon_Children]] = js.undefined
   var initialState: js.UndefOr[js.Any] = js.undefined
   /**
     * The layout for idyll document

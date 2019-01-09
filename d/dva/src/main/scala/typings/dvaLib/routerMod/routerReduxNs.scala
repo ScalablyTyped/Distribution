@@ -14,7 +14,7 @@ object routerReduxNs extends js.Object {
   
   val CALL_HISTORY_METHOD: /* @@router/CALL_HISTORY_METHOD */ java.lang.String = js.native
   val LOCATION_CHANGE: /* @@router/LOCATION_CHANGE */ java.lang.String = js.native
-  val routerActions: reactDashRouterDashReduxLib.Anon_Replace = js.native
+  val routerActions: reactDashRouterDashReduxLib.Anon_Go = js.native
   val routerReducer: reduxLib.reduxMod.Reducer[
     reactDashRouterDashReduxLib.reactDashRouterDashReduxMod.RouterState, 
     reduxLib.reduxMod.AnyAction

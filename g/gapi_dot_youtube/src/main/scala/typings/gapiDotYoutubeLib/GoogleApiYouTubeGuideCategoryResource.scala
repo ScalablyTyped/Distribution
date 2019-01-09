@@ -21,6 +21,6 @@ trait GoogleApiYouTubeGuideCategoryResource extends js.Object {
   /**
     * The snippet object contains basic details about the category, such as its title.
     */
-  var snippet: Anon_Title
+  var snippet: Anon_ChannelIdTitle
 }
 

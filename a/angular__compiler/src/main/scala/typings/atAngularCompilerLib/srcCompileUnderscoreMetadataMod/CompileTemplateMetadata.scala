@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/compile_metadata", "CompileTemplateMetadata")
 @js.native
 class CompileTemplateMetadata protected () extends js.Object {
-  def this(hasEncapsulationTemplateTemplateUrlHtmlAstStylesStyleUrlsExternalStylesheetsAnimationsNgContentSelectorsInterpolationIsInlinePreserveWhitespaces: atAngularCompilerLib.Anon_PreserveWhitespaces) = this()
+  def this(hasEncapsulationTemplateTemplateUrlHtmlAstStylesStyleUrlsExternalStylesheetsAnimationsNgContentSelectorsInterpolationIsInlinePreserveWhitespaces: atAngularCompilerLib.Anon_Animations) = this()
   var animations: js.Array[_] = js.native
   var encapsulation: atAngularCompilerLib.srcCoreMod.ViewEncapsulation | scala.Null = js.native
   var externalStylesheets: js.Array[CompileStylesheetMetadata] = js.native

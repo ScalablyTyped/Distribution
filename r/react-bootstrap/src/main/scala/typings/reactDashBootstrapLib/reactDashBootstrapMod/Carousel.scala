@@ -13,7 +13,7 @@ class Carousel ()
 @JSImport("react-bootstrap", "Carousel")
 @js.native
 object Carousel extends js.Object {
-  var Caption: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libCarouselCaptionMod.namespaced] = js.native
-  var Item: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libCarouselItemMod.namespaced] = js.native
+  var Caption: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libCarouselCaptionMod.namespaced] with reactDashBootstrapLib.Anon_CarouselCaption = js.native
+  var Item: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libCarouselItemMod.namespaced] with reactDashBootstrapLib.Anon_CarouselItem = js.native
 }
 

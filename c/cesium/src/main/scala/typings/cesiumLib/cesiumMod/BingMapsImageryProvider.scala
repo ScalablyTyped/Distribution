@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BingMapsImageryProvider protected ()
   extends cesiumLib.cesiumMod.CesiumNs.BingMapsImageryProvider {
-  def this(options: cesiumLib.Anon_MapStyle) = this()
+  def this(options: cesiumLib.Anon_Culture) = this()
   /* CompleteClass */
   override var credit: cesiumLib.cesiumMod.CesiumNs.Credit = js.native
   /* CompleteClass */

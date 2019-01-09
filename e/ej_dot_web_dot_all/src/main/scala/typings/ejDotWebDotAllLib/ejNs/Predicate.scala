@@ -27,7 +27,7 @@ class Predicate () extends js.Object {
     ignoreAccent: scala.Boolean
   ): Predicate = js.native
   def or(predicate: js.Array[_]): js.Any = js.native
-  def toJSON(): ejDotWebDotAllLib.Anon_Predicates = js.native
+  def toJSON(): ejDotWebDotAllLib.Anon_Condition = js.native
   def validate(record: js.Any): scala.Boolean = js.native
 }
 

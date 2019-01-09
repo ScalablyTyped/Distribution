@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Weight extends js.Object {
-  var weight: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+  var weight: scala.Double
 }
 

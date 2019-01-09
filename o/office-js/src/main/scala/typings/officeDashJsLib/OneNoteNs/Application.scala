@@ -113,7 +113,7 @@ class Application ()
   def load(): Application = js.native
   def load(option: java.lang.String): Application = js.native
   def load(option: js.Array[java.lang.String]): Application = js.native
-  def load(option: officeDashJsLib.Anon_Select): Application = js.native
+  def load(option: officeDashJsLib.Anon_Expand): Application = js.native
   def load(option: officeDashJsLib.OneNoteNs.InterfacesNs.ApplicationLoadOptions): Application = js.native
   /**
     *

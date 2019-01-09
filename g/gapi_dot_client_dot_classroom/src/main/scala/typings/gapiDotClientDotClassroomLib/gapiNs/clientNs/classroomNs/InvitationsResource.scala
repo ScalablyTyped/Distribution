@@ -22,7 +22,7 @@ trait InvitationsResource extends js.Object {
     * &#42; UserGroupsMembershipLimitReached
     * &#42; `NOT_FOUND` if no invitation exists with the requested ID.
     */
-  def accept(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def accept(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Creates an invitation. Only one invitation for a user and course may exist
     * at a time. Delete and re-create an invitation to make changes.
@@ -37,7 +37,7 @@ trait InvitationsResource extends js.Object {
     * &#42; `ALREADY_EXISTS` if an invitation for the specified user and course
     * already exists.
     */
-  def create(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Invitation]
+  def create(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Invitation]
   /**
     * Deletes an invitation.
     *
@@ -47,7 +47,7 @@ trait InvitationsResource extends js.Object {
     * requested invitation or for access errors.
     * &#42; `NOT_FOUND` if no invitation exists with the requested ID.
     */
-  def delete(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Returns an invitation.
     *
@@ -57,7 +57,7 @@ trait InvitationsResource extends js.Object {
     * requested invitation or for access errors.
     * &#42; `NOT_FOUND` if no invitation exists with the requested ID.
     */
-  def get(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Invitation]
+  def get(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId): gapiDotClientLib.gapiNs.clientNs.Request[Invitation]
   /**
     * Returns a list of invitations that the requesting user is permitted to
     * view, restricted to those that match the list request.
@@ -69,6 +69,6 @@ trait InvitationsResource extends js.Object {
     *
     * &#42; `PERMISSION_DENIED` for access errors.
     */
-  def list(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPageSizeCourseIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[ListInvitationsResponse]
+  def list(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[ListInvitationsResponse]
 }
 

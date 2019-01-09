@@ -52,7 +52,7 @@ trait NightwatchDesiredCapabilities extends js.Object {
     * Available values for most loggers are "OFF", "SEVERE", "WARNING", "INFO", "CONFIG", "FINE", "FINER", "FINEST", "ALL".
     * This produces a JSON object looking something like: {"loggingPrefs": {"driver": "INFO", "server": "OFF", "browser": "FINE"}}.
     */
-  var loggingPrefs: js.UndefOr[nightwatchLib.Anon_Driver] = js.undefined
+  var loggingPrefs: js.UndefOr[nightwatchLib.Anon_Browser] = js.undefined
   /**
     * Whether the session is capable of generating native events when simulating user input.
     */

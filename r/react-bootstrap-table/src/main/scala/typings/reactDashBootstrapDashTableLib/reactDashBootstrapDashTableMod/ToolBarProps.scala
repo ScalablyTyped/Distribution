@@ -9,10 +9,10 @@ trait ToolBarProps extends js.Object {
   /**
   	 * Rendered components to use in the toolbar.
   	 */
-  var components: ButtonGroupProps with reactDashBootstrapDashTableLib.Anon_SearchPanel
+  var components: ButtonGroupProps with reactDashBootstrapDashTableLib.Anon_BtnGroup
   /**
   	 * Event callbacks to use with a custom toolbar.
   	 */
-  var event: reactDashBootstrapDashTableLib.Anon_OpenInsertModal
+  var event: reactDashBootstrapDashTableLib.Anon_CloseInsertModal
 }
 

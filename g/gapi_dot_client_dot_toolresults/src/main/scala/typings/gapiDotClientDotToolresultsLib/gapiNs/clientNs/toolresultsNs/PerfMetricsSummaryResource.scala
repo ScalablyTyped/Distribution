@@ -11,6 +11,6 @@ trait PerfMetricsSummaryResource extends js.Object {
     *
     * May return any of the following error code(s): - NOT_FOUND - The containing Step does not exist
     */
-  def create(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintHistoryIdProjectIdQuotaUserKeyUserIp): gapiDotClientLib.gapiNs.clientNs.Request[PerfMetricsSummary]
+  def create(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields): gapiDotClientLib.gapiNs.clientNs.Request[PerfMetricsSummary]
 }
 

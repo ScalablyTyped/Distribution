@@ -15,7 +15,7 @@ object proxyNsMembers extends js.Object {
   /* proxy events */
   /** Fired when proxy data is needed for a request. */
   val onRequest: _ProxyOnRequestEvent[
-    js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_MethodIpFrameId, scala.Unit]
+    js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_DocumentUrl, scala.Unit]
   ] = js.native
   /* proxy properties */
   /** Configures proxy settings. This setting's value is an object of type ProxyConfig. */

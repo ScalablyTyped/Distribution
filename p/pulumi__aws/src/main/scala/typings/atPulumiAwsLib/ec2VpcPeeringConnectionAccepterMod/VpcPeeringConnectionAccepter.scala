@@ -26,7 +26,7 @@ class VpcPeeringConnectionAccepter protected ()
     * A configuration block that describes [VPC Peering Connection]
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the accepter VPC.
     */
-  val accepter: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AllowRemoteVpcDnsResolution] = js.native
+  val accepter: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpc] = js.native
   /**
     * Whether or not to accept the peering request. Defaults to `false`.
     */
@@ -47,7 +47,7 @@ class VpcPeeringConnectionAccepter protected ()
     * A configuration block that describes [VPC Peering Connection]
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the requester VPC.
     */
-  val requester: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AllowRemoteVpcDnsResolution] = js.native
+  val requester: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpc] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

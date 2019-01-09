@@ -11,8 +11,8 @@ trait ChromeAppWindow extends AppWindow {
     * @enum
     * Window state enum
     */
-  val State: chromeDashAppsLib.Anon_NORMAL = js.native
-  val WindowType: chromeDashAppsLib.Anon_SHELL = js.native
+  val State: chromeDashAppsLib.Anon_FULLSCREEN = js.native
+  val WindowType: chromeDashAppsLib.Anon_PANEL = js.native
   /**
     * Whether the current platform supports windows being visible on all workspaces.
     */

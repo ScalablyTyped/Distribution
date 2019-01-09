@@ -10,9 +10,7 @@ trait SslNegotiationPolicyState extends js.Object {
     * An SSL Negotiation policy attribute. Each has two properties:
     */
   val attributes: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ValueNameInput]]
-    ]
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameValue]]]
   ] = js.undefined
   /**
     * The load balancer port to which the policy

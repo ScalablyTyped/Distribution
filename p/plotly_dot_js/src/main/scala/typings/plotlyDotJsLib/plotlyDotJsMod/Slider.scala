@@ -28,7 +28,7 @@ trait Slider extends js.Object {
   	 * Sets the width (in px) of the border enclosing the slider.
   	 */
   var borderwidth: scala.Double
-  var currentvalue: plotlyDotJsLib.Anon_Visible
+  var currentvalue: plotlyDotJsLib.Anon_Center
   /**
   	 * Sets the font of the slider step labels.
   	 */

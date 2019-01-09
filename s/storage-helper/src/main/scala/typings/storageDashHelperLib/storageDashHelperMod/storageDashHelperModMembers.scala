@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("storage-helper", JSImport.Namespace)
 @js.native
 object storageDashHelperModMembers extends js.Object {
-  val default: storageDashHelperLib.Anon_SetItem = js.native
+  val default: storageDashHelperLib.Anon_Clear = js.native
   def clear(): scala.Unit = js.native
   def getItem[T /* <: js.UndefOr[scala.Boolean] */, U](key: java.lang.String): java.lang.String | stdLib.NonNullable[U] | scala.Null = js.native
   def getItem[T /* <: js.UndefOr[scala.Boolean] */, U](key: java.lang.String, parse: T): java.lang.String | stdLib.NonNullable[U] | scala.Null = js.native

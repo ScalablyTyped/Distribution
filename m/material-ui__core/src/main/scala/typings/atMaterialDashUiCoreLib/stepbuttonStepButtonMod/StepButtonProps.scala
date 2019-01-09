@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<@material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, 'classes' | never>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, @material-ui/core.@material-ui/core/StepButton/StepButton.StepButtonClasskey, never>) */ trait StepButtonProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, 'classes' | never> ]: @material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, @material-ui/core.@material-ui/core/StepButton/StepButton.StepButtonClasskey, never>) */ trait StepButtonProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[StepButtonClasskey] {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var alternativeLabel: js.UndefOr[scala.Boolean] = js.undefined

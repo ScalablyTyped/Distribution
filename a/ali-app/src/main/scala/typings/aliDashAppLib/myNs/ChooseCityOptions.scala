@@ -16,6 +16,6 @@ trait ChooseCityOptions
   var showLocatedCity: scala.Boolean
   			// 自定义热门城市列表，列表内对象字段见下表
   @JSName("success")
-  def success_MChooseCityOptions(result: aliDashAppLib.Anon_City): scala.Unit
+  def success_MChooseCityOptions(result: aliDashAppLib.Anon_AdCode): scala.Unit
 }
 

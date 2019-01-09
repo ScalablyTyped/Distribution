@@ -16,7 +16,7 @@ class Default ()
   def applyMiscProps(rawProps: js.Any): scala.Unit = js.native
   def buildRequestParams(start: js.Any, end: js.Any, timezone: js.Any): js.Any = js.native
   def buildUrl(): java.lang.String = js.native
-  def gcalItemToRawEventDef(item: js.Any, gcalTimezone: js.Any): fullcalendarLib.Anon_Location = js.native
+  def gcalItemToRawEventDef(item: js.Any, gcalTimezone: js.Any): fullcalendarLib.Anon_Description = js.native
   def gcalItemsToRawEventDefs(items: js.Any, gcalTimezone: js.Any): js.Any = js.native
   def getPrimitive(): js.Any = js.native
   def reportError(message: js.Any): scala.Unit = js.native

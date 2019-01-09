@@ -41,10 +41,10 @@ class Drawable protected () extends js.Object {
   def onEvent(eventType: java.lang.String): scala.Unit = js.native
   def onEvent(eventType: java.lang.String, data: JSObject): scala.Unit = js.native
   def playSound(id: java.lang.String): scala.Unit = js.native
-  def playSound(id: java.lang.String, options: athenajsLib.Anon_Loop): scala.Unit = js.native
+  def playSound(id: java.lang.String, options: athenajsLib.Anon_False): scala.Unit = js.native
   def reset(): scala.Unit = js.native
-  def setBehavior(behavior: athenajsLib.Anon_Sprite): scala.Unit = js.native
-  def setBehavior(behavior: athenajsLib.Anon_Sprite, options: JSObject): scala.Unit = js.native
+  def setBehavior(behavior: athenajsLib.Anon_Options): scala.Unit = js.native
+  def setBehavior(behavior: athenajsLib.Anon_Options, options: JSObject): scala.Unit = js.native
   def setBehavior(behavior: java.lang.String): scala.Unit = js.native
   def setBehavior(behavior: java.lang.String, options: JSObject): scala.Unit = js.native
   def setMask(): scala.Unit = js.native

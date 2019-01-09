@@ -17,7 +17,7 @@ class menu () extends js.Object {
       _
     ]
   ): scala.Unit = js.native
-  def findItemByCommandName(commandName: java.lang.String): ckeditorLib.Anon_Item = js.native
+  def findItemByCommandName(commandName: java.lang.String): ckeditorLib.Anon_Element = js.native
   def hide(): scala.Unit = js.native
   def hide(returnFocus: scala.Boolean): scala.Unit = js.native
   def removeAll(): scala.Unit = js.native

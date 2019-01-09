@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because Would inherit conflicting mutable fields List(className))*/
-trait ICardProps
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait ICardProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
   /**
     * Controls the intensity of the drop shadow beneath the card: the higher

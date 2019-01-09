@@ -31,6 +31,6 @@ trait ISpawnOptions extends js.Object {
   /**
     * Additional options for the Node.js child_process spawn method.
     */
-  var opts: js.UndefOr[gruntLib.Anon_Stdio] = js.undefined
+  var opts: js.UndefOr[gruntLib.Anon_Custom] = js.undefined
 }
 

@@ -10,6 +10,6 @@ trait ProjectsResource extends js.Object {
   var groupStats: GroupStatsResource
   var groups: GroupsResource
   /** Deletes all error events of a given project. */
-  def deleteEvents(request: gapiDotClientDotClouderrorreportingLib.Anon_ProjectNameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def deleteEvents(request: gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
 }
 

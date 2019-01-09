@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object urlDashRegexMod extends js.Object {
   def apply(): stdLib.RegExp = js.native
-  def apply(options: urlDashRegexLib.Anon_Strict): stdLib.RegExp = js.native
+  def apply(options: urlDashRegexLib.Anon_Exact): stdLib.RegExp = js.native
 }
 

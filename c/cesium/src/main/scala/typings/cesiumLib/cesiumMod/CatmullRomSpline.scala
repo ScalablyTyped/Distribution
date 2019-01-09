@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CatmullRomSpline protected ()
   extends cesiumLib.cesiumMod.CesiumNs.CatmullRomSpline {
-  def this(options: cesiumLib.Anon_Points) = this()
+  def this(options: cesiumLib.Anon_FirstTangent) = this()
 }
 

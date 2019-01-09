@@ -17,7 +17,7 @@ trait Result extends js.Object {
   /**
     * An object with boolean information about the glob.
     */
-  var is: parseDashGlobLib.Anon_Dotfile
+  var is: parseDashGlobLib.Anon_Braces
   /**
     * A copy of the original, unmodified glob pattern.
     */
@@ -25,6 +25,6 @@ trait Result extends js.Object {
   /**
     * File path segments.
     */
-  var path: parseDashGlobLib.Anon_Dirname
+  var path: parseDashGlobLib.Anon_Basename
 }
 

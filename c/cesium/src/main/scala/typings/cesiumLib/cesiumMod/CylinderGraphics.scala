@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CylinderGraphics ()
   extends cesiumLib.cesiumMod.CesiumNs.CylinderGraphics {
-  def this(options: cesiumLib.Anon_ShowOutlineBottomRadius) = this()
+  def this(options: cesiumLib.Anon_BottomRadiusFill) = this()
 }
 

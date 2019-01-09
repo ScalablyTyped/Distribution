@@ -14,7 +14,7 @@ trait ResultMap extends js.Object {
     * @param mapping
     * @returns {}
     */
-  def addMapping(mapping: postcssLib.Anon_Source): scala.Unit = js.native
+  def addMapping(mapping: postcssLib.Anon_Generated): scala.Unit = js.native
   /**
     * Applies a SourceMap for a source file to the SourceMap. Each mapping to
     * the supplied source file is rewritten using the supplied SourceMap.

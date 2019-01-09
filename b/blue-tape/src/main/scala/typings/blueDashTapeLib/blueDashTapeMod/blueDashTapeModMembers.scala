@@ -21,7 +21,7 @@ object blueDashTapeModMembers extends js.Object {
     cb: tapeLib.tapeMod.tapeNs.TestCase
   ): scala.Unit = js.native
   def apply(opts: tapeLib.tapeMod.tapeNs.TestOptions, cb: tapeLib.tapeMod.tapeNs.TestCase): scala.Unit = js.native
-  def createHarness(): tapeLib.Anon_Opts = js.native
+  def createHarness(): tapeLib.Anon_Cb = js.native
   def createStream(): nodeLib.NodeJSNs.ReadableStream = js.native
   def createStream(opts: tapeLib.tapeMod.tapeNs.StreamOptions): nodeLib.NodeJSNs.ReadableStream = js.native
   def onFinish(cb: js.Function0[scala.Unit]): scala.Unit = js.native

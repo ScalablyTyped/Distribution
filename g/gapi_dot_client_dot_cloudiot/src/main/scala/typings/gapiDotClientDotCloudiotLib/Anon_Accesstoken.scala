@@ -21,6 +21,18 @@ trait Anon_Accesstoken extends js.Object {
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The name of the device. For example,
+    * `projects/p0/locations/us-central1/registries/registry0/devices/device0` or
+    * `projects/p0/locations/us-central1/registries/registry0/devices/{num_id}`.
+    */
+  var name: java.lang.String
+  /**
+    * The number of versions to list. Versions are listed in decreasing order of
+    * the version number. The maximum number of versions retained is 10. If this
+    * value is zero, it will return all the versions available.
+    */
+  var numVersions: js.UndefOr[scala.Double] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
@@ -29,11 +41,6 @@ trait Anon_Accesstoken extends js.Object {
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * REQUIRED: The resource for which the policy is being requested.
-    * See the operation documentation for the appropriate value for this field.
-    */
-  var resource: java.lang.String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined
   /** Upload protocol for media (e.g. "raw", "multipart"). */

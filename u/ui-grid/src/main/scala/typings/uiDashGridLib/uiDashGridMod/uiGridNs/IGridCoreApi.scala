@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IGridCoreApi[TEntity] extends js.Object {
   // Events
-  var on: uiDashGridLib.Anon_RowsRendered[TEntity] = js.native
+  var on: uiDashGridLib.Anon_CallBack[TEntity] = js.native
   // Methods
   /**
     * adds a row header column to the grid

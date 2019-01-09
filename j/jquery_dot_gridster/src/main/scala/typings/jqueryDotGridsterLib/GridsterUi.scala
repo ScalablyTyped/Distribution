@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GridsterUi extends js.Object {
-  var position: Anon_Top
+  var position: Anon_Left
 }
 

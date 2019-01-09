@@ -35,11 +35,11 @@ object reactDashAddonsDashTestDashUtilsModMembers extends js.Object {
   def isElementOfType_PDOMAttributesTElement[P /* <: reactLib.reactMod.ReactNs.DOMAttributes[js.Object] */, T /* <: reactLib.Element */](element: reactLib.reactMod.ReactNs.ReactElement[_], `type`: java.lang.String): /* is react.react.React.DOMElement<P, T> */ scala.Boolean = js.native
   def mockComponent(
     mocked: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.MockedComponentClass
-  ): js.Any = js.native
+  ): reactDashAddonsDashTestDashUtilsLib.Anon_ClassName = js.native
   def mockComponent(
     mocked: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.MockedComponentClass,
     mockTagName: java.lang.String
-  ): js.Any = js.native
+  ): reactDashAddonsDashTestDashUtilsLib.Anon_ClassName = js.native
   def renderIntoDocument(element: reactLib.reactMod.ReactNs.SFCElement[_]): scala.Unit = js.native
   def renderIntoDocument[T /* <: reactLib.reactMod.Component[_, js.Object, _] */](element: reactLib.reactMod.ReactNs.CElement[_, T]): T = js.native
   def renderIntoDocument[T /* <: reactLib.Element */](element: reactLib.reactMod.ReactNs.DOMElement[_, T]): T = js.native

@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick<apollo-server-core.apollo-server-core/dist/graphqlOptions.GraphQLServerOptions<apollo-server-core.apollo-server-core/dist/types.Context<any>, any>, 'formatError' | 'debug' | 'rootValue' | 'validationRules' | 'formatResponse' | 'fieldResolver' | 'tracing' | 'dataSources' | 'cache'>) */ trait Config extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in 'formatError' | 'debug' | 'rootValue' | 'validationRules' | 'formatResponse' | 'fieldResolver' | 'tracing' | 'dataSources' | 'cache' ]: apollo-server-core.apollo-server-core/dist/graphqlOptions.GraphQLServerOptions<apollo-server-core.apollo-server-core/dist/types.Context<any>, any>[P]} */ trait Config extends js.Object {
   var cacheControl: js.UndefOr[
-    (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify CacheControlExtensionOptions */ js.Any) | scala.Boolean
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any) | scala.Boolean
   ] = js.undefined
   var context: js.UndefOr[Context[_] | ContextFunction[_]] = js.undefined
   var engine: js.UndefOr[
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   var extensions: js.UndefOr[
     apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
       js.Function0[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify GraphQLExtension */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLExtension */ _
       ]
     ]
   ] = js.undefined
@@ -36,15 +36,7 @@ import scala.scalajs.js.annotation._
   var plugins: js.UndefOr[apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[PluginDefinition]] = js.undefined
   var resolvers: js.UndefOr[graphqlDashToolsLib.distInterfacesMod.IResolvers[_, _]] = js.undefined
   var schema: js.UndefOr[graphqlLib.graphqlMod.GraphQLSchema] = js.undefined
-  var schemaDirectives: js.UndefOr[
-    stdLib.Record[
-      java.lang.String, 
-      org.scalablytyped.runtime.Instantiable1[
-        /* config */ graphqlDashToolsLib.Anon_Name, 
-        graphqlDashToolsLib.graphqlDashToolsMod.SchemaDirectiveVisitor
-      ]
-    ]
-  ] = js.undefined
+  var schemaDirectives: js.UndefOr[stdLib.Record[java.lang.String, apolloDashServerDashCoreLib.Anon_Config]] = js.undefined
   var subscriptions: js.UndefOr[
     stdLib.Partial[SubscriptionServerOptions] | java.lang.String | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibNumbers.`false`
   ] = js.undefined

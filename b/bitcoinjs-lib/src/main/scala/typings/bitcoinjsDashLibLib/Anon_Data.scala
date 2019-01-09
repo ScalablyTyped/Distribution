@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Data extends js.Object {
-  var data: js.UndefOr[js.Array[nodeLib.Buffer]] = js.undefined
-  var network: js.UndefOr[bitcoinjsDashLibLib.bitcoinjsDashLibMod.Network] = js.undefined
-  var output: js.UndefOr[nodeLib.Buffer] = js.undefined
+  var data: nodeLib.Buffer
+  var prefix: java.lang.String
+  var version: scala.Double
 }
 

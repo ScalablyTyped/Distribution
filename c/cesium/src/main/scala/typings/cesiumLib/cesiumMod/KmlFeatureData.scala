@@ -12,11 +12,11 @@ class KmlFeatureData ()
   /* CompleteClass */
   override var address: java.lang.String = js.native
   /* CompleteClass */
-  override var author: cesiumLib.Anon_Uri = js.native
+  override var author: cesiumLib.Anon_Email = js.native
   /* CompleteClass */
   override var extendedData: java.lang.String = js.native
   /* CompleteClass */
-  override var link: cesiumLib.Anon_Rel = js.native
+  override var link: cesiumLib.Anon_Href = js.native
   /* CompleteClass */
   override var phoneNumber: java.lang.String = js.native
   /* CompleteClass */

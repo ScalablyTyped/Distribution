@@ -80,11 +80,11 @@ trait NotificationOptions extends js.Object {
     * @see enum TemplateType
     */
   var `type`: chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_IMAGE, 
+    chromeDashAppsLib.Anon_BASIC, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_IMAGE[keyof chrome-apps.Anon_IMAGE] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_BASIC[keyof chrome-apps.Anon_BASIC] */ js.Any
     ]
   ]
 }

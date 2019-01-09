@@ -36,6 +36,6 @@ class Query () extends Component {
 @JSImport("js-data", "Query")
 @js.native
 object Query extends js.Object {
-  var ops: jsDashDataLib.Anon_In = js.native
+  var ops: jsDashDataLib.Anon_Contains = js.native
 }
 

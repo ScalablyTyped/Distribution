@@ -23,7 +23,7 @@ object typesafeDashActionsModMembers extends js.Object {
       AC
     ]
   ): AC = js.native
-  def createActionDeprecated[T /* <: typesafeDashActionsLib.distTypesMod.StringOrSymbol */, AC /* <: js.Function0[typesafeDashActionsLib.Anon_TypeT[T]] */](actionType: T): AC = js.native
+  def createActionDeprecated[T /* <: typesafeDashActionsLib.distTypesMod.StringOrSymbol */, AC /* <: js.Function0[typesafeDashActionsLib.Anon_Type[T]] */](actionType: T): AC = js.native
   def createActionDeprecated[T /* <: typesafeDashActionsLib.distTypesMod.StringOrSymbol */, AC /* <: js.Function1[
     /* repeated */ js.Any, 
     typesafeDashActionsLib.distCreateDashActionDashDeprecatedMod.FSA[T, js.Object, js.Object, scala.Boolean]
@@ -108,16 +108,16 @@ object typesafeDashActionsModMembers extends js.Object {
     action: typesafeDashActionsLib.Anon_TypeString
   ): scala.Boolean = js.native
   def isOfType[T /* <: typesafeDashActionsLib.distTypesMod.StringType */](`type`: T): js.Function1[
-    /* action */ typesafeDashActionsLib.Anon_Type, 
-    /* is typesafe-actions.Anon_Type */ scala.Boolean
+    /* action */ typesafeDashActionsLib.Anon_TypeStringType, 
+    /* is typesafe-actions.Anon_TypeStringType */ scala.Boolean
   ] = js.native
-  def isOfType[T /* <: typesafeDashActionsLib.distTypesMod.StringType */, A /* <: typesafeDashActionsLib.Anon_Type */](`type`: T, action: A): /* is A */ scala.Boolean = js.native
+  def isOfType[T /* <: typesafeDashActionsLib.distTypesMod.StringType */, A /* <: typesafeDashActionsLib.Anon_TypeStringType */](`type`: T, action: A): /* is A */ scala.Boolean = js.native
   @JSName("isOfType")
   def isOfType_TArrayKStringType[T /* <: js.Array[K] */, K /* <: typesafeDashActionsLib.distTypesMod.StringType */](`type`: T): js.Function1[
-    /* action */ typesafeDashActionsLib.Anon_Type, 
-    /* is typesafe-actions.Anon_Type */ scala.Boolean
+    /* action */ typesafeDashActionsLib.Anon_TypeStringType, 
+    /* is typesafe-actions.Anon_TypeStringType */ scala.Boolean
   ] = js.native
   @JSName("isOfType")
-  def isOfType_TArrayKStringTypeAAnon_Type[T /* <: js.Array[K] */, K /* <: typesafeDashActionsLib.distTypesMod.StringType */, A /* <: typesafeDashActionsLib.Anon_Type */](`type`: T, action: A): /* is A */ scala.Boolean = js.native
+  def isOfType_TArrayKStringTypeAAnon_TypeStringType[T /* <: js.Array[K] */, K /* <: typesafeDashActionsLib.distTypesMod.StringType */, A /* <: typesafeDashActionsLib.Anon_TypeStringType */](`type`: T, action: A): /* is A */ scala.Boolean = js.native
 }
 

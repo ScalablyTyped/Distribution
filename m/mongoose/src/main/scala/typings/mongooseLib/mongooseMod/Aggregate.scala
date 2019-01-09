@@ -158,6 +158,6 @@ trait Aggregate[T] extends js.Object {
     * Appends new custom $unwind operator(s) to this aggregate pipeline
     * new in mongodb 3.2
     */
-  def unwind(fields: (mongooseLib.Anon_PreserveNullAndEmptyArrays | java.lang.String)*): this.type = js.native
+  def unwind(fields: (mongooseLib.Anon_IncludeArrayIndex | java.lang.String)*): this.type = js.native
 }
 

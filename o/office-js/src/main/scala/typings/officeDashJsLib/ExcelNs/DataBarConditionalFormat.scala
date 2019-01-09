@@ -90,7 +90,7 @@ class DataBarConditionalFormat ()
   def load(): DataBarConditionalFormat = js.native
   def load(option: java.lang.String): DataBarConditionalFormat = js.native
   def load(option: js.Array[java.lang.String]): DataBarConditionalFormat = js.native
-  def load(option: officeDashJsLib.Anon_Select): DataBarConditionalFormat = js.native
+  def load(option: officeDashJsLib.Anon_Expand): DataBarConditionalFormat = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.DataBarConditionalFormatLoadOptions): DataBarConditionalFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: DataBarConditionalFormat): scala.Unit = js.native

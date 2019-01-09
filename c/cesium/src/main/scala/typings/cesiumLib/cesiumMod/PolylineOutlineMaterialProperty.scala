@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class PolylineOutlineMaterialProperty ()
   extends cesiumLib.cesiumMod.CesiumNs.PolylineOutlineMaterialProperty {
-  def this(options: cesiumLib.Anon_OutlineWidth) = this()
+  def this(options: cesiumLib.Anon_ColorOutlineColor) = this()
 }
 

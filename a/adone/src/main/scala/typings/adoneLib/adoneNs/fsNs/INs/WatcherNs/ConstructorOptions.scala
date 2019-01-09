@@ -19,7 +19,7 @@ trait ConstructorOptions extends js.Object {
   /**
     * If truthy, defines settings to control how long a file must not change after add/change events and only then emit the event
     */
-  var awaitWriteFinish: js.UndefOr[scala.Boolean | adoneLib.Anon_StabilityThreshold] = js.undefined
+  var awaitWriteFinish: js.UndefOr[scala.Boolean | adoneLib.Anon_PollInterval] = js.undefined
   /**
     * Interval of file system polling for binary files (used when usePolling = true)
     */

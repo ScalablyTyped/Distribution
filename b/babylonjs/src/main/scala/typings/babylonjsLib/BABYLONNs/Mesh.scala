@@ -613,7 +613,7 @@ class Mesh protected () extends AbstractMesh {
     * the user know there was an issue with importing the mesh
     * @returns a validation object with skinned, valid and report string
     */
-  def validateSkinning(): babylonjsLib.Anon_Valid = js.native
+  def validateSkinning(): babylonjsLib.Anon_Report = js.native
 }
 
 /**
@@ -943,11 +943,7 @@ object Mesh extends js.Object {
     * @returns a new Mesh
     * @see http://doc.babylonjs.com/how_to/polyhedra_shapes#icosphere
     */
-  def CreateIcoSphere(
-    name: java.lang.String,
-    options: babylonjsLib.Anon_Subdivisions,
-    scene: babylonjsLib.BABYLONNs.Scene
-  ): babylonjsLib.BABYLONNs.Mesh = js.native
+  def CreateIcoSphere(name: java.lang.String, options: babylonjsLib.Anon_Flat, scene: babylonjsLib.BABYLONNs.Scene): babylonjsLib.BABYLONNs.Mesh = js.native
   /**
     * Creates lathe mesh.
     * The lathe is a shape with a symetry axis : a 2D model shape is rotated around this axis to design the lathe.
@@ -1101,7 +1097,7 @@ object Mesh extends js.Object {
     * @param scene defines the hosting scene
     * @returns a new Mesh
     */
-  def CreatePolyhedron(name: java.lang.String, options: babylonjsLib.Anon_SizeZ, scene: babylonjsLib.BABYLONNs.Scene): babylonjsLib.BABYLONNs.Mesh = js.native
+  def CreatePolyhedron(name: java.lang.String, options: babylonjsLib.Anon_Custom, scene: babylonjsLib.BABYLONNs.Scene): babylonjsLib.BABYLONNs.Mesh = js.native
   def CreateRibbon(
     name: java.lang.String,
     pathArray: js.Array[js.Array[babylonjsLib.BABYLONNs.Vector3]],
@@ -1258,8 +1254,8 @@ object Mesh extends js.Object {
     zmin: scala.Double,
     xmax: scala.Double,
     zmax: scala.Double,
-    subdivisions: babylonjsLib.Anon_W,
-    precision: babylonjsLib.Anon_W,
+    subdivisions: babylonjsLib.Anon_H,
+    precision: babylonjsLib.Anon_H,
     scene: babylonjsLib.BABYLONNs.Scene
   ): babylonjsLib.BABYLONNs.Mesh = js.native
   def CreateTiledGround(
@@ -1268,8 +1264,8 @@ object Mesh extends js.Object {
     zmin: scala.Double,
     xmax: scala.Double,
     zmax: scala.Double,
-    subdivisions: babylonjsLib.Anon_W,
-    precision: babylonjsLib.Anon_W,
+    subdivisions: babylonjsLib.Anon_H,
+    precision: babylonjsLib.Anon_H,
     scene: babylonjsLib.BABYLONNs.Scene,
     updatable: scala.Boolean
   ): babylonjsLib.BABYLONNs.Mesh = js.native
@@ -1393,7 +1389,7 @@ object Mesh extends js.Object {
     path: js.Array[babylonjsLib.BABYLONNs.Vector3],
     radius: scala.Double,
     tessellation: scala.Double,
-    radiusFunction: babylonjsLib.Anon_I,
+    radiusFunction: babylonjsLib.Anon_Distance,
     cap: scala.Double,
     scene: babylonjsLib.BABYLONNs.Scene
   ): babylonjsLib.BABYLONNs.Mesh = js.native
@@ -1402,7 +1398,7 @@ object Mesh extends js.Object {
     path: js.Array[babylonjsLib.BABYLONNs.Vector3],
     radius: scala.Double,
     tessellation: scala.Double,
-    radiusFunction: babylonjsLib.Anon_I,
+    radiusFunction: babylonjsLib.Anon_Distance,
     cap: scala.Double,
     scene: babylonjsLib.BABYLONNs.Scene,
     updatable: scala.Boolean
@@ -1412,7 +1408,7 @@ object Mesh extends js.Object {
     path: js.Array[babylonjsLib.BABYLONNs.Vector3],
     radius: scala.Double,
     tessellation: scala.Double,
-    radiusFunction: babylonjsLib.Anon_I,
+    radiusFunction: babylonjsLib.Anon_Distance,
     cap: scala.Double,
     scene: babylonjsLib.BABYLONNs.Scene,
     updatable: scala.Boolean,
@@ -1423,7 +1419,7 @@ object Mesh extends js.Object {
     path: js.Array[babylonjsLib.BABYLONNs.Vector3],
     radius: scala.Double,
     tessellation: scala.Double,
-    radiusFunction: babylonjsLib.Anon_I,
+    radiusFunction: babylonjsLib.Anon_Distance,
     cap: scala.Double,
     scene: babylonjsLib.BABYLONNs.Scene,
     updatable: scala.Boolean,

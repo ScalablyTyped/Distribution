@@ -57,52 +57,42 @@ object ioDashTsModMembers extends js.Object {
   def interface[P /* <: Props */](props: P, name: java.lang.String): InterfaceType[P, TypeOfProps[P], OutputOfProps[P], _] = js.native
   def intersection[A /* <: Mixed */](types: js.Array[A]): IntersectionType[js.Array[A], TypeOf[A], OutputOf[A], mixed] = js.native
   def intersection[A /* <: Mixed */](types: js.Array[A], name: java.lang.String): IntersectionType[js.Array[A], TypeOf[A], OutputOf[A], mixed] = js.native
-  def intersection[A /* <: Mixed */, B /* <: Mixed */](types: js.Tuple2[A, B]): IntersectionType[
-    js.Tuple2[A, B], 
-    Compact[TypeOf[A] with TypeOf[B]], 
-    Compact[OutputOf[A] with OutputOf[B]], 
-    mixed
-  ] = js.native
-  def intersection[A /* <: Mixed */, B /* <: Mixed */](types: js.Tuple2[A, B], name: java.lang.String): IntersectionType[
-    js.Tuple2[A, B], 
-    Compact[TypeOf[A] with TypeOf[B]], 
-    Compact[OutputOf[A] with OutputOf[B]], 
-    mixed
-  ] = js.native
+  def intersection[A /* <: Mixed */, B /* <: Mixed */](types: js.Tuple2[A, B]): IntersectionType[js.Tuple2[A, B], TypeOf[A] with TypeOf[B], OutputOf[A] with OutputOf[B], mixed] = js.native
+  def intersection[A /* <: Mixed */, B /* <: Mixed */](types: js.Tuple2[A, B], name: java.lang.String): IntersectionType[js.Tuple2[A, B], TypeOf[A] with TypeOf[B], OutputOf[A] with OutputOf[B], mixed] = js.native
   def intersection[A /* <: Mixed */, B /* <: Mixed */, C /* <: Mixed */](types: js.Tuple3[A, B, C]): IntersectionType[
     js.Tuple3[A, B, C], 
-    Compact[TypeOf[A] with TypeOf[B] with TypeOf[C]], 
-    Compact[OutputOf[A] with OutputOf[B] with OutputOf[C]], 
+    TypeOf[A] with TypeOf[B] with TypeOf[C], 
+    OutputOf[A] with OutputOf[B] with OutputOf[C], 
     mixed
   ] = js.native
   def intersection[A /* <: Mixed */, B /* <: Mixed */, C /* <: Mixed */](types: js.Tuple3[A, B, C], name: java.lang.String): IntersectionType[
     js.Tuple3[A, B, C], 
-    Compact[TypeOf[A] with TypeOf[B] with TypeOf[C]], 
-    Compact[OutputOf[A] with OutputOf[B] with OutputOf[C]], 
+    TypeOf[A] with TypeOf[B] with TypeOf[C], 
+    OutputOf[A] with OutputOf[B] with OutputOf[C], 
     mixed
   ] = js.native
   def intersection[A /* <: Mixed */, B /* <: Mixed */, C /* <: Mixed */, D /* <: Mixed */](types: js.Tuple4[A, B, C, D]): IntersectionType[
     js.Tuple4[A, B, C, D], 
-    Compact[TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D]], 
-    Compact[OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D]], 
+    TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D], 
+    OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D], 
     mixed
   ] = js.native
   def intersection[A /* <: Mixed */, B /* <: Mixed */, C /* <: Mixed */, D /* <: Mixed */](types: js.Tuple4[A, B, C, D], name: java.lang.String): IntersectionType[
     js.Tuple4[A, B, C, D], 
-    Compact[TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D]], 
-    Compact[OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D]], 
+    TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D], 
+    OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D], 
     mixed
   ] = js.native
   def intersection[A /* <: Mixed */, B /* <: Mixed */, C /* <: Mixed */, D /* <: Mixed */, E /* <: Mixed */](types: js.Tuple5[A, B, C, D, E]): IntersectionType[
     js.Tuple5[A, B, C, D, E], 
-    Compact[TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D] with TypeOf[E]], 
-    Compact[OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D] with OutputOf[E]], 
+    TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D] with TypeOf[E], 
+    OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D] with OutputOf[E], 
     mixed
   ] = js.native
   def intersection[A /* <: Mixed */, B /* <: Mixed */, C /* <: Mixed */, D /* <: Mixed */, E /* <: Mixed */](types: js.Tuple5[A, B, C, D, E], name: java.lang.String): IntersectionType[
     js.Tuple5[A, B, C, D, E], 
-    Compact[TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D] with TypeOf[E]], 
-    Compact[OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D] with OutputOf[E]], 
+    TypeOf[A] with TypeOf[B] with TypeOf[C] with TypeOf[D] with TypeOf[E], 
+    OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D] with OutputOf[E], 
     mixed
   ] = js.native
   def isTagged[Tag /* <: java.lang.String */](tag: Tag): js.Function1[/* type */ Mixed, /* is io-ts.io-ts.Tagged<Tag, any, any> */ scala.Boolean] = js.native

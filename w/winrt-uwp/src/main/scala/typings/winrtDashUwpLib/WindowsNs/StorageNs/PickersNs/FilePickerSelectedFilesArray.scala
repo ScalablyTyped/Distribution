@@ -27,7 +27,7 @@ abstract class FilePickerSelectedFilesArray ()
     * Retrieves the StorageFile objects that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the objects in the collection to return.
     */
-  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValueStorageFile = js.native
+  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValueNumberStorageFile = js.native
   def indexOf(value: winrtDashUwpLib.WindowsNs.StorageNs.StorageFile, extra: js.Any*): winrtDashUwpLib.Anon_Index = js.native
   /**
     * Retrieves the index of a specified StorageFile object in the collection.

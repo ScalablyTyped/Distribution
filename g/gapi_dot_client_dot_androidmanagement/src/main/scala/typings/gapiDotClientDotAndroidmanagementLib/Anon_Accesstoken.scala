@@ -17,24 +17,23 @@ trait Anon_Accesstoken extends js.Object {
   var bearer_token: js.UndefOr[java.lang.String] = js.undefined
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * The callback URL to which the admin will be redirected after successfully creating an enterprise. Before redirecting there the system will add a query
-    * parameter to this URL named enterpriseToken which will contain an opaque token to be used for the create enterprise request. The URL will be parsed
-    * then reformatted in order to add the enterpriseToken parameter, so there may be some minor formatting changes.
-    */
-  var callbackUrl: js.UndefOr[java.lang.String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The preferred language for localized application info, as a BCP47 tag (e.g. "en-US", "de"). If not specified the default language of the application
+    * will be used.
+    */
+  var languageCode: js.UndefOr[java.lang.String] = js.undefined
+  /** The name of the application in the form enterprises/{enterpriseId}/applications/{package_name} */
+  var name: java.lang.String
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
-  /** The id of the Google Cloud Platform project which will own the enterprise. */
-  var projectId: js.UndefOr[java.lang.String] = js.undefined
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */

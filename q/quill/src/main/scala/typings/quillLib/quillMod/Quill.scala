@@ -112,9 +112,9 @@ class Quill protected () extends EventEmitter {
   def pasteHTML(index: scala.Double, html: java.lang.String, source: Sources): java.lang.String = js.native
   def removeFormat(index: scala.Double, length: scala.Double): js.Any = js.native
   def removeFormat(index: scala.Double, length: scala.Double, source: Sources): js.Any = js.native
-  def setContents(delta: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ js.Any): js.Any = js.native
+  def setContents(delta: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ js.Any): js.Any = js.native
   def setContents(
-    delta: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ js.Any,
+    delta: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ js.Any,
     source: Sources
   ): js.Any = js.native
   def setSelection(index: scala.Double, length: scala.Double): scala.Unit = js.native
@@ -125,9 +125,9 @@ class Quill protected () extends EventEmitter {
   def setText(text: java.lang.String, source: Sources): js.Any = js.native
   def update(): scala.Unit = js.native
   def update(source: Sources): scala.Unit = js.native
-  def updateContents(delta: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ js.Any): js.Any = js.native
+  def updateContents(delta: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ js.Any): js.Any = js.native
   def updateContents(
-    delta: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ js.Any,
+    delta: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Delta */ js.Any,
     source: Sources
   ): js.Any = js.native
 }

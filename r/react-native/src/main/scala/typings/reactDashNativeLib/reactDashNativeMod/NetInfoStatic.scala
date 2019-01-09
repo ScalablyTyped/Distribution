@@ -12,7 +12,7 @@ trait NetInfoStatic extends js.Object {
     * Use this if you are only interested with whether the device has internet
     * connectivity.
     */
-  var isConnected: reactDashNativeLib.Anon_Fetch
+  var isConnected: reactDashNativeLib.Anon_AddEventListener
   /**
     * Adds an event handler. Supported events:
     *

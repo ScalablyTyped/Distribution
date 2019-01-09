@@ -11,7 +11,7 @@ trait GeoChoroplethChart
      with BaseMixin[GeoChoroplethChart] {
   @JSName("projection")
   var projection_Original: IGetSet[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.geo.Projection */ _, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.geo.Projection */ _, 
     GeoChoroplethChart
   ] = js.native
   def geoJsons(): js.Array[GeoChoroplethLayer] = js.native
@@ -19,7 +19,7 @@ trait GeoChoroplethChart
   def overlayGeoJson(json: js.Any, name: java.lang.String, keyAccessor: Accessor[_, _]): scala.Unit = js.native
   def projection(): js.Any = js.native
   def projection(
-    t: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.geo.Projection */ js.Any
+    t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.geo.Projection */ js.Any
   ): GeoChoroplethChart = js.native
   def removeGeoJson(name: java.lang.String): scala.Unit = js.native
 }

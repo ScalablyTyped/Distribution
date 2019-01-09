@@ -31,7 +31,7 @@ class Ami protected ()
     * Nested block describing an EBS block device that should be
     * attached to created instances. The structure of this block is described below.
     */
-  val ebsBlockDevices: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeviceNameVolumeTypeEncrypted]] = js.native
+  val ebsBlockDevices: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeleteOnTermination]] = js.native
   /**
     * Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
     */
@@ -40,7 +40,7 @@ class Ami protected ()
     * Nested block describing an ephemeral block device that
     * should be attached to created instances. The structure of this block is described below.
     */
-  val ephemeralBlockDevices: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeviceNameVirtualName]] = js.native
+  val ephemeralBlockDevices: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeviceName]] = js.native
   /**
     * Path to an S3 object containing an image manifest, e.g. created
     * by the `ec2-upload-bundle` command in the EC2 command line tools.

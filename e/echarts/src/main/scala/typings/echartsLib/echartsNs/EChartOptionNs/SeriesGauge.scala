@@ -119,21 +119,21 @@ trait SeriesGauge extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLabel
     */
-  var axisLabel: js.UndefOr[echartsLib.Anon_ShadowOffsetXBackgroundColorShowTextBorderWidthShadowBlurHeight] = js.undefined
+  var axisLabel: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColorBorderRadius] = js.undefined
   /**
     * The related configuration about the axis line of gauge chart.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine
     */
-  var axisLine: js.UndefOr[echartsLib.Anon_LineStyle] = js.undefined
+  var axisLine: js.UndefOr[echartsLib.Anon_LineStyleShow] = js.undefined
   /**
     * The tick line style.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisTick
     */
-  var axisTick: js.UndefOr[echartsLib.Anon_Length] = js.undefined
+  var axisTick: js.UndefOr[echartsLib.Anon_LengthLineStyle] = js.undefined
   /**
     * Whether the scale in gauge chart increases clockwise.
     *
@@ -149,13 +149,11 @@ trait SeriesGauge extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.detail
     */
-  var detail: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowTextBorderWidthShadowBlurHeightBorderWidth
-  ] = js.undefined
+  var detail: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyle] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleAnonBorderColor] = js.undefined
   /**
     * The end angle of gauge chart.
     *
@@ -180,7 +178,7 @@ trait SeriesGauge extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -188,21 +186,25 @@ trait SeriesGauge extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.markArea
     */
-  var markArea: js.UndefOr[echartsLib.Anon_SilentDataLabel] = js.undefined
+  var markArea: js.UndefOr[
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
+  ] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.markLine
     */
-  var markLine: js.UndefOr[echartsLib.Anon_PrecisionSilent] = js.undefined
+  var markLine: js.UndefOr[
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+  ] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_SilentDataLabelAnimationEasingUpdate] = js.undefined
+  var markPoint: js.UndefOr[echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
   /**
     * The maximum data value which map to
     * [maxAngle](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.maxAngle)
@@ -260,7 +262,7 @@ trait SeriesGauge extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.splitLine
     */
-  var splitLine: js.UndefOr[echartsLib.Anon_LengthLineStyle] = js.undefined
+  var splitLine: js.UndefOr[echartsLib.Anon_Length] = js.undefined
   /**
     * The number of split segments of gauge chart scale.
     *
@@ -288,16 +290,14 @@ trait SeriesGauge extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.title
     */
-  var title: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowTextBorderWidthShadowBlurHeightBorderWidth
-  ] = js.undefined
+  var title: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
   /**
     * tooltip settings in this series.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "gauge"

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("TypeScript")
 @js.native
 object TypeScriptNsMembers extends js.Object {
-  var DiagnosticCode: typescriptDashServicesLib.Anon_Getaccessorcannothaveparameters = js.native
+  var DiagnosticCode: typescriptDashServicesLib.Anon_01isinaccessible = js.native
   var Environment: IEnvironment = js.native
   var LocalizedDiagnosticMessages: IIndexable[js.Any] = js.native
   var astTranslationTime: scala.Double = js.native
@@ -73,7 +73,7 @@ object TypeScriptNsMembers extends js.Object {
   def getPrettyName(modPath: java.lang.String): js.Any = js.native
   def getPrettyName(modPath: java.lang.String, quote: scala.Boolean): js.Any = js.native
   def getPrettyName(modPath: java.lang.String, quote: scala.Boolean, treatAsFileName: scala.Boolean): js.Any = js.native
-  def getPropertyAssignmentNameTextFromIdentifier(identifier: AST): typescriptDashServicesLib.Anon_MemberName = js.native
+  def getPropertyAssignmentNameTextFromIdentifier(identifier: AST): typescriptDashServicesLib.Anon_ActualText = js.native
   def getReferencedFiles(fileName: java.lang.String, sourceText: IScriptSnapshot): js.Array[IFileReference] = js.native
   def getRelativePathToFixedPath(fixedModFilePath: java.lang.String, absoluteModPath: java.lang.String): java.lang.String = js.native
   def getRelativePathToFixedPath(

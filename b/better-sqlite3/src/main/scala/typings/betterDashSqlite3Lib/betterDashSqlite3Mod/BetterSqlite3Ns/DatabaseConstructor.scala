@@ -14,10 +14,10 @@ trait DatabaseConstructor
       Database
     ] {
   @JSName("Integer")
-  var Integer_Original: js.Function1[
+  var Integer_Original: (js.Function1[
     /* val */ integerLib.integerMod.IntegerNs.IntLike, 
     integerLib.integerMod.IntegerNs.IntClass
-  ] = js.native
+  ]) with betterDashSqlite3Lib.Anon_DefaultVal = js.native
   var SqliteError: org.scalablytyped.runtime.Instantiable2[
     /* message */ java.lang.String, 
     /* code */ java.lang.String, 

@@ -108,8 +108,8 @@ object documenttemplatesNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/document-templates relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.IDocumentTemplate because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.IDocumentTemplate because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class DocumentTemplate protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -128,26 +128,26 @@ object documenttemplatesNs extends js.Object {
     val toplevels: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[Widget] = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.IDocumentTemplateParameter because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.IDocumentTemplateParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDocumentTemplate, name, `type`, parameterType, asLoaded, load, load, load, load */ @js.native
   class DocumentTemplateParameter protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
-    val containerAsDocumentTemplate: DocumentTemplate = js.native
+    val containerAsDocumentTemplate: DocumentTemplate | IDocumentTemplate = js.native
     @JSName("model")
     var model_DocumentTemplateParameter: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     var name: java.lang.String = js.native
     /**
       * In version 7.9.0: introduced
       */
-    var parameterType: mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.DataType = js.native
+    var parameterType: mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.DataType | mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IDataType = js.native
     val qualifiedName: java.lang.String | scala.Null = js.native
     /**
       * The value of this property is conceptually of type dataTypes.LegacyDataType.
       *
       * In version 7.9.0: deleted
       */
-    var `type`: java.lang.String = js.native
+    var `type`: scala.Null | java.lang.String = js.native
   }
   
   @js.native

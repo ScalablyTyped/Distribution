@@ -7,19 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Bottom extends js.Object {
   /**
-    * Pane is positioned below the SplitView's content.
+    * The AppBar appears at the bottom of the main view
     **/
   var bottom: java.lang.String
   /**
-    * Pane is positioned left of the SplitView's content.
-    **/
-  var left: java.lang.String
-  /**
-    * Pane is positioned right of the SplitView's content.
-    **/
-  var right: java.lang.String
-  /**
-    * Pane is positioned above the SplitView's content.
+    * The AppBar appears at the top of the main view
     **/
   var top: java.lang.String
 }

@@ -89,7 +89,7 @@ class ChartPoint ()
   def load(): ChartPoint = js.native
   def load(option: java.lang.String): ChartPoint = js.native
   def load(option: js.Array[java.lang.String]): ChartPoint = js.native
-  def load(option: officeDashJsLib.Anon_Select): ChartPoint = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ChartPoint = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.ChartPointLoadOptions): ChartPoint = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartPoint): scala.Unit = js.native

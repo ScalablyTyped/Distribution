@@ -42,7 +42,7 @@ trait ComponentPropsGaeaEdit extends js.Object {
   /**
     * 控制 number 单位
     */
-  var number: js.UndefOr[gaeaDashModelLib.Anon_OutputRange] = js.undefined
+  var number: js.UndefOr[gaeaDashModelLib.Anon_CurrentUnit] = js.undefined
   /**
     * 当 editor 为 selector 时的数组配置
     */

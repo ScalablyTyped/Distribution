@@ -14,7 +14,7 @@ trait StackedAreaChartProps[T] extends ChartProps[T] {
   var renderDecorator: js.UndefOr[js.Function0[js.Object]] = js.undefined
   var renderGradient: js.UndefOr[
     js.Function1[
-      /* props */ reactDashNativeDashSvgDashChartsLib.Anon_X[T], 
+      /* props */ reactDashNativeDashSvgDashChartsLib.Anon_Color[T], 
       reactLib.reactMod.Component[
         reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.LinearGradientProps | reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.RadialGradientProps, 
         js.Object, 

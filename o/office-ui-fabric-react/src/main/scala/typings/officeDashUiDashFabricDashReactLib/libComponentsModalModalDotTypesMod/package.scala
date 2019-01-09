@@ -14,5 +14,5 @@ package object libComponentsModalModalDotTypesMod {
   ]) with (stdLib.Pick[
     IModalProps, 
     officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.className | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.containerClassName | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.scrollableContentClassName | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.topOffsetFixed
-  ]) with officeDashUiDashFabricDashReactLib.Anon_IsVisible
+  ]) with officeDashUiDashFabricDashReactLib.Anon_HasBeenOpened
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Location extends js.Object {
-  var location: expressDashValidatorLib.checkLocationMod.Location
+  var location: java.lang.String
   var path: java.lang.String
   var req: expressLib.expressMod.eNs.Request
 }

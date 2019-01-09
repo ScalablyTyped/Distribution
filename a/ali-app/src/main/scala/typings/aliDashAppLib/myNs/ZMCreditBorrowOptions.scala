@@ -132,6 +132,6 @@ trait ZMCreditBorrowOptions
   		 */
   var rent_unit: java.lang.String
   @JSName("success")
-  var success_ZMCreditBorrowOptions: js.UndefOr[js.Function1[/* res */ aliDashAppLib.Anon_ResultResultStatus, scala.Unit]] = js.undefined
+  var success_ZMCreditBorrowOptions: js.UndefOr[js.Function1[/* res */ aliDashAppLib.Anon_4000, scala.Unit]] = js.undefined
 }
 

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/array/reduce", JSImport.Namespace)
 @js.native
 object fnArrayReduceMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayCallbackfnPreviousValue]
+  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayCallbackfnCurrentIndex]
 

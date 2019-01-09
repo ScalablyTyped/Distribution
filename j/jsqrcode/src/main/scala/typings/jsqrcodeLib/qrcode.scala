@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("qrcode")
 @js.native
 object qrcode extends js.Object {
-  // tslint:disable-next-line:prefer-method-signature
-  var callback: js.Function1[/* result */ java.lang.String, scala.Unit] = js.native
   var debug: scala.Boolean = js.native
   var height: scala.Double = js.native
   var imagedata: stdLib.ImageData = js.native
@@ -37,6 +35,8 @@ object qrcode extends js.Object {
   ] = js.native
   var width: scala.Double = js.native
   def binarize(th: scala.Double): js.Array[scala.Boolean] = js.native
+  // tslint:disable-next-line:prefer-method-signature
+  def callback(result: java.lang.String): scala.Unit = js.native
   def captureToCanvas(): scala.Unit = js.native
   def decode(): scala.Unit = js.native
   def decode(src: java.lang.String): scala.Unit = js.native

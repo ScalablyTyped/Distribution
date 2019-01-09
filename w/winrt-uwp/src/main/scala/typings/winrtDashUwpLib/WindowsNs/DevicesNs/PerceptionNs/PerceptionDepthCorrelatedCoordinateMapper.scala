@@ -13,7 +13,7 @@ abstract class PerceptionDepthCorrelatedCoordinateMapper () extends js.Object {
     * Maps all pixels in an image from camera image space to depth image space.
     * @param depthFrame The depth frame to map the pixels to.
     */
-  def mapAllPixelsToTargetAsync(depthFrame: PerceptionDepthFrame): winrtDashUwpLib.Anon_TargetCoordinates = js.native
+  def mapAllPixelsToTargetAsync(depthFrame: PerceptionDepthFrame): winrtDashUwpLib.Anon_ReturnValueTargetCoordinates = js.native
   /**
     * Maps a pixel from camera image space to depth image space.
     * @param sourcePixelCoordinate A pixel coordinate, in camera image space.
@@ -36,6 +36,6 @@ abstract class PerceptionDepthCorrelatedCoordinateMapper () extends js.Object {
     * @param region The region of pixels to map from camera image space to depth image space.
     * @param depthFrame The depth frame to map the region of pixels to.
     */
-  def mapRegionOfPixelsToTargetAsync(region: winrtDashUwpLib.WindowsNs.FoundationNs.Rect, depthFrame: PerceptionDepthFrame): winrtDashUwpLib.Anon_TargetCoordinates = js.native
+  def mapRegionOfPixelsToTargetAsync(region: winrtDashUwpLib.WindowsNs.FoundationNs.Rect, depthFrame: PerceptionDepthFrame): winrtDashUwpLib.Anon_ReturnValueTargetCoordinates = js.native
 }
 

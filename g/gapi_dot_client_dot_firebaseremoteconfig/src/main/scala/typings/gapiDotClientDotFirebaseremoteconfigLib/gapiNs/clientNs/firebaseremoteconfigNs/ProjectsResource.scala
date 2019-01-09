@@ -32,6 +32,6 @@ trait ProjectsResource extends js.Object {
     * &#42; Internal error (HTTP status 500) for Database problems or other internal
     * errors.
     */
-  def updateRemoteConfig(request: gapiDotClientDotFirebaseremoteconfigLib.Anon_ValidateOnly): gapiDotClientLib.gapiNs.clientNs.Request[RemoteConfig]
+  def updateRemoteConfig(request: gapiDotClientDotFirebaseremoteconfigLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[RemoteConfig]
 }
 

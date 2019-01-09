@@ -17,7 +17,7 @@ trait IVideoDeviceController extends IMediaDeviceController {
   var tilt: MediaDeviceControl
   var whiteBalance: MediaDeviceControl
   var zoom: MediaDeviceControl
-  def tryGetPowerlineFrequency(): winrtLib.Anon_Value
+  def tryGetPowerlineFrequency(): winrtLib.Anon_Succeeded
   def trySetPowerlineFrequency(value: winrtLib.WindowsNs.MediaNs.CaptureNs.PowerlineFrequency): scala.Boolean
 }
 

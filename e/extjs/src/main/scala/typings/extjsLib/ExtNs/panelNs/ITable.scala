@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.gridNs.lockingNs.ILockable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait ITable extends IPanel {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.gridNs.lockingNs.ILockable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined lockedGridConfig, lockedViewConfig, normalGridConfig, normalViewConfig, scrollDelta, subGridXType, syncRowHeight, syncRowHeights */ trait ITable extends IPanel {
   /** [Method] Invoked after the Panel is Collapsed  */
   @JSName("afterCollapse")
   var afterCollapse_ITable: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -57,14 +57,24 @@ trait ITable extends IPanel {
   var hideHeaders: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] This method is obsolete in 4 1  */
   var invalidateScroller: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  /** [Config Option] (Object) */
+  var lockedGridConfig: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (Object) */
+  var lockedViewConfig: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
   var multiSelect: js.UndefOr[scala.Boolean] = js.undefined
+  /** [Config Option] (Object) */
+  var normalGridConfig: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (Object) */
+  var normalViewConfig: js.UndefOr[js.Any] = js.undefined
   /** [Property] (Boolean) */
   var optimizedColumnMove: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Boolean) */
   var rowLines: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (String/Boolean) */
   var scroll: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (Number) */
+  var scrollDelta: js.UndefOr[scala.Double] = js.undefined
   /** [Config Option] (Boolean) */
   var sealedColumns: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Ext.selection.Model/Object) */
@@ -77,6 +87,10 @@ trait ITable extends IPanel {
   var sortableColumns: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Ext.data.Store) */
   var store: js.UndefOr[extjsLib.ExtNs.dataNs.IStore] = js.undefined
+  /** [Config Option] (String) */
+  var subGridXType: js.UndefOr[java.lang.String] = js.undefined
+  /** [Config Option] (Boolean) */
+  var syncRowHeight: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Synchronizes the row heights between the locked and non locked portion of the grid for each row  */
   var syncRowHeights: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Config Option] (Object) */

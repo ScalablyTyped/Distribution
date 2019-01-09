@@ -18,6 +18,6 @@ trait CheapRuler extends js.Object {
   def lineSlice(start: Point, stop: Point, line: Line): Line
   def lineSliceAlong(start: scala.Double, stop: scala.Double, line: Line): Line
   def offset(p: Point, dx: scala.Double, dy: scala.Double): Point
-  def pointOnLine(line: Line, p: Point): cheapDashRulerLib.Anon_T
+  def pointOnLine(line: Line, p: Point): cheapDashRulerLib.Anon_Index
 }
 

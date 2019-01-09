@@ -10,7 +10,7 @@ trait SetNavigationBarColorOptions
   /**
   		 * 动画效果
   		 */
-  var animation: js.UndefOr[baiduDashAppLib.Anon_TimingFunc] = js.undefined
+  var animation: js.UndefOr[baiduDashAppLib.Anon_Duration] = js.undefined
   /**
   		 * 背景颜色值，有效值为十六进制颜色
   		 */

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ModalManager ()
   extends reactDashOverlaysLib.libModalManagerMod.namespaced {
-  def this(opts: reactDashOverlaysLib.Anon_HideSiblingNodes) = this()
+  def this(opts: reactDashOverlaysLib.Anon_HandleContainerOverflow) = this()
 }
 

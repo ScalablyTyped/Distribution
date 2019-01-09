@@ -230,12 +230,12 @@ object cesiumModMembers extends js.Object {
   def combine(object1: js.Any, object2: js.Any, deep: scala.Boolean): js.Any = js.native
   def createCommand(func: js.Function0[_]): cesiumLib.cesiumMod.CesiumNs.Command = js.native
   def createCommand(func: js.Function0[_], canExecute: scala.Boolean): cesiumLib.cesiumMod.CesiumNs.Command = js.native
-  def createOpenStreetMapImageryProvider(options: cesiumLib.Anon_FileExtension): cesiumLib.cesiumMod.CesiumNs.UrlTemplateImageryProvider = js.native
-  def createTangentSpaceDebugPrimitive(options: cesiumLib.Anon_Length): cesiumLib.cesiumMod.CesiumNs.Primitive = js.native
+  def createOpenStreetMapImageryProvider(options: cesiumLib.Anon_CreditEllipsoidFileExtensionMaximumLevel): cesiumLib.cesiumMod.CesiumNs.UrlTemplateImageryProvider = js.native
+  def createTangentSpaceDebugPrimitive(options: cesiumLib.Anon_Geometry): cesiumLib.cesiumMod.CesiumNs.Primitive = js.native
   def createTaskProcessorWorker(workerFunction: cesiumLib.cesiumMod.CesiumNs.createTaskProcessorWorkerNs.WorkerFunction): cesiumLib.cesiumMod.CesiumNs.createTaskProcessorWorkerNs.TaskProcessorWorkerFunction = js.native
-  def createTileMapServiceImageryProvider(options: cesiumLib.Anon_TileWidthFileExtensionUrl): cesiumLib.cesiumMod.CesiumNs.UrlTemplateImageryProvider = js.native
+  def createTileMapServiceImageryProvider(options: cesiumLib.Anon_CreditEllipsoidFileExtensionFlipXY): cesiumLib.cesiumMod.CesiumNs.UrlTemplateImageryProvider = js.native
   def createWorldImagery(options: cesiumLib.Anon_Style): cesiumLib.cesiumMod.CesiumNs.IonImageryProvider = js.native
-  def createWorldTerrain(options: cesiumLib.Anon_RequestWaterMask): cesiumLib.cesiumMod.CesiumNs.CesiumTerrainProvider = js.native
+  def createWorldTerrain(options: cesiumLib.Anon_RequestVertexNormals): cesiumLib.cesiumMod.CesiumNs.CesiumTerrainProvider = js.native
   def defined(value: js.Any): scala.Boolean = js.native
   def destroyObject(`object`: js.Any): js.UndefOr[scala.Nothing] = js.native
   def destroyObject(`object`: js.Any, message: java.lang.String): js.UndefOr[scala.Nothing] = js.native
@@ -245,7 +245,7 @@ object cesiumModMembers extends js.Object {
   def isArray(value: js.Any): scala.Boolean = js.native
   def isLeapYear(year: scala.Double): scala.Boolean = js.native
   def jsonp(url: java.lang.String): js.Promise[_] = js.native
-  def jsonp(url: java.lang.String, options: cesiumLib.Anon_Parameters): js.Promise[_] = js.native
+  def jsonp(url: java.lang.String, options: cesiumLib.Anon_CallbackParameterName): js.Promise[_] = js.native
   def loadArrayBuffer(url: java.lang.String): js.Promise[stdLib.ArrayBuffer] = js.native
   def loadArrayBuffer(url: java.lang.String, headers: js.Any): js.Promise[stdLib.ArrayBuffer] = js.native
   def loadArrayBuffer(url: js.Promise[java.lang.String]): js.Promise[stdLib.ArrayBuffer] = js.native
@@ -268,7 +268,7 @@ object cesiumModMembers extends js.Object {
   def loadText(url: java.lang.String, headers: js.Any): js.Promise[java.lang.String] = js.native
   def loadText(url: js.Promise[java.lang.String]): js.Promise[java.lang.String] = js.native
   def loadText(url: js.Promise[java.lang.String], headers: js.Any): js.Promise[java.lang.String] = js.native
-  def loadWithXhr(options: cesiumLib.Anon_Method): js.Promise[_] = js.native
+  def loadWithXhr(options: cesiumLib.Anon_DataHeaders): js.Promise[_] = js.native
   def loadXML(url: java.lang.String): js.Promise[stdLib.XMLDocument] = js.native
   def loadXML(url: java.lang.String, headers: js.Any): js.Promise[stdLib.XMLDocument] = js.native
   def loadXML(url: js.Promise[java.lang.String]): js.Promise[stdLib.XMLDocument] = js.native
@@ -390,7 +390,7 @@ object cesiumModMembers extends js.Object {
   ): js.Promise[_] = js.native
   def viewerCesiumInspectorMixin(viewer: cesiumLib.cesiumMod.CesiumNs.Viewer): js.UndefOr[scala.Nothing] = js.native
   def viewerDragDropMixin(viewer: cesiumLib.cesiumMod.CesiumNs.Viewer): js.UndefOr[scala.Nothing] = js.native
-  def viewerDragDropMixin(viewer: cesiumLib.cesiumMod.CesiumNs.Viewer, options: cesiumLib.Anon_ClearOnDrop): js.UndefOr[scala.Nothing] = js.native
+  def viewerDragDropMixin(viewer: cesiumLib.cesiumMod.CesiumNs.Viewer, options: cesiumLib.Anon_ClampToGroundClearOnDrop): js.UndefOr[scala.Nothing] = js.native
   def viewerPerformanceWatchdogMixin(viewer: cesiumLib.cesiumMod.CesiumNs.Viewer): js.UndefOr[scala.Nothing] = js.native
 }
 

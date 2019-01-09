@@ -27,6 +27,6 @@ object ECPair extends js.Object {
   def fromWIF(string: java.lang.String): bitcoinjsDashLibLib.bitcoinjsDashLibMod.ECPair = js.native
   def fromWIF(string: java.lang.String, network: bitcoinjsDashLibLib.bitcoinjsDashLibMod.Network): bitcoinjsDashLibLib.bitcoinjsDashLibMod.ECPair = js.native
   def makeRandom(): bitcoinjsDashLibLib.bitcoinjsDashLibMod.ECPair = js.native
-  def makeRandom(options: bitcoinjsDashLibLib.Anon_CompressedRng): bitcoinjsDashLibLib.bitcoinjsDashLibMod.ECPair = js.native
+  def makeRandom(options: bitcoinjsDashLibLib.Anon_CompressedNetwork): bitcoinjsDashLibLib.bitcoinjsDashLibMod.ECPair = js.native
 }
 

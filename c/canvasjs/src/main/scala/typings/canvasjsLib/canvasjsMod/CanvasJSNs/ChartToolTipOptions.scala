@@ -40,7 +40,7 @@ trait ChartToolTipOptions extends js.Object {
   /**
     * A custom formatter function that returns the content (text/html) to be displayed inside the toolTip.
     */
-  var contentFormatter: js.UndefOr[js.Function1[/* e */ canvasjsLib.Anon_Chart, java.lang.String]] = js.undefined
+  var contentFormatter: js.UndefOr[js.Function1[/* e */ canvasjsLib.Anon_ChartEntries, java.lang.String]] = js.undefined
   /**
     * Setting a value higher than 0 makes the corners of toolTip rounded. Higher the value, more rounded the corners are.
     * Default: 5

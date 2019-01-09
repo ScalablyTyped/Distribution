@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typescriptDashServicesLib.TypeScriptNs.ITypeSyntax because Already inherited)*/
-@JSGlobal("TypeScript.FunctionTypeSyntax")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typescriptDashServicesLib.TypeScriptNs.ITypeSyntax because Already inherited */ @JSGlobal("TypeScript.FunctionTypeSyntax")
 @js.native
 class FunctionTypeSyntax protected () extends SyntaxNode {
   def this(typeParameterList: TypeParameterListSyntax, parameterList: ParameterListSyntax, equalsGreaterThanToken: ISyntaxToken, `type`: ITypeSyntax, parsedInStrictMode: scala.Boolean) = this()

@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashNativeDashAnimatableModMembers extends js.Object {
   val Image: AnimatableComponent[
-    reactDashNativeLib.reactDashNativeMod.ImageProperties, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageProperties */ js.Any, 
     reactDashNativeLib.reactDashNativeMod.ImageStyle
   ] = js.native
   val Text: AnimatableComponent[
-    reactDashNativeLib.reactDashNativeMod.TextProperties, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any, 
     reactDashNativeLib.reactDashNativeMod.TextStyle
   ] = js.native
   val View: AnimatableComponent[
-    reactDashNativeLib.reactDashNativeMod.ViewProperties, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties */ js.Any, 
     reactDashNativeLib.reactDashNativeMod.ViewStyle
   ] = js.native
   def createAnimatableComponent[P /* <: reactDashNativeDashAnimatableLib.Anon_Style */, S](Component: reactLib.reactMod.ReactNs.ClassicComponentClass[P]): AnimatableComponent[P, S] = js.native

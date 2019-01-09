@@ -19,7 +19,7 @@ trait AnnouncementsResource extends js.Object {
     * &#42; `FAILED_PRECONDITION` for the following request error:
     * &#42; AttachmentNotVisible
     */
-  def create(request: gapiDotClientDotClassroomLib.Anon_AccesstokenCourseId): gapiDotClientLib.gapiNs.clientNs.Request[Announcement]
+  def create(request: gapiDotClientDotClassroomLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Announcement]
   /**
     * Deletes an announcement.
     *
@@ -36,7 +36,7 @@ trait AnnouncementsResource extends js.Object {
     * deleted.
     * &#42; `NOT_FOUND` if no course exists with the requested ID.
     */
-  def delete(request: gapiDotClientDotClassroomLib.Anon_AccesstokenCourseIdPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Returns an announcement.
     *
@@ -47,7 +47,7 @@ trait AnnouncementsResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the request is malformed.
     * &#42; `NOT_FOUND` if the requested course or announcement does not exist.
     */
-  def get(request: gapiDotClientDotClassroomLib.Anon_AccesstokenCourseIdPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Announcement]
+  def get(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Announcement]
   /**
     * Returns a list of announcements that the requester is permitted to view.
     *
@@ -61,7 +61,7 @@ trait AnnouncementsResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the request is malformed.
     * &#42; `NOT_FOUND` if the requested course does not exist.
     */
-  def list(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPageSizeCourseIdPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ListAnnouncementsResponse]
+  def list(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltAnnouncementStates): gapiDotClientLib.gapiNs.clientNs.Request[ListAnnouncementsResponse]
   /**
     * Modifies assignee mode and options of an announcement.
     *
@@ -75,7 +75,7 @@ trait AnnouncementsResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the request is malformed.
     * &#42; `NOT_FOUND` if the requested course or course work does not exist.
     */
-  def modifyAssignees(request: gapiDotClientDotClassroomLib.Anon_AccesstokenCourseIdPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Announcement]
+  def modifyAssignees(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Announcement]
   /**
     * Updates one or more fields of an announcement.
     *
@@ -88,6 +88,6 @@ trait AnnouncementsResource extends js.Object {
     * deleted.
     * &#42; `NOT_FOUND` if the requested course or announcement does not exist
     */
-  def patch(request: gapiDotClientDotClassroomLib.Anon_AccesstokenCourseIdPrettyPrintBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Announcement]
+  def patch(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Announcement]
 }
 

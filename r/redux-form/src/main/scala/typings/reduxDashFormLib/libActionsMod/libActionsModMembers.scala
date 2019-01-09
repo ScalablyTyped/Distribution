@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-form/lib/actions", JSImport.Namespace)
 @js.native
 object libActionsModMembers extends js.Object {
-  val default: reduxDashFormLib.Anon_ArrayUnshift = js.native
+  val default: reduxDashFormLib.Anon_ArrayInsert = js.native
   def arrayInsert(form: java.lang.String, field: java.lang.String, index: scala.Double, value: js.Any): FormAction = js.native
   def arrayMove(form: java.lang.String, field: java.lang.String, from: scala.Double, to: scala.Double): FormAction = js.native
   def arrayPop(form: java.lang.String, field: java.lang.String): FormAction = js.native

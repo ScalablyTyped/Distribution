@@ -11,7 +11,7 @@ trait Output extends js.Object {
   // Output source map (if requested with sourceMap option)
   var sourceMap: java.lang.String
   // A hash of statistic information (if requested with debug option)
-  var stats: cleanDashCssLib.Anon_TimeSpent
+  var stats: cleanDashCssLib.Anon_Efficiency
   // Optimized output CSS as a string
   var styles: java.lang.String
   // A list of warnings raised

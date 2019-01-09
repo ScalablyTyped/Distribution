@@ -11,7 +11,7 @@ trait Package
   var author: js.UndefOr[Person] = js.undefined
   var bin: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var bugs: js.UndefOr[
-    normalizeDashPackageDashDataLib.Anon_Url | normalizeDashPackageDashDataLib.Anon_UrlEmail
+    normalizeDashPackageDashDataLib.Anon_Email | normalizeDashPackageDashDataLib.Anon_EmailUrl
   ] = js.undefined
   var bundleDependencies: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var contributors: js.UndefOr[js.Array[Person]] = js.undefined

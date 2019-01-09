@@ -15,7 +15,11 @@ trait VpnConnectionState extends js.Object {
     */
   val customerGatewayId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   val routes: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_StateSource]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DestinationCidrBlockSource]
+      ]
+    ]
   ] = js.undefined
   /**
     * Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
@@ -93,7 +97,9 @@ trait VpnConnectionState extends js.Object {
   val `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   val vgwTelemetries: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_OutsideIpAddress]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AcceptedRouteCountLastStatusChange]
+      ]
     ]
   ] = js.undefined
   /**

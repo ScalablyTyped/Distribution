@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("common-tags", JSImport.Namespace)
 @js.native
 object commonDashTagsModMembers extends js.Object {
-  val TemplateTag: commonDashTagsLib.Anon_Transformers = js.native
+  val TemplateTag: commonDashTagsLib.Anon_PluginFunctions = js.native
   val codeBlock: TemplateTag = js.native
   val commaLists: TemplateTag = js.native
   val commaListsAnd: TemplateTag = js.native

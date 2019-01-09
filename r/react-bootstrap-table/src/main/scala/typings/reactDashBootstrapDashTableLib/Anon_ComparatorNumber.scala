@@ -6,13 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ComparatorNumber extends js.Object {
-  /**
-  		 * Comparator value.
-  		 */
-  var comparator: reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterComparator
-  /**
-  		 * Number value.
-  		 */
-  var number: scala.Double
+  var comparator: reactLib.reactMod.ReactNs.CSSProperties
+  var number: reactLib.reactMod.ReactNs.CSSProperties
 }
 

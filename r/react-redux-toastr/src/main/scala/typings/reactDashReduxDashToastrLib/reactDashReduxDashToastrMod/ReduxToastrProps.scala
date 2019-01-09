@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ReduxToastrProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var closeOnToastrClick: js.UndefOr[scala.Boolean] = js.undefined
-  var confirmOptions: js.UndefOr[reactDashReduxDashToastrLib.Anon_OkText] = js.undefined
+  var confirmOptions: js.UndefOr[reactDashReduxDashToastrLib.Anon_CancelText] = js.undefined
   var newestOnTop: js.UndefOr[scala.Boolean] = js.undefined
   var options: js.UndefOr[js.Any] = js.undefined
    // This is currently not used, waiting for response from the package author to remove

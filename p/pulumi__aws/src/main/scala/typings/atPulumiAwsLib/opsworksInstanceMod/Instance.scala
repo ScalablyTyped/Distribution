@@ -46,7 +46,7 @@ class Instance protected ()
     * Additional EBS block devices to attach to the
     * instance.  See Block Devices below for details.
     */
-  val ebsBlockDevices: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeviceNameVolumeTypeIops]] = js.native
+  val ebsBlockDevices: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameIops]] = js.native
   /**
     * If true, the launched EC2 instance will be EBS-optimized.
     */
@@ -61,7 +61,7 @@ class Instance protected ()
     * Customize Ephemeral (also known as
     * "Instance Store") volumes on the instance. See Block Devices below for details.
     */
-  val ephemeralBlockDevices: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeviceNameVirtualName]] = js.native
+  val ephemeralBlockDevices: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeviceName]] = js.native
   /**
     * The instance's host name.
     */
@@ -114,7 +114,7 @@ class Instance protected ()
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevices: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationVolumeTypeIopsVolumeSize]] = js.native
+  val rootBlockDevices: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationIopsVolumeSizeVolumeType]] = js.native
   /**
     * Name of the type of root device instances will have by default.  Can be either `"ebs"` or `"instance-store"`
     */

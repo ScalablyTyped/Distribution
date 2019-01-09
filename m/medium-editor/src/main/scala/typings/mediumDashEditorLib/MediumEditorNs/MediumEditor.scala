@@ -11,7 +11,7 @@ trait MediumEditor
 org.scalablytyped.runtime.Instantiable1[/* elements */ elementType, MediumEditor]
      with org.scalablytyped.runtime.Instantiable2[/* elements */ elementType, /* options */ CoreOptions, MediumEditor] {
   // Properties
-  var version: mediumDashEditorLib.Anon_Revision = js.native
+  var version: mediumDashEditorLib.Anon_Major = js.native
   def addElements(elements: elementType): scala.Unit = js.native
   // Helper Functions
   def checkContentChanged(): scala.Unit = js.native

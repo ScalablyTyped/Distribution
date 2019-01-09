@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(parchmentLib.distSrcBlotAbstractBlotMod.Parent because Would inherit conflicting mutable fields List(domNode, next, parent, prev, scroll))*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- parchmentLib.distSrcBlotAbstractBlotMod.Parent because var conflicts: domNode, next, parent, prev, scroll. Inlined children, appendChild, descendant, descendant, descendants, descendants, insertBefore, insertBefore, moveChildren, moveChildren, path, path, removeChild, unwrap */ @js.native
 trait ContainerBlot
   extends parchmentLib.distSrcBlotAbstractShadowMod.default {
   var children: parchmentLib.distSrcCollectionLinkedDashListMod.default[parchmentLib.distSrcBlotAbstractBlotMod.Blot] = js.native
@@ -19,12 +19,25 @@ trait ContainerBlot
     index: scala.Double
   ): js.Tuple2[parchmentLib.distSrcBlotAbstractBlotMod.Blot | scala.Null, scala.Double] = js.native
   def descendant(criteria: parchmentLib.Anon_Blot, index: scala.Double): js.Tuple2[parchmentLib.distSrcBlotAbstractBlotMod.Blot | scala.Null, scala.Double] = js.native
+  def descendant[T](`type`: parchmentLib.Anon_T[T], index: scala.Double): js.Tuple2[T, scala.Double] = js.native
+  @JSName("descendant")
+  def descendant_T[T](
+    matcher: js.Function1[/* blot */ parchmentLib.distSrcBlotAbstractBlotMod.Blot, scala.Boolean],
+    index: scala.Double
+  ): js.Tuple2[T, scala.Double] = js.native
   def descendants(
     criteria: js.Function1[/* blot */ parchmentLib.distSrcBlotAbstractBlotMod.Blot, scala.Boolean],
     index: scala.Double,
     length: scala.Double
   ): js.Array[parchmentLib.distSrcBlotAbstractBlotMod.Blot] = js.native
   def descendants(criteria: parchmentLib.Anon_Blot, index: scala.Double, length: scala.Double): js.Array[parchmentLib.distSrcBlotAbstractBlotMod.Blot] = js.native
+  def descendants[T](`type`: parchmentLib.Anon_T[T], index: scala.Double, length: scala.Double): js.Array[T] = js.native
+  @JSName("descendants")
+  def descendants_T[T](
+    matcher: js.Function1[/* blot */ parchmentLib.distSrcBlotAbstractBlotMod.Blot, scala.Boolean],
+    index: scala.Double,
+    length: scala.Double
+  ): js.Array[T] = js.native
   def insertBefore(childBlot: parchmentLib.distSrcBlotAbstractBlotMod.Blot): scala.Unit = js.native
   def insertBefore(
     childBlot: parchmentLib.distSrcBlotAbstractBlotMod.Blot,

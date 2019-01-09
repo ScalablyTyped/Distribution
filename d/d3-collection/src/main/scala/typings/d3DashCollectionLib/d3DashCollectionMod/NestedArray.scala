@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait NestedArray[Datum, RollupType]
-  extends stdLib.Array[d3DashCollectionLib.Anon_ValuesKey[Datum, RollupType]]
+  extends stdLib.Array[d3DashCollectionLib.Anon_KeyValueValues[Datum, RollupType]]
 

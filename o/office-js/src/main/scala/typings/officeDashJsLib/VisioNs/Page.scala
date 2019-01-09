@@ -103,7 +103,7 @@ class Page ()
   def load(): Page = js.native
   def load(option: java.lang.String): Page = js.native
   def load(option: js.Array[java.lang.String]): Page = js.native
-  def load(option: officeDashJsLib.Anon_Select): Page = js.native
+  def load(option: officeDashJsLib.Anon_Expand): Page = js.native
   def load(option: officeDashJsLib.VisioNs.InterfacesNs.PageLoadOptions): Page = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Irreducible[T] extends Type[T] {
   @JSName("meta")
-  var meta_Irreducible: tcombLib.Anon_Predicate[T] = js.native
+  var meta_Irreducible: tcombLib.Anon_IdentityKind[T] = js.native
 }
 

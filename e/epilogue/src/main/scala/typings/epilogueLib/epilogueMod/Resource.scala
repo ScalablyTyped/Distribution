@@ -14,7 +14,7 @@ class Resource protected () extends js.Object {
   var associationOptions: ResourceAssociationOptions = js.native
   var attributes: js.Array[java.lang.String] = js.native
   var controllers: Controllers = js.native
-  var endpoints: epilogueLib.Anon_Singular = js.native
+  var endpoints: epilogueLib.Anon_Plural = js.native
   var excludeAttributes: js.Array[java.lang.String] = js.native
   var include: js.Array[epilogueLib.Anon_Model | java.lang.String] = js.native
   var model: js.Any = js.native

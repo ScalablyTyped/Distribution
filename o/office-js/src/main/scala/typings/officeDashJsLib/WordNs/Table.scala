@@ -678,7 +678,7 @@ class Table ()
   def load(): Table = js.native
   def load(option: java.lang.String): Table = js.native
   def load(option: js.Array[java.lang.String]): Table = js.native
-  def load(option: officeDashJsLib.Anon_Select): Table = js.native
+  def load(option: officeDashJsLib.Anon_Expand): Table = js.native
   def load(option: officeDashJsLib.WordNs.InterfacesNs.TableLoadOptions): Table = js.native
   /**
     *
@@ -690,7 +690,7 @@ class Table ()
     * @param searchOptions Optional. Options for the search.
     */
   def search(searchText: java.lang.String): RangeCollection = js.native
-  def search(searchText: java.lang.String, searchOptions: officeDashJsLib.Anon_MatchSuffix): RangeCollection = js.native
+  def search(searchText: java.lang.String, searchOptions: officeDashJsLib.Anon_IgnorePunct): RangeCollection = js.native
   def search(searchText: java.lang.String, searchOptions: SearchOptions): RangeCollection = js.native
   /**
     *

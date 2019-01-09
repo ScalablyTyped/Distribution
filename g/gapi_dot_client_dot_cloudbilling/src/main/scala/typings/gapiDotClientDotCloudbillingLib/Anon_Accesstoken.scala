@@ -21,13 +21,21 @@ trait Anon_Accesstoken extends js.Object {
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The resource name of the billing account associated with the projects that
+    * you want to list. For example, `billingAccounts/012345-567890-ABCDEF`.
+    */
+  var name: java.lang.String
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
-  /** Requested page size. Defaults to 5000. */
+  /**
+    * Requested page size. The maximum page size is 100; this is also the
+    * default.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-    * A token identifying a page of results to return. This should be a
-    * `next_page_token` value returned from a previous `ListServices`
+    * A token identifying a page of results to be returned. This should be a
+    * `next_page_token` value returned from a previous `ListProjectBillingInfo`
     * call. If unspecified, the first page of results is returned.
     */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined

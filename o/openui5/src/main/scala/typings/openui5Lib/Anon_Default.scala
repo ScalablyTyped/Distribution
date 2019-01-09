@@ -7,12 +7,20 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Default extends js.Object {
   /**
-    * Background is transparent
+    * BindingMode default means that the binding mode of the model is used
     */
   var Default: js.Any
   /**
-    * Background is with predefined light colors
+    * BindingMode one time means value is only read from the model once
     */
-  var Light: js.Any
+  var OneTime: js.Any
+  /**
+    * BindingMode one way means from model to view
+    */
+  var OneWay: js.Any
+  /**
+    * BindingMode two way means from model to view and vice versa
+    */
+  var TwoWay: js.Any
 }
 

@@ -20,7 +20,7 @@ trait Array[T]
     * when they will be absent when used in a 'with' statement.
     */
   @JSName(org.scalablytyped.runtime.Symbol.unscopables)
-  var unscopables: js.Function0[Anon_Find] = js.native
+  var unscopables: js.Function0[Anon_CopyWithin] = js.native
   /**
     * Combines two or more arrays.
     * @param items Additional items to add to the end of array1.

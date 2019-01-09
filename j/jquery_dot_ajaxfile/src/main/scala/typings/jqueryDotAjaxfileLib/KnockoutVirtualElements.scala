@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait KnockoutVirtualElements extends js.Object {
-  var allowedBindings: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
+  var allowedBindings: /* import warning: ImportType.apply Failed type conversion: {[bindingName: string] : boolean, [bindingName: string] : boolean} */ js.Any
   def childNodes(node: KnockoutVirtualElement): js.Array[stdLib.Node]
   def emptyNode(node: KnockoutVirtualElement): scala.Unit
   def firstChild(node: KnockoutVirtualElement): KnockoutVirtualElement

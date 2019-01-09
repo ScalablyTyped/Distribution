@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("electron-debug", JSImport.Namespace)
 @js.native
 object electronDashDebugMod extends js.Object {
-  def apply(options: electronDashDebugLib.Anon_ShowDevTools): scala.Unit = js.native
+  def apply(options: electronDashDebugLib.Anon_Bottom): scala.Unit = js.native
 }
 

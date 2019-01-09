@@ -109,7 +109,7 @@ class TableRow ()
   def load(): TableRow = js.native
   def load(option: java.lang.String): TableRow = js.native
   def load(option: js.Array[java.lang.String]): TableRow = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): TableRow = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): TableRow = js.native
   def load(option: officeDashJsDashPreviewLib.OneNoteNs.InterfacesNs.TableRowLoadOptions): TableRow = js.native
   /**
     *

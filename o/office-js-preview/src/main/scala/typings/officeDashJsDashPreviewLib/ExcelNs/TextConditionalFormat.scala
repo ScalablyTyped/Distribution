@@ -50,7 +50,7 @@ class TextConditionalFormat ()
   def load(): TextConditionalFormat = js.native
   def load(option: java.lang.String): TextConditionalFormat = js.native
   def load(option: js.Array[java.lang.String]): TextConditionalFormat = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): TextConditionalFormat = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): TextConditionalFormat = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.TextConditionalFormatLoadOptions): TextConditionalFormat = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

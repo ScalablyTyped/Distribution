@@ -11,7 +11,7 @@ trait Options extends js.Object {
     *
     * Use a custom `fs` implementation. For example [`graceful-fs`](https://github.com/isaacs/node-graceful-fs).
     */
-  var fs: js.UndefOr[makeDashDirLib.Anon_StatSync] = js.undefined
+  var fs: js.UndefOr[makeDashDirLib.Anon_AccessAccessSync] = js.undefined
   /**
     * Default: `0o777 & (~process.umask())`
     *

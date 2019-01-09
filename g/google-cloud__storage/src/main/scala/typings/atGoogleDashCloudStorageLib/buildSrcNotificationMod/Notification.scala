@@ -25,7 +25,7 @@ import scala.scalajs.js.annotation._
   *
   * const notification = myBucket.notification('1');
   */
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any
 - Dropped any */ @JSImport("@google-cloud/storage/build/src/notification", "Notification")
 @js.native
@@ -41,12 +41,12 @@ class Notification protected () extends js.Object {
   def get(options: GetNotificationOptions, callback: GetNotificationCallback): scala.Unit = js.native
   def getMetadata(): js.Promise[GetNotificationMetadataResponse] = js.native
   def getMetadata(
-    callback: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify GetMetadataCallback */ js.Any
+    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GetMetadataCallback */ js.Any
   ): scala.Unit = js.native
   def getMetadata(options: GetNotificationMetadataOptions): js.Promise[GetNotificationMetadataResponse] = js.native
   def getMetadata(
     options: GetNotificationMetadataOptions,
-    callback: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify GetMetadataCallback */ js.Any
+    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GetMetadataCallback */ js.Any
   ): scala.Unit = js.native
 }
 

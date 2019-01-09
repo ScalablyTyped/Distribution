@@ -18,7 +18,7 @@ trait ExecutionsResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to write to project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the
     * containing History does not exist
     */
-  def create(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Execution]
+  def create(request: gapiDotClientDotToolresultsLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[Execution]
   /**
     * Gets an Execution.
     *
@@ -27,7 +27,7 @@ trait ExecutionsResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to write to project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the Execution
     * does not exist
     */
-  def get(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintHistoryId): gapiDotClientLib.gapiNs.clientNs.Request[Execution]
+  def get(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionId): gapiDotClientLib.gapiNs.clientNs.Request[Execution]
   /**
     * Lists Histories for a given Project.
     *
@@ -38,7 +38,7 @@ trait ExecutionsResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to read project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the containing
     * History does not exist
     */
-  def list(request: gapiDotClientDotToolresultsLib.Anon_PageSizePrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[ListExecutionsResponse]
+  def list(request: gapiDotClientDotToolresultsLib.Anon_AltFieldsHistoryId): gapiDotClientLib.gapiNs.clientNs.Request[ListExecutionsResponse]
   /**
     * Updates an existing Execution with the supplied partial entity.
     *
@@ -47,6 +47,6 @@ trait ExecutionsResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to write to project - INVALID_ARGUMENT - if the request is malformed - FAILED_PRECONDITION - if the
     * requested state transition is illegal - NOT_FOUND - if the containing History does not exist
     */
-  def patch(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintHistoryIdProjectId): gapiDotClientLib.gapiNs.clientNs.Request[Execution]
+  def patch(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Execution]
 }
 

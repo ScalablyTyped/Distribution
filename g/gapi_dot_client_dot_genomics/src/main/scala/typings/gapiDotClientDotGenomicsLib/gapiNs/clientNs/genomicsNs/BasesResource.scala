@@ -16,6 +16,6 @@ trait BasesResource extends js.Object {
     * Implements
     * [GlobalAllianceApi.getReferenceBases](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L221).
     */
-  def list(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListBasesResponse]
+  def list(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackEndFields): gapiDotClientLib.gapiNs.clientNs.Request[ListBasesResponse]
 }
 

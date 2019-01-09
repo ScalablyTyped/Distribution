@@ -15,8 +15,8 @@ class GroundOverlay protected () extends Overlay {
   def getDisplayOnMinLevel(): scala.Double = js.native
   def getImageURL(): java.lang.String = js.native
   def getOpacity(): scala.Double = js.native
-  def onclick(event: baidumapDashWebDashSdkLib.Anon_TypeTarget): scala.Unit = js.native
-  def ondblclick(event: baidumapDashWebDashSdkLib.Anon_TypeTarget): scala.Unit = js.native
+  def onclick(event: baidumapDashWebDashSdkLib.Anon_Target): scala.Unit = js.native
+  def ondblclick(event: baidumapDashWebDashSdkLib.Anon_Target): scala.Unit = js.native
   def setBounds(bounds: Bounds): scala.Unit = js.native
   def setDispalyOnMaxLevel(level: scala.Double): scala.Unit = js.native
   def setDisplayOnMinLevel(level: scala.Double): scala.Unit = js.native

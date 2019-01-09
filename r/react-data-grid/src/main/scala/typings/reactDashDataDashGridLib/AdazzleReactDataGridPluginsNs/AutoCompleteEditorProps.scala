@@ -19,7 +19,7 @@ trait AutoCompleteEditorProps extends js.Object {
   var onCommit: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onKeyDown: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var options: js.UndefOr[js.Array[reactDashDataDashGridLib.Anon_Title]] = js.undefined
+  var options: js.UndefOr[js.Array[reactDashDataDashGridLib.Anon_Id]] = js.undefined
   var resultIdentifier: js.UndefOr[java.lang.String] = js.undefined
   var search: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined

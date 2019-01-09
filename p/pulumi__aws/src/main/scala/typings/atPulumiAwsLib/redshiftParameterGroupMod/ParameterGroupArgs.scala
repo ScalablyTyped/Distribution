@@ -22,9 +22,7 @@ trait ParameterGroupArgs extends js.Object {
     * A list of Redshift parameters to apply.
     */
   val parameters: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ValueNameInput]]
-    ]
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameValue]]]
   ] = js.undefined
 }
 

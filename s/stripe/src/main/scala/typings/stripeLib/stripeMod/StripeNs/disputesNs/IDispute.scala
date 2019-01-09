@@ -42,7 +42,7 @@ trait IDispute
   /**
     * Information about the evidence submission.
     */
-  var evidence_details: js.UndefOr[stripeLib.Anon_Submissioncount] = js.undefined
+  var evidence_details: js.UndefOr[stripeLib.Anon_Dueby] = js.undefined
   /**
     * If true, it is still possible to refund the disputed payment. Once the payment has been fully
     * refunded, no further funds will be withdrawn from your Stripe account as a result of this dispute.

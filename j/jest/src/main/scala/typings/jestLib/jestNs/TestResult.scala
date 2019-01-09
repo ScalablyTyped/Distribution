@@ -15,7 +15,7 @@ trait TestResult extends js.Object {
   var numPendingTests: scala.Double
   var perfStats: jestLib.Anon_End
   var skipped: scala.Boolean
-  var snapshot: jestLib.Anon_Unchecked
+  var snapshot: jestLib.Anon_Added
   var sourceMaps: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var testExecError: js.UndefOr[SerializableError] = js.undefined
   var testFilePath: java.lang.String

@@ -20,7 +20,7 @@ package object WebSocketNs {
     * whether or not to accept the handshake.
     */
   type VerifyClientCallbackAsync = js.Function2[
-    /* info */ wsLib.Anon_Secure, 
+    /* info */ wsLib.Anon_Origin, 
     /* callback */ js.Function4[
       /* res */ scala.Boolean, 
       /* code */ js.UndefOr[scala.Double], 
@@ -35,5 +35,5 @@ package object WebSocketNs {
     * incoming message. The return value (boolean) of the function determines
     * whether or not to accept the handshake.
     */
-  type VerifyClientCallbackSync = js.Function1[/* info */ wsLib.Anon_Secure, scala.Boolean]
+  type VerifyClientCallbackSync = js.Function1[/* info */ wsLib.Anon_Origin, scala.Boolean]
 }

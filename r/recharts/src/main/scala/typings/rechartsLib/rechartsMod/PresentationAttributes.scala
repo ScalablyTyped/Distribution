@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick<std.CSSStyleDeclaration, recharts.recharts.PickedCSSStyleDeclarationKeys>) */ trait PresentationAttributes[X, Y] extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in recharts.recharts.PickedCSSStyleDeclarationKeys ]: std.CSSStyleDeclaration[P]} */ trait PresentationAttributes[X, Y] extends js.Object {
   var angle: scala.Double
   var colorInterpolation: java.lang.String
   var colorProfile: java.lang.String

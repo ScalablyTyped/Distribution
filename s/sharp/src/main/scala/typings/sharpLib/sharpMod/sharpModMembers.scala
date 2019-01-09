@@ -18,7 +18,7 @@ object sharpModMembers extends js.Object {
   val queue: nodeLib.NodeJSNs.EventEmitter = js.native
   val strategy: sharpLib.sharpMod.sharpNs.StrategyEnum = js.native
   /** An Object containing the version numbers of libvips and its dependencies. */
-  val versions: sharpLib.Anon_Webp = js.native
+  val versions: sharpLib.Anon_Cairo = js.native
   //#region Constructor functions
   /**
     * Creates a sharp instance from an image

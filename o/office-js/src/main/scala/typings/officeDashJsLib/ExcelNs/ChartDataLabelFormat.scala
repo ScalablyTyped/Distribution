@@ -54,7 +54,7 @@ class ChartDataLabelFormat ()
   def load(): ChartDataLabelFormat = js.native
   def load(option: java.lang.String): ChartDataLabelFormat = js.native
   def load(option: js.Array[java.lang.String]): ChartDataLabelFormat = js.native
-  def load(option: officeDashJsLib.Anon_Select): ChartDataLabelFormat = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ChartDataLabelFormat = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.ChartDataLabelFormatLoadOptions): ChartDataLabelFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartDataLabelFormat): scala.Unit = js.native

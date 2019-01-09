@@ -12,7 +12,7 @@ object BluetoothSerialNs extends js.Object {
   def disconnect(): js.Promise[scala.Unit] = js.native
   def isConnected(): js.Promise[scala.Boolean] = js.native
   def isEnabled(): js.Promise[scala.Boolean] = js.native
-  def list(): js.Promise[js.Array[reactDashNativeDashBluetoothDashSerialLib.Anon_Name]] = js.native
+  def list(): js.Promise[js.Array[reactDashNativeDashBluetoothDashSerialLib.Anon_Id]] = js.native
   def on(eventName: java.lang.String, handler: js.Function0[scala.Unit]): scala.Unit = js.native
   def removeListener(eventName: java.lang.String, handler: js.Function0[scala.Unit]): scala.Unit = js.native
   def write(data: java.lang.String): js.Promise[scala.Boolean] = js.native

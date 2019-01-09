@@ -27,23 +27,23 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   val Dialog: reactLib.reactMod.ReactNs.StatelessComponent[
     officeDashUiDashFabricDashReactLib.libComponentsDialogDialogDotTypesMod.IDialogProps
   ] = js.native
-  val DirectionalHint: officeDashUiDashFabricDashReactLib.Anon_LeftTopEdge8 = js.native
+  val DirectionalHint: officeDashUiDashFabricDashReactLib.Anon_0110 = js.native
   val FocusTrapCallout: reactLib.reactMod.ReactNs.StatelessComponent[
     officeDashUiDashFabricDashReactLib.libComponentsCalloutFocusTrapCalloutDotTypesMod.IFocusTrapCalloutProps
   ] = js.native
-  val FocusZoneTabbableElements: officeDashUiDashFabricDashReactLib.Anon_None = js.native
+  val FocusZoneTabbableElements: officeDashUiDashFabricDashReactLib.Anon_01 = js.native
   val HighContrastSelector: /* @media screen and (-ms-high-contrast: active) */ java.lang.String = js.native
   val HighContrastSelectorBlack: /* @media screen and (-ms-high-contrast: white-on-black) */ java.lang.String = js.native
   val HighContrastSelectorWhite: /* @media screen and (-ms-high-contrast: black-on-white) */ java.lang.String = js.native
-  val InjectionMode: atUifabricMergeDashStylesLib.Anon_None = js.native
+  val InjectionMode: atUifabricMergeDashStylesLib.Anon_0 = js.native
   val IsFocusVisibleClassName: /* ms-Fabric--isFocusVisible */ java.lang.String = js.native
-  val KeyCodes: atUifabricUtilitiesLib.Anon_E = js.native
+  val KeyCodes: atUifabricUtilitiesLib.Anon_100 = js.native
   val Link: reactLib.reactMod.ReactNs.StatelessComponent[officeDashUiDashFabricDashReactLib.libComponentsLinkLinkDotTypesMod.ILinkProps] = js.native
   val MAX_COLOR_HUE: /* 359 */ scala.Double = js.native
   val MAX_COLOR_RGBA: /* 255 */ scala.Double = js.native
   val MAX_COLOR_SATURATION: /* 100 */ scala.Double = js.native
   val MAX_COLOR_VALUE: /* 100 */ scala.Double = js.native
-  val PulsingBeaconAnimationStyles: atUifabricStylingLib.Anon_CreateDefaultAnimation = js.native
+  val PulsingBeaconAnimationStyles: atUifabricStylingLib.Anon_AnimationName = js.native
   val ResizeGroup: org.scalablytyped.runtime.Instantiable1[
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsResizeGroupResizeGroupDotTypesMod.IResizeGroupProps, 
     officeDashUiDashFabricDashReactLib.libComponentsResizeGroupResizeGroupDotBaseMod.ResizeGroupBase
@@ -61,7 +61,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   val ScreenWidthMinXLarge: /* 1024 */ scala.Double = js.native
   val ScreenWidthMinXXLarge: /* 1366 */ scala.Double = js.native
   val ScreenWidthMinXXXLarge: /* 1920 */ scala.Double = js.native
-  val ScrollToMode: officeDashUiDashFabricDashReactLib.Anon_Bottom = js.native
+  val ScrollToMode: officeDashUiDashFabricDashReactLib.Anon_012 = js.native
   val ScrollbarVisibility: officeDashUiDashFabricDashReactLib.Anon_Always = js.native
   val ThemeSettingName: /* theme */ java.lang.String = js.native
   val Toggle: reactLib.reactMod.ReactNs.StatelessComponent[
@@ -265,7 +265,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   def asAsync[TProps](options: atUifabricUtilitiesLib.libAsAsyncMod.IAsAsyncOptions[TProps]): reactLib.reactMod.ReactNs.ComponentType[TProps with atUifabricUtilitiesLib.Anon_AsyncPlaceholder] = js.native
   def assertNever(x: scala.Nothing): scala.Nothing = js.native
   def assign(target: js.Any, args: js.Any*): js.Any = js.native
-  def autobind[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: stdLib.TypedPropertyDescriptor[T]): atUifabricUtilitiesLib.Anon_Set[T] | scala.Unit = js.native
+  def autobind[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: stdLib.TypedPropertyDescriptor[T]): atUifabricUtilitiesLib.Anon_Configurable[T] | scala.Unit = js.native
   def buildClassMap[T](styles: T): officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.buildClassMap with js.Any = js.native
   def buildColumns(
     items: js.Array[_],
@@ -826,7 +826,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   ): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor | scala.Null = js.native
   def getChildren(parent: reactLib.HTMLElement): js.Array[reactLib.HTMLElement] = js.native
   def getChildren(parent: reactLib.HTMLElement, allowVirtualChildren: scala.Boolean): js.Array[reactLib.HTMLElement] = js.native
-  def getColorFromRGBA(rgba: officeDashUiDashFabricDashReactLib.Anon_B): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
+  def getColorFromRGBA(rgba: officeDashUiDashFabricDashReactLib.Anon_A): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
   def getColorFromString(inputColor: java.lang.String): js.UndefOr[officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor] = js.native
   def getContrastRatio(
     color1: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor,
@@ -1000,7 +1000,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     currentElement: reactLib.HTMLElement,
     includeElementsInFocusZones: scala.Boolean
   ): reactLib.HTMLElement | scala.Null = js.native
-  def getMeasurementCache(): officeDashUiDashFabricDashReactLib.Anon_GetCachedMeasurement = js.native
+  def getMeasurementCache(): officeDashUiDashFabricDashReactLib.Anon_AddMeasurementToCache = js.native
   def getNativeProps[T](props: js.Object, allowedPropNames: js.Array[java.lang.String]): T = js.native
   def getNativeProps[T](
     props: js.Object,
@@ -1027,8 +1027,8 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     allowFocusRoot: js.UndefOr[scala.Boolean],
     tabbable: js.UndefOr[scala.Boolean]
   ): reactLib.HTMLElement | scala.Null = js.native
-  def getNextResizeGroupStateProvider(): officeDashUiDashFabricDashReactLib.Anon_GetNextState = js.native
-  def getNextResizeGroupStateProvider(measurementCache: officeDashUiDashFabricDashReactLib.Anon_GetCachedMeasurement): officeDashUiDashFabricDashReactLib.Anon_GetNextState = js.native
+  def getNextResizeGroupStateProvider(): officeDashUiDashFabricDashReactLib.Anon_CurrentState = js.native
+  def getNextResizeGroupStateProvider(measurementCache: officeDashUiDashFabricDashReactLib.Anon_AddMeasurementToCache): officeDashUiDashFabricDashReactLib.Anon_CurrentState = js.native
   def getParent(child: reactLib.HTMLElement): reactLib.HTMLElement | scala.Null = js.native
   def getParent(child: reactLib.HTMLElement, allowVirtualParents: scala.Boolean): reactLib.HTMLElement | scala.Null = js.native
   def getPreviousElement(
@@ -1129,7 +1129,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
       js.UndefOr[T]
     ]
   ): js.UndefOr[js.Array[js.UndefOr[T]]] = js.native
-  def memoize[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: stdLib.TypedPropertyDescriptor[T]): atUifabricUtilitiesLib.Anon_Get[T] = js.native
+  def memoize[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: stdLib.TypedPropertyDescriptor[T]): atUifabricUtilitiesLib.Anon_ConfigurableGet[T] = js.native
   def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RET_TYPE] */, RET_TYPE](cb: T): T = js.native
   def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RET_TYPE] */, RET_TYPE](cb: T, maxCacheSize: scala.Double): T = js.native
   def merge[T](
@@ -1419,7 +1419,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   def precisionRound(value: scala.Double, precision: scala.Double, base: scala.Double): scala.Double = js.native
   def presenceBoolean(
     presence: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaPresence
-  ): officeDashUiDashFabricDashReactLib.Anon_IsBusy = js.native
+  ): officeDashUiDashFabricDashReactLib.Anon_IsAvailable = js.native
   def provideContext[TContext, TProps](
     contextTypes: propDashTypesLib.propDashTypesMod.ValidationMap[TContext],
     mapPropsToContext: js.Function1[/* props */ TProps, TContext]
@@ -1463,7 +1463,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     element: reactLib.HTMLElement,
     noWrapDataAttribute: officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.`data-no-vertical-wrap`
   ): scala.Boolean = js.native
-  def sizeBoolean(size: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize): officeDashUiDashFabricDashReactLib.Anon_IsSize48 = js.native
+  def sizeBoolean(size: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize): officeDashUiDashFabricDashReactLib.Anon_IsSize10 = js.native
   def styled[TComponentProps /* <: atUifabricUtilitiesLib.libStyledMod.IPropsWithStyles[TStyleProps, TStyleSet] */, TStyleProps, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](
     Component: reactLib.reactMod.ReactNs.ComponentClass[TComponentProps, reactLib.reactMod.ReactNs.ComponentState],
     baseStyles: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]

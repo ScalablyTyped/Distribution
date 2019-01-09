@@ -12,7 +12,7 @@ object libUtilitiesModMembers extends js.Object {
   val DATA_IS_SCROLLABLE_ATTRIBUTE: /* data-is-scrollable */ java.lang.String = js.native
   val DATA_PORTAL_ATTRIBUTE: /* data-portal-element */ java.lang.String = js.native
   val IsFocusVisibleClassName: /* ms-Fabric--isFocusVisible */ java.lang.String = js.native
-  val KeyCodes: atUifabricUtilitiesLib.Anon_E = js.native
+  val KeyCodes: atUifabricUtilitiesLib.Anon_100 = js.native
   val anchorProperties: js.Array[java.lang.String] = js.native
   val baseElementEvents: js.Array[java.lang.String] = js.native
   val baseElementProperties: js.Array[java.lang.String] = js.native
@@ -30,7 +30,7 @@ object libUtilitiesModMembers extends js.Object {
   def asAsync[TProps](options: atUifabricUtilitiesLib.libAsAsyncMod.IAsAsyncOptions[TProps]): reactLib.reactMod.ReactNs.ComponentType[TProps with atUifabricUtilitiesLib.Anon_AsyncPlaceholder] = js.native
   def assertNever(x: scala.Nothing): scala.Nothing = js.native
   def assign(target: js.Any, args: js.Any*): js.Any = js.native
-  def autobind[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: stdLib.TypedPropertyDescriptor[T]): atUifabricUtilitiesLib.Anon_Set[T] | scala.Unit = js.native
+  def autobind[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: stdLib.TypedPropertyDescriptor[T]): atUifabricUtilitiesLib.Anon_Configurable[T] | scala.Unit = js.native
   def calculatePrecision(value: java.lang.String): scala.Double = js.native
   def calculatePrecision(value: scala.Double): scala.Double = js.native
   def classNamesFunction[TStyleProps /* <: js.Object */, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](): js.Function2[
@@ -208,7 +208,7 @@ object libUtilitiesModMembers extends js.Object {
       js.UndefOr[T]
     ]
   ): js.UndefOr[js.Array[js.UndefOr[T]]] = js.native
-  def memoize[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: stdLib.TypedPropertyDescriptor[T]): atUifabricUtilitiesLib.Anon_Get[T] = js.native
+  def memoize[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: stdLib.TypedPropertyDescriptor[T]): atUifabricUtilitiesLib.Anon_ConfigurableGet[T] = js.native
   def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RET_TYPE] */, RET_TYPE](cb: T): T = js.native
   def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RET_TYPE] */, RET_TYPE](cb: T, maxCacheSize: scala.Double): T = js.native
   def merge[T](

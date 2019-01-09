@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IGridTreeBaseApi[TEntity] extends js.Object {
   // Events
-  var on: uiDashGridLib.Anon_RowCollapsed[TEntity]
+  var on: uiDashGridLib.Anon_HandlerRowCollapsed[TEntity]
   // Methods
   /**
     * Collapse all tree rows

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object smartDashTruncateMod extends js.Object {
   def smartTruncate(text: java.lang.String, length: scala.Double): java.lang.String = js.native
-  def smartTruncate(text: java.lang.String, length: scala.Double, options: smartDashTruncateLib.Anon_Position): java.lang.String = js.native
+  def smartTruncate(text: java.lang.String, length: scala.Double, options: smartDashTruncateLib.Anon_Mark): java.lang.String = js.native
 }
 

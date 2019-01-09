@@ -283,8 +283,8 @@ trait Howl extends js.Object {
     yUp: scala.Double,
     zUp: scala.Double
   ): this.type | scala.Unit = js.native
-  def pannerAttr(o: Anon_ConeOuterAngle): this.type = js.native
-  def pannerAttr(o: Anon_ConeOuterAngle, id: scala.Double): this.type = js.native
+  def pannerAttr(o: Anon_ConeInnerAngle): this.type = js.native
+  def pannerAttr(o: Anon_ConeInnerAngle, id: scala.Double): this.type = js.native
    // .play() is not chainable; the other methods are
   def pause(): this.type = js.native
   def pause(id: scala.Double): this.type = js.native

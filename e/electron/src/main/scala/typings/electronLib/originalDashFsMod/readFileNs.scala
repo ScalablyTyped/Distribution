@@ -27,6 +27,7 @@ object readFileNs extends js.Object {
   def `__promisify__`(path: nodeLib.fsMod.PathLike): js.Promise[nodeLib.Buffer] = js.native
   def `__promisify__`(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[java.lang.String] = js.native
   def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlag): js.Promise[nodeLib.Buffer] = js.native
+  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
   /**
     * Asynchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -36,11 +37,10 @@ object readFileNs extends js.Object {
     * If a flag is not provided, it defaults to `'r'`.
     */
   def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagString): js.Promise[java.lang.String] = js.native
-  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagStringNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
   def `__promisify__`(path: scala.Double): js.Promise[nodeLib.Buffer] = js.native
   def `__promisify__`(path: scala.Double, options: java.lang.String): js.Promise[java.lang.String] = js.native
   def `__promisify__`(path: scala.Double, options: nodeLib.Anon_EncodingFlag): js.Promise[nodeLib.Buffer] = js.native
+  def `__promisify__`(path: scala.Double, options: nodeLib.Anon_EncodingFlagNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
   def `__promisify__`(path: scala.Double, options: nodeLib.Anon_EncodingFlagString): js.Promise[java.lang.String] = js.native
-  def `__promisify__`(path: scala.Double, options: nodeLib.Anon_EncodingFlagStringNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
 }
 

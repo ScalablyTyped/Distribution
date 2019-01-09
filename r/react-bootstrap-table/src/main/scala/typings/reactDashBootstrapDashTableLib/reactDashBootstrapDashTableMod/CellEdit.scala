@@ -19,7 +19,7 @@ trait CellEdit[TRow /* <: js.Object */] extends js.Object {
       /* row */ TRow, 
       /* cellName */ java.lang.String, 
       /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, 
-      /* props */ reactDashBootstrapDashTableLib.Anon_RowIndex, 
+      /* props */ reactDashBootstrapDashTableLib.Anon_ColIndex, 
       scala.Unit
     ]
   ] = js.undefined
@@ -42,7 +42,7 @@ trait CellEdit[TRow /* <: js.Object */] extends js.Object {
       /* cellName */ java.lang.String, 
       /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, 
       /* done */ js.Function1[/* isValid */ scala.Boolean, scala.Unit], 
-      /* props */ reactDashBootstrapDashTableLib.Anon_RowIndex, 
+      /* props */ reactDashBootstrapDashTableLib.Anon_ColIndex, 
       scala.Boolean | reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibNumbers.`1`
     ]
   ] = js.undefined

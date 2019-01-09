@@ -162,7 +162,7 @@ object srcCodegenUnderscorePrivateUnderscoreExportsModMembers extends js.Object 
     bootstrapComponents: js.Array[atAngularCoreLib.srcTypeMod.Type[_]],
     defFactory: atAngularCoreLib.srcViewTypesMod.NgModuleDefinitionFactory
   ): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
-  def ɵcrt(values: atAngularCoreLib.Anon_Encapsulation): atAngularCoreLib.srcRenderApiMod.RendererType2 = js.native
+  def ɵcrt(values: atAngularCoreLib.Anon_Data): atAngularCoreLib.srcRenderApiMod.RendererType2 = js.native
   def ɵdid(
     checkIndex: scala.Double,
     flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,

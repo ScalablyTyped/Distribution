@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("cesium", "HeightmapTessellator")
 @js.native
 object HeightmapTessellatorNs extends js.Object {
-  def computeVertices(options: cesiumLib.Anon_StructureheightOffset): js.UndefOr[scala.Nothing] = js.native
+  def computeVertices(options: cesiumLib.Anon_EllipsoidHeight): js.UndefOr[scala.Nothing] = js.native
 }
 

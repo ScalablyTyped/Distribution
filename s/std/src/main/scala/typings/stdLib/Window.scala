@@ -19,7 +19,7 @@ trait Window
      with WindowOrWorkerGlobalScope
      with WindowEventHandlers {
   var Blob: Anon_BlobParts = js.native
-  var URL: Anon_Url = js.native
+  var URL: Anon_Base = js.native
   var URLSearchParams: Anon_Init = js.native
   val applicationCache: ApplicationCache = js.native
   val clientInformation: Navigator = js.native

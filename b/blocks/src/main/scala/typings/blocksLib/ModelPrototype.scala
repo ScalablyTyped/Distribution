@@ -21,7 +21,7 @@ trait ModelPrototype
   	 * 
   	 */
   var isNew: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
-  var options: js.UndefOr[Anon_Read] = js.undefined
+  var options: js.UndefOr[Anon_BaseUrl] = js.undefined
   /**
   	 * Applies new properties to the Model by providing an Object
   	 * 

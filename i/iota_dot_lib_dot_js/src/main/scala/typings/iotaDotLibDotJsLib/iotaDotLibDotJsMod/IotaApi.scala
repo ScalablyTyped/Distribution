@@ -26,11 +26,15 @@ trait IotaApi extends IriApi {
     callback: js.Function2[/* error */ stdLib.Error, /* transactions */ js.Array[TransactionObject], scala.Unit]
   ): scala.Unit = js.native
   def getAccountData(seed: java.lang.String): scala.Unit = js.native
-  def getAccountData(seed: java.lang.String, options: iotaDotLibDotJsLib.Anon_Security): scala.Unit = js.native
+  def getAccountData(seed: java.lang.String, options: iotaDotLibDotJsLib.Anon_EndSecurity): scala.Unit = js.native
   def getAccountData(
     seed: java.lang.String,
-    options: iotaDotLibDotJsLib.Anon_Security,
-    callback: js.Function2[/* error */ stdLib.Error, /* response */ iotaDotLibDotJsLib.Anon_Balance, scala.Unit]
+    options: iotaDotLibDotJsLib.Anon_EndSecurity,
+    callback: js.Function2[
+      /* error */ stdLib.Error, 
+      /* response */ iotaDotLibDotJsLib.Anon_AddressesBalance, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def getBundle(transactionHash: java.lang.String): scala.Unit = js.native
   def getBundle(
@@ -38,15 +42,11 @@ trait IotaApi extends IriApi {
     callback: js.Function2[/* error */ stdLib.Error, /* bundle */ js.Array[TransactionObject], scala.Unit]
   ): scala.Unit = js.native
   def getInputs(seed: java.lang.String): scala.Unit = js.native
-  def getInputs(seed: java.lang.String, options: iotaDotLibDotJsLib.Anon_Threshold): scala.Unit = js.native
+  def getInputs(seed: java.lang.String, options: iotaDotLibDotJsLib.Anon_End): scala.Unit = js.native
   def getInputs(
     seed: java.lang.String,
-    options: iotaDotLibDotJsLib.Anon_Threshold,
-    callback: js.Function2[
-      /* error */ stdLib.Error, 
-      /* response */ iotaDotLibDotJsLib.Anon_InputsArray, 
-      scala.Unit
-    ]
+    options: iotaDotLibDotJsLib.Anon_End,
+    callback: js.Function2[/* error */ stdLib.Error, /* response */ iotaDotLibDotJsLib.Anon_Inputs, scala.Unit]
   ): scala.Unit = js.native
   def getLatestInclusion(hashes: js.Array[java.lang.String]): scala.Unit = js.native
   def getLatestInclusion(
@@ -54,10 +54,10 @@ trait IotaApi extends IriApi {
     callback: js.Function2[/* error */ stdLib.Error, /* states */ js.Array[scala.Boolean], scala.Unit]
   ): scala.Unit = js.native
   def getNewAddress(seed: java.lang.String): scala.Unit = js.native
-  def getNewAddress(seed: java.lang.String, options: iotaDotLibDotJsLib.Anon_SecurityTotal): scala.Unit = js.native
+  def getNewAddress(seed: java.lang.String, options: iotaDotLibDotJsLib.Anon_Checksum): scala.Unit = js.native
   def getNewAddress(
     seed: java.lang.String,
-    options: iotaDotLibDotJsLib.Anon_SecurityTotal,
+    options: iotaDotLibDotJsLib.Anon_Checksum,
     callback: js.Function2[
       /* error */ stdLib.Error, 
       /* response */ java.lang.String | js.Array[java.lang.String], 
@@ -70,10 +70,10 @@ trait IotaApi extends IriApi {
     callback: js.Function2[/* error */ stdLib.Error, /* transactions */ js.Array[TransactionObject], scala.Unit]
   ): scala.Unit = js.native
   def getTransfers(seed: java.lang.String): scala.Unit = js.native
-  def getTransfers(seed: java.lang.String, options: iotaDotLibDotJsLib.Anon_InclusionStates): scala.Unit = js.native
+  def getTransfers(seed: java.lang.String, options: iotaDotLibDotJsLib.Anon_EndInclusionStates): scala.Unit = js.native
   def getTransfers(
     seed: java.lang.String,
-    options: iotaDotLibDotJsLib.Anon_InclusionStates,
+    options: iotaDotLibDotJsLib.Anon_EndInclusionStates,
     callback: js.Function2[
       /* error */ stdLib.Error, 
       /* transfers */ js.Array[js.Array[TransactionObject]], 
@@ -102,12 +102,12 @@ trait IotaApi extends IriApi {
   def prepareTransfers(
     seed: java.lang.String,
     transfers: js.Array[TransferObject],
-    options: iotaDotLibDotJsLib.Anon_AddressSecurity
+    options: iotaDotLibDotJsLib.Anon_Address
   ): scala.Unit = js.native
   def prepareTransfers(
     seed: java.lang.String,
     transfers: js.Array[TransferObject],
-    options: iotaDotLibDotJsLib.Anon_AddressSecurity,
+    options: iotaDotLibDotJsLib.Anon_Address,
     callback: js.Function2[/* error */ stdLib.Error, /* response */ iotaDotLibDotJsLib.Anon_Trytes, scala.Unit]
   ): scala.Unit = js.native
   def replayBundle(transactionHash: java.lang.String, depth: scala.Double, minWeightMagnitude: scala.Double): scala.Unit = js.native
@@ -128,22 +128,30 @@ trait IotaApi extends IriApi {
     depth: scala.Double,
     minWeightMagnitude: scala.Double,
     transfers: js.Array[TransferObject],
-    options: iotaDotLibDotJsLib.Anon_Address
+    options: iotaDotLibDotJsLib.Anon_AddressInputs
   ): scala.Unit = js.native
   def sendTransfer(
     seed: java.lang.String,
     depth: scala.Double,
     minWeightMagnitude: scala.Double,
     transfers: js.Array[TransferObject],
-    options: iotaDotLibDotJsLib.Anon_Address,
-    callback: js.Function2[/* error */ stdLib.Error, /* response */ iotaDotLibDotJsLib.Anon_Inputs, scala.Unit]
+    options: iotaDotLibDotJsLib.Anon_AddressInputs,
+    callback: js.Function2[
+      /* error */ stdLib.Error, 
+      /* response */ iotaDotLibDotJsLib.Anon_InputsArray, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def sendTrytes(trytes: js.Array[java.lang.String], depth: scala.Double, minWeightMagnitude: scala.Double): scala.Unit = js.native
   def sendTrytes(
     trytes: js.Array[java.lang.String],
     depth: scala.Double,
     minWeightMagnitude: scala.Double,
-    callback: js.Function2[/* error */ stdLib.Error, /* response */ iotaDotLibDotJsLib.Anon_Inputs, scala.Unit]
+    callback: js.Function2[
+      /* error */ stdLib.Error, 
+      /* response */ iotaDotLibDotJsLib.Anon_InputsArray, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
 }
 

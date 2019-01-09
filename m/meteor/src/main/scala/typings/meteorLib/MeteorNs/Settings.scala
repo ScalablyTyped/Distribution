@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 /** Settings **/
 trait Settings
   extends /* id */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var public: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
+  var public: /* import warning: ImportType.apply Failed type conversion: {[id: string] : any, [id: string] : any} */ js.Any
 }
 

@@ -10,6 +10,6 @@ trait Anon_Cards extends js.Object {
     reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.Card
   ]
   var key: scala.Double
-  var navigationState: reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.NavigationState[Anon_Path]
+  var navigationState: reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.NavigationState[Anon_Params]
 }
 

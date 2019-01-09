@@ -52,7 +52,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorerMedium, 
-      /* parameter */ Anon_URL, 
+      /* parameter */ Anon_PDisp, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -65,7 +65,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorerMedium, 
-      /* parameter */ Anon_Cancel, 
+      /* parameter */ Anon_ActiveDocument, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -78,7 +78,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorerMedium, 
-      /* parameter */ Anon_URL, 
+      /* parameter */ Anon_PDisp, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -94,7 +94,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorerMedium, 
-      /* parameter */ Anon_Frame, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -108,7 +108,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorerMedium, 
-      /* parameter */ Anon_CancelPWB2, 
+      /* parameter */ Anon_CancelLCauseFlag, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -137,7 +137,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorerMedium, 
-      /* parameter */ Anon_PpDisp, 
+      /* parameter */ Anon_BstrUrl, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -207,7 +207,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashShdocvwLib.activexDashShdocvwLibStrings.pDisp],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorerMedium, 
-      /* parameter */ Anon_PDisp, 
+      /* parameter */ Anon_PDispAny, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -217,7 +217,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashShdocvwLib.activexDashShdocvwLibStrings.pDisp],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorerMedium, 
-      /* parameter */ Anon_PDisp, 
+      /* parameter */ Anon_PDispAny, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -240,7 +240,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorerMedium, 
-      /* parameter */ Anon_ProgressMax, 
+      /* parameter */ Anon_Progress, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -266,7 +266,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorerMedium, 
-      /* parameter */ Anon_FrameRedirectURL, 
+      /* parameter */ Anon_Frame, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -309,7 +309,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorerMedium, 
-      /* parameter */ Anon_URLDwCount, 
+      /* parameter */ Anon_DwCount, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -356,7 +356,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorerMedium, 
-      /* parameter */ Anon_DwUniqueIDBstrWorkerLabel, 
+      /* parameter */ Anon_BstrWorkerLabel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -369,7 +369,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorerMedium, 
-      /* parameter */ Anon_IsChildWindow, 
+      /* parameter */ Anon_CancelIsChildWindow, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -432,7 +432,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorerMedium, 
-      /* parameter */ Anon_DwWindowStateFlags, 
+      /* parameter */ Anon_DwValidFlagsMask, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -481,7 +481,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorer, 
-      /* parameter */ Anon_URL, 
+      /* parameter */ Anon_PDisp, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -494,7 +494,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorer, 
-      /* parameter */ Anon_Cancel, 
+      /* parameter */ Anon_ActiveDocument, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -507,7 +507,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorer, 
-      /* parameter */ Anon_URL, 
+      /* parameter */ Anon_PDisp, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -523,7 +523,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorer, 
-      /* parameter */ Anon_Frame, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -537,7 +537,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorer, 
-      /* parameter */ Anon_CancelPWB2, 
+      /* parameter */ Anon_CancelLCauseFlag, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -566,7 +566,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorer, 
-      /* parameter */ Anon_PpDisp, 
+      /* parameter */ Anon_BstrUrl, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -636,7 +636,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashShdocvwLib.activexDashShdocvwLibStrings.pDisp],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorer, 
-      /* parameter */ Anon_PDisp, 
+      /* parameter */ Anon_PDispAny, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -646,7 +646,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashShdocvwLib.activexDashShdocvwLibStrings.pDisp],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorer, 
-      /* parameter */ Anon_PDisp, 
+      /* parameter */ Anon_PDispAny, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -669,7 +669,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorer, 
-      /* parameter */ Anon_ProgressMax, 
+      /* parameter */ Anon_Progress, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -695,7 +695,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorer, 
-      /* parameter */ Anon_FrameRedirectURL, 
+      /* parameter */ Anon_Frame, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -738,7 +738,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorer, 
-      /* parameter */ Anon_URLDwCount, 
+      /* parameter */ Anon_DwCount, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -785,7 +785,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorer, 
-      /* parameter */ Anon_DwUniqueIDBstrWorkerLabel, 
+      /* parameter */ Anon_BstrWorkerLabel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -798,7 +798,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorer, 
-      /* parameter */ Anon_IsChildWindow, 
+      /* parameter */ Anon_CancelIsChildWindow, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -861,7 +861,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.InternetExplorer, 
-      /* parameter */ Anon_DwWindowStateFlags, 
+      /* parameter */ Anon_DwValidFlagsMask, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -910,7 +910,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.ShellBrowserWindow, 
-      /* parameter */ Anon_URL, 
+      /* parameter */ Anon_PDisp, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -923,7 +923,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.ShellBrowserWindow, 
-      /* parameter */ Anon_Cancel, 
+      /* parameter */ Anon_ActiveDocument, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -936,7 +936,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.ShellBrowserWindow, 
-      /* parameter */ Anon_URL, 
+      /* parameter */ Anon_PDisp, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -952,7 +952,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.ShellBrowserWindow, 
-      /* parameter */ Anon_Frame, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -966,7 +966,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.ShellBrowserWindow, 
-      /* parameter */ Anon_CancelPWB2, 
+      /* parameter */ Anon_CancelLCauseFlag, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -995,7 +995,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.ShellBrowserWindow, 
-      /* parameter */ Anon_PpDisp, 
+      /* parameter */ Anon_BstrUrl, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1065,7 +1065,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashShdocvwLib.activexDashShdocvwLibStrings.pDisp],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.ShellBrowserWindow, 
-      /* parameter */ Anon_PDisp, 
+      /* parameter */ Anon_PDispAny, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1075,7 +1075,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashShdocvwLib.activexDashShdocvwLibStrings.pDisp],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.ShellBrowserWindow, 
-      /* parameter */ Anon_PDisp, 
+      /* parameter */ Anon_PDispAny, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1098,7 +1098,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.ShellBrowserWindow, 
-      /* parameter */ Anon_ProgressMax, 
+      /* parameter */ Anon_Progress, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1124,7 +1124,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.ShellBrowserWindow, 
-      /* parameter */ Anon_FrameRedirectURL, 
+      /* parameter */ Anon_Frame, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1167,7 +1167,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.ShellBrowserWindow, 
-      /* parameter */ Anon_URLDwCount, 
+      /* parameter */ Anon_DwCount, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1214,7 +1214,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.ShellBrowserWindow, 
-      /* parameter */ Anon_DwUniqueIDBstrWorkerLabel, 
+      /* parameter */ Anon_BstrWorkerLabel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1227,7 +1227,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.ShellBrowserWindow, 
-      /* parameter */ Anon_IsChildWindow, 
+      /* parameter */ Anon_CancelIsChildWindow, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1290,7 +1290,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.ShellBrowserWindow, 
-      /* parameter */ Anon_DwWindowStateFlags, 
+      /* parameter */ Anon_DwValidFlagsMask, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1333,7 +1333,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashShdocvwLib.activexDashShdocvwLibStrings.URL],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser_V1, 
-      /* parameter */ Anon_URLString, 
+      /* parameter */ Anon_URL, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1343,7 +1343,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashShdocvwLib.activexDashShdocvwLibStrings.URL],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser_V1, 
-      /* parameter */ Anon_URLString, 
+      /* parameter */ Anon_URL, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1356,7 +1356,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser_V1, 
-      /* parameter */ Anon_ProgressMax, 
+      /* parameter */ Anon_Progress, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1445,7 +1445,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser, 
-      /* parameter */ Anon_URL, 
+      /* parameter */ Anon_PDisp, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1458,7 +1458,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser, 
-      /* parameter */ Anon_Cancel, 
+      /* parameter */ Anon_ActiveDocument, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1471,7 +1471,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser, 
-      /* parameter */ Anon_URL, 
+      /* parameter */ Anon_PDisp, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1487,7 +1487,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser, 
-      /* parameter */ Anon_Frame, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1501,7 +1501,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser, 
-      /* parameter */ Anon_CancelPWB2, 
+      /* parameter */ Anon_CancelLCauseFlag, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1530,7 +1530,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser, 
-      /* parameter */ Anon_PpDisp, 
+      /* parameter */ Anon_BstrUrl, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1600,7 +1600,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashShdocvwLib.activexDashShdocvwLibStrings.pDisp],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser, 
-      /* parameter */ Anon_PDisp, 
+      /* parameter */ Anon_PDispAny, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1610,7 +1610,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashShdocvwLib.activexDashShdocvwLibStrings.pDisp],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser, 
-      /* parameter */ Anon_PDisp, 
+      /* parameter */ Anon_PDispAny, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1633,7 +1633,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser, 
-      /* parameter */ Anon_ProgressMax, 
+      /* parameter */ Anon_Progress, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1659,7 +1659,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser, 
-      /* parameter */ Anon_FrameRedirectURL, 
+      /* parameter */ Anon_Frame, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1702,7 +1702,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser, 
-      /* parameter */ Anon_URLDwCount, 
+      /* parameter */ Anon_DwCount, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1749,7 +1749,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser, 
-      /* parameter */ Anon_DwUniqueIDBstrWorkerLabel, 
+      /* parameter */ Anon_BstrWorkerLabel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1762,7 +1762,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser, 
-      /* parameter */ Anon_IsChildWindow, 
+      /* parameter */ Anon_CancelIsChildWindow, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1825,7 +1825,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashShdocvwLib.SHDocVwNs.WebBrowser, 
-      /* parameter */ Anon_DwWindowStateFlags, 
+      /* parameter */ Anon_DwValidFlagsMask, 
       scala.Unit
     ]
   ): scala.Unit = js.native

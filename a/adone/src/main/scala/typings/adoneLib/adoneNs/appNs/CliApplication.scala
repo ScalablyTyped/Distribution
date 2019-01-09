@@ -21,7 +21,7 @@ class CliApplication () extends Application {
   def exposeCliInterface(ctxId: java.lang.String): scala.Unit = js.native
   def getVersion(): js.Promise[js.UndefOr[java.lang.String]] = js.native
   def option(path: java.lang.String): js.Any = js.native
-  def option(path: java.lang.String, options: adoneLib.Anon_ValueBoolean): js.Any = js.native
+  def option(path: java.lang.String, options: adoneLib.Anon_Value): js.Any = js.native
   def run(options: adoneLib.Anon_IgnoreArgs): js.Promise[scala.Unit] = js.native
 }
 

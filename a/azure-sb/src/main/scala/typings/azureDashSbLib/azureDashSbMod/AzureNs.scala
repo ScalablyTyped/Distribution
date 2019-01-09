@@ -311,7 +311,7 @@ object AzureNs extends js.Object {
                   ] = js.native
         }
         
-        type CorrelationFilter = stdLib.Partial[azureDashSbLib.Anon_Properties]
+        type CorrelationFilter = stdLib.Partial[azureDashSbLib.Anon_ContentType]
       }
       
     }

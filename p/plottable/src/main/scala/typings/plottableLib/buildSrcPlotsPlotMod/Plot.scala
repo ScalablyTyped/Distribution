@@ -145,8 +145,8 @@ class Plot ()
     * single drawer (e.g. adding text drawing capabilities).
     */
   /* protected */ def _createNodesForDataset(dataset: plottableLib.buildSrcCoreDatasetMod.Dataset): plottableLib.buildSrcDrawersMod.ProxyDrawer = js.native
-  /* protected */ def _entityBounds(entity: plottableLib.buildSrcPlotsCommonsMod.ILightweightPlotEntity): plottableLib.Anon_YX = js.native
-  /* protected */ def _entityBounds(entity: plottableLib.buildSrcPlotsCommonsMod.IPlotEntity): plottableLib.Anon_YX = js.native
+  /* protected */ def _entityBounds(entity: plottableLib.buildSrcPlotsCommonsMod.ILightweightPlotEntity): plottableLib.Anon_HeightWidthXY = js.native
+  /* protected */ def _entityBounds(entity: plottableLib.buildSrcPlotsCommonsMod.IPlotEntity): plottableLib.Anon_HeightWidthXY = js.native
   /* protected */ def _filterForProperty(property: java.lang.String): plottableLib.buildSrcCoreInterfacesMod.IAccessor[scala.Boolean] = js.native
   /* protected */ def _generateAttrToProjector(): plottableLib.buildSrcCoreInterfacesMod.AttributeToProjector = js.native
   /* protected */ def _generateDrawSteps(): js.Array[plottableLib.buildSrcDrawersDrawStepMod.DrawStep] = js.native

@@ -35,7 +35,7 @@ trait MDCMenuAdapter extends js.Object {
   def saveFocus(): scala.Unit
   def setAttrForOptionAtIndex(index: scala.Double, attr: java.lang.String, value: java.lang.String): scala.Unit
   def setMaxHeight(height: scala.Double): scala.Unit
-  def setPosition(position: atMaterialMenuLib.Anon_BottomTop): scala.Unit
+  def setPosition(position: atMaterialMenuLib.Anon_BottomLeft): scala.Unit
   def setTransformOrigin(origin: java.lang.String): scala.Unit
 }
 

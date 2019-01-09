@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PerfectScrollbar extends js.Object {
-  var reach: perfectDashScrollbarLib.Anon_Y
+  var reach: perfectDashScrollbarLib.Anon_End
   def destroy(): scala.Unit
   def update(): scala.Unit
 }

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped new Some()Some((args  : ...any))Some(: react-native.react-native.ScrollResponderMixin) */ @JSImport("react-native", "ScrollView")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped new (args : ...any): react-native.react-native.ScrollResponderMixin */ @JSImport("react-native", "ScrollView")
 @js.native
 class ScrollView () extends js.Object {
   // Deprecated, do not use.

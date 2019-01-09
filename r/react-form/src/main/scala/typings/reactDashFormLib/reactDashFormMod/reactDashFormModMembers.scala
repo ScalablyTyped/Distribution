@@ -17,7 +17,7 @@ object reactDashFormModMembers extends js.Object {
   ] = js.native
   val Select: reactLib.reactMod.ReactNs.StatelessComponent[SelectProps] = js.native
   val StyledCheckbox: reactLib.reactMod.ReactNs.StatelessComponent[
-    StyledProps with reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] with reactDashFormLib.Anon_Label
+    StyledProps with reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] with reactDashFormLib.Anon_LabelString
   ] = js.native
   val StyledRadio: reactLib.reactMod.ReactNs.StatelessComponent[
     StyledProps with reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] with reactDashFormLib.Anon_GroupLabel

@@ -5,9 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(senchaUnderscoreTouchLib.ExtNs.mixinNs.ISelectable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses))*/
-trait IDataView
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- senchaUnderscoreTouchLib.ExtNs.mixinNs.ISelectable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses. Inlined allowDeselect, deselectOnContainerClick, disableSelection, locked, mode, clearSelections, deselect, deselectAll, doDeselect, doSelect, getAllowDeselect, getCount, getDeselectOnContainerClick, getDisableSelection, getLastSelected, getMode, getSelection, getSelectionCount, getSelectionMode, hasSelection, isLocked, isSelected, select, selectAll, selectRange, setAllowDeselect, setDeselectOnContainerClick, setDisableSelection, setLastFocused, setMode, updateLastFocused */ trait IDataView
   extends senchaUnderscoreTouchLib.ExtNs.IContainer {
+  /** [Config Option] (Boolean) */
+  var allowDeselect: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Binds a new Store to this DataView  */
   var bindStore: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Config Option] (Boolean) */
@@ -38,6 +40,8 @@ trait IDataView
   var deselectAll: js.UndefOr[js.Function1[/* supress */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var deselectOnContainerClick: js.UndefOr[scala.Boolean] = js.undefined
+  /** [Config Option] (Boolean) */
+  var disableSelection: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Deselects a record instance by record instance or index
   		* @param records Ext.data.Model/Number An array of records or an index.
   		* @param suppressEvent Boolean Set to false to not fire a deselect event.
@@ -226,8 +230,12 @@ trait IDataView
   var itemTpl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String/Boolean) */
   var loadingText: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (Boolean) */
+  var locked: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Number) */
   var maxItemCache: js.UndefOr[scala.Double] = js.undefined
+  /** [Config Option] (String) */
+  var mode: js.UndefOr[java.lang.String] = js.undefined
   /** [Config Option] (Boolean) */
   var multiSelect: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Boolean) */

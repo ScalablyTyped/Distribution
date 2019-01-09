@@ -38,7 +38,7 @@ class WwwFormUrlDecoder protected ()
     * Gets name-value pairs starting at the specified index in the current URL query string.
     * @param startIndex The index to start getting name-value pairs at.
     */
-  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValueIWwwFormUrlDecoderEntry = js.native
+  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValue = js.native
   def indexOf(value: IWwwFormUrlDecoderEntry, extra: js.Any*): winrtDashUwpLib.Anon_Index = js.native
   /**
     * Gets a value indicating whether the specified IWwwFormUrlDecoderEntry is at the specified index in the current URL query string.

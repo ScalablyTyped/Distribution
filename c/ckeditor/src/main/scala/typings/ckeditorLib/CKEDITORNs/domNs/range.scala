@@ -39,7 +39,7 @@ class range protected () extends js.Object {
   def extractContents(mergeThen: scala.Boolean): documentFragment = js.native
   def extractContents(mergeThen: scala.Boolean, cloneId: scala.Boolean): documentFragment = js.native
   def fixBlock(isStart: scala.Boolean, blockTag: java.lang.String): element = js.native
-  def getBoundaryNodes(): ckeditorLib.Anon_StartNode = js.native
+  def getBoundaryNodes(): ckeditorLib.Anon_EndNode = js.native
   def getCommonAncestor(): element = js.native
   def getCommonAncestor(includeSelf: scala.Boolean): element = js.native
   def getCommonAncestor(includeSelf: scala.Boolean, ignoreTextNode: scala.Boolean): element = js.native

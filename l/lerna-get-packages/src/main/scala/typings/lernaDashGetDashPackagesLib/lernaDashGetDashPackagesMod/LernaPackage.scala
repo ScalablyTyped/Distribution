@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait LernaPackage extends js.Object {
   var location: java.lang.String
-  var `package`: lernaDashGetDashPackagesLib.Anon_Name
+  var `package`: lernaDashGetDashPackagesLib.Anon_Config
 }
 

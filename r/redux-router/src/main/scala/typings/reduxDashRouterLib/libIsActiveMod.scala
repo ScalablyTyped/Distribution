@@ -11,11 +11,11 @@ object libIsActiveMod extends js.Object {
   def default(pathname: historyLib.historyMod.Pathname): scala.Boolean = js.native
   def default(
     pathname: historyLib.historyMod.Pathname,
-    query: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify H.Query */ js.Any
+    query: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify H.Query */ js.Any
   ): scala.Boolean = js.native
   def default(
     pathname: historyLib.historyMod.Pathname,
-    query: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify H.Query */ js.Any,
+    query: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify H.Query */ js.Any,
     indexOnly: scala.Boolean
   ): scala.Boolean = js.native
 }

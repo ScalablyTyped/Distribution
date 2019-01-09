@@ -6,9 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Address extends js.Object {
-  var address: js.UndefOr[java.lang.String] = js.undefined
-  var ipVer: js.UndefOr[scala.Double] = js.undefined
-  var netType: js.UndefOr[java.lang.String] = js.undefined
-  var port: scala.Double
+  var address: java.lang.String
+  var netType: java.lang.String
+  var sessionId: java.lang.String | scala.Double
+  var sessionVersion: scala.Double
+  var username: java.lang.String
 }
 

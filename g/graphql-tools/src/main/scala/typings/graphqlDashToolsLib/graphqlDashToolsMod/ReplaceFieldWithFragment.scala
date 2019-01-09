@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ReplaceFieldWithFragment protected ()
   extends graphqlDashToolsLib.distTransformsMod.ReplaceFieldWithFragment {
-  def this(targetSchema: graphqlLib.graphqlMod.GraphQLSchema, fragments: js.Array[graphqlDashToolsLib.Anon_Fragment]) = this()
+  def this(targetSchema: graphqlLib.graphqlMod.GraphQLSchema, fragments: js.Array[graphqlDashToolsLib.Anon_Field]) = this()
 }
 

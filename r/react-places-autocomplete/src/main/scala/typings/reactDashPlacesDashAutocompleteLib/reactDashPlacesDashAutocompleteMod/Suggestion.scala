@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Suggestion extends js.Object {
   var active: scala.Boolean
   var description: java.lang.String
-  var formattedSuggestion: reactDashPlacesDashAutocompleteLib.Anon_SecondaryText
+  var formattedSuggestion: reactDashPlacesDashAutocompleteLib.Anon_MainText
   var id: java.lang.String
   var index: scala.Double
   var matchedSubstrings: js.Array[googlemapsLib.googleNs.mapsNs.placesNs.PredictionSubstring]

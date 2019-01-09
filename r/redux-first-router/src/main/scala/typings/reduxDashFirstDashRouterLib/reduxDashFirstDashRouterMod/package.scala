@@ -19,7 +19,7 @@ package object reduxDashFirstDashRouterMod {
   type Params = js.Object
   type Payload = js.Object
   type Route[TKeys, TState] = RouteString | (RouteObject[TKeys, TState])
-  type RouteObject[TKeys, TState] = TKeys with reduxDashFirstDashRouterLib.Anon_ToPath[TState]
+  type RouteObject[TKeys, TState] = TKeys with reduxDashFirstDashRouterLib.Anon_CapitalizedWords[TState]
   type RouteString = java.lang.String
   type RouteThunk[TState] = js.Function2[
     /* dispatch */ reduxLib.reduxMod.Dispatch[js.Any], 

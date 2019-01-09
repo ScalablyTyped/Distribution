@@ -15,7 +15,7 @@ class DiffTracker protected () extends js.Object {
       /* includeInvalidPropUpdates */ scala.Boolean, 
       _
     ]) = this()
-  var ExternalAPI: sharepointLib.Anon_GetChanges = js.native
+  var ExternalAPI: sharepointLib.Anon_AnyChanges = js.native
   def Clear(): scala.Unit = js.native
   def NotifyRollbackChange(changeKey: sharepointLib.SPNs.JsGridNs.IChangeKey): scala.Unit = js.native
   def NotifySynchronizeToChange(changeKey: sharepointLib.SPNs.JsGridNs.IChangeKey): scala.Unit = js.native

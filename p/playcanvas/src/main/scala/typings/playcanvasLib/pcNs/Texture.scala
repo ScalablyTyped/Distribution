@@ -93,7 +93,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Texture protected () extends js.Object {
   def this(graphicsDevice: GraphicsDevice) = this()
-  def this(graphicsDevice: GraphicsDevice, options: playcanvasLib.Anon_Format) = this()
+  def this(graphicsDevice: GraphicsDevice, options: playcanvasLib.Anon_AddressU) = this()
   /**
     * @name pc.Texture#addressU
     * @type Number
@@ -297,7 +297,7 @@ class Texture protected () extends js.Object {
     * @param {Number} options.level The mip level to lock with 0 being the top level. Defaults to 0.
     * @param {Number} options.face If the texture is a cubemap, this is the index of the face to lock.
     */
-  def lock(options: playcanvasLib.Anon_Level): stdLib.Uint8Array | stdLib.Uint16Array | stdLib.Float32Array = js.native
+  def lock(options: playcanvasLib.Anon_Face): stdLib.Uint8Array | stdLib.Uint16Array | stdLib.Float32Array = js.native
   /**
     * @private
     * @function

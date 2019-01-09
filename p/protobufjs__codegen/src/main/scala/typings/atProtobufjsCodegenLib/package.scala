@@ -15,6 +15,6 @@ package object atProtobufjsCodegenLib {
   type Codegen = js.Function2[
     /* formatStringOrScope */ js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]], 
     /* repeated */ js.Any, 
-    js.Object | js.Function
+    (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @protobufjs/codegen.Codegen */ js.Object) | js.Function
   ]
 }

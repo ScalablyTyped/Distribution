@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IColumnMetadata
-  extends /* name */ org.scalablytyped.runtime.StringDictionary[mssqlLib.Anon_NameLength]
+  extends /* name */ org.scalablytyped.runtime.StringDictionary[mssqlLib.Anon_Index]
 

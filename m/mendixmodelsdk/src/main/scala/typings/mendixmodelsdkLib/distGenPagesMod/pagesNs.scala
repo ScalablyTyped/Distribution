@@ -119,8 +119,8 @@ object pagesNs extends js.Object {
     *
     * In version 7.7.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenPagesMod.pagesNs.IBuildingBlock because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenPagesMod.pagesNs.IBuildingBlock because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class BuildingBlock protected () extends TemplateFormBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
     /**
@@ -788,8 +788,8 @@ object pagesNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/pages relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenPagesMod.pagesNs.IFormBase because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenPagesMod.pagesNs.IFormBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   abstract class FormBase protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -1274,8 +1274,8 @@ object pagesNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/layout relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenPagesMod.pagesNs.ILayout because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenPagesMod.pagesNs.ILayout because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined layoutCall, layoutType, asLoaded, load, load, load, load */ @js.native
   class Layout protected () extends FormBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
     /**
@@ -1303,7 +1303,7 @@ object pagesNs extends js.Object {
       * In version 7.17.0: added public
       * In version 6.8.0: added optional
       */
-    var layoutCall: LayoutCall | scala.Null = js.native
+    var layoutCall: ILayoutCall | LayoutCall | scala.Null = js.native
     /**
       * In version 6.8.0: added public
       */
@@ -1336,20 +1336,20 @@ object pagesNs extends js.Object {
   /**
     * In version 7.17.0: added public
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenPagesMod.pagesNs.ILayoutCall because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenPagesMod.pagesNs.ILayoutCall because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsLayout, containerAsPage, containerAsPageTemplate, layout, layoutQualifiedName, asLoaded, load, load, load, load */ @js.native
   class LayoutCall protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     val arguments: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[LayoutCallArgument] = js.native
-    val containerAsLayout: Layout = js.native
-    val containerAsPage: Page = js.native
-    val containerAsPageTemplate: PageTemplate = js.native
+    val containerAsLayout: ILayout | Layout = js.native
+    val containerAsPage: IPage | Page = js.native
+    val containerAsPageTemplate: IPageTemplate | PageTemplate = js.native
     /**
       * In version 7.17.0: added public
       */
     var layout: ILayout | scala.Null = js.native
-    val layoutQualifiedName: java.lang.String | scala.Null = js.native
+    val layoutQualifiedName: scala.Null | java.lang.String = js.native
     @JSName("model")
     var model_LayoutCall: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
   }
@@ -1427,12 +1427,12 @@ object pagesNs extends js.Object {
   class LayoutModeType ()
     extends mendixmodelsdkLib.distSdkInternalMod.AbstractEnum
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenPagesMod.pagesNs.ILayoutParameter because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenPagesMod.pagesNs.ILayoutParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsLayout, name, asLoaded, load, load, load, load */ @js.native
   class LayoutParameter protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
-    val containerAsLayout: Layout = js.native
+    val containerAsLayout: ILayout | Layout = js.native
     @JSName("model")
     var model_LayoutParameter: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     var name: java.lang.String = js.native
@@ -1962,8 +1962,8 @@ object pagesNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/page relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenPagesMod.pagesNs.IPage because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenPagesMod.pagesNs.IPage because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined layoutCall, asLoaded, load, load, load, load */ @js.native
   class Page protected () extends FormBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
     val allowedRoles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleRole] = js.native
@@ -1972,7 +1972,7 @@ object pagesNs extends js.Object {
     /**
       * In version 7.17.0: added public
       */
-    var layoutCall: LayoutCall = js.native
+    var layoutCall: ILayoutCall | LayoutCall = js.native
     var markAsUsed: scala.Boolean = js.native
     /**
       * In version 6.7.0: introduced
@@ -2043,15 +2043,15 @@ object pagesNs extends js.Object {
     *
     * In version 7.7.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenPagesMod.pagesNs.IPageTemplate because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenPagesMod.pagesNs.IPageTemplate because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined `type`, layoutCall, asLoaded, load, load, load, load */ @js.native
   class PageTemplate protected () extends TemplateFormBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
     var `class`: java.lang.String = js.native
     /**
       * In version 7.17.0: added public
       */
-    var layoutCall: LayoutCall = js.native
+    var layoutCall: ILayoutCall | LayoutCall = js.native
     var style: java.lang.String = js.native
     /**
       * In version 7.17.0: added public
@@ -2506,12 +2506,12 @@ object pagesNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/snippet relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenPagesMod.pagesNs.ISnippet because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenPagesMod.pagesNs.ISnippet because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName, asLoaded, load, load, load, load */ @js.native
   class Snippet protected () extends FormBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
     var entity: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IEntity | scala.Null = js.native
-    val entityQualifiedName: java.lang.String | scala.Null = js.native
+    val entityQualifiedName: scala.Null | java.lang.String = js.native
     /**
       * In version 7.15.0: deleted
       */
@@ -2729,8 +2729,8 @@ object pagesNs extends js.Object {
   /**
     * In version 7.7.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenPagesMod.pagesNs.ITemplateFormBase because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenPagesMod.pagesNs.ITemplateFormBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined displayName, documentationUrl, asLoaded, load, load, load, load */ @js.native
   abstract class TemplateFormBase protected () extends FormBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
     /**

@@ -18,7 +18,7 @@ class default protected () extends PathFinding {
     * finds a direct path from point A to B.
     */
   /* CompleteClass */
-  override def calculateDirectPath(from: stormDashReactDashDiagramsLib.Anon_Y, to: stormDashReactDashDiagramsLib.Anon_Y): js.Array[js.Array[scala.Double]] = js.native
+  override def calculateDirectPath(from: stormDashReactDashDiagramsLib.Anon_X, to: stormDashReactDashDiagramsLib.Anon_X): js.Array[js.Array[scala.Double]] = js.native
   /**
     * Puts everything together: merges the paths from/to the centre of the ports,
     * with the path calculated around other elements.
@@ -26,8 +26,8 @@ class default protected () extends PathFinding {
   /* CompleteClass */
   override def calculateDynamicPath(
     routingMatrix: js.Array[js.Array[scala.Double]],
-    start: stormDashReactDashDiagramsLib.Anon_Y,
-    end: stormDashReactDashDiagramsLib.Anon_Y,
+    start: stormDashReactDashDiagramsLib.Anon_X,
+    end: stormDashReactDashDiagramsLib.Anon_X,
     pathToStart: js.Array[js.Array[scala.Double]],
     pathToEnd: js.Array[js.Array[scala.Double]]
   ): js.Any = js.native
@@ -37,6 +37,6 @@ class default protected () extends PathFinding {
     * blocked paths.
     */
   /* CompleteClass */
-  override def calculateLinkStartEndCoords(matrix: js.Array[js.Array[scala.Double]], path: js.Array[js.Array[scala.Double]]): stormDashReactDashDiagramsLib.Anon_PathToStart = js.native
+  override def calculateLinkStartEndCoords(matrix: js.Array[js.Array[scala.Double]], path: js.Array[js.Array[scala.Double]]): stormDashReactDashDiagramsLib.Anon_End = js.native
 }
 

@@ -29,15 +29,15 @@ class Service protected ()
   /**
     * A complex type that contains information about the resource record sets that you want Amazon Route 53 to create when you register an instance.
     */
-  val dnsConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_RoutingPolicy] = js.native
+  val dnsConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DnsRecords] = js.native
   /**
     * A complex type that contains settings for an optional health check. Only for Public DNS namespaces.
     */
-  val healthCheckConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ResourcePath]] = js.native
+  val healthCheckConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_FailureThreshold]] = js.native
   /**
     * A complex type that contains settings for ECS managed health checks.
     */
-  val healthCheckCustomConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_FailureThreshold]] = js.native
+  val healthCheckCustomConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_FailureThresholdNumber]] = js.native
   /**
     * The name of the service.
     */

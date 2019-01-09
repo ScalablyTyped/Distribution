@@ -78,7 +78,7 @@ class DocumentReference protected () extends js.Object {
     * @return An unsubscribe function that can be called to cancel
     * the snapshot listener.
     */
-  def onSnapshot(observer: atFirebaseFirestoreDashTypesLib.Anon_Next): js.Function0[scala.Unit] = js.native
+  def onSnapshot(observer: atFirebaseFirestoreDashTypesLib.Anon_Complete): js.Function0[scala.Unit] = js.native
   def onSnapshot(onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit]): js.Function0[scala.Unit] = js.native
   def onSnapshot(
     onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit],
@@ -89,7 +89,7 @@ class DocumentReference protected () extends js.Object {
     onError: js.Function1[/* error */ stdLib.Error, scala.Unit],
     onCompletion: js.Function0[scala.Unit]
   ): js.Function0[scala.Unit] = js.native
-  def onSnapshot(options: SnapshotListenOptions, observer: atFirebaseFirestoreDashTypesLib.Anon_NextSnapshot): js.Function0[scala.Unit] = js.native
+  def onSnapshot(options: SnapshotListenOptions, observer: atFirebaseFirestoreDashTypesLib.Anon_CompleteError): js.Function0[scala.Unit] = js.native
   def onSnapshot(options: SnapshotListenOptions, onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit]): js.Function0[scala.Unit] = js.native
   def onSnapshot(
     options: SnapshotListenOptions,

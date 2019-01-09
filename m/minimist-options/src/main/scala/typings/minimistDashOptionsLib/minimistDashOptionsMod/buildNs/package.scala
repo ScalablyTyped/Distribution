@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildNs {
-  type Options = minimistDashOptionsLib.Anon_Key
+  type Options = (org.scalablytyped.runtime.StringDictionary[Type | Option]) with minimistDashOptionsLib.minimistDashOptionsLibStrings.Options with minimistLib.minimistMod.minimistNs.Opts
   type Type = minimistDashOptionsLib.minimistDashOptionsLibStrings.string | minimistDashOptionsLib.minimistDashOptionsLibStrings.boolean
 }

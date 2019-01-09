@@ -9,7 +9,7 @@ trait EfsLocationArgs extends js.Object {
   /**
     * Configuration block containing EC2 configurations for connecting to the EFS File System.
     */
-  val ec2Config: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SubnetArnSecurityGroupArns]
+  val ec2Config: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SecurityGroupArnsSubnetArn]
   /**
     * Amazon Resource Name (ARN) of EFS File System.
     */

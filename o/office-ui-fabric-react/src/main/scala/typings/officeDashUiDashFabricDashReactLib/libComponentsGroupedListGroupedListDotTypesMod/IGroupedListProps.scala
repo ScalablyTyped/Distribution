@@ -28,7 +28,7 @@ trait IGroupedListProps
     officeDashUiDashFabricDashReactLib.libUtilitiesDragdropInterfacesMod.IDragDropHelper
   ] = js.native
   /** Event names and corresponding callbacks that will be registered to groups and rendered elements */
-  var eventsToRegister: js.UndefOr[js.Array[officeDashUiDashFabricDashReactLib.Anon_EventNameCallback]] = js.native
+  var eventsToRegister: js.UndefOr[js.Array[officeDashUiDashFabricDashReactLib.Anon_Callback]] = js.native
   /**
     * Optional function which will be called to estimate the height (in pixels) of the given group.
     *

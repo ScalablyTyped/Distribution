@@ -16,7 +16,7 @@ trait EventPropTypeInterface[TTarget, TEventKey] extends js.Object {
     * Event handlers map. Keys are standard event names (such as onClick) and values are event callbacks
     */
   var eventHandlers: org.scalablytyped.runtime.StringDictionary[
-    (victoryLib.Anon_Event[TTarget, TEventKey]) | (victoryLib.Anon_EventSyntheticEvent[TTarget, TEventKey])
+    (victoryLib.Anon_Event[TTarget, TEventKey]) | (victoryLib.Anon_EventAny[TTarget, TEventKey])
   ]
   /**
     *

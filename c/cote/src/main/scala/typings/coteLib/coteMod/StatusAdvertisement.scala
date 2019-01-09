@@ -5,6 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(coteLib.coteMod.SubscriberAdvertisement because Would inherit conflicting mutable fields List(key, name, namespace), coteLib.coteMod.PublisherAdvertisement because Would inherit conflicting mutable fields List(key, name, namespace), coteLib.coteMod.ResponderAdvertisement because Would inherit conflicting mutable fields List(key, name, namespace))*/
-trait StatusAdvertisement extends RequesterAdvertisement
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- coteLib.coteMod.SubscriberAdvertisement because var conflicts: key, name, namespace. Inlined subscribesTo- coteLib.coteMod.PublisherAdvertisement because var conflicts: key, name, namespace. Inlined broadcasts- coteLib.coteMod.ResponderAdvertisement because var conflicts: key, name, namespace. Inlined respondsTo */ trait StatusAdvertisement extends RequesterAdvertisement {
+  /**
+    * Event types that a Publisher can publish.
+    */
+  var broadcasts: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
+    * Request types that a Responder can listen to.
+    */
+  var respondsTo: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
+    * Event types that a Subscriber can listen to.
+    */
+  var subscribesTo: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+}
 

@@ -9,7 +9,7 @@ trait BrowserOptions extends js.Object {
   /**
     * Sets a consistent viewport for each page. Defaults to an 800x600 viewport. null disables the default viewport.
     */
-  var defaultViewport: js.UndefOr[puppeteerLib.Anon_IsMobile | scala.Null] = js.undefined
+  var defaultViewport: js.UndefOr[puppeteerLib.Anon_DeviceScaleFactor | scala.Null] = js.undefined
   /**
     * Whether to ignore HTTPS errors during navigation.
     * @default false

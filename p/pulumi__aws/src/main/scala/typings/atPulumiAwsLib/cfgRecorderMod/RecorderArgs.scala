@@ -13,7 +13,9 @@ trait RecorderArgs extends js.Object {
   /**
     * Recording group - see below.
     */
-  val recordingGroup: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllSupported]] = js.undefined
+  val recordingGroup: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllSupportedIncludeGlobalResourceTypes]
+  ] = js.undefined
   /**
     * Amazon Resource Name (ARN) of the IAM role.
     * used to make read or write requests to the delivery channel and to describe the AWS resources associated with the account.

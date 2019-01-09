@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because Would inherit conflicting mutable fields List(className))*/
-trait ICalloutProps
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because var conflicts: className. Inlined  */ trait ICalloutProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]
      with atBlueprintjsCoreLib.libEsmCommonPropsMod.IIntentProps {
   /**

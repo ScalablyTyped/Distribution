@@ -15,7 +15,7 @@ trait IDragDropOptions extends js.Object {
     ]
   ] = js.undefined
   var context: IDragDropContext
-  var eventMap: js.UndefOr[js.Array[officeDashUiDashFabricDashReactLib.Anon_EventNameCallback]] = js.undefined
+  var eventMap: js.UndefOr[js.Array[officeDashUiDashFabricDashReactLib.Anon_Callback]] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined
   var onDragEnd: js.UndefOr[
     js.Function2[

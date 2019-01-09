@@ -12,7 +12,7 @@ object conversionNs extends js.Object {
   @js.native
   class Conversion () extends js.Object {
     def attributeToAttribute(): scala.Unit = js.native
-    def attributeToAttribute(definition: atCkeditorCkeditor5DashEngineLib.Anon_ModelViewUpcastAlso): scala.Unit = js.native
+    def attributeToAttribute(definition: atCkeditorCkeditor5DashEngineLib.Anon_Model): scala.Unit = js.native
     def attributeToElement(definition: ConverterDefinition): scala.Unit = js.native
     def elementToElement(definition: ConverterDefinition): scala.Unit = js.native
     def `for`(groupName: java.lang.String): atCkeditorCkeditor5DashEngineLib.Anon_Add = js.native
@@ -140,9 +140,9 @@ object conversionNs extends js.Object {
   // engine/conversion/upcast-converters
   def convertText(): js.Function = js.native
   def convertToModelFragment(): js.Function = js.native
-  def upcastAttributeToAttribute(config: atCkeditorCkeditor5DashEngineLib.Anon_ModelViewConverterPriority): js.Function = js.native
-  def upcastElementToAttribute(config: atCkeditorCkeditor5DashEngineLib.Anon_Model): js.Function = js.native
-  def upcastElementToElement(config: atCkeditorCkeditor5DashEngineLib.Anon_ModelViewConverterPriorityString): js.Function = js.native
-  def upcastElementToMarker(config: atCkeditorCkeditor5DashEngineLib.Anon_ModelView): js.Function = js.native
+  def upcastAttributeToAttribute(config: atCkeditorCkeditor5DashEngineLib.Anon_ConverterPriority): js.Function = js.native
+  def upcastElementToAttribute(config: atCkeditorCkeditor5DashEngineLib.Anon_ConverterPriorityModel): js.Function = js.native
+  def upcastElementToElement(config: atCkeditorCkeditor5DashEngineLib.Anon_ConverterPriorityModelView): js.Function = js.native
+  def upcastElementToMarker(config: atCkeditorCkeditor5DashEngineLib.Anon_ConverterPriorityModelViewFunction): js.Function = js.native
 }
 

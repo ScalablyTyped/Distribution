@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("rmc-picker/lib/Picker", JSImport.Namespace)
 @js.native
 object libPickerMod extends js.Object {
-  val default: rmcDashPickerLib.Anon_Item = js.native
+  val default: rmcDashPickerLib.Anon_Context = js.native
 }
 

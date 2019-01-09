@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("polished/lib/helpers/modularScale", JSImport.Namespace)
 @js.native
 object libHelpersModularScaleMod extends js.Object {
-  val ratioNames: polishedLib.Anon_MinorSixth = js.native
+  val ratioNames: polishedLib.Anon_1067 = js.native
   def default(steps: scala.Double): java.lang.String = js.native
   def default(steps: scala.Double, base: java.lang.String): java.lang.String = js.native
   def default(

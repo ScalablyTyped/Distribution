@@ -13,7 +13,7 @@ trait SamplesResource extends js.Object {
     *
     * May return any of the following canonical error codes: - NOT_FOUND - The containing PerfSampleSeries does not exist
     */
-  def batchCreate(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintHistoryIdProjectIdQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[BatchCreatePerfSamplesResponse]
+  def batchCreate(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryId): gapiDotClientLib.gapiNs.clientNs.Request[BatchCreatePerfSamplesResponse]
   /**
     * Lists the Performance Samples of a given Sample Series - The list results are sorted by timestamps ascending - The default page size is 500 samples;
     * and maximum size allowed 5000 - The response token indicates the last returned PerfSample timestamp - When the results size exceeds the page size,
@@ -22,6 +22,6 @@ trait SamplesResource extends js.Object {
     * May return any of the following canonical error codes: - OUT_OF_RANGE - The specified request page_token is out of valid range - NOT_FOUND - The
     * containing PerfSampleSeries does not exist
     */
-  def list(request: gapiDotClientDotToolresultsLib.Anon_PageSizePrettyPrintHistoryId): gapiDotClientLib.gapiNs.clientNs.Request[ListPerfSamplesResponse]
+  def list(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKey): gapiDotClientLib.gapiNs.clientNs.Request[ListPerfSamplesResponse]
 }
 

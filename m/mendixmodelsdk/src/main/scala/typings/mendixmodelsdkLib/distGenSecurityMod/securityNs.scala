@@ -67,11 +67,6 @@ object securityNs extends js.Object {
     @JSName("model")
     val model_IModuleSecurity: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     val moduleRoles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[IModuleRole] = js.native
-    def asLoaded(): ModuleSecurity = js.native
-    def load(): js.Promise[ModuleSecurity] = js.native
-    def load(callback: js.Function1[/* element */ ModuleSecurity, scala.Unit]): scala.Unit = js.native
-    def load(callback: js.Function1[/* element */ ModuleSecurity, scala.Unit], forceRefresh: scala.Boolean): scala.Unit = js.native
-    def load(forceRefresh: scala.Boolean): js.Promise[ModuleSecurity] = js.native
   }
   
   /**
@@ -104,12 +99,12 @@ object securityNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/module-role relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleRole because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleRole because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsModuleSecurity, name, asLoaded, load, load, load, load */ @js.native
   class ModuleRole protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
-    val containerAsModuleSecurity: ModuleSecurity = js.native
+    val containerAsModuleSecurity: IModuleSecurity | ModuleSecurity = js.native
     var description: java.lang.String = js.native
     @JSName("model")
     var model_ModuleRole: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
@@ -120,15 +115,15 @@ object securityNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/module-security relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleSecurity because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleSecurity because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsModule, moduleRoles, asLoaded, load, load, load, load */ @js.native
   class ModuleSecurity protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.ModelUnit {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModule) = this()
-    val containerAsModule: mendixmodelsdkLib.distGenProjectsMod.projectsNs.Module = js.native
+    val containerAsModule: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModule | mendixmodelsdkLib.distGenProjectsMod.projectsNs.Module = js.native
     @JSName("model")
     var model_ModuleSecurity: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
-    val moduleRoles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[ModuleRole] = js.native
+    val moduleRoles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[IModuleRole | ModuleRole] = js.native
   }
   
   /**
@@ -150,8 +145,8 @@ object securityNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/project-security relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenSecurityMod.securityNs.IProjectSecurity because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenSecurityMod.securityNs.IProjectSecurity because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined userRoles, asLoaded, load, load, load, load */ @js.native
   class ProjectSecurity protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.ProjectDocument {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject) = this()
@@ -175,7 +170,7 @@ object securityNs extends js.Object {
     var securityLevel: SecurityLevel = js.native
     var signInMicroflow: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflow | scala.Null = js.native
     val signInMicroflowQualifiedName: java.lang.String | scala.Null = js.native
-    val userRoles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[UserRole] = js.native
+    val userRoles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[IUserRole | UserRole] = js.native
   }
   
   @js.native
@@ -185,13 +180,13 @@ object securityNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/user-role relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenSecurityMod.securityNs.IUserRole because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenSecurityMod.securityNs.IUserRole because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsProjectSecurity, name, asLoaded, load, load, load, load */ @js.native
   class UserRole protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var checkSecurity: scala.Boolean = js.native
-    val containerAsProjectSecurity: ProjectSecurity = js.native
+    val containerAsProjectSecurity: IProjectSecurity | ProjectSecurity = js.native
     var description: java.lang.String = js.native
     var guid: java.lang.String = js.native
     var manageAllRoles: scala.Boolean = js.native

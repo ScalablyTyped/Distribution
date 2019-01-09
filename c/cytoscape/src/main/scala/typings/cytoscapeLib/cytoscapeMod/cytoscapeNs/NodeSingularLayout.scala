@@ -11,6 +11,6 @@ trait NodeSingularLayout extends js.Object {
     * Meant for use in layout positioning to do overlap detection.
     * @param options The layout options object.
     */
-  def layoutDimensions(options: LayoutDimensionOptions): cytoscapeLib.Anon_Y
+  def layoutDimensions(options: LayoutDimensionOptions): cytoscapeLib.Anon_X
 }
 

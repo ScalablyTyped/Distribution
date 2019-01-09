@@ -22,7 +22,7 @@ class UserPool protected ()
   /**
     * The configuration for AdminCreateUser requests.
     */
-  val adminCreateUserConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_InviteMessageTemplate] = js.native
+  val adminCreateUserConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AllowAdminCreateUserOnly] = js.native
   /**
     * Attributes supported as an alias for this user pool. Possible values: phone_number, email, or preferred_username. Conflicts with `username_attributes`.
     */
@@ -62,7 +62,7 @@ class UserPool protected ()
   /**
     * A container for the AWS Lambda triggers associated with the user pool.
     */
-  val lambdaConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DefineAuthChallenge] = js.native
+  val lambdaConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_CreateAuthChallenge] = js.native
   /**
     * The date the user pool was last modified.
     */
@@ -78,11 +78,11 @@ class UserPool protected ()
   /**
     * A container for information about the user pool password policy.
     */
-  val passwordPolicy: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_RequireLowercase] = js.native
+  val passwordPolicy: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_MinimumLength] = js.native
   /**
     * A container with the schema attributes of a user pool. Maximum of 50 attributes.
     */
-  val schemas: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameMutable]]] = js.native
+  val schemas: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AttributeDataType]]] = js.native
   /**
     * A string representing the SMS authentication message.
     */
@@ -106,7 +106,7 @@ class UserPool protected ()
   /**
     * The verification message templates configuration.
     */
-  val verificationMessageTemplate: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_EmailSubject] = js.native
+  val verificationMessageTemplate: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DefaultEmailOption] = js.native
 }
 
 @JSImport("@pulumi/aws/cognito/userPool", "UserPool")

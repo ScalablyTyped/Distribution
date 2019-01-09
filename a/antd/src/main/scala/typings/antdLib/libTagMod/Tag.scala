@@ -12,7 +12,7 @@ trait Tag
   var state_Tag: antdLib.Anon_VisibleBoolean = js.native
   def animationEnd(): scala.Unit = js.native
   def getTagClassName(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): java.lang.String = js.native
-  def getTagStyle(): antdLib.Anon_BackgroundColor | antdLib.Anon_OffsetBlockEnd = js.native
+  def getTagStyle(): antdLib.Anon_BackgroundColor | antdLib.Anon_Absolute = js.native
   def handleIconClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent]): scala.Unit = js.native
   def isPresetColor(): scala.Boolean = js.native
   def isPresetColor(color: java.lang.String): scala.Boolean = js.native

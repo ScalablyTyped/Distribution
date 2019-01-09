@@ -15,6 +15,6 @@ class Profile protected ()
   /* CompleteClass */
   override var requests: js.Array[_] = js.native
   /* CompleteClass */
-  override def getStats(): webpackbarLib.Anon_Loader = js.native
+  override def getStats(): webpackbarLib.Anon_Ext = js.native
 }
 

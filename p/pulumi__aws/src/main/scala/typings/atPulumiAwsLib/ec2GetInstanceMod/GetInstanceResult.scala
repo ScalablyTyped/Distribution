@@ -25,14 +25,12 @@ trait GetInstanceResult extends js.Object {
   /**
     * The credit specification of the Instance.
     */
-  val creditSpecifications: js.Array[atPulumiAwsLib.Anon_CpuCreditsString_1059275060]
+  val creditSpecifications: js.Array[atPulumiAwsLib.Anon_CpuCredits]
   val disableApiTermination: scala.Boolean
   /**
     * The EBS block device mappings of the Instance.
     */
-  val ebsBlockDevices: js.Array[
-    atPulumiAwsLib.Anon_DeviceNameVolumeTypeEncryptedIopsVolumeIdDeleteOnTerminationVolumeSize
-  ]
+  val ebsBlockDevices: js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotId]
   /**
     * Whether the Instance is EBS optimized or not (Boolean).
     */
@@ -40,7 +38,7 @@ trait GetInstanceResult extends js.Object {
   /**
     * The ephemeral block device mappings of the Instance.
     */
-  val ephemeralBlockDevices: js.Array[atPulumiAwsLib.Anon_DeviceNameNoDeviceVirtualName]
+  val ephemeralBlockDevices: js.Array[atPulumiAwsLib.Anon_DeviceNameNoDevice]
   /**
     * The Id of the dedicated host the instance will be assigned to.
     */
@@ -104,7 +102,7 @@ trait GetInstanceResult extends js.Object {
   /**
     * The root block device mappings of the Instance
     */
-  val rootBlockDevices: js.Array[atPulumiAwsLib.Anon_VolumeTypeIopsVolumeId]
+  val rootBlockDevices: js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationIops]
   /**
     * The associated security groups.
     */

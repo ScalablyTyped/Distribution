@@ -17,6 +17,6 @@ trait LinearGradient
       /* y2 */ js.UndefOr[/* y2 */ Y2], 
       /* colorStops */ js.UndefOr[/* colorStops */ ColorStops], 
       /* globalCoord */ js.UndefOr[/* globalCoord */ GlobalCoords], 
-      zrenderLib.Anon_X
+      zrenderLib.Anon_AddColorStop
     ]
 

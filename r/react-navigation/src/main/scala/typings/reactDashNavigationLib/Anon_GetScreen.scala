@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_GetScreen extends js.Object {
-  var getScreen: js.Function0[reactDashNavigationLib.reactDashNavigationMod.NavigationComponent]
+  def getScreen(): reactDashNavigationLib.reactDashNavigationMod.NavigationComponent
 }
 

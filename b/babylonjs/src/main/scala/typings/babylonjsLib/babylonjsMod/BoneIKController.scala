@@ -20,7 +20,7 @@ class BoneIKController protected ()
     * @param options defines options to set up the controller
     */
   def this(mesh: babylonjsLib.BABYLONNs.AbstractMesh, bone: babylonjsLib.BABYLONNs.Bone) = this()
-  def this(mesh: babylonjsLib.BABYLONNs.AbstractMesh, bone: babylonjsLib.BABYLONNs.Bone, options: babylonjsLib.Anon_PoleTargetMesh) = this()
+  def this(mesh: babylonjsLib.BABYLONNs.AbstractMesh, bone: babylonjsLib.BABYLONNs.Bone, options: babylonjsLib.Anon_BendAxis) = this()
 }
 
 /**

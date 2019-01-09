@@ -48,7 +48,7 @@ trait Device extends js.Object {
     * Mock opening the app from URL. sourceApp is an optional parameter to specify source application bundle id.
     * @param url
     */
-  def openURL(url: detoxLib.Anon_Url): js.Promise[scala.Unit] = js.native
+  def openURL(url: detoxLib.Anon_SourceApp): js.Promise[scala.Unit] = js.native
   /**
     * Simulate press back button (Android Only)
     */

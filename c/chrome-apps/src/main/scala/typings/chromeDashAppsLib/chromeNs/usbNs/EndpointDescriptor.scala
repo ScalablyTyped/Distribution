@@ -50,11 +50,11 @@ trait EndpointDescriptor extends js.Object {
     *
     */
   var `type`: chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_ISOCHRONOUS, 
+    chromeDashAppsLib.Anon_BULK, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ISOCHRONOUS[keyof chrome-apps.Anon_ISOCHRONOUS] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_BULK[keyof chrome-apps.Anon_BULK] */ js.Any
     ]
   ]
   /**
@@ -63,11 +63,11 @@ trait EndpointDescriptor extends js.Object {
     */
   var usage: js.UndefOr[
     chromeDashAppsLib.chromeNs.ToStringLiteral[
-      chromeDashAppsLib.Anon_PERIODIC, 
+      chromeDashAppsLib.Anon_DATA, 
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_PERIODIC[keyof chrome-apps.Anon_PERIODIC] */ js.Any
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_DATA[keyof chrome-apps.Anon_DATA] */ js.Any
       ]
     ]
   ] = js.undefined

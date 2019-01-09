@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object distEsListMod {
-  type ListProps = reactDashVirtualizedLib.distEsGridMod.GridCoreProps with reactDashVirtualizedLib.Anon_TabIndexEstimatedRowSize
+  type ListProps = reactDashVirtualizedLib.distEsGridMod.GridCoreProps with reactDashVirtualizedLib.Anon_AutoHeight
   type ListRowProps = (stdLib.Pick[
     reactDashVirtualizedLib.distEsGridMod.GridCellProps, 
     stdLib.Exclude[java.lang.String, reactDashVirtualizedLib.reactDashVirtualizedLibStrings.rowIndex]

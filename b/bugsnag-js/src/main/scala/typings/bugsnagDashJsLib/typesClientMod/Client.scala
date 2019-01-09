@@ -15,13 +15,7 @@ class Client () extends js.Object {
     /* timestamp */ js.UndefOr[/* timestamp */ java.lang.String], 
     bugsnagDashJsLib.typesBreadcrumbMod.default
   ] = js.native
-  var BugsnagReport: org.scalablytyped.runtime.Instantiable4[
-    /* errorClass */ java.lang.String, 
-    /* errorMessage */ java.lang.String, 
-    /* stacktrace */ js.UndefOr[/* stacktrace */ js.Array[js.Any]], 
-    /* handledState */ js.UndefOr[/* handledState */ bugsnagDashJsLib.typesReportMod.IHandledState], 
-    bugsnagDashJsLib.typesReportMod.default
-  ] = js.native
+  var BugsnagReport: bugsnagDashJsLib.Anon_EnsureReport = js.native
   var BugsnagSession: org.scalablytyped.runtime.Instantiable0[bugsnagDashJsLib.typesSessionMod.default] = js.native
   var app: js.Object = js.native
   var beforeSession: js.Array[bugsnagDashJsLib.typesCommonMod.BeforeSession] = js.native

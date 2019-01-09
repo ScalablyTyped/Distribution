@@ -13,7 +13,7 @@ trait JobState extends js.Object {
   /**
     * The command of the job. Defined below.
     */
-  val command: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ScriptLocation]] = js.undefined
+  val command: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameScriptLocationInput]] = js.undefined
   /**
     * The list of connections used for this job.
     */
@@ -33,7 +33,7 @@ trait JobState extends js.Object {
   /**
     * Execution property of the job. Defined below.
     */
-  val executionProperty: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_MaxConcurrentRuns]] = js.undefined
+  val executionProperty: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_MaxConcurrentRunsInput]] = js.undefined
   /**
     * The maximum number of times to retry this job if it fails.
     */

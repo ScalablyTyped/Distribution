@@ -13,7 +13,9 @@ trait MaintenanceWindowTaskArgs extends js.Object {
   /**
     * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Documented below.
     */
-  val loggingInfo: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_S3BucketName]] = js.undefined
+  val loggingInfo: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_S3BucketNameS3BucketPrefixS3Region]
+  ] = js.undefined
   /**
     * The maximum number of targets this task can be run for in parallel.
     */
@@ -35,7 +37,7 @@ trait MaintenanceWindowTaskArgs extends js.Object {
     * The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
     */
   val targets: atPulumiPulumiLib.resourceMod.Input[
-    js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ValuesKeyInput]]
+    js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyValuesArray]]
   ]
   /**
     * The ARN of the task to execute.
@@ -45,7 +47,9 @@ trait MaintenanceWindowTaskArgs extends js.Object {
     * A structure containing information about parameters required by the particular `task_arn`. Documented below.
     */
   val taskParameters: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ValuesName]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameValuesArray]]
+    ]
   ] = js.undefined
   /**
     * The type of task being registered. The only allowed value is `RUN_COMMAND`.

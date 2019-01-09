@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait app extends js.Object {
-  var config: wepyLib.Anon_Window = js.native
+  var config: wepyLib.Anon_Pages = js.native
   @JSName("$init")
   def $init(wepy: js.Any, config: AppConfig): scala.Unit = js.native
   @JSName("$initAPI")

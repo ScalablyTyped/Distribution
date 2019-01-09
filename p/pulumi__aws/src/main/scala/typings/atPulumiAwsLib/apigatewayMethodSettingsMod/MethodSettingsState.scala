@@ -18,7 +18,7 @@ trait MethodSettingsState extends js.Object {
     * The settings block, see below.
     */
   val settings: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CacheTtlInSecondsThrottlingBurstLimit]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CacheDataEncryptedCacheTtlInSeconds]
   ] = js.undefined
   /**
     * The name of the stage

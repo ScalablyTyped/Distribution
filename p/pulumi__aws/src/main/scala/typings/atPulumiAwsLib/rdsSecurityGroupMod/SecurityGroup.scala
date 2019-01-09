@@ -29,7 +29,7 @@ class SecurityGroup protected ()
   /**
     * A list of ingress rules.
     */
-  val ingress: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_SecurityGroupIdCidr]] = js.native
+  val ingress: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Cidr]] = js.native
   /**
     * The name of the DB security group.
     */

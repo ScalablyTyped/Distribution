@@ -15,7 +15,7 @@ trait Log4js extends js.Object {
   ): scala.Unit = js.native
   def configure(config: Configuration): Log4js = js.native
   def configure(filename: java.lang.String): Log4js = js.native
-  def connectLogger(logger: Logger, options: log4jsLib.Anon_LevelFormat): js.Any = js.native
+  def connectLogger(logger: Logger, options: log4jsLib.Anon_Format): js.Any = js.native
   def getLogger(): Logger = js.native
   def getLogger(category: java.lang.String): Logger = js.native
   def shutdown(cb: js.Function1[/* error */ stdLib.Error, scala.Unit]): scala.Unit | scala.Null = js.native

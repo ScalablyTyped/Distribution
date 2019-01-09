@@ -10,16 +10,16 @@ trait Manifest
   // Optional
   var author: js.UndefOr[js.Any] = js.undefined
   var automation: js.UndefOr[js.Any] = js.undefined
-  var background: js.UndefOr[chromeLib.Anon_Persistent] = js.undefined
+  var background: js.UndefOr[chromeLib.Anon_Page] = js.undefined
   var background_page: js.UndefOr[java.lang.String] = js.undefined
   // Pick one (or none)
   var browser_action: js.UndefOr[ManifestAction] = js.undefined
-  var chrome_settings_overrides: js.UndefOr[chromeLib.Anon_Startuppages] = js.undefined
+  var chrome_settings_overrides: js.UndefOr[chromeLib.Anon_Homepage] = js.undefined
   var chrome_ui_overrides: js.UndefOr[chromeLib.Anon_Bookmarksui] = js.undefined
   var chrome_url_overrides: js.UndefOr[chromeLib.Anon_Bookmarks] = js.undefined
-  var commands: js.UndefOr[org.scalablytyped.runtime.StringDictionary[chromeLib.Anon_Suggestedkey]] = js.undefined
+  var commands: js.UndefOr[org.scalablytyped.runtime.StringDictionary[chromeLib.Anon_Description]] = js.undefined
   var content_capabilities: js.UndefOr[chromeLib.Anon_Matches] = js.undefined
-  var content_scripts: js.UndefOr[js.Array[chromeLib.Anon_Excludeglobs]] = js.undefined
+  var content_scripts: js.UndefOr[js.Array[chromeLib.Anon_Allframes]] = js.undefined
   var content_security_policy: js.UndefOr[java.lang.String] = js.undefined
   var converted_from_user_script: js.UndefOr[scala.Boolean] = js.undefined
   var copresence: js.UndefOr[js.Any] = js.undefined
@@ -30,14 +30,14 @@ trait Manifest
   var devtools_page: js.UndefOr[java.lang.String] = js.undefined
   var event_rules: js.UndefOr[js.Array[chromeLib.Anon_Actions]] = js.undefined
   var export: js.UndefOr[chromeLib.Anon_Whitelist] = js.undefined
-  var externally_connectable: js.UndefOr[chromeLib.Anon_MatchesAcceptstlschannelid] = js.undefined
+  var externally_connectable: js.UndefOr[chromeLib.Anon_Acceptstlschannelid] = js.undefined
   var file_browser_handlers: js.UndefOr[js.Array[chromeLib.Anon_Defaulttitle]] = js.undefined
-  var file_system_provider_capabilities: js.UndefOr[chromeLib.Anon_Source] = js.undefined
+  var file_system_provider_capabilities: js.UndefOr[chromeLib.Anon_Configurable] = js.undefined
   var homepage_url: js.UndefOr[java.lang.String] = js.undefined
   var icons: js.UndefOr[ManifestIcons] = js.undefined
-  var `import`: js.UndefOr[js.Array[chromeLib.Anon_Minimumversion]] = js.undefined
+  var `import`: js.UndefOr[js.Array[chromeLib.Anon_Id]] = js.undefined
   var incognito: js.UndefOr[java.lang.String] = js.undefined
-  var input_components: js.UndefOr[js.Array[chromeLib.Anon_NameDescription]] = js.undefined
+  var input_components: js.UndefOr[js.Array[chromeLib.Anon_DescriptionId]] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined
   // Required
   var manifest_version: scala.Double
@@ -49,16 +49,16 @@ trait Manifest
   var omnibox: js.UndefOr[chromeLib.Anon_Keyword] = js.undefined
   var optional_permissions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var options_page: js.UndefOr[java.lang.String] = js.undefined
-  var options_ui: js.UndefOr[chromeLib.Anon_Openintab] = js.undefined
+  var options_ui: js.UndefOr[chromeLib.Anon_Chromestyle] = js.undefined
   var page_action: js.UndefOr[ManifestAction] = js.undefined
   var permissions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var platforms: js.UndefOr[js.Array[chromeLib.Anon_Subpackagepath]] = js.undefined
+  var platforms: js.UndefOr[js.Array[chromeLib.Anon_Naclarch]] = js.undefined
   var plugins: js.UndefOr[js.Array[chromeLib.Anon_Path]] = js.undefined
   var requirements: js.UndefOr[chromeLib.Anon_3D] = js.undefined
   var sandbox: js.UndefOr[chromeLib.Anon_Contentsecuritypolicy] = js.undefined
   var short_name: js.UndefOr[java.lang.String] = js.undefined
   var signature: js.UndefOr[js.Any] = js.undefined
-  var spellcheck: js.UndefOr[chromeLib.Anon_Dictionarylanguage] = js.undefined
+  var spellcheck: js.UndefOr[chromeLib.Anon_Dictionaryformat] = js.undefined
   var storage: js.UndefOr[chromeLib.Anon_Managedschema] = js.undefined
   var system_indicator: js.UndefOr[js.Any] = js.undefined
   var tts_engine: js.UndefOr[chromeLib.Anon_Voices] = js.undefined

@@ -25,7 +25,7 @@ trait AssociationArgs extends js.Object {
   /**
     * An output location block. Output Location is documented below.
     */
-  val outputLocation: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_S3KeyPrefixS3BucketName]] = js.undefined
+  val outputLocation: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_S3BucketNameS3KeyPrefix]] = js.undefined
   /**
     * A block of arbitrary string parameters to pass to the SSM document.
     */
@@ -41,7 +41,7 @@ trait AssociationArgs extends js.Object {
     */
   val targets: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ValuesKeyInput]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyValuesArray]]
     ]
   ] = js.undefined
 }

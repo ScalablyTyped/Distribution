@@ -10,6 +10,6 @@ trait Image extends Shape {
   def error(cb: js.Function1[/* event */ stdLib.Event, scala.Unit]): this.type = js.native
   def load(): this.type = js.native
   def load(url: java.lang.String): this.type = js.native
-  def loaded(cb: js.Function1[/* info */ svgDotJsLib.Anon_Url, scala.Unit]): this.type = js.native
+  def loaded(cb: js.Function1[/* info */ svgDotJsLib.Anon_Height, scala.Unit]): this.type = js.native
 }
 

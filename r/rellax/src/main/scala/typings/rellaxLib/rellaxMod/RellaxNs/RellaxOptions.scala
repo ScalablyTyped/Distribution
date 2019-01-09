@@ -10,7 +10,7 @@ trait RellaxOptions extends js.Object {
     * Will run on every animation event
     * @param positions Object with x and y positions of the rellax element
     */
-  var callback: js.UndefOr[js.Function1[/* positions */ rellaxLib.Anon_Y, scala.Unit]] = js.undefined
+  var callback: js.UndefOr[js.Function1[/* positions */ rellaxLib.Anon_X, scala.Unit]] = js.undefined
   /**
     * Enable the ability to center parallax elements in your viewport
     */

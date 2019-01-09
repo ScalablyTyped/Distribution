@@ -10,6 +10,6 @@ trait PagespeedapiResource extends js.Object {
     * Runs PageSpeed analysis on the page at the specified URL, and returns PageSpeed scores, a list of suggestions to make that page faster, and other
     * information.
     */
-  def runpagespeed(request: gapiDotClientDotPagespeedonlineLib.Anon_Url): gapiDotClientLib.gapiNs.clientNs.Request[Result]
+  def runpagespeed(request: gapiDotClientDotPagespeedonlineLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Result]
 }
 

@@ -25,7 +25,7 @@ class Cluster protected ()
   /**
     * Nested attribute containing `certificate-authority-data` for your cluster.
     */
-  val certificateAuthority: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_Data] = js.native
+  val certificateAuthority: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DataString] = js.native
   val createdAt: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
   /**
     * The endpoint for your Kubernetes API server.
@@ -50,7 +50,7 @@ class Cluster protected ()
   /**
     * Nested argument for the VPC associated with your cluster. Amazon EKS VPC resources have specific requirements to work properly with Kubernetes. For more information, see [Cluster VPC Considerations](https://docs.aws.amazon.com/eks/latest/userguide/network_reqs.html) and [Cluster Security Group Considerations](https://docs.aws.amazon.com/eks/latest/userguide/sec-group-reqs.html) in the Amazon EKS User Guide. Configuration detailed below.
     */
-  val vpcConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_VpcIdSecurityGroupIdsSubnetIdsString] = js.native
+  val vpcConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIds] = js.native
 }
 
 @JSImport("@pulumi/aws/eks/cluster", "Cluster")

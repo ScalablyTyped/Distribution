@@ -10,8 +10,8 @@ trait ILight extends js.Object {
   var manufacturername: java.lang.String
   var modelid: java.lang.String
   var name: java.lang.String
-  var pointsymbol: js.UndefOr[nodeDashHueDashApiLib.Anon_8] = js.undefined
-  var state: nodeDashHueDashApiLib.Anon_Ct
+  var pointsymbol: js.UndefOr[nodeDashHueDashApiLib.Anon_1] = js.undefined
+  var state: nodeDashHueDashApiLib.Anon_Alert
   var swversion: java.lang.String
   var `type`: java.lang.String
   var uniqueid: java.lang.String

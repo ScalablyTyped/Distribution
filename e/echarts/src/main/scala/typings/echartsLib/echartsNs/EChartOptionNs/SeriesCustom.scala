@@ -488,7 +488,7 @@ trait SeriesCustom extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyle] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleAnonBorderColor] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -552,7 +552,7 @@ trait SeriesCustom extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
     * Whether to enable highlighting chart when
     * [legend](https://ecomfe.github.io/echarts-doc/public/en/option.html#legend)
@@ -647,7 +647,7 @@ trait SeriesCustom extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem
     */
-  var renderItem: js.UndefOr[echartsLib.Anon_ReturnbezierCurve] = js.undefined
+  var renderItem: js.UndefOr[echartsLib.Anon_Arguments] = js.undefined
   /**
     * When
     * [dataset](https://ecomfe.github.io/echarts-doc/public/en/option.html#dataset)
@@ -685,7 +685,7 @@ trait SeriesCustom extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "custom"

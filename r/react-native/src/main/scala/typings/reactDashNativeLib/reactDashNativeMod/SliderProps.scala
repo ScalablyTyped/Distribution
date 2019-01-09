@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(reactDashNativeLib.reactDashNativeMod.SliderPropsAndroid because Would inherit conflicting mutable fields List(accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityStates, accessibilityTraits, accessibilityViewIsModal, accessible, collapsable, hitSlop, importantForAccessibility, nativeID, needsOffscreenAlphaCompositing, onAccessibilityAction, onAccessibilityTap, onLayout, onMagicTap, onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, onTouchCancel, onTouchEnd, onTouchEndCapture, onTouchMove, onTouchStart, pointerEvents, removeClippedSubviews, renderToHardwareTextureAndroid, shouldRasterizeIOS, style, testID))*/
-trait SliderProps extends SliderPropsIOS {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- reactDashNativeLib.reactDashNativeMod.SliderPropsAndroid because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityStates, accessibilityTraits, accessibilityViewIsModal, accessible, collapsable, hitSlop, importantForAccessibility, nativeID, needsOffscreenAlphaCompositing, onAccessibilityAction, onAccessibilityTap, onLayout, onMagicTap, onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, onTouchCancel, onTouchEnd, onTouchEndCapture, onTouchMove, onTouchStart, pointerEvents, removeClippedSubviews, renderToHardwareTextureAndroid, shouldRasterizeIOS, style, testID. Inlined thumbTintColor */ trait SliderProps extends SliderPropsIOS {
   /**
     * If true the user won't be able to move the slider.
     * Default value is false.
@@ -42,6 +42,10 @@ trait SliderProps extends SliderPropsIOS {
     * Step value of the slider. The value should be between 0 and (maximumValue - minimumValue). Default value is 0.
     */
   var step: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * Color of the foreground switch grip.
+    */
+  var thumbTintColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Initial value of the slider. The value should be between minimumValue
     * and maximumValue, which default to 0 and 1 respectively.

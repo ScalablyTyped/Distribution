@@ -29,10 +29,10 @@ trait Stream[S, T]
   def compress(
     `this`: js.Object,
     `type`: adoneLib.adoneNs.fastNs.INs.pluginNs.compressorNs.Compressor,
-    options: adoneLib.Anon_Key
+    options: adoneLib.Anon_KeyRename
   ): this.type = js.native
-  def concat(file: adoneLib.Anon_Path): this.type = js.native
-  def concat(file: adoneLib.Anon_Path, options: adoneLib.Anon_NewLine): this.type = js.native
+  def concat(file: adoneLib.Anon_PathString): this.type = js.native
+  def concat(file: adoneLib.Anon_PathString, options: adoneLib.Anon_NewLine): this.type = js.native
   /**
     * concats all files into one
     */
@@ -68,8 +68,8 @@ trait Stream[S, T]
     * sets new filename
     */
   def rename(filename: java.lang.String): this.type = js.native
-  def rename(handle: adoneLib.Anon_Dirname): this.type = js.native
-  def rename(handler: js.Function1[/* handle */ adoneLib.Anon_DirnameBasename, scala.Unit]): this.type = js.native
+  def rename(handle: adoneLib.Anon_BasenameDirname): this.type = js.native
+  def rename(handler: js.Function1[/* handle */ adoneLib.Anon_BasenameDirnameExtname, scala.Unit]): this.type = js.native
   /**
     * Replaces contents
     */
@@ -94,9 +94,9 @@ trait Stream[S, T]
     * Rewrite occurrences of filenames which have been renamed by revisionHash
     */
   def revisionHashReplace(): this.type = js.native
-  def revisionHashReplace(options: adoneLib.Anon_ModifyUnreved): this.type = js.native
+  def revisionHashReplace(options: adoneLib.Anon_CanonicalUris): this.type = js.native
   def sourcemapsInit(): this.type = js.native
-  def sourcemapsInit(options: adoneLib.Anon_LargeFile): this.type = js.native
+  def sourcemapsInit(options: adoneLib.Anon_IdentityMap): this.type = js.native
   def sourcemapsWrite(): this.type = js.native
   /**
     *

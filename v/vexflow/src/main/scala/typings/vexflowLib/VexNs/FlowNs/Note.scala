@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Vex.Flow.Note")
 @js.native
 class Note protected () extends Tickable {
-  def this(note_struct: vexflowLib.Anon_Type) = this()
+  def this(note_struct: vexflowLib.Anon_DotsDurationType) = this()
   def addModifier(modifier: Modifier, index: scala.Double): Note = js.native
   /* CompleteClass */
   override def addModifier(mod: Modifier): Tickable = js.native
@@ -32,8 +32,8 @@ class Note protected () extends Tickable {
   override def getIntrinsicTicks(): Fraction = js.native
   def getLineForRest(): scala.Double = js.native
   def getLineNumber(): scala.Double = js.native
-  def getMetrics(): vexflowLib.Anon_NoteWidth = js.native
-  def getModifierStartXY(): vexflowLib.Anon_Y = js.native
+  def getMetrics(): vexflowLib.Anon_ExtraLeftPx = js.native
+  def getModifierStartXY(): vexflowLib.Anon_X = js.native
   def getNoteType(): java.lang.String = js.native
   def getPlayNote(): js.Any = js.native
   def getStave(): Stave = js.native

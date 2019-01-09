@@ -15,7 +15,7 @@ trait Result extends js.Object {
   @JSName("on")
   def `on_build-finished`(
     `type`: webpackDashServeLib.webpackDashServeLibStrings.`build-finished`,
-    callback: js.Function1[/* args */ webpackDashServeLib.Anon_StatsCompiler, scala.Unit]
+    callback: js.Function1[/* args */ webpackDashServeLib.Anon_CompilerStats, scala.Unit]
   ): scala.Unit = js.native
   /** A function which binds a serve event-name to a function */
   @JSName("on")
@@ -27,13 +27,13 @@ trait Result extends js.Object {
   @JSName("on")
   def `on_compiler-error`(
     `type`: webpackDashServeLib.webpackDashServeLibStrings.`compiler-error`,
-    callback: js.Function1[/* args */ webpackDashServeLib.Anon_Stats, scala.Unit]
+    callback: js.Function1[/* args */ webpackDashServeLib.Anon_CompilerStatsAny, scala.Unit]
   ): scala.Unit = js.native
   /** A function which binds a serve event-name to a function */
   @JSName("on")
   def `on_compiler-warning`(
     `type`: webpackDashServeLib.webpackDashServeLibStrings.`compiler-warning`,
-    callback: js.Function1[/* args */ webpackDashServeLib.Anon_Stats, scala.Unit]
+    callback: js.Function1[/* args */ webpackDashServeLib.Anon_CompilerStatsAny, scala.Unit]
   ): scala.Unit = js.native
   /** A function which binds a serve event-name to a function */
   @JSName("on")

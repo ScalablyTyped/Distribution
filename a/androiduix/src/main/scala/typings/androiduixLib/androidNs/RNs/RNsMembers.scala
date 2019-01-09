@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("android.R")
 @js.native
 object RNsMembers extends js.Object {
-  val id: androiduixLib.Anon_AlertTitle = js.native
+  val id: androiduixLib.Anon_Actionbarcenterlayout = js.native
 }
 

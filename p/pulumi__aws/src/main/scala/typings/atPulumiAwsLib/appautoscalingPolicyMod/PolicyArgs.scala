@@ -38,7 +38,9 @@ trait PolicyArgs extends js.Object {
   val serviceNamespace: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
   val stepAdjustments: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ScalingAdjustment]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_MetricIntervalLowerBoundMetricIntervalUpperBound]
+      ]
     ]
   ] = js.undefined
   /**
@@ -46,14 +48,14 @@ trait PolicyArgs extends js.Object {
     */
   val stepScalingPolicyConfigurations: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_StepAdjustments]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AdjustmentTypeCooldown]]
     ]
   ] = js.undefined
   /**
     * A target tracking policy, requires `policy_type = "TargetTrackingScaling"`. See supported fields below.
     */
   val targetTrackingScalingPolicyConfiguration: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DisableScaleInCustomizedMetricSpecificationScaleOutCooldown]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CustomizedMetricSpecificationDisableScaleIn]
   ] = js.undefined
 }
 

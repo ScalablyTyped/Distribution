@@ -19,7 +19,7 @@ trait MaintenanceWindowTargetState extends js.Object {
     */
   val targets: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ValuesKeyInput]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyValuesArray]]
     ]
   ] = js.undefined
   /**

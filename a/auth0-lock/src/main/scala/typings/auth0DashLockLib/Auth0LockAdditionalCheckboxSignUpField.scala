@@ -11,6 +11,6 @@ trait Auth0LockAdditionalCheckboxSignUpField extends js.Object {
   var placeholder: java.lang.String
   var prefill: auth0DashLockLib.auth0DashLockLibStrings.`true` | auth0DashLockLib.auth0DashLockLibStrings.`false`
   var `type`: js.UndefOr[auth0DashLockLib.auth0DashLockLibStrings.checkbox] = js.undefined
-  var validator: js.UndefOr[js.Function1[/* input */ java.lang.String, Anon_Valid]] = js.undefined
+  var validator: js.UndefOr[js.Function1[/* input */ java.lang.String, Anon_Hint]] = js.undefined
 }
 

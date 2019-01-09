@@ -24,7 +24,7 @@ trait Task extends js.Object {
   /** Type of the resource. This is always "tasks#task". */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /** Collection of links. This collection is read-only. */
-  var links: js.UndefOr[js.Array[gapiDotClientDotTasksLib.Anon_Type]] = js.undefined
+  var links: js.UndefOr[js.Array[gapiDotClientDotTasksLib.Anon_Description]] = js.undefined
   /** Notes describing the task. Optional. */
   var notes: js.UndefOr[java.lang.String] = js.undefined
   /**

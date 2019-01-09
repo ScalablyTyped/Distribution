@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial<recharts.recharts.PresentationAttributes<number, number>>) */ trait ScatterProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof recharts.recharts.PresentationAttributes<number, number> ]:? recharts.recharts.PresentationAttributes<number, number>[P]} */ trait ScatterProps
   extends EventAttributes
      with Animatable {
   var activeIndex: js.UndefOr[scala.Double] = js.undefined

@@ -31,7 +31,7 @@ trait DistributionState extends js.Object {
   val cacheBehaviors: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ForwardedValuesFieldLevelEncryptionIdDefaultTtl]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
       ]
     ]
   ] = js.undefined
@@ -51,7 +51,7 @@ trait DistributionState extends js.Object {
   val customErrorResponses: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ErrorCodeErrorCachingMinTtl]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ErrorCachingMinTtlErrorCode]
       ]
     ]
   ] = js.undefined
@@ -60,9 +60,7 @@ trait DistributionState extends js.Object {
     * one).
     */
   val defaultCacheBehavior: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      atPulumiAwsLib.Anon_ForwardedValuesFieldLevelEncryptionIdDefaultTtlAllowedMethods
-    ]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl]
   ] = js.undefined
   /**
     * The object that you want CloudFront to
@@ -115,7 +113,7 @@ trait DistributionState extends js.Object {
     * to your distribution (maximum one).
     */
   val loggingConfig: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PrefixBucketIncludeCookiesInput]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketIncludeCookiesPrefix]
   ] = js.undefined
   /**
     * An ordered list of cache behaviors
@@ -125,7 +123,7 @@ trait DistributionState extends js.Object {
   val orderedCacheBehaviors: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ForwardedValuesFieldLevelEncryptionIdDefaultTtl]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
       ]
     ]
   ] = js.undefined
@@ -136,7 +134,7 @@ trait DistributionState extends js.Object {
   val origins: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_S3OriginConfigDomainName]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CustomHeadersCustomOriginConfig]
       ]
     ]
   ] = js.undefined
@@ -149,7 +147,9 @@ trait DistributionState extends js.Object {
     * The restriction
     * configuration for this distribution (maximum one).
     */
-  val restrictions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_GeoRestrictionInput]] = js.undefined
+  val restrictions: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_GeoRestrictionAnonLocationsRestrictionType]
+  ] = js.undefined
   /**
     * Disables the distribution instead of
     * deleting it when destroying the resource through Terraform. If this is set,
@@ -174,7 +174,7 @@ trait DistributionState extends js.Object {
     * one).
     */
   val viewerCertificate: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SslSupportMethodIamCertificateId]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AcmCertificateArnCloudfrontDefaultCertificate]
   ] = js.undefined
   /**
     * If you're using AWS WAF to filter CloudFront

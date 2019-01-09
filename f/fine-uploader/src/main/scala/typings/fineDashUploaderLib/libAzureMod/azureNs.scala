@@ -122,9 +122,13 @@ object azureNs extends js.Object {
     var endpoint: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(fineDashUploaderLib.libAzureMod.azureNs.AzureCoreOptions because Would inherit conflicting mutable fields List(autoUpload, blobs, button, callbacks, camera, chunking, cors, debug, deleteFile, disableCancelForFormUploads, extraButtons, form, formatFileName, maxConnections, messages, multiple, paste, request, resume, scaling, session, text, validation, warnBeforeUnload, workarounds))*/
-  trait AzureUIOptions
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - fineDashUploaderLib.libAzureMod.azureNs.AzureCoreOptions because var conflicts: autoUpload, blobs, button, callbacks, camera, chunking, cors, debug, deleteFile, disableCancelForFormUploads, extraButtons, form, formatFileName, maxConnections, messages, multiple, paste, request, resume, scaling, session, text, validation, warnBeforeUnload, workarounds. Inlined blobProperties, signature, uploadSuccess */ trait AzureUIOptions
     extends fineDashUploaderLib.fineDashUploaderMod.UIOptions {
+    /**
+      * blobProperties
+      */
+    var blobProperties: js.UndefOr[AzureBlobPropertyOptions] = js.undefined
     /**
       * chunking options
       */
@@ -145,6 +149,14 @@ object azureNs extends js.Object {
       */
     @JSName("request")
     var request_AzureUIOptions: js.UndefOr[AzureRequestOptions] = js.undefined
+    /**
+      * AzureSignatureOptions
+      */
+    var signature: js.UndefOr[AzureSignatureOptions] = js.undefined
+    /**
+      * AzureUploadSuccessOptions
+      */
+    var uploadSuccess: js.UndefOr[AzureUploadSuccessOptions] = js.undefined
   }
   
   trait AzureUploadSuccessOptions extends js.Object {

@@ -11,8 +11,8 @@ object datatypesNs extends js.Object {
   /**
     * In version 7.9.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IBinaryType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IBinaryType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class BinaryType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -20,8 +20,8 @@ object datatypesNs extends js.Object {
   /**
     * In version 7.9.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IBooleanType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IBooleanType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class BooleanType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -31,21 +31,21 @@ object datatypesNs extends js.Object {
     *
     * In version 7.9.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IDataType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IDataType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsAppServiceAction, containerAsAppServiceActionParameter, containerAsConstant, containerAsDataSetParameter, containerAsDocumentTemplateParameter, containerAsImportMapping, containerAsMicroflowBase, containerAsMicroflowParameterBase, asLoaded, load, load, load, load */ @js.native
   abstract class DataType protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
-    val containerAsAppServiceAction: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
-    val containerAsAppServiceActionParameter: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
-    val containerAsConstant: mendixmodelsdkLib.distGenConstantsMod.constantsNs.Constant = js.native
+    val containerAsAppServiceAction: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction | mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IAppServiceAction = js.native
+    val containerAsAppServiceActionParameter: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter | mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.IAppServiceActionParameter = js.native
+    val containerAsConstant: mendixmodelsdkLib.distGenConstantsMod.constantsNs.Constant | mendixmodelsdkLib.distGenConstantsMod.constantsNs.IConstant = js.native
     val containerAsCreateVariableAction: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.CreateVariableAction = js.native
     val containerAsDataSetColumn: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetColumn = js.native
-    val containerAsDataSetParameter: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
-    val containerAsDocumentTemplateParameter: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplateParameter = js.native
-    val containerAsImportMapping: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportMapping = js.native
-    val containerAsMicroflowBase: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowBase = js.native
-    val containerAsMicroflowParameterBase: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterBase = js.native
+    val containerAsDataSetParameter: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter | mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.IDataSetParameter = js.native
+    val containerAsDocumentTemplateParameter: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplateParameter | mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.IDocumentTemplateParameter = js.native
+    val containerAsImportMapping: mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.IImportMapping | mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportMapping = js.native
+    val containerAsMicroflowBase: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflowBase | mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowBase = js.native
+    val containerAsMicroflowParameterBase: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflowParameterBase | mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterBase = js.native
     val containerAsMicroflowParameterObject: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.MicroflowParameterObject = js.native
     val containerAsPublishedOperation: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedOperation = js.native
     val containerAsPublishedParameter: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedParameter = js.native
@@ -59,8 +59,8 @@ object datatypesNs extends js.Object {
   /**
     * In version 7.9.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IDateTimeType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IDateTimeType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class DateTimeType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -68,8 +68,8 @@ object datatypesNs extends js.Object {
   /**
     * In version 7.9.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IDecimalType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IDecimalType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class DecimalType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -77,8 +77,8 @@ object datatypesNs extends js.Object {
   /**
     * In version 7.9.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IEmptyType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IEmptyType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class EmptyType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -86,8 +86,8 @@ object datatypesNs extends js.Object {
   /**
     * In version 7.9.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IEntityType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IEntityType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined entity, entityQualifiedName, asLoaded, load, load, load, load */ @js.native
   abstract class EntityType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var entity: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IEntity = js.native
@@ -97,8 +97,8 @@ object datatypesNs extends js.Object {
   /**
     * In version 7.9.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IEnumerationType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IEnumerationType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined enumeration, enumerationQualifiedName, asLoaded, load, load, load, load */ @js.native
   class EnumerationType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var enumeration: mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumeration = js.native
@@ -108,8 +108,8 @@ object datatypesNs extends js.Object {
   /**
     * In version 7.9.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IFloatType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IFloatType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class FloatType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -236,8 +236,8 @@ object datatypesNs extends js.Object {
   /**
     * In version 7.9.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IIntegerType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IIntegerType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class IntegerType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -245,8 +245,8 @@ object datatypesNs extends js.Object {
   /**
     * In version 7.9.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IListType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IListType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class ListType protected () extends EntityType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -254,8 +254,8 @@ object datatypesNs extends js.Object {
   /**
     * In version 7.9.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IObjectType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IObjectType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class ObjectType protected () extends EntityType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -263,8 +263,8 @@ object datatypesNs extends js.Object {
   /**
     * In version 7.9.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IStringType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IStringType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class StringType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -272,8 +272,8 @@ object datatypesNs extends js.Object {
   /**
     * In version 7.9.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IUnknownType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IUnknownType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class UnknownType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -281,8 +281,8 @@ object datatypesNs extends js.Object {
   /**
     * In version 7.9.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IVoidType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IVoidType because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class VoidType protected () extends DataType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }

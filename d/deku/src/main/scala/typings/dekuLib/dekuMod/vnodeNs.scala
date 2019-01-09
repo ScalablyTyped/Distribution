@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("deku", "vnode")
 @js.native
 object vnodeNs extends js.Object {
-  var create: dekuLib.Anon_Type = js.native
+  var create: dekuLib.Anon_Attributes = js.native
   def createEmptyElement(): dekuLib.dekuMod.dekuNs.VirtualElement = js.native
   // function isValidAttribute<A>(value: A): boolean;
   /**

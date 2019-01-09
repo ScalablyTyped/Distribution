@@ -83,7 +83,7 @@ class Heatmap[V /* <: java.lang.String */, X /* <: java.lang.String */, Y /* <: 
     * // get the value at x=10, y=10
     * heatmapInstance.getValueAt({ x: 10, y: 10 }); // returns 100
     */
-  def getValueAt(point: heatmapDotJsLib.Anon_Y): scala.Double = js.native
+  def getValueAt(point: heatmapDotJsLib.Anon_X): scala.Double = js.native
   /**
     * Repaints the whole heatmap canvas.
     */

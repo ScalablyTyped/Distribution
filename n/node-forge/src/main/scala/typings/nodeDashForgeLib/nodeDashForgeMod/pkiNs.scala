@@ -24,14 +24,14 @@ object pkiNs extends js.Object {
   @js.native
   trait Certificate extends js.Object {
     var extensions: js.Array[_] = js.native
-    var issuer: nodeDashForgeLib.Anon_Hash = js.native
+    var issuer: nodeDashForgeLib.Anon_AddField = js.native
     var md: js.Any = js.native
     var privateKey: PrivateKey = js.native
     var publicKey: PublicKey = js.native
     var serialNumber: java.lang.String = js.native
     var siginfo: js.Any = js.native
     var signature: js.Any = js.native
-    var subject: nodeDashForgeLib.Anon_Hash = js.native
+    var subject: nodeDashForgeLib.Anon_AddField = js.native
     var validity: nodeDashForgeLib.Anon_NotAfter = js.native
     var version: scala.Double = js.native
     /**
@@ -151,11 +151,11 @@ object pkiNs extends js.Object {
   @JSName("ed25519")
   @js.native
   object ed25519Ns extends js.Object {
-    def generateKeyPair(): nodeDashForgeLib.Anon_PublicKey = js.native
-    def generateKeyPair(options: nodeDashForgeLib.Anon_Seed): nodeDashForgeLib.Anon_PublicKey = js.native
-    def publicKeyFromPrivateKey(options: nodeDashForgeLib.Anon_PrivateKey): NativeBuffer = js.native
+    def generateKeyPair(): nodeDashForgeLib.Anon_PrivateKey = js.native
+    def generateKeyPair(options: nodeDashForgeLib.Anon_Seed): nodeDashForgeLib.Anon_PrivateKey = js.native
+    def publicKeyFromPrivateKey(options: nodeDashForgeLib.Anon_PrivateKeyNativeBuffer): NativeBuffer = js.native
     def sign(options: nodeDashForgeLib.Anon_Encoding): NativeBuffer = js.native
-    def verify(options: nodeDashForgeLib.Anon_PublicKeyEncoding): scala.Boolean = js.native
+    def verify(options: nodeDashForgeLib.Anon_EncodingMessage): scala.Boolean = js.native
     @JSName("constants")
     @js.native
     object constantsNs extends js.Object {

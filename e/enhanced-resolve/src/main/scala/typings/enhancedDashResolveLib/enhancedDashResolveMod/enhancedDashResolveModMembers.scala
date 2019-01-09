@@ -30,7 +30,7 @@ object enhancedDashResolveModMembers extends js.Object {
     request: java.lang.String,
     callback: enhancedDashResolveLib.libCommonDashTypesMod.LoggingCallbackWrapper
   ): scala.Unit = js.native
-  def create(options: enhancedDashResolveLib.enhancedDashResolveMod.ResolveNs.ResolverFactoryNs.ResolverOption): enhancedDashResolveLib.Anon_PathRequest = js.native
+  def create(options: enhancedDashResolveLib.enhancedDashResolveMod.ResolveNs.ResolverFactoryNs.ResolverOption): enhancedDashResolveLib.Anon_Callback = js.native
   def loader(
     context: enhancedDashResolveLib.libCommonDashTypesMod.ResolveContext,
     path: java.lang.String,

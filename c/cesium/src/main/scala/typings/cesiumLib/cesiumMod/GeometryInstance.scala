@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GeometryInstance protected ()
   extends cesiumLib.cesiumMod.CesiumNs.GeometryInstance {
-  def this(options: cesiumLib.Anon_Attributes) = this()
+  def this(options: cesiumLib.Anon_AttributesGeometry) = this()
   /* CompleteClass */
   override var attributes: js.Any = js.native
   /* CompleteClass */

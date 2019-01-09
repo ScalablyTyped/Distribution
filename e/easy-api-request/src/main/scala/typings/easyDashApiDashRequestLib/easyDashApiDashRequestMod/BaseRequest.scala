@@ -14,7 +14,7 @@ trait BaseRequest extends js.Object {
   var req: expressLib.expressMod.eNs.Request = js.native
   def _do(args: stdLib.IArguments): js.Any = js.native
   def _do(args: stdLib.IArguments, `type`: java.lang.String): js.Any = js.native
-  def _parseOptions(args: stdLib.IArguments, `type`: java.lang.String): easyDashApiDashRequestLib.Anon_Opts = js.native
+  def _parseOptions(args: stdLib.IArguments, `type`: java.lang.String): easyDashApiDashRequestLib.Anon_Cb = js.native
   def _request(): js.Any = js.native
   def _request(opts: js.Any): js.Any = js.native
   def _request(opts: js.Any, cb: js.Any): js.Any = js.native

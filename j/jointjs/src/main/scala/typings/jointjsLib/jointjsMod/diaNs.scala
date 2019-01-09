@@ -33,7 +33,7 @@ object diaNs extends js.Object {
     def findView(paper: Paper): CellView = js.native
     def getAncestors(): js.Array[Cell] = js.native
     def getEmbeddedCells(): js.Array[Cell] = js.native
-    def getEmbeddedCells(opt: jointjsLib.Anon_DeepBreadthFirst): js.Array[Cell] = js.native
+    def getEmbeddedCells(opt: jointjsLib.Anon_BreadthFirst): js.Array[Cell] = js.native
     def getParentCell(): Cell | scala.Null = js.native
     def getTransitions(): js.Array[java.lang.String] = js.native
     def isElement(): scala.Boolean = js.native
@@ -163,7 +163,7 @@ object diaNs extends js.Object {
     ): this.type = js.native
     def angle(): scala.Double = js.native
     def fitEmbeds(): this.type = js.native
-    def fitEmbeds(opt: jointjsLib.Anon_Deep): this.type = js.native
+    def fitEmbeds(opt: jointjsLib.Anon_DeepPadding): this.type = js.native
     def getBBox(): jointjsLib.jointjsMod.gNs.Rect = js.native
     def getBBox(opt: jointjsLib.jointjsMod.diaNs.CellNs.EmbeddableOptions): jointjsLib.jointjsMod.gNs.Rect = js.native
     def getPort(id: java.lang.String): jointjsLib.jointjsMod.diaNs.ElementNs.Port = js.native
@@ -182,9 +182,9 @@ object diaNs extends js.Object {
       opt: jointjsLib.jointjsMod.diaNs.CellNs.Options
     ): Element = js.native
     def position(): jointjsLib.jointjsMod.gNs.Point = js.native
-    def position(opt: jointjsLib.Anon_KeyParentRelative): jointjsLib.jointjsMod.gNs.Point = js.native
+    def position(opt: jointjsLib.Anon_Key): jointjsLib.jointjsMod.gNs.Point = js.native
     def position(x: scala.Double, y: scala.Double): this.type = js.native
-    def position(x: scala.Double, y: scala.Double, opt: jointjsLib.Anon_KeyParentRelativeDeep): this.type = js.native
+    def position(x: scala.Double, y: scala.Double, opt: jointjsLib.Anon_Deep): this.type = js.native
     def removePort(port: java.lang.String): this.type = js.native
     def removePort(port: java.lang.String, opt: jointjsLib.jointjsMod.diaNs.CellNs.Options): this.type = js.native
     def removePort(port: jointjsLib.jointjsMod.diaNs.ElementNs.Port): this.type = js.native
@@ -197,7 +197,7 @@ object diaNs extends js.Object {
       opt: jointjsLib.jointjsMod.diaNs.CellNs.Options
     ): this.type = js.native
     def resize(width: scala.Double, height: scala.Double): this.type = js.native
-    def resize(width: scala.Double, height: scala.Double, opt: jointjsLib.Anon_KeyDirection): this.type = js.native
+    def resize(width: scala.Double, height: scala.Double, opt: jointjsLib.Anon_Direction): this.type = js.native
     def rotate(deg: scala.Double): this.type = js.native
     def rotate(deg: scala.Double, absolute: scala.Boolean): this.type = js.native
     def rotate(deg: scala.Double, absolute: scala.Boolean, origin: Point): this.type = js.native
@@ -218,7 +218,7 @@ object diaNs extends js.Object {
     def size(): Size = js.native
     def size(width: scala.Double): this.type = js.native
     def size(width: scala.Double, height: scala.Double): this.type = js.native
-    def size(width: scala.Double, height: scala.Double, opt: jointjsLib.Anon_KeyDirection): this.type = js.native
+    def size(width: scala.Double, height: scala.Double, opt: jointjsLib.Anon_Direction): this.type = js.native
     def translate(tx: scala.Double): this.type = js.native
     def translate(tx: scala.Double, ty: scala.Double): this.type = js.native
     def translate(tx: scala.Double, ty: scala.Double, opt: jointjsLib.jointjsMod.diaNs.ElementNs.TranslateOptions): this.type = js.native
@@ -252,7 +252,7 @@ object diaNs extends js.Object {
   class Graph ()
     extends backboneLib.backboneMod.Model {
     def this(attributes: js.Any) = this()
-    def this(attributes: js.Any, opt: jointjsLib.Anon_CellNamespace) = this()
+    def this(attributes: js.Any, opt: jointjsLib.Anon_CellModel) = this()
     def addCell(cell: Cell): this.type = js.native
     def addCell(cell: Cell, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def addCell(cell: js.Array[Cell]): this.type = js.native
@@ -287,7 +287,7 @@ object diaNs extends js.Object {
     def findModelsInArea(rect: BBox): js.Array[Element] = js.native
     def findModelsInArea(rect: BBox, opt: jointjsLib.Anon_Strict): js.Array[Element] = js.native
     def findModelsUnderElement(element: Element): js.Array[Element] = js.native
-    def findModelsUnderElement(element: Element, opt: jointjsLib.Anon_SearchBy): js.Array[Element] = js.native
+    def findModelsUnderElement(element: Element, opt: jointjsLib.Anon_Bbox): js.Array[Element] = js.native
     def fromGraphLib(glGraph: js.Any): this.type = js.native
     def fromGraphLib(glGraph: js.Any, opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
     def fromJSON(json: js.Any): this.type = js.native
@@ -512,7 +512,7 @@ object diaNs extends js.Object {
   
   @js.native
   class LinkView () extends CellViewGeneric[Link] {
-    var options: jointjsLib.Anon_DoubleLinkToolsOffset = js.native
+    var options: jointjsLib.Anon_DoubleLinkTools = js.native
     def addLabel(coordinates: Point): scala.Double = js.native
     def addLabel(coordinates: Point, opt: jointjsLib.jointjsMod.diaNs.LinkViewNs.LabelOptions): scala.Double = js.native
     def addLabel(x: scala.Double, y: scala.Double): scala.Double = js.native
@@ -672,7 +672,7 @@ object diaNs extends js.Object {
     /* protected */ def mouseout(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
     /* protected */ def mouseover(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
     /* protected */ def mousewheel(evt: jqueryLib.JQueryNs.Event): scala.Unit = js.native
-    /* protected */ def onCellAdded(cell: Cell, graph: Graph, opt: jointjsLib.Anon_Position): scala.Unit = js.native
+    /* protected */ def onCellAdded(cell: Cell, graph: Graph, opt: jointjsLib.Anon_Async): scala.Unit = js.native
     /* protected */ def onCellHighlight(cellView: CellView, magnetEl: stdLib.SVGElement): scala.Unit = js.native
     /* protected */ def onCellHighlight(cellView: CellView, magnetEl: stdLib.SVGElement, opt: jointjsLib.Anon_Highlighter): scala.Unit = js.native
     /* protected */ def onCellUnhighlight(cellView: CellView, magnetEl: stdLib.SVGElement): scala.Unit = js.native
@@ -724,7 +724,7 @@ object diaNs extends js.Object {
     def translate(tx: scala.Double, ty: scala.Double): this.type = js.native
     def update(): this.type = js.native
     /* protected */ def updateBackgroundColor(color: java.lang.String): scala.Unit = js.native
-    /* protected */ def updateBackgroundImage(opt: jointjsLib.Anon_PositionSize): scala.Unit = js.native
+    /* protected */ def updateBackgroundImage(opt: jointjsLib.Anon_Position): scala.Unit = js.native
   }
   
   trait SidesJSON extends js.Object {
@@ -852,7 +852,7 @@ object diaNs extends js.Object {
       extends jointjsLib.jointjsMod.diaNs.CellNs.GenericAttributes[T] {
       var angle: js.UndefOr[scala.Double] = js.undefined
       var markup: js.UndefOr[java.lang.String | jointjsLib.jointjsMod.diaNs.MarkupJSON] = js.undefined
-      var ports: js.UndefOr[jointjsLib.Anon_Items] = js.undefined
+      var ports: js.UndefOr[jointjsLib.Anon_Groups] = js.undefined
       var position: js.UndefOr[jointjsLib.jointjsMod.diaNs.Point] = js.undefined
       var size: js.UndefOr[jointjsLib.jointjsMod.diaNs.Size] = js.undefined
     }
@@ -884,7 +884,7 @@ object diaNs extends js.Object {
       var transition: js.UndefOr[jointjsLib.jointjsMod.diaNs.CellNs.TransitionOptions] = js.undefined
     }
     
-    type PositionType = java.lang.String | jointjsLib.Anon_Name
+    type PositionType = java.lang.String | jointjsLib.Anon_Args
   }
   
   @JSName("ElementView")
@@ -975,7 +975,7 @@ object diaNs extends js.Object {
       var args: js.UndefOr[jointjsLib.jointjsMod.diaNs.LinkViewNs.LabelOptions] = js.undefined
       var distance: js.UndefOr[scala.Double] = js.undefined
        // optional for default labels
-      var offset: js.UndefOr[scala.Double | jointjsLib.Anon_YX] = js.undefined
+      var offset: js.UndefOr[scala.Double | jointjsLib.Anon_X] = js.undefined
     }
     
     trait LinkSelectors
@@ -1055,7 +1055,7 @@ object diaNs extends js.Object {
     
     trait GradientOptions extends js.Object {
       var id: js.UndefOr[java.lang.String] = js.undefined
-      var stops: js.Array[jointjsLib.Anon_OpacityColorOffset]
+      var stops: js.Array[jointjsLib.Anon_Color]
       var `type`: jointjsLib.jointjsLibStrings.linearGradient | jointjsLib.jointjsLibStrings.radialGradient
     }
     

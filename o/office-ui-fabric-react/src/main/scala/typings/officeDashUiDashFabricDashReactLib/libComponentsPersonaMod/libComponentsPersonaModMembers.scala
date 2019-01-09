@@ -12,7 +12,7 @@ object libComponentsPersonaModMembers extends js.Object {
   def PersonaCoin(props: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaCoinProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def presenceBoolean(
     presence: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaPresence
-  ): officeDashUiDashFabricDashReactLib.Anon_IsBusy = js.native
-  def sizeBoolean(size: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize): officeDashUiDashFabricDashReactLib.Anon_IsSize48 = js.native
+  ): officeDashUiDashFabricDashReactLib.Anon_IsAvailable = js.native
+  def sizeBoolean(size: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize): officeDashUiDashFabricDashReactLib.Anon_IsSize10 = js.native
 }
 

@@ -40,6 +40,6 @@ trait Node extends js.Object {
   /**
     * Return a JSON representation of this node.
     */
-  def toJSON(): stylusLib.Anon_LinenoColumn
+  def toJSON(): stylusLib.Anon_Column
 }
 

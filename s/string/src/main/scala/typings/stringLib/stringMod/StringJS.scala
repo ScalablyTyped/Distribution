@@ -74,7 +74,7 @@ trait StringJS extends js.Object {
   def toCSV(): StringJS = js.native
   def toCSV(delimiter: java.lang.String): StringJS = js.native
   def toCSV(delimiter: java.lang.String, qualifier: java.lang.String): StringJS = js.native
-  def toCSV(options: stringLib.Anon_Qualifier): StringJS = js.native
+  def toCSV(options: stringLib.Anon_Delimiter): StringJS = js.native
   def toFloat(): scala.Double = js.native
   def toFloat(precision: scala.Double): scala.Double = js.native
   def toInt(): scala.Double = js.native

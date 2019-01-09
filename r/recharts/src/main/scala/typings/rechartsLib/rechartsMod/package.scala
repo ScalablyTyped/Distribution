@@ -10,17 +10,17 @@ package object rechartsMod {
   type AreaChartProps = CategoricalChartWrapper[LayoutType] with EventAttributes
   type AxisDomain = java.lang.String | scala.Double | ContentRenderer[js.Any] | rechartsLib.rechartsLibStrings.auto | rechartsLib.rechartsLibStrings.dataMin | rechartsLib.rechartsLibStrings.dataMax
   type AxisInterval = scala.Double | rechartsLib.rechartsLibStrings.preserveStart | rechartsLib.rechartsLibStrings.preserveEnd | rechartsLib.rechartsLibStrings.preserveStartEnd
-  type BBoxUpdateCallback = js.Function1[/* box */ rechartsLib.Anon_Height, scala.Unit]
+  type BBoxUpdateCallback = js.Function1[/* box */ rechartsLib.Anon_HeightWidth, scala.Unit]
   type BarChartProps = CategoricalChartWrapper[LayoutType] with EventAttributes
   type CellProps = stdLib.Partial[PresentationAttributes[scala.Double, scala.Double]]
   type ComposedChartProps = CategoricalChartWrapper[LayoutType] with EventAttributes
   type ContentRenderer[P] = js.Function1[/* props */ P, reactLib.reactMod.ReactNs.ReactNode]
-  type CoordinatesGenerator = js.Function1[/* arg */ rechartsLib.Anon_YAxis, js.Array[scala.Double]]
+  type CoordinatesGenerator = js.Function1[/* arg */ rechartsLib.Anon_Height, js.Array[scala.Double]]
   type DataKey = java.lang.String | scala.Double | (js.Function1[
     /* dataObject */ js.Any, 
     scala.Double | (js.Tuple2[scala.Double, scala.Double]) | scala.Null
   ])
-  type DataPointFormatter = js.Function2[/* entry */ js.Any, /* dataKey */ DataKey, rechartsLib.Anon_Y]
+  type DataPointFormatter = js.Function2[/* entry */ js.Any, /* dataKey */ DataKey, rechartsLib.Anon_ErrorVal]
   type IconType = rechartsLib.rechartsLibStrings.plainline | rechartsLib.rechartsLibStrings.line | rechartsLib.rechartsLibStrings.square | rechartsLib.rechartsLibStrings.rect | rechartsLib.rechartsLibStrings.circle | rechartsLib.rechartsLibStrings.cross | rechartsLib.rechartsLibStrings.diamond | rechartsLib.rechartsLibStrings.star | rechartsLib.rechartsLibStrings.triangle | rechartsLib.rechartsLibStrings.wye
   type IfOverflowType = rechartsLib.rechartsLibStrings.hidden | rechartsLib.rechartsLibStrings.visible | rechartsLib.rechartsLibStrings.discard | rechartsLib.rechartsLibStrings.extendDomain
   type ItemSorter[T] = js.Function2[/* a */ T, /* b */ T, scala.Double]

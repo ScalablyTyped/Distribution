@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait VictoryThemeDefinition extends js.Object {
   var area: js.UndefOr[VictoryStyleInterface] = js.undefined
-  var axis: js.UndefOr[victoryLib.Anon_AxisLabel] = js.undefined
+  var axis: js.UndefOr[victoryLib.Anon_Axis] = js.undefined
   var bar: js.UndefOr[VictoryStyleInterface] = js.undefined
   var candlestick: js.UndefOr[VictoryStyleInterface with victoryLib.Anon_Props] = js.undefined
   var line: js.UndefOr[VictoryStyleInterface] = js.undefined

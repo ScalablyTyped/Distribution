@@ -1,0 +1,18 @@
+package typings
+package firefoxDashWebextDashBrowserLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_AddClientId extends js.Object {
+  /** True if the ping should contain the client id. */
+  var addClientId: js.UndefOr[scala.Boolean] = js.undefined
+  /** True if the ping should contain the environment data. */
+  var addEnvironment: js.UndefOr[scala.Boolean] = js.undefined
+  /** Set to override the environment data. */
+  var overrideEnvironment: js.UndefOr[js.Any] = js.undefined
+  /** If true, send the ping using the PingSender. */
+  var usePingSender: js.UndefOr[scala.Boolean] = js.undefined
+}
+

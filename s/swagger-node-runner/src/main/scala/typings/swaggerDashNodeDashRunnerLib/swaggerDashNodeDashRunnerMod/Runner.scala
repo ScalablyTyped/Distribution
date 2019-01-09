@@ -24,7 +24,7 @@ trait Runner
     * References to Swagger Tools Midleware (from _swagger-tools_ module)     *
     * @see {@link https://github.com/apigee-127/swagger-tools|Github Source}
     */
-  var swaggerTools: swaggerDashNodeDashRunnerLib.Anon_SwaggerUi = js.native
+  var swaggerTools: swaggerDashNodeDashRunnerLib.Anon_ApiDeclarations = js.native
   /** Create new Connect middleware */
   def connectMiddleware(): ConnectMiddleware = js.native
   def defaultErrorHandler(): js.Any = js.native

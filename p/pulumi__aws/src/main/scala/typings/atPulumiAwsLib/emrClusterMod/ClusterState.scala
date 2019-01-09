@@ -24,7 +24,7 @@ trait ClusterState extends js.Object {
     * List of bootstrap actions that will be run before Hadoop is started on the cluster nodes. Defined below
     */
   val bootstrapActions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameArgs]]]
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ArgsName]]]
   ] = js.undefined
   val clusterState: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   /**
@@ -55,14 +55,16 @@ trait ClusterState extends js.Object {
     * Attributes for the EC2 instances running the job flow. Defined below
     */
   val ec2Attributes: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EmrManagedSlaveSecurityGroup]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AdditionalMasterSecurityGroupsAdditionalSlaveSecurityGroups]
   ] = js.undefined
   /**
     * A list of `instance_group` objects for each instance group in the cluster. Exactly one of `master_instance_type` and `instance_group` must be specified. If `instance_group` is set, then it must contain a configuration block for at least the `MASTER` instance group type (as well as any additional instance groups). Defined below
     */
   val instanceGroups: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameEbsConfigs]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AutoscalingPolicyBidPrice]
+      ]
     ]
   ] = js.undefined
   /**
@@ -72,7 +74,9 @@ trait ClusterState extends js.Object {
   /**
     * Kerberos configuration for the cluster. Defined below
     */
-  val kerberosAttributes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AdDomainJoinUser]] = js.undefined
+  val kerberosAttributes: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AdDomainJoinPasswordAdDomainJoinUser]
+  ] = js.undefined
   /**
     * S3 bucket to write the log files of the job flow. If a value is not provided, logs are not created
     */
@@ -109,7 +113,11 @@ trait ClusterState extends js.Object {
     * List of steps to run when creating the cluster. Defined below. It is highly recommended to utilize the [lifecycle configuration block](https://www.terraform.io/docs/configuration/resources.html) with `ignore_changes` if other steps are being managed outside of Terraform.
     */
   val steps: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HadoopJarStep]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ActionOnFailureHadoopJarStep]
+      ]
+    ]
   ] = js.undefined
   /**
     * list of tags to apply to the EMR Cluster

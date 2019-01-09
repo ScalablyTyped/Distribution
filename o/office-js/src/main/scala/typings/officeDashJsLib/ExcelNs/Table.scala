@@ -208,7 +208,7 @@ class Table ()
   def load(): Table = js.native
   def load(option: java.lang.String): Table = js.native
   def load(option: js.Array[java.lang.String]): Table = js.native
-  def load(option: officeDashJsLib.Anon_Select): Table = js.native
+  def load(option: officeDashJsLib.Anon_Expand): Table = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.TableLoadOptions): Table = js.native
   /**
     *

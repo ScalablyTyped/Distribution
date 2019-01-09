@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("inversify-restify-utils", JSImport.Namespace)
 @js.native
 object inversifyDashRestifyDashUtilsModMembers extends js.Object {
-  val TYPE: inversifyDashRestifyDashUtilsLib.Anon_ControllerSymbol = js.native
+  val TYPE: inversifyDashRestifyDashUtilsLib.Anon_Controller = js.native
   def Controller(
     path: java.lang.String,
     middleware: inversifyDashRestifyDashUtilsLib.dtsInterfacesMod.interfacesNs.Middleware*

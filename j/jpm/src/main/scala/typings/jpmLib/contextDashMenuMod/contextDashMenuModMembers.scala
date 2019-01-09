@@ -13,8 +13,8 @@ object contextDashMenuModMembers extends js.Object {
   var SelectionContext: SelectionContext = js.native
   var SelectorContext: SelectorContext = js.native
   var URLContext: URLContext = js.native
-  def Item(options: jpmLib.Anon_ContentScriptContentScriptFileImage): Item = js.native
-  def Menu(options: jpmLib.Anon_ContentScriptContentScriptFile): Menu = js.native
+  def Item(options: jpmLib.Anon_AccessKey): Item = js.native
+  def Menu(options: jpmLib.Anon_ContentScript): Menu = js.native
   def Separator(): Separator = js.native
 }
 

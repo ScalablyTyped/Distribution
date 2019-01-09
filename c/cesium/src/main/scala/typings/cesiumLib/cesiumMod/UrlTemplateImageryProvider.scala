@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class UrlTemplateImageryProvider protected ()
   extends cesiumLib.cesiumMod.CesiumNs.UrlTemplateImageryProvider {
-  def this(options: cesiumLib.Anon_TileWidthUrl) = this()
+  def this(options: cesiumLib.Anon_CreditEllipsoidEnablePickFeatures) = this()
   /* CompleteClass */
   override var credit: cesiumLib.cesiumMod.CesiumNs.Credit = js.native
   /* CompleteClass */

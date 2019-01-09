@@ -168,7 +168,7 @@ class Emitter protected () extends js.Object {
   /* private */ def getImportDecls(fileName: js.Any): js.Any = js.native
   /* private */ def getIndentString(): js.Any = js.native
   /* private */ def getModuleDeclToVerifyChildNameCollision(moduleDecl: js.Any, changeNameIfAnyDeclarationInContext: js.Any): js.Any = js.native
-  def getModuleImportAndDependencyList(sourceUnit: SourceUnit): typescriptDashServicesLib.Anon_ImportList = js.native
+  def getModuleImportAndDependencyList(sourceUnit: SourceUnit): typescriptDashServicesLib.Anon_DependencyList = js.native
   /* private */ def getModuleName(moduleDecl: js.Any): js.Any = js.native
   /* private */ def getModuleName(moduleDecl: js.Any, changeNameIfAnyDeclarationInContext: js.Any): js.Any = js.native
   def getOutputFiles(): js.Array[OutputFile] = js.native

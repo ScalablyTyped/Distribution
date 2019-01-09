@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.chartNs.IHighlight because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses), extjsLib.ExtNs.chartNs.ILabel because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait ISeries
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.chartNs.IHighlight because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined highlight, highlightCfg, highlightItem, unHighlightItem- extjsLib.ExtNs.chartNs.ILabel because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined label, onCreateLabel, onPlaceLabel */ trait ISeries
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Method] Iterate over each of the records for this series
   		* @param fn Function The function to execute for each record.
@@ -33,6 +33,8 @@ trait ISeries
   var hideAll: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Config Option] (Boolean/Object) */
   var highlight: js.UndefOr[js.Any] = js.undefined
+  /** [Property] (Object) */
+  var highlightCfg: js.UndefOr[js.Any] = js.undefined
   /** [Method] Highlight the given series item
   		* @param item Object Info about the item; same format as returned by #getItemForPoint.
   		*/
@@ -41,6 +43,8 @@ trait ISeries
   		* @param index Object
   		*/
   var isExcluded: js.UndefOr[js.Function1[/* index */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  /** [Config Option] (Object) */
+  var label: js.UndefOr[js.Any] = js.undefined
   /** [Method] Called each time a new label is created
   		* @param storeItem Ext.data.Model The element of the store that is related to the sprite.
   		* @param item Object The item related to the sprite. An item is an object containing the position of the shape used to describe the visualization and also pointing to the actual shape (circle, rectangle, path, etc).

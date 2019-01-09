@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "vso-node-api"
-version := "6.5.0-53af39"
-scalaVersion := "2.12.7"
+version := "6.5.0-b1aa6a"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "nock" % "v9.3.3-dt-20180628Z-1c584c",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",
-  "org.scalablytyped" %%% "tunnel" % "0.0-dt-20180214Z-6d0578",
-  "org.scalablytyped" %%% "typed-rest-client" % "1.0.11-52283d",
-  "org.scalablytyped" %%% "underscore" % "1.8-dt-20180808Z-bb2884")
+  "org.scalablytyped" %%% "nock" % "v9.3.3-dt-20180628Z-54c20a",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2aa425",
+  "org.scalablytyped" %%% "std" % "3.2.2-f3cc98",
+  "org.scalablytyped" %%% "tunnel" % "0.0-dt-20180214Z-7738c4",
+  "org.scalablytyped" %%% "typed-rest-client" % "1.0.11-ee8fb6",
+  "org.scalablytyped" %%% "underscore" % "1.8-dt-20180808Z-20fef5")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

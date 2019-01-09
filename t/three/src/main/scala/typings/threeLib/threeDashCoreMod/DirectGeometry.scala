@@ -12,7 +12,7 @@ class DirectGeometry () extends EventDispatcher {
   var boundingSphere: Sphere = js.native
   var colors: js.Array[Color] = js.native
   var colorsNeedUpdate: scala.Boolean = js.native
-  var groups: js.Array[threeLib.Anon_Start] = js.native
+  var groups: js.Array[threeLib.Anon_MaterialIndex] = js.native
   var groupsNeedUpdate: scala.Boolean = js.native
   var id: scala.Double = js.native
   var indices: js.Array[scala.Double] = js.native

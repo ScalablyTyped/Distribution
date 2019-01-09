@@ -12,7 +12,7 @@ trait Options extends js.Object {
   var mapHeaders: js.UndefOr[
     js.Function1[/* args */ neatDashCsvLib.Anon_Header, java.lang.String | scala.Null]
   ] = js.undefined
-  var mapValues: js.UndefOr[js.Function1[/* args */ neatDashCsvLib.Anon_HeaderValue, _]] = js.undefined
+  var mapValues: js.UndefOr[js.Function1[/* args */ neatDashCsvLib.Anon_HeaderIndex, _]] = js.undefined
   var maxRowBytes: js.UndefOr[scala.Double] = js.undefined
   var newline: js.UndefOr[java.lang.String] = js.undefined
   var quote: js.UndefOr[java.lang.String] = js.undefined

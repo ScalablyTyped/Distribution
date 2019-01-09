@@ -15,7 +15,7 @@ trait OptionsScaling extends js.Object {
       scala.Double
     ]
   ] = js.undefined
-  var label: js.UndefOr[scala.Boolean | visLib.Anon_MaxVisible] = js.undefined
+  var label: js.UndefOr[scala.Boolean | visLib.Anon_DrawThreshold] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
   var min: js.UndefOr[scala.Double] = js.undefined
 }

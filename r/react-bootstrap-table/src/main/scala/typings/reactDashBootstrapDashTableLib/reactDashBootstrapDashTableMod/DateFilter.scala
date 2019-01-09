@@ -13,7 +13,7 @@ trait DateFilter extends js.Object {
   /**
   	 * Default value for the filter.
   	 */
-  var defaultValue: js.UndefOr[reactDashBootstrapDashTableLib.Anon_DateComparator] = js.undefined
+  var defaultValue: js.UndefOr[reactDashBootstrapDashTableLib.Anon_ComparatorDate] = js.undefined
   /**
   	 * Delay time in milliseconds after the last key press prior to applying the filter. Defaults to 500ms.
   	 */
@@ -21,7 +21,7 @@ trait DateFilter extends js.Object {
   /**
   	 * CSS Style to use for the select filter.
   	 */
-  var style: js.UndefOr[reactDashBootstrapDashTableLib.Anon_Date] = js.undefined
+  var style: js.UndefOr[reactDashBootstrapDashTableLib.Anon_ComparatorDateCSSProperties] = js.undefined
   /**
   	 * Filter type must be 'DateFilter'
   	 */

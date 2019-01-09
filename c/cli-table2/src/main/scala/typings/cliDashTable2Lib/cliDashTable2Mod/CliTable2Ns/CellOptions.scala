@@ -11,7 +11,7 @@ trait CellOptions extends js.Object {
   var content: CellValue
   var hAlign: js.UndefOr[HorizontalAlignment] = js.undefined
   var rowSpan: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[cliDashTable2Lib.Anon_Paddingright] = js.undefined
+  var style: js.UndefOr[cliDashTable2Lib.Anon_BorderHead] = js.undefined
   var truncate: js.UndefOr[java.lang.String] = js.undefined
   var vAlign: js.UndefOr[VerticalAlignment] = js.undefined
 }

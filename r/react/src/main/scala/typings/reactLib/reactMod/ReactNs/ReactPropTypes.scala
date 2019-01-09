@@ -10,25 +10,25 @@ trait ReactPropTypes extends js.Object {
   var any: propDashTypesLib.propDashTypesMod.Requireable[_] = js.native
   var array: propDashTypesLib.propDashTypesMod.Requireable[js.Array[_]] = js.native
   @JSName("arrayOf")
-  var arrayOf_Original: reactLib.Anon_TypeT = js.native
+  var arrayOf_Original: reactLib.Anon_Type = js.native
   var bool: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean] = js.native
   var element: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactElementLike] = js.native
   @JSName("exact")
-  var exact_Original: reactLib.Anon_Type = js.native
+  var exact_Original: reactLib.Anon_TypeAnyInferPropsP = js.native
   var func: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
   @JSName("instanceOf")
-  var instanceOf_Original: reactLib.Anon_ExpectedClass = js.native
+  var instanceOf_Original: reactLib.Anon_Args = js.native
   var node: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike] = js.native
   var number: propDashTypesLib.propDashTypesMod.Requireable[scala.Double] = js.native
   var `object`: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
   @JSName("objectOf")
-  var objectOf_Original: reactLib.Anon_TypeTValidator = js.native
+  var objectOf_Original: reactLib.Anon_TypeAny = js.native
   @JSName("oneOfType")
-  var oneOfType_Original: reactLib.Anon_TypesT = js.native
+  var oneOfType_Original: reactLib.Anon_TypesAny = js.native
   @JSName("oneOf")
   var oneOf_Original: reactLib.Anon_Types = js.native
   @JSName("shape")
-  var shape_Original: reactLib.Anon_TypeP = js.native
+  var shape_Original: reactLib.Anon_TypeAnyInferProps = js.native
   var string: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String] = js.native
   def arrayOf[T](`type`: propDashTypesLib.propDashTypesMod.Validator[T]): propDashTypesLib.propDashTypesMod.Requireable[js.Array[T]] = js.native
   def exact[P /* <: propDashTypesLib.propDashTypesMod.ValidationMap[_] */](`type`: P): propDashTypesLib.propDashTypesMod.Requireable[stdLib.Required[propDashTypesLib.propDashTypesMod.InferProps[P]]] = js.native

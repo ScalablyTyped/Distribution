@@ -75,7 +75,7 @@ trait ChartDataCommon extends js.Object {
     * A custom formatter function which returns the text to be displayed as indexLabel on dataPoints.
     * @param e event object
     */
-  var indexLabelFormatter: js.UndefOr[js.Function1[/* e */ canvasjsLib.Anon_DataSeriesTotal, java.lang.String]] = js.undefined
+  var indexLabelFormatter: js.UndefOr[js.Function1[/* e */ canvasjsLib.Anon_ChartDataPoint, java.lang.String]] = js.undefined
   /**
     * Sets the color of line connecting index labels with their dataPoint. It is only applicable for pie and doughnut chart when indexLabelPlacment is outside.
     * The value of indexLineColor can be a "HTML Color Name" or "Hex Code".

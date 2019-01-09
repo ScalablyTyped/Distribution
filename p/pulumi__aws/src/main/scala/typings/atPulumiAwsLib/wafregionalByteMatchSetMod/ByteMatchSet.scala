@@ -22,11 +22,11 @@ class ByteMatchSet protected ()
   /**
     * Settings for the ByteMatchSet, such as the bytes (typically a string that corresponds with ASCII characters) that you want AWS WAF to search for in web requests. ByteMatchTuple documented below.
     */
-  val byteMatchTuples: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_PositionalConstraint]]] = js.native
+  val byteMatchTuples: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatch]]] = js.native
   /**
     * **Deprecated**, use `byte_match_tuples` instead.
     */
-  val byte_match_tuple: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_PositionalConstraint]]] = js.native
+  val byte_match_tuple: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatch]]] = js.native
   /**
     * The name or description of the ByteMatchSet.
     */

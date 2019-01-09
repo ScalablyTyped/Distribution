@@ -11,7 +11,7 @@ object mobxModMembers extends js.Object {
   @JSName("$mobx")
   val $mobx: js.Symbol = js.native
   var action: mobxLib.libApiActionMod.IActionFactory = js.native
-  val comparer: mobxLib.Anon_Default = js.native
+  val comparer: mobxLib.Anon_A = js.native
   var computed: mobxLib.libApiComputedMod.IComputed = js.native
   var isBoxedObservable: js.Function1[
     /* x */ js.Any, 
@@ -51,7 +51,7 @@ object mobxModMembers extends js.Object {
     view: js.Function1[/* r */ mobxLib.libCoreReactionMod.IReactionPublic, _],
     opts: mobxLib.libApiAutorunMod.IAutorunOptions
   ): mobxLib.libCoreReactionMod.IReactionDisposer = js.native
-  def configure(options: mobxLib.Anon_ReactionScheduler): scala.Unit = js.native
+  def configure(options: mobxLib.Anon_Always): scala.Unit = js.native
   def createAtom(name: java.lang.String): mobxLib.libCoreAtomMod.IAtom = js.native
   def createAtom(name: java.lang.String, onBecomeObservedHandler: js.Function0[scala.Unit]): mobxLib.libCoreAtomMod.IAtom = js.native
   def createAtom(

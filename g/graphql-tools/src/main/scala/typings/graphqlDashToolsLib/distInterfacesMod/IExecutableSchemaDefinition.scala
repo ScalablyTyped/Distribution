@@ -14,14 +14,7 @@ trait IExecutableSchemaDefinition[TContext] extends js.Object {
   var parseOptions: js.UndefOr[GraphQLParseOptions] = js.undefined
   var resolverValidationOptions: js.UndefOr[IResolverValidationOptions] = js.undefined
   var resolvers: js.UndefOr[(IResolvers[_, TContext]) | (js.Array[IResolvers[_, TContext]])] = js.undefined
-  var schemaDirectives: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[
-      org.scalablytyped.runtime.Instantiable1[
-        /* config */ graphqlDashToolsLib.Anon_Name, 
-        graphqlDashToolsLib.distSchemaVisitorMod.SchemaDirectiveVisitor
-      ]
-    ]
-  ] = js.undefined
+  var schemaDirectives: js.UndefOr[org.scalablytyped.runtime.StringDictionary[graphqlDashToolsLib.Anon_Config]] = js.undefined
   var typeDefs: ITypeDefinitions
 }
 

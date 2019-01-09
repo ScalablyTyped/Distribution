@@ -22,7 +22,7 @@ trait CollStats extends js.Object {
   /**
     * Size of specific indexes in bytes.
     */
-  var indexSizes: mongodbLib.Anon_Index
+  var indexSizes: mongodbLib.Anon_Id
   /**
     * Size of the most recently created extent in bytes.
     */

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait FlagsResource extends js.Object {
   /** List all available database flags for Google Cloud SQL instances. */
-  def list(request: gapiDotClientDotSqladminLib.Anon_DatabaseVersion): gapiDotClientLib.gapiNs.clientNs.Request[FlagsListResponse]
+  def list(request: gapiDotClientDotSqladminLib.Anon_AltDatabaseVersion): gapiDotClientLib.gapiNs.clientNs.Request[FlagsListResponse]
 }
 

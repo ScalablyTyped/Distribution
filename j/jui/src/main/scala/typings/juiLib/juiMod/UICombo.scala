@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UICombo extends js.Object {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: juiLib.Anon_Flex): this.type = js.native
+  def apply(selector: js.Any, options: juiLib.Anon_Bottom): this.type = js.native
   def fold(): scala.Unit = js.native
   /**
     * Gets the data of the button currently selected

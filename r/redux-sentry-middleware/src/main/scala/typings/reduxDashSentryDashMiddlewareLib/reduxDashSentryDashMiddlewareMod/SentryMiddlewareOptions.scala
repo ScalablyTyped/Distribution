@@ -16,7 +16,7 @@ trait SentryMiddlewareOptions[T] extends js.Object {
   var getUserContext: js.UndefOr[
     js.Function1[
       /* state */ T, 
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Sentry.User */ _
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Sentry.User */ _
     ]
   ] = js.undefined
   var stateTransformer: js.UndefOr[js.Function1[/* state */ T, T]] = js.undefined

@@ -40,7 +40,7 @@ object displaySourceNsMembers extends js.Object {
     * **'unknown_error'**
     * Unspecified error.
     */
-  val ErrorType: chromeDashAppsLib.Anon_UNKNOWNERROR = js.native
+  val ErrorType: chromeDashAppsLib.Anon_CAPABILITIESNEGOTIATIONERROR = js.native
   /**
     * @enum
     * @description
@@ -53,7 +53,7 @@ object displaySourceNsMembers extends js.Object {
     * **'disconnected'**
     * Disconnected from this Display Source
     */
-  val SinkState: chromeDashAppsLib.Anon_DISCONNECTED = js.native
+  val SinkState: chromeDashAppsLib.Anon_CONNECTED = js.native
   val getAvailableSinks: js.Function = js.native
   val onSessionErrorOccured: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Any] = js.native
   val onSessionTerminated: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Any] = js.native

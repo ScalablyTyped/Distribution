@@ -23,6 +23,6 @@ import scala.scalajs.js.annotation._
   *
   */
 class Limiter () extends Decorator {
-  def this(hasChildMaxLoop: behavior3Lib.Anon_MaxLoop) = this()
+  def this(hasChildMaxLoop: behavior3Lib.Anon_ChildMaxLoop) = this()
 }
 

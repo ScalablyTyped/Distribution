@@ -11,7 +11,7 @@ trait OperationsResource extends js.Object {
     * method to poll the operation result at intervals as recommended by the API
     * service.
     */
-  def get(request: gapiDotClientDotCloudfunctionsLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def get(request: gapiDotClientDotCloudfunctionsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Lists operations that match the specified filter in the request. If the
     * server doesn't support this method, it returns `UNIMPLEMENTED`.
@@ -24,6 +24,6 @@ trait OperationsResource extends js.Object {
     * collection id, however overriding users must ensure the name binding
     * is the parent resource, without the operations collection id.
     */
-  def list(request: gapiDotClientDotCloudfunctionsLib.Anon_NameAccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
+  def list(request: gapiDotClientDotCloudfunctionsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
 }
 

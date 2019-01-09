@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DebugModelMatrixPrimitive ()
   extends cesiumLib.cesiumMod.CesiumNs.DebugModelMatrixPrimitive {
-  def this(options: cesiumLib.Anon_ShowModelMatrix) = this()
+  def this(options: cesiumLib.Anon_Id) = this()
   /* CompleteClass */
   override var id: js.Any = js.native
   /* CompleteClass */

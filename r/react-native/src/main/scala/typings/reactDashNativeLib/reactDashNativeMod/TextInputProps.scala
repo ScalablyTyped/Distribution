@@ -173,7 +173,7 @@ trait TextInputProps
     * The start and end of the text input's selection. Set start and end to
     * the same value to position the cursor.
     */
-  var selection: js.UndefOr[reactDashNativeLib.Anon_Start] = js.undefined
+  var selection: js.UndefOr[reactDashNativeLib.Anon_EndStart] = js.undefined
   /**
     * The highlight (and cursor on ios) color of the text input
     */

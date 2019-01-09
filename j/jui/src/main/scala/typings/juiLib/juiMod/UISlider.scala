@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UISlider extends js.Object {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: juiLib.Anon_FormatStep): this.type = js.native
+  def apply(selector: js.Any, options: juiLib.Anon_Double): this.type = js.native
   /**
     * get FromHandle's value
     *

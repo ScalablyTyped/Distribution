@@ -14,8 +14,8 @@ trait AccountsResource extends js.Object {
   var reports: ReportsResource
   var urlchannels: UrlchannelsResource
   /** Get information about the selected Ad Exchange account. */
-  def get(request: gapiDotClientDotAdexchangesellerLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Account]
+  def get(request: gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAltFields): gapiDotClientLib.gapiNs.clientNs.Request[Account]
   /** List all accounts available to this Ad Exchange account. */
-  def list(request: gapiDotClientDotAdexchangesellerLib.Anon_MaxResults): gapiDotClientLib.gapiNs.clientNs.Request[Accounts]
+  def list(request: gapiDotClientDotAdexchangesellerLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Accounts]
 }
 

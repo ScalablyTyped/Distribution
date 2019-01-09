@@ -18,11 +18,11 @@ trait ReactInfiniteCalendarProps extends js.Object {
   var display: js.UndefOr[
     reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarLibStrings.days | reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarLibStrings.years
   ] = js.undefined
-  var displayOptions: js.UndefOr[reactDashInfiniteDashCalendarLib.Anon_ShouldHeaderAnimate] = js.undefined
+  var displayOptions: js.UndefOr[reactDashInfiniteDashCalendarLib.Anon_HideYearsOnSelect] = js.undefined
   var height: js.UndefOr[
     scala.Double | reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarLibStrings.auto
   ] = js.undefined
-  var locale: js.UndefOr[reactDashInfiniteDashCalendarLib.Anon_Weekdays] = js.undefined
+  var locale: js.UndefOr[reactDashInfiniteDashCalendarLib.Anon_0] = js.undefined
   var max: js.UndefOr[DateType] = js.undefined
   var maxDate: js.UndefOr[DateType] = js.undefined
   var min: js.UndefOr[DateType] = js.undefined
@@ -32,10 +32,10 @@ trait ReactInfiniteCalendarProps extends js.Object {
   var onSelect: js.UndefOr[DateSelectFunction | RangedSelectFunction] = js.undefined
   var rowHeight: js.UndefOr[scala.Double] = js.undefined
   var selected: js.UndefOr[
-    DateType | reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarLibNumbers.`false` | reactDashInfiniteDashCalendarLib.Anon_Start
+    DateType | reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarLibNumbers.`false` | reactDashInfiniteDashCalendarLib.Anon_End
   ] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
-  var theme: js.UndefOr[reactDashInfiniteDashCalendarLib.Anon_TextColor] = js.undefined
+  var theme: js.UndefOr[reactDashInfiniteDashCalendarLib.Anon_AccentColor] = js.undefined
   var width: js.UndefOr[
     scala.Double | reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarLibStrings.auto | reactDashInfiniteDashCalendarLib.reactDashInfiniteDashCalendarLibStrings.`100%`
   ] = js.undefined

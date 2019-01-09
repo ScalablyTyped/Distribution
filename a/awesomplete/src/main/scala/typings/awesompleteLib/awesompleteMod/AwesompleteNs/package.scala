@@ -11,5 +11,5 @@ package object AwesompleteNs {
     /* right */ scala.Double | js.Array[js.Any], 
     scala.Double
   ]
-  type Suggestion = java.lang.String | awesompleteLib.Anon_ValueLabel | (js.Tuple2[java.lang.String, java.lang.String])
+  type Suggestion = java.lang.String | awesompleteLib.Anon_Label | (js.Tuple2[java.lang.String, java.lang.String])
 }

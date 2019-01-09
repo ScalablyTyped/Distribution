@@ -13,7 +13,7 @@ trait Anon_Accesstoken extends js.Object {
   var access_token: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Unique numerical account ID for the buyer of which the client buyer
-    * is a customer; the sponsor buyer to create a client for. (required)
+    * is a customer; the sponsor buyer to update a client for. (required)
     */
   var accountId: java.lang.String
   /** Data format for response. */
@@ -22,6 +22,8 @@ trait Anon_Accesstoken extends js.Object {
   var bearer_token: js.UndefOr[java.lang.String] = js.undefined
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
+  /** Unique numerical account ID of the client to update. (required) */
+  var clientAccountId: java.lang.String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */

@@ -19,7 +19,7 @@ object maquetteModMembers extends js.Object {
     /* projectorOptions */ js.UndefOr[maquetteLib.distInterfacesMod.ProjectorOptions], 
     maquetteLib.distInterfacesMod.Projector
   ] = js.native
-  var dom: maquetteLib.Anon_Replace = js.native
+  var dom: maquetteLib.Anon_Append = js.native
   def h(selector: java.lang.String): maquetteLib.distInterfacesMod.VNode = js.native
   def h(selector: java.lang.String, children: js.Array[maquetteLib.distInterfacesMod.VNodeChild]): maquetteLib.distInterfacesMod.VNode = js.native
   def h(selector: java.lang.String, properties: maquetteLib.distInterfacesMod.VNodeProperties): maquetteLib.distInterfacesMod.VNode = js.native

@@ -46,7 +46,7 @@ package object reactDashTableMod {
     js.Array[js.Any]
   ]
   type FilterRender = js.Function1[
-    /* params */ reactDashTableLib.Anon_Filter, 
+    /* params */ reactDashTableLib.Anon_Column, 
     reactLib.reactMod.ReactNs.ReactElement[js.Any]
   ]
   type FilteredChangeFunction = js.Function3[

@@ -15,6 +15,6 @@ trait CustomChannel extends js.Object {
   /** Name of this custom channel. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** The targeting information of this custom channel, if activated. */
-  var targetingInfo: js.UndefOr[gapiDotClientDotAdsenseLib.Anon_Location] = js.undefined
+  var targetingInfo: js.UndefOr[gapiDotClientDotAdsenseLib.Anon_AdsAppearOn] = js.undefined
 }
 

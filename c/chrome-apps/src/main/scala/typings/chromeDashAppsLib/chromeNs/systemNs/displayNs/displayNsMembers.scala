@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.system.display")
 @js.native
 object displayNsMembers extends js.Object {
-  val DisplayPosition: chromeDashAppsLib.Anon_RIGHT = js.native
-  val MirrorMode: chromeDashAppsLib.Anon_OFF = js.native
+  val DisplayPosition: chromeDashAppsLib.Anon_BOTTOM = js.native
+  val MirrorMode: chromeDashAppsLib.Anon_MIXED = js.native
   /**
     * Fired when anything changes to the display configuration.
     */

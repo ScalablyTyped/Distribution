@@ -15,7 +15,7 @@ trait FieldSchema_InForm_Lookup extends FieldSchema_InForm {
   /** Number of choices. Appears only for Lookup field. */
   var ChoiceCount: scala.Double
   /** List of choices for this field. */
-  var Choices: js.Array[sharepointLib.Anon_LookupValue]
+  var Choices: js.Array[sharepointLib.Anon_LookupId]
   /** Indicates if the field is a dependent lookup */
   var DependentLookup: scala.Boolean
   var LookupListId: java.lang.String

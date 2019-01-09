@@ -22,6 +22,6 @@ import scala.scalajs.js.annotation._
   *
   */
 class MaxTime () extends Decorator {
-  def this(hasMaxTimeChild: behavior3Lib.Anon_MaxTime) = this()
+  def this(hasMaxTimeChild: behavior3Lib.Anon_ChildMaxTime) = this()
 }
 

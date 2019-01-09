@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class VRTheWorldTerrainProvider protected ()
   extends cesiumLib.cesiumMod.CesiumNs.VRTheWorldTerrainProvider {
-  def this(options: cesiumLib.Anon_UrlProxy) = this()
+  def this(options: cesiumLib.Anon_CreditEllipsoidProxy) = this()
 }
 

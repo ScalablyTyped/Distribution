@@ -367,9 +367,9 @@ object winstonNs extends js.Object {
       
       trait Config extends js.Object {
         var allColors: winstonLib.libWinstonConfigMod.winstonNs.AbstractConfigSetColors
-        var cli: winstonLib.Anon_LevelsColorsCliConfigSetLevels
-        var npm: winstonLib.Anon_LevelsColors
-        var syslog: winstonLib.Anon_Levels
+        var cli: winstonLib.Anon_Colors
+        var npm: winstonLib.Anon_ColorsLevels
+        var syslog: winstonLib.Anon_ColorsLevelsSyslogConfigSetColors
         def addColors(colors: winstonLib.libWinstonConfigMod.winstonNs.AbstractConfigSetColors): scala.Unit
       }
       
@@ -524,7 +524,7 @@ object winstonNs extends js.Object {
                   winstonLib.libWinstonTransportsMod.winstonNs.HttpTransportInstance
                 ] {
         var agent: js.UndefOr[nodeLib.httpMod.Agent | scala.Null] = js.native
-        var auth: js.UndefOr[winstonLib.Anon_Username] = js.native
+        var auth: js.UndefOr[winstonLib.Anon_Password] = js.native
         var host: java.lang.String = js.native
         var name: java.lang.String = js.native
         var path: java.lang.String = js.native
@@ -535,7 +535,7 @@ object winstonNs extends js.Object {
       trait HttpTransportOptions
         extends winstonDashTransportLib.winstonDashTransportMod.TransportStreamNs.TransportStreamOptions {
         var agent: js.UndefOr[nodeLib.httpMod.Agent] = js.undefined
-        var auth: js.UndefOr[winstonLib.Anon_Username] = js.undefined
+        var auth: js.UndefOr[winstonLib.Anon_Password] = js.undefined
         var headers: js.UndefOr[js.Object] = js.undefined
         var host: js.UndefOr[java.lang.String] = js.undefined
         var path: js.UndefOr[java.lang.String] = js.undefined

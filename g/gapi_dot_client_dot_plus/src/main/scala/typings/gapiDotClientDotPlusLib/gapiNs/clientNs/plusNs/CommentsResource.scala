@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait CommentsResource extends js.Object {
   /** Get a comment. */
-  def get(request: gapiDotClientDotPlusLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Comment]
+  def get(request: gapiDotClientDotPlusLib.Anon_AltCommentId): gapiDotClientLib.gapiNs.clientNs.Request[Comment]
   /** List all of the comments for an activity. */
-  def list(request: gapiDotClientDotPlusLib.Anon_MaxResults): gapiDotClientLib.gapiNs.clientNs.Request[CommentFeed]
+  def list(request: gapiDotClientDotPlusLib.Anon_ActivityIdAlt): gapiDotClientLib.gapiNs.clientNs.Request[CommentFeed]
 }
 

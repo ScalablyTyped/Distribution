@@ -12,13 +12,13 @@ trait Agent extends js.Object {
     * Returns the checks the local agent is managing
     */
   @JSName("checks")
-  var checks_Original: consulLib.Anon_OptsCallbackTDataChecksOptions = js.native
+  var checks_Original: consulLib.Anon_CallbackOptsChecksOptions = js.native
   var consul: Consul = js.native
   /**
     * Force remove node
     */
   @JSName("forceLeave")
-  var forceLeave_Original: consulLib.Anon_NodeCallbackOpts = js.native
+  var forceLeave_Original: consulLib.Anon_CallbackNode = js.native
   /**
     * Trigger local agent to join a node
     */
@@ -28,23 +28,23 @@ trait Agent extends js.Object {
     * Manages node maintenance mode
     */
   @JSName("maintenance")
-  var maintenance_Original: consulLib.Anon_Enable = js.native
+  var maintenance_Original: consulLib.Anon_CallbackEnable = js.native
   /**
     * Returns the members as seen by the local consul agent
     */
   @JSName("members")
-  var members_Original: consulLib.Anon_OptsCallbackTDataMembersOptions = js.native
+  var members_Original: consulLib.Anon_CallbackOptsMembersOptions = js.native
   /**
     * Returns the local node configuration
     */
   @JSName("self")
-  var self_Original: consulLib.Anon_OptsCallbackTDataSelfOptions = js.native
+  var self_Original: consulLib.Anon_CallbackOptsSelfOptions = js.native
   var service: consulLib.consulMod.ConsulNs.AgentNs.Service = js.native
   /**
     * Returns the services local agent is managing
     */
   @JSName("services")
-  var services_Original: consulLib.Anon_OptsCallbackTDataServicesOptions = js.native
+  var services_Original: consulLib.Anon_CallbackOptsServicesOptions = js.native
   /**
     * Returns the checks the local agent is managing
     */

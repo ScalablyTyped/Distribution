@@ -51,7 +51,7 @@ trait IriApi extends js.Object {
     depth: scala.Double,
     callback: js.Function2[
       /* error */ stdLib.Error, 
-      /* response */ iotaDotLibDotJsLib.Anon_TrunkTransaction, 
+      /* response */ iotaDotLibDotJsLib.Anon_BranchTransaction, 
       scala.Unit
     ]
   ): scala.Unit

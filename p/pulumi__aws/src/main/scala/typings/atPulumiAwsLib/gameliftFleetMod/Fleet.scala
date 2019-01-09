@@ -33,7 +33,7 @@ class Fleet protected ()
   /**
     * Range of IP addresses and port settings that permit inbound traffic to access server processes running on the fleet. See below.
     */
-  val ec2InboundPermissions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FromPortToPort]]] = js.native
+  val ec2InboundPermissions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FromPort]]] = js.native
   /**
     * Name of an EC2 instance type. e.g. `t2.micro`
     */
@@ -58,15 +58,11 @@ class Fleet protected ()
   /**
     * Policy that limits the number of game sessions an individual player can create over a span of time for this fleet. See below.
     */
-  val resourceCreationLimitPolicy: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_NewGameSessionsPerCreatorPolicyPeriodInMinutes]] = js.native
+  val resourceCreationLimitPolicy: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_NewGameSessionsPerCreator]] = js.native
   /**
     * Instructions for launching server processes on each instance in the fleet. See below.
     */
-  val runtimeConfiguration: atPulumiPulumiLib.pulumiMod.Output[
-    js.UndefOr[
-      atPulumiAwsLib.Anon_GameSessionActivationTimeoutSecondsMaxConcurrentGameSessionActivations
-    ]
-  ] = js.native
+  val runtimeConfiguration: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_GameSessionActivationTimeoutSeconds]] = js.native
 }
 
 @JSImport("@pulumi/aws/gamelift/fleet", "Fleet")

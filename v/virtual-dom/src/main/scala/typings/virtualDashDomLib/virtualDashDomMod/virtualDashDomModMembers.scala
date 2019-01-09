@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object virtualDashDomModMembers extends js.Object {
   def create(vnode: virtualDashDomLib.VirtualDOMNs.Thunk): stdLib.Element = js.native
-  def create(vnode: virtualDashDomLib.VirtualDOMNs.Thunk, opts: virtualDashDomLib.Anon_Warn): stdLib.Element = js.native
+  def create(vnode: virtualDashDomLib.VirtualDOMNs.Thunk, opts: virtualDashDomLib.Anon_Document): stdLib.Element = js.native
   def create(vnode: virtualDashDomLib.VirtualDOMNs.VNode): stdLib.Element = js.native
-  def create(vnode: virtualDashDomLib.VirtualDOMNs.VNode, opts: virtualDashDomLib.Anon_Warn): stdLib.Element = js.native
+  def create(vnode: virtualDashDomLib.VirtualDOMNs.VNode, opts: virtualDashDomLib.Anon_Document): stdLib.Element = js.native
   /**
     create() calls either document.createElement() or document.createElementNS(),
     for which the common denominator is Element (not HTMLElement).
     */
   def create(vnode: virtualDashDomLib.VirtualDOMNs.VText): stdLib.Text = js.native
-  def create(vnode: virtualDashDomLib.VirtualDOMNs.VText, opts: virtualDashDomLib.Anon_Warn): stdLib.Text = js.native
+  def create(vnode: virtualDashDomLib.VirtualDOMNs.VText, opts: virtualDashDomLib.Anon_Document): stdLib.Text = js.native
   def create(vnode: virtualDashDomLib.VirtualDOMNs.Widget): stdLib.Element = js.native
-  def create(vnode: virtualDashDomLib.VirtualDOMNs.Widget, opts: virtualDashDomLib.Anon_Warn): stdLib.Element = js.native
+  def create(vnode: virtualDashDomLib.VirtualDOMNs.Widget, opts: virtualDashDomLib.Anon_Document): stdLib.Element = js.native
   def diff(left: virtualDashDomLib.VirtualDOMNs.VTree, right: virtualDashDomLib.VirtualDOMNs.VTree): js.Array[virtualDashDomLib.VirtualDOMNs.VPatch] = js.native
   def h(tagName: java.lang.String, children: java.lang.String): virtualDashDomLib.VirtualDOMNs.VNode = js.native
   def h(tagName: java.lang.String, children: js.Array[virtualDashDomLib.VirtualDOMNs.VChild]): virtualDashDomLib.VirtualDOMNs.VNode = js.native

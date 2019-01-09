@@ -243,7 +243,7 @@ class Network protected () extends js.Object {
     * Returns an object with selected nodes and edges ids.
     *
     */
-  def getSelection(): visLib.Anon_NodesEdges = js.native
+  def getSelection(): visLib.Anon_Edges = js.native
   /**
     * Returns the current central focus point of the view in the form: { x: {Number}, y: {Number} }
     *
@@ -354,8 +354,8 @@ class Network protected () extends js.Object {
     * You can also pass only nodes or edges in selection object.
     *
     */
-  def setSelection(selection: visLib.Anon_NodesEdges): scala.Unit = js.native
-  def setSelection(selection: visLib.Anon_NodesEdges, options: SelectionOptions): scala.Unit = js.native
+  def setSelection(selection: visLib.Anon_Edges): scala.Unit = js.native
+  def setSelection(selection: visLib.Anon_Edges, options: SelectionOptions): scala.Unit = js.native
   /**
     * Set the size of the canvas.
     * This is automatically done on a window resize.

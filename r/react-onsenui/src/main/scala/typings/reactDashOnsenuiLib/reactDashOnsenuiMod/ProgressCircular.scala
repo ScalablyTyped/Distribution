@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "ProgressCircular")
 @js.native
 class ProgressCircular ()
-  extends Component[reactDashOnsenuiLib.Anon_Indeterminate, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_IndeterminateModifier, js.Any]
 

@@ -19,8 +19,6 @@ trait Anon_Accesstoken extends js.Object {
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
-  /** Required. The job ID. */
-  var jobId: java.lang.String
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /** OAuth 2.0 token for the current user. */

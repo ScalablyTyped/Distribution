@@ -12,7 +12,7 @@ class FixedSizeGrid ()
   /**
     * Scroll to the specified offsets.
     */
-  def scrollTo(params: reactDashWindowLib.Anon_ScrollTop): scala.Unit = js.native
+  def scrollTo(params: reactDashWindowLib.Anon_ScrollLeft): scala.Unit = js.native
   /**
     * Scroll to the specified item.
     *
@@ -24,6 +24,6 @@ class FixedSizeGrid ()
     * - end - Align the item to the bottom, right hand side of the grid.
     * - start - Align the item to the top, left hand of the grid.
     */
-  def scrollToItem(params: reactDashWindowLib.Anon_ColumnIndex): scala.Unit = js.native
+  def scrollToItem(params: reactDashWindowLib.Anon_Align): scala.Unit = js.native
 }
 

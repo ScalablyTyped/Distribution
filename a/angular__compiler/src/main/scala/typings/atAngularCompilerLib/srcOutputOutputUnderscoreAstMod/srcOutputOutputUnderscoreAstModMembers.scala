@@ -120,8 +120,8 @@ object srcOutputOutputUnderscoreAstModMembers extends js.Object {
     `type`: scala.Null,
     sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan
   ): LiteralArrayExpr = js.native
-  def literalMap(values: js.Array[atAngularCompilerLib.Anon_Key]): LiteralMapExpr = js.native
-  def literalMap(values: js.Array[atAngularCompilerLib.Anon_Key], `type`: MapType): LiteralMapExpr = js.native
+  def literalMap(values: js.Array[atAngularCompilerLib.Anon_KeyQuoted]): LiteralMapExpr = js.native
+  def literalMap(values: js.Array[atAngularCompilerLib.Anon_KeyQuoted], `type`: MapType): LiteralMapExpr = js.native
   def not(expr: Expression): NotExpr = js.native
   def not(expr: Expression, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan): NotExpr = js.native
   def nullSafeIsEquivalent[T /* <: atAngularCompilerLib.Anon_IsEquivalent[T] */](): scala.Boolean = js.native

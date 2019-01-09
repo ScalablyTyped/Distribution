@@ -8,41 +8,41 @@ import scala.scalajs.js.annotation._
 @JSImport("i2c-bus/async", JSImport.Namespace)
 @js.native
 object asyncModMembers extends js.Object {
-  val all: i2cDashBusLib.Anon_ArrIteratorCallback = js.native
-  val allLimit: i2cDashBusLib.Anon_ArrLimit = js.native
-  val allSeries: i2cDashBusLib.Anon_ArrIteratorCallback = js.native
-  val any: i2cDashBusLib.Anon_ArrIteratorCallback = js.native
-  val anyLimit: i2cDashBusLib.Anon_ArrLimit = js.native
-  val anySeries: i2cDashBusLib.Anon_ArrIteratorCallback = js.native
-  val concatSeries: i2cDashBusLib.Anon_ArrIteratorCallbackT = js.native
-  val detectSeries: i2cDashBusLib.Anon_ArrIterator = js.native
-  val eachOf: i2cDashBusLib.Anon_Obj = js.native
-  val eachOfLimit: i2cDashBusLib.Anon_ObjLimit = js.native
-  val eachOfSeries: i2cDashBusLib.Anon_Obj = js.native
-  val eachSeries: i2cDashBusLib.Anon_ArrIteratorCallbackTE = js.native
-  val everySeries: i2cDashBusLib.Anon_ArrIteratorCallback = js.native
-  val filterSeries: i2cDashBusLib.Anon_Arr = js.native
-  val find: i2cDashBusLib.Anon_ArrIterator = js.native
-  val findLimit: i2cDashBusLib.Anon_ArrLimitIteratorCallback = js.native
-  val findSeries: i2cDashBusLib.Anon_ArrIterator = js.native
-  val foldl: i2cDashBusLib.Anon_ArrMemo = js.native
-  val foldr: i2cDashBusLib.Anon_ArrMemo = js.native
-  val forEach: i2cDashBusLib.Anon_ArrIteratorCallbackTE = js.native
-  val forEachLimit: i2cDashBusLib.Anon_ArrLimitIterator = js.native
-  val forEachOfSeries: i2cDashBusLib.Anon_Obj = js.native
-  val forEachSeries: i2cDashBusLib.Anon_ArrIteratorCallbackTE = js.native
-  val inject: i2cDashBusLib.Anon_ArrMemo = js.native
-  val mapSeries: i2cDashBusLib.Anon_ArrIteratorCallbackTR = js.native
-  val mapValuesSeries: i2cDashBusLib.Anon_ObjIteratee = js.native
-  val reduceRight: i2cDashBusLib.Anon_ArrMemo = js.native
-  val reject: i2cDashBusLib.Anon_Arr = js.native
-  val rejectLimit: i2cDashBusLib.Anon_ArrLimitIteratorCallbackT = js.native
-  val rejectSeries: i2cDashBusLib.Anon_Arr = js.native
-  val select: i2cDashBusLib.Anon_Arr = js.native
-  val selectLimit: i2cDashBusLib.Anon_ArrLimitIteratorCallbackT = js.native
-  val selectSeries: i2cDashBusLib.Anon_Arr = js.native
+  val all: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
+  val allLimit: i2cDashBusLib.Anon_ArrCallbackIteratorLimitAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
+  val allSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
+  val any: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
+  val anyLimit: i2cDashBusLib.Anon_ArrCallbackIteratorLimitAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
+  val anySeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
+  val concatSeries: i2cDashBusLib.Anon_ArrCallbackIteratorArray = js.native
+  val detectSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncResultCallback = js.native
+  val eachOf: i2cDashBusLib.Anon_CallbackIterator = js.native
+  val eachOfLimit: i2cDashBusLib.Anon_CallbackIteratorLimit = js.native
+  val eachOfSeries: i2cDashBusLib.Anon_CallbackIterator = js.native
+  val eachSeries: i2cDashBusLib.Anon_Arr = js.native
+  val everySeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
+  val filterSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
+  val find: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncResultCallback = js.native
+  val findLimit: i2cDashBusLib.Anon_ArrCallbackIteratorLimitAsyncBooleanIterator = js.native
+  val findSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncResultCallback = js.native
+  val foldl: i2cDashBusLib.Anon_ArrCallbackIteratorMemo = js.native
+  val foldr: i2cDashBusLib.Anon_ArrCallbackIteratorMemo = js.native
+  val forEach: i2cDashBusLib.Anon_Arr = js.native
+  val forEachLimit: i2cDashBusLib.Anon_ArrCallback = js.native
+  val forEachOfSeries: i2cDashBusLib.Anon_CallbackIterator = js.native
+  val forEachSeries: i2cDashBusLib.Anon_Arr = js.native
+  val inject: i2cDashBusLib.Anon_ArrCallbackIteratorMemo = js.native
+  val mapSeries: i2cDashBusLib.Anon_ArrCallbackIterator = js.native
+  val mapValuesSeries: i2cDashBusLib.Anon_CallbackIteratee = js.native
+  val reduceRight: i2cDashBusLib.Anon_ArrCallbackIteratorMemo = js.native
+  val reject: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
+  val rejectLimit: i2cDashBusLib.Anon_ArrCallbackIteratorLimit = js.native
+  val rejectSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
+  val select: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
+  val selectLimit: i2cDashBusLib.Anon_ArrCallbackIteratorLimit = js.native
+  val selectSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
   val setImmediate: js.Function2[/* callback */ js.Function, /* repeated */ js.Any, scala.Unit] = js.native
-  val someSeries: i2cDashBusLib.Anon_ArrIteratorCallback = js.native
+  val someSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
   @JSName("apply")
   def apply[E](fn: js.Function, args: js.Any*): AsyncFunction[_, E] = js.native
   def applyEach(fns: js.Array[js.Function], argsAndCallback: js.Any*): scala.Unit = js.native
@@ -249,7 +249,7 @@ object asyncModMembers extends js.Object {
     ]
   ] = js.native
   def retry[T, E](
-    opts: i2cDashBusLib.Anon_IntervalRetryCount,
+    opts: i2cDashBusLib.Anon_Interval,
     task: js.Function2[/* callback */ AsyncResultCallback[T, E], /* results */ js.Any, scala.Unit],
     callback: AsyncResultCallback[_, E]
   ): scala.Unit = js.native
@@ -258,7 +258,7 @@ object asyncModMembers extends js.Object {
     task: js.Function2[/* callback */ AsyncResultCallback[T, E], /* results */ js.Any, scala.Unit],
     callback: AsyncResultCallback[_, E]
   ): scala.Unit = js.native
-  def retryable[T, E](opts: i2cDashBusLib.Anon_Interval, task: AsyncFunction[T, E]): AsyncFunction[T, E] = js.native
+  def retryable[T, E](opts: i2cDashBusLib.Anon_IntervalTimes, task: AsyncFunction[T, E]): AsyncFunction[T, E] = js.native
   def retryable[T, E](opts: scala.Double, task: AsyncFunction[T, E]): AsyncFunction[T, E] = js.native
   def seq(fns: js.Function*): js.Function = js.native
   def series[T, E](tasks: Dictionary[AsyncFunction[T, E]]): scala.Unit = js.native

@@ -16,7 +16,9 @@ trait DataObject extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderType] = js.undefined
+  var emphasis: js.UndefOr[
+    echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorOptional
+  ] = js.undefined
   /**
     * If node are fixed when doing force directed layout.
     *
@@ -30,7 +32,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
     * The label style of this node.
     *
@@ -38,7 +40,7 @@ trait DataObject extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.label
     */
   var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlignShadowBlur
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize
   ] = js.undefined
   /**
     * Name of data item.
@@ -144,7 +146,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.data.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * Value of data item.
     *

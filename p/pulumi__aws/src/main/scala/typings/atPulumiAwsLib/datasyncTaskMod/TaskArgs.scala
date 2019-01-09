@@ -21,7 +21,7 @@ trait TaskArgs extends js.Object {
   /**
     * Configuration block containing option that controls the default behavior when you start an execution of this DataSync Task. For each individual task execution, you can override these options by specifying an overriding configuration in those executions.
     */
-  val options: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PosixPermissionsGid]] = js.undefined
+  val options: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AtimeBytesPerSecond]] = js.undefined
   /**
     * Amazon Resource Name (ARN) of source DataSync Location.
     */

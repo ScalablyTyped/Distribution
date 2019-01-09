@@ -18,12 +18,12 @@ class Scroller protected () extends js.Object {
   ): scala.Unit = js.native
   def doMouseZoom(wheelData: scala.Double, timeStamp: scala.Double, pageX: scala.Double, pageY: scala.Double): scala.Unit = js.native
   def doTouchEnd(timeStamp: scala.Double): scala.Unit = js.native
-  def doTouchMove(touches: js.Array[Anon_PageY], timeStamp: scala.Double): scala.Unit = js.native
-  def doTouchMove(touches: js.Array[Anon_PageY], timeStamp: scala.Double, scale: scala.Double): scala.Unit = js.native
-  def doTouchStart(touches: js.Array[Anon_PageY], timeStamp: scala.Double): scala.Unit = js.native
+  def doTouchMove(touches: js.Array[Anon_PageX], timeStamp: scala.Double): scala.Unit = js.native
+  def doTouchMove(touches: js.Array[Anon_PageX], timeStamp: scala.Double, scale: scala.Double): scala.Unit = js.native
+  def doTouchStart(touches: js.Array[Anon_PageX], timeStamp: scala.Double): scala.Unit = js.native
   def finishPullToRefresh(): scala.Unit = js.native
-  def getScrollMax(): Anon_Top = js.native
-  def getValues(): Anon_Zoom = js.native
+  def getScrollMax(): Anon_LeftTop = js.native
+  def getValues(): Anon_Left = js.native
   def scrollBy(leftOffset: scala.Double, topOffset: scala.Double): scala.Unit = js.native
   def scrollBy(leftOffset: scala.Double, topOffset: scala.Double, animate: scala.Boolean): scala.Unit = js.native
   def scrollTo(left: scala.Double, top: scala.Double): scala.Unit = js.native

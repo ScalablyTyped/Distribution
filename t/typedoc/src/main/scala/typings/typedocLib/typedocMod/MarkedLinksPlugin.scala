@@ -13,6 +13,6 @@ class MarkedLinksPlugin ()
 @JSImport("typedoc", "MarkedLinksPlugin")
 @js.native
 object MarkedLinksPlugin extends js.Object {
-  def splitLinkText(text: java.lang.String): typedocLib.Anon_Target = js.native
+  def splitLinkText(text: java.lang.String): typedocLib.Anon_Caption = js.native
 }
 

@@ -40,10 +40,10 @@ class TiledGroundGeometry protected () extends _PrimitiveGeometry {
   zmax: scala.Double, /**
     * Defines the subdivisions to apply to the ground
     */
-  subdivisions: babylonjsLib.Anon_W, /**
+  subdivisions: babylonjsLib.Anon_H, /**
     * Defines the precision to use when computing the tiles
     */
-  precision: babylonjsLib.Anon_W) = this()
+  precision: babylonjsLib.Anon_H) = this()
   def this(id: java.lang.String, scene: Scene, /**
     * Defines the minimum value on X axis
     */
@@ -59,10 +59,10 @@ class TiledGroundGeometry protected () extends _PrimitiveGeometry {
   zmax: scala.Double, /**
     * Defines the subdivisions to apply to the ground
     */
-  subdivisions: babylonjsLib.Anon_W, /**
+  subdivisions: babylonjsLib.Anon_H, /**
     * Defines the precision to use when computing the tiles
     */
-  precision: babylonjsLib.Anon_W, canBeRegenerated: scala.Boolean) = this()
+  precision: babylonjsLib.Anon_H, canBeRegenerated: scala.Boolean) = this()
   def this(id: java.lang.String, scene: Scene, /**
     * Defines the minimum value on X axis
     */
@@ -78,18 +78,18 @@ class TiledGroundGeometry protected () extends _PrimitiveGeometry {
   zmax: scala.Double, /**
     * Defines the subdivisions to apply to the ground
     */
-  subdivisions: babylonjsLib.Anon_W, /**
+  subdivisions: babylonjsLib.Anon_H, /**
     * Defines the precision to use when computing the tiles
     */
-  precision: babylonjsLib.Anon_W, canBeRegenerated: scala.Boolean, mesh: Nullable[Mesh]) = this()
+  precision: babylonjsLib.Anon_H, canBeRegenerated: scala.Boolean, mesh: Nullable[Mesh]) = this()
   /**
     * Defines the precision to use when computing the tiles
     */
-  var precision: babylonjsLib.Anon_W = js.native
+  var precision: babylonjsLib.Anon_H = js.native
   /**
     * Defines the subdivisions to apply to the ground
     */
-  var subdivisions: babylonjsLib.Anon_W = js.native
+  var subdivisions: babylonjsLib.Anon_H = js.native
   /**
     * Defines the maximum value on X axis
     */

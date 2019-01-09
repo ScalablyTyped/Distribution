@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait DebuggeesResource extends js.Object {
   var breakpoints: BreakpointsResource
   /** Lists all the debuggees that the user has access to. */
-  def list(request: gapiDotClientDotClouddebuggerLib.Anon_AccesstokenProject): gapiDotClientLib.gapiNs.clientNs.Request[ListDebuggeesResponse]
+  def list(request: gapiDotClientDotClouddebuggerLib.Anon_AccesstokenAltBearertokenCallbackClientVersion): gapiDotClientLib.gapiNs.clientNs.Request[ListDebuggeesResponse]
   /**
     * Registers the debuggee with the controller service.
     *
@@ -21,6 +21,6 @@ trait DebuggeesResource extends js.Object {
     * from data loss, or change the `debuggee_id` format. Agents must handle
     * `debuggee_id` value changing upon re-registration.
     */
-  def register(request: gapiDotClientDotClouddebuggerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[RegisterDebuggeeResponse]
+  def register(request: gapiDotClientDotClouddebuggerLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[RegisterDebuggeeResponse]
 }
 

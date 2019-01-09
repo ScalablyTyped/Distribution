@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait DataPointChangesResource extends js.Object {
   /** Queries for user's data point changes for a particular data source. */
-  def list(request: gapiDotClientDotFitnessLib.Anon_PrettyPrintDataSourceIdPageToken): gapiDotClientLib.gapiNs.clientNs.Request[ListDataPointChangesResponse]
+  def list(request: gapiDotClientDotFitnessLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[ListDataPointChangesResponse]
 }
 

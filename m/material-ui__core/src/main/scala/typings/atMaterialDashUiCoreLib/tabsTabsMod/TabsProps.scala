@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<@material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps, std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps, 'classes' | 'onChange' | 'action' | 'component'>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps, @material-ui/core.@material-ui/core/Tabs/Tabs.TabsClassKey, 'onChange' | 'action' | 'component'>) */ trait TabsProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps, 'classes' | 'onChange' | 'action' | 'component'> ]: @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseProps, @material-ui/core.@material-ui/core/Tabs/Tabs.TabsClassKey, 'onChange' | 'action' | 'component'>) */ trait TabsProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TabsClassKey] {
   var ScrollButtonComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var TabIndicatorProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorProps]] = js.undefined

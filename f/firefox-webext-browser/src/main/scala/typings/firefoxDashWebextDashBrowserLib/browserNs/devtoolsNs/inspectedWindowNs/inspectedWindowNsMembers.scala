@@ -50,6 +50,6 @@ object inspectedWindowNsMembers extends js.Object {
   def getResources(): js.Promise[js.Array[Resource]] = js.native
   /** Reloads the inspected page. */
   def reload(): scala.Unit = js.native
-  def reload(reloadOptions: firefoxDashWebextDashBrowserLib.Anon_PreprocessorScript): scala.Unit = js.native
+  def reload(reloadOptions: firefoxDashWebextDashBrowserLib.Anon_IgnoreCache): scala.Unit = js.native
 }
 

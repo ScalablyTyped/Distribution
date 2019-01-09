@@ -63,7 +63,7 @@ trait Result extends js.Object {
   /**
     * Serializes this object to a JSON representation.
     */
-  def serialize(): webgmeLib.Anon_PluginName = js.native
+  def serialize(): webgmeLib.Anon_FinishTime = js.native
   def setError(error: nodeLib.Error): scala.Unit = js.native
   /**
     * Sets the error string if any error occured during execution.

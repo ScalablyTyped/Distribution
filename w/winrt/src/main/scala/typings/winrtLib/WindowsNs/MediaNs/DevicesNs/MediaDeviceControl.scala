@@ -11,9 +11,9 @@ class MediaDeviceControl () extends IMediaDeviceControl {
   /* CompleteClass */
   override var capabilities: MediaDeviceControlCapabilities = js.native
   /* CompleteClass */
-  override def tryGetAuto(): winrtLib.Anon_ValueSucceeded = js.native
+  override def tryGetAuto(): winrtLib.Anon_SucceededValueBoolean = js.native
   /* CompleteClass */
-  override def tryGetValue(): winrtLib.Anon_ValueSucceededNumber = js.native
+  override def tryGetValue(): winrtLib.Anon_SucceededValue = js.native
   /* CompleteClass */
   override def trySetAuto(value: scala.Boolean): scala.Boolean = js.native
   /* CompleteClass */

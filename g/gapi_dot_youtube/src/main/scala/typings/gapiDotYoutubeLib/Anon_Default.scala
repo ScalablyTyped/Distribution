@@ -13,6 +13,6 @@ trait Anon_Default extends js.Object {
   /**
     * A list of objects that specify language-specific values for the property.
     */
-  var localized: js.Array[Anon_Value]
+  var localized: js.Array[Anon_Language]
 }
 

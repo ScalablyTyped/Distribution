@@ -35,7 +35,7 @@ package object swanNs {
   type EncodeBitRate = baiduDashAppLib.baiduDashAppLibNumbers.`8000` | baiduDashAppLib.baiduDashAppLibNumbers.`11025` | baiduDashAppLib.baiduDashAppLibNumbers.`12000` | baiduDashAppLib.baiduDashAppLibNumbers.`16000` | baiduDashAppLib.baiduDashAppLibNumbers.`22050` | baiduDashAppLib.baiduDashAppLibNumbers.`24000` | baiduDashAppLib.baiduDashAppLibNumbers.`32000` | baiduDashAppLib.baiduDashAppLibNumbers.`44100` | baiduDashAppLib.baiduDashAppLibNumbers.`48000`
   type EventType = baiduDashAppLib.baiduDashAppLibStrings.input | baiduDashAppLib.baiduDashAppLibStrings.form | baiduDashAppLib.baiduDashAppLibStrings.submit | baiduDashAppLib.baiduDashAppLibStrings.scroll | TouchEventType | TransitionEventType | baiduDashAppLib.baiduDashAppLibStrings.tap | baiduDashAppLib.baiduDashAppLibStrings.longpress
   type ExtendedComponent[Instance /* <: Component[Data, Props] */, Data, Methods, Props] = (CombinedInstance[Instance, Data, Methods, Props]) with (Component[Data, Props])
-  type FormEvent = BuiltInEvent[baiduDashAppLib.baiduDashAppLibStrings.form, baiduDashAppLib.Anon_Value]
+  type FormEvent = BuiltInEvent[baiduDashAppLib.baiduDashAppLibStrings.form, baiduDashAppLib.Anon_NameValue]
   // #endregion
   // #endregion
   // #region 媒体API列表

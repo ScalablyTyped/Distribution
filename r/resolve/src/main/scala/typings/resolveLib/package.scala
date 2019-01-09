@@ -36,8 +36,8 @@ package object resolveLib {
   type resolveCallback = js.Function3[
     /* err */ nodeLib.Error | scala.Null, 
     /* resolved */ js.UndefOr[java.lang.String], 
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PackageMeta */ /* pkg */ js.UndefOr[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PackageMeta */ js.Any
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PackageMeta */ /* pkg */ js.UndefOr[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PackageMeta */ js.Any
     ], 
     scala.Unit
   ]

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MaterialAppearance ()
   extends cesiumLib.cesiumMod.CesiumNs.MaterialAppearance {
-  def this(options: cesiumLib.Anon_VertexShaderSourceFaceForwardFlat) = this()
+  def this(options: cesiumLib.Anon_ClosedFaceForward) = this()
   /* CompleteClass */
   override val closed: scala.Boolean = js.native
   /* CompleteClass */

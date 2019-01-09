@@ -13,7 +13,7 @@ object xsdDashSchemaDashValidatorMod extends js.Object {
     pathToXsd: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.Error, 
-      /* result */ xsdDashSchemaDashValidatorLib.Anon_Result, 
+      /* result */ xsdDashSchemaDashValidatorLib.Anon_Messages, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -22,7 +22,7 @@ object xsdDashSchemaDashValidatorMod extends js.Object {
     pathToXsd: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.Error, 
-      /* result */ xsdDashSchemaDashValidatorLib.Anon_Result, 
+      /* result */ xsdDashSchemaDashValidatorLib.Anon_Messages, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -31,7 +31,7 @@ object xsdDashSchemaDashValidatorMod extends js.Object {
     pathToXsd: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.Error, 
-      /* result */ xsdDashSchemaDashValidatorLib.Anon_Result, 
+      /* result */ xsdDashSchemaDashValidatorLib.Anon_Messages, 
       scala.Unit
     ]
   ): scala.Unit = js.native

@@ -207,7 +207,7 @@ trait SeriesThemeRiver extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.emphasis
     */
   var emphasis: js.UndefOr[
-    echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderTypeAnonShadowOffsetXBackgroundColorShowTextBorderWidthShadowBlur
+    echartsLib.Anon_ItemStyleLabelAnonBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSizeFontStyle
   ] = js.undefined
   /**
     * Height of thmemRiver component.
@@ -235,7 +235,7 @@ trait SeriesThemeRiver extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
     * `label` describes style of text labels with which each ribbon-shape
     * river branch corresponds in theme river.
@@ -243,7 +243,9 @@ trait SeriesThemeRiver extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.label
     */
-  var label: js.UndefOr[echartsLib.Anon_ShadowOffsetXBackgroundColorShowTextBorderWidth] = js.undefined
+  var label: js.UndefOr[
+    echartsLib.Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize
+  ] = js.undefined
   /**
     * Distance between thmemRiver component and the left side of the
     * container.
@@ -288,7 +290,7 @@ trait SeriesThemeRiver extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-themeRiver.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * Distance between thmemRiver component and the top side of the
     * container.

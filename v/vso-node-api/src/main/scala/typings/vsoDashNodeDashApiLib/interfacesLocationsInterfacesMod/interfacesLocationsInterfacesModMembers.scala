@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("vso-node-api/interfaces/LocationsInterfaces", JSImport.Namespace)
 @js.native
 object interfacesLocationsInterfacesModMembers extends js.Object {
-  var TypeInfo: vsoDashNodeDashApiLib.Anon_LocationServiceData = js.native
+  var TypeInfo: vsoDashNodeDashApiLib.Anon_ConnectionData = js.native
 }
 

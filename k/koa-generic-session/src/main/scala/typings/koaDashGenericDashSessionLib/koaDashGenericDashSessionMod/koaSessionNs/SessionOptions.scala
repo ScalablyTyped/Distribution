@@ -14,7 +14,7 @@ trait SessionOptions extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
-  var cookie: js.UndefOr[koaDashGenericDashSessionLib.Anon_Path] = js.undefined
+  var cookie: js.UndefOr[koaDashGenericDashSessionLib.Anon_HttpOnly] = js.undefined
   var defer: js.UndefOr[scala.Boolean] = js.undefined
   var errorHandler: js.UndefOr[
     js.Function3[

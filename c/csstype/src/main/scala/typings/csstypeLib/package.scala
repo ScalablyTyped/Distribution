@@ -41,8 +41,8 @@ package object csstypeLib {
   type FontWeightAbsolute = csstypeLib.csstypeLibStrings.bold | csstypeLib.csstypeLibStrings.normal | scala.Double
   type GenericFamily = csstypeLib.csstypeLibStrings.cursive | csstypeLib.csstypeLibStrings.fantasy | csstypeLib.csstypeLibStrings.monospace | csstypeLib.csstypeLibStrings.`sans-serif` | csstypeLib.csstypeLibStrings.serif
   type GeometryBox = Box | csstypeLib.csstypeLibStrings.`fill-box` | csstypeLib.csstypeLibStrings.`margin-box` | csstypeLib.csstypeLibStrings.`stroke-box` | csstypeLib.csstypeLibStrings.`view-box`
-  type GlobalsNumber = (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Globals */ js.Any) | scala.Double
-  type GlobalsString = (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Globals */ js.Any) | java.lang.String
+  type GlobalsNumber = (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Globals */ js.Any) | scala.Double
+  type GlobalsString = (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Globals */ js.Any) | java.lang.String
   type GridLine = csstypeLib.csstypeLibStrings.auto | java.lang.String | scala.Double
   type LineStyle = csstypeLib.csstypeLibStrings.dashed | csstypeLib.csstypeLibStrings.dotted | csstypeLib.csstypeLibStrings.double | csstypeLib.csstypeLibStrings.groove | csstypeLib.csstypeLibStrings.hidden | csstypeLib.csstypeLibStrings.inset | csstypeLib.csstypeLibStrings.none | csstypeLib.csstypeLibStrings.outset | csstypeLib.csstypeLibStrings.ridge | csstypeLib.csstypeLibStrings.solid
   type LineWidth[TLength] = TLength | csstypeLib.csstypeLibStrings.medium | csstypeLib.csstypeLibStrings.thick | csstypeLib.csstypeLibStrings.thin

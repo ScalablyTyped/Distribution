@@ -123,8 +123,8 @@ trait GeocoderOptions extends js.Object {
     *
     * Default value: 'topleft'.
     */
-  var position: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PositionString */ js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PositionString */ js.Any
+  var position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PositionString */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PositionString */ js.Any
   ] = js.undefined
   /**
     * Tooltip text to display on the search icon. Set to blank or null to disable.

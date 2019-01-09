@@ -13,7 +13,7 @@ trait GetVpcEndpointResult extends js.Object {
   /**
     * The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
     */
-  val dnsEntries: js.Array[atPulumiAwsLib.Anon_HostedZoneId]
+  val dnsEntries: js.Array[atPulumiAwsLib.Anon_DnsName]
   val id: java.lang.String
   /**
     * One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.

@@ -17,7 +17,9 @@ trait ListenerState extends js.Object {
   /**
     * An Action block. Action blocks are documented below.
     */
-  val defaultAction: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TargetGroupArn]] = js.undefined
+  val defaultAction: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc]
+  ] = js.undefined
   /**
     * The ARN of the load balancer.
     */

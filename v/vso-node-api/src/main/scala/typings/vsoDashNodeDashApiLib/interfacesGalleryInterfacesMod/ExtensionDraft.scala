@@ -15,7 +15,7 @@ trait ExtensionDraft extends js.Object {
   var payload: ExtensionPayload
   var product: java.lang.String
   var publisherName: java.lang.String
-  var validationErrors: js.Array[vsoDashNodeDashApiLib.Anon_Key]
-  var validationWarnings: js.Array[vsoDashNodeDashApiLib.Anon_Key]
+  var validationErrors: js.Array[vsoDashNodeDashApiLib.Anon_KeyValueString]
+  var validationWarnings: js.Array[vsoDashNodeDashApiLib.Anon_KeyValueString]
 }
 

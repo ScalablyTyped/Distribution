@@ -142,7 +142,7 @@ class Buffer protected () extends js.Object {
   def swap16(): Buffer = js.native
   def swap32(): Buffer = js.native
   def swap64(): Buffer = js.native
-  def toJSON(): safeDashBufferLib.Anon_Type = js.native
+  def toJSON(): safeDashBufferLib.Anon_Buffer = js.native
   def toString(encoding: java.lang.String): java.lang.String = js.native
   def toString(encoding: java.lang.String, start: scala.Double): java.lang.String = js.native
   def toString(encoding: java.lang.String, start: scala.Double, end: scala.Double): java.lang.String = js.native

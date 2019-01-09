@@ -11,7 +11,9 @@ trait GrantArgs extends js.Object {
     */
   val constraints: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EncryptionContextEquals]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EncryptionContextEqualsEncryptionContextSubset]
+      ]
     ]
   ] = js.undefined
   /**

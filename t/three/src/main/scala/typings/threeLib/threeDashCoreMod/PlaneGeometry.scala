@@ -12,6 +12,6 @@ class PlaneGeometry () extends Geometry {
   def this(width: scala.Double, height: scala.Double) = this()
   def this(width: scala.Double, height: scala.Double, widthSegments: scala.Double) = this()
   def this(width: scala.Double, height: scala.Double, widthSegments: scala.Double, heightSegments: scala.Double) = this()
-  var parameters: threeLib.Anon_HeightSegmentsWidthSegments = js.native
+  var parameters: threeLib.Anon_HeightHeightSegmentsWidth = js.native
 }
 

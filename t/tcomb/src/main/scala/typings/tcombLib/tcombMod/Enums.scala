@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
 trait Enums
   extends Type[java.lang.String] {
   @JSName("meta")
-  var meta_Enums: tcombLib.Anon_Kind = js.native
+  var meta_Enums: tcombLib.Anon_IdentityKindMap = js.native
 }
 

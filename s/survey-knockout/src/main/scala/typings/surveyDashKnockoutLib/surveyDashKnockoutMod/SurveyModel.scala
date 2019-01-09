@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(surveyDashKnockoutLib.surveyDashKnockoutMod.ISurvey because Would inherit conflicting mutable fields List(isLoadingFromJson))*/
-@JSImport("survey-knockout", "SurveyModel")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- surveyDashKnockoutLib.surveyDashKnockoutMod.ISurvey because var conflicts: isLoadingFromJson. Inlined currentPage, pages, isPageStarted, pageVisibilityChanged, panelVisibilityChanged, questionVisibilityChanged, questionsOrder, questionAdded, panelAdded, questionRemoved, panelRemoved, questionRenamed, validateQuestion, validatePanel, hasVisibleQuestionByValueName, questionCountByValueName, processHtml, getSurveyMarkdownHtml, isDisplayMode, isDesignMode, areInvisibleElementsShowing, requiredText, getQuestionTitleTemplate, getUpdatedQuestionTitle, questionStartIndex, questionTitleLocation, questionErrorLocation, storeOthersAsComment, maxTextLength, maxOthersLength, clearValueOnDisableItems, uploadFiles, downloadFile, clearFiles, updateChoicesFromServer, updateQuestionCssClasses, updatePanelCssClasses, afterRenderQuestion, afterRenderPanel, afterRenderPage, matrixRowAdded, matrixBeforeRowAdded, matrixRowRemoved, matrixCellCreated, matrixAfterCellRender, matrixCellValueChanged, matrixCellValidate, dynamicPanelAdded, dynamicPanelRemoved, dynamicPanelItemValueChanged, dragAndDropAllow */ @JSImport("survey-knockout", "SurveyModel")
 @js.native
 class SurveyModel ()
   extends Base
@@ -80,7 +80,7 @@ class SurveyModel ()
   /**
     * Returns the current survey page. If survey is rendred then it is a page that a user can see/edit.
     */
-  var currentPage: js.Any = js.native
+  var currentPage: js.Any | IPage = js.native
   /**
     * The index of the current page in the visible pages array. It starts from 0.
     */
@@ -699,7 +699,7 @@ class SurveyModel ()
     * @see PageModel
     * @see visiblePages
     */
-  val pages: js.Array[PageModel] = js.native
+  val pages: js.Array[IPage | PageModel] = js.native
   val platformName: java.lang.String = js.native
   /**
     * Returns the html showing that the user has already completed the survey
@@ -898,8 +898,14 @@ class SurveyModel ()
     */
   def addPage(page: PageModel): scala.Unit = js.native
   def afterRenderPage(htmlElement: js.Any): scala.Unit = js.native
+  @JSName("afterRenderPage")
+  def afterRenderPage_Any(htmlElement: js.Any): js.Any = js.native
   def afterRenderPanel(panel: IElement, htmlElement: js.Any): scala.Unit = js.native
+  @JSName("afterRenderPanel")
+  def afterRenderPanel_Any(panel: IElement, htmlElement: js.Any): js.Any = js.native
   def afterRenderQuestion(question: IQuestion, htmlElement: js.Any): scala.Unit = js.native
+  @JSName("afterRenderQuestion")
+  def afterRenderQuestion_Any(question: IQuestion, htmlElement: js.Any): js.Any = js.native
   /* protected */ def afterRenderSurvey(htmlElement: js.Any): scala.Unit = js.native
   /**
     * Clear the survey data and state. If the survey has a 'completed' state, it will have a 'running' state.
@@ -924,6 +930,13 @@ class SurveyModel ()
     fileName: java.lang.String,
     callback: js.Function2[/* status */ java.lang.String, /* data */ js.Any, _]
   ): scala.Unit = js.native
+  @JSName("clearFiles")
+  def clearFiles_Any(
+    name: java.lang.String,
+    value: js.Any,
+    fileName: java.lang.String,
+    clearCallback: js.Function2[/* status */ java.lang.String, /* data */ js.Any, _]
+  ): js.Any = js.native
   /**
     * Call this function to remove all question values from the survey, that end-user will not be able to enter.
     * For example the value that doesn't exists in a radigroup/dropdown/checkbox choices or matrix rows/columns.
@@ -967,6 +980,11 @@ class SurveyModel ()
   /* protected */ def doServerValidation(): scala.Boolean = js.native
   /* protected */ def doSurveyValueChanged(question: IQuestion, newValue: js.Any): scala.Unit = js.native
   /* protected */ def doTimer(): scala.Unit = js.native
+  def downloadFile(
+    name: java.lang.String,
+    content: java.lang.String,
+    callback: js.Function2[/* status */ java.lang.String, /* data */ js.Any, _]
+  ): js.Any = js.native
   /**
     * Download the file from server
     * @param name question name
@@ -980,8 +998,14 @@ class SurveyModel ()
   ): scala.Unit = js.native
   def dragAndDropAllow(options: js.Any): scala.Boolean = js.native
   def dynamicPanelAdded(question: IQuestion): scala.Unit = js.native
+  @JSName("dynamicPanelAdded")
+  def dynamicPanelAdded_Any(question: IQuestion): js.Any = js.native
   def dynamicPanelItemValueChanged(question: IQuestion, options: js.Any): scala.Unit = js.native
+  @JSName("dynamicPanelItemValueChanged")
+  def dynamicPanelItemValueChanged_Any(question: IQuestion, options: js.Any): js.Any = js.native
   def dynamicPanelRemoved(question: IQuestion, panelIndex: scala.Double): scala.Unit = js.native
+  @JSName("dynamicPanelRemoved")
+  def dynamicPanelRemoved_Any(question: IQuestion, panelIndex: scala.Double): js.Any = js.native
   /**
     * Set the input focus to the first question with the input.
     */
@@ -1137,12 +1161,23 @@ class SurveyModel ()
   def loadSurveyFromService(surveyId: java.lang.String): scala.Unit = js.native
   def loadSurveyFromService(surveyId: java.lang.String, cliendId: java.lang.String): scala.Unit = js.native
   def matrixAfterCellRender(question: IQuestion, options: js.Any): scala.Unit = js.native
+  @JSName("matrixAfterCellRender")
+  def matrixAfterCellRender_Any(question: IQuestion, options: js.Any): js.Any = js.native
   def matrixBeforeRowAdded(options: js.Any): scala.Unit = js.native
+  def matrixBeforeRowAdded(options: surveyDashKnockoutLib.Anon_CanAddRow): js.Any = js.native
   def matrixCellCreated(question: IQuestion, options: js.Any): scala.Unit = js.native
+  @JSName("matrixCellCreated")
+  def matrixCellCreated_Any(question: IQuestion, options: js.Any): js.Any = js.native
   def matrixCellValidate(question: IQuestion, options: js.Any): SurveyError = js.native
   def matrixCellValueChanged(question: IQuestion, options: js.Any): scala.Unit = js.native
+  @JSName("matrixCellValueChanged")
+  def matrixCellValueChanged_Any(question: IQuestion, options: js.Any): js.Any = js.native
   def matrixRowAdded(question: IQuestion): scala.Unit = js.native
+  @JSName("matrixRowAdded")
+  def matrixRowAdded_Any(question: IQuestion): js.Any = js.native
   def matrixRowRemoved(question: IQuestion, rowIndex: scala.Double, row: js.Any): scala.Unit = js.native
+  @JSName("matrixRowRemoved")
+  def matrixRowRemoved_Any(question: IQuestion, rowIndex: scala.Double, row: js.Any): js.Any = js.native
   def mergeValues(src: js.Any, dest: js.Any): scala.Unit = js.native
   /**
     * Call it to go to the next page. It returns false, if it is the last page. If there is an error, for example required question is empty, the function returns false as well.
@@ -1161,9 +1196,17 @@ class SurveyModel ()
   /* protected */ def onLoadingSurveyFromService(): scala.Unit = js.native
   /* protected */ def onLocaleChanged(): scala.Unit = js.native
   def pageVisibilityChanged(page: IPage, newValue: scala.Boolean): scala.Unit = js.native
+  @JSName("pageVisibilityChanged")
+  def pageVisibilityChanged_Any(page: IPage, newValue: scala.Boolean): js.Any = js.native
   def panelAdded(panel: IElement, index: scala.Double, parentPanel: js.Any, rootPanel: js.Any): scala.Unit = js.native
+  @JSName("panelAdded")
+  def panelAdded_Any(panel: IElement, index: scala.Double, parentPanel: js.Any, rootPanel: js.Any): js.Any = js.native
   def panelRemoved(panel: IElement): scala.Unit = js.native
+  @JSName("panelRemoved")
+  def panelRemoved_Any(panel: IElement): js.Any = js.native
   def panelVisibilityChanged(panel: IPanel, newValue: scala.Boolean): scala.Unit = js.native
+  @JSName("panelVisibilityChanged")
+  def panelVisibilityChanged_Any(panel: IPanel, newValue: scala.Boolean): js.Any = js.native
   /**
     * Call it to go to the previous page. It returns false if the current page is the first page already. It doesn't perform any checks, required questions can be empty.
     * @see isFirstPage
@@ -1173,11 +1216,17 @@ class SurveyModel ()
   def processText(text: java.lang.String, returnDisplayValue: scala.Boolean): java.lang.String = js.native
   def processTextEx(text: java.lang.String, returnDisplayValue: scala.Boolean, doEncoding: scala.Boolean): js.Any = js.native
   def questionAdded(question: IQuestion, index: scala.Double, parentPanel: js.Any, rootPanel: js.Any): scala.Unit = js.native
+  @JSName("questionAdded")
+  def questionAdded_Any(question: IQuestion, index: scala.Double, parentPanel: js.Any, rootPanel: js.Any): js.Any = js.native
   def questionCountByValueName(valueName: java.lang.String): scala.Double = js.native
   /* protected */ def questionOnValueChanging(valueName: java.lang.String, newValue: js.Any): js.Any = js.native
   def questionRemoved(question: IQuestion): scala.Unit = js.native
+  @JSName("questionRemoved")
+  def questionRemoved_Any(question: IQuestion): js.Any = js.native
   def questionRenamed(question: IQuestion, oldName: java.lang.String, oldValueName: java.lang.String): js.Any = js.native
   def questionVisibilityChanged(question: IQuestion, newValue: scala.Boolean): scala.Unit = js.native
+  @JSName("questionVisibilityChanged")
+  def questionVisibilityChanged_Any(question: IQuestion, newValue: scala.Boolean): js.Any = js.native
   /**
     * Remove the page from the survey
     * @param page
@@ -1244,10 +1293,14 @@ class SurveyModel ()
     */
   def stopTimer(): scala.Unit = js.native
   /* protected */ def tryGoNextPageAutomatic(name: java.lang.String): scala.Unit = js.native
-  def updateChoicesFromServer(question: IQuestion, choices: js.Array[ItemValue], serverResult: js.Any): js.Array[ItemValue] = js.native
+  def updateChoicesFromServer(question: IQuestion, choices: js.Array[_ | ItemValue], serverResult: js.Any): js.Array[ItemValue] = js.native
   /* protected */ def updateCustomWidgets(page: PageModel): scala.Unit = js.native
   def updatePanelCssClasses(panel: IPanel, cssClasses: js.Any): scala.Unit = js.native
+  @JSName("updatePanelCssClasses")
+  def updatePanelCssClasses_Any(panel: IPanel, cssClasses: js.Any): js.Any = js.native
   def updateQuestionCssClasses(question: IQuestion, cssClasses: js.Any): scala.Unit = js.native
+  @JSName("updateQuestionCssClasses")
+  def updateQuestionCssClasses_Any(question: IQuestion, cssClasses: js.Any): js.Any = js.native
   /**
     * Upload the file into server
     * @param name question name
@@ -1265,6 +1318,12 @@ class SurveyModel ()
     files: js.Array[stdLib.File],
     uploadingCallback: js.Function2[/* status */ java.lang.String, /* data */ js.Any, _]
   ): scala.Unit = js.native
+  @JSName("uploadFiles")
+  def uploadFiles_Any(
+    name: java.lang.String,
+    files: js.Array[stdLib.File],
+    uploadingCallback: js.Function2[/* status */ java.lang.String, /* data */ js.Any, _]
+  ): js.Any = js.native
   def validatePanel(panel: IPanel): SurveyError = js.native
   def validateQuestion(question: IQuestion): SurveyError = js.native
 }

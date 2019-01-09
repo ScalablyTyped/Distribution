@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class ArcGisMapServerImageryProvider protected ()
   extends cesiumLib.cesiumMod.CesiumNs.ArcGisMapServerImageryProvider {
-  def this(options: cesiumLib.Anon_TileWidthUrlEllipsoid) = this()
-  def this(options: cesiumLib.Anon_TileWidthUrlEllipsoid, layers: java.lang.String) = this()
+  def this(options: cesiumLib.Anon_EllipsoidEnablePickFeatures) = this()
+  def this(options: cesiumLib.Anon_EllipsoidEnablePickFeatures, layers: java.lang.String) = this()
   /* CompleteClass */
   override var credit: cesiumLib.cesiumMod.CesiumNs.Credit = js.native
   /* CompleteClass */

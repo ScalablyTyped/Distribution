@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Swig () extends js.Object {
   def this(options: SwigOptions) = this()
-  var loaders: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof swig.swig.loaders */ js.Any = js.native
+  var loaders: swigLib.Anon_Basepath = js.native
   def compile(source: java.lang.String): js.Function1[/* locals */ js.UndefOr[js.Any], java.lang.String] = js.native
   def compile(source: java.lang.String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[js.Any], java.lang.String] = js.native
   def compileFile(pathname: java.lang.String): js.Function1[/* locals */ js.UndefOr[js.Any], java.lang.String] = js.native

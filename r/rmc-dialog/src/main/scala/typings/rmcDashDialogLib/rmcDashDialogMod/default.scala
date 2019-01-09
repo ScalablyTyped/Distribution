@@ -12,6 +12,6 @@ class default () extends DialogWrap
 @JSImport("rmc-dialog", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: rmcDashDialogLib.Anon_PrefixCls = js.native
+  var defaultProps: rmcDashDialogLib.Anon_OnClose = js.native
 }
 

@@ -17,8 +17,8 @@ class EntityManager ()
 @js.native
 object EntityManager extends js.Object {
   def importEntities(exportedData: js.Object): breezeLib.breezeNs.EntityManager = js.native
-  def importEntities(exportedData: js.Object, config: breezeLib.Anon_MetadataVersionFn): breezeLib.breezeNs.EntityManager = js.native
+  def importEntities(exportedData: js.Object, config: breezeLib.Anon_Any): breezeLib.breezeNs.EntityManager = js.native
   def importEntities(exportedString: java.lang.String): breezeLib.breezeNs.EntityManager = js.native
-  def importEntities(exportedString: java.lang.String, config: breezeLib.Anon_MetadataVersionFn): breezeLib.breezeNs.EntityManager = js.native
+  def importEntities(exportedString: java.lang.String, config: breezeLib.Anon_Any): breezeLib.breezeNs.EntityManager = js.native
 }
 

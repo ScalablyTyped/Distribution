@@ -13,7 +13,7 @@ trait InputMaskProps extends js.Object {
   var mask: js.UndefOr[java.lang.String] = js.undefined
   var maxlength: js.UndefOr[scala.Double] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEvent, scala.Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
   var onComplete: js.UndefOr[js.Function1[/* e */ reactLib.Event, scala.Unit]] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var readonly: js.UndefOr[scala.Boolean] = js.undefined

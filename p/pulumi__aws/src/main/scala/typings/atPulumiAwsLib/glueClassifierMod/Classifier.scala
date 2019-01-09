@@ -22,7 +22,7 @@ class Classifier protected ()
   /**
     * A classifier that uses grok patterns. Defined below.
     */
-  val grokClassifier: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_GrokPatternClassification]] = js.native
+  val grokClassifier: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Classification]] = js.native
   /**
     * A classifier for JSON content. Defined below.
     */
@@ -34,7 +34,7 @@ class Classifier protected ()
   /**
     * A classifier for XML content. Defined below.
     */
-  val xmlClassifier: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RowTagClassification]] = js.native
+  val xmlClassifier: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ClassificationRowTag]] = js.native
 }
 
 @JSImport("@pulumi/aws/glue/classifier", "Classifier")

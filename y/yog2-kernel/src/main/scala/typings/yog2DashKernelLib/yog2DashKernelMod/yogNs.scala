@@ -11,18 +11,18 @@ object yogNs extends js.Object {
   @js.native
   class Yog () extends js.Object {
     @JSName("RAL")
-    var RAL_Original: yog2DashKernelLib.Anon_GetConf = js.native
+    var RAL_Original: yog2DashKernelLib.Anon_AppendExtPath = js.native
     var ROOT_PATH: java.lang.String = js.native
     @JSName("_")
-    var __Original: lodashLib.lodashMod.underscoreNs.LoDashStatic = js.native
+    var __Original: yog2DashKernelLib.`Anon_` with lodashLib.lodashMod.underscoreNs.LoDashStatic = js.native
     var app: expressLib.expressMod.eNs.Express = js.native
     @JSName("express")
     var express_Original: (js.Function0[
         expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Express
-      ]) with yog2DashKernelLib.Anon_Static = js.native
+      ]) with yog2DashKernelLib.Anon_E = js.native
     var log: yogDashLogLib.yogDashLogMod.Logger = js.native
     // 当 yog.conf.promise.overrideRAL 为true时，可以当作promise使用
-    var ral: yog2DashKernelLib.Anon_GetConf | yog2DashKernelLib.Anon_Name = js.native
+    var ral: yog2DashKernelLib.Anon_AppendExtPath | yog2DashKernelLib.Anon_Name = js.native
     @JSName("ralP")
     var ralP_Original: yog2DashKernelLib.Anon_Name = js.native
     // debug模式时存在

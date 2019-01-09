@@ -28,11 +28,11 @@ trait MakeAuthenticatedRequestFactoryConfig
     */
   var maxRetries: js.UndefOr[scala.Double] = js.native
   @JSName("request")
-  var request_Original: requestLib.requestMod.requestNs.RequestAPI[
+  var request_Original: atGoogleDashCloudCommonLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
     requestLib.requestMod.requestNs.Request, 
     requestLib.requestMod.requestNs.CoreOptions, 
     requestLib.requestMod.requestNs.RequiredUriUrl
-  ] = js.native
+  ]) = js.native
   var stream: js.UndefOr[duplexifyLib.duplexifyMod.duplexifyNs.Duplexify] = js.native
   def request(
     options: requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions

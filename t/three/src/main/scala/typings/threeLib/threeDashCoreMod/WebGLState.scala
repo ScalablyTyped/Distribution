@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebGLState protected () extends js.Object {
   def this(gl: js.Any, extensions: js.Any, paramThreeToGL: js.Function) = this()
-  var buffers: threeLib.Anon_ColorStencil = js.native
+  var buffers: threeLib.Anon_ColorDepth = js.native
   def activeTexture(webglSlot: js.Any): scala.Unit = js.native
   def bindTexture(webglType: js.Any, webglTexture: js.Any): scala.Unit = js.native
   def clearColor(r: scala.Double, g: scala.Double, b: scala.Double, a: scala.Double): scala.Unit = js.native

@@ -962,7 +962,7 @@ object UINs extends js.Object {
       currentPreferredAnimation: java.lang.String,
       nextPreferredAnimation: java.lang.String,
       movingBackwards: scala.Boolean
-    ): winjsLib.Anon_EntranceExit = js.native
+    ): winjsLib.Anon_Entrance = js.native
     /**
       * Creates an object that performs a peek animation.
       * @param element Element or elements involved in the peek.
@@ -1260,11 +1260,11 @@ object UINs extends js.Object {
     /**
       * Display options for the AppBar when closed.
       **/
-    var ClosedDisplayMode: winjsLib.Anon_NoneMinimal = js.native
+    var ClosedDisplayMode: winjsLib.Anon_Compact = js.native
     /**
       * Display options for AppBar placement in relation to the main view.
       */
-    var Placement: winjsLib.Anon_BottomTop = js.native
+    var Placement: winjsLib.Anon_Bottom = js.native
     /**
       * Indicates that the object is compatibile with declarative processing.
       **/
@@ -1771,11 +1771,11 @@ object UINs extends js.Object {
     /**
       * Specifies whether the Hub animation is an entrance animation or a transition animation.
       **/
-    var AnimationType: winjsLib.Anon_Entrance = js.native
+    var AnimationType: winjsLib.Anon_ContentTransition = js.native
     /**
       * Gets the current loading state of the Hub.
       **/
-    var LoadingState: winjsLib.Anon_Loading = js.native
+    var LoadingState: winjsLib.Anon_Complete = js.native
     /**
       * Indicates that the object is compatibile with declarative processing.
       **/
@@ -2128,15 +2128,15 @@ object UINs extends js.Object {
     /**
       * Display options for a SplitView's pane when it is closed.
       **/
-    var ClosedDisplayMode: winjsLib.Anon_NoneInline = js.native
+    var ClosedDisplayMode: winjsLib.Anon_Inline = js.native
     /**
       * Display options for a SplitView's pane when it is open.
       **/
-    var OpenedDisplayMode: winjsLib.Anon_Inline = js.native
+    var OpenedDisplayMode: winjsLib.Anon_InlineOverlay = js.native
     /**
       * Placement options for a SplitView's pane.
       **/
-    var PanePlacement: winjsLib.Anon_Bottom = js.native
+    var PanePlacement: winjsLib.Anon_BottomLeft = js.native
     /**
       * Indicates that the object is compatibile with declarative processing.
       **/
@@ -2247,7 +2247,7 @@ object UINs extends js.Object {
     /**
       * Display options for the closed ToolBar.
       **/
-    var ClosedDisplayMode: winjsLib.Anon_Compact = js.native
+    var ClosedDisplayMode: winjsLib.Anon_CompactFull = js.native
     /**
       * Indicates that the object is compatibile with declarative processing.
       **/
@@ -2328,7 +2328,7 @@ object UINs extends js.Object {
     trait XYFocusEvent
       extends stdLib.CustomEvent[js.Any] {
       @JSName("detail")
-      var detail_XYFocusEvent: winjsLib.Anon_PreviousFocusElement = js.native
+      var detail_XYFocusEvent: winjsLib.Anon_KeyCode = js.native
     }
     
     trait XYFocusOptions extends js.Object {
@@ -2351,7 +2351,7 @@ object UINs extends js.Object {
     }
     
     var focusRoot: stdLib.HTMLElement = js.native
-    var keyCodeMap: winjsLib.Anon_Down = js.native
+    var keyCodeMap: winjsLib.Anon_Accept = js.native
     def addEventListener(`type`: java.lang.String, handler: stdLib.EventListener): scala.Unit = js.native
     def dispatchEvent(`type`: java.lang.String, eventProperties: js.Any): scala.Boolean = js.native
     def findNextFocusElement(direction: java.lang.String): stdLib.HTMLElement = js.native

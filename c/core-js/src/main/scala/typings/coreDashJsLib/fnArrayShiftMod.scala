@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/array/shift", JSImport.Namespace)
 @js.native
 object fnArrayShiftMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayTArrayLike_626826892]
+  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayArrayLikeT]
 

@@ -29,8 +29,8 @@ class BufferAttribute protected () extends js.Object {
   def copyArray(array: stdLib.ArrayLike[scala.Double]): BufferAttribute = js.native
   def copyAt(index1: scala.Double, attribute: BufferAttribute, index2: scala.Double): BufferAttribute = js.native
   def copyColorsArray(colors: js.Array[threeLib.Anon_B]): BufferAttribute = js.native
-  def copyVector2sArray(vectors: js.Array[threeLib.Anon_Y]): BufferAttribute = js.native
-  def copyVector3sArray(vectors: js.Array[threeLib.Anon_Z]): BufferAttribute = js.native
+  def copyVector2sArray(vectors: js.Array[threeLib.Anon_X]): BufferAttribute = js.native
+  def copyVector3sArray(vectors: js.Array[threeLib.Anon_XY]): BufferAttribute = js.native
   def copyVector4sArray(vectors: js.Array[threeLib.Anon_W]): BufferAttribute = js.native
   def getW(index: scala.Double): scala.Double = js.native
   def getX(index: scala.Double): scala.Double = js.native

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(yandexDashMapsLib.ymapsNs.ICustomizable because Would inherit conflicting mutable fields List(events))*/
-@JSGlobal("ymaps.control.SearchControl")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- yandexDashMapsLib.ymapsNs.ICustomizable because var conflicts: events. Inlined options */ @JSGlobal("ymaps.control.SearchControl")
 @js.native
 class SearchControl ()
   extends yandexDashMapsLib.ymapsNs.IControl {

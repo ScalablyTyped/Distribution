@@ -20,13 +20,13 @@ class Projector () extends js.Object {
     scene: threeLib.threeDashCoreMod.Scene,
     camera: threeLib.threeDashCoreMod.Camera,
     sortObjects: scala.Boolean
-  ): threeLib.Anon_LightsObjects = js.native
+  ): threeLib.Anon_Elements = js.native
   def projectScene(
     scene: threeLib.threeDashCoreMod.Scene,
     camera: threeLib.threeDashCoreMod.Camera,
     sortObjects: scala.Boolean,
     sortElements: scala.Boolean
-  ): threeLib.Anon_LightsObjects = js.native
+  ): threeLib.Anon_Elements = js.native
   // deprecated.
   def projectVector(vector: threeLib.threeDashCoreMod.Vector3, camera: threeLib.threeDashCoreMod.Camera): threeLib.threeDashCoreMod.Vector3 = js.native
   // deprecated.

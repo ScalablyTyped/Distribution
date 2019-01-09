@@ -30,19 +30,19 @@ trait ReleasesResource extends js.Object {
     * refers to a new `Ruleset`. The `Ruleset` reference for a `Release` may be
     * updated using the UpdateRelease method.
     */
-  def create(request: gapiDotClientDotFirebaserulesLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Release]
+  def create(request: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Release]
   /** Delete a `Release` by resource name. */
-  def delete(request: gapiDotClientDotFirebaserulesLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /** Get a `Release` by name. */
-  def get(request: gapiDotClientDotFirebaserulesLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Release]
+  def get(request: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Release]
   /** Get the `Release` executable to use when enforcing rules. */
-  def getExecutable(request: gapiDotClientDotFirebaserulesLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[GetReleaseExecutableResponse]
+  def getExecutable(request: gapiDotClientDotFirebaserulesLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[GetReleaseExecutableResponse]
   /**
     * List the `Release` values for a project. This list may optionally be
     * filtered by `Release` name, `Ruleset` name, `TestSuite` name, or any
     * combination thereof.
     */
-  def list(request: gapiDotClientDotFirebaserulesLib.Anon_NameAccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListReleasesResponse]
+  def list(request: gapiDotClientDotFirebaserulesLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ListReleasesResponse]
   /**
     * Update a `Release`.
     *
@@ -50,6 +50,6 @@ trait ReleasesResource extends js.Object {
     * honored. `Release` rename is not supported. To create a `Release` use the
     * CreateRelease method.
     */
-  def update(request: gapiDotClientDotFirebaserulesLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Release]
+  def update(request: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Release]
 }
 

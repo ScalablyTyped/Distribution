@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TimeInterval ()
   extends cesiumLib.cesiumMod.CesiumNs.TimeInterval {
-  def this(options: cesiumLib.Anon_IsStopIncluded) = this()
+  def this(options: cesiumLib.Anon_Data) = this()
 }
 
 @JSImport("cesium", "TimeInterval")
@@ -44,8 +44,8 @@ object TimeInterval extends js.Object {
     epsilon: scala.Double,
     dataComparer: cesiumLib.cesiumMod.CesiumNs.TimeIntervalNs.DataComparer
   ): scala.Boolean = js.native
-  def fromIso8601(options: cesiumLib.Anon_Data): cesiumLib.cesiumMod.CesiumNs.TimeInterval = js.native
-  def fromIso8601(options: cesiumLib.Anon_Data, result: cesiumLib.cesiumMod.CesiumNs.TimeInterval): cesiumLib.cesiumMod.CesiumNs.TimeInterval = js.native
+  def fromIso8601(options: cesiumLib.Anon_DataIsStartIncluded): cesiumLib.cesiumMod.CesiumNs.TimeInterval = js.native
+  def fromIso8601(options: cesiumLib.Anon_DataIsStartIncluded, result: cesiumLib.cesiumMod.CesiumNs.TimeInterval): cesiumLib.cesiumMod.CesiumNs.TimeInterval = js.native
   def intersect(
     left: cesiumLib.cesiumMod.CesiumNs.TimeInterval,
     right: cesiumLib.cesiumMod.CesiumNs.TimeInterval,

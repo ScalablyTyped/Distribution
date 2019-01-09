@@ -13,7 +13,7 @@ trait Compatibility extends js.Object {
   def mBtn(event: stdLib.MouseEvent): scala.Double
   def mO(): js.Any
   def now(): scala.Double
-  def page(event: stdLib.MouseEvent): overlayscrollbarsLib.Anon_Y
+  def page(event: stdLib.MouseEvent): overlayscrollbarsLib.Anon_XYNumber
   def prvD(event: stdLib.Event): scala.Unit
   def rAF(): js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, _], scala.Double]
   def rO(): js.Any

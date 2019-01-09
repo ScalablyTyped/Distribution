@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object distDashEsUtilsFrequentlyMod extends js.Object {
   // tslint:disable-next-line strict-export-declare-modifiers
-  val default: emojiDashMartLib.Anon_Get = js.native
+  val default: emojiDashMartLib.Anon_Add = js.native
 }
 

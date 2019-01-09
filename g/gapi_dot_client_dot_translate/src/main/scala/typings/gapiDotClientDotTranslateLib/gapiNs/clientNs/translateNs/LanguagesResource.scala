@@ -15,6 +15,6 @@ trait LanguagesResource extends js.Object {
   /** Human readable name of the language localized to the target language. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** Returns a list of supported languages for translation. */
-  def list(request: gapiDotClientDotTranslateLib.Anon_AccesstokenModel): gapiDotClientLib.gapiNs.clientNs.Request[LanguagesListResponse]
+  def list(request: gapiDotClientDotTranslateLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[LanguagesListResponse]
 }
 

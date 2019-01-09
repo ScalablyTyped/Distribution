@@ -51,7 +51,7 @@ class GoogleAuth () extends js.Object {
   def `then`(onInit: js.Function1[/* googleAuth */ this.type, _]): js.Any = js.native
   def `then`(
     onInit: js.Function1[/* googleAuth */ this.type, _],
-    onFailure: js.Function1[/* reason */ gapiDotAuth2Lib.Anon_ErrorDetails, _]
+    onFailure: js.Function1[/* reason */ gapiDotAuth2Lib.Anon_Details, _]
   ): js.Any = js.native
 }
 

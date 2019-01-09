@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class AssertionError ()
   extends assertLib.assertMod.AssertionError {
-  def this(options: assertLib.Anon_Expected) = this()
+  def this(options: assertLib.Anon_Actual) = this()
 }
 

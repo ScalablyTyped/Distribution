@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/array/sort", JSImport.Namespace)
 @js.native
 object libraryFnArraySortMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayCompareFn]
+  extends org.scalablytyped.runtime.TopLevel[Anon_AArray]
 

@@ -38,7 +38,7 @@ object FileSystemNs extends js.Object {
   
   trait PauseResult extends js.Object {
     var fileUri: java.lang.String
-    var options: expoLib.Anon_Md5Boolean
+    var options: expoLib.Anon_Md5Boolean_1357212231
     var resumeData: java.lang.String
     var url: java.lang.String
   }
@@ -72,9 +72,9 @@ object FileSystemNs extends js.Object {
   def deleteAsync(fileUri: java.lang.String): js.Promise[scala.Unit] = js.native
   def deleteAsync(fileUri: java.lang.String, options: expoLib.Anon_Idempotent): js.Promise[scala.Unit] = js.native
   def downloadAsync(uri: java.lang.String, fileUri: java.lang.String): js.Promise[DownloadResult] = js.native
-  def downloadAsync(uri: java.lang.String, fileUri: java.lang.String, options: expoLib.Anon_Md5): js.Promise[DownloadResult] = js.native
+  def downloadAsync(uri: java.lang.String, fileUri: java.lang.String, options: expoLib.Anon_Md5Boolean): js.Promise[DownloadResult] = js.native
   def getInfoAsync(fileUri: java.lang.String): js.Promise[FileInfo] = js.native
-  def getInfoAsync(fileUri: java.lang.String, options: expoLib.Anon_Size): js.Promise[FileInfo] = js.native
+  def getInfoAsync(fileUri: java.lang.String, options: expoLib.Anon_Md5): js.Promise[FileInfo] = js.native
   def makeDirectoryAsync(dirUri: java.lang.String): js.Promise[scala.Unit] = js.native
   def makeDirectoryAsync(dirUri: java.lang.String, options: expoLib.Anon_Intermediates): js.Promise[scala.Unit] = js.native
   def moveAsync(options: expoLib.Anon_From): js.Promise[scala.Unit] = js.native
@@ -82,6 +82,6 @@ object FileSystemNs extends js.Object {
   def readDirectoryAsync(dirUri: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def writeAsStringAsync(fileUri: java.lang.String, contents: java.lang.String): js.Promise[scala.Unit] = js.native
   type DownloadProgressCallback = js.Function1[/* data */ DownloadProgressData, scala.Unit]
-  type FileInfo = expoLib.Anon_SizeModificationTime | expoLib.Anon_IsDirectory
+  type FileInfo = expoLib.Anon_Exists | expoLib.Anon_ExistsFalse
 }
 

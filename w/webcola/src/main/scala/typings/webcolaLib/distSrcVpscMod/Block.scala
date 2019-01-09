@@ -22,7 +22,7 @@ class Block protected () extends js.Object {
   def isActiveDirectedPathBetween(u: Variable, v: Variable): scala.Boolean = js.native
   def mergeAcross(b: Block, c: Constraint, dist: scala.Double): scala.Unit = js.native
   /* private */ def populateSplitBlock(v: js.Any, prev: js.Any): js.Any = js.native
-  def splitBetween(vl: Variable, vr: Variable): webcolaLib.Anon_Rb = js.native
+  def splitBetween(vl: Variable, vr: Variable): webcolaLib.Anon_Constraint = js.native
   def traverse(visit: js.Function1[/* c */ Constraint, _], acc: js.Array[_]): scala.Unit = js.native
   def traverse(visit: js.Function1[/* c */ Constraint, _], acc: js.Array[_], v: Variable): scala.Unit = js.native
   def traverse(visit: js.Function1[/* c */ Constraint, _], acc: js.Array[_], v: Variable, prev: Variable): scala.Unit = js.native

@@ -15,6 +15,6 @@ trait HandlerDecorations extends js.Object {
     * (these can be overriden by values explicitly set via the options).
     * @see {@link https://github.com/hapijs/vision/blob/master/API.md#the-view-handler}
     */
-  var view: js.UndefOr[java.lang.String | visionLib.Anon_Options] = js.undefined
+  var view: js.UndefOr[java.lang.String | visionLib.Anon_Context] = js.undefined
 }
 

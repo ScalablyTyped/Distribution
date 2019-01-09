@@ -108,7 +108,7 @@ trait TableHeaderColumnProps
   	 * The function should return either a JSX element for the field, or false to default back to the standard edit
   	 * element.
   	 */
-  var customInsertEditor: js.UndefOr[reactDashBootstrapDashTableLib.Anon_GetElement] = js.undefined
+  var customInsertEditor: js.UndefOr[reactDashBootstrapDashTableLib.Anon_Attr] = js.undefined
   /**
   	 * Set the text alignment in the column, possible values are 'left', 'center', 'right', 'start' and 'end'.
   	 */

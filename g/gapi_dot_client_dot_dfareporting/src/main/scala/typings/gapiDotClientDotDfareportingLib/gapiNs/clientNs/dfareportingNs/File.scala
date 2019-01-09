@@ -25,6 +25,6 @@ trait File extends js.Object {
   /** The status of the report file. */
   var status: js.UndefOr[java.lang.String] = js.undefined
   /** The URLs where the completed report file can be downloaded. */
-  var urls: js.UndefOr[gapiDotClientDotDfareportingLib.Anon_BrowserUrl] = js.undefined
+  var urls: js.UndefOr[gapiDotClientDotDfareportingLib.Anon_ApiUrl] = js.undefined
 }
 

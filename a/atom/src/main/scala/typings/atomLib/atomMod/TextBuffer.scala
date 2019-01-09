@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 /** Create a new buffer with the given params. */
 class TextBuffer () extends js.Object {
-  def this(params: atomLib.Anon_TextShouldDestroyOnFileDelete) = this()
+  def this(params: atomLib.Anon_ShouldDestroyOnFileDelete) = this()
   /** Create a new buffer with the given starting text. */
   def this(text: java.lang.String) = this()
   /** Whether or not the bufffer has been destroyed. */
@@ -27,7 +27,7 @@ class TextBuffer () extends js.Object {
   // Markers
   /** Create a layer to contain a set of related markers. */
   def addMarkerLayer(): MarkerLayer = js.native
-  def addMarkerLayer(options: atomLib.Anon_Role): MarkerLayer = js.native
+  def addMarkerLayer(options: atomLib.Anon_MaintainHistoryPersistent): MarkerLayer = js.native
   /** Append text to the end of the buffer. */
   def append(text: java.lang.String): Range = js.native
   def append(text: java.lang.String, options: TextEditOptions): Range = js.native
@@ -217,7 +217,7 @@ class TextBuffer () extends js.Object {
   def lineLengthForRow(row: scala.Double): scala.Double = js.native
   /** Create a marker at the given position with no tail in the default marker layer. */
   def markPosition(position: PointCompatible): Marker = js.native
-  def markPosition(position: PointCompatible, options: atomLib.Anon_ExclusiveInvalidate): Marker = js.native
+  def markPosition(position: PointCompatible, options: atomLib.Anon_ExclusiveInside): Marker = js.native
   /** Create a marker with the given range in the default marker layer. */
   def markRange(range: RangeCompatible): Marker = js.native
   def markRange(range: RangeCompatible, properties: atomLib.Anon_Exclusive): Marker = js.native
@@ -374,7 +374,7 @@ class TextBuffer () extends js.Object {
   ): scala.Unit = js.native
   /** Returns a plain javascript object representation of the TextBuffer. */
   def serialize(): js.Object = js.native
-  def serialize(options: atomLib.Anon_MarkerLayers): js.Object = js.native
+  def serialize(options: atomLib.Anon_History): js.Object = js.native
   /** Sets the character set encoding for this buffer. */
   def setEncoding(encoding: java.lang.String): scala.Unit = js.native
   /** Set the path for the buffer's associated file. */

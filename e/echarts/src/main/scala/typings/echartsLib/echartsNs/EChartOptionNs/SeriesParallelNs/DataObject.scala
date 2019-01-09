@@ -28,7 +28,7 @@ trait DataObject extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.data.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_LineStyleAnonShadowOffsetXShadowBlurColorShadowColor] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_LineStyleAnonColorOpacityShadowBlur] = js.undefined
   /**
     * Line style.
     *

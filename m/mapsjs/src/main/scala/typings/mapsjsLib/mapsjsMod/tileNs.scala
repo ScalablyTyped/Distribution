@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 object tileNs extends js.Object {
   @js.native
   class descriptorLocal protected () extends js.Object {
-    def this(options: mapsjsLib.Anon_ValueFieldNames) = this()
+    def this(options: mapsjsLib.Anon_BleedRatioGeometryFieldName) = this()
   }
   
   @js.native
   class descriptorMDNRestFeature protected () extends js.Object {
     def this(mapId: java.lang.String, layerId: java.lang.String) = this()
-    def this(mapId: java.lang.String, layerId: java.lang.String, options: mapsjsLib.Anon_FieldNames) = this()
+    def this(mapId: java.lang.String, layerId: java.lang.String, options: mapsjsLib.Anon_BleedRatio) = this()
     /**
     		 * Gets the bleed ratio.
     		 * @returns {number} The current bleed ratio.
@@ -98,7 +98,7 @@ object tileNs extends js.Object {
   @js.native
   class descriptorMDNRestMap protected () extends js.Object {
     def this(mapId: java.lang.String) = this()
-    def this(mapId: java.lang.String, options: mapsjsLib.Anon_MapCacheOption) = this()
+    def this(mapId: java.lang.String, options: mapsjsLib.Anon_BackgroundColorStr) = this()
     /**
     		 * Gets map image background color.
     		 * @returns {string} CSS style string for the map image background color.
@@ -329,7 +329,7 @@ object tileNs extends js.Object {
     		 * collection respectively, and ulX and ulY are the offset in pixels
     		 * of the upper left tile from the upper left target extents.
     		 */
-    def compose(extentsMapUnits: mapsjsLib.mapsjsMod.envelope, extentsDeviceUnits: mapsjsLib.mapsjsMod.envelope): mapsjsLib.Anon_IdxMinX = js.native
+    def compose(extentsMapUnits: mapsjsLib.mapsjsMod.envelope, extentsDeviceUnits: mapsjsLib.mapsjsMod.envelope): mapsjsLib.Anon_EndpointCollection = js.native
     /**
       * Unbind all associations with this tile layer to facilitate garbage collection
       */
@@ -513,7 +513,7 @@ object tileNs extends js.Object {
   
   @js.native
   class layerOptions protected () extends js.Object {
-    def this(id: java.lang.String, options: mapsjsLib.Anon_Requestor) = this()
+    def this(id: java.lang.String, options: mapsjsLib.Anon_Descriptor) = this()
     /**
     		 * Gets ID associated with the underlying tile layer.
     		 * @returns {string} ID of the layer.
@@ -576,7 +576,7 @@ object tileNs extends js.Object {
   
   @js.native
   class renderer () extends js.Object {
-    def this(options: mapsjsLib.Anon_RenderPoint) = this()
+    def this(options: mapsjsLib.Anon_Bleed) = this()
     /**
     		 * Sets the render bitmap function which takes a bitmap image and
     		 * a canvas context and renders the image to the canvas context.
@@ -847,7 +847,7 @@ object tileNs extends js.Object {
   
   @js.native
   class requestorLocal () extends requestor {
-    def this(options: mapsjsLib.Anon_DataFormatTimeoutMs) = this()
+    def this(options: mapsjsLib.Anon_Data) = this()
     /** 
     		 * Returns your source data parsed into theformat { Shapes: [],
       * Values: [], Bounds: [] } This may be useful for doing client-side 
@@ -856,7 +856,7 @@ object tileNs extends js.Object {
       * do a quick spatial check for complex polygons.
     		 * @returns {object} Parsed data object in the form {Shapes, Values, Bounds}.
     		 */
-    def getParsedData(): mapsjsLib.Anon_Shapes = js.native
+    def getParsedData(): mapsjsLib.Anon_Bounds = js.native
     /** 
     		 * Gets the unparsed source data.
     		 * @returns {object} Array of source data objects.

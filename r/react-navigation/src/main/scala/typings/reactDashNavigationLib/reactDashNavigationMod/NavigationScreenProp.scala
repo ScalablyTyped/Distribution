@@ -10,7 +10,7 @@ trait NavigationScreenProp[S, P] extends js.Object {
   @JSName("dispatch")
   var dispatch_Original: NavigationDispatch = js.native
   var router: js.UndefOr[NavigationRouter[NavigationState, js.Object]] = js.native
-  var state: S with reactDashNavigationLib.Anon_Params[P] = js.native
+  var state: S with reactDashNavigationLib.Anon_ParamsP[P] = js.native
   @JSName("addListener")
   def addListener_didBlur(
     eventName: reactDashNavigationLib.reactDashNavigationLibStrings.didBlur,

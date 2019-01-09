@@ -118,7 +118,7 @@ object angularModMembers extends js.Object {
     storyFn: atStorybookReactLib.reactMod.RenderFunction,
     context: atStorybookAddonDashKnobsLib.addonDashKnobsMod.StoryContext
   ): reactLib.reactMod.ReactNs.ReactElement[atStorybookAddonDashKnobsLib.addonDashKnobsMod.WrapStoryProps] = js.native
-  def withKnobsOptions(options: atStorybookAddonDashKnobsLib.Anon_Timestamps): js.Function2[
+  def withKnobsOptions(options: atStorybookAddonDashKnobsLib.Anon_Debounce): js.Function2[
     /* storyFn */ atStorybookReactLib.reactMod.RenderFunction, 
     /* context */ atStorybookAddonDashKnobsLib.addonDashKnobsMod.StoryContext, 
     reactLib.reactMod.ReactNs.ReactElement[atStorybookAddonDashKnobsLib.addonDashKnobsMod.WrapStoryProps]

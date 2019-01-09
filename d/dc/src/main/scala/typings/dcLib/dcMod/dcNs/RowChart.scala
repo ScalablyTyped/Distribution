@@ -27,7 +27,7 @@ trait RowChart
   var titleLabelOffsetX_Original: IGetSet[scala.Double, RowChart] = js.native
   @JSName("xAxis")
   var xAxis_Original: IGetSet[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.svg.Axis */ _, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ _, 
     RowChart
   ] = js.native
   @JSName("x")
@@ -49,6 +49,6 @@ trait RowChart
   def x(): Scale[scala.Double] = js.native
   def x(t: Scale[scala.Double]): RowChart = js.native
   def xAxis(): js.Any = js.native
-  def xAxis(t: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.svg.Axis */ js.Any): RowChart = js.native
+  def xAxis(t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any): RowChart = js.native
 }
 

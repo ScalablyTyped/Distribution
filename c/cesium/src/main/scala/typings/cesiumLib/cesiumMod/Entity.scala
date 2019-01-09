@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Entity ()
   extends cesiumLib.cesiumMod.CesiumNs.Entity {
-  def this(options: cesiumLib.Anon_Parent) = this()
+  def this(options: cesiumLib.Anon_Availability) = this()
 }
 

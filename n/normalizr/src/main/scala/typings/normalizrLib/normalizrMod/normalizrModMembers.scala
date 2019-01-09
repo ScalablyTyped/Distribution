@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object normalizrModMembers extends js.Object {
   def denormalize(input: js.Any, schema: Schema, entities: js.Any): js.Any = js.native
-  def normalize(data: js.Any, schema: Schema): normalizrLib.Anon_Result = js.native
+  def normalize(data: js.Any, schema: Schema): normalizrLib.Anon_Entities = js.native
 }
 

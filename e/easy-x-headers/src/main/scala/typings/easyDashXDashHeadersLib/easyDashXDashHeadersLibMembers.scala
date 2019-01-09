@@ -17,8 +17,8 @@ object easyDashXDashHeadersLibMembers extends js.Object {
   def clearImmediate(immediateId: js.Any): scala.Unit = js.native
   def clearInterval(intervalId: easyDashXDashHeadersLib.NodeJSNs.Timer): scala.Unit = js.native
   def clearTimeout(timeoutId: easyDashXDashHeadersLib.NodeJSNs.Timer): scala.Unit = js.native
-  def setImmediate(callback: js.Function1[/* repeated */js.Any, scala.Unit], args: js.Any*): js.Any = js.native
-  def setInterval(callback: js.Function1[/* repeated */js.Any, scala.Unit], ms: scala.Double, args: js.Any*): easyDashXDashHeadersLib.NodeJSNs.Timer = js.native
-  def setTimeout(callback: js.Function1[/* repeated */js.Any, scala.Unit], ms: scala.Double, args: js.Any*): easyDashXDashHeadersLib.NodeJSNs.Timer = js.native
+  def setImmediate(callback: js.Function1[/* repeated */ js.Any, scala.Unit], args: js.Any*): js.Any = js.native
+  def setInterval(callback: js.Function1[/* repeated */ js.Any, scala.Unit], ms: scala.Double, args: js.Any*): easyDashXDashHeadersLib.NodeJSNs.Timer = js.native
+  def setTimeout(callback: js.Function1[/* repeated */ js.Any, scala.Unit], ms: scala.Double, args: js.Any*): easyDashXDashHeadersLib.NodeJSNs.Timer = js.native
 }
 

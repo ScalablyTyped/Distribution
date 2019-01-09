@@ -36,11 +36,11 @@ object defaultNs extends js.Object {
   }
   
   val all: rsvpLib.Anon_Values = js.native
-  val async: rsvpLib.Anon_Callback = js.native
+  val async: rsvpLib.Anon_Arg = js.native
   val cast: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Promise.cast */ js.Any = js.native
   val off: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EventTarget.off */ js.Any = js.native
   val on: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof EventTarget.on */ js.Any = js.native
-  val race: rsvpLib.Anon_ValuesT = js.native
+  val race: rsvpLib.Anon_ValuesArray = js.native
   val reject: rsvpLib.Anon_Reason = js.native
   val resolve: rsvpLib.Anon_Value = js.native
   def allSettled[T](entries: js.Array[rsvpLib.rsvpMod.RSVPNs.Arg[T]]): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[rsvpLib.rsvpMod.RSVPNs.PromiseState[T]]] = js.native
@@ -428,9 +428,7 @@ object defaultNs extends js.Object {
     options: js.Tuple2[K1, K2]
   ): js.Function1[
     /* arg1 */ A, 
-    rsvpLib.rsvpMod.RSVPNs.Promise[
-      /* import warning: ImportType.apply Failed type conversion: {typemapped, typemapped} */ js.Any
-    ]
+    rsvpLib.rsvpMod.RSVPNs.Promise[rsvpLib.rsvpLibStrings.denodeify with js.Any]
   ] = js.native
   def denodeify[T1, T2, T3, A, K1 /* <: java.lang.String */, K2 /* <: java.lang.String */, K3 /* <: java.lang.String */](
     nodeFunc: js.Function2[
@@ -441,9 +439,7 @@ object defaultNs extends js.Object {
     options: js.Tuple3[K1, K2, K3]
   ): js.Function1[
     /* arg1 */ A, 
-    rsvpLib.rsvpMod.RSVPNs.Promise[
-      /* import warning: ImportType.apply Failed type conversion: {typemapped, typemapped, typemapped} */ js.Any
-    ]
+    rsvpLib.rsvpMod.RSVPNs.Promise[rsvpLib.rsvpLibStrings.denodeify with js.Any]
   ] = js.native
   @JSName("denodeify")
   def denodeify_T1T2A[T1, T2, A](
@@ -591,7 +587,7 @@ object defaultNs extends js.Object {
       rsvpLib.rsvpMod.RSVPNs.Arg[T6]
     ],
     filterFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6, scala.Boolean]
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with rsvpLib.Anon_Length6] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with rsvpLib.Anon_6] = js.native
   def filter[T1, T2, T3, T4, T5, T6](
     entries: js.Tuple6[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -603,7 +599,7 @@ object defaultNs extends js.Object {
     ],
     filterFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6, scala.Boolean],
     label: java.lang.String
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with rsvpLib.Anon_Length6] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with rsvpLib.Anon_6] = js.native
   def filter[T1, T2, T3, T4, T5, T6, T7](
     entries: js.Tuple7[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -721,21 +717,21 @@ object defaultNs extends js.Object {
   def hash[T](`object`: rsvpLib.rsvpLibStrings.hash with T, label: java.lang.String): rsvpLib.rsvpMod.RSVPNs.Promise[T] = js.native
   def hashSettled[T](`object`: rsvpLib.rsvpLibStrings.hashSettled with T): rsvpLib.rsvpMod.RSVPNs.Promise[rsvpLib.rsvpLibStrings.hashSettled with T] = js.native
   def hashSettled[T](`object`: rsvpLib.rsvpLibStrings.hashSettled with T, label: java.lang.String): rsvpLib.rsvpMod.RSVPNs.Promise[rsvpLib.rsvpLibStrings.hashSettled with T] = js.native
-  def map[T, U](entries: js.Array[rsvpLib.rsvpMod.RSVPNs.Arg[T]], mapFn: js.Function1[/* item */ T, U]): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length] = js.native
+  def map[T, U](entries: js.Array[rsvpLib.rsvpMod.RSVPNs.Arg[T]], mapFn: js.Function1[/* item */ T, U]): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_1] = js.native
   def map[T, U](
     entries: js.Array[rsvpLib.rsvpMod.RSVPNs.Arg[T]],
     mapFn: js.Function1[/* item */ T, U],
     label: java.lang.String
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_1] = js.native
   def map[T1, T2, U](
     entries: js.Tuple2[rsvpLib.rsvpMod.RSVPNs.Arg[T1], rsvpLib.rsvpMod.RSVPNs.Arg[T2]],
     mapFn: js.Function1[/* item */ T1 | T2, U]
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length2] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_2] = js.native
   def map[T1, T2, U](
     entries: js.Tuple2[rsvpLib.rsvpMod.RSVPNs.Arg[T1], rsvpLib.rsvpMod.RSVPNs.Arg[T2]],
     mapFn: js.Function1[/* item */ T1 | T2, U],
     label: java.lang.String
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length2] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_2] = js.native
   def map[T1, T2, T3, U](
     entries: js.Tuple3[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -743,7 +739,7 @@ object defaultNs extends js.Object {
       rsvpLib.rsvpMod.RSVPNs.Arg[T3]
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3, U]
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length3] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_3] = js.native
   def map[T1, T2, T3, U](
     entries: js.Tuple3[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -752,7 +748,7 @@ object defaultNs extends js.Object {
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3, U],
     label: java.lang.String
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length3] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_3] = js.native
   def map[T1, T2, T3, T4, U](
     entries: js.Tuple4[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -761,7 +757,7 @@ object defaultNs extends js.Object {
       rsvpLib.rsvpMod.RSVPNs.Arg[T4]
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4, U]
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length4] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_4] = js.native
   def map[T1, T2, T3, T4, U](
     entries: js.Tuple4[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -771,7 +767,7 @@ object defaultNs extends js.Object {
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4, U],
     label: java.lang.String
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length4] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_4] = js.native
   def map[T1, T2, T3, T4, T5, U](
     entries: js.Tuple5[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -781,7 +777,7 @@ object defaultNs extends js.Object {
       rsvpLib.rsvpMod.RSVPNs.Arg[T5]
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5, U]
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length5] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_5] = js.native
   def map[T1, T2, T3, T4, T5, U](
     entries: js.Tuple5[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -792,7 +788,7 @@ object defaultNs extends js.Object {
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5, U],
     label: java.lang.String
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length5] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_5] = js.native
   def map[T1, T2, T3, T4, T5, T6, U](
     entries: js.Tuple6[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -803,7 +799,7 @@ object defaultNs extends js.Object {
       rsvpLib.rsvpMod.RSVPNs.Arg[T6]
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6, U]
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length6] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_6] = js.native
   def map[T1, T2, T3, T4, T5, T6, U](
     entries: js.Tuple6[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -815,7 +811,7 @@ object defaultNs extends js.Object {
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6, U],
     label: java.lang.String
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length6] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_6] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, U](
     entries: js.Tuple7[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -827,7 +823,7 @@ object defaultNs extends js.Object {
       rsvpLib.rsvpMod.RSVPNs.Arg[T7]
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7, U]
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length7] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_7] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, U](
     entries: js.Tuple7[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -840,7 +836,7 @@ object defaultNs extends js.Object {
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7, U],
     label: java.lang.String
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length7] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_7] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, T8, U](
     entries: js.Tuple8[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -853,7 +849,7 @@ object defaultNs extends js.Object {
       rsvpLib.rsvpMod.RSVPNs.Arg[T8]
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8, U]
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length8] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_8] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, T8, U](
     entries: js.Tuple8[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -867,7 +863,7 @@ object defaultNs extends js.Object {
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8, U],
     label: java.lang.String
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length8] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_8] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, T8, T9, U](
     entries: js.Tuple9[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -881,7 +877,7 @@ object defaultNs extends js.Object {
       rsvpLib.rsvpMod.RSVPNs.Arg[T9]
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9, U]
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length9] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_9] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, T8, T9, U](
     entries: js.Tuple9[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -896,7 +892,7 @@ object defaultNs extends js.Object {
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9, U],
     label: java.lang.String
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length9] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_9] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, U](
     entries: js.Tuple10[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -911,7 +907,7 @@ object defaultNs extends js.Object {
       rsvpLib.rsvpMod.RSVPNs.Arg[T10]
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10, U]
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length10] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_10] = js.native
   def map[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, U](
     entries: js.Tuple10[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -927,7 +923,7 @@ object defaultNs extends js.Object {
     ],
     mapFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10, U],
     label: java.lang.String
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_Length10] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_10] = js.native
   def rethrow(reason: js.Any): scala.Unit = js.native
   @js.native
   object EventTarget extends js.Object {

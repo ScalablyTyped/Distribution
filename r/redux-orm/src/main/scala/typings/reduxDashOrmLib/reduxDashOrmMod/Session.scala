@@ -13,13 +13,9 @@ class Session[State /* <: ORMCommonState */] protected () extends js.Object {
   var batchToken: js.Any = js.native
   var db: DB = js.native
   var initialState: State = js.native
-  var models: js.Array[
-    org.scalablytyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]]
-  ] = js.native
+  var models: js.Array[reduxDashOrmLib.Anon_Action] = js.native
   var schema: ORM[State] = js.native
-  var sessionBoundModels: js.Array[
-    org.scalablytyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]]
-  ] = js.native
+  var sessionBoundModels: js.Array[reduxDashOrmLib.Anon_Action] = js.native
   var state: State = js.native
   var withMutations: scala.Boolean = js.native
   def applyUpdate(updateSpec: js.Any): js.Any = js.native

@@ -42,7 +42,7 @@ trait ga extends js.Object {
   ): scala.Unit = js.native
   def apply(
     command: googleDotAnalyticsLib.googleDotAnalyticsLibStrings.send,
-    fieldsObject: googleDotAnalyticsLib.Anon_EventCategoryEventAction
+    fieldsObject: googleDotAnalyticsLib.Anon_EventActionEventCategory
   ): scala.Unit = js.native
   def apply(command: googleDotAnalyticsLib.googleDotAnalyticsLibStrings.send, fieldsObject: FieldsObject): scala.Unit = js.native
   def apply(
@@ -78,7 +78,7 @@ trait ga extends js.Object {
   def apply(
     command: googleDotAnalyticsLib.googleDotAnalyticsLibStrings.send,
     hitType: googleDotAnalyticsLib.googleDotAnalyticsLibStrings.event,
-    fieldsObject: googleDotAnalyticsLib.Anon_EventCategory
+    fieldsObject: googleDotAnalyticsLib.Anon_EventAction
   ): scala.Unit = js.native
   def apply(
     command: googleDotAnalyticsLib.googleDotAnalyticsLibStrings.send,
@@ -88,7 +88,7 @@ trait ga extends js.Object {
   def apply(
     command: googleDotAnalyticsLib.googleDotAnalyticsLibStrings.send,
     hitType: googleDotAnalyticsLib.googleDotAnalyticsLibStrings.social,
-    fieldsObject: googleDotAnalyticsLib.Anon_SocialTarget
+    fieldsObject: googleDotAnalyticsLib.Anon_SocialAction
   ): scala.Unit = js.native
   def apply(
     command: googleDotAnalyticsLib.googleDotAnalyticsLibStrings.send,
@@ -100,7 +100,7 @@ trait ga extends js.Object {
   def apply(
     command: googleDotAnalyticsLib.googleDotAnalyticsLibStrings.send,
     hitType: googleDotAnalyticsLib.googleDotAnalyticsLibStrings.timing,
-    fieldsObject: googleDotAnalyticsLib.Anon_TimingVar
+    fieldsObject: googleDotAnalyticsLib.Anon_TimingCategory
   ): scala.Unit = js.native
   def apply(
     command: googleDotAnalyticsLib.googleDotAnalyticsLibStrings.send,

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TileCoordinatesImageryProvider ()
   extends cesiumLib.cesiumMod.CesiumNs.TileCoordinatesImageryProvider {
-  def this(options: cesiumLib.Anon_TileWidth) = this()
+  def this(options: cesiumLib.Anon_ColorEllipsoid) = this()
   /* CompleteClass */
   override var credit: cesiumLib.cesiumMod.CesiumNs.Credit = js.native
   /* CompleteClass */

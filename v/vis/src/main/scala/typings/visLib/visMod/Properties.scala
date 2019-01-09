@@ -9,7 +9,7 @@ trait Properties extends js.Object {
   var edges: js.Array[java.lang.String]
   var event: js.Array[java.lang.String]
   var nodes: js.Array[java.lang.String]
-  var pointer: visLib.Anon_DOM
-  var previousSelection: js.UndefOr[visLib.Anon_Nodes] = js.undefined
+  var pointer: visLib.Anon_Canvas
+  var previousSelection: js.UndefOr[visLib.Anon_EdgesNodes] = js.undefined
 }
 

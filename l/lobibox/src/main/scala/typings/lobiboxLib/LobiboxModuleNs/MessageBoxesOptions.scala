@@ -18,6 +18,6 @@ trait MessageBoxesOptions extends MessageBoxesDefault {
       scala.Unit
     ]
   ] = js.undefined
-  var modalClasses: js.UndefOr[lobiboxLib.Anon_Window] = js.undefined
+  var modalClasses: js.UndefOr[lobiboxLib.Anon_Confirm] = js.undefined
 }
 

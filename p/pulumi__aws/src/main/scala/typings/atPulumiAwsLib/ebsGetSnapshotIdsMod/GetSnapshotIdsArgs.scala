@@ -11,7 +11,7 @@ trait GetSnapshotIdsArgs extends js.Object {
     * several valid keys, for a full reference, check out
     * [describe-volumes in the AWS CLI reference][1].
     */
-  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_Values]] = js.undefined
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   /**
     * Returns the snapshots owned by the specified owner id. Multiple owners can be specified.
     */

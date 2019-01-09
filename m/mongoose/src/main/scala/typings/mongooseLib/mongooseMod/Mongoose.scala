@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Mongoose extends js.Object {
   var DocumentProvider: js.Any = js.native
+  val ErrorNs: js.Any = js.native
   var Model: Model[_, js.Object] = js.native
   var Mongoose: org.scalablytyped.runtime.Instantiable1[
     /* args (repeated) */ js.Any, 
@@ -16,23 +17,31 @@ trait Mongoose extends js.Object {
   var Promise: js.Any = js.native
   var PromiseProvider: js.Any = js.native
   var STATES: js.Any = js.native
+  val SchemaNs: mongooseLib.Anon_Types = js.native
+  // Interfaces specific to schema type options should be scoped in this namespace
+  val SchemaTypeOptsNs: js.Any = js.native
+  val TypesNs: js.Any = js.native
   var connection: Connection = js.native
   var models: org.scalablytyped.runtime.StringDictionary[Model[_, js.Object]] = js.native
   var version: java.lang.String = js.native
-  def connect(uris: java.lang.String): js.Promise[js.Object] = js.native
+  def connect(uris: java.lang.String): js.Promise[
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias mongoose.mongoose.Mongoose */ js.Object
+  ] = js.native
   def connect(
     uris: java.lang.String,
     callback: js.Function1[/* err */ mongodbLib.mongodbMod.MongoError, scala.Unit]
   ): scala.Null = js.native
-  def connect(uris: java.lang.String, options: ConnectionOptions): js.Promise[js.Object] = js.native
+  def connect(uris: java.lang.String, options: ConnectionOptions): js.Promise[
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias mongoose.mongoose.Mongoose */ js.Object
+  ] = js.native
   def connect(
     uris: java.lang.String,
     options: ConnectionOptions,
     callback: js.Function1[/* err */ mongodbLib.mongodbMod.MongoError, scala.Unit]
   ): scala.Null = js.native
   def createConnection(): Connection = js.native
-  def createConnection(uri: java.lang.String): Connection with mongooseLib.Anon_Then = js.native
-  def createConnection(uri: java.lang.String, options: ConnectionOptions): Connection with mongooseLib.Anon_Then = js.native
+  def createConnection(uri: java.lang.String): Connection with mongooseLib.Anon_Catch = js.native
+  def createConnection(uri: java.lang.String, options: ConnectionOptions): Connection with mongooseLib.Anon_Catch = js.native
   def disconnect(): js.Promise[scala.Unit] = js.native
   def disconnect(fn: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]): scala.Null = js.native
   def get(key: java.lang.String): js.Any = js.native

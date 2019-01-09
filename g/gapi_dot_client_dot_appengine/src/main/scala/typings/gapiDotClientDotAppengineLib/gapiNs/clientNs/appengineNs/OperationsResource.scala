@@ -11,7 +11,7 @@ trait OperationsResource extends js.Object {
     * service.
     */
   def get(
-    request: gapiDotClientDotAppengineLib.Anon_AccesstokenAppsIdPrettyPrintBearertokenCallbackQuotaUser
+    request: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtoken
   ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Lists operations that match the specified filter in the request. If the server doesn't support this method, it returns UNIMPLEMENTED.NOTE: the name
@@ -20,6 +20,6 @@ trait OperationsResource extends js.Object {
     * includes the operations collection id, however overriding users must ensure the name binding is the parent resource, without the operations collection
     * id.
     */
-  def list(request: gapiDotClientDotAppengineLib.Anon_AccesstokenPageSizeAppsId): gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
+  def list(request: gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
 }
 

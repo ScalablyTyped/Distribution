@@ -12,12 +12,12 @@ trait Service extends js.Object {
     * Lists services in a given DC
     */
   @JSName("list")
-  var list_Original: consulLib.Anon_DcCallback = js.native
+  var list_Original: consulLib.Anon_CallbackDcOpts = js.native
   /**
     * Lists the nodes in a given service
     */
   @JSName("nodes")
-  var nodes_Original: consulLib.Anon_ServiceCallbackOpts = js.native
+  var nodes_Original: consulLib.Anon_CallbackOptsService = js.native
   /**
     * Lists services in a given DC
     */

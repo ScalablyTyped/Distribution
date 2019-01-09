@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object aframeMod {
   type ComponentDefinition[T /* <: js.Object */] = T with (stdLib.Partial[Component[_, System[_]]])
-  type DetailEvent[D] = stdLib.Event with aframeLib.Anon_Target[D]
+  type DetailEvent[D] = stdLib.Event with aframeLib.Anon_Detail[D]
   type GeometryDefinition[T /* <: js.Object */, U] = T with stdLib.Partial[Geometry[U]]
   type MultiPropertySchema[T /* <: js.Object */] = aframeLib.aframeLibStrings.MultiPropertySchema with T
   type NodeDefinition[T /* <: js.Object */] = T with stdLib.Partial[ANode]

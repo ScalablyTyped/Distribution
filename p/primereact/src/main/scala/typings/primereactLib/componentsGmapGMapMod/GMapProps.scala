@@ -10,7 +10,7 @@ trait GMapProps extends js.Object {
   var onMapClick: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
   var onMapDragEnd: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onMapReady: js.UndefOr[js.Function1[/* map */ js.Any, scala.Unit]] = js.undefined
-  var onOverlayClick: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventOverlay, scala.Unit]] = js.undefined
+  var onOverlayClick: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_Map, scala.Unit]] = js.undefined
   var onOverlayDrag: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
   var onOverlayDragEnd: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
   var onOverlayDragStart: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined

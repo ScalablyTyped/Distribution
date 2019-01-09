@@ -21,7 +21,7 @@ class NetworkInterface protected ()
   /**
     * Block to define the attachment of the ENI. Documented below.
     */
-  val attachments: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeviceIndex]] = js.native
+  val attachments: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_AttachmentIdDeviceIndex]] = js.native
   /**
     * A description for the network interface.
     */

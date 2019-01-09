@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(rxjsLib.internalTypesMod.Observer because Would inherit conflicting mutable fields List(closed))*/
-@JSImport("rxjs/internal/Subscriber", "Subscriber")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- rxjsLib.internalTypesMod.Observer because var conflicts: closed. Inlined next, error, complete */ @JSImport("rxjs/internal/Subscriber", "Subscriber")
 @js.native
 /**
   * @param {Observer|function(value: T): void} [destinationOrNext] A partially

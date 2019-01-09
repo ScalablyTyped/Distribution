@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/isByteLength", JSImport.Namespace)
 @js.native
 object libIsByteLengthMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_StrOptions]
+  extends org.scalablytyped.runtime.TopLevel[Anon_Max]
 

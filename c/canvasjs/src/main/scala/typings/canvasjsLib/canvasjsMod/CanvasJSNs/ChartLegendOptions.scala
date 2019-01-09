@@ -64,9 +64,7 @@ trait ChartLegendOptions extends js.Object {
   /**
     * A custom formatter function that returns text to be displayed inside individual legend items.
     */
-  var itemTextFormatter: js.UndefOr[
-    js.Function1[/* e */ js.UndefOr[canvasjsLib.Anon_DataSeriesLegend], java.lang.String]
-  ] = js.undefined
+  var itemTextFormatter: js.UndefOr[js.Function1[/* e */ js.UndefOr[canvasjsLib.Anon_Chart], java.lang.String]] = js.undefined
   /**
     * Sets the width of individual legend items after which the it gets wrapped or clipped depending on whether itemWrap is set to true (default) or false.
     * itemWidth can’t be greater than itemMaxWidth and maxWidth of legend.

@@ -61,7 +61,7 @@ class ChartLineFormat ()
   def load(): ChartLineFormat = js.native
   def load(option: java.lang.String): ChartLineFormat = js.native
   def load(option: js.Array[java.lang.String]): ChartLineFormat = js.native
-  def load(option: officeDashJsLib.Anon_Select): ChartLineFormat = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ChartLineFormat = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.ChartLineFormatLoadOptions): ChartLineFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartLineFormat): scala.Unit = js.native

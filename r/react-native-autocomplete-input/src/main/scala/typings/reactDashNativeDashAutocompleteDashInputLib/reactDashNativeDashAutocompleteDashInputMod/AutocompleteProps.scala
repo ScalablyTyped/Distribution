@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AutocompleteProps[T]
-  extends reactDashNativeLib.reactDashNativeMod.TextInputProps {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ trait AutocompleteProps[T] extends js.Object {
   /**
     * style
     * These styles will be applied to the container which surrounds the autocomplete component.
@@ -52,23 +52,26 @@ trait AutocompleteProps[T]
   var onShowResult: js.UndefOr[js.Function1[/* showResults */ scala.Boolean, scala.Unit]] = js.undefined
   /**
     * function
-    * renderSeparator will be called to render the list separators which will be displayed between the list elements in the result view below the text input.
+    * onStartShouldSetResponderCapture will be passed to the result list view container (onStartShouldSetResponderCapture).
     */
-  var renderSeparator: js.UndefOr[
-    js.Function3[
-      /* sectionID */ java.lang.String | scala.Double, 
-      /* rowID */ java.lang.String | scala.Double, 
-      /* adjacentRowHighlighted */ js.UndefOr[scala.Boolean], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+  var onStartShouldSetResponderCapture: js.UndefOr[
+    js.Function1[
+      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
+      scala.Boolean
     ]
   ] = js.undefined
+  /**
+    * function
+    * renderSeparator will be called to render the list separators which will be displayed between the list elements in the result view below the text input.
+    */
+  var renderSeparator: js.UndefOr[js.Any] = js.undefined
   /**
     * function
     * render custom TextInput. All props passed to this function.
     */
   var renderTextInput: js.UndefOr[
     js.Function1[
-      /* props */ reactDashNativeLib.reactDashNativeMod.TextInputProperties, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextInputProperties */ /* props */ js.Any, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined

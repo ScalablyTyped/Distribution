@@ -9,7 +9,7 @@ trait NavigatorOptions extends js.Object {
   var adaptToUpdatedData: js.UndefOr[scala.Boolean] = js.undefined
   var baseSeries: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
-  var handles: js.UndefOr[highchartsLib.Anon_BorderColor] = js.undefined
+  var handles: js.UndefOr[highchartsLib.Anon_BackgroundColor] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var margin: js.UndefOr[scala.Double] = js.undefined
   var maskFill: js.UndefOr[java.lang.String] = js.undefined

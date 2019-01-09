@@ -10,7 +10,7 @@ trait BaseOptions extends js.Object {
     * Set custom class names on the container DOM element when the Stripe Element is in a
     * particular state.
     */
-  var classes: js.UndefOr[stripejsLib.Anon_Empty] = js.undefined
+  var classes: js.UndefOr[stripejsLib.Anon_BaseCompleteEmpty] = js.undefined
   /**
     * Whether or not the input is disabled
     * @default false
@@ -24,6 +24,6 @@ trait BaseOptions extends js.Object {
   /**
     * Customize appearance using CSS properties
     */
-  var style: js.UndefOr[stripejsLib.Anon_BaseInvalid] = js.undefined
+  var style: js.UndefOr[stripejsLib.Anon_BaseCompleteEmptyInvalid] = js.undefined
 }
 

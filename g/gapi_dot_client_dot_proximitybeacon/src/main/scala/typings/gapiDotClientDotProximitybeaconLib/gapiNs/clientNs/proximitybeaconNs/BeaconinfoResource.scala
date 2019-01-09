@@ -12,6 +12,6 @@ trait BeaconinfoResource extends js.Object {
     * [API key](https://developers.google.com/beacons/proximity/get-started#request_a_browser_api_key)
     * for the application.
     */
-  def getforobserved(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[GetInfoForObservedBeaconsResponse]
+  def getforobserved(request: gapiDotClientDotProximitybeaconLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GetInfoForObservedBeaconsResponse]
 }
 

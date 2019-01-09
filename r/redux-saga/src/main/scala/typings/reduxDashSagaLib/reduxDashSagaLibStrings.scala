@@ -13,7 +13,7 @@ object reduxDashSagaLibStrings {
   sealed trait `@@redux-saga/SELF_CANCELLATION` extends js.Object
   
   @js.native
-  sealed trait Anon_FnContext extends js.Object
+  sealed trait Anon_ContextFn extends js.Object
   
   @js.native
   sealed trait CallEffectFactory extends js.Object
@@ -29,7 +29,7 @@ object reduxDashSagaLibStrings {
   
   def `@@redux-saga/CHANNEL_END`: `@@redux-saga/CHANNEL_END` = "@@redux-saga/CHANNEL_END".asInstanceOf[`@@redux-saga/CHANNEL_END`]
   def `@@redux-saga/SELF_CANCELLATION`: `@@redux-saga/SELF_CANCELLATION` = "@@redux-saga/SELF_CANCELLATION".asInstanceOf[`@@redux-saga/SELF_CANCELLATION`]
-  def Anon_FnContext: Anon_FnContext = "Anon_FnContext".asInstanceOf[Anon_FnContext]
+  def Anon_ContextFn: Anon_ContextFn = "Anon_ContextFn".asInstanceOf[Anon_ContextFn]
   def CallEffectFactory: CallEffectFactory = "CallEffectFactory".asInstanceOf[CallEffectFactory]
   def CallEffectNamedFn: CallEffectNamedFn = "CallEffectNamedFn".asInstanceOf[CallEffectNamedFn]
   @JSName("apply")

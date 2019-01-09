@@ -17,13 +17,13 @@ class Input protected ()
 object Input extends js.Object {
   @JSName("Group")
   var Group_Original: reactLib.reactMod.ReactNs.StatelessComponent[antdLib.libInputGroupMod.GroupProps] = js.native
-  var Password: org.scalablytyped.runtime.Instantiable0[antdLib.libInputPasswordMod.default] = js.native
-  var Search: org.scalablytyped.runtime.Instantiable0[antdLib.libInputSearchMod.default] = js.native
+  var Password: antdLib.Anon_DefaultPropsAnonAction = js.native
+  var Search: antdLib.Anon_DefaultPropsAnonEnterButton = js.native
   var TextArea: org.scalablytyped.runtime.Instantiable0[antdLib.libInputTextAreaMod.default] = js.native
-  var defaultProps: antdLib.Anon_TypeDisabled = js.native
-  var propTypes: antdLib.Anon_OnBlur = js.native
+  var defaultProps: antdLib.Anon_DisabledType = js.native
+  var propTypes: antdLib.Anon_AddonAfter = js.native
   def Group(props: antdLib.libInputGroupMod.GroupProps with reactLib.Anon_Children): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(props: antdLib.libInputGroupMod.GroupProps with reactLib.Anon_Children, context: js.Any): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
-  def getDerivedStateFromProps(nextProps: antdLib.libInputInputMod.InputProps): antdLib.Anon_ValueString | scala.Null = js.native
+  def getDerivedStateFromProps(nextProps: antdLib.libInputInputMod.InputProps): antdLib.Anon_ValueArray | scala.Null = js.native
 }
 

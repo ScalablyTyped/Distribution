@@ -47,7 +47,7 @@ class ColorScaleConditionalFormat ()
   def load(): ColorScaleConditionalFormat = js.native
   def load(option: java.lang.String): ColorScaleConditionalFormat = js.native
   def load(option: js.Array[java.lang.String]): ColorScaleConditionalFormat = js.native
-  def load(option: officeDashJsLib.Anon_Select): ColorScaleConditionalFormat = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ColorScaleConditionalFormat = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.ColorScaleConditionalFormatLoadOptions): ColorScaleConditionalFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ColorScaleConditionalFormat): scala.Unit = js.native

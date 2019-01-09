@@ -225,7 +225,9 @@ trait SeriesHeatmap extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderType] = js.undefined
+  var emphasis: js.UndefOr[
+    echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorOptional
+  ] = js.undefined
   /**
     * Index of
     * [geographic coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
@@ -253,7 +255,7 @@ trait SeriesHeatmap extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorBorderTypeBorderWidth] = js.undefined
   /**
     * Work for
     * [coordinateSystem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.coordinateSystem)
@@ -263,7 +265,7 @@ trait SeriesHeatmap extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.label
     */
   var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlignShadowBlur
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize
   ] = js.undefined
   /**
     * Used to mark an area in chart.
@@ -272,21 +274,25 @@ trait SeriesHeatmap extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.markArea
     */
-  var markArea: js.UndefOr[echartsLib.Anon_SilentDataLabel] = js.undefined
+  var markArea: js.UndefOr[
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
+  ] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.markLine
     */
-  var markLine: js.UndefOr[echartsLib.Anon_PrecisionSilent] = js.undefined
+  var markLine: js.UndefOr[
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+  ] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_SilentDataLabelAnimationEasingUpdate] = js.undefined
+  var markPoint: js.UndefOr[echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
   /**
     * Maximum opacity. It is valid with
     * [coordinateSystem](https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.coordinateSystem)
@@ -333,7 +339,7 @@ trait SeriesHeatmap extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-heatmap.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "heatmap"

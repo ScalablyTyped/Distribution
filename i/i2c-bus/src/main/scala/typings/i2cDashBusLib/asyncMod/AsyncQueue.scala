@@ -30,6 +30,6 @@ trait AsyncQueue[T] extends js.Object {
   def unshift[E](task: T, callback: ErrorCallback[E]): scala.Unit = js.native
   def unshift[E](task: js.Array[T]): scala.Unit = js.native
   def unshift[E](task: js.Array[T], callback: ErrorCallback[E]): scala.Unit = js.native
-  def workersList(): js.Array[i2cDashBusLib.Anon_CallbackData[T]] = js.native
+  def workersList(): js.Array[i2cDashBusLib.Anon_Callback[T]] = js.native
 }
 

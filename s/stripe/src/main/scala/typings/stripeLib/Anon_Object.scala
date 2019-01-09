@@ -7,9 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Object extends js.Object {
   /**
-    * Return charges that match this source type string. Available options are
-    * "all", "alipay_account", "bitcoin_receiver", or "card".
+    * describes the object the event is about. For example, an
+    * invoice.created event will have a full invoice object as the value of
+    * the object key.
     */
-  var `object`: stripeLib.stripeLibStrings.all | stripeLib.stripeLibStrings.alipay_account | stripeLib.stripeLibStrings.bitcoin_receiver | stripeLib.stripeLibStrings.card
+  var `object`: stripeLib.stripeMod.StripeNs.IObject
+  var previous_attributes: js.UndefOr[js.Object] = js.undefined
 }
 

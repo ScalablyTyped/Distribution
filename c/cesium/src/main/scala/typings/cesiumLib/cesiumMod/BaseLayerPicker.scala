@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BaseLayerPicker protected ()
   extends cesiumLib.cesiumMod.CesiumNs.BaseLayerPicker {
-  def this(container: stdLib.Element, options: cesiumLib.Anon_SelectedImageryProviderViewModel) = this()
+  def this(container: stdLib.Element, options: cesiumLib.Anon_Globe) = this()
   /* CompleteClass */
   override var container: stdLib.Element = js.native
   /* CompleteClass */

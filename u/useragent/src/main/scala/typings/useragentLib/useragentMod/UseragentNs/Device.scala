@@ -13,7 +13,7 @@ trait Device extends js.Object {
   /**
     * Outputs a JSON string of the Device, values are defaulted to undefined so they are not outputed in the stringify.
     */
-  def toJSON(): useragentLib.Anon_Minor
+  def toJSON(): useragentLib.Anon_Family
   /**
     * Generates the version of the Device.
     */

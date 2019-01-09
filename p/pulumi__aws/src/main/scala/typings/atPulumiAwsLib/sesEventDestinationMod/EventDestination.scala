@@ -21,7 +21,7 @@ class EventDestination protected ()
   /**
     * CloudWatch destination for the events
     */
-  val cloudwatchDestinations: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DimensionNameDefaultValue]]] = js.native
+  val cloudwatchDestinations: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DefaultValueDimensionName]]] = js.native
   /**
     * The name of the configuration set
     */
@@ -33,7 +33,7 @@ class EventDestination protected ()
   /**
     * Send the events to a kinesis firehose destination
     */
-  val kinesisDestination: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArnStreamArnString]] = js.native
+  val kinesisDestination: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArnStreamArn]] = js.native
   /**
     * A list of matching types. May be any of `"send"`, `"reject"`, `"bounce"`, `"complaint"`, `"delivery"`, `"open"`, `"click"`, or `"renderingFailure"`.
     */
@@ -45,7 +45,7 @@ class EventDestination protected ()
   /**
     * Send the events to an SNS Topic destination
     */
-  val snsDestination: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TopicArnString]] = js.native
+  val snsDestination: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TopicArn]] = js.native
 }
 
 @JSImport("@pulumi/aws/ses/eventDestination", "EventDestination")

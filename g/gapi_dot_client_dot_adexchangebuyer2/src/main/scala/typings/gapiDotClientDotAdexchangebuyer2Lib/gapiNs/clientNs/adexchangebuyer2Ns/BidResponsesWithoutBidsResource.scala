@@ -11,7 +11,7 @@ trait BidResponsesWithoutBidsResource extends js.Object {
     * applicable bids, with the number of bid responses affected for each reason.
     */
   def list(
-    request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPageSizePrettyPrintBearertokenPageToken
+    request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetId
   ): gapiDotClientLib.gapiNs.clientNs.Request[ListBidResponsesWithoutBidsResponse]
 }
 

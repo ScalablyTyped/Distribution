@@ -36,8 +36,8 @@ class Neuron () extends js.Object {
     * Returns true or false whether the neuron is connected to another neuron (parameter).
     * @param neuron
     */
-  def connected(): synapticLib.Anon_Result | scala.Boolean = js.native
-  def connected(neuron: js.Any): synapticLib.Anon_Result | scala.Boolean = js.native
+  def connected(): synapticLib.Anon_ConnectionResult | scala.Boolean = js.native
+  def connected(neuron: js.Any): synapticLib.Anon_ConnectionResult | scala.Boolean = js.native
   /**
     * A neuron can gate a connection between two neurons, or a neuron's self-connection. This allows you to create second order neural network architectures.
     * @param connection
@@ -46,9 +46,9 @@ class Neuron () extends js.Object {
   /**
     * Hardcodes the behavior of the neuron into an optimized function.
     */
-  def optimize(): synapticLib.Anon_Layers = js.native
-  def optimize(optimized: js.Any): synapticLib.Anon_Layers = js.native
-  def optimize(optimized: js.Any, layer: js.Any): synapticLib.Anon_Layers = js.native
+  def optimize(): synapticLib.Anon_Activationsentences = js.native
+  def optimize(optimized: js.Any): synapticLib.Anon_Activationsentences = js.native
+  def optimize(optimized: js.Any, layer: js.Any): synapticLib.Anon_Activationsentences = js.native
   /**
     * A neuron can project a connection to another neuron. Neurons can also self-connect.
     */
@@ -78,7 +78,7 @@ class Neuron () extends js.Object {
 @JSImport("synaptic", "Neuron")
 @js.native
 object Neuron extends js.Object {
-  def quantity(): synapticLib.Anon_Neurons = js.native
+  def quantity(): synapticLib.Anon_Connections = js.native
   def uid(): scala.Double = js.native
 }
 

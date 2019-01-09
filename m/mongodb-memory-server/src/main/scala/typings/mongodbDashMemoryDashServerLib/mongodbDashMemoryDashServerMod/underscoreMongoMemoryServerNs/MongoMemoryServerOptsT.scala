@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait MongoMemoryServerOptsT extends js.Object {
   var autoStart: js.UndefOr[scala.Boolean] = js.undefined
-  var binary: mongodbDashMemoryDashServerLib.Anon_DownloadDir
+  var binary: mongodbDashMemoryDashServerLib.Anon_Arch
   var debug: js.UndefOr[scala.Boolean] = js.undefined
-  var instance: mongodbDashMemoryDashServerLib.Anon_DbName
+  var instance: mongodbDashMemoryDashServerLib.Anon_ArgsDbName
   var spawn: js.Any
 }
 

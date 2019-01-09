@@ -228,7 +228,7 @@ class Object3D () extends EventDispatcher {
     */
   def setRotationFromQuaternion(q: Quaternion): scala.Unit = js.native
   def toJSON(): js.Any = js.native
-  def toJSON(meta: threeLib.Anon_GeometriesImages): js.Any = js.native
+  def toJSON(meta: threeLib.Anon_Geometries): js.Any = js.native
   /**
     * @param axis  A normalized vector in object space.
     * @param distance  The distance to translate.

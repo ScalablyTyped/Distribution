@@ -15,6 +15,6 @@ class Toast protected () extends js.Object {
 @JSImport("react-weui", "Toast")
 @js.native
 object Toast extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_Icon = js.native
+  var defaultProps: reactDashWeuiLib.Anon_IconShow = js.native
 }
 

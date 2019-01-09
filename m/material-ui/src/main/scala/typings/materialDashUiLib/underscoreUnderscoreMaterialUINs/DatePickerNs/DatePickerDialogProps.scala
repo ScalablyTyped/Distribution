@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DatePickerDialogProps extends js.Object {
   // <Container/> is the element that get the 'other' properties
-  var DateTimeFormat: js.UndefOr[stdLib.Anon_LocalesOptions] = js.undefined
+  var DateTimeFormat: js.UndefOr[stdLib.Anon_LocalesOptionsSupportedLocalesOfArray] = js.undefined
   var animation: js.UndefOr[
     reactLib.reactMod.ReactNs.ComponentClass[
       materialDashUiLib.underscoreUnderscoreMaterialUINs.PopoverNs.PopoverAnimationProps, 

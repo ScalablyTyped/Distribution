@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("first-mate", "GrammarRegistry")
 @js.native
 class GrammarRegistry () extends js.Object {
-  def this(options: firstDashMateLib.Anon_MaxTokensPerLine) = this()
+  def this(options: firstDashMateLib.Anon_MaxLineLength) = this()
   var maxLineLength: scala.Double = js.native
   var maxTokensPerLine: scala.Double = js.native
   /**

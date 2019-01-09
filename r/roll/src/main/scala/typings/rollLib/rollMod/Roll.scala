@@ -11,7 +11,7 @@ trait Roll extends js.Object {
     * Parse a string into a roll object
     * @throws InvalidInputError
     */
-  def parse(input: java.lang.String): rollLib.Anon_Transformations = js.native
+  def parse(input: java.lang.String): rollLib.Anon_Quantity = js.native
   /**
     * Roll based on a string or roll object
     */

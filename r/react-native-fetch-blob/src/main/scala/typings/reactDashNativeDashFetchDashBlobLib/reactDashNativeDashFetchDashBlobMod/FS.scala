@@ -28,7 +28,7 @@ trait FS extends js.Object {
     data: java.lang.String,
     encoding: reactDashNativeDashFetchDashBlobLib.Encoding
   ): js.Promise[scala.Unit] = js.native
-  def df(): js.Promise[reactDashNativeDashFetchDashBlobLib.Anon_Total] = js.native
+  def df(): js.Promise[reactDashNativeDashFetchDashBlobLib.Anon_Free] = js.native
   /**
     * Check if file exists and if it is a folder.
     * @param  path Path to check

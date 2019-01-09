@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PieChartProps extends js.Object {
   var clickHandler: js.UndefOr[js.Function2[/* data */ PieData, /* mouseEvent */ reactLib.MouseEvent, _]] = js.undefined
-  var data: js.Array[reactDashEasyDashChartLib.Anon_Key]
+  var data: js.Array[reactDashEasyDashChartLib.Anon_Color]
   /** Size in pixels of the inner hole (diameter) */
   var innerHoleSize: js.UndefOr[scala.Double] = js.undefined
   /** Whether to add labels the to pie segments */

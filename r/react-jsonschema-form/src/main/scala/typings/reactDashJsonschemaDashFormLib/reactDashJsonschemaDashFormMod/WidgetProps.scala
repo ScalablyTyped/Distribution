@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick<react.react.HTMLAttributes<react.HTMLElement>, std.Exclude<keyof react.react.HTMLAttributes<react.HTMLElement>, 'onBlur' | 'onFocus'>>) */ trait WidgetProps extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<react.HTMLElement>, 'onBlur' | 'onFocus'> ]: react.react.HTMLAttributes<react.HTMLElement>[P]} */ trait WidgetProps extends js.Object {
   var autofocus: scala.Boolean
   var disabled: scala.Boolean
   var formContext: js.Any

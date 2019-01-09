@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DriveApp extends js.Object {
-  var Access: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Drive.Access */ js.Any = js.native
-  var Permission: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Drive.Permission */ js.Any = js.native
+  var Access: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Access */ js.Any = js.native
+  var Permission: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Permission */ js.Any = js.native
   /**
     * Adds the given file to the root of the user's Drive.
     * This method does not move the file out of its existing parent folder;

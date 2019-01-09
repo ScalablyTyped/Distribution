@@ -62,7 +62,11 @@ trait CardProps extends js.Object {
   /**
     * Optional properties to pass to the image if provided e.g "resizeMode"
     */
-  var imageProps: js.UndefOr[stdLib.Partial[reactDashNativeLib.reactDashNativeMod.ImageProperties]] = js.undefined
+  var imageProps: js.UndefOr[
+    stdLib.Partial[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageProperties */ _
+    ]
+  ] = js.undefined
   /**
     * Specify image styling if image is provided
     */

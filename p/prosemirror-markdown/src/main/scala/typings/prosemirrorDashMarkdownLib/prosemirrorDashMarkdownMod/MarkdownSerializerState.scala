@@ -32,7 +32,7 @@ class MarkdownSerializerState[S /* <: prosemirrorDashModelLib.prosemirrorDashMod
     * leading or trailing property of the return object will be undefined
     * if there is no match.
     */
-  def getEnclosingWhitespace(text: java.lang.String): prosemirrorDashMarkdownLib.Anon_Trailing = js.native
+  def getEnclosingWhitespace(text: java.lang.String): prosemirrorDashMarkdownLib.Anon_Leading = js.native
   /**
     * Render the given node as a block.
     */

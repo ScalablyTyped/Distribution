@@ -22,7 +22,7 @@ object DynamsoftNs extends js.Object {
       detectButton  dialog  dialogShowStatus  dlgProgress  dlgRef  drawBoxBorder  drawImageWithHermite
       each  empty  endsWith
       */
-    var env: dwtLib.Anon_StrChromeVersion = js.native
+    var env: dwtLib.Anon_BChrome = js.native
   }
   
   @JSName("WebTwainEnv")

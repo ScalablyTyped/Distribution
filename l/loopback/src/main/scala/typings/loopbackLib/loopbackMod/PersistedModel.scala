@@ -212,8 +212,8 @@ object PersistedModel extends js.Object {
     *
     * @returns {Promise<{ count: number }>} number of instances (rows, documents) destroyed
     */
-  def destroyAll(): js.Promise[loopbackLib.Anon_InfoCount] = js.native
-  def destroyAll(where: js.Any): js.Promise[loopbackLib.Anon_InfoCount] = js.native
+  def destroyAll(): js.Promise[loopbackLib.Anon_Info] = js.native
+  def destroyAll(where: js.Any): js.Promise[loopbackLib.Anon_Info] = js.native
   /**
     * Destroy all model instances that match the optional `where` specification
     * @param {any} [where] Optional where filter, like:
@@ -301,7 +301,7 @@ object PersistedModel extends js.Object {
     * [Where filter](docs.strongloop.com/display/LB/Where+filter#Wherefilter-Whereclauseforqueries)
     */
   def find[T](): js.Promise[js.Array[T] | scala.Null] = js.native
-  def find[T](filter: loopbackLib.Anon_Skip): js.Promise[js.Array[T] | scala.Null] = js.native
+  def find[T](filter: loopbackLib.Anon_Fields): js.Promise[js.Array[T] | scala.Null] = js.native
   /**
     * Find all model instances that match `filter` specification.
     * See [Querying models](docs.strongloop.com/display/LB/Querying+models)
@@ -327,7 +327,7 @@ object PersistedModel extends js.Object {
     * @param {Array} models Model instances matching the filter, or null if none found
     */
   def find[T](
-    filter: loopbackLib.Anon_Skip,
+    filter: loopbackLib.Anon_Fields,
     callback: loopbackLib.loopbackMod.lNs.CallbackWithResult[js.Array[T]]
   ): scala.Unit = js.native
   /**
@@ -348,7 +348,7 @@ object PersistedModel extends js.Object {
     * @param {any} instance Model instance matching the specified ID or null if no instance matches
     */
   def findById[T](id: js.Any, callback: loopbackLib.loopbackMod.lNs.CallbackWithResult[T]): scala.Unit = js.native
-  def findById[T](id: js.Any, filter: loopbackLib.Anon_Include): js.Promise[T | scala.Null] = js.native
+  def findById[T](id: js.Any, filter: loopbackLib.Anon_FieldsInclude): js.Promise[T | scala.Null] = js.native
   /**
     * Find object by ID with an optional filter for include/fields
     * @param {*} id Primary key value
@@ -363,7 +363,7 @@ object PersistedModel extends js.Object {
     */
   def findById[T](
     id: js.Any,
-    filter: loopbackLib.Anon_Include,
+    filter: loopbackLib.Anon_FieldsInclude,
     callback: loopbackLib.loopbackMod.lNs.CallbackWithResult[T]
   ): scala.Unit = js.native
   /**
@@ -396,7 +396,7 @@ object PersistedModel extends js.Object {
     * @param {Array} model First model instance that matches the filter or null if none found
     */
   def findOne[T](callback: loopbackLib.loopbackMod.lNs.CallbackWithResult[T]): scala.Unit = js.native
-  def findOne[T](filter: loopbackLib.Anon_SkipOrder): js.Promise[T | scala.Null] = js.native
+  def findOne[T](filter: loopbackLib.Anon_FieldsIncludeOrder): js.Promise[T | scala.Null] = js.native
   /**
     * Find one model instance that matches `filter` specification.
     * Same as `find`, but limited to one result;
@@ -420,7 +420,10 @@ object PersistedModel extends js.Object {
     * @param {Error} err Error object; see [Error object](docs.strongloop.com/display/LB/Error+object).
     * @param {Array} model First model instance that matches the filter or null if none found
     */
-  def findOne[T](filter: loopbackLib.Anon_SkipOrder, callback: loopbackLib.loopbackMod.lNs.CallbackWithResult[T]): scala.Unit = js.native
+  def findOne[T](
+    filter: loopbackLib.Anon_FieldsIncludeOrder,
+    callback: loopbackLib.loopbackMod.lNs.CallbackWithResult[T]
+  ): scala.Unit = js.native
   /**
     * Finds one record matching the optional filter object. If not found, creates
     * the object using the data provided as second argument. In this sense it is
@@ -462,7 +465,7 @@ object PersistedModel extends js.Object {
     * @param {boolean} created True if the instance matching the `where` filter was created
     */
   def findOrCreate[T](data: js.Any, callback: loopbackLib.loopbackMod.lNs.CallbackWithMultipleResults[T, scala.Boolean]): scala.Unit = js.native
-  def findOrCreate[T](data: js.Any, filter: loopbackLib.Anon_Skip): js.Promise[loopbackLib.Anon_Created[T] | scala.Null] = js.native
+  def findOrCreate[T](data: js.Any, filter: loopbackLib.Anon_Fields): js.Promise[loopbackLib.Anon_Created[T] | scala.Null] = js.native
   /**
     * Finds one record matching the optional filter object. If not found, creates
     * the object using the data provided as second argument. In this sense it is
@@ -495,7 +498,7 @@ object PersistedModel extends js.Object {
     */
   def findOrCreate[T](
     data: js.Any,
-    filter: loopbackLib.Anon_Skip,
+    filter: loopbackLib.Anon_Fields,
     callback: loopbackLib.loopbackMod.lNs.CallbackWithMultipleResults[T, scala.Boolean]
   ): scala.Unit = js.native
   /**

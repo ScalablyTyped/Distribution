@@ -11,7 +11,7 @@ object i18nDashAbideModMembers extends js.Object {
   def abide(): expressLib.expressMod.eNs.RequestHandler = js.native
   def abide(options: AbideOptions): expressLib.expressMod.eNs.RequestHandler = js.native
   def bestLanguage(
-    languages: js.Array[i18nDashAbideLib.Anon_Quality],
+    languages: js.Array[i18nDashAbideLib.Anon_Lang],
     supported_languages: js.Array[java.lang.String],
     defaultLanguage: java.lang.String
   ): java.lang.String = js.native
@@ -27,7 +27,7 @@ object i18nDashAbideModMembers extends js.Object {
   def normalizeLanguage(language: java.lang.String): java.lang.String = js.native
   def normalizeLocale(): java.lang.String = js.native
   def normalizeLocale(locale: java.lang.String): java.lang.String = js.native
-  def parseAcceptLanguage(): js.Array[i18nDashAbideLib.Anon_Quality] = js.native
-  def parseAcceptLanguage(header: java.lang.String): js.Array[i18nDashAbideLib.Anon_Quality] = js.native
+  def parseAcceptLanguage(): js.Array[i18nDashAbideLib.Anon_Lang] = js.native
+  def parseAcceptLanguage(header: java.lang.String): js.Array[i18nDashAbideLib.Anon_Lang] = js.native
 }
 

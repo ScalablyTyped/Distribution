@@ -13,7 +13,7 @@ trait S3BucketAssociationState extends js.Object {
   /**
     * The configuration of how Amazon Macie classifies the S3 objects.
     */
-  val classificationType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Continuous]] = js.undefined
+  val classificationType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ContinuousOneTime]] = js.undefined
   /**
     * The ID of the Amazon Macie member account whose S3 resources you want to associate with Macie. If `member_account_id` isn't specified, the action associates specified S3 resources with Macie for the current master account.
     */

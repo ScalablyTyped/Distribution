@@ -26,7 +26,7 @@ class VpnConnection protected ()
     * The ID of the customer gateway.
     */
   val customerGatewayId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val routes: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_StateSourceDestinationCidrBlock]] = js.native
+  val routes: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DestinationCidrBlock]] = js.native
   /**
     * Whether the VPN connection uses static routes exclusively. Static routes must be used for devices that don't support BGP.
     */
@@ -99,7 +99,7 @@ class VpnConnection protected ()
     * The type of VPN connection. The only type AWS supports at this time is "ipsec.1".
     */
   val `type`: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val vgwTelemetries: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_OutsideIpAddressLastStatusChange]] = js.native
+  val vgwTelemetries: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_AcceptedRouteCount]] = js.native
   /**
     * The ID of the Virtual Private Gateway.
     */

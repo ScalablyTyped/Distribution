@@ -13,6 +13,9 @@ object flatpickrLibStrings {
   sealed trait F extends js.Object
   
   @js.native
+  sealed trait FlatpickrFn extends js.Object
+  
+  @js.native
   sealed trait G extends js.Object
   
   @js.native
@@ -134,6 +137,7 @@ object flatpickrLibStrings {
   
   def D: D = "D".asInstanceOf[D]
   def F: F = "F".asInstanceOf[F]
+  def FlatpickrFn: FlatpickrFn = "FlatpickrFn".asInstanceOf[FlatpickrFn]
   def G: G = "G".asInstanceOf[G]
   def H: H = "H".asInstanceOf[H]
   def J: J = "J".asInstanceOf[J]

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalHexBlock because Inheritance from two classes)*/
-@JSGlobal("adone.crypto.asn1.I.LocalUniversalStringValueBlock")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalHexBlock because Inheritance from two classes */ @JSGlobal("adone.crypto.asn1.I.LocalUniversalStringValueBlock")
 @js.native
 class LocalUniversalStringValueBlock () extends LocalBaseBlock {
   def this(params: LocalUniversalStringValueParams) = this()

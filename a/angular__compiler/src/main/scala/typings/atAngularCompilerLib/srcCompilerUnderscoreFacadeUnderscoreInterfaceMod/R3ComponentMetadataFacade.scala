@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait R3ComponentMetadataFacade extends R3DirectiveMetadataFacade {
   var animations: js.UndefOr[js.Array[_]]
   var changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.undefined
-  var directives: js.Array[atAngularCompilerLib.Anon_ExpressionSelectorAny]
+  var directives: js.Array[atAngularCompilerLib.Anon_ExpressionSelector]
   var encapsulation: ViewEncapsulation
   var interpolation: js.UndefOr[js.Tuple2[java.lang.String, java.lang.String]] = js.undefined
   var pipes: stdLib.Map[java.lang.String, _]

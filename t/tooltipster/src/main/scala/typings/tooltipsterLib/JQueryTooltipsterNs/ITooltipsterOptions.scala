@@ -225,13 +225,13 @@ trait ITooltipsterOptions
   		 * allows you to reactivate the triggers of your choice to create a customized behavior. Only applies 
   		 * if 'trigger' is set to 'custom'. See http://iamceege.github.io/tooltipster/#triggers.
   		 */
-  var triggerClose: js.UndefOr[tooltipsterLib.Anon_ScrollTap] = js.undefined
+  var triggerClose: js.UndefOr[tooltipsterLib.Anon_Click] = js.undefined
   /**
   		 * When 'trigger' is set to 'custom', all built-in open triggers are disabled by default. This option 
   		 * allows you to reactivate the triggers of your choice to create a customized behavior. Only applies 
   		 * if 'trigger' is set to 'custom'. See http://iamceege.github.io/tooltipster/#triggers.
   		 */
-  var triggerOpen: js.UndefOr[tooltipsterLib.Anon_Click] = js.undefined
+  var triggerOpen: js.UndefOr[tooltipsterLib.Anon_ClickMouseenter] = js.undefined
   /**
   		 * Plays a subtle animation when the content of the tooltip is updated (if the tooltip is open). You 
   		 * may create custom animations in your CSS files. Set to null to disable the animation. 

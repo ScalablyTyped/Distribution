@@ -18,7 +18,7 @@ class Mesh protected ()
   def applyImpulse(force: threeLib.threeMod.Vector3, offset: threeLib.threeMod.Vector3): scala.Unit = js.native
   def dispatchEvent(event_name: java.lang.String): scala.Unit = js.native
   // (extends from Object3D)
-  def dispatchEvent(event: physijsLib.Anon_Type): scala.Unit = js.native
+  def dispatchEvent(event: physijsLib.Anon_Target): scala.Unit = js.native
   def getAngularVelocity(): threeLib.threeMod.Vector3 = js.native
   def getLinearVelocity(): threeLib.threeMod.Vector3 = js.native
   def setAngularFactor(factor: threeLib.threeMod.Vector3): scala.Unit = js.native

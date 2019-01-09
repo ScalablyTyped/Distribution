@@ -27,7 +27,7 @@ class RegexMatchSet protected ()
     * The regular expression pattern that you want AWS WAF to search for in web requests,
     * the location in requests that you want AWS WAF to search, and other settings. See below.
     */
-  val regexMatchTuples: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_RegexPatternSetId]]] = js.native
+  val regexMatchTuples: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatchRegexPatternSetId]]] = js.native
 }
 
 @JSImport("@pulumi/aws/wafregional/regexMatchSet", "RegexMatchSet")

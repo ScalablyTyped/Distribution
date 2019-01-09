@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Active extends js.Object {
   var active: scala.Double
-  var inactive: scala.Double
+  var byDesign: scala.Double
+  var closed: scala.Double
+  var fixed: scala.Double
+  var pending: scala.Double
+  var unknown: scala.Double
+  var wontFix: scala.Double
 }
 

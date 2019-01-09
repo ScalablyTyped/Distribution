@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait SettingsResource extends js.Object {
   /** Gets a single setting by ID. */
-  def get(request: gapiDotClientDotMirrorLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Setting]
+  def get(request: gapiDotClientDotMirrorLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Setting]
 }
 

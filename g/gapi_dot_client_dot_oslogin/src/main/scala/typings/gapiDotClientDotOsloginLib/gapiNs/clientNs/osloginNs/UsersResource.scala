@@ -11,12 +11,12 @@ trait UsersResource extends js.Object {
     * Retrieves the profile information used for logging in to a virtual machine
     * on Google Compute Engine.
     */
-  def getLoginProfile(request: gapiDotClientDotOsloginLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[LoginProfile]
+  def getLoginProfile(request: gapiDotClientDotOsloginLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[LoginProfile]
   /**
     * Adds an SSH public key and returns the profile information. Default POSIX
     * account information is set when no username and UID exist as part of the
     * login profile.
     */
-  def importSshPublicKey(request: gapiDotClientDotOsloginLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[ImportSshPublicKeyResponse]
+  def importSshPublicKey(request: gapiDotClientDotOsloginLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ImportSshPublicKeyResponse]
 }
 

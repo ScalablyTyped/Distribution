@@ -32,7 +32,7 @@ object srcRouterUnderscoreModuleModMembers extends js.Object {
     options: ExtraOptions
   ): atAngularCommonLib.commonMod.HashLocationStrategy | atAngularCommonLib.commonMod.PathLocationStrategy = js.native
   def provideRouterInitializer(): js.Array[
-    (org.scalablytyped.runtime.Instantiable1[/* injector */ atAngularCoreLib.coreMod.Injector, RouterInitializer]) | atAngularRouterLib.Anon_Provide | atAngularRouterLib.Anon_ProvideCompRef | atAngularRouterLib.Anon_ProvideCompRefUseExisting
+    (org.scalablytyped.runtime.Instantiable1[/* injector */ atAngularCoreLib.coreMod.Injector, RouterInitializer]) | atAngularRouterLib.Anon_Deps | atAngularRouterLib.Anon_CompRef | atAngularRouterLib.Anon_CompRefDeps
   ] = js.native
   def provideRoutes(routes: atAngularRouterLib.srcConfigMod.Routes): js.Any = js.native
   def rootRoute(router: atAngularRouterLib.srcRouterMod.Router): atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRoute = js.native

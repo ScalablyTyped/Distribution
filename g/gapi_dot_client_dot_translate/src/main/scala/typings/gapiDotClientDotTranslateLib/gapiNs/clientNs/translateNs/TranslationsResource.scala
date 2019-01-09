@@ -22,8 +22,8 @@ trait TranslationsResource extends js.Object {
   /** Text translated into the target language. */
   var translatedText: js.UndefOr[java.lang.String] = js.undefined
   /** Translates input text, returning translated text. */
-  def list(request: gapiDotClientDotTranslateLib.Anon_Format): gapiDotClientLib.gapiNs.clientNs.Request[TranslationsListResponse]
+  def list(request: gapiDotClientDotTranslateLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[TranslationsListResponse]
   /** Translates input text, returning translated text. */
-  def translate(request: gapiDotClientDotTranslateLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[TranslationsListResponse]
+  def translate(request: gapiDotClientDotTranslateLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[TranslationsListResponse]
 }
 

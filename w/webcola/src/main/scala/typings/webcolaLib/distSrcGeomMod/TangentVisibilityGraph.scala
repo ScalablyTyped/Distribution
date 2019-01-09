@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TangentVisibilityGraph protected () extends js.Object {
   def this(P: js.Array[js.Array[TVGPoint]]) = this()
-  def this(P: js.Array[js.Array[TVGPoint]], g0: webcolaLib.Anon_V) = this()
+  def this(P: js.Array[js.Array[TVGPoint]], g0: webcolaLib.Anon_E) = this()
   var E: js.Array[VisibilityEdge] = js.native
   var P: js.Array[js.Array[TVGPoint]] = js.native
   var V: js.Array[VisibilityVertex] = js.native

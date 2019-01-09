@@ -172,7 +172,7 @@ trait Swiper extends js.Object {
   /**
     * Object with the following touch event properties:
     */
-  var touches: swiperLib.Anon_StartY = js.native
+  var touches: swiperLib.Anon_CurrentX = js.native
   /**
     * Current value of wrapper translate
     */

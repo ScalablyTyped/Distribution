@@ -13,7 +13,7 @@ trait SlicedValuable extends js.Object {
   def deleteTag(tag: java.lang.String): js.Promise[scala.Boolean] = js.native
   def entries(): js.Promise[js.Object] = js.native
   def entries(
-    opts: (ValueableEntriesOptions with (adoneLib.Anon_EntriesAsArray | adoneLib.Anon_EntriesAsArrayTrue)) | ValueableEntriesOptions
+    opts: (ValueableEntriesOptions with (adoneLib.Anon_EntriesAsArray | adoneLib.Anon_EntriesAsArrayIncludeEntryId)) | ValueableEntriesOptions
   ): js.Promise[js.Array[ValuableEntry]] = js.native
   def fromJSON(json: js.Object): js.Promise[scala.Double] = js.native
   def get(name: java.lang.String): js.Promise[_] = js.native

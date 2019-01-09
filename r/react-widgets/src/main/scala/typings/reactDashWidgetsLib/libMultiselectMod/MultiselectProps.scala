@@ -97,7 +97,7 @@ trait MultiselectProps
   var onChange: js.UndefOr[
     js.Function2[
       /* dataItems */ js.Array[_], 
-      /* metadata */ reactDashWidgetsLib.Anon_DataItem, 
+      /* metadata */ reactDashWidgetsLib.Anon_Action, 
       scala.Unit
     ]
   ] = js.undefined
@@ -114,7 +114,7 @@ trait MultiselectProps
   var onSearch: js.UndefOr[
     js.Function2[
       /* searchTerm */ java.lang.String, 
-      /* metadata */ reactDashWidgetsLib.Anon_Action, 
+      /* metadata */ reactDashWidgetsLib.Anon_ActionClear, 
       scala.Unit
     ]
   ] = js.undefined

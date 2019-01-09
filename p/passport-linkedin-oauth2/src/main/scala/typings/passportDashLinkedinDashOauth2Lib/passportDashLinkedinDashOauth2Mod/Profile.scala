@@ -12,7 +12,7 @@ trait Profile
   @JSName("emails")
   var emails_Profile: js.Array[passportDashLinkedinDashOauth2Lib.Anon_Value]
   @JSName("name")
-  var name_Profile: passportDashLinkedinDashOauth2Lib.Anon_GivenName
+  var name_Profile: passportDashLinkedinDashOauth2Lib.Anon_FamilyName
   @JSName("photos")
   var photos_Profile: js.Array[passportDashLinkedinDashOauth2Lib.Anon_Value]
 }

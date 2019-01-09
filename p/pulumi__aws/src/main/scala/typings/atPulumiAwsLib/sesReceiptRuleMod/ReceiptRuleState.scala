@@ -10,7 +10,9 @@ trait ReceiptRuleState extends js.Object {
     * A list of Add Header Action blocks. Documented below.
     */
   val addHeaderActions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HeaderName]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HeaderNameHeaderValue]]
+    ]
   ] = js.undefined
   /**
     * The name of the rule to place this rule after
@@ -21,7 +23,7 @@ trait ReceiptRuleState extends js.Object {
     */
   val bounceActions: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_StatusCodeTopicArn]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_MessagePosition]]
     ]
   ] = js.undefined
   /**
@@ -33,7 +35,9 @@ trait ReceiptRuleState extends js.Object {
     */
   val lambdaActions: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_InvocationType]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FunctionArnInvocationTypePosition]
+      ]
     ]
   ] = js.undefined
   /**
@@ -55,7 +59,9 @@ trait ReceiptRuleState extends js.Object {
     */
   val s3Actions: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ObjectKeyPrefix]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketNameKmsKeyArnObjectKeyPrefix]
+      ]
     ]
   ] = js.undefined
   /**
@@ -74,7 +80,9 @@ trait ReceiptRuleState extends js.Object {
     * A list of Stop Action blocks. Documented below.
     */
   val stopActions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Position]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PositionScopeTopicArn]]
+    ]
   ] = js.undefined
   /**
     * Require or Optional
@@ -85,7 +93,7 @@ trait ReceiptRuleState extends js.Object {
     */
   val workmailActions: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_OrganizationArn]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_OrganizationArnPosition]]
     ]
   ] = js.undefined
 }

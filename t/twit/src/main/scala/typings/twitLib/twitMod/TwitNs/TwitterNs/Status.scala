@@ -10,7 +10,7 @@ trait Status extends js.Object {
   var contributors: js.UndefOr[js.Array[Contributors]] = js.undefined
   var coordinates: js.UndefOr[geojsonLib.geojsonMod.Point] = js.undefined
   var created_at: java.lang.String
-  var current_user_retweet: js.UndefOr[twitLib.Anon_Idstr] = js.undefined
+  var current_user_retweet: js.UndefOr[twitLib.Anon_Id] = js.undefined
   var display_text_range: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined
   var entities: Entities
   var favorite_count: js.UndefOr[scala.Double] = js.undefined

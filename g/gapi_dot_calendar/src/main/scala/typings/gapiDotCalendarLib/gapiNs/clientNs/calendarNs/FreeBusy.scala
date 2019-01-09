@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FreeBusy extends js.Object {
   @JSName("calendars")
-  var calendars_Original: gapiDotCalendarLib.Anon_KeyString = js.native
+  var calendars_Original: gapiDotCalendarLib.Anon_KeyAnonBusy = js.native
   @JSName("groups")
-  var groups_Original: gapiDotCalendarLib.Anon_KeyStringAnonErrors = js.native
+  var groups_Original: gapiDotCalendarLib.Anon_Key = js.native
   var kind: gapiDotCalendarLib.gapiDotCalendarLibStrings.`calendar#freeBusy` = js.native
   var timeMax: datetime = js.native
   var timeMin: datetime = js.native
   def calendars(key: java.lang.String): gapiDotCalendarLib.Anon_Busy = js.native
-  def groups(key: java.lang.String): gapiDotCalendarLib.Anon_Errors = js.native
+  def groups(key: java.lang.String): gapiDotCalendarLib.Anon_Calendars = js.native
 }
 
 @JSGlobal("gapi.client.calendar.freebusy")

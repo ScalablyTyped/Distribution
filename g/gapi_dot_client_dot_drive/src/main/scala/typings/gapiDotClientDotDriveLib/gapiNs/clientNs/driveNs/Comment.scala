@@ -28,7 +28,7 @@ trait Comment extends js.Object {
     * The file content to which the comment refers, typically within the anchor region. For a text file, for example, this would be the text at the location
     * of the comment.
     */
-  var quotedFileContent: js.UndefOr[gapiDotClientDotDriveLib.Anon_Value] = js.undefined
+  var quotedFileContent: js.UndefOr[gapiDotClientDotDriveLib.Anon_MimeType] = js.undefined
   /** The full list of replies to the comment in chronological order. */
   var replies: js.UndefOr[js.Array[Reply]] = js.undefined
   /** Whether the comment has been resolved by one of its replies. */

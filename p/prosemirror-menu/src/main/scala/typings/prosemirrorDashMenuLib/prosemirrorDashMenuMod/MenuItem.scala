@@ -18,6 +18,6 @@ class MenuItem[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_,
     * spec](#menu.MenuItemSpec.display), and adds an event handler which
     * executes the command when the representation is clicked.
     */
-  def render(view: prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S]): prosemirrorDashMenuLib.Anon_Update[S] = js.native
+  def render(view: prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S]): prosemirrorDashMenuLib.Anon_Dom[S] = js.native
 }
 

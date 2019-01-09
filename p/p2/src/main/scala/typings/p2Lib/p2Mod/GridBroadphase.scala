@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GridBroadphase ()
   extends p2Lib.p2Mod.p2Ns.GridBroadphase {
-  def this(options: p2Lib.Anon_Ymax) = this()
+  def this(options: p2Lib.Anon_Nx) = this()
   /* CompleteClass */
   override var binsizeX: scala.Double = js.native
   /* CompleteClass */

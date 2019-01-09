@@ -11,7 +11,7 @@ trait JQuery extends js.Object {
     * Scroll the matched elements
     */
   @JSName("scrollTo")
-  var scrollTo_Original: Anon_Target = js.native
+  var scrollTo_Original: Anon_Duration = js.native
   /**
     * Scroll the matched elements
     *

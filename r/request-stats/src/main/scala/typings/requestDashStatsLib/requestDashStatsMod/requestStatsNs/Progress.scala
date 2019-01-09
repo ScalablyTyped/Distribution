@@ -10,8 +10,8 @@ trait Progress extends js.Object {
     * `false` if the request is still in progress
     */
   var completed: scala.Boolean
-  var req: requestDashStatsLib.Anon_TimeLeft
-  var res: requestDashStatsLib.Anon_Bytes
+  var req: requestDashStatsLib.Anon_BytesBytesDelta
+  var res: requestDashStatsLib.Anon_BytesBytesDeltaSpeed
   /**
     * The total time the reuqest have been in progress
     */

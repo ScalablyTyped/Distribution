@@ -52,7 +52,7 @@ class Async () extends js.Object {
     */
   def debounce[T /* <: js.Function */](func: T): ICancelable[T] with js.Function0[scala.Unit] = js.native
   def debounce[T /* <: js.Function */](func: T, wait: scala.Double): ICancelable[T] with js.Function0[scala.Unit] = js.native
-  def debounce[T /* <: js.Function */](func: T, wait: scala.Double, options: atUifabricUtilitiesLib.Anon_MaxWait): ICancelable[T] with js.Function0[scala.Unit] = js.native
+  def debounce[T /* <: js.Function */](func: T, wait: scala.Double, options: atUifabricUtilitiesLib.Anon_LeadingMaxWait): ICancelable[T] with js.Function0[scala.Unit] = js.native
   /**
     * Dispose function, clears all async operations.
     */
@@ -94,6 +94,6 @@ class Async () extends js.Object {
     */
   def throttle[T /* <: js.Function */](func: T): T | js.Function0[scala.Unit] = js.native
   def throttle[T /* <: js.Function */](func: T, wait: scala.Double): T | js.Function0[scala.Unit] = js.native
-  def throttle[T /* <: js.Function */](func: T, wait: scala.Double, options: atUifabricUtilitiesLib.Anon_Trailing): T | js.Function0[scala.Unit] = js.native
+  def throttle[T /* <: js.Function */](func: T, wait: scala.Double, options: atUifabricUtilitiesLib.Anon_Leading): T | js.Function0[scala.Unit] = js.native
 }
 

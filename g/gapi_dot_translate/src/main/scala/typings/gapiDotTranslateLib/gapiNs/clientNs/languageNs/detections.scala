@@ -9,6 +9,6 @@ trait detections extends js.Object {
   /**
   		 * Detect the language of text.
   		 */
-  def list(`object`: gapiDotTranslateLib.Anon_Q): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotTranslateLib.GoogleApiTranslateDetectionListResponse]
+  def list(`object`: gapiDotTranslateLib.Anon_Fields): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotTranslateLib.GoogleApiTranslateDetectionListResponse]
 }
 

@@ -13,7 +13,9 @@ trait ComputeEnvironmentArgs extends js.Object {
   /**
     * Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
     */
-  val computeResources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DesiredVcpusSubnets]] = js.undefined
+  val computeResources: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BidPercentageDesiredVcpus]
+  ] = js.undefined
   /**
     * The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
     */

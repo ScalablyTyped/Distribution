@@ -16,7 +16,7 @@ trait QueuesResource extends js.Object {
     * carefully and then sign up for
     * [whitelist access to this method](https://goo.gl/Fe5mUy).
     */
-  def create(request: gapiDotClientDotCloudtasksLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[Queue]
+  def create(request: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[Queue]
   /**
     * Deletes a queue.
     *
@@ -31,9 +31,9 @@ trait QueuesResource extends js.Object {
     * carefully and then sign up for
     * [whitelist access to this method](https://goo.gl/Fe5mUy).
     */
-  def delete(request: gapiDotClientDotCloudtasksLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /** Gets a queue. */
-  def get(request: gapiDotClientDotCloudtasksLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Queue]
+  def get(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Queue]
   /**
     * Gets the access control policy for a Queue.
     * Returns an empty policy if the resource exists and does not have a policy
@@ -44,13 +44,13 @@ trait QueuesResource extends js.Object {
     *
     * &#42; `cloudtasks.queues.getIamPolicy`
     */
-  def getIamPolicy(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+  def getIamPolicy(request: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
   /**
     * Lists queues.
     *
     * Queues are returned in lexicographical order.
     */
-  def list(request: gapiDotClientDotCloudtasksLib.Anon_ParentAccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListQueuesResponse]
+  def list(request: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListQueuesResponse]
   /**
     * Updates a queue.
     *
@@ -63,7 +63,7 @@ trait QueuesResource extends js.Object {
     * carefully and then sign up for
     * [whitelist access to this method](https://goo.gl/Fe5mUy).
     */
-  def patch(request: gapiDotClientDotCloudtasksLib.Anon_NameAccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Queue]
+  def patch(request: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Queue]
   /**
     * Pauses the queue.
     *
@@ -80,7 +80,7 @@ trait QueuesResource extends js.Object {
     * carefully and then sign up for
     * [whitelist access to this method](https://goo.gl/Fe5mUy).
     */
-  def pause(request: gapiDotClientDotCloudtasksLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Queue]
+  def pause(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Queue]
   /**
     * Purges a queue by deleting all of its tasks.
     *
@@ -89,7 +89,7 @@ trait QueuesResource extends js.Object {
     * Purge operations can take up to one minute to take effect. Tasks
     * might be dispatched before the purge takes effect. A purge is irreversible.
     */
-  def purge(request: gapiDotClientDotCloudtasksLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Queue]
+  def purge(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Queue]
   /**
     * Resume a queue.
     *
@@ -109,7 +109,7 @@ trait QueuesResource extends js.Object {
     * queues, follow the 500/50/5 pattern described in
     * [Managing Cloud Tasks Scaling Risks](/cloud-tasks/pdfs/managing-cloud-tasks-scaling-risks-2017-06-05.pdf).
     */
-  def resume(request: gapiDotClientDotCloudtasksLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Queue]
+  def resume(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Queue]
   /**
     * Sets the access control policy for a Queue. Replaces any existing
     * policy.
@@ -119,7 +119,7 @@ trait QueuesResource extends js.Object {
     *
     * &#42; `cloudtasks.queues.setIamPolicy`
     */
-  def setIamPolicy(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+  def setIamPolicy(request: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
   /**
     * Returns permissions that a caller has on a Queue.
     * If the resource does not exist, this will return an empty set of
@@ -129,6 +129,6 @@ trait QueuesResource extends js.Object {
     * UIs and command-line tools, not for authorization checking. This operation
     * may "fail open" without warning.
     */
-  def testIamPermissions(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+  def testIamPermissions(request: gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
 }
 

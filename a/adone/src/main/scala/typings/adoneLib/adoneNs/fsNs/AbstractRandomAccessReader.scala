@@ -20,7 +20,7 @@ class AbstractRandomAccessReader ()
     * Creates a readable stream for the given range
     */
   def createReadStream(): nodeLib.streamMod.Readable = js.native
-  def createReadStream(options: adoneLib.Anon_Start): nodeLib.streamMod.Readable = js.native
+  def createReadStream(options: adoneLib.Anon_End): nodeLib.streamMod.Readable = js.native
   /**
     * Reads data and writes to the given buffer
     *

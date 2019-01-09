@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class LabelCollection ()
   extends cesiumLib.cesiumMod.CesiumNs.LabelCollection {
-  def this(options: cesiumLib.Anon_DebugShowBoundingVolumeModelMatrix) = this()
+  def this(options: cesiumLib.Anon_DebugShowBoundingVolume) = this()
 }
 

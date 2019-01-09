@@ -44,7 +44,7 @@ trait EnvironmentArgs extends js.Object {
     */
   val settings: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NamespaceResource]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameNamespaceResource]]
     ]
   ] = js.undefined
   /**

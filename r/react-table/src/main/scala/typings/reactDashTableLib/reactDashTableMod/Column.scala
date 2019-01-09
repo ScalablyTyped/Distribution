@@ -5,8 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 5 members from Set(std.Partial<react-table.react-table.Column.HeaderProps>, std.Partial<react-table.react-table.Column.FooterProps>, std.Partial<react-table.react-table.Column.Basics>, std.Partial<react-table.react-table.Column.CellProps>, std.Partial<react-table.react-table.Column.FilterProps>) */ trait Column[D] extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof react-table.react-table.Column.Basics ]:? react-table.react-table.Column.Basics[P]}
+- Dropped {[ P in keyof react-table.react-table.Column.CellProps ]:? react-table.react-table.Column.CellProps[P]}
+- Dropped {[ P in keyof react-table.react-table.Column.FilterProps ]:? react-table.react-table.Column.FilterProps[P]}
+- Dropped {[ P in keyof react-table.react-table.Column.FooterProps ]:? react-table.react-table.Column.FooterProps[P]}
+- Dropped {[ P in keyof react-table.react-table.Column.HeaderProps ]:? react-table.react-table.Column.HeaderProps[P]} */ trait Column[D] extends js.Object {
   /**
     * Property name as string or Accessor
     * @example: 'myProperty'

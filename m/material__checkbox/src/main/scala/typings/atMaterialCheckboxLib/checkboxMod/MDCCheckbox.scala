@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(atMaterialSelectionDashControlLib.selectionDashControlMod.MDCSelectionControl because Inheritance from two classes)*/
-@JSImport("@material/checkbox", "MDCCheckbox")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atMaterialSelectionDashControlLib.selectionDashControlMod.MDCSelectionControl because Inheritance from two classes */ @JSImport("@material/checkbox", "MDCCheckbox")
 @js.native
 class MDCCheckbox ()
   extends atMaterialBaseLib.componentMod.default[

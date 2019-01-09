@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ExpressWinstonRequest
   extends expressLib.expressMod.eNs.Request {
-  var _routeWhitelists: expressDashWinstonLib.Anon_Req = js.native
+  var _routeWhitelists: expressDashWinstonLib.Anon_Body = js.native
 }
 

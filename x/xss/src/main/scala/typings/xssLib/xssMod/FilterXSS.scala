@@ -16,7 +16,7 @@ trait filterXSS extends js.Object {
   var StripTagBody_Original: js.Function2[
     /* tags */ js.Array[java.lang.String], 
     /* next */ js.Function0[scala.Unit], 
-    xssLib.Anon_OnIgnoreTag
+    xssLib.Anon_Html
   ] = js.native
   @JSName("clearNonPrintableCharacter")
   var clearNonPrintableCharacter_Original: xssLib.XSSNs.EscapeHandler = js.native
@@ -52,7 +52,7 @@ trait filterXSS extends js.Object {
   var whiteList: xssLib.XSSNs.IWhiteList = js.native
   def apply(html: java.lang.String): java.lang.String = js.native
   def apply(html: java.lang.String, options: xssLib.XSSNs.IFilterXSSOptions): java.lang.String = js.native
-  def StripTagBody(tags: js.Array[java.lang.String], next: js.Function0[scala.Unit]): xssLib.Anon_OnIgnoreTag = js.native
+  def StripTagBody(tags: js.Array[java.lang.String], next: js.Function0[scala.Unit]): xssLib.Anon_Html = js.native
   def clearNonPrintableCharacter(str: java.lang.String): java.lang.String = js.native
   def escapeAttrValue(str: java.lang.String): java.lang.String = js.native
   def escapeDangerHtml5Entities(str: java.lang.String): java.lang.String = js.native

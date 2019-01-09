@@ -14,7 +14,7 @@ trait _Impl extends js.Object {
     * Debug output to console
     */
   var debug: scala.Boolean
-  var defaults: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
+  var defaults: /* import warning: ImportType.apply Failed type conversion: {[name: string] : semantic-ui-form.SemanticUI.Form.Field, [name: string] : semantic-ui-form.SemanticUI.Form.Field} */ js.Any
   /**
     * Delay from last typed letter to validate a field when using on: change or when revalidating a field.
     *
@@ -30,7 +30,7 @@ trait _Impl extends js.Object {
   // endregion
   // region Debug Settings
   var error: semanticDashUiDashFormLib.SemanticUINs.FormNs.ErrorSettings
-  var fields: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
+  var fields: /* import warning: ImportType.apply Failed type conversion: {[name: string] : string | std.Array<string> | semantic-ui-form.SemanticUI.Form.Field, [name: string] : string | std.Array<string> | semantic-ui-form.SemanticUI.Form.Field} */ js.Any
   /**
     * Adds inline error on field validation error
     *
@@ -80,7 +80,7 @@ trait _Impl extends js.Object {
   var revalidate: scala.Boolean
   // endregion
   // region Rules
-  var rules: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
+  var rules: /* import warning: ImportType.apply Failed type conversion: {[name: string] : (this : std.HTMLElement, args : ...any): boolean, [name: string] : (this : std.HTMLElement, args : ...any): boolean} */ js.Any
   // endregion
   // region DOM Settings
   /**

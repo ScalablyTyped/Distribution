@@ -22,7 +22,7 @@ class RandomAccessFile protected ()
     * Writes atime and mtime properties of the file
     */
   def end(): js.Promise[scala.Unit] = js.native
-  def end(options: adoneLib.Anon_Atime): js.Promise[scala.Unit] = js.native
+  def end(options: adoneLib.Anon_AtimeMtime): js.Promise[scala.Unit] = js.native
   /**
     * Reads a buffer at the given offset
     */

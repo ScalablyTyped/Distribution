@@ -11,5 +11,5 @@ package object libComponentsDetailsListDetailsRowDotTypesMod {
       IDetailsRowProps, 
       officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.theme
     ]
-  ]) with officeDashUiDashFabricDashReactLib.Anon_CanSelect
+  ]) with officeDashUiDashFabricDashReactLib.Anon_AnySelected
 }

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.formNs.fieldNs.IField because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, disabled, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait IHtmlEditor extends IFieldContainer {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.formNs.fieldNs.IField because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, disabled, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined name, submitValue, validateOnChange, value, isFormField, originalValue, batchChanges, beforeReset, checkChange, checkDirty, clearInvalid, extractFileInput, getErrors, getModelData, getName, getSubmitData, getValue, initField, initValue, isDirty, isEqual, isFileUpload, isValid, markInvalid, reset, resetOriginalValue, setValue, transformOriginalValue, validate */ trait IHtmlEditor extends IFieldContainer {
   /** [Config Option] (String/Array/Ext.XTemplate) */
   var afterIFrameTpl: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String/Array/Ext.XTemplate) */
@@ -68,7 +68,7 @@ trait IHtmlEditor extends IFieldContainer {
   /** [Method] Only relevant if the instance s isFileUpload method returns true
   		* @returns HTMLElement
   		*/
-  var extractFileInput: js.UndefOr[js.Function0[stdLib.HTMLElement]] = js.undefined
+  var extractFileInput: js.UndefOr[js.Function0[_ | stdLib.HTMLElement]] = js.undefined
   /** [Method] Try to focus this component
   		* @param selectText Object
   		* @param delay Object
@@ -90,7 +90,7 @@ trait IHtmlEditor extends IFieldContainer {
   		* @param value Object The value to get errors for (defaults to the current field value)
   		* @returns String[] All error messages for this field; an empty Array if none.
   		*/
-  var getErrors: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], extjsLib.ExtNs.Array]] = js.undefined
+  var getErrors: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _ | extjsLib.ExtNs.Array]] = js.undefined
   /** [Method] Returns the value s that should be saved to the Ext data Model instance for this field when Ext form Basic updateRe
   		* @returns Object A mapping of submit parameter names to values; each value should be a string, or an array of strings if that particular name has multiple values. It can also return null if there are no parameters to be submitted.
   		*/
@@ -124,27 +124,33 @@ trait IHtmlEditor extends IFieldContainer {
   /** [Method] Returns true if the value of this Field has been changed from its originalValue
   		* @returns Boolean True if this field has been changed from its original value (and is not disabled), false otherwise.
   		*/
-  var isDirty: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
+  var isDirty: js.UndefOr[js.Function0[_ | scala.Boolean]] = js.undefined
   /** [Method] Returns whether two field values are logically equal
   		* @param value1 Object
   		* @param value2 Object
   		* @returns Boolean True if the values are equal, false if inequal.
   		*/
   var isEqual: js.UndefOr[
-    js.Function2[/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any], scala.Boolean]
+    js.Function2[/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any], _ | scala.Boolean]
   ] = js.undefined
   /** [Method] Returns whether this Field is a file upload field if it returns true forms will use special techniques for submitti
   		* @returns Boolean
   		*/
-  var isFileUpload: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
+  var isFileUpload: js.UndefOr[js.Function0[_ | scala.Boolean]] = js.undefined
+  /** [Property] (Boolean) */
+  var isFormField: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Returns whether or not the field value is currently valid by validating the field s current value
   		* @returns Boolean True if the value is valid, else false
   		*/
-  var isValid: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
+  var isValid: js.UndefOr[js.Function0[_ | scala.Boolean]] = js.undefined
   /** [Method] Associate one or more error messages with this field
   		* @param errors String/String[] The error message(s) for the field.
   		*/
   var markInvalid: js.UndefOr[js.Function1[/* errors */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  /** [Config Option] (String) */
+  var name: js.UndefOr[java.lang.String] = js.undefined
+  /** [Property] (Object) */
+  var originalValue: js.UndefOr[js.Any] = js.undefined
   /** [Method] Pushes the value of the textarea into the iframe editor  */
   var pushValue: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Method] Executes a Midas editor command on the editor document and performs necessary focus and toolbar updates
@@ -167,6 +173,8 @@ trait IHtmlEditor extends IFieldContainer {
   		* @returns any this
   		*/
   var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.undefined
+  /** [Config Option] (Boolean) */
+  var submitValue: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Syncs the contents of the editor iframe with the textarea  */
   var syncValue: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Method] Toggles the editor between standard and source edit mode
@@ -180,5 +188,13 @@ trait IHtmlEditor extends IFieldContainer {
   var transformOriginalValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], _]] = js.undefined
   /** [Method] Triggers a toolbar update by reading the markup state of the current selection in the editor  */
   var updateToolbar: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  /** [Method] Returns whether or not the field value is currently valid by validating the field s current value and fires the vali
+  		* @returns any True if the value is valid, else false
+  		*/
+  var validate: js.UndefOr[js.Function0[_]] = js.undefined
+  /** [Config Option] (Boolean) */
+  var validateOnChange: js.UndefOr[scala.Boolean] = js.undefined
+  /** [Config Option] (Object) */
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 

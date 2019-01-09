@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("dva/fetch", JSImport.Namespace)
 @js.native
 object fetchMod
-  extends org.scalablytyped.runtime.TopLevel[isomorphicDashFetchLib.Anon_Input]
+  extends org.scalablytyped.runtime.TopLevel[isomorphicDashFetchLib.Anon_Init]
 

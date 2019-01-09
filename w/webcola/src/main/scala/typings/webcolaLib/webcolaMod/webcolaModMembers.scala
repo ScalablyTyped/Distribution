@@ -45,13 +45,13 @@ object webcolaModMembers extends js.Object {
     nodes: js.Array[_],
     links: js.Array[Link],
     la: webcolaLib.distSrcPowergraphMod.LinkTypeAccessor[Link]
-  ): webcolaLib.Anon_PowerEdges = js.native
+  ): webcolaLib.Anon_Groups = js.native
   def getGroups[Link](
     nodes: js.Array[_],
     links: js.Array[Link],
     la: webcolaLib.distSrcPowergraphMod.LinkTypeAccessor[Link],
     rootGroup: js.Array[_]
-  ): webcolaLib.Anon_PowerEdges = js.native
+  ): webcolaLib.Anon_Groups = js.native
   def gridify(pgLayout: js.Any, nudgeGap: scala.Double, margin: scala.Double, groupMargin: scala.Double): js.Array[js.Array[js.Array[webcolaLib.distSrcGeomMod.Point]]] = js.native
   def isLeft(
     P0: webcolaLib.distSrcGeomMod.Point,
@@ -69,12 +69,12 @@ object webcolaModMembers extends js.Object {
     target: webcolaLib.distSrcRectangleMod.Rectangle,
     ah: scala.Double
   ): webcolaLib.Anon_ArrowStart = js.native
-  def makeEdgeTo(s: webcolaLib.Anon_Y, target: webcolaLib.distSrcRectangleMod.Rectangle, ah: scala.Double): webcolaLib.distSrcGeomMod.Point = js.native
+  def makeEdgeTo(s: webcolaLib.Anon_X, target: webcolaLib.distSrcRectangleMod.Rectangle, ah: scala.Double): webcolaLib.distSrcGeomMod.Point = js.native
   def polysOverlap(p: js.Array[webcolaLib.distSrcGeomMod.Point], q: js.Array[webcolaLib.distSrcGeomMod.Point]): scala.Boolean = js.native
   def powerGraphGridLayout(graph: webcolaLib.Anon_Links, size: js.Array[scala.Double], grouppadding: scala.Double): webcolaLib.Anon_Cola = js.native
-  def removeOverlapInOneDimension(spans: js.Array[webcolaLib.Anon_DesiredCenter]): webcolaLib.Anon_UpperBound = js.native
-  def removeOverlapInOneDimension(spans: js.Array[webcolaLib.Anon_DesiredCenter], lowerBound: scala.Double): webcolaLib.Anon_UpperBound = js.native
-  def removeOverlapInOneDimension(spans: js.Array[webcolaLib.Anon_DesiredCenter], lowerBound: scala.Double, upperBound: scala.Double): webcolaLib.Anon_UpperBound = js.native
+  def removeOverlapInOneDimension(spans: js.Array[webcolaLib.Anon_DesiredCenter]): webcolaLib.Anon_LowerBound = js.native
+  def removeOverlapInOneDimension(spans: js.Array[webcolaLib.Anon_DesiredCenter], lowerBound: scala.Double): webcolaLib.Anon_LowerBound = js.native
+  def removeOverlapInOneDimension(spans: js.Array[webcolaLib.Anon_DesiredCenter], lowerBound: scala.Double, upperBound: scala.Double): webcolaLib.Anon_LowerBound = js.native
   def removeOverlaps(rs: js.Array[webcolaLib.distSrcRectangleMod.Rectangle]): scala.Unit = js.native
   def separateGraphs(nodes: js.Any, links: js.Any): js.Array[_] = js.native
   def stronglyConnectedComponents[Link](

@@ -12,7 +12,7 @@ object ConstantsNs extends js.Object {
     extends /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
     var android: js.UndefOr[expoLib.Anon_Config] = js.undefined
     var androidShowExponentNotificationInShellApp: js.UndefOr[scala.Boolean] = js.undefined
-    var androidStatusBar: js.UndefOr[expoLib.Anon_BarStyle] = js.undefined
+    var androidStatusBar: js.UndefOr[expoLib.Anon_BackgroundColor] = js.undefined
     var appKey: js.UndefOr[java.lang.String] = js.undefined
     var assetBundlePatterns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     var description: js.UndefOr[java.lang.String] = js.undefined
@@ -24,13 +24,13 @@ object ConstantsNs extends js.Object {
     var githubUrl: js.UndefOr[java.lang.String] = js.undefined
     var icon: js.UndefOr[java.lang.String] = js.undefined
     var ignoreNodeModulesValidation: js.UndefOr[js.Any] = js.undefined
-    var ios: js.UndefOr[expoLib.Anon_SupportsTablet] = js.undefined
-    var loading: js.UndefOr[expoLib.Anon_ExponentIconGrayscale] = js.undefined
+    var ios: js.UndefOr[expoLib.Anon_BuildNumberBundleIdentifier] = js.undefined
+    var loading: js.UndefOr[expoLib.Anon_0] = js.undefined
     var name: java.lang.String
     var nodeModulesPath: js.UndefOr[java.lang.String] = js.undefined
     var notification: js.UndefOr[expoLib.Anon_AndroidCollapsedTitle] = js.undefined
     var orientation: js.UndefOr[expoLib.expoMod.Orientation] = js.undefined
-    var packagerOpts: js.UndefOr[expoLib.Anon_PropName] = js.undefined
+    var packagerOpts: js.UndefOr[expoLib.Anon_Dev] = js.undefined
     var platforms: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     var primaryColor: js.UndefOr[java.lang.String] = js.undefined
     var privacy: js.UndefOr[expoLib.expoLibStrings.public | expoLib.expoLibStrings.unlisted] = js.undefined
@@ -39,13 +39,13 @@ object ConstantsNs extends js.Object {
     var scheme: js.UndefOr[java.lang.String] = js.undefined
     var sdkVersion: js.UndefOr[java.lang.String] = js.undefined
     var slug: js.UndefOr[java.lang.String] = js.undefined
-    var splash: js.UndefOr[expoLib.Anon_ResizeMode] = js.undefined
+    var splash: js.UndefOr[expoLib.Anon_BackgroundColorImage] = js.undefined
     var version: js.UndefOr[java.lang.String] = js.undefined
   }
   
   trait Platform extends js.Object {
     var android: js.UndefOr[expoLib.Anon_VersionCode] = js.undefined
-    var ios: js.UndefOr[expoLib.Anon_Platform] = js.undefined
+    var ios: js.UndefOr[expoLib.Anon_BuildNumber] = js.undefined
   }
   
   val appOwnership: expoLib.expoLibStrings.expo | expoLib.expoLibStrings.standalone | expoLib.expoLibStrings.guest = js.native

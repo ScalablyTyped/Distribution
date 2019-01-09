@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick<react.react.InputHTMLAttributes<react.HTMLInputElement>, {typemapped, typemapped, indexed, indexed}[keyof react.react.InputHTMLAttributes<react.HTMLInputElement>]>) */ trait GeosuggestProps extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in {[ P in keyof react.react.InputHTMLAttributes<react.HTMLInputElement> ]: P} & {[ P in 'style' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.InputHTMLAttributes<react.HTMLInputElement>] ]: react.react.InputHTMLAttributes<react.HTMLInputElement>[P]} */ trait GeosuggestProps extends js.Object {
   var autoActivateFirstSuggest: js.UndefOr[scala.Boolean] = js.undefined
   var autoComplete: js.UndefOr[java.lang.String] = js.undefined
   var bounds: js.UndefOr[googlemapsLib.googleNs.mapsNs.LatLngBounds] = js.undefined
@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
       java.lang.String
     ]
   ] = js.undefined
-  var googleMaps: js.UndefOr[reactDashGeosuggestLib.Anon_LatLng] = js.undefined
+  var googleMaps: js.UndefOr[reactDashGeosuggestLib.Anon_Adsense] = js.undefined
   var highlightMatch: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreTab: js.UndefOr[scala.Boolean] = js.undefined
   var initialValue: js.UndefOr[java.lang.String] = js.undefined

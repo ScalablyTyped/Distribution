@@ -84,7 +84,7 @@ class ListItem ()
   def load(): ListItem = js.native
   def load(option: java.lang.String): ListItem = js.native
   def load(option: js.Array[java.lang.String]): ListItem = js.native
-  def load(option: officeDashJsLib.Anon_Select): ListItem = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ListItem = js.native
   def load(option: officeDashJsLib.WordNs.InterfacesNs.ListItemLoadOptions): ListItem = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

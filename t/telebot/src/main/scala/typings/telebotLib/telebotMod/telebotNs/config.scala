@@ -16,6 +16,6 @@ trait config extends js.Object {
   var token: java.lang.String
    // Optional. List the types of updates you want your bot to receive. Specify an empty list to receive all updates.
   var usePlugins: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var webhook: js.UndefOr[telebotLib.Anon_Url] = js.undefined
+  var webhook: js.UndefOr[telebotLib.Anon_Cert] = js.undefined
 }
 

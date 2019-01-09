@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ProviderMeta protected ()
   extends atAngularCompilerLib.srcCompileUnderscoreMetadataMod.ProviderMeta {
-  def this(token: js.Any, hasUseClassUseValueUseExistingUseFactoryDepsMulti: atAngularCompilerLib.Anon_UseClass) = this()
+  def this(token: js.Any, hasUseClassUseValueUseExistingUseFactoryDepsMulti: atAngularCompilerLib.Anon_Deps) = this()
 }
 

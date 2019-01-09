@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait ChartCrosshair extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
-  var focused: js.UndefOr[googleDotVisualizationLib.Anon_Opacity] = js.undefined
+  var focused: js.UndefOr[googleDotVisualizationLib.Anon_Color] = js.undefined
   var opacity: js.UndefOr[scala.Double] = js.undefined
   var orientation: js.UndefOr[java.lang.String] = js.undefined
-  var selected: js.UndefOr[googleDotVisualizationLib.Anon_Opacity] = js.undefined
+  var selected: js.UndefOr[googleDotVisualizationLib.Anon_Color] = js.undefined
   var trigger: js.UndefOr[java.lang.String] = js.undefined
 }
 

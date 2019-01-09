@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("iota.lib.js", JSImport.Namespace)
 @js.native
 class namespaced protected () extends IotaClass {
-  def this(settings: iotaDotLibDotJsLib.Anon_Token) = this()
-  def this(settings: iotaDotLibDotJsLib.Anon_TokenHost) = this()
+  def this(settings: iotaDotLibDotJsLib.Anon_Host) = this()
+  def this(settings: iotaDotLibDotJsLib.Anon_Provider) = this()
   /* CompleteClass */
   override var api: IotaApi = js.native
   /* CompleteClass */

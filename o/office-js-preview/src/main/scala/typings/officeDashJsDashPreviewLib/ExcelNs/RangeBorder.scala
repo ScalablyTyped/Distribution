@@ -73,7 +73,7 @@ class RangeBorder ()
   def load(): RangeBorder = js.native
   def load(option: java.lang.String): RangeBorder = js.native
   def load(option: js.Array[java.lang.String]): RangeBorder = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): RangeBorder = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): RangeBorder = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.RangeBorderLoadOptions): RangeBorder = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

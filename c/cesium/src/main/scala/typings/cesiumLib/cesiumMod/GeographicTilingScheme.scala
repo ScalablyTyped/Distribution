@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class GeographicTilingScheme ()
   extends cesiumLib.cesiumMod.CesiumNs.GeographicTilingScheme {
-  def this(options: cesiumLib.Anon_NumberOfLevelZeroTilesX) = this()
+  def this(options: cesiumLib.Anon_EllipsoidNumberOfLevelZeroTilesX) = this()
 }
 

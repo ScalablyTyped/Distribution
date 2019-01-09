@@ -89,7 +89,7 @@ class ProtractorBrowser protected ()
     * @type {Array<{name: string, script: function|string, args:
     * Array.<string>}>}
     */
-  var `mockModules_`: js.Array[protractorLib.Anon_Script] = js.native
+  var `mockModules_`: js.Array[protractorLib.Anon_Args] = js.native
   /**
     * If true, Protractor will interpret any angular apps it comes across as
     * hybrid angular1/angular2 apps.

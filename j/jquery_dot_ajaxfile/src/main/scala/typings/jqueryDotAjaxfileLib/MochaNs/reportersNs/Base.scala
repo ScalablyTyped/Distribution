@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Base protected () extends js.Object {
   def this(runner: jqueryDotAjaxfileLib.MochaNs.IRunner) = this()
-  var stats: jqueryDotAjaxfileLib.Anon_Suites = js.native
+  var stats: jqueryDotAjaxfileLib.Anon_Failures = js.native
 }
 

@@ -38,7 +38,7 @@ trait CatalogTableState extends js.Object {
     * A list of columns by which the table is partitioned. Only primitive types are supported as partition keys.
     */
   val partitionKeys: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Comment]]]
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CommentName]]]
   ] = js.undefined
   /**
     * Retention time for this table.
@@ -47,7 +47,7 @@ trait CatalogTableState extends js.Object {
   /**
     * A storage descriptor object containing information about the physical storage of this table. You can refer to the [Glue Developer Guide](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-tables.html#aws-glue-api-catalog-tables-StorageDescriptor) for a full explanation of this object.
     */
-  val storageDescriptor: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NumberOfBuckets]] = js.undefined
+  val storageDescriptor: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketColumnsColumns]] = js.undefined
   /**
     * The type of this table (EXTERNAL_TABLE, VIRTUAL_VIEW, etc.).
     */

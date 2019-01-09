@@ -108,7 +108,7 @@ abstract class VideoDeviceController () extends js.Object {
   /**
     * Gets the local power line frequency.
     */
-  def tryGetPowerlineFrequency(): winrtDashUwpLib.Anon_Value = js.native
+  def tryGetPowerlineFrequency(): winrtDashUwpLib.Anon_ReturnValueValueBoolean = js.native
   /**
     * Sets the local power line frequency.
     * @param value The power line frequency.

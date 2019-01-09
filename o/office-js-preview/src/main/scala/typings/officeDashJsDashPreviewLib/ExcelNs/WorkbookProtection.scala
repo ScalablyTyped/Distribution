@@ -43,7 +43,7 @@ class WorkbookProtection ()
   def load(): WorkbookProtection = js.native
   def load(option: java.lang.String): WorkbookProtection = js.native
   def load(option: js.Array[java.lang.String]): WorkbookProtection = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): WorkbookProtection = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): WorkbookProtection = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.WorkbookProtectionLoadOptions): WorkbookProtection = js.native
   /**
     *

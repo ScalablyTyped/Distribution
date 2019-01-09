@@ -45,7 +45,7 @@ trait ISurvey extends ITextProcessor {
   def hasVisibleQuestionByValueName(valueName: java.lang.String): scala.Boolean
   def isPageStarted(page: IPage): scala.Boolean
   def matrixAfterCellRender(question: IQuestion, options: js.Any): js.Any
-  def matrixBeforeRowAdded(options: surveyDashKnockoutLib.Anon_Question): js.Any
+  def matrixBeforeRowAdded(options: surveyDashKnockoutLib.Anon_CanAddRow): js.Any
   def matrixCellCreated(question: IQuestion, options: js.Any): js.Any
   def matrixCellValidate(question: IQuestion, options: js.Any): SurveyError
   def matrixCellValueChanged(question: IQuestion, options: js.Any): js.Any

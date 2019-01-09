@@ -9,6 +9,6 @@ trait AddressesScopedList extends js.Object {
   /** [Output Only] List of addresses contained in this scope. */
   var addresses: js.UndefOr[js.Array[Address]] = js.undefined
   /** [Output Only] Informational warning which replaces the list of addresses when the list is empty. */
-  var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Data] = js.undefined
+  var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Code] = js.undefined
 }
 

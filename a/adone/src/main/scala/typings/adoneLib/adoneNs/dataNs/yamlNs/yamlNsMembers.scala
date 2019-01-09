@@ -28,7 +28,7 @@ object yamlNsMembers extends js.Object {
   /**
     * Same as safeLoadAll() but uses DEFAULT_FULL by default
     */
-  val loadAll: adoneLib.Anon_Input = js.native
+  val loadAll: adoneLib.Anon_Doc = js.native
   /**
     * Serializes object as a YAML document.
     * Uses DEFAULT_SAFE, so it will throw an exception if you try to dump regexps or functions
@@ -52,7 +52,7 @@ object yamlNsMembers extends js.Object {
     * Same as safeLoad(), but understands multi-document sources.
     * Applies iterator to each document if specified, or returns array of documents
     */
-  val safeLoadAll: adoneLib.Anon_Input = js.native
+  val safeLoadAll: adoneLib.Anon_Doc = js.native
   /**
     * Decodes the given string/buffer using DEFAULT_SAFE scheme by default
     */

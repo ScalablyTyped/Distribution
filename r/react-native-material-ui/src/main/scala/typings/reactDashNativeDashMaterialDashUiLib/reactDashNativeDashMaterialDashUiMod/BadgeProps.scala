@@ -11,7 +11,7 @@ trait BadgeProps extends js.Object {
   var icon: js.UndefOr[java.lang.String | reactDashNativeDashMaterialDashUiLib.Anon_Color] = js.undefined
   var size: js.UndefOr[scala.Double] = js.undefined
   var stroke: js.UndefOr[scala.Double] = js.undefined
-  var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_Container] = js.undefined
+  var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_ContainerContentStrokeContainer] = js.undefined
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(postmanDashCollectionLib.postmanDashCollectionMod.RequestAuthDefinition because Would inherit conflicting mutable fields List(description, disabled, id, name))*/
-@JSImport("postman-collection", "RequestAuth")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- postmanDashCollectionLib.postmanDashCollectionMod.RequestAuthDefinition because var conflicts: description, disabled, id, name. Inlined `type` */ @JSImport("postman-collection", "RequestAuth")
 @js.native
 class RequestAuth protected () extends Property[RequestAuthDefinition] {
   def this(options: RequestAuthDefinition) = this()
   def this(options: RequestAuthDefinition, parent: Property[PropertyDefinition]) = this()
   def this(options: RequestAuthDefinition, parent: PropertyList[RequestAuth]) = this()
-  var `type`: java.lang.String = js.native
+  var `type`: java.lang.String | js.UndefOr[java.lang.String] = js.native
   def clear(`type`: java.lang.String): scala.Unit = js.native
   def current(): js.Any = js.native
   def parameters(): VariableList = js.native

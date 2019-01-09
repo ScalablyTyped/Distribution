@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class AngleLockEquation protected ()
   extends p2Lib.p2Mod.p2Ns.AngleLockEquation {
   def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body) = this()
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, options: p2Lib.Anon_Angle) = this()
+  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, options: p2Lib.Anon_AngleRatio) = this()
   /* CompleteClass */
   override var G: js.Array[scala.Double] = js.native
   /* CompleteClass */

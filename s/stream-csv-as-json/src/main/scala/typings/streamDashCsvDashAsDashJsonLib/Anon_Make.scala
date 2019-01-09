@@ -7,9 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Make extends js.Object {
-  def make(): streamDashCsvDashAsDashJsonLib.stringerMod.Stringer = js.native
-  def make(options: streamDashCsvDashAsDashJsonLib.stringerMod.StringerNs.StringerOptions): streamDashCsvDashAsDashJsonLib.stringerMod.Stringer = js.native
-  def stringer(): streamDashCsvDashAsDashJsonLib.stringerMod.Stringer = js.native
-  def stringer(options: streamDashCsvDashAsDashJsonLib.stringerMod.StringerNs.StringerOptions): streamDashCsvDashAsDashJsonLib.stringerMod.Stringer = js.native
+  val makeNs: Anon_ConstructorParser = js.native
+  val parserNs: Anon_ConstructorParser = js.native
+  def make(): streamDashCsvDashAsDashJsonLib.parserMod.Parser = js.native
+  def make(options: streamDashCsvDashAsDashJsonLib.parserMod.ParserNs.ParserOptions): streamDashCsvDashAsDashJsonLib.parserMod.Parser = js.native
+  def parser(): streamDashCsvDashAsDashJsonLib.parserMod.Parser = js.native
+  def parser(options: streamDashCsvDashAsDashJsonLib.parserMod.ParserNs.ParserOptions): streamDashCsvDashAsDashJsonLib.parserMod.Parser = js.native
 }
 

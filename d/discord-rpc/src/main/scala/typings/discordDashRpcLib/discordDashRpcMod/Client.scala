@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 class Client protected ()
   extends nodeLib.eventsMod.EventEmitter {
   def this(options: RPCClientOptions) = this()
-  var application: discordDashRpcLib.Anon_Name = js.native
-  var user: discordDashRpcLib.Anon_Username = js.native
+  var application: discordDashRpcLib.Anon_Description = js.native
+  var user: discordDashRpcLib.Anon_Avatar = js.native
   def captureShortcut(
     callback: js.Function2[
-      /* shortcut */ js.Array[discordDashRpcLib.Anon_Type], 
+      /* shortcut */ js.Array[discordDashRpcLib.Anon_Code], 
       /* stop */ js.Function0[scala.Unit], 
       scala.Unit
     ]
@@ -62,9 +62,9 @@ class Client protected ()
   def subscribe(event: java.lang.String, args: js.Any, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Promise[Subscription] = js.native
   def subscribe(event: java.lang.String, callback: js.Function1[/* data */ js.Any, scala.Unit]): js.Promise[Subscription] = js.native
   def updateLobby(lobby: discordDashRpcLib.Anon_Id): js.Promise[_] = js.native
-  def updateLobby(lobby: discordDashRpcLib.Anon_Id, options: discordDashRpcLib.Anon_TypeMetadata): js.Promise[_] = js.native
+  def updateLobby(lobby: discordDashRpcLib.Anon_Id, options: discordDashRpcLib.Anon_Capacity): js.Promise[_] = js.native
   def updateLobby(lobby: java.lang.String): js.Promise[_] = js.native
-  def updateLobby(lobby: java.lang.String, options: discordDashRpcLib.Anon_TypeMetadata): js.Promise[_] = js.native
+  def updateLobby(lobby: java.lang.String, options: discordDashRpcLib.Anon_Capacity): js.Promise[_] = js.native
   def updateLobbyMember(lobby: discordDashRpcLib.Anon_Id, user: discordDashRpcLib.Anon_Id, metadata: js.Any): js.Promise[_] = js.native
   def updateLobbyMember(lobby: discordDashRpcLib.Anon_Id, user: java.lang.String, metadata: js.Any): js.Promise[_] = js.native
   def updateLobbyMember(lobby: java.lang.String, user: discordDashRpcLib.Anon_Id, metadata: js.Any): js.Promise[_] = js.native

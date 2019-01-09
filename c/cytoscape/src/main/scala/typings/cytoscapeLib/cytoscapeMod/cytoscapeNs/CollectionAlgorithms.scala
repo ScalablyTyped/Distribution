@@ -81,7 +81,7 @@ trait CollectionAlgorithms extends js.Object {
     * The optimal result is found with a high probability, but without guarantee.
     * http://js.cytoscape.org/#eles.kargerStein
     */
-  def kargerStein(): cytoscapeLib.Anon_PartitionSecond = js.native
+  def kargerStein(): cytoscapeLib.Anon_Cut = js.native
   /**
     * Perform Kruskal's algorithm on the elements in the collection,
     * returning the minimum spanning tree, assuming undirected edges.

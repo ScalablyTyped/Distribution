@@ -15,6 +15,6 @@ class Progress protected () extends Base {
     * @param options.close String used to indicate the end of the progress bar.
     */
   def this(runner: jqueryDotAjaxfileLib.MochaNs.IRunner) = this()
-  def this(runner: jqueryDotAjaxfileLib.MochaNs.IRunner, options: jqueryDotAjaxfileLib.Anon_Complete) = this()
+  def this(runner: jqueryDotAjaxfileLib.MochaNs.IRunner, options: jqueryDotAjaxfileLib.Anon_Close) = this()
 }
 

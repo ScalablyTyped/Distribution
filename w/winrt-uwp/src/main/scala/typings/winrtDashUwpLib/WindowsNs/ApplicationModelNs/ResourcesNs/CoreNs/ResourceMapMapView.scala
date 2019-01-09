@@ -31,6 +31,6 @@ abstract class ResourceMapMapView () extends js.Object {
   /**
     * Splits the map view into two views.
     */
-  def split(): winrtDashUwpLib.Anon_SecondFirst = js.native
+  def split(): winrtDashUwpLib.Anon_FirstSecondIMapViewResourceMap = js.native
 }
 

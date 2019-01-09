@@ -160,7 +160,7 @@ class Section ()
   def load(): Section = js.native
   def load(option: java.lang.String): Section = js.native
   def load(option: js.Array[java.lang.String]): Section = js.native
-  def load(option: officeDashJsLib.Anon_Select): Section = js.native
+  def load(option: officeDashJsLib.Anon_Expand): Section = js.native
   def load(option: officeDashJsLib.OneNoteNs.InterfacesNs.SectionLoadOptions): Section = js.native
   def toJSON(): officeDashJsLib.OneNoteNs.InterfacesNs.SectionData = js.native
   /**

@@ -52,11 +52,11 @@ trait LaunchData extends js.Object {
     */
   var source: js.UndefOr[
     chromeDashAppsLib.chromeNs.ToStringLiteral[
-      chromeDashAppsLib.Anon_NEWTABPAGE, 
+      chromeDashAppsLib.Anon_ABOUTPAGE, 
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_NEWTABPAGE[keyof chrome-apps.Anon_NEWTABPAGE] */ js.Any
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABOUTPAGE[keyof chrome-apps.Anon_ABOUTPAGE] */ js.Any
       ]
     ]
   ] = js.undefined

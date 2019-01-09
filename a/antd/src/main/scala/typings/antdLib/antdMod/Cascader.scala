@@ -15,7 +15,7 @@ class Cascader protected ()
 @JSImport("antd", "Cascader")
 @js.native
 object Cascader extends js.Object {
-  var defaultProps: antdLib.Anon_TransitionName = js.native
+  var defaultProps: antdLib.Anon_AllowClear = js.native
   def getDerivedStateFromProps(
     nextProps: antdLib.libCascaderMod.CascaderProps,
     hasPrevProps: antdLib.libCascaderMod.CascaderState

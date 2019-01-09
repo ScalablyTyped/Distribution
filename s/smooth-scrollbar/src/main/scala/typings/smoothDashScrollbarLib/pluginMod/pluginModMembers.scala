@@ -9,13 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object pluginModMembers extends js.Object {
   val globalPlugins: PluginMap = js.native
-  def addPlugins(
-    Plugins: (org.scalablytyped.runtime.Instantiable2[
-      /* scrollbar */ smoothDashScrollbarLib.scrollbarMod.Scrollbar, 
-      /* options */ js.UndefOr[/* options */ js.Any], 
-      ScrollbarPlugin
-    ])*
-  ): scala.Unit = js.native
+  def addPlugins(Plugins: smoothDashScrollbarLib.Anon_DefaultOptions*): scala.Unit = js.native
   def initPlugins(scrollbar: smoothDashScrollbarLib.scrollbarMod.Scrollbar, options: js.Any): coreDashJsLib.Array[ScrollbarPlugin] = js.native
 }
 

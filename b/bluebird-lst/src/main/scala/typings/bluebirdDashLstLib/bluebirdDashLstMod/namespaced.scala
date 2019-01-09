@@ -61,15 +61,7 @@ object namespaced extends js.Object {
     * Create a new promise. The passed in function will receive functions `resolve` and `reject` as its arguments which can be called to seal the fate of the created promise.
     * If promise cancellation is enabled, passed in function will receive one more function argument `onCancel` that allows to register an optional cancellation callback.
     */
-  var Promise: bluebirdDashLstLib.Anon_TimeoutError with (org.scalablytyped.runtime.Instantiable1[
-    /* callback */ js.Function3[
-      /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[js.Object | js.Thenable[js.Object]], scala.Unit], 
-      /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit], 
-      /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[scala.Unit], scala.Unit]], 
-      scala.Unit
-    ], 
-    bluebirdDashLstLib.bluebirdDashLstMod.Bluebird[js.Object]
-  ]) = js.native
+  var Promise: bluebirdDashLstLib.Anon_A1 = js.native
   /**
     * The version number of the library
     */
@@ -119,7 +111,7 @@ object namespaced extends js.Object {
     * Note that even though false is the default here, a development environment might be detected which automatically
     *  enables long stack traces and warnings.
     */
-  def config(options: bluebirdDashLstLib.Anon_Warnings): scala.Unit = js.native
+  def config(options: bluebirdDashLstLib.Anon_Cancellation): scala.Unit = js.native
   /**
     * Returns a function that can use `yield` to run asynchronous code synchronously. This feature requires the support of generators which are drafted in the next version of the language. Node version greater than `0.11.2` is required and needs to be executed with the `--harmony-generators` (or `--harmony`) command-line switch.
     */

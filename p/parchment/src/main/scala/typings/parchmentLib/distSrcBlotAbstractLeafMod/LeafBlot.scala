@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(parchmentLib.distSrcBlotAbstractBlotMod.Leaf because Would inherit conflicting mutable fields List(domNode, next, parent, prev, scroll))*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- parchmentLib.distSrcBlotAbstractBlotMod.Leaf because var conflicts: domNode, next, parent, prev, scroll. Inlined index, position, value */ @js.native
 trait LeafBlot
   extends parchmentLib.distSrcBlotAbstractShadowMod.default {
   def index(node: stdLib.Node, offset: scala.Double): scala.Double = js.native

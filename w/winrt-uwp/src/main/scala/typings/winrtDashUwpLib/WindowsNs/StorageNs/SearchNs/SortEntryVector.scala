@@ -34,7 +34,7 @@ abstract class SortEntryVector ()
     * Retrieves the sort entries that start at the specified index in the collection.
     * @param startIndex The zero-based index of the start of the sort entries in the collection to retrieve.
     */
-  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValue = js.native
+  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValueNumberSortEntry = js.native
   /**
     * Retrieves an immutable view of the collection of sort entries.
     * @return The view of the collection.

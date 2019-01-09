@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "Asset")
 @js.native
 class Asset protected () extends js.Object {
-  def this(hasNameTypeHashUriWidthHeight: expoLib.Anon_NameUri) = this()
-  var downloadCallbacks: js.Array[expoLib.Anon_Reject] = js.native
+  def this(hasNameTypeHashUriWidthHeight: expoLib.Anon_Hash) = this()
+  var downloadCallbacks: js.Array[expoLib.Anon_E] = js.native
   var downloaded: scala.Boolean = js.native
   var downloading: scala.Boolean = js.native
   /** The MD5 hash of the asset’s data. */

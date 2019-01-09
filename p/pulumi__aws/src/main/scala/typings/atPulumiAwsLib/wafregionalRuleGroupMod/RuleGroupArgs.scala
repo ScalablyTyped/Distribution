@@ -10,7 +10,9 @@ trait RuleGroupArgs extends js.Object {
     * A list of activated rules, see below
     */
   val activatedRules: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Action]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ActionPriorityRuleId]]
+    ]
   ] = js.undefined
   /**
     * A friendly name for the metrics from the rule group

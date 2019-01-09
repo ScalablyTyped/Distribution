@@ -15,7 +15,7 @@ object MakerJsNsMembers extends js.Object {
   /**
     * Enumeration of environment types.
     */
-  var environmentTypes: makerDotJsLib.Anon_NodeJs = js.native
+  var environmentTypes: makerDotJsLib.Anon_BrowserUI = js.native
   /**
     * String-based enumeration of all paths types.
     *
@@ -32,7 +32,7 @@ object MakerJsNsMembers extends js.Object {
     * Unit conversion function is makerjs.units.conversionScale().
     * Important: If you add to this, you must also add a corresponding conversion ratio in the unit.ts file!
     */
-  var unitType: makerDotJsLib.Anon_Inch = js.native
+  var unitType: makerDotJsLib.Anon_Centimeter = js.native
   /**
     * Version info
     */

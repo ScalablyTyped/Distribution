@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class GeolocateControl ()
   extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.GeolocateControl {
-  def this(options: mapboxDashGlLib.Anon_PositionOptions) = this()
+  def this(options: mapboxDashGlLib.Anon_FitBoundsOptions) = this()
 }
 

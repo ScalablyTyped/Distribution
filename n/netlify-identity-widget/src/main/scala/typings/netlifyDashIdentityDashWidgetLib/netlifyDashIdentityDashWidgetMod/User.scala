@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait User extends js.Object {
-  var api: netlifyDashIdentityDashWidgetLib.Anon_DefaultHeaders
+  var api: netlifyDashIdentityDashWidgetLib.Anon_ApiURL
   var app_metadata: netlifyDashIdentityDashWidgetLib.Anon_Provider
   var aud: java.lang.String
   var audience: js.UndefOr[js.Any] = js.undefined
@@ -18,6 +18,6 @@ trait User extends js.Object {
   var token: js.UndefOr[Token] = js.undefined
   var updated_at: java.lang.String
   var url: java.lang.String
-  var user_metadata: netlifyDashIdentityDashWidgetLib.Anon_Fullname
+  var user_metadata: netlifyDashIdentityDashWidgetLib.Anon_Avatarurl
 }
 

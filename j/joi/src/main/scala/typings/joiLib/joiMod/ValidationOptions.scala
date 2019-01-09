@@ -46,6 +46,6 @@ trait ValidationOptions extends js.Object {
     * - when an object:
     *      - objects - set to true to remove unknown keys from objects
     */
-  var stripUnknown: js.UndefOr[scala.Boolean | joiLib.Anon_Objects] = js.undefined
+  var stripUnknown: js.UndefOr[scala.Boolean | joiLib.Anon_Arrays] = js.undefined
 }
 

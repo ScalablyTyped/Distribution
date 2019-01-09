@@ -25,9 +25,9 @@ class Schema protected () extends Component {
 @JSImport("js-data", "Schema")
 @js.native
 object Schema extends js.Object {
-  var typeGroupValidators: jsDashDataLib.Anon_Number = js.native
-  var types: jsDashDataLib.Anon_NumberValue = js.native
-  var validationKeywords: jsDashDataLib.Anon_Pattern = js.native
+  var typeGroupValidators: jsDashDataLib.Anon_ArrayInteger = js.native
+  var types: jsDashDataLib.Anon_Array = js.native
+  var validationKeywords: jsDashDataLib.Anon_AllOf = js.native
   def validate(value: js.Any, schema: js.Any, opts: js.Any): js.Array[jsDashDataLib.jsDashDataMod.SchemaValidationError] = js.native
 }
 

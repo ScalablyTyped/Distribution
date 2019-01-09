@@ -19,6 +19,6 @@ trait ScrollSyncProps
     * This function should implement the following signature:
     * ({ onScroll, scrollLeft, scrollTop }) => PropTypes.element
     */
-  var children: js.Function1[/* props */ ScrollSyncChildProps, reactLib.reactMod.ReactNs.ReactNode]
+  def children(props: ScrollSyncChildProps): reactLib.reactMod.ReactNs.ReactNode
 }
 

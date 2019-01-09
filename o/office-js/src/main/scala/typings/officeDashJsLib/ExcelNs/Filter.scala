@@ -174,7 +174,7 @@ class Filter ()
   def load(): Filter = js.native
   def load(option: java.lang.String): Filter = js.native
   def load(option: js.Array[java.lang.String]): Filter = js.native
-  def load(option: officeDashJsLib.Anon_Select): Filter = js.native
+  def load(option: officeDashJsLib.Anon_Expand): Filter = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.FilterLoadOptions): Filter = js.native
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.FilterData = js.native
 }

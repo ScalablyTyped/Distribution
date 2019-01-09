@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Anon_Xs extends js.Object {
+trait Anon_Xs[T] extends js.Object {
   def apply(xs: java.lang.String): java.lang.String = js.native
-  def apply[T](xs: js.Array[T]): js.Array[T] = js.native
+  def apply(xs: js.Array[T]): js.Array[T] = js.native
 }
 

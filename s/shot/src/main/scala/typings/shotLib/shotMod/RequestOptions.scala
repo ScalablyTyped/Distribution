@@ -17,7 +17,7 @@ trait RequestOptions extends js.Object {
   /** an optional string specifying the client remote address. Defaults to '127.0.0.1'. */
   var remoteAddress: js.UndefOr[java.lang.String] = js.undefined
   /** an object containing flags to simulate various conditions: */
-  var simulate: js.UndefOr[shotLib.Anon_Error] = js.undefined
+  var simulate: js.UndefOr[shotLib.Anon_Close] = js.undefined
   /** a string specifying the request URL. */
   var url: java.lang.String
   /** Optional flag to validate this options object. Defaults to true. */

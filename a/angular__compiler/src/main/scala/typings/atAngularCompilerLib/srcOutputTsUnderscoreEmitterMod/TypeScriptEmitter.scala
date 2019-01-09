@@ -12,25 +12,25 @@ class TypeScriptEmitter ()
   def emitStatementsAndContext(
     genFilePath: java.lang.String,
     stmts: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]
-  ): atAngularCompilerLib.Anon_SourceText = js.native
+  ): atAngularCompilerLib.Anon_Context = js.native
   def emitStatementsAndContext(
     genFilePath: java.lang.String,
     stmts: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement],
     preamble: java.lang.String
-  ): atAngularCompilerLib.Anon_SourceText = js.native
+  ): atAngularCompilerLib.Anon_Context = js.native
   def emitStatementsAndContext(
     genFilePath: java.lang.String,
     stmts: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement],
     preamble: java.lang.String,
     emitSourceMaps: scala.Boolean
-  ): atAngularCompilerLib.Anon_SourceText = js.native
+  ): atAngularCompilerLib.Anon_Context = js.native
   def emitStatementsAndContext(
     genFilePath: java.lang.String,
     stmts: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement],
     preamble: java.lang.String,
     emitSourceMaps: scala.Boolean,
     referenceFilter: ReferenceFilter
-  ): atAngularCompilerLib.Anon_SourceText = js.native
+  ): atAngularCompilerLib.Anon_Context = js.native
   def emitStatementsAndContext(
     genFilePath: java.lang.String,
     stmts: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement],
@@ -38,6 +38,6 @@ class TypeScriptEmitter ()
     emitSourceMaps: scala.Boolean,
     referenceFilter: ReferenceFilter,
     importFilter: ReferenceFilter
-  ): atAngularCompilerLib.Anon_SourceText = js.native
+  ): atAngularCompilerLib.Anon_Context = js.native
 }
 

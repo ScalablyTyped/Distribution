@@ -11,9 +11,9 @@ trait Source extends js.Object {
   var created: scala.Double
   var currency: java.lang.String
   var id: java.lang.String
-  var owner: stripeDashV3Lib.Anon_Name
-  var redirect: js.UndefOr[stripeDashV3Lib.Anon_Url] = js.undefined
-  var sepa_debit: js.UndefOr[stripeDashV3Lib.Anon_Fingerprint] = js.undefined
+  var owner: stripeDashV3Lib.Anon_Address
+  var redirect: js.UndefOr[stripeDashV3Lib.Anon_Status] = js.undefined
+  var sepa_debit: js.UndefOr[stripeDashV3Lib.Anon_Bankcode] = js.undefined
   var status: js.UndefOr[java.lang.String] = js.undefined
   var three_d_secure: js.UndefOr[stripeDashV3Lib.Anon_Authenticated] = js.undefined
 }

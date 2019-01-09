@@ -10,9 +10,7 @@ import scala.scalajs.js.annotation._
   */
 trait SplitLine extends js.Object {
   var interval: js.UndefOr[scala.Double | js.Function] = js.undefined
-  var lineStyle: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColorOpacityShadowOffsetYTypeSolidDashed
-  ] = js.undefined
+  var lineStyle: js.UndefOr[echartsLib.Anon_ColorDashed] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
 }
 

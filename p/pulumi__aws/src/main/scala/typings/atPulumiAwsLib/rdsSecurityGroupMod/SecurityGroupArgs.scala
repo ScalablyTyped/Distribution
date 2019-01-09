@@ -14,7 +14,7 @@ trait SecurityGroupArgs extends js.Object {
     * A list of ingress rules.
     */
   val ingress: atPulumiPulumiLib.resourceMod.Input[
-    js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SecurityGroupId]]
+    js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CidrSecurityGroupId]]
   ]
   /**
     * The name of the DB security group.

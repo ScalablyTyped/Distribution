@@ -585,7 +585,7 @@ object mat4 extends js.Object {
     */
   def perspectiveFromFieldOfView(
     out: glDashMatrixLib.glDashMatrixMod.mat4,
-    fov: glDashMatrixLib.Anon_UpDegrees,
+    fov: glDashMatrixLib.Anon_DownDegrees,
     near: scala.Double,
     far: scala.Double
   ): glDashMatrixLib.glDashMatrixMod.mat4 = js.native

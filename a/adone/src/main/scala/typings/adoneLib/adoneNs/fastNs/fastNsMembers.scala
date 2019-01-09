@@ -16,7 +16,7 @@ object fastNsMembers extends js.Object {
     */
   def map(
     mappings: adoneLib.adoneNs.fastNs.INs.MapSource,
-    options: (adoneLib.adoneNs.fastNs.INs.MapOptions with (adoneLib.Anon_Read | adoneLib.Anon_Stream)) | adoneLib.adoneNs.fastNs.INs.MapOptions
+    options: (adoneLib.adoneNs.fastNs.INs.MapOptions with (adoneLib.Anon_False | adoneLib.Anon_Stream)) | adoneLib.adoneNs.fastNs.INs.MapOptions
   ): adoneLib.adoneNs.fastNs.INs.LocalMapStream[adoneLib.adoneNs.fastNs.INs.NullFile] = js.native
   def src(globs: java.lang.String): adoneLib.adoneNs.fastNs.INs.LocalStream[adoneLib.adoneNs.fastNs.INs.BufferFile] = js.native
   /**
@@ -24,12 +24,12 @@ object fastNsMembers extends js.Object {
     */
   def src(
     globs: java.lang.String,
-    options: (adoneLib.adoneNs.fastNs.INs.SrcOptions with (adoneLib.Anon_Read | adoneLib.Anon_Stream)) | adoneLib.adoneNs.fastNs.INs.SrcOptions
+    options: (adoneLib.adoneNs.fastNs.INs.SrcOptions with (adoneLib.Anon_False | adoneLib.Anon_Stream)) | adoneLib.adoneNs.fastNs.INs.SrcOptions
   ): adoneLib.adoneNs.fastNs.INs.LocalStream[adoneLib.adoneNs.fastNs.INs.NullFile] = js.native
   def src(globs: js.Array[java.lang.String]): adoneLib.adoneNs.fastNs.INs.LocalStream[adoneLib.adoneNs.fastNs.INs.BufferFile] = js.native
   def src(
     globs: js.Array[java.lang.String],
-    options: (adoneLib.adoneNs.fastNs.INs.SrcOptions with (adoneLib.Anon_Read | adoneLib.Anon_Stream)) | adoneLib.adoneNs.fastNs.INs.SrcOptions
+    options: (adoneLib.adoneNs.fastNs.INs.SrcOptions with (adoneLib.Anon_False | adoneLib.Anon_Stream)) | adoneLib.adoneNs.fastNs.INs.SrcOptions
   ): adoneLib.adoneNs.fastNs.INs.LocalStream[adoneLib.adoneNs.fastNs.INs.NullFile] = js.native
   def watch(globs: java.lang.String): adoneLib.adoneNs.fastNs.INs.LocalStream[adoneLib.adoneNs.fastNs.INs.BufferFile] = js.native
   /**
@@ -37,17 +37,17 @@ object fastNsMembers extends js.Object {
     */
   def watch(
     globs: java.lang.String,
-    options: (adoneLib.adoneNs.fastNs.INs.WatchOptions with (adoneLib.Anon_Read | adoneLib.Anon_Stream)) | adoneLib.adoneNs.fastNs.INs.WatchOptions
+    options: (adoneLib.adoneNs.fastNs.INs.WatchOptions with (adoneLib.Anon_False | adoneLib.Anon_Stream)) | adoneLib.adoneNs.fastNs.INs.WatchOptions
   ): adoneLib.adoneNs.fastNs.INs.LocalStream[adoneLib.adoneNs.fastNs.INs.NullFile] = js.native
   def watch(globs: js.Array[java.lang.String]): adoneLib.adoneNs.fastNs.INs.LocalStream[adoneLib.adoneNs.fastNs.INs.BufferFile] = js.native
   def watch(
     globs: js.Array[java.lang.String],
-    options: (adoneLib.adoneNs.fastNs.INs.WatchOptions with (adoneLib.Anon_Read | adoneLib.Anon_Stream)) | adoneLib.adoneNs.fastNs.INs.WatchOptions
+    options: (adoneLib.adoneNs.fastNs.INs.WatchOptions with (adoneLib.Anon_False | adoneLib.Anon_Stream)) | adoneLib.adoneNs.fastNs.INs.WatchOptions
   ): adoneLib.adoneNs.fastNs.INs.LocalStream[adoneLib.adoneNs.fastNs.INs.NullFile] = js.native
   def watchMap(mappings: adoneLib.adoneNs.fastNs.INs.MapSource): adoneLib.adoneNs.fastNs.INs.LocalMapStream[adoneLib.adoneNs.fastNs.INs.BufferFile] = js.native
   def watchMap(
     mappings: adoneLib.adoneNs.fastNs.INs.MapSource,
-    options: (adoneLib.adoneNs.fastNs.INs.WatchMapOptions with (adoneLib.Anon_Read | adoneLib.Anon_Stream)) | adoneLib.adoneNs.fastNs.INs.WatchMapOptions
+    options: (adoneLib.adoneNs.fastNs.INs.WatchMapOptions with (adoneLib.Anon_False | adoneLib.Anon_Stream)) | adoneLib.adoneNs.fastNs.INs.WatchMapOptions
   ): adoneLib.adoneNs.fastNs.INs.LocalMapStream[adoneLib.adoneNs.fastNs.INs.NullFile] = js.native
 }
 

@@ -17,11 +17,13 @@ trait ServiceState extends js.Object {
   /**
     * A complex type that contains information about the resource record sets that you want Amazon Route 53 to create when you register an instance.
     */
-  val dnsConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RoutingPolicyDnsRecords]] = js.undefined
+  val dnsConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DnsRecordsNamespaceId]] = js.undefined
   /**
     * A complex type that contains settings for an optional health check. Only for Public DNS namespaces.
     */
-  val healthCheckConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ResourcePathType]] = js.undefined
+  val healthCheckConfig: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FailureThresholdResourcePath]
+  ] = js.undefined
   /**
     * A complex type that contains settings for ECS managed health checks.
     */

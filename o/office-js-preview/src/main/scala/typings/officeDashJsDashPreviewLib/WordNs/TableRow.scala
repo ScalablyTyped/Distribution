@@ -290,7 +290,7 @@ class TableRow ()
   def load(): TableRow = js.native
   def load(option: java.lang.String): TableRow = js.native
   def load(option: js.Array[java.lang.String]): TableRow = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): TableRow = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): TableRow = js.native
   def load(option: officeDashJsDashPreviewLib.WordNs.InterfacesNs.TableRowLoadOptions): TableRow = js.native
   /**
     *
@@ -310,7 +310,7 @@ class TableRow ()
     * @param searchOptions Optional. Options for the search.
     */
   def search(searchText: java.lang.String): RangeCollection = js.native
-  def search(searchText: java.lang.String, searchOptions: officeDashJsDashPreviewLib.Anon_MatchSuffix): RangeCollection = js.native
+  def search(searchText: java.lang.String, searchOptions: officeDashJsDashPreviewLib.Anon_IgnorePunct): RangeCollection = js.native
   def search(searchText: java.lang.String, searchOptions: SearchOptions): RangeCollection = js.native
   /**
     *

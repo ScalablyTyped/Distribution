@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Subscribe[T] extends js.Object {
-  var subscription: web3Lib.Anon_Arguments[T] = js.native
+  var subscription: web3Lib.Anon_ArgumentsCallback[T] = js.native
   @JSName("on")
   def on_changed(`type`: web3Lib.web3LibStrings.changed, handler: js.Function1[/* data */ T, scala.Unit]): scala.Unit = js.native
   @JSName("on")

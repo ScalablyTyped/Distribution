@@ -21,7 +21,7 @@ object default extends js.Object {
     * `path-to-regexp` function
     */
   @JSName("pathToRegexp")
-  var pathToRegexp_Original: universalDashRouterLib.Anon_Path = js.native
+  var pathToRegexp_Original: universalDashRouterLib.Anon_Compile = js.native
   /**
     * `path-to-regexp` function
     */

@@ -12,6 +12,6 @@ class LatheGeometry protected () extends Geometry {
   def this(points: js.Array[Vector2], segments: scala.Double) = this()
   def this(points: js.Array[Vector2], segments: scala.Double, phiStart: scala.Double) = this()
   def this(points: js.Array[Vector2], segments: scala.Double, phiStart: scala.Double, phiLength: scala.Double) = this()
-  var parameters: threeLib.Anon_Points = js.native
+  var parameters: threeLib.Anon_PhiLength = js.native
 }
 

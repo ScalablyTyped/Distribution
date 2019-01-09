@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait ProvisioningResource extends js.Object {
   /** Creates an account ticket. */
-  def createAccountTicket(request: gapiDotClientDotAnalyticsLib.Anon_PrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[AccountTicket]
+  def createAccountTicket(request: gapiDotClientDotAnalyticsLib.Anon_AltFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[AccountTicket]
 }
 

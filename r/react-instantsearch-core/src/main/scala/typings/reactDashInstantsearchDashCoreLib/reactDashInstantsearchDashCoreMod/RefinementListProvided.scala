@@ -16,7 +16,7 @@ trait RefinementListProvided extends js.Object {
     * The list of items the RefinementList can display.
     * If isFromSearch is false, the hit properties like _highlightResult are undefined
     */
-  var items: js.Array[Hit[reactDashInstantsearchDashCoreLib.Anon_Count]]
+  var items: js.Array[Hit[reactDashInstantsearchDashCoreLib.Anon_CountIsRefined]]
   /** a function to generate a URL for the corresponding search state */
   def createURL(args: js.Any*): js.Any
   /** a function to toggle a refinement */

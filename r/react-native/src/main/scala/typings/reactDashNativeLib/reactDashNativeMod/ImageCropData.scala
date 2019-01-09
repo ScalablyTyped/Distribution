@@ -14,7 +14,7 @@ trait ImageCropData extends js.Object {
     * The top-left corner of the cropped image, specified in the original
     * image's coordinate space.
     */
-  var offset: reactDashNativeLib.Anon_YX
+  var offset: reactDashNativeLib.Anon_X
   /**
     * (Optional) the resizing mode to use when scaling the image. If the
     * `displaySize` param is not specified, this has no effect.

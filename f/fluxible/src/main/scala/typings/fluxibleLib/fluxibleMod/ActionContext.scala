@@ -11,7 +11,7 @@ class ActionContext () extends js.Object {
   /**
     * Data service. available only if fetch plugin is added
     */
-  var service: js.UndefOr[fluxibleLib.Anon_Update] = js.native
+  var service: js.UndefOr[fluxibleLib.Anon_Body] = js.native
   /**
     * Dispatches a payload to all registered callbacks.
     * @param action Action name

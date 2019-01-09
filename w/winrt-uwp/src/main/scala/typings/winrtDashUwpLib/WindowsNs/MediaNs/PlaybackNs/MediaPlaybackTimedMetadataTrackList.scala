@@ -36,7 +36,7 @@ abstract class MediaPlaybackTimedMetadataTrackList ()
     * Retrieves the timed metadata tracks that start at the specified index in the list.
     * @param startIndex The zero-based index of the start of the timed metadata tracks in the list.
     */
-  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValueTimedMetadataTrack = js.native
+  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValueNumber = js.native
   /**
     * Gets the presentation mode of the timed metadata track with the specified index.
     * @param index The index of the timed metadata track for which the presentation mode is queried.

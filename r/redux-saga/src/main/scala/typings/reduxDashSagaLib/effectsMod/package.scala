@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 package object effectsMod {
   type ActionType = java.lang.String | scala.Double | js.Symbol
   type AllEffectDescriptor = GenericAllEffectDescriptor[Effect]
-  type CallEffectFn[F /* <: js.Function */] = F | (js.Tuple2[js.Any, F]) | reduxDashSagaLib.Anon_Fn[F]
-  type CallEffectNamedFn[C /* <: reduxDashSagaLib.reduxDashSagaLibStrings.CallEffectNamedFn with js.Any */, Name /* <: java.lang.String */] = (js.Tuple2[C, Name]) | (reduxDashSagaLib.Anon_FnContext[Name, C])
+  type CallEffectFn[F /* <: js.Function */] = F | (js.Tuple2[js.Any, F]) | reduxDashSagaLib.Anon_Context[F]
+  type CallEffectNamedFn[C /* <: reduxDashSagaLib.reduxDashSagaLibStrings.CallEffectNamedFn with js.Any */, Name /* <: java.lang.String */] = (js.Tuple2[C, Name]) | (reduxDashSagaLib.Anon_ContextFn[C, Name])
   type CancelEffectDescriptor = reduxDashSagaLib.reduxDashSagaMod.Task | SELF_CANCELLATION
   type Effect = RootEffect | TakeEffect | ChannelTakeEffect[js.Any] | PutEffect[js.Any] | ChannelPutEffect[js.Any] | AllEffect | RaceEffect | CallEffect | CpsEffect | ForkEffect | JoinEffect | CancelEffect | SelectEffect | ActionChannelEffect | CancelledEffect | FlushEffect[js.Any] | GetContextEffect | SetContextEffect[js.Any]
   type FlushEffectDescriptor[T] = reduxDashSagaLib.reduxDashSagaMod.Channel[T]

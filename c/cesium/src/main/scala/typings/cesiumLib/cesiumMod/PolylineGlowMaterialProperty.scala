@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class PolylineGlowMaterialProperty ()
   extends cesiumLib.cesiumMod.CesiumNs.PolylineGlowMaterialProperty {
-  def this(options: cesiumLib.Anon_Color) = this()
+  def this(options: cesiumLib.Anon_ColorGlowPower) = this()
 }
 

@@ -16,7 +16,7 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def get(request: gapiDotClientDotClassroomLib.Anon_AccesstokenCourseIdPrettyPrintCourseWorkId): gapiDotClientLib.gapiNs.clientNs.Request[StudentSubmission]
+  def get(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId): gapiDotClientLib.gapiNs.clientNs.Request[StudentSubmission]
   /**
     * Returns a list of student submissions that the requester is permitted to
     * view, factoring in the OAuth scopes of the request.
@@ -33,7 +33,7 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the request is malformed.
     * &#42; `NOT_FOUND` if the requested course does not exist.
     */
-  def list(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPageSizeLate): gapiDotClientLib.gapiNs.clientNs.Request[ListStudentSubmissionsResponse]
+  def list(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdCourseWorkId): gapiDotClientLib.gapiNs.clientNs.Request[ListStudentSubmissionsResponse]
   /**
     * Modifies attachments of student submission.
     *
@@ -54,7 +54,7 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def modifyAttachments(request: gapiDotClientDotClassroomLib.Anon_AccesstokenCourseIdPrettyPrintCourseWorkId): gapiDotClientLib.gapiNs.clientNs.Request[StudentSubmission]
+  def modifyAttachments(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId): gapiDotClientLib.gapiNs.clientNs.Request[StudentSubmission]
   /**
     * Updates one or more fields of a student submission.
     *
@@ -75,7 +75,9 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def patch(request: gapiDotClientDotClassroomLib.Anon_AccesstokenCourseIdPrettyPrintCourseWorkIdBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[StudentSubmission]
+  def patch(
+    request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdCourseWorkIdFields
+  ): gapiDotClientLib.gapiNs.clientNs.Request[StudentSubmission]
   /**
     * Reclaims a student submission on behalf of the student that owns it.
     *
@@ -99,7 +101,7 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def reclaim(request: gapiDotClientDotClassroomLib.Anon_AccesstokenCourseIdPrettyPrintCourseWorkId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def reclaim(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Returns a student submission.
     *
@@ -124,7 +126,7 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def `return`(request: gapiDotClientDotClassroomLib.Anon_AccesstokenCourseIdPrettyPrintCourseWorkId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def `return`(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Turns in a student submission.
     *
@@ -147,6 +149,6 @@ trait StudentSubmissionsResource extends js.Object {
     * &#42; `NOT_FOUND` if the requested course, course work, or student submission
     * does not exist.
     */
-  def turnIn(request: gapiDotClientDotClassroomLib.Anon_AccesstokenCourseIdPrettyPrintCourseWorkId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def turnIn(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
 }
 

@@ -98,21 +98,21 @@ class DiagramEngine ()
     * Determine the width and height of the node passed in.
     * It currently assumes nodes have a rectangular shape, can be overriden for customised shapes.
     */
-  def getNodeDimensions(node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): stormDashReactDashDiagramsLib.Anon_Height = js.native
+  def getNodeDimensions(node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): stormDashReactDashDiagramsLib.Anon_HeightWidth = js.native
   def getNodeElement(node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): reactLib.Element = js.native
   def getNodeFactories(): org.scalablytyped.runtime.StringDictionary[
     stormDashReactDashDiagramsLib.distSrcFactoriesAbstractNodeFactoryMod.AbstractNodeFactory[stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel]
   ] = js.native
   def getNodeFactory(`type`: java.lang.String): stormDashReactDashDiagramsLib.distSrcFactoriesAbstractNodeFactoryMod.AbstractNodeFactory[stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel] = js.native
   def getNodePortElement(port: stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel): js.Any = js.native
-  def getPortCenter(port: stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel): stormDashReactDashDiagramsLib.Anon_Y = js.native
+  def getPortCenter(port: stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel): stormDashReactDashDiagramsLib.Anon_X = js.native
   /**
     * Calculate rectangular coordinates of the port passed in.
     */
-  def getPortCoords(port: stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel): stormDashReactDashDiagramsLib.Anon_YX = js.native
+  def getPortCoords(port: stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel): stormDashReactDashDiagramsLib.Anon_Height = js.native
   def getPortFactory(`type`: java.lang.String): stormDashReactDashDiagramsLib.distSrcFactoriesAbstractPortFactoryMod.AbstractPortFactory[stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel] = js.native
-  def getRelativeMousePoint(event: js.Any): stormDashReactDashDiagramsLib.Anon_Y = js.native
-  def getRelativePoint(x: js.Any, y: js.Any): stormDashReactDashDiagramsLib.Anon_Y = js.native
+  def getRelativeMousePoint(event: js.Any): stormDashReactDashDiagramsLib.Anon_X = js.native
+  def getRelativePoint(x: js.Any, y: js.Any): stormDashReactDashDiagramsLib.Anon_X = js.native
   /**
     * A representation of the canvas in the following format:
     *

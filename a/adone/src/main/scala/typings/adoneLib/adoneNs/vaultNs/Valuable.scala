@@ -17,7 +17,7 @@ class Valuable protected () extends js.Object {
   def deleteTag(tag: java.lang.String): js.Promise[scala.Boolean] = js.native
   def entries(): js.Promise[js.Object] = js.native
   def entries(
-    opts: (adoneLib.adoneNs.vaultNs.INs.ValueableEntriesOptions with (adoneLib.Anon_EntriesAsArray | adoneLib.Anon_EntriesAsArrayTrue)) | adoneLib.adoneNs.vaultNs.INs.ValueableEntriesOptions
+    opts: (adoneLib.adoneNs.vaultNs.INs.ValueableEntriesOptions with (adoneLib.Anon_EntriesAsArray | adoneLib.Anon_EntriesAsArrayIncludeEntryId)) | adoneLib.adoneNs.vaultNs.INs.ValueableEntriesOptions
   ): js.Promise[js.Array[adoneLib.adoneNs.vaultNs.INs.ValuableEntry]] = js.native
    // TODO
   def fromJSON(json: js.Object): js.Promise[scala.Double] = js.native

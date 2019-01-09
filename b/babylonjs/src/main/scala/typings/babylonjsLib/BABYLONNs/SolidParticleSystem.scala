@@ -229,7 +229,7 @@ class SolidParticleSystem protected () extends IDisposable {
     * `faceId` is the picked face index counted within this particle.
     * Please read : http://doc.babylonjs.com/overviews/Solid_Particle_System#pickable-particles
     */
-  var pickedParticles: js.Array[babylonjsLib.Anon_Idx] = js.native
+  var pickedParticles: js.Array[babylonjsLib.Anon_FaceId] = js.native
   /**
     * Recompute normals when adding a shape
     */
@@ -290,7 +290,7 @@ class SolidParticleSystem protected () extends IDisposable {
     * @returns the current SPS
     */
   def digest(mesh: Mesh): SolidParticleSystem = js.native
-  def digest(mesh: Mesh, options: babylonjsLib.Anon_Number): SolidParticleSystem = js.native
+  def digest(mesh: Mesh, options: babylonjsLib.Anon_Delta): SolidParticleSystem = js.native
   /**
     * Releases all held resources
     */

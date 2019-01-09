@@ -18,7 +18,7 @@ trait ReferencesResource extends js.Object {
     * [GlobalAllianceApi.getReference](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L158).
     */
   def get(
-    request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUserKeyOauthtokenReferenceId
+    request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrint
   ): gapiDotClientLib.gapiNs.clientNs.Request[Reference]
   /**
     * Searches for references which match the given criteria.
@@ -30,6 +30,6 @@ trait ReferencesResource extends js.Object {
     * Implements
     * [GlobalAllianceApi.searchReferences](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L146).
     */
-  def search(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[SearchReferencesResponse]
+  def search(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchReferencesResponse]
 }
 

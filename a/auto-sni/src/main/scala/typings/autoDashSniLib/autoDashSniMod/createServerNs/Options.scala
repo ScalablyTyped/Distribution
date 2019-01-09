@@ -10,6 +10,6 @@ trait Options extends js.Object {
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   var domains: js.Array[java.lang.String | js.Array[java.lang.String]]
   var email: java.lang.String
-  var ports: js.UndefOr[autoDashSniLib.Anon_Https] = js.undefined
+  var ports: js.UndefOr[autoDashSniLib.Anon_Http] = js.undefined
 }
 

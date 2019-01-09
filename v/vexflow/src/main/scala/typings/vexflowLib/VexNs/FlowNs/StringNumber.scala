@@ -21,6 +21,6 @@ class StringNumber protected () extends Modifier {
 @JSGlobal("Vex.Flow.StringNumber")
 @js.native
 object StringNumber extends js.Object {
-  def format(nums: js.Array[vexflowLib.VexNs.FlowNs.StringNumber], state: vexflowLib.Anon_Rightshift): scala.Boolean = js.native
+  def format(nums: js.Array[vexflowLib.VexNs.FlowNs.StringNumber], state: vexflowLib.Anon_Leftshift): scala.Boolean = js.native
 }
 

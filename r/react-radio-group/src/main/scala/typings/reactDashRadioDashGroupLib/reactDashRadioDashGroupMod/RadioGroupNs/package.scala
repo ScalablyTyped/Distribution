@@ -9,5 +9,5 @@ package object RadioGroupNs {
   type RadioGroupProps = (reactDashRadioDashGroupLib.reactDashRadioDashGroupMod.Omit[
     reactLib.reactMod.ReactNs.HTMLProps[_], 
     reactDashRadioDashGroupLib.reactDashRadioDashGroupLibStrings.onChange
-  ]) with reactDashRadioDashGroupLib.Anon_SelectedValue
+  ]) with reactDashRadioDashGroupLib.Anon_Component
 }

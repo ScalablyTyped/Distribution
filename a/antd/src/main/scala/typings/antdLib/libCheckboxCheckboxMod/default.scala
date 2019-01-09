@@ -12,10 +12,7 @@ class default () extends Checkbox
 @JSImport("antd/lib/checkbox/Checkbox", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Group: org.scalablytyped.runtime.Instantiable1[
-    /* props */ antdLib.libCheckboxGroupMod.CheckboxGroupProps, 
-    antdLib.libCheckboxGroupMod.default
-  ] = js.native
+  var Group: antdLib.Anon_ChildContextTypes = js.native
   var contextTypes: antdLib.Anon_CheckboxGroup = js.native
   var defaultProps: antdLib.Anon_Indeterminate = js.native
 }

@@ -47,7 +47,7 @@ class ChartPlotAreaFormat ()
   def load(): ChartPlotAreaFormat = js.native
   def load(option: java.lang.String): ChartPlotAreaFormat = js.native
   def load(option: js.Array[java.lang.String]): ChartPlotAreaFormat = js.native
-  def load(option: officeDashJsLib.Anon_Select): ChartPlotAreaFormat = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ChartPlotAreaFormat = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.ChartPlotAreaFormatLoadOptions): ChartPlotAreaFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartPlotAreaFormat): scala.Unit = js.native

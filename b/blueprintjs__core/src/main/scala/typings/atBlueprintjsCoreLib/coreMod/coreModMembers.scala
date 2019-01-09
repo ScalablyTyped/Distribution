@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core", JSImport.Namespace)
 @js.native
 object coreModMembers extends js.Object {
-  val Alignment: atBlueprintjsCoreLib.Anon_RIGHT = js.native
+  val Alignment: atBlueprintjsCoreLib.Anon_CENTER = js.native
   val Blockquote: reactLib.reactMod.ReactNs.StatelessComponent[
     reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLElement]
   ] = js.native
-  val Boundary: atBlueprintjsCoreLib.Anon_START = js.native
+  val Boundary: atBlueprintjsCoreLib.Anon_END = js.native
   val Breadcrumb: reactLib.reactMod.ReactNs.SFC[atBlueprintjsCoreLib.libEsmComponentsBreadcrumbsBreadcrumbMod.IBreadcrumbProps] = js.native
   val Code: reactLib.reactMod.ReactNs.StatelessComponent[
     reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLElement]
   ] = js.native
-  val Colors: atBlueprintjsCoreLib.Anon_FOREST2 = js.native
+  val Colors: atBlueprintjsCoreLib.Anon_BLACK = js.native
   val ContextMenu: atBlueprintjsCoreLib.Anon_Hide = js.native
   val DISPLAYNAME_PREFIX: /* Blueprint3 */ java.lang.String = js.native
-  val Elevation: atBlueprintjsCoreLib.Anon_TWO = js.native
+  val Elevation: atBlueprintjsCoreLib.Anon_0 = js.native
   val Expander: reactLib.reactMod.ReactNs.SFC[js.Object] = js.native
   val FocusStyleManager: atBlueprintjsCoreLib.Anon_AlwaysShowFocus = js.native
   val H1: reactLib.reactMod.ReactNs.StatelessComponent[
@@ -41,18 +41,18 @@ object coreModMembers extends js.Object {
   val H6: reactLib.reactMod.ReactNs.StatelessComponent[
     reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLHeadingElement]
   ] = js.native
-  val HandleInteractionKind: atBlueprintjsCoreLib.Anon_PUSH = js.native
-  val HandleType: atBlueprintjsCoreLib.Anon_STARTStart = js.native
-  val Intent: atBlueprintjsCoreLib.Anon_WARNING = js.native
+  val HandleInteractionKind: atBlueprintjsCoreLib.Anon_LOCK = js.native
+  val HandleType: atBlueprintjsCoreLib.Anon_ENDEnd = js.native
+  val Intent: atBlueprintjsCoreLib.Anon_DANGER = js.native
   val Label: reactLib.reactMod.ReactNs.StatelessComponent[
     reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLLabelElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLLabelElement]
   ] = js.native
   val OL: reactLib.reactMod.ReactNs.StatelessComponent[
     reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLOListElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLOListElement]
   ] = js.native
-  val PopoverInteractionKind: atBlueprintjsCoreLib.Anon_HOVERTARGETONLY = js.native
-  val PopoverPosition: atBlueprintjsCoreLib.Anon_TOPRIGHTTopright = js.native
-  val Position: atBlueprintjsCoreLib.Anon_TOPRIGHT = js.native
+  val PopoverInteractionKind: atBlueprintjsCoreLib.Anon_CLICK = js.native
+  val PopoverPosition: atBlueprintjsCoreLib.Anon_AUTO = js.native
+  val Position: atBlueprintjsCoreLib.Anon_BOTTOM = js.native
   val Pre: reactLib.reactMod.ReactNs.StatelessComponent[
     reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLElement]
   ] = js.native
@@ -61,10 +61,10 @@ object coreModMembers extends js.Object {
   ] = js.native
   def ContextMenuTarget[T /* <: atBlueprintjsCoreLib.libEsmCommonConstructorMod.IConstructor[
     atBlueprintjsCoreLib.libEsmComponentsContextDashMenuContextMenuTargetMod.IContextMenuTargetComponent
-  ] */](WrappedComponent: T): atBlueprintjsCoreLib.Anon_DisplayNameArgs with T = js.native
+  ] */](WrappedComponent: T): atBlueprintjsCoreLib.Anon_Args with T = js.native
   def HotkeysTarget[T /* <: atBlueprintjsCoreLib.libEsmCommonConstructorMod.IConstructor[
     atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeysTargetMod.IHotkeysTargetComponent
-  ] */](WrappedComponent: T): atBlueprintjsCoreLib.Anon_DisplayName with T = js.native
+  ] */](WrappedComponent: T): atBlueprintjsCoreLib.Anon_ArgsDisplayName with T = js.native
   def comboMatches(
     a: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo,
     b: atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyParserMod.IKeyCombo

@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "mobx-cookie"
-version := "2.0.1-bab2be"
-scalaVersion := "2.12.7"
+version := "2.0.1-5b843a"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "js-cookie" % "2.2-dt-20180830Z-7b056b",
-  "org.scalablytyped" %%% "mobx" % "5.8.0-8824f6",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
+  "org.scalablytyped" %%% "js-cookie" % "2.2-dt-20180830Z-fe1edf",
+  "org.scalablytyped" %%% "mobx" % "5.8.0-0fd642",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2aa425",
+  "org.scalablytyped" %%% "std" % "3.2.2-f3cc98")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

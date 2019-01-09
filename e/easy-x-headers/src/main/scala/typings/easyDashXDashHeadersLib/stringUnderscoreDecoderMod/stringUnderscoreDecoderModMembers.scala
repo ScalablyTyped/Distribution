@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("string_decoder", JSImport.Namespace)
 @js.native
 object stringUnderscoreDecoderModMembers extends js.Object {
-  var StringDecoder: easyDashXDashHeadersLib.Anon_Encoding = js.native
+  var StringDecoder: easyDashXDashHeadersLib.Anon_EncodingNodeStringDecoder = js.native
 }
 

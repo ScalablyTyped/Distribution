@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object paperNsMembers extends js.Object {
   var project: Project = js.native
   var projects: js.Array[Project] = js.native
-  var settings: paperLib.Anon_HandleSize = js.native
+  var settings: paperLib.Anon_ApplyMatrix = js.native
   var tool: Tool = js.native
   var tools: js.Array[Tool] = js.native
   var version: java.lang.String = js.native

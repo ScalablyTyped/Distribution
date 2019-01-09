@@ -9,7 +9,9 @@ trait LoadBalancerState extends js.Object {
   /**
     * An Access Logs block. Access Logs documented below.
     */
-  val accessLogs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketInterval]] = js.undefined
+  val accessLogs: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketBucketPrefixEnabledInterval]
+  ] = js.undefined
   /**
     * The ARN of the ELB
     */
@@ -40,7 +42,7 @@ trait LoadBalancerState extends js.Object {
     * A health_check block. Health Check documented below.
     */
   val healthCheck: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HealthyThresholdUnhealthyThreshold]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HealthyThresholdIntervalTargetTimeout]
   ] = js.undefined
   /**
     * The time in seconds that the connection is allowed to be idle. Default: `60`
@@ -61,7 +63,9 @@ trait LoadBalancerState extends js.Object {
     */
   val listeners: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_InstancePortLbPort]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_InstancePortInstanceProtocolLbPort]
+      ]
     ]
   ] = js.undefined
   /**

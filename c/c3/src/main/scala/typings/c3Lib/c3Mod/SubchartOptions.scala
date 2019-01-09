@@ -15,6 +15,6 @@ trait SubchartOptions extends js.Object {
     * Show sub chart on the bottom of the chart.
     */
   var show: js.UndefOr[scala.Boolean] = js.undefined
-  var size: js.UndefOr[c3Lib.Anon_Height] = js.undefined
+  var size: js.UndefOr[c3Lib.Anon_HeightNumber] = js.undefined
 }
 

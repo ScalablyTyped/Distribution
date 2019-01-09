@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Key extends js.Object {
-  def apply(key: java.lang.String): java.lang.String = js.native
+  def apply(key: java.lang.String): Anon_Calendars = js.native
 }
 

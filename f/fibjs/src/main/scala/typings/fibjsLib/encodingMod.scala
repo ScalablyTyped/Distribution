@@ -13,13 +13,13 @@ import scala.scalajs.js.annotation._
 @JSImport("encoding", JSImport.Namespace)
 @js.native
 object encodingMod extends js.Object {
-  val base32: fibjsLib.Anon_Encode = js.native
-  val base64: fibjsLib.Anon_EncodeDataUrl = js.native
-  val base64vlq: fibjsLib.Anon_EncodeData = js.native
-  val bson: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fibjs.__bson */ js.Any = js.native
-  val hex: fibjsLib.Anon_Encode = js.native
-  val iconv: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fibjs.__iconv */ js.Any = js.native
-  val json: fibjsLib.Anon_EncodeDataDecode = js.native
+  val base32: fibjsLib.Anon_Base32 = js.native
+  val base64: fibjsLib.Anon_Base64 = js.native
+  val base64vlq: fibjsLib.Anon_Base64vlq = js.native
+  val bson: fibjsLib.Anon_DataDecodeEncode = js.native
+  val hex: fibjsLib.Anon_Data = js.native
+  val iconv: fibjsLib.Anon_Charset = js.native
+  val json: fibjsLib.Anon_DataDecode = js.native
   def decodeURI(url: java.lang.String): java.lang.String = js.native
   def encodeURI(url: java.lang.String): java.lang.String = js.native
   def encodeURIComponent(url: java.lang.String): java.lang.String = js.native

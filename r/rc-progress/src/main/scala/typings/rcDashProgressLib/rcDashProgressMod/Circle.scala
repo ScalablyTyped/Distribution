@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class Circle ()
   extends reactLib.reactMod.Component[CircleProps, js.Object, js.Any] {
   var prevTimeStamp: js.UndefOr[scala.Double] = js.native
-  def getPathStyles(): rcDashProgressLib.Anon_StrokePathStyle = js.native
+  def getPathStyles(): rcDashProgressLib.Anon_PathString = js.native
 }
 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/core/lib/esm/components/popover/popover", JSImport.Namespace)
 @js.native
 object libEsmComponentsPopoverPopoverModMembers extends js.Object {
-  val PopoverInteractionKind: atBlueprintjsCoreLib.Anon_HOVERTARGETONLY = js.native
+  val PopoverInteractionKind: atBlueprintjsCoreLib.Anon_CLICK = js.native
 }
 

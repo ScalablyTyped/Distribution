@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 package object reactDashRadioDashGroupMod {
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[
     T, 
-    /* import warning: ImportType.apply Failed type conversion: react-radio-group.Anon_X<T, K>[keyof T] */ js.Any
+    /* import warning: ImportType.apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never, [x: number] : never}[keyof T] */ js.Any
   ]
 }

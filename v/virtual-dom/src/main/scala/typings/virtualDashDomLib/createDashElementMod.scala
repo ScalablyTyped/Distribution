@@ -13,13 +13,13 @@ object createDashElementMod extends js.Object {
   ): stdLib.Element = js.native
   def apply(
     vnode: virtualDashDomLib.VirtualDOMNs.VNode | virtualDashDomLib.VirtualDOMNs.Widget | virtualDashDomLib.VirtualDOMNs.Thunk,
-    opts: virtualDashDomLib.Anon_Warn
+    opts: virtualDashDomLib.Anon_Document
   ): stdLib.Element = js.native
   /**
     create() calls either document.createElement() or document.createElementNS(),
     for which the common denominator is Element (not HTMLElement).
     */
   def apply(vnode: virtualDashDomLib.VirtualDOMNs.VText): stdLib.Text = js.native
-  def apply(vnode: virtualDashDomLib.VirtualDOMNs.VText, opts: virtualDashDomLib.Anon_Warn): stdLib.Text = js.native
+  def apply(vnode: virtualDashDomLib.VirtualDOMNs.VText, opts: virtualDashDomLib.Anon_Document): stdLib.Text = js.native
 }
 

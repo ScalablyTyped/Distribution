@@ -13,7 +13,7 @@ trait GoogleApiYouTubeVideoGetRatingResponse extends js.Object {
   /**
     * A list of ratings that match the request criteria.
     */
-  var items: js.Array[Anon_VideoIdRating]
+  var items: js.Array[Anon_Rating]
   /**
     * The type of the API response. For this operation, the value will be youtube#videoGetRatingResponse.
     */

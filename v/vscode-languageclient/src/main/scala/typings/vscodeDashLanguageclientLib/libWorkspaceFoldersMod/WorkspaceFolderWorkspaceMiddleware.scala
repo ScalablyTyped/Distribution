@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait WorkspaceFolderWorkspaceMiddleware extends js.Object {
   var didChangeWorkspaceFolders: js.UndefOr[
     vscodeDashLanguageclientLib.libClientMod.NextSignature[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify VWorkspaceFoldersChangeEvent */ _, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VWorkspaceFoldersChangeEvent */ _, 
       scala.Unit
     ]
   ] = js.undefined

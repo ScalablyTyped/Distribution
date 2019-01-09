@@ -115,7 +115,7 @@ trait TooltipOptions extends SeriesTooltipOptions {
       /* labelWidth */ scala.Double, 
       /* labelHeight */ scala.Double, 
       /* point */ PlotPoint, 
-      highchartsLib.Anon_YXNumber
+      highchartsLib.Anon_X
     ]
   ] = js.undefined
   /**

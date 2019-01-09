@@ -85,15 +85,12 @@ trait UIManagerStatic extends js.Object {
     */
   def takeSnapshot(): js.Promise[java.lang.String] = js.native
   def takeSnapshot(view: reactLib.reactMod.ReactNs.ReactElement[_]): js.Promise[java.lang.String] = js.native
-  def takeSnapshot(view: reactLib.reactMod.ReactNs.ReactElement[_], options: reactDashNativeLib.Anon_Quality): js.Promise[java.lang.String] = js.native
+  def takeSnapshot(view: reactLib.reactMod.ReactNs.ReactElement[_], options: reactDashNativeLib.Anon_Format): js.Promise[java.lang.String] = js.native
   def takeSnapshot(view: scala.Double): js.Promise[java.lang.String] = js.native
-  def takeSnapshot(view: scala.Double, options: reactDashNativeLib.Anon_Quality): js.Promise[java.lang.String] = js.native
+  def takeSnapshot(view: scala.Double, options: reactDashNativeLib.Anon_Format): js.Promise[java.lang.String] = js.native
   @JSName("takeSnapshot")
   def takeSnapshot_window(view: reactDashNativeLib.reactDashNativeLibStrings.window): js.Promise[java.lang.String] = js.native
   @JSName("takeSnapshot")
-  def takeSnapshot_window(
-    view: reactDashNativeLib.reactDashNativeLibStrings.window,
-    options: reactDashNativeLib.Anon_Quality
-  ): js.Promise[java.lang.String] = js.native
+  def takeSnapshot_window(view: reactDashNativeLib.reactDashNativeLibStrings.window, options: reactDashNativeLib.Anon_Format): js.Promise[java.lang.String] = js.native
 }
 

@@ -23,7 +23,7 @@ object InstrumentationNs extends js.Object {
   @js.native
   class HttpServer protected ()
     extends zipkinLib.zipkinMod.zipkinNs.InstrumentationNs.HttpServer {
-    def this(args: zipkinLib.Anon_ServerTags) = this()
+    def this(args: zipkinLib.Anon_HostKey) = this()
   }
   
 }

@@ -30,7 +30,7 @@ trait Anon_Accesstoken extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * REQUIRED: The resource for which the policy is being requested.
+    * REQUIRED: The resource for which the policy detail is being requested.
     * See the operation documentation for the appropriate value for this field.
     */
   var resource: java.lang.String

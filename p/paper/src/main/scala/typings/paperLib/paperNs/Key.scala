@@ -24,7 +24,7 @@ object Key extends js.Object {
     *   modifiers.option — true if the alt/option key is pressed, false otherwise. This is the same as modifiers.alt
     *   modifiers.command — true if the meta key is pressed on Mac, or the control key is pressed on Windows and Linux, false otherwise.
     */
-  var modifiers: paperLib.Anon_CapsLock = js.native
+  var modifiers: paperLib.Anon_Alt = js.native
   /**
     * Checks whether the specified key is pressed.
     * @param key - One of: 'backspace', 'enter', 'shift', 'control', 'option', 'pause', 'caps-lock', 'escape', 'space', 'end', 'home', 'left', 'up', 'right', 'down', 'delete', 'command'

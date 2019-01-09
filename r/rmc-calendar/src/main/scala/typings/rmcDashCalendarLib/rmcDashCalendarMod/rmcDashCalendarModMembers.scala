@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("rmc-calendar", JSImport.Namespace)
 @js.native
 object rmcDashCalendarModMembers extends js.Object {
-  val Locale: rmcDashCalendarLib.Anon_ZhCN = js.native
+  val Locale: rmcDashCalendarLib.Anon_EnUS = js.native
 }
 

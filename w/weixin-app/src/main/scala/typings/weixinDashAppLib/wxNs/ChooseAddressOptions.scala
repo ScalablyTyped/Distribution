@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait ChooseAddressOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_ChooseAddressOptions: js.UndefOr[js.Function1[/* res */ weixinDashAppLib.Anon_TelNumber, scala.Unit]] = js.undefined
+  var success_ChooseAddressOptions: js.UndefOr[js.Function1[/* res */ weixinDashAppLib.Anon_CityName, scala.Unit]] = js.undefined
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object distStitchingMergeSchemasModMembers extends js.Object {
   def default(
-    hasSchemasOnTypeConflictResolversSchemaDirectivesInheritResolversFromInterfaces: graphqlDashToolsLib.Anon_Resolvers
+    hasSchemasOnTypeConflictResolversSchemaDirectivesInheritResolversFromInterfaces: graphqlDashToolsLib.Anon_InheritResolversFromInterfaces
   ): graphqlLib.graphqlMod.GraphQLSchema = js.native
 }
 

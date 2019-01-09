@@ -257,7 +257,7 @@ trait PromiseSftp extends js.Object {
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
-  ): bluebirdLib.bluebirdMod.namespaced[promiseDashSftpLib.Anon_Position] = js.native
+  ): bluebirdLib.bluebirdMod.namespaced[promiseDashSftpLib.Anon_Buffer] = js.native
   def readdir(location: java.lang.String): bluebirdLib.bluebirdMod.namespaced[promiseDashSftpLib.Anon_Attrs] = js.native
   /**
     * Read a directory on the server.

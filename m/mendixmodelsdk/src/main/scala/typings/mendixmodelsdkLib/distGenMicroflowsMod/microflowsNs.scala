@@ -1162,8 +1162,8 @@ object microflowsNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/microflows relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflow because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflow because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class Microflow protected () extends ServerSideMicroflow {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
     var allowConcurrentExecution: scala.Boolean = js.native
@@ -1184,8 +1184,8 @@ object microflowsNs extends js.Object {
     var model_MicroflowAction: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflowBase because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflowBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined returnType, microflowReturnType, asLoaded, load, load, load, load */ @js.native
   abstract class MicroflowBase protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -1194,14 +1194,14 @@ object microflowsNs extends js.Object {
     /**
       * In version 7.9.0: introduced
       */
-    var microflowReturnType: mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.DataType = js.native
+    var microflowReturnType: mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.DataType | mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IDataType = js.native
     var objectCollection: MicroflowObjectCollection = js.native
     /**
       * The value of this property is conceptually of type dataTypes.LegacyDataType.
       *
       * In version 7.9.0: deleted
       */
-    var returnType: java.lang.String = js.native
+    var returnType: scala.Null | java.lang.String = js.native
   }
   
   @js.native
@@ -1287,33 +1287,33 @@ object microflowsNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/parameter relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflowParameter because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflowParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class MicroflowParameter protected () extends MicroflowParameterBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflowParameterBase because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflowParameterBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsMicroflow, containerAsRule, name, `type`, parameterType, asLoaded, load, load, load, load */ @js.native
   abstract class MicroflowParameterBase protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
-    val containerAsMicroflow: Microflow = js.native
-    val containerAsRule: Rule = js.native
+    val containerAsMicroflow: IMicroflow | Microflow = js.native
+    val containerAsRule: IRule | Rule = js.native
     @JSName("model")
     var model_MicroflowParameterBase: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     var name: java.lang.String = js.native
     /**
       * In version 7.9.0: introduced
       */
-    var parameterType: mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.DataType = js.native
+    var parameterType: mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.DataType | mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IDataType = js.native
     val qualifiedName: java.lang.String | scala.Null = js.native
     /**
       * The value of this property is conceptually of type dataTypes.LegacyDataType.
       *
       * In version 7.9.0: deleted
       */
-    var `type`: java.lang.String = js.native
+    var `type`: scala.Null | java.lang.String = js.native
   }
   
   @js.native
@@ -1349,8 +1349,8 @@ object microflowsNs extends js.Object {
     * In version 7.12.0: removed experimental
     * In version 7.10.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.INanoflow because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.INanoflow because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class Nanoflow protected () extends MicroflowBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
     val allowedModuleRoles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleRole] = js.native
@@ -1360,8 +1360,8 @@ object microflowsNs extends js.Object {
   /**
     * In version 7.19.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.INanoflowParameter because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.INanoflowParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class NanoflowParameter protected () extends MicroflowParameterBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -1581,8 +1581,8 @@ object microflowsNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/rules relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IRule because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IRule because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class Rule protected () extends ServerSideMicroflow {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
   }
@@ -1623,8 +1623,8 @@ object microflowsNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/parameter relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IRuleParameter because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IRuleParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class RuleParameter protected () extends MicroflowParameterBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
@@ -1645,8 +1645,8 @@ object microflowsNs extends js.Object {
     var isErrorHandler: scala.Boolean = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IServerSideMicroflow because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IServerSideMicroflow because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   abstract class ServerSideMicroflow protected () extends MicroflowBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
     var applyEntityAccess: scala.Boolean = js.native

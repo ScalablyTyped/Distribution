@@ -11,7 +11,7 @@ trait ApplicationState extends js.Object {
     */
   val appSources: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_UrlUsernameSshKey]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PasswordRevision]]
     ]
   ] = js.undefined
   /**
@@ -56,7 +56,9 @@ trait ApplicationState extends js.Object {
     * Object to define environment variables.  Object is described below.
     */
   val environments: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Key]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeySecureValue]]
+    ]
   ] = js.undefined
   /**
     * A human-readable name for the application.
@@ -74,7 +76,11 @@ trait ApplicationState extends js.Object {
     * The SSL configuration of the app. Object is described below.
     */
   val sslConfigurations: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Chain]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CertificateChainPrivateKey]
+      ]
+    ]
   ] = js.undefined
   /**
     * The id of the stack the application will belong to.

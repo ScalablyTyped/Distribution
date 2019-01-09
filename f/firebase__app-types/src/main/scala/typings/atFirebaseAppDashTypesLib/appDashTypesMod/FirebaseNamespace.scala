@@ -13,7 +13,7 @@ trait FirebaseNamespace extends js.Object {
   // The current SDK version.
   var SDK_VERSION: java.lang.String = js.native
   @JSName("app")
-  var app_Original: atFirebaseAppDashTypesLib.Anon_Name = js.native
+  var app_Original: atFirebaseAppDashTypesLib.Anon_App = js.native
   /**
     * A (read-only) array of all the initialized Apps.
     */

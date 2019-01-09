@@ -14,7 +14,7 @@ trait BlockingResponse extends js.Object {
     * Only used as a response to the onAuthRequired event. If set, the request is made using the supplied
     * credentials.
     */
-  var authCredentials: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_Username] = js.undefined
+  var authCredentials: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_Password] = js.undefined
   /**
     * If true, the request is cancelled. Used in onBeforeRequest, this prevents the request from being sent.
     */

@@ -58,6 +58,6 @@ class CalloutContentBase protected ()
 @JSImport("office-ui-fabric-react/lib/components/Callout/CalloutContent.base", "CalloutContentBase")
 @js.native
 object CalloutContentBase extends js.Object {
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_DirectionalHint = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_7 = js.native
 }
 

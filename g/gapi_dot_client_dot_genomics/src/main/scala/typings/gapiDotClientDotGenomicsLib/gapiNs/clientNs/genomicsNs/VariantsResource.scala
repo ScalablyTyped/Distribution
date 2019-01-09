@@ -13,7 +13,7 @@ trait VariantsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def create(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Variant]
+  def create(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Variant]
   /**
     * Deletes a variant.
     *
@@ -21,7 +21,9 @@ trait VariantsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def delete(request: gapiDotClientDotGenomicsLib.Anon_VariantId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(
+    request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadType
+  ): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Gets a variant by ID.
     *
@@ -29,7 +31,9 @@ trait VariantsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def get(request: gapiDotClientDotGenomicsLib.Anon_VariantId): gapiDotClientLib.gapiNs.clientNs.Request[Variant]
+  def get(
+    request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadType
+  ): gapiDotClientLib.gapiNs.clientNs.Request[Variant]
   /**
     * Creates variant data by asynchronously importing the provided information.
     *
@@ -50,7 +54,7 @@ trait VariantsResource extends js.Object {
     * call-specific context.
     * Imported VCF headers are appended to the metadata already in a variant set.
     */
-  def `import`(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def `import`(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Merges the given variants with existing variants.
     *
@@ -144,7 +148,7 @@ trait VariantsResource extends js.Object {
     * This may be the desired outcome, but it is up to the user to determine if
     * if that is indeed the case.
     */
-  def merge(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def merge(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Updates a variant.
     *
@@ -155,7 +159,9 @@ trait VariantsResource extends js.Object {
     * This method supports patch semantics. Returns the modified variant without
     * its calls.
     */
-  def patch(request: gapiDotClientDotGenomicsLib.Anon_VariantIdAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Variant]
+  def patch(
+    request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUpdateMask
+  ): gapiDotClientLib.gapiNs.clientNs.Request[Variant]
   /**
     * Gets a list of variants matching the criteria.
     *
@@ -166,6 +172,6 @@ trait VariantsResource extends js.Object {
     * Implements
     * [GlobalAllianceApi.searchVariants](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L126).
     */
-  def search(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[SearchVariantsResponse]
+  def search(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchVariantsResponse]
 }
 

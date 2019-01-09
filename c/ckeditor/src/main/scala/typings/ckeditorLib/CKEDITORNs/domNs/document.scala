@@ -15,7 +15,7 @@ class document protected () extends domObject {
   def appendStyleSheet(cssFileUrl: java.lang.String): scala.Unit = js.native
   def appendStyleText(cssStyleText: java.lang.String): stdLib.CSSStyleSheet = js.native
   def createElement(name: java.lang.String): element = js.native
-  def createElement(name: java.lang.String, attribsAndStyles: ckeditorLib.Anon_Styles): element = js.native
+  def createElement(name: java.lang.String, attribsAndStyles: ckeditorLib.Anon_Attributes): element = js.native
   def createText(text: java.lang.String): element = js.native
   def find(selector: java.lang.String): nodeList = js.native
   def findOne(selector: java.lang.String): element = js.native

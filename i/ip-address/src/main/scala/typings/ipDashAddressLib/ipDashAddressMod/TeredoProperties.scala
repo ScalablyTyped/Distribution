@@ -9,7 +9,7 @@ trait TeredoProperties extends js.Object {
   var client4: Address4
   var coneNat: scala.Boolean
   var flags: java.lang.String
-  var microsoft: ipDashAddressLib.Anon_Reserved
+  var microsoft: ipDashAddressLib.Anon_GroupIndividual
   var prefix: java.lang.String
   var server4: Address4
   var udpPort: java.lang.String

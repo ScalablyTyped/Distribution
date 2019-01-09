@@ -33,7 +33,9 @@ trait BucketArgs extends js.Object {
     */
   val corsRules: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowedMethods]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowedHeadersAllowedMethods]
+      ]
     ]
   ] = js.undefined
   /**
@@ -50,7 +52,7 @@ trait BucketArgs extends js.Object {
   val lifecycleRules: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NoncurrentVersionTransitions]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AbortIncompleteMultipartUploadDaysEnabled]
       ]
     ]
   ] = js.undefined
@@ -58,7 +60,11 @@ trait BucketArgs extends js.Object {
     * A settings of [bucket logging](https://docs.aws.amazon.com/AmazonS3/latest/UG/ManagingBucketLogging.html) (documented below).
     */
   val loggings: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TargetPrefix]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TargetBucketTargetPrefix]
+      ]
+    ]
   ] = js.undefined
   /**
     * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document. Note that if the policy document is not specific enough (but still valid), Terraform may view the policy as constantly changing in a `terraform plan`. In this case, please make sure you use the verbose/specific version of the policy. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
@@ -82,7 +88,11 @@ trait BucketArgs extends js.Object {
   /**
     * A configuration of [server-side encryption configuration](http://docs.aws.amazon.com/AmazonS3/latest/dev/bucket-encryption.html) (documented below)
     */
-  val serverSideEncryptionConfiguration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Rule]] = js.undefined
+  val serverSideEncryptionConfiguration: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[
+      atPulumiAwsLib.Anon_RuleAnonApplyServerSideEncryptionByDefaultAnonKmsMasterKeyIdSseAlgorithm
+    ]
+  ] = js.undefined
   /**
     * A mapping of tags that identifies subset of objects to which the rule applies.
     * The rule applies only to objects having all the tags in its tagset.
@@ -93,11 +103,13 @@ trait BucketArgs extends js.Object {
   /**
     * A state of [versioning](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html) (documented below)
     */
-  val versioning: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_MfaDelete]] = js.undefined
+  val versioning: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EnabledMfaDeleteBoolean]] = js.undefined
   /**
     * A website object (documented below).
     */
-  val website: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ErrorDocument]] = js.undefined
+  val website: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ErrorDocumentIndexDocument]
+  ] = js.undefined
   /**
     * The domain of the website endpoint, if the bucket is configured with a website. If not, this will be an empty string. This is used to create Route 53 alias records.
     */

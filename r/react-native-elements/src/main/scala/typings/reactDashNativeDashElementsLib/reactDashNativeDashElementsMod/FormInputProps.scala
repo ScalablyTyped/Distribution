@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FormInputProps
-  extends reactDashNativeLib.reactDashNativeMod.TextInputProps {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ trait FormInputProps extends js.Object {
   /**
     * @deprecated
     * Get ref of TextInput container

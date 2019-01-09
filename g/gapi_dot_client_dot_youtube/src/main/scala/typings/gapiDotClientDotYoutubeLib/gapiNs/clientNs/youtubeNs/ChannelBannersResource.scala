@@ -15,6 +15,6 @@ trait ChannelBannersResource extends js.Object {
     * - Call the channels.update method to update the channel's branding settings. Set the brandingSettings.image.bannerExternalUrl property's value to the
     * URL obtained in step 2.
     */
-  def insert(request: gapiDotClientDotYoutubeLib.Anon_PrettyPrintQuotaUserKeyUserIpOauthtokenAltFields): gapiDotClientLib.gapiNs.clientNs.Request[ChannelBannerResource]
+  def insert(request: gapiDotClientDotYoutubeLib.Anon_AltChannelIdFields): gapiDotClientLib.gapiNs.clientNs.Request[ChannelBannerResource]
 }
 

@@ -16,16 +16,16 @@ object reapopModMembers extends js.Object {
   def addNotification(notification: Notification): js.Function1[/* dispatch */ reduxLib.reduxMod.Dispatch[_], Notification] = js.native
   def reducer(): js.Function2[
     /* state */ js.Array[Notification], 
-    /* notification */ reapopLib.Anon_TypePayload, 
+    /* notification */ reapopLib.Anon_PayloadType, 
     js.Array[Notification]
   ] = js.native
   def reducer(defaultNotification: Notification): js.Function2[
     /* state */ js.Array[Notification], 
-    /* notification */ reapopLib.Anon_TypePayload, 
+    /* notification */ reapopLib.Anon_PayloadType, 
     js.Array[Notification]
   ] = js.native
-  def removeNotification(notification: Notification): reapopLib.Anon_Type = js.native
-  def removeNotifications(): reapopLib.Anon_TypeString = js.native
+  def removeNotification(notification: Notification): reapopLib.Anon_Payload = js.native
+  def removeNotifications(): reapopLib.Anon_Type = js.native
   def updateNotification(notification: Notification): js.Function1[/* dispatch */ reduxLib.reduxMod.Dispatch[_], Notification] = js.native
 }
 

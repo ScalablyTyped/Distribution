@@ -7,15 +7,55 @@ import scala.scalajs.js.annotation._
 
 trait Anon_DataToRemove extends js.Object {
   /**
-    * All of the types will be present in the result, with values of `true` if they are permitted to be removed
-    * (e.g., by enterprise policy) and `false` if not.
+    * Clears various types of browsing data stored in a user's profile.
+    * @param dataToRemove The set of data types to remove.
     */
-  var dataRemovalPermitted: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.DataTypeSet
+  def remove(
+    options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions,
+    dataToRemove: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.DataTypeSet
+  ): js.Promise[scala.Unit]
   /**
-    * All of the types will be present in the result, with values of `true` if they are both selected to be
-    * removed and permitted to be removed, otherwise `false`.
+    * Clears websites' appcache data.
+    * @deprecated Unsupported on Firefox at this time.
     */
-  var dataToRemove: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.DataTypeSet
-  var options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions
+  def removeAppcache(options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions): js.Promise[scala.Unit]
+  /** Clears the browser's cache. */
+  def removeCache(options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions): js.Promise[scala.Unit]
+  /** Clears the browser's cookies and server-bound certificates modified within a particular timeframe. */
+  def removeCookies(options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions): js.Promise[scala.Unit]
+  /** Clears the browser's list of downloaded files (_not_ the downloaded files themselves). */
+  def removeDownloads(options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions): js.Promise[scala.Unit]
+  /**
+    * Clears websites' file system data.
+    * @deprecated Unsupported on Firefox at this time.
+    */
+  def removeFileSystems(options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions): js.Promise[scala.Unit]
+  /** Clears the browser's stored form data (autofill). */
+  def removeFormData(options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions): js.Promise[scala.Unit]
+  /** Clears the browser's history. */
+  def removeHistory(options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions): js.Promise[scala.Unit]
+  /**
+    * Clears websites' IndexedDB data.
+    * @deprecated Unsupported on Firefox at this time.
+    */
+  def removeIndexedDB(options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions): js.Promise[scala.Unit]
+  /** Clears websites' local storage data. */
+  def removeLocalStorage(options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions): js.Promise[scala.Unit]
+  /** Clears the browser's stored passwords. */
+  def removePasswords(options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions): js.Promise[scala.Unit]
+  /** Clears plugins' data. */
+  def removePluginData(options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions): js.Promise[scala.Unit]
+  /**
+    * Clears websites' WebSQL data.
+    * @deprecated Unsupported on Firefox at this time.
+    */
+  def removeWebSQL(options: firefoxDashWebextDashBrowserLib.browserNs.browsingDataNs.RemovalOptions): js.Promise[scala.Unit]
+  /* browsingData functions */
+  /**
+    * Reports which types of data are currently selected in the 'Clear browsing data' settings UI. Note: some of the
+    * data types included in this API are not available in the settings UI, and some UI settings control more than one
+    * data type listed here.
+    */
+  def settings(): js.Promise[Anon_DataRemovalPermitted]
 }
 

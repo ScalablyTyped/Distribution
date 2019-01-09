@@ -109,9 +109,9 @@ object Decoration extends js.Object {
       /* getPos */ js.Function0[scala.Double], 
       stdLib.Node
     ],
-    spec: prosemirrorDashViewLib.Anon_Marks
+    spec: prosemirrorDashViewLib.Anon_Event
   ): prosemirrorDashViewLib.prosemirrorDashViewMod.Decoration = js.native
   def widget(pos: scala.Double, toDOM: stdLib.Node): prosemirrorDashViewLib.prosemirrorDashViewMod.Decoration = js.native
-  def widget(pos: scala.Double, toDOM: stdLib.Node, spec: prosemirrorDashViewLib.Anon_Marks): prosemirrorDashViewLib.prosemirrorDashViewMod.Decoration = js.native
+  def widget(pos: scala.Double, toDOM: stdLib.Node, spec: prosemirrorDashViewLib.Anon_Event): prosemirrorDashViewLib.prosemirrorDashViewMod.Decoration = js.native
 }
 

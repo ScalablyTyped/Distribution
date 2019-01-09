@@ -29,7 +29,7 @@ object MeteorNsMembers extends js.Object {
   /** Url **/
   def absoluteUrl(): java.lang.String = js.native
   def absoluteUrl(path: java.lang.String): java.lang.String = js.native
-  def absoluteUrl(path: java.lang.String, options: meteorDashTypingsLib.Anon_RootUrl): java.lang.String = js.native
+  def absoluteUrl(path: java.lang.String, options: meteorDashTypingsLib.Anon_ReplaceLocalhost): java.lang.String = js.native
   @JSName("apply")
   def apply(name: java.lang.String, args: js.Array[meteorDashTypingsLib.EJSONable]): js.Any = js.native
   @JSName("apply")
@@ -53,8 +53,8 @@ object MeteorNsMembers extends js.Object {
   def disconnect(): scala.Unit = js.native
   def loggingIn(): scala.Boolean = js.native
   def loginWith[ExternalService](): scala.Unit = js.native
-  def loginWith[ExternalService](options: meteorDashTypingsLib.Anon_RedirectUrl): scala.Unit = js.native
-  def loginWith[ExternalService](options: meteorDashTypingsLib.Anon_RedirectUrl, callback: js.Function): scala.Unit = js.native
+  def loginWith[ExternalService](options: meteorDashTypingsLib.Anon_LoginStyle): scala.Unit = js.native
+  def loginWith[ExternalService](options: meteorDashTypingsLib.Anon_LoginStyle, callback: js.Function): scala.Unit = js.native
   def loginWithFacebook(): scala.Unit = js.native
   def loginWithFacebook(options: LoginWithExternalServiceOptions): scala.Unit = js.native
   def loginWithFacebook(options: LoginWithExternalServiceOptions, callback: js.Function): scala.Unit = js.native

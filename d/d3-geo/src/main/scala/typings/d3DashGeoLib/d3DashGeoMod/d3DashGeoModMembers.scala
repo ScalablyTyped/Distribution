@@ -146,7 +146,7 @@ object d3DashGeoModMembers extends js.Object {
   ): scala.Unit = js.native
   def geoStream(`object`: ExtendedGeometryCollection[GeoGeometryObjects], stream: GeoStream): scala.Unit = js.native
   def geoStream(`object`: GeoGeometryObjects, stream: GeoStream): scala.Unit = js.native
-  def geoTransform[T /* <: GeoTransformPrototype */](methods: T): d3DashGeoLib.Anon_Stream[T] = js.native
+  def geoTransform[T /* <: GeoTransformPrototype */](methods: T): d3DashGeoLib.Anon_S[T] = js.native
   def geoTransverseMercator(): GeoProjection = js.native
   def geoTransverseMercatorRaw(): GeoRawProjection = js.native
 }

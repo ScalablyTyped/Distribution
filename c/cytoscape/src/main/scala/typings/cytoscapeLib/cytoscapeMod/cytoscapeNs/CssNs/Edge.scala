@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial<cytoscape.cytoscape.cytoscape.Css.Overlay>) */ trait Edge
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof cytoscape.cytoscape.cytoscape.Css.Overlay ]:? cytoscape.cytoscape.cytoscape.Css.Overlay[P]} */ trait Edge
   extends EdgeLine
      with EdgeArror
 

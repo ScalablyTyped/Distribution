@@ -18,10 +18,10 @@ object childUnderscoreProcessModMembers extends js.Object {
       scala.Unit
     ]
   ): ChildProcess = js.native
-  def exec(command: java.lang.String, options: easyDashXDashHeadersLib.Anon_KillSignalStdioEncoding): ChildProcess = js.native
+  def exec(command: java.lang.String, options: easyDashXDashHeadersLib.Anon_CustomFds): ChildProcess = js.native
   def exec(
     command: java.lang.String,
-    options: easyDashXDashHeadersLib.Anon_KillSignalStdioEncoding,
+    options: easyDashXDashHeadersLib.Anon_CustomFds,
     callback: js.Function3[
       /* error */ nodeLib.Error, 
       /* stdout */ easyDashXDashHeadersLib.Buffer, 
@@ -44,12 +44,12 @@ object childUnderscoreProcessModMembers extends js.Object {
   def execFile(
     file: java.lang.String,
     args: js.Array[java.lang.String],
-    options: easyDashXDashHeadersLib.Anon_KillSignalStdio
+    options: easyDashXDashHeadersLib.Anon_CustomFdsCwd
   ): ChildProcess = js.native
   def execFile(
     file: java.lang.String,
     args: js.Array[java.lang.String],
-    options: easyDashXDashHeadersLib.Anon_KillSignalStdio,
+    options: easyDashXDashHeadersLib.Anon_CustomFdsCwd,
     callback: js.Function3[
       /* error */ nodeLib.Error, 
       /* stdout */ easyDashXDashHeadersLib.Buffer, 
@@ -71,10 +71,10 @@ object childUnderscoreProcessModMembers extends js.Object {
   def execFileSync(
     command: java.lang.String,
     args: js.Array[java.lang.String],
-    options: easyDashXDashHeadersLib.Anon_KillSignal
+    options: easyDashXDashHeadersLib.Anon_CwdEncoding
   ): ChildProcess = js.native
   def execSync(command: java.lang.String): ChildProcess = js.native
-  def execSync(command: java.lang.String, options: easyDashXDashHeadersLib.Anon_KillSignal): ChildProcess = js.native
+  def execSync(command: java.lang.String, options: easyDashXDashHeadersLib.Anon_CwdEncoding): ChildProcess = js.native
   def fork(modulePath: java.lang.String): ChildProcess = js.native
   def fork(modulePath: java.lang.String, args: js.Array[java.lang.String]): ChildProcess = js.native
   def fork(
@@ -87,7 +87,7 @@ object childUnderscoreProcessModMembers extends js.Object {
   def spawn(
     command: java.lang.String,
     args: js.Array[java.lang.String],
-    options: easyDashXDashHeadersLib.Anon_Stdio
+    options: easyDashXDashHeadersLib.Anon_Custom
   ): ChildProcess = js.native
 }
 

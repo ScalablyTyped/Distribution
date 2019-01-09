@@ -240,7 +240,7 @@ abstract class Model ()
     * Get the default binding mode for the model
     * @returns default binding mode of the model
     */
-  def getDefaultBindingMode(): openui5Lib.Anon_OneTime = js.native
+  def getDefaultBindingMode(): openui5Lib.Anon_Default = js.native
   /**
     * Get messages for path
     * @param sPath The binding path
@@ -280,7 +280,7 @@ abstract class Model ()
     * Check if the specified binding mode is supported by the model.
     * @param sMode the binding mode to check
     */
-  def isBindingModeSupported(sMode: openui5Lib.Anon_OneTime): scala.Unit = js.native
+  def isBindingModeSupported(sMode: openui5Lib.Anon_Default): scala.Unit = js.native
   /**
     * Returns whether legacy path syntax is used
     */
@@ -300,7 +300,7 @@ abstract class Model ()
     * @param sMode the default binding mode to set for the model
     * @returns this pointer for chaining
     */
-  def setDefaultBindingMode(sMode: openui5Lib.Anon_OneTime): Model = js.native
+  def setDefaultBindingMode(sMode: openui5Lib.Anon_Default): Model = js.native
   /**
     * Enables legacy path syntax handlingThis defines, whether relative bindings, which do not have a
     * definedbinding context, should be compatible to earlier releases which meansthey are resolved

@@ -16,7 +16,7 @@ package object mapboxglNs {
   type MapDataEvent = MapSourceDataEvent | MapStyleDataEvent
   type MapLayerMouseEvent = MapMouseEvent with mapboxDashGlLib.Anon_Features
   type MapLayerTouchEvent = MapTouchEvent with mapboxDashGlLib.Anon_Features
-  type MapboxGeoJSONFeature = (geojsonLib.geojsonMod.Feature[geojsonLib.geojsonMod.Geometry, geojsonLib.geojsonMod.GeoJsonProperties]) with mapboxDashGlLib.Anon_SourceLayerLayer
+  type MapboxGeoJSONFeature = (geojsonLib.geojsonMod.Feature[geojsonLib.geojsonMod.Geometry, geojsonLib.geojsonMod.GeoJsonProperties]) with mapboxDashGlLib.Anon_Key
   type NavigationControl = Control
   type PointLike = Point | (js.Tuple2[scala.Double, scala.Double])
   type ResourceType = mapboxDashGlLib.mapboxDashGlLibStrings.Unknown | mapboxDashGlLib.mapboxDashGlLibStrings.Style | mapboxDashGlLib.mapboxDashGlLibStrings.Source | mapboxDashGlLib.mapboxDashGlLibStrings.Tile | mapboxDashGlLib.mapboxDashGlLibStrings.Glyphs | mapboxDashGlLib.mapboxDashGlLibStrings.SpriteImage | mapboxDashGlLib.mapboxDashGlLibStrings.SpriteJSON | mapboxDashGlLib.mapboxDashGlLibStrings.Image

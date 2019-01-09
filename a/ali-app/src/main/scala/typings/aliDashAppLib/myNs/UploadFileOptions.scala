@@ -20,7 +20,7 @@ trait UploadFileOptions
   /** HTTP 请求 Header */
   var header: js.UndefOr[RequestHeader] = js.undefined
   @JSName("success")
-  var success_UploadFileOptions: js.UndefOr[js.Function1[/* res */ aliDashAppLib.Anon_Data, scala.Unit]] = js.undefined
+  var success_UploadFileOptions: js.UndefOr[js.Function1[/* res */ aliDashAppLib.Anon_DataHeader, scala.Unit]] = js.undefined
   /** 开发者服务器地址 */
   var url: java.lang.String
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("add-matchers/dist", JSImport.Namespace)
 @js.native
 object distModMembers extends js.Object {
-  val addMatchers: addDashMatchersLib.Anon_MatchersByName = js.native
-  val default: addDashMatchersLib.Anon_MatchersByName = js.native
+  val addMatchers: addDashMatchersLib.Anon_Asymmetric = js.native
+  val default: addDashMatchersLib.Anon_Asymmetric = js.native
 }
 

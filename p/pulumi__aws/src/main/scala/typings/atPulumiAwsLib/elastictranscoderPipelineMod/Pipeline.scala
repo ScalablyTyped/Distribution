@@ -26,11 +26,11 @@ class Pipeline protected ()
   /**
     * The ContentConfig object specifies information about the Amazon S3 bucket in which you want Elastic Transcoder to save transcoded files and playlists. (documented below)
     */
-  val contentConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BucketStorageClassString] = js.native
+  val contentConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BucketStorageClass] = js.native
   /**
     * The permissions for the `content_config` object. (documented below)
     */
-  val contentConfigPermissions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AccessesGrantee]]] = js.native
+  val contentConfigPermissions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Accesses]]] = js.native
   /**
     * The Amazon S3 bucket in which you saved the media files that you want to transcode and the graphics that you want to use as watermarks.
     */
@@ -42,7 +42,7 @@ class Pipeline protected ()
   /**
     * The Amazon Simple Notification Service (Amazon SNS) topic that you want to notify to report job status. (documented below)
     */
-  val notifications: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_WarningError]] = js.native
+  val notifications: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Completed]] = js.native
   /**
     * The Amazon S3 bucket in which you want Elastic Transcoder to save the transcoded files.
     */
@@ -54,11 +54,11 @@ class Pipeline protected ()
   /**
     * The ThumbnailConfig object specifies information about the Amazon S3 bucket in which you want Elastic Transcoder to save thumbnail files. (documented below)
     */
-  val thumbnailConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BucketStorageClassString] = js.native
+  val thumbnailConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BucketStorageClass] = js.native
   /**
     * The permissions for the `thumbnail_config` object. (documented below)
     */
-  val thumbnailConfigPermissions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AccessesGrantee]]] = js.native
+  val thumbnailConfigPermissions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Accesses]]] = js.native
 }
 
 @JSImport("@pulumi/aws/elastictranscoder/pipeline", "Pipeline")

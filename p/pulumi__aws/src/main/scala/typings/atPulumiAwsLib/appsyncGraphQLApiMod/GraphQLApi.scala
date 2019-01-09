@@ -29,7 +29,7 @@ class GraphQLApi protected ()
   /**
     * Nested argument containing logging configuration. Defined below.
     */
-  val logConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_FieldLogLevel]] = js.native
+  val logConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CloudwatchLogsRoleArn]] = js.native
   /**
     * A user-supplied name for the GraphqlApi.
     */
@@ -45,7 +45,7 @@ class GraphQLApi protected ()
   /**
     * The Amazon Cognito User Pool configuration. Defined below.
     */
-  val userPoolConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DefaultAction]] = js.native
+  val userPoolConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AppIdClientRegex]] = js.native
 }
 
 @JSImport("@pulumi/aws/appsync/graphQLApi", "GraphQLApi")

@@ -69,7 +69,7 @@ trait Options
     * See also documentation on <a href='http://dygraphs.com/per-axis.html'>per-series and
     * per-axis options</a>.
     */
-  var axes: js.UndefOr[dygraphsLib.Anon_Y] = js.undefined
+  var axes: js.UndefOr[dygraphsLib.Anon_X] = js.undefined
   /**
     * A function to call when the canvas is clicked.
     */

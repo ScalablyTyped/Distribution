@@ -33,7 +33,7 @@ trait ChartOptions3d extends js.Object {
   /**
     * Provides the option to draw a frame around the charts by defining a bottom, front and back panel.
     */
-  var frame: js.UndefOr[highchartsLib.Anon_Bottom] = js.undefined
+  var frame: js.UndefOr[highchartsLib.Anon_Back] = js.undefined
   /**
     * Defines the distance the viewer is standing in front of the chart, this setting is important to calculate the
     * perspective effect in column and scatter charts. It is not used for 3D pie charts.

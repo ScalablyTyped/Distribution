@@ -79,7 +79,7 @@ class Directory protected () extends js.Object {
     * Creates the directory if doesnt exist
     */
   def create(): js.Promise[scala.Unit] = js.native
-  def create(options: adoneLib.Anon_Mode): js.Promise[scala.Unit] = js.native
+  def create(options: adoneLib.Anon_ModeNumber): js.Promise[scala.Unit] = js.native
   /**
     * Returns dirname
     */
@@ -165,7 +165,7 @@ class Directory protected () extends js.Object {
     * Deletes the directory
     */
   def unlink(): js.Promise[scala.Unit] = js.native
-  def unlink(options: adoneLib.Anon_Retries): js.Promise[scala.Unit] = js.native
+  def unlink(options: adoneLib.Anon_Delay): js.Promise[scala.Unit] = js.native
 }
 
 /**

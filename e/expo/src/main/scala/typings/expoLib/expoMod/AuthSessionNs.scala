@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object AuthSessionNs extends js.Object {
   def dismiss(): scala.Unit = js.native
   def getRedirectUrl(): java.lang.String = js.native
-  def startAsync(options: expoLib.Anon_ReturnUrl): js.Promise[StartAsyncResponse] = js.native
-  type StartAsyncResponse = expoLib.Anon_TypeCancel | expoLib.Anon_TypeDismissed | expoLib.Anon_TypeSuccess | expoLib.Anon_ErrorCode
+  def startAsync(options: expoLib.Anon_AuthUrl): js.Promise[StartAsyncResponse] = js.native
+  type StartAsyncResponse = expoLib.Anon_Cancel | expoLib.Anon_Dismissed | expoLib.Anon_Event | expoLib.Anon_Error
 }
 

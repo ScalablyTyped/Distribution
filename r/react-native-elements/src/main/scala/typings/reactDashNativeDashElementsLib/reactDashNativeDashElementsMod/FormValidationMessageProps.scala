@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FormValidationMessageProps
-  extends reactDashNativeLib.reactDashNativeMod.ViewProps {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ trait FormValidationMessageProps extends js.Object {
   /**
     * Style of the container
     */

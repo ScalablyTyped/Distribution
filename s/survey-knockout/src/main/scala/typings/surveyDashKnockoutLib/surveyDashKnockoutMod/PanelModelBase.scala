@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(surveyDashKnockoutLib.surveyDashKnockoutMod.IPanel because Would inherit conflicting mutable fields List(isPage, isVisible, name))*/
-@JSImport("survey-knockout", "PanelModelBase")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- surveyDashKnockoutLib.surveyDashKnockoutMod.IPanel because var conflicts: isPage, isVisible, name. Inlined getQuestionTitleLocation, parent, elementWidthChanged */ @JSImport("survey-knockout", "PanelModelBase")
 @js.native
 class PanelModelBase ()
   extends SurveyElement
@@ -59,7 +59,7 @@ class PanelModelBase ()
   /**
     * A parent element. It is always null for the Page object and always not null for the Panel object. Panel object may contain Questions and other Panels.
     */
-  var parent: PanelModelBase = js.native
+  var parent: IPanel | PanelModelBase = js.native
   /**
     * Returns rendered title text or html.
     */
@@ -171,6 +171,8 @@ class PanelModelBase ()
   /* protected */ def dragDropAddTarget(dragDropInfo: DragDropInfo): scala.Unit = js.native
   /* protected */ def dragDropFindRow(findElement: ISurveyElement): QuestionRowModel = js.native
   def elementWidthChanged(el: IElement): scala.Unit = js.native
+  @JSName("elementWidthChanged")
+  def elementWidthChanged_Any(el: IElement): js.Any = js.native
   /**
     * Returns question comments on the current page
     */

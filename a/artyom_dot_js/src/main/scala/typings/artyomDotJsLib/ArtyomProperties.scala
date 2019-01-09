@@ -9,7 +9,7 @@ trait ArtyomProperties extends js.Object {
   var continuous: js.UndefOr[scala.Boolean] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   var executionKeyword: js.UndefOr[java.lang.String] = js.undefined
-  var helpers: js.UndefOr[Anon_RedirectRecognizedTextOutput] = js.undefined
+  var helpers: js.UndefOr[Anon_FatalityPromiseCallback] = js.undefined
   var lang: java.lang.String
   var listen: scala.Boolean
   var mode: js.UndefOr[java.lang.String] = js.undefined

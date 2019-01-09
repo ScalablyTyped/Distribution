@@ -15,13 +15,9 @@ class default[T] protected ()
 @JSImport("antd/lib/table", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Column: org.scalablytyped.runtime.Instantiable0[
-    antdLib.libTableColumnMod.default[
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T */ js.Any
-    ]
-  ] = js.native
-  var ColumnGroup: org.scalablytyped.runtime.Instantiable0[antdLib.libTableColumnGroupMod.default] = js.native
-  var defaultProps: antdLib.Anon_Bordered = js.native
-  var propTypes: antdLib.Anon_BorderedSize = js.native
+  var Column: org.scalablytyped.runtime.Instantiable0[antdLib.libTableColumnMod.default[js.Object]] = js.native
+  var ColumnGroup: antdLib.Anon_ANTTABLECOLUMNGROUP = js.native
+  var defaultProps: antdLib.Anon_BorderedClassName = js.native
+  var propTypes: antdLib.Anon_ArgsBordered = js.native
 }
 

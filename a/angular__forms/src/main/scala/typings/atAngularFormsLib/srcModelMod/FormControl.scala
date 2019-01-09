@@ -34,7 +34,7 @@ class FormControl () extends AbstractControl {
   def this(formState: js.Any, validatorOrOpts: scala.Null, asyncValidator: atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn) = this()
   def this(formState: js.Any, validatorOrOpts: scala.Null, asyncValidator: js.Array[atAngularFormsLib.srcDirectivesValidatorsMod.AsyncValidatorFn]) = this()
   var _applyFormState: js.Any = js.native
-  def patchValue(value: js.Any, options: atAngularFormsLib.Anon_EmitViewToModelChange): scala.Unit = js.native
+  def patchValue(value: js.Any, options: atAngularFormsLib.Anon_EmitEventEmitModelToViewChange): scala.Unit = js.native
   /**
     * Register a listener for change events.
     *
@@ -47,7 +47,7 @@ class FormControl () extends AbstractControl {
     * @param fn The method that is called when the disabled status changes.
     */
   def registerOnDisabledChange(fn: js.Function1[/* isDisabled */ scala.Boolean, scala.Unit]): scala.Unit = js.native
-  def reset(formState: js.Any, options: atAngularFormsLib.Anon_OnlySelf): scala.Unit = js.native
-  def setValue(value: js.Any, options: atAngularFormsLib.Anon_EmitViewToModelChange): scala.Unit = js.native
+  def reset(formState: js.Any, options: atAngularFormsLib.Anon_EmitEvent): scala.Unit = js.native
+  def setValue(value: js.Any, options: atAngularFormsLib.Anon_EmitEventEmitModelToViewChange): scala.Unit = js.native
 }
 

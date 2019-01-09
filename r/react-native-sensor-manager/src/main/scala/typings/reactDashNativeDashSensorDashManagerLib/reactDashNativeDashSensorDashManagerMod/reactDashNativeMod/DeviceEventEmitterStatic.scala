@@ -10,12 +10,12 @@ trait DeviceEventEmitterStatic extends js.Object {
   @JSName("addListener")
   def addListener_Accelerometer(
     event: reactDashNativeDashSensorDashManagerLib.reactDashNativeDashSensorDashManagerLibStrings.Accelerometer,
-    callback: js.Function1[/* data */ reactDashNativeDashSensorDashManagerLib.Anon_Z, scala.Unit]
+    callback: js.Function1[/* data */ reactDashNativeDashSensorDashManagerLib.Anon_X, scala.Unit]
   ): js.Any = js.native
   @JSName("addListener")
   def addListener_Gyroscope(
     event: reactDashNativeDashSensorDashManagerLib.reactDashNativeDashSensorDashManagerLibStrings.Gyroscope,
-    callback: js.Function1[/* data */ reactDashNativeDashSensorDashManagerLib.Anon_Z, scala.Unit]
+    callback: js.Function1[/* data */ reactDashNativeDashSensorDashManagerLib.Anon_X, scala.Unit]
   ): js.Any = js.native
   @JSName("addListener")
   def addListener_LightSensor(
@@ -25,7 +25,7 @@ trait DeviceEventEmitterStatic extends js.Object {
   @JSName("addListener")
   def addListener_Magnetometer(
     event: reactDashNativeDashSensorDashManagerLib.reactDashNativeDashSensorDashManagerLibStrings.Magnetometer,
-    callback: js.Function1[/* data */ reactDashNativeDashSensorDashManagerLib.Anon_Z, scala.Unit]
+    callback: js.Function1[/* data */ reactDashNativeDashSensorDashManagerLib.Anon_X, scala.Unit]
   ): js.Any = js.native
   @JSName("addListener")
   def addListener_Orientation(

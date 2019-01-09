@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/email", "Email")
 @js.native
 object EmailNs extends js.Object {
-  def send(options: meteorLib.Anon_Subject): scala.Unit = js.native
+  def send(options: meteorLib.Anon_Attachments): scala.Unit = js.native
 }
 

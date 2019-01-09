@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SecureContextOptions extends js.Object {
     // string | buffer
   var ca: js.UndefOr[js.Any] = js.undefined

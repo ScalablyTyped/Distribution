@@ -294,7 +294,7 @@ trait Model[TInstance, TAttributes]
   def insertOrUpdate(values: TAttributes): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
   def insertOrUpdate(
     values: TAttributes,
-    options: UpsertOptions with (sequelizeLib.Anon_Returning | sequelizeLib.Anon_ReturningTrue)
+    options: UpsertOptions with (sequelizeLib.Anon_FalseReturning | sequelizeLib.Anon_Returning)
   ): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
   /**
     * Find the maximum value of field
@@ -429,7 +429,7 @@ trait Model[TInstance, TAttributes]
   def upsert(values: TAttributes): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
   def upsert(
     values: TAttributes,
-    options: UpsertOptions with (sequelizeLib.Anon_ReturningFalse | sequelizeLib.Anon_ReturningTrue)
+    options: UpsertOptions with (sequelizeLib.Anon_False | sequelizeLib.Anon_Returning)
   ): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
 }
 

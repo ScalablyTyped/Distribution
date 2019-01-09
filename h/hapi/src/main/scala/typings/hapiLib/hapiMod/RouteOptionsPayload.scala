@@ -55,7 +55,7 @@ trait RouteOptionsPayload extends js.Object {
     * * * * payload - the processed part payload.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadmultipart)
     */
-  var multipart: js.UndefOr[hapiLib.hapiLibNumbers.`false` | hapiLib.Anon_Output] = js.undefined
+  var multipart: js.UndefOr[hapiLib.hapiLibNumbers.`false` | hapiLib.Anon_Annotated] = js.undefined
   /**
     * Default value: 'data'.
     * The processed payload format. The value must be one of:

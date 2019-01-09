@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait XYFocusEvent
   extends stdLib.CustomEvent[js.Any] {
   @JSName("detail")
-  var detail_XYFocusEvent: winjsLib.Anon_PreviousFocusElement = js.native
+  var detail_XYFocusEvent: winjsLib.Anon_KeyCode = js.native
 }
 

@@ -1672,17 +1672,17 @@ object libsodiumDashWrappersDashSumoModMembers extends js.Object {
   @JSName("crypto_secretbox_open_easy")
   def crypto_secretbox_open_easy_Uint8Array(ciphertext: stdLib.Uint8Array, nonce: stdLib.Uint8Array, key: stdLib.Uint8Array): stdLib.Uint8Array = js.native
   def crypto_secretstream_xchacha20poly1305_init_pull(header: stdLib.Uint8Array, key: stdLib.Uint8Array): libsodiumDashWrappersLib.libsodiumDashWrappersMod.state_address = js.native
-  def crypto_secretstream_xchacha20poly1305_init_push(key: stdLib.Uint8Array): libsodiumDashWrappersLib.Anon_StateHeader = js.native
+  def crypto_secretstream_xchacha20poly1305_init_push(key: stdLib.Uint8Array): libsodiumDashWrappersLib.Anon_HeaderState = js.native
   def crypto_secretstream_xchacha20poly1305_init_push(
     key: stdLib.Uint8Array,
     outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.StringOutputFormat
-  ): libsodiumDashWrappersLib.Anon_StateHeader = js.native
+  ): libsodiumDashWrappersLib.Anon_HeaderState = js.native
   def crypto_secretstream_xchacha20poly1305_init_push(
     key: stdLib.Uint8Array,
     outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.Uint8ArrayOutputFormat
-  ): libsodiumDashWrappersLib.Anon_State = js.native
+  ): libsodiumDashWrappersLib.Anon_Header = js.native
   @JSName("crypto_secretstream_xchacha20poly1305_init_push")
-  def crypto_secretstream_xchacha20poly1305_init_push_Anon_State(key: stdLib.Uint8Array): libsodiumDashWrappersLib.Anon_State = js.native
+  def crypto_secretstream_xchacha20poly1305_init_push_Anon_Header(key: stdLib.Uint8Array): libsodiumDashWrappersLib.Anon_Header = js.native
   def crypto_secretstream_xchacha20poly1305_keygen(): java.lang.String = js.native
   def crypto_secretstream_xchacha20poly1305_keygen(outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.StringOutputFormat): java.lang.String = js.native
   def crypto_secretstream_xchacha20poly1305_keygen(outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.Uint8ArrayOutputFormat): stdLib.Uint8Array = js.native

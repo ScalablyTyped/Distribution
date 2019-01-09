@@ -34,7 +34,7 @@ object jweixinModMembers extends js.Object {
   	 * 关闭当前网页窗口接口
   	 */
   def closeWindow(): scala.Unit = js.native
-  def config(conf: jweixinLib.Anon_NonceStr): scala.Unit = js.native
+  def config(conf: jweixinLib.Anon_AppId): scala.Unit = js.native
   /**
   	 * 核销后再次赠送卡券接口
   	 */
@@ -47,7 +47,7 @@ object jweixinModMembers extends js.Object {
   	 * 下载语音接口
   	 */
   def downloadVoice(params: jweixinLib.jweixinMod.wxNs.IupdownloadVoice): scala.Unit = js.native
-  def error(fn: js.Function1[/* err */ jweixinLib.Anon_ErrMsgString, scala.Unit]): scala.Unit = js.native
+  def error(fn: js.Function1[/* err */ jweixinLib.Anon_ErrMsg, scala.Unit]): scala.Unit = js.native
   /**
   	 * 获取本地图片接口
   	 */

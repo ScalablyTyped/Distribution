@@ -543,13 +543,13 @@ trait Diagram extends js.Object {
     * @param {Object=} properties For details see the argument description of .makeImageData.
     */
   def makeImage(): stdLib.HTMLImageElement = js.native
-  def makeImage(properties: goLib.Anon_SizeShowGrid): stdLib.HTMLImageElement = js.native
+  def makeImage(properties: goLib.Anon_Background): stdLib.HTMLImageElement = js.native
   /**
     * Create a bitmap of the current Diagram encoded as a base64 string.
     * @param {Object=} properties a JavaScript object detailing optional arguments for image creation, to be passed to makeImageData.
     */
   def makeImageData(): java.lang.String = js.native
-  def makeImageData(properties: goLib.Anon_SizeShowGrid): java.lang.String = js.native
+  def makeImageData(properties: goLib.Anon_Background): java.lang.String = js.native
   /**
     * Create an SVGElement that contains a SVG rendering of the current Diagram.
     * By default this method returns a snapshot of the visible diagram, but optional arguments give more options.
@@ -557,7 +557,7 @@ trait Diagram extends js.Object {
     * @return {SVGElement}
     */
   def makeSvg(): stdLib.SVGElement = js.native
-  def makeSvg(properties: goLib.Anon_Size): stdLib.SVGElement = js.native
+  def makeSvg(properties: goLib.Anon_BackgroundDocument): stdLib.SVGElement = js.native
     // undocumented
   def maybeUpdate(): scala.Unit = js.native
   /**Gets or sets the function to execute when the user is dragging the selection in the background of the Diagram during a DraggingTool drag-and-drop, not over any GraphObjects.*/

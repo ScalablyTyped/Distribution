@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(surveyDashKnockoutLib.surveyDashKnockoutMod.IQuestion because Would inherit conflicting mutable fields List(isPage, isVisible, name))*/
-@JSImport("survey-knockout", "Question")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- surveyDashKnockoutLib.surveyDashKnockoutMod.IQuestion because var conflicts: isPage, isVisible, name. Inlined hasTitle, isEmpty, onSurveyValueChanged, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, value */ @JSImport("survey-knockout", "Question")
 @js.native
 class Question protected ()
   extends SurveyElement
@@ -218,8 +218,14 @@ class Question protected ()
     */
   def clearIncorrectValues(): scala.Unit = js.native
   def clearUnusedValues(): scala.Unit = js.native
+  @JSName("clearUnusedValues")
+  def clearUnusedValues_Any(): js.Any = js.native
   def clearValue(): scala.Unit = js.native
   def clearValueIfInvisible(): scala.Unit = js.native
+  @JSName("clearValueIfInvisible")
+  def clearValueIfInvisible_Any(): js.Any = js.native
+  @JSName("clearValue")
+  def clearValue_Any(): js.Any = js.native
   def commentChangedCallback(): scala.Unit = js.native
   /* protected */ def fireCallback(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
@@ -300,6 +306,8 @@ class Question protected ()
   /* protected */ def onCreating(): scala.Unit = js.native
   /* protected */ def onNameValueChanged(oldValue: java.lang.String, newValue: java.lang.String): scala.Unit = js.native
   def onSurveyValueChanged(newValue: js.Any): scala.Unit = js.native
+  @JSName("onSurveyValueChanged")
+  def onSurveyValueChanged_Any(newValue: js.Any): js.Any = js.native
   /* protected */ def onValueChanged(): scala.Unit = js.native
   /* protected */ def onValueNameChanged(oldValue: java.lang.String): scala.Unit = js.native
   /* protected */ def onVisibleChanged(): scala.Unit = js.native
@@ -328,6 +336,8 @@ class Question protected ()
   def updateCustomWidget(): scala.Unit = js.native
   /* protected */ def updateDisplayValue(): js.Any = js.native
   def updateValueWithDefaults(): scala.Unit = js.native
+  @JSName("updateValueWithDefaults")
+  def updateValueWithDefaults_Any(): js.Any = js.native
   def validateValueCallback(): SurveyError = js.native
   def valueChangedCallback(): scala.Unit = js.native
   /* protected */ def valueFromData(`val`: js.Any): js.Any = js.native

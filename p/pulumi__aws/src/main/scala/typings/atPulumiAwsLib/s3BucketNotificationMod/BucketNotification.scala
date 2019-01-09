@@ -25,15 +25,15 @@ class BucketNotification protected ()
   /**
     * Used to configure notifications to a Lambda Function (documented below).
     */
-  val lambdaFunctions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_LambdaFunctionArnFilterPrefix]]] = js.native
+  val lambdaFunctions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefix]]] = js.native
   /**
     * The notification configuration to SQS Queue (documented below).
     */
-  val queues: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_QueueArnFilterPrefix]]] = js.native
+  val queues: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffix]]] = js.native
   /**
     * The notification configuration to SNS Topic (documented below).
     */
-  val topics: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_TopicArnFilterPrefix]]] = js.native
+  val topics: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffixId]]] = js.native
 }
 
 @JSImport("@pulumi/aws/s3/bucketNotification", "BucketNotification")

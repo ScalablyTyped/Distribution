@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TableCellPropertiesTableCellBackgroundFill extends js.Object {
   // The kind of background fill.
-  var kind: googleDashAppsDashScriptLib.Anon_Solidfill
+  var kind: googleDashAppsDashScriptLib.Anon_SolidfillSolidFill
   // The background fill property state.
   //
   // Updating the fill on a table cell will implicitly update this field

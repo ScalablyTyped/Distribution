@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object pkcs11Ns extends js.Object {
   /** Enumerate a module's slots, each with their name and whether a token is present */
-  def getModuleSlots(name: java.lang.String): js.Promise[firefoxDashWebextDashBrowserLib.Anon_TokenName] = js.native
+  def getModuleSlots(name: java.lang.String): js.Promise[firefoxDashWebextDashBrowserLib.Anon_NameToken] = js.native
   /** Install a PKCS#11 module with a given name */
   def installModule(name: java.lang.String): js.Promise[scala.Unit] = js.native
   def installModule(name: java.lang.String, flags: scala.Double): js.Promise[scala.Unit] = js.native

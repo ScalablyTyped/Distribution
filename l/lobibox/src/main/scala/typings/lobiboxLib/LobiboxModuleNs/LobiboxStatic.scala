@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LobiboxStatic extends js.Object {
   @JSName("alert")
-  var alert_Original: lobiboxLib.Anon_TypeOptions = js.native
-  var base: lobiboxLib.Anon_OPTIONS = js.native
+  var alert_Original: lobiboxLib.Anon_DEFAULTSOptions = js.native
+  var base: lobiboxLib.Anon_DEFAULTS = js.native
   @JSName("confirm")
-  var confirm_Original: lobiboxLib.Anon_OptionsDEFAULTST = js.native
+  var confirm_Original: lobiboxLib.Anon_DEFAULTSOptionsConfirmOptions = js.native
   @JSName("notify")
-  var notify_Original: lobiboxLib.Anon_Type = js.native
+  var notify_Original: lobiboxLib.Anon_DEFAULTSOPTIONS = js.native
   @JSName("progress")
-  var progress_Original: lobiboxLib.Anon_OptionsDEFAULTS = js.native
+  var progress_Original: lobiboxLib.Anon_DEFAULTSOptionsMessageBoxesDefault = js.native
   @JSName("prompt")
-  var prompt_Original: lobiboxLib.Anon_TypeOptionsDEFAULTS = js.native
+  var prompt_Original: lobiboxLib.Anon_DEFAULTSOptionsType = js.native
   @JSName("window")
-  var window_Original: lobiboxLib.Anon_Options = js.native
+  var window_Original: lobiboxLib.Anon_DEFAULTSOptionsMessageBoxesDefaultT = js.native
   def alert[T /* <: MessageBoxesDefault */](`type`: java.lang.String): LobiboxStatic = js.native
   def alert[T /* <: MessageBoxesDefault */](`type`: java.lang.String, options: T): LobiboxStatic = js.native
   def confirm[T /* <: MessageBoxesDefault */](): T = js.native

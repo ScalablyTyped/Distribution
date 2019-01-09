@@ -108,7 +108,7 @@ class List ()
   def load(): List = js.native
   def load(option: java.lang.String): List = js.native
   def load(option: js.Array[java.lang.String]): List = js.native
-  def load(option: officeDashJsLib.Anon_Select): List = js.native
+  def load(option: officeDashJsLib.Anon_Expand): List = js.native
   def load(option: officeDashJsLib.WordNs.InterfacesNs.ListLoadOptions): List = js.native
   /**
     *

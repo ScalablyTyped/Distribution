@@ -45,6 +45,6 @@ object cucumberModMembers extends js.Object {
   def setDefinitionFunctionWrapper(fn: js.Function0[scala.Unit]): scala.Unit = js.native
   def setDefinitionFunctionWrapper(fn: js.Function0[scala.Unit], options: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def setWorldConstructor(world: js.Object): scala.Unit = js.native
-  def setWorldConstructor(world: js.ThisFunction1[/* this */ World, /* init */ cucumberLib.Anon_Parameters, scala.Unit]): scala.Unit = js.native
+  def setWorldConstructor(world: js.ThisFunction1[/* this */ World, /* init */ cucumberLib.Anon_Attach, scala.Unit]): scala.Unit = js.native
 }
 

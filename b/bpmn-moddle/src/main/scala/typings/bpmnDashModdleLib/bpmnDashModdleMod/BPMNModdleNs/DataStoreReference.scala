@@ -5,8 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ItemAwareElement because Would inherit conflicting mutable fields List($attrs, $type, documentation, extensionDefinitions, extensionElements, id))*/
-trait DataStoreReference extends FlowElement {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.ItemAwareElement because var conflicts: $attrs, $type, documentation, extensionDefinitions, extensionElements, id. Inlined itemSubjectRef, dataState */ trait DataStoreReference extends FlowElement {
+  var dataState: DataState
   var dataStoreRef: DataStore
+  var itemSubjectRef: ItemDefinition
 }
 

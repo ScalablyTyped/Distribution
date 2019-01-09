@@ -12,7 +12,7 @@ class Base64VLQFormat () extends js.Object
 @JSGlobal("TypeScript.Base64VLQFormat")
 @js.native
 object Base64VLQFormat extends js.Object {
-  def decode(inString: java.lang.String): typescriptDashServicesLib.Anon_Value = js.native
+  def decode(inString: java.lang.String): typescriptDashServicesLib.Anon_Rest = js.native
   def encode(inValue: scala.Double): java.lang.String = js.native
 }
 

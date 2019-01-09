@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait InstanceConfigsResource extends js.Object {
   /** Gets information about a particular instance configuration. */
-  def get(request: gapiDotClientDotSpannerLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[InstanceConfig]
+  def get(request: gapiDotClientDotSpannerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[InstanceConfig]
   /** Lists the supported instance configurations for a given project. */
-  def list(request: gapiDotClientDotSpannerLib.Anon_ParentAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListInstanceConfigsResponse]
+  def list(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListInstanceConfigsResponse]
 }
 

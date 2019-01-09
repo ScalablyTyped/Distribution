@@ -19,7 +19,7 @@ trait Node extends js.Object {
   /** span of context.src parsed into this node */
   var range: Range | scala.Null
   val rawValue: java.lang.String | scala.Null
-  val tag: scala.Null | yamlLib.Anon_Verbatim | yamlLib.Anon_Suffix
+  val tag: scala.Null | yamlLib.Anon_Verbatim | yamlLib.Anon_Handle
   /** specific node type */
   var `type`: java.lang.String
   /** if non-null, overrides source value */

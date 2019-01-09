@@ -12,7 +12,7 @@ trait SessionsResource extends js.Object {
     * Commit can begin a new transaction as a
     * side-effect.
     */
-  def beginTransaction(request: gapiDotClientDotSpannerLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Transaction]
+  def beginTransaction(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Transaction]
   /**
     * Commits a transaction. The request includes the mutations to be
     * applied to rows in the database.
@@ -23,7 +23,7 @@ trait SessionsResource extends js.Object {
     * reasons. If `Commit` returns `ABORTED`, the caller should re-attempt
     * the transaction from the beginning, re-using the same session.
     */
-  def commit(request: gapiDotClientDotSpannerLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[CommitResponse]
+  def commit(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[CommitResponse]
   /**
     * Creates a new session. A session can be used to perform
     * transactions that read and/or modify data in a Cloud Spanner database.
@@ -45,9 +45,9 @@ trait SessionsResource extends js.Object {
     * Idle sessions can be kept alive by sending a trivial SQL query
     * periodically, e.g., `"SELECT 1"`.
     */
-  def create(request: gapiDotClientDotSpannerLib.Anon_Database): gapiDotClientLib.gapiNs.clientNs.Request[Session]
+  def create(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabase): gapiDotClientLib.gapiNs.clientNs.Request[Session]
   /** Ends a session, releasing server resources associated with it. */
-  def delete(request: gapiDotClientDotSpannerLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotSpannerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Executes an SQL query, returning all rows in a single reply. This
     * method cannot be used to return a result set larger than 10 MiB;
@@ -61,7 +61,7 @@ trait SessionsResource extends js.Object {
     * Larger result sets can be fetched in streaming fashion by calling
     * ExecuteStreamingSql instead.
     */
-  def executeSql(request: gapiDotClientDotSpannerLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[ResultSet]
+  def executeSql(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[ResultSet]
   /**
     * Like ExecuteSql, except returns the result
     * set as a stream. Unlike ExecuteSql, there
@@ -69,15 +69,15 @@ trait SessionsResource extends js.Object {
     * individual row in the result set can exceed 100 MiB, and no
     * column value can exceed 10 MiB.
     */
-  def executeStreamingSql(request: gapiDotClientDotSpannerLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[PartialResultSet]
+  def executeStreamingSql(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[PartialResultSet]
   /**
     * Gets a session. Returns `NOT_FOUND` if the session does not exist.
     * This is mainly useful for determining whether a session is still
     * alive.
     */
-  def get(request: gapiDotClientDotSpannerLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Session]
+  def get(request: gapiDotClientDotSpannerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Session]
   /** Lists all sessions in a given database. */
-  def list(request: gapiDotClientDotSpannerLib.Anon_DatabaseAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListSessionsResponse]
+  def list(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabaseFields): gapiDotClientLib.gapiNs.clientNs.Request[ListSessionsResponse]
   /**
     * Reads rows from the database using key lookups and scans, as a
     * simple key/value style alternative to
@@ -93,7 +93,7 @@ trait SessionsResource extends js.Object {
     * Larger result sets can be yielded in streaming fashion by calling
     * StreamingRead instead.
     */
-  def read(request: gapiDotClientDotSpannerLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[ResultSet]
+  def read(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[ResultSet]
   /**
     * Rolls back a transaction, releasing any locks it holds. It is a good
     * idea to call this for any transaction that includes one or more
@@ -104,7 +104,7 @@ trait SessionsResource extends js.Object {
     * transaction was already aborted, or the transaction is not
     * found. `Rollback` never returns `ABORTED`.
     */
-  def rollback(request: gapiDotClientDotSpannerLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def rollback(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Like Read, except returns the result set as a
     * stream. Unlike Read, there is no limit on the
@@ -112,6 +112,6 @@ trait SessionsResource extends js.Object {
     * the result set can exceed 100 MiB, and no column value can exceed
     * 10 MiB.
     */
-  def streamingRead(request: gapiDotClientDotSpannerLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[PartialResultSet]
+  def streamingRead(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[PartialResultSet]
 }
 

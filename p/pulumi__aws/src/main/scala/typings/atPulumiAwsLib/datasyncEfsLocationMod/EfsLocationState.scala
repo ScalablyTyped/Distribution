@@ -14,7 +14,7 @@ trait EfsLocationState extends js.Object {
     * Configuration block containing EC2 configurations for connecting to the EFS File System.
     */
   val ec2Config: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SubnetArnSecurityGroupArns]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SecurityGroupArnsSubnetArn]
   ] = js.undefined
   /**
     * Amazon Resource Name (ARN) of EFS File System.

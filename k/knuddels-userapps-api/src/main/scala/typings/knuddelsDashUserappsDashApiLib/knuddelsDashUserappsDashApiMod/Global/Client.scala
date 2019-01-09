@@ -31,7 +31,7 @@ object Client extends js.Object {
   		 */
   def addEventListener(
     `type`: java.lang.String,
-    callback: js.Function1[/* event */ knuddelsDashUserappsDashApiLib.Anon_Type, scala.Unit]
+    callback: js.Function1[/* event */ knuddelsDashUserappsDashApiLib.Anon_Data, scala.Unit]
   ): scala.Unit = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_close
@@ -95,7 +95,7 @@ object Client extends js.Object {
   def removeEventListener(`type`: java.lang.String): scala.Unit = js.native
   def removeEventListener(
     `type`: java.lang.String,
-    callback: js.Function1[/* event */ knuddelsDashUserappsDashApiLib.Anon_Type, scala.Unit]
+    callback: js.Function1[/* event */ knuddelsDashUserappsDashApiLib.Anon_Data, scala.Unit]
   ): scala.Unit = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_sendEvent

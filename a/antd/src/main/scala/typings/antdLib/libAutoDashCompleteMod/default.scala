@@ -14,6 +14,6 @@ class default () extends AutoComplete
 object default extends js.Object {
   var OptGroup: reactLib.reactMod.ReactNs.ClassicComponentClass[antdLib.libSelectMod.OptGroupProps] = js.native
   var Option: reactLib.reactMod.ReactNs.ClassicComponentClass[antdLib.libSelectMod.OptionProps] = js.native
-  var defaultProps: antdLib.Anon_ShowSearch = js.native
+  var defaultProps: antdLib.Anon_ChoiceTransitionName = js.native
 }
 

@@ -19,7 +19,7 @@ trait Anon_Address
       (/* parser */ scala.Boolean) | (/* parser */ urlDashParseLib.urlDashParseMod.URLParseNs.QueryParser), 
       urlDashParseLib.urlDashParseMod.URLParse
     ] {
-  var qs: Anon_Stringify = js.native
+  var qs: Anon_Parse = js.native
   def apply(address: java.lang.String): urlDashParseLib.urlDashParseMod.URLParse = js.native
   def apply(address: java.lang.String, location: java.lang.String): urlDashParseLib.urlDashParseMod.URLParse = js.native
   def apply(address: java.lang.String, location: java.lang.String, parser: scala.Boolean): urlDashParseLib.urlDashParseMod.URLParse = js.native
@@ -37,7 +37,7 @@ trait Anon_Address
   ): urlDashParseLib.urlDashParseMod.URLParse = js.native
   def apply(address: java.lang.String, parser: scala.Boolean): urlDashParseLib.urlDashParseMod.URLParse = js.native
   def apply(address: java.lang.String, parser: urlDashParseLib.urlDashParseMod.URLParseNs.QueryParser): urlDashParseLib.urlDashParseMod.URLParse = js.native
-  def extractProtocol(url: java.lang.String): Anon_Slashes = js.native
+  def extractProtocol(url: java.lang.String): Anon_Protocol = js.native
   def location(url: java.lang.String): js.Object = js.native
 }
 

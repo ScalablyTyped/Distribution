@@ -36,7 +36,7 @@ trait IGenericBookmark extends js.Object {
   def getFieldValues(
     qField: java.lang.String,
     qGetExcludedValues: scala.Boolean,
-    qDataPage: qlikDashEngineapiLib.Anon_QStartIndex
+    qDataPage: qlikDashEngineapiLib.Anon_QEndIndex
   ): js.Promise[qlikDashEngineapiLib.Anon_QFieldValues]
   /**
     * Returns:

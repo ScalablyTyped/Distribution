@@ -46,7 +46,7 @@ trait IChartOptions extends js.Object {
   var tooltipFormatter: js.UndefOr[
     js.Function2[
       /* timestamp */ scala.Double, 
-      /* data */ js.Array[smoothieLib.Anon_Value], 
+      /* data */ js.Array[smoothieLib.Anon_Index], 
       java.lang.String
     ]
   ] = js.undefined

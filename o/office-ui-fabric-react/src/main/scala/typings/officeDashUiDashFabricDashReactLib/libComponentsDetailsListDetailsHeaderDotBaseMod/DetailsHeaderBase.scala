@@ -109,6 +109,6 @@ class DetailsHeaderBase protected ()
 @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsHeader.base", "DetailsHeaderBase")
 @js.native
 object DetailsHeaderBase extends js.Object {
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_SelectAllVisibility = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_CollapseAllVisibility = js.native
 }
 

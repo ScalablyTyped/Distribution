@@ -10,7 +10,7 @@ trait StyleDefinition extends js.Object {
     * Defines the available classes in this style. The "base" property will be applied to every
     * notification with this style.
     */
-  var classes: js.UndefOr[notifyLib.Anon_ClassName] = js.undefined
+  var classes: js.UndefOr[notifyLib.Anon_Base] = js.undefined
   /**
     * All notifications will have this CSS applied to it.
     */

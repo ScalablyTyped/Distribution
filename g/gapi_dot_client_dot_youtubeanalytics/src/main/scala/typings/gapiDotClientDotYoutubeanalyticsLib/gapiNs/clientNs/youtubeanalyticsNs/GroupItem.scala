@@ -10,6 +10,6 @@ trait GroupItem extends js.Object {
   var groupId: js.UndefOr[java.lang.String] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var kind: js.UndefOr[java.lang.String] = js.undefined
-  var resource: js.UndefOr[gapiDotClientDotYoutubeanalyticsLib.Anon_Kind] = js.undefined
+  var resource: js.UndefOr[gapiDotClientDotYoutubeanalyticsLib.Anon_Id] = js.undefined
 }
 

@@ -54,7 +54,7 @@ class EditorState[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
     * [`init`](#state.StateField.init) method, passing in the new
     * configuration object..
     */
-  def reconfigure(config: prosemirrorDashStateLib.Anon_PluginsSchema[S]): EditorState[S] = js.native
+  def reconfigure(config: prosemirrorDashStateLib.Anon_Plugins[S]): EditorState[S] = js.native
   /**
     * Serialize this state to JSON. If you want to serialize the state
     * of plugins, pass an object mapping property names to use in the
@@ -72,7 +72,7 @@ object EditorState extends js.Object {
   /**
     * Create a new state.
     */
-  def create[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](config: prosemirrorDashStateLib.Anon_PluginsDoc[S]): prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S] = js.native
+  def create[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](config: prosemirrorDashStateLib.Anon_Doc[S]): prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S] = js.native
   /**
     * Deserialize a JSON representation of a state. `config` should
     * have at least a `schema` field, and should contain array of
@@ -81,11 +81,11 @@ object EditorState extends js.Object {
     * instances with the property names they use in the JSON object.
     */
   def fromJSON[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
-    config: prosemirrorDashStateLib.Anon_Plugins[S],
+    config: prosemirrorDashStateLib.Anon_PluginsSchema[S],
     json: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S] = js.native
   def fromJSON[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
-    config: prosemirrorDashStateLib.Anon_Plugins[S],
+    config: prosemirrorDashStateLib.Anon_PluginsSchema[S],
     json: org.scalablytyped.runtime.StringDictionary[js.Any],
     pluginFields: org.scalablytyped.runtime.StringDictionary[prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[S]]
   ): prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S] = js.native

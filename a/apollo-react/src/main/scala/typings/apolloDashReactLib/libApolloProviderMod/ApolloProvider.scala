@@ -12,6 +12,6 @@ trait ApolloProvider
     /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for TCacheShape */ _
   ] = js.native
   var store: reduxLib.reduxMod.Store[_, reduxLib.reduxMod.AnyAction] = js.native
-  def getChildContext(): apolloDashReactLib.Anon_ClientStoreDefault = js.native
+  def getChildContext(): apolloDashReactLib.Anon_ClientStore = js.native
 }
 

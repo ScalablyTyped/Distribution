@@ -97,7 +97,7 @@ class Image ()
   def load(): Image = js.native
   def load(option: java.lang.String): Image = js.native
   def load(option: js.Array[java.lang.String]): Image = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Image = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Image = js.native
   def load(option: officeDashJsDashPreviewLib.OneNoteNs.InterfacesNs.ImageLoadOptions): Image = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Image): scala.Unit = js.native

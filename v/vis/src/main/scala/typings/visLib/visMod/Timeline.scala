@@ -121,7 +121,7 @@ class Timeline protected () extends js.Object {
     * This is a convenience method for individually calling both setItems(items) and setGroups(groups).
     * Both items and groups can be an Array with Objects, a DataSet (offering 2 way data binding), or a DataView (offering 1 way data binding).
     */
-  def setData(data: visLib.Anon_Items): scala.Unit = js.native
+  def setData(data: visLib.Anon_Groups): scala.Unit = js.native
   /**
     * Set a data set with groups for the Timeline.
     */

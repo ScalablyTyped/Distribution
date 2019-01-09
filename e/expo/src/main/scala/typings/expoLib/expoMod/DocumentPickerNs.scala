@@ -14,6 +14,6 @@ object DocumentPickerNs extends js.Object {
   
   def getDocumentAsync(): js.Promise[Response] = js.native
   def getDocumentAsync(options: Options): js.Promise[Response] = js.native
-  type Response = expoLib.Anon_TypeSuccessUri | expoLib.Anon_TypeCancel
+  type Response = expoLib.Anon_Name | expoLib.Anon_Cancel
 }
 

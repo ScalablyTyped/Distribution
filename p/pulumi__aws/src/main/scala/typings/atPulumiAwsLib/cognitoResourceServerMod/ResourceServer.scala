@@ -33,7 +33,7 @@ class ResourceServer protected ()
   /**
     * A list of Authorization Scope.
     */
-  val scopes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ScopeDescriptionScopeName]]] = js.native
+  val scopes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ScopeDescription]]] = js.native
   val userPoolId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
 }
 

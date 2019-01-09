@@ -6,8 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_N extends js.Object {
-  var n: scala.Double
-  var nModified: scala.Double
-  var ok: scala.Double
+  //The total count of documents deleted.
+  var n: js.UndefOr[scala.Double] = js.undefined
+  //Is 1 if the command executed correctly.
+  var ok: js.UndefOr[scala.Double] = js.undefined
 }
 

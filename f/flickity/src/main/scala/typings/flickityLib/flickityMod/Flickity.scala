@@ -133,7 +133,7 @@ trait Flickity extends js.Object {
     callback: js.Function3[
       /* event */ js.UndefOr[stdLib.Event], 
       /* pointer */ js.UndefOr[stdLib.Element | stdLib.Touch], 
-      /* moveVector */ js.UndefOr[flickityLib.Anon_Y], 
+      /* moveVector */ js.UndefOr[flickityLib.Anon_X], 
       _
     ]
   ): scala.Unit = js.native

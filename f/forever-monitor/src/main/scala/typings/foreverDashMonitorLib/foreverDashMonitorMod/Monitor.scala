@@ -27,8 +27,8 @@ class Monitor protected ()
     * @param command - Command string to parse
     * @param args - Additional default arguments
     */
-  def parseCommand(command: java.lang.String): foreverDashMonitorLib.foreverDashMonitorLibNumbers.`false` | foreverDashMonitorLib.Anon_Command = js.native
-  def parseCommand(command: java.lang.String, args: js.Array[java.lang.String]): foreverDashMonitorLib.foreverDashMonitorLibNumbers.`false` | foreverDashMonitorLib.Anon_Command = js.native
+  def parseCommand(command: java.lang.String): foreverDashMonitorLib.foreverDashMonitorLibNumbers.`false` | foreverDashMonitorLib.Anon_ArgsCommand = js.native
+  def parseCommand(command: java.lang.String, args: js.Array[java.lang.String]): foreverDashMonitorLib.foreverDashMonitorLibNumbers.`false` | foreverDashMonitorLib.Anon_ArgsCommand = js.native
   /**
     * @description Restarts the target script associated with this instance.
     */

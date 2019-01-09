@@ -16,14 +16,14 @@ trait LinkProps extends js.Object {
     js.Function2[
       /* href */ Href, 
       /* options */ LocationOptions, 
-      reduxDashLittleDashRouterLib.Anon_Type
+      reduxDashLittleDashRouterLib.Anon_Payload
     ]
   ] = js.undefined
   var replace: js.UndefOr[
     js.Function2[
       /* href */ Href, 
       /* options */ LocationOptions, 
-      reduxDashLittleDashRouterLib.Anon_Type
+      reduxDashLittleDashRouterLib.Anon_Payload
     ]
   ] = js.undefined
   var replaceState: js.UndefOr[scala.Boolean] = js.undefined

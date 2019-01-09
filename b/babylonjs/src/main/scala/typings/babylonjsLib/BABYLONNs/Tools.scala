@@ -340,20 +340,20 @@ object Tools extends js.Object {
     * @param stride defines the stride size to use (distance between two positions in the positions array)
     * @return minimum and maximum values
     */
-  def ExtractMinAndMax(positions: babylonjsLib.BABYLONNs.FloatArray, start: scala.Double, count: scala.Double): babylonjsLib.Anon_Minimum = js.native
+  def ExtractMinAndMax(positions: babylonjsLib.BABYLONNs.FloatArray, start: scala.Double, count: scala.Double): babylonjsLib.Anon_Maximum = js.native
   def ExtractMinAndMax(
     positions: babylonjsLib.BABYLONNs.FloatArray,
     start: scala.Double,
     count: scala.Double,
     bias: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Vector2]
-  ): babylonjsLib.Anon_Minimum = js.native
+  ): babylonjsLib.Anon_Maximum = js.native
   def ExtractMinAndMax(
     positions: babylonjsLib.BABYLONNs.FloatArray,
     start: scala.Double,
     count: scala.Double,
     bias: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Vector2],
     stride: scala.Double
-  ): babylonjsLib.Anon_Minimum = js.native
+  ): babylonjsLib.Anon_Maximum = js.native
   /**
     * Extracts minimum and maximum values from a list of indexed positions
     * @param positions defines the positions to use
@@ -368,14 +368,14 @@ object Tools extends js.Object {
     indices: babylonjsLib.BABYLONNs.IndicesArray,
     indexStart: scala.Double,
     indexCount: scala.Double
-  ): babylonjsLib.Anon_Minimum = js.native
+  ): babylonjsLib.Anon_Maximum = js.native
   def ExtractMinAndMaxIndexed(
     positions: babylonjsLib.BABYLONNs.FloatArray,
     indices: babylonjsLib.BABYLONNs.IndicesArray,
     indexStart: scala.Double,
     indexCount: scala.Double,
     bias: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Vector2]
-  ): babylonjsLib.Anon_Minimum = js.native
+  ): babylonjsLib.Anon_Maximum = js.native
   /**
     * Read the content of a byte array at a specified coordinates (taking in account wrapping)
     * @param u defines the coordinate on X axis
@@ -724,7 +724,7 @@ object Tools extends js.Object {
     * Function used to register events at window level
     * @param events defines the events to register
     */
-  def RegisterTopRootEvents(events: js.Array[babylonjsLib.Anon_Handler]): scala.Unit = js.native
+  def RegisterTopRootEvents(events: js.Array[babylonjsLib.Anon_E]): scala.Unit = js.native
   /**
     * Ask the browser to promote the current element to fullscreen rendering mode
     * @param element defines the DOM element to promote
@@ -789,7 +789,7 @@ object Tools extends js.Object {
     * Function used to unregister events from window level
     * @param events defines the events to unregister
     */
-  def UnregisterTopRootEvents(events: js.Array[babylonjsLib.Anon_Handler]): scala.Unit = js.native
+  def UnregisterTopRootEvents(events: js.Array[babylonjsLib.Anon_E]): scala.Unit = js.native
   /**
     * Validates if xhr data is correct
     * @param xhr defines the request to validate

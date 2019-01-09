@@ -10,6 +10,6 @@ trait InsertWriteOpResult extends js.Object {
   var insertedCount: scala.Double
   var insertedIds: org.scalablytyped.runtime.NumberDictionary[bsonLib.bsonMod.ObjectID]
   var ops: js.Array[_]
-  var result: mongodbLib.Anon_NOkNumber
+  var result: mongodbLib.Anon_NOk
 }
 

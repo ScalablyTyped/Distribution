@@ -38,7 +38,7 @@ class Broker protected ()
   /**
     * Configuration of the broker. See below.
     */
-  val configuration: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_Revision] = js.native
+  val configuration: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_IdRevision] = js.native
   /**
     * The deployment mode of the broker. Supported: `SINGLE_INSTANCE` and `ACTIVE_STANDBY_MULTI_AZ`. Defaults to `SINGLE_INSTANCE`.
     */
@@ -66,11 +66,11 @@ class Broker protected ()
     * * `mqtt+ssl://broker-id.mq.us-west-2.amazonaws.com:8883`
     * * `wss://broker-id.mq.us-west-2.amazonaws.com:61619`
     */
-  val instances: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Endpoints]] = js.native
+  val instances: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ConsoleUrl]] = js.native
   /**
     * Logging configuration of the broker. See below.
     */
-  val logs: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_General]] = js.native
+  val logs: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Audit]] = js.native
   /**
     * Maintenance window start time. See below.
     */
@@ -90,7 +90,7 @@ class Broker protected ()
   /**
     * The list of all ActiveMQ usernames for the specified broker. See below.
     */
-  val users: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_UsernameConsoleAccessGroupsPassword]] = js.native
+  val users: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ConsoleAccess]] = js.native
 }
 
 @JSImport("@pulumi/aws/mq/broker", "Broker")

@@ -13,7 +13,7 @@ object reactLibStrings {
   sealed trait A extends js.Object
   
   @js.native
-  sealed trait Anon_TypeTValidator extends js.Object
+  sealed trait Anon_TypeAny extends js.Object
   
   @js.native
   sealed trait Empty extends js.Object
@@ -281,7 +281,7 @@ object reactLibStrings {
   
   def `1`: `1` = "1".asInstanceOf[`1`]
   def A: A = "A".asInstanceOf[A]
-  def Anon_TypeTValidator: Anon_TypeTValidator = "Anon_TypeTValidator".asInstanceOf[Anon_TypeTValidator]
+  def Anon_TypeAny: Anon_TypeAny = "Anon_TypeAny".asInstanceOf[Anon_TypeAny]
   def Empty: Empty = "".asInstanceOf[Empty]
   def I: I = "I".asInstanceOf[I]
   def ReactPropTypes: ReactPropTypes = "ReactPropTypes".asInstanceOf[ReactPropTypes]

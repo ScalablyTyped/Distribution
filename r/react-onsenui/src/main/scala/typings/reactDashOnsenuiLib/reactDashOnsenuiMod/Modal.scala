@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Modal")
 @js.native
 class Modal ()
-  extends Component[reactDashOnsenuiLib.Anon_OnPostShowOnPreHideOnPostHide, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_AnimationAnimationOptionsFade, js.Any]
 

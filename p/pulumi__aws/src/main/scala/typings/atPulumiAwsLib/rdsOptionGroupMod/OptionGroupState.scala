@@ -36,7 +36,7 @@ trait OptionGroupState extends js.Object {
   val options: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_VpcSecurityGroupMembershipsVersion]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DbSecurityGroupMembershipsOptionName]
       ]
     ]
   ] = js.undefined

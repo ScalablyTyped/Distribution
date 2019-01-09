@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class AttributionControl ()
   extends mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.AttributionControl {
-  def this(options: mapboxDashGlLib.Anon_CustomAttribution) = this()
+  def this(options: mapboxDashGlLib.Anon_Compact) = this()
 }
 

@@ -13,7 +13,7 @@ object mochaDashEachModMembers extends js.Object {
     * a series of mocha tests, defined using the `it` notation common to
     * Mocha.
     */
-  def apply(parameters: js.Array[_]): mochaDashEachLib.Anon_It = js.native
-  def apply(parameters: js.Array[_], defaultIt: mochaLib.MochaNs.ITestDefinition): mochaDashEachLib.Anon_It = js.native
+  def apply(parameters: js.Array[_]): mochaDashEachLib.Anon_Args = js.native
+  def apply(parameters: js.Array[_], defaultIt: mochaLib.MochaNs.ITestDefinition): mochaDashEachLib.Anon_Args = js.native
 }
 

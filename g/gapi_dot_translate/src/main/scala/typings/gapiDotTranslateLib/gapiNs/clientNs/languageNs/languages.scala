@@ -9,6 +9,6 @@ trait languages extends js.Object {
   /**
   		 * List the source/target languages supported by the API
   		 */
-  def list(`object`: gapiDotTranslateLib.Anon_Target): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotTranslateLib.GoogleApiTranslateLanguageListResponse]
+  def list(`object`: gapiDotTranslateLib.Anon_FieldsTarget): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotTranslateLib.GoogleApiTranslateLanguageListResponse]
 }
 

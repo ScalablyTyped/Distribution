@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(jquery.JQuery._TypeEventHandlers<TDelegateTarget, TData, TCurrentTarget, TTarget>) */ trait TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget]
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ TType in keyof jquery.JQuery.TypeToTriggeredEventMap<TDelegateTarget, TData, TCurrentTarget, TTarget> ]:? jquery.JQuery.TypeEventHandler<TDelegateTarget, TData, TCurrentTarget, TTarget, TType> | false | object} */ trait TypeEventHandlers[TDelegateTarget, TData, TCurrentTarget, TTarget]
   extends // No idea why it's necessary to include `object` in the union but otherwise TypeScript complains that
 // derived types of Event are not assignable to Event.
 /* type */ org.scalablytyped.runtime.StringDictionary[

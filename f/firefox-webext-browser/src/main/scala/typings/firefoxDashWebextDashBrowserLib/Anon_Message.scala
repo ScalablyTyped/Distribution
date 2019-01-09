@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Message extends js.Object {
-  /** Details about the error which occurred. */
-  var message: js.UndefOr[java.lang.String] = js.undefined
+  /** Description of the error that has taken place. */
+  var message: java.lang.String
 }
 

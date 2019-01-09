@@ -59,7 +59,7 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def createSchema(schema: java.lang.String, options: sequelizeLib.Anon_Logging): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def createSchema(schema: java.lang.String, options: sequelizeLib.Anon_LoggingBoolean): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   /**
     * Returns the database version
     */
@@ -140,7 +140,7 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def dropAllSchemas(options: sequelizeLib.Anon_Logging): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def dropAllSchemas(options: sequelizeLib.Anon_LoggingBoolean): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   /**
     * Drop a single schema
     *
@@ -152,7 +152,7 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def dropSchema(schema: java.lang.String, options: sequelizeLib.Anon_Logging): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def dropSchema(schema: java.lang.String, options: sequelizeLib.Anon_LoggingBoolean): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   /**
     * Escape value.
     *
@@ -224,8 +224,8 @@ trait Sequelize
     */
   def query(sql: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   def query(sql: java.lang.String, options: QueryOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  def query(sql: sequelizeLib.Anon_ValuesQuery): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  def query(sql: sequelizeLib.Anon_ValuesQuery, options: QueryOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def query(sql: sequelizeLib.Anon_Query): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def query(sql: sequelizeLib.Anon_Query, options: QueryOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   /**
     * Get the fn for random based on the dialect
     */
@@ -250,7 +250,7 @@ trait Sequelize
     * @param options Options supplied
     * @param options.logging A function that logs sql queries, or false for no logging
     */
-  def showAllSchemas(options: sequelizeLib.Anon_Logging): bluebirdLib.bluebirdMod.namespaced[_] = js.native
+  def showAllSchemas(options: sequelizeLib.Anon_LoggingBoolean): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   /**
     * Sync all defined models to the DB.
     *

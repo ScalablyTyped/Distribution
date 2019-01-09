@@ -24,7 +24,7 @@ class PagingControl protected () extends js.Object {
 @JSGlobal("SP.UI.PagingControl")
 @js.native
 object PagingControl extends js.Object {
-  var ButtonIDs: sharepointLib.Anon_Prev = js.native
-  var ButtonState: sharepointLib.Anon_Hidden = js.native
+  var ButtonIDs: sharepointLib.Anon_Next = js.native
+  var ButtonState: sharepointLib.Anon_Disabled = js.native
 }
 

@@ -24,7 +24,7 @@ trait ZeptoStatic extends js.Object {
   /**
   	* The following boolean flags are set to true if they apply, if not they're either set to 'false' or 'undefined'.  We recommend accessing them with `!!` prefixed to coerce to a boolean.
   	**/
-  var browser: Anon_Silk = js.native
+  var browser: Anon_Chrome = js.native
   /**
   	* Zepto.fn is an object that holds all of the methods that are available on Zepto collections, such as addClass(), attr(), and other. Adding a function to this object makes that method available on every Zepto collection.
   	**/
@@ -42,7 +42,7 @@ trait ZeptoStatic extends js.Object {
   /**
   	* The following boolean flags are set to true if they apply, if not they're either set to 'false' or 'undefined'.  We recommend accessing them with `!!` prefixed to coerce to a boolean.
   	**/
-  var os: Anon_Ios = js.native
+  var os: Anon_Android = js.native
   /**
   	* @see ZeptoStatic();
   	* @param collection

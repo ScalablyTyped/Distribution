@@ -30,7 +30,7 @@ class ODBCStatement () extends js.Object {
   def execute(
     cb: js.Function3[/* err */ stdLib.Error, /* result */ js.Array[_], /* outparams */ js.Any, scala.Unit]
   ): scala.Unit = js.native
-  def execute(params: js.Array[_]): js.Promise[ibmUnderscoreDbLib.Anon_Result] = js.native
+  def execute(params: js.Array[_]): js.Promise[ibmUnderscoreDbLib.Anon_Outparams] = js.native
   def execute(
     params: js.Array[_],
     cb: js.Function3[/* err */ stdLib.Error, /* result */ js.Array[_], /* outparams */ js.Any, scala.Unit]

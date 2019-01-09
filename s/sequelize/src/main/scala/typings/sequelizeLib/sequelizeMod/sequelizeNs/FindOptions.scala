@@ -19,7 +19,7 @@ trait FindOptions[T]
     * `Sequelize.literal`, `Sequelize.fn` and so on), and the second is the name you want the attribute to
     * have in the returned instance
     */
-  var attributes: js.UndefOr[FindOptionsAttributesArray | sequelizeLib.Anon_Include] = js.undefined
+  var attributes: js.UndefOr[FindOptionsAttributesArray | sequelizeLib.Anon_Exclude] = js.undefined
   /**
     * Apply DISTINCT(col) for FindAndCount(all)
     */

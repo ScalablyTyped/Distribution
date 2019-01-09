@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MirrorTexture protected ()
   extends babylonjsLib.BABYLONNs.MirrorTexture {
-  def this(name: java.lang.String, size: babylonjsLib.Anon_Height, scene: babylonjsLib.BABYLONNs.Scene) = this()
+  def this(name: java.lang.String, size: babylonjsLib.Anon_HeightWidth, scene: babylonjsLib.BABYLONNs.Scene) = this()
   def this(name: java.lang.String, size: babylonjsLib.Anon_Ratio, scene: babylonjsLib.BABYLONNs.Scene) = this()
   /**
     * Instantiates a Mirror Texture.
@@ -34,16 +34,16 @@ class MirrorTexture protected ()
     * @param generateDepthBuffer
     */
   def this(name: java.lang.String, size: scala.Double, scene: babylonjsLib.BABYLONNs.Scene) = this()
-  def this(name: java.lang.String, size: babylonjsLib.Anon_Height, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean) = this()
+  def this(name: java.lang.String, size: babylonjsLib.Anon_HeightWidth, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean) = this()
   def this(name: java.lang.String, size: babylonjsLib.Anon_Ratio, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean) = this()
   def this(name: java.lang.String, size: scala.Double, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean) = this()
-  def this(name: java.lang.String, size: babylonjsLib.Anon_Height, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean, `type`: scala.Double) = this()
+  def this(name: java.lang.String, size: babylonjsLib.Anon_HeightWidth, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean, `type`: scala.Double) = this()
   def this(name: java.lang.String, size: babylonjsLib.Anon_Ratio, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean, `type`: scala.Double) = this()
   def this(name: java.lang.String, size: scala.Double, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean, `type`: scala.Double) = this()
-  def this(name: java.lang.String, size: babylonjsLib.Anon_Height, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double) = this()
+  def this(name: java.lang.String, size: babylonjsLib.Anon_HeightWidth, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double) = this()
   def this(name: java.lang.String, size: babylonjsLib.Anon_Ratio, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double) = this()
   def this(name: java.lang.String, size: scala.Double, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double) = this()
-  def this(name: java.lang.String, size: babylonjsLib.Anon_Height, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double, generateDepthBuffer: scala.Boolean) = this()
+  def this(name: java.lang.String, size: babylonjsLib.Anon_HeightWidth, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double, generateDepthBuffer: scala.Boolean) = this()
   def this(name: java.lang.String, size: babylonjsLib.Anon_Ratio, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double, generateDepthBuffer: scala.Boolean) = this()
   def this(name: java.lang.String, size: scala.Double, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean, `type`: scala.Double, samplingMode: scala.Double, generateDepthBuffer: scala.Boolean) = this()
 }

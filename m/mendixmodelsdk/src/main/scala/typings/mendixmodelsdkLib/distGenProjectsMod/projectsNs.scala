@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("mendixmodelsdk/dist/gen/projects", "projects")
 @js.native
 object projectsNs extends js.Object {
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IDocument because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IDocument because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined name, asLoaded, load, load, load, load */ @js.native
   abstract class Document protected () extends ModuleDocument {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IFolderBase) = this()
     var documentation: java.lang.String = js.native
@@ -21,21 +21,21 @@ object projectsNs extends js.Object {
   /**
     * See: {@link https://world.mendix.com/display/howto50/Add+documents+to+a+module relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolder because Would inherit conflicting mutable fields List(documents, folders, id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolder because var conflicts: documents, folders, id, isLoaded, model, structureTypeName, unit. Inlined name */ @js.native
   class Folder protected () extends FolderBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IFolderBase) = this()
     var name: java.lang.String = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsFolderBase, containerAsProject, folders, documents */ @js.native
   abstract class FolderBase protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.StructuralUnit {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IFolderBase) = this()
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IProject) = this()
-    val containerAsFolderBase: FolderBase = js.native
-    val containerAsProject: Project = js.native
+    val containerAsFolderBase: FolderBase | IFolderBase = js.native
+    val containerAsProject: IProject | Project = js.native
     val documents: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[IDocument] = js.native
     val folders: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[IFolder] = js.native
     @JSName("model")
@@ -102,11 +102,6 @@ object projectsNs extends js.Object {
     val containerAsModule: IModule = js.native
     @JSName("model")
     val model_IModuleDocument: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
-    def asLoaded(): ModuleDocument = js.native
-    def load(): js.Promise[ModuleDocument] = js.native
-    def load(callback: js.Function1[/* element */ ModuleDocument, scala.Unit]): scala.Unit = js.native
-    def load(callback: js.Function1[/* element */ ModuleDocument, scala.Unit], forceRefresh: scala.Boolean): scala.Unit = js.native
-    def load(forceRefresh: scala.Boolean): js.Promise[ModuleDocument] = js.native
   }
   
   /**
@@ -131,11 +126,6 @@ object projectsNs extends js.Object {
     val containerAsProject: IProject = js.native
     @JSName("model")
     val model_IProjectConversion: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
-    def asLoaded(): ProjectConversion = js.native
-    def load(): js.Promise[ProjectConversion] = js.native
-    def load(callback: js.Function1[/* element */ ProjectConversion, scala.Unit]): scala.Unit = js.native
-    def load(callback: js.Function1[/* element */ ProjectConversion, scala.Unit], forceRefresh: scala.Boolean): scala.Unit = js.native
-    def load(forceRefresh: scala.Boolean): js.Promise[ProjectConversion] = js.native
   }
   
   /**
@@ -147,18 +137,13 @@ object projectsNs extends js.Object {
     val containerAsProject: IProject = js.native
     @JSName("model")
     val model_IProjectDocument: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
-    def asLoaded(): ProjectDocument = js.native
-    def load(): js.Promise[ProjectDocument] = js.native
-    def load(callback: js.Function1[/* element */ ProjectDocument, scala.Unit]): scala.Unit = js.native
-    def load(callback: js.Function1[/* element */ ProjectDocument, scala.Unit], forceRefresh: scala.Boolean): scala.Unit = js.native
-    def load(forceRefresh: scala.Boolean): js.Promise[ProjectDocument] = js.native
   }
   
   /**
     * See: {@link https://docs.mendix.com/refguide7/modules relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModule because Would inherit conflicting mutable fields List(documents, folders, id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModule because var conflicts: documents, folders, id, isLoaded, model, structureTypeName, unit. Inlined sortIndex, name, domainModel, moduleSecurity, fromAppStore, appStoreGuid, appStoreVersionGuid, appStoreVersion */ @js.native
   class Module protected () extends FolderBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IProject) = this()
     var appStoreGuid: java.lang.String = js.native
@@ -177,14 +162,14 @@ object projectsNs extends js.Object {
     var sortIndex: scala.Double = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModuleDocument because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModuleDocument because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsFolderBase, containerAsModule, asLoaded, load, load, load, load */ @js.native
   abstract class ModuleDocument protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.ModelUnit {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IFolderBase) = this()
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IModule) = this()
-    val containerAsFolderBase: FolderBase = js.native
-    val containerAsModule: Module = js.native
+    val containerAsFolderBase: FolderBase | IFolderBase = js.native
+    val containerAsModule: IModule | Module = js.native
     @JSName("model")
     var model_ModuleDocument: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
   }
@@ -202,8 +187,8 @@ object projectsNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined projectDocuments, modules, projectConversion, isSystemProject */ @js.native
   class Project protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.StructuralUnit {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distSdkInternalUnitsMod.IStructuralUnit) = this()
@@ -215,12 +200,12 @@ object projectsNs extends js.Object {
     val projectDocuments: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[IProjectDocument] = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProjectConversion because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProjectConversion because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsProject, asLoaded, load, load, load, load */ @js.native
   class ProjectConversion protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.ModelUnit {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IProject) = this()
-    val containerAsProject: Project = js.native
+    val containerAsProject: IProject | Project = js.native
     val markers: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[OneTimeConversionMarker] = js.native
     @JSName("model")
     var model_ProjectConversion: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
@@ -229,12 +214,12 @@ object projectsNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProjectDocument because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProjectDocument because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsProject, asLoaded, load, load, load, load */ @js.native
   abstract class ProjectDocument protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.ModelUnit {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IProject) = this()
-    val containerAsProject: Project = js.native
+    val containerAsProject: IProject | Project = js.native
     @JSName("model")
     var model_ProjectDocument: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
   }

@@ -30,7 +30,7 @@ import scala.scalajs.js.annotation._
   * Initialization method.
   */
 class BaseNode () extends js.Object {
-  def this(hasCategoryNameTitleDescriptionProperties: behavior3Lib.Anon_NameDescription) = this()
+  def this(hasCategoryNameTitleDescriptionProperties: behavior3Lib.Anon_Category) = this()
   /**
     * Wrapper for close method.
     */

@@ -99,7 +99,7 @@ trait Chance extends Seeded {
   def geohash(opts: Options): java.lang.String = js.native
   def google_analytics(): java.lang.String = js.native
   def guid(): java.lang.String = js.native
-  def guid(options: chanceLib.Anon_Version): java.lang.String = js.native
+  def guid(options: chanceLib.Anon_4): java.lang.String = js.native
   def hammertime(): scala.Double = js.native
   def hash(): java.lang.String = js.native
   def hash(opts: Options): java.lang.String = js.native

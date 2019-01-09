@@ -12,7 +12,7 @@ trait Configuration extends js.Object {
   var enable_early_ims: js.UndefOr[scala.Boolean] = js.undefined
   var enable_media_stream_cache: js.UndefOr[scala.Boolean] = js.undefined
   var enable_rtcweb_breaker: js.UndefOr[scala.Boolean] = js.undefined
-  var events_listener: js.UndefOr[sipmlLib.Anon_Events] = js.undefined
+  var events_listener: js.UndefOr[sipmlLib.Anon_EEvents] = js.undefined
   var ice_servers: js.UndefOr[js.Array[js.Object]] = js.undefined
   var impi: js.UndefOr[java.lang.String] = js.undefined
   var impu: js.UndefOr[java.lang.String] = js.undefined
@@ -20,7 +20,7 @@ trait Configuration extends js.Object {
   var password: js.UndefOr[java.lang.String] = js.undefined
   var realm: js.UndefOr[java.lang.String] = js.undefined
   var sip_headers: js.UndefOr[js.Array[js.Object]] = js.undefined
-  var video_size: js.UndefOr[sipmlLib.Anon_MinWidth] = js.undefined
+  var video_size: js.UndefOr[sipmlLib.Anon_MaxHeight] = js.undefined
   var websocket_proxy_url: js.UndefOr[java.lang.String] = js.undefined
 }
 

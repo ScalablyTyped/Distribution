@@ -22,6 +22,6 @@ trait SampledProperty extends PositionProperty {
   def addSamplesPackedArray(packedSamples: js.Array[scala.Double]): scala.Unit = js.native
   def addSamplesPackedArray(packedSamples: js.Array[scala.Double], epoch: JulianDate): scala.Unit = js.native
   def setInterpolationOptions(): scala.Unit = js.native
-  def setInterpolationOptions(options: cesiumLib.Anon_InterpolationDegree): scala.Unit = js.native
+  def setInterpolationOptions(options: cesiumLib.Anon_InterpolationAlgorithm): scala.Unit = js.native
 }
 

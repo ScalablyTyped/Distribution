@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NavigationHelpButton protected ()
   extends cesiumLib.cesiumMod.CesiumNs.NavigationHelpButton {
-  def this(options: cesiumLib.Anon_Container) = this()
+  def this(options: cesiumLib.Anon_ContainerInstructionsInitiallyVisible) = this()
   /* CompleteClass */
   override var container: stdLib.Element = js.native
   /* CompleteClass */

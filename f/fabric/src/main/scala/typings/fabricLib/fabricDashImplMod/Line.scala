@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.ILineOptions because Would inherit conflicting mutable fields List(aCoords, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, centeredRotation, centeredScaling, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, evented, fill, fillRule, flipX, flipY, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockUniScaling, minScaleLimit, name, objectCaching, opacity, originX, originY, padding, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, shadow, skewX, skewY, stroke, strokeDashArray, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width))*/
-@JSImport("fabric/fabric-impl", "Line")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fabricLib.fabricDashImplMod.ILineOptions because var conflicts: aCoords, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, centeredRotation, centeredScaling, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, evented, fill, fillRule, flipX, flipY, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockUniScaling, minScaleLimit, name, objectCaching, opacity, originX, originY, padding, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, shadow, skewX, skewY, stroke, strokeDashArray, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width. Inlined x1, x2, y1, y2 */ @JSImport("fabric/fabric-impl", "Line")
 @js.native
 /**
 	 * Constructor
@@ -16,6 +16,22 @@ import scala.scalajs.js.annotation._
 class Line () extends Object {
   def this(points: js.Array[scala.Double]) = this()
   def this(points: js.Array[scala.Double], objObjects: IObjectOptions) = this()
+  /**
+  	 * x value or first line edge
+  	 */
+  var x1: scala.Double = js.native
+  /**
+  	 * x value or second line edge
+  	 */
+  var x2: scala.Double = js.native
+  /**
+  	 * y value or first line edge
+  	 */
+  var y1: scala.Double = js.native
+  /**
+  	 * y value or second line edge
+  	 */
+  var y2: scala.Double = js.native
   def initialize(): Line = js.native
   def initialize(points: js.Array[scala.Double]): Line = js.native
   def initialize(points: js.Array[scala.Double], options: ILineOptions): Line = js.native

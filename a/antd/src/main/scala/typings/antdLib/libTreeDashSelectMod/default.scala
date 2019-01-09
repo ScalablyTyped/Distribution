@@ -18,6 +18,6 @@ object default extends js.Object {
   var SHOW_CHILD: js.Any = js.native
   var SHOW_PARENT: js.Any = js.native
   var TreeNode: js.Any = js.native
-  var defaultProps: antdLib.Anon_TransitionNameChoiceTransitionName = js.native
+  var defaultProps: antdLib.Anon_ChoiceTransitionNameShowSearchTransitionName = js.native
 }
 

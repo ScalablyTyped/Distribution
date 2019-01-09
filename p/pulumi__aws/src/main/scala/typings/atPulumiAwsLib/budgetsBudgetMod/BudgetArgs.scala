@@ -23,7 +23,9 @@ trait BudgetArgs extends js.Object {
   /**
     * Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
     */
-  val costTypes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IncludeRecurring]] = js.undefined
+  val costTypes: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IncludeCreditIncludeDiscount]
+  ] = js.undefined
   /**
     * The amount of cost or usage being measured for a budget.
     */

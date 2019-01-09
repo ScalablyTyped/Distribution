@@ -22,7 +22,7 @@ trait DataViewProps extends js.Object {
     ]
   ] = js.undefined
   var layout: js.UndefOr[java.lang.String] = js.undefined
-  var onPage: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventRows, scala.Unit]] = js.undefined
+  var onPage: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_FirstOriginalEvent, scala.Unit]] = js.undefined
   var pageLinkSize: js.UndefOr[scala.Double] = js.undefined
   var paginator: js.UndefOr[scala.Boolean] = js.undefined
   var paginatorLeft: js.UndefOr[js.Any] = js.undefined

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object globalNsMembers extends js.Object {
   val Class: servicenowLib.Anon_Create = js.native
-  val GlideStringUtil: servicenowLib.Anon_EscapeHTML = js.native
+  val GlideStringUtil: servicenowLib.Anon_Base64Decode = js.native
 }
 

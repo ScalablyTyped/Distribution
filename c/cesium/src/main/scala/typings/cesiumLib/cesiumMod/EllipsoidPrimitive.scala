@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EllipsoidPrimitive ()
   extends cesiumLib.cesiumMod.CesiumNs.EllipsoidPrimitive {
-  def this(options: cesiumLib.Anon_ShowCenter) = this()
+  def this(options: cesiumLib.Anon_CenterDebugShowBoundingVolume) = this()
   /* CompleteClass */
   override var center: cesiumLib.cesiumMod.CesiumNs.Cartesian3 = js.native
   /* CompleteClass */

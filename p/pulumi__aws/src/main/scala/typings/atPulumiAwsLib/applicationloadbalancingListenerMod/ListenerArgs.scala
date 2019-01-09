@@ -13,7 +13,7 @@ trait ListenerArgs extends js.Object {
   /**
     * An Action block. Action blocks are documented below.
     */
-  val defaultAction: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TargetGroupArn]
+  val defaultAction: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc]
   /**
     * The ARN of the load balancer.
     */

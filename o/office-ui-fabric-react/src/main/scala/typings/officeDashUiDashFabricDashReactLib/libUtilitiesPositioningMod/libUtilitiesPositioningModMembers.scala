@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/utilities/positioning", JSImport.Namespace)
 @js.native
 object libUtilitiesPositioningModMembers extends js.Object {
-  val __positioningTestPackage: officeDashUiDashFabricDashReactLib.Anon_GetMaxHeightFromTargetRectangle = js.native
+  val __positioningTestPackage: officeDashUiDashFabricDashReactLib.Anon_011011 = js.native
   def getMaxHeight(
     target: officeDashUiDashFabricDashReactLib.libUtilitiesPositioningPositioningDotTypesMod.IPoint,
     targetEdge: officeDashUiDashFabricDashReactLib.libCommonDirectionalHintMod.DirectionalHint

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreditCardTypeInfo extends js.Object {
-  var code: js.UndefOr[creditDashCardDashTypeLib.Anon_Size] = js.undefined
+  var code: js.UndefOr[creditDashCardDashTypeLib.Anon_Name] = js.undefined
   var exactPattern: js.UndefOr[stdLib.RegExp] = js.undefined
   var gaps: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var lengths: js.UndefOr[js.Array[scala.Double]] = js.undefined

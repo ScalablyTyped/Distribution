@@ -21,6 +21,13 @@ trait Anon_Accesstoken extends js.Object {
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Required. A unique identifier for the instance, which cannot be changed
+    * after the instance is created. Values are of the form
+    * `projects/<project>/instances/a-z&#42;[a-z0-9]`. The final
+    * segment of the name must be between 6 and 30 characters in length.
+    */
+  var name: java.lang.String
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
@@ -29,11 +36,6 @@ trait Anon_Accesstoken extends js.Object {
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * REQUIRED: The Cloud Spanner resource for which the policy is being retrieved. The format is `projects/<project ID>/instances/<instance ID>` for
-    * instance resources and `projects/<project ID>/instances/<instance ID>/databases/<database ID>` for database resources.
-    */
-  var resource: java.lang.String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined
   /** Upload protocol for media (e.g. "raw", "multipart"). */

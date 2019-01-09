@@ -14,11 +14,11 @@ object curveNs extends js.Object {
     var g: js.Any = js.native
      // ?
     var n: js.UndefOr[
-        (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any) | scala.Null
+        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | scala.Null
       ] = js.native
      // ?
     var one: js.Any = js.native
-    var p: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any = js.native
+    var p: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
     var red: js.Any = js.native
      // ?
     var redN: js.Any = js.native
@@ -39,11 +39,11 @@ object curveNs extends js.Object {
        // ?
       var gRed: js.UndefOr[js.Any] = js.undefined
       var n: js.UndefOr[
-            scala.Double | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any) | nodeLib.Buffer
+            scala.Double | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | nodeLib.Buffer
           ] = js.undefined
-      var p: scala.Double | java.lang.String | js.Array[scala.Double] | nodeLib.Buffer | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any)
+      var p: scala.Double | java.lang.String | js.Array[scala.Double] | nodeLib.Buffer | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any)
       var prime: js.UndefOr[
-            (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any) | java.lang.String
+            (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | java.lang.String
           ] = js.undefined
     }
     

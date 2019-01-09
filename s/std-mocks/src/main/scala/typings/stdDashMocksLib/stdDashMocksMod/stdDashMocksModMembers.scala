@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @JSImport("std-mocks", JSImport.Namespace)
 @js.native
 object stdDashMocksModMembers extends js.Object {
-  def flush(): stdDashMocksLib.Anon_StdoutStderr = js.native
-  def flush(opts: Options with stdDashMocksLib.Anon_Stderr): stdDashMocksLib.Anon_StdoutArray = js.native
+  def flush(): stdDashMocksLib.Anon_StderrStdout = js.native
+  def flush(opts: Options with stdDashMocksLib.Anon_FalseStdout): stdDashMocksLib.Anon_Stderr = js.native
   @JSName("flush")
-  def flush_Anon_StderrArray(opts: Options with stdDashMocksLib.Anon_StdoutFalse): stdDashMocksLib.Anon_StderrArray = js.native
+  def flush_Anon_StderrStdout(opts: Options): stdDashMocksLib.Anon_StderrStdout = js.native
   @JSName("flush")
-  def flush_Anon_StdoutStderr(opts: Options): stdDashMocksLib.Anon_StdoutStderr = js.native
+  def flush_Anon_Stdout(opts: Options with stdDashMocksLib.Anon_FalseStderr): stdDashMocksLib.Anon_Stdout = js.native
   @JSName("flush")
-  def flush_Object(opts: Options with stdDashMocksLib.Anon_Stdout): js.Object = js.native
+  def flush_Object(opts: Options with stdDashMocksLib.Anon_False): js.Object = js.native
   def restore(): scala.Unit = js.native
   def restore(opts: Options): scala.Unit = js.native
   def use(): scala.Unit = js.native

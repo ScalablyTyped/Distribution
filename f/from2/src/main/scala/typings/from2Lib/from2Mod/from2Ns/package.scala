@@ -11,7 +11,7 @@ package object from2Ns {
   type NextCallback = js.Function2[/* err */ js.UndefOr[js.Any], /* chunk */ Chunk, scala.Unit]
   type NextObjectCallback = js.Function2[/* err */ js.UndefOr[js.Any], /* chunk */ js.Any, scala.Unit]
   type ObjectModeOptions = from2Lib.Anon_ObjectModeTrue with nodeLib.streamMod.internalNs.ReadableOptions
-  type Options = from2Lib.Anon_ObjectModeFalse with nodeLib.streamMod.internalNs.ReadableOptions
+  type Options = from2Lib.Anon_False with nodeLib.streamMod.internalNs.ReadableOptions
   type ReadCallback[N /* <: NextCallback | NextObjectCallback */] = js.Function2[/* size */ scala.Double, /* next */ N, scala.Unit]
   type ReadInput = ReadCallback[NextCallback] | js.Array[Chunk]
   type ReadObjectInput = ReadCallback[NextObjectCallback] | js.Array[js.Any]

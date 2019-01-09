@@ -72,7 +72,10 @@ class KiiUser () extends js.Object {
     *     );
     */
   def changeEmail(newEmail: java.lang.String): js.Promise[KiiUser] = js.native
-  def changeEmail(newEmail: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUser): js.Promise[KiiUser] = js.native
+  def changeEmail(
+    newEmail: java.lang.String,
+    callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheUser
+  ): js.Promise[KiiUser] = js.native
   /**
     * Change phone number of logged in user.
     * If the phone number verification is required by your app configuration,
@@ -120,7 +123,10 @@ class KiiUser () extends js.Object {
     *     );
     */
   def changePhone(newPhoneNumber: java.lang.String): js.Promise[KiiUser] = js.native
-  def changePhone(newPhoneNumber: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUser): js.Promise[KiiUser] = js.native
+  def changePhone(
+    newPhoneNumber: java.lang.String,
+    callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheUser
+  ): js.Promise[KiiUser] = js.native
   /**
     * Delete the user from the server
     *
@@ -162,7 +168,7 @@ class KiiUser () extends js.Object {
     *     );
     */
   def delete(): js.Promise[KiiUser] = js.native
-  def delete(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUser): js.Promise[KiiUser] = js.native
+  def delete(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheDeletedUser): js.Promise[KiiUser] = js.native
   /**
     * Return true if the user is disabled, false when enabled and undefined
     * when user is not refreshed.
@@ -401,8 +407,8 @@ class KiiUser () extends js.Object {
     *     );
     */
   def listTopics(): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
-  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorString): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
-  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorString, paginationKey: java.lang.String): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
+  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorString): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
+  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorString, paginationKey: java.lang.String): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
   /**
     * Retrieve a list of groups which the user is a member of
     *
@@ -457,7 +463,7 @@ class KiiUser () extends js.Object {
     *     );
     */
   def memberOfGroups(): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
-  def memberOfGroups(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUserAnErrorString): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
+  def memberOfGroups(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureGroupList): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
   /**
     * Get a specifically formatted string referencing the user
     *
@@ -526,7 +532,7 @@ class KiiUser () extends js.Object {
     *     );
     */
   def ownerOfGroups(): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
-  def ownerOfGroups(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUserAnErrorString): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
+  def ownerOfGroups(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureGroupList): js.Promise[js.Tuple2[KiiUser, js.Array[KiiGroup]]] = js.native
   /**
     * Instantiate push installation for this user.
     *
@@ -606,18 +612,18 @@ class KiiUser () extends js.Object {
   def putIdentity(
     identityData: identityData,
     password: java.lang.String,
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureUser
+    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorString
   ): js.Promise[KiiUser] = js.native
   def putIdentity(
     identityData: identityData,
     password: java.lang.String,
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureUser,
+    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorString,
     userFields: js.Any
   ): js.Promise[KiiUser] = js.native
   def putIdentity(
     identityData: identityData,
     password: java.lang.String,
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureUser,
+    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorString,
     userFields: js.Any,
     removeFields: js.Array[java.lang.String]
   ): js.Promise[KiiUser] = js.native
@@ -664,7 +670,7 @@ class KiiUser () extends js.Object {
     *     );
     */
   def refresh(): js.Promise[KiiUser] = js.native
-  def refresh(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUser): js.Promise[KiiUser] = js.native
+  def refresh(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheRefreshedUser): js.Promise[KiiUser] = js.native
   /**
     * Registers a user with the server
     *
@@ -708,7 +714,7 @@ class KiiUser () extends js.Object {
     *     );
     */
   def register(): js.Promise[KiiUser] = js.native
-  def register(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUser): js.Promise[KiiUser] = js.native
+  def register(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheAuthenticatedUser): js.Promise[KiiUser] = js.native
   /**
     * Resend the email verification code to the user
     *
@@ -752,7 +758,7 @@ class KiiUser () extends js.Object {
     *     );
     */
   def resendEmailVerification(): js.Promise[KiiUser] = js.native
-  def resendEmailVerification(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUser): js.Promise[KiiUser] = js.native
+  def resendEmailVerification(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheUser): js.Promise[KiiUser] = js.native
   /**
     * Resend the SMS verification code to the user
     *
@@ -796,7 +802,7 @@ class KiiUser () extends js.Object {
     *     );
     */
   def resendPhoneNumberVerification(): js.Promise[KiiUser] = js.native
-  def resendPhoneNumberVerification(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUser): js.Promise[KiiUser] = js.native
+  def resendPhoneNumberVerification(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheUser): js.Promise[KiiUser] = js.native
   /**
     * Saves the latest user values to the server
     *
@@ -840,7 +846,7 @@ class KiiUser () extends js.Object {
     *     );
     */
   def save(): js.Promise[KiiUser] = js.native
-  def save(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUser): js.Promise[KiiUser] = js.native
+  def save(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheSavedUser): js.Promise[KiiUser] = js.native
   /**
     * Sets a key/value pair to a KiiUser
     *
@@ -949,11 +955,11 @@ class KiiUser () extends js.Object {
     *     );
     */
   def update(identityData: identityData): js.Promise[KiiUser] = js.native
-  def update(identityData: identityData, callbacks: kiiDashCloudDashSdkLib.Anon_FailureUser): js.Promise[KiiUser] = js.native
-  def update(identityData: identityData, callbacks: kiiDashCloudDashSdkLib.Anon_FailureUser, userFields: js.Any): js.Promise[KiiUser] = js.native
+  def update(identityData: identityData, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorString): js.Promise[KiiUser] = js.native
+  def update(identityData: identityData, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorString, userFields: js.Any): js.Promise[KiiUser] = js.native
   def update(
     identityData: identityData,
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureUser,
+    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorString,
     userFields: js.Any,
     removeFields: js.Array[java.lang.String]
   ): js.Promise[KiiUser] = js.native
@@ -1005,7 +1011,7 @@ class KiiUser () extends js.Object {
   def updatePassword(
     fromPassword: java.lang.String,
     toPassword: java.lang.String,
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUser
+    callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheUser
   ): js.Promise[KiiUser] = js.native
   /**
     * Verify the current user's phone number
@@ -1062,7 +1068,10 @@ class KiiUser () extends js.Object {
     *     );
     */
   def verifyPhoneNumber(verificationCode: java.lang.String): js.Promise[KiiUser] = js.native
-  def verifyPhoneNumber(verificationCode: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUser): js.Promise[KiiUser] = js.native
+  def verifyPhoneNumber(
+    verificationCode: java.lang.String,
+    callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheUser
+  ): js.Promise[KiiUser] = js.native
 }
 
 /**
@@ -1120,7 +1129,7 @@ object KiiUser extends js.Object {
   def authenticate(
     userIdentifier: java.lang.String,
     password: java.lang.String,
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUser
+    callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheAuthenticatedUser
   ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
   /**
     * Asynchronously authenticates a user with the server using specified access token.
@@ -1187,10 +1196,13 @@ object KiiUser extends js.Object {
     *     );
     */
   def authenticateWithToken(accessToken: java.lang.String): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
-  def authenticateWithToken(accessToken: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUser): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
   def authenticateWithToken(
     accessToken: java.lang.String,
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUser,
+    callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheAuthenticatedUser
+  ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
+  def authenticateWithToken(
+    accessToken: java.lang.String,
+    callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheAuthenticatedUser,
     expiresAt: stdLib.Date
   ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
   /**
@@ -1246,7 +1258,7 @@ object KiiUser extends js.Object {
     userIdentifier: java.lang.String,
     pinCode: java.lang.String,
     newPassword: java.lang.String,
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessAny
+    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailure
   ): js.Promise[scala.Unit] = js.native
   /**
     * Find registered KiiUser with the email.<br>
@@ -1296,7 +1308,10 @@ object KiiUser extends js.Object {
     *     );
     */
   def findUserByEmail(email: java.lang.String): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
-  def findUserByEmail(email: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorStringSuccess): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
+  def findUserByEmail(
+    email: java.lang.String,
+    callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheMatchedUser
+  ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
   /**
     * Find registered KiiUser with the phone.<br>
     * If there are no user registers with the specified phone or if there are but not verified phone yet,
@@ -1345,7 +1360,10 @@ object KiiUser extends js.Object {
     *     );
     */
   def findUserByPhone(phone: java.lang.String): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
-  def findUserByPhone(phone: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorStringSuccess): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
+  def findUserByPhone(
+    phone: java.lang.String,
+    callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheMatchedUser
+  ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
   /**
     * Find registered KiiUser with the user name.<br>
     * If there are no user registers with the specified user name, callbacks.failure or reject callback of promise will be called.
@@ -1393,7 +1411,10 @@ object KiiUser extends js.Object {
     *     );
     */
   def findUserByUsername(username: java.lang.String): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
-  def findUserByUsername(username: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorStringSuccess): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
+  def findUserByUsername(
+    username: java.lang.String,
+    callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheMatchedUser
+  ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
   /**
     * The currently authenticated user
     *
@@ -1459,8 +1480,11 @@ object KiiUser extends js.Object {
     *     );
     */
   def registerAsPseudoUser(): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
-  def registerAsPseudoUser(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUser): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
-  def registerAsPseudoUser(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheUser, userFields: js.Any): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
+  def registerAsPseudoUser(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheAuthenticatedUser): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
+  def registerAsPseudoUser(
+    callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessTheAuthenticatedUser,
+    userFields: js.Any
+  ): js.Promise[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser] = js.native
   /**
     * Reset a user's password on the server
     *
@@ -1506,7 +1530,7 @@ object KiiUser extends js.Object {
   def resetPassword(userIdentifier: java.lang.String): js.Promise[scala.Unit] = js.native
   def resetPassword(
     userIdentifier: java.lang.String,
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorStringSuccessString
+    callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccessAny
   ): js.Promise[scala.Unit] = js.native
   /**
     * Reset the password of user <br>
@@ -1563,7 +1587,7 @@ object KiiUser extends js.Object {
   def resetPasswordWithNotificationMethod(
     userIdentifier: java.lang.String,
     notificationMethod: java.lang.String,
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrString
+    callbacks: kiiDashCloudDashSdkLib.Anon_ErrString
   ): js.Promise[scala.Unit] = js.native
   /**
     * Create a user object to prepare for registration with credentials pre-filled

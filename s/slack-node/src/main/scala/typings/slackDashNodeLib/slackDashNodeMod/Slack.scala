@@ -23,7 +23,7 @@ trait Slack extends js.Object {
     callback: js.Function2[/* err */ js.Any, /* response */ js.Any, scala.Unit]
   ): this.type = js.native
   def composeUrl(): java.lang.String = js.native
-  def detectEmoji(emoji: java.lang.String): slackDashNodeLib.Anon_Key = js.native
+  def detectEmoji(emoji: java.lang.String): slackDashNodeLib.Anon_Iconemoji = js.native
   def setWebhook(url: java.lang.String): this.type = js.native
   def webhook(
     options: slackDashNodeLib.slackDashNodeMod.SlackNs.WebhookOptions,

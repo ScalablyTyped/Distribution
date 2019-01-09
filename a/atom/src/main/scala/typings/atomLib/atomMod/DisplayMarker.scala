@@ -37,12 +37,12 @@ trait DisplayMarker extends js.Object {
     *  greater than or equal to the result of DisplayMarker::getStartScreenPosition.
     */
   def getEndScreenPosition(): Point = js.native
-  def getEndScreenPosition(options: atomLib.Anon_ClipDirection): Point = js.native
+  def getEndScreenPosition(options: atomLib.Anon_BackwardClipDirection): Point = js.native
   /** Retrieves the buffer position of the marker's head. */
   def getHeadBufferPosition(): Point = js.native
   /** Retrieves the screen position of the marker's head. */
   def getHeadScreenPosition(): Point = js.native
-  def getHeadScreenPosition(options: atomLib.Anon_ClipDirection): Point = js.native
+  def getHeadScreenPosition(options: atomLib.Anon_BackwardClipDirection): Point = js.native
   /**
     *  Get the invalidation strategy for this marker.
     *  Valid values include: never, surround, overlap, inside, and touch.
@@ -62,12 +62,12 @@ trait DisplayMarker extends js.Object {
     *  less than or equal to the result of DisplayMarker::getEndScreenPosition.
     */
   def getStartScreenPosition(): Point = js.native
-  def getStartScreenPosition(options: atomLib.Anon_ClipDirection): Point = js.native
+  def getStartScreenPosition(options: atomLib.Anon_BackwardClipDirection): Point = js.native
   /** Retrieves the buffer position of the marker's tail. */
   def getTailBufferPosition(): Point = js.native
   /** Retrieves the screen position of the marker's tail. */
   def getTailScreenPosition(): Point = js.native
-  def getTailScreenPosition(options: atomLib.Anon_ClipDirection): Point = js.native
+  def getTailScreenPosition(options: atomLib.Anon_BackwardClipDirection): Point = js.native
   /** Returns a boolean indicating whether the marker has a tail. */
   def hasTail(): scala.Boolean = js.native
   /**
@@ -114,16 +114,16 @@ trait DisplayMarker extends js.Object {
   def setHeadBufferPosition(bufferPosition: PointCompatible): scala.Unit = js.native
   /** Sets the screen position of the marker's head. */
   def setHeadScreenPosition(screenPosition: PointCompatible): scala.Unit = js.native
-  def setHeadScreenPosition(screenPosition: PointCompatible, options: atomLib.Anon_ClipDirection): scala.Unit = js.native
+  def setHeadScreenPosition(screenPosition: PointCompatible, options: atomLib.Anon_BackwardClipDirection): scala.Unit = js.native
   /** Merges an Object containing new properties into the marker's existing properties. */
   def setProperties(properties: js.Object): scala.Unit = js.native
   /** Modifies the screen range of this marker. */
   def setScreenRange(screenRange: RangeCompatible): scala.Unit = js.native
-  def setScreenRange(screenRange: RangeCompatible, options: atomLib.Anon_ClipDirectionBackward): scala.Unit = js.native
+  def setScreenRange(screenRange: RangeCompatible, options: atomLib.Anon_Backward): scala.Unit = js.native
   /** Sets the buffer position of the marker's tail. */
   def setTailBufferPosition(bufferPosition: PointCompatible): scala.Unit = js.native
   /** Sets the screen position of the marker's tail. */
   def setTailScreenPosition(screenPosition: PointCompatible): scala.Unit = js.native
-  def setTailScreenPosition(screenPosition: PointCompatible, options: atomLib.Anon_ClipDirection): scala.Unit = js.native
+  def setTailScreenPosition(screenPosition: PointCompatible, options: atomLib.Anon_BackwardClipDirection): scala.Unit = js.native
 }
 

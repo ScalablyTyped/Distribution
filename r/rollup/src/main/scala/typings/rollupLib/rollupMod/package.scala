@@ -24,7 +24,7 @@ package object rollupMod {
   type ModuleFormat = rollupLib.rollupLibStrings.amd | rollupLib.rollupLibStrings.cjs | rollupLib.rollupLibStrings.system | rollupLib.rollupLibStrings.es | rollupLib.rollupLibStrings.esm | rollupLib.rollupLibStrings.iife | rollupLib.rollupLibStrings.umd
   type OptionsPaths = (stdLib.Record[java.lang.String, java.lang.String]) | (js.Function1[/* id */ java.lang.String, java.lang.String])
   type PluginImpl[O /* <: js.Object */] = js.Function1[/* options */ js.UndefOr[O], Plugin]
-  type RawSourceMap = rollupLib.Anon_Mappings | ExistingRawSourceMap
+  type RawSourceMap = rollupLib.`Anon_` | ExistingRawSourceMap
   type RenderChunkHook = js.ThisFunction3[
     /* this */ PluginContext, 
     /* code */ java.lang.String, 

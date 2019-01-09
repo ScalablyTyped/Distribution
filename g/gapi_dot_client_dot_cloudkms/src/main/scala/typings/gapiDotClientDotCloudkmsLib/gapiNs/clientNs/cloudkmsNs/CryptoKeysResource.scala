@@ -12,31 +12,31 @@ trait CryptoKeysResource extends js.Object {
     *
     * CryptoKey.purpose is required.
     */
-  def create(request: gapiDotClientDotCloudkmsLib.Anon_ParentAccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
+  def create(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackCryptoKeyId): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
   /** Decrypts data that was protected by Encrypt. */
-  def decrypt(request: gapiDotClientDotCloudkmsLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[DecryptResponse]
+  def decrypt(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[DecryptResponse]
   /** Encrypts data, so that it can only be recovered by a call to Decrypt. */
-  def encrypt(request: gapiDotClientDotCloudkmsLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[EncryptResponse]
+  def encrypt(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[EncryptResponse]
   /**
     * Returns metadata for a given CryptoKey, as well as its
     * primary CryptoKeyVersion.
     */
-  def get(request: gapiDotClientDotCloudkmsLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
+  def get(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
   /**
     * Gets the access control policy for a resource.
     * Returns an empty policy if the resource exists and does not have a policy
     * set.
     */
-  def getIamPolicy(request: gapiDotClientDotCloudkmsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+  def getIamPolicy(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
   /** Lists CryptoKeys. */
-  def list(request: gapiDotClientDotCloudkmsLib.Anon_ParentAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListCryptoKeysResponse]
+  def list(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ListCryptoKeysResponse]
   /** Update a CryptoKey. */
-  def patch(request: gapiDotClientDotCloudkmsLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
+  def patch(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
   /**
     * Sets the access control policy on the specified resource. Replaces any
     * existing policy.
     */
-  def setIamPolicy(request: gapiDotClientDotCloudkmsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+  def setIamPolicy(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
   /**
     * Returns permissions that a caller has on the specified resource.
     * If the resource does not exist, this will return an empty set of
@@ -46,8 +46,8 @@ trait CryptoKeysResource extends js.Object {
     * UIs and command-line tools, not for authorization checking. This operation
     * may "fail open" without warning.
     */
-  def testIamPermissions(request: gapiDotClientDotCloudkmsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+  def testIamPermissions(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
   /** Update the version of a CryptoKey that will be used in Encrypt */
-  def updatePrimaryVersion(request: gapiDotClientDotCloudkmsLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
+  def updatePrimaryVersion(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKey]
 }
 

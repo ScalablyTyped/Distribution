@@ -27,7 +27,7 @@ object EJSONNs extends js.Object {
   def isBinary(x: js.Object): scala.Boolean = js.native
   def parse(str: java.lang.String): meteorDashTypingsLib.ejsonMod.EJSON = js.native
   def stringify(`val`: meteorDashTypingsLib.ejsonMod.EJSON): java.lang.String = js.native
-  def stringify(`val`: meteorDashTypingsLib.ejsonMod.EJSON, options: meteorDashTypingsLib.Anon_Indent): java.lang.String = js.native
+  def stringify(`val`: meteorDashTypingsLib.ejsonMod.EJSON, options: meteorDashTypingsLib.Anon_Canonical): java.lang.String = js.native
   def toJSONValue(`val`: meteorDashTypingsLib.ejsonMod.EJSON): meteorDashTypingsLib.ejsonMod.JSONable = js.native
 }
 

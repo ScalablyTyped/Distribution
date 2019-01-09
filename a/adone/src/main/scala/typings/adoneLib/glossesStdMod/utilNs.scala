@@ -12,14 +12,14 @@ object utilNs extends js.Object {
   class TextDecoder ()
     extends nodeLib.utilMod.TextDecoder {
     def this(encoding: java.lang.String) = this()
-    def this(encoding: java.lang.String, options: nodeLib.Anon_IgnoreBOM) = this()
+    def this(encoding: java.lang.String, options: nodeLib.Anon_Fatal) = this()
   }
   
   @js.native
   class TextEncoder ()
     extends nodeLib.utilMod.TextEncoder
   
-  val inspect: nodeLib.Anon_Object = js.native
+  val inspect: nodeLib.Anon_Color = js.native
   def callbackify(fn: js.Function0[js.Promise[scala.Unit]]): js.Function1[
     /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit], 
     scala.Unit

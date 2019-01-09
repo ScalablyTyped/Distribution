@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@uirouter/core/lib/resolve/interface", JSImport.Namespace)
 @js.native
 object libResolveInterfaceModMembers extends js.Object {
-  var resolvePolicies: atUirouterCoreLib.Anon_When = js.native
+  var resolvePolicies: atUirouterCoreLib.Anon_Async = js.native
 }
 

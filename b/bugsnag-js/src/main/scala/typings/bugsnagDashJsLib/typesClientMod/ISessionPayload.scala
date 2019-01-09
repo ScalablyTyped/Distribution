@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ISessionPayload extends js.Object {
   var app: js.UndefOr[js.Object] = js.undefined
   var device: js.UndefOr[js.Object] = js.undefined
-  var notifier: bugsnagDashJsLib.Anon_Url
+  var notifier: bugsnagDashJsLib.Anon_Name
   var sessions: js.Array[ISession]
   var user: js.UndefOr[js.Object] = js.undefined
 }

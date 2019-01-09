@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ProvideOnSyntax[T] extends ProvideDoneSyntax {
   def onActivation(
     fn: js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversifyInterfaces.Context */ /* context */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversifyInterfaces.Context */ /* context */ js.Any, 
       /* injectable */ T, 
       T
     ]

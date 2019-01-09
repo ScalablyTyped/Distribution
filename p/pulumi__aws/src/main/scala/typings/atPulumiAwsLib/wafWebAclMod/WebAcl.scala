@@ -33,7 +33,7 @@ class WebAcl protected ()
   /**
     * The rules to associate with the web ACL and the settings for each rule.
     */
-  val rules: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_PriorityOverrideActionType]]] = js.native
+  val rules: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionOverrideAction]]] = js.native
 }
 
 @JSImport("@pulumi/aws/waf/webAcl", "WebAcl")

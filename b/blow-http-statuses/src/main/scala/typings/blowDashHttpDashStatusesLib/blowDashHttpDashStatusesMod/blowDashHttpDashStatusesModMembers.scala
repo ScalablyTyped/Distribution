@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("blow-http-statuses", JSImport.Namespace)
 @js.native
 object blowDashHttpDashStatusesModMembers extends js.Object {
-  val Codes: blowDashHttpDashStatusesLib.Anon_ResetContent = js.native
-  val Messages: blowDashHttpDashStatusesLib.Anon_205 = js.native
+  val Codes: blowDashHttpDashStatusesLib.Anon_Accepted = js.native
+  val Messages: blowDashHttpDashStatusesLib.Anon_100 = js.native
   def isEmpty(code: js.Any): scala.Boolean = js.native
   def isRedirect(code: js.Any): scala.Boolean = js.native
   def isRetry(code: js.Any): scala.Boolean = js.native

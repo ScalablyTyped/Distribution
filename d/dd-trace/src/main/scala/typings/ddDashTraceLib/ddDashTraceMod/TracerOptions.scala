@@ -40,7 +40,7 @@ trait TracerOptions extends js.Object {
     * should support debug() and error() methods
     * see https://datadog.github.io/dd-trace-js/#custom-logging__anchor
     */
-  var logger: js.UndefOr[ddDashTraceLib.Anon_Error] = js.undefined
+  var logger: js.UndefOr[ddDashTraceLib.Anon_Debug] = js.undefined
   /**
     * Whether to load all built-in plugins.
     * @default true

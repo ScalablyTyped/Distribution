@@ -52,7 +52,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.Shader")
 @js.native
 class Shader protected () extends js.Object {
-  def this(graphicsDevice: GraphicsDevice, definition: playcanvasLib.Anon_Vshader) = this()
+  def this(graphicsDevice: GraphicsDevice, definition: playcanvasLib.Anon_AttributesFshader) = this()
   /**
     * @function
     * @name pc.Shader#destroy

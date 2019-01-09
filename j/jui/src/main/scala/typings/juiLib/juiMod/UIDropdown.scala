@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UIDropdown extends js.Object {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: juiLib.Anon_EventLeft): this.type = js.native
+  def apply(selector: js.Any, options: juiLib.Anon_Close): this.type = js.native
   def hide(): scala.Unit = js.native
   /**
     * Moves a dropdown to the specified coordinates

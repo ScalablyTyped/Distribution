@@ -13,6 +13,6 @@ trait AvFormat extends js.Object {
   var nb_streams: scala.Double
   var size: java.lang.String
   var start_time: java.lang.String
-  var tags: qiniuDashJsLib.Anon_Key
+  var tags: qiniuDashJsLib.Anon_Creationtime
 }
 

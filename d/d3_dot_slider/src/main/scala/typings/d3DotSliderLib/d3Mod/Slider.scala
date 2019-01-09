@@ -18,8 +18,10 @@ trait Slider extends js.Object {
   def animate(): scala.Boolean | scala.Double = js.native
   def animate(`val`: scala.Boolean): Slider = js.native
   def animate(`val`: scala.Double): Slider = js.native
-  def axis(): scala.Boolean | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.svg.Axis */ js.Any) = js.native
-  def axis(`val`: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.svg.Axis */ js.Any): Slider = js.native
+  def axis(): scala.Boolean | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any) = js.native
+  def axis(
+    `val`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any
+  ): Slider = js.native
   def axis(`val`: scala.Boolean): Slider = js.native
   def margin(): scala.Double = js.native
   def margin(`val`: scala.Double): Slider = js.native

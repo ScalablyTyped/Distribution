@@ -12,14 +12,14 @@ trait ConfigsResource extends js.Object {
     * configuration to backend systems please call
     * CreateServiceRollout.
     */
-  def create(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPrettyPrintServiceName): gapiDotClientLib.gapiNs.clientNs.Request[Service]
+  def create(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Service]
   /** Gets a service configuration (version) for a managed service. */
-  def get(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Service]
+  def get(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Service]
   /**
     * Lists the history of the service configuration for a managed service,
     * from the newest to the oldest.
     */
-  def list(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListServiceConfigsResponse]
+  def list(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[ListServiceConfigsResponse]
   /**
     * Creates a new service configuration (version) for a managed service based
     * on
@@ -31,6 +31,6 @@ trait ConfigsResource extends js.Object {
     *
     * Operation<response: SubmitConfigSourceResponse>
     */
-  def submit(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPrettyPrintServiceName): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def submit(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 

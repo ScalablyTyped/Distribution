@@ -11,7 +11,7 @@ object assertNs extends js.Object {
   @js.native
   class AssertionError ()
     extends assertLib.assertMod.AssertionError {
-    def this(options: assertLib.Anon_Expected) = this()
+    def this(options: assertLib.Anon_Actual) = this()
   }
   
   def deepEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-copy-write", JSImport.Namespace)
 @js.native
 object reactDashCopyDashWriteModMembers extends js.Object {
-  def default[T /* <: js.Object */](state: T): reactDashCopyDashWriteLib.Anon_Provider[T] = js.native
+  def default[T /* <: js.Object */](state: T): reactDashCopyDashWriteLib.Anon_Consumer[T] = js.native
 }
 

@@ -15,7 +15,7 @@ trait ICompositeChart[T] extends CoordinateGridMixin[T] {
   var rightYAxisLabel_Original: IGetSet[java.lang.String, ICompositeChart[T]] = js.native
   @JSName("rightYAxis")
   var rightYAxis_Original: IGetSet[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.svg.Axis */ _, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ _, 
     ICompositeChart[T]
   ] = js.native
   @JSName("rightY")
@@ -34,8 +34,8 @@ trait ICompositeChart[T] extends CoordinateGridMixin[T] {
   def rightY(): js.Function1[/* n */ js.Any, _] = js.native
   def rightY(t: js.Function1[/* n */ js.Any, _]): ICompositeChart[js.Function1[/* n */ _, _]] = js.native
   def rightYAxis(): js.Any = js.native
-  def rightYAxis(t: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.svg.Axis */ js.Any): ICompositeChart[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.svg.Axis */ _
+  def rightYAxis(t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any): ICompositeChart[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ _
   ] = js.native
   def rightYAxisLabel(): java.lang.String = js.native
   def rightYAxisLabel(t: java.lang.String): ICompositeChart[java.lang.String] = js.native

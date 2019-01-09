@@ -12,10 +12,10 @@ trait ScrollNumber
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MScrollNumber(nextProps: ScrollNumberProps): scala.Unit = js.native
   def getPositionByNum(num: scala.Double, i: scala.Double): scala.Double = js.native
-  def renderCurrentNumber(prefixCls: java.lang.String, num: scala.Double, i: scala.Double): reactLib.reactMod.ReactNs.DetailedReactHTMLElement[antdLib.Anon_ClassNameKey, reactLib.HTMLElement] = js.native
+  def renderCurrentNumber(prefixCls: java.lang.String, num: scala.Double, i: scala.Double): reactLib.reactMod.ReactNs.DetailedReactHTMLElement[antdLib.Anon_ClassName, reactLib.HTMLElement] = js.native
   def renderNumberElement(prefixCls: java.lang.String): js.UndefOr[
     java.lang.String | scala.Double | (js.Array[
-      reactLib.reactMod.ReactNs.DetailedReactHTMLElement[antdLib.Anon_ClassNameKey, reactLib.HTMLElement]
+      reactLib.reactMod.ReactNs.DetailedReactHTMLElement[antdLib.Anon_ClassName, reactLib.HTMLElement]
     ]) | scala.Null
   ] = js.native
   def renderNumberList(position: scala.Double): js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] = js.native

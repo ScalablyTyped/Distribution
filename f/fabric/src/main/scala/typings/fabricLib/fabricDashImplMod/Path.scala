@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.IPathOptions because Would inherit conflicting mutable fields List(aCoords, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, centeredRotation, centeredScaling, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, evented, fill, fillRule, flipX, flipY, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockUniScaling, minScaleLimit, name, objectCaching, opacity, originX, originY, padding, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, shadow, skewX, skewY, stroke, strokeDashArray, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width))*/
-@JSImport("fabric/fabric-impl", "Path")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fabricLib.fabricDashImplMod.IPathOptions because var conflicts: aCoords, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, centeredRotation, centeredScaling, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, evented, fill, fillRule, flipX, flipY, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockUniScaling, minScaleLimit, name, objectCaching, opacity, originX, originY, padding, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, shadow, skewX, skewY, stroke, strokeDashArray, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width. Inlined path, minX, minY */ @JSImport("fabric/fabric-impl", "Path")
 @js.native
 /**
 	 * Constructor
@@ -18,6 +18,18 @@ class Path () extends Object {
   def this(path: js.Array[_]) = this()
   def this(path: java.lang.String, options: IPathOptions) = this()
   def this(path: js.Array[_], options: IPathOptions) = this()
+  /**
+  	 * Minimum X from points values, necessary to offset points
+  	 */
+  var minX: js.UndefOr[scala.Double] = js.native
+  /**
+  	 * Minimum Y from points values, necessary to offset points
+  	 */
+  var minY: js.UndefOr[scala.Double] = js.native
+  /**
+  	 * Array of path points
+  	 */
+  var path: js.UndefOr[js.Array[_]] = js.native
   var pathOffset: Point = js.native
   def initialize(): Path = js.native
   def initialize(path: js.Array[_]): Path = js.native

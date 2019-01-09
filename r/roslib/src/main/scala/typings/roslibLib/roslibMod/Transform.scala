@@ -17,7 +17,7 @@ class Transform protected ()
     *   * translation - the Vector3 describing the translation
     *   * rotation - the ROSLIB.Quaternion describing the rotation
     */
-  def this(options: roslibLib.Anon_Translation) = this()
+  def this(options: roslibLib.Anon_Rotation) = this()
   /* CompleteClass */
   override var rotation: roslibLib.roslibMod.ROSLIBNs.Quaternion = js.native
   // getters

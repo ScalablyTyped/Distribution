@@ -10,8 +10,8 @@ trait Stats extends js.Object {
     * `true` if the connection was closed correctly and `false` otherwise
     */
   var ok: scala.Boolean
-  var req: requestDashStatsLib.Anon_Method
-  var res: requestDashStatsLib.Anon_Raw
+  var req: requestDashStatsLib.Anon_Bytes
+  var res: requestDashStatsLib.Anon_BytesHeaders
   /**
     * The milliseconds it took to serve the request
     */

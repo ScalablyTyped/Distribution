@@ -98,7 +98,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class Accounting () extends js.Object {
-    def this(args: evernoteLib.Anon_PremiumServiceSKU) = this()
+    def this(args: evernoteLib.Anon_BusinessId) = this()
     var businessId: scala.Double = js.native
     var businessName: java.lang.String = js.native
     var businessRole: BusinessUserRole = js.native
@@ -195,7 +195,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class AuthenticationResult () extends js.Object {
-    def this(args: evernoteLib.Anon_SecondFactorRequired) = this()
+    def this(args: evernoteLib.Anon_AuthenticationToken) = this()
     var authenticationToken: java.lang.String = js.native
     var currentTime: scala.Double = js.native
     var expiration: scala.Double = js.native
@@ -305,7 +305,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class BootstrapSettings () extends js.Object {
-    def this(args: evernoteLib.Anon_SupportUrl) = this()
+    def this(args: evernoteLib.Anon_AccountEmailDomain) = this()
     var accountEmailDomain: java.lang.String = js.native
     var enableFacebookSharing: scala.Boolean = js.native
     var enableGiftSubscriptions: scala.Boolean = js.native
@@ -352,7 +352,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class BusinessNotebook () extends js.Object {
-    def this(args: evernoteLib.Anon_Recommended) = this()
+    def this(args: evernoteLib.Anon_NotebookDescription) = this()
     var notebookDescription: java.lang.String = js.native
     var privilege: SharedNotebookPrivilegeLevel = js.native
     var recommended: scala.Boolean = js.native
@@ -382,7 +382,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class BusinessUserInfo () extends js.Object {
-    def this(args: evernoteLib.Anon_Role) = this()
+    def this(args: evernoteLib.Anon_BusinessIdBusinessName) = this()
     var businessId: scala.Double = js.native
     var businessName: java.lang.String = js.native
     var email: java.lang.String = js.native
@@ -468,7 +468,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class Data () extends js.Object {
-    def this(args: evernoteLib.Anon_Size) = this()
+    def this(args: evernoteLib.Anon_Body) = this()
     var body: java.lang.String = js.native
     var bodyHash: java.lang.String = js.native
     var size: scala.Double = js.native
@@ -493,7 +493,7 @@ object EvernoteNs extends js.Object {
   @js.native
   class EDAMNotFoundException ()
     extends thriftLib.thriftMod.ThriftNs.TException {
-    def this(args: evernoteLib.Anon_Key) = this()
+    def this(args: evernoteLib.Anon_Identifier) = this()
     var identifier: java.lang.String = js.native
     var key: java.lang.String = js.native
   }
@@ -515,7 +515,7 @@ object EvernoteNs extends js.Object {
   @js.native
   class EDAMSystemException ()
     extends thriftLib.thriftMod.ThriftNs.TException {
-    def this(args: evernoteLib.Anon_ErrorCode) = this()
+    def this(args: evernoteLib.Anon_ErrorCodeMessage) = this()
     var errorCode: EDAMErrorCode = js.native
     var rateLimitDuration: scala.Double = js.native
   }
@@ -540,7 +540,7 @@ object EvernoteNs extends js.Object {
   @js.native
   class EDAMUserException ()
     extends thriftLib.thriftMod.ThriftNs.TException {
-    def this(args: evernoteLib.Anon_ErrorCodeParameter) = this()
+    def this(args: evernoteLib.Anon_ErrorCode) = this()
     var errorCode: EDAMErrorCode = js.native
     var parameter: java.lang.String = js.native
   }
@@ -655,7 +655,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class LinkedNotebook () extends js.Object {
-    def this(args: evernoteLib.Anon_GuidUsername) = this()
+    def this(args: evernoteLib.Anon_BusinessIdGuid) = this()
     var businessId: scala.Double = js.native
     var guid: java.lang.String = js.native
     var noteStoreUrl: java.lang.String = js.native
@@ -800,7 +800,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class Note () extends js.Object {
-    def this(args: evernoteLib.Anon_Guid) = this()
+    def this(args: evernoteLib.Anon_ActiveAttributes) = this()
     var active: scala.Boolean = js.native
     var attributes: NoteAttributes = js.native
     var content: java.lang.String = js.native
@@ -992,7 +992,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class NoteAttributes () extends js.Object {
-    def this(args: evernoteLib.Anon_ApplicationDataAltitude) = this()
+    def this(args: evernoteLib.Anon_AltitudeApplicationData) = this()
     var altitude: scala.Double = js.native
     var applicationData: LazyMap = js.native
     var author: java.lang.String = js.native
@@ -1042,7 +1042,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class NoteCollectionCounts () extends js.Object {
-    def this(args: evernoteLib.Anon_TrashCount) = this()
+    def this(args: evernoteLib.Anon_K) = this()
     var notebookCounts: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
     var tagCounts: org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
     var trashCount: scala.Double = js.native
@@ -1098,7 +1098,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class NoteEmailParameters () extends js.Object {
-    def this(args: evernoteLib.Anon_Subject) = this()
+    def this(args: evernoteLib.Anon_CcAddresses) = this()
     var ccAddresses: js.Array[java.lang.String] = js.native
     var guid: java.lang.String = js.native
     var message: java.lang.String = js.native
@@ -1172,7 +1172,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class NoteFilter () extends js.Object {
-    def this(args: evernoteLib.Anon_NotebookGuid) = this()
+    def this(args: evernoteLib.Anon_Ascending) = this()
     var ascending: scala.Boolean = js.native
     var emphasized: java.lang.String = js.native
     var inactive: scala.Boolean = js.native
@@ -1235,7 +1235,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class NoteList () extends js.Object {
-    def this(args: evernoteLib.Anon_TotalNotesSearchedWords) = this()
+    def this(args: evernoteLib.Anon_Notes) = this()
     var notes: js.Array[Note] = js.native
     var searchedWords: js.Array[java.lang.String] = js.native
     var startIndex: scala.Double = js.native
@@ -1269,7 +1269,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class NoteMetadata () extends js.Object {
-    def this(args: evernoteLib.Anon_GuidContentLength) = this()
+    def this(args: evernoteLib.Anon_Attributes) = this()
     var attributes: NoteAttributes = js.native
     var contentLength: scala.Double = js.native
     var created: scala.Double = js.native
@@ -3292,7 +3292,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class NoteVersionId () extends js.Object {
-    def this(args: evernoteLib.Anon_UpdateSequenceNum) = this()
+    def this(args: evernoteLib.Anon_Saved) = this()
     var saved: scala.Double = js.native
     var title: java.lang.String = js.native
     var updateSequenceNum: scala.Double = js.native
@@ -3419,7 +3419,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class Notebook () extends js.Object {
-    def this(args: evernoteLib.Anon_SharedNotebooks) = this()
+    def this(args: evernoteLib.Anon_BusinessNotebook) = this()
     var businessNotebook: BusinessNotebook = js.native
     var contact: User = js.native
     var defaultNotebook: scala.Boolean = js.native
@@ -3467,7 +3467,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class NotebookDescriptor () extends js.Object {
-    def this(args: evernoteLib.Anon_GuidJoinedUserCount) = this()
+    def this(args: evernoteLib.Anon_ContactName) = this()
     var contactName: java.lang.String = js.native
     var guid: java.lang.String = js.native
     var hasSharedNotebook: scala.Boolean = js.native
@@ -3580,7 +3580,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class NotebookRestrictions () extends js.Object {
-    def this(args: evernoteLib.Anon_NoCreateTags) = this()
+    def this(args: evernoteLib.Anon_ExpungeWhichSharedNotebookRestrictions) = this()
     var expungeWhichSharedNotebookRestrictions: SharedNotebookInstanceRestrictions = js.native
     var noCreateNotes: scala.Boolean = js.native
     var noCreateSharedNotebooks: scala.Boolean = js.native
@@ -3659,7 +3659,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class NotesMetadataList () extends js.Object {
-    def this(args: evernoteLib.Anon_TotalNotes) = this()
+    def this(args: evernoteLib.Anon_NotesSearchedWords) = this()
     var notes: js.Array[NoteMetadata] = js.native
     var searchedWords: js.Array[java.lang.String] = js.native
     var startIndex: scala.Double = js.native
@@ -3683,7 +3683,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class NotesMetadataResultSpec () extends js.Object {
-    def this(args: evernoteLib.Anon_IncludeNotebookGuid) = this()
+    def this(args: evernoteLib.Anon_IncludeAttributes) = this()
     var includeAttributes: scala.Boolean = js.native
     var includeContentLength: scala.Boolean = js.native
     var includeCreated: scala.Boolean = js.native
@@ -3750,7 +3750,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class PremiumInfo () extends js.Object {
-    def this(args: evernoteLib.Anon_SponsoredGroupName) = this()
+    def this(args: evernoteLib.Anon_CanPurchaseUploadAllowance) = this()
     var canPurchaseUploadAllowance: scala.Boolean = js.native
     var currentTime: scala.Double = js.native
     var premium: scala.Boolean = js.native
@@ -3808,7 +3808,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class PublicUserInfo () extends js.Object {
-    def this(args: evernoteLib.Anon_Username) = this()
+    def this(args: evernoteLib.Anon_NoteStoreUrl) = this()
     var noteStoreUrl: java.lang.String = js.native
     var privilege: PrivilegeLevel = js.native
     var shardId: java.lang.String = js.native
@@ -3860,7 +3860,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class Publishing () extends js.Object {
-    def this(args: evernoteLib.Anon_Order) = this()
+    def this(args: evernoteLib.Anon_AscendingOrder) = this()
     var ascending: scala.Boolean = js.native
     var order: NoteSortOrder = js.native
     var publicDescription: java.lang.String = js.native
@@ -3942,7 +3942,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class RelatedResult () extends js.Object {
-    def this(args: evernoteLib.Anon_Notebooks) = this()
+    def this(args: evernoteLib.Anon_ContainingNotebooks) = this()
     var containingNotebooks: js.Array[NotebookDescriptor] = js.native
     var notebooks: js.Array[Notebook] = js.native
     var notes: js.Array[Note] = js.native
@@ -3991,7 +3991,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class RelatedResultSpec () extends js.Object {
-    def this(args: evernoteLib.Anon_MaxTags) = this()
+    def this(args: evernoteLib.Anon_IncludeContainingNotebooks) = this()
     var includeContainingNotebooks: scala.Boolean = js.native
     var maxNotebooks: scala.Double = js.native
     var maxNotes: scala.Double = js.native
@@ -4084,7 +4084,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class Resource () extends js.Object {
-    def this(args: evernoteLib.Anon_Duration) = this()
+    def this(args: evernoteLib.Anon_Active) = this()
     var active: scala.Boolean = js.native
     var alternateData: Data = js.native
     var attributes: ResourceAttributes = js.native
@@ -4182,7 +4182,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class ResourceAttributes () extends js.Object {
-    def this(args: evernoteLib.Anon_ApplicationData) = this()
+    def this(args: evernoteLib.Anon_Altitude) = this()
     var altitude: scala.Double = js.native
     var applicationData: LazyMap = js.native
     var attachment: scala.Boolean = js.native
@@ -4282,7 +4282,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class SavedSearchScope () extends js.Object {
-    def this(args: evernoteLib.Anon_IncludeBusinessLinkedNotebooks) = this()
+    def this(args: evernoteLib.Anon_IncludeAccount) = this()
     var includeAccount: scala.Boolean = js.native
     var includeBusinessLinkedNotebooks: scala.Boolean = js.native
     var includePersonalLinkedNotebooks: scala.Boolean = js.native
@@ -4352,7 +4352,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class SharedNotebook () extends js.Object {
-    def this(args: evernoteLib.Anon_RecipientSettings) = this()
+    def this(args: evernoteLib.Anon_AllowPreview) = this()
     var allowPreview: scala.Boolean = js.native
     var email: java.lang.String = js.native
     var id: scala.Double = js.native
@@ -4521,7 +4521,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class SyncChunk () extends js.Object {
-    def this(args: evernoteLib.Anon_ExpungedNotes) = this()
+    def this(args: evernoteLib.Anon_ChunkHighUSN) = this()
     var chunkHighUSN: scala.Double = js.native
     var currentTime: scala.Double = js.native
     var expungedLinkedNotebooks: js.Array[java.lang.String] = js.native
@@ -4634,7 +4634,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class SyncChunkFilter () extends js.Object {
-    def this(args: evernoteLib.Anon_IncludeNotes) = this()
+    def this(args: evernoteLib.Anon_IncludeExpunged) = this()
     var includeExpunged: scala.Boolean = js.native
     var includeLinkedNotebooks: scala.Boolean = js.native
     var includeNoteApplicationDataFullMap: scala.Boolean = js.native
@@ -4691,7 +4691,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class SyncState () extends js.Object {
-    def this(args: evernoteLib.Anon_FullSyncBefore) = this()
+    def this(args: evernoteLib.Anon_CurrentTime) = this()
     var currentTime: scala.Double = js.native
     var fullSyncBefore: scala.Double = js.native
     var updateCount: scala.Double = js.native
@@ -4746,7 +4746,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class Tag () extends js.Object {
-    def this(args: evernoteLib.Anon_UpdateSequenceNumGuid) = this()
+    def this(args: evernoteLib.Anon_Guid) = this()
     var guid: java.lang.String = js.native
     var name: java.lang.String = js.native
     var parentGuid: java.lang.String = js.native
@@ -5057,7 +5057,7 @@ object EvernoteNs extends js.Object {
     */
   @js.native
   class UserAttributes () extends js.Object {
-    def this(args: evernoteLib.Anon_EducationalDiscount) = this()
+    def this(args: evernoteLib.Anon_BusinessAddress) = this()
     var businessAddress: java.lang.String = js.native
     var clipFullPage: scala.Boolean = js.native
     var comments: java.lang.String = js.native

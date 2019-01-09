@@ -12,6 +12,6 @@ package object microrouterMod {
     /* handler */ AugmentedRequestHandler, 
     microLib.microMod.RequestHandler
   ]
-  type ServerRequest = nodeLib.httpMod.IncomingMessage with microrouterLib.Anon_Params
-  type ServerResponse = js.Object
+  type ServerRequest = nodeLib.httpMod.IncomingMessage with microrouterLib.Anon_Key
+  type ServerResponse = /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias microrouter.microrouter.ServerResponse */ js.Object
 }

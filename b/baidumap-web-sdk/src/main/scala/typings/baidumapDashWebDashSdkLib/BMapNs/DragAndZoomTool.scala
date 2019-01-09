@@ -11,7 +11,7 @@ class DragAndZoomTool protected () extends js.Object {
   def this(map: Map) = this()
   def this(map: Map, opts: DragAndZoomToolOptions) = this()
   def close(): scala.Unit = js.native
-  def ondrawend(event: baidumapDashWebDashSdkLib.Anon_TypeTargetBounds): scala.Unit = js.native
+  def ondrawend(event: baidumapDashWebDashSdkLib.Anon_Bounds): scala.Unit = js.native
   def open(): scala.Boolean = js.native
 }
 

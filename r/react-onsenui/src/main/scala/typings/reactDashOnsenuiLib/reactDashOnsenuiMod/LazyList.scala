@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "LazyList")
 @js.native
 class LazyList ()
-  extends Component[reactDashOnsenuiLib.Anon_RenderRow, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_CalculateItemHeight, js.Any]
 

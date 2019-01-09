@@ -13,7 +13,7 @@ trait YarOptions extends js.Object {
   /**
     * the configuration for cookie-specific features:
     */
-  var cookieOptions: yarLib.Anon_Path
+  var cookieOptions: yarLib.Anon_ClearInvalid
   /**
     * will cause yar to throw an exception if trying to persist to cache when the cache is unavailable.
     * Setting this to false will allow applications using yar to run uninterrupted if the cache is not ready (however sessions will not be saving).

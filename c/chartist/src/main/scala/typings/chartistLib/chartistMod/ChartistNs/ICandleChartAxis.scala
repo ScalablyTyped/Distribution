@@ -13,7 +13,7 @@ trait ICandleChartAxis extends js.Object {
   /**
     * Allows you to correct label positioning on this axis by positive or negative x and y offset.
     */
-  var labelOffset: js.UndefOr[chartistLib.Anon_Y] = js.undefined
+  var labelOffset: js.UndefOr[chartistLib.Anon_X] = js.undefined
   /**
     * The offset of the chart drawing area to the border of the container
     */

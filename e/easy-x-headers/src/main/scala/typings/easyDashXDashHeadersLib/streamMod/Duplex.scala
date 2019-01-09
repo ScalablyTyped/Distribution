@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(easyDashXDashHeadersLib.NodeJSNs.ReadWriteStream because Would inherit conflicting mutable fields List(readable))*/
-@JSImport("stream", "Duplex")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- easyDashXDashHeadersLib.NodeJSNs.ReadWriteStream because var conflicts: readable. Inlined  */ @JSImport("stream", "Duplex")
 @js.native
 class Duplex () extends Readable {
   def this(opts: DuplexOptions) = this()

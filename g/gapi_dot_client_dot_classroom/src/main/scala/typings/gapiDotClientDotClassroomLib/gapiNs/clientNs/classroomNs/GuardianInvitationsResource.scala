@@ -38,9 +38,7 @@ trait GuardianInvitationsResource extends js.Object {
     * `invited_email_address` matches the Google account of an existing
     * `Guardian` for this user.
     */
-  def create(
-    request: gapiDotClientDotClassroomLib.Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUserKeyOauthtokenAlt
-  ): gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation]
+  def create(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation]
   /**
     * Returns a specific guardian invitation.
     *
@@ -57,7 +55,7 @@ trait GuardianInvitationsResource extends js.Object {
     * `invitation_id`. May also be returned if the student exists, but the
     * requesting user does not have access to see that student.
     */
-  def get(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation]
+  def get(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitationId): gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation]
   /**
     * Returns a list of guardian invitations that the requesting user is
     * permitted to view, filtered by the parameters provided.
@@ -76,7 +74,9 @@ trait GuardianInvitationsResource extends js.Object {
     * &#42; `NOT_FOUND` if a `student_id` is specified, and its format can be
     * recognized, but Classroom has no record of that student.
     */
-  def list(request: gapiDotClientDotClassroomLib.Anon_InvitedEmailAddressAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListGuardianInvitationsResponse]
+  def list(
+    request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitedEmailAddress
+  ): gapiDotClientLib.gapiNs.clientNs.Request[ListGuardianInvitationsResponse]
   /**
     * Modifies a guardian invitation.
     *
@@ -97,8 +97,6 @@ trait GuardianInvitationsResource extends js.Object {
     * Classroom has no record of that student, or if the `id` field does not
     * refer to a guardian invitation known to Classroom.
     */
-  def patch(
-    request: gapiDotClientDotClassroomLib.Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUserKeyOauthtoken
-  ): gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation]
+  def patch(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitationIdKey): gapiDotClientLib.gapiNs.clientNs.Request[GuardianInvitation]
 }
 

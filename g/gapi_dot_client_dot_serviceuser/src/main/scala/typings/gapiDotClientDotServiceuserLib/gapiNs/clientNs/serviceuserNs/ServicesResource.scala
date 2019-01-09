@@ -13,7 +13,7 @@ trait ServicesResource extends js.Object {
     *
     * Operation<response: google.protobuf.Empty>
     */
-  def disable(request: gapiDotClientDotServiceuserLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def disable(request: gapiDotClientDotServiceuserLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Enable a service so it can be used with a project.
     * See [Cloud Auth Guide](https://cloud.google.com/docs/authentication) for
@@ -21,9 +21,9 @@ trait ServicesResource extends js.Object {
     *
     * Operation<response: google.protobuf.Empty>
     */
-  def enable(request: gapiDotClientDotServiceuserLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def enable(request: gapiDotClientDotServiceuserLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** List enabled services for the specified consumer. */
-  def list(request: gapiDotClientDotServiceuserLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[ListEnabledServicesResponse]
+  def list(request: gapiDotClientDotServiceuserLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListEnabledServicesResponse]
   /**
     * Search available services.
     *
@@ -31,6 +31,6 @@ trait ServicesResource extends js.Object {
     * authenticated users, also returns all services the calling user has
     * "servicemanagement.services.bind" permission for.
     */
-  def search(request: gapiDotClientDotServiceuserLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchServicesResponse]
+  def search(request: gapiDotClientDotServiceuserLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchServicesResponse]
 }
 

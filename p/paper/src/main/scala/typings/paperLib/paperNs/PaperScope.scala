@@ -19,7 +19,7 @@ class PaperScope () extends js.Object {
   /**
     * Gives access to paper's configurable settings.
     */
-  var settings: paperLib.Anon_HandleSize = js.native
+  var settings: paperLib.Anon_ApplyMatrix = js.native
   /**
     * The reference to the active tool.
     */
@@ -49,7 +49,7 @@ class PaperScope () extends js.Object {
     * @param options.source - the source to be used for the source- mapping, in case the code that’s passed in has already been mingled.
     */
   def execute(code: java.lang.String): scala.Unit = js.native
-  def execute(code: java.lang.String, option: paperLib.Anon_Url): scala.Unit = js.native
+  def execute(code: java.lang.String, option: paperLib.Anon_Source): scala.Unit = js.native
   /**
     * Injects the paper scope into any other given scope. Can be used for examle to inject the currently active PaperScope into the window's global scope, to emulate PaperScript-style globally accessible Paper classes and objects
     * Please note: Using this method may override native constructors (e.g. Path, RGBColor). This may cause problems when using Paper.js in conjunction with other libraries that rely on these constructors. Keep the library scoped if you encounter issues caused by this.

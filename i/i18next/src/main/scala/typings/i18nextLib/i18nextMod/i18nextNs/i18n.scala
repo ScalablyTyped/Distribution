@@ -52,7 +52,7 @@ trait i18n extends js.Object {
     ns: java.lang.String,
     key: java.lang.String,
     value: java.lang.String,
-    options: i18nextLib.Anon_Silent
+    options: i18nextLib.Anon_KeySeparatorSilent
   ): scala.Unit = js.native
   /**
     * Adds a complete bundle.

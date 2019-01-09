@@ -12,6 +12,6 @@ object gotModMembers
       gotLib.gotMod.gotNs.GotFn with (stdLib.Record[
         gotLib.gotLibStrings.get | gotLib.gotLibStrings.post | gotLib.gotLibStrings.put | gotLib.gotLibStrings.patch | gotLib.gotLibStrings.head | gotLib.gotLibStrings.delete, 
         gotLib.gotMod.gotNs.GotFn
-      ]) with gotLib.Anon_ParseError
+      ]) with gotLib.Anon_CancelError
     ]
 

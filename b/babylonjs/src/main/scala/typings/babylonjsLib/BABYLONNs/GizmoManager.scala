@@ -37,7 +37,7 @@ class GizmoManager protected () extends IDisposable {
   /**
     * Gizmo's created by the gizmo manager, gizmo will be null until gizmo has been enabled for the first time
     */
-  var gizmos: babylonjsLib.Anon_PositionGizmo = js.native
+  var gizmos: babylonjsLib.Anon_BoundingBoxGizmo = js.native
   /**
     * If the position gizmo is enabled
     */

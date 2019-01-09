@@ -103,7 +103,7 @@ trait ChartAxisXOptions extends ChartAxisOptions {
     * 1.labelFormatter function should return a string.
     * 2.You can use formatNumber and formatDate functions to format number/date values inside the formatter function.
     */
-  var labelFormatter: js.UndefOr[js.Function1[/* e */ canvasjsLib.Anon_Axis, java.lang.String]] = js.undefined
+  var labelFormatter: js.UndefOr[js.Function1[/* e */ canvasjsLib.Anon_AxisChart, java.lang.String]] = js.undefined
   /**
     * Sets the maximum width of label after which it gets wrapped or clipped depending on whether labelWrap is set to true (default) or false.
     * Default: Automatically calculated based on the length of label.

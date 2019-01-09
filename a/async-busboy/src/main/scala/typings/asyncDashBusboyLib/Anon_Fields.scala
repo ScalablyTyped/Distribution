@@ -9,7 +9,7 @@ trait Anon_Fields extends js.Object {
   var fields: org.scalablytyped.runtime.StringDictionary[js.Any]
   var files: js.UndefOr[
     js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify fs.ReadStream */ _
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify fs.ReadStream */ _
     ]
   ] = js.undefined
 }

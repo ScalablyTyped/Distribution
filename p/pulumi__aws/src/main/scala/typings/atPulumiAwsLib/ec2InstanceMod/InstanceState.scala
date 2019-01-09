@@ -35,7 +35,7 @@ trait InstanceState extends js.Object {
   /**
     * Customize the credit specification of the instance. See Credit Specification below for more details.
     */
-  val creditSpecification: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CpuCredits]] = js.undefined
+  val creditSpecification: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CpuCreditsInput]] = js.undefined
   /**
     * If true, enables [EC2 Instance
     * Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
@@ -48,7 +48,9 @@ trait InstanceState extends js.Object {
   val ebsBlockDevices: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceNameVolumeTypeEncryptedIopsVolumeId]
+        atPulumiPulumiLib.resourceMod.Input[
+          atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeIdVolumeSize
+        ]
       ]
     ]
   ] = js.undefined
@@ -66,7 +68,9 @@ trait InstanceState extends js.Object {
     */
   val ephemeralBlockDevices: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceNameNoDevice]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceNameNoDeviceVirtualName]
+      ]
     ]
   ] = js.undefined
   /**
@@ -123,7 +127,9 @@ trait InstanceState extends js.Object {
     */
   val networkInterfaces: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteOnTermination]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceIndexNetworkInterfaceId]
+      ]
     ]
   ] = js.undefined
   /**
@@ -166,7 +172,9 @@ trait InstanceState extends js.Object {
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevice: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_VolumeType]] = js.undefined
+  val rootBlockDevice: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationIopsVolumeIdVolumeSize]
+  ] = js.undefined
   /**
     * A list of security group names (EC2-Classic) or IDs (default VPC) to associate with.
     */

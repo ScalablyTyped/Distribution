@@ -115,7 +115,7 @@ class Flyout () extends js.Object {
     * Shows the Flyout, if hidden, regardless of other states, top and left aligned at the specified coordinates,
     * @param coordinates Required. The point where the top left corner of the flyout will appear, relative to the top and left edge of the visual viewport.
     **/
-  def showAt(coordinates: winjsLib.Anon_Y): scala.Unit = js.native
+  def showAt(coordinates: winjsLib.Anon_X): scala.Unit = js.native
   /**
     * Shows the Flyout, if hidden, regardless of other states, top and left aligned at the location of the mouse event object,
     * @param mouseEventObj Required. The MouseEvent Object specifying where to show the Flyout.

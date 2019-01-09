@@ -13,7 +13,7 @@ object pkcs7Ns extends js.Object {
     var content: js.UndefOr[java.lang.String | nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer] = js.native
     var contentInfo: js.UndefOr[nodeDashForgeLib.Anon_Value] = js.native
     def addCertificate(certificate: nodeDashForgeLib.nodeDashForgeMod.pkiNs.Certificate): scala.Unit = js.native
-    def addSigner(options: nodeDashForgeLib.Anon_DigestAlgorithm): scala.Unit = js.native
+    def addSigner(options: nodeDashForgeLib.Anon_AuthenticatedAttributes): scala.Unit = js.native
     def sign(): scala.Unit = js.native
     def sign(options: nodeDashForgeLib.Anon_Detached): scala.Unit = js.native
     def toAsn1(): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native

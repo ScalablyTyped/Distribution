@@ -12,6 +12,6 @@ trait CountryResource extends js.Object {
     * See _Authentication and Authorization rules_ and
     * _Get methods rules_ for more information about this method.
     */
-  def get(request: gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenVideoId): gapiDotClientLib.gapiNs.clientNs.Request[StoreInfo]
+  def get(request: gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountIdAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[StoreInfo]
 }
 

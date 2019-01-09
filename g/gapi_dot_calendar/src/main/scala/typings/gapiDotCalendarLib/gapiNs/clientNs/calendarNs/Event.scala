@@ -12,7 +12,7 @@ class Event () extends js.Object {
   // File attachments for the event. Currently only Google Drive attachments are supported.
   var attachments: js.UndefOr[js.Array[gapiDotCalendarLib.Anon_FileId]] = js.native
   // The attendees of the event.
-  var attendees: js.UndefOr[js.Array[gapiDotCalendarLib.Anon_DisplayNameEmail]] = js.native
+  var attendees: js.UndefOr[js.Array[gapiDotCalendarLib.Anon_AdditionalGuestsComment]] = js.native
   var attendeesOmitted: js.UndefOr[scala.Boolean] = js.native
   var colorId: js.UndefOr[java.lang.String] = js.native
   var created: datetime = js.native
@@ -26,9 +26,9 @@ class Event () extends js.Object {
   var endTimeUnspecified: js.UndefOr[scala.Boolean] = js.native
   var etag: etag = js.native
   // Extended properties of the event.
-  var extendedProperties: js.UndefOr[gapiDotCalendarLib.Anon_Shared] = js.native
+  var extendedProperties: js.UndefOr[gapiDotCalendarLib.Anon_KeyPrivate] = js.native
   // A gadget that extends this event.
-  var gadget: js.UndefOr[gapiDotCalendarLib.Anon_Height] = js.native
+  var gadget: js.UndefOr[gapiDotCalendarLib.Anon_DisplayHeight] = js.native
   var guestsCanInviteOthers: js.UndefOr[scala.Boolean] = js.native
   var guestsCanModify: js.UndefOr[scala.Boolean] = js.native
   var guestsCanSeeOtherGuests: js.UndefOr[scala.Boolean] = js.native
@@ -44,16 +44,16 @@ class Event () extends js.Object {
   // The organizer of the event.
   var organizer: gapiDotCalendarLib.Anon_DisplayName = js.native
   // Whether the organizer corresponds to the calendar on which this copy of the event appears. Read-only. The default is False.
-  var originalStartTime: js.UndefOr[gapiDotCalendarLib.Anon_DateDateTime] = js.native
+  var originalStartTime: js.UndefOr[gapiDotCalendarLib.Anon_DateDateTimeTimeZone] = js.native
   var privateCopy: js.UndefOr[scala.Boolean] = js.native
   var recurrence: js.Array[java.lang.String] = js.native
   // For an instance of a recurring event, this is the id of the recurring event to which this instance belongs. Immutable.
   var recurringEventId: js.UndefOr[java.lang.String] = js.native
-  var reminders: gapiDotCalendarLib.Anon_Overrides = js.native
+  var reminders: gapiDotCalendarLib.Anon_OverridesUseDefault = js.native
   var sequence: integer = js.native
   // Source from which the event was created. For example, a web page, an email message or any document identifiable by an URL with HTTP or HTTPS scheme.
   // Can only be seen or modified by the creator of the event.
-  var source: js.UndefOr[gapiDotCalendarLib.Anon_Url] = js.native
+  var source: js.UndefOr[gapiDotCalendarLib.Anon_Title] = js.native
   // The (inclusive) start time of the event. For a recurring event, this is the start time of the first instance.
   var start: gapiDotCalendarLib.Anon_Date = js.native
   var status: js.UndefOr[EventStatus] = js.native

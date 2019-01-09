@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped new Some()Some((args  : ...any))Some(: react-native.react-native.NativeMethodsMixin) */ @JSImport("react-native", "DatePickerIOS")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "DatePickerIOS")
 @js.native
 class DatePickerIOS () extends js.Object
 

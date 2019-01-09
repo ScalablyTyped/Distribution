@@ -19,7 +19,7 @@ object tlsNs extends js.Object {
       * Construct a new tls.TLSSocket object from an existing TCP socket.
       */
     def this(socket: nodeLib.netMod.Socket) = this()
-    def this(socket: nodeLib.netMod.Socket, options: nodeLib.Anon_Server) = this()
+    def this(socket: nodeLib.netMod.Socket, options: nodeLib.Anon_ALPNProtocols) = this()
   }
   
   val CLIENT_RENEG_LIMIT: scala.Double = js.native

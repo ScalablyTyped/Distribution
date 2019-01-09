@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait ButtonState extends js.Object {
   var hasTwoCNChar: scala.Boolean
-  var loading: js.UndefOr[scala.Boolean | antdLib.Anon_DelayNumber] = js.undefined
+  var loading: js.UndefOr[scala.Boolean | antdLib.Anon_Delay] = js.undefined
 }
 

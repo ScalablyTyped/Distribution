@@ -41,7 +41,7 @@ class DecorationSet[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sche
   def map(
     mapping: prosemirrorDashTransformLib.prosemirrorDashTransformMod.Mapping,
     doc: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S],
-    options: prosemirrorDashViewLib.Anon_OnRemove
+    options: prosemirrorDashViewLib.Anon_DecorationSpec
   ): DecorationSet[S] = js.native
   /**
     * Create a new set that contains the decorations in this set, minus

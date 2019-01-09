@@ -31,7 +31,7 @@ trait Post extends js.Object {
   /** Comment control and display setting for readers of this post. */
   var readerComments: js.UndefOr[java.lang.String] = js.undefined
   /** The container of comments on this Post. */
-  var replies: js.UndefOr[gapiDotClientDotBloggerLib.Anon_SelfLinkItems] = js.undefined
+  var replies: js.UndefOr[gapiDotClientDotBloggerLib.Anon_ItemsSelfLink] = js.undefined
   /** The API REST URL to fetch this resource from. */
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
   /** Status of the post. Only set for admin-level requests */

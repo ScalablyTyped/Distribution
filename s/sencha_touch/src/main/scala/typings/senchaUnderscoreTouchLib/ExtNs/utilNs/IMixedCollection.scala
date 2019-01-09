@@ -5,10 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(senchaUnderscoreTouchLib.ExtNs.utilNs.ISortable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses))*/
-trait IMixedCollection extends IAbstractMixedCollection {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- senchaUnderscoreTouchLib.ExtNs.utilNs.ISortable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses. Inlined defaultSortDirection, isSortable, sortRoot, sorters, initSortable, sort */ trait IMixedCollection extends IAbstractMixedCollection {
+  /** [Property] (String) */
+  var defaultSortDirection: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Performs initialization of this mixin  */
   var initSortable: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  /** [Property] (Boolean) */
+  var isSortable: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Reorders each of the items based on a mapping from old index to new index
   		* @param mapping Object Mapping from old item index to new item index.
   		*/
@@ -40,5 +44,9 @@ trait IMixedCollection extends IAbstractMixedCollection {
   var sortByKey: js.UndefOr[
     js.Function2[/* dir */ js.UndefOr[java.lang.String], /* fn */ js.UndefOr[js.Any], scala.Unit]
   ] = js.undefined
+  /** [Property] (String) */
+  var sortRoot: js.UndefOr[java.lang.String] = js.undefined
+  /** [Property] (Ext.util.MixedCollection) */
+  var sorters: js.UndefOr[IMixedCollection] = js.undefined
 }
 

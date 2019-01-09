@@ -13,7 +13,7 @@ trait NfsLocationState extends js.Object {
   /**
     * Configuration block containing information for connecting to the NFS File System.
     */
-  val onPremConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AgentArns]] = js.undefined
+  val onPremConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AgentArnsArray]] = js.undefined
   /**
     * Specifies the IP address or DNS name of the NFS server. The DataSync Agent(s) use this to mount the NFS server.
     */

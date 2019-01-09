@@ -19,7 +19,7 @@ trait LaunchOptions extends js.Object {
   /**
   		 * 当场景为由从另一个小程序或公众号或App打开时，返回此字段
   		 */
-  var referrerInfo: baiduDashAppLib.Anon_AppId
+  var referrerInfo: baiduDashAppLib.Anon_AppIdExtraData
   /**
   		 * 打开小程序的[场景值](https://smartprogram.baidu.com/docs/data/scene/)
   		 */

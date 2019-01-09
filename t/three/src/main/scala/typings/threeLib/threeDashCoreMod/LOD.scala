@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("three/three-core", "LOD")
 @js.native
 class LOD () extends Object3D {
-  var levels: js.Array[threeLib.Anon_Object] = js.native
+  var levels: js.Array[threeLib.Anon_Distance] = js.native
   /**
     * @deprecated Use {@link LOD#levels .levels} instead.
     */

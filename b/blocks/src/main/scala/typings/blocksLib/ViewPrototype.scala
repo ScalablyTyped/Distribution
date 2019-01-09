@@ -19,7 +19,7 @@ trait ViewPrototype
   	 */
   var isActive: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
   var navigateTo: js.UndefOr[js.Function] = js.undefined
-  var options: js.UndefOr[Anon_UrlRoute] = js.undefined
+  var options: js.UndefOr[Anon_Route] = js.undefined
   var parentView: js.UndefOr[js.Any] = js.undefined
   /**
     * Override the ready method to perform actions when the DOM is ready and

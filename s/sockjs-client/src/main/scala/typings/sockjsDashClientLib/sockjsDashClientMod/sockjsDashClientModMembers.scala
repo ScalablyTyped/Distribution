@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("sockjs-client", JSImport.Namespace)
 @js.native
 object sockjsDashClientModMembers
-  extends org.scalablytyped.runtime.TopLevel[sockjsDashClientLib.Anon_Url]
+  extends org.scalablytyped.runtime.TopLevel[sockjsDashClientLib.Anon_CLOSED]
 

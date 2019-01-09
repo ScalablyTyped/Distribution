@@ -59,7 +59,7 @@ object meshNs extends js.Object {
   
   @js.native
   object Mesh extends js.Object {
-    var DRAW_MODES: pixiDotJsLib.Anon_TRIANGLES = js.native
+    var DRAW_MODES: pixiDotJsLib.Anon_TRIANGLEMESH = js.native
   }
   
 }

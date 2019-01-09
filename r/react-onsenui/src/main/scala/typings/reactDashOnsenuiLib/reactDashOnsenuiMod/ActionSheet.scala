@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "ActionSheet")
 @js.native
 class ActionSheet ()
-  extends Component[reactDashOnsenuiLib.Anon_OnPostShowMaskColor, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_AnimationAnimationOptionsIsCancelable, js.Any]
 

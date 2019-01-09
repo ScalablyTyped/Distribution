@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SkyBox protected ()
   extends cesiumLib.cesiumMod.CesiumNs.SkyBox {
-  def this(options: cesiumLib.Anon_Sources) = this()
+  def this(options: cesiumLib.Anon_Show) = this()
   /* CompleteClass */
   override var show: scala.Boolean = js.native
   /* CompleteClass */

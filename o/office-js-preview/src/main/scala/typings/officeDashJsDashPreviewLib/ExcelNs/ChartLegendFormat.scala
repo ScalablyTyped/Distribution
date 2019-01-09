@@ -57,7 +57,7 @@ class ChartLegendFormat ()
   def load(): ChartLegendFormat = js.native
   def load(option: java.lang.String): ChartLegendFormat = js.native
   def load(option: js.Array[java.lang.String]): ChartLegendFormat = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): ChartLegendFormat = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): ChartLegendFormat = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ChartLegendFormatLoadOptions): ChartLegendFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartLegendFormat): scala.Unit = js.native

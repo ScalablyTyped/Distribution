@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("wepy/util", JSImport.Namespace)
 @js.native
 object utilMod extends js.Object {
-  val default: wepyLib.Anon_IsDeepEqual = js.native
+  val default: wepyLib.Anon_A = js.native
 }
 

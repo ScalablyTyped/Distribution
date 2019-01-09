@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EntityCluster ()
   extends cesiumLib.cesiumMod.CesiumNs.EntityCluster {
-  def this(options: cesiumLib.Anon_Enabled) = this()
+  def this(options: cesiumLib.Anon_ClusterBillboards) = this()
   /* CompleteClass */
   override var clusterBillboards: scala.Boolean = js.native
   /* CompleteClass */

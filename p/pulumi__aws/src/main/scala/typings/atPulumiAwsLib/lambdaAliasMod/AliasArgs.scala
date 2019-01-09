@@ -26,7 +26,7 @@ trait AliasArgs extends js.Object {
     * The Lambda alias' route configuration settings. Fields documented below
     */
   val routingConfig: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AdditionalVersionWeights]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AdditionalVersionWeightsKey]
   ] = js.undefined
 }
 

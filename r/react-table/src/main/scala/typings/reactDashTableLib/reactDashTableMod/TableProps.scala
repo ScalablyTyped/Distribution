@@ -5,8 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 6 members from Set(std.Partial<react-table.react-table.ControlledStateCallbackProps>, std.Partial<react-table.react-table.ControlledStateOverrideProps>, std.Partial<react-table.react-table.ComponentDecoratorProps>, std.Partial<react-table.react-table.PivotingProps>, std.Partial<react-table.react-table.TextProps>, std.Partial<react-table.react-table.ComponentProps>) */ @js.native
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof react-table.react-table.TextProps ]:? react-table.react-table.TextProps[P]}
+- Dropped {[ P in keyof react-table.react-table.ComponentDecoratorProps ]:? react-table.react-table.ComponentDecoratorProps[P]}
+- Dropped {[ P in keyof react-table.react-table.ControlledStateCallbackProps ]:? react-table.react-table.ControlledStateCallbackProps[P]}
+- Dropped {[ P in keyof react-table.react-table.PivotingProps ]:? react-table.react-table.PivotingProps[P]}
+- Dropped {[ P in keyof react-table.react-table.ControlledStateOverrideProps ]:? react-table.react-table.ControlledStateOverrideProps[P]}
+- Dropped {[ P in keyof react-table.react-table.ComponentProps ]:? react-table.react-table.ComponentProps[P]} */ @js.native
 trait TableProps[D, ResolvedData] extends js.Object {
   /**
     * Default: string

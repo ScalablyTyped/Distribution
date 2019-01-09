@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Range")
 @js.native
 class Range ()
-  extends Component[reactDashOnsenuiLib.Anon_Value, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_DisabledEModifierOnChange, js.Any]
 

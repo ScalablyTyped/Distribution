@@ -41,7 +41,7 @@ trait DomElement extends js.Object {
     * @return
     *      An object of the JavaScript type Object that contains the x-coordinate and y-coordinate of the upper-left corner, the width, and the height of the element in pixels.
     */
-  def getBounds(element: stdLib.HTMLElement): microsoftDashAjaxLib.Anon_Y = js.native
+  def getBounds(element: stdLib.HTMLElement): microsoftDashAjaxLib.Anon_Height = js.native
   /**
     * @param id
     *      The ID of the element to find.

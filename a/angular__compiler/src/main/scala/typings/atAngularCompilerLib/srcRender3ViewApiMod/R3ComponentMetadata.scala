@@ -18,7 +18,7 @@ trait R3ComponentMetadata extends R3DirectiveMetadata {
     * A list of directive selectors and an expression referencing the directive type which are in the
     * scope of the compilation.
     */
-  var directives: js.Array[atAngularCompilerLib.Anon_ExpressionSelector]
+  var directives: js.Array[atAngularCompilerLib.Anon_ExpressionSelectorString]
   /**
     * An encapsulation policy for the template and CSS styles. One of:
     * - `ViewEncapsulation.Native`: Use shadow roots. This works only if natively available on the
@@ -56,7 +56,7 @@ trait R3ComponentMetadata extends R3DirectiveMetadata {
   /**
     * Information about the component's template.
     */
-  var template: atAngularCompilerLib.Anon_NodesArray
+  var template: atAngularCompilerLib.Anon_Nodes
   /**
     * The list of view providers defined in the component.
     */

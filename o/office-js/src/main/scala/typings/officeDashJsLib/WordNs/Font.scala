@@ -110,7 +110,7 @@ class Font ()
   def load(): Font = js.native
   def load(option: java.lang.String): Font = js.native
   def load(option: js.Array[java.lang.String]): Font = js.native
-  def load(option: officeDashJsLib.Anon_Select): Font = js.native
+  def load(option: officeDashJsLib.Anon_Expand): Font = js.native
   def load(option: officeDashJsLib.WordNs.InterfacesNs.FontLoadOptions): Font = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Font): scala.Unit = js.native

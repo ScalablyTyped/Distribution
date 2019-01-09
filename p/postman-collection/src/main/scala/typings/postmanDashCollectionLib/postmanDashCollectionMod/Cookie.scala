@@ -25,6 +25,6 @@ class Cookie ()
 object Cookie extends js.Object {
   def isCookie(obj: js.Any): scala.Boolean = js.native
   def parse(str: java.lang.String): postmanDashCollectionLib.postmanDashCollectionMod.CookieDefinition = js.native
-  def splitParam(param: java.lang.String): postmanDashCollectionLib.Anon_KeyValueString = js.native
+  def splitParam(param: java.lang.String): postmanDashCollectionLib.Anon_KeyValue = js.native
 }
 

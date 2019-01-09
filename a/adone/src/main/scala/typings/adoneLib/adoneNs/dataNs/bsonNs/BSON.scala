@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("adone.data.bson.BSON")
 @js.native
 class BSON () extends js.Object {
-  def this(types: js.Array[adoneLib.Anon_ArgsAny]) = this()
+  def this(types: js.Array[adoneLib.Anon_ArgsAnyType]) = this()
   /**
     * Calculates the size BSON object for the given object
     */
@@ -53,7 +53,7 @@ class BSON () extends js.Object {
   def serializeWithBufferAndIndex(
     `object`: js.Object,
     buffer: nodeLib.Buffer,
-    options: adoneLib.adoneNs.dataNs.bsonNs.INs.SerializeOptions with adoneLib.Anon_Index
+    options: adoneLib.adoneNs.dataNs.bsonNs.INs.SerializeOptions with adoneLib.Anon_IndexNumber
   ): scala.Double = js.native
 }
 

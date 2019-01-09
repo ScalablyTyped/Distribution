@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ResolveWithObject extends js.Object {
-  var resolveWithObject: sharpLib.sharpLibNumbers.`false`
+  var resolveWithObject: sharpLib.sharpLibNumbers.`true`
 }
 

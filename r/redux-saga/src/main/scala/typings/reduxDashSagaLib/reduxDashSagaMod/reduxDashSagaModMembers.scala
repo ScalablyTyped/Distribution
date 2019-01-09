@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object reduxDashSagaModMembers extends js.Object {
   val CANCEL: java.lang.String = js.native
   val END: END = js.native
-  val buffers: reduxDashSagaLib.Anon_Sliding = js.native
-  val takeLatest: reduxDashSagaLib.Anon_ChannelWorker = js.native
+  val buffers: reduxDashSagaLib.Anon_Dropping = js.native
+  val takeLatest: reduxDashSagaLib.Anon_Arg1Arg2 = js.native
   def channel[T](): Channel[T] = js.native
   def channel[T](buffer: Buffer[T]): Channel[T] = js.native
   def default[C /* <: js.Object */](): SagaMiddleware[C] = js.native

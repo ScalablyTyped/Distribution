@@ -12,7 +12,7 @@ trait INewContact extends js.Object {
   /**
     * The contact's email addresses.
     */
-  var emails: js.UndefOr[microsoftDashLiveDashConnectLib.Anon_Preferred] = js.undefined
+  var emails: js.UndefOr[microsoftDashLiveDashConnectLib.Anon_Business] = js.undefined
   /**
     * The contact's first name.
     */

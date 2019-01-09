@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait ResourcesResource extends js.Object {
   /** Gets information about a single resource. */
-  def get(request: gapiDotClientDotDeploymentmanagerLib.Anon_Deployment): gapiDotClientLib.gapiNs.clientNs.Request[Resource]
+  def get(request: gapiDotClientDotDeploymentmanagerLib.Anon_AltDeploymentFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Resource]
   /** Lists all resources in a given deployment. */
-  def list(request: gapiDotClientDotDeploymentmanagerLib.Anon_DeploymentProject): gapiDotClientLib.gapiNs.clientNs.Request[ResourcesListResponse]
+  def list(request: gapiDotClientDotDeploymentmanagerLib.Anon_AltDeploymentFields): gapiDotClientLib.gapiNs.clientNs.Request[ResourcesListResponse]
 }
 

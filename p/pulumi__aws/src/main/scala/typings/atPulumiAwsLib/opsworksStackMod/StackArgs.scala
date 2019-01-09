@@ -31,7 +31,11 @@ trait StackArgs extends js.Object {
     * described below.
     */
   val customCookbooksSources: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_UrlUsername]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PasswordRevisionSshKeyType]
+      ]
+    ]
   ] = js.undefined
   /**
     * Custom JSON attributes to apply to the entire stack.

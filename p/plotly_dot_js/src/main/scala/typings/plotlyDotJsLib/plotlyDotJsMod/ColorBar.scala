@@ -28,7 +28,7 @@ trait ColorBar extends js.Object {
   var tickcolor: Color
   var tickfont: Font
   var tickformat: java.lang.String
-  var tickformatstops: plotlyDotJsLib.Anon_Value
+  var tickformatstops: plotlyDotJsLib.Anon_Dtickrange
   var ticklen: scala.Double
   var tickmode: plotlyDotJsLib.plotlyDotJsLibStrings.auto | plotlyDotJsLib.plotlyDotJsLibStrings.linear | plotlyDotJsLib.plotlyDotJsLibStrings.array
   var tickprefix: java.lang.String

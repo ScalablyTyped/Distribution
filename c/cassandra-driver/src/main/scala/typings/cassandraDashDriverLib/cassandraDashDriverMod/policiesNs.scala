@@ -148,13 +148,13 @@ object policiesNs extends js.Object {
         writeType: java.lang.String
       ): DecisionInfo
       def rethrowResult(): cassandraDashDriverLib.Anon_Decision
-      def retryResult(): cassandraDashDriverLib.Anon_UseCurrentHost
+      def retryResult(): cassandraDashDriverLib.Anon_Consistency
     }
     
     @js.native
     trait RetryPolicyStatic
       extends org.scalablytyped.runtime.Instantiable0[RetryPolicy] {
-      var retryDecision: cassandraDashDriverLib.Anon_Rethrow = js.native
+      var retryDecision: cassandraDashDriverLib.Anon_Ignore = js.native
     }
     
     @js.native

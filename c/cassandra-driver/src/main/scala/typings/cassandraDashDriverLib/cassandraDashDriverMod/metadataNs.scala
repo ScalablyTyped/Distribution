@@ -41,7 +41,7 @@ object metadataNs extends js.Object {
   trait DataCollection extends js.Object {
     var bloomFilterFalsePositiveChance: scala.Double
     var caching: caching
-    var clusterKeys: js.Array[cassandraDashDriverLib.Anon_Order]
+    var clusterKeys: js.Array[cassandraDashDriverLib.Anon_C]
     var clusteringOrder: js.Array[java.lang.String]
     var columns: js.Array[ColumnInfo]
     var columnsByName: org.scalablytyped.runtime.StringDictionary[ColumnInfo]
@@ -57,7 +57,7 @@ object metadataNs extends js.Object {
     var maxIndexInterval: js.UndefOr[scala.Double] = js.undefined
     var minIndexInterval: js.UndefOr[scala.Double] = js.undefined
     var name: java.lang.String
-    var partitionKeys: js.Array[cassandraDashDriverLib.Anon_Index]
+    var partitionKeys: js.Array[cassandraDashDriverLib.Anon_CIndex]
     var populateCacheOnFlush: scala.Boolean
     var readRepairChance: scala.Double
     var speculateRetry: java.lang.String

@@ -11,7 +11,7 @@ trait VNodeData extends js.Object {
   var directives: js.UndefOr[js.Array[VNodeDirective]] = js.undefined
   var domProps: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var hook: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Function]] = js.undefined
-  var inlineTemplate: js.UndefOr[vueLib.Anon_StaticRenderFns] = js.undefined
+  var inlineTemplate: js.UndefOr[vueLib.Anon_Render] = js.undefined
   var keepAlive: js.UndefOr[scala.Boolean] = js.undefined
   var key: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var nativeOn: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Function | js.Array[js.Function]]] = js.undefined

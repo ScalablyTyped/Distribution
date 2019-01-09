@@ -16,19 +16,19 @@ object paymentsNs extends js.Object {
     var witness: js.UndefOr[js.Array[nodeLib.Buffer]] = js.native
   }
   
-  def p2data(a: bitcoinjsDashLibLib.Anon_Data): bitcoinjsDashLibLib.Anon_DataOutput = js.native
-  def p2data(a: bitcoinjsDashLibLib.Anon_Data, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_DataOutput = js.native
-  def p2ms(a: bitcoinjsDashLibLib.Anon_NetworkN): bitcoinjsDashLibLib.Anon_N = js.native
-  def p2ms(a: bitcoinjsDashLibLib.Anon_NetworkN, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_N = js.native
-  def p2pk(a: bitcoinjsDashLibLib.Anon_NetworkPubkeySignature): bitcoinjsDashLibLib.Anon_PubkeySignature = js.native
-  def p2pk(a: bitcoinjsDashLibLib.Anon_NetworkPubkeySignature, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_PubkeySignature = js.native
-  def p2pkh(a: bitcoinjsDashLibLib.Anon_NetworkPubkey): bitcoinjsDashLibLib.Anon_Pubkey = js.native
-  def p2pkh(a: bitcoinjsDashLibLib.Anon_NetworkPubkey, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_Pubkey = js.native
-  def p2sh(a: bitcoinjsDashLibLib.Anon_NetworkRedeem): bitcoinjsDashLibLib.Anon_Redeem = js.native
-  def p2sh(a: bitcoinjsDashLibLib.Anon_NetworkRedeem, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_Redeem = js.native
-  def p2wpkh(a: bitcoinjsDashLibLib.Anon_Network): bitcoinjsDashLibLib.Anon_Pubkey = js.native
-  def p2wpkh(a: bitcoinjsDashLibLib.Anon_Network, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_Pubkey = js.native
-  def p2wsh(a: bitcoinjsDashLibLib.Anon_NetworkRedeem): bitcoinjsDashLibLib.Anon_Redeem = js.native
-  def p2wsh(a: bitcoinjsDashLibLib.Anon_NetworkRedeem, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_Redeem = js.native
+  def p2data(a: bitcoinjsDashLibLib.Anon_DataNetwork): bitcoinjsDashLibLib.Anon_DataOutput = js.native
+  def p2data(a: bitcoinjsDashLibLib.Anon_DataNetwork, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_DataOutput = js.native
+  def p2ms(a: bitcoinjsDashLibLib.Anon_InputM): bitcoinjsDashLibLib.Anon_InputMN = js.native
+  def p2ms(a: bitcoinjsDashLibLib.Anon_InputM, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_InputMN = js.native
+  def p2pk(a: bitcoinjsDashLibLib.Anon_InputNetwork): bitcoinjsDashLibLib.Anon_InputOutputPubkey = js.native
+  def p2pk(a: bitcoinjsDashLibLib.Anon_InputNetwork, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_InputOutputPubkey = js.native
+  def p2pkh(a: bitcoinjsDashLibLib.Anon_Address): bitcoinjsDashLibLib.Anon_AddressHash = js.native
+  def p2pkh(a: bitcoinjsDashLibLib.Anon_Address, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_AddressHash = js.native
+  def p2sh(a: bitcoinjsDashLibLib.Anon_AddressHashInput): bitcoinjsDashLibLib.Anon_AddressHashInputOutput = js.native
+  def p2sh(a: bitcoinjsDashLibLib.Anon_AddressHashInput, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_AddressHashInputOutput = js.native
+  def p2wpkh(a: bitcoinjsDashLibLib.Anon_AddressHashInputNetwork): bitcoinjsDashLibLib.Anon_AddressHash = js.native
+  def p2wpkh(a: bitcoinjsDashLibLib.Anon_AddressHashInputNetwork, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_AddressHash = js.native
+  def p2wsh(a: bitcoinjsDashLibLib.Anon_AddressHashInput): bitcoinjsDashLibLib.Anon_AddressHashInputOutput = js.native
+  def p2wsh(a: bitcoinjsDashLibLib.Anon_AddressHashInput, opts: bitcoinjsDashLibLib.Anon_Validate): bitcoinjsDashLibLib.Anon_AddressHashInputOutput = js.native
 }
 

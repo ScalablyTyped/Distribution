@@ -17,7 +17,7 @@ trait ocrIdCardResponse extends js.Object {
   var risk_type: java.lang.String
    // 识别结果数，表示words_result的元素个数。
   var words_result: // 定位和识别结果
-  org.scalablytyped.runtime.StringDictionary[baiduDashAppLib.Anon_LocationWords]
+  org.scalablytyped.runtime.StringDictionary[baiduDashAppLib.Anon_Location]
    // 唯一的log id，用于问题定位。
   var words_result_num: scala.Double
 }

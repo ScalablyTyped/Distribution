@@ -31,7 +31,7 @@ trait SectionListProps[ItemT] extends VirtualizedListWithoutRenderItemProps[Item
     js.Function2[
       /* data */ js.Array[SectionListData[ItemT]] | scala.Null, 
       /* index */ scala.Double, 
-      reactDashNativeLib.Anon_Length
+      reactDashNativeLib.Anon_Index
     ]
   ] = js.undefined
   /**

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Field extends js.Object {
-  var field: graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]]
-  var name: java.lang.String
+  var field: java.lang.String
+  var fragment: java.lang.String
 }
 

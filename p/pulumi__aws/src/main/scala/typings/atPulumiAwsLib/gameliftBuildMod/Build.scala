@@ -29,7 +29,7 @@ class Build protected ()
   /**
     * Information indicating where your game build files are stored. See below.
     */
-  val storageLocation: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_RoleArn] = js.native
+  val storageLocation: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BucketKey] = js.native
   /**
     * Version that is associated with this build.
     */

@@ -5,18 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_ContentScript extends js.Object {
-  var allow: js.UndefOr[Anon_Script] = js.undefined
-  var contentScript: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var contentScriptFile: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var contentScriptOptions: js.UndefOr[js.Any] = js.undefined
-  var contentScriptWhen: js.UndefOr[
-    jpmLib.jpmLibStrings.start | jpmLib.jpmLibStrings.ready | jpmLib.jpmLibStrings.end
-  ] = js.undefined
-  var contentURL: js.UndefOr[java.lang.String] = js.undefined
-  var include: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | stdLib.RegExp | js.Array[stdLib.RegExp]
-  ] = js.undefined
-  var onMessage: js.UndefOr[js.Function1[/* message */ java.lang.String, _]] = js.undefined
+  var contentScript: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.native
+  var contentScriptFile: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.native
+  var context: js.UndefOr[js.Array[jpmLib.contextDashMenuMod.Context]] = js.native
+  var image: js.UndefOr[java.lang.String] = js.native
+  var items: js.Array[jpmLib.contextDashMenuMod.ItemMenuSeparator] = js.native
+  var label: java.lang.String = js.native
+  def onMessage(): scala.Unit = js.native
+  def onMessage(message: js.Any): scala.Unit = js.native
 }
 

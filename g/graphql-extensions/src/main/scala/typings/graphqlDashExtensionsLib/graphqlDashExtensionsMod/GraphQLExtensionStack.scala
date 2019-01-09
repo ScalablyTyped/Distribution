@@ -17,7 +17,7 @@ class GraphQLExtensionStack[TContext] protected () extends js.Object {
   def executionDidStart(o: graphqlDashExtensionsLib.Anon_ExecutionArgs): EndHandler = js.native
   def format(): js.Object = js.native
   def parsingDidStart(o: graphqlDashExtensionsLib.Anon_QueryString): EndHandler = js.native
-  def requestDidStart(o: graphqlDashExtensionsLib.Anon_ParsedQuery[TContext]): EndHandler = js.native
+  def requestDidStart(o: graphqlDashExtensionsLib.Anon_ContextExtensions[TContext]): EndHandler = js.native
   def validationDidStart(): EndHandler = js.native
   def willResolveField(
     source: js.Any,
@@ -25,6 +25,6 @@ class GraphQLExtensionStack[TContext] protected () extends js.Object {
     context: TContext,
     info: graphqlLib.typeDefinitionMod.GraphQLResolveInfo
   ): js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ js.UndefOr[js.Any], scala.Unit] = js.native
-  def willSendResponse(o: graphqlDashExtensionsLib.Anon_GraphqlResponse[TContext]): graphqlDashExtensionsLib.Anon_GraphqlResponse[TContext] = js.native
+  def willSendResponse(o: graphqlDashExtensionsLib.Anon_ContextGraphqlResponse[TContext]): graphqlDashExtensionsLib.Anon_ContextGraphqlResponse[TContext] = js.native
 }
 

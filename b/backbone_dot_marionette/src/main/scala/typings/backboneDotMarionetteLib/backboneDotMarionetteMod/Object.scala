@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(backboneDotMarionetteLib.backboneDotMarionetteMod.RadioMixin because Would inherit conflicting mutable fields List(bindEvents, unbindEvents))*/
-@JSImport("backbone.marionette", "Object")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- backboneDotMarionetteLib.backboneDotMarionetteMod.RadioMixin because var conflicts: bindEvents, unbindEvents. Inlined getChannel, bindRequests, unbindRequests */ @JSImport("backbone.marionette", "Object")
 @js.native
 class Object ()
   extends CommonMixin
@@ -14,10 +14,13 @@ class Object ()
   def this(options: ObjectOptions) = this()
   /* CompleteClass */
   override var bindEvents: js.Any = js.native
+  var bindRequests: js.Any = js.native
   /**
     * Defines the Radio channel that will be used for the requests and/or events
     */
   var channelName: java.lang.String = js.native
+  @JSName("getChannel")
+  var getChannel_FObject: js.Any = js.native
   /* CompleteClass */
   override var getOption: js.Any = js.native
   /* CompleteClass */
@@ -34,6 +37,7 @@ class Object ()
   var radioRequests: js.Any = js.native
   /* CompleteClass */
   override var unbindEvents: js.Any = js.native
+  var unbindRequests: js.Any = js.native
   /**
     * This method is used to bind a backbone "entity" (collection/model) to
     * methods on a target object.

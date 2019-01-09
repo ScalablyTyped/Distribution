@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class BoxGraphics ()
   extends cesiumLib.cesiumMod.CesiumNs.BoxGraphics {
-  def this(options: cesiumLib.Anon_Show) = this()
+  def this(options: cesiumLib.Anon_Dimensions) = this()
 }
 

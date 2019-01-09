@@ -35,6 +35,6 @@ object UsbInterfaceDescriptor extends js.Object {
     * Retrieves information about the alternate setting in a UsbInterfaceDescriptor object that is contained in a UsbDescriptor object.
     * @param descriptor The UsbDescriptor object to parse.
     */
-  def tryParse(descriptor: winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbDescriptor): winrtDashUwpLib.Anon_ReturnValue = js.native
+  def tryParse(descriptor: winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbDescriptor): winrtDashUwpLib.Anon_ParsedReturnValueBoolean = js.native
 }
 

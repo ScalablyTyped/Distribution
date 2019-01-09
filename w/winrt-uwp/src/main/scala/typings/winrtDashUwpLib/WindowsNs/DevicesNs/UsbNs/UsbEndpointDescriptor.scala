@@ -39,6 +39,6 @@ object UsbEndpointDescriptor extends js.Object {
     * Retrieves the USB endpoint descriptor in a UsbEndpointDescriptor object that is contained in a UsbDescriptor object.
     * @param descriptor The UsbDescriptor object to parse.
     */
-  def tryParse(descriptor: winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbDescriptor): winrtDashUwpLib.Anon_ReturnValueParsed = js.native
+  def tryParse(descriptor: winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbDescriptor): winrtDashUwpLib.Anon_ParsedReturnValue = js.native
 }
 

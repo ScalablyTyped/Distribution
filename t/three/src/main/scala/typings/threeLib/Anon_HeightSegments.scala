@@ -6,11 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_HeightSegments extends js.Object {
-  var depth: scala.Double
-  var depthSegments: scala.Double
-  var height: scala.Double
   var heightSegments: scala.Double
-  var width: scala.Double
+  var phiLength: scala.Double
+  var phiStart: scala.Double
+  var radius: scala.Double
+  var thetaLength: scala.Double
+  var thetaStart: scala.Double
   var widthSegments: scala.Double
 }
 

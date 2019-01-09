@@ -17,7 +17,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashVbideLib.VBIDENs.CommandBarEvents, 
-      /* parameter */ Anon_Handled, 
+      /* parameter */ Anon_CancelDefault, 
       scala.Unit
     ]
   ): scala.Unit = js.native

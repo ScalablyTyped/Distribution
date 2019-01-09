@@ -21,6 +21,6 @@ class Tile protected () extends js.Object {
 @JSImport("athenajs", "Tile")
 @js.native
 object Tile extends js.Object {
-  var TYPE: athenajsLib.Anon_WALL = js.native
+  var TYPE: athenajsLib.Anon_1 = js.native
 }
 

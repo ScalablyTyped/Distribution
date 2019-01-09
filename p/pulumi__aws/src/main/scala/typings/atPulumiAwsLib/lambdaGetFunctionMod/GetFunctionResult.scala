@@ -21,7 +21,7 @@ trait GetFunctionResult extends js.Object {
   /**
     * The Lambda environment's configuration settings.
     */
-  val environment: atPulumiAwsLib.Anon_Variables
+  val environment: atPulumiAwsLib.Anon_KeyVariablesString
   /**
     * The function entrypoint in your code.
     */
@@ -85,6 +85,6 @@ trait GetFunctionResult extends js.Object {
   /**
     * VPC configuration associated with your Lambda function.
     */
-  val vpcConfig: atPulumiAwsLib.Anon_VpcIdSecurityGroupIds
+  val vpcConfig: atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray
 }
 

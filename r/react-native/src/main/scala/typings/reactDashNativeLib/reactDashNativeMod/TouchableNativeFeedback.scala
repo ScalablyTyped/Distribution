@@ -5,13 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped new Some()Some((args  : ...any))Some(: react-native.react-native.TouchableMixin) */ @JSImport("react-native", "TouchableNativeFeedback")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped new (args : ...any): react-native.react-native.TouchableMixin */ @JSImport("react-native", "TouchableNativeFeedback")
 @js.native
 class TouchableNativeFeedback () extends js.Object
 
-/* RemoveDifficultInheritance: 
-- Dropped new Some()Some((args  : ...any))Some(: react-native.react-native.TouchableMixin) */ @JSImport("react-native", "TouchableNativeFeedback")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped new (args : ...any): react-native.react-native.TouchableMixin */ @JSImport("react-native", "TouchableNativeFeedback")
 @js.native
 object TouchableNativeFeedback extends js.Object {
   /**

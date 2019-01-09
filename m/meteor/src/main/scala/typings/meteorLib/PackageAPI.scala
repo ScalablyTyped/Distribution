@@ -80,17 +80,17 @@ trait PackageAPI
   def imply(packageNames: js.Array[java.lang.String], architecture: js.Array[java.lang.String]): scala.Unit = js.native
   def use(packageNames: java.lang.String): scala.Unit = js.native
   def use(packageNames: java.lang.String, architecture: java.lang.String): scala.Unit = js.native
-  def use(packageNames: java.lang.String, architecture: java.lang.String, options: Anon_Weak): scala.Unit = js.native
+  def use(packageNames: java.lang.String, architecture: java.lang.String, options: Anon_Unordered): scala.Unit = js.native
   def use(packageNames: java.lang.String, architecture: js.Array[java.lang.String]): scala.Unit = js.native
-  def use(packageNames: java.lang.String, architecture: js.Array[java.lang.String], options: Anon_Weak): scala.Unit = js.native
+  def use(packageNames: java.lang.String, architecture: js.Array[java.lang.String], options: Anon_Unordered): scala.Unit = js.native
   def use(packageNames: js.Array[java.lang.String]): scala.Unit = js.native
   def use(packageNames: js.Array[java.lang.String], architecture: java.lang.String): scala.Unit = js.native
-  def use(packageNames: js.Array[java.lang.String], architecture: java.lang.String, options: Anon_Weak): scala.Unit = js.native
+  def use(packageNames: js.Array[java.lang.String], architecture: java.lang.String, options: Anon_Unordered): scala.Unit = js.native
   def use(packageNames: js.Array[java.lang.String], architecture: js.Array[java.lang.String]): scala.Unit = js.native
   def use(
     packageNames: js.Array[java.lang.String],
     architecture: js.Array[java.lang.String],
-    options: Anon_Weak
+    options: Anon_Unordered
   ): scala.Unit = js.native
   def versionsFrom(meteorRelease: java.lang.String): scala.Unit = js.native
   def versionsFrom(meteorRelease: js.Array[java.lang.String]): scala.Unit = js.native

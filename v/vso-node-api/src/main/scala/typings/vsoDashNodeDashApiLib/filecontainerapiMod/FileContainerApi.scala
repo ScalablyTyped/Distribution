@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(vsoDashNodeDashApiLib.filecontainerapiMod.IFileContainerApi because Would inherit conflicting mutable fields List(baseUrl, http, rest, userAgent, vsoClient))*/
-@JSImport("vso-node-api/FileContainerApi", "FileContainerApi")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- vsoDashNodeDashApiLib.filecontainerapiMod.IFileContainerApi because var conflicts: baseUrl, http, rest, userAgent, vsoClient. Inlined createItem, getItem, getItem, getItem, getItem */ @JSImport("vso-node-api/FileContainerApi", "FileContainerApi")
 @js.native
 class FileContainerApi protected ()
   extends vsoDashNodeDashApiLib.filecontainerapibaseMod.FileContainerApiBase {

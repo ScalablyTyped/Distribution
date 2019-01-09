@@ -15,8 +15,8 @@ trait AccountsResource extends js.Object {
   var savedadstyles: SavedadstylesResource
   var urlchannels: UrlchannelsResource
   /** Get information about the selected AdSense account. */
-  def get(request: gapiDotClientDotAdsenseLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Account]
+  def get(request: gapiDotClientDotAdsenseLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Account]
   /** List all accounts available to this AdSense account. */
-  def list(request: gapiDotClientDotAdsenseLib.Anon_MaxResults): gapiDotClientLib.gapiNs.clientNs.Request[Accounts]
+  def list(request: gapiDotClientDotAdsenseLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Accounts]
 }
 

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CompilerConfig ()
   extends atAngularCompilerLib.srcCompilerMod.CompilerConfig {
-  def this(hasDefaultEncapsulationUseJitJitDevModeMissingTranslationPreserveWhitespacesStrictInjectionParameters: atAngularCompilerLib.Anon_PreserveWhitespacesDefaultEncapsulation) = this()
+  def this(hasDefaultEncapsulationUseJitJitDevModeMissingTranslationPreserveWhitespacesStrictInjectionParameters: atAngularCompilerLib.Anon_DefaultEncapsulation) = this()
 }
 

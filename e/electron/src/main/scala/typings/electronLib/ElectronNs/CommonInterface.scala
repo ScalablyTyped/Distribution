@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait CommonInterface extends js.Object {
   var clipboard: Clipboard
   var crashReporter: CrashReporter
-  var nativeImage: org.scalablytyped.runtime.Instantiable0[NativeImage]
+  var nativeImage: electronLib.Anon_Buffer
   var screen: Screen
   var shell: Shell
 }

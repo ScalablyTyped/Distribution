@@ -53,11 +53,11 @@ class Acl protected () extends AclRoleAccessorMethods {
   var default: Acl = js.native
   var pathPrefix: java.lang.String = js.native
   @JSName("request_")
-  var request__Original: requestLib.requestMod.requestNs.RequestAPI[
+  var request__Original: atGoogleDashCloudStorageLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
     requestLib.requestMod.requestNs.Request, 
     requestLib.requestMod.requestNs.CoreOptions, 
     requestLib.requestMod.requestNs.RequiredUriUrl
-  ] = js.native
+  ]) = js.native
   def add(options: AddAclOptions): js.Promise[AddAclResponse] = js.native
   def add(options: AddAclOptions, callback: AddAclCallback): scala.Unit = js.native
   def delete(options: RemoveAclOptions): js.Promise[RemoveAclResponse] = js.native
@@ -84,8 +84,8 @@ class Acl protected () extends AclRoleAccessorMethods {
     * @param {function} callback Callback function.
     */
   def request(
-    reqOpts: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify DecorateRequestOptions */ js.Any,
-    callback: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BodyResponseCallback */ js.Any
+    reqOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DecorateRequestOptions */ js.Any,
+    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BodyResponseCallback */ js.Any
   ): scala.Unit = js.native
   def `request_`(
     options: requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions

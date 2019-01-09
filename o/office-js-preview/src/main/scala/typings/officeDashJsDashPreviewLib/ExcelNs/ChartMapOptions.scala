@@ -61,7 +61,7 @@ class ChartMapOptions ()
   def load(): ChartMapOptions = js.native
   def load(option: java.lang.String): ChartMapOptions = js.native
   def load(option: js.Array[java.lang.String]): ChartMapOptions = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): ChartMapOptions = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): ChartMapOptions = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ChartMapOptionsLoadOptions): ChartMapOptions = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartMapOptions): scala.Unit = js.native

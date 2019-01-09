@@ -10,7 +10,7 @@ trait BlissStatic extends js.Object {
   @JSName("$")
   var $_Original: BlissStaticCollection = js.native
   var classProps: js.Object = js.native
-  var hooks: blissfuljsLib.Anon_Run = js.native
+  var hooks: blissfuljsLib.Anon_Add = js.native
   @JSName("$")
   def $(expr: stdLib.Node): js.Array[stdLib.Node] = js.native
   @JSName("$")
@@ -33,9 +33,9 @@ trait BlissStatic extends js.Object {
   def $_TBlissDecoratedElement[T](selector: java.lang.String, context: blissfuljsLib.Element): BlissDecoratedElement[T] = js.native
   def apply[T](selector: java.lang.String): BlissDecoratedElement[T] = js.native
   def apply[T](selector: java.lang.String, context: blissfuljsLib.Element): BlissDecoratedElement[T] = js.native
-  def Class(options: blissfuljsLib.Anon_PropertyNameStatic): js.Object = js.native
+  def Class(options: blissfuljsLib.Anon_Abstract): js.Object = js.native
   @JSName("Class")
-  def Class_TT[T](options: blissfuljsLib.Anon_PropertyNameStatic): T = js.native
+  def Class_TT[T](options: blissfuljsLib.Anon_Abstract): T = js.native
   def add(callbacks: org.scalablytyped.runtime.StringDictionary[js.Function]): scala.Unit = js.native
   def add(callbacks: org.scalablytyped.runtime.StringDictionary[js.Function], on: blissfuljsLib.Array[_]): scala.Unit = js.native
   def add(callbacks: org.scalablytyped.runtime.StringDictionary[js.Function], on: BlissStatic): scala.Unit = js.native
@@ -335,7 +335,7 @@ trait BlissStatic extends js.Object {
   @JSName("extend")
   def extend_TT[T](target: js.Object, source: js.Any, whitelist: stdLib.RegExp): T = js.native
   def fetch(url: java.lang.String): js.Promise[stdLib.XMLHttpRequest] = js.native
-  def fetch(url: java.lang.String, options: blissfuljsLib.Anon_PropertyName): js.Promise[stdLib.XMLHttpRequest] = js.native
+  def fetch(url: java.lang.String, options: blissfuljsLib.Anon_Data): js.Promise[stdLib.XMLHttpRequest] = js.native
   def fire[T](subject: blissfuljsLib.Array[BlissDecoratedElement[T]], `type`: java.lang.String): blissfuljsLib.Array[BlissDecoratedElement[T]] = js.native
   def fire[T](
     subject: blissfuljsLib.Array[BlissDecoratedElement[T]],

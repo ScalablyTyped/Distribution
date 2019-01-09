@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-weui", "LoadMore")
 @js.native
 object LoadMoreNs extends js.Object {
-  val defaultProps: reactDashWeuiLib.Anon_ShowLine = js.native
+  val defaultProps: reactDashWeuiLib.Anon_Loading = js.native
   @JSName("propTypes")
   @js.native
   object propTypesNs extends js.Object {

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object varintMod extends js.Object {
   val decode: varintLib.Anon_Buf = js.native
-  val encode: varintLib.Anon_Num = js.native
+  val encode: varintLib.Anon_Array = js.native
   def encodingLength(num: scala.Double): scala.Double = js.native
 }
 

@@ -6,6 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Expand extends js.Object {
-  var expand: Anon_R
+  /**
+    * Enable or disable expanding pie pieces.
+    */
+  var expand: js.UndefOr[scala.Boolean] = js.undefined
+  var label: js.UndefOr[Anon_Format] = js.undefined
 }
 

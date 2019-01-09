@@ -11,6 +11,6 @@ class PolyhedronBufferGeometry protected () extends BufferGeometry {
   def this(vertices: js.Array[scala.Double], indices: js.Array[scala.Double]) = this()
   def this(vertices: js.Array[scala.Double], indices: js.Array[scala.Double], radius: scala.Double) = this()
   def this(vertices: js.Array[scala.Double], indices: js.Array[scala.Double], radius: scala.Double, detail: scala.Double) = this()
-  var parameters: threeLib.Anon_VerticesIndices = js.native
+  var parameters: threeLib.Anon_DetailIndices = js.native
 }
 

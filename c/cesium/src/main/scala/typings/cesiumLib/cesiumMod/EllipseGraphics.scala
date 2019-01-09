@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class EllipseGraphics ()
   extends cesiumLib.cesiumMod.CesiumNs.EllipseGraphics {
-  def this(options: cesiumLib.Anon_ExtrudedHeightShowOutline) = this()
+  def this(options: cesiumLib.Anon_ExtrudedHeight) = this()
 }
 

@@ -13,7 +13,7 @@ trait RawMemory extends js.Object {
   /**
     * An object with a memory segment of another player available on this tick. Use `setActiveForeignSegment` to fetch segments on the next tick.
     */
-  var foreignSegment: Anon_UsernameData = js.native
+  var foreignSegment: Anon_Data = js.native
   /**
     * A string with a shared memory segment available on every world shard. Maximum string length is 100 KB.
     *

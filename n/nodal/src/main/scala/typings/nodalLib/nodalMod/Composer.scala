@@ -13,18 +13,8 @@ class Composer[T /* <: Model */] protected () extends js.Object {
     * @param {Nodal.Model} Model The model class the composer is querying from
     * @param {Nodal.Composer} [parent=null] The composer's parent (another composer instance)
     */
-  def this(modelConstructor: org.scalablytyped.runtime.Instantiable3[
-      /* modelData */ js.Object, 
-      /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
-      /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
-      Model
-    ]) = this()
-  def this(modelConstructor: org.scalablytyped.runtime.Instantiable3[
-      /* modelData */ js.Object, 
-      /* fromStorage */ js.UndefOr[/* fromStorage */ scala.Boolean], 
-      /* fromSeed */ js.UndefOr[/* fromSeed */ scala.Boolean], 
-      Model
-    ], parent: Composer[_]) = this()
+  def this(modelConstructor: nodalLib.Anon_CalcField) = this()
+  def this(modelConstructor: nodalLib.Anon_CalcField, parent: Composer[_]) = this()
   var Model: T = js.native
   var _command: js.Any = js.native
   var _parent: js.Any = js.native

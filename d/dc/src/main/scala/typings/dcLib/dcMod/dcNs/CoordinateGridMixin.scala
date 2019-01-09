@@ -46,7 +46,7 @@ trait CoordinateGridMixin[T]
   var xAxisPadding_Original: IGetSet[scala.Double, T] = js.native
   @JSName("xAxis")
   var xAxis_Original: IGetSet[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.svg.Axis */ _, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ _, 
     T
   ] = js.native
   @JSName("xUnits")
@@ -59,7 +59,7 @@ trait CoordinateGridMixin[T]
   var yAxisPadding_Original: IGetSet[scala.Double, T] = js.native
   @JSName("yAxis")
   var yAxis_Original: IGetSet[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.svg.Axis */ _, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ _, 
     T
   ] = js.native
   @JSName("y")
@@ -119,7 +119,7 @@ trait CoordinateGridMixin[T]
   def x(): js.Function1[/* n */ js.Any, _] = js.native
   def x(t: js.Function1[/* n */ js.Any, _]): js.Function1[/* n */ js.Any, _] = js.native
   def xAxis(): js.Any = js.native
-  def xAxis(t: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.svg.Axis */ js.Any): js.Any = js.native
+  def xAxis(t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any): js.Any = js.native
   def xAxisLabel(): java.lang.String = js.native
   def xAxisLabel(t: java.lang.String): java.lang.String = js.native
   def xAxisLabel(t: java.lang.String, r: scala.Double): java.lang.String = js.native
@@ -133,7 +133,7 @@ trait CoordinateGridMixin[T]
   def y(): Scale[scala.Double] = js.native
   def y(t: Scale[scala.Double]): Scale[scala.Double] = js.native
   def yAxis(): js.Any = js.native
-  def yAxis(t: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.svg.Axis */ js.Any): js.Any = js.native
+  def yAxis(t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Axis */ js.Any): js.Any = js.native
   def yAxisLabel(): java.lang.String = js.native
   def yAxisLabel(t: java.lang.String): java.lang.String = js.native
   def yAxisLabel(t: java.lang.String, r: scala.Double): java.lang.String = js.native

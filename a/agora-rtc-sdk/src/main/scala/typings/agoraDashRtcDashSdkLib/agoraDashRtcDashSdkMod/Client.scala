@@ -42,7 +42,7 @@ trait Client extends js.Object {
   def setRemoteVideoStreamType(stream: Stream, streamType: agoraDashRtcDashSdkLib.agoraDashRtcDashSdkLibNumbers.`0`): scala.Unit = js.native
   def setRemoteVideoStreamType(stream: Stream, streamType: agoraDashRtcDashSdkLib.agoraDashRtcDashSdkLibNumbers.`1`): scala.Unit = js.native
   def setTurnServer(): scala.Unit = js.native
-  def setTurnServer(turnServer: agoraDashRtcDashSdkLib.Anon_Username): scala.Unit = js.native
+  def setTurnServer(turnServer: agoraDashRtcDashSdkLib.Anon_Forceturn): scala.Unit = js.native
   def subscribe(stream: Stream, onFailure: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native
   def unpublish(stream: Stream, onFailure: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native
   def unsubscribe(stream: Stream, onFailure: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native

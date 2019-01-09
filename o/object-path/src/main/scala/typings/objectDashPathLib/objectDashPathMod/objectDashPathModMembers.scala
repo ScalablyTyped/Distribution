@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object objectDashPathModMembers
   extends org.scalablytyped.runtime.TopLevel[
-      objectDashPathLib.objectDashPathMod.objectPathNs.ObjectPathStatic with objectDashPathLib.Anon_WithInheritedProps
+      objectDashPathLib.objectDashPathMod.objectPathNs.ObjectPathStatic with objectDashPathLib.Anon_Create
     ]
 

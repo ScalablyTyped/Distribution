@@ -5,15 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(postmanDashCollectionLib.postmanDashCollectionMod.VariableDefinition because Would inherit conflicting mutable fields List(description, disabled, id, name))*/
-@JSImport("postman-collection", "Variable")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- postmanDashCollectionLib.postmanDashCollectionMod.VariableDefinition because var conflicts: description, disabled, id, name. Inlined value, `type`, key */ @JSImport("postman-collection", "Variable")
 @js.native
 class Variable () extends Property[VariableDefinition] {
   def this(definition: org.scalablytyped.runtime.StringDictionary[VariableDefinition]) = this()
   def this(definition: VariableDefinition) = this()
   var key: js.UndefOr[java.lang.String] = js.native
-  var `type`: java.lang.String = js.native
-  var value: js.Any = js.native
+  var `type`: java.lang.String | js.UndefOr[java.lang.String] = js.native
+  var value: js.Any | js.UndefOr[js.Any] = js.native
   def cast(value: js.Any): js.Any = js.native
   def castIn(value: js.Any): js.Any = js.native
   def castOut(value: js.Any): js.Any = js.native
@@ -27,7 +27,7 @@ class Variable () extends Property[VariableDefinition] {
 @JSImport("postman-collection", "Variable")
 @js.native
 object Variable extends js.Object {
-  var types: postmanDashCollectionLib.Anon_Number = js.native
+  var types: postmanDashCollectionLib.Anon_Any = js.native
   def isVariable(obj: js.Any): scala.Boolean = js.native
 }
 

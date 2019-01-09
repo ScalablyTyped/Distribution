@@ -61,7 +61,7 @@ class ConditionalRangeFormat ()
   def load(): ConditionalRangeFormat = js.native
   def load(option: java.lang.String): ConditionalRangeFormat = js.native
   def load(option: js.Array[java.lang.String]): ConditionalRangeFormat = js.native
-  def load(option: officeDashJsLib.Anon_Select): ConditionalRangeFormat = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ConditionalRangeFormat = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.ConditionalRangeFormatLoadOptions): ConditionalRangeFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ConditionalRangeFormat): scala.Unit = js.native

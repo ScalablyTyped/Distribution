@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Options extends js.Object {
   var bounds: reactDashRndLib.reactDashRndLibStrings.parent | reactDashRndLib.reactDashRndLibStrings.window | reactDashRndLib.reactDashRndLibStrings.body | java.lang.String = js.native
   var className: java.lang.String = js.native
-  var default: reactDashRndLib.Anon_Y = js.native
+  var default: reactDashRndLib.Anon_Height = js.native
   var disableDragging: js.UndefOr[scala.Boolean] = js.native
   var enableResizing: js.UndefOr[Enable] = js.native
   var height: scala.Double | java.lang.String = js.native

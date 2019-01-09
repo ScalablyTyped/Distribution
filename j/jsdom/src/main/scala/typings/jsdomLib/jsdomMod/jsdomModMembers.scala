@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jsdom", JSImport.Namespace)
 @js.native
 object jsdomModMembers extends js.Object {
-  val toughCookie: jsdomLib.Anon_CookieJar = js.native
+  val toughCookie: jsdomLib.Anon_A = js.native
 }
 

@@ -81,8 +81,8 @@ object AudioNs extends js.Object {
   }
   
   trait RecordingOptions extends js.Object {
-    var android: expoLib.Anon_BitRateSampleRate
-    var ios: expoLib.Anon_BitRate
+    var android: expoLib.Anon_AudioEncoder
+    var ios: expoLib.Anon_AudioQuality
   }
   
   /** This class represents a sound corresponding to an Asset or URL. */
@@ -281,6 +281,6 @@ object AudioNs extends js.Object {
     ): js.Promise[expoLib.Anon_Sound] = js.native
   }
   
-  type RecordingStatus = expoLib.Anon_CanRecord | expoLib.Anon_CanRecordTrue | expoLib.Anon_CanRecordFalse
+  type RecordingStatus = expoLib.Anon_CanRecord | expoLib.Anon_CanRecordDurationMillis | expoLib.Anon_CanRecordDurationMillisFalse
 }
 

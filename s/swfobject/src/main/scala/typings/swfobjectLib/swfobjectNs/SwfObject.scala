@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SwfObject extends js.Object {
-  var ua: swfobjectLib.Anon_Win = js.native
+  var ua: swfobjectLib.Anon_Ie = js.native
   def addDomLoadEvent(fn: js.Function0[scala.Unit]): scala.Unit = js.native
   def addLoadEvent(fn: js.Function1[/* event */ js.UndefOr[stdLib.Event], scala.Unit]): scala.Unit = js.native
   def createCSS(selStr: java.lang.String, declStr: java.lang.String): scala.Unit = js.native

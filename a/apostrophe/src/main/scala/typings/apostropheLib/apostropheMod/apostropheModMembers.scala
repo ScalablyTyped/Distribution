@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 @JSImport("apostrophe", JSImport.Namespace)
 @js.native
 object apostropheModMembers extends js.Object {
-  val adminBar: apostropheLib.Anon_Link = js.native
-  val contextPiece: apostropheLib.Anon_Type = js.native
-  val docs: apostropheLib.Anon_LockAndWatch = js.native
-  val modalSupport: apostropheLib.Anon_Initialized = js.native
+  val adminBar: apostropheLib.Anon_CallbackLink = js.native
+  val contextPiece: apostropheLib.Anon_IdSlug = js.native
+  val docs: apostropheLib.Anon_CallbackGetManager = js.native
+  val modalSupport: apostropheLib.Anon_All = js.native
   val modules: js.Object = js.native
   val moogBundle: apostropheLib.Anon_Directory = js.native
   val pages: apostropheLib.Anon_Page = js.native
-  val schemas: apostropheLib.Anon_Convert = js.native
-  val ui: apostropheLib.Anon_GlobalBusy = js.native
-  val utils: apostropheLib.Anon_Error = js.native
-  val versions: apostropheLib.Anon_Edit = js.native
+  val schemas: apostropheLib.Anon_CallbackConvert = js.native
+  val ui: apostropheLib.Anon_Callback = js.native
+  val utils: apostropheLib.Anon_CamelName = js.native
+  val versions: apostropheLib.Anon_AfterRevert = js.native
   def apply(
     options: apostropheLib.apostropheMod.apostropheNs.AposConstructor[js.Object, js.Object],
     args: js.Any*

@@ -9,28 +9,28 @@ import scala.scalajs.js.annotation._
 trait Artifact extends js.Object {
   /** Adds files as soft-link. */
   @JSName("addFileAsSoftLink")
-  var addFileAsSoftLink_Original: webgmeLib.Anon_NameContent = js.native
+  var addFileAsSoftLink_Original: webgmeLib.Anon_Callback = js.native
   /** Adds content to the artifact as a file. */
   @JSName("addFile")
-  var addFile_Original: webgmeLib.Anon_NameContent = js.native
+  var addFile_Original: webgmeLib.Anon_Callback = js.native
   /** Adds multiple files as soft-links. */
   @JSName("addFilesAsSoftLinks")
-  var addFilesAsSoftLinks_Original: webgmeLib.Anon_Files = js.native
+  var addFilesAsSoftLinks_Original: webgmeLib.Anon_CallbackFilesName = js.native
   /** Adds multiple files. */
   @JSName("addFiles")
-  var addFiles_Original: webgmeLib.Anon_FilesName = js.native
+  var addFiles_Original: webgmeLib.Anon_CallbackFiles = js.native
   /** Adds a metadataHash to the artifact using the given file path. */
   @JSName("addMetadataHash")
-  var addMetadataHash_Original: webgmeLib.Anon_NameMetadataHashSize = js.native
+  var addMetadataHash_Original: webgmeLib.Anon_CallbackMetadataHash = js.native
   /** Adds metadataHashes to the artifact using the given file paths. */
   @JSName("addMetadataHashes")
-  var addMetadataHashes_Original: webgmeLib.Anon_NameMetadataHash = js.native
+  var addMetadataHashes_Original: webgmeLib.Anon_CallbackMetadataHashName = js.native
   /** Adds a metadataHash to the artifact using the given file path. */
   @JSName("addObjectHash")
-  var addObjectHash_Original: webgmeLib.Anon_NameMetadataHashCallback = js.native
+  var addObjectHash_Original: webgmeLib.Anon_CallbackMetadataHashNamePromise = js.native
   /** Adds metadataHashes to the artifact using the given file paths. */
   @JSName("addObjectHashes")
-  var addObjectHashes_Original: webgmeLib.Anon_ObjectHashes = js.native
+  var addObjectHashes_Original: webgmeLib.Anon_CallbackName = js.native
   var blobClient: webgmeLib.BlobsNs.BlobClient = js.native
   var descriptor: webgmeLib.BlobsNs.BlobMetadata = js.native
   var name: webgmeLib.GmeCommonNs.Name = js.native

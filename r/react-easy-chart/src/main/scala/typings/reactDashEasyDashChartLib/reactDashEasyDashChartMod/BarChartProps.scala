@@ -9,7 +9,7 @@ trait BarChartProps extends js.Object {
   /** Whether to show axis labels */
   var axes: js.UndefOr[scala.Boolean] = js.undefined
   /** Labels for each of the axis */
-  var axisLabels: js.UndefOr[reactDashEasyDashChartLib.Anon_YX] = js.undefined
+  var axisLabels: js.UndefOr[reactDashEasyDashChartLib.Anon_X] = js.undefined
   /** The width of an individual bar in pixels */
   var barWidth: js.UndefOr[scala.Double] = js.undefined
   var clickHandler: js.UndefOr[js.Function2[/* data */ BarData, /* mouseEvent */ reactLib.MouseEvent, _]] = js.undefined

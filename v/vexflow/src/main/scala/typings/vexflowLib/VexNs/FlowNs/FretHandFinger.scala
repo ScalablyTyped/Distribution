@@ -17,6 +17,6 @@ class FretHandFinger protected () extends Modifier {
 @JSGlobal("Vex.Flow.FretHandFinger")
 @js.native
 object FretHandFinger extends js.Object {
-  def format(nums: js.Array[vexflowLib.VexNs.FlowNs.FretHandFinger], state: vexflowLib.Anon_Rightshift): scala.Unit = js.native
+  def format(nums: js.Array[vexflowLib.VexNs.FlowNs.FretHandFinger], state: vexflowLib.Anon_Leftshift): scala.Unit = js.native
 }
 

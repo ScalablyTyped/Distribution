@@ -18,12 +18,12 @@ object jsonNsMembers extends js.Object {
     * Actually, the same as JSON.stringify, but returns a buffer
     */
   def encode(obj: js.Any): nodeLib.Buffer = js.native
-  def encode(obj: js.Any, options: adoneLib.Anon_Replacer): nodeLib.Buffer = js.native
+  def encode(obj: js.Any, options: adoneLib.Anon_Newline): nodeLib.Buffer = js.native
   def encodeSafe(obj: js.Any): java.lang.String = js.native
   /**
     * Deterministic version of JSON.stringify() so you can get a consistent hash from stringified results
     */
   def encodeStable(obj: js.Any): java.lang.String = js.native
-  def encodeStable(obj: js.Any, options: adoneLib.Anon_ReplacerCmp): java.lang.String = js.native
+  def encodeStable(obj: js.Any, options: adoneLib.Anon_Cmp): java.lang.String = js.native
 }
 

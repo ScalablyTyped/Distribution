@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NgModuleTransitiveScopes extends js.Object {
-  var compilation: atAngularCoreLib.Anon_DirectivesPipes
-  var exported: atAngularCoreLib.Anon_DirectivesPipes
+  var compilation: atAngularCoreLib.Anon_Directives
+  var exported: atAngularCoreLib.Anon_Directives
 }
 

@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation._
   *
   * const file = myBucket.file('my-file');
   */
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any
 - Dropped any */ @JSImport("@google-cloud/storage/build/src/file", "File")
 @js.native
@@ -346,11 +346,11 @@ class File protected () extends js.Object {
   def move(destination: java.lang.String, options: MoveOptions): js.Promise[MoveResponse] = js.native
   def move(destination: java.lang.String, options: MoveOptions, callback: MoveCallback): scala.Unit = js.native
   def request(
-    reqOpts: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify DecorateRequestOptions */ js.Any
+    reqOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DecorateRequestOptions */ js.Any
   ): js.Promise[requestLib.requestMod.requestNs.Response] = js.native
   def request(
-    reqOpts: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify DecorateRequestOptions */ js.Any,
-    callback: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BodyResponseCallback */ js.Any
+    reqOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DecorateRequestOptions */ js.Any,
+    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BodyResponseCallback */ js.Any
   ): scala.Unit = js.native
   def rotateEncryptionKey(): js.Promise[RotateEncryptionKeyResponse] = js.native
   def rotateEncryptionKey(callback: RotateEncryptionKeyCallback): scala.Unit = js.native
@@ -405,17 +405,19 @@ class File protected () extends js.Object {
     */
   def setEncryptionKey(encryptionKey: java.lang.String): this.type = js.native
   def setEncryptionKey(encryptionKey: nodeLib.Buffer): this.type = js.native
-  def setMetadata(metadata: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ js.Any): js.Promise[SetFileMetadataResponse] = js.native
   def setMetadata(
-    metadata: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ js.Any,
+    metadata: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.Any
+  ): js.Promise[SetFileMetadataResponse] = js.native
+  def setMetadata(
+    metadata: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.Any,
     callback: SetFileMetadataCallback
   ): scala.Unit = js.native
   def setMetadata(
-    metadata: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ js.Any,
+    metadata: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.Any,
     options: SetFileMetadataOptions
   ): js.Promise[SetFileMetadataResponse] = js.native
   def setMetadata(
-    metadata: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ js.Any,
+    metadata: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.Any,
     options: SetFileMetadataOptions,
     callback: SetFileMetadataCallback
   ): scala.Unit = js.native

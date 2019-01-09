@@ -17,7 +17,7 @@ trait HistoriesResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to write to project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the
     * containing project does not exist
     */
-  def create(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintProjectId): gapiDotClientLib.gapiNs.clientNs.Request[History]
+  def create(request: gapiDotClientDotToolresultsLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[History]
   /**
     * Gets a History.
     *
@@ -26,7 +26,7 @@ trait HistoriesResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to read project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the History does
     * not exist
     */
-  def get(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintHistoryIdProjectIdQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[History]
+  def get(request: gapiDotClientDotToolresultsLib.Anon_AltFieldsHistoryIdKey): gapiDotClientLib.gapiNs.clientNs.Request[History]
   /**
     * Lists Histories for a given Project.
     *
@@ -38,6 +38,6 @@ trait HistoriesResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to read project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the History does
     * not exist
     */
-  def list(request: gapiDotClientDotToolresultsLib.Anon_PageSizePrettyPrintProjectId): gapiDotClientLib.gapiNs.clientNs.Request[ListHistoriesResponse]
+  def list(request: gapiDotClientDotToolresultsLib.Anon_AltFieldsFilterByName): gapiDotClientLib.gapiNs.clientNs.Request[ListHistoriesResponse]
 }
 

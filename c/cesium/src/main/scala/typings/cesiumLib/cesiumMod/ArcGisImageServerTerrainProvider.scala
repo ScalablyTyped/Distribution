@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ArcGisImageServerTerrainProvider protected ()
   extends cesiumLib.cesiumMod.CesiumNs.ArcGisImageServerTerrainProvider {
-  def this(options: cesiumLib.Anon_UrlCreditEllipsoidTilingScheme) = this()
+  def this(options: cesiumLib.Anon_Credit) = this()
 }
 

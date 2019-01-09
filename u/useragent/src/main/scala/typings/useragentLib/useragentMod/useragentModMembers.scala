@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object useragentModMembers extends js.Object {
   val version: scala.Double = js.native
   def fromJSON(obj: java.lang.String): useragentLib.useragentMod.UseragentNs.Agent = js.native
-  def fromJSON(obj: useragentLib.Anon_Os): useragentLib.useragentMod.UseragentNs.Agent = js.native
+  def fromJSON(obj: useragentLib.Anon_Device): useragentLib.useragentMod.UseragentNs.Agent = js.native
   def is(): useragentLib.useragentMod.UseragentNs.Details = js.native
   def is(useragent: java.lang.String): useragentLib.useragentMod.UseragentNs.Details = js.native
   def lookup(): useragentLib.useragentMod.UseragentNs.Agent = js.native

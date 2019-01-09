@@ -36,7 +36,7 @@ trait CrawlerState extends js.Object {
   val jdbcTargets: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ExclusionsConnectionName]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ConnectionNameExclusions]
       ]
     ]
   ] = js.undefined
@@ -53,7 +53,7 @@ trait CrawlerState extends js.Object {
     */
   val s3Targets: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ExclusionsPathInput]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ExclusionsPath]]
     ]
   ] = js.undefined
   /**

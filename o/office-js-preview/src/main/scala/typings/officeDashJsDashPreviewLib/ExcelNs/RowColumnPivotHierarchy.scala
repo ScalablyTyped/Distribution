@@ -64,7 +64,7 @@ class RowColumnPivotHierarchy ()
   def load(): RowColumnPivotHierarchy = js.native
   def load(option: java.lang.String): RowColumnPivotHierarchy = js.native
   def load(option: js.Array[java.lang.String]): RowColumnPivotHierarchy = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): RowColumnPivotHierarchy = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): RowColumnPivotHierarchy = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.RowColumnPivotHierarchyLoadOptions): RowColumnPivotHierarchy = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

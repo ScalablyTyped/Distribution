@@ -54,7 +54,7 @@ class Comment ()
   def load(): Comment = js.native
   def load(option: java.lang.String): Comment = js.native
   def load(option: js.Array[java.lang.String]): Comment = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Comment = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Comment = js.native
   def load(option: officeDashJsDashPreviewLib.VisioNs.InterfacesNs.CommentLoadOptions): Comment = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Comment): scala.Unit = js.native

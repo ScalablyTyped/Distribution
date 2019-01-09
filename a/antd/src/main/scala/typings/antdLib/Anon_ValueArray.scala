@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ValueArray extends js.Object {
-  var value: js.Array[antdLib.libCheckboxGroupMod.CheckboxValueType]
+  var value: js.UndefOr[java.lang.String | scala.Double | js.Array[java.lang.String]]
 }
 

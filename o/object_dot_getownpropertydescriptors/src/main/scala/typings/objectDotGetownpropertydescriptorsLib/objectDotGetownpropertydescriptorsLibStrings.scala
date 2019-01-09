@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 object objectDotGetownpropertydescriptorsLibStrings {
   @js.native
-  sealed trait Anon_O extends js.Object
+  sealed trait Anon_GetPolyfill extends js.Object
   
   @js.native
   sealed trait namespaced extends js.Object
   
-  def Anon_O: Anon_O = "Anon_O".asInstanceOf[Anon_O]
+  def Anon_GetPolyfill: Anon_GetPolyfill = "Anon_GetPolyfill".asInstanceOf[Anon_GetPolyfill]
   def namespaced: namespaced = "namespaced".asInstanceOf[namespaced]
 }
 

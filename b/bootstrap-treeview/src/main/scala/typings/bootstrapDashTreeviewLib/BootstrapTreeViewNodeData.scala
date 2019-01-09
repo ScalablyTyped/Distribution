@@ -14,7 +14,7 @@ trait BootstrapTreeViewNodeData extends js.Object {
   var nodes: js.UndefOr[js.Array[BootstrapTreeViewNodeData]] = js.undefined
   var selectable: js.UndefOr[scala.Boolean] = js.undefined
   var selectedIcon: js.UndefOr[java.lang.String] = js.undefined
-  var state: js.UndefOr[Anon_Expanded] = js.undefined
+  var state: js.UndefOr[Anon_Checked] = js.undefined
   var tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var text: js.UndefOr[java.lang.String] = js.undefined
 }

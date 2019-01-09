@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Children extends js.Object {
   var children: js.UndefOr[
     (js.Function1[
-      /* props */ reactDashFormLib.reactDashFormMod.FieldApi, 
+      /* props */ reactDashFormLib.reactDashFormMod.FormFunctionProps, 
       reactDashFormLib.reactDashFormMod.RenderReturn
     ]) | reactDashFormLib.reactDashFormMod.RenderReturn
   ] = js.undefined

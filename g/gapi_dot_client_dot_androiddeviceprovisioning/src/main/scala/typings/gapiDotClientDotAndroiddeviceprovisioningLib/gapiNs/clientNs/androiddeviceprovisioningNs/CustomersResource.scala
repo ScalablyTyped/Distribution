@@ -12,12 +12,12 @@ trait CustomersResource extends js.Object {
     * by calling API methods or using their zero-touch enrollment portal. The API
     * doesn't notify the customer that they have access.
     */
-  def create(request: gapiDotClientDotAndroiddeviceprovisioningLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[Company]
+  def create(request: gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[Company]
   /**
     * Lists the customers that are enrolled to the reseller identified by the
     * `partnerId` argument. This list includes customers that the reseller
     * created and customers that enrolled themselves using the portal.
     */
-  def list(request: gapiDotClientDotAndroiddeviceprovisioningLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListCustomersResponse]
+  def list(request: gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ListCustomersResponse]
 }
 

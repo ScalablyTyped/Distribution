@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait FileinfoParams extends js.Object {
   var complete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var fail: js.UndefOr[js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsgString, scala.Unit]] = js.undefined
+  var fail: js.UndefOr[js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsg, scala.Unit]] = js.undefined
   var filePath: java.lang.String
-  var success: js.UndefOr[js.Function1[/* res */ wegameDashApiLib.Anon_Size, scala.Unit]] = js.undefined
+  var success: js.UndefOr[js.Function1[/* res */ wegameDashApiLib.Anon_Digest, scala.Unit]] = js.undefined
 }
 

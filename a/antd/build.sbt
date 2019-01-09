@@ -1,39 +1,39 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "3.12.1-05cdae"
-scalaVersion := "2.12.7"
+version := "3.12.1-cca170"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ant-design__icons" % "1.1.16-e54412",
-  "org.scalablytyped" %%% "ant-design__icons-react" % "1.1.2-44a578",
-  "org.scalablytyped" %%% "array-tree-filter" % "2.1.0-d4cfdd",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-b84a90",
-  "org.scalablytyped" %%% "create-react-class" % "15.6-dt-20180806Z-da0e58",
-  "org.scalablytyped" %%% "create-react-context" % "0.2.2-36e706",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-a13970",
-  "org.scalablytyped" %%% "enquire_dot_js" % "2.1-dt-20180328Z-415d1c",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20181203Z-0a02fb",
-  "org.scalablytyped" %%% "moment" % "2.23.0-9a5931",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-89199d",
-  "org.scalablytyped" %%% "raf" % "3.4-dt-20190103Z-cf66c1",
-  "org.scalablytyped" %%% "rc-calendar" % "9.10.4-f6118b",
-  "org.scalablytyped" %%% "rc-dialog" % "7.3.0-f2117b",
-  "org.scalablytyped" %%% "rc-progress" % "2.2-dt-20181116Z-99eb07",
-  "org.scalablytyped" %%% "rc-select" % "v5.9.0-dt-20180823Z-9232b8",
-  "org.scalablytyped" %%% "rc-slider" % "8.6-dt-20180822Z-b36c8c",
-  "org.scalablytyped" %%% "rc-time-picker" % "3.4-dt-20181102Z-57e3c9",
-  "org.scalablytyped" %%% "rc-tooltip" % "3.7-dt-20181121Z-c35c9f",
-  "org.scalablytyped" %%% "rc-tree" % "1.11-dt-20180803Z-3bd231",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-3dff88",
-  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-8054fe",
-  "org.scalablytyped" %%% "react-slick" % "0.23-dt-20180806Z-eeab4f",
-  "org.scalablytyped" %%% "resize-observer-polyfill" % "1.5.1-590f83",
-  "org.scalablytyped" %%% "shallowequal" % "1.1-dt-20181231Z-576b0e",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",
-  "org.scalablytyped" %%% "warning" % "3.0.0-dt-20180214Z-292246")
+  "org.scalablytyped" %%% "ant-design__icons" % "1.1.16-251328",
+  "org.scalablytyped" %%% "ant-design__icons-react" % "1.1.2-151271",
+  "org.scalablytyped" %%% "array-tree-filter" % "2.1.0-33945a",
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-9719bb",
+  "org.scalablytyped" %%% "create-react-class" % "15.6-dt-20180806Z-fcfcda",
+  "org.scalablytyped" %%% "create-react-context" % "0.2.2-83ce64",
+  "org.scalablytyped" %%% "csstype" % "2.5.8-82546d",
+  "org.scalablytyped" %%% "enquire_dot_js" % "2.1-dt-20180328Z-01b67c",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20181203Z-010a28",
+  "org.scalablytyped" %%% "moment" % "2.23.0-e5bac4",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2aa425",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-ff1a88",
+  "org.scalablytyped" %%% "raf" % "3.4-dt-20190103Z-5a3171",
+  "org.scalablytyped" %%% "rc-calendar" % "9.10.4-28e196",
+  "org.scalablytyped" %%% "rc-dialog" % "7.3.0-8b3f85",
+  "org.scalablytyped" %%% "rc-progress" % "2.2-dt-20181116Z-4bbe2b",
+  "org.scalablytyped" %%% "rc-select" % "v5.9.0-dt-20180823Z-c7dd9d",
+  "org.scalablytyped" %%% "rc-slider" % "8.6-dt-20180822Z-9289ae",
+  "org.scalablytyped" %%% "rc-time-picker" % "3.4-dt-20181102Z-8e532e",
+  "org.scalablytyped" %%% "rc-tooltip" % "3.7-dt-20181121Z-6f9b4d",
+  "org.scalablytyped" %%% "rc-tree" % "1.11-dt-20180803Z-8d2917",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-8bb0ba",
+  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-a4376a",
+  "org.scalablytyped" %%% "react-slick" % "0.23-dt-20180806Z-4061fd",
+  "org.scalablytyped" %%% "resize-observer-polyfill" % "1.5.1-4811ae",
+  "org.scalablytyped" %%% "shallowequal" % "1.1-dt-20181231Z-b713e7",
+  "org.scalablytyped" %%% "std" % "3.2.2-f3cc98",
+  "org.scalablytyped" %%% "warning" % "3.0.0-dt-20180214Z-abe80a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

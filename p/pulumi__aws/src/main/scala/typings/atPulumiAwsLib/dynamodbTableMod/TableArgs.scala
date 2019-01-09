@@ -9,7 +9,7 @@ trait TableArgs extends js.Object {
   /**
     * List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
     */
-  val attributes: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypeName]]]
+  val attributes: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameTypeInput]]]
   /**
     * Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
     */
@@ -21,7 +21,9 @@ trait TableArgs extends js.Object {
     */
   val globalSecondaryIndexes: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameWriteCapacity]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HashKeyNameNonKeyAttributes]
+      ]
     ]
   ] = js.undefined
   /**
@@ -36,7 +38,9 @@ trait TableArgs extends js.Object {
     */
   val localSecondaryIndexes: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ProjectionType]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameNonKeyAttributesProjectionTypeRangeKey]
+      ]
     ]
   ] = js.undefined
   /**
@@ -46,7 +50,9 @@ trait TableArgs extends js.Object {
   /**
     * Point-in-time recovery options.
     */
-  val pointInTimeRecovery: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Enabled]] = js.undefined
+  val pointInTimeRecovery: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_1219541886]
+  ] = js.undefined
   /**
     * The name of the range key; must be defined
     */
@@ -58,7 +64,9 @@ trait TableArgs extends js.Object {
   /**
     * Encrypt at rest options.
     */
-  val serverSideEncryption: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Enabled]] = js.undefined
+  val serverSideEncryption: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_1219541886]
+  ] = js.undefined
   /**
     * Indicates whether Streams are to be enabled (true) or disabled (false).
     */
@@ -76,7 +84,7 @@ trait TableArgs extends js.Object {
   /**
     * Defines ttl, has two properties, and can only be specified once:
     */
-  val ttl: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AttributeName]] = js.undefined
+  val ttl: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AttributeNameEnabled]] = js.undefined
   /**
     * The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
     */

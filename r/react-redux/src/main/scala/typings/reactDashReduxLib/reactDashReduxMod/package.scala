@@ -59,5 +59,5 @@ package object reactDashReduxMod {
     /* factoryOptions */ TFactoryOptions, 
     Selector[S, TProps, TOwnProps]
   ]
-  type Shared[InjectedProps, DecorationTargetProps /* <: js.Object */] = reactDashReduxLib.reactDashReduxLibStrings.Shared with DecorationTargetProps
+  type Shared[InjectedProps, DecorationTargetProps /* <: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-redux.react-redux.Shared<InjectedProps, DecorationTargetProps> */ js.Object */] = reactDashReduxLib.reactDashReduxLibStrings.Shared with DecorationTargetProps
 }

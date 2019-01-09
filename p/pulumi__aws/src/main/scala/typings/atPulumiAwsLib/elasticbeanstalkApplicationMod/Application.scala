@@ -19,7 +19,7 @@ class Application protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: ApplicationArgs) = this()
   def this(name: java.lang.String, args: ApplicationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val appversionLifecycle: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeleteSourceFromS3MaxAgeInDays]] = js.native
+  val appversionLifecycle: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeleteSourceFromS3]] = js.native
   /**
     * Short description of the application
     */

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IGridInfiniteScrollApi[TEntity] extends js.Object {
   // Events
-  var on: uiDashGridLib.Anon_NeedLoadMoreDataTop = js.native
+  var on: uiDashGridLib.Anon_NeedLoadMoreData = js.native
   // Methods
   /**
     * Call this function when you have loaded the additional data requested.

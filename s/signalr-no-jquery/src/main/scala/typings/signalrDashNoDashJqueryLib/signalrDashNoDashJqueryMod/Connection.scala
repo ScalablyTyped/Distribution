@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Connection extends js.Object {
   var id: java.lang.String = js.native
   var proxies: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
-  var transport: signalrDashNoDashJqueryLib.Anon_SupportsKeepAlive = js.native
+  var transport: signalrDashNoDashJqueryLib.Anon_Name = js.native
   /**
     * Creates a new proxy object for the given hub connection that can be used to invoke
     * methods on server hubs and handle client method invocation requests from the server.

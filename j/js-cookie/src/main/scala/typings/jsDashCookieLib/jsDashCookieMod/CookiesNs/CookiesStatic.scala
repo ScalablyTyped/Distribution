@@ -50,7 +50,7 @@ trait CookiesStatic extends js.Object {
   def set(name: java.lang.String, value: java.lang.String, options: CookieAttributes): scala.Unit = js.native
   def set(name: java.lang.String, value: js.Object): scala.Unit = js.native
   def set(name: java.lang.String, value: js.Object, options: CookieAttributes): scala.Unit = js.native
-  def withConverter(converter: jsDashCookieLib.Anon_Write): CookiesStatic = js.native
+  def withConverter(converter: jsDashCookieLib.Anon_Name): CookiesStatic = js.native
   /**
     * Create a new instance of the api that overrides the default
     * decoding implementation. All methods that rely in a proper

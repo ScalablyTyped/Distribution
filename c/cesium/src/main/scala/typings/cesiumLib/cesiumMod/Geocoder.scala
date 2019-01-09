@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Geocoder protected ()
   extends cesiumLib.cesiumMod.CesiumNs.Geocoder {
-  def this(options: cesiumLib.Anon_UrlContainer) = this()
+  def this(options: cesiumLib.Anon_Container) = this()
   /* CompleteClass */
   override var container: stdLib.Element = js.native
   /* CompleteClass */

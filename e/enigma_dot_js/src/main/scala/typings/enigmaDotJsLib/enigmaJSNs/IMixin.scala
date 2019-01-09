@@ -23,6 +23,6 @@ trait IMixin extends js.Object {
     * An API will get both their generic type as well as custom type mixins applied.
     */
   var types: js.Array[MixinType]
-  def init(args: enigmaDotJsLib.Anon_Config): scala.Unit
+  def init(args: enigmaDotJsLib.Anon_Api): scala.Unit
 }
 

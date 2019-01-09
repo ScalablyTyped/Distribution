@@ -25,7 +25,7 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
     */
   var behaviors: js.Array[Behavior] | (org.scalablytyped.runtime.StringDictionary[
     org.scalablytyped.runtime.Instantiable1[/* options */ js.UndefOr[/* options */ js.Any], Behavior]
-  ]) | js.Array[backboneDotMarionetteLib.Anon_Index] = js.native
+  ]) | js.Array[backboneDotMarionetteLib.Anon_BehaviorClass] = js.native
   /* CompleteClass */
   override var bindEvents: js.Any = js.native
   /* CompleteClass */

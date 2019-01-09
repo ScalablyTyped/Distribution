@@ -17,7 +17,7 @@ object chromeNsMembers extends js.Object {
     * New Chrome Event
     * @constructor
     */
-  val Event: chromeDashAppsLib.Anon_T = js.native
+  val Event: chromeDashAppsLib.Anon_Event = js.native
   // #endregion
   // #region placeholders
   //////////////////
@@ -50,7 +50,7 @@ object chromeNsMembers extends js.Object {
   /**
     * Different page speed and load metrics
     */
-  def csi(): chromeDashAppsLib.Anon_Tran = js.native
+  def csi(): chromeDashAppsLib.Anon_OnloadT = js.native
   /**
     * @deprecated Deprecated in Chrome 64.
     * chrome.loadTimes() is a non-standard API that exposes loading metrics

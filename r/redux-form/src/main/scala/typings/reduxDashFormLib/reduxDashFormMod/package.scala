@@ -11,6 +11,6 @@ package object reduxDashFormMod {
   type FormWarnings[FormData, T] = reduxDashFormLib.reduxDashFormLibStrings.FormWarnings with js.Any
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[
     T, 
-    /* import warning: ImportType.apply Failed type conversion: redux-form.Anon_X<T, K>[keyof T] */ js.Any
+    /* import warning: ImportType.apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never, [x: number] : never}[keyof T] */ js.Any
   ]
 }

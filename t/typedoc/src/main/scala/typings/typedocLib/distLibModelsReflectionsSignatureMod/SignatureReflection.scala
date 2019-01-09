@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typedocLib.distLibModelsReflectionsAbstractMod.TypeParameterContainer because Would inherit conflicting mutable fields List(_alias, _aliases, anchor, comment, cssClasses, decorates, decorators, flags, hasOwnDocument, id, kind, kindString, name, originalName, parent, sources, url))*/
-@JSImport("typedoc/dist/lib/models/reflections/signature", "SignatureReflection")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typedocLib.distLibModelsReflectionsAbstractMod.TypeParameterContainer because var conflicts: _alias, _aliases, anchor, comment, cssClasses, decorates, decorators, flags, hasOwnDocument, id, kind, kindString, name, originalName, parent, sources, url. Inlined typeParameters */ @JSImport("typedoc/dist/lib/models/reflections/signature", "SignatureReflection")
 @js.native
 class SignatureReflection ()
   extends typedocLib.distLibModelsReflectionsAbstractMod.TypeContainer {

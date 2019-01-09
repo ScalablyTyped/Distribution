@@ -22,28 +22,28 @@ class TopicRule protected ()
     * The ARN of the topic rule
     */
   val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val cloudwatchAlarm: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AlarmNameRoleArn]] = js.native
-  val cloudwatchMetric: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_MetricUnitMetricName]] = js.native
+  val cloudwatchAlarm: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AlarmName]] = js.native
+  val cloudwatchMetric: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_MetricName]] = js.native
   /**
     * The description of the rule.
     */
   val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val dynamodb: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RangeKeyTypeHashKeyValue]] = js.native
-  val elasticsearch: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_IdRoleArn]] = js.native
+  val dynamodb: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_HashKeyField]] = js.native
+  val elasticsearch: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EndpointId]] = js.native
   /**
     * Specifies whether the rule is enabled.
     */
   val enabled: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
-  val firehose: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArnDeliveryStreamNameSeparator]] = js.native
-  val kinesis: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArnStreamNamePartitionKey]] = js.native
-  val lambda: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_FunctionArnString]] = js.native
+  val firehose: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeliveryStreamName]] = js.native
+  val kinesis: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_PartitionKey]] = js.native
+  val lambda: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_FunctionArn]] = js.native
   /**
     * The name of the rule.
     */
   val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val republish: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArnTopicString]] = js.native
-  val s3: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArnBucketNameKey]] = js.native
-  val sns: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArnMessageFormatTargetArn]] = js.native
+  val republish: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArn]] = js.native
+  val s3: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketName]] = js.native
+  val sns: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_MessageFormat]] = js.native
   /**
     * The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
     */
@@ -52,7 +52,7 @@ class TopicRule protected ()
     * The version of the SQL rules engine to use when evaluating the rule.
     */
   val sqlVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val sqs: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArnUseBase64QueueUrl]] = js.native
+  val sqs: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_QueueUrl]] = js.native
 }
 
 @JSImport("@pulumi/aws/iot/topicRule", "TopicRule")

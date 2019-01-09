@@ -85,7 +85,7 @@ object telemetryNsMembers extends js.Object {
   def submitPing(
     `type`: java.lang.String,
     message: js.Any,
-    options: firefoxDashWebextDashBrowserLib.Anon_OverrideEnvironment
+    options: firefoxDashWebextDashBrowserLib.Anon_AddClientId
   ): js.Promise[_] = js.native
 }
 

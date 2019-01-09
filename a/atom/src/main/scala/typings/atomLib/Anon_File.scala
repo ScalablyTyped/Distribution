@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_File extends js.Object {
-  /** The path to the file being referenced. */
+  /** The path to the file to which the message applies. */
   var file: java.lang.String
-  /** The point being referenced in that file. */
-  var position: js.UndefOr[atomLib.atomMod.Point] = js.undefined
+  /** The range of the message in the editor. */
+  var position: atomLib.atomMod.Range
 }
 

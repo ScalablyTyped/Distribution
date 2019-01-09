@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Browser protected () extends js.Object {
   //constructor(args: { type: string; location?: string; args?: string[] });
-  def this(args: browserDashHarnessLib.Anon_Location) = this()
+  def this(args: browserDashHarnessLib.Anon_ArgsLocation) = this()
   def close(): js.Any = js.native
   def open(harnessUrl: java.lang.String): js.Any = js.native
   def open(harnessUrl: java.lang.String, serverUrl: java.lang.String): js.Any = js.native

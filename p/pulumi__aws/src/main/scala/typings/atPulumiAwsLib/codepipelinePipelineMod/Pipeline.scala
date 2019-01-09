@@ -26,7 +26,7 @@ class Pipeline protected ()
     * An artifact_store block. Artifact stores are documented below.
     * * `stage` (Minimum of at least two `stage` blocks is required) A stage block. Stages are documented below.
     */
-  val artifactStore: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_LocationTypeEncryptionKeyString] = js.native
+  val artifactStore: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_EncryptionKey] = js.native
   /**
     * The name of the pipeline.
     */
@@ -35,7 +35,7 @@ class Pipeline protected ()
     * A service role Amazon Resource Name (ARN) that grants AWS CodePipeline permission to make calls to AWS services on your behalf.
     */
   val roleArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val stages: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ActionsName]] = js.native
+  val stages: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Actions]] = js.native
 }
 
 @JSImport("@pulumi/aws/codepipeline/pipeline", "Pipeline")

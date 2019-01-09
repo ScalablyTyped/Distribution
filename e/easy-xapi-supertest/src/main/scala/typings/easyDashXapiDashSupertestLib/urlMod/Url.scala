@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Url extends js.Object {
   var auth: java.lang.String
   var hash: js.UndefOr[java.lang.String] = js.undefined

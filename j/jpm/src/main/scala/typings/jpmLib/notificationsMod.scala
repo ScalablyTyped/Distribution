@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 @JSImport("sdk/notifications", JSImport.Namespace)
 @js.native
 object notificationsMod extends js.Object {
-  def notify(options: jpmLib.Anon_OnClick): scala.Unit = js.native
+  def notify(options: jpmLib.Anon_Data): scala.Unit = js.native
 }
 

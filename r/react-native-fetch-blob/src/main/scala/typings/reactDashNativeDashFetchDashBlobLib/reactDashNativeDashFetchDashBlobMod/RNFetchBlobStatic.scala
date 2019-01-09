@@ -10,7 +10,7 @@ trait RNFetchBlobStatic extends js.Object {
   // this require external module https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/oboe
   var JSONStream: js.Any = js.native
   var android: AndroidApi = js.native
-  var base64: reactDashNativeDashFetchDashBlobLib.Anon_Encode = js.native
+  var base64: reactDashNativeDashFetchDashBlobLib.Anon_Decode = js.native
   var fs: FS = js.native
   var ios: IOSApi = js.native
   var net: Net = js.native

@@ -388,7 +388,7 @@ class ChartSeries ()
   def load(): ChartSeries = js.native
   def load(option: java.lang.String): ChartSeries = js.native
   def load(option: js.Array[java.lang.String]): ChartSeries = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): ChartSeries = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): ChartSeries = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ChartSeriesLoadOptions): ChartSeries = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartSeries): scala.Unit = js.native

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ trait CSSTransitionGroupProps extends js.Object {
   var transitionAppear: js.UndefOr[scala.Boolean] = js.undefined
   var transitionAppearTimeout: js.UndefOr[scala.Double] = js.undefined

@@ -24,9 +24,9 @@ object netModMembers extends js.Object {
   def createConnection(port: scala.Double, host: java.lang.String, connectionListener: js.Function): Socket = js.native
   def createServer(): Server = js.native
   def createServer(connectionListener: js.Function1[/* socket */ Socket, scala.Unit]): Server = js.native
-  def createServer(options: nodeLib.Anon_PauseOnConnect): Server = js.native
+  def createServer(options: nodeLib.Anon_AllowHalfOpen): Server = js.native
   def createServer(
-    options: nodeLib.Anon_PauseOnConnect,
+    options: nodeLib.Anon_AllowHalfOpen,
     connectionListener: js.Function1[/* socket */ Socket, scala.Unit]
   ): Server = js.native
   def isIP(input: java.lang.String): scala.Double = js.native

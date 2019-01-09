@@ -5,7 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typescriptLib.typescriptMod.tsNs.ClassLikeDeclarationBase because Would inherit conflicting mutable fields List(decorators, end, flags, kind, modifiers, parent, pos))*/
-@js.native
-trait ClassExpression extends PrimaryExpression
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typescriptLib.typescriptMod.tsNs.ClassLikeDeclarationBase because var conflicts: decorators, end, flags, kind, modifiers, parent, pos. Inlined name, typeParameters, heritageClauses, members */ @js.native
+trait ClassExpression extends PrimaryExpression {
+  var heritageClauses: js.UndefOr[NodeArray[HeritageClause]] = js.native
+  var members: NodeArray[ClassElement] = js.native
+  var name: js.UndefOr[Identifier] = js.native
+  var typeParameters: js.UndefOr[NodeArray[TypeParameterDeclaration]] = js.native
+}
 

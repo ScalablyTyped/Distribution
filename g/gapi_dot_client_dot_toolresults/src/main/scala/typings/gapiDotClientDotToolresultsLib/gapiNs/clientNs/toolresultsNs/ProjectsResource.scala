@@ -14,7 +14,7 @@ trait ProjectsResource extends js.Object {
     *
     * - PERMISSION_DENIED - if the user is not authorized to read from project
     */
-  def getSettings(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintProjectIdQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[ProjectSettings]
+  def getSettings(request: gapiDotClientDotToolresultsLib.Anon_AltFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[ProjectSettings]
   /**
     * Creates resources for settings which have not yet been set.
     *
@@ -34,6 +34,6 @@ trait ProjectsResource extends js.Object {
     *
     * - PERMISSION_DENIED - if the user is not authorized to write to project - Any error code raised by Google Cloud Storage
     */
-  def initializeSettings(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintProjectIdQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[ProjectSettings]
+  def initializeSettings(request: gapiDotClientDotToolresultsLib.Anon_AltFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[ProjectSettings]
 }
 

@@ -10,7 +10,7 @@ trait Platform extends js.Object {
   var layout: js.UndefOr[java.lang.String] = js.undefined
   var manufacturer: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var os: js.UndefOr[Anon_Family] = js.undefined
+  var os: js.UndefOr[Anon_Architecture] = js.undefined
   var parse: js.UndefOr[js.Function1[/* ua */ java.lang.String, this.type]] = js.undefined
   var prerelease: js.UndefOr[java.lang.String] = js.undefined
   var product: js.UndefOr[java.lang.String] = js.undefined

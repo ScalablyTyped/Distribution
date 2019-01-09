@@ -15,7 +15,7 @@ trait AnimationStateMetadata extends AnimationMetadata {
     * developer-defined parameters that provide styling defaults and
     * can be overridden on invocation.
     */
-  var options: js.UndefOr[atAngularAnimationsLib.Anon_Params] = js.undefined
+  var options: js.UndefOr[atAngularAnimationsLib.Anon_Name] = js.undefined
   /**
     *  The CSS styles associated with this state.
     */

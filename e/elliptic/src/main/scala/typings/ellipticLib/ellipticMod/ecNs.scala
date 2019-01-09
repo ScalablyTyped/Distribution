@@ -21,9 +21,9 @@ object ecNs extends js.Object {
     var ec: ellipticLib.ellipticMod.ec = js.native
     def derive(pub: js.Any): js.Any = js.native
      // ?
-    def getPrivate(): nodeLib.Buffer | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any) | java.lang.String = js.native
+    def getPrivate(): nodeLib.Buffer | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | java.lang.String = js.native
     @JSName("getPrivate")
-    def getPrivate_hex(enc: ellipticLib.ellipticLibStrings.hex): nodeLib.Buffer | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any) | java.lang.String = js.native
+    def getPrivate_hex(enc: ellipticLib.ellipticLibStrings.hex): nodeLib.Buffer | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | java.lang.String = js.native
      // ?
     def getPublic(): js.Any = js.native
     def getPublic(compact: scala.Boolean): js.Any = js.native
@@ -35,7 +35,7 @@ object ecNs extends js.Object {
     def sign(msg: ellipticLib.ellipticMod.BNInput, enc: java.lang.String): Signature = js.native
     def sign(msg: ellipticLib.ellipticMod.BNInput, enc: java.lang.String, options: SignOptions): Signature = js.native
     def sign(msg: ellipticLib.ellipticMod.BNInput, options: SignOptions): Signature = js.native
-    def validate(): ellipticLib.Anon_Result = js.native
+    def validate(): ellipticLib.Anon_Reason = js.native
     def verify(msg: ellipticLib.ellipticMod.BNInput, signature: Signature): scala.Boolean = js.native
     def verify(msg: ellipticLib.ellipticMod.BNInput, signature: SignatureOptions): scala.Boolean = js.native
   }
@@ -49,8 +49,8 @@ object ecNs extends js.Object {
   
   trait SignOptions extends js.Object {
     var canonical: js.UndefOr[scala.Boolean] = js.undefined
-    var k: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.UndefOr[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any
+    var k: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.UndefOr[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any
       ] = js.undefined
     var pers: js.Any
     var persEnc: js.UndefOr[java.lang.String] = js.undefined
@@ -62,9 +62,9 @@ object ecNs extends js.Object {
     def this(options: SignatureOptions) = this()
     def this(options: SignatureOptions, enc: java.lang.String) = this()
     def this(options: Signature, enc: java.lang.String) = this()
-    var r: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any = js.native
+    var r: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
     var recoveryParam: scala.Double | scala.Null = js.native
-    var s: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any = js.native
+    var s: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
     def toDER(): js.Any = js.native
     def toDER(enc: java.lang.String): js.Any = js.native
   }

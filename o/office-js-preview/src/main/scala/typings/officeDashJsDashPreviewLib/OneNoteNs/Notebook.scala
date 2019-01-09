@@ -107,7 +107,7 @@ class Notebook ()
   def load(): Notebook = js.native
   def load(option: java.lang.String): Notebook = js.native
   def load(option: js.Array[java.lang.String]): Notebook = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Notebook = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Notebook = js.native
   def load(option: officeDashJsDashPreviewLib.OneNoteNs.InterfacesNs.NotebookLoadOptions): Notebook = js.native
   def toJSON(): officeDashJsDashPreviewLib.OneNoteNs.InterfacesNs.NotebookData = js.native
   /**

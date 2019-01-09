@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait KnockoutStatic extends js.Object {
   var bindingHandlers: KnockoutBindingHandlers = js.native
   /////////////////////////////////
-  var bindingProvider: Anon_Instance = js.native
+  var bindingProvider: Anon_InstanceKnockoutBindingProvider = js.native
   var components: KnockoutComponents = js.native
   /**
     * Get information about the current computed property during the execution of a computed observable’s evaluator function.
@@ -18,17 +18,17 @@ trait KnockoutStatic extends js.Object {
   var computedContext: KnockoutComputedContext = js.native
   @JSName("computed")
   var computed_Original: KnockoutComputedStatic = js.native
-  var expressionRewriting: Anon_WriteValueToProperty = js.native
+  var expressionRewriting: Anon_AllBindings = js.native
   var extenders: KnockoutExtenders = js.native
   //////////////////////////////////
   // jqueryTmplTemplateEngine.js
   //////////////////////////////////
-  var jqueryTmplTemplateEngine: Anon_RenderTemplateSource = js.native
+  var jqueryTmplTemplateEngine: Anon_AddTemplate = js.native
   var memoization: KnockoutMemoization = js.native
   //////////////////////////////////
   // nativeTemplateEngine.js
   //////////////////////////////////
-  var nativeTemplateEngine: Anon_InstanceKnockoutNativeTemplateEngine = js.native
+  var nativeTemplateEngine: Anon_Instance = js.native
   @JSName("observableArray")
   var observableArray_Original: KnockoutObservableArrayStatic = js.native
   @JSName("observable")
@@ -40,11 +40,11 @@ trait KnockoutStatic extends js.Object {
   /////////////////////////////////
   // options.js
   /////////////////////////////////
-  var options: Anon_UseOnlyNativeEvents = js.native
+  var options: Anon_DeferUpdates = js.native
   /////////////////////////////////
   // selectExtensions.js
   /////////////////////////////////
-  var selectExtensions: Anon_ReadValue = js.native
+  var selectExtensions: Anon_AllowUnset = js.native
   var subscribable: KnockoutSubscribableStatic = js.native
   /////////////////////////////////
   // tasks.js

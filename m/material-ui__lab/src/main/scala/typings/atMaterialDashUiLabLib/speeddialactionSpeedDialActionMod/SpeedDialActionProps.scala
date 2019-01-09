@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick<std.Partial<@material-ui/core.@material-ui/core/Tooltip.TooltipProps>, std.Exclude<keyof std.Partial<@material-ui/core.@material-ui/core/Tooltip.TooltipProps>, 'classes' | never>>) */ trait SpeedDialActionProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof std.Partial<@material-ui/core.@material-ui/core/Tooltip.TooltipProps>, 'classes' | never> ]: std.Partial<@material-ui/core.@material-ui/core/Tooltip.TooltipProps>[P]} */ trait SpeedDialActionProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SpeedDialActionClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var ButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.buttonButtonMod.ButtonProps]] = js.undefined

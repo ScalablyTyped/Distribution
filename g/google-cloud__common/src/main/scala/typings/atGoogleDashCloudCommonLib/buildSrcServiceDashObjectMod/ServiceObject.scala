@@ -30,11 +30,11 @@ class ServiceObject[T] protected ()
   var methods: Methods = js.native
   var parent: ServiceObjectParent = js.native
   @JSName("requestModule")
-  var requestModule_Original: requestLib.requestMod.requestNs.RequestAPI[
+  var requestModule_Original: atGoogleDashCloudCommonLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
     requestLib.requestMod.requestNs.Request, 
     requestLib.requestMod.requestNs.CoreOptions, 
     requestLib.requestMod.requestNs.RequiredUriUrl
-  ] = js.native
+  ]) = js.native
   /**
     * Create the object.
     *

@@ -41,7 +41,7 @@ class TransitionService protected ()
     *
     * @hidden
     */
-  var _deregisterHookFns: atUirouterCoreLib.Anon_UpdateUrl = js.native
+  var _deregisterHookFns: atUirouterCoreLib.Anon_ActivateViews = js.native
   /** @hidden The transition hook types, such as `onEnter`, `onStart`, etc */
   var _eventTypes: js.Any = js.native
   /** @hidden */

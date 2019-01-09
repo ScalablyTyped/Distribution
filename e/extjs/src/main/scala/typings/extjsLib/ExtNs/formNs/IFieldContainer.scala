@@ -5,13 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.formNs.IFieldAncestor because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses), extjsLib.ExtNs.formNs.ILabelable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait IFieldContainer
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.formNs.IFieldAncestor because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined fieldDefaults, initFieldAncestor, onFieldErrorChange, onFieldValidityChange- extjsLib.ExtNs.formNs.ILabelable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined activeError, activeErrorsTpl, afterBodyEl, afterLabelTextTpl, afterLabelTpl, afterSubTpl, autoFitErrors, baseBodyCls, beforeBodyEl, beforeLabelTextTpl, beforeLabelTpl, beforeSubTpl, clearCls, errorMsgCls, fieldBodyCls, fieldLabel, formItemCls, hideEmptyLabel, hideLabel, invalidCls, labelAlign, labelAttrTpl, labelCls, labelClsExtra, labelPad, labelSeparator, labelStyle, labelWidth, msgTarget, preventMark, bodyEl, errorEl, isFieldLabelable, labelCell, labelEl, getActiveError, getActiveErrors, getFieldLabel, getInputId, getLabelWidth, getLabelableRenderData, getSubTplMarkup, hasActiveError, hasVisibleLabel, initLabelable, setActiveError, setActiveErrors, setFieldDefaults, setFieldLabel, trimLabelSeparator, unsetActiveError */ trait IFieldContainer
   extends extjsLib.ExtNs.containerNs.IContainer {
+  /** [Config Option] (String) */
+  var activeError: js.UndefOr[java.lang.String] = js.undefined
+  /** [Config Option] (String/String[]/Ext.XTemplate) */
+  var activeErrorsTpl: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (String/Array/Ext.XTemplate) */
+  var afterBodyEl: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (String/Array/Ext.XTemplate) */
+  var afterLabelTextTpl: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (String/Array/Ext.XTemplate) */
+  var afterLabelTpl: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (String/Array/Ext.XTemplate) */
+  var afterSubTpl: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (Boolean) */
+  var autoFitErrors: js.UndefOr[scala.Boolean] = js.undefined
+  /** [Config Option] (String) */
+  var baseBodyCls: js.UndefOr[java.lang.String] = js.undefined
+  /** [Config Option] (String/Array/Ext.XTemplate) */
+  var beforeBodyEl: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (String/Array/Ext.XTemplate) */
+  var beforeLabelTextTpl: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (String/Array/Ext.XTemplate) */
+  var beforeLabelTpl: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (String/Array/Ext.XTemplate) */
+  var beforeSubTpl: js.UndefOr[js.Any] = js.undefined
+  /** [Property] (Ext.Element) */
+  var bodyEl: js.UndefOr[extjsLib.ExtNs.IElement] = js.undefined
+  /** [Config Option] (String) */
+  var clearCls: js.UndefOr[java.lang.String] = js.undefined
   /** [Config Option] (Boolean) */
   var combineErrors: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Boolean) */
   var combineLabels: js.UndefOr[scala.Boolean] = js.undefined
+  /** [Property] (Ext.Element) */
+  var errorEl: js.UndefOr[extjsLib.ExtNs.IElement] = js.undefined
+  /** [Config Option] (String) */
+  var errorMsgCls: js.UndefOr[java.lang.String] = js.undefined
+  /** [Config Option] (String) */
+  var fieldBodyCls: js.UndefOr[java.lang.String] = js.undefined
+  /** [Config Option] (Object) */
+  var fieldDefaults: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (String) */
+  var fieldLabel: js.UndefOr[java.lang.String] = js.undefined
+  /** [Config Option] (String) */
+  var formItemCls: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Gets the active error message for this component if any
   		* @returns String The active error message on the component; if there is no error, an empty string is returned.
   		*/
@@ -55,19 +95,58 @@ trait IFieldContainer
   		* @returns Boolean True if the field has a visible label
   		*/
   var hasVisibleLabel: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
+  /** [Config Option] (Boolean) */
+  var hideEmptyLabel: js.UndefOr[scala.Boolean] = js.undefined
+  /** [Config Option] (Boolean) */
+  var hideLabel: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Initializes the FieldAncestor s state this must be called from the initComponent method of any components importing */
   var initFieldAncestor: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Method] Performs initialization of this mixin  */
   var initLabelable: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Config Option] (String) */
   var invalidCls: js.UndefOr[java.lang.String] = js.undefined
+  /** [Property] (Boolean) */
+  var isFieldLabelable: js.UndefOr[scala.Boolean] = js.undefined
+  /** [Config Option] (String) */
+  var labelAlign: js.UndefOr[java.lang.String] = js.undefined
+  /** [Config Option] (String/Array/Ext.XTemplate) */
+  var labelAttrTpl: js.UndefOr[js.Any] = js.undefined
+  /** [Property] (Ext.Element) */
+  var labelCell: js.UndefOr[extjsLib.ExtNs.IElement] = js.undefined
+  /** [Config Option] (String) */
+  var labelCls: js.UndefOr[java.lang.String] = js.undefined
+  /** [Config Option] (String) */
+  var labelClsExtra: js.UndefOr[java.lang.String] = js.undefined
   /** [Config Option] (String) */
   var labelConnector: js.UndefOr[java.lang.String] = js.undefined
+  /** [Property] (Ext.Element) */
+  var labelEl: js.UndefOr[extjsLib.ExtNs.IElement] = js.undefined
+  /** [Config Option] (Number) */
+  var labelPad: js.UndefOr[scala.Double] = js.undefined
+  /** [Config Option] (String) */
+  var labelSeparator: js.UndefOr[java.lang.String] = js.undefined
+  /** [Config Option] (String) */
+  var labelStyle: js.UndefOr[java.lang.String] = js.undefined
+  /** [Config Option] (Number) */
+  var labelWidth: js.UndefOr[scala.Double] = js.undefined
+  /** [Config Option] (String) */
+  var msgTarget: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Called when a Ext form Labelable instance is added to the container s subtree
   		* @param labelable Ext.form.Labelable The instance that was added
   		*/
   @JSName("onAdd")
   var onAdd_IFieldContainer: js.UndefOr[js.Function1[/* labelable */ js.UndefOr[ILabelable], scala.Unit]] = js.undefined
+  /** [Method] Fired when the error message of any field within the container changes
+  		* @param field Ext.form.Labelable The sub-field whose active error changed
+  		* @param error String The new active error message
+  		*/
+  var onFieldErrorChange: js.UndefOr[
+    js.Function2[
+      /* field */ js.UndefOr[ILabelable], 
+      /* error */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ]
+  ] = js.undefined
   /** [Method] Fired when the validity of any field within the container changes
   		* @param field Ext.form.field.Field The sub-field whose validity changed
   		* @param valid Boolean The new validity state
@@ -84,6 +163,8 @@ trait IFieldContainer
   		*/
   @JSName("onRemove")
   var onRemove_IFieldContainer: js.UndefOr[js.Function1[/* labelable */ js.UndefOr[ILabelable], scala.Unit]] = js.undefined
+  /** [Config Option] (Boolean) */
+  var preventMark: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Sets the active error message to the given string
   		* @param msg String The error message
   		*/

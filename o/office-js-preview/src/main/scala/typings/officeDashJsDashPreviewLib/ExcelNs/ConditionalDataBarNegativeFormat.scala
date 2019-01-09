@@ -65,7 +65,7 @@ class ConditionalDataBarNegativeFormat ()
   def load(): ConditionalDataBarNegativeFormat = js.native
   def load(option: java.lang.String): ConditionalDataBarNegativeFormat = js.native
   def load(option: js.Array[java.lang.String]): ConditionalDataBarNegativeFormat = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): ConditionalDataBarNegativeFormat = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): ConditionalDataBarNegativeFormat = js.native
   def load(
     option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ConditionalDataBarNegativeFormatLoadOptions
   ): ConditionalDataBarNegativeFormat = js.native

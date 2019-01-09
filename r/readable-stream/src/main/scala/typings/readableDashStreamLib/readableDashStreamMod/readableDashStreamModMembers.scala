@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object readableDashStreamModMembers extends js.Object {
   // if (process.env.READABLE_STREAM === 'disable' && Stream)
-  var NodeBaseExport: nodeLib.streamMod.Readable with readableDashStreamLib.Anon_Stream = js.native
+  var NodeBaseExport: nodeLib.streamMod.Readable with readableDashStreamLib.Anon_Duplex = js.native
 }
 

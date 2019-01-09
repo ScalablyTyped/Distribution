@@ -45,7 +45,7 @@ class Connection protected ()
   /**
     * A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
     */
-  val physicalConnectionRequirements: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SubnetIdSecurityGroupIdLists]] = js.native
+  val physicalConnectionRequirements: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AvailabilityZoneSecurityGroupIdLists]] = js.native
 }
 
 @JSImport("@pulumi/aws/glue/connection", "Connection")

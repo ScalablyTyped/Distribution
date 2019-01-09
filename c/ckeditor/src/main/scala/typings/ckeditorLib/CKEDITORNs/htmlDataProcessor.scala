@@ -13,7 +13,7 @@ class htmlDataProcessor protected () extends dataProcessor {
   var htmlFilter: ckeditorLib.CKEDITORNs.htmlParserNs.filter = js.native
   var writer: ckeditorLib.CKEDITORNs.htmlParserNs.basicWriter = js.native
   def toDataFormat(html: java.lang.String): java.lang.String = js.native
-  def toDataFormat(html: java.lang.String, options: ckeditorLib.Anon_Filter): java.lang.String = js.native
+  def toDataFormat(html: java.lang.String, options: ckeditorLib.Anon_Context): java.lang.String = js.native
   def toHtml(data: java.lang.String, options: htmlDataProcessorOptions): java.lang.String = js.native
 }
 

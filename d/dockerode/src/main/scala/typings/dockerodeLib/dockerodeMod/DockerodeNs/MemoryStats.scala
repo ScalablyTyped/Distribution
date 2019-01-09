@@ -9,7 +9,7 @@ trait MemoryStats extends js.Object {
   var failcnt: scala.Double
   var limit: scala.Double
   var max_usage: scala.Double
-  var stats: dockerodeLib.Anon_Activefile
+  var stats: dockerodeLib.Anon_Activeanon
   var usage: scala.Double
 }
 

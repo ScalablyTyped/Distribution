@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object reduxDashPackModMembers extends js.Object {
   val KEY: reduxDashPackLib.Anon_LIFECYCLE = js.native
-  val LIFECYCLE: reduxDashPackLib.Anon_START = js.native
+  val LIFECYCLE: reduxDashPackLib.Anon_FAILURE = js.native
   val middleware: reduxLib.reduxMod.Middleware[js.Object, js.Any, reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]] = js.native
   def handle[TState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](
     state: TState,

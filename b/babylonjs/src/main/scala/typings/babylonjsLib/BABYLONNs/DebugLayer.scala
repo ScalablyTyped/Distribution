@@ -29,7 +29,7 @@ class DebugLayer protected () extends js.Object {
   /**
     * Observable triggered when a property is changed through the inspector.
     */
-  var onPropertyChangedObservable: Observable[babylonjsLib.Anon_Object] = js.native
+  var onPropertyChangedObservable: Observable[babylonjsLib.Anon_InitialValue] = js.native
   /**
     * Gets the active tab
     * @return the index of the active tab or -1 if the inspector is hidden
@@ -67,7 +67,7 @@ class DebugLayer protected () extends js.Object {
     * @param config Define the configuration of the inspector
     */
   def show(): scala.Unit = js.native
-  def show(config: babylonjsLib.Anon_ParentElement): scala.Unit = js.native
+  def show(config: babylonjsLib.Anon_InitialTab): scala.Unit = js.native
 }
 
 /**

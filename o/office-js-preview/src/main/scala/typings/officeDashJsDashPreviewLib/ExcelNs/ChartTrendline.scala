@@ -120,7 +120,7 @@ class ChartTrendline ()
   def load(): ChartTrendline = js.native
   def load(option: java.lang.String): ChartTrendline = js.native
   def load(option: js.Array[java.lang.String]): ChartTrendline = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): ChartTrendline = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): ChartTrendline = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ChartTrendlineLoadOptions): ChartTrendline = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartTrendline): scala.Unit = js.native

@@ -11,7 +11,7 @@ trait FilteredBidRequestsResource extends js.Object {
     * impression, with the number of bid requests not sent for each reason.
     */
   def list(
-    request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPageSizePrettyPrintBearertokenPageToken
+    request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetId
   ): gapiDotClientLib.gapiNs.clientNs.Request[ListFilteredBidRequestsResponse]
 }
 

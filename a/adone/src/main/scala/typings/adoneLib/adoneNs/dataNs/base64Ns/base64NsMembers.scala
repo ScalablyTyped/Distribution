@@ -24,9 +24,9 @@ object base64NsMembers extends js.Object {
     */
   def decodeNumber(n: scala.Double): java.lang.String = js.native
   def decodeVLQ(value: java.lang.String): scala.Double = js.native
-  def decodeVLQ(value: java.lang.String, index: js.UndefOr[scala.Nothing], rest: adoneLib.adoneLibNumbers.`true`): adoneLib.Anon_Value = js.native
+  def decodeVLQ(value: java.lang.String, index: js.UndefOr[scala.Nothing], rest: adoneLib.adoneLibNumbers.`true`): adoneLib.Anon_Index = js.native
   def decodeVLQ(value: java.lang.String, index: scala.Double): scala.Double = js.native
-  def decodeVLQ(value: java.lang.String, index: scala.Double, rest: adoneLib.adoneLibNumbers.`true`): adoneLib.Anon_Value = js.native
+  def decodeVLQ(value: java.lang.String, index: scala.Double, rest: adoneLib.adoneLibNumbers.`true`): adoneLib.Anon_Index = js.native
   def decodeVLQ(value: java.lang.String, index: scala.Double, rest: scala.Boolean): scala.Double = js.native
   /**
     * Decodes base64 string/buffer into a buffer
@@ -52,12 +52,12 @@ object base64NsMembers extends js.Object {
   @JSName("encode")
   def encode_String(
     str: java.lang.String,
-    options: adoneLib.adoneNs.dataNs.base64Ns.INs.EncodeOptions with adoneLib.Anon_Buffer
+    options: adoneLib.adoneNs.dataNs.base64Ns.INs.EncodeOptions with adoneLib.Anon_BufferFalse
   ): java.lang.String = js.native
   @JSName("encode")
   def encode_String(
     str: nodeLib.Buffer,
-    options: adoneLib.adoneNs.dataNs.base64Ns.INs.EncodeOptions with adoneLib.Anon_Buffer
+    options: adoneLib.adoneNs.dataNs.base64Ns.INs.EncodeOptions with adoneLib.Anon_BufferFalse
   ): java.lang.String = js.native
 }
 

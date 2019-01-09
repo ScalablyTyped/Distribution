@@ -5,8 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.InteractionNode because Would inherit conflicting mutable fields List($type))*/
-trait Event extends FlowNode {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- bpmnDashModdleLib.bpmnDashModdleMod.BPMNModdleNs.InteractionNode because var conflicts: $type. Inlined incomingConversationLinks, outgoingConversationLinks */ trait Event extends FlowNode {
+  var incomingConversationLinks: js.Array[ConversationLink]
+  var outgoingConversationLinks: js.Array[ConversationLink]
   var properties: js.Array[Property]
 }
 

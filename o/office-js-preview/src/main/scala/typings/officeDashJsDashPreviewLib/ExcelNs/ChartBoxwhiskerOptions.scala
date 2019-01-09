@@ -77,7 +77,7 @@ class ChartBoxwhiskerOptions ()
   def load(): ChartBoxwhiskerOptions = js.native
   def load(option: java.lang.String): ChartBoxwhiskerOptions = js.native
   def load(option: js.Array[java.lang.String]): ChartBoxwhiskerOptions = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): ChartBoxwhiskerOptions = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): ChartBoxwhiskerOptions = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ChartBoxwhiskerOptionsLoadOptions): ChartBoxwhiskerOptions = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartBoxwhiskerOptions): scala.Unit = js.native

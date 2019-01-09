@@ -15,7 +15,7 @@ trait Phantom extends js.Object {
   var libraryPath: java.lang.String = js.native
   var scriptName: java.lang.String = js.native
     // DEPRECATED
-  var version: Anon_Minor = js.native
+  var version: Anon_Major = js.native
   // Functions
   def addCookie(cookie: Cookie): scala.Boolean = js.native
   def clearCookies(): scala.Unit = js.native

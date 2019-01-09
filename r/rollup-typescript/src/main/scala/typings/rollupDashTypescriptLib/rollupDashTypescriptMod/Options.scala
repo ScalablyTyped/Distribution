@@ -10,6 +10,6 @@ trait Options extends js.Object {
   var include: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var module: js.UndefOr[java.lang.String] = js.undefined
   var tsconfig: js.UndefOr[scala.Boolean] = js.undefined
-  var typescript: js.UndefOr[rollupDashTypescriptLib.Anon_CreateFunctionExpression] = js.undefined
+  var typescript: js.UndefOr[rollupDashTypescriptLib.Anon_08] = js.undefined
 }
 

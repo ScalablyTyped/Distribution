@@ -19,6 +19,6 @@ trait IConnectPacket extends IPacket {
     mqttDashPacketLib.mqttDashPacketLibNumbers.`4` | mqttDashPacketLib.mqttDashPacketLibNumbers.`3`
   ] = js.undefined
   var username: js.UndefOr[java.lang.String] = js.undefined
-  var will: js.UndefOr[mqttDashPacketLib.Anon_Retain] = js.undefined
+  var will: js.UndefOr[mqttDashPacketLib.Anon_Payload] = js.undefined
 }
 

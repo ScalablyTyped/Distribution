@@ -19,7 +19,7 @@ trait IdentityPoolState extends js.Object {
     */
   val cognitoIdentityProviders: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ServerSideTokenCheck]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ClientIdProviderName]]
     ]
   ] = js.undefined
   /**

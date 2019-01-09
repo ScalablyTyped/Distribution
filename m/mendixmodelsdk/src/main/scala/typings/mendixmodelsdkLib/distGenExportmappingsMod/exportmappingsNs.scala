@@ -11,8 +11,8 @@ object exportmappingsNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/export-mappings relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenExportmappingsMod.exportmappingsNs.IExportMapping because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenExportmappingsMod.exportmappingsNs.IExportMapping because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class ExportMapping protected ()
     extends mendixmodelsdkLib.distGenMappingsMod.mappingsNs.MappingDocument {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()

@@ -10,9 +10,9 @@ trait CrowdClient
   extends atlassianDashCrowdDashClientLib.apiMod.namespaced {
   var authentication: atlassianDashCrowdDashClientLib.Anon_Authenticate = js.native
   var config: atlassianDashCrowdDashClientLib.Anon_Cookie = js.native
-  var group: atlassianDashCrowdDashClientLib.Anon_Membership = js.native
-  var search: atlassianDashCrowdDashClientLib.Anon_Group = js.native
-  var session: atlassianDashCrowdDashClientLib.Anon_Validate = js.native
-  var user: atlassianDashCrowdDashClientLib.Anon_Create = js.native
+  var group: atlassianDashCrowdDashClientLib.Anon_AttributesChildren = js.native
+  var search: atlassianDashCrowdDashClientLib.Anon_Expand = js.native
+  var session: atlassianDashCrowdDashClientLib.Anon_Create = js.native
+  var user: atlassianDashCrowdDashClientLib.Anon_Attributes = js.native
 }
 

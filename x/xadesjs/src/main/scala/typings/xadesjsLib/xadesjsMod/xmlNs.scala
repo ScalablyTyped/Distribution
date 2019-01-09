@@ -396,6 +396,6 @@ object xmlNs extends js.Object {
   abstract class XadesObject ()
     extends xadesjsLib.xadesjsMod.XAdESNs.xmlNs.XadesObject
   
-  var XmlXades: xadesjsLib.Anon_DefaultPrefix = js.native
+  var XmlXades: xadesjsLib.Anon_AttributeNames = js.native
 }
 

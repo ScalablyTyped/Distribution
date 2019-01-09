@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object utilsModMembers extends js.Object {
   val SAGA_ACTION: js.Symbol = js.native
   val TASK: java.lang.String = js.native
-  val asEffect: reduxDashSagaLib.Anon_Cancel = js.native
-  val is: reduxDashSagaLib.Anon_Number = js.native
+  val asEffect: reduxDashSagaLib.Anon_ActionChannel = js.native
+  val is: reduxDashSagaLib.Anon_Arg = js.native
   def arrayOfDeffered[T](length: scala.Double): js.Array[Deferred[T]] = js.native
   def cloneableGenerator(iterator: js.Function0[reduxDashSagaLib.reduxDashSagaMod.SagaIterator]): js.Function0[SagaIteratorClone] = js.native
   def cloneableGenerator[T1](iterator: js.Function1[/* arg1 */ T1, reduxDashSagaLib.reduxDashSagaMod.SagaIterator]): js.Function1[/* arg1 */ T1, SagaIteratorClone] = js.native

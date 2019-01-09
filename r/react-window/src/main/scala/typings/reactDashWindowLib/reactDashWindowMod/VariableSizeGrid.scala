@@ -29,7 +29,7 @@ class VariableSizeGrid ()
     * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
     * specify a value offalse for the optional shouldForceUpdate parameter.
     */
-  def resetAfterIndices(params: reactDashWindowLib.Anon_ColumnIndexShouldForceUpdate): scala.Unit = js.native
+  def resetAfterIndices(params: reactDashWindowLib.Anon_ColumnIndexRowIndex): scala.Unit = js.native
   /**
     * VariableSizeGrid caches offsets and measurements for each row index for performance purposes.
     * This method clears that cached data for all rows after (and including) the specified index.
@@ -44,7 +44,7 @@ class VariableSizeGrid ()
   /**
     * Scroll to the specified offsets.
     */
-  def scrollTo(params: reactDashWindowLib.Anon_ScrollTop): scala.Unit = js.native
+  def scrollTo(params: reactDashWindowLib.Anon_ScrollLeft): scala.Unit = js.native
   /**
     * Scroll to the specified item.
     *
@@ -56,6 +56,6 @@ class VariableSizeGrid ()
     * - end - Align the item to the bottom, right hand side of the grid.
     * - start - Align the item to the top, left hand of the grid.
     */
-  def scrollToItem(params: reactDashWindowLib.Anon_ColumnIndex): scala.Unit = js.native
+  def scrollToItem(params: reactDashWindowLib.Anon_Align): scala.Unit = js.native
 }
 

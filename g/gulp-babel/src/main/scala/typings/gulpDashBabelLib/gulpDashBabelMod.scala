@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object gulpDashBabelMod extends js.Object {
   def apply(): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def apply(options: gulpDashBabelLib.Anon_SourceMapTarget): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def apply(options: gulpDashBabelLib.Anon_Ast): nodeLib.NodeJSNs.ReadWriteStream = js.native
 }
 

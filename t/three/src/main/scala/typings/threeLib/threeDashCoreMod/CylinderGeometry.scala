@@ -17,6 +17,6 @@ class CylinderGeometry protected () extends Geometry {
     * @param openEnded - A Boolean indicating whether or not to cap the ends of the cylinder.
     */
   def this(radiusTop: js.UndefOr[scala.Double], radiusBottom: js.UndefOr[scala.Double], height: js.UndefOr[scala.Double], radiusSegments: js.UndefOr[scala.Double], heightSegments: js.UndefOr[scala.Double], openEnded: js.UndefOr[scala.Boolean], thetaStart: js.UndefOr[scala.Double], thetaLength: js.UndefOr[scala.Double]) = this()
-  var parameters: threeLib.Anon_ThetaLengthOpenEnded = js.native
+  var parameters: threeLib.Anon_HeightHeightSegments = js.native
 }
 

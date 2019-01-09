@@ -16,7 +16,7 @@ trait Report extends js.Object {
   var errorMessage: java.lang.String = js.native
   var groupingHash: java.lang.String = js.native
   var metaData: js.Object = js.native
-  var request: bugsnagDashJsLib.Anon_UrlString = js.native
+  var request: bugsnagDashJsLib.Anon_Url = js.native
   var session: js.Object = js.native
   var severity: bugsnagDashJsLib.bugsnagDashJsLibStrings.info | bugsnagDashJsLib.bugsnagDashJsLibStrings.warning | bugsnagDashJsLib.bugsnagDashJsLibStrings.error = js.native
   var stacktrace: js.Array[IStackframe] = js.native

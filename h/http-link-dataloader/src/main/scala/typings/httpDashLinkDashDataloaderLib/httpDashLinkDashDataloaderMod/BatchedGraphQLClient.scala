@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class BatchedGraphQLClient protected ()
   extends httpDashLinkDashDataloaderLib.distSrcBatchedGraphQLClientMod.BatchedGraphQLClient {
   def this(uri: java.lang.String) = this()
-  def this(uri: java.lang.String, options: httpDashLinkDashDataloaderLib.distSrcTypesMod.Options with (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ClientOptions */ js.Any)) = this()
+  def this(uri: java.lang.String, options: httpDashLinkDashDataloaderLib.distSrcTypesMod.Options with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ClientOptions */ js.Any)) = this()
 }
 

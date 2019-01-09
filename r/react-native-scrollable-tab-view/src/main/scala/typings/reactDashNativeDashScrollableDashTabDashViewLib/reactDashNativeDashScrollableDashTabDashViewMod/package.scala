@@ -13,6 +13,6 @@ package object reactDashNativeDashScrollableDashTabDashViewMod {
     /* goToPage */ js.Function1[/* pageNumber */ scala.Double, scala.Unit], 
     reactLib.reactMod.Global.JSXNs.Element
   ]
-  type TabBarProps[T] = T with reactDashNativeDashScrollableDashTabDashViewLib.Anon_Tabs
+  type TabBarProps[T] = T with reactDashNativeDashScrollableDashTabDashViewLib.Anon_ActiveTab
   type TabProps[T] = T with reactDashNativeDashScrollableDashTabDashViewLib.Anon_TabLabel
 }

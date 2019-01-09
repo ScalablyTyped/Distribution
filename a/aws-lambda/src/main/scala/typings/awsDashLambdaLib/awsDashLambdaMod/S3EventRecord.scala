@@ -12,8 +12,8 @@ trait S3EventRecord extends js.Object {
   var eventTime: java.lang.String
   var eventVersion: java.lang.String
   var requestParameters: awsDashLambdaLib.Anon_SourceIPAddress
-  var responseElements: awsDashLambdaLib.Anon_Xamzrequestid
-  var s3: awsDashLambdaLib.Anon_Object
+  var responseElements: awsDashLambdaLib.Anon_Xamzid2
+  var s3: awsDashLambdaLib.Anon_Bucket
   var userIdentity: awsDashLambdaLib.Anon_PrincipalId
 }
 

@@ -14,7 +14,7 @@ class SpriteSheet () extends Base {
   var size: java.lang.String = js.native
   def addIcon(iconName: java.lang.String, x: scala.Double, y: scala.Double): scala.Unit = js.native
   def getIconCSS(iconName: java.lang.String): java.lang.String = js.native
-  def getIconPosition(iconName: java.lang.String): photonuiLib.Anon_Y = js.native
+  def getIconPosition(iconName: java.lang.String): photonuiLib.Anon_X = js.native
   def removeIcon(iconName: java.lang.String): scala.Unit = js.native
 }
 

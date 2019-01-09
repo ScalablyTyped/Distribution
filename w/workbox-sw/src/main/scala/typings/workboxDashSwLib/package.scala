@@ -10,14 +10,14 @@ package object workboxDashSwLib {
     * If a value is returned by the match callback it will be passed in as the context.params argument.
     */
   type HandlerCallback = js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IHandlerContext */ /* context */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IHandlerContext */ /* context */ js.Any, 
     js.Promise[stdLib.Response]
   ]
   /**
     * To signify a match, return anything other than null. Return null if the route shouldn't match.
     */
   type MatchCallback = js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IMatchContext */ /* context */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IMatchContext */ /* context */ js.Any, 
     js.Object | scala.Null
   ]
   /**
@@ -33,7 +33,7 @@ package object workboxDashSwLib {
   /**
     * ===== ExpirationPlugin =====
     */
-  type Plugin = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BroadcastUpdatePlugin */ js.Any
+  type Plugin = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BroadcastUpdatePlugin */ js.Any
   /**
     * ===== StreamsNamespace =====
     */
@@ -45,7 +45,7 @@ package object workboxDashSwLib {
     * @returns {URL[]} To add additional urls to test, return an Array of URL's. Please note that these should not be Strings, but URL objects.
     */
   type UrlManipulation = js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IURLContext */ /* context */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IURLContext */ /* context */ js.Any, 
     js.Array[stdLib.URL]
   ]
 }

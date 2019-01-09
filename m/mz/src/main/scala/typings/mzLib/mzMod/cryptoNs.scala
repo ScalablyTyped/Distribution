@@ -1736,21 +1736,21 @@ object cryptoNs extends js.Object {
           mzLib.mzLibStrings.der | mzLib.mzLibStrings.pem, 
           mzLib.mzLibStrings.der | mzLib.mzLibStrings.pem
         ]
-    ): js.Promise[nodeLib.Anon_PublicKey] = js.native
+    ): js.Promise[nodeLib.Anon_PrivateKey] = js.native
     def `__promisify__`(
       `type`: mzLib.mzLibStrings.ec,
       options: nodeLib.cryptoMod.ECKeyPairOptions[
           mzLib.mzLibStrings.der | mzLib.mzLibStrings.pem, 
           mzLib.mzLibStrings.der | mzLib.mzLibStrings.pem
         ]
-    ): js.Promise[nodeLib.Anon_PublicKey] = js.native
+    ): js.Promise[nodeLib.Anon_PrivateKey] = js.native
     def `__promisify__`(
       `type`: mzLib.mzLibStrings.rsa,
       options: nodeLib.cryptoMod.RSAKeyPairOptions[
           mzLib.mzLibStrings.der | mzLib.mzLibStrings.pem, 
           mzLib.mzLibStrings.der | mzLib.mzLibStrings.pem
         ]
-    ): js.Promise[nodeLib.Anon_PublicKey] = js.native
+    ): js.Promise[nodeLib.Anon_PrivateKey] = js.native
   }
   
 }

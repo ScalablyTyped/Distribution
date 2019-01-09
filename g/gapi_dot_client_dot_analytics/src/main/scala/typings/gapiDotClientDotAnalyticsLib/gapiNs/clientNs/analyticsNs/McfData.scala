@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait McfData extends js.Object {
   /** Column headers that list dimension names followed by the metric names. The order of dimensions and metrics is same as specified in the request. */
-  var columnHeaders: js.UndefOr[js.Array[gapiDotClientDotAnalyticsLib.Anon_Name]] = js.undefined
+  var columnHeaders: js.UndefOr[js.Array[gapiDotClientDotAnalyticsLib.Anon_ColumnType]] = js.undefined
   /** Determines if the Analytics data contains sampled data. */
   var containsSampledData: js.UndefOr[scala.Boolean] = js.undefined
   /** Unique ID for this data response. */
@@ -24,9 +24,9 @@ trait McfData extends js.Object {
   /** Link to previous page for this Analytics data query. */
   var previousLink: js.UndefOr[java.lang.String] = js.undefined
   /** Information for the view (profile), for which the Analytics data was requested. */
-  var profileInfo: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_ProfileIdProfileName] = js.undefined
+  var profileInfo: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_AccountId] = js.undefined
   /** Analytics data request query parameters. */
-  var query: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_MaxresultsStartindexSamplingLevel] = js.undefined
+  var query: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Dimensions] = js.undefined
   /**
     * Analytics data rows, where each row contains a list of dimension values followed by the metric values. The order of dimensions and metrics is same as
     * specified in the request.

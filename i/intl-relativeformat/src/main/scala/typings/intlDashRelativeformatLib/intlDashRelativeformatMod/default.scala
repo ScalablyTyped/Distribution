@@ -27,7 +27,7 @@ class default protected () extends IntlRelativeFormat {
     */
   def this(locales: java.lang.String) = this()
   def this(locales: js.Array[java.lang.String]) = this()
-  def this(locales: java.lang.String, options: stdLib.IntlNs.DateTimeFormatOptions with intlDashRelativeformatLib.Anon_Units) = this()
-  def this(locales: js.Array[java.lang.String], options: stdLib.IntlNs.DateTimeFormatOptions with intlDashRelativeformatLib.Anon_Units) = this()
+  def this(locales: java.lang.String, options: stdLib.IntlNs.DateTimeFormatOptions with intlDashRelativeformatLib.Anon_Bestfit) = this()
+  def this(locales: js.Array[java.lang.String], options: stdLib.IntlNs.DateTimeFormatOptions with intlDashRelativeformatLib.Anon_Bestfit) = this()
 }
 

@@ -23,7 +23,7 @@ class Environment protected ()
     * are a combination of default settings and their overrides from `setting` in
     * the configuration.
     */
-  val allSettings: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_NamespaceResourceValue]] = js.native
+  val allSettings: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_NameNamespace]] = js.native
   /**
     * Name of the application that contains the version
     * to be deployed
@@ -85,7 +85,7 @@ class Environment protected ()
     * override specific values that are set as defaults. The format is detailed
     * below in Option Settings
     */
-  val settings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NamespaceResourceValue]]] = js.native
+  val settings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameNamespace]]] = js.native
   /**
     * A solution stack to base your environment
     * off of. Example stacks can be found in the [Amazon API documentation][1]

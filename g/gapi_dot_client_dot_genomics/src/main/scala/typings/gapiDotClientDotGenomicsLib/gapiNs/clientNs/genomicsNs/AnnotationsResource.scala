@@ -22,7 +22,7 @@ trait AnnotationsResource extends js.Object {
     * see
     * CreateAnnotation.
     */
-  def batchCreate(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[BatchCreateAnnotationsResponse]
+  def batchCreate(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[BatchCreateAnnotationsResponse]
   /**
     * Creates a new annotation. Caller must have WRITE permission
     * for the associated annotation set.
@@ -47,21 +47,17 @@ trait AnnotationsResource extends js.Object {
     * Annotation resource
     * for additional restrictions on each field.
     */
-  def create(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
+  def create(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
   /**
     * Deletes an annotation. Caller must have WRITE permission for
     * the associated annotation set.
     */
-  def delete(
-    request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUserKeyOauthtokenAltFields
-  ): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Gets an annotation. Caller must have READ permission
     * for the associated annotation set.
     */
-  def get(
-    request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUserKeyOauthtokenAltFields
-  ): gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
+  def get(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
   /**
     * Searches for annotations that match the given criteria. Results are
     * ordered by genomic coordinate (by reference sequence, then position).
@@ -71,13 +67,11 @@ trait AnnotationsResource extends js.Object {
     * across their respective streams of paginated responses. Caller must have
     * READ permission for the queried annotation sets.
     */
-  def search(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[SearchAnnotationsResponse]
+  def search(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchAnnotationsResponse]
   /**
     * Updates an annotation. Caller must have
     * WRITE permission for the associated dataset.
     */
-  def update(
-    request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUserKeyOauthtokenAltUpdateMask
-  ): gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
+  def update(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltAnnotationId): gapiDotClientLib.gapiNs.clientNs.Request[Annotation]
 }
 

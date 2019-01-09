@@ -14,7 +14,7 @@ trait LogMetricFilterArgs extends js.Object {
     * A block defining collection of information
     * needed to define how metric data gets emitted. See below.
     */
-  val metricTransformation: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NamespaceValue]
+  val metricTransformation: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DefaultValueName]
   /**
     * A name for the metric filter.
     */

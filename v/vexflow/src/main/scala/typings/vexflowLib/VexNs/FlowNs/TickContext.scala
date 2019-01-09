@@ -14,7 +14,7 @@ class TickContext () extends js.Object {
   def getCurrentTick(): Fraction = js.native
   def getExtraPx(): vexflowLib.Anon_ExtraLeft = js.native
   def getMaxTicks(): scala.Double = js.native
-  def getMetrics(): vexflowLib.Anon_ExtraRightPx = js.native
+  def getMetrics(): vexflowLib.Anon_ExtraLeftPxExtraRightPx = js.native
   def getMinTicks(): scala.Double = js.native
   def getPixelsUsed(): scala.Double = js.native
   def getTickables(): js.Array[Tickable] = js.native

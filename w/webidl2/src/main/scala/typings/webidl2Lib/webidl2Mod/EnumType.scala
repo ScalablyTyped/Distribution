@@ -12,6 +12,6 @@ trait EnumType extends js.Object {
   var name: java.lang.String
   var `type`: webidl2Lib.webidl2LibStrings.enum
   /** An array of values (strings). */
-  var values: js.Array[webidl2Lib.Anon_Type]
+  var values: js.Array[webidl2Lib.Anon_String]
 }
 

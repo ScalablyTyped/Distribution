@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SingleTileImageryProvider protected ()
   extends cesiumLib.cesiumMod.CesiumNs.SingleTileImageryProvider {
-  def this(options: cesiumLib.Anon_Url) = this()
+  def this(options: cesiumLib.Anon_CreditEllipsoidProxyRectangle) = this()
   /* CompleteClass */
   override var credit: cesiumLib.cesiumMod.CesiumNs.Credit = js.native
   /* CompleteClass */

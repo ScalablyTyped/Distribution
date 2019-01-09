@@ -25,7 +25,7 @@ class Store[S] protected () extends js.Object {
   def dispatch(`type`: java.lang.String, payload: js.Any, options: DispatchOptions): js.Promise[_] = js.native
   def dispatch[P /* <: Payload */](payloadWithType: P): js.Promise[_] = js.native
   def dispatch[P /* <: Payload */](payloadWithType: P, options: DispatchOptions): js.Promise[_] = js.native
-  def hotUpdate(options: vuexLib.Anon_Mutations[S]): scala.Unit = js.native
+  def hotUpdate(options: vuexLib.Anon_Actions[S]): scala.Unit = js.native
   def registerModule[T](path: java.lang.String, module: Module[T, S]): scala.Unit = js.native
   def registerModule[T](path: java.lang.String, module: Module[T, S], options: ModuleOptions): scala.Unit = js.native
   def registerModule[T](path: js.Array[java.lang.String], module: Module[T, S]): scala.Unit = js.native

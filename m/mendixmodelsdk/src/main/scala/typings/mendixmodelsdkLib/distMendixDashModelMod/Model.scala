@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distMendixDashModelMod.IModel because Would inherit conflicting mutable fields List(id, metaModelVersion, mxVersionForModel, root, workingCopy))*/
-@JSImport("mendixmodelsdk/dist/mendix-model", "Model")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- mendixmodelsdkLib.distMendixDashModelMod.IModel because var conflicts: id, metaModelVersion, mxVersionForModel, root, workingCopy. Inlined findModuleByQualifiedName */ @JSImport("mendixmodelsdk/dist/mendix-model", "Model")
 @js.native
 class Model ()
   extends mendixmodelsdkLib.distGenBaseDashModelMod.BaseModel {
@@ -17,6 +17,9 @@ class Model ()
     */
   @JSName("root")
   val root_Model: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject = js.native
+  /**
+    * Given a qualified name, returns a Module.
+    */
   def findModuleByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModule | scala.Null = js.native
 }
 

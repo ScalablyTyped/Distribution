@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object phantomModMembers extends js.Object {
   def create(): js.Promise[PhantomJS] = js.native
   def create(args: js.Array[java.lang.String]): js.Promise[PhantomJS] = js.native
-  def create(args: js.Array[java.lang.String], config: phantomLib.Anon_Logger): js.Promise[PhantomJS] = js.native
+  def create(args: js.Array[java.lang.String], config: phantomLib.Anon_DebugError): js.Promise[PhantomJS] = js.native
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Navigator")
 @js.native
 class Navigator ()
-  extends Component[reactDashOnsenuiLib.Anon_OnPostPop, js.Any] {
+  extends Component[reactDashOnsenuiLib.Anon_AnimationAnimationOptions, js.Any] {
   var pages: js.Array[_] = js.native
   var routes: js.Array[_] = js.native
   def popPage(): js.Promise[reactLib.HTMLElement] = js.native

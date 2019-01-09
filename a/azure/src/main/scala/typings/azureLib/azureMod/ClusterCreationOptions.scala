@@ -10,11 +10,11 @@ trait ClusterCreationOptions extends js.Object {
   var defaultStorageAccountKey: java.lang.String
   var defaultStorageAccountName: java.lang.String
   var defaultStorageContainer: java.lang.String
-  var hiveMetastore: js.UndefOr[azureLib.Anon_User] = js.undefined
+  var hiveMetastore: js.UndefOr[azureLib.Anon_Database] = js.undefined
   var location: java.lang.String
   var name: java.lang.String
   var nodes: scala.Double
-  var oozieMetastore: js.UndefOr[azureLib.Anon_User] = js.undefined
+  var oozieMetastore: js.UndefOr[azureLib.Anon_Database] = js.undefined
   var password: java.lang.String
   var user: java.lang.String
 }

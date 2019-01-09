@@ -14,9 +14,9 @@ object argon2ModMembers extends js.Object {
   val defaults: Options = js.native
   val limits: OptionLimits = js.native
   def hash(plain: java.lang.String): js.Promise[java.lang.String] = js.native
-  def hash(plain: java.lang.String, options: Options with (argon2Lib.Anon_Raw | argon2Lib.Anon_RawFalse)): js.Promise[nodeLib.Buffer] = js.native
+  def hash(plain: java.lang.String, options: Options with (argon2Lib.Anon_False | argon2Lib.Anon_Raw)): js.Promise[nodeLib.Buffer] = js.native
   def hash(plain: nodeLib.Buffer): js.Promise[java.lang.String] = js.native
-  def hash(plain: nodeLib.Buffer, options: Options with (argon2Lib.Anon_Raw | argon2Lib.Anon_RawFalse)): js.Promise[nodeLib.Buffer] = js.native
+  def hash(plain: nodeLib.Buffer, options: Options with (argon2Lib.Anon_False | argon2Lib.Anon_Raw)): js.Promise[nodeLib.Buffer] = js.native
   def verify(hash: java.lang.String, plain: java.lang.String): js.Promise[scala.Boolean] = js.native
   def verify(hash: java.lang.String, plain: nodeLib.Buffer): js.Promise[scala.Boolean] = js.native
 }

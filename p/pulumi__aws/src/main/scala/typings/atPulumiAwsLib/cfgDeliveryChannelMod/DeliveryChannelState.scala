@@ -21,7 +21,7 @@ trait DeliveryChannelState extends js.Object {
   /**
     * Options for how AWS Config delivers configuration snapshots. See below
     */
-  val snapshotDeliveryProperties: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeliveryFrequency]] = js.undefined
+  val snapshotDeliveryProperties: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeliveryFrequencyInput]] = js.undefined
   /**
     * The ARN of the SNS topic that AWS Config delivers notifications to.
     */

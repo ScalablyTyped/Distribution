@@ -29,7 +29,7 @@ object LocationNs extends js.Object {
   }
   
   trait LocationData extends js.Object {
-    var coords: expoLib.Anon_Speed with Coords
+    var coords: expoLib.Anon_Heading with Coords
     var timestamp: scala.Double
   }
   

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RectanglePrimitive ()
   extends cesiumLib.cesiumMod.CesiumNs.RectanglePrimitive {
-  def this(options: cesiumLib.Anon_ShowHeight) = this()
+  def this(options: cesiumLib.Anon_Asynchronous) = this()
   /* CompleteClass */
   override var asynchronous: scala.Boolean = js.native
   /* CompleteClass */

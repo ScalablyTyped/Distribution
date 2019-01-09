@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IRouter[T] extends RequestHandler {
   /**
-               * Special-cased "all" method, applying the given route `path`,
-               * middleware, and callback to _every_ HTTP method.
-               *
-               * @param path
-               * @param fn
-               */
+    * Special-cased "all" method, applying the given route `path`,
+    * middleware, and callback to _every_ HTTP method.
+    *
+    * @param path
+    * @param fn
+    */
   @JSName("all")
   var all_Original: IRouterMatcher[T] = js.native
   @JSName("delete")
@@ -29,20 +29,20 @@ trait IRouter[T] extends RequestHandler {
   @JSName("put")
   var put_Original: IRouterMatcher[T] = js.native
   /**
-               * Special-cased "all" method, applying the given route `path`,
-               * middleware, and callback to _every_ HTTP method.
-               *
-               * @param path
-               * @param fn
-               */
+    * Special-cased "all" method, applying the given route `path`,
+    * middleware, and callback to _every_ HTTP method.
+    *
+    * @param path
+    * @param fn
+    */
   def all(name: java.lang.String, handlers: RequestHandler*): T = js.native
   /**
-               * Special-cased "all" method, applying the given route `path`,
-               * middleware, and callback to _every_ HTTP method.
-               *
-               * @param path
-               * @param fn
-               */
+    * Special-cased "all" method, applying the given route `path`,
+    * middleware, and callback to _every_ HTTP method.
+    *
+    * @param path
+    * @param fn
+    */
   def all(name: stdLib.RegExp, handlers: RequestHandler*): T = js.native
   def delete(name: java.lang.String, handlers: RequestHandler*): T = js.native
   def delete(name: stdLib.RegExp, handlers: RequestHandler*): T = js.native
@@ -55,34 +55,34 @@ trait IRouter[T] extends RequestHandler {
     callback: js.Function2[/* name */ java.lang.String, /* matcher */ stdLib.RegExp, RequestParamHandler]
   ): T = js.native
   /**
-               * Map the given param placeholder `name`(s) to the given callback(s).
-               *
-               * Parameter mapping is used to provide pre-conditions to routes
-               * which use normalized placeholders. For example a _:user_id_ parameter
-               * could automatically load a user's information from the database without
-               * any additional code,
-               *
-               * The callback uses the samesignature as middleware, the only differencing
-               * being that the value of the placeholder is passed, in this case the _id_
-               * of the user. Once the `next()` function is invoked, just like middleware
-               * it will continue on to execute the route, or subsequent parameter functions.
-               *
-               *      app.param('user_id', function(req, res, next, id){
-               *        User.find(id, function(err, user){
-               *          if (err) {
-               *            next(err);
-               *          } else if (user) {
-               *            req.user = user;
-               *            next();
-               *          } else {
-               *            next(new Error('failed to load user'));
-               *          }
-               *        });
-               *      });
-               *
-               * @param name
-               * @param fn
-               */
+    * Map the given param placeholder `name`(s) to the given callback(s).
+    *
+    * Parameter mapping is used to provide pre-conditions to routes
+    * which use normalized placeholders. For example a _:user_id_ parameter
+    * could automatically load a user's information from the database without
+    * any additional code,
+    *
+    * The callback uses the samesignature as middleware, the only differencing
+    * being that the value of the placeholder is passed, in this case the _id_
+    * of the user. Once the `next()` function is invoked, just like middleware
+    * it will continue on to execute the route, or subsequent parameter functions.
+    *
+    *      app.param('user_id', function(req, res, next, id){
+    *        User.find(id, function(err, user){
+    *          if (err) {
+    *            next(err);
+    *          } else if (user) {
+    *            req.user = user;
+    *            next();
+    *          } else {
+    *            next(new Error('failed to load user'));
+    *          }
+    *        });
+    *      });
+    *
+    * @param name
+    * @param fn
+    */
   def param(name: java.lang.String, handler: RequestParamHandler): T = js.native
   def param(name: java.lang.String, mapper: js.Function1[/* param */ js.Any, _]): T = js.native
   def param(name: java.lang.String, matcher: stdLib.RegExp): T = js.native

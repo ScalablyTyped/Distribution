@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait RegionInstanceGroupsResource extends js.Object {
   /** Returns the specified instance group resource. */
-  def get(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintInstanceGroupQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroup]
+  def get(request: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[InstanceGroup]
   /** Retrieves the list of instance group resources contained within the specified region. */
-  def list(request: gapiDotClientDotComputeLib.Anon_ProjectMaxResultsPrettyPrintPageToken): gapiDotClientLib.gapiNs.clientNs.Request[RegionInstanceGroupList]
+  def list(request: gapiDotClientDotComputeLib.Anon_AltFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[RegionInstanceGroupList]
   /**
     * Lists the instances in the specified instance group and displays information about the named ports. Depending on the specified options, this method can
     * list all instances or only the instances that are running.
     */
-  def listInstances(request: gapiDotClientDotComputeLib.Anon_ProjectMaxResultsPrettyPrintPageTokenInstanceGroup): gapiDotClientLib.gapiNs.clientNs.Request[RegionInstanceGroupsListInstances]
+  def listInstances(request: gapiDotClientDotComputeLib.Anon_AltFieldsFilterInstanceGroupKey): gapiDotClientLib.gapiNs.clientNs.Request[RegionInstanceGroupsListInstances]
   /** Sets the named ports for the specified regional instance group. */
-  def setNamedPorts(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintInstanceGroupQuotaUserKeyUserIp): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def setNamedPorts(request: gapiDotClientDotComputeLib.Anon_AltFieldsInstanceGroupKeyOauthtokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 

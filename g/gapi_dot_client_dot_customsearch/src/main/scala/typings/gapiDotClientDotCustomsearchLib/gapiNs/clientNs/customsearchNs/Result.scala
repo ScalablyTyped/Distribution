@@ -13,7 +13,7 @@ trait Result extends js.Object {
   var htmlFormattedUrl: js.UndefOr[java.lang.String] = js.undefined
   var htmlSnippet: js.UndefOr[java.lang.String] = js.undefined
   var htmlTitle: js.UndefOr[java.lang.String] = js.undefined
-  var image: js.UndefOr[gapiDotClientDotCustomsearchLib.Anon_ThumbnailLink] = js.undefined
+  var image: js.UndefOr[gapiDotClientDotCustomsearchLib.Anon_ByteSize] = js.undefined
   var kind: js.UndefOr[java.lang.String] = js.undefined
   var labels: js.UndefOr[js.Array[gapiDotClientDotCustomsearchLib.Anon_DisplayName]] = js.undefined
   var link: js.UndefOr[java.lang.String] = js.undefined

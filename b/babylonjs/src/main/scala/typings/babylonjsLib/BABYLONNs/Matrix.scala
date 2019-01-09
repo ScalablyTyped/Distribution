@@ -743,13 +743,13 @@ object Matrix extends js.Object {
     * @param rightHanded defines if the matrix must be in right-handed mode (false by default)
     */
   def PerspectiveFovWebVRToRef(
-    fov: babylonjsLib.Anon_UpDegrees,
+    fov: babylonjsLib.Anon_DownDegrees,
     znear: scala.Double,
     zfar: scala.Double,
     result: babylonjsLib.BABYLONNs.Matrix
   ): scala.Unit = js.native
   def PerspectiveFovWebVRToRef(
-    fov: babylonjsLib.Anon_UpDegrees,
+    fov: babylonjsLib.Anon_DownDegrees,
     znear: scala.Double,
     zfar: scala.Double,
     result: babylonjsLib.BABYLONNs.Matrix,

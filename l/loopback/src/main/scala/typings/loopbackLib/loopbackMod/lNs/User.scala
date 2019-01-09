@@ -71,7 +71,7 @@ trait User extends PersistedModel {
     * settings.caseSensitiveEmail Enable case sensitive email.
     */
   @JSName("settings")
-  var settings_User: loopbackLib.Anon_RealmDelimiter = js.native
+  var settings_User: loopbackLib.Anon_AclsCaseSensitiveEmail = js.native
   /** The property is not used by LoopBack, you are free to use it for your own purposes. */
   var status: java.lang.String = js.native
   /** Must be unique. */
@@ -137,6 +137,6 @@ trait User extends PersistedModel {
     *  object, instead simply execute the callback with the token! User saving
     *  and email sending will be handled in the `verify()` method
     */
-  def verify(options: loopbackLib.Anon_SubjectRedirect): scala.Unit = js.native
+  def verify(options: loopbackLib.Anon_FromGenerateVerificationToken): scala.Unit = js.native
 }
 

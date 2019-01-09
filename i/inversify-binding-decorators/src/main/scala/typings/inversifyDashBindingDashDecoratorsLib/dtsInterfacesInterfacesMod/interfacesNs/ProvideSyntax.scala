@@ -11,7 +11,7 @@ trait ProvideSyntax extends js.Object {
   var constraint_Original: BindConstraint = js.native
   var implementationType: js.Any = js.native
   def constraint(
-    bind: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversifyInterfaces.Bind */ js.Any,
+    bind: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversifyInterfaces.Bind */ js.Any,
     target: js.Any
   ): js.Any = js.native
 }

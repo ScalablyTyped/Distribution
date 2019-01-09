@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Opts
   extends org.scalablytyped.runtime.Instantiable0[koaLib.koaMod.ApplicationNs.Middleware[js.Any, js.Object]]
      with org.scalablytyped.runtime.Instantiable1[
-      /* opts */ Anon_InvalidTokenStatusCode, 
+      /* opts */ Anon_DisableQuery, 
       koaLib.koaMod.ApplicationNs.Middleware[js.Any, js.Object]
     ]
 

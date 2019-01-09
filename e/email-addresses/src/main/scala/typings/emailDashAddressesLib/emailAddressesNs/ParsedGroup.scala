@@ -9,7 +9,7 @@ trait ParsedGroup extends js.Object {
   var addresses: js.Array[ParsedMailbox]
   var name: java.lang.String
   var node: js.UndefOr[ASTNode] = js.undefined
-  var parts: emailDashAddressesLib.Anon_NameASTNode
+  var parts: emailDashAddressesLib.Anon_Name
   var `type`: java.lang.String
 }
 

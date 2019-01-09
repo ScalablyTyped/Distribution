@@ -12,11 +12,11 @@ trait CreateOptions extends js.Object {
   var border: js.UndefOr[java.lang.String | htmlDashPdfLib.Anon_Bottom] = js.undefined
   // Export options
   var directory: js.UndefOr[java.lang.String] = js.undefined
-  var footer: js.UndefOr[htmlDashPdfLib.Anon_HeightContents] = js.undefined
+  var footer: js.UndefOr[htmlDashPdfLib.Anon_ContentsHeight] = js.undefined
   var format: js.UndefOr[
     htmlDashPdfLib.htmlDashPdfLibStrings.A3 | htmlDashPdfLib.htmlDashPdfLibStrings.A4 | htmlDashPdfLib.htmlDashPdfLibStrings.A5 | htmlDashPdfLib.htmlDashPdfLibStrings.Legal | htmlDashPdfLib.htmlDashPdfLibStrings.Letter | htmlDashPdfLib.htmlDashPdfLibStrings.Tabloid
   ] = js.undefined
-  var header: js.UndefOr[htmlDashPdfLib.Anon_Height] = js.undefined
+  var header: js.UndefOr[htmlDashPdfLib.Anon_Contents] = js.undefined
   // Papersize Options: http://phantomjs.org/api/webpage/property/paper-size.html
   var height: js.UndefOr[java.lang.String] = js.undefined
   // HTTP Headers that are used for requests

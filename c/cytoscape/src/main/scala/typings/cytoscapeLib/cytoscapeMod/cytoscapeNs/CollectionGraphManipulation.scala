@@ -24,7 +24,7 @@ trait CollectionGraphManipulation extends js.Object {
     * Effectively move edges to different nodes. The modified (actually new) elements are returned.
     * http://js.cytoscape.org/#eles.move
     */
-  def move(location: cytoscapeLib.Anon_Target): EdgeCollection = js.native
+  def move(location: cytoscapeLib.Anon_Source): EdgeCollection = js.native
   /**
     * Remove the elements from the graph.
     * http://js.cytoscape.org/#eles.remove

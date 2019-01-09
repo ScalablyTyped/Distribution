@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Session {
   /* CompleteClass */
-  override var events: bugsnagDashJsLib.Anon_Unhandled = js.native
+  override var events: bugsnagDashJsLib.Anon_Handled = js.native
   /* CompleteClass */
   override var id: java.lang.String = js.native
   /* CompleteClass */

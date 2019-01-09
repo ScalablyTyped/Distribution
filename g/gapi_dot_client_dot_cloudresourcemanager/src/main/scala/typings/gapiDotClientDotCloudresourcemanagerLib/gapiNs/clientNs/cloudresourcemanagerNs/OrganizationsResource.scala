@@ -9,7 +9,7 @@ trait OrganizationsResource extends js.Object {
   /** Clears a `Policy` from a resource. */
   def clearOrgPolicy(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /** Fetches an Organization resource identified by the specified resource name. */
-  def get(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Organization]
+  def get(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Organization]
   /**
     * Gets the effective `Policy` on a resource. This is the result of merging
     * `Policies` in the resource hierarchy. The returned `Policy` will not have
@@ -47,7 +47,7 @@ trait OrganizationsResource extends js.Object {
     * Search will only return organizations on which the user has the permission
     * `resourcemanager.organizations.get`
     */
-  def search(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[SearchOrganizationsResponse]
+  def search(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[SearchOrganizationsResponse]
   /**
     * Sets the access control policy on an Organization resource. Replaces any
     * existing policy. The `resource` field should be the organization's resource

@@ -148,7 +148,7 @@ class default () extends AmStockChart {
     * @param handler - The event handler.
     */
   /* CompleteClass */
-  override def addListener(`type`: java.lang.String, handler: js.Function1[/* e */ amchartsLib.Anon_Panel, scala.Unit]): scala.Unit = js.native
+  override def addListener(`type`: java.lang.String, handler: js.Function1[/* e */ amchartsLib.Anon_ChartDate, scala.Unit]): scala.Unit = js.native
   /**
     * Adds panel to the stock chart. Requires stockChart.validateNow() method to be called after this action.
     */

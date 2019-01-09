@@ -19,6 +19,6 @@ package object StripeNs {
     * be a string with an integer Unix timestamp, or it can be a
     * dictionary with the following options:
     */
-  type IDateFilter = java.lang.String | stripeLib.Anon_Lte
+  type IDateFilter = java.lang.String | stripeLib.Anon_Gt
   type IResponseFn[R] = js.Function2[/* err */ IStripeError, /* value */ R, scala.Unit]
 }

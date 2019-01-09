@@ -9,17 +9,17 @@ trait AdUnit extends js.Object {
   /** Identity code of this ad unit, not necessarily unique across ad clients. */
   var code: js.UndefOr[java.lang.String] = js.undefined
   /** Settings specific to content ads (AFC) and highend mobile content ads (AFMC - deprecated). */
-  var contentAdsSettings: js.UndefOr[gapiDotClientDotAdsenseLib.Anon_TypeBackupOption] = js.undefined
+  var contentAdsSettings: js.UndefOr[gapiDotClientDotAdsenseLib.Anon_BackupOption] = js.undefined
   /** Custom style information specific to this ad unit. */
   var customStyle: js.UndefOr[AdStyle] = js.undefined
   /** Settings specific to feed ads (AFF) - deprecated. */
-  var feedAdsSettings: js.UndefOr[gapiDotClientDotAdsenseLib.Anon_Type] = js.undefined
+  var feedAdsSettings: js.UndefOr[gapiDotClientDotAdsenseLib.Anon_AdPosition] = js.undefined
   /** Unique identifier of this ad unit. This should be considered an opaque identifier; it is not safe to rely on it being in any particular format. */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /** Kind of resource this is, in this case adsense#adUnit. */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /** Settings specific to WAP mobile content ads (AFMC) - deprecated. */
-  var mobileContentAdsSettings: js.UndefOr[gapiDotClientDotAdsenseLib.Anon_TypeMarkupLanguage] = js.undefined
+  var mobileContentAdsSettings: js.UndefOr[gapiDotClientDotAdsenseLib.Anon_MarkupLanguage] = js.undefined
   /** Name of this ad unit. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** ID of the saved ad style which holds this ad unit's style information. */

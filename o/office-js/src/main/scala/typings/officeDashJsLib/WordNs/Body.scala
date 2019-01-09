@@ -492,7 +492,7 @@ class Body ()
   def load(): Body = js.native
   def load(option: java.lang.String): Body = js.native
   def load(option: js.Array[java.lang.String]): Body = js.native
-  def load(option: officeDashJsLib.Anon_Select): Body = js.native
+  def load(option: officeDashJsLib.Anon_Expand): Body = js.native
   def load(option: officeDashJsLib.WordNs.InterfacesNs.BodyLoadOptions): Body = js.native
   /**
     *
@@ -504,7 +504,7 @@ class Body ()
     * @param searchOptions Optional. Options for the search.
     */
   def search(searchText: java.lang.String): RangeCollection = js.native
-  def search(searchText: java.lang.String, searchOptions: officeDashJsLib.Anon_MatchSuffix): RangeCollection = js.native
+  def search(searchText: java.lang.String, searchOptions: officeDashJsLib.Anon_IgnorePunct): RangeCollection = js.native
   def search(searchText: java.lang.String, searchOptions: SearchOptions): RangeCollection = js.native
   /**
     *

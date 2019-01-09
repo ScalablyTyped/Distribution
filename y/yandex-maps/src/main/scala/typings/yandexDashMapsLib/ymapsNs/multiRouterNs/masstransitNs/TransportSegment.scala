@@ -12,7 +12,6 @@ class TransportSegment ()
   /* CompleteClass */
   override var events: yandexDashMapsLib.ymapsNs.IEventManager = js.native
   var model: TransportSegmentModel = js.native
-  var options: yandexDashMapsLib.ymapsNs.IOptionManager = js.native
   @JSName("properties")
   var properties_TransportSegment: yandexDashMapsLib.ymapsNs.dataNs.Manager = js.native
   /* CompleteClass */

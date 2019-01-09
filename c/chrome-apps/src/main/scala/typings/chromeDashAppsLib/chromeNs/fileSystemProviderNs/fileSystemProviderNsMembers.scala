@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object fileSystemProviderNsMembers extends js.Object {
   /** Type of a change detected on the observed directory. */
-  val ChangeType: chromeDashAppsLib.Anon_CHANGED = js.native
+  val ChangeType: chromeDashAppsLib.Anon_CHANGEDDELETED = js.native
   /**
     * List of common actions. 'SHARE' is for sharing files with others.
     * 'SAVE_FOR_OFFLINE' for pinning (saving for offline access).
@@ -17,7 +17,7 @@ object fileSystemProviderNsMembers extends js.Object {
     * need to be stored for offline access anymore.
     * Used by onGetActionsRequested and onExecuteActionRequested.
     */
-  val CommonActionId: chromeDashAppsLib.Anon_SHARE = js.native
+  val CommonActionId: chromeDashAppsLib.Anon_OFFLINENOTNECESSARY = js.native
   /** Mode of opening a file. Used by onOpenFileRequested. */
   val OpenFileMode: chromeDashAppsLib.Anon_READ = js.native
   /**
@@ -25,7 +25,7 @@ object fileSystemProviderNsMembers extends js.Object {
     * as well as in case of errors when calling methods of the API.
     * For success, 'OK' must be used.
     * */
-  val ProviderError: chromeDashAppsLib.Anon_INUSE = js.native
+  val ProviderError: chromeDashAppsLib.Anon_ABORT = js.native
   /**
     * Raised when aborting an operation with operationRequestId is requested.
     * The operation executed with operationRequestId must be immediately stopped
@@ -41,11 +41,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -65,11 +65,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -88,11 +88,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -113,11 +113,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -136,11 +136,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -160,11 +160,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -183,11 +183,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -207,11 +207,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -232,11 +232,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -259,11 +259,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function1[/* actions */ js.Array[Action], scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -283,11 +283,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function1[/* metadata */ EntryMetadata, scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -308,11 +308,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -331,11 +331,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -355,11 +355,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -379,11 +379,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function2[/* entries */ js.Array[EntryMetadata], /* hasMore */ scala.Boolean, scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -403,11 +403,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function2[/* data */ stdLib.ArrayBuffer, /* hasMore */ scala.Boolean, scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -427,11 +427,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -450,11 +450,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -477,11 +477,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit
@@ -499,11 +499,11 @@ object fileSystemProviderNsMembers extends js.Object {
       /* successCallback */ js.Function0[scala.Unit], 
       /* errorCallback */ js.Function1[
         /* error */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-          chromeDashAppsLib.Anon_INUSE, 
+          chromeDashAppsLib.Anon_ABORT, 
           java.lang.String, 
           stdLib.Exclude[
             java.lang.String, 
-            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INUSE[keyof chrome-apps.Anon_INUSE] */ js.Any
+            /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ABORT[keyof chrome-apps.Anon_ABORT] */ js.Any
           ]
         ], 
         scala.Unit

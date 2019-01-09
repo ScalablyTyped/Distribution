@@ -16,14 +16,14 @@ object pinoModMembers extends js.Object {
   /**
     * Provides functions for serializing objects common to many projects.
     */
-  val stdSerializers: pinoLib.Anon_Req = js.native
+  val stdSerializers: pinoLib.Anon_Err = js.native
   /**
     * Provides functions for generating the timestamp property in the log output. You can set the `timestamp` option during
     * initialization to one of these functions to adjust the output format. Alternatively, you can specify your own time function.
     * A time function must synchronously return a string that would be a valid component of a JSON string. For example,
     * the default function returns a string like `,"time":1493426328206`.
     */
-  val stdTimeFunctions: pinoLib.Anon_NullTime = js.native
+  val stdTimeFunctions: pinoLib.Anon_EpochTime = js.native
   /**
     * @param [optionsOrStream]: an options object or a writable stream where the logs will be written. It can also receive some log-line metadata, if the
     * relative protocol is enabled. Default: process.stdout

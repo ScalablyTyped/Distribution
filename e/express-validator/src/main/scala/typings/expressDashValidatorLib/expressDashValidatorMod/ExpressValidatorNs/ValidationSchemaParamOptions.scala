@@ -65,7 +65,7 @@ trait ValidationSchemaParamOptions extends js.Object {
   var isWhitelisted: js.UndefOr[ValidatorSchemaOptions] = js.undefined
   var len: js.UndefOr[ValidatorSchemaOptions] = js.undefined
   var matches: js.UndefOr[ValidatorSchemaOptions] = js.undefined
-  var notEmpty: js.UndefOr[scala.Boolean | expressDashValidatorLib.Anon_ErrorMessage] = js.undefined
+  var notEmpty: js.UndefOr[scala.Boolean | expressDashValidatorLib.Anon_ErrorMessageString] = js.undefined
   // Additional ValidatorChain.prototype.* validators
   var optional: js.UndefOr[
     scala.Boolean | expressDashValidatorLib.checkCheckMod.ValidatorOptionsNs.OptionalOptions

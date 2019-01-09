@@ -18,6 +18,6 @@ trait User extends js.Object {
     * specified in configure().
     */
   var serverAuthCode: java.lang.String | scala.Null
-  var user: reactDashNativeDashGoogleDashSigninLib.Anon_FamilyName
+  var user: reactDashNativeDashGoogleDashSigninLib.Anon_Email
 }
 

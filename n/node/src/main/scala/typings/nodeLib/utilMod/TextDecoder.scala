@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TextDecoder () extends js.Object {
   def this(encoding: java.lang.String) = this()
-  def this(encoding: java.lang.String, options: nodeLib.Anon_IgnoreBOM) = this()
+  def this(encoding: java.lang.String, options: nodeLib.Anon_Fatal) = this()
   val encoding: java.lang.String = js.native
   val fatal: scala.Boolean = js.native
   val ignoreBOM: scala.Boolean = js.native

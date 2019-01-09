@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(yandexDashMapsLib.ymapsNs.ICustomizable because Would inherit conflicting mutable fields List(events))*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- yandexDashMapsLib.ymapsNs.ICustomizable because var conflicts: events. Inlined options */ @js.native
 trait IGeoObject
   extends IChild[IControlParent]
      with IParentOnMap {
   var geometry: IGeometry | scala.Null = js.native
+  var options: IOptionManager = js.native
   var properties: IDataManager = js.native
   var state: IDataManager = js.native
   def getOverlay(): js.Promise[IOverlay | scala.Null] = js.native

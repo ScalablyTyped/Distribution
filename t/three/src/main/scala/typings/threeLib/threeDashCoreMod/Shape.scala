@@ -13,7 +13,7 @@ class Shape () extends Path {
   /**
     * @deprecated Use {@link Shape#extractPoints .extractPoints()} instead.
     */
-  def extractAllPoints(divisions: scala.Double): threeLib.Anon_Shape = js.native
+  def extractAllPoints(divisions: scala.Double): threeLib.Anon_Holes = js.native
   def extractPoints(divisions: scala.Double): js.Array[Vector2] = js.native
   /**
     * @deprecated Use {@link ExtrudeGeometry ExtrudeGeometry()} instead.

@@ -10,7 +10,7 @@ trait UserPoolState extends js.Object {
     * The configuration for AdminCreateUser requests.
     */
   val adminCreateUserConfig: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_InviteMessageTemplateAllowAdminCreateUserOnly]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowAdminCreateUserOnlyInviteMessageTemplate]
   ] = js.undefined
   /**
     * Attributes supported as an alias for this user pool. Possible values: phone_number, email, or preferred_username. Conflicts with `username_attributes`.
@@ -60,7 +60,7 @@ trait UserPoolState extends js.Object {
     * A container for the AWS Lambda triggers associated with the user pool.
     */
   val lambdaConfig: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DefineAuthChallengePostConfirmation]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CreateAuthChallengeCustomMessage]
   ] = js.undefined
   /**
     * The date the user pool was last modified.
@@ -78,7 +78,7 @@ trait UserPoolState extends js.Object {
     * A container for information about the user pool password policy.
     */
   val passwordPolicy: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RequireLowercaseRequireNumbers]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_MinimumLengthRequireLowercase]
   ] = js.undefined
   /**
     * A container with the schema attributes of a user pool. Maximum of 50 attributes.
@@ -86,7 +86,7 @@ trait UserPoolState extends js.Object {
   val schemas: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameMutableStringAttributeConstraints]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AttributeDataTypeDeveloperOnlyAttribute]
       ]
     ]
   ] = js.undefined
@@ -118,7 +118,7 @@ trait UserPoolState extends js.Object {
     * The verification message templates configuration.
     */
   val verificationMessageTemplate: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EmailSubjectDefaultEmailOption]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DefaultEmailOptionEmailMessage]
   ] = js.undefined
 }
 

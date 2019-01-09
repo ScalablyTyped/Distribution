@@ -11,7 +11,9 @@ package object ReactTimeagoNs {
     /* unit */ Unit, 
     /* suffix */ Suffix, 
     /* epochMiliseconds */ scala.Double, 
-    /* nextFormatter */ js.UndefOr[js.Object], 
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-timeago.react-timeago.ReactTimeago.Formatter */ /* nextFormatter */ js.UndefOr[
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-timeago.react-timeago.ReactTimeago.Formatter */ js.Object
+    ], 
     reactLib.reactMod.ReactNs.ReactNode
   ]
   type Suffix = reactDashTimeagoLib.reactDashTimeagoLibStrings.ago | (reactDashTimeagoLib.reactDashTimeagoLibStrings.`from now`)

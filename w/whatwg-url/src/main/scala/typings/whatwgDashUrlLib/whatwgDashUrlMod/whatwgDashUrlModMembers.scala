@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object whatwgDashUrlModMembers extends js.Object {
   def basicURLParse(input: java.lang.String): URLRecord | scala.Null = js.native
-  def basicURLParse(input: java.lang.String, options: whatwgDashUrlLib.Anon_EncodingOverride): URLRecord | scala.Null = js.native
+  def basicURLParse(input: java.lang.String, options: whatwgDashUrlLib.Anon_BaseURLEncodingOverride): URLRecord | scala.Null = js.native
   def cannotHaveAUsernamePasswordPort(urlRecord: URLRecord): scala.Boolean = js.native
   def parseURL(input: java.lang.String): URLRecord | scala.Null = js.native
-  def parseURL(input: java.lang.String, options: whatwgDashUrlLib.Anon_EncodingOverrideBaseURL): URLRecord | scala.Null = js.native
+  def parseURL(input: java.lang.String, options: whatwgDashUrlLib.Anon_BaseURL): URLRecord | scala.Null = js.native
   def percentDecode(buffer: nodeLib.Buffer): nodeLib.Buffer = js.native
   def serializeHost(host: java.lang.String): java.lang.String = js.native
   def serializeHost(host: scala.Double): java.lang.String = js.native

@@ -47,7 +47,7 @@ class CellValueConditionalFormat ()
   def load(): CellValueConditionalFormat = js.native
   def load(option: java.lang.String): CellValueConditionalFormat = js.native
   def load(option: js.Array[java.lang.String]): CellValueConditionalFormat = js.native
-  def load(option: officeDashJsLib.Anon_Select): CellValueConditionalFormat = js.native
+  def load(option: officeDashJsLib.Anon_Expand): CellValueConditionalFormat = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.CellValueConditionalFormatLoadOptions): CellValueConditionalFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: CellValueConditionalFormat): scala.Unit = js.native

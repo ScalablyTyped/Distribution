@@ -13,6 +13,6 @@ class Affix ()
 @JSImport("antd", "Affix")
 @js.native
 object Affix extends js.Object {
-  var propTypes: antdLib.Anon_OffsetBottom = js.native
+  var propTypes: antdLib.Anon_Args = js.native
 }
 

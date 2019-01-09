@@ -13,6 +13,6 @@ import scala.scalajs.js.annotation._
 @JSImport("console-ui", JSImport.Namespace)
 @js.native
 class namespaced () extends UI {
-  def this(options: consoleDashUiLib.Anon_ErrorStream) = this()
+  def this(options: consoleDashUiLib.Anon_Ci) = this()
 }
 

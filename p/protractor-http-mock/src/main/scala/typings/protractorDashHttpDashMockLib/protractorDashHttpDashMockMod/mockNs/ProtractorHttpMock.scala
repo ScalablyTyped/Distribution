@@ -10,7 +10,7 @@ trait ProtractorHttpMock extends js.Object {
   /**
     * Module configuration to setup
     */
-  var config: protractorDashHttpDashMockLib.Anon_RootDirectory = js.native
+  var config: protractorDashHttpDashMockLib.Anon_ProtractorConfig = js.native
   /**
     * Instantiate mock modules from files. This must be done before the browser connects.
     *

@@ -10,11 +10,7 @@ trait Profile extends js.Object {
   /**
     * removes profile from memory.
     */
-  var delete: js.Function0[_] = js.native
-  /**
-    * provides short information about profile.
-    */
-  var getHeader: js.Function0[_] = js.native
+  def delete(): js.Any = js.native
   /**
     * provides simple export API for profile.
     * callback(error, data) receives serialized profile as second argument. (Serialization is equal to JSON.stringify result).
@@ -25,5 +21,9 @@ trait Profile extends js.Object {
     * callback(error, data) receives serialized profile as second argument. (Serialization is equal to JSON.stringify result).
     */
   def export(callback: js.Function2[/* error */ nodeLib.Error, /* data */ js.Any, scala.Unit]): scala.Unit = js.native
+  /**
+    * provides short information about profile.
+    */
+  def getHeader(): js.Any = js.native
 }
 

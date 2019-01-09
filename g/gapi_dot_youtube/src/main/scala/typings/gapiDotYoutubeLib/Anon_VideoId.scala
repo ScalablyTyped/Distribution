@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_VideoId extends js.Object {
   /**
-    * The videoId parameter specifies a YouTube video ID for which the custom video thumbnail is being provided.
+    * The ID that YouTube uses to uniquely identify the uploaded video.
     */
   var videoId: java.lang.String
 }

@@ -25,6 +25,6 @@ object awsMod extends js.Object {
     * Note: this property will give you the aws-sdk module that AWS automatically includes
     * with any javascript Lambda.
     */
-  val sdk: atPulumiAwsLib.Anon_TemporaryCredentials = js.native
+  val sdk: atPulumiAwsLib.Anon_ACMACMPCA = js.native
 }
 

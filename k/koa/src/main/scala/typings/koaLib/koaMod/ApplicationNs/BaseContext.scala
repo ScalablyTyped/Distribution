@@ -21,7 +21,7 @@ trait BaseContext
     * See: https://github.com/jshttp/http-assert
     */
   @JSName("assert")
-  var assert_Original: koaLib.Anon_Value = js.native
+  var assert_Original: koaLib.Anon_A = js.native
   /**
     * Similar to .throw(), adds assertion.
     *

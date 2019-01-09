@@ -9,9 +9,7 @@ trait LoadBalancerArgs extends js.Object {
   /**
     * An Access Logs block. Access Logs documented below. Only valid for Load Balancers of type `application`.
     */
-  val accessLogs: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PrefixBucketEnabledInput]
-  ] = js.undefined
+  val accessLogs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketEnabledPrefix]] = js.undefined
   /**
     * If true, cross-zone load balancing of the load balancer will be enabled.
     * This is a `network` load balancer feature. Defaults to `false`.
@@ -63,9 +61,7 @@ trait LoadBalancerArgs extends js.Object {
     */
   val subnetMappings: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SubnetIdAllocationIdInput]
-      ]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllocationIdSubnetId]]
     ]
   ] = js.undefined
   /**

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // ==== _stream_passthrough ====
-/* RemoveMultipleInheritance: Dropped parents List(nodeLib.streamMod.PassThrough because Inheritance from two classes)*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- nodeLib.streamMod.PassThrough because Inheritance from two classes */ @js.native
 trait PassThrough extends Transform {
   def _transform[T](
     chunk: T,

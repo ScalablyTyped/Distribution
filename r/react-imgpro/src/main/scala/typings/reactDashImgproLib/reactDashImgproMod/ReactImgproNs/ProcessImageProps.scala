@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ProcessImageProps extends js.Object {
    /* should be 0 - 1 */ var blur: js.UndefOr[scala.Double] = js.undefined
   var brightness: js.UndefOr[scala.Double] = js.undefined
-  var colors: js.UndefOr[reactDashImgproLib.Anon_Tint] = js.undefined
+  var colors: js.UndefOr[reactDashImgproLib.Anon_Blue] = js.undefined
   var contain: js.UndefOr[Size] = js.undefined
    /* should be -1 to 1 */ var contrast: js.UndefOr[scala.Double] = js.undefined
    /* should be 0 - 100 */ var cover: js.UndefOr[Size] = js.undefined

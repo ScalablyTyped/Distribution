@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/array/some", JSImport.Namespace)
 @js.native
 object fnArraySomeMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayCallbackfnValueIndexThisArg]
+  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayCallbackfn]
 

@@ -45,7 +45,7 @@ trait Adapter
   		 * 	- except: A list of Socket IDs to exclude
   		 * 	- flags: Any flags that we want to send along ('json', 'volatile', 'broadcast')
   		 */
-  def broadcast(packet: js.Any, opts: socketDotIoLib.Anon_Rooms): scala.Unit = js.native
+  def broadcast(packet: js.Any, opts: socketDotIoLib.Anon_Except): scala.Unit = js.native
   /**
   		 * Removes a socket from a room. If there are no more sockets in the room,
   		 * the room is deleted

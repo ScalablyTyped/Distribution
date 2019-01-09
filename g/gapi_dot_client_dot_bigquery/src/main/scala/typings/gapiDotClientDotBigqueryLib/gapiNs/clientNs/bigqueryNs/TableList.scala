@@ -13,7 +13,7 @@ trait TableList extends js.Object {
   /** A token to request the next page of results. */
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Tables in the requested dataset. */
-  var tables: js.UndefOr[js.Array[gapiDotClientDotBigqueryLib.Anon_TableReference]] = js.undefined
+  var tables: js.UndefOr[js.Array[gapiDotClientDotBigqueryLib.Anon_CreationTime]] = js.undefined
   /** The total number of tables in the dataset. */
   var totalItems: js.UndefOr[scala.Double] = js.undefined
 }

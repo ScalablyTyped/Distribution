@@ -11,7 +11,7 @@ trait MyOrganization extends js.Object {
   var defaultRepositorySettings: java.lang.String
   var diskUsage: scala.Double
   var membersCanCreateRepositories: scala.Boolean
-  var plan: typedDashGithubDashApiLib.Anon_PrivateRepos
+  var plan: typedDashGithubDashApiLib.Anon_CollaboratorsName
   var privateGists: scala.Double
   var privateReposOwned: scala.Double
   var privateReposTotal: scala.Double

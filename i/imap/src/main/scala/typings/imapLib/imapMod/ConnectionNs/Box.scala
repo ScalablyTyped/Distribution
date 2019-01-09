@@ -9,7 +9,7 @@ trait Box extends js.Object {
   /** array - A list of system-defined flags applicable for this mailbox. Flags in this list but not in permFlags may be stored for the current session only. Additional server implementation-specific flags may also be available. */
   var flags: js.Array[java.lang.String]
   /** Contains various message counts for this mailbox: */
-  var messages: imapLib.Anon_Unseen
+  var messages: imapLib.Anon_New
   /** The name of this mailbox. */
   var name: java.lang.String
   /** True if new keywords can be added to messages in this mailbox. */

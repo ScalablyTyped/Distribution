@@ -60,6 +60,6 @@ trait Bucket extends js.Object {
     * The bucket's website configuration, controlling how the service behaves when accessing bucket contents as a web site. See the Static Website Examples
     * for more information.
     */
-  var website: js.UndefOr[gapiDotClientDotStorageLib.Anon_NotFoundPage] = js.undefined
+  var website: js.UndefOr[gapiDotClientDotStorageLib.Anon_MainPageSuffix] = js.undefined
 }
 

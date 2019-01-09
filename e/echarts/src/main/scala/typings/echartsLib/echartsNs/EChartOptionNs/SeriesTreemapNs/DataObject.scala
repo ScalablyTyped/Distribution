@@ -199,7 +199,9 @@ trait DataObject extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_UpperLabelItemStyle] = js.undefined
+  var emphasis: js.UndefOr[
+    echartsLib.Anon_ItemStyleLabelUpperLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis
+  ] = js.undefined
   /**
     * `id` is not mandatory.
     * But if using API, id is used to locate node.
@@ -229,7 +231,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorSaturationColorSaturation] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorBorderColorSaturationBorderWidth] = js.undefined
   /**
     * `label` decribes the style of the label in each node.
     *
@@ -253,7 +255,7 @@ trait DataObject extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.label
     */
   var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowEllipsisAlignTextBorderWidthVerticalAlign
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamilyFontSize
   ] = js.undefined
   /**
     * Show the description text in rectangle.
@@ -308,7 +310,9 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.upperLabel
     */
-  var upperLabel: js.UndefOr[echartsLib.Anon_ShadowOffsetXBackgroundColorShowEllipsis] = js.undefined
+  var upperLabel: js.UndefOr[
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamilyFontSizeFontStyle
+  ] = js.undefined
   /**
     * The value of this node, indicating the area size.
     *

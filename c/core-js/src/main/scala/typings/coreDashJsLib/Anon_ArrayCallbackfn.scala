@@ -9,29 +9,12 @@ import scala.scalajs.js.annotation._
 trait Anon_ArrayCallbackfn extends js.Object {
   def apply[T](
     array: stdLib.ArrayLike[T],
-    callbackfn: js.Function4[
-      /* memo */ Array[T], 
-      /* value */ T, 
-      /* index */ scala.Double, 
-      /* array */ Array[T], 
-      scala.Unit
-    ]
-  ): Array[T] = js.native
+    callbackfn: js.Function3[/* value */ T, /* index */ scala.Double, /* array */ Array[T], scala.Boolean]
+  ): scala.Boolean = js.native
   def apply[T](
     array: stdLib.ArrayLike[T],
-    callbackfn: js.Function4[
-      /* memo */ Array[T], 
-      /* value */ T, 
-      /* index */ scala.Double, 
-      /* array */ Array[T], 
-      scala.Unit
-    ],
-    memo: Array[T]
-  ): Array[T] = js.native
-  def apply[T, U](
-    array: stdLib.ArrayLike[T],
-    callbackfn: js.Function4[/* memo */ U, /* value */ T, /* index */ scala.Double, /* array */ Array[T], scala.Unit],
-    memo: U
-  ): U = js.native
+    callbackfn: js.Function3[/* value */ T, /* index */ scala.Double, /* array */ Array[T], scala.Boolean],
+    thisArg: js.Any
+  ): scala.Boolean = js.native
 }
 

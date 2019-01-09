@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("phoenix", JSImport.Namespace)
 @js.native
 object phoenixModMembers extends js.Object {
-  var Presence: phoenixLib.Anon_SyncState = js.native
+  var Presence: phoenixLib.Anon_Chooser = js.native
 }
 

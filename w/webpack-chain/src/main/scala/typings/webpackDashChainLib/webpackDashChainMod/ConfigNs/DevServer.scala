@@ -34,7 +34,7 @@ trait DevServer
   def `lazy`(value: scala.Boolean): this.type = js.native
   def noInfo(value: scala.Boolean): this.type = js.native
   def overlay(value: scala.Boolean): this.type = js.native
-  def overlay(value: webpackDashChainLib.Anon_Warnings): this.type = js.native
+  def overlay(value: webpackDashChainLib.Anon_Errors): this.type = js.native
   def port(value: scala.Double): this.type = js.native
   def progress(value: scala.Boolean): this.type = js.native
   def proxy(value: js.Any): this.type = js.native

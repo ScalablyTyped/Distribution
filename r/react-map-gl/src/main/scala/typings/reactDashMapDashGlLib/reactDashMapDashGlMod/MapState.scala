@@ -17,7 +17,7 @@ class MapState protected () extends js.Object {
   def rotate(input: reactDashMapDashGlLib.Anon_DeltaScaleX): MapState = js.native
   def rotateEnd(): MapState = js.native
   def rotateStart(input: PositionInput): MapState = js.native
-  def zoom(input: PositionInput with reactDashMapDashGlLib.Anon_StartPosScale): MapState = js.native
+  def zoom(input: PositionInput with reactDashMapDashGlLib.Anon_Scale): MapState = js.native
   def zoomEnd(): MapState = js.native
   def zoomStart(input: PositionInput): MapState = js.native
 }

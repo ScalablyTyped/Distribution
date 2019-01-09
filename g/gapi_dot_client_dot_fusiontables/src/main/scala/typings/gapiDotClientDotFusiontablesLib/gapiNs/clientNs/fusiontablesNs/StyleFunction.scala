@@ -11,7 +11,7 @@ trait StyleFunction extends js.Object {
   /** Name of the column whose value is used in the style. */
   var columnName: js.UndefOr[java.lang.String] = js.undefined
   /** Gradient function that interpolates a range of colors based on column value. */
-  var gradient: js.UndefOr[gapiDotClientDotFusiontablesLib.Anon_Max] = js.undefined
+  var gradient: js.UndefOr[gapiDotClientDotFusiontablesLib.Anon_Colors] = js.undefined
   /**
     * Stylers can be one of three kinds: "fusiontables#fromColumn if the column value is to be used as is, i.e., the column values can have colors in
     * #RRGGBBAA format or integer line widths or icon names; fusiontables#gradient if the styling of the row is to be based on applying the gradient function

@@ -20,7 +20,7 @@ trait Tensor extends js.Object {
   def div(tensor: Tensor): Tensor = js.native
   def dot(tensor: numericLib.TensorValue): Tensor = js.native
   def dot(tensor: Tensor): Tensor = js.native
-  def eig(): numericLib.Anon_Lambda = js.native
+  def eig(): numericLib.Anon_E = js.native
   def exp(): Tensor = js.native
   // fast fourier transforms
   def fft(): Tensor = js.native

@@ -26,7 +26,7 @@ class XssMatchSet protected ()
   /**
     * The parts of web requests that you want to inspect for cross-site scripting attacks.
     */
-  val xssMatchTuples: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatch]]] = js.native
+  val xssMatchTuples: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatchTextTransformation]]] = js.native
 }
 
 @JSImport("@pulumi/aws/waf/xssMatchSet", "XssMatchSet")

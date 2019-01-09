@@ -97,7 +97,7 @@ trait ComposeView extends js.Object {
   @JSName("on")
   def on_sent(
     name: inboxsdkLib.inboxsdkLibStrings.sent,
-    cb: js.Function1[/* event */ inboxsdkLib.Anon_GetThreadID, scala.Unit]
+    cb: js.Function1[/* event */ inboxsdkLib.Anon_GetMessageID, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
   def on_toContactAdded(

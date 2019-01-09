@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("sdk/page-mod", JSImport.Namespace)
 @js.native
 object pageDashModModMembers extends js.Object {
-  def PageMod(options: jpmLib.Anon_ContentScriptContentScriptFileContentScriptWhen): PageMod = js.native
+  def PageMod(options: jpmLib.Anon_AttachTo): PageMod = js.native
 }
 

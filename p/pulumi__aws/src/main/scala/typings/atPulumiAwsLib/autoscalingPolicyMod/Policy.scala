@@ -61,13 +61,15 @@ class Policy protected ()
     * up. A negative value scales down.
     */
   val scalingAdjustment: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Double]] = js.native
-  val stepAdjustments: atPulumiPulumiLib.pulumiMod.Output[
-    js.UndefOr[js.Array[atPulumiAwsLib.Anon_ScalingAdjustmentMetricIntervalUpperBound]]
-  ] = js.native
+  val stepAdjustments: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_MetricIntervalLowerBound]]] = js.native
   /**
     * A target tracking policy. These have the following structure:
     */
-  val targetTrackingConfiguration: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DisableScaleInCustomizedMetricSpecification]] = js.native
+  val targetTrackingConfiguration: atPulumiPulumiLib.pulumiMod.Output[
+    js.UndefOr[
+      atPulumiAwsLib.Anon_CustomizedMetricSpecificationDisableScaleInPredefinedMetricSpecification
+    ]
+  ] = js.native
 }
 
 @JSImport("@pulumi/aws/autoscaling/policy", "Policy")

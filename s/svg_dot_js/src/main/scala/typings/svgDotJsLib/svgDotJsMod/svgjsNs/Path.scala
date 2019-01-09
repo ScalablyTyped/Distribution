@@ -21,6 +21,6 @@ trait Path extends Shape {
     block: js.Function1[/* marker */ Marker, scala.Unit]
   ): Marker = js.native
   def plot(d: PathArrayAlias): this.type = js.native
-  def pointAt(length: scala.Double): svgDotJsLib.Anon_Y = js.native
+  def pointAt(length: scala.Double): svgDotJsLib.Anon_X = js.native
 }
 

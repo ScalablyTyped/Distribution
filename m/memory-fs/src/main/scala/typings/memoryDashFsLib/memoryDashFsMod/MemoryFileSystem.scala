@@ -14,7 +14,7 @@ trait MemoryFileSystem extends js.Object {
     testFn: js.Function1[/* part */ java.lang.String, scala.Boolean]
   ): scala.Unit = js.native
   def createReadStream(path: java.lang.String): js.Any = js.native
-  def createReadStream(path: java.lang.String, options: memoryDashFsLib.Anon_Start): js.Any = js.native
+  def createReadStream(path: java.lang.String, options: memoryDashFsLib.Anon_End): js.Any = js.native
   def createWriteStream(path: java.lang.String): js.Any = js.native
   def createWriteStream(path: java.lang.String, options: js.Any): js.Any = js.native
   def exists(path: java.lang.String, callback: js.Function1[/* isExist */ scala.Boolean, scala.Unit]): scala.Unit = js.native
@@ -65,7 +65,7 @@ trait MemoryFileSystem extends js.Object {
     path: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* result */ js.UndefOr[js.Any], scala.Unit]
   ): scala.Unit = js.native
-  def statSync(_path: java.lang.String): memoryDashFsLib.Anon_IsSymbolicLink = js.native
+  def statSync(_path: java.lang.String): memoryDashFsLib.Anon_IsBlockDevice = js.native
   def unlink(
     path: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* result */ js.UndefOr[js.Any], scala.Unit]

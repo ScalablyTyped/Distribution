@@ -18,7 +18,7 @@ trait TableOptions extends js.Object {
   var colWidths: js.Array[scala.Double]
   var colors: scala.Boolean
   var head: js.Array[java.lang.String]
-  var style: stdLib.Partial[cliDashTableLib.Anon_Paddingleft]
+  var style: stdLib.Partial[cliDashTableLib.Anon_Border]
   var truncate: java.lang.String
 }
 

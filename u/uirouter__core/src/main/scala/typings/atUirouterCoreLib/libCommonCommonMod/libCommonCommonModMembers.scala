@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object libCommonCommonModMembers extends js.Object {
   @JSName("equals")
   val equals_FlibCommonCommonModMembers: js.Any = js.native
-  val extend: atUirouterCoreLib.Anon_Target = js.native
+  val extend: atUirouterCoreLib.Anon_Source = js.native
   val forEach: js.Any = js.native
   val fromJson: js.Any = js.native
-  val inArray: atUirouterCoreLib.Anon_ArrayObj = js.native
+  val inArray: atUirouterCoreLib.Anon_Array = js.native
   var mapObj: js.Function3[
     /* collection */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     /* callback */ Mapper[js.Any, js.Any], 
@@ -23,7 +23,7 @@ object libCommonCommonModMembers extends js.Object {
     org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.native
   val pushTo: atUirouterCoreLib.Anon_Arr = js.native
-  val removeFrom: atUirouterCoreLib.Anon_Array = js.native
+  val removeFrom: atUirouterCoreLib.Anon_ArrayObj = js.native
   val root: js.Any = js.native
   val toJson: js.Any = js.native
   def _extend(toObj: Obj, fromObjs: Obj*): js.Any = js.native

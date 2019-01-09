@@ -14,7 +14,7 @@ trait LogMetricFilterState extends js.Object {
     * A block defining collection of information
     * needed to define how metric data gets emitted. See below.
     */
-  val metricTransformation: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NamespaceValue]] = js.undefined
+  val metricTransformation: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DefaultValueName]] = js.undefined
   /**
     * A name for the metric filter.
     */

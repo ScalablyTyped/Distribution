@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait CommentsResource extends js.Object {
   /** Creates a new comment on a file. */
-  def create(request: gapiDotClientDotDriveLib.Anon_FileId): gapiDotClientLib.gapiNs.clientNs.Request[Comment]
+  def create(request: gapiDotClientDotDriveLib.Anon_AltFieldsFileId): gapiDotClientLib.gapiNs.clientNs.Request[Comment]
   /** Deletes a comment. */
-  def delete(request: gapiDotClientDotDriveLib.Anon_FileIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+  def delete(request: gapiDotClientDotDriveLib.Anon_AltCommentId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   /** Gets a comment by ID. */
-  def get(request: gapiDotClientDotDriveLib.Anon_FileIdPrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[Comment]
+  def get(request: gapiDotClientDotDriveLib.Anon_AltCommentIdFields): gapiDotClientLib.gapiNs.clientNs.Request[Comment]
   /** Lists a file's comments. */
-  def list(request: gapiDotClientDotDriveLib.Anon_FileIdPageSize): gapiDotClientLib.gapiNs.clientNs.Request[CommentList]
+  def list(request: gapiDotClientDotDriveLib.Anon_AltFieldsFileIdIncludeDeleted): gapiDotClientLib.gapiNs.clientNs.Request[CommentList]
   /** Updates a comment with patch semantics. */
-  def update(request: gapiDotClientDotDriveLib.Anon_FileIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Comment]
+  def update(request: gapiDotClientDotDriveLib.Anon_AltCommentId): gapiDotClientLib.gapiNs.clientNs.Request[Comment]
 }
 

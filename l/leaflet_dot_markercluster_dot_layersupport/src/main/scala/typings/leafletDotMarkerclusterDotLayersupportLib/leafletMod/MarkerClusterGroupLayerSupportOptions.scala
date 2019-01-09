@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ trait MarkerClusterGroupLayerSupportOptions extends js.Object {
   /**
     * Buffer single addLayer and removeLayer requests for efficiency.

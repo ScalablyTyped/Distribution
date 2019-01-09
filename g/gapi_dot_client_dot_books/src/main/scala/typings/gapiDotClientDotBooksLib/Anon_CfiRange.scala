@@ -14,5 +14,7 @@ trait Anon_CfiRange extends js.Object {
   var gbImageRange: js.UndefOr[gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.BooksAnnotationsRange] = js.undefined
   /** Range in GB text format for this annotation for version above. */
   var gbTextRange: js.UndefOr[gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.BooksAnnotationsRange] = js.undefined
+  /** Range in image CFI format for this annotation for version above. */
+  var imageCfiRange: js.UndefOr[gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.BooksAnnotationsRange] = js.undefined
 }
 

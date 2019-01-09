@@ -12,7 +12,7 @@ trait ChessInstance extends js.Object {
   /** The string that represents the Black color side */
   val BLACK: chessDotJsLib.chessDotJsLibStrings.b = js.native
   /** Flags used to build flag strings for moves */
-  val FLAGS: chessDotJsLib.Anon_CAPTURE = js.native
+  val FLAGS: chessDotJsLib.Anon_B = js.native
   /** The string that represents a King */
   val KING: chessDotJsLib.chessDotJsLibStrings.k = js.native
   /** The string that represents a Knight */
@@ -74,8 +74,7 @@ trait ChessInstance extends js.Object {
     * if not passed the verbose flag.
     */
   def history(): js.Array[java.lang.String] = js.native
-  def history(options: chessDotJsLib.Anon_Verbose): js.Array[java.lang.String] = js.native
-  def history(options: chessDotJsLib.Anon_VerboseBoolean): js.Array[java.lang.String] | js.Array[Move] = js.native
+  def history(options: chessDotJsLib.Anon_FalseVerbose): js.Array[java.lang.String] = js.native
   /**
     * Returns a list containing the moves of the current game.
     * Options is an optional parameter which may contain a 'verbose' flag.
@@ -84,7 +83,8 @@ trait ChessInstance extends js.Object {
     * @returns a list of all moves of the current game. They will be strings
     * if not passed the verbose flag.
     */
-  def history(options: chessDotJsLib.Anon_VerboseTrue): js.Array[Move] = js.native
+  def history(options: chessDotJsLib.Anon_True): js.Array[Move] = js.native
+  def history(options: chessDotJsLib.Anon_Verbose): js.Array[java.lang.String] | js.Array[Move] = js.native
   /**
     * Returns a list containing the moves of the current game.
     * Options is an optional parameter which may contain a 'verbose' flag.
@@ -179,6 +179,7 @@ trait ChessInstance extends js.Object {
     * verbose objects.
     */
   def moves(): js.Array[java.lang.String] = js.native
+  def moves(options: chessDotJsLib.Anon_False): js.Array[java.lang.String] = js.native
   /**
     * Returns a list of legal moves from the current position.
     * The function takes an optional parameter which controls the
@@ -189,8 +190,7 @@ trait ChessInstance extends js.Object {
     * verbose objects.
     */
   def moves(options: chessDotJsLib.Anon_Square): js.Array[Move] = js.native
-  def moves(options: chessDotJsLib.Anon_SquareVerbose): js.Array[java.lang.String] = js.native
-  def moves(options: chessDotJsLib.Anon_SquareVerboseString): js.Array[java.lang.String] | js.Array[Move] = js.native
+  def moves(options: chessDotJsLib.Anon_SquareVerbose): js.Array[java.lang.String] | js.Array[Move] = js.native
   /**
     * Returns a list of legal moves from the current position.
     * The function takes an optional parameter which controls the
@@ -260,6 +260,6 @@ trait ChessInstance extends js.Object {
     * within the FEN string.
     * @param fen the fen formatted string to validate
     */
-  def validate_fen(fen: java.lang.String): chessDotJsLib.Anon_Errornumber = js.native
+  def validate_fen(fen: java.lang.String): chessDotJsLib.Anon_Error = js.native
 }
 

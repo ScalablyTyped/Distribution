@@ -9,14 +9,16 @@ trait DataObject extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBarBorderWidthBarBorderColor] = js.undefined
+  var emphasis: js.UndefOr[
+    echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBarBorderColorBarBorderWidth
+  ] = js.undefined
   /**
     * The style of the symbol of single data point.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBarBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BarBorderColorBarBorderWidthColor] = js.undefined
   /**
     * The style of the text of single data point.
     *
@@ -24,7 +26,7 @@ trait DataObject extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.label
     */
   var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlignShadowBlur
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize
   ] = js.undefined
   /**
     * The name of data item.
@@ -133,7 +135,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.data.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * The value of a single data item.
     *

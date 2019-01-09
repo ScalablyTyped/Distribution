@@ -6,8 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IHidden extends IBase {
-  /** [Config Option] (Boolean) */
-  var hideLabel: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Display one or more error messages associated with this field using msgTarget to determine how to display the messag  */
   @JSName("markInvalid")
   var markInvalid_IHidden: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

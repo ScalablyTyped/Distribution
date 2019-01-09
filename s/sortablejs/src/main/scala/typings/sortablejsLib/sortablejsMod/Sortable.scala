@@ -111,14 +111,14 @@ trait Sortable extends js.Object {
   @JSName("option")
   def option_fallbackClass(name: sortablejsLib.sortablejsLibStrings.fallbackClass, value: java.lang.String): scala.Unit = js.native
   @JSName("option")
-  def option_fallbackOffset(name: sortablejsLib.sortablejsLibStrings.fallbackOffset): sortablejsLib.Anon_Y = js.native
+  def option_fallbackOffset(name: sortablejsLib.sortablejsLibStrings.fallbackOffset): sortablejsLib.Anon_X = js.native
   /**
     * Options getter/setter
     * @param name a Sortable.Options property.
     * @param value a value.
     */
   @JSName("option")
-  def option_fallbackOffset(name: sortablejsLib.sortablejsLibStrings.fallbackOffset, value: sortablejsLib.Anon_Y): scala.Unit = js.native
+  def option_fallbackOffset(name: sortablejsLib.sortablejsLibStrings.fallbackOffset, value: sortablejsLib.Anon_X): scala.Unit = js.native
   @JSName("option")
   def option_fallbackOnBody(name: sortablejsLib.sortablejsLibStrings.fallbackOnBody): scala.Boolean = js.native
   /**
@@ -259,14 +259,14 @@ trait Sortable extends js.Object {
   @JSName("option")
   def option_sort(name: sortablejsLib.sortablejsLibStrings.sort, value: scala.Boolean): scala.Unit = js.native
   @JSName("option")
-  def option_store(name: sortablejsLib.sortablejsLibStrings.store): sortablejsLib.Anon_Set = js.native
+  def option_store(name: sortablejsLib.sortablejsLibStrings.store): sortablejsLib.Anon_Get = js.native
   /**
     * Options getter/setter
     * @param name a Sortable.Options property.
     * @param value a value.
     */
   @JSName("option")
-  def option_store(name: sortablejsLib.sortablejsLibStrings.store, value: sortablejsLib.Anon_Set): scala.Unit = js.native
+  def option_store(name: sortablejsLib.sortablejsLibStrings.store, value: sortablejsLib.Anon_Get): scala.Unit = js.native
   /**
     * Saving and restoring of the sort.
     */

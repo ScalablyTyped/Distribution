@@ -31,7 +31,7 @@ trait JobDefinitionState extends js.Object {
     * Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
     * Maximum number of `retry_strategy` is `1`.  Defined below.
     */
-  val retryStrategy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Attempts]] = js.undefined
+  val retryStrategy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AttemptsInput]] = js.undefined
   /**
     * The revision of the job definition.
     */
@@ -39,7 +39,9 @@ trait JobDefinitionState extends js.Object {
   /**
     * Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
     */
-  val timeout: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AttemptDurationSeconds]] = js.undefined
+  val timeout: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AttemptDurationSecondsInput]
+  ] = js.undefined
   /**
     * The type of job definition.  Must be `container`
     */

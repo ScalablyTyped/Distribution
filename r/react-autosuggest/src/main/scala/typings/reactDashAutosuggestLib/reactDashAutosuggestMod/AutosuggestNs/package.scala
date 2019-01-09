@@ -16,7 +16,7 @@ package object AutosuggestNs {
   /** @internal */
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[
     T, 
-    /* import warning: ImportType.apply Failed type conversion: react-autosuggest.Anon_X<T, K>[keyof T] */ js.Any
+    /* import warning: ImportType.apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never, [x: number] : never}[keyof T] */ js.Any
   ]
   type OnSuggestionHighlighted = js.Function1[/* params */ SuggestionHighlightedParams, scala.Unit]
   type OnSuggestionSelected[TSuggestion] = js.Function2[

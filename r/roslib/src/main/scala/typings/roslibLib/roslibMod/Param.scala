@@ -17,6 +17,6 @@ class Param protected ()
   		 *   * ros - the ROSLIB.Ros connection handle
   		 *   * name - the param name, like max_vel_x
   		 */
-  def this(options: roslibLib.Anon_Ros) = this()
+  def this(options: roslibLib.Anon_Name) = this()
 }
 

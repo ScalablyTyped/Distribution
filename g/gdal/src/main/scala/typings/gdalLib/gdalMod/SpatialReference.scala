@@ -13,12 +13,12 @@ class SpatialReference () extends js.Object {
   def EPSGTreatsAsNorthingEasting(): scala.Boolean = js.native
   def autoIdentifyEPSG(): scala.Unit = js.native
   def cloneGeogCS(): SpatialReference = js.native
-  def getAngularUnits(): gdalLib.Anon_Value = js.native
+  def getAngularUnits(): gdalLib.Anon_Unit = js.native
   def getAttrValue(node_name: java.lang.String): java.lang.String = js.native
   def getAttrValue(node_name: java.lang.String, attr_index: scala.Double): java.lang.String = js.native
   def getAuthorityCode(target_key: java.lang.String): java.lang.String = js.native
   def getAuthorityName(target_key: java.lang.String): java.lang.String = js.native
-  def getLinearUnits(): gdalLib.Anon_Value = js.native
+  def getLinearUnits(): gdalLib.Anon_Unit = js.native
   def isCompound(): scala.Boolean = js.native
   def isGeocentric(): scala.Boolean = js.native
   def isGeographic(): scala.Boolean = js.native

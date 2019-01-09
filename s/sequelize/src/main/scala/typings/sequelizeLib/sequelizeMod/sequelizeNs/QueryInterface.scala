@@ -40,20 +40,20 @@ trait QueryInterface extends js.Object {
     attribute: DefineAttributeColumnOptions,
     options: QueryInterfaceOptions
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def addColumn(tableName: sequelizeLib.Anon_TableName, key: java.lang.String, attribute: DataTypeAbstract): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def addColumn(tableName: sequelizeLib.Anon_SchemaTableName, key: java.lang.String, attribute: DataTypeAbstract): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def addColumn(
-    tableName: sequelizeLib.Anon_TableName,
+    tableName: sequelizeLib.Anon_SchemaTableName,
     key: java.lang.String,
     attribute: DataTypeAbstract,
     options: QueryInterfaceOptions
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def addColumn(
-    tableName: sequelizeLib.Anon_TableName,
+    tableName: sequelizeLib.Anon_SchemaTableName,
     key: java.lang.String,
     attribute: DefineAttributeColumnOptions
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def addColumn(
-    tableName: sequelizeLib.Anon_TableName,
+    tableName: sequelizeLib.Anon_SchemaTableName,
     key: java.lang.String,
     attribute: DefineAttributeColumnOptions,
     options: QueryInterfaceOptions
@@ -158,36 +158,36 @@ trait QueryInterface extends js.Object {
     dataTypeOrOptions: DefineAttributeColumnOptions,
     options: QueryInterfaceOptions
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def changeColumn(tableName: sequelizeLib.Anon_TableName, attributeName: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def changeColumn(tableName: sequelizeLib.Anon_Schema, attributeName: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def changeColumn(
-    tableName: sequelizeLib.Anon_TableName,
+    tableName: sequelizeLib.Anon_Schema,
     attributeName: java.lang.String,
     dataTypeOrOptions: java.lang.String
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def changeColumn(
-    tableName: sequelizeLib.Anon_TableName,
+    tableName: sequelizeLib.Anon_Schema,
     attributeName: java.lang.String,
     dataTypeOrOptions: java.lang.String,
     options: QueryInterfaceOptions
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def changeColumn(
-    tableName: sequelizeLib.Anon_TableName,
+    tableName: sequelizeLib.Anon_Schema,
     attributeName: java.lang.String,
     dataTypeOrOptions: DataTypeAbstract
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def changeColumn(
-    tableName: sequelizeLib.Anon_TableName,
+    tableName: sequelizeLib.Anon_Schema,
     attributeName: java.lang.String,
     dataTypeOrOptions: DataTypeAbstract,
     options: QueryInterfaceOptions
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def changeColumn(
-    tableName: sequelizeLib.Anon_TableName,
+    tableName: sequelizeLib.Anon_Schema,
     attributeName: java.lang.String,
     dataTypeOrOptions: DefineAttributeColumnOptions
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def changeColumn(
-    tableName: sequelizeLib.Anon_TableName,
+    tableName: sequelizeLib.Anon_Schema,
     attributeName: java.lang.String,
     dataTypeOrOptions: DefineAttributeColumnOptions,
     options: QueryInterfaceOptions
@@ -232,8 +232,8 @@ trait QueryInterface extends js.Object {
     */
   def createTable(tableName: java.lang.String, attributes: DefineAttributes): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def createTable(tableName: java.lang.String, attributes: DefineAttributes, options: QueryOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def createTable(tableName: sequelizeLib.Anon_TableName, attributes: DefineAttributes): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def createTable(tableName: sequelizeLib.Anon_TableName, attributes: DefineAttributes, options: QueryOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def createTable(tableName: sequelizeLib.Anon_Schema, attributes: DefineAttributes): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def createTable(tableName: sequelizeLib.Anon_Schema, attributes: DefineAttributes, options: QueryOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   /**
     * Postgres only. Creates a trigger on specified table to call the specified function with supplied
     * parameters.
@@ -277,10 +277,10 @@ trait QueryInterface extends js.Object {
     */
   def describeTable(tableName: java.lang.String): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
   def describeTable(tableName: java.lang.String, options: java.lang.String): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
-  def describeTable(tableName: java.lang.String, options: sequelizeLib.Anon_SchemaDelimeter): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
-  def describeTable(tableName: sequelizeLib.Anon_TableName): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
-  def describeTable(tableName: sequelizeLib.Anon_TableName, options: java.lang.String): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
-  def describeTable(tableName: sequelizeLib.Anon_TableName, options: sequelizeLib.Anon_SchemaDelimeter): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
+  def describeTable(tableName: java.lang.String, options: sequelizeLib.Anon_Logging): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
+  def describeTable(tableName: sequelizeLib.Anon_Schema): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
+  def describeTable(tableName: sequelizeLib.Anon_Schema, options: java.lang.String): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
+  def describeTable(tableName: sequelizeLib.Anon_Schema, options: sequelizeLib.Anon_Logging): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
   /**
     * Drops all defined enums
     *
@@ -394,9 +394,9 @@ trait QueryInterface extends js.Object {
     */
   def removeColumn(tableName: java.lang.String, attribute: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def removeColumn(tableName: java.lang.String, attribute: java.lang.String, options: QueryInterfaceOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def removeColumn(tableName: sequelizeLib.Anon_TableName, attribute: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def removeColumn(tableName: sequelizeLib.Anon_SchemaTableName, attribute: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def removeColumn(
-    tableName: sequelizeLib.Anon_TableName,
+    tableName: sequelizeLib.Anon_SchemaTableName,
     attribute: java.lang.String,
     options: QueryInterfaceOptions
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
@@ -431,12 +431,12 @@ trait QueryInterface extends js.Object {
     options: QueryInterfaceOptions
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def renameColumn(
-    tableName: sequelizeLib.Anon_TableName,
+    tableName: sequelizeLib.Anon_Schema,
     attrNameBefore: java.lang.String,
     attrNameAfter: java.lang.String
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def renameColumn(
-    tableName: sequelizeLib.Anon_TableName,
+    tableName: sequelizeLib.Anon_Schema,
     attrNameBefore: java.lang.String,
     attrNameAfter: java.lang.String,
     options: QueryInterfaceOptions

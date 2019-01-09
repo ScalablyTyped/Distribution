@@ -7,7 +7,5 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Client extends js.Object {
   var client: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.Client
-  var fields: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFieldFieldOptions
-  var styles: js.Any
 }
 

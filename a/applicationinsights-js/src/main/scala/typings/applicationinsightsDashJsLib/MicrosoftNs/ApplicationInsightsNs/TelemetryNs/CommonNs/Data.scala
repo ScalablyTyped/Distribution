@@ -25,6 +25,6 @@ class Data[TDomain] protected ()
     * The data contract for serializing this object.
     */
   @JSName("aiDataContract")
-  var aiDataContract_Data: applicationinsightsDashJsLib.Anon_BaseType = js.native
+  var aiDataContract_Data: applicationinsightsDashJsLib.Anon_BaseData = js.native
 }
 

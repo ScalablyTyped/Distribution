@@ -148,7 +148,7 @@ trait IUtilMisc extends js.Object {
   	 * Decomposes standard 2x2 matrix into transform componentes
   	 * @param a transformMatrix
   	 */
-  def qrDecompose(a: js.Array[scala.Double]): fabricLib.Anon_TranslateX = js.native
+  def qrDecompose(a: js.Array[scala.Double]): fabricLib.Anon_Angle = js.native
   /**
   	 * Transforms radians to degrees.
   	 * @param radians value in radians
@@ -176,7 +176,7 @@ trait IUtilMisc extends js.Object {
   	 * @param vector The vector to rotate (x and y)
   	 * @param radians The radians of the angle for the rotation
   	 */
-  def rotateVector(vector: fabricLib.Anon_Y, radians: scala.Double): fabricLib.Anon_Y = js.native
+  def rotateVector(vector: fabricLib.Anon_X, radians: scala.Double): fabricLib.Anon_X = js.native
   /**
   	 * A wrapper around Number#toFixed, which contrary to native method returns number, not string.
   	 * @param number number to operate on

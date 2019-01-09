@@ -61,7 +61,7 @@ class Hyperlink ()
   def load(): Hyperlink = js.native
   def load(option: java.lang.String): Hyperlink = js.native
   def load(option: js.Array[java.lang.String]): Hyperlink = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Hyperlink = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Hyperlink = js.native
   def load(option: officeDashJsDashPreviewLib.VisioNs.InterfacesNs.HyperlinkLoadOptions): Hyperlink = js.native
   def toJSON(): officeDashJsDashPreviewLib.VisioNs.InterfacesNs.HyperlinkData = js.native
 }

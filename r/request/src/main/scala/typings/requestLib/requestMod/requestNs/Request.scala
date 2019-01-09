@@ -55,7 +55,7 @@ trait Request
   var time: js.UndefOr[scala.Boolean] = js.native
   var timeout: js.UndefOr[scala.Double] = js.native
   var timing: js.UndefOr[scala.Boolean] = js.native
-  var timings: js.UndefOr[requestLib.Anon_Lookup] = js.native
+  var timings: js.UndefOr[requestLib.Anon_Connect] = js.native
   var tunnel: scala.Boolean = js.native
   var uri: nodeLib.urlMod.Url with requestLib.Anon_Href = js.native
   var withCredentials: js.UndefOr[scala.Boolean] = js.native

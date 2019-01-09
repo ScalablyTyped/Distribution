@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 trait ISourceType extends js.Object {
   var amount: scala.Double
   var currency: java.lang.String
-  var source_types: stripeLib.Anon_Bitcoinreceiver
+  var source_types: stripeLib.Anon_Alipayaccount
 }
 

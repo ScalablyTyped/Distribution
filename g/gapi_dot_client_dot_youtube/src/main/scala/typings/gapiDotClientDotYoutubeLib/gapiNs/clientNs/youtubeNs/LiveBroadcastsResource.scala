@@ -10,22 +10,24 @@ trait LiveBroadcastsResource extends js.Object {
     * Binds a YouTube broadcast to a stream or removes an existing binding between a broadcast and a stream. A broadcast can only be bound to one video
     * stream, though a video stream may be bound to more than one broadcast.
     */
-  def bind(request: gapiDotClientDotYoutubeLib.Anon_StreamId): gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
+  def bind(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenOnBehalfOfContentOwner): gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
   /** Controls the settings for a slate that can be displayed in the broadcast stream. */
-  def control(request: gapiDotClientDotYoutubeLib.Anon_DisplaySlate): gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
+  def control(request: gapiDotClientDotYoutubeLib.Anon_AltDisplaySlate): gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
   /** Deletes a broadcast. */
-  def delete(request: gapiDotClientDotYoutubeLib.Anon_PrettyPrintOnBehalfOfContentOwnerChannelQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+  def delete(
+    request: gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenOnBehalfOfContentOwnerOnBehalfOfContentOwnerChannel
+  ): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   /** Creates a broadcast. */
-  def insert(request: gapiDotClientDotYoutubeLib.Anon_PrettyPrintOnBehalfOfContentOwnerChannel): gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
+  def insert(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
   /** Returns a list of YouTube broadcasts that match the API request parameters. */
-  def list(request: gapiDotClientDotYoutubeLib.Anon_MineMaxResultsPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcastListResponse]
+  def list(request: gapiDotClientDotYoutubeLib.Anon_AltBroadcastStatus): gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcastListResponse]
   /**
     * Changes the status of a YouTube live broadcast and initiates any processes associated with the new status. For example, when you transition a
     * broadcast's status to testing, YouTube starts to transmit video to that broadcast's monitor stream. Before calling this method, you should confirm that
     * the value of the status.streamStatus property for the stream bound to your broadcast is active.
     */
-  def transition(request: gapiDotClientDotYoutubeLib.Anon_PrettyPrintBroadcastStatus): gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
+  def transition(request: gapiDotClientDotYoutubeLib.Anon_AltBroadcastStatusFields): gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
   /** Updates a broadcast. For example, you could modify the broadcast settings defined in the liveBroadcast resource's contentDetails object. */
-  def update(request: gapiDotClientDotYoutubeLib.Anon_PrettyPrintOnBehalfOfContentOwnerChannel): gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
+  def update(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[LiveBroadcast]
 }
 

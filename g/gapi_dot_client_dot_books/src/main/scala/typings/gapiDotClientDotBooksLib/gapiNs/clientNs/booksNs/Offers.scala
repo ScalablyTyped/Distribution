@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Offers extends js.Object {
   /** A list of offers. */
-  var items: js.UndefOr[js.Array[gapiDotClientDotBooksLib.Anon_GservicesKey]] = js.undefined
+  var items: js.UndefOr[js.Array[gapiDotClientDotBooksLib.Anon_ArtUrl]] = js.undefined
   /** Resource type. */
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }

@@ -14,7 +14,7 @@ trait MapContext extends js.Object {
   		 */
   def getCenterLocation(options: GetCenterLocationOptions): OpenLocationOptions
   def getRegion(options: GetRegionOptions): scala.Unit
-  def includePoints(options: baiduDashAppLib.Anon_Points): scala.Unit
+  def includePoints(options: baiduDashAppLib.Anon_Padding): scala.Unit
   /**
   		 * 将地图中心移动到当前定位点，需要配合map组件的show-location使用
   		 */

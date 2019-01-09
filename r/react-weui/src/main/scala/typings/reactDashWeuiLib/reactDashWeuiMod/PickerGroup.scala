@@ -22,6 +22,6 @@ class PickerGroup protected () extends js.Object {
 @JSImport("react-weui", "PickerGroup")
 @js.native
 object PickerGroup extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_DefaultIndex = js.native
+  var defaultProps: reactDashWeuiLib.Anon_Aniamtion = js.native
 }
 

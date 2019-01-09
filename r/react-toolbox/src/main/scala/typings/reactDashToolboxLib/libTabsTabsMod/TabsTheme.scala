@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(reactDashToolboxLib.libTabsTabContentMod.TabContentTheme because Would inherit conflicting mutable fields List(active))*/
-trait TabsTheme
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- reactDashToolboxLib.libTabsTabContentMod.TabContentTheme because var conflicts: active. Inlined tab */ trait TabsTheme
   extends reactDashToolboxLib.libTabsTabMod.TabTheme {
   /**
     * Class used for arrows.
@@ -40,6 +40,10 @@ trait TabsTheme
     * Used for the moving underline element.
     */
   var pointer: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Used for the tab content element.
+    */
+  var tab: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Used as a root classname for the component.
     */

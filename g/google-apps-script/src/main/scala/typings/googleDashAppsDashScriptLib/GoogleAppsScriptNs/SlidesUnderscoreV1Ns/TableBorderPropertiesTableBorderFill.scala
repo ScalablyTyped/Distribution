@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait TableBorderPropertiesTableBorderFill extends js.Object {
   // The kind of fill.
-  var kind: googleDashAppsDashScriptLib.Anon_Solidfill
+  var kind: googleDashAppsDashScriptLib.Anon_SolidfillSolidFill
 }
 

@@ -54,7 +54,7 @@ object Validator extends js.Object {
     defaultMessage: java.lang.String,
     context: js.Any
   ): breezeLib.breezeNs.Validator = js.native
-  def maxLength(context: breezeLib.Anon_MessageTemplateMaxLengthString): breezeLib.breezeNs.Validator = js.native
+  def maxLength(context: breezeLib.Anon_MaxLength): breezeLib.breezeNs.Validator = js.native
   /** Always returns true */
   def none(): breezeLib.breezeNs.Validator = js.native
   /** Validators number, double, and single are all the same */
@@ -75,7 +75,7 @@ object Validator extends js.Object {
   def single(): breezeLib.breezeNs.Validator = js.native
   def single(context: breezeLib.Anon_MessageTemplate): breezeLib.breezeNs.Validator = js.native
   def string(): breezeLib.breezeNs.Validator = js.native
-  def stringLength(context: breezeLib.Anon_MessageTemplateMaxLength): breezeLib.breezeNs.Validator = js.native
+  def stringLength(context: breezeLib.Anon_MaxLengthMessageTemplate): breezeLib.breezeNs.Validator = js.native
   /** Returns the URL (protocol required) validator */
   def url(): breezeLib.breezeNs.Validator = js.native
   def url(context: breezeLib.Anon_MessageTemplate): breezeLib.breezeNs.Validator = js.native

@@ -5,6 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typedDashGithubDashApiLib.distApiDashInterfacesWebDashHooksMod.WebHookData because Would inherit conflicting mutable fields List(action))*/
-trait IssueWebHookData extends IssueEvent
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typedDashGithubDashApiLib.distApiDashInterfacesWebDashHooksMod.WebHookData because var conflicts: action. Inlined sender, organization, repository */ trait IssueWebHookData extends IssueEvent {
+  var organization: js.UndefOr[typedDashGithubDashApiLib.distApiDashInterfacesUserMod.OrganizationSummary] = js.undefined
+  var repository: js.UndefOr[typedDashGithubDashApiLib.distApiDashInterfacesRepositoryMod.Repository] = js.undefined
+  var sender: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary
+}
 

@@ -21,7 +21,7 @@ trait Anchor
   def componentDidUpdate_MAnchor(): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MAnchor(): scala.Unit = js.native
-  def getChildContext(): antdLib.Anon_AntAnchor = js.native
+  def getChildContext(): antdLib.Anon_AntAnchor_1011846465 = js.native
   def getCurrentAnchor(): java.lang.String = js.native
   def getCurrentAnchor(offsetTop: scala.Double): java.lang.String = js.native
   def getCurrentAnchor(offsetTop: scala.Double, bounds: scala.Double): java.lang.String = js.native

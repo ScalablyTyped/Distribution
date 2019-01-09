@@ -19,10 +19,10 @@ trait ChartConfiguration extends js.Object {
   var bindto: js.UndefOr[
     java.lang.String | stdLib.HTMLElement | (d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, _, _]) | scala.Null
   ] = js.undefined
-  var color: js.UndefOr[c3Lib.Anon_ThresholdPattern] = js.undefined
+  var color: js.UndefOr[c3Lib.Anon_Pattern] = js.undefined
   var data: Data
-  var donut: js.UndefOr[c3Lib.Anon_Title] = js.undefined
-  var gauge: js.UndefOr[c3Lib.Anon_FullCircle] = js.undefined
+  var donut: js.UndefOr[c3Lib.Anon_ExpandLabel] = js.undefined
+  var gauge: js.UndefOr[c3Lib.Anon_ExpandFullCircle] = js.undefined
   var grid: js.UndefOr[Grid] = js.undefined
   var interaction: js.UndefOr[c3Lib.Anon_Enabled] = js.undefined
   var legend: js.UndefOr[LegendOptions] = js.undefined
@@ -51,8 +51,8 @@ trait ChartConfiguration extends js.Object {
     * Set a callback to execute when screen resize finished.
     */
   var onresized: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var padding: js.UndefOr[c3Lib.Anon_BottomTop] = js.undefined
-  var pie: js.UndefOr[c3Lib.Anon_ExpandLabel] = js.undefined
+  var padding: js.UndefOr[c3Lib.Anon_Bottom] = js.undefined
+  var pie: js.UndefOr[c3Lib.Anon_Expand] = js.undefined
   var point: js.UndefOr[PointOptions] = js.undefined
   /**
     * Show rectangles inside the chart.
@@ -62,11 +62,11 @@ trait ChartConfiguration extends js.Object {
     */
   var regions: js.UndefOr[js.Array[RegionOptions]] = js.undefined
   var resize: js.UndefOr[c3Lib.Anon_Auto] = js.undefined
-  var size: js.UndefOr[c3Lib.Anon_HeightWidth] = js.undefined
+  var size: js.UndefOr[c3Lib.Anon_Height] = js.undefined
   var spline: js.UndefOr[c3Lib.Anon_Interpolation] = js.undefined
   var subchart: js.UndefOr[SubchartOptions] = js.undefined
   var tooltip: js.UndefOr[TooltipOptions] = js.undefined
-  var transition: js.UndefOr[c3Lib.Anon_DurationNumber] = js.undefined
+  var transition: js.UndefOr[c3Lib.Anon_Duration] = js.undefined
   var zoom: js.UndefOr[ZoomOptions] = js.undefined
 }
 

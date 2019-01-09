@@ -14,5 +14,5 @@ package object libComponentsPivotPivotDotTypesMod {
   ]) with (stdLib.Pick[
     IPivotProps, 
     officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.className
-  ]) with officeDashUiDashFabricDashReactLib.Anon_RootIsTabs
+  ]) with officeDashUiDashFabricDashReactLib.Anon_LinkIsSelected
 }

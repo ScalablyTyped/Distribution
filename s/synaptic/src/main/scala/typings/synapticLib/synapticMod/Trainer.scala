@@ -40,8 +40,8 @@ class Trainer protected () extends js.Object {
   /**
     * This test challenges the network to complete a timing task.
     */
-  def timingTask(): synapticLib.Anon_Train = js.native
-  def timingTask(options: js.Any): synapticLib.Anon_Train = js.native
+  def timingTask(): synapticLib.Anon_Test = js.native
+  def timingTask(options: js.Any): synapticLib.Anon_Test = js.native
   /**
     * This method allows you to train any training set to a Network.
     * @returns When the training is done this method returns an object with the error, the iterations, and the elapsed time of the training.

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class WallGraphics ()
   extends cesiumLib.cesiumMod.CesiumNs.WallGraphics {
-  def this(options: cesiumLib.Anon_ShowOutline) = this()
+  def this(options: cesiumLib.Anon_FillGranularity) = this()
 }
 

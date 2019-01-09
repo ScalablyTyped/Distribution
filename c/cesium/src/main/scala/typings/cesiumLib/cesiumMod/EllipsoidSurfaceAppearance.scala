@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EllipsoidSurfaceAppearance ()
   extends cesiumLib.cesiumMod.CesiumNs.EllipsoidSurfaceAppearance {
-  def this(options: cesiumLib.Anon_VertexShaderSourceFaceForwardFlatAboveGround) = this()
+  def this(options: cesiumLib.Anon_AboveGround) = this()
   /* CompleteClass */
   override val aboveGround: scala.Boolean = js.native
   /* CompleteClass */

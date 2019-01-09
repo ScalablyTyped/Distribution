@@ -20,7 +20,7 @@ object reduxDashFirstDashRoutingModMembers extends js.Object {
   def go[T /* <: scala.Double */](index: T): goAction[T] = js.native
   def goBack(): goBackAction = js.native
   def goForward(): goForwardAction = js.native
-  def locationChange[P /* <: historyLib.historyMod.Pathname */, S /* <: historyLib.historyMod.Search */, H /* <: historyLib.historyMod.Hash */](`_`: reduxDashFirstDashRoutingLib.Anon_HashPathname[H, P, S]): locationChangeAction[P, S, H] = js.native
+  def locationChange[P /* <: historyLib.historyMod.Pathname */, S /* <: historyLib.historyMod.Search */, H /* <: historyLib.historyMod.Hash */](`_`: reduxDashFirstDashRoutingLib.Anon_HashPathname[P, S, H]): locationChangeAction[P, S, H] = js.native
   def push[T /* <: historyLib.historyMod.Path | historyLib.historyMod.LocationDescriptorObject[historyLib.historyMod.LocationState] */](href: T): pushAction[T] = js.native
   def replace[T /* <: historyLib.historyMod.Path | historyLib.historyMod.LocationDescriptorObject[historyLib.historyMod.LocationState] */](href: T): replaceAction[T] = js.native
   def routerMiddleware(history: historyLib.historyMod.History[historyLib.historyMod.LocationState]): reduxLib.reduxMod.Middleware[_, State, reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.AnyAction]] = js.native

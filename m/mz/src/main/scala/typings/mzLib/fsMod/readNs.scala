@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @JSImport("mz/fs", "read")
 @js.native
 object readNs extends js.Object {
-  def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_Buffer[TBuffer]] = js.native
+  def `__promisify__`[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
   /**
     * @param fd A file descriptor.
     * @param buffer The buffer that the data will be written to.
@@ -23,6 +23,6 @@ object readNs extends js.Object {
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
-  ): js.Promise[nodeLib.Anon_Buffer[TBuffer]] = js.native
+  ): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
 }
 

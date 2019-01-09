@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 trait GetAuthUserInfoOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_GetAuthUserInfoOptions: js.UndefOr[js.Function1[/* res */ aliDashAppLib.Anon_NickName, scala.Unit]] = js.undefined
+  var success_GetAuthUserInfoOptions: js.UndefOr[js.Function1[/* res */ aliDashAppLib.Anon_AvatarNickName, scala.Unit]] = js.undefined
 }
 

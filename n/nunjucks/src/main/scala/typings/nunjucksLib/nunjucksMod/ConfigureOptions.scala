@@ -14,6 +14,6 @@ trait ConfigureOptions extends js.Object {
   var throwOnUndefined: js.UndefOr[scala.Boolean] = js.undefined
   var trimBlocks: js.UndefOr[scala.Boolean] = js.undefined
   var watch: js.UndefOr[scala.Boolean] = js.undefined
-  var web: js.UndefOr[nunjucksLib.Anon_UseCache] = js.undefined
+  var web: js.UndefOr[nunjucksLib.Anon_Async] = js.undefined
 }
 

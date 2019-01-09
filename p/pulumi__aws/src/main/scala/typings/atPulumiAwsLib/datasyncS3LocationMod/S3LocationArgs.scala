@@ -13,7 +13,7 @@ trait S3LocationArgs extends js.Object {
   /**
     * Configuration block containing information for connecting to S3.
     */
-  val s3Config: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketAccessRoleArn]
+  val s3Config: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketAccessRoleArnInput]
   /**
     * Prefix to perform actions as source or destination.
     */

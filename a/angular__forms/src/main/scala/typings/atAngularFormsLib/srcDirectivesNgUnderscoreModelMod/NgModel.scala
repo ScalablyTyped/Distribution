@@ -66,7 +66,7 @@ class NgModel protected ()
     * Defaults to 'change'. Possible values: `'change'` | `'blur'` | `'submit'`.
     *
     */
-  var options: atAngularFormsLib.Anon_Standalone = js.native
+  var options: atAngularFormsLib.Anon_Name = js.native
   /**
     * @description
     * Returns an array that represents the path from the top-level form to this control.

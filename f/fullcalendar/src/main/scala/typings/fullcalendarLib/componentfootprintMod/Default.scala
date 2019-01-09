@@ -11,7 +11,7 @@ class Default protected () extends js.Object {
   def this(unzonedRange: js.Any, isAllDay: js.Any) = this()
   var isAllDay: scala.Boolean = js.native
   var unzonedRange: js.Any = js.native
-  def toLegacy(calendar: js.Any): fullcalendarLib.Anon_Start = js.native
+  def toLegacy(calendar: js.Any): fullcalendarLib.Anon_End = js.native
 }
 
 @JSImport("fullcalendar/ComponentFootprint", JSImport.Default)

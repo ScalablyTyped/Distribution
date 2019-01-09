@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait RegionsResource extends js.Object {
   /** Retrieves a list of regions. */
-  def list(request: gapiDotClientDotDfareportingLib.Anon_ProfileId): gapiDotClientLib.gapiNs.clientNs.Request[RegionsListResponse]
+  def list(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[RegionsListResponse]
 }
 

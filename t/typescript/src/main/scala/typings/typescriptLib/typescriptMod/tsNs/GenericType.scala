@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typescriptLib.typescriptMod.tsNs.TypeReference because Would inherit conflicting mutable fields List(aliasSymbol, aliasTypeArguments, flags, objectFlags, pattern, symbol))*/
-trait GenericType extends InterfaceType
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typescriptLib.typescriptMod.tsNs.TypeReference because var conflicts: aliasSymbol, aliasTypeArguments, flags, objectFlags, pattern, symbol. Inlined target, typeArguments */ trait GenericType extends InterfaceType {
+  var target: GenericType
+  var typeArguments: js.UndefOr[js.Array[Type]] = js.undefined
+}
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ClientOptions extends js.Object {
   var authProvider: js.UndefOr[cassandraDashDriverLib.cassandraDashDriverMod.authNs.AuthProvider] = js.undefined
   var contactPoints: js.Array[java.lang.String]
-  var encoding: js.UndefOr[cassandraDashDriverLib.Anon_Set] = js.undefined
+  var encoding: js.UndefOr[cassandraDashDriverLib.Anon_Args] = js.undefined
   var isMetadataSyncEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var keyspace: js.UndefOr[java.lang.String] = js.undefined
   var maxPrepared: js.UndefOr[scala.Double] = js.undefined
@@ -25,11 +25,11 @@ trait ClientOptions extends js.Object {
       js.Promise[_]
     ]
   ] = js.undefined
-  var protocolOptions: js.UndefOr[cassandraDashDriverLib.Anon_MaxVersion] = js.undefined
+  var protocolOptions: js.UndefOr[cassandraDashDriverLib.Anon_MaxSchemaAgreementWaitSeconds] = js.undefined
   var queryOptions: js.UndefOr[QueryOptions] = js.undefined
   var rePrepareOnUp: js.UndefOr[scala.Boolean] = js.undefined
   var refreshSchemaDelay: js.UndefOr[scala.Double] = js.undefined
-  var socketOptions: js.UndefOr[cassandraDashDriverLib.Anon_ConnectTimeout] = js.undefined
+  var socketOptions: js.UndefOr[cassandraDashDriverLib.Anon_CoalescingThreshold] = js.undefined
   var sslOptions: js.UndefOr[nodeLib.tlsMod.ConnectionOptions] = js.undefined
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WallOutlineGeometry protected ()
   extends cesiumLib.cesiumMod.CesiumNs.WallOutlineGeometry {
-  def this(options: cesiumLib.Anon_MaximumHeightsEllipsoid) = this()
+  def this(options: cesiumLib.Anon_EllipsoidGranularityMaximumHeights) = this()
 }
 
 @JSImport("cesium", "WallOutlineGeometry")

@@ -37,7 +37,7 @@ class Function protected ()
   /**
     * The Lambda environment's configuration settings. Fields documented below.
     */
-  val environment: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_VariablesKeyString]] = js.native
+  val environment: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_KeyVariables]] = js.native
   /**
     * The function [entrypoint][3] in your code.
     */
@@ -120,7 +120,7 @@ class Function protected ()
   /**
     * Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
     */
-  val vpcConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_VpcIdSecurityGroupIds]] = js.native
+  val vpcConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray]] = js.native
 }
 
 @JSImport("@pulumi/aws/lambda/function", "Function")

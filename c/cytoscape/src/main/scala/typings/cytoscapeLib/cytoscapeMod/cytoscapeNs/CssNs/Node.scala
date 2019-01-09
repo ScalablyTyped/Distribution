@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * http://js.cytoscape.org/#style/node-body
   */
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial<cytoscape.cytoscape.cytoscape.Css.Overlay>) */ trait Node extends PaddingNode {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof cytoscape.cytoscape.cytoscape.Css.Overlay ]:? cytoscape.cytoscape.cytoscape.Css.Overlay[P]} */ trait Node extends PaddingNode {
   /**
     * Blackens the node’s body for values from 0 to 1;
     * whitens the node’s body for values from 0 to -1.

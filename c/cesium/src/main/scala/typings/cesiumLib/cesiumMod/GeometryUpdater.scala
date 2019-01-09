@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GeometryUpdater protected ()
   extends cesiumLib.cesiumMod.CesiumNs.GeometryUpdater {
-  def this(options: cesiumLib.Anon_ObservedPropertyNames) = this()
+  def this(options: cesiumLib.Anon_Entity) = this()
   /* CompleteClass */
   override val classificationTypeProperty: cesiumLib.cesiumMod.CesiumNs.Property = js.native
   /* CompleteClass */

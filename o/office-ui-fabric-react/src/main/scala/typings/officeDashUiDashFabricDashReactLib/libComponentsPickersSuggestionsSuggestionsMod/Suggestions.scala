@@ -16,13 +16,13 @@ class Suggestions[T] protected ()
   var SuggestionsItemOfProperType: js.Any = js.native
   var _forceResolve: js.Any = js.native
   @JSName("_forceResolveButton")
-  var _forceResolveButton_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentValueCurrentIButton = js.native
+  var _forceResolveButton_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentCurrentValueIButton = js.native
   var _getMoreResults: js.Any = js.native
   var _onClickTypedSuggestionsItem: js.Any = js.native
   var _onRemoveTypedSuggestionsItem: js.Any = js.native
   var _refocusOnSuggestions: js.Any = js.native
   @JSName("_searchForMoreButton")
-  var _searchForMoreButton_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentValueCurrentIButton = js.native
+  var _searchForMoreButton_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentCurrentValueIButton = js.native
   @JSName("_selectedElement")
   var _selectedElement_Original: officeDashUiDashFabricDashReactLib.Anon_Component = js.native
   var _shouldShowForceResolve: js.Any = js.native

@@ -12,7 +12,7 @@ object image2Ns extends js.Object {
   def getLinkAttributesGetter(): js.Function2[
     /* editor */ ckeditorLib.CKEDITORNs.editor, 
     /* data */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
-    ckeditorLib.Anon_SetTag
+    ckeditorLib.Anon_Removed
   ] = js.native
   def getLinkAttributesParser(): js.Function2[
     /* editor */ ckeditorLib.CKEDITORNs.editor, 

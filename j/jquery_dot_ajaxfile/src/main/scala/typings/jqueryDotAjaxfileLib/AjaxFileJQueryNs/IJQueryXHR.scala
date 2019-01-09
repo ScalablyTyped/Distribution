@@ -24,8 +24,8 @@ trait IJQueryXHR extends js.Object {
   var responseText: java.lang.String = js.native
   var responseXML: stdLib.Document = js.native
   var status: scala.Double = js.native
-  var statusCode: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
+  var statusCode: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any
   ] = js.native
   var statusText: java.lang.String = js.native
   var success: js.UndefOr[

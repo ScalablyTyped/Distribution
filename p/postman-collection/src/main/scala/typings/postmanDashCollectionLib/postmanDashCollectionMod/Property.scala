@@ -5,15 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(postmanDashCollectionLib.postmanDashCollectionMod.PropertyDefinition because Would inherit conflicting mutable fields List(description))*/
-@JSImport("postman-collection", "Property")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- postmanDashCollectionLib.postmanDashCollectionMod.PropertyDefinition because var conflicts: description. Inlined id, name, disabled */ @JSImport("postman-collection", "Property")
 @js.native
 class Property[TDefinition] () extends PropertyBase[TDefinition] {
   def this(definition: TDefinition) = this()
-  def this(definition: postmanDashCollectionLib.Anon_InfoDisabled[TDefinition]) = this()
-  var disabled: scala.Boolean = js.native
-  var id: java.lang.String = js.native
-  var name: java.lang.String = js.native
+  def this(definition: postmanDashCollectionLib.Anon_Disabled[TDefinition]) = this()
+  var disabled: scala.Boolean | js.UndefOr[scala.Boolean] = js.native
+  var id: java.lang.String | js.UndefOr[java.lang.String] = js.native
+  var name: java.lang.String | js.UndefOr[java.lang.String] = js.native
   def describe(content: java.lang.String): scala.Unit = js.native
   def describe(content: java.lang.String, `type`: java.lang.String): scala.Unit = js.native
   def toObjectResolved(scope: postmanDashCollectionLib.Anon_Variables, overrides: js.Array[_]): TDefinition = js.native

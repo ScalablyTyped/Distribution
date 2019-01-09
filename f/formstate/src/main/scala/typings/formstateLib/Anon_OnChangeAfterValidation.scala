@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Anon_OnChangeAfterValidation extends js.Object {
   @JSName("on$ChangeAfterValidation")
-  var on$ChangeAfterValidation: js.Function0[scala.Unit]
+  def on$ChangeAfterValidation(): scala.Unit
   @JSName("on$Reinit")
-  var on$Reinit: js.Function0[scala.Unit]
+  def on$Reinit(): scala.Unit
 }
 

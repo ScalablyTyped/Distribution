@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped new Some()Some((args  : ...any))Some(: react-native.react-native.NativeMethodsMixin) */ @JSImport("react-native", "TextInput")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "TextInput")
 @js.native
 class TextInput () extends js.Object {
   /**
@@ -19,8 +19,8 @@ class TextInput () extends js.Object {
   def isFocused(): scala.Boolean = js.native
 }
 
-/* RemoveDifficultInheritance: 
-- Dropped new Some()Some((args  : ...any))Some(: react-native.react-native.NativeMethodsMixin) */ @JSImport("react-native", "TextInput")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "TextInput")
 @js.native
 object TextInput extends js.Object {
   /**

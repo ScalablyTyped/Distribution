@@ -44,7 +44,7 @@ object windowsNsMembers extends js.Object {
     *     should contain a list of the `tabs.Tab` objects.
     */
   def getAll(): js.Promise[js.Array[Window]] = js.native
-  def getAll(getInfo: firefoxDashWebextDashBrowserLib.Anon_Populate): js.Promise[js.Array[Window]] = js.native
+  def getAll(getInfo: firefoxDashWebextDashBrowserLib.Anon_PopulateWindowTypes): js.Promise[js.Array[Window]] = js.native
   /** Gets the current window. */
   def getCurrent(): js.Promise[Window] = js.native
   def getCurrent(getInfo: GetInfo): js.Promise[Window] = js.native
@@ -57,6 +57,6 @@ object windowsNsMembers extends js.Object {
     * Updates the properties of a window. Specify only the properties that you want to change; unspecified properties
     * will be left unchanged.
     */
-  def update(windowId: scala.Double, updateInfo: firefoxDashWebextDashBrowserLib.Anon_State): js.Promise[js.UndefOr[Window]] = js.native
+  def update(windowId: scala.Double, updateInfo: firefoxDashWebextDashBrowserLib.Anon_DrawAttention): js.Promise[js.UndefOr[Window]] = js.native
 }
 

@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   * const storage = new Storage();
   * const bucket = storage.bucket('albums');
   */
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any
 - Dropped any */ @JSImport("@google-cloud/storage/build/src/bucket", "Bucket")
 @js.native
@@ -354,26 +354,28 @@ class Bucket protected () extends js.Object {
   def removeRetentionPeriod(): js.Promise[SetBucketMetadataResponse] = js.native
   def removeRetentionPeriod(callback: SetBucketMetadataCallback): scala.Unit = js.native
   def request(
-    reqOpts: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify DecorateRequestOptions */ js.Any
+    reqOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DecorateRequestOptions */ js.Any
   ): js.Promise[requestLib.requestMod.requestNs.Response] = js.native
   def request(
-    reqOpts: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify DecorateRequestOptions */ js.Any,
-    callback: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BodyResponseCallback */ js.Any
+    reqOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DecorateRequestOptions */ js.Any,
+    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BodyResponseCallback */ js.Any
   ): scala.Unit = js.native
   def setLabels(labels: Labels, callback: SetLabelsCallback): scala.Unit = js.native
   def setLabels(labels: Labels, options: SetLabelsOptions): js.Promise[SetLabelsResponse] = js.native
   def setLabels(labels: Labels, options: SetLabelsOptions, callback: SetLabelsCallback): scala.Unit = js.native
-  def setMetadata(metadata: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ js.Any): js.Promise[SetBucketMetadataResponse] = js.native
   def setMetadata(
-    metadata: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ js.Any,
+    metadata: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.Any
+  ): js.Promise[SetBucketMetadataResponse] = js.native
+  def setMetadata(
+    metadata: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.Any,
     callback: SetBucketMetadataCallback
   ): scala.Unit = js.native
   def setMetadata(
-    metadata: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ js.Any,
+    metadata: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.Any,
     options: SetBucketMetadataOptions
   ): js.Promise[SetBucketMetadataResponse] = js.native
   def setMetadata(
-    metadata: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ js.Any,
+    metadata: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.Any,
     options: SetBucketMetadataOptions,
     callback: SetBucketMetadataCallback
   ): scala.Unit = js.native

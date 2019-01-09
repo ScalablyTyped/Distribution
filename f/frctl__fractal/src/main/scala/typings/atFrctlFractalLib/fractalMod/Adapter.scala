@@ -12,7 +12,7 @@ abstract class Adapter[TEngine] protected ()
   def this(engine: TEngine, source: atFrctlFractalLib.fractalMod.fractalNs.coreNs.entitiesNs.EntitySource[_, _]) = this()
   var _source: atFrctlFractalLib.fractalMod.fractalNs.coreNs.entitiesNs.EntitySource[_, _] = js.native
   val engine: TEngine = js.native
-  val views: js.Array[atFrctlFractalLib.Anon_HandleContent] = js.native
+  val views: js.Array[atFrctlFractalLib.Anon_Content] = js.native
   /* protected */ def _resolve[T](value: T): js.Promise[T] = js.native
   /* protected */ def _resolve[T](value: js.Thenable[T]): js.Promise[T] = js.native
   def getReferencesForView(handle: java.lang.String): js.Array[_] = js.native

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Readonly<vue.vue/types/vnode.VNodeDirective>) */ trait DirectiveBinding extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {readonly [ P in keyof vue.vue/types/vnode.VNodeDirective ]: vue.vue/types/vnode.VNodeDirective[P]} */ trait DirectiveBinding extends js.Object {
   val modifiers: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 }
 

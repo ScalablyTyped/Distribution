@@ -47,7 +47,7 @@ class InkStroke ()
   def load(): InkStroke = js.native
   def load(option: java.lang.String): InkStroke = js.native
   def load(option: js.Array[java.lang.String]): InkStroke = js.native
-  def load(option: officeDashJsLib.Anon_Select): InkStroke = js.native
+  def load(option: officeDashJsLib.Anon_Expand): InkStroke = js.native
   def load(option: officeDashJsLib.OneNoteNs.InterfacesNs.InkStrokeLoadOptions): InkStroke = js.native
   def toJSON(): officeDashJsLib.OneNoteNs.InterfacesNs.InkStrokeData = js.native
   /**

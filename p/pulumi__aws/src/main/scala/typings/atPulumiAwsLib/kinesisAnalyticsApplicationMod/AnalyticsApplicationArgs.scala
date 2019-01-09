@@ -10,7 +10,7 @@ trait AnalyticsApplicationArgs extends js.Object {
     * The CloudWatch log stream options to monitor application errors.
     * See CloudWatch Logging Options below for more details.
     */
-  val cloudwatchLoggingOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RoleArnLogStreamArn]] = js.undefined
+  val cloudwatchLoggingOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IdLogStreamArnRoleArn]] = js.undefined
   /**
     * SQL Code to transform input data, and generate output.
     */
@@ -22,7 +22,9 @@ trait AnalyticsApplicationArgs extends js.Object {
   /**
     * Input configuration of the application. See Inputs below for more details.
     */
-  val inputs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Parallelism]] = js.undefined
+  val inputs: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IdKinesisFirehoseKinesisStreamNamePrefix]
+  ] = js.undefined
   /**
     * Name of the Kinesis Analytics Application.
     */
@@ -31,12 +33,16 @@ trait AnalyticsApplicationArgs extends js.Object {
     * Output destination configuration of the application. See Outputs below for more details.
     */
   val outputs: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameLambda]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IdKinesisFirehoseKinesisStreamLambda]
+      ]
+    ]
   ] = js.undefined
   /**
     * An S3 Reference Data Source for the application.
     * See Reference Data Sources below for more details.
     */
-  val referenceDataSources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TableName]] = js.undefined
+  val referenceDataSources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IdS3Schema]] = js.undefined
 }
 

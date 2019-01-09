@@ -19,7 +19,7 @@ trait TooltipOptions extends js.Object {
       java.lang.String
     ]
   ] = js.undefined
-  var format: js.UndefOr[c3Lib.Anon_Value] = js.undefined
+  var format: js.UndefOr[c3Lib.Anon_IdIndex] = js.undefined
   /**
     * Set if tooltip is grouped or not for the data points.
     */
@@ -40,7 +40,7 @@ trait TooltipOptions extends js.Object {
       /* width */ scala.Double, 
       /* height */ scala.Double, 
       /* element */ js.Any, 
-      c3Lib.Anon_Top
+      c3Lib.Anon_LeftTop
     ]
   ] = js.undefined
   /**

@@ -14,6 +14,6 @@ class default protected () extends Carousel {
 @JSImport("antd/lib/carousel", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: antdLib.Anon_Draggable = js.native
+  var defaultProps: antdLib.Anon_Arrows = js.native
 }
 

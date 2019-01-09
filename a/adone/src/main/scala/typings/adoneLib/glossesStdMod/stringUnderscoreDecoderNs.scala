@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("adone/glosses/std", "string_decoder")
 @js.native
 object stringUnderscoreDecoderNs extends js.Object {
-  val StringDecoder: nodeLib.Anon_Encoding = js.native
+  val StringDecoder: nodeLib.Anon_EncodingNodeStringDecoder = js.native
 }
 

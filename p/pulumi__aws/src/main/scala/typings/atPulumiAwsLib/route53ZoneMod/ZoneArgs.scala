@@ -41,7 +41,7 @@ trait ZoneArgs extends js.Object {
     */
   val vpcs: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_VpcIdVpcRegionInput]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_VpcIdVpcRegion]]
     ]
   ] = js.undefined
 }

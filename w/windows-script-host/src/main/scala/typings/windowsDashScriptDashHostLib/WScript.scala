@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WScript")
 @js.native
 object WScript extends js.Object {
-  var Arguments: windowsDashScriptDashHostLib.WshArguments = js.native
+  @JSName("Arguments")
+  var Arguments_Original: windowsDashScriptDashHostLib.WshArguments = js.native
   /**
     * The Windows Script Host build version number.
     */
@@ -56,6 +57,7 @@ object WScript extends js.Object {
     * Windows Script Host version
     */
   var Version: java.lang.String = js.native
+  def Arguments(index: scala.Double): java.lang.String = js.native
   /**
     * Connects a COM object's event sources to functions named with a given prefix, in the form prefix_event.
     */

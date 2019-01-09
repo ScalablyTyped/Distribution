@@ -22,7 +22,7 @@ trait Client extends js.Object {
   /**
     * Helper method to convert units
     */
-  var units: fhirDashJsDashClientLib.Anon_Cm = js.native
+  var units: fhirDashJsDashClientLib.Anon_Any = js.native
   /**
     * User in context and exposes a method 'read' to get information.
     */

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object outElectronElectronFrameworkModMembers extends js.Object {
   def createElectronFrameworkSupport(
     configuration: appDashBuilderDashLibLib.outConfigurationMod.Configuration,
-    packager: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Packager */ js.Any
+    packager: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Packager */ js.Any
   ): js.Promise[appDashBuilderDashLibLib.outFrameworkMod.Framework] = js.native
 }
 

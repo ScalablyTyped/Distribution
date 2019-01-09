@@ -12,7 +12,7 @@ trait screen extends js.Object {
   /**
     * Physical screen resolution, can be negative, not necessarily start from 0,depending on screen arrangement
     */
-  var bounds: nwDotJsLib.Anon_Y
+  var bounds: nwDotJsLib.Anon_Height
   /**
     * Unique id for a screen
     */
@@ -24,6 +24,6 @@ trait screen extends js.Object {
   /**
     * Useable area within the screen bound
     */
-  var work_area: nwDotJsLib.Anon_Y
+  var work_area: nwDotJsLib.Anon_Height
 }
 

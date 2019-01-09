@@ -152,7 +152,7 @@ trait Cheerio
   def replaceWith(content: js.Function0[this.type]): Cheerio = js.native
   // Form
   def serialize(): java.lang.String = js.native
-  def serializeArray(): js.Array[Anon_Value] = js.native
+  def serializeArray(): js.Array[Anon_Name] = js.native
   def siblings(): Cheerio = js.native
   def siblings(selector: java.lang.String): Cheerio = js.native
   def slice(start: scala.Double): Cheerio = js.native

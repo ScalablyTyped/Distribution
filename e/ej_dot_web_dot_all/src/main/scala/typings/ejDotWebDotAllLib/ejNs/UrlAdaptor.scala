@@ -15,8 +15,8 @@ class UrlAdaptor () extends Adaptor {
   def insert(dm: DataManager, data: js.Any, tableName: java.lang.String): ejDotWebDotAllLib.Anon_Data = js.native
   def onAggregates(e: js.Any): scala.Unit = js.native
   def onGroup(e: js.Any): scala.Unit = js.native
-  def processQuery(dm: DataManager, query: Query, hierarchyFilters: js.Any): ejDotWebDotAllLib.Anon_Url = js.native
-  def remove(dm: DataManager, keyField: java.lang.String, value: js.Any, tableName: java.lang.String): ejDotWebDotAllLib.Anon_TypeDataUrl = js.native
-  def update(dm: DataManager, keyField: java.lang.String, value: js.Any, tableName: java.lang.String): ejDotWebDotAllLib.Anon_Type = js.native
+  def processQuery(dm: DataManager, query: Query, hierarchyFilters: js.Any): ejDotWebDotAllLib.Anon_ContentType = js.native
+  def remove(dm: DataManager, keyField: java.lang.String, value: js.Any, tableName: java.lang.String): ejDotWebDotAllLib.Anon_DataType = js.native
+  def update(dm: DataManager, keyField: java.lang.String, value: js.Any, tableName: java.lang.String): ejDotWebDotAllLib.Anon_DataTypeUrl = js.native
 }
 

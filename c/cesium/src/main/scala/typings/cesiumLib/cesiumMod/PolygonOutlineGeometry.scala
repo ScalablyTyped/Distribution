@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PolygonOutlineGeometry protected ()
   extends cesiumLib.cesiumMod.CesiumNs.PolygonOutlineGeometry {
-  def this(options: cesiumLib.Anon_ExtrudedHeightHeightVertexFormat) = this()
+  def this(options: cesiumLib.Anon_EllipsoidExtrudedHeightGranularity) = this()
 }
 
 @JSImport("cesium", "PolygonOutlineGeometry")
@@ -17,7 +17,7 @@ class PolygonOutlineGeometry protected ()
 object PolygonOutlineGeometry extends js.Object {
   def createGeometry(polygonGeometry: cesiumLib.cesiumMod.CesiumNs.PolygonOutlineGeometry): cesiumLib.cesiumMod.CesiumNs.Geometry = js.native
   def fromPositions(): cesiumLib.cesiumMod.CesiumNs.PolygonOutlineGeometry = js.native
-  def fromPositions(options: cesiumLib.Anon_ExtrudedHeightHeightEllipsoid): cesiumLib.cesiumMod.CesiumNs.PolygonOutlineGeometry = js.native
+  def fromPositions(options: cesiumLib.Anon_EllipsoidExtrudedHeightGranularityHeight): cesiumLib.cesiumMod.CesiumNs.PolygonOutlineGeometry = js.native
   def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.CesiumNs.PolygonOutlineGeometry = js.native
   def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.CesiumNs.PolygonOutlineGeometry = js.native
   def unpack(

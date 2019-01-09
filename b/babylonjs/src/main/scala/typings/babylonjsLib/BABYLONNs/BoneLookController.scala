@@ -32,7 +32,7 @@ class BoneLookController protected () extends js.Object {
     * * adjustRoll: used to make an adjustment to the roll of the bone
     **/
   def this(mesh: AbstractMesh, bone: Bone, target: Vector3) = this()
-  def this(mesh: AbstractMesh, bone: Bone, target: Vector3, options: babylonjsLib.Anon_PitchAxis) = this()
+  def this(mesh: AbstractMesh, bone: Bone, target: Vector3, options: babylonjsLib.Anon_AdjustPitch) = this()
   var _boneQuat: js.Any = js.native
   var _firstFrameSkipped: js.Any = js.native
   var _fowardAxis: js.Any = js.native

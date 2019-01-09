@@ -23,7 +23,7 @@ class GetSmsMessagesOperation ()
   /* CompleteClass */
   override var id: scala.Double = js.native
   @JSName("operation")
-  var operation_GetSmsMessagesOperation: winrtLib.Anon_Progress = js.native
+  var operation_GetSmsMessagesOperation: winrtLib.Anon_AsyncInfoAsyncStatusCompletedGetResultsProgress = js.native
   @JSName("progress")
   var progress_Original: winrtLib.WindowsNs.FoundationNs.AsyncOperationProgressHandler[
     winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ISmsMessage], 

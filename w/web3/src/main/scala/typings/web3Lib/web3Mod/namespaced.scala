@@ -39,7 +39,7 @@ class namespaced () extends Web3 {
 @js.native
 object namespaced extends js.Object {
   var givenProvider: web3Lib.providersMod.Provider = js.native
-  var modules: web3Lib.Anon_Personal = js.native
+  var modules: web3Lib.Anon_Bzz = js.native
   var providers: web3Lib.providersMod.Providers = js.native
   var utils: web3Lib.utilsMod.Utils = js.native
 }

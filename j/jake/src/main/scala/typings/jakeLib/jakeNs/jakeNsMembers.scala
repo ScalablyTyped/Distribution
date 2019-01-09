@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object jakeNsMembers extends js.Object {
   var logger: Logger = js.native
-  var program: jakeLib.Anon_TaskArgs = js.native
+  var program: jakeLib.Anon_EnvVars = js.native
   def addListener(event: java.lang.String, listener: js.Function): nodeLib.NodeJSNs.EventEmitter = js.native
   def cpR(path: java.lang.String, destination: java.lang.String): scala.Unit = js.native
   def cpR(

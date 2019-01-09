@@ -13,7 +13,7 @@ trait BoxConstructor
       Box
     ]
      with org.scalablytyped.runtime.Instantiable1[(/* options */ Options) | (/* options */ java.lang.String), Box] {
-  var defaults: cliDashBoxLib.Anon_Marks_652638396 = js.native
+  var defaults: cliDashBoxLib.Anon_Marks = js.native
   def apply(
     options: (stdLib.Exclude[Options, cliDashBoxLib.cliDashBoxLibStrings.stringify]) with cliDashBoxLib.Anon_Stringify
   ): java.lang.String = js.native

@@ -9,6 +9,6 @@ trait Anon_Optimistic extends js.Object {
   /**
     * Optimistic information
     */
-  var optimistic: Anon_Type
+  var optimistic: Anon_Id
 }
 

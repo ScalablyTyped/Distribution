@@ -150,7 +150,7 @@ trait VictoryAxisProps extends VictoryCommonProps {
     * @example {axis: {stroke: "#756f6a"}, grid: {stroke: "grey"}, ticks: {stroke: "grey"},
     * tickLabels: {fontSize: 10, padding: 5}, axisLabel: {fontSize: 16, padding: 20}}
     */
-  var style: js.UndefOr[victoryLib.Anon_AxisLabelParent] = js.undefined
+  var style: js.UndefOr[victoryLib.Anon_AxisAxisLabel] = js.undefined
   /**
     * The tickComponent prop takes in an entire component which will be used
     * to create tick lines. The new element created from the passed tickComponent
@@ -176,7 +176,7 @@ trait VictoryAxisProps extends VictoryCommonProps {
     * an array of display values for each tickValue.
     * @example d3.time.format("%Y"), (x) => x.toPrecision(2), ["first", "second", "third"]
     */
-  var tickFormat: js.UndefOr[js.Array[_] | victoryLib.Anon_Tick] = js.undefined
+  var tickFormat: js.UndefOr[js.Array[_] | victoryLib.Anon_Index] = js.undefined
   /**
     * The tickLabelComponent prop takes in an entire component which will be used
     * to create the tick labels. The new element created from the passed tickLabelComponent

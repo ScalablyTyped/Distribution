@@ -10,6 +10,6 @@ trait Anon_CodeActionKind extends js.Object {
     * The code action kind is support with the following value
     * set.
     */
-  var codeActionKind: Anon_ValueSetArray
+  var codeActionKind: Anon_ValueSetArrayCodeActionKind
 }
 

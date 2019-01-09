@@ -7,18 +7,6 @@ import scala.scalajs.js.annotation._
 
 object atomLibStrings {
   @js.native
-  sealed trait Cursor extends js.Object
-  
-  @js.native
-  sealed trait Subsequence extends js.Object
-  
-  @js.native
-  sealed trait Symbol extends js.Object
-  
-  @js.native
-  sealed trait Word extends js.Object
-  
-  @js.native
   sealed trait after extends js.Object
   
   @js.native
@@ -44,72 +32,6 @@ object atomLibStrings {
   
   @js.native
   sealed trait `auto top` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTautoActivationDelay` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTbackspaceTriggersAutocomplete` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTbuiltinProviderBlacklist` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTconfirmCompletion` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTconsumeSuffix` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTdefaultProvider` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTenableAutoActivation` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTenableAutoConfirmSingleSuggestion` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTenableBuiltinProvider` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTenableExtendedUnicodeSupport` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTfileBlacklist` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTincludeCompletionsFromAllBuffers` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTmaxVisibleSuggestions` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTminimumWordLength` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTscopeBlacklist` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTsimilarSuggestionRemoval` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTstrictMatching` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTsuggestionListFollows` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTsuppressActivationForEditorClasses` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTuseAlternateScoring` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTuseCoreMovementCommands` extends js.Object
-  
-  @js.native
-  sealed trait `autocomplete-plusDOTuseLocalityBonus` extends js.Object
   
   @js.native
   sealed trait backward extends js.Object
@@ -331,9 +253,6 @@ object atomLibStrings {
   sealed trait editorDOTzoomFontWhenCtrlScrolling extends js.Object
   
   @js.native
-  sealed trait enter extends js.Object
-  
-  @js.native
   sealed trait error extends js.Object
   
   @js.native
@@ -451,24 +370,6 @@ object atomLibStrings {
   sealed trait `line-number` extends js.Object
   
   @js.native
-  sealed trait linterDOTdisabledProviders extends js.Object
-  
-  @js.native
-  sealed trait linterDOTignoreGlob extends js.Object
-  
-  @js.native
-  sealed trait linterDOTlintOnChange extends js.Object
-  
-  @js.native
-  sealed trait linterDOTlintOnChangeInterval extends js.Object
-  
-  @js.native
-  sealed trait linterDOTlintOnOpen extends js.Object
-  
-  @js.native
-  sealed trait linterDOTlintPreviewTabs extends js.Object
-  
-  @js.native
   sealed trait macroman extends js.Object
   
   @js.native
@@ -532,37 +433,13 @@ object atomLibStrings {
   sealed trait stable extends js.Object
   
   @js.native
-  sealed trait `status-barDOTcursorPositionFormat` extends js.Object
-  
-  @js.native
-  sealed trait `status-barDOTfullWidth` extends js.Object
-  
-  @js.native
-  sealed trait `status-barDOTisVisible` extends js.Object
-  
-  @js.native
-  sealed trait `status-barDOTselectionCountFormat` extends js.Object
-  
-  @js.native
   sealed trait success extends js.Object
   
   @js.native
   sealed trait surround extends js.Object
   
   @js.native
-  sealed trait tab extends js.Object
-  
-  @js.native
-  sealed trait `tab always, enter when suggestion explicitly selected` extends js.Object
-  
-  @js.native
-  sealed trait `tab and enter` extends js.Object
-  
-  @js.native
   sealed trait tail extends js.Object
-  
-  @js.native
-  sealed trait textOrSnippet extends js.Object
   
   @js.native
   sealed trait top extends js.Object
@@ -618,10 +495,6 @@ object atomLibStrings {
   @js.native
   sealed trait yes extends js.Object
   
-  def Cursor: Cursor = "Cursor".asInstanceOf[Cursor]
-  def Subsequence: Subsequence = "Subsequence".asInstanceOf[Subsequence]
-  def Symbol: Symbol = "Symbol".asInstanceOf[Symbol]
-  def Word: Word = "Word".asInstanceOf[Word]
   def after: after = "after".asInstanceOf[after]
   def always: always = "always".asInstanceOf[always]
   def atom: atom = "atom".asInstanceOf[atom]
@@ -631,28 +504,6 @@ object atomLibStrings {
   def `auto left`: `auto left` = "auto left".asInstanceOf[`auto left`]
   def `auto right`: `auto right` = "auto right".asInstanceOf[`auto right`]
   def `auto top`: `auto top` = "auto top".asInstanceOf[`auto top`]
-  def `autocomplete-plusDOTautoActivationDelay`: `autocomplete-plusDOTautoActivationDelay` = "autocomplete-plus.autoActivationDelay".asInstanceOf[`autocomplete-plusDOTautoActivationDelay`]
-  def `autocomplete-plusDOTbackspaceTriggersAutocomplete`: `autocomplete-plusDOTbackspaceTriggersAutocomplete` = "autocomplete-plus.backspaceTriggersAutocomplete".asInstanceOf[`autocomplete-plusDOTbackspaceTriggersAutocomplete`]
-  def `autocomplete-plusDOTbuiltinProviderBlacklist`: `autocomplete-plusDOTbuiltinProviderBlacklist` = "autocomplete-plus.builtinProviderBlacklist".asInstanceOf[`autocomplete-plusDOTbuiltinProviderBlacklist`]
-  def `autocomplete-plusDOTconfirmCompletion`: `autocomplete-plusDOTconfirmCompletion` = "autocomplete-plus.confirmCompletion".asInstanceOf[`autocomplete-plusDOTconfirmCompletion`]
-  def `autocomplete-plusDOTconsumeSuffix`: `autocomplete-plusDOTconsumeSuffix` = "autocomplete-plus.consumeSuffix".asInstanceOf[`autocomplete-plusDOTconsumeSuffix`]
-  def `autocomplete-plusDOTdefaultProvider`: `autocomplete-plusDOTdefaultProvider` = "autocomplete-plus.defaultProvider".asInstanceOf[`autocomplete-plusDOTdefaultProvider`]
-  def `autocomplete-plusDOTenableAutoActivation`: `autocomplete-plusDOTenableAutoActivation` = "autocomplete-plus.enableAutoActivation".asInstanceOf[`autocomplete-plusDOTenableAutoActivation`]
-  def `autocomplete-plusDOTenableAutoConfirmSingleSuggestion`: `autocomplete-plusDOTenableAutoConfirmSingleSuggestion` = "autocomplete-plus.enableAutoConfirmSingleSuggestion".asInstanceOf[`autocomplete-plusDOTenableAutoConfirmSingleSuggestion`]
-  def `autocomplete-plusDOTenableBuiltinProvider`: `autocomplete-plusDOTenableBuiltinProvider` = "autocomplete-plus.enableBuiltinProvider".asInstanceOf[`autocomplete-plusDOTenableBuiltinProvider`]
-  def `autocomplete-plusDOTenableExtendedUnicodeSupport`: `autocomplete-plusDOTenableExtendedUnicodeSupport` = "autocomplete-plus.enableExtendedUnicodeSupport".asInstanceOf[`autocomplete-plusDOTenableExtendedUnicodeSupport`]
-  def `autocomplete-plusDOTfileBlacklist`: `autocomplete-plusDOTfileBlacklist` = "autocomplete-plus.fileBlacklist".asInstanceOf[`autocomplete-plusDOTfileBlacklist`]
-  def `autocomplete-plusDOTincludeCompletionsFromAllBuffers`: `autocomplete-plusDOTincludeCompletionsFromAllBuffers` = "autocomplete-plus.includeCompletionsFromAllBuffers".asInstanceOf[`autocomplete-plusDOTincludeCompletionsFromAllBuffers`]
-  def `autocomplete-plusDOTmaxVisibleSuggestions`: `autocomplete-plusDOTmaxVisibleSuggestions` = "autocomplete-plus.maxVisibleSuggestions".asInstanceOf[`autocomplete-plusDOTmaxVisibleSuggestions`]
-  def `autocomplete-plusDOTminimumWordLength`: `autocomplete-plusDOTminimumWordLength` = "autocomplete-plus.minimumWordLength".asInstanceOf[`autocomplete-plusDOTminimumWordLength`]
-  def `autocomplete-plusDOTscopeBlacklist`: `autocomplete-plusDOTscopeBlacklist` = "autocomplete-plus.scopeBlacklist".asInstanceOf[`autocomplete-plusDOTscopeBlacklist`]
-  def `autocomplete-plusDOTsimilarSuggestionRemoval`: `autocomplete-plusDOTsimilarSuggestionRemoval` = "autocomplete-plus.similarSuggestionRemoval".asInstanceOf[`autocomplete-plusDOTsimilarSuggestionRemoval`]
-  def `autocomplete-plusDOTstrictMatching`: `autocomplete-plusDOTstrictMatching` = "autocomplete-plus.strictMatching".asInstanceOf[`autocomplete-plusDOTstrictMatching`]
-  def `autocomplete-plusDOTsuggestionListFollows`: `autocomplete-plusDOTsuggestionListFollows` = "autocomplete-plus.suggestionListFollows".asInstanceOf[`autocomplete-plusDOTsuggestionListFollows`]
-  def `autocomplete-plusDOTsuppressActivationForEditorClasses`: `autocomplete-plusDOTsuppressActivationForEditorClasses` = "autocomplete-plus.suppressActivationForEditorClasses".asInstanceOf[`autocomplete-plusDOTsuppressActivationForEditorClasses`]
-  def `autocomplete-plusDOTuseAlternateScoring`: `autocomplete-plusDOTuseAlternateScoring` = "autocomplete-plus.useAlternateScoring".asInstanceOf[`autocomplete-plusDOTuseAlternateScoring`]
-  def `autocomplete-plusDOTuseCoreMovementCommands`: `autocomplete-plusDOTuseCoreMovementCommands` = "autocomplete-plus.useCoreMovementCommands".asInstanceOf[`autocomplete-plusDOTuseCoreMovementCommands`]
-  def `autocomplete-plusDOTuseLocalityBonus`: `autocomplete-plusDOTuseLocalityBonus` = "autocomplete-plus.useLocalityBonus".asInstanceOf[`autocomplete-plusDOTuseLocalityBonus`]
   def backward: backward = "backward".asInstanceOf[backward]
   def before: before = "before".asInstanceOf[before]
   def beta: beta = "beta".asInstanceOf[beta]
@@ -726,7 +577,6 @@ object atomLibStrings {
   def editorDOTtabType: editorDOTtabType = "editor.tabType".asInstanceOf[editorDOTtabType]
   def editorDOTundoGroupingInterval: editorDOTundoGroupingInterval = "editor.undoGroupingInterval".asInstanceOf[editorDOTundoGroupingInterval]
   def editorDOTzoomFontWhenCtrlScrolling: editorDOTzoomFontWhenCtrlScrolling = "editor.zoomFontWhenCtrlScrolling".asInstanceOf[editorDOTzoomFontWhenCtrlScrolling]
-  def enter: enter = "enter".asInstanceOf[enter]
   def error: error = "error".asInstanceOf[error]
   def eucjp: eucjp = "eucjp".asInstanceOf[eucjp]
   def euckr: euckr = "euckr".asInstanceOf[euckr]
@@ -766,12 +616,6 @@ object atomLibStrings {
   def limited: limited = "limited".asInstanceOf[limited]
   def line: line = "line".asInstanceOf[line]
   def `line-number`: `line-number` = "line-number".asInstanceOf[`line-number`]
-  def linterDOTdisabledProviders: linterDOTdisabledProviders = "linter.disabledProviders".asInstanceOf[linterDOTdisabledProviders]
-  def linterDOTignoreGlob: linterDOTignoreGlob = "linter.ignoreGlob".asInstanceOf[linterDOTignoreGlob]
-  def linterDOTlintOnChange: linterDOTlintOnChange = "linter.lintOnChange".asInstanceOf[linterDOTlintOnChange]
-  def linterDOTlintOnChangeInterval: linterDOTlintOnChangeInterval = "linter.lintOnChangeInterval".asInstanceOf[linterDOTlintOnChangeInterval]
-  def linterDOTlintOnOpen: linterDOTlintOnOpen = "linter.lintOnOpen".asInstanceOf[linterDOTlintOnOpen]
-  def linterDOTlintPreviewTabs: linterDOTlintPreviewTabs = "linter.lintPreviewTabs".asInstanceOf[linterDOTlintPreviewTabs]
   def macroman: macroman = "macroman".asInstanceOf[macroman]
   def manual: manual = "manual".asInstanceOf[manual]
   def modified: modified = "modified".asInstanceOf[modified]
@@ -793,17 +637,9 @@ object atomLibStrings {
   def soft: soft = "soft".asInstanceOf[soft]
   def srgb: srgb = "srgb".asInstanceOf[srgb]
   def stable: stable = "stable".asInstanceOf[stable]
-  def `status-barDOTcursorPositionFormat`: `status-barDOTcursorPositionFormat` = "status-bar.cursorPositionFormat".asInstanceOf[`status-barDOTcursorPositionFormat`]
-  def `status-barDOTfullWidth`: `status-barDOTfullWidth` = "status-bar.fullWidth".asInstanceOf[`status-barDOTfullWidth`]
-  def `status-barDOTisVisible`: `status-barDOTisVisible` = "status-bar.isVisible".asInstanceOf[`status-barDOTisVisible`]
-  def `status-barDOTselectionCountFormat`: `status-barDOTselectionCountFormat` = "status-bar.selectionCountFormat".asInstanceOf[`status-barDOTselectionCountFormat`]
   def success: success = "success".asInstanceOf[success]
   def surround: surround = "surround".asInstanceOf[surround]
-  def tab: tab = "tab".asInstanceOf[tab]
-  def `tab always, enter when suggestion explicitly selected`: `tab always, enter when suggestion explicitly selected` = "tab always, enter when suggestion explicitly selected".asInstanceOf[`tab always, enter when suggestion explicitly selected`]
-  def `tab and enter`: `tab and enter` = "tab and enter".asInstanceOf[`tab and enter`]
   def tail: tail = "tail".asInstanceOf[tail]
-  def textOrSnippet: textOrSnippet = "textOrSnippet".asInstanceOf[textOrSnippet]
   def top: top = "top".asInstanceOf[top]
   def touch: touch = "touch".asInstanceOf[touch]
   def undecided: undecided = "undecided".asInstanceOf[undecided]

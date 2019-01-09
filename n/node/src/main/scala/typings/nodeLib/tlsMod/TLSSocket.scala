@@ -13,7 +13,7 @@ class TLSSocket protected ()
     * Construct a new tls.TLSSocket object from an existing TCP socket.
     */
   def this(socket: nodeLib.netMod.Socket) = this()
-  def this(socket: nodeLib.netMod.Socket, options: nodeLib.Anon_Server) = this()
+  def this(socket: nodeLib.netMod.Socket, options: nodeLib.Anon_ALPNProtocols) = this()
   /**
     * String containing the selected ALPN protocol.
     * When ALPN has no selected protocol, tlsSocket.alpnProtocol equals false.
@@ -123,7 +123,7 @@ class TLSSocket protected ()
     * is successfully completed.
     */
   def renegotiate(
-    options: nodeLib.Anon_RequestCert,
+    options: nodeLib.Anon_RejectUnauthorizedRequestCert,
     callback: js.Function1[/* err */ nodeLib.Error | scala.Null, scala.Unit]
   ): js.Any = js.native
   /**

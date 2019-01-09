@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Driver extends js.Object {
   var events: DriverEvents = js.native
-  def exec(args: browserDashHarnessLib.Anon_Func): js.Any = js.native
-  def exec(args: browserDashHarnessLib.Anon_Func, callback: js.Function): js.Any = js.native
+  def exec(args: browserDashHarnessLib.Anon_Args): js.Any = js.native
+  def exec(args: browserDashHarnessLib.Anon_Args, callback: js.Function): js.Any = js.native
   def exec(func: js.Function): js.Any = js.native
   def exec(func: js.Function, callback: js.Function): js.Any = js.native
   def find(selector: java.lang.String): ElementProxy = js.native

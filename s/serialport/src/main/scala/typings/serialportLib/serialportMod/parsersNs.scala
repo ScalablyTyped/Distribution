@@ -21,19 +21,19 @@ object parsersNs extends js.Object {
   @js.native
   class Delimiter protected ()
     extends serialportLib.serialportMod.SerialPortNs.parsersNs.Delimiter {
-    def this(options: serialportLib.Anon_DelimiterIncludeDelimiter) = this()
+    def this(options: serialportLib.Anon_Delimiter) = this()
   }
   
   @js.native
   class Readline protected ()
     extends serialportLib.serialportMod.SerialPortNs.parsersNs.Readline {
-    def this(options: serialportLib.Anon_DelimiterEncoding) = this()
+    def this(options: serialportLib.Anon_Ascii) = this()
   }
   
   @js.native
   class Ready protected ()
     extends serialportLib.serialportMod.SerialPortNs.parsersNs.Ready {
-    def this(options: serialportLib.Anon_Delimiter) = this()
+    def this(options: serialportLib.Anon_DelimiterArray) = this()
   }
   
   @js.native

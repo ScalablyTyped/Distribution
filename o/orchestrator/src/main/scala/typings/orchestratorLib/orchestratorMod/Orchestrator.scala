@@ -71,7 +71,7 @@ trait Orchestrator
     */
   def onAll(cb: js.Function1[/* e */ orchestratorLib.orchestratorMod.OrchestratorNs.OnAllCallbackEvent, _]): scala.Unit = js.native
   def reset(): Orchestrator = js.native
-  def sequence(tasks: js.Array[orchestratorLib.Anon_Dep], names: js.Array[java.lang.String]): orchestratorLib.Anon_RecursiveDependencies = js.native
+  def sequence(tasks: js.Array[orchestratorLib.Anon_Dep], names: js.Array[java.lang.String]): orchestratorLib.Anon_MissingTasks = js.native
   // TODO: TypeScript 2.1.5 cannot express varargs followed by callback as a last argument...
   def start(
     task1: orchestratorLib.orchestratorMod.OrchestratorNs.Strings,

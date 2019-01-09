@@ -36,7 +36,7 @@ object fsDashExtraDashPModMembers extends js.Object {
   def createReadStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoClose): nodeLib.fsMod.ReadStream = js.native
   def createWriteStream(path: nodeLib.fsMod.PathLike): nodeLib.fsMod.WriteStream = js.native
   def createWriteStream(path: nodeLib.fsMod.PathLike, options: java.lang.String): nodeLib.fsMod.WriteStream = js.native
-  def createWriteStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoCloseFlags): nodeLib.fsMod.WriteStream = js.native
+  def createWriteStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoCloseEncoding): nodeLib.fsMod.WriteStream = js.native
   def deleteFile(path: java.lang.String): js.Promise[_] = js.native
   def deleteFile(path: java.lang.String, ignoreIfNotExists: scala.Boolean): js.Promise[_] = js.native
   def emptyDir(path: java.lang.String): js.Promise[scala.Unit] = js.native

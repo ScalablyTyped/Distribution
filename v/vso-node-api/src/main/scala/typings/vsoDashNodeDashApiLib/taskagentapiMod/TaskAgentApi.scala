@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(vsoDashNodeDashApiLib.taskagentapiMod.ITaskAgentApi because Would inherit conflicting mutable fields List(baseUrl, http, rest, userAgent, vsoClient))*/
-@JSImport("vso-node-api/TaskAgentApi", "TaskAgentApi")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- vsoDashNodeDashApiLib.taskagentapiMod.ITaskAgentApi because var conflicts: baseUrl, http, rest, userAgent, vsoClient. Inlined uploadTaskDefinition */ @JSImport("vso-node-api/TaskAgentApi", "TaskAgentApi")
 @js.native
 class TaskAgentApi protected ()
   extends vsoDashNodeDashApiLib.taskagentapibaseMod.TaskAgentApiBase {

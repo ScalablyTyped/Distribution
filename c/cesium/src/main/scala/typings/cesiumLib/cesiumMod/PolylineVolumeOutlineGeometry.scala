@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PolylineVolumeOutlineGeometry protected ()
   extends cesiumLib.cesiumMod.CesiumNs.PolylineVolumeOutlineGeometry {
-  def this(options: cesiumLib.Anon_PolylinePositions) = this()
+  def this(options: cesiumLib.Anon_CornerTypeEllipsoidGranularityPolylinePositions) = this()
 }
 
 @JSImport("cesium", "PolylineVolumeOutlineGeometry")

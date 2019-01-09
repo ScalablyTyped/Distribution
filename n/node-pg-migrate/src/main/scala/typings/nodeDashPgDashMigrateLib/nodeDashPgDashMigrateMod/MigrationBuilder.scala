@@ -29,7 +29,7 @@ trait MigrationBuilder extends js.Object {
   def addType(typeName: Name, values: org.scalablytyped.runtime.StringDictionary[Type]): scala.Unit = js.native
   def addTypeAttribute(typeName: Name, attributeName: java.lang.String, attributeType: Type): scala.Unit = js.native
   def addTypeValue(typeName: Name, value: Value): scala.Unit = js.native
-  def addTypeValue(typeName: Name, value: Value, options: nodeDashPgDashMigrateLib.Anon_IfNotExistsAfter): scala.Unit = js.native
+  def addTypeValue(typeName: Name, value: Value, options: nodeDashPgDashMigrateLib.Anon_After): scala.Unit = js.native
   def alterColumn(tableName: Name, columnName: java.lang.String, options: ColumnOptions): scala.Unit = js.native
   def alterDomain(domainName: Name, domainOptions: DomainOptionsAlter): scala.Unit = js.native
   def alterMaterializedView(viewName: Name, options: AlterMaterializedViewOptions): scala.Unit = js.native
@@ -83,7 +83,7 @@ trait MigrationBuilder extends js.Object {
   def createRole(roleName: Name, roleOptions: RoleOptions): scala.Unit = js.native
   // Schemas
   def createSchema(schemaName: java.lang.String): scala.Unit = js.native
-  def createSchema(schemaName: java.lang.String, schemaOptions: nodeDashPgDashMigrateLib.Anon_IfNotExists): scala.Unit = js.native
+  def createSchema(schemaName: java.lang.String, schemaOptions: nodeDashPgDashMigrateLib.Anon_Authorization): scala.Unit = js.native
   // Sequences
   def createSequence(sequenceName: Name): scala.Unit = js.native
   def createSequence(sequenceName: Name, sequenceOptions: SequenceOptionsCreate): scala.Unit = js.native

@@ -35,9 +35,9 @@ trait SignaleBase[TTypes /* <: java.lang.String */] extends js.Object {
     * @param label Label corresponding to the timer, each timer has its own unique label.
     * @param span Total running time.
     */
-  def timeEnd(): signaleLib.Anon_Span = js.native
-  def timeEnd(label: java.lang.String): signaleLib.Anon_Span = js.native
-  def timeEnd(label: java.lang.String, span: scala.Double): signaleLib.Anon_Span = js.native
+  def timeEnd(): signaleLib.Anon_Label = js.native
+  def timeEnd(label: java.lang.String): signaleLib.Anon_Label = js.native
+  def timeEnd(label: java.lang.String, span: scala.Double): signaleLib.Anon_Label = js.native
   /** Clears the scope name of the logger. */
   def unscope(): scala.Unit = js.native
 }

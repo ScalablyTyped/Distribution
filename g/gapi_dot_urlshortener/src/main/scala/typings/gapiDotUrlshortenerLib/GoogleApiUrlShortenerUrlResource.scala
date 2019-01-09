@@ -9,7 +9,7 @@ trait GoogleApiUrlShortenerUrlResource extends js.Object {
   /**
     * A summary of the click analytics for the short and long URL. Might not be present if not requested or currently unavailable.
     */
-  var analytics: Anon_TwoHours
+  var analytics: Anon_AllTime
   /**
     * Time the short URL was created; ISO 8601 representation using the yyyy-MM-dd'T'HH:mm:ss.SSSZZ format.
     */

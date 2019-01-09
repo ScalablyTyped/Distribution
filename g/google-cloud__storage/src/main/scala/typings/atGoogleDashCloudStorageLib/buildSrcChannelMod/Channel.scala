@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
   * const storage = new Storage();
   * const channel = storage.channel('id', 'resource-id');
   */
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any
 - Dropped any */ @JSImport("@google-cloud/storage/build/src/channel", "Channel")
 @js.native

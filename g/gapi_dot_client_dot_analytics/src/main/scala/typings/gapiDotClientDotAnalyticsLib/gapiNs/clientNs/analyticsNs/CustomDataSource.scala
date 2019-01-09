@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait CustomDataSource extends js.Object {
   /** Account ID to which this custom data source belongs. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
-  var childLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Type] = js.undefined
+  var childLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Href] = js.undefined
   /** Time this custom data source was created. */
   var created: js.UndefOr[java.lang.String] = js.undefined
   /** Description of custom data source. */
@@ -21,7 +21,7 @@ trait CustomDataSource extends js.Object {
   /** Name of this custom data source. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** Parent link for this custom data source. Points to the web property to which this custom data source belongs. */
-  var parentLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Type] = js.undefined
+  var parentLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Href] = js.undefined
   /** IDs of views (profiles) linked to the custom data source. */
   var profilesLinked: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Collection of schema headers of the custom data source. */

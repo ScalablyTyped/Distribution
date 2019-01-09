@@ -45,7 +45,7 @@ trait IDetailsRowBaseProps
   /**
     * A list of events to register
     */
-  var eventsToRegister: js.UndefOr[js.Array[officeDashUiDashFabricDashReactLib.Anon_EventName]] = js.undefined
+  var eventsToRegister: js.UndefOr[js.Array[officeDashUiDashFabricDashReactLib.Anon_CallbackEvent]] = js.undefined
   /**
     * Callback for getting the row aria-describedby
     */

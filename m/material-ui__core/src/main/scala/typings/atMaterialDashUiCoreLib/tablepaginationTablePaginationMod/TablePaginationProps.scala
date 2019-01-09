@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<@material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationBaseProps, std.Exclude<keyof @material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationBaseProps, 'classes' | 'component'>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationBaseProps, @material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationClassKey, 'component'>) */ @js.native
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationBaseProps, 'classes' | 'component'> ]: @material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationBaseProps[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationBaseProps, @material-ui/core.@material-ui/core/TablePagination/TablePagination.TablePaginationClassKey, 'component'>) */ @js.native
 trait TablePaginationProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TablePaginationClassKey] {
   var ActionsComponent: js.UndefOr[

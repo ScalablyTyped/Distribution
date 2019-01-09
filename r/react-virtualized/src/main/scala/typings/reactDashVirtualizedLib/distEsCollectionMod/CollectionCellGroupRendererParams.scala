@@ -5,9 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait CollectionCellGroupRendererParams extends js.Object {
-  var cellRenderer: CollectionCellRenderer
-  var cellSizeAndPositionGetter: CollectionCellSizeAndPositionGetter
-  var indices: js.Array[scala.Double]
+  @JSName("cellRenderer")
+  var cellRenderer_Original: CollectionCellRenderer = js.native
+  @JSName("cellSizeAndPositionGetter")
+  var cellSizeAndPositionGetter_Original: CollectionCellSizeAndPositionGetter = js.native
+  var indices: js.Array[scala.Double] = js.native
+  def cellRenderer(params: CollectionCellRendererParams): reactLib.reactMod.ReactNs.ReactNode = js.native
+  def cellSizeAndPositionGetter(params: reactDashVirtualizedLib.reactDashVirtualizedMod.Index): CollectionCellSizeAndPosition = js.native
 }
 

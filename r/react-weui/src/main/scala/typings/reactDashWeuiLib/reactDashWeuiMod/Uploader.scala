@@ -19,6 +19,6 @@ class Uploader protected () extends js.Object {
 @JSImport("react-weui", "Uploader")
 @js.native
 object Uploader extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_OnChange = js.native
+  var defaultProps: reactDashWeuiLib.Anon_Files = js.native
 }
 

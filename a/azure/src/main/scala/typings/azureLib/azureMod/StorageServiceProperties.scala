@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StorageServiceProperties extends js.Object {
   var DefaultServiceVersion: java.lang.String
-  var Logging: azureLib.Anon_Read
-  var Metrics: azureLib.Anon_EnabledVersion
+  var Logging: azureLib.Anon_Delete
+  var Metrics: azureLib.Anon_Enabled
 }
 

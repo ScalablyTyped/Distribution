@@ -199,7 +199,7 @@ trait RouteOptions extends js.Object {
     * Timeouts for processing durations.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionstimeout)
     */
-  var timeout: js.UndefOr[hapiLib.Anon_Socket] = js.undefined
+  var timeout: js.UndefOr[hapiLib.Anon_Server] = js.undefined
   /**
     * Default value: { headers: true, params: true, query: true, payload: true, failAction: 'error' }.
     * Request input validation rules for various request components.

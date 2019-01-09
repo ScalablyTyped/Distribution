@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object cliDashTruncateMod extends js.Object {
   def apply(input: java.lang.String, columns: scala.Double): java.lang.String = js.native
-  def apply(input: java.lang.String, columns: scala.Double, options: cliDashTruncateLib.Anon_Position): java.lang.String = js.native
+  def apply(input: java.lang.String, columns: scala.Double, options: cliDashTruncateLib.Anon_End): java.lang.String = js.native
 }
 

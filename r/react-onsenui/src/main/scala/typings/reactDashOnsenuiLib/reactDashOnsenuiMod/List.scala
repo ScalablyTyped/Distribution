@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "List")
 @js.native
 class List ()
-  extends Component[reactDashOnsenuiLib.Anon_RenderFooter, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_DataSource, js.Any]
 

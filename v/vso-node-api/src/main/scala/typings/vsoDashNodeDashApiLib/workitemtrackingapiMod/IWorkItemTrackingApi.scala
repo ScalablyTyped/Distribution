@@ -385,8 +385,8 @@ trait IWorkItemTrackingApi
   def getWorkItemTypeCategory(project: java.lang.String, category: java.lang.String): js.Promise[
     vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeCategory
   ] = js.native
-  def getWorkItemTypeColorAndIcons(projectNames: js.Array[java.lang.String]): js.Promise[js.Array[vsoDashNodeDashApiLib.Anon_KeyValueStringArray]] = js.native
-  def getWorkItemTypeColors(projectNames: js.Array[java.lang.String]): js.Promise[js.Array[vsoDashNodeDashApiLib.Anon_KeyValueStringArrayWorkItemTypeColor]] = js.native
+  def getWorkItemTypeColorAndIcons(projectNames: js.Array[java.lang.String]): js.Promise[js.Array[vsoDashNodeDashApiLib.Anon_KeyValue]] = js.native
+  def getWorkItemTypeColors(projectNames: js.Array[java.lang.String]): js.Promise[js.Array[vsoDashNodeDashApiLib.Anon_Key]] = js.native
   def getWorkItemTypeField(project: java.lang.String, `type`: java.lang.String, field: java.lang.String): js.Promise[
     vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeFieldInstance
   ] = js.native

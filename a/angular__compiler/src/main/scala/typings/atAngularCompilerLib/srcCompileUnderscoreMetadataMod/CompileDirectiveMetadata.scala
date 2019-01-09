@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/compile_metadata", "CompileDirectiveMetadata")
 @js.native
 class CompileDirectiveMetadata protected () extends js.Object {
-  def this(hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostListenersHostPropertiesHostAttributesProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory: atAngularCompilerLib.Anon_EntryComponents) = this()
+  def this(hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostListenersHostPropertiesHostAttributesProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory: atAngularCompilerLib.Anon_ChangeDetectionComponentFactory) = this()
   var changeDetection: atAngularCompilerLib.srcCoreMod.ChangeDetectionStrategy | scala.Null = js.native
   var componentFactory: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol | js.Object | scala.Null = js.native
   var componentViewType: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol | ProxyClass | scala.Null = js.native
@@ -37,7 +37,7 @@ class CompileDirectiveMetadata protected () extends js.Object {
 @js.native
 object CompileDirectiveMetadata extends js.Object {
   def create(
-    hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory: atAngularCompilerLib.Anon_EntryComponentsComponentViewType
+    hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory: atAngularCompilerLib.Anon_ChangeDetection
   ): atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileDirectiveMetadata = js.native
 }
 

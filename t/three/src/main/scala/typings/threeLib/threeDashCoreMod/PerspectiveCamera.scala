@@ -40,7 +40,7 @@ class PerspectiveCamera () extends Camera {
   var near: scala.Double = js.native
   @JSName("type")
   var type_PerspectiveCamera: threeLib.threeLibStrings.PerspectiveCamera = js.native
-  var view: scala.Null | threeLib.Anon_FullWidth = js.native
+  var view: scala.Null | threeLib.Anon_Enabled = js.native
   var zoom: scala.Double = js.native
   def clearViewOffset(): scala.Unit = js.native
   def getEffectiveFOV(): scala.Double = js.native

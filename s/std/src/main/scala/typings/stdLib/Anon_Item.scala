@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Item[T] extends js.Object {
-  def Item(index: js.Any): T
+trait Anon_Item extends js.Object {
+  var length: scala.Double
+  def Item(n: scala.Double): java.lang.String
 }
 

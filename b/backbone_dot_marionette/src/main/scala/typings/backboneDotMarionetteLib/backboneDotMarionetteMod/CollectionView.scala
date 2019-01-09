@@ -12,7 +12,7 @@ class CollectionView[TModel /* <: backboneLib.backboneMod.Model */, TView /* <: 
   /**
     * Specify a child view to use.
     */
-  var childView: (js.Function1[/* model */ TModel, backboneDotMarionetteLib.Anon_ArgsAny[TView]]) | backboneDotMarionetteLib.Anon_ArgsAny[TView] = js.native
+  var childView: (js.Function1[/* model */ TModel, backboneDotMarionetteLib.Anon_Args[TView]]) | backboneDotMarionetteLib.Anon_Args[TView] = js.native
   /**
     * Use the childViewEvents attribute to map child events to methods on the
     * parent view.
@@ -42,7 +42,7 @@ class CollectionView[TModel /* <: backboneLib.backboneMod.Model */, TView /* <: 
   /**
     * Specify a view to use if the collection has no children.
     */
-  var emptyView: js.Function0[backboneDotMarionetteLib.Anon_Args[TModel]] | backboneDotMarionetteLib.Anon_Args[TModel] = js.native
+  var emptyView: js.Function0[backboneDotMarionetteLib.Anon_ArgsAny[TModel]] | backboneDotMarionetteLib.Anon_ArgsAny[TModel] = js.native
   /**
     * Define options to pass to the emptyView constructor.
     */
@@ -78,7 +78,7 @@ class CollectionView[TModel /* <: backboneLib.backboneMod.Model */, TView /* <: 
     */
   def buildChildView(
     child: TModel,
-    childViewClass: backboneDotMarionetteLib.Anon_ArgsAny[TView],
+    childViewClass: backboneDotMarionetteLib.Anon_Args[TView],
     childViewOptions: ViewOptions[TModel]
   ): scala.Unit = js.native
   /**

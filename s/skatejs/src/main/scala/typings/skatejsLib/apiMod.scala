@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("skatejs/api", JSImport.Namespace)
 @js.native
 object apiMod extends js.Object {
-  val props: stdLib.Readonly[skatejsLib.Anon_Number] = js.native
+  val props: stdLib.Readonly[skatejsLib.Anon_Any] = js.native
   def define[T /* <: skatejsLib.typesMod.HTMLElementClass */](ctor: T): T = js.native
   def emit(elem: skatejsLib.typesMod.HTMLElementClass, eventName: java.lang.String): scala.Boolean = js.native
   def emit(
@@ -32,12 +32,8 @@ object apiMod extends js.Object {
   def shadow(elem: stdLib.HTMLElement): stdLib.ShadowRoot = js.native
   def withChildren[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](): skatejsLib.typesMod.Constructor[skatejsLib.typesMod.WithChildren] with T = js.native
   def withChildren[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](Base: T): skatejsLib.typesMod.Constructor[skatejsLib.typesMod.WithChildren] with T = js.native
-  def withComponent[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](): org.scalablytyped.runtime.Instantiable0[
-    skatejsLib.typesMod.WithComponent[skatejsLib.typesMod.Mixed, skatejsLib.typesMod.Mixed, skatejsLib.typesMod.Mixed]
-  ] = js.native
-  def withComponent[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](Base: T): org.scalablytyped.runtime.Instantiable0[
-    skatejsLib.typesMod.WithComponent[skatejsLib.typesMod.Mixed, skatejsLib.typesMod.Mixed, skatejsLib.typesMod.Mixed]
-  ] = js.native
+  def withComponent[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](): skatejsLib.Anon_ObservedAttributes = js.native
+  def withComponent[T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](Base: T): skatejsLib.Anon_ObservedAttributes = js.native
   @JSName("withComponent")
   def `withComponent_PSCTConstructor<intersection>`[P, S, C, T /* <: skatejsLib.typesMod.Constructor[stdLib.HTMLElement] */](): (skatejsLib.typesMod.Constructor[skatejsLib.typesMod.WithComponent[P, S, C]]) with T = js.native
   @JSName("withComponent")

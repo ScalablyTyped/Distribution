@@ -76,7 +76,7 @@ trait Condition[T, P /* <: java.lang.String */]
   @JSName("$size")
   var $size: js.UndefOr[scala.Double] = js.undefined
   @JSName("$text")
-  var $text: js.UndefOr[mongodbLib.Anon_Search] = js.undefined
+  var $text: js.UndefOr[mongodbLib.Anon_CaseSensitive] = js.undefined
   @JSName("$where")
   var $where: js.Object
 }

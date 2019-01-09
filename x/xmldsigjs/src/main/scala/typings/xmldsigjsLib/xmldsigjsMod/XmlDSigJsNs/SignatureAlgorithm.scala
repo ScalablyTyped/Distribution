@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.ISignatureAlgorithm because Would inherit conflicting mutable fields List(algorithm, namespaceURI))*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.ISignatureAlgorithm because var conflicts: algorithm, namespaceURI. Inlined Sign, Verify, Verify */ @js.native
 trait SignatureAlgorithm extends XmlAlgorithm {
   /**
     * Sign the given string using the given key

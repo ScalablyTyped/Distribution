@@ -34,6 +34,6 @@ trait BrowserWindows
     * @param options.isPrivate determines whether the new window should be private or not
     */
   def open(options: java.lang.String): jpmLib.FFAddonSDKNs.BrowserWindow = js.native
-  def open(options: jpmLib.Anon_OnActivate): jpmLib.FFAddonSDKNs.BrowserWindow = js.native
+  def open(options: jpmLib.Anon_IsPrivate): jpmLib.FFAddonSDKNs.BrowserWindow = js.native
 }
 

@@ -17,7 +17,7 @@ class ReverseGeocode ()
   def run(
     callback: js.Function3[
       /* error */ js.UndefOr[_], 
-      /* results */ esriDashLeafletDashGeocoderLib.Anon_Latlng, 
+      /* results */ esriDashLeafletDashGeocoderLib.Anon_Address, 
       /* response */ js.Any, 
       scala.Unit
     ]
@@ -25,7 +25,7 @@ class ReverseGeocode ()
   def run(
     callback: js.Function3[
       /* error */ js.UndefOr[_], 
-      /* results */ esriDashLeafletDashGeocoderLib.Anon_Latlng, 
+      /* results */ esriDashLeafletDashGeocoderLib.Anon_Address, 
       /* response */ js.Any, 
       scala.Unit
     ],

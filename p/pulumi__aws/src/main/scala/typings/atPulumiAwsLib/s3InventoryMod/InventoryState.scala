@@ -13,7 +13,9 @@ trait InventoryState extends js.Object {
   /**
     * Destination bucket where inventory list files are written (documented below).
     */
-  val destination: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketInput]] = js.undefined
+  val destination: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketAnonAccountIdBucketArn]
+  ] = js.undefined
   /**
     * Specifies whether the inventory is enabled or disabled.
     */
@@ -21,7 +23,7 @@ trait InventoryState extends js.Object {
   /**
     * Object filtering that accepts a prefix (documented below).
     */
-  val filter: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PrefixInput]] = js.undefined
+  val filter: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PrefixInputString]] = js.undefined
   /**
     * Object filtering that accepts a prefix (documented below). Can be `All` or `Current`.
     */
@@ -39,6 +41,6 @@ trait InventoryState extends js.Object {
   /**
     * Contains the frequency for generating inventory results (documented below).
     */
-  val schedule: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Frequency]] = js.undefined
+  val schedule: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FrequencyInput]] = js.undefined
 }
 

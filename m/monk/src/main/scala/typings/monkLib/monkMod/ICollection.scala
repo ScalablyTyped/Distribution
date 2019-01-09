@@ -33,13 +33,13 @@ class ICollection[T] () extends js.Object {
   def distinct(field: java.lang.String, query: TQuery): js.Promise[scala.Double] = js.native
   def distinct(field: java.lang.String, query: TQuery, options: js.Object): js.Promise[scala.Double] = js.native
   def drop(): js.Promise[(monkLib.monkLibStrings.`ns not found`) | monkLib.monkLibNumbers.`true`] = js.native
-  def dropIndex(): js.Promise[monkLib.Anon_Ok] = js.native
-  def dropIndex(fields: TFields): js.Promise[monkLib.Anon_Ok] = js.native
-  def dropIndex(fields: TFields, options: js.Object): js.Promise[monkLib.Anon_Ok] = js.native
-  def dropIndexes(): js.Promise[monkLib.Anon_Msg] = js.native
-  def find[U](): js.Promise[js.Array[U]] with monkLib.Anon_Each[U] = js.native
-  def find[U](query: TQuery): js.Promise[js.Array[U]] with monkLib.Anon_Each[U] = js.native
-  def find[U](query: TQuery, options: js.Object): js.Promise[js.Array[U]] with monkLib.Anon_Each[U] = js.native
+  def dropIndex(): js.Promise[monkLib.Anon_0] = js.native
+  def dropIndex(fields: TFields): js.Promise[monkLib.Anon_0] = js.native
+  def dropIndex(fields: TFields, options: js.Object): js.Promise[monkLib.Anon_0] = js.native
+  def dropIndexes(): js.Promise[monkLib.Anon_01] = js.native
+  def find[U](): js.Promise[js.Array[U]] with monkLib.Anon_Cursor[U] = js.native
+  def find[U](query: TQuery): js.Promise[js.Array[U]] with monkLib.Anon_Cursor[U] = js.native
+  def find[U](query: TQuery, options: js.Object): js.Promise[js.Array[U]] with monkLib.Anon_Cursor[U] = js.native
   def findOne[U](): js.Promise[js.UndefOr[U]] = js.native
   def findOne[U](query: TQuery): js.Promise[js.UndefOr[U]] = js.native
   def findOne[U](query: TQuery, options: js.Object): js.Promise[js.UndefOr[U]] = js.native
@@ -86,12 +86,12 @@ class ICollection[T] () extends js.Object {
     reduce: js.Function2[/* key */ java.lang.String, /* values */ js.Array[_], _],
     options: js.Object
   ): js.Promise[_] = js.native
-  def remove(): js.Promise[monkLib.Anon_Result] = js.native
-  def remove(query: TQuery): js.Promise[monkLib.Anon_Result] = js.native
-  def remove(query: TQuery, options: js.Object): js.Promise[monkLib.Anon_Result] = js.native
-  def stats(): js.Promise[monkLib.Anon_AvgObjSize] = js.native
-  def stats(options: js.Object): js.Promise[monkLib.Anon_AvgObjSize] = js.native
-  def update(query: TQuery, update: js.Object): js.Promise[monkLib.Anon_NNModified] = js.native
-  def update(query: TQuery, update: js.Object, options: js.Object): js.Promise[monkLib.Anon_NNModified] = js.native
+  def remove(): js.Promise[monkLib.Anon_DeletedCount] = js.native
+  def remove(query: TQuery): js.Promise[monkLib.Anon_DeletedCount] = js.native
+  def remove(query: TQuery, options: js.Object): js.Promise[monkLib.Anon_DeletedCount] = js.native
+  def stats(): js.Promise[monkLib.Anon_01AvgObjSize] = js.native
+  def stats(options: js.Object): js.Promise[monkLib.Anon_01AvgObjSize] = js.native
+  def update(query: TQuery, update: js.Object): js.Promise[monkLib.Anon_01NNModified] = js.native
+  def update(query: TQuery, update: js.Object, options: js.Object): js.Promise[monkLib.Anon_01NNModified] = js.native
 }
 

@@ -14,7 +14,7 @@ trait JackRabbit
   def direct(name: java.lang.String): Exchange = js.native
   def fanout(): Exchange = js.native
   def fanout(name: java.lang.String): Exchange = js.native
-  def getInternals(): jackrabbitLib.Anon_Connection = js.native
+  def getInternals(): jackrabbitLib.Anon_Amqp = js.native
   def topic(): Exchange = js.native
   def topic(name: java.lang.String): Exchange = js.native
 }

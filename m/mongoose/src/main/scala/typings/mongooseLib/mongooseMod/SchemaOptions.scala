@@ -13,7 +13,7 @@ trait SchemaOptions extends js.Object {
   /** defaults to true */
   var bufferCommands: js.UndefOr[scala.Boolean] = js.undefined
   /** defaults to false */
-  var capped: js.UndefOr[scala.Boolean | scala.Double | mongooseLib.Anon_Max] = js.undefined
+  var capped: js.UndefOr[scala.Boolean | scala.Double | mongooseLib.Anon_AutoIndexId] = js.undefined
   /** Sets a default collation for every query and aggregation. */
   var collation: js.UndefOr[CollationOptions] = js.undefined
   /** no default */
@@ -29,7 +29,7 @@ trait SchemaOptions extends js.Object {
   var minimize: js.UndefOr[scala.Boolean] = js.undefined
   var read: js.UndefOr[java.lang.String] = js.undefined
   /** defaults to true. */
-  var safe: js.UndefOr[scala.Boolean | mongooseLib.Anon_W] = js.undefined
+  var safe: js.UndefOr[scala.Boolean | mongooseLib.Anon_J] = js.undefined
   /** defaults to null */
   var shardKey: js.UndefOr[scala.Boolean] = js.undefined
   /**

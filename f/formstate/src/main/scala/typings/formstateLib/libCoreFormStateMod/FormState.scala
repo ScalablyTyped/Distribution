@@ -62,7 +62,7 @@ class FormState[TValue /* <: ValidatableMapOrArray */] protected ()
   def disableAutoValidation(): scala.Unit = js.native
   /* CompleteClass */
   override def enableAutoValidation(): scala.Unit = js.native
-  def enableAutoValidationAndValidate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_HasErrorFalseValueTValue[TValue]] = js.native
+  def enableAutoValidationAndValidate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_FalseHasError[TValue]] = js.native
   /** Get validatable objects from $ */
   /* protected */ def getValues(): js.Array[formstateLib.libCoreTypesMod.ComposibleValidatable[_]] = js.native
   /** Used to tell the parent about validation */
@@ -79,7 +79,7 @@ class FormState[TValue /* <: ValidatableMapOrArray */] protected ()
   /* CompleteClass */
   override def setCompositionParent(config: formstateLib.Anon_OnChangeAfterValidation): scala.Unit = js.native
   /* CompleteClass */
-  override def validate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_HasErrorFalseValue[TValue]] = js.native
+  override def validate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_False[TValue]] = js.native
   def validators(validators: formstateLib.libCoreTypesMod.Validator[TValue]*): this.type = js.native
 }
 

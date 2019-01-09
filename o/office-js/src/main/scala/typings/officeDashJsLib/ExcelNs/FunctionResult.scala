@@ -47,7 +47,7 @@ class FunctionResult[T] ()
   def load(): FunctionResult[T] = js.native
   def load(option: java.lang.String): FunctionResult[T] = js.native
   def load(option: js.Array[java.lang.String]): FunctionResult[T] = js.native
-  def load(option: officeDashJsLib.Anon_Select): FunctionResult[T] = js.native
+  def load(option: officeDashJsLib.Anon_Expand): FunctionResult[T] = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.FunctionResultLoadOptions): FunctionResult[T] = js.native
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.FunctionResultData[T] = js.native
 }

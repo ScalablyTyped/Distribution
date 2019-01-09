@@ -77,7 +77,7 @@ trait Actions[R] extends js.Object {
     * @param point
     * @example await element(by.id('tappable')).tapAtPoint({ x:5, y:10 });
     */
-  def tapAtPoint(point: detoxLib.Anon_Y): js.Promise[Actions[R]] = js.native
+  def tapAtPoint(point: detoxLib.Anon_X): js.Promise[Actions[R]] = js.native
   /**
     * Use the builtin keyboard to type text into a text field.
     * @param text

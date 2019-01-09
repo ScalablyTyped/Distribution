@@ -21,7 +21,7 @@ trait ProductCollection
     * - attachment: An image attached to a shop's theme returned as Base64-encoded binary data.
     * - src: Source URL that specifies the location of the image.
     */
-  var image: js.UndefOr[shopifyDashPrimeLib.Anon_Src] = js.undefined
+  var image: js.UndefOr[shopifyDashPrimeLib.Anon_Attachment] = js.undefined
   /**
     * This can have two different types of values, depending on whether the collection has been published (i.e., made visible to customers):
     * - If the collection is published, this value is the date and time when it was published. The API returns this value in ISO 8601 format.

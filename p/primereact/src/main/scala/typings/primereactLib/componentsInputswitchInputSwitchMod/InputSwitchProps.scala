@@ -12,7 +12,7 @@ trait InputSwitchProps extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var offLabel: js.UndefOr[java.lang.String] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValueBoolean, scala.Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
   var onLabel: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined

@@ -35,22 +35,22 @@ object MongoNs extends js.Object {
       keys: org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String],
       options: org.scalablytyped.runtime.StringDictionary[js.Any]
     ): scala.Unit = js.native
-    def allow(options: meteorLib.Anon_Insert[T]): scala.Boolean = js.native
-    def deny(options: meteorLib.Anon_Insert[T]): scala.Boolean = js.native
+    def allow(options: meteorLib.Anon_Doc[T]): scala.Boolean = js.native
+    def deny(options: meteorLib.Anon_Doc[T]): scala.Boolean = js.native
     def find(): Cursor[T] = js.native
     def find(selector: java.lang.String): Cursor[T] = js.native
-    def find(selector: java.lang.String, options: meteorLib.Anon_ReactiveSkipFields): Cursor[T] = js.native
+    def find(selector: java.lang.String, options: meteorLib.Anon_FieldsLimit): Cursor[T] = js.native
     def find(selector: ObjectID): Cursor[T] = js.native
-    def find(selector: ObjectID, options: meteorLib.Anon_ReactiveSkipFields): Cursor[T] = js.native
+    def find(selector: ObjectID, options: meteorLib.Anon_FieldsLimit): Cursor[T] = js.native
     def find(selector: Selector[T]): Cursor[T] = js.native
-    def find(selector: Selector[T], options: meteorLib.Anon_ReactiveSkipFields): Cursor[T] = js.native
+    def find(selector: Selector[T], options: meteorLib.Anon_FieldsLimit): Cursor[T] = js.native
     def findOne(): T = js.native
     def findOne(selector: java.lang.String): T = js.native
-    def findOne(selector: java.lang.String, options: meteorLib.Anon_ReactiveSkipFieldsSort): T = js.native
+    def findOne(selector: java.lang.String, options: meteorLib.Anon_FieldsReactiveSkip): T = js.native
     def findOne(selector: ObjectID): T = js.native
-    def findOne(selector: ObjectID, options: meteorLib.Anon_ReactiveSkipFieldsSort): T = js.native
+    def findOne(selector: ObjectID, options: meteorLib.Anon_FieldsReactiveSkip): T = js.native
     def findOne(selector: Selector[T]): T = js.native
-    def findOne(selector: Selector[T], options: meteorLib.Anon_ReactiveSkipFieldsSort): T = js.native
+    def findOne(selector: Selector[T], options: meteorLib.Anon_FieldsReactiveSkip): T = js.native
     def insert(doc: T): java.lang.String = js.native
     def insert(doc: T, callback: js.Function): java.lang.String = js.native
     def rawCollection(): js.Any = js.native
@@ -75,30 +75,30 @@ object MongoNs extends js.Object {
     def update(selector: Selector[T], modifier: Modifier[T]): scala.Double = js.native
     def update(selector: Selector[T], modifier: Modifier[T], options: meteorLib.Anon_Multi): scala.Double = js.native
     def update(selector: Selector[T], modifier: Modifier[T], options: meteorLib.Anon_Multi, callback: js.Function): scala.Double = js.native
-    def upsert(selector: java.lang.String, modifier: Modifier[T]): meteorLib.Anon_NumberAffected = js.native
-    def upsert(selector: java.lang.String, modifier: Modifier[T], options: meteorLib.Anon_MultiBoolean): meteorLib.Anon_NumberAffected = js.native
+    def upsert(selector: java.lang.String, modifier: Modifier[T]): meteorLib.Anon_InsertedId = js.native
+    def upsert(selector: java.lang.String, modifier: Modifier[T], options: meteorLib.Anon_MultiBoolean): meteorLib.Anon_InsertedId = js.native
     def upsert(
       selector: java.lang.String,
       modifier: Modifier[T],
       options: meteorLib.Anon_MultiBoolean,
       callback: js.Function
-    ): meteorLib.Anon_NumberAffected = js.native
-    def upsert(selector: ObjectID, modifier: Modifier[T]): meteorLib.Anon_NumberAffected = js.native
-    def upsert(selector: ObjectID, modifier: Modifier[T], options: meteorLib.Anon_MultiBoolean): meteorLib.Anon_NumberAffected = js.native
+    ): meteorLib.Anon_InsertedId = js.native
+    def upsert(selector: ObjectID, modifier: Modifier[T]): meteorLib.Anon_InsertedId = js.native
+    def upsert(selector: ObjectID, modifier: Modifier[T], options: meteorLib.Anon_MultiBoolean): meteorLib.Anon_InsertedId = js.native
     def upsert(
       selector: ObjectID,
       modifier: Modifier[T],
       options: meteorLib.Anon_MultiBoolean,
       callback: js.Function
-    ): meteorLib.Anon_NumberAffected = js.native
-    def upsert(selector: Selector[T], modifier: Modifier[T]): meteorLib.Anon_NumberAffected = js.native
-    def upsert(selector: Selector[T], modifier: Modifier[T], options: meteorLib.Anon_MultiBoolean): meteorLib.Anon_NumberAffected = js.native
+    ): meteorLib.Anon_InsertedId = js.native
+    def upsert(selector: Selector[T], modifier: Modifier[T]): meteorLib.Anon_InsertedId = js.native
+    def upsert(selector: Selector[T], modifier: Modifier[T], options: meteorLib.Anon_MultiBoolean): meteorLib.Anon_InsertedId = js.native
     def upsert(
       selector: Selector[T],
       modifier: Modifier[T],
       options: meteorLib.Anon_MultiBoolean,
       callback: js.Function
-    ): meteorLib.Anon_NumberAffected = js.native
+    ): meteorLib.Anon_InsertedId = js.native
   }
   
   @js.native
@@ -106,7 +106,7 @@ object MongoNs extends js.Object {
     extends org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, Collection[js.Object]]
        with org.scalablytyped.runtime.Instantiable2[
           /* name */ java.lang.String, 
-          /* options */ meteorLib.Anon_Transform, 
+          /* options */ meteorLib.Anon_Connection, 
           Collection[js.Object]
         ]
   
@@ -157,7 +157,9 @@ object MongoNs extends js.Object {
     @JSName("$exists")
     var $exists: js.UndefOr[scala.Boolean] = js.native
     @JSName("$expr")
-    var $expr: js.UndefOr[js.Object] = js.native
+    var $expr: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias meteor.meteor/mongo.Mongo.FieldExpression<T> */ js.UndefOr[
+        /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias meteor.meteor/mongo.Mongo.FieldExpression<T> */ js.Object
+      ] = js.native
     @JSName("$geoIntersects")
     var $geoIntersects: js.UndefOr[js.Any] = js.native
     @JSName("$geoWithin")
@@ -185,7 +187,9 @@ object MongoNs extends js.Object {
     @JSName("$nin")
     var $nin: js.UndefOr[js.Array[T]] = js.native
     @JSName("$not")
-    var $not: js.UndefOr[js.Object] = js.native
+    var $not: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias meteor.meteor/mongo.Mongo.FieldExpression<T> */ js.UndefOr[
+        /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias meteor.meteor/mongo.Mongo.FieldExpression<T> */ js.Object
+      ] = js.native
     @JSName("$options")
     var $options: js.UndefOr[java.lang.String] = js.native
     @JSName("$regex")
@@ -193,7 +197,7 @@ object MongoNs extends js.Object {
     @JSName("$size")
     var $size: js.UndefOr[scala.Double] = js.native
     @JSName("$text")
-    var $text: js.UndefOr[meteorLib.Anon_Search] = js.native
+    var $text: js.UndefOr[meteorLib.Anon_CaseSensitive] = js.native
     @JSName("$type")
     var $type: js.UndefOr[js.Array[BsonType] | BsonType] = js.native
     @JSName("$where")
@@ -293,17 +297,17 @@ object MongoNs extends js.Object {
   var Cursor: CursorStatic = js.native
   var ObjectID: ObjectIDStatic = js.native
   def setConnectionOptions(options: js.Any): scala.Unit = js.native
-  type ArraysOrEach[T] = /* import warning: ImportType.apply Failed type conversion: {typemapped, typemapped} */ js.Any
+  type ArraysOrEach[T] = meteorLib.meteorLibStrings.ArraysOrEach with T
   type BsonType = meteorLib.meteorLibNumbers.`1` | meteorLib.meteorLibStrings.double | meteorLib.meteorLibNumbers.`2` | meteorLib.meteorLibStrings.string | meteorLib.meteorLibNumbers.`3` | meteorLib.meteorLibStrings.`object` | meteorLib.meteorLibNumbers.`4` | meteorLib.meteorLibStrings.array | meteorLib.meteorLibNumbers.`5` | meteorLib.meteorLibStrings.binData | meteorLib.meteorLibNumbers.`6` | meteorLib.meteorLibStrings.undefined | meteorLib.meteorLibNumbers.`7` | meteorLib.meteorLibStrings.objectId | meteorLib.meteorLibNumbers.`8` | meteorLib.meteorLibStrings.bool | meteorLib.meteorLibNumbers.`9` | meteorLib.meteorLibStrings.date | meteorLib.meteorLibNumbers.`10` | meteorLib.meteorLibStrings.`null` | meteorLib.meteorLibNumbers.`11` | meteorLib.meteorLibStrings.regex | meteorLib.meteorLibNumbers.`12` | meteorLib.meteorLibStrings.dbPointer | meteorLib.meteorLibNumbers.`13` | meteorLib.meteorLibStrings.javascript | meteorLib.meteorLibNumbers.`14` | meteorLib.meteorLibStrings.symbol | meteorLib.meteorLibNumbers.`15` | meteorLib.meteorLibStrings.javascriptWithScope | meteorLib.meteorLibNumbers.`16` | meteorLib.meteorLibStrings.int | meteorLib.meteorLibNumbers.`17` | meteorLib.meteorLibStrings.timestamp | meteorLib.meteorLibNumbers.`18` | meteorLib.meteorLibStrings.long | meteorLib.meteorLibNumbers.`19` | meteorLib.meteorLibStrings.decimal | meteorLib.meteorLibNumbers.`-1` | meteorLib.meteorLibStrings.minKey | meteorLib.meteorLibNumbers.`127` | meteorLib.meteorLibStrings.maxKey | meteorLib.meteorLibStrings.number
-  type CurrentDateModifier = meteorLib.Anon_Type | meteorLib.meteorLibNumbers.`true`
-  type ElementsOf[T] = /* import warning: ImportType.apply Failed type conversion: {typemapped, typemapped} */ js.Any
+  type CurrentDateModifier = meteorLib.Anon_Date | meteorLib.meteorLibNumbers.`true`
+  type ElementsOf[T] = meteorLib.meteorLibStrings.ElementsOf with T
   type Flatten[T] = T | (/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any)
-  type Modifier[T] = T | meteorLib.Anon_MulCurrentDate[T]
+  type Modifier[T] = T | meteorLib.Anon_01[T]
   type OnlyArrays[T] = T
   type OnlyElementsOfArrays[T] = stdLib.Partial[/* import warning: ImportType.apply Failed type conversion: T[0] */ js.Any]
   type PartialMapTo[T, M] = stdLib.Partial[stdLib.Record[java.lang.String, M]]
-  type PushModifier[T] = /* import warning: ImportType.apply Failed type conversion: {typemapped, typemapped} */ js.Any
-  type Query[T] = meteorLib.Anon_OrAnd[T] with Dictionary[_]
+  type PushModifier[T] = meteorLib.meteorLibStrings.PushModifier with T
+  type Query[T] = meteorLib.meteorLibStrings.Query with T with meteorLib.Anon_And with Dictionary[_]
   type Selector[T] = Query[T] | QueryWithModifiers[T]
 }
 

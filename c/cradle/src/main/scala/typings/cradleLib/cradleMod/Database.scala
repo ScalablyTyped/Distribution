@@ -55,7 +55,7 @@ class Database () extends js.Object {
   def save[T](document: T, callback: Callback): scala.Unit = js.native
   def save[T](id: java.lang.String, document: T, callback: Callback): scala.Unit = js.native
   def save[T](id: java.lang.String, revision: java.lang.String, document: T, callback: Callback): scala.Unit = js.native
-  def saveAttachment(idAndRevData: cradleLib.Anon_Rev, attachmentData: js.Any, callback: Callback): scala.Unit = js.native
+  def saveAttachment(idAndRevData: cradleLib.Anon_Id, attachmentData: js.Any, callback: Callback): scala.Unit = js.native
   def temporaryView(view: js.Any, callback: Callback): scala.Unit = js.native
   def update(
     name: java.lang.String,
@@ -65,7 +65,7 @@ class Database () extends js.Object {
     callback: Callback
   ): scala.Unit = js.native
   def view(name: java.lang.String, callback: Callback): scala.Unit = js.native
-  def view(name: java.lang.String, options: cradleLib.Anon_Includedocs, callback: Callback): scala.Unit = js.native
+  def view(name: java.lang.String, options: cradleLib.Anon_Descending, callback: Callback): scala.Unit = js.native
   def viewCleanup(callback: Callback): scala.Unit = js.native
 }
 

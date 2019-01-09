@@ -11,6 +11,6 @@ trait ActivitiesResource extends js.Object {
     * acted on, e.g. Drive files a user can see. An activity is a record of past events. Multiple events may be merged if they are similar. A request is
     * scoped to activities from a given Google service using the source parameter.
     */
-  def list(request: gapiDotClientDotAppsactivityLib.Anon_Source): gapiDotClientLib.gapiNs.clientNs.Request[ListActivitiesResponse]
+  def list(request: gapiDotClientDotAppsactivityLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[ListActivitiesResponse]
 }
 

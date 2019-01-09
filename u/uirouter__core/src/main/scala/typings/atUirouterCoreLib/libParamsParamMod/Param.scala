@@ -19,7 +19,7 @@ class Param protected () extends js.Object {
   var isOptional: scala.Boolean = js.native
   var location: DefType = js.native
   var raw: scala.Boolean = js.native
-  var replace: js.Array[atUirouterCoreLib.Anon_FromTo] = js.native
+  var replace: js.Array[atUirouterCoreLib.Anon_From] = js.native
   var squash: scala.Boolean | java.lang.String = js.native
   var `type`: atUirouterCoreLib.libParamsParamTypeMod.ParamType = js.native
   def isDefaultValue(value: js.Any): scala.Boolean = js.native

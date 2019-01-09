@@ -27,7 +27,9 @@ trait CertificateState extends js.Object {
     */
   val domainValidationOptions: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ResourceRecordType]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DomainNameResourceRecordName]
+      ]
     ]
   ] = js.undefined
   /**

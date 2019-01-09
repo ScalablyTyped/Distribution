@@ -36,6 +36,6 @@ class HotspotAuthenticationContext () extends IHotspotAuthenticationContext {
 @JSGlobal("Windows.Networking.NetworkOperators.HotspotAuthenticationContext")
 @js.native
 object HotspotAuthenticationContext extends js.Object {
-  def tryGetAuthenticationContext(evenToken: java.lang.String): winrtLib.Anon_IsValid = js.native
+  def tryGetAuthenticationContext(evenToken: java.lang.String): winrtLib.Anon_Context = js.native
 }
 

@@ -428,6 +428,6 @@ object gulpDashSequenceModMembers extends js.Object {
     s25: gulpDashSequenceLib.gulpDashSequenceMod.seqNs.Step,
     done: gulpDashSequenceLib.gulpDashSequenceMod.seqNs.Done
   ): scala.Unit = js.native
-  def use(gulp: gulpLib.gulpMod.GulpClientNs.Gulp): gulpDashSequenceLib.Anon_S1 = js.native
+  def use(gulp: gulpLib.gulpMod.GulpClientNs.Gulp): gulpDashSequenceLib.Anon_AdditionalTasks = js.native
 }
 

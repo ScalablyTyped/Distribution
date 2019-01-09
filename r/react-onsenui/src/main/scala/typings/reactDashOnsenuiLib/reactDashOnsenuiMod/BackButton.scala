@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "BackButton")
 @js.native
 class BackButton ()
-  extends Component[reactDashOnsenuiLib.Anon_OnClick, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_ModifierNavigator, js.Any]
 

@@ -36,7 +36,7 @@ trait Nest[Datum, RollupType] extends js.Object {
     *
     * @param array An array to create a nested data structure from.
     */
-  def entries(array: js.Array[Datum]): js.Array[d3DashCollectionLib.Anon_Values[RollupType]]
+  def entries(array: js.Array[Datum]): js.Array[d3DashCollectionLib.Anon_KeyValueValuesAny[RollupType]]
   /**
     * Registers a new key function and returns this nest operator.
     * The key function will be invoked for each element in the input array and must return a string identifier to assign the element to its group.

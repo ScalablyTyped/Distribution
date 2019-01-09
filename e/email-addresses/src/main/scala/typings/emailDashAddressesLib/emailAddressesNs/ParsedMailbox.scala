@@ -11,7 +11,7 @@ trait ParsedMailbox extends js.Object {
   var local: java.lang.String
   var name: java.lang.String
   var node: js.UndefOr[ASTNode] = js.undefined
-  var parts: emailDashAddressesLib.Anon_Name
+  var parts: emailDashAddressesLib.Anon_Address
   var `type`: java.lang.String
 }
 

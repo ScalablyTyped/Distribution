@@ -73,7 +73,7 @@ trait Class extends js.Object {
     * @promise {Db}         The database instance.
     */
   def drop(name: java.lang.String): bluebirdLib.bluebirdMod.namespaced[Db] = js.native
-  def drop(name: java.lang.String, config: orientjsLib.Anon_Ifexist): bluebirdLib.bluebirdMod.namespaced[Db] = js.native
+  def drop(name: java.lang.String, config: orientjsLib.Anon_Force): bluebirdLib.bluebirdMod.namespaced[Db] = js.native
   /**
     * Find a list of records in the class.
     *

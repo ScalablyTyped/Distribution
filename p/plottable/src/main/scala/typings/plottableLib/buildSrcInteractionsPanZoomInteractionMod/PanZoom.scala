@@ -323,6 +323,6 @@ object PanZoom extends js.Object {
   def centerPoint(
     point1: plottableLib.buildSrcCoreInterfacesMod.Point,
     point2: plottableLib.buildSrcCoreInterfacesMod.Point
-  ): plottableLib.Anon_Y = js.native
+  ): plottableLib.Anon_X = js.native
 }
 

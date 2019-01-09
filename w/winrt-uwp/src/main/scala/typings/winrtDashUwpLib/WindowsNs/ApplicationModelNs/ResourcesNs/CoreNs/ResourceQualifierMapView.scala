@@ -31,6 +31,6 @@ abstract class ResourceQualifierMapView () extends js.Object {
   /**
     * Splits the map view into two views.
     */
-  def split(): winrtDashUwpLib.Anon_SecondFirstIMapView = js.native
+  def split(): winrtDashUwpLib.Anon_FirstSecondIMapViewString = js.native
 }
 

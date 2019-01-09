@@ -13,6 +13,6 @@ class Shape ()
 @JSImport("cannon", "Shape")
 @js.native
 object Shape extends js.Object {
-  var types: cannonLib.Anon_CYLINDER = js.native
+  var types: cannonLib.Anon_BOX = js.native
 }
 

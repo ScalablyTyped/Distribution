@@ -18,6 +18,6 @@ object reactDashReduxModMembers extends js.Object {
   selectorFactory: SelectorFactory[S, TProps, TOwnProps, TFactoryOptions],
     connectOptions: ConnectOptions with TFactoryOptions
   ): AdvancedComponentDecorator[TProps, TOwnProps] = js.native
-  def createProvider(storeKey: java.lang.String): org.scalablytyped.runtime.Instantiable0[Provider[reduxLib.reduxMod.AnyAction]] = js.native
+  def createProvider(storeKey: java.lang.String): org.scalablytyped.runtime.Instantiable0[Provider[reduxLib.reduxMod.Action[js.Any]]] = js.native
 }
 

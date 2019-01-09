@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("gapi.drive.realtime")
 @js.native
 object realtimeNsMembers extends js.Object {
-  val ErrorType: googleDashDriveDashRealtimeDashApiLib.Anon_NOWRITEPERMISSION = js.native
-  val EventType: googleDashDriveDashRealtimeDashApiLib.Anon_VALUESSET = js.native
+  val ErrorType: googleDashDriveDashRealtimeDashApiLib.Anon_CLIENTERROR = js.native
+  val EventType: googleDashDriveDashRealtimeDashApiLib.Anon_ATTRIBUTECHANGED = js.native
   def debug(): scala.Unit = js.native
   def load(fileId: java.lang.String): scala.Unit = js.native
   def load(fileId: java.lang.String, onLoaded: js.Function1[/* d */ Document, scala.Unit]): scala.Unit = js.native

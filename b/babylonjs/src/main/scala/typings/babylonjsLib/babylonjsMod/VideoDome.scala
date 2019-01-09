@@ -15,14 +15,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class VideoDome protected ()
   extends babylonjsLib.BABYLONNs.VideoDome {
-  def this(name: java.lang.String, urlsOrVideo: babylonjsLib.HTMLVideoElement, options: babylonjsLib.Anon_Loop, scene: babylonjsLib.BABYLONNs.Scene) = this()
+  def this(name: java.lang.String, urlsOrVideo: babylonjsLib.HTMLVideoElement, options: babylonjsLib.Anon_AutoPlay, scene: babylonjsLib.BABYLONNs.Scene) = this()
   /**
     * Create an instance of this class and pass through the parameters to the relevant classes, VideoTexture, StandardMaterial, and Mesh.
     * @param name Element's name, child elements will append suffixes for their own names.
     * @param urlsOrVideo defines the url(s) or the video element to use
     * @param options An object containing optional or exposed sub element properties
     */
-  def this(name: java.lang.String, urlsOrVideo: java.lang.String, options: babylonjsLib.Anon_Loop, scene: babylonjsLib.BABYLONNs.Scene) = this()
-  def this(name: java.lang.String, urlsOrVideo: js.Array[java.lang.String], options: babylonjsLib.Anon_Loop, scene: babylonjsLib.BABYLONNs.Scene) = this()
+  def this(name: java.lang.String, urlsOrVideo: java.lang.String, options: babylonjsLib.Anon_AutoPlay, scene: babylonjsLib.BABYLONNs.Scene) = this()
+  def this(name: java.lang.String, urlsOrVideo: js.Array[java.lang.String], options: babylonjsLib.Anon_AutoPlay, scene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 

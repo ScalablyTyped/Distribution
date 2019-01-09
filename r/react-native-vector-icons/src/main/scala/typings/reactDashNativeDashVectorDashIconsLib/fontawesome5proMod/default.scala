@@ -20,7 +20,7 @@ object default extends js.Object {
     name: java.lang.String,
     size: scala.Double,
     color: java.lang.String,
-    fa5Style: reactDashNativeDashVectorDashIconsLib.fontawesome5Mod.ValueOf[reactDashNativeDashVectorDashIconsLib.Anon_Regular]
+    fa5Style: reactDashNativeDashVectorDashIconsLib.fontawesome5Mod.ValueOf[reactDashNativeDashVectorDashIconsLib.Anon_0]
   ): js.Promise[reactDashNativeDashVectorDashIconsLib.iconMod.ImageSource] = js.native
   def hasIcon(name: java.lang.String): scala.Boolean = js.native
   def loadFont(): js.Promise[scala.Unit] = js.native

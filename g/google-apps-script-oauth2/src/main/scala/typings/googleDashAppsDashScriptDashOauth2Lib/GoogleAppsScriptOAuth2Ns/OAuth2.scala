@@ -9,11 +9,11 @@ trait OAuth2 extends js.Object {
   /**
     * The supported locations for passing the state parameter.
     */
-  var STATE_PARAMETER_LOCATION: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script-oauth2.GoogleAppsScriptOAuth2.StateParameterLocation */ js.Any
+  var STATE_PARAMETER_LOCATION: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof StateParameterLocation */ js.Any
   /**
     * The supported formats for the returned OAuth2 token.
     */
-  var TOKEN_FORMAT: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script-oauth2.GoogleAppsScriptOAuth2.TokenFormat */ js.Any
+  var TOKEN_FORMAT: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TokenFormat */ js.Any
   /**
     * Creates a new OAuth2 service with the name specified.
     * It's usually best to create and configure your service once at the start of your script,

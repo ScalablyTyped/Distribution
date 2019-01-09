@@ -17,7 +17,7 @@ trait DataScrollerProps extends js.Object {
   ] = js.undefined
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined
   var loader: js.UndefOr[js.Any] = js.undefined
-  var onLazyLoad: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_Rows, scala.Unit]] = js.undefined
+  var onLazyLoad: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_First, scala.Unit]] = js.undefined
   var rows: js.UndefOr[scala.Double] = js.undefined
   var scrollHeight: js.UndefOr[js.Any] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined

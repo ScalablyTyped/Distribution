@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("enhanced-resolve", "create")
 @js.native
 object createNs extends js.Object {
-  def sync(options: enhancedDashResolveLib.enhancedDashResolveMod.ResolveNs.ResolverFactoryNs.ResolverOption): enhancedDashResolveLib.Anon_Path = js.native
+  def sync(options: enhancedDashResolveLib.enhancedDashResolveMod.ResolveNs.ResolverFactoryNs.ResolverOption): enhancedDashResolveLib.Anon_Context = js.native
 }
 

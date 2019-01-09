@@ -5,11 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.formNs.IFieldAncestor because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait IPanel
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.formNs.IFieldAncestor because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined fieldDefaults, initFieldAncestor, onFieldErrorChange, onFieldValidityChange */ trait IPanel
   extends extjsLib.ExtNs.panelNs.IPanel {
   /** [Method] Forces each field within the form panel to check if its value has changed  */
   var checkChange: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  /** [Config Option] (Object) */
+  var fieldDefaults: js.UndefOr[js.Any] = js.undefined
   /** [Method] Provides access to the Form which this Panel contains
   		* @returns Ext.form.Basic The Form which this Panel contains.
   		*/

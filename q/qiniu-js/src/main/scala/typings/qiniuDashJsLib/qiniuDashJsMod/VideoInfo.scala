@@ -18,7 +18,7 @@ trait VideoInfo extends js.Object {
   var r_frame_rate: java.lang.String
   var sample_aspect_ratio: java.lang.String
   var start_time: java.lang.String
-  var tags: qiniuDashJsLib.Anon_Key
+  var tags: qiniuDashJsLib.Anon_Creationtime
   var width: scala.Double
 }
 

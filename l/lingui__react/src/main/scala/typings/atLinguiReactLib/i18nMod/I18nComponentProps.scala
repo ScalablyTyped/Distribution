@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 trait I18nComponentProps extends js.Object {
   var update: js.UndefOr[scala.Boolean] = js.undefined
   var withHash: js.UndefOr[scala.Boolean] = js.undefined
-  def children(hasI18nI18nHash: atLinguiReactLib.Anon_I18nHash): reactLib.reactMod.ReactNs.ReactNode
+  def children(hasI18nI18nHash: atLinguiReactLib.Anon_I18n): reactLib.reactMod.ReactNs.ReactNode
 }
 

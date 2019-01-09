@@ -16,7 +16,7 @@ class ResourceMapIterator ()
   /* CompleteClass */
   override var hasCurrent: scala.Boolean = js.native
   /* CompleteClass */
-  override def getMany(): winrtLib.Anon_ItemsReturnValueArrayT[
+  override def getMany(): winrtLib.Anon_Items[
     winrtLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[java.lang.String, NamedResource]
   ] = js.native
   /* CompleteClass */

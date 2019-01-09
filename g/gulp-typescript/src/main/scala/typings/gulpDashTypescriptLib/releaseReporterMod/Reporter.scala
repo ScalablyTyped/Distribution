@@ -9,7 +9,7 @@ trait Reporter extends js.Object {
   var error: js.UndefOr[
     js.Function2[
       /* error */ TypeScriptError, 
-      /* typescript */ gulpDashTypescriptLib.Anon_CreateFunctionExpression, 
+      /* typescript */ gulpDashTypescriptLib.Anon_08, 
       scala.Unit
     ]
   ] = js.undefined

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalHexBlock because Inheritance from two classes)*/
-@JSGlobal("adone.crypto.asn1.I.LocalBmpStringValueBlock")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalHexBlock because Inheritance from two classes */ @JSGlobal("adone.crypto.asn1.I.LocalBmpStringValueBlock")
 @js.native
 class LocalBmpStringValueBlock () extends LocalBaseBlock {
   def this(params: LocalBmpStringValueBlockParams) = this()

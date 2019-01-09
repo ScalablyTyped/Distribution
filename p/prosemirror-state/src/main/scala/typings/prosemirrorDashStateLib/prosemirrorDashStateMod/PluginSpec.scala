@@ -59,7 +59,7 @@ trait PluginSpec[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
   var view: js.UndefOr[
     (js.Function1[
       /* p */ prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S], 
-      prosemirrorDashStateLib.Anon_Update[S]
+      prosemirrorDashStateLib.Anon_Destroy[S]
     ]) | scala.Null
   ] = js.undefined
 }

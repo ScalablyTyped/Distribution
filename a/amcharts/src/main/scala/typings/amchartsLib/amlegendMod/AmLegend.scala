@@ -226,7 +226,10 @@ trait AmLegend extends js.Object {
     * @param type Either "clickLabel" or "clickMarker" or "hideItem".
     * @param handler The event handler.
     */
-  def addListener(`type`: java.lang.String, handler: js.Function1[/* e */ amchartsLib.Anon_TypeDataItem, scala.Unit]): scala.Unit
+  def addListener(
+    `type`: java.lang.String,
+    handler: js.Function1[/* e */ amchartsLib.Anon_ChartDataItem, scala.Unit]
+  ): scala.Unit
   /**
     * Removes event listener from chart object.
     */

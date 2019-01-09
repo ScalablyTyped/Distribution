@@ -27,11 +27,11 @@ class LaunchTemplate protected ()
     * Specify volumes to attach to the instance besides the volumes specified by the AMI.
     * See Block Devices below for details.
     */
-  val blockDeviceMappings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EbsDeviceNameNoDevice]]] = js.native
+  val blockDeviceMappings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DeviceNameEbsNoDevice]]] = js.native
   /**
     * Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
     */
-  val capacityReservationSpecification: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CapacityReservationTarget]] = js.native
+  val capacityReservationSpecification: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CapacityReservationPreference]] = js.native
   /**
     * Customize the credit specification of the instance. See Credit
     * Specification below for more details.
@@ -101,7 +101,7 @@ class LaunchTemplate protected ()
   /**
     * The monitoring option for the instance. See Monitoring below for more details.
     */
-  val monitoring: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EnabledBooleanOptional]] = js.native
+  val monitoring: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EnabledBoolean]] = js.native
   /**
     * The name of the launch template. If you leave this blank, Terraform will auto-generate a unique name.
     */
@@ -114,7 +114,9 @@ class LaunchTemplate protected ()
     * Customize network interfaces to be attached at instance boot time. See Network
     * Interfaces below for more details.
     */
-  val networkInterfaces: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Ipv4AddressesDescription]]] = js.native
+  val networkInterfaces: atPulumiPulumiLib.pulumiMod.Output[
+    js.UndefOr[js.Array[atPulumiAwsLib.Anon_AssociatePublicIpAddressDeleteOnTermination]]
+  ] = js.native
   /**
     * The placement of the instance. See Placement below for more details.
     */
@@ -131,7 +133,7 @@ class LaunchTemplate protected ()
   /**
     * The tags to apply to the resources during launch. See Tags below for more details.
     */
-  val tagSpecifications: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ResourceTypeTags]]] = js.native
+  val tagSpecifications: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_KeyResourceTypeTags]]] = js.native
   /**
     * A mapping of tags to assign to the launch template.
     */

@@ -49,7 +49,7 @@ object GridRouter extends js.Object {
     cornerradius: scala.Double,
     arrowwidth: scala.Double,
     arrowheight: scala.Double
-  ): webcolaLib.Anon_Routepath = js.native
+  ): webcolaLib.Anon_Arrowpath = js.native
   def getSegmentSets(routes: js.Any, x: js.Any, y: js.Any): js.Array[_] = js.native
   /* private */ def isLeft(a: js.Any, b: js.Any, c: js.Any): js.Any = js.native
   def makeSegments(path: js.Array[webcolaLib.distSrcGeomMod.Point]): js.Array[js.Array[webcolaLib.distSrcGeomMod.Point]] = js.native

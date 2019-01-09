@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ApplicationArgs extends js.Object {
-  val appversionLifecycle: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteSourceFromS3]] = js.undefined
+  val appversionLifecycle: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteSourceFromS3MaxAgeInDays]
+  ] = js.undefined
   /**
     * Short description of the application
     */

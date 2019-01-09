@@ -39,7 +39,7 @@ class JobDefinition protected ()
     * Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
     * Maximum number of `retry_strategy` is `1`.  Defined below.
     */
-  val retryStrategy: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AttemptsNumber]] = js.native
+  val retryStrategy: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Attempts]] = js.native
   /**
     * The revision of the job definition.
     */
@@ -47,7 +47,7 @@ class JobDefinition protected ()
   /**
     * Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
     */
-  val timeout: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AttemptDurationSecondsNumber]] = js.native
+  val timeout: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AttemptDurationSeconds]] = js.native
   /**
     * The type of job definition.  Must be `container`
     */

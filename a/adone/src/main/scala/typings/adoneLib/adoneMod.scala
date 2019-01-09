@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("adone", JSImport.Namespace)
 @js.native
 object adoneMod extends js.Object {
-  val adone: adoneLib.Anon_Datetime = js.native
+  val adone: adoneLib.Anon_AppArchive = js.native
 }
 

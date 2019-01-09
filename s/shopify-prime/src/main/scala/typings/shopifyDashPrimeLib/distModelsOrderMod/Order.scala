@@ -30,7 +30,7 @@ trait Order
   var line_items: js.UndefOr[js.Array[shopifyDashPrimeLib.distModelsLineUnderscoreItemMod.LineItem]] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var note: js.UndefOr[java.lang.String] = js.undefined
-  var note_attributes: js.UndefOr[shopifyDashPrimeLib.Anon_Value] = js.undefined
+  var note_attributes: js.UndefOr[shopifyDashPrimeLib.Anon_Name] = js.undefined
   var number: js.UndefOr[scala.Double] = js.undefined
   var order_number: js.UndefOr[scala.Double] = js.undefined
   var payment_details: js.UndefOr[shopifyDashPrimeLib.distModelsPaymentUnderscoreDetailsMod.PaymentDetails] = js.undefined

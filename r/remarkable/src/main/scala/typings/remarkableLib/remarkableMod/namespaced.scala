@@ -31,6 +31,6 @@ object namespaced extends js.Object {
   /**
     * Useful helper functions for custom rendering.
     */
-  var utils: remarkableLib.Anon_UnescapeMd = js.native
+  var utils: remarkableLib.Anon_Assign = js.native
 }
 

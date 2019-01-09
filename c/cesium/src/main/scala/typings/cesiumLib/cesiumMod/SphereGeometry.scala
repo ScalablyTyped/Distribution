@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SphereGeometry ()
   extends cesiumLib.cesiumMod.CesiumNs.SphereGeometry {
-  def this(options: cesiumLib.Anon_SlicePartitionsStackPartitions) = this()
+  def this(options: cesiumLib.Anon_Radius) = this()
 }
 
 @JSImport("cesium", "SphereGeometry")

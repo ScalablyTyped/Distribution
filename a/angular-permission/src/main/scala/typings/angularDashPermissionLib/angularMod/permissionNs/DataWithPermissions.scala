@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DataWithPermissions extends js.Object {
-  var permissions: js.UndefOr[angularDashPermissionLib.Anon_Only] = js.undefined
+  var permissions: js.UndefOr[angularDashPermissionLib.Anon_Except] = js.undefined
 }
 

@@ -12,7 +12,6 @@ class WalkSegment ()
   /* CompleteClass */
   override var events: yandexDashMapsLib.ymapsNs.IEventManager = js.native
   var model: WalkSegmentModel = js.native
-  var options: yandexDashMapsLib.ymapsNs.IOptionManager = js.native
   @JSName("properties")
   var properties_WalkSegment: yandexDashMapsLib.ymapsNs.dataNs.Manager = js.native
   /* CompleteClass */

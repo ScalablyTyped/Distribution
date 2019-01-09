@@ -59,7 +59,7 @@ class TouchDevice protected () extends js.Object {
     * @param {Touch} touch The browser Touch object
     * @returns {Object} The co-ordinates of the touch relative to the touch.target element. In the format {x, y}
     */
-  def getTouchTargetCoords(touch: playcanvasLib.BrowserTouch): playcanvasLib.Anon_Y = js.native
+  def getTouchTargetCoords(touch: playcanvasLib.BrowserTouch): playcanvasLib.Anon_X = js.native
   /**
     * @function
     * @name pc.Touch#hasEvent

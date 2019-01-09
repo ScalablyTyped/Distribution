@@ -18,14 +18,14 @@ trait RedisAdapter
   		 * @param remote The optional flag, whether the packet came from another node
   		 */
   @JSName("broadcast")
-  var broadcast_Original: socketDotIoDashRedisLib.Anon_Packet = js.native
+  var broadcast_Original: socketDotIoDashRedisLib.Anon_Opts = js.native
   /**
   		 * Removes a socket from all the rooms that it's joined
   		 * @param id The ID of the socket that we're removing
   		 * @param callback An optional callback to call when the socket has been
   		 */
   @JSName("delAll")
-  var delAll_Original: socketDotIoDashRedisLib.Anon_Id = js.native
+  var delAll_Original: socketDotIoDashRedisLib.Anon_Callback = js.native
   /**
   		 * The prefix of pub/sub events
   		 */
@@ -47,7 +47,7 @@ trait RedisAdapter
   		 * @param {(err: any, rooms: string[]) => void} callback
   		 */
   def allRooms(callback: js.Function2[/* err */ js.Any, /* rooms */ js.Array[java.lang.String], scala.Unit]): scala.Unit = js.native
-  def broadcast(packet: js.Any, opts: socketDotIoDashRedisLib.Anon_Rooms, remote: scala.Boolean): scala.Unit = js.native
+  def broadcast(packet: js.Any, opts: socketDotIoDashRedisLib.Anon_Except, remote: scala.Boolean): scala.Unit = js.native
   /**
   		 * clientRooms returns the list of rooms the client with the given ID has joined
   		 * (even on another node).

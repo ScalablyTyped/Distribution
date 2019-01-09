@@ -42,6 +42,6 @@ class JsonArray ()
 @js.native
 object JsonArray extends js.Object {
   def parse(input: java.lang.String): winrtLib.WindowsNs.DataNs.JsonNs.JsonArray = js.native
-  def tryParse(input: java.lang.String): winrtLib.Anon_ResultSucceededJsonArray = js.native
+  def tryParse(input: java.lang.String): winrtLib.Anon_Result = js.native
 }
 

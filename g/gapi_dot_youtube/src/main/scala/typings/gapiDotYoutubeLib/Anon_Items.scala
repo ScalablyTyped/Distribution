@@ -17,6 +17,6 @@ trait Anon_Items extends js.Object {
   /**
     * The timing object encapsulates information about the temporal position within the video when the promoted item will be displayed.
     */
-  var timing: Anon_TypeOffsetMs
+  var timing: Anon_OffsetMs
 }
 

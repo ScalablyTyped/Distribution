@@ -21,7 +21,7 @@ object notificationsNsMembers extends js.Object {
     * @prop LIST - icon, title, message, items, up to two buttons. Users on Mac OS X only see the first item.
     * @prop PROGRESS - icon, title, message, progress, up to two buttons.
     */
-  val TemplateType: chromeDashAppsLib.Anon_IMAGE = js.native
+  val TemplateType: chromeDashAppsLib.Anon_BASIC = js.native
   /** The user pressed a button in the notification. */
   val onButtonClicked: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function2[

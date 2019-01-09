@@ -19,6 +19,6 @@ class Annotation protected () extends Modifier {
 @js.native
 object Annotation extends js.Object {
   var DEBUG: scala.Boolean = js.native
-  def format(annotations: js.Array[vexflowLib.VexNs.FlowNs.Annotation], state: vexflowLib.Anon_Rightshift): scala.Boolean = js.native
+  def format(annotations: js.Array[vexflowLib.VexNs.FlowNs.Annotation], state: vexflowLib.Anon_Leftshift): scala.Boolean = js.native
 }
 

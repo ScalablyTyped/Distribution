@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait CompaniesResource extends js.Object {
   var leads: LeadsResource
   /** Gets a company. */
-  def get(request: gapiDotClientDotPartnersLib.Anon_RequestMetadataexperimentIdsAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GetCompanyResponse]
+  def get(request: gapiDotClientDotPartnersLib.Anon_AccesstokenAddress): gapiDotClientLib.gapiNs.clientNs.Request[GetCompanyResponse]
   /** Lists companies. */
-  def list(request: gapiDotClientDotPartnersLib.Anon_RequestMetadataexperimentIdsServices): gapiDotClientLib.gapiNs.clientNs.Request[ListCompaniesResponse]
+  def list(request: gapiDotClientDotPartnersLib.Anon_AccesstokenAddressAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListCompaniesResponse]
 }
 

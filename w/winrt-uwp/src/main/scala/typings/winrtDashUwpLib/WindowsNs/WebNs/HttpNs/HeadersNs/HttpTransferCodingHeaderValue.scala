@@ -34,6 +34,6 @@ object HttpTransferCodingHeaderValue extends js.Object {
     * Determines whether a string is valid HttpTransferCodingHeaderValue information.
     * @param input The string to validate.
     */
-  def tryParse(input: java.lang.String): winrtDashUwpLib.Anon_TransferCodingHeaderValue = js.native
+  def tryParse(input: java.lang.String): winrtDashUwpLib.Anon_ReturnValueTransferCodingHeaderValue = js.native
 }
 

@@ -188,7 +188,7 @@ trait Nedb
     * If one update violates a constraint, all changes are rolled back
     */
   def updateIndexes[T](oldDoc: T, newDoc: T): scala.Unit = js.native
-  def updateIndexes[T](updates: js.Array[nedbLib.Anon_OldDoc[T]]): scala.Unit = js.native
+  def updateIndexes[T](updates: js.Array[nedbLib.Anon_NewDoc[T]]): scala.Unit = js.native
   /**
     * Update all docs matching query v1.8 signature.
     * For now, very naive implementation (recalculating the whole database)

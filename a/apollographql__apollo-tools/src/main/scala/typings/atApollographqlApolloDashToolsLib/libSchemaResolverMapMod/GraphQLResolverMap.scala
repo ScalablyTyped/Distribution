@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait GraphQLResolverMap[TContext]
   extends /* typeName */ org.scalablytyped.runtime.StringDictionary[
       org.scalablytyped.runtime.StringDictionary[
-        (graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, TContext, org.scalablytyped.runtime.StringDictionary[_]]) | atApollographqlApolloDashToolsLib.Anon_Requires[TContext]
+        (graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, TContext, org.scalablytyped.runtime.StringDictionary[_]]) | atApollographqlApolloDashToolsLib.Anon_ArgName[TContext]
       ]
     ]
 

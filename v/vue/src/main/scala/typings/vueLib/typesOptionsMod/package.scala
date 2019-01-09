@@ -9,7 +9,7 @@ package object typesOptionsMod {
   type Accessors[T] = vueLib.vueLibStrings.Accessors with T
   type ArrayPropsDefinition[T] = js.Array[java.lang.String]
   type AsyncComponent[Data, Methods, Computed, Props] = (AsyncComponentPromise[Data, Methods, Computed, Props]) | (AsyncComponentFactory[Data, Methods, Computed, Props])
-  type AsyncComponentFactory[Data, Methods, Computed, Props] = js.Function0[vueLib.Anon_Delay[Data, Methods, Computed, Props]]
+  type AsyncComponentFactory[Data, Methods, Computed, Props] = js.Function0[vueLib.Anon_Component[Data, Methods, Computed, Props]]
   type AsyncComponentPromise[Data, Methods, Computed, Props] = js.Function2[
     /* resolve */ js.Function1[/* component */ Component[Data, Methods, Computed, Props], scala.Unit], 
     /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 
@@ -34,7 +34,7 @@ package object typesOptionsMod {
     scala.Unit
   ]
   type InjectKey = java.lang.String | js.Symbol
-  type InjectOptions = (org.scalablytyped.runtime.StringDictionary[InjectKey | vueLib.Anon_From]) | js.Array[java.lang.String]
+  type InjectOptions = (org.scalablytyped.runtime.StringDictionary[InjectKey | vueLib.Anon_Default]) | js.Array[java.lang.String]
   type Prop[T] = vueLib.Anon_T[T] | vueLib.Anon_Args[T]
   type PropValidator[T] = PropOptions[T] | Prop[T] | js.Array[Prop[T]]
   type PropsDefinition[T] = ArrayPropsDefinition[T] | RecordPropsDefinition[T]

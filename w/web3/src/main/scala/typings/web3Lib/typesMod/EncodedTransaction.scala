@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait EncodedTransaction extends js.Object {
   var raw: java.lang.String
-  var tx: web3Lib.Anon_S
+  var tx: web3Lib.Anon_Gas
 }
 

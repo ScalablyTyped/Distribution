@@ -13,7 +13,7 @@ trait GoogleApiYouTubeSearchResource extends js.Object {
   /**
     * The id object contains information that can be used to uniquely identify the resource that matches the search request.
     */
-  var id: Anon_KindVideoId
+  var id: Anon_ChannelIdKindPlaylistId
   /**
     * The kind, fixed to "youtube#searchResult".
     */
@@ -21,6 +21,6 @@ trait GoogleApiYouTubeSearchResource extends js.Object {
   /**
     * The snippet object contains basic details about a search result, such as its title or description.
     */
-  var snippet: Anon_DescriptionChannelTitle
+  var snippet: Anon_ChannelIdChannelTitleDescriptionPublishedAtThumbnails
 }
 

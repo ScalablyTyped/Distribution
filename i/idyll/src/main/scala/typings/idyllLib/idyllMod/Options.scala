@@ -30,7 +30,7 @@ trait Options extends js.Object {
   /**
     * used internally by IdyllInstance
     */
-  var inputConfig: js.UndefOr[idyllLib.Anon_Transform] = js.undefined
+  var inputConfig: js.UndefOr[idyllLib.Anon_Compiler] = js.undefined
   /**
     * the idyll file to be compiled into
     */

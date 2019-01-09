@@ -25,7 +25,7 @@ object GraceNoteGroup extends js.Object {
   var DEBUG: scala.Boolean = js.native
   def format(
     gracenote_groups: js.Array[vexflowLib.VexNs.FlowNs.GraceNoteGroup],
-    state: vexflowLib.Anon_Rightshift
+    state: vexflowLib.Anon_Leftshift
   ): scala.Boolean = js.native
 }
 

@@ -11,7 +11,7 @@ trait IDragDropHelper extends js.Object {
     root: reactLib.HTMLElement,
     events: officeDashUiDashFabricDashReactLib.libUtilitiesMod.EventGroup,
     options: IDragDropOptions
-  ): officeDashUiDashFabricDashReactLib.Anon_KeyDisposeString
+  ): officeDashUiDashFabricDashReactLib.Anon_Dispose
   def unsubscribe(root: reactLib.HTMLElement, key: java.lang.String): scala.Unit
 }
 

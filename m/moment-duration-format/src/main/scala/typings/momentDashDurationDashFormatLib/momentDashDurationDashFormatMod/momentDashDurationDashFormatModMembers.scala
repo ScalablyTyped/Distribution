@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("moment-duration-format", JSImport.Namespace)
 @js.native
 object momentDashDurationDashFormatModMembers extends js.Object {
-  def apply(_moment: momentDashDurationDashFormatLib.Anon_ParseZone): scala.Unit = js.native
+  def apply(_moment: momentDashDurationDashFormatLib.Anon_CalendarFormat): scala.Unit = js.native
 }
 

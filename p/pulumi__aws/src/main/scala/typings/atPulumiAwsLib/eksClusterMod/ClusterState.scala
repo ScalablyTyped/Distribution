@@ -13,7 +13,7 @@ trait ClusterState extends js.Object {
   /**
     * Nested attribute containing `certificate-authority-data` for your cluster.
     */
-  val certificateAuthority: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DataInput]] = js.undefined
+  val certificateAuthority: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DataInputString]] = js.undefined
   val createdAt: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   /**
     * The endpoint for your Kubernetes API server.
@@ -39,7 +39,7 @@ trait ClusterState extends js.Object {
     * Nested argument for the VPC associated with your cluster. Amazon EKS VPC resources have specific requirements to work properly with Kubernetes. For more information, see [Cluster VPC Considerations](https://docs.aws.amazon.com/eks/latest/userguide/network_reqs.html) and [Cluster Security Group Considerations](https://docs.aws.amazon.com/eks/latest/userguide/sec-group-reqs.html) in the Amazon EKS User Guide. Configuration detailed below.
     */
   val vpcConfig: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_VpcIdSecurityGroupIdsSubnetIds]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcId]
   ] = js.undefined
 }
 

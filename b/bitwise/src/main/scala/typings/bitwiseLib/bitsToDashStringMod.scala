@@ -10,18 +10,18 @@ import scala.scalajs.js.annotation._
 object bitsToDashStringMod extends js.Object {
   def default(
     bits: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_bitwise/types.Bit */ _
     ]
   ): java.lang.String = js.native
   def default(
     bits: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_bitwise/types.Bit */ _
     ],
     spacing: scala.Double
   ): java.lang.String = js.native
   def default(
     bits: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_bitwise/types.Bit */ _
     ],
     spacing: scala.Double,
     spacer: java.lang.String

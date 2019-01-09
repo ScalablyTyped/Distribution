@@ -9,7 +9,6 @@ trait ListItemProps
   extends materialDashUiLib.underscoreUnderscoreMaterialUINs.EnhancedButtonProps {
   // <EnhancedButton/> is the element that get the 'other' properties
   var autoGenerateNestedIndicator: js.UndefOr[scala.Boolean] = js.undefined
-  var disableKeyboardFocus: js.UndefOr[scala.Boolean] = js.undefined
   var hoverColor: js.UndefOr[java.lang.String] = js.undefined
   var initiallyOpen: js.UndefOr[scala.Boolean] = js.undefined
   var innerDivStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
@@ -20,13 +19,6 @@ trait ListItemProps
   var nestedItems: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactElement[ListItemProps]]] = js.undefined
   var nestedLevel: js.UndefOr[scala.Double] = js.undefined
   var nestedListStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var onKeyboardFocus: js.UndefOr[
-    js.Function2[
-      /* e */ reactLib.reactMod.ReactNs.FocusEvent[js.Object], 
-      /* isKeyboardFocused */ scala.Boolean, 
-      scala.Unit
-    ]
-  ] = js.undefined
   var onNestedListToggle: js.UndefOr[js.Function1[/* item */ ListItem, scala.Unit]] = js.undefined
   var open: js.UndefOr[scala.Boolean] = js.undefined
   var primaryText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

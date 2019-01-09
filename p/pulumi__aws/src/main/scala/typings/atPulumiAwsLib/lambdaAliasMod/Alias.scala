@@ -45,7 +45,7 @@ class Alias protected ()
   /**
     * The Lambda alias' route configuration settings. Fields documented below
     */
-  val routingConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AdditionalVersionWeightsKey]] = js.native
+  val routingConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AdditionalVersionWeights]] = js.native
 }
 
 @JSImport("@pulumi/aws/lambda/alias", "Alias")

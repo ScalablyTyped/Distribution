@@ -70,7 +70,7 @@ class Bar[X, Y] ()
     * same as the "pixel point" because they are always at the top/left of the
     * bar.
     */
-  /* protected */ def _pixelBounds(datum: js.Any, index: scala.Double, dataset: plottableLib.buildSrcCoreDatasetMod.Dataset): plottableLib.Anon_YXHeight = js.native
+  /* protected */ def _pixelBounds(datum: js.Any, index: scala.Double, dataset: plottableLib.buildSrcCoreDatasetMod.Dataset): plottableLib.Anon_HeightWidthX = js.native
   /* private */ def _pixelPointBar(originalPosition: js.Any, scaledBaseline: js.Any, rect: js.Any): js.Any = js.native
   /**
     * Labels are "on-bar" by default, but if the bar is not long enough to fit the text,

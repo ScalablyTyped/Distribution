@@ -322,7 +322,7 @@ trait IOptions[T, U] extends js.Object {
     *
     * Default: "$order"
     */
-  var sortField: js.UndefOr[java.lang.String | js.Array[selectizeLib.Anon_Field]] = js.undefined
+  var sortField: js.UndefOr[java.lang.String | js.Array[selectizeLib.Anon_Asc]] = js.undefined
   /**
     * The name of the property to use as the "value" when an item is selected.
     *

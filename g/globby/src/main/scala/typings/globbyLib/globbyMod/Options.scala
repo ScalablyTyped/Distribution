@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial<fast-glob.fast-glob/out/managers/options.IOptions<fast-glob.fast-glob/out/types/entries.EntryItem>>) */ trait Options extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof fast-glob.fast-glob/out/managers/options.IOptions<fast-glob.fast-glob/out/types/entries.EntryItem> ]:? fast-glob.fast-glob/out/managers/options.IOptions<fast-glob.fast-glob/out/types/entries.EntryItem>[P]} */ trait Options extends js.Object {
   /**
     * If set to `true`, `globby` will automatically glob directories for you.
     * If you define an `Array` it will only glob files that matches the patterns inside the Array.

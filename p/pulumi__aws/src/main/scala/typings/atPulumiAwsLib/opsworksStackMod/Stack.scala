@@ -43,7 +43,7 @@ class Stack protected ()
     * When `use_custom_cookbooks` is set, provide this sub-object as
     * described below.
     */
-  val customCookbooksSources: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Url]] = js.native
+  val customCookbooksSources: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_PasswordRevisionSshKey]] = js.native
   /**
     * Custom JSON attributes to apply to the entire stack.
     */

@@ -55,7 +55,7 @@ trait RaygunV2 extends js.Object {
   def apply(key: raygun4jsLib.raygun4jsLibStrings.setFilterScope, value: java.lang.String): scala.Unit = js.native
   def apply(key: raygun4jsLib.raygun4jsLibStrings.setUser, value: RaygunV2UserDetails): scala.Unit = js.native
   def apply(key: raygun4jsLib.raygun4jsLibStrings.setVersion, value: java.lang.String): scala.Unit = js.native
-  def apply(key: raygun4jsLib.raygun4jsLibStrings.trackEvent, value: raygun4jsLib.Anon_Type): scala.Unit = js.native
+  def apply(key: raygun4jsLib.raygun4jsLibStrings.trackEvent, value: raygun4jsLib.Anon_PathType): scala.Unit = js.native
   def apply(
     key: raygun4jsLib.raygun4jsLibStrings.whitelistCrossOriginDomains,
     values: js.Array[java.lang.String]

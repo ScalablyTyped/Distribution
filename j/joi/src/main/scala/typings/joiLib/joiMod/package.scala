@@ -7,9 +7,11 @@ import scala.scalajs.js.annotation._
 
 package object joiMod {
   type DefaultsFunction = js.Function1[/* root */ Schema, Schema]
-  type ExtensionBoundSchema = Schema with joiLib.Anon_CreateError
+  type ExtensionBoundSchema = Schema with joiLib.Anon_Context
   type GuidVersions = joiLib.joiLibStrings.uuidv1 | joiLib.joiLibStrings.uuidv2 | joiLib.joiLibStrings.uuidv3 | joiLib.joiLibStrings.uuidv4 | joiLib.joiLibStrings.uuidv5
-  type LanguageOptions = java.lang.String | scala.Boolean | scala.Null | org.scalablytyped.runtime.StringDictionary[js.Object]
+  type LanguageOptions = java.lang.String | scala.Boolean | scala.Null | (org.scalablytyped.runtime.StringDictionary[
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias joi.joi.LanguageOptions */ js.Object
+  ])
   type LanguageRootOptions = joiLib.Anon_Key with (stdLib.Partial[stdLib.Record[Types, LanguageOptions]])
   type LazySchema = AnySchema
   type Schema = AnySchema | ArraySchema | AlternativesSchema | BinarySchema | BooleanSchema | DateSchema | FunctionSchema | NumberSchema | ObjectSchema | StringSchema | LazySchema

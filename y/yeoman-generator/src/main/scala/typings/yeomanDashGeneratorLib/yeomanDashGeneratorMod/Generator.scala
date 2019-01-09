@@ -11,7 +11,7 @@ trait Generator
   var appname: java.lang.String = js.native
   var config: yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.Storage = js.native
   var description: java.lang.String = js.native
-  var env: yeomanDashGeneratorLib.Anon_Error = js.native
+  var env: yeomanDashGeneratorLib.Anon_E = js.native
   var fs: yeomanDashGeneratorLib.yeomanDashGeneratorMod.GeneratorNs.MemFsEditor = js.native
   var options: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var resolved: java.lang.String = js.native

@@ -62,7 +62,7 @@ class SpotFleetRequest protected ()
     * spot-fleet request. Can be specified multiple times to define different bids
     * across different markets and instance types.
     */
-  val launchSpecifications: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_IamInstanceProfileArn]] = js.native
+  val launchSpecifications: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Ami]] = js.native
   /**
     * A list of elastic load balancer names to add to the Spot fleet.
     */

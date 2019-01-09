@@ -54,13 +54,13 @@ object dompurifyModMembers extends js.Object {
   @JSName("sanitize")
   def sanitize_DocumentFragment(source: stdLib.Node, config: Config with dompurifyLib.Anon_RETURNDOMFRAGMENT): stdLib.DocumentFragment = js.native
   @JSName("sanitize")
-  def sanitize_HTMLElement(source: java.lang.String, config: Config with dompurifyLib.Anon_RETURNDOMTrue): stdLib.HTMLElement = js.native
+  def sanitize_HTMLElement(source: java.lang.String, config: Config with dompurifyLib.Anon_RETURNDOM): stdLib.HTMLElement = js.native
   @JSName("sanitize")
-  def sanitize_HTMLElement(source: stdLib.Node, config: Config with dompurifyLib.Anon_RETURNDOMTrue): stdLib.HTMLElement = js.native
+  def sanitize_HTMLElement(source: stdLib.Node, config: Config with dompurifyLib.Anon_RETURNDOM): stdLib.HTMLElement = js.native
   @JSName("sanitize")
-  def sanitize_String(source: java.lang.String, config: Config with dompurifyLib.Anon_RETURNDOM): java.lang.String = js.native
+  def sanitize_String(source: java.lang.String, config: Config with dompurifyLib.Anon_False): java.lang.String = js.native
   @JSName("sanitize")
-  def sanitize_String(source: stdLib.Node, config: Config with dompurifyLib.Anon_RETURNDOM): java.lang.String = js.native
+  def sanitize_String(source: stdLib.Node, config: Config with dompurifyLib.Anon_False): java.lang.String = js.native
   def setConfig(cfg: Config): scala.Unit = js.native
 }
 

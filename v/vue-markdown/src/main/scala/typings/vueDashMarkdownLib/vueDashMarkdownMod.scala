@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("vue-markdown", JSImport.Namespace)
 @js.native
 object vueDashMarkdownMod extends js.Object {
-  val default: vueDashMarkdownLib.Anon_Computed = js.native
-  val vue_markdown: vueDashMarkdownLib.Anon_Computed = js.native
+  val default: vueDashMarkdownLib.Anon_BeforeMount = js.native
+  val vue_markdown: vueDashMarkdownLib.Anon_BeforeMount = js.native
 }
 

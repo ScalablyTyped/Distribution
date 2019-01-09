@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   */
 trait ValidKioskManifest extends PartialManifest {
   /** Kiosk settings */
-  var kiosk: js.UndefOr[chromeDashAppsLib.Anon_Requiredplatformversion] = js.undefined
+  var kiosk: js.UndefOr[chromeDashAppsLib.Anon_Alwaysupdate] = js.undefined
   /**
     * Enable this app to be used as a kiosk app.
     */

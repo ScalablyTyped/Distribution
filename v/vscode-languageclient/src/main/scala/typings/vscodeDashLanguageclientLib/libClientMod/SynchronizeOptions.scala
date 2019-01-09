@@ -20,8 +20,8 @@ trait SynchronizeOptions extends js.Object {
     *
     */
   var fileEvents: js.UndefOr[
-    (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify VFileSystemWatcher */ js.Any) | (js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify VFileSystemWatcher */ _
+    (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VFileSystemWatcher */ js.Any) | (js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VFileSystemWatcher */ _
     ])
   ] = js.undefined
 }

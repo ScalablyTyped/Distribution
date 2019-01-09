@@ -15,12 +15,6 @@ trait AutoSizerProps
   */
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
-    * Function responsible for rendering children.
-    * This function should implement the following signature:
-    * ({ height, width }) => PropTypes.element
-    */
-  var children: js.Function1[/* props */ Size, reactLib.reactMod.ReactNs.ReactNode]
-  /**
     * 	Optional custom CSS class name to attach to root AutoSizer element.
     * This is an advanced property and is not typically necessary.
     */
@@ -48,5 +42,11 @@ trait AutoSizerProps
     * This is an advanced property and is not typically necessary.
     */
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  /**
+    * Function responsible for rendering children.
+    * This function should implement the following signature:
+    * ({ height, width }) => PropTypes.element
+    */
+  def children(props: Size): reactLib.reactMod.ReactNs.ReactNode
 }
 

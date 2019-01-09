@@ -14,5 +14,5 @@ package object libComponentsGroupedListGroupedListDotTypesMod {
   ]) with (stdLib.Pick[
     IGroupedListProps, 
     officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.className
-  ]) with officeDashUiDashFabricDashReactLib.Anon_IsCollapsed
+  ]) with officeDashUiDashFabricDashReactLib.Anon_CompactIsCollapsed
 }

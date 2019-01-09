@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial<recharts.recharts.PresentationAttributes<number, number>>) */ trait PolarAngleAxisProps extends EventAttributes {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof recharts.recharts.PresentationAttributes<number, number> ]:? recharts.recharts.PresentationAttributes<number, number>[P]} */ trait PolarAngleAxisProps extends EventAttributes {
   var angleAxisId: js.UndefOr[java.lang.String | scala.Double] = js.undefined
    // this seems not being used by the lib.
   var axisLine: js.UndefOr[scala.Boolean | js.Object] = js.undefined

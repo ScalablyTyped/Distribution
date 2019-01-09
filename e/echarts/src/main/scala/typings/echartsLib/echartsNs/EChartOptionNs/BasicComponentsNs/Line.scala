@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
   * @todo describe
   */
 trait Line extends js.Object {
-  var lineStyle: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColorOpacityShadowOffsetYTypeSolid
-  ] = js.undefined
+  var lineStyle: js.UndefOr[echartsLib.Anon_Color] = js.undefined
   var onZero: js.UndefOr[scala.Boolean] = js.undefined
   var onZeroAxisIndex: js.UndefOr[scala.Double] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined

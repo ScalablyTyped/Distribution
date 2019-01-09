@@ -19,7 +19,7 @@ trait AmericanExpress extends js.Object {
     * @param {callback} callback The second argument, `data`, is the {@link AmericanExpress} instance.
     * @returns {void}
     */
-  def create(options: braintreeDashWebLib.Anon_Client_64751587, callback: callback): scala.Unit
+  def create(options: braintreeDashWebLib.Anon_Client, callback: callback): scala.Unit
   /**
     * Gets the Express Checkout nonce profile given a nonce from American Express.
     * @public
@@ -42,7 +42,7 @@ trait AmericanExpress extends js.Object {
     *   });
     * });
     */
-  def getExpressCheckoutProfile(options: braintreeDashWebLib.Anon_NonceString, callback: callback): scala.Unit
+  def getExpressCheckoutProfile(options: braintreeDashWebLib.Anon_Nonce, callback: callback): scala.Unit
   /**
     * Gets the rewards balance associated with a Braintree nonce.
     * @public
@@ -65,6 +65,6 @@ trait AmericanExpress extends js.Object {
     *   });
     * });
     */
-  def getRewardsBalance(options: braintreeDashWebLib.Anon_NonceString, callback: callback): scala.Unit
+  def getRewardsBalance(options: braintreeDashWebLib.Anon_Nonce, callback: callback): scala.Unit
 }
 

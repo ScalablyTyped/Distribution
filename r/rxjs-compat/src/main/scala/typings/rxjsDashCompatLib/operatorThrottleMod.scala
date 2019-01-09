@@ -15,7 +15,7 @@ object operatorThrottleMod extends js.Object {
   def throttle[T](
     `this`: rxjsLib.rxjsMod.Observable[T],
     durationSelector: js.Function1[/* value */ T, rxjsLib.internalTypesMod.SubscribableOrPromise[_]],
-    config: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ThrottleConfig */ js.Any
+    config: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ThrottleConfig */ js.Any
   ): rxjsLib.rxjsMod.Observable[T] = js.native
 }
 

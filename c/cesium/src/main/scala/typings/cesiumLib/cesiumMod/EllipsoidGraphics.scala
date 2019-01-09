@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class EllipsoidGraphics ()
   extends cesiumLib.cesiumMod.CesiumNs.EllipsoidGraphics {
-  def this(options: cesiumLib.Anon_Subdivisions) = this()
+  def this(options: cesiumLib.Anon_Fill) = this()
 }
 

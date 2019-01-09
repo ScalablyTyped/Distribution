@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class PolylineGraphics ()
   extends cesiumLib.cesiumMod.CesiumNs.PolylineGraphics {
-  def this(options: cesiumLib.Anon_ShowPositions) = this()
+  def this(options: cesiumLib.Anon_FollowSurface) = this()
 }
 

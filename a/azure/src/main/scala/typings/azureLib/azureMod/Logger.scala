@@ -25,7 +25,7 @@ class Logger () extends js.Object {
 @JSImport("azure", "Logger")
 @js.native
 object Logger extends js.Object {
-  var LogLevels: azureLib.Anon_NOTICE = js.native
+  var LogLevels: azureLib.Anon_ALERT = js.native
   var logPriority: js.Array[java.lang.String] = js.native
 }
 

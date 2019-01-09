@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class GridMaterialProperty ()
   extends cesiumLib.cesiumMod.CesiumNs.GridMaterialProperty {
-  def this(options: cesiumLib.Anon_LineCount) = this()
+  def this(options: cesiumLib.Anon_CellAlpha) = this()
 }
 

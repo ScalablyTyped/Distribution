@@ -36,7 +36,7 @@ trait KeymapManager extends js.Object {
   def destroy(): scala.Unit = js.native
   /** Get the key bindings for a given command and optional target. */
   def findKeyBindings(): js.Array[KeyBinding] = js.native
-  def findKeyBindings(params: atomLib.Anon_Keystrokes): js.Array[KeyBinding] = js.native
+  def findKeyBindings(params: atomLib.Anon_Command): js.Array[KeyBinding] = js.native
   // Accessing Bindings
   /** Get all current key bindings. */
   def getKeyBindings(): js.Array[KeyBinding] = js.native
@@ -56,7 +56,7 @@ trait KeymapManager extends js.Object {
   // Managing Keymap Files
   /** Load the key bindings from the given path. */
   def loadKeymap(bindingsPath: java.lang.String): scala.Unit = js.native
-  def loadKeymap(bindingsPath: java.lang.String, options: atomLib.Anon_Watch): scala.Unit = js.native
+  def loadKeymap(bindingsPath: java.lang.String, options: atomLib.Anon_Priority): scala.Unit = js.native
   /** Invoke the given callback when one or more keystrokes fail to match any bindings. */
   def onDidFailToMatchBinding(callback: js.Function1[/* event */ FailedKeybindingMatchEvent, scala.Unit]): Disposable = js.native
   /** Invoke the given callback when a keymap file not able to be loaded. */
@@ -75,6 +75,6 @@ trait KeymapManager extends js.Object {
     *  it changes.
     */
   def watchKeymap(filePath: java.lang.String): scala.Unit = js.native
-  def watchKeymap(filePath: java.lang.String, options: atomLib.Anon_Priority): scala.Unit = js.native
+  def watchKeymap(filePath: java.lang.String, options: atomLib.Anon_PriorityNumber): scala.Unit = js.native
 }
 

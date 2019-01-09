@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("uniqid", JSImport.Namespace)
 @js.native
 object uniqidMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_Process]
+  extends org.scalablytyped.runtime.TopLevel[Anon_Prefix]
 

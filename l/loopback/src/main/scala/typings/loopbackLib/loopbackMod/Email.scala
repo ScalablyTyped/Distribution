@@ -107,6 +107,6 @@ object Email extends js.Object {
     * @prop {string} html Body HTML (optional)
     * @param {() => void} callback Called after the e-mail is sent or the sending faile
     */
-  def send(callback: js.Function0[scala.Unit], options: loopbackLib.Anon_Subject): scala.Unit = js.native
+  def send(callback: js.Function0[scala.Unit], options: loopbackLib.Anon_From): scala.Unit = js.native
 }
 

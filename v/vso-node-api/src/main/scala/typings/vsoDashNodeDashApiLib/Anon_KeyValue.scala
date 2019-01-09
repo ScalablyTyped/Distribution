@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Anon_KeyValue extends js.Object {
   var key: java.lang.String
-  var value: js.Array[Anon_Key]
+  var value: js.Array[
+    vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeColorAndIcon
+  ]
 }
 

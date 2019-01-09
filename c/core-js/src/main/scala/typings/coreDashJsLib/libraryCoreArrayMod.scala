@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/core/array", JSImport.Namespace)
 @js.native
 object libraryCoreArrayMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_Find]
+  extends org.scalablytyped.runtime.TopLevel[Anon_A]
 

@@ -95,26 +95,26 @@ trait PackageAPI
   def use(
     packageNames: java.lang.String,
     architecture: java.lang.String,
-    options: meteorDashTypingsLib.Anon_Weak
+    options: meteorDashTypingsLib.Anon_Unordered
   ): scala.Unit = js.native
   def use(packageNames: java.lang.String, architecture: js.Array[java.lang.String]): scala.Unit = js.native
   def use(
     packageNames: java.lang.String,
     architecture: js.Array[java.lang.String],
-    options: meteorDashTypingsLib.Anon_Weak
+    options: meteorDashTypingsLib.Anon_Unordered
   ): scala.Unit = js.native
   def use(packageNames: js.Array[java.lang.String]): scala.Unit = js.native
   def use(packageNames: js.Array[java.lang.String], architecture: java.lang.String): scala.Unit = js.native
   def use(
     packageNames: js.Array[java.lang.String],
     architecture: java.lang.String,
-    options: meteorDashTypingsLib.Anon_Weak
+    options: meteorDashTypingsLib.Anon_Unordered
   ): scala.Unit = js.native
   def use(packageNames: js.Array[java.lang.String], architecture: js.Array[java.lang.String]): scala.Unit = js.native
   def use(
     packageNames: js.Array[java.lang.String],
     architecture: js.Array[java.lang.String],
-    options: meteorDashTypingsLib.Anon_Weak
+    options: meteorDashTypingsLib.Anon_Unordered
   ): scala.Unit = js.native
   def versionsFrom(meteorRelease: java.lang.String): scala.Unit = js.native
   def versionsFrom(meteorRelease: js.Array[java.lang.String]): scala.Unit = js.native

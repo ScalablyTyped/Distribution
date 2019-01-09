@@ -17,7 +17,11 @@ package object mongoritoMod {
     ]
   ]
   type PluginNext = js.Function1[/* action */ Action, scala.Unit]
-  type Reducer[S] = js.Function2[/* state */ S, /* action */ Action, js.Object]
+  type Reducer[S] = js.Function2[
+    /* state */ S, 
+    /* action */ Action, 
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias mongorito.mongorito.Reducer */ js.Object
+  ]
   type ReducerModifier = js.Function1[/* reducerState */ ReducerState, ReducerState]
   type ReducerState = DefaultReducer with (stdLib.Map[_, Reducer[_]])
   type State = DefaultState with js.Any

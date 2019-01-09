@@ -16,9 +16,9 @@ class File protected () extends js.Object {
     * Appends the given data to the file
     */
   def append(buffer: java.lang.String): js.Promise[scala.Unit] = js.native
-  def append(buffer: java.lang.String, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def append(buffer: java.lang.String, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def append(buffer: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
-  def append(buffer: nodeLib.Buffer, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def append(buffer: nodeLib.Buffer, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def chmod(mode: Mode): js.Promise[scala.Unit] = js.native
   /**
     * Changes the file premissions
@@ -55,7 +55,7 @@ class File protected () extends js.Object {
     * Creates the file, writes an empty string
     */
   def create(): js.Promise[scala.Unit] = js.native
-  def create(options: adoneLib.Anon_Mode): js.Promise[scala.Unit] = js.native
+  def create(options: adoneLib.Anon_ModeNumber): js.Promise[scala.Unit] = js.native
   /**
     * Returns the file dirname
     */
@@ -137,8 +137,8 @@ class File protected () extends js.Object {
     * Writes the given data to the file
     */
   def write(buffer: java.lang.String): js.Promise[scala.Unit] = js.native
-  def write(buffer: java.lang.String, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def write(buffer: java.lang.String, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def write(buffer: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
-  def write(buffer: nodeLib.Buffer, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def write(buffer: nodeLib.Buffer, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
 }
 

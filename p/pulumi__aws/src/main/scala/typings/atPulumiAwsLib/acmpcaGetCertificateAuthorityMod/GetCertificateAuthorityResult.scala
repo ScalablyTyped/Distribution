@@ -38,7 +38,9 @@ trait GetCertificateAuthorityResult extends js.Object {
     * * `revocation_configuration.0.crl_configuration.0.expiration_in_days` - Number of days until a certificate expires.
     * * `revocation_configuration.0.crl_configuration.0.s3_bucket_name` - Name of the S3 bucket that contains the CRL.
     */
-  val revocationConfigurations: js.Array[atPulumiAwsLib.Anon_CrlConfigurations]
+  val revocationConfigurations: js.Array[
+    atPulumiAwsLib.Anon_CrlConfigurationsAnonCustomCnameEnabledExpirationInDaysS3BucketName
+  ]
   /**
     * Serial number of the certificate authority. Only available after the certificate authority certificate has been imported.
     */

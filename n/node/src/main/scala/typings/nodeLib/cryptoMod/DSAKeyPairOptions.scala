@@ -14,7 +14,7 @@ trait DSAKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] exten
     * Key size in bits
     */
   var modulusLength: scala.Double
-  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with nodeLib.Anon_TypePkcs8
-  var publicKeyEncoding: nodeLib.Anon_TypeSpki[PubF]
+  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with nodeLib.Anon_Pkcs8
+  var publicKeyEncoding: nodeLib.Anon_FormatSpki[PubF]
 }
 

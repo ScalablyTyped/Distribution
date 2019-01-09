@@ -13,7 +13,7 @@ trait LoggerOptions extends js.Object {
   /**
     * Browser only, see http://getpino.io/#/?id=pino-in-the-browser.
     */
-  var browser: js.UndefOr[pinoLib.Anon_Write] = js.undefined
+  var browser: js.UndefOr[pinoLib.Anon_AsObject] = js.undefined
   /**
     * Changes the property `level` to any string value you pass in. Default: 'level'
     */

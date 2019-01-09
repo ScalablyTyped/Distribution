@@ -420,9 +420,7 @@ trait SeriesBar extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.emphasis
     */
-  var emphasis: js.UndefOr[
-    echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBarBorderWidthBarBorderColorAnonShadowOffsetXBackgroundColorShowAlign
-  ] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyle] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -476,7 +474,7 @@ trait SeriesBar extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_UnknownPropertyShadowOffsetXBarBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BarBorderColor] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -488,7 +486,7 @@ trait SeriesBar extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.label
     */
-  var label: js.UndefOr[echartsLib.Anon_UnknownPropertyShadowOffsetXBackgroundColor] = js.undefined
+  var label: js.UndefOr[echartsLib.Anon_AlignBackgroundColor] = js.undefined
   /**
     * Whether to enable the optimization of large-scale data.
     * It could be set when large data causes performance problem.
@@ -530,21 +528,21 @@ trait SeriesBar extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markArea
     */
-  var markArea: js.UndefOr[echartsLib.Anon_Silent] = js.undefined
+  var markArea: js.UndefOr[echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markLine
     */
-  var markLine: js.UndefOr[echartsLib.Anon_Precision] = js.undefined
+  var markLine: js.UndefOr[echartsLib.Anon_AnimationAnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_SilentData] = js.undefined
+  var markPoint: js.UndefOr[echartsLib.Anon_Animation] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -634,7 +632,7 @@ trait SeriesBar extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-bar.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "bar"

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class PathGraphics ()
   extends cesiumLib.cesiumMod.CesiumNs.PathGraphics {
-  def this(options: cesiumLib.Anon_ShowTrailTime) = this()
+  def this(options: cesiumLib.Anon_DistanceDisplayCondition) = this()
 }
 

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Dropped new Some()Some((args  : ...any))Some(: react-native.react-native.NativeMethodsMixin) */ @JSImport("react-native", "TouchableHighlight")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "TouchableHighlight")
 @js.native
 class TouchableHighlight () extends js.Object
 

@@ -33,7 +33,7 @@ class DeliveryChannel protected ()
   /**
     * Options for how AWS Config delivers configuration snapshots. See below
     */
-  val snapshotDeliveryProperties: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeliveryFrequencyString]] = js.native
+  val snapshotDeliveryProperties: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeliveryFrequency]] = js.native
   /**
     * The ARN of the SNS topic that AWS Config delivers notifications to.
     */

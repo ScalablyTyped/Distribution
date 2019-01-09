@@ -39,7 +39,7 @@ trait _ServerCapabilities extends js.Object {
   /**
     * The server provides document formatting on typing.
     */
-  var documentOnTypeFormattingProvider: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_MoreTriggerCharacter] = js.undefined
+  var documentOnTypeFormattingProvider: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_FirstTriggerCharacter] = js.undefined
   /**
     * The server provides document range formatting.
     */

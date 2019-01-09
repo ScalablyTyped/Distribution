@@ -12,8 +12,8 @@ trait CanvasCameraOptions extends js.Object {
   var cameraFacing: js.UndefOr[
     cordovaDashPluginDashCanvascameraLib.cordovaDashPluginDashCanvascameraLibStrings.front | cordovaDashPluginDashCanvascameraLib.cordovaDashPluginDashCanvascameraLibStrings.back
   ] = js.undefined
-  var canvas: js.UndefOr[Anon_Height] = js.undefined
-  var capture: js.UndefOr[Anon_Height] = js.undefined
+  var canvas: js.UndefOr[Anon_HeightWidth] = js.undefined
+  var capture: js.UndefOr[Anon_HeightWidth] = js.undefined
   /**
     * Boolean, optional, default: false, a boolean to set flash mode on/off.
     */

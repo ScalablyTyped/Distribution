@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/utilities/lib/KeyCodes", JSImport.Namespace)
 @js.native
 object libKeyCodesModMembers extends js.Object {
-  val KeyCodes: atUifabricUtilitiesLib.Anon_E = js.native
+  val KeyCodes: atUifabricUtilitiesLib.Anon_100 = js.native
 }
 

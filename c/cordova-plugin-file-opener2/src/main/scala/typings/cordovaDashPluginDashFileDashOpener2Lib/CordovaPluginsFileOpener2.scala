@@ -11,7 +11,7 @@ trait CordovaPluginsFileOpener2 extends js.Object {
     * Check if an app is already installed. Android platform only.
     */
   def appIsInstalled(packageId: java.lang.String): scala.Unit = js.native
-  def appIsInstalled(packageId: java.lang.String, callbackContext: Anon_Success): scala.Unit = js.native
+  def appIsInstalled(packageId: java.lang.String, callbackContext: Anon_Error): scala.Unit = js.native
   /**
     * Open a file with the default file opener and optional callback object:
     */

@@ -20,7 +20,7 @@ trait ClientOptions extends js.Object {
   /**
     * `logger` - a logger object that responds to `log(string)` method calls.
     */
-  var logger: js.UndefOr[memjsLib.Anon_Log] = js.undefined
+  var logger: js.UndefOr[memjsLib.Anon_Args] = js.undefined
   /**
     * `retries` - the number of times to retry an operation in lieu of failures
     * (default 2)

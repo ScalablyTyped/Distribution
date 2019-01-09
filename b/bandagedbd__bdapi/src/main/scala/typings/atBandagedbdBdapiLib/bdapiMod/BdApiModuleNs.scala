@@ -11,11 +11,11 @@ object BdApiModuleNs extends js.Object {
   /**
   	 * The React module being used inside Discord.
   	 */
-  val React: atBandagedbdBdapiLib.Anon_Lazy = js.native
+  val React: atBandagedbdBdapiLib.Anon_A = js.native
   /**
   	 * The ReactDOM module being used inside Discord.
   	 */
-  val ReactDOM: atBandagedbdBdapiLib.Anon_CreatePortal = js.native
+  val ReactDOM: atBandagedbdBdapiLib.Anon_AB = js.native
   /**
   	 * Creates an shows an alert modal to the user. A preview of how it may look can be found [here](https://i.zackrauen.com/7qnnNC.png).
   	 */

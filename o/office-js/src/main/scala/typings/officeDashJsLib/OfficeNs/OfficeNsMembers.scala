@@ -89,8 +89,8 @@ object OfficeNsMembers extends js.Object {
     *                   Alternatively, rather than use a callback, an add-in may simply wait for the Promise returned by the function to resolve.
     * @returns A Promise that contains the host and platform info, once initialization is completed.
     */
-  def onReady(): js.Promise[officeDashJsLib.Anon_Platform] = js.native
-  def onReady(callback: js.Function1[/* info */ officeDashJsLib.Anon_Platform, _]): js.Promise[officeDashJsLib.Anon_Platform] = js.native
+  def onReady(): js.Promise[officeDashJsLib.Anon_Host] = js.native
+  def onReady(callback: js.Function1[/* info */ officeDashJsLib.Anon_Host, _]): js.Promise[officeDashJsLib.Anon_Host] = js.native
   /**
     * Returns a promise of an object described in the expression. Callback is invoked only if method fails.
     * 

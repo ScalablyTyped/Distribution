@@ -14,7 +14,7 @@ class default[TCache] protected () extends ApolloProvider[TCache] {
 @JSImport("react-apollo/ApolloProvider", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var childContextTypes: reactDashApolloLib.Anon_ClientOperationsValidator = js.native
-  var propTypes: reactDashApolloLib.Anon_ClientChildren = js.native
+  var childContextTypes: reactDashApolloLib.Anon_Client = js.native
+  var propTypes: reactDashApolloLib.Anon_Children = js.native
 }
 

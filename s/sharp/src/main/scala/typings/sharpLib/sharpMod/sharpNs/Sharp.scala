@@ -411,7 +411,7 @@ trait Sharp
       scala.Unit
     ]
   ): Sharp = js.native
-  def toBuffer(options: sharpLib.Anon_ResolveWithObject): js.Promise[nodeLib.Buffer] = js.native
+  def toBuffer(options: sharpLib.Anon_False): js.Promise[nodeLib.Buffer] = js.native
   /**
     * Write output to a Buffer. JPEG, PNG, WebP, TIFF and RAW output are supported.
     * By default, the format will match the input image, except GIF and SVG input which become PNG output.
@@ -419,7 +419,7 @@ trait Sharp
     * @param options.resolveWithObject Resolve the Promise with an Object containing data and info properties instead of resolving only with data.
     * @returns A promise that resolves with an object containing the Buffer data and an info object containing the output image format, size (bytes), width, height and channels
     */
-  def toBuffer(options: sharpLib.Anon_ResolveWithObjectTrue): js.Promise[sharpLib.Anon_Data] = js.native
+  def toBuffer(options: sharpLib.Anon_ResolveWithObject): js.Promise[sharpLib.Anon_Data] = js.native
   /**
     * Alternative spelling of toColourspace().
     * @param colorspace output colorspace e.g. srgb, rgb, cmyk, lab, b-w ...

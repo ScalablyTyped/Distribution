@@ -7,6 +7,18 @@ import scala.scalajs.js.annotation._
 
 object meteorLibStrings {
   @js.native
+  sealed trait ArraysOrEach extends js.Object
+  
+  @js.native
+  sealed trait ElementsOf extends js.Object
+  
+  @js.native
+  sealed trait PushModifier extends js.Object
+  
+  @js.native
+  sealed trait Query extends js.Object
+  
+  @js.native
   sealed trait array extends js.Object
   
   @js.native
@@ -87,6 +99,10 @@ object meteorLibStrings {
   @js.native
   sealed trait waiting extends js.Object
   
+  def ArraysOrEach: ArraysOrEach = "ArraysOrEach".asInstanceOf[ArraysOrEach]
+  def ElementsOf: ElementsOf = "ElementsOf".asInstanceOf[ElementsOf]
+  def PushModifier: PushModifier = "PushModifier".asInstanceOf[PushModifier]
+  def Query: Query = "Query".asInstanceOf[Query]
   def array: array = "array".asInstanceOf[array]
   def binData: binData = "binData".asInstanceOf[binData]
   def bool: bool = "bool".asInstanceOf[bool]

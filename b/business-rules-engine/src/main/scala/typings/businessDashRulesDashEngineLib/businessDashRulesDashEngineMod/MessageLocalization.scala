@@ -12,9 +12,9 @@ class MessageLocalization () extends js.Object
 @JSImport("business-rules-engine", "MessageLocalization")
 @js.native
 object MessageLocalization extends js.Object {
-  var ValidationMessages: businessDashRulesDashEngineLib.Anon_Number = js.native
+  var ValidationMessages: businessDashRulesDashEngineLib.Anon_Contains = js.native
   var customMsg: java.lang.String = js.native
-  var defaultMessages: businessDashRulesDashEngineLib.Anon_Number = js.native
+  var defaultMessages: businessDashRulesDashEngineLib.Anon_Contains = js.native
   def GetValidationMessage(validator: js.Any): java.lang.String = js.native
 }
 

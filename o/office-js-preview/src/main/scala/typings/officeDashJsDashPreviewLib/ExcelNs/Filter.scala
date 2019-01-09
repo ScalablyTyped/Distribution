@@ -177,7 +177,7 @@ class Filter ()
   def load(): Filter = js.native
   def load(option: java.lang.String): Filter = js.native
   def load(option: js.Array[java.lang.String]): Filter = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Filter = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Filter = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.FilterLoadOptions): Filter = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)

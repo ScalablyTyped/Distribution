@@ -468,7 +468,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] ex
     handler: vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.RequestHandler[
       vscodeDashLanguageserverDashProtocolLib.libProtocolMod.TextDocumentPositionParams, 
       js.UndefOr[
-        vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range | vscodeDashLanguageserverLib.Anon_Range | scala.Null
+        vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Range | vscodeDashLanguageserverLib.Anon_Placeholder | scala.Null
       ], 
       scala.Unit
     ]

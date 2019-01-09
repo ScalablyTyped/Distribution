@@ -13,7 +13,7 @@ trait CommonQueryFilters extends js.Object {
   /**
     * Addition filters to be applied on the history query. The object will be converted into query string parameters.
     */
-  var params: js.UndefOr[fhirDashJsDashClientLib.Anon_PropName] = js.undefined
+  var params: js.UndefOr[fhirDashJsDashClientLib.Anon_At] = js.undefined
   /**
     * Only include resource versions that were created at or after the given instant in time
     *

@@ -32,7 +32,7 @@ class OperatingSystem ()
     * Outputs a JSON string of the OS, values are defaulted to undefined so they are not outputed in the stringify.
     */
   /* CompleteClass */
-  override def toJSON(): useragentLib.Anon_Minor = js.native
+  override def toJSON(): useragentLib.Anon_Family = js.native
   /**
     * Generates the version of the Operating System.
     */

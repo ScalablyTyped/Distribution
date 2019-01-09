@@ -31,7 +31,7 @@ trait UploaderOption extends js.Object {
   var fileList: js.UndefOr[java.lang.String] = js.undefined
   var fileTemplate: js.UndefOr[java.lang.String] = js.undefined
   var file_data_name: js.UndefOr[java.lang.String] = js.undefined
-  var filters: js.UndefOr[Anon_Mimetype] = js.undefined
+  var filters: js.UndefOr[Anon_Maxfilesize] = js.undefined
   var flash_swf_url: js.UndefOr[java.lang.String] = js.undefined
   var headers: js.UndefOr[js.Object] = js.undefined
   var lang: js.UndefOr[java.lang.String] = js.undefined
@@ -44,7 +44,7 @@ trait UploaderOption extends js.Object {
   var onChunkUploaded: js.UndefOr[
     js.Function2[/* file */ FileObj, /* responseObject */ ResponseObject, scala.Unit]
   ] = js.undefined
-  var onError: js.UndefOr[js.Function1[/* error */ Anon_File, scala.Unit]] = js.undefined
+  var onError: js.UndefOr[js.Function1[/* error */ Anon_Error, scala.Unit]] = js.undefined
   var onFileUploaded: js.UndefOr[
     js.Function2[/* file */ FileObj, /* responseObject */ ResponseObject, scala.Unit]
   ] = js.undefined
@@ -64,13 +64,13 @@ trait UploaderOption extends js.Object {
   var renameActionOnDone: js.UndefOr[scala.Boolean] = js.undefined
   var renameByClick: js.UndefOr[scala.Boolean] = js.undefined
   var renameExtension: js.UndefOr[scala.Boolean] = js.undefined
-  var resize: js.UndefOr[Anon_Preserveheaders] = js.undefined
+  var resize: js.UndefOr[Anon_Crop] = js.undefined
   var responseHandler: js.UndefOr[scala.Boolean | CallBack] = js.undefined
   var runtimes: js.UndefOr[java.lang.String] = js.undefined
   var sendFileId: js.UndefOr[scala.Boolean] = js.undefined
   var sendFileName: js.UndefOr[scala.Boolean] = js.undefined
   var silverlight_xap_url: js.UndefOr[java.lang.String] = js.undefined
-  var staticFiles: js.UndefOr[js.Array[Anon_Name]] = js.undefined
+  var staticFiles: js.UndefOr[js.Array[Anon_Id]] = js.undefined
   var statusCreator: js.UndefOr[
     js.Function3[/* total */ UploadProgress, /* state */ STATUS, /* uploader */ Uploader, scala.Unit]
   ] = js.undefined

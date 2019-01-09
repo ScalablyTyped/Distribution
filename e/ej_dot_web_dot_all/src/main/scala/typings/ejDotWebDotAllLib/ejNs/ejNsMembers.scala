@@ -22,7 +22,7 @@ object ejNsMembers extends js.Object {
   val transitionDuration: java.lang.String = js.native
   val transitionProperty: java.lang.String = js.native
   val transitionTimingFunction: java.lang.String = js.native
-  val util: ejDotWebDotAllLib.Anon_ValueFunction = js.native
+  val util: ejDotWebDotAllLib.Anon_Val = js.native
   def addCulture(name: java.lang.String): scala.Unit = js.native
   def addCulture(name: java.lang.String, culture: js.Any): scala.Unit = js.native
   def addPrefix(style: java.lang.String): java.lang.String = js.native

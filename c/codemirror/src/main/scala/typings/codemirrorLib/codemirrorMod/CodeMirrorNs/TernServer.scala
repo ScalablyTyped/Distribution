@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TernServer extends js.Object {
-  val docs: org.scalablytyped.runtime.StringDictionary[codemirrorLib.Anon_Doc] = js.native
+  val docs: org.scalablytyped.runtime.StringDictionary[codemirrorLib.Anon_Changed] = js.native
   val options: TernOptions = js.native
   val server: ternLib.libTernMod.Server = js.native
-  def addDoc(name: java.lang.String, doc: Doc): codemirrorLib.Anon_DocName = js.native
+  def addDoc(name: java.lang.String, doc: Doc): codemirrorLib.Anon_ChangedDoc = js.native
   def complete(cm: Doc): scala.Unit = js.native
   def delDoc(id: Doc): scala.Unit = js.native
   def delDoc(id: Editor): scala.Unit = js.native

@@ -15,7 +15,7 @@ trait DefaultLinkModelListener
   ] = js.undefined
   var widthChanged: js.UndefOr[
     js.Function1[
-      /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[DefaultLinkModel] with stormDashReactDashDiagramsLib.Anon_Width, 
+      /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[DefaultLinkModel] with stormDashReactDashDiagramsLib.Anon_0, 
       scala.Unit
     ]
   ] = js.undefined

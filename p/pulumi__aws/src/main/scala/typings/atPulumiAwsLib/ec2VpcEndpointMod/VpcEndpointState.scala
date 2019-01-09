@@ -21,7 +21,7 @@ trait VpcEndpointState extends js.Object {
     */
   val dnsEntries: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HostedZoneIdDnsName]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DnsNameHostedZoneId]]
     ]
   ] = js.undefined
   /**

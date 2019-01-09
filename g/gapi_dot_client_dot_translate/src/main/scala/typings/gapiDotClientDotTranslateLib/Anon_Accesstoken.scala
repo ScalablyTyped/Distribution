@@ -21,6 +21,8 @@ trait Anon_Accesstoken extends js.Object {
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
+  /** The model type for which supported languages should be returned. */
+  var model: js.UndefOr[java.lang.String] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
@@ -32,6 +34,11 @@ trait Anon_Accesstoken extends js.Object {
     * Overrides userIp if both are provided.
     */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The language to use to return localized, human readable names of supported
+    * languages.
+    */
+  var target: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined
   /** Upload protocol for media (e.g. "raw", "multipart"). */

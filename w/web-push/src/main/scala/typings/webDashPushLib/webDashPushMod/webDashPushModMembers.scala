@@ -44,7 +44,7 @@ object webDashPushModMembers extends js.Object {
     publicKey: java.lang.String,
     privateKey: java.lang.String,
     contentEncoding: ContentEncoding
-  ): webDashPushLib.Anon_CryptoKeyAuthorization = js.native
+  ): webDashPushLib.Anon_AuthorizationCryptoKeyString = js.native
   def getVapidHeaders(
     audience: java.lang.String,
     subject: java.lang.String,
@@ -52,7 +52,7 @@ object webDashPushModMembers extends js.Object {
     privateKey: java.lang.String,
     contentEncoding: ContentEncoding,
     expiration: scala.Double
-  ): webDashPushLib.Anon_CryptoKeyAuthorization = js.native
+  ): webDashPushLib.Anon_AuthorizationCryptoKeyString = js.native
   @JSName("getVapidHeaders")
   def getVapidHeaders_aes128gcm(
     audience: java.lang.String,
@@ -77,7 +77,7 @@ object webDashPushModMembers extends js.Object {
     publicKey: java.lang.String,
     privateKey: java.lang.String,
     contentEncoding: webDashPushLib.webDashPushLibStrings.aesgcm
-  ): webDashPushLib.Anon_CryptoKey = js.native
+  ): webDashPushLib.Anon_AuthorizationCryptoKey = js.native
   @JSName("getVapidHeaders")
   def getVapidHeaders_aesgcm(
     audience: java.lang.String,
@@ -86,7 +86,7 @@ object webDashPushModMembers extends js.Object {
     privateKey: java.lang.String,
     contentEncoding: webDashPushLib.webDashPushLibStrings.aesgcm,
     expiration: scala.Double
-  ): webDashPushLib.Anon_CryptoKey = js.native
+  ): webDashPushLib.Anon_AuthorizationCryptoKey = js.native
   def sendNotification(subscription: PushSubscription): js.Promise[SendResult] = js.native
   def sendNotification(subscription: PushSubscription, payload: java.lang.String): js.Promise[SendResult] = js.native
   def sendNotification(subscription: PushSubscription, payload: java.lang.String, options: RequestOptions): js.Promise[SendResult] = js.native

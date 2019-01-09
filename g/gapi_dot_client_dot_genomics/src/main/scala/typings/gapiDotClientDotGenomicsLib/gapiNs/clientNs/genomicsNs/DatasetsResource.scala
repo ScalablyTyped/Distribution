@@ -13,7 +13,7 @@ trait DatasetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def create(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
+  def create(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
   /**
     * Deletes a dataset and all of its contents (all read group sets,
     * reference sets, variant sets, call sets, annotation sets, etc.)
@@ -26,7 +26,7 @@ trait DatasetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def delete(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Gets a dataset by ID.
     *
@@ -34,7 +34,7 @@ trait DatasetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def get(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
+  def get(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
   /**
     * Gets the access control policy for the dataset. This is empty if the
     * policy or resource does not exist.
@@ -46,7 +46,7 @@ trait DatasetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def getIamPolicy(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+  def getIamPolicy(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
   /**
     * Lists datasets within a project.
     *
@@ -54,7 +54,7 @@ trait DatasetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def list(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPageSizePrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[ListDatasetsResponse]
+  def list(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[ListDatasetsResponse]
   /**
     * Updates a dataset.
     *
@@ -64,7 +64,7 @@ trait DatasetsResource extends js.Object {
     *
     * This method supports patch semantics.
     */
-  def patch(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
+  def patch(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackDatasetId): gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
   /**
     * Sets the access control policy on the specified dataset. Replaces any
     * existing policy.
@@ -76,7 +76,7 @@ trait DatasetsResource extends js.Object {
     * See <a href="/iam/docs/managing-policies#setting_a_policy">Setting a
     * Policy</a> for more information.
     */
-  def setIamPolicy(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+  def setIamPolicy(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
   /**
     * Returns permissions that a caller has on the specified resource.
     * See <a href="/iam/docs/managing-policies#testing_permissions">Testing
@@ -86,7 +86,7 @@ trait DatasetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def testIamPermissions(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+  def testIamPermissions(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
   /**
     * Undeletes a dataset by restoring a dataset which was deleted via this API.
     *
@@ -96,6 +96,6 @@ trait DatasetsResource extends js.Object {
     *
     * This operation is only possible for a week after the deletion occurred.
     */
-  def undelete(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
+  def undelete(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Dataset]
 }
 

@@ -13,7 +13,7 @@ class RenderTarget protected () extends js.Object {
   var clearColor: js.Array[scala.Double] = js.native
   var defaultFrame: Rectangle = js.native
   var destinationFrame: Rectangle = js.native
-  var filterData: pixiDotJsLib.Anon_Stack = js.native
+  var filterData: pixiDotJsLib.Anon_Index = js.native
   var filterPoolKey: java.lang.String = js.native
   var frame: Rectangle = js.native
   var frameBuffer: pixiDotJsLib.PIXINs.glCoreNs.GLFramebuffer = js.native

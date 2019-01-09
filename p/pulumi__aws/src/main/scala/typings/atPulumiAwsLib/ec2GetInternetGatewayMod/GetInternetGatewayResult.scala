@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetInternetGatewayResult extends js.Object {
-  val attachments: js.Array[atPulumiAwsLib.Anon_StateVpcId]
+  val attachments: js.Array[atPulumiAwsLib.Anon_State]
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */

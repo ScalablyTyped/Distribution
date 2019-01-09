@@ -19,6 +19,6 @@ class Shape () extends js.Object {
 @JSGlobal("CANNON.Shape")
 @js.native
 object Shape extends js.Object {
-  var types: cannonLib.Anon_CYLINDER = js.native
+  var types: cannonLib.Anon_BOX = js.native
 }
 

@@ -27,7 +27,7 @@ class default () extends EncryptedData {
     * @returns {Promise}
     */
   /* CompleteClass */
-  override def encrypt(parameters: pkijsLib.Anon_HmacHashAlgorithm): js.Thenable[stdLib.ArrayBuffer] = js.native
+  override def encrypt(parameters: pkijsLib.Anon_ContentEncryptionAlgorithm): js.Thenable[stdLib.ArrayBuffer] = js.native
   /* CompleteClass */
   override def fromSchema(schema: js.Any): scala.Unit = js.native
   /* CompleteClass */

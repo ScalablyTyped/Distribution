@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object privacyNs extends js.Object {
   var network: sinonDashChromeLib.Anon_NetworkPredictionEnabled = js.native
-  var services: sinonDashChromeLib.Anon_SearchSuggestEnabled = js.native
-  var website: sinonDashChromeLib.Anon_ThirdPartyCookiesAllowed = js.native
+  var services: sinonDashChromeLib.Anon_AlternateErrorPagesEnabled = js.native
+  var website: sinonDashChromeLib.Anon_HyperlinkAuditingEnabled = js.native
 }
 

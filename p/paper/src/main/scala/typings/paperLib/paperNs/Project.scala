@@ -82,7 +82,7 @@ class Project protected () extends js.Object {
     * @param options.embedImages: whether raster images should be embedded as base64 data inlined in the xlink:href attribute, or kept as a link to their external URL.
     */
   def exportSVG(): stdLib.SVGElement = js.native
-  def exportSVG(options: paperLib.Anon_Precision): stdLib.SVGElement = js.native
+  def exportSVG(options: paperLib.Anon_AsStringBounds): stdLib.SVGElement = js.native
   /**
     * Fetch the first item contained within the project whose properties match the criteria in the specified object.
     * Extended matching is possible by providing a compare function or regular expression. Matching points, colors only work as a comparison of the full object, not partial matching (e.g. only providing the x- coordinate to match all points with that x-value). Partial matching does work for item.data.
@@ -151,7 +151,7 @@ class Project protected () extends js.Object {
     svg: java.lang.String,
     onLoad: js.Function2[/* item */ Item, /* svg */ java.lang.String, scala.Unit]
   ): Item = js.native
-  def importSVG(svg: java.lang.String, options: paperLib.Anon_InsertTrue): Item = js.native
+  def importSVG(svg: java.lang.String, options: paperLib.Anon_ApplyMatrixExpandShapes): Item = js.native
   /**
     * Converts the provided SVG content into Paper.js items and adds them to the active layer of this project.
     * Note that the project is not cleared first. You can call project.clear() to do so.
@@ -168,7 +168,7 @@ class Project protected () extends js.Object {
     svg: stdLib.SVGElement,
     onLoad: js.Function2[/* item */ Item, /* svg */ java.lang.String, scala.Unit]
   ): Item = js.native
-  def importSVG(svg: stdLib.SVGElement, options: paperLib.Anon_InsertTrue): Item = js.native
+  def importSVG(svg: stdLib.SVGElement, options: paperLib.Anon_ApplyMatrixExpandShapes): Item = js.native
   /**
     * Inserts the specified layer at the specified index in this project’s layers list.
     */

@@ -16,7 +16,7 @@ abstract class ResourceMapIterator () extends js.Object {
   /**
     * Returns all the items in the ResourceMap .
     */
-  def getMany(): winrtDashUwpLib.Anon_ItemsReturnValueIKeyValuePair = js.native
+  def getMany(): winrtDashUwpLib.Anon_ItemsReturnValueAny = js.native
   /**
     * Moves the iterator forward to the next item and returns HasCurrent .
     * @return TRUE if the iterator refers to a valid item that is in the map, and otherwise FALSE.

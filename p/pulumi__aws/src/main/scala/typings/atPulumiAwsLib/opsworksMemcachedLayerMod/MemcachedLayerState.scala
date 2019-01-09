@@ -59,7 +59,11 @@ trait MemcachedLayerState extends js.Object {
     * `ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
     */
   val ebsVolumes: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Size]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IopsMountPointNumberOfDisks]
+      ]
+    ]
   ] = js.undefined
   /**
     * Name of an Elastic Load Balancer to attach to this layer

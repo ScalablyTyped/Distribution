@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 trait KnockoutStatic extends js.Object {
   var bindingHandlers: KnockoutBindingHandlers = js.native
   /////////////////////////////////
-  var bindingProvider: Anon_Instance = js.native
+  var bindingProvider: Anon_InstanceKnockoutBindingProvider = js.native
   var components: KnockoutComponents = js.native
   var computedContext: KnockoutComputedContext = js.native
   @JSName("computed")
@@ -20,12 +20,12 @@ trait KnockoutStatic extends js.Object {
   //////////////////////////////////
   // jqueryTmplTemplateEngine.js
   //////////////////////////////////
-  var jqueryTmplTemplateEngine: Anon_RenderTemplateSource = js.native
+  var jqueryTmplTemplateEngine: Anon_AddTemplate = js.native
   var memoization: KnockoutMemoization = js.native
   //////////////////////////////////
   // nativeTemplateEngine.js
   //////////////////////////////////
-  var nativeTemplateEngine: Anon_InstanceKnockoutNativeTemplateEngine = js.native
+  var nativeTemplateEngine: Anon_Instance = js.native
   @JSName("observableArray")
   var observableArray_Original: KnockoutObservableArrayStatic = js.native
   @JSName("observable")
@@ -34,7 +34,7 @@ trait KnockoutStatic extends js.Object {
   /////////////////////////////////
   // selectExtensions.js
   /////////////////////////////////
-  var selectExtensions: Anon_ReadValue = js.native
+  var selectExtensions: Anon_Element = js.native
   var subscribable: KnockoutSubscribableStatic = js.native
   //////////////////////////////////
   // templateEngine.js

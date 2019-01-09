@@ -5,12 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Connection extends js.Object {
-  var Connection: org.scalablytyped.runtime.Instantiable3[
-    /* from */ scala.Double, 
-    /* to */ scala.Double, 
-    /* weight */ js.UndefOr[/* weight */ scala.Double], 
-    synapticLib.synapticMod.NeuronNs.Connection
-  ]
+@js.native
+trait Anon_Connection
+  extends org.scalablytyped.runtime.Instantiable0[synapticLib.synapticMod.Neuron] {
+  var Connection: Anon_From = js.native
+  val squashNs: Anon_Derivate = js.native
+  def quantity(): Anon_Connections = js.native
+  def uid(): scala.Double = js.native
 }
 

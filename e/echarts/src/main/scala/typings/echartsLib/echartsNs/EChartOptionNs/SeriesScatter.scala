@@ -382,9 +382,7 @@ trait SeriesScatter extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.emphasis
     */
-  var emphasis: js.UndefOr[
-    echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderTypeAnonShadowOffsetXBackgroundColorShowAlign
-  ] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -455,7 +453,7 @@ trait SeriesScatter extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidthColor] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -468,7 +466,7 @@ trait SeriesScatter extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.label
     */
   var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlign
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily
   ] = js.undefined
   /**
     * Whether to enable the optimization of large-scale data.
@@ -511,21 +509,21 @@ trait SeriesScatter extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markArea
     */
-  var markArea: js.UndefOr[echartsLib.Anon_Silent] = js.undefined
+  var markArea: js.UndefOr[echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markLine
     */
-  var markLine: js.UndefOr[echartsLib.Anon_Precision] = js.undefined
+  var markLine: js.UndefOr[echartsLib.Anon_AnimationAnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_SilentData] = js.undefined
+  var markPoint: js.UndefOr[echartsLib.Anon_Animation] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -716,7 +714,7 @@ trait SeriesScatter extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-scatter.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "scatter"

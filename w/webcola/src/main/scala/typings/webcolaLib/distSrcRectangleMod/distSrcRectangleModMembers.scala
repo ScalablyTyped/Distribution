@@ -14,7 +14,7 @@ object distSrcRectangleModMembers extends js.Object {
   def generateYConstraints(rs: js.Array[Rectangle], vars: js.Array[webcolaLib.distSrcVpscMod.Variable]): js.Array[webcolaLib.distSrcVpscMod.Constraint] = js.native
   def generateYGroupConstraints(root: ProjectionGroup): js.Array[webcolaLib.distSrcVpscMod.Constraint] = js.native
   def makeEdgeBetween(source: Rectangle, target: Rectangle, ah: scala.Double): webcolaLib.Anon_ArrowStart = js.native
-  def makeEdgeTo(s: webcolaLib.Anon_Y, target: Rectangle, ah: scala.Double): webcolaLib.distSrcGeomMod.Point = js.native
+  def makeEdgeTo(s: webcolaLib.Anon_X, target: Rectangle, ah: scala.Double): webcolaLib.distSrcGeomMod.Point = js.native
   def removeOverlaps(rs: js.Array[Rectangle]): scala.Unit = js.native
 }
 

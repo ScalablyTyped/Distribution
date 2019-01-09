@@ -14,7 +14,7 @@ trait TargetGroupArgs extends js.Object {
     * A Health Check block. Health Check blocks are documented below.
     */
   val healthCheck: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PathHealthyThresholdUnhealthyThreshold]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HealthyThresholdIntervalMatcher]
   ] = js.undefined
   /**
     * The name of the target group. If omitted, Terraform will assign a random, unique name.
@@ -44,7 +44,7 @@ trait TargetGroupArgs extends js.Object {
     * A Stickiness block. Stickiness blocks are documented below. `stickiness` is only valid if used with Load Balancers of type `Application`
     */
   val stickiness: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypeCookieDurationEnabled]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CookieDurationEnabledType]
   ] = js.undefined
   /**
     * A mapping of tags to assign to the resource.

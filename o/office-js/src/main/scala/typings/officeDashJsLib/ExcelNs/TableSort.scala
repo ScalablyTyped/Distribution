@@ -89,7 +89,7 @@ class TableSort ()
   def load(): TableSort = js.native
   def load(option: java.lang.String): TableSort = js.native
   def load(option: js.Array[java.lang.String]): TableSort = js.native
-  def load(option: officeDashJsLib.Anon_Select): TableSort = js.native
+  def load(option: officeDashJsLib.Anon_Expand): TableSort = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.TableSortLoadOptions): TableSort = js.native
   /**
     *

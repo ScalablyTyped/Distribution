@@ -75,7 +75,7 @@ trait Chart extends js.Object {
     * Export the chart as image (jpg / png).
     * @param options Setting when export
     */
-  def exportChart(options: canvasjsLib.Anon_ToDataURL): scala.Unit = js.native
+  def exportChart(options: canvasjsLib.Anon_FileName): scala.Unit = js.native
   /**
     * Returns the specified property of Chart.
     * @param propertyName Name of the property.

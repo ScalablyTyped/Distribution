@@ -215,8 +215,8 @@ object Color extends js.Object {
   def fromHsl(hue: scala.Double, saturation: scala.Double, lightness: scala.Double): cesiumLib.cesiumMod.CesiumNs.Color = js.native
   def fromHsl(hue: scala.Double, saturation: scala.Double, lightness: scala.Double, alpha: scala.Double): cesiumLib.cesiumMod.CesiumNs.Color = js.native
   def fromRandom(): cesiumLib.cesiumMod.CesiumNs.Color = js.native
-  def fromRandom(options: cesiumLib.Anon_AlphaBlue): cesiumLib.cesiumMod.CesiumNs.Color = js.native
-  def fromRandom(options: cesiumLib.Anon_AlphaBlue, result: cesiumLib.cesiumMod.CesiumNs.Color): cesiumLib.cesiumMod.CesiumNs.Color = js.native
+  def fromRandom(options: cesiumLib.Anon_Alpha): cesiumLib.cesiumMod.CesiumNs.Color = js.native
+  def fromRandom(options: cesiumLib.Anon_Alpha, result: cesiumLib.cesiumMod.CesiumNs.Color): cesiumLib.cesiumMod.CesiumNs.Color = js.native
   def fromRgba(rgba: scala.Double): cesiumLib.cesiumMod.CesiumNs.Color = js.native
   def mod(left: cesiumLib.cesiumMod.CesiumNs.Color, right: cesiumLib.cesiumMod.CesiumNs.Color): cesiumLib.cesiumMod.CesiumNs.Color = js.native
   def mod(

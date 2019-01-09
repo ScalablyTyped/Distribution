@@ -14,9 +14,7 @@ trait PipelineState extends js.Object {
     * An artifact_store block. Artifact stores are documented below.
     * * `stage` (Minimum of at least two `stage` blocks is required) A stage block. Stages are documented below.
     */
-  val artifactStore: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_LocationTypeEncryptionKey]
-  ] = js.undefined
+  val artifactStore: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EncryptionKeyLocation]] = js.undefined
   /**
     * The name of the pipeline.
     */
@@ -26,7 +24,7 @@ trait PipelineState extends js.Object {
     */
   val roleArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   val stages: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Actions]]]
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ActionsName]]]
   ] = js.undefined
 }
 

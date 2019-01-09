@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "SearchInput")
 @js.native
 class SearchInput ()
-  extends Component[reactDashOnsenuiLib.Anon_OnChange, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_DisabledEInputId, js.Any]
 

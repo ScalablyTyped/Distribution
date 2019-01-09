@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait NesClassExports extends js.Object {
-  var Client: nesLib.Anon_Url
+  var Client: nesLib.Anon_Options
 }
 

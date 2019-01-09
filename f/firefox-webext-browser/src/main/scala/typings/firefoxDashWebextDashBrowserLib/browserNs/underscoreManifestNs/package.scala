@@ -23,7 +23,7 @@ package object underscoreManifestNs {
     */
   type MatchPatternUnestricted = java.lang.String
   /** Represents a native manifest file */
-  type NativeManifest = firefoxDashWebextDashBrowserLib.Anon_NamePathDescription | firefoxDashWebextDashBrowserLib.Anon_TypeStorage
+  type NativeManifest = firefoxDashWebextDashBrowserLib.Anon_Allowedextensions | firefoxDashWebextDashBrowserLib.Anon_DataDescription
   /* _manifest types */
   type OptionalPermission = _OptionalPermission
   type OptionalPermissionOrOrigin = OptionalPermission | MatchPattern

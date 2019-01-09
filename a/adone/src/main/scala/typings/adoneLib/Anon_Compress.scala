@@ -7,20 +7,24 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Compress extends js.Object {
   /**
-    * rotator reads file's stats with this delay
-    */
-  var checkInterval: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-  /**
-    * compress old log files with gz
+    * If true, the file data will be deflated (compression method 8).
+    *
+    * If false, the file data will be stored (compression method 0)
     */
   var compress: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * number of files at time
+    * Use ZIP64 format in this entry's Data Descriptor and Central Directory Record
+    * regardless of if it's required or not (this may be useful for testing.).
+    * Otherwise, packer will use ZIP64 format where necessary.
     */
-  var maxFiles: js.UndefOr[scala.Double] = js.undefined
+  var forceZip64Format: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * maximum size of the file that triggers rotation
+    * Defines file mode, 0o100664 by default
     */
-  var maxSize: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  var mode: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * Defines modified date, now by default
+    */
+  var mtime: js.UndefOr[scala.Double] = js.undefined
 }
 

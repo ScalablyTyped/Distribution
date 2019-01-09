@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<@material-ui/core.@material-ui/core/FormGroup.FormGroupProps, std.Exclude<keyof @material-ui/core.@material-ui/core/FormGroup.FormGroupProps, 'classes' | 'onChange'>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/FormGroup.FormGroupProps, @material-ui/core.@material-ui/core/RadioGroup/RadioGroup.RadioGroupClassKey, 'onChange'>) */ trait RadioGroupProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/FormGroup.FormGroupProps, 'classes' | 'onChange'> ]: @material-ui/core.@material-ui/core/FormGroup.FormGroupProps[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/FormGroup.FormGroupProps, @material-ui/core.@material-ui/core/RadioGroup/RadioGroup.RadioGroupClassKey, 'onChange'>) */ trait RadioGroupProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[RadioGroupClassKey] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined

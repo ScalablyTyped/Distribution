@@ -18,17 +18,17 @@ trait DatabasesResource extends js.Object {
     * response field type is
     * Database, if successful.
     */
-  def create(request: gapiDotClientDotSpannerLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def create(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Drops (aka deletes) a Cloud Spanner database. */
-  def dropDatabase(request: gapiDotClientDotSpannerLib.Anon_Database): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def dropDatabase(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabase): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /** Gets the state of a Cloud Spanner database. */
-  def get(request: gapiDotClientDotSpannerLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Database]
+  def get(request: gapiDotClientDotSpannerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Database]
   /**
     * Returns the schema of a Cloud Spanner database as a list of formatted
     * DDL statements. This method does not show pending schema updates, those may
     * be queried using the Operations API.
     */
-  def getDdl(request: gapiDotClientDotSpannerLib.Anon_Database): gapiDotClientLib.gapiNs.clientNs.Request[GetDatabaseDdlResponse]
+  def getDdl(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabase): gapiDotClientLib.gapiNs.clientNs.Request[GetDatabaseDdlResponse]
   /**
     * Gets the access control policy for a database resource. Returns an empty
     * policy if a database exists but does not have a policy set.
@@ -36,9 +36,9 @@ trait DatabasesResource extends js.Object {
     * Authorization requires `spanner.databases.getIamPolicy` permission on
     * resource.
     */
-  def getIamPolicy(request: gapiDotClientDotSpannerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+  def getIamPolicy(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
   /** Lists Cloud Spanner databases. */
-  def list(request: gapiDotClientDotSpannerLib.Anon_ParentAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListDatabasesResponse]
+  def list(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListDatabasesResponse]
   /**
     * Sets the access control policy on a database resource. Replaces any
     * existing policy.
@@ -46,7 +46,7 @@ trait DatabasesResource extends js.Object {
     * Authorization requires `spanner.databases.setIamPolicy` permission on
     * resource.
     */
-  def setIamPolicy(request: gapiDotClientDotSpannerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+  def setIamPolicy(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
   /**
     * Returns permissions that the caller has on the specified database resource.
     *
@@ -55,7 +55,7 @@ trait DatabasesResource extends js.Object {
     * the containing Cloud Spanner instance. Otherwise returns an empty set of
     * permissions.
     */
-  def testIamPermissions(request: gapiDotClientDotSpannerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+  def testIamPermissions(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
   /**
     * Updates the schema of a Cloud Spanner database by
     * creating/altering/dropping tables, columns, indexes, etc. The returned
@@ -65,6 +65,6 @@ trait DatabasesResource extends js.Object {
     * metadata field type is
     * UpdateDatabaseDdlMetadata.  The operation has no response.
     */
-  def updateDdl(request: gapiDotClientDotSpannerLib.Anon_Database): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def updateDdl(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackDatabase): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 

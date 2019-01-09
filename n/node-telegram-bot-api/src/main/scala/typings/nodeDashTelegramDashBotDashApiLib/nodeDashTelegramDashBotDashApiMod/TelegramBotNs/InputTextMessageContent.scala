@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped object */ trait InputTextMessageContent extends js.Object {
   var disable_web_page_preview: js.UndefOr[scala.Boolean] = js.undefined
   var message_text: java.lang.String

@@ -21,6 +21,6 @@ trait RegionAutoscalerList extends js.Object {
   /** [Output Only] Server-defined URL for this resource. */
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
   /** [Output Only] Informational warning message. */
-  var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Data] = js.undefined
+  var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Code] = js.undefined
 }
 

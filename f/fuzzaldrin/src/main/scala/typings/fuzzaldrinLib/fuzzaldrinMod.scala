@@ -17,7 +17,7 @@ object fuzzaldrinMod extends js.Object {
   def filter[T, K /* <: java.lang.String */](
     candidates: js.Array[T],
     query: java.lang.String with (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any),
-    options: fuzzaldrinLib.Anon_MaxResultsKey[K]
+    options: fuzzaldrinLib.Anon_Key[K]
   ): js.Array[T] = js.native
   def `match`(string: java.lang.String, query: java.lang.String): js.Any = js.native
   def score(string: java.lang.String, query: java.lang.String): scala.Double = js.native

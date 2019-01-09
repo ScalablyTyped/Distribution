@@ -18,7 +18,7 @@ trait AssociationOptions extends js.Object {
     * same alias when eager loading and when getting assocated models. Defaults to the singularized name of
     * target
     */
-  var as: js.UndefOr[java.lang.String | sequelizeLib.Anon_Singular] = js.undefined
+  var as: js.UndefOr[java.lang.String | sequelizeLib.Anon_Plural] = js.undefined
   /**
     * Should on update and on delete constraints be enabled on the foreign key.
     */

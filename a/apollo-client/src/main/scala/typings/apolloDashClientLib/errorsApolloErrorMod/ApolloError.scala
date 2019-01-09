@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ApolloError protected ()
   extends stdLib.Error {
-  def this(hasGraphQLErrorsNetworkErrorErrorMessageExtraInfo: apolloDashClientLib.Anon_GraphQLErrors) = this()
+  def this(hasGraphQLErrorsNetworkErrorErrorMessageExtraInfo: apolloDashClientLib.Anon_ErrorMessage) = this()
   var extraInfo: js.Any = js.native
   var graphQLErrors: js.Array[graphqlLib.graphqlMod.GraphQLError] = js.native
   /* CompleteClass */

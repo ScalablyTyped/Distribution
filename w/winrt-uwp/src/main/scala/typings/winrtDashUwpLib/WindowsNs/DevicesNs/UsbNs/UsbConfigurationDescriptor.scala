@@ -33,6 +33,6 @@ object UsbConfigurationDescriptor extends js.Object {
     * Retrieves the first 9 bytes of a USB configuration descriptor in a UsbConfigurationDescriptor object that is contained in a UsbDescriptor object.
     * @param descriptor The UsbDescriptor object to parse.
     */
-  def tryParse(descriptor: winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbDescriptor): winrtDashUwpLib.Anon_ReturnValueParsedBoolean = js.native
+  def tryParse(descriptor: winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbDescriptor): winrtDashUwpLib.Anon_Parsed = js.native
 }
 

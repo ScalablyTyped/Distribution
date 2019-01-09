@@ -50,7 +50,7 @@ trait Experiment extends js.Object {
     */
   var optimizationType: js.UndefOr[java.lang.String] = js.undefined
   /** Parent link for an experiment. Points to the view (profile) to which this experiment belongs. */
-  var parentLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Type] = js.undefined
+  var parentLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Href] = js.undefined
   /** View (Profile) ID to which this experiment belongs. This field is read-only. */
   var profileId: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -98,7 +98,7 @@ trait Experiment extends js.Object {
     * Array of variations. The first variation in the array is the original. The number of variations may not change once an experiment is in the RUNNING
     * state. At least two variations are required before status can be set to RUNNING.
     */
-  var variations: js.UndefOr[js.Array[gapiDotClientDotAnalyticsLib.Anon_Weight]] = js.undefined
+  var variations: js.UndefOr[js.Array[gapiDotClientDotAnalyticsLib.Anon_Name]] = js.undefined
   /** Web property ID to which this experiment belongs. The web property ID is of the form UA-XXXXX-YY. This field is read-only. */
   var webPropertyId: js.UndefOr[java.lang.String] = js.undefined
   /**

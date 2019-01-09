@@ -14,7 +14,7 @@ trait ReadgroupsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def delete(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Exports a read group set to a BAM file in Google Cloud Storage.
     *
@@ -27,7 +27,7 @@ trait ReadgroupsetsResource extends js.Object {
     * ImportReadGroupSets
     * for caveats.
     */
-  def export(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def export(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Gets a read group set by ID.
     *
@@ -35,7 +35,7 @@ trait ReadgroupsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def get(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[ReadGroupSet]
+  def get(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[ReadGroupSet]
   /**
     * Creates read group sets by asynchronously importing the provided
     * information.
@@ -56,7 +56,7 @@ trait ReadgroupsetsResource extends js.Object {
     * - Unmapped reads will be stripped of positional information (reference name
     * and position)
     */
-  def `import`(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def `import`(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Updates a read group set.
     *
@@ -66,9 +66,7 @@ trait ReadgroupsetsResource extends js.Object {
     *
     * This method supports patch semantics.
     */
-  def patch(
-    request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUserKeyOauthtoken
-  ): gapiDotClientLib.gapiNs.clientNs.Request[ReadGroupSet]
+  def patch(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp): gapiDotClientLib.gapiNs.clientNs.Request[ReadGroupSet]
   /**
     * Searches for read group sets matching the criteria.
     *
@@ -79,6 +77,6 @@ trait ReadgroupsetsResource extends js.Object {
     * Implements
     * [GlobalAllianceApi.searchReadGroupSets](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/readmethods.avdl#L135).
     */
-  def search(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[SearchReadGroupSetsResponse]
+  def search(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchReadGroupSetsResponse]
 }
 

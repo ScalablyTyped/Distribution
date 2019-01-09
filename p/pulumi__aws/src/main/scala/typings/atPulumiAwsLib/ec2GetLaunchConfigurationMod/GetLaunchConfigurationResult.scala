@@ -13,7 +13,7 @@ trait GetLaunchConfigurationResult extends js.Object {
   /**
     * The EBS Block Devices attached to the instance.
     */
-  val ebsBlockDevices: js.Array[atPulumiAwsLib.Anon_DeviceNameVolumeTypeEncryptedIopsDeleteOnTermination]
+  val ebsBlockDevices: js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameEncrypted]
   /**
     * Whether the launched EC2 instance will be EBS-optimized.
     */
@@ -25,7 +25,7 @@ trait GetLaunchConfigurationResult extends js.Object {
   /**
     * The Ephemeral volumes on the instance.
     */
-  val ephemeralBlockDevices: js.Array[atPulumiAwsLib.Anon_DeviceNameVirtualName]
+  val ephemeralBlockDevices: js.Array[atPulumiAwsLib.Anon_DeviceName]
   /**
     * The IAM Instance Profile to associate with launched instances.
     */
@@ -53,7 +53,7 @@ trait GetLaunchConfigurationResult extends js.Object {
   /**
     * The Root Block Device of the instance.
     */
-  val rootBlockDevices: js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationVolumeType]
+  val rootBlockDevices: js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationIopsVolumeSize]
   /**
     * A list of associated Security Group IDS.
     */

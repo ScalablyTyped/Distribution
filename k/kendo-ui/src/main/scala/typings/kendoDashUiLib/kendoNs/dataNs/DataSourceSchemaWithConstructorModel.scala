@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait DataSourceSchemaWithConstructorModel extends DataSourceSchema {
   @JSName("model")
-  var model_DataSourceSchemaWithConstructorModel: js.UndefOr[
-    org.scalablytyped.runtime.Instantiable1[/* data */ js.UndefOr[/* data */ js.Any], Model]
-  ] = js.undefined
+  var model_DataSourceSchemaWithConstructorModel: js.UndefOr[kendoDashUiLib.Anon_Data] = js.undefined
 }
 

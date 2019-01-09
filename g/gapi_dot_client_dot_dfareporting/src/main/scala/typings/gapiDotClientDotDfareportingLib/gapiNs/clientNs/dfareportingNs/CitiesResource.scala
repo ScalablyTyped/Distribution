@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait CitiesResource extends js.Object {
   /** Retrieves a list of cities, possibly filtered. */
-  def list(request: gapiDotClientDotDfareportingLib.Anon_ProfileIdPrettyPrintDartIds): gapiDotClientLib.gapiNs.clientNs.Request[CitiesListResponse]
+  def list(request: gapiDotClientDotDfareportingLib.Anon_AltCountryDartIds): gapiDotClientLib.gapiNs.clientNs.Request[CitiesListResponse]
 }
 

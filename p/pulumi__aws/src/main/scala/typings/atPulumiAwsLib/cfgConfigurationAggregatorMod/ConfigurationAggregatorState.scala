@@ -9,7 +9,7 @@ trait ConfigurationAggregatorState extends js.Object {
   /**
     * The account(s) to aggregate config data from as documented below.
     */
-  val accountAggregationSource: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllRegions]] = js.undefined
+  val accountAggregationSource: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AccountIdsAllRegions]] = js.undefined
   /**
     * The ARN of the aggregator
     */
@@ -21,6 +21,6 @@ trait ConfigurationAggregatorState extends js.Object {
   /**
     * The organization to aggregate config data from as documented below.
     */
-  val organizationAggregationSource: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllRegionsRoleArn]] = js.undefined
+  val organizationAggregationSource: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllRegionsRegions]] = js.undefined
 }
 

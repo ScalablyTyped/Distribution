@@ -21,7 +21,7 @@ object msnodesqlv8ModMembers extends js.Object {
   var Float: mssqlLib.mssqlMod.ISqlTypeFactoryWithNoParams = js.native
   var Geography: mssqlLib.mssqlMod.ISqlTypeFactoryWithNoParams = js.native
   var Geometry: mssqlLib.mssqlMod.ISqlTypeFactoryWithNoParams = js.native
-  var ISOLATION_LEVEL: mssqlLib.Anon_REPEATABLEREAD = js.native
+  var ISOLATION_LEVEL: mssqlLib.Anon_READCOMMITTED = js.native
   var Image: mssqlLib.mssqlMod.ISqlTypeFactoryWithNoParams = js.native
   var Int: mssqlLib.mssqlMod.ISqlTypeFactoryWithNoParams = js.native
   var MAX: scala.Double = js.native
@@ -36,7 +36,7 @@ object msnodesqlv8ModMembers extends js.Object {
   var SmallInt: mssqlLib.mssqlMod.ISqlTypeFactoryWithNoParams = js.native
   var SmallMoney: mssqlLib.mssqlMod.ISqlTypeFactoryWithNoParams = js.native
   var TVP: mssqlLib.mssqlMod.ISqlTypeFactoryWithTvpType = js.native
-  var TYPES: mssqlLib.Anon_Money = js.native
+  var TYPES: mssqlLib.Anon_BigInt = js.native
   var Text: mssqlLib.mssqlMod.ISqlTypeFactoryWithNoParams = js.native
   var Time: mssqlLib.mssqlMod.ISqlTypeFactoryWithScale = js.native
   var TinyInt: mssqlLib.mssqlMod.ISqlTypeFactoryWithNoParams = js.native

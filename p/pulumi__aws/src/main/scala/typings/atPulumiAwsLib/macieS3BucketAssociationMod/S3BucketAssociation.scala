@@ -25,7 +25,7 @@ class S3BucketAssociation protected ()
   /**
     * The configuration of how Amazon Macie classifies the S3 objects.
     */
-  val classificationType: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_ContinuousOneTime] = js.native
+  val classificationType: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_Continuous] = js.native
   /**
     * The ID of the Amazon Macie member account whose S3 resources you want to associate with Macie. If `member_account_id` isn't specified, the action associates specified S3 resources with Macie for the current master account.
     */

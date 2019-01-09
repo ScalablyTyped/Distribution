@@ -20,6 +20,6 @@ object GlobalMembers extends js.Object {
   val $msg: js.Function1[/* attrs */ js.UndefOr[js.Any], stropheDotJsLib.stropheDotJsMod.StropheNs.Builder] = js.native
   @JSName("$pres")
   val $pres: js.Function1[/* attrs */ js.UndefOr[js.Any], stropheDotJsLib.stropheDotJsMod.StropheNs.Builder] = js.native
-  val Strophe: stropheDotJsLib.Anon_CreateHtml = js.native
+  val Strophe: stropheDotJsLib.Anon_AddConnectionPlugin = js.native
 }
 

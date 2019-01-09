@@ -61,7 +61,7 @@ trait File extends js.Object {
   /**
     * Returns a new File object with all attributes cloned.
     */
-  def clone(options: FileCloneOptions with adoneLib.Anon_Contents): this.type = js.native
+  def clone(options: FileCloneOptions with adoneLib.Anon_ContentsTrue): this.type = js.native
   @JSName("clone")
   def clone_File(options: FileCloneOptions): File = js.native
   def isBuffer(): scala.Boolean = js.native

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait GetPhotosReturnType extends js.Object {
   var edges: js.Array[reactDashNativeLib.Anon_Node]
-  var page_info: reactDashNativeLib.Anon_EndcursorStartcursor
+  var page_info: reactDashNativeLib.Anon_EndcursorHasnextpage
 }
 

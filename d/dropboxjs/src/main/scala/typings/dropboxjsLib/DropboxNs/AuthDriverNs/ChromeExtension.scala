@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Dropbox.AuthDriver.ChromeExtension")
 @js.native
 class ChromeExtension () extends IAuthDriver {
-  def this(options: dropboxjsLib.Anon_ScopeReceiverPath) = this()
+  def this(options: dropboxjsLib.Anon_ReceiverPath) = this()
 }
 
 @JSGlobal("Dropbox.AuthDriver.ChromeExtension")

@@ -25,7 +25,7 @@ class repository ()
   ): scala.Unit = js.native
   def checkSelection(): scala.Unit = js.native
   def checkWidgets(): scala.Unit = js.native
-  def checkWidgets(options: ckeditorLib.Anon_InitOnlyNew): scala.Unit = js.native
+  def checkWidgets(options: ckeditorLib.Anon_FocusInited): scala.Unit = js.native
   def del(widget: ckeditorLib.CKEDITORNs.pluginsNs.widget): scala.Unit = js.native
   def destroy(widget: ckeditorLib.CKEDITORNs.pluginsNs.widget): scala.Unit = js.native
   def destroy(widget: ckeditorLib.CKEDITORNs.pluginsNs.widget, offline: scala.Boolean): scala.Unit = js.native

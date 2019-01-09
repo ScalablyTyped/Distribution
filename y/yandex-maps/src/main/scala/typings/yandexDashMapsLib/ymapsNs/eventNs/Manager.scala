@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Manager ()
   extends yandexDashMapsLib.ymapsNs.IEventManager {
-  def this(params: yandexDashMapsLib.Anon_Controllers) = this()
+  def this(params: yandexDashMapsLib.Anon_Context) = this()
   def createEventobject(`type`: java.lang.String, event: js.Object, target: js.Object): yandexDashMapsLib.ymapsNs.Event = js.native
   def once(types: java.lang.String, callback: js.Function1[/* event */ yandexDashMapsLib.ymapsNs.IEvent, _]): this.type = js.native
   def once(

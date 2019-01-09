@@ -13,9 +13,9 @@ trait SelectListProps extends js.Object {
     gestaltLib.gestaltLibStrings.up | gestaltLib.gestaltLibStrings.right | gestaltLib.gestaltLibStrings.down | gestaltLib.gestaltLibStrings.left
   ] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var options: js.Array[gestaltLib.Anon_ValueLabel]
+  var options: js.Array[gestaltLib.Anon_Label]
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined
-  def onChange(args: gestaltLib.Anon_EventValueSyntheticEvent): scala.Unit
+  def onChange(args: gestaltLib.Anon_EventValue): scala.Unit
 }
 

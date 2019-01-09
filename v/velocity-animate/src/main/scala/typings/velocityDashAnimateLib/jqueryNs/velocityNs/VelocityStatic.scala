@@ -14,7 +14,7 @@ trait VelocityStatic extends js.Object {
   def animate(elements: stdLib.HTMLCollection, properties: Properties, options: Options): js.Any = js.native
   def animate(elements: stdLib.HTMLElement, properties: Properties, options: Options): js.Any = js.native
   def animate(elements: stdLib.NodeListOf[stdLib.HTMLElement], properties: Properties, options: Options): js.Any = js.native
-  def animate(options: velocityDashAnimateLib.Anon_OptionsProperties): js.Any = js.native
+  def animate(options: velocityDashAnimateLib.Anon_Elements): js.Any = js.native
   /**
   		 * Get a hook value. Hooks are the subvalues of multi-value CSS properties.
   		 * It features the same API as $.css().

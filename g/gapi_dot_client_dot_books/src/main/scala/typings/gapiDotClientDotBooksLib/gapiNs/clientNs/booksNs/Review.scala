@@ -19,7 +19,7 @@ trait Review extends js.Object {
   /** Star rating for this review. Possible values are ONE, TWO, THREE, FOUR, FIVE or NOT_RATED. */
   var rating: js.UndefOr[java.lang.String] = js.undefined
   /** Information regarding the source of this review, when the review is not from a Google Books user. */
-  var source: js.UndefOr[gapiDotClientDotBooksLib.Anon_ExtraDescription] = js.undefined
+  var source: js.UndefOr[gapiDotClientDotBooksLib.Anon_Description] = js.undefined
   /** Title for this review. */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /** Source type for this review. Possible values are EDITORIAL, WEB_USER or GOOGLE_USER. */

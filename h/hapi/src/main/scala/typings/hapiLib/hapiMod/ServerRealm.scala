@@ -17,6 +17,6 @@ trait ServerRealm extends js.Object {
   /** plugin-specific state to be shared only among activities sharing the same active state. plugins is an object where each key is a plugin name and the value is the plugin state. */
   var plugins: PluginsStates
   /** settings overrides */
-  var settings: hapiLib.Anon_Files
+  var settings: hapiLib.Anon_Bind
 }
 

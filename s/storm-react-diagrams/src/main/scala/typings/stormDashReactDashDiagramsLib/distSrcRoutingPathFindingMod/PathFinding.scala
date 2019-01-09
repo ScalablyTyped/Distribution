@@ -12,15 +12,15 @@ trait PathFinding extends js.Object {
     * Taking as argument a fully unblocked walking matrix, this method
     * finds a direct path from point A to B.
     */
-  def calculateDirectPath(from: stormDashReactDashDiagramsLib.Anon_Y, to: stormDashReactDashDiagramsLib.Anon_Y): js.Array[js.Array[scala.Double]]
+  def calculateDirectPath(from: stormDashReactDashDiagramsLib.Anon_X, to: stormDashReactDashDiagramsLib.Anon_X): js.Array[js.Array[scala.Double]]
   /**
     * Puts everything together: merges the paths from/to the centre of the ports,
     * with the path calculated around other elements.
     */
   def calculateDynamicPath(
     routingMatrix: js.Array[js.Array[scala.Double]],
-    start: stormDashReactDashDiagramsLib.Anon_Y,
-    end: stormDashReactDashDiagramsLib.Anon_Y,
+    start: stormDashReactDashDiagramsLib.Anon_X,
+    end: stormDashReactDashDiagramsLib.Anon_X,
     pathToStart: js.Array[js.Array[scala.Double]],
     pathToEnd: js.Array[js.Array[scala.Double]]
   ): js.Any
@@ -29,6 +29,6 @@ trait PathFinding extends js.Object {
     * determine the first walkable point found in the matrix that includes
     * blocked paths.
     */
-  def calculateLinkStartEndCoords(matrix: js.Array[js.Array[scala.Double]], path: js.Array[js.Array[scala.Double]]): stormDashReactDashDiagramsLib.Anon_PathToStart
+  def calculateLinkStartEndCoords(matrix: js.Array[js.Array[scala.Double]], path: js.Array[js.Array[scala.Double]]): stormDashReactDashDiagramsLib.Anon_End
 }
 

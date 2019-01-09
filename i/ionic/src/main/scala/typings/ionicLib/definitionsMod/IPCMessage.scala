@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IPCMessage extends js.Object {
-  var data: ionicLib.Anon_Command
+  var data: ionicLib.Anon_Args
   var `type`: ionicLib.ionicLibStrings.telemetry
 }
 

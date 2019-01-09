@@ -124,7 +124,7 @@ class CustomXmlPart ()
   def load(): CustomXmlPart = js.native
   def load(option: java.lang.String): CustomXmlPart = js.native
   def load(option: js.Array[java.lang.String]): CustomXmlPart = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): CustomXmlPart = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): CustomXmlPart = js.native
   def load(option: officeDashJsDashPreviewLib.WordNs.InterfacesNs.CustomXmlPartLoadOptions): CustomXmlPart = js.native
   /**
     *

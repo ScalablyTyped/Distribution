@@ -19,6 +19,6 @@ class PrefixSource protected ()
   /* CompleteClass */
   override def map(options: webpackDashSourcesLib.Anon_Columns): sourceDashMapLib.sourceDashMapMod.RawSourceMap = js.native
   /* CompleteClass */
-  override def sourceAndMap(options: webpackDashSourcesLib.Anon_Columns): webpackDashSourcesLib.Anon_Source = js.native
+  override def sourceAndMap(options: webpackDashSourcesLib.Anon_Columns): webpackDashSourcesLib.Anon_Map = js.native
 }
 

@@ -14,7 +14,7 @@ trait Response extends js.Object {
   var facets: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[scala.Double]]
   ] = js.undefined
-  var facets_stats: js.UndefOr[org.scalablytyped.runtime.StringDictionary[algoliasearchLib.Anon_Max]] = js.undefined
+  var facets_stats: js.UndefOr[org.scalablytyped.runtime.StringDictionary[algoliasearchLib.Anon_Avg]] = js.undefined
   /**
     * Contains all the hits matching the query
     * https://www.algolia.com/doc/api-reference/api-methods/search/?language=javascript#response

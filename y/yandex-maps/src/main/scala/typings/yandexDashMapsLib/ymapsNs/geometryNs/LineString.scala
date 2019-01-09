@@ -10,10 +10,9 @@ import scala.scalajs.js.annotation._
 class LineString ()
   extends yandexDashMapsLib.ymapsNs.ILineStringGeometry {
   def this(coordinates: js.Array[js.Array[scala.Double]]) = this()
-  def this(coordinates: js.Array[js.Array[scala.Double]], options: yandexDashMapsLib.Anon_PixelRendering) = this()
+  def this(coordinates: js.Array[js.Array[scala.Double]], options: yandexDashMapsLib.Anon_CoordRendering) = this()
   /* CompleteClass */
   override var events: yandexDashMapsLib.ymapsNs.IEventManager = js.native
-  var options: yandexDashMapsLib.ymapsNs.IOptionManager = js.native
   /* CompleteClass */
   override def getBounds(): js.Array[js.Array[scala.Double]] | scala.Null = js.native
   /* CompleteClass */

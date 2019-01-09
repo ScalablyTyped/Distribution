@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Count extends js.Object {
   var count: scala.Double
-  var fileSize: scala.Double
+  var size: scala.Double
 }
 

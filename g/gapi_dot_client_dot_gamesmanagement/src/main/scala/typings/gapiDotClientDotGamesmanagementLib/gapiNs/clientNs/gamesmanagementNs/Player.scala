@@ -24,7 +24,7 @@ trait Player extends js.Object {
     */
   var lastPlayedWith: js.UndefOr[GamesPlayedResource] = js.undefined
   /** An object representation of the individual components of the player's name. For some players, these fields may not be present. */
-  var name: js.UndefOr[gapiDotClientDotGamesmanagementLib.Anon_GivenName] = js.undefined
+  var name: js.UndefOr[gapiDotClientDotGamesmanagementLib.Anon_FamilyName] = js.undefined
   /**
     * The player ID that was used for this player the first time they signed into the game in question. This is only populated for calls to player.get for
     * the requesting player, only if the player ID has subsequently changed, and only to clients that support remapping player IDs.

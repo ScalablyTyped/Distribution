@@ -12,8 +12,8 @@ trait Configuration extends js.Object {
   var loadConfig: scala.Boolean
   var logger: jsreportDashCoreLib.Anon_Silent
   var rootDirectory: java.lang.String
-  var scripts: jsreportDashCoreLib.Anon_AllowedModulesArray
-  var tasks: stdLib.Partial[jsreportDashCoreLib.Anon_AllowedModules]
+  var scripts: jsreportDashCoreLib.Anon_AllowedModules
+  var tasks: stdLib.Partial[jsreportDashCoreLib.Anon_AllowedModulesDedicatedprocess]
   var tempDirectory: java.lang.String
 }
 

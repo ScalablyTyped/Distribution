@@ -47,7 +47,7 @@ class RangeFill ()
   def load(): RangeFill = js.native
   def load(option: java.lang.String): RangeFill = js.native
   def load(option: js.Array[java.lang.String]): RangeFill = js.native
-  def load(option: officeDashJsLib.Anon_Select): RangeFill = js.native
+  def load(option: officeDashJsLib.Anon_Expand): RangeFill = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.RangeFillLoadOptions): RangeFill = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

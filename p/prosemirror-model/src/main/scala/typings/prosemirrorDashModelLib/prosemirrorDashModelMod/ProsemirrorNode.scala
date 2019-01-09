@@ -150,13 +150,13 @@ trait ProsemirrorNode[S /* <: Schema[_, _] */] extends js.Object {
     * and return it along with its index and offset relative to this
     * node.
     */
-  def childAfter(pos: scala.Double): prosemirrorDashModelLib.Anon_NodeOffset[S] = js.native
+  def childAfter(pos: scala.Double): prosemirrorDashModelLib.Anon_Index[S] = js.native
   /**
     * Find the (direct) child node before the given offset, if any,
     * and return it along with its index and offset relative to this
     * node.
     */
-  def childBefore(pos: scala.Double): prosemirrorDashModelLib.Anon_NodeOffset[S] = js.native
+  def childBefore(pos: scala.Double): prosemirrorDashModelLib.Anon_Index[S] = js.native
   /**
     * Get the content match in this node at the given index.
     */

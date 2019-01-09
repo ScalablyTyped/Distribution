@@ -123,7 +123,7 @@ class Segment () extends js.Object {
     * @param options.factor - the factor parameterizing the smoothing method — default: 0.5 for 'catmull-rom', 0.4 for 'geometric'
     */
   def smooth(): scala.Unit = js.native
-  def smooth(options: paperLib.Anon_TypeFactor): scala.Unit = js.native
+  def smooth(options: paperLib.Anon_FactorType): scala.Unit = js.native
   /**
     * Transform the segment by the specified matrix.
     * @param matrix - the matrix to transform the segment by

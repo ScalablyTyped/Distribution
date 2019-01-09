@@ -13,7 +13,7 @@ trait PrecompileOptions extends js.Object {
   var include: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var wrapper: js.UndefOr[
-    js.Function2[/* templates */ adoneLib.Anon_Name, /* opts */ this.type, java.lang.String]
+    js.Function2[/* templates */ adoneLib.Anon_NameTemplate, /* opts */ this.type, java.lang.String]
   ] = js.undefined
 }
 

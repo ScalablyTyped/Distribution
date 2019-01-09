@@ -14,6 +14,6 @@ import scala.scalajs.js.annotation._
   *                         defaults to `true`.
   */
 class namespaced () extends PrettyStream {
-  def this(options: bunyanDashPrettystreamLib.Anon_UseColor) = this()
+  def this(options: bunyanDashPrettystreamLib.Anon_Mode) = this()
 }
 

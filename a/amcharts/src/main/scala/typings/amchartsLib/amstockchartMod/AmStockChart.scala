@@ -121,7 +121,7 @@ trait AmStockChart extends js.Object {
     * "rollOverStockEvent", "zoomed".
     * @param handler - The event handler.
     */
-  def addListener(`type`: java.lang.String, handler: js.Function1[/* e */ amchartsLib.Anon_Panel, scala.Unit]): scala.Unit
+  def addListener(`type`: java.lang.String, handler: js.Function1[/* e */ amchartsLib.Anon_ChartDate, scala.Unit]): scala.Unit
   /**
     * Adds panel to the stock chart. Requires stockChart.validateNow() method to be called after this action.
     */

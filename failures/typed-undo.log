@@ -1,6 +1,0 @@
-[debug] PhaseRunner.scala:85 Failure, [typed-undo => InFile(/home/tso/tmp/tso-cache/npm/node_modules/typed-undo/src/UndoManager.ts): Parse error at 28.47 ''}'' expected but '{' found] [id => typed-undo, phase => typescript] 
-[warn ] PhaseRunner.scala:67 Failed because of, [typed-undo => InFile(/home/tso/tmp/tso-cache/npm/node_modules/typed-undo/src/UndoManager.ts): Parse error at 28.47 ''}'' expected but '{' found] [id => typed-undo, phase => typescript] 
-[debug] PhaseRunner.scala:85 Failure, [typed-undo => InFile(/home/tso/tmp/tso-cache/npm/node_modules/typed-undo/src/UndoManager.ts): Parse error at 28.47 ''}'' expected but '{' found] [id => typed-undo, phase => typescript] 
-[debug] PhaseRunner.scala:85 Failure, [typed-undo => InFile(/home/tso/tmp/tso-cache/npm/node_modules/typed-undo/src/UndoManager.ts): Parse error at 28.47 ''}'' expected but '{' found] [id => typed-undo, phase => scala.js] 
-[debug] PhaseRunner.scala:85 Failure, [typed-undo => InFile(/home/tso/tmp/tso-cache/npm/node_modules/typed-undo/src/UndoManager.ts): Parse error at 28.47 ''}'' expected but '{' found] [id => typed-undo, phase => build] 
-[debug] PhaseRunner.scala:85 Failure, [typed-undo => InFile(/home/tso/tmp/tso-cache/npm/node_modules/typed-undo/src/UndoManager.ts): Parse error at 28.47 ''}'' expected but '{' found] [id => typed-undo, phase => publish] 

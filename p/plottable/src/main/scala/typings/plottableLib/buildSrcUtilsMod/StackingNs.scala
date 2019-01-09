@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("plottable/build/src/utils", "Stacking")
 @js.native
 object StackingNs extends js.Object {
-  val IStackingOrder: plottableLib.Anon_Topdown = js.native
+  val IStackingOrder: plottableLib.Anon_Bottomup = js.native
   val normalizeKey: (js.Function1[/* key */ js.Any, java.lang.String]) with lodashLib.lodashMod.underscoreNs.MemoizedFunction = js.native
   def stack(
     datasets: js.Array[plottableLib.buildSrcCoreDatasetMod.Dataset],
@@ -26,6 +26,6 @@ object StackingNs extends js.Object {
     keyAccessor: plottableLib.buildSrcCoreInterfacesMod.IAccessor[_],
     filter: plottableLib.buildSrcCoreInterfacesMod.IAccessor[scala.Boolean]
   ): js.Array[scala.Double] = js.native
-  def stackedExtents[D](stackingResult: plottableLib.buildSrcUtilsStackingUtilsMod.GenericStackingResult[D]): plottableLib.Anon_MinimumExtents[D] = js.native
+  def stackedExtents[D](stackingResult: plottableLib.buildSrcUtilsStackingUtilsMod.GenericStackingResult[D]): plottableLib.Anon_MaximumExtents[D] = js.native
 }
 

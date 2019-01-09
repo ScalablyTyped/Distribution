@@ -24,7 +24,7 @@ abstract class AbstractAssetTask protected () extends js.Object {
   /**
     * Gets the current error object (if task is in error)
     */
-  val errorObject: babylonjsLib.Anon_Message = js.native
+  val errorObject: babylonjsLib.Anon_Exception = js.native
   /**
     * Get if the task is completed
     */

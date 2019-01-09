@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SphereOutlineGeometry ()
   extends cesiumLib.cesiumMod.CesiumNs.SphereOutlineGeometry {
-  def this(options: cesiumLib.Anon_SlicePartitions) = this()
+  def this(options: cesiumLib.Anon_RadiusSlicePartitions) = this()
 }
 
 @JSImport("cesium", "SphereOutlineGeometry")

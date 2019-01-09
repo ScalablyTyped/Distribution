@@ -23,8 +23,8 @@ trait Admin extends js.Object {
   def command(command: js.Object): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Admin.html#command */
   def command(command: js.Object, callback: MongoCallback[_]): scala.Unit = js.native
-  def command(command: js.Object, options: mongodbLib.Anon_ReadPreference): js.Promise[_] = js.native
-  def command(command: js.Object, options: mongodbLib.Anon_ReadPreference, callback: MongoCallback[_]): scala.Unit = js.native
+  def command(command: js.Object, options: mongodbLib.Anon_MaxTimeMS): js.Promise[_] = js.native
+  def command(command: js.Object, options: mongodbLib.Anon_MaxTimeMS, callback: MongoCallback[_]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Admin.html#listDatabases */
   def listDatabases(): js.Promise[_] = js.native
   def listDatabases(callback: MongoCallback[_]): scala.Unit = js.native

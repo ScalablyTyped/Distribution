@@ -740,7 +740,7 @@ class Paragraph ()
   def load(): Paragraph = js.native
   def load(option: java.lang.String): Paragraph = js.native
   def load(option: js.Array[java.lang.String]): Paragraph = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Paragraph = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Paragraph = js.native
   def load(option: officeDashJsDashPreviewLib.WordNs.InterfacesNs.ParagraphLoadOptions): Paragraph = js.native
   /**
     *
@@ -752,7 +752,7 @@ class Paragraph ()
     * @param searchOptions Optional. Options for the search.
     */
   def search(searchText: java.lang.String): RangeCollection = js.native
-  def search(searchText: java.lang.String, searchOptions: officeDashJsDashPreviewLib.Anon_MatchSuffix): RangeCollection = js.native
+  def search(searchText: java.lang.String, searchOptions: officeDashJsDashPreviewLib.Anon_IgnorePunct): RangeCollection = js.native
   def search(searchText: java.lang.String, searchOptions: SearchOptions): RangeCollection = js.native
   /**
     *

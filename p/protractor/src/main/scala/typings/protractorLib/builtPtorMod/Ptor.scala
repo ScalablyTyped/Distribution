@@ -16,7 +16,7 @@ class Ptor () extends js.Object {
   var Builder: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.Builder] = js.native
   var Button: seleniumDashWebdriverLib.seleniumDashWebdriverMod.IButton = js.native
   var By: protractorLib.builtLocatorsMod.ProtractorBy = js.native
-  var Capabilities: org.scalablytyped.runtime.Instantiable0[seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities] = js.native
+  var Capabilities: protractorLib.Anon_Android = js.native
   var Capability: seleniumDashWebdriverLib.seleniumDashWebdriverMod.ICapability = js.native
   var Command: js.Any = js.native
   var CommandName: js.Any = js.native
@@ -34,16 +34,8 @@ class Ptor () extends js.Object {
     /* capabilities */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities, 
     seleniumDashWebdriverLib.seleniumDashWebdriverMod.Session
   ] = js.native
-  var WebDriver: org.scalablytyped.runtime.Instantiable2[
-    /* session */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.Session, 
-    /* executor */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor, 
-    seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver
-  ] = js.native
-  var WebElement: org.scalablytyped.runtime.Instantiable2[
-    /* driver */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, 
-    /* id */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String], 
-    seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement
-  ] = js.native
+  var WebDriver: protractorLib.Anon_AttachToSession = js.native
+  var WebElement: protractorLib.Anon_A = js.native
   var WebElementPromise: org.scalablytyped.runtime.Instantiable2[
     /* driver */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, 
     /* el */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebElement], 
@@ -53,11 +45,11 @@ class Ptor () extends js.Object {
   var by: protractorLib.builtLocatorsMod.ProtractorBy = js.native
   @JSName("element")
   var element_Original: protractorLib.builtBrowserMod.ElementHelper = js.native
-  var error: protractorLib.Anon_ScriptTimeoutError = js.native
-  var logging: protractorLib.Anon_GetLevel = js.native
-  var promise: protractorLib.Anon_CreateFlow = js.native
-  var until: protractorLib.Anon_ElementTextMatches = js.native
-  var utils: protractorLib.Anon_Firefox = js.native
+  var error: protractorLib.Anon_ElementNotSelectableError = js.native
+  var logging: protractorLib.Anon_AddConsoleHandler = js.native
+  var promise: protractorLib.Anon_All = js.native
+  var until: protractorLib.Anon_AbleToSwitchToFrame = js.native
+  var utils: protractorLib.Anon_Chrome = js.native
   @JSName("$")
   def $(search: java.lang.String): protractorLib.builtElementMod.ElementFinder = js.native
   @JSName("$$")

@@ -11,7 +11,7 @@ trait BaseButtonProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var ghost: js.UndefOr[scala.Boolean] = js.undefined
   var icon: js.UndefOr[java.lang.String] = js.undefined
-  var loading: js.UndefOr[scala.Boolean | antdLib.Anon_DelayNumber] = js.undefined
+  var loading: js.UndefOr[scala.Boolean | antdLib.Anon_Delay] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var shape: js.UndefOr[ButtonShape] = js.undefined
   var size: js.UndefOr[ButtonSize] = js.undefined

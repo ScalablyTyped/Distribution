@@ -24,7 +24,7 @@ class ByteMatchSet protected ()
     * with ASCII characters) that you want to search for in web requests,
     * the location in requests that you want to search, and other settings.
     */
-  val byteMatchTuples: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_PositionalConstraint]]] = js.native
+  val byteMatchTuples: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatch]]] = js.native
   /**
     * The name or description of the Byte Match Set.
     */

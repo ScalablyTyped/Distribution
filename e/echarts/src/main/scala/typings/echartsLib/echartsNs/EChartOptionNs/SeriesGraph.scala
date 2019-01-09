@@ -164,7 +164,7 @@ trait SeriesGraph extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.categories
     */
-  var categories: js.UndefOr[echartsLib.Anon_Name] = js.undefined
+  var categories: js.UndefOr[echartsLib.Anon_EmphasisItemStyle] = js.undefined
   /**
     * Configuration about circular layout.
     *
@@ -239,7 +239,7 @@ trait SeriesGraph extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.edgeLabel
     */
   var edgeLabel: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlignShadowBlurHeightBorderWidth
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
   ] = js.undefined
   /**
     * Symbol of two ends of edge line.
@@ -282,7 +282,7 @@ trait SeriesGraph extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleEdgeLabel] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_EdgeLabel] = js.undefined
   /**
     * Whether to focus/highlight the hover node and it's adjacencies.
     *
@@ -352,7 +352,7 @@ trait SeriesGraph extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBorderTypeShadowBlurBorderWidthColor] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorBorderTypeBorderWidthColor] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -365,7 +365,7 @@ trait SeriesGraph extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.label
     */
   var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlign
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily
   ] = js.undefined
   /**
     * Graph layout.
@@ -431,7 +431,7 @@ trait SeriesGraph extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.lineStyle
     */
-  var lineStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColorOpacityShadowOffsetYType] = js.undefined
+  var lineStyle: js.UndefOr[echartsLib.Anon_ColorCurvenessOpacityShadowBlur] = js.undefined
   /**
     * Relational data between nodes. Example:
     *
@@ -440,7 +440,7 @@ trait SeriesGraph extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.links
     */
-  var links: js.UndefOr[echartsLib.Anon_SourceLabel] = js.undefined
+  var links: js.UndefOr[echartsLib.Anon_EmphasisLabel] = js.undefined
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -448,21 +448,21 @@ trait SeriesGraph extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.markArea
     */
-  var markArea: js.UndefOr[echartsLib.Anon_Silent] = js.undefined
+  var markArea: js.UndefOr[echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.markLine
     */
-  var markLine: js.UndefOr[echartsLib.Anon_Precision] = js.undefined
+  var markLine: js.UndefOr[echartsLib.Anon_AnimationAnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_SilentData] = js.undefined
+  var markPoint: js.UndefOr[echartsLib.Anon_Animation] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -648,7 +648,7 @@ trait SeriesGraph extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * Distance between component and the top side of the container.
     *

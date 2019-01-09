@@ -18,7 +18,7 @@ class CachedSource protected () extends js.Object {
   def node(options: js.Any): sourceDashMapLib.sourceDashMapMod.SourceNode = js.native
   def size(): scala.Double = js.native
   def source(): java.lang.String = js.native
-  def sourceAndMap(options: js.Any): webpackDashSourcesLib.Anon_Source = js.native
+  def sourceAndMap(options: js.Any): webpackDashSourcesLib.Anon_Map = js.native
   def updateHash(hash: nodeLib.cryptoMod.Hash): scala.Unit = js.native
 }
 

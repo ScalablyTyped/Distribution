@@ -384,7 +384,7 @@ class InlinePicture ()
   def load(): InlinePicture = js.native
   def load(option: java.lang.String): InlinePicture = js.native
   def load(option: js.Array[java.lang.String]): InlinePicture = js.native
-  def load(option: officeDashJsLib.Anon_Select): InlinePicture = js.native
+  def load(option: officeDashJsLib.Anon_Expand): InlinePicture = js.native
   def load(option: officeDashJsLib.WordNs.InterfacesNs.InlinePictureLoadOptions): InlinePicture = js.native
   /**
     *

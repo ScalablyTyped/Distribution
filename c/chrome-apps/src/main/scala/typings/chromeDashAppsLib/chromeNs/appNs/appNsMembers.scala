@@ -13,7 +13,7 @@ object appNsMembers extends js.Object {
     * @internal
     * @private
     */
-  val _State: chromeDashAppsLib.Anon_NORMAL = js.native
+  val _State: chromeDashAppsLib.Anon_FULLSCREEN = js.native
   val window: ChromeAppWindow = js.native
 }
 

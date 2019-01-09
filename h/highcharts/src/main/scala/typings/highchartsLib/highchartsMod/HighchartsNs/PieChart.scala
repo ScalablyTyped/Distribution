@@ -109,6 +109,6 @@ trait PieChart extends SeriesChart {
     * A wrapper object for all the series options in specific states.
     */
   @JSName("states")
-  var states_PieChart: js.UndefOr[highchartsLib.Anon_Hover] = js.undefined
+  var states_PieChart: js.UndefOr[highchartsLib.Anon_HoverPieStates] = js.undefined
 }
 

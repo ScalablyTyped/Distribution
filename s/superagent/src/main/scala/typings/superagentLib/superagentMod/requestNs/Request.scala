@@ -15,11 +15,11 @@ trait Request
   def attach(
     field: java.lang.String,
     file: superagentLib.MultipartValueSingle,
-    options: superagentLib.Anon_Filename
+    options: superagentLib.Anon_ContentType
   ): this.type = js.native
-  def auth(token: java.lang.String, options: superagentLib.Anon_TypeBearer): this.type = js.native
+  def auth(token: java.lang.String, options: superagentLib.Anon_Bearer): this.type = js.native
   def auth(user: java.lang.String, pass: java.lang.String): this.type = js.native
-  def auth(user: java.lang.String, pass: java.lang.String, options: superagentLib.Anon_Type): this.type = js.native
+  def auth(user: java.lang.String, pass: java.lang.String, options: superagentLib.Anon_Auto): this.type = js.native
   def buffer(): this.type = js.native
   def buffer(`val`: scala.Boolean): this.type = js.native
   def ca(cert: nodeLib.Buffer): this.type = js.native
@@ -49,7 +49,7 @@ trait Request
   def part(): this.type = js.native
   def pfx(cert: java.lang.String): this.type = js.native
   def pfx(cert: nodeLib.Buffer): this.type = js.native
-  def pfx(cert: superagentLib.Anon_Pfx): this.type = js.native
+  def pfx(cert: superagentLib.Anon_Passphrase): this.type = js.native
   def pipe(stream: nodeLib.NodeJSNs.WritableStream): nodeLib.streamMod.Writable = js.native
   def pipe(stream: nodeLib.NodeJSNs.WritableStream, options: js.Object): nodeLib.streamMod.Writable = js.native
   def query(`val`: java.lang.String): this.type = js.native

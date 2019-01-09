@@ -12,6 +12,6 @@ trait Validatable[TValue] extends js.Object {
   var hasError: scala.Boolean
   var validating: scala.Boolean
   def enableAutoValidation(): scala.Unit
-  def validate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_HasErrorFalseValue[TValue]]
+  def validate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_False[TValue]]
 }
 

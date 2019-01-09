@@ -103,7 +103,7 @@ class TableColumn ()
   def load(): TableColumn = js.native
   def load(option: java.lang.String): TableColumn = js.native
   def load(option: js.Array[java.lang.String]): TableColumn = js.native
-  def load(option: officeDashJsLib.Anon_Select): TableColumn = js.native
+  def load(option: officeDashJsLib.Anon_Expand): TableColumn = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.TableColumnLoadOptions): TableColumn = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

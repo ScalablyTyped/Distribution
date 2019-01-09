@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "ListItem")
 @js.native
 class ListItem ()
-  extends Component[reactDashOnsenuiLib.Anon_OnClickLockOnDrag, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_LockOnDrag, js.Any]
 

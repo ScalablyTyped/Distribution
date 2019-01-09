@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TileMapServiceImageryProvider ()
   extends cesiumLib.cesiumMod.CesiumNs.TileMapServiceImageryProvider {
-  def this(options: cesiumLib.Anon_TileWidthFileExtension) = this()
+  def this(options: cesiumLib.Anon_CreditEllipsoidFileExtension) = this()
   /* CompleteClass */
   override var credit: cesiumLib.cesiumMod.CesiumNs.Credit = js.native
   /* CompleteClass */

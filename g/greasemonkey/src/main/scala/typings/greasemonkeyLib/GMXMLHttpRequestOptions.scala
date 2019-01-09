@@ -28,7 +28,7 @@ trait GMXMLHttpRequestOptions extends js.Object {
   var password: js.UndefOr[java.lang.String] = js.undefined
   var synchronous: js.UndefOr[scala.Boolean] = js.undefined
   var timeout: js.UndefOr[scala.Double] = js.undefined
-  var upload: js.UndefOr[Anon_Onerror] = js.undefined
+  var upload: js.UndefOr[Anon_Onabort] = js.undefined
   var url: java.lang.String
   var user: js.UndefOr[java.lang.String] = js.undefined
 }

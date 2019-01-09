@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(mobxLib.libCoreDerivationMod.IDerivation because Would inherit conflicting mutable fields List(name, observing))*/
-@JSImport("mobx/lib/core/computedvalue", "ComputedValue")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- mobxLib.libCoreDerivationMod.IDerivation because var conflicts: name, observing. Inlined newObserving, dependenciesState, runId, unboundDepsCount, __mapid, onBecomeStale, isTracing */ @JSImport("mobx/lib/core/computedvalue", "ComputedValue")
 @js.native
 class ComputedValue[T] protected ()
   extends mobxLib.libCoreObservableMod.IObservable
@@ -49,7 +49,7 @@ class ComputedValue[T] protected ()
   override var lowestObserverState: mobxLib.libCoreDerivationMod.IDerivationState = js.native
   /* CompleteClass */
   override var name: java.lang.String = js.native
-  var newObserving: scala.Null = js.native
+  var newObserving: js.Array[mobxLib.libCoreObservableMod.IObservable] | scala.Null = js.native
   /* CompleteClass */
   override var observers: stdLib.Set[mobxLib.libCoreDerivationMod.IDerivation] = js.native
   @JSName("observers")

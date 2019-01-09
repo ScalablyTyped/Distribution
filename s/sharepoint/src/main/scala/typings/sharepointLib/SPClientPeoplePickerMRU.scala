@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("SPClientPeoplePickerMRU")
 @js.native
 class SPClientPeoplePickerMRU () extends js.Object {
-  def GetItems(strKey: java.lang.String): Anon_Name = js.native
+  def GetItems(strKey: java.lang.String): Anon_Key = js.native
   def ResetCache(): scala.Unit = js.native
-  def SetItem[T /* <: Anon_Key */](strSearchTerm: java.lang.String, objEntity: T): scala.Unit = js.native
+  def SetItem[T /* <: Anon_KeyString */](strSearchTerm: java.lang.String, objEntity: T): scala.Unit = js.native
 }
 
 @JSGlobal("SPClientPeoplePickerMRU")

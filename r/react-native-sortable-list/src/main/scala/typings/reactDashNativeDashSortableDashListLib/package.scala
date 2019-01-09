@@ -8,5 +8,5 @@ package object reactDashNativeDashSortableDashListLib {
   type Data = DataByNumber | DataByString
   type DataKey = java.lang.String | scala.Double
   type DataValue = js.Any
-  type SortableList = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify SortableListStatic */ js.Any
+  type SortableList = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SortableListStatic */ js.Any
 }

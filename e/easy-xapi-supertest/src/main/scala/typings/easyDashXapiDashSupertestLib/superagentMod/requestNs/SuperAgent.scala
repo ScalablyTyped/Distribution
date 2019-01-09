@@ -35,7 +35,6 @@ trait SuperAgent[Req /* <: Request[_] */]
   def move(url: java.lang.String, callback: easyDashXapiDashSupertestLib.superagentMod.CallbackHandler): Req = js.native
   // m-search(url: string, callback?: CallbackHandler): Req;
   def notify(url: java.lang.String): Req = js.native
-  // m-search(url: string, callback?: CallbackHandler): Req;
   def notify(url: java.lang.String, callback: easyDashXapiDashSupertestLib.superagentMod.CallbackHandler): Req = js.native
   def options(url: java.lang.String): Req = js.native
   def options(url: java.lang.String, callback: easyDashXapiDashSupertestLib.superagentMod.CallbackHandler): Req = js.native

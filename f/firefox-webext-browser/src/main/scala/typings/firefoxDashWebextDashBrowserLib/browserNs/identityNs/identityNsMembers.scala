@@ -42,7 +42,7 @@ object identityNsMembers extends js.Object {
   def getRedirectURL(): java.lang.String = js.native
   def getRedirectURL(path: java.lang.String): java.lang.String = js.native
   /** Starts an auth flow at the specified URL. */
-  def launchWebAuthFlow(details: firefoxDashWebextDashBrowserLib.Anon_UrlInteractive): js.Promise[java.lang.String] = js.native
+  def launchWebAuthFlow(details: firefoxDashWebextDashBrowserLib.Anon_Interactive): js.Promise[java.lang.String] = js.native
   /**
     * Removes an OAuth2 access token from the Identity API's token cache.
     * @deprecated Unsupported on Firefox at this time.

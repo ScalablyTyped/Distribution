@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("redux-thunk", JSImport.Namespace)
 @js.native
 object reduxDashThunkModMembers extends js.Object {
-  val default: (ThunkMiddleware[js.Object, reduxLib.reduxMod.AnyAction, js.UndefOr[scala.Nothing]]) with reduxDashThunkLib.Anon_WithExtraArgument = js.native
+  val default: (ThunkMiddleware[js.Object, reduxLib.reduxMod.AnyAction, js.UndefOr[scala.Nothing]]) with reduxDashThunkLib.Anon_ExtraArgument = js.native
 }
 

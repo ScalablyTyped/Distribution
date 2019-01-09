@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object istanbulDashMiddlewareModMembers extends js.Object {
   def createClientHandler(root: java.lang.String): js.Any = js.native
-  def createClientHandler(root: java.lang.String, opts: istanbulDashMiddlewareLib.Anon_Verbose): js.Any = js.native
+  def createClientHandler(root: java.lang.String, opts: istanbulDashMiddlewareLib.Anon_Matcher): js.Any = js.native
   def createHandler(): js.Any = js.native
   def createHandler(opts: istanbulDashMiddlewareLib.Anon_ResetOnGet): js.Any = js.native
   def hookLoader(matcherOrRoot: Matcher): scala.Unit = js.native

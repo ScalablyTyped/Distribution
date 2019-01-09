@@ -59,7 +59,7 @@ class KiiTopic () extends js.Object {
     *     );
     */
   def deleteTopic(): js.Promise[KiiTopic] = js.native
-  def deleteTopic(callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessTopicAny): js.Promise[KiiTopic] = js.native
+  def deleteTopic(callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureSuccessTopic): js.Promise[KiiTopic] = js.native
   /**
     * Checks whether the topic already exists or not.
     *
@@ -97,7 +97,7 @@ class KiiTopic () extends js.Object {
     *         });
     */
   def exists(): js.Promise[scala.Boolean] = js.native
-  def exists(callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessExisted): js.Promise[scala.Boolean] = js.native
+  def exists(callbacks: kiiDashCloudDashSdkLib.Anon_ErrorExisted): js.Promise[scala.Boolean] = js.native
   /**
     * get name of this topic
     *
@@ -145,7 +145,7 @@ class KiiTopic () extends js.Object {
     *     );
     */
   def save(): js.Promise[KiiTopic] = js.native
-  def save(callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessTopicAny): js.Promise[KiiTopic] = js.native
+  def save(callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureSuccessTopic): js.Promise[KiiTopic] = js.native
   /**
     * Send message to the topic.
     *
@@ -200,6 +200,6 @@ class KiiTopic () extends js.Object {
     *     );
     */
   def sendMessage[T](message: T): js.Promise[js.Tuple2[KiiTopic, T]] = js.native
-  def sendMessage[T](message: T, callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessTopic[T]): js.Promise[js.Tuple2[KiiTopic, T]] = js.native
+  def sendMessage[T](message: T, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureMessage[T]): js.Promise[js.Tuple2[KiiTopic, T]] = js.native
 }
 

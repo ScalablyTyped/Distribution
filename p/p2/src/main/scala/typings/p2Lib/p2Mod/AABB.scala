@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AABB ()
   extends p2Lib.p2Mod.p2Ns.AABB {
-  def this(options: p2Lib.Anon_UpperBound) = this()
+  def this(options: p2Lib.Anon_LowerBound) = this()
   /* CompleteClass */
   override def copy(aabb: p2Lib.p2Mod.p2Ns.AABB): scala.Unit = js.native
   /* CompleteClass */

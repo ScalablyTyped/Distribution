@@ -11,6 +11,6 @@ trait StaticMapProps extends MapboxProps {
   var onResize: js.UndefOr[js.Function1[/* dimensions */ reactDashMapDashGlLib.Anon_Height, scala.Unit]] = js.undefined
   var preventStyleDiffing: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined
-  var visibilityConstraints: js.UndefOr[reactDashMapDashGlLib.Anon_MinPitch] = js.undefined
+  var visibilityConstraints: js.UndefOr[reactDashMapDashGlLib.Anon_MaxPitch] = js.undefined
 }
 

@@ -21,6 +21,6 @@ trait CoveragebucketsResource extends js.Object {
     * levels'. The caller must have READ permissions for the target read group
     * set.
     */
-  def list(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListCoverageBucketsResponse]
+  def list(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackEnd): gapiDotClientLib.gapiNs.clientNs.Request[ListCoverageBucketsResponse]
 }
 

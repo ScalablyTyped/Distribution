@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(nodeLib.eventsMod.EventEmitter because Inheritance from two classes)*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- nodeLib.eventsMod.EventEmitter because Inheritance from two classes */ @js.native
 trait WeAccessMiddleware
   extends expressDashWechatDashAccessLib.WeMiddleware
 

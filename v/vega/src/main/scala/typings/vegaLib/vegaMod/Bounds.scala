@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("vega", "Bounds")
 @js.native
-class Bounds () extends js.Object
+class Bounds ()
+  extends vegaDashTypingsLib.vegaDashTypingsMod.Bounds
 

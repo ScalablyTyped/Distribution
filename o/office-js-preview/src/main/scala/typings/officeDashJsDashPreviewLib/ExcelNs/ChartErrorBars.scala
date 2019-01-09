@@ -77,7 +77,7 @@ class ChartErrorBars ()
   def load(): ChartErrorBars = js.native
   def load(option: java.lang.String): ChartErrorBars = js.native
   def load(option: js.Array[java.lang.String]): ChartErrorBars = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): ChartErrorBars = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): ChartErrorBars = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ChartErrorBarsLoadOptions): ChartErrorBars = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartErrorBars): scala.Unit = js.native

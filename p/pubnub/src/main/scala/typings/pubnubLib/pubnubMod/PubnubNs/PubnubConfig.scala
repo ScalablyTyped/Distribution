@@ -10,7 +10,7 @@ trait PubnubConfig extends js.Object {
   var cipherKey: js.UndefOr[java.lang.String] = js.undefined
   var heartbeatInterval: js.UndefOr[scala.Double] = js.undefined
   var keepAlive: js.UndefOr[scala.Boolean] = js.undefined
-  var keepAliveSettings: js.UndefOr[pubnubLib.Anon_MaxFreeSockets] = js.undefined
+  var keepAliveSettings: js.UndefOr[pubnubLib.Anon_FreeSocketKeepAliveTimeout] = js.undefined
   var logVerbosity: js.UndefOr[scala.Boolean] = js.undefined
   var origin: js.UndefOr[java.lang.String] = js.undefined
   var presenceTimeout: js.UndefOr[scala.Double] = js.undefined

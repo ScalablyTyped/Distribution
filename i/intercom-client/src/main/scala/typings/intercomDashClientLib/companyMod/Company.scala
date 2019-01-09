@@ -14,7 +14,7 @@ trait Company extends js.Object {
   var industry: js.UndefOr[java.lang.String] = js.undefined
   var monthly_spend: js.UndefOr[scala.Double] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
-  var plan: js.UndefOr[java.lang.String | intercomDashClientLib.Anon_TypeName] = js.undefined
+  var plan: js.UndefOr[java.lang.String | intercomDashClientLib.Anon_IdName] = js.undefined
   var remote_created_at: js.UndefOr[scala.Double] = js.undefined
   var session_count: js.UndefOr[scala.Double] = js.undefined
   var size: js.UndefOr[scala.Double] = js.undefined

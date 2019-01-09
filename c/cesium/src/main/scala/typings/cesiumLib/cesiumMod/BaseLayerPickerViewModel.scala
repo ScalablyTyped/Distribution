@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BaseLayerPickerViewModel protected ()
   extends cesiumLib.cesiumMod.CesiumNs.BaseLayerPickerViewModel {
-  def this(options: cesiumLib.Anon_SelectedImageryProviderViewModel) = this()
+  def this(options: cesiumLib.Anon_Globe) = this()
   /* CompleteClass */
   override var buttonImageUrl: java.lang.String = js.native
   /* CompleteClass */

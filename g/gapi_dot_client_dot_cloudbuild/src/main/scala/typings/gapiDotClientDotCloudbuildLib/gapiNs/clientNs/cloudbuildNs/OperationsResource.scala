@@ -18,13 +18,13 @@ trait OperationsResource extends js.Object {
     * an Operation.error value with a google.rpc.Status.code of 1,
     * corresponding to `Code.CANCELLED`.
     */
-  def cancel(request: gapiDotClientDotCloudbuildLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def cancel(request: gapiDotClientDotCloudbuildLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Gets the latest state of a long-running operation.  Clients can use this
     * method to poll the operation result at intervals as recommended by the API
     * service.
     */
-  def get(request: gapiDotClientDotCloudbuildLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def get(request: gapiDotClientDotCloudbuildLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Lists operations that match the specified filter in the request. If the
     * server doesn't support this method, it returns `UNIMPLEMENTED`.
@@ -37,6 +37,6 @@ trait OperationsResource extends js.Object {
     * collection id, however overriding users must ensure the name binding
     * is the parent resource, without the operations collection id.
     */
-  def list(request: gapiDotClientDotCloudbuildLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
+  def list(request: gapiDotClientDotCloudbuildLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
 }
 

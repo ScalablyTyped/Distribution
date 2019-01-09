@@ -339,17 +339,17 @@ trait Nightmare extends js.Object {
   def run(): Nightmare = js.native
   def run(cb: js.Function2[/* err */ js.Any, /* nightmare */ this.type, scala.Unit]): Nightmare = js.native
   def screenshot(): Nightmare = js.native
-  def screenshot(clip: nightmareLib.Anon_Y): Nightmare = js.native
+  def screenshot(clip: nightmareLib.Anon_Height): Nightmare = js.native
   def screenshot(
-    clip: nightmareLib.Anon_Y,
+    clip: nightmareLib.Anon_Height,
     done: js.Function2[/* err */ js.Any, /* buffer */ nodeLib.Buffer, scala.Unit]
   ): Nightmare = js.native
   def screenshot(done: js.Function2[/* err */ js.Any, /* buffer */ nodeLib.Buffer, scala.Unit]): Nightmare = js.native
   def screenshot(path: java.lang.String): Nightmare = js.native
-  def screenshot(path: java.lang.String, clip: nightmareLib.Anon_Y): Nightmare = js.native
+  def screenshot(path: java.lang.String, clip: nightmareLib.Anon_Height): Nightmare = js.native
   def screenshot(
     path: java.lang.String,
-    clip: nightmareLib.Anon_Y,
+    clip: nightmareLib.Anon_Height,
     done: js.Function1[/* err */ js.Any, scala.Unit]
   ): Nightmare = js.native
   def screenshot(path: java.lang.String, done: js.Function1[/* err */ js.Any, scala.Unit]): Nightmare = js.native

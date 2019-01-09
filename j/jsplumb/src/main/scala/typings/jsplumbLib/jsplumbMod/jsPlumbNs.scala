@@ -185,7 +185,7 @@ object jsPlumbNs extends js.Object {
     var cssClass: js.UndefOr[java.lang.String] = js.undefined
     var label: java.lang.String
      // 0.5
-    var labelStyle: js.UndefOr[jsplumbLib.Anon_BorderWidth] = js.undefined
+    var labelStyle: js.UndefOr[jsplumbLib.Anon_BorderStyle] = js.undefined
     var location: js.UndefOr[scala.Double] = js.undefined
   }
   
@@ -432,18 +432,18 @@ object jsPlumbNs extends js.Object {
     def restoreDefaults(): jsPlumbInstance = js.native
     def revalidate(el: Selector | java.lang.String): scala.Unit = js.native
     def revalidate(el: stdLib.Element): scala.Unit = js.native
-    def select(): jsplumbLib.Anon_Each = js.native
-    def select(params: js.Object): jsplumbLib.Anon_Each = js.native
-    def select(params: js.Object, scope: java.lang.String): jsplumbLib.Anon_Each = js.native
-    def select(params: js.Object, scope: java.lang.String, source: java.lang.String): jsplumbLib.Anon_Each = js.native
-    def select(params: js.Object, scope: java.lang.String, source: java.lang.String, target: java.lang.String): jsplumbLib.Anon_Each = js.native
+    def select(): jsplumbLib.Anon_Conn = js.native
+    def select(params: js.Object): jsplumbLib.Anon_Conn = js.native
+    def select(params: js.Object, scope: java.lang.String): jsplumbLib.Anon_Conn = js.native
+    def select(params: js.Object, scope: java.lang.String, source: java.lang.String): jsplumbLib.Anon_Conn = js.native
+    def select(params: js.Object, scope: java.lang.String, source: java.lang.String, target: java.lang.String): jsplumbLib.Anon_Conn = js.native
     def select(
       params: js.Object,
       scope: java.lang.String,
       source: java.lang.String,
       target: java.lang.String,
       connections: js.Array[Connection]
-    ): jsplumbLib.Anon_Each = js.native
+    ): jsplumbLib.Anon_Conn = js.native
     def setContainer(el: Selector | java.lang.String): scala.Unit = js.native
     def setContainer(el: stdLib.Element): scala.Unit = js.native
     def setDefaultScope(scope: java.lang.String): jsPlumbInstance = js.native

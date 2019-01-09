@@ -12,6 +12,6 @@ trait BottomNavigationAction extends js.Object {
   var key: js.UndefOr[java.lang.String] = js.undefined
   var label: js.UndefOr[java.lang.String] = js.undefined
   var onPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_ContainerActive] = js.undefined
+  var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_Active] = js.undefined
 }
 

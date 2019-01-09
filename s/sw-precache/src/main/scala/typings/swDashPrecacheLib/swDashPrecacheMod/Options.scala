@@ -23,7 +23,7 @@ trait Options extends js.Object {
   var navigateFallback: js.UndefOr[java.lang.String] = js.undefined
   var navigateFallbackWhitelist: js.UndefOr[js.Array[stdLib.RegExp]] = js.undefined
   var replacePrefix: js.UndefOr[java.lang.String] = js.undefined
-  var runtimeCaching: js.UndefOr[js.Array[swDashPrecacheLib.Anon_UrlPattern]] = js.undefined
+  var runtimeCaching: js.UndefOr[js.Array[swDashPrecacheLib.Anon_Handler]] = js.undefined
   var skipWaiting: js.UndefOr[scala.Boolean] = js.undefined
   var staticFileGlobs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var stripPrefix: js.UndefOr[java.lang.String] = js.undefined

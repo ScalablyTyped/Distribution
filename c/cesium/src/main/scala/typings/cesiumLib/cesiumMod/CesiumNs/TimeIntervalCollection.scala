@@ -25,7 +25,7 @@ trait TimeIntervalCollection extends js.Object {
   ): scala.Boolean = js.native
   def findDataForIntervalContainingDate(date: JulianDate): js.Any = js.native
   def findInterval(): TimeInterval = js.native
-  def findInterval(options: cesiumLib.Anon_Stop): TimeInterval = js.native
+  def findInterval(options: cesiumLib.Anon_IsStartIncluded): TimeInterval = js.native
   def findIntervalContainingDate(date: JulianDate): js.UndefOr[TimeInterval] = js.native
   def get(index: scala.Double): TimeInterval = js.native
   def indexOf(date: JulianDate): scala.Double = js.native

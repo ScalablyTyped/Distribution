@@ -14,6 +14,6 @@ trait CurrentDragComponentInfo extends js.Object {
   var newInfo: js.UndefOr[gaeaDashModelLib.Anon_UniqueKey] = js.undefined
   // 类型
   var `type`: gaeaDashModelLib.gaeaDashModelLibStrings.`new` | gaeaDashModelLib.gaeaDashModelLibStrings.combo | gaeaDashModelLib.gaeaDashModelLibStrings.viewport
-  var viewportInfo: js.UndefOr[gaeaDashModelLib.Anon_TargetIndex] = js.undefined
+  var viewportInfo: js.UndefOr[gaeaDashModelLib.Anon_MapUniqueKey] = js.undefined
 }
 

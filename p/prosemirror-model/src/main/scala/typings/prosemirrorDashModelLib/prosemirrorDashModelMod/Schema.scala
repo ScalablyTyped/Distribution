@@ -21,11 +21,11 @@ class Schema[N /* <: java.lang.String */, M /* <: java.lang.String */] protected
   /**
     * A map from mark names to mark type objects.
     */
-  var marks: prosemirrorDashModelLib.Anon_Key[M, N] = js.native
+  var marks: prosemirrorDashModelLib.prosemirrorDashModelLibStrings.Schema with js.Any with (org.scalablytyped.runtime.StringDictionary[NodeType[Schema[N, M]]]) = js.native
   /**
     * An object mapping the schema's node names to node type objects.
     */
-  var nodes: prosemirrorDashModelLib.Anon_KeyN[N, M] = js.native
+  var nodes: prosemirrorDashModelLib.prosemirrorDashModelLibStrings.Schema with js.Any with (org.scalablytyped.runtime.StringDictionary[NodeType[Schema[N, M]]]) = js.native
   /**
     * The [spec](#model.SchemaSpec) on which the schema is based,
     * with the added guarantee that its `nodes` and `marks`

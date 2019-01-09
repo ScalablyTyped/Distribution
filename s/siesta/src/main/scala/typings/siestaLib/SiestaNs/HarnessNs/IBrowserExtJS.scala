@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation._
 /**
   * @singleton
   */
-/* RemoveMultipleInheritance: Dropped parents List(siestaLib.SiestaNs.HarnessNs.IBrowserExtJSCore because Would inherit conflicting mutable fields List(coverageUnit, excludeCoverageUnits))*/
-trait IBrowserExtJS extends IBrowser {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- siestaLib.SiestaNs.HarnessNs.IBrowserExtJSCore because var conflicts: coverageUnit, excludeCoverageUnits. Inlined installLoaderInstrumentationHook */ trait IBrowserExtJS extends IBrowser {
   var allowExtVersionChange: scala.Boolean
+  var installLoaderInstrumentationHook: scala.Boolean
   var loaderPath: js.Any
   var waitForAppReady: js.Any
   var waitForExtReady: js.Any

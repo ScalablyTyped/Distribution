@@ -14,6 +14,6 @@ trait CroppieOptions extends js.Object {
   var enforceBoundary: js.UndefOr[scala.Boolean] = js.undefined
   var mouseWheelZoom: js.UndefOr[scala.Boolean] = js.undefined
   var showZoomer: js.UndefOr[scala.Boolean] = js.undefined
-  var viewport: js.UndefOr[croppieLib.Anon_TypeHeight] = js.undefined
+  var viewport: js.UndefOr[croppieLib.Anon_HeightType] = js.undefined
 }
 

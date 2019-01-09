@@ -39,14 +39,14 @@ trait JQuery extends js.Object {
     action: jqueryDashEditableDashSelectLib.jqueryDashEditableDashSelectLibStrings.add,
     text: java.lang.String,
     index: scala.Double,
-    attrs: js.Array[Anon_Value]
+    attrs: js.Array[Anon_Name]
   ): scala.Unit = js.native
   @JSName("editableSelect")
   def editableSelect_add(
     action: jqueryDashEditableDashSelectLib.jqueryDashEditableDashSelectLibStrings.add,
     text: java.lang.String,
     index: scala.Double,
-    attrs: js.Array[Anon_Value],
+    attrs: js.Array[Anon_Name],
     data: java.lang.String
   ): scala.Unit = js.native
   @JSName("editableSelect")

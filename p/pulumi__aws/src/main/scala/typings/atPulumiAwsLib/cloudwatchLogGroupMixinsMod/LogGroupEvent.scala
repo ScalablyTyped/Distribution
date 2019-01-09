@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LogGroupEvent extends js.Object {
-  var awslogs: atPulumiAwsLib.Anon_Data
+  var awslogs: atPulumiAwsLib.Anon_DataString
 }
 

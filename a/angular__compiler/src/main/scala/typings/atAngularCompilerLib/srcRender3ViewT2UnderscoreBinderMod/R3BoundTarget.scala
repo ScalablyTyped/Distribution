@@ -17,7 +17,7 @@ class R3BoundTarget[DirectiveT /* <: atAngularCompilerLib.srcRender3ViewT2Unders
       DirectiveT | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Element | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Template
     ], references: stdLib.Map[
       atAngularCompilerLib.srcRender3R3UnderscoreAstMod.BoundAttribute | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.BoundEvent | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Reference | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.TextAttribute, 
-      atAngularCompilerLib.Anon_Node[DirectiveT] | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Element | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Template
+      atAngularCompilerLib.Anon_Directive[DirectiveT] | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Element | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Template
     ], exprTargets: stdLib.Map[
       atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST, 
       atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Reference | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Variable

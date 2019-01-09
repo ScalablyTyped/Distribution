@@ -142,7 +142,7 @@ class TextFrame ()
   def load(): TextFrame = js.native
   def load(option: java.lang.String): TextFrame = js.native
   def load(option: js.Array[java.lang.String]): TextFrame = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): TextFrame = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): TextFrame = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.TextFrameLoadOptions): TextFrame = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

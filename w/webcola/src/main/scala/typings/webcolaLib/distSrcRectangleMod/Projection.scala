@@ -34,7 +34,7 @@ class Projection protected () extends js.Object {
     updateNodeBounds: js.Any,
     updateGroupBounds: js.Any
   ): js.Any = js.native
-  def projectFunctions(): js.Array[webcolaLib.Anon_X0] = js.native
+  def projectFunctions(): js.Array[webcolaLib.Anon_R] = js.native
   /* private */ def setupVariablesAndBounds(x0: js.Any, y0: js.Any, desired: js.Any, getDesired: js.Any): js.Any = js.native
   /* private */ def solve(vs: js.Any, cs: js.Any, starting: js.Any, desired: js.Any): js.Any = js.native
   def xProject(x0: js.Array[scala.Double], y0: js.Array[scala.Double], x: js.Array[scala.Double]): scala.Unit = js.native

@@ -15,13 +15,10 @@ class Transfer protected ()
 @JSImport("antd", "Transfer")
 @js.native
 object Transfer extends js.Object {
-  var List: org.scalablytyped.runtime.Instantiable1[
-    /* props */ antdLib.libTransferListMod.TransferListProps, 
-    antdLib.libTransferListMod.default
-  ] = js.native
+  var List: antdLib.Anon_DefaultPropsProps = js.native
   var Operation: org.scalablytyped.runtime.Instantiable0[antdLib.libTransferOperationMod.default] = js.native
-  var Search: org.scalablytyped.runtime.Instantiable0[antdLib.libTransferSearchMod.default] = js.native
-  var defaultProps: antdLib.Anon_DataSource = js.native
-  var propTypes: antdLib.Anon_Body = js.native
+  var Search: antdLib.Anon_DefaultPropsAnonPlaceholder = js.native
+  var defaultProps: antdLib.Anon_DataSourceLocale = js.native
+  var propTypes: antdLib.Anon_ArgsBody = js.native
 }
 

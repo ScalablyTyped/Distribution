@@ -24,7 +24,7 @@ trait Config extends js.Object {
   var SAFE_FOR_JQUERY: js.UndefOr[scala.Boolean] = js.undefined
   var SAFE_FOR_TEMPLATES: js.UndefOr[scala.Boolean] = js.undefined
   var SANITIZE_DOM: js.UndefOr[scala.Boolean] = js.undefined
-  var USE_PROFILES: js.UndefOr[dompurifyLib.dompurifyLibNumbers.`false` | dompurifyLib.Anon_MathMl] = js.undefined
+  var USE_PROFILES: js.UndefOr[dompurifyLib.dompurifyLibNumbers.`false` | dompurifyLib.Anon_Html] = js.undefined
   var WHOLE_DOCUMENT: js.UndefOr[scala.Boolean] = js.undefined
 }
 

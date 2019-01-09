@@ -24,7 +24,10 @@ trait WebSocket
   @JSName("addEventListener")
   def addEventListener_close(method: uwsLib.uwsLibStrings.close): scala.Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_close(method: uwsLib.uwsLibStrings.close, cb: js.Function1[/* event */ uwsLib.Anon_WasClean, scala.Unit]): scala.Unit = js.native
+  def addEventListener_close(
+    method: uwsLib.uwsLibStrings.close,
+    cb: js.Function1[/* event */ uwsLib.Anon_CodeReason, scala.Unit]
+  ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_error(method: uwsLib.uwsLibStrings.error): scala.Unit = js.native
   @JSName("addEventListener")
@@ -35,12 +38,15 @@ trait WebSocket
   @JSName("addEventListener")
   def addEventListener_message(
     method: uwsLib.uwsLibStrings.message,
-    cb: js.Function1[/* event */ uwsLib.Anon_TypeData, scala.Unit]
+    cb: js.Function1[/* event */ uwsLib.Anon_DataTarget, scala.Unit]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_open(method: uwsLib.uwsLibStrings.open): scala.Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_open(method: uwsLib.uwsLibStrings.open, cb: js.Function1[/* event */ uwsLib.Anon_Target, scala.Unit]): scala.Unit = js.native
+  def addEventListener_open(
+    method: uwsLib.uwsLibStrings.open,
+    cb: js.Function1[/* event */ uwsLib.Anon_Target_1433945625, scala.Unit]
+  ): scala.Unit = js.native
   @JSName("addListener")
   def addListener_close(
     event: uwsLib.uwsLibStrings.close,
@@ -120,10 +126,10 @@ trait WebSocket
       scala.Unit
     ]
   ): this.type = js.native
-  def onclose(event: uwsLib.Anon_WasCleanTarget): scala.Unit = js.native
+  def onclose(event: uwsLib.Anon_Code): scala.Unit = js.native
   def onerror(err: nodeLib.Error): scala.Unit = js.native
-  def onmessage(event: uwsLib.Anon_Type): scala.Unit = js.native
-  def onopen(event: uwsLib.Anon_TargetWebSocket): scala.Unit = js.native
+  def onmessage(event: uwsLib.Anon_Data): scala.Unit = js.native
+  def onopen(event: uwsLib.Anon_Target): scala.Unit = js.native
   def pause(): scala.Unit = js.native
   def ping(): scala.Unit = js.native
   def ping(data: js.Any): scala.Unit = js.native

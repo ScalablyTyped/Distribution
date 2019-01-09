@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.IHashAlgorithm because Would inherit conflicting mutable fields List(algorithm, namespaceURI))*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.IHashAlgorithm because var conflicts: algorithm, namespaceURI. Inlined Digest, Digest, Digest */ @js.native
 trait HashAlgorithm extends XmlAlgorithm {
   def Digest(xml: java.lang.String): js.Thenable[stdLib.Uint8Array] = js.native
   def Digest(xml: stdLib.BufferSource): js.Thenable[stdLib.Uint8Array] = js.native

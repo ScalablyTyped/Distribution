@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Geometries extends js.Object {
-  var geometries: scala.Double
-  var textures: scala.Double
+  var geometries: js.Any
+  var images: js.Any
+  var materials: js.Any
+  var textures: js.Any
 }
 

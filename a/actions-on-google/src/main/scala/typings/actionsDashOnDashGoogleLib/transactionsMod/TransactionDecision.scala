@@ -12,7 +12,7 @@ trait TransactionDecision extends js.Object {
     * Will appear if userDecision is Transactions.DELIVERY_ADDRESS_UPDATED.
     */
   var deliveryAddress: Location
-  var order: actionsDashOnDashGoogleLib.Anon_GoogleOrderId
+  var order: actionsDashOnDashGoogleLib.Anon_ActionOrderId
   /** One of Transactions.ConfirmationDecision. */
   var userDecision: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TransactionUserDecision
 }

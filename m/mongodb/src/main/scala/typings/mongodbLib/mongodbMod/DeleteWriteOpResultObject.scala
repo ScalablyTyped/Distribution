@@ -11,6 +11,6 @@ trait DeleteWriteOpResultObject extends js.Object {
   //The number of documents deleted.
   var deletedCount: js.UndefOr[scala.Double] = js.undefined
   //The raw result returned from MongoDB, field will vary depending on server version.
-  var result: mongodbLib.Anon_NOk
+  var result: mongodbLib.Anon_N
 }
 

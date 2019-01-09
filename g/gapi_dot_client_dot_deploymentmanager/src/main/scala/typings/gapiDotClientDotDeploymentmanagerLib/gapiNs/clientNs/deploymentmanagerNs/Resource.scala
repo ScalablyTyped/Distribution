@@ -29,6 +29,6 @@ trait Resource extends js.Object {
   /** Output only. The URL of the actual resource. */
   var url: js.UndefOr[java.lang.String] = js.undefined
   /** Output only. If warning messages are generated during processing of this resource, this field will be populated. */
-  var warnings: js.UndefOr[js.Array[gapiDotClientDotDeploymentmanagerLib.Anon_Data]] = js.undefined
+  var warnings: js.UndefOr[js.Array[gapiDotClientDotDeploymentmanagerLib.Anon_CodeData]] = js.undefined
 }
 

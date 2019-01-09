@@ -21,18 +21,18 @@ object servicesNs extends js.Object {
     @JSName("$publish")
     def $publish(
       method: java.lang.String,
-      parameters: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PublishParameters */ js.Any
+      parameters: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PublishParameters */ js.Any
     ): js.Promise[_] = js.native
     @JSName("$publish")
     def $publish(
       method: java.lang.String,
-      parameters: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PublishParameters */ js.Any,
+      parameters: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PublishParameters */ js.Any,
       hardFail: scala.Boolean
     ): js.Promise[_] = js.native
     @JSName("$publish")
     def $publish(
       method: java.lang.String,
-      parameters: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PublishParameters */ js.Any,
+      parameters: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PublishParameters */ js.Any,
       hardFail: scala.Boolean,
       debug: scala.Double
     ): js.Promise[_] = js.native

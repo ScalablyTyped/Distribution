@@ -26,7 +26,7 @@ trait Gesture
   @JSName("componentWillUnmount")
   def componentWillUnmount_MGesture(): scala.Unit = js.native
   def doSingleTouchEnd(status: js.Any): scala.Unit = js.native
-  def getGestureState(): rcDashGestureLib.Anon_SrcEvent = js.native
+  def getGestureState(): rcDashGestureLib.Anon_AvailablePan = js.native
   def getTouchAction(): rcDashGestureLib.rcDashGestureLibStrings.auto | (rcDashGestureLib.rcDashGestureLibStrings.`pan-x pan-y`) | rcDashGestureLib.rcDashGestureLibStrings.`pan-x` | rcDashGestureLib.rcDashGestureLibStrings.`pan-y` = js.native
   def getTouches(e: js.Any): js.Any = js.native
   def initGestureStatus(e: js.Any): scala.Unit = js.native

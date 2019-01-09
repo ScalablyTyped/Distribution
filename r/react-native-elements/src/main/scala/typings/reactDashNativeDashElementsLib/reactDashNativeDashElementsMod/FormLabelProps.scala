@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FormLabelProps
-  extends reactDashNativeLib.reactDashNativeMod.ViewProps {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ trait FormLabelProps extends js.Object {
   /**
     * Additional label container style
     */

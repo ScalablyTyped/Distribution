@@ -50,7 +50,7 @@ class Default protected ()
   def computeSegVerticals(segs: js.Any): scala.Unit = js.native
   def computeSnapTime(snapIndex: js.Any): momentLib.momentMod.momentNs.Duration = js.native
   def computeTimeTop(time: js.Any): js.Any = js.native
-  def generateSegVerticalCss(seg: js.Any): fullcalendarLib.Anon_BottomTopNumber = js.native
+  def generateSegVerticalCss(seg: js.Any): fullcalendarLib.Anon_BottomTop = js.native
   def getTotalSlatHeight(): js.Any = js.native
   def groupSegsByCol(segs: js.Any): js.Array[_] = js.native
   def processOptions(): scala.Unit = js.native

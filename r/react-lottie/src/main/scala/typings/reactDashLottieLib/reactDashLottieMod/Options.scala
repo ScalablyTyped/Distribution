@@ -18,6 +18,6 @@ trait Options extends js.Object {
     * Defines if the animation should play only once or repeatedly in an endless loop
     */
   var loop: js.UndefOr[scala.Boolean] = js.undefined
-  var rendererSettings: js.UndefOr[reactDashLottieLib.Anon_Context] = js.undefined
+  var rendererSettings: js.UndefOr[reactDashLottieLib.Anon_ClassName] = js.undefined
 }
 

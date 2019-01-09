@@ -21,6 +21,6 @@ import scala.scalajs.js.annotation._
   *
   */
 class RepeatUntilFailure () extends Decorator {
-  def this(hasMaxLoopChild: behavior3Lib.Anon_MaxLoop) = this()
+  def this(hasMaxLoopChild: behavior3Lib.Anon_ChildMaxLoopBaseNode) = this()
 }
 

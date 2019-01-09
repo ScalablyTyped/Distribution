@@ -63,7 +63,7 @@ object User extends js.Object {
   /** @deprecated, to be removed in future versions */
   def register(server: java.lang.String, username: java.lang.String, password: java.lang.String): js.Promise[realmLib.RealmNs.SyncNs.User] = js.native
   /** @deprecated, to be removed in future versions */
-  def registerWithProvider(server: java.lang.String, options: realmLib.Anon_ProviderToken): js.Promise[realmLib.RealmNs.SyncNs.User] = js.native
+  def registerWithProvider(server: java.lang.String, options: realmLib.Anon_Provider): js.Promise[realmLib.RealmNs.SyncNs.User] = js.native
   def requestEmailConfirmation(server: java.lang.String, email: java.lang.String): js.Promise[scala.Unit] = js.native
   def requestPasswordReset(server: java.lang.String, email: java.lang.String): js.Promise[scala.Unit] = js.native
 }

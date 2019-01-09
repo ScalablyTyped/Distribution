@@ -24,6 +24,6 @@ object protractorModMembers extends js.Object {
   var by: protractorLib.builtLocatorsMod.ProtractorBy = js.native
   var element: protractorLib.builtBrowserMod.ElementHelper = js.native
   var protractor: protractorLib.builtPtorMod.Ptor = js.native
-  var utils: protractorLib.Anon_FirefoxRemote = js.native
+  var utils: protractorLib.Anon_Firefox = js.native
 }
 

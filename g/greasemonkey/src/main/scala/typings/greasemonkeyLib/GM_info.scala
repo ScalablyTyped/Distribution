@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("GM_info")
 @js.native
 object GM_info extends js.Object {
-  var script: greasemonkeyLib.Anon_Name = js.native
+  var script: greasemonkeyLib.Anon_Description = js.native
   var scriptMetaStr: java.lang.String = js.native
   var scriptWillUpdate: scala.Boolean = js.native
   var version: java.lang.String = js.native

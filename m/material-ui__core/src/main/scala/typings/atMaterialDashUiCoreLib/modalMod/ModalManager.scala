@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ModalManager ()
   extends atMaterialDashUiCoreLib.modalModalManagerMod.default {
-  def this(opts: atMaterialDashUiCoreLib.Anon_HideSiblingNodes) = this()
+  def this(opts: atMaterialDashUiCoreLib.Anon_HandleContainerOverflow) = this()
 }
 

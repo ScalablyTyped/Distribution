@@ -25,23 +25,8 @@ class Spinner () extends js.Object {
 @JSImport("cli-spinner", "Spinner")
 @js.native
 object Spinner extends js.Object {
-  def setDefaultSpinnerDelay(spinnerDelay: scala.Double): org.scalablytyped.runtime.Instantiable1[
-    /* titleOrOptions */ js.UndefOr[
-      /* titleOrOptions */ java.lang.String | cliDashSpinnerLib.cliDashSpinnerMod.Options
-    ], 
-    cliDashSpinnerLib.cliDashSpinnerMod.Spinner
-  ] = js.native
-  def setDefaultSpinnerString(spinnerString: java.lang.String): org.scalablytyped.runtime.Instantiable1[
-    /* titleOrOptions */ js.UndefOr[
-      /* titleOrOptions */ java.lang.String | cliDashSpinnerLib.cliDashSpinnerMod.Options
-    ], 
-    cliDashSpinnerLib.cliDashSpinnerMod.Spinner
-  ] = js.native
-  def setDefaultSpinnerString(spinnerString: scala.Double): org.scalablytyped.runtime.Instantiable1[
-    /* titleOrOptions */ js.UndefOr[
-      /* titleOrOptions */ java.lang.String | cliDashSpinnerLib.cliDashSpinnerMod.Options
-    ], 
-    cliDashSpinnerLib.cliDashSpinnerMod.Spinner
-  ] = js.native
+  def setDefaultSpinnerDelay(spinnerDelay: scala.Double): cliDashSpinnerLib.Anon_SetDefaultSpinnerDelay = js.native
+  def setDefaultSpinnerString(spinnerString: java.lang.String): cliDashSpinnerLib.Anon_SetDefaultSpinnerDelay = js.native
+  def setDefaultSpinnerString(spinnerString: scala.Double): cliDashSpinnerLib.Anon_SetDefaultSpinnerDelay = js.native
 }
 

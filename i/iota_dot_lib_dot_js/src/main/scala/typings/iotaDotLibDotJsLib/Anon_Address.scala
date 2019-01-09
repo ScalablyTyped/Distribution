@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Address extends js.Object {
-  var address: java.lang.String
-  var inputs: js.Array[java.lang.String]
+  var address: js.UndefOr[java.lang.String] = js.undefined
+  var inputs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var security: js.UndefOr[Security] = js.undefined
 }
 

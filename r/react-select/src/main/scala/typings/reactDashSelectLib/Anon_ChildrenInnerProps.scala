@@ -6,9 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ChildrenInnerProps extends js.Object {
-  /** The children to be rendered. */
+  /** Children to render. */
   var children: reactLib.reactMod.ReactNs.ReactNode
-  /** Inner props to be passed down to the container. */
-  var innerProps: Anon_OnKeyDown
+  /** The mouse down event and the innerRef to pass down to the controller element. */
+  var innerProps: Anon_Event
+  var innerRef: reactLib.reactMod.ReactNs.Ref[_]
 }
 

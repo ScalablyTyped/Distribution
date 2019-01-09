@@ -12,7 +12,7 @@ object fnDateAddDashLocaleMod
       js.Function2[
         /* lang */ java.lang.String, 
         /* locale */ coreDashJsLib.coreNs.Locale, 
-        /* import warning: ImportType.apply Failed type conversion: typeof core-js.core */ js.Any
+        /* import warning: ImportType.apply Failed type conversion: typeof core */ js.Any
       ]
     ]
 

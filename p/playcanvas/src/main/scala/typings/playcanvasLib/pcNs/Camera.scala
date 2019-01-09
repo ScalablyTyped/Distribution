@@ -144,7 +144,7 @@ class Camera () extends js.Object {
     * @param {Number} clearOptions.depth The options determining the behaviour of subsequent render target clears.
     * @param {pc.CLEARFLAG} clearOptions.flags The options determining the behaviour of subsequent render target clears.
     */
-  def setClearOptions(options: playcanvasLib.Anon_ColorDepth): scala.Unit = js.native
+  def setClearOptions(options: playcanvasLib.Anon_ColorDepthFlags): scala.Unit = js.native
   /**
     * @private
     * @function

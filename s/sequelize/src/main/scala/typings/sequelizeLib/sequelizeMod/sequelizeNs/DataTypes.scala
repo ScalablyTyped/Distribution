@@ -126,7 +126,7 @@ trait DataTypes extends js.Object {
     * Precision and scale for the decimal number
     */
   def DECIMAL(): DataTypeDecimal = js.native
-  def DECIMAL(options: sequelizeLib.Anon_Scale): DataTypeDecimal = js.native
+  def DECIMAL(options: sequelizeLib.Anon_Precision): DataTypeDecimal = js.native
   def DECIMAL(precision: scala.Double): DataTypeDecimal = js.native
   def DECIMAL(precision: scala.Double, scale: scala.Double): DataTypeDecimal = js.native
   /**
@@ -135,14 +135,14 @@ trait DataTypes extends js.Object {
   def DOUBLE(): DataTypeDouble = js.native
   def DOUBLE(length: scala.Double): DataTypeDouble = js.native
   def DOUBLE(length: scala.Double, decimals: scala.Double): DataTypeDouble = js.native
-  def DOUBLE(options: sequelizeLib.Anon_LengthDecimals): DataTypeDouble = js.native
+  def DOUBLE(options: sequelizeLib.Anon_Decimals): DataTypeDouble = js.native
   /**
     * Length of the number field and decimals of the real
     */
   def `DOUBLE PRECISION`(): DataTypeDouble = js.native
   def `DOUBLE PRECISION`(length: scala.Double): DataTypeDouble = js.native
   def `DOUBLE PRECISION`(length: scala.Double, decimals: scala.Double): DataTypeDouble = js.native
-  def `DOUBLE PRECISION`(options: sequelizeLib.Anon_LengthDecimals): DataTypeDouble = js.native
+  def `DOUBLE PRECISION`(options: sequelizeLib.Anon_Decimals): DataTypeDouble = js.native
   /**
     * Enum field
     *
@@ -159,7 +159,7 @@ trait DataTypes extends js.Object {
   def FLOAT(): DataTypeFloat = js.native
   def FLOAT(length: scala.Double): DataTypeFloat = js.native
   def FLOAT(length: scala.Double, decimals: scala.Double): DataTypeFloat = js.native
-  def FLOAT(options: sequelizeLib.Anon_LengthDecimals): DataTypeFloat = js.native
+  def FLOAT(options: sequelizeLib.Anon_Decimals): DataTypeFloat = js.native
   /**
     * Geometry field for Postgres
     */
@@ -181,7 +181,7 @@ trait DataTypes extends js.Object {
     * Precision and scale for the decimal number
     */
   def NUMERIC(): DataTypeDecimal = js.native
-  def NUMERIC(options: sequelizeLib.Anon_Scale): DataTypeDecimal = js.native
+  def NUMERIC(options: sequelizeLib.Anon_Precision): DataTypeDecimal = js.native
   def NUMERIC(precision: scala.Double): DataTypeDecimal = js.native
   def NUMERIC(precision: scala.Double, scale: scala.Double): DataTypeDecimal = js.native
   /**
@@ -198,7 +198,7 @@ trait DataTypes extends js.Object {
   def REAL(): DataTypeReal = js.native
   def REAL(length: scala.Double): DataTypeReal = js.native
   def REAL(length: scala.Double, decimals: scala.Double): DataTypeReal = js.native
-  def REAL(options: sequelizeLib.Anon_LengthDecimals): DataTypeReal = js.native
+  def REAL(options: sequelizeLib.Anon_Decimals): DataTypeReal = js.native
   /**
     * Length of the number field.
     */

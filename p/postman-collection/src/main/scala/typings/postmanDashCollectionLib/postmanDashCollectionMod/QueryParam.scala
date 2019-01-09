@@ -5,17 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(postmanDashCollectionLib.postmanDashCollectionMod.QueryParamDefinition because Would inherit conflicting mutable fields List(description, disabled, id, name))*/
-@JSImport("postman-collection", "QueryParam")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- postmanDashCollectionLib.postmanDashCollectionMod.QueryParamDefinition because var conflicts: description, disabled, id, name. Inlined key, value, system */ @JSImport("postman-collection", "QueryParam")
 @js.native
 class QueryParam protected () extends Property[QueryParamDefinition] {
   def this(options: java.lang.String) = this()
   def this(options: QueryParamDefinition) = this()
-  var key: java.lang.String | scala.Null = js.native
+  var key: scala.Null | java.lang.String = js.native
   var system: js.UndefOr[scala.Boolean] = js.native
-  var value: java.lang.String | scala.Null = js.native
+  var value: scala.Null | java.lang.String = js.native
   def update(param: java.lang.String): scala.Unit = js.native
-  def update(param: postmanDashCollectionLib.Anon_KeyValue): scala.Unit = js.native
+  def update(param: postmanDashCollectionLib.Anon_KeyValueString): scala.Unit = js.native
 }
 
 @JSImport("postman-collection", "QueryParam")
@@ -28,7 +28,7 @@ object QueryParam extends js.Object {
   def unparse(params: js.Array[postmanDashCollectionLib.postmanDashCollectionMod.QueryParamDefinition]): java.lang.String = js.native
   def unparse(
     params: js.Array[postmanDashCollectionLib.postmanDashCollectionMod.QueryParamDefinition],
-    options: postmanDashCollectionLib.Anon_IgnoreDisabled
+    options: postmanDashCollectionLib.Anon_Encode
   ): java.lang.String = js.native
   def unparseSingle(obj: postmanDashCollectionLib.postmanDashCollectionMod.QueryParamDefinition, encode: scala.Boolean): java.lang.String = js.native
 }

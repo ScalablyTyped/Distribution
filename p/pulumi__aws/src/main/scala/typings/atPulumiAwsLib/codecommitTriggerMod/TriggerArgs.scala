@@ -11,9 +11,7 @@ trait TriggerArgs extends js.Object {
     */
   val repositoryName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
   val triggers: atPulumiPulumiLib.resourceMod.Input[
-    js.Array[
-      atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameCustomDataDestinationArn]
-    ]
+    js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BranchesCustomData]]
   ]
 }
 

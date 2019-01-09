@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DocumentProps[Q /* <: nextDashServerLib.routerMod.DefaultQuery */] extends js.Object {
-  var `__NEXT_DATA__`: nextLib.Anon_Key[Q]
+  var `__NEXT_DATA__`: nextLib.Anon_AssetPrefix[Q]
   var assetPrefix: java.lang.String
   var buildManifest: stdLib.Record[java.lang.String, _]
   var dev: scala.Boolean

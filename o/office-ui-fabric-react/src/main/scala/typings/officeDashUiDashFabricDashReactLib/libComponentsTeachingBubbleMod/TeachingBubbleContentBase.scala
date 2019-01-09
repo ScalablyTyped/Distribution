@@ -15,6 +15,6 @@ class TeachingBubbleContentBase protected ()
 @JSImport("office-ui-fabric-react/lib/components/TeachingBubble", "TeachingBubbleContentBase")
 @js.native
 object TeachingBubbleContentBase extends js.Object {
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_ImageProps = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_HasCondensedHeadline = js.native
 }
 

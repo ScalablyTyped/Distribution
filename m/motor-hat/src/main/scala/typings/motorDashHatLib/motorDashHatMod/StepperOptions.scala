@@ -20,7 +20,7 @@ trait StepperOptions extends js.Object {
   /**
     * Pin definition for the motor
     */
-  var pins: motorDashHatLib.Anon_W2
+  var pins: motorDashHatLib.Anon_W1
   /**
     * Pulses per second
     */

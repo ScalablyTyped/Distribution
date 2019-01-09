@@ -27,7 +27,7 @@ abstract class AccessListEntryView ()
     * Retrieves the storage items that start at the specified index in the access list or most recently used (MRU) list.
     * @param startIndex The zero-based index of the start of the items in the collection to retrieve.
     */
-  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_Items = js.native
+  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValueAccessListEntry = js.native
   def indexOf(value: AccessListEntry, extra: js.Any*): winrtDashUwpLib.Anon_Index = js.native
   /**
     * Retrieves the index of the specified storage item in the access list or most recently used (MRU) list.

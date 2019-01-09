@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebMercatorTilingScheme ()
   extends cesiumLib.cesiumMod.CesiumNs.WebMercatorTilingScheme {
-  def this(options: cesiumLib.Anon_EllipsoidRectangleNortheastInMeters) = this()
+  def this(options: cesiumLib.Anon_EllipsoidNumberOfLevelZeroTilesXNumberOfLevelZeroTilesY) = this()
 }
 

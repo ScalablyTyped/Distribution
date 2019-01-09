@@ -34,32 +34,32 @@ object fsNsMembers extends js.Object {
     * Appends data to a file, creating the file if it does not yet exist
     */
   def appendFile(file: java.lang.String, data: java.lang.String): js.Promise[scala.Unit] = js.native
-  def appendFile(file: java.lang.String, data: java.lang.String, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def appendFile(file: java.lang.String, data: java.lang.String, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def appendFile(file: java.lang.String, data: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
-  def appendFile(file: java.lang.String, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def appendFile(file: java.lang.String, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def appendFile(file: nodeLib.Buffer, data: java.lang.String): js.Promise[scala.Unit] = js.native
-  def appendFile(file: nodeLib.Buffer, data: java.lang.String, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def appendFile(file: nodeLib.Buffer, data: java.lang.String, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def appendFile(file: nodeLib.Buffer, data: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
-  def appendFile(file: nodeLib.Buffer, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def appendFile(file: nodeLib.Buffer, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def appendFile(file: scala.Double, data: java.lang.String): js.Promise[scala.Unit] = js.native
-  def appendFile(file: scala.Double, data: java.lang.String, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def appendFile(file: scala.Double, data: java.lang.String, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def appendFile(file: scala.Double, data: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
-  def appendFile(file: scala.Double, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def appendFile(file: scala.Double, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   /**
     * Appends data to a file, creating the file if it does not yet exist
     */
   def appendFileSync(file: java.lang.String, data: java.lang.String): scala.Unit = js.native
-  def appendFileSync(file: java.lang.String, data: java.lang.String, options: adoneLib.Anon_EncodingMode): scala.Unit = js.native
+  def appendFileSync(file: java.lang.String, data: java.lang.String, options: adoneLib.Anon_EncodingFlag): scala.Unit = js.native
   def appendFileSync(file: java.lang.String, data: nodeLib.Buffer): scala.Unit = js.native
-  def appendFileSync(file: java.lang.String, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingMode): scala.Unit = js.native
+  def appendFileSync(file: java.lang.String, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingFlag): scala.Unit = js.native
   def appendFileSync(file: nodeLib.Buffer, data: java.lang.String): scala.Unit = js.native
-  def appendFileSync(file: nodeLib.Buffer, data: java.lang.String, options: adoneLib.Anon_EncodingMode): scala.Unit = js.native
+  def appendFileSync(file: nodeLib.Buffer, data: java.lang.String, options: adoneLib.Anon_EncodingFlag): scala.Unit = js.native
   def appendFileSync(file: nodeLib.Buffer, data: nodeLib.Buffer): scala.Unit = js.native
-  def appendFileSync(file: nodeLib.Buffer, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingMode): scala.Unit = js.native
+  def appendFileSync(file: nodeLib.Buffer, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingFlag): scala.Unit = js.native
   def appendFileSync(file: scala.Double, data: java.lang.String): scala.Unit = js.native
-  def appendFileSync(file: scala.Double, data: java.lang.String, options: adoneLib.Anon_EncodingMode): scala.Unit = js.native
+  def appendFileSync(file: scala.Double, data: java.lang.String, options: adoneLib.Anon_EncodingFlag): scala.Unit = js.native
   def appendFileSync(file: scala.Double, data: nodeLib.Buffer): scala.Unit = js.native
-  def appendFileSync(file: scala.Double, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingMode): scala.Unit = js.native
+  def appendFileSync(file: scala.Double, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingFlag): scala.Unit = js.native
   def chmod(path: adoneLib.adoneNs.fsNs.INs.URL, mode: scala.Double): js.Promise[scala.Unit] = js.native
   /**
     * Changes permissions of a file
@@ -340,7 +340,7 @@ object fsNsMembers extends js.Object {
   def readFile(filepath: adoneLib.adoneNs.fsNs.INs.URL): js.Promise[nodeLib.Buffer] = js.native
   def readFile(
     filepath: adoneLib.adoneNs.fsNs.INs.URL,
-    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_EncodingCheckTrue | adoneLib.Anon_EncodingCheckTrue_167370198 | adoneLib.Anon_EncodingNull | adoneLib.Anon_Encoding_1054351342)) | adoneLib.adoneNs.fsNs.INs.Encoding | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
+    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_CheckEncoding | adoneLib.Anon_CheckTrue | adoneLib.Anon_Encoding | adoneLib.Anon_Encoding_1054351342)) | adoneLib.adoneNs.fsNs.INs.Encoding | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
   ): js.Promise[nodeLib.Buffer | scala.Null] = js.native
   def readFile(filepath: java.lang.String): js.Promise[nodeLib.Buffer] = js.native
   /**
@@ -348,18 +348,18 @@ object fsNsMembers extends js.Object {
     */
   def readFile(
     filepath: java.lang.String,
-    encoding: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_EncodingCheckTrue | adoneLib.Anon_EncodingCheckTrue_167370198 | adoneLib.Anon_EncodingNull | adoneLib.Anon_Encoding_1054351342)) | adoneLib.adoneNs.fsNs.INs.Encoding | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
+    encoding: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_CheckEncoding | adoneLib.Anon_CheckTrue | adoneLib.Anon_Encoding | adoneLib.Anon_Encoding_1054351342)) | adoneLib.adoneNs.fsNs.INs.Encoding | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
   ): js.Promise[java.lang.String] = js.native
   def readFile(filepath: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def readFile(
     filepath: nodeLib.Buffer,
-    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_EncodingCheckTrue | adoneLib.Anon_EncodingCheckTrue_167370198 | adoneLib.Anon_EncodingNull | adoneLib.Anon_Encoding_1054351342)) | adoneLib.adoneNs.fsNs.INs.Encoding | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
+    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_CheckEncoding | adoneLib.Anon_CheckTrue | adoneLib.Anon_Encoding | adoneLib.Anon_Encoding_1054351342)) | adoneLib.adoneNs.fsNs.INs.Encoding | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
   ): js.Promise[nodeLib.Buffer | scala.Null] = js.native
   def readFileSync(filepath: adoneLib.adoneNs.fsNs.INs.URL): nodeLib.Buffer = js.native
   def readFileSync(filepath: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): java.lang.String = js.native
   def readFileSync(
     filepath: adoneLib.adoneNs.fsNs.INs.URL,
-    options: adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_EncodingCheckTrue | adoneLib.Anon_EncodingCheckTrue_167370198)
+    options: adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_CheckEncoding | adoneLib.Anon_CheckTrue)
   ): nodeLib.Buffer | scala.Null = js.native
   def readFileSync(filepath: java.lang.String): nodeLib.Buffer = js.native
   def readFileSync(filepath: java.lang.String, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): java.lang.String = js.native
@@ -368,28 +368,28 @@ object fsNsMembers extends js.Object {
     */
   def readFileSync(
     filepath: java.lang.String,
-    options: adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_EncodingCheckTrue | adoneLib.Anon_EncodingCheckTrue_167370198)
+    options: adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_CheckEncoding | adoneLib.Anon_CheckTrue)
   ): nodeLib.Buffer | scala.Null = js.native
   def readFileSync(filepath: nodeLib.Buffer): nodeLib.Buffer = js.native
   def readFileSync(filepath: nodeLib.Buffer, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): java.lang.String = js.native
   def readFileSync(
     filepath: nodeLib.Buffer,
-    options: adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_EncodingCheckTrue | adoneLib.Anon_EncodingCheckTrue_167370198)
+    options: adoneLib.adoneNs.fsNs.INs.ReadFileOptions with (adoneLib.Anon_Check | adoneLib.Anon_CheckEncoding | adoneLib.Anon_CheckTrue)
   ): nodeLib.Buffer | scala.Null = js.native
   @JSName("readFileSync")
   def readFileSync_Buffer(
     filepath: adoneLib.adoneNs.fsNs.INs.URL,
-    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with adoneLib.Anon_EncodingNull) | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
+    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with adoneLib.Anon_Encoding) | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
   ): nodeLib.Buffer = js.native
   @JSName("readFileSync")
   def readFileSync_Buffer(
     filepath: java.lang.String,
-    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with adoneLib.Anon_EncodingNull) | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
+    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with adoneLib.Anon_Encoding) | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
   ): nodeLib.Buffer = js.native
   @JSName("readFileSync")
   def readFileSync_Buffer(
     filepath: nodeLib.Buffer,
-    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with adoneLib.Anon_EncodingNull) | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
+    options: (adoneLib.adoneNs.fsNs.INs.ReadFileOptions with adoneLib.Anon_Encoding) | adoneLib.adoneNs.fsNs.INs.ReadFileOptions
   ): nodeLib.Buffer = js.native
   @JSName("readFileSync")
   def readFileSync_String(
@@ -408,34 +408,34 @@ object fsNsMembers extends js.Object {
   ): java.lang.String = js.native
   def readLines(filepath: adoneLib.adoneNs.fsNs.INs.URL): js.Promise[js.Array[java.lang.String]] = js.native
   def readLines(filepath: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[js.Array[java.lang.String]] = js.native
-  def readLines(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_Encoding): js.Promise[js.Array[java.lang.String] | scala.Null] = js.native
-  def readLines(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingCheck): js.Promise[js.Array[java.lang.String]] = js.native
+  def readLines(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_CheckEncodingFalse): js.Promise[js.Array[java.lang.String]] = js.native
+  def readLines(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_CheckEncodingFlags): js.Promise[js.Array[java.lang.String] | scala.Null] = js.native
   def readLines(filepath: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def readLines(filepath: java.lang.String, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[js.Array[java.lang.String]] = js.native
+  def readLines(filepath: java.lang.String, options: adoneLib.Anon_CheckEncodingFalse): js.Promise[js.Array[java.lang.String]] = js.native
   /**
     * Reads lines from a file
     */
-  def readLines(filepath: java.lang.String, options: adoneLib.Anon_Encoding): js.Promise[js.Array[java.lang.String] | scala.Null] = js.native
-  def readLines(filepath: java.lang.String, options: adoneLib.Anon_EncodingCheck): js.Promise[js.Array[java.lang.String]] = js.native
+  def readLines(filepath: java.lang.String, options: adoneLib.Anon_CheckEncodingFlags): js.Promise[js.Array[java.lang.String] | scala.Null] = js.native
   def readLines(filepath: nodeLib.Buffer): js.Promise[js.Array[java.lang.String]] = js.native
   def readLines(filepath: nodeLib.Buffer, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[js.Array[java.lang.String]] = js.native
-  def readLines(filepath: nodeLib.Buffer, options: adoneLib.Anon_Encoding): js.Promise[js.Array[java.lang.String] | scala.Null] = js.native
-  def readLines(filepath: nodeLib.Buffer, options: adoneLib.Anon_EncodingCheck): js.Promise[js.Array[java.lang.String]] = js.native
+  def readLines(filepath: nodeLib.Buffer, options: adoneLib.Anon_CheckEncodingFalse): js.Promise[js.Array[java.lang.String]] = js.native
+  def readLines(filepath: nodeLib.Buffer, options: adoneLib.Anon_CheckEncodingFlags): js.Promise[js.Array[java.lang.String] | scala.Null] = js.native
   def readLinesSync(filepath: adoneLib.adoneNs.fsNs.INs.URL): js.Array[java.lang.String] = js.native
   def readLinesSync(filepath: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Array[java.lang.String] = js.native
-  def readLinesSync(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_Encoding): js.Array[java.lang.String] | scala.Null = js.native
-  def readLinesSync(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingCheck): js.Array[java.lang.String] = js.native
+  def readLinesSync(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_CheckEncodingFalse): js.Array[java.lang.String] = js.native
+  def readLinesSync(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_CheckEncodingFlags): js.Array[java.lang.String] | scala.Null = js.native
   def readLinesSync(filepath: java.lang.String): js.Array[java.lang.String] = js.native
   def readLinesSync(filepath: java.lang.String, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Array[java.lang.String] = js.native
+  def readLinesSync(filepath: java.lang.String, options: adoneLib.Anon_CheckEncodingFalse): js.Array[java.lang.String] = js.native
   /**
     * Reads lines from a file
     */
-  def readLinesSync(filepath: java.lang.String, options: adoneLib.Anon_Encoding): js.Array[java.lang.String] | scala.Null = js.native
-  def readLinesSync(filepath: java.lang.String, options: adoneLib.Anon_EncodingCheck): js.Array[java.lang.String] = js.native
+  def readLinesSync(filepath: java.lang.String, options: adoneLib.Anon_CheckEncodingFlags): js.Array[java.lang.String] | scala.Null = js.native
   def readLinesSync(filepath: nodeLib.Buffer): js.Array[java.lang.String] = js.native
   def readLinesSync(filepath: nodeLib.Buffer, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Array[java.lang.String] = js.native
-  def readLinesSync(filepath: nodeLib.Buffer, options: adoneLib.Anon_Encoding): js.Array[java.lang.String] | scala.Null = js.native
-  def readLinesSync(filepath: nodeLib.Buffer, options: adoneLib.Anon_EncodingCheck): js.Array[java.lang.String] = js.native
+  def readLinesSync(filepath: nodeLib.Buffer, options: adoneLib.Anon_CheckEncodingFalse): js.Array[java.lang.String] = js.native
+  def readLinesSync(filepath: nodeLib.Buffer, options: adoneLib.Anon_CheckEncodingFlags): js.Array[java.lang.String] | scala.Null = js.native
   def readSync(
     fd: adoneLib.adoneNs.fsNs.INs.FD,
     /**
@@ -476,63 +476,63 @@ object fsNsMembers extends js.Object {
   ): scala.Double = js.native
   def readWords(filepath: adoneLib.adoneNs.fsNs.INs.URL): js.Promise[js.Array[java.lang.String]] = js.native
   def readWords(filepath: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[js.Array[java.lang.String]] = js.native
-  def readWords(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_Encoding): js.Promise[js.Array[java.lang.String] | scala.Null] = js.native
-  def readWords(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingCheck): js.Promise[js.Array[java.lang.String]] = js.native
+  def readWords(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_CheckEncodingFalse): js.Promise[js.Array[java.lang.String]] = js.native
+  def readWords(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_CheckEncodingFlags): js.Promise[js.Array[java.lang.String] | scala.Null] = js.native
   def readWords(filepath: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def readWords(filepath: java.lang.String, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[js.Array[java.lang.String]] = js.native
+  def readWords(filepath: java.lang.String, options: adoneLib.Anon_CheckEncodingFalse): js.Promise[js.Array[java.lang.String]] = js.native
   /**
     * Reads words from a file
     */
-  def readWords(filepath: java.lang.String, options: adoneLib.Anon_Encoding): js.Promise[js.Array[java.lang.String] | scala.Null] = js.native
-  def readWords(filepath: java.lang.String, options: adoneLib.Anon_EncodingCheck): js.Promise[js.Array[java.lang.String]] = js.native
+  def readWords(filepath: java.lang.String, options: adoneLib.Anon_CheckEncodingFlags): js.Promise[js.Array[java.lang.String] | scala.Null] = js.native
   def readWords(filepath: nodeLib.Buffer): js.Promise[js.Array[java.lang.String]] = js.native
   def readWords(filepath: nodeLib.Buffer, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[js.Array[java.lang.String]] = js.native
-  def readWords(filepath: nodeLib.Buffer, options: adoneLib.Anon_Encoding): js.Promise[js.Array[java.lang.String] | scala.Null] = js.native
-  def readWords(filepath: nodeLib.Buffer, options: adoneLib.Anon_EncodingCheck): js.Promise[js.Array[java.lang.String]] = js.native
+  def readWords(filepath: nodeLib.Buffer, options: adoneLib.Anon_CheckEncodingFalse): js.Promise[js.Array[java.lang.String]] = js.native
+  def readWords(filepath: nodeLib.Buffer, options: adoneLib.Anon_CheckEncodingFlags): js.Promise[js.Array[java.lang.String] | scala.Null] = js.native
   def readWordsSync(filepath: adoneLib.adoneNs.fsNs.INs.URL): js.Array[java.lang.String] = js.native
   def readWordsSync(filepath: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Array[java.lang.String] = js.native
-  def readWordsSync(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_Encoding): js.Array[java.lang.String] | scala.Null = js.native
-  def readWordsSync(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingCheck): js.Array[java.lang.String] = js.native
+  def readWordsSync(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_CheckEncodingFalse): js.Array[java.lang.String] = js.native
+  def readWordsSync(filepath: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_CheckEncodingFlags): js.Array[java.lang.String] | scala.Null = js.native
   def readWordsSync(filepath: java.lang.String): js.Array[java.lang.String] = js.native
   def readWordsSync(filepath: java.lang.String, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Array[java.lang.String] = js.native
+  def readWordsSync(filepath: java.lang.String, options: adoneLib.Anon_CheckEncodingFalse): js.Array[java.lang.String] = js.native
   /**
     * Reads words from a file
     */
-  def readWordsSync(filepath: java.lang.String, options: adoneLib.Anon_Encoding): js.Array[java.lang.String] | scala.Null = js.native
-  def readWordsSync(filepath: java.lang.String, options: adoneLib.Anon_EncodingCheck): js.Array[java.lang.String] = js.native
+  def readWordsSync(filepath: java.lang.String, options: adoneLib.Anon_CheckEncodingFlags): js.Array[java.lang.String] | scala.Null = js.native
   def readWordsSync(filepath: nodeLib.Buffer): js.Array[java.lang.String] = js.native
   def readWordsSync(filepath: nodeLib.Buffer, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Array[java.lang.String] = js.native
-  def readWordsSync(filepath: nodeLib.Buffer, options: adoneLib.Anon_Encoding): js.Array[java.lang.String] | scala.Null = js.native
-  def readWordsSync(filepath: nodeLib.Buffer, options: adoneLib.Anon_EncodingCheck): js.Array[java.lang.String] = js.native
+  def readWordsSync(filepath: nodeLib.Buffer, options: adoneLib.Anon_CheckEncodingFalse): js.Array[java.lang.String] = js.native
+  def readWordsSync(filepath: nodeLib.Buffer, options: adoneLib.Anon_CheckEncodingFlags): js.Array[java.lang.String] | scala.Null = js.native
   def readdir(path: adoneLib.adoneNs.fsNs.INs.URL): js.Promise[js.Array[nodeLib.Buffer]] = js.native
   def readdir(path: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[js.Array[java.lang.String]] = js.native
-  def readdir(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingNull): js.Promise[js.Array[nodeLib.Buffer]] = js.native
+  def readdir(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_Encoding): js.Promise[js.Array[nodeLib.Buffer]] = js.native
   def readdir(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingOptional): js.Promise[js.Array[java.lang.String]] = js.native
   /**
     * Reads a directory
     */
   def readdir(path: java.lang.String): js.Promise[js.Array[nodeLib.Buffer]] = js.native
   def readdir(path: java.lang.String, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[js.Array[java.lang.String]] = js.native
-  def readdir(path: java.lang.String, options: adoneLib.Anon_EncodingNull): js.Promise[js.Array[nodeLib.Buffer]] = js.native
+  def readdir(path: java.lang.String, options: adoneLib.Anon_Encoding): js.Promise[js.Array[nodeLib.Buffer]] = js.native
   def readdir(path: java.lang.String, options: adoneLib.Anon_EncodingOptional): js.Promise[js.Array[java.lang.String]] = js.native
   def readdir(path: nodeLib.Buffer): js.Promise[js.Array[nodeLib.Buffer]] = js.native
   def readdir(path: nodeLib.Buffer, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[js.Array[java.lang.String]] = js.native
-  def readdir(path: nodeLib.Buffer, options: adoneLib.Anon_EncodingNull): js.Promise[js.Array[nodeLib.Buffer]] = js.native
+  def readdir(path: nodeLib.Buffer, options: adoneLib.Anon_Encoding): js.Promise[js.Array[nodeLib.Buffer]] = js.native
   def readdir(path: nodeLib.Buffer, options: adoneLib.Anon_EncodingOptional): js.Promise[js.Array[java.lang.String]] = js.native
   def readdirSync(path: adoneLib.adoneNs.fsNs.INs.URL): js.Array[nodeLib.Buffer] = js.native
   def readdirSync(path: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Array[java.lang.String] = js.native
-  def readdirSync(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingNull): js.Array[nodeLib.Buffer] = js.native
+  def readdirSync(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_Encoding): js.Array[nodeLib.Buffer] = js.native
   def readdirSync(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingOptional): js.Array[java.lang.String] = js.native
   /**
     * Reads a directory
     */
   def readdirSync(path: java.lang.String): js.Array[nodeLib.Buffer] = js.native
   def readdirSync(path: java.lang.String, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Array[java.lang.String] = js.native
-  def readdirSync(path: java.lang.String, options: adoneLib.Anon_EncodingNull): js.Array[nodeLib.Buffer] = js.native
+  def readdirSync(path: java.lang.String, options: adoneLib.Anon_Encoding): js.Array[nodeLib.Buffer] = js.native
   def readdirSync(path: java.lang.String, options: adoneLib.Anon_EncodingOptional): js.Array[java.lang.String] = js.native
   def readdirSync(path: nodeLib.Buffer): js.Array[nodeLib.Buffer] = js.native
   def readdirSync(path: nodeLib.Buffer, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Array[java.lang.String] = js.native
-  def readdirSync(path: nodeLib.Buffer, options: adoneLib.Anon_EncodingNull): js.Array[nodeLib.Buffer] = js.native
+  def readdirSync(path: nodeLib.Buffer, options: adoneLib.Anon_Encoding): js.Array[nodeLib.Buffer] = js.native
   def readdirSync(path: nodeLib.Buffer, options: adoneLib.Anon_EncodingOptional): js.Array[java.lang.String] = js.native
   def readdirp(root: adoneLib.adoneNs.fsNs.INs.URL): adoneLib.adoneNs.streamNs.coreNs.Stream[scala.Nothing, adoneLib.adoneNs.fsNs.INs.ReaddirpEntry] = js.native
   def readdirp(root: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.adoneNs.fsNs.INs.ReaddirpOptions): adoneLib.adoneNs.streamNs.coreNs.Stream[scala.Nothing, adoneLib.adoneNs.fsNs.INs.ReaddirpEntry] = js.native
@@ -545,30 +545,30 @@ object fsNsMembers extends js.Object {
   def readdirp(root: nodeLib.Buffer, options: adoneLib.adoneNs.fsNs.INs.ReaddirpOptions): adoneLib.adoneNs.streamNs.coreNs.Stream[scala.Nothing, adoneLib.adoneNs.fsNs.INs.ReaddirpEntry] = js.native
   def readlink(path: adoneLib.adoneNs.fsNs.INs.URL): js.Promise[nodeLib.Buffer] = js.native
   def readlink(path: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[java.lang.String] = js.native
-  def readlink(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingNull): js.Promise[nodeLib.Buffer] = js.native
+  def readlink(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_Encoding): js.Promise[nodeLib.Buffer] = js.native
   def readlink(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingOptional): js.Promise[java.lang.String] = js.native
   /**
     * Reads the value of a symbolic link
     */
   def readlink(path: java.lang.String): js.Promise[nodeLib.Buffer] = js.native
   def readlink(path: java.lang.String, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[java.lang.String] = js.native
-  def readlink(path: java.lang.String, options: adoneLib.Anon_EncodingNull): js.Promise[nodeLib.Buffer] = js.native
+  def readlink(path: java.lang.String, options: adoneLib.Anon_Encoding): js.Promise[nodeLib.Buffer] = js.native
   def readlink(path: java.lang.String, options: adoneLib.Anon_EncodingOptional): js.Promise[java.lang.String] = js.native
   def readlink(path: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
   def readlink(path: nodeLib.Buffer, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[java.lang.String] = js.native
-  def readlink(path: nodeLib.Buffer, options: adoneLib.Anon_EncodingNull): js.Promise[nodeLib.Buffer] = js.native
+  def readlink(path: nodeLib.Buffer, options: adoneLib.Anon_Encoding): js.Promise[nodeLib.Buffer] = js.native
   def readlink(path: nodeLib.Buffer, options: adoneLib.Anon_EncodingOptional): js.Promise[java.lang.String] = js.native
   def readlinkSync(path: adoneLib.adoneNs.fsNs.INs.URL): java.lang.String = js.native
   def readlinkSync(path: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): java.lang.String = js.native
-  def readlinkSync(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingNull): nodeLib.Buffer = js.native
+  def readlinkSync(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_Encoding): nodeLib.Buffer = js.native
   def readlinkSync(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingOptional): java.lang.String = js.native
   def readlinkSync(path: java.lang.String): java.lang.String = js.native
   def readlinkSync(path: java.lang.String, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): java.lang.String = js.native
-  def readlinkSync(path: java.lang.String, options: adoneLib.Anon_EncodingNull): nodeLib.Buffer = js.native
+  def readlinkSync(path: java.lang.String, options: adoneLib.Anon_Encoding): nodeLib.Buffer = js.native
   def readlinkSync(path: java.lang.String, options: adoneLib.Anon_EncodingOptional): java.lang.String = js.native
   def readlinkSync(path: nodeLib.Buffer): java.lang.String = js.native
   def readlinkSync(path: nodeLib.Buffer, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): java.lang.String = js.native
-  def readlinkSync(path: nodeLib.Buffer, options: adoneLib.Anon_EncodingNull): nodeLib.Buffer = js.native
+  def readlinkSync(path: nodeLib.Buffer, options: adoneLib.Anon_Encoding): nodeLib.Buffer = js.native
   def readlinkSync(path: nodeLib.Buffer, options: adoneLib.Anon_EncodingOptional): java.lang.String = js.native
   @JSName("readlinkSync")
   def readlinkSync_Buffer(path: adoneLib.adoneNs.fsNs.INs.URL): nodeLib.Buffer = js.native
@@ -581,27 +581,27 @@ object fsNsMembers extends js.Object {
   def readlinkSync_Buffer(path: nodeLib.Buffer): nodeLib.Buffer = js.native
   def realpath(path: adoneLib.adoneNs.fsNs.INs.URL): js.Promise[java.lang.String] = js.native
   def realpath(path: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[java.lang.String] = js.native
-  def realpath(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingBuffer): js.Promise[nodeLib.Buffer] = js.native
+  def realpath(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
   def realpath(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingOptional): js.Promise[java.lang.String] = js.native
   def realpath(path: java.lang.String): js.Promise[java.lang.String] = js.native
   def realpath(path: java.lang.String, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[java.lang.String] = js.native
-  def realpath(path: java.lang.String, options: adoneLib.Anon_EncodingBuffer): js.Promise[nodeLib.Buffer] = js.native
+  def realpath(path: java.lang.String, options: adoneLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
   def realpath(path: java.lang.String, options: adoneLib.Anon_EncodingOptional): js.Promise[java.lang.String] = js.native
   def realpath(path: nodeLib.Buffer): js.Promise[java.lang.String] = js.native
   def realpath(path: nodeLib.Buffer, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): js.Promise[java.lang.String] = js.native
-  def realpath(path: nodeLib.Buffer, options: adoneLib.Anon_EncodingBuffer): js.Promise[nodeLib.Buffer] = js.native
+  def realpath(path: nodeLib.Buffer, options: adoneLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
   def realpath(path: nodeLib.Buffer, options: adoneLib.Anon_EncodingOptional): js.Promise[java.lang.String] = js.native
   def realpathSync(path: adoneLib.adoneNs.fsNs.INs.URL): java.lang.String = js.native
   def realpathSync(path: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): java.lang.String = js.native
-  def realpathSync(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingBuffer): nodeLib.Buffer = js.native
+  def realpathSync(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_BufferEncoding_1560675869): nodeLib.Buffer = js.native
   def realpathSync(path: adoneLib.adoneNs.fsNs.INs.URL, options: adoneLib.Anon_EncodingOptional): java.lang.String = js.native
   def realpathSync(path: java.lang.String): java.lang.String = js.native
   def realpathSync(path: java.lang.String, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): java.lang.String = js.native
-  def realpathSync(path: java.lang.String, options: adoneLib.Anon_EncodingBuffer): nodeLib.Buffer = js.native
+  def realpathSync(path: java.lang.String, options: adoneLib.Anon_BufferEncoding_1560675869): nodeLib.Buffer = js.native
   def realpathSync(path: java.lang.String, options: adoneLib.Anon_EncodingOptional): java.lang.String = js.native
   def realpathSync(path: nodeLib.Buffer): java.lang.String = js.native
   def realpathSync(path: nodeLib.Buffer, encoding: adoneLib.adoneNs.fsNs.INs.Encoding): java.lang.String = js.native
-  def realpathSync(path: nodeLib.Buffer, options: adoneLib.Anon_EncodingBuffer): nodeLib.Buffer = js.native
+  def realpathSync(path: nodeLib.Buffer, options: adoneLib.Anon_BufferEncoding_1560675869): nodeLib.Buffer = js.native
   def realpathSync(path: nodeLib.Buffer, options: adoneLib.Anon_EncodingOptional): java.lang.String = js.native
   @JSName("realpathSync")
   def realpathSync_buffer(path: adoneLib.adoneNs.fsNs.INs.URL, encoding: adoneLib.adoneLibStrings.buffer): nodeLib.Buffer = js.native
@@ -625,7 +625,7 @@ object fsNsMembers extends js.Object {
     * Renames a file
     */
   def rename(oldPath: java.lang.String, newPath: java.lang.String): js.Promise[scala.Unit] = js.native
-  def rename(oldPath: java.lang.String, newPath: java.lang.String, options: adoneLib.Anon_Retries): js.Promise[scala.Unit] = js.native
+  def rename(oldPath: java.lang.String, newPath: java.lang.String, options: adoneLib.Anon_Delay): js.Promise[scala.Unit] = js.native
   /**
     * Recursively deletes the given path, that can be a glob pattern
     */
@@ -635,7 +635,7 @@ object fsNsMembers extends js.Object {
     * Recursively deletes empty directiries inside the given directory
     */
   def rmEmpty(path: java.lang.String): js.Promise[scala.Unit] = js.native
-  def rmEmpty(path: java.lang.String, options: adoneLib.Anon_Filter): js.Promise[scala.Unit] = js.native
+  def rmEmpty(path: java.lang.String, options: adoneLib.Anon_CwdFilename): js.Promise[scala.Unit] = js.native
   def rmdir(path: adoneLib.adoneNs.fsNs.INs.URL): js.Promise[scala.Unit] = js.native
   /**
     * Deletes a directory
@@ -908,23 +908,23 @@ object fsNsMembers extends js.Object {
     * Writes data to a file, replacing the file if it already exists
     */
   def writeFile(file: java.lang.String, data: java.lang.String): js.Promise[scala.Unit] = js.native
-  def writeFile(file: java.lang.String, data: java.lang.String, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def writeFile(file: java.lang.String, data: java.lang.String, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def writeFile(file: java.lang.String, data: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
-  def writeFile(file: java.lang.String, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def writeFile(file: java.lang.String, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def writeFile(file: java.lang.String, data: stdLib.Uint8Array): js.Promise[scala.Unit] = js.native
-  def writeFile(file: java.lang.String, data: stdLib.Uint8Array, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def writeFile(file: java.lang.String, data: stdLib.Uint8Array, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def writeFile(file: nodeLib.Buffer, data: java.lang.String): js.Promise[scala.Unit] = js.native
-  def writeFile(file: nodeLib.Buffer, data: java.lang.String, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def writeFile(file: nodeLib.Buffer, data: java.lang.String, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def writeFile(file: nodeLib.Buffer, data: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
-  def writeFile(file: nodeLib.Buffer, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def writeFile(file: nodeLib.Buffer, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def writeFile(file: nodeLib.Buffer, data: stdLib.Uint8Array): js.Promise[scala.Unit] = js.native
-  def writeFile(file: nodeLib.Buffer, data: stdLib.Uint8Array, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def writeFile(file: nodeLib.Buffer, data: stdLib.Uint8Array, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def writeFile(file: scala.Double, data: java.lang.String): js.Promise[scala.Unit] = js.native
-  def writeFile(file: scala.Double, data: java.lang.String, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def writeFile(file: scala.Double, data: java.lang.String, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def writeFile(file: scala.Double, data: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
-  def writeFile(file: scala.Double, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def writeFile(file: scala.Double, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def writeFile(file: scala.Double, data: stdLib.Uint8Array): js.Promise[scala.Unit] = js.native
-  def writeFile(file: scala.Double, data: stdLib.Uint8Array, options: adoneLib.Anon_EncodingMode): js.Promise[scala.Unit] = js.native
+  def writeFile(file: scala.Double, data: stdLib.Uint8Array, options: adoneLib.Anon_EncodingFlag): js.Promise[scala.Unit] = js.native
   def writeFileAtomic(filename: java.lang.String, data: java.lang.String): js.Promise[scala.Unit] = js.native
   def writeFileAtomic(
     filename: java.lang.String,
@@ -947,23 +947,23 @@ object fsNsMembers extends js.Object {
     * Writes data to a file, replacing the file if it already exists
     */
   def writeFileSync(file: java.lang.String, data: java.lang.String): scala.Unit = js.native
-  def writeFileSync(file: java.lang.String, data: java.lang.String, options: adoneLib.Anon_EncodingMode): scala.Unit = js.native
+  def writeFileSync(file: java.lang.String, data: java.lang.String, options: adoneLib.Anon_EncodingFlag): scala.Unit = js.native
   def writeFileSync(file: java.lang.String, data: nodeLib.Buffer): scala.Unit = js.native
-  def writeFileSync(file: java.lang.String, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingMode): scala.Unit = js.native
+  def writeFileSync(file: java.lang.String, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingFlag): scala.Unit = js.native
   def writeFileSync(file: java.lang.String, data: stdLib.Uint8Array): scala.Unit = js.native
-  def writeFileSync(file: java.lang.String, data: stdLib.Uint8Array, options: adoneLib.Anon_EncodingMode): scala.Unit = js.native
+  def writeFileSync(file: java.lang.String, data: stdLib.Uint8Array, options: adoneLib.Anon_EncodingFlag): scala.Unit = js.native
   def writeFileSync(file: nodeLib.Buffer, data: java.lang.String): scala.Unit = js.native
-  def writeFileSync(file: nodeLib.Buffer, data: java.lang.String, options: adoneLib.Anon_EncodingMode): scala.Unit = js.native
+  def writeFileSync(file: nodeLib.Buffer, data: java.lang.String, options: adoneLib.Anon_EncodingFlag): scala.Unit = js.native
   def writeFileSync(file: nodeLib.Buffer, data: nodeLib.Buffer): scala.Unit = js.native
-  def writeFileSync(file: nodeLib.Buffer, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingMode): scala.Unit = js.native
+  def writeFileSync(file: nodeLib.Buffer, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingFlag): scala.Unit = js.native
   def writeFileSync(file: nodeLib.Buffer, data: stdLib.Uint8Array): scala.Unit = js.native
-  def writeFileSync(file: nodeLib.Buffer, data: stdLib.Uint8Array, options: adoneLib.Anon_EncodingMode): scala.Unit = js.native
+  def writeFileSync(file: nodeLib.Buffer, data: stdLib.Uint8Array, options: adoneLib.Anon_EncodingFlag): scala.Unit = js.native
   def writeFileSync(file: scala.Double, data: java.lang.String): scala.Unit = js.native
-  def writeFileSync(file: scala.Double, data: java.lang.String, options: adoneLib.Anon_EncodingMode): scala.Unit = js.native
+  def writeFileSync(file: scala.Double, data: java.lang.String, options: adoneLib.Anon_EncodingFlag): scala.Unit = js.native
   def writeFileSync(file: scala.Double, data: nodeLib.Buffer): scala.Unit = js.native
-  def writeFileSync(file: scala.Double, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingMode): scala.Unit = js.native
+  def writeFileSync(file: scala.Double, data: nodeLib.Buffer, options: adoneLib.Anon_EncodingFlag): scala.Unit = js.native
   def writeFileSync(file: scala.Double, data: stdLib.Uint8Array): scala.Unit = js.native
-  def writeFileSync(file: scala.Double, data: stdLib.Uint8Array, options: adoneLib.Anon_EncodingMode): scala.Unit = js.native
+  def writeFileSync(file: scala.Double, data: stdLib.Uint8Array, options: adoneLib.Anon_EncodingFlag): scala.Unit = js.native
   /**
     * Writes buffer to the file specified by fd
     */

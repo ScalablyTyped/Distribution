@@ -12,7 +12,7 @@ object assertModMembers extends js.Object {
     /* value */ js.Any, 
     /* message */ js.UndefOr[java.lang.String | nodeLib.Error], 
     scala.Unit
-  ]) with nodeLib.Anon_IfError = js.native
+  ]) with nodeLib.Anon_ActualAssertionError = js.native
   def apply(value: js.Any): scala.Unit = js.native
   def apply(value: js.Any, message: java.lang.String | nodeLib.Error): scala.Unit = js.native
   /** @deprecated since v9.9.0 - use deepStrictEqual() instead. */

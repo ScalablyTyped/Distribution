@@ -11,7 +11,7 @@ trait AmqpConnectionManager
   @JSName("addListener")
   def addListener_connect(
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.connect,
-    listener: js.Function1[/* arg */ amqpDashConnectionDashManagerLib.Anon_Url, scala.Unit]
+    listener: js.Function1[/* arg */ amqpDashConnectionDashManagerLib.Anon_Connection, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
   def addListener_disconnect(
@@ -34,7 +34,7 @@ trait AmqpConnectionManager
   @JSName("on")
   def on_connect(
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.connect,
-    listener: js.Function1[/* arg */ amqpDashConnectionDashManagerLib.Anon_Url, scala.Unit]
+    listener: js.Function1[/* arg */ amqpDashConnectionDashManagerLib.Anon_Connection, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_disconnect(
@@ -44,7 +44,7 @@ trait AmqpConnectionManager
   @JSName("once")
   def once_connect(
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.connect,
-    listener: js.Function1[/* arg */ amqpDashConnectionDashManagerLib.Anon_Url, scala.Unit]
+    listener: js.Function1[/* arg */ amqpDashConnectionDashManagerLib.Anon_Connection, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_disconnect(
@@ -54,7 +54,7 @@ trait AmqpConnectionManager
   @JSName("prependListener")
   def prependListener_connect(
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.connect,
-    listener: js.Function1[/* arg */ amqpDashConnectionDashManagerLib.Anon_Url, scala.Unit]
+    listener: js.Function1[/* arg */ amqpDashConnectionDashManagerLib.Anon_Connection, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_disconnect(
@@ -64,7 +64,7 @@ trait AmqpConnectionManager
   @JSName("prependOnceListener")
   def prependOnceListener_connect(
     event: amqpDashConnectionDashManagerLib.amqpDashConnectionDashManagerLibStrings.connect,
-    listener: js.Function1[/* arg */ amqpDashConnectionDashManagerLib.Anon_Url, scala.Unit]
+    listener: js.Function1[/* arg */ amqpDashConnectionDashManagerLib.Anon_Connection, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_disconnect(

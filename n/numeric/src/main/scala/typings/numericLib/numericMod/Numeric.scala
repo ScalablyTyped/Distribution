@@ -10,7 +10,7 @@ trait Numeric extends js.Object {
   val epsilon: scala.Double = js.native
   var largeArray: scala.Double = js.native
   var precision: scala.Double = js.native
-  var seedrandom: numericLib.Anon_Seedrandom = js.native
+  var seedrandom: numericLib.Anon_Random = js.native
   val version: java.lang.String = js.native
   def `!==`(x: numericLib.MultidimensionalMatrix, y: numericLib.MultidimensionalMatrix): numericLib.MultidimensionalArray[scala.Boolean] = js.native
   def `!==`(x: numericLib.Scalar, y: numericLib.Scalar): numericLib.VectorBoolean = js.native
@@ -128,11 +128,11 @@ trait Numeric extends js.Object {
   def `>>>_Scalar`(x: numericLib.Scalar, y: numericLib.Scalar, args: numericLib.Scalar*): numericLib.Scalar = js.native
   @JSName(">>")
   def `>>_Scalar`(x: numericLib.Scalar, y: numericLib.Scalar, args: numericLib.Scalar*): numericLib.Scalar = js.native
-  def LU(matrix: numericLib.Matrix): numericLib.Anon_P = js.native
-  def LU(matrix: numericLib.Matrix, fast: scala.Boolean): numericLib.Anon_P = js.native
-  def LUsolve(lup: numericLib.Anon_P, vector: numericLib.Vector): numericLib.Vector = js.native
-  def QRFrancis(x: numericLib.Matrix): numericLib.Anon_Q = js.native
-  def QRFrancis(x: numericLib.Matrix, maxiter: scala.Double): numericLib.Anon_Q = js.native
+  def LU(matrix: numericLib.Matrix): numericLib.Anon_LU = js.native
+  def LU(matrix: numericLib.Matrix, fast: scala.Boolean): numericLib.Anon_LU = js.native
+  def LUsolve(lup: numericLib.Anon_LU, vector: numericLib.Vector): numericLib.Vector = js.native
+  def QRFrancis(x: numericLib.Matrix): numericLib.Anon_B = js.native
+  def QRFrancis(x: numericLib.Matrix, maxiter: scala.Double): numericLib.Anon_B = js.native
   def `^`(x: numericLib.Scalar, y: numericLib.Scalar, args: (numericLib.Scalar | numericLib.Vector)*): numericLib.Vector = js.native
   def `^`(x: numericLib.Scalar, y: numericLib.Vector, args: (numericLib.Scalar | numericLib.Vector)*): numericLib.Vector = js.native
   def `^`(x: numericLib.Vector, y: numericLib.Scalar, args: (numericLib.Scalar | numericLib.Vector)*): numericLib.Vector = js.native
@@ -493,9 +493,9 @@ trait Numeric extends js.Object {
   def dotVM(x: numericLib.Vector, y: numericLib.Matrix): numericLib.Vector = js.native
   def dotVV(x: numericLib.Vector, y: numericLib.Vector): numericLib.Scalar = js.native
   // Linear programming
-  def echelonize(matrix: numericLib.Matrix): numericLib.Anon_PA = js.native
-  def eig(A: numericLib.Matrix): numericLib.Anon_Lambda = js.native
-  def eig(A: numericLib.Matrix, maxiter: scala.Double): numericLib.Anon_Lambda = js.native
+  def echelonize(matrix: numericLib.Matrix): numericLib.Anon_A = js.native
+  def eig(A: numericLib.Matrix): numericLib.Anon_E = js.native
+  def eig(A: numericLib.Matrix, maxiter: scala.Double): numericLib.Anon_E = js.native
   def eq(x: numericLib.MultidimensionalMatrix, y: numericLib.MultidimensionalMatrix): numericLib.MultidimensionalArray[scala.Boolean] = js.native
   def eq(x: numericLib.Scalar, y: numericLib.Scalar): numericLib.VectorBoolean = js.native
   def eq(x: numericLib.Scalar, y: numericLib.Vector): numericLib.VectorBoolean = js.native
@@ -887,15 +887,15 @@ trait Numeric extends js.Object {
   def sineqV(x: numericLib.Vector): numericLib.Vector = js.native
   // Solving the linear problem Ax=b
   def solve(matrix: numericLib.Matrix, vector: numericLib.Vector): numericLib.Vector = js.native
-  def solveLP(c: numericLib.Vector, A: numericLib.Matrix, b: numericLib.Vector): numericLib.Anon_SolutionMessage = js.native
-  def solveLP(c: numericLib.Vector, A: numericLib.Matrix, b: numericLib.Vector, Aeq: numericLib.Matrix): numericLib.Anon_SolutionMessage = js.native
+  def solveLP(c: numericLib.Vector, A: numericLib.Matrix, b: numericLib.Vector): numericLib.Anon_Iterations = js.native
+  def solveLP(c: numericLib.Vector, A: numericLib.Matrix, b: numericLib.Vector, Aeq: numericLib.Matrix): numericLib.Anon_Iterations = js.native
   def solveLP(
     c: numericLib.Vector,
     A: numericLib.Matrix,
     b: numericLib.Vector,
     Aeq: numericLib.Matrix,
     beq: numericLib.Matrix
-  ): numericLib.Anon_SolutionMessage = js.native
+  ): numericLib.Anon_Iterations = js.native
   def solveLP(
     c: numericLib.Vector,
     A: numericLib.Matrix,
@@ -903,7 +903,7 @@ trait Numeric extends js.Object {
     Aeq: numericLib.Matrix,
     beq: numericLib.Matrix,
     tol: scala.Double
-  ): numericLib.Anon_SolutionMessage = js.native
+  ): numericLib.Anon_Iterations = js.native
   def solveLP(
     c: numericLib.Vector,
     A: numericLib.Matrix,
@@ -912,15 +912,15 @@ trait Numeric extends js.Object {
     beq: numericLib.Matrix,
     tol: scala.Double,
     maxit: scala.Double
-  ): numericLib.Anon_SolutionMessage = js.native
-  def solveQP(Dmat: numericLib.Matrix, dvec: numericLib.Vector, Amat: numericLib.Matrix, bvec: numericLib.Vector): numericLib.Anon_Solution = js.native
+  ): numericLib.Anon_Iterations = js.native
+  def solveQP(Dmat: numericLib.Matrix, dvec: numericLib.Vector, Amat: numericLib.Matrix, bvec: numericLib.Vector): numericLib.Anon_Iact = js.native
   def solveQP(
     Dmat: numericLib.Matrix,
     dvec: numericLib.Vector,
     Amat: numericLib.Matrix,
     bvec: numericLib.Vector,
     meq: scala.Double
-  ): numericLib.Anon_Solution = js.native
+  ): numericLib.Anon_Iact = js.native
   def solveQP(
     Dmat: numericLib.Matrix,
     dvec: numericLib.Vector,
@@ -928,7 +928,7 @@ trait Numeric extends js.Object {
     bvec: numericLib.Vector,
     meq: scala.Double,
     factorized: js.Any
-  ): numericLib.Anon_Solution = js.native
+  ): numericLib.Anon_Iact = js.native
   // Splines
   def spline(x: numericLib.Vector, y: numericLib.Matrix | numericLib.Vector): Spline = js.native
   def spline(x: numericLib.Vector, y: numericLib.Matrix | numericLib.Vector, k1: numericLib.Scalar): Spline = js.native
@@ -1028,25 +1028,25 @@ trait Numeric extends js.Object {
   // Round the values of entries
   def truncVV(x: numericLib.Vector, y: numericLib.Vector): numericLib.Vector = js.native
   // Unconstrained optimisations
-  def uncmin(f: js.Function1[/* x */ numericLib.Vector, numericLib.Scalar], x0: numericLib.Vector): numericLib.Anon_Gradient = js.native
+  def uncmin(f: js.Function1[/* x */ numericLib.Vector, numericLib.Scalar], x0: numericLib.Vector): numericLib.Anon_F = js.native
   def uncmin(
     f: js.Function1[/* x */ numericLib.Vector, numericLib.Scalar],
     x0: numericLib.Vector,
     tol: scala.Double
-  ): numericLib.Anon_Gradient = js.native
+  ): numericLib.Anon_F = js.native
   def uncmin(
     f: js.Function1[/* x */ numericLib.Vector, numericLib.Scalar],
     x0: numericLib.Vector,
     tol: scala.Double,
     gradient: js.Any
-  ): numericLib.Anon_Gradient = js.native
+  ): numericLib.Anon_F = js.native
   def uncmin(
     f: js.Function1[/* x */ numericLib.Vector, numericLib.Scalar],
     x0: numericLib.Vector,
     tol: scala.Double,
     gradient: js.Any,
     maxit: scala.Double
-  ): numericLib.Anon_Gradient = js.native
+  ): numericLib.Anon_F = js.native
   def uncmin(
     f: js.Function1[/* x */ numericLib.Vector, numericLib.Scalar],
     x0: numericLib.Vector,
@@ -1061,7 +1061,7 @@ trait Numeric extends js.Object {
       /* h1 */ numericLib.Matrix, 
       _
     ]
-  ): numericLib.Anon_Gradient = js.native
+  ): numericLib.Anon_F = js.native
   def uncmin(
     f: js.Function1[/* x */ numericLib.Vector, numericLib.Scalar],
     x0: numericLib.Vector,
@@ -1077,7 +1077,7 @@ trait Numeric extends js.Object {
       _
     ],
     options: numericLib.Anon_Hinv
-  ): numericLib.Anon_Gradient = js.native
+  ): numericLib.Anon_F = js.native
   def `|`(x: numericLib.Scalar, y: numericLib.Scalar, args: (numericLib.Scalar | numericLib.Vector)*): numericLib.Vector = js.native
   def `|`(x: numericLib.Scalar, y: numericLib.Vector, args: (numericLib.Scalar | numericLib.Vector)*): numericLib.Vector = js.native
   def `|`(x: numericLib.Vector, y: numericLib.Scalar, args: (numericLib.Scalar | numericLib.Vector)*): numericLib.Vector = js.native

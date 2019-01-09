@@ -161,7 +161,7 @@ object typesNs extends js.Object {
   
   trait ResultSet extends js.Object {
     var columns: js.Array[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
-    var info: cassandraDashDriverLib.Anon_SpeculativeExecutions
+    var info: cassandraDashDriverLib.Anon_AchievedConsistency
     @JSName(org.scalablytyped.runtime.Symbol.iterator)
     var iterator: js.Function0[nodeLib.Iterator[Row]]
     var pageState: java.lang.String
@@ -325,9 +325,9 @@ object typesNs extends js.Object {
   def generateTimestamp(date: stdLib.Date): longLib.longMod.namespaced = js.native
   def generateTimestamp(date: stdLib.Date, microseconds: scala.Double): longLib.longMod.namespaced = js.native
   def timeuuid(): java.lang.String = js.native
-  def timeuuid(options: cassandraDashDriverLib.Anon_Node): java.lang.String = js.native
-  def timeuuid(options: cassandraDashDriverLib.Anon_Node, buffer: nodeLib.Buffer): java.lang.String = js.native
-  def timeuuid(options: cassandraDashDriverLib.Anon_Node, buffer: nodeLib.Buffer, offset: scala.Double): java.lang.String = js.native
+  def timeuuid(options: cassandraDashDriverLib.Anon_Clockseq): java.lang.String = js.native
+  def timeuuid(options: cassandraDashDriverLib.Anon_Clockseq, buffer: nodeLib.Buffer): java.lang.String = js.native
+  def timeuuid(options: cassandraDashDriverLib.Anon_Clockseq, buffer: nodeLib.Buffer, offset: scala.Double): java.lang.String = js.native
   @js.native
   object consistencies extends js.Object {
     @js.native

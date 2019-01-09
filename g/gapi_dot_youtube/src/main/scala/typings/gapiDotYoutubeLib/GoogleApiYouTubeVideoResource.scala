@@ -9,7 +9,7 @@ trait GoogleApiYouTubeVideoResource extends js.Object {
   /**
     * The contentDetails object contains information about the video content, including the length of the video and its aspect ratio.
     */
-  var contentDetails: Anon_Duration
+  var contentDetails: Anon_Caption
   /**
     * The ETag of the video resource.
     */
@@ -34,7 +34,7 @@ trait GoogleApiYouTubeVideoResource extends js.Object {
     * The processingProgress object encapsulates information about YouTubes progress in processing the uploaded video file. The properties in the object identify the current processing status and an estimate of the time remaining until YouTube finishes processing the video. This part also indicates whether different types of data or content, such as file details or thumbnail images, are available for the video.
     * The processingProgress object is designed to be polled so that the video uploaded can track the progress that YouTube has made in processing the uploaded video file. This data can only be retrieved by the video owner.
     */
-  var processingDetails: Anon_TagSuggestionsAvailability
+  var processingDetails: Anon_EditorSuggestionsAvailability
   /**
     * The recordingDetails object encapsulates information about the location, date and address where the video was recorded. This object will only be returned for a video if the videos geolocation data or recording time has been set.
     */
@@ -42,15 +42,15 @@ trait GoogleApiYouTubeVideoResource extends js.Object {
   /**
     * The snippet object contains basic details about the video, such as its title, description, and category.
     */
-  var snippet: Anon_CategoryId
+  var snippet: Anon_CategoryIdChannelId
   /**
     * The statistics object contains statistics about the video.
     */
-  var statistics: Anon_ViewCountCommentCount
+  var statistics: Anon_CommentCountDislikeCount
   /**
     * The status object contains information about the videos uploading, processing, and privacy statuses.
     */
-  var status: Anon_RejectionReason
+  var status: Anon_Embeddable
   /**
     * The suggestions object encapsulates suggestions that identify opportunities to improve the video quality or the metadata for the uploaded video. This data can only be retrieved by the video owner.
     */

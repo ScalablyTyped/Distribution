@@ -15,7 +15,7 @@ class SCExchange protected () extends AbstractDataClient {
   def getMapper(): mapperFunction = js.native
   def isSubscribed(channelName: java.lang.String): scala.Boolean = js.native
   def isSubscribed(channelName: java.lang.String, includePending: scala.Boolean): scala.Boolean = js.native
-  def map(keyChain: fleximapLib.fleximapMod.KeyChain, method: java.lang.String): scDashBrokerDashClusterLib.Anon_Type = js.native
+  def map(keyChain: fleximapLib.fleximapMod.KeyChain, method: java.lang.String): scDashBrokerDashClusterLib.Anon_Targets = js.native
   def publish(
     channelName: java.lang.String,
     data: js.Any,

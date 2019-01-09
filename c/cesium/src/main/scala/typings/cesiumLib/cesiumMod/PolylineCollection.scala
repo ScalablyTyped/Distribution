@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class PolylineCollection ()
   extends cesiumLib.cesiumMod.CesiumNs.PolylineCollection {
-  def this(options: cesiumLib.Anon_DebugShowBoundingVolumeModelMatrix) = this()
+  def this(options: cesiumLib.Anon_DebugShowBoundingVolume) = this()
 }
 

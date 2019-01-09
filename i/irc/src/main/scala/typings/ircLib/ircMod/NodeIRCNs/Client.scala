@@ -14,7 +14,7 @@ trait Client
     * Channels joined. Includes channel modes, user list, and topic
     * information. Only updated after the server recognizes the join.
     */
-  var chans: org.scalablytyped.runtime.StringDictionary[ircLib.Anon_ServerName] = js.native
+  var chans: org.scalablytyped.runtime.StringDictionary[ircLib.Anon_Created] = js.native
   /**
     * Socket to the server. Rarely, if ever needed. Use Client#send
     * instead.
@@ -33,7 +33,7 @@ trait Client
   /** Bot options */
   var opt: IClientOpts = js.native
   /** Features supported by the server */
-  var supported: ircLib.Anon_ModesTopiclength = js.native
+  var supported: ircLib.Anon_Channel = js.native
   /**
     * Send an action to the specified target
     * @param target - target

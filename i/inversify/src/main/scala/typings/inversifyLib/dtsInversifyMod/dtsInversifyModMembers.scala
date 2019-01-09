@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object dtsInversifyModMembers extends js.Object {
   val BindingScopeEnum: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingScopeEnum = js.native
   val BindingTypeEnum: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingTypeEnum = js.native
-  val METADATA_KEY: inversifyLib.Anon_POSTCONSTRUCT = js.native
+  val METADATA_KEY: inversifyLib.Anon_DESIGNPARAMTYPES = js.native
   val TargetTypeEnum: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.TargetTypeEnum = js.native
   def decorate(decorator: stdLib.MethodDecorator | stdLib.ParameterDecorator, target: js.Any): scala.Unit = js.native
   def decorate(

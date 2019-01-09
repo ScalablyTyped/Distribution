@@ -257,26 +257,26 @@ org.scalablytyped.runtime.Instantiable0[T]
     id: java.lang.String,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndDelete(id: java.lang.String, options: mongooseLib.Anon_Sort): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndDelete(id: java.lang.String, options: mongooseLib.Anon_Select): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndDelete(
     id: java.lang.String,
-    options: mongooseLib.Anon_Sort,
+    options: mongooseLib.Anon_Select,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndDelete(id: js.Any): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndDelete(id: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndDelete(id: js.Any, options: mongooseLib.Anon_Sort): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndDelete(id: js.Any, options: mongooseLib.Anon_Select): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndDelete(
     id: js.Any,
-    options: mongooseLib.Anon_Sort,
+    options: mongooseLib.Anon_Select,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndDelete(id: scala.Double): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndDelete(id: scala.Double, callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndDelete(id: scala.Double, options: mongooseLib.Anon_Sort): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndDelete(id: scala.Double, options: mongooseLib.Anon_Select): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndDelete(
     id: scala.Double,
-    options: mongooseLib.Anon_Sort,
+    options: mongooseLib.Anon_Select,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   /**
@@ -292,26 +292,26 @@ org.scalablytyped.runtime.Instantiable0[T]
     id: java.lang.String,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndRemove(id: java.lang.String, options: mongooseLib.Anon_Sort): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndRemove(id: java.lang.String, options: mongooseLib.Anon_Select): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndRemove(
     id: java.lang.String,
-    options: mongooseLib.Anon_Sort,
+    options: mongooseLib.Anon_Select,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndRemove(id: js.Any): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndRemove(id: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndRemove(id: js.Any, options: mongooseLib.Anon_Sort): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndRemove(id: js.Any, options: mongooseLib.Anon_Select): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndRemove(
     id: js.Any,
-    options: mongooseLib.Anon_Sort,
+    options: mongooseLib.Anon_Select,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndRemove(id: scala.Double): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndRemove(id: scala.Double, callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndRemove(id: scala.Double, options: mongooseLib.Anon_Sort): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndRemove(id: scala.Double, options: mongooseLib.Anon_Select): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndRemove(
     id: scala.Double,
-    options: mongooseLib.Anon_Sort,
+    options: mongooseLib.Anon_Select,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   /**
@@ -329,12 +329,12 @@ org.scalablytyped.runtime.Instantiable0[T]
   def findByIdAndUpdate(
     id: java.lang.String,
     update: js.Any,
-    options: mongooseLib.Anon_Upsert with ModelFindByIdAndUpdateOptions
+    options: mongooseLib.Anon_New with ModelFindByIdAndUpdateOptions
   ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: java.lang.String,
     update: js.Any,
-    options: mongooseLib.Anon_Upsert with ModelFindByIdAndUpdateOptions,
+    options: mongooseLib.Anon_New with ModelFindByIdAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T, scala.Unit]
   ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: java.lang.String, update: js.Any, options: ModelFindByIdAndUpdateOptions): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
@@ -350,11 +350,11 @@ org.scalablytyped.runtime.Instantiable0[T]
     update: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: js.Any, update: js.Any, options: mongooseLib.Anon_Upsert with ModelFindByIdAndUpdateOptions): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: js.Any, update: js.Any, options: mongooseLib.Anon_New with ModelFindByIdAndUpdateOptions): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: js.Any,
     update: js.Any,
-    options: mongooseLib.Anon_Upsert with ModelFindByIdAndUpdateOptions,
+    options: mongooseLib.Anon_New with ModelFindByIdAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T, scala.Unit]
   ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: js.Any, update: js.Any, options: ModelFindByIdAndUpdateOptions): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
@@ -370,15 +370,11 @@ org.scalablytyped.runtime.Instantiable0[T]
     update: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: scala.Double, update: js.Any, options: mongooseLib.Anon_New with ModelFindByIdAndUpdateOptions): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: scala.Double,
     update: js.Any,
-    options: mongooseLib.Anon_Upsert with ModelFindByIdAndUpdateOptions
-  ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(
-    id: scala.Double,
-    update: js.Any,
-    options: mongooseLib.Anon_Upsert with ModelFindByIdAndUpdateOptions,
+    options: mongooseLib.Anon_New with ModelFindByIdAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T, scala.Unit]
   ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: scala.Double, update: js.Any, options: ModelFindByIdAndUpdateOptions): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
@@ -417,10 +413,10 @@ org.scalablytyped.runtime.Instantiable0[T]
   def findOneAndDelete(): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndDelete(conditions: js.Any): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndDelete(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndDelete(conditions: js.Any, options: mongooseLib.Anon_Strict): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findOneAndDelete(conditions: js.Any, options: mongooseLib.Anon_MaxTimeMSProjection): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndDelete(
     conditions: js.Any,
-    options: mongooseLib.Anon_Strict,
+    options: mongooseLib.Anon_MaxTimeMSProjection,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   /**
@@ -431,10 +427,10 @@ org.scalablytyped.runtime.Instantiable0[T]
   def findOneAndRemove(): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndRemove(conditions: js.Any): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndRemove(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndRemove(conditions: js.Any, options: mongooseLib.Anon_SortMaxTimeMS): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findOneAndRemove(conditions: js.Any, options: mongooseLib.Anon_MaxTimeMS): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndRemove(
     conditions: js.Any,
-    options: mongooseLib.Anon_SortMaxTimeMS,
+    options: mongooseLib.Anon_MaxTimeMS,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   /**
@@ -453,12 +449,12 @@ org.scalablytyped.runtime.Instantiable0[T]
   def findOneAndUpdate(
     conditions: js.Any,
     update: js.Any,
-    options: mongooseLib.Anon_Upsert with ModelFindOneAndUpdateOptions
+    options: mongooseLib.Anon_New with ModelFindOneAndUpdateOptions
   ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
   def findOneAndUpdate(
     conditions: js.Any,
     update: js.Any,
-    options: mongooseLib.Anon_Upsert with ModelFindOneAndUpdateOptions,
+    options: mongooseLib.Anon_New with ModelFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ T, /* res */ js.Any, scala.Unit]
   ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
   def findOneAndUpdate(conditions: js.Any, update: js.Any, options: ModelFindOneAndUpdateOptions): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
@@ -474,10 +470,10 @@ org.scalablytyped.runtime.Instantiable0[T]
     * @param options for the geoSearch, some (near, maxDistance) are required
     * @param callback optional callback
     */
-  def geoSearch(conditions: js.Any, options: mongooseLib.Anon_Limit): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
+  def geoSearch(conditions: js.Any, options: mongooseLib.Anon_Lean): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
   def geoSearch(
     conditions: js.Any,
-    options: mongooseLib.Anon_Limit,
+    options: mongooseLib.Anon_Lean,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Array[T], scala.Unit]
   ): (DocumentQuery[js.Array[T], T, js.Object]) with QueryHelpers = js.native
   /**
@@ -498,10 +494,10 @@ org.scalablytyped.runtime.Instantiable0[T]
   def init(callback: js.Function1[/* err */ js.Any, scala.Unit]): js.Promise[T] = js.native
   def insertMany(doc: js.Any): js.Promise[T] = js.native
   def insertMany(doc: js.Any, callback: js.Function2[/* error */ js.Any, /* doc */ T, scala.Unit]): js.Promise[T] = js.native
-  def insertMany(doc: js.Any, options: mongooseLib.Anon_RawResult with ModelOptions): js.Promise[T] = js.native
+  def insertMany(doc: js.Any, options: mongooseLib.Anon_Ordered with ModelOptions): js.Promise[T] = js.native
   def insertMany(
     doc: js.Any,
-    options: mongooseLib.Anon_RawResult with ModelOptions,
+    options: mongooseLib.Anon_Ordered with ModelOptions,
     callback: js.Function2[/* error */ js.Any, /* doc */ T, scala.Unit]
   ): js.Promise[T] = js.native
   /**
@@ -520,10 +516,10 @@ org.scalablytyped.runtime.Instantiable0[T]
     */
   def insertMany(docs: js.Array[_]): js.Promise[js.Array[T]] = js.native
   def insertMany(docs: js.Array[_], callback: js.Function2[/* error */ js.Any, /* docs */ js.Array[T], scala.Unit]): js.Promise[js.Array[T]] = js.native
-  def insertMany(docs: js.Array[_], options: mongooseLib.Anon_RawResult with ModelOptions): js.Promise[js.Array[T]] = js.native
+  def insertMany(docs: js.Array[_], options: mongooseLib.Anon_Ordered with ModelOptions): js.Promise[js.Array[T]] = js.native
   def insertMany(
     docs: js.Array[_],
-    options: mongooseLib.Anon_RawResult with ModelOptions,
+    options: mongooseLib.Anon_Ordered with ModelOptions,
     callback: js.Function2[/* error */ js.Any, /* docs */ js.Array[T], scala.Unit]
   ): js.Promise[js.Array[T]] = js.native
   /**

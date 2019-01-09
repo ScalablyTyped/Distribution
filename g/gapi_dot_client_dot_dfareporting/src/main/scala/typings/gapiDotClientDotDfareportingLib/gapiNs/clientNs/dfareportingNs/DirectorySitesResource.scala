@@ -7,12 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait DirectorySitesResource extends js.Object {
   /** Gets one directory site by ID. */
-  def get(request: gapiDotClientDotDfareportingLib.Anon_ProfileIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[DirectorySite]
+  def get(request: gapiDotClientDotDfareportingLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[DirectorySite]
   /** Inserts a new directory site. */
-  def insert(request: gapiDotClientDotDfareportingLib.Anon_ProfileId): gapiDotClientLib.gapiNs.clientNs.Request[DirectorySite]
+  def insert(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[DirectorySite]
   /** Retrieves a list of directory sites, possibly filtered. This method supports paging. */
-  def list(
-    request: gapiDotClientDotDfareportingLib.Anon_ProfileIdSortFieldMaxResultsPrettyPrintPageTokenAcceptsInterstitialPlacements
-  ): gapiDotClientLib.gapiNs.clientNs.Request[DirectorySitesListResponse]
+  def list(request: gapiDotClientDotDfareportingLib.Anon_AcceptsInStreamVideoPlacements): gapiDotClientLib.gapiNs.clientNs.Request[DirectorySitesListResponse]
 }
 

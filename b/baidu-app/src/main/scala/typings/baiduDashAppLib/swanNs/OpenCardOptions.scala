@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait OpenCardOptions
   extends BaseOptions[js.Any, js.Any] {
-  var cardList: js.Array[baiduDashAppLib.Anon_Code]
+  var cardList: js.Array[baiduDashAppLib.Anon_CardId]
 }
 

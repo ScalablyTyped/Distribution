@@ -51,12 +51,18 @@ trait PolicyState extends js.Object {
   val scalingAdjustment: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
   val stepAdjustments: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ScalingAdjustment]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_MetricIntervalLowerBoundMetricIntervalUpperBound]
+      ]
     ]
   ] = js.undefined
   /**
     * A target tracking policy. These have the following structure:
     */
-  val targetTrackingConfiguration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DisableScaleIn]] = js.undefined
+  val targetTrackingConfiguration: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[
+      atPulumiAwsLib.Anon_CustomizedMetricSpecificationDisableScaleInPredefinedMetricSpecificationTargetValue
+    ]
+  ] = js.undefined
 }
 

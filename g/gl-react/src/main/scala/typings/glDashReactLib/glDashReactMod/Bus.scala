@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Bus ()
   extends reactLib.reactMod.Component[BusProps, js.Object, js.Any] {
   @JSName("context")
-  var context_Bus: glDashReactLib.Anon_GlParentGlSurface = js.native
+  var context_Bus: glDashReactLib.Anon_GlParent = js.native
   var dependents: js.Array[Node | Surface[_]] = js.native
   var glBusRootNode: js.Any = js.native
   var glNode: js.UndefOr[Node] = js.native
@@ -20,7 +20,7 @@ class Bus ()
   def capture(x: scala.Double, y: scala.Double): js.Array[_] = js.native
   def capture(x: scala.Double, y: scala.Double, w: scala.Double): js.Array[_] = js.native
   def capture(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double): js.Array[_] = js.native
-  def getChildContext(): glDashReactLib.Anon_GlParent = js.native
+  def getChildContext(): glDashReactLib.Anon_GlParentBus = js.native
   def getGLName(): java.lang.String = js.native
   def getGLRenderableContent(): js.Any = js.native
   def getGLRenderableNode(): Node = js.native
@@ -33,7 +33,7 @@ class Bus ()
 @js.native
 object Bus extends js.Object {
   var childContextTypes: glDashReactLib.Anon_GlParentAny = js.native
-  var contextTypes: glDashReactLib.Anon_GlParentGlSurfaceAny = js.native
+  var contextTypes: glDashReactLib.Anon_GlParentGlSurface = js.native
   var defaultProps: glDashReactLib.glDashReactMod.BusProps = js.native
 }
 

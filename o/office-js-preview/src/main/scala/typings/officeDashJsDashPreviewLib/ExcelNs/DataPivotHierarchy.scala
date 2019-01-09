@@ -85,7 +85,7 @@ class DataPivotHierarchy ()
   def load(): DataPivotHierarchy = js.native
   def load(option: java.lang.String): DataPivotHierarchy = js.native
   def load(option: js.Array[java.lang.String]): DataPivotHierarchy = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): DataPivotHierarchy = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): DataPivotHierarchy = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.DataPivotHierarchyLoadOptions): DataPivotHierarchy = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: DataPivotHierarchy): scala.Unit = js.native

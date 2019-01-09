@@ -92,7 +92,7 @@ object srcAnimationsModMembers extends js.Object {
   def state(
     name: java.lang.String,
     styles: atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStyleMetadata,
-    options: atAngularAnimationsLib.Anon_Params
+    options: atAngularAnimationsLib.Anon_Name
   ): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStateMetadata = js.native
   def style(tokens: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]): atAngularAnimationsLib.srcAnimationUnderscoreMetadataMod.AnimationStyleMetadata = js.native
   @JSName("style")

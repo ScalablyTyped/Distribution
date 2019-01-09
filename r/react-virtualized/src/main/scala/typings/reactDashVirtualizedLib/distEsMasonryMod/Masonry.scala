@@ -18,7 +18,7 @@ class Masonry ()
 @JSImport("react-virtualized/dist/es/Masonry", "Masonry")
 @js.native
 object Masonry extends js.Object {
-  var defaultProps: reactDashVirtualizedLib.Anon_TabIndex = js.native
+  var defaultProps: reactDashVirtualizedLib.Anon_0150 = js.native
   def getDerivedStateFromProps(
     nextProps: reactDashVirtualizedLib.distEsMasonryMod.MasonryProps,
     prevState: reactDashVirtualizedLib.distEsMasonryMod.MasonryState

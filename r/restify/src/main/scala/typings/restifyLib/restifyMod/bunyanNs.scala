@@ -46,7 +46,7 @@ object bunyanNs extends js.Object {
     def write(record: js.Any): scala.Unit = js.native
   }
   
-  val serializers: bunyanLib.bunyanMod.LoggerNs.Serializers with restifyLib.Anon_Req = js.native
+  val serializers: bunyanLib.bunyanMod.LoggerNs.Serializers with restifyLib.Anon_Clientreq = js.native
   /** create a bunyan logger */
   def createLogger(name: java.lang.String): bunyanLib.bunyanMod.namespaced = js.native
 }

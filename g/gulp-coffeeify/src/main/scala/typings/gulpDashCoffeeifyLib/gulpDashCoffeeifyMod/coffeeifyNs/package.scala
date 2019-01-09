@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object coffeeifyNs {
-  type Aliases = js.Array[gulpDashCoffeeifyLib.Anon_Cwd]
+  type Aliases = js.Array[gulpDashCoffeeifyLib.Anon_Base]
   type Coffeeify = js.Function1[/* option */ js.UndefOr[Option], nodeLib.NodeJSNs.ReadWriteStream]
-  type Transforms = js.Array[gulpDashCoffeeifyLib.Anon_Transform]
+  type Transforms = js.Array[gulpDashCoffeeifyLib.Anon_Data]
 }

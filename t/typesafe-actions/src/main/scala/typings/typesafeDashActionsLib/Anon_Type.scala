@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Type extends js.Object {
-  var `type`: typesafeDashActionsLib.distTypesMod.StringType
+trait Anon_Type[T /* <: typesafeDashActionsLib.distTypesMod.StringOrSymbol */] extends js.Object {
+  var `type`: T
 }
 

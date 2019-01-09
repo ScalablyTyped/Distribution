@@ -6,14 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AllowedMethods extends js.Object {
-  var allowedHeaders: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
-  ] = js.undefined
-  var allowedMethods: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
-  var allowedOrigins: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
-  var exposeHeaders: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
-  ] = js.undefined
-  var maxAgeSeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+  var allowedMethods: js.Array[java.lang.String]
+  var cachedMethods: js.Array[java.lang.String]
+  var compress: js.UndefOr[scala.Boolean] = js.undefined
+  var defaultTtl: js.UndefOr[scala.Double] = js.undefined
+  var fieldLevelEncryptionId: js.UndefOr[java.lang.String] = js.undefined
+  var forwardedValues: Anon_Cookies
+  var lambdaFunctionAssociations: js.UndefOr[js.Array[Anon_EventType]] = js.undefined
+  var maxTtl: js.UndefOr[scala.Double] = js.undefined
+  var minTtl: js.UndefOr[scala.Double] = js.undefined
+  var pathPattern: java.lang.String
+  var smoothStreaming: js.UndefOr[scala.Boolean] = js.undefined
+  var targetOriginId: java.lang.String
+  var trustedSigners: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var viewerProtocolPolicy: java.lang.String
 }
 

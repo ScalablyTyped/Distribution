@@ -21,8 +21,8 @@ object xmlschemasNs extends js.Object {
   @js.native
   trait IXmlSchema extends IMxSchema
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.IMxSchema because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.IMxSchema because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   abstract class MxSchema protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
@@ -44,8 +44,8 @@ object xmlschemasNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/xml-schemas relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.IXmlSchema because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.IXmlSchema because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class XmlSchema protected () extends MxSchema {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
     val entries: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[XmlSchemaEntry] = js.native

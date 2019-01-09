@@ -60,7 +60,7 @@ class Template protected () extends js.Object {
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
     **/
-  def renderItem[T](item: winjsLib.WinJSNs.Promise[T], recyled: stdLib.HTMLElement): winjsLib.Anon_RenderComplete = js.native
+  def renderItem[T](item: winjsLib.WinJSNs.Promise[T], recyled: stdLib.HTMLElement): winjsLib.Anon_Element = js.native
 }
 
 /**

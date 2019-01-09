@@ -17,6 +17,6 @@ trait AliasArgs extends js.Object {
   /**
     * Specifies the fleet and/or routing type to use for the alias.
     */
-  val routingStrategy: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FleetId]
+  val routingStrategy: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FleetIdMessage]
 }
 

@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object mapsjsModMembers extends js.Object {
   var license: java.lang.String = js.native
   var version: java.lang.String = js.native
-  def clusterPoints(options: mapsjsLib.Anon_MarginPixels): js.Array[js.Object] = js.native
+  def clusterPoints(options: mapsjsLib.Anon_AggRow): js.Array[js.Object] = js.native
 }
 

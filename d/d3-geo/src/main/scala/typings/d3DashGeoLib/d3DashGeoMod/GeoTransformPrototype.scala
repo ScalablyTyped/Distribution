@@ -10,16 +10,12 @@ trait GeoTransformPrototype extends js.Object {
     * Indicates the end of a line or ring. Within a polygon, indicates the end of a ring.
     * Unlike GeoJSON, the redundant closing coordinate of a ring is not indicated via point, and instead is implied via lineEnd within a polygon.
     */
-  var lineEnd: js.UndefOr[
-    js.ThisFunction0[/* this */ this.type with d3DashGeoLib.Anon_StreamGeoStream, scala.Unit]
-  ] = js.undefined
+  var lineEnd: js.UndefOr[js.ThisFunction0[/* this */ this.type with d3DashGeoLib.Anon_Stream, scala.Unit]] = js.undefined
   /**
     * Indicates the start of a line or ring. Within a polygon, indicates the start of a ring. The first ring of a polygon is the exterior ring, and is typically clockwise.
     * Any subsequent rings indicate holes in the polygon, and are typically counterclockwise.
     */
-  var lineStart: js.UndefOr[
-    js.ThisFunction0[/* this */ this.type with d3DashGeoLib.Anon_StreamGeoStream, scala.Unit]
-  ] = js.undefined
+  var lineStart: js.UndefOr[js.ThisFunction0[/* this */ this.type with d3DashGeoLib.Anon_Stream, scala.Unit]] = js.undefined
   /**
     * Indicates a point with the specified coordinates x and y (and optionally z). The coordinate system is unspecified and implementation-dependent;
     * for example, projection streams require spherical coordinates in degrees as input. Outside the context of a polygon or line,
@@ -31,7 +27,7 @@ trait GeoTransformPrototype extends js.Object {
     */
   var point: js.UndefOr[
     js.ThisFunction3[
-      /* this */ this.type with d3DashGeoLib.Anon_StreamGeoStream, 
+      /* this */ this.type with d3DashGeoLib.Anon_Stream, 
       /* x */ scala.Double, 
       /* y */ scala.Double, 
       /* z */ js.UndefOr[scala.Double], 
@@ -41,20 +37,14 @@ trait GeoTransformPrototype extends js.Object {
   /**
     * Indicates the end of a polygon.
     */
-  var polygonEnd: js.UndefOr[
-    js.ThisFunction0[/* this */ this.type with d3DashGeoLib.Anon_StreamGeoStream, scala.Unit]
-  ] = js.undefined
+  var polygonEnd: js.UndefOr[js.ThisFunction0[/* this */ this.type with d3DashGeoLib.Anon_Stream, scala.Unit]] = js.undefined
   /**
     * Indicates the start of a polygon. The first line of a polygon indicates the exterior ring, and any subsequent lines indicate interior holes.
     */
-  var polygonStart: js.UndefOr[
-    js.ThisFunction0[/* this */ this.type with d3DashGeoLib.Anon_StreamGeoStream, scala.Unit]
-  ] = js.undefined
+  var polygonStart: js.UndefOr[js.ThisFunction0[/* this */ this.type with d3DashGeoLib.Anon_Stream, scala.Unit]] = js.undefined
   /**
     * Indicates the sphere (the globe; the unit sphere centered at ⟨0,0,0⟩).
     */
-  var sphere: js.UndefOr[
-    js.ThisFunction0[/* this */ this.type with d3DashGeoLib.Anon_StreamGeoStream, scala.Unit]
-  ] = js.undefined
+  var sphere: js.UndefOr[js.ThisFunction0[/* this */ this.type with d3DashGeoLib.Anon_Stream, scala.Unit]] = js.undefined
 }
 

@@ -13,6 +13,6 @@ trait SearchanalyticsResource extends js.Object {
     * When date is one of the group by values, any days without data are omitted from the result list. If you need to know which days have data, issue a
     * broad date range query grouped by date for any metric, and see which day rows are returned.
     */
-  def query(request: gapiDotClientDotWebmastersLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[SearchAnalyticsQueryResponse]
+  def query(request: gapiDotClientDotWebmastersLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[SearchAnalyticsQueryResponse]
 }
 

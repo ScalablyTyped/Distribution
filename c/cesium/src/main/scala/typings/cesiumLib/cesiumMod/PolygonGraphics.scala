@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class PolygonGraphics ()
   extends cesiumLib.cesiumMod.CesiumNs.PolygonGraphics {
-  def this(options: cesiumLib.Anon_ExtrudedHeightShow) = this()
+  def this(options: cesiumLib.Anon_ExtrudedHeightFill) = this()
 }
 

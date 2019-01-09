@@ -33,7 +33,7 @@ trait Navigation extends js.Object {
     * Previously successful Navigation object. Only a single previous Navigation is available,
     * therefore this previous Navigation will always have a `null` value for `previousNavigation`.
     */
-  var previousNavigation: js.Object | scala.Null
+  var previousNavigation: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias @angular/router.@angular/router/src/router.Navigation */ js.Object) | scala.Null
   /**
     * Identifies the trigger of the navigation.
     *

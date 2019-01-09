@@ -27,8 +27,8 @@ class JSONLoader () extends Loader {
     onProgress: js.Function1[/* event */ stdLib.ProgressEvent, scala.Unit],
     onError: js.Function1[/* event */ stdLib.ErrorEvent, scala.Unit]
   ): scala.Unit = js.native
-  def parse(json: js.Any): threeLib.Anon_Materials = js.native
-  def parse(json: js.Any, texturePath: java.lang.String): threeLib.Anon_Materials = js.native
+  def parse(json: js.Any): threeLib.Anon_Geometry = js.native
+  def parse(json: js.Any, texturePath: java.lang.String): threeLib.Anon_Geometry = js.native
   def setTexturePath(value: java.lang.String): scala.Unit = js.native
 }
 

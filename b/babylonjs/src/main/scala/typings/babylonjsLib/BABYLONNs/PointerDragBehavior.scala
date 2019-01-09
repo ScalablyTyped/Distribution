@@ -93,7 +93,7 @@ class PointerDragBehavior () extends Behavior[Mesh] {
     *  * dragPlaneNormal normal of the current drag plane used during the drag
     *  * dragPlanePoint in world space where the drag intersects the drag plane
     */
-  var onDragObservable: Observable[babylonjsLib.Anon_DragDistance] = js.native
+  var onDragObservable: Observable[babylonjsLib.Anon_DeltaDragDistance] = js.native
   /**
     *  Fires each time a drag begins (eg. mouse down on mesh)
     */

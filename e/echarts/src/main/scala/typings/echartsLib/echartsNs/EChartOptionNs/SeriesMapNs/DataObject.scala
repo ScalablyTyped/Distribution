@@ -9,14 +9,14 @@ trait DataObject extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderTypeAreaColor] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleLabelAnonAreaColor] = js.undefined
   /**
     * Style of item polygon
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_AreaColor] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_AreaColorAnonBorderColor] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -28,9 +28,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.label
     */
-  var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowTextBorderWidthShadowBlurHeightBorderWidthFontStyle
-  ] = js.undefined
+  var label: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColorDistance] = js.undefined
   /**
     * The name of the map area where the data belongs to, such
     * as `'China'` or `'United Kingdom'` .
@@ -52,7 +50,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-map.data.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * The numerical value of this area.
     *

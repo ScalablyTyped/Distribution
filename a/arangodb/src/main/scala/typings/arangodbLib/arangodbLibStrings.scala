@@ -10,6 +10,9 @@ object arangodbLibStrings {
   sealed trait DELETE extends js.Object
   
   @js.native
+  sealed trait Document extends js.Object
+  
+  @js.native
   sealed trait DocumentData extends js.Object
   
   @js.native
@@ -154,6 +157,7 @@ object arangodbLibStrings {
   sealed trait traditional extends js.Object
   
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  def Document: Document = "Document".asInstanceOf[Document]
   def DocumentData: DocumentData = "DocumentData".asInstanceOf[DocumentData]
   def GET: GET = "GET".asInstanceOf[GET]
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]

@@ -49,7 +49,7 @@ class StateObject () extends js.Object {
   var redirectTo: java.lang.String | (js.Function1[
     /* $transition$ */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
     atUirouterCoreLib.libStateTargetStateMod.TargetState
-  ]) | atUirouterCoreLib.Anon_StateParams = js.native
+  ]) | atUirouterCoreLib.Anon_Key = js.native
   /** A list of [[Resolvable]] objects.  The internal representation of [[resolve]]. */
   var resolvables: js.Array[atUirouterCoreLib.libResolveResolvableMod.Resolvable] = js.native
   /** Prototypally inherits from [[StateDeclaration.resolve]] */
@@ -116,7 +116,7 @@ class StateObject () extends js.Object {
     * @param opts options
     */
   def parameter(id: java.lang.String): atUirouterCoreLib.libParamsParamMod.Param = js.native
-  def parameter(id: java.lang.String, opts: atUirouterCoreLib.Anon_Inherit): atUirouterCoreLib.libParamsParamMod.Param = js.native
+  def parameter(id: java.lang.String, opts: atUirouterCoreLib.Anon_InheritBoolean): atUirouterCoreLib.libParamsParamMod.Param = js.native
   /**
     * Gets the state's `Param` objects
     *
@@ -127,7 +127,7 @@ class StateObject () extends js.Object {
     * @param opts options
     */
   def parameters(): js.Array[atUirouterCoreLib.libParamsParamMod.Param] = js.native
-  def parameters(opts: atUirouterCoreLib.Anon_InheritMatchingKeys): js.Array[atUirouterCoreLib.libParamsParamMod.Param] = js.native
+  def parameters(opts: atUirouterCoreLib.Anon_Inherit): js.Array[atUirouterCoreLib.libParamsParamMod.Param] = js.native
   /**
     * Returns the root node of this state's tree.
     *

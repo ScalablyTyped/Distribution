@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object bufferCreateMod extends js.Object {
   def default(
     bits: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_bitwise/types.Bit */ _
     ]
   ): nodeLib.Buffer = js.native
 }

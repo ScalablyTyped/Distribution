@@ -17,6 +17,6 @@ class PaymentAccess () extends js.Object {
   		 * @since AppServer 108571, ChatServer 108571
   		 */
   def startKnuddelPurchase(user: User, amount: KnuddelAmount): scala.Unit = js.native
-  def startKnuddelPurchase(user: User, amount: KnuddelAmount, parameters: knuddelsDashUserappsDashApiLib.Anon_TransferReason): scala.Unit = js.native
+  def startKnuddelPurchase(user: User, amount: KnuddelAmount, parameters: knuddelsDashUserappsDashApiLib.Anon_CustomMessage): scala.Unit = js.native
 }
 

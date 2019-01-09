@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Bundle () extends js.Object {
   def this(options: BundleOptions) = this()
   var indentExclusionRanges: ExclusionRange | js.Array[ExclusionRange] = js.native
-  def addSource(source: magicDashStringLib.Anon_Filename): Bundle = js.native
+  def addSource(source: magicDashStringLib.Anon_Content): Bundle = js.native
   def addSource(source: MagicString): Bundle = js.native
   def append(str: java.lang.String): Bundle = js.native
   def append(str: java.lang.String, options: BundleOptions): Bundle = js.native

@@ -62,7 +62,7 @@ class ConditionalDataBarNegativeFormat ()
   def load(): ConditionalDataBarNegativeFormat = js.native
   def load(option: java.lang.String): ConditionalDataBarNegativeFormat = js.native
   def load(option: js.Array[java.lang.String]): ConditionalDataBarNegativeFormat = js.native
-  def load(option: officeDashJsLib.Anon_Select): ConditionalDataBarNegativeFormat = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ConditionalDataBarNegativeFormat = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.ConditionalDataBarNegativeFormatLoadOptions): ConditionalDataBarNegativeFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ConditionalDataBarNegativeFormat): scala.Unit = js.native

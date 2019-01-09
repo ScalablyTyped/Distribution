@@ -31,7 +31,7 @@ class Stream[S, T] ()
     * This method resumes the stream.
     */
   def done(callback: js.Function0[scala.Unit]): this.type = js.native
-  def done(callback: js.Function0[scala.Unit], options: adoneLib.Anon_Passthrough): this.type = js.native
+  def done(callback: js.Function0[scala.Unit], options: adoneLib.Anon_PassthroughBoolean): this.type = js.native
   /**
     * Ends the stream
     */
@@ -51,7 +51,7 @@ class Stream[S, T] ()
     * This method resumes the stream.
     */
   def forEach(callback: js.Function1[/* value */ T, scala.Unit]): this.type = js.native
-  def forEach(callback: js.Function1[/* value */ T, scala.Unit], options: adoneLib.Anon_Wait): this.type = js.native
+  def forEach(callback: js.Function1[/* value */ T, scala.Unit], options: adoneLib.Anon_Passthrough): this.type = js.native
   /**
     * Whether the stream is ended
     */
@@ -82,7 +82,7 @@ class Stream[S, T] ()
     * Pipes this stream to another
     */
   def pipe[T](stream: T): T = js.native
-  def pipe[T](stream: T, options: adoneLib.Anon_End): T = js.native
+  def pipe[T](stream: T, options: adoneLib.Anon_EndBoolean): T = js.native
   /**
     * Pushes the given value into the stream
     */
@@ -127,7 +127,10 @@ class Stream[S, T] ()
     * This method resumes the stream.
     */
   def toArray(callback: js.Function1[/* result */ js.Array[T], scala.Unit]): this.type = js.native
-  def toArray(callback: js.Function1[/* result */ js.Array[T], scala.Unit], options: adoneLib.Anon_Passthrough): this.type = js.native
+  def toArray(
+    callback: js.Function1[/* result */ js.Array[T], scala.Unit],
+    options: adoneLib.Anon_PassthroughBoolean
+  ): this.type = js.native
   /**
     * Adds a new transform that filters the values by their uniqueness
     *
@@ -165,7 +168,7 @@ object Stream extends js.Object {
     streams: js.Array[
       (adoneLib.adoneNs.streamNs.coreNs.Stream[_, _]) | nodeLib.streamMod.Transform | nodeLib.streamMod.Readable | nodeLib.streamMod.Duplex
     ],
-    options: adoneLib.Anon_SourceOptions[S, T]
+    options: adoneLib.Anon_EndSourceOptions[S, T]
   ): adoneLib.adoneNs.streamNs.coreNs.Stream[S, T] = js.native
 }
 

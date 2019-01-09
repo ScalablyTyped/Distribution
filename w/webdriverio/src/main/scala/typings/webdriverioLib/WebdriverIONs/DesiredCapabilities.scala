@@ -18,7 +18,7 @@ trait DesiredCapabilities extends Capabilities {
   var captureNetworkTraffic: js.UndefOr[scala.Boolean] = js.undefined
   var changeMaxConnections: js.UndefOr[scala.Boolean] = js.undefined
   // Chrome specific
-  var chromeOptions: js.UndefOr[webdriverioLib.Anon_ExcludeSwitches] = js.undefined
+  var chromeOptions: js.UndefOr[webdriverioLib.Anon_Args] = js.undefined
   var cleanSession: js.UndefOr[scala.Boolean] = js.undefined
   // Selenium RC (1.0) only
   var commandLineFlags: js.UndefOr[java.lang.String] = js.undefined
@@ -57,13 +57,13 @@ trait DesiredCapabilities extends Capabilities {
   var locationContextEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var logFile: js.UndefOr[java.lang.String] = js.undefined
   var logLevel: js.UndefOr[java.lang.String] = js.undefined
-  var loggingPrefs: js.UndefOr[webdriverioLib.Anon_Driver] = js.undefined
+  var loggingPrefs: js.UndefOr[webdriverioLib.Anon_Browser] = js.undefined
   var maxInstances: js.UndefOr[scala.Double] = js.undefined
   var nativeEvents: js.UndefOr[scala.Boolean] = js.undefined
   var onlyProxySeleniumTraffic: js.UndefOr[scala.Boolean] = js.undefined
   var optionsSet: js.UndefOr[scala.Boolean] = js.undefined
   var pageLoadingStrategy: js.UndefOr[java.lang.String] = js.undefined
-  var perfLoggingPrefs: js.UndefOr[webdriverioLib.Anon_EnablePage] = js.undefined
+  var perfLoggingPrefs: js.UndefOr[webdriverioLib.Anon_BufferUsageReportingInterval] = js.undefined
   var platform: js.UndefOr[java.lang.String] = js.undefined
   // Appium specific
   var platformVersion: js.UndefOr[java.lang.String] = js.undefined

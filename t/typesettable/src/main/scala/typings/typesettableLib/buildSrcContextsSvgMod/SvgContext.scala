@@ -19,7 +19,7 @@ class SvgContext protected ()
     text: java.lang.String,
     transform: typesettableLib.buildSrcWritersWriterMod.ITransform,
     element: stdLib.Element
-  ): typesettableLib.Anon_Write = js.native
+  ): typesettableLib.Anon_Line = js.native
   /* private */ def createSvgLinePen(textBlockGroup: js.Any): js.Any = js.native
   /* private */ def getTextElements(element: js.Any): js.Any = js.native
   def setAddTitleElement(addTitleElement: scala.Boolean): scala.Unit = js.native

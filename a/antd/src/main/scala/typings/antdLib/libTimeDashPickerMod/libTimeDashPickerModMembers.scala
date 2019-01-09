@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("antd/lib/time-picker", JSImport.Namespace)
 @js.native
 object libTimeDashPickerModMembers extends js.Object {
-  def generateShowHourMinuteSecond(format: java.lang.String): antdLib.Anon_ShowMinute = js.native
+  def generateShowHourMinuteSecond(format: java.lang.String): antdLib.Anon_ShowHour = js.native
 }
 

@@ -88,7 +88,8 @@ object utilModMembers extends js.Object {
   ): js.Array[typescriptLib.typescriptMod.tsNs.JSDoc] = js.native
   def getLineBreakStyle(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile): tsutilsLib.tsutilsLibStrings.BACKSLASHn | tsutilsLib.tsutilsLibStrings.BACKSLASHrBACKSLASHn = js.native
   def getLineRanges(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile): js.Array[tsutilsLib.utilUtilMod.LineRange] = js.native
-  def getModifier(node: typescriptLib.typescriptMod.tsNs.Node, kind: js.Any): js.UndefOr[typescriptLib.typescriptMod.tsNs.Modifier] = js.native
+  def getModifier(node: typescriptLib.typescriptMod.tsNs.Node): js.UndefOr[typescriptLib.typescriptMod.tsNs.Modifier] = js.native
+  def getModifier(node: typescriptLib.typescriptMod.tsNs.Node, kind: typescriptLib.typescriptMod.tsNs.SyntaxKind): js.UndefOr[typescriptLib.typescriptMod.tsNs.Modifier] = js.native
   def getNextStatement(statement: typescriptLib.typescriptMod.tsNs.Statement): js.UndefOr[typescriptLib.typescriptMod.tsNs.Statement] = js.native
   def getNextToken(node: typescriptLib.typescriptMod.tsNs.Node): js.UndefOr[typescriptLib.typescriptMod.tsNs.Node] = js.native
   def getNextToken(
@@ -113,8 +114,11 @@ object utilModMembers extends js.Object {
   def getWrappedNodeAtPosition(wrap: tsutilsLib.utilConvertDashAstMod.NodeWrap, pos: scala.Double): js.UndefOr[tsutilsLib.utilConvertDashAstMod.NodeWrap] = js.native
   def hasAccessModifier(node: typescriptLib.typescriptMod.tsNs.ClassElement): scala.Boolean = js.native
   def hasAccessModifier(node: typescriptLib.typescriptMod.tsNs.ParameterDeclaration): scala.Boolean = js.native
-  def hasModifier(kinds: js.Any*): scala.Boolean = js.native
-  def hasModifier(modifiers: typescriptLib.typescriptMod.tsNs.ModifiersArray, kinds: js.Any*): scala.Boolean = js.native
+  def hasModifier(kinds: js.UndefOr[typescriptLib.typescriptMod.tsNs.SyntaxKind]*): scala.Boolean = js.native
+  def hasModifier(
+    modifiers: typescriptLib.typescriptMod.tsNs.ModifiersArray,
+    kinds: js.UndefOr[typescriptLib.typescriptMod.tsNs.SyntaxKind]*
+  ): scala.Boolean = js.native
   def hasOwnThisReference(node: typescriptLib.typescriptMod.tsNs.Node): scala.Boolean = js.native
   def hasSideEffects(node: typescriptLib.typescriptMod.tsNs.Expression): scala.Boolean = js.native
   def hasSideEffects(

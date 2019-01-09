@@ -33,7 +33,9 @@ trait HTMLViewProps extends js.Object {
   /*
     * Properties for the NodeComponent, can be used independently from NodeComponent
     */
-  var nodeComponentProps: js.UndefOr[reactDashNativeLib.reactDashNativeMod.TextProperties] = js.undefined
+  var nodeComponentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
+  ] = js.undefined
   var onLinkLongPress: js.UndefOr[js.Function1[/* url */ java.lang.String, scala.Unit]] = js.undefined
   var onLinkPress: js.UndefOr[js.Function1[/* url */ java.lang.String, scala.Unit]] = js.undefined
   /**
@@ -72,7 +74,9 @@ trait HTMLViewProps extends js.Object {
   /*
     * Properties for the RootComponent, can be used independently from RootComponent
     */
-  var rootComponentProps: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewProperties] = js.undefined
+  var rootComponentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties */ js.Any
+  ] = js.undefined
   var stylesheet: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[
       reactDashNativeLib.reactDashNativeMod.StyleProp[
@@ -83,7 +87,9 @@ trait HTMLViewProps extends js.Object {
   /*
     * Properties for the TextComponent, can be used independently from TextComponent
     */
-  var textComponentProps: js.UndefOr[reactDashNativeLib.reactDashNativeMod.TextProperties] = js.undefined
+  var textComponentProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
+  ] = js.undefined
   /**
     * a string of HTML content to render
     */

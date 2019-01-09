@@ -26,6 +26,6 @@ class namespaced () extends PlainMechanism {
 @JSImport("sasl-plain", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
-  var Mechanism: org.scalablytyped.runtime.Instantiable0[saslDashPlainLib.saslDashPlainMod.PlainMechanism] = js.native
+  var Mechanism: saslDashPlainLib.Anon_Mechanism = js.native
 }
 

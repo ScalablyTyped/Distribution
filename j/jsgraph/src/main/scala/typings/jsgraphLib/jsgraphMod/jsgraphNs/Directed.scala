@@ -12,6 +12,6 @@ trait Directed extends js.Object {
   def create(): jsgraphLib.Anon_Result
   def createTraversalContext(req: jsgraphLib.Anon_Dirgaph): TraversalContext
   def depthFirstTraverse(params: TraversalParams): TraversalResult
-  def transpose(graph: DirectedGraph): jsgraphLib.Anon_ResultError
+  def transpose(graph: DirectedGraph): jsgraphLib.Anon_Error
 }
 

@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @since Chrome 39. */
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial<chrome-apps.chrome.usb.DeviceFilter>) */ trait DeviceFilter extends js.Object
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof chrome-apps.chrome.usb.DeviceFilter ]:? chrome-apps.chrome.usb.DeviceFilter[P]} */ trait DeviceFilter extends js.Object
 

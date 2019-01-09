@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebMapTileServiceImageryProvider protected ()
   extends cesiumLib.cesiumMod.CesiumNs.WebMapTileServiceImageryProvider {
-  def this(options: cesiumLib.Anon_Format) = this()
+  def this(options: cesiumLib.Anon_Clock) = this()
   /* CompleteClass */
   override var clock: cesiumLib.cesiumMod.CesiumNs.Clock = js.native
   /* CompleteClass */

@@ -56,7 +56,7 @@ trait DayPickerShape extends js.Object {
   ] = js.undefined
   var renderMonthElement: js.UndefOr[
     js.Function1[
-      /* props */ reactDashDatesLib.Anon_OnYearSelect, 
+      /* props */ reactDashDatesLib.Anon_CurrentMonth, 
       java.lang.String | reactLib.reactMod.Global.JSXNs.Element
     ]
   ] = js.undefined

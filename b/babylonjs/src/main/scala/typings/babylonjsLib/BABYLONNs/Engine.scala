@@ -773,7 +773,7 @@ class Engine protected () extends js.Object {
     lodOffset: js.UndefOr[scala.Double],
     fallback: js.UndefOr[Nullable[InternalTexture]]
   ): InternalTexture = js.native
-  def createDepthStencilTexture(size: babylonjsLib.Anon_Height, options: DepthTextureCreationOptions): InternalTexture = js.native
+  def createDepthStencilTexture(size: babylonjsLib.Anon_HeightWidth, options: DepthTextureCreationOptions): InternalTexture = js.native
   /**
     * Creates a depth stencil texture.
     * This is only available in WebGL 2 or with the depth texture extension available.
@@ -1286,8 +1286,8 @@ class Engine protected () extends js.Object {
     */
   def createRenderTargetCubeTexture(size: scala.Double): InternalTexture = js.native
   def createRenderTargetCubeTexture(size: scala.Double, options: stdLib.Partial[RenderTargetCreationOptions]): InternalTexture = js.native
-  def createRenderTargetTexture(size: babylonjsLib.Anon_Height, options: RenderTargetCreationOptions): InternalTexture = js.native
-  def createRenderTargetTexture(size: babylonjsLib.Anon_Height, options: scala.Boolean): InternalTexture = js.native
+  def createRenderTargetTexture(size: babylonjsLib.Anon_HeightWidth, options: RenderTargetCreationOptions): InternalTexture = js.native
+  def createRenderTargetTexture(size: babylonjsLib.Anon_HeightWidth, options: scala.Boolean): InternalTexture = js.native
   def createRenderTargetTexture(size: scala.Double, options: RenderTargetCreationOptions): InternalTexture = js.native
   /**
     * Creates a new render target texture
@@ -2530,7 +2530,7 @@ object Engine extends js.Object {
   /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is equals to the stored value */
   val EQUAL: scala.Double = js.native
   /** Use this array to turn off some WebGL2 features on known buggy browsers version */
-  var ExceptionList: js.Array[babylonjsLib.Anon_CaptureConstraint | babylonjsLib.Anon_CaptureConstraintKey] = js.native
+  var ExceptionList: js.Array[babylonjsLib.Anon_Capture | babylonjsLib.Anon_CaptureCaptureConstraint] = js.native
   /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is greater than or equal to the stored value */
   val GEQUAL: scala.Double = js.native
   /** Passed to depthFunction or stencilFunction to specify depth or stencil tests will pass if the new depth value is greater than the stored value */

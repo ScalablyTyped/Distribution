@@ -47,7 +47,7 @@ class CustomConditionalFormat ()
   def load(): CustomConditionalFormat = js.native
   def load(option: java.lang.String): CustomConditionalFormat = js.native
   def load(option: js.Array[java.lang.String]): CustomConditionalFormat = js.native
-  def load(option: officeDashJsLib.Anon_Select): CustomConditionalFormat = js.native
+  def load(option: officeDashJsLib.Anon_Expand): CustomConditionalFormat = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.CustomConditionalFormatLoadOptions): CustomConditionalFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: CustomConditionalFormat): scala.Unit = js.native

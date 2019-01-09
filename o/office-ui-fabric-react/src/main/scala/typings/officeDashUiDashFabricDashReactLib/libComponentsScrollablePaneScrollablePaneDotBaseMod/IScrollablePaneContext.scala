@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IScrollablePaneContext extends js.Object {
-  var scrollablePane: js.UndefOr[officeDashUiDashFabricDashReactLib.Anon_UpdateStickyRefHeights] = js.undefined
+  var scrollablePane: js.UndefOr[officeDashUiDashFabricDashReactLib.Anon_AddSticky] = js.undefined
 }
 

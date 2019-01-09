@@ -124,7 +124,7 @@ class NamedItem ()
   def load(): NamedItem = js.native
   def load(option: java.lang.String): NamedItem = js.native
   def load(option: js.Array[java.lang.String]): NamedItem = js.native
-  def load(option: officeDashJsLib.Anon_Select): NamedItem = js.native
+  def load(option: officeDashJsLib.Anon_Expand): NamedItem = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.NamedItemLoadOptions): NamedItem = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

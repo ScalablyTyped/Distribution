@@ -22,7 +22,7 @@ class SourceCode protected () extends js.Object {
   def commentsExistBetween(left: estreeLib.estreeMod.Node, right: eslintLib.eslintMod.ASTNs.Token): scala.Boolean = js.native
   def commentsExistBetween(left: estreeLib.estreeMod.Node, right: estreeLib.estreeMod.Node): scala.Boolean = js.native
   def getAllComments(): js.Array[estreeLib.estreeMod.Comment] = js.native
-  def getComments(node: estreeLib.estreeMod.Node): eslintLib.Anon_Trailing = js.native
+  def getComments(node: estreeLib.estreeMod.Node): eslintLib.Anon_Leading = js.native
   def getCommentsAfter(nodeOrToken: eslintLib.eslintMod.ASTNs.Token): js.Array[estreeLib.estreeMod.Comment] = js.native
   def getCommentsAfter(nodeOrToken: estreeLib.estreeMod.Node): js.Array[estreeLib.estreeMod.Comment] = js.native
   def getCommentsBefore(nodeOrToken: eslintLib.eslintMod.ASTNs.Token): js.Array[estreeLib.estreeMod.Comment] = js.native

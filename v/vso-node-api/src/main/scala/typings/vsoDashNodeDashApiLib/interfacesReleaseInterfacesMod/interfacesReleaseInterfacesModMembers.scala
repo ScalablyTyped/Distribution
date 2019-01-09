@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("vso-node-api/interfaces/ReleaseInterfaces", JSImport.Namespace)
 @js.native
 object interfacesReleaseInterfacesModMembers extends js.Object {
-  var TypeInfo: vsoDashNodeDashApiLib.Anon_ReleaseQueryOrder = js.native
+  var TypeInfo: vsoDashNodeDashApiLib.Anon_AgentArtifactDefinition = js.native
 }
 

@@ -12,7 +12,9 @@ trait RecordArgs extends js.Object {
     */
   val aliases: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EvaluateTargetHealth]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EvaluateTargetHealthName]
+      ]
     ]
   ] = js.undefined
   /**
@@ -29,7 +31,9 @@ trait RecordArgs extends js.Object {
     * A block indicating a routing policy based on the geolocation of the requestor. Conflicts with any other routing policy. Documented below.
     */
   val geolocationRoutingPolicies: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Continent]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ContinentCountry]]
+    ]
   ] = js.undefined
   /**
     * The health check the record should be associated with.
@@ -39,7 +43,7 @@ trait RecordArgs extends js.Object {
     * A block indicating a routing policy based on the latency between the requestor and an AWS region. Conflicts with any other routing policy. Documented below.
     */
   val latencyRoutingPolicies: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Region]]]
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RegionInput]]]
   ] = js.undefined
   /**
     * Set to `true` to indicate a multivalue answer routing policy. Conflicts with any other routing policy.
@@ -71,7 +75,7 @@ trait RecordArgs extends js.Object {
     * A block indicating a weighted routing policy. Conflicts with any other routing policy. Documented below.
     */
   val weightedRoutingPolicies: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Weight]]]
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_WeightInput]]]
   ] = js.undefined
   /**
     * Hosted zone ID for a CloudFront distribution, S3 bucket, ELB, or Route 53 hosted zone. See [`resource_elb.zone_id`](https://www.terraform.io/docs/providers/aws/r/elb.html#zone_id) for example.

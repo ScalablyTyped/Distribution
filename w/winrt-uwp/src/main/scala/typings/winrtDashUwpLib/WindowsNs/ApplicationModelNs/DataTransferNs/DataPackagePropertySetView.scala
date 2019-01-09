@@ -55,6 +55,6 @@ abstract class DataPackagePropertySetView () extends js.Object {
   /**
     * Divides the object into two views
     */
-  def split(): winrtDashUwpLib.Anon_SecondFirstIMapViewString = js.native
+  def split(): winrtDashUwpLib.Anon_FirstSecond = js.native
 }
 

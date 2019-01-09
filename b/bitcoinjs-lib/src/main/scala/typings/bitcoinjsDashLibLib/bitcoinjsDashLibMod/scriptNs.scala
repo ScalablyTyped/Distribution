@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object scriptNs extends js.Object {
   val multisig: bitcoinjsDashLibLib.Anon_Input = js.native
-  val nullData: bitcoinjsDashLibLib.Anon_Output = js.native
-  val pubKey: bitcoinjsDashLibLib.Anon_InputOutputAnonCheck = js.native
-  val pubKeyHash: bitcoinjsDashLibLib.Anon_InputOutputAnonCheck = js.native
-  val scriptHash: bitcoinjsDashLibLib.Anon_InputOutput = js.native
-  val witnessCommitment: bitcoinjsDashLibLib.Anon_OutputAnonEncode = js.native
-  val witnessPubKeyHash: bitcoinjsDashLibLib.Anon_InputOutputAnonCheck = js.native
-  val witnessScriptHash: bitcoinjsDashLibLib.Anon_InputOutput = js.native
+  val nullData: bitcoinjsDashLibLib.Anon_OutputAnonCheck = js.native
+  val pubKey: bitcoinjsDashLibLib.Anon_InputOutput = js.native
+  val pubKeyHash: bitcoinjsDashLibLib.Anon_InputOutput = js.native
+  val scriptHash: bitcoinjsDashLibLib.Anon_InputOutputAnonAllowIncomplete = js.native
+  val witnessCommitment: bitcoinjsDashLibLib.Anon_Output = js.native
+  val witnessPubKeyHash: bitcoinjsDashLibLib.Anon_InputOutput = js.native
+  val witnessScriptHash: bitcoinjsDashLibLib.Anon_InputOutputAnonAllowIncomplete = js.native
   def classifyInput(script: js.Array[nodeLib.Buffer | scala.Double]): bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.pubkeyhash | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.scripthash | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.multisig | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.pubkey | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.nonstandard = js.native
   def classifyInput(script: js.Array[nodeLib.Buffer | scala.Double], allowIncomplete: scala.Boolean): bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.pubkeyhash | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.scripthash | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.multisig | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.pubkey | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.nonstandard = js.native
   def classifyInput(script: nodeLib.Buffer): bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.pubkeyhash | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.scripthash | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.multisig | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.pubkey | bitcoinjsDashLibLib.bitcoinjsDashLibLibStrings.nonstandard = js.native

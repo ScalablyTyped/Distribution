@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetLoadBalancerResult extends js.Object {
-  val accessLogs: atPulumiAwsLib.Anon_PrefixBucket
+  val accessLogs: atPulumiAwsLib.Anon_Bucket
   val arn: java.lang.String
   val arnSuffix: java.lang.String
   val dnsName: java.lang.String
@@ -20,7 +20,7 @@ trait GetLoadBalancerResult extends js.Object {
   val loadBalancerType: java.lang.String
   val name: java.lang.String
   val securityGroups: js.Array[java.lang.String]
-  val subnetMappings: js.Array[atPulumiAwsLib.Anon_SubnetIdAllocationId]
+  val subnetMappings: js.Array[atPulumiAwsLib.Anon_AllocationId]
   val subnets: js.Array[java.lang.String]
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   val vpcId: java.lang.String

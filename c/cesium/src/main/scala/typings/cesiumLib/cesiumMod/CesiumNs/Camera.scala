@@ -47,9 +47,9 @@ trait Camera extends js.Object {
   def computeViewRectangle(ellipsoid: Ellipsoid, result: Rectangle): js.UndefOr[Rectangle] = js.native
   def distanceToBoundingSphere(boundingSphere: BoundingSphere): scala.Double = js.native
   def flyHome(duration: scala.Double): scala.Unit = js.native
-  def flyTo(options: cesiumLib.Anon_EndTransformDurationCancel): scala.Unit = js.native
+  def flyTo(options: cesiumLib.Anon_Cancel): scala.Unit = js.native
   def flyToBoundingSphere(boundingSphere: BoundingSphere): scala.Unit = js.native
-  def flyToBoundingSphere(boundingSphere: BoundingSphere, options: cesiumLib.Anon_EndTransformDuration): scala.Unit = js.native
+  def flyToBoundingSphere(boundingSphere: BoundingSphere, options: cesiumLib.Anon_CancelComplete): scala.Unit = js.native
   def getMagnitude(): scala.Double = js.native
   def getPickRay(windowPosition: Cartesian2): Ray = js.native
   def getPickRay(windowPosition: Cartesian2, result: Ray): Ray = js.native
@@ -101,7 +101,7 @@ trait Camera extends js.Object {
   def rotateRight(angle: scala.Double): scala.Unit = js.native
   def rotateUp(): scala.Unit = js.native
   def rotateUp(angle: scala.Double): scala.Unit = js.native
-  def setView(options: cesiumLib.Anon_EndTransform): scala.Unit = js.native
+  def setView(options: cesiumLib.Anon_Destination): scala.Unit = js.native
   def switchToOrthographicFrustum(): scala.Unit = js.native
   def switchToPerspectiveFrustum(): scala.Unit = js.native
   def twistLeft(): scala.Unit = js.native

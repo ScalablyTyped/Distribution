@@ -27,8 +27,8 @@ object srcDiModMembers extends js.Object {
     parent: scala.Null,
     additionalProviders: js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider]
   ): atAngularCoreLib.srcDiInjectorMod.Injector = js.native
-  def defineInjectable[T](opts: atAngularCoreLib.Anon_FactoryProvidedIn[T]): scala.Nothing = js.native
-  def defineInjector(options: atAngularCoreLib.Anon_Imports): scala.Nothing = js.native
+  def defineInjectable[T](opts: atAngularCoreLib.Anon_Any[T]): scala.Nothing = js.native
+  def defineInjector(options: atAngularCoreLib.Anon_Factory): scala.Nothing = js.native
   def forwardRef(forwardRefFn: atAngularCoreLib.srcDiForwardUnderscoreRefMod.ForwardRefFn): atAngularCoreLib.srcTypeMod.Type[_] = js.native
   def inject[T](token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T]): T | scala.Null = js.native
   def inject[T](

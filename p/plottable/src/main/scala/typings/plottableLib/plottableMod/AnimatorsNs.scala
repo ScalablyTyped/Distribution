@@ -21,7 +21,7 @@ object AnimatorsNs extends js.Object {
   class Null ()
     extends plottableLib.buildSrcAnimatorsMod.Null
   
-  val EaseName: plottableLib.Anon_SinInOut = js.native
+  val EaseName: plottableLib.Anon_Back = js.native
   @js.native
   object Easing extends js.Object {
     /**

@@ -23,6 +23,12 @@ trait Anon_Accesstoken extends js.Object {
   var key: js.UndefOr[java.lang.String] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The resource name of the parent resource in one of the following formats:
+    * `organizations/{ORGANIZATION_ID}`
+    * `projects/{PROJECT_ID}`
+    */
+  var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
   /** Returns response with indentations and line breaks. */

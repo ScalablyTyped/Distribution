@@ -16,7 +16,7 @@ trait Keyboard extends js.Object {
   def down(key: java.lang.String, options: puppeteerLib.Anon_Text): js.Promise[scala.Unit] = js.native
   /** Shortcut for `keyboard.down` and `keyboard.up`. */
   def press(key: java.lang.String): js.Promise[scala.Unit] = js.native
-  def press(key: java.lang.String, options: puppeteerLib.Anon_TextDelay): js.Promise[scala.Unit] = js.native
+  def press(key: java.lang.String, options: puppeteerLib.Anon_Delay): js.Promise[scala.Unit] = js.native
   /** Dispatches a `keypress` and `input` event. This does not send a `keydown` or keyup `event`. */
   def sendCharacter(char: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
@@ -25,7 +25,7 @@ trait Keyboard extends js.Object {
     * @param options Specifies the typing options.
     */
   def `type`(text: java.lang.String): js.Promise[scala.Unit] = js.native
-  def `type`(text: java.lang.String, options: puppeteerLib.Anon_Delay): js.Promise[scala.Unit] = js.native
+  def `type`(text: java.lang.String, options: puppeteerLib.Anon_DelayNumber): js.Promise[scala.Unit] = js.native
   /**
     * Dispatches a keyup event.
     * @param key Name of key to release, such as ArrowLeft.

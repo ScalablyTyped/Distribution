@@ -59,7 +59,7 @@ trait Data extends js.Object {
   /**
     * Choose which JSON object keys correspond to desired data.
     */
-  var keys: js.UndefOr[c3Lib.Anon_ValueX] = js.undefined
+  var keys: js.UndefOr[c3Lib.Anon_Value] = js.undefined
   /**
     * Show labels on each data points or set formatter function for data labels.
     * The formatter function receives 4 arguments such as v, id, i, j and it must return a string that will be shown as the label. The arguments are:
@@ -69,7 +69,7 @@ trait Data extends js.Object {
     * - j is the sub index of the data point where the label is shown.
     * Formatter function can be defined for each data by specifying as an object and D3 formatter function can be set (e.g. d3.format('$'))
     */
-  var labels: js.UndefOr[scala.Boolean | c3Lib.Anon_Format | c3Lib.Anon_FormatKey] = js.undefined
+  var labels: js.UndefOr[scala.Boolean | c3Lib.Anon_FormatI | c3Lib.Anon_FormatKey] = js.undefined
   /**
     * Used if loading JSON via data.url
     */
@@ -120,7 +120,7 @@ trait Data extends js.Object {
     * Load data from a multidimensional array, with the first element containing the data names, the following containing related data in that order.
     */
   var rows: js.UndefOr[js.Array[PrimitiveArray]] = js.undefined
-  var selection: js.UndefOr[c3Lib.Anon_EnabledIsselectable] = js.undefined
+  var selection: js.UndefOr[c3Lib.Anon_D] = js.undefined
   /**
     * Set chart type at once.
     * If this option is specified, the type will be applied to every data. This setting can be overwritten by data.types.

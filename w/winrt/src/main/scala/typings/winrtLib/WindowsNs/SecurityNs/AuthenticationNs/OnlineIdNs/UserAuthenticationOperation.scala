@@ -17,7 +17,7 @@ class UserAuthenticationOperation ()
   /* CompleteClass */
   override var id: scala.Double = js.native
   @JSName("operation")
-  var operation_UserAuthenticationOperation: winrtLib.Anon_CompletedGetResultsAsyncOperationCompletedHandlerUserIdentity = js.native
+  var operation_UserAuthenticationOperation: winrtLib.Anon_AsyncInfoAsyncStatusCompletedGetResultsAsyncOperationCompletedHandlerIAsyncOperation = js.native
   /* CompleteClass */
   override var status: winrtLib.WindowsNs.FoundationNs.AsyncStatus = js.native
   /* InferMemberOverrides */

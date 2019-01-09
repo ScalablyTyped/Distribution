@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait ReportsResource extends js.Object {
   /** Generates and returns a report immediately. */
-  def generate(request: gapiDotClientDotDoubleclicksearchLib.Anon_PrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[Report]
+  def generate(request: gapiDotClientDotDoubleclicksearchLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Report]
   /** Polls for the status of a report request. */
-  def get(request: gapiDotClientDotDoubleclicksearchLib.Anon_ReportId): gapiDotClientLib.gapiNs.clientNs.Request[Report]
+  def get(request: gapiDotClientDotDoubleclicksearchLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[Report]
   /** Downloads a report file encoded in UTF-8. */
-  def getFile(request: gapiDotClientDotDoubleclicksearchLib.Anon_ReportIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+  def getFile(request: gapiDotClientDotDoubleclicksearchLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   /** Inserts a report request into the reporting system. */
-  def request(request: gapiDotClientDotDoubleclicksearchLib.Anon_PrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[Report]
+  def request(request: gapiDotClientDotDoubleclicksearchLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Report]
 }
 

@@ -6,10 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_LastRangeBackward extends js.Object {
-  var context: js.UndefOr[
-    atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.SchemaContextDefinition
-  ] = js.undefined
   var lastRangeBackward: js.UndefOr[scala.Boolean] = js.undefined
-  var selectionAttributes: js.UndefOr[js.Array[js.Object]] = js.undefined
+  var order: js.UndefOr[js.Array[scala.Double]] = js.undefined
+  var rootElement: js.UndefOr[
+    atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Element | atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.DocumentFragment
+  ] = js.undefined
+  var sameSelectionCharacters: js.UndefOr[scala.Boolean] = js.undefined
 }
 

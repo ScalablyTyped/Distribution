@@ -46,7 +46,7 @@ class OrthographicCamera protected () extends Camera {
   var top: scala.Double = js.native
   @JSName("type")
   var type_OrthographicCamera: threeLib.threeLibStrings.OrthographicCamera = js.native
-  var view: scala.Null | threeLib.Anon_FullWidth = js.native
+  var view: scala.Null | threeLib.Anon_Enabled = js.native
   var zoom: scala.Double = js.native
   def clearViewOffset(): scala.Unit = js.native
   def setViewOffset(

@@ -25,7 +25,7 @@ class Project protected ()
   /**
     * Information about the project's build output artifacts. Artifact blocks are documented below.
     */
-  val artifacts: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_Packaging] = js.native
+  val artifacts: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_EncryptionDisabled] = js.native
   /**
     * Generates a publicly-accessible URL for the projects build badge. Available as `badge_url` attribute when enabled.
     */
@@ -41,7 +41,7 @@ class Project protected ()
   /**
     * Information about the cache storage for the project. Cache blocks are documented below.
     */
-  val cache: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_LocationType]] = js.native
+  val cache: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Location]] = js.native
   /**
     * A short description of the project.
     */
@@ -53,7 +53,7 @@ class Project protected ()
   /**
     * Information about the project's build environment. Environment blocks are documented below.
     */
-  val environment: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_PrivilegedMode] = js.native
+  val environment: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_Certificate] = js.native
   /**
     * The name of the project. If `type` is set to `S3`, this is the name of the output artifact object
     */
@@ -61,11 +61,11 @@ class Project protected ()
   /**
     * A set of secondary artifacts to be used inside the build. Secondary artifacts blocks are documented below.
     */
-  val secondaryArtifacts: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_PackagingName]]] = js.native
+  val secondaryArtifacts: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ArtifactIdentifier]]] = js.native
   /**
     * A set of secondary sources to be used inside the build. Secondary sources blocks are documented below.
     */
-  val secondarySources: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_LocationReportBuildStatus]]] = js.native
+  val secondarySources: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Auths]]] = js.native
   /**
     * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that enables AWS CodeBuild to interact with dependent AWS services on behalf of the AWS account.
     */
@@ -73,7 +73,7 @@ class Project protected ()
   /**
     * Information about the project's input source code. Source blocks are documented below.
     */
-  val source: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_Location] = js.native
+  val source: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AuthsBuildspec] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
@@ -81,7 +81,7 @@ class Project protected ()
   /**
     * Configuration for the builds to run inside a VPC. VPC config blocks are documented below.
     */
-  val vpcConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SubnetsVpcId]] = js.native
+  val vpcConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SecurityGroupIds]] = js.native
 }
 
 @JSImport("@pulumi/aws/codebuild/project", "Project")

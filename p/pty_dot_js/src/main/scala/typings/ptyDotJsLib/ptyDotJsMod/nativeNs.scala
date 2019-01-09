@@ -36,8 +36,8 @@ object nativeNs extends js.Object {
     gid: scala.Double
   ): ptyDotJsLib.Anon_Fd = js.native
   def kill(pid: scala.Double): scala.Unit = js.native
-  def open(cols: scala.Double, rows: scala.Double): ptyDotJsLib.Anon_Slave = js.native
-  def open(dataPipe: java.lang.String, cols: scala.Double, rows: scala.Double, debug: scala.Boolean): ptyDotJsLib.Anon_Pid = js.native
+  def open(cols: scala.Double, rows: scala.Double): ptyDotJsLib.Anon_Master = js.native
+  def open(dataPipe: java.lang.String, cols: scala.Double, rows: scala.Double, debug: scala.Boolean): ptyDotJsLib.Anon_FdPid = js.native
   def process(fd: scala.Double, tty: java.lang.String): java.lang.String = js.native
   def resize(fd: scala.Double, cols: scala.Double, rows: scala.Double): scala.Unit = js.native
   def startProcess(

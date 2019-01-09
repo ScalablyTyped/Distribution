@@ -21,7 +21,7 @@ class PropertyBinding protected () extends Binding {
     * Returns the binding mode
     * @returns the binding mode
     */
-  def getBindingMode(): openui5Lib.Anon_OneTime = js.native
+  def getBindingMode(): openui5Lib.Anon_Default = js.native
   /**
     * Returns the current external value of the bound target which is formatted via a type or formatter
     * function.
@@ -47,7 +47,7 @@ class PropertyBinding protected () extends Binding {
     * Sets the binding mode
     * @param sBindingMode the binding mode
     */
-  def setBindingMode(sBindingMode: openui5Lib.Anon_OneTime): scala.Unit = js.native
+  def setBindingMode(sBindingMode: openui5Lib.Anon_Default): scala.Unit = js.native
   /**
     * Sets the value for this binding. The value is parsed and validated against its type and then set to
     * the binding.A model implementation should check if the current default binding mode permitssetting

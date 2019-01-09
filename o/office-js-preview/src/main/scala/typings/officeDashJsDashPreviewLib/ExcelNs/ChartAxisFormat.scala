@@ -57,7 +57,7 @@ class ChartAxisFormat ()
   def load(): ChartAxisFormat = js.native
   def load(option: java.lang.String): ChartAxisFormat = js.native
   def load(option: js.Array[java.lang.String]): ChartAxisFormat = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): ChartAxisFormat = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): ChartAxisFormat = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ChartAxisFormatLoadOptions): ChartAxisFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartAxisFormat): scala.Unit = js.native

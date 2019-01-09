@@ -23,7 +23,7 @@ class MapControls protected ()
   // API
   var enabled: scala.Boolean = js.native
   var keyPanSpeed: scala.Double = js.native
-  var keys: threeLib.Anon_RIGHTUP = js.native
+  var keys: threeLib.Anon_BOTTOM = js.native
   var maxAzimuthAngle: scala.Double = js.native
   var maxDistance: scala.Double = js.native
   var maxPolarAngle: scala.Double = js.native
@@ -32,7 +32,7 @@ class MapControls protected ()
   var minDistance: scala.Double = js.native
   var minPolarAngle: scala.Double = js.native
   var minZoom: scala.Double = js.native
-  var mouseButtons: threeLib.Anon_RIGHT = js.native
+  var mouseButtons: threeLib.Anon_LEFT = js.native
   var `object`: threeLib.threeDashCoreMod.Camera = js.native
   var panSpeed: scala.Double = js.native
   var position0: threeLib.threeDashCoreMod.Vector3 = js.native

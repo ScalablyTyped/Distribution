@@ -25,7 +25,7 @@ class DiagramWidget protected ()
   /**
     * Gets a model and element under the mouse cursor
     */
-  def getMouseElement(event: js.Any): stormDashReactDashDiagramsLib.Anon_Model = js.native
+  def getMouseElement(event: js.Any): stormDashReactDashDiagramsLib.Anon_Element = js.native
   def onKeyUp(event: js.Any): scala.Unit = js.native
   def onKeyUpPointer(`this`: stdLib.Window, ev: reactLib.KeyboardEvent): scala.Unit = js.native
   def onMouseMove(event: js.Any): scala.Unit = js.native

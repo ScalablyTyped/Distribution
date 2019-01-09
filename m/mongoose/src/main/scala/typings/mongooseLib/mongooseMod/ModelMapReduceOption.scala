@@ -17,7 +17,7 @@ trait ModelMapReduceOption[T, Key, Val] extends js.Object {
   var limit: js.UndefOr[scala.Double] = js.undefined
   var map: js.Function | java.lang.String
   /** sets the output target for the map reduce job. default: {inline: 1} */
-  var out: js.UndefOr[mongooseLib.Anon_Reduce] = js.undefined
+  var out: js.UndefOr[mongooseLib.Anon_Inline] = js.undefined
   /** query filter object. */
   var query: js.UndefOr[js.Any] = js.undefined
   var readPreference: js.UndefOr[java.lang.String] = js.undefined

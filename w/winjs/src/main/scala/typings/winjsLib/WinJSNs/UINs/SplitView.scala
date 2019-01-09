@@ -113,15 +113,15 @@ object SplitView extends js.Object {
   /**
     * Display options for a SplitView's pane when it is closed.
     **/
-  var ClosedDisplayMode: winjsLib.Anon_NoneInline = js.native
+  var ClosedDisplayMode: winjsLib.Anon_Inline = js.native
   /**
     * Display options for a SplitView's pane when it is open.
     **/
-  var OpenedDisplayMode: winjsLib.Anon_Inline = js.native
+  var OpenedDisplayMode: winjsLib.Anon_InlineOverlay = js.native
   /**
     * Placement options for a SplitView's pane.
     **/
-  var PanePlacement: winjsLib.Anon_Bottom = js.native
+  var PanePlacement: winjsLib.Anon_BottomLeft = js.native
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/

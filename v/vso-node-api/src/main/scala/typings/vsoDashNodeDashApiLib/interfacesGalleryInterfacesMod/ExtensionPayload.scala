@@ -12,7 +12,7 @@ trait ExtensionPayload extends js.Object {
   var installationTargets: js.Array[InstallationTarget]
   var isSignedByMicrosoft: scala.Boolean
   var isValid: scala.Boolean
-  var metadata: js.Array[vsoDashNodeDashApiLib.Anon_Key]
+  var metadata: js.Array[vsoDashNodeDashApiLib.Anon_KeyValueString]
   var `type`: ExtensionDeploymentTechnology
 }
 

@@ -44,6 +44,6 @@ class SourceListMap () extends js.Object {
   def prepend(generatedCode: SourceNode): scala.Unit = js.native
   def prepend(generatedCode: SourceNode, source: java.lang.String): scala.Unit = js.native
   def prepend(generatedCode: SourceNode, source: java.lang.String, originalSource: java.lang.String): scala.Unit = js.native
-  def toStringWithSourceMap(options: sourceDashListDashMapLib.Anon_File): sourceDashListDashMapLib.Anon_Source = js.native
+  def toStringWithSourceMap(options: sourceDashListDashMapLib.Anon_File): sourceDashListDashMapLib.Anon_Map = js.native
 }
 

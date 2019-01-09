@@ -51,7 +51,7 @@ object AnimatedNs extends js.Object {
   
   trait DecayAnimationConfig extends AnimationConfig {
     var deceleration: js.UndefOr[scala.Double] = js.undefined
-    var velocity: scala.Double | reactDashNativeLib.Anon_YX
+    var velocity: scala.Double | reactDashNativeLib.Anon_X
   }
   
   trait EndResult extends js.Object {
@@ -97,15 +97,15 @@ object AnimatedNs extends js.Object {
     var speed: js.UndefOr[scala.Double] = js.undefined
     var stiffness: js.UndefOr[scala.Double] = js.undefined
     var tension: js.UndefOr[scala.Double] = js.undefined
-    var toValue: scala.Double | AnimatedValue | reactDashNativeLib.Anon_YX | AnimatedValueXY
-    var velocity: js.UndefOr[scala.Double | reactDashNativeLib.Anon_YX] = js.undefined
+    var toValue: scala.Double | AnimatedValue | reactDashNativeLib.Anon_X | AnimatedValueXY
+    var velocity: js.UndefOr[scala.Double | reactDashNativeLib.Anon_X] = js.undefined
   }
   
   trait TimingAnimationConfig extends AnimationConfig {
     var delay: js.UndefOr[scala.Double] = js.undefined
     var duration: js.UndefOr[scala.Double] = js.undefined
     var easing: js.UndefOr[js.Function1[/* value */ scala.Double, scala.Double]] = js.undefined
-    var toValue: scala.Double | AnimatedValue | reactDashNativeLib.Anon_YX | AnimatedValueXY
+    var toValue: scala.Double | AnimatedValue | reactDashNativeLib.Anon_X | AnimatedValueXY
   }
   
   @js.native
@@ -156,7 +156,7 @@ object AnimatedNs extends js.Object {
   
   @js.native
   class ValueXY () extends AnimatedWithChildren {
-    def this(valueIn: reactDashNativeLib.Anon_YXNumber) = this()
+    def this(valueIn: reactDashNativeLib.Anon_XY) = this()
     var x: AnimatedValue = js.native
     var y: AnimatedValue = js.native
     def addListener(callback: ValueXYListenerCallback): java.lang.String = js.native
@@ -181,14 +181,16 @@ object AnimatedNs extends js.Object {
       */
     def getTranslateTransform(): js.Array[org.scalablytyped.runtime.StringDictionary[AnimatedValue]] = js.native
     def removeListener(id: java.lang.String): scala.Unit = js.native
-    def setOffset(offset: reactDashNativeLib.Anon_YX): scala.Unit = js.native
-    def setValue(value: reactDashNativeLib.Anon_YX): scala.Unit = js.native
+    def setOffset(offset: reactDashNativeLib.Anon_X): scala.Unit = js.native
+    def setValue(value: reactDashNativeLib.Anon_X): scala.Unit = js.native
     def stopAnimation(): scala.Unit = js.native
-    def stopAnimation(callback: js.Function1[/* value */ reactDashNativeLib.Anon_YX, scala.Unit]): scala.Unit = js.native
+    def stopAnimation(callback: js.Function1[/* value */ reactDashNativeLib.Anon_X, scala.Unit]): scala.Unit = js.native
   }
   
+  val FlatList: js.Any = js.native
   val Image: js.Any = js.native
   val ScrollView: js.Any = js.native
+  val SectionList: js.Any = js.native
   val Text: js.Any = js.native
   val View: js.Any = js.native
   def add(a: Animated, b: Animated): AnimatedAddition = js.native
@@ -218,8 +220,10 @@ object AnimatedNs extends js.Object {
   type Base = Animated
   type EndCallback = js.Function1[/* result */ EndResult, scala.Unit]
   type ExtrapolateType = reactDashNativeLib.reactDashNativeLibStrings.extend | reactDashNativeLib.reactDashNativeLibStrings.identity | reactDashNativeLib.reactDashNativeLibStrings.clamp
-  type Mapping = org.scalablytyped.runtime.StringDictionary[js.Object] | AnimatedValue
+  type Mapping = (org.scalablytyped.runtime.StringDictionary[
+    /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-native.react-native.Animated.Mapping */ js.Object
+  ]) | AnimatedValue
   type ValueListenerCallback = js.Function1[/* state */ reactDashNativeLib.Anon_Value, scala.Unit]
-  type ValueXYListenerCallback = js.Function1[/* value */ reactDashNativeLib.Anon_YX, scala.Unit]
+  type ValueXYListenerCallback = js.Function1[/* value */ reactDashNativeLib.Anon_X, scala.Unit]
 }
 

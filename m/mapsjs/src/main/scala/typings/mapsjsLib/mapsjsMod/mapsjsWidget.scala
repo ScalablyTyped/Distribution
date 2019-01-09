@@ -35,7 +35,7 @@ trait mapsjsWidget extends js.Object {
     mapUnitsX: scala.Double,
     mapUnitsY: scala.Double,
     addAction: js.Function1[/* ele */ stdLib.HTMLElement, scala.Unit],
-    dragOptions: mapsjsLib.Anon_UseElementInsteadOfNewGestureOverlay
+    dragOptions: mapsjsLib.Anon_Delta
   ): scala.Unit = js.native
   /**
   	 * Add a styled path geometry to the content area which resides at a z-level 
@@ -177,7 +177,7 @@ trait mapsjsWidget extends js.Object {
   	 * the current extents' width in pixels and h is the current extents'
   	 * height in pixels.
   	 */
-  def getViewExtentsInPix(): mapsjsLib.Anon_W = js.native
+  def getViewExtentsInPix(): mapsjsLib.Anon_H = js.native
   /**
   	 * Gets the current zoom level.
   	 * @returns {number} The current zoom level.

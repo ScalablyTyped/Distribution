@@ -1700,21 +1700,21 @@ object cryptoNs extends js.Object {
           adoneLib.adoneLibStrings.der | adoneLib.adoneLibStrings.pem, 
           adoneLib.adoneLibStrings.der | adoneLib.adoneLibStrings.pem
         ]
-    ): js.Promise[nodeLib.Anon_PublicKey] = js.native
+    ): js.Promise[nodeLib.Anon_PrivateKey] = js.native
     def `__promisify__`(
       `type`: adoneLib.adoneLibStrings.ec,
       options: nodeLib.cryptoMod.ECKeyPairOptions[
           adoneLib.adoneLibStrings.der | adoneLib.adoneLibStrings.pem, 
           adoneLib.adoneLibStrings.der | adoneLib.adoneLibStrings.pem
         ]
-    ): js.Promise[nodeLib.Anon_PublicKey] = js.native
+    ): js.Promise[nodeLib.Anon_PrivateKey] = js.native
     def `__promisify__`(
       `type`: adoneLib.adoneLibStrings.rsa,
       options: nodeLib.cryptoMod.RSAKeyPairOptions[
           adoneLib.adoneLibStrings.der | adoneLib.adoneLibStrings.pem, 
           adoneLib.adoneLibStrings.der | adoneLib.adoneLibStrings.pem
         ]
-    ): js.Promise[nodeLib.Anon_PublicKey] = js.native
+    ): js.Promise[nodeLib.Anon_PrivateKey] = js.native
   }
   
 }

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GoogleEarthEnterpriseTerrainProvider protected ()
   extends cesiumLib.cesiumMod.CesiumNs.GoogleEarthEnterpriseTerrainProvider {
-  def this(options: cesiumLib.Anon_Metadata) = this()
+  def this(options: cesiumLib.Anon_CreditEllipsoidMetadataUrl) = this()
 }
 
 @JSImport("cesium", "GoogleEarthEnterpriseTerrainProvider")

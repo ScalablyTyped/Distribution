@@ -15,7 +15,7 @@ trait ClusterState extends js.Object {
     * * `cluster_certificates.0.manufacturer_hardware_certificate` - The HSM hardware certificate issued (signed) by the hardware manufacturer.
     */
   val clusterCertificates: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AwsHardwareCertificateHsmCertificate]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AwsHardwareCertificateClusterCertificate]
   ] = js.undefined
   /**
     * The id of the CloudHSM cluster.

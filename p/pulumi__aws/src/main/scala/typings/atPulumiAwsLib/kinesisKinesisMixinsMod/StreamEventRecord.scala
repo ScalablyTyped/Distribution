@@ -13,6 +13,6 @@ trait StreamEventRecord extends js.Object {
   var eventSourceARN: java.lang.String
   var eventVersion: java.lang.String
   var invokeIdentityArn: java.lang.String
-  var kinesis: atPulumiAwsLib.Anon_KinesisSchemaVersion
+  var kinesis: atPulumiAwsLib.Anon_DataKinesisSchemaVersion
 }
 

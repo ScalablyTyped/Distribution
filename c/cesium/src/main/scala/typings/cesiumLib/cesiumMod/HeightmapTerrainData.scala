@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class HeightmapTerrainData protected ()
   extends cesiumLib.cesiumMod.CesiumNs.HeightmapTerrainData {
-  def this(options: cesiumLib.Anon_CreatedByUpsampling) = this()
+  def this(options: cesiumLib.Anon_Buffer) = this()
   /* CompleteClass */
   override var waterMask: stdLib.Uint8Array | stdLib.HTMLImageElement | stdLib.HTMLCanvasElement = js.native
   /* CompleteClass */

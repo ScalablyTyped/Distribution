@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object dynogelsModMembers extends js.Object {
   var log: Log = js.native
-  var types: dynogelsLib.Anon_TimeUUID = js.native
+  var types: dynogelsLib.Anon_BinarySet = js.native
   def Set(args: js.Any*): js.Any = js.native
   def createTables(callback: js.Function1[/* err */ java.lang.String, scala.Unit]): scala.Unit = js.native
   def createTables(options: DynogelsGlobalOptions, callback: js.Function1[/* err */ java.lang.String, scala.Unit]): scala.Unit = js.native

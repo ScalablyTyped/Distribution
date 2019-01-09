@@ -61,7 +61,7 @@ class CommentReply ()
   def load(): CommentReply = js.native
   def load(option: java.lang.String): CommentReply = js.native
   def load(option: js.Array[java.lang.String]): CommentReply = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): CommentReply = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): CommentReply = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.CommentReplyLoadOptions): CommentReply = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)

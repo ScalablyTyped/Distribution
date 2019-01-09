@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "SpeedDialItem")
 @js.native
 class SpeedDialItem ()
-  extends Component[reactDashOnsenuiLib.Anon_OnClickE, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_EModifier, js.Any]
 

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
   * ===== Strategies =====
   */
 trait ICacheStrategyHandleOptions extends js.Object {
-  var event: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify FetchEvent */ js.Any
+  var event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
 }
 

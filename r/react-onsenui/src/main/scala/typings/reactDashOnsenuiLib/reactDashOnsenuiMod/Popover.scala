@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Popover")
 @js.native
 class Popover ()
-  extends Component[reactDashOnsenuiLib.Anon_OnPostShowMaskColorIsCancelable, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_AnimationAnimationOptionsDefaultGetTarget, js.Any]
 

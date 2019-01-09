@@ -11,6 +11,6 @@ trait TimeseriesDescriptorsResource extends js.Object {
     * paginated; use the nextPageToken returned in the response to request subsequent pages of results by setting the pageToken query parameter to the value
     * of the nextPageToken.
     */
-  def list(request: gapiDotClientDotCloudmonitoringLib.Anon_Window): gapiDotClientLib.gapiNs.clientNs.Request[ListTimeseriesDescriptorsResponse]
+  def list(request: gapiDotClientDotCloudmonitoringLib.Anon_Aggregator): gapiDotClientLib.gapiNs.clientNs.Request[ListTimeseriesDescriptorsResponse]
 }
 

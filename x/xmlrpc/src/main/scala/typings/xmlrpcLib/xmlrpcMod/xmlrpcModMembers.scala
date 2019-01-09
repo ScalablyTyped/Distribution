@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("xmlrpc", JSImport.Namespace)
 @js.native
 object xmlrpcModMembers extends js.Object {
-  var dateFormatter: xmlrpcLib.Anon_DecodeIso8601 = js.native
+  var dateFormatter: xmlrpcLib.Anon_Date = js.native
   def createClient(options: java.lang.String): xmlrpcLib.xmlrpcMod.xmlrpcNs.Client = js.native
   def createClient(options: ClientOptions): xmlrpcLib.xmlrpcMod.xmlrpcNs.Client = js.native
   def createSecureClient(options: java.lang.String): xmlrpcLib.xmlrpcMod.xmlrpcNs.Client = js.native

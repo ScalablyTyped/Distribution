@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IGridExpandableApi[TEntity] extends js.Object {
   // Events
-  var on: uiDashGridLib.Anon_RowExpandedStateChanged[TEntity]
+  var on: uiDashGridLib.Anon_HandlerRowExpandedStateChanged[TEntity]
   // Methods
   /**
     * Collapse all subgrids.

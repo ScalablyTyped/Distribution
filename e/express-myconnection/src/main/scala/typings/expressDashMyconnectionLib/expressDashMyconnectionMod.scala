@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object expressDashMyconnectionMod extends js.Object {
   def apply(
-    mysqlInstance: expressDashMyconnectionLib.Anon_Format,
+    mysqlInstance: expressDashMyconnectionLib.Anon_Config,
     dbConfig: mysqlLib.mysqlMod.ConnectionConfig,
     strategy: java.lang.String
   ): expressLib.expressMod.eNs.RequestHandler = js.native

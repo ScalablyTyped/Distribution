@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 package object ArangoDBNs {
   type ArangoSearchViewConsolidationType = arangodbLib.arangodbLibStrings.bytes | arangodbLib.arangodbLibStrings.bytes_accum | arangodbLib.arangodbLibStrings.count | arangodbLib.arangodbLibStrings.fill
   type CollectionType = DocumentCollectionType | EdgeCollectionType
-  type Document[T /* <: js.Object */] = arangodbLib.Anon_KeyTo[T] with DocumentMetadata
+  type Document[T /* <: js.Object */] = arangodbLib.Anon_From with arangodbLib.arangodbLibStrings.Document with T with DocumentMetadata
   // Collection
   type DocumentCollectionType = arangodbLib.arangodbLibNumbers.`2`
   type DocumentData[T /* <: js.Object */] = arangodbLib.arangodbLibStrings.DocumentData with T with stdLib.Partial[DocumentMetadata]
   type DocumentIterator[T /* <: js.Object */] = js.Function2[/* document */ Document[T], /* number */ scala.Double, scala.Unit]
   type DocumentLike = ObjectWithId | ObjectWithKey
-  type Edge[T /* <: js.Object */] = Document[T] with arangodbLib.Anon_To
+  type Edge[T /* <: js.Object */] = Document[T] with arangodbLib.Anon_FromTo
   type EdgeCollectionType = arangodbLib.arangodbLibNumbers.`3`
   type EdgeDirection = arangodbLib.arangodbLibStrings.any | arangodbLib.arangodbLibStrings.inbound | arangodbLib.arangodbLibStrings.outbound
   type EngineType = arangodbLib.arangodbLibStrings.mmfiles | arangodbLib.arangodbLibStrings.rocksdb

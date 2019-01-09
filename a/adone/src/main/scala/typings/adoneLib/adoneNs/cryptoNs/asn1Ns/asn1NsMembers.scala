@@ -21,7 +21,7 @@ object asn1NsMembers extends js.Object {
     *
     * @param inputBuffer ASN.1 BER encoded array of bytes
     */
-  def fromBER(inputBuffer: stdLib.ArrayBuffer): adoneLib.Anon_ResultOffset = js.native
+  def fromBER(inputBuffer: stdLib.ArrayBuffer): adoneLib.Anon_Offset = js.native
   /**
     * ASN.1 schema verification for ArrayBuffer data
     *

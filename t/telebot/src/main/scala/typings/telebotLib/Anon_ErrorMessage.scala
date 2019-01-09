@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ErrorMessage extends js.Object {
   var errorMessage: js.UndefOr[java.lang.String] = js.undefined
+  var shippingOptions: js.UndefOr[js.Array[_]] = js.undefined
 }
 

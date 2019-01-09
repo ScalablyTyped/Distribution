@@ -27,7 +27,7 @@ object SQLiteNs extends js.Object {
   trait ResultSet extends js.Object {
     var insertId: scala.Double
     var rowAffected: scala.Double
-    var rows: expoLib.Anon_Length
+    var rows: expoLib.Anon_Array
   }
   
   @js.native
@@ -47,17 +47,17 @@ object SQLiteNs extends js.Object {
     ): scala.Unit = js.native
   }
   
-  def openDatabase(name: expoLib.Anon_Name): js.Any = js.native
-  def openDatabase(name: expoLib.Anon_Name, version: java.lang.String): js.Any = js.native
-  def openDatabase(name: expoLib.Anon_Name, version: java.lang.String, description: java.lang.String): js.Any = js.native
+  def openDatabase(name: expoLib.Anon_Callback): js.Any = js.native
+  def openDatabase(name: expoLib.Anon_Callback, version: java.lang.String): js.Any = js.native
+  def openDatabase(name: expoLib.Anon_Callback, version: java.lang.String, description: java.lang.String): js.Any = js.native
   def openDatabase(
-    name: expoLib.Anon_Name,
+    name: expoLib.Anon_Callback,
     version: java.lang.String,
     description: java.lang.String,
     size: scala.Double
   ): js.Any = js.native
   def openDatabase(
-    name: expoLib.Anon_Name,
+    name: expoLib.Anon_Callback,
     version: java.lang.String,
     description: java.lang.String,
     size: scala.Double,

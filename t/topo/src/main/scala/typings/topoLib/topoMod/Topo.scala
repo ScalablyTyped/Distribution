@@ -26,9 +26,9 @@ trait Topo[TNode, TGroup] extends js.Object {
     * @returns an array of the topologically sorted nodes.
     */
   def add(nodes: TNode): js.Array[TNode] = js.native
-  def add(nodes: TNode, options: topoLib.Anon_Group[TGroup]): js.Array[TNode] = js.native
+  def add(nodes: TNode, options: topoLib.Anon_After[TGroup]): js.Array[TNode] = js.native
   def add(nodes: js.Array[TNode]): js.Array[TNode] = js.native
-  def add(nodes: js.Array[TNode], options: topoLib.Anon_Group[TGroup]): js.Array[TNode] = js.native
+  def add(nodes: js.Array[TNode], options: topoLib.Anon_After[TGroup]): js.Array[TNode] = js.native
   def merge(others: js.Array[Topo[TNode, TGroup]]): js.Array[TNode] = js.native
   /**
     * Merges another `Topo` object into the current object.

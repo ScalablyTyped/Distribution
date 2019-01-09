@@ -46,7 +46,7 @@ object subscriptionSubscribeMod extends js.Object {
       graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]]
     ]
   ): js.Promise[stdLib.AsyncIterable[_] | graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
-  def subscribe[TData](args: graphqlLib.Anon_FieldResolver): js.Promise[
+  def subscribe[TData](args: graphqlLib.Anon_ArgName): js.Promise[
     stdLib.AsyncIterator[graphqlLib.executionExecuteMod.ExecutionResult[TData]] | graphqlLib.executionExecuteMod.ExecutionResult[TData]
   ] = js.native
   def subscribe[TData](

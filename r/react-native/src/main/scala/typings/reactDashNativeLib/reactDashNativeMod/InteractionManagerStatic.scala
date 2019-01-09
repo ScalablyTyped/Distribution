@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait InteractionManagerStatic extends EventEmitterListener {
-  var Events: reactDashNativeLib.Anon_InteractionStart = js.native
+  var Events: reactDashNativeLib.Anon_InteractionComplete = js.native
   /**
     * Notify manager that an interaction has completed.
     */
@@ -20,10 +20,10 @@ trait InteractionManagerStatic extends EventEmitterListener {
     * Schedule a function to run after all interactions have completed.
     * Returns a cancellable
     */
-  def runAfterInteractions(): reactDashNativeLib.Anon_Then = js.native
-  def runAfterInteractions(task: js.Function0[_]): reactDashNativeLib.Anon_Then = js.native
-  def runAfterInteractions(task: PromiseTask): reactDashNativeLib.Anon_Then = js.native
-  def runAfterInteractions(task: SimpleTask): reactDashNativeLib.Anon_Then = js.native
+  def runAfterInteractions(): reactDashNativeLib.Anon_Args = js.native
+  def runAfterInteractions(task: js.Function0[_]): reactDashNativeLib.Anon_Args = js.native
+  def runAfterInteractions(task: PromiseTask): reactDashNativeLib.Anon_Args = js.native
+  def runAfterInteractions(task: SimpleTask): reactDashNativeLib.Anon_Args = js.native
   /**
     * A positive number will use setTimeout to schedule any tasks after
     * the eventLoopRunningTime hits the deadline value, otherwise all

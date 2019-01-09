@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class SphereBufferGeometry protected () extends BufferGeometry {
   def this(radius: js.UndefOr[scala.Double], widthSegments: js.UndefOr[scala.Double], heightSegments: js.UndefOr[scala.Double], phiStart: js.UndefOr[scala.Double], phiLength: js.UndefOr[scala.Double], thetaStart: js.UndefOr[scala.Double], thetaLength: js.UndefOr[scala.Double]) = this()
-  var parameters: threeLib.Anon_ThetaLength = js.native
+  var parameters: threeLib.Anon_HeightSegments = js.native
 }
 

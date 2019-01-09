@@ -51,15 +51,15 @@ object BindingNs extends js.Object {
   /**
     * Allows you to add bindable properties dynamically.
     **/
-  var dynamicObservableMixin: winjsLib.Anon_NotifyName = js.native
+  var dynamicObservableMixin: winjsLib.Anon_Action = js.native
   /**
     * Provides a standard implementation of the bindable contract, as well as a basic storage mechanism that participates in change notification and an asynchronous notification implementation.
     **/
-  var mixin: winjsLib.Anon_NotifyNameNewValue = js.native
+  var mixin: winjsLib.Anon_ActionAddProperty = js.native
   /**
     * Provides functions that can make an object observable.
     **/
-  var observableMixin: winjsLib.Anon_Notify = js.native
+  var observableMixin: winjsLib.Anon_ActionBind = js.native
   //#endregion Objects
   //#region Functions
   /**

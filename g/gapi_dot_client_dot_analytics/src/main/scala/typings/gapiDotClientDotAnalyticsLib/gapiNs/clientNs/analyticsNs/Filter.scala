@@ -9,7 +9,7 @@ trait Filter extends js.Object {
   /** Account ID to which this filter belongs. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
   /** Details for the filter of the type ADVANCED. */
-  var advancedDetails: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_OutputToField] = js.undefined
+  var advancedDetails: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_CaseSensitive] = js.undefined
   /** Time this filter was created. */
   var created: js.UndefOr[java.lang.String] = js.undefined
   /** Details for the filter of the type EXCLUDE. */
@@ -25,9 +25,9 @@ trait Filter extends js.Object {
   /** Name of this filter. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** Parent link for this filter. Points to the account to which this filter belongs. */
-  var parentLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Type] = js.undefined
+  var parentLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Href] = js.undefined
   /** Details for the filter of the type SEARCH_AND_REPLACE. */
-  var searchAndReplaceDetails: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_FieldIndex] = js.undefined
+  var searchAndReplaceDetails: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_CaseSensitiveField] = js.undefined
   /** Link for this filter. */
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
   /** Type of this filter. Possible values are INCLUDE, EXCLUDE, LOWERCASE, UPPERCASE, SEARCH_AND_REPLACE and ADVANCED. */

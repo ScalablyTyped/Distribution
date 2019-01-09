@@ -30,7 +30,7 @@ trait Config extends js.Object {
     * Primarily used when specifying which interface a client should connect through.
     * see the socket.connect documentation in the node.js api https://nodejs.org/api/net.html#net_socket_connect_options_connectlistener
     */
-  var interfaces: nodeDashIpcLib.Anon_Lookup
+  var interfaces: nodeDashIpcLib.Anon_Family
   /**
     * Default: 5
     * Set the depth for util.inspect during ipc.log

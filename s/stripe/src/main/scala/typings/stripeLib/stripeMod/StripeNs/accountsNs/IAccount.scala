@@ -36,6 +36,6 @@ trait IAccount
     * The state of the account’s information requests, including what
     * information is needed and by when it must be provided.
     */
-  var verification: stripeLib.Anon_Fieldsneeded
+  var verification: stripeLib.Anon_Disabledreason
 }
 

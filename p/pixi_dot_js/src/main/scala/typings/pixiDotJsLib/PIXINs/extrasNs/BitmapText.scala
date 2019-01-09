@@ -12,7 +12,7 @@ class BitmapText protected ()
   def this(text: java.lang.String) = this()
   def this(text: java.lang.String, style: BitmapTextStyle) = this()
   var _anchor: pixiDotJsLib.PIXINs.ObservablePoint = js.native
-  var _font: java.lang.String | pixiDotJsLib.Anon_Size = js.native
+  var _font: java.lang.String | pixiDotJsLib.Anon_Name = js.native
   var _glyphs: js.Array[pixiDotJsLib.PIXINs.Sprite] = js.native
   var _letterSpacing: scala.Double = js.native
   var _maxLineHeight: scala.Double = js.native
@@ -23,7 +23,7 @@ class BitmapText protected ()
   var align: java.lang.String = js.native
   var anchor: pixiDotJsLib.PIXINs.Point | scala.Double = js.native
   var dirty: scala.Boolean = js.native
-  var font: java.lang.String | pixiDotJsLib.Anon_Size = js.native
+  var font: java.lang.String | pixiDotJsLib.Anon_Name = js.native
   var letterSpacing: scala.Double = js.native
   var maxLineHeight: scala.Double = js.native
   var maxWidth: scala.Double = js.native

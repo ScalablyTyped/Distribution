@@ -16,7 +16,7 @@ trait Dimensions extends js.Object {
   @JSName("addEventListener")
   def addEventListener_change(
     `type`: reactDashNativeLib.reactDashNativeLibStrings.change,
-    handler: js.Function1[/* hasWindowScreen */ reactDashNativeLib.Anon_Window, scala.Unit]
+    handler: js.Function1[/* hasWindowScreen */ reactDashNativeLib.Anon_Screen, scala.Unit]
   ): scala.Unit = js.native
   @JSName("get")
   def get_screen(dim: reactDashNativeLib.reactDashNativeLibStrings.screen): ScaledSize = js.native
@@ -45,7 +45,7 @@ trait Dimensions extends js.Object {
   @JSName("removeEventListener")
   def removeEventListener_change(
     `type`: reactDashNativeLib.reactDashNativeLibStrings.change,
-    handler: js.Function1[/* hasWindowScreen */ reactDashNativeLib.Anon_Window, scala.Unit]
+    handler: js.Function1[/* hasWindowScreen */ reactDashNativeLib.Anon_Screen, scala.Unit]
   ): scala.Unit = js.native
   /**
     * This should only be called from native code by sending the didUpdateDimensions event.

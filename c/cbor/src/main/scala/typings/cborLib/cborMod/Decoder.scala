@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Decoder ()
   extends nodeLib.streamMod.Transform {
-  def this(params: cborLib.Anon_Input) = this()
+  def this(params: cborLib.Anon_Encoding) = this()
 }
 

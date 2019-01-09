@@ -12,7 +12,7 @@ class PDFKitReference protected () extends js.Object {
   def this(document: PDFDocument, id: scala.Double, data: js.Object) = this()
   var chunks: js.Array[_] = js.native
   var compress: scala.Boolean = js.native
-  var data: pdfkitLib.Anon_Pattern = js.native
+  var data: pdfkitLib.Anon_Annots = js.native
   var deflate: js.Any = js.native
   var document: PDFDocument = js.native
   var gen: scala.Double = js.native

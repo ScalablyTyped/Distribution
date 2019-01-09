@@ -92,7 +92,7 @@ trait Anon_EntriesFilterFn extends js.Object {
       rsvpLib.rsvpMod.RSVPNs.Arg[T6]
     ],
     filterFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6, scala.Boolean]
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with Anon_Length6] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with Anon_6] = js.native
   def apply[T1, T2, T3, T4, T5, T6](
     entries: js.Tuple6[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 
@@ -104,7 +104,7 @@ trait Anon_EntriesFilterFn extends js.Object {
     ],
     filterFn: js.Function1[/* item */ T1 | T2 | T3 | T4 | T5 | T6, scala.Boolean],
     label: java.lang.String
-  ): rsvpLib.rsvpMod.RSVPNs.Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with Anon_Length6] = js.native
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[(js.Array[T1 | T2 | T3 | T4 | T5 | T6]) with Anon_6] = js.native
   def apply[T1, T2, T3, T4, T5, T6, T7](
     entries: js.Tuple7[
       rsvpLib.rsvpMod.RSVPNs.Arg[T1], 

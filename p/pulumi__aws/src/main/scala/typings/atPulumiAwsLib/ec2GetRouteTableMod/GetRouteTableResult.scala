@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetRouteTableResult extends js.Object {
-  val associations: js.Array[atPulumiAwsLib.Anon_SubnetIdRouteTableAssociationId]
+  val associations: js.Array[atPulumiAwsLib.Anon_Main]
   /**
     * id is the provider-assigned unique ID for this managed resource.
     */
@@ -19,7 +19,7 @@ trait GetRouteTableResult extends js.Object {
     * The Route Table ID.
     */
   val routeTableId: java.lang.String
-  val routes: js.Array[atPulumiAwsLib.Anon_InstanceId]
+  val routes: js.Array[atPulumiAwsLib.Anon_CidrBlockEgressOnlyGatewayIdGatewayId]
   /**
     * The Subnet ID.
     */

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class ToggleButtonViewModel protected ()
   extends cesiumLib.cesiumMod.CesiumNs.ToggleButtonViewModel {
   def this(command: cesiumLib.cesiumMod.CesiumNs.Command) = this()
-  def this(command: cesiumLib.cesiumMod.CesiumNs.Command, options: cesiumLib.Anon_TooltipToggled) = this()
+  def this(command: cesiumLib.cesiumMod.CesiumNs.Command, options: cesiumLib.Anon_Toggled) = this()
   /* CompleteClass */
   override var command: cesiumLib.cesiumMod.CesiumNs.Command = js.native
   /* CompleteClass */

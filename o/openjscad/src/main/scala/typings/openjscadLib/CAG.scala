@@ -37,7 +37,7 @@ class CAG ()
   def rotateExtrude(options: js.Any): CSG = js.native
   def subtract(cag: js.Array[CAG]): CAG = js.native
   def subtract(cag: CAG): CAG = js.native
-  def toCompactBinary(): Anon_VertexData = js.native
+  def toCompactBinary(): Anon_ClassSideVertexIndices = js.native
   def toDxf(): stdLib.Blob = js.native
   def union(cag: js.Array[CAG]): CAG = js.native
   def union(cag: CAG): CAG = js.native

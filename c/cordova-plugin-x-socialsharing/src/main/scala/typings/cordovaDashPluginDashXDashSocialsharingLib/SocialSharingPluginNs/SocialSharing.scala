@@ -287,14 +287,14 @@ trait SocialSharing extends js.Object {
     successCallback: js.Function1[/* succeeded */ scala.Boolean, scala.Unit],
     errorCallback: js.Function1[/* errormsg */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
-  def shareViaSMS(options: cordovaDashPluginDashXDashSocialsharingLib.Anon_Message, phonenumbers: java.lang.String): scala.Unit = js.native
+  def shareViaSMS(options: cordovaDashPluginDashXDashSocialsharingLib.Anon_Image, phonenumbers: java.lang.String): scala.Unit = js.native
   def shareViaSMS(
-    options: cordovaDashPluginDashXDashSocialsharingLib.Anon_Message,
+    options: cordovaDashPluginDashXDashSocialsharingLib.Anon_Image,
     phonenumbers: java.lang.String,
     successCallback: js.Function1[/* succeeded */ scala.Boolean, scala.Unit]
   ): scala.Unit = js.native
   def shareViaSMS(
-    options: cordovaDashPluginDashXDashSocialsharingLib.Anon_Message,
+    options: cordovaDashPluginDashXDashSocialsharingLib.Anon_Image,
     phonenumbers: java.lang.String,
     successCallback: js.Function1[/* succeeded */ scala.Boolean, scala.Unit],
     errorCallback: js.Function1[/* errormsg */ java.lang.String, scala.Unit]

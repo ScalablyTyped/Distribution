@@ -18,7 +18,7 @@ object extensionNsMembers extends js.Object {
     * Set for the lifetime of a callback if an ansychronous extension api has resulted in an error. If no error has
     * occured lastError will be `undefined`.
     */
-  val lastError: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_MessageString] = js.native
+  val lastError: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_Message] = js.native
   /* extension events */
   /**
     * Fired when a request is sent from either an extension process or a content script.
@@ -72,7 +72,7 @@ object extensionNsMembers extends js.Object {
     * @returns Array of global objects
     */
   def getViews(): js.Array[firefoxDashWebextDashBrowserLib.Window] = js.native
-  def getViews(fetchProperties: firefoxDashWebextDashBrowserLib.Anon_WindowIdType): js.Array[firefoxDashWebextDashBrowserLib.Window] = js.native
+  def getViews(fetchProperties: firefoxDashWebextDashBrowserLib.Anon_TabId): js.Array[firefoxDashWebextDashBrowserLib.Window] = js.native
   /**
     * Retrieves the state of the extension's access to the 'file://' scheme (as determined by the user-controlled
     * 'Allow access to File URLs' checkbox.

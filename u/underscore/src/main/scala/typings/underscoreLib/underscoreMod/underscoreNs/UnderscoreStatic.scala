@@ -11,7 +11,7 @@ trait UnderscoreStatic extends js.Object {
     * @see _.map
     **/
   @JSName("collect")
-  var collect_Original: underscoreLib.Anon_List = js.native
+  var collect_Original: underscoreLib.Anon_Context = js.native
   /**
     * By default, Underscore uses ERB-style template delimiters, change the
     * following template settings to use alternative delimiters.

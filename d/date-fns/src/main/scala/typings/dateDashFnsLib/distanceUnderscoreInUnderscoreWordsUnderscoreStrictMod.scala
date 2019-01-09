@@ -15,7 +15,7 @@ object distanceUnderscoreInUnderscoreWordsUnderscoreStrictMod extends js.Object 
   def apply(
     dateToCompare: stdLib.Date | java.lang.String | scala.Double,
     date: stdLib.Date | java.lang.String | scala.Double,
-    options: dateDashFnsLib.Anon_AddSuffix
+    options: dateDashFnsLib.Anon_AddSuffixCeil
   ): java.lang.String = js.native
 }
 

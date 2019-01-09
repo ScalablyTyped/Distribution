@@ -25,7 +25,7 @@ object UserPersistenceNumbers extends js.Object {
   def addNumber(
     key: java.lang.String,
     value: scala.Double,
-    parameters: knuddelsDashUserappsDashApiLib.Anon_TargetUsers
+    parameters: knuddelsDashUserappsDashApiLib.Anon_MaximumValueMinimumValue
   ): scala.Double = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_deleteAll
@@ -55,7 +55,7 @@ object UserPersistenceNumbers extends js.Object {
       /* key */ java.lang.String, 
       scala.Boolean
     ],
-    parameters: knuddelsDashUserappsDashApiLib.Anon_MinimumValue
+    parameters: knuddelsDashUserappsDashApiLib.Anon_AscendingKey
   ): scala.Unit = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getAllKeys
@@ -78,13 +78,13 @@ object UserPersistenceNumbers extends js.Object {
   def getPosition(
     key: java.lang.String,
     user_or_userId: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.User,
-    parameters: knuddelsDashUserappsDashApiLib.Anon_Ascending
+    parameters: knuddelsDashUserappsDashApiLib.Anon_AscendingMinimumValue
   ): scala.Double = js.native
   def getPosition(key: java.lang.String, user_or_userId: scala.Double): scala.Double = js.native
   def getPosition(
     key: java.lang.String,
     user_or_userId: scala.Double,
-    parameters: knuddelsDashUserappsDashApiLib.Anon_Ascending
+    parameters: knuddelsDashUserappsDashApiLib.Anon_AscendingMinimumValue
   ): scala.Double = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getRank
@@ -96,13 +96,13 @@ object UserPersistenceNumbers extends js.Object {
   def getRank(
     key: java.lang.String,
     user_or_userId: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.User,
-    parameters: knuddelsDashUserappsDashApiLib.Anon_Ascending
+    parameters: knuddelsDashUserappsDashApiLib.Anon_AscendingMinimumValue
   ): scala.Double = js.native
   def getRank(key: java.lang.String, user_or_userId: scala.Double): scala.Double = js.native
   def getRank(
     key: java.lang.String,
     user_or_userId: scala.Double,
-    parameters: knuddelsDashUserappsDashApiLib.Anon_Ascending
+    parameters: knuddelsDashUserappsDashApiLib.Anon_AscendingMinimumValue
   ): scala.Double = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getSortedEntries
@@ -110,7 +110,7 @@ object UserPersistenceNumbers extends js.Object {
   def getSortedEntries(key: java.lang.String): js.Array[
     knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.UserPersistenceNumberEntry
   ] = js.native
-  def getSortedEntries(key: java.lang.String, parameters: knuddelsDashUserappsDashApiLib.Anon_Count): js.Array[
+  def getSortedEntries(key: java.lang.String, parameters: knuddelsDashUserappsDashApiLib.Anon_AscendingCount): js.Array[
     knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.UserPersistenceNumberEntry
   ] = js.native
   /**
@@ -125,7 +125,7 @@ object UserPersistenceNumbers extends js.Object {
   def getSortedEntriesAdjacent(
     key: java.lang.String,
     user_or_userId: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.User,
-    parameters: knuddelsDashUserappsDashApiLib.Anon_CountAscending
+    parameters: knuddelsDashUserappsDashApiLib.Anon_AscendingCountBoolean
   ): js.Array[
     knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.UserPersistenceNumberEntry
   ] = js.native
@@ -135,7 +135,7 @@ object UserPersistenceNumbers extends js.Object {
   def getSortedEntriesAdjacent(
     key: java.lang.String,
     user_or_userId: scala.Double,
-    parameters: knuddelsDashUserappsDashApiLib.Anon_CountAscending
+    parameters: knuddelsDashUserappsDashApiLib.Anon_AscendingCountBoolean
   ): js.Array[
     knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.UserPersistenceNumberEntry
   ] = js.native

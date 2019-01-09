@@ -17,7 +17,7 @@ trait LaunchConfigurationState extends js.Object {
   val ebsBlockDevices: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceNameVolumeTypeEncryptedIopsDeleteOnTerminationNoDevice]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameEncryptedIopsNoDeviceSnapshotId]
       ]
     ]
   ] = js.undefined
@@ -34,7 +34,9 @@ trait LaunchConfigurationState extends js.Object {
     * "Instance Store") volumes on the instance. See Block Devices below for details.
     */
   val ephemeralBlockDevices: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceName]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceNameVirtualName]]
+    ]
   ] = js.undefined
   /**
     * The name attribute of the IAM instance profile to associate
@@ -76,7 +78,7 @@ trait LaunchConfigurationState extends js.Object {
     * device of the instance. See Block Devices below for details.
     */
   val rootBlockDevice: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationVolumeTypeIops]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationIopsVolumeSizeVolumeTypeBoolean]
   ] = js.undefined
   /**
     * A list of associated security group IDS.

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Interface[T] extends Type[T] {
   @JSName("meta")
-  var meta_Interface: tcombLib.Anon_Name = js.native
+  var meta_Interface: tcombLib.Anon_IdentityKindNameProps = js.native
   @JSName("update")
   var update_Original: tcombLib.Update[T] = js.native
   def extend[E /* <: T */](mixins: js.Array[tcombLib.StructMixin]): Struct[E] = js.native

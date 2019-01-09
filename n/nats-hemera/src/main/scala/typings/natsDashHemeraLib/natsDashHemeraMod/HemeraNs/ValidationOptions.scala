@@ -47,6 +47,6 @@ trait ValidationOptions extends js.Object {
     *      - arrays - set to true to remove unknown items from arrays.
     *      - objects - set to true to remove unknown keys from objects
     */
-  var stripUnknown: js.UndefOr[scala.Boolean | natsDashHemeraLib.Anon_Objects] = js.undefined
+  var stripUnknown: js.UndefOr[scala.Boolean | natsDashHemeraLib.Anon_Arrays] = js.undefined
 }
 

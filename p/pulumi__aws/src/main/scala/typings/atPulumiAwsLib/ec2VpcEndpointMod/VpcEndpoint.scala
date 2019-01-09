@@ -29,7 +29,7 @@ class VpcEndpoint protected ()
   /**
     * The DNS entries for the VPC Endpoint. Applicable for endpoints of type `Interface`. DNS blocks are documented below.
     */
-  val dnsEntries: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_HostedZoneId]] = js.native
+  val dnsEntries: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DnsName]] = js.native
   /**
     * One or more network interfaces for the VPC Endpoint. Applicable for endpoints of type `Interface`.
     */

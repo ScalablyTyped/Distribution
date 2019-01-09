@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait SubscriptionsResource extends js.Object {
   /** Deletes a subscription. */
-  def delete(request: gapiDotClientDotYoutubeLib.Anon_PrettyPrintQuotaUserKeyUserIpOauthtokenId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+  def delete(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   /** Adds a subscription for the authenticated user's channel. */
-  def insert(request: gapiDotClientDotYoutubeLib.Anon_PrettyPrintQuotaUserKeyUserIpOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
+  def insert(request: gapiDotClientDotYoutubeLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Subscription]
   /** Returns subscription resources that match the API request criteria. */
-  def list(request: gapiDotClientDotYoutubeLib.Anon_Mine): gapiDotClientLib.gapiNs.clientNs.Request[SubscriptionListResponse]
+  def list(request: gapiDotClientDotYoutubeLib.Anon_AltChannelIdFieldsForChannelId): gapiDotClientLib.gapiNs.clientNs.Request[SubscriptionListResponse]
 }
 

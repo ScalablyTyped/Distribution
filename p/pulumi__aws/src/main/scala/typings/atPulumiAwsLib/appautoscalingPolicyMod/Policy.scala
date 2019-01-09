@@ -50,21 +50,15 @@ class Policy protected ()
     * The AWS service namespace of the scalable target. Documentation can be found in the `ServiceNamespace` parameter at: [AWS Application Auto Scaling API Reference](http://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
     */
   val serviceNamespace: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val stepAdjustments: atPulumiPulumiLib.pulumiMod.Output[
-    js.UndefOr[js.Array[atPulumiAwsLib.Anon_ScalingAdjustmentMetricIntervalUpperBound]]
-  ] = js.native
+  val stepAdjustments: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_MetricIntervalLowerBound]]] = js.native
   /**
     * Step scaling policy configuration, requires `policy_type = "StepScaling"` (default). See supported fields below.
     */
-  val stepScalingPolicyConfigurations: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_StepAdjustmentsMinAdjustmentMagnitude]]] = js.native
+  val stepScalingPolicyConfigurations: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AdjustmentType]]] = js.native
   /**
     * A target tracking policy, requires `policy_type = "TargetTrackingScaling"`. See supported fields below.
     */
-  val targetTrackingScalingPolicyConfiguration: atPulumiPulumiLib.pulumiMod.Output[
-    js.UndefOr[
-      atPulumiAwsLib.Anon_DisableScaleInCustomizedMetricSpecificationScaleOutCooldownScaleInCooldown
-    ]
-  ] = js.native
+  val targetTrackingScalingPolicyConfiguration: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CustomizedMetricSpecification]] = js.native
 }
 
 @JSImport("@pulumi/aws/appautoscaling/policy", "Policy")

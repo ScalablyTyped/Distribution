@@ -48,12 +48,12 @@ trait OverlayScrollbars extends js.Object {
   def scroll(
     coordinates: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Coordinates,
     duration: scala.Double,
-    easing: overlayscrollbarsLib.Anon_YXEasing
+    easing: overlayscrollbarsLib.Anon_XYEasing
   ): scala.Unit = js.native
   def scroll(
     coordinates: overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs.Coordinates,
     duration: scala.Double,
-    easing: overlayscrollbarsLib.Anon_YXEasing,
+    easing: overlayscrollbarsLib.Anon_XYEasing,
     complete: js.Function1[/* repeated */ js.Any, _]
   ): scala.Unit = js.native
   def scroll(

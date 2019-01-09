@@ -23,7 +23,7 @@ object restifyDashPluginsModMembers extends js.Object {
   def gzipResponse(): restifyLib.restifyMod.RequestHandler = js.native
   def gzipResponse(options: js.Any): restifyLib.restifyMod.RequestHandler = js.native
   def jsonBodyParser(): js.Array[restifyLib.restifyMod.RequestHandler] = js.native
-  def jsonBodyParser(options: restifyDashPluginsLib.Anon_Reviver): js.Array[restifyLib.restifyMod.RequestHandler] = js.native
+  def jsonBodyParser(options: restifyDashPluginsLib.Anon_MapParams): js.Array[restifyLib.restifyMod.RequestHandler] = js.native
   def jsonp(): restifyLib.restifyMod.RequestHandler = js.native
   def metrics(opts: restifyDashPluginsLib.Anon_Server, callback: js.Function1[/* options */ MetricsCallback, _]): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
   def multipartBodyParser(): restifyLib.restifyMod.RequestHandler = js.native

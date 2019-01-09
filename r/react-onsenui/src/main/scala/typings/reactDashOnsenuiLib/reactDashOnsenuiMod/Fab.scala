@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Fab")
 @js.native
 class Fab ()
-  extends Component[reactDashOnsenuiLib.Anon_Name, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_DisabledE, js.Any]
 

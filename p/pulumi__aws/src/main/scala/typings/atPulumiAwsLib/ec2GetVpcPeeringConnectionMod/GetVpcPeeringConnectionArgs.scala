@@ -13,7 +13,7 @@ trait GetVpcPeeringConnectionArgs extends js.Object {
   /**
     * Custom filter block as described below.
     */
-  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_Values]] = js.undefined
+  val filters: js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]] = js.undefined
   /**
     * The ID of the specific VPC Peering Connection to retrieve.
     */

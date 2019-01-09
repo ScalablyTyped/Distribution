@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("hexo-util", JSImport.Namespace)
 @js.native
 object hexoDashUtilModMembers extends js.Object {
-  val Pattern: hexoDashUtilLib.Anon_Rule = js.native
+  val Pattern: hexoDashUtilLib.Anon_Name = js.native
   def camelCaseKeys(obj: org.scalablytyped.runtime.StringDictionary[js.Any]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def escapeDiacritic(str: java.lang.String): java.lang.String = js.native
   def escapeHTML(str: java.lang.String): java.lang.String = js.native
@@ -16,7 +16,7 @@ object hexoDashUtilModMembers extends js.Object {
   def hash(str: java.lang.String): nodeLib.Buffer = js.native
   def hash(str: stdLib.ArrayBufferView): nodeLib.Buffer = js.native
   def highlight(str: java.lang.String): java.lang.String = js.native
-  def highlight(str: java.lang.String, options: hexoDashUtilLib.Anon_Hljs): java.lang.String = js.native
+  def highlight(str: java.lang.String, options: hexoDashUtilLib.Anon_AutoDetect): java.lang.String = js.native
   def htmlTag(tag: java.lang.String): java.lang.String = js.native
   def htmlTag(tag: java.lang.String, attrs: js.Array[java.lang.String]): java.lang.String = js.native
   def htmlTag(tag: java.lang.String, attrs: js.Array[java.lang.String], text: java.lang.String): java.lang.String = js.native
@@ -29,7 +29,7 @@ object hexoDashUtilModMembers extends js.Object {
   def htmlTag(tag: java.lang.String, attrs: stdLib.ArrayLike[java.lang.String]): java.lang.String = js.native
   def htmlTag(tag: java.lang.String, attrs: stdLib.ArrayLike[java.lang.String], text: java.lang.String): java.lang.String = js.native
   def slugize(str: java.lang.String): java.lang.String = js.native
-  def slugize(str: java.lang.String, options: hexoDashUtilLib.Anon_Transform): java.lang.String = js.native
+  def slugize(str: java.lang.String, options: hexoDashUtilLib.Anon_1): java.lang.String = js.native
   def spawn(command: java.lang.String): js.Promise[java.lang.String] = js.native
   def spawn(command: java.lang.String, args: js.Array[java.lang.String]): js.Promise[java.lang.String] = js.native
   def spawn(

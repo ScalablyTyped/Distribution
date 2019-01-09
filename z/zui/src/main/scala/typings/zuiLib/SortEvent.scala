@@ -13,6 +13,6 @@ trait SortEvent
   extends stdLib.Event {
   var element: JQuery | js.Object = js.native
   var list: js.Array[JQuery | js.Object] = js.native
-  var sorter: Anon_SortUp = js.native
+  var sorter: Anon_Index = js.native
 }
 

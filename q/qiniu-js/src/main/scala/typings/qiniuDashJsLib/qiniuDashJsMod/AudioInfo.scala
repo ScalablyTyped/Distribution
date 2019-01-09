@@ -17,6 +17,6 @@ trait AudioInfo extends js.Object {
   var sample_fmt: java.lang.String
   var sample_rate: java.lang.String
   var start_time: java.lang.String
-  var tags: qiniuDashJsLib.Anon_Key
+  var tags: qiniuDashJsLib.Anon_Creationtime
 }
 

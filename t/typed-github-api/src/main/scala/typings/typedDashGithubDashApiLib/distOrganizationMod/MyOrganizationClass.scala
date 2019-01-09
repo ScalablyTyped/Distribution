@@ -22,7 +22,7 @@ class MyOrganizationClass protected ()
   /* CompleteClass */
   override var membersCanCreateRepositories: scala.Boolean = js.native
   /* CompleteClass */
-  override var plan: typedDashGithubDashApiLib.Anon_PrivateRepos = js.native
+  override var plan: typedDashGithubDashApiLib.Anon_CollaboratorsName = js.native
   /* CompleteClass */
   override var privateGists: scala.Double = js.native
   /* CompleteClass */

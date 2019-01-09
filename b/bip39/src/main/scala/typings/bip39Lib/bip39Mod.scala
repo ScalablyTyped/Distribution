@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("bip39", JSImport.Namespace)
 @js.native
 object bip39Mod extends js.Object {
-  val wordlists: bip39Lib.Anon_French = js.native
+  val wordlists: bip39Lib.Anon_Chinesesimplified = js.native
   def entropyToMnemonic(entropyHex: java.lang.String): java.lang.String = js.native
   def entropyToMnemonic(entropyHex: java.lang.String, wordlist: js.Array[java.lang.String]): java.lang.String = js.native
   def entropyToMnemonic(entropyHex: nodeLib.Buffer): java.lang.String = js.native

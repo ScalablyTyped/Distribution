@@ -11,5 +11,5 @@ package object fsMod {
     * Valid types for path values in "fs".
     */
   type PathLike = java.lang.String | nodeLib.Buffer | nodeLib.urlMod.URL
-  type WriteFileOptions = nodeLib.Anon_EncodingMode | java.lang.String | scala.Null
+  type WriteFileOptions = nodeLib.Anon_EncodingFlagMode | java.lang.String | scala.Null
 }

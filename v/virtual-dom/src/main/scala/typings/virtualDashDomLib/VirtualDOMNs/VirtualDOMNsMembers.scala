@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object VirtualDOMNsMembers extends js.Object {
   def create(vnode: Thunk): stdLib.Element = js.native
-  def create(vnode: Thunk, opts: virtualDashDomLib.Anon_Warn): stdLib.Element = js.native
+  def create(vnode: Thunk, opts: virtualDashDomLib.Anon_Document): stdLib.Element = js.native
   def create(vnode: VNode): stdLib.Element = js.native
-  def create(vnode: VNode, opts: virtualDashDomLib.Anon_Warn): stdLib.Element = js.native
+  def create(vnode: VNode, opts: virtualDashDomLib.Anon_Document): stdLib.Element = js.native
   /**
     create() calls either document.createElement() or document.createElementNS(),
     for which the common denominator is Element (not HTMLElement).
     */
   def create(vnode: VText): stdLib.Text = js.native
-  def create(vnode: VText, opts: virtualDashDomLib.Anon_Warn): stdLib.Text = js.native
+  def create(vnode: VText, opts: virtualDashDomLib.Anon_Document): stdLib.Text = js.native
   def create(vnode: Widget): stdLib.Element = js.native
-  def create(vnode: Widget, opts: virtualDashDomLib.Anon_Warn): stdLib.Element = js.native
+  def create(vnode: Widget, opts: virtualDashDomLib.Anon_Document): stdLib.Element = js.native
   def diff(left: VTree, right: VTree): js.Array[VPatch] = js.native
   def h(tagName: java.lang.String, children: java.lang.String): VNode = js.native
   def h(tagName: java.lang.String, children: js.Array[VChild]): VNode = js.native

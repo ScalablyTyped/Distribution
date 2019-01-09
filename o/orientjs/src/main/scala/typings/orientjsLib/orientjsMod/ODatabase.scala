@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ODatabase ()
   extends orientjsLib.orientjsMod.orientjsNs.ODatabase {
-  def this(config: orientjsLib.Anon_Name) = this()
+  def this(config: orientjsLib.Anon_Host) = this()
 }
 

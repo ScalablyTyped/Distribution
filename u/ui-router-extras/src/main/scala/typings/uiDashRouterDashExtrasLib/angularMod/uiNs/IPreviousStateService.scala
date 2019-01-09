@@ -31,7 +31,7 @@ trait IPreviousStateService extends js.Object {
   def go(memoName: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
   def go(
     memoName: java.lang.String,
-    options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IStateOptions */ js.Any
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IStateOptions */ js.Any
   ): angularLib.angularMod.angularNs.IPromise[_] = js.native
   /**
     * Memorize a state

@@ -26,8 +26,12 @@ trait DomainState extends js.Object {
   /**
     * Cluster configuration of the domain, see below.
     */
-  val clusterConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ZoneAwarenessEnabled]] = js.undefined
-  val cognitoOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RoleArnUserPoolId]] = js.undefined
+  val clusterConfig: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DedicatedMasterCountDedicatedMasterEnabled]
+  ] = js.undefined
+  val cognitoOptions: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EnabledIdentityPoolIdRoleArn]
+  ] = js.undefined
   /**
     * Unique identifier for the domain.
     */
@@ -39,7 +43,7 @@ trait DomainState extends js.Object {
   /**
     * EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
     */
-  val ebsOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EbsEnabled]] = js.undefined
+  val ebsOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EbsEnabledIops]] = js.undefined
   /**
     * The version of Elasticsearch to deploy. Defaults to `1.5`
     */
@@ -47,7 +51,7 @@ trait DomainState extends js.Object {
   /**
     * Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
     */
-  val encryptAtRest: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KmsKeyId]] = js.undefined
+  val encryptAtRest: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EnabledKmsKeyIdBoolean]] = js.undefined
   /**
     * Domain-specific endpoint used to submit index, search, and data upload requests.
     */
@@ -63,18 +67,22 @@ trait DomainState extends js.Object {
     */
   val logPublishingOptions: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CloudwatchLogGroupArn]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CloudwatchLogGroupArnEnabled]
+      ]
     ]
   ] = js.undefined
   /**
     * Node-to-node encryption options. See below.
     */
-  val nodeToNodeEncryption: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Enabled]] = js.undefined
+  val nodeToNodeEncryption: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_1219541886]
+  ] = js.undefined
   /**
     * Snapshot related options, see below.
     */
   val snapshotOptions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AutomatedSnapshotStartHour]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AutomatedSnapshotStartHourInput]
   ] = js.undefined
   /**
     * A mapping of tags to assign to the resource
@@ -85,6 +93,8 @@ trait DomainState extends js.Object {
   /**
     * VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
     */
-  val vpcOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AvailabilityZones]] = js.undefined
+  val vpcOptions: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AvailabilityZonesSecurityGroupIds]
+  ] = js.undefined
 }
 

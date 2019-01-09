@@ -50,7 +50,7 @@ class ChartGridlines ()
   def load(): ChartGridlines = js.native
   def load(option: java.lang.String): ChartGridlines = js.native
   def load(option: js.Array[java.lang.String]): ChartGridlines = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): ChartGridlines = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): ChartGridlines = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ChartGridlinesLoadOptions): ChartGridlines = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartGridlines): scala.Unit = js.native

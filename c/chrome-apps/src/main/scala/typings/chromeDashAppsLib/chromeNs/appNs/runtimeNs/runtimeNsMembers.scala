@@ -11,9 +11,9 @@ object runtimeNsMembers extends js.Object {
   /** @enum */
   val ActionType: chromeDashAppsLib.Anon_NEWNOTE = js.native
   /** @enum */
-  val LaunchSource: chromeDashAppsLib.Anon_NEWTABPAGE = js.native
+  val LaunchSource: chromeDashAppsLib.Anon_ABOUTPAGE = js.native
   /** @enum */
-  val PlayStoreStatus: chromeDashAppsLib.Anon_UNKNOWN = js.native
+  val PlayStoreStatus: chromeDashAppsLib.Anon_AVAILABLE = js.native
   /**
     * Fired when an embedding app requests to embed this app.
     * @since Chrome 43.

@@ -18,7 +18,7 @@ class VarDictionary () extends js.Object {
 @JSImport("kdbxweb", "VarDictionary")
 @js.native
 object VarDictionary extends js.Object {
-  var ValueType: kdbxwebLib.Anon_Int32 = js.native
+  var ValueType: kdbxwebLib.Anon_Bool = js.native
   def read(stm: kdbxwebLib.kdbxwebMod.BinaryStream): kdbxwebLib.kdbxwebMod.VarDictionary = js.native
 }
 

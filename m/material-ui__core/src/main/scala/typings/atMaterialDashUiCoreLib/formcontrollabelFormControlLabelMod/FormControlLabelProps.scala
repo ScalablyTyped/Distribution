@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<react.react.LabelHTMLAttributes<react.HTMLLabelElement>, std.Exclude<keyof react.react.LabelHTMLAttributes<react.HTMLLabelElement>, 'classes' | 'onChange'>>, @material-ui/core.@material-ui/core.StandardProps<react.react.LabelHTMLAttributes<react.HTMLLabelElement>, @material-ui/core.@material-ui/core/FormControlLabel/FormControlLabel.FormControlLabelClassKey, 'onChange'>) */ trait FormControlLabelProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.LabelHTMLAttributes<react.HTMLLabelElement>, 'classes' | 'onChange'> ]: react.react.LabelHTMLAttributes<react.HTMLLabelElement>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.LabelHTMLAttributes<react.HTMLLabelElement>, @material-ui/core.@material-ui/core/FormControlLabel/FormControlLabel.FormControlLabelClassKey, 'onChange'>) */ trait FormControlLabelProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[FormControlLabelClassKey] {
   var checked: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

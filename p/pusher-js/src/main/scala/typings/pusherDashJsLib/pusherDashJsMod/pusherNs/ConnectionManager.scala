@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 trait ConnectionManager extends EventsDispatcher {
   var connection: js.Any = js.native
    // TODO: Type this
-  var connectionCallbacks: pusherDashJsLib.Anon_Closed = js.native
+  var connectionCallbacks: pusherDashJsLib.Anon_Activity = js.native
    // TODO: Type this
   var encrypted: scala.Boolean = js.native
   var errorCallbacks: pusherDashJsLib.Anon_Backoff = js.native
-  var handshakeCallbacks: pusherDashJsLib.Anon_Refused = js.native
+  var handshakeCallbacks: pusherDashJsLib.Anon_BackoffConnected = js.native
   var key: java.lang.String = js.native
   var options: js.Any = js.native
   var socket_id: java.lang.String = js.native

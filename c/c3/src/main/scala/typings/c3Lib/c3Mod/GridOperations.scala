@@ -24,6 +24,6 @@ trait GridOperations extends js.Object {
     * have specified class will be removed. If args is not given, all of x/y grid lines will be removed.
     */
   def remove(): scala.Unit = js.native
-  def remove(args: c3Lib.Anon_ValueClass): scala.Unit = js.native
+  def remove(args: c3Lib.Anon_ClassValue): scala.Unit = js.native
 }
 

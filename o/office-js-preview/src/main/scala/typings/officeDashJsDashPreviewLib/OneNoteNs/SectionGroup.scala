@@ -114,7 +114,7 @@ class SectionGroup ()
   def load(): SectionGroup = js.native
   def load(option: java.lang.String): SectionGroup = js.native
   def load(option: js.Array[java.lang.String]): SectionGroup = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): SectionGroup = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): SectionGroup = js.native
   def load(option: officeDashJsDashPreviewLib.OneNoteNs.InterfacesNs.SectionGroupLoadOptions): SectionGroup = js.native
   def toJSON(): officeDashJsDashPreviewLib.OneNoteNs.InterfacesNs.SectionGroupData = js.native
   /**

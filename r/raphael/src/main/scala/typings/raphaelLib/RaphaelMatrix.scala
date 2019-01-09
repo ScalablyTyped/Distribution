@@ -22,7 +22,7 @@ trait RaphaelMatrix extends js.Object {
   def scale(x: scala.Double, y: scala.Double): scala.Unit = js.native
   def scale(x: scala.Double, y: scala.Double, cx: scala.Double): scala.Unit = js.native
   def scale(x: scala.Double, y: scala.Double, cx: scala.Double, cy: scala.Double): scala.Unit = js.native
-  def split(): Anon_Dy = js.native
+  def split(): Anon_Dx = js.native
   def toTransformString(): java.lang.String = js.native
   def translate(x: scala.Double, y: scala.Double): scala.Unit = js.native
   def x(x: scala.Double, y: scala.Double): scala.Double = js.native

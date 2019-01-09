@@ -47,7 +47,9 @@ trait ServiceState extends js.Object {
     */
   val loadBalancers: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ContainerPortElbName]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ContainerNameContainerPortElbName]
+      ]
     ]
   ] = js.undefined
   /**
@@ -57,13 +59,15 @@ trait ServiceState extends js.Object {
   /**
     * The network configuration for the service. This parameter is required for task definitions that use the `awsvpc` network mode to receive their own Elastic Network Interface, and it is not supported for other network modes.
     */
-  val networkConfiguration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Subnets]] = js.undefined
+  val networkConfiguration: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AssignPublicIpSecurityGroups]
+  ] = js.undefined
   /**
     * Service level strategy rules that are taken into consideration during task placement. List from top to bottom in order of precedence. The maximum number of `ordered_placement_strategy` blocks is `5`. Defined below.
     */
   val orderedPlacementStrategies: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypeFieldInput]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldTypeInput]]
     ]
   ] = js.undefined
   /**
@@ -71,14 +75,16 @@ trait ServiceState extends js.Object {
     * `placement_constraints` is `10`. Defined below.
     */
   val placementConstraints: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Expression]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ExpressionType]]
+    ]
   ] = js.undefined
   /**
     * **Deprecated**, use `ordered_placement_strategy` instead.
     */
   val placementStrategies: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypeFieldInput]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldTypeInput]]
     ]
   ] = js.undefined
   /**
@@ -97,7 +103,7 @@ trait ServiceState extends js.Object {
     * The service discovery registries for the service. The maximum number of `service_registries` blocks is `1`.
     */
   val serviceRegistries: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ContainerPortContainerNamePort]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ContainerNameContainerPortPort]
   ] = js.undefined
   /**
     * Key-value mapping of resource tags

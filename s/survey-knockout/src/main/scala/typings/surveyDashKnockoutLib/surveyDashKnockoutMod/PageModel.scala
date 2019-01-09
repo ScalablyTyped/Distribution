@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(surveyDashKnockoutLib.surveyDashKnockoutMod.IPage because Would inherit conflicting mutable fields List(isPage, isReadOnly, isVisible, name, parent))*/
-@JSImport("survey-knockout", "PageModel")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- surveyDashKnockoutLib.surveyDashKnockoutMod.IPage because var conflicts: isPage, isReadOnly, isVisible, name, parent. Inlined  */ @JSImport("survey-knockout", "PageModel")
 @js.native
 class PageModel () extends PanelModelBase {
   def this(name: java.lang.String) = this()

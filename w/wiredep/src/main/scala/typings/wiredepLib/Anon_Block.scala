@@ -7,11 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Block extends js.Object {
   /**
-    * @example:
-    *  /(([ \t]*)<!--\s*bower:*(\S*)\s*-->)(\n|\r|.)*?(<!--\s*endbower\s*-->)/gi
+    *  match the beginning-to-end of a bower block in this type of file
     */
   var block: stdLib.RegExp
-  var detect: Anon_JsCss
-  var replace: Anon_Js
+  var detect: Anon_TypeOfBowerFile
+  var replace: Anon_AnotherTypeOfBowerFile
 }
 

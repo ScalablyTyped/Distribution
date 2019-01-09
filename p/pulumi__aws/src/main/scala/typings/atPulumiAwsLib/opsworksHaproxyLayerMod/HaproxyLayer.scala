@@ -54,7 +54,7 @@ class HaproxyLayer protected ()
   /**
     * `ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
     */
-  val ebsVolumes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_SizeNumberOfDisks]]] = js.native
+  val ebsVolumes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_IopsMountPoint]]] = js.native
   /**
     * Name of an Elastic Load Balancer to attach to this layer
     */

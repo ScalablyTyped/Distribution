@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TSCommon extends js.Object {
-  var ModuleKind: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof typescript.typescript.ModuleKind */ js.Any = js.native
+  var ModuleKind: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ts.ModuleKind */ js.Any = js.native
   var ScriptSnapshot: tsDashNodeLib.Anon_FromString = js.native
-  var ScriptTarget: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof typescript.typescript.ScriptTarget */ js.Any = js.native
+  var ScriptTarget: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ts.ScriptTarget */ js.Any = js.native
   @JSName("createLanguageService")
-  var createLanguageService_Original: tsDashNodeLib.Anon_Host = js.native
+  var createLanguageService_Original: tsDashNodeLib.Anon_DocumentRegistry = js.native
   @JSName("displayPartsToString")
   var displayPartsToString_Original: tsDashNodeLib.Anon_DisplayParts = js.native
   @JSName("findConfigFile")
-  var findConfigFile_Original: tsDashNodeLib.Anon_SearchPath = js.native
+  var findConfigFile_Original: tsDashNodeLib.Anon_ConfigName = js.native
   @JSName("flattenDiagnosticMessageText")
   var flattenDiagnosticMessageText_Original: tsDashNodeLib.Anon_MessageText = js.native
   @JSName("formatDiagnosticsWithColorAndContext")
@@ -33,9 +33,9 @@ trait TSCommon extends js.Object {
   @JSName("getDefaultLibFilePath")
   var getDefaultLibFilePath_Original: js.Function1[/* options */ typescriptLib.typescriptMod.tsNs.CompilerOptions, java.lang.String] = js.native
   @JSName("getPreEmitDiagnostics")
-  var getPreEmitDiagnostics_Original: tsDashNodeLib.Anon_Program = js.native
+  var getPreEmitDiagnostics_Original: tsDashNodeLib.Anon_CancellationToken = js.native
   @JSName("parseJsonConfigFileContent")
-  var parseJsonConfigFileContent_Original: tsDashNodeLib.Anon_Json = js.native
+  var parseJsonConfigFileContent_Original: tsDashNodeLib.Anon_BasePath = js.native
   @JSName("readConfigFile")
   var readConfigFile_Original: js.Function2[
     /* fileName */ java.lang.String, 

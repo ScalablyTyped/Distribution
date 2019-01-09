@@ -17,12 +17,12 @@ trait TreeProps extends js.Object {
   var nodeTemplate: js.UndefOr[js.Function1[/* node */ js.Any, reactLib.reactMod.Global.JSXNs.Element]] = js.undefined
   var onCollapse: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_NodeOriginalEvent, scala.Unit]] = js.undefined
   var onContextMenu: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_NodeOriginalEvent, scala.Unit]] = js.undefined
-  var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEvent, scala.Unit]] = js.undefined
-  var onDragDrop: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEvent, scala.Unit]] = js.undefined
+  var onContextMenuSelectionChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
+  var onDragDrop: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
   var onExpand: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_NodeOriginalEvent, scala.Unit]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_NodeOriginalEvent, scala.Unit]] = js.undefined
-  var onSelectionChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEvent, scala.Unit]] = js.undefined
-  var onToggle: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEvent, scala.Unit]] = js.undefined
+  var onSelectionChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
+  var onToggle: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
   var onUnselect: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_NodeOriginalEvent, scala.Unit]] = js.undefined
   var propagateSelectionDown: js.UndefOr[scala.Boolean] = js.undefined
   var propagateSelectionUp: js.UndefOr[scala.Boolean] = js.undefined

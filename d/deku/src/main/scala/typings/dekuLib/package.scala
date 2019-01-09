@@ -14,8 +14,8 @@ package object dekuLib {
   /**
     * Thunk object passed to `element`
     */
-  type Thunk = (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Component */ js.Any) | (js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Model */ /* model */ js.Any, 
+  type Thunk = (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Component */ js.Any) | (js.Function1[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Model */ /* model */ js.Any, 
     dekuLib.dekuMod.dekuNs.VirtualElement
   ])
 }

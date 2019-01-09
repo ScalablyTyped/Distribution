@@ -11,9 +11,9 @@ class DataStore[TSerialized] protected () extends js.Object {
   def this(initialCache: apolloDashCacheLib.apolloDashCacheMod.ApolloCache[TSerialized]) = this()
   var cache: js.Any = js.native
   def getCache(): apolloDashCacheLib.apolloDashCacheMod.ApolloCache[TSerialized] = js.native
-  def markMutationComplete(hasMutationIdOptimisticResponse: apolloDashClientLib.Anon_OptimisticResponse): scala.Unit = js.native
-  def markMutationInit(mutation: apolloDashClientLib.Anon_Document): scala.Unit = js.native
-  def markMutationResult(mutation: apolloDashClientLib.Anon_DocumentResult): scala.Unit = js.native
+  def markMutationComplete(hasMutationIdOptimisticResponse: apolloDashClientLib.Anon_MutationId): scala.Unit = js.native
+  def markMutationInit(mutation: apolloDashClientLib.Anon_DocumentMutationId): scala.Unit = js.native
+  def markMutationResult(mutation: apolloDashClientLib.Anon_DocumentMutationIdMutationResult): scala.Unit = js.native
   def markQueryResult(
     result: graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault],
     document: graphqlLib.languageAstMod.DocumentNode,

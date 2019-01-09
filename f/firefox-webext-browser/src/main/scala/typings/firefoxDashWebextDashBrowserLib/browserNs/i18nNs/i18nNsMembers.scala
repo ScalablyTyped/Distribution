@@ -12,7 +12,7 @@ object i18nNsMembers extends js.Object {
     * Detects the language of the provided text using CLD.
     * @param text User input string to be translated.
     */
-  def detectLanguage(text: java.lang.String): js.Promise[firefoxDashWebextDashBrowserLib.Anon_Languages] = js.native
+  def detectLanguage(text: java.lang.String): js.Promise[firefoxDashWebextDashBrowserLib.Anon_IsReliable] = js.native
   /* i18n functions */
   /**
     * Gets the accept-languages of the browser. This is different from the locale used by the browser; to get the

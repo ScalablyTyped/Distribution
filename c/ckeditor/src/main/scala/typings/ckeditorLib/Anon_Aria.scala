@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Aria extends js.Object {
-  var aria: java.lang.String
-  var display: java.lang.String
+  var aria: js.Array[java.lang.String]
+  var display: js.Array[java.lang.String]
 }
 

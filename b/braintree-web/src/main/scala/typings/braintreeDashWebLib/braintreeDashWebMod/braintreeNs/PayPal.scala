@@ -32,7 +32,7 @@ trait PayPal extends js.Object {
     * });
     * @returns {void}
     */
-  def create(options: braintreeDashWebLib.Anon_Client_64751587, callback: callback): scala.Unit = js.native
+  def create(options: braintreeDashWebLib.Anon_Client, callback: callback): scala.Unit = js.native
   /**
     * Cleanly tear down anything set up by {@link module:braintree-web/paypal.create|create}.
     * @public
@@ -136,6 +136,6 @@ trait PayPal extends js.Object {
     * });
     * @returns {PayPal~tokenizeReturn} A handle to close the PayPal checkout frame.
     */
-  def tokenize(options: braintreeDashWebLib.Anon_DisplayName, callback: callback): PayPalTokenizeReturn = js.native
+  def tokenize(options: braintreeDashWebLib.Anon_Amount, callback: callback): PayPalTokenizeReturn = js.native
 }
 

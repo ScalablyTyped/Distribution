@@ -11,7 +11,7 @@ trait Emitter
   def on(
     event: EndHookEvent | StartHookEvent,
     listener: js.Function1[
-      (/* event */ adoneLib.Anon_Hook) | (/* event */ adoneLib.Anon_HookBlock), 
+      (/* event */ adoneLib.Anon_BlockHook) | (/* event */ adoneLib.Anon_BlockHookMeta), 
       scala.Unit
     ]
   ): this.type = js.native

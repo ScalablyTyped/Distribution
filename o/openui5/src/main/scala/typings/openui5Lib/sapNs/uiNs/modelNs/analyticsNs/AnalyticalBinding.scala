@@ -20,7 +20,7 @@ class AnalyticalBinding ()
     */
   def filter(aFilter: js.Array[openui5Lib.sapNs.uiNs.modelNs.Filter]): AnalyticalBinding = js.native
   def filter(aFilter: openui5Lib.sapNs.uiNs.modelNs.Filter): AnalyticalBinding = js.native
-  def filter(aFilter: openui5Lib.sapNs.uiNs.modelNs.Filter, sFilterType: openui5Lib.Anon_Control): AnalyticalBinding = js.native
+  def filter(aFilter: openui5Lib.sapNs.uiNs.modelNs.Filter, sFilterType: openui5Lib.Anon_Application): AnalyticalBinding = js.native
   /**
     * Gets the analytical information for a column with a given name.
     * @param sColumnName the column name.

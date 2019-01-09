@@ -11,7 +11,6 @@ class RouteEditor ()
   extends yandexDashMapsLib.ymapsNs.IBehavior {
   /* CompleteClass */
   override var events: yandexDashMapsLib.ymapsNs.IEventManager = js.native
-  var options: yandexDashMapsLib.ymapsNs.IOptionManager = js.native
   def getRoute(): yandexDashMapsLib.ymapsNs.routerNs.Route = js.native
   def getState(): java.lang.String = js.native
   def setParent(parent: yandexDashMapsLib.ymapsNs.IControlParent): this.type = js.native

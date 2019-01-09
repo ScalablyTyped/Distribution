@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object koaDashRequestidMod extends js.Object {
   def apply(): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
-  def apply(options: koaDashRequestidLib.Anon_Header): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
+  def apply(options: koaDashRequestidLib.Anon_Expose): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
 }
 

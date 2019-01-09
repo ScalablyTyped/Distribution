@@ -15,6 +15,6 @@ class List protected ()
 @JSImport("office-ui-fabric-react/lib/List", "List")
 @js.native
 object List extends js.Object {
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_StartIndex = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_ContainsFocus = js.native
 }
 

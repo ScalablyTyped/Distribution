@@ -32,7 +32,7 @@ trait CopyOptions extends js.Object {
     js.Function3[
       /* readStream */ nodeLib.NodeJSNs.ReadableStream, 
       /* writeStream */ nodeLib.NodeJSNs.WritableStream, 
-      /* file */ adoneLib.Anon_NameStats, 
+      /* file */ adoneLib.Anon_AtimeMode, 
       scala.Unit
     ]
   ] = js.undefined

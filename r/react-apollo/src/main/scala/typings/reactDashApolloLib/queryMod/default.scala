@@ -15,6 +15,6 @@ class default[TData, TVariables] protected () extends Query[TData, TVariables] {
 @js.native
 object default extends js.Object {
   var contextTypes: reactDashApolloLib.Anon_ClientOperationsRenderPromises = js.native
-  var propTypes: reactDashApolloLib.Anon_ChildrenArgs = js.native
+  var propTypes: reactDashApolloLib.Anon_ArgsChildren = js.native
 }
 

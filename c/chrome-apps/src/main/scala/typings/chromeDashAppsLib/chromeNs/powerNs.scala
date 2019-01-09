@@ -23,7 +23,7 @@ object powerNs extends js.Object {
     * @property SYSTEM - Prevent the system from sleeping in response to user inactivity.
     * @property DISPLAY - Prevent the display from being turned off or dimmed or the system from sleeping in response to user inactivity.
     */
-  val Level: chromeDashAppsLib.Anon_SYSTEM = js.native
+  val Level: chromeDashAppsLib.Anon_DISPLAY = js.native
   /** Releases a request previously made via requestKeepAwake(). */
   def releaseKeepAwake(): scala.Unit = js.native
   /**
@@ -34,11 +34,11 @@ object powerNs extends js.Object {
     */
   def requestKeepAwake(
     level: chromeDashAppsLib.chromeNs.ToStringLiteral[
-      chromeDashAppsLib.Anon_SYSTEM, 
+      chromeDashAppsLib.Anon_DISPLAY, 
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_SYSTEM[keyof chrome-apps.Anon_SYSTEM] */ js.Any
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_DISPLAY[keyof chrome-apps.Anon_DISPLAY] */ js.Any
       ]
     ]
   ): scala.Unit = js.native

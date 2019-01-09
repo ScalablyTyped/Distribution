@@ -13,6 +13,6 @@ trait DataTypeDouble extends DataTypeAbstractNumber[DataTypeDouble] {
   def apply(): DataTypeDouble = js.native
   def apply(length: scala.Double): DataTypeDouble = js.native
   def apply(length: scala.Double, decimals: scala.Double): DataTypeDouble = js.native
-  def apply(options: sequelizeLib.Anon_LengthDecimals): DataTypeDouble = js.native
+  def apply(options: sequelizeLib.Anon_Decimals): DataTypeDouble = js.native
 }
 

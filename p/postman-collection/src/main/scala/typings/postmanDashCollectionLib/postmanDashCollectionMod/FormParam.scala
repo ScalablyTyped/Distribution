@@ -5,12 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(postmanDashCollectionLib.postmanDashCollectionMod.FormParamDefinition because Would inherit conflicting mutable fields List(description, disabled, id, name))*/
-@JSImport("postman-collection", "FormParam")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- postmanDashCollectionLib.postmanDashCollectionMod.FormParamDefinition because var conflicts: description, disabled, id, name. Inlined key, value */ @JSImport("postman-collection", "FormParam")
 @js.native
 class FormParam protected () extends Property[FormParamDefinition] {
   def this(options: FormParamDefinition) = this()
-  var key: java.lang.String = js.native
-  var value: js.Any = js.native
+  var key: java.lang.String | js.UndefOr[java.lang.String] = js.native
+  var value: js.Any | js.UndefOr[js.Any] = js.native
 }
 

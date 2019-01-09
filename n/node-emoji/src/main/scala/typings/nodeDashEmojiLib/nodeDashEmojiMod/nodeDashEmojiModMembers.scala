@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("node-emoji", JSImport.Namespace)
 @js.native
 object nodeDashEmojiModMembers extends js.Object {
-  val emoji: nodeDashEmojiLib.Anon_Flagta = js.native
+  val emoji: nodeDashEmojiLib.Anon_1 = js.native
   def emojify(str: java.lang.String): java.lang.String = js.native
   def emojify(
     str: java.lang.String,

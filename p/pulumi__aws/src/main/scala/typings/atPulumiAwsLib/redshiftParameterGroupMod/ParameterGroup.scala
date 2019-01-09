@@ -33,7 +33,7 @@ class ParameterGroup protected ()
   /**
     * A list of Redshift parameters to apply.
     */
-  val parameters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ValueNameString]]] = js.native
+  val parameters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Name]]] = js.native
 }
 
 @JSImport("@pulumi/aws/redshift/parameterGroup", "ParameterGroup")

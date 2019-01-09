@@ -9,6 +9,6 @@ trait Anon_TypeDefinition extends js.Object {
   /**
     * Capabilities specific to the `textDocument/typeDefinition`
     */
-  var typeDefinition: js.UndefOr[Anon_DynamicRegistration] = js.undefined
+  var typeDefinition: js.UndefOr[Anon_DynamicRegistrationLinkSupport] = js.undefined
 }
 

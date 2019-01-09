@@ -59,7 +59,7 @@ trait ElementObject extends js.Object {
     * @return An object containing x, y, width and height values for the element.
     * @since 2.0
     */
-  def getBBox(): highchartsLib.Anon_YX = js.native
+  def getBBox(): highchartsLib.Anon_Height = js.native
   /**
     * Apply an event handler to the element
     * @param eventType The event type to attach, for example 'click', 'mouseover', 'touch'.

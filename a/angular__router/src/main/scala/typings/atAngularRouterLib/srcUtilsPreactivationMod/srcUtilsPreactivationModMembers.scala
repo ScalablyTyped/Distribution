@@ -13,7 +13,7 @@ object srcUtilsPreactivationModMembers extends js.Object {
     curr: atAngularRouterLib.srcRouterUnderscoreStateMod.RouterStateSnapshot,
     parentContexts: atAngularRouterLib.srcRouterUnderscoreOutletUnderscoreContextMod.ChildrenOutletContexts
   ): Checks = js.native
-  def getCanActivateChild(p: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot): atAngularRouterLib.Anon_Node | scala.Null = js.native
+  def getCanActivateChild(p: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot): atAngularRouterLib.Anon_Guards | scala.Null = js.native
   def getToken(
     token: js.Any,
     snapshot: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot,

@@ -11,7 +11,7 @@ trait ILocalStorageService extends js.Object {
   def bind(
     $scope: angularLib.angularMod.angularNs.IScope,
     key: java.lang.String,
-    opts: angularlocalstorageLib.Anon_StoreName
+    opts: angularlocalstorageLib.Anon_DefaultValue
   ): js.Any = js.native
   def clearAll(): scala.Unit = js.native
   def get(key: java.lang.String): js.Any = js.native

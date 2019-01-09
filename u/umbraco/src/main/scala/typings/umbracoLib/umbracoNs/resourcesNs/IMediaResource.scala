@@ -147,7 +147,7 @@ trait IMediaResource extends js.Object {
     *
     */
   def getChildren(parentId: scala.Double): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
-  def getChildren(parentId: scala.Double, options: umbracoLib.Anon_PageSize): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
+  def getChildren(parentId: scala.Double, options: umbracoLib.Anon_Filter): angularLib.angularMod.angularNs.IPromise[IResourcePromise] = js.native
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaResource#getScaffold

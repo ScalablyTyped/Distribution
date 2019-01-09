@@ -464,7 +464,7 @@ object graphqlModMembers extends js.Object {
   ): java.lang.String = js.native
   def responsePathAsArray(path: graphqlLib.typeDefinitionMod.ResponsePath): js.Array[java.lang.String | scala.Double] = js.native
   def separateOperations(documentAST: graphqlLib.languageAstMod.DocumentNode): org.scalablytyped.runtime.StringDictionary[graphqlLib.languageAstMod.DocumentNode] = js.native
-  def subscribe[TData](args: graphqlLib.Anon_FieldResolver): js.Promise[
+  def subscribe[TData](args: graphqlLib.Anon_ArgName): js.Promise[
     stdLib.AsyncIterator[graphqlLib.executionExecuteMod.ExecutionResult[TData]] | graphqlLib.executionExecuteMod.ExecutionResult[TData]
   ] = js.native
   def subscribe[TData](

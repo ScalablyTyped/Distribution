@@ -9,7 +9,7 @@ trait Transmission extends js.Object {
   /** Name of the campaign */
   var campaign_id: java.lang.String
   /** Content that will be used to construct a message */
-  var content: InlineContent | sparkpostLib.Anon_TemplateidUsedrafttemplate | sparkpostLib.Anon_Emailrfc822
+  var content: InlineContent | sparkpostLib.Anon_Templateid | sparkpostLib.Anon_Emailrfc822
   /** Description of the transmission */
   var description: java.lang.String
   /** ID of the transmission */

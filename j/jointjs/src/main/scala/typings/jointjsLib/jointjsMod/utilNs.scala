@@ -27,7 +27,7 @@ object utilNs extends js.Object {
     text: java.lang.String,
     size: jointjsLib.Anon_Height,
     attrs: jointjsLib.jointjsMod.attributesNs.NativeSVGAttributes,
-    opt: jointjsLib.Anon_SvgDocument
+    opt: jointjsLib.Anon_Ellipsis
   ): java.lang.String = js.native
   def camelCase(string: java.lang.String): java.lang.String = js.native
   def cancelFrame(requestId: scala.Double): scala.Unit = js.native
@@ -140,8 +140,8 @@ object utilNs extends js.Object {
   def normalizeEvent(evt: jqueryLib.JQueryNs.Event): jqueryLib.JQueryNs.Event = js.native
   def normalizeSides(sides: jointjsLib.jointjsMod.diaNs.Sides): jointjsLib.jointjsMod.diaNs.PaddingJSON = js.native
   def omit(`object`: js.Object, propertyPathsToOmit: PropertyPath*): js.Object = js.native
-  def parseCssNumeric(`val`: js.Any, restrictUnits: java.lang.String): jointjsLib.Anon_Value | scala.Null = js.native
-  def parseCssNumeric(`val`: js.Any, restrictUnits: js.Array[java.lang.String]): jointjsLib.Anon_Value | scala.Null = js.native
+  def parseCssNumeric(`val`: js.Any, restrictUnits: java.lang.String): jointjsLib.Anon_Unit | scala.Null = js.native
+  def parseCssNumeric(`val`: js.Any, restrictUnits: js.Array[java.lang.String]): jointjsLib.Anon_Unit | scala.Null = js.native
   def parseDOMJSON(json: jointjsLib.jointjsMod.diaNs.MarkupJSON): DOMJSONDocument = js.native
   def pick(`object`: js.Object, propertyPathsToPick: PropertyPath*): js.Object = js.native
   def result(`object`: js.Object, propertyPath: PropertyPath): js.Any = js.native
@@ -229,15 +229,15 @@ object utilNs extends js.Object {
   @js.native
   object filterNs extends js.Object {
     trait FilterArgumentsMap extends js.Object {
-      var blur: jointjsLib.Anon_Y
+      var blur: jointjsLib.Anon_XY
       var brightness: jointjsLib.Anon_Amount
       var contrast: jointjsLib.Anon_Amount
-      var dropShadow: jointjsLib.Anon_Dy
+      var dropShadow: jointjsLib.Anon_BlurColor
       var grayscale: jointjsLib.Anon_Amount
-      var highlight: jointjsLib.Anon_OpacityColor
+      var highlight: jointjsLib.Anon_Blur
       var hueRotate: jointjsLib.Anon_Angle
       var invert: jointjsLib.Anon_Amount
-      var outline: jointjsLib.Anon_Opacity
+      var outline: jointjsLib.Anon_ColorMargin
       var saturate: jointjsLib.Anon_Amount
       var sepia: jointjsLib.Anon_Amount
     }
@@ -273,7 +273,7 @@ object utilNs extends js.Object {
     def number(specifier: java.lang.String, value: scala.Double): java.lang.String = js.native
     def number(specifier: java.lang.String, value: scala.Double, locale: NumberLocale): java.lang.String = js.native
     def precision(value: scala.Double, precision: scala.Double): scala.Double = js.native
-    def prefix(value: scala.Double, precision: scala.Double): js.UndefOr[jointjsLib.Anon_Symbol] = js.native
+    def prefix(value: scala.Double, precision: scala.Double): js.UndefOr[jointjsLib.Anon_D] = js.native
     def round(value: scala.Double): scala.Double = js.native
     def round(value: scala.Double, precision: scala.Double): scala.Double = js.native
     def string(str: java.lang.String, value: java.lang.String): java.lang.String = js.native

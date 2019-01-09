@@ -27,7 +27,7 @@ trait XAxisConfiguration extends js.Object {
     * Valid horizontal positions: inner-right (Default), inner-center, inner-left, outer-right, outer-center, outer-left
     * Valid vertical positions: inner-top, inner-middle, inner-bottom, outer-top, outer-middle, outer-bottom
     */
-  var label: js.UndefOr[java.lang.String | c3Lib.Anon_Text] = js.undefined
+  var label: js.UndefOr[java.lang.String | c3Lib.Anon_Position] = js.undefined
   /**
     * Set how to treat the timezone of x values.
     * If true, treat x value as localtime. If false, convert to UTC internally.

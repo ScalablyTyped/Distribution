@@ -9,6 +9,6 @@ trait Anon_OutputSettings extends js.Object {
   /**
     * Set the resemblance image output style
     */
-  def outputSettings(settings: resemblejsLib.resemblejsMod.ResembleNs.OutputSettings): /* import warning: ImportType.apply Failed type conversion: typeof resemblejs.resemblejs.Resemble */ js.Any
+  def outputSettings(settings: resemblejsLib.resemblejsMod.ResembleNs.OutputSettings): /* import warning: ImportType.apply Failed type conversion: typeof Resemble */ js.Any
 }
 

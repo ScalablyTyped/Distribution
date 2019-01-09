@@ -12,7 +12,7 @@ trait ByteMatchSetState extends js.Object {
   val byteMatchTuples: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PositionalConstraintTargetString]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldToMatchPositionalConstraint]
       ]
     ]
   ] = js.undefined
@@ -22,7 +22,7 @@ trait ByteMatchSetState extends js.Object {
   val byte_match_tuple: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PositionalConstraintTargetString]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldToMatchPositionalConstraint]
       ]
     ]
   ] = js.undefined

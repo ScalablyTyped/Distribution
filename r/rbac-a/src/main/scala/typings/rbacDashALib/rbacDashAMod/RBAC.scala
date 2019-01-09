@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RBAC[P /* <: Provider */, AM /* <: AttributesManager */] protected ()
   extends nodeLib.eventsMod.EventEmitter {
-  def this(opts: rbacDashALib.Anon_Attributes[AM, P]) = this()
+  def this(opts: rbacDashALib.Anon_Attributes[P, AM]) = this()
   val attributes: AM = js.native
   val provider: P = js.native
   /**

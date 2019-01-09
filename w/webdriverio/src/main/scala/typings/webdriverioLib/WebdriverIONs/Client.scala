@@ -432,7 +432,7 @@ trait Client[T] extends js.Object {
   def init_PClient[P](): Client[P] = js.native
   @JSName("init")
   def init_PClient[P](capabilities: DesiredCapabilities): Client[P] = js.native
-  def inspect(): webdriverioLib.Anon_State[T] = js.native
+  def inspect(): webdriverioLib.Anon_Fulfilled[T] = js.native
   def installApp(path: java.lang.String): Client[T] = js.native
   def isAppInstalled(bundleId: java.lang.String): Client[T] = js.native
   def isEnabled(): Client[scala.Boolean] with scala.Boolean = js.native

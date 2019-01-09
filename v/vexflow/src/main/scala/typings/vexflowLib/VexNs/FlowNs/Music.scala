@@ -14,8 +14,8 @@ class Music () extends js.Object {
   def getIntervalBetween(note1: scala.Double, note2: scala.Double): scala.Double = js.native
   def getIntervalBetween(note1: scala.Double, note2: scala.Double, direction: scala.Double): scala.Double = js.native
   def getIntervalValue(intervalString: java.lang.String): scala.Double = js.native
-  def getKeyParts(noteString: java.lang.String): vexflowLib.Anon_Root = js.native
-  def getNoteParts(noteString: java.lang.String): vexflowLib.Anon_RootAccidental = js.native
+  def getKeyParts(noteString: java.lang.String): vexflowLib.Anon_AccidentalRootType = js.native
+  def getNoteParts(noteString: java.lang.String): vexflowLib.Anon_AccidentalRoot = js.native
   def getNoteValue(noteString: java.lang.String): scala.Double = js.native
   def getRelativeNoteName(root: java.lang.String, noteValue: scala.Double): java.lang.String = js.native
   def getRelativeNoteValue(noteValue: scala.Double, intervalValue: scala.Double): scala.Double = js.native

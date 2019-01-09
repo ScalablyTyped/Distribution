@@ -57,7 +57,7 @@ class Service protected ()
   /**
     * A load balancer block. Load balancers documented below.
     */
-  val loadBalancers: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ContainerPort]]] = js.native
+  val loadBalancers: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ContainerName]]] = js.native
   /**
     * The name of the service (up to 255 letters, numbers, hyphens, and underscores)
     */
@@ -65,20 +65,20 @@ class Service protected ()
   /**
     * The network configuration for the service. This parameter is required for task definitions that use the `awsvpc` network mode to receive their own Elastic Network Interface, and it is not supported for other network modes.
     */
-  val networkConfiguration: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SubnetsAssignPublicIp]] = js.native
+  val networkConfiguration: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AssignPublicIp]] = js.native
   /**
     * Service level strategy rules that are taken into consideration during task placement. List from top to bottom in order of precedence. The maximum number of `ordered_placement_strategy` blocks is `5`. Defined below.
     */
-  val orderedPlacementStrategies: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_TypeField]]] = js.native
+  val orderedPlacementStrategies: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldType]]] = js.native
   /**
     * rules that are taken into consideration during task placement. Maximum number of
     * `placement_constraints` is `10`. Defined below.
     */
-  val placementConstraints: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ExpressionType]]] = js.native
+  val placementConstraints: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Expression]]] = js.native
   /**
     * **Deprecated**, use `ordered_placement_strategy` instead.
     */
-  val placementStrategies: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_TypeField]]] = js.native
+  val placementStrategies: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldType]]] = js.native
   /**
     * The platform version on which to run your service. Only applicable for `launch_type` set to `FARGATE`. Defaults to `LATEST`. More information about Fargate platform versions can be found in the [AWS ECS User Guide](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html).
     */
@@ -94,7 +94,7 @@ class Service protected ()
   /**
     * The service discovery registries for the service. The maximum number of `service_registries` blocks is `1`.
     */
-  val serviceRegistries: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ContainerPortContainerName]] = js.native
+  val serviceRegistries: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ContainerNameContainerPort]] = js.native
   /**
     * Key-value mapping of resource tags
     */

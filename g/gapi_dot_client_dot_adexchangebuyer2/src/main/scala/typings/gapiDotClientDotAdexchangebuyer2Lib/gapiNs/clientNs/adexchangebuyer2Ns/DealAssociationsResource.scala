@@ -7,10 +7,16 @@ import scala.scalajs.js.annotation._
 
 trait DealAssociationsResource extends js.Object {
   /** Associate an existing deal with a creative. */
-  def add(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def add(
+    request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackCreativeId
+  ): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /** List all creative-deal associations. */
-  def list(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPageSizePrettyPrintBearertokenQuery): gapiDotClientLib.gapiNs.clientNs.Request[ListDealAssociationsResponse]
+  def list(
+    request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackCreativeIdFields
+  ): gapiDotClientLib.gapiNs.clientNs.Request[ListDealAssociationsResponse]
   /** Remove the association between a deal and a creative. */
-  def remove(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def remove(
+    request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackCreativeId
+  ): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
 }
 

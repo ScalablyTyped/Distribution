@@ -16,8 +16,8 @@ object stylingModMembers extends js.Object {
   val HighContrastSelector: /* @media screen and (-ms-high-contrast: active) */ java.lang.String = js.native
   val HighContrastSelectorBlack: /* @media screen and (-ms-high-contrast: white-on-black) */ java.lang.String = js.native
   val HighContrastSelectorWhite: /* @media screen and (-ms-high-contrast: black-on-white) */ java.lang.String = js.native
-  val InjectionMode: atUifabricMergeDashStylesLib.Anon_None = js.native
-  val PulsingBeaconAnimationStyles: atUifabricStylingLib.Anon_CreateDefaultAnimation = js.native
+  val InjectionMode: atUifabricMergeDashStylesLib.Anon_0 = js.native
+  val PulsingBeaconAnimationStyles: atUifabricStylingLib.Anon_AnimationName = js.native
   val ScreenWidthMaxLarge: scala.Double = js.native
   val ScreenWidthMaxMedium: scala.Double = js.native
   val ScreenWidthMaxSmall: scala.Double = js.native

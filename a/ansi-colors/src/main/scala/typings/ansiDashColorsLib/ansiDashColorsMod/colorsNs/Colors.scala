@@ -82,7 +82,7 @@ trait Colors extends js.Object {
   var reset_Original: ColorFn = js.native
   @JSName("strikethrough")
   var strikethrough_Original: ColorFn = js.native
-  var symbols: Symbols with ansiDashColorsLib.Anon_Windows = js.native
+  var symbols: Symbols with ansiDashColorsLib.Anon_Other = js.native
   @JSName("underline")
   var underline_Original: ColorFn = js.native
   var visible: scala.Boolean = js.native

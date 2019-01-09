@@ -11,8 +11,8 @@ class ContextMenu () extends js.Object {
   def addItem(item: MenuItem): scala.Unit = js.native
   def addSeparator(): scala.Unit = js.native
   def getItem(index: scala.Double): MenuItem = js.native
-  def onclose(event: baidumapDashWebDashSdkLib.Anon_TypeTargetPixel): scala.Unit = js.native
-  def onopen(event: baidumapDashWebDashSdkLib.Anon_TypeTargetPixel): scala.Unit = js.native
+  def onclose(event: baidumapDashWebDashSdkLib.Anon_Pixel): scala.Unit = js.native
+  def onopen(event: baidumapDashWebDashSdkLib.Anon_Pixel): scala.Unit = js.native
   def removeItem(item: MenuItem): scala.Unit = js.native
   def removeSeparator(index: scala.Double): scala.Unit = js.native
 }

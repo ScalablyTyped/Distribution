@@ -10,7 +10,7 @@ trait D3Context extends js.Object {
   @JSName("dispatch")
   var dispatch_Original: webcolaLib.Anon_Types = js.native
   @JSName("drag")
-  var drag_Original: webcolaLib.Anon_GElement = js.native
+  var drag_Original: webcolaLib.Anon_Datum = js.native
   var event: js.Any = js.native
   @JSName("timer")
   var timer_Original: webcolaLib.Anon_Callback = js.native

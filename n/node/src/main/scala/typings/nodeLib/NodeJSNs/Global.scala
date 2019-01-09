@@ -12,7 +12,7 @@ trait Global extends js.Object {
   var Array_Original: stdLib.ArrayConstructor = js.native
   @JSName("Boolean")
   var Boolean_Original: stdLib.BooleanConstructor = js.native
-  var Buffer: nodeLib.Anon_IsEncoding = js.native
+  var Buffer: nodeLib.Anon_Alloc = js.native
   var DataView: stdLib.DataViewConstructor = js.native
   @JSName("Date")
   var Date_Original: stdLib.DateConstructor = js.native
@@ -80,7 +80,7 @@ trait Global extends js.Object {
   @JSName("parseFloat")
   var parseFloat_Original: js.Function1[/* string */ java.lang.String, scala.Double] = js.native
   @JSName("parseInt")
-  var parseInt_Original: nodeLib.Anon_S = js.native
+  var parseInt_Original: nodeLib.Anon_Radix = js.native
   var process: Process = js.native
   var root: Global = js.native
   var undefined: js.UndefOr[scala.Nothing] = js.native

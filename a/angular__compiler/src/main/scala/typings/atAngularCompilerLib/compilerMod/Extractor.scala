@@ -15,7 +15,7 @@ class Extractor protected ()
 @JSImport("@angular/compiler", "Extractor")
 @js.native
 object Extractor extends js.Object {
-  def create(host: atAngularCompilerLib.srcI18nExtractorMod.ExtractorHost): atAngularCompilerLib.Anon_StaticReflector = js.native
-  def create(host: atAngularCompilerLib.srcI18nExtractorMod.ExtractorHost, locale: java.lang.String): atAngularCompilerLib.Anon_StaticReflector = js.native
+  def create(host: atAngularCompilerLib.srcI18nExtractorMod.ExtractorHost): atAngularCompilerLib.Anon_Extractor = js.native
+  def create(host: atAngularCompilerLib.srcI18nExtractorMod.ExtractorHost, locale: java.lang.String): atAngularCompilerLib.Anon_Extractor = js.native
 }
 

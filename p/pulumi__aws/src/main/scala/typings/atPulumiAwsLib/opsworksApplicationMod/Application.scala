@@ -21,7 +21,7 @@ class Application protected ()
   /**
     * SCM configuration of the app as described below.
     */
-  val appSources: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_UrlUsernameSshKeyRevision]] = js.native
+  val appSources: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Password]] = js.native
   /**
     * Run bundle install when deploying for application of type `rails`.
     */
@@ -77,7 +77,7 @@ class Application protected ()
   /**
     * The SSL configuration of the app. Object is described below.
     */
-  val sslConfigurations: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ChainCertificate]]] = js.native
+  val sslConfigurations: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_CertificateChain]]] = js.native
   /**
     * The id of the stack the application will belong to.
     */

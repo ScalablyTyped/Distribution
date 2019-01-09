@@ -34,7 +34,7 @@ package object hapiMod {
   type RouteOptionsAccessEntity = hapiLib.hapiLibStrings.any | hapiLib.hapiLibStrings.user | hapiLib.hapiLibStrings.app
   type RouteOptionsAccessObject = RouteOptionsAccessScopeObject | RouteOptionsAccessEntityObject | (RouteOptionsAccessScopeObject with RouteOptionsAccessEntityObject)
   type RouteOptionsAccessScope = hapiLib.hapiLibNumbers.`false` | java.lang.String | js.Array[java.lang.String]
-  type RouteOptionsCache = hapiLib.Anon_Otherwise with (hapiLib.Anon_ExpiresAt | hapiLib.Anon_ExpiresAtExpiresIn | hapiLib.Anon_ExpiresAtExpiresInUndefined)
+  type RouteOptionsCache = hapiLib.Anon_Default with (hapiLib.Anon_ExpiresAt | hapiLib.Anon_ExpiresAtExpiresIn | hapiLib.Anon_ExpiresAtExpiresInUndefined)
   type RouteOptionsPreAllOptions = RouteOptionsPreObject | js.Array[RouteOptionsPreObject] | hapiLib.hapiMod.LifecycleNs.Method
   type RouteOptionsPreArray = js.Array[RouteOptionsPreAllOptions]
   type RouteOptionsResponseSchema = scala.Boolean | ValidationObject | joiLib.joiMod.AnySchema | (js.Function2[

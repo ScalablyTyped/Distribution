@@ -26,11 +26,11 @@ object layoutNs extends js.Object {
     def on(`type`: java.lang.String): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
     def on(`type`: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): Cloud[T] = js.native
     @JSName("on")
-    def on_end(`type`: d3DashCloudLib.d3DashCloudLibStrings.end): js.Function2[/* tags */ js.Array[T], /* bounds */ js.Array[d3DashCloudLib.Anon_Y], scala.Unit] = js.native
+    def on_end(`type`: d3DashCloudLib.d3DashCloudLibStrings.end): js.Function2[/* tags */ js.Array[T], /* bounds */ js.Array[d3DashCloudLib.Anon_X], scala.Unit] = js.native
     @JSName("on")
     def on_end(
       `type`: d3DashCloudLib.d3DashCloudLibStrings.end,
-      listener: js.Function2[/* tags */ js.Array[T], /* bounds */ js.Array[d3DashCloudLib.Anon_Y], scala.Unit]
+      listener: js.Function2[/* tags */ js.Array[T], /* bounds */ js.Array[d3DashCloudLib.Anon_X], scala.Unit]
     ): Cloud[T] = js.native
     @JSName("on")
     def on_word(`type`: d3DashCloudLib.d3DashCloudLibStrings.word): js.Function1[/* word */ T, scala.Unit] = js.native

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(surveyDashKnockoutLib.surveyDashKnockoutMod.IMatrixDropdownData because Would inherit conflicting mutable fields List(columns))*/
-@JSImport("survey-knockout", "QuestionMatrixDropdownModelBase")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- surveyDashKnockoutLib.surveyDashKnockoutMod.IMatrixDropdownData because var conflicts: columns. Inlined onRowChanged, getRowIndex, validateCell, createQuestion, getLocale, getMarkdownHtml, getProcessedText, getSurvey */ @JSImport("survey-knockout", "QuestionMatrixDropdownModelBase")
 @js.native
 class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseModel[MatrixDropdownRowModelBase, MatrixDropdownColumn] {
   def this(name: java.lang.String) = this()

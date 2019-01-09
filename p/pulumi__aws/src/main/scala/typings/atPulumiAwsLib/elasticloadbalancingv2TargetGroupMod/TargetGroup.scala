@@ -34,7 +34,7 @@ class TargetGroup protected ()
   /**
     * A Health Check block. Health Check blocks are documented below.
     */
-  val healthCheck: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_PathHealthyThresholdUnhealthyThresholdMatcher] = js.native
+  val healthCheck: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_HealthyThresholdInterval] = js.native
   /**
     * The name of the target group. If omitted, Terraform will assign a random, unique name.
     */
@@ -62,7 +62,7 @@ class TargetGroup protected ()
   /**
     * A Stickiness block. Stickiness blocks are documented below. `stickiness` is only valid if used with Load Balancers of type `Application`
     */
-  val stickiness: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_TypeCookieDurationEnabledString] = js.native
+  val stickiness: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_CookieDurationEnabled] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

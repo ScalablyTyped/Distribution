@@ -26,7 +26,7 @@ trait GuardiansResource extends js.Object {
     * the requested `student_id`, but no `Guardian` record exists for that
     * student with the provided `guardian_id`.
     */
-  def delete(request: gapiDotClientDotClassroomLib.Anon_GuardianId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsGuardianId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Returns a specific guardian.
     *
@@ -44,7 +44,7 @@ trait GuardiansResource extends js.Object {
     * the requested `student_id`, but no `Guardian` record exists for that
     * student that matches the provided `guardian_id`.
     */
-  def get(request: gapiDotClientDotClassroomLib.Anon_GuardianId): gapiDotClientLib.gapiNs.clientNs.Request[Guardian]
+  def get(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsGuardianId): gapiDotClientLib.gapiNs.clientNs.Request[Guardian]
   /**
     * Returns a list of guardians that the requesting user is permitted to
     * view, restricted to those that match the request.
@@ -67,6 +67,8 @@ trait GuardiansResource extends js.Object {
     * &#42; `NOT_FOUND` if a `student_id` is specified, and its format can be
     * recognized, but Classroom has no record of that student.
     */
-  def list(request: gapiDotClientDotClassroomLib.Anon_InvitedEmailAddress): gapiDotClientLib.gapiNs.clientNs.Request[ListGuardiansResponse]
+  def list(
+    request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsInvitedEmailAddressKey
+  ): gapiDotClientLib.gapiNs.clientNs.Request[ListGuardiansResponse]
 }
 

@@ -15,6 +15,6 @@ class ColorPickerBase protected ()
 @JSImport("office-ui-fabric-react", "ColorPickerBase")
 @js.native
 object ColorPickerBase extends js.Object {
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_BlueLabel = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_AlphaLabel = js.native
 }
 

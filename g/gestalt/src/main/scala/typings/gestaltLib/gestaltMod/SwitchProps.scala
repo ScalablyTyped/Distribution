@@ -10,6 +10,6 @@ trait SwitchProps extends js.Object {
   var id: java.lang.String
   var name: js.UndefOr[java.lang.String] = js.undefined
   var switched: js.UndefOr[scala.Boolean] = js.undefined
-  def onChange(args: gestaltLib.Anon_EventValueSyntheticEventHTMLInputElement): scala.Unit
+  def onChange(args: gestaltLib.Anon_EventValueBoolean): scala.Unit
 }
 

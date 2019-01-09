@@ -26,7 +26,7 @@ object promisesNs extends js.Object {
       */
     def appendFile(data: js.Any): js.Promise[scala.Unit] = js.native
     def appendFile(data: js.Any, options: java.lang.String): js.Promise[scala.Unit] = js.native
-    def appendFile(data: js.Any, options: nodeLib.Anon_EncodingModeFlag): js.Promise[scala.Unit] = js.native
+    def appendFile(data: js.Any, options: nodeLib.Anon_EncodingFlagModeNull): js.Promise[scala.Unit] = js.native
     /**
       * Asynchronous fchmod(2) - Change permissions of a file.
       * @param mode A file mode. If a string is passed, it is parsed as an octal integer.
@@ -53,14 +53,14 @@ object promisesNs extends js.Object {
       * @param length The number of bytes to read.
       * @param position The offset from the beginning of the file from which data should be read. If `null`, data will be read from the current position.
       */
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double, length: scala.Double, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double, length: scala.Null, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Null, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Null, length: scala.Double, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
-    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Null, length: scala.Null, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
+    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
+    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
+    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double, length: scala.Double, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
+    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double, length: scala.Null, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
+    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Null, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
+    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Null, length: scala.Double, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
+    def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Null, length: scala.Null, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
     /**
       * Asynchronously reads the entire contents of a file. The underlying file will _not_ be closed automatically.
       * The `FileHandle` must have been opened for reading.
@@ -76,8 +76,8 @@ object promisesNs extends js.Object {
       * If a flag is not provided, it defaults to `'r'`.
       */
     def readFile(options: nodeLib.Anon_EncodingFlagBufferEncoding): js.Promise[java.lang.String] = js.native
-    def readFile(options: nodeLib.Anon_EncodingFlagNull): js.Promise[nodeLib.Buffer] = js.native
-    def readFile(options: nodeLib.Anon_EncodingFlagStringNullNumber): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+    def readFile(options: nodeLib.Anon_EncodingFlagNullNumber): js.Promise[nodeLib.Buffer] = js.native
+    def readFile(options: nodeLib.Anon_EncodingFlagNullNumberString): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     def readFile(options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     /**
       * Asynchronous fstat(2) - Get file status.
@@ -116,10 +116,10 @@ object promisesNs extends js.Object {
       * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
       * @param encoding The expected string encoding.
       */
-    def write(data: js.Any): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
-    def write(data: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
-    def write(data: js.Any, position: scala.Double, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
-    def write(data: js.Any, position: scala.Null, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
+    def write(data: js.Any): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def write(data: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def write(data: js.Any, position: scala.Double, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+    def write(data: js.Any, position: scala.Null, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
     /**
       * Asynchronously writes `buffer` to the file.
       * The `FileHandle` must have been opened for writing.
@@ -128,14 +128,14 @@ object promisesNs extends js.Object {
       * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
       * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
       */
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double, length: scala.Double, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double, length: scala.Null, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Null, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Null, length: scala.Double, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Null, length: scala.Null, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double, length: scala.Double, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Double, length: scala.Null, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Null, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Null, length: scala.Double, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+    def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](buffer: TBuffer, offset: scala.Null, length: scala.Null, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
     /**
       * Asynchronously writes data to a file, replacing the file if it already exists. The underlying file will _not_ be closed automatically.
       * The `FileHandle` must have been opened for writing.
@@ -149,7 +149,7 @@ object promisesNs extends js.Object {
       */
     def writeFile(data: js.Any): js.Promise[scala.Unit] = js.native
     def writeFile(data: js.Any, options: java.lang.String): js.Promise[scala.Unit] = js.native
-    def writeFile(data: js.Any, options: nodeLib.Anon_EncodingModeFlag): js.Promise[scala.Unit] = js.native
+    def writeFile(data: js.Any, options: nodeLib.Anon_EncodingFlagModeNull): js.Promise[scala.Unit] = js.native
   }
   
   /**
@@ -173,10 +173,10 @@ object promisesNs extends js.Object {
     */
   def appendFile(path: nodeLib.fsMod.PathLike, data: js.Any): js.Promise[scala.Unit] = js.native
   def appendFile(path: nodeLib.fsMod.PathLike, data: js.Any, options: java.lang.String): js.Promise[scala.Unit] = js.native
-  def appendFile(path: nodeLib.fsMod.PathLike, data: js.Any, options: nodeLib.Anon_EncodingModeFlag): js.Promise[scala.Unit] = js.native
+  def appendFile(path: nodeLib.fsMod.PathLike, data: js.Any, options: nodeLib.Anon_EncodingFlagModeNull): js.Promise[scala.Unit] = js.native
   def appendFile(path: FileHandle, data: js.Any): js.Promise[scala.Unit] = js.native
   def appendFile(path: FileHandle, data: js.Any, options: java.lang.String): js.Promise[scala.Unit] = js.native
-  def appendFile(path: FileHandle, data: js.Any, options: nodeLib.Anon_EncodingModeFlag): js.Promise[scala.Unit] = js.native
+  def appendFile(path: FileHandle, data: js.Any, options: nodeLib.Anon_EncodingFlagModeNull): js.Promise[scala.Unit] = js.native
   /**
     * Asynchronous chmod(2) - Change permissions of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -291,14 +291,14 @@ object promisesNs extends js.Object {
     */
   def mkdtemp(prefix: java.lang.String): js.Promise[java.lang.String] = js.native
   def mkdtemp(prefix: java.lang.String, options: java.lang.String): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
-  def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
   /**
     * Asynchronously creates a unique temporary directory.
     * Generates six random characters to be appended behind a required `prefix` to create a unique temporary directory.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_EncodingBuffer_1560675869): js.Promise[nodeLib.Buffer] = js.native
-  def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_EncodingStringNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+  def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
+  def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
+  def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
   def mkdtemp(prefix: java.lang.String, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
   @JSName("mkdtemp")
   def mkdtemp_buffer(prefix: java.lang.String, options: nodeLib.nodeLibStrings.buffer): js.Promise[nodeLib.Buffer] = js.native
@@ -323,38 +323,38 @@ object promisesNs extends js.Object {
     * @param position The offset from the beginning of the file from which data should be read. If
     * `null`, data will be read from the current position.
     */
-  def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
-  def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
-  def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+  def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
+  def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
+  def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
   def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+  ): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
   def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
     offset: scala.Double,
     length: scala.Null,
     position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
-  def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: scala.Null, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+  ): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
+  def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: scala.Null, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
   def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
     offset: scala.Null,
     length: scala.Double,
     position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+  ): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
   def read[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
     offset: scala.Null,
     length: scala.Null,
     position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesRead[TBuffer]] = js.native
+  ): js.Promise[nodeLib.Anon_BufferBytesReadNumber[TBuffer]] = js.native
   /**
     * Asynchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -372,14 +372,14 @@ object promisesNs extends js.Object {
     * If a flag is not provided, it defaults to `'r'`.
     */
   def readFile(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagBufferEncoding): js.Promise[java.lang.String] = js.native
-  def readFile(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagNull): js.Promise[nodeLib.Buffer] = js.native
-  def readFile(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagStringNullNumber): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+  def readFile(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagNullNumber): js.Promise[nodeLib.Buffer] = js.native
+  def readFile(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagNullNumberString): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
   def readFile(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
   def readFile(path: FileHandle): js.Promise[nodeLib.Buffer] = js.native
   def readFile(path: FileHandle, options: java.lang.String): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
   def readFile(path: FileHandle, options: nodeLib.Anon_EncodingFlagBufferEncoding): js.Promise[java.lang.String] = js.native
-  def readFile(path: FileHandle, options: nodeLib.Anon_EncodingFlagNull): js.Promise[nodeLib.Buffer] = js.native
-  def readFile(path: FileHandle, options: nodeLib.Anon_EncodingFlagStringNullNumber): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+  def readFile(path: FileHandle, options: nodeLib.Anon_EncodingFlagNullNumber): js.Promise[nodeLib.Buffer] = js.native
+  def readFile(path: FileHandle, options: nodeLib.Anon_EncodingFlagNullNumberString): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
   def readFile(path: FileHandle, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.
@@ -388,14 +388,14 @@ object promisesNs extends js.Object {
     */
   def readdir(path: nodeLib.fsMod.PathLike): js.Promise[js.Array[java.lang.String]] = js.native
   def readdir(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
-  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[js.Array[java.lang.String]] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): js.Promise[js.Array[nodeLib.Buffer]] = js.native
-  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
+  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[js.Array[nodeLib.Buffer]] = js.native
+  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[js.Array[java.lang.String]] = js.native
+  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
   def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
   @JSName("readdir")
   def readdir_buffer(path: nodeLib.fsMod.PathLike, options: nodeLib.nodeLibStrings.buffer): js.Promise[js.Array[nodeLib.Buffer]] = js.native
@@ -406,14 +406,14 @@ object promisesNs extends js.Object {
     */
   def readlink(path: nodeLib.fsMod.PathLike): js.Promise[java.lang.String] = js.native
   def readlink(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
-  def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
   /**
     * Asynchronous readlink(2) - read value of a symbolic link.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): js.Promise[nodeLib.Buffer] = js.native
-  def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+  def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
+  def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
+  def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
   def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
   @JSName("readlink")
   def readlink_buffer(path: nodeLib.fsMod.PathLike, options: nodeLib.nodeLibStrings.buffer): js.Promise[nodeLib.Buffer] = js.native
@@ -424,14 +424,14 @@ object promisesNs extends js.Object {
     */
   def realpath(path: nodeLib.fsMod.PathLike): js.Promise[java.lang.String] = js.native
   def realpath(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
-  def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
   /**
     * Asynchronous realpath(3) - return the canonicalized absolute pathname.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): js.Promise[nodeLib.Buffer] = js.native
-  def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
+  def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
+  def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
+  def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
   def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
   @JSName("realpath")
   def realpath_buffer(path: nodeLib.fsMod.PathLike, options: nodeLib.nodeLibStrings.buffer): js.Promise[nodeLib.Buffer] = js.native
@@ -498,10 +498,10 @@ object promisesNs extends js.Object {
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     * @param encoding The expected string encoding.
     */
-  def write(handle: FileHandle, string: js.Any): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
-  def write(handle: FileHandle, string: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
-  def write(handle: FileHandle, string: js.Any, position: scala.Double, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
-  def write(handle: FileHandle, string: js.Any, position: scala.Null, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenString] = js.native
+  def write(handle: FileHandle, string: js.Any): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+  def write(handle: FileHandle, string: js.Any, position: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+  def write(handle: FileHandle, string: js.Any, position: scala.Double, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
+  def write(handle: FileHandle, string: js.Any, position: scala.Null, encoding: java.lang.String): js.Promise[nodeLib.Anon_BufferBytesWrittenNumber] = js.native
   /**
     * Asynchronously writes `buffer` to the file referenced by the supplied `FileHandle`.
     * It is unsafe to call `fsPromises.write()` multiple times on the same file without waiting for the `Promise`
@@ -512,38 +512,38 @@ object promisesNs extends js.Object {
     * @param length The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.
     * @param position The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.
     */
-  def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+  def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: scala.Double, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
   def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
     offset: scala.Double,
     length: scala.Double,
     position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
   def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
     offset: scala.Double,
     length: scala.Null,
     position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
-  def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: scala.Null, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
+  def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](handle: FileHandle, buffer: TBuffer, offset: scala.Null, length: scala.Double): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
   def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
     offset: scala.Null,
     length: scala.Double,
     position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
   def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](
     handle: FileHandle,
     buffer: TBuffer,
     offset: scala.Null,
     length: scala.Null,
     position: scala.Double
-  ): js.Promise[nodeLib.Anon_BufferBytesWritten[TBuffer]] = js.native
+  ): js.Promise[nodeLib.Anon_BufferBytesWrittenNumberTBuffer[TBuffer]] = js.native
   /**
     * Asynchronously writes data to a file, replacing the file if it already exists.
     * It is unsafe to call `fsPromises.writeFile()` multiple times on the same file without waiting for the `Promise` to be resolved (or rejected).
@@ -559,9 +559,9 @@ object promisesNs extends js.Object {
     */
   def writeFile(path: nodeLib.fsMod.PathLike, data: js.Any): js.Promise[scala.Unit] = js.native
   def writeFile(path: nodeLib.fsMod.PathLike, data: js.Any, options: java.lang.String): js.Promise[scala.Unit] = js.native
-  def writeFile(path: nodeLib.fsMod.PathLike, data: js.Any, options: nodeLib.Anon_EncodingModeFlag): js.Promise[scala.Unit] = js.native
+  def writeFile(path: nodeLib.fsMod.PathLike, data: js.Any, options: nodeLib.Anon_EncodingFlagModeNull): js.Promise[scala.Unit] = js.native
   def writeFile(path: FileHandle, data: js.Any): js.Promise[scala.Unit] = js.native
   def writeFile(path: FileHandle, data: js.Any, options: java.lang.String): js.Promise[scala.Unit] = js.native
-  def writeFile(path: FileHandle, data: js.Any, options: nodeLib.Anon_EncodingModeFlag): js.Promise[scala.Unit] = js.native
+  def writeFile(path: FileHandle, data: js.Any, options: nodeLib.Anon_EncodingFlagModeNull): js.Promise[scala.Unit] = js.native
 }
 

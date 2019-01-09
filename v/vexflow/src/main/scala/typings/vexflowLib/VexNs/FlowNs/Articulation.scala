@@ -15,6 +15,6 @@ class Articulation protected () extends Modifier {
 @js.native
 object Articulation extends js.Object {
   var DEBUG: scala.Boolean = js.native
-  def format(articulations: js.Array[vexflowLib.VexNs.FlowNs.Articulation], state: vexflowLib.Anon_Rightshift): scala.Boolean = js.native
+  def format(articulations: js.Array[vexflowLib.VexNs.FlowNs.Articulation], state: vexflowLib.Anon_Leftshift): scala.Boolean = js.native
 }
 

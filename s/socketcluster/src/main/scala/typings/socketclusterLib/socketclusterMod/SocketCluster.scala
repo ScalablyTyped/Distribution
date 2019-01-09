@@ -18,7 +18,7 @@ trait SocketCluster
   val EVENT_WORKER_CLUSTER_START: socketclusterLib.socketclusterLibStrings.workerClusterStart = js.native
   val EVENT_WORKER_EXIT: socketclusterLib.socketclusterLibStrings.workerExit = js.native
   val EVENT_WORKER_START: socketclusterLib.socketclusterLibStrings.workerStart = js.native
-  var options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify SCServer.SCServerOptions */ js.Any = js.native
+  var options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ js.Any = js.native
   def colorText(message: java.lang.String): java.lang.String = js.native
   def colorText(message: java.lang.String, color: scala.Double): java.lang.String = js.native
   def colorText(message: java.lang.String, color: socketclusterLib.ColorCodes): java.lang.String = js.native

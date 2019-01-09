@@ -12,7 +12,6 @@ class Ruler ()
   def this(options: IRulerOptions) = this()
   /* CompleteClass */
   override var events: yandexDashMapsLib.ymapsNs.IEventManager = js.native
-  var options: yandexDashMapsLib.ymapsNs.IOptionManager = js.native
   def close(): scala.Boolean = js.native
   def getState(): java.lang.String = js.native
   def setParent(parent: yandexDashMapsLib.ymapsNs.IControlParent): this.type = js.native

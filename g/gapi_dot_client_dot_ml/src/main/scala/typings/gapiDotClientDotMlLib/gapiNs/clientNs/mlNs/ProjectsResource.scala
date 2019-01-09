@@ -15,12 +15,12 @@ trait ProjectsResource extends js.Object {
     * the Google Cloud Storage location where you put your model training code
     * for training the model with Google Cloud Machine Learning.
     */
-  def getConfig(request: gapiDotClientDotMlLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__GetConfigResponse]
+  def getConfig(request: gapiDotClientDotMlLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__GetConfigResponse]
   /**
     * Performs prediction on the data in the request.
     *
     * &#42;&#42;&#42;&#42; REMOVE FROM GENERATED DOCUMENTATION
     */
-  def predict(request: gapiDotClientDotMlLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[GoogleApi__HttpBody]
+  def predict(request: gapiDotClientDotMlLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleApi__HttpBody]
 }
 

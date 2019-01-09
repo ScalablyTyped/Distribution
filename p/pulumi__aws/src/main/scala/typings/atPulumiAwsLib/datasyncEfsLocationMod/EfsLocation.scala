@@ -25,7 +25,7 @@ class EfsLocation protected ()
   /**
     * Configuration block containing EC2 configurations for connecting to the EFS File System.
     */
-  val ec2Config: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_SubnetArn] = js.native
+  val ec2Config: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_SecurityGroupArns] = js.native
   /**
     * Amazon Resource Name (ARN) of EFS File System.
     */

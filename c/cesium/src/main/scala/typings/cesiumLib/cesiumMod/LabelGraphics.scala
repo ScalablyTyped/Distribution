@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class LabelGraphics ()
   extends cesiumLib.cesiumMod.CesiumNs.LabelGraphics {
-  def this(options: cesiumLib.Anon_EyeOffsetShow) = this()
+  def this(options: cesiumLib.Anon_EyeOffset) = this()
 }
 

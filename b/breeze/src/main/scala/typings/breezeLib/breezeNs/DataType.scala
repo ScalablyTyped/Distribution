@@ -23,7 +23,7 @@ trait DataType
   var String: DataTypeSymbol = js.native
   var Time: DataTypeSymbol = js.native
   var Undefined: DataTypeSymbol = js.native
-  var constants: breezeLib.Anon_NextNumberIncrement = js.native
+  var constants: breezeLib.Anon_NextNumber = js.native
   def fromEdmDataType(typeName: java.lang.String): DataTypeSymbol = js.native
   def fromValue(`val`: js.Any): DataTypeSymbol = js.native
   def getComparableFn(dataType: DataTypeSymbol): js.Function1[/* value */ js.Any, _] = js.native

@@ -12,7 +12,7 @@ trait DictionaryBuilder extends js.Object {
   def build(): DynamicDictionaries
   def buildConnectionCosts(): ConnectionCosts
   def buildDoubleArray(): doublearrayLib.doublearrayNs.DoubleArray
-  def buildTokenInfoDictionary(): kuromojiLib.Anon_Trie
+  def buildTokenInfoDictionary(): kuromojiLib.Anon_Tokeninfodictionary
   def buildUnknownDictionary(): UnknownDictionary
   def charDef(char_text: java.lang.String): DictionaryBuilder
   def costMatrix(matrix_text: java.lang.String): DictionaryBuilder

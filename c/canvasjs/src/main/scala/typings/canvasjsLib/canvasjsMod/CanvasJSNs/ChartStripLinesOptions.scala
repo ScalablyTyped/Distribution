@@ -69,9 +69,7 @@ trait ChartStripLinesOptions extends js.Object {
   /**
     * A custom formatter function that returns stripLine’s label.
     */
-  var labelFormatter: js.UndefOr[
-    js.Function1[/* e */ js.UndefOr[canvasjsLib.Anon_AxisStripline], java.lang.String]
-  ] = js.undefined
+  var labelFormatter: js.UndefOr[js.Function1[/* e */ js.UndefOr[canvasjsLib.Anon_Axis], java.lang.String]] = js.undefined
   /**
     * labelMaxWidth defines the maximum width of labels after which they get wrapped or clipped depending on labelWrap’s value.
     * It overrides the labelMaxWidth value set at axis level.

@@ -158,10 +158,10 @@ trait Request
     */
   /* tslint:disable-next-line:max-line-length */
   def generateResponse(source: java.lang.String): ResponseObject = js.native
-  def generateResponse(source: java.lang.String, options: hapiLib.Anon_Marshal): ResponseObject = js.native
+  def generateResponse(source: java.lang.String, options: hapiLib.Anon_Close): ResponseObject = js.native
   def generateResponse(source: js.Object): ResponseObject = js.native
-  def generateResponse(source: js.Object, options: hapiLib.Anon_Marshal): ResponseObject = js.native
-  def generateResponse(source: scala.Null, options: hapiLib.Anon_Marshal): ResponseObject = js.native
+  def generateResponse(source: js.Object, options: hapiLib.Anon_Close): ResponseObject = js.native
+  def generateResponse(source: scala.Null, options: hapiLib.Anon_Close): ResponseObject = js.native
   /**
     * Logs request-specific events. When called, the server emits a 'request' event which can be used by other listeners or plugins. The arguments are:
     * @param tags - a string or an array of strings (e.g. ['error', 'database', 'read']) used to identify the event. Tags are used instead of log levels and provide a much more expressive mechanism

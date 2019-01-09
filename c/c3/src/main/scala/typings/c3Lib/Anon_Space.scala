@@ -13,7 +13,7 @@ trait Anon_Space extends js.Object {
   /**
     * Change the width of bar chart. If ratio is specified, change the width of bar chart by ratio.
     */
-  var width: js.UndefOr[scala.Double | Anon_MaxRatio] = js.undefined
+  var width: js.UndefOr[scala.Double | Anon_Max] = js.undefined
   /**
     * Set if min or max value will be 0 on bar chart.
     */

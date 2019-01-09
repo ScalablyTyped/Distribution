@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(yandexDashMapsLib.ymapsNs.IBaloon because Would inherit conflicting mutable fields List(events, options))*/
-@JSGlobal("ymaps.Balloon")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- yandexDashMapsLib.ymapsNs.IBaloon because var conflicts: events, options. Inlined autoPan */ @JSGlobal("ymaps.Balloon")
 @js.native
 class Balloon protected () extends Popup[Balloon] {
   def this(map: Map) = this()

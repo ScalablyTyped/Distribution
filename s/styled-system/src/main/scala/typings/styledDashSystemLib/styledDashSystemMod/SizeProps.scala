@@ -5,6 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(styledDashSystemLib.styledDashSystemMod.SizeWidthProps because Would inherit conflicting mutable fields List(size))*/
-trait SizeProps extends SizeHeightProps[TLengthStyledSystem]
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- styledDashSystemLib.styledDashSystemMod.SizeWidthProps because var conflicts: size. Inlined  */ trait SizeProps extends SizeHeightProps[TLengthStyledSystem]
 

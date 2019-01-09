@@ -11,7 +11,7 @@ trait Dom extends js.Object {
   def getStyleAttributeAsNumber(el: reactLib.HTMLElement, attr: java.lang.String): scala.Double
   def hasClass(el: reactLib.Element, className: java.lang.String): scala.Boolean
   def isDescendant(parent: stdLib.Node, child: stdLib.Node): scala.Boolean
-  def offset(el: reactLib.Element): materialDashUiLib.Anon_Top
+  def offset(el: reactLib.Element): materialDashUiLib.Anon_Left
   def removeClass(el: reactLib.Element, className: java.lang.String): scala.Unit
   def toggleClass(el: reactLib.Element, className: java.lang.String): scala.Unit
   def withoutTransition(el: reactLib.HTMLElement, callback: js.Function0[scala.Unit]): scala.Unit

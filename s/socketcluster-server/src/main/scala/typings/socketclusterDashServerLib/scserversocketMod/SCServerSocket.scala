@@ -34,7 +34,7 @@ trait SCServerSocket
   def kickOut(channel: java.lang.String): scala.Unit = js.native
   def kickOut(channel: java.lang.String, message: java.lang.String): scala.Unit = js.native
   def kickOut(channel: java.lang.String, message: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  def send(data: js.Any, options: socketclusterDashServerLib.Anon_Fin): scala.Unit = js.native
+  def send(data: js.Any, options: socketclusterDashServerLib.Anon_Binary): scala.Unit = js.native
   def setAuthToken(data: socketclusterDashServerLib.scserverMod.SCServerNs.AuthToken): scala.Unit = js.native
   def setAuthToken(
     data: socketclusterDashServerLib.scserverMod.SCServerNs.AuthToken,

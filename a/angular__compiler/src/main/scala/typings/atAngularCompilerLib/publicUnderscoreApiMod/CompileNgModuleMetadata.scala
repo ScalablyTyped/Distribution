@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CompileNgModuleMetadata protected ()
   extends atAngularCompilerLib.srcCompilerMod.CompileNgModuleMetadata {
-  def this(hasTypeProvidersDeclaredDirectivesExportedDirectivesDeclaredPipesExportedPipesEntryComponentsBootstrapComponentsImportedModulesExportedModulesSchemasTransitiveModuleId: atAngularCompilerLib.Anon_ExportedDirectives) = this()
+  def this(hasTypeProvidersDeclaredDirectivesExportedDirectivesDeclaredPipesExportedPipesEntryComponentsBootstrapComponentsImportedModulesExportedModulesSchemasTransitiveModuleId: atAngularCompilerLib.Anon_BootstrapComponents) = this()
 }
 

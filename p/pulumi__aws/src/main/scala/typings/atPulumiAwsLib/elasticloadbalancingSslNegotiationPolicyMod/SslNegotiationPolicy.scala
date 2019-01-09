@@ -21,7 +21,7 @@ class SslNegotiationPolicy protected ()
   /**
     * An SSL Negotiation policy attribute. Each has two properties:
     */
-  val attributes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ValueNameString]]] = js.native
+  val attributes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Name]]] = js.native
   /**
     * The load balancer port to which the policy
     * should be applied. This must be an active listener on the load

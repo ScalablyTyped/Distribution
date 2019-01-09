@@ -11,7 +11,7 @@ trait WebpackAssetsManifest
   /** https://github.com/webdeveric/webpack-assets-manifest#options-read-the-schema */
   var defaultOptions: webpackDashAssetsDashManifestLib.webpackDashAssetsDashManifestMod.WebpackAssetsManifestNs.Options = js.native
   /** https://github.com/webdeveric/webpack-assets-manifest#hooks */
-  var hooks: webpackDashAssetsDashManifestLib.Anon_Customize = js.native
+  var hooks: webpackDashAssetsDashManifestLib.Anon_AfterOptions = js.native
   /** Determine if the manifest data is currently being merged */
   var isMerging: scala.Boolean = js.native
   /** https://github.com/webdeveric/webpack-assets-manifest#options-read-the-schema */

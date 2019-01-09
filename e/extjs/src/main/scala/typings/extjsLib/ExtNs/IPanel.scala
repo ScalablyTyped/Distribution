@@ -58,8 +58,6 @@ trait IPanel
   /** [Config Option] (Boolean) */
   var collapsible: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Boolean) */
-  var constrain: js.UndefOr[scala.Boolean] = js.undefined
-  /** [Config Option] (Boolean) */
   var constrainHeader: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] converts a collapsdDir into an anchor argument for Element slideIn overridden in rtl mode to switch l and r
   		* @param collapseDir Object

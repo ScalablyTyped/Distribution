@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait DatePicker
   extends rmcDashCalendarLib.libDatePickerDotBaseMod.default {
   var panel: reactLib.HTMLDivElement = js.native
-  var touchHandler: rmcDashCalendarLib.Anon_OnTouchStart = js.native
+  var touchHandler: rmcDashCalendarLib.Anon_Evt = js.native
   var transform: java.lang.String = js.native
   def computeHeight(data: rmcDashCalendarLib.libDateDataTypesMod.ModelsNs.MonthData): scala.Unit = js.native
   def computeHeight(

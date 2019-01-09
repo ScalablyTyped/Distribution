@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait TiersResource extends js.Object {
   /** Lists all available service tiers for Google Cloud SQL, for example D1, D2. For related information, see Pricing. */
-  def list(request: gapiDotClientDotSqladminLib.Anon_ProjectPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[TiersListResponse]
+  def list(request: gapiDotClientDotSqladminLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[TiersListResponse]
 }
 

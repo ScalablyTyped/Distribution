@@ -54,7 +54,7 @@ class NoteTag ()
   def load(): NoteTag = js.native
   def load(option: java.lang.String): NoteTag = js.native
   def load(option: js.Array[java.lang.String]): NoteTag = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): NoteTag = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): NoteTag = js.native
   def load(option: officeDashJsDashPreviewLib.OneNoteNs.InterfacesNs.NoteTagLoadOptions): NoteTag = js.native
   def toJSON(): officeDashJsDashPreviewLib.OneNoteNs.InterfacesNs.NoteTagData = js.native
   /**

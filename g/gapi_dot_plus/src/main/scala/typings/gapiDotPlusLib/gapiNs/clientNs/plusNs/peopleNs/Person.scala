@@ -11,10 +11,10 @@ trait Person extends js.Object {
   var birthday: java.lang.String
   var braggingRights: java.lang.String
   var circledByCount: scala.Double
-  var cover: gapiDotPlusLib.Anon_CoverPhoto
+  var cover: gapiDotPlusLib.Anon_CoverInfo
   var displayName: java.lang.String
   var domain: java.lang.String
-  var emails: js.Array[gapiDotPlusLib.Anon_TypeValue]
+  var emails: js.Array[gapiDotPlusLib.Anon_Type]
   var etag: java.lang.String
   var gender: java.lang.String
   var id: java.lang.String
@@ -26,14 +26,14 @@ trait Person extends js.Object {
   var nickname: java.lang.String
   var objectType: java.lang.String
   var occupation: java.lang.String
-  var organizations: js.Array[gapiDotPlusLib.Anon_Name]
-  var placesLived: js.Array[gapiDotPlusLib.Anon_Value]
+  var organizations: js.Array[gapiDotPlusLib.Anon_Department]
+  var placesLived: js.Array[gapiDotPlusLib.Anon_Primary]
   var plusOneCount: scala.Double
   var relationshipStatus: java.lang.String
   var skills: java.lang.String
   var tagline: java.lang.String
   var url: java.lang.String
-  var urls: js.Array[gapiDotPlusLib.Anon_Type]
+  var urls: js.Array[gapiDotPlusLib.Anon_Label]
   var verified: scala.Boolean
 }
 

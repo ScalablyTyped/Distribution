@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class TypeSerializerComponent[T /* <: typedocLib.distLibModelsMod.Type */] () extends SerializerComponent[T] {
   @JSName("serializeGroupSymbol")
-  var serializeGroupSymbol_TypeSerializerComponent: org.scalablytyped.runtime.Instantiable0[typedocLib.distLibModelsMod.Type] = js.native
+  var serializeGroupSymbol_TypeSerializerComponent: typedocLib.Anon_A = js.native
 }
 

@@ -12,11 +12,11 @@ trait Action extends js.Object {
     * @see CommonActionId
     **/
   var id: (chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_SHARE, 
+    chromeDashAppsLib.Anon_OFFLINENOTNECESSARY, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_SHARE[keyof chrome-apps.Anon_SHARE] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_OFFLINENOTNECESSARY[keyof chrome-apps.Anon_OFFLINENOTNECESSARY] */ js.Any
     ]
   ]) | java.lang.String
   /** The title of the action. It may be ignored for common actions.  */

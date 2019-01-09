@@ -12,6 +12,6 @@ class namespaced () extends Breadcrumb
 @JSImport("react-bootstrap/lib/Breadcrumb", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
-  var Item: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libBreadcrumbItemMod.namespaced] = js.native
+  var Item: reactDashBootstrapLib.Anon_BreadcrumbItem with org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libBreadcrumbItemMod.namespaced] = js.native
 }
 

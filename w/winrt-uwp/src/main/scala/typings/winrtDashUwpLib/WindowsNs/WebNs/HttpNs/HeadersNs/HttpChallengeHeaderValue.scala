@@ -42,6 +42,6 @@ object HttpChallengeHeaderValue extends js.Object {
     * Determines whether a string is valid HttpChallengeHeaderValue information.
     * @param input The string to validate.
     */
-  def tryParse(input: java.lang.String): winrtDashUwpLib.Anon_ReturnValueChallengeHeaderValue = js.native
+  def tryParse(input: java.lang.String): winrtDashUwpLib.Anon_ChallengeHeaderValue = js.native
 }
 

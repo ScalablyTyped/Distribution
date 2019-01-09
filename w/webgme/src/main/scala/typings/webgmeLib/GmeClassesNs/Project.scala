@@ -12,38 +12,38 @@ class Project () extends js.Object {
     * Creates a new branch with head pointing to the provided commit hash.
     */
   @JSName("createBranch")
-  var createBranch_Original: webgmeLib.Anon_BranchNameNewHashCallback = js.native
+  var createBranch_Original: webgmeLib.Anon_BranchNameCallbackNewHashCommitHash = js.native
   /**
     * Creates a new tag pointing to the provided commit hash.
     */
   @JSName("createTag")
-  var createTag_Original: webgmeLib.Anon_TagNameCommitHash = js.native
+  var createTag_Original: webgmeLib.Anon_CallbackCommitHashTagNameErrorOnlyCallback = js.native
   /**
     * Deletes the given branch.
     */
   @JSName("deleteBranch")
-  var deleteBranch_Original: webgmeLib.Anon_BranchNameOldHash = js.native
+  var deleteBranch_Original: webgmeLib.Anon_BranchNameCallbackOldHashCommitHash = js.native
   /**
     * Deletes the given tag.
     */
   @JSName("deleteTag")
-  var deleteTag_Original: webgmeLib.Anon_TagName = js.native
+  var deleteTag_Original: webgmeLib.Anon_CallbackTagNameTagname = js.native
   /**
     * Retrieves the commit hash for the head of the branch.
     */
   @JSName("getBranchHash")
-  var getBranchHash_Original: webgmeLib.Anon_BranchNameCallback = js.native
+  var getBranchHash_Original: webgmeLib.Anon_BranchNameCallbackCommitHashCommitHashCallback = js.native
   /**
     * Retrieves all branches and their current heads within the project.
     */
   @JSName("getBranches")
-  var getBranches_Original: webgmeLib.Anon_CallbackResultCallback = js.native
+  var getBranches_Original: webgmeLib.Anon_CallbackCommitHashDictionary = js.native
   /**
     * Retrieves the Class ancestor of two commits. 
     * If no ancestor exists it will result in an error.
     */
   @JSName("getClassAncestorCommit")
-  var getClassAncestorCommit_Original: webgmeLib.Anon_CommitA = js.native
+  var getClassAncestorCommit_Original: webgmeLib.Anon_CallbackCommitACommitB = js.native
   /**
     * Retrieves and array of the latest 
     * (sorted by timestamp) commits for the project. 
@@ -57,7 +57,7 @@ class Project () extends js.Object {
     * 'getHistory' is the preferred method.
     */
   @JSName("getCommits")
-  var getCommits_Original: webgmeLib.Anon_Before = js.native
+  var getCommits_Original: webgmeLib.Anon_BeforeCallback = js.native
   /**
     * Retrieves an array of commits starting from a branch(es) and/or commitHash(es). 
     * The result is ordered by the rules (applied in order) 
@@ -65,14 +65,14 @@ class Project () extends js.Object {
     *  2. By their timestamp.
     */
   @JSName("getHistory")
-  var getHistory_Original: webgmeLib.Anon_Start = js.native
+  var getHistory_Original: webgmeLib.Anon_CallbackNumberStart = js.native
   /**
     * Retrieves all tags and their commits hashes within the project.
     */
   @JSName("getTags")
-  var getTags_Original: webgmeLib.Anon_CallbackCommitHashCallback = js.native
+  var getTags_Original: webgmeLib.Anon_CallbackCommitHashCommitHashCallback = js.native
   @JSName("loadObject")
-  var loadObject_Original: webgmeLib.Anon_Key = js.native
+  var loadObject_Original: webgmeLib.Anon_CallbackKey = js.native
   /** 
     * Collects the objects from the server and pre-loads 
     * them into the cache making the load of multiple objects faster.
@@ -81,7 +81,7 @@ class Project () extends js.Object {
     * @param paths List of paths that needs to be pre-loaded.
     */
   @JSName("loadPaths")
-  var loadPaths_Original: webgmeLib.Anon_RootKey = js.native
+  var loadPaths_Original: webgmeLib.Anon_CallbackPaths = js.native
   /**
     * Makes a commit to data base. 
     * Based on the root hash and commit message a 
@@ -90,7 +90,7 @@ class Project () extends js.Object {
     * core objects to the database on the server.
     */
   @JSName("makeCommit")
-  var makeCommit_Original: webgmeLib.Anon_BranchName = js.native
+  var makeCommit_Original: webgmeLib.Anon_BranchNameCallbackCoreObjects = js.native
   /**
     * Unique ID of project, built up by the ownerId and projectName.
     */
@@ -99,7 +99,7 @@ class Project () extends js.Object {
     * Updates the head of the branch.
     */
   @JSName("setBranchHash")
-  var setBranchHash_Original: webgmeLib.Anon_BranchNameNewHash = js.native
+  var setBranchHash_Original: webgmeLib.Anon_BranchNameCallbackNewHashOldHash = js.native
   /**
     * Creates a new branch with head pointing to the provided commit hash.
     */

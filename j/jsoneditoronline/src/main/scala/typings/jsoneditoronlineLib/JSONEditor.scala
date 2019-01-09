@@ -11,7 +11,7 @@ class JSONEditor protected () extends js.Object {
   def this(container: stdLib.HTMLElement) = this()
   def this(container: stdLib.HTMLElement, options: JSONEditorOptions) = this()
   def this(container: stdLib.HTMLElement, options: JSONEditorOptions, json: js.Any) = this()
-  var Events: Anon_StopPropagation = js.native
+  var Events: Anon_Action = js.native
   var History: JSONEditorHistory = js.native
   var Node: JSONEditorNode = js.native
   var SearchBox: JSONEditorSearchBox = js.native

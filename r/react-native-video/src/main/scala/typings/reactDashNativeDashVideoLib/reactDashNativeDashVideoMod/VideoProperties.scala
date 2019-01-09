@@ -31,7 +31,7 @@ trait VideoProperties
   var onPlaybackResume: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onPlaybackStalled: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onProgress: js.UndefOr[
-    js.Function1[/* data */ reactDashNativeDashVideoLib.Anon_SeekableDuration, scala.Unit]
+    js.Function1[/* data */ reactDashNativeDashVideoLib.Anon_CurrentTime, scala.Unit]
   ] = js.undefined
   var onReadyForDisplay: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onSeek: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -60,13 +60,13 @@ trait VideoProperties
   var scaleX: js.UndefOr[scala.Double] = js.undefined
   var scaleY: js.UndefOr[scala.Double] = js.undefined
   var seek: js.UndefOr[scala.Double] = js.undefined
-  var selectedTextTrack: js.UndefOr[reactDashNativeDashVideoLib.Anon_TypeSystem] = js.undefined
+  var selectedTextTrack: js.UndefOr[reactDashNativeDashVideoLib.Anon_Disabled] = js.undefined
   /* Wrapper component */
   // Opaque type returned by require('./video.mp4')
   var source: reactDashNativeDashVideoLib.Anon_Uri | scala.Double
   /* Native only */
   var src: js.UndefOr[js.Any] = js.undefined
-  var textTracks: js.UndefOr[js.Array[reactDashNativeDashVideoLib.Anon_Type]] = js.undefined
+  var textTracks: js.UndefOr[js.Array[reactDashNativeDashVideoLib.Anon_ApplicationttmlxmlApplicationxsubrip]] = js.undefined
   var translateX: js.UndefOr[scala.Double] = js.undefined
   var translateY: js.UndefOr[scala.Double] = js.undefined
   var useTextureView: js.UndefOr[scala.Boolean] = js.undefined

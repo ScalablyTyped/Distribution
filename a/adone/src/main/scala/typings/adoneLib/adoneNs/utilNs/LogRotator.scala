@@ -15,7 +15,7 @@ class LogRotator protected () extends js.Object {
     * @param target filepath
     */
   def this(target: java.lang.String) = this()
-  def this(target: java.lang.String, options: adoneLib.Anon_Compress) = this()
+  def this(target: java.lang.String, options: adoneLib.Anon_CheckInterval) = this()
   /**
     * Completes a rotate iteration
     */

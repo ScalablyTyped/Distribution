@@ -663,7 +663,7 @@ class RangeAreas ()
   def load(): RangeAreas = js.native
   def load(option: java.lang.String): RangeAreas = js.native
   def load(option: js.Array[java.lang.String]): RangeAreas = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): RangeAreas = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): RangeAreas = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.RangeAreasLoadOptions): RangeAreas = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

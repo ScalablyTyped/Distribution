@@ -23,7 +23,7 @@ trait Process extends EventEmitter {
   var stdout: WritableStream = js.native
   var title: java.lang.String = js.native
   var version: java.lang.String = js.native
-  var versions: easyDashXapiDashSupertestLib.Anon_Uv = js.native
+  var versions: easyDashXapiDashSupertestLib.Anon_Ares = js.native
   def abort(): scala.Unit = js.native
   def chdir(directory: java.lang.String): scala.Unit = js.native
   def cwd(): java.lang.String = js.native

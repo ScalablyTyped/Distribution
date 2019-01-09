@@ -25,7 +25,7 @@ class Inventory protected ()
   /**
     * Destination bucket where inventory list files are written (documented below).
     */
-  val destination: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BucketAnonFormatPrefix] = js.native
+  val destination: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BucketAnonAccountId] = js.native
   /**
     * Specifies whether the inventory is enabled or disabled.
     */
@@ -49,7 +49,7 @@ class Inventory protected ()
   /**
     * Contains the frequency for generating inventory results (documented below).
     */
-  val schedule: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_FrequencyString] = js.native
+  val schedule: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_Frequency] = js.native
 }
 
 @JSImport("@pulumi/aws/s3/inventory", "Inventory")

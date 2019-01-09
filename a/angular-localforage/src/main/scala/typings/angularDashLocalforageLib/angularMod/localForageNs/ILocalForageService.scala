@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ILocalForageService extends js.Object {
-  def bind($scope: angularLib.angularMod.angularNs.IScope, config: angularDashLocalforageLib.Anon_Key): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def bind(
+    $scope: angularLib.angularMod.angularNs.IScope,
+    config: angularDashLocalforageLib.Anon_DefaultValue
+  ): angularLib.angularMod.angularNs.IPromise[_] = js.native
   def bind($scope: angularLib.angularMod.angularNs.IScope, key: java.lang.String): angularLib.angularMod.angularNs.IPromise[_] = js.native
   def clear(): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
   def createInstance(config: LocalForageConfig): ILocalForageService = js.native

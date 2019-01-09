@@ -13,12 +13,12 @@ trait GetLaunchTemplateResult extends js.Object {
   /**
     * Specify volumes to attach to the instance besides the volumes specified by the AMI.
     */
-  val blockDeviceMappings: js.Array[atPulumiAwsLib.Anon_EbsDeviceName]
+  val blockDeviceMappings: js.Array[atPulumiAwsLib.Anon_DeviceNameEbs]
   /**
     * Customize the credit specification of the instance. See Credit
     * Specification below for more details.
     */
-  val creditSpecifications: js.Array[atPulumiAwsLib.Anon_CpuCreditsString_1059275060]
+  val creditSpecifications: js.Array[atPulumiAwsLib.Anon_CpuCredits]
   /**
     * The default version of the launch template.
     */
@@ -83,12 +83,12 @@ trait GetLaunchTemplateResult extends js.Object {
   /**
     * The monitoring option for the instance.
     */
-  val monitorings: js.Array[atPulumiAwsLib.Anon_EnabledBoolean]
+  val monitorings: js.Array[atPulumiAwsLib.Anon_EnabledBoolean_204597847]
   /**
     * Customize network interfaces to be attached at instance boot time. See Network
     * Interfaces below for more details.
     */
-  val networkInterfaces: js.Array[atPulumiAwsLib.Anon_Ipv4Addresses]
+  val networkInterfaces: js.Array[atPulumiAwsLib.Anon_AssociatePublicIpAddress]
   /**
     * The placement of the instance.
     */
@@ -105,7 +105,7 @@ trait GetLaunchTemplateResult extends js.Object {
   /**
     * The tags to apply to the resources during launch.
     */
-  val tagSpecifications: js.Array[atPulumiAwsLib.Anon_ResourceType]
+  val tagSpecifications: js.Array[atPulumiAwsLib.Anon_KeyResourceType]
   /**
     * (Optional) A mapping of tags to assign to the launch template.
     */

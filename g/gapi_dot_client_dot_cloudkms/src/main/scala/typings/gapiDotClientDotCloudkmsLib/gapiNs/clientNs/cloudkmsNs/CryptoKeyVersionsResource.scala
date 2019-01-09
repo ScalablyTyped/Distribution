@@ -13,7 +13,7 @@ trait CryptoKeyVersionsResource extends js.Object {
     * state will be set to
     * ENABLED.
     */
-  def create(request: gapiDotClientDotCloudkmsLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
+  def create(request: gapiDotClientDotCloudkmsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
   /**
     * Schedule a CryptoKeyVersion for destruction.
     *
@@ -28,11 +28,11 @@ trait CryptoKeyVersionsResource extends js.Object {
     * Before the destroy_time is reached,
     * RestoreCryptoKeyVersion may be called to reverse the process.
     */
-  def destroy(request: gapiDotClientDotCloudkmsLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
+  def destroy(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
   /** Returns metadata for a given CryptoKeyVersion. */
-  def get(request: gapiDotClientDotCloudkmsLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
+  def get(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
   /** Lists CryptoKeyVersions. */
-  def list(request: gapiDotClientDotCloudkmsLib.Anon_ParentAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListCryptoKeyVersionsResponse]
+  def list(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ListCryptoKeyVersionsResponse]
   /**
     * Update a CryptoKeyVersion's metadata.
     *
@@ -42,7 +42,7 @@ trait CryptoKeyVersionsResource extends js.Object {
     * method. See DestroyCryptoKeyVersion and RestoreCryptoKeyVersion to
     * move between other states.
     */
-  def patch(request: gapiDotClientDotCloudkmsLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
+  def patch(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
   /**
     * Restore a CryptoKeyVersion in the
     * DESTROY_SCHEDULED,
@@ -52,6 +52,6 @@ trait CryptoKeyVersionsResource extends js.Object {
     * will be set to DISABLED,
     * and destroy_time will be cleared.
     */
-  def restore(request: gapiDotClientDotCloudkmsLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
+  def restore(request: gapiDotClientDotCloudkmsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[CryptoKeyVersion]
 }
 

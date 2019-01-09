@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ICellNavApi[TEntity] extends js.Object {
   // Events
-  var on: uiDashGridLib.Anon_ViewPortKeyPress[TEntity]
+  var on: uiDashGridLib.Anon_Handler[TEntity]
   // Methods
   /**
     * Gets the currently selected rows and columns.  array is empty if no selection has occurred

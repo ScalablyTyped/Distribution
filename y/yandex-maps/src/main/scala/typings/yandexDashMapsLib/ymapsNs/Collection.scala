@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(yandexDashMapsLib.ymapsNs.ICollection because Would inherit conflicting mutable fields List(events))*/
-@JSGlobal("ymaps.Collection")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- yandexDashMapsLib.ymapsNs.ICollection because var conflicts: events. Inlined add, getIterator, remove */ @JSGlobal("ymaps.Collection")
 @js.native
 class Collection ()
   extends yandexDashMapsLib.ymapsNs.collectionNs.Item {

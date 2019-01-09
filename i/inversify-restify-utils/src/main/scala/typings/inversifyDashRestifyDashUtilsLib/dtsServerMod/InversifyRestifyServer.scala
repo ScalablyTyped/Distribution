@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("inversify-restify-utils/dts/server", "InversifyRestifyServer")
 @js.native
 class InversifyRestifyServer protected () extends js.Object {
-  def this(container: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversify.interfaces.Container */ js.Any) = this()
-  def this(container: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversify.interfaces.Container */ js.Any, opts: restifyLib.restifyMod.ServerOptions with inversifyDashRestifyDashUtilsLib.dtsInterfacesMod.interfacesNs.ServerOptions) = this()
+  def this(container: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversify.interfaces.Container */ js.Any) = this()
+  def this(container: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversify.interfaces.Container */ js.Any, opts: restifyLib.restifyMod.ServerOptions with inversifyDashRestifyDashUtilsLib.dtsInterfacesMod.interfacesNs.ServerOptions) = this()
   var app: js.Any = js.native
   var configFn: js.Any = js.native
   var container: js.Any = js.native

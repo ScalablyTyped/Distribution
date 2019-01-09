@@ -26,7 +26,7 @@ class Plugins protected () extends js.Object {
     *
     * @return {Object} The results object
     */
-  def getResults(): protractorLib.Anon_SpecResults = js.native
+  def getResults(): protractorLib.Anon_FailedCount = js.native
   def onPageLoad(args: js.Any*): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[_]] = js.native
   def onPageStable(args: js.Any*): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[js.Array[_]] = js.native
   def onPrepare(args: js.Any*): qLib.qMod.QNs.Promise[js.Array[_]] = js.native

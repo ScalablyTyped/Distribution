@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/array/for-each", JSImport.Namespace)
 @js.native
 object libraryFnArrayForDashEachMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayCallbackfnValueIndex]
+  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayCallbackfnIndexThisArg]
 

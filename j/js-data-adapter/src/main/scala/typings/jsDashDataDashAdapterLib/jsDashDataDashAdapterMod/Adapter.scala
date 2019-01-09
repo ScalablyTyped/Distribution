@@ -162,20 +162,11 @@ class Adapter () extends js.Object {
 @JSImport("js-data-adapter", "Adapter")
 @js.native
 object Adapter extends js.Object {
-  def extend(): org.scalablytyped.runtime.Instantiable1[
-    /* opts */ js.UndefOr[/* opts */ jsDashDataDashAdapterLib.jsDashDataDashAdapterMod.IAdapterOpts], 
-    jsDashDataDashAdapterLib.jsDashDataDashAdapterMod.Adapter
-  ] = js.native
-  def extend(instanceProps: jsDashDataDashAdapterLib.jsDashDataDashAdapterMod.IDict): org.scalablytyped.runtime.Instantiable1[
-    /* opts */ js.UndefOr[/* opts */ jsDashDataDashAdapterLib.jsDashDataDashAdapterMod.IAdapterOpts], 
-    jsDashDataDashAdapterLib.jsDashDataDashAdapterMod.Adapter
-  ] = js.native
+  def extend(): jsDashDataDashAdapterLib.Anon_ClassProps = js.native
+  def extend(instanceProps: jsDashDataDashAdapterLib.jsDashDataDashAdapterMod.IDict): jsDashDataDashAdapterLib.Anon_ClassProps = js.native
   def extend(
     instanceProps: jsDashDataDashAdapterLib.jsDashDataDashAdapterMod.IDict,
     classProps: jsDashDataDashAdapterLib.jsDashDataDashAdapterMod.IDict
-  ): org.scalablytyped.runtime.Instantiable1[
-    /* opts */ js.UndefOr[/* opts */ jsDashDataDashAdapterLib.jsDashDataDashAdapterMod.IAdapterOpts], 
-    jsDashDataDashAdapterLib.jsDashDataDashAdapterMod.Adapter
-  ] = js.native
+  ): jsDashDataDashAdapterLib.Anon_ClassProps = js.native
 }
 

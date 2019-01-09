@@ -5,26 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait argv extends js.Object {
   // Cleans out current options
-  var clear: js.Function0[js.Object]
+  def clear(): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias argv.argv */ js.Object = js.native
   // Prints out the help doc
-  var help: js.Function1[/* mod */ js.UndefOr[java.lang.String], js.Object]
+  def help(): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias argv.argv */ js.Object = js.native
+  def help(mod: java.lang.String): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias argv.argv */ js.Object = js.native
   // Description setup
-  var info: js.Function2[/* mod */ java.lang.String, /* description */ js.UndefOr[module], js.Object]
+  def info(mod: java.lang.String): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias argv.argv */ js.Object = js.native
+  def info(mod: java.lang.String, description: module): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias argv.argv */ js.Object = js.native
   // Creating module
-  var mod: js.Function1[/* object */ module | js.Array[module], js.Object]
+  def mod(`object`: module): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias argv.argv */ js.Object = js.native
+  def mod(`object`: js.Array[module]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias argv.argv */ js.Object = js.native
   // Adding options to definitions list
-  var option: js.Function1[/* mod */ helpOption | js.Array[helpOption], js.Object]
+  def option(mod: helpOption): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias argv.argv */ js.Object = js.native
+  def option(mod: js.Array[helpOption]): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias argv.argv */ js.Object = js.native
   // Runs the arguments parser
-  var run: js.Function1[/* argv */ js.UndefOr[js.Array[java.lang.String]], args]
+  def run(): args = js.native
+  def run(argv: js.Array[java.lang.String]): args = js.native
   // Creates custom type function
-  var `type`: js.Function2[
-    /* name */ java.lang.String | org.scalablytyped.runtime.StringDictionary[typeFunction], 
-    /* callback */ js.UndefOr[typeFunction], 
-    _
-  ]
+  def `type`(name: java.lang.String): js.Any = js.native
+  def `type`(name: java.lang.String, callback: typeFunction): js.Any = js.native
+  def `type`(name: org.scalablytyped.runtime.StringDictionary[typeFunction]): js.Any = js.native
+  def `type`(name: org.scalablytyped.runtime.StringDictionary[typeFunction], callback: typeFunction): js.Any = js.native
   // Setting version number, and auto setting version option
-  var version: js.Function1[/* v */ java.lang.String, js.Object]
+  def version(v: java.lang.String): /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias argv.argv */ js.Object = js.native
 }
 

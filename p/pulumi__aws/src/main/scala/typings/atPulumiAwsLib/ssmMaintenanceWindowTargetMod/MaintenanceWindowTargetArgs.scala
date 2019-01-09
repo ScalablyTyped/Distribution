@@ -18,7 +18,7 @@ trait MaintenanceWindowTargetArgs extends js.Object {
     * The targets (either instances or tags). Instances are specified using Key=instanceids,Values=instanceid1,instanceid2. Tags are specified using Key=tag name,Values=tag value.
     */
   val targets: atPulumiPulumiLib.resourceMod.Input[
-    js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ValuesKeyInput]]
+    js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyValuesArray]]
   ]
   /**
     * The Id of the maintenance window to register the target with.

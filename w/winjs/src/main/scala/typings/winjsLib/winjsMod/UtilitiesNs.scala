@@ -23,7 +23,7 @@ object UtilitiesNs extends js.Object {
   /**
     * A mixin that contains event-related functions.
     **/
-  var eventMixin: winjsLib.Anon_RemoveEventListener = js.native
+  var eventMixin: winjsLib.Anon_AddEventListener = js.native
   //#endregion Functions
   //#region Properties
   /**
@@ -143,7 +143,7 @@ object UtilitiesNs extends js.Object {
     * @param element The element.
     * @returns An object with two properties: scrollLeft and scrollTop
     **/
-  def getScrollPosition(element: stdLib.HTMLElement): winjsLib.Anon_ScrollTop = js.native
+  def getScrollPosition(element: stdLib.HTMLElement): winjsLib.Anon_ScrollLeft = js.native
   /**
     * Gets the tab index of the specified element.
     * @param element The element
@@ -261,7 +261,7 @@ object UtilitiesNs extends js.Object {
     * @param element The element.
     * @param position An object describing the position to set.
     **/
-  def setScrollPosition(element: stdLib.HTMLElement, position: winjsLib.Anon_ScrollTop): scala.Unit = js.native
+  def setScrollPosition(element: stdLib.HTMLElement, position: winjsLib.Anon_ScrollLeft): scala.Unit = js.native
   /**
     * Configures a logger that writes messages containing the specified tags to the JavaScript console.
     * @param options The tags for messages to log. Multiple tags should be separated by spaces. May contain type, tags, excludeTags and action properties.

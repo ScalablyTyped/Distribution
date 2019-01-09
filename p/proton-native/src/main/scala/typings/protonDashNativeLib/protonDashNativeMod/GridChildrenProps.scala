@@ -25,6 +25,6 @@ trait GridChildrenProps extends js.Object {
   /**
     * How many rows/columns the component takes off.
     */
-  var span: js.UndefOr[protonDashNativeLib.Anon_Y] = js.undefined
+  var span: js.UndefOr[protonDashNativeLib.Anon_X] = js.undefined
 }
 

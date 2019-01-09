@@ -23,7 +23,7 @@ trait IncludeOptions extends js.Object {
   /**
     * A list of attributes to select from the child model
     */
-  var attributes: js.UndefOr[FindOptionsAttributesArray | sequelizeLib.Anon_Include] = js.undefined
+  var attributes: js.UndefOr[FindOptionsAttributesArray | sequelizeLib.Anon_Exclude] = js.undefined
   /**
     * Load further nested related models
     */

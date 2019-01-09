@@ -147,7 +147,7 @@ trait Memcached
     cb: js.ThisFunction2[
       /* this */ memcachedLib.memcachedMod.MemcachedNs.CommandData, 
       /* err */ js.Any, 
-      /* data */ memcachedLib.Anon_Key, 
+      /* data */ memcachedLib.Anon_Cas, 
       scala.Unit
     ]
   ): scala.Unit = js.native

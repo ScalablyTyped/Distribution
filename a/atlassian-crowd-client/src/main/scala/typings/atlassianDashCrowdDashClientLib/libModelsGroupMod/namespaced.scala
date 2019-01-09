@@ -25,6 +25,6 @@ class namespaced protected () extends Group {
 @JSImport("atlassian-crowd-client/lib/models/group", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
-  def fromCrowd(obj: atlassianDashCrowdDashClientLib.Anon_Description): atlassianDashCrowdDashClientLib.libModelsGroupMod.Group = js.native
+  def fromCrowd(obj: atlassianDashCrowdDashClientLib.Anon_Active): atlassianDashCrowdDashClientLib.libModelsGroupMod.Group = js.native
 }
 

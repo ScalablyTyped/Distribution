@@ -16,24 +16,18 @@ trait VideoProps extends js.Object {
   var captions: java.lang.String
   var controls: js.UndefOr[scala.Boolean] = js.undefined
   var loop: js.UndefOr[scala.Boolean] = js.undefined
-  var onDurationChange: js.UndefOr[js.Function1[/* args */ gestaltLib.Anon_EventDuration, scala.Unit]] = js.undefined
-  var onEnded: js.UndefOr[
-    js.Function1[/* args */ gestaltLib.Anon_EventSyntheticEventHTMLVideoElement, scala.Unit]
-  ] = js.undefined
+  var onDurationChange: js.UndefOr[js.Function1[/* args */ gestaltLib.Anon_Duration, scala.Unit]] = js.undefined
+  var onEnded: js.UndefOr[js.Function1[/* args */ gestaltLib.Anon_EventHTMLVideoElement, scala.Unit]] = js.undefined
   var onFullscreenChange: js.UndefOr[js.Function1[/* args */ gestaltLib.Anon_EventFullscreen, scala.Unit]] = js.undefined
   var onLoadedChange: js.UndefOr[js.Function1[/* args */ gestaltLib.Anon_EventLoaded, scala.Unit]] = js.undefined
   var onPause: js.UndefOr[
-    js.Function1[/* args */ gestaltLib.Anon_EventSyntheticEventHTMLDivElement, scala.Unit]
+    js.Function1[/* args */ gestaltLib.Anon_EventHTMLDivElementSyntheticEvent, scala.Unit]
   ] = js.undefined
   var onPlay: js.UndefOr[
-    js.Function1[/* args */ gestaltLib.Anon_EventSyntheticEventHTMLDivElement, scala.Unit]
+    js.Function1[/* args */ gestaltLib.Anon_EventHTMLDivElementSyntheticEvent, scala.Unit]
   ] = js.undefined
-  var onReady: js.UndefOr[
-    js.Function1[/* args */ gestaltLib.Anon_EventSyntheticEventHTMLVideoElement, scala.Unit]
-  ] = js.undefined
-  var onSeek: js.UndefOr[
-    js.Function1[/* args */ gestaltLib.Anon_EventSyntheticEventHTMLVideoElement, scala.Unit]
-  ] = js.undefined
+  var onReady: js.UndefOr[js.Function1[/* args */ gestaltLib.Anon_EventHTMLVideoElement, scala.Unit]] = js.undefined
+  var onSeek: js.UndefOr[js.Function1[/* args */ gestaltLib.Anon_EventHTMLVideoElement, scala.Unit]] = js.undefined
   var onTimeChange: js.UndefOr[js.Function1[/* args */ gestaltLib.Anon_EventTime, scala.Unit]] = js.undefined
   var onVolumeChange: js.UndefOr[js.Function1[/* args */ gestaltLib.Anon_EventVolume, scala.Unit]] = js.undefined
   var playbackRate: js.UndefOr[scala.Double] = js.undefined

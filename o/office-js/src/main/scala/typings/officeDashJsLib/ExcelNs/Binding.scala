@@ -93,7 +93,7 @@ class Binding ()
   def load(): Binding = js.native
   def load(option: java.lang.String): Binding = js.native
   def load(option: js.Array[java.lang.String]): Binding = js.native
-  def load(option: officeDashJsLib.Anon_Select): Binding = js.native
+  def load(option: officeDashJsLib.Anon_Expand): Binding = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.BindingLoadOptions): Binding = js.native
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.BindingData = js.native
 }

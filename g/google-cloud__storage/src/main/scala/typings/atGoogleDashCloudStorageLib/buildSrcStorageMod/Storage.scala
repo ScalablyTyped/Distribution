@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ @JSImport("@google-cloud/storage/build/src/storage", "Storage")
 @js.native
 class Storage () extends js.Object {
@@ -93,7 +93,7 @@ class Storage () extends js.Object {
   def getServiceAccount(options: GetServiceAccountOptions, callback: GetServiceAccountCallback): scala.Unit = js.native
 }
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ @JSImport("@google-cloud/storage/build/src/storage", "Storage")
 @js.native
 object Storage extends js.Object {

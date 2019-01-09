@@ -13,7 +13,7 @@ trait Insert2 extends js.Object {
   /** What kind of resource this is. */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /** Model metadata. */
-  var modelInfo: js.UndefOr[gapiDotClientDotPredictionLib.Anon_NumberLabels] = js.undefined
+  var modelInfo: js.UndefOr[gapiDotClientDotPredictionLib.Anon_ClassWeightedAccuracy] = js.undefined
   /** Type of predictive model (CLASSIFICATION or REGRESSION). */
   var modelType: js.UndefOr[java.lang.String] = js.undefined
   /** A URL to re-request this resource. */

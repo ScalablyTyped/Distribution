@@ -1253,12 +1253,12 @@ trait MathJsChain extends js.Object {
   def simplify(): MathJsChain = js.native
   def simplify(
     rules: js.Array[
-      mathjsLib.Anon_RL | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
+      mathjsLib.Anon_LR | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
     ]
   ): MathJsChain = js.native
   def simplify(
     rules: js.Array[
-      mathjsLib.Anon_RL | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
+      mathjsLib.Anon_LR | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
     ],
     scope: js.Object
   ): MathJsChain = js.native

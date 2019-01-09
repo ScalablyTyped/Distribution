@@ -18,7 +18,7 @@ trait SkipOnlyTest extends js.Object {
   /** Only execute this test */
   def only(
     desc: java.lang.String,
-    options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify TestOptions */ js.Any,
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TestOptions */ js.Any,
     cb: labLib.TestCallback
   ): js.Object = js.native
   /** Skip this test */
@@ -26,7 +26,7 @@ trait SkipOnlyTest extends js.Object {
   /** Skip this test */
   def skip(
     desc: java.lang.String,
-    options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify TestOptions */ js.Any,
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TestOptions */ js.Any,
     cb: labLib.TestCallback
   ): js.Object = js.native
 }

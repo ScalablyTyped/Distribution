@@ -15,7 +15,7 @@ trait Gradient extends js.Object {
     */
   var get: js.UndefOr[js.Function1[/* format */ java.lang.String, java.lang.String]] = js.undefined
   var linearGradient: js.UndefOr[LinearGradient | js.Array[scala.Double]] = js.undefined
-  var radialGradient: js.UndefOr[highchartsLib.Anon_Cy] = js.undefined
+  var radialGradient: js.UndefOr[highchartsLib.Anon_Cx] = js.undefined
   /**
     * The raw input
     */

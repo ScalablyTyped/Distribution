@@ -36,13 +36,13 @@ trait Map extends Evented {
   @JSName("addControl")
   def `addControl_top-right`(control: IControl, position: mapboxDashGlLib.mapboxDashGlLibStrings.`top-right`): this.type = js.native
   def addImage(name: java.lang.String, image: mapboxDashGlLib.Anon_Data): this.type = js.native
-  def addImage(name: java.lang.String, image: mapboxDashGlLib.Anon_Data, options: mapboxDashGlLib.Anon_Sdf): this.type = js.native
+  def addImage(name: java.lang.String, image: mapboxDashGlLib.Anon_Data, options: mapboxDashGlLib.Anon_PixelRatio): this.type = js.native
   def addImage(name: java.lang.String, image: stdLib.ArrayBufferView): this.type = js.native
-  def addImage(name: java.lang.String, image: stdLib.ArrayBufferView, options: mapboxDashGlLib.Anon_Sdf): this.type = js.native
+  def addImage(name: java.lang.String, image: stdLib.ArrayBufferView, options: mapboxDashGlLib.Anon_PixelRatio): this.type = js.native
   def addImage(name: java.lang.String, image: stdLib.HTMLImageElement): this.type = js.native
-  def addImage(name: java.lang.String, image: stdLib.HTMLImageElement, options: mapboxDashGlLib.Anon_Sdf): this.type = js.native
+  def addImage(name: java.lang.String, image: stdLib.HTMLImageElement, options: mapboxDashGlLib.Anon_PixelRatio): this.type = js.native
   def addImage(name: java.lang.String, image: stdLib.ImageData): this.type = js.native
-  def addImage(name: java.lang.String, image: stdLib.ImageData, options: mapboxDashGlLib.Anon_Sdf): this.type = js.native
+  def addImage(name: java.lang.String, image: stdLib.ImageData, options: mapboxDashGlLib.Anon_PixelRatio): this.type = js.native
   def addLayer(layer: Layer): this.type = js.native
   def addLayer(layer: Layer, before: java.lang.String): this.type = js.native
   def addSource(id: java.lang.String, source: GeoJSONSource): this.type = js.native
@@ -80,7 +80,7 @@ trait Map extends Evented {
   def getCanvasContainer(): stdLib.HTMLElement = js.native
   def getCenter(): LngLat = js.native
   def getContainer(): stdLib.HTMLElement = js.native
-  def getFeatureState(feature: mapboxDashGlLib.Anon_SourceLayerSource): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def getFeatureState(feature: mapboxDashGlLib.Anon_Id): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def getFeatureState(feature: MapboxGeoJSONFeature): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def getFilter(layer: java.lang.String): js.Array[_] = js.native
   def getLayer(id: java.lang.String): Layer = js.native
@@ -1169,7 +1169,7 @@ trait Map extends Evented {
   def queryRenderedFeatures(pointOrBox: PointLike): js.Array[MapboxGeoJSONFeature] = js.native
   def queryRenderedFeatures(pointOrBox: PointLike, parameters: mapboxDashGlLib.Anon_Filter): js.Array[MapboxGeoJSONFeature] = js.native
   def querySourceFeatures(sourceID: java.lang.String): js.Array[MapboxGeoJSONFeature] = js.native
-  def querySourceFeatures(sourceID: java.lang.String, parameters: mapboxDashGlLib.Anon_SourceLayer): js.Array[MapboxGeoJSONFeature] = js.native
+  def querySourceFeatures(sourceID: java.lang.String, parameters: mapboxDashGlLib.Anon_FilterSourceLayer): js.Array[MapboxGeoJSONFeature] = js.native
   def remove(): scala.Unit = js.native
   def removeControl(control: Control): this.type = js.native
   def removeControl(control: IControl): this.type = js.native
@@ -1188,10 +1188,7 @@ trait Map extends Evented {
   def setBearing(bearing: scala.Double, eventData: EventData): this.type = js.native
   def setCenter(center: LngLatLike): this.type = js.native
   def setCenter(center: LngLatLike, eventData: EventData): this.type = js.native
-  def setFeatureState(
-    feature: mapboxDashGlLib.Anon_SourceLayerSource,
-    state: org.scalablytyped.runtime.StringDictionary[js.Any]
-  ): scala.Unit = js.native
+  def setFeatureState(feature: mapboxDashGlLib.Anon_Id, state: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def setFeatureState(feature: MapboxGeoJSONFeature, state: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def setFilter(layer: java.lang.String): this.type = js.native
   def setFilter(layer: java.lang.String, filter: js.Array[_]): this.type = js.native

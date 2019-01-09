@@ -12,13 +12,13 @@ class PointModel protected ()
       stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener], 
       stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModelListener
     ] {
-  def this(link: stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener], points: stormDashReactDashDiagramsLib.Anon_Y) = this()
+  def this(link: stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener], points: stormDashReactDashDiagramsLib.Anon_X) = this()
   var x: scala.Double = js.native
   var y: scala.Double = js.native
   def getLink(): stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener] = js.native
   def getX(): scala.Double = js.native
   def getY(): scala.Double = js.native
   def isConnectedToPort(): scala.Boolean = js.native
-  def updateLocation(points: stormDashReactDashDiagramsLib.Anon_Y): scala.Unit = js.native
+  def updateLocation(points: stormDashReactDashDiagramsLib.Anon_X): scala.Unit = js.native
 }
 

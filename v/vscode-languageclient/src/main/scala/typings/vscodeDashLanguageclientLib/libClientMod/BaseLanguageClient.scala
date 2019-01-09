@@ -46,7 +46,7 @@ abstract class BaseLanguageClient protected () extends js.Object {
   var createConnection: js.Any = js.native
   var data2String: js.Any = js.native
   val diagnostics: js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify DiagnosticCollection */ _
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DiagnosticCollection */ _
   ] = js.native
   var fillInitializeParams: js.Any = js.native
   var forceDocumentSync: js.Any = js.native
@@ -65,7 +65,7 @@ abstract class BaseLanguageClient protected () extends js.Object {
   var logObjectTrace: js.Any = js.native
   var logTrace: js.Any = js.native
   var notifyFileEvent: js.Any = js.native
-  val outputChannel: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify OutputChannel */ js.Any = js.native
+  val outputChannel: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OutputChannel */ js.Any = js.native
   val protocol2CodeConverter: vscodeDashLanguageclientLib.libProtocolConverterMod.Converter = js.native
   var refreshTrace: js.Any = js.native
   var resolveConnection: js.Any = js.native

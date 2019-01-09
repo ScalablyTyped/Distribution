@@ -19,11 +19,7 @@ class Mapper () extends Component {
   @JSName("notify")
   var notify_FMapper: scala.Boolean = js.native
   var raw: scala.Boolean = js.native
-  var recordClass: org.scalablytyped.runtime.Instantiable2[
-    /* props */ js.UndefOr[/* props */ js.Any], 
-    /* opts */ js.UndefOr[/* opts */ js.Any], 
-    Record
-  ] = js.native
+  var recordClass: jsDashDataLib.Anon_Mapper = js.native
   var relationFields: js.Array[java.lang.String] = js.native
   var relationList: js.Array[_] = js.native
   var schema: Schema = js.native

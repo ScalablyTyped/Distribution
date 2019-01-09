@@ -12,7 +12,7 @@ trait Global extends js.Object {
   var Array_Original: stdLib.ArrayConstructor = js.native
   @JSName("Boolean")
   var Boolean_Original: stdLib.BooleanConstructor = js.native
-  var Buffer: easyDashXDashHeadersLib.Anon_IsEncoding = js.native
+  var Buffer: easyDashXDashHeadersLib.Anon_Array = js.native
   var DataView: stdLib.DataViewConstructor = js.native
   @JSName("Date")
   var Date_Original: stdLib.DateConstructor = js.native
@@ -61,7 +61,7 @@ trait Global extends js.Object {
   var Uint8ClampedArray: js.Function = js.native
   var WeakMap: stdLib.WeakMapConstructor = js.native
   var WeakSet: js.Function = js.native
-  var console: nodeLib.Console = js.native
+  var console: nodeLib.Console with stdLib.Console = js.native
   @JSName("decodeURIComponent")
   var decodeURIComponent_Original: js.Function1[/* encodedURIComponent */ java.lang.String, java.lang.String] = js.native
   @JSName("decodeURI")
@@ -80,7 +80,7 @@ trait Global extends js.Object {
   @JSName("parseFloat")
   var parseFloat_Original: js.Function1[/* string */ java.lang.String, scala.Double] = js.native
   @JSName("parseInt")
-  var parseInt_Original: js.Function2[/* s */ java.lang.String, /* radix */ scala.Double, scala.Double] = js.native
+  var parseInt_Original: easyDashXDashHeadersLib.Anon_Radix = js.native
   var process: Process = js.native
   var root: Global = js.native
   var undefined: js.UndefOr[scala.Nothing] = js.native
@@ -130,10 +130,11 @@ trait Global extends js.Object {
   def isFinite(number: scala.Double): scala.Boolean = js.native
   def isNaN(number: scala.Double): scala.Boolean = js.native
   def parseFloat(string: java.lang.String): scala.Double = js.native
+  def parseInt(s: java.lang.String): scala.Double = js.native
   def parseInt(s: java.lang.String, radix: scala.Double): scala.Double = js.native
-  def setImmediate(callback: js.Function1[/* repeated */js.Any, scala.Unit], args: js.Any*): js.Any = js.native
-  def setInterval(callback: js.Function1[/* repeated */js.Any, scala.Unit], ms: scala.Double, args: js.Any*): Timer = js.native
-  def setTimeout(callback: js.Function1[/* repeated */js.Any, scala.Unit], ms: scala.Double, args: js.Any*): Timer = js.native
+  def setImmediate(callback: js.Function1[/* repeated */ js.Any, scala.Unit], args: js.Any*): js.Any = js.native
+  def setInterval(callback: js.Function1[/* repeated */ js.Any, scala.Unit], ms: scala.Double, args: js.Any*): Timer = js.native
+  def setTimeout(callback: js.Function1[/* repeated */ js.Any, scala.Unit], ms: scala.Double, args: js.Any*): Timer = js.native
   def unescape(str: java.lang.String): java.lang.String = js.native
 }
 

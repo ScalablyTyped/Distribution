@@ -28,7 +28,7 @@ trait Editable[TRow /* <: js.Object */, K /* <: java.lang.String */] extends js.
   	 * If the array is an array of objects, the fields 'text' can be used for the display text and 'value' to specify
   	 * the option's value.
   	 */
-  var options: js.UndefOr[reactDashBootstrapDashTableLib.Anon_Values[TRow]] = js.undefined
+  var options: js.UndefOr[reactDashBootstrapDashTableLib.Anon_Row[TRow]] = js.undefined
   /**
   	 * @deprecated Use placeholder inside the attrs field instead.
   	 * Text to display as placeholder text in the editor component.

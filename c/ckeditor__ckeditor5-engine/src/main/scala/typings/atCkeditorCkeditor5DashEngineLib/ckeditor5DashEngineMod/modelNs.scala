@@ -116,12 +116,12 @@ object modelNs extends js.Object {
     def deleteContent(
       selection: DocumentSelection,
       batch: Batch,
-      options: atCkeditorCkeditor5DashEngineLib.Anon_LeaveUnmergedDoNotResetEntireContent
+      options: atCkeditorCkeditor5DashEngineLib.Anon_DoNotResetEntireContentLeaveUnmerged
     ): scala.Unit = js.native
     def deleteContent(
       selection: Selection,
       batch: Batch,
-      options: atCkeditorCkeditor5DashEngineLib.Anon_LeaveUnmergedDoNotResetEntireContent
+      options: atCkeditorCkeditor5DashEngineLib.Anon_DoNotResetEntireContentLeaveUnmerged
     ): scala.Unit = js.native
     def destroy(): scala.Unit = js.native
     def enqueueChange(batchOrType: Batch, callback: js.Function): scala.Unit = js.native
@@ -154,9 +154,9 @@ object modelNs extends js.Object {
     def insertContent(content: Item, selectable: Selection): scala.Unit = js.native
     def insertContent(content: Item, selectable: stdLib.Iterable[Range]): scala.Unit = js.native
     def modifySelection(selection: DocumentSelection): scala.Unit = js.native
-    def modifySelection(selection: DocumentSelection, options: atCkeditorCkeditor5DashEngineLib.Anon_Direction): scala.Unit = js.native
+    def modifySelection(selection: DocumentSelection, options: atCkeditorCkeditor5DashEngineLib.Anon_Backward): scala.Unit = js.native
     def modifySelection(selection: Selection): scala.Unit = js.native
-    def modifySelection(selection: Selection, options: atCkeditorCkeditor5DashEngineLib.Anon_Direction): scala.Unit = js.native
+    def modifySelection(selection: Selection, options: atCkeditorCkeditor5DashEngineLib.Anon_Backward): scala.Unit = js.native
   }
   
   // engine/model/node
@@ -173,12 +173,12 @@ object modelNs extends js.Object {
     val previousSibling: Node | scala.Null = js.native
     val root: Node | DocumentFragment = js.native
     val startOffset: scala.Double | scala.Null = js.native
-    def getAncestors(options: atCkeditorCkeditor5DashEngineLib.Anon_ParentFirst): js.Array[Node] = js.native
+    def getAncestors(options: atCkeditorCkeditor5DashEngineLib.Anon_IncludeSelf): js.Array[Node] = js.native
     def getAttribute(key: java.lang.String): js.Any = js.native
     def getAttributeKeys(): stdLib.Iterable[java.lang.String] = js.native
     def getAttributes(): stdLib.Iterable[_] = js.native
     def getCommonAncestor(node: Node): Element | DocumentFragment | scala.Null = js.native
-    def getCommonAncestor(node: Node, options: atCkeditorCkeditor5DashEngineLib.Anon_IncludeSelf): Element | DocumentFragment | scala.Null = js.native
+    def getCommonAncestor(node: Node, options: atCkeditorCkeditor5DashEngineLib.Anon_IncludeSelfBoolean): Element | DocumentFragment | scala.Null = js.native
     def getPath(): js.Array[scala.Double] = js.native
     def hasAttribute(key: java.lang.String): scala.Boolean = js.native
     def is(`type`: java.lang.String, name: java.lang.String): scala.Boolean = js.native
@@ -355,7 +355,7 @@ object modelNs extends js.Object {
     val root: Node | DocumentFragment = js.native
     val startOffset: scala.Double = js.native
     val textNode: Text = js.native
-    def getAncestors(options: atCkeditorCkeditor5DashEngineLib.Anon_ParentFirstIncludeSelf): js.Array[TextProxy | Element | DocumentFragment] = js.native
+    def getAncestors(options: atCkeditorCkeditor5DashEngineLib.Anon_IncludeSelfParentFirst): js.Array[TextProxy | Element | DocumentFragment] = js.native
     def getAttribute(key: java.lang.String): js.Any = js.native
     def getAttributeKeys(): stdLib.Iterable[java.lang.String] = js.native
     def getAttributes(): stdLib.Iterable[_] = js.native
@@ -370,7 +370,7 @@ object modelNs extends js.Object {
   @js.native
   class TreeWalker ()
     extends stdLib.Iterable[TreeWalkerValue] {
-    def this(options: atCkeditorCkeditor5DashEngineLib.Anon_SingleCharacters) = this()
+    def this(options: atCkeditorCkeditor5DashEngineLib.Anon_BackwardBoundaries) = this()
     val boundaries: Range = js.native
     val direction: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.backward | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.forward = js.native
     val ignoreElementEnd: scala.Boolean = js.native
@@ -531,7 +531,7 @@ object modelNs extends js.Object {
     def transformSets(
       operationsA: js.Array[Operation],
       operationsB: js.Array[Operation],
-      options: atCkeditorCkeditor5DashEngineLib.Anon_UseRelations
+      options: atCkeditorCkeditor5DashEngineLib.Anon_Document
     ): js.Object = js.native
   }
   
@@ -547,7 +547,7 @@ object modelNs extends js.Object {
       model: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Model,
       selection: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.DocumentSelection,
       batch: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Batch,
-      options: atCkeditorCkeditor5DashEngineLib.Anon_LeaveUnmerged
+      options: atCkeditorCkeditor5DashEngineLib.Anon_DoNotResetEntireContent
     ): scala.Unit = js.native
     def deleteContent(
       model: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Model,
@@ -558,7 +558,7 @@ object modelNs extends js.Object {
       model: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Model,
       selection: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Selection,
       batch: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Batch,
-      options: atCkeditorCkeditor5DashEngineLib.Anon_LeaveUnmerged
+      options: atCkeditorCkeditor5DashEngineLib.Anon_DoNotResetEntireContent
     ): scala.Unit = js.native
     def getSelectedContent(
       model: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Model,
@@ -644,7 +644,7 @@ object modelNs extends js.Object {
     def modifySelection(
       model: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Model,
       selection: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.DocumentSelection,
-      options: atCkeditorCkeditor5DashEngineLib.Anon_Direction
+      options: atCkeditorCkeditor5DashEngineLib.Anon_Backward
     ): scala.Unit = js.native
     def modifySelection(
       model: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Model,
@@ -653,7 +653,7 @@ object modelNs extends js.Object {
     def modifySelection(
       model: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Model,
       selection: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Selection,
-      options: atCkeditorCkeditor5DashEngineLib.Anon_Direction
+      options: atCkeditorCkeditor5DashEngineLib.Anon_Backward
     ): scala.Unit = js.native
   }
   

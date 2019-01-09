@@ -29,7 +29,10 @@ trait Anon_Accesstoken extends js.Object {
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
-  /** Name of the resource to list Policies for. */
+  /**
+    * REQUIRED: The resource for which the policy detail is being requested.
+    * See the operation documentation for the appropriate value for this field.
+    */
   var resource: java.lang.String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

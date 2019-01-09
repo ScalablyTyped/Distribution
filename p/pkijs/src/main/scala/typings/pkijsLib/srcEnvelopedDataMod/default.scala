@@ -27,7 +27,7 @@ class default () extends EnvelopedData {
   /* CompleteClass */
   override def addRecipientByCertificate(
     certificate: pkijsLib.srcCertificateMod.default,
-    parameters: pkijsLib.Anon_KekEncryptionLength,
+    parameters: pkijsLib.Anon_KdfAlgorithm,
     variant: scala.Double
   ): scala.Boolean = js.native
   /**
@@ -39,7 +39,7 @@ class default () extends EnvelopedData {
   /* CompleteClass */
   override def addRecipientByPreDefinedData(
     preDefinedData: stdLib.ArrayBuffer,
-    parameters: pkijsLib.Anon_KeyEncryptionAlgorithmParams,
+    parameters: pkijsLib.Anon_HmacHashAlgorithm,
     variant: scala.Double
   ): scala.Boolean = js.native
   /**
@@ -49,7 +49,7 @@ class default () extends EnvelopedData {
     * @returns {Promise}
     */
   /* CompleteClass */
-  override def decrypt(recipientIndex: scala.Double, parameters: pkijsLib.Anon_RecipientPrivateKey): js.Thenable[stdLib.ArrayBuffer] = js.native
+  override def decrypt(recipientIndex: scala.Double, parameters: pkijsLib.Anon_RecipientCertificate): js.Thenable[stdLib.ArrayBuffer] = js.native
   /**
     * Create a new CMS Enveloped Data content with encrypted data
     * @param {Algorithm} contentEncryptionAlgorithm WebCrypto algorithm. For the moment here could be only "AES-CBC" or "AES-GCM" algorithms.

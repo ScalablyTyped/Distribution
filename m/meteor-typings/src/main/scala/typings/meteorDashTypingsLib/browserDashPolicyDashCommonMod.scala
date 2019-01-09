@@ -11,8 +11,8 @@ object browserDashPolicyDashCommonMod extends js.Object {
   @JSName("BrowserPolicy")
   @js.native
   object BrowserPolicyNs extends js.Object {
-    var content: meteorDashTypingsLib.Anon_AllowDataUrlForAll = js.native
-    var framing: meteorDashTypingsLib.Anon_RestrictToOrigin = js.native
+    var content: meteorDashTypingsLib.Anon_AllowAllContentDataUrl = js.native
+    var framing: meteorDashTypingsLib.Anon_AllowAll = js.native
   }
   
 }

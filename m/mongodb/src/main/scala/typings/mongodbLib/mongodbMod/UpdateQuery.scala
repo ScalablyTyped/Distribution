@@ -14,7 +14,7 @@ trait UpdateQuery[T] extends js.Object {
   ] = js.undefined
   @JSName("$currentDate")
   var $currentDate: js.UndefOr[
-    (mongodbLib.mongodbLibStrings.UpdateQuery with js.Any) | (org.scalablytyped.runtime.StringDictionary[mongodbLib.mongodbLibNumbers.`true` | mongodbLib.Anon_Type])
+    (mongodbLib.mongodbLibStrings.UpdateQuery with js.Any) | (org.scalablytyped.runtime.StringDictionary[mongodbLib.mongodbLibNumbers.`true` | mongodbLib.Anon_Date])
   ] = js.undefined
   @JSName("$each")
   var $each: js.UndefOr[stdLib.Partial[T] | org.scalablytyped.runtime.StringDictionary[js.Array[_]]] = js.undefined

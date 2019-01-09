@@ -29,7 +29,7 @@ class IdentityPool protected ()
   /**
     * An array of Amazon Cognito Identity user pools and their client IDs.
     */
-  val cognitoIdentityProviders: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ServerSideTokenCheckProviderName]]] = js.native
+  val cognitoIdentityProviders: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ClientId]]] = js.native
   /**
     * The "domain" by which Cognito will refer to your users. This name acts as a placeholder that allows your
     * backend and the Cognito service to communicate about the developer provider.

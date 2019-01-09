@@ -68,7 +68,7 @@ class Scope protected () extends js.Object {
   def moveBindingTo(name: java.lang.String, scope: Scope): scala.Unit = js.native
   def parentHasBinding(name: java.lang.String): scala.Boolean = js.native
   def parentHasBinding(name: java.lang.String, noGlobals: scala.Boolean): scala.Boolean = js.native
-  def push(opts: atBabelTraverseLib.Anon_Init): scala.Unit = js.native
+  def push(opts: atBabelTraverseLib.Anon_Const): scala.Unit = js.native
   def registerBinding(kind: java.lang.String, path: NodePath[Node]): scala.Unit = js.native
   def registerBinding(kind: java.lang.String, path: NodePath[Node], bindingPath: NodePath[Node]): scala.Unit = js.native
   def registerConstantViolation(path: NodePath[Node]): scala.Unit = js.native

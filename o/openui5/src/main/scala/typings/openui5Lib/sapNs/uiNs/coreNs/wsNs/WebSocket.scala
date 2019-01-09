@@ -138,7 +138,7 @@ class WebSocket protected ()
     * Getter for WebSocket readyState.
     * @returns readyState
     */
-  def getReadyState(): openui5Lib.Anon_OPEN = js.native
+  def getReadyState(): openui5Lib.Anon_CLOSED = js.native
   /**
     * Sends a message.<br><br>If the connection is not yet opened, the message will be queued and sentwhen
     * the connection is established.

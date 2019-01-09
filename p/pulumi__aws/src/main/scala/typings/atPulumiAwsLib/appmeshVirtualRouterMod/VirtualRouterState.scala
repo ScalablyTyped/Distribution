@@ -29,6 +29,6 @@ trait VirtualRouterState extends js.Object {
   /**
     * The virtual router specification to apply.
     */
-  val spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ServiceNamesInput]] = js.undefined
+  val spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ServiceNamesArray]] = js.undefined
 }
 

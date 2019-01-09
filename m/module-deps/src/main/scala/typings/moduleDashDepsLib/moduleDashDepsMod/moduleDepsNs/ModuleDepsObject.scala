@@ -14,7 +14,7 @@ trait ModuleDepsObject
   def _transform(row: InputRow, enc: java.lang.String, next: js.Function0[scala.Unit]): scala.Unit = js.native
   def _transform(row: InputTransform, enc: java.lang.String, next: js.Function0[scala.Unit]): scala.Unit = js.native
   def getTransforms(file: java.lang.String, pkg: PackageObject): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def getTransforms(file: java.lang.String, pkg: PackageObject, opts: moduleDashDepsLib.Anon_InNodeModules): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def getTransforms(file: java.lang.String, pkg: PackageObject, opts: moduleDashDepsLib.Anon_Builtin): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def lookupPackage(
     file: java.lang.String,
     cb: js.Function3[/* a */ js.Any, /* b */ js.Any, /* c */ js.UndefOr[js.Any], _]
@@ -33,7 +33,7 @@ trait ModuleDepsObject
   @JSName("on")
   def on_missing(
     event: moduleDashDepsLib.moduleDashDepsLibStrings.missing,
-    listener: js.Function2[/* id */ java.lang.String, /* parent */ moduleDashDepsLib.Anon_Prop, _]
+    listener: js.Function2[/* id */ java.lang.String, /* parent */ moduleDashDepsLib.Anon_Filename, _]
   ): this.type = js.native
   /**
     * Every time a package is read, this event fires. The directory name of the package is available in pkg.__dirname.
@@ -76,7 +76,7 @@ trait ModuleDepsObject
     ]
   ): scala.Unit = js.native
   def walk(
-    id: moduleDashDepsLib.Anon_SourceNoparse,
+    id: moduleDashDepsLib.Anon_Entry,
     parent: moduleDashDepsLib.Anon_Modules,
     cb: js.Function2[
       /* err */ nodeLib.Error | scala.Null, 

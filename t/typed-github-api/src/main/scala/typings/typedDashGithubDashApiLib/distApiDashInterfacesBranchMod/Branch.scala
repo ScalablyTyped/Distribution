@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Branch extends js.Object {
-  var _links: typedDashGithubDashApiLib.Anon_Self
+  var _links: typedDashGithubDashApiLib.Anon_Html
   var commit: typedDashGithubDashApiLib.distApiDashInterfacesCommitMod.CommitSummary
   var name: java.lang.String
   var `protected`: js.UndefOr[scala.Boolean] = js.undefined

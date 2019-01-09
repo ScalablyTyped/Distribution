@@ -43,10 +43,10 @@ object loadersNs extends js.Object {
   @js.native
   object Resource extends js.Object {
     var EMPTY_GIF: java.lang.String = js.native
-    var LOAD_TYPE: pixiDotJsLib.Anon_IMAGE = js.native
-    var STATUS_FLAGS: pixiDotJsLib.Anon_LOADING = js.native
-    var TYPE: pixiDotJsLib.Anon_XML = js.native
-    var XHR_RESPONSE_TYPE: pixiDotJsLib.Anon_JSON = js.native
+    var LOAD_TYPE: pixiDotJsLib.Anon_AUDIOIMAGE = js.native
+    var STATUS_FLAGS: pixiDotJsLib.Anon_COMPLETE = js.native
+    var TYPE: pixiDotJsLib.Anon_AUDIO = js.native
+    var XHR_RESPONSE_TYPE: pixiDotJsLib.Anon_BLOB = js.native
     def setExtensionLoadType(extname: java.lang.String, loadType: scala.Double): scala.Unit = js.native
     def setExtensionXhrType(extname: java.lang.String, xhrType: java.lang.String): scala.Unit = js.native
   }

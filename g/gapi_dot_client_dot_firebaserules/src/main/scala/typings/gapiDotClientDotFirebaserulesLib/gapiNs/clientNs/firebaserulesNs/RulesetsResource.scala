@@ -14,15 +14,15 @@ trait RulesetsResource extends js.Object {
     * error response indicating the first error encountered. For a detailed view
     * of `Source` issues, use TestRuleset.
     */
-  def create(request: gapiDotClientDotFirebaserulesLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Ruleset]
+  def create(request: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Ruleset]
   /**
     * Delete a `Ruleset` by resource name.
     *
     * If the `Ruleset` is referenced by a `Release` the operation will fail.
     */
-  def delete(request: gapiDotClientDotFirebaserulesLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /** Get a `Ruleset` by name including the full `Source` contents. */
-  def get(request: gapiDotClientDotFirebaserulesLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Ruleset]
+  def get(request: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Ruleset]
   /**
     * List `Ruleset` metadata only and optionally filter the results by `Ruleset`
     * name.
@@ -30,6 +30,6 @@ trait RulesetsResource extends js.Object {
     * The full `Source` contents of a `Ruleset` may be retrieved with
     * GetRuleset.
     */
-  def list(request: gapiDotClientDotFirebaserulesLib.Anon_NameAccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListRulesetsResponse]
+  def list(request: gapiDotClientDotFirebaserulesLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ListRulesetsResponse]
 }
 

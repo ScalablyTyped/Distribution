@@ -22,7 +22,7 @@ class PatchBaseline protected ()
   /**
     * A set of rules used to include patches in the baseline. up to 10 approval rules can be specified. Each approval_rule block requires the fields documented below.
     */
-  val approvalRules: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EnableNonSecurity]]] = js.native
+  val approvalRules: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ApproveAfterDays]]] = js.native
   /**
     * A list of explicitly approved patches for the baseline.
     */
@@ -38,7 +38,7 @@ class PatchBaseline protected ()
   /**
     * A set of global filters used to exclude patches from the baseline. Up to 4 global filters can be specified using Key/Value pairs. Valid Keys are `PRODUCT | CLASSIFICATION | MSRC_SEVERITY | PATCH_ID`.
     */
-  val globalFilters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ValuesKey]]] = js.native
+  val globalFilters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_KeyValues]]] = js.native
   /**
     * The name of the patch baseline.
     */

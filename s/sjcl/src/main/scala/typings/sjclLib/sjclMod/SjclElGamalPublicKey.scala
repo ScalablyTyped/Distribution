@@ -12,6 +12,6 @@ class SjclElGamalPublicKey ()
   /* CompleteClass */
   override def get(): sjclLib.sjclMod.sjclNs.SjclECCPublicKeyData = js.native
   /* CompleteClass */
-  override def kem(paranoia: scala.Double): sjclLib.Anon_Key = js.native
+  override def kem(paranoia: scala.Double): sjclLib.Anon_KeyTag = js.native
 }
 

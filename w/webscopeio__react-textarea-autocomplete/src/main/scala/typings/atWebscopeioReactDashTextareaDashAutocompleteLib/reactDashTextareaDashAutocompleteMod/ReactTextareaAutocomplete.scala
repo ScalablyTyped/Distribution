@@ -19,7 +19,7 @@ trait ReactTextareaAutocomplete[TItem /* <: java.lang.String | js.Object */]
   /**
     * Returns selectionStart and selectionEnd of the textarea.
     */
-  def getSelectionPosition(): atWebscopeioReactDashTextareaDashAutocompleteLib.Anon_SelectionStart = js.native
+  def getSelectionPosition(): atWebscopeioReactDashTextareaDashAutocompleteLib.Anon_SelectionEnd = js.native
   /**
     * Sets the caret position to the integer value passed as the argument.
     * @param position caret position to set.

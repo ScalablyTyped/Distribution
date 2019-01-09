@@ -37,7 +37,7 @@ trait DisplayMarkerLayer extends js.Object {
     *  and no tail.
     */
   def markBufferPosition(bufferPosition: PointCompatible): DisplayMarker = js.native
-  def markBufferPosition(bufferPosition: PointCompatible, options: atomLib.Anon_ExclusiveInvalidate): DisplayMarker = js.native
+  def markBufferPosition(bufferPosition: PointCompatible, options: atomLib.Anon_ExclusiveInside): DisplayMarker = js.native
   /** Create a marker with the given buffer range. */
   def markBufferRange(range: RangeCompatible): DisplayMarker = js.native
   def markBufferRange(range: RangeCompatible, options: atomLib.Anon_Exclusive): DisplayMarker = js.native
@@ -46,14 +46,11 @@ trait DisplayMarkerLayer extends js.Object {
     *  and no tail.
     */
   def markScreenPosition(screenPosition: PointCompatible): DisplayMarker = js.native
-  def markScreenPosition(
-    screenPosition: PointCompatible,
-    options: atomLib.Anon_ClipDirectionBackwardForwardClosestExclusiveInvalidate
-  ): DisplayMarker = js.native
+  def markScreenPosition(screenPosition: PointCompatible, options: atomLib.Anon_BackwardClipDirectionClosestExclusive): DisplayMarker = js.native
   // Marker creation
   /** Create a marker with the given screen range. */
   def markScreenRange(range: RangeCompatible): DisplayMarker = js.native
-  def markScreenRange(range: RangeCompatible, options: atomLib.Anon_ClipDirectionBackwardForwardClosestExclusive): DisplayMarker = js.native
+  def markScreenRange(range: RangeCompatible, options: atomLib.Anon_BackwardClipDirectionClosest): DisplayMarker = js.native
   /**
     *  Subscribe to be notified synchronously whenever markers are created on this
     *  layer. Avoid this method for optimal performance when interacting with layers

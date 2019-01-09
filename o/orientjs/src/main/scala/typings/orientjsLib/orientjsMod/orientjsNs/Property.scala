@@ -40,7 +40,7 @@ trait Property extends js.Object {
   def create(config: PropertyCreateConfig): bluebirdLib.bluebirdMod.namespaced[Property] = js.native
   def create(config: PropertyCreateConfig, reload: scala.Boolean): bluebirdLib.bluebirdMod.namespaced[Property] = js.native
   def drop(name: java.lang.String): bluebirdLib.bluebirdMod.namespaced[Class] = js.native
-  def drop(name: java.lang.String, config: orientjsLib.Anon_Ifexist): bluebirdLib.bluebirdMod.namespaced[Class] = js.native
+  def drop(name: java.lang.String, config: orientjsLib.Anon_Force): bluebirdLib.bluebirdMod.namespaced[Class] = js.native
   /**
     * Get the property with the given name.
     *

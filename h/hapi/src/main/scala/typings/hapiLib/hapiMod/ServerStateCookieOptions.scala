@@ -56,7 +56,7 @@ trait ServerStateCookieOptions extends js.Object {
     *  * integrity - algorithm options. Defaults to require('iron').defaults.integrity.
     *  * password - password used for HMAC key generation (must be at least 32 characters long).
     */
-  var sign: js.UndefOr[hapiLib.Anon_Password] = js.undefined
+  var sign: js.UndefOr[hapiLib.Anon_Integrity] = js.undefined
   /** if false, allows any cookie value including values in violation of RFC 6265. Defaults to true. */
   var strictHeader: js.UndefOr[scala.Boolean] = js.undefined
   /** time-to-live in milliseconds. Defaults to null (session time-life - cookies are deleted when the browser is closed). */

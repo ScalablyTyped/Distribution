@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CircleGeometry protected ()
   extends cesiumLib.cesiumMod.CesiumNs.CircleGeometry {
-  def this(options: cesiumLib.Anon_ExtrudedHeightCenterStRotation) = this()
+  def this(options: cesiumLib.Anon_Center) = this()
 }
 
 @JSImport("cesium", "CircleGeometry")

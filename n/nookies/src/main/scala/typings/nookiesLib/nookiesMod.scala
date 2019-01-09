@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("nookies", JSImport.Namespace)
 @js.native
 object nookiesMod extends js.Object {
-  val default: nookiesLib.Anon_Set = js.native
+  val default: nookiesLib.Anon_Ctx = js.native
   def destroyCookie(
     ctx: nextLib.nextMod.nextNs.NextContext[nextDashServerLib.routerMod.DefaultQuery],
     name: java.lang.String

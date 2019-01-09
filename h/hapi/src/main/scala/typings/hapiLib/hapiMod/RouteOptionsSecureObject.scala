@@ -9,7 +9,7 @@ trait RouteOptionsSecureObject extends js.Object {
   /**
     * hsts - controls the 'Strict-Transport-Security' header
     */
-  var hsts: js.UndefOr[scala.Boolean | scala.Double | hapiLib.Anon_MaxAge] = js.undefined
+  var hsts: js.UndefOr[scala.Boolean | scala.Double | hapiLib.Anon_IncludeSubdomains] = js.undefined
   /**
     * boolean controlling the 'X-Download-Options' header for Internet Explorer, preventing downloads from executing in your context. Defaults to true setting the header to 'noopen'.
     */
@@ -27,7 +27,7 @@ trait RouteOptionsSecureObject extends js.Object {
     * controls the 'X-Frame-Options' header
     */
   var xframe: js.UndefOr[
-    hapiLib.hapiLibNumbers.`true` | hapiLib.hapiLibStrings.deny | hapiLib.hapiLibStrings.sameorigin | hapiLib.Anon_Rule
+    hapiLib.hapiLibNumbers.`true` | hapiLib.hapiLibStrings.deny | hapiLib.hapiLibStrings.sameorigin | hapiLib.Anon_Allowfrom
   ] = js.undefined
   /**
     * boolean that controls the 'X-XSS-PROTECTION' header for Internet Explorer. Defaults to true which sets the header to equal '1; mode=block'.

@@ -13,7 +13,7 @@ trait ButtonProps extends js.Object {
   var onPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var primary: js.UndefOr[scala.Boolean] = js.undefined
   var raised: js.UndefOr[scala.Boolean] = js.undefined
-  var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_Text] = js.undefined
+  var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_ContainerText] = js.undefined
   var text: java.lang.String
   var upperCase: js.UndefOr[scala.Boolean] = js.undefined
 }

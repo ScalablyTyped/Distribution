@@ -9,20 +9,20 @@ trait ColorProviderMiddleware extends js.Object {
   var provideColorPresentations: js.UndefOr[
     js.ThisFunction4[
       /* this */ scala.Unit, 
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify VColor */ /* color */ js.Any, 
-      /* context */ vscodeDashLanguageclientLib.Anon_Range, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VColor */ /* color */ js.Any, 
+      /* context */ vscodeDashLanguageclientLib.Anon_Document, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideColorPresentationSignature, 
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ProviderResult<Array<VColorPresentation>> */ _
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<Array<VColorPresentation>> */ _
     ]
   ] = js.undefined
   var provideDocumentColors: js.UndefOr[
     js.ThisFunction3[
       /* this */ scala.Unit, 
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify TextDocument */ /* document */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextDocument */ /* document */ js.Any, 
       /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
       /* next */ ProvideDocumentColorsSignature, 
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ProviderResult<Array<VColorInformation>> */ _
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<Array<VColorInformation>> */ _
     ]
   ] = js.undefined
 }

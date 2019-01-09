@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait CustomAppsResource extends js.Object {
   /** Create and publish a new custom app. */
-  def create(request: gapiDotClientDotPlaycustomappLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[CustomApp]
+  def create(request: gapiDotClientDotPlaycustomappLib.Anon_Account): gapiDotClientLib.gapiNs.clientNs.Request[CustomApp]
 }
 

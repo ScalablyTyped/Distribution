@@ -32,6 +32,6 @@ trait ProjectsResource extends js.Object {
     * }
     * }
     */
-  def test(request: gapiDotClientDotFirebaserulesLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[TestRulesetResponse]
+  def test(request: gapiDotClientDotFirebaserulesLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[TestRulesetResponse]
 }
 

@@ -87,7 +87,7 @@ trait TwitchExt extends js.Object {
   	 * @param callback This callback is called whenever an extension changes position in the player.
   	 * @see https://dev.twitch.tv/docs/extensions/reference/#onpositionchanged
   	 */
-  def onPositionChanged(callback: js.Function1[/* position */ Anon_Y, scala.Unit]): scala.Unit = js.native
+  def onPositionChanged(callback: js.Function1[/* position */ Anon_X, scala.Unit]): scala.Unit = js.native
   /**
   	 * This function registers a callback that gets called whenever an extension is hidden/re-shown. (This occurs only
   	 * for mobile or component extensions.) When an extension is not visible in the mobile app, it does not receive

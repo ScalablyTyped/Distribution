@@ -5,21 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait ArrayFieldTemplateProps extends js.Object {
-  var DescriptionField: reactLib.reactMod.ReactNs.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Description]
-  var TitleField: reactLib.reactMod.ReactNs.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Required]
-  var canAdd: scala.Boolean
-  var className: java.lang.String
-  var disabled: scala.Boolean
-  var formContext: js.Any
-  var formData: js.Any
-  var idSchema: IdSchema
-  var items: js.Array[reactDashJsonschemaDashFormLib.Anon_HasMoveDown]
-  var onAddClick: js.Function1[/* event */ js.Any, js.Function1[/* event */ _, scala.Unit]]
-  var readonly: scala.Boolean
-  var required: scala.Boolean
-  var schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6
-  var title: java.lang.String
-  var uiSchema: UiSchema
+  @JSName("DescriptionField")
+  var DescriptionField_Original: reactLib.reactMod.ReactNs.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Description] = js.native
+  @JSName("TitleField")
+  var TitleField_Original: reactLib.reactMod.ReactNs.StatelessComponent[reactDashJsonschemaDashFormLib.Anon_Id] = js.native
+  var canAdd: scala.Boolean = js.native
+  var className: java.lang.String = js.native
+  var disabled: scala.Boolean = js.native
+  var formContext: js.Any = js.native
+  var formData: js.Any = js.native
+  var idSchema: IdSchema = js.native
+  var items: js.Array[reactDashJsonschemaDashFormLib.Anon_Children] = js.native
+  var readonly: scala.Boolean = js.native
+  var required: scala.Boolean = js.native
+  var schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6 = js.native
+  var title: java.lang.String = js.native
+  var uiSchema: UiSchema = js.native
+  def DescriptionField(props: reactDashJsonschemaDashFormLib.Anon_Description with reactLib.Anon_Children): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def DescriptionField(
+    props: reactDashJsonschemaDashFormLib.Anon_Description with reactLib.Anon_Children,
+    context: js.Any
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def TitleField(props: reactDashJsonschemaDashFormLib.Anon_Id with reactLib.Anon_Children): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def TitleField(props: reactDashJsonschemaDashFormLib.Anon_Id with reactLib.Anon_Children, context: js.Any): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def onAddClick(event: js.Any): js.Function1[/* event */ js.Any, scala.Unit] = js.native
 }
 

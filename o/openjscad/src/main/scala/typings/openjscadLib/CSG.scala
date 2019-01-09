@@ -49,7 +49,7 @@ class CSG ()
   def subtract(csg: js.Array[CSG]): CSG = js.native
   def subtract(csg: CSG): CSG = js.native
   def subtractSub(csg: CSG, retesselate: scala.Boolean, canonicalize: scala.Boolean): CSG = js.native
-  def toCompactBinary(): Anon_PolygonSharedIndexes = js.native
+  def toCompactBinary(): Anon_Class = js.native
   def toPointCloud(cuberadius: js.Any): CSG = js.native
   def toPolygons(): js.Array[openjscadLib.CSGNs.Polygon] = js.native
   def toTriangles(): js.Array[_] = js.native

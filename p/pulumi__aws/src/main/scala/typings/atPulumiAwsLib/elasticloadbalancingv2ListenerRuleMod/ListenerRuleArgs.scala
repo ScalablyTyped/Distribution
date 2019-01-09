@@ -10,12 +10,14 @@ trait ListenerRuleArgs extends js.Object {
     * An Action block. Action blocks are documented below.
     */
   val actions: atPulumiPulumiLib.resourceMod.Input[
-    js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TargetGroupArn]]
+    js.Array[
+      atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc]
+    ]
   ]
   /**
     * A Condition block. Condition blocks are documented below.
     */
-  val conditions: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ValuesField]]]
+  val conditions: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldValues]]]
   /**
     * The ARN of the listener to which to attach the rule.
     */

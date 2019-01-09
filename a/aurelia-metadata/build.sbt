@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "aurelia-metadata"
-version := "1.0.4-4d658c"
-scalaVersion := "2.12.7"
+version := "1.0.4-a79982"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "aurelia-pal" % "1.8.0-a063fd",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
+  "org.scalablytyped" %%% "aurelia-pal" % "1.8.0-d5180d",
+  "org.scalablytyped" %%% "std" % "3.2.2-f3cc98")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

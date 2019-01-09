@@ -12,7 +12,7 @@ trait Anon_Api extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-custom.renderItem.arguments.api
     */
-  var api: js.UndefOr[Anon_Size] = js.undefined
+  var api: js.UndefOr[Anon_BarLayout] = js.undefined
   /**
     * The first parameter of `renderItem`, including:
     *

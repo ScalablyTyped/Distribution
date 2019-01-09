@@ -39,14 +39,5 @@ trait Anon_Accesstoken extends js.Object {
   var uploadType: js.UndefOr[java.lang.String] = js.undefined
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * Identifier of the student to delete. The identifier can be one of the
-    * following:
-    *
-    * &#42; the numeric identifier for the user
-    * &#42; the email address of the user
-    * &#42; the string literal `"me"`, indicating the requesting user
-    */
-  var userId: java.lang.String
 }
 

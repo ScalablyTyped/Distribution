@@ -49,7 +49,7 @@ trait PlotData extends js.Object {
   var visible: scala.Boolean | plotlyDotJsLib.plotlyDotJsLibStrings.legendonly
   var x: js.Array[Datum] | js.Array[js.Array[Datum]] | TypedArray
   var xaxis: java.lang.String
-  var xbins: plotlyDotJsLib.Anon_Size
+  var xbins: plotlyDotJsLib.Anon_End
   var xgap: scala.Double
   var xy: stdLib.Float32Array
   var y: js.Array[Datum] | js.Array[js.Array[Datum]] | TypedArray

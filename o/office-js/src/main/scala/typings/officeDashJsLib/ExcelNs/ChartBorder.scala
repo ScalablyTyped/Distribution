@@ -61,7 +61,7 @@ class ChartBorder ()
   def load(): ChartBorder = js.native
   def load(option: java.lang.String): ChartBorder = js.native
   def load(option: js.Array[java.lang.String]): ChartBorder = js.native
-  def load(option: officeDashJsLib.Anon_Select): ChartBorder = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ChartBorder = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.ChartBorderLoadOptions): ChartBorder = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartBorder): scala.Unit = js.native

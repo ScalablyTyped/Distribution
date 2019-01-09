@@ -33,7 +33,7 @@ class MDCMenu ()
   def setAnchorCorner(corner: scala.Double): scala.Unit = js.native
   def setAnchorMargin(margin: atMaterialMenuLib.foundationMod.AnchorMargin): scala.Unit = js.native
   def show(): scala.Unit = js.native
-  def show(options: atMaterialMenuLib.Anon_FocusIndex): scala.Unit = js.native
+  def show(options: atMaterialMenuLib.Anon_FocusIndexNull): scala.Unit = js.native
 }
 
 @JSImport("@material/menu", "MDCMenu")

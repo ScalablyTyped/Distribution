@@ -57,7 +57,7 @@ class ConditionalRangeBorder ()
   def load(): ConditionalRangeBorder = js.native
   def load(option: java.lang.String): ConditionalRangeBorder = js.native
   def load(option: js.Array[java.lang.String]): ConditionalRangeBorder = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): ConditionalRangeBorder = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): ConditionalRangeBorder = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ConditionalRangeBorderLoadOptions): ConditionalRangeBorder = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ConditionalRangeBorder): scala.Unit = js.native

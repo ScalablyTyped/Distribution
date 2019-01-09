@@ -14,6 +14,6 @@ trait PointArray extends _Array {
   def size(): this.type = js.native
   def size(width: scala.Double): this.type = js.native
   def size(width: scala.Double, height: scala.Double): this.type = js.native
-  def toLine(): svgDotJsLib.Anon_X2 = js.native
+  def toLine(): svgDotJsLib.Anon_X1 = js.native
 }
 

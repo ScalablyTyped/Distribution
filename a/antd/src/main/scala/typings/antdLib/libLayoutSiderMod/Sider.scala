@@ -15,7 +15,7 @@ trait Sider
   def componentDidMount_MSider(): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MSider(): scala.Unit = js.native
-  def getChildContext(): antdLib.Anon_SiderCollapsedCollapsedWidth = js.native
+  def getChildContext(): antdLib.Anon_CollapsedWidthSiderCollapsed = js.native
   def renderSider(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def responsiveHandler(mql: stdLib.MediaQueryList): scala.Unit = js.native
   def responsiveHandler(mql: stdLib.MediaQueryListEvent): scala.Unit = js.native

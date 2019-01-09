@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.system.storage")
 @js.native
 object storageNsMembers extends js.Object {
-  val EjectDeviceResultCode: chromeDashAppsLib.Anon_SUCCESS = js.native
-  val StorageUnitType: chromeDashAppsLib.Anon_REMOVABLE = js.native
+  val EjectDeviceResultCode: chromeDashAppsLib.Anon_FAILURE = js.native
+  val StorageUnitType: chromeDashAppsLib.Anon_FIXED = js.native
   /** Fired when a new removable storage is attached to the system. */
   val onAttached: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* info */ StorageUnitInfo, scala.Unit]] = js.native
   /** Fired when a removable storage is detached from the system. */
@@ -32,11 +32,11 @@ object storageNsMembers extends js.Object {
     id: java.lang.String,
     callback: js.Function1[
       /* result */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-        chromeDashAppsLib.Anon_SUCCESS, 
+        chromeDashAppsLib.Anon_FAILURE, 
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_SUCCESS[keyof chrome-apps.Anon_SUCCESS] */ js.Any
+          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_FAILURE[keyof chrome-apps.Anon_FAILURE] */ js.Any
         ]
       ], 
       scala.Unit

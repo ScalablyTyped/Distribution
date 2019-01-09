@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("chrome.desktopCapture")
 @js.native
 object desktopCaptureNs extends js.Object {
-  val DesktopCaptureSourceType: chromeDashAppsLib.Anon_WINDOW = js.native
+  val DesktopCaptureSourceType: chromeDashAppsLib.Anon_AUDIO = js.native
   /**
     * Hides desktop media picker dialog shown by chooseDesktopMedia().
     * @param desktopMediaRequestId Id returned by chooseDesktopMedia()
@@ -35,11 +35,11 @@ object desktopCaptureNs extends js.Object {
   def chooseDesktopMedia(
     sources: js.Array[
       chromeDashAppsLib.chromeNs.ToStringLiteral[
-        chromeDashAppsLib.Anon_WINDOW, 
+        chromeDashAppsLib.Anon_AUDIO, 
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_WINDOW[keyof chrome-apps.Anon_WINDOW] */ js.Any
+          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_AUDIO[keyof chrome-apps.Anon_AUDIO] */ js.Any
         ]
       ]
     ],

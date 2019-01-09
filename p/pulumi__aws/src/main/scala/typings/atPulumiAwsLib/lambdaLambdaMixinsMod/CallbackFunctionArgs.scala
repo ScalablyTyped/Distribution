@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 7 members from Set(std.Pick<@pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs, @pulumi/aws.@pulumi/aws/utils.Diff<keyof @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs, keyof {   code ? :never,    handler ? :never,    role ? :@pulumi/aws.@pulumi/aws/iam.Role,    policies ? :std.Array<@pulumi/aws.@pulumi/aws/arn.ARN>,    runtime ? :@pulumi/aws.@pulumi/aws/lambda/runtimes.Runtime,    codePathOptions ? :@pulumi/pulumi.@pulumi/pulumi.runtime.CodePathOptions}>>, @pulumi/aws.@pulumi/aws/utils.Overwrite<@pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs, {   code ? :never,    handler ? :never,    role ? :@pulumi/aws.@pulumi/aws/iam.Role,    policies ? :std.Array<@pulumi/aws.@pulumi/aws/arn.ARN>,    runtime ? :@pulumi/aws.@pulumi/aws/lambda/runtimes.Runtime,    codePathOptions ? :@pulumi/pulumi.@pulumi/pulumi.runtime.CodePathOptions}>) */ trait CallbackFunctionArgs[E, R] extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in @pulumi/aws.@pulumi/aws/utils.Diff<keyof @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs, keyof {  code? :never,   handler? :never,   role? :@pulumi/aws.@pulumi/aws/iam.Role,   policies? :std.Array<@pulumi/aws.@pulumi/aws/arn.ARN>,   runtime? :@pulumi/aws.@pulumi/aws/lambda/runtimes.Runtime,   codePathOptions? :@pulumi/pulumi.@pulumi/pulumi.runtime.CodePathOptions}> ]: @pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs[P]}
+- Lifted 6 members from Set(@pulumi/aws.@pulumi/aws/utils.Overwrite<@pulumi/aws.@pulumi/aws/lambda/function.FunctionArgs, {  code ? :never,   handler ? :never,   role ? :@pulumi/aws.@pulumi/aws/iam.Role,   policies ? :std.Array<@pulumi/aws.@pulumi/aws/arn.ARN>,   runtime ? :@pulumi/aws.@pulumi/aws/lambda/runtimes.Runtime,   codePathOptions ? :@pulumi/pulumi.@pulumi/pulumi.runtime.CodePathOptions}>) */ trait CallbackFunctionArgs[E, R] extends js.Object {
   /**
     * The Javascript callback to use as the entrypoint for the AWS Lambda out of.  Either
     * [callback] or [callbackFactory] must be provided.

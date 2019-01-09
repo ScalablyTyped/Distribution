@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 abstract class BaseConnection ()
   extends nodeLib.eventsMod.EventEmitter {
   @JSName("describe$")
-  var describe$_Original: jsforceLib.Anon_TypeCallback = js.native
+  var describe$_Original: jsforceLib.Anon_Callback = js.native
   @JSName("describeGlobal$")
-  var describeGlobal$_Original: jsforceLib.Anon_CallbackErr = js.native
+  var describeGlobal$_Original: jsforceLib.Anon_CallbackClear = js.native
   def _baseUrl(): java.lang.String = js.native
   def create[T](`type`: java.lang.String, records: js.Array[jsforceLib.recordMod.Record[T]]): js.Promise[
     jsforceLib.recordDashResultMod.RecordResult | js.Array[jsforceLib.recordDashResultMod.RecordResult]

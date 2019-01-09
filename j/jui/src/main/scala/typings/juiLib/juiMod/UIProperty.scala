@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UIProperty extends js.Object {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: juiLib.Anon_EventViewport): this.type = js.native
+  def apply(selector: js.Any, options: juiLib.Anon_EventItems): this.type = js.native
   def addItem(item: js.Array[_]): scala.Unit = js.native
   def addItem(item: js.Object): scala.Unit = js.native
   /**

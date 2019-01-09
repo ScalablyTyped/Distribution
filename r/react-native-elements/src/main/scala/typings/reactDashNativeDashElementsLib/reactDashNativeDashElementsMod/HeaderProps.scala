@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait HeaderProps
-  extends reactDashNativeLib.reactDashNativeMod.ViewProps {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ trait HeaderProps extends js.Object {
   /**
     * Sets backgroundColor of the parent component
     */
@@ -38,6 +38,8 @@ trait HeaderProps
   /**
     * Accepts all props for StatusBar
     */
-  var statusBarProps: js.UndefOr[reactDashNativeLib.reactDashNativeMod.StatusBarProperties] = js.undefined
+  var statusBarProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StatusBarProperties */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StatusBarProperties */ js.Any
+  ] = js.undefined
 }
 

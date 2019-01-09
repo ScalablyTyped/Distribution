@@ -5,23 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
 trait Anon_LineStyle extends js.Object {
   /**
-    * The style of the axis line of gauge chart.
-    *
-    *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.lineStyle
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.labelLine.emphasis.lineStyle
     */
-  var lineStyle: js.UndefOr[Anon_ShadowOffsetXShadowBlurColorShadowColorOpacityShadowOffsetY] = js.native
+  var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
   /**
-    * Whether to show the axis line of gauge chart.
+    * Whether to show the visual guide line in emphasis
+    * status.
     *
     *
-    * @default
-    * "true"
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.axisLine.show
+    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-pie.data.labelLine.emphasis.show
     */
-  var show: js.UndefOr[scala.Boolean] = js.native
+  var show: js.UndefOr[scala.Boolean] = js.undefined
 }
 

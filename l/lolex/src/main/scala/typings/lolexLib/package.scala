@@ -8,7 +8,7 @@ package object lolexLib {
   /**
     * Lolex clock for a browser environment.
     */
-  type BrowserClock = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify LolexClock<number> */ js.Any
+  type BrowserClock = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LolexClock<number> */ js.Any
   /**
     * Clock object created by lolex.
     */
@@ -20,5 +20,5 @@ package object lolexLib {
   /**
     * Lolex clock for a Node environment.
     */
-  type NodeClock = (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify LolexClock<NodeTimer> */ js.Any) with Anon_Hrtime
+  type NodeClock = (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify LolexClock<NodeTimer> */ js.Any) with Anon_Hrtime
 }

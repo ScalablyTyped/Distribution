@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class PolylineVolumeGraphics ()
   extends cesiumLib.cesiumMod.CesiumNs.PolylineVolumeGraphics {
-  def this(options: cesiumLib.Anon_ShowOutlinePositions) = this()
+  def this(options: cesiumLib.Anon_CornerTypeFill) = this()
 }
 

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Key extends js.Object {
-  var key: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  var secure: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
-  var value: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  var key: java.lang.String
+  var propagateAtLaunch: scala.Boolean
+  var value: java.lang.String
 }
 

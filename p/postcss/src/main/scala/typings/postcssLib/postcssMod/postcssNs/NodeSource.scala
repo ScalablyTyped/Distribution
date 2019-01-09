@@ -9,11 +9,11 @@ trait NodeSource extends js.Object {
   /**
     * The ending position of the node's source.
     */
-  var end: js.UndefOr[postcssLib.Anon_Column] = js.undefined
+  var end: js.UndefOr[postcssLib.Anon_ColumnLine] = js.undefined
   var input: Input
   /**
     * The starting position of the node's source.
     */
-  var start: js.UndefOr[postcssLib.Anon_Column] = js.undefined
+  var start: js.UndefOr[postcssLib.Anon_ColumnLine] = js.undefined
 }
 

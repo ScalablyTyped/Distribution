@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Swagger20Request[P /* <: SwaggerRequestParameters */]
   extends nodeLib.httpMod.IncomingMessage {
-  var swagger: swaggerDashToolsLib.Anon_SwaggerVersion[P] = js.native
+  var swagger: swaggerDashToolsLib.Anon_ApiPath[P] = js.native
 }
 

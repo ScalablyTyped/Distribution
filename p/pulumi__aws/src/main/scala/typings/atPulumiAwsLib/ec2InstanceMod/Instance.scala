@@ -58,7 +58,7 @@ class Instance protected ()
     * instance.  See Block Devices below for details.
     */
   val ebsBlockDevices: atPulumiPulumiLib.pulumiMod.Output[
-    js.Array[atPulumiAwsLib.Anon_DeviceNameVolumeTypeEncryptedIopsVolumeIdDeleteOnTermination]
+    js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeId]
   ] = js.native
   /**
     * If true, the launched EC2 instance will be EBS-optimized.
@@ -72,7 +72,7 @@ class Instance protected ()
     * Customize Ephemeral (also known as
     * "Instance Store") volumes on the instance. See Block Devices below for details.
     */
-  val ephemeralBlockDevices: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeviceNameNoDeviceVirtualName]] = js.native
+  val ephemeralBlockDevices: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeviceNameNoDevice]] = js.native
   /**
     * If true, wait for password data to become available and retrieve it. Useful for getting the administrator password for instances running Microsoft Windows. The password data is exported to the `password_data` attribute. See [GetPasswordData](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_GetPasswordData.html) for more information.
     */
@@ -160,7 +160,7 @@ class Instance protected ()
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevice: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_VolumeTypeIops] = js.native
+  val rootBlockDevice: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DeleteOnTerminationIopsVolumeId] = js.native
   /**
     * A list of security group names (EC2-Classic) or IDs (default VPC) to associate with.
     */

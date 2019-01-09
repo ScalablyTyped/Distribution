@@ -15,6 +15,6 @@ trait CertificateInfo extends js.Object {
   var subject: java.lang.String
   var subjectPublicKeyInfoDigest: firefoxDashWebextDashBrowserLib.Anon_Sha256
   /** Contains start and end timestamps. */
-  var validity: firefoxDashWebextDashBrowserLib.Anon_Start
+  var validity: firefoxDashWebextDashBrowserLib.Anon_End
 }
 

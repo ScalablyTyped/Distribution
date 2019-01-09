@@ -13,19 +13,19 @@ trait DataObject extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.areaStyle
     */
   var areaStyle: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColorOpacityShadowOffsetYNumber
+    echartsLib.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetYNumber
   ] = js.undefined
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleAreaStyleLineStyle] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_AreaStyleItemStyle] = js.undefined
   /**
     * Style setting of the symbol on single inflection point.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXBarBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BarBorderColorBarBorderWidthColor] = js.undefined
   /**
     * Style setting of the text on single inflection point.
     *
@@ -33,7 +33,7 @@ trait DataObject extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.label
     */
   var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlignShadowBlur
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize
   ] = js.undefined
   /**
     * Line style of a single item.
@@ -41,7 +41,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.lineStyle
     */
-  var lineStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColorOpacity] = js.undefined
+  var lineStyle: js.UndefOr[echartsLib.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY] = js.undefined
   /**
     * Data item name
     *
@@ -149,7 +149,7 @@ trait DataObject extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.data.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * Numerical value of a single data item.
     *

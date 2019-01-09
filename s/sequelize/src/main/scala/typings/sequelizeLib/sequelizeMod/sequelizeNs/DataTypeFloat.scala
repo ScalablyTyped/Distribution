@@ -13,6 +13,6 @@ trait DataTypeFloat extends DataTypeAbstractNumber[DataTypeFloat] {
   def apply(): DataTypeFloat = js.native
   def apply(length: scala.Double): DataTypeFloat = js.native
   def apply(length: scala.Double, decimals: scala.Double): DataTypeFloat = js.native
-  def apply(options: sequelizeLib.Anon_LengthDecimals): DataTypeFloat = js.native
+  def apply(options: sequelizeLib.Anon_Decimals): DataTypeFloat = js.native
 }
 

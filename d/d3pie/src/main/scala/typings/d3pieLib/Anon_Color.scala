@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Color extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
-  var label: java.lang.String
-  var value: scala.Double
+  var enabled: js.UndefOr[scala.Boolean] = js.undefined
+  var label: js.UndefOr[java.lang.String] = js.undefined
+  var value: js.UndefOr[scala.Double] = js.undefined
+  var valueType: js.UndefOr[d3pieLib.d3pieLibStrings.percentage | d3pieLib.d3pieLibStrings.value] = js.undefined
 }
 

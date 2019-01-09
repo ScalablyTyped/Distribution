@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object gulpDashUtilModMembers extends js.Object {
   var File: vinylLib.vinylMod.FileConstructor = js.native
   val colors: chalkLib.chalkMod.Chalk with chalkLib.Anon_SupportsColor = js.native
-  val date: gulpDashUtilLib.Anon_Now = js.native
+  val date: gulpDashUtilLib.Anon_ConvertLocalTimeToUTC = js.native
   val env: js.Any = js.native
   val linefeed: java.lang.String = js.native
-  val noop: gulpDashUtilLib.Anon_Transform = js.native
+  val noop: gulpDashUtilLib.Anon_Ctor = js.native
   def beep(): scala.Unit = js.native
   def buffer(): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def buffer(cb: js.Function2[/* err */ nodeLib.Error, /* data */ js.Array[_], scala.Unit]): nodeLib.NodeJSNs.ReadWriteStream = js.native

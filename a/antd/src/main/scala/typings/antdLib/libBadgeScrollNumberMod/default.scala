@@ -14,6 +14,6 @@ class default protected () extends ScrollNumber {
 @JSImport("antd/lib/badge/ScrollNumber", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: antdLib.Anon_CountOnAnimated = js.native
+  var defaultProps: antdLib.Anon_Count = js.native
 }
 

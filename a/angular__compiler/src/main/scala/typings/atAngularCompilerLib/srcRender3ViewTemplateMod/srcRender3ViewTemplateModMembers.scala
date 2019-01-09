@@ -12,12 +12,12 @@ object srcRender3ViewTemplateModMembers extends js.Object {
   def makeBindingParser(
     interpolationConfig: atAngularCompilerLib.srcMlUnderscoreParserInterpolationUnderscoreConfigMod.InterpolationConfig
   ): atAngularCompilerLib.srcTemplateUnderscoreParserBindingUnderscoreParserMod.BindingParser = js.native
-  def parseTemplate(template: java.lang.String, templateUrl: java.lang.String): atAngularCompilerLib.Anon_Nodes = js.native
+  def parseTemplate(template: java.lang.String, templateUrl: java.lang.String): atAngularCompilerLib.Anon_Errors = js.native
   def parseTemplate(
     template: java.lang.String,
     templateUrl: java.lang.String,
     options: atAngularCompilerLib.Anon_InterpolationConfig
-  ): atAngularCompilerLib.Anon_Nodes = js.native
+  ): atAngularCompilerLib.Anon_Errors = js.native
   def renderFlagCheckIfStmt(
     flags: atAngularCompilerLib.srcCoreMod.RenderFlags,
     statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]

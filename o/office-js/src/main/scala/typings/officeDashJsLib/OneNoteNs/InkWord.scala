@@ -61,7 +61,7 @@ class InkWord ()
   def load(): InkWord = js.native
   def load(option: java.lang.String): InkWord = js.native
   def load(option: js.Array[java.lang.String]): InkWord = js.native
-  def load(option: officeDashJsLib.Anon_Select): InkWord = js.native
+  def load(option: officeDashJsLib.Anon_Expand): InkWord = js.native
   def load(option: officeDashJsLib.OneNoteNs.InterfacesNs.InkWordLoadOptions): InkWord = js.native
   def toJSON(): officeDashJsLib.OneNoteNs.InterfacesNs.InkWordData = js.native
   /**

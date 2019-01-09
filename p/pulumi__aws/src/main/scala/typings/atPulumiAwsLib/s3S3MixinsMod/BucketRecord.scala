@@ -12,8 +12,8 @@ trait BucketRecord extends js.Object {
   var eventTime: java.lang.String
   var eventVersion: java.lang.String
   var requestParameters: atPulumiAwsLib.Anon_SourceIPAddress
-  var responseElements: atPulumiAwsLib.Anon_Xamzrequestid
-  var s3: atPulumiAwsLib.Anon_Object
+  var responseElements: atPulumiAwsLib.Anon_Xamzid2
+  var s3: atPulumiAwsLib.Anon_BucketConfigurationId
   var userIdentity: atPulumiAwsLib.Anon_PrincipalIdString
 }
 

@@ -18,7 +18,7 @@ object Base64Ns extends js.Object {
   def encodeURI(s: java.lang.String): java.lang.String = js.native
   def extendString(): scala.Unit = js.native
   def fromBase64(base64: java.lang.String): java.lang.String = js.native
-  def noConflict(): jsDashBase64Lib.Anon_Encode = js.native
+  def noConflict(): jsDashBase64Lib.Anon_Atob = js.native
   def toBase64(s: java.lang.String): java.lang.String = js.native
   def toBase64(s: java.lang.String, uriSafe: scala.Boolean): java.lang.String = js.native
   def utob(s: java.lang.String): java.lang.String = js.native

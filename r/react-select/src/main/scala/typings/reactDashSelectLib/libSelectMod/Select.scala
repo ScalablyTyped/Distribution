@@ -35,11 +35,11 @@ trait Select[OptionType]
   var openAfterFocus: scala.Boolean = js.native
   var scrollToFocusedOptionOnUpdate: scala.Boolean = js.native
   var userIsDragging: scala.Boolean | scala.Null = js.native
-  def announceAriaLiveContext(props: reactDashSelectLib.Anon_EventContext): scala.Unit = js.native
+  def announceAriaLiveContext(props: reactDashSelectLib.Anon_ContextEvent): scala.Unit = js.native
   // ==============================
   // Helpers
   // ==============================
-  def announceAriaLiveSelection(props: reactDashSelectLib.Anon_Event): scala.Unit = js.native
+  def announceAriaLiveSelection(props: reactDashSelectLib.Anon_Context): scala.Unit = js.native
   def blur(): scala.Unit = js.native
   def blurInput(): scala.Unit = js.native
   // ==============================
@@ -73,7 +73,7 @@ trait Select[OptionType]
   // ==============================
   // Getters
   // ==============================
-  def getCommonProps(): reactDashSelectLib.Anon_SelectProps[OptionType] = js.native
+  def getCommonProps(): reactDashSelectLib.Anon_Action[OptionType] = js.native
   def getControlRef(ref: reactLib.HTMLElement): scala.Unit = js.native
   @JSName("getElementId")
   def getElementId_group(element: reactDashSelectLib.reactDashSelectLibStrings.group): java.lang.String = js.native

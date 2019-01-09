@@ -23,7 +23,7 @@ class Trace protected ()
   /* CompleteClass */
   override var aiDataContract: js.Any = js.native
   @JSName("aiDataContract")
-  var aiDataContract_Trace: applicationinsightsDashJsLib.Anon_MeasurementsProperties = js.native
+  var aiDataContract_Trace: applicationinsightsDashJsLib.Anon_MeasurementsMessage = js.native
 }
 
 @JSGlobal("Microsoft.ApplicationInsights.Telemetry.Trace")

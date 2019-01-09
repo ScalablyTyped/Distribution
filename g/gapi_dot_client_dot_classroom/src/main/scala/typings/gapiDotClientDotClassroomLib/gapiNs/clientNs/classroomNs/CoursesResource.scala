@@ -28,7 +28,7 @@ trait CoursesResource extends js.Object {
     * &#42; `ALREADY_EXISTS` if an alias was specified in the `id` and
     * already exists.
     */
-  def create(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Course]
+  def create(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Course]
   /**
     * Deletes a course.
     *
@@ -38,7 +38,7 @@ trait CoursesResource extends js.Object {
     * requested course or for access errors.
     * &#42; `NOT_FOUND` if no course exists with the requested ID.
     */
-  def delete(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Returns a course.
     *
@@ -48,7 +48,7 @@ trait CoursesResource extends js.Object {
     * requested course or for access errors.
     * &#42; `NOT_FOUND` if no course exists with the requested ID.
     */
-  def get(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Course]
+  def get(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId): gapiDotClientLib.gapiNs.clientNs.Request[Course]
   /**
     * Returns a list of courses that the requesting user is permitted to view,
     * restricted to those that match the request. Returned courses are ordered by
@@ -60,7 +60,7 @@ trait CoursesResource extends js.Object {
     * &#42; `INVALID_ARGUMENT` if the query argument is malformed.
     * &#42; `NOT_FOUND` if any users specified in the query arguments do not exist.
     */
-  def list(request: gapiDotClientDotClassroomLib.Anon_CourseStates): gapiDotClientLib.gapiNs.clientNs.Request[ListCoursesResponse]
+  def list(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseStates): gapiDotClientLib.gapiNs.clientNs.Request[ListCoursesResponse]
   /**
     * Updates one or more fields in a course.
     *
@@ -74,7 +74,7 @@ trait CoursesResource extends js.Object {
     * &#42; `FAILED_PRECONDITION` for the following request errors:
     * &#42; CourseNotModifiable
     */
-  def patch(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPrettyPrintBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Course]
+  def patch(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsIdKey): gapiDotClientLib.gapiNs.clientNs.Request[Course]
   /**
     * Updates a course.
     *
@@ -86,6 +86,6 @@ trait CoursesResource extends js.Object {
     * &#42; `FAILED_PRECONDITION` for the following request errors:
     * &#42; CourseNotModifiable
     */
-  def update(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Course]
+  def update(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId): gapiDotClientLib.gapiNs.clientNs.Request[Course]
 }
 

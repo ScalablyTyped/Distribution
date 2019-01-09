@@ -14,6 +14,6 @@ trait ClassModel[T] extends js.Object {
   var indexes: js.UndefOr[js.Object] = js.undefined
   var meteorMethods: js.UndefOr[js.Object] = js.undefined
   var name: java.lang.String
-  var secured: js.UndefOr[meteorDashAstronomyLib.Anon_Update | scala.Boolean] = js.undefined
+  var secured: js.UndefOr[meteorDashAstronomyLib.Anon_Insert | scala.Boolean] = js.undefined
 }
 

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(knexLib.knexMod.KnexNs.WhereNull because Already inherited)*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- knexLib.knexMod.KnexNs.WhereNull because Already inherited */ @js.native
 trait Where
   extends WhereWrapped
      with WhereRaw {

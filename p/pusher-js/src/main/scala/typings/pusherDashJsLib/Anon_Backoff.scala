@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Backoff extends js.Object {
-  var backoff: js.Function0[scala.Unit]
-  var refused: js.Function0[scala.Unit]
-  var retry: js.Function0[scala.Unit]
-  var ssl_only: js.Function0[scala.Unit]
+  def backoff(): scala.Unit
+  def refused(): scala.Unit
+  def retry(): scala.Unit
+  def ssl_only(): scala.Unit
 }
 

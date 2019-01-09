@@ -10,7 +10,7 @@ trait NodeRefFieldsValue extends js.Object {
   var id: weixinDashAppLib.Anon_Id
   var properties: weixinDashAppLib.Anon_PropertiesAny
   var rect: weixinDashAppLib.Anon_Bottom
-  var scrollOffset: weixinDashAppLib.Anon_ScrollTopScrollLeft
+  var scrollOffset: weixinDashAppLib.Anon_ScrollLeft
   var size: weixinDashAppLib.Anon_Height
 }
 

@@ -17,7 +17,7 @@ trait BuildArgs extends js.Object {
   /**
     * Information indicating where your game build files are stored. See below.
     */
-  val storageLocation: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RoleArnKey]
+  val storageLocation: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketKeyRoleArn]
   /**
     * Version that is associated with this build.
     */

@@ -9,7 +9,7 @@ trait BasicPaginateOptions[T] extends js.Object {
    // the before cursor
   var after: js.UndefOr[java.lang.String] = js.undefined
   var attributes: js.UndefOr[
-    sequelizeLib.sequelizeMod.sequelizeNs.FindOptionsAttributesArray | sequelizeLib.Anon_Include
+    sequelizeLib.sequelizeMod.sequelizeNs.FindOptionsAttributesArray | sequelizeLib.Anon_Exclude
   ] = js.undefined
    // [default: false]
   var before: js.UndefOr[java.lang.String] = js.undefined

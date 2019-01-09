@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Handler
   extends expressLib.expressMod.eNs.RequestHandler {
-  var credentials: oauthDashShimLib.Anon_Get = js.native
+  var credentials: oauthDashShimLib.Anon_Cb = js.native
   var interpret: expressLib.expressMod.eNs.RequestHandler = js.native
   var proxy: expressLib.expressMod.eNs.RequestHandler = js.native
   var redirect: expressLib.expressMod.eNs.RequestHandler = js.native

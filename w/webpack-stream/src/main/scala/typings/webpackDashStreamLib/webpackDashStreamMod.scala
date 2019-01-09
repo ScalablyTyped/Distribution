@@ -17,10 +17,13 @@ object webpackDashStreamMod extends js.Object {
     */
   def apply(): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def apply(config: webpackLib.webpackMod.webpackNs.Configuration): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  def apply(config: webpackLib.webpackMod.webpackNs.Configuration, wp: webpackDashStreamLib.Anon_Options): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def apply(
     config: webpackLib.webpackMod.webpackNs.Configuration,
-    wp: webpackDashStreamLib.Anon_Options,
+    wp: webpackDashStreamLib.Anon_BannerPluginCompilation
+  ): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def apply(
+    config: webpackLib.webpackMod.webpackNs.Configuration,
+    wp: webpackDashStreamLib.Anon_BannerPluginCompilation,
     callback: webpackLib.webpackMod.webpackNs.CompilerNs.Handler
   ): nodeLib.NodeJSNs.ReadWriteStream = js.native
 }

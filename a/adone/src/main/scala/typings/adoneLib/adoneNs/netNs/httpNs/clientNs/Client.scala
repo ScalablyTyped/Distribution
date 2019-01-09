@@ -14,21 +14,21 @@ class Client () extends js.Object {
   ] = js.native
   def delete(
     url: java.lang.String,
-    options: (adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options with (adoneLib.Anon_ResponseType | adoneLib.Anon_ResponseTypeBuffer | adoneLib.Anon_ResponseTypeStream)) | adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options
+    options: (adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options with (adoneLib.Anon_BufferResponseType | adoneLib.Anon_ResponseType | adoneLib.Anon_ResponseTypeStream)) | adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options
   ): js.Promise[adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Response[java.lang.String]] = js.native
   def get(url: java.lang.String): js.Promise[
     adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Response[js.Object | java.lang.String]
   ] = js.native
   def get(
     url: java.lang.String,
-    options: (adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options with (adoneLib.Anon_ResponseType | adoneLib.Anon_ResponseTypeBuffer | adoneLib.Anon_ResponseTypeStream)) | adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options
+    options: (adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options with (adoneLib.Anon_BufferResponseType | adoneLib.Anon_ResponseType | adoneLib.Anon_ResponseTypeStream)) | adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options
   ): js.Promise[adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Response[java.lang.String]] = js.native
   def options(url: java.lang.String): js.Promise[
     adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Response[js.Object | java.lang.String]
   ] = js.native
   def options(
     url: java.lang.String,
-    options: (adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options with (adoneLib.Anon_ResponseType | adoneLib.Anon_ResponseTypeBuffer | adoneLib.Anon_ResponseTypeStream)) | adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options
+    options: (adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options with (adoneLib.Anon_BufferResponseType | adoneLib.Anon_ResponseType | adoneLib.Anon_ResponseTypeStream)) | adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options
   ): js.Promise[adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Response[java.lang.String]] = js.native
   def patch(url: java.lang.String): js.Promise[
     adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Response[js.Object | java.lang.String]
@@ -39,7 +39,7 @@ class Client () extends js.Object {
   def patch(
     url: java.lang.String,
     data: adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Data,
-    options: (adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options with (adoneLib.Anon_ResponseType | adoneLib.Anon_ResponseTypeBuffer | adoneLib.Anon_ResponseTypeStream)) | adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options
+    options: (adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options with (adoneLib.Anon_BufferResponseType | adoneLib.Anon_ResponseType | adoneLib.Anon_ResponseTypeStream)) | adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options
   ): js.Promise[adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Response[java.lang.String]] = js.native
   def post(url: java.lang.String): js.Promise[
     adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Response[js.Object | java.lang.String]
@@ -50,7 +50,7 @@ class Client () extends js.Object {
   def post(
     url: java.lang.String,
     data: adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Data,
-    options: (adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options with (adoneLib.Anon_ResponseType | adoneLib.Anon_ResponseTypeBuffer | adoneLib.Anon_ResponseTypeStream)) | adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options
+    options: (adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options with (adoneLib.Anon_BufferResponseType | adoneLib.Anon_ResponseType | adoneLib.Anon_ResponseTypeStream)) | adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options
   ): js.Promise[adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Response[java.lang.String]] = js.native
   def put(url: java.lang.String): js.Promise[
     adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Response[js.Object | java.lang.String]
@@ -61,10 +61,10 @@ class Client () extends js.Object {
   def put(
     url: java.lang.String,
     data: adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Data,
-    options: (adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options with (adoneLib.Anon_ResponseType | adoneLib.Anon_ResponseTypeBuffer | adoneLib.Anon_ResponseTypeStream)) | adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options
+    options: (adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options with (adoneLib.Anon_BufferResponseType | adoneLib.Anon_ResponseType | adoneLib.Anon_ResponseTypeStream)) | adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options
   ): js.Promise[adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Response[java.lang.String]] = js.native
   def request(
-    config: (adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options with (adoneLib.Anon_ResponseType | adoneLib.Anon_ResponseTypeBuffer | adoneLib.Anon_ResponseTypeJson | adoneLib.Anon_ResponseTypeStream)) | adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options,
+    config: (adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options with (adoneLib.Anon_BufferResponseType | adoneLib.Anon_Json | adoneLib.Anon_ResponseType | adoneLib.Anon_ResponseTypeStream)) | adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Options,
     args: js.Any*
   ): js.Promise[
     adoneLib.adoneNs.netNs.httpNs.clientNs.INs.Response[js.Object | java.lang.String]

@@ -16,6 +16,6 @@ class PrettyPrintPlugin ()
 @js.native
 object PrettyPrintPlugin extends js.Object {
   var IGNORED_TAGS: typedocLib.Anon_Area = js.native
-  var PRE_TAGS: typedocLib.Anon_Pre = js.native
+  var PRE_TAGS: typedocLib.Anon_Code = js.native
 }
 

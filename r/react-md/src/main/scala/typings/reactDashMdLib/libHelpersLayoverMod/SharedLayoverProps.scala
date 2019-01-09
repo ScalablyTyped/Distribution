@@ -14,7 +14,7 @@ trait SharedLayoverProps
   var closeOnOutsideClick: js.UndefOr[scala.Boolean] = js.undefined
   var fillViewportHeight: js.UndefOr[scala.Boolean] = js.undefined
   var fillViewportWidth: js.UndefOr[scala.Boolean] = js.undefined
-  var fixedTo: js.UndefOr[js.Object | reactDashMdLib.Anon_YX] = js.undefined
+  var fixedTo: js.UndefOr[js.Object | reactDashMdLib.Anon_X] = js.undefined
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var minBottom: js.UndefOr[scala.Double | java.lang.String] = js.undefined

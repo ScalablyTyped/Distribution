@@ -13,14 +13,14 @@ object colorLibStrings {
   sealed trait AAA extends js.Object
   
   @js.native
-  sealed trait Anon_Lch extends js.Object
+  sealed trait Anon_Ansi16 extends js.Object
   
   @js.native
   sealed trait Empty extends js.Object
   
   def AA: AA = "AA".asInstanceOf[AA]
   def AAA: AAA = "AAA".asInstanceOf[AAA]
-  def Anon_Lch: Anon_Lch = "Anon_Lch".asInstanceOf[Anon_Lch]
+  def Anon_Ansi16: Anon_Ansi16 = "Anon_Ansi16".asInstanceOf[Anon_Ansi16]
   def Empty: Empty = "".asInstanceOf[Empty]
 }
 

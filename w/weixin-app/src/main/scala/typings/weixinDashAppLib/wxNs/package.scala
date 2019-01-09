@@ -37,7 +37,7 @@ package object wxNs {
   type EncodeBitRate = weixinDashAppLib.weixinDashAppLibNumbers.`8000` | weixinDashAppLib.weixinDashAppLibNumbers.`11025` | weixinDashAppLib.weixinDashAppLibNumbers.`12000` | weixinDashAppLib.weixinDashAppLibNumbers.`16000` | weixinDashAppLib.weixinDashAppLibNumbers.`22050` | weixinDashAppLib.weixinDashAppLibNumbers.`24000` | weixinDashAppLib.weixinDashAppLibNumbers.`32000` | weixinDashAppLib.weixinDashAppLibNumbers.`44100` | weixinDashAppLib.weixinDashAppLibNumbers.`48000`
   type EventType = weixinDashAppLib.weixinDashAppLibStrings.input | weixinDashAppLib.weixinDashAppLibStrings.form | weixinDashAppLib.weixinDashAppLibStrings.submit | weixinDashAppLib.weixinDashAppLibStrings.scroll | TouchEventType | TransitionEventType | weixinDashAppLib.weixinDashAppLibStrings.tap | weixinDashAppLib.weixinDashAppLibStrings.longpress
   type ExtendedComponent[Instance /* <: Component[Data, Props] */, Data, Methods, Props] = (CombinedInstance[Instance, Data, Methods, Props]) with (Component[Data, Props])
-  type FormEvent = BuiltInEvent[weixinDashAppLib.weixinDashAppLibStrings.form, weixinDashAppLib.Anon_Value]
+  type FormEvent = BuiltInEvent[weixinDashAppLib.weixinDashAppLibStrings.form, weixinDashAppLib.Anon_Name]
   // #endregion
   // #region 媒体API列表
   // 媒体-----图片

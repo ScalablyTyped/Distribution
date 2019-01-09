@@ -56,7 +56,7 @@ trait DefineAttributeColumnOptions extends ColumnOptions {
     * composite unique index. If multiple columns have the same string, they will be part of the same unique
     * index
     */
-  var unique: js.UndefOr[scala.Boolean | java.lang.String | sequelizeLib.Anon_MsgName] = js.undefined
+  var unique: js.UndefOr[scala.Boolean | java.lang.String | sequelizeLib.Anon_Msg] = js.undefined
   /**
     * An object of validations to execute for this column every time the model is saved. Can be either the
     * name of a validation provided by validator.js, a validation function provided by extending validator.js

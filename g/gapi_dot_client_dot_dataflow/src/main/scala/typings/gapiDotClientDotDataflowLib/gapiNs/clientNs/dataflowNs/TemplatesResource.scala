@@ -8,16 +8,22 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TemplatesResource extends js.Object {
   /** Creates a Cloud Dataflow job from a template. */
-  def create(request: gapiDotClientDotDataflowLib.Anon_AccesstokenLocationPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Job] = js.native
+  def create(
+    request: gapiDotClientDotDataflowLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyLocationOauthtoken
+  ): gapiDotClientLib.gapiNs.clientNs.Request[Job] = js.native
   /** Creates a Cloud Dataflow job from a template. */
-  def create(request: gapiDotClientDotDataflowLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Job] = js.native
+  def create(request: gapiDotClientDotDataflowLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[Job] = js.native
   /** Get the template associated with a template. */
-  def get(request: gapiDotClientDotDataflowLib.Anon_AccesstokenLocationPrettyPrintGcsPath): gapiDotClientLib.gapiNs.clientNs.Request[GetTemplateResponse] = js.native
+  def get(request: gapiDotClientDotDataflowLib.Anon_AccesstokenAltBearertokenCallbackFieldsGcsPath): gapiDotClientLib.gapiNs.clientNs.Request[GetTemplateResponse] = js.native
   /** Get the template associated with a template. */
-  def get(request: gapiDotClientDotDataflowLib.Anon_AccesstokenLocationPrettyPrintGcsPathBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[GetTemplateResponse] = js.native
+  def get(
+    request: gapiDotClientDotDataflowLib.Anon_AccesstokenAltBearertokenCallbackFieldsGcsPathKeyLocation
+  ): gapiDotClientLib.gapiNs.clientNs.Request[GetTemplateResponse] = js.native
   /** Launch a template. */
-  def launch(request: gapiDotClientDotDataflowLib.Anon_ValidateOnly): gapiDotClientLib.gapiNs.clientNs.Request[LaunchTemplateResponse] = js.native
+  def launch(request: gapiDotClientDotDataflowLib.Anon_AccesstokenAltBearertokenCallbackFieldsGcsPathKey): gapiDotClientLib.gapiNs.clientNs.Request[LaunchTemplateResponse] = js.native
   /** Launch a template. */
-  def launch(request: gapiDotClientDotDataflowLib.Anon_ValidateOnlyAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[LaunchTemplateResponse] = js.native
+  def launch(
+    request: gapiDotClientDotDataflowLib.Anon_AccesstokenAltBearertokenCallbackFieldsGcsPathKeyLocationOauthtoken
+  ): gapiDotClientLib.gapiNs.clientNs.Request[LaunchTemplateResponse] = js.native
 }
 

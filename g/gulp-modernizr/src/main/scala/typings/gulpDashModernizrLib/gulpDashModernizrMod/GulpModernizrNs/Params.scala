@@ -40,7 +40,7 @@ trait Params extends js.Object {
   /**
     * Based on default settings on http://modernizr.com/download/
     */
-  var options: js.UndefOr[gulpDashModernizrLib.Anon_EnableJSClass] = js.undefined
+  var options: js.UndefOr[gulpDashModernizrLib.Anon_ClassPrefix] = js.undefined
   /**
     * Define any tests you want to explicitly include
     */

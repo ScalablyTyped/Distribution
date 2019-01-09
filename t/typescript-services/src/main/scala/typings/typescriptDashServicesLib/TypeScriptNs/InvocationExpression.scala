@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typescriptDashServicesLib.TypeScriptNs.ICallExpression because Would inherit conflicting mutable fields List(_end, _start))*/
-@JSGlobal("TypeScript.InvocationExpression")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typescriptDashServicesLib.TypeScriptNs.ICallExpression because var conflicts: _end, _start. Inlined expression, argumentList */ @JSGlobal("TypeScript.InvocationExpression")
 @js.native
 class InvocationExpression protected () extends AST {
   def this(expression: AST, argumentList: ArgumentList) = this()

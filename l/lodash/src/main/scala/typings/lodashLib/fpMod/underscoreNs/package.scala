@@ -944,7 +944,9 @@ package object underscoreNs {
   type LodashMinBy1x2[T] = js.Function1[/* iteratee */ lodashLib.lodashMod.underscoreNs.ValueIteratee[T], js.UndefOr[T]]
   type LodashMultiply1x1 = js.Function1[/* multiplicand */ scala.Double, scala.Double]
   type LodashMultiply1x2 = js.Function1[/* multiplier */ scala.Double, scala.Double]
-  type LodashNoConflict = js.Function0[lodashLib.lodashMod.underscoreNs.LoDashStatic]
+  type LodashNoConflict = js.Function0[
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _ */ js.Any
+  ]
   type LodashNoop = js.Function1[/* repeated */ js.Any, scala.Unit]
   type LodashNow = js.Function0[scala.Double]
   type LodashNth1x1 = js.Function1[

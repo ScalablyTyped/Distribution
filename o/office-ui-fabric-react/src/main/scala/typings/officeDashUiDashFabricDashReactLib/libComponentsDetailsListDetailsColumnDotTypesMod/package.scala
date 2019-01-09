@@ -11,5 +11,5 @@ package object libComponentsDetailsListDetailsColumnDotTypesMod {
       IDetailsColumnProps, 
       officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.theme | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.cellStyleProps
     ]
-  ]) with officeDashUiDashFabricDashReactLib.Anon_IconClassName
+  ]) with officeDashUiDashFabricDashReactLib.Anon_HeaderClassName
 }

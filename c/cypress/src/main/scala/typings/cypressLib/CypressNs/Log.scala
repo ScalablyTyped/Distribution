@@ -29,6 +29,6 @@ trait Log extends js.Object {
   def set_name(key: cypressLib.cypressLibStrings.name, value: java.lang.String): Log = js.native
   def snapshot(): Log = js.native
   def snapshot(name: java.lang.String): Log = js.native
-  def snapshot(name: java.lang.String, options: cypressLib.Anon_Next): Log = js.native
+  def snapshot(name: java.lang.String, options: cypressLib.Anon_At): Log = js.native
 }
 

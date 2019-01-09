@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object FaceDetectorNs extends js.Object {
   trait DetectFaceResult extends js.Object {
     var faces: js.Array[expoLib.expoMod.FaceFeature]
-    var image: expoLib.Anon_Uri
+    var image: expoLib.Anon_HeightOrientation
   }
   
   trait DetectionOptions extends js.Object {

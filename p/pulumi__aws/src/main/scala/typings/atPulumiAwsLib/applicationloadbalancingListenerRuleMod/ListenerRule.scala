@@ -21,7 +21,7 @@ class ListenerRule protected ()
   /**
     * An Action block. Action blocks are documented below.
     */
-  val actions: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_TargetGroupArnRedirect]] = js.native
+  val actions: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_AuthenticateCognito]] = js.native
   /**
     * The ARN of the rule (matches `id`)
     */
@@ -29,7 +29,7 @@ class ListenerRule protected ()
   /**
     * A Condition block. Condition blocks are documented below.
     */
-  val conditions: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ValuesFieldString]] = js.native
+  val conditions: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Field]] = js.native
   /**
     * The ARN of the listener to which to attach the rule.
     */

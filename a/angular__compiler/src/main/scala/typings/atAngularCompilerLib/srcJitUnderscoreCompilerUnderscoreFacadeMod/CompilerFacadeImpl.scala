@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class CompilerFacadeImpl ()
   extends atAngularCompilerLib.srcCompilerUnderscoreFacadeUnderscoreInterfaceMod.CompilerFacade {
   /* CompleteClass */
-  override var R3ResolvedDependencyType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof @angular/compiler.@angular/compiler/src/compiler_facade_interface.R3ResolvedDependencyType */ js.Any = js.native
+  override var R3ResolvedDependencyType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof R3ResolvedDependencyType */ js.Any = js.native
   var elementSchemaRegistry: js.Any = js.native
   /* CompleteClass */
   override def compileComponent(

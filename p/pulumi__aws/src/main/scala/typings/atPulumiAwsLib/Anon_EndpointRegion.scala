@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_EndpointRegion extends js.Object {
-  var endpoint: java.lang.String
-  var region: java.lang.String
+  var endpoint: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  var region: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 

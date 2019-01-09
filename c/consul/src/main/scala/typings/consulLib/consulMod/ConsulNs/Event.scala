@@ -12,12 +12,12 @@ trait Event extends js.Object {
     * Fires a new user event
     */
   @JSName("fire")
-  var fire_Original: consulLib.Anon_Name = js.native
+  var fire_Original: consulLib.Anon_CallbackNameOpts = js.native
   /**
     * Lists the most recent events an agent has seen
     */
   @JSName("list")
-  var list_Original: consulLib.Anon_NameCallback = js.native
+  var list_Original: consulLib.Anon_CallbackNameOptsListOptions = js.native
   /**
     * Fires a new user event
     */

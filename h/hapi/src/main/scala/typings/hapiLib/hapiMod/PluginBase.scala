@@ -16,7 +16,7 @@ trait PluginBase[T] extends js.Object {
     * Allows defining semver requirements for node and hapi.
     * @default Allows all.
     */
-  var requirements: js.UndefOr[hapiLib.Anon_Node] = js.undefined
+  var requirements: js.UndefOr[hapiLib.Anon_Hapi] = js.undefined
   /**
     * (required) the registration function with the signature async function(server, options) where:
     * * server - the server object with a plugin-specific server.realm.

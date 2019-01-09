@@ -17,7 +17,7 @@ object acornModMembers extends js.Object {
   val plugins: acornLib.acornMod.acornNs.PluginsObject = js.native
   var pluginsLoose: js.UndefOr[acornLib.acornMod.acornNs.PluginsObject] = js.native
   val tokContexts: acornLib.Anon_Bexpr = js.native
-  val tokTypes: acornLib.Anon_Function = js.native
+  val tokTypes: acornLib.Anon_Arrow = js.native
   val version: java.lang.String = js.native
   def addLooseExports(
     parse: acornLib.acornMod.acornNs.IParse,

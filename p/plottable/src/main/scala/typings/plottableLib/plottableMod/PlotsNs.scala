@@ -119,10 +119,10 @@ object PlotsNs extends js.Object {
   class Waterfall[X, Y] ()
     extends plottableLib.buildSrcPlotsMod.Waterfall[X, Y]
   
-  val BarAlignment: plottableLib.Anon_Middle = js.native
+  val BarAlignment: plottableLib.Anon_EndMiddle = js.native
   val BarOrientation: plottableLib.Anon_Horizontal = js.native
-  val CurveName: plottableLib.Anon_LinearClosed = js.native
-  val LabelsPosition: plottableLib.Anon_Outside = js.native
+  val CurveName: plottableLib.Anon_Basis = js.native
+  val LabelsPosition: plottableLib.Anon_End = js.native
   @JSName("Animator")
   @js.native
   object AnimatorNs extends js.Object {

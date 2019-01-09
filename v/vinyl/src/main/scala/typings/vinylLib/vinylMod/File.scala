@@ -174,7 +174,7 @@ trait File
     */
   var symlink: java.lang.String | scala.Null = js.native
   def clone(opts: scala.Boolean): this.type = js.native
-  def clone(opts: vinylLib.Anon_Deep): this.type = js.native
+  def clone(opts: vinylLib.Anon_ContentsDeep): this.type = js.native
   /**
     * Returns a formatted-string interpretation of the Vinyl object.
     * Automatically called by node's `console.log`.

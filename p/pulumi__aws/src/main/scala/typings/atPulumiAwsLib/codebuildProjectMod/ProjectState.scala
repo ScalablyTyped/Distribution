@@ -13,7 +13,9 @@ trait ProjectState extends js.Object {
   /**
     * Information about the project's build output artifacts. Artifact blocks are documented below.
     */
-  val artifacts: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PackagingNameLocation]] = js.undefined
+  val artifacts: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EncryptionDisabledLocation]
+  ] = js.undefined
   /**
     * Generates a publicly-accessible URL for the projects build badge. Available as `badge_url` attribute when enabled.
     */
@@ -29,7 +31,7 @@ trait ProjectState extends js.Object {
   /**
     * Information about the cache storage for the project. Cache blocks are documented below.
     */
-  val cache: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_LocationTypeInput]] = js.undefined
+  val cache: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_LocationType]] = js.undefined
   /**
     * A short description of the project.
     */
@@ -41,9 +43,7 @@ trait ProjectState extends js.Object {
   /**
     * Information about the project's build environment. Environment blocks are documented below.
     */
-  val environment: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PrivilegedModeCertificate]
-  ] = js.undefined
+  val environment: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CertificateComputeType]] = js.undefined
   /**
     * The name of the project. If `type` is set to `S3`, this is the name of the output artifact object
     */
@@ -54,7 +54,7 @@ trait ProjectState extends js.Object {
   val secondaryArtifacts: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PackagingNameLocationPath]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ArtifactIdentifierEncryptionDisabled]
       ]
     ]
   ] = js.undefined
@@ -64,7 +64,7 @@ trait ProjectState extends js.Object {
   val secondarySources: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_LocationReportBuildStatusInsecureSslGitCloneDepth]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AuthsBuildspecGitCloneDepth]
       ]
     ]
   ] = js.undefined
@@ -76,7 +76,7 @@ trait ProjectState extends js.Object {
     * Information about the project's input source code. Source blocks are documented below.
     */
   val source: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_LocationReportBuildStatusInsecureSsl]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AuthsBuildspecGitCloneDepthInsecureSsl]
   ] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
@@ -87,8 +87,6 @@ trait ProjectState extends js.Object {
   /**
     * Configuration for the builds to run inside a VPC. VPC config blocks are documented below.
     */
-  val vpcConfig: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SubnetsVpcIdSecurityGroupIds]
-  ] = js.undefined
+  val vpcConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnets]] = js.undefined
 }
 

@@ -24,7 +24,7 @@ trait Options extends js.Object {
     * @default graceful-fs
     * @since v4.0.0
     */
-  var fs: js.UndefOr[klawDashSyncLib.Anon_StatSync] = js.undefined
+  var fs: js.UndefOr[klawDashSyncLib.Anon_Path] = js.undefined
   /**
     * @description True to only return files (ignore directories).
     *              Defaults to false if not specified.

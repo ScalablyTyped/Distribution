@@ -11,7 +11,9 @@ trait ListenerRuleState extends js.Object {
     */
   val actions: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TargetGroupArn]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc]
+      ]
     ]
   ] = js.undefined
   /**
@@ -22,7 +24,7 @@ trait ListenerRuleState extends js.Object {
     * A Condition block. Condition blocks are documented below.
     */
   val conditions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ValuesField]]]
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldValues]]]
   ] = js.undefined
   /**
     * The ARN of the listener to which to attach the rule.

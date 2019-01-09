@@ -6,10 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AdditionalVersionWeights extends js.Object {
-  var additionalVersionWeights: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[scala.Double]]
-    ]
-  ] = js.undefined
+  var additionalVersionWeights: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Double]] = js.undefined
 }
 

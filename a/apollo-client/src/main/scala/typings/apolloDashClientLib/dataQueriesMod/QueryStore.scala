@@ -11,7 +11,7 @@ class QueryStore () extends js.Object {
   var store: js.Any = js.native
   def get(queryId: java.lang.String): QueryStoreValue = js.native
   def getStore(): org.scalablytyped.runtime.StringDictionary[QueryStoreValue] = js.native
-  def initQuery(query: apolloDashClientLib.Anon_QueryId): scala.Unit = js.native
+  def initQuery(query: apolloDashClientLib.Anon_DocumentFetchMoreForQueryId): scala.Unit = js.native
   def markQueryError(queryId: java.lang.String, error: stdLib.Error): scala.Unit = js.native
   def markQueryError(queryId: java.lang.String, error: stdLib.Error, fetchMoreForQueryId: java.lang.String): scala.Unit = js.native
   def markQueryResult(

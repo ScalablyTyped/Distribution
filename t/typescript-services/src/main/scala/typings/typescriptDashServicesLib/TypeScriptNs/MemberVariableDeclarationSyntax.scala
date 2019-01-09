@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typescriptDashServicesLib.TypeScriptNs.IMemberDeclarationSyntax because Already inherited)*/
-@JSGlobal("TypeScript.MemberVariableDeclarationSyntax")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typescriptDashServicesLib.TypeScriptNs.IMemberDeclarationSyntax because Already inherited */ @JSGlobal("TypeScript.MemberVariableDeclarationSyntax")
 @js.native
 class MemberVariableDeclarationSyntax protected () extends SyntaxNode {
   def this(modifiers: ISyntaxList, variableDeclarator: VariableDeclaratorSyntax, semicolonToken: ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()

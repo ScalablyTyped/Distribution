@@ -18,6 +18,6 @@ class Service protected ()
   		 *   * name - the service name, like /add_two_ints
   		 *   * serviceType - the service type, like 'rospy_tutorials/AddTwoInts'
   		 */
-  def this(data: roslibLib.Anon_ServiceType) = this()
+  def this(data: roslibLib.Anon_NameRos) = this()
 }
 

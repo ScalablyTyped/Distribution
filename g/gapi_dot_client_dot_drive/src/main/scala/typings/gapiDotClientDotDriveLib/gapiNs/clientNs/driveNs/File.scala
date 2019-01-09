@@ -12,9 +12,9 @@ trait File extends js.Object {
     */
   var appProperties: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
   /** Capabilities the current user has on this file. Each capability corresponds to a fine-grained action that a user may take. */
-  var capabilities: js.UndefOr[gapiDotClientDotDriveLib.Anon_CanUntrash] = js.undefined
+  var capabilities: js.UndefOr[gapiDotClientDotDriveLib.Anon_CanAddChildren] = js.undefined
   /** Additional information about the content of the file. These fields are never populated in responses. */
-  var contentHints: js.UndefOr[gapiDotClientDotDriveLib.Anon_Thumbnail] = js.undefined
+  var contentHints: js.UndefOr[gapiDotClientDotDriveLib.Anon_IndexableText] = js.undefined
   /** The time at which the file was created (RFC 3339 date-time). */
   var createdTime: js.UndefOr[java.lang.String] = js.undefined
   /** A short description of the file. */
@@ -48,7 +48,7 @@ trait File extends js.Object {
   /** The ID of the file. */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /** Additional metadata about image media, if available. */
-  var imageMediaMetadata: js.UndefOr[gapiDotClientDotDriveLib.Anon_MaxApertureValue] = js.undefined
+  var imageMediaMetadata: js.UndefOr[gapiDotClientDotDriveLib.Anon_Aperture] = js.undefined
   /** Whether the file was created or opened by the requesting app. */
   var isAppAuthorized: js.UndefOr[scala.Boolean] = js.undefined
   /** Identifies what kind of resource this is. Value: the fixed string "drive#file". */

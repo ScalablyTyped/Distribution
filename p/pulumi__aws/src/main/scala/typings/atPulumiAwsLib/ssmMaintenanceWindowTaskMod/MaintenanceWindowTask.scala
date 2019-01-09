@@ -25,7 +25,7 @@ class MaintenanceWindowTask protected ()
   /**
     * A structure containing information about an Amazon S3 bucket to write instance-level logs to. Documented below.
     */
-  val loggingInfo: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_S3BucketNameS3Region]] = js.native
+  val loggingInfo: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_S3BucketNameS3BucketPrefix]] = js.native
   /**
     * The maximum number of targets this task can be run for in parallel.
     */
@@ -46,7 +46,7 @@ class MaintenanceWindowTask protected ()
   /**
     * The targets (either instances or window target ids). Instances are specified using Key=InstanceIds,Values=instanceid1,instanceid2. Window target ids are specified using Key=WindowTargetIds,Values=window target id1, window target id2.
     */
-  val targets: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ValuesKey]] = js.native
+  val targets: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_KeyValues]] = js.native
   /**
     * The ARN of the task to execute.
     */
@@ -54,7 +54,7 @@ class MaintenanceWindowTask protected ()
   /**
     * A structure containing information about parameters required by the particular `task_arn`. Documented below.
     */
-  val taskParameters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Values]]] = js.native
+  val taskParameters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValues]]] = js.native
   /**
     * The type of task being registered. The only allowed value is `RUN_COMMAND`.
     */

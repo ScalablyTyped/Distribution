@@ -9,8 +9,8 @@ trait RowMetadata[T] extends js.Object {
   /**
   		 * Metadata related to individual columns
   		 */
-  var columns: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
+  var columns: /* import warning: ImportType.apply Failed type conversion: {[index: string] : slickgrid.Slick.ColumnMetadata<T>, [index: number] : slickgrid.Slick.ColumnMetadata<T>} */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: {[index: string] : slickgrid.Slick.ColumnMetadata<T>, [index: number] : slickgrid.Slick.ColumnMetadata<T>} */ js.Any
   ] = js.undefined
   /**
   		 * One or more (space-separated) CSS classes to be added to the entire row.

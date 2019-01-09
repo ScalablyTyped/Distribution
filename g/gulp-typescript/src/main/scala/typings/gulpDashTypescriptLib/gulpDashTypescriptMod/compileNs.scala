@@ -41,7 +41,7 @@ object compileNs extends js.Object {
     var sourceRoot: js.UndefOr[java.lang.String] = js.undefined
     var suppressImplicitAnyIndexErrors: js.UndefOr[scala.Boolean] = js.undefined
     var target: js.UndefOr[java.lang.String | typescriptLib.typescriptMod.tsNs.ScriptTarget] = js.undefined
-    var typescript: js.UndefOr[gulpDashTypescriptLib.Anon_CreateFunctionExpression] = js.undefined
+    var typescript: js.UndefOr[gulpDashTypescriptLib.Anon_08] = js.undefined
   }
   
   @JSName("reporter")
@@ -66,7 +66,7 @@ object compileNs extends js.Object {
       var error: js.UndefOr[
             js.Function2[
               /* error */ gulpDashTypescriptLib.releaseReporterMod.TypeScriptError, 
-              /* typescript */ gulpDashTypescriptLib.Anon_CreateFunctionExpression, 
+              /* typescript */ gulpDashTypescriptLib.Anon_08, 
               scala.Unit
             ]
           ] = js.undefined
@@ -81,11 +81,11 @@ object compileNs extends js.Object {
     trait TypeScriptError
       extends nodeLib.Error {
       var diagnostic: typescriptLib.typescriptMod.tsNs.Diagnostic
-      var endPosition: js.UndefOr[gulpDashTypescriptLib.Anon_Position] = js.undefined
+      var endPosition: js.UndefOr[gulpDashTypescriptLib.Anon_Character] = js.undefined
       var file: js.UndefOr[gulpDashTypescriptLib.releaseTypesMod.VinylFile] = js.undefined
       var fullFilename: js.UndefOr[java.lang.String] = js.undefined
       var relativeFilename: js.UndefOr[java.lang.String] = js.undefined
-      var startPosition: js.UndefOr[gulpDashTypescriptLib.Anon_Position] = js.undefined
+      var startPosition: js.UndefOr[gulpDashTypescriptLib.Anon_Character] = js.undefined
       var tsFile: js.UndefOr[typescriptLib.typescriptMod.tsNs.SourceFile] = js.undefined
     }
     

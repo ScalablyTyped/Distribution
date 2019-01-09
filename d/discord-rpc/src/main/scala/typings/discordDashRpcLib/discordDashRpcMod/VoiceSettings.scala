@@ -10,7 +10,7 @@ trait VoiceSettings extends js.Object {
   var deaf: scala.Boolean
   var echoCancellation: scala.Boolean
   var input: js.UndefOr[discordDashRpcLib.Anon_Device] = js.undefined
-  var mode: js.UndefOr[discordDashRpcLib.Anon_Shortcut] = js.undefined
+  var mode: js.UndefOr[discordDashRpcLib.Anon_AutoThreshold] = js.undefined
   var mute: scala.Boolean
   var noiseSuppression: scala.Boolean
   var output: js.UndefOr[discordDashRpcLib.Anon_Device] = js.undefined

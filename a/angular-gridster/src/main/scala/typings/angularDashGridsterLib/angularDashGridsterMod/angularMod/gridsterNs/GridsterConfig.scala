@@ -15,7 +15,7 @@ trait GridsterConfig extends js.Object {
   // default height of an item in rows
   var defaultSizeY: js.UndefOr[scala.Double] = js.undefined
   // options to pass to draggable handler
-  var draggable: js.UndefOr[angularDashGridsterLib.Anon_Enabled] = js.undefined
+  var draggable: js.UndefOr[angularDashGridsterLib.Anon_Drag] = js.undefined
   // whether to automatically float items up so they stack
   var floating: js.UndefOr[scala.Boolean] = js.undefined
   // toggle mobile view
@@ -47,7 +47,7 @@ trait GridsterConfig extends js.Object {
   var pushing: js.UndefOr[scala.Boolean] = js.undefined
   // grid item height in mobile display. true- to use the calculated height by sizeY given
   // options to pass to resizable handler
-  var resizable: js.UndefOr[angularDashGridsterLib.Anon_Handles] = js.undefined
+  var resizable: js.UndefOr[angularDashGridsterLib.Anon_Element] = js.undefined
   // height of grid rows. 'match' will make it the same as the column width, a numeric value will be interpreted as pixels,
   // '/2' is half the column width, '*5' is five times the column width, etc.
   var rowHeight: js.UndefOr[java.lang.String] = js.undefined

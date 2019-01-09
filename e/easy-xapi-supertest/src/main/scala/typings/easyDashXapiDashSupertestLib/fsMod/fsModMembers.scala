@@ -29,30 +29,30 @@ object fsModMembers extends js.Object {
     data: js.Any,
     callback: js.Function1[/* err */ easyDashXapiDashSupertestLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def appendFile(filename: java.lang.String, data: js.Any, options: easyDashXapiDashSupertestLib.Anon_EncodingMode): scala.Unit = js.native
+  def appendFile(filename: java.lang.String, data: js.Any, options: easyDashXapiDashSupertestLib.Anon_EncodingFlag): scala.Unit = js.native
   def appendFile(
     filename: java.lang.String,
     data: js.Any,
-    options: easyDashXapiDashSupertestLib.Anon_EncodingModeFlag
+    options: easyDashXapiDashSupertestLib.Anon_EncodingFlagMode
   ): scala.Unit = js.native
   def appendFile(
     filename: java.lang.String,
     data: js.Any,
-    options: easyDashXapiDashSupertestLib.Anon_EncodingModeFlag,
+    options: easyDashXapiDashSupertestLib.Anon_EncodingFlagMode,
     callback: js.Function1[/* err */ easyDashXapiDashSupertestLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def appendFile(
     filename: java.lang.String,
     data: js.Any,
-    options: easyDashXapiDashSupertestLib.Anon_EncodingMode,
+    options: easyDashXapiDashSupertestLib.Anon_EncodingFlag,
     callback: js.Function1[/* err */ easyDashXapiDashSupertestLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def appendFileSync(filename: java.lang.String, data: js.Any): scala.Unit = js.native
-  def appendFileSync(filename: java.lang.String, data: js.Any, options: easyDashXapiDashSupertestLib.Anon_EncodingMode): scala.Unit = js.native
+  def appendFileSync(filename: java.lang.String, data: js.Any, options: easyDashXapiDashSupertestLib.Anon_EncodingFlag): scala.Unit = js.native
   def appendFileSync(
     filename: java.lang.String,
     data: js.Any,
-    options: easyDashXapiDashSupertestLib.Anon_EncodingModeFlag
+    options: easyDashXapiDashSupertestLib.Anon_EncodingFlagMode
   ): scala.Unit = js.native
   def chmod(path: java.lang.String, mode: java.lang.String): scala.Unit = js.native
   def chmod(
@@ -95,10 +95,10 @@ object fsModMembers extends js.Object {
   ): scala.Unit = js.native
   def closeSync(fd: scala.Double): scala.Unit = js.native
   def createReadStream(path: java.lang.String): ReadStream = js.native
-  def createReadStream(path: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_Flags): ReadStream = js.native
-  def createReadStream(path: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_FlagsEncoding): ReadStream = js.native
+  def createReadStream(path: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_BufferSize): ReadStream = js.native
+  def createReadStream(path: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_BufferSizeEncoding): ReadStream = js.native
   def createWriteStream(path: java.lang.String): WriteStream = js.native
-  def createWriteStream(path: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_EncodingString): WriteStream = js.native
+  def createWriteStream(path: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_EncodingFlags): WriteStream = js.native
   def exists(path: java.lang.String): scala.Unit = js.native
   def exists(path: java.lang.String, callback: js.Function1[/* exists */ scala.Boolean, scala.Unit]): scala.Unit = js.native
   def existsSync(path: java.lang.String): scala.Boolean = js.native
@@ -339,7 +339,7 @@ object fsModMembers extends js.Object {
   ): scala.Unit = js.native
   def readFile(
     filename: java.lang.String,
-    options: easyDashXapiDashSupertestLib.Anon_EncodingFlag,
+    options: easyDashXapiDashSupertestLib.Anon_Encoding,
     callback: js.Function2[
       /* err */ easyDashXapiDashSupertestLib.NodeJSNs.ErrnoException, 
       /* data */ java.lang.String, 
@@ -357,7 +357,7 @@ object fsModMembers extends js.Object {
   ): scala.Unit = js.native
   def readFileSync(filename: java.lang.String): easyDashXapiDashSupertestLib.Buffer = js.native
   def readFileSync(filename: java.lang.String, encoding: java.lang.String): java.lang.String = js.native
-  def readFileSync(filename: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_EncodingFlag): java.lang.String = js.native
+  def readFileSync(filename: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_Encoding): java.lang.String = js.native
   def readFileSync(filename: java.lang.String, options: easyDashXapiDashSupertestLib.Anon_Flag): easyDashXapiDashSupertestLib.Buffer = js.native
   def readSync(
     fd: scala.Double,
@@ -510,7 +510,7 @@ object fsModMembers extends js.Object {
   def watchFile(filename: java.lang.String, listener: js.Function2[/* curr */ Stats, /* prev */ Stats, scala.Unit]): scala.Unit = js.native
   def watchFile(
     filename: java.lang.String,
-    options: easyDashXapiDashSupertestLib.Anon_PersistentInterval,
+    options: easyDashXapiDashSupertestLib.Anon_Interval,
     listener: js.Function2[/* curr */ Stats, /* prev */ Stats, scala.Unit]
   ): scala.Unit = js.native
   def write(
@@ -539,30 +539,30 @@ object fsModMembers extends js.Object {
     data: js.Any,
     callback: js.Function1[/* err */ easyDashXapiDashSupertestLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
-  def writeFile(filename: java.lang.String, data: js.Any, options: easyDashXapiDashSupertestLib.Anon_EncodingMode): scala.Unit = js.native
+  def writeFile(filename: java.lang.String, data: js.Any, options: easyDashXapiDashSupertestLib.Anon_EncodingFlag): scala.Unit = js.native
   def writeFile(
     filename: java.lang.String,
     data: js.Any,
-    options: easyDashXapiDashSupertestLib.Anon_EncodingModeFlag
+    options: easyDashXapiDashSupertestLib.Anon_EncodingFlagMode
   ): scala.Unit = js.native
   def writeFile(
     filename: java.lang.String,
     data: js.Any,
-    options: easyDashXapiDashSupertestLib.Anon_EncodingModeFlag,
+    options: easyDashXapiDashSupertestLib.Anon_EncodingFlagMode,
     callback: js.Function1[/* err */ easyDashXapiDashSupertestLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def writeFile(
     filename: java.lang.String,
     data: js.Any,
-    options: easyDashXapiDashSupertestLib.Anon_EncodingMode,
+    options: easyDashXapiDashSupertestLib.Anon_EncodingFlag,
     callback: js.Function1[/* err */ easyDashXapiDashSupertestLib.NodeJSNs.ErrnoException, scala.Unit]
   ): scala.Unit = js.native
   def writeFileSync(filename: java.lang.String, data: js.Any): scala.Unit = js.native
-  def writeFileSync(filename: java.lang.String, data: js.Any, options: easyDashXapiDashSupertestLib.Anon_EncodingMode): scala.Unit = js.native
+  def writeFileSync(filename: java.lang.String, data: js.Any, options: easyDashXapiDashSupertestLib.Anon_EncodingFlag): scala.Unit = js.native
   def writeFileSync(
     filename: java.lang.String,
     data: js.Any,
-    options: easyDashXapiDashSupertestLib.Anon_EncodingModeFlag
+    options: easyDashXapiDashSupertestLib.Anon_EncodingFlagMode
   ): scala.Unit = js.native
   def writeSync(
     fd: scala.Double,

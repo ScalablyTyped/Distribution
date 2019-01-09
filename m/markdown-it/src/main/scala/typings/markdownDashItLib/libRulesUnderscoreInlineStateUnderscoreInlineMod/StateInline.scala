@@ -34,6 +34,6 @@ trait StateInline
     * @param start - position to scan from (it should point to a valid marker)
     * @param canSplitWord - determine if these markers can be found inside a word
     */
-  def scanDelims(start: scala.Double, canSplitWord: scala.Boolean): markdownDashItLib.Anon_Length = js.native
+  def scanDelims(start: scala.Double, canSplitWord: scala.Boolean): markdownDashItLib.Anon_Canclose = js.native
 }
 

@@ -12,6 +12,6 @@ class default () extends DatePicker
 @JSImport("rmc-date-picker/lib/DatePicker", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: rmcDashDateDashPickerLib.Anon_MinuteStep = js.native
+  var defaultProps: rmcDashDateDashPickerLib.Anon_Disabled = js.native
 }
 

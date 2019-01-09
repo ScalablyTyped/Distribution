@@ -23,7 +23,7 @@ org.scalablytyped.runtime.Instantiable0[
       CombinedVueInstance[V, js.Object, js.Object, js.Object, stdLib.Record[java.lang.String, js.Any]]
     ] {
   var config: VueConfiguration = js.native
-  def compile(template: java.lang.String): vueLib.Anon_StaticRenderFnsRender = js.native
+  def compile(template: java.lang.String): vueLib.Anon_CreateElement = js.native
   def component(id: java.lang.String): VueConstructor[Vue] = js.native
   def component(
     id: java.lang.String,

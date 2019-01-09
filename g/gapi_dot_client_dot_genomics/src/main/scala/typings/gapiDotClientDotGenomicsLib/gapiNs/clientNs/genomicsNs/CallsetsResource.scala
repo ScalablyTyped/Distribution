@@ -13,7 +13,7 @@ trait CallsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def create(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[CallSet]
+  def create(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[CallSet]
   /**
     * Deletes a call set.
     *
@@ -21,7 +21,7 @@ trait CallsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def delete(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenCallSetId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Gets a call set by ID.
     *
@@ -29,7 +29,7 @@ trait CallsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def get(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenCallSetId): gapiDotClientLib.gapiNs.clientNs.Request[CallSet]
+  def get(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[CallSet]
   /**
     * Updates a call set.
     *
@@ -39,7 +39,7 @@ trait CallsetsResource extends js.Object {
     *
     * This method supports patch semantics.
     */
-  def patch(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenCallSetIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[CallSet]
+  def patch(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallSetId): gapiDotClientLib.gapiNs.clientNs.Request[CallSet]
   /**
     * Gets a list of call sets matching the criteria.
     *
@@ -50,6 +50,6 @@ trait CallsetsResource extends js.Object {
     * Implements
     * [GlobalAllianceApi.searchCallSets](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L178).
     */
-  def search(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[SearchCallSetsResponse]
+  def search(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchCallSetsResponse]
 }
 

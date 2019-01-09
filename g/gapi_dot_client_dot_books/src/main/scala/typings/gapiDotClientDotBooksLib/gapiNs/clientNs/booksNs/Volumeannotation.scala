@@ -13,7 +13,7 @@ trait Volumeannotation extends js.Object {
   /** The type of annotation this is. */
   var annotationType: js.UndefOr[java.lang.String] = js.undefined
   /** The content ranges to identify the selected text. */
-  var contentRanges: js.UndefOr[gapiDotClientDotBooksLib.Anon_CfiRange] = js.undefined
+  var contentRanges: js.UndefOr[gapiDotClientDotBooksLib.Anon_CfiRangeContentVersion] = js.undefined
   /** Data for this annotation. */
   var data: js.UndefOr[java.lang.String] = js.undefined
   /** Indicates that this annotation is deleted. */

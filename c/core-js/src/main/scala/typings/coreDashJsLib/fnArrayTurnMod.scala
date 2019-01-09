@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/array/turn", JSImport.Namespace)
 @js.native
 object fnArrayTurnMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayCallbackfn]
+  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayCallbackfnIndexMemo]
 

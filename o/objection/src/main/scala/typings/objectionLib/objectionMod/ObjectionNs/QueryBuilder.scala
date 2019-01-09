@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait QueryBuilder[QM /* <: Model */, RM, RV]
   extends QueryBuilderBase[QM, RM, RV]
      with Executable[RV] {
-  def castTo[T /* <: org.scalablytyped.runtime.Instantiable0[Model] */](model: T): QueryBuilder[QM, js.Array[stdLib.InstanceType[T]], js.Array[stdLib.InstanceType[T]]] = js.native
+  def castTo[T /* <: objectionLib.Anon_Args */](model: T): QueryBuilder[QM, js.Array[stdLib.InstanceType[T]], js.Array[stdLib.InstanceType[T]]] = js.native
   def throwIfNotFound(): QueryBuilder[QM, RM, RM] = js.native
 }
 

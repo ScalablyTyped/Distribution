@@ -13,7 +13,7 @@ trait IUser extends js.Object {
   /**
     * The user's postal addresses.
     */
-  var addresses: microsoftDashLiveDashConnectLib.Anon_PersonalBusiness
+  var addresses: microsoftDashLiveDashConnectLib.Anon_BusinessPersonal
   /**
     * The day of the user's birth date, or null if no birth date is
     * specified.
@@ -32,7 +32,7 @@ trait IUser extends js.Object {
   /**
     * The user's email addresses.
     */
-  var emails: microsoftDashLiveDashConnectLib.Anon_Business
+  var emails: microsoftDashLiveDashConnectLib.Anon_Account
   /**
     * The user's first name.
     */
@@ -64,7 +64,7 @@ trait IUser extends js.Object {
   /**
     * The user's phone numbers.
     */
-  var phones: microsoftDashLiveDashConnectLib.Anon_Personal
+  var phones: microsoftDashLiveDashConnectLib.Anon_BusinessMobile
   /**
     * The time, in ISO 8601 format, at which the user last updated the
     * object.

@@ -14,11 +14,11 @@ abstract class MediaDeviceControl () extends js.Object {
   /**
     * Indicates whether automatic adjustment of the camera setting is enabled.
     */
-  def tryGetAuto(): winrtDashUwpLib.Anon_ValueReturnValue = js.native
+  def tryGetAuto(): winrtDashUwpLib.Anon_ReturnValue = js.native
   /**
     * Gets the value of the camera setting.
     */
-  def tryGetValue(): winrtDashUwpLib.Anon_ValueReturnValueNumber = js.native
+  def tryGetValue(): winrtDashUwpLib.Anon_ReturnValueValue = js.native
   /**
     * Enables or disables automatic adjustment of the camera setting.
     * @param value True to enable automatic adjustment; or false to disable automatic adjustment. If false, call TrySetValue to adjust the setting.

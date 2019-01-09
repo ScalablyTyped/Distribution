@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/Modal/ModalManager", JSImport.Default)
 @js.native
 class default () extends ModalManager {
-  def this(opts: atMaterialDashUiCoreLib.Anon_HideSiblingNodes) = this()
+  def this(opts: atMaterialDashUiCoreLib.Anon_HandleContainerOverflow) = this()
   /* CompleteClass */
   override def add(modal: js.Any, container: js.Any): scala.Double = js.native
   /* CompleteClass */

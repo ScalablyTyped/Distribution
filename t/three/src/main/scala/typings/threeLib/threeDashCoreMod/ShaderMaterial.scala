@@ -16,7 +16,7 @@ class ShaderMaterial () extends Material {
     * @deprecated Use {@link ShaderMaterial#extensions.derivatives extensions.derivatives} instead.
     */
   var derivatives: js.Any = js.native
-  var extensions: threeLib.Anon_ShaderTextureLOD = js.native
+  var extensions: threeLib.Anon_Derivatives = js.native
   var fragmentShader: java.lang.String = js.native
   var index0AttributeName: js.UndefOr[java.lang.String] = js.native
   var linewidth: scala.Double = js.native

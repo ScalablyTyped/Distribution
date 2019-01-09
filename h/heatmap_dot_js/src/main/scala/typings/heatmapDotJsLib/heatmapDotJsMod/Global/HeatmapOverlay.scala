@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * The overlay layer to be added onto leaflet map
   */
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ @JSGlobal("HeatmapOverlay")
 @js.native
 class HeatmapOverlay[V /* <: java.lang.String */, TLat /* <: java.lang.String */, TLng /* <: java.lang.String */] protected () extends js.Object {

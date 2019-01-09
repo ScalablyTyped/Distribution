@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * This is not a plug and play UI, and will not. This is a minimal, lightweight, and fully extendable API to
   * control editing of geometries. So you can easily build your own UI with your own needs and choices.
   */
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ @js.native
 trait Editable extends js.Object {
   var currentPolygon: (leafletLib.leafletMod.Polyline[geojsonLib.geojsonMod.LineString | geojsonLib.geojsonMod.MultiLineString, _]) | leafletLib.leafletMod.Polygon[_] | leafletLib.leafletMod.Marker[_] = js.native

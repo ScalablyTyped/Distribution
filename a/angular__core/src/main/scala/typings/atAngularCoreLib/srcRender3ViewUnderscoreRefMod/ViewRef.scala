@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(atAngularCoreLib.srcRender3ViewUnderscoreRefMod.viewEngine_ChangeDetectorRef_interface because Already inherited)*/
-@JSImport("@angular/core/src/render3/view_ref", "ViewRef")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- atAngularCoreLib.srcRender3ViewUnderscoreRefMod.viewEngine_ChangeDetectorRef_interface because Already inherited */ @JSImport("@angular/core/src/render3/view_ref", "ViewRef")
 @js.native
 class ViewRef[T] protected ()
   extends atAngularCoreLib.srcLinkerViewUnderscoreRefMod.EmbeddedViewRef[T]

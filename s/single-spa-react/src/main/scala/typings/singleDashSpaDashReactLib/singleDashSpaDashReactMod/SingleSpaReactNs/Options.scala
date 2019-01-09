@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
-  var React: singleDashSpaDashReactLib.Anon_Lazy
-  var ReactDOM: singleDashSpaDashReactLib.Anon_CreatePortal
+  var React: singleDashSpaDashReactLib.Anon_A
+  var ReactDOM: singleDashSpaDashReactLib.Anon_AB
   var domElementGetter: js.UndefOr[js.Function0[reactLib.Element]] = js.undefined
   var loadRootComponent: js.UndefOr[
     js.Function0[

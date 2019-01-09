@@ -22,11 +22,11 @@ class Preset protected ()
   /**
     * Audio parameters object (documented below).
     */
-  val audio: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ChannelsAudioPackingMode]] = js.native
+  val audio: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AudioPackingMode]] = js.native
   /**
     * Codec options for the audio parameters (documented below)
     */
-  val audioCodecOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ProfileBitDepth]] = js.native
+  val audioCodecOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BitDepth]] = js.native
   /**
     * The container type for the output file. Valid values are `flac`, `flv`, `fmp4`, `gif`, `mp3`, `mp4`, `mpg`, `mxf`, `oga`, `ogg`, `ts`, and `webm`.
     */
@@ -42,18 +42,18 @@ class Preset protected ()
   /**
     * Thumbnail parameters object (documented below)
     */
-  val thumbnails: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_FormatAspectRatioInterval]] = js.native
+  val thumbnails: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AspectRatio]] = js.native
   val `type`: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
   /**
     * Video parameters object (documented below)
     */
-  val video: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DisplayAspectRatioKeyframesMaxDist]] = js.native
+  val video: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AspectRatioBitRate]] = js.native
   val videoCodecOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * Watermark parameters for the video parameters (documented below)
     * * `video_codec_options` (Optional, Forces new resource) Codec options for the video parameters
     */
-  val videoWatermarks: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_VerticalAlignId]]] = js.native
+  val videoWatermarks: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_HorizontalAlign]]] = js.native
 }
 
 @JSImport("@pulumi/aws/elastictranscoder/preset", "Preset")

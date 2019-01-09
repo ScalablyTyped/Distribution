@@ -15,8 +15,8 @@ object reduxDashFirstDashRouterModMembers extends js.Object {
   def canGo(n: scala.Double): scala.Boolean = js.native
   def canGoBack(): scala.Boolean = js.native
   def canGoForward(): scala.Boolean = js.native
-  def connectRoutes[TKeys, TState](routesMap: RoutesMap[TKeys, TState]): reduxDashFirstDashRouterLib.Anon_Thunk[TState, TKeys] = js.native
-  def connectRoutes[TKeys, TState](routesMap: RoutesMap[TKeys, TState], options: Options[TKeys, TState]): reduxDashFirstDashRouterLib.Anon_Thunk[TState, TKeys] = js.native
+  def connectRoutes[TKeys, TState](routesMap: RoutesMap[TKeys, TState]): reduxDashFirstDashRouterLib.Anon_ActionApi[TKeys, TState] = js.native
+  def connectRoutes[TKeys, TState](routesMap: RoutesMap[TKeys, TState], options: Options[TKeys, TState]): reduxDashFirstDashRouterLib.Anon_ActionApi[TKeys, TState] = js.native
   def go(n: scala.Double): scala.Unit = js.native
   def history(): historyLib.historyMod.History[historyLib.historyMod.LocationState] = js.native
   def isLocationAction(action: js.Any): scala.Boolean = js.native

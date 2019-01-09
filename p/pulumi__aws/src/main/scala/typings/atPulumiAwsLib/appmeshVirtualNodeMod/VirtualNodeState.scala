@@ -29,6 +29,6 @@ trait VirtualNodeState extends js.Object {
   /**
     * The virtual node specification to apply.
     */
-  val spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Listener]] = js.undefined
+  val spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BackendsListener]] = js.undefined
 }
 

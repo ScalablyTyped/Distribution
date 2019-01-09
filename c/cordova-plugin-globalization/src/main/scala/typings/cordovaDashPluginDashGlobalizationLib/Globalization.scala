@@ -21,12 +21,12 @@ trait Globalization extends js.Object {
     */
   def dateToString(
     date: stdLib.Date,
-    onSuccess: js.Function1[/* date */ Anon_ValueString, scala.Unit],
+    onSuccess: js.Function1[/* date */ Anon_Value, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit]
   ): scala.Unit = js.native
   def dateToString(
     date: stdLib.Date,
-    onSuccess: js.Function1[/* date */ Anon_ValueString, scala.Unit],
+    onSuccess: js.Function1[/* date */ Anon_Value, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit],
     options: Anon_FormatLength
   ): scala.Unit = js.native
@@ -58,7 +58,7 @@ trait Globalization extends js.Object {
   def getDateNames(
     onSuccess: js.Function1[/* names */ Anon_ValueArray, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit],
-    options: Anon_Type
+    options: Anon_Item
   ): scala.Unit = js.native
   /**
     * Returns a pattern string to format and parse dates according to the client's user preferences.
@@ -74,7 +74,7 @@ trait Globalization extends js.Object {
   def getDatePattern(
     onSuccess: js.Function1[/* datePattern */ GlobalizationDatePattern, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit],
-    options: Anon_Type
+    options: Anon_Item
   ): scala.Unit = js.native
   /**
     * Returns the first day of the week according to the client's user preferences and calendar.
@@ -84,7 +84,7 @@ trait Globalization extends js.Object {
     *                  The error's expected code is GlobalizationError.UNKNOWN_ERROR.
     */
   def getFirstDayOfWeek(
-    onSuccess: js.Function1[/* day */ Anon_Value, scala.Unit],
+    onSuccess: js.Function1[/* day */ Anon_ValueNumber, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -95,7 +95,7 @@ trait Globalization extends js.Object {
     *                  The error's expected code is GlobalizationError.UNKNOWN\_ERROR.
     */
   def getLocaleName(
-    onSuccess: js.Function1[/* locale */ Anon_ValueString, scala.Unit],
+    onSuccess: js.Function1[/* locale */ Anon_Value, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -112,7 +112,7 @@ trait Globalization extends js.Object {
   def getNumberPattern(
     onSuccess: js.Function1[/* result */ GlobalizationNumberPattern, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit],
-    format: Anon_TypeString
+    format: Anon_Type
   ): scala.Unit = js.native
   /**
     * Get the string identifier for the client's current language.
@@ -122,7 +122,7 @@ trait Globalization extends js.Object {
     *                  The error's expected code is GlobalizationError.UNKNOWN_ERROR.
     */
   def getPreferredLanguage(
-    onSuccess: js.Function1[/* language */ Anon_ValueString, scala.Unit],
+    onSuccess: js.Function1[/* language */ Anon_Value, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -149,14 +149,14 @@ trait Globalization extends js.Object {
     */
   def nubmerToString(
     value: scala.Double,
-    onSuccess: js.Function1[/* result */ Anon_ValueString, scala.Unit],
+    onSuccess: js.Function1[/* result */ Anon_Value, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit]
   ): scala.Unit = js.native
   def nubmerToString(
     value: scala.Double,
-    onSuccess: js.Function1[/* result */ Anon_ValueString, scala.Unit],
+    onSuccess: js.Function1[/* result */ Anon_Value, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit],
-    format: Anon_TypeString
+    format: Anon_Type
   ): scala.Unit = js.native
   /**
     * Parses a date formatted as a string, according to the client's user preferences
@@ -176,7 +176,7 @@ trait Globalization extends js.Object {
     dateString: java.lang.String,
     onSuccess: js.Function1[/* date */ GlobalizationDate, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit],
-    options: Anon_Type
+    options: Anon_Item
   ): scala.Unit = js.native
   /**
     * Parses a number formatted as a string according to the client's user preferences and returns the corresponding number.
@@ -189,14 +189,14 @@ trait Globalization extends js.Object {
     */
   def stringToNumber(
     value: java.lang.String,
-    onSuccess: js.Function1[/* result */ Anon_Value, scala.Unit],
+    onSuccess: js.Function1[/* result */ Anon_ValueNumber, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit]
   ): scala.Unit = js.native
   def stringToNumber(
     value: java.lang.String,
-    onSuccess: js.Function1[/* result */ Anon_Value, scala.Unit],
+    onSuccess: js.Function1[/* result */ Anon_ValueNumber, scala.Unit],
     onError: js.Function1[/* error */ GlobalizationError, scala.Unit],
-    format: Anon_TypeString
+    format: Anon_Type
   ): scala.Unit = js.native
 }
 

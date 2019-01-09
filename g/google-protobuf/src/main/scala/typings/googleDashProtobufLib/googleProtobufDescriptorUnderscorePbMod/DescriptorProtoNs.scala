@@ -22,7 +22,9 @@ object DescriptorProtoNs extends js.Object {
         googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.FieldDescriptorProtoNs.AsObject
       ]
     var name: js.UndefOr[java.lang.String] = js.undefined
-    var nestedTypeList: js.Array[js.Object]
+    var nestedTypeList: js.Array[
+        /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias google-protobuf.google-protobuf/google/protobuf/descriptor_pb.DescriptorProto.AsObject */ js.Object
+      ]
     var oneofDeclList: js.Array[
         googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.OneofDescriptorProtoNs.AsObject
       ]

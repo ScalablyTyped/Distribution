@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait VerifyResults extends Status {
-  var dns: js.UndefOr[sparkpostLib.Anon_Spfrecord] = js.undefined
+  var dns: js.UndefOr[sparkpostLib.Anon_Dkimrecord] = js.undefined
 }
 

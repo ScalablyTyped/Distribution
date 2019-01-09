@@ -18,7 +18,7 @@ object syncFileSystemNsMembers extends js.Object {
     * 'conflicting'
     *  - File conflicts with remote version and must be resolved manually.
     */
-  val FileStatus: chromeDashAppsLib.Anon_SYNCED = js.native
+  val FileStatus: chromeDashAppsLib.Anon_CONFLICTING = js.native
   /**
     * @enum
     * 'initializing'
@@ -32,7 +32,7 @@ object syncFileSystemNsMembers extends js.Object {
     * 'disabled'
     *  - The sync service is disabled and the content will never sync. (E.g. this could happen when the user has no account on the remote service or the sync service has had an unrecoverable error.)
     */
-  val ServiceStatus: chromeDashAppsLib.Anon_INITIALIZING = js.native
+  val ServiceStatus: chromeDashAppsLib.Anon_AUTHENTICATIONREQUIRED = js.native
   val SyncAction: chromeDashAppsLib.Anon_ADDED = js.native
   val SyncDirection: chromeDashAppsLib.Anon_LOCALTOREMOTE = js.native
   /** Fired when a file has been updated by the background sync service. */
@@ -42,7 +42,7 @@ object syncFileSystemNsMembers extends js.Object {
     * (for example, when the sync is temporarily disabled due to network or authentication error).
     * @see ServiceStatus
     */
-  val onServiceStatusChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* detail */ chromeDashAppsLib.Anon_State, scala.Unit]] = js.native
+  val onServiceStatusChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[js.Function1[/* detail */ chromeDashAppsLib.Anon_DescriptionState, scala.Unit]] = js.native
   /**
     * Gets the current conflict resolution policy.
     * @see ConflictResolutionPolicy
@@ -70,11 +70,11 @@ object syncFileSystemNsMembers extends js.Object {
     fileEntry: filesystemLib.FileEntry,
     callback: js.Function1[
       /* status */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-        chromeDashAppsLib.Anon_SYNCED, 
+        chromeDashAppsLib.Anon_CONFLICTING, 
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_SYNCED[keyof chrome-apps.Anon_SYNCED] */ js.Any
+          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONFLICTING[keyof chrome-apps.Anon_CONFLICTING] */ js.Any
         ]
       ], 
       scala.Unit
@@ -94,11 +94,11 @@ object syncFileSystemNsMembers extends js.Object {
   def getServiceStatus(
     callback: js.Function1[
       /* status */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-        chromeDashAppsLib.Anon_INITIALIZING, 
+        chromeDashAppsLib.Anon_AUTHENTICATIONREQUIRED, 
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INITIALIZING[keyof chrome-apps.Anon_INITIALIZING] */ js.Any
+          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_AUTHENTICATIONREQUIRED[keyof chrome-apps.Anon_AUTHENTICATIONREQUIRED] */ js.Any
         ]
       ], 
       scala.Unit

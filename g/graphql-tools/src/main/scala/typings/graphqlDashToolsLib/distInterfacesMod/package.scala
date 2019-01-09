@@ -40,7 +40,11 @@ package object distInterfacesMod {
     (IResolvers[js.Any, js.Any]) | (js.Function1[/* mergeInfo */ MergeInfo, IResolvers[js.Any, js.Any]])
   ]) | (IResolvers[js.Any, js.Any]) | (js.Function1[/* mergeInfo */ MergeInfo, IResolvers[js.Any, js.Any]])
   type ITypeDefinitions = ITypedef | js.Array[ITypedef]
-  type ITypedef = js.Function0[js.Array[js.Object]] | java.lang.String | graphqlLib.languageAstMod.DocumentNode
+  type ITypedef = (js.Function0[
+    js.Array[
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias graphql-tools.graphql-tools/dist/Interfaces.ITypedef */ js.Object
+    ]
+  ]) | java.lang.String | graphqlLib.languageAstMod.DocumentNode
   type NextResolverFn = js.Function0[js.Promise[js.Any]]
   type Operation = graphqlDashToolsLib.graphqlDashToolsLibStrings.query | graphqlDashToolsLib.graphqlDashToolsLibStrings.mutation | graphqlDashToolsLib.graphqlDashToolsLibStrings.subscription
   type ResolveType[T /* <: graphqlLib.typeDefinitionMod.GraphQLType */] = js.Function1[/* type */ T, T]

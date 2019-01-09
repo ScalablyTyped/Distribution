@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait RequestOptions extends js.Object {
   /** Conditions Associated with the request. */
-  var accessCondition: js.UndefOr[documentdbLib.Anon_Type] = js.undefined
+  var accessCondition: js.UndefOr[documentdbLib.Anon_Condition] = js.undefined
   /** Consistency level required by the client. */
   var consistencyLevel: js.UndefOr[java.lang.String] = js.undefined
   /**

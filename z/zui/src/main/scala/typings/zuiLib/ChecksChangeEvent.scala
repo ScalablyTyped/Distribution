@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ChecksChangeEvent
   extends stdLib.Event {
-  var checks: Anon_Checks = js.native
+  var checks: Anon_CheckedAll = js.native
 }
 

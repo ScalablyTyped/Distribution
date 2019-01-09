@@ -50,7 +50,7 @@ class Bucket protected ()
   /**
     * A rule of [Cross-Origin Resource Sharing](https://docs.aws.amazon.com/AmazonS3/latest/dev/cors.html) (documented below).
     */
-  val corsRules: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AllowedMethodsExposeHeaders]]] = js.native
+  val corsRules: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AllowedHeaders]]] = js.native
   /**
     * A boolean that indicates all objects should be deleted from the bucket so that the bucket can be destroyed without error. These objects are *not* recoverable.
     */
@@ -62,11 +62,11 @@ class Bucket protected ()
   /**
     * A configuration of [object lifecycle management](http://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html) (documented below).
     */
-  val lifecycleRules: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NoncurrentVersionTransitionsPrefix]]] = js.native
+  val lifecycleRules: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AbortIncompleteMultipartUploadDays]]] = js.native
   /**
     * A settings of [bucket logging](https://docs.aws.amazon.com/AmazonS3/latest/UG/ManagingBucketLogging.html) (documented below).
     */
-  val loggings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_TargetPrefixTargetBucket]]] = js.native
+  val loggings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_TargetBucket]]] = js.native
   /**
     * A valid [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/dev/example-bucket-policies.html) JSON document. Note that if the policy document is not specific enough (but still valid), Terraform may view the policy as constantly changing in a `terraform plan`. In this case, please make sure you use the verbose/specific version of the policy. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
     */
@@ -78,7 +78,7 @@ class Bucket protected ()
   /**
     * A configuration of [replication configuration](http://docs.aws.amazon.com/AmazonS3/latest/dev/crr.html) (documented below).
     */
-  val replicationConfiguration: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleRulesString]] = js.native
+  val replicationConfiguration: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Role]] = js.native
   /**
     * Specifies who should bear the cost of Amazon S3 data transfer.
     * Can be either `BucketOwner` or `Requester`. By default, the owner of the S3 bucket would incur
@@ -89,11 +89,7 @@ class Bucket protected ()
   /**
     * A configuration of [server-side encryption configuration](http://docs.aws.amazon.com/AmazonS3/latest/dev/bucket-encryption.html) (documented below)
     */
-  val serverSideEncryptionConfiguration: atPulumiPulumiLib.pulumiMod.Output[
-    js.UndefOr[
-      atPulumiAwsLib.Anon_RuleAnonApplyServerSideEncryptionByDefaultAnonKmsMasterKeyIdSseAlgorithm
-    ]
-  ] = js.native
+  val serverSideEncryptionConfiguration: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Rule]] = js.native
   /**
     * A mapping of tags that identifies subset of objects to which the rule applies.
     * The rule applies only to objects having all the tags in its tagset.
@@ -102,11 +98,11 @@ class Bucket protected ()
   /**
     * A state of [versioning](https://docs.aws.amazon.com/AmazonS3/latest/dev/Versioning.html) (documented below)
     */
-  val versioning: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_MfaDeleteEnabled] = js.native
+  val versioning: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_EnabledMfaDelete] = js.native
   /**
     * A website object (documented below).
     */
-  val website: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ErrorDocumentRedirectAllRequestsTo]] = js.native
+  val website: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ErrorDocument]] = js.native
   /**
     * The domain of the website endpoint, if the bucket is configured with a website. If not, this will be an empty string. This is used to create Route 53 alias records.
     */

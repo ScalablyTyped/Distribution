@@ -123,7 +123,7 @@ trait Container extends Node {
   def removeChild(child: Node): this.type = js.native
   def removeChild(child: scala.Double): this.type = js.native
   def replaceValues(pattern: java.lang.String, callbackOrReplaceValue: java.lang.String): this.type = js.native
-  def replaceValues(pattern: java.lang.String, callbackOrReplaceValue: postcssLib.Anon_Substring): this.type = js.native
+  def replaceValues(pattern: java.lang.String, callbackOrReplaceValue: postcssLib.Anon_Args): this.type = js.native
   /**
     * Passes all declaration values within the container that match pattern
     * through the callback, replacing those values with the returned result of
@@ -139,15 +139,15 @@ trait Container extends Node {
   def replaceValues(
     pattern: java.lang.String,
     options: postcssLib.Anon_Fast,
-    callbackOrReplaceValue: postcssLib.Anon_Substring
+    callbackOrReplaceValue: postcssLib.Anon_Args
   ): this.type = js.native
   def replaceValues(pattern: stdLib.RegExp, callbackOrReplaceValue: java.lang.String): this.type = js.native
-  def replaceValues(pattern: stdLib.RegExp, callbackOrReplaceValue: postcssLib.Anon_Substring): this.type = js.native
+  def replaceValues(pattern: stdLib.RegExp, callbackOrReplaceValue: postcssLib.Anon_Args): this.type = js.native
   def replaceValues(pattern: stdLib.RegExp, options: postcssLib.Anon_Fast, callbackOrReplaceValue: java.lang.String): this.type = js.native
   def replaceValues(
     pattern: stdLib.RegExp,
     options: postcssLib.Anon_Fast,
-    callbackOrReplaceValue: postcssLib.Anon_Substring
+    callbackOrReplaceValue: postcssLib.Anon_Args
   ): this.type = js.native
   /**
     * Determines whether the specified callback returns true for any child node.

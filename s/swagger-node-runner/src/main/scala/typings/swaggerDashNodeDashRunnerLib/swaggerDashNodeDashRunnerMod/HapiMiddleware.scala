@@ -9,6 +9,6 @@ trait HapiMiddleware extends Middleware {
   /** Back-reference to Config object of `Runner` that has created this middleware */
   var config: ConfigInternal
   /** Hapi Plugin */
-  var plugin: swaggerDashNodeDashRunnerLib.Anon_Register
+  var plugin: swaggerDashNodeDashRunnerLib.Anon_Next
 }
 

@@ -7,12 +7,16 @@ import scala.scalajs.js.annotation._
 
 object vegaLibStrings {
   @js.native
-  sealed trait canvas extends js.Object
+  sealed trait center extends js.Object
   
   @js.native
-  sealed trait svg extends js.Object
+  sealed trait left extends js.Object
   
-  def canvas: canvas = "canvas".asInstanceOf[canvas]
-  def svg: svg = "svg".asInstanceOf[svg]
+  @js.native
+  sealed trait right extends js.Object
+  
+  def center: center = "center".asInstanceOf[center]
+  def left: left = "left".asInstanceOf[left]
+  def right: right = "right".asInstanceOf[right]
 }
 

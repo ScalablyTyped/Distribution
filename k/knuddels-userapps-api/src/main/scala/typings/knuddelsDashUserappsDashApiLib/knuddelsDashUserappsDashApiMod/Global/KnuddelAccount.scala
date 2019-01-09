@@ -46,7 +46,7 @@ class KnuddelAccount () extends js.Object {
   def use(
     knuddelAmount: KnuddelAmount,
     displayReasonText: java.lang.String,
-    parameters: knuddelsDashUserappsDashApiLib.Anon_OnError
+    parameters: knuddelsDashUserappsDashApiLib.Anon_Message
   ): scala.Unit = js.native
 }
 

@@ -43,8 +43,6 @@ trait ICheckbox
   var handler: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String) */
   var inputValue: js.UndefOr[java.lang.String] = js.undefined
-  /** [Property] (Object) */
-  var originalValue: js.UndefOr[js.Any] = js.undefined
   /** [Method] Resets the field s originalValue property so it matches the current value
   		* @param fromBoxInGroup Object
   		*/

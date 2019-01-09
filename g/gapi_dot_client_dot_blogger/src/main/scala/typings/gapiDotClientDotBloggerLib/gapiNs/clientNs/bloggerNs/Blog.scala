@@ -19,9 +19,9 @@ trait Blog extends js.Object {
   /** The name of this blog. This is displayed as the title. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** The container of pages in this blog. */
-  var pages: js.UndefOr[gapiDotClientDotBloggerLib.Anon_SelfLinkTotalItems] = js.undefined
+  var pages: js.UndefOr[gapiDotClientDotBloggerLib.Anon_SelfLink] = js.undefined
   /** The container of posts in this blog. */
-  var posts: js.UndefOr[gapiDotClientDotBloggerLib.Anon_SelfLink] = js.undefined
+  var posts: js.UndefOr[gapiDotClientDotBloggerLib.Anon_Items] = js.undefined
   /** RFC 3339 date-time when this blog was published. */
   var published: js.UndefOr[java.lang.String] = js.undefined
   /** The API REST URL to fetch this resource from. */

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
   * Represents a scene to be rendered by the engine.
   * @see http://doc.babylonjs.com/features/scene
   */
-/* RemoveMultipleInheritance: Dropped parents List(babylonjsLib.BABYLONNs.IAnimatable because Would inherit conflicting mutable fields List(animations))*/
-@JSGlobal("BABYLON.Scene")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- babylonjsLib.BABYLONNs.IAnimatable because var conflicts: animations. Inlined  */ @JSGlobal("BABYLON.Scene")
 @js.native
 class Scene protected () extends AbstractScene {
   /**

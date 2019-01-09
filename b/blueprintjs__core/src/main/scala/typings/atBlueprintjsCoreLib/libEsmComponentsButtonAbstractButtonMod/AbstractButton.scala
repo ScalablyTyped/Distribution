@@ -14,7 +14,7 @@ abstract class AbstractButton[H /* <: reactLib.reactMod.ReactNs.HTMLAttributes[_
   var refHandlers: atBlueprintjsCoreLib.Anon_Button = js.native
   @JSName("state")
   var state_AbstractButton: atBlueprintjsCoreLib.Anon_IsActive = js.native
-  /* protected */ def getCommonButtonProps(): atBlueprintjsCoreLib.Anon_TabIndexOnClick[H] = js.native
+  /* protected */ def getCommonButtonProps(): atBlueprintjsCoreLib.Anon_ClassName[H] = js.native
   /* protected */ def handleKeyDown(e: reactLib.reactMod.ReactNs.KeyboardEvent[_]): scala.Unit = js.native
   /* protected */ def handleKeyUp(e: reactLib.reactMod.ReactNs.KeyboardEvent[_]): scala.Unit = js.native
   /* protected */ def renderChildren(): reactLib.reactMod.ReactNs.ReactNode = js.native

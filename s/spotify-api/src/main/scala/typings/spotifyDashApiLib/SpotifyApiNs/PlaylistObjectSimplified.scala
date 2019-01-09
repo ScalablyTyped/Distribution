@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
   * [](https://developer.spotify.com/web-api/object-model/)
   */
 trait PlaylistObjectSimplified extends PlaylistBaseObject {
-  var tracks: spotifyDashApiLib.Anon_Total
+  var tracks: spotifyDashApiLib.Anon_Href
 }
 

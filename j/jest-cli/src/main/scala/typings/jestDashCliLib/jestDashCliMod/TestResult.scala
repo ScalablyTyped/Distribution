@@ -18,7 +18,7 @@ trait TestResult extends js.Object {
   var openHandles: js.Array[stdLib.Error]
   var perfStats: jestDashCliLib.Anon_End
   var skipped: scala.Boolean
-  var snapshot: jestDashCliLib.Anon_Unchecked
+  var snapshot: jestDashCliLib.Anon_Added
   var sourceMaps: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var testExecError: js.UndefOr[SerializableError] = js.undefined
   var testFilePath: java.lang.String

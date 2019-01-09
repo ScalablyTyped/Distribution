@@ -25,7 +25,7 @@ trait DocumentArgs extends js.Object {
   /**
     * Additional Permissions to attach to the document. See Permissions below for details.
     */
-  val permissions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypeAccountIdsInput]] = js.undefined
+  val permissions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AccountIdsTypeInput]] = js.undefined
   /**
     * A mapping of tags to assign to the object.
     */

@@ -39,9 +39,9 @@ trait Event extends js.Object {
   /** ETag of the resource. */
   var etag: js.UndefOr[java.lang.String] = js.undefined
   /** Extended properties of the event. */
-  var extendedProperties: js.UndefOr[gapiDotClientDotCalendarLib.Anon_Shared] = js.undefined
+  var extendedProperties: js.UndefOr[gapiDotClientDotCalendarLib.Anon_Private] = js.undefined
   /** A gadget that extends this event. */
-  var gadget: js.UndefOr[gapiDotClientDotCalendarLib.Anon_Height] = js.undefined
+  var gadget: js.UndefOr[gapiDotClientDotCalendarLib.Anon_Display] = js.undefined
   /** Whether attendees other than the organizer can invite others to the event. Optional. The default is True. */
   var guestsCanInviteOthers: js.UndefOr[scala.Boolean] = js.undefined
   /** Whether attendees other than the organizer can modify the event. Optional. The default is False. */
@@ -106,7 +106,7 @@ trait Event extends js.Object {
     * Source from which the event was created. For example, a web page, an email message or any document identifiable by an URL with HTTP or HTTPS scheme.
     * Can only be seen or modified by the creator of the event.
     */
-  var source: js.UndefOr[gapiDotClientDotCalendarLib.Anon_Url] = js.undefined
+  var source: js.UndefOr[gapiDotClientDotCalendarLib.Anon_Title] = js.undefined
   /** The (inclusive) start time of the event. For a recurring event, this is the start time of the first instance. */
   var start: js.UndefOr[EventDateTime] = js.undefined
   /**

@@ -10,7 +10,7 @@ trait NodeRefFieldsValue extends js.Object {
   var id: baiduDashAppLib.Anon_Id
   var properties: baiduDashAppLib.Anon_PropertiesAny
   var rect: baiduDashAppLib.Anon_Bottom
-  var scrollOffset: baiduDashAppLib.Anon_ScrollTopScrollLeft
-  var size: baiduDashAppLib.Anon_Height
+  var scrollOffset: baiduDashAppLib.Anon_ScrollLeft
+  var size: baiduDashAppLib.Anon_HeightWidth
 }
 

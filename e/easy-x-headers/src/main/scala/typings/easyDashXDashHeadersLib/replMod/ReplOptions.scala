@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReplOptions extends js.Object {
   var eval: js.UndefOr[js.Function] = js.undefined
   var ignoreUndefined: js.UndefOr[scala.Boolean] = js.undefined

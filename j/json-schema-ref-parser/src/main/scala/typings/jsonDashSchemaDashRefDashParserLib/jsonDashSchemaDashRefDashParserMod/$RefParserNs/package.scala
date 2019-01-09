@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object $RefParserNs {
-  type Options = js.Object with jsonDashSchemaDashRefDashParserLib.Anon_Parse
+  type Options = js.Object with jsonDashSchemaDashRefDashParserLib.Anon_Dereference
 }

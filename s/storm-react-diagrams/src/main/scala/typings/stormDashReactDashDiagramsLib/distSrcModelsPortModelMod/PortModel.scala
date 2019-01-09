@@ -41,6 +41,6 @@ class PortModel protected ()
     link: stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModel[stormDashReactDashDiagramsLib.distSrcModelsLinkModelMod.LinkModelListener]
   ): scala.Unit = js.native
   def setMaximumLinks(maximumLinks: scala.Double): scala.Unit = js.native
-  def updateCoords(hasXYWidthHeight: stormDashReactDashDiagramsLib.Anon_YX): scala.Unit = js.native
+  def updateCoords(hasXYWidthHeight: stormDashReactDashDiagramsLib.Anon_Height): scala.Unit = js.native
 }
 

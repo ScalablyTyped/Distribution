@@ -14,7 +14,7 @@ trait MDCRippleAdapter extends js.Object {
   def deregisterDocumentInteractionHandler(evtType: java.lang.String, handler: stdLib.EventListener): scala.Unit = js.native
   def deregisterInteractionHandler(evtType: java.lang.String, handler: stdLib.EventListener): scala.Unit = js.native
   def deregisterResizeHandler(handler: stdLib.EventListener): scala.Unit = js.native
-  def getWindowPageOffset(): atMaterialRippleLib.Anon_Y = js.native
+  def getWindowPageOffset(): atMaterialRippleLib.Anon_X = js.native
   def isSurfaceActive(): scala.Boolean = js.native
   def isSurfaceDisabled(): scala.Boolean = js.native
   def isUnbounded(): scala.Boolean = js.native

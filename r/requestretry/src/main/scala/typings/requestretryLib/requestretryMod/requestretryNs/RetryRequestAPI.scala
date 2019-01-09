@@ -12,6 +12,6 @@ trait RetryRequestAPI
       RequestRetryOptions, 
       requestLib.requestMod.requestNs.RequiredUriUrl
     ] {
-  var RetryStrategies: requestretryLib.Anon_NetworkError = js.native
+  var RetryStrategies: requestretryLib.Anon_Body = js.native
 }
 

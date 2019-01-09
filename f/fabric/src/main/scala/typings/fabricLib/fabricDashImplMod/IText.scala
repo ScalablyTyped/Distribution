@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.IITextOptions because Would inherit conflicting mutable fields List(aCoords, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, centeredRotation, centeredScaling, charSpacing, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, evented, fill, fillRule, flipX, flipY, fontFamily, fontSize, fontStyle, fontWeight, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, left, lineHeight, linethrough, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockUniScaling, minScaleLimit, name, objectCaching, opacity, originX, originY, overline, padding, path, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, shadow, skewX, skewY, stroke, strokeDashArray, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeWidth, text, textAlign, textBackgroundColor, textDecoration, top, transformMatrix, transparentCorners, `type`, underline, useNative, visible, width))*/
-@JSImport("fabric/fabric-impl", "IText")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fabricLib.fabricDashImplMod.IITextOptions because var conflicts: aCoords, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, centeredRotation, centeredScaling, charSpacing, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, evented, fill, fillRule, flipX, flipY, fontFamily, fontSize, fontStyle, fontWeight, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, left, lineHeight, linethrough, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockUniScaling, minScaleLimit, name, objectCaching, opacity, originX, originY, overline, padding, path, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, shadow, skewX, skewY, stroke, strokeDashArray, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeWidth, text, textAlign, textBackgroundColor, textDecoration, top, transformMatrix, transparentCorners, `type`, underline, useNative, visible, width. Inlined selectionStart, selectionEnd, selectionColor, isEditing, editable, editingBorderColor, cursorWidth, cursorColor, cursorDelay, cursorDuration, styles, caching */ @JSImport("fabric/fabric-impl", "IText")
 @js.native
 class IText protected () extends Text {
   /**
@@ -16,6 +16,55 @@ class IText protected () extends Text {
   	 */
   def this(text: java.lang.String) = this()
   def this(text: java.lang.String, options: IITextOptions) = this()
+  /**
+  	 * Indicates whether internal text char widths can be cached
+  	 */
+  var caching: js.UndefOr[scala.Boolean] = js.native
+  /**
+  	 * Color of default cursor (when not overwritten by character style)
+  	 */
+  var cursorColor: js.UndefOr[java.lang.String] = js.native
+  /**
+  	 * Delay between cursor blink (in ms)
+  	 */
+  var cursorDelay: js.UndefOr[scala.Double] = js.native
+  /**
+  	 * Duration of cursor fadein (in ms)
+  	 */
+  var cursorDuration: js.UndefOr[scala.Double] = js.native
+  /**
+  	 * Width of cursor (in px)
+  	 */
+  var cursorWidth: js.UndefOr[scala.Double] = js.native
+  /**
+  	 * Indicates whether a text can be edited
+  	 */
+  var editable: js.UndefOr[scala.Boolean] = js.native
+  /**
+  	 * Border color of text object while it's in editing mode
+  	 */
+  var editingBorderColor: js.UndefOr[java.lang.String] = js.native
+  /**
+  	 * Indicates whether text is in editing mode
+  	 */
+  var isEditing: js.UndefOr[scala.Boolean] = js.native
+  /**
+  	 * Color of text selection
+  	 */
+  var selectionColor: js.UndefOr[java.lang.String] = js.native
+  /**
+  	 * Index where text selection ends
+  	 */
+  var selectionEnd: js.UndefOr[scala.Double] = js.native
+  /**
+  	 * Index where text selection starts (or where cursor is when there is no selection)
+  	 */
+  var selectionStart: js.UndefOr[scala.Double] = js.native
+  /**
+  	 * Object containing character styles
+  	 * (where top-level properties corresponds to line number and 2nd-level properties -- to char number in a line)
+  	 */
+  var styles: js.UndefOr[js.Any] = js.native
   /**
   	 * Aborts cursor animation and clears all timeouts
   	 */

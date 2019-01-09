@@ -71,7 +71,7 @@ class PlaybackObject () extends js.Object {
     /** The desired position of playback in milliseconds. */
   positionMillis: scala.Double,
     /** This is equivalent to `playbackObject.setStatusAsync({ positionMillis: millis, seekMillisToleranceBefore: toleranceMillisBefore, seekMillisToleranceAfter: toleranceMillisAfter })`. The tolerances are used only on iOS. */
-  tolerances: expoLib.Anon_ToleranceMillisBefore
+  tolerances: expoLib.Anon_ToleranceMillisAfter
   ): js.Promise[PlaybackStatus] = js.native
   /**
     * Replays the item. When using `playFromPositionAsync(0)` the item is seeked to the position at `0` ms. On iOS this method uses internal implementation of the player and is able to play the item from the beginning immediately.
@@ -105,7 +105,7 @@ class PlaybackObject () extends js.Object {
   def setPositionAsync(
     positionMillis: scala.Double,
     /** This is equivalent to `playbackObject.setStatusAsync({ positionMillis: millis, seekMillisToleranceBefore: toleranceMillisBefore, seekMillisToleranceAfter: toleranceMillisAfter })`. The tolerances are used only on iOS. */
-  tolerances: expoLib.Anon_ToleranceMillisBefore
+  tolerances: expoLib.Anon_ToleranceMillisAfter
   ): js.Promise[PlaybackStatus] = js.native
   /** This is equivalent to `playbackObject.setStatusAsync({ progressUpdateIntervalMillis: millis })`. */
   def setProgressUpdateIntervalAsync(

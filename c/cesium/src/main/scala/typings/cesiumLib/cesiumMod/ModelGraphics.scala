@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ModelGraphics ()
   extends cesiumLib.cesiumMod.CesiumNs.ModelGraphics {
-  def this(options: cesiumLib.Anon_ShowColorBlendMode) = this()
+  def this(options: cesiumLib.Anon_ClampAnimations) = this()
 }
 

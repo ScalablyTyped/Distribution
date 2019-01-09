@@ -17,7 +17,7 @@ trait INotifyService extends js.Object {
     * When passing an object, the object parameters can be:
     * @param option
     */
-  def apply(option: angularDashNotifyLib.Anon_Duration): INotify = js.native
+  def apply(option: angularDashNotifyLib.Anon_Classes): INotify = js.native
   /**
     * Closes all currently open notifications.
     */
@@ -27,6 +27,6 @@ trait INotifyService extends js.Object {
     * The following options may be specified in the given object:
     * @param option
     */
-  def config(option: angularDashNotifyLib.Anon_DurationVerticalSpacing): scala.Unit = js.native
+  def config(option: angularDashNotifyLib.Anon_Container): scala.Unit = js.native
 }
 

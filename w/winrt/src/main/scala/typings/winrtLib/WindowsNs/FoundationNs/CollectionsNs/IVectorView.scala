@@ -32,7 +32,7 @@ trait IVectorView[T] extends IIterable[T] {
     thisArg: js.Any
   ): scala.Unit = js.native
   def getAt(index: scala.Double): T = js.native
-  def getMany(startIndex: scala.Double): winrtLib.Anon_ItemsReturnValueArrayT[T] = js.native
+  def getMany(startIndex: scala.Double): winrtLib.Anon_Items[T] = js.native
   def indexOf(value: T): winrtLib.Anon_Index = js.native
   def join(seperator: java.lang.String): java.lang.String = js.native
   def lastIndexOf(searchElement: T): scala.Double = js.native

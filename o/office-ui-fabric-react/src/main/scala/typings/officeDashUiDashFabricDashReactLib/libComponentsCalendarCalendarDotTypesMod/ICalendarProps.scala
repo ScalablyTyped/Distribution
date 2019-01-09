@@ -95,6 +95,10 @@ trait ICalendarProps
     ]
   ] = js.undefined
   /**
+    * If set the Calendar will not allow selection of dates in this array.
+    */
+  var restrictedDates: js.UndefOr[js.Array[stdLib.Date]] = js.undefined
+  /**
     * When clicking on "Today", select the date and close the calendar.
     * @defaultvalue false
     */

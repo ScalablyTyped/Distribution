@@ -22,7 +22,7 @@ class LoadBalancer protected ()
   /**
     * An Access Logs block. Access Logs documented below. Only valid for Load Balancers of type `application`.
     */
-  val accessLogs: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_PrefixBucketEnabled] = js.native
+  val accessLogs: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BucketEnabled] = js.native
   /**
     * The ARN of the load balancer (matches `id`).
     */
@@ -82,7 +82,7 @@ class LoadBalancer protected ()
   /**
     * A subnet mapping block as documented below.
     */
-  val subnetMappings: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_SubnetIdAllocationId]] = js.native
+  val subnetMappings: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_AllocationId]] = js.native
   /**
     * A list of subnet IDs to attach to the LB. Subnets
     * cannot be updated for Load Balancers of type `network`. Changing this value

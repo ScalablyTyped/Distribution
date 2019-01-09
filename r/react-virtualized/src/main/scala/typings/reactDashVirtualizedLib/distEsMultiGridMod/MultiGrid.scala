@@ -17,14 +17,14 @@ class MultiGrid ()
   def measureAllCells(): scala.Unit = js.native
   /** See Grid#recomputeGridSize */
   def recomputeGridSize(): scala.Unit = js.native
-  def recomputeGridSize(params: reactDashVirtualizedLib.Anon_ColumnIndex): scala.Unit = js.native
+  def recomputeGridSize(params: reactDashVirtualizedLib.Anon_ColumnIndexRowIndex): scala.Unit = js.native
 }
 
 @JSImport("react-virtualized/dist/es/MultiGrid", "MultiGrid")
 @js.native
 object MultiGrid extends js.Object {
-  var defaultProps: reactDashVirtualizedLib.Anon_EnableFixedRowScrollFalse = js.native
-  var propTypes: reactDashVirtualizedLib.Anon_EnableFixedRowScroll = js.native
+  var defaultProps: reactDashVirtualizedLib.`Anon_` = js.native
+  var propTypes: reactDashVirtualizedLib.Anon_ClassNameBottomLeftGrid = js.native
   def getDerivedStateFromProps(
     nextProps: reactDashVirtualizedLib.distEsMultiGridMod.MultiGridProps,
     prevState: reactDashVirtualizedLib.distEsMultiGridMod.MultiGridState

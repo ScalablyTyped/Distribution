@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Line ()
   extends reactLib.reactMod.Component[LineProps, js.Object, js.Any] {
-  var coordinates: reactDashSimpleDashMapsLib.Anon_Start = js.native
+  var coordinates: reactDashSimpleDashMapsLib.Anon_End = js.native
 }
 

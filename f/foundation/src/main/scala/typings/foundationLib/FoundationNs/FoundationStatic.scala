@@ -12,7 +12,7 @@ trait FoundationStatic extends js.Object {
   var media_queries: js.Object = js.native
   var name: java.lang.String = js.native
   var stylesheet: stdLib.CSSStyleSheet = js.native
-  var utils: foundationLib.Anon_Ismediumonly = js.native
+  var utils: foundationLib.Anon_Addcustomrule = js.native
   var version: java.lang.String = js.native
   def inherit(scope: foundationLib.JQuery, methods: java.lang.String): scala.Unit = js.native
   def init(scope: foundationLib.JQuery): foundationLib.JQuery = js.native

@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Distance extends js.Object {
-  var distance: scala.Double
-  var max: babylonjsLib.BABYLONNs.Vector3
-  var min: babylonjsLib.BABYLONNs.Vector3
+  def apply(i: scala.Double, distance: scala.Double): scala.Double = js.native
 }
 

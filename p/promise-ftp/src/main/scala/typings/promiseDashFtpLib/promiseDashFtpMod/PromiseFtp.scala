@@ -168,7 +168,7 @@ trait PromiseFtp extends js.Object {
     * Send command using SITE.
     * @param command - the command to send, e.g 'CHMOD 755 foo' or 'QUOTA'.
     */
-  def site(command: java.lang.String): bluebirdLib.bluebirdMod.namespaced[promiseDashFtpLib.Anon_Text] = js.native
+  def site(command: java.lang.String): bluebirdLib.bluebirdMod.namespaced[promiseDashFtpLib.Anon_Code] = js.native
   /**
     * Extended commands (RFC 3659)
     * Retrieve the size of a file on the server.

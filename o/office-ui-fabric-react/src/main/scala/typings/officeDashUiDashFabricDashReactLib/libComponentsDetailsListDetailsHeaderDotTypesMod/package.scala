@@ -14,5 +14,5 @@ package object libComponentsDetailsListDetailsHeaderDotTypesMod {
   ]) with (stdLib.Pick[
     IDetailsHeaderProps, 
     officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.className
-  ]) with officeDashUiDashFabricDashReactLib.Anon_IsAllSelected
+  ]) with officeDashUiDashFabricDashReactLib.Anon_CellStyleProps
 }

@@ -9,7 +9,7 @@ package object OverlayScrollbarsNs {
   type AutoHideBehavior = overlayscrollbarsLib.overlayscrollbarsLibStrings.never | overlayscrollbarsLib.overlayscrollbarsLibStrings.scroll | overlayscrollbarsLib.overlayscrollbarsLibStrings.leave | overlayscrollbarsLib.overlayscrollbarsLibStrings.move | overlayscrollbarsLib.overlayscrollbarsLibStrings.n | overlayscrollbarsLib.overlayscrollbarsLibStrings.s | overlayscrollbarsLib.overlayscrollbarsLibStrings.l | overlayscrollbarsLib.overlayscrollbarsLibStrings.m
   type BasicEventCallback = js.ThisFunction0[/* this */ overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbars, scala.Unit]
   type BlockBehavior = overlayscrollbarsLib.overlayscrollbarsLibStrings.begin | overlayscrollbarsLib.overlayscrollbarsLibStrings.end | overlayscrollbarsLib.overlayscrollbarsLibStrings.center | overlayscrollbarsLib.overlayscrollbarsLibStrings.nearest
-  type Coordinates = overlayscrollbarsLib.Anon_YXPosition | overlayscrollbarsLib.Anon_T | overlayscrollbarsLib.Anon_Top | (js.Tuple2[Position, Position]) | Position | stdLib.HTMLElement | overlayscrollbarsLib.overlayscrollbarsMod.JQuery | overlayscrollbarsLib.Anon_Scroll
+  type Coordinates = overlayscrollbarsLib.Anon_X | overlayscrollbarsLib.Anon_L | overlayscrollbarsLib.Anon_Left | (js.Tuple2[Position, Position]) | Position | stdLib.HTMLElement | overlayscrollbarsLib.overlayscrollbarsMod.JQuery | overlayscrollbarsLib.Anon_Block
   type DirectionChangedCallback = js.ThisFunction1[
     /* this */ overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbars, 
     /* args */ js.UndefOr[DirectionChangedArgs], 

@@ -27,7 +27,7 @@ trait ICacheObject extends js.Object {
   /**
     * Retrieve information regarding a particular Cache.
     */
-  def info(): angularLib.Anon_Size = js.native
+  def info(): angularLib.Anon_Id = js.native
   /**
     * Inserts a named entry into the Cache object to be retrieved later, and incrementing the size of the cache if the key was not already present in the cache. If behaving like an LRU cache, it will also remove stale entries from the set.
     *

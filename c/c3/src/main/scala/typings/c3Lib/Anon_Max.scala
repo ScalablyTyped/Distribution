@@ -6,7 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Max extends js.Object {
-  var max: scala.Double | org.scalablytyped.runtime.StringDictionary[scala.Double]
-  var min: scala.Double | org.scalablytyped.runtime.StringDictionary[scala.Double]
+  /**
+    * Set max width of each bar
+    */
+  var max: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * Set the width of each bar by ratio
+    */
+  var ratio: scala.Double
 }
 

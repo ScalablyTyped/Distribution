@@ -153,7 +153,7 @@ trait IFieldConfigurationObject extends js.Object {
   		 *
   		 * see http://docs.angular-formly.com/docs/field-configuration-object#ngmodelattrs-object
   		 */
-  var ngModelAttrs: js.UndefOr[angularDashFormlyLib.Anon_Key] = js.undefined
+  var ngModelAttrs: js.UndefOr[angularDashFormlyLib.Anon_Attribute] = js.undefined
   /**
   		 * This allows you to place attributes with string values on the ng-model element.
   		 * Easy to use alternative to ngModelAttrs option.

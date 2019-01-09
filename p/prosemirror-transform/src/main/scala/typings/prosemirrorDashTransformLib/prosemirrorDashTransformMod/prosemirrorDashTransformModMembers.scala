@@ -19,7 +19,7 @@ object prosemirrorDashTransformModMembers extends js.Object {
     doc: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S],
     pos: scala.Double,
     depth: scala.Double,
-    typesAfter: js.Array[prosemirrorDashTransformLib.Anon_Type[S]]
+    typesAfter: js.Array[prosemirrorDashTransformLib.Anon_Attrs[S]]
   ): scala.Boolean = js.native
   def dropPoint[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     doc: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S],
@@ -29,18 +29,18 @@ object prosemirrorDashTransformModMembers extends js.Object {
   def findWrapping[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     range: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeRange[S],
     nodeType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S]
-  ): js.UndefOr[js.Array[prosemirrorDashTransformLib.Anon_Type[S]] | scala.Null] = js.native
+  ): js.UndefOr[js.Array[prosemirrorDashTransformLib.Anon_Attrs[S]] | scala.Null] = js.native
   def findWrapping[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     range: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeRange[S],
     nodeType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
     attrs: org.scalablytyped.runtime.StringDictionary[js.Any]
-  ): js.UndefOr[js.Array[prosemirrorDashTransformLib.Anon_Type[S]] | scala.Null] = js.native
+  ): js.UndefOr[js.Array[prosemirrorDashTransformLib.Anon_Attrs[S]] | scala.Null] = js.native
   def findWrapping[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     range: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeRange[S],
     nodeType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
     attrs: org.scalablytyped.runtime.StringDictionary[js.Any],
     innerRange: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeRange[S]
-  ): js.UndefOr[js.Array[prosemirrorDashTransformLib.Anon_Type[S]] | scala.Null] = js.native
+  ): js.UndefOr[js.Array[prosemirrorDashTransformLib.Anon_Attrs[S]] | scala.Null] = js.native
   def insertPoint[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     doc: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S],
     pos: scala.Double,

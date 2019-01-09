@@ -46,7 +46,7 @@ trait BoundTarget[DirectiveT /* <: DirectiveMeta */] extends js.Object {
     * For a given `Reference`, get the reference's target - either an `Element`, a `Template`, or
     * a directive on a particular node.
     */
-  def getReferenceTarget(ref: atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Reference): atAngularCompilerLib.Anon_Node[DirectiveT] | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Element | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Template | scala.Null = js.native
+  def getReferenceTarget(ref: atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Reference): atAngularCompilerLib.Anon_Directive[DirectiveT] | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Element | atAngularCompilerLib.srcRender3R3UnderscoreAstMod.Template | scala.Null = js.native
   /**
     * Given a particular `Reference` or `Variable`, get the `Template` which created it.
     *

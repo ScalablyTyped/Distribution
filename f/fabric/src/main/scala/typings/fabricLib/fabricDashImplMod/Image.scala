@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.IImageOptions because Would inherit conflicting mutable fields List(aCoords, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, centeredRotation, centeredScaling, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, evented, fill, fillRule, flipX, flipY, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockUniScaling, minScaleLimit, name, objectCaching, opacity, originX, originY, padding, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, shadow, skewX, skewY, stroke, strokeDashArray, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width))*/
-@JSImport("fabric/fabric-impl", "Image")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fabricLib.fabricDashImplMod.IImageOptions because var conflicts: aCoords, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, centeredRotation, centeredScaling, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, evented, fill, fillRule, flipX, flipY, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockUniScaling, minScaleLimit, name, objectCaching, opacity, originX, originY, padding, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, shadow, skewX, skewY, stroke, strokeDashArray, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width. Inlined crossOrigin, alignX, alignY, meetOrSlice, filters */ @JSImport("fabric/fabric-impl", "Image")
 @js.native
 class Image protected () extends Object {
   /**
@@ -15,6 +15,30 @@ class Image protected () extends Object {
   	 * @param [options] Options object
   	 */
   def this(element: stdLib.HTMLImageElement, objObjects: IObjectOptions) = this()
+  /**
+  	 * AlignX value, part of preserveAspectRatio (one of "none", "mid", "min", "max")
+  	 * This parameter defines how the picture is aligned to its viewport when image element width differs from image width.
+  	 */
+  var alignX: js.UndefOr[java.lang.String] = js.native
+  /**
+  	 * AlignY value, part of preserveAspectRatio (one of "none", "mid", "min", "max")
+  	 * This parameter defines how the picture is aligned to its viewport when image element height differs from image height.
+  	 */
+  var alignY: js.UndefOr[java.lang.String] = js.native
+  /**
+  	 * crossOrigin value (one of "", "anonymous", "allow-credentials")
+  	 */
+  var crossOrigin: js.UndefOr[java.lang.String] = js.native
+  /**
+  	 * Image filter array
+  	 */
+  var filters: js.UndefOr[js.Array[IBaseFilter]] = js.native
+  /**
+  	 * meetOrSlice value, part of preserveAspectRatio  (one of "meet", "slice").
+  	 * if meet the image is always fully visibile, if slice the viewport is always filled with image.
+  	 * @see http://www.w3.org/TR/SVG/coords.html#PreserveAspectRatioAttribute
+  	 */
+  var meetOrSlice: js.UndefOr[java.lang.String] = js.native
   /**
   	 * Applies filters assigned to this image (from "filters" array)
   	 * @param callback Callback is invoked when all filters have been applied and new image is generated

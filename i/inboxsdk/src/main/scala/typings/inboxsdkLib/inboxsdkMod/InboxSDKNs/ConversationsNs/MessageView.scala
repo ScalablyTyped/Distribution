@@ -38,7 +38,7 @@ trait MessageView extends js.Object {
   @JSName("on")
   def on_viewStateChange(
     name: inboxsdkLib.inboxsdkLibStrings.viewStateChange,
-    cb: js.Function1[/* event */ inboxsdkLib.Anon_OldViewState, scala.Unit]
+    cb: js.Function1[/* event */ inboxsdkLib.Anon_MessageView, scala.Unit]
   ): scala.Unit = js.native
 }
 

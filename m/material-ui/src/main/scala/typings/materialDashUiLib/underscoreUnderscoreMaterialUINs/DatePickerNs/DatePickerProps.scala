@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait DatePickerProps extends js.Object {
   // <TextField/> is the element that get the 'other' properties
-  var DateTimeFormat: js.UndefOr[stdLib.Anon_LocalesOptions] = js.undefined
+  var DateTimeFormat: js.UndefOr[stdLib.Anon_LocalesOptionsSupportedLocalesOfArray] = js.undefined
   var autoOk: js.UndefOr[scala.Boolean] = js.undefined
   var cancelLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   // From <TextField />

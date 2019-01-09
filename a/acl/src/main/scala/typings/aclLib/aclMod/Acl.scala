@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Acl extends js.Object {
   @JSName("allow")
-  var allow_Original: aclLib.Anon_RolesResources = js.native
+  var allow_Original: aclLib.Anon_AclSets = js.native
   @JSName("whatResources")
-  var whatResources_Original: aclLib.Anon_Roles = js.native
+  var whatResources_Original: aclLib.Anon_Cb = js.native
   def addRoleParents(role: java.lang.String, parents: aclLib.Values): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def addRoleParents(role: java.lang.String, parents: aclLib.Values, cb: aclLib.Callback): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def addUserRoles(userId: aclLib.Value, roles: aclLib.strings): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native

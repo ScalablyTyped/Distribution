@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class RouterScroller protected ()
   extends atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnDestroy {
   def this(router: atAngularRouterLib.srcRouterMod.Router, /** @docsNotRequired */ viewportScroller: atAngularCommonLib.commonMod.ViewportScroller) = this()
-  def this(router: atAngularRouterLib.srcRouterMod.Router, /** @docsNotRequired */ viewportScroller: atAngularCommonLib.commonMod.ViewportScroller, options: atAngularRouterLib.Anon_ScrollPositionRestoration) = this()
+  def this(router: atAngularRouterLib.srcRouterMod.Router, /** @docsNotRequired */ viewportScroller: atAngularCommonLib.commonMod.ViewportScroller, options: atAngularRouterLib.Anon_AnchorScrolling) = this()
   var consumeScrollEvents: js.Any = js.native
   var createScrollEvents: js.Any = js.native
   var lastId: js.Any = js.native

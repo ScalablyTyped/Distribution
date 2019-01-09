@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 trait RequestHandler
   extends expressLib.expressMod.eNs.RequestHandler {
   @JSName("unless")
-  var unless_Original: js.Function1[
+  var unless_Original: (js.Function1[
     /* options */ expressDashUnlessLib.expressDashUnlessMod.unlessNs.Options, 
     this.type
-  ] = js.native
+  ]) with expressDashJwtLib.Anon_Unless = js.native
   def unless(options: expressDashUnlessLib.expressDashUnlessMod.unlessNs.Options): expressLib.expressMod.eNs.RequestHandler = js.native
 }
 

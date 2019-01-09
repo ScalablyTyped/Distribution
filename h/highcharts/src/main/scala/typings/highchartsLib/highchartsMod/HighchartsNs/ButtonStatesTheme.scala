@@ -9,6 +9,6 @@ trait ButtonStatesTheme extends ButtonTheme {
   /**
     * Themed button states. Only hover is supported for reset zoom button.
     */
-  var states: js.UndefOr[highchartsLib.Anon_Select] = js.undefined
+  var states: js.UndefOr[highchartsLib.Anon_Hover] = js.undefined
 }
 

@@ -28,6 +28,6 @@ object json5Ns extends js.Object {
     * Encodes the given value
     */
   def encode(obj: js.Any): nodeLib.Buffer = js.native
-  def encode(obj: js.Any, options: adoneLib.Anon_ReplacerKey): nodeLib.Buffer = js.native
+  def encode(obj: js.Any, options: adoneLib.Anon_Key): nodeLib.Buffer = js.native
 }
 

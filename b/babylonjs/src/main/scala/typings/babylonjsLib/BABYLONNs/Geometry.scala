@@ -75,7 +75,7 @@ class Geometry protected () extends IGetSetVerticesData {
   /**
     * Gets the current extend of the geometry
     */
-  val extend: babylonjsLib.Anon_Minimum = js.native
+  val extend: babylonjsLib.Anon_Maximum = js.native
   /**
     * Gets or sets the unique ID of the geometry
     */

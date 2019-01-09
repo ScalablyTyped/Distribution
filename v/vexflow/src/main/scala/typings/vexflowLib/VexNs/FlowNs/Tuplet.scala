@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Tuplet protected () extends js.Object {
   def this(notes: js.Array[StaveNote]) = this()
-  def this(notes: js.Array[StaveNote], options: vexflowLib.Anon_Numnotes) = this()
+  def this(notes: js.Array[StaveNote], options: vexflowLib.Anon_Beatsoccupied) = this()
   def attach(): scala.Unit = js.native
   def detach(): scala.Unit = js.native
   def draw(): scala.Unit = js.native

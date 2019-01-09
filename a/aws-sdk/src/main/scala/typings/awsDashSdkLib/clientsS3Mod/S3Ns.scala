@@ -5912,7 +5912,7 @@ object S3Ns extends js.Object {
   type SSECustomerKey = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsS3Mod.Blob | java.lang.String
   type SSECustomerKeyMD5 = java.lang.String
   type SSEKMSKeyId = java.lang.String
-  type SelectObjectContentEventStream = awsDashSdkLib.libEventDashStreamEventDashStreamMod.EventStream[awsDashSdkLib.Anon_Records]
+  type SelectObjectContentEventStream = awsDashSdkLib.libEventDashStreamEventDashStreamMod.EventStream[awsDashSdkLib.Anon_Cont]
   type ServerSideEncryption = awsDashSdkLib.awsDashSdkLibStrings.AES256 | awsDashSdkLib.awsDashSdkLibStrings.`aws:kms` | java.lang.String
   type ServerSideEncryptionRules = js.Array[ServerSideEncryptionRule]
   type Setting = scala.Boolean

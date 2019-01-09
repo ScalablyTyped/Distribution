@@ -12,6 +12,6 @@ trait ValidateResponse extends js.Object {
   var is_role_address: scala.Boolean
   var is_valid: scala.Boolean
   var mailbox_verification: mailgunDashJsLib.mailgunDashJsLibStrings.`true` | mailgunDashJsLib.mailgunDashJsLibStrings.`false` | mailgunDashJsLib.mailgunDashJsLibStrings.unknown | scala.Null
-  var parts: mailgunDashJsLib.Anon_Domain
+  var parts: mailgunDashJsLib.Anon_Displayname
 }
 

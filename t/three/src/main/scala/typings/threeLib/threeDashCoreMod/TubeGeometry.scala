@@ -15,7 +15,7 @@ class TubeGeometry protected () extends Geometry {
   def this(path: Curve[Vector3], tubularSegments: scala.Double, radius: scala.Double, radiusSegments: scala.Double, closed: scala.Boolean) = this()
   var binormals: js.Array[Vector3] = js.native
   var normals: js.Array[Vector3] = js.native
-  var parameters: threeLib.Anon_Path = js.native
+  var parameters: threeLib.Anon_Closed = js.native
   var tangents: js.Array[Vector3] = js.native
 }
 

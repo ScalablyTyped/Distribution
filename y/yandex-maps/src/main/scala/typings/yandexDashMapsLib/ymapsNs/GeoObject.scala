@@ -17,7 +17,8 @@ class GeoObject () extends IGeoObject {
   @JSName("events")
   var events_GeoObject: yandexDashMapsLib.ymapsNs.eventNs.Manager = js.native
   var hint: yandexDashMapsLib.ymapsNs.geoObjectNs.Hint = js.native
-  var options: yandexDashMapsLib.ymapsNs.optionNs.Manager = js.native
+  @JSName("options")
+  var options_GeoObject: yandexDashMapsLib.ymapsNs.optionNs.Manager = js.native
   @JSName("properties")
   var properties_GeoObject: yandexDashMapsLib.ymapsNs.dataNs.Manager = js.native
   @JSName("state")

@@ -27,7 +27,7 @@ object FacebookAdsNs extends js.Object {
     def setMediaCachePolicy(cachePolicy: MediaCachePolicy): scala.Unit = js.native
   }
   
-  def withNativeAd(component: reactLib.reactMod.Component[expoLib.Anon_Subtitle, js.Object, _]): reactLib.reactMod.Component[expoLib.Anon_AdsManager, expoLib.Anon_Ad, _] = js.native
+  def withNativeAd(component: reactLib.reactMod.Component[expoLib.Anon_CallToActionText, js.Object, _]): reactLib.reactMod.Component[expoLib.Anon_AdsManager, expoLib.Anon_Ad, _] = js.native
   /**
     * Ad Settings
     */

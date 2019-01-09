@@ -6,19 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_DisplayName extends js.Object {
-  /** Actor info specific to particular clients. */
-  var clientSpecificActorInfo: js.UndefOr[Anon_YoutubeActorInfo] = js.undefined
-  /** The name of the actor, suitable for display. */
+  /** The author's name. */
   var displayName: js.UndefOr[java.lang.String] = js.undefined
-  /** The ID of the actor's Person resource. */
+  /** ID of the author. */
   var id: js.UndefOr[java.lang.String] = js.undefined
-  /** The image representation of the actor. */
+  /** The author's Google profile image. */
   var image: js.UndefOr[Anon_Url] = js.undefined
-  /** An object representation of the individual components of name. */
-  var name: js.UndefOr[Anon_GivenName] = js.undefined
-  /** The link to the actor's Google profile. */
+  /** A link to the author's Google profile. */
   var url: js.UndefOr[java.lang.String] = js.undefined
-  /** Verification status of actor. */
-  var verification: js.UndefOr[Anon_AdHocVerified] = js.undefined
 }
 

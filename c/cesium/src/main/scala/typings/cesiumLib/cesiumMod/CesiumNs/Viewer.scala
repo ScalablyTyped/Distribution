@@ -48,17 +48,17 @@ trait Viewer extends js.Object {
   def destroy(): scala.Unit = js.native
   def extend(mixin: cesiumLib.cesiumMod.CesiumNs.ViewerNs.ViewerMixin, options: js.Any): scala.Unit = js.native
   def flyTo(target: DataSource): js.Promise[scala.Boolean] = js.native
-  def flyTo(target: DataSource, options: cesiumLib.Anon_Offset): js.Promise[scala.Boolean] = js.native
+  def flyTo(target: DataSource, options: cesiumLib.Anon_Duration): js.Promise[scala.Boolean] = js.native
   def flyTo(target: Entity): js.Promise[scala.Boolean] = js.native
   def flyTo(target: EntityCollection): js.Promise[scala.Boolean] = js.native
-  def flyTo(target: EntityCollection, options: cesiumLib.Anon_Offset): js.Promise[scala.Boolean] = js.native
-  def flyTo(target: Entity, options: cesiumLib.Anon_Offset): js.Promise[scala.Boolean] = js.native
+  def flyTo(target: EntityCollection, options: cesiumLib.Anon_Duration): js.Promise[scala.Boolean] = js.native
+  def flyTo(target: Entity, options: cesiumLib.Anon_Duration): js.Promise[scala.Boolean] = js.native
   def flyTo(target: js.Array[Entity]): js.Promise[scala.Boolean] = js.native
-  def flyTo(target: js.Array[Entity], options: cesiumLib.Anon_Offset): js.Promise[scala.Boolean] = js.native
+  def flyTo(target: js.Array[Entity], options: cesiumLib.Anon_Duration): js.Promise[scala.Boolean] = js.native
   def flyTo(target: js.Promise[Entity | js.Array[Entity] | EntityCollection | DataSource]): js.Promise[scala.Boolean] = js.native
   def flyTo(
     target: js.Promise[Entity | js.Array[Entity] | EntityCollection | DataSource],
-    options: cesiumLib.Anon_Offset
+    options: cesiumLib.Anon_Duration
   ): js.Promise[scala.Boolean] = js.native
   def forceResize(): scala.Unit = js.native
   def isDestroyed(): scala.Boolean = js.native

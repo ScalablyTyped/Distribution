@@ -21,10 +21,10 @@ object globbyModMembers extends js.Object {
     * Note that you should avoid running the same tasks multiple times as they contain a file system cache.
     * Instead, run this method each time to ensure file system changes are taken into consideration.
     */
-  def generateGlobTasks(patterns: java.lang.String): js.Array[globbyLib.Anon_Pattern] = js.native
-  def generateGlobTasks(patterns: java.lang.String, options: Options): js.Array[globbyLib.Anon_Pattern] = js.native
-  def generateGlobTasks(patterns: js.Array[java.lang.String]): js.Array[globbyLib.Anon_Pattern] = js.native
-  def generateGlobTasks(patterns: js.Array[java.lang.String], options: Options): js.Array[globbyLib.Anon_Pattern] = js.native
+  def generateGlobTasks(patterns: java.lang.String): js.Array[globbyLib.Anon_Options] = js.native
+  def generateGlobTasks(patterns: java.lang.String, options: Options): js.Array[globbyLib.Anon_Options] = js.native
+  def generateGlobTasks(patterns: js.Array[java.lang.String]): js.Array[globbyLib.Anon_Options] = js.native
+  def generateGlobTasks(patterns: js.Array[java.lang.String], options: Options): js.Array[globbyLib.Anon_Options] = js.native
   /**
     * Returns a Promise<(path: string) => boolean> indicating whether a given path is ignored
     * via a `.gitignore` file.

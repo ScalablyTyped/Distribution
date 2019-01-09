@@ -110,7 +110,7 @@ class Cluster protected ()
   /**
     * Logging, documented below.
     */
-  val logging: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_S3KeyPrefixBucketName]] = js.native
+  val logging: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketNameEnable]] = js.native
   /**
     * Password for the master DB user.
     * Note that this may show up in logs, and it will be stored in the state file. Password must contain at least 8 chars and
@@ -162,7 +162,7 @@ class Cluster protected ()
   /**
     * Configuration of automatic copy of snapshots from one region to another. Documented below.
     */
-  val snapshotCopy: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DestinationRegionGrantName]] = js.native
+  val snapshotCopy: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DestinationRegion]] = js.native
   /**
     * The name of the snapshot from which to create the new cluster.
     */

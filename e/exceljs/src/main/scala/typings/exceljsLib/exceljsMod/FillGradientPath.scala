@@ -10,7 +10,7 @@ trait FillGradientPath extends js.Object {
   	 * For 'path' gradient. Specifies the relative coordinates for the start of the path.
   	 * 'left' and 'top' values range from 0 to 1
   	 */
-  var center: exceljsLib.Anon_Top
+  var center: exceljsLib.Anon_Left
   var gradient: exceljsLib.exceljsLibStrings.path
   /**
   	 * Specifies the gradient colour sequence. Is an array of objects containing position and

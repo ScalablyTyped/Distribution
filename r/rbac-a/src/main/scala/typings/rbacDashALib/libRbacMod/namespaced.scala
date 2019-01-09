@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced[P /* <: rbacDashALib.rbacDashAMod.Provider */, AM /* <: rbacDashALib.rbacDashAMod.AttributesManager */] protected ()
   extends rbacDashALib.rbacDashAMod.RBAC[P, AM] {
-  def this(opts: rbacDashALib.Anon_Attributes[AM, P]) = this()
+  def this(opts: rbacDashALib.Anon_Attributes[P, AM]) = this()
 }
 

@@ -12,7 +12,7 @@ class List ()
   var Grid: js.UndefOr[reactDashVirtualizedLib.distEsGridMod.Grid] = js.native
   def forceUpdateGrid(): scala.Unit = js.native
   /** See Grid#getOffsetForCell */
-  def getOffsetForRow(params: reactDashVirtualizedLib.Anon_Alignment): scala.Double = js.native
+  def getOffsetForRow(params: reactDashVirtualizedLib.Anon_AlignmentIndex): scala.Double = js.native
   /** CellMeasurer compatibility */
   def invalidateCellSizeAfterRender(hasColumnIndexRowIndex: reactDashVirtualizedLib.distEsCellMeasurerMod.CellPosition): scala.Unit = js.native
   /** See Grid#measureAllCells */
@@ -34,6 +34,6 @@ class List ()
 @JSImport("react-virtualized/dist/es/List", "List")
 @js.native
 object List extends js.Object {
-  var defaultProps: reactDashVirtualizedLib.Anon_EstimatedRowSize30 = js.native
+  var defaultProps: reactDashVirtualizedLib.Anon_1 = js.native
 }
 

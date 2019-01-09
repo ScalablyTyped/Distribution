@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait UIAccordion
   extends juiDashCoreLib.juiDashCoreMod.UIEvent {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: juiLib.Anon_EventAutoFold): this.type = js.native
+  def apply(selector: js.Any, options: juiLib.Anon_AutoFold): this.type = js.native
   /**
     * Gets the index of the currently enabled node
     *

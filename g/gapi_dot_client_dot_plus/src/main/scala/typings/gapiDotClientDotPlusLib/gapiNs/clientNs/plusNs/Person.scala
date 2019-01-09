@@ -35,7 +35,7 @@ trait Person extends js.Object {
     * profile. The plus.profile.emails.read scope is needed to retrieve these email addresses, or the email scope can be used to retrieve just the Google
     * account email address.
     */
-  var emails: js.UndefOr[js.Array[gapiDotClientDotPlusLib.Anon_TypeValueString]] = js.undefined
+  var emails: js.UndefOr[js.Array[gapiDotClientDotPlusLib.Anon_TypeValue]] = js.undefined
   /** ETag of this response for caching purposes. */
   var etag: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -48,7 +48,7 @@ trait Person extends js.Object {
   /** The ID of this person. */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /** The representation of the person's profile photo. */
-  var image: js.UndefOr[gapiDotClientDotPlusLib.Anon_UrlIsDefault] = js.undefined
+  var image: js.UndefOr[gapiDotClientDotPlusLib.Anon_IsDefault] = js.undefined
   /** Whether this user has signed up for Google+. */
   var isPlusUser: js.UndefOr[scala.Boolean] = js.undefined
   /** Identifies this resource as a person. Value: "plus#person". */
@@ -56,7 +56,7 @@ trait Person extends js.Object {
   /** The user's preferred language for rendering. */
   var language: js.UndefOr[java.lang.String] = js.undefined
   /** An object representation of the individual components of a person's name. */
-  var name: js.UndefOr[gapiDotClientDotPlusLib.Anon_FamilyName] = js.undefined
+  var name: js.UndefOr[gapiDotClientDotPlusLib.Anon_FamilyNameFormatted] = js.undefined
   /** The nickname of this person. */
   var nickname: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -68,9 +68,9 @@ trait Person extends js.Object {
   /** The occupation of this person. */
   var occupation: js.UndefOr[java.lang.String] = js.undefined
   /** A list of current or past organizations with which this person is associated. */
-  var organizations: js.UndefOr[js.Array[gapiDotClientDotPlusLib.Anon_Name]] = js.undefined
+  var organizations: js.UndefOr[js.Array[gapiDotClientDotPlusLib.Anon_Department]] = js.undefined
   /** A list of places where this person has lived. */
-  var placesLived: js.UndefOr[js.Array[gapiDotClientDotPlusLib.Anon_Value]] = js.undefined
+  var placesLived: js.UndefOr[js.Array[gapiDotClientDotPlusLib.Anon_Primary]] = js.undefined
   /** If a Google+ Page, the number of people who have +1'd this page. */
   var plusOneCount: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -93,7 +93,7 @@ trait Person extends js.Object {
   /** The URL of this person's profile. */
   var url: js.UndefOr[java.lang.String] = js.undefined
   /** A list of URLs for this person. */
-  var urls: js.UndefOr[js.Array[gapiDotClientDotPlusLib.Anon_TypeValue]] = js.undefined
+  var urls: js.UndefOr[js.Array[gapiDotClientDotPlusLib.Anon_Label]] = js.undefined
   /** Whether the person or Google+ Page has been verified. */
   var verified: js.UndefOr[scala.Boolean] = js.undefined
 }

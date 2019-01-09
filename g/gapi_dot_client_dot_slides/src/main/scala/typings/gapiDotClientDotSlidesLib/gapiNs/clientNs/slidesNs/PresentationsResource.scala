@@ -30,14 +30,14 @@ trait PresentationsResource extends js.Object {
     * the updates in your request are guaranteed to be applied together
     * atomically.
     */
-  def batchUpdate(request: gapiDotClientDotSlidesLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdatePresentationResponse]
+  def batchUpdate(request: gapiDotClientDotSlidesLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[BatchUpdatePresentationResponse]
   /**
     * Creates a new presentation using the title given in the request. Other
     * fields in the request are ignored.
     * Returns the created presentation.
     */
-  def create(request: gapiDotClientDotSlidesLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Presentation]
+  def create(request: gapiDotClientDotSlidesLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Presentation]
   /** Gets the latest version of the specified presentation. */
-  def get(request: gapiDotClientDotSlidesLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Presentation]
+  def get(request: gapiDotClientDotSlidesLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Presentation]
 }
 

@@ -12,7 +12,7 @@ trait Options
   // override sw-precache options
   @JSName("importScripts")
   var importScripts_Options: js.UndefOr[
-    js.Array[java.lang.String | swDashPrecacheDashWebpackDashPluginLib.Anon_Filename]
+    js.Array[java.lang.String | swDashPrecacheDashWebpackDashPluginLib.Anon_ChunkName]
   ] = js.undefined
   var mergeStaticsConfig: js.UndefOr[scala.Boolean] = js.undefined
   var minify: js.UndefOr[scala.Boolean] = js.undefined

@@ -16,6 +16,6 @@ class Select protected () extends js.Object {
 @JSImport("react-weui", "Select")
 @js.native
 object Select extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_Data = js.native
+  var defaultProps: reactDashWeuiLib.Anon_DataAny = js.native
 }
 

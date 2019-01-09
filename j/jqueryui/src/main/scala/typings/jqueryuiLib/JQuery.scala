@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait JQuery extends js.Object {
   var jQuery: JQueryStatic = js.native
   @JSName("menu")
-  var menu_Original: Anon_MethodName = js.native
+  var menu_Original: Anon_Active = js.native
   @JSName("widget")
   var widget_Original: jqueryuiLib.JQueryUINs.Widget = js.native
   def accordion(): JQuery = js.native
@@ -1116,7 +1116,7 @@ trait JQuery extends js.Object {
   @JSName("sortable")
   def sortable_serialize(methodName: jqueryuiLib.jqueryuiLibStrings.serialize): java.lang.String = js.native
   @JSName("sortable")
-  def sortable_serialize(methodName: jqueryuiLib.jqueryuiLibStrings.serialize, options: Anon_Expression): java.lang.String = js.native
+  def sortable_serialize(methodName: jqueryuiLib.jqueryuiLibStrings.serialize, options: Anon_AttributeExpression): java.lang.String = js.native
   @JSName("sortable")
   def sortable_toArray(methodName: jqueryuiLib.jqueryuiLibStrings.toArray): js.Array[java.lang.String] = js.native
   @JSName("sortable")

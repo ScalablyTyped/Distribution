@@ -15,19 +15,19 @@ object CustomAttributeNs extends js.Object {
   def add(
     config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config,
     uuid: java.lang.String,
-    data: chartmogulDashNodeLib.Anon_CustomArray
-  ): js.Promise[CustomAttributes] = js.native
-  def add(
-    config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config,
-    uuid: java.lang.String,
-    data: chartmogulDashNodeLib.Anon_CustomEmail
+    data: chartmogulDashNodeLib.Anon_Custom
   ): js.Promise[
     chartmogulDashNodeLib.commonMod.Entries[chartmogulDashNodeLib.chartmogulDashNodeMod.CustomerNs.Customer]
   ] = js.native
+  def add(
+    config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config,
+    uuid: java.lang.String,
+    data: chartmogulDashNodeLib.Anon_CustomArray
+  ): js.Promise[CustomAttributes] = js.native
   def remove(
     config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config,
     uuid: java.lang.String,
-    data: chartmogulDashNodeLib.Anon_Custom
+    data: chartmogulDashNodeLib.Anon_CustomStrings
   ): js.Promise[CustomAttributes] = js.native
   def update(
     config: chartmogulDashNodeLib.chartmogulDashNodeMod.Config,

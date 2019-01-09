@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial<react-broadcast.react-broadcast.Broadcast.DefaultProps<T>>) */ trait Props[T] extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof react-broadcast.react-broadcast.Broadcast.DefaultProps<react-broadcast.react-broadcast.Broadcast.DefaultProps<T>> ]:? react-broadcast.react-broadcast.Broadcast.DefaultProps<react-broadcast.react-broadcast.Broadcast.DefaultProps<T>>[P]} */ trait Props[T] extends js.Object {
   var channel: java.lang.String
   var children: reactLib.reactMod.ReactNs.ReactNode
   var value: T

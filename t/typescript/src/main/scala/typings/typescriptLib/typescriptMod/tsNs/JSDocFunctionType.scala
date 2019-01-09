@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typescriptLib.typescriptMod.tsNs.JSDocType because Would inherit conflicting mutable fields List(decorators, end, flags, kind, modifiers, parent, pos))*/
-@js.native
-trait JSDocFunctionType extends SignatureDeclarationBase
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typescriptLib.typescriptMod.tsNs.JSDocType because var conflicts: decorators, end, flags, kind, modifiers, parent, pos. Inlined _jsDocTypeBrand */ @js.native
+trait JSDocFunctionType extends SignatureDeclarationBase {
+  var _jsDocTypeBrand: js.Any = js.native
+}
 

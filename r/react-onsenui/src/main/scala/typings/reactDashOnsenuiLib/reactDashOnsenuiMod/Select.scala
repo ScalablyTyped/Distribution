@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Select")
 @js.native
 class Select ()
-  extends Component[reactDashOnsenuiLib.Anon_NameSize, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_Autofocus, js.Any]
 

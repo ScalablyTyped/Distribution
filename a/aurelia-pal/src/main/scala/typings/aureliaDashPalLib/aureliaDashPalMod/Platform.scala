@@ -14,7 +14,7 @@ trait Platform extends js.Object {
   /**
     * The runtime's XMLHttpRequest API.
     */
-  var XMLHttpRequest: aureliaDashPalLib.Anon_HEADERSRECEIVED = js.native
+  var XMLHttpRequest: aureliaDashPalLib.Anon_DONE = js.native
   /**
     * The runtime environment's global.
     */

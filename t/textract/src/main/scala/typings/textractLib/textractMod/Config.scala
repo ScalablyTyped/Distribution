@@ -40,7 +40,7 @@ trait Config extends js.Object {
     * It is not suggested you modify this without understanding what trouble that might get you in.
     * See [this GH issue](https://github.com/dbashford/textract/issues/75) for why textract overrides that library's default.
     */
-  var pdftotextOptions: js.UndefOr[textractLib.Anon_FirstPage] = js.undefined
+  var pdftotextOptions: js.UndefOr[textractLib.Anon_ASCII7] = js.undefined
   /**
     * Pass this in as true and textract will not strip any line breaks.
     * @default false

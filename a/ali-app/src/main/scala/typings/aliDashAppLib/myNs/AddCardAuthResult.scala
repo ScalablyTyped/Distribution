@@ -20,7 +20,7 @@ trait AddCardAuthResult extends js.Object {
   		 */
   var code: java.lang.String
   	// 9000 表示成功
-  var result: aliDashAppLib.Anon_State
+  var result: aliDashAppLib.Anon_Appid
   		// true 表示领卡成功
   var resultStatus: java.lang.String
   var success: (aliDashAppLib.aliDashAppLibNumbers.`true` | scala.Boolean) with (aliDashAppLib.aliDashAppLibNumbers.`false` | scala.Boolean)

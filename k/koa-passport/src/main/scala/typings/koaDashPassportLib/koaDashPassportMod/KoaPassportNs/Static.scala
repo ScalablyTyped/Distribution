@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Static extends KoaPassport {
-  var Authenticator: passportLib.Anon_Authenticator = js.native
+  var Authenticator: passportLib.Anon_Any = js.native
   var KoaPassport: org.scalablytyped.runtime.Instantiable0[KoaPassport] = js.native
-  var Passport: passportLib.Anon_Authenticator = js.native
+  var Passport: passportLib.Anon_Any = js.native
 }
 

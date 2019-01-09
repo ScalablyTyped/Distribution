@@ -16,7 +16,7 @@ trait Options
     webpackLib.webpackMod.webpackNs.Condition | js.Array[webpackLib.webpackMod.webpackNs.Condition]
   ] = js.undefined
   /** Parallelization can speedup your build significantly and is therefore highly recommended. */
-  var parallel: js.UndefOr[scala.Boolean | webpackLib.Anon_Workers] = js.undefined
+  var parallel: js.UndefOr[scala.Boolean | webpackLib.Anon_Cache] = js.undefined
   @JSName("sourceMap")
   var sourceMap_Options: js.UndefOr[scala.Boolean] = js.undefined
   var test: js.UndefOr[

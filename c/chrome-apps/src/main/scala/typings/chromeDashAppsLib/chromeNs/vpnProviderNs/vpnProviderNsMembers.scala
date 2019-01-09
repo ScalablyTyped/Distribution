@@ -31,7 +31,7 @@ object vpnProviderNsMembers extends js.Object {
     * The OS has resumed and the user has logged back in, so the VPN should try to reconnect.
     * @enum
     */
-  val PlatformMessage: chromeDashAppsLib.Anon_LINKCHANGED = js.native
+  val PlatformMessage: chromeDashAppsLib.Anon_CONNECTEDConnected = js.native
   /**
     * The enum is used by the platform to indicate the event that triggered *onUIEvent*
     *
@@ -52,7 +52,7 @@ object vpnProviderNsMembers extends js.Object {
     * VPN connection failed.
     * @enum
     */
-  val VpnConnectionState: chromeDashAppsLib.Anon_FAILURE = js.native
+  val VpnConnectionState: chromeDashAppsLib.Anon_CONNECTEDConnectedFAILURE = js.native
   /** Triggered when a configuration is created by the platform for the extension. */
   val onConfigCreated: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function3[
@@ -71,11 +71,11 @@ object vpnProviderNsMembers extends js.Object {
     js.Function3[
       /* id */ java.lang.String, 
       /* message */ chromeDashAppsLib.chromeNs.ToStringLiteral[
-        chromeDashAppsLib.Anon_LINKCHANGED, 
+        chromeDashAppsLib.Anon_CONNECTEDConnected, 
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_LINKCHANGED[keyof chrome-apps.Anon_LINKCHANGED] */ js.Any
+          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONNECTEDConnected[keyof chrome-apps.Anon_CONNECTEDConnected] */ js.Any
         ]
       ], 
       /* error */ java.lang.String, 
@@ -124,21 +124,21 @@ object vpnProviderNsMembers extends js.Object {
     */
   def notifyConnectionStateChanged(
     state: chromeDashAppsLib.chromeNs.ToStringLiteral[
-      chromeDashAppsLib.Anon_FAILURE, 
+      chromeDashAppsLib.Anon_CONNECTEDConnectedFAILURE, 
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_FAILURE[keyof chrome-apps.Anon_FAILURE] */ js.Any
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONNECTEDConnectedFAILURE[keyof chrome-apps.Anon_CONNECTEDConnectedFAILURE] */ js.Any
       ]
     ]
   ): scala.Unit = js.native
   def notifyConnectionStateChanged(
     state: chromeDashAppsLib.chromeNs.ToStringLiteral[
-      chromeDashAppsLib.Anon_FAILURE, 
+      chromeDashAppsLib.Anon_CONNECTEDConnectedFAILURE, 
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_FAILURE[keyof chrome-apps.Anon_FAILURE] */ js.Any
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONNECTEDConnectedFAILURE[keyof chrome-apps.Anon_CONNECTEDConnectedFAILURE] */ js.Any
       ]
     ],
     callback: js.Function0[scala.Unit]

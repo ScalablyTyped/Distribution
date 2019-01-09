@@ -10,7 +10,7 @@ trait UrbanAirshipStatic extends js.Object {
   /**
     * The enumeration values for use with setNotificationTypes().
     */
-  var notificationType: urbanairshipDashCordovaLib.Anon_Badge
+  var notificationType: urbanairshipDashCordovaLib.Anon_Alert
   /**
     * (Android Only)
     *

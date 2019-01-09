@@ -10,7 +10,7 @@ trait RollupLogProps extends js.Object {
   var frame: js.UndefOr[java.lang.String] = js.undefined
   var hook: js.UndefOr[java.lang.String] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
-  var loc: js.UndefOr[rollupLib.Anon_File] = js.undefined
+  var loc: js.UndefOr[rollupLib.Anon_Column] = js.undefined
   var message: java.lang.String
   var name: js.UndefOr[java.lang.String] = js.undefined
   var plugin: js.UndefOr[java.lang.String] = js.undefined

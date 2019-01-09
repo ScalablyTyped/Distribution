@@ -13,7 +13,7 @@ trait MarkdownIt extends js.Object {
   var `inline`: markdownDashItLib.libParserUnderscoreInlineMod.namespaced = js.native
   var linkify: linkifyDashItLib.linkifyDashItMod.LinkifyItNs.LinkifyIt = js.native
   var renderer: markdownDashItLib.libRendererMod.namespaced = js.native
-  var utils: markdownDashItLib.Anon_UnescapeMd = js.native
+  var utils: markdownDashItLib.Anon_ArrayReplaceAt = js.native
   def disable(rules: java.lang.String): MarkdownIt = js.native
   def disable(rules: java.lang.String, ignoreInvalid: scala.Boolean): MarkdownIt = js.native
   def disable(rules: js.Array[java.lang.String]): MarkdownIt = js.native

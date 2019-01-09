@@ -123,7 +123,7 @@ class TableCell ()
   def load(): TableCell = js.native
   def load(option: java.lang.String): TableCell = js.native
   def load(option: js.Array[java.lang.String]): TableCell = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): TableCell = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): TableCell = js.native
   def load(option: officeDashJsDashPreviewLib.OneNoteNs.InterfacesNs.TableCellLoadOptions): TableCell = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

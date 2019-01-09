@@ -23,6 +23,6 @@ object commandsNsMembers extends js.Object {
     * Update the details of an already defined command.
     * @param detail The new description for the command.
     */
-  def update(detail: firefoxDashWebextDashBrowserLib.Anon_Shortcut): js.Promise[scala.Unit] = js.native
+  def update(detail: firefoxDashWebextDashBrowserLib.Anon_Description): js.Promise[scala.Unit] = js.native
 }
 

@@ -34,8 +34,8 @@ class Vault[T /* <: Valuable */] protected () extends js.Object {
   def tags(ids: js.Array[scala.Double], opts: adoneLib.Anon_PrivateProps): js.Array[js.Object] = js.native
   def toJSON(): js.Object = js.native
   def toJSON(
-    options: adoneLib.adoneNs.vaultNs.INs.VaultToJSONOptions with (adoneLib.Anon_IncludeStats | adoneLib.Anon_Valuable | adoneLib.Anon_ValuableObject)
-  ): js.Promise[adoneLib.Anon_Valuables] = js.native
+    options: adoneLib.adoneNs.vaultNs.INs.VaultToJSONOptions with (adoneLib.Anon_IncludeStats | adoneLib.Anon_IncludeStatsTrue | adoneLib.Anon_Valuable)
+  ): js.Promise[adoneLib.Anon_Stats] = js.native
   def values(): js.Promise[js.Array[_]] = js.native
 }
 

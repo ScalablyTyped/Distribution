@@ -39,7 +39,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SoundSlot protected () extends js.Object {
   def this(component: SoundComponent, name: java.lang.String) = this()
-  def this(component: SoundComponent, name: java.lang.String, options: playcanvasLib.Anon_Duration) = this()
+  def this(component: SoundComponent, name: java.lang.String, options: playcanvasLib.Anon_Asset) = this()
   var asset: js.UndefOr[scala.Double] = js.native
   var autoPlay: js.UndefOr[scala.Boolean] = js.native
   var duration: js.UndefOr[scala.Double] = js.native

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation._
 
 package object protobufjsLib {
   /** Any extension field descriptor. */
-  type AnyExtensionField = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IExtensionField */ js.Any
+  type AnyExtensionField = /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IExtensionField */ js.Any
   /** Any nested object descriptor. */
-  type AnyNestedObject = (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IEnum */ js.Any) | AnyExtensionField
+  type AnyNestedObject = (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IEnum */ js.Any) | AnyExtensionField
   /**
     * Appends code to the function's body or finishes generation.
     * @param [formatStringOrScope] Format string or, to finish the function, an object of additional scope variables, if any
@@ -19,7 +19,7 @@ package object protobufjsLib {
   type Codegen = js.Function2[
     /* formatStringOrScope */ js.UndefOr[java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]], 
     /* repeated */ js.Any, 
-    js.Object | js.Function
+    (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias protobufjs.Codegen */ js.Object) | js.Function
   ]
   /**
     * Event listener as used by {@link util.EventEmitter}.
@@ -45,8 +45,8 @@ package object protobufjsLib {
     */
   type LoadCallback = js.Function2[
     /* error */ nodeLib.Error | scala.Null, 
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Root */ /* root */ js.UndefOr[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Root */ js.Any
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Root */ /* root */ js.UndefOr[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Root */ js.Any
     ], 
     scala.Unit
   ]
@@ -93,7 +93,7 @@ package object protobufjsLib {
     * @param callback Callback function
     */
   type RPCImpl = js.Function3[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Method */ /* method */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Method */ /* method */ js.Any, 
     /* requestData */ stdLib.Uint8Array, 
     /* callback */ RPCImplCallback, 
     scala.Unit
@@ -145,8 +145,8 @@ package object protobufjsLib {
     * Decorator function as returned by {@link Type.d} (TypeScript).
     * @param target Target constructor
     */
-  type TypeDecorator[T /* <: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Message<T> */ js.Any */] = js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Constructor<T> */ /* target */ js.Any, 
+  type TypeDecorator[T /* <: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Message<T> */ js.Any */] = js.Function1[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Constructor<T> */ /* target */ js.Any, 
     scala.Unit
   ]
   /**
@@ -155,9 +155,9 @@ package object protobufjsLib {
     * @returns Message instance
     */
   type WrapperFromObjectConverter = js.ThisFunction1[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Type */ /* this */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Type */ /* this */ js.Any, 
     /* object */ org.scalablytyped.runtime.StringDictionary[js.Any], 
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Message<{}> */ js.Any
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Message<{}> */ js.Any
   ]
   /**
     * To object converter part of an {@link IWrapper}.
@@ -166,10 +166,10 @@ package object protobufjsLib {
     * @returns Plain object
     */
   type WrapperToObjectConverter = js.ThisFunction2[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Type */ /* this */ js.Any, 
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Message<{}> */ /* message */ js.Any, 
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IConversionOptions */ /* options */ js.UndefOr[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IConversionOptions */ js.Any
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Type */ /* this */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Message<{}> */ /* message */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IConversionOptions */ /* options */ js.UndefOr[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IConversionOptions */ js.Any
     ], 
     org.scalablytyped.runtime.StringDictionary[js.Any]
   ]

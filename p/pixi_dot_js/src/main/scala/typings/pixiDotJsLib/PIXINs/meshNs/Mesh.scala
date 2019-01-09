@@ -45,6 +45,6 @@ class Mesh protected ()
 @JSGlobal("PIXI.mesh.Mesh")
 @js.native
 object Mesh extends js.Object {
-  var DRAW_MODES: pixiDotJsLib.Anon_TRIANGLES = js.native
+  var DRAW_MODES: pixiDotJsLib.Anon_TRIANGLEMESH = js.native
 }
 

@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait WebfontsResource extends js.Object {
   /** Retrieves the list of fonts currently served by the Google Fonts Developer API */
-  def list(request: gapiDotClientDotWebfontsLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[WebfontList]
+  def list(request: gapiDotClientDotWebfontsLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[WebfontList]
 }
 

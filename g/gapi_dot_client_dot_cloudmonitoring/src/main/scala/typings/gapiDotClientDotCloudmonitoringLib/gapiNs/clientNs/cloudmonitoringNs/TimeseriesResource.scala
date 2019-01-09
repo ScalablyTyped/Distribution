@@ -11,13 +11,13 @@ trait TimeseriesResource extends js.Object {
     * paginated; use the nextPageToken returned in the response to request subsequent pages of results by setting the pageToken query parameter to the value
     * of the nextPageToken.
     */
-  def list(request: gapiDotClientDotCloudmonitoringLib.Anon_Window): gapiDotClientLib.gapiNs.clientNs.Request[ListTimeseriesResponse]
+  def list(request: gapiDotClientDotCloudmonitoringLib.Anon_Aggregator): gapiDotClientLib.gapiNs.clientNs.Request[ListTimeseriesResponse]
   /**
     * Put data points to one or more time series for one or more metrics. If a time series does not exist, a new time series will be created. It is not
     * allowed to write a time series point that is older than the existing youngest point of that time series. Points that are older than the existing
     * youngest point of that time series will be discarded silently. Therefore, users should make sure that points of a time series are written sequentially
     * in the order of their end time.
     */
-  def write(request: gapiDotClientDotCloudmonitoringLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[WriteTimeseriesResponse]
+  def write(request: gapiDotClientDotCloudmonitoringLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[WriteTimeseriesResponse]
 }
 

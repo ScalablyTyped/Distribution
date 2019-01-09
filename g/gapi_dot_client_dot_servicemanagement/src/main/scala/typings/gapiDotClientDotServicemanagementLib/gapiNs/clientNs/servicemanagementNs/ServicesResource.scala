@@ -15,7 +15,9 @@ trait ServicesResource extends js.Object {
     *
     * Operation<response: ManagedService>
     */
-  def create(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def create(
+    request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp
+  ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Deletes a managed service. This method will change the service to the
     * `Soft-Delete` state for 30 days. Within this period, service producers may
@@ -24,7 +26,7 @@ trait ServicesResource extends js.Object {
     *
     * Operation<response: google.protobuf.Empty>
     */
-  def delete(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPrettyPrintServiceName): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def delete(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Disables a service for a project, so it can no longer be
     * be used for the project. It prevents accidental usage that may cause
@@ -32,7 +34,7 @@ trait ServicesResource extends js.Object {
     *
     * Operation<response: DisableServiceResponse>
     */
-  def disable(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPrettyPrintServiceName): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def disable(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Enables a service for a project, so it can be used
     * for the project. See
@@ -41,7 +43,7 @@ trait ServicesResource extends js.Object {
     *
     * Operation<response: EnableServiceResponse>
     */
-  def enable(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPrettyPrintServiceName): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def enable(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Generates and returns a report (errors, warnings and changes from
     * existing configurations) associated with
@@ -55,22 +57,22 @@ trait ServicesResource extends js.Object {
     * will compare GenerateConfigReportRequest.new_value with the last pushed
     * service configuration.
     */
-  def generateConfigReport(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[GenerateConfigReportResponse]
+  def generateConfigReport(
+    request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp
+  ): gapiDotClientLib.gapiNs.clientNs.Request[GenerateConfigReportResponse]
   /**
     * Gets a managed service. Authentication is required unless the service is
     * public.
     */
-  def get(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPrettyPrintServiceName): gapiDotClientLib.gapiNs.clientNs.Request[ManagedService]
+  def get(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ManagedService]
   /** Gets a service configuration (version) for a managed service. */
-  def getConfig(
-    request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPrettyPrintServiceNameBearertokenCallback
-  ): gapiDotClientLib.gapiNs.clientNs.Request[Service]
+  def getConfig(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackConfigId): gapiDotClientLib.gapiNs.clientNs.Request[Service]
   /**
     * Gets the access control policy for a resource.
     * Returns an empty policy if the resource exists and does not have a policy
     * set.
     */
-  def getIamPolicy(request: gapiDotClientDotServicemanagementLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+  def getIamPolicy(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
   /**
     * Lists managed services.
     *
@@ -82,12 +84,12 @@ trait ServicesResource extends js.Object {
     * services enabled on the consumer. The `consumer_id` must have the format
     * of "project:{PROJECT-ID}".
     */
-  def list(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPageSizePrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ListServicesResponse]
+  def list(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackConsumerId): gapiDotClientLib.gapiNs.clientNs.Request[ListServicesResponse]
   /**
     * Sets the access control policy on the specified resource. Replaces any
     * existing policy.
     */
-  def setIamPolicy(request: gapiDotClientDotServicemanagementLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+  def setIamPolicy(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
   /**
     * Returns permissions that a caller has on the specified resource.
     * If the resource does not exist, this will return an empty set of
@@ -97,7 +99,7 @@ trait ServicesResource extends js.Object {
     * UIs and command-line tools, not for authorization checking. This operation
     * may "fail open" without warning.
     */
-  def testIamPermissions(request: gapiDotClientDotServicemanagementLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+  def testIamPermissions(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
   /**
     * Revives a previously deleted managed service. The method restores the
     * service using the configuration at the time the service was deleted.
@@ -106,6 +108,6 @@ trait ServicesResource extends js.Object {
     *
     * Operation<response: UndeleteServiceResponse>
     */
-  def undelete(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPrettyPrintServiceName): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def undelete(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 

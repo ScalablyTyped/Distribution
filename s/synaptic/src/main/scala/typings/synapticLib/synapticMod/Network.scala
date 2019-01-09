@@ -94,8 +94,8 @@ class Network () extends js.Object {
     * Export the topology into dot language which can be visualized as graphs using dot.
     * @param edgeConnection
     */
-  def toDot(): synapticLib.Anon_Link = js.native
-  def toDot(edgeConnection: js.Any): synapticLib.Anon_Link = js.native
+  def toDot(): synapticLib.Anon_Code = js.native
+  def toDot(edgeConnection: js.Any): synapticLib.Anon_Code = js.native
   /**
     * Networks can be stored as JSON's.
     */

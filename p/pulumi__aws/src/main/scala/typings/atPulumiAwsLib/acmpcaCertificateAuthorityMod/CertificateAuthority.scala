@@ -29,7 +29,7 @@ class CertificateAuthority protected ()
   /**
     * Nested argument containing algorithms and certificate subject information. Defined below.
     */
-  val certificateAuthorityConfiguration: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_KeyAlgorithmSigningAlgorithm] = js.native
+  val certificateAuthorityConfiguration: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_KeyAlgorithm] = js.native
   /**
     * Base64-encoded certificate chain that includes any intermediate certificates and chains up to root on-premises certificate that you used to sign your private CA certificate. The chain does not include your private CA certificate. Only available after the certificate authority certificate has been imported.
     */
@@ -53,11 +53,7 @@ class CertificateAuthority protected ()
   /**
     * Nested argument containing revocation configuration. Defined below.
     */
-  val revocationConfiguration: atPulumiPulumiLib.pulumiMod.Output[
-    js.UndefOr[
-      atPulumiAwsLib.Anon_CrlConfigurationAnonExpirationInDaysS3BucketNameCustomCnameEnabled
-    ]
-  ] = js.native
+  val revocationConfiguration: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CrlConfiguration]] = js.native
   /**
     * Serial number of the certificate authority. Only available after the certificate authority certificate has been imported.
     */

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ShadowMap protected ()
   extends cesiumLib.cesiumMod.CesiumNs.ShadowMap {
-  def this(obtions: cesiumLib.Anon_MaximumDistance) = this()
+  def this(obtions: cesiumLib.Anon_CascadesEnabled) = this()
   /* CompleteClass */
   override var darkness: scala.Double = js.native
   /* CompleteClass */

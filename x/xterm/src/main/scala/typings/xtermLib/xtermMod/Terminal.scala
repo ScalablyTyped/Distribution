@@ -244,7 +244,7 @@ class Terminal ()
   @JSName("on")
   def on_refresh(
     `type`: xtermLib.xtermLibStrings.refresh,
-    listener: js.Function1[/* data */ xtermLib.Anon_Start, scala.Unit]
+    listener: js.Function1[/* data */ xtermLib.Anon_End, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Registers an event listener.

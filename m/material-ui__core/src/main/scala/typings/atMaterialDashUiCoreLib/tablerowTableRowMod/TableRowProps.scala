@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<@material-ui/core.@material-ui/core/TableRow/TableRow.TableRowBaseProps, std.Exclude<keyof @material-ui/core.@material-ui/core/TableRow/TableRow.TableRowBaseProps, 'classes' | never>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/TableRow/TableRow.TableRowBaseProps, @material-ui/core.@material-ui/core/TableRow/TableRow.TableRowClassKey, never>) */ trait TableRowProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof @material-ui/core.@material-ui/core/TableRow/TableRow.TableRowBaseProps, 'classes' | never> ]: @material-ui/core.@material-ui/core/TableRow/TableRow.TableRowBaseProps[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/TableRow/TableRow.TableRowBaseProps, @material-ui/core.@material-ui/core/TableRow/TableRow.TableRowClassKey, never>) */ trait TableRowProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TableRowClassKey] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[TableRowBaseProps]] = js.undefined

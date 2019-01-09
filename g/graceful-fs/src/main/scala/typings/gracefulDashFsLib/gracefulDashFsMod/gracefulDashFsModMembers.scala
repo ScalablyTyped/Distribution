@@ -200,7 +200,7 @@ object gracefulDashFsModMembers extends js.Object {
     */
   def createWriteStream(path: nodeLib.fsMod.PathLike): nodeLib.fsMod.WriteStream = js.native
   def createWriteStream(path: nodeLib.fsMod.PathLike, options: java.lang.String): nodeLib.fsMod.WriteStream = js.native
-  def createWriteStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoCloseFlags): nodeLib.fsMod.WriteStream = js.native
+  def createWriteStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoCloseEncoding): nodeLib.fsMod.WriteStream = js.native
   /**
     * Asynchronously tests whether or not the given path exists by checking with the file system.
     * @deprecated
@@ -541,6 +541,11 @@ object gracefulDashFsModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def mkdtemp(
+    prefix: java.lang.String,
+    options: nodeLib.Anon_BufferEncoding_1560675869,
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* folder */ nodeLib.Buffer, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Asynchronously creates a unique temporary directory.
     * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
@@ -551,11 +556,6 @@ object gracefulDashFsModMembers extends js.Object {
     options: nodeLib.Anon_EncodingBufferEncodingNull,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* folder */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
-  def mkdtemp(
-    prefix: java.lang.String,
-    options: nodeLib.Anon_EncodingBuffer_1560675869,
-    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* folder */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
   /**
     * Asynchronously creates a unique temporary directory.
     * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
@@ -563,7 +563,7 @@ object gracefulDashFsModMembers extends js.Object {
     */
   def mkdtemp(
     prefix: java.lang.String,
-    options: nodeLib.Anon_EncodingStringNull,
+    options: nodeLib.Anon_EncodingNull,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* folder */ java.lang.String | nodeLib.Buffer, 
@@ -586,14 +586,14 @@ object gracefulDashFsModMembers extends js.Object {
     */
   def mkdtempSync(prefix: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
   def mkdtempSync(prefix: java.lang.String, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
-  def mkdtempSync(prefix: java.lang.String, options: nodeLib.Anon_EncodingBufferEncodingNull): java.lang.String = js.native
   /**
     * Synchronously creates a unique temporary directory.
     * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def mkdtempSync(prefix: java.lang.String, options: nodeLib.Anon_EncodingBuffer_1560675869): nodeLib.Buffer = js.native
-  def mkdtempSync(prefix: java.lang.String, options: nodeLib.Anon_EncodingStringNull): java.lang.String | nodeLib.Buffer = js.native
+  def mkdtempSync(prefix: java.lang.String, options: nodeLib.Anon_BufferEncoding_1560675869): nodeLib.Buffer = js.native
+  def mkdtempSync(prefix: java.lang.String, options: nodeLib.Anon_EncodingBufferEncodingNull): java.lang.String = js.native
+  def mkdtempSync(prefix: java.lang.String, options: nodeLib.Anon_EncodingNull): java.lang.String | nodeLib.Buffer = js.native
   def mkdtempSync(prefix: java.lang.String, options: nodeLib.BufferEncoding): java.lang.String = js.native
   /**
     * Synchronously creates a unique temporary directory.
@@ -772,7 +772,7 @@ object gracefulDashFsModMembers extends js.Object {
     */
   def readFile(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_EncodingFlagStringNull,
+    options: nodeLib.Anon_EncodingFlagNull,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* data */ java.lang.String | nodeLib.Buffer, 
@@ -837,7 +837,7 @@ object gracefulDashFsModMembers extends js.Object {
   ): scala.Unit = js.native
   def readFile(
     path: scala.Double,
-    options: nodeLib.Anon_EncodingFlagStringNull,
+    options: nodeLib.Anon_EncodingFlagNull,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* data */ java.lang.String | nodeLib.Buffer, 
@@ -874,6 +874,7 @@ object gracefulDashFsModMembers extends js.Object {
   def readFileSync(path: nodeLib.fsMod.PathLike): java.lang.String | nodeLib.Buffer = js.native
   def readFileSync(path: nodeLib.fsMod.PathLike, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
   def readFileSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlag): nodeLib.Buffer = js.native
+  def readFileSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagNull): java.lang.String | nodeLib.Buffer = js.native
   /**
     * Synchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -883,12 +884,11 @@ object gracefulDashFsModMembers extends js.Object {
     * If a flag is not provided, it defaults to `'r'`.
     */
   def readFileSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagString): java.lang.String = js.native
-  def readFileSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagStringNull): java.lang.String | nodeLib.Buffer = js.native
   def readFileSync(path: scala.Double): java.lang.String | nodeLib.Buffer = js.native
   def readFileSync(path: scala.Double, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
   def readFileSync(path: scala.Double, options: nodeLib.Anon_EncodingFlag): nodeLib.Buffer = js.native
+  def readFileSync(path: scala.Double, options: nodeLib.Anon_EncodingFlagNull): java.lang.String | nodeLib.Buffer = js.native
   def readFileSync(path: scala.Double, options: nodeLib.Anon_EncodingFlagString): java.lang.String = js.native
-  def readFileSync(path: scala.Double, options: nodeLib.Anon_EncodingFlagStringNull): java.lang.String | nodeLib.Buffer = js.native
   /**
     * Synchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -957,7 +957,21 @@ object gracefulDashFsModMembers extends js.Object {
     */
   def readdir(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_WithFileTypesFalseEncoding,
+    options: nodeLib.Anon_BufferEncodingFalse,
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* files */ js.Array[nodeLib.Buffer], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  /**
+    * Asynchronous readdir(3) - read a directory.
+    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
+    */
+  def readdir(
+    path: nodeLib.fsMod.PathLike,
+    options: nodeLib.Anon_EncodingFalseWithFileTypes,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* files */ js.Array[java.lang.String] | js.Array[nodeLib.Buffer], 
@@ -971,10 +985,10 @@ object gracefulDashFsModMembers extends js.Object {
     */
   def readdir(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_WithFileTypesFalse,
+    options: nodeLib.Anon_EncodingFalse,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* files */ js.Array[nodeLib.Buffer], 
+      /* files */ js.Array[java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -985,24 +999,10 @@ object gracefulDashFsModMembers extends js.Object {
     */
   def readdir(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_WithFileTypesTrue,
+    options: nodeLib.Anon_True,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* files */ js.Array[nodeLib.fsMod.Dirent], 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /**
-    * Asynchronous readdir(3) - read a directory.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
-    */
-  def readdir(
-    path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_WithFileTypes,
-    callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* files */ js.Array[java.lang.String], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1022,20 +1022,20 @@ object gracefulDashFsModMembers extends js.Object {
     */
   def readdirSync(path: nodeLib.fsMod.PathLike): js.Array[java.lang.String] = js.native
   def readdirSync(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = js.native
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypes): js.Array[java.lang.String] = js.native
   /**
     * Synchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesFalse): js.Array[nodeLib.Buffer] = js.native
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesFalseEncoding): js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = js.native
+  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncodingFalse): js.Array[nodeLib.Buffer] = js.native
+  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalse): js.Array[java.lang.String] = js.native
+  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalseWithFileTypes): js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
     */
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesTrue): js.Array[nodeLib.fsMod.Dirent] = js.native
+  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_True): js.Array[nodeLib.fsMod.Dirent] = js.native
   def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Array[java.lang.String] = js.native
   /**
     * Synchronous readdir(3) - read a directory.
@@ -1093,6 +1093,20 @@ object gracefulDashFsModMembers extends js.Object {
     */
   def readlink(
     path: nodeLib.fsMod.PathLike,
+    options: nodeLib.Anon_BufferEncoding_1560675869,
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* linkString */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  /**
+    * Asynchronous readlink(2) - read value of a symbolic link.
+    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
+    */
+  def readlink(
+    path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingBufferEncodingNull,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1107,21 +1121,7 @@ object gracefulDashFsModMembers extends js.Object {
     */
   def readlink(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_EncodingBuffer_1560675869,
-    callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* linkString */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /**
-    * Asynchronous readlink(2) - read value of a symbolic link.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
-    */
-  def readlink(
-    path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_EncodingStringNull,
+    options: nodeLib.Anon_EncodingNull,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* linkString */ java.lang.String | nodeLib.Buffer, 
@@ -1144,14 +1144,14 @@ object gracefulDashFsModMembers extends js.Object {
     */
   def readlinkSync(path: nodeLib.fsMod.PathLike): java.lang.String | nodeLib.Buffer = js.native
   def readlinkSync(path: nodeLib.fsMod.PathLike, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
-  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): java.lang.String = js.native
   /**
     * Synchronous readlink(2) - read value of a symbolic link.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): nodeLib.Buffer = js.native
-  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): java.lang.String | nodeLib.Buffer = js.native
+  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): nodeLib.Buffer = js.native
+  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): java.lang.String = js.native
+  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): java.lang.String | nodeLib.Buffer = js.native
   def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): java.lang.String = js.native
   /**
     * Synchronous readlink(2) - read value of a symbolic link.
@@ -1209,6 +1209,20 @@ object gracefulDashFsModMembers extends js.Object {
     */
   def realpath(
     path: nodeLib.fsMod.PathLike,
+    options: nodeLib.Anon_BufferEncoding_1560675869,
+    callback: js.Function2[
+      /* err */ nodeLib.NodeJSNs.ErrnoException, 
+      /* resolvedPath */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  /**
+    * Asynchronous realpath(3) - return the canonicalized absolute pathname.
+    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
+    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
+    */
+  def realpath(
+    path: nodeLib.fsMod.PathLike,
     options: nodeLib.Anon_EncodingBufferEncodingNull,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
@@ -1223,21 +1237,7 @@ object gracefulDashFsModMembers extends js.Object {
     */
   def realpath(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_EncodingBuffer_1560675869,
-    callback: js.Function2[
-      /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      /* resolvedPath */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): scala.Unit = js.native
-  /**
-    * Asynchronous realpath(3) - return the canonicalized absolute pathname.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
-    */
-  def realpath(
-    path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_EncodingStringNull,
+    options: nodeLib.Anon_EncodingNull,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* resolvedPath */ java.lang.String | nodeLib.Buffer, 
@@ -1260,14 +1260,14 @@ object gracefulDashFsModMembers extends js.Object {
     */
   def realpathSync(path: nodeLib.fsMod.PathLike): java.lang.String | nodeLib.Buffer = js.native
   def realpathSync(path: nodeLib.fsMod.PathLike, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
-  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): java.lang.String = js.native
   /**
     * Synchronous realpath(3) - return the canonicalized absolute pathname.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): nodeLib.Buffer = js.native
-  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): java.lang.String | nodeLib.Buffer = js.native
+  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): nodeLib.Buffer = js.native
+  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): java.lang.String = js.native
+  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): java.lang.String | nodeLib.Buffer = js.native
   def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): java.lang.String = js.native
   /**
     * Synchronous realpath(3) - return the canonicalized absolute pathname.
@@ -1539,30 +1539,35 @@ object gracefulDashFsModMembers extends js.Object {
     * If `persistent` is not supplied, the default of `true` is used.
     * If `recursive` is not supplied, the default of `false` is used.
     */
-  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.Anon_Recursive): nodeLib.fsMod.FSWatcher = js.native
-  /**
-    * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
-    * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
-    * URL support is _experimental_.
-    * @param options Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
-    * If `encoding` is not supplied, the default of `'utf8'` is used.
-    * If `persistent` is not supplied, the default of `true` is used.
-    * If `recursive` is not supplied, the default of `false` is used.
-    */
-  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.Anon_RecursivePersistent): nodeLib.fsMod.FSWatcher = js.native
-  /**
-    * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
-    * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
-    * URL support is _experimental_.
-    * @param options Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
-    * If `encoding` is not supplied, the default of `'utf8'` is used.
-    * If `persistent` is not supplied, the default of `true` is used.
-    * If `recursive` is not supplied, the default of `false` is used.
-    */
-  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.Anon_RecursivePersistentEncoding): nodeLib.fsMod.FSWatcher = js.native
+  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncodingPersistent): nodeLib.fsMod.FSWatcher = js.native
   def watch(
     filename: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_RecursivePersistentEncoding,
+    options: nodeLib.Anon_BufferEncodingPersistent,
+    listener: js.Function2[/* event */ java.lang.String, /* filename */ nodeLib.Buffer, scala.Unit]
+  ): nodeLib.fsMod.FSWatcher = js.native
+  /**
+    * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
+    * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+    * URL support is _experimental_.
+    * @param options Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
+    * If `encoding` is not supplied, the default of `'utf8'` is used.
+    * If `persistent` is not supplied, the default of `true` is used.
+    * If `recursive` is not supplied, the default of `false` is used.
+    */
+  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingPersistent): nodeLib.fsMod.FSWatcher = js.native
+  /**
+    * Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
+    * @param filename A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+    * URL support is _experimental_.
+    * @param options Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
+    * If `encoding` is not supplied, the default of `'utf8'` is used.
+    * If `persistent` is not supplied, the default of `true` is used.
+    * If `recursive` is not supplied, the default of `false` is used.
+    */
+  def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingPersistentRecursive): nodeLib.fsMod.FSWatcher = js.native
+  def watch(
+    filename: nodeLib.fsMod.PathLike,
+    options: nodeLib.Anon_EncodingPersistentRecursive,
     listener: js.Function2[
       /* event */ java.lang.String, 
       /* filename */ java.lang.String | nodeLib.Buffer, 
@@ -1571,12 +1576,7 @@ object gracefulDashFsModMembers extends js.Object {
   ): nodeLib.fsMod.FSWatcher = js.native
   def watch(
     filename: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_RecursivePersistent,
-    listener: js.Function2[/* event */ java.lang.String, /* filename */ nodeLib.Buffer, scala.Unit]
-  ): nodeLib.fsMod.FSWatcher = js.native
-  def watch(
-    filename: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_Recursive,
+    options: nodeLib.Anon_EncodingPersistent,
     listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, scala.Unit]
   ): nodeLib.fsMod.FSWatcher = js.native
   def watch(filename: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): nodeLib.fsMod.FSWatcher = js.native
@@ -1608,7 +1608,7 @@ object gracefulDashFsModMembers extends js.Object {
     */
   def watchFile(
     filename: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_Persistent,
+    options: nodeLib.Anon_Interval,
     listener: js.Function2[/* curr */ nodeLib.fsMod.Stats, /* prev */ nodeLib.fsMod.Stats, scala.Unit]
   ): scala.Unit = js.native
   @JSName("watch")

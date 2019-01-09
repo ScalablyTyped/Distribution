@@ -25,7 +25,7 @@ class Job protected ()
   /**
     * The command of the job. Defined below.
     */
-  val command: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_ScriptLocationName] = js.native
+  val command: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_NameScriptLocation] = js.native
   /**
     * The list of connections used for this job.
     */
@@ -41,7 +41,7 @@ class Job protected ()
   /**
     * Execution property of the job. Defined below.
     */
-  val executionProperty: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_MaxConcurrentRunsNumber] = js.native
+  val executionProperty: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_MaxConcurrentRuns] = js.native
   /**
     * The maximum number of times to retry this job if it fails.
     */

@@ -17,7 +17,7 @@ trait VariantsetsResource extends js.Object {
     * fields are optional. Note that the `id` field will be ignored, as this is
     * assigned by the server.
     */
-  def create(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[VariantSet]
+  def create(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[VariantSet]
   /**
     * Deletes a variant set including all variants, call sets, and calls within.
     * This is not reversible.
@@ -26,7 +26,9 @@ trait VariantsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def delete(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenVariantSetId): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(
+    request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadTypeUploadprotocol
+  ): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Exports variant set data to an external destination.
     *
@@ -34,7 +36,9 @@ trait VariantsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def export(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenVariantSetId): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def export(
+    request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadTypeUploadprotocol
+  ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Gets a variant set by ID.
     *
@@ -42,7 +46,9 @@ trait VariantsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def get(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenVariantSetId): gapiDotClientLib.gapiNs.clientNs.Request[VariantSet]
+  def get(
+    request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUploadTypeUploadprotocol
+  ): gapiDotClientLib.gapiNs.clientNs.Request[VariantSet]
   /**
     * Updates a variant set using patch semantics.
     *
@@ -50,7 +56,9 @@ trait VariantsetsResource extends js.Object {
     * [Fundamentals of Google
     * Genomics](https://cloud.google.com/genomics/fundamentals-of-google-genomics)
     */
-  def patch(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenVariantSetIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[VariantSet]
+  def patch(
+    request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUpdateMaskUploadType
+  ): gapiDotClientLib.gapiNs.clientNs.Request[VariantSet]
   /**
     * Returns a list of all variant sets matching search criteria.
     *
@@ -61,6 +69,6 @@ trait VariantsetsResource extends js.Object {
     * Implements
     * [GlobalAllianceApi.searchVariantSets](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/variantmethods.avdl#L49).
     */
-  def search(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[SearchVariantSetsResponse]
+  def search(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchVariantSetsResponse]
 }
 

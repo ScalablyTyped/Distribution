@@ -13,21 +13,21 @@ trait OAuth1Client extends js.Object {
     parameters: java.lang.String,
     oauth_token: java.lang.String,
     oauth_token_secret: java.lang.String
-  ): arangodbLib.Anon_Qs = js.native
+  ): arangodbLib.Anon_Headers = js.native
   def createSignedRequest(
     method: arangodbLib.ArangoDBNs.HttpMethod,
     url: java.lang.String,
     parameters: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]],
     oauth_token: java.lang.String,
     oauth_token_secret: java.lang.String
-  ): arangodbLib.Anon_Qs = js.native
+  ): arangodbLib.Anon_Headers = js.native
   def createSignedRequest(
     method: arangodbLib.ArangoDBNs.HttpMethod,
     url: java.lang.String,
     parameters: scala.Null,
     oauth_token: java.lang.String,
     oauth_token_secret: java.lang.String
-  ): arangodbLib.Anon_Qs = js.native
+  ): arangodbLib.Anon_Headers = js.native
   def exchangeRequestToken(oauth_token: java.lang.String, oauth_verifier: java.lang.String): js.Any = js.native
   def exchangeRequestToken(
     oauth_token: java.lang.String,

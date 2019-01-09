@@ -9,10 +9,10 @@ trait Anon_Container extends js.Object {
   var container: js.UndefOr[
     reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiMod.ViewStyle
   ] = js.undefined
-  var content: js.UndefOr[
-    reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiMod.ViewStyle
+  var icon: js.UndefOr[
+    reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiMod.TextStyle
   ] = js.undefined
-  var strokeContainer: js.UndefOr[
+  var positionContainer: js.UndefOr[
     reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiMod.ViewStyle
   ] = js.undefined
 }

@@ -14,6 +14,6 @@ trait TracesResource extends js.Object {
     * undefined behavior. If the name does not match, a new trace is created
     * with given set of spans.
     */
-  def batchWrite(request: gapiDotClientDotCloudtraceLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def batchWrite(request: gapiDotClientDotCloudtraceLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
 }
 

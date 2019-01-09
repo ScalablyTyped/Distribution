@@ -6,8 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AccessesGrantee extends js.Object {
-  var accesses: js.UndefOr[js.Array[java.lang.String]] = js.undefined
-  var grantee: js.UndefOr[java.lang.String] = js.undefined
-  var granteeType: js.UndefOr[java.lang.String] = js.undefined
+  var accesses: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+  ] = js.undefined
+  var grantee: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  var granteeType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 

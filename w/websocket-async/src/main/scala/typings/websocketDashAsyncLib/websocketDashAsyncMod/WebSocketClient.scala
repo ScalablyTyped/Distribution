@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WebSocketClient extends js.Object {
   var _closeEvent: stdLib.CloseEvent | scala.Null = js.native
-  var _receiveCallbacksQueue: js.Array[websocketDashAsyncLib.Anon_Reject] = js.native
+  var _receiveCallbacksQueue: js.Array[websocketDashAsyncLib.Anon_Data] = js.native
   var _receiveDataQueue: js.Array[_] = js.native
   var _socket: stdLib.WebSocket = js.native
   /**

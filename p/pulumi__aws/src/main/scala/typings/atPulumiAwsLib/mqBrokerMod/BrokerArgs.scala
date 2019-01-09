@@ -22,7 +22,7 @@ trait BrokerArgs extends js.Object {
   /**
     * Configuration of the broker. See below.
     */
-  val configuration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RevisionId]] = js.undefined
+  val configuration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IdRevisionInput]] = js.undefined
   /**
     * The deployment mode of the broker. Supported: `SINGLE_INSTANCE` and `ACTIVE_STANDBY_MULTI_AZ`. Defaults to `SINGLE_INSTANCE`.
     */
@@ -42,7 +42,7 @@ trait BrokerArgs extends js.Object {
   /**
     * Logging configuration of the broker. See below.
     */
-  val logs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_GeneralAudit]] = js.undefined
+  val logs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AuditGeneral]] = js.undefined
   /**
     * Maintenance window start time. See below.
     */
@@ -65,9 +65,7 @@ trait BrokerArgs extends js.Object {
     * The list of all ActiveMQ usernames for the specified broker. See below.
     */
   val users: atPulumiPulumiLib.resourceMod.Input[
-    js.Array[
-      atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_UsernameConsoleAccessGroups]
-    ]
+    js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ConsoleAccessGroups]]
   ]
 }
 

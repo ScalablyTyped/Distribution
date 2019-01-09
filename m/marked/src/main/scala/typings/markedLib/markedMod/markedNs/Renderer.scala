@@ -22,7 +22,7 @@ trait Renderer extends js.Object {
   def paragraph(text: java.lang.String): java.lang.String
   def strong(text: java.lang.String): java.lang.String
   def table(header: java.lang.String, body: java.lang.String): java.lang.String
-  def tablecell(content: java.lang.String, flags: markedLib.Anon_Header): java.lang.String
+  def tablecell(content: java.lang.String, flags: markedLib.Anon_Align): java.lang.String
   def tablerow(content: java.lang.String): java.lang.String
   def text(text: java.lang.String): java.lang.String
 }

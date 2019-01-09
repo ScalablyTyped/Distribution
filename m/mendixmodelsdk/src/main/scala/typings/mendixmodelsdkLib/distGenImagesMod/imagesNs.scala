@@ -30,12 +30,12 @@ object imagesNs extends js.Object {
     val images: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[IImage] = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenImagesMod.imagesNs.IImage because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenImagesMod.imagesNs.IImage because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsImageCollection, name, asLoaded, load, load, load, load */ @js.native
   class Image protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
-    val containerAsImageCollection: ImageCollection = js.native
+    val containerAsImageCollection: IImageCollection | ImageCollection = js.native
     var imageData: java.lang.String | scala.Null = js.native
     @JSName("model")
     var model_Image: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
@@ -46,12 +46,12 @@ object imagesNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/images relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenImagesMod.imagesNs.IImageCollection because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenImagesMod.imagesNs.IImageCollection because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined images, asLoaded, load, load, load, load */ @js.native
   class ImageCollection protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
-    val images: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[Image] = js.native
+    val images: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[IImage | Image] = js.native
   }
   
   @js.native

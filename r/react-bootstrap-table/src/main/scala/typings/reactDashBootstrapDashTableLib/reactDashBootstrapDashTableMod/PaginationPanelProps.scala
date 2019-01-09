@@ -10,7 +10,7 @@ trait PaginationPanelProps extends js.Object {
   	 * The basic components for the pagination panel, provided here so that you have the option to use some of them
   	 * if you don't want to customize all of them.
   	 */
-  var components: reactDashBootstrapDashTableLib.Anon_TotalText
+  var components: reactDashBootstrapDashTableLib.Anon_PageList
   /**
   	 * Current page number
   	 */

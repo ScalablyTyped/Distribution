@@ -15,6 +15,6 @@ class AutoSizer protected ()
 @JSImport("react-virtualized/dist/commonjs/AutoSizer", "AutoSizer")
 @js.native
 object AutoSizer extends js.Object {
-  var defaultProps: reactDashVirtualizedLib.Anon_OnResize = js.native
+  var defaultProps: reactDashVirtualizedLib.Anon_DisableHeight = js.native
 }
 

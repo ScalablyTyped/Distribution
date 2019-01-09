@@ -4775,7 +4775,7 @@ trait LoDashStatic extends js.Object {
     *
     * @return Returns the lodash function.
     */
-  def noConflict(): LoDashStatic = js.native
+  def noConflict(): js.Any = js.native
   /**
     * A no-operation function that returns undefined regardless of the arguments it receives.
     *

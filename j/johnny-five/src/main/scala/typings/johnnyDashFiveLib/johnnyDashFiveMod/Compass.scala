@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Compass protected () extends js.Object {
   def this(option: CompassOption) = this()
-  val bearing: johnnyDashFiveLib.Anon_Heading = js.native
+  val bearing: johnnyDashFiveLib.Anon_Abbr = js.native
   val heading: scala.Double = js.native
   def on(event: java.lang.String, cb: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")

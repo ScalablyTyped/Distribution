@@ -51,7 +51,7 @@ trait TorrentFile
     ]
   ): scala.Unit = js.native
   def createReadStream(): nodeLib.NodeJSNs.ReadableStream = js.native
-  def createReadStream(opts: webtorrentLib.Anon_Start): nodeLib.NodeJSNs.ReadableStream = js.native
+  def createReadStream(opts: webtorrentLib.Anon_End): nodeLib.NodeJSNs.ReadableStream = js.native
   def deselect(): scala.Unit = js.native
   def getBlob(
     callback: js.Function2[

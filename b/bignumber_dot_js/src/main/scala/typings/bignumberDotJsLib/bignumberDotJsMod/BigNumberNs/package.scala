@@ -6,11 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object BigNumberNs {
-  type Constructor = org.scalablytyped.runtime.Instantiable2[
-    /* n */ Value, 
-    /* base */ js.UndefOr[/* base */ scala.Double], 
-    bignumberDotJsLib.bignumberDotJsMod.BigNumber
-  ]
   type Instance = bignumberDotJsLib.bignumberDotJsMod.BigNumber
   type ModuloMode = bignumberDotJsLib.bignumberDotJsLibNumbers.`0` | bignumberDotJsLib.bignumberDotJsLibNumbers.`1` | bignumberDotJsLib.bignumberDotJsLibNumbers.`3` | bignumberDotJsLib.bignumberDotJsLibNumbers.`6` | bignumberDotJsLib.bignumberDotJsLibNumbers.`9`
   type RoundingMode = bignumberDotJsLib.bignumberDotJsLibNumbers.`0` | bignumberDotJsLib.bignumberDotJsLibNumbers.`1` | bignumberDotJsLib.bignumberDotJsLibNumbers.`2` | bignumberDotJsLib.bignumberDotJsLibNumbers.`3` | bignumberDotJsLib.bignumberDotJsLibNumbers.`4` | bignumberDotJsLib.bignumberDotJsLibNumbers.`5` | bignumberDotJsLib.bignumberDotJsLibNumbers.`6` | bignumberDotJsLib.bignumberDotJsLibNumbers.`7` | bignumberDotJsLib.bignumberDotJsLibNumbers.`8`

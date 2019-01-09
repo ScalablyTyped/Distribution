@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object reactDashRouterDashReduxModMembers extends js.Object {
   val CALL_HISTORY_METHOD: /* @@router/CALL_HISTORY_METHOD */ java.lang.String = js.native
   val LOCATION_CHANGE: /* @@router/LOCATION_CHANGE */ java.lang.String = js.native
-  val routerActions: reactDashRouterDashReduxLib.Anon_Replace = js.native
+  val routerActions: reactDashRouterDashReduxLib.Anon_Go = js.native
   val routerReducer: reduxLib.reduxMod.Reducer[RouterState, reduxLib.reduxMod.AnyAction] = js.native
   def createMatchSelector(path: java.lang.String): js.Function1[
     /* state */ reactDashRouterDashReduxLib.Anon_Router, 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PolylineMaterialAppearance ()
   extends cesiumLib.cesiumMod.CesiumNs.PolylineMaterialAppearance {
-  def this(options: cesiumLib.Anon_VertexShaderSourceTranslucent) = this()
+  def this(options: cesiumLib.Anon_FragmentShaderSourceMaterial) = this()
   /* CompleteClass */
   override val closed: scala.Boolean = js.native
   /* CompleteClass */

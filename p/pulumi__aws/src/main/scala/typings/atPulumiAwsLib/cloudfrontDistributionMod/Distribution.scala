@@ -36,7 +36,7 @@ class Distribution protected ()
   /**
     * **Deprecated**, use `ordered_cache_behavior` instead.
     */
-  val cacheBehaviors: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ForwardedValues]]] = js.native
+  val cacheBehaviors: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AllowedMethods]]] = js.native
   /**
     * Internal value used by CloudFront to allow future
     * updates to the distribution configuration.
@@ -50,12 +50,12 @@ class Distribution protected ()
   /**
     * One or more custom error response elements (multiples allowed).
     */
-  val customErrorResponses: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ErrorCode]]] = js.native
+  val customErrorResponses: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ErrorCachingMinTtl]]] = js.native
   /**
     * The default cache behavior for this distribution (maximum
     * one).
     */
-  val defaultCacheBehavior: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_ForwardedValuesFieldLevelEncryptionId] = js.native
+  val defaultCacheBehavior: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AllowedMethodsCachedMethods] = js.native
   /**
     * The object that you want CloudFront to
     * return (for example, index.html) when an end user requests the root URL.
@@ -106,18 +106,18 @@ class Distribution protected ()
     * configuration that controls how logs are written
     * to your distribution (maximum one).
     */
-  val loggingConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_PrefixBucketIncludeCookies]] = js.native
+  val loggingConfig: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketIncludeCookies]] = js.native
   /**
     * An ordered list of cache behaviors
     * resource for this distribution. List from top to bottom
     * +    in order of precedence. The topmost cache behavior will have precedence 0.
     */
-  val orderedCacheBehaviors: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ForwardedValues]]] = js.native
+  val orderedCacheBehaviors: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AllowedMethods]]] = js.native
   /**
     * One or more origins for this
     * distribution (multiples allowed).
     */
-  val origins: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_S3OriginConfig]] = js.native
+  val origins: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_CustomHeaders]] = js.native
   /**
     * The price class for this distribution. One of
     * `PriceClass_All`, `PriceClass_200`, `PriceClass_100`
@@ -149,7 +149,7 @@ class Distribution protected ()
     * configuration for this distribution (maximum
     * one).
     */
-  val viewerCertificate: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_SslSupportMethod] = js.native
+  val viewerCertificate: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AcmCertificateArn] = js.native
   /**
     * If you're using AWS WAF to filter CloudFront
     * requests, the Id of the AWS WAF web ACL that is associated with the

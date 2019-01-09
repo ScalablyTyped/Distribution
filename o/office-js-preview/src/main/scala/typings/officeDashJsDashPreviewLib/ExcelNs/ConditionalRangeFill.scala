@@ -50,7 +50,7 @@ class ConditionalRangeFill ()
   def load(): ConditionalRangeFill = js.native
   def load(option: java.lang.String): ConditionalRangeFill = js.native
   def load(option: js.Array[java.lang.String]): ConditionalRangeFill = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): ConditionalRangeFill = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): ConditionalRangeFill = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ConditionalRangeFillLoadOptions): ConditionalRangeFill = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ConditionalRangeFill): scala.Unit = js.native

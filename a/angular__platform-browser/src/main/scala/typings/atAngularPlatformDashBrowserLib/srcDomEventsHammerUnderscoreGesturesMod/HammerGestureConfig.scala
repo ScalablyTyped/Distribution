@@ -21,7 +21,7 @@ class HammerGestureConfig () extends js.Object {
     * and their allowed and default values, see
     * [HammerJS documentation](http://hammerjs.github.io/).
     */
-  var options: js.UndefOr[atAngularPlatformDashBrowserLib.Anon_Enable] = js.native
+  var options: js.UndefOr[atAngularPlatformDashBrowserLib.Anon_CssProps] = js.native
   /**
     * Maps gesture event names to a set of configuration options
     * that specify overrides to the default values for specific properties.

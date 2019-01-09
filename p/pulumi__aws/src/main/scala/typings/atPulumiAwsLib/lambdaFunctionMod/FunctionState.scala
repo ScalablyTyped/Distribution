@@ -25,7 +25,7 @@ trait FunctionState extends js.Object {
   /**
     * The Lambda environment's configuration settings. Fields documented below.
     */
-  val environment: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_VariablesKey]] = js.undefined
+  val environment: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyVariablesInput]] = js.undefined
   /**
     * The function [entrypoint][3] in your code.
     */
@@ -110,7 +110,7 @@ trait FunctionState extends js.Object {
     * Provide this to allow your function to access your VPC. Fields documented below. See [Lambda in VPC][7]
     */
   val vpcConfig: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_VpcIdSecurityGroupIdsSubnetIdsInput]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInput]
   ] = js.undefined
 }
 

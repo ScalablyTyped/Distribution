@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait LineitemsResource extends js.Object {
   /** Retrieves line items in CSV format. */
-  def downloadlineitems(request: gapiDotClientDotDoubleclickbidmanagerLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[DownloadLineItemsResponse]
+  def downloadlineitems(request: gapiDotClientDotDoubleclickbidmanagerLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[DownloadLineItemsResponse]
   /** Uploads line items in CSV format. */
-  def uploadlineitems(request: gapiDotClientDotDoubleclickbidmanagerLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[UploadLineItemsResponse]
+  def uploadlineitems(request: gapiDotClientDotDoubleclickbidmanagerLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[UploadLineItemsResponse]
 }
 

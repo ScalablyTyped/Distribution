@@ -25,6 +25,6 @@ trait GoogleApiYouTubeActivityResource extends js.Object {
   /**
     * The snippet object contains basic details about the activity, including the activitys type and group ID.
     */
-  var snippet: Anon_DescriptionGroupId
+  var snippet: Anon_ChannelIdChannelTitle
 }
 

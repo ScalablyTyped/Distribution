@@ -85,7 +85,7 @@ trait ZipFile[StringType]
     * Opens a read stream for the given entry
     */
   def openReadStream(entry: Entry[StringType]): js.Promise[nodeLib.streamMod.Readable] = js.native
-  def openReadStream(entry: Entry[StringType], options: adoneLib.Anon_Decrypt): js.Promise[nodeLib.streamMod.Readable] = js.native
+  def openReadStream(entry: Entry[StringType], options: adoneLib.Anon_Decompress): js.Promise[nodeLib.streamMod.Readable] = js.native
   def readEntry(): js.Promise[scala.Unit] = js.native
 }
 

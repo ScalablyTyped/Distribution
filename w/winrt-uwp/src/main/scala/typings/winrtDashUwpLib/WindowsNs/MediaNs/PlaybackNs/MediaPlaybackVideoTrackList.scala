@@ -38,7 +38,7 @@ abstract class MediaPlaybackVideoTrackList ()
     * Retrieves the video tracks that start at the specified index in the list.
     * @param startIndex The zero-based index of the start of the video tracks in the list.
     */
-  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValueVideoTrack = js.native
+  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValueNumberVideoTrack = js.native
   def indexOf(value: winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.VideoTrack, extra: js.Any*): winrtDashUwpLib.Anon_Index = js.native
   /**
     * Retrieves the index of a specified video track in the list.

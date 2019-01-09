@@ -10,7 +10,7 @@ trait AuthResult extends js.Object {
   var appState: js.UndefOr[js.Any] = js.undefined
   var expiresIn: scala.Double
   var idToken: java.lang.String
-  var idTokenPayload: Anon_Exp
+  var idTokenPayload: Anon_Aud
   var refreshToken: js.UndefOr[java.lang.String] = js.undefined
   var scope: js.UndefOr[java.lang.String] = js.undefined
   var state: java.lang.String

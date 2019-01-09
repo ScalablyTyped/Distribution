@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Dropbox.AuthDriver.NodeServer")
 @js.native
 class NodeServer () extends IAuthDriver {
-  def this(options: dropboxjsLib.Anon_Tls) = this()
+  def this(options: dropboxjsLib.Anon_Port) = this()
   def authType(): java.lang.String = js.native
   def closeBrowser(response: js.Any): scala.Unit = js.native
   def closeServer(): scala.Unit = js.native

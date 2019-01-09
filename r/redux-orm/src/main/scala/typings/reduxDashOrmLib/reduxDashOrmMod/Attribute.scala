@@ -9,10 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Attribute protected () extends js.Object {
   def this(opts: AttributeOpts) = this()
-  def install(
-    model: org.scalablytyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]],
-    fieldName: java.lang.String,
-    orm: ORM[ORMCommonState]
-  ): scala.Unit = js.native
+  def install(model: reduxDashOrmLib.Anon_Action, fieldName: java.lang.String, orm: ORM[ORMCommonState]): scala.Unit = js.native
 }
 

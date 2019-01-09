@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("depcheck", JSImport.Namespace)
 @js.native
 object depcheckModMembers extends js.Object {
-  val detector: depcheckLib.Anon_GruntLoadTaskCallExpression = js.native
-  val parser: depcheckLib.Anon_Jsx = js.native
-  val special: depcheckLib.Anon_Commitizen = js.native
+  val detector: depcheckLib.Anon_ExpressViewEngine = js.native
+  val parser: depcheckLib.Anon_Coffee = js.native
+  val special: depcheckLib.Anon_Babel = js.native
   def apply(rootDir: java.lang.String, options: depcheckLib.depcheckMod.depcheckNs.Options): js.Promise[depcheckLib.depcheckMod.depcheckNs.Results] = js.native
   def apply[T](
     rootDir: java.lang.String,

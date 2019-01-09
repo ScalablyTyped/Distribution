@@ -96,7 +96,7 @@ class PageContent ()
   def load(): PageContent = js.native
   def load(option: java.lang.String): PageContent = js.native
   def load(option: js.Array[java.lang.String]): PageContent = js.native
-  def load(option: officeDashJsLib.Anon_Select): PageContent = js.native
+  def load(option: officeDashJsLib.Anon_Expand): PageContent = js.native
   def load(option: officeDashJsLib.OneNoteNs.InterfacesNs.PageContentLoadOptions): PageContent = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

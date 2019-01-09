@@ -523,7 +523,7 @@ object fractalNs extends js.Object {
     
     @js.native
     class Notifier () extends js.Object {
-      def updateAvailable(details: atFrctlFractalLib.Anon_Latest): scala.Unit = js.native
+      def updateAvailable(details: atFrctlFractalLib.Anon_Current): scala.Unit = js.native
       def versionMismatch(details: atFrctlFractalLib.Anon_Cli): scala.Unit = js.native
     }
     
@@ -568,9 +568,9 @@ object fractalNs extends js.Object {
       trait EntitySource[T /* <: Entity */, TConfig]
         extends atFrctlFractalLib.fractalMod.fractalNs.coreNs.mixinsNs.Source[T, TConfig] {
         def engine[TEngine](): atFrctlFractalLib.fractalMod.Adapter[TEngine] = js.native
-        def engine[TEngine](adapterFactory: atFrctlFractalLib.Anon_Register[T, TEngine]): atFrctlFractalLib.fractalMod.Adapter[TEngine] = js.native
+        def engine[TEngine](adapterFactory: atFrctlFractalLib.Anon_App[T, TEngine]): atFrctlFractalLib.fractalMod.Adapter[TEngine] = js.native
         def engine[TEngine](adapterFactory: java.lang.String): atFrctlFractalLib.fractalMod.Adapter[TEngine] = js.native
-        def engine[TEngine](adapterFactory: js.Function0[atFrctlFractalLib.Anon_Register[T, TEngine]]): atFrctlFractalLib.fractalMod.Adapter[TEngine] = js.native
+        def engine[TEngine](adapterFactory: js.Function0[atFrctlFractalLib.Anon_App[T, TEngine]]): atFrctlFractalLib.fractalMod.Adapter[TEngine] = js.native
         def entities(): js.Array[T] = js.native
         def getProp(key: java.lang.String): java.lang.String | js.Object = js.native
         def statusInfo(handle: java.lang.String): atFrctlFractalLib.fractalMod.fractalNs.coreNs.StatusInfo | scala.Null = js.native
@@ -645,8 +645,8 @@ object fractalNs extends js.Object {
       /**
         * Combined EventEmitter and Configurable mixins
         */
-      /* RemoveMultipleInheritance: Dropped parents List(atFrctlFractalLib.fractalMod.fractalNs.coreNs.mixinsNs.Configurable because Inheritance from two classes)*/
-      @js.native
+      /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+      - atFrctlFractalLib.fractalMod.fractalNs.coreNs.mixinsNs.Configurable because Inheritance from two classes */ @js.native
       abstract class ConfigurableEmitter[T] ()
         extends nodeLib.eventsMod.EventEmitter
       
@@ -710,9 +710,9 @@ object fractalNs extends js.Object {
       extends nodeLib.eventsMod.EventEmitter {
       val isSynced: scala.Boolean = js.native
       val port: js.UndefOr[scala.Double] = js.native
-      val ports: atFrctlFractalLib.Anon_SyncServer = js.native
+      val ports: atFrctlFractalLib.Anon_Server = js.native
       val url: js.UndefOr[java.lang.String] = js.native
-      val urls: atFrctlFractalLib.Anon_Sync = js.native
+      val urls: atFrctlFractalLib.Anon_ServerSync = js.native
       def start(): js.Promise[nodeLib.httpMod.Server] = js.native
       def start(sync: scala.Boolean): js.Promise[nodeLib.httpMod.Server] = js.native
       def stop(): scala.Unit = js.native

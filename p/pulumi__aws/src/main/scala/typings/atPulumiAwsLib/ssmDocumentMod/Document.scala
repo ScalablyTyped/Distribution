@@ -66,11 +66,11 @@ class Document protected ()
   /**
     * The parameters that are available to this document.
     */
-  val parameters: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_TypeDescription]] = js.native
+  val parameters: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DefaultValueDescription]] = js.native
   /**
     * Additional Permissions to attach to the document. See Permissions below for details.
     */
-  val permissions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TypeAccountIds]] = js.native
+  val permissions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AccountIdsType]] = js.native
   /**
     * A list of OS platforms compatible with this SSM document, either "Windows" or "Linux".
     */

@@ -25,10 +25,10 @@ object Ticker extends js.Object {
     * @deprecated
     */
   var useRAF: scala.Boolean = js.native
-  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent): js.Object = js.native
-  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj): js.Object = js.native
-  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj, useCapture: scala.Boolean): js.Object = js.native
-  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent, useCapture: scala.Boolean): js.Object = js.native
+  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj): js.Object = js.native
+  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent): js.Object = js.native
+  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent, useCapture: scala.Boolean): js.Object = js.native
+  def addEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj, useCapture: scala.Boolean): js.Object = js.native
   // EventDispatcher mixins
   def addEventListener(`type`: java.lang.String, listener: easeljsLib.createjsNs.Stage): easeljsLib.createjsNs.Stage = js.native
   def addEventListener(`type`: java.lang.String, listener: easeljsLib.createjsNs.Stage, useCapture: scala.Boolean): easeljsLib.createjsNs.Stage = js.native
@@ -72,10 +72,10 @@ object Ticker extends js.Object {
   def getTime(runTime: scala.Boolean): scala.Double = js.native
   def hasEventListener(`type`: java.lang.String): scala.Boolean = js.native
   def init(): scala.Unit = js.native
-  def off(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent): scala.Unit = js.native
-  def off(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj): scala.Unit = js.native
-  def off(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj, useCapture: scala.Boolean): scala.Unit = js.native
-  def off(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent, useCapture: scala.Boolean): scala.Unit = js.native
+  def off(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj): scala.Unit = js.native
+  def off(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent): scala.Unit = js.native
+  def off(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent, useCapture: scala.Boolean): scala.Unit = js.native
+  def off(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj, useCapture: scala.Boolean): scala.Unit = js.native
   def off(`type`: java.lang.String, listener: js.Function): scala.Unit = js.native
   def off(
     `type`: java.lang.String,
@@ -87,47 +87,47 @@ object Ticker extends js.Object {
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   def off(`type`: java.lang.String, listener: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
-  def on(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent): js.Object = js.native
-  def on(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj): js.Object = js.native
-  def on(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj, scope: js.Object): js.Object = js.native
+  def on(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj): js.Object = js.native
+  def on(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent): js.Object = js.native
+  def on(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent, scope: js.Object): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: easeljsLib.Anon_HandleEventEventObj,
+    listener: easeljsLib.Anon_EventObjHandleEvent,
     scope: js.Object,
     once: scala.Boolean
   ): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: easeljsLib.Anon_HandleEventEventObj,
+    listener: easeljsLib.Anon_EventObjHandleEvent,
     scope: js.Object,
     once: scala.Boolean,
     data: js.Any
   ): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: easeljsLib.Anon_HandleEventEventObj,
+    listener: easeljsLib.Anon_EventObjHandleEvent,
     scope: js.Object,
     once: scala.Boolean,
     data: js.Any,
     useCapture: scala.Boolean
   ): js.Object = js.native
-  def on(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent, scope: js.Object): js.Object = js.native
+  def on(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj, scope: js.Object): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: easeljsLib.Anon_HandleEvent,
+    listener: easeljsLib.Anon_EventObj,
     scope: js.Object,
     once: scala.Boolean
   ): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: easeljsLib.Anon_HandleEvent,
+    listener: easeljsLib.Anon_EventObj,
     scope: js.Object,
     once: scala.Boolean,
     data: js.Any
   ): js.Object = js.native
   def on(
     `type`: java.lang.String,
-    listener: easeljsLib.Anon_HandleEvent,
+    listener: easeljsLib.Anon_EventObj,
     scope: js.Object,
     once: scala.Boolean,
     data: js.Any,
@@ -166,10 +166,10 @@ object Ticker extends js.Object {
   ): js.Function = js.native
   def removeAllEventListeners(): scala.Unit = js.native
   def removeAllEventListeners(`type`: java.lang.String): scala.Unit = js.native
-  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent): scala.Unit = js.native
-  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj): scala.Unit = js.native
-  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEventEventObj, useCapture: scala.Boolean): scala.Unit = js.native
-  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_HandleEvent, useCapture: scala.Boolean): scala.Unit = js.native
+  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj): scala.Unit = js.native
+  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent): scala.Unit = js.native
+  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObjHandleEvent, useCapture: scala.Boolean): scala.Unit = js.native
+  def removeEventListener(`type`: java.lang.String, listener: easeljsLib.Anon_EventObj, useCapture: scala.Boolean): scala.Unit = js.native
   def removeEventListener(`type`: java.lang.String, listener: js.Function): scala.Unit = js.native
   def removeEventListener(
     `type`: java.lang.String,

@@ -25,7 +25,7 @@ trait Core extends js.Object {
     * @param libraryInfo information about your project.
     */
   @JSName("addLibrary")
-  var addLibrary_Original: webgmeLib.Anon_NodeNameLibraryRootHash = js.native
+  var addLibrary_Original: webgmeLib.Anon_CallbackLibraryInfo = js.native
   /**
     * Apply changes to the current project.
     * @param root
@@ -33,7 +33,7 @@ trait Core extends js.Object {
     * @return only reports errors.
     */
   @JSName("applyTreeDiff")
-  var applyTreeDiff_Original: webgmeLib.Anon_Root = js.native
+  var applyTreeDiff_Original: webgmeLib.Anon_CallbackPatch = js.native
   /**
     * Generates a differential tree among the two states 
     * of the project that contains the necessary changes 
@@ -44,7 +44,7 @@ trait Core extends js.Object {
     * @return the result is in form of a json object.
     */
   @JSName("generateTreeDiff")
-  var generateTreeDiff_Original: webgmeLib.Anon_SourceRoot = js.native
+  var generateTreeDiff_Original: webgmeLib.Anon_CallbackSourceRoot = js.native
   /**
     * From the given starting node, it loads the path 
     * given as a series of relative ids (separated by '/') and returns the node it finds at the ends of the path. 
@@ -53,7 +53,7 @@ trait Core extends js.Object {
     * @param relativePath the relative path - built by relative ids - of the node in question.
     */
   @JSName("loadByPath")
-  var loadByPath_Original: webgmeLib.Anon_StartNode = js.native
+  var loadByPath_Original: webgmeLib.Anon_CallbackRelativePath = js.native
   /**
     * Loads the child of the given parent pointed by the relative id. 
     * Behind the scenes, it means that it actually loads the 
@@ -65,7 +65,7 @@ trait Core extends js.Object {
     * @param relativeId the relative id of the child in question.
     */
   @JSName("loadChild")
-  var loadChild_Original: webgmeLib.Anon_Parent = js.native
+  var loadChild_Original: webgmeLib.Anon_CallbackParent = js.native
   /**
     * Loads all the children of the given parent. 
     * As it first checks the already reserved relative ids of the parent, 
@@ -74,7 +74,7 @@ trait Core extends js.Object {
     * @see https://github.com/webgme/webgme/wiki/GME-Core-API#containment-methods
     */
   @JSName("loadChildren")
-  var loadChildren_Original: webgmeLib.Anon_ParentCallbackNode = js.native
+  var loadChildren_Original: webgmeLib.Anon_CallbackParentArray = js.native
   /**
     * Loads all the source nodes that has such a pointer and its target is the given node.
     * @param target the container node in question.
@@ -82,13 +82,13 @@ trait Core extends js.Object {
     * @return the relative id of the child in question.
     */
   @JSName("loadCollection")
-  var loadCollection_Original: webgmeLib.Anon_Target = js.native
+  var loadCollection_Original: webgmeLib.Anon_CallbackPointerName = js.native
   /**
     * Loads all the instances of the given node.
     * @param node the node in question.
     */
   @JSName("loadInstances")
-  var loadInstances_Original: webgmeLib.Anon_NodeCallback = js.native
+  var loadInstances_Original: webgmeLib.Anon_CallbackNode = js.native
   /**
     * Loads all the children of the given parent that has some data and not just inherited. 
     * As it first checks the already reserved relative ids of the parent, 
@@ -96,14 +96,14 @@ trait Core extends js.Object {
     * @param parent the container node in question.
     */
   @JSName("loadOwnChildren")
-  var loadOwnChildren_Original: webgmeLib.Anon_ParentCallback = js.native
+  var loadOwnChildren_Original: webgmeLib.Anon_CallbackParentErrorOnlyCallback = js.native
   /**
     * Loads a complete sub-tree of the containment hierarchy starting from the given node, 
     * but load only those children that has some additional data and not purely inherited.
     * @param node the node in question.
     */
   @JSName("loadOwnSubTree")
-  var loadOwnSubTree_Original: webgmeLib.Anon_NodeCallback = js.native
+  var loadOwnSubTree_Original: webgmeLib.Anon_CallbackNode = js.native
   /**
     * Loads the target of the given pointer of the given node. 
     * In the callback the node can have three values: 
@@ -114,42 +114,42 @@ trait Core extends js.Object {
     * @param pointerName the relative id of the child in question.
     */
   @JSName("loadPointer")
-  var loadPointer_Original: webgmeLib.Anon_Source = js.native
+  var loadPointer_Original: webgmeLib.Anon_CallbackPointerNameSource = js.native
   /**
     * Loads the data object with the given hash and makes it a root of a containment hierarchy.
     * @param node the node in question.
     * @return 
     */
   @JSName("loadRoot")
-  var loadRoot_Original: webgmeLib.Anon_MetadataHashCallbackResultCallbackDataObject = js.native
+  var loadRoot_Original: webgmeLib.Anon_CallbackMetadataHashDataObject = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
   @JSName("loadSubTree")
-  var loadSubTree_Original: webgmeLib.Anon_NodeCallbackResultCallback = js.native
+  var loadSubTree_Original: webgmeLib.Anon_CallbackNodeDataObject = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
   @JSName("loadTree")
-  var loadTree_Original: webgmeLib.Anon_RootHash = js.native
+  var loadTree_Original: webgmeLib.Anon_CallbackRootHash = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
   @JSName("setGuid")
-  var setGuid_Original: webgmeLib.Anon_NodeGuid = js.native
+  var setGuid_Original: webgmeLib.Anon_CallbackGuid = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
   @JSName("setMemberAttribute")
-  var setMemberAttribute_Original: webgmeLib.Anon_NodeSetName = js.native
+  var setMemberAttribute_Original: webgmeLib.Anon_MemberPath = js.native
   /**
     * TODO
     * the visitation function will be called for
@@ -160,14 +160,14 @@ trait Core extends js.Object {
     * @return 
     */
   @JSName("traverse")
-  var traverse_Original: webgmeLib.Anon_NodeOptions = js.native
+  var traverse_Original: webgmeLib.Anon_CallbackFinished = js.native
   /**
     * TODO
     * @param node the node in question.
     * @return 
     */
   @JSName("updateLibrary")
-  var updateLibrary_Original: webgmeLib.Anon_NodeName = js.native
+  var updateLibrary_Original: webgmeLib.Anon_CallbackLibraryInfoLibraryRootHash = js.native
   /**
     * It adds a project as library to your project by copying it over. 
     * The library will be a node with the given name directly 

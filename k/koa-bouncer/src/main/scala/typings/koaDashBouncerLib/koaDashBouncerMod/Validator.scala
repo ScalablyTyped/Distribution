@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Validator protected ()
   extends koaDashBouncerLib.koaDashBouncerMod.KoaBouncerNs.Validator {
-  def this(props: koaDashBouncerLib.Anon_Vals) = this()
+  def this(props: koaDashBouncerLib.Anon_Ctx) = this()
 }
 
 @JSImport("koa-bouncer", "Validator")

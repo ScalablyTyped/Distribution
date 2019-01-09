@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_BucketAccessRoleArn extends js.Object {
-  var bucketAccessRoleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  var bucketAccessRoleArn: java.lang.String
 }
 

@@ -16,7 +16,7 @@ package object CoreNs {
   type DocumentKey = java.lang.String
   type ExistingDocument[Content /* <: js.Object */] = Document[Content] with RevisionIdMeta
   type NewDocument[Content /* <: js.Object */] = Content
-  type PostDocument[Content /* <: js.Object */] = NewDocument[Content] with pouchdbDashCoreLib.Anon_Filters
+  type PostDocument[Content /* <: js.Object */] = NewDocument[Content] with pouchdbDashCoreLib.Anon_Attachments
   type PutDocument[Content /* <: js.Object */] = PostDocument[Content] with ChangesMeta with pouchdbDashCoreLib.Anon_Id
   /** Existing doc or just object with `_id` and `_rev` */
   type RemoveDocument = IdMeta with RevisionIdMeta

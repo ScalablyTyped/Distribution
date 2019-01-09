@@ -44,12 +44,8 @@ class Db protected ()
   def command(command: js.Object): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#command */
   def command(command: js.Object, callback: MongoCallback[_]): scala.Unit = js.native
-  def command(command: js.Object, options: mongodbLib.Anon_ReadPreferenceString_23433833): js.Promise[_] = js.native
-  def command(
-    command: js.Object,
-    options: mongodbLib.Anon_ReadPreferenceString_23433833,
-    callback: MongoCallback[_]
-  ): scala.Unit = js.native
+  def command(command: js.Object, options: mongodbLib.Anon_ReadPreference): js.Promise[_] = js.native
+  def command(command: js.Object, options: mongodbLib.Anon_ReadPreference, callback: MongoCallback[_]): scala.Unit = js.native
   def createCollection[TSchema](name: java.lang.String): js.Promise[Collection[TSchema]] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#createCollection */
   def createCollection[TSchema](name: java.lang.String, callback: MongoCallback[Collection[TSchema]]): scala.Unit = js.native
@@ -82,28 +78,28 @@ class Db protected ()
   def executeDbAdminCommand(command: js.Object): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#executeDbAdminCommand */
   def executeDbAdminCommand(command: js.Object, callback: MongoCallback[_]): scala.Unit = js.native
-  def executeDbAdminCommand(command: js.Object, options: mongodbLib.Anon_ReadPreference): js.Promise[_] = js.native
-  def executeDbAdminCommand(command: js.Object, options: mongodbLib.Anon_ReadPreference, callback: MongoCallback[_]): scala.Unit = js.native
+  def executeDbAdminCommand(command: js.Object, options: mongodbLib.Anon_MaxTimeMS): js.Promise[_] = js.native
+  def executeDbAdminCommand(command: js.Object, options: mongodbLib.Anon_MaxTimeMS, callback: MongoCallback[_]): scala.Unit = js.native
   def indexInformation(name: java.lang.String): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#indexInformation */
   def indexInformation(name: java.lang.String, callback: MongoCallback[_]): scala.Unit = js.native
-  def indexInformation(name: java.lang.String, options: mongodbLib.Anon_ReadPreferenceFull): js.Promise[_] = js.native
-  def indexInformation(name: java.lang.String, options: mongodbLib.Anon_ReadPreferenceFull, callback: MongoCallback[_]): scala.Unit = js.native
+  def indexInformation(name: java.lang.String, options: mongodbLib.Anon_Full): js.Promise[_] = js.native
+  def indexInformation(name: java.lang.String, options: mongodbLib.Anon_Full, callback: MongoCallback[_]): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#listCollections */
   def listCollections(): CommandCursor = js.native
   def listCollections(filter: js.Object): CommandCursor = js.native
-  def listCollections(filter: js.Object, options: mongodbLib.Anon_NameOnly): CommandCursor = js.native
+  def listCollections(filter: js.Object, options: mongodbLib.Anon_BatchSize): CommandCursor = js.native
   def profilingInfo(): js.Promise[scala.Unit] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#profilingInfo */
   /** @deprecated Query the system.profile collection directly. */
   def profilingInfo(callback: MongoCallback[_]): scala.Unit = js.native
-  def profilingInfo(options: mongodbLib.Anon_SessionClientSessionOptional): js.Promise[scala.Unit] = js.native
-  def profilingInfo(options: mongodbLib.Anon_SessionClientSessionOptional, callback: MongoCallback[scala.Unit]): scala.Unit = js.native
+  def profilingInfo(options: mongodbLib.Anon_SessionClientSession): js.Promise[scala.Unit] = js.native
+  def profilingInfo(options: mongodbLib.Anon_SessionClientSession, callback: MongoCallback[scala.Unit]): scala.Unit = js.native
   def profilingLevel(): js.Promise[ProfilingLevel] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#profilingLevel */
   def profilingLevel(callback: MongoCallback[ProfilingLevel]): scala.Unit = js.native
-  def profilingLevel(options: mongodbLib.Anon_SessionClientSessionOptional): js.Promise[ProfilingLevel] = js.native
-  def profilingLevel(options: mongodbLib.Anon_SessionClientSessionOptional, callback: MongoCallback[ProfilingLevel]): scala.Unit = js.native
+  def profilingLevel(options: mongodbLib.Anon_SessionClientSession): js.Promise[ProfilingLevel] = js.native
+  def profilingLevel(options: mongodbLib.Anon_SessionClientSession, callback: MongoCallback[ProfilingLevel]): scala.Unit = js.native
   def removeUser(username: java.lang.String): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#removeUser */
   def removeUser(username: java.lang.String, callback: MongoCallback[_]): scala.Unit = js.native
@@ -119,21 +115,21 @@ class Db protected ()
   def renameCollection[TSchema](
     fromCollection: java.lang.String,
     toCollection: java.lang.String,
-    options: mongodbLib.Anon_DropTargetBoolean
+    options: mongodbLib.Anon_DropTarget
   ): js.Promise[Collection[TSchema]] = js.native
   def renameCollection[TSchema](
     fromCollection: java.lang.String,
     toCollection: java.lang.String,
-    options: mongodbLib.Anon_DropTargetBoolean,
+    options: mongodbLib.Anon_DropTarget,
     callback: MongoCallback[Collection[TSchema]]
   ): scala.Unit = js.native
   def setProfilingLevel(level: ProfilingLevel): js.Promise[ProfilingLevel] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#setProfilingLevel */
   def setProfilingLevel(level: ProfilingLevel, callback: MongoCallback[ProfilingLevel]): scala.Unit = js.native
-  def setProfilingLevel(level: ProfilingLevel, options: mongodbLib.Anon_SessionClientSessionOptional): js.Promise[ProfilingLevel] = js.native
+  def setProfilingLevel(level: ProfilingLevel, options: mongodbLib.Anon_SessionClientSession): js.Promise[ProfilingLevel] = js.native
   def setProfilingLevel(
     level: ProfilingLevel,
-    options: mongodbLib.Anon_SessionClientSessionOptional,
+    options: mongodbLib.Anon_SessionClientSession,
     callback: MongoCallback[ProfilingLevel]
   ): scala.Unit = js.native
   def stats(): js.Promise[_] = js.native

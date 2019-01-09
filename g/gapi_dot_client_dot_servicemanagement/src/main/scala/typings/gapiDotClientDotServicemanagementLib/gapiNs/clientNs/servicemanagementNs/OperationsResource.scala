@@ -11,8 +11,8 @@ trait OperationsResource extends js.Object {
     * method to poll the operation result at intervals as recommended by the API
     * service.
     */
-  def get(request: gapiDotClientDotServicemanagementLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def get(request: gapiDotClientDotServicemanagementLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Lists service operations that match the specified filter in the request. */
-  def list(request: gapiDotClientDotServicemanagementLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
+  def list(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListOperationsResponse]
 }
 

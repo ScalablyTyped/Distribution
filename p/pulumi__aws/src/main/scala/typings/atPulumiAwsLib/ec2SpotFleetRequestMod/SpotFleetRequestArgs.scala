@@ -51,7 +51,7 @@ trait SpotFleetRequestArgs extends js.Object {
     */
   val launchSpecifications: atPulumiPulumiLib.resourceMod.Input[
     js.Array[
-      atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IamInstanceProfileArnEbsOptimized]
+      atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AmiAssociatePublicIpAddress]
     ]
   ]
   /**

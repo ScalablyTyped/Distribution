@@ -54,7 +54,7 @@ class ConditionalFormatRule ()
   def load(): ConditionalFormatRule = js.native
   def load(option: java.lang.String): ConditionalFormatRule = js.native
   def load(option: js.Array[java.lang.String]): ConditionalFormatRule = js.native
-  def load(option: officeDashJsLib.Anon_Select): ConditionalFormatRule = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ConditionalFormatRule = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.ConditionalFormatRuleLoadOptions): ConditionalFormatRule = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ConditionalFormatRule): scala.Unit = js.native

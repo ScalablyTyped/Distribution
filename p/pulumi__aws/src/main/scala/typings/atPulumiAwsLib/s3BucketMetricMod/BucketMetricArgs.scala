@@ -13,7 +13,7 @@ trait BucketMetricArgs extends js.Object {
   /**
     * [Object filtering](http://docs.aws.amazon.com/AmazonS3/latest/dev/metrics-configurations.html#metrics-configurations-filter) that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).
     */
-  val filter: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Prefix]] = js.undefined
+  val filter: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_KeyPrefixTags]] = js.undefined
   /**
     * Unique identifier of the metrics configuration for the bucket.
     */

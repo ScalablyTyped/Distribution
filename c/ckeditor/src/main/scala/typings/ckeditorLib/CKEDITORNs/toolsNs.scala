@@ -47,8 +47,8 @@ object toolsNs extends js.Object {
   def indexOf[T](array: js.Array[T], value: js.Function1[/* el */ T, scala.Boolean]): scala.Double = js.native
   def isArray[T](`object`: js.Any): /* is std.Array<T> */ scala.Boolean = js.native
   def isEmpty(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Boolean = js.native
-  def keystrokeToArray(lang: org.scalablytyped.runtime.StringDictionary[js.Any], keystroke: scala.Double): ckeditorLib.Anon_AriaDisplay = js.native
-  def keystrokeToString(lang: org.scalablytyped.runtime.StringDictionary[js.Any], keystroke: scala.Double): ckeditorLib.Anon_Aria = js.native
+  def keystrokeToArray(lang: org.scalablytyped.runtime.StringDictionary[js.Any], keystroke: scala.Double): ckeditorLib.Anon_Aria = js.native
+  def keystrokeToString(lang: org.scalablytyped.runtime.StringDictionary[js.Any], keystroke: scala.Double): ckeditorLib.Anon_AriaDisplay = js.native
   def ltrim(str: java.lang.String): java.lang.String = js.native
   def normalizeCssText(styleText: java.lang.String, nativeNormalize: scala.Boolean): java.lang.String = js.native
   def normalizeHex(styleText: java.lang.String): java.lang.String = js.native
@@ -164,8 +164,8 @@ object toolsNs extends js.Object {
     @JSName("parse")
     @js.native
     object parseNs extends js.Object {
-      def background(value: java.lang.String): ckeditorLib.Anon_ColorUnprocessed = js.native
-      def border(value: java.lang.String): ckeditorLib.Anon_Color = js.native
+      def background(value: java.lang.String): ckeditorLib.Anon_Color = js.native
+      def border(value: java.lang.String): ckeditorLib.Anon_ColorStyle = js.native
       def margin(value: java.lang.String): ckeditorLib.Anon_Bottom = js.native
     }
     

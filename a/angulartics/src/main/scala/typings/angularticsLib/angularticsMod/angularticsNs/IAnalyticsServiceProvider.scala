@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IAnalyticsServiceProvider
   extends angularLib.angularMod.angularNs.IServiceProvider {
-  var settings: angularticsLib.Anon_DeveloperMode
+  var settings: angularticsLib.Anon_BufferFlushDelay
   def developerMode(value: scala.Boolean): scala.Unit
   def excludeRoutes(value: js.Array[java.lang.String]): scala.Unit
   def firstPageview(value: scala.Boolean): scala.Unit

@@ -17,7 +17,7 @@ trait IToastBaseConfig extends js.Object {
   var onTap: js.UndefOr[js.Function1[/* toast */ IToast, scala.Unit]] = js.undefined
   var progressBar: js.UndefOr[scala.Boolean] = js.undefined
   var tapToDismiss: js.UndefOr[scala.Boolean] = js.undefined
-  var templates: js.UndefOr[angularDashToastrLib.Anon_Toast] = js.undefined
+  var templates: js.UndefOr[angularDashToastrLib.Anon_Progressbar] = js.undefined
   var timeOut: js.UndefOr[scala.Double] = js.undefined
   var titleClass: js.UndefOr[java.lang.String] = js.undefined
   var toastClass: js.UndefOr[java.lang.String] = js.undefined

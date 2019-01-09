@@ -17,7 +17,7 @@ trait RegexMatchSetState extends js.Object {
   val regexMatchTuples: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RegexPatternSetIdFieldToMatch]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldToMatchRegexPatternSetIdTextTransformation]
       ]
     ]
   ] = js.undefined

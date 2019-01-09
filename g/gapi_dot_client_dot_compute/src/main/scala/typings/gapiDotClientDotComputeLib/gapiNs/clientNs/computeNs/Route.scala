@@ -52,6 +52,6 @@ trait Route extends js.Object {
   /** A list of instance tags to which this route applies. */
   var tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** [Output Only] If potential misconfigurations are detected for this route, this field will be populated with warning messages. */
-  var warnings: js.UndefOr[js.Array[gapiDotClientDotComputeLib.Anon_Data]] = js.undefined
+  var warnings: js.UndefOr[js.Array[gapiDotClientDotComputeLib.Anon_Code]] = js.undefined
 }
 

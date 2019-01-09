@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("sdk/page-worker", JSImport.Namespace)
 @js.native
 object pageDashWorkerModMembers extends js.Object {
-  def Page(options: jpmLib.Anon_ContentScript): PageWorker = js.native
+  def Page(options: jpmLib.Anon_Allow): PageWorker = js.native
 }
 

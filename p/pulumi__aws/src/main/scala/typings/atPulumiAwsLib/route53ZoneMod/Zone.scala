@@ -55,7 +55,7 @@ class Zone protected ()
   /**
     * Configuration block(s) specifying VPC(s) to associate with a private hosted zone. Conflicts with `delegation_set_id`, `vpc_id`, and `vpc_region` in this resource and any [`aws_route53_zone_association` resource](https://www.terraform.io/docs/providers/aws/r/route53_zone_association.html) specifying the same zone ID. Detailed below.
     */
-  val vpcs: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_VpcIdVpcRegion]] = js.native
+  val vpcs: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_VpcId]] = js.native
   /**
     * The Hosted Zone ID. This can be referenced by zone records.
     */

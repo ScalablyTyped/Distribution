@@ -13,7 +13,7 @@ class Hotkey ()
 @JSImport("@blueprintjs/core", "Hotkey")
 @js.native
 object Hotkey extends js.Object {
-  var defaultProps: atBlueprintjsCoreLib.Anon_PreventDefault = js.native
+  var defaultProps: atBlueprintjsCoreLib.Anon_AllowInInput = js.native
   var displayName: java.lang.String = js.native
 }
 

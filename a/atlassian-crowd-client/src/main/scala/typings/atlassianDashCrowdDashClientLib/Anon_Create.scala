@@ -5,28 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Create extends js.Object {
-  var attributes: Anon_Username
-  var create: js.Function1[
-    /* user */ atlassianDashCrowdDashClientLib.libModelsUserMod.namespaced, 
-    js.Promise[atlassianDashCrowdDashClientLib.libModelsUserMod.namespaced]
-  ]
-  var get: js.Function2[
-    /* username */ java.lang.String, 
-    /* withAttributes */ js.UndefOr[scala.Boolean], 
-    js.Promise[atlassianDashCrowdDashClientLib.libModelsUserMod.namespaced]
-  ]
-  var groups: Anon_Get
-  var remove: js.Function1[/* username */ java.lang.String, js.Promise[scala.Unit]]
-  var rename: js.Function2[
-    /* oldname */ java.lang.String, 
-    /* newname */ java.lang.String, 
-    js.Promise[scala.Unit]
-  ]
-  var update: js.Function2[
-    /* username */ java.lang.String, 
-    /* user */ atlassianDashCrowdDashClientLib.libModelsUserMod.namespaced, 
-    js.Promise[atlassianDashCrowdDashClientLib.libModelsUserMod.namespaced]
-  ]
+  def create(username: java.lang.String, password: java.lang.String): js.Promise[atlassianDashCrowdDashClientLib.libModelsSessionMod.namespaced] = js.native
+  def create(
+    username: java.lang.String,
+    password: java.lang.String,
+    validationFactors: atlassianDashCrowdDashClientLib.libModelsValidationDashFactorsMod.namespaced
+  ): js.Promise[atlassianDashCrowdDashClientLib.libModelsSessionMod.namespaced] = js.native
+  def create(
+    username: java.lang.String,
+    password: java.lang.String,
+    validationFactors: atlassianDashCrowdDashClientLib.libModelsValidationDashFactorsMod.namespaced,
+    duration: scala.Double
+  ): js.Promise[atlassianDashCrowdDashClientLib.libModelsSessionMod.namespaced] = js.native
+  def createUnvalidated(username: java.lang.String): js.Promise[atlassianDashCrowdDashClientLib.libModelsSessionMod.namespaced] = js.native
+  def createUnvalidated(
+    username: java.lang.String,
+    validationFactors: atlassianDashCrowdDashClientLib.libModelsValidationDashFactorsMod.namespaced
+  ): js.Promise[atlassianDashCrowdDashClientLib.libModelsSessionMod.namespaced] = js.native
+  def createUnvalidated(
+    username: java.lang.String,
+    validationFactors: atlassianDashCrowdDashClientLib.libModelsValidationDashFactorsMod.namespaced,
+    duration: scala.Double
+  ): js.Promise[atlassianDashCrowdDashClientLib.libModelsSessionMod.namespaced] = js.native
+  def getUser(token: java.lang.String): js.Promise[atlassianDashCrowdDashClientLib.libModelsUserMod.namespaced] = js.native
+  def remove(token: java.lang.String): js.Promise[scala.Unit] = js.native
+  def removeAll(username: java.lang.String): js.Promise[scala.Unit] = js.native
+  def removeAll(username: java.lang.String, exclude: java.lang.String): js.Promise[scala.Unit] = js.native
+  def validate(token: java.lang.String): js.Promise[atlassianDashCrowdDashClientLib.libModelsSessionMod.namespaced] = js.native
+  def validate(
+    token: java.lang.String,
+    validationFactors: atlassianDashCrowdDashClientLib.libModelsValidationDashFactorsMod.namespaced
+  ): js.Promise[atlassianDashCrowdDashClientLib.libModelsSessionMod.namespaced] = js.native
 }
 

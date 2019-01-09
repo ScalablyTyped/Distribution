@@ -9,6 +9,6 @@ trait DrawerHeaderProps extends js.Object {
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.undefined
   var image: js.UndefOr[js.Array[reactDashNativeLib.reactDashNativeMod.Image]] = js.undefined
-  var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_ContentContainerContainer] = js.undefined
+  var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_ContainerContentContainer] = js.undefined
 }
 

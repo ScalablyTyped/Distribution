@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CircleOutlineGeometry protected ()
   extends cesiumLib.cesiumMod.CesiumNs.CircleOutlineGeometry {
-  def this(options: cesiumLib.Anon_ExtrudedHeightCenter) = this()
+  def this(options: cesiumLib.Anon_CenterEllipsoid) = this()
 }
 
 @JSImport("cesium", "CircleOutlineGeometry")

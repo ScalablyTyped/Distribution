@@ -10,11 +10,11 @@ trait Options extends js.Object {
   var noResponseRetries: js.UndefOr[scala.Double] = js.undefined
   var objectMode: js.UndefOr[scala.Boolean] = js.undefined
   var request: js.UndefOr[
-    requestLib.requestMod.requestNs.RequestAPI[
+    retryDashRequestLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
       requestLib.requestMod.requestNs.Request, 
       requestLib.requestMod.requestNs.CoreOptions, 
       requestLib.requestMod.requestNs.RequiredUriUrl
-    ]
+    ])
   ] = js.undefined
   var retries: js.UndefOr[scala.Double] = js.undefined
   var shouldRetryFn: js.UndefOr[

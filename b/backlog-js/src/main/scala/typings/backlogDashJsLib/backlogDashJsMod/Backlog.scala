@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("backlog-js", "Backlog")
 @js.native
 class Backlog protected () extends Request {
-  def this(configure: backlogDashJsLib.Anon_ApiKey) = this()
+  def this(configure: backlogDashJsLib.Anon_AccessToken) = this()
   def deleteCategories(projectIdOrKey: java.lang.String, id: scala.Double): js.Promise[_] = js.native
   def deleteCustomField(projectIdOrKey: java.lang.String, id: scala.Double): js.Promise[_] = js.native
   def deleteCustomFieldItem(

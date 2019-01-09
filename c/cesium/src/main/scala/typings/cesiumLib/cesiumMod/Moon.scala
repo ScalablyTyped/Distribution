@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Moon ()
   extends cesiumLib.cesiumMod.CesiumNs.Moon {
-  def this(options: cesiumLib.Anon_TextureUrl) = this()
+  def this(options: cesiumLib.Anon_EllipsoidOnlySunLighting) = this()
   /* CompleteClass */
   override var ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = js.native
   /* CompleteClass */

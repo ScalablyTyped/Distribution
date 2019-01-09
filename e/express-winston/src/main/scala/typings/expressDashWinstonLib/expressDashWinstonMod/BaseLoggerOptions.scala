@@ -23,6 +23,6 @@ trait BaseLoggerOptions extends js.Object {
   var responseFilter: js.UndefOr[ResponseFilter] = js.undefined
   var responseWhitelist: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var skip: js.UndefOr[RouteFilter] = js.undefined
-  var statusLevels: js.UndefOr[expressDashWinstonLib.Anon_Warn] = js.undefined
+  var statusLevels: js.UndefOr[expressDashWinstonLib.Anon_Error] = js.undefined
 }
 

@@ -86,7 +86,7 @@ trait TreeProps extends js.Object {
   var onLoaded: js.UndefOr[
     js.Function2[
       /* loadedKeys */ js.Array[java.lang.String], 
-      /* info */ antdLib.Anon_Node, 
+      /* info */ antdLib.Anon_Event, 
       scala.Unit
     ]
   ] = js.undefined

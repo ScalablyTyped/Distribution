@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class ClientCluster protected ()
   extends nodeLib.eventsMod.EventEmitter {
   def this(clients: js.Array[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify SCBrokerClient */ _
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCBrokerClient */ _
     ]) = this()
   def getMapper(): scDashBrokerDashClusterLib.scDashBrokerDashClusterMod.mapperFunction = js.native
   def setMapper(mapper: scDashBrokerDashClusterLib.scDashBrokerDashClusterMod.mapperFunction): scala.Unit = js.native

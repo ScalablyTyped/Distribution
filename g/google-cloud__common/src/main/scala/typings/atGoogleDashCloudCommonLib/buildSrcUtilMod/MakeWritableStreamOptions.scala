@@ -24,14 +24,14 @@ trait MakeWritableStreamOptions extends js.Object {
     * Dependency for HTTP calls.
     */
   @JSName("requestModule")
-  var requestModule_Original: requestLib.requestMod.requestNs.RequestAPI[
+  var requestModule_Original: atGoogleDashCloudCommonLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
     requestLib.requestMod.requestNs.Request, 
     requestLib.requestMod.requestNs.CoreOptions, 
     requestLib.requestMod.requestNs.RequiredUriUrl
-  ] = js.native
+  ]) = js.native
   def makeAuthenticatedRequest(
     reqOpts: requestLib.requestMod.requestNs.OptionsWithUri,
-    fnobj: atGoogleDashCloudCommonLib.Anon_OnAuthenticated
+    fnobj: atGoogleDashCloudCommonLib.Anon_AuthenticatedReqOpts
   ): scala.Unit = js.native
   /**
     * Dependency for HTTP calls.

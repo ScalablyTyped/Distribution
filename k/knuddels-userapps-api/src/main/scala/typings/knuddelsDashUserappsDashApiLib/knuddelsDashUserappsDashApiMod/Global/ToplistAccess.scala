@@ -18,7 +18,7 @@ class ToplistAccess () extends js.Object {
   def createOrUpdateToplist(
     userPersistenceNumberKey: java.lang.String,
     displayName: java.lang.String,
-    parameters: knuddelsDashUserappsDashApiLib.Anon_SortIndex
+    parameters: knuddelsDashUserappsDashApiLib.Anon_Ascending
   ): Toplist = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/ToplistAccess.html#method_getAllToplists

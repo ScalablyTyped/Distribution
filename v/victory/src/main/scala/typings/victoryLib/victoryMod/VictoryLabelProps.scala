@@ -70,7 +70,7 @@ trait VictoryLabelProps extends js.Object {
     * The transform prop applies a transform to the rendered `<text>` element.
     * In addition to being a string, it can be an object containing transform definitions for easier authoring.
     */
-  var transform: js.UndefOr[java.lang.String | js.Object | victoryLib.Anon_String_2068905970] = js.undefined
+  var transform: js.UndefOr[java.lang.String | js.Object | victoryLib.Anon_String] = js.undefined
   /**
     * The verticalAnchor prop defines how the text is vertically positioned relative to the given `x` and `y` coordinates.
     */

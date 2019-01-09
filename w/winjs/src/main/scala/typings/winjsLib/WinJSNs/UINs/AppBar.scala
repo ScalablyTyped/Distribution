@@ -131,11 +131,11 @@ object AppBar extends js.Object {
   /**
     * Display options for the AppBar when closed.
     **/
-  var ClosedDisplayMode: winjsLib.Anon_NoneMinimal = js.native
+  var ClosedDisplayMode: winjsLib.Anon_Compact = js.native
   /**
     * Display options for AppBar placement in relation to the main view.
     */
-  var Placement: winjsLib.Anon_BottomTop = js.native
+  var Placement: winjsLib.Anon_Bottom = js.native
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/

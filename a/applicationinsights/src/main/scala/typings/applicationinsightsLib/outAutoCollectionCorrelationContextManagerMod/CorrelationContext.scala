@@ -10,6 +10,6 @@ trait CorrelationContext extends js.Object {
     *  Properties here are exposed via outgoing HTTP headers for correlating data cross-component.
     */
   var customProperties: CustomProperties
-  var operation: applicationinsightsLib.Anon_Name
+  var operation: applicationinsightsLib.Anon_Id
 }
 

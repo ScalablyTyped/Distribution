@@ -20,6 +20,6 @@ class SearchBar protected () extends js.Object {
 @JSImport("react-weui", "SearchBar")
 @js.native
 object SearchBar extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_OnClear = js.native
+  var defaultProps: reactDashWeuiLib.Anon_Autocomplete = js.native
 }
 

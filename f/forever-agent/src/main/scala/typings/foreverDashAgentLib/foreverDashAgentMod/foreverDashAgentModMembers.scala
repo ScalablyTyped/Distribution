@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("forever-agent", JSImport.Namespace)
 @js.native
 object foreverDashAgentModMembers
-  extends org.scalablytyped.runtime.TopLevel[foreverDashAgentLib.Anon_SSL]
+  extends org.scalablytyped.runtime.TopLevel[foreverDashAgentLib.Anon_Options]
 

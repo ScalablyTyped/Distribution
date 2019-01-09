@@ -12,8 +12,8 @@ object sdpDashTransformModMembers extends js.Object {
   def parseImageAttributes(params: java.lang.String): js.Array[ParamMap] = js.native
   def parseParams(params: java.lang.String): ParamMap = js.native
   def parsePayloads(payloads: java.lang.String): js.Array[scala.Double] = js.native
-  def parseRemoteCandidates(candidates: java.lang.String): js.Array[sdpDashTransformLib.Anon_IpComponent] = js.native
-  def parseSimulcastStreamList(streams: java.lang.String): js.Array[sdpDashTransformLib.Anon_Scid] = js.native
+  def parseRemoteCandidates(candidates: java.lang.String): js.Array[sdpDashTransformLib.Anon_Component] = js.native
+  def parseSimulcastStreamList(streams: java.lang.String): js.Array[sdpDashTransformLib.Anon_Paused] = js.native
   def write(description: SessionDescription): java.lang.String = js.native
 }
 

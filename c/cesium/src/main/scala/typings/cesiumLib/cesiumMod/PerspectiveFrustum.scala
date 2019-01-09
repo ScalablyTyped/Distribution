@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PerspectiveFrustum ()
   extends cesiumLib.cesiumMod.CesiumNs.PerspectiveFrustum {
-  def this(options: cesiumLib.Anon_XOffset) = this()
+  def this(options: cesiumLib.Anon_AspectRatioFar) = this()
   /* CompleteClass */
   override var far: scala.Double = js.native
   /* CompleteClass */

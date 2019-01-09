@@ -14,6 +14,6 @@ trait ProjectInfo extends js.Object {
   var projectReferences: js.Array[typescriptLib.typescriptMod.tsNs.ProjectReference]
   var reporter: gulpDashTypescriptLib.releaseReporterMod.Reporter
   var singleOutput: scala.Boolean
-  var typescript: gulpDashTypescriptLib.Anon_CreateFunctionExpression
+  var typescript: gulpDashTypescriptLib.Anon_08
 }
 

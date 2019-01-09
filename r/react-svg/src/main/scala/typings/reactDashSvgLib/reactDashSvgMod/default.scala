@@ -12,7 +12,7 @@ class default () extends ReactSVG
 @JSImport("react-svg", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: reactDashSvgLib.Anon_FallbackLoading = js.native
-  var propTypes: reactDashSvgLib.Anon_Fallback = js.native
+  var defaultProps: reactDashSvgLib.Anon_EvalScripts = js.native
+  var propTypes: reactDashSvgLib.Anon_Args = js.native
 }
 

@@ -18,7 +18,7 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
     */
   var attributes: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[java.lang.String] | (js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorState<S> */ /* p */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ /* p */ js.Any, 
       js.UndefOr[
         org.scalablytyped.runtime.StringDictionary[java.lang.String] | scala.Null | scala.Unit
       ]
@@ -79,7 +79,7 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
     */
   var decorations: js.UndefOr[
     (js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorState<S> */ /* state */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any, 
       js.UndefOr[DecorationSet[S] | scala.Null]
     ]) | scala.Null
   ] = js.undefined
@@ -96,7 +96,7 @@ trait EditorProps[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
     */
   var editable: js.UndefOr[
     (js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EditorState<S> */ /* state */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any, 
       scala.Boolean
     ]) | scala.Null
   ] = js.undefined

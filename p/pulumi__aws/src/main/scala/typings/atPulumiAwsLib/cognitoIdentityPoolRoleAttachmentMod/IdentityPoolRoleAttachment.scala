@@ -25,7 +25,7 @@ class IdentityPoolRoleAttachment protected ()
   /**
     * A List of Role Mapping.
     */
-  val roleMappings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_IdentityProvider]]] = js.native
+  val roleMappings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AmbiguousRoleResolution]]] = js.native
   /**
     * The map of roles associated with this pool. For a given role, the key will be either "authenticated" or "unauthenticated" and the value will be the Role ARN.
     */

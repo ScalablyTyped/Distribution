@@ -18,8 +18,8 @@ object captureDashConsoleModMembers extends js.Object {
   def capture(streams: nodeLib.NodeJSNs.WritableStream, opts: CaptureOptions, exec: js.Function0[scala.Unit]): js.Array[java.lang.String] = js.native
   def captureStderr(exec: js.Function0[scala.Unit]): java.lang.String = js.native
   def captureStderr(opts: CaptureOptions, exec: js.Function0[scala.Unit]): java.lang.String = js.native
-  def captureStdio(exec: js.Function0[scala.Unit]): captureDashConsoleLib.Anon_Stdout = js.native
-  def captureStdio(opts: CaptureOptions, exec: js.Function0[scala.Unit]): captureDashConsoleLib.Anon_Stdout = js.native
+  def captureStdio(exec: js.Function0[scala.Unit]): captureDashConsoleLib.Anon_Stderr = js.native
+  def captureStdio(opts: CaptureOptions, exec: js.Function0[scala.Unit]): captureDashConsoleLib.Anon_Stderr = js.native
   def captureStdout(exec: js.Function0[scala.Unit]): java.lang.String = js.native
   def captureStdout(opts: CaptureOptions, exec: js.Function0[scala.Unit]): java.lang.String = js.native
   def hook(
@@ -45,8 +45,8 @@ object captureDashConsoleModMembers extends js.Object {
   def intercept(stream: nodeLib.NodeJSNs.WritableStream, opts: CaptureOptions, exec: js.Function0[scala.Unit]): js.Array[java.lang.String] = js.native
   def interceptStderr(exec: js.Function0[scala.Unit]): java.lang.String = js.native
   def interceptStderr(opts: CaptureOptions, exec: js.Function0[scala.Unit]): java.lang.String = js.native
-  def interceptStdio(exec: js.Function0[scala.Unit]): captureDashConsoleLib.Anon_Stdout = js.native
-  def interceptStdio(opts: CaptureOptions, exec: js.Function0[scala.Unit]): captureDashConsoleLib.Anon_Stdout = js.native
+  def interceptStdio(exec: js.Function0[scala.Unit]): captureDashConsoleLib.Anon_Stderr = js.native
+  def interceptStdio(opts: CaptureOptions, exec: js.Function0[scala.Unit]): captureDashConsoleLib.Anon_Stderr = js.native
   def interceptStdout(exec: js.Function0[scala.Unit]): java.lang.String = js.native
   def interceptStdout(opts: CaptureOptions, exec: js.Function0[scala.Unit]): java.lang.String = js.native
   def startCapture(

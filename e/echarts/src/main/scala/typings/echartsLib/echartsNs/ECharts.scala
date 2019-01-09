@@ -83,14 +83,14 @@ trait ECharts extends js.Object {
     *
     * @param opts Options.
     */
-  def getConnectedDataURL(opts: echartsLib.Anon_Type): java.lang.String = js.native
+  def getConnectedDataURL(opts: echartsLib.Anon_BackgroundColorExcludeComponents): java.lang.String = js.native
   /**
     * Exports chart image; returns a base64 URL; can be set to `src` of
     *      `Image`.
     *
     * @param opts Options.
     */
-  def getDataURL(opts: echartsLib.Anon_TypePixelRatio): java.lang.String = js.native
+  def getDataURL(opts: echartsLib.Anon_BackgroundColor): java.lang.String = js.native
   /**
     * Gets DOM element of ECharts instance container.
     *

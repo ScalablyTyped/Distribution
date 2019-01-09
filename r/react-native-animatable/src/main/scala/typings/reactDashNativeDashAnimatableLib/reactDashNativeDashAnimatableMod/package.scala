@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashAnimatableMod {
   type Image = AnimatableComponent[
-    reactDashNativeLib.reactDashNativeMod.ImageProperties, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageProperties */ js.Any, 
     reactDashNativeLib.reactDashNativeMod.ImageStyle
   ]
   type Text = AnimatableComponent[
-    reactDashNativeLib.reactDashNativeMod.TextProperties, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any, 
     reactDashNativeLib.reactDashNativeMod.TextStyle
   ]
   type View = AnimatableComponent[
-    reactDashNativeLib.reactDashNativeMod.ViewProperties, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ViewProperties */ js.Any, 
     reactDashNativeLib.reactDashNativeMod.ViewStyle
   ]
 }

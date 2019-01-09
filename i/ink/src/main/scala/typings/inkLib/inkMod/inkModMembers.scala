@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object inkModMembers extends js.Object {
   val Bold: InkComponent[js.Object] = js.native
-  val Color: ComponentClass[inkLib.Anon_BgYellowBright, js.Object, js.Object] = js.native
+  val Color: ComponentClass[inkLib.Anon_BgBlack, js.Object, js.Object] = js.native
   val Fragment: InkComponent[js.Object] = js.native
   val Underline: InkComponent[js.Object] = js.native
   def h[P /* <: stdLib.Record[java.lang.String, _] */](`type`: ComponentClass[P, _, _], props: P, children: InkNode*): InkElement = js.native

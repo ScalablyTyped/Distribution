@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 // Global object
 ////////////////////
 trait Window extends js.Object {
-  var chrome: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof chrome.chrome */ js.Any
+  var chrome: Anon_AccessibilityFeatures
 }
 

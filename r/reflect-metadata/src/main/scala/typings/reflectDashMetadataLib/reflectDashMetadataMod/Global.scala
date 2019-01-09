@@ -505,7 +505,7 @@ object Global extends js.Object {
       *     }
       *
       */
-    def metadata(metadataKey: js.Any, metadataValue: js.Any): reflectDashMetadataLib.Anon_Target = js.native
+    def metadata(metadataKey: js.Any, metadataValue: js.Any): reflectDashMetadataLib.Anon_PropertyKey = js.native
   }
   
 }

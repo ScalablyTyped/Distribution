@@ -11,6 +11,6 @@ trait ComposeRequest extends js.Object {
   /** The kind of item this is. */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /** The list of source objects that will be concatenated into a single object. */
-  var sourceObjects: js.UndefOr[js.Array[gapiDotClientDotStorageLib.Anon_ObjectPreconditions]] = js.undefined
+  var sourceObjects: js.UndefOr[js.Array[gapiDotClientDotStorageLib.Anon_Generation]] = js.undefined
 }
 

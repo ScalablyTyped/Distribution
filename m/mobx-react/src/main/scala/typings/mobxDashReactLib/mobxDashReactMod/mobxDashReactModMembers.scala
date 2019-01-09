@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("mobx-react", JSImport.Namespace)
 @js.native
 object mobxDashReactModMembers extends js.Object {
-  val PropTypes: mobxDashReactLib.Anon_ObservableArrayOf = js.native
+  val PropTypes: mobxDashReactLib.Anon_ArrayOrObservableArray = js.native
   val componentByNodeRegistery: js.Any = js.native
   val componentByNodeRegistry: js.Any = js.native
-  val propTypes: mobxDashReactLib.Anon_ObservableArrayOf = js.native
+  val propTypes: mobxDashReactLib.Anon_ArrayOrObservableArray = js.native
   val renderReporter: RenderReporter = js.native
   def disposeOnUnmount(target: reactLib.reactMod.Component[_, _, _], propertyKey: java.lang.String): scala.Unit = js.native
   def disposeOnUnmount[TF /* <: mobxDashReactLib.Disposer | js.Array[mobxDashReactLib.Disposer] */](target: reactLib.reactMod.Component[_, _, _], fn: TF): TF = js.native

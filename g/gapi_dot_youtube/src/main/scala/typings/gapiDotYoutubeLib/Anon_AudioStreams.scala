@@ -9,7 +9,7 @@ trait Anon_AudioStreams extends js.Object {
   /**
     * A list of audio streams contained in the uploaded video file. Each item in the list contains detailed metadata about an audio stream.
     */
-  var audioStreams: js.Array[Anon_ChannelCount]
+  var audioStreams: js.Array[Anon_BitrateBps]
   /**
     * The uploaded video files combined (video and audio) bitrate in bits per second.
     */

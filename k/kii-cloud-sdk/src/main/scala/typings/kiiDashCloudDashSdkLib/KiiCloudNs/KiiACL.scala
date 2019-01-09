@@ -60,7 +60,7 @@ class KiiACL () extends js.Object {
     *     });
     */
   def listACLEntries(): js.Promise[js.Tuple2[KiiACL, js.Array[KiiACLEntry]]] = js.native
-  def listACLEntries(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheACLAnErrorString): js.Promise[js.Tuple2[KiiACL, js.Array[KiiACLEntry]]] = js.native
+  def listACLEntries(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailure): js.Promise[js.Tuple2[KiiACL, js.Array[KiiACLEntry]]] = js.native
   /**
     * Add a KiiACLEntry to the local object, if not already present. This does not explicitly grant any permissions, which should be done through the KiiACLEntry itself. This method simply adds
     * the entry to the local ACL object so it can be saved to the server.
@@ -131,6 +131,6 @@ class KiiACL () extends js.Object {
     *     });
     */
   def save(): js.Promise[KiiACL] = js.native
-  def save(callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheACL): js.Promise[KiiACL] = js.native
+  def save(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureSuccess): js.Promise[KiiACL] = js.native
 }
 

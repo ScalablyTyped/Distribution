@@ -121,8 +121,8 @@ trait HostedFields extends js.Object {
     *   }
     * }, callback);
     */
-  def create(options: braintreeDashWebLib.Anon_Client): js.Promise[HostedFields] = js.native
-  def create(options: braintreeDashWebLib.Anon_Client, callback: callback): scala.Unit = js.native
+  def create(options: braintreeDashWebLib.Anon_ClientFields): js.Promise[HostedFields] = js.native
+  def create(options: braintreeDashWebLib.Anon_ClientFields, callback: callback): scala.Unit = js.native
   /**
     * Returns an {@link HostedFields~stateObject|object} that includes the state of all fields and possible card types.
     * @public
@@ -261,7 +261,7 @@ trait HostedFields extends js.Object {
     */
   def tokenize(): js.Promise[HostedFieldsTokenizePayload] = js.native
   def tokenize(callback: callback): scala.Unit = js.native
-  def tokenize(options: braintreeDashWebLib.Anon_CardholderName): js.Promise[HostedFieldsTokenizePayload] = js.native
-  def tokenize(options: braintreeDashWebLib.Anon_CardholderName, callback: callback): scala.Unit = js.native
+  def tokenize(options: braintreeDashWebLib.Anon_BillingAddress): js.Promise[HostedFieldsTokenizePayload] = js.native
+  def tokenize(options: braintreeDashWebLib.Anon_BillingAddress, callback: callback): scala.Unit = js.native
 }
 

@@ -15,9 +15,9 @@ class default protected () extends Sider {
 @js.native
 object default extends js.Object {
   var __ANT_LAYOUT_SIDER: js.Any = js.native
-  var childContextTypes: antdLib.Anon_SiderCollapsed = js.native
+  var childContextTypes: antdLib.Anon_CollapsedWidth = js.native
   var contextTypes: antdLib.Anon_SiderHook = js.native
-  var defaultProps: antdLib.Anon_StyleCollapsible = js.native
+  var defaultProps: antdLib.Anon_CollapsedWidthCollapsible = js.native
   def getDerivedStateFromProps(nextProps: antdLib.libLayoutSiderMod.SiderProps): antdLib.Anon_Collapsed | scala.Null = js.native
 }
 

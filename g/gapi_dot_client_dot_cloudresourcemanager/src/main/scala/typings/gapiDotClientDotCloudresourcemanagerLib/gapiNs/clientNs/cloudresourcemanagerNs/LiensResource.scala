@@ -15,7 +15,7 @@ trait LiensResource extends js.Object {
     *
     * NOTE: Some resources may limit the number of Liens which may be applied.
     */
-  def create(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Lien]
+  def create(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[Lien]
   /**
     * Delete a Lien by `name`.
     *
@@ -23,7 +23,7 @@ trait LiensResource extends js.Object {
     * For example, a Lien with a `parent` of `projects/1234` requires permission
     * `resourcemanager.projects.updateLiens`.
     */
-  def delete(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * List all Liens applied to the `parent` resource.
     *
@@ -31,6 +31,6 @@ trait LiensResource extends js.Object {
     * For example, a Lien with a `parent` of `projects/1234` requires permission
     * `resourcemanager.projects.get`.
     */
-  def list(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[ListLiensResponse]
+  def list(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[ListLiensResponse]
 }
 

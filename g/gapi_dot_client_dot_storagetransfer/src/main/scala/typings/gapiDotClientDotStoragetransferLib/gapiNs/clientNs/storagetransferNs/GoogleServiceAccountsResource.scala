@@ -16,6 +16,6 @@ trait GoogleServiceAccountsResource extends js.Object {
     * account is created and owned by Storage Transfer Service and can
     * only be used by Storage Transfer Service.
     */
-  def get(request: gapiDotClientDotStoragetransferLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleServiceAccount]
+  def get(request: gapiDotClientDotStoragetransferLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleServiceAccount]
 }
 

@@ -16,6 +16,6 @@ trait Root extends Container {
     * @returns A Result instance representing the root's CSS.
     */
   def toResult(): Result = js.native
-  def toResult(options: postcssLib.Anon_To): Result = js.native
+  def toResult(options: postcssLib.Anon_Map): Result = js.native
 }
 

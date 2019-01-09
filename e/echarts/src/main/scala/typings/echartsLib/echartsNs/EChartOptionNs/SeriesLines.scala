@@ -168,14 +168,16 @@ trait SeriesLines extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.effect
     */
-  var effect: js.UndefOr[echartsLib.Anon_Delay] = js.undefined
+  var effect: js.UndefOr[echartsLib.Anon_ColorConstantSpeed] = js.undefined
   /**
     * Emphasis style.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_LineStyleLabelAnonShadowOffsetXShadowBlurColorShadowColor] = js.undefined
+  var emphasis: js.UndefOr[
+    echartsLib.Anon_LabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter
+  ] = js.undefined
   /**
     * Index of
     * [geographic coordinate](https://ecomfe.github.io/echarts-doc/public/en/option.html#geo)
@@ -204,7 +206,7 @@ trait SeriesLines extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.label
     */
   var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlignShadowBlurHeightBorderWidth
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily
   ] = js.undefined
   /**
     * Whether to enable the optimization of large-scale lines graph.
@@ -236,7 +238,7 @@ trait SeriesLines extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.lineStyle
     */
-  var lineStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColorOpacityShadowOffsetYType] = js.undefined
+  var lineStyle: js.UndefOr[echartsLib.Anon_ColorCurvenessOpacityShadowBlur] = js.undefined
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -244,21 +246,25 @@ trait SeriesLines extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.markArea
     */
-  var markArea: js.UndefOr[echartsLib.Anon_SilentDataLabel] = js.undefined
+  var markArea: js.UndefOr[
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing
+  ] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.markLine
     */
-  var markLine: js.UndefOr[echartsLib.Anon_PrecisionSilent] = js.undefined
+  var markLine: js.UndefOr[
+    echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate
+  ] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_SilentDataLabelAnimationEasingUpdate] = js.undefined
+  var markPoint: js.UndefOr[echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)

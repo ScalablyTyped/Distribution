@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ trait StorageOptions extends js.Object {
   var autoRetry: js.UndefOr[scala.Boolean] = js.undefined
   var maxRetries: js.UndefOr[scala.Double] = js.undefined

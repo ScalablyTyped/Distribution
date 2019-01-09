@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait RandomConstructor
   extends org.scalablytyped.runtime.Instantiable0[Random]
      with org.scalablytyped.runtime.Instantiable1[/* engine */ randomDashJsLib.randomDashJsMod.RandomNs.Engine, Random] {
-  var engines: randomDashJsLib.Anon_NativeMath = js.native
+  var engines: randomDashJsLib.Anon_BrowserCrypto = js.native
   def apply(): Random = js.native
   def apply(engine: randomDashJsLib.randomDashJsMod.RandomNs.Engine): Random = js.native
   def Engine(): scala.Double = js.native

@@ -96,7 +96,7 @@ object hexoDashFsModMembers extends js.Object {
     */
   def createWriteStream(path: nodeLib.fsMod.PathLike): nodeLib.fsMod.WriteStream = js.native
   def createWriteStream(path: nodeLib.fsMod.PathLike, options: java.lang.String): nodeLib.fsMod.WriteStream = js.native
-  def createWriteStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoCloseFlags): nodeLib.fsMod.WriteStream = js.native
+  def createWriteStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoCloseEncoding): nodeLib.fsMod.WriteStream = js.native
   def emptyDir(path: java.lang.String): bluebirdLib.bluebirdMod.namespaced[java.lang.String | js.Array[java.lang.String]] = js.native
   def emptyDir(
     path: java.lang.String,
@@ -138,10 +138,10 @@ object hexoDashFsModMembers extends js.Object {
       scala.Unit
     ]
   ): bluebirdLib.bluebirdMod.namespaced[gracefulDashFsLib.gracefulDashFsMod.WriteStream] = js.native
-  def ensureWriteStream(path: java.lang.String, options: hexoDashFsLib.Anon_DefaultEncoding): bluebirdLib.bluebirdMod.namespaced[gracefulDashFsLib.gracefulDashFsMod.WriteStream] = js.native
+  def ensureWriteStream(path: java.lang.String, options: hexoDashFsLib.Anon_AutoClose): bluebirdLib.bluebirdMod.namespaced[gracefulDashFsLib.gracefulDashFsMod.WriteStream] = js.native
   def ensureWriteStream(
     path: java.lang.String,
-    options: hexoDashFsLib.Anon_DefaultEncoding,
+    options: hexoDashFsLib.Anon_AutoClose,
     callback: js.Function2[
       /* err */ js.Any, 
       /* value */ js.UndefOr[gracefulDashFsLib.gracefulDashFsMod.WriteStream], 
@@ -159,7 +159,7 @@ object hexoDashFsModMembers extends js.Object {
     ]
   ): bluebirdLib.bluebirdMod.namespaced[gracefulDashFsLib.gracefulDashFsMod.WriteStream] = js.native
   def ensureWriteStreamSync(path: java.lang.String): gracefulDashFsLib.gracefulDashFsMod.WriteStream = js.native
-  def ensureWriteStreamSync(path: java.lang.String, options: hexoDashFsLib.Anon_DefaultEncoding): gracefulDashFsLib.gracefulDashFsMod.WriteStream = js.native
+  def ensureWriteStreamSync(path: java.lang.String, options: hexoDashFsLib.Anon_AutoClose): gracefulDashFsLib.gracefulDashFsMod.WriteStream = js.native
   def ensureWriteStreamSync(path: java.lang.String, options: java.lang.String): gracefulDashFsLib.gracefulDashFsMod.WriteStream = js.native
   def escapeBOM(str: java.lang.String): java.lang.String = js.native
   def escapeEOL(str: java.lang.String): java.lang.String = js.native
@@ -314,10 +314,10 @@ object hexoDashFsModMembers extends js.Object {
     path: nodeLib.fsMod.PathLike,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[java.lang.String], scala.Unit]
   ): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
-  def readFile(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_Escape): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
+  def readFile(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_EncodingEscape): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   def readFile(
     path: nodeLib.fsMod.PathLike,
-    options: hexoDashFsLib.Anon_Escape,
+    options: hexoDashFsLib.Anon_EncodingEscape,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[java.lang.String], scala.Unit]
   ): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   def readFile(path: scala.Double): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
@@ -325,16 +325,16 @@ object hexoDashFsModMembers extends js.Object {
     path: scala.Double,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[java.lang.String], scala.Unit]
   ): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
-  def readFile(path: scala.Double, options: hexoDashFsLib.Anon_Escape): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
+  def readFile(path: scala.Double, options: hexoDashFsLib.Anon_EncodingEscape): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   def readFile(
     path: scala.Double,
-    options: hexoDashFsLib.Anon_Escape,
+    options: hexoDashFsLib.Anon_EncodingEscape,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[java.lang.String], scala.Unit]
   ): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   def readFileSync(path: nodeLib.fsMod.PathLike): java.lang.String = js.native
-  def readFileSync(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_Escape): java.lang.String = js.native
+  def readFileSync(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_EncodingEscape): java.lang.String = js.native
   def readFileSync(path: scala.Double): java.lang.String = js.native
-  def readFileSync(path: scala.Double, options: hexoDashFsLib.Anon_Escape): java.lang.String = js.native
+  def readFileSync(path: scala.Double, options: hexoDashFsLib.Anon_EncodingEscape): java.lang.String = js.native
   def readSync(fd: scala.Double, buffer: nodeLib.fsMod.BinaryData, offset: scala.Double, length: scala.Double): scala.Double = js.native
   /**
     * Synchronously reads data from the file referenced by the supplied file descriptor, returning the number of bytes read.
@@ -352,9 +352,9 @@ object hexoDashFsModMembers extends js.Object {
     position: scala.Double
   ): scala.Double = js.native
   def readdir(path: nodeLib.fsMod.PathLike): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
-  def readdir(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_EncodingBuffer): bluebirdLib.bluebirdMod.namespaced[js.Array[nodeLib.Buffer]] = js.native
-  def readdir(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_EncodingBufferEncoding): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
-  def readdir(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_EncodingString): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String | nodeLib.Buffer]] = js.native
+  def readdir(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_BufferEncoding): bluebirdLib.bluebirdMod.namespaced[js.Array[nodeLib.Buffer]] = js.native
+  def readdir(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_Encoding): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
+  def readdir(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_EncodingNull): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String | nodeLib.Buffer]] = js.native
   def readdir(path: nodeLib.fsMod.PathLike, options: java.lang.String): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String | nodeLib.Buffer]] = js.native
   def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): bluebirdLib.bluebirdMod.namespaced[js.Array[java.lang.String]] = js.native
   /**
@@ -364,20 +364,20 @@ object hexoDashFsModMembers extends js.Object {
     */
   def readdirSync(path: nodeLib.fsMod.PathLike): js.Array[java.lang.String] = js.native
   def readdirSync(path: nodeLib.fsMod.PathLike, options: java.lang.String): js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = js.native
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypes): js.Array[java.lang.String] = js.native
   /**
     * Synchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesFalse): js.Array[nodeLib.Buffer] = js.native
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesFalseEncoding): js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = js.native
+  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncodingFalse): js.Array[nodeLib.Buffer] = js.native
+  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalse): js.Array[java.lang.String] = js.native
+  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFalseWithFileTypes): js.Array[java.lang.String] | js.Array[nodeLib.Buffer] = js.native
   /**
     * Asynchronous readdir(3) - read a directory.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options If called with `withFileTypes: true` the result data will be an array of Dirent.
     */
-  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_WithFileTypesTrue): js.Array[nodeLib.fsMod.Dirent] = js.native
+  def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_True): js.Array[nodeLib.fsMod.Dirent] = js.native
   def readdirSync(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Array[java.lang.String] = js.native
   /**
     * Synchronous readdir(3) - read a directory.
@@ -391,9 +391,9 @@ object hexoDashFsModMembers extends js.Object {
   @JSName("readdir")
   def readdir_buffer(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.hexoDashFsLibStrings.buffer): bluebirdLib.bluebirdMod.namespaced[js.Array[nodeLib.Buffer]] = js.native
   def readlink(path: nodeLib.fsMod.PathLike): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
-  def readlink(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_Encoding): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
-  def readlink(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_EncodingBuffer): bluebirdLib.bluebirdMod.namespaced[nodeLib.Buffer] = js.native
-  def readlink(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_EncodingString): bluebirdLib.bluebirdMod.namespaced[java.lang.String | nodeLib.Buffer] = js.native
+  def readlink(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_BufferEncoding): bluebirdLib.bluebirdMod.namespaced[nodeLib.Buffer] = js.native
+  def readlink(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_EncodingBufferEncoding): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
+  def readlink(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_EncodingNull): bluebirdLib.bluebirdMod.namespaced[java.lang.String | nodeLib.Buffer] = js.native
   def readlink(path: nodeLib.fsMod.PathLike, options: java.lang.String): bluebirdLib.bluebirdMod.namespaced[java.lang.String | nodeLib.Buffer] = js.native
   def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   /**
@@ -403,14 +403,14 @@ object hexoDashFsModMembers extends js.Object {
     */
   def readlinkSync(path: nodeLib.fsMod.PathLike): java.lang.String | nodeLib.Buffer = js.native
   def readlinkSync(path: nodeLib.fsMod.PathLike, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
-  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): java.lang.String = js.native
   /**
     * Synchronous readlink(2) - read value of a symbolic link.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): nodeLib.Buffer = js.native
-  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): java.lang.String | nodeLib.Buffer = js.native
+  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): nodeLib.Buffer = js.native
+  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): java.lang.String = js.native
+  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): java.lang.String | nodeLib.Buffer = js.native
   def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): java.lang.String = js.native
   /**
     * Synchronous readlink(2) - read value of a symbolic link.
@@ -424,9 +424,9 @@ object hexoDashFsModMembers extends js.Object {
   @JSName("readlink")
   def readlink_buffer(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.hexoDashFsLibStrings.buffer): bluebirdLib.bluebirdMod.namespaced[nodeLib.Buffer] = js.native
   def realpath(path: nodeLib.fsMod.PathLike): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
-  def realpath(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_Encoding): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
-  def realpath(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_EncodingBuffer): bluebirdLib.bluebirdMod.namespaced[nodeLib.Buffer] = js.native
-  def realpath(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_EncodingString): bluebirdLib.bluebirdMod.namespaced[java.lang.String | nodeLib.Buffer] = js.native
+  def realpath(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_BufferEncoding): bluebirdLib.bluebirdMod.namespaced[nodeLib.Buffer] = js.native
+  def realpath(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_EncodingBufferEncoding): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
+  def realpath(path: nodeLib.fsMod.PathLike, options: hexoDashFsLib.Anon_EncodingNull): bluebirdLib.bluebirdMod.namespaced[java.lang.String | nodeLib.Buffer] = js.native
   def realpath(path: nodeLib.fsMod.PathLike, options: java.lang.String): bluebirdLib.bluebirdMod.namespaced[java.lang.String | nodeLib.Buffer] = js.native
   def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): bluebirdLib.bluebirdMod.namespaced[java.lang.String] = js.native
   /**
@@ -436,14 +436,14 @@ object hexoDashFsModMembers extends js.Object {
     */
   def realpathSync(path: nodeLib.fsMod.PathLike): java.lang.String | nodeLib.Buffer = js.native
   def realpathSync(path: nodeLib.fsMod.PathLike, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
-  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): java.lang.String = js.native
   /**
     * Synchronous realpath(3) - return the canonicalized absolute pathname.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBuffer_1560675869): nodeLib.Buffer = js.native
-  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingStringNull): java.lang.String | nodeLib.Buffer = js.native
+  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): nodeLib.Buffer = js.native
+  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): java.lang.String = js.native
+  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): java.lang.String | nodeLib.Buffer = js.native
   def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): java.lang.String = js.native
   /**
     * Synchronous realpath(3) - return the canonicalized absolute pathname.
@@ -575,13 +575,13 @@ object hexoDashFsModMembers extends js.Object {
     */
   def watchFile(
     filename: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_Persistent,
+    options: nodeLib.Anon_Interval,
     listener: js.Function2[/* curr */ nodeLib.fsMod.Stats, /* prev */ nodeLib.fsMod.Stats, scala.Unit]
   ): scala.Unit = js.native
-  def write(fd: scala.Double, string: js.Any): bluebirdLib.bluebirdMod.namespaced[hexoDashFsLib.Anon_BufferBytesWrittenString] = js.native
-  def write(fd: scala.Double, string: js.Any, position: scala.Double): bluebirdLib.bluebirdMod.namespaced[hexoDashFsLib.Anon_BufferBytesWrittenString] = js.native
-  def write(fd: scala.Double, string: js.Any, position: scala.Double, encoding: java.lang.String): bluebirdLib.bluebirdMod.namespaced[hexoDashFsLib.Anon_BufferBytesWrittenString] = js.native
-  def write(fd: scala.Double, string: js.Any, position: scala.Null, encoding: java.lang.String): bluebirdLib.bluebirdMod.namespaced[hexoDashFsLib.Anon_BufferBytesWrittenString] = js.native
+  def write(fd: scala.Double, string: js.Any): bluebirdLib.bluebirdMod.namespaced[hexoDashFsLib.Anon_BufferBytesWrittenNumber] = js.native
+  def write(fd: scala.Double, string: js.Any, position: scala.Double): bluebirdLib.bluebirdMod.namespaced[hexoDashFsLib.Anon_BufferBytesWrittenNumber] = js.native
+  def write(fd: scala.Double, string: js.Any, position: scala.Double, encoding: java.lang.String): bluebirdLib.bluebirdMod.namespaced[hexoDashFsLib.Anon_BufferBytesWrittenNumber] = js.native
+  def write(fd: scala.Double, string: js.Any, position: scala.Null, encoding: java.lang.String): bluebirdLib.bluebirdMod.namespaced[hexoDashFsLib.Anon_BufferBytesWrittenNumber] = js.native
   def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](fd: scala.Double): bluebirdLib.bluebirdMod.namespaced[hexoDashFsLib.Anon_BufferBytesWritten[TBuffer]] = js.native
   def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](fd: scala.Double, buffer: TBuffer): bluebirdLib.bluebirdMod.namespaced[hexoDashFsLib.Anon_BufferBytesWritten[TBuffer]] = js.native
   def write[TBuffer /* <: nodeLib.Buffer | stdLib.Uint8Array */](fd: scala.Double, buffer: TBuffer, offset: scala.Double): bluebirdLib.bluebirdMod.namespaced[hexoDashFsLib.Anon_BufferBytesWritten[TBuffer]] = js.native
@@ -595,11 +595,11 @@ object hexoDashFsModMembers extends js.Object {
   ): bluebirdLib.bluebirdMod.namespaced[hexoDashFsLib.Anon_BufferBytesWritten[TBuffer]] = js.native
   def writeFile(path: java.lang.String, data: js.Any): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def writeFile(path: java.lang.String, data: js.Any, callback: js.Function1[/* err */ js.Any, scala.Unit]): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def writeFile(path: java.lang.String, data: js.Any, options: hexoDashFsLib.Anon_EncodingMode): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def writeFile(path: java.lang.String, data: js.Any, options: hexoDashFsLib.Anon_EncodingFlag): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def writeFile(
     path: java.lang.String,
     data: js.Any,
-    options: hexoDashFsLib.Anon_EncodingMode,
+    options: hexoDashFsLib.Anon_EncodingFlag,
     callback: js.Function1[/* err */ js.Any, scala.Unit]
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def writeFile(path: java.lang.String, data: js.Any, options: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
@@ -610,7 +610,7 @@ object hexoDashFsModMembers extends js.Object {
     callback: js.Function1[/* err */ js.Any, scala.Unit]
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def writeFileSync(path: java.lang.String, data: js.Any): scala.Unit = js.native
-  def writeFileSync(path: java.lang.String, data: js.Any, options: hexoDashFsLib.Anon_EncodingMode): scala.Unit = js.native
+  def writeFileSync(path: java.lang.String, data: js.Any, options: hexoDashFsLib.Anon_EncodingFlag): scala.Unit = js.native
   def writeFileSync(path: java.lang.String, data: js.Any, options: java.lang.String): scala.Unit = js.native
   /**
     * Synchronously writes `buffer` to the file referenced by the supplied file descriptor, returning the number of bytes written.

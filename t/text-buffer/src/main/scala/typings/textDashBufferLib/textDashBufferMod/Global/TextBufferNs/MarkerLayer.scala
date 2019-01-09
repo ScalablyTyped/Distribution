@@ -28,11 +28,11 @@ trait MarkerLayer extends js.Object {
   def isDestroyed(): scala.Boolean = js.native
   /** Create a marker at with its head at the given position with no tail. */
   def markPosition(position: PointCompatible): Marker = js.native
-  def markPosition(position: PointCompatible, options: textDashBufferLib.Anon_ExclusiveInvalidate): Marker = js.native
+  def markPosition(position: PointCompatible, options: textDashBufferLib.Anon_ExclusiveInsideInvalidate): Marker = js.native
   // Marker Creation
   /** Create a marker with the given range. */
   def markRange(range: RangeCompatible): Marker = js.native
-  def markRange(range: RangeCompatible, options: textDashBufferLib.Anon_Exclusive): Marker = js.native
+  def markRange(range: RangeCompatible, options: textDashBufferLib.Anon_ExclusiveInside): Marker = js.native
   /**
     *  Subscribe to be notified synchronously whenever markers are created on
     *  this layer.

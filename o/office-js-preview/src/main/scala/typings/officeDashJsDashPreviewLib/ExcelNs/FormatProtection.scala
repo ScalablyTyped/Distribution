@@ -50,7 +50,7 @@ class FormatProtection ()
   def load(): FormatProtection = js.native
   def load(option: java.lang.String): FormatProtection = js.native
   def load(option: js.Array[java.lang.String]): FormatProtection = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): FormatProtection = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): FormatProtection = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.FormatProtectionLoadOptions): FormatProtection = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: FormatProtection): scala.Unit = js.native

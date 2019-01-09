@@ -582,7 +582,7 @@ class ContentControl ()
   def load(): ContentControl = js.native
   def load(option: java.lang.String): ContentControl = js.native
   def load(option: js.Array[java.lang.String]): ContentControl = js.native
-  def load(option: officeDashJsLib.Anon_Select): ContentControl = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ContentControl = js.native
   def load(option: officeDashJsLib.WordNs.InterfacesNs.ContentControlLoadOptions): ContentControl = js.native
   /**
     *
@@ -594,7 +594,7 @@ class ContentControl ()
     * @param searchOptions Optional. Options for the search.
     */
   def search(searchText: java.lang.String): RangeCollection = js.native
-  def search(searchText: java.lang.String, searchOptions: officeDashJsLib.Anon_MatchSuffix): RangeCollection = js.native
+  def search(searchText: java.lang.String, searchOptions: officeDashJsLib.Anon_IgnorePunct): RangeCollection = js.native
   def search(searchText: java.lang.String, searchOptions: SearchOptions): RangeCollection = js.native
   /**
     *

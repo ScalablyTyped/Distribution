@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object RxNsMembers extends js.Object {
   val MockObserver: MockObserverStatic = js.native
-  val ReactiveTest: rxDashLiteDashTestingLib.Anon_Disposed = js.native
+  val ReactiveTest: rxDashLiteDashTestingLib.Anon_Created = js.native
   val TestScheduler: rxDashLiteDashTestingLib.Anon_TestScheduler = js.native
 }
 

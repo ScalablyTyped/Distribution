@@ -21,7 +21,7 @@ trait DataSourceArgs extends js.Object {
   /**
     * Amazon Elasticsearch settings. See below
     */
-  val elasticsearchConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Endpoint]] = js.undefined
+  val elasticsearchConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EndpointRegion]] = js.undefined
   /**
     * HTTP settings. See below
     */
@@ -29,7 +29,7 @@ trait DataSourceArgs extends js.Object {
   /**
     * AWS Lambda settings. See below
     */
-  val lambdaConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FunctionArn]] = js.undefined
+  val lambdaConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FunctionArnInput]] = js.undefined
   /**
     * A user-supplied name for the DataSource.
     */

@@ -17,7 +17,7 @@ trait ReferencesetsResource extends js.Object {
     * [GlobalAllianceApi.getReferenceSet](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L83).
     */
   def get(
-    request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUserKeyOauthtokenAlt
+    request: gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUser
   ): gapiDotClientLib.gapiNs.clientNs.Request[ReferenceSet]
   /**
     * Searches for reference sets which match the given criteria.
@@ -29,6 +29,6 @@ trait ReferencesetsResource extends js.Object {
     * Implements
     * [GlobalAllianceApi.searchReferenceSets](https://github.com/ga4gh/schemas/blob/v0.5.1/src/main/resources/avro/referencemethods.avdl#L71)
     */
-  def search(request: gapiDotClientDotGenomicsLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[SearchReferenceSetsResponse]
+  def search(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchReferenceSetsResponse]
 }
 

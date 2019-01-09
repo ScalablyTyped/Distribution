@@ -15,7 +15,7 @@ object curvesNs extends js.Object {
     var hash: js.Any = js.native
      // ?
     var n: js.UndefOr[
-        (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any) | scala.Null
+        (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BN */ js.Any) | scala.Null
       ] = js.native
     var `type`: java.lang.String = js.native
   }

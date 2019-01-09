@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(yandexDashMapsLib.ymapsNs.IGeoObjectSequence because Would inherit conflicting mutable fields List(events, options))*/
-@JSGlobal("ymaps.geoObject.Sequence")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- yandexDashMapsLib.ymapsNs.IGeoObjectSequence because var conflicts: events, options. Inlined each, each, get, getBounds, getIterator, getLength, getPixelBounds, indexOf */ @JSGlobal("ymaps.geoObject.Sequence")
 @js.native
 class Sequence protected ()
   extends yandexDashMapsLib.ymapsNs.IGeoObject {
   def this(geoObject: yandexDashMapsLib.ymapsNs.GeoObject) = this()
   /* CompleteClass */
   override var events: yandexDashMapsLib.ymapsNs.IEventManager = js.native
-  var options: yandexDashMapsLib.ymapsNs.IOptionManager = js.native
   def each(callback: js.Function1[/* geoObject */ yandexDashMapsLib.ymapsNs.IGeoObject, scala.Unit]): scala.Unit = js.native
   def each(
     callback: js.Function1[/* geoObject */ yandexDashMapsLib.ymapsNs.IGeoObject, scala.Unit],

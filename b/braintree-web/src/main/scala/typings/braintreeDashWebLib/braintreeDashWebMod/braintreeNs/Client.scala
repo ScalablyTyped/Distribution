@@ -85,6 +85,6 @@ trait Client extends js.Object {
     * });
     * @returns {void}
     */
-  def request(options: braintreeDashWebLib.Anon_Endpoint, callback: callback): scala.Unit = js.native
+  def request(options: braintreeDashWebLib.Anon_Data, callback: callback): scala.Unit = js.native
 }
 

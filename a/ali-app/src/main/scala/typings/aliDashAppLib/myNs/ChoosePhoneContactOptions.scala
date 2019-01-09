@@ -21,6 +21,6 @@ trait ChoosePhoneContactOptions
     ]
   ] = js.undefined
   @JSName("success")
-  def success_MChoosePhoneContactOptions(result: aliDashAppLib.Anon_Name): scala.Unit
+  def success_MChoosePhoneContactOptions(result: aliDashAppLib.Anon_Mobile): scala.Unit
 }
 

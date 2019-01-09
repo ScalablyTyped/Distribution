@@ -263,7 +263,7 @@ class Item () extends js.Object {
     * Brings this item to the front of all other items within the same parent.
     */
   def bringToFront(): scala.Unit = js.native
-  def clone(options: paperLib.Anon_Insert): Item = js.native
+  def clone(options: paperLib.Anon_Deep): Item = js.native
   /**
     * Checks whether the item's geometry contains the given point.
     * @param point - The point to check for.
@@ -313,7 +313,7 @@ class Item () extends js.Object {
     * @param options.embedImages: whether raster images should be embedded as base64 data inlined in the xlink:href attribute, or kept as a link to their external URL.
     */
   def exportSVG(): stdLib.SVGElement = js.native
-  def exportSVG(options: paperLib.Anon_Precision): stdLib.SVGElement = js.native
+  def exportSVG(options: paperLib.Anon_AsStringBounds): stdLib.SVGElement = js.native
   /**
     * Transform the item so that its bounds fit within the specified rectangle, without changing its aspect ratio.
     * @param rectangle -
@@ -415,7 +415,7 @@ class Item () extends js.Object {
     svg: java.lang.String,
     onLoad: js.Function2[/* item */ this.type, /* svg */ java.lang.String, scala.Unit]
   ): Item = js.native
-  def importSVG(svg: java.lang.String, options: paperLib.Anon_InsertTrueExpandShapes): Item = js.native
+  def importSVG(svg: java.lang.String, options: paperLib.Anon_ApplyMatrixExpandShapes): Item = js.native
   /**
     * Converts the provided SVG content into Paper.js items and adds them to the active layer of this project.
     * Note that the project is not cleared first. You can call project.clear() to do so.
@@ -432,7 +432,7 @@ class Item () extends js.Object {
     svg: stdLib.SVGElement,
     onLoad: js.Function2[/* item */ this.type, /* svg */ java.lang.String, scala.Unit]
   ): Item = js.native
-  def importSVG(svg: stdLib.SVGElement, options: paperLib.Anon_InsertTrueExpandShapes): Item = js.native
+  def importSVG(svg: stdLib.SVGElement, options: paperLib.Anon_ApplyMatrixExpandShapes): Item = js.native
   /**
     * Inserts this item above the specified item.
     * @param item - the item above which it should be inserted
@@ -547,7 +547,7 @@ class Item () extends js.Object {
     * Detach one or more event handlers from the tool.
     * @param object - an object containing one or more of the following properties: frame, mousedown, mouseup, mousedrag, click, doubleclick, mousemove, mouseenter, mouseleave
     */
-  def off(`object`: paperLib.Anon_Mousedrag): Item = js.native
+  def off(`object`: paperLib.Anon_Click): Item = js.native
   /**
     * Detach one or more event handlers to the item.
     * @param param - an object containing one or more of the following properties: frame, mousedown, mouseup, mousedrag, click, doubleclick, mousemove, mouseenter, mouseleave
@@ -569,7 +569,7 @@ class Item () extends js.Object {
     * Attach one or more event handlers to the item.
     * @param object - an object containing one or more of the following properties: frame, mousedown, mouseup, mousedrag, click, doubleclick, mousemove, mouseenter, mouseleave
     */
-  def on(`object`: paperLib.Anon_Mousedrag): Item = js.native
+  def on(`object`: paperLib.Anon_Click): Item = js.native
   /**
     * Attaches one or more event handlers to the item.
     * @param param - an object containing one or more of the following properties: frame, mousedown, mouseup, mousedrag, click, doubleclick, mousemove, mouseenter, mouseleave
@@ -682,7 +682,7 @@ class Item () extends js.Object {
     * @param options.down - Remove the item when the next tool.onMouseDown event is fired
     * @param options.up - Remove the item when the next tool.onMouseUp event is fired
     */
-  def removeOn(options: paperLib.Anon_Move): scala.Unit = js.native
+  def removeOn(options: paperLib.Anon_Down): scala.Unit = js.native
   /**
     * Removes the item when the next tool.onMouseDown event is fired.
     */

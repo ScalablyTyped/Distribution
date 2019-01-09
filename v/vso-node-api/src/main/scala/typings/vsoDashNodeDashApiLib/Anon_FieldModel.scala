@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Anon_FieldModel extends js.Object {
   var FieldModel: js.Any
-  var FieldType: Anon_EnumValuesAnonPicklistString
+  var FieldType: Anon_EnumValuesAnonBooleanDateTimeDoubleGuidHistory
   var FormLayout: js.Any
-  var GetWorkItemTypeExpand: Anon_EnumValuesAnonNone
+  var GetWorkItemTypeExpand: Anon_EnumValuesAnonBehaviors
   var Page: js.Any
-  var PageType: Anon_EnumValuesAnonCustom
-  var WorkItemTypeClass: Anon_EnumValuesAnonDerived
+  var PageType: Anon_EnumValuesAnonAttachments
+  var WorkItemTypeClass: Anon_EnumValuesAnonCustomDerived
   var WorkItemTypeFieldModel: js.Any
   var WorkItemTypeModel: js.Any
 }

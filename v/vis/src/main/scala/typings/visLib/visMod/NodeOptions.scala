@@ -10,11 +10,11 @@ trait NodeOptions extends js.Object {
   var borderWidthSelected: js.UndefOr[scala.Double] = js.undefined
   var brokenImage: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[java.lang.String | Color] = js.undefined
-  var fixed: js.UndefOr[scala.Boolean | visLib.Anon_Y] = js.undefined
-  var font: js.UndefOr[java.lang.String | visLib.Anon_Vadjust] = js.undefined
+  var fixed: js.UndefOr[scala.Boolean | visLib.Anon_X] = js.undefined
+  var font: js.UndefOr[java.lang.String | visLib.Anon_Align] = js.undefined
   var group: js.UndefOr[java.lang.String] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
-  var icon: js.UndefOr[visLib.Anon_Face] = js.undefined
+  var icon: js.UndefOr[visLib.Anon_Code] = js.undefined
   var image: js.UndefOr[java.lang.String | Image] = js.undefined
   var label: js.UndefOr[java.lang.String] = js.undefined
   var labelHighlightBold: js.UndefOr[scala.Boolean] = js.undefined
@@ -24,7 +24,7 @@ trait NodeOptions extends js.Object {
   var scaling: js.UndefOr[OptionsScaling] = js.undefined
   var shadow: js.UndefOr[scala.Boolean | OptionsShadow] = js.undefined
   var shape: js.UndefOr[java.lang.String] = js.undefined
-  var shapeProperties: js.UndefOr[visLib.Anon_Interpolation] = js.undefined
+  var shapeProperties: js.UndefOr[visLib.Anon_BorderDashes] = js.undefined
   var size: js.UndefOr[scala.Double] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[scala.Double] = js.undefined

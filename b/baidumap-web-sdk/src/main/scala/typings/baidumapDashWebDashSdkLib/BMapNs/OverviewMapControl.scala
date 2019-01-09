@@ -11,8 +11,8 @@ class OverviewMapControl protected () extends Control {
   def this(opts: OverviewMapControlOptions) = this()
   def changeView(): scala.Unit = js.native
   def getSize(): Size = js.native
-  def onviewchanged(event: baidumapDashWebDashSdkLib.Anon_TypeTargetIsOpen): scala.Unit = js.native
-  def onviewchanging(event: baidumapDashWebDashSdkLib.Anon_TypeTarget): scala.Unit = js.native
+  def onviewchanged(event: baidumapDashWebDashSdkLib.Anon_IsOpen): scala.Unit = js.native
+  def onviewchanging(event: baidumapDashWebDashSdkLib.Anon_Target): scala.Unit = js.native
   def setSize(size: Size): scala.Unit = js.native
 }
 

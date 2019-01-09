@@ -35,11 +35,11 @@ trait RequestPinDetails extends js.Object {
     */
   var requestType: js.UndefOr[
     chromeDashAppsLib.chromeNs.ToStringLiteral[
-      chromeDashAppsLib.Anon_PUK, 
+      chromeDashAppsLib.Anon_PIN, 
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_PUK[keyof chrome-apps.Anon_PUK] */ js.Any
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_PIN[keyof chrome-apps.Anon_PIN] */ js.Any
       ]
     ]
   ] = js.undefined

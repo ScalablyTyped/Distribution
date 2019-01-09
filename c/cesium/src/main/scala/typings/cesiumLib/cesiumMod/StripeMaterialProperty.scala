@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class StripeMaterialProperty ()
   extends cesiumLib.cesiumMod.CesiumNs.StripeMaterialProperty {
-  def this(options: cesiumLib.Anon_OddColorEvenColor) = this()
+  def this(options: cesiumLib.Anon_EvenColorOddColor) = this()
 }
 

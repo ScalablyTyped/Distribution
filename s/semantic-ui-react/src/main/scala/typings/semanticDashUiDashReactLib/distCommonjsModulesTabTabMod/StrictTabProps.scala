@@ -47,7 +47,7 @@ trait StrictTabProps extends js.Object {
     *   pane: 'Welcome',
     * }
     */
-  var panes: js.UndefOr[js.Array[semanticDashUiDashReactLib.Anon_MenuItem]] = js.undefined
+  var panes: js.UndefOr[js.Array[semanticDashUiDashReactLib.Anon_Content]] = js.undefined
   /** A Tab can render only active pane. */
   var renderActiveOnly: js.UndefOr[scala.Boolean] = js.undefined
 }

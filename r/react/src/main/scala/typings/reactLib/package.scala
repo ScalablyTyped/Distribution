@@ -91,11 +91,11 @@ package object reactLib {
   type PointerEvent = Event
   type ReactManagedAttributes[C, P] = P | (Defaultize[P, js.Any]) | (MergePropTypes[
     P, 
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PropTypes.InferProps<T> */ js.Any
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PropTypes.InferProps<T> */ js.Any
   ]) | (Defaultize[
     MergePropTypes[
       P, 
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PropTypes.InferProps<T> */ js.Any
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PropTypes.InferProps<T> */ js.Any
     ], 
     js.Any
   ])

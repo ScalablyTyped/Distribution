@@ -31,7 +31,7 @@ trait MKColorStatic extends js.Object {
   var Teal: java.lang.String
   var Transparent: java.lang.String
   var Yellow: java.lang.String
-  var default: reactDashNativeDashMaterialDashKitLib.Anon_Yellow
+  var default: reactDashNativeDashMaterialDashKitLib.Anon_Amber
   var palette_blue_400: java.lang.String
   var palette_green_500: java.lang.String
   var palette_red_500: java.lang.String

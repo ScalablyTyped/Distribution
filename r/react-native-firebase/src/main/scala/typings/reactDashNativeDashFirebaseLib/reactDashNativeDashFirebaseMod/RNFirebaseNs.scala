@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object RNFirebaseNs extends js.Object {
   trait ActionCodeInfo extends js.Object {
-    var data: reactDashNativeDashFirebaseLib.Anon_FromEmail
+    var data: reactDashNativeDashFirebaseLib.Anon_Email
     var operation: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.PASSWORD_RESET | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.VERIFY_EMAIL | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.RECOVER_EMAIL | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.EMAIL_SIGNIN | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.ERROR
   }
   
@@ -520,13 +520,13 @@ object RNFirebaseNs extends js.Object {
       ): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.PhoneAuthListener = js.native
     }
     
+    @js.native
     trait AuthProvider extends js.Object {
-      var PROVIDER_ID: java.lang.String
-      var credential: js.Function2[
-            /* token */ java.lang.String | scala.Null, 
-            /* secret */ js.UndefOr[java.lang.String], 
-            reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential
-          ]
+      var PROVIDER_ID: java.lang.String = js.native
+      def credential(): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential = js.native
+      def credential(token: java.lang.String): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential = js.native
+      def credential(token: java.lang.String, secret: java.lang.String): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential = js.native
+      def credential(token: scala.Null, secret: java.lang.String): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential = js.native
     }
     
     trait AuthSettings extends js.Object {
@@ -559,7 +559,7 @@ object RNFirebaseNs extends js.Object {
       var GoogleAuthProvider: AuthProvider
       var OAuthProvider: AuthProvider
       var PhoneAuthProvider: AuthProvider
-      var PhoneAuthState: reactDashNativeDashFirebaseLib.Anon_ERROR
+      var PhoneAuthState: reactDashNativeDashFirebaseLib.Anon_AUTOVERIFIED
       var TwitterAuthProvider: AuthProvider
     }
     
@@ -567,16 +567,8 @@ object RNFirebaseNs extends js.Object {
       var EMAIL_LINK_SIGN_IN_METHOD: java.lang.String
       var EMAIL_PASSWORD_SIGN_IN_METHOD: java.lang.String
       var PROVIDER_ID: java.lang.String
-      var credential: js.Function2[
-            /* email */ java.lang.String, 
-            /* password */ java.lang.String, 
-            reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential
-          ]
-      var credentialWithLink: js.Function2[
-            /* email */ java.lang.String, 
-            /* emailLink */ java.lang.String, 
-            reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential
-          ]
+      def credential(email: java.lang.String, password: java.lang.String): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential
+      def credentialWithLink(email: java.lang.String, emailLink: java.lang.String): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.AuthCredential
     }
     
     type AuthListenerCallback = js.Function1[
@@ -756,7 +748,7 @@ object RNFirebaseNs extends js.Object {
     
     trait DatabaseStatics extends js.Object {
       /** @see https://www.firebase.com/docs/java-api/javadoc/com/firebase/client/ServerValue.html#TIMESTAMP */
-      var ServerValue: reactDashNativeDashFirebaseLib.Anon_TIMESTAMP
+      var ServerValue: reactDashNativeDashFirebaseLib.Anon_Key
     }
     
     @js.native
@@ -1169,9 +1161,9 @@ object RNFirebaseNs extends js.Object {
     
     @js.native
     trait FirestoreStatics extends js.Object {
-      var Blob: org.scalablytyped.runtime.Instantiable0[Blob] = js.native
-      var FieldPath: org.scalablytyped.runtime.Instantiable1[/* segments (repeated) */ java.lang.String, FieldPath] = js.native
-      var FieldValue: org.scalablytyped.runtime.Instantiable0[FieldValue] = js.native
+      var Blob: reactDashNativeDashFirebaseLib.Anon_Array = js.native
+      var FieldPath: reactDashNativeDashFirebaseLib.Anon_DocumentId = js.native
+      var FieldValue: reactDashNativeDashFirebaseLib.Anon_ArrayRemove = js.native
       var GeoPoint: org.scalablytyped.runtime.Instantiable2[/* latitude */ scala.Double, /* longitude */ scala.Double, GeoPoint] = js.native
       def enableLogging(enabled: scala.Boolean): scala.Unit = js.native
       @JSName("setLogLevel")
@@ -2114,7 +2106,7 @@ object RNFirebaseNs extends js.Object {
     }
     
     trait NotificationsStatics extends js.Object {
-      var Android: reactDashNativeDashFirebaseLib.Anon_RemoteInput
+      var Android: reactDashNativeDashFirebaseLib.Anon_Action
       var Notification: org.scalablytyped.runtime.Instantiable0[Notification]
     }
     
@@ -2700,7 +2692,7 @@ object RNFirebaseNs extends js.Object {
     }
     
     trait StorageStatics extends js.Object {
-      var Native: js.UndefOr[reactDashNativeDashFirebaseLib.Anon_LIBRARYDIRECTORYPATH] = js.undefined
+      var Native: js.UndefOr[reactDashNativeDashFirebaseLib.Anon_CACHESDIRECTORYPATH] = js.undefined
       var TaskEvent: TaskState
       var TaskState: TaskState
     }
@@ -2727,7 +2719,7 @@ object RNFirebaseNs extends js.Object {
         error: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.ErrorHandler,
         complete: reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.Handler[T]
       ): js.Function0[scala.Unit] = js.native
-      def on(event: TaskEvent, observer: reactDashNativeDashFirebaseLib.Anon_Next[T]): js.Function0[scala.Unit] = js.native
+      def on(event: TaskEvent, observer: reactDashNativeDashFirebaseLib.Anon_Complete[T]): js.Function0[scala.Unit] = js.native
       /**
         * Not supported by react-native-firebase
         */

@@ -20,7 +20,7 @@ class LineMap protected () extends js.Object {
   def getPosition(line: scala.Double, character: scala.Double): scala.Double = js.native
   def lineCount(): scala.Double = js.native
   def lineStarts(): js.Array[scala.Double] = js.native
-  def toJSON(key: js.Any): typescriptDashServicesLib.Anon_LineStarts = js.native
+  def toJSON(key: js.Any): typescriptDashServicesLib.Anon_Length = js.native
 }
 
 @JSGlobal("TypeScript.LineMap")

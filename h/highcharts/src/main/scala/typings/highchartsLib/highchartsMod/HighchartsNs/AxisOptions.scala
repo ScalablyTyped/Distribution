@@ -67,7 +67,7 @@ trait AxisOptions extends js.Object {
   /**
     * Event handlers for the axis
     */
-  var events: js.UndefOr[highchartsLib.Anon_AfterSetExtremesEvent] = js.undefined
+  var events: js.UndefOr[highchartsLib.Anon_AfterBreaks] = js.undefined
   /**
     * The lowest allowed value for automatically computed axis extremes.
     * @default null
@@ -295,7 +295,7 @@ trait AxisOptions extends js.Object {
     * In case of an inverted column chart or a bar chart the label is placed to the right of positive bars and to the left of negative bars.
     * Only used for yAxis
     */
-  var stackLabels: js.UndefOr[highchartsLib.Anon_Format] = js.undefined
+  var stackLabels: js.UndefOr[highchartsLib.Anon_AlignEnabled] = js.undefined
   /**
     * For datetime axes, this decides where to put the tick between weeks. 0 = Sunday, 1 = Monday.
     * @default 1

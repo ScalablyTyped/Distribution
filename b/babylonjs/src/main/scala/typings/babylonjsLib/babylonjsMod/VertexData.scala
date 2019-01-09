@@ -40,12 +40,7 @@ object VertexData extends js.Object {
     * * depthSortedFacets : optional array of depthSortedFacets to store the facet distances from the reference location
     */
   def ComputeNormals(positions: js.Any, indices: js.Any, normals: js.Any): scala.Unit = js.native
-  def ComputeNormals(
-    positions: js.Any,
-    indices: js.Any,
-    normals: js.Any,
-    options: babylonjsLib.Anon_UseRightHandedSystem
-  ): scala.Unit = js.native
+  def ComputeNormals(positions: js.Any, indices: js.Any, normals: js.Any, options: babylonjsLib.Anon_BInfo): scala.Unit = js.native
   /**
     * Creates the VertexData for a box
     * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -60,7 +55,7 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the box
     */
-  def CreateBox(options: babylonjsLib.Anon_SizeFaceColors): babylonjsLib.BABYLONNs.VertexData = js.native
+  def CreateBox(options: babylonjsLib.Anon_BackUVsDepth): babylonjsLib.BABYLONNs.VertexData = js.native
   /**
     * Creates the VertexData for a cylinder, cone or prism
     * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -80,7 +75,7 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the cylinder, cone or prism
     */
-  def CreateCylinder(options: babylonjsLib.Anon_SubdivisionsTessellationFaceColors): babylonjsLib.BABYLONNs.VertexData = js.native
+  def CreateCylinder(options: babylonjsLib.Anon_ArcBackUVs): babylonjsLib.BABYLONNs.VertexData = js.native
   /**
     * Create the VertexData for a DashedLines
     * @param options an object used to set the following optional parameters for the DashedLines, required but can be empty
@@ -90,7 +85,7 @@ object VertexData extends js.Object {
     *  - dashNb the intended total number of dashes, optional, default 200
     * @returns the VertexData for the DashedLines
     */
-  def CreateDashedLines(options: babylonjsLib.Anon_Points): babylonjsLib.BABYLONNs.VertexData = js.native
+  def CreateDashedLines(options: babylonjsLib.Anon_DashNb): babylonjsLib.BABYLONNs.VertexData = js.native
   /**
     * Creates the VertexData of the Disc or regular Polygon
     * @param options an object used to set the following optional parameters for the disc, required but can be empty
@@ -102,7 +97,7 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the box
     */
-  def CreateDisc(options: babylonjsLib.Anon_TessellationFrontUVsRadius): babylonjsLib.BABYLONNs.VertexData = js.native
+  def CreateDisc(options: babylonjsLib.Anon_ArcBackUVsFrontUVs): babylonjsLib.BABYLONNs.VertexData = js.native
   /**
     * Creates the VertexData for a Ground
     * @param options an object used to set the following optional parameters for the Ground, required but can be empty
@@ -111,7 +106,7 @@ object VertexData extends js.Object {
     *  - subdivisions the number of subdivisions per side, optional, default 1
     * @returns the VertexData of the Ground
     */
-  def CreateGround(options: babylonjsLib.Anon_SubdivisionsHeightSubdivisionsX): babylonjsLib.BABYLONNs.VertexData = js.native
+  def CreateGround(options: babylonjsLib.Anon_Height): babylonjsLib.BABYLONNs.VertexData = js.native
   /**
     * Creates the VertexData of the Ground designed from a heightmap
     * @param options an object used to set the following parameters for the Ground, required and provided by MeshBuilder.CreateGroundFromHeightMap
@@ -127,7 +122,7 @@ object VertexData extends js.Object {
     * * alphaFilter Remove any data where the alpha channel is below this value, defaults 0 (all data visible)
     * @returns the VertexData of the Ground designed from a heightmap
     */
-  def CreateGroundFromHeightMap(options: babylonjsLib.Anon_MinHeightSubdivisions): babylonjsLib.BABYLONNs.VertexData = js.native
+  def CreateGroundFromHeightMap(options: babylonjsLib.Anon_AlphaFilter): babylonjsLib.BABYLONNs.VertexData = js.native
   /**
     * Creates the VertexData of the IcoSphere
     * @param options an object used to set the following optional parameters for the IcoSphere, required but can be empty
@@ -142,7 +137,7 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the IcoSphere
     */
-  def CreateIcoSphere(options: babylonjsLib.Anon_SubdivisionsRadiusXFlat): babylonjsLib.BABYLONNs.VertexData = js.native
+  def CreateIcoSphere(options: babylonjsLib.Anon_BackUVsFlat): babylonjsLib.BABYLONNs.VertexData = js.native
   /**
     * Creates the VertexData of the LineSystem
     * @param options an object used to set the following optional parameters for the LineSystem, required but can be empty
@@ -150,7 +145,7 @@ object VertexData extends js.Object {
     *  - colors an array of line colors, each of the line colors being an array of successive Color4, one per line point
     * @returns the VertexData of the LineSystem
     */
-  def CreateLineSystem(options: babylonjsLib.Anon_Lines): babylonjsLib.BABYLONNs.VertexData = js.native
+  def CreateLineSystem(options: babylonjsLib.Anon_Colors): babylonjsLib.BABYLONNs.VertexData = js.native
   /**
     * Creates the VertexData for a Plane
     * @param options an object used to set the following optional parameters for the plane, required but can be empty
@@ -162,7 +157,7 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the box
     */
-  def CreatePlane(options: babylonjsLib.Anon_SizeHeightFrontUVs): babylonjsLib.BABYLONNs.VertexData = js.native
+  def CreatePlane(options: babylonjsLib.Anon_BackUVsFrontUVs): babylonjsLib.BABYLONNs.VertexData = js.native
   /**
     * Creates the VertexData for an irregular Polygon in the XoZ plane using a mesh built by polygonTriangulation.build()
     * All parameters are provided by MeshBuilder.CreatePolygon as needed
@@ -221,7 +216,7 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the Polyhedron
     */
-  def CreatePolyhedron(options: babylonjsLib.Anon_SizeZCustomSize): babylonjsLib.BABYLONNs.VertexData = js.native
+  def CreatePolyhedron(options: babylonjsLib.Anon_BackUVsCustom): babylonjsLib.BABYLONNs.VertexData = js.native
   /**
     * Creates the VertexData for a Ribbon
     * @param options an object used to set the following optional parameters for the ribbon, required but can be empty
@@ -237,7 +232,7 @@ object VertexData extends js.Object {
     * * colors a linear array, of length 4 * number of vertices, of custom color values, optional
     * @returns the VertexData of the ribbon
     */
-  def CreateRibbon(options: babylonjsLib.Anon_UvsFrontUVs): babylonjsLib.BABYLONNs.VertexData = js.native
+  def CreateRibbon(options: babylonjsLib.Anon_BackUVs): babylonjsLib.BABYLONNs.VertexData = js.native
   /**
     * Creates the VertexData for an ellipsoid, defaults to a sphere
     * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -253,7 +248,7 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the ellipsoid
     */
-  def CreateSphere(options: babylonjsLib.Anon_DiameterZFrontUVs): babylonjsLib.BABYLONNs.VertexData = js.native
+  def CreateSphere(options: babylonjsLib.Anon_Arc): babylonjsLib.BABYLONNs.VertexData = js.native
   /**
     * Creates the VertexData for a TiledGround by subdividing the ground into tiles
     * @param options an object used to set the following optional parameters for the Ground, required but can be empty
@@ -265,7 +260,7 @@ object VertexData extends js.Object {
     * * precision a javascript object {w: positive integer, h: positive integer}, `w` and `h` are the numbers of subdivisions on the tile width and height, default {w: 2, h: 2}
     * @returns the VertexData of the TiledGround
     */
-  def CreateTiledGround(options: babylonjsLib.Anon_SubdivisionsPrecisionXmin): babylonjsLib.BABYLONNs.VertexData = js.native
+  def CreateTiledGround(options: babylonjsLib.Anon_Precision): babylonjsLib.BABYLONNs.VertexData = js.native
   /**
     * Creates the VertexData for a torus
     * @param options an object used to set the following optional parameters for the box, required but can be empty
@@ -277,7 +272,7 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the torus
     */
-  def CreateTorus(options: babylonjsLib.Anon_TessellationFrontUVsThickness): babylonjsLib.BABYLONNs.VertexData = js.native
+  def CreateTorus(options: babylonjsLib.Anon_BackUVsDiameter): babylonjsLib.BABYLONNs.VertexData = js.native
   /**
     * Creates the VertexData for a TorusKnot
     * @param options an object used to set the following optional parameters for the TorusKnot, required but can be empty
@@ -292,7 +287,7 @@ object VertexData extends js.Object {
     * * backUVs only usable when you create a double-sided mesh, used to choose what parts of the texture image to crop and apply on the back side, optional, default vector4 (0, 0, 1, 1)
     * @returns the VertexData of the Torus Knot
     */
-  def CreateTorusKnot(options: babylonjsLib.Anon_RadialSegmentsFrontUVs): babylonjsLib.BABYLONNs.VertexData = js.native
+  def CreateTorusKnot(options: babylonjsLib.Anon_BackUVsFrontUVsP): babylonjsLib.BABYLONNs.VertexData = js.native
   /**
     * Extracts the vertexData from the geometry
     * @param geometry the geometry from which to extract the VertexData

@@ -42,14 +42,14 @@ trait ISceneLoaderPluginAsync extends js.Object {
     * @param fileName Defines the name of the file to load
     * @returns The loaded meshes, particle systems, skeletons, and animation groups
     */
-  def importMeshAsync(meshesNames: js.Any, scene: Scene, data: js.Any, rootUrl: java.lang.String): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
+  def importMeshAsync(meshesNames: js.Any, scene: Scene, data: js.Any, rootUrl: java.lang.String): js.Promise[babylonjsLib.Anon_AnimationGroups] = js.native
   def importMeshAsync(
     meshesNames: js.Any,
     scene: Scene,
     data: js.Any,
     rootUrl: java.lang.String,
     onProgress: js.Function1[/* event */ SceneLoaderProgressEvent, scala.Unit]
-  ): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
+  ): js.Promise[babylonjsLib.Anon_AnimationGroups] = js.native
   def importMeshAsync(
     meshesNames: js.Any,
     scene: Scene,
@@ -57,7 +57,7 @@ trait ISceneLoaderPluginAsync extends js.Object {
     rootUrl: java.lang.String,
     onProgress: js.Function1[/* event */ SceneLoaderProgressEvent, scala.Unit],
     fileName: java.lang.String
-  ): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
+  ): js.Promise[babylonjsLib.Anon_AnimationGroups] = js.native
   /**
     * Load into an asset container.
     * @param scene The scene to load into

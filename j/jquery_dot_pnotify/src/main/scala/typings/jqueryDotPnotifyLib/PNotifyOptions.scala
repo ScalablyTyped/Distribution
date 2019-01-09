@@ -23,7 +23,7 @@ trait PNotifyOptions extends js.Object {
     * Display the notice when it is created. Turn this off to add notifications to the history without displaying them.
     */
   var auto_display: js.UndefOr[scala.Boolean] = js.undefined
-  var buttons: js.UndefOr[Anon_Sticker] = js.undefined
+  var buttons: js.UndefOr[Anon_CloserCloserhover] = js.undefined
   /**
     * Support for PNotifyconfirm options
     */
@@ -68,7 +68,7 @@ trait PNotifyOptions extends js.Object {
     * Reset the hide timer if the mouse moves over the notice.
     */
   var mouse_reset: js.UndefOr[scala.Boolean] = js.undefined
-  var nonblock: js.UndefOr[Anon_Nonblockopacity] = js.undefined
+  var nonblock: js.UndefOr[Anon_Nonblock] = js.undefined
   /**
     * Opacity of the notice.
     */

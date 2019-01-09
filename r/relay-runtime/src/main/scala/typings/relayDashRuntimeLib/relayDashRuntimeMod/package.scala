@@ -27,7 +27,7 @@ package object relayDashRuntimeMod {
     /* uploadables */ js.UndefOr[UploadableMap], 
     ObservableFromValue[QueryPayload]
   ]
-  type GraphQLTaggedNode = (js.Function0[ConcreteFragment | RequestNode]) | relayDashRuntimeLib.Anon_Modern
+  type GraphQLTaggedNode = (js.Function0[ConcreteFragment | RequestNode]) | relayDashRuntimeLib.Anon_Classic
   type HandlerProvider = js.Function1[/* name */ java.lang.String, HandlerInterface | scala.Null]
   type MutableRecordSource = RecordSource
   type Observable[T] = RelayObservable[T]

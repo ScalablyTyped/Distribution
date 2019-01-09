@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Deep extends js.Object {
+trait Anon_Deep
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var deep: js.UndefOr[scala.Boolean] = js.undefined
-  var padding: js.UndefOr[jointjsLib.jointjsMod.diaNs.Padding] = js.undefined
+  var parentRelative: js.UndefOr[scala.Boolean] = js.undefined
 }
 

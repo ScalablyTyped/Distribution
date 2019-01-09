@@ -7,20 +7,20 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Arr extends js.Object {
-  def apply[T, R, E](arr: js.Array[T], iterator: steedLib.steedMod.steedNs.SteedResultIterator[T, R, E]): scala.Unit = js.native
-  def apply[T, R, E](
+  def apply[T, E](arr: js.Array[T], iterator: steedLib.steedMod.steedNs.SteedIterator[T, E]): scala.Unit = js.native
+  def apply[T, E](
     arr: js.Array[T],
-    iterator: steedLib.steedMod.steedNs.SteedResultIterator[T, R, E],
-    callback: steedLib.steedMod.steedNs.SteedResultArrayCallback[R, E]
+    iterator: steedLib.steedMod.steedNs.SteedIterator[T, E],
+    callback: steedLib.steedMod.steedNs.ErrorCallback[E]
   ): scala.Unit = js.native
-  def apply[T, R, E](
+  def apply[T, E](
     arr: steedLib.steedMod.steedNs.Dictionary[T],
-    iterator: steedLib.steedMod.steedNs.SteedResultIterator[T, R, E]
+    iterator: steedLib.steedMod.steedNs.SteedIterator[T, E]
   ): scala.Unit = js.native
-  def apply[T, R, E](
+  def apply[T, E](
     arr: steedLib.steedMod.steedNs.Dictionary[T],
-    iterator: steedLib.steedMod.steedNs.SteedResultIterator[T, R, E],
-    callback: steedLib.steedMod.steedNs.SteedResultArrayCallback[R, E]
+    iterator: steedLib.steedMod.steedNs.SteedIterator[T, E],
+    callback: steedLib.steedMod.steedNs.ErrorCallback[E]
   ): scala.Unit = js.native
 }
 

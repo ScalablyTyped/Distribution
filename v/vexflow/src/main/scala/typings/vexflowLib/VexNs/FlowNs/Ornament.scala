@@ -18,6 +18,6 @@ class Ornament protected () extends Modifier {
 @js.native
 object Ornament extends js.Object {
   var DEBUG: scala.Boolean = js.native
-  def format(ornaments: js.Array[vexflowLib.VexNs.FlowNs.Ornament], state: vexflowLib.Anon_Rightshift): scala.Boolean = js.native
+  def format(ornaments: js.Array[vexflowLib.VexNs.FlowNs.Ornament], state: vexflowLib.Anon_Leftshift): scala.Boolean = js.native
 }
 

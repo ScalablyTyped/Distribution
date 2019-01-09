@@ -58,7 +58,7 @@ object d3ModMembers extends js.Object {
   val randomNormal: d3DashRandomLib.d3DashRandomMod.RandomNormal = js.native
   val randomUniform: d3DashRandomLib.d3DashRandomMod.RandomUniform = js.native
   val rgb: d3DashColorLib.d3DashColorMod.RGBColorFactory = js.native
-  val scaleImplicit: d3DashScaleLib.Anon_Name = js.native
+  val scaleImplicit: d3DashScaleLib.Anon_Implicit = js.native
   val schemeAccent: js.Array[java.lang.String] = js.native
   val schemeBlues: js.Array[js.Array[java.lang.String]] = js.native
   val schemeBrBG: js.Array[js.Array[java.lang.String]] = js.native
@@ -2177,7 +2177,7 @@ object d3ModMembers extends js.Object {
     `object`: d3DashGeoLib.d3DashGeoMod.GeoGeometryObjects,
     stream: d3DashGeoLib.d3DashGeoMod.GeoStream
   ): scala.Unit = js.native
-  def geoTransform[T /* <: d3DashGeoLib.d3DashGeoMod.GeoTransformPrototype */](methods: T): d3DashGeoLib.Anon_Stream[T] = js.native
+  def geoTransform[T /* <: d3DashGeoLib.d3DashGeoMod.GeoTransformPrototype */](methods: T): d3DashGeoLib.Anon_S[T] = js.native
   def geoTransverseMercator(): d3DashGeoLib.d3DashGeoMod.GeoProjection = js.native
   def geoTransverseMercatorRaw(): d3DashGeoLib.d3DashGeoMod.GeoRawProjection = js.native
   def hierarchy[Datum](data: Datum): d3DashHierarchyLib.d3DashHierarchyMod.HierarchyNode[Datum] = js.native

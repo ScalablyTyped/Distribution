@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object ddDashTraceLibStrings {
   @js.native
+  sealed trait PluginConfiguration extends js.Object
+  
+  @js.native
   sealed trait amqp10 extends js.Object
   
   @js.native
@@ -63,6 +66,7 @@ object ddDashTraceLibStrings {
   @js.native
   sealed trait when extends js.Object
   
+  def PluginConfiguration: PluginConfiguration = "PluginConfiguration".asInstanceOf[PluginConfiguration]
   def amqp10: amqp10 = "amqp10".asInstanceOf[amqp10]
   def amqplib: amqplib = "amqplib".asInstanceOf[amqplib]
   def bluebird: bluebird = "bluebird".asInstanceOf[bluebird]

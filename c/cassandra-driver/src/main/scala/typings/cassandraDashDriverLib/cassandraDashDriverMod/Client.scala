@@ -11,11 +11,11 @@ trait Client
   var hosts: HostMap = js.native
   var keyspace: java.lang.String = js.native
   var metadata: cassandraDashDriverLib.cassandraDashDriverMod.metadataNs.Metadata = js.native
-  def batch(queries: js.Array[cassandraDashDriverLib.Anon_Query | java.lang.String]): js.Promise[cassandraDashDriverLib.cassandraDashDriverMod.typesNs.ResultSet] = js.native
-  def batch(queries: js.Array[cassandraDashDriverLib.Anon_Query | java.lang.String], callback: ResultCallback): scala.Unit = js.native
-  def batch(queries: js.Array[cassandraDashDriverLib.Anon_Query | java.lang.String], options: QueryOptions): js.Promise[cassandraDashDriverLib.cassandraDashDriverMod.typesNs.ResultSet] = js.native
+  def batch(queries: js.Array[cassandraDashDriverLib.Anon_Params | java.lang.String]): js.Promise[cassandraDashDriverLib.cassandraDashDriverMod.typesNs.ResultSet] = js.native
+  def batch(queries: js.Array[cassandraDashDriverLib.Anon_Params | java.lang.String], callback: ResultCallback): scala.Unit = js.native
+  def batch(queries: js.Array[cassandraDashDriverLib.Anon_Params | java.lang.String], options: QueryOptions): js.Promise[cassandraDashDriverLib.cassandraDashDriverMod.typesNs.ResultSet] = js.native
   def batch(
-    queries: js.Array[cassandraDashDriverLib.Anon_Query | java.lang.String],
+    queries: js.Array[cassandraDashDriverLib.Anon_Params | java.lang.String],
     options: QueryOptions,
     callback: ResultCallback
   ): scala.Unit = js.native

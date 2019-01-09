@@ -31,7 +31,7 @@ trait MarkerLayer extends js.Object {
   def isDestroyed(): scala.Boolean = js.native
   /** Create a marker at with its head at the given position with no tail. */
   def markPosition(position: PointCompatible): Marker = js.native
-  def markPosition(position: PointCompatible, options: atomLib.Anon_ExclusiveInvalidate): Marker = js.native
+  def markPosition(position: PointCompatible, options: atomLib.Anon_ExclusiveInside): Marker = js.native
   // Marker Creation
   /** Create a marker with the given range. */
   def markRange(range: RangeCompatible): Marker = js.native

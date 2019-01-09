@@ -30,16 +30,16 @@ class GitRepository protected () extends js.Object {
     *  @return Returns the number of commits behind the current branch is from its
     *  upstream remote branch.
     */
-  def getAheadBehindCount(reference: java.lang.String): atomLib.Anon_Behind = js.native
-  def getAheadBehindCount(reference: java.lang.String, path: java.lang.String): atomLib.Anon_Behind = js.native
+  def getAheadBehindCount(reference: java.lang.String): atomLib.Anon_Ahead = js.native
+  def getAheadBehindCount(reference: java.lang.String, path: java.lang.String): atomLib.Anon_Ahead = js.native
   /** Get the cached status for the given path. */
   def getCachedPathStatus(path: java.lang.String): scala.Double | scala.Null = js.native
   /**
     *  Get the cached ahead/behind commit counts for the current branch's
     *  upstream branch.
     */
-  def getCachedUpstreamAheadBehindCount(): atomLib.Anon_Behind = js.native
-  def getCachedUpstreamAheadBehindCount(path: java.lang.String): atomLib.Anon_Behind = js.native
+  def getCachedUpstreamAheadBehindCount(): atomLib.Anon_Ahead = js.native
+  def getCachedUpstreamAheadBehindCount(path: java.lang.String): atomLib.Anon_Ahead = js.native
   /** Returns the git configuration value specified by the key. */
   def getConfigValue(key: java.lang.String): java.lang.String = js.native
   def getConfigValue(key: java.lang.String, path: java.lang.String): java.lang.String = js.native
@@ -48,14 +48,14 @@ class GitRepository protected () extends js.Object {
     *  Retrieves the number of lines added and removed to a path.
     *  This compares the working directory contents of the path to the HEAD version.
     */
-  def getDiffStats(path: java.lang.String): atomLib.Anon_Deleted = js.native
+  def getDiffStats(path: java.lang.String): atomLib.Anon_Added = js.native
   /** Get the status of a directory in the repository's working directory. */
   def getDirectoryStatus(path: java.lang.String): scala.Double = js.native
   /**
     *  Retrieves the line diffs comparing the HEAD version of the given path
     *  and the given text.
     */
-  def getLineDiffs(path: java.lang.String, text: java.lang.String): js.Array[atomLib.Anon_NewStart] = js.native
+  def getLineDiffs(path: java.lang.String, text: java.lang.String): js.Array[atomLib.Anon_NewLines] = js.native
   /** Returns the origin url of the repository. */
   def getOriginURL(): java.lang.String = js.native
   def getOriginURL(path: java.lang.String): java.lang.String = js.native
@@ -67,8 +67,8 @@ class GitRepository protected () extends js.Object {
   def getReferenceTarget(reference: java.lang.String): java.lang.String = js.native
   def getReferenceTarget(reference: java.lang.String, path: java.lang.String): java.lang.String = js.native
   /** Gets all the local and remote references. */
-  def getReferences(): atomLib.Anon_Remotes = js.native
-  def getReferences(path: java.lang.String): atomLib.Anon_Remotes = js.native
+  def getReferences(): atomLib.Anon_Heads = js.native
+  def getReferences(path: java.lang.String): atomLib.Anon_Heads = js.native
   /** Retrieves a shortened version of the HEAD reference value. */
   def getShortHead(): java.lang.String = js.native
   def getShortHead(path: java.lang.String): java.lang.String = js.native

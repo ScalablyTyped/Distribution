@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Account extends js.Object {
   /** Your bidder locations that have distinct URLs. */
-  var bidderLocation: js.UndefOr[js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_MaximumQps]] = js.undefined
+  var bidderLocation: js.UndefOr[js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_BidProtocol]] = js.undefined
   /** The nid parameter value used in cookie match requests. Please contact your technical account manager if you need to change this. */
   var cookieMatchingNid: js.UndefOr[java.lang.String] = js.undefined
   /** The base URL used in cookie match requests. */

@@ -12,7 +12,7 @@ trait MongodOps extends js.Object {
   ] = js.undefined
   var debug: js.UndefOr[scala.Boolean | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
   // instance options
-  var instance: mongodbDashMemoryDashServerLib.Anon_DbPath
+  var instance: mongodbDashMemoryDashServerLib.Anon_Args
   // child process spawn options
   var spawn: js.UndefOr[mongodbDashMemoryDashServerLib.Anon_Argv0] = js.undefined
 }

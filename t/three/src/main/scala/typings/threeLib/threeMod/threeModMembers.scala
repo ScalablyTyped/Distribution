@@ -122,8 +122,8 @@ object threeModMembers extends js.Object {
   val RepeatWrapping: threeLib.threeDashCoreMod.Wrapping = js.native
   val ReverseSubtractEquation: threeLib.threeDashCoreMod.BlendingEquation = js.native
   var STLLoader: js.Any = js.native
-  var ShaderChunk: threeLib.Anon_NameDepthvert = js.native
-  var ShaderLib: threeLib.Anon_Name = js.native
+  var ShaderChunk: threeLib.Anon_Alphamapfragment = js.native
+  var ShaderLib: threeLib.Anon_Basic = js.native
   val ShortType: threeLib.threeDashCoreMod.TextureDataType = js.native
   val SmoothShading: threeLib.threeDashCoreMod.Shading = js.native
   val SphericalReflectionMapping: threeLib.threeDashCoreMod.Mapping = js.native
@@ -138,7 +138,7 @@ object threeModMembers extends js.Object {
   val TrianglesDrawMode: threeLib.threeDashCoreMod.TrianglesDrawModes = js.native
   val UVMapping: threeLib.threeDashCoreMod.Mapping = js.native
   val Uncharted2ToneMapping: threeLib.threeDashCoreMod.ToneMapping = js.native
-  var UniformsLib: threeLib.Anon_Lights = js.native
+  var UniformsLib: threeLib.Anon_Aomap = js.native
   val UnsignedByteType: threeLib.threeDashCoreMod.TextureDataType = js.native
   val UnsignedInt248Type: threeLib.threeDashCoreMod.PixelType = js.native
   val UnsignedIntType: threeLib.threeDashCoreMod.TextureDataType = js.native

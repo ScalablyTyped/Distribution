@@ -28,7 +28,7 @@ class OrthographicTrackballControls protected ()
   var radius: scala.Double = js.native
   var right0: scala.Double = js.native
   var rotateSpeed: scala.Double = js.native
-  var screen: threeLib.Anon_Top = js.native
+  var screen: threeLib.Anon_HeightLeft = js.native
   var staticMoving: scala.Boolean = js.native
   var target: threeLib.threeDashCoreMod.Vector3 = js.native
   var target0: threeLib.threeDashCoreMod.Vector3 = js.native

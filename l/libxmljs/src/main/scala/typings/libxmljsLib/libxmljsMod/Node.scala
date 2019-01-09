@@ -26,7 +26,7 @@ class Node () extends js.Object {
   def parent(): Element | Document = js.native
   def prevSibling(): Node | scala.Null = js.native
   def remove(): this.type = js.native
-  def toString(format: libxmljsLib.Anon_Type): java.lang.String = js.native
+  def toString(format: libxmljsLib.Anon_Declaration): java.lang.String = js.native
   def toString(format: scala.Boolean): java.lang.String = js.native
   def `type`(): libxmljsLib.libxmljsLibStrings.comment | libxmljsLib.libxmljsLibStrings.element | libxmljsLib.libxmljsLibStrings.text | libxmljsLib.libxmljsLibStrings.attribute = js.native
 }

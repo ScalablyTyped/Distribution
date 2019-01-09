@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/array/copy-within", JSImport.Namespace)
 @js.native
 object libraryFnArrayCopyDashWithinMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayTarget]
+  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayEnd]
 

@@ -48,7 +48,7 @@ object editorNs extends js.Object {
     val matchBrackets: scala.Boolean
     val occurrencesHighlight: scala.Boolean
     val parameterHints: InternalParameterHintOptions
-    val quickSuggestions: scala.Boolean | monacoDashEditorLib.Anon_Strings
+    val quickSuggestions: scala.Boolean | monacoDashEditorLib.Anon_Comments
     val quickSuggestionsDelay: scala.Double
     val selectionClipboard: scala.Boolean
     val selectionHighlight: scala.Boolean
@@ -351,7 +351,7 @@ object editorNs extends js.Object {
       * Explanation 2: the results of this method will not change if the container of the editor gets repositioned.
       * Warning: the results of this method are inaccurate for positions that are outside the current editor viewport.
       */
-    def getScrolledVisiblePosition(position: monacoDashEditorLib.monacoDashEditorMod.IPosition): monacoDashEditorLib.Anon_Top | scala.Null = js.native
+    def getScrolledVisiblePosition(position: monacoDashEditorLib.monacoDashEditorMod.IPosition): monacoDashEditorLib.Anon_Height | scala.Null = js.native
     /**
       * Get the hit test target at coordinates `clientX` and `clientY`.
       * The coordinates are relative to the top-left of the viewport.
@@ -372,7 +372,7 @@ object editorNs extends js.Object {
       * @see `ITextModel.getValue`
       */
     def getValue(): java.lang.String = js.native
-    def getValue(options: monacoDashEditorLib.Anon_PreserveBOM): java.lang.String = js.native
+    def getValue(options: monacoDashEditorLib.Anon_LineEnding): java.lang.String = js.native
     /**
       * Returns the ranges that are currently visible.
       * Does not account for horizontal scrolling.
@@ -1470,7 +1470,7 @@ object editorNs extends js.Object {
       * Enable quick suggestions (shadow suggestions)
       * Defaults to true.
       */
-    var quickSuggestions: js.UndefOr[scala.Boolean | monacoDashEditorLib.Anon_Strings] = js.undefined
+    var quickSuggestions: js.UndefOr[scala.Boolean | monacoDashEditorLib.Anon_Comments] = js.undefined
     /**
       * Quick suggestions show delay (in ms)
       * Defaults to 500 (ms)
@@ -1986,7 +1986,7 @@ object editorNs extends js.Object {
   }
   
   trait IModelTokensChangedEvent extends js.Object {
-    val ranges: js.Array[monacoDashEditorLib.Anon_ToLineNumber]
+    val ranges: js.Array[monacoDashEditorLib.Anon_FromLineNumber]
   }
   
   trait IMouseTarget extends js.Object {
@@ -2939,7 +2939,7 @@ object editorNs extends js.Object {
   def createWebWorker[T](opts: IWebWorkerOptions): MonacoWebWorker[T] = js.native
   def defineTheme(themeName: java.lang.String, themeData: IStandaloneThemeData): scala.Unit = js.native
   def getModel(uri: monacoDashEditorLib.monacoDashEditorMod.Uri): ITextModel | scala.Null = js.native
-  def getModelMarkers(filter: monacoDashEditorLib.Anon_Resource): js.Array[IMarker] = js.native
+  def getModelMarkers(filter: monacoDashEditorLib.Anon_Owner): js.Array[IMarker] = js.native
   def getModels(): js.Array[ITextModel] = js.native
   def onDidChangeModelLanguage(listener: js.Function1[/* e */ monacoDashEditorLib.Anon_Model, scala.Unit]): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native
   def onDidCreateEditor(listener: js.Function1[/* codeEditor */ ICodeEditor, scala.Unit]): monacoDashEditorLib.monacoDashEditorMod.IDisposable = js.native

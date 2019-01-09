@@ -88,7 +88,7 @@ object ViewService extends js.Object {
     *
     * @returns the normalized uiViewName and uiViewContextAnchor that the view targets
     */
-  def normalizeUIViewTarget(context: atUirouterCoreLib.libViewInterfaceMod.ViewContext): atUirouterCoreLib.Anon_UiViewName = js.native
-  def normalizeUIViewTarget(context: atUirouterCoreLib.libViewInterfaceMod.ViewContext, rawViewName: java.lang.String): atUirouterCoreLib.Anon_UiViewName = js.native
+  def normalizeUIViewTarget(context: atUirouterCoreLib.libViewInterfaceMod.ViewContext): atUirouterCoreLib.Anon_UiViewContextAnchor = js.native
+  def normalizeUIViewTarget(context: atUirouterCoreLib.libViewInterfaceMod.ViewContext, rawViewName: java.lang.String): atUirouterCoreLib.Anon_UiViewContextAnchor = js.native
 }
 

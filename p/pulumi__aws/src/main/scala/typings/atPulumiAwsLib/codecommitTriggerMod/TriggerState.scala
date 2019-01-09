@@ -13,9 +13,7 @@ trait TriggerState extends js.Object {
   val repositoryName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   val triggers: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameCustomDataDestinationArn]
-      ]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BranchesCustomData]]
     ]
   ] = js.undefined
 }

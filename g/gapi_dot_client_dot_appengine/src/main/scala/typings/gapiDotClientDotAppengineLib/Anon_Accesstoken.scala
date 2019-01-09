@@ -13,7 +13,7 @@ trait Anon_Accesstoken extends js.Object {
   var access_token: js.UndefOr[java.lang.String] = js.undefined
   /** Data format for response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
-  /** Part of `parent`. Name of the parent Application resource. Example: apps/myapp. */
+  /** Part of `name`. Name of the application to repair. Example: apps/myapp */
   var appsId: java.lang.String
   /** OAuth bearer token. */
   var bearer_token: js.UndefOr[java.lang.String] = js.undefined

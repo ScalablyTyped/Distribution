@@ -21,7 +21,7 @@ trait CollectionAggregationOptions extends js.Object {
     * Return the query as cursor, on 2.6 > it returns as a real cursor
     * on pre 2.6 it returns as an emulated cursor.
     */
-  var cursor: js.UndefOr[mongodbLib.Anon_BatchSize] = js.undefined
+  var cursor: js.UndefOr[mongodbLib.Anon_BatchSizeNumber] = js.undefined
   /**
     * Explain returns the aggregation execution plan (requires mongodb 2.6 >).
     */

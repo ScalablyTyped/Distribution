@@ -23,7 +23,7 @@ trait ChaiJQueryStatic extends js.Object {
   /**
     * Effects
     */
-  var fx: Anon_Off = js.native
+  var fx: Anon_Interval = js.native
     //TODO: Decide how we want to type this
   var isReady: scala.Boolean = js.native
   /**

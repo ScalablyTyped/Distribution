@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Buffer
   extends stdLib.Uint8Array {
-  var constructor: Anon_IsEncoding = js.native
+  var constructor: Anon_Alloc = js.native
   def compare(otherBuffer: stdLib.Uint8Array): scala.Double = js.native
   def compare(otherBuffer: stdLib.Uint8Array, targetStart: scala.Double): scala.Double = js.native
   def compare(otherBuffer: stdLib.Uint8Array, targetStart: scala.Double, targetEnd: scala.Double): scala.Double = js.native
@@ -98,7 +98,7 @@ trait Buffer
   def swap16(): Buffer = js.native
   def swap32(): Buffer = js.native
   def swap64(): Buffer = js.native
-  def toJSON(): Anon_Type = js.native
+  def toJSON(): Anon_Buffer = js.native
   def toString(encoding: java.lang.String): java.lang.String = js.native
   def toString(encoding: java.lang.String, start: scala.Double): java.lang.String = js.native
   def toString(encoding: java.lang.String, start: scala.Double, end: scala.Double): java.lang.String = js.native

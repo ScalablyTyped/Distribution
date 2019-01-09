@@ -235,7 +235,7 @@ trait ScrollResponderMixin extends SubscribableMixin {
     *
     * @platform ios
     */
-  def scrollResponderZoomTo(rect: reactDashNativeLib.Anon_X): scala.Unit = js.native
-  def scrollResponderZoomTo(rect: reactDashNativeLib.Anon_X, animated: scala.Boolean): scala.Unit = js.native
+  def scrollResponderZoomTo(rect: reactDashNativeLib.Anon_AnimatedHeight): scala.Unit = js.native
+  def scrollResponderZoomTo(rect: reactDashNativeLib.Anon_AnimatedHeight, animated: scala.Boolean): scala.Unit = js.native
 }
 

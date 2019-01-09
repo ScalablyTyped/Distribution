@@ -15,13 +15,13 @@ trait DiagramListener
   ] = js.undefined
   var linksUpdated: js.UndefOr[
     js.Function1[
-      /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[_] with stormDashReactDashDiagramsLib.Anon_Link, 
+      /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[_] with stormDashReactDashDiagramsLib.Anon_IsCreatedLink, 
       scala.Unit
     ]
   ] = js.undefined
   var nodesUpdated: js.UndefOr[
     js.Function1[
-      /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[_] with stormDashReactDashDiagramsLib.Anon_Node, 
+      /* event */ stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseEvent[_] with stormDashReactDashDiagramsLib.Anon_IsCreated, 
       scala.Unit
     ]
   ] = js.undefined

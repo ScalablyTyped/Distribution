@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Union[T] extends Type[T] {
   @JSName("meta")
-  var meta_Union: tcombLib.Anon_KindIdentityName[T] = js.native
+  var meta_Union: tcombLib.Anon_IdentityKindNameTypesArray[T] = js.native
   @JSName("update")
   var update_Original: tcombLib.Update[T] = js.native
   def dispatch(x: js.Any): tcombLib.Constructor[T] = js.native

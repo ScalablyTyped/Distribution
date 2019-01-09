@@ -112,7 +112,7 @@ class DocumentCreated ()
   def load(): DocumentCreated = js.native
   def load(option: java.lang.String): DocumentCreated = js.native
   def load(option: js.Array[java.lang.String]): DocumentCreated = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): DocumentCreated = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): DocumentCreated = js.native
   def load(option: officeDashJsDashPreviewLib.WordNs.InterfacesNs.DocumentCreatedLoadOptions): DocumentCreated = js.native
   /**
     *

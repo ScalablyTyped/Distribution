@@ -16,7 +16,7 @@ object CalendarNs extends js.Object {
      // iOS
     /** Number of minutes from the startDate of the calendar item that the alarm should occur; use negative values to have the alarm occur before the startDate */
     var relativeOffset: js.UndefOr[java.lang.String] = js.undefined
-    var structuredLocation: js.UndefOr[expoLib.Anon_Proximity] = js.undefined
+    var structuredLocation: js.UndefOr[expoLib.Anon_Coords] = js.undefined
   }
   
   @js.native

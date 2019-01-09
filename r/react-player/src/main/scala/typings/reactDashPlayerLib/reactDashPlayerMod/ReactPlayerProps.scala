@@ -24,7 +24,7 @@ trait ReactPlayerProps
   var onError: js.UndefOr[js.Function1[/* error */ js.Any, scala.Unit]] = js.undefined
   var onPause: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onPlay: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onProgress: js.UndefOr[js.Function1[/* state */ reactDashPlayerLib.Anon_Played, scala.Unit]] = js.undefined
+  var onProgress: js.UndefOr[js.Function1[/* state */ reactDashPlayerLib.Anon_Loaded, scala.Unit]] = js.undefined
   var onReady: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onSeek: js.UndefOr[js.Function1[/* seconds */ scala.Double, scala.Unit]] = js.undefined
   var onStart: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

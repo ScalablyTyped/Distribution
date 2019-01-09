@@ -23,7 +23,7 @@ trait Client extends js.Object {
     channel: java.lang.String,
     callback: js.Function2[
       /* error */ nodeLib.Error, 
-      /* names */ js.Array[slateDashIrcLib.Anon_Name], 
+      /* names */ js.Array[slateDashIrcLib.Anon_Mode], 
       scala.Unit
     ]
   ): scala.Unit = js.native

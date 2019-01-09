@@ -17,7 +17,7 @@ trait DataGridProps
     * to render in the grid. For remote data, a string url, or a function
     * that returns a promise.
     */
-  var dataSource: js.Array[_] | java.lang.String | (js.Function1[/* query */ reactDashDatagridLib.Anon_Skip, js.Promise[js.Array[_]]])
+  var dataSource: js.Array[_] | java.lang.String | (js.Function1[/* query */ reactDashDatagridLib.Anon_PageSize, js.Promise[js.Array[_]]])
   var dataSourceCount: js.UndefOr[scala.Double] = js.undefined
   var defaultPage: js.UndefOr[scala.Double] = js.undefined
   var defaultPageSize: js.UndefOr[scala.Double] = js.undefined

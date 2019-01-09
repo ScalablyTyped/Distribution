@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("parse-ms", JSImport.Namespace)
 @js.native
 object parseDashMsMod extends js.Object {
-  def default(ms: scala.Double): parseDashMsLib.Anon_Seconds = js.native
+  def default(ms: scala.Double): parseDashMsLib.Anon_Days = js.native
 }
 

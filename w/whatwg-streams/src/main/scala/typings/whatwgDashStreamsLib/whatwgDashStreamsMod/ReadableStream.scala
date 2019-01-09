@@ -15,7 +15,7 @@ class ReadableStream[R] () extends js.Object {
   val locked: scala.Boolean = js.native
   def cancel(reason: js.Any): js.Promise[scala.Unit] = js.native
   def getReader(): ReadableStreamDefaultReader[R] = js.native
-  def getReader(hasMode: whatwgDashStreamsLib.Anon_Mode): ReadableStreamBYOBReader[R] = js.native
+  def getReader(hasMode: whatwgDashStreamsLib.Anon_Byob): ReadableStreamBYOBReader[R] = js.native
   def pipeThrough[T /* <: ReadableStream[_] */](hasWritableReadable: WritableReadablePair[WritableStream[R], T]): T = js.native
   def pipeThrough[T /* <: ReadableStream[_] */](hasWritableReadable: WritableReadablePair[WritableStream[R], T], options: PipeOptions): T = js.native
   def pipeTo(dest: WritableStream[R]): js.Promise[scala.Unit] = js.native

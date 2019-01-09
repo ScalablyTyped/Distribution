@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Model ()
   extends cesiumLib.cesiumMod.CesiumNs.Model {
-  def this(options: cesiumLib.Anon_ShowScale) = this()
+  def this(options: cesiumLib.Anon_AllowPicking) = this()
   /* CompleteClass */
   override var activeAnimations: cesiumLib.cesiumMod.CesiumNs.ModelAnimationCollection = js.native
   /* CompleteClass */
@@ -57,6 +57,6 @@ class Model ()
 @JSImport("cesium", "Model")
 @js.native
 object Model extends js.Object {
-  def fromGltf(options: cesiumLib.Anon_ShowUrl): cesiumLib.cesiumMod.CesiumNs.Model = js.native
+  def fromGltf(options: cesiumLib.Anon_AllowPickingAsynchronous): cesiumLib.cesiumMod.CesiumNs.Model = js.native
 }
 

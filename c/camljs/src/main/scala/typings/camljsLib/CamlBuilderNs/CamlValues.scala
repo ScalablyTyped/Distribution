@@ -13,10 +13,10 @@ class CamlValues () extends js.Object
 @js.native
 object CamlValues extends js.Object {
   /** Dynamic value that represents a property of the current list */
-  var ListProperty: camljsLib.Anon_DefaultViewUrl = js.native
+  var ListProperty: camljsLib.Anon_Created = js.native
   var Now: java.lang.String = js.native
   /** Dynamic value that represents a property of the current SPWeb */
-  var ProjectProperty: camljsLib.Anon_RecycleBinEnabled = js.native
+  var ProjectProperty: camljsLib.Anon_BlogCategoryTitle = js.native
   /** Dynamic value that represents current date */
   var Today: java.lang.String = js.native
   /** Dynamic value that represents Id of the current user */

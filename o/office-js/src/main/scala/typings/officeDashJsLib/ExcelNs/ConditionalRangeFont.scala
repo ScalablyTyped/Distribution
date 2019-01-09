@@ -75,7 +75,7 @@ class ConditionalRangeFont ()
   def load(): ConditionalRangeFont = js.native
   def load(option: java.lang.String): ConditionalRangeFont = js.native
   def load(option: js.Array[java.lang.String]): ConditionalRangeFont = js.native
-  def load(option: officeDashJsLib.Anon_Select): ConditionalRangeFont = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ConditionalRangeFont = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.ConditionalRangeFontLoadOptions): ConditionalRangeFont = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ConditionalRangeFont): scala.Unit = js.native

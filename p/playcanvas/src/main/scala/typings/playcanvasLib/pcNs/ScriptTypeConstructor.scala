@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ScriptTypeConstructor[S /* <: ScriptType */]
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
-     with org.scalablytyped.runtime.Instantiable1[/* args */ playcanvasLib.Anon_Entity, S] {
+     with org.scalablytyped.runtime.Instantiable1[/* args */ playcanvasLib.Anon_App, S] {
   /**
     * @private
     * @readonly

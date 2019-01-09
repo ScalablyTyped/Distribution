@@ -41,7 +41,7 @@ trait Options extends js.Object {
     * The secret key used to check the signature of the token *or* a *key lookup function*
     */
   var key: js.UndefOr[
-    java.lang.String | js.Array[java.lang.String] | js.Promise[hapiDashAuthDashJwt2Lib.Anon_Key]
+    java.lang.String | js.Array[java.lang.String] | js.Promise[hapiDashAuthDashJwt2Lib.Anon_ExtraInfo]
   ] = js.undefined
   /**
     * function called to decorate the response with authentication headers

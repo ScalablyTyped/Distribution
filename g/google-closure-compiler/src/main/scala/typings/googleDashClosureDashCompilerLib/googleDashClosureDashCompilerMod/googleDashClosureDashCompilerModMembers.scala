@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("google-closure-compiler", JSImport.Namespace)
 @js.native
 object googleDashClosureDashCompilerModMembers extends js.Object {
-  var compiler: googleDashClosureDashCompilerLib.Anon_CONTRIBPATH = js.native
+  var compiler: googleDashClosureDashCompilerLib.Anon_COMPILERPATH = js.native
 }
 

@@ -11,7 +11,7 @@ package object distTransformsTransformRootFieldsMod {
     /* fieldName */ java.lang.String, 
     /* field */ graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]], 
     js.UndefOr[
-      (graphqlLib.typeDefinitionMod.GraphQLFieldConfig[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | graphqlDashToolsLib.Anon_Field | scala.Null
+      (graphqlLib.typeDefinitionMod.GraphQLFieldConfig[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]]) | graphqlDashToolsLib.Anon_ArgNameField | scala.Null
     ]
   ]
 }

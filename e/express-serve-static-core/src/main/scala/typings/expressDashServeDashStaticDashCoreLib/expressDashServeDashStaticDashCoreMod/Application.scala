@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.IRouter because Inheritance from two classes)*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.IRouter because Inheritance from two classes */ @js.native
 trait Application
   extends nodeLib.eventsMod.EventEmitter
      with expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Application {

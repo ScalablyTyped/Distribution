@@ -18,13 +18,13 @@ trait Anon_Accesstoken extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * A client ID that (hopefully) uniquely identifies the client implementation
-    * of the Safe Browsing API.
+    * A client ID that uniquely identifies the client implementation of the Safe
+    * Browsing API.
     */
   var clientId: js.UndefOr[java.lang.String] = js.undefined
   /** The version of the client implementation. */
   var clientVersion: js.UndefOr[java.lang.String] = js.undefined
-  /** A serialized FindFullHashesRequest proto. */
+  /** A serialized FetchThreatListUpdatesRequest proto. */
   var encodedRequest: java.lang.String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined

@@ -45,7 +45,7 @@ class CatalogTable protected ()
   /**
     * A list of columns by which the table is partitioned. Only primitive types are supported as partition keys.
     */
-  val partitionKeys: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_CommentType]]] = js.native
+  val partitionKeys: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Comment]]] = js.native
   /**
     * Retention time for this table.
     */
@@ -53,7 +53,7 @@ class CatalogTable protected ()
   /**
     * A storage descriptor object containing information about the physical storage of this table. You can refer to the [Glue Developer Guide](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-tables.html#aws-glue-api-catalog-tables-StorageDescriptor) for a full explanation of this object.
     */
-  val storageDescriptor: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_NumberOfBucketsSerDeInfo]] = js.native
+  val storageDescriptor: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketColumns]] = js.native
   /**
     * The type of this table (EXTERNAL_TABLE, VIRTUAL_VIEW, etc.).
     */

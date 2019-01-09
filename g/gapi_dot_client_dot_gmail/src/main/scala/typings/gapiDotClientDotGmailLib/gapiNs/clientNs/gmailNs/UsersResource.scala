@@ -13,10 +13,10 @@ trait UsersResource extends js.Object {
   var settings: SettingsResource
   var threads: ThreadsResource
   /** Gets the current user's Gmail profile. */
-  def getProfile(request: gapiDotClientDotGmailLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Profile]
+  def getProfile(request: gapiDotClientDotGmailLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Profile]
   /** Stop receiving push notifications for the given user mailbox. */
-  def stop(request: gapiDotClientDotGmailLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+  def stop(request: gapiDotClientDotGmailLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   /** Set up or update a push notification watch on the given user mailbox. */
-  def watch(request: gapiDotClientDotGmailLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[WatchResponse]
+  def watch(request: gapiDotClientDotGmailLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[WatchResponse]
 }
 

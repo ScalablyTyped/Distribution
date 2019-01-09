@@ -31,6 +31,6 @@ class DataPackagePropertySetView () extends IDataPackagePropertySetView {
   /* CompleteClass */
   override def lookup(key: java.lang.String): js.Any = js.native
   /* CompleteClass */
-  override def split(): winrtLib.Anon_SecondFirstIMapViewK[java.lang.String, js.Any] = js.native
+  override def split(): winrtLib.Anon_First[java.lang.String, js.Any] = js.native
 }
 

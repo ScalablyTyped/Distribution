@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Icon")
 @js.native
 class Icon ()
-  extends Component[reactDashOnsenuiLib.Anon_Size, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_180, js.Any]
 

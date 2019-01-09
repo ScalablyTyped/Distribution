@@ -81,6 +81,6 @@ class BaseService protected () extends js.Object {
 @JSImport("shopify-prime/dist/infrastructure/base_service", "BaseService")
 @js.native
 object BaseService extends js.Object {
-  def buildDefaultHeaders(): shopifyDashPrimeLib.Anon_UserAgent = js.native
+  def buildDefaultHeaders(): shopifyDashPrimeLib.Anon_Accept = js.native
 }
 

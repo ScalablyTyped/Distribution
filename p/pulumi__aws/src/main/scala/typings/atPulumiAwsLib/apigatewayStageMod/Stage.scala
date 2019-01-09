@@ -21,7 +21,7 @@ class Stage protected ()
   /**
     * Enables access logs for the API stage. Detailed below.
     */
-  val accessLogSettings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DestinationArnFormat]] = js.native
+  val accessLogSettings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DestinationArn]] = js.native
   /**
     * Specifies whether a cache cluster is enabled for the stage
     */

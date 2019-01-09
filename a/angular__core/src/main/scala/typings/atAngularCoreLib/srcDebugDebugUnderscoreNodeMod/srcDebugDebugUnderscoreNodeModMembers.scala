@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/core/src/debug/debug_node", JSImport.Namespace)
 @js.native
 object srcDebugDebugUnderscoreNodeModMembers extends js.Object {
-  val DebugElement: atAngularCoreLib.Anon_ArgsAny = js.native
-  val DebugNode: atAngularCoreLib.Anon_ArgsAnyDebugNode = js.native
+  val DebugElement: atAngularCoreLib.Anon_Args = js.native
+  val DebugNode: atAngularCoreLib.Anon_ArgsAny = js.native
   def asNativeElements(debugEls: js.Array[DebugElement]): js.Any = js.native
   def getAllDebugNodes(): js.Array[DebugNode] = js.native
   def getDebugNode(nativeNode: js.Any): DebugNode | scala.Null = js.native

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RectangleOutlineGeometry protected ()
   extends cesiumLib.cesiumMod.CesiumNs.RectangleOutlineGeometry {
-  def this(options: cesiumLib.Anon_ExtrudedHeight) = this()
+  def this(options: cesiumLib.Anon_EllipsoidExtrudedHeightGranularityHeightRectangleRotation) = this()
 }
 
 @JSImport("cesium", "RectangleOutlineGeometry")

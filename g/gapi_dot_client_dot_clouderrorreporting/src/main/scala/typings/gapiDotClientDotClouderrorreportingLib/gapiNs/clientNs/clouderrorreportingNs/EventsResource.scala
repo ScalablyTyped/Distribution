@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait EventsResource extends js.Object {
   /** Lists the specified events. */
-  def list(request: gapiDotClientDotClouderrorreportingLib.Anon_ProjectNameAccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListEventsResponse]
+  def list(request: gapiDotClientDotClouderrorreportingLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListEventsResponse]
   /**
     * Report an individual error event.
     *
@@ -18,6 +18,6 @@ trait EventsResource extends js.Object {
     * a `key` parameter. For example:
     * <pre>POST https://clouderrorreporting.googleapis.com/v1beta1/projects/example-project/events:report?key=123ABC456</pre>
     */
-  def report(request: gapiDotClientDotClouderrorreportingLib.Anon_ProjectNameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def report(request: gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
 }
 

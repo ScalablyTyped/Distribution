@@ -12,7 +12,7 @@ trait VpcPeeringConnectionArgs extends js.Object {
     * the peering connection (a maximum of one).
     */
   val accepter: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowRemoteVpcDnsResolutionAllowClassicLinkToRemoteVpc]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution]
   ] = js.undefined
   /**
     * Accept the peering (both VPCs need to be in the same AWS account).
@@ -38,7 +38,7 @@ trait VpcPeeringConnectionArgs extends js.Object {
     * the peering connection (a maximum of one).
     */
   val requester: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowRemoteVpcDnsResolutionAllowClassicLinkToRemoteVpc]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution]
   ] = js.undefined
   /**
     * A mapping of tags to assign to the resource.

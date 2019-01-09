@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UISplitter extends js.Object {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: juiLib.Anon_BarStyle): this.type = js.native
+  def apply(selector: js.Any, options: juiLib.Anon_BarSize): this.type = js.native
   @JSName("setDirection")
   def setDirection_horizontal(d: juiLib.juiLibStrings.horizontal): scala.Unit = js.native
   @JSName("setDirection")

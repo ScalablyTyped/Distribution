@@ -61,7 +61,7 @@ class IconSetConditionalFormat ()
   def load(): IconSetConditionalFormat = js.native
   def load(option: java.lang.String): IconSetConditionalFormat = js.native
   def load(option: js.Array[java.lang.String]): IconSetConditionalFormat = js.native
-  def load(option: officeDashJsLib.Anon_Select): IconSetConditionalFormat = js.native
+  def load(option: officeDashJsLib.Anon_Expand): IconSetConditionalFormat = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.IconSetConditionalFormatLoadOptions): IconSetConditionalFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: IconSetConditionalFormat): scala.Unit = js.native

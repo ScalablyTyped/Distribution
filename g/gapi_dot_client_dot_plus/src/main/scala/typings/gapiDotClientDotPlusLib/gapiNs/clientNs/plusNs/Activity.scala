@@ -9,7 +9,7 @@ trait Activity extends js.Object {
   /** Identifies who has access to see this activity. */
   var access: js.UndefOr[Acl] = js.undefined
   /** The person who performed this activity. */
-  var actor: js.UndefOr[gapiDotClientDotPlusLib.Anon_DisplayName] = js.undefined
+  var actor: js.UndefOr[gapiDotClientDotPlusLib.Anon_ClientSpecificActorInfo] = js.undefined
   /** Street address where this activity occurred. */
   var address: js.UndefOr[java.lang.String] = js.undefined
   /** Additional content added by the person who shared this activity, applicable only when resharing an activity. */

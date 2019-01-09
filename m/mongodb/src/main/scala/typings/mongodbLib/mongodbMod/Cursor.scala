@@ -96,7 +96,7 @@ class Cursor[T] ()
   def sort(keyOrList: js.Object, direction: scala.Double): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#stream */
   def stream(): Cursor[T] = js.native
-  def stream(options: mongodbLib.Anon_TransformFunction): Cursor[T] = js.native
+  def stream(options: mongodbLib.Anon_Transform): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#toArray */
   def toArray(): js.Promise[js.Array[T]] = js.native
   def toArray(callback: MongoCallback[js.Array[T]]): scala.Unit = js.native

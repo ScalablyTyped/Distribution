@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ trait AsyncProps[T] extends js.Object {
   var children: js.UndefOr[reactDashAsyncLib.AsyncChildren[T]] = js.undefined
   var deferFn: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Promise[T]]] = js.undefined

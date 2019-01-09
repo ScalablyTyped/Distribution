@@ -18,6 +18,6 @@ class Tab protected () extends js.Object {
 @JSImport("react-weui", "Tab")
 @js.native
 object Tab extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_DefaultIndexType = js.native
+  var defaultProps: reactDashWeuiLib.Anon_DefaultIndex = js.native
 }
 

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait FaceFeature extends js.Object {
   var bottomMouthPosition: js.UndefOr[Point] = js.undefined
-  var bounds: expoLib.Anon_SizeOrigin
+  var bounds: expoLib.Anon_Origin
   var leftCheekPosition: js.UndefOr[Point] = js.undefined
   var leftEarPosition: js.UndefOr[Point] = js.undefined
   var leftEyeOpenProbability: js.UndefOr[scala.Double] = js.undefined

@@ -42,7 +42,7 @@ trait SingleDatePickerShape extends js.Object {
   var navPrev: js.UndefOr[java.lang.String | reactLib.reactMod.Global.JSXNs.Element] = js.native
   var noBorder: js.UndefOr[scala.Boolean] = js.native
   var numberOfMonths: js.UndefOr[scala.Double] = js.native
-  var onClose: js.UndefOr[js.Function1[/* final */ reactDashDatesLib.Anon_StartDateEndDate, scala.Unit]] = js.native
+  var onClose: js.UndefOr[js.Function1[/* final */ reactDashDatesLib.Anon_EndDateStartDate, scala.Unit]] = js.native
   var onNextMonthClick: js.UndefOr[
     js.Function1[
       /* newCurrentMonth */ reactDashDatesLib.reactDashDatesMod.momentPropTypesNs.momentObj, 
@@ -78,7 +78,7 @@ trait SingleDatePickerShape extends js.Object {
   ] = js.native
   var renderMonthElement: js.UndefOr[
     js.Function1[
-      /* props */ reactDashDatesLib.Anon_OnYearSelect, 
+      /* props */ reactDashDatesLib.Anon_CurrentMonth, 
       java.lang.String | reactLib.reactMod.Global.JSXNs.Element
     ]
   ] = js.native

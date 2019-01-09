@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait I18nRegionsResource extends js.Object {
   /** Returns a list of content regions that the YouTube website supports. */
-  def list(request: gapiDotClientDotYoutubeLib.Anon_HlPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[I18nRegionListResponse]
+  def list(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsHlKey): gapiDotClientLib.gapiNs.clientNs.Request[I18nRegionListResponse]
 }
 

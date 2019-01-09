@@ -27,7 +27,7 @@ trait GetAmiResult extends js.Object {
     * * `block_device_mappings.#.virtual_name` - The virtual device name (for
     * instance stores).
     */
-  val blockDeviceMappings: js.Array[atPulumiAwsLib.Anon_Ebs]
+  val blockDeviceMappings: js.Array[atPulumiAwsLib.Anon_DeviceNameEbsKey]
   /**
     * The date and time the image was created.
     */
@@ -84,7 +84,7 @@ trait GetAmiResult extends js.Object {
     * * `product_codes.#.product_code_id` - The product code.
     * * `product_codes.#.product_code_type` - The type of product code.
     */
-  val productCodes: js.Array[atPulumiAwsLib.Anon_ProductCodeType]
+  val productCodes: js.Array[atPulumiAwsLib.Anon_ProductCodeId]
   /**
     * `true` if the image has public launch permissions.
     */

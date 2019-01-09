@@ -57,7 +57,7 @@ class NfsFileShare protected ()
   /**
     * Nested argument with file share default values. More information below.
     */
-  val nfsFileShareDefaults: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_GroupIdDirectoryMode]] = js.native
+  val nfsFileShareDefaults: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DirectoryMode]] = js.native
   /**
     * Access Control List permission for S3 bucket objects. Defaults to `private`.
     */

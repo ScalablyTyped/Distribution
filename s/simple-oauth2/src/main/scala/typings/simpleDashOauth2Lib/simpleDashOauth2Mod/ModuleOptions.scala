@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ModuleOptions[ClientIdName /* <: java.lang.String */] extends js.Object {
   var auth: simpleDashOauth2Lib.Anon_AuthorizeHost
-  var client: simpleDashOauth2Lib.Anon_IdParamName[ClientIdName]
+  var client: simpleDashOauth2Lib.Anon_Id[ClientIdName]
   /**
     * Used to set global options to the internal http library (wreck).
     * All options except baseUrl are allowed

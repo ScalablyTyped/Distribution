@@ -25,7 +25,7 @@ class NfsLocation protected ()
   /**
     * Configuration block containing information for connecting to the NFS File System.
     */
-  val onPremConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AgentArnsArray] = js.native
+  val onPremConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AgentArns] = js.native
   /**
     * Specifies the IP address or DNS name of the NFS server. The DataSync Agent(s) use this to mount the NFS server.
     */

@@ -11,9 +11,9 @@ trait Camera extends js.Object {
   var readPrefix: java.lang.String
   var x: scala.Double
   var y: scala.Double
-  def cameraPosition(x: scala.Double, y: scala.Double): sigmajsLib.Anon_Y
+  def cameraPosition(x: scala.Double, y: scala.Double): sigmajsLib.Anon_X
   def goTo(settings: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit
-  def graphPosition(x: scala.Double, y: scala.Double): sigmajsLib.Anon_Y
+  def graphPosition(x: scala.Double, y: scala.Double): sigmajsLib.Anon_X
   def settings(setting: java.lang.String): js.Any
 }
 

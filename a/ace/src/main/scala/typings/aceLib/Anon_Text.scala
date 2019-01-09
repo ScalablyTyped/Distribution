@@ -7,18 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Text
-  extends org.scalablytyped.runtime.Instantiable2[
-      (/* text */ js.Array[java.lang.String]) | (/* text */ java.lang.String), 
-      (/* mode */ java.lang.String) | (/* mode */ aceLib.AceAjaxNs.TextMode), 
-      aceLib.AceAjaxNs.IEditSession
-    ]
-     with /**
-  * Sets up a new `EditSession` and associates it with the given `Document` and `TextMode`.
-  * @param text [If `text` is a `Document`, it associates the `EditSession` with it. Otherwise, a new `Document` is created, with the initial text]{: #textParam}
-  * @param mode [The inital language mode to use for the document]{: #modeParam}
+  extends /**
+  * Creates a new `Document`. If `text` is included, the `Document` contains those strings; otherwise, it's empty.
+  * @param text The starting text
   **/
-org.scalablytyped.runtime.Instantiable1[
+org.scalablytyped.runtime.Instantiable0[aceLib.AceAjaxNs.Document]
+     with org.scalablytyped.runtime.Instantiable1[
       (/* text */ js.Array[java.lang.String]) | (/* text */ java.lang.String), 
-      aceLib.AceAjaxNs.IEditSession
+      aceLib.AceAjaxNs.Document
     ]
 

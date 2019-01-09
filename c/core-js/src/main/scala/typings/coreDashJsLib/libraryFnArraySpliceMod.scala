@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/array/splice", JSImport.Namespace)
 @js.native
 object libraryFnArraySpliceMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayStart]
+  extends org.scalablytyped.runtime.TopLevel[Anon_ArrayDeleteCount]
 

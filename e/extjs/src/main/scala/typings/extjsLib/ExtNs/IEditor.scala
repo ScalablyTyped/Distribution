@@ -33,12 +33,8 @@ trait IEditor
   var completeEdit: js.UndefOr[js.Function1[/* remainVisible */ js.UndefOr[scala.Boolean], scala.Unit]] = js.undefined
   /** [Config Option] (Boolean) */
   var completeOnEnter: js.UndefOr[scala.Boolean] = js.undefined
-  /** [Config Option] (Boolean) */
-  var constrain: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (Ext.form.field.Field) */
   var field: js.UndefOr[extjsLib.ExtNs.formNs.fieldNs.IField] = js.undefined
-  /** [Config Option] (Boolean) */
-  var focusOnToFront: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Gets the data value of the editor
   		* @returns Object The data value
   		*/
@@ -67,8 +63,6 @@ trait IEditor
   		* @param value Object Any valid value supported by the underlying field
   		*/
   var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
-  /** [Config Option] (Boolean/String) */
-  var shadow: js.UndefOr[js.Any] = js.undefined
   /** [Method] Starts the editing process and shows the editor
   		* @param el String/HTMLElement/Ext.Element The element to edit
   		* @param value String A value to initialize the editor with. If a value is not provided, it defaults to the innerHTML of el.

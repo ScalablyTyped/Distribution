@@ -35,11 +35,7 @@ object srcAnimationUnderscoreMetadataModMembers extends js.Object {
   def stagger(timings: scala.Double, animation: AnimationMetadata): AnimationStaggerMetadata = js.native
   def stagger(timings: scala.Double, animation: js.Array[AnimationMetadata]): AnimationStaggerMetadata = js.native
   def state(name: java.lang.String, styles: AnimationStyleMetadata): AnimationStateMetadata = js.native
-  def state(
-    name: java.lang.String,
-    styles: AnimationStyleMetadata,
-    options: atAngularAnimationsLib.Anon_Params
-  ): AnimationStateMetadata = js.native
+  def state(name: java.lang.String, styles: AnimationStyleMetadata, options: atAngularAnimationsLib.Anon_Name): AnimationStateMetadata = js.native
   def style(tokens: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]): AnimationStyleMetadata = js.native
   @JSName("style")
   def `style_*`(tokens: atAngularAnimationsLib.atAngularAnimationsLibStrings.`*`): AnimationStyleMetadata = js.native

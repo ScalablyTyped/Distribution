@@ -11,6 +11,6 @@ trait GetSecretArgs extends js.Object {
     * One or more encrypted payload definitions from the KMS
     * service.  See the Secret Definitions below.
     */
-  val secrets: js.Array[atPulumiAwsLib.Anon_Name]
+  val secrets: js.Array[atPulumiAwsLib.Anon_Context]
 }
 

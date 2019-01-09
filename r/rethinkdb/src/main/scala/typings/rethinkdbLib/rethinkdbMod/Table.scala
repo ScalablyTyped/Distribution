@@ -139,8 +139,8 @@ trait Table
   def indexCreate(name: java.lang.String, index: IndexFunction[_]): Operation[CreateResult] = js.native
   def indexDrop(name: java.lang.String): Operation[DropResult] = js.native
   def indexList(): Operation[js.Array[java.lang.String]] = js.native
-  def indexWait(): Operation[js.Array[rethinkdbLib.Anon_Outdated]] = js.native
-  def indexWait(name: java.lang.String): Operation[js.Array[rethinkdbLib.Anon_Outdated]] = js.native
+  def indexWait(): Operation[js.Array[rethinkdbLib.Anon_Function]] = js.native
+  def indexWait(name: java.lang.String): Operation[js.Array[rethinkdbLib.Anon_Function]] = js.native
   def insert(obj: js.Any): Operation[WriteResult] = js.native
   def insert(obj: js.Any, options: InsertOptions): Operation[WriteResult] = js.native
   def insert(obj: js.Array[_]): Operation[WriteResult] = js.native

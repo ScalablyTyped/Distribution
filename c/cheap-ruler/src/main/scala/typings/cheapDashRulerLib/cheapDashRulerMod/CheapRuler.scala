@@ -58,6 +58,6 @@ class CheapRuler ()
   override def pointOnLine(
     line: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Line,
     p: cheapDashRulerLib.cheapDashRulerMod.cheapRulerNs.Point
-  ): cheapDashRulerLib.Anon_T = js.native
+  ): cheapDashRulerLib.Anon_Index = js.native
 }
 

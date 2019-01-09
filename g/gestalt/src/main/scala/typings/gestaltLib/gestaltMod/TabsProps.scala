@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TabsProps extends js.Object {
   var activeTabIndex: scala.Double
-  var tabs: js.Array[gestaltLib.Anon_Text]
+  var tabs: js.Array[gestaltLib.Anon_Href]
   def onChange(args: gestaltLib.Anon_ActiveTabIndex): scala.Unit
 }
 

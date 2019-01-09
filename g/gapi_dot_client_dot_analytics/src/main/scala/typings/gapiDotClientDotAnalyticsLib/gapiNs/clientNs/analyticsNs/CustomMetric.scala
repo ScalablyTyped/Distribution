@@ -25,7 +25,7 @@ trait CustomMetric extends js.Object {
   /** Name of the custom metric. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** Parent link for the custom metric. Points to the property to which the custom metric belongs. */
-  var parentLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Type] = js.undefined
+  var parentLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Href] = js.undefined
   /** Scope of the custom metric: HIT or PRODUCT. */
   var scope: js.UndefOr[java.lang.String] = js.undefined
   /** Link for the custom metric */

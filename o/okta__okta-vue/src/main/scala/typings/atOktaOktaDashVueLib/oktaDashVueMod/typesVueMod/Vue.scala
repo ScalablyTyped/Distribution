@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait Vue extends js.Object {
   @JSName("$auth")
-  var $auth: atOktaOktaDashVueLib.Anon_Logout
+  var $auth: atOktaOktaDashVueLib.Anon_AdditionalParams
 }
 

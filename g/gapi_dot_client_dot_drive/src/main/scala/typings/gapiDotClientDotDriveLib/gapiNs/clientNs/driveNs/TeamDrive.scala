@@ -10,11 +10,11 @@ trait TeamDrive extends js.Object {
     * An image file and cropping parameters from which a background image for this Team Drive is set. This is a write only field; it can only be set on
     * drive.teamdrives.update requests that don't set themeId. When specified, all fields of the backgroundImageFile must be set.
     */
-  var backgroundImageFile: js.UndefOr[gapiDotClientDotDriveLib.Anon_XCoordinate] = js.undefined
+  var backgroundImageFile: js.UndefOr[gapiDotClientDotDriveLib.Anon_Id] = js.undefined
   /** A short-lived link to this Team Drive's background image. */
   var backgroundImageLink: js.UndefOr[java.lang.String] = js.undefined
   /** Capabilities the current user has on this Team Drive. */
-  var capabilities: js.UndefOr[gapiDotClientDotDriveLib.Anon_CanChangeTeamDriveBackground] = js.undefined
+  var capabilities: js.UndefOr[gapiDotClientDotDriveLib.Anon_CanAddChildrenCanChangeTeamDriveBackground] = js.undefined
   /** The color of this Team Drive as an RGB hex string. It can only be set on a drive.teamdrives.update request that does not set themeId. */
   var colorRgb: js.UndefOr[java.lang.String] = js.undefined
   /** The time at which the Team Drive was created (RFC 3339 date-time). */

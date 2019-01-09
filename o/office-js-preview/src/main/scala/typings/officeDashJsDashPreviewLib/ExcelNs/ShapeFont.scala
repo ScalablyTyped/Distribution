@@ -85,7 +85,7 @@ class ShapeFont ()
   def load(): ShapeFont = js.native
   def load(option: java.lang.String): ShapeFont = js.native
   def load(option: js.Array[java.lang.String]): ShapeFont = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): ShapeFont = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): ShapeFont = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ShapeFontLoadOptions): ShapeFont = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

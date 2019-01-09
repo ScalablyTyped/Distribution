@@ -21,7 +21,7 @@ trait Options extends js.Object {
   /**
     * An object containing `content` and `name`.
     */
-  var manifest: webpackLib.Anon_Name | java.lang.String
+  var manifest: webpackLib.Anon_Content | java.lang.String
   /**
     * The name where the DLL is exposed.
     *

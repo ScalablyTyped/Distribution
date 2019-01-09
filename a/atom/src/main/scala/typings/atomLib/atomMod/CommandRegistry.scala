@@ -31,7 +31,7 @@ trait CommandRegistry extends js.Object {
     */
   def dispatch(target: stdLib.Node, commandName: java.lang.String): js.Promise[scala.Unit] | scala.Null = js.native
   /** Find all registered commands matching a query. */
-  def findCommands(params: atomLib.Anon_Target): js.Array[atomLib.Anon_DisplayName] = js.native
+  def findCommands(params: atomLib.Anon_Target): js.Array[atomLib.Anon_DescriptionDisplayName] = js.native
   /** Invoke the given callback after dispatching a command event. */
   def onDidDispatch(callback: js.Function1[/* event */ CommandEvent[stdLib.EventTarget], scala.Unit]): Disposable = js.native
   /** Invoke the given callback before dispatching a command event. */

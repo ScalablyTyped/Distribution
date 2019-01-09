@@ -9,11 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcRender3ModMembers extends js.Object {
   val NO_CHANGE: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
-  val QueryList: org.scalablytyped.runtime.Instantiable0[
-    atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[
-      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T */ js.Any
-    ]
-  ] = js.native
+  val QueryList: org.scalablytyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[js.Object]] = js.native
   def InheritDefinitionFeature(definition: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[_]): scala.Unit = js.native
   def InheritDefinitionFeature(definition: atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDef[_]): scala.Unit = js.native
   def LifecycleHooksFeature(component: js.Any, `def`: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentDef[_]): scala.Unit = js.native
@@ -80,13 +76,13 @@ object srcRender3ModMembers extends js.Object {
   def container(index: scala.Double): scala.Unit = js.native
   def containerRefreshEnd(): scala.Unit = js.native
   def containerRefreshStart(index: scala.Double): scala.Unit = js.native
-  def defineBase[T](baseDefinition: atAngularCoreLib.Anon_Outputs[T]): atAngularCoreLib.srcRender3InterfacesDefinitionMod.BaseDef[T] = js.native
-  def defineComponent[T](componentDefinition: atAngularCoreLib.Anon_Directives[T]): scala.Nothing = js.native
-  def defineDirective[T](directiveDefinition: atAngularCoreLib.Anon_Features[T]): scala.Nothing = js.native
+  def defineBase[T](baseDefinition: atAngularCoreLib.Anon_Inputs[T]): atAngularCoreLib.srcRender3InterfacesDefinitionMod.BaseDef[T] = js.native
+  def defineComponent[T](componentDefinition: atAngularCoreLib.Anon_Attributes[T]): scala.Nothing = js.native
+  def defineDirective[T](directiveDefinition: atAngularCoreLib.Anon_AttributesContentQueries[T]): scala.Nothing = js.native
   def defineNgModule[T](
-    `def`: atAngularCoreLib.Anon_TypeT[T] with stdLib.Partial[atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModuleDef[T]]
+    `def`: atAngularCoreLib.Anon_Type[T] with stdLib.Partial[atAngularCoreLib.srcMetadataNgUnderscoreModuleMod.NgModuleDef[T]]
   ): scala.Nothing = js.native
-  def definePipe[T](pipeDef: atAngularCoreLib.Anon_Type[T]): scala.Nothing = js.native
+  def definePipe[T](pipeDef: atAngularCoreLib.Anon_FactoryName[T]): scala.Nothing = js.native
   def detectChanges[T](component: T): scala.Unit = js.native
   def directiveInject[T](token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T]): T = js.native
   def directiveInject[T](

@@ -11,23 +11,23 @@ trait Health extends js.Object {
     * Returns the checks of a service
     */
   @JSName("checks")
-  var checks_Original: consulLib.Anon_ServiceCallback = js.native
+  var checks_Original: consulLib.Anon_CallbackOptsServiceChecksOptions = js.native
   var consul: Consul = js.native
   /**
     * Returns the health info of a node
     */
   @JSName("node")
-  var node_Original: consulLib.Anon_Node = js.native
+  var node_Original: consulLib.Anon_CallbackNodeOptsNodeOptions = js.native
   /**
     * Returns the nodes and health info of a service
     */
   @JSName("service")
-  var service_Original: consulLib.Anon_Service = js.native
+  var service_Original: consulLib.Anon_CallbackOptsServiceServiceOptions = js.native
   /**
     * Returns the checks in a given state
     */
   @JSName("state")
-  var state_Original: consulLib.Anon_State = js.native
+  var state_Original: consulLib.Anon_CallbackOptsState = js.native
   /**
     * Returns the checks of a service
     */

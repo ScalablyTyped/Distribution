@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.utilNs.IBindable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait IAbstractSelectionModel
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.utilNs.IBindable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined bindStore, bindStoreListeners, getStore, getStoreListeners, onBindStore, onUnbindStore, unbindStoreListeners */ trait IAbstractSelectionModel
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Config Option] (Boolean) */
   var allowDeselect: js.UndefOr[scala.Boolean] = js.undefined
@@ -15,7 +15,7 @@ trait IAbstractSelectionModel
   		* @param initial Object
   		*/
   var bindStore: js.UndefOr[
-    js.Function2[/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], scala.Unit]
+    (js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit]) | (js.Function2[/* store */ js.UndefOr[js.Any], /* initial */ js.UndefOr[js.Any], scala.Unit])
   ] = js.undefined
   /** [Method] Binds listeners for this component to the store
   		* @param store Ext.data.AbstractStore The store to bind to
@@ -68,7 +68,9 @@ trait IAbstractSelectionModel
   /** [Method] Gets the listeners to bind to a new store
   		* @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
   		*/
-  var getStoreListeners: js.UndefOr[js.Function0[_]] = js.undefined
+  var getStoreListeners: js.UndefOr[
+    js.Function0[_] | (js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IStore], _])
+  ] = js.undefined
   /** [Method] Returns true if there are any a selected records
   		* @returns Boolean
   		*/

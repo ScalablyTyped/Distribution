@@ -13,7 +13,7 @@ object lzmaDashNativeModMembers extends js.Object {
   def Compressor(preset: Preset, options: LzmaOptions): JSLzmaStream = js.native
   def Decompressor(): JSLzmaStream = js.native
   def Decompressor(options: LzmaOptions): JSLzmaStream = js.native
-  def LZMA(): lzmaDashNativeLib.Anon_Compress = js.native
+  def LZMA(): lzmaDashNativeLib.Anon_Buf = js.native
   def checkSize(check: Check): scala.Double = js.native
   def compress(buf: java.lang.String): scala.Unit = js.native
   def compress(buf: java.lang.String, options: LzmaOptions): scala.Unit = js.native

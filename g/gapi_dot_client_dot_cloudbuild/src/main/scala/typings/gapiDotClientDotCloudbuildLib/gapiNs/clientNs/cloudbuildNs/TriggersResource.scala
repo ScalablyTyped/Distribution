@@ -11,30 +11,30 @@ trait TriggersResource extends js.Object {
     *
     * This API is experimental.
     */
-  def create(request: gapiDotClientDotCloudbuildLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger]
+  def create(request: gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger]
   /**
     * Deletes an BuildTrigger by its project ID and trigger ID.
     *
     * This API is experimental.
     */
-  def delete(request: gapiDotClientDotCloudbuildLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Gets information about a BuildTrigger.
     *
     * This API is experimental.
     */
-  def get(request: gapiDotClientDotCloudbuildLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger]
+  def get(request: gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger]
   /**
     * Lists existing BuildTrigger.
     *
     * This API is experimental.
     */
-  def list(request: gapiDotClientDotCloudbuildLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListBuildTriggersResponse]
+  def list(request: gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[ListBuildTriggersResponse]
   /**
     * Updates an BuildTrigger by its project ID and trigger ID.
     *
     * This API is experimental.
     */
-  def patch(request: gapiDotClientDotCloudbuildLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger]
+  def patch(request: gapiDotClientDotCloudbuildLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[BuildTrigger]
 }
 

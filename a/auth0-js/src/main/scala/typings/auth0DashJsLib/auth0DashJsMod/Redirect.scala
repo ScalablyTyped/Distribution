@@ -15,7 +15,7 @@ class Redirect protected () extends js.Object {
     * This method is not compatible with API Auth so if you need to fetch API tokens with audience
     * you should use {@link authorize} or {@link login}.
     */
-  def loginWithCredentials(options: auth0DashJsLib.Anon_RedirectUri, callback: Auth0Callback[_, Auth0Error]): scala.Unit = js.native
+  def loginWithCredentials(options: auth0DashJsLib.Anon_Fragment, callback: Auth0Callback[_, Auth0Error]): scala.Unit = js.native
   /**
     * Signs up a new user and automatically logs the user in after the signup.
     */

@@ -162,14 +162,10 @@ object RolesNs extends js.Object {
     */
   def getUsersInRole(role: java.lang.String): meteorLib.MongoNs.Cursor[meteorLib.MeteorNs.User] = js.native
   def getUsersInRole(role: java.lang.String, group: java.lang.String): meteorLib.MongoNs.Cursor[meteorLib.MeteorNs.User] = js.native
-  def getUsersInRole(role: java.lang.String, group: java.lang.String, options: meteorDashRolesLib.Anon_Reactive): meteorLib.MongoNs.Cursor[meteorLib.MeteorNs.User] = js.native
+  def getUsersInRole(role: java.lang.String, group: java.lang.String, options: meteorDashRolesLib.Anon_Fields): meteorLib.MongoNs.Cursor[meteorLib.MeteorNs.User] = js.native
   def getUsersInRole(role: js.Array[java.lang.String]): meteorLib.MongoNs.Cursor[meteorLib.MeteorNs.User] = js.native
   def getUsersInRole(role: js.Array[java.lang.String], group: java.lang.String): meteorLib.MongoNs.Cursor[meteorLib.MeteorNs.User] = js.native
-  def getUsersInRole(
-    role: js.Array[java.lang.String],
-    group: java.lang.String,
-    options: meteorDashRolesLib.Anon_Reactive
-  ): meteorLib.MongoNs.Cursor[meteorLib.MeteorNs.User] = js.native
+  def getUsersInRole(role: js.Array[java.lang.String], group: java.lang.String, options: meteorDashRolesLib.Anon_Fields): meteorLib.MongoNs.Cursor[meteorLib.MeteorNs.User] = js.native
   /**
     * Remove users from roles
     *

@@ -24,12 +24,12 @@ class DefaultSecurityGroup protected ()
     * Can be specified multiple times for each
     * egress rule. Each egress block supports fields documented below.
     */
-  val egress: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_PrefixListIdsToPort]]] = js.native
+  val egress: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_CidrBlocks]]] = js.native
   /**
     * Can be specified multiple times for each
     * ingress rule. Each ingress block supports fields documented below.
     */
-  val ingress: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_PrefixListIdsToPort]]] = js.native
+  val ingress: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_CidrBlocks]]] = js.native
   /**
     * The name of the security group
     */

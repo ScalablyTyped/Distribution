@@ -20,6 +20,6 @@ class Picker protected () extends js.Object {
 @JSImport("react-weui", "Picker")
 @js.native
 object Picker extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_Actions = js.native
+  var defaultProps: reactDashWeuiLib.Anon_ActionsGroups = js.native
 }
 

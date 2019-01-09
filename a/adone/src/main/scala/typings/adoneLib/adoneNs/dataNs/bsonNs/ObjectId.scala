@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ObjectId ()
   extends adoneLib.adoneNs.dataNs.bsonNs.INs.Type {
-  def this(id: adoneLib.Anon_ToHexStringId) = this()
+  def this(id: adoneLib.Anon_Id) = this()
   def this(id: ObjectId) = this()
   def this(id: java.lang.String) = this()
   def this(id: nodeLib.Buffer) = this()

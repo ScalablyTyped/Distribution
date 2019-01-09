@@ -49,19 +49,19 @@ object browserActionNsMembers extends js.Object {
     * @param details Specifies to which tab or window the value should be set, or from which one it should be
     *     retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  def setBadgeBackgroundColor(details: firefoxDashWebextDashBrowserLib.Anon_WindowIdColor): js.Promise[scala.Unit] = js.native
+  def setBadgeBackgroundColor(details: firefoxDashWebextDashBrowserLib.Anon_ColorTabId): js.Promise[scala.Unit] = js.native
   /**
     * Sets the badge text for the browser action. The badge is displayed on top of the icon.
     * @param details Specifies to which tab or window the value should be set, or from which one it should be
     *     retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  def setBadgeText(details: firefoxDashWebextDashBrowserLib.Anon_TextWindowId): js.Promise[scala.Unit] = js.native
+  def setBadgeText(details: firefoxDashWebextDashBrowserLib.Anon_TabIdText): js.Promise[scala.Unit] = js.native
   /**
     * Sets the text color for the badge.
     * @param details Specifies to which tab or window the value should be set, or from which one it should be
     *     retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  def setBadgeTextColor(details: firefoxDashWebextDashBrowserLib.Anon_WindowIdColor): js.Promise[_] = js.native
+  def setBadgeTextColor(details: firefoxDashWebextDashBrowserLib.Anon_ColorTabId): js.Promise[_] = js.native
   /**
     * Sets the icon for the browser action. The icon can be specified either as the path to an image file or as the
     * pixel data from a canvas element, or as dictionary of either one of those. Either the **path** or the
@@ -69,19 +69,19 @@ object browserActionNsMembers extends js.Object {
     * @param details Specifies to which tab or window the value should be set, or from which one it should be
     *     retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  def setIcon(details: firefoxDashWebextDashBrowserLib.Anon_WindowIdImageDataKey): js.Promise[scala.Unit] = js.native
+  def setIcon(details: firefoxDashWebextDashBrowserLib.Anon_ImageDataKey): js.Promise[scala.Unit] = js.native
   /**
     * Sets the html document to be opened as a popup when the user clicks on the browser action's icon.
     * @param details Specifies to which tab or window the value should be set, or from which one it should be
     *     retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  def setPopup(details: firefoxDashWebextDashBrowserLib.Anon_WindowIdTabIdPopup): js.Promise[scala.Unit] = js.native
+  def setPopup(details: firefoxDashWebextDashBrowserLib.Anon_Popup): js.Promise[scala.Unit] = js.native
   /* browserAction functions */
   /**
     * Sets the title of the browser action. This shows up in the tooltip.
     * @param details Specifies to which tab or window the value should be set, or from which one it should be
     *     retrieved. If no tab nor window is specified, the global value is set or retrieved.
     */
-  def setTitle(details: firefoxDashWebextDashBrowserLib.Anon_WindowId): js.Promise[scala.Unit] = js.native
+  def setTitle(details: firefoxDashWebextDashBrowserLib.Anon_TabIdTitle): js.Promise[scala.Unit] = js.native
 }
 

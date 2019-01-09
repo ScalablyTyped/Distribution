@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Polyline ()
   extends cesiumLib.cesiumMod.CesiumNs.Polyline {
-  def this(options: cesiumLib.Anon_Loop) = this()
+  def this(options: cesiumLib.Anon_IdLoop) = this()
   /* CompleteClass */
   override var id: js.Any = js.native
   /* CompleteClass */

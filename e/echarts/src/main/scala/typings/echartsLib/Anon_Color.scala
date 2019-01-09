@@ -6,14 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Color extends js.Object {
-  /**
-    * The color of a node. It use global palette
-    * [option.color](https://ecomfe.github.io/echarts-doc/public/en/option.html#color)
-    * by default.
-    *
-    *
-    * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.data.emphasis.itemStyle.color
-    */
   var color: js.UndefOr[java.lang.String] = js.undefined
+  var opacity: js.UndefOr[scala.Double] = js.undefined
+  var shadowBlur: js.UndefOr[scala.Double] = js.undefined
+  var shadowColor: js.UndefOr[java.lang.String] = js.undefined
+  var shadowOffsetX: js.UndefOr[scala.Double] = js.undefined
+  var shadowOffsetY: js.UndefOr[scala.Double] = js.undefined
+  var `type`: js.UndefOr[
+    echartsLib.echartsLibStrings.solid | echartsLib.echartsLibStrings.dashed | echartsLib.echartsLibStrings.dotted
+  ] = js.undefined
+  var width: js.UndefOr[scala.Double] = js.undefined
 }
 

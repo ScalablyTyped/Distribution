@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 // #endregion
 // Writable properties on XMLHttpRequest
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial<std.Pick<std.XMLHttpRequest, 'onreadystatechange' | 'responseType' | 'timeout' | 'withCredentials'>>) */ trait XHRFields extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof std.Pick<std.XMLHttpRequest, 'onreadystatechange' | 'responseType' | 'timeout' | 'withCredentials'> ]:? std.Pick<std.XMLHttpRequest, 'onreadystatechange' | 'responseType' | 'timeout' | 'withCredentials'>[P]} */ trait XHRFields extends js.Object {
   var msCaching: js.UndefOr[java.lang.String] = js.undefined
 }
 

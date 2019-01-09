@@ -54,7 +54,7 @@ object incrementalDashDomMod extends js.Object {
     /* typeId */ js.UndefOr[js.Any], 
     stdLib.Element
   ] = js.native
-  var patch: incrementalDashDomLib.Anon_Node = js.native
+  var patch: incrementalDashDomLib.Anon_Data = js.native
   var patchInner: js.Function3[
     /* node */ stdLib.Element | stdLib.DocumentFragment, 
     /* fn */ js.Function1[/* data */ js.Any, scala.Unit], 

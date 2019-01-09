@@ -73,8 +73,8 @@ object navigationNs extends js.Object {
   /**
     * In version 7.22.0: introduced
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenNavigationMod.navigationNs.INativeNavigationProfile because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INativeNavigationProfile because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class NativeNavigationProfile protected () extends NavigationProfileBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     /**
@@ -87,8 +87,8 @@ object navigationNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/navigation relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationDocument because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationDocument because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined profiles, asLoaded, load, load, load, load */ @js.native
   class NavigationDocument protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.ProjectDocument {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject) = this()
@@ -127,7 +127,7 @@ object navigationNs extends js.Object {
     /**
       * In version 7.2.0: introduced
       */
-    val profiles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[NavigationProfileBase] = js.native
+    val profiles: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[INavigationProfileBase | NavigationProfileBase] = js.native
     /**
       * In version 7.2.0: deleted
       */
@@ -137,8 +137,8 @@ object navigationNs extends js.Object {
   /**
     * In version 7.2.0: added public
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationProfile because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationProfile because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class NavigationProfile protected () extends NavigationProfileBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var applicationTitle: java.lang.String = js.native
@@ -175,12 +175,12 @@ object navigationNs extends js.Object {
     val roleBasedHomePages: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[RoleBasedHomePage] = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationProfileBase because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INavigationProfileBase because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsNavigationDocument, name, asLoaded, load, load, load, load */ @js.native
   abstract class NavigationProfileBase protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
-    val containerAsNavigationDocument: NavigationDocument = js.native
+    val containerAsNavigationDocument: INavigationDocument | NavigationDocument = js.native
     @JSName("model")
     var model_NavigationProfileBase: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     /**

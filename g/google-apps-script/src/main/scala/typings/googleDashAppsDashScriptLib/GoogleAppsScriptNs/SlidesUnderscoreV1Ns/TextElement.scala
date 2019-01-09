@@ -17,7 +17,7 @@ trait TextElement extends js.Object {
   // units.
   var end_index: scala.Double
   // The kind of text that this element represents.
-  var kind: googleDashAppsDashScriptLib.Anon_Paragraphmarker
+  var kind: googleDashAppsDashScriptLib.Anon_Autotext
   // The zero-based start index of this text element, in Unicode code units.
   var start_index: scala.Double
 }

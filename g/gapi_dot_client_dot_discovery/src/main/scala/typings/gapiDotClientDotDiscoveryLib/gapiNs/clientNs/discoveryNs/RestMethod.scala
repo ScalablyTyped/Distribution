@@ -15,7 +15,7 @@ trait RestMethod extends js.Object {
   /** A unique ID for this method. This property can be used to match methods between different versions of Discovery. */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /** Media upload parameters. */
-  var mediaUpload: js.UndefOr[gapiDotClientDotDiscoveryLib.Anon_Protocols] = js.undefined
+  var mediaUpload: js.UndefOr[gapiDotClientDotDiscoveryLib.Anon_Accept] = js.undefined
   /**
     * Ordered list of required parameters, serves as a hint to clients on how to structure their method signatures. The array is ordered such that the
     * "most-significant" parameter appears first.
@@ -26,7 +26,7 @@ trait RestMethod extends js.Object {
   /** The URI path of this REST method. Should be used in conjunction with the basePath property at the api-level. */
   var path: js.UndefOr[java.lang.String] = js.undefined
   /** The schema for the request. */
-  var request: js.UndefOr[gapiDotClientDotDiscoveryLib.Anon_Ref] = js.undefined
+  var request: js.UndefOr[gapiDotClientDotDiscoveryLib.Anon_ParameterName] = js.undefined
   /** The schema for the response. */
   var response: js.UndefOr[gapiDotClientDotDiscoveryLib.Anon_RefString] = js.undefined
   /** OAuth 2.0 scopes applicable to this method. */

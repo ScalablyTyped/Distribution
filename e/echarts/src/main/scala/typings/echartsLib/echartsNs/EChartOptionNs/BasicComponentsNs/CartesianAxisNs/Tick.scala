@@ -13,9 +13,7 @@ trait Tick extends js.Object {
   var inside: js.UndefOr[scala.Boolean] = js.undefined
   var interval: js.UndefOr[scala.Double | js.Function] = js.undefined
   var length: js.UndefOr[scala.Double] = js.undefined
-  var lineStyle: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColorOpacityShadowOffsetYTypeSolid
-  ] = js.undefined
+  var lineStyle: js.UndefOr[echartsLib.Anon_Color] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
 }
 

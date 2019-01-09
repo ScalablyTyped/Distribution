@@ -62,7 +62,7 @@ object namespaced extends js.Object {
     E: bezierDashJsLib.BezierJsNs.Point,
     t: scala.Double
   ): bezierDashJsLib.BezierJsNs.ABC = js.native
-  def getUtils(): bezierDashJsLib.Anon_Lli8 = js.native
+  def getUtils(): bezierDashJsLib.Anon_A = js.native
   def quadraticFromPoints(
     p1: bezierDashJsLib.BezierJsNs.Point,
     p2: bezierDashJsLib.BezierJsNs.Point,

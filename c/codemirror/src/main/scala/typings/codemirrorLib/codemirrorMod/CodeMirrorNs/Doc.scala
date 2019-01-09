@@ -105,10 +105,10 @@ trait Doc extends js.Object {
   /** Get the number of lines in the editor. */
   def lineCount(): scala.Double = js.native
   /** Create a new document that's linked to the target document. Linked documents will stay in sync (changes to one are also applied to the other) until unlinked. */
-  def linkedDoc(options: codemirrorLib.Anon_FromToSharedHist): Doc = js.native
+  def linkedDoc(options: codemirrorLib.Anon_FromMode): Doc = js.native
   /** Retrieves a list of all current selections. These will always be sorted, and never overlap (overlapping selections are merged).
     Each object in the array contains anchor and head properties referring to {line, ch} objects. */
-  def listSelections(): js.Array[codemirrorLib.Anon_Anchor] = js.native
+  def listSelections(): js.Array[codemirrorLib.Anon_AnchorHead] = js.native
   /** Set the editor content as 'clean', a flag that it will retain until it is edited, and which will be set again
     when such an edit is undone again. Useful to track whether the content needs to be saved. This function is deprecated
     in favor of changeGeneration, which allows multiple subsystems to track different notions of cleanness without interfering.*/
@@ -136,16 +136,16 @@ trait Doc extends js.Object {
     A bookmark has two methods find() and clear(). The first returns the current position of the bookmark, if it is still in the document,
     and the second explicitly removes the bookmark. */
   def setBookmark(pos: Position): TextMarker = js.native
-  def setBookmark(pos: Position, options: codemirrorLib.Anon_Widget): TextMarker = js.native
+  def setBookmark(pos: Position, options: codemirrorLib.Anon_InsertLeft): TextMarker = js.native
   /** Set the cursor position. You can either pass a single {line, ch} object, or the line and the character as two separate parameters.
     Will replace all selections with a single, empty selection at the given position.
     The supported options are the same as for setSelection */
   def setCursor(pos: Position): scala.Unit = js.native
   def setCursor(pos: Position, ch: scala.Double): scala.Unit = js.native
-  def setCursor(pos: Position, ch: scala.Double, options: codemirrorLib.Anon_Scroll): scala.Unit = js.native
+  def setCursor(pos: Position, ch: scala.Double, options: codemirrorLib.Anon_Bias): scala.Unit = js.native
   def setCursor(pos: scala.Double): scala.Unit = js.native
   def setCursor(pos: scala.Double, ch: scala.Double): scala.Unit = js.native
-  def setCursor(pos: scala.Double, ch: scala.Double, options: codemirrorLib.Anon_Scroll): scala.Unit = js.native
+  def setCursor(pos: scala.Double, ch: scala.Double, options: codemirrorLib.Anon_Bias): scala.Unit = js.native
   /** Sets or clears the 'extending' flag , which acts similar to the shift key,
     in that it will cause cursor movement and calls to extendSelection to leave the selection anchor in place. */
   def setExtending(value: scala.Boolean): scala.Unit = js.native
@@ -156,17 +156,17 @@ trait Doc extends js.Object {
   def setLine(n: scala.Double, text: java.lang.String): scala.Unit = js.native
   /** Set a single selection range. anchor and head should be {line, ch} objects. head defaults to anchor when not given. */
   def setSelection(anchor: Position, head: Position): scala.Unit = js.native
-  def setSelection(anchor: Position, head: Position, options: codemirrorLib.Anon_Scroll): scala.Unit = js.native
+  def setSelection(anchor: Position, head: Position, options: codemirrorLib.Anon_Bias): scala.Unit = js.native
   /** Sets a new set of selections. There must be at least one selection in the given array. When primary is a
     number, it determines which selection is the primary one. When it is not given, the primary index is taken from
     the previous selection, or set to the last range if the previous selection had less ranges than the new one.
     Supports the same options as setSelection. */
-  def setSelections(ranges: js.Array[codemirrorLib.Anon_Anchor]): scala.Unit = js.native
-  def setSelections(ranges: js.Array[codemirrorLib.Anon_Anchor], primary: scala.Double): scala.Unit = js.native
+  def setSelections(ranges: js.Array[codemirrorLib.Anon_AnchorHead]): scala.Unit = js.native
+  def setSelections(ranges: js.Array[codemirrorLib.Anon_AnchorHead], primary: scala.Double): scala.Unit = js.native
   def setSelections(
-    ranges: js.Array[codemirrorLib.Anon_Anchor],
+    ranges: js.Array[codemirrorLib.Anon_AnchorHead],
     primary: scala.Double,
-    options: codemirrorLib.Anon_Scroll
+    options: codemirrorLib.Anon_Bias
   ): scala.Unit = js.native
   /** Set the editor content. */
   def setValue(content: java.lang.String): scala.Unit = js.native

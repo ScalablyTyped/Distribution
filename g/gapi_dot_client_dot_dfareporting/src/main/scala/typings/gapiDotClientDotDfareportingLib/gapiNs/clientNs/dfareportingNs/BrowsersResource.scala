@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait BrowsersResource extends js.Object {
   /** Retrieves a list of browsers. */
-  def list(request: gapiDotClientDotDfareportingLib.Anon_ProfileId): gapiDotClientLib.gapiNs.clientNs.Request[BrowsersListResponse]
+  def list(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[BrowsersListResponse]
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object osModMembers extends js.Object {
   val EOL: java.lang.String = js.native
-  val constants: nodeLib.Anon_Signals = js.native
+  val constants: nodeLib.Anon_Errno = js.native
   def arch(): java.lang.String = js.native
   def cpus(): js.Array[CpuInfo] = js.native
   def endianness(): nodeLib.nodeLibStrings.BE | nodeLib.nodeLibStrings.LE = js.native
@@ -40,7 +40,7 @@ object osModMembers extends js.Object {
   def totalmem(): scala.Double = js.native
   def `type`(): java.lang.String = js.native
   def uptime(): scala.Double = js.native
-  def userInfo(): nodeLib.Anon_Shell = js.native
-  def userInfo(options: nodeLib.Anon_EncodingString): nodeLib.Anon_Shell = js.native
+  def userInfo(): nodeLib.Anon_Gid = js.native
+  def userInfo(options: nodeLib.Anon_Encoding): nodeLib.Anon_Gid = js.native
 }
 

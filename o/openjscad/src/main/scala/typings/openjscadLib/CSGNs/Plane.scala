@@ -21,7 +21,7 @@ class Plane protected ()
   def mirrorPoint(point3d: Vector3D): Vector3D = js.native
   def signedDistanceToPoint(point: Vector3D): scala.Double = js.native
   def splitLineBetweenPoints(p1: Vector3D, p2: Vector3D): Vector3D = js.native
-  def splitPolygon(polygon: Polygon): openjscadLib.Anon_Type = js.native
+  def splitPolygon(polygon: Polygon): openjscadLib.Anon_Back = js.native
 }
 
 @JSGlobal("CSG.Plane")

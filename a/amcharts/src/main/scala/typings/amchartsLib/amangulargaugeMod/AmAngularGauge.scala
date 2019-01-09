@@ -181,7 +181,7 @@ trait AmAngularGauge
     * ]
     */
   @JSName("prefixesOfBigNumbers")
-  var prefixesOfBigNumbers_AmAngularGauge: js.Array[amchartsLib.Anon_Prefix] = js.native
+  var prefixesOfBigNumbers_AmAngularGauge: js.Array[amchartsLib.Anon_Number] = js.native
   /**
     * Prefixes which are used to make small numbers shorter: 2μ instead of 0.000002, etc.
     * Prefixes are used on value axes and in the legend.
@@ -198,7 +198,7 @@ trait AmAngularGauge
     * ]
     */
   @JSName("prefixesOfSmallNumbers")
-  var prefixesOfSmallNumbers_AmAngularGauge: js.Array[amchartsLib.Anon_Prefix] = js.native
+  var prefixesOfSmallNumbers_AmAngularGauge: js.Array[amchartsLib.Anon_Number] = js.native
   /**
     * If processTimeout is > 0, 1000 data items will be parsed at a time,
     * then the chart will make pause and continue parsing data until it finishes.

@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<{}, std.Exclude<keyof {}, 'classes' | never>>, @material-ui/core.@material-ui/core.StandardProps<{}, never, never>) */ trait HiddenProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof {}, 'classes' | never> ]: {}[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<{}, never, never>) */ trait HiddenProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[scala.Nothing] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var implementation: js.UndefOr[

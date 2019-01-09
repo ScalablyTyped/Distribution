@@ -15,7 +15,7 @@ trait PagespeedApiImageV2 extends js.Object {
   /** Mime type of image data (e.g. "image/jpeg"). */
   var mime_type: js.UndefOr[java.lang.String] = js.undefined
   /** The region of the page that is captured by this image, with dimensions measured in CSS pixels. */
-  var page_rect: js.UndefOr[gapiDotClientDotPagespeedonlineLib.Anon_Top] = js.undefined
+  var page_rect: js.UndefOr[gapiDotClientDotPagespeedonlineLib.Anon_Height] = js.undefined
   /** Width of screenshot in pixels. */
   var width: js.UndefOr[scala.Double] = js.undefined
 }

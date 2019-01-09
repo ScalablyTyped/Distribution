@@ -13,6 +13,6 @@ trait DataTypeReal extends DataTypeAbstractNumber[DataTypeReal] {
   def apply(): DataTypeReal = js.native
   def apply(length: scala.Double): DataTypeReal = js.native
   def apply(length: scala.Double, decimals: scala.Double): DataTypeReal = js.native
-  def apply(options: sequelizeLib.Anon_LengthDecimals): DataTypeReal = js.native
+  def apply(options: sequelizeLib.Anon_Decimals): DataTypeReal = js.native
 }
 

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.IQueryable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait IBoundList extends IView {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.IQueryable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined child, down, query, queryBy, queryById */ trait IBoundList extends IView {
   /** [Method] Changes the data store bound to this view and refreshes it
   		* @param store Object
   		* @param initial Object
@@ -54,7 +54,5 @@ trait IBoundList extends IView {
   		* @returns Ext.Component The matching id, null if not found
   		*/
   var queryById: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], extjsLib.ExtNs.IComponent]] = js.undefined
-  /** [Config Option] (String/Boolean) */
-  var shadow: js.UndefOr[js.Any] = js.undefined
 }
 

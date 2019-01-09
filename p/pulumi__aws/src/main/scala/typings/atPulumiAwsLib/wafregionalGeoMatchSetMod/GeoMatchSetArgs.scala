@@ -10,7 +10,9 @@ trait GeoMatchSetArgs extends js.Object {
     * The Geo Match Constraint objects which contain the country that you want AWS WAF to search for.
     */
   val geoMatchConstraints: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypeValue]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypeValueInputString]]
+    ]
   ] = js.undefined
   /**
     * The name or description of the Geo Match Set.

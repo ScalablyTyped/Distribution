@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class JsonResultsAdapter protected ()
   extends breezeLib.breezeNs.JsonResultsAdapter {
-  def this(config: breezeLib.Anon_NameVisitNode) = this()
+  def this(config: breezeLib.Anon_Data) = this()
 }
 

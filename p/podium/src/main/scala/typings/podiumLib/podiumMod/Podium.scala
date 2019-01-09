@@ -35,8 +35,8 @@ org.scalablytyped.runtime.Instantiable0[Podium]
     */
   def emit(criteria: java.lang.String, data: js.Any): scala.Unit = js.native
   def emit(criteria: java.lang.String, data: js.Any, callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  def emit(criteria: podiumLib.Anon_Name, data: js.Any): scala.Unit = js.native
-  def emit(criteria: podiumLib.Anon_Name, data: js.Any, callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def emit(criteria: podiumLib.Anon_Channel, data: js.Any): scala.Unit = js.native
+  def emit(criteria: podiumLib.Anon_Channel, data: js.Any, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
     * podium.hasListeners(name)
     * Returns whether an event has any listeners subscribed

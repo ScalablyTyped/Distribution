@@ -25,15 +25,15 @@ object namespaced extends js.Object {
   /**
     * Hls error details
     */
-  var ErrorDetails: hlsDotJsLib.Anon_AUDIOTRACKLOADTIMEOUT = js.native
+  var ErrorDetails: hlsDotJsLib.Anon_AUDIOTRACKLOADERROR = js.native
   /**
     * Hls error types
     */
-  var ErrorTypes: hlsDotJsLib.Anon_OTHERERROR = js.native
+  var ErrorTypes: hlsDotJsLib.Anon_KEYSYSTEMERROR = js.native
   /**
     * Hls events
     */
-  var Events: hlsDotJsLib.Anon_FRAGDECRYPTED = js.native
+  var Events: hlsDotJsLib.Anon_AUDIOTRACKLOADED = js.native
   /**
     * returns hls.js dist version number
     */

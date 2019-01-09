@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait QueueRecord extends js.Object {
-  var attributes: atPulumiAwsLib.Anon_ApproximateReceiveCount
+  var attributes: atPulumiAwsLib.Anon_ApproximateFirstReceiveTimestamp
   var awsRegion: java.lang.String
   var body: java.lang.String
   var eventSource: java.lang.String

@@ -218,7 +218,7 @@ class ShapeView ()
   def load(): ShapeView = js.native
   def load(option: java.lang.String): ShapeView = js.native
   def load(option: js.Array[java.lang.String]): ShapeView = js.native
-  def load(option: officeDashJsLib.Anon_Select): ShapeView = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ShapeView = js.native
   def load(option: officeDashJsLib.VisioNs.InterfacesNs.ShapeViewLoadOptions): ShapeView = js.native
   /**
     *

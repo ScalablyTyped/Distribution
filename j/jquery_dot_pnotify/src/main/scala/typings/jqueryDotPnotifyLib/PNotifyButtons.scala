@@ -21,7 +21,7 @@ trait PNotifyButtons extends js.Object {
   /**
     * The various displayed text, helps facilitating internationalization.
     */
-  var labels: js.UndefOr[Anon_Unstick] = js.undefined
+  var labels: js.UndefOr[Anon_Close] = js.undefined
   /**
     * Show the buttons even when the nonblock module is in use.
     */

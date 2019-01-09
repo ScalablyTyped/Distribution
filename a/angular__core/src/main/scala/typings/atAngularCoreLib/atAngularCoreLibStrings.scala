@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 object atAngularCoreLibStrings {
   @js.native
-  sealed trait Anon_Directives extends js.Object
+  sealed trait Anon_Attributes extends js.Object
   
   @js.native
-  sealed trait Anon_Features extends js.Object
+  sealed trait Anon_AttributesContentQueries extends js.Object
   
   @js.native
-  sealed trait Anon_Outputs extends js.Object
+  sealed trait Anon_Inputs extends js.Object
   
   @js.native
   sealed trait BaseDef extends js.Object
@@ -66,9 +66,9 @@ object atAngularCoreLibStrings {
   @js.native
   sealed trait zoneDOTjs extends js.Object
   
-  def Anon_Directives: Anon_Directives = "Anon_Directives".asInstanceOf[Anon_Directives]
-  def Anon_Features: Anon_Features = "Anon_Features".asInstanceOf[Anon_Features]
-  def Anon_Outputs: Anon_Outputs = "Anon_Outputs".asInstanceOf[Anon_Outputs]
+  def Anon_Attributes: Anon_Attributes = "Anon_Attributes".asInstanceOf[Anon_Attributes]
+  def Anon_AttributesContentQueries: Anon_AttributesContentQueries = "Anon_AttributesContentQueries".asInstanceOf[Anon_AttributesContentQueries]
+  def Anon_Inputs: Anon_Inputs = "Anon_Inputs".asInstanceOf[Anon_Inputs]
   def BaseDef: BaseDef = "BaseDef".asInstanceOf[BaseDef]
   def `Brand for OpaqueViewState that nothing will match`: `Brand for OpaqueViewState that nothing will match` = "Brand for OpaqueViewState that nothing will match".asInstanceOf[`Brand for OpaqueViewState that nothing will match`]
   def `Brand for PlayerFactory that nothing will match`: `Brand for PlayerFactory that nothing will match` = "Brand for PlayerFactory that nothing will match".asInstanceOf[`Brand for PlayerFactory that nothing will match`]

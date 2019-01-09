@@ -12,6 +12,6 @@ trait UrlData extends js.Object {
   var lastmodWithTime: js.UndefOr[scala.Boolean] = js.undefined
   var priority: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var url: java.lang.String
-  var video: js.UndefOr[sitemap2Lib.Anon_Description] = js.undefined
+  var video: js.UndefOr[sitemap2Lib.Anon_Contentloc] = js.undefined
 }
 

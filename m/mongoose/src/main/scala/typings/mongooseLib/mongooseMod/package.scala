@@ -33,7 +33,7 @@ package object mongooseMod {
     * Some mongoose classes have the same name as the native JS classes
     * Keep references to native classes using a "Native" prefix
     */
-  type NativeBuffer = nodeLib.Anon_IsEncoding
+  type NativeBuffer = nodeLib.Anon_Alloc
   type NativeDate = stdLib.DateConstructor
   type NativeError = nodeLib.ErrorConstructor
   /*

@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
   * Custom callback transformation
   */
 trait CustomCallbackTransform
-  extends /* transformationName */ org.scalablytyped.runtime.StringDictionary[svgDashSpriteLib.Anon_Shape]
+  extends /* transformationName */ org.scalablytyped.runtime.StringDictionary[svgDashSpriteLib.Anon_Callback]
 

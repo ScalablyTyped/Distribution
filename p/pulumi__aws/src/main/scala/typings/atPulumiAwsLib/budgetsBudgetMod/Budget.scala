@@ -33,7 +33,7 @@ class Budget protected ()
   /**
     * Object containing CostTypes The types of cost included in a budget, such as tax and subscriptions..
     */
-  val costTypes: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_IncludeRecurringIncludeCredit] = js.native
+  val costTypes: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_IncludeCredit] = js.native
   /**
     * The amount of cost or usage being measured for a budget.
     */

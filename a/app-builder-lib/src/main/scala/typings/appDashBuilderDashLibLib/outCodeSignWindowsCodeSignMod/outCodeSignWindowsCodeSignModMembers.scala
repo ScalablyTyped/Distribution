@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object outCodeSignWindowsCodeSignModMembers extends js.Object {
   def getCertInfo(file: java.lang.String, password: java.lang.String): js.Promise[CertificateInfo] = js.native
   def getCertificateFromStoreInfo(
-    options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify WindowsConfiguration */ js.Any,
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify WindowsConfiguration */ js.Any,
     vm: appDashBuilderDashLibLib.outVmVmMod.VmManager
   ): js.Promise[CertificateFromStoreInfo] = js.native
   def getSignVendorPath(): js.Promise[java.lang.String] = js.native

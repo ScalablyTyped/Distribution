@@ -25,7 +25,7 @@ org.scalablytyped.runtime.Instantiable3[
       (/* options */ js.Array[java.lang.String]) | (/* options */ keygripLib.keygripMod.Keygrip) | (/* options */ cookiesLib.cookiesMod.CookiesNs.Option), 
       Cookies
     ] {
-  var Cookie: cookiesLib.Anon_Name = js.native
+  var Cookie: cookiesLib.Anon_Attrs = js.native
   def apply(request: nodeLib.httpMod.IncomingMessage, response: nodeLib.httpMod.ServerResponse): Cookies = js.native
   def apply(
     request: nodeLib.httpMod.IncomingMessage,

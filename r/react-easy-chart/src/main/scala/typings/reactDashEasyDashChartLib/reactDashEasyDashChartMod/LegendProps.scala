@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait LegendProps extends js.Object {
   /** Override the color of the items */
-  var config: js.UndefOr[js.Array[reactDashEasyDashChartLib.Anon_Color]] = js.undefined
+  var config: js.UndefOr[js.Array[reactDashEasyDashChartLib.Anon_ColorString]] = js.undefined
   var data: js.Array[_]
   var dataId: java.lang.String
   /** change list items to inline-block (default block) */

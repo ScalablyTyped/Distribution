@@ -16,6 +16,6 @@ class TextArea protected () extends js.Object {
 @JSImport("react-weui", "TextArea")
 @js.native
 object TextArea extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_ShowCounter = js.native
+  var defaultProps: reactDashWeuiLib.Anon_DefaultValueShowCounter = js.native
 }
 

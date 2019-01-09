@@ -15,7 +15,7 @@ class Popconfirm protected ()
 @JSImport("antd", "Popconfirm")
 @js.native
 object Popconfirm extends js.Object {
-  var defaultProps: antdLib.Anon_TransitionNameIcon = js.native
+  var defaultProps: antdLib.Anon_Bottom = js.native
   def getDerivedStateFromProps(nextProps: antdLib.libPopconfirmMod.PopconfirmProps): antdLib.Anon_Visible | scala.Null = js.native
 }
 

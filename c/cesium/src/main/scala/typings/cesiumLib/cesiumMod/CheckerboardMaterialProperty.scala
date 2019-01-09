@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CheckerboardMaterialProperty ()
   extends cesiumLib.cesiumMod.CesiumNs.CheckerboardMaterialProperty {
-  def this(options: cesiumLib.Anon_OddColor) = this()
+  def this(options: cesiumLib.Anon_EvenColor) = this()
 }
 

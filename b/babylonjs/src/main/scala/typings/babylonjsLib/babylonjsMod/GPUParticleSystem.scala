@@ -22,8 +22,8 @@ class GPUParticleSystem protected ()
     * @param scene The scene the particle system belongs to
     * @param isAnimationSheetEnabled Must be true if using a spritesheet to animate the particles texture
     */
-  def this(name: java.lang.String, options: stdLib.Partial[babylonjsLib.Anon_RandomTextureSize], scene: babylonjsLib.BABYLONNs.Scene) = this()
-  def this(name: java.lang.String, options: stdLib.Partial[babylonjsLib.Anon_RandomTextureSize], scene: babylonjsLib.BABYLONNs.Scene, isAnimationSheetEnabled: scala.Boolean) = this()
+  def this(name: java.lang.String, options: stdLib.Partial[babylonjsLib.Anon_Capacity], scene: babylonjsLib.BABYLONNs.Scene) = this()
+  def this(name: java.lang.String, options: stdLib.Partial[babylonjsLib.Anon_Capacity], scene: babylonjsLib.BABYLONNs.Scene, isAnimationSheetEnabled: scala.Boolean) = this()
 }
 
 /**

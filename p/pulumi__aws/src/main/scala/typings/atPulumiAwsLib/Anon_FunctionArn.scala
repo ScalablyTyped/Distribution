@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_FunctionArn extends js.Object {
-  var functionArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  var functionArn: java.lang.String
 }
 

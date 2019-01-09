@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CesiumTerrainProvider protected ()
   extends cesiumLib.cesiumMod.CesiumNs.CesiumTerrainProvider {
-  def this(options: cesiumLib.Anon_UrlCredit) = this()
+  def this(options: cesiumLib.Anon_CreditEllipsoid) = this()
 }
 

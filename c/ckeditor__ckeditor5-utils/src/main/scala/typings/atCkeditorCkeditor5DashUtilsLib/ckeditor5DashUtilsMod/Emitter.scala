@@ -15,7 +15,7 @@ trait Emitter extends js.Object {
     emitter: Emitter,
     event: java.lang.String,
     callback: js.Function,
-    options: atCkeditorCkeditor5DashUtilsLib.Anon_PriorityPriorityString
+    options: atCkeditorCkeditor5DashUtilsLib.Anon_Priority
   ): scala.Unit = js.native
   def off(event: java.lang.String): scala.Unit = js.native
   def off(event: java.lang.String, callback: js.Function): scala.Unit = js.native
@@ -23,13 +23,13 @@ trait Emitter extends js.Object {
   def on(
     event: java.lang.String,
     callback: js.Function,
-    options: atCkeditorCkeditor5DashUtilsLib.Anon_Priority
+    options: atCkeditorCkeditor5DashUtilsLib.Anon_PriorityNumber
   ): scala.Unit = js.native
   def once(event: java.lang.String, callback: js.Function): scala.Unit = js.native
   def once(
     event: java.lang.String,
     callback: js.Function,
-    options: atCkeditorCkeditor5DashUtilsLib.Anon_Priority
+    options: atCkeditorCkeditor5DashUtilsLib.Anon_PriorityNumber
   ): scala.Unit = js.native
   def stopDelegating(): scala.Unit = js.native
   def stopDelegating(event: java.lang.String): scala.Unit = js.native

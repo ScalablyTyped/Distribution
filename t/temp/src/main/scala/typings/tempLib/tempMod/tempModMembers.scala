@@ -48,7 +48,7 @@ object tempModMembers extends js.Object {
   def path(affixes: java.lang.String, defaultPrefix: java.lang.String): java.lang.String = js.native
   def path(affixes: tempLib.tempMod.tempNs.AffixOptions): java.lang.String = js.native
   def path(affixes: tempLib.tempMod.tempNs.AffixOptions, defaultPrefix: java.lang.String): java.lang.String = js.native
-  def track(): tempLib.Anon_Path = js.native
-  def track(value: scala.Boolean): tempLib.Anon_Path = js.native
+  def track(): tempLib.Anon_Affixes = js.native
+  def track(value: scala.Boolean): tempLib.Anon_Affixes = js.native
 }
 

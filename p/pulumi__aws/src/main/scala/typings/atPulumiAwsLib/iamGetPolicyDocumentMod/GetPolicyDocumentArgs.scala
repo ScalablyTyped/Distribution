@@ -28,7 +28,7 @@ trait GetPolicyDocumentArgs extends js.Object {
     * A nested configuration block (described below)
     * configuring one *statement* to be included in the policy document.
     */
-  val statements: js.UndefOr[js.Array[atPulumiAwsLib.Anon_Conditions]] = js.undefined
+  val statements: js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionsConditions]] = js.undefined
   /**
     * IAM policy document version. Valid values: `2008-10-17`, `2012-10-17`. Defaults to `2012-10-17`. For more information, see the [AWS IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_version.html).
     */

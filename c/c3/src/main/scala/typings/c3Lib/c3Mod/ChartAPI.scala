@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ChartAPI extends js.Object {
-  var axis: c3Lib.Anon_Range = js.native
+  var axis: c3Lib.Anon_KeyLabels = js.native
   @JSName("data")
-  var data_Original: c3Lib.Anon_TargetIds = js.native
+  var data_Original: c3Lib.Anon_AxesColors = js.native
   var legend: c3Lib.Anon_Hide = js.native
   @JSName("regions")
-  var regions_Original: c3Lib.Anon_Regions = js.native
+  var regions_Original: c3Lib.Anon_Add = js.native
   @JSName("xgrids")
   var xgrids_Original: GridOperations = js.native
   @JSName("ygrids")
@@ -61,7 +61,7 @@ trait ChartAPI extends js.Object {
     * If duration is given, the duration of the transition will be specified value. If not given, transition.duration will be used as default.
     * If done is given, the specified function will be called when flow ends.
     */
-  def flow(args: c3Lib.Anon_Duration): scala.Unit = js.native
+  def flow(args: c3Lib.Anon_Columns): scala.Unit = js.native
   /**
     * Force to redraw.
     */
@@ -99,7 +99,7 @@ trait ChartAPI extends js.Object {
     * because of cancel of animation.
     * NOTE: done will be called after data loaded, but it's not after rendering. It's because rendering will finish after some transition and there is some time lag between loading and rendering.
     */
-  def load(args: c3Lib.Anon_Classes): scala.Unit = js.native
+  def load(args: c3Lib.Anon_Axes): scala.Unit = js.native
   /**
     * Update regions.
     * @param regions Regions will be replaced with this argument. The format of this argument is the same as regions.
@@ -110,7 +110,7 @@ trait ChartAPI extends js.Object {
     * @param size This argument should include width and height in pixels.
     */
   def resize(): scala.Unit = js.native
-  def resize(size: c3Lib.Anon_HeightWidth): scala.Unit = js.native
+  def resize(size: c3Lib.Anon_Height): scala.Unit = js.native
   /**
     * This API reverts specified targets.
     * You can specify multiple targets by giving an array that includes id as String. If no argument is given, all of targets will be reverted.

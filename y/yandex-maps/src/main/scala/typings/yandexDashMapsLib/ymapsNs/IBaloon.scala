@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /*Interfaces*/
-/* RemoveMultipleInheritance: Dropped parents List(yandexDashMapsLib.ymapsNs.IChild because Would inherit conflicting mutable fields List(events))*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- yandexDashMapsLib.ymapsNs.IChild because var conflicts: events. Inlined getParent, setParent, setParent */ @js.native
 trait IBaloon[T]
   extends IPopup[T]
      with IFreezable {

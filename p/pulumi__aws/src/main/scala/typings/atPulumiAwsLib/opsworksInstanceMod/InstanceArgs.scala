@@ -37,7 +37,7 @@ trait InstanceArgs extends js.Object {
   val ebsBlockDevices: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceNameVolumeTypeIopsDeleteOnTermination]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameIopsSnapshotId]
       ]
     ]
   ] = js.undefined
@@ -52,7 +52,9 @@ trait InstanceArgs extends js.Object {
     * "Instance Store") volumes on the instance. See Block Devices below for details.
     */
   val ephemeralBlockDevices: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceName]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceNameVirtualName]]
+    ]
   ] = js.undefined
   /**
     * The instance's host name.
@@ -109,7 +111,7 @@ trait InstanceArgs extends js.Object {
   val rootBlockDevices: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationVolumeTypeIops]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationIopsVolumeSizeVolumeTypeBoolean]
       ]
     ]
   ] = js.undefined

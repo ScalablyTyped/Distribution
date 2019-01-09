@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class PointGraphics ()
   extends cesiumLib.cesiumMod.CesiumNs.PointGraphics {
-  def this(options: cesiumLib.Anon_ShowHeightReference) = this()
+  def this(options: cesiumLib.Anon_Color) = this()
 }
 

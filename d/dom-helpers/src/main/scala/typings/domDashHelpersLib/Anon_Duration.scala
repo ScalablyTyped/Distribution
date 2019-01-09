@@ -5,12 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Duration extends js.Object {
-  var delay: java.lang.String
-  var duration: java.lang.String
-  var end: java.lang.String
-  var property: java.lang.String
-  var timing: java.lang.String
-  var transform: java.lang.String
+  def apply[T /* <: stdLib.Element */](element: T, handler: js.Function1[/* event */ Anon_CurrentTarget[T], scala.Unit]): scala.Unit = js.native
+  def apply[T /* <: stdLib.Element */](
+    element: T,
+    handler: js.Function1[/* event */ Anon_CurrentTarget[T], scala.Unit],
+    duration: scala.Double
+  ): scala.Unit = js.native
 }
 

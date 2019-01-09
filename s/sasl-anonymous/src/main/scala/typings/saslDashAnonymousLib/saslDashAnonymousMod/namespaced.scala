@@ -26,6 +26,6 @@ class namespaced () extends AnonymousMechanism {
 @JSImport("sasl-anonymous", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
-  var Mechanism: org.scalablytyped.runtime.Instantiable0[saslDashAnonymousLib.saslDashAnonymousMod.AnonymousMechanism] = js.native
+  var Mechanism: saslDashAnonymousLib.Anon_Mechanism = js.native
 }
 

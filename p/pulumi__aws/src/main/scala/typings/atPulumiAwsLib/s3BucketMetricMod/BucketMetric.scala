@@ -25,7 +25,7 @@ class BucketMetric protected ()
   /**
     * [Object filtering](http://docs.aws.amazon.com/AmazonS3/latest/dev/metrics-configurations.html#metrics-configurations-filter) that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).
     */
-  val filter: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_PrefixTags]] = js.native
+  val filter: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_KeyPrefix]] = js.native
   /**
     * Unique identifier of the metrics configuration for the bucket.
     */

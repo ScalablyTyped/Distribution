@@ -57,7 +57,7 @@ trait Repository extends js.Object {
   var notifications_url: java.lang.String
   var open_issues_count: scala.Double
   var owner: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary
-  var permissions: typedDashGithubDashApiLib.Anon_Push
+  var permissions: typedDashGithubDashApiLib.Anon_Admin
   var `private`: scala.Boolean
   var pulls_url: java.lang.String
   var pushed_at: stdLib.Date

@@ -37,7 +37,7 @@ trait Lutimes extends js.Object {
     /* mtime */ java.lang.String | scala.Double | stdLib.Date, 
     /* callback */ js.UndefOr[js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, scala.Unit]], 
     scala.Unit
-  ]) with gracefulDashFsLib.Anon_Promisify = js.native
+  ]) with gracefulDashFsLib.Anon_Atime = js.native
   /**
     * Asynchronously change file timestamps of the file referenced by the supplied path.
     * If path refers to a symbolic link, then the link is not dereferenced: instead, the timestamps

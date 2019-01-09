@@ -9,5 +9,6 @@ trait Anon_PauseResume extends js.Object {
   def pauseResume(): scala.Unit
   def reset(): scala.Unit
   def start(): scala.Unit
+  def update(): scala.Unit
 }
 

@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<react.react.HTMLAttributes<react.HTMLDivElement>, std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement>, 'classes' | 'title'>>, @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLDivElement>, @material-ui/core.@material-ui/core/CardHeader/CardHeader.CardHeaderClassKey, 'title'>) */ trait CardHeaderProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement>, 'classes' | 'title'> ]: react.react.HTMLAttributes<react.HTMLDivElement>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLDivElement>, @material-ui/core.@material-ui/core/CardHeader/CardHeader.CardHeaderClassKey, 'title'>) */ trait CardHeaderProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[CardHeaderClassKey] {
   var action: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var avatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

@@ -106,7 +106,9 @@ trait String
     * Matches a string an object that supports being matched against, and returns an array containing the results of that search.
     * @param matcher An object that supports being matched against.
     */
-  def `match`(matcher: /* import warning: ImportType.apply Failed type conversion: {indexed} */ js.Any): RegExpMatchArray | scala.Null = js.native
+  def `match`(
+    matcher: /* import warning: ImportType.apply Failed type conversion: {[Symbol.match] : (string : string): std.RegExpMatchArray | null} */ js.Any
+  ): RegExpMatchArray | scala.Null = js.native
   /**
     * Matches a string with a regular expression, and returns an array containing the results of that search.
     * @param regexp A variable name or string literal containing the regular expression pattern and flags.
@@ -188,7 +190,7 @@ trait String
     * @param replaceValue A string containing the text to replace for every successful match of searchValue in this string.
     */
   def replace(
-    searchValue: /* import warning: ImportType.apply Failed type conversion: {indexed} */ js.Any,
+    searchValue: /* import warning: ImportType.apply Failed type conversion: {[Symbol.replace] : (string : string, replaceValue : string): string} */ js.Any,
     replaceValue: java.lang.String
   ): java.lang.String = js.native
   /**
@@ -197,7 +199,7 @@ trait String
     * @param replacer A function that returns the replacement text.
     */
   def replace(
-    searchValue: /* import warning: ImportType.apply Failed type conversion: {indexed} */ js.Any,
+    searchValue: /* import warning: ImportType.apply Failed type conversion: {[Symbol.replace] : (string : string, replacer : (substring : string, args : ...any): string): string} */ js.Any,
     replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): java.lang.String = js.native
   def replace(searchValue: RegExp, replaceValue: java.lang.String): java.lang.String = js.native
@@ -215,7 +217,9 @@ trait String
     * Finds the first substring match in a regular expression search.
     * @param searcher An object which supports searching within a string.
     */
-  def search(searcher: /* import warning: ImportType.apply Failed type conversion: {indexed} */ js.Any): scala.Double = js.native
+  def search(
+    searcher: /* import warning: ImportType.apply Failed type conversion: {[Symbol.search] : (string : string): number} */ js.Any
+  ): scala.Double = js.native
   /**
     * Returns a section of a string.
     * @param start The index to the beginning of the specified portion of stringObj.
@@ -241,9 +245,11 @@ trait String
     * @param splitter An object that can split a string.
     * @param limit A value used to limit the number of elements returned in the array.
     */
-  def split(splitter: /* import warning: ImportType.apply Failed type conversion: {indexed} */ js.Any): js.Array[java.lang.String] = js.native
   def split(
-    splitter: /* import warning: ImportType.apply Failed type conversion: {indexed} */ js.Any,
+    splitter: /* import warning: ImportType.apply Failed type conversion: {[Symbol.split] : (string : string, limit? : number): std.Array<string>} */ js.Any
+  ): js.Array[java.lang.String] = js.native
+  def split(
+    splitter: /* import warning: ImportType.apply Failed type conversion: {[Symbol.split] : (string : string, limit? : number): std.Array<string>} */ js.Any,
     limit: scala.Double
   ): js.Array[java.lang.String] = js.native
   /**

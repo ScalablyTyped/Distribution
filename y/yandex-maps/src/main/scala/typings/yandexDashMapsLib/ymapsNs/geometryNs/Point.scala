@@ -12,7 +12,6 @@ class Point ()
   def this(coordinates: js.Array[scala.Double]) = this()
   /* CompleteClass */
   override var events: yandexDashMapsLib.ymapsNs.IEventManager = js.native
-  var options: yandexDashMapsLib.ymapsNs.IOptionManager = js.native
   /* CompleteClass */
   override def getBounds(): js.Array[js.Array[scala.Double]] | scala.Null = js.native
   /* CompleteClass */

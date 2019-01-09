@@ -27,6 +27,6 @@ class NodeModel ()
   def getPorts(): org.scalablytyped.runtime.StringDictionary[stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel] = js.native
   def removePort(port: stormDashReactDashDiagramsLib.distSrcModelsPortModelMod.PortModel): scala.Unit = js.native
   def setPosition(x: js.Any, y: js.Any): scala.Unit = js.native
-  def updateDimensions(hasWidthHeight: stormDashReactDashDiagramsLib.Anon_Height): scala.Unit = js.native
+  def updateDimensions(hasWidthHeight: stormDashReactDashDiagramsLib.Anon_HeightWidth): scala.Unit = js.native
 }
 

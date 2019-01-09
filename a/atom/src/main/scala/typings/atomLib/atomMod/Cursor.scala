@@ -20,7 +20,7 @@ trait Cursor extends js.Object {
   def compare(otherCursor: Cursor): scala.Double = js.native
   /** Retrieves the buffer position of where the current word starts. */
   def getBeginningOfCurrentWordBufferPosition(): Point = js.native
-  def getBeginningOfCurrentWordBufferPosition(options: atomLib.Anon_IncludeNonWordCharacters): Point = js.native
+  def getBeginningOfCurrentWordBufferPosition(options: atomLib.Anon_AllowPrevious): Point = js.native
   /** Retrieves the buffer position of where the next word starts. */
   def getBeginningOfNextWordBufferPosition(): Point = js.native
   def getBeginningOfNextWordBufferPosition(options: atomLib.Anon_WordRegex): Point = js.native
@@ -47,7 +47,7 @@ trait Cursor extends js.Object {
   def getCurrentWordPrefix(): java.lang.String = js.native
   /** Retrieves the buffer position of where the current word ends. */
   def getEndOfCurrentWordBufferPosition(): Point = js.native
-  def getEndOfCurrentWordBufferPosition(options: atomLib.Anon_IncludeNonWordCharactersWordRegex): Point = js.native
+  def getEndOfCurrentWordBufferPosition(options: atomLib.Anon_IncludeNonWordCharacters): Point = js.native
   /** Returns the indentation level of the current line. */
   def getIndentLevel(): scala.Double = js.native
   // Cursor Position Details

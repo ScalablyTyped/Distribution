@@ -207,7 +207,7 @@ trait SeriesCandlestick extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleAnonShadowOffsetXShadowBlurBorderWidthColor] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleAnonBorderColorBorderColor0BorderWidth] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -269,7 +269,7 @@ trait SeriesCandlestick extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXShadowBlurBorderWidth] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorBorderColor0] = js.undefined
   /**
     * Whether to enable the optimization of large-scale data.
     * It could be set when large data causes performance problem.
@@ -331,21 +331,21 @@ trait SeriesCandlestick extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markArea
     */
-  var markArea: js.UndefOr[echartsLib.Anon_Silent] = js.undefined
+  var markArea: js.UndefOr[echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markLine
     */
-  var markLine: js.UndefOr[echartsLib.Anon_Precision] = js.undefined
+  var markLine: js.UndefOr[echartsLib.Anon_AnimationAnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_SilentData] = js.undefined
+  var markPoint: js.UndefOr[echartsLib.Anon_Animation] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -413,7 +413,7 @@ trait SeriesCandlestick extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "candlestick"

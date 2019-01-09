@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("breeze.SaveOptions")
 @js.native
 class SaveOptions () extends js.Object {
-  def this(config: breezeLib.Anon_ResourceNameDataService) = this()
+  def this(config: breezeLib.Anon_AllowConcurrentSaves) = this()
   var allowConcurrentSaves: scala.Boolean = js.native
   var dataService: DataService = js.native
   var resourceName: java.lang.String = js.native

@@ -29,7 +29,7 @@ trait Repository extends RepositoryRef {
   var openIssuesCount: scala.Double = js.native
   @JSName("owner")
   var owner_Repository: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary = js.native
-  var permissions: typedDashGithubDashApiLib.Anon_Push = js.native
+  var permissions: typedDashGithubDashApiLib.Anon_Admin = js.native
   var pushed: momentLib.momentMod.momentNs.Moment = js.native
   var size: scala.Double = js.native
   var starGazersCount: scala.Double = js.native

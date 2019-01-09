@@ -32,17 +32,13 @@ trait CalendarProps extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   var numberOfMonths: js.UndefOr[scala.Double] = js.undefined
   var onBlur: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValueEventDate, scala.Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValueArray, scala.Unit]] = js.undefined
   var onClearButtonClick: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
   var onInput: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
-  var onSelect: js.UndefOr[
-    js.Function1[/* e */ primereactLib.Anon_OriginalEventValueEventDate_641908380, scala.Unit]
-  ] = js.undefined
+  var onSelect: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValueDate, scala.Unit]] = js.undefined
   var onTodayButtonClick: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
-  var onViewDateChange: js.UndefOr[
-    js.Function1[/* e */ primereactLib.Anon_OriginalEventValueEventDate_641908380, scala.Unit]
-  ] = js.undefined
+  var onViewDateChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValueDate, scala.Unit]] = js.undefined
   var panelClassName: js.UndefOr[java.lang.String] = js.undefined
   var panelStyle: js.UndefOr[js.Object] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined

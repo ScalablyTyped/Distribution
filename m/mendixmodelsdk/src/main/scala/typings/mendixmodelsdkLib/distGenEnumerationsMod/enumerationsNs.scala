@@ -26,24 +26,24 @@ object enumerationsNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/enumerations relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumeration because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumeration because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined values, asLoaded, load, load, load, load */ @js.native
   class Enumeration protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
-    val values: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[EnumerationValue] = js.native
+    val values: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[EnumerationValue | IEnumerationValue] = js.native
   }
   
   /**
     * See: {@link https://docs.mendix.com/refguide7/enumeration-values relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumerationValue because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumerationValue because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsEnumeration, name, asLoaded, load, load, load, load */ @js.native
   class EnumerationValue protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var caption: mendixmodelsdkLib.distGenTextsMod.textsNs.Text = js.native
-    val containerAsEnumeration: Enumeration = js.native
+    val containerAsEnumeration: Enumeration | IEnumeration = js.native
     var image: mendixmodelsdkLib.distGenImagesMod.imagesNs.IImage | scala.Null = js.native
     val imageQualifiedName: java.lang.String | scala.Null = js.native
     @JSName("model")

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait Anon_ArgsAny
   extends org.scalablytyped.runtime.Instantiable1[
       /* args (repeated) */ js.Any, 
-      atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugElement
+      atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugNode
     ]
 

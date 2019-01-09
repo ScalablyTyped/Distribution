@@ -123,7 +123,7 @@ trait OSS extends js.Object {
   /**
     * Get CORS rules of the bucket object.
     */
-  def getBucketCORS(name: java.lang.String): js.Promise[aliDashOssLib.Anon_RulesRes] = js.native
+  def getBucketCORS(name: java.lang.String): js.Promise[aliDashOssLib.Anon_ResRulesArray] = js.native
   /**
     * Get bucket information,include CreationDate、ExtranetEndpoint、IntranetEndpoint、Location、Name、StorageClass、 Owner、AccessControlList
     */
@@ -131,8 +131,8 @@ trait OSS extends js.Object {
   /**
     * Get the bucket object lifecycle.
     */
-  def getBucketLifecycle(name: java.lang.String): js.Promise[aliDashOssLib.Anon_Rules] = js.native
-  def getBucketLifecycle(name: java.lang.String, options: aliDashOssLib.aliDashOssMod.OSSNs.RequestOptions): js.Promise[aliDashOssLib.Anon_Rules] = js.native
+  def getBucketLifecycle(name: java.lang.String): js.Promise[aliDashOssLib.Anon_ResRules] = js.native
+  def getBucketLifecycle(name: java.lang.String, options: aliDashOssLib.aliDashOssMod.OSSNs.RequestOptions): js.Promise[aliDashOssLib.Anon_ResRules] = js.native
   /**
     * Get bucket location
     */
@@ -140,8 +140,8 @@ trait OSS extends js.Object {
   /**
     * Get the bucket logging settings.
     */
-  def getBucketLogging(name: java.lang.String): js.Promise[aliDashOssLib.Anon_Prefix] = js.native
-  def getBucketLogging(name: java.lang.String, options: aliDashOssLib.aliDashOssMod.OSSNs.RequestOptions): js.Promise[aliDashOssLib.Anon_Prefix] = js.native
+  def getBucketLogging(name: java.lang.String): js.Promise[aliDashOssLib.Anon_Enable] = js.native
+  def getBucketLogging(name: java.lang.String, options: aliDashOssLib.aliDashOssMod.OSSNs.RequestOptions): js.Promise[aliDashOssLib.Anon_Enable] = js.native
   /**
     * Get the bucket request Referer white list.
     */
@@ -155,8 +155,8 @@ trait OSS extends js.Object {
   /**
     * Get live channel info.
     */
-  def getChannel(id: java.lang.String): js.Promise[aliDashOssLib.Anon_DataResPutChannelConf] = js.native
-  def getChannel(id: java.lang.String, options: aliDashOssLib.aliDashOssMod.OSSNs.RequestOptions): js.Promise[aliDashOssLib.Anon_DataResPutChannelConf] = js.native
+  def getChannel(id: java.lang.String): js.Promise[aliDashOssLib.Anon_DataResNormalSuccessResponse] = js.native
+  def getChannel(id: java.lang.String, options: aliDashOssLib.aliDashOssMod.OSSNs.RequestOptions): js.Promise[aliDashOssLib.Anon_DataResNormalSuccessResponse] = js.native
   /**
     * Get the live channel history.
     */
@@ -421,7 +421,7 @@ trait OSS extends js.Object {
     partNo: scala.Double,
     range: java.lang.String,
     sourceData: aliDashOssLib.Anon_SourceBucketName,
-    options: aliDashOssLib.Anon_Timeout
+    options: aliDashOssLib.Anon_HeadersTimeout
   ): js.Promise[aliDashOssLib.aliDashOssMod.OSSNs.UploadPartResult] = js.native
   /**
     * Use the bucket.

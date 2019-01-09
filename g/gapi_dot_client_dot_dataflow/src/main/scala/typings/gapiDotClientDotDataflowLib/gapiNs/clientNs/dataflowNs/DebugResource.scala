@@ -10,10 +10,10 @@ trait DebugResource extends js.Object {
   /** Get encoded debug configuration for component. Not cacheable. */
   def getConfig(request: gapiDotClientDotDataflowLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GetDebugConfigResponse] = js.native
   /** Get encoded debug configuration for component. Not cacheable. */
-  def getConfig(request: gapiDotClientDotDataflowLib.Anon_AccesstokenLocation): gapiDotClientLib.gapiNs.clientNs.Request[GetDebugConfigResponse] = js.native
+  def getConfig(request: gapiDotClientDotDataflowLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[GetDebugConfigResponse] = js.native
   /** Send encoded debug capture data for component. */
   def sendCapture(request: gapiDotClientDotDataflowLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object] = js.native
   /** Send encoded debug capture data for component. */
-  def sendCapture(request: gapiDotClientDotDataflowLib.Anon_AccesstokenLocation): gapiDotClientLib.gapiNs.clientNs.Request[js.Object] = js.native
+  def sendCapture(request: gapiDotClientDotDataflowLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[js.Object] = js.native
 }
 

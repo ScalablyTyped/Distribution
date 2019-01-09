@@ -13,7 +13,7 @@ class InputGroup ()
 @JSImport("react-bootstrap/lib", "InputGroup")
 @js.native
 object InputGroup extends js.Object {
-  var Addon: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libInputGroupAddonMod.namespaced] = js.native
-  var Button: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libInputGroupButtonMod.namespaced] = js.native
+  var Addon: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libInputGroupAddonMod.namespaced] with reactDashBootstrapLib.Anon_InputGroupAddon = js.native
+  var Button: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libInputGroupButtonMod.namespaced] with reactDashBootstrapLib.Anon_InputGroupButton = js.native
 }
 

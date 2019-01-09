@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object libNavLinkMod {
   type NavLink[T] = reactLib.reactMod.Component[NavLinkProps[T], js.Object, js.Any]
-  type NavLinkProps[T] = reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLAnchorElement] with reactstrapLib.Anon_InnerRefOnClickCssModule with T
+  type NavLinkProps[T] = reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLAnchorElement] with reactstrapLib.Anon_ActiveClassNameCssModuleDisabled with T
 }

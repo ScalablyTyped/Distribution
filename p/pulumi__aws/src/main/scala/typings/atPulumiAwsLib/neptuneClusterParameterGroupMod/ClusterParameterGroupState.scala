@@ -30,7 +30,9 @@ trait ClusterParameterGroupState extends js.Object {
     * A list of neptune parameters to apply.
     */
   val parameters: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ValueName]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ApplyMethodName]]
+    ]
   ] = js.undefined
   /**
     * A mapping of tags to assign to the resource.

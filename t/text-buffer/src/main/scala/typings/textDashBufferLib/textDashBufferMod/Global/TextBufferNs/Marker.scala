@@ -103,7 +103,7 @@ trait Marker extends js.Object {
     *  Returns a boolean indicating whether or not the marker was updated.
     */
   def setRange(range: RangeCompatible): scala.Boolean = js.native
-  def setRange(range: RangeCompatible, params: textDashBufferLib.Anon_ExclusiveReversed): scala.Boolean = js.native
+  def setRange(range: RangeCompatible, params: textDashBufferLib.Anon_Exclusive): scala.Boolean = js.native
   /**
     *  Sets the tail position of the marker.
     *  Returns a boolean indicating whether or not the marker was updated.

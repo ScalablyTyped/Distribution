@@ -9,7 +9,7 @@ package object googleDashProtobufLib {
   type BinaryRead = js.Function2[/* msg */ js.Any, /* reader */ BinaryReadReader, scala.Unit]
   type BinaryReadReader = js.Function2[
     /* msg */ js.Any, 
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BinaryReader */ /* binaryReader */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BinaryReader */ /* binaryReader */ js.Any, 
     scala.Unit
   ]
   type BinaryWrite = js.Function3[
@@ -20,12 +20,12 @@ package object googleDashProtobufLib {
   ]
   type BinaryWriteCallback = js.Function2[
     /* value */ js.Any, 
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BinaryWriter */ /* binaryWriter */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BinaryWriter */ /* binaryWriter */ js.Any, 
     scala.Unit
   ]
   type ByteSource = stdLib.ArrayBuffer | stdLib.Uint8Array | js.Array[scala.Double] | java.lang.String
   type FieldValue = js.UndefOr[
-    java.lang.String | scala.Double | scala.Boolean | stdLib.Uint8Array | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify FieldValueArray */ js.Any)
+    java.lang.String | scala.Double | scala.Boolean | stdLib.Uint8Array | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FieldValueArray */ js.Any)
   ]
   type RepeatedFieldType = js.Array[ScalarFieldType] | js.Array[stdLib.Uint8Array]
   type ScalarFieldType = scala.Boolean | scala.Double | java.lang.String

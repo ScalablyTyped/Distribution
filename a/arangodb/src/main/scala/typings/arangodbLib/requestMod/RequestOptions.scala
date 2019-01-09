@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RequestOptions extends js.Object {
-  var auth: js.UndefOr[arangodbLib.Anon_Username | arangodbLib.Anon_Bearer] = js.undefined
+  var auth: js.UndefOr[arangodbLib.Anon_Password | arangodbLib.Anon_Bearer] = js.undefined
   var body: js.UndefOr[js.Any] = js.undefined
   var encoding: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var followRedirect: js.UndefOr[scala.Boolean] = js.undefined

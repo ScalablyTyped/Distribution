@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ trait Plugin extends js.Object {
   var Action: js.UndefOr[js.Any] = js.undefined
   var Store: js.UndefOr[js.Any] = js.undefined

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CorridorGeometry protected ()
   extends cesiumLib.cesiumMod.CesiumNs.CorridorGeometry {
-  def this(options: cesiumLib.Anon_ExtrudedHeightHeight) = this()
+  def this(options: cesiumLib.Anon_CornerType) = this()
 }
 
 @JSImport("cesium", "CorridorGeometry")

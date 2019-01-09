@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CorridorGraphics ()
   extends cesiumLib.cesiumMod.CesiumNs.CorridorGraphics {
-  def this(options: cesiumLib.Anon_ExtrudedHeightShowOutlineHeight) = this()
+  def this(options: cesiumLib.Anon_CornerTypeExtrudedHeight) = this()
 }
 

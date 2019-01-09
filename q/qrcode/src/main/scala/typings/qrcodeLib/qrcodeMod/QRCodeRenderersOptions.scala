@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait QRCodeRenderersOptions extends QRCodeOptions {
-  var color: js.UndefOr[qrcodeLib.Anon_Light] = js.undefined
+  var color: js.UndefOr[qrcodeLib.Anon_Dark] = js.undefined
   /**
     * Define how much wide the quiet zone should be.
     * Default: 4

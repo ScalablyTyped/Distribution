@@ -29,7 +29,7 @@ trait TestMatricesResource extends js.Object {
     * - INVALID_ARGUMENT - if the request is malformed or if the matrix expands
     * to more than 200 supported executions
     */
-  def create(request: gapiDotClientDotTestingLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[TestMatrix]
+  def create(request: gapiDotClientDotTestingLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[TestMatrix]
   /**
     * Check the status of a test matrix.
     *

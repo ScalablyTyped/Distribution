@@ -26,7 +26,7 @@ class HtmlContext protected ()
     text: java.lang.String,
     transform: typesettableLib.buildSrcWritersWriterMod.ITransform,
     element: stdLib.Element
-  ): typesettableLib.Anon_Write = js.native
+  ): typesettableLib.Anon_Line = js.native
   def setAddTitle(addTitle: scala.Boolean): scala.Unit = js.native
 }
 

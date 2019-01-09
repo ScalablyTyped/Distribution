@@ -83,7 +83,7 @@ object loopbackModMembers extends js.Object {
     * @header loopback.token([options])
     */
   def token(): expressLib.expressMod.eNs.RequestHandler = js.native
-  def token(options: loopbackLib.Anon_Model): expressLib.expressMod.eNs.RequestHandler = js.native
+  def token(options: loopbackLib.Anon_Cookies): expressLib.expressMod.eNs.RequestHandler = js.native
   /**
     * Convert any request not handled so far to a 404 error
     * to be handled by error-handling middleware.

@@ -9,6 +9,6 @@ trait Anon_Count extends js.Object {
   var count: scala.Double
   var isRefined: scala.Boolean
   var label: java.lang.String
-  var value: js.Array[java.lang.String]
+  var value: java.lang.String
 }
 

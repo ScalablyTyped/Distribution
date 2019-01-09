@@ -598,7 +598,7 @@ class Range ()
   def load(): Range = js.native
   def load(option: java.lang.String): Range = js.native
   def load(option: js.Array[java.lang.String]): Range = js.native
-  def load(option: officeDashJsLib.Anon_Select): Range = js.native
+  def load(option: officeDashJsLib.Anon_Expand): Range = js.native
   def load(option: officeDashJsLib.WordNs.InterfacesNs.RangeLoadOptions): Range = js.native
   /**
     *
@@ -610,7 +610,7 @@ class Range ()
     * @param searchOptions Optional. Options for the search.
     */
   def search(searchText: java.lang.String): RangeCollection = js.native
-  def search(searchText: java.lang.String, searchOptions: officeDashJsLib.Anon_MatchSuffix): RangeCollection = js.native
+  def search(searchText: java.lang.String, searchOptions: officeDashJsLib.Anon_IgnorePunct): RangeCollection = js.native
   def search(searchText: java.lang.String, searchOptions: SearchOptions): RangeCollection = js.native
   /**
     *

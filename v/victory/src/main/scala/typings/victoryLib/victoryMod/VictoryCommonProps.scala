@@ -64,7 +64,7 @@ trait VictoryCommonProps extends js.Object {
     * @example d3Scale.time(), {x: "linear", y: "log"}
     * @default "linear"
     */
-  var scale: js.UndefOr[ScalePropType | D3Scale | victoryLib.Anon_YXScalePropType] = js.undefined
+  var scale: js.UndefOr[ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale] = js.undefined
   /**
     * The standalone prop determines whether the component will render a standalone svg
     * or a <g> tag that will be included in an external svg. Set standalone to false to

@@ -14,7 +14,7 @@ trait IStyleManager extends js.Object {
   var readOnlyCellStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Cell
   var readOnlyFocusedCellStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Cell
   var rowHeaderStyleCollection: sharepointLib.Anon_AllSelected
-  var splitterStyleCollection: sharepointLib.Anon_NormalHandle
+  var splitterStyleCollection: sharepointLib.Anon_Dra
   var timescaleTierStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.TimescaleTier
   var widgetDockHoverStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Widget
   var widgetDockPressedStyle: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Widget

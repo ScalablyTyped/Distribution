@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait EventWrapperProps[T /* <: Event */] extends js.Object {
-  var accessors: reactDashBigDashCalendarLib.Anon_Tooltip[T]
+  var accessors: reactDashBigDashCalendarLib.Anon_End[T]
   var className: java.lang.String
   var continuesEarlier: scala.Boolean
   var continuesLater: scala.Boolean
   var event: T
-  var getters: reactDashBigDashCalendarLib.Anon_SlotProp[T]
+  var getters: reactDashBigDashCalendarLib.Anon_DayProp[T]
   var isRtl: scala.Boolean
   var label: java.lang.String
   var selected: scala.Boolean

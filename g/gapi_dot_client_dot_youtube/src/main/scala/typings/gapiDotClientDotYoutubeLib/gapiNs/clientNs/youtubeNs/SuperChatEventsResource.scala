@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait SuperChatEventsResource extends js.Object {
   /** Lists Super Chat events for a channel. */
-  def list(request: gapiDotClientDotYoutubeLib.Anon_HlMaxResults): gapiDotClientLib.gapiNs.clientNs.Request[SuperChatEventListResponse]
+  def list(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsHl): gapiDotClientLib.gapiNs.clientNs.Request[SuperChatEventListResponse]
 }
 

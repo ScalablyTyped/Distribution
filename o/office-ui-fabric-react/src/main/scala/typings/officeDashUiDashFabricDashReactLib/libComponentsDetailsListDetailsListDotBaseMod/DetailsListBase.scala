@@ -114,6 +114,6 @@ class DetailsListBase protected ()
 @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsList.base", "DetailsListBase")
 @js.native
 object DetailsListBase extends js.Object {
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_ConstrainMode = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_CheckboxVisibility = js.native
 }
 

@@ -12,7 +12,7 @@ trait LDAPjsReqProps extends js.Object {
   var socketPath: js.UndefOr[java.lang.String] = js.undefined
   var strictDN: js.UndefOr[scala.Boolean] = js.undefined
   var timeout: js.UndefOr[scala.Double] = js.undefined
-  var tlsOptions: activedirectory2Lib.Anon_Cert
+  var tlsOptions: activedirectory2Lib.Anon_Ca
   var url: java.lang.String
 }
 

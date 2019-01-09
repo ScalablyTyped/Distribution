@@ -23,7 +23,7 @@ object apolloDashCodegenModMembers extends js.Object {
     target: TargetType,
     tagName: java.lang.String,
     projectName: java.lang.String,
-    options: apolloDashCodegenLib.Anon_GenerateOperationIds
+    options: apolloDashCodegenLib.Anon_AddTypename
   ): scala.Unit = js.native
   def introspectSchema(schemaPath: java.lang.String, outputPath: java.lang.String): js.Promise[scala.Unit] = js.native
   def printSchema(schemaPath: java.lang.String, outputPath: java.lang.String): js.Promise[scala.Unit] = js.native

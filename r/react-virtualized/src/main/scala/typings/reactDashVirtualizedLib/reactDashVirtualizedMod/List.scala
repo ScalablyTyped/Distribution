@@ -13,6 +13,6 @@ class List ()
 @JSImport("react-virtualized", "List")
 @js.native
 object List extends js.Object {
-  var defaultProps: reactDashVirtualizedLib.Anon_EstimatedRowSize30 = js.native
+  var defaultProps: reactDashVirtualizedLib.Anon_1 = js.native
 }
 

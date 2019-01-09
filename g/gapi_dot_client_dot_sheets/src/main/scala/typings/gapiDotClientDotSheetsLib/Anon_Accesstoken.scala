@@ -21,6 +21,8 @@ trait Anon_Accesstoken extends js.Object {
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
+  /** The ID of the developer metadata to retrieve. */
+  var metadataId: scala.Double
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
@@ -29,7 +31,7 @@ trait Anon_Accesstoken extends js.Object {
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
-  /** The ID of the spreadsheet to retrieve data from. */
+  /** The ID of the spreadsheet to retrieve metadata from. */
   var spreadsheetId: java.lang.String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

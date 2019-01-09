@@ -23,11 +23,11 @@ object contextMenusNsMembers extends js.Object {
     * The 'launcher' context is only supported by apps and is used to add menu items to the context menu that appears when clicking on the app icon in the launcher/taskbar/dock/etc.
     * Different platforms might put limitations on what is actually supported in a launcher context menu.
     **/
-  val ContextType: chromeDashAppsLib.Anon_BROWSERACTION = js.native
+  val ContextType: chromeDashAppsLib.Anon_ALL = js.native
   /**
     * The type of menu item.
     **/
-  val ItemType: chromeDashAppsLib.Anon_NORMALNormal = js.native
+  val ItemType: chromeDashAppsLib.Anon_CHECKBOX = js.native
   /** Fired when a context menu item is clicked. */
   val onClicked: MenuClickedEvent = js.native
   /**

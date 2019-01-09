@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.containerNs.IDockingContainer because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait IAbstractPanel
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.containerNs.IDockingContainer because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined defaultDockWeights, addDocked, getDockedComponent, getDockedItems, insertDocked, onDockedAdd, onDockedRemove, removeDocked */ trait IAbstractPanel
   extends extjsLib.ExtNs.containerNs.IContainer {
   /** [Method] Adds a CSS class to the body element
   		* @param cls String The class to add
@@ -40,6 +40,8 @@ trait IAbstractPanel
   var bodyPadding: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (String/Object/Function) */
   var bodyStyle: js.UndefOr[js.Any] = js.undefined
+  /** [Config Option] (Object) */
+  var defaultDockWeights: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Object/Object[]) */
   var dockedItems: js.UndefOr[js.Any] = js.undefined
   /** [Method] Finds a docked component by id itemId or position

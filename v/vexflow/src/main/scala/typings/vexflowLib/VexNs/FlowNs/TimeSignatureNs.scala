@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object TimeSignatureNs extends js.Object {
   @js.native
   object glyphs
-    extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_Point]
+    extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_CodeLine]
   
 }
 

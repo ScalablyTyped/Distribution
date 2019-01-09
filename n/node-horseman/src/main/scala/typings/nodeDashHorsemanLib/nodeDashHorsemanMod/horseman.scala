@@ -165,7 +165,7 @@ trait horseman extends js.Object {
   def open_GET(url: java.lang.String, method: nodeDashHorsemanLib.nodeDashHorsemanLibStrings.GET): this.type = js.native
   def pageMaker(url: js.Any, _page: js.Any, args: js.Any*): js.Any = js.native
   /** Save the current page as a pdf. */
-  def pdf(path: java.lang.String, paperSize: nodeDashHorsemanLib.Anon_Margin): this.type = js.native
+  def pdf(path: java.lang.String, paperSize: nodeDashHorsemanLib.Anon_A3): this.type = js.native
   /** Get the plain text for the body of the page. */
   def plainText(): java.lang.String = js.native
   /** Send Post data to a url. */

@@ -11,7 +11,7 @@ trait Profile extends js.Object {
   /** Indicates whether bot filtering is enabled for this view (profile). */
   var botFilteringEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /** Child link for this view (profile). Points to the list of goals for this view (profile). */
-  var childLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Type] = js.undefined
+  var childLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Href] = js.undefined
   /** Time this view (profile) was created. */
   var created: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -37,9 +37,9 @@ trait Profile extends js.Object {
   /** Name of this view (profile). */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** Parent link for this view (profile). Points to the web property to which this view (profile) belongs. */
-  var parentLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Type] = js.undefined
+  var parentLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Href] = js.undefined
   /** Permissions the user has for this view (profile). */
-  var permissions: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_EffectiveArray] = js.undefined
+  var permissions: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Effective] = js.undefined
   /** Link for this view (profile). */
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
   /** Site search category parameters for this view (profile). */

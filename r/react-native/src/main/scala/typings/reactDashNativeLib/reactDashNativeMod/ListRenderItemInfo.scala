@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 trait ListRenderItemInfo[ItemT] extends js.Object {
   var index: scala.Double
   var item: ItemT
-  var separators: reactDashNativeLib.Anon_Unhighlight
+  var separators: reactDashNativeLib.Anon_Highlight
 }
 

@@ -15,11 +15,11 @@ class Polly protected () extends js.Object {
   val recordingName: java.lang.String | scala.Null = js.native
   var server: PollyServer = js.native
   def configure(config: PollyConfig): scala.Unit = js.native
+  def connectTo(name: atPollyjsCoreLib.Anon_Name): scala.Unit = js.native
   def connectTo(name: java.lang.String): scala.Unit = js.native
-  def connectTo(name: org.scalablytyped.runtime.Instantiable0[atPollyjsAdapterLib.adapterMod.default]): scala.Unit = js.native
   def disconnect(): scala.Unit = js.native
+  def disconnectFrom(name: atPollyjsCoreLib.Anon_Name): scala.Unit = js.native
   def disconnectFrom(name: java.lang.String): scala.Unit = js.native
-  def disconnectFrom(name: org.scalablytyped.runtime.Instantiable0[atPollyjsAdapterLib.adapterMod.default]): scala.Unit = js.native
   def flush(): js.Promise[scala.Unit] = js.native
   def pause(): scala.Unit = js.native
   def play(): scala.Unit = js.native
@@ -34,10 +34,7 @@ object Polly extends js.Object {
   def off(event: atPollyjsCoreLib.coreMod.PollyEvent, listener: atPollyjsCoreLib.coreMod.PollyEventListener): scala.Unit = js.native
   def on(event: atPollyjsCoreLib.coreMod.PollyEvent, listener: atPollyjsCoreLib.coreMod.PollyEventListener): scala.Unit = js.native
   def once(event: atPollyjsCoreLib.coreMod.PollyEvent, listener: atPollyjsCoreLib.coreMod.PollyEventListener): scala.Unit = js.native
-  def register(
-    Factory: org.scalablytyped.runtime.Instantiable0[
-      atPollyjsAdapterLib.adapterMod.default | atPollyjsPersisterLib.persisterMod.default
-    ]
-  ): scala.Unit = js.native
+  def register(Factory: atPollyjsCoreLib.Anon_Name): scala.Unit = js.native
+  def register(Factory: atPollyjsCoreLib.Anon_NameType): scala.Unit = js.native
 }
 

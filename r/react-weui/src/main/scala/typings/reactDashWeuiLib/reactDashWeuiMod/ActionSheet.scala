@@ -18,6 +18,6 @@ class ActionSheet protected () extends js.Object {
 @JSImport("react-weui", "ActionSheet")
 @js.native
 object ActionSheet extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_ShowAutoDectect = js.native
+  var defaultProps: reactDashWeuiLib.Anon_Actions = js.native
 }
 

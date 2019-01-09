@@ -15,7 +15,7 @@ object userScriptsNsMembers extends js.Object {
     * Allowed in: Content scripts only
     */
   val onBeforeScript: firefoxDashWebextDashBrowserLib.WebExtEvent[
-    js.Function1[/* userScript */ firefoxDashWebextDashBrowserLib.Anon_Export, scala.Unit]
+    js.Function1[/* userScript */ firefoxDashWebextDashBrowserLib.Anon_DefineGlobals, scala.Unit]
   ] = js.native
   /* userScripts functions */
   /**

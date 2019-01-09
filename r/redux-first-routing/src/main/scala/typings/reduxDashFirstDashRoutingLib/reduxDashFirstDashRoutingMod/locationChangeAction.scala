@@ -9,6 +9,6 @@ trait locationChangeAction[P /* <: historyLib.historyMod.Pathname */, S /* <: hi
   extends reduxLib.reduxMod.Action[
       reduxDashFirstDashRoutingLib.reduxDashFirstDashRoutingLibStrings.`ROUTER/LOCATION_CHANGE`
     ] {
-  var payload: reduxDashFirstDashRoutingLib.Anon_Hash[H, P, S]
+  var payload: reduxDashFirstDashRoutingLib.Anon_Hash[P, S, H]
 }
 

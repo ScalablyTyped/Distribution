@@ -19,6 +19,6 @@ trait AnimationTriggerMetadata extends AnimationMetadata {
     * developer-defined parameters that provide styling defaults and
     * can be overridden on invocation. Default delay is 0.
     */
-  var options: atAngularAnimationsLib.Anon_ParamsName | scala.Null
+  var options: atAngularAnimationsLib.Anon_NameParams | scala.Null
 }
 

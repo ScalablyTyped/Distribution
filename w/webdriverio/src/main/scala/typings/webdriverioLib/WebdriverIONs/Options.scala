@@ -37,7 +37,7 @@ trait Options extends js.Object {
   var plugins: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var port: js.UndefOr[scala.Double] = js.undefined
   var protocol: js.UndefOr[java.lang.String] = js.undefined
-  var reporterOptions: js.UndefOr[webdriverioLib.Anon_ReporterName] = js.undefined
+  var reporterOptions: js.UndefOr[webdriverioLib.Anon_OutputDir] = js.undefined
   var reporters: js.UndefOr[js.Array[java.lang.String] | (js.Function1[/* repeated */ js.Any, scala.Unit])] = js.undefined
   // wdio-sauce-service specific
   var sauceConnect: js.UndefOr[scala.Boolean] = js.undefined

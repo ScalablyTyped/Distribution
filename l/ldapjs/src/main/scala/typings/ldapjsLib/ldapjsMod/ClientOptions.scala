@@ -14,7 +14,7 @@ trait ClientOptions extends js.Object {
   var queueDisable: js.UndefOr[scala.Boolean] = js.undefined
   var queueSize: js.UndefOr[scala.Double] = js.undefined
   var queueTimeout: js.UndefOr[scala.Double] = js.undefined
-  var reconnect: js.UndefOr[scala.Boolean | ldapjsLib.Anon_MaxDelay] = js.undefined
+  var reconnect: js.UndefOr[scala.Boolean | ldapjsLib.Anon_FailAfter] = js.undefined
   var socketPath: js.UndefOr[java.lang.String] = js.undefined
   var strictDN: js.UndefOr[scala.Boolean] = js.undefined
   var timeout: js.UndefOr[scala.Double] = js.undefined

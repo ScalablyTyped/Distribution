@@ -23,9 +23,6 @@ class namespaced protected () extends OAuth2Server {
 @JSImport("oauth2-server", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
-  var OAuth2Server: oauth2DashServerLib.Anon_OAuthError with (org.scalablytyped.runtime.Instantiable1[
-    /* options */ oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.ServerOptions, 
-    oauth2DashServerLib.oauth2DashServerMod.OAuth2Server
-  ]) = js.native
+  var OAuth2Server: oauth2DashServerLib.Anon_AbstractGrantType = js.native
 }
 

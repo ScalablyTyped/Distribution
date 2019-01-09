@@ -41,6 +41,6 @@ trait ApplePayPaymentRequest extends js.Object {
   var shippingMethods: js.UndefOr[js.Any] = js.undefined
   var shippingType: js.UndefOr[js.Any] = js.undefined
   var supportedNetworks: js.Array[java.lang.String]
-  var total: braintreeDashWebLib.Anon_Amount
+  var total: braintreeDashWebLib.Anon_AmountLabel
 }
 

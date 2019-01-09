@@ -13,7 +13,7 @@ class Dropdown ()
 @JSImport("antd", "Dropdown")
 @js.native
 object Dropdown extends js.Object {
-  var Button: org.scalablytyped.runtime.Instantiable0[antdLib.libDropdownDropdownDashButtonMod.default] = js.native
-  var defaultProps: antdLib.Anon_Placement = js.native
+  var Button: antdLib.Anon_DefaultProps = js.native
+  var defaultProps: antdLib.Anon_BottomCenterBottomLeft = js.native
 }
 

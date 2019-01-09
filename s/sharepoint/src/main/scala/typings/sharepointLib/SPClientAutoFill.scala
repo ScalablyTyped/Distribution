@@ -40,7 +40,7 @@ object SPClientAutoFill extends js.Object {
    // = 'AutoFillKey';
   var DisplayTextProperty: java.lang.String = js.native
   var KeyProperty: java.lang.String = js.native
-  var MenuOptionType: sharepointLib.Anon_Option = js.native
+  var MenuOptionType: sharepointLib.Anon_Footer = js.native
    // = 'AutoFillTitleText';
   var MenuOptionTypeProperty: java.lang.String = js.native
    // = 'AutoFillDisplayText';

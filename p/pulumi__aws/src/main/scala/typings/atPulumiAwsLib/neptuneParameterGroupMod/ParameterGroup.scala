@@ -37,7 +37,7 @@ class ParameterGroup protected ()
   /**
     * A list of Neptune parameters to apply.
     */
-  val parameters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ValueNameApplyMethod]]] = js.native
+  val parameters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ApplyMethod]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

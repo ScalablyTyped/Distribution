@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(yandexDashMapsLib.ymapsNs.IGeoObject because Would inherit conflicting mutable fields List(events, options))*/
-@JSGlobal("ymaps.ClusterPlacemark")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- yandexDashMapsLib.ymapsNs.IGeoObject because var conflicts: events, options. Inlined geometry, properties, state, getOverlay, getOverlaySync */ @JSGlobal("ymaps.ClusterPlacemark")
 @js.native
 class ClusterPlacemark protected ()
   extends yandexDashMapsLib.ymapsNs.collectionNs.Item {
@@ -18,7 +18,7 @@ class ClusterPlacemark protected ()
   def this(geometry: IPointGeometry, properties: IClusterPlacemarkProperties, options: IClusterPlacemarkOptions) = this()
   var geometry: IGeometry | scala.Null = js.native
   var properties: IDataManager = js.native
-  var state: yandexDashMapsLib.ymapsNs.dataNs.Manager = js.native
+  var state: IDataManager | yandexDashMapsLib.ymapsNs.dataNs.Manager = js.native
   def getBounds(): js.Array[js.Array[scala.Double]] | scala.Null = js.native
   def getGeoObjects(): js.Array[IGeoObject] = js.native
   def getOverlay(): js.Promise[IOverlay | scala.Null] = js.native

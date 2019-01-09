@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.utilNs.IObservable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait IEditing
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.utilNs.IObservable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined listeners, hasListeners, isObservable, addEvents, addListener, addManagedListener, clearListeners, clearManagedListeners, enableBubble, fireEvent, fireEventArgs, hasListener, mon, mun, on, relayEvents, removeListener, removeManagedListener, resumeEvent, resumeEvents, suspendEvent, suspendEvents, un */ trait IEditing
   extends extjsLib.ExtNs.IAbstractPlugin {
   /** [Method] Adds the specified events to the list of events which this Observable may fire
   		* @param eventNames Object/String... Either an object with event names as properties with a value of true. For example: this.addEvents({  storeloaded: true,  storecleared: true });  Or any number of event names as separate parameters. For example: this.addEvents('storeloaded', 'storecleared');
@@ -87,6 +87,12 @@ trait IEditing
   		* @returns Boolean true if the event is being listened for or bubbles, else false
   		*/
   var hasListener: js.UndefOr[js.Function1[/* eventName */ js.UndefOr[java.lang.String], scala.Boolean]] = js.undefined
+  /** [Property] (Object) */
+  var hasListeners: js.UndefOr[js.Any] = js.undefined
+  /** [Property] (Boolean) */
+  var isObservable: js.UndefOr[scala.Boolean] = js.undefined
+  /** [Config Option] (Object) */
+  var listeners: js.UndefOr[js.Any] = js.undefined
   /** [Method] Shorthand for addManagedListener
   		* @param item Ext.util.Observable/Ext.Element The item to which to add a listener/listeners.
   		* @param ename Object/String The event name, or an object containing event name properties.

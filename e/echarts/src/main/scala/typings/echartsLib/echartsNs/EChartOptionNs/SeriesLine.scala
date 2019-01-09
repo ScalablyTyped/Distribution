@@ -135,7 +135,7 @@ trait SeriesLine extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.areaStyle
     */
-  var areaStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXShadowBlurColorOrigin] = js.undefined
+  var areaStyle: js.UndefOr[echartsLib.Anon_ColorOpacityOrigin] = js.undefined
   /**
     * Whether to clip the overflowing part, which defaults to clip.
     *
@@ -393,9 +393,7 @@ trait SeriesLine extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.emphasis
     */
-  var emphasis: js.UndefOr[
-    echartsLib.Anon_ItemStyleLabelAnonShadowOffsetXBorderTypeAnonShadowOffsetXBackgroundColorShowAlign
-  ] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColor] = js.undefined
   /**
     * Define what is encoded to for each dimension of `data`.
     * For example:
@@ -457,7 +455,7 @@ trait SeriesLine extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_UnknownProperty] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorBorderTypeBorderWidthColorOpacityShadowBlur] = js.undefined
   /**
     * Text label of , to explain some data information about graphic
     * item like value, name and so on.
@@ -470,7 +468,7 @@ trait SeriesLine extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.label
     */
   var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowAlignTextBorderWidthVerticalAlign
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily
   ] = js.undefined
   /**
     * Whether to enable highlighting chart when
@@ -489,7 +487,7 @@ trait SeriesLine extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.lineStyle
     */
-  var lineStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColorOpacity] = js.undefined
+  var lineStyle: js.UndefOr[echartsLib.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY] = js.undefined
   /**
     * Used to mark an area in chart.
     * For example, mark a time interval.
@@ -497,21 +495,21 @@ trait SeriesLine extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markArea
     */
-  var markArea: js.UndefOr[echartsLib.Anon_Silent] = js.undefined
+  var markArea: js.UndefOr[echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdate] = js.undefined
   /**
     * Use a line in the chart to illustrate.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markLine
     */
-  var markLine: js.UndefOr[echartsLib.Anon_Precision] = js.undefined
+  var markLine: js.UndefOr[echartsLib.Anon_AnimationAnimationDelay] = js.undefined
   /**
     * Mark point in a chart.
     *
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.markPoint
     */
-  var markPoint: js.UndefOr[echartsLib.Anon_SilentData] = js.undefined
+  var markPoint: js.UndefOr[echartsLib.Anon_Animation] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -810,7 +808,7 @@ trait SeriesLine extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-line.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "line"

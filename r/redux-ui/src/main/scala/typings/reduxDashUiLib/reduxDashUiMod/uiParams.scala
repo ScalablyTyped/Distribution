@@ -14,7 +14,7 @@ trait uiParams[UIStateShape] extends js.Object {
     js.Function3[/* stateProps */ js.Any, /* dispatchProps */ js.Any, /* ownProps */ js.Any, _]
   ] = js.undefined
   // optional `options` passed to react-redux @connect
-  var options: js.UndefOr[reduxDashUiLib.Anon_WithRef] = js.undefined
+  var options: js.UndefOr[reduxDashUiLib.Anon_Pure] = js.undefined
   // optional persist, defaults to false. if set to true persist will keep UI
   // state for this component after it unmounts. if set to false the UI state
   // will be deleted and recreated when the component remounts

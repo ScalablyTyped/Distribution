@@ -22,7 +22,7 @@ class OAuth2 () extends js.Object {
     password: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error, /* tokenResponse */ TokenResponse, scala.Unit]
   ): js.Promise[TokenResponse] = js.native
-  def getAuthorizationUrl(params: jsforceLib.Anon_State): java.lang.String = js.native
+  def getAuthorizationUrl(params: jsforceLib.Anon_Scope): java.lang.String = js.native
   def refreshToken(code: java.lang.String): js.Promise[TokenResponse] = js.native
   def refreshToken(
     code: java.lang.String,

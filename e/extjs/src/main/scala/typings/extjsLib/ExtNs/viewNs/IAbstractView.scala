@@ -5,13 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.utilNs.IBindable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait IAbstractView
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.utilNs.IBindable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined bindStore, bindStoreListeners, getStore, getStoreListeners, onBindStore, onUnbindStore, unbindStoreListeners */ trait IAbstractView
   extends extjsLib.ExtNs.IComponent {
   /** [Method] Changes the data store bound to this view and refreshes it
   		* @param store Ext.data.Store The store to bind to this view
   		*/
-  var bindStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IStore], scala.Unit]] = js.undefined
+  var bindStore: js.UndefOr[
+    js.Function1[/* store */ js.UndefOr[js.Any | extjsLib.ExtNs.dataNs.IStore], scala.Unit]
+  ] = js.undefined
   /** [Method] Binds listeners for this component to the store
   		* @param store Ext.data.AbstractStore The store to bind to
   		*/
@@ -108,11 +110,15 @@ trait IAbstractView
   /** [Method] Returns the store associated with this DataView
   		* @returns Ext.data.Store The store
   		*/
-  var getStore: js.UndefOr[js.Function0[extjsLib.ExtNs.dataNs.IStore]] = js.undefined
+  var getStore: js.UndefOr[
+    js.Function0[extjsLib.ExtNs.dataNs.IAbstractStore | extjsLib.ExtNs.dataNs.IStore]
+  ] = js.undefined
   /** [Method] Gets the listeners to bind to a new store
   		* @returns Object The listeners to be bound to the store in object literal form. The scope may be omitted, it is assumed to be the current instance.
   		*/
-  var getStoreListeners: js.UndefOr[js.Function0[_]] = js.undefined
+  var getStoreListeners: js.UndefOr[
+    js.Function0[_] | (js.Function1[/* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IStore], _])
+  ] = js.undefined
   /** [Method] Finds the index of the passed node
   		* @param nodeInfo HTMLElement/String/Number/Ext.data.Model An HTMLElement template node, index of a template node, the id of a template node or a record associated with a node.
   		* @returns Number The index of the node or -1
@@ -145,12 +151,16 @@ trait IAbstractView
   		* @param propName Object
   		*/
   var onBindStore: js.UndefOr[
-    js.Function3[
+    (js.Function2[
+      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
+      /* initial */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ]) | (js.Function3[
       /* store */ js.UndefOr[js.Any], 
       /* initial */ js.UndefOr[js.Any], 
       /* propName */ js.UndefOr[js.Any], 
       scala.Unit
-    ]
+    ])
   ] = js.undefined
   /** [Method] Template method called when this Component s DOM structure is created  */
   @JSName("onRender")
@@ -158,7 +168,13 @@ trait IAbstractView
   /** [Method] Template method it is called when an existing store is unbound from the current instance
   		* @param store Object
   		*/
-  var onUnbindStore: js.UndefOr[js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
+  var onUnbindStore: js.UndefOr[
+    (js.Function1[/* store */ js.UndefOr[js.Any], scala.Unit]) | (js.Function2[
+      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IAbstractStore], 
+      /* initial */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ])
+  ] = js.undefined
   /** [Config Option] (String) */
   var overItemCls: js.UndefOr[java.lang.String] = js.undefined
   /** [Method] Function which can be overridden to provide custom formatting for each Record that is used by this DataView s templat

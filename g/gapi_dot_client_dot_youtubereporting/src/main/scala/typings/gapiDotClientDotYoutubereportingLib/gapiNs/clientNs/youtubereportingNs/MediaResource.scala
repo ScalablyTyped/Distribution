@@ -10,6 +10,6 @@ trait MediaResource extends js.Object {
     * Method for media download. Download is supported
     * on the URI `/v1/media/{+name}?alt=media`.
     */
-  def download(request: gapiDotClientDotYoutubereportingLib.Anon_AccesstokenPrettyPrintBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Media]
+  def download(request: gapiDotClientDotYoutubereportingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Media]
 }
 

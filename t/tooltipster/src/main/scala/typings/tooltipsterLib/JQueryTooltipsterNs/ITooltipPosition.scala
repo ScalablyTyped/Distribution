@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /** see http://iamceege.github.io/tooltipster/#positioning */
 trait ITooltipPosition extends js.Object {
   /** determines the position of the tooltip and are relative to the viewport */
-  var coord: tooltipsterLib.Anon_Top
+  var coord: tooltipsterLib.Anon_Left
   /** the offset that will be applied between the origin and the tooltip */
   var distance: scala.Double
   /** is the side Tooltipster has judged best for your tooltip, according to your requirements */

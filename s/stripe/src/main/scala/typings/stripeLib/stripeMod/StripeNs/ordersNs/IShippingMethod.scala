@@ -18,7 +18,7 @@ trait IShippingMethod extends js.Object {
   /**
     * The estimated delivery date for the given shipping method. Can be either a specific date or a range.
     */
-  var delivery_estimate: stripeLib.Anon_Date
+  var delivery_estimate: stripeLib.Anon_DateEarliest
   /**
     * Description of the line item, meant to be displayable to the user (e.g., "Express shipping").
     */

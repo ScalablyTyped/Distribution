@@ -19,7 +19,7 @@ trait CreateTransmission extends js.Object {
     */
   var cc: js.UndefOr[js.Array[Recipient]] = js.undefined
   /** Content that will be used to construct a message */
-  var content: InlineContent | sparkpostLib.Anon_TemplateidUsedrafttemplate | sparkpostLib.Anon_Emailrfc822
+  var content: InlineContent | sparkpostLib.Anon_Templateid | sparkpostLib.Anon_Emailrfc822
   /** Description of the transmission */
   var description: js.UndefOr[java.lang.String] = js.undefined
   /** Transmission level metadata containing key/value pairs */

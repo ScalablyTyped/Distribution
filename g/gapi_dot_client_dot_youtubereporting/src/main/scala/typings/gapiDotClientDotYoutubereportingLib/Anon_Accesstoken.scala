@@ -19,12 +19,8 @@ trait Anon_Accesstoken extends js.Object {
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * If set to true, also system-managed jobs will be returned; otherwise only
-    * user-created jobs will be returned. System-managed jobs can neither be
-    * modified nor deleted.
-    */
-  var includeSystemManaged: js.UndefOr[scala.Boolean] = js.undefined
+  /** The ID of the job. */
+  var jobId: java.lang.String
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /** OAuth 2.0 token for the current user. */
@@ -34,24 +30,14 @@ trait Anon_Accesstoken extends js.Object {
     * not set, the user is acting for himself (his own channel).
     */
   var onBehalfOfContentOwner: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * Requested page size. Server may return fewer jobs than requested.
-    * If unspecified, server will pick an appropriate default.
-    */
-  var pageSize: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * A token identifying a page of results the server should return. Typically,
-    * this is the value of
-    * ListReportTypesResponse.next_page_token
-    * returned in response to the previous call to the `ListJobs` method.
-    */
-  var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
+  /** The ID of the report to retrieve. */
+  var reportId: java.lang.String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined
   /** Upload protocol for media (e.g. "raw", "multipart"). */

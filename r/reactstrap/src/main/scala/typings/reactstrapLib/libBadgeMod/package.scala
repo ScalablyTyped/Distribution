@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object libBadgeMod {
   type Badge[T] = reactLib.reactMod.Component[BadgeProps[T], js.Object, js.Any]
-  type BadgeProps[T] = reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] with reactstrapLib.Anon_CssModuleTagColor with T
+  type BadgeProps[T] = reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] with reactstrapLib.Anon_ClassNameColor with T
 }

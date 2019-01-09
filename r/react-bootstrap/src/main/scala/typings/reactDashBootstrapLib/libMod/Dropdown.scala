@@ -13,7 +13,7 @@ class Dropdown ()
 @JSImport("react-bootstrap/lib", "Dropdown")
 @js.native
 object Dropdown extends js.Object {
-  var Menu: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libDropdownMenuMod.namespaced] = js.native
-  var Toggle: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libDropdownToggleMod.namespaced] = js.native
+  var Menu: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libDropdownMenuMod.namespaced] with reactDashBootstrapLib.Anon_DropdownMenu = js.native
+  var Toggle: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libDropdownToggleMod.namespaced] with reactDashBootstrapLib.Anon_DropdownToggle = js.native
 }
 

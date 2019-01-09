@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object middlewareMod extends js.Object {
   def serveStatic(): expressLib.expressMod.eNs.RequestHandler = js.native
-  def serveStatic(options: lassoLib.Anon_SendOptions): expressLib.expressMod.eNs.RequestHandler = js.native
+  def serveStatic(options: lassoLib.Anon_Lasso): expressLib.expressMod.eNs.RequestHandler = js.native
 }
 

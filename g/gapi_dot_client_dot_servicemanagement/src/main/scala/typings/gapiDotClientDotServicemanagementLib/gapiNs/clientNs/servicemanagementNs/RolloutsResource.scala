@@ -18,13 +18,15 @@ trait RolloutsResource extends js.Object {
     *
     * Operation<response: Rollout>
     */
-  def create(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPrettyPrintServiceName): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def create(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Gets a service configuration rollout. */
-  def get(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPrettyPrintServiceNameBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Rollout]
+  def get(
+    request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken
+  ): gapiDotClientLib.gapiNs.clientNs.Request[Rollout]
   /**
     * Lists the history of the service configuration rollouts for a managed
     * service, from the newest to the oldest.
     */
-  def list(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenPageSizePrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[ListServiceRolloutsResponse]
+  def list(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListServiceRolloutsResponse]
 }
 

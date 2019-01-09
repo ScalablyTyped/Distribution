@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("sdk/hotkeys", JSImport.Namespace)
 @js.native
 object hotkeysModMembers extends js.Object {
-  def Hotkey(options: jpmLib.Anon_OnPress): Hotkey = js.native
+  def Hotkey(options: jpmLib.Anon_Combo): Hotkey = js.native
 }
 

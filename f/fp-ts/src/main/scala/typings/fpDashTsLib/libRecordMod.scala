@@ -63,7 +63,7 @@ object libRecordMod extends js.Object {
     stdLib.Record[java.lang.String, _]
   ] = js.native
   def getMonoid[A](
-    S: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_fp-ts/lib/Semigroup.Semigroup<A> */ js.Any
+    S: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_fp-ts/lib/Semigroup.Semigroup<A> */ js.Any
   ): fpDashTsLib.libMonoidMod.Monoid[org.scalablytyped.runtime.StringDictionary[A]] = js.native
   def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[stdLib.Record[java.lang.String, A]] = js.native
   def insert[A](k: java.lang.String, a: A, d: stdLib.Record[java.lang.String, A]): stdLib.Record[java.lang.String, A] = js.native

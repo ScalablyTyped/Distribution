@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("wikidata-sdk", JSImport.Namespace)
 @js.native
 object wikidataDashSdkModMembers extends js.Object {
-  def getEntities(a: wikidataDashSdkLib.Anon_Ids): java.lang.String = js.native
+  def getEntities(a: wikidataDashSdkLib.Anon_FormatIds): java.lang.String = js.native
   def getEntities(ids: java.lang.String): java.lang.String = js.native
   def getEntities(ids: java.lang.String, languages: js.Array[wikidataDashSdkLib.defTypeLanguageMod.WikidataLanguage]): java.lang.String = js.native
   def getEntities(
@@ -108,7 +108,7 @@ object wikidataDashSdkModMembers extends js.Object {
   ): java.lang.String = js.native
   def getImageUrl(a: java.lang.String): java.lang.String = js.native
   def getImageUrl(a: java.lang.String, width: scala.Double): java.lang.String = js.native
-  def getManyEntities(a: wikidataDashSdkLib.Anon_Ids): js.Array[java.lang.String] = js.native
+  def getManyEntities(a: wikidataDashSdkLib.Anon_FormatIds): js.Array[java.lang.String] = js.native
   def getManyEntities(ids: java.lang.String): js.Array[java.lang.String] = js.native
   def getManyEntities(ids: java.lang.String, languages: js.Array[wikidataDashSdkLib.defTypeLanguageMod.WikidataLanguage]): js.Array[java.lang.String] = js.native
   def getManyEntities(
@@ -208,30 +208,34 @@ object wikidataDashSdkModMembers extends js.Object {
   ): js.Array[java.lang.String] = js.native
   def getNumericId(a: java.lang.String): scala.Boolean = js.native
   def getReverseClaims(property: java.lang.String, value: java.lang.String): java.lang.String = js.native
-  def getReverseClaims(property: java.lang.String, value: java.lang.String, options: wikidataDashSdkLib.Anon_Limit): java.lang.String = js.native
+  def getReverseClaims(
+    property: java.lang.String,
+    value: java.lang.String,
+    options: wikidataDashSdkLib.Anon_CaseInsensitive
+  ): java.lang.String = js.native
   def getReverseClaims(property: java.lang.String, value: js.Array[java.lang.String]): java.lang.String = js.native
   def getReverseClaims(
     property: java.lang.String,
     value: js.Array[java.lang.String],
-    options: wikidataDashSdkLib.Anon_Limit
+    options: wikidataDashSdkLib.Anon_CaseInsensitive
   ): java.lang.String = js.native
   def getReverseClaims(property: js.Array[java.lang.String], value: java.lang.String): java.lang.String = js.native
   def getReverseClaims(
     property: js.Array[java.lang.String],
     value: java.lang.String,
-    options: wikidataDashSdkLib.Anon_Limit
+    options: wikidataDashSdkLib.Anon_CaseInsensitive
   ): java.lang.String = js.native
   def getReverseClaims(property: js.Array[java.lang.String], value: js.Array[java.lang.String]): java.lang.String = js.native
   def getReverseClaims(
     property: js.Array[java.lang.String],
     value: js.Array[java.lang.String],
-    options: wikidataDashSdkLib.Anon_Limit
+    options: wikidataDashSdkLib.Anon_CaseInsensitive
   ): java.lang.String = js.native
   def getSitelinkData(a: java.lang.String): SitelinkData = js.native
-  def getSitelinkUrl(a: wikidataDashSdkLib.Anon_Title): java.lang.String = js.native
+  def getSitelinkUrl(a: wikidataDashSdkLib.Anon_Site): java.lang.String = js.native
   def getSitelinkUrl(site: wikidataDashSdkLib.defTypeSiteMod.WikidataSite, title: java.lang.String): java.lang.String = js.native
   def getWikidataIdsFromSitelinks(): scala.Unit = js.native
-  def getWikidataIdsFromWikipediaTitles(a: wikidataDashSdkLib.Anon_FormatTitles): java.lang.String = js.native
+  def getWikidataIdsFromWikipediaTitles(a: wikidataDashSdkLib.Anon_FormatLanguages): java.lang.String = js.native
   def getWikidataIdsFromWikipediaTitles(titles: java.lang.String): java.lang.String = js.native
   def getWikidataIdsFromWikipediaTitles(titles: java.lang.String, sites: wikidataDashSdkLib.defTypeSiteMod.WikidataSite): java.lang.String = js.native
   def getWikidataIdsFromWikipediaTitles(

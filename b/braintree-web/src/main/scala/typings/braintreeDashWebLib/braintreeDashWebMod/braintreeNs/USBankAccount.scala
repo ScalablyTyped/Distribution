@@ -20,7 +20,7 @@ trait USBankAccount extends js.Object {
     * @param {callback} callback The second argument, `data`, is the {@link USBankAccount} instance.
     * @returns {void}
     */
-  def create(options: braintreeDashWebLib.Anon_Client_64751587, callback: callback): scala.Unit = js.native
+  def create(options: braintreeDashWebLib.Anon_Client, callback: callback): scala.Unit = js.native
   /**
     * Cleanly tear down anything set up by {@link module:braintree-web/us-bank-account.create|create}.
     * @public
@@ -108,6 +108,6 @@ trait USBankAccount extends js.Object {
     *   });
     * });
     */
-  def tokenize(options: braintreeDashWebLib.Anon_BankLogin, callback: callback): scala.Unit = js.native
+  def tokenize(options: braintreeDashWebLib.Anon_BankDetails, callback: callback): scala.Unit = js.native
 }
 

@@ -31,8 +31,8 @@ class Http () extends js.Object {
     * the postdata is JSON stringified, otherwise by default the data is sent as form-urlencoded
     * @param {Function} callback The callback used when the response has returned. Passed (err, data) where data is the response (format depends on response type, text, Object, ArrayBuffer, XML) and err is the error code.
     */
-  def del(url: java.lang.String, options: playcanvasLib.Anon_WithCredentials): scala.Unit = js.native
-  def del(url: java.lang.String, options: playcanvasLib.Anon_WithCredentials, callback: js.Function): scala.Unit = js.native
+  def del(url: java.lang.String, options: playcanvasLib.Anon_Async): scala.Unit = js.native
+  def del(url: java.lang.String, options: playcanvasLib.Anon_Async, callback: js.Function): scala.Unit = js.native
   def get(url: java.lang.String, options: js.Function): scala.Unit = js.native
   def get(url: java.lang.String, options: js.Function, callback: js.Function): scala.Unit = js.native
   /**
@@ -56,15 +56,15 @@ class Http () extends js.Object {
     *     console.log(response);
     * });
     */
-  def get(url: java.lang.String, options: playcanvasLib.Anon_WithCredentials): scala.Unit = js.native
-  def get(url: java.lang.String, options: playcanvasLib.Anon_WithCredentials, callback: js.Function): scala.Unit = js.native
+  def get(url: java.lang.String, options: playcanvasLib.Anon_Async): scala.Unit = js.native
+  def get(url: java.lang.String, options: playcanvasLib.Anon_Async, callback: js.Function): scala.Unit = js.native
   def post(url: java.lang.String, data: js.Object, options: js.Function): scala.Unit = js.native
   def post(url: java.lang.String, data: js.Object, options: js.Function, callback: js.Function): scala.Unit = js.native
-  def post(url: java.lang.String, data: js.Object, options: playcanvasLib.Anon_WithCredentialsCache): scala.Unit = js.native
+  def post(url: java.lang.String, data: js.Object, options: playcanvasLib.Anon_AsyncCache): scala.Unit = js.native
   def post(
     url: java.lang.String,
     data: js.Object,
-    options: playcanvasLib.Anon_WithCredentialsCache,
+    options: playcanvasLib.Anon_AsyncCache,
     callback: js.Function
   ): scala.Unit = js.native
   def post(url: java.lang.String, data: stdLib.Document, options: js.Function): scala.Unit = js.native
@@ -85,20 +85,20 @@ class Http () extends js.Object {
     * the postdata is JSON stringified, otherwise by default the data is sent as form-urlencoded
     * @param {Function} callback The callback used when the response has returned. Passed (err, data) where data is the response (format depends on response type, text, Object, ArrayBuffer, XML) and err is the error code.
     */
-  def post(url: java.lang.String, data: stdLib.Document, options: playcanvasLib.Anon_WithCredentialsCache): scala.Unit = js.native
+  def post(url: java.lang.String, data: stdLib.Document, options: playcanvasLib.Anon_AsyncCache): scala.Unit = js.native
   def post(
     url: java.lang.String,
     data: stdLib.Document,
-    options: playcanvasLib.Anon_WithCredentialsCache,
+    options: playcanvasLib.Anon_AsyncCache,
     callback: js.Function
   ): scala.Unit = js.native
   def put(url: java.lang.String, data: js.Object, options: js.Function): scala.Unit = js.native
   def put(url: java.lang.String, data: js.Object, options: js.Function, callback: js.Function): scala.Unit = js.native
-  def put(url: java.lang.String, data: js.Object, options: playcanvasLib.Anon_WithCredentialsCache): scala.Unit = js.native
+  def put(url: java.lang.String, data: js.Object, options: playcanvasLib.Anon_AsyncCache): scala.Unit = js.native
   def put(
     url: java.lang.String,
     data: js.Object,
-    options: playcanvasLib.Anon_WithCredentialsCache,
+    options: playcanvasLib.Anon_AsyncCache,
     callback: js.Function
   ): scala.Unit = js.native
   def put(url: java.lang.String, data: stdLib.Document, options: js.Function): scala.Unit = js.native
@@ -120,11 +120,11 @@ class Http () extends js.Object {
     * the postdata is JSON stringified, otherwise by default the data is sent as form-urlencoded
     * @param {Function} callback The callback used when the response has returned. Passed (err, data) where data is the response (format depends on response type, text, Object, ArrayBuffer, XML) and err is the error code.
     */
-  def put(url: java.lang.String, data: stdLib.Document, options: playcanvasLib.Anon_WithCredentialsCache): scala.Unit = js.native
+  def put(url: java.lang.String, data: stdLib.Document, options: playcanvasLib.Anon_AsyncCache): scala.Unit = js.native
   def put(
     url: java.lang.String,
     data: stdLib.Document,
-    options: playcanvasLib.Anon_WithCredentialsCache,
+    options: playcanvasLib.Anon_AsyncCache,
     callback: js.Function
   ): scala.Unit = js.native
   def request(method: java.lang.String, url: java.lang.String, options: js.Function): scala.Unit = js.native
@@ -146,11 +146,11 @@ class Http () extends js.Object {
     * the postdata is JSON stringified, otherwise by default the data is sent as form-urlencoded
     * @param {Function} callback The callback used when the response has retured. Passed (err, data) where data is the response (format depends on response type, text, Object, ArrayBuffer, XML) and err is the error code.
     */
-  def request(method: java.lang.String, url: java.lang.String, options: playcanvasLib.Anon_WithCredentials): scala.Unit = js.native
+  def request(method: java.lang.String, url: java.lang.String, options: playcanvasLib.Anon_Async): scala.Unit = js.native
   def request(
     method: java.lang.String,
     url: java.lang.String,
-    options: playcanvasLib.Anon_WithCredentials,
+    options: playcanvasLib.Anon_Async,
     callback: js.Function
   ): scala.Unit = js.native
 }

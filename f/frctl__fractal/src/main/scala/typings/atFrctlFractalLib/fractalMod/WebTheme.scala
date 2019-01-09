@@ -42,7 +42,7 @@ class WebTheme protected ()
   @JSName("getOption")
   def getOption_version(key: atFrctlFractalLib.atFrctlFractalLibStrings.version): java.lang.String = js.native
   def loadPaths(): js.Array[java.lang.String] = js.native
-  def matchRoute(urlPath: java.lang.String): atFrctlFractalLib.Anon_Route | atFrctlFractalLib.atFrctlFractalLibNumbers.`false` = js.native
+  def matchRoute(urlPath: java.lang.String): atFrctlFractalLib.Anon_Params | atFrctlFractalLib.atFrctlFractalLibNumbers.`false` = js.native
   def options(): WebThemeOptions = js.native
   def options(value: WebThemeOptions): this.type = js.native
   def redirectView(): java.lang.String = js.native

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Tabbar")
 @js.native
 class Tabbar ()
-  extends Component[reactDashOnsenuiLib.Anon_SwipeableOnPreChange, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_AnimationAnimationOptionsAuto, js.Any]
 

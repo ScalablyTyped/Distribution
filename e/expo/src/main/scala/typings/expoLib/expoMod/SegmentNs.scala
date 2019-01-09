@@ -11,7 +11,7 @@ object SegmentNs extends js.Object {
   def flush(): scala.Unit = js.native
   def identify(userId: java.lang.String): scala.Unit = js.native
   def identifyWithTraits(userId: java.lang.String, traits: js.Object): scala.Unit = js.native
-  def initialize(keys: expoLib.Anon_IosWriteKey): scala.Unit = js.native
+  def initialize(keys: expoLib.Anon_AndroidWriteKey): scala.Unit = js.native
   def reset(): scala.Unit = js.native
   def screen(screenName: java.lang.String): scala.Unit = js.native
   def screenWithProperties(screenName: java.lang.String, properties: js.Object): scala.Unit = js.native

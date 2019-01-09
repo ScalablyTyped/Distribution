@@ -98,7 +98,7 @@ class FormGroup protected () extends AbstractControl {
   def patchValue(value: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def patchValue(
     value: org.scalablytyped.runtime.StringDictionary[js.Any],
-    options: atAngularFormsLib.Anon_OnlySelf
+    options: atAngularFormsLib.Anon_EmitEvent
   ): scala.Unit = js.native
   /**
     * Registers a control with the group's list of controls.
@@ -116,7 +116,7 @@ class FormGroup protected () extends AbstractControl {
     * @param name The control name to remove from the collection
     */
   def removeControl(name: java.lang.String): scala.Unit = js.native
-  def reset(value: js.Any, options: atAngularFormsLib.Anon_OnlySelf): scala.Unit = js.native
+  def reset(value: js.Any, options: atAngularFormsLib.Anon_EmitEvent): scala.Unit = js.native
   /**
     * Replace an existing control.
     *
@@ -162,7 +162,7 @@ class FormGroup protected () extends AbstractControl {
   def setValue(value: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
   def setValue(
     value: org.scalablytyped.runtime.StringDictionary[js.Any],
-    options: atAngularFormsLib.Anon_OnlySelf
+    options: atAngularFormsLib.Anon_EmitEvent
   ): scala.Unit = js.native
 }
 

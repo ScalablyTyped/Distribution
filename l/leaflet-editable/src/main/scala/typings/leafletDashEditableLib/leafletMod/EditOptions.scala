@@ -17,7 +17,9 @@ trait EditOptions extends js.Object {
     * Layer used to store edit tools (vertex, line guide…).
     */
   var editLayer: js.UndefOr[
-    leafletLib.leafletMod.LayerGroup[/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ILayer */ _]
+    leafletLib.leafletMod.LayerGroup[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ILayer */ _
+    ]
   ] = js.undefined
   /**
     * Default layer used to store drawn features (marker, polyline…).

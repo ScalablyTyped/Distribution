@@ -9,11 +9,11 @@ trait GetScriptArgs extends js.Object {
   /**
     * A list of the edges in the DAG. Defined below.
     */
-  val dagEdges: js.Array[atPulumiAwsLib.Anon_TargetParameter]
+  val dagEdges: js.Array[atPulumiAwsLib.Anon_Source]
   /**
     * A list of the nodes in the DAG. Defined below.
     */
-  val dagNodes: js.Array[atPulumiAwsLib.Anon_NodeType]
+  val dagNodes: js.Array[atPulumiAwsLib.Anon_ArgsId]
   /**
     * The programming language of the resulting code from the DAG. Defaults to `PYTHON`. Valid values are `PYTHON` and `SCALA`.
     */

@@ -15,7 +15,7 @@ class Calendar protected ()
 @JSImport("antd", "Calendar")
 @js.native
 object Calendar extends js.Object {
-  var defaultProps: antdLib.Anon_OnChange = js.native
-  var propTypes: antdLib.Anon_Style = js.native
+  var defaultProps: antdLib.Anon_Fullscreen = js.native
+  var propTypes: antdLib.Anon_ArgsClassName = js.native
 }
 

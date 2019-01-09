@@ -19,6 +19,6 @@ object GoogleNs extends js.Object {
   }
   
   def logInAsync(config: LogInConfig): js.Promise[LogInResult] = js.native
-  type LogInResult = expoLib.Anon_TypeCancel | expoLib.Anon_ServerAuthCode
+  type LogInResult = expoLib.Anon_Cancel | expoLib.Anon_AccessToken
 }
 

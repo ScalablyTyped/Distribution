@@ -22,7 +22,7 @@ trait ProjectsResource extends js.Object {
     * `resourcemanager.projects.create` on the specified parent for the new
     * project.
     */
-  def create(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def create(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Marks the Project identified by the specified
     * `project_id` (for example, `my-project-123`) for deletion.
@@ -49,21 +49,21 @@ trait ProjectsResource extends js.Object {
     *
     * The caller must have modify permissions for this Project.
     */
-  def delete(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Retrieves the Project identified by the specified
     * `project_id` (for example, `my-project-123`).
     *
     * The caller must have read permissions for this Project.
     */
-  def get(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Project]
+  def get(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Project]
   /**
     * Gets a list of ancestors in the resource hierarchy for the Project
     * identified by the specified `project_id` (for example, `my-project-123`).
     *
     * The caller must have read permissions for this Project.
     */
-  def getAncestry(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[GetAncestryResponse]
+  def getAncestry(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[GetAncestryResponse]
   /**
     * Gets the effective `Policy` on a resource. This is the result of merging
     * `Policies` in the resource hierarchy. The returned `Policy` will not have
@@ -92,7 +92,9 @@ trait ProjectsResource extends js.Object {
     * specified filter. This method returns Projects in an unspecified order.
     * New Projects do not necessarily appear at the end of the list.
     */
-  def list(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListProjectsResponse]
+  def list(
+    request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter
+  ): gapiDotClientLib.gapiNs.clientNs.Request[ListProjectsResponse]
   /** Lists `Constraints` that could be applied on the specified resource. */
   def listAvailableOrgPolicyConstraints(request: gapiDotClientDotCloudresourcemanagerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListAvailableOrgPolicyConstraintsResponse]
   /** Lists all the `Policies` set for a particular resource. */
@@ -165,13 +167,13 @@ trait ProjectsResource extends js.Object {
     *
     * The caller must have modify permissions for this Project.
     */
-  def undelete(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def undelete(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Updates the attributes of the Project identified by the specified
     * `project_id` (for example, `my-project-123`).
     *
     * The caller must have modify permissions for this Project.
     */
-  def update(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Project]
+  def update(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Project]
 }
 

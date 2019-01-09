@@ -30,12 +30,7 @@ object Model extends js.Object {
   var modelName: java.lang.String = js.native
    // TODO
   val query: reduxDashOrmLib.reduxDashOrmMod.QuerySet[_, js.Object, js.Object] = js.native
-  var querySetClass: org.scalablytyped.runtime.Instantiable3[
-    /* import warning: ImportType.apply Failed type conversion: typeof redux-orm.redux-orm.Model */ /* modelClass */ js.Any, 
-    /* clauses */ reduxDashOrmLib.reduxDashOrmMod.QuerySetClauses, 
-    /* opts */ reduxDashOrmLib.reduxDashOrmMod.QuerySetOpts, 
-    reduxDashOrmLib.reduxDashOrmMod.QuerySet[js.Object, js.Object, js.Object]
-  ] = js.native
+  var querySetClass: reduxDashOrmLib.Anon_AddSharedMethod = js.native
   val session: reduxDashOrmLib.reduxDashOrmMod.SessionWithModels[_] = js.native
   var virtualFields: reduxDashOrmLib.reduxDashOrmMod.ModelVirtualFields = js.native
   def _findDatabaseRows(lookupObj: js.Object): js.Any = js.native
@@ -52,10 +47,7 @@ object Model extends js.Object {
   def options(): js.Object = js.native
   def reducer(
     action: js.Any,
-    modelClass: org.scalablytyped.runtime.Instantiable1[
-      /* props */ reduxDashOrmLib.reduxDashOrmMod.ModelProps, 
-      reduxDashOrmLib.reduxDashOrmMod.Model[js.Object, js.Object, js.Object]
-    ],
+    modelClass: reduxDashOrmLib.Anon_Action,
     session: reduxDashOrmLib.reduxDashOrmMod.SessionWithModels[reduxDashOrmLib.reduxDashOrmMod.ORMCommonState]
   ): js.Any = js.native
   def upsert[Fields](props: stdLib.Partial[Fields]): reduxDashOrmLib.reduxDashOrmMod.ModelWithFields[Fields, _, _] = js.native

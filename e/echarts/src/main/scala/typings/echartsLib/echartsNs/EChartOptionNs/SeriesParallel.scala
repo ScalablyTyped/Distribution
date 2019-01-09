@@ -270,7 +270,7 @@ trait SeriesParallel extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_LineStyleAnonShadowOffsetXShadowBlurColorShadowColor] = js.undefined
+  var emphasis: js.UndefOr[echartsLib.Anon_LineStyleAnonColorOpacityShadowBlur] = js.undefined
   /**
     * Component ID, not specified by default.
     * If specified, it can be used to refer the component in option
@@ -296,7 +296,7 @@ trait SeriesParallel extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.lineStyle
     */
-  var lineStyle: js.UndefOr[echartsLib.Anon_ShadowOffsetXShadowBlurColorShadowColorOpacity] = js.undefined
+  var lineStyle: js.UndefOr[echartsLib.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -392,7 +392,7 @@ trait SeriesParallel extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * @default
     * "parallel"

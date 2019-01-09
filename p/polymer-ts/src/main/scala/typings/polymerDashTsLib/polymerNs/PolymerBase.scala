@@ -76,7 +76,7 @@ class PolymerBase ()
   def mixin(target: js.Object, source: js.Object): scala.Unit = js.native
   def notifyPath(path: java.lang.String, value: js.Any): scala.Unit = js.native
   def notifyPath(path: java.lang.String, value: js.Any, fromAbove: js.Any): scala.Unit = js.native
-  def notifySplices(path: java.lang.String, splices: polymerDashTsLib.Anon_Removed): scala.Unit = js.native
+  def notifySplices(path: java.lang.String, splices: polymerDashTsLib.Anon_AddedCount): scala.Unit = js.native
   def pop(path: java.lang.String): js.Any = js.native
   def push(path: java.lang.String, value: js.Any): js.Any = js.native
   def reflectPropertyToAttribute(name: java.lang.String): scala.Unit = js.native

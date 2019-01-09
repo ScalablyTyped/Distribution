@@ -14,7 +14,7 @@ trait IPresetDialog[T] extends js.Object {
    // default: true
   def clickOutsideToClose(): T = js.native
   def clickOutsideToClose(clickOutsideToClose: scala.Boolean): T = js.native
-  def closeTo(to: angularDashMaterialLib.Anon_Top): T = js.native
+  def closeTo(to: angularDashMaterialLib.Anon_Left): T = js.native
   def closeTo(to: java.lang.String): T = js.native
   def closeTo(to: stdLib.Element): T = js.native
    // default: true
@@ -42,7 +42,7 @@ trait IPresetDialog[T] extends js.Object {
   def locals(locals: org.scalablytyped.runtime.StringDictionary[js.Any]): T = js.native
   def multiple(multiple: scala.Boolean): T = js.native
   def ok(ok: java.lang.String): T = js.native
-  def openFrom(from: angularDashMaterialLib.Anon_Top): T = js.native
+  def openFrom(from: angularDashMaterialLib.Anon_Left): T = js.native
   def openFrom(from: java.lang.String): T = js.native
   def openFrom(from: stdLib.Element): T = js.native
   def openFrom(from: stdLib.Event): T = js.native

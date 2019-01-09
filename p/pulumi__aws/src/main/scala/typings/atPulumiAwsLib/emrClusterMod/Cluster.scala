@@ -33,7 +33,7 @@ class Cluster protected ()
   /**
     * List of bootstrap actions that will be run before Hadoop is started on the cluster nodes. Defined below
     */
-  val bootstrapActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameArgsPath]]] = js.native
+  val bootstrapActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Args]]] = js.native
   val clusterState: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
   /**
     * List of configurations supplied for the EMR cluster you are creating
@@ -62,11 +62,11 @@ class Cluster protected ()
   /**
     * Attributes for the EC2 instances running the job flow. Defined below
     */
-  val ec2Attributes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EmrManagedSlaveSecurityGroupSubnetId]] = js.native
+  val ec2Attributes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AdditionalMasterSecurityGroups]] = js.native
   /**
     * A list of `instance_group` objects for each instance group in the cluster. Exactly one of `master_instance_type` and `instance_group` must be specified. If `instance_group` is set, then it must contain a configuration block for at least the `MASTER` instance group type (as well as any additional instance groups). Defined below
     */
-  val instanceGroups: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameEbsConfigsInstanceRole]]] = js.native
+  val instanceGroups: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AutoscalingPolicy]]] = js.native
   /**
     * Switch on/off run cluster with no steps or when all steps are complete (default is on)
     */
@@ -74,7 +74,7 @@ class Cluster protected ()
   /**
     * Kerberos configuration for the cluster. Defined below
     */
-  val kerberosAttributes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AdDomainJoinUserCrossRealmTrustPrincipalPassword]] = js.native
+  val kerberosAttributes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AdDomainJoinPassword]] = js.native
   /**
     * S3 bucket to write the log files of the job flow. If a value is not provided, logs are not created
     */
@@ -110,7 +110,7 @@ class Cluster protected ()
   /**
     * List of steps to run when creating the cluster. Defined below. It is highly recommended to utilize the [lifecycle configuration block](https://www.terraform.io/docs/configuration/resources.html) with `ignore_changes` if other steps are being managed outside of Terraform.
     */
-  val steps: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_HadoopJarStepName]] = js.native
+  val steps: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ActionOnFailure]] = js.native
   /**
     * list of tags to apply to the EMR Cluster
     */

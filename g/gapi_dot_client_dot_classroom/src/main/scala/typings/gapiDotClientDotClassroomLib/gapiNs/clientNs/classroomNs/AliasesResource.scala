@@ -19,7 +19,7 @@ trait AliasesResource extends js.Object {
     * requesting user or course (for example, if a user not in a domain
     * attempts to access a domain-scoped alias).
     */
-  def create(request: gapiDotClientDotClassroomLib.Anon_AccesstokenCourseId): gapiDotClientLib.gapiNs.clientNs.Request[CourseAlias]
+  def create(request: gapiDotClientDotClassroomLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[CourseAlias]
   /**
     * Deletes an alias of a course.
     *
@@ -32,7 +32,7 @@ trait AliasesResource extends js.Object {
     * requesting user or course (for example, if a user not in a domain
     * attempts to delete a domain-scoped alias).
     */
-  def delete(request: gapiDotClientDotClassroomLib.Anon_AccesstokenCourseIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAlias): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Returns a list of aliases for a course.
     *
@@ -42,6 +42,6 @@ trait AliasesResource extends js.Object {
     * course or for access errors.
     * &#42; `NOT_FOUND` if the course does not exist.
     */
-  def list(request: gapiDotClientDotClassroomLib.Anon_AccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListCourseAliasesResponse]
+  def list(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListCourseAliasesResponse]
 }
 

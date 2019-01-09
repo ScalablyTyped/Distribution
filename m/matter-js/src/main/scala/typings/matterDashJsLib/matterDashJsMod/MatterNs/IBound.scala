@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IBound extends js.Object {
-  var max: matterDashJsLib.Anon_Y
-  var min: matterDashJsLib.Anon_Y
+  var max: matterDashJsLib.Anon_X
+  var min: matterDashJsLib.Anon_X
 }
 

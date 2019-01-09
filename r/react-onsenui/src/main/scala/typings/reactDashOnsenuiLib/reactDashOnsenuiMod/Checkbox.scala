@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Checkbox")
 @js.native
 class Checkbox ()
-  extends Component[reactDashOnsenuiLib.Anon_NameCheckedOnChange, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_CheckedDisabled, js.Any]
 

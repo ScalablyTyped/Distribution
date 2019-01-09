@@ -19,6 +19,6 @@ trait IAccountUpdateOptions
     * existing default for this currency, use the bank account or card creation
     * API.
     */
-  var external_account: js.UndefOr[stripeLib.Anon_Country] = js.undefined
+  var external_account: js.UndefOr[stripeLib.Anon_Accountholdername] = js.undefined
 }
 

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.ITextOptions because Would inherit conflicting mutable fields List(aCoords, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, centeredRotation, centeredScaling, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, evented, fill, fillRule, flipX, flipY, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockUniScaling, minScaleLimit, name, objectCaching, opacity, originX, originY, padding, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, shadow, skewX, skewY, stroke, strokeDashArray, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width))*/
-@JSImport("fabric/fabric-impl", "Text")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fabricLib.fabricDashImplMod.ITextOptions because var conflicts: aCoords, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, centeredRotation, centeredScaling, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, evented, fill, fillRule, flipX, flipY, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockUniScaling, minScaleLimit, name, objectCaching, opacity, originX, originY, padding, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, shadow, skewX, skewY, stroke, strokeDashArray, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width. Inlined fontSize, fontWeight, fontFamily, textDecoration, underline, overline, linethrough, textAlign, fontStyle, lineHeight, charSpacing, textBackgroundColor, path, useNative, text */ @JSImport("fabric/fabric-impl", "Text")
 @js.native
 class Text protected () extends Object {
   /**
@@ -16,6 +16,64 @@ class Text protected () extends Object {
   	 */
   def this(text: java.lang.String) = this()
   def this(text: java.lang.String, options: ITextOptions) = this()
+  /**
+    * Character spacing
+    */
+  var charSpacing: js.UndefOr[scala.Double] = js.native
+  /**
+  	 * Font family
+  	 */
+  var fontFamily: js.UndefOr[java.lang.String] = js.native
+  /**
+  	 * Font size (in pixels)
+  	 */
+  var fontSize: js.UndefOr[scala.Double] = js.native
+  /**
+  	 * Font style . Possible values?: "", "normal", "italic" or "oblique".
+  	 */
+  var fontStyle: js.UndefOr[java.lang.String] = js.native
+  /**
+  	 * Font weight (e.g. bold, normal, 400, 600, 800)
+  	 */
+  var fontWeight: js.UndefOr[scala.Double | java.lang.String] = js.native
+  /**
+  	 * Line height
+  	 */
+  var lineHeight: js.UndefOr[scala.Double] = js.native
+  /**
+    * Text decoration linethrough.
+    * @type Boolean
+    * @default
+    */
+  var linethrough: js.UndefOr[scala.Boolean] = js.native
+  /**
+    * Text decoration overline.
+    * @type Boolean
+    * @default
+    */
+  var overline: js.UndefOr[scala.Boolean] = js.native
+  var path: js.UndefOr[java.lang.String] = js.native
+  var text: js.UndefOr[java.lang.String] = js.native
+  /**
+  	 * Text alignment. Possible values?: "left", "center", or "right".
+  	 */
+  var textAlign: js.UndefOr[java.lang.String] = js.native
+  /**
+  	 * Background color of text lines
+  	 */
+  var textBackgroundColor: js.UndefOr[java.lang.String] = js.native
+  /**
+  	 * Text decoration Possible values?: "", "underline", "overline" or "line-through".
+    * Feels like this has been deprecated in favor of underline, overline, linethrough props
+  	 */
+  var textDecoration: js.UndefOr[java.lang.String] = js.native
+  /**
+    * Text decoration underline.
+    * @type Boolean
+    * @default
+    */
+  var underline: js.UndefOr[scala.Boolean] = js.native
+  var useNative: js.UndefOr[scala.Boolean] = js.native
   /**
     * Retrieves object's charSpacing
     */

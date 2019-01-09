@@ -14,7 +14,7 @@ object DOMNs extends js.Object {
   def AbsTop(el: stdLib.HTMLElement): scala.Double = js.native
   def CancelEvent(evt: stdLib.Event): scala.Unit = js.native
   def GetElementsByName(nae: java.lang.String): stdLib.NodeList = js.native
-  def GetEventCoords(evt: stdLib.Event): sharepointLib.Anon_Y = js.native
+  def GetEventCoords(evt: stdLib.Event): sharepointLib.Anon_X = js.native
   def GetEventSrcElement(evt: stdLib.Event): stdLib.HTMLElement = js.native
   def GetInnerText(el: stdLib.HTMLElement): java.lang.String = js.native
   def PreventDefaultNavigation(evt: stdLib.Event): scala.Unit = js.native

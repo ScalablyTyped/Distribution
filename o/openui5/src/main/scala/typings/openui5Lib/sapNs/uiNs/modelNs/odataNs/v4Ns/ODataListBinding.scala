@@ -58,7 +58,7 @@ class ODataListBinding protected ()
     * @returns <code>this</code> to facilitate method chaining
     */
   def filter(vFilters: openui5Lib.sapNs.uiNs.modelNs.Filter): ODataListBinding = js.native
-  def filter(vFilters: openui5Lib.sapNs.uiNs.modelNs.Filter, sFilterType: openui5Lib.Anon_Control): ODataListBinding = js.native
+  def filter(vFilters: openui5Lib.sapNs.uiNs.modelNs.Filter, sFilterType: openui5Lib.Anon_Application): ODataListBinding = js.native
   def getContexts(iStart: scala.Double, iLength: scala.Double, iMaximumPrefetchSize: scala.Double): js.Array[Context] = js.native
   /**
     * Returns <code>true</code> if the binding has pending changes, meaning updates via two-waybinding

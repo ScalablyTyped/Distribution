@@ -11,7 +11,7 @@ trait VpcPeeringConnectionAccepterArgs extends js.Object {
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the accepter VPC.
     */
   val accepter: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowRemoteVpcDnsResolutionAllowClassicLinkToRemoteVpc]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution]
   ] = js.undefined
   /**
     * Whether or not to accept the peering request. Defaults to `false`.
@@ -22,7 +22,7 @@ trait VpcPeeringConnectionAccepterArgs extends js.Object {
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options set for the requester VPC.
     */
   val requester: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowRemoteVpcDnsResolutionAllowClassicLinkToRemoteVpc]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution]
   ] = js.undefined
   /**
     * A mapping of tags to assign to the resource.

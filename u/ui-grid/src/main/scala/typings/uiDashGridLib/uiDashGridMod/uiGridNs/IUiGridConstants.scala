@@ -23,12 +23,12 @@ trait IUiGridConstants extends js.Object {
   var MODEL_COL_FIELD: stdLib.RegExp
   var TEMPLATE_REGEXP: stdLib.RegExp
   var TOOLTIP: stdLib.RegExp
-  var aggregationTypes: uiDashGridLib.Anon_Count
-  var dataChange: uiDashGridLib.Anon_ROW
-  var events: uiDashGridLib.Anon_COLUMNMENUSHOWN
-  var filter: uiDashGridLib.Anon_EXACT
-  var keymap: uiDashGridLib.Anon_MAC
-  var scrollDirection: uiDashGridLib.Anon_LEFT
+  var aggregationTypes: uiDashGridLib.Anon_Avg
+  var dataChange: uiDashGridLib.Anon_ALL
+  var events: uiDashGridLib.Anon_COLUMNHEADERCLICK
+  var filter: uiDashGridLib.Anon_CONTAINS
+  var keymap: uiDashGridLib.Anon_ALT
+  var scrollDirection: uiDashGridLib.Anon_DOWN
   var scrollbars: uiDashGridLib.Anon_ALWAYS
 }
 

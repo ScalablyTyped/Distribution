@@ -323,8 +323,8 @@ object s3Ns extends js.Object {
     var version: js.UndefOr[scala.Double] = js.undefined
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(fineDashUploaderLib.libS3Mod.s3Ns.S3CoreOptions because Would inherit conflicting mutable fields List(autoUpload, blobs, button, callbacks, camera, chunking, cors, debug, deleteFile, disableCancelForFormUploads, extraButtons, form, formatFileName, maxConnections, messages, multiple, paste, request, resume, scaling, session, text, validation, warnBeforeUnload, workarounds))*/
-  trait S3UIOptions
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - fineDashUploaderLib.libS3Mod.s3Ns.S3CoreOptions because var conflicts: autoUpload, blobs, button, callbacks, camera, chunking, cors, debug, deleteFile, disableCancelForFormUploads, extraButtons, form, formatFileName, maxConnections, messages, multiple, paste, request, resume, scaling, session, text, validation, warnBeforeUnload, workarounds. Inlined credentials, iframeSupport, objectProperties, signature, uploadSuccess */ trait S3UIOptions
     extends fineDashUploaderLib.fineDashUploaderMod.UIOptions {
     /**
       * chunking options
@@ -337,15 +337,35 @@ object s3Ns extends js.Object {
     @JSName("cors")
     var cors_S3UIOptions: js.UndefOr[S3CorsOptions] = js.undefined
     /**
+      * credentials
+      */
+    var credentials: js.UndefOr[S3CredentialsOptions] = js.undefined
+    /**
       * failedUploadText options
       */
     @JSName("failedUploadTextDisplay")
     var failedUploadTextDisplay_S3UIOptions: js.UndefOr[S3FailedUploadTextDisplayOptions] = js.undefined
     /**
+      * iframeSupport options
+      */
+    var iframeSupport: js.UndefOr[S3iFrameSupportOptions] = js.undefined
+    /**
+      * objectProperties
+      */
+    var objectProperties: js.UndefOr[S3ObjectPropertyOptions] = js.undefined
+    /**
       * request options
       */
     @JSName("request")
     var request_S3UIOptions: js.UndefOr[S3RequestOptions] = js.undefined
+    /**
+      * signature options
+      */
+    var signature: js.UndefOr[S3SignatureOptions] = js.undefined
+    /**
+      * upload success options
+      */
+    var uploadSuccess: js.UndefOr[S3UploadSuccessOptions] = js.undefined
   }
   
   trait S3UploadSuccessOptions extends js.Object {

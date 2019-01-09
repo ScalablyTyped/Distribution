@@ -98,7 +98,7 @@ trait IMeteorService extends js.Object {
     * @param options.password - The user's password. This is not sent in plain text over the wire.
     * @param options.profile - The user's profile, typically including the name field.
     */
-  def createUser(options: angularDashMeteorLib.Anon_Username): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
+  def createUser(options: angularDashMeteorLib.Anon_EmailPassword): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
   /**
     * Request a forgot password email.
     *
@@ -123,14 +123,14 @@ trait IMeteorService extends js.Object {
     * @return The promise solved successfully when the picture is taken with the data as a parameter or rejected with an error as a parameter in case of error.
     */
   def getPicture(): angularLib.angularMod.angularNs.IPromise[_] = js.native
-  def getPicture(options: angularDashMeteorLib.Anon_Quality): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def getPicture(options: angularDashMeteorLib.Anon_Height): angularLib.angularMod.angularNs.IPromise[_] = js.native
   def loginWithFacebook(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
   def loginWithGithub(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
   def loginWithGoogle(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
   def loginWithMeetup(options: meteorLib.MeteorNs.LoginWithExternalServiceOptions): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
   def loginWithPassword(user: angularDashMeteorLib.Anon_Email, password: java.lang.String): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
   def loginWithPassword(user: angularDashMeteorLib.Anon_Id, password: java.lang.String): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
-  def loginWithPassword(user: angularDashMeteorLib.Anon_UsernameString, password: java.lang.String): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
+  def loginWithPassword(user: angularDashMeteorLib.Anon_Username, password: java.lang.String): angularLib.angularMod.angularNs.IPromise[scala.Unit] = js.native
   /**
     * Log the user in with a password.
     *

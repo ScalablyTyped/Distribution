@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Clock protected ()
   extends cesiumLib.cesiumMod.CesiumNs.Clock {
-  def this(options: cesiumLib.Anon_StartTime) = this()
+  def this(options: cesiumLib.Anon_CanAnimate) = this()
   /* CompleteClass */
   override var canAnimate: scala.Boolean = js.native
   /* CompleteClass */

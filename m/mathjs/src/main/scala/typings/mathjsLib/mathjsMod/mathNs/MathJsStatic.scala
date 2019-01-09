@@ -1469,9 +1469,9 @@ trait MathJsStatic extends js.Object {
     * @returns The lower triangular matrix, the upper triangular matrix and
     * the permutation matrix.
     */
-  def lup(): mathjsLib.Anon_P = js.native
-  def lup(A: MathArray): mathjsLib.Anon_P = js.native
-  def lup(A: Matrix): mathjsLib.Anon_P = js.native
+  def lup(): mathjsLib.Anon_L = js.native
+  def lup(A: MathArray): mathjsLib.Anon_L = js.native
+  def lup(A: Matrix): mathjsLib.Anon_L = js.native
   def lusolve(A: MathArray, b: MathArray): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: MathArray, order: scala.Double): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: MathArray, order: scala.Double, threshold: scala.Double): Matrix | MathArray = js.native
@@ -1909,7 +1909,7 @@ trait MathJsStatic extends js.Object {
     * @returns The product of all values
     */
   def prod(args: MathType*): js.Any = js.native
-  def qr(A: MathArray): mathjsLib.Anon_R = js.native
+  def qr(A: MathArray): mathjsLib.Anon_Q = js.native
   /**
     * Calculate the Matrix QR decomposition. Matrix A is decomposed in two
     * matrices (Q, R) where Q is an orthogonal matrix and R is an upper
@@ -1918,7 +1918,7 @@ trait MathJsStatic extends js.Object {
     * decomposition.
     * @returns Q: the orthogonal matrix and R: the upper triangular matrix
     */
-  def qr(A: Matrix): mathjsLib.Anon_R = js.native
+  def qr(A: Matrix): mathjsLib.Anon_Q = js.native
   def quantileSeq(A: MathArray, prob: BigNumber): scala.Double | BigNumber | Unit | MathArray = js.native
   def quantileSeq(A: MathArray, prob: BigNumber, sorted: scala.Boolean): scala.Double | BigNumber | Unit | MathArray = js.native
   def quantileSeq(A: MathArray, prob: MathArray): scala.Double | BigNumber | Unit | MathArray = js.native
@@ -2019,13 +2019,13 @@ trait MathJsStatic extends js.Object {
     */
   def range(str: java.lang.String): Matrix = js.native
   def range(str: java.lang.String, includeEnd: scala.Boolean): Matrix = js.native
-  def rationalize(expr: java.lang.String): mathjsLib.Anon_Expression = js.native
-  def rationalize(expr: java.lang.String, optional: js.Object): mathjsLib.Anon_Expression = js.native
+  def rationalize(expr: java.lang.String): mathjsLib.Anon_Coefficients = js.native
+  def rationalize(expr: java.lang.String, optional: js.Object): mathjsLib.Anon_Coefficients = js.native
   def rationalize(expr: java.lang.String, optional: js.Object, detailed: mathjsLib.mathjsLibNumbers.`false`): MathNode = js.native
-  def rationalize(expr: java.lang.String, optional: js.Object, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Expression = js.native
-  def rationalize(expr: java.lang.String, optional: scala.Boolean): mathjsLib.Anon_Expression = js.native
+  def rationalize(expr: java.lang.String, optional: js.Object, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Coefficients = js.native
+  def rationalize(expr: java.lang.String, optional: scala.Boolean): mathjsLib.Anon_Coefficients = js.native
   def rationalize(expr: java.lang.String, optional: scala.Boolean, detailed: mathjsLib.mathjsLibNumbers.`false`): MathNode = js.native
-  def rationalize(expr: java.lang.String, optional: scala.Boolean, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Expression = js.native
+  def rationalize(expr: java.lang.String, optional: scala.Boolean, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Coefficients = js.native
   /**
     * Transform a rationalizable expression in a rational fraction. If
     * rational fraction is one variable polynomial then converts the
@@ -2038,13 +2038,13 @@ trait MathJsStatic extends js.Object {
     * expression node (default)
     * @returns The rational polynomial of expr
     */
-  def rationalize(expr: MathNode): mathjsLib.Anon_Expression = js.native
-  def rationalize(expr: MathNode, optional: js.Object): mathjsLib.Anon_Expression = js.native
+  def rationalize(expr: MathNode): mathjsLib.Anon_Coefficients = js.native
+  def rationalize(expr: MathNode, optional: js.Object): mathjsLib.Anon_Coefficients = js.native
   def rationalize(expr: MathNode, optional: js.Object, detailed: mathjsLib.mathjsLibNumbers.`false`): MathNode = js.native
-  def rationalize(expr: MathNode, optional: js.Object, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Expression = js.native
-  def rationalize(expr: MathNode, optional: scala.Boolean): mathjsLib.Anon_Expression = js.native
+  def rationalize(expr: MathNode, optional: js.Object, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Coefficients = js.native
+  def rationalize(expr: MathNode, optional: scala.Boolean): mathjsLib.Anon_Coefficients = js.native
   def rationalize(expr: MathNode, optional: scala.Boolean, detailed: mathjsLib.mathjsLibNumbers.`false`): MathNode = js.native
-  def rationalize(expr: MathNode, optional: scala.Boolean, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Expression = js.native
+  def rationalize(expr: MathNode, optional: scala.Boolean, detailed: mathjsLib.mathjsLibNumbers.`true`): mathjsLib.Anon_Coefficients = js.native
   @JSName("rationalize")
   def rationalize_MathNode(expr: java.lang.String): MathNode = js.native
   @JSName("rationalize")
@@ -2312,13 +2312,13 @@ trait MathJsStatic extends js.Object {
   def simplify(
     expr: java.lang.String,
     rules: js.Array[
-      mathjsLib.Anon_RL | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
+      mathjsLib.Anon_LR | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
     ]
   ): MathNode = js.native
   def simplify(
     expr: java.lang.String,
     rules: js.Array[
-      mathjsLib.Anon_RL | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
+      mathjsLib.Anon_LR | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
     ],
     scope: js.Object
   ): MathNode = js.native
@@ -2336,13 +2336,13 @@ trait MathJsStatic extends js.Object {
   def simplify(
     expr: MathNode,
     rules: js.Array[
-      mathjsLib.Anon_RL | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
+      mathjsLib.Anon_LR | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
     ]
   ): MathNode = js.native
   def simplify(
     expr: MathNode,
     rules: js.Array[
-      mathjsLib.Anon_RL | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
+      mathjsLib.Anon_LR | java.lang.String | (js.Function1[/* node */ MathNode, MathNode])
     ],
     scope: js.Object
   ): MathNode = js.native

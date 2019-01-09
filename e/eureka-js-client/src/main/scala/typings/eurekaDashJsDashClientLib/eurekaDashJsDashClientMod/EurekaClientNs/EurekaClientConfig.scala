@@ -12,7 +12,7 @@ trait EurekaClientConfig extends js.Object {
   var filterUpInstances: js.UndefOr[scala.Boolean] = js.undefined
   var heartbeatInterval: js.UndefOr[scala.Double] = js.undefined
   var host: java.lang.String
-  var logger: js.UndefOr[eurekaDashJsDashClientLib.Anon_Warn] = js.undefined
+  var logger: js.UndefOr[eurekaDashJsDashClientLib.Anon_Args] = js.undefined
   var maxRetries: js.UndefOr[scala.Double] = js.undefined
   var port: scala.Double
   var preferIpAddress: js.UndefOr[scala.Boolean] = js.undefined

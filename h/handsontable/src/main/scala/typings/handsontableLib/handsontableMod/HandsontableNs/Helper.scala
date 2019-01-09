@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Helper extends js.Object {
-  val KEY_CODES: handsontableLib.Anon_X = js.native
+  val KEY_CODES: handsontableLib.Anon_A = js.native
   def arrayAvg(array: js.Array[_]): scala.Double = js.native
   def arrayEach(
     array: js.Array[_],

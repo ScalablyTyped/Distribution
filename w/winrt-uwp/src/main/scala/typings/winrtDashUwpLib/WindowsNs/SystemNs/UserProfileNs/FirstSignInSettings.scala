@@ -31,7 +31,7 @@ abstract class FirstSignInSettings () extends js.Object {
   /**
     * Splits the map view into two views.
     */
-  def split(): winrtDashUwpLib.Anon_SecondFirstIMapViewString = js.native
+  def split(): winrtDashUwpLib.Anon_FirstSecond = js.native
 }
 
 /** Represents a collection of settings that a user can opt-in to during the first run experience. */

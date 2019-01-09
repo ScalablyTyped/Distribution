@@ -14,6 +14,8 @@ trait ThingTypeArgs extends js.Object {
     * The name of the thing type.
     */
   val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-  val properties: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SearchableAttributes]] = js.undefined
+  val properties: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DescriptionSearchableAttributes]
+  ] = js.undefined
 }
 

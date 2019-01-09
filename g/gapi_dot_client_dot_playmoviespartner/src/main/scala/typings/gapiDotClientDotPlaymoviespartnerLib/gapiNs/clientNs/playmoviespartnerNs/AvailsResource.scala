@@ -14,6 +14,6 @@ trait AvailsResource extends js.Object {
     * See _Authentication and Authorization rules_ and
     * _List methods rules_ for more information about this method.
     */
-  def list(request: gapiDotClientDotPlaymoviespartnerLib.Anon_AltId): gapiDotClientLib.gapiNs.clientNs.Request[ListAvailsResponse]
+  def list(request: gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountId): gapiDotClientLib.gapiNs.clientNs.Request[ListAvailsResponse]
 }
 

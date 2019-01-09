@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class AST_Call () extends AST_Node {
   var args: js.Array[AST_Node] = js.native
-  var expression: terserLib.Anon_Property = js.native
+  var expression: terserLib.Anon_Name = js.native
 }
 

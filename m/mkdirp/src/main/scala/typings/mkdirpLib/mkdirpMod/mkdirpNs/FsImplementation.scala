@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FsImplementation extends js.Object {
   @JSName("mkdir")
-  var mkdir_Original: mkdirpLib.Anon_PathCallback = js.native
+  var mkdir_Original: mkdirpLib.Anon_Callback = js.native
   @JSName("stat")
   var stat_Original: (js.Function2[
     /* path */ nodeLib.fsMod.PathLike, 
@@ -18,7 +18,7 @@ trait FsImplementation extends js.Object {
       scala.Unit
     ], 
     scala.Unit
-  ]) with mkdirpLib.Anon_Promisify = js.native
+  ]) with mkdirpLib.Anon_Path = js.native
   def mkdir(
     path: nodeLib.fsMod.PathLike,
     callback: js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]

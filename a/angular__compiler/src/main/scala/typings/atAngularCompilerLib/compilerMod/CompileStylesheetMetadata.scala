@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CompileStylesheetMetadata ()
   extends atAngularCompilerLib.publicUnderscoreApiMod.CompileStylesheetMetadata {
-  def this(hasModuleUrlStylesStyleUrls: atAngularCompilerLib.Anon_Styles) = this()
+  def this(hasModuleUrlStylesStyleUrls: atAngularCompilerLib.Anon_ModuleUrl) = this()
 }
 

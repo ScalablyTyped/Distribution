@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped object */ trait InputContactMessageContent extends js.Object {
   var first_name: java.lang.String
   var last_name: js.UndefOr[java.lang.String] = js.undefined

@@ -17,7 +17,7 @@ package object OrchestratorNs {
   type Sequencify = js.Function2[
     /* tasks */ js.Array[orchestratorLib.Anon_Dep], 
     /* names */ js.Array[java.lang.String], 
-    orchestratorLib.Anon_RecursiveDependencies
+    orchestratorLib.Anon_MissingTasks
   ]
   type Strings = java.lang.String | js.Array[java.lang.String]
   /** A task, can either call a callback to indicate task completion or return a promise or a stream: (task is marked complete when promise.then() resolves/fails or stream ends)

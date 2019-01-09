@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait UserEventsResource extends js.Object {
   /** Logs a user event. */
-  def log(request: gapiDotClientDotPartnersLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[LogUserEventResponse]
+  def log(request: gapiDotClientDotPartnersLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[LogUserEventResponse]
 }
 

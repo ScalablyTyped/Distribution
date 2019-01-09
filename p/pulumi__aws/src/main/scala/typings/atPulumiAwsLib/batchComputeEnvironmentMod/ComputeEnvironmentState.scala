@@ -17,7 +17,9 @@ trait ComputeEnvironmentState extends js.Object {
   /**
     * Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
     */
-  val computeResources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DesiredVcpusSubnets]] = js.undefined
+  val computeResources: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BidPercentageDesiredVcpus]
+  ] = js.undefined
   val eccClusterArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   /**
     * The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.

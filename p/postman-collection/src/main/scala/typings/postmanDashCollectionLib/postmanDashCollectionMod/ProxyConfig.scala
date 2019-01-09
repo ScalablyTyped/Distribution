@@ -5,15 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(postmanDashCollectionLib.postmanDashCollectionMod.ProxyConfigDefinition because Would inherit conflicting mutable fields List(description, disabled, id, name))*/
-@JSImport("postman-collection", "ProxyConfig")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- postmanDashCollectionLib.postmanDashCollectionMod.ProxyConfigDefinition because var conflicts: description, disabled, id, name. Inlined `match`, host, port, tunnel */ @JSImport("postman-collection", "ProxyConfig")
 @js.native
 class ProxyConfig () extends Property[ProxyConfigDefinition] {
   def this(options: ProxyConfigDefinition) = this()
-  var host: java.lang.String = js.native
-  var `match`: UrlMatchPattern = js.native
-  var port: scala.Double = js.native
-  var tunnel: scala.Boolean = js.native
+  var host: java.lang.String | js.UndefOr[java.lang.String] = js.native
+  var `match`: (js.UndefOr[java.lang.String | postmanDashCollectionLib.Anon_Pattern | UrlMatchPattern]) | UrlMatchPattern = js.native
+  var port: scala.Double | js.UndefOr[scala.Double] = js.native
+  var tunnel: scala.Boolean | js.UndefOr[scala.Boolean] = js.native
   def getProtocols(): js.Array[java.lang.String] = js.native
   def getProxyUrl(): java.lang.String = js.native
   def test(): scala.Boolean = js.native

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "ToolbarButton")
 @js.native
 class ToolbarButton ()
-  extends Component[reactDashOnsenuiLib.Anon_OnClickEModifierDisabled, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_Disabled, js.Any]
 

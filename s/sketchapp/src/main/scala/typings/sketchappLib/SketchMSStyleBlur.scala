@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SketchMSStyleBlur extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.styleBlur
-  var center: Anon_Y
+  var center: Anon_X
   var do_objectID: js.UndefOr[java.lang.String] = js.undefined
   var isEnabled: scala.Double
   var motionAngle: scala.Double

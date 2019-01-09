@@ -19,6 +19,6 @@ object Accidental extends js.Object {
   var DEBUG: scala.Boolean = js.native
   def applyAccidentals(voices: js.Array[vexflowLib.VexNs.FlowNs.Voice]): scala.Unit = js.native
   def applyAccidentals(voices: js.Array[vexflowLib.VexNs.FlowNs.Voice], keySignature: java.lang.String): scala.Unit = js.native
-  def format(accidentals: js.Array[vexflowLib.VexNs.FlowNs.Accidental], state: vexflowLib.Anon_Rightshift): scala.Unit = js.native
+  def format(accidentals: js.Array[vexflowLib.VexNs.FlowNs.Accidental], state: vexflowLib.Anon_Leftshift): scala.Unit = js.native
 }
 

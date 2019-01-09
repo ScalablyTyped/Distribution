@@ -11,11 +11,11 @@ trait SessionDescription
   // e=
   var email: js.UndefOr[java.lang.String] = js.undefined
   // m=
-  var media: js.Array[sdpDashTransformLib.Anon_TypeProtocol with MediaDescription]
+  var media: js.Array[sdpDashTransformLib.Anon_Payloads with MediaDescription]
   // s=
   var name: js.UndefOr[java.lang.String] = js.undefined
   // o=
-  var origin: js.UndefOr[sdpDashTransformLib.Anon_SessionVersion] = js.undefined
+  var origin: js.UndefOr[sdpDashTransformLib.Anon_Address] = js.undefined
   // p=
   var phone: js.UndefOr[java.lang.String] = js.undefined
   // r=
@@ -23,7 +23,7 @@ trait SessionDescription
   // z=
   var timezones: js.UndefOr[java.lang.String] = js.undefined
   // t=0 0
-  var timing: js.UndefOr[sdpDashTransformLib.Anon_Stop] = js.undefined
+  var timing: js.UndefOr[sdpDashTransformLib.Anon_Start] = js.undefined
   // u=
   var uri: js.UndefOr[java.lang.String] = js.undefined
   var version: js.UndefOr[scala.Double] = js.undefined

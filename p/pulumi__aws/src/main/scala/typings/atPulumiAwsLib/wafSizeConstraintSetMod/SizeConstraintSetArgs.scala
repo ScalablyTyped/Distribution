@@ -15,7 +15,9 @@ trait SizeConstraintSetArgs extends js.Object {
     */
   val sizeConstraints: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ComparisonOperatorSize]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ComparisonOperatorFieldToMatch]
+      ]
     ]
   ] = js.undefined
 }

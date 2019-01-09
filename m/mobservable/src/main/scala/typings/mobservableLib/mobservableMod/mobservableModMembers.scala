@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("mobservable", JSImport.Namespace)
 @js.native
 object mobservableModMembers extends js.Object {
-  val `_`: mobservableLib.Anon_QuickDiff = js.native
-  val extras: mobservableLib.Anon_SimpleEventEmitter = js.native
+  val `_`: mobservableLib.Anon_Base = js.native
+  val extras: mobservableLib.Anon_Extensive = js.native
   def asFlat[T](value: T): T = js.native
   def asReference[T](value: T): T = js.native
   def asStructure[T](value: T): T = js.native

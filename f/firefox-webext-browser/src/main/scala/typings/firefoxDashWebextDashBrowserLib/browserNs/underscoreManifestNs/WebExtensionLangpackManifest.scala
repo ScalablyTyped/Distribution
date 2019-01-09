@@ -18,7 +18,7 @@ trait WebExtensionLangpackManifest extends js.Object {
   var name: java.lang.String
   var short_name: js.UndefOr[java.lang.String] = js.undefined
   var sources: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[firefoxDashWebextDashBrowserLib.Anon_Paths]
+    org.scalablytyped.runtime.StringDictionary[firefoxDashWebextDashBrowserLib.Anon_Basepath]
   ] = js.undefined
   var version: java.lang.String
 }

@@ -54,7 +54,7 @@ class FloatingInk ()
   def load(): FloatingInk = js.native
   def load(option: java.lang.String): FloatingInk = js.native
   def load(option: js.Array[java.lang.String]): FloatingInk = js.native
-  def load(option: officeDashJsLib.Anon_Select): FloatingInk = js.native
+  def load(option: officeDashJsLib.Anon_Expand): FloatingInk = js.native
   def load(option: officeDashJsLib.OneNoteNs.InterfacesNs.FloatingInkLoadOptions): FloatingInk = js.native
   def toJSON(): officeDashJsLib.OneNoteNs.InterfacesNs.FloatingInkData = js.native
   /**

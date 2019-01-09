@@ -9,7 +9,7 @@ trait GoogleApiYouTubeSubscriptionResource extends js.Object {
   /**
     *
     */
-  var contentDetails: Anon_TotalItemCount
+  var contentDetails: Anon_NewItemCount
   /**
     * The ETag of the subscription resource.
     */
@@ -25,10 +25,10 @@ trait GoogleApiYouTubeSubscriptionResource extends js.Object {
   /**
     * The snippet object contains basic details about the subscription, including its title and the channel that the user subscribed to.
     */
-  var snippet: Anon_ResourceIdDescription
+  var snippet: Anon_ChannelIdChannelTitleDescriptionPublishedAtResourceId
   /**
     *
     */
-  var subscriberSnippet: Anon_DescriptionThumbnails
+  var subscriberSnippet: Anon_ChannelIdDescription
 }
 

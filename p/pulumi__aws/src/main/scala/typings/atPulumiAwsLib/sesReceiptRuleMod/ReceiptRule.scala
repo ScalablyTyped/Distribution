@@ -21,7 +21,7 @@ class ReceiptRule protected ()
   /**
     * A list of Add Header Action blocks. Documented below.
     */
-  val addHeaderActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_HeaderNamePosition]]] = js.native
+  val addHeaderActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_HeaderName]]] = js.native
   /**
     * The name of the rule to place this rule after
     */
@@ -29,7 +29,7 @@ class ReceiptRule protected ()
   /**
     * A list of Bounce Action blocks. Documented below.
     */
-  val bounceActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_StatusCodeTopicArnSmtpReplyCode]]] = js.native
+  val bounceActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Message]]] = js.native
   /**
     * If true, the rule will be enabled
     */
@@ -37,7 +37,7 @@ class ReceiptRule protected ()
   /**
     * A list of Lambda Action blocks. Documented below.
     */
-  val lambdaActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_InvocationTypePosition]]] = js.native
+  val lambdaActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FunctionArnInvocationType]]] = js.native
   /**
     * The name of the rule
     */
@@ -53,7 +53,7 @@ class ReceiptRule protected ()
   /**
     * A list of S3 Action blocks. Documented below.
     */
-  val s3Actions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ObjectKeyPrefixTopicArn]]] = js.native
+  val s3Actions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_BucketNameKmsKeyArn]]] = js.native
   /**
     * If true, incoming emails will be scanned for spam and viruses
     */
@@ -61,7 +61,7 @@ class ReceiptRule protected ()
   /**
     * A list of SNS Action blocks. Documented below.
     */
-  val snsActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_PositionTopicArnNumber]]] = js.native
+  val snsActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Position]]] = js.native
   /**
     * A list of Stop Action blocks. Documented below.
     */
@@ -73,7 +73,7 @@ class ReceiptRule protected ()
   /**
     * A list of WorkMail Action blocks. Documented below.
     */
-  val workmailActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_OrganizationArnPosition]]] = js.native
+  val workmailActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_OrganizationArn]]] = js.native
 }
 
 @JSImport("@pulumi/aws/ses/receiptRule", "ReceiptRule")

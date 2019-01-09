@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class PointPrimitiveCollection ()
   extends cesiumLib.cesiumMod.CesiumNs.PointPrimitiveCollection {
-  def this(options: cesiumLib.Anon_DebugShowBoundingVolume) = this()
+  def this(options: cesiumLib.Anon_BlendOptionDebugShowBoundingVolume) = this()
 }
 

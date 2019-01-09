@@ -9,6 +9,6 @@ trait BackendServicesScopedList extends js.Object {
   /** List of BackendServices contained in this scope. */
   var backendServices: js.UndefOr[js.Array[BackendService]] = js.undefined
   /** Informational warning which replaces the list of backend services when the list is empty. */
-  var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Data] = js.undefined
+  var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Code] = js.undefined
 }
 

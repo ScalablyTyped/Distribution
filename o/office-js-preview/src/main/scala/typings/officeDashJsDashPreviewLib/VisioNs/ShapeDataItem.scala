@@ -61,7 +61,7 @@ class ShapeDataItem ()
   def load(): ShapeDataItem = js.native
   def load(option: java.lang.String): ShapeDataItem = js.native
   def load(option: js.Array[java.lang.String]): ShapeDataItem = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): ShapeDataItem = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): ShapeDataItem = js.native
   def load(option: officeDashJsDashPreviewLib.VisioNs.InterfacesNs.ShapeDataItemLoadOptions): ShapeDataItem = js.native
   def toJSON(): officeDashJsDashPreviewLib.VisioNs.InterfacesNs.ShapeDataItemData = js.native
 }

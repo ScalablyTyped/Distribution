@@ -32,7 +32,7 @@ object leafletModMembers extends js.Object {
   def imageOverlay(imageUrl: java.lang.String, bounds: LatLngBoundsExpression): ImageOverlay = js.native
   def imageOverlay(imageUrl: java.lang.String, bounds: LatLngBoundsExpression, options: ImageOverlayOptions): ImageOverlay = js.native
   def latLng(coords: js.Tuple3[scala.Double, scala.Double, scala.Double]): LatLng = js.native
-  def latLng(coords: leafletLib.Anon_Lat): LatLng = js.native
+  def latLng(coords: leafletLib.Anon_Alt): LatLng = js.native
   def latLng(coords: LatLngLiteral): LatLng = js.native
   def latLng(coords: LatLngTuple): LatLng = js.native
   def latLng(latitude: scala.Double, longitude: scala.Double): LatLng = js.native
@@ -48,7 +48,7 @@ object leafletModMembers extends js.Object {
   def map(element: stdLib.HTMLElement, options: MapOptions): Map = js.native
   def marker(latlng: LatLngExpression): Marker[_] = js.native
   def marker(latlng: LatLngExpression, options: MarkerOptions): Marker[_] = js.native
-  def point(coords: leafletLib.Anon_Y): Point = js.native
+  def point(coords: leafletLib.Anon_X): Point = js.native
   def point(coords: PointTuple): Point = js.native
   def point(x: scala.Double, y: scala.Double): Point = js.native
   def point(x: scala.Double, y: scala.Double, round: scala.Boolean): Point = js.native

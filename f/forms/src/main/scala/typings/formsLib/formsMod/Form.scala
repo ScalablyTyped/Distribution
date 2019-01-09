@@ -12,7 +12,7 @@ trait Form extends js.Object {
   /** Binds data to correct fields, returning a new bound form object. */
   def bind(data: js.Any): FormBound = js.native
   /** Inspects a request or object literal and binds any data to the correct fields. */
-  def handle(req: formsLib.Anon_Url, callbacks: formsLib.Anon_Success): scala.Unit = js.native
+  def handle(req: formsLib.Anon_Body, callbacks: formsLib.Anon_Empty): scala.Unit = js.native
   /**
     * Runs toHTML on each field returning the result.
     * If an iterator is specified, it is called for each field with the field name and object as it's arguments,

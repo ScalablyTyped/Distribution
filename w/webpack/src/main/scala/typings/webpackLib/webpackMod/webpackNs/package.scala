@@ -55,7 +55,7 @@ package object webpackNs {
     * @deprecated Use RuleSetRule instead
     */
   type Rule = RuleSetRule
-  type RuleSetCondition = stdLib.RegExp | java.lang.String | (js.Function1[/* path */ java.lang.String, scala.Boolean]) | RuleSetConditions | webpackLib.Anon_Test
+  type RuleSetCondition = stdLib.RegExp | java.lang.String | (js.Function1[/* path */ java.lang.String, scala.Boolean]) | RuleSetConditions | webpackLib.Anon_And
   type RuleSetQuery = java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]
   type RuleSetUse = RuleSetUseItem | js.Array[RuleSetUseItem] | (js.Function1[/* data */ js.Any, RuleSetUseItem | js.Array[RuleSetUseItem]])
   type RuleSetUseItem = java.lang.String | RuleSetLoader | (js.Function1[/* data */ js.Any, java.lang.String | RuleSetLoader])

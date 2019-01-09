@@ -272,8 +272,8 @@ class ArcRotateCamera protected () extends TargetCamera {
     useCtrlForPanning: scala.Boolean,
     panningMouseButton: scala.Double
   ): scala.Unit = js.native
-  def focusOn(meshesOrMinMaxVectorAndDistance: babylonjsLib.Anon_Distance): scala.Unit = js.native
-  def focusOn(meshesOrMinMaxVectorAndDistance: babylonjsLib.Anon_Distance, doNotUpdateMaxZ: scala.Boolean): scala.Unit = js.native
+  def focusOn(meshesOrMinMaxVectorAndDistance: babylonjsLib.Anon_DistanceMax): scala.Unit = js.native
+  def focusOn(meshesOrMinMaxVectorAndDistance: babylonjsLib.Anon_DistanceMax, doNotUpdateMaxZ: scala.Boolean): scala.Unit = js.native
   /**
     * Focus on a mesh or a bounding box. This adapts the target and maxRadius if necessary but does not update the current radius.
     * The target will be changed but the radius

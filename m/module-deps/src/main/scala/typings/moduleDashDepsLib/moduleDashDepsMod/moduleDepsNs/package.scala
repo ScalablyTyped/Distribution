@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object moduleDepsNs {
   type CacheCallback = js.Function2[
     /* err */ nodeLib.Error | scala.Null, 
-    /* res */ js.UndefOr[moduleDashDepsLib.Anon_Source], 
+    /* res */ js.UndefOr[moduleDashDepsLib.Anon_Dep], 
     scala.Unit
   ]
 }

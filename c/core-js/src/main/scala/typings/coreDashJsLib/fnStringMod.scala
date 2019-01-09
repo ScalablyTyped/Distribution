@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/string", JSImport.Namespace)
 @js.native
 object fnStringMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_PadEnd]
+  extends org.scalablytyped.runtime.TopLevel[Anon_At]
 

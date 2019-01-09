@@ -26,12 +26,12 @@ class Analyser protected () extends js.Object {
     * Gets or sets the position of the debug canvas
     * @ignorenaming
     */
-  var DEBUGCANVASPOS: babylonjsLib.Anon_Y = js.native
+  var DEBUGCANVASPOS: babylonjsLib.Anon_X = js.native
   /**
     * Gets or sets the debug canvas size
     * @ignorenaming
     */
-  var DEBUGCANVASSIZE: babylonjsLib.Anon_Height = js.native
+  var DEBUGCANVASSIZE: babylonjsLib.Anon_HeightWidth = js.native
   /**
     * Gets or sets the FFT table size
     * @ignorenaming

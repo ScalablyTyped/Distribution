@@ -32,7 +32,7 @@ trait Tooltip extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip.axisPointer
     */
-  var axisPointer: js.UndefOr[echartsLib.Anon_Z] = js.undefined
+  var axisPointer: js.UndefOr[echartsLib.Anon_Angle] = js.undefined
   /**
     * The background color of tooltip's floating layer.
     *

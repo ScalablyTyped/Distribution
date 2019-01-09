@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Attributes[AM /* <: rbacDashALib.rbacDashAMod.AttributesManager */, P /* <: rbacDashALib.rbacDashAMod.Provider */] extends js.Object {
+trait Anon_Attributes[P /* <: rbacDashALib.rbacDashAMod.Provider */, AM /* <: rbacDashALib.rbacDashAMod.AttributesManager */] extends js.Object {
   var attributes: js.UndefOr[AM] = js.undefined
   var provider: P
 }

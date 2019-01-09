@@ -14,7 +14,6 @@ trait ArrowKeyStepperProps
   * https://github.com/bvaughn/react-virtualized#pass-thru-props
   */
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var children: js.Function1[/* props */ ChildProps, reactLib.reactMod.ReactNs.ReactNode]
   var className: js.UndefOr[java.lang.String] = js.undefined
   var columnCount: scala.Double
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -26,5 +25,6 @@ trait ArrowKeyStepperProps
   var rowCount: scala.Double
   var scrollToColumn: js.UndefOr[scala.Double] = js.undefined
   var scrollToRow: js.UndefOr[scala.Double] = js.undefined
+  def children(props: ChildProps): reactLib.reactMod.ReactNs.ReactNode
 }
 

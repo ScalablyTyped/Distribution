@@ -1632,8 +1632,8 @@ object babelDashTypesModMembers extends js.Object {
   def taggedTemplateExpression(tag: Expression): TaggedTemplateExpression = js.native
   def taggedTemplateExpression(tag: Expression, quasi: TemplateLiteral): TaggedTemplateExpression = js.native
   def templateElement(): TemplateElement = js.native
-  def templateElement(value: babelDashTypesLib.Anon_Raw): TemplateElement = js.native
-  def templateElement(value: babelDashTypesLib.Anon_Raw, tail: scala.Boolean): TemplateElement = js.native
+  def templateElement(value: babelDashTypesLib.Anon_CookedRaw): TemplateElement = js.native
+  def templateElement(value: babelDashTypesLib.Anon_CookedRaw, tail: scala.Boolean): TemplateElement = js.native
   def templateLiteral(): TemplateLiteral = js.native
   def templateLiteral(quasis: js.Array[TemplateElement]): TemplateLiteral = js.native
   def templateLiteral(quasis: js.Array[TemplateElement], expressions: js.Array[Expression]): TemplateLiteral = js.native

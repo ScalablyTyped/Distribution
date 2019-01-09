@@ -13,6 +13,6 @@ class WindowScroller ()
 @JSImport("react-virtualized", "WindowScroller")
 @js.native
 object WindowScroller extends js.Object {
-  var defaultProps: reactDashVirtualizedLib.Anon_ServerHeight = js.native
+  var defaultProps: reactDashVirtualizedLib.Anon_0150OnResize = js.native
 }
 

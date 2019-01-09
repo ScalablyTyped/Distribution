@@ -231,7 +231,7 @@ class Transform[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_
   def split(
     pos: scala.Double,
     depth: scala.Double,
-    typesAfter: js.Array[prosemirrorDashTransformLib.Anon_Type[S]]
+    typesAfter: js.Array[prosemirrorDashTransformLib.Anon_Attrs[S]]
   ): this.type = js.native
   /**
     * Apply a new step in this transform, saving the result. Throws an
@@ -245,7 +245,7 @@ class Transform[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_
     */
   def wrap(
     range: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeRange[S],
-    wrappers: js.Array[prosemirrorDashTransformLib.Anon_Type[S]]
+    wrappers: js.Array[prosemirrorDashTransformLib.Anon_Attrs[S]]
   ): this.type = js.native
 }
 

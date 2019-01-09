@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PolygonGeometry protected ()
   extends cesiumLib.cesiumMod.CesiumNs.PolygonGeometry {
-  def this(options: cesiumLib.Anon_ExtrudedHeightStRotationHeightVertexFormat) = this()
+  def this(options: cesiumLib.Anon_EllipsoidExtrudedHeight) = this()
 }
 
 @JSImport("cesium", "PolygonGeometry")
@@ -17,7 +17,7 @@ class PolygonGeometry protected ()
 object PolygonGeometry extends js.Object {
   def createGeometry(polygonGeometry: cesiumLib.cesiumMod.CesiumNs.PolygonGeometry): cesiumLib.cesiumMod.CesiumNs.Geometry = js.native
   def fromPositions(): cesiumLib.cesiumMod.CesiumNs.PolygonGeometry = js.native
-  def fromPositions(options: cesiumLib.Anon_ExtrudedHeightStRotationHeight): cesiumLib.cesiumMod.CesiumNs.PolygonGeometry = js.native
+  def fromPositions(options: cesiumLib.Anon_CloseBottom): cesiumLib.cesiumMod.CesiumNs.PolygonGeometry = js.native
   def unpack(array: js.Array[scala.Double]): cesiumLib.cesiumMod.CesiumNs.PolygonGeometry = js.native
   def unpack(array: js.Array[scala.Double], startingIndex: scala.Double): cesiumLib.cesiumMod.CesiumNs.PolygonGeometry = js.native
   def unpack(

@@ -17,6 +17,6 @@ trait VirtualNodeArgs extends js.Object {
   /**
     * The virtual node specification to apply.
     */
-  val spec: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Listener]
+  val spec: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BackendsListener]
 }
 

@@ -140,7 +140,7 @@ trait PerAxisOptions extends js.Object {
       /* opts */ js.Function1[/* name */ java.lang.String, _], 
       /* dygraph */ dygraphsLib.Dygraph, 
       /* vals */ js.Array[scala.Double], 
-      js.Array[dygraphsLib.Anon_V]
+      js.Array[dygraphsLib.Anon_Label]
     ]
   ] = js.undefined
   /**

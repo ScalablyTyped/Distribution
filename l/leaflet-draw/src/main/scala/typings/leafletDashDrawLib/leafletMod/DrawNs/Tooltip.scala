@@ -14,7 +14,7 @@ class Tooltip protected ()
   def removeError(): Tooltip = js.native
   def showAsError(): Tooltip = js.native
   def updateContent(): Tooltip = js.native
-  def updateContent(labelText: leafletDashDrawLib.Anon_Text): Tooltip = js.native
+  def updateContent(labelText: leafletDashDrawLib.Anon_Subtext): Tooltip = js.native
   def updatePosition(latlng: leafletLib.leafletMod.LatLng): Tooltip = js.native
 }
 

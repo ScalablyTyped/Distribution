@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait IHttpBuffer extends js.Object {
   def append(
     config: angularLib.angularMod.angularNs.IRequestConfig,
-    deferred: angularDashHttpDashAuthLib.Anon_Reject
+    deferred: angularDashHttpDashAuthLib.Anon_Data
   ): scala.Unit = js.native
   def rejectAll(): scala.Unit = js.native
   def rejectAll(reason: js.Any): scala.Unit = js.native

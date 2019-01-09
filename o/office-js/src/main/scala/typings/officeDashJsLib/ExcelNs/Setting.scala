@@ -54,7 +54,7 @@ class Setting ()
   def load(): Setting = js.native
   def load(option: java.lang.String): Setting = js.native
   def load(option: js.Array[java.lang.String]): Setting = js.native
-  def load(option: officeDashJsLib.Anon_Select): Setting = js.native
+  def load(option: officeDashJsLib.Anon_Expand): Setting = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.SettingLoadOptions): Setting = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

@@ -18,7 +18,7 @@ trait RangeSelectorOptions extends js.Object {
   var inputDateParser: js.UndefOr[js.Function1[/* date */ java.lang.String, scala.Double]] = js.undefined
   var inputEditDateFormat: js.UndefOr[java.lang.String] = js.undefined
   var inputEnabled: js.UndefOr[scala.Boolean] = js.undefined
-  var inputPosition: js.UndefOr[highchartsLib.Anon_Y] = js.undefined
+  var inputPosition: js.UndefOr[highchartsLib.Anon_Align] = js.undefined
   var inputStyle: js.UndefOr[highchartsLib.highchartsMod.HighchartsNs.CSSObject] = js.undefined
   var labelStyle: js.UndefOr[highchartsLib.highchartsMod.HighchartsNs.CSSObject] = js.undefined
   var selected: js.UndefOr[scala.Double] = js.undefined

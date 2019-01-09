@@ -15,13 +15,13 @@ trait ISpexBase extends js.Object {
   def page(source: js.Function3[/* index */ scala.Double, /* data */ js.Any, /* delay */ scala.Double, _]): js.Promise[TPageResult] = js.native
   def page(
     source: js.Function3[/* index */ scala.Double, /* data */ js.Any, /* delay */ scala.Double, _],
-    options: spexLib.Anon_Limit
+    options: spexLib.Anon_Data
   ): js.Promise[TPageResult] = js.native
   // API: http://vitaly-t.github.io/spex/global.html#sequence
   def sequence(source: js.Function3[/* index */ scala.Double, /* data */ js.Any, /* delay */ scala.Double, _]): js.Promise[TSequenceResult | IArrayExt[_]] = js.native
   def sequence(
     source: js.Function3[/* index */ scala.Double, /* data */ js.Any, /* delay */ scala.Double, _],
-    options: spexLib.Anon_LimitTrack
+    options: spexLib.Anon_DataDelay
   ): js.Promise[TSequenceResult | IArrayExt[_]] = js.native
 }
 

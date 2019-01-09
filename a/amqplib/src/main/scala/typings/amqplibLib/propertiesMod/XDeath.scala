@@ -12,6 +12,6 @@ trait XDeath extends js.Object {
   var queue: java.lang.String
   var reason: amqplibLib.amqplibLibStrings.rejected | amqplibLib.amqplibLibStrings.expired | amqplibLib.amqplibLibStrings.maxlen
   var `routing-keys`: js.Array[java.lang.String]
-  var time: amqplibLib.Anon_Value
+  var time: amqplibLib.`Anon_`
 }
 

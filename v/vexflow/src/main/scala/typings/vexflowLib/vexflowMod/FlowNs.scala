@@ -48,7 +48,7 @@ object FlowNs extends js.Object {
     extends vexflowLib.VexNs.FlowNs.Bend {
     def this(text: java.lang.String) = this()
     def this(text: java.lang.String, release: scala.Boolean) = this()
-    def this(text: java.lang.String, release: scala.Boolean, phrase: js.Array[vexflowLib.Anon_TextType]) = this()
+    def this(text: java.lang.String, release: scala.Boolean, phrase: js.Array[vexflowLib.Anon_Text]) = this()
   }
   
   @js.native
@@ -82,7 +82,7 @@ object FlowNs extends js.Object {
   @js.native
   class Crescendo protected ()
     extends vexflowLib.VexNs.FlowNs.Crescendo {
-    def this(note_struct: vexflowLib.Anon_LineDuration) = this()
+    def this(note_struct: vexflowLib.Anon_Duration) = this()
   }
   
   @js.native
@@ -116,7 +116,7 @@ object FlowNs extends js.Object {
   class GhostNote protected ()
     extends vexflowLib.VexNs.FlowNs.GhostNote {
     def this(duration: java.lang.String) = this()
-    def this(note_struct: vexflowLib.Anon_Type) = this()
+    def this(note_struct: vexflowLib.Anon_DotsDurationType) = this()
   }
   
   @js.native
@@ -129,7 +129,7 @@ object FlowNs extends js.Object {
   @js.native
   class GraceNote protected ()
     extends vexflowLib.VexNs.FlowNs.GraceNote {
-    def this(note_struct: vexflowLib.Anon_DurationOctaveshiftDots) = this()
+    def this(note_struct: vexflowLib.Anon_Autostem) = this()
   }
   
   @js.native
@@ -166,13 +166,13 @@ object FlowNs extends js.Object {
   @js.native
   class Note protected ()
     extends vexflowLib.VexNs.FlowNs.Note {
-    def this(note_struct: vexflowLib.Anon_Type) = this()
+    def this(note_struct: vexflowLib.Anon_DotsDurationType) = this()
   }
   
   @js.native
   class NoteHead protected ()
     extends vexflowLib.VexNs.FlowNs.NoteHead {
-    def this(head_options: vexflowLib.Anon_DurationX) = this()
+    def this(head_options: vexflowLib.Anon_Customglyphcode) = this()
   }
   
   @js.native
@@ -221,7 +221,7 @@ object FlowNs extends js.Object {
   class Stave protected ()
     extends vexflowLib.VexNs.FlowNs.Stave {
     def this(x: scala.Double, y: scala.Double, width: scala.Double) = this()
-    def this(x: scala.Double, y: scala.Double, width: scala.Double, options: vexflowLib.Anon_Numlines) = this()
+    def this(x: scala.Double, y: scala.Double, width: scala.Double, options: vexflowLib.Anon_Fillstyle) = this()
   }
   
   @js.native
@@ -233,13 +233,13 @@ object FlowNs extends js.Object {
   @js.native
   class StaveHairpin protected ()
     extends vexflowLib.VexNs.FlowNs.StaveHairpin {
-    def this(notes: vexflowLib.Anon_Lastnote, `type`: vexflowLib.VexNs.FlowNs.StaveHairpinNs.`type`) = this()
+    def this(notes: vexflowLib.Anon_Firstnote, `type`: vexflowLib.VexNs.FlowNs.StaveHairpinNs.`type`) = this()
   }
   
   @js.native
   class StaveLine protected ()
     extends vexflowLib.VexNs.FlowNs.StaveLine {
-    def this(notes: vexflowLib.Anon_LastindicesLastnote) = this()
+    def this(notes: vexflowLib.Anon_Firstindices) = this()
   }
   
   @js.native
@@ -249,7 +249,7 @@ object FlowNs extends js.Object {
   @js.native
   class StaveNote protected ()
     extends vexflowLib.VexNs.FlowNs.StaveNote {
-    def this(note_struct: vexflowLib.Anon_DurationOctaveshift) = this()
+    def this(note_struct: vexflowLib.Anon_AutostemClef) = this()
   }
   
   @js.native
@@ -289,20 +289,20 @@ object FlowNs extends js.Object {
       * two ties can be used, each with either "first_note" or "last_note" missing.
       *
       **/
-    def this(notes: vexflowLib.Anon_Lastindices) = this()
-    def this(notes: vexflowLib.Anon_Lastindices, text: java.lang.String) = this()
+    def this(notes: vexflowLib.Anon_FirstindicesFirstnoteLastindices) = this()
+    def this(notes: vexflowLib.Anon_FirstindicesFirstnoteLastindices, text: java.lang.String) = this()
   }
   
   @js.native
   class Stem protected ()
     extends vexflowLib.VexNs.FlowNs.Stem {
-    def this(options: vexflowLib.Anon_Xend) = this()
+    def this(options: vexflowLib.Anon_Stemdirection) = this()
   }
   
   @js.native
   class StemmableNote protected ()
     extends vexflowLib.VexNs.FlowNs.StemmableNote {
-    def this(note_struct: vexflowLib.Anon_Type) = this()
+    def this(note_struct: vexflowLib.Anon_DotsDurationType) = this()
   }
   
   @js.native
@@ -320,47 +320,47 @@ object FlowNs extends js.Object {
   @js.native
   class TabNote protected ()
     extends vexflowLib.VexNs.FlowNs.TabNote {
-    def this(tab_struct: vexflowLib.Anon_Duration) = this()
-    def this(tab_struct: vexflowLib.Anon_Duration, draw_stem: scala.Boolean) = this()
+    def this(tab_struct: vexflowLib.Anon_DotsDurationPositions) = this()
+    def this(tab_struct: vexflowLib.Anon_DotsDurationPositions, draw_stem: scala.Boolean) = this()
   }
   
   @js.native
   class TabSlide protected ()
     extends vexflowLib.VexNs.FlowNs.TabSlide {
-    def this(notes: vexflowLib.Anon_LastindicesLastnote) = this()
-    def this(notes: vexflowLib.Anon_LastindicesLastnote, direction: scala.Double) = this()
+    def this(notes: vexflowLib.Anon_Firstindices) = this()
+    def this(notes: vexflowLib.Anon_Firstindices, direction: scala.Double) = this()
   }
   
   @js.native
   class TabStave protected ()
     extends vexflowLib.VexNs.FlowNs.TabStave {
     def this(x: scala.Double, y: scala.Double, width: scala.Double) = this()
-    def this(x: scala.Double, y: scala.Double, width: scala.Double, options: vexflowLib.Anon_Numlines) = this()
+    def this(x: scala.Double, y: scala.Double, width: scala.Double, options: vexflowLib.Anon_Fillstyle) = this()
   }
   
   @js.native
   class TabTie protected ()
     extends vexflowLib.VexNs.FlowNs.TabTie {
-    def this(notes: vexflowLib.Anon_LastindicesLastnote) = this()
-    def this(notes: vexflowLib.Anon_LastindicesLastnote, text: java.lang.String) = this()
+    def this(notes: vexflowLib.Anon_Firstindices) = this()
+    def this(notes: vexflowLib.Anon_Firstindices, text: java.lang.String) = this()
   }
   
   @js.native
   class TextBracket protected ()
     extends vexflowLib.VexNs.FlowNs.TextBracket {
-    def this(bracket_data: vexflowLib.Anon_TextStop) = this()
+    def this(bracket_data: vexflowLib.Anon_Position) = this()
   }
   
   @js.native
   class TextDynamics protected ()
     extends vexflowLib.VexNs.FlowNs.TextDynamics {
-    def this(text_struct: vexflowLib.Anon_TextLine) = this()
+    def this(text_struct: vexflowLib.Anon_DurationLine) = this()
   }
   
   @js.native
   class TextNote protected ()
     extends vexflowLib.VexNs.FlowNs.TextNote {
-    def this(text_struct: vexflowLib.Anon_DurationSmooth) = this()
+    def this(text_struct: vexflowLib.Anon_DurationFont) = this()
   }
   
   @js.native
@@ -396,7 +396,7 @@ object FlowNs extends js.Object {
   class Tuplet protected ()
     extends vexflowLib.VexNs.FlowNs.Tuplet {
     def this(notes: js.Array[vexflowLib.VexNs.FlowNs.StaveNote]) = this()
-    def this(notes: js.Array[vexflowLib.VexNs.FlowNs.StaveNote], options: vexflowLib.Anon_Numnotes) = this()
+    def this(notes: js.Array[vexflowLib.VexNs.FlowNs.StaveNote], options: vexflowLib.Anon_Beatsoccupied) = this()
   }
   
   @js.native
@@ -406,7 +406,7 @@ object FlowNs extends js.Object {
   @js.native
   class Voice protected ()
     extends vexflowLib.VexNs.FlowNs.Voice {
-    def this(time: vexflowLib.Anon_ResolutionNumbeats) = this()
+    def this(time: vexflowLib.Anon_BeatvalueNumbeats) = this()
   }
   
   @js.native
@@ -420,26 +420,26 @@ object FlowNs extends js.Object {
   }
   
   // from vexflow_font.js / gonville_original.js / gonville_all.js
-  var Font: vexflowLib.Anon_FamilyName = js.native
+  var Font: vexflowLib.Anon_Ascender = js.native
   val RESOLUTION: scala.Double = js.native
   val STAVE_LINE_THICKNESS: scala.Double = js.native
   val STEM_HEIGHT: scala.Double = js.native
   // from tables.js:
   val STEM_WIDTH: scala.Double = js.native
-  val TIME4_4: vexflowLib.Anon_Resolution = js.native
-  def accidentalCodes(acc: java.lang.String): vexflowLib.Anon_ShiftdownShiftrightCode = js.native
-  def articulationCodes(artic: java.lang.String): vexflowLib.Anon_Shiftdown = js.native
+  val TIME4_4: vexflowLib.Anon_Beatvalue = js.native
+  def accidentalCodes(acc: java.lang.String): vexflowLib.Anon_CodeGracenotewidth = js.native
+  def articulationCodes(artic: java.lang.String): vexflowLib.Anon_Betweenlines = js.native
   def clefProperties(clef: java.lang.String): vexflowLib.Anon_Lineshift = js.native
   def durationToFraction(duration: java.lang.String): vexflowLib.VexNs.FlowNs.Fraction = js.native
-  def durationToGlyph(duration: java.lang.String, `type`: java.lang.String): vexflowLib.Anon_Headwidth = js.native
+  def durationToGlyph(duration: java.lang.String, `type`: java.lang.String): vexflowLib.Anon_Codehead = js.native
   def durationToNumber(duration: java.lang.String): scala.Double = js.native
   def durationToTicks(duration: java.lang.String): scala.Double = js.native
   def integerToNote(integer: scala.Double): java.lang.String = js.native
-  def keyProperties(key: java.lang.String, clef: java.lang.String, params: vexflowLib.Anon_Octaveshift): vexflowLib.Anon_Line = js.native
-  def keySignature(spec: java.lang.String): js.Array[vexflowLib.Anon_TypeLine] = js.native
-  def ornamentCodes(acc: java.lang.String): vexflowLib.Anon_ShiftdownShiftright = js.native
-  def parseNoteData(noteData: vexflowLib.Anon_TypeDots): vexflowLib.Anon_Ticks = js.native
-  def parseNoteDurationString(durationString: java.lang.String): vexflowLib.Anon_TypeDots = js.native
+  def keyProperties(key: java.lang.String, clef: java.lang.String, params: vexflowLib.Anon_Octaveshift): vexflowLib.Anon_Accidental = js.native
+  def keySignature(spec: java.lang.String): js.Array[vexflowLib.Anon_Line] = js.native
+  def ornamentCodes(acc: java.lang.String): vexflowLib.Anon_CodeShiftdown = js.native
+  def parseNoteData(noteData: vexflowLib.Anon_Dots): vexflowLib.Anon_DotsDuration = js.native
+  def parseNoteDurationString(durationString: java.lang.String): vexflowLib.Anon_Dots = js.native
   // from glyph.js:
   def renderGlyph(
     ctx: vexflowLib.VexNs.IRenderContext,
@@ -449,14 +449,14 @@ object FlowNs extends js.Object {
     `val`: java.lang.String,
     nocache: scala.Boolean
   ): scala.Unit = js.native
-  def tabToGlyph(fret: java.lang.String): vexflowLib.Anon_Text = js.native
+  def tabToGlyph(fret: java.lang.String): vexflowLib.Anon_Code = js.native
   def textWidth(text: java.lang.String): scala.Double = js.native
   @js.native
   object Accidental extends js.Object {
     var DEBUG: scala.Boolean = js.native
     def applyAccidentals(voices: js.Array[vexflowLib.VexNs.FlowNs.Voice]): scala.Unit = js.native
     def applyAccidentals(voices: js.Array[vexflowLib.VexNs.FlowNs.Voice], keySignature: java.lang.String): scala.Unit = js.native
-    def format(accidentals: js.Array[vexflowLib.VexNs.FlowNs.Accidental], state: vexflowLib.Anon_Rightshift): scala.Unit = js.native
+    def format(accidentals: js.Array[vexflowLib.VexNs.FlowNs.Accidental], state: vexflowLib.Anon_Leftshift): scala.Unit = js.native
   }
   
   @JSName("Accidental")
@@ -468,7 +468,7 @@ object FlowNs extends js.Object {
   @js.native
   object Annotation extends js.Object {
     var DEBUG: scala.Boolean = js.native
-    def format(annotations: js.Array[vexflowLib.VexNs.FlowNs.Annotation], state: vexflowLib.Anon_Rightshift): scala.Boolean = js.native
+    def format(annotations: js.Array[vexflowLib.VexNs.FlowNs.Annotation], state: vexflowLib.Anon_Leftshift): scala.Boolean = js.native
   }
   
   @JSName("Annotation")
@@ -502,7 +502,7 @@ object FlowNs extends js.Object {
   @js.native
   object Articulation extends js.Object {
     var DEBUG: scala.Boolean = js.native
-    def format(articulations: js.Array[vexflowLib.VexNs.FlowNs.Articulation], state: vexflowLib.Anon_Rightshift): scala.Boolean = js.native
+    def format(articulations: js.Array[vexflowLib.VexNs.FlowNs.Articulation], state: vexflowLib.Anon_Leftshift): scala.Boolean = js.native
   }
   
   @JSName("Articulation")
@@ -543,7 +543,7 @@ object FlowNs extends js.Object {
       groups: js.Array[vexflowLib.VexNs.FlowNs.Fraction]
     ): js.Array[vexflowLib.VexNs.FlowNs.Beam] = js.native
     def generateBeams(notes: js.Array[vexflowLib.VexNs.FlowNs.StemmableNote]): js.Array[vexflowLib.VexNs.FlowNs.Beam] = js.native
-    def generateBeams(notes: js.Array[vexflowLib.VexNs.FlowNs.StemmableNote], config: vexflowLib.Anon_Showstemlets): js.Array[vexflowLib.VexNs.FlowNs.Beam] = js.native
+    def generateBeams(notes: js.Array[vexflowLib.VexNs.FlowNs.StemmableNote], config: vexflowLib.Anon_Beammiddleonly): js.Array[vexflowLib.VexNs.FlowNs.Beam] = js.native
     def getDefaultBeamGroups(time_sig: java.lang.String): js.Array[vexflowLib.VexNs.FlowNs.Fraction] = js.native
   }
   
@@ -551,7 +551,7 @@ object FlowNs extends js.Object {
   object Bend extends js.Object {
     var DOWN: scala.Double = js.native
     var UP: scala.Double = js.native
-    def format(bends: js.Array[vexflowLib.VexNs.FlowNs.Bend], state: vexflowLib.Anon_Rightshift): scala.Boolean = js.native
+    def format(bends: js.Array[vexflowLib.VexNs.FlowNs.Bend], state: vexflowLib.Anon_Leftshift): scala.Boolean = js.native
   }
   
   @JSName("Bend")
@@ -602,7 +602,7 @@ object FlowNs extends js.Object {
   
   @js.native
   object Dot extends js.Object {
-    def format(dots: scala.Double, state: vexflowLib.Anon_Rightshift): scala.Unit = js.native
+    def format(dots: scala.Double, state: vexflowLib.Anon_Leftshift): scala.Unit = js.native
   }
   
   @JSName("Dot")
@@ -682,7 +682,7 @@ object FlowNs extends js.Object {
   
   @js.native
   object FretHandFinger extends js.Object {
-    def format(nums: js.Array[vexflowLib.VexNs.FlowNs.FretHandFinger], state: vexflowLib.Anon_Rightshift): scala.Unit = js.native
+    def format(nums: js.Array[vexflowLib.VexNs.FlowNs.FretHandFinger], state: vexflowLib.Anon_Leftshift): scala.Unit = js.native
   }
   
   @JSName("FretHandFinger")
@@ -693,7 +693,7 @@ object FlowNs extends js.Object {
   
   @js.native
   object Glyph extends js.Object {
-    def loadMetrics(font: vexflowLib.VexNs.IFont, code: java.lang.String, cache: scala.Boolean): vexflowLib.Anon_XminHa = js.native
+    def loadMetrics(font: vexflowLib.VexNs.IFont, code: java.lang.String, cache: scala.Boolean): vexflowLib.Anon_HaOutline = js.native
     def renderOutline(
       ctx: vexflowLib.VexNs.IRenderContext,
       outline: js.Array[scala.Double],
@@ -709,7 +709,7 @@ object FlowNs extends js.Object {
     var DEBUG: scala.Boolean = js.native
     def format(
       gracenote_groups: js.Array[vexflowLib.VexNs.FlowNs.GraceNoteGroup],
-      state: vexflowLib.Anon_Rightshift
+      state: vexflowLib.Anon_Leftshift
     ): scala.Boolean = js.native
   }
   
@@ -757,7 +757,7 @@ object FlowNs extends js.Object {
     val roots: js.Array[java.lang.String] = js.native
     @js.native
     object diatonic_accidentals
-      extends /* diatonic_interval */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_Note]
+      extends /* diatonic_interval */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_AccidentalNoteNumber]
     
     @js.native
     object intervals
@@ -791,7 +791,7 @@ object FlowNs extends js.Object {
   @js.native
   object Ornament extends js.Object {
     var DEBUG: scala.Boolean = js.native
-    def format(ornaments: js.Array[vexflowLib.VexNs.FlowNs.Ornament], state: vexflowLib.Anon_Rightshift): scala.Boolean = js.native
+    def format(ornaments: js.Array[vexflowLib.VexNs.FlowNs.Ornament], state: vexflowLib.Anon_Leftshift): scala.Boolean = js.native
   }
   
   @JSName("Ornament")
@@ -814,7 +814,7 @@ object FlowNs extends js.Object {
   object PedalMarkingNs extends js.Object {
     @js.native
     object GLYPHS
-      extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_Yshift]
+      extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_CodeXshift]
     
     @js.native
     object Styles extends js.Object {
@@ -979,17 +979,17 @@ object FlowNs extends js.Object {
     def FormatByTicksAndDraw(
       ctx: vexflowLib.VexNs.IRenderContext,
       formatter: vexflowLib.VexNs.FlowNs.Formatter,
-      notes: vexflowLib.Anon_Lastnote,
+      notes: vexflowLib.Anon_Firstnote,
       `type`: vexflowLib.VexNs.FlowNs.StaveHairpinNs.`type`,
       position: vexflowLib.VexNs.FlowNs.ModifierNs.Position
     ): scala.Unit = js.native
     def FormatByTicksAndDraw(
       ctx: vexflowLib.VexNs.IRenderContext,
       formatter: vexflowLib.VexNs.FlowNs.Formatter,
-      notes: vexflowLib.Anon_Lastnote,
+      notes: vexflowLib.Anon_Firstnote,
       `type`: vexflowLib.VexNs.FlowNs.StaveHairpinNs.`type`,
       position: vexflowLib.VexNs.FlowNs.ModifierNs.Position,
-      options: vexflowLib.Anon_YshiftRightshiftticks
+      options: vexflowLib.Anon_HeightLeftshiftticks
     ): scala.Unit = js.native
   }
   
@@ -1053,8 +1053,8 @@ object FlowNs extends js.Object {
   @js.native
   object StaveNote extends js.Object {
     var DEBUG: scala.Boolean = js.native
-    def format(notes: js.Array[vexflowLib.VexNs.FlowNs.StaveNote], state: vexflowLib.Anon_Rightshift): scala.Boolean = js.native
-    def formatByY(notes: js.Array[vexflowLib.VexNs.FlowNs.StaveNote], state: vexflowLib.Anon_Rightshift): scala.Unit = js.native
+    def format(notes: js.Array[vexflowLib.VexNs.FlowNs.StaveNote], state: vexflowLib.Anon_Leftshift): scala.Boolean = js.native
+    def formatByY(notes: js.Array[vexflowLib.VexNs.FlowNs.StaveNote], state: vexflowLib.Anon_Leftshift): scala.Unit = js.native
     def postFormat(notes: js.Array[vexflowLib.VexNs.FlowNs.StaveNote]): scala.Boolean = js.native
   }
   
@@ -1085,7 +1085,7 @@ object FlowNs extends js.Object {
   
   @js.native
   object StringNumber extends js.Object {
-    def format(nums: js.Array[vexflowLib.VexNs.FlowNs.StringNumber], state: vexflowLib.Anon_Rightshift): scala.Boolean = js.native
+    def format(nums: js.Array[vexflowLib.VexNs.FlowNs.StringNumber], state: vexflowLib.Anon_Leftshift): scala.Boolean = js.native
   }
   
   @JSName("StringNumber")
@@ -1096,7 +1096,7 @@ object FlowNs extends js.Object {
   
   @js.native
   object Stroke extends js.Object {
-    def format(strokes: js.Array[vexflowLib.VexNs.FlowNs.Stroke], state: vexflowLib.Anon_Rightshift): scala.Boolean = js.native
+    def format(strokes: js.Array[vexflowLib.VexNs.FlowNs.Stroke], state: vexflowLib.Anon_Leftshift): scala.Boolean = js.native
   }
   
   @JSName("Stroke")
@@ -1120,8 +1120,8 @@ object FlowNs extends js.Object {
   
   @js.native
   object TabSlide extends js.Object {
-    def createSlideDown(notes: vexflowLib.Anon_LastindicesLastnote): vexflowLib.VexNs.FlowNs.TabSlide = js.native
-    def createSlideUp(notes: vexflowLib.Anon_LastindicesLastnote): vexflowLib.VexNs.FlowNs.TabSlide = js.native
+    def createSlideDown(notes: vexflowLib.Anon_Firstindices): vexflowLib.VexNs.FlowNs.TabSlide = js.native
+    def createSlideUp(notes: vexflowLib.Anon_Firstindices): vexflowLib.VexNs.FlowNs.TabSlide = js.native
   }
   
   @JSName("TabSlide")
@@ -1160,7 +1160,7 @@ object FlowNs extends js.Object {
   object TextNoteNs extends js.Object {
     @js.native
     object GLYPHS
-      extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_YshiftXshift]
+      extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_CodePoint]
     
     @js.native
     object Justification extends js.Object {
@@ -1184,7 +1184,7 @@ object FlowNs extends js.Object {
   object TimeSignatureNs extends js.Object {
     @js.native
     object glyphs
-      extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_Point]
+      extends /* name */ org.scalablytyped.runtime.StringDictionary[vexflowLib.Anon_CodeLine]
     
   }
   
@@ -1208,7 +1208,7 @@ object FlowNs extends js.Object {
   object Vibrato extends js.Object {
     def format(
       vibratos: js.Array[vexflowLib.VexNs.FlowNs.Vibrato],
-      state: vexflowLib.Anon_Rightshift,
+      state: vexflowLib.Anon_Leftshift,
       context: vexflowLib.VexNs.FlowNs.ModifierContext
     ): scala.Boolean = js.native
   }

@@ -32,7 +32,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.SoundInstance3d")
 @js.native
 class SoundInstance3d protected () extends SoundInstance {
-  def this(manager: SoundManager, sound: Sound, options: playcanvasLib.Anon_DurationLoop) = this()
+  def this(manager: SoundManager, sound: Sound, options: playcanvasLib.Anon_DistanceModel) = this()
   var distanceModel: java.lang.String = js.native
   var maxDistance: scala.Double = js.native
   var position: Vec3 = js.native

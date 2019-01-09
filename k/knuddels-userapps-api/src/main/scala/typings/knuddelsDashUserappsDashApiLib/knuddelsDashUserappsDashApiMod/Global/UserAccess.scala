@@ -31,7 +31,7 @@ class UserAccess () extends js.Object {
       /* key */ js.UndefOr[java.lang.String], 
       scala.Boolean
     ],
-    parameters: knuddelsDashUserappsDashApiLib.Anon_OnEnd
+    parameters: knuddelsDashUserappsDashApiLib.Anon_AccessibleUserCount
   ): scala.Unit = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserAccess.html#method_exists

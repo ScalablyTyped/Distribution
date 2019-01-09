@@ -17,14 +17,14 @@ object devUtilsNs extends js.Object {
   class OperationReplayer () extends js.Object
   
   def disableEngineDebug(): scala.Unit = js.native
-  def enableEngineDebug(_logger: atCkeditorCkeditor5DashEngineLib.Anon_Log): DebugPlugin = js.native
+  def enableEngineDebug(_logger: atCkeditorCkeditor5DashEngineLib.Anon_Arg): DebugPlugin = js.native
   // engine/dev-utils/view
   def getData(view: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.View): java.lang.String = js.native
   def getData(
     view: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.View,
-    options: atCkeditorCkeditor5DashEngineLib.Anon_WithoutSelectionShowType
+    options: atCkeditorCkeditor5DashEngineLib.Anon_RenderUIElements
   ): java.lang.String = js.native
-  def parse(data: java.lang.String, options: atCkeditorCkeditor5DashEngineLib.Anon_SameSelectionCharacters): atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Text | atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Element | atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.DocumentFragment | js.Object = js.native
+  def parse(data: java.lang.String, options: atCkeditorCkeditor5DashEngineLib.Anon_LastRangeBackward): atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Text | atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Element | atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.DocumentFragment | js.Object = js.native
   def setData(
     view: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.View,
     data: java.lang.String,
@@ -38,7 +38,7 @@ object devUtilsNs extends js.Object {
   def stringify(
     node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.DocumentFragment,
     selectionOrPositionOrRange: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.DocumentSelection,
-    options: atCkeditorCkeditor5DashEngineLib.Anon_SameSelectionCharactersShowType
+    options: atCkeditorCkeditor5DashEngineLib.Anon_IgnoreRoot
   ): java.lang.String = js.native
   def stringify(
     node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.DocumentFragment,
@@ -47,7 +47,7 @@ object devUtilsNs extends js.Object {
   def stringify(
     node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.DocumentFragment,
     selectionOrPositionOrRange: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Position,
-    options: atCkeditorCkeditor5DashEngineLib.Anon_SameSelectionCharactersShowType
+    options: atCkeditorCkeditor5DashEngineLib.Anon_IgnoreRoot
   ): java.lang.String = js.native
   def stringify(
     node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.DocumentFragment,
@@ -56,7 +56,7 @@ object devUtilsNs extends js.Object {
   def stringify(
     node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.DocumentFragment,
     selectionOrPositionOrRange: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Range,
-    options: atCkeditorCkeditor5DashEngineLib.Anon_SameSelectionCharactersShowType
+    options: atCkeditorCkeditor5DashEngineLib.Anon_IgnoreRoot
   ): java.lang.String = js.native
   def stringify(node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Element): java.lang.String = js.native
   def stringify(
@@ -66,7 +66,7 @@ object devUtilsNs extends js.Object {
   def stringify(
     node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Element,
     selectionOrPositionOrRange: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.DocumentSelection,
-    options: atCkeditorCkeditor5DashEngineLib.Anon_SameSelectionCharactersShowType
+    options: atCkeditorCkeditor5DashEngineLib.Anon_IgnoreRoot
   ): java.lang.String = js.native
   def stringify(
     node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Element,
@@ -75,7 +75,7 @@ object devUtilsNs extends js.Object {
   def stringify(
     node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Element,
     selectionOrPositionOrRange: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Position,
-    options: atCkeditorCkeditor5DashEngineLib.Anon_SameSelectionCharactersShowType
+    options: atCkeditorCkeditor5DashEngineLib.Anon_IgnoreRoot
   ): java.lang.String = js.native
   def stringify(
     node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Element,
@@ -84,7 +84,7 @@ object devUtilsNs extends js.Object {
   def stringify(
     node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Element,
     selectionOrPositionOrRange: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Range,
-    options: atCkeditorCkeditor5DashEngineLib.Anon_SameSelectionCharactersShowType
+    options: atCkeditorCkeditor5DashEngineLib.Anon_IgnoreRoot
   ): java.lang.String = js.native
   def stringify(node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Text): java.lang.String = js.native
   def stringify(
@@ -94,7 +94,7 @@ object devUtilsNs extends js.Object {
   def stringify(
     node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Text,
     selectionOrPositionOrRange: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.DocumentSelection,
-    options: atCkeditorCkeditor5DashEngineLib.Anon_SameSelectionCharactersShowType
+    options: atCkeditorCkeditor5DashEngineLib.Anon_IgnoreRoot
   ): java.lang.String = js.native
   def stringify(
     node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Text,
@@ -103,7 +103,7 @@ object devUtilsNs extends js.Object {
   def stringify(
     node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Text,
     selectionOrPositionOrRange: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Position,
-    options: atCkeditorCkeditor5DashEngineLib.Anon_SameSelectionCharactersShowType
+    options: atCkeditorCkeditor5DashEngineLib.Anon_IgnoreRoot
   ): java.lang.String = js.native
   def stringify(
     node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Text,
@@ -112,7 +112,7 @@ object devUtilsNs extends js.Object {
   def stringify(
     node: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Text,
     selectionOrPositionOrRange: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.viewNs.Range,
-    options: atCkeditorCkeditor5DashEngineLib.Anon_SameSelectionCharactersShowType
+    options: atCkeditorCkeditor5DashEngineLib.Anon_IgnoreRoot
   ): java.lang.String = js.native
   // engine/dev-utils/model
   @JSName("devmodel")
@@ -121,7 +121,7 @@ object devUtilsNs extends js.Object {
     def getData(model: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Model): java.lang.String = js.native
     def getData(
       model: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Model,
-      options: atCkeditorCkeditor5DashEngineLib.Anon_WithoutSelection
+      options: atCkeditorCkeditor5DashEngineLib.Anon_ConvertMarkers
     ): java.lang.String = js.native
     def parse(
       data: java.lang.String,
@@ -132,7 +132,7 @@ object devUtilsNs extends js.Object {
       data: java.lang.String,
       schema: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Schema,
       batch: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Batch,
-      options: atCkeditorCkeditor5DashEngineLib.Anon_LastRangeBackward
+      options: atCkeditorCkeditor5DashEngineLib.Anon_Context
     ): atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Element | atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Text | atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.DocumentFragment | js.Object = js.native
     def setData(model: java.lang.String, data: js.Object, options: atCkeditorCkeditor5DashEngineLib.Anon_BatchType): scala.Unit = js.native
     def stringify(

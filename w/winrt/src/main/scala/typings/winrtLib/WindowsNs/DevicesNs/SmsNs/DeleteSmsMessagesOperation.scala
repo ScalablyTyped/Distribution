@@ -13,7 +13,7 @@ class DeleteSmsMessagesOperation ()
   override var errorCode: scala.Double = js.native
   /* CompleteClass */
   override var id: scala.Double = js.native
-  var operation: winrtLib.Anon_CompletedGetResultsAsyncOperationCompletedHandler = js.native
+  var operation: winrtLib.Anon_AsyncInfoAsyncStatusCompleted = js.native
   /* CompleteClass */
   override var status: winrtLib.WindowsNs.FoundationNs.AsyncStatus = js.native
   /* CompleteClass */

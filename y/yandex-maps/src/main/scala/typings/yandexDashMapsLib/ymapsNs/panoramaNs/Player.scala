@@ -11,8 +11,8 @@ class Player protected ()
   extends yandexDashMapsLib.ymapsNs.IEventEmitter {
   def this(element: java.lang.String, panorama: yandexDashMapsLib.ymapsNs.IPanorama) = this()
   def this(element: stdLib.HTMLElement, panorama: yandexDashMapsLib.ymapsNs.IPanorama) = this()
-  def this(element: java.lang.String, panorama: yandexDashMapsLib.ymapsNs.IPanorama, options: yandexDashMapsLib.Anon_Span) = this()
-  def this(element: stdLib.HTMLElement, panorama: yandexDashMapsLib.ymapsNs.IPanorama, options: yandexDashMapsLib.Anon_Span) = this()
+  def this(element: java.lang.String, panorama: yandexDashMapsLib.ymapsNs.IPanorama, options: yandexDashMapsLib.Anon_Always) = this()
+  def this(element: stdLib.HTMLElement, panorama: yandexDashMapsLib.ymapsNs.IPanorama, options: yandexDashMapsLib.Anon_Always) = this()
   /* CompleteClass */
   override var events: yandexDashMapsLib.ymapsNs.IEventManager = js.native
   def destroy(): scala.Unit = js.native
@@ -22,7 +22,7 @@ class Player protected ()
   def getSpan(): js.Array[scala.Double] = js.native
   def lookAt(point: js.Array[scala.Double]): this.type = js.native
   def moveTo(point: js.Array[scala.Double]): js.Promise[scala.Unit] = js.native
-  def moveTo(point: js.Array[scala.Double], options: yandexDashMapsLib.Anon_Layer): js.Promise[scala.Unit] = js.native
+  def moveTo(point: js.Array[scala.Double], options: yandexDashMapsLib.Anon_Direction): js.Promise[scala.Unit] = js.native
   def setDirection(direction: java.lang.String): this.type = js.native
   def setDirection(direction: js.Array[scala.Double]): this.type = js.native
   def setPanorama(panorama: yandexDashMapsLib.ymapsNs.IPanorama): this.type = js.native

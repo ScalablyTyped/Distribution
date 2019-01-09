@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Lead extends js.Object {
   var avatar: intercomDashClientLib.userMod.Avatar
-  var companies: intercomDashClientLib.Anon_Type
+  var companies: intercomDashClientLib.Anon_Companies
   val created_at: scala.Double
   var custom_attributes: org.scalablytyped.runtime.StringDictionary[js.Any]
   var email: java.lang.String | scala.Null
@@ -18,9 +18,9 @@ trait Lead extends js.Object {
   var name: java.lang.String | scala.Null
   var phone: java.lang.String | scala.Null
   var referrer: java.lang.String | scala.Null
-  var segments: intercomDashClientLib.Anon_TypeSegmentlist
-  var social_profiles: intercomDashClientLib.Anon_TypeSocialprofilelist
-  var tags: intercomDashClientLib.Anon_TypeTaglist
+  var segments: intercomDashClientLib.Anon_Segmentlist
+  var social_profiles: intercomDashClientLib.Anon_Socialprofilelist
+  var tags: intercomDashClientLib.Anon_Taglist
   var `type`: intercomDashClientLib.intercomDashClientLibStrings.contact
   var unsubscribed_from_emails: scala.Boolean
   val updated_at: scala.Double

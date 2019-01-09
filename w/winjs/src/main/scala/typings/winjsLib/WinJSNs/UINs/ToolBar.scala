@@ -116,7 +116,7 @@ object ToolBar extends js.Object {
   /**
     * Display options for the closed ToolBar.
     **/
-  var ClosedDisplayMode: winjsLib.Anon_Compact = js.native
+  var ClosedDisplayMode: winjsLib.Anon_CompactFull = js.native
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/

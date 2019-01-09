@@ -15,11 +15,11 @@ class default protected ()
 @JSImport("antd/lib/form", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var Item: org.scalablytyped.runtime.Instantiable0[antdLib.libFormFormItemMod.default] = js.native
+  var Item: antdLib.Anon_ContextTypesDefaultProps = js.native
   var childContextTypes: antdLib.Anon_Vertical = js.native
   var createFormField: js.Any = js.native
-  var defaultProps: antdLib.Anon_OnSubmit = js.native
-  var propTypes: antdLib.Anon_ChildrenPrefixCls = js.native
+  var defaultProps: antdLib.Anon_E = js.native
+  var propTypes: antdLib.Anon_ArgsChildren = js.native
   def create[TOwnProps](): antdLib.libFormFormMod.ComponentDecorator = js.native
   def create[TOwnProps](options: antdLib.libFormFormMod.FormCreateOption[TOwnProps]): antdLib.libFormFormMod.ComponentDecorator = js.native
 }

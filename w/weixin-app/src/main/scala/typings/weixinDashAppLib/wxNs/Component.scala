@@ -77,6 +77,6 @@ trait Component[D, P] extends js.Object {
   		 */
   def triggerEvent(name: java.lang.String): scala.Unit = js.native
   def triggerEvent(name: java.lang.String, details: js.Any): scala.Unit = js.native
-  def triggerEvent(name: java.lang.String, details: js.Any, options: stdLib.Partial[weixinDashAppLib.Anon_Composed]): scala.Unit = js.native
+  def triggerEvent(name: java.lang.String, details: js.Any, options: stdLib.Partial[weixinDashAppLib.Anon_Bubbles]): scala.Unit = js.native
 }
 

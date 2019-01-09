@@ -13,7 +13,7 @@ trait CustomCollection extends ProductCollection {
     * product_id - Required when adding a new item
     * id - Required when shifting the position of a product that was previously added to the collection
     */
-  var collects: js.Array[shopifyDashPrimeLib.Anon_ProductidPosition]
+  var collects: js.Array[shopifyDashPrimeLib.Anon_Id]
   /**
     * "key": "new"
     * "value": "newvalue"

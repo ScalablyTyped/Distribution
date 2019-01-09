@@ -174,7 +174,7 @@ class RangeFormat ()
   def load(): RangeFormat = js.native
   def load(option: java.lang.String): RangeFormat = js.native
   def load(option: js.Array[java.lang.String]): RangeFormat = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): RangeFormat = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): RangeFormat = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.RangeFormatLoadOptions): RangeFormat = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

@@ -37,7 +37,7 @@ trait PhotoResource extends js.Object {
     * create the requested photo.
     * &#42; google.rpc.Code.NOT_FOUND if the photo ID does not exist.
     */
-  def delete(request: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Gets the metadata of the specified
     * Photo.
@@ -49,7 +49,7 @@ trait PhotoResource extends js.Object {
     * &#42; google.rpc.Code.NOT_FOUND if the requested
     * Photo does not exist.
     */
-  def get(request: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Photo]
+  def get(request: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Photo]
   /**
     * Creates an upload session to start uploading photo bytes. The upload URL of
     * the returned UploadRef is used to
@@ -94,6 +94,6 @@ trait PhotoResource extends js.Object {
     * &#42; google.rpc.Code.INVALID_ARGUMENT if the request is malformed.
     * &#42; google.rpc.Code.NOT_FOUND if the requested photo does not exist.
     */
-  def update(request: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenPrettyPrintBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Photo]
+  def update(request: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Photo]
 }
 

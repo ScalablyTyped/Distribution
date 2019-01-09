@@ -16,7 +16,7 @@ trait Delay extends js.Object {
   def apply(milliseconds: scala.Double): js.Any = js.native
   def apply(
     milliseconds: scala.Double,
-    options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Options */ js.Any
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Options */ js.Any
   ): js.Any = js.native
   /**
   	 * Create a promise which rejects after the specified `milliseconds`.
@@ -28,7 +28,7 @@ trait Delay extends js.Object {
   def reject(milliseconds: scala.Double): js.Any = js.native
   def reject(
     milliseconds: scala.Double,
-    options: (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Options */ js.Any) with Anon_ValueAny
+    options: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Options */ js.Any) with Anon_ValueAny
   ): js.Any = js.native
 }
 

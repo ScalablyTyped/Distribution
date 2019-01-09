@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait IGridSelectionApi[TEntity] extends js.Object {
   // Events
-  var on: uiDashGridLib.Anon_RowSelectionChangedBatch[TEntity] = js.native
+  var on: uiDashGridLib.Anon_HandlerRowSelectionChanged[TEntity] = js.native
   // Methods
   /**
     * Unselects All Rows

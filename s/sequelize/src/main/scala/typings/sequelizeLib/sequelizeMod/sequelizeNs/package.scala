@@ -411,7 +411,7 @@ package object sequelizeNs {
     * Shortcut for order type in FindOptions.attributes
     */
   type FindOptionsOrderArray = js.Array[
-    java.lang.String | scala.Double | (Model[js.Any, js.Any]) | sequelizeLib.Anon_Model | fn
+    java.lang.String | scala.Double | (Model[js.Any, js.Any]) | sequelizeLib.Anon_As | fn
   ]
   /**
     * GetTableName Options
@@ -787,7 +787,7 @@ package object sequelizeNs {
     ], 
     bluebirdLib.bluebirdMod.namespaced[scala.Unit]
   ]
-  type OperatorsAliases = stdLib.Partial[sequelizeLib.Anon_Key]
+  type OperatorsAliases = stdLib.Partial[sequelizeLib.Anon_Adjacent]
   type TransactionIsolationLevel = TransactionIsolationLevelReadUncommitted | TransactionIsolationLevelReadCommitted | TransactionIsolationLevelRepeatableRead | TransactionIsolationLevelSerializable
   type TransactionIsolationLevelReadCommitted = sequelizeLib.sequelizeLibStrings.`READ COMMITTED`
   type TransactionIsolationLevelReadUncommitted = sequelizeLib.sequelizeLibStrings.`READ UNCOMMITTED`
@@ -805,7 +805,7 @@ package object sequelizeNs {
   /**
     * Logic of where statement
     */
-  type WhereLogic = stdLib.Partial[sequelizeLib.Anon_Contained]
+  type WhereLogic = stdLib.Partial[sequelizeLib.`Anon_`]
   /**
     * A hash of attributes to describe your search. See above for examples.
     *

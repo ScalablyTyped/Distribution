@@ -42,7 +42,7 @@ trait Permission extends js.Object {
     * Details of whether the permissions on this Team Drive item are inherited or directly on this item. This is an output-only field which is present only
     * for Team Drive items.
     */
-  var teamDrivePermissionDetails: js.UndefOr[js.Array[gapiDotClientDotDriveLib.Anon_Role]] = js.undefined
+  var teamDrivePermissionDetails: js.UndefOr[js.Array[gapiDotClientDotDriveLib.Anon_Inherited]] = js.undefined
   /**
     * The type of the grantee. Valid values are:
     * - user

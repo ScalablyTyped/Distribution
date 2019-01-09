@@ -9,7 +9,7 @@ trait ImageProps
   extends ResponderProps
      with TouchableProps {
   var height: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var href: reactDashNativeLib.reactDashNativeMod.ImageSourcePropType
+  var href: js.Any
   var opacity: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
   var preserveAspectRatio: js.UndefOr[java.lang.String] = js.undefined
   var width: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined

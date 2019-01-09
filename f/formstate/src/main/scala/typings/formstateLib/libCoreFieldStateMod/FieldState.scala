@@ -45,13 +45,13 @@ class FieldState[TValue] protected ()
   /**
     * Allows you to take actions in your code based on `value` changes caused by user interactions
     */
-  /* protected */ def _onDidChange(config: formstateLib.Anon_OldValue[TValue]): js.Any = js.native
+  /* protected */ def _onDidChange(config: formstateLib.Anon_NewValue[TValue]): js.Any = js.native
   /* protected */ def _onUpdate(state: FieldState[TValue]): js.Any = js.native
   def disableAutoValidation(): this.type = js.native
   /* CompleteClass */
   override def enableAutoValidation(): scala.Unit = js.native
-  def enableAutoValidationAndValidate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_HasErrorFalseValue[TValue]] = js.native
-  /* protected */ def executeOnDidChange(config: formstateLib.Anon_OldValue[TValue]): scala.Unit = js.native
+  def enableAutoValidationAndValidate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_False[TValue]] = js.native
+  /* protected */ def executeOnDidChange(config: formstateLib.Anon_NewValue[TValue]): scala.Unit = js.native
   /* protected */ def executeOnUpdate(): scala.Unit = js.native
   def getAutoValidationDefault(): scala.Boolean = js.native
   /** Used to tell the parent about validation */
@@ -63,7 +63,7 @@ class FieldState[TValue] protected ()
   override def on$Reinit(): scala.Unit = js.native
   /** On change on the component side */
   def onChange(value: TValue): scala.Unit = js.native
-  def onDidChange(handler: js.Function1[/* config */ formstateLib.Anon_OldValue[TValue], _]): this.type = js.native
+  def onDidChange(handler: js.Function1[/* config */ formstateLib.Anon_NewValue[TValue], _]): this.type = js.native
   /**
     * onUpdate is called whenever we change something in our local state that is significant
     * - value
@@ -97,7 +97,7 @@ class FieldState[TValue] protected ()
     **/
   def setError(error: java.lang.String): scala.Unit = js.native
   /* CompleteClass */
-  override def validate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_HasErrorFalseValue[TValue]] = js.native
+  override def validate(): js.Promise[formstateLib.Anon_HasError | formstateLib.Anon_False[TValue]] = js.native
   def validators(validators: formstateLib.libCoreTypesMod.Validator[TValue]*): this.type = js.native
 }
 

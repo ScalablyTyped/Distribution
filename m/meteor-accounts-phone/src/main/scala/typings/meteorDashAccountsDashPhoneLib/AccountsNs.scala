@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Accounts")
 @js.native
 object AccountsNs extends js.Object {
-  var _options: meteorDashAccountsDashPhoneLib.Anon_VerificationRetriesWaitTime = js.native
+  var _options: meteorDashAccountsDashPhoneLib.Anon_AdminPhoneNumbers = js.native
   def createUserWithPhone(options: js.Object): scala.Unit = js.native
   def createUserWithPhone(options: js.Object, callback: js.Function): scala.Unit = js.native
   def isPhoneVerified(): scala.Boolean = js.native

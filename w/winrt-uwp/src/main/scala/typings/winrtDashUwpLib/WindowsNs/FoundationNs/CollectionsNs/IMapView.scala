@@ -25,6 +25,6 @@ trait IMapView[K, V]
   /**
     * Splits the map view into two views.
     */
-  def split(): winrtDashUwpLib.Anon_SecondFirstIMapViewK[K, V]
+  def split(): winrtDashUwpLib.Anon_First[K, V]
 }
 

@@ -54,7 +54,7 @@ trait Operation extends js.Object {
   /** [Output Only] User who requested the operation, for example: user@example.com. */
   var user: js.UndefOr[java.lang.String] = js.undefined
   /** [Output Only] If there are issues with this operation, a warning is returned. */
-  var warnings: js.UndefOr[js.Array[gapiDotClientDotResourceviewsLib.Anon_Data]] = js.undefined
+  var warnings: js.UndefOr[js.Array[gapiDotClientDotResourceviewsLib.Anon_CodeData]] = js.undefined
   /** [Output Only] URL of the zone where the operation resides. Only available when performing per-zone operations. */
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_BurstLimitRateLimitNumber extends js.Object {
-  var burstLimit: scala.Double
-  var rateLimit: scala.Double
+  var burstLimit: js.UndefOr[scala.Double] = js.undefined
+  var rateLimit: js.UndefOr[scala.Double] = js.undefined
 }
 

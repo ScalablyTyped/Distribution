@@ -26,6 +26,6 @@ class namespaced () extends ExternalMechanism {
 @JSImport("sasl-external", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
-  var Mechanism: org.scalablytyped.runtime.Instantiable0[saslDashExternalLib.saslDashExternalMod.ExternalMechanism] = js.native
+  var Mechanism: saslDashExternalLib.Anon_Mechanism = js.native
 }
 

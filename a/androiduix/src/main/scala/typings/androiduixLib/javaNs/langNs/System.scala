@@ -12,7 +12,7 @@ class System () extends js.Object
 @JSGlobal("java.lang.System")
 @js.native
 object System extends js.Object {
-  var out: androiduixLib.Anon_Println = js.native
+  var out: androiduixLib.Anon_Any = js.native
   def arraycopy(
     src: js.Array[_],
     srcPos: scala.Double,

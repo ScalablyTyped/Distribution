@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CustomLayer protected () extends TileLayer {
   def this(opts: CustomLayerOptions) = this()
-  def onhotspotclick(event: baidumapDashWebDashSdkLib.Anon_TypeTargetContent): scala.Unit = js.native
+  def onhotspotclick(event: baidumapDashWebDashSdkLib.Anon_Content): scala.Unit = js.native
 }
 

@@ -134,7 +134,7 @@ class ChartTitle ()
   def load(): ChartTitle = js.native
   def load(option: java.lang.String): ChartTitle = js.native
   def load(option: js.Array[java.lang.String]): ChartTitle = js.native
-  def load(option: officeDashJsLib.Anon_Select): ChartTitle = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ChartTitle = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.ChartTitleLoadOptions): ChartTitle = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartTitle): scala.Unit = js.native

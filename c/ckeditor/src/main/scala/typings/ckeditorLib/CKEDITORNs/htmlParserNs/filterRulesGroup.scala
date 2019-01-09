@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("CKEDITOR.htmlParser.filterRulesGroup")
 @js.native
 class filterRulesGroup () extends js.Object {
-  var rules: js.Array[ckeditorLib.Anon_Value] = js.native
+  var rules: js.Array[ckeditorLib.Anon_Option] = js.native
   def add(rule: rule, priority: scala.Double, options: ruleOptions): scala.Unit = js.native
   def addMany(
     rules: js.Array[org.scalablytyped.runtime.StringDictionary[_]],

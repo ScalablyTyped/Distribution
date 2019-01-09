@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait WrapService extends js.Object {
   var accessKey: js.UndefOr[java.lang.String] = js.native
-  var authenticationProvider: azureDashSbLib.Anon_SignRequest = js.native
+  var authenticationProvider: azureDashSbLib.Anon_Callback = js.native
   var issuer: js.UndefOr[java.lang.String] = js.native
   var strictSSL: scala.Boolean = js.native
   def wrapAccessToken(

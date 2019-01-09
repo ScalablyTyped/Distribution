@@ -13,7 +13,7 @@ class default protected () extends PerfectScrollbar {
   def this(element: java.lang.String, options: perfectDashScrollbarLib.perfectDashScrollbarMod.PerfectScrollbarNs.Options) = this()
   def this(element: stdLib.HTMLElement, options: perfectDashScrollbarLib.perfectDashScrollbarMod.PerfectScrollbarNs.Options) = this()
   /* CompleteClass */
-  override var reach: perfectDashScrollbarLib.Anon_Y = js.native
+  override var reach: perfectDashScrollbarLib.Anon_End = js.native
   /* CompleteClass */
   override def destroy(): scala.Unit = js.native
   /* CompleteClass */

@@ -10,11 +10,11 @@ trait RSAKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] exten
     * Key size in bits
     */
   var modulusLength: scala.Double
-  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with nodeLib.Anon_TypePkcs1Pkcs8
+  var privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with nodeLib.Anon_Pkcs1
   /**
     * @default 0x10001
     */
   var publicExponent: js.UndefOr[scala.Double] = js.undefined
-  var publicKeyEncoding: nodeLib.Anon_TypePkcs1[PubF]
+  var publicKeyEncoding: nodeLib.Anon_Format[PubF]
 }
 

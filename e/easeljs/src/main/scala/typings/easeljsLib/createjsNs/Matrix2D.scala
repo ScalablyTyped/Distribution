@@ -57,7 +57,7 @@ class Matrix2D protected () extends js.Object {
     regY: scala.Double
   ): Matrix2D = js.native
   def copy(matrix: Matrix2D): Matrix2D = js.native
-  def decompose(): easeljsLib.Anon_X = js.native
+  def decompose(): easeljsLib.Anon_Rotation = js.native
   def decompose(target: js.Object): Matrix2D = js.native
   def equals(matrix: Matrix2D): scala.Boolean = js.native
   def identity(): Matrix2D = js.native

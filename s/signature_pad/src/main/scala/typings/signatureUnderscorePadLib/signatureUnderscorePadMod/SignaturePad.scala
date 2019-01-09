@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SignaturePad extends js.Object {
   var _ctx: stdLib.CanvasRenderingContext2D = js.native
-  var _data: js.Array[signatureUnderscorePadLib.Anon_Points] = js.native
+  var _data: js.Array[signatureUnderscorePadLib.Anon_Color] = js.native
   var _isEmpty: scala.Boolean = js.native
   var _lastVelocity: scala.Double = js.native
   var _lastWidth: scala.Double = js.native
@@ -32,13 +32,13 @@ trait SignaturePad extends js.Object {
   def _createPoint(x: scala.Double, y: scala.Double): signatureUnderscorePadLib.signatureUnderscorePadMod.SignaturePadNs.Point = js.native
   def _drawCurve(_a: signatureUnderscorePadLib.Anon_ColorCurve): scala.Unit = js.native
   def _drawCurveSegment(x: scala.Double, y: scala.Double, width: scala.Double): scala.Unit = js.native
-  def _drawDot(_a: signatureUnderscorePadLib.Anon_Color): scala.Unit = js.native
+  def _drawDot(_a: signatureUnderscorePadLib.Anon_ColorPoint): scala.Unit = js.native
   def _fromData(
     pointGroups: js.Array[
       js.Array[signatureUnderscorePadLib.signatureUnderscorePadMod.SignaturePadNs.Point]
     ],
     drawCurve: js.Function1[/* _a */ signatureUnderscorePadLib.Anon_ColorCurve, scala.Unit],
-    drawDot: js.Function1[/* _a */ signatureUnderscorePadLib.Anon_Color, scala.Unit]
+    drawDot: js.Function1[/* _a */ signatureUnderscorePadLib.Anon_ColorPoint, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Privates

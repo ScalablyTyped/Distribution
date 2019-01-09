@@ -9,8 +9,8 @@ trait GetNetworkInterfaceResult extends js.Object {
   /**
     * The association information for an Elastic IP address (IPv4) associated with the network interface. See supported fields below.
     */
-  val associations: js.Array[atPulumiAwsLib.Anon_PublicDnsName]
-  val attachments: js.Array[atPulumiAwsLib.Anon_InstanceIdDeviceIndex]
+  val associations: js.Array[atPulumiAwsLib.Anon_AllocationIdAssociationId]
+  val attachments: js.Array[atPulumiAwsLib.Anon_AttachmentId]
   /**
     * The Availability Zone.
     */

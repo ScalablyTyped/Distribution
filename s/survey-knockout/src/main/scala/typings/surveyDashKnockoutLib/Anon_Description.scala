@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Description extends js.Object {
-  var container: java.lang.String
   var description: java.lang.String
+  var root: java.lang.String
   var title: java.lang.String
 }
 

@@ -11,9 +11,9 @@ object diffModMembers extends js.Object {
   def applyPatch(oldStr: java.lang.String, uniDiff: diffLib.diffMod.JsDiffNs.IUniDiff): java.lang.String = js.native
   def applyPatch(oldStr: java.lang.String, uniDiff: java.lang.String): java.lang.String = js.native
   def applyPatch(oldStr: java.lang.String, uniDiff: js.Array[diffLib.diffMod.JsDiffNs.IUniDiff]): java.lang.String = js.native
-  def applyPatches(uniDiff: js.Array[diffLib.diffMod.JsDiffNs.IUniDiff], options: diffLib.Anon_Patched): scala.Unit = js.native
+  def applyPatches(uniDiff: js.Array[diffLib.diffMod.JsDiffNs.IUniDiff], options: diffLib.Anon_Callback): scala.Unit = js.native
   def canonicalize(obj: js.Any, stack: js.Array[_], replacementStack: js.Array[_]): js.Any = js.native
-  def convertChangesToDMP(changes: js.Array[diffLib.diffMod.JsDiffNs.IDiffResult]): js.Array[diffLib.Anon_1] = js.native
+  def convertChangesToDMP(changes: js.Array[diffLib.diffMod.JsDiffNs.IDiffResult]): js.Array[diffLib.Anon_0] = js.native
   def convertChangesToXML(changes: js.Array[diffLib.diffMod.JsDiffNs.IDiffResult]): java.lang.String = js.native
   def createPatch(
     fileName: java.lang.String,

@@ -66,7 +66,7 @@ class PageBreak ()
   def load(): PageBreak = js.native
   def load(option: java.lang.String): PageBreak = js.native
   def load(option: js.Array[java.lang.String]): PageBreak = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): PageBreak = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): PageBreak = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.PageBreakLoadOptions): PageBreak = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)

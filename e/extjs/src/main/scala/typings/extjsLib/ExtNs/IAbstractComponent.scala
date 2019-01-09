@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.utilNs.IRenderable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses), extjsLib.ExtNs.utilNs.IElementContainer because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses), extjsLib.ExtNs.utilNs.IAnimate because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses), extjsLib.ExtNs.utilNs.IPositionable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait IAbstractComponent
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.utilNs.IRenderable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined afterRender, doAutoRender, ensureAttachedToBody, getInsertPosition, initRenderData, onRender, render- extjsLib.ExtNs.utilNs.IElementContainer because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined addChildEls, removeChildEls- extjsLib.ExtNs.utilNs.IAnimate because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined animate, getActiveAnimation, hasActiveFx, sequenceFx, stopAnimation, stopFx, syncFx- extjsLib.ExtNs.utilNs.IPositionable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined alignTo, anchorTo, calculateConstrainedPosition, getAlignToXY, getAnchorXY, getBox, getConstrainVector, getLocalX, getLocalXY, getLocalY, getOffsetsTo, getRegion, getViewRegion, getX, getXY, getY, move, removeAnchor, setBox, setLocalX, setLocalXY, setLocalY, setRegion, setX, setXY, setY, translatePoints */ trait IAbstractComponent
   extends extjsLib.ExtNs.stateNs.IStateful {
   /** [Property] (Boolean) */
   var _isLayoutRoot: js.UndefOr[scala.Boolean] = js.undefined
@@ -84,7 +84,7 @@ trait IAbstractComponent
       /* position */ js.UndefOr[java.lang.String], 
       /* offsets */ js.UndefOr[Array], 
       /* animate */ js.UndefOr[js.Any], 
-      extjsLib.ExtNs.utilNs.IPositionable
+      this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
   /** [Method] Anchors an element to another element and realigns it when the window is resized
@@ -104,7 +104,7 @@ trait IAbstractComponent
       /* animate */ js.UndefOr[js.Any], 
       /* monitorScroll */ js.UndefOr[js.Any], 
       /* callback */ js.UndefOr[js.Any], 
-      extjsLib.ExtNs.utilNs.IPositionable
+      this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
   /** [Method] Performs custom animation on this object. ... */
@@ -557,7 +557,7 @@ trait IAbstractComponent
   /** [Method] Remove any anchor to this element
   		* @returns Ext.util.Positionable this
   		*/
-  var removeAnchor: js.UndefOr[js.Function0[extjsLib.ExtNs.utilNs.IPositionable]] = js.undefined
+  var removeAnchor: js.UndefOr[js.Function0[this.type | extjsLib.ExtNs.utilNs.IPositionable]] = js.undefined
   /** [Method] Removes items in the childEls array based on the return value of a supplied test function
   		* @param testFn Function The test function.
   		*/
@@ -611,7 +611,7 @@ trait IAbstractComponent
     js.Function2[
       /* box */ js.UndefOr[js.Any], 
       /* animate */ js.UndefOr[js.Any], 
-      extjsLib.ExtNs.utilNs.IPositionable
+      this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
   /** [Method] Enable or disable the component
@@ -639,7 +639,12 @@ trait IAbstractComponent
   		* @param x Object
   		* @returns Ext.util.Positionable this
   		*/
-  var setLocalX: js.UndefOr[js.Function1[/* x */ js.UndefOr[js.Any], extjsLib.ExtNs.utilNs.IPositionable]] = js.undefined
+  var setLocalX: js.UndefOr[
+    js.Function1[
+      /* x */ js.UndefOr[js.Any | scala.Double], 
+      this.type | extjsLib.ExtNs.utilNs.IPositionable
+    ]
+  ] = js.undefined
   /** [Method] Overridden in Ext rtl AbstractComponent
   		* @param x Object
   		* @param y Object
@@ -648,15 +653,20 @@ trait IAbstractComponent
   var setLocalXY: js.UndefOr[
     js.Function2[
       /* x */ js.UndefOr[js.Any], 
-      /* y */ js.UndefOr[js.Any], 
-      extjsLib.ExtNs.utilNs.IPositionable
+      /* y */ js.UndefOr[js.Any | scala.Double], 
+      this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
   /** [Method] Sets the local y coordinate of this element using CSS style
   		* @param y Object
   		* @returns Ext.util.Positionable this
   		*/
-  var setLocalY: js.UndefOr[js.Function1[/* y */ js.UndefOr[js.Any], extjsLib.ExtNs.utilNs.IPositionable]] = js.undefined
+  var setLocalY: js.UndefOr[
+    js.Function1[
+      /* y */ js.UndefOr[js.Any | scala.Double], 
+      this.type | extjsLib.ExtNs.utilNs.IPositionable
+    ]
+  ] = js.undefined
   /** [Method] Sets the margin on the target element
   		* @param margin Number/String The margin to set. See the margin config.
   		*/
@@ -670,7 +680,7 @@ trait IAbstractComponent
     js.Function2[
       /* region */ js.UndefOr[extjsLib.ExtNs.utilNs.IRegion], 
       /* animate */ js.UndefOr[js.Any], 
-      extjsLib.ExtNs.utilNs.IPositionable
+      this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
   /** [Method] Sets the width and height of this Component
@@ -702,9 +712,9 @@ trait IAbstractComponent
   		*/
   var setX: js.UndefOr[
     js.Function2[
-      /* x */ js.UndefOr[js.Any], 
+      /* x */ /* The */ js.UndefOr[js.Any | scala.Double], 
       /* animate */ js.UndefOr[js.Any], 
-      extjsLib.ExtNs.utilNs.IPositionable
+      this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
   /** [Method] Sets the position of the DOM element in page coordinates
@@ -714,9 +724,9 @@ trait IAbstractComponent
   		*/
   var setXY: js.UndefOr[
     js.Function2[
-      /* xy */ js.UndefOr[js.Any], 
+      /* xy */ /* pos */ js.UndefOr[js.Any | Array], 
       /* animate */ js.UndefOr[js.Any], 
-      extjsLib.ExtNs.utilNs.IPositionable
+      this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
   /** [Method] Sets the Y position of the DOM element based on page coordinates
@@ -726,9 +736,9 @@ trait IAbstractComponent
   		*/
   var setY: js.UndefOr[
     js.Function2[
-      /* y */ js.UndefOr[js.Any], 
+      /* y */ /* The */ js.UndefOr[js.Any | scala.Double], 
       /* animate */ js.UndefOr[js.Any], 
-      extjsLib.ExtNs.utilNs.IPositionable
+      this.type | extjsLib.ExtNs.utilNs.IPositionable
     ]
   ] = js.undefined
   /** [Config Option] (Boolean/Number) */

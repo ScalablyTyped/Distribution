@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object distStitchingMakeRemoteExecutableSchemaModMembers extends js.Object {
   def createResolver(fetcher: Fetcher): graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
-  def default(hasSchemaLinkFetcherCreateResolver: graphqlDashToolsLib.Anon_Fetcher): graphqlLib.graphqlMod.GraphQLSchema = js.native
+  def default(hasSchemaLinkFetcherCreateResolver: graphqlDashToolsLib.Anon_ArgName): graphqlLib.graphqlMod.GraphQLSchema = js.native
 }
 

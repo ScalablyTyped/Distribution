@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 trait Anon_ColumnIndexRowIndex extends js.Object {
   var columnIndex: scala.Double
   var rowIndex: scala.Double
+  var shouldForceUpdate: js.UndefOr[scala.Boolean] = js.undefined
 }
 

@@ -25,7 +25,9 @@ trait DefaultRouteTableState extends js.Object {
     */
   val routes: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_InstanceIdGatewayId]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CidrBlockEgressOnlyGatewayId]
+      ]
     ]
   ] = js.undefined
   /**

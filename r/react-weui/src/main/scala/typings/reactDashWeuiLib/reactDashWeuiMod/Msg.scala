@@ -15,6 +15,6 @@ class Msg protected () extends js.Object {
 @JSImport("react-weui", "Msg")
 @js.native
 object Msg extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_Type = js.native
+  var defaultProps: reactDashWeuiLib.Anon_Buttons = js.native
 }
 

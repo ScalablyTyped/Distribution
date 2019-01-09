@@ -11,6 +11,6 @@ trait ClientMessagesResource extends js.Object {
     * `Failed to render component`, `Profile page is running slow`,
     * `More than 500 users have accessed this result.`, etc.
     */
-  def log(request: gapiDotClientDotPartnersLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[LogMessageResponse]
+  def log(request: gapiDotClientDotPartnersLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[LogMessageResponse]
 }
 

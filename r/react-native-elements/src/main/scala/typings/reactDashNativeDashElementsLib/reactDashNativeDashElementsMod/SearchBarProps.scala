@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SearchBarProps
-  extends reactDashNativeLib.reactDashNativeMod.TextInputProps {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped any */ trait SearchBarProps extends js.Object {
   /**
     * Specify color, styling, or another Material Icon Name
     * (Note: pressing on this icon clears text inside the searchbar)
@@ -52,9 +52,25 @@ trait SearchBarProps
     */
   var noIcon: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Method to fire when text is changed
+    */
+  var onChangeText: js.UndefOr[js.Function1[/* text */ java.lang.String, scala.Unit]] = js.undefined
+  /**
     * Method fired when text is cleared via the clear button
     */
   var onClearText: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  /**
+    * Set the placeholder text
+    *
+    * @default ''
+    */
+  var placeholder: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Set the color of the placeholder text
+    *
+    * @default '#86939e'
+    */
+  var placeholderTextColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Change TextInput styling to rounded corners
     *
@@ -74,5 +90,11 @@ trait SearchBarProps
   var textInputRef: js.UndefOr[
     js.Function1[/* ref */ reactDashNativeLib.reactDashNativeMod.TextInput, scala.Unit]
   ] = js.undefined
+  /**
+    * Specify other than the default transparent underline color
+    *
+    * @default 'transparent'
+    */
+  var underlineColorAndroid: js.UndefOr[java.lang.String] = js.undefined
 }
 

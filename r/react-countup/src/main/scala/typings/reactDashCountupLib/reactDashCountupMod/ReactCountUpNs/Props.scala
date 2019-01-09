@@ -24,19 +24,21 @@ trait Props extends js.Object {
   var end: js.UndefOr[scala.Double] = js.undefined
   var formattingFn: js.UndefOr[js.Function1[/* value */ scala.Double, java.lang.String]] = js.undefined
   var onComplete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onEnd: js.UndefOr[
-    js.Function1[/* providedFn */ reactDashCountupLib.Anon_UpdatePauseResume, scala.Unit]
-  ] = js.undefined
+  var onEnd: js.UndefOr[js.Function1[/* providedFn */ reactDashCountupLib.Anon_PauseResume, scala.Unit]] = js.undefined
   var onPauseResume: js.UndefOr[
-    js.Function0[js.Function1[/* providedFn */ reactDashCountupLib.Anon_UpdateReset, scala.Unit]]
+    js.Function0[js.Function1[/* providedFn */ reactDashCountupLib.Anon_Reset, scala.Unit]]
   ] = js.undefined
   var onReset: js.UndefOr[
-    js.Function0[js.Function1[/* providedFn */ reactDashCountupLib.Anon_Update, scala.Unit]]
+    js.Function0[
+      js.Function1[/* providedFn */ reactDashCountupLib.Anon_PauseResumeStart, scala.Unit]
+    ]
   ] = js.undefined
   var onStart: js.UndefOr[
-    js.Function1[/* providedFn */ reactDashCountupLib.Anon_UpdatePauseResumeReset, scala.Unit]
+    js.Function1[/* providedFn */ reactDashCountupLib.Anon_PauseResumeReset, scala.Unit]
   ] = js.undefined
-  var onUpdate: js.UndefOr[js.Function1[/* providedFn */ reactDashCountupLib.Anon_PauseResume, scala.Unit]] = js.undefined
+  var onUpdate: js.UndefOr[
+    js.Function1[/* providedFn */ reactDashCountupLib.Anon_PauseResumeResetStart, scala.Unit]
+  ] = js.undefined
   var prefix: js.UndefOr[java.lang.String] = js.undefined
   var redraw: js.UndefOr[scala.Boolean] = js.undefined
   var separator: js.UndefOr[java.lang.String] = js.undefined

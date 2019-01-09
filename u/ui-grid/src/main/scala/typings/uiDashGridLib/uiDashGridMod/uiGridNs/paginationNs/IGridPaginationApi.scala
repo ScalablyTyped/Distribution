@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait IGridPaginationApi extends js.Object {
   // Events
-  var on: uiDashGridLib.Anon_PaginationChanged
+  var on: uiDashGridLib.Anon_HandlerPaginationChanged
   // Methods
   /**
     * Get the current page

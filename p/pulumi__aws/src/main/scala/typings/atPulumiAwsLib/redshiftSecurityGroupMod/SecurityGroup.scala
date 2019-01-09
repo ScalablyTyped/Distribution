@@ -25,7 +25,7 @@ class SecurityGroup protected ()
   /**
     * A list of ingress rules.
     */
-  val ingress: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_CidrSecurityGroupOwnerId]] = js.native
+  val ingress: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_CidrSecurityGroupName]] = js.native
   /**
     * The name of the Redshift security group.
     */

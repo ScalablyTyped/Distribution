@@ -31,6 +31,6 @@ class Dropdown[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_,
   /**
     * Render the dropdown menu and sub-items.
     */
-  def render(view: prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S]): prosemirrorDashMenuLib.Anon_UpdatePDom[S] = js.native
+  def render(view: prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S]): prosemirrorDashMenuLib.Anon_DomP[S] = js.native
 }
 

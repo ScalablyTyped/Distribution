@@ -16,7 +16,7 @@ trait IChargeUpdateOptions
   /**
     * A set of key/value pairs you can attach to a charge giving information about its riskiness.
     */
-  var fraud_details: js.UndefOr[stripeLib.Anon_Userreport] = js.undefined
+  var fraud_details: js.UndefOr[stripeLib.Anon_FraudulentSafe] = js.undefined
   /**
     * This is the email address that the receipt for this charge will be sent to.
     * If this field is updated, then a new email receipt will be sent to the updated address.

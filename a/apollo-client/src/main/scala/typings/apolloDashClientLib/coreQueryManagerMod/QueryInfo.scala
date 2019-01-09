@@ -11,7 +11,7 @@ trait QueryInfo extends js.Object {
   var invalidated: scala.Boolean
   var lastRequestId: scala.Double | scala.Null
   var listeners: js.Array[apolloDashClientLib.coreTypesMod.QueryListener]
-  var newData: (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Cache.DiffResult<any> */ js.Any) | scala.Null
+  var newData: (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Cache.DiffResult<any> */ js.Any) | scala.Null
   var observableQuery: (apolloDashClientLib.coreObservableQueryMod.ObservableQuery[_, apolloDashClientLib.coreTypesMod.OperationVariables]) | scala.Null
   var subscriptions: js.Array[apolloDashClientLib.utilObservableMod.Subscription]
 }

@@ -13,6 +13,6 @@ class ColumnSizer ()
 @JSImport("react-virtualized", "ColumnSizer")
 @js.native
 object ColumnSizer extends js.Object {
-  var propTypes: reactDashVirtualizedLib.Anon_ColumnMinWidth = js.native
+  var propTypes: reactDashVirtualizedLib.Anon_Children = js.native
 }
 

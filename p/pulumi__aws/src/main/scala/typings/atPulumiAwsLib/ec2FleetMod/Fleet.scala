@@ -25,11 +25,11 @@ class Fleet protected ()
   /**
     * Nested argument containing EC2 Launch Template configurations. Defined below.
     */
-  val launchTemplateConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_OverridesLaunchTemplateSpecification] = js.native
+  val launchTemplateConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZone] = js.native
   /**
     * Nested argument containing On-Demand configurations. Defined below.
     */
-  val onDemandOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllocationStrategyString]] = js.native
+  val onDemandOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllocationStrategy]] = js.native
   /**
     * Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
     */
@@ -37,7 +37,7 @@ class Fleet protected ()
   /**
     * Nested argument containing Spot configurations. Defined below.
     */
-  val spotOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_InstancePoolsToUseCountAllocationStrategy]] = js.native
+  val spotOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllocationStrategyInstanceInterruptionBehavior]] = js.native
   /**
     * Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
     */
@@ -45,7 +45,7 @@ class Fleet protected ()
   /**
     * Nested argument containing target capacity configurations. Defined below.
     */
-  val targetCapacitySpecification: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DefaultTargetCapacityTypeOnDemandTargetCapacity] = js.native
+  val targetCapacitySpecification: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DefaultTargetCapacityType] = js.native
   /**
     * Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
     */

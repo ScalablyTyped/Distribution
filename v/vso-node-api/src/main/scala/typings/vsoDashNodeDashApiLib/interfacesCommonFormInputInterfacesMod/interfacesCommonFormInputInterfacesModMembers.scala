@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("vso-node-api/interfaces/common/FormInputInterfaces", JSImport.Namespace)
 @js.native
 object interfacesCommonFormInputInterfacesModMembers extends js.Object {
-  var TypeInfo: vsoDashNodeDashApiLib.Anon_InputMode = js.native
+  var TypeInfo: vsoDashNodeDashApiLib.Anon_InputDataType = js.native
 }
 

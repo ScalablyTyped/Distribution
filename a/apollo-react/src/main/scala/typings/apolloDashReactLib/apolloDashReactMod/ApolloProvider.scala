@@ -15,7 +15,7 @@ class ApolloProvider protected ()
 @JSImport("apollo-react", "ApolloProvider")
 @js.native
 object ApolloProvider extends js.Object {
-  var childContextTypes: apolloDashReactLib.Anon_ClientStore = js.native
-  var propTypes: apolloDashReactLib.Anon_Client = js.native
+  var childContextTypes: apolloDashReactLib.Anon_Client = js.native
+  var propTypes: apolloDashReactLib.Anon_Children = js.native
 }
 

@@ -273,7 +273,10 @@ class default () extends AmLegend {
     * @param handler The event handler.
     */
   /* CompleteClass */
-  override def addListener(`type`: java.lang.String, handler: js.Function1[/* e */ amchartsLib.Anon_TypeDataItem, scala.Unit]): scala.Unit = js.native
+  override def addListener(
+    `type`: java.lang.String,
+    handler: js.Function1[/* e */ amchartsLib.Anon_ChartDataItem, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Removes event listener from chart object.
     */

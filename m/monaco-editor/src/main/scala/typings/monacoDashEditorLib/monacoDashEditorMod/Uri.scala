@@ -45,7 +45,7 @@ class Uri () extends UriComponents {
   override var scheme: java.lang.String = js.native
   def toJSON(): js.Object = js.native
   def toString(skipEncoding: scala.Boolean): java.lang.String = js.native
-  def `with`(change: monacoDashEditorLib.Anon_Path): Uri = js.native
+  def `with`(change: monacoDashEditorLib.Anon_Authority): Uri = js.native
 }
 
 @JSImport("monaco-editor", "Uri")
@@ -73,7 +73,7 @@ object Uri extends js.Object {
     * @param path A file system path (see `Uri#fsPath`)
     */
   def file(path: java.lang.String): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
-  def from(components: monacoDashEditorLib.Anon_PathFragment): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
+  def from(components: monacoDashEditorLib.Anon_AuthorityFragment): monacoDashEditorLib.monacoDashEditorMod.Uri = js.native
   def isUri(thing: js.Any): /* is monaco-editor.monaco-editor.Uri */ scala.Boolean = js.native
   /**
     * Creates a new Uri from a string, e.g. `http://www.msft.com/some/path`,

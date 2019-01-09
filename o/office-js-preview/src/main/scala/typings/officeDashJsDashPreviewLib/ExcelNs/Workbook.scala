@@ -289,7 +289,7 @@ class Workbook ()
   def load(): Workbook = js.native
   def load(option: java.lang.String): Workbook = js.native
   def load(option: js.Array[java.lang.String]): Workbook = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Workbook = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Workbook = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.WorkbookLoadOptions): Workbook = js.native
   /**
     *

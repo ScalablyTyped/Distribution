@@ -10,7 +10,7 @@ trait AbideOptions extends js.Object {
   var default_lang: js.UndefOr[java.lang.String] = js.undefined
   var disable_locale_check: js.UndefOr[scala.Boolean] = js.undefined
   var gettext_alias: js.UndefOr[java.lang.String] = js.undefined
-  var logger: js.UndefOr[i18nDashAbideLib.Anon_Warn] = js.undefined
+  var logger: js.UndefOr[i18nDashAbideLib.Anon_Error] = js.undefined
   var supported_languages: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var translation_directory: js.UndefOr[java.lang.String] = js.undefined
 }

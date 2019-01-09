@@ -22,7 +22,9 @@ trait FleetState extends js.Object {
     * Range of IP addresses and port settings that permit inbound traffic to access server processes running on the fleet. See below.
     */
   val ec2InboundPermissions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FromPort]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FromPortIpRange]]
+    ]
   ] = js.undefined
   /**
     * Name of an EC2 instance type. e.g. `t2.micro`
@@ -53,13 +55,15 @@ trait FleetState extends js.Object {
     * Policy that limits the number of game sessions an individual player can create over a span of time for this fleet. See below.
     */
   val resourceCreationLimitPolicy: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NewGameSessionsPerCreator]
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NewGameSessionsPerCreatorPolicyPeriodInMinutes]
   ] = js.undefined
   /**
     * Instructions for launching server processes on each instance in the fleet. See below.
     */
   val runtimeConfiguration: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_GameSessionActivationTimeoutSeconds]
+    atPulumiPulumiLib.resourceMod.Input[
+      atPulumiAwsLib.Anon_GameSessionActivationTimeoutSecondsMaxConcurrentGameSessionActivations
+    ]
   ] = js.undefined
 }
 

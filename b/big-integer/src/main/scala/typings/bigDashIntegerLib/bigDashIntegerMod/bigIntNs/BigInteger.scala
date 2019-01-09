@@ -44,7 +44,7 @@ trait BigInteger extends js.Object {
     * Performs division and returns an object with two properties: quotient and remainder.
     * The sign of the remainder will match the sign of the dividend.
     */
-  def divmod(number: BigNumber): bigDashIntegerLib.Anon_Remainder = js.native
+  def divmod(number: BigNumber): bigDashIntegerLib.Anon_Quotient = js.native
   /**
     * Alias for the equals method.
     */

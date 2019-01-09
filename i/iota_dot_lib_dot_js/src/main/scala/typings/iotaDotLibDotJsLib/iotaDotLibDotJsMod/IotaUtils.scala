@@ -16,7 +16,7 @@ trait IotaUtils extends js.Object {
   def addChecksum(inputValue: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
   def addChecksum(inputValue: js.Array[java.lang.String], checksumLength: scala.Double): js.Array[java.lang.String] = js.native
   def addChecksum(inputValue: js.Array[java.lang.String], checksumLength: scala.Double, isAddress: scala.Boolean): js.Array[java.lang.String] = js.native
-  def categorizeTransfers(transfers: js.Array[TransactionObject], addresses: js.Array[java.lang.String]): iotaDotLibDotJsLib.Anon_Sent = js.native
+  def categorizeTransfers(transfers: js.Array[TransactionObject], addresses: js.Array[java.lang.String]): iotaDotLibDotJsLib.Anon_Received = js.native
   def convertUnits(value: scala.Double, fromUnit: iotaDotLibDotJsLib.IOTAUnit, toUnit: iotaDotLibDotJsLib.IOTAUnit): scala.Double = js.native
   def extractJson(bundle: js.Array[TransactionObject]): java.lang.String = js.native
   def fromTrytes(trytes: java.lang.String): java.lang.String = js.native

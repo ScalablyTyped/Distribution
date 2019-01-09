@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
 class RawPackStream ()
   extends nodeLib.streamMod.Readable {
   def destroy(err: js.Any): scala.Unit = js.native
-  def entry(header: adoneLib.adoneNs.archiveNs.tarNs.INs.OptionalHeader with adoneLib.Anon_Type): adoneLib.adoneNs.archiveNs.tarNs.INs.LinkSink = js.native
+  def entry(header: adoneLib.adoneNs.archiveNs.tarNs.INs.OptionalHeader with adoneLib.Anon_Symlink): adoneLib.adoneNs.archiveNs.tarNs.INs.LinkSink = js.native
   def entry(
-    header: adoneLib.adoneNs.archiveNs.tarNs.INs.OptionalHeader with adoneLib.Anon_Type,
+    header: adoneLib.adoneNs.archiveNs.tarNs.INs.OptionalHeader with adoneLib.Anon_Symlink,
     callback: js.Function1[/* err */ js.Any, scala.Unit]
   ): adoneLib.adoneNs.archiveNs.tarNs.INs.LinkSink = js.native
   def entry(header: adoneLib.adoneNs.archiveNs.tarNs.INs.OptionalHeader, buffer: nodeLib.Buffer): adoneLib.adoneNs.archiveNs.tarNs.INs.Writable = js.native

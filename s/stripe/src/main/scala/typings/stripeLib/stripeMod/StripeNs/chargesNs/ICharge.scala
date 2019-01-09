@@ -77,7 +77,7 @@ trait ICharge
   /**
     * Hash with information on fraud assessments for the charge.
     */
-  var fraud_details: stripeLib.Anon_UserreportFraudulent
+  var fraud_details: stripeLib.Anon_Fraudulent
   /**
     * ID of the invoice this charge is for if one exists. [Expandable]
     */

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.utilNs.ISortable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
-trait IAbstractStore
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- extjsLib.ExtNs.utilNs.ISortable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined defaultSortDirection, sortRoot, sorters, isSortable, generateComparator, getFirstSorter, initSortable, sort */ trait IAbstractStore
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Config Option] (Boolean/Object) */
   var autoLoad: js.UndefOr[js.Any] = js.undefined
@@ -16,6 +16,8 @@ trait IAbstractStore
   var batchUpdateMode: js.UndefOr[java.lang.String] = js.undefined
   /** [Property] (String) */
   var defaultProxyType: js.UndefOr[java.lang.String] = js.undefined
+  /** [Config Option] (String) */
+  var defaultSortDirection: js.UndefOr[java.lang.String] = js.undefined
   /** [Config Option] (Object[]) */
   var fields: js.UndefOr[extjsLib.ExtNs.Array] = js.undefined
   /** [Config Option] (Boolean) */
@@ -56,6 +58,8 @@ trait IAbstractStore
   		* @returns Boolean True if the Store is currently loading
   		*/
   var isLoading: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
+  /** [Property] (Boolean) */
+  var isSortable: js.UndefOr[scala.Boolean] = js.undefined
   /** [Property] (Boolean) */
   var isStore: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Loads the Store using its configured proxy
@@ -104,6 +108,10 @@ trait IAbstractStore
   ] = js.undefined
   /** [Config Option] (Boolean) */
   var sortOnLoad: js.UndefOr[scala.Boolean] = js.undefined
+  /** [Config Option] (String) */
+  var sortRoot: js.UndefOr[java.lang.String] = js.undefined
+  /** [Config Option] (Ext.util.Sorter[]/Object[]) */
+  var sorters: js.UndefOr[js.Any] = js.undefined
   /** [Config Option] (Boolean) */
   var statefulFilters: js.UndefOr[scala.Boolean] = js.undefined
   /** [Config Option] (String) */

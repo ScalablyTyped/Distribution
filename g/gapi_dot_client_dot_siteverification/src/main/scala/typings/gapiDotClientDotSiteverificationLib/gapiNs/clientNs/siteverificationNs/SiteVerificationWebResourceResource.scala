@@ -11,6 +11,6 @@ trait SiteVerificationWebResourceResource extends js.Object {
   /** The email addresses of all verified owners. */
   var owners: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** The address and type of a site that is verified or will be verified. */
-  var site: js.UndefOr[gapiDotClientDotSiteverificationLib.Anon_Type] = js.undefined
+  var site: js.UndefOr[gapiDotClientDotSiteverificationLib.Anon_Identifier] = js.undefined
 }
 

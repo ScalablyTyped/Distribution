@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait IntercomSettings extends js.Object {
   var alignment: js.UndefOr[java.lang.String] = js.undefined
   var app_id: js.UndefOr[java.lang.String] = js.undefined
-  var company: js.UndefOr[intercomDashWebLib.Anon_Index] = js.undefined
+  var company: js.UndefOr[intercomDashWebLib.Anon_Createdat] = js.undefined
   var created_at: js.UndefOr[scala.Double] = js.undefined
   var email: js.UndefOr[java.lang.String] = js.undefined
   var hide_default_launcher: js.UndefOr[scala.Boolean] = js.undefined

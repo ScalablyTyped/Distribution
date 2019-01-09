@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 // The shape background fill.
 trait ShapePropertiesShapeBackgroundFill extends js.Object {
   // The kind of background fill.
-  var kind: googleDashAppsDashScriptLib.Anon_Solidfill
+  var kind: googleDashAppsDashScriptLib.Anon_SolidfillSolidFill
   // The background fill property state.
   //
   // Updating the fill on a shape will implicitly update this field to

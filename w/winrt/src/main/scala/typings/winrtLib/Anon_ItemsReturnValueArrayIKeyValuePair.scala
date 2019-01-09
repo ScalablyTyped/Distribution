@@ -9,7 +9,7 @@ trait Anon_ItemsReturnValueArrayIKeyValuePair extends js.Object {
   var items: js.Array[
     winrtLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[
       java.lang.String, 
-      winrtLib.WindowsNs.ApplicationModelNs.ResourcesNs.CoreNs.NamedResource
+      winrtLib.WindowsNs.ApplicationModelNs.ResourcesNs.CoreNs.ResourceMap
     ]
   ]
   var returnValue: scala.Double

@@ -52,7 +52,7 @@ trait ParcelOptions extends js.Object {
     * Use true to generate one or false to use http
     */
   var https: js.UndefOr[
-    parcelDashBundlerLib.parcelDashBundlerLibNumbers.`true` | parcelDashBundlerLib.parcelDashBundlerLibNumbers.`false` | parcelDashBundlerLib.Anon_Key
+    parcelDashBundlerLib.parcelDashBundlerLibNumbers.`true` | parcelDashBundlerLib.parcelDashBundlerLibNumbers.`false` | parcelDashBundlerLib.Anon_Cert
   ] = js.undefined
   /**
     * 3 = log everything, 2 = log warnings & errors, 1 = log errors

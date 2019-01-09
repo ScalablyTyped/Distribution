@@ -19,11 +19,11 @@ trait Calendar
   def onTimeChange(date: stdLib.Date): scala.Unit = js.native
   def selectDate(date: stdLib.Date): StateType = js.native
   def selectDate(date: stdLib.Date, useDateTime: scala.Boolean): StateType = js.native
-  def selectDate(date: stdLib.Date, useDateTime: scala.Boolean, oldState: rmcDashCalendarLib.Anon_StartDate): StateType = js.native
+  def selectDate(date: stdLib.Date, useDateTime: scala.Boolean, oldState: rmcDashCalendarLib.Anon_EndDate): StateType = js.native
   def selectDate(
     date: stdLib.Date,
     useDateTime: scala.Boolean,
-    oldState: rmcDashCalendarLib.Anon_StartDate,
+    oldState: rmcDashCalendarLib.Anon_EndDate,
     props: stdLib.Readonly[rmcDashCalendarLib.Anon_Children] with stdLib.Readonly[rmcDashCalendarLib.libCalendarPropsMod.PropsType]
   ): StateType = js.native
   def setClientHeight(height: scala.Double): scala.Unit = js.native

@@ -11,6 +11,6 @@ class namespaced () extends ConvexHullGrahamScan {
   /* CompleteClass */
   override def addPoint(x: scala.Double, y: scala.Double): scala.Unit = js.native
   /* CompleteClass */
-  override def getHull(): js.Array[grahamUnderscoreScanLib.Anon_Y] = js.native
+  override def getHull(): js.Array[grahamUnderscoreScanLib.Anon_X] = js.native
 }
 

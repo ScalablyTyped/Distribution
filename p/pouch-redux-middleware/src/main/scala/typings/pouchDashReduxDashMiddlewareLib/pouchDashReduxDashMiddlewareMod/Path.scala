@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Path extends js.Object {
-  var actions: pouchDashReduxDashMiddlewareLib.Anon_Update
+  var actions: pouchDashReduxDashMiddlewareLib.Anon_Doc
   var db: pouchdbDashCoreLib.PouchDBNs.Database[_]
   var docs: js.UndefOr[js.Any] = js.undefined
   var handleResponse: js.UndefOr[

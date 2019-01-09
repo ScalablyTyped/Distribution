@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * Sticky state
   */
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ trait IStickyState extends js.Object {
   /*
     * The most-recently-activate substate of the DSR marked state is remembered.
@@ -38,7 +38,7 @@ import scala.scalajs.js.annotation._
     */
   var views: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IState */ js.Any
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IState */ js.Any
     ]
   ] = js.undefined
 }

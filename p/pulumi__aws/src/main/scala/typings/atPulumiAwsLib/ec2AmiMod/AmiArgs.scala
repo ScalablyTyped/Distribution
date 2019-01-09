@@ -20,7 +20,9 @@ trait AmiArgs extends js.Object {
     */
   val ebsBlockDevices: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceNameVolumeType]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceName]
+      ]
     ]
   ] = js.undefined
   /**
@@ -32,7 +34,9 @@ trait AmiArgs extends js.Object {
     * should be attached to created instances. The structure of this block is described below.
     */
   val ephemeralBlockDevices: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceName]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceNameVirtualName]]
+    ]
   ] = js.undefined
   /**
     * Path to an S3 object containing an image manifest, e.g. created

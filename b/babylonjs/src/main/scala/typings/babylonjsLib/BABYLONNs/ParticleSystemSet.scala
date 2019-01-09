@@ -37,7 +37,7 @@ class ParticleSystemSet () extends IDisposable {
     * @param renderingGroupId defines the renderingGroupId to use for the sphere
     * @param scene defines the hosting scene
     */
-  def setEmitterAsSphere(options: babylonjsLib.Anon_ColorSegments, renderingGroupId: scala.Double, scene: Scene): scala.Unit = js.native
+  def setEmitterAsSphere(options: babylonjsLib.Anon_ColorDiameter, renderingGroupId: scala.Double, scene: Scene): scala.Unit = js.native
   /**
     * Starts all particle systems of the set
     * @param emitter defines an optional mesh to use as emitter for the particle systems

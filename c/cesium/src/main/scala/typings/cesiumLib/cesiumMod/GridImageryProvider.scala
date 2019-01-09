@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class GridImageryProvider ()
   extends cesiumLib.cesiumMod.CesiumNs.GridImageryProvider {
-  def this(options: cesiumLib.Anon_Cells) = this()
-  def this(options: cesiumLib.Anon_Cells, backgroundColor: cesiumLib.cesiumMod.CesiumNs.Color) = this()
+  def this(options: cesiumLib.Anon_CanvasSize) = this()
+  def this(options: cesiumLib.Anon_CanvasSize, backgroundColor: cesiumLib.cesiumMod.CesiumNs.Color) = this()
   /* CompleteClass */
   override var credit: cesiumLib.cesiumMod.CesiumNs.Credit = js.native
   /* CompleteClass */

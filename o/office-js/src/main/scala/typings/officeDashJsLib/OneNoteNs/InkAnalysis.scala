@@ -47,7 +47,7 @@ class InkAnalysis ()
   def load(): InkAnalysis = js.native
   def load(option: java.lang.String): InkAnalysis = js.native
   def load(option: js.Array[java.lang.String]): InkAnalysis = js.native
-  def load(option: officeDashJsLib.Anon_Select): InkAnalysis = js.native
+  def load(option: officeDashJsLib.Anon_Expand): InkAnalysis = js.native
   def load(option: officeDashJsLib.OneNoteNs.InterfacesNs.InkAnalysisLoadOptions): InkAnalysis = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: InkAnalysis): scala.Unit = js.native

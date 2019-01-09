@@ -20,7 +20,7 @@ class namespaced protected () extends Awesomplete {
 @js.native
 object namespaced extends js.Object {
   @JSName("$")
-  var $_Original: awesompleteLib.Anon_Expr = js.native
+  var $_Original: awesompleteLib.Anon_Con = js.native
   var all: js.Array[_] = js.native
   @JSName("$")
   def $(expr: java.lang.String): java.lang.String | stdLib.Element = js.native

@@ -90,7 +90,7 @@ class HeaderFooterGroup ()
   def load(): HeaderFooterGroup = js.native
   def load(option: java.lang.String): HeaderFooterGroup = js.native
   def load(option: js.Array[java.lang.String]): HeaderFooterGroup = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): HeaderFooterGroup = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): HeaderFooterGroup = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.HeaderFooterGroupLoadOptions): HeaderFooterGroup = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: HeaderFooterGroup): scala.Unit = js.native

@@ -98,7 +98,9 @@ trait ClusterArgs extends js.Object {
   /**
     * Logging, documented below.
     */
-  val logging: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_S3KeyPrefix]] = js.undefined
+  val logging: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketNameEnableS3KeyPrefix]
+  ] = js.undefined
   /**
     * Password for the master DB user.
     * Note that this may show up in logs, and it will be stored in the state file. Password must contain at least 8 chars and
@@ -150,7 +152,9 @@ trait ClusterArgs extends js.Object {
   /**
     * Configuration of automatic copy of snapshots from one region to another. Documented below.
     */
-  val snapshotCopy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DestinationRegion]] = js.undefined
+  val snapshotCopy: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DestinationRegionGrantName]
+  ] = js.undefined
   /**
     * The name of the snapshot from which to create the new cluster.
     */

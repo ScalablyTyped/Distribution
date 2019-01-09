@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Query extends js.Object {
   var query: graphqlLib.languageAstMod.DocumentNode
+  var variables: js.Any
 }
 

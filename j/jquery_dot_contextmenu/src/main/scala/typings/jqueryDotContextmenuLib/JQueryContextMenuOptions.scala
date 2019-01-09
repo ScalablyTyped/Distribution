@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait JQueryContextMenuOptions extends js.Object {
-  var animation: js.UndefOr[Anon_Hide] = js.undefined
+  var animation: js.UndefOr[Anon_Duration] = js.undefined
   var appendTo: js.UndefOr[java.lang.String] = js.undefined
   var autoHide: js.UndefOr[scala.Boolean] = js.undefined
   var build: js.UndefOr[js.Function2[/* triggerElement */ JQuery, /* e */ stdLib.Event, _]] = js.undefined
@@ -14,7 +14,7 @@ trait JQueryContextMenuOptions extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var delay: js.UndefOr[scala.Double] = js.undefined
   var determinePosition: js.UndefOr[js.Function1[/* menu */ JQuery, scala.Unit]] = js.undefined
-  var events: js.UndefOr[Anon_HideOptions] = js.undefined
+  var events: js.UndefOr[Anon_Hide] = js.undefined
   var itemClickEvent: js.UndefOr[java.lang.String] = js.undefined
   var items: js.UndefOr[js.Any] = js.undefined
   var position: js.UndefOr[

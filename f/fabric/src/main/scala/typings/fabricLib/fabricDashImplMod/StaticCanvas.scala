@@ -112,7 +112,7 @@ class StaticCanvas protected ()
   	 * Returns coordinates of a center of canvas.
   	 * Returned value is an object with top and left properties
   	 */
-  def getCenter(): fabricLib.Anon_TopLeft = js.native
+  def getCenter(): fabricLib.Anon_Left = js.native
   /**
   	 * Returns context of canvas where objects are drawn
   	 */

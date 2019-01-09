@@ -16,6 +16,6 @@ import scala.scalajs.js.annotation._
   * Creates an instance of Inverter.
   */
 class Inverter () extends Decorator {
-  def this(hasChild: behavior3Lib.Anon_Child) = this()
+  def this(hasChild: behavior3Lib.Anon_ChildBaseNode) = this()
 }
 

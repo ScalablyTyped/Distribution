@@ -10,5 +10,9 @@ trait Anon_AdUnitId extends js.Object {
     * 广告单元 id
     */
   var adUnitId: java.lang.String
+  /**
+    * banner 广告组件的样式
+    */
+  var style: wegameDashApiLib.wxNs.typesNs.AdStyle
 }
 

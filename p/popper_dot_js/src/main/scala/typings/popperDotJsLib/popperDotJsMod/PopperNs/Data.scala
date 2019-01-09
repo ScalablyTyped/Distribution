@@ -13,7 +13,7 @@ trait Data extends js.Object {
   var flipped: scala.Boolean
   var hide: scala.Boolean
   var instance: popperDotJsLib.popperDotJsMod.Popper
-  var offsets: popperDotJsLib.Anon_Reference
+  var offsets: popperDotJsLib.Anon_Arrow
   var originalPlacement: Placement
   var placement: Placement
   var styles: stdLib.CSSStyleDeclaration

@@ -25,7 +25,7 @@ trait DatabaseGetResponse extends js.Object {
   var instance_start_time: java.lang.String
   // The number of purge operations on the database.
   var purge_seq: scala.Double
-  var sizes: nanoLib.Anon_File
+  var sizes: nanoLib.Anon_Active
   // The current number of updates to the database.
   var update_seq: scala.Double
 }

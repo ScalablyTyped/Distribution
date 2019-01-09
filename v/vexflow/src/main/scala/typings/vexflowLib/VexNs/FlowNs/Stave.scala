@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Stave protected () extends js.Object {
   def this(x: scala.Double, y: scala.Double, width: scala.Double) = this()
-  def this(x: scala.Double, y: scala.Double, width: scala.Double, options: vexflowLib.Anon_Numlines) = this()
+  def this(x: scala.Double, y: scala.Double, width: scala.Double, options: vexflowLib.Anon_Fillstyle) = this()
   def addClef(clef: java.lang.String): Stave = js.native
   def addClef(clef: java.lang.String, size: java.lang.String): Stave = js.native
   def addClef(clef: java.lang.String, size: java.lang.String, annotation: java.lang.String): Stave = js.native

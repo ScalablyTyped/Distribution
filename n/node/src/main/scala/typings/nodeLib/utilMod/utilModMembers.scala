@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("util", JSImport.Namespace)
 @js.native
 object utilModMembers extends js.Object {
-  val inspect: nodeLib.Anon_Object = js.native
+  val inspect: nodeLib.Anon_Color = js.native
   def callbackify(fn: js.Function0[js.Promise[scala.Unit]]): js.Function1[
     /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit], 
     scala.Unit

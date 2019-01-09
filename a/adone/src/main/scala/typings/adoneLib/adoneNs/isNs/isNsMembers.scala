@@ -52,7 +52,7 @@ object isNsMembers extends js.Object {
   def dotfile(str: java.lang.String): scala.Boolean = js.native
   def duplexStream(obj: js.Any): scala.Boolean = js.native
   def email(obj: js.Any): /* is string */ scala.Boolean = js.native
-  def email(obj: js.Any, options: adoneLib.Anon_AllowUtf8LocalPart): /* is string */ scala.Boolean = js.native
+  def email(obj: js.Any, options: adoneLib.Anon_AllowDisplayName): /* is string */ scala.Boolean = js.native
   def emitter(obj: js.Any): /* is adone.adone.event.Emitter */ scala.Boolean = js.native
   def emptyObject(obj: js.Any): /* is object */ scala.Boolean = js.native
   def emptyString(obj: js.Any): /* is string */ scala.Boolean = js.native
@@ -146,7 +146,10 @@ object isNsMembers extends js.Object {
   def undefined(obj: js.Any): /* is undefined */ scala.Boolean = js.native
   def uppercase(str: java.lang.String): scala.Boolean = js.native
   def url(obj: js.Any): /* is string */ scala.Boolean = js.native
-  def url(obj: js.Any, options: adoneLib.adoneNs.isNs.INs.FQDNOptions with adoneLib.Anon_RequireProtocol): /* is string */ scala.Boolean = js.native
+  def url(
+    obj: js.Any,
+    options: adoneLib.adoneNs.isNs.INs.FQDNOptions with adoneLib.Anon_AllowProtocolRelativeUrls
+  ): /* is string */ scala.Boolean = js.native
   def utf8(obj: nodeLib.Buffer): scala.Boolean = js.native
   def uuid(obj: js.Any): /* is string */ scala.Boolean = js.native
   def uuid(obj: js.Any, version: adoneLib.adoneLibNumbers.`1`): /* is string */ scala.Boolean = js.native

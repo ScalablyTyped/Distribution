@@ -12,6 +12,8 @@ trait BaseNode extends js.Object {
   var loc: SourceLocation | scala.Null
   var start: scala.Double | scala.Null
   var trailingComments: js.Array[Comment] | scala.Null
-  var `type`: js.Any
+  var `type`: js.UndefOr[
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 221 */ js.Any
+  ]
 }
 

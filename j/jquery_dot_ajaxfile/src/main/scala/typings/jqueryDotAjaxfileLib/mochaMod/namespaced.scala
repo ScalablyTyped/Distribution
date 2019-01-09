@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced ()
   extends jqueryDotAjaxfileLib.Mocha {
-  def this(options: jqueryDotAjaxfileLib.Anon_Reporter) = this()
+  def this(options: jqueryDotAjaxfileLib.Anon_Bail) = this()
 }
 

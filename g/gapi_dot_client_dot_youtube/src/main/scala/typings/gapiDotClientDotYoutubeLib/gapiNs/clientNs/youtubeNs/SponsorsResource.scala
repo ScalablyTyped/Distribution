@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait SponsorsResource extends js.Object {
   /** Lists sponsors for a channel. */
-  def list(request: gapiDotClientDotYoutubeLib.Anon_MaxResultsPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[SponsorListResponse]
+  def list(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[SponsorListResponse]
 }
 

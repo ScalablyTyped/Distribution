@@ -22,7 +22,7 @@ trait TextStyle extends Style {
     reactDashSketchappLib.reactDashSketchappLibStrings.none | reactDashSketchappLib.reactDashSketchappLibStrings.underline | reactDashSketchappLib.reactDashSketchappLibStrings.double | reactDashSketchappLib.reactDashSketchappLibStrings.`line-through`
   ] = js.undefined
   var textShadowColor: js.UndefOr[Color] = js.undefined
-  var textShadowOffset: js.UndefOr[reactDashSketchappLib.Anon_Height] = js.undefined
+  var textShadowOffset: js.UndefOr[reactDashSketchappLib.Anon_HeightWidth] = js.undefined
   var textShadowRadius: js.UndefOr[scala.Double] = js.undefined
   var writingDirection: js.UndefOr[
     reactDashSketchappLib.reactDashSketchappLibStrings.auto | reactDashSketchappLib.reactDashSketchappLibStrings.ltr | reactDashSketchappLib.reactDashSketchappLibStrings.rtl

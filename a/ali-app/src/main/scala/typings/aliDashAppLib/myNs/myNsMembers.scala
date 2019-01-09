@@ -208,7 +208,7 @@ object myNsMembers extends js.Object {
   	 * 同步获取缓存数据。
   	 * 这是同步接口
   	 */
-  def getStorageSync(options: aliDashAppLib.Anon_KeyString): js.Any = js.native
+  def getStorageSync(options: aliDashAppLib.Anon_Key): js.Any = js.native
   def getSystemInfo(options: GetSystemInfoOptions): scala.Unit = js.native
   def getSystemInfoSync(): SystemInfo = js.native
   //#endregion
@@ -482,7 +482,7 @@ object myNsMembers extends js.Object {
   	 * 这是同步接口。
   	 * @param key 缓存数据的key
   	 */
-  def removeStorageSync(options: aliDashAppLib.Anon_KeyString): scala.Unit = js.native
+  def removeStorageSync(options: aliDashAppLib.Anon_Key): scala.Unit = js.native
   //#region 自定义分析 https://docs.alipay.com/mini/api/report
   /**
   	 * 自定义分析数据的上报接口。使用前需要在小程序管理后台的事件管理中新建事件，并配置好事件名和字段。
@@ -538,7 +538,7 @@ object myNsMembers extends js.Object {
   	 * @param key 本地缓存中的指定的 key
   	 * @param data 需要存储的内容
   	 */
-  def setStorageSync(options: aliDashAppLib.Anon_Key): scala.Unit = js.native
+  def setStorageSync(options: aliDashAppLib.Anon_Data): scala.Unit = js.native
   /**
   	 * 显示操作菜单
   	 */

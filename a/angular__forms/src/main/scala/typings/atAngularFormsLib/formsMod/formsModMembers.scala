@@ -21,7 +21,7 @@ object formsModMembers extends js.Object {
   val ɵangular_packages_forms_forms_bb: js.Array[atAngularCoreLib.srcTypeMod.Type[js.Any]] = js.native
   val ɵangular_packages_forms_forms_bd: js.Any = js.native
   val ɵangular_packages_forms_forms_bf: atAngularCoreLib.srcDiProviderMod.StaticProvider = js.native
-  val ɵangular_packages_forms_forms_d: atAngularFormsLib.Anon_Classngtouched = js.native
+  val ɵangular_packages_forms_forms_d: atAngularFormsLib.Anon_Classngdirty = js.native
   val ɵangular_packages_forms_forms_e: js.Any = js.native
   val ɵangular_packages_forms_forms_f: atAngularCoreLib.coreMod.InjectionToken[js.Object] = js.native
   val ɵangular_packages_forms_forms_g: js.Any = js.native

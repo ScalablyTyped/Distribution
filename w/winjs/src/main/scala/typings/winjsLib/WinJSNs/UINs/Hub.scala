@@ -124,11 +124,11 @@ object Hub extends js.Object {
   /**
     * Specifies whether the Hub animation is an entrance animation or a transition animation.
     **/
-  var AnimationType: winjsLib.Anon_Entrance = js.native
+  var AnimationType: winjsLib.Anon_ContentTransition = js.native
   /**
     * Gets the current loading state of the Hub.
     **/
-  var LoadingState: winjsLib.Anon_Loading = js.native
+  var LoadingState: winjsLib.Anon_Complete = js.native
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/

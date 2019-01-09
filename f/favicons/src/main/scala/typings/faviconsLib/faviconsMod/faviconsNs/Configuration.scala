@@ -28,7 +28,7 @@ trait Configuration extends js.Object {
     *   * true - force use default, e.g. set background for Android icons
     *   * color - set background for the specified icons
     */
-  var icons: stdLib.Partial[faviconsLib.Anon_Coast]
+  var icons: stdLib.Partial[faviconsLib.Anon_Android]
   /** Primary language for name and short_name @default "en-US */
   var lang: java.lang.String
   /** Print logs to console? @default false */

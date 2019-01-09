@@ -13,7 +13,7 @@ object docNs extends js.Object {
   object buildersNs extends js.Object {
     trait Align extends js.Object {
       var contents: Doc
-      var n: scala.Double | java.lang.String | prettierLib.Anon_Type
+      var n: scala.Double | java.lang.String | prettierLib.Anon_Root
       var `type`: prettierLib.prettierLibStrings.align
     }
     
@@ -73,7 +73,7 @@ object docNs extends js.Object {
     val softline: Line = js.native
     def addAlignmentToDoc(doc: Doc, size: scala.Double, tabWidth: scala.Double): Doc = js.native
     def align(n: java.lang.String, contents: Doc): Align = js.native
-    def align(n: prettierLib.Anon_Type, contents: Doc): Align = js.native
+    def align(n: prettierLib.Anon_Root, contents: Doc): Align = js.native
     def align(n: scala.Double, contents: Doc): Align = js.native
     def concat(contents: js.Array[Doc]): Concat = js.native
     def conditionalGroup(states: js.Array[Doc]): Group = js.native
@@ -115,7 +115,7 @@ object docNs extends js.Object {
       var useTabs: scala.Boolean
     }
     
-    def printDocToString(doc: prettierLib.prettierMod.Doc, options: Options): prettierLib.Anon_CursorNodeText = js.native
+    def printDocToString(doc: prettierLib.prettierMod.Doc, options: Options): prettierLib.Anon_CursorNodeStart = js.native
   }
   
   @JSName("utils")

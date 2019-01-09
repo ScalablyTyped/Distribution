@@ -7,20 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Date extends js.Object {
   /**
-    * If type is "exact", date will be the expected delivery date in the format YYYY-MM-DD
+    * The unix timestamp that Stripe’s terms of service were agreed to by the
+    * account holder
     */
-  var date: java.lang.String
+  var date: scala.Double
   /**
-    * If type is "range", earliest will be be the earliest delivery date in the format YYYY-MM-DD
+    * The IP address from which Stripe’s terms of service were agreed to by the account holder
     */
-  var earliest: java.lang.String
+  var ip: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * If type is "range", latest will be the latest delivery date in the format YYYY-MM-DD
+    * The user agent of the browser from which Stripe’s terms of service
+    * were agreed to by the account holder
     */
-  var latest: java.lang.String
-  /**
-    * The type of estimate. Must be either "range" or "exact"
-    */
-  var `type`: stripeLib.stripeLibStrings.range | stripeLib.stripeLibStrings.exact
+  var user_agent: js.UndefOr[java.lang.String] = js.undefined
 }
 

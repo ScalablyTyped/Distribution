@@ -19,7 +19,7 @@ trait Response
   var statusMessage_Response: java.lang.String = js.native
   var timingPhases: js.UndefOr[requestLib.Anon_Dns] = js.native
   var timingStart: js.UndefOr[scala.Double] = js.native
-  var timings: js.UndefOr[requestLib.Anon_Lookup] = js.native
+  var timings: js.UndefOr[requestLib.Anon_Connect] = js.native
    // case-insensitive access to headers
   def toJSON(): ResponseAsJSON = js.native
 }

@@ -135,7 +135,7 @@ trait WebPage extends js.Object {
     // DEPRECATED
   def reload(): scala.Unit = js.native
   def render(filename: java.lang.String): js.Promise[scala.Unit] = js.native
-  def render(filename: java.lang.String, options: Anon_Quality): js.Promise[scala.Unit] = js.native
+  def render(filename: java.lang.String, options: Anon_Format): js.Promise[scala.Unit] = js.native
   def renderBase64(`type`: java.lang.String): js.Promise[java.lang.String] = js.native
   @JSName("renderBase64")
   def renderBase64_String(format: java.lang.String): java.lang.String = js.native

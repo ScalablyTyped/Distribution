@@ -28,15 +28,7 @@ trait SequelizeStaticAndInstance extends Errors {
   /**
     * A modified version of bluebird promises, that allows listening for sql events
     */
-  var Promise: org.scalablytyped.runtime.Instantiable1[
-    /* callback */ js.Function3[
-      /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[bluebirdLib.Resolvable[js.Object]], scala.Unit], 
-      /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit], 
-      /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[scala.Unit], scala.Unit]], 
-      scala.Unit
-    ], 
-    bluebirdLib.bluebirdMod.namespaced[js.Object]
-  ] = js.native
+  var Promise: sequelizeLib.Anon_A1 = js.native
   /**
     * Available query types for use with `sequelize.query`
     */

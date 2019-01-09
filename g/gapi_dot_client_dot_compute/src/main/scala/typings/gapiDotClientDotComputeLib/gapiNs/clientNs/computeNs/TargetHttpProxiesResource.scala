@@ -8,21 +8,19 @@ import scala.scalajs.js.annotation._
 trait TargetHttpProxiesResource extends js.Object {
   /** Deletes the specified TargetHttpProxy resource. */
   def delete(
-    request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintQuotaUserKeyUserIpOauthtokenTargetHttpProxy
+    request: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetHttpProxy
   ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Returns the specified TargetHttpProxy resource. Get a list of available target HTTP proxies by making a list() request. */
   def get(
-    request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintQuotaUserKeyUserIpOauthtokenTargetHttpProxyAlt
+    request: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserTargetHttpProxy
   ): gapiDotClientLib.gapiNs.clientNs.Request[TargetHttpProxy]
   /** Creates a TargetHttpProxy resource in the specified project using the data included in the request. */
-  def insert(
-    request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintQuotaUserKeyUserIpOauthtokenAltFieldsRequestId
-  ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def insert(request: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Retrieves the list of TargetHttpProxy resources available to the specified project. */
-  def list(request: gapiDotClientDotComputeLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[TargetHttpProxyList]
+  def list(request: gapiDotClientDotComputeLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[TargetHttpProxyList]
   /** Changes the URL map for TargetHttpProxy. */
   def setUrlMap(
-    request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintQuotaUserKeyUserIpOauthtokenTargetHttpProxy
+    request: gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetHttpProxy
   ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 

@@ -16,12 +16,12 @@ object wxNsMembers extends js.Object {
   /**
     * 提前向用户发起授权请求。调用后会立刻弹窗询问用户是否同意授权小程序使用某项功能或获取用户的某些数据，但不会实际调用对应接口。如果用户之前已经同意授权，则不会出现弹窗，直接返回成功。
     */
-  def authorize(param: wegameDashApiLib.Anon_SuccessScope): scala.Unit = js.native
+  def authorize(param: wegameDashApiLib.Anon_CompleteFailScope): scala.Unit = js.native
   // --防沉迷
   /**
     * 根据用户当天游戏时间判断用户是否需要休息
     */
-  def checkIsUserAdvisedToRest(param: wegameDashApiLib.Anon_SuccessRes): scala.Unit = js.native
+  def checkIsUserAdvisedToRest(param: wegameDashApiLib.Anon_CompleteFailRes): scala.Unit = js.native
   // --登录
   /**
     * 通过 wx.login 接口获得的用户登录态拥有一定的时效性。用户越久未使用小程序，用户登录态越有可能失效。反之如果用户一直在使用小程序，则用户登录态一直保持有效。具体时效逻辑由微信维护，对开发者透明。开发者只需要调用 wx.checkSession 接口检测当前用户登录态是否有效。登录态过期后开发者可以再调用 wx.login 获取新的用户登录态。
@@ -31,7 +31,7 @@ object wxNsMembers extends js.Object {
   /**
     * 从本地相册选择图片或使用相机拍照。
     */
-  def chooseImage(param: wegameDashApiLib.Anon_FailCount): scala.Unit = js.native
+  def chooseImage(param: wegameDashApiLib.Anon_Album): scala.Unit = js.native
   // --数据缓存
   /**
     * 清理本地数据缓存
@@ -54,7 +54,7 @@ object wxNsMembers extends js.Object {
   /**
     * 创建 banner 广告组件。请通过 wx.getSystemInfoSync() 返回对象的 SDKVersion 判断基础库版本号 >= 2.0.4 后再使用该 API。同时，开发者工具上暂不支持调试该 API，请直接在真机上进行调试。
     */
-  def createBannerAd(param: wegameDashApiLib.Anon_AdUnitIdStyle): wegameDashApiLib.BannerAd = js.native
+  def createBannerAd(param: wegameDashApiLib.Anon_AdUnitId): wegameDashApiLib.BannerAd = js.native
   /**
     * 创建一个画布对象。首次调用创建的是显示在屏幕上的画布，之后调用创建的都是离屏画布。
     */
@@ -63,12 +63,12 @@ object wxNsMembers extends js.Object {
   /**
     * 用户点击后打开意见反馈页面的按钮
     */
-  def createFeedbackButton(param: wegameDashApiLib.Anon_Text): wegameDashApiLib.FeedbackButton = js.native
+  def createFeedbackButton(param: wegameDashApiLib.Anon_Image): wegameDashApiLib.FeedbackButton = js.native
   // --游戏圈
   /**
     * 创建游戏圈按钮。游戏圈按钮被点击后会跳转到小游戏的游戏圈。更多关于游戏圈的信息见 游戏圈使用指南
     */
-  def createGameClubButton(param: wegameDashApiLib.Anon_StyleImage): wegameDashApiLib.GameClubButton = js.native
+  def createGameClubButton(param: wegameDashApiLib.Anon_Icon): wegameDashApiLib.GameClubButton = js.native
   /**
     * 创建一个图片对象
     */
@@ -82,15 +82,15 @@ object wxNsMembers extends js.Object {
   /**
     * 创建打开设置页面的按钮
     */
-  def createOpenSettingButton(param: wegameDashApiLib.Anon_Text): wegameDashApiLib.OpenSettingButton = js.native
+  def createOpenSettingButton(param: wegameDashApiLib.Anon_Image): wegameDashApiLib.OpenSettingButton = js.native
   /**
     * 创建激励视频广告组件。请通过 wx.getSystemInfoSync() 返回对象的 SDKVersion 判断基础库版本号 >= 2.0.4 后再使用该 API。同时，开发者工具上暂不支持调试该 API，请直接在真机上进行调试。
     */
-  def createRewardedVideoAd(param: wegameDashApiLib.Anon_AdUnitId): wegameDashApiLib.RewardedVideoAd = js.native
+  def createRewardedVideoAd(param: wegameDashApiLib.Anon_AdUnitIdString): wegameDashApiLib.RewardedVideoAd = js.native
   // --用户信息
-  def createUserInfoButton(param: wegameDashApiLib.Anon_Style): wegameDashApiLib.UserInfoButton = js.native
+  def createUserInfoButton(param: wegameDashApiLib.Anon_En): wegameDashApiLib.UserInfoButton = js.native
   // --视频
-  def createVideo(param: wegameDashApiLib.Anon_X): wegameDashApiLib.Video = js.native
+  def createVideo(param: wegameDashApiLib.Anon_Autoplay): wegameDashApiLib.Video = js.native
   // --Worker
   /**
     * 创建一个 Worker 线程，目前限制最多只能创建一个 Worker，创建下一个 Worker 前请调用 Worker.terminate
@@ -128,17 +128,17 @@ object wxNsMembers extends js.Object {
   /**
     * 拉取当前用户所有同玩好友的托管数据。该接口只可在开放数据域下使用
     */
-  def getFriendCloudStorage(param: wegameDashApiLib.Anon_SuccessResKeyList): scala.Unit = js.native
+  def getFriendCloudStorage(param: wegameDashApiLib.Anon_CompleteFail): scala.Unit = js.native
   /**
     * 在小游戏是通过群分享卡片打开的情况下，可以通过调用该接口获取群同玩成员的游戏数据。该接口只可在开放数据域下使用。
     */
-  def getGroupCloudStorage(param: wegameDashApiLib.Anon_FailSuccess): scala.Unit = js.native
+  def getGroupCloudStorage(param: wegameDashApiLib.Anon_CompleteFailKeyListRes): scala.Unit = js.native
   def getLaunchOptionsSync(): wegameDashApiLib.wxNs.typesNs.LaunchOption = js.native
   // --位置
   /**
     * 获取当前的地理位置、速度。当用户离开小程序后，此接口无法调用；当用户点击“显示在聊天顶部”时，此接口可继续调用。
     */
-  def getLocation(param: wegameDashApiLib.Anon_AltitudeFail): scala.Unit = js.native
+  def getLocation(param: wegameDashApiLib.Anon_Altitude): scala.Unit = js.native
   // --菜单
   /**
     * 获取菜单按钮的布局置信息
@@ -165,7 +165,7 @@ object wxNsMembers extends js.Object {
   /**
     * 获取屏幕亮度
     */
-  def getScreenBrightness(cb: wegameDashApiLib.wxNs.typesNs.CallbacksWithType[wegameDashApiLib.Anon_ValueNumber]): scala.Unit = js.native
+  def getScreenBrightness(cb: wegameDashApiLib.wxNs.typesNs.CallbacksWithType[wegameDashApiLib.Anon_Value]): scala.Unit = js.native
   /**
     * 获取用户的当前设置。返回值中只会出现小程序已经向用户请求过的权限。
     */
@@ -174,7 +174,7 @@ object wxNsMembers extends js.Object {
   /**
     * 获取转发详细信息
     */
-  def getShareInfo(param: wegameDashApiLib.Anon_ShareTicketSuccess): scala.Unit = js.native
+  def getShareInfo(param: wegameDashApiLib.Anon_CompleteFailResShareTicket): scala.Unit = js.native
   /**
     * 只有开放数据域能调用，获取主域和开放数据域共享的 sharedCanvas
     */
@@ -208,7 +208,7 @@ object wxNsMembers extends js.Object {
   /**
     * 获取当前用户托管数据当中对应 key 的数据。该接口只可在开放数据域下使用
     */
-  def getUserCloudStorage(param: wegameDashApiLib.Anon_SuccessResKeyListComplete): scala.Unit = js.native
+  def getUserCloudStorage(param: wegameDashApiLib.Anon_CompleteFailKeyList): scala.Unit = js.native
   /**
     * 在无须用户授权的情况下，批量获取用户信息。该接口只在开放数据域下可用
     * 请注意！！旧版本的该接口已过期，微信不允许主动弹出授权框，旧版本API会被逐渐作废，请使用wx.createUserInfoButton或在隔离数据区取得用户信息
@@ -220,7 +220,7 @@ object wxNsMembers extends js.Object {
   /**
     * 获取用户过去三十天微信运动步数，需要先调用 wx.login 接口。需要用户授权 scope.werun。
     */
-  def getWeRunData(p: wegameDashApiLib.wxNs.typesNs.CallbacksWithType[wegameDashApiLib.Anon_EncryptedData]): scala.Unit = js.native
+  def getWeRunData(p: wegameDashApiLib.wxNs.typesNs.CallbacksWithType[wegameDashApiLib.Anon_EncryptedDataIv]): scala.Unit = js.native
   // --键盘
   def hideKeyboard(): scala.Unit = js.native
   /**
@@ -247,7 +247,7 @@ object wxNsMembers extends js.Object {
   /**
     * 触发分包加载，详见 分包加载
     */
-  def loadSubpackage(param: wegameDashApiLib.Anon_SuccessName): wegameDashApiLib.LoadSubpackageTask = js.native
+  def loadSubpackage(param: wegameDashApiLib.Anon_CompleteFailName): wegameDashApiLib.LoadSubpackageTask = js.native
   /**
     * 调用接口获取登录凭证（code）进而换取用户登录态信息，包括用户的唯一标识（openid） 及本次登录的 会话密钥（session_key）等。用户数据的加解密通讯需要依赖会话密钥完成。
     */
@@ -263,26 +263,26 @@ object wxNsMembers extends js.Object {
   /**
     * 取消监听横竖屏切换事件
     */
-  def offDeviceOrientationChange(callback: js.Function1[/* res */ wegameDashApiLib.Anon_Value, scala.Unit]): scala.Unit = js.native
-  def offError(cb: js.Function1[/* res */ wegameDashApiLib.Anon_Stack, scala.Unit]): scala.Unit = js.native
+  def offDeviceOrientationChange(callback: js.Function1[/* res */ wegameDashApiLib.Anon_ValueString, scala.Unit]): scala.Unit = js.native
+  def offError(cb: js.Function1[/* res */ wegameDashApiLib.Anon_MessageStack, scala.Unit]): scala.Unit = js.native
   def offHide(cb: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
     * 取消监听监听键盘收起的事件
     */
-  def offKeyboardComplete(callback: js.Function1[/* res */ wegameDashApiLib.Anon_Value, scala.Unit]): scala.Unit = js.native
+  def offKeyboardComplete(callback: js.Function1[/* res */ wegameDashApiLib.Anon_ValueString, scala.Unit]): scala.Unit = js.native
   /**
     * 取消监听用户点击键盘 Confirm 按钮时的事件
     */
-  def offKeyboardConfirm(callback: js.Function1[/* res */ wegameDashApiLib.Anon_Value, scala.Unit]): scala.Unit = js.native
+  def offKeyboardConfirm(callback: js.Function1[/* res */ wegameDashApiLib.Anon_ValueString, scala.Unit]): scala.Unit = js.native
   /**
     * 取消监听键盘输入事件
     */
-  def offKeyboardInput(callback: js.Function1[/* res */ wegameDashApiLib.Anon_Value, scala.Unit]): scala.Unit = js.native
+  def offKeyboardInput(callback: js.Function1[/* res */ wegameDashApiLib.Anon_ValueString, scala.Unit]): scala.Unit = js.native
   /**
     * 取消监听用户点击右上角菜单的“转发”按钮时触发的事件
     */
   def offShareAppMessage(cb: js.Function0[wegameDashApiLib.wxNs.typesNs.ShareOption]): scala.Unit = js.native
-  def offShow(cb: js.Function1[/* res */ wegameDashApiLib.Anon_ShareTicket, scala.Unit]): scala.Unit = js.native
+  def offShow(cb: js.Function1[/* res */ wegameDashApiLib.Anon_Query, scala.Unit]): scala.Unit = js.native
   def offTouchCancel(cb: js.Function1[/* res */ wegameDashApiLib.wxNs.typesNs.TouchData, scala.Unit]): scala.Unit = js.native
   def offTouchEnd(cb: js.Function1[/* res */ wegameDashApiLib.wxNs.typesNs.TouchData, scala.Unit]): scala.Unit = js.native
   def offTouchMove(cb: js.Function1[/* res */ wegameDashApiLib.wxNs.typesNs.TouchData, scala.Unit]): scala.Unit = js.native
@@ -290,12 +290,12 @@ object wxNsMembers extends js.Object {
   /**
     * 取消监听窗口尺寸变化事件
     */
-  def offWindowResize(cb: js.Function1[/* res */ wegameDashApiLib.Anon_WindowWidth, scala.Unit]): scala.Unit = js.native
+  def offWindowResize(cb: js.Function1[/* res */ wegameDashApiLib.Anon_WindowHeight, scala.Unit]): scala.Unit = js.native
   // --加速计
   /**
     * 监听加速度数据，频率：5次/秒，接口调用后会自动开始监听，可使用 wx.stopAccelerometer 停止监听。
     */
-  def onAccelerometerChange(cb: js.Function1[/* res */ wegameDashApiLib.Anon_Z, scala.Unit]): scala.Unit = js.native
+  def onAccelerometerChange(cb: js.Function1[/* res */ wegameDashApiLib.Anon_X, scala.Unit]): scala.Unit = js.native
   /**
     * 监听音频因为受到系统占用而被中断开始，以下场景会触发此事件：闹钟、电话、FaceTime 通话、微信语音聊天、微信视频聊天。此事件触发后，小程序内所有音频会暂停。
     */
@@ -314,27 +314,27 @@ object wxNsMembers extends js.Object {
   /**
     * 监听横竖屏切换事件
     */
-  def onDeviceOrientationChange(callback: js.Function1[/* res */ wegameDashApiLib.Anon_Value, scala.Unit]): scala.Unit = js.native
+  def onDeviceOrientationChange(callback: js.Function1[/* res */ wegameDashApiLib.Anon_ValueString, scala.Unit]): scala.Unit = js.native
   /**
     * 监听全局错误事件
     */
-  def onError(cb: js.Function1[/* res */ wegameDashApiLib.Anon_Stack, scala.Unit]): scala.Unit = js.native
+  def onError(cb: js.Function1[/* res */ wegameDashApiLib.Anon_MessageStack, scala.Unit]): scala.Unit = js.native
   def onHide(cb: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
     * 监听监听键盘收起的事件
     * @param callback.res.value 键盘输入的当前值
     */
-  def onKeyboardComplete(callback: js.Function1[/* res */ wegameDashApiLib.Anon_Value, scala.Unit]): scala.Unit = js.native
+  def onKeyboardComplete(callback: js.Function1[/* res */ wegameDashApiLib.Anon_ValueString, scala.Unit]): scala.Unit = js.native
   /**
     * 监听用户点击键盘 Confirm 按钮时的事件
     * @param callback.res.value 键盘输入的当前值
     */
-  def onKeyboardConfirm(callback: js.Function1[/* res */ wegameDashApiLib.Anon_Value, scala.Unit]): scala.Unit = js.native
+  def onKeyboardConfirm(callback: js.Function1[/* res */ wegameDashApiLib.Anon_ValueString, scala.Unit]): scala.Unit = js.native
   /**
     * 监听键盘输入事件
     * @param callback.res.value 键盘输入的当前值
     */
-  def onKeyboardInput(callback: js.Function1[/* res */ wegameDashApiLib.Anon_Value, scala.Unit]): scala.Unit = js.native
+  def onKeyboardInput(callback: js.Function1[/* res */ wegameDashApiLib.Anon_ValueString, scala.Unit]): scala.Unit = js.native
   /**
     * 监听内存不足告警
     * @param callback.res.level 内存告警等级，只有 Android 才有，对应系统宏定义:
@@ -354,7 +354,7 @@ object wxNsMembers extends js.Object {
     * 监听用户点击右上角菜单的“转发”按钮时触发的事件
     */
   def onShareAppMessage(cb: js.Function0[wegameDashApiLib.wxNs.typesNs.ShareOption]): scala.Unit = js.native
-  def onShow(cb: js.Function1[/* res */ wegameDashApiLib.Anon_ShareTicket, scala.Unit]): scala.Unit = js.native
+  def onShow(cb: js.Function1[/* res */ wegameDashApiLib.Anon_Query, scala.Unit]): scala.Unit = js.native
   /**
     * 监听WebSocket 连接关闭事件
     */
@@ -392,12 +392,12 @@ object wxNsMembers extends js.Object {
   /**
     * 监听窗口尺寸变化事件
     */
-  def onWindowResize(cb: js.Function1[/* res */ wegameDashApiLib.Anon_WindowWidth, scala.Unit]): scala.Unit = js.native
+  def onWindowResize(cb: js.Function1[/* res */ wegameDashApiLib.Anon_WindowHeight, scala.Unit]): scala.Unit = js.native
   // --客服消息
   /**
     * 进入客服会话，要求在用户发生过至少一次 touch 事件后才能调用。后台接入方式与小程序一致，详见 客服消息接入
     */
-  def openCustomerServiceConversation(param: wegameDashApiLib.Anon_ShowMessageCard): scala.Unit = js.native
+  def openCustomerServiceConversation(param: wegameDashApiLib.Anon_CompleteFailSendMessageImg): scala.Unit = js.native
   /**
     * 调起客户端小程序设置界面，返回用户设置的操作结果。设置界面只会出现小程序已经向用户请求过的权限。
     * @deprecated
@@ -406,7 +406,7 @@ object wxNsMembers extends js.Object {
   /**
     * 预览图片，调用之后会在新打开的页面中全屏预览传入的图片，预览的过程中用户可以进行保存图片、发送给朋友等操作
     */
-  def previewImage(param: wegameDashApiLib.Anon_Fail): scala.Unit = js.native
+  def previewImage(param: wegameDashApiLib.Anon_CompleteCurrent): scala.Unit = js.native
   /**
     * 从本地缓存中移除指定 key
     */
@@ -419,18 +419,18 @@ object wxNsMembers extends js.Object {
   /**
     * 删除用户托管数据当中对应 key 的数据。
     */
-  def removeUserCloudStorage(param: wegameDashApiLib.Anon_SuccessKeyList): scala.Unit = js.native
+  def removeUserCloudStorage(param: wegameDashApiLib.Anon_CompleteFailKeyListSuccess): scala.Unit = js.native
   // --发起请求
   def request(param: wegameDashApiLib.wxNs.typesNs.RequestParams): wegameDashApiLib.RequestTask = js.native
   // --虚拟支付
   /**
     * 发起米大师支付
     */
-  def requestMidasPayment(param: wegameDashApiLib.Anon_FailRes): scala.Unit = js.native
+  def requestMidasPayment(param: wegameDashApiLib.Anon_0): scala.Unit = js.native
   /**
     * 保存图片到系统相册。需要用户授权 scope.writePhotosAlbum
     */
-  def saveImageToPhotosAlbum(param: wegameDashApiLib.Anon_FilePathSuccess): scala.Unit = js.native
+  def saveImageToPhotosAlbum(param: wegameDashApiLib.Anon_CompleteFailFilePath): scala.Unit = js.native
   /**
     * 通过 WebSocket 连接发送数据，需要先 wx.connectSocket，并在 wx.onSocketOpen 回调之后才能发送。
     */
@@ -440,12 +440,12 @@ object wxNsMembers extends js.Object {
     */
   def setClipboardData(p: wegameDashApiLib.wxNs.typesNs.SetClipboardDataParams): scala.Unit = js.native
   // --调试
-  def setEnableDebug(p: wegameDashApiLib.Anon_Success): scala.Unit = js.native
+  def setEnableDebug(p: wegameDashApiLib.Anon_CompleteEnableDebug): scala.Unit = js.native
   /**
     * 设置是否保持常亮状态。仅在当前小程序生效，离开小程序后设置失效。
     */
   def setKeepScreenOn(p: wegameDashApiLib.wxNs.typesNs.SetKeepScreenOnParams): scala.Unit = js.native
-  def setMenuStyle(param: wegameDashApiLib.Anon_SuccessComplete): scala.Unit = js.native
+  def setMenuStyle(param: wegameDashApiLib.Anon_CompleteDark): scala.Unit = js.native
   /**
     * 可以修改渲染帧率。默认渲染帧率为 60 帧每秒。修改后，requestAnimationFrame 的回调频率会发生改变。
     * @param fps 帧率，有效范围 1 - 60。
@@ -459,7 +459,7 @@ object wxNsMembers extends js.Object {
   /**
     * 当在配置中设置 showStatusBarStyle 时，屏幕顶部会显示状态栏。此接口可以修改状态栏的样式。
     */
-  def setStatusBarStyle(param: wegameDashApiLib.Anon_SuccessCompleteFail): scala.Unit = js.native
+  def setStatusBarStyle(param: wegameDashApiLib.Anon_Black): scala.Unit = js.native
   /**
     * 将数据存储在本地缓存中指定的 key 中，会覆盖掉原来该 key 对应的内容。
     */
@@ -477,7 +477,7 @@ object wxNsMembers extends js.Object {
     *      > 上报的key-value列表当中每一项的key+value长度都不能超过1K(1024)字节。
     *      > 上报的key-value列表当中每一个key长度都不能超过128字节。
     */
-  def setUserCloudStorage(param: wegameDashApiLib.Anon_KVDataList): scala.Unit = js.native
+  def setUserCloudStorage(param: wegameDashApiLib.Anon_CompleteFailKVDataList): scala.Unit = js.native
   /**
     * 主动拉起转发，进入选择通讯录界面。
     */
@@ -485,30 +485,30 @@ object wxNsMembers extends js.Object {
   /**
     * 显示选择器
     */
-  def showActionSheet(params: wegameDashApiLib.Anon_FailSuccessComplete): scala.Unit = js.native
+  def showActionSheet(params: wegameDashApiLib.Anon_CompleteFailItemColor): scala.Unit = js.native
   /**
     * 显示键盘
     */
-  def showKeyboard(param: wegameDashApiLib.Anon_ConfirmType): scala.Unit = js.native
+  def showKeyboard(param: wegameDashApiLib.Anon_ConfirmHold): scala.Unit = js.native
   /**
     * 显示 loading 提示框, 需主动调用 wx.hideLoading 才能关闭提示框
     */
   def showLoading(): scala.Unit = js.native
-  def showLoading(prms: wegameDashApiLib.Anon_FailSuccessMask): scala.Unit = js.native
+  def showLoading(prms: wegameDashApiLib.Anon_CompleteFailMask): scala.Unit = js.native
   /**
     * 显示模态对话框
     */
-  def showModal(param: wegameDashApiLib.Anon_ShowCancel): scala.Unit = js.native
+  def showModal(param: wegameDashApiLib.Anon_CancelColor): scala.Unit = js.native
   /**
     * 显示当前页面的转发按钮
     */
   def showShareMenu(): scala.Unit = js.native
-  def showShareMenu(param: wegameDashApiLib.Anon_WithShareTicket): scala.Unit = js.native
+  def showShareMenu(param: wegameDashApiLib.Anon_CompleteFailSuccess): scala.Unit = js.native
   // --交互
   /**
     * 显示消息提示框
     */
-  def showToast(param: wegameDashApiLib.Anon_Duration): scala.Unit = js.native
+  def showToast(param: wegameDashApiLib.Anon_CompleteDuration): scala.Unit = js.native
   /**
     * 开始监听加速度数据。
     */
@@ -535,13 +535,13 @@ object wxNsMembers extends js.Object {
   /**
     * 更新键盘，只有当键盘处于拉起状态时才会产生效果
     */
-  def updateKeyboard(param: wegameDashApiLib.Anon_SuccessValue): scala.Unit = js.native
+  def updateKeyboard(param: wegameDashApiLib.Anon_CompleteFailSuccessValue): scala.Unit = js.native
   /**
     * 更新转发属性
     */
-  def updateShareMenu(param: wegameDashApiLib.Anon_WithShareTicket): scala.Unit = js.native
+  def updateShareMenu(param: wegameDashApiLib.Anon_CompleteFailSuccess): scala.Unit = js.native
   // --上传
-  def uploadFile(param: wegameDashApiLib.Anon_FailName): wegameDashApiLib.UploadTask = js.native
+  def uploadFile(param: wegameDashApiLib.Anon_Complete): wegameDashApiLib.UploadTask = js.native
   /**
     * 使手机发生较长时间的振动（400 ms)
     */

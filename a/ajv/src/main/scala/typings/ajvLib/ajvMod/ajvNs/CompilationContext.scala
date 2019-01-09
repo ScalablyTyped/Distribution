@@ -16,7 +16,7 @@ trait CompilationContext extends js.Object {
   var schema: js.Any
   var schemaPath: java.lang.String
   var self: Ajv
-  var util: ajvLib.Anon_UnescapeJsonPointer
+  var util: ajvLib.Anon_Copy
   def validate(schema: js.Object): scala.Boolean
 }
 

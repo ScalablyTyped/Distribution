@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object bufferReadMod extends js.Object {
   def default(buffer: nodeLib.Buffer): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_bitwise/types.Bit */ _
   ] = js.native
   def default(buffer: nodeLib.Buffer, offset: scala.Double): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_bitwise/types.Bit */ _
   ] = js.native
   def default(buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_bitwise/types.Bit */ _
   ] = js.native
 }
 

@@ -19,7 +19,7 @@ trait StepsResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to write to project - INVALID_ARGUMENT - if the request is malformed - FAILED_PRECONDITION - if the
     * step is too large (more than 10Mib) - NOT_FOUND - if the containing Execution does not exist
     */
-  def create(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintHistoryIdProjectId): gapiDotClientLib.gapiNs.clientNs.Request[Step]
+  def create(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Step]
   /**
     * Gets a Step.
     *
@@ -28,13 +28,13 @@ trait StepsResource extends js.Object {
     * - PERMISSION_DENIED - if the user is not authorized to read project - INVALID_ARGUMENT - if the request is malformed - NOT_FOUND - if the Step does not
     * exist
     */
-  def get(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintHistoryIdProjectIdQuotaUserKeyUserIp): gapiDotClientLib.gapiNs.clientNs.Request[Step]
+  def get(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields): gapiDotClientLib.gapiNs.clientNs.Request[Step]
   /**
     * Retrieves a PerfMetricsSummary.
     *
     * May return any of the following error code(s): - NOT_FOUND - The specified PerfMetricsSummary does not exist
     */
-  def getPerfMetricsSummary(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintHistoryIdProjectIdQuotaUserKeyUserIp): gapiDotClientLib.gapiNs.clientNs.Request[PerfMetricsSummary]
+  def getPerfMetricsSummary(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields): gapiDotClientLib.gapiNs.clientNs.Request[PerfMetricsSummary]
   /**
     * Lists Steps for a given Execution.
     *
@@ -46,7 +46,7 @@ trait StepsResource extends js.Object {
     * argument in the request happens to be invalid; e.g. if an attempt is made to list the children of a nonexistent Step - NOT_FOUND - if the containing
     * Execution does not exist
     */
-  def list(request: gapiDotClientDotToolresultsLib.Anon_PageSizePrettyPrintHistoryIdProjectId): gapiDotClientLib.gapiNs.clientNs.Request[ListStepsResponse]
+  def list(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListStepsResponse]
   /**
     * Updates an existing Step with the supplied partial entity.
     *
@@ -57,7 +57,7 @@ trait StepsResource extends js.Object {
     * containing Execution does not exist
     */
   def patch(
-    request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintHistoryIdProjectIdQuotaUserKeyUserIpOauthtoken
+    request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPrettyPrintProjectId
   ): gapiDotClientLib.gapiNs.clientNs.Request[Step]
   /**
     * Publish xml files to an existing Step.
@@ -68,6 +68,6 @@ trait StepsResource extends js.Object {
     * requested state transition is illegal, e.g try to upload a duplicate xml file or a file too large. - NOT_FOUND - if the containing Execution does not
     * exist
     */
-  def publishXunitXmlFiles(request: gapiDotClientDotToolresultsLib.Anon_PrettyPrintHistoryIdProjectIdQuotaUserKeyUserIp): gapiDotClientLib.gapiNs.clientNs.Request[Step]
+  def publishXunitXmlFiles(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFields): gapiDotClientLib.gapiNs.clientNs.Request[Step]
 }
 

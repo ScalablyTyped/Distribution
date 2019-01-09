@@ -199,8 +199,8 @@ object viewNs extends js.Object {
     /* protected */ def _clone(): Node = js.native
     def _fireChange(`type`: ChangeType, node: Node): scala.Unit = js.native
     /* protected */ def _remove(): scala.Unit = js.native
-    def getAncestors(options: atCkeditorCkeditor5DashEngineLib.Anon_ParentFirstIncludeSelfBoolean): js.Array[Element | DocumentFragment] = js.native
-    def getCommonAncestor(node: Node, options: atCkeditorCkeditor5DashEngineLib.Anon_IncludeSelfBoolean): Element | DocumentFragment | scala.Null = js.native
+    def getAncestors(options: atCkeditorCkeditor5DashEngineLib.Anon_IncludeSelfParentFirstBoolean): js.Array[Element | DocumentFragment] = js.native
+    def getCommonAncestor(node: Node, options: atCkeditorCkeditor5DashEngineLib.Anon_IncludeSelfBooleanOptional): Element | DocumentFragment | scala.Null = js.native
     def getPath(): js.Array[scala.Double] = js.native
     def is(`type`: java.lang.String, name: java.lang.String): scala.Boolean = js.native
     def isAfter(node: Node): scala.Boolean = js.native
@@ -267,7 +267,7 @@ object viewNs extends js.Object {
     val parent: Element | DocumentFragment | scala.Null = js.native
     val root: Node | DocumentFragment = js.native
     val textNode: Text = js.native
-    def getAncestors(options: atCkeditorCkeditor5DashEngineLib.Anon_ParentFirstIncludeSelf): js.Array[Text | Element | DocumentFragment] = js.native
+    def getAncestors(options: atCkeditorCkeditor5DashEngineLib.Anon_IncludeSelfParentFirst): js.Array[Text | Element | DocumentFragment] = js.native
     def is(`type`: java.lang.String): scala.Boolean = js.native
     @JSName("is")
     def is_textProxy(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.textProxy): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.view.TextProxy */ scala.Boolean = js.native
@@ -276,7 +276,7 @@ object viewNs extends js.Object {
   // engine/view/treewalker
   @js.native
   class TreeWalker protected () extends js.Object {
-    def this(options: atCkeditorCkeditor5DashEngineLib.Anon_SingleCharactersBoundaries) = this()
+    def this(options: atCkeditorCkeditor5DashEngineLib.Anon_Boundaries) = this()
     val boundaries: Range = js.native
     val direction: TreeWalkerDirection = js.native
     val ignoreElementEnd: scala.Boolean = js.native
@@ -442,10 +442,13 @@ object viewNs extends js.Object {
   
   type ChangeType = atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.children | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.attributes | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.text
   // engine/view/elementdefinition
-  type ElementDefinition = java.lang.String | atCkeditorCkeditor5DashEngineLib.Anon_NamePriority
+  type ElementDefinition = java.lang.String | atCkeditorCkeditor5DashEngineLib.Anon_Attributes
   // engine/view/item
   type Item = Node | TextProxy
-  type MatcherPattern = (js.Function1[/* element */ Element, scala.Null | atCkeditorCkeditor5DashEngineLib.Anon_Name]) | java.lang.String | stdLib.RegExp | atCkeditorCkeditor5DashEngineLib.Anon_Classes
+  type MatcherPattern = (js.Function1[
+    /* element */ Element, 
+    scala.Null | atCkeditorCkeditor5DashEngineLib.Anon_Attribute
+  ]) | java.lang.String | stdLib.RegExp | atCkeditorCkeditor5DashEngineLib.Anon_AttributesClasses
   type PositionRelation = atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.before | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.after | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.same | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.different
   type TreeWalkerDirection = atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.forward | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.backward
   type TreeWalkerValueType = atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.elementStart | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.elementEnd | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.text

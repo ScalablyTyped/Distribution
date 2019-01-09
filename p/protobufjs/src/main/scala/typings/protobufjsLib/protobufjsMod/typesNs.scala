@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object typesNs extends js.Object {
   /** Basic type wire types. */
-  val basic: protobufjsLib.Anon_FloatUint32Fixed32 = js.native
+  val basic: protobufjsLib.Anon_Bool = js.native
   /** Basic type defaults. */
-  val defaults: protobufjsLib.Anon_Float = js.native
+  val defaults: protobufjsLib.Anon_BoolBytes = js.native
   /** Basic long type wire types. */
-  val long: protobufjsLib.Anon_Sfixed64 = js.native
+  val long: protobufjsLib.Anon_Fixed64 = js.native
   /** Allowed types for map keys with their associated wire type. */
-  val mapKey: protobufjsLib.Anon_Uint32 = js.native
+  val mapKey: protobufjsLib.Anon_BoolFixed32 = js.native
   /** Allowed types for packed repeated fields with their associated wire type. */
-  val packed: protobufjsLib.Anon_FloatUint32 = js.native
+  val packed: protobufjsLib.Anon_BoolDouble = js.native
 }
 

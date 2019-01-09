@@ -37,7 +37,7 @@ trait TouchBackendOptions extends js.Object {
     * the user to scroll in a particular direction instead of dragging. Degrees move clockwise, 0/360 pointing to the
     * left. Default: undefined
     */
-  var scrollAngleRanges: js.UndefOr[js.Array[reactDashDndDashTouchDashBackendLib.Anon_Start]] = js.undefined
+  var scrollAngleRanges: js.UndefOr[js.Array[reactDashDndDashTouchDashBackendLib.Anon_End]] = js.undefined
   /**
     * Specifies the pixel distance moved before a drag is signaled. Default 0.
     */

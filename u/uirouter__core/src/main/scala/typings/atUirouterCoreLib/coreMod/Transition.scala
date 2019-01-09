@@ -28,11 +28,6 @@ class Transition protected ()
 @js.native
 object Transition extends js.Object {
   /** @hidden */
-  var diToken: org.scalablytyped.runtime.Instantiable3[
-    /* fromPath */ js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode], 
-    /* targetState */ atUirouterCoreLib.libStateTargetStateMod.TargetState, 
-    /* router */ atUirouterCoreLib.libRouterMod.UIRouter, 
-    atUirouterCoreLib.libTransitionTransitionMod.Transition
-  ] = js.native
+  var diToken: atUirouterCoreLib.Anon_DiToken = js.native
 }
 

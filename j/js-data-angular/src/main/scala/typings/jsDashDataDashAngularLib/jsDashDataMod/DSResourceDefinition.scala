@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DSResourceDefinition[T] extends js.Object {
   def bindAll(
-    params: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify DSFilterParams */ js.Any,
+    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
     scope: angularLib.angularMod.angularNs.IScope,
     expr: java.lang.String
   ): angularLib.angularMod.Global.Function = js.native
   def bindAll(
-    params: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify DSFilterParams */ js.Any,
+    params: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSFilterParams */ js.Any,
     scope: angularLib.angularMod.angularNs.IScope,
     expr: java.lang.String,
     cb: js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify DSError */ /* err */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
       /* items */ js.Array[
-        T with (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify DSInstanceShorthands<T> */ js.Any)
+        T with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any)
       ], 
       scala.Unit
     ]
@@ -30,8 +30,8 @@ trait DSResourceDefinition[T] extends js.Object {
     scope: angularLib.angularMod.angularNs.IScope,
     expr: java.lang.String,
     cb: js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify DSError */ /* err */ js.Any, 
-      /* item */ T with (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
+      /* item */ T with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
       scala.Unit
     ]
   ): angularLib.angularMod.Global.Function = js.native
@@ -41,8 +41,8 @@ trait DSResourceDefinition[T] extends js.Object {
     scope: angularLib.angularMod.angularNs.IScope,
     expr: java.lang.String,
     cb: js.Function2[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify DSError */ /* err */ js.Any, 
-      /* item */ T with (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
+      /* item */ T with (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
       scala.Unit
     ]
   ): angularLib.angularMod.Global.Function = js.native

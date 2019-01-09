@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Col")
 @js.native
 class Col ()
-  extends Component[reactDashOnsenuiLib.Anon_Width, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_Bottom, js.Any]
 

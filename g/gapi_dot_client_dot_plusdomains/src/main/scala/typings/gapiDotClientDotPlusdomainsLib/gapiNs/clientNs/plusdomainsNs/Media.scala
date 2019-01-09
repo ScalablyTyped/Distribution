@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Media extends js.Object {
   /** The person who uploaded this media. */
-  var author: js.UndefOr[gapiDotClientDotPlusdomainsLib.Anon_DisplayNameUrlImageId] = js.undefined
+  var author: js.UndefOr[gapiDotClientDotPlusdomainsLib.Anon_DisplayName] = js.undefined
   /** The display name for this media. */
   var displayName: js.UndefOr[java.lang.String] = js.undefined
   /** ETag of this response for caching purposes. */

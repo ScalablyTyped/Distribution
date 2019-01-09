@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait SecurityProfile extends js.Object {
   var created: java.lang.String
-  var credentials: ionicLib.Anon_Ios
+  var credentials: ionicLib.Anon_Android
   var name: java.lang.String
   var tag: java.lang.String
   var `type`: ionicLib.ionicLibStrings.development | ionicLib.ionicLibStrings.production

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("natural", JSImport.Namespace)
 @js.native
 object naturalModMembers extends js.Object {
-  var CountInflector: naturalLib.Anon_Nth = js.native
-  var DoubleMetaphone: naturalLib.Anon_CompareStringA = js.native
+  var CountInflector: naturalLib.Anon_I = js.native
+  var DoubleMetaphone: naturalLib.Anon_CompareMaxLength = js.native
   var LancasterStemmer: naturalLib.Anon_Stem = js.native
   var Metaphone: naturalLib.Anon_Compare = js.native
   var NGrams: naturalLib.Anon_Bigrams = js.native

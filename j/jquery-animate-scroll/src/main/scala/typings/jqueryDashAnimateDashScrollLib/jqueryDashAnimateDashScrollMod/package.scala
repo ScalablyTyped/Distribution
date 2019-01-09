@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jqueryDashAnimateDashScrollMod {
-  type Options = stdLib.Partial[jqueryDashAnimateDashScrollLib.Anon_Offset]
+  type Options = stdLib.Partial[jqueryDashAnimateDashScrollLib.Anon_Container]
 }

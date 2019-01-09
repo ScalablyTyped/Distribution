@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<react.react.AnchorHTMLAttributes<react.HTMLElement> & react.react.ButtonHTMLAttributes<react.HTMLElement>, std.Exclude<keyof react.react.AnchorHTMLAttributes<react.HTMLElement> & react.react.ButtonHTMLAttributes<react.HTMLElement>, 'classes' | never>>, @material-ui/core.@material-ui/core.StandardProps<react.react.AnchorHTMLAttributes<react.HTMLElement> & react.react.ButtonHTMLAttributes<react.HTMLElement>, @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseClassKey, never>) */ trait ButtonBaseProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.AnchorHTMLAttributes<react.HTMLElement> & react.react.ButtonHTMLAttributes<react.HTMLElement>, 'classes' | never> ]: react.react.AnchorHTMLAttributes<react.HTMLElement> & react.react.ButtonHTMLAttributes<react.HTMLElement>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.AnchorHTMLAttributes<react.HTMLElement> & react.react.ButtonHTMLAttributes<react.HTMLElement>, @material-ui/core.@material-ui/core/ButtonBase/ButtonBase.ButtonBaseClassKey, never>) */ trait ButtonBaseProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ButtonBaseClassKey] {
   var TouchRippleProps: js.UndefOr[
     stdLib.Partial[atMaterialDashUiCoreLib.buttonbaseTouchRippleMod.TouchRippleProps]

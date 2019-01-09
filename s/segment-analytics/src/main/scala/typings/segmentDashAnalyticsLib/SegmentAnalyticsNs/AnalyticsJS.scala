@@ -31,7 +31,7 @@ trait AnalyticsJS extends js.Object {
     console. */
   def debug(): scala.Unit = js.native
   def debug(state: scala.Boolean): scala.Unit = js.native
-  def group(): segmentDashAnalyticsLib.Anon_Traits = js.native
+  def group(): segmentDashAnalyticsLib.Anon_Id = js.native
   /* The group method associates an individual user with a group. The group
     can a company, organization, account, project, team or any other name
     you came up with for the same concept. */
@@ -224,6 +224,6 @@ trait AnalyticsJS extends js.Object {
   ): scala.Unit = js.native
   /* Once Analytics.js loaded, you can retrieve information about the
     currently identified user or group like their id and traits. */
-  def user(): segmentDashAnalyticsLib.Anon_Logout = js.native
+  def user(): segmentDashAnalyticsLib.Anon_AnonymousId = js.native
 }
 

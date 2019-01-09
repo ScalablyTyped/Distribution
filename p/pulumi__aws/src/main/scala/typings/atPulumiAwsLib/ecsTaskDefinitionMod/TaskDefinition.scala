@@ -62,7 +62,7 @@ class TaskDefinition protected ()
   /**
     * A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
     */
-  val placementConstraints: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ExpressionType]]] = js.native
+  val placementConstraints: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Expression]]] = js.native
   /**
     * A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
     */
@@ -82,7 +82,7 @@ class TaskDefinition protected ()
   /**
     * A set of volume blocks that containers in your task may use.
     */
-  val volumes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DockerVolumeConfigurationHostPath]]] = js.native
+  val volumes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DockerVolumeConfiguration]]] = js.native
 }
 
 @JSImport("@pulumi/aws/ecs/taskDefinition", "TaskDefinition")

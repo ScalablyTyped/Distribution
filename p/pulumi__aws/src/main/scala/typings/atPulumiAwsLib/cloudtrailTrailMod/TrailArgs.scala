@@ -30,7 +30,11 @@ trait TrailArgs extends js.Object {
     * Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
     */
   val eventSelectors: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ReadWriteType]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DataResourcesIncludeManagementEvents]
+      ]
+    ]
   ] = js.undefined
   /**
     * Specifies whether the trail is publishing events

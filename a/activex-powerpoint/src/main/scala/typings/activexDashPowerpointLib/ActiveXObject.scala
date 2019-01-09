@@ -56,7 +56,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashPowerpointLib.PowerPointNs.Application, 
-      /* parameter */ Anon_PresCancel, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -69,7 +69,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashPowerpointLib.PowerPointNs.Application, 
-      /* parameter */ Anon_PresCancel, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -166,7 +166,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashPowerpointLib.PowerPointNs.Application, 
-      /* parameter */ Anon_Cancel, 
+      /* parameter */ Anon_CancelProtViewWindow, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -179,7 +179,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashPowerpointLib.PowerPointNs.Application, 
-      /* parameter */ Anon_CancelProtViewWindow, 
+      /* parameter */ Anon_CancelProtViewWindowBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -252,7 +252,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashPowerpointLib.PowerPointNs.Application, 
-      /* parameter */ Anon_WnNEffect, 
+      /* parameter */ Anon_NEffect, 
       scala.Unit
     ]
   ): scala.Unit = js.native

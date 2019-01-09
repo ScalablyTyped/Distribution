@@ -10,7 +10,7 @@ trait DrawerNavigatorConfig
      with DrawerViewConfig {
   var containerConfig: js.UndefOr[js.Any] = js.undefined
   @JSName("contentOptions")
-  var contentOptions_DrawerNavigatorConfig: js.UndefOr[reactDashNavigationLib.Anon_LabelStyle] = js.undefined
+  var contentOptions_DrawerNavigatorConfig: js.UndefOr[reactDashNavigationLib.Anon_ActiveBackgroundColor] = js.undefined
   var drawerLockMode: js.UndefOr[DrawerLockMode] = js.undefined
 }
 

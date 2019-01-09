@@ -28,7 +28,7 @@ trait UnionPay extends js.Object {
     *   // ...
     * });
     */
-  def create(options: braintreeDashWebLib.Anon_Client_64751587, callback: callback): scala.Unit = js.native
+  def create(options: braintreeDashWebLib.Anon_Client, callback: callback): scala.Unit = js.native
   /**
     * Enrolls a UnionPay card. Use {@link UnionPay#fetchCapabilities|fetchCapabilities} to determine if the SMS enrollment process is required.
     * @public
@@ -90,7 +90,7 @@ trait UnionPay extends js.Object {
     * });
     * @returns {void}
     */
-  def enroll(options: braintreeDashWebLib.Anon_HostedFields, callback: callback): scala.Unit = js.native
+  def enroll(options: braintreeDashWebLib.Anon_CardHostedFields, callback: callback): scala.Unit = js.native
   /**
     * Fetches the capabilities of a card, including whether or not the SMS enrollment process is required.
     * @public
@@ -162,7 +162,7 @@ trait UnionPay extends js.Object {
     * });
     * @returns {void}
     */
-  def fetchCapabilities(options: braintreeDashWebLib.Anon_HostedFieldsCard, callback: callback): scala.Unit = js.native
+  def fetchCapabilities(options: braintreeDashWebLib.Anon_Card, callback: callback): scala.Unit = js.native
   /**
     * Cleanly tear down anything set up by {@link module:braintree-web/unionpay.create|create}. This only needs to be called when using UnionPay with Hosted Fields.
     * @public
@@ -226,6 +226,6 @@ trait UnionPay extends js.Object {
     * });
     * @returns {void}
     */
-  def tokenize(options: braintreeDashWebLib.Anon_SmsCode, callback: callback): scala.Unit = js.native
+  def tokenize(options: braintreeDashWebLib.Anon_CardEnrollmentId, callback: callback): scala.Unit = js.native
 }
 

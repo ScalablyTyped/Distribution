@@ -10,7 +10,9 @@ trait TriggerState extends js.Object {
     * List of actions initiated by this trigger when it fires. Defined below.
     */
   val actions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ArgumentsKey]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ArgumentsJobName]]
+    ]
   ] = js.undefined
   /**
     * A description of the new trigger.
@@ -27,7 +29,7 @@ trait TriggerState extends js.Object {
   /**
     * A predicate to specify when the new trigger should fire. Required when trigger type is `CONDITIONAL`. Defined below.
     */
-  val predicate: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_LogicalConditions]] = js.undefined
+  val predicate: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ConditionsLogical]] = js.undefined
   /**
     * A cron expression used to specify the schedule. [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html)
     */

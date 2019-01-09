@@ -13,7 +13,7 @@ trait FtpFileSystem extends js.Object {
   var createReadStream: js.UndefOr[
     js.Function2[
       /* path */ java.lang.String, 
-      /* options */ js.UndefOr[ftpdLib.Anon_Flags], 
+      /* options */ js.UndefOr[ftpdLib.Anon_BufferSize], 
       nodeLib.fsMod.ReadStream
     ]
   ] = js.native
@@ -23,7 +23,7 @@ trait FtpFileSystem extends js.Object {
   var createWriteStream: js.UndefOr[
     js.Function2[
       /* path */ java.lang.String, 
-      /* options */ js.UndefOr[ftpdLib.Anon_EncodingString], 
+      /* options */ js.UndefOr[ftpdLib.Anon_Encoding], 
       nodeLib.fsMod.WriteStream
     ]
   ] = js.native
@@ -89,7 +89,7 @@ trait FtpFileSystem extends js.Object {
       scala.Unit
     ]) | (js.Function3[
       /* filename */ java.lang.String, 
-      /* options */ ftpdLib.Anon_Encoding, 
+      /* options */ ftpdLib.Anon_EncodingFlag, 
       /* callback */ js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ java.lang.String, scala.Unit], 
       scala.Unit
     ]) | (js.Function3[
@@ -115,13 +115,13 @@ trait FtpFileSystem extends js.Object {
     ]) | (js.Function4[
       /* filename */ java.lang.String, 
       /* data */ js.Any, 
-      /* options */ ftpdLib.Anon_EncodingMode, 
+      /* options */ ftpdLib.Anon_EncodingFlagMode, 
       /* callback */ js.UndefOr[js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]], 
       scala.Unit
     ]) | (js.Function4[
       /* filename */ java.lang.String, 
       /* data */ js.Any, 
-      /* options */ ftpdLib.Anon_EncodingModeFlag, 
+      /* options */ ftpdLib.Anon_EncodingFlagModeString, 
       /* callback */ js.UndefOr[js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit]], 
       scala.Unit
     ])

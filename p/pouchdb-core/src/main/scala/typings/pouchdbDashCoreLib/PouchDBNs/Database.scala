@@ -165,13 +165,13 @@ trait Database[Content /* <: js.Object */]
   def getAttachment(
     docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
     attachmentId: pouchdbDashCoreLib.PouchDBNs.CoreNs.AttachmentId,
-    options: pouchdbDashCoreLib.Anon_Rev
+    options: pouchdbDashCoreLib.Anon_RevRevisionId
   ): js.Promise[pouchdbDashCoreLib.Blob | pouchdbDashCoreLib.Buffer] = js.native
   /** Get attachment data */
   def getAttachment(
     docId: pouchdbDashCoreLib.PouchDBNs.CoreNs.DocumentId,
     attachmentId: pouchdbDashCoreLib.PouchDBNs.CoreNs.AttachmentId,
-    options: pouchdbDashCoreLib.Anon_Rev,
+    options: pouchdbDashCoreLib.Anon_RevRevisionId,
     callback: pouchdbDashCoreLib.PouchDBNs.CoreNs.Callback[pouchdbDashCoreLib.Blob | pouchdbDashCoreLib.Buffer]
   ): scala.Unit = js.native
   /** Get database information */

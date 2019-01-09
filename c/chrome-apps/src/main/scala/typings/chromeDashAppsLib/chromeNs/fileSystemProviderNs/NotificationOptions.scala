@@ -13,11 +13,11 @@ trait NotificationOptions extends js.Object {
     * @see ChangeType
     */
   var changeType: chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_CHANGED, 
+    chromeDashAppsLib.Anon_CHANGEDDELETED, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHANGED[keyof chrome-apps.Anon_CHANGED] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHANGEDDELETED[keyof chrome-apps.Anon_CHANGEDDELETED] */ js.Any
     ]
   ]
   /** List of changes to entries within the observed directory (including the entry itself)  */

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class RingGeometry protected () extends Geometry {
   def this(innerRadius: js.UndefOr[scala.Double], outerRadius: js.UndefOr[scala.Double], thetaSegments: js.UndefOr[scala.Double], phiSegments: js.UndefOr[scala.Double], thetaStart: js.UndefOr[scala.Double], thetaLength: js.UndefOr[scala.Double]) = this()
-  var parameters: threeLib.Anon_ThetaLengthOuterRadius = js.native
+  var parameters: threeLib.Anon_InnerRadius = js.native
 }
 

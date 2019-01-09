@@ -131,7 +131,7 @@ class ChartDataLabels ()
   def load(): ChartDataLabels = js.native
   def load(option: java.lang.String): ChartDataLabels = js.native
   def load(option: js.Array[java.lang.String]): ChartDataLabels = js.native
-  def load(option: officeDashJsLib.Anon_Select): ChartDataLabels = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ChartDataLabels = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.ChartDataLabelsLoadOptions): ChartDataLabels = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartDataLabels): scala.Unit = js.native

@@ -66,15 +66,15 @@ class QueryManager[TStore] protected () extends js.Object {
   def generateQueryId(): java.lang.String = js.native
   def getCurrentQueryResult[T](
     observableQuery: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables]
-  ): apolloDashClientLib.Anon_Partial = js.native
+  ): apolloDashClientLib.Anon_Data = js.native
   def getCurrentQueryResult[T](
     observableQuery: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables],
     optimistic: scala.Boolean
-  ): apolloDashClientLib.Anon_Partial = js.native
+  ): apolloDashClientLib.Anon_Data = js.native
   def getQueryWithPreviousResult[T](
     queryIdOrObservable: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables]
-  ): apolloDashClientLib.Anon_PreviousResult = js.native
-  def getQueryWithPreviousResult[T](queryIdOrObservable: java.lang.String): apolloDashClientLib.Anon_PreviousResult = js.native
+  ): apolloDashClientLib.Anon_Document = js.native
+  def getQueryWithPreviousResult[T](queryIdOrObservable: java.lang.String): apolloDashClientLib.Anon_Document = js.native
   def mutate[T](
     hasMutationVariablesOptimisticResponseUpdateQueriesRefetchQueriesAwaitRefetchQueriesUpdateErrorPolicyFetchPolicyContext: apolloDashClientLib.coreWatchQueryOptionsMod.MutationOptions[
       org.scalablytyped.runtime.StringDictionary[_], 

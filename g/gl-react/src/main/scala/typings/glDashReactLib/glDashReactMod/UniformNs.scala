@@ -12,7 +12,7 @@ object UniformNs extends js.Object {
   val Resolution: java.lang.String = js.native
   def backbufferFrom(node: glDashReactLib.glDashReactMod.Bus): glDashReactLib.Anon_Node = js.native
   def backbufferFrom(node: glDashReactLib.glDashReactMod.Node): glDashReactLib.Anon_Node = js.native
-  def textureSize(obj: js.Any): glDashReactLib.Anon_Type = js.native
-  def textureSizeRatio(obj: js.Any): glDashReactLib.Anon_TypeObj = js.native
+  def textureSize(obj: js.Any): glDashReactLib.Anon_Obj = js.native
+  def textureSizeRatio(obj: js.Any): glDashReactLib.Anon_ObjRatio = js.native
 }
 

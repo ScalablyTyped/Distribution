@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Stream[T /* <: d3DashGeoLib.d3DashGeoMod.GeoTransformPrototype */] extends js.Object {
-  def stream(s: d3DashGeoLib.d3DashGeoMod.GeoStream): T with d3DashGeoLib.d3DashGeoMod.GeoStream
+trait Anon_Stream extends js.Object {
+  var stream: d3DashGeoLib.d3DashGeoMod.GeoStream
 }
 

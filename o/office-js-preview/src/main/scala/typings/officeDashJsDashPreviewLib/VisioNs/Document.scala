@@ -115,7 +115,7 @@ class Document ()
   def load(): Document = js.native
   def load(option: java.lang.String): Document = js.native
   def load(option: js.Array[java.lang.String]): Document = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Document = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Document = js.native
   def load(option: officeDashJsDashPreviewLib.VisioNs.InterfacesNs.DocumentLoadOptions): Document = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Document): scala.Unit = js.native

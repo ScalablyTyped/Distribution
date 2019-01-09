@@ -58,7 +58,7 @@ trait VirtualizedListWithoutRenderItemProps[ItemT] extends ScrollViewProps {
     */
   var getItemCount: js.UndefOr[js.Function1[/* data */ js.Any, scala.Double]] = js.undefined
   var getItemLayout: js.UndefOr[
-    js.Function2[/* data */ js.Any, /* index */ scala.Double, reactDashNativeLib.Anon_Length]
+    js.Function2[/* data */ js.Any, /* index */ scala.Double, reactDashNativeLib.Anon_Index]
   ] = js.undefined
   /**
     * How many items to render in the initial batch. This should be enough to fill the screen but not
@@ -99,15 +99,13 @@ trait VirtualizedListWithoutRenderItemProps[ItemT] extends ScrollViewProps {
     * Recommended action is to either compute your own offset and `scrollTo` it, or scroll as far
     * as possible and then try again after more items have been rendered.
     */
-  var onScrollToIndexFailed: js.UndefOr[
-    js.Function1[/* info */ reactDashNativeLib.Anon_HighestMeasuredFrameIndex, scala.Unit]
-  ] = js.undefined
+  var onScrollToIndexFailed: js.UndefOr[js.Function1[/* info */ reactDashNativeLib.Anon_AverageItemLength, scala.Unit]] = js.undefined
   /**
     * Called when the viewability of rows changes, as defined by the
     * `viewabilityConfig` prop.
     */
   var onViewableItemsChanged: js.UndefOr[
-    (js.Function1[/* info */ reactDashNativeLib.Anon_ViewableItems, scala.Unit]) | scala.Null
+    (js.Function1[/* info */ reactDashNativeLib.Anon_Changed, scala.Unit]) | scala.Null
   ] = js.undefined
   /**
     * Set this when offset is needed for the loading indicator to show correctly.

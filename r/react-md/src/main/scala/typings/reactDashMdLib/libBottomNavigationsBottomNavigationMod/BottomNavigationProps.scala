@@ -18,7 +18,7 @@ trait BottomNavigationProps
   var dynamic: js.UndefOr[scala.Boolean] = js.undefined
   var dynamicThreshold: js.UndefOr[scala.Double] = js.undefined
   var lastChild: js.UndefOr[scala.Boolean] = js.undefined
-  var links: js.Array[reactDashMdLib.Anon_KeyIconClassName]
+  var links: js.Array[reactDashMdLib.Anon_Component]
   var onNavChange: js.UndefOr[
     js.Function2[
       /* activeIndex */ scala.Double, 

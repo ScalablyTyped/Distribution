@@ -12,11 +12,11 @@ trait PickListProps extends js.Object {
     js.Function1[/* item */ js.Any, js.UndefOr[reactLib.reactMod.Global.JSXNs.Element]]
   ] = js.undefined
   var metaKeySelection: js.UndefOr[scala.Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_Target, scala.Unit]] = js.undefined
-  var onMoveAllToSource: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEvent, scala.Unit]] = js.undefined
-  var onMoveAllToTarget: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEvent, scala.Unit]] = js.undefined
-  var onMoveToSource: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEvent, scala.Unit]] = js.undefined
-  var onMoveToTarget: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEvent, scala.Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_EventSource, scala.Unit]] = js.undefined
+  var onMoveAllToSource: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
+  var onMoveAllToTarget: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
+  var onMoveToSource: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
+  var onMoveToTarget: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
   var responsive: js.UndefOr[scala.Boolean] = js.undefined
   var showSourceControls: js.UndefOr[scala.Boolean] = js.undefined
   var showTargetControls: js.UndefOr[scala.Boolean] = js.undefined

@@ -22,10 +22,10 @@ class GridFSBucket protected () extends js.Object {
   def find(filter: js.Object, options: GridFSBucketFindOptions): Cursor[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/GridFSBucket.html#openDownloadStream */
   def openDownloadStream(id: bsonLib.bsonMod.ObjectID): GridFSBucketReadStream = js.native
-  def openDownloadStream(id: bsonLib.bsonMod.ObjectID, options: mongodbLib.Anon_Start): GridFSBucketReadStream = js.native
+  def openDownloadStream(id: bsonLib.bsonMod.ObjectID, options: mongodbLib.Anon_End): GridFSBucketReadStream = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/GridFSBucket.html#openDownloadStreamByName */
   def openDownloadStreamByName(filename: java.lang.String): GridFSBucketReadStream = js.native
-  def openDownloadStreamByName(filename: java.lang.String, options: mongodbLib.Anon_Revision): GridFSBucketReadStream = js.native
+  def openDownloadStreamByName(filename: java.lang.String, options: mongodbLib.Anon_EndRevision): GridFSBucketReadStream = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/GridFSBucket.html#openUploadStream */
   def openUploadStream(filename: java.lang.String): GridFSBucketWriteStream = js.native
   def openUploadStream(filename: java.lang.String, options: GridFSBucketOpenUploadStreamOptions): GridFSBucketWriteStream = js.native

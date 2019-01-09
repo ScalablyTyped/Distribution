@@ -24,6 +24,6 @@ object helpersNs extends js.Object {
     *                                message.
     */
   def generateClass(name: java.lang.String): commonDashErrorsLib.commonDashErrorsMod.ErrorConstructor = js.native
-  def generateClass(name: java.lang.String, options: commonDashErrorsLib.Anon_GenerateMessage): commonDashErrorsLib.commonDashErrorsMod.ErrorConstructor = js.native
+  def generateClass(name: java.lang.String, options: commonDashErrorsLib.Anon_Args): commonDashErrorsLib.commonDashErrorsMod.ErrorConstructor = js.native
 }
 

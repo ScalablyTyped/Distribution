@@ -45,7 +45,7 @@ trait EnhancerOptions extends js.Object {
     * Note that except `true`/`false`, `import` and `export` can be set as `custom` (which is by default for Redux enhancer), meaning that the importing/exporting occurs on the client side.
     * Otherwise, you'll get/set the data right from the monitor part.
     */
-  var features: js.UndefOr[reduxDashDevtoolsDashExtensionLib.Anon_Test] = js.undefined
+  var features: js.UndefOr[reduxDashDevtoolsDashExtensionLib.Anon_Custom] = js.undefined
   /**
     * if more than one action is dispatched in the indicated interval, all new actions will be collected and sent at once.
     * It is the joint between performance and speed. When set to `0`, all actions will be sent instantly.
@@ -88,7 +88,7 @@ trait EnhancerOptions extends js.Object {
     *   For `function` key you can also specify a custom function which handles serialization.
     *   See [`jsan`](https://github.com/kolodny/jsan) for more details.
     */
-  var serialize: js.UndefOr[scala.Boolean | reduxDashDevtoolsDashExtensionLib.Anon_Regex] = js.undefined
+  var serialize: js.UndefOr[scala.Boolean | reduxDashDevtoolsDashExtensionLib.Anon_Date] = js.undefined
   /**
     * if specified as `true`, whenever there's an exception in reducers, the monitors will show the error message, and next actions will not be dispatched.
     *

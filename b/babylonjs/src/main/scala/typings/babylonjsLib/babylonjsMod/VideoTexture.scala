@@ -61,7 +61,7 @@ object VideoTexture extends js.Object {
   def CreateFromWebCam(
     scene: babylonjsLib.BABYLONNs.Scene,
     onReady: js.Function1[/* videoTexture */ this.type, scala.Unit],
-    constraints: babylonjsLib.Anon_MinHeightMinWidth
+    constraints: babylonjsLib.Anon_DeviceId
   ): scala.Unit = js.native
 }
 

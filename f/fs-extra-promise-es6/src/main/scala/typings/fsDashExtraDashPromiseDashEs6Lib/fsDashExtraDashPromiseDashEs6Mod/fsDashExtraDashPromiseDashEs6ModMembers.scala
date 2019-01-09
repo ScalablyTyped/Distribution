@@ -99,9 +99,9 @@ object fsDashExtraDashPromiseDashEs6ModMembers extends js.Object {
   def createReadStream(path: nodeLib.Buffer): ReadStream = js.native
   def createReadStream(path: nodeLib.Buffer, options: fsDashExtraDashPromiseDashEs6Lib.Anon_AutoClose): ReadStream = js.native
   def createWriteStream(path: java.lang.String): WriteStream = js.native
-  def createWriteStream(path: java.lang.String, options: fsDashExtraDashPromiseDashEs6Lib.Anon_Fd): WriteStream = js.native
+  def createWriteStream(path: java.lang.String, options: fsDashExtraDashPromiseDashEs6Lib.Anon_Encoding): WriteStream = js.native
   def createWriteStream(path: nodeLib.Buffer): WriteStream = js.native
-  def createWriteStream(path: nodeLib.Buffer, options: fsDashExtraDashPromiseDashEs6Lib.Anon_Fd): WriteStream = js.native
+  def createWriteStream(path: nodeLib.Buffer, options: fsDashExtraDashPromiseDashEs6Lib.Anon_Encoding): WriteStream = js.native
   def ensureDir(path: java.lang.String, cb: js.Function1[/* err */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
   def ensureDirAsync(path: java.lang.String): js.Promise[scala.Unit] = js.native
   def ensureDirSync(path: java.lang.String): scala.Unit = js.native
@@ -408,11 +408,11 @@ object fsDashExtraDashPromiseDashEs6ModMembers extends js.Object {
     options: fsDashExtraDashPromiseDashEs6Lib.Anon_Persistent,
     listener: js.Function2[/* event */ java.lang.String, /* filename */ java.lang.String, _]
   ): FSWatcher = js.native
-  def watchFile(filename: java.lang.String, listener: fsDashExtraDashPromiseDashEs6Lib.Anon_Prev): scala.Unit = js.native
+  def watchFile(filename: java.lang.String, listener: fsDashExtraDashPromiseDashEs6Lib.Anon_Curr): scala.Unit = js.native
   def watchFile(
     filename: java.lang.String,
-    options: fsDashExtraDashPromiseDashEs6Lib.Anon_PersistentInterval,
-    listener: fsDashExtraDashPromiseDashEs6Lib.Anon_Prev
+    options: fsDashExtraDashPromiseDashEs6Lib.Anon_Interval,
+    listener: fsDashExtraDashPromiseDashEs6Lib.Anon_Curr
   ): scala.Unit = js.native
   def write(
     fd: scala.Double,

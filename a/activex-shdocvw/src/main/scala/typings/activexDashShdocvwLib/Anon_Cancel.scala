@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Cancel extends js.Object {
-  val ActiveDocument: scala.Boolean
   var Cancel: scala.Boolean
+  val Frame: js.Any
+  val StatusCode: js.Any
+  val URL: js.Any
+  val pDisp: js.Any
 }
 

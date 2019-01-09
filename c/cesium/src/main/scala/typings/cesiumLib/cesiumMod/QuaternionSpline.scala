@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class QuaternionSpline protected ()
   extends cesiumLib.cesiumMod.CesiumNs.QuaternionSpline {
-  def this(options: cesiumLib.Anon_PointsFirstInnerQuadrangle) = this()
+  def this(options: cesiumLib.Anon_FirstInnerQuadrangle) = this()
 }
 

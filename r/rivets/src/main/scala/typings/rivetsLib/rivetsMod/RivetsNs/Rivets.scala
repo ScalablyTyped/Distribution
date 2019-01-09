@@ -30,7 +30,7 @@ trait Rivets extends js.Object {
   def bind(element: stdLib.HTMLElement, models: js.Object): View = js.native
   def bind(element: stdLib.HTMLElement, models: js.Object, options: js.Object): View = js.native
   def configure(): scala.Unit = js.native
-  def configure(options: rivetsLib.Anon_Prefix): scala.Unit = js.native
+  def configure(options: rivetsLib.Anon_Biding): scala.Unit = js.native
   def handler(context: js.Any, ev: stdLib.Event, biding: js.Any): scala.Unit = js.native
 }
 

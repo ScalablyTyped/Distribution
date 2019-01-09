@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object requestModMembers extends js.Object {
   def Request(options: jpmLib.Anon_Anonymous): Request = js.native
-  def Request[ResponseType](options: jpmLib.Anon_AnonymousUrl[ResponseType]): STRequest[ResponseType] = js.native
+  def Request[ResponseType](options: jpmLib.Anon_AnonymousContent[ResponseType]): STRequest[ResponseType] = js.native
 }
 

@@ -22,8 +22,8 @@ trait Compilation
   var compiler: webpackLib.webpackMod.webpackNs.Compiler = js.native
   var contextDependencies: webpackLib.webpackMod.webpackNs.SortableSet[java.lang.String] = js.native
   var contextTimestamps: stdLib.Map[java.lang.String, scala.Double] = js.native
-  var dependencyFactories: stdLib.Map[org.scalablytyped.runtime.Instantiable0[Dependency], tapableLib.tapableMod.Tapable] = js.native
-  var dependencyTemplates: stdLib.Map[org.scalablytyped.runtime.Instantiable0[Dependency], tapableLib.tapableMod.Tapable] = js.native
+  var dependencyFactories: stdLib.Map[webpackLib.Anon_A, tapableLib.tapableMod.Tapable] = js.native
+  var dependencyTemplates: stdLib.Map[webpackLib.Anon_A, tapableLib.tapableMod.Tapable] = js.native
   var entries: js.Array[_] = js.native
   var entrypoints: stdLib.Map[_, _] = js.native
   var errors: js.Array[_] = js.native
@@ -35,7 +35,7 @@ trait Compilation
   var inputFileSystem: js.Any = js.native
   var mainTemplate: MainTemplate = js.native
   var missingDependencies: webpackLib.webpackMod.webpackNs.SortableSet[java.lang.String] = js.native
-  var moduleTemplates: webpackLib.Anon_Webassembly = js.native
+  var moduleTemplates: webpackLib.Anon_Javascript = js.native
   var modules: js.Array[_] = js.native
   var namedChunkGroups: stdLib.Map[_, _] = js.native
   var namedChunks: stdLib.Map[_, _] = js.native
@@ -54,7 +54,7 @@ trait Compilation
   // tslint:disable-next-line:ban-types
   def addEntry(context: js.Any, entry: js.Any, name: js.Any, callback: js.Function): scala.Unit = js.native
   def addModule(module: CompilationModule, cacheGroup: js.Any): js.Any = js.native
-  def getPath(filename: java.lang.String, data: webpackLib.Anon_Chunk): java.lang.String = js.native
+  def getPath(filename: java.lang.String, data: webpackLib.Anon_Basename): java.lang.String = js.native
   def getStats(): webpackLib.webpackMod.webpackNs.Stats = js.native
 }
 

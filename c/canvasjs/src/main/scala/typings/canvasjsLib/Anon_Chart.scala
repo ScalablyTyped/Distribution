@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Chart extends js.Object {
   var chart: canvasjsLib.canvasjsMod.CanvasJSNs.Chart
-  var entries: js.Array[Anon_DataSeries]
-  var toolTip: this.type
+  var dataPoint: canvasjsLib.canvasjsMod.CanvasJSNs.ChartDataPoint
+  var dataSeries: canvasjsLib.canvasjsMod.CanvasJSNs.ChartDataSeriesOptions
+  var legend: this.type
 }
 

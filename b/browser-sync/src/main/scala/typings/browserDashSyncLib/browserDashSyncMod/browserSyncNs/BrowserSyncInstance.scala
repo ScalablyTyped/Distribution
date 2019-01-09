@@ -97,9 +97,9 @@ trait BrowserSyncInstance extends js.Object {
     * @param {object} options The
     * @param {any} cb A callback function that will return any errors.
     */
-  def use(module: browserDashSyncLib.Anon_Plugin): scala.Unit = js.native
-  def use(module: browserDashSyncLib.Anon_Plugin, options: js.Object): scala.Unit = js.native
-  def use(module: browserDashSyncLib.Anon_Plugin, options: js.Object, cb: js.Any): scala.Unit = js.native
+  def use(module: browserDashSyncLib.Anon_Bs): scala.Unit = js.native
+  def use(module: browserDashSyncLib.Anon_Bs, options: js.Object): scala.Unit = js.native
+  def use(module: browserDashSyncLib.Anon_Bs, options: js.Object, cb: js.Any): scala.Unit = js.native
   /**
     * Stand alone file-watcher. Use this along with Browsersync to create your own, minimal build system
     */

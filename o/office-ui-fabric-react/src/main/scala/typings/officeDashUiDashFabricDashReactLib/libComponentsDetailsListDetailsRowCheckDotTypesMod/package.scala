@@ -14,5 +14,5 @@ package object libComponentsDetailsListDetailsRowCheckDotTypesMod {
   ]) with (stdLib.Pick[
     IDetailsRowCheckProps, 
     officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.compact | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.isHeader | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.selected | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.anySelected | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.canSelect | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.className
-  ]) with officeDashUiDashFabricDashReactLib.Anon_IsVisibleBoolean
+  ]) with officeDashUiDashFabricDashReactLib.Anon_IsVisible
 }

@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("BABYLON.RenderTargetTexture")
 @js.native
 class RenderTargetTexture protected () extends Texture {
-  def this(name: java.lang.String, size: babylonjsLib.Anon_Height, scene: Nullable[Scene], generateMipMaps: js.UndefOr[scala.Boolean], doNotChangeAspectRatio: js.UndefOr[scala.Boolean], `type`: js.UndefOr[scala.Double], isCube: js.UndefOr[scala.Boolean], samplingMode: js.UndefOr[scala.Double], generateDepthBuffer: js.UndefOr[scala.Boolean], generateStencilBuffer: js.UndefOr[scala.Boolean], isMulti: js.UndefOr[scala.Boolean], format: js.UndefOr[scala.Double]) = this()
+  def this(name: java.lang.String, size: babylonjsLib.Anon_HeightWidth, scene: Nullable[Scene], generateMipMaps: js.UndefOr[scala.Boolean], doNotChangeAspectRatio: js.UndefOr[scala.Boolean], `type`: js.UndefOr[scala.Double], isCube: js.UndefOr[scala.Boolean], samplingMode: js.UndefOr[scala.Double], generateDepthBuffer: js.UndefOr[scala.Boolean], generateStencilBuffer: js.UndefOr[scala.Boolean], isMulti: js.UndefOr[scala.Boolean], format: js.UndefOr[scala.Double]) = this()
   def this(name: java.lang.String, size: babylonjsLib.Anon_Ratio, scene: Nullable[Scene], generateMipMaps: js.UndefOr[scala.Boolean], doNotChangeAspectRatio: js.UndefOr[scala.Boolean], `type`: js.UndefOr[scala.Double], isCube: js.UndefOr[scala.Boolean], samplingMode: js.UndefOr[scala.Double], generateDepthBuffer: js.UndefOr[scala.Boolean], generateStencilBuffer: js.UndefOr[scala.Boolean], isMulti: js.UndefOr[scala.Boolean], format: js.UndefOr[scala.Double]) = this()
   /**
     * Instantiate a render target texture. This is mainly used to render of screen the scene to for instance apply post processse
@@ -40,7 +40,7 @@ class RenderTargetTexture protected () extends Texture {
   /** @hidden */
   var _generateMipMaps: scala.Boolean = js.native
   var _hookArray: js.Any = js.native
-  var _initialSizeParameter: scala.Double | babylonjsLib.Anon_Height | babylonjsLib.Anon_Ratio = js.native
+  var _initialSizeParameter: scala.Double | babylonjsLib.Anon_HeightWidth | babylonjsLib.Anon_Ratio = js.native
   var _onAfterRenderObserver: js.Any = js.native
   var _onAfterUnbindObserver: js.Any = js.native
   var _onBeforeRenderObserver: js.Any = js.native
@@ -54,7 +54,7 @@ class RenderTargetTexture protected () extends Texture {
   var _renderingManager: RenderingManager = js.native
   var _resizeObserver: js.Any = js.native
   var _samples: scala.Double = js.native
-  var _size: scala.Double | babylonjsLib.Anon_Height = js.native
+  var _size: scala.Double | babylonjsLib.Anon_HeightWidth = js.native
   var _sizeRatio: Nullable[scala.Double] = js.native
   var _textureMatrix: Matrix = js.native
   /** @hidden */
@@ -247,7 +247,7 @@ class RenderTargetTexture protected () extends Texture {
     * Could be usefull to regenerate the texture if it is setup to render only once.
     */
   def resetRefreshCounter(): scala.Unit = js.native
-  def resize(size: babylonjsLib.Anon_Height): scala.Unit = js.native
+  def resize(size: babylonjsLib.Anon_HeightWidth): scala.Unit = js.native
   def resize(size: babylonjsLib.Anon_Ratio): scala.Unit = js.native
   /**
     * Resize the texture to a new desired size.

@@ -13,7 +13,7 @@ class Column ()
 @JSImport("react-virtualized/dist/es/Table", "Column")
 @js.native
 object Column extends js.Object {
-  var defaultProps: reactDashVirtualizedLib.Anon_FlexShrink1 = js.native
-  var propTypes: reactDashVirtualizedLib.Anon_FlexShrink = js.native
+  var defaultProps: reactDashVirtualizedLib.Anon_01CellDataGetter = js.native
+  var propTypes: reactDashVirtualizedLib.Anon_ArialabelCellDataGetter = js.native
 }
 

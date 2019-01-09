@@ -50,7 +50,7 @@ trait Options
     *
     * Default {top: 44, bottom: "auto"}.
     */
-  var barsSize: js.UndefOr[photoswipeLib.Anon_BottomTop] = js.undefined
+  var barsSize: js.UndefOr[photoswipeLib.Anon_Bottom] = js.undefined
   /**
     * Whether to show the caption.
     *

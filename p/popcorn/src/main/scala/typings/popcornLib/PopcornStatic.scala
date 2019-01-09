@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait PopcornStatic extends js.Object {
   var locale: PopcornLocale = js.native
   @JSName("plugin")
-  var plugin_Original: Anon_PluginName = js.native
-  var util: Anon_ToSeconds = js.native
+  var plugin_Original: Anon_Debug = js.native
+  var util: Anon_Fps = js.native
   def apply(callback: js.Function): PopcornImpl = js.native
   def apply(selector: java.lang.String): PopcornImpl = js.native
   def apply(selector: java.lang.String, options: js.Any): PopcornImpl = js.native

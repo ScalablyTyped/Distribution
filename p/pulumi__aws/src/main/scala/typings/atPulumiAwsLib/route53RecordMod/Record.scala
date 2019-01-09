@@ -22,7 +22,7 @@ class Record protected ()
     * An alias block. Conflicts with `ttl` & `records`.
     * Alias record documented below.
     */
-  val aliases: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EvaluateTargetHealthZoneId]]] = js.native
+  val aliases: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EvaluateTargetHealth]]] = js.native
   /**
     * Allow creation of this record in Terraform to overwrite an existing record, if any. This does not prevent other resources within Terraform or manual Route53 changes from overwriting this record. `true` by default.
     */
@@ -38,7 +38,7 @@ class Record protected ()
   /**
     * A block indicating a routing policy based on the geolocation of the requestor. Conflicts with any other routing policy. Documented below.
     */
-  val geolocationRoutingPolicies: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ContinentCountry]]] = js.native
+  val geolocationRoutingPolicies: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Continent]]] = js.native
   /**
     * The health check the record should be associated with.
     */
@@ -74,7 +74,7 @@ class Record protected ()
   /**
     * A block indicating a weighted routing policy. Conflicts with any other routing policy. Documented below.
     */
-  val weightedRoutingPolicies: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_WeightNumber]]] = js.native
+  val weightedRoutingPolicies: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Weight]]] = js.native
   /**
     * Hosted zone ID for a CloudFront distribution, S3 bucket, ELB, or Route 53 hosted zone. See [`resource_elb.zone_id`](https://www.terraform.io/docs/providers/aws/r/elb.html#zone_id) for example.
     */

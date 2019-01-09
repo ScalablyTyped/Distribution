@@ -44,7 +44,7 @@ class TreeBinding protected () extends Binding {
     * @param sFilterType Type of the filter which should be adjusted, if it is not given, the standard
     * behaviour applies
     */
-  def filter(aFilters: js.Array[Filter], sFilterType: openui5Lib.Anon_Control): scala.Unit = js.native
+  def filter(aFilters: js.Array[Filter], sFilterType: openui5Lib.Anon_Application): scala.Unit = js.native
   /**
     * Returns the number of child nodes of a specific context
     * @param oContext the context element of the node

@@ -10,11 +10,11 @@ trait _InputManager extends js.Object {
   /**
     * A list of common keyCodes
     */
-  var KEYS: athenajsLib.Anon_CTRL = js.native
+  var KEYS: athenajsLib.Anon_13 = js.native
   /**
     * List of common pad buttons
     */
-  var PAD_BUTTONS: athenajsLib.Anon_RIGHTANALOGUESTICK = js.native
+  var PAD_BUTTONS: athenajsLib.Anon_110 = js.native
   var axes: JSObject = js.native
   // virtual joystick instance
   var dPadJoystick: scala.Null = js.native

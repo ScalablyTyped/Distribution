@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_ErrorMessage extends js.Object {
-  var errorMessage: java.lang.String
+trait Anon_ErrorMessage[T] extends js.Object {
+  var errorMessage: js.UndefOr[js.Any] = js.undefined
+  var negated: js.UndefOr[scala.Boolean] = js.undefined
+  var options: js.UndefOr[T | js.Array[T]] = js.undefined
 }
 

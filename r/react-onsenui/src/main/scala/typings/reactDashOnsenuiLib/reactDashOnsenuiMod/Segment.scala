@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Segment")
 @js.native
 class Segment ()
-  extends Component[reactDashOnsenuiLib.Anon_TabbarId, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_Index, js.Any]
 

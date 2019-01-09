@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ProductsResource extends js.Object {
   /** Deletes the product from a Manufacturer Center account. */
-  def delete(request: gapiDotClientDotManufacturersLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotManufacturersLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Gets the product from a Manufacturer Center account, including product
     * issues.
@@ -17,9 +17,9 @@ trait ProductsResource extends js.Object {
     * available once the product has been processed, other issues may take days
     * to appear.
     */
-  def get(request: gapiDotClientDotManufacturersLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[Product]
+  def get(request: gapiDotClientDotManufacturersLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Product]
   /** Lists all the products in a Manufacturer Center account. */
-  def list(request: gapiDotClientDotManufacturersLib.Anon_ParentAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListProductsResponse]
+  def list(request: gapiDotClientDotManufacturersLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListProductsResponse]
   /**
     * Inserts or updates the product in a Manufacturer Center account.
     *
@@ -34,6 +34,6 @@ trait ProductsResource extends js.Object {
     * retrieved. Until then, new products will be unavailable, and retrieval
     * of updated products will return the original state of the product.
     */
-  def update(request: gapiDotClientDotManufacturersLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[Product]
+  def update(request: gapiDotClientDotManufacturersLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Product]
 }
 

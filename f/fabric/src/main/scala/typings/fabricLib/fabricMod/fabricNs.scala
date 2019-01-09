@@ -179,9 +179,9 @@ object fabricNs extends js.Object {
     	 * @param points Array of points
     	 * @param [options] Options object
     	 */
-    def this(points: js.Array[fabricLib.Anon_Y]) = this()
-    def this(points: js.Array[fabricLib.Anon_Y], options: fabricLib.fabricDashImplMod.IObjectOptions) = this()
-    def this(points: js.Array[fabricLib.Anon_Y], options: fabricLib.fabricDashImplMod.IObjectOptions, skipOffset: scala.Boolean) = this()
+    def this(points: js.Array[fabricLib.Anon_X]) = this()
+    def this(points: js.Array[fabricLib.Anon_X], options: fabricLib.fabricDashImplMod.IObjectOptions) = this()
+    def this(points: js.Array[fabricLib.Anon_X], options: fabricLib.fabricDashImplMod.IObjectOptions, skipOffset: scala.Boolean) = this()
   }
   
   @js.native
@@ -193,8 +193,8 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 * @param [skipOffset] Whether points offsetting should be skipped
     	 */
-    def this(points: js.Array[fabricLib.Anon_Y]) = this()
-    def this(points: js.Array[fabricLib.Anon_Y], options: fabricLib.fabricDashImplMod.IPolylineOptions) = this()
+    def this(points: js.Array[fabricLib.Anon_X]) = this()
+    def this(points: js.Array[fabricLib.Anon_X], options: fabricLib.fabricDashImplMod.IPolylineOptions) = this()
   }
   
   @js.native

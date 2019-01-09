@@ -8,18 +8,18 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/web", JSImport.Namespace)
 @js.native
 object libraryWebModMembers extends js.Object {
-  val Array: coreDashJsLib.Anon_Find = js.native
-  val Date: coreDashJsLib.Anon_Now = js.native
+  val Array: coreDashJsLib.Anon_A = js.native
+  val Date: coreDashJsLib.Anon_Date = js.native
   val Dict: coreDashJsLib.DictConstructor = js.native
-  val Function: coreDashJsLib.Anon_Part = js.native
+  val Function: coreDashJsLib.Anon_ArgArray = js.native
   val Map: nodeLib.MapConstructor = js.native
-  val Math: coreDashJsLib.Anon_Log2 = js.native
-  val Number: coreDashJsLib.Anon_Random = js.native
-  val Object: coreDashJsLib.Anon_GetOwnPropertyDescriptors = js.native
+  val Math: coreDashJsLib.Anon_AcoshAsinh = js.native
+  val Number: coreDashJsLib.Anon_Acosh = js.native
+  val Object: coreDashJsLib.Anon_Assign = js.native
   val Promise: stdLib.PromiseConstructor = js.native
   val RegExp: coreDashJsLib.Anon_Escape = js.native
   val Set: nodeLib.SetConstructor = js.native
-  val String: coreDashJsLib.Anon_PadEnd = js.native
+  val String: coreDashJsLib.Anon_At = js.native
   val WeakMap: nodeLib.WeakMapConstructor = js.native
   val WeakSet: nodeLib.WeakSetConstructor = js.native
   val `_`: scala.Boolean = js.native
@@ -28,7 +28,7 @@ object libraryWebModMembers extends js.Object {
   val version: java.lang.String = js.native
   @JSName("$for")
   def $for[T](iterable: nodeLib.Iterable[T]): coreDashJsLib.$for[T] = js.native
-  def addLocale(lang: java.lang.String, locale: coreDashJsLib.coreNs.Locale): coreDashJsLib.Anon_Set = js.native
+  def addLocale(lang: java.lang.String, locale: coreDashJsLib.coreNs.Locale): coreDashJsLib.`Anon_` = js.native
   def clearImmediate(handle: scala.Double): scala.Unit = js.native
   def delay(msec: scala.Double): js.Promise[scala.Unit] = js.native
   def getIterator[T](iterable: nodeLib.Iterable[T]): nodeLib.Iterator[T] = js.native

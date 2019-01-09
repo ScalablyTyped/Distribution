@@ -44,7 +44,7 @@ trait InstancesResource extends js.Object {
     * The response field type is
     * Instance, if successful.
     */
-  def create(request: gapiDotClientDotSpannerLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def create(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Deletes an instance.
     *
@@ -58,9 +58,9 @@ trait InstancesResource extends js.Object {
     * irrevocably disappear from the API. All data in the databases
     * is permanently deleted.
     */
-  def delete(request: gapiDotClientDotSpannerLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotSpannerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /** Gets information about a particular instance. */
-  def get(request: gapiDotClientDotSpannerLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Instance]
+  def get(request: gapiDotClientDotSpannerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Instance]
   /**
     * Gets the access control policy for an instance resource. Returns an empty
     * policy if an instance exists but does not have a policy set.
@@ -68,9 +68,9 @@ trait InstancesResource extends js.Object {
     * Authorization requires `spanner.instances.getIamPolicy` on
     * resource.
     */
-  def getIamPolicy(request: gapiDotClientDotSpannerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+  def getIamPolicy(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
   /** Lists all instances in the given project. */
-  def list(request: gapiDotClientDotSpannerLib.Anon_ParentAccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListInstancesResponse]
+  def list(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListInstancesResponse]
   /**
     * Updates an instance, and begins allocating or releasing resources
     * as requested. The returned long-running
@@ -113,7 +113,7 @@ trait InstancesResource extends js.Object {
     * Authorization requires `spanner.instances.update` permission on
     * resource name.
     */
-  def patch(request: gapiDotClientDotSpannerLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def patch(request: gapiDotClientDotSpannerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
     * Sets the access control policy on an instance resource. Replaces any
     * existing policy.
@@ -121,7 +121,7 @@ trait InstancesResource extends js.Object {
     * Authorization requires `spanner.instances.setIamPolicy` on
     * resource.
     */
-  def setIamPolicy(request: gapiDotClientDotSpannerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+  def setIamPolicy(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Policy]
   /**
     * Returns permissions that the caller has on the specified instance resource.
     *
@@ -130,6 +130,6 @@ trait InstancesResource extends js.Object {
     * permission on the containing Google Cloud Project. Otherwise returns an
     * empty set of permissions.
     */
-  def testIamPermissions(request: gapiDotClientDotSpannerLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+  def testIamPermissions(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
 }
 

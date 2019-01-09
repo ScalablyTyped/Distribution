@@ -22,7 +22,7 @@ object libUtilitiesColorModMembers extends js.Object {
     shade: officeDashUiDashFabricDashReactLib.libUtilitiesColorShadesMod.Shade,
     isInverted: scala.Boolean
   ): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor | scala.Null = js.native
-  def getColorFromRGBA(rgba: officeDashUiDashFabricDashReactLib.Anon_B): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
+  def getColorFromRGBA(rgba: officeDashUiDashFabricDashReactLib.Anon_A): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
   def getColorFromString(inputColor: java.lang.String): js.UndefOr[officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor] = js.native
   def getContrastRatio(
     color1: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor,

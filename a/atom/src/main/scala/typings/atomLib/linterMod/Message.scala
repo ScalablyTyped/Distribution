@@ -20,9 +20,9 @@ trait Message extends js.Object {
   /** Optionally override the displayed linter name. Defaults to provider name. */
   var linterName: js.UndefOr[java.lang.String] = js.undefined
   /** The location of the issue (aka where to highlight). */
-  var location: atomLib.Anon_FilePosition
+  var location: atomLib.Anon_File
   /** A reference to a different location in the editor. */
-  var reference: js.UndefOr[atomLib.Anon_File] = js.undefined
+  var reference: js.UndefOr[atomLib.Anon_FilePosition] = js.undefined
   /** The severity level for the message. */
   var severity: atomLib.atomLibStrings.error | atomLib.atomLibStrings.warning | atomLib.atomLibStrings.info
   /** Possible solutions (which the user can invoke at will). */

@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Steed extends js.Object {
   @JSName("eachSeries")
-  var eachSeries_Original: steedLib.Anon_ArrIterator = js.native
+  var eachSeries_Original: steedLib.Anon_Arr = js.native
   @JSName("mapSeries")
-  var mapSeries_Original: steedLib.Anon_Arr = js.native
+  var mapSeries_Original: steedLib.Anon_ArrCallback = js.native
   def each[T, E](arr: js.Array[T], iterator: SteedIterator[T, E]): scala.Unit = js.native
   def each[T, E](arr: js.Array[T], iterator: SteedIterator[T, E], callback: ErrorCallback[E]): scala.Unit = js.native
   def each[T, E](arr: Dictionary[T], iterator: SteedIterator[T, E]): scala.Unit = js.native

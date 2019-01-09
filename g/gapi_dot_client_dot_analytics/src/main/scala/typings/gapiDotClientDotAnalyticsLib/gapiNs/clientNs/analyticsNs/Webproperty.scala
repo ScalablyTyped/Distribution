@@ -9,7 +9,7 @@ trait Webproperty extends js.Object {
   /** Account ID to which this web property belongs. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
   /** Child link for this web property. Points to the list of views (profiles) for this web property. */
-  var childLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Type] = js.undefined
+  var childLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Href] = js.undefined
   /** Time this web property was created. */
   var created: js.UndefOr[java.lang.String] = js.undefined
   /** Default view (profile) ID. */
@@ -27,9 +27,9 @@ trait Webproperty extends js.Object {
   /** Name of this web property. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** Parent link for this web property. Points to the account to which this web property belongs. */
-  var parentLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Type] = js.undefined
+  var parentLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Href] = js.undefined
   /** Permissions the user has for this web property. */
-  var permissions: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_EffectiveArray] = js.undefined
+  var permissions: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Effective] = js.undefined
   /** View (Profile) count for this web property. */
   var profileCount: js.UndefOr[scala.Double] = js.undefined
   /** Link for this web property. */

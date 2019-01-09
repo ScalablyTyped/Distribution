@@ -29,7 +29,7 @@ class World () extends EventTarget {
   var materials: js.Array[Material] = js.native
   var narrowPhase: NarrowPhase = js.native
   var nextId: scala.Double = js.native
-  var profile: cannonLib.Anon_Solve = js.native
+  var profile: cannonLib.Anon_Broadphaser = js.native
   var quatNormalizeFast: scala.Boolean = js.native
   var quatNormalizeSkip: scala.Double = js.native
   var removeBodyEvent: IBodyEvent = js.native

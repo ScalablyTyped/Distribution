@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class RectangleGraphics ()
   extends cesiumLib.cesiumMod.CesiumNs.RectangleGraphics {
-  def this(options: cesiumLib.Anon_Coordinates) = this()
+  def this(options: cesiumLib.Anon_CloseBottomCloseTop) = this()
 }
 

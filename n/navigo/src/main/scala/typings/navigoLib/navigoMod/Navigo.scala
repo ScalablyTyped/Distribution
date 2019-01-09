@@ -15,7 +15,7 @@ trait Navigo extends js.Object {
   def historyAPIUpdateMethod(): scala.Unit = js.native
   def historyAPIUpdateMethod(method: java.lang.String): scala.Unit = js.native
   def hooks(hooks: GenericHooks): scala.Unit = js.native
-  def lastRouteResolved(): navigoLib.Anon_Name = js.native
+  def lastRouteResolved(): navigoLib.Anon_Hooks = js.native
   def link(path: java.lang.String): java.lang.String = js.native
   def navigate(path: java.lang.String): scala.Unit = js.native
   def navigate(path: java.lang.String, absolute: scala.Boolean): scala.Unit = js.native

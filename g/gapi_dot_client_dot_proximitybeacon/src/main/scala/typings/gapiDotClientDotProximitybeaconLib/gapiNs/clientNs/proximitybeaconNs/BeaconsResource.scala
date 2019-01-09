@@ -18,9 +18,7 @@ trait BeaconsResource extends js.Object {
     * from a signed-in user with &#42;&#42;Is owner&#42;&#42; or &#42;&#42;Can edit&#42;&#42; permissions in the
     * Google Developers Console project.
     */
-  def activate(
-    request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenPrettyPrintBearertokenProjectIdCallbackQuotaUser
-  ): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def activate(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Deactivates a beacon. Once deactivated, the API will not return
     * information nor attachment data for the beacon when queried via
@@ -31,9 +29,7 @@ trait BeaconsResource extends js.Object {
     * from a signed-in user with &#42;&#42;Is owner&#42;&#42; or &#42;&#42;Can edit&#42;&#42; permissions in the
     * Google Developers Console project.
     */
-  def deactivate(
-    request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenPrettyPrintBearertokenProjectIdCallbackQuotaUser
-  ): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def deactivate(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Decommissions the specified beacon in the service. This beacon will no
     * longer be returned from `beaconinfo.getforobserved`. This operation is
@@ -44,9 +40,7 @@ trait BeaconsResource extends js.Object {
     * from a signed-in user with &#42;&#42;Is owner&#42;&#42; or &#42;&#42;Can edit&#42;&#42; permissions in the
     * Google Developers Console project.
     */
-  def decommission(
-    request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenPrettyPrintBearertokenProjectIdCallbackQuotaUser
-  ): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def decommission(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Deletes the specified beacon including all diagnostics data for the beacon
     * as well as any attachments on the beacon (including those belonging to
@@ -56,9 +50,7 @@ trait BeaconsResource extends js.Object {
     * from a signed-in user with &#42;&#42;Is owner&#42;&#42; or &#42;&#42;Can edit&#42;&#42; permissions in the
     * Google Developers Console project.
     */
-  def delete(
-    request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenPrettyPrintBearertokenProjectIdCallbackQuotaUser
-  ): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
     * Returns detailed information about the specified beacon.
     *
@@ -72,9 +64,7 @@ trait BeaconsResource extends js.Object {
     * beacon's stable Eddystone-UID. Clients not authorized to resolve the
     * beacon's ephemeral Eddystone-EID broadcast will receive an error.
     */
-  def get(
-    request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenPrettyPrintBearertokenProjectIdCallbackQuotaUser
-  ): gapiDotClientLib.gapiNs.clientNs.Request[Beacon]
+  def get(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName): gapiDotClientLib.gapiNs.clientNs.Request[Beacon]
   /**
     * Searches the beacon registry for beacons that match the given search
     * criteria. Only those beacons that the client has permission to list
@@ -84,7 +74,7 @@ trait BeaconsResource extends js.Object {
     * from a signed-in user with &#42;&#42;viewer&#42;&#42;, &#42;&#42;Is owner&#42;&#42; or &#42;&#42;Can edit&#42;&#42;
     * permissions in the Google Developers Console project.
     */
-  def list(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListBeaconsResponse]
+  def list(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ListBeaconsResponse]
   /**
     * Registers a previously unregistered beacon given its `advertisedId`.
     * These IDs are unique within the system. An ID can be registered only once.
@@ -93,7 +83,7 @@ trait BeaconsResource extends js.Object {
     * from a signed-in user with &#42;&#42;Is owner&#42;&#42; or &#42;&#42;Can edit&#42;&#42; permissions in the
     * Google Developers Console project.
     */
-  def register(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Beacon]
+  def register(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Beacon]
   /**
     * Updates the information about the specified beacon. &#42;&#42;Any field that you do
     * not populate in the submitted beacon will be permanently erased&#42;&#42;, so you
@@ -107,8 +97,6 @@ trait BeaconsResource extends js.Object {
     * from a signed-in user with &#42;&#42;Is owner&#42;&#42; or &#42;&#42;Can edit&#42;&#42; permissions in the
     * Google Developers Console project.
     */
-  def update(
-    request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenPrettyPrintBearertokenProjectIdCallbackQuotaUser
-  ): gapiDotClientLib.gapiNs.clientNs.Request[Beacon]
+  def update(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName): gapiDotClientLib.gapiNs.clientNs.Request[Beacon]
 }
 

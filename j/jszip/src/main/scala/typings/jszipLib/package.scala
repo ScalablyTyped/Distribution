@@ -8,7 +8,7 @@ package object jszipLib {
   type Compression = jszipLib.jszipLibStrings.STORE | jszipLib.jszipLibStrings.DEFLATE
   type InputFileFormat = /* import warning: ImportType.apply Failed type conversion: any[keyof any] */ js.Any
   type OnUpdateCallback = js.Function1[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ /* metadata */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ /* metadata */ js.Any, 
     scala.Unit
   ]
 }

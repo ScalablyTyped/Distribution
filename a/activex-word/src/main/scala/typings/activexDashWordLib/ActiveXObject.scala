@@ -16,7 +16,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_Doc, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -29,7 +29,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_Doc, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -43,7 +43,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_DocSaveAsUI, 
+      /* parameter */ Anon_CancelDoc, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -53,7 +53,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashWordLib.activexDashWordLibStrings.Doc],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_DocDocument, 
+      /* parameter */ Anon_Doc, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -76,7 +76,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashWordLib.activexDashWordLibStrings.Doc],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_DocDocument, 
+      /* parameter */ Anon_Doc, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -86,7 +86,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashWordLib.activexDashWordLibStrings.Doc],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_DocDocument, 
+      /* parameter */ Anon_Doc, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -102,7 +102,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_Rgdispid, 
+      /* parameter */ Anon_CNames, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -126,7 +126,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_Lcid, 
+      /* parameter */ Anon_Itinfo, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -149,7 +149,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashWordLib.activexDashWordLibStrings.Doc],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_DocDocument, 
+      /* parameter */ Anon_Doc, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -164,7 +164,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_DocStartRecord, 
+      /* parameter */ Anon_CancelDocEndRecord, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -177,7 +177,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_Doc, 
+      /* parameter */ Anon_Cancel, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -187,7 +187,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashWordLib.activexDashWordLibStrings.Doc],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_DocDocument, 
+      /* parameter */ Anon_Doc, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -200,7 +200,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_DocHandledDocument, 
+      /* parameter */ Anon_DocHandledBoolean, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -223,7 +223,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashWordLib.activexDashWordLibStrings.Doc],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_DocDocument, 
+      /* parameter */ Anon_Doc, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -238,7 +238,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_DocToState, 
+      /* parameter */ Anon_DocFromState, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -248,7 +248,7 @@ trait ActiveXObject extends js.Object {
     argNames: js.Array[activexDashWordLib.activexDashWordLibStrings.Doc],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_DocDocument, 
+      /* parameter */ Anon_Doc, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -272,7 +272,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_CloseReason, 
+      /* parameter */ Anon_CancelCloseReason, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -285,7 +285,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_Cancel, 
+      /* parameter */ Anon_CancelPvWindow, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -418,7 +418,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Application, 
-      /* parameter */ Anon_OldXMLNode, 
+      /* parameter */ Anon_NewXMLNode, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -442,7 +442,11 @@ trait ActiveXObject extends js.Object {
       activexDashWordLib.activexDashWordLibStrings.BlockType, 
       activexDashWordLib.activexDashWordLibStrings.Template
     ],
-    handler: js.ThisFunction1[/* this */ activexDashWordLib.WordNs.Document, /* parameter */ Anon_Name, scala.Unit]
+    handler: js.ThisFunction1[
+      /* this */ activexDashWordLib.WordNs.Document, 
+      /* parameter */ Anon_BlockType, 
+      scala.Unit
+    ]
   ): scala.Unit = js.native
   def on(
     obj: activexDashWordLib.WordNs.Document,
@@ -552,7 +556,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashWordLib.WordNs.Document, 
-      /* parameter */ Anon_InUndoRedoOldXMLNode, 
+      /* parameter */ Anon_DeletedRange, 
       scala.Unit
     ]
   ): scala.Unit = js.native

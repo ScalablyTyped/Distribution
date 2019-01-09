@@ -12,7 +12,7 @@ class Table ()
   var Grid: reactDashVirtualizedLib.distEsGridMod.Grid = js.native
   def forceUpdateGrid(): scala.Unit = js.native
   /** See Grid#getOffsetForCell */
-  def getOffsetForRow(params: reactDashVirtualizedLib.Anon_Alignment): scala.Double = js.native
+  def getOffsetForRow(params: reactDashVirtualizedLib.Anon_AlignmentIndex): scala.Double = js.native
   /** See Grid#measureAllCells */
   def measureAllRows(): scala.Unit = js.native
   /** See Grid#recomputeGridSize */
@@ -29,7 +29,7 @@ class Table ()
 @JSImport("react-virtualized/dist/es/Table", "Table")
 @js.native
 object Table extends js.Object {
-  var defaultProps: reactDashVirtualizedLib.Anon_EstimatedRowSize = js.native
-  var propTypes: reactDashVirtualizedLib.Anon_Children = js.native
+  var defaultProps: reactDashVirtualizedLib.Anon_0110 = js.native
+  var propTypes: reactDashVirtualizedLib.Anon_ArialabelAutoHeight = js.native
 }
 

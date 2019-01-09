@@ -13,6 +13,6 @@ trait ResourceDataSyncArgs extends js.Object {
   /**
     * Amazon S3 configuration details for the sync.
     */
-  val s3Destination: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PrefixKmsKeyArn]
+  val s3Destination: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketNameKmsKeyArnPrefixRegion]
 }
 

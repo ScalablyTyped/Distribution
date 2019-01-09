@@ -31,7 +31,7 @@ object managementNsMembers extends js.Object {
     */
   def getSelf(): js.Promise[js.UndefOr[ExtensionInfo]] = js.native
   /** Installs and enables a theme extension from the given url. */
-  def install(options: firefoxDashWebextDashBrowserLib.Anon_UrlHash): js.Promise[js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_Id]] = js.native
+  def install(options: firefoxDashWebextDashBrowserLib.Anon_Hash): js.Promise[js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_Id]] = js.native
   /**
     * Enables or disables the given add-on.
     * @param id ID of the add-on to enable/disable.
@@ -43,6 +43,6 @@ object managementNsMembers extends js.Object {
     * in the manifest.
     */
   def uninstallSelf(): js.Promise[scala.Unit] = js.native
-  def uninstallSelf(options: firefoxDashWebextDashBrowserLib.Anon_ShowConfirmDialog): js.Promise[scala.Unit] = js.native
+  def uninstallSelf(options: firefoxDashWebextDashBrowserLib.Anon_DialogMessage): js.Promise[scala.Unit] = js.native
 }
 

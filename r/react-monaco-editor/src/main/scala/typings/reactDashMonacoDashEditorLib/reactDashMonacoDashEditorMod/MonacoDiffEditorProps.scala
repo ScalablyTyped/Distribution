@@ -21,8 +21,8 @@ trait MonacoDiffEditorProps extends MonacoEditorBaseProps {
   /**
     * Refer to Monaco interface {monaco.editor.IDiffEditorConstructionOptions}.
     */
-  var options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify monacoEditor.editor.IDiffEditorConstructionOptions */ js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify monacoEditor.editor.IDiffEditorConstructionOptions */ js.Any
+  var options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IDiffEditorConstructionOptions */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IDiffEditorConstructionOptions */ js.Any
   ] = js.undefined
   /**
     * The original value to compare against.

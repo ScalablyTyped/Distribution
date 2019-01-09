@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RaygunPayload extends js.Object {
-  var Details: raygun4jsLib.Anon_Request
+  var Details: raygun4jsLib.Anon_Client
   var OccurredOn: stdLib.Date
 }
 

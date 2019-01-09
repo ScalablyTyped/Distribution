@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 abstract class Serializer () extends js.Object {
   def createNameMapper(message: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.Message): PlaceholderMapper | scala.Null = js.native
   def digest(message: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.Message): java.lang.String = js.native
-  def load(content: java.lang.String, url: java.lang.String): atAngularCompilerLib.Anon_LocaleI18nNodesByMsgId = js.native
+  def load(content: java.lang.String, url: java.lang.String): atAngularCompilerLib.Anon_I18nNodesByMsgId = js.native
   def write(messages: js.Array[atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.Message]): java.lang.String = js.native
   def write(
     messages: js.Array[atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.Message],

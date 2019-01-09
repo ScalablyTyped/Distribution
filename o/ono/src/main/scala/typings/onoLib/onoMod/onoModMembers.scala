@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ono", JSImport.Namespace)
 @js.native
 object onoModMembers
-  extends org.scalablytyped.runtime.TopLevel[onoLib.Anon_Reference]
+  extends org.scalablytyped.runtime.TopLevel[onoLib.Anon_Error]
 

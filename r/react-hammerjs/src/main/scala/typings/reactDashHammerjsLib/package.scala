@@ -8,6 +8,6 @@ package object reactDashHammerjsLib {
   type HammerOptionsWithRecognizers = (Omit[
     hammerjsLib.HammerOptions, 
     reactDashHammerjsLib.reactDashHammerjsLibStrings.recognizers
-  ]) with Anon_Recognizers
+  ]) with Anon_Gesture
   type Omit[T, K] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
 }

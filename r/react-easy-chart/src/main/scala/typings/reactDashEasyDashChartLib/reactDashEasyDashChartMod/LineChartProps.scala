@@ -9,7 +9,7 @@ trait LineChartProps extends js.Object {
   /** Whether to show axis labels */
   var axes: js.UndefOr[scala.Boolean] = js.undefined
   /** Labels for each of the axis */
-  var axisLabels: js.UndefOr[reactDashEasyDashChartLib.Anon_Y] = js.undefined
+  var axisLabels: js.UndefOr[reactDashEasyDashChartLib.Anon_XY] = js.undefined
   var clickHandler: js.UndefOr[js.Function2[/* data */ LineData, /* mouseEvent */ reactLib.MouseEvent, _]] = js.undefined
   var data: js.Array[js.Array[LineData]]
   /** Whether to show circles on the data points */

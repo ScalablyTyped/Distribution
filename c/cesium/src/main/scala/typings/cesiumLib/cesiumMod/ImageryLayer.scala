@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class ImageryLayer protected ()
   extends cesiumLib.cesiumMod.CesiumNs.ImageryLayer {
   def this(imageryProvider: cesiumLib.cesiumMod.CesiumNs.ImageryProvider) = this()
-  def this(imageryProvider: cesiumLib.cesiumMod.CesiumNs.ImageryProvider, options: cesiumLib.Anon_Alpha) = this()
+  def this(imageryProvider: cesiumLib.cesiumMod.CesiumNs.ImageryProvider, options: cesiumLib.Anon_AlphaBrightness) = this()
   /* CompleteClass */
   override var alpha: scala.Double = js.native
   /* CompleteClass */

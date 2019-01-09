@@ -15,7 +15,7 @@ trait Shader extends js.Object {
   val vertShader: stdLib.WebGLShader = js.native
   def bind(): scala.Unit = js.native
   def dispose(): scala.Unit = js.native
-  def update(obj: glDashShaderLib.Anon_Fragment): scala.Unit = js.native
+  def update(obj: glDashShaderLib.Anon_AttributesFragment): scala.Unit = js.native
   def update(vertex: java.lang.String, fragment: java.lang.String): scala.Unit = js.native
   def update(vertex: java.lang.String, fragment: java.lang.String, uniforms: js.Array[Parameter]): scala.Unit = js.native
   def update(

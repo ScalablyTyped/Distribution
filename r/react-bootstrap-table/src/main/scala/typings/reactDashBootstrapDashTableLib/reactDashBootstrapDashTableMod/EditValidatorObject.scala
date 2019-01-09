@@ -13,6 +13,6 @@ trait EditValidatorObject extends js.Object {
   /**
   	 * Notification object providing details on the validation result.
   	 */
-  var notification: reactDashBootstrapDashTableLib.Anon_Type
+  var notification: reactDashBootstrapDashTableLib.Anon_Msg
 }
 

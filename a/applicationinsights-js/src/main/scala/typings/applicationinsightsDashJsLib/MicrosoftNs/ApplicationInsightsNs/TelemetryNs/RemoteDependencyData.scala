@@ -23,7 +23,7 @@ class RemoteDependencyData protected ()
   /* CompleteClass */
   override var aiDataContract: js.Any = js.native
   @JSName("aiDataContract")
-  var aiDataContract_RemoteDependencyData: applicationinsightsDashJsLib.Anon_DependencyTypeName = js.native
+  var aiDataContract_RemoteDependencyData: applicationinsightsDashJsLib.Anon_Async = js.native
   /* private */ def formatDependencyName(method: js.Any, absoluteUrl: js.Any): js.Any = js.native
 }
 

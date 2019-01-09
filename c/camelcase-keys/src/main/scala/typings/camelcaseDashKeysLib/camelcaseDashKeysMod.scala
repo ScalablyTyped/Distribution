@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object camelcaseDashKeysMod extends js.Object {
   def apply(input: js.Any): js.Any = js.native
-  def apply(input: js.Any, options: camelcaseDashKeysLib.Anon_Exclude): js.Any = js.native
+  def apply(input: js.Any, options: camelcaseDashKeysLib.Anon_Deep): js.Any = js.native
 }
 

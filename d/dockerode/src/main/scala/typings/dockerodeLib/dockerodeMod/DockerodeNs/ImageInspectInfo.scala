@@ -9,9 +9,9 @@ trait ImageInspectInfo extends js.Object {
   var Architecture: java.lang.String
   var Author: java.lang.String
   var Comment: java.lang.String
-  var Config: dockerodeLib.Anon_EntrypointAttachStdout
+  var Config: dockerodeLib.Anon_ArgsEscapedAttachStderr
   var Container: java.lang.String
-  var ContainerConfig: dockerodeLib.Anon_EntrypointAttachStdoutAttachStdin
+  var ContainerConfig: dockerodeLib.Anon_ArgsEscaped
   var Created: java.lang.String
   var DockerVersion: java.lang.String
   var GraphDriver: dockerodeLib.Anon_Data

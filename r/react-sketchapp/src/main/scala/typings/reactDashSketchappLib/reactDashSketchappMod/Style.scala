@@ -78,7 +78,7 @@ trait Style extends js.Object {
   ] = js.undefined
   var right: js.UndefOr[scala.Double] = js.undefined
   var shadowColor: js.UndefOr[Color] = js.undefined
-  var shadowOffset: js.UndefOr[reactDashSketchappLib.Anon_HeightWidth] = js.undefined
+  var shadowOffset: js.UndefOr[reactDashSketchappLib.Anon_Height] = js.undefined
   var shadowOpacity: js.UndefOr[scala.Double] = js.undefined
   var shadowRadius: js.UndefOr[scala.Double] = js.undefined
   var top: js.UndefOr[scala.Double] = js.undefined

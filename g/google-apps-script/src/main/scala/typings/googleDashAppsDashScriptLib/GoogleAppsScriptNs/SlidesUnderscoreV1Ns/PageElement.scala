@@ -11,7 +11,7 @@ trait PageElement extends js.Object {
   var description: java.lang.String
   // The kind of element that this PageElement represents. Each message
   // contains any properties that are specific to that kind of page element.
-  var element_kind: googleDashAppsDashScriptLib.Anon_Image
+  var element_kind: googleDashAppsDashScriptLib.Anon_Elementgroup
   // The object ID for this page element. Object IDs used by
   // Page and PageElement share the same namespace.
   var object_id: java.lang.String

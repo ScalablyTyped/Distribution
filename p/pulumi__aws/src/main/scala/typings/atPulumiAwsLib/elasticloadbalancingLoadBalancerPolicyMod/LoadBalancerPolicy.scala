@@ -25,7 +25,7 @@ class LoadBalancerPolicy protected ()
   /**
     * Policy attribute to apply to the policy.
     */
-  val policyAttributes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ValueNameStringOptional]]] = js.native
+  val policyAttributes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameValueString]]] = js.native
   /**
     * The name of the load balancer policy.
     */

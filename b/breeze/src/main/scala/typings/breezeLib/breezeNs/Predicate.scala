@@ -12,9 +12,9 @@ class Predicate () extends js.Object {
     // for any/all clauses
   def this(passthru: java.lang.String) = this()
   def this(predicate: Predicate) = this()
-  def this(property: java.lang.String, operator: FilterQueryOpSymbol, value: breezeLib.Anon_Value) = this()
+  def this(property: java.lang.String, operator: FilterQueryOpSymbol, value: breezeLib.Anon_DataType) = this()
   def this(property: java.lang.String, operator: FilterQueryOpSymbol, value: js.Any) = this()
-  def this(property: java.lang.String, operator: java.lang.String, value: breezeLib.Anon_Value) = this()
+  def this(property: java.lang.String, operator: java.lang.String, value: breezeLib.Anon_DataType) = this()
   def this(property: java.lang.String, operator: java.lang.String, value: js.Any) = this()
   def this(property: java.lang.String, filterop: FilterQueryOpSymbol, property2: java.lang.String, filterop2: FilterQueryOpSymbol, value: js.Any) = this()
     // for any/all clauses

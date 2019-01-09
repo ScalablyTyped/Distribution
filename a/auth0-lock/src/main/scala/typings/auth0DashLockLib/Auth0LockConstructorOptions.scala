@@ -42,7 +42,7 @@ trait Auth0LockConstructorOptions extends js.Object {
   var mustAcceptTerms: js.UndefOr[scala.Boolean] = js.undefined
   var oidcConformant: js.UndefOr[scala.Boolean] = js.undefined
   var popupOptions: js.UndefOr[Auth0LockPopupOptions] = js.undefined
-  var prefill: js.UndefOr[Anon_Username] = js.undefined
+  var prefill: js.UndefOr[Anon_Email] = js.undefined
   var rememberLastLogin: js.UndefOr[scala.Boolean] = js.undefined
   var scrollGlobalMessagesIntoView: js.UndefOr[scala.Boolean] = js.undefined
   var signupLink: js.UndefOr[java.lang.String] = js.undefined

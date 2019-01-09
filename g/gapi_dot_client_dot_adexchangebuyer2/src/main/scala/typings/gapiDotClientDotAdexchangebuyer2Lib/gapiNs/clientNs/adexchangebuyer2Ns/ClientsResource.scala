@@ -9,12 +9,12 @@ trait ClientsResource extends js.Object {
   var invitations: InvitationsResource
   var users: UsersResource
   /** Creates a new client buyer. */
-  def create(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Client]
+  def create(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[Client]
   /** Gets a client buyer with a given client account ID. */
-  def get(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Client]
+  def get(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Client]
   /** Lists all the clients for the current sponsor buyer. */
-  def list(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListClientsResponse]
+  def list(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[ListClientsResponse]
   /** Updates an existing client buyer. */
-  def update(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Client]
+  def update(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Client]
 }
 

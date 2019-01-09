@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Vex.Flow.Crescendo")
 @js.native
 class Crescendo protected () extends Note {
-  def this(note_struct: vexflowLib.Anon_LineDuration) = this()
+  def this(note_struct: vexflowLib.Anon_Duration) = this()
   def draw(): scala.Unit = js.native
   def setDecrescendo(decresc: scala.Boolean): Crescendo = js.native
   def setHeight(height: scala.Double): Crescendo = js.native

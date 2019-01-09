@@ -16,6 +16,6 @@ class Dialog protected () extends js.Object {
 @JSImport("react-weui", "Dialog")
 @js.native
 object Dialog extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_Show = js.native
+  var defaultProps: reactDashWeuiLib.Anon_AutoDectect = js.native
 }
 

@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(nodeLib.streamMod.internalNs.WritableOptions because Would inherit conflicting mutable fields List(destroy, highWaterMark, objectMode))*/
-trait DuplexOptions extends ReadableOptions {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- nodeLib.streamMod.internalNs.WritableOptions because var conflicts: destroy, highWaterMark, objectMode. Inlined decodeStrings, write, writev, `final` */ trait DuplexOptions extends ReadableOptions {
   var allowHalfOpen: js.UndefOr[scala.Boolean] = js.undefined
+  var decodeStrings: js.UndefOr[scala.Boolean] = js.undefined
   @JSName("destroy")
   var destroy_DuplexOptions: js.UndefOr[
     js.ThisFunction2[
@@ -19,7 +20,7 @@ trait DuplexOptions extends ReadableOptions {
   ] = js.undefined
   var `final`: js.UndefOr[
     js.ThisFunction1[
-      /* this */ Duplex, 
+      (/* this */ Duplex) | (/* this */ Writable), 
       /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit
     ]
@@ -30,7 +31,7 @@ trait DuplexOptions extends ReadableOptions {
   var writableObjectMode: js.UndefOr[scala.Boolean] = js.undefined
   var write: js.UndefOr[
     js.ThisFunction3[
-      /* this */ Duplex, 
+      (/* this */ Duplex) | (/* this */ Writable), 
       /* chunk */ js.Any, 
       /* encoding */ java.lang.String, 
       /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
@@ -39,7 +40,7 @@ trait DuplexOptions extends ReadableOptions {
   ] = js.undefined
   var writev: js.UndefOr[
     js.ThisFunction2[
-      /* this */ Duplex, 
+      (/* this */ Duplex) | (/* this */ Writable), 
       /* chunks */ js.Array[nodeLib.Anon_Chunk], 
       /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit

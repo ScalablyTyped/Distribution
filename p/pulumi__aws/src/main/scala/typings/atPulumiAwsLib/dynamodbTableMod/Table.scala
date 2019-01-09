@@ -25,7 +25,7 @@ class Table protected ()
   /**
     * List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
     */
-  val attributes: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_TypeNameString]] = js.native
+  val attributes: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_NameTypeString]] = js.native
   /**
     * Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
     */
@@ -35,7 +35,7 @@ class Table protected ()
     * subject to the normal limits on the number of GSIs, projected
     * attributes, etc.
     */
-  val globalSecondaryIndexes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameWriteCapacityProjectionType]]] = js.native
+  val globalSecondaryIndexes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_HashKeyName]]] = js.native
   /**
     * The name of the hash key in the index; must be
     * defined as an attribute in the resource.
@@ -46,7 +46,7 @@ class Table protected ()
     * these can only be allocated *at creation* so you cannot change this
     * definition after you have created the resource.
     */
-  val localSecondaryIndexes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ProjectionTypeRangeKey]]] = js.native
+  val localSecondaryIndexes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameNonKeyAttributesProjectionType]]] = js.native
   /**
     * The name of the index
     */
@@ -54,7 +54,7 @@ class Table protected ()
   /**
     * Point-in-time recovery options.
     */
-  val pointInTimeRecovery: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_EnabledBoolean] = js.native
+  val pointInTimeRecovery: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_EnabledBoolean_204597847] = js.native
   /**
     * The name of the range key; must be defined
     */
@@ -66,7 +66,7 @@ class Table protected ()
   /**
     * Encrypt at rest options.
     */
-  val serverSideEncryption: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_EnabledBoolean] = js.native
+  val serverSideEncryption: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_EnabledBoolean_204597847] = js.native
   /**
     * The ARN of the Table Stream. Only available when `stream_enabled = true`
     */
@@ -93,7 +93,7 @@ class Table protected ()
   /**
     * Defines ttl, has two properties, and can only be specified once:
     */
-  val ttl: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AttributeNameEnabled]] = js.native
+  val ttl: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AttributeName]] = js.native
   /**
     * The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
     */

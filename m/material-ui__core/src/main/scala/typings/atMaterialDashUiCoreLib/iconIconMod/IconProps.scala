@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick<react.react.HTMLAttributes<react.HTMLSpanElement>, std.Exclude<keyof react.react.HTMLAttributes<react.HTMLSpanElement>, 'classes' | never>>, @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLSpanElement>, @material-ui/core.@material-ui/core/Icon/Icon.IconClassKey, never>) */ trait IconProps
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<react.HTMLSpanElement>, 'classes' | never> ]: react.react.HTMLAttributes<react.HTMLSpanElement>[P]}
+- Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLSpanElement>, @material-ui/core.@material-ui/core/Icon/Icon.IconClassKey, never>) */ trait IconProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[IconClassKey] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[

@@ -10,13 +10,17 @@ trait NetworkAclArgs extends js.Object {
     * Specifies an egress rule. Parameters defined below.
     */
   val egress: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RuleNo]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ActionCidrBlockFromPort]]
+    ]
   ] = js.undefined
   /**
     * Specifies an ingress rule. Parameters defined below.
     */
   val ingress: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RuleNo]]]
+    atPulumiPulumiLib.resourceMod.Input[
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ActionCidrBlockFromPort]]
+    ]
   ] = js.undefined
   /**
     * The ID of the associated Subnet. This

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/util", JSImport.Namespace)
 @js.native
 object utilModMembers extends js.Object {
-  val CONSTANTS: atFirebaseUtilLib.Anon_SDKVERSION = js.native
-  val base64: atFirebaseUtilLib.Anon_Init = js.native
+  val CONSTANTS: atFirebaseUtilLib.Anon_NODEADMIN = js.native
+  val base64: atFirebaseUtilLib.Anon_ByteToCharMap = js.native
   def assert(assertion: js.Any, message: js.Any): scala.Unit = js.native
   def assertionError(message: js.Any): stdLib.Error = js.native
   def async(fn: js.Function): js.Function = js.native
@@ -23,7 +23,7 @@ object utilModMembers extends js.Object {
     executor: atFirebaseUtilLib.distSrcSubscribeMod.Executor[T],
     onNoObservers: atFirebaseUtilLib.distSrcSubscribeMod.Executor[T]
   ): atFirebaseUtilLib.distSrcSubscribeMod.Subscribe[T] = js.native
-  def decode(token: js.Any): atFirebaseUtilLib.Anon_Data = js.native
+  def decode(token: js.Any): atFirebaseUtilLib.Anon_Claims = js.native
   def deepCopy[T](value: T): T = js.native
   def deepExtend(target: js.Any, source: js.Any): js.Any = js.native
   def errorPrefix(fnName: js.Any, argumentNumber: js.Any, optional: js.Any): java.lang.String = js.native

@@ -11,10 +11,10 @@ object reactDashAsyncModMembers extends js.Object {
   def default[T](): Async[T] = js.native
   def default[T](defaultProps: AsyncProps[T]): Async[T] = js.native
   def useAsync[T](
-    opts: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify AsyncOptions<T> */ js.Any
+    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AsyncOptions<T> */ js.Any
   ): AsyncState[T] = js.native
   def useAsync[T](
-    opts: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify AsyncOptions<T> */ js.Any,
+    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AsyncOptions<T> */ js.Any,
     init: T
   ): AsyncState[T] = js.native
   def useAsync[T](opts: reactDashAsyncLib.PromiseFn[T]): AsyncState[T] = js.native

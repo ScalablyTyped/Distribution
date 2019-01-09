@@ -57,7 +57,7 @@ class TableBorder ()
   def load(): TableBorder = js.native
   def load(option: java.lang.String): TableBorder = js.native
   def load(option: js.Array[java.lang.String]): TableBorder = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): TableBorder = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): TableBorder = js.native
   def load(option: officeDashJsDashPreviewLib.WordNs.InterfacesNs.TableBorderLoadOptions): TableBorder = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

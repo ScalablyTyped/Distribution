@@ -114,7 +114,7 @@ class PivotTable ()
   def load(): PivotTable = js.native
   def load(option: java.lang.String): PivotTable = js.native
   def load(option: js.Array[java.lang.String]): PivotTable = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): PivotTable = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): PivotTable = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.PivotTableLoadOptions): PivotTable = js.native
   /**
     *

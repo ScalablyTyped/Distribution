@@ -127,14 +127,14 @@ package object screepsLib {
   type LOOK_STRUCTURES = screepsLib.screepsLibStrings.structure
   type LOOK_TERRAIN = screepsLib.screepsLibStrings.terrain
   type LOOK_TOMBSTONES = screepsLib.screepsLibStrings.tombstone
-  type LookAtResult[K /* <: LookConstant */] = (stdLib.Pick[LookAtTypes, K]) with Anon_TypeK[K]
-  type LookAtResultWithPos[K /* <: LookConstant */] = LookAtResult[K] with Anon_Y
+  type LookAtResult[K /* <: LookConstant */] = (stdLib.Pick[LookAtTypes, K]) with Anon_Type[K]
+  type LookAtResultWithPos[K /* <: LookConstant */] = LookAtResult[K] with Anon_XY
   type LookAtTypes = stdLib.Partial[AllLookAtTypes]
   // Look Constants
   type LookConstant = LOOK_CREEPS | LOOK_ENERGY | LOOK_RESOURCES | LOOK_SOURCES | LOOK_MINERALS | LOOK_STRUCTURES | LOOK_FLAGS | LOOK_CONSTRUCTION_SITES | LOOK_NUKES | LOOK_TERRAIN | LOOK_TOMBSTONES
-  type LookForAtAreaResult[T, K /* <: java.lang.String */] = Anon_Type[K, T]
+  type LookForAtAreaResult[T, K /* <: java.lang.String */] = Anon_TypeK[K] with screepsLib.screepsLibStrings.LookForAtAreaResult with js.Any
   type LookForAtAreaResultArray[T, K /* <: java.lang.String */] = js.Array[LookForAtAreaResultWithPos[T, K]]
-  type LookForAtAreaResultWithPos[T, K /* <: java.lang.String */] = (LookForAtAreaResult[T, K]) with Anon_Y
+  type LookForAtAreaResultWithPos[T, K /* <: java.lang.String */] = (LookForAtAreaResult[T, K]) with Anon_XY
   type MOVE = screepsLib.screepsLibStrings.move
   type MarketResourceConstant = ResourceConstant | SUBSCRIPTION_TOKEN
   type MineralConstant = RESOURCE_UTRIUM | RESOURCE_LEMERGIUM | RESOURCE_KEANIUM | RESOURCE_GHODIUM | RESOURCE_ZYNTHIUM | RESOURCE_OXYGEN | RESOURCE_HYDROGEN | RESOURCE_CATALYST

@@ -13,7 +13,7 @@ class StaveModifier () extends js.Object {
   def addToStave(stave: Stave, firstGlyph: scala.Boolean): StaveModifier = js.native
   def addToStaveEnd(stave: Stave, firstGlyph: scala.Boolean): StaveModifier = js.native
   def getCategory(): java.lang.String = js.native
-  def makeSpacer(padding: scala.Double): vexflowLib.Anon_SetStave = js.native
+  def makeSpacer(padding: scala.Double): vexflowLib.Anon_GetContext = js.native
   def placeGlyphOnLine(glyph: Glyph, stave: Stave, line: scala.Double): scala.Unit = js.native
   def setPadding(padding: scala.Double): scala.Unit = js.native
 }

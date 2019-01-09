@@ -103,7 +103,7 @@ class DataValidation ()
   def load(): DataValidation = js.native
   def load(option: java.lang.String): DataValidation = js.native
   def load(option: js.Array[java.lang.String]): DataValidation = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): DataValidation = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): DataValidation = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.DataValidationLoadOptions): DataValidation = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: DataValidation): scala.Unit = js.native

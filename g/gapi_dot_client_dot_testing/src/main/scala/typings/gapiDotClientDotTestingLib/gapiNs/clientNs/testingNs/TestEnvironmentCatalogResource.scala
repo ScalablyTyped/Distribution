@@ -15,6 +15,6 @@ trait TestEnvironmentCatalogResource extends js.Object {
     * - NOT_FOUND - if the environment type does not exist
     * - INTERNAL - if an internal error occurred
     */
-  def get(request: gapiDotClientDotTestingLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[TestEnvironmentCatalog]
+  def get(request: gapiDotClientDotTestingLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[TestEnvironmentCatalog]
 }
 

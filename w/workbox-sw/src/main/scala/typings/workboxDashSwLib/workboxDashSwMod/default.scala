@@ -12,17 +12,17 @@ class default () extends WorkboxNamespace
 @JSImport("workbox-sw", JSImport.Default)
 @js.native
 object default extends js.Object {
-  val backgroundSync: org.scalablytyped.runtime.Instantiable0[workboxDashSwLib.workboxDashSwMod.BackgroundSyncNamespace] = js.native
-  val broadcastUpdate: org.scalablytyped.runtime.Instantiable0[workboxDashSwLib.workboxDashSwMod.BroadcastUpdateNamespace] = js.native
-  val cacheableResponse: org.scalablytyped.runtime.Instantiable0[workboxDashSwLib.workboxDashSwMod.CacheableResponseNamespace] = js.native
-  val core: org.scalablytyped.runtime.Instantiable0[workboxDashSwLib.workboxDashSwMod.CoreNamespace] = js.native
-  val expiration: org.scalablytyped.runtime.Instantiable0[workboxDashSwLib.workboxDashSwMod.ExpirationNamespace] = js.native
-  val googleAnalytics: org.scalablytyped.runtime.Instantiable0[workboxDashSwLib.workboxDashSwMod.GoogleAnalyticsNamespace] = js.native
-  val precaching: org.scalablytyped.runtime.Instantiable0[workboxDashSwLib.workboxDashSwMod.PrecachingNamespace] = js.native
-  val rangeRequests: org.scalablytyped.runtime.Instantiable0[workboxDashSwLib.workboxDashSwMod.RangeRequestsNamespace] = js.native
-  val routing: org.scalablytyped.runtime.Instantiable0[workboxDashSwLib.workboxDashSwMod.RoutingNamespace] = js.native
-  val strategies: org.scalablytyped.runtime.Instantiable0[workboxDashSwLib.workboxDashSwMod.StrategiesNamespace] = js.native
-  val streams: org.scalablytyped.runtime.Instantiable0[workboxDashSwLib.workboxDashSwMod.StreamsNamespace] = js.native
+  val backgroundSync: workboxDashSwLib.Anon_Plugin = js.native
+  val broadcastUpdate: workboxDashSwLib.Anon_BroadCastUpdate = js.native
+  val cacheableResponse: workboxDashSwLib.Anon_CacheableResponse = js.native
+  val core: workboxDashSwLib.Anon_0 = js.native
+  val expiration: workboxDashSwLib.Anon_CacheExpiration = js.native
+  val googleAnalytics: workboxDashSwLib.Anon_Initialize = js.native
+  val precaching: workboxDashSwLib.Anon_AddPlugins = js.native
+  val rangeRequests: workboxDashSwLib.Anon_CreatePartialResponse = js.native
+  val routing: workboxDashSwLib.Anon_CachedAssetUrl = js.native
+  val strategies: workboxDashSwLib.Anon_CacheFirst = js.native
+  val streams: workboxDashSwLib.Anon_Concatenate = js.native
   /**
   	 * Claim any currently available clients once the service worker becomes active. This is normally used in conjunction with skipWaiting().
   	 */

@@ -78,7 +78,7 @@ class KiiServerCodeEntry () extends js.Object {
     *     );
     */
   def execute[T](argument: T): js.Promise[js.Tuple3[KiiServerCodeEntry, T, KiiServerCodeExecResult]] = js.native
-  def execute[T](argument: T, callbacks: kiiDashCloudDashSdkLib.Anon_FailureEntry[T]): js.Promise[js.Tuple3[KiiServerCodeEntry, T, KiiServerCodeExecResult]] = js.native
+  def execute[T](argument: T, callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringArgument[T]): js.Promise[js.Tuple3[KiiServerCodeEntry, T, KiiServerCodeExecResult]] = js.native
   /**
     * Get the entryName of this server code entry.
     *

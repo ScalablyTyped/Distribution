@@ -514,7 +514,7 @@ object WidgetsNs extends js.Object {
   }
   
   trait Coords extends js.Object {
-    var _contentEnd: blessedLib.Anon_Y
+    var _contentEnd: blessedLib.Anon_X
     var base: scala.Double
     var nobot: blessedLib.blessedMod.WidgetsNs.TypesNs.TPosition
     var noleft: blessedLib.blessedMod.WidgetsNs.TypesNs.TTopLeft
@@ -2155,7 +2155,7 @@ object WidgetsNs extends js.Object {
       * Object enabling a scrollbar.
       * Style of the scrollbar track if present (takes regular style options).
       */
-    var scrollbar: js.UndefOr[blessedLib.Anon_Track] = js.undefined
+    var scrollbar: js.UndefOr[blessedLib.Anon_Ch] = js.undefined
   }
   
   /**
@@ -2427,7 +2427,7 @@ object WidgetsNs extends js.Object {
     var terminal: java.lang.String = js.native
     var terminfoFile: java.lang.String = js.native
     var terminfoPrefix: java.lang.String = js.native
-    def parseTerminfo(data: js.Any, file: java.lang.String): blessedLib.Anon_Desc = js.native
+    def parseTerminfo(data: js.Any, file: java.lang.String): blessedLib.Anon_Bools = js.native
     def readTerminfo(term: java.lang.String): java.lang.String = js.native
     def setup(): scala.Unit = js.native
     def term(is: js.Any): scala.Boolean = js.native
@@ -2583,8 +2583,8 @@ object WidgetsNs extends js.Object {
       var inverse: js.UndefOr[scala.Boolean] = js.undefined
       var invisible: js.UndefOr[scala.Boolean] = js.undefined
       var label: js.UndefOr[java.lang.String] = js.undefined
-      var scrollbar: js.UndefOr[blessedLib.Anon_Fg] = js.undefined
-      var track: js.UndefOr[blessedLib.Anon_Fg] = js.undefined
+      var scrollbar: js.UndefOr[blessedLib.Anon_Bg] = js.undefined
+      var track: js.UndefOr[blessedLib.Anon_Bg] = js.undefined
       var transparent: js.UndefOr[scala.Boolean] = js.undefined
       var `type`: js.UndefOr[java.lang.String] = js.undefined
       var underline: js.UndefOr[scala.Boolean] = js.undefined

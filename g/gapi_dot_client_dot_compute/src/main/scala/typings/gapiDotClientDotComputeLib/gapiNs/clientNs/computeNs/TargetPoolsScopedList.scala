@@ -9,6 +9,6 @@ trait TargetPoolsScopedList extends js.Object {
   /** List of target pools contained in this scope. */
   var targetPools: js.UndefOr[js.Array[TargetPool]] = js.undefined
   /** Informational warning which replaces the list of addresses when the list is empty. */
-  var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Data] = js.undefined
+  var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Code] = js.undefined
 }
 

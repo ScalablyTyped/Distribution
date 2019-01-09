@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashNativeDashDocDashViewerMod extends js.Object {
   def openDoc(
-    files: js.Array[reactDashNativeDashDocDashViewerLib.Anon_Url],
+    files: js.Array[reactDashNativeDashDocDashViewerLib.Anon_Cache],
     callback: js.Function2[/* error */ java.lang.String, /* url */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def openDocBinaryinUrl(
-    files: js.Array[reactDashNativeDashDocDashViewerLib.Anon_UrlFileType],
+    files: js.Array[reactDashNativeDashDocDashViewerLib.Anon_FileName],
     callback: js.Function2[/* error */ java.lang.String, /* url */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def openDocb64(
-    files: js.Array[reactDashNativeDashDocDashViewerLib.Anon_FileType],
+    files: js.Array[reactDashNativeDashDocDashViewerLib.Anon_Base64],
     callback: js.Function2[/* error */ java.lang.String, /* url */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def playMovie(

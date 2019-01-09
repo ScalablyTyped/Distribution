@@ -64,7 +64,7 @@ trait Image extends js.Object {
     */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** The parameters of the raw disk image. */
-  var rawDisk: js.UndefOr[gapiDotClientDotComputeLib.Anon_Sha1Checksum] = js.undefined
+  var rawDisk: js.UndefOr[gapiDotClientDotComputeLib.Anon_ContainerType] = js.undefined
   /** [Output Only] Server-defined URL for the resource. */
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
   /**

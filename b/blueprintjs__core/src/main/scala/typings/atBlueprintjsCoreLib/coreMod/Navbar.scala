@@ -13,9 +13,9 @@ class Navbar ()
 @JSImport("@blueprintjs/core", "Navbar")
 @js.native
 object Navbar extends js.Object {
-  var Divider: org.scalablytyped.runtime.Instantiable0[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarDividerMod.NavbarDivider] = js.native
-  var Group: org.scalablytyped.runtime.Instantiable0[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarGroupMod.NavbarGroup] = js.native
-  var Heading: org.scalablytyped.runtime.Instantiable0[atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarHeadingMod.NavbarHeading] = js.native
+  var Divider: atBlueprintjsCoreLib.Anon_DisplayNameNavbarDivider = js.native
+  var Group: atBlueprintjsCoreLib.Anon_DefaultPropsDisplayName = js.native
+  var Heading: atBlueprintjsCoreLib.Anon_DisplayNameNavbarHeading = js.native
   var displayName: java.lang.String = js.native
 }
 

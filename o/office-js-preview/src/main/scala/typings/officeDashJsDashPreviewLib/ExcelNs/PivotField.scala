@@ -71,7 +71,7 @@ class PivotField ()
   def load(): PivotField = js.native
   def load(option: java.lang.String): PivotField = js.native
   def load(option: js.Array[java.lang.String]): PivotField = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): PivotField = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): PivotField = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.PivotFieldLoadOptions): PivotField = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

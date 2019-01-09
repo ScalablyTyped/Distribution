@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "Switch")
 @js.native
 class Switch ()
-  extends Component[reactDashOnsenuiLib.Anon_NameCheckedOnChangeE, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_CheckedDisabledE, js.Any]
 

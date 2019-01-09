@@ -25,7 +25,7 @@ class SAXParser protected () extends js.Object {
   // Methods
   def end(): scala.Unit = js.native
   def flush(): scala.Unit = js.native
-  def onattribute(attr: saxLib.Anon_Value): scala.Unit = js.native
+  def onattribute(attr: saxLib.Anon_Name): scala.Unit = js.native
   def oncdata(cdata: java.lang.String): scala.Unit = js.native
   def onclosecdata(): scala.Unit = js.native
   def onclosenamespace(ns: saxLib.Anon_Prefix): scala.Unit = js.native

@@ -14,6 +14,6 @@ trait ILocationProvider extends IServiceProvider {
   // implementation tests it as boolean, which makes more sense
   // since this is a toggler
   def html5Mode(active: scala.Boolean): ILocationProvider = js.native
-  def html5Mode(mode: angularLib.Anon_RewriteLinks): ILocationProvider = js.native
+  def html5Mode(mode: angularLib.Anon_Enabled): ILocationProvider = js.native
 }
 

@@ -17,7 +17,7 @@ trait ScatterPlot extends CoordinateGridMixin[ScatterPlot] {
   var symbolSize_Original: IGetSet[scala.Double, ScatterPlot] = js.native
   @JSName("symbol")
   var symbol_Original: IGetSet[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.svg.Symbol<any> */ _, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Symbol<any> */ _, 
     ScatterPlot
   ] = js.native
   def existenceAccessor(): Accessor[_, scala.Boolean] = js.native
@@ -28,7 +28,7 @@ trait ScatterPlot extends CoordinateGridMixin[ScatterPlot] {
   def highlightedSize(t: scala.Double): ScatterPlot = js.native
   def symbol(): js.Any = js.native
   def symbol(
-    t: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.svg.Symbol<any> */ js.Any
+    t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify d3.svg.Symbol<any> */ js.Any
   ): ScatterPlot = js.native
   def symbolSize(): scala.Double = js.native
   def symbolSize(t: scala.Double): ScatterPlot = js.native

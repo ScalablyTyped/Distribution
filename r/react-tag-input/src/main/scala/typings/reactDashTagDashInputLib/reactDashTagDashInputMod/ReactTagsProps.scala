@@ -11,11 +11,11 @@ trait ReactTagsProps extends js.Object {
   var allowUnique: js.UndefOr[scala.Boolean] = js.undefined
   var autocomplete: js.UndefOr[scala.Boolean | reactDashTagDashInputLib.reactDashTagDashInputLibNumbers.`1`] = js.undefined
   var autofocus: js.UndefOr[scala.Boolean] = js.undefined
-  var classNames: js.UndefOr[reactDashTagDashInputLib.Anon_Tag] = js.undefined
+  var classNames: js.UndefOr[reactDashTagDashInputLib.Anon_ActiveSuggestion] = js.undefined
   var delimiters: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var handleDrag: js.UndefOr[
     js.Function3[
-      /* tag */ reactDashTagDashInputLib.Anon_Text, 
+      /* tag */ reactDashTagDashInputLib.Anon_Id, 
       /* currPos */ scala.Double, 
       /* newPos */ scala.Double, 
       scala.Unit
@@ -24,8 +24,8 @@ trait ReactTagsProps extends js.Object {
   var handleFilterSuggestions: js.UndefOr[
     js.Function2[
       /* textInputValue */ java.lang.String, 
-      /* possibleSuggestionsArray */ js.Array[reactDashTagDashInputLib.Anon_Text], 
-      js.Array[reactDashTagDashInputLib.Anon_Text]
+      /* possibleSuggestionsArray */ js.Array[reactDashTagDashInputLib.Anon_Id], 
+      js.Array[reactDashTagDashInputLib.Anon_Id]
     ]
   ] = js.undefined
   var handleInputBlur: js.UndefOr[js.Function1[/* textInputValue */ java.lang.String, scala.Unit]] = js.undefined
@@ -41,9 +41,9 @@ trait ReactTagsProps extends js.Object {
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
   var removeComponent: js.UndefOr[reactLib.reactMod.Component[_, _, _]] = js.undefined
-  var suggestions: js.UndefOr[js.Array[reactDashTagDashInputLib.Anon_Text]] = js.undefined
-  var tags: js.UndefOr[js.Array[reactDashTagDashInputLib.Anon_Text]] = js.undefined
-  def handleAddition(tag: reactDashTagDashInputLib.Anon_Text): scala.Unit
+  var suggestions: js.UndefOr[js.Array[reactDashTagDashInputLib.Anon_Id]] = js.undefined
+  var tags: js.UndefOr[js.Array[reactDashTagDashInputLib.Anon_Id]] = js.undefined
+  def handleAddition(tag: reactDashTagDashInputLib.Anon_Id): scala.Unit
   def handleDelete(i: scala.Double): scala.Unit
 }
 

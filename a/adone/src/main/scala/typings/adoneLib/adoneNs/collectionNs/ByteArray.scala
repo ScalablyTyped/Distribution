@@ -788,7 +788,7 @@ object ByteArray extends js.Object {
     * Metrics representing number of UTF8 characters. Evaluates to `c`.
     */
   var METRICS_CHARS: java.lang.String = js.native
-  def accessor(): adoneLib.Anon_IsEncoding = js.native
+  def accessor(): adoneLib.Anon_Alloc = js.native
   /**
     * Allocates a new ByteArray backed by a buffer of the specified capacity.
     *
@@ -864,7 +864,7 @@ object ByteArray extends js.Object {
     */
   def fromUTF8(str: java.lang.String): adoneLib.adoneNs.collectionNs.ByteArray = js.native
   def fromUTF8(str: java.lang.String, noAssert: scala.Boolean): adoneLib.adoneNs.collectionNs.ByteArray = js.native
-  def `type`(): adoneLib.Anon_IsEncoding = js.native
+  def `type`(): adoneLib.Anon_Alloc = js.native
   /**
     * Wraps a buffer or a string.
     * Sets the allocated ByteArray's offset to 0 and its limit to the length of the wrapped data

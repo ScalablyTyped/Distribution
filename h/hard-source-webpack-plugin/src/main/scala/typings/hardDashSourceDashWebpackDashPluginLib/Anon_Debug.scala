@@ -1,0 +1,12 @@
+package typings
+package hardDashSourceDashWebpackDashPluginLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Debug extends js.Object {
+  var level: hardDashSourceDashWebpackDashPluginLib.hardDashSourceDashWebpackDashPluginLibStrings.debug | hardDashSourceDashWebpackDashPluginLib.hardDashSourceDashWebpackDashPluginLibStrings.log | hardDashSourceDashWebpackDashPluginLib.hardDashSourceDashWebpackDashPluginLibStrings.info | hardDashSourceDashWebpackDashPluginLib.hardDashSourceDashWebpackDashPluginLibStrings.warn | hardDashSourceDashWebpackDashPluginLib.hardDashSourceDashWebpackDashPluginLibStrings.error
+  var mode: hardDashSourceDashWebpackDashPluginLib.hardDashSourceDashWebpackDashPluginLibStrings.none | hardDashSourceDashWebpackDashPluginLib.hardDashSourceDashWebpackDashPluginLibStrings.test
+}
+

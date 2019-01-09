@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fontawesome5Mod {
-  type AllowOnlyOne[T, Keys /* <: java.lang.String */] = (Omit[T, Keys]) with (/* import warning: ImportType.apply Failed type conversion: {typemapped}[Keys] */ js.Any)
+  type AllowOnlyOne[T, Keys /* <: java.lang.String */] = (Omit[T, Keys]) with (/* import warning: ImportType.apply Failed type conversion: {[ K in Keys ]: -? std.Partial<std.Pick<T, K>> & std.Partial<std.Record<std.Exclude<Keys, K>, undefined>>}[Keys] */ js.Any)
   type FontAwesome5Icon = reactLib.reactMod.Component[FontAwesome5IconProps, js.Any, js.Any]
   type FontAwesome5IconProps = AllowOnlyOne[
     reactDashNativeDashVectorDashIconsLib.reactDashNativeDashVectorDashIconsLibStrings.FontAwesome5IconProps with js.Any with reactDashNativeDashVectorDashIconsLib.iconMod.IconProps, 

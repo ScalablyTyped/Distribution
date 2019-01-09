@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DebugAppearance protected ()
   extends cesiumLib.cesiumMod.CesiumNs.DebugAppearance {
-  def this(options: cesiumLib.Anon_VertexShaderSourceAttributeName) = this()
+  def this(options: cesiumLib.Anon_AttributeName) = this()
   /* CompleteClass */
   override val attributeName: java.lang.String = js.native
   /* CompleteClass */

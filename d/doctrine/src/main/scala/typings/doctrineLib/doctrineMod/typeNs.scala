@@ -96,7 +96,7 @@ object typeNs extends js.Object {
     var `type`: doctrineLib.doctrineLibStrings.VoidLiteral
   }
   
-  val Syntax: doctrineLib.Anon_NullableType = js.native
+  val Syntax: doctrineLib.Anon_AllLiteral = js.native
   def parseParamType(src: java.lang.String): doctrineLib.doctrineMod.Type = js.native
   def parseParamType(src: java.lang.String, options: doctrineLib.Anon_Midstream): doctrineLib.doctrineMod.Type = js.native
   def parseType(src: java.lang.String): doctrineLib.doctrineMod.Type = js.native

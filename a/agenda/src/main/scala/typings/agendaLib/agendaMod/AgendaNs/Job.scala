@@ -63,9 +63,9 @@ trait Job[T /* <: JobAttributesData */] extends js.Object {
     * Setting skipImmediate as true will skip the immediate run. The first run will occur only in configured interval.
     */
   def repeatEvery(interval: java.lang.String): this.type = js.native
-  def repeatEvery(interval: java.lang.String, options: agendaLib.Anon_Timezone): this.type = js.native
+  def repeatEvery(interval: java.lang.String, options: agendaLib.Anon_SkipImmediate): this.type = js.native
   def repeatEvery(interval: scala.Double): this.type = js.native
-  def repeatEvery(interval: scala.Double, options: agendaLib.Anon_Timezone): this.type = js.native
+  def repeatEvery(interval: scala.Double, options: agendaLib.Anon_SkipImmediate): this.type = js.native
   /**
     * Runs the given job and calls callback(err, job) upon completion. Normally you never need to call this manually
     */

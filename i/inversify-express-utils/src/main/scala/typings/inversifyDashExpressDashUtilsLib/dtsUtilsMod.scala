@@ -15,7 +15,7 @@ object dtsUtilsMod extends js.Object {
   ] = js.native
   def getControllerParameterMetadata(constructor: js.Any): inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.ControllerParameterMetadata = js.native
   def getControllersFromContainer(
-    container: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversifyInterfaces.Container */ js.Any,
+    container: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversifyInterfaces.Container */ js.Any,
     forceControllers: scala.Boolean
   ): js.Array[inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.Controller] = js.native
   def getControllersFromMetadata(): js.Array[_] = js.native

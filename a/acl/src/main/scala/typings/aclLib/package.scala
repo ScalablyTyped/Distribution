@@ -10,8 +10,8 @@ package object aclLib {
   type AnyCallback = js.Function2[/* err */ nodeLib.Error, /* obj */ js.Any, js.Any]
   type Callback = js.Function1[/* err */ nodeLib.Error, js.Any]
   type GetUserId = js.Function2[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify http.IncomingMessage */ /* req */ js.Any, 
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify http.ServerResponse */ /* res */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify http.IncomingMessage */ /* req */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify http.ServerResponse */ /* res */ js.Any, 
     Value
   ]
   type Value = java.lang.String | scala.Double

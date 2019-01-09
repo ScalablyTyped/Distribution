@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InspectOptions extends js.Object {
   var colors: js.UndefOr[scala.Boolean] = js.undefined
   var customInspect: js.UndefOr[scala.Boolean] = js.undefined

@@ -11,14 +11,5 @@ class TupleConverter ()
   extends typedocLib.distLibConverterComponentsMod.TypeConverter[
       typescriptLib.typescriptMod.tsNs.TypeReference, 
       typescriptLib.typescriptMod.tsNs.TupleTypeNode
-    ] {
-  def convertNode(
-    context: typedocLib.distLibConverterContextMod.Context,
-    node: typescriptLib.typescriptMod.tsNs.TupleTypeNode
-  ): typedocLib.distLibModelsTypesMod.TupleType = js.native
-  def supportsNode(
-    context: typedocLib.distLibConverterContextMod.Context,
-    node: typescriptLib.typescriptMod.tsNs.TupleTypeNode
-  ): scala.Boolean = js.native
-}
+    ]
 

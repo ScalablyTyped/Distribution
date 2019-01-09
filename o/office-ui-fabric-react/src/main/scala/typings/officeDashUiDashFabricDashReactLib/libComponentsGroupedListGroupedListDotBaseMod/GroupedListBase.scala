@@ -44,6 +44,6 @@ class GroupedListBase protected ()
 @JSImport("office-ui-fabric-react/lib/components/GroupedList/GroupedList.base", "GroupedListBase")
 @js.native
 object GroupedListBase extends js.Object {
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_IsHeaderVisible = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_Compact = js.native
 }
 

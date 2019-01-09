@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("mjml-react", "MjmlClass")
 @js.native
 class MjmlClass ()
-  extends reactLib.reactMod.Component[mjmlDashReactLib.Anon_KeyChildren, js.Object, js.Any]
+  extends reactLib.reactMod.Component[mjmlDashReactLib.Anon_ChildrenKeyName, js.Object, js.Any]
 

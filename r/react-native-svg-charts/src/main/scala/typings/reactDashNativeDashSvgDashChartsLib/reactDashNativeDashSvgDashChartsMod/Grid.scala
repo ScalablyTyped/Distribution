@@ -13,6 +13,6 @@ class Grid[T] ()
 @JSImport("react-native-svg-charts", "Grid")
 @js.native
 object Grid extends js.Object {
-  var Direction: reactDashNativeDashSvgDashChartsLib.Anon_HORIZONTAL = js.native
+  var Direction: reactDashNativeDashSvgDashChartsLib.Anon_BOTH = js.native
 }
 

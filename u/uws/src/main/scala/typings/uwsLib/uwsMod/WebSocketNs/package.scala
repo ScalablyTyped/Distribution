@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 package object WebSocketNs {
   type VerifyClientCallbackAsync = js.Function2[
-    /* info */ uwsLib.Anon_Secure, 
+    /* info */ uwsLib.Anon_Origin, 
     /* callback */ js.Function1[/* res */ scala.Boolean, scala.Unit], 
     scala.Unit
   ]
-  type VerifyClientCallbackSync = js.Function1[/* info */ uwsLib.Anon_Secure, scala.Boolean]
+  type VerifyClientCallbackSync = js.Function1[/* info */ uwsLib.Anon_Origin, scala.Boolean]
 }

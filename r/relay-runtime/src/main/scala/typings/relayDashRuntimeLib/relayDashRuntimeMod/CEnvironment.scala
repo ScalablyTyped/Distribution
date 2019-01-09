@@ -30,7 +30,7 @@ trait CEnvironment[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperatio
     * if you would otherwise immediately dispose the `streamQuery()`
     * after receving the first `onNext` result.
     */
-  def sendQuery(config: relayDashRuntimeLib.Anon_OnCompleted[TNode, TOperation, TPayload]): Disposable
+  def sendQuery(config: relayDashRuntimeLib.Anon_CacheConfig[TPayload, TNode, TOperation]): Disposable
   /**
     * Send a query to the server with request/subscription semantics: one or more
     * responses may be returned (via `onNext`) over time followed by either
@@ -39,7 +39,7 @@ trait CEnvironment[TEnvironment, TFragment, TGraphQLTaggedNode, TNode, TOperatio
     * Networks/servers that support subscriptions may choose to hold the
     * subscription open indefinitely such that `onCompleted` is not called.
     */
-  def streamQuery(config: relayDashRuntimeLib.Anon_OnCompleted[TNode, TOperation, TPayload]): Disposable
+  def streamQuery(config: relayDashRuntimeLib.Anon_CacheConfig[TPayload, TNode, TOperation]): Disposable
   /**
     * Subscribe to changes to the results of a selector. The callback is called
     * when data has been committed to the store that would cause the results of

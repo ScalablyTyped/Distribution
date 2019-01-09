@@ -22,7 +22,7 @@ class ConfigurationAggregator protected ()
   /**
     * The account(s) to aggregate config data from as documented below.
     */
-  val accountAggregationSource: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllRegionsAccountIds]] = js.native
+  val accountAggregationSource: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AccountIds]] = js.native
   /**
     * The ARN of the aggregator
     */
@@ -34,7 +34,7 @@ class ConfigurationAggregator protected ()
   /**
     * The organization to aggregate config data from as documented below.
     */
-  val organizationAggregationSource: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllRegionsRoleArnRegions]] = js.native
+  val organizationAggregationSource: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllRegions]] = js.native
 }
 
 @JSImport("@pulumi/aws/cfg/configurationAggregator", "ConfigurationAggregator")

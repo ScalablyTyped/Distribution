@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 /**
   * @see \`{@link https://api.jquery.com/jquery.ajax/#jqXHR }\`
   */
-/* RemoveDifficultInheritance: 
-- Lifted 2 members from Set(std.Pick<std.XMLHttpRequest, 'abort' | 'getAllResponseHeaders' | 'getResponseHeader' | 'overrideMimeType' | 'readyState' | 'responseText' | 'setRequestHeader' | 'status' | 'statusText'>, std.Partial<std.Pick<std.XMLHttpRequest, 'responseXML'>>) */ @js.native
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in 'abort' | 'getAllResponseHeaders' | 'getResponseHeader' | 'overrideMimeType' | 'readyState' | 'responseText' | 'setRequestHeader' | 'status' | 'statusText' ]: std.XMLHttpRequest[P]}
+- Dropped {[ P in keyof std.Pick<std.XMLHttpRequest, 'responseXML'> ]:? std.Pick<std.XMLHttpRequest, 'responseXML'>[P]} */ @js.native
 trait jqXHR[TResolve]
   extends PromiseBase[
       TResolve, 

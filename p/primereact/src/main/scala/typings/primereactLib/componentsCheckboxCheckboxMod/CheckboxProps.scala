@@ -19,6 +19,6 @@ trait CheckboxProps extends js.Object {
   var tooltip: js.UndefOr[js.Any] = js.undefined
   var tooltipOptions: js.UndefOr[primereactLib.componentsTooltipTooltipOptionsMod.TooltipOptions] = js.undefined
   var value: js.UndefOr[js.Any] = js.undefined
-  def onChange(e: primereactLib.Anon_OriginalEventChecked): scala.Unit
+  def onChange(e: primereactLib.Anon_Checked): scala.Unit
 }
 

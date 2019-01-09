@@ -16,7 +16,7 @@ class Renderer protected () extends js.Object {
   var image: stdLib.HTMLImageElement = js.native
   var orientation: cordovaDashPluginDashCanvascameraLib.cordovaDashPluginDashCanvascameraLibStrings.portrait | cordovaDashPluginDashCanvascameraLib.cordovaDashPluginDashCanvascameraLibStrings.landscape = js.native
   var parent: CanvasCamera = js.native
-  var size: Anon_HeightWidth = js.native
+  var size: Anon_Height = js.native
   var `type`: cordovaDashPluginDashCanvascameraLib.cordovaDashPluginDashCanvascameraLibStrings.file | cordovaDashPluginDashCanvascameraLib.cordovaDashPluginDashCanvascameraLibStrings.data = js.native
   @JSName("bufferize")
   def bufferize_data(
@@ -55,7 +55,7 @@ class Renderer protected () extends js.Object {
   def run(): Renderer = js.native
   def setOnAfterDraw(onAfterDraw: js.Function1[/* frame */ js.UndefOr[Frame], scala.Unit]): Renderer = js.native
   def setOnBeforeDraw(onBeforeDraw: js.Function1[/* frame */ js.UndefOr[Frame], scala.Unit]): Renderer = js.native
-  def setSize(size: Anon_HeightWidth): Renderer = js.native
-  def setSize(size: Anon_HeightWidth, auto: scala.Boolean): Renderer = js.native
+  def setSize(size: Anon_Height): Renderer = js.native
+  def setSize(size: Anon_Height, auto: scala.Boolean): Renderer = js.native
 }
 

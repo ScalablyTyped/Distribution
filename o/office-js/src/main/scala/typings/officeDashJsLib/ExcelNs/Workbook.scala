@@ -161,7 +161,7 @@ class Workbook ()
   def load(): Workbook = js.native
   def load(option: java.lang.String): Workbook = js.native
   def load(option: js.Array[java.lang.String]): Workbook = js.native
-  def load(option: officeDashJsLib.Anon_Select): Workbook = js.native
+  def load(option: officeDashJsLib.Anon_Expand): Workbook = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.WorkbookLoadOptions): Workbook = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

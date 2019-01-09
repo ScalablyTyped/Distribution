@@ -188,10 +188,6 @@ object KiiAnalytics extends js.Object {
     *     </ul>
     */
   def trackEventWithExtrasAndCallbacks(eventName: java.lang.String, extras: js.Any): js.Promise[scala.Unit] = js.native
-  def trackEventWithExtrasAndCallbacks(
-    eventName: java.lang.String,
-    extras: js.Any,
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessAny
-  ): js.Promise[scala.Unit] = js.native
+  def trackEventWithExtrasAndCallbacks(eventName: java.lang.String, extras: js.Any, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailure): js.Promise[scala.Unit] = js.native
 }
 

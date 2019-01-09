@@ -10,6 +10,6 @@ trait Anon_InstancePort extends js.Object {
   var instanceProtocol: java.lang.String
   var lbPort: scala.Double
   var lbProtocol: java.lang.String
-  var sslCertificateId: js.UndefOr[java.lang.String] = js.undefined
+  var sslCertificateId: java.lang.String
 }
 

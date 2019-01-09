@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Offline")
 @js.native
 object Offline extends js.Object {
-  var check: js.Function0[scala.Unit] = js.native
   var options: offlineDashJsLib.OfflineOptions = js.native
   var state: java.lang.String = js.native
+  def check(): scala.Unit = js.native
   def off(event: java.lang.String): scala.Unit = js.native
   def off(event: java.lang.String, handler: js.Function1[/* e */ stdLib.Event, _]): scala.Unit = js.native
   @JSName("off")

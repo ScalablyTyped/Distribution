@@ -17,7 +17,9 @@ trait S3LocationState extends js.Object {
   /**
     * Configuration block containing information for connecting to S3.
     */
-  val s3Config: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketAccessRoleArn]] = js.undefined
+  val s3Config: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketAccessRoleArnInput]
+  ] = js.undefined
   /**
     * Prefix to perform actions as source or destination.
     */

@@ -149,11 +149,11 @@ class Cluster protected ()
     * ARN of a source DB cluster or DB instance if this DB cluster is to be created as a Read Replica.
     */
   val replicationSourceIdentifier: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val s3Import: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SourceEngineVersionBucketPrefix]] = js.native
+  val s3Import: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketNameBucketPrefix]] = js.native
   /**
     * Nested attribute with scaling properties. Only valid when `engine_mode` is set to `serverless`. More details below.
     */
-  val scalingConfiguration: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SecondsUntilAutoPauseMinCapacity]] = js.native
+  val scalingConfiguration: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AutoPause]] = js.native
   /**
     * Determines whether a final DB snapshot is created before the DB cluster is deleted. If true is specified, no DB snapshot is created. If false is specified, a DB snapshot is created before the DB cluster is deleted, using the value from `final_snapshot_identifier`. Default is `false`.
     */

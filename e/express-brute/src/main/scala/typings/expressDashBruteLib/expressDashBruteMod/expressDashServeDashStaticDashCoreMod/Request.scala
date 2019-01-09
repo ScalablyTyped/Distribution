@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Request extends js.Object {
-  var brute: js.UndefOr[expressDashBruteLib.Anon_Reset] = js.undefined
+  var brute: js.UndefOr[expressDashBruteLib.Anon_Callback] = js.undefined
 }
 

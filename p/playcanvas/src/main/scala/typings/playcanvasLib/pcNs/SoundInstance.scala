@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.SoundInstance")
 @js.native
 class SoundInstance protected () extends js.Object {
-  def this(manager: SoundManager, sound: Sound, options: playcanvasLib.Anon_DurationLoopStartTime) = this()
+  def this(manager: SoundManager, sound: Sound, options: playcanvasLib.Anon_Duration) = this()
   var currentTime: scala.Double = js.native
   var duration: scala.Double = js.native
   var isPaused: scala.Boolean = js.native

@@ -12,6 +12,6 @@ trait IUtilDomRequest extends js.Object {
   	 * @param url URL to send XMLHttpRequest to
   	 */
   def request(url: java.lang.String): stdLib.XMLHttpRequest = js.native
-  def request(url: java.lang.String, options: fabricLib.Anon_OnComplete): stdLib.XMLHttpRequest = js.native
+  def request(url: java.lang.String, options: fabricLib.Anon_Method): stdLib.XMLHttpRequest = js.native
 }
 

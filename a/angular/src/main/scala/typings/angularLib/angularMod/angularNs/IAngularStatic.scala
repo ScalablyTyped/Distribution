@@ -28,7 +28,7 @@ trait IAngularStatic extends js.Object {
       angularLib.angularMod.angularNs.autoNs.IInjectorService
     ]
   ] = js.native
-  var version: angularLib.Anon_Dot = js.native
+  var version: angularLib.Anon_CodeName = js.native
   def bind(context: js.Any, fn: angularLib.angularMod.Global.Function, args: js.Any*): angularLib.angularMod.Global.Function = js.native
   def bootstrap(element: angularLib.JQuery): angularLib.angularMod.angularNs.autoNs.IInjectorService = js.native
   def bootstrap(

@@ -599,13 +599,13 @@ trait IApp
     * @param qTable - Name of the table. This parameter must be set for XLS, XLSX, HTML and XML files.
     * @returns - return a Promise Array of DataField or String.
     */
-  def getFileTableFields(qConnectionId: java.lang.String, qDataFormat: IFileDataFormat, qTable: java.lang.String): js.Promise[qlikDashEngineapiLib.Anon_QFormatSpecQFields] = js.native
+  def getFileTableFields(qConnectionId: java.lang.String, qDataFormat: IFileDataFormat, qTable: java.lang.String): js.Promise[qlikDashEngineapiLib.Anon_QFields] = js.native
   def getFileTableFields(
     qConnectionId: java.lang.String,
     qDataFormat: IFileDataFormat,
     qTable: java.lang.String,
     qRelativePath: java.lang.String
-  ): js.Promise[qlikDashEngineapiLib.Anon_QFormatSpecQFields] = js.native
+  ): js.Promise[qlikDashEngineapiLib.Anon_QFields] = js.native
   /**
     * Lists the values in a table for a folder connection.
     * @param qConnectionId - Identifier of the connection. >> This parameter is mandatory.
@@ -789,7 +789,7 @@ trait IApp
     qCellHeight: scala.Double,
     qSyntheticMode: scala.Boolean,
     qIncludeSysVars: scala.Boolean
-  ): js.Promise[qlikDashEngineapiLib.Anon_Qtr] = js.native
+  ): js.Promise[qlikDashEngineapiLib.Anon_Qk] = js.native
   /**
     * Fetches updated variables after a statement execution.
     *

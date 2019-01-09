@@ -64,6 +64,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("pc.VertexFormat")
 @js.native
 class VertexFormat protected () extends js.Object {
-  def this(graphicsDevice: GraphicsDevice, description: js.Array[playcanvasLib.Anon_Type]) = this()
+  def this(graphicsDevice: GraphicsDevice, description: js.Array[playcanvasLib.Anon_Components]) = this()
 }
 

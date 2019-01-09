@@ -35,8 +35,8 @@ trait JQueryAjaxSettings extends js.Object {
   /**
     * An object of string/regular-expression pairs that determine how jQuery will parse the response, given its content type. (version added: 1.5)
     */
-  var contents: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
+  var contents: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any
   ] = js.undefined
   /**
     * This object will be made the context of all Ajax-related callbacks. By default, the context is an object that represents the ajax settings used in the call ($.ajaxSettings merged with the settings passed to $.ajax).
@@ -45,8 +45,8 @@ trait JQueryAjaxSettings extends js.Object {
   /**
     * An object containing dataType-to-dataType converters. Each converter's value is a function that returns the transformed value of the response. (version added: 1.5)
     */
-  var converters: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
+  var converters: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any
   ] = js.undefined
   /**
     * If you wish to force a crossDomain request (such as JSONP) on the same domain, set the value of crossDomain to true. This allows, for example, server-side redirection to another domain. (version added: 1.5)
@@ -82,8 +82,8 @@ trait JQueryAjaxSettings extends js.Object {
   /**
     * An object of additional header key/value pairs to send along with requests using the XMLHttpRequest transport. The header X-Requested-With: XMLHttpRequest is always added, but its default XMLHttpRequest value can be changed here. Values in the headers setting can also be overwritten from within the beforeSend function. (version added: 1.5)
     */
-  var headers: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
+  var headers: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any
   ] = js.undefined
   /**
     * Allow the request to be successful only if the response has changed since the last request. This is done by checking the Last-Modified header. Default value is false, ignoring the header. In jQuery 1.4 this technique also checks the 'etag' specified by the server to catch unmodified data.
@@ -124,8 +124,8 @@ trait JQueryAjaxSettings extends js.Object {
   /**
     * An object of numeric HTTP codes and functions to be called when the response has the corresponding code. f the request is successful, the status code functions take the same parameters as the success callback; if it results in an error (including 3xx redirect), they take the same parameters as the error callback. (version added: 1.5)
     */
-  var statusCode: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
+  var statusCode: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any
   ] = js.undefined
   /**
     * A function to be called if the request succeeds. The function gets passed three arguments: The data returned from the server, formatted according to the dataType parameter; a string describing the status; and the jqXHR (in jQuery 1.4.x, XMLHttpRequest) object. As of jQuery 1.5, the success setting can accept an array of functions. Each function will be called in turn. This is an Ajax Event.
@@ -160,8 +160,8 @@ trait JQueryAjaxSettings extends js.Object {
   /**
     * An object of fieldName-fieldValue pairs to set on the native XHR object. For example, you can use it to set withCredentials to true for cross-domain requests if needed. In jQuery 1.5, the withCredentials property was not propagated to the native XHR and thus CORS requests requiring it would ignore this flag. For this reason, we recommend using jQuery 1.5.1+ should you require the use of it. (version added: 1.5.1)
     */
-  var xhrFields: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
+  var xhrFields: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any
   ] = js.undefined
 }
 

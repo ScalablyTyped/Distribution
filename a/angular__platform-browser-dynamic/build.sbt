@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "angular__platform-browser-dynamic"
-version := "7.2.0-3aed07"
-scalaVersion := "2.12.7"
+version := "7.2.0-5c4add"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular__common" % "7.2.0-e2c79c",
-  "org.scalablytyped" %%% "angular__compiler" % "7.2.0-48dce1",
-  "org.scalablytyped" %%% "angular__core" % "7.2.0-657956",
-  "org.scalablytyped" %%% "angular__platform-browser" % "7.2.0-d78f1a",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
-  "org.scalablytyped" %%% "rxjs" % "6.3.3-04e169",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-5f911d",
-  "org.scalablytyped" %%% "zone_dot_js" % "0.8.26-691c73")
+  "org.scalablytyped" %%% "angular__common" % "7.2.0-95d785",
+  "org.scalablytyped" %%% "angular__compiler" % "7.2.0-9771d7",
+  "org.scalablytyped" %%% "angular__core" % "7.2.0-07f995",
+  "org.scalablytyped" %%% "angular__platform-browser" % "7.2.0-382d5f",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2aa425",
+  "org.scalablytyped" %%% "rxjs" % "6.3.3-3de002",
+  "org.scalablytyped" %%% "std" % "3.2.2-f3cc98",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-d3fc19",
+  "org.scalablytyped" %%% "zone_dot_js" % "0.8.26-6aa699")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

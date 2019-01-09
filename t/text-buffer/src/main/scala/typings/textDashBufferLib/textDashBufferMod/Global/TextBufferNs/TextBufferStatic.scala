@@ -12,7 +12,7 @@ trait TextBufferStatic
 org.scalablytyped.runtime.Instantiable0[TextBuffer]
      with /** Create a new buffer with the given starting text. */
 org.scalablytyped.runtime.Instantiable1[
-      (/* params */ textDashBufferLib.Anon_Text) | (/* text */ java.lang.String), 
+      (/* params */ textDashBufferLib.Anon_ShouldDestroyOnFileDelete) | (/* text */ java.lang.String), 
       TextBuffer
     ] {
   var Point: PointStatic = js.native

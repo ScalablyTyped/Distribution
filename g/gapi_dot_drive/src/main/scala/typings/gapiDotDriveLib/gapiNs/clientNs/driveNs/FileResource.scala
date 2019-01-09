@@ -10,7 +10,7 @@ trait FileResource extends js.Object {
   var appDataContents: scala.Boolean
   var canComment: scala.Boolean
   var canReadRevisions: scala.Boolean
-  var capabilities: gapiDotDriveLib.Anon_CanUntrash
+  var capabilities: gapiDotDriveLib.Anon_CanAddChildren
   var copyable: scala.Boolean
   var createdDate: stdLib.Date
   // openWithLinks
@@ -30,12 +30,12 @@ trait FileResource extends js.Object {
   var headRevisionId: java.lang.String
   var iconLink: java.lang.String
   var id: java.lang.String
-  var imageMediaMetadata: gapiDotDriveLib.Anon_MaxApertureValue
+  var imageMediaMetadata: gapiDotDriveLib.Anon_Aperture
   // exportLinks
   var indexableText: gapiDotDriveLib.Anon_Text
   var isAppAuthorized: scala.Boolean
   var kind: gapiDotDriveLib.gapiDotDriveLibStrings.`drive#file`
-  var labels: gapiDotDriveLib.Anon_Trashed
+  var labels: gapiDotDriveLib.Anon_Hidden
   var lastModifyingUser: gapiDotDriveLib.Anon_DisplayName
   var lastModifyingUserName: java.lang.String
   var lastViewedByMeDate: stdLib.Date
@@ -59,7 +59,7 @@ trait FileResource extends js.Object {
   var sharingUser: gapiDotDriveLib.Anon_DisplayName
   var spaces: js.Array[java.lang.String]
   var teamDriveId: java.lang.String
-  var thumbnail: gapiDotDriveLib.Anon_MimType
+  var thumbnail: gapiDotDriveLib.Anon_Image
   var thumbnailLink: java.lang.String
   var title: java.lang.String
   var trashedDate: stdLib.Date

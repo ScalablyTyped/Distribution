@@ -44,7 +44,7 @@ object Plugin extends js.Object {
     * @param dependency {string} The dependency of the format `'module-name'` or `'module-name@version'`.
     * @return {object} The dependency parsed into its components.
     */
-  def dependencyParse(dependency: matterDashJsLib.matterDashJsMod.MatterNs.Dependency): matterDashJsLib.Anon_Range = js.native
+  def dependencyParse(dependency: matterDashJsLib.matterDashJsMod.MatterNs.Dependency): matterDashJsLib.Anon_Name = js.native
   /**
     * Returns `true` if `plugin.for` is applicable to `module` by comparing against `module.name` and `module.version`.
     * If `plugin.for` is not specified then it is assumed to be applicable.
@@ -123,7 +123,7 @@ object Plugin extends js.Object {
     * @param range {string} The version string.
     * @return {object} The version range parsed into its components.
     */
-  def versionParse(range: java.lang.String): matterDashJsLib.Anon_Number = js.native
+  def versionParse(range: java.lang.String): matterDashJsLib.Anon_IsRange = js.native
   /**
     * Returns `true` if `version` satisfies the given `range`.
     * See documentation for `Plugin.versionParse` for a description of the format.

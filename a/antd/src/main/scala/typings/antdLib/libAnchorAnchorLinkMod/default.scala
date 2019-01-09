@@ -12,7 +12,7 @@ class default () extends AnchorLink
 @JSImport("antd/lib/anchor/AnchorLink", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var contextTypes: antdLib.Anon_AntAnchorRequireable = js.native
+  var contextTypes: antdLib.Anon_AntAnchor = js.native
   var defaultProps: antdLib.Anon_HrefString = js.native
 }
 

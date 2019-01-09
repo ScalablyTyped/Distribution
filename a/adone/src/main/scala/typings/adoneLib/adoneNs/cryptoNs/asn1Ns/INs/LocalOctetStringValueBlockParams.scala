@@ -5,8 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalHexBlockParams because Would inherit conflicting mutable fields List(blockLength, error, valueBeforeDecode, warnings))*/
-trait LocalOctetStringValueBlockParams extends LocalConstructedValueBlockParams {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalHexBlockParams because var conflicts: blockLength, error, valueBeforeDecode, warnings. Inlined isHexOnly, valueHex */ trait LocalOctetStringValueBlockParams extends LocalConstructedValueBlockParams {
   var isConstructed: js.UndefOr[scala.Boolean] = js.undefined
+  var isHexOnly: js.UndefOr[scala.Boolean] = js.undefined
+  var valueHex: js.UndefOr[stdLib.ArrayBuffer] = js.undefined
 }
 

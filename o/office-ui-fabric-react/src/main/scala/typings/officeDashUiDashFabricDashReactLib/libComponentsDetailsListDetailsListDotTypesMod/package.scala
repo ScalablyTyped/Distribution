@@ -14,5 +14,5 @@ package object libComponentsDetailsListDetailsListDotTypesMod {
   ]) with (stdLib.Pick[
     IDetailsListProps, 
     officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.className
-  ]) with officeDashUiDashFabricDashReactLib.Anon_Compact
+  ]) with officeDashUiDashFabricDashReactLib.Anon_CompactIsFixed
 }

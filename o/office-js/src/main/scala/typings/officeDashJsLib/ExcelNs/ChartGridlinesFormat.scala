@@ -40,7 +40,7 @@ class ChartGridlinesFormat ()
   def load(): ChartGridlinesFormat = js.native
   def load(option: java.lang.String): ChartGridlinesFormat = js.native
   def load(option: js.Array[java.lang.String]): ChartGridlinesFormat = js.native
-  def load(option: officeDashJsLib.Anon_Select): ChartGridlinesFormat = js.native
+  def load(option: officeDashJsLib.Anon_Expand): ChartGridlinesFormat = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.ChartGridlinesFormatLoadOptions): ChartGridlinesFormat = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartGridlinesFormat): scala.Unit = js.native

@@ -9,7 +9,7 @@ trait Option extends js.Object {
   /**
     * Add default xml declaration (default false)
     */
-  var declaration: js.UndefOr[scala.Boolean | xmlLib.Anon_Standalone] = js.undefined
+  var declaration: js.UndefOr[scala.Boolean | xmlLib.Anon_Encoding] = js.undefined
   /**
     * String used for tab, defaults to no tabs (compressed)
     */

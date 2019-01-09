@@ -20,13 +20,7 @@ object Model extends js.Object {
   var JoinEagerAlgorithm: objectionLib.objectionMod.ObjectionNs.EagerAlgorithm = js.native
   var ManyToManyRelation: objectionLib.objectionMod.ObjectionNs.Relation = js.native
   var NaiveEagerAlgorithm: objectionLib.objectionMod.ObjectionNs.EagerAlgorithm = js.native
-  var QueryBuilder: org.scalablytyped.runtime.Instantiable0[
-    objectionLib.objectionMod.ObjectionNs.QueryBuilder[
-      objectionLib.objectionMod.ObjectionNs.Model, 
-      js.Array[objectionLib.objectionMod.ObjectionNs.Model], 
-      js.Array[objectionLib.objectionMod.ObjectionNs.Model]
-    ]
-  ] = js.native
+  var QueryBuilder: objectionLib.Anon_ForClass = js.native
   var WhereInEagerAlgorithm: objectionLib.objectionMod.ObjectionNs.EagerAlgorithm = js.native
   var columnNameMappers: objectionLib.objectionMod.ObjectionNs.ColumnNameMappers = js.native
   var dbRefProp: java.lang.String = js.native
@@ -140,12 +134,12 @@ object Model extends js.Object {
   def tableMetadata(): objectionLib.objectionMod.ObjectionNs.TableMetadata = js.native
   def tableMetadata(opt: objectionLib.objectionMod.ObjectionNs.TableMetadataOptions): objectionLib.objectionMod.ObjectionNs.TableMetadata = js.native
   def traverse(
-    filterConstructor: org.scalablytyped.runtime.Instantiable0[objectionLib.objectionMod.ObjectionNs.Model],
+    filterConstructor: objectionLib.Anon_Args,
     models: js.Array[objectionLib.objectionMod.ObjectionNs.Model],
     traverser: objectionLib.objectionMod.ObjectionNs.TraverserFunction
   ): scala.Unit = js.native
   def traverse(
-    filterConstructor: org.scalablytyped.runtime.Instantiable0[objectionLib.objectionMod.ObjectionNs.Model],
+    filterConstructor: objectionLib.Anon_Args,
     models: objectionLib.objectionMod.ObjectionNs.Model,
     traverser: objectionLib.objectionMod.ObjectionNs.TraverserFunction
   ): scala.Unit = js.native

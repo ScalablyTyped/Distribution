@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait OperationsResource extends js.Object {
   /** Gets information about a specific operation. */
-  def get(request: gapiDotClientDotDeploymentmanagerLib.Anon_ProjectPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def get(request: gapiDotClientDotDeploymentmanagerLib.Anon_AltFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Lists all operations for a project. */
-  def list(request: gapiDotClientDotDeploymentmanagerLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[OperationsListResponse]
+  def list(request: gapiDotClientDotDeploymentmanagerLib.Anon_AltFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[OperationsListResponse]
 }
 

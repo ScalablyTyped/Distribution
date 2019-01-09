@@ -14,6 +14,6 @@ class default ()
 @js.native
 object default extends js.Object {
   var defaultProps: antdLib.Anon_Gutter = js.native
-  var propTypes: antdLib.Anon_Children = js.native
+  var propTypes: antdLib.Anon_Align = js.native
 }
 

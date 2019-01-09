@@ -61,7 +61,7 @@ trait JQueryJqGridColumn extends js.Object {
     * @returns {} the formatted value
     */
   var formatter: js.UndefOr[
-    jqgridLib.jqgridLibStrings.integer | jqgridLib.jqgridLibStrings.number | jqgridLib.jqgridLibStrings.currency | jqgridLib.jqgridLibStrings.date | jqgridLib.jqgridLibStrings.email | jqgridLib.jqgridLibStrings.link | jqgridLib.jqgridLibStrings.showlink | jqgridLib.jqgridLibStrings.checkbox | jqgridLib.jqgridLibStrings.select | jqgridLib.jqgridLibStrings.actions | (js.Function3[/* cellvalue */ js.Any, /* options */ Anon_RowId, /* rowObject */ js.Any, _])
+    jqgridLib.jqgridLibStrings.integer | jqgridLib.jqgridLibStrings.number | jqgridLib.jqgridLibStrings.currency | jqgridLib.jqgridLibStrings.date | jqgridLib.jqgridLibStrings.email | jqgridLib.jqgridLibStrings.link | jqgridLib.jqgridLibStrings.showlink | jqgridLib.jqgridLibStrings.checkbox | jqgridLib.jqgridLibStrings.select | jqgridLib.jqgridLibStrings.actions | (js.Function3[/* cellvalue */ js.Any, /* options */ Anon_ColModel, /* rowObject */ js.Any, _])
   ] = js.undefined
   /**
     * Defines if this column is hidden at initialization.

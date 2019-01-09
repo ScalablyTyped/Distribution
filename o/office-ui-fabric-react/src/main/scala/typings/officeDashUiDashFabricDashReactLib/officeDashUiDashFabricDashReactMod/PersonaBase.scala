@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(officeDashUiDashFabricDashReactLib.libPersonaCoinMod.PersonaBase because Inheritance from two classes)*/
-@JSImport("office-ui-fabric-react", "PersonaBase")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- officeDashUiDashFabricDashReactLib.libPersonaCoinMod.PersonaBase because Inheritance from two classes */ @JSImport("office-ui-fabric-react", "PersonaBase")
 @js.native
 class PersonaBase protected ()
   extends officeDashUiDashFabricDashReactLib.libPersonaMod.PersonaBase {

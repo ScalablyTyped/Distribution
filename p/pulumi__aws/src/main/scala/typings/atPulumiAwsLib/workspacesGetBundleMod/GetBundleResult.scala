@@ -9,7 +9,7 @@ trait GetBundleResult extends js.Object {
   /**
     * The compute type. See supported fields below.
     */
-  val computeTypes: js.Array[atPulumiAwsLib.Anon_NameString]
+  val computeTypes: js.Array[atPulumiAwsLib.Anon_NameString_201725593]
   /**
     * The description of the bundle.
     */

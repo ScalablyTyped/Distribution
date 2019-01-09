@@ -61,7 +61,7 @@ class Image ()
   def load(): Image = js.native
   def load(option: java.lang.String): Image = js.native
   def load(option: js.Array[java.lang.String]): Image = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Image = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Image = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ImageLoadOptions): Image = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)

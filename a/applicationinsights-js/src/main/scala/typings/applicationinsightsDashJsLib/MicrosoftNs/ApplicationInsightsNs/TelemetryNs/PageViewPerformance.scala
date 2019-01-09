@@ -24,7 +24,7 @@ class PageViewPerformance protected ()
   /* CompleteClass */
   override var aiDataContract: js.Any = js.native
   @JSName("aiDataContract")
-  var aiDataContract_PageViewPerformance: applicationinsightsDashJsLib.Anon_DurationPerfTotal = js.native
+  var aiDataContract_PageViewPerformance: applicationinsightsDashJsLib.Anon_DomProcessing = js.native
   var durationMs: js.Any = js.native
   /**
     * Field indicating whether this instance of PageViewPerformance is valid and should be sent

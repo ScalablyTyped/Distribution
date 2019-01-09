@@ -44,10 +44,7 @@ package object ObjectionNs {
     QueryBuilder[QM, RM, RV]
   ]
   type PartialUpdate[QM /* <: Model */] = objectionLib.objectionLibStrings.PartialUpdate with QM
-  type Plugin = js.Function1[
-    /* modelClass */ org.scalablytyped.runtime.Instantiable0[Model], 
-    org.scalablytyped.runtime.Instantiable0[Model]
-  ]
+  type Plugin = js.Function1[/* modelClass */ objectionLib.Anon_Args, objectionLib.Anon_Args]
   type QueryBuilderYieldingOne[QM /* <: Model */] = QueryBuilder[QM, QM, QM]
   type QueryBuilderYieldingOneOrNone[QM /* <: Model */] = QueryBuilder[QM, QM, js.UndefOr[QM]]
   type Raw = knexLib.knexMod.KnexNs.Raw

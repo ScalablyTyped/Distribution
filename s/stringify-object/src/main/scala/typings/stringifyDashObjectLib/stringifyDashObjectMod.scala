@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object stringifyDashObjectMod extends js.Object {
   def apply(o: js.Any): java.lang.String = js.native
-  def apply(o: js.Any, options: stringifyDashObjectLib.Anon_SingleQuotes): java.lang.String = js.native
+  def apply(o: js.Any, options: stringifyDashObjectLib.Anon_Filter): java.lang.String = js.native
 }
 

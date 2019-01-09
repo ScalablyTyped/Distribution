@@ -20,7 +20,7 @@ object NotificationsNs extends js.Object {
   }
   
   trait LocalNotification extends js.Object {
-    var android: js.UndefOr[expoLib.Anon_Priority] = js.undefined
+    var android: js.UndefOr[expoLib.Anon_Color] = js.undefined
     var body: js.UndefOr[java.lang.String] = js.undefined
     var data: js.UndefOr[js.Any] = js.undefined
     var ios: js.UndefOr[expoLib.Anon_SoundBoolean] = js.undefined

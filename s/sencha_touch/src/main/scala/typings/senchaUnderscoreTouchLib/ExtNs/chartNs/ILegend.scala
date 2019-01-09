@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait ILegend
   extends senchaUnderscoreTouchLib.ExtNs.dataviewNs.IDataView {
-  /** [Config Option] (Boolean) */
-  var disableSelection: js.UndefOr[scala.Boolean] = js.undefined
   /** [Method] Returns the value of horizontalHeight
   		* @returns Number
   		*/

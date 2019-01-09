@@ -1,26 +1,26 @@
 organization := "org.scalablytyped"
 name := "vue__component-compiler-utils"
-version := "2.4.0-3443c2"
-scalaVersion := "2.12.7"
+version := "2.4.0-55ff99"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-25ff53",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-03fd26",
-  "org.scalablytyped" %%% "chalk" % "2.4.2-b06515",
-  "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-a35d04",
-  "org.scalablytyped" %%% "consolidate" % "0.0-unknown-dt-20180712Z-2d5609",
-  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-4eeb6b",
-  "org.scalablytyped" %%% "hash-sum" % "1.0-dt-20180822Z-992671",
-  "org.scalablytyped" %%% "js-base64" % "2.3-dt-20180214Z-f8e340",
-  "org.scalablytyped" %%% "lru-cache" % "4.1-dt-20180530Z-90c559",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
-  "org.scalablytyped" %%% "postcss" % "5.2.18-b9299a",
-  "org.scalablytyped" %%% "prettier" % "1.15-dt-20181124Z-a6c34e",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-fc8207",
-  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",
-  "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-a489b6")
+  "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-1b78a1",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-a33d29",
+  "org.scalablytyped" %%% "chalk" % "2.4.2-38684c",
+  "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-58487f",
+  "org.scalablytyped" %%% "consolidate" % "0.0-unknown-dt-20180712Z-abf372",
+  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-ec7424",
+  "org.scalablytyped" %%% "hash-sum" % "1.0-dt-20180822Z-0bb8b8",
+  "org.scalablytyped" %%% "js-base64" % "2.3-dt-20180214Z-80aedd",
+  "org.scalablytyped" %%% "lru-cache" % "4.1-dt-20180530Z-a950ce",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2aa425",
+  "org.scalablytyped" %%% "postcss" % "5.2.18-20982a",
+  "org.scalablytyped" %%% "prettier" % "1.15-dt-20181124Z-752e7c",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-8fe344",
+  "org.scalablytyped" %%% "std" % "3.2.2-f3cc98",
+  "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-729b1c")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

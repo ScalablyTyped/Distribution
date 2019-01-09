@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Limit extends js.Object {
   var limit: scala.Double
   var max_usage: scala.Double
-  var stats: Anon_Activefile
+  var stats: Anon_Activeanon
   var usage: scala.Double
 }
 

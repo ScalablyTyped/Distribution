@@ -16,7 +16,7 @@ trait SESTransport
   var mailer_SESTransport: nodemailerLib.libMailerMod.namespaced = js.native
   var maxConnections: scala.Double = js.native
   var options: nodemailerLib.libSesDashTransportMod.SESTransportNs.Options = js.native
-  var pending: js.Array[nodemailerLib.Anon_Mail] = js.native
+  var pending: js.Array[nodemailerLib.Anon_Callback] = js.native
   var rateInterval: scala.Double = js.native
   var rateMessages: js.Array[nodemailerLib.Anon_Pending] = js.native
   var sendingRate: scala.Double = js.native

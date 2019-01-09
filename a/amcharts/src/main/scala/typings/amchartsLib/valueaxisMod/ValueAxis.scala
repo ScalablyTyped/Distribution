@@ -188,7 +188,10 @@ trait ValueAxis
     * @param type One of "axisChanged", "axisZoomed", "logarithmicAxisFailed".
     * @param handler The event handler.
     */
-  def addListener(`type`: java.lang.String, handler: js.Function1[/* e */ amchartsLib.Anon_TypeEndValue, scala.Unit]): scala.Unit = js.native
+  def addListener(
+    `type`: java.lang.String,
+    handler: js.Function1[/* e */ amchartsLib.Anon_ChartEndValue, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Number, - value of coordinate. Returns value of the coordinate.  coordinate - y or x coordinate, in pixels.
     */

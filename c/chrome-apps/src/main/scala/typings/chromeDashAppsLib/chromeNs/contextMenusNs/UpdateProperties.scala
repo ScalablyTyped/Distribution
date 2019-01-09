@@ -11,11 +11,11 @@ trait UpdateProperties extends js.Object {
   var contexts: js.UndefOr[
     js.Array[
       chromeDashAppsLib.chromeNs.ToStringLiteral[
-        chromeDashAppsLib.Anon_BROWSERACTION, 
+        chromeDashAppsLib.Anon_ALL, 
         java.lang.String, 
         stdLib.Exclude[
           java.lang.String, 
-          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_BROWSERACTION[keyof chrome-apps.Anon_BROWSERACTION] */ js.Any
+          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ALL[keyof chrome-apps.Anon_ALL] */ js.Any
         ]
       ]
     ]
@@ -34,11 +34,11 @@ trait UpdateProperties extends js.Object {
   /** @see ItemType */
   var `type`: js.UndefOr[
     chromeDashAppsLib.chromeNs.ToStringLiteral[
-      chromeDashAppsLib.Anon_NORMALNormal, 
+      chromeDashAppsLib.Anon_CHECKBOX, 
       java.lang.String, 
       stdLib.Exclude[
         java.lang.String, 
-        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_NORMALNormal[keyof chrome-apps.Anon_NORMALNormal] */ js.Any
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHECKBOX[keyof chrome-apps.Anon_CHECKBOX] */ js.Any
       ]
     ]
   ] = js.undefined

@@ -37,6 +37,8 @@ trait ConnectionState extends js.Object {
   /**
     * A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
     */
-  val physicalConnectionRequirements: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SubnetId]] = js.undefined
+  val physicalConnectionRequirements: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AvailabilityZoneSecurityGroupIdListsSubnetId]
+  ] = js.undefined
 }
 

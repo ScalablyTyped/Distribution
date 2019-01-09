@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait LocalLengthBlockParams extends js.Object {
-  var lenBlock: js.UndefOr[adoneLib.Anon_LongFormUsed] = js.undefined
+  var lenBlock: js.UndefOr[adoneLib.Anon_IsIndefiniteForm] = js.undefined
 }
 

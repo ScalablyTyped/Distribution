@@ -15,11 +15,11 @@ trait FileStatusInfo extends js.Object {
     * @see FileStatus
     */
   var status: chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_SYNCED, 
+    chromeDashAppsLib.Anon_CONFLICTING, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_SYNCED[keyof chrome-apps.Anon_SYNCED] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CONFLICTING[keyof chrome-apps.Anon_CONFLICTING] */ js.Any
     ]
   ]
 }

@@ -28,7 +28,7 @@ class AjaxAppender protected () extends Appender {
   	 * Returns an array of the additional headers that are sent with each HTTP request. Each array item is an object with
   	 * properties name and value.
   	 */
-  def getHeaders(): js.Array[log4javascriptLib.Anon_Value] = js.native
+  def getHeaders(): js.Array[log4javascriptLib.Anon_Name] = js.native
   /**
   	 * Returns the post variable name whose value will the formatted log message(s) for each request.
   	 */

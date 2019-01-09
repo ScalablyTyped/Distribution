@@ -10,9 +10,9 @@ trait Anon_Actor extends js.Object {
     * If this activity's object is itself another activity, such as when a person reshares an activity, this property specifies the original activity's
     * actor.
     */
-  var actor: js.UndefOr[Anon_DisplayNameUrl] = js.undefined
+  var actor: js.UndefOr[Anon_ClientSpecificActorInfoDisplayName] = js.undefined
   /** The media objects attached to this activity. */
-  var attachments: js.UndefOr[js.Array[Anon_DisplayNameUrlImage]] = js.undefined
+  var attachments: js.UndefOr[js.Array[Anon_Content]] = js.undefined
   /** The HTML-formatted content, which is suitable for display. */
   var content: js.UndefOr[java.lang.String] = js.undefined
   /** The ID of the object. When resharing an activity, this is the ID of the activity that is being reshared. */
@@ -35,7 +35,7 @@ trait Anon_Actor extends js.Object {
   /** People who reshared this activity. */
   var resharers: js.UndefOr[Anon_SelfLink] = js.undefined
   /** Status of the activity as seen by the viewer. */
-  var statusForViewer: js.UndefOr[Anon_IsPlusOned] = js.undefined
+  var statusForViewer: js.UndefOr[Anon_CanComment] = js.undefined
   /** The URL that points to the linked resource. */
   var url: js.UndefOr[java.lang.String] = js.undefined
 }

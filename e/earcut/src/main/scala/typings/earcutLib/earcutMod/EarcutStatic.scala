@@ -77,6 +77,6 @@ trait EarcutStatic extends js.Object {
   	 * 	const triangles = earcut(data.vertices, data.holes, data.dimensions);
   	 * @param data Arrays of rings, with the first being the outline and the rest holes. A ring is an array points, each point being an array of numbers.
   	 */
-  def flatten(data: stdLib.ArrayLike[stdLib.ArrayLike[stdLib.ArrayLike[scala.Double]]]): earcutLib.Anon_Vertices = js.native
+  def flatten(data: stdLib.ArrayLike[stdLib.ArrayLike[stdLib.ArrayLike[scala.Double]]]): earcutLib.Anon_Dimensions = js.native
 }
 

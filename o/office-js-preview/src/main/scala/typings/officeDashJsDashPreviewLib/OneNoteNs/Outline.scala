@@ -102,7 +102,7 @@ class Outline ()
   def load(): Outline = js.native
   def load(option: java.lang.String): Outline = js.native
   def load(option: js.Array[java.lang.String]): Outline = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Outline = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Outline = js.native
   def load(option: officeDashJsDashPreviewLib.OneNoteNs.InterfacesNs.OutlineLoadOptions): Outline = js.native
   def toJSON(): officeDashJsDashPreviewLib.OneNoteNs.InterfacesNs.OutlineData = js.native
   /**

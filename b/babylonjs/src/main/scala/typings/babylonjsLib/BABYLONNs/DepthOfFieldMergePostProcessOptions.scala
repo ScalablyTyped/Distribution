@@ -14,11 +14,11 @@ class DepthOfFieldMergePostProcessOptions () extends js.Object {
   /**
     * Parameters to perform the merge of bloom effect
     */
-  var bloom: js.UndefOr[babylonjsLib.Anon_Weight] = js.native
+  var bloom: js.UndefOr[babylonjsLib.Anon_Blurred] = js.native
   /**
     * Parameters to perform the merge of the depth of field effect
     */
-  var depthOfField: js.UndefOr[babylonjsLib.Anon_CircleOfConfusion] = js.native
+  var depthOfField: js.UndefOr[babylonjsLib.Anon_BlurSteps] = js.native
   /**
     * The original image to merge on top of
     */

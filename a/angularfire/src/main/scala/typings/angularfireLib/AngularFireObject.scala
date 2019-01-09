@@ -76,7 +76,7 @@ trait AngularFireObject extends AngularFireSimpleObject {
   	 */
   @JSName("$remove")
   def $remove(): angularLib.angularMod.angularNs.IPromise[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Firebase */ _
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   /**
   	 * Saves all data on the FirebaseObject back to Firebase.
@@ -84,7 +84,7 @@ trait AngularFireObject extends AngularFireSimpleObject {
   	 */
   @JSName("$save")
   def $save(): angularLib.angularMod.angularNs.IPromise[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Firebase */ _
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Firebase */ _
   ] = js.native
   /**
   	 * Listeners passed into this method are notified whenever a new change is received

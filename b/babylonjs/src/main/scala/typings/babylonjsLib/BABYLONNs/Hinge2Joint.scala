@@ -17,7 +17,5 @@ class Hinge2Joint protected () extends MotorEnabledJoint {
     * @param jointData The joint data for the Hinge2-Joint
     */
   def this(jointData: PhysicsJointData) = this()
-  def setLimit(upperLimit: scala.Double, lowerLimit: scala.Double, motorIndex: scala.Double): scala.Unit = js.native
-  def setMotor(force: scala.Double, maxForce: scala.Double, motorIndex: scala.Double): scala.Unit = js.native
 }
 

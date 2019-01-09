@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait FS extends js.Object {
   @JSName("readFileSync")
-  var readFileSync_Original: jsonfileLib.Anon_PathOptions = js.native
+  var readFileSync_Original: jsonfileLib.Anon_Options = js.native
   @JSName("readFile")
-  var readFile_Original: jsonfileLib.Anon_PathCallback = js.native
+  var readFile_Original: jsonfileLib.Anon_Callback = js.native
   @JSName("writeFileSync")
-  var writeFileSync_Original: jsonfileLib.Anon_PathData = js.native
+  var writeFileSync_Original: jsonfileLib.Anon_Data = js.native
   @JSName("writeFile")
-  var writeFile_Original: jsonfileLib.Anon_Path = js.native
+  var writeFile_Original: jsonfileLib.Anon_CallbackData = js.native
   def readFile(
     path: nodeLib.fsMod.PathLike,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
@@ -39,7 +39,7 @@ trait FS extends js.Object {
   ): scala.Unit = js.native
   def readFile(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_EncodingFlagStringNull,
+    options: nodeLib.Anon_EncodingFlagNull,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* data */ java.lang.String | nodeLib.Buffer, 
@@ -89,7 +89,7 @@ trait FS extends js.Object {
   ): scala.Unit = js.native
   def readFile(
     path: scala.Double,
-    options: nodeLib.Anon_EncodingFlagStringNull,
+    options: nodeLib.Anon_EncodingFlagNull,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* data */ java.lang.String | nodeLib.Buffer, 
@@ -118,13 +118,13 @@ trait FS extends js.Object {
   def readFileSync(path: nodeLib.fsMod.PathLike): java.lang.String | nodeLib.Buffer = js.native
   def readFileSync(path: nodeLib.fsMod.PathLike, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
   def readFileSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlag): nodeLib.Buffer = js.native
+  def readFileSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagNull): java.lang.String | nodeLib.Buffer = js.native
   def readFileSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagString): java.lang.String = js.native
-  def readFileSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingFlagStringNull): java.lang.String | nodeLib.Buffer = js.native
   def readFileSync(path: scala.Double): java.lang.String | nodeLib.Buffer = js.native
   def readFileSync(path: scala.Double, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
   def readFileSync(path: scala.Double, options: nodeLib.Anon_EncodingFlag): nodeLib.Buffer = js.native
+  def readFileSync(path: scala.Double, options: nodeLib.Anon_EncodingFlagNull): java.lang.String | nodeLib.Buffer = js.native
   def readFileSync(path: scala.Double, options: nodeLib.Anon_EncodingFlagString): java.lang.String = js.native
-  def readFileSync(path: scala.Double, options: nodeLib.Anon_EncodingFlagStringNull): java.lang.String | nodeLib.Buffer = js.native
   @JSName("readFileSync")
   def readFileSync_Buffer(path: nodeLib.fsMod.PathLike): nodeLib.Buffer = js.native
   @JSName("readFileSync")

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Policy extends js.Object {
   /** An association between a role, which comes with a set of permissions, and members who may assume that role. */
-  var bindings: js.UndefOr[js.Array[gapiDotClientDotStorageLib.Anon_Role]] = js.undefined
+  var bindings: js.UndefOr[js.Array[gapiDotClientDotStorageLib.Anon_Condition]] = js.undefined
   /** HTTP 1.1  Entity tag for the policy. */
   var etag: js.UndefOr[java.lang.String] = js.undefined
   /** The kind of item this is. For policies, this is always storage#policy. This field is ignored on input. */

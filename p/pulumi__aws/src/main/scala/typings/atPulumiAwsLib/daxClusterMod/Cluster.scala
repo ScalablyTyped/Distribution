@@ -98,7 +98,7 @@ class Cluster protected ()
   /**
     * Encrypt at rest options
     */
-  val serverSideEncryption: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EnabledBooleanOptional]] = js.native
+  val serverSideEncryption: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EnabledBoolean]] = js.native
   /**
     * Name of the subnet group to be used for the
     * cluster

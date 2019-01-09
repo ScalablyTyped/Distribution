@@ -33,7 +33,7 @@ class Alias protected ()
   /**
     * Specifies the fleet and/or routing type to use for the alias.
     */
-  val routingStrategy: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_FleetIdType] = js.native
+  val routingStrategy: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_FleetId] = js.native
 }
 
 @JSImport("@pulumi/aws/gamelift/alias", "Alias")

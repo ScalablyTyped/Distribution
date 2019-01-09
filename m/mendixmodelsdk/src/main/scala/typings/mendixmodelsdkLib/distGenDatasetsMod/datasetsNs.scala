@@ -11,13 +11,13 @@ object datasetsNs extends js.Object {
   /**
     * See: {@link https://docs.mendix.com/refguide7/data-sets relevant section in reference guide}
     */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.IDataSet because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.IDataSet because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined parameters, asLoaded, load, load, load, load */ @js.native
   class DataSet protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
     var dataSetAccess: DataSetAccess = js.native
-    val parameters: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[DataSetParameter] = js.native
+    val parameters: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[DataSetParameter | IDataSetParameter] = js.native
     var source: DataSetSource = js.native
   }
   
@@ -100,13 +100,13 @@ object datasetsNs extends js.Object {
     var name: java.lang.String = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.IDataSetParameter because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
-  @js.native
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.IDataSetParameter because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined containerAsDataSet, name, asLoaded, load, load, load, load */ @js.native
   class DataSetParameter protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     val constraints: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[DataSetParameterConstraint] = js.native
-    val containerAsDataSet: DataSet = js.native
+    val containerAsDataSet: DataSet | IDataSet = js.native
     @JSName("model")
     var model_DataSetParameter: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     var name: java.lang.String = js.native

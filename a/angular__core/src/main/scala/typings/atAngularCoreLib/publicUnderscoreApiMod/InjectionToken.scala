@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 class InjectionToken[T] protected ()
   extends atAngularCoreLib.srcCoreMod.InjectionToken[T] {
   def this(_desc: java.lang.String) = this()
-  def this(_desc: java.lang.String, options: atAngularCoreLib.Anon_Factory[T]) = this()
+  def this(_desc: java.lang.String, options: atAngularCoreLib.Anon_FactoryProvidedIn[T]) = this()
 }
 

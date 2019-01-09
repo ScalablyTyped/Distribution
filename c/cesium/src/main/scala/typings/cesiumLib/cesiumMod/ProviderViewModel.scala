@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ProviderViewModel protected ()
   extends cesiumLib.cesiumMod.CesiumNs.ProviderViewModel {
-  def this(options: cesiumLib.Anon_Tooltip) = this()
+  def this(options: cesiumLib.Anon_CreationFunction) = this()
   /* CompleteClass */
   override var creationCommand: cesiumLib.cesiumMod.CesiumNs.Command = js.native
   /* CompleteClass */

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GoogleEarthEnterpriseImageryProvider protected ()
   extends cesiumLib.cesiumMod.CesiumNs.GoogleEarthEnterpriseImageryProvider {
-  def this(options: cesiumLib.Anon_UrlCreditEllipsoid) = this()
+  def this(options: cesiumLib.Anon_CreditEllipsoidMetadata) = this()
   /* CompleteClass */
   override var credit: cesiumLib.cesiumMod.CesiumNs.Credit = js.native
   /* CompleteClass */

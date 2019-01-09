@@ -24,6 +24,6 @@ class TFClient protected ()
     *   * serverName (optional) - the name of the tf2_web_republisher server
     *   * repubServiceName (optional) - the name of the republish_tfs service (non groovy compatibility mode only) default: '/republish_tfs'
     */
-  def this(options: roslibLib.Anon_Rate) = this()
+  def this(options: roslibLib.Anon_AngularThres) = this()
 }
 

@@ -11,10 +11,9 @@ trait Anon_ColumnSizeChanged extends js.Object {
     * @param {ng.IScope} scope Grid Scope
     * @param {columnSizeChangedHandler} handler Callback
     */
-  var columnSizeChanged: js.Function2[
-    /* scope */ angularLib.angularMod.angularNs.IScope, 
-    /* handler */ uiDashGridLib.uiDashGridMod.uiGridNs.resizeColumnsNs.columnSizeChangedHandler, 
-    scala.Unit
-  ]
+  def columnSizeChanged(
+    scope: angularLib.angularMod.angularNs.IScope,
+    handler: uiDashGridLib.uiDashGridMod.uiGridNs.resizeColumnsNs.columnSizeChangedHandler
+  ): scala.Unit
 }
 

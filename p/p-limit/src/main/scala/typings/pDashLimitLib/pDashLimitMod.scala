@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("p-limit", JSImport.Namespace)
 @js.native
 object pDashLimitMod extends js.Object {
-  def apply(concurrency: scala.Double): pDashLimitLib.Anon_Cb = js.native
+  def apply(concurrency: scala.Double): pDashLimitLib.Anon_A = js.native
 }
 

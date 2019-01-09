@@ -13,8 +13,8 @@ object netNs extends js.Object {
   class Server ()
     extends nodeLib.netMod.Server {
     def this(connectionListener: js.Function1[/* socket */ nodeLib.netMod.Socket, scala.Unit]) = this()
-    def this(options: nodeLib.Anon_PauseOnConnect) = this()
-    def this(options: nodeLib.Anon_PauseOnConnect, connectionListener: js.Function1[/* socket */ nodeLib.netMod.Socket, scala.Unit]) = this()
+    def this(options: nodeLib.Anon_AllowHalfOpen) = this()
+    def this(options: nodeLib.Anon_AllowHalfOpen, connectionListener: js.Function1[/* socket */ nodeLib.netMod.Socket, scala.Unit]) = this()
   }
   
   @js.native
@@ -39,9 +39,9 @@ object netNs extends js.Object {
   def createConnection(port: scala.Double, host: java.lang.String, connectionListener: js.Function): nodeLib.netMod.Socket = js.native
   def createServer(): nodeLib.netMod.Server = js.native
   def createServer(connectionListener: js.Function1[/* socket */ nodeLib.netMod.Socket, scala.Unit]): nodeLib.netMod.Server = js.native
-  def createServer(options: nodeLib.Anon_PauseOnConnect): nodeLib.netMod.Server = js.native
+  def createServer(options: nodeLib.Anon_AllowHalfOpen): nodeLib.netMod.Server = js.native
   def createServer(
-    options: nodeLib.Anon_PauseOnConnect,
+    options: nodeLib.Anon_AllowHalfOpen,
     connectionListener: js.Function1[/* socket */ nodeLib.netMod.Socket, scala.Unit]
   ): nodeLib.netMod.Server = js.native
   def isIP(input: java.lang.String): scala.Double = js.native

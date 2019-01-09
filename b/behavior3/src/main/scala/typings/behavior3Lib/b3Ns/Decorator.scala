@@ -47,6 +47,6 @@ import scala.scalajs.js.annotation._
   * Creates an instance of Decorator.
   */
 class Decorator () extends BaseNode {
-  def this(hasChildNameTitleProperties: behavior3Lib.Anon_Name) = this()
+  def this(hasChildNameTitleProperties: behavior3Lib.Anon_Child) = this()
 }
 

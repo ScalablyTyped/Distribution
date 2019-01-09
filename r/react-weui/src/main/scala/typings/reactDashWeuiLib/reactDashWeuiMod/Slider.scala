@@ -21,6 +21,6 @@ class Slider protected () extends js.Object {
 @JSImport("react-weui", "Slider")
 @js.native
 object Slider extends js.Object {
-  var defaultProps: reactDashWeuiLib.Anon_Step = js.native
+  var defaultProps: reactDashWeuiLib.Anon_DefaultValue = js.native
 }
 

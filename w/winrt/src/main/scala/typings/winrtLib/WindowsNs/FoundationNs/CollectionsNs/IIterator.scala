@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait IIterator[T] extends js.Object {
   var current: T
   var hasCurrent: scala.Boolean
-  def getMany(): winrtLib.Anon_ItemsReturnValueArrayT[T]
+  def getMany(): winrtLib.Anon_Items[T]
   def moveNext(): scala.Boolean
 }
 

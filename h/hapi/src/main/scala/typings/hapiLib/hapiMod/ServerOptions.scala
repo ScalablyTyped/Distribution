@@ -64,7 +64,7 @@ trait ServerOptions extends js.Object {
     * or request to ['error']. To turn off all output set the log or request to false. To display all server logs, set the log or request to '*'. To disable all debug information, set debug to
     * false.
     */
-  var debug: js.UndefOr[hapiLib.hapiLibNumbers.`false` | hapiLib.Anon_Log] = js.undefined
+  var debug: js.UndefOr[hapiLib.hapiLibNumbers.`false` | hapiLib.Anon_False] = js.undefined
   /**
     * Default value: the operating system hostname and if not available, to 'localhost'.
     * The public hostname or IP address. Used to set server.info.host and server.info.uri and as address is none provided.
@@ -135,7 +135,7 @@ trait ServerOptions extends js.Object {
     */
   // TODO I am not sure if I need to use all the server.state() definition (like the default value) OR only the options below. The v16 use "any" here.
   // state?: ServerStateCookieOptions;
-  var state: js.UndefOr[hapiLib.Anon_IsHttpOnly] = js.undefined
+  var state: js.UndefOr[hapiLib.Anon_Base64] = js.undefined
   /**
     * Default value: none.
     * Used to create an HTTPS connection. The tls object is passed unchanged to the node HTTPS server as described in the node HTTPS documentation.

@@ -36,7 +36,7 @@ trait IZoomableView[T] extends js.Object {
     * Retrieves the current item of the zoomed in or zoomed out child of the custom control.
     * @returns An object that represents the selected item. This return value must be a Promise for the following: item, position.
     **/
-  def getCurrentItem(): winjsLib.WinJSNs.Promise[winjsLib.Anon_Position[T]]
+  def getCurrentItem(): winjsLib.WinJSNs.Promise[winjsLib.Anon_Item[T]]
   /**
     * Retrieves the panning axis of the zoomed-in or zoomed-out child of the custom control.
     * @returns Identifies the panning axis of the child control. Implementation specific.

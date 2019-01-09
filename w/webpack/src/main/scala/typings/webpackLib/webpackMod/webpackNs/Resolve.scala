@@ -27,7 +27,7 @@ trait Resolve extends js.Object {
     *
     * Defaults to `() => true`.
     */
-  var cachePredicate: js.UndefOr[js.Function1[/* data */ webpackLib.Anon_Request, scala.Boolean]] = js.undefined
+  var cachePredicate: js.UndefOr[js.Function1[/* data */ webpackLib.Anon_Path, scala.Boolean]] = js.undefined
   /**
     * If unsafe cache is enabled, includes request.context in the cache key.
     * This option is taken into account by the enhanced-resolve module.

@@ -24,9 +24,9 @@ class Client () extends js.Object {
     connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _],
     errorCallback: js.Function1[/* error */ Frame | java.lang.String, _]
   ): js.Any = js.native
-  def connect(headers: stompjsLib.Anon_Passcode, connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _]): js.Any = js.native
+  def connect(headers: stompjsLib.Anon_Host, connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _]): js.Any = js.native
   def connect(
-    headers: stompjsLib.Anon_Passcode,
+    headers: stompjsLib.Anon_Host,
     connectCallback: js.Function1[/* frame */ js.UndefOr[Frame], _],
     errorCallback: js.Function1[/* error */ Frame | java.lang.String, _]
   ): js.Any = js.native

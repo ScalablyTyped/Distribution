@@ -11,7 +11,7 @@ trait ISPClientPeoplePickerEntity
   var Description: js.UndefOr[java.lang.String] = js.undefined
   var DisplayText: js.UndefOr[java.lang.String] = js.undefined
   var DomainText: js.UndefOr[java.lang.String] = js.undefined
-  var EntityData: js.UndefOr[Anon_Title] = js.undefined
+  var EntityData: js.UndefOr[Anon_Department] = js.undefined
   var EntityType: js.UndefOr[java.lang.String] = js.undefined
   var IsResolved: js.UndefOr[scala.Boolean] = js.undefined
   var Key: js.UndefOr[java.lang.String] = js.undefined

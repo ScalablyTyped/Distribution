@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_OverridesUseDefault extends js.Object {
-  var overrides: js.Array[Anon_MethodMinutes]
+  var overrides: js.UndefOr[js.Array[Anon_Method]] = js.undefined
   var useDefault: scala.Boolean
 }
 

@@ -56,7 +56,7 @@ trait INode extends js.Object {
   def isDraggable(): scala.Boolean = js.native
   def isDragging(): scala.Boolean = js.native
   def isListening(): scala.Boolean = js.native
-  def move(change: kineticjsLib.Anon_Y): scala.Unit = js.native
+  def move(change: kineticjsLib.Anon_X): scala.Unit = js.native
   def moveDown(): scala.Unit = js.native
   def moveTo(newContainer: IContainer): scala.Unit = js.native
   def moveToBottom(): scala.Unit = js.native

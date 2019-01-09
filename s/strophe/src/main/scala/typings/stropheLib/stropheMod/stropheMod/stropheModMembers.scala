@@ -27,7 +27,7 @@ object stropheModMembers extends js.Object {
     *  NS.XHTML_IM - XHTML-IM namespace from XEP 71.
     *  NS.XHTML - XHTML body namespace from XEP 71.
     */
-  var NS: stropheLib.Anon_BOSH = js.native
+  var NS: stropheLib.Anon_AUTH = js.native
   /** Constants: SASL mechanisms
     *  Available authentication mechanisms
     *

@@ -71,7 +71,7 @@ class FilterPivotHierarchy ()
   def load(): FilterPivotHierarchy = js.native
   def load(option: java.lang.String): FilterPivotHierarchy = js.native
   def load(option: js.Array[java.lang.String]): FilterPivotHierarchy = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): FilterPivotHierarchy = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): FilterPivotHierarchy = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.FilterPivotHierarchyLoadOptions): FilterPivotHierarchy = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: FilterPivotHierarchy): scala.Unit = js.native

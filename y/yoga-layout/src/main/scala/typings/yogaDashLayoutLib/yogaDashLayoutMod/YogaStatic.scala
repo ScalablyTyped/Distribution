@@ -17,7 +17,7 @@ trait YogaStatic extends ConstantsStatic {
     Layout
   ]
   var Node: NodeStatic
-  var Size: org.scalablytyped.runtime.Instantiable2[/* width */ scala.Double, /* height */ scala.Double, Size]
+  var Size: yogaDashLayoutLib.Anon_Dim
   var Value: org.scalablytyped.runtime.Instantiable2[/* unit */ YogaUnit | scala.Double, /* value */ scala.Double, Value]
   def getInstanceCount(): scala.Double
 }

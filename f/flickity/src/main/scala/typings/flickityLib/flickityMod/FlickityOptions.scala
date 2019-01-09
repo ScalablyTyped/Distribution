@@ -20,7 +20,7 @@ trait FlickityOptions extends js.Object {
     * Draws the shape of the arrows in the previous & next buttons.
     * javascript dictionary of points or path to SVG file
     */
-  var arrowShape: js.UndefOr[java.lang.String | flickityLib.Anon_X3] = js.undefined
+  var arrowShape: js.UndefOr[java.lang.String | flickityLib.Anon_X0] = js.undefined
   /**
     * Use one Flickity gallery as navigation for another.
     *

@@ -24,6 +24,6 @@ trait FilterProps extends js.Object {
   /** Default: false */
   var hideFilter: scala.Boolean = js.native
   /** Default: ... */
-  def Filter(params: reactDashTableLib.Anon_Filter): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  def Filter(params: reactDashTableLib.Anon_Column): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
 }
 

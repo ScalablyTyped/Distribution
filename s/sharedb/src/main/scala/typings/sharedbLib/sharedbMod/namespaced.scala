@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("sharedb", JSImport.Namespace)
 @js.native
 class namespaced () extends sharedb {
-  def this(options: sharedbLib.Anon_Pubsub) = this()
+  def this(options: sharedbLib.Anon_Db) = this()
 }
 
 @JSImport("sharedb", JSImport.Namespace)

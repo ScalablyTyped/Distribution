@@ -18,7 +18,7 @@ class Beam protected () extends js.Object {
   def drawBeamLines(): scala.Unit = js.native
   def drawStems(): scala.Unit = js.native
   def getBeamCount(): scala.Double = js.native
-  def getBeamLines(duration: java.lang.String): js.Array[vexflowLib.Anon_Start] = js.native
+  def getBeamLines(duration: java.lang.String): js.Array[vexflowLib.Anon_End] = js.native
   def getNotes(): js.Array[StemmableNote] = js.native
   def getSlopeY(): scala.Double = js.native
   def postFormat(): Beam = js.native
@@ -35,7 +35,7 @@ object Beam extends js.Object {
     groups: js.Array[vexflowLib.VexNs.FlowNs.Fraction]
   ): js.Array[vexflowLib.VexNs.FlowNs.Beam] = js.native
   def generateBeams(notes: js.Array[vexflowLib.VexNs.FlowNs.StemmableNote]): js.Array[vexflowLib.VexNs.FlowNs.Beam] = js.native
-  def generateBeams(notes: js.Array[vexflowLib.VexNs.FlowNs.StemmableNote], config: vexflowLib.Anon_Showstemlets): js.Array[vexflowLib.VexNs.FlowNs.Beam] = js.native
+  def generateBeams(notes: js.Array[vexflowLib.VexNs.FlowNs.StemmableNote], config: vexflowLib.Anon_Beammiddleonly): js.Array[vexflowLib.VexNs.FlowNs.Beam] = js.native
   def getDefaultBeamGroups(time_sig: java.lang.String): js.Array[vexflowLib.VexNs.FlowNs.Fraction] = js.native
 }
 

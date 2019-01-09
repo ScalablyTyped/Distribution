@@ -13,7 +13,7 @@ class Collection ()
 @JSImport("react-virtualized", "Collection")
 @js.native
 object Collection extends js.Object {
-  var defaultProps: reactDashVirtualizedLib.Anon_Arialabel = js.native
-  var propTypes: reactDashVirtualizedLib.Anon_SectionSize = js.native
+  var defaultProps: reactDashVirtualizedLib.Anon_ArialabelCellGroupRenderer = js.native
+  var propTypes: reactDashVirtualizedLib.Anon_Arialabel = js.native
 }
 

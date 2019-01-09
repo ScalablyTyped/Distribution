@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 trait ChooseInvoiceTitleOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")
-  var success_ChooseInvoiceTitleOptions: js.UndefOr[js.Function1[/* res */ weixinDashAppLib.Anon_BankName, scala.Unit]] = js.undefined
+  var success_ChooseInvoiceTitleOptions: js.UndefOr[js.Function1[/* res */ weixinDashAppLib.Anon_BankAccount, scala.Unit]] = js.undefined
 }
 

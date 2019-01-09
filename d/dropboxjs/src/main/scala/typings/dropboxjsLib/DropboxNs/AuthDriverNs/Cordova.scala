@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Dropbox.AuthDriver.Cordova")
 @js.native
 class Cordova () extends IAuthDriver {
-  def this(options: dropboxjsLib.Anon_ScopeReceiverPath) = this()
+  def this(options: dropboxjsLib.Anon_ReceiverPath) = this()
   def url(): java.lang.String = js.native
 }
 

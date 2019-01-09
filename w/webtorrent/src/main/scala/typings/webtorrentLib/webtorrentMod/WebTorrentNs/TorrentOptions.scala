@@ -12,7 +12,7 @@ trait TorrentOptions extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   var path: js.UndefOr[java.lang.String] = js.undefined
   var store: js.UndefOr[
-    js.Function2[/* chunkLength */ scala.Double, /* storeOpts */ webtorrentLib.Anon_Length, _]
+    js.Function2[/* chunkLength */ scala.Double, /* storeOpts */ webtorrentLib.Anon_Files, _]
   ] = js.undefined
 }
 

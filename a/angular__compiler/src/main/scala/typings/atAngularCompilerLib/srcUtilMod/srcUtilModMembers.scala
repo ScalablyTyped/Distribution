@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/compiler/src/util", JSImport.Namespace)
 @js.native
 object srcUtilModMembers extends js.Object {
-  val SyncAsync: atAngularCompilerLib.Anon_Then = js.native
+  val SyncAsync: atAngularCompilerLib.Anon_All = js.native
   def dashCaseToCamelCase(input: java.lang.String): java.lang.String = js.native
   def error(msg: java.lang.String): scala.Nothing = js.native
   def escapeRegExp(s: java.lang.String): java.lang.String = js.native

@@ -41,7 +41,7 @@ class VirtualNode protected ()
   /**
     * The virtual node specification to apply.
     */
-  val spec: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_ListenerServiceDiscovery] = js.native
+  val spec: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_Backends] = js.native
 }
 
 @JSImport("@pulumi/aws/appmesh/virtualNode", "VirtualNode")

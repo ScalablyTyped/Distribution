@@ -16,7 +16,7 @@ trait IEvent
   /**
     * Hash containing data associated with the event.
     */
-  var data: stripeLib.Anon_ObjectPreviousattributes
+  var data: stripeLib.Anon_Object
   var livemode: scala.Boolean
   /**
     * Value is "event"

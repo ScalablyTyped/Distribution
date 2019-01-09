@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Vue extends js.Object {
   @JSName("$d")
-  var $d_Original: vueDashI18nLib.Anon_ValueKey = js.native
+  var $d_Original: vueDashI18nLib.Anon_Args = js.native
   @JSName("$i18n")
   val $i18n: vueDashI18nLib.vueDashI18nMod.VueI18n with vueDashI18nLib.vueDashI18nMod.IVueI18n = js.native
   @JSName("$n")
-  var $n_Original: vueDashI18nLib.Anon_Value = js.native
+  var $n_Original: vueDashI18nLib.Anon_ArgsKey = js.native
   @JSName("$t")
   var $t_Original: vueDashI18nLib.Anon_Key = js.native
   @JSName("$tc")
-  var $tc_Original: vueDashI18nLib.Anon_KeyChoice = js.native
+  var $tc_Original: vueDashI18nLib.Anon_Choice = js.native
   @JSName("$te")
   var $te_Original: js.Function2[
     /* key */ vueDashI18nLib.vueDashI18nMod.VueI18nNs.Path, 

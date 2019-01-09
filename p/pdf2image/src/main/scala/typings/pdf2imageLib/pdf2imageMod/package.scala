@@ -13,7 +13,7 @@ package object pdf2imageMod {
     /* totalPDFPages */ scala.Double, 
     /* name */ java.lang.String, 
     /* path */ java.lang.String, 
-    /* vm */ pdf2imageLib.Anon_RunInContext, 
+    /* vm */ pdf2imageLib.Anon_Code, 
     java.lang.String
   ]) | java.lang.String
 }

@@ -61,10 +61,10 @@ trait Library extends js.Object {
   var did: scala.Double = js.native
   var easing: svgDotJsLib.`Anon_` = js.native
   var ns: java.lang.String = js.native
-  var regex: svgDotJsLib.Anon_Reference = js.native
+  var regex: svgDotJsLib.Anon_Delimiter = js.native
   var supported: scala.Boolean = js.native
   var svgjs: java.lang.String = js.native
-  var utils: svgDotJsLib.Anon_Map = js.native
+  var utils: svgDotJsLib.Anon_Array = js.native
   var xlink: java.lang.String = js.native
   var xmlns: java.lang.String = js.native
   def apply(domElement: stdLib.HTMLElement): Doc = js.native

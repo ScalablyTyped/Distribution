@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-onsenui", "ActionSheetButton")
 @js.native
 class ActionSheetButton ()
-  extends Component[reactDashOnsenuiLib.Anon_OnClickEModifier, js.Any]
+  extends Component[reactDashOnsenuiLib.Anon_E, js.Any]
 

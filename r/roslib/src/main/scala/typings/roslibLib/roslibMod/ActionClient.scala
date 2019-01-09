@@ -25,7 +25,7 @@ class ActionClient protected ()
   		 *   * actionName - the action message name, like 'actionlib_tutorials/FibonacciAction'
   		 *   * timeout - the timeout length when connecting to the action server
   		 */
-  def this(options: roslibLib.Anon_ServerName) = this()
+  def this(options: roslibLib.Anon_ActionName) = this()
   /**
   		 * Cancel all goals associated with this ActionClient.
   		 */

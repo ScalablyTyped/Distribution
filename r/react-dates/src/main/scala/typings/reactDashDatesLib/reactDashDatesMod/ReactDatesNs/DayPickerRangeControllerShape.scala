@@ -17,11 +17,11 @@ trait DayPickerRangeControllerShape extends DayPickerShape {
   var isOutsideRange: js.UndefOr[js.Function1[/* day */ js.Any, scala.Boolean]] = js.native
   var keepOpenOnDateSelect: js.UndefOr[scala.Boolean] = js.native
   var minimumNights: js.UndefOr[scala.Double] = js.native
-  var onClose: js.UndefOr[js.Function1[/* final */ reactDashDatesLib.Anon_StartDateEndDate, scala.Unit]] = js.native
+  var onClose: js.UndefOr[js.Function1[/* final */ reactDashDatesLib.Anon_EndDateStartDate, scala.Unit]] = js.native
   // REQUIRED props
   var startDate: reactDashDatesLib.reactDashDatesMod.momentPropTypesNs.momentObj | scala.Null = js.native
   var startDateOffset: js.UndefOr[js.Function1[/* day */ js.Any, _]] = js.native
-  def onDatesChange(arg: reactDashDatesLib.Anon_StartDate): scala.Unit = js.native
+  def onDatesChange(arg: reactDashDatesLib.Anon_EndDate): scala.Unit = js.native
   def onFocusChange(): scala.Unit = js.native
   def onFocusChange(arg: FocusedInputShape): scala.Unit = js.native
 }

@@ -94,7 +94,7 @@ class FormArray protected () extends AbstractControl {
     * updateValueAndValidity} method.
     */
   def patchValue(value: js.Array[_]): scala.Unit = js.native
-  def patchValue(value: js.Array[_], options: atAngularFormsLib.Anon_OnlySelf): scala.Unit = js.native
+  def patchValue(value: js.Array[_], options: atAngularFormsLib.Anon_EmitEvent): scala.Unit = js.native
   /**
     * Insert a new `AbstractControl` at the end of the array.
     *
@@ -107,7 +107,7 @@ class FormArray protected () extends AbstractControl {
     * @param index Index in the array to remove the control
     */
   def removeAt(index: scala.Double): scala.Unit = js.native
-  def reset(value: js.Any, options: atAngularFormsLib.Anon_OnlySelf): scala.Unit = js.native
+  def reset(value: js.Any, options: atAngularFormsLib.Anon_EmitEvent): scala.Unit = js.native
   /**
     * Replace an existing control.
     *
@@ -151,6 +151,6 @@ class FormArray protected () extends AbstractControl {
     * updateValueAndValidity} method.
     */
   def setValue(value: js.Array[_]): scala.Unit = js.native
-  def setValue(value: js.Array[_], options: atAngularFormsLib.Anon_OnlySelf): scala.Unit = js.native
+  def setValue(value: js.Array[_], options: atAngularFormsLib.Anon_EmitEvent): scala.Unit = js.native
 }
 

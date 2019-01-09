@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait CustomerUsageReportsResource extends js.Object {
   /** Retrieves a report which is a collection of properties / statistics for a specific customer. */
-  def get(request: gapiDotClientDotAdminLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[UsageReports]
+  def get(request: gapiDotClientDotAdminLib.Anon_AltCustomerId): gapiDotClientLib.gapiNs.clientNs.Request[UsageReports]
 }
 

@@ -18,7 +18,7 @@ trait RuleArgs extends js.Object {
     * The objects to include in a rule.
     */
   val predicates: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_Type]]]
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DataIdNegated]]]
   ] = js.undefined
 }
 

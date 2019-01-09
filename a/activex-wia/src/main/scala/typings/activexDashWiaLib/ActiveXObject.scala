@@ -16,7 +16,7 @@ trait ActiveXObject extends js.Object {
     ],
     handler: js.ThisFunction1[
       /* this */ activexDashWiaLib.WIANs.DeviceManager, 
-      /* parameter */ Anon_EventID, 
+      /* parameter */ Anon_DeviceID, 
       scala.Unit
     ]
   ): scala.Unit

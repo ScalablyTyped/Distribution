@@ -26,11 +26,7 @@ class LaunchConfiguration protected ()
     * Additional EBS block devices to attach to the
     * instance.  See Block Devices below for details.
     */
-  val ebsBlockDevices: atPulumiPulumiLib.pulumiMod.Output[
-    js.Array[
-      atPulumiAwsLib.Anon_DeviceNameVolumeTypeEncryptedIopsDeleteOnTerminationNoDeviceVolumeSize
-    ]
-  ] = js.native
+  val ebsBlockDevices: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameEncryptedIopsNoDevice]] = js.native
   /**
     * If true, the launched EC2 instance will be EBS-optimized.
     */
@@ -43,7 +39,7 @@ class LaunchConfiguration protected ()
     * Customize Ephemeral (also known as
     * "Instance Store") volumes on the instance. See Block Devices below for details.
     */
-  val ephemeralBlockDevices: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DeviceNameVirtualName]]] = js.native
+  val ephemeralBlockDevices: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DeviceName]]] = js.native
   /**
     * The name attribute of the IAM instance profile to associate
     * with launched instances.
@@ -81,7 +77,7 @@ class LaunchConfiguration protected ()
     * Customize details about the root block
     * device of the instance. See Block Devices below for details.
     */
-  val rootBlockDevice: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DeleteOnTerminationVolumeTypeIopsVolumeSize] = js.native
+  val rootBlockDevice: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DeleteOnTerminationIopsVolumeSizeVolumeType] = js.native
   /**
     * A list of associated security group IDS.
     */

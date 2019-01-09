@@ -20,10 +20,10 @@ object libVanillaModMembers extends js.Object {
     name: java.lang.String,
     isHtml5: scala.Boolean,
     serviceClass: atUirouterCoreLib.Anon_UiRouter,
-    configurationClass: atUirouterCoreLib.Anon_UiRouterIsHtml5
+    configurationClass: atUirouterCoreLib.Anon_IsHtml5
   ): js.Function1[
     /* uiRouter */ atUirouterCoreLib.libRouterMod.UIRouter, 
-    atUirouterCoreLib.Anon_Dispose
+    atUirouterCoreLib.Anon_Configuration
   ] = js.native
   def memoryLocationPlugin(router: atUirouterCoreLib.libRouterMod.UIRouter): atUirouterCoreLib.libVanillaInterfaceMod.LocationPlugin = js.native
   def parseUrl(url: java.lang.String): atUirouterCoreLib.Anon_Hash = js.native

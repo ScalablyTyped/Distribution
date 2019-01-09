@@ -24,13 +24,13 @@ abstract class ApolloCache[TSerialized] ()
   def watch(watch: apolloDashCacheLib.libTypesCacheMod.CacheNs.WatchOptions): js.Function0[scala.Unit] = js.native
   def write[TResult, TVariables](write: apolloDashCacheLib.libTypesCacheMod.CacheNs.WriteOptions[TResult, TVariables]): scala.Unit = js.native
   def writeData[TData](
-    hasIdData: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Cache.WriteDataOptions<TData> */ js.Any
+    hasIdData: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Cache.WriteDataOptions<TData> */ js.Any
   ): scala.Unit = js.native
   def writeFragment[TData, TVariables](
-    options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Cache.WriteFragmentOptions<TData, TVariables> */ js.Any
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Cache.WriteFragmentOptions<TData, TVariables> */ js.Any
   ): scala.Unit = js.native
   def writeQuery[TData, TVariables](
-    options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Cache.WriteQueryOptions<TData, TVariables> */ js.Any
+    options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Cache.WriteQueryOptions<TData, TVariables> */ js.Any
   ): scala.Unit = js.native
 }
 

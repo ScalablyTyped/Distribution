@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class KeySignature protected () extends StaveModifier {
   def this(key_spec: java.lang.String) = this()
-  def addAccToStave(stave: Stave, acc: vexflowLib.Anon_TypeLine): scala.Unit = js.native
-  def addAccToStave(stave: Stave, acc: vexflowLib.Anon_TypeLine, next: vexflowLib.Anon_TypeLine): scala.Unit = js.native
+  def addAccToStave(stave: Stave, acc: vexflowLib.Anon_Line): scala.Unit = js.native
+  def addAccToStave(stave: Stave, acc: vexflowLib.Anon_Line, next: vexflowLib.Anon_Line): scala.Unit = js.native
   def addModifier(stave: Stave): KeySignature = js.native
   def addToStave(stave: Stave): KeySignature = js.native
   def cancelKey(spec: java.lang.String): KeySignature = js.native

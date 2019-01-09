@@ -277,7 +277,7 @@ class Transition protected ()
   def injector(): atUirouterCoreLib.libInterfaceMod.UIInjector = js.native
   def injector(state: atUirouterCoreLib.libStateInterfaceMod.StateOrName): atUirouterCoreLib.libInterfaceMod.UIInjector = js.native
   def injector(state: atUirouterCoreLib.libStateInterfaceMod.StateOrName, pathName: java.lang.String): atUirouterCoreLib.libInterfaceMod.UIInjector = js.native
-  def is(compare: atUirouterCoreLib.Anon_From): scala.Boolean = js.native
+  def is(compare: atUirouterCoreLib.Anon_FromTo): scala.Boolean = js.native
   /**
     * Determines whether two transitions are equivalent.
     * @deprecated
@@ -514,11 +514,6 @@ class Transition protected ()
 @js.native
 object Transition extends js.Object {
   /** @hidden */
-  var diToken: org.scalablytyped.runtime.Instantiable3[
-    /* fromPath */ js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode], 
-    /* targetState */ atUirouterCoreLib.libStateTargetStateMod.TargetState, 
-    /* router */ atUirouterCoreLib.libRouterMod.UIRouter, 
-    atUirouterCoreLib.libTransitionTransitionMod.Transition
-  ] = js.native
+  var diToken: atUirouterCoreLib.Anon_DiToken = js.native
 }
 

@@ -53,7 +53,7 @@ trait Creative extends js.Object {
   /** Detected languages for this creative. Read-only. This field should not be set in requests. */
   var languages: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** If nativeAd is set, HTMLSnippet and the videoURL outside of nativeAd should not be set. (The videoURL inside nativeAd can be set.) */
-  var nativeAd: js.UndefOr[gapiDotClientDotAdexchangebuyerLib.Anon_Headline] = js.undefined
+  var nativeAd: js.UndefOr[gapiDotClientDotAdexchangebuyerLib.Anon_Advertiser] = js.undefined
   /**
     * Top-level open auction status. Read-only. This field should not be set in requests. If disapproved, an entry for auctionType=OPEN_AUCTION (or ALL) in
     * servingRestrictions will also exist. Note that this may be nuanced with other contextual restrictions, in which case it may be preferable to read from
@@ -80,7 +80,7 @@ trait Creative extends js.Object {
     * platform, an HTTPS vs HTTP request, or the type of auction). Read-only. This field should not be set in requests. See the examples in the Creatives
     * guide for more details.
     */
-  var servingRestrictions: js.UndefOr[js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_DisapprovalReasons]] = js.undefined
+  var servingRestrictions: js.UndefOr[js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_ContextsDisapprovalReasons]] = js.undefined
   /** List of vendor types for the ads that may be shown from this snippet. Each vendor type is represented by an integer as defined in vendors.txt. */
   var vendorType: js.UndefOr[js.Array[scala.Double]] = js.undefined
   /** The version for this creative. Read-only. This field should not be set in requests. */

@@ -65,7 +65,7 @@ trait PhotoSwipe[T /* <: photoswipeLib.photoswipeMod.PhotoSwipeNs.Options */] ex
   /**
     * Size of the current viewport.
     */
-  var viewportSize: photoswipeLib.Anon_Y = js.native
+  var viewportSize: photoswipeLib.Anon_X = js.native
   /**
     * Apply zoom and pan to the current slide
     *
@@ -273,16 +273,16 @@ trait PhotoSwipe[T /* <: photoswipeLib.photoswipeMod.PhotoSwipeNs.Options */] ex
     * pswp.zoomTo(2, {x:pswp.viewportSize.x/2,y:pswp.viewportSize.y/2}, 2000, false, function(now) {});
     *
     */
-  def zoomTo(destZoomLevel: scala.Double, centerPoint: photoswipeLib.Anon_Y, speed: scala.Double): scala.Unit = js.native
+  def zoomTo(destZoomLevel: scala.Double, centerPoint: photoswipeLib.Anon_X, speed: scala.Double): scala.Unit = js.native
   def zoomTo(
     destZoomLevel: scala.Double,
-    centerPoint: photoswipeLib.Anon_Y,
+    centerPoint: photoswipeLib.Anon_X,
     speed: scala.Double,
     easingFn: js.Function1[/* k */ scala.Double, scala.Double]
   ): scala.Unit = js.native
   def zoomTo(
     destZoomLevel: scala.Double,
-    centerPoint: photoswipeLib.Anon_Y,
+    centerPoint: photoswipeLib.Anon_X,
     speed: scala.Double,
     easingFn: js.Function1[/* k */ scala.Double, scala.Double],
     updateFn: js.Function1[/* now */ scala.Double, scala.Unit]

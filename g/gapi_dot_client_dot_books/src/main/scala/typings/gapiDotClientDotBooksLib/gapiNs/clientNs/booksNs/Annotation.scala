@@ -11,11 +11,11 @@ trait Annotation extends js.Object {
   /** Anchor text before excerpt. For requests, if the user bookmarked a screen that has no flowing text on it, then this field should be empty. */
   var beforeSelectedText: js.UndefOr[java.lang.String] = js.undefined
   /** Selection ranges sent from the client. */
-  var clientVersionRanges: js.UndefOr[gapiDotClientDotBooksLib.Anon_GbImageRange] = js.undefined
+  var clientVersionRanges: js.UndefOr[gapiDotClientDotBooksLib.Anon_CfiRange] = js.undefined
   /** Timestamp for the created time of this annotation. */
   var created: js.UndefOr[java.lang.String] = js.undefined
   /** Selection ranges for the most recent content version. */
-  var currentVersionRanges: js.UndefOr[gapiDotClientDotBooksLib.Anon_GbImageRange] = js.undefined
+  var currentVersionRanges: js.UndefOr[gapiDotClientDotBooksLib.Anon_CfiRange] = js.undefined
   /** User-created data for this annotation. */
   var data: js.UndefOr[java.lang.String] = js.undefined
   /** Indicates that this annotation is deleted. */
@@ -28,7 +28,7 @@ trait Annotation extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /** The layer this annotation is for. */
   var layerId: js.UndefOr[java.lang.String] = js.undefined
-  var layerSummary: js.UndefOr[gapiDotClientDotBooksLib.Anon_LimitType] = js.undefined
+  var layerSummary: js.UndefOr[gapiDotClientDotBooksLib.Anon_AllowedCharacterCount] = js.undefined
   /** Pages that this annotation spans. */
   var pageIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Excerpt from the volume. */

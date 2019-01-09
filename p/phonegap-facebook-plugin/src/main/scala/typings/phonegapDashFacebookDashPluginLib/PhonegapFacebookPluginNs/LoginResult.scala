@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   * Result for the login() and getLoginStatus() success callbacks.
   */
 trait LoginResult extends js.Object {
-  var authResponse: phonegapDashFacebookDashPluginLib.Anon_Secret
+  var authResponse: phonegapDashFacebookDashPluginLib.Anon_AccessToken
   var status: java.lang.String
 }
 

@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenu.types", JSImport.Namespace)
 @js.native
 object libComponentsContextualMenuContextualMenuDotTypesModMembers extends js.Object {
-  val DirectionalHint: officeDashUiDashFabricDashReactLib.Anon_LeftTopEdge = js.native
+  val DirectionalHint: officeDashUiDashFabricDashReactLib.Anon_0 = js.native
 }
 

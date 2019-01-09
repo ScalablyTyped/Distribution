@@ -2288,8 +2288,8 @@ object typesNs extends js.Object {
     quasi: babelDashTypesLib.babelDashTypesMod.TemplateLiteral
   ): babelDashTypesLib.babelDashTypesMod.TaggedTemplateExpression = js.native
   def templateElement(): babelDashTypesLib.babelDashTypesMod.TemplateElement = js.native
-  def templateElement(value: babelDashTypesLib.Anon_Raw): babelDashTypesLib.babelDashTypesMod.TemplateElement = js.native
-  def templateElement(value: babelDashTypesLib.Anon_Raw, tail: scala.Boolean): babelDashTypesLib.babelDashTypesMod.TemplateElement = js.native
+  def templateElement(value: babelDashTypesLib.Anon_CookedRaw): babelDashTypesLib.babelDashTypesMod.TemplateElement = js.native
+  def templateElement(value: babelDashTypesLib.Anon_CookedRaw, tail: scala.Boolean): babelDashTypesLib.babelDashTypesMod.TemplateElement = js.native
   def templateLiteral(): babelDashTypesLib.babelDashTypesMod.TemplateLiteral = js.native
   def templateLiteral(quasis: js.Array[babelDashTypesLib.babelDashTypesMod.TemplateElement]): babelDashTypesLib.babelDashTypesMod.TemplateLiteral = js.native
   def templateLiteral(

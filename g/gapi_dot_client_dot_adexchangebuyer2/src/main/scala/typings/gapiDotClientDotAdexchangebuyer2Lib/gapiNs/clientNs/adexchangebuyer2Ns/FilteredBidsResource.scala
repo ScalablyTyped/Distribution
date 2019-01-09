@@ -13,7 +13,7 @@ trait FilteredBidsResource extends js.Object {
     * filtered for each reason.
     */
   def list(
-    request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPageSizePrettyPrintBearertokenPageToken
+    request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetId
   ): gapiDotClientLib.gapiNs.clientNs.Request[ListFilteredBidsResponse]
 }
 

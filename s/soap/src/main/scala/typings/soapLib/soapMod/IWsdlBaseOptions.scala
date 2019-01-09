@@ -10,7 +10,7 @@ trait IWsdlBaseOptions extends js.Object {
   var escapeXML: js.UndefOr[scala.Boolean] = js.undefined
   var handleNilAsNull: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreBaseNameSpaces: js.UndefOr[scala.Boolean] = js.undefined
-  var ignoredNamespaces: js.UndefOr[scala.Boolean | js.Array[java.lang.String] | soapLib.Anon_Override] = js.undefined
+  var ignoredNamespaces: js.UndefOr[scala.Boolean | js.Array[java.lang.String] | soapLib.Anon_Namespaces] = js.undefined
   var overrideRootElement: js.UndefOr[soapLib.Anon_Namespace] = js.undefined
   var returnFault: js.UndefOr[scala.Boolean] = js.undefined
   var valueKey: js.UndefOr[java.lang.String] = js.undefined

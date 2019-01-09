@@ -91,7 +91,7 @@ trait CoreViewportManipulation extends js.Object {
     * positions are visible in the viewport.
     * http://js.cytoscape.org/#cy.extent
     */
-  def extent(): cytoscapeLib.Anon_X2 = js.native
+  def extent(): cytoscapeLib.Anon_H = js.native
   /**
     * Pan and zooms the graph to fit to a collection.
     * http://js.cytoscape.org/#cy.fit

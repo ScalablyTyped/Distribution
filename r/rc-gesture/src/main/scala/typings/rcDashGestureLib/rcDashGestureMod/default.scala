@@ -14,6 +14,6 @@ class default protected () extends Gesture {
 @JSImport("rc-gesture", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var defaultProps: rcDashGestureLib.Anon_EnableRotate = js.native
+  var defaultProps: rcDashGestureLib.Anon_Direction = js.native
 }
 

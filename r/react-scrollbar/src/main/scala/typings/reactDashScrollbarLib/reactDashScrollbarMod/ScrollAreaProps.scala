@@ -16,7 +16,7 @@ trait ScrollAreaProps
   var horizontalContainerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var horizontalScrollbarStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var minScrollSize: js.UndefOr[scala.Double] = js.undefined
-  var onScroll: js.UndefOr[js.Function1[/* value */ reactDashScrollbarLib.Anon_TopPosition, scala.Unit]] = js.undefined
+  var onScroll: js.UndefOr[js.Function1[/* value */ reactDashScrollbarLib.Anon_ContainerHeight, scala.Unit]] = js.undefined
   var ownerDocument: js.UndefOr[js.Any] = js.undefined
   var smoothScrolling: js.UndefOr[scala.Boolean] = js.undefined
   var speed: js.UndefOr[scala.Double] = js.undefined

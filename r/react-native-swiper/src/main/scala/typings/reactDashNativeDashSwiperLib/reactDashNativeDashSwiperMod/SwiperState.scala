@@ -12,7 +12,7 @@ trait SwiperState extends js.Object {
   var index: scala.Double
   var isScrolling: scala.Boolean
   var loopJump: scala.Boolean
-  var offset: reactDashNativeDashSwiperLib.Anon_Y
+  var offset: reactDashNativeDashSwiperLib.Anon_X
   var total: scala.Double
   var width: scala.Double
 }

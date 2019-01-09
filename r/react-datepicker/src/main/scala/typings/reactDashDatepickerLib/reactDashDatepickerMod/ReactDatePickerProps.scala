@@ -79,7 +79,7 @@ trait ReactDatePickerProps extends js.Object {
     ]
   ] = js.native
   var onInputClick: js.UndefOr[js.Function0[scala.Unit]] = js.native
-  var onInputError: js.UndefOr[js.Function1[/* err */ reactDashDatepickerLib.Anon_Msg, scala.Unit]] = js.native
+  var onInputError: js.UndefOr[js.Function1[/* err */ reactDashDatepickerLib.Anon_Code, scala.Unit]] = js.native
   var onKeyDown: js.UndefOr[
     js.Function1[
       /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLDivElement], 
@@ -122,7 +122,7 @@ trait ReactDatePickerProps extends js.Object {
   var readOnly: js.UndefOr[scala.Boolean] = js.native
   var renderCustomHeader: js.UndefOr[
     js.Function1[
-      /* params */ reactDashDatepickerLib.Anon_ChangeYear, 
+      /* params */ reactDashDatepickerLib.Anon_ChangeMonth, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.native

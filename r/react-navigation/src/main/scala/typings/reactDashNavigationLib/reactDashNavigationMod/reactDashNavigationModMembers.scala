@@ -66,8 +66,8 @@ object reactDashNavigationModMembers extends js.Object {
     (Omit[P, reactDashNavigationLib.reactDashNavigationLibStrings.isFocused]) with reactDashNavigationLib.Anon_OnRef[T]
   ] = js.native
   @JSName("withNavigationFocus")
-  def withNavigationFocus_TP[T, P](Component: reactLib.reactMod.ReactNs.ComponentType[T with NavigationFocusInjectedProps[P]]): reactLib.reactMod.ReactNs.ComponentType[T with (reactDashNavigationLib.Anon_OnRefRef[T, P])] = js.native
+  def withNavigationFocus_TP[T, P](Component: reactLib.reactMod.ReactNs.ComponentType[T with NavigationFocusInjectedProps[P]]): reactLib.reactMod.ReactNs.ComponentType[T with (reactDashNavigationLib.Anon_OnRefAnyComponent[T, P])] = js.native
   @JSName("withNavigation")
-  def withNavigation_TP[T, P](Component: reactLib.reactMod.ReactNs.ComponentType[T with NavigationInjectedProps[P]]): reactLib.reactMod.ReactNs.ComponentType[T with (reactDashNavigationLib.Anon_OnRefRefComponent[T, P])] = js.native
+  def withNavigation_TP[T, P](Component: reactLib.reactMod.ReactNs.ComponentType[T with NavigationInjectedProps[P]]): reactLib.reactMod.ReactNs.ComponentType[T with (reactDashNavigationLib.Anon_OnRefAny[T, P])] = js.native
 }
 

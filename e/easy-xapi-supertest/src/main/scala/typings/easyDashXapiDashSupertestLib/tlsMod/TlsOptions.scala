@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TlsOptions extends js.Object {
   var NPNProtocols: js.UndefOr[js.Any] = js.undefined
     //array or Buffer;

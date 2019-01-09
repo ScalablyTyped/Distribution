@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Events extends js.Object {
-  var events: Anon_OnMouseDown
+  var events: Anon_Event
   /** A boolean representing if the draggable is currently active. */
   var isActive: scala.Boolean
 }

@@ -21,7 +21,7 @@ object srcCompileUnderscoreMetadataModMembers extends js.Object {
   def templateJitUrl(ngModuleType: CompileIdentifierMetadata, compMeta: CompileDirectiveMetadata): java.lang.String = js.native
   def templateSourceUrl(
     ngModuleType: CompileIdentifierMetadata,
-    compMeta: atAngularCompilerLib.Anon_TypeCompileIdentifierMetadata,
+    compMeta: atAngularCompilerLib.Anon_Type,
     templateMeta: atAngularCompilerLib.Anon_IsInline
   ): java.lang.String = js.native
   def tokenName(token: CompileTokenMetadata): java.lang.String | scala.Null = js.native

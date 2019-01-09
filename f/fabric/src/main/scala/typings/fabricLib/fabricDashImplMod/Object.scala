@@ -102,9 +102,9 @@ class Object ()
     * @param calculateopt use coordinates of current position instead of .oCoords / .aCoords
   	 * @return Object with left, top, width, height properties
   	 */
-  def getBoundingRect(): fabricLib.Anon_Top = js.native
-  def getBoundingRect(absoluteopt: scala.Boolean): fabricLib.Anon_Top = js.native
-  def getBoundingRect(absoluteopt: scala.Boolean, calculateopt: scala.Boolean): fabricLib.Anon_Top = js.native
+  def getBoundingRect(): fabricLib.Anon_HeightLeft = js.native
+  def getBoundingRect(absoluteopt: scala.Boolean): fabricLib.Anon_HeightLeft = js.native
+  def getBoundingRect(absoluteopt: scala.Boolean, calculateopt: scala.Boolean): fabricLib.Anon_HeightLeft = js.native
   /**
   	 * Returns the real center coordinates of the object
   	 */
@@ -123,8 +123,8 @@ class Object ()
   	 * @param e Event to operate upon
   	 * @param [pointer] Pointer to operate upon (instead of event)
   	 */
-  def getLocalPointer(e: stdLib.Event): fabricLib.Anon_Y = js.native
-  def getLocalPointer(e: stdLib.Event, pointer: fabricLib.Anon_Y): fabricLib.Anon_Y = js.native
+  def getLocalPointer(e: stdLib.Event): fabricLib.Anon_X = js.native
+  def getLocalPointer(e: stdLib.Event, pointer: fabricLib.Anon_X): fabricLib.Anon_X = js.native
   def getOpacity(): scala.Double = js.native
   def getOverlayFill(): java.lang.String = js.native
   /**
@@ -296,7 +296,7 @@ class Object ()
   	 * @param [options] Options object
   	 */
   def setControlsVisibility(): this.type = js.native
-  def setControlsVisibility(options: fabricLib.Anon_Mb): this.type = js.native
+  def setControlsVisibility(options: fabricLib.Anon_Bl): this.type = js.native
   // functions from geometry mixin
   // -------------------------------------------------------------------------------------------------------------------------------
   /**

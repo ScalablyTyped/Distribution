@@ -45,7 +45,7 @@ trait VideoContext extends js.Object {
   /**
   		 * 发送弹幕，danmu 包含两个属性 text, color。
   		 */
-  def sendDanmu(danmu: baiduDashAppLib.Anon_Text): scala.Unit = js.native
+  def sendDanmu(danmu: baiduDashAppLib.Anon_Color): scala.Unit = js.native
    // 退出全屏;
   /**
   		 * 显示状态栏，仅在iOS全屏下有效

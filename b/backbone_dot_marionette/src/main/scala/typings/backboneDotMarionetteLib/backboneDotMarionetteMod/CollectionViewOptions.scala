@@ -12,10 +12,7 @@ trait CollectionViewOptions[TModel /* <: backboneLib.backboneMod.Model */, TColl
     * Specify a child view to use.
     */
   var childView: js.UndefOr[
-    (js.Function1[
-      /* model */ TModel, 
-      org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.View[backboneLib.backboneMod.BackboneNs.Model]]
-    ]) | org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.View[backboneLib.backboneMod.BackboneNs.Model]]
+    (js.Function1[/* model */ TModel, backboneDotMarionetteLib.Anon_ClassProperties]) | backboneDotMarionetteLib.Anon_ClassProperties
   ] = js.undefined
   /**
     * Define options to pass to the childView constructor.
@@ -25,9 +22,7 @@ trait CollectionViewOptions[TModel /* <: backboneLib.backboneMod.Model */, TColl
     * Specify a view to use if the collection has no children.
     */
   var emptyView: js.UndefOr[
-    (js.Function0[
-      org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.View[backboneLib.backboneMod.BackboneNs.Model]]
-    ]) | org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.View[backboneLib.backboneMod.BackboneNs.Model]]
+    js.Function0[backboneDotMarionetteLib.Anon_ClassProperties] | backboneDotMarionetteLib.Anon_ClassProperties
   ] = js.undefined
   /**
     * Define options to pass to the emptyView constructor.

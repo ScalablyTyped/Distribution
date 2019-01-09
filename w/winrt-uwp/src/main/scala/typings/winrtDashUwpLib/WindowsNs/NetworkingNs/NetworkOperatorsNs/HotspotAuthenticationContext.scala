@@ -69,6 +69,6 @@ object HotspotAuthenticationContext extends js.Object {
     * Gets the context of an authentication attempt.
     * @param evenToken The event token retrieved from the network operator hotspot authentication event . The token is a GUID in string format.
     */
-  def tryGetAuthenticationContext(evenToken: java.lang.String): winrtDashUwpLib.Anon_ReturnValueContext = js.native
+  def tryGetAuthenticationContext(evenToken: java.lang.String): winrtDashUwpLib.Anon_Context = js.native
 }
 

@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ITextFieldStyles
-  extends atUifabricMergeDashStylesLib.Anon_SubComponentStylesOmitTStyleSet[ITextFieldStyles] {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyleSet.Omit<office-ui-fabric-react.office-ui-fabric-react/lib/components/TextField/TextField.types.ITextFieldStyles, 'subComponentStyles'> ]: @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyle} */ trait ITextFieldStyles
+  extends atUifabricMergeDashStylesLib.Anon_SubComponentStyles[ITextFieldStyles] {
   /**
     * Style for description element.
     */

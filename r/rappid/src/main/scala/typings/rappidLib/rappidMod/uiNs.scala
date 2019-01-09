@@ -17,7 +17,7 @@ object uiNs extends js.Object {
   @js.native
   class SelectionView protected ()
     extends backboneLib.backboneMod.Model {
-    def this(opt: rappidLib.Anon_Paper) = this()
+    def this(opt: rappidLib.Anon_Graph) = this()
     var graph: jointjsLib.jointjsMod.diaNs.Graph = js.native
     var model: backboneLib.backboneMod.Collection[jointjsLib.jointjsMod.diaNs.Cell] = js.native
     var paper: jointjsLib.jointjsMod.diaNs.Paper = js.native

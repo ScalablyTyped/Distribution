@@ -13,7 +13,7 @@ class Popup protected () extends js.Object {
     * Shows inside a new window the hosted login page (`/authorize`) in order to start a new authN/authZ transaction and post its result using `postMessage`.
     * @see {@link https://auth0.com/docs/api/authentication#authorize-client}
     */
-  def authorize(options: auth0DashJsLib.Anon_ClientId, callback: Auth0Callback[_, Auth0Error]): scala.Unit = js.native
+  def authorize(options: auth0DashJsLib.Anon_Audience, callback: Auth0Callback[_, Auth0Error]): scala.Unit = js.native
   /**
     * Returns a new instance of the popup handler
     *
@@ -23,18 +23,18 @@ class Popup protected () extends js.Object {
     * Handles the popup logic for the callback page.
     * @see {@link parseHash}
     */
-  def callback(options: auth0DashJsLib.Anon_Nonce): scala.Unit = js.native
+  def callback(options: auth0DashJsLib.Anon_Hash): scala.Unit = js.native
   /**
     * Performs authentication with username/email and password with a database connection inside a new window
     *
     * This method is not compatible with API Auth so if you need to fetch API tokens with audience
     * you should use {@link authorize} or {@link login}.
     */
-  def loginWithCredentials(options: auth0DashJsLib.Anon_RedirectUriResponseType, callback: Auth0Callback[_, Auth0Error]): scala.Unit = js.native
+  def loginWithCredentials(options: auth0DashJsLib.Anon_Code, callback: Auth0Callback[_, Auth0Error]): scala.Unit = js.native
   /**
     * Verifies the passwordless TOTP and returns the requested token
     */
-  def passwordlessVerify(options: auth0DashJsLib.Anon_VerificationCode, callback: Auth0Callback[_, Auth0Error]): scala.Unit = js.native
+  def passwordlessVerify(options: auth0DashJsLib.Anon_ConnectionEmail, callback: Auth0Callback[_, Auth0Error]): scala.Unit = js.native
   /**
     * Initializes the popup window and returns the instance to be used later in order to avoid being blocked by the browser.
     *

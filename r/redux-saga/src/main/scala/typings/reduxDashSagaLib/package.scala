@@ -55,7 +55,7 @@ package object reduxDashSagaLib {
   ]
   type Subscribe[T] = js.Function1[
     /* cb */ js.Function1[
-      /* input */ T | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify END */ js.Any), 
+      /* input */ T | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify END */ js.Any), 
       scala.Unit
     ], 
     Unsubscribe

@@ -12,6 +12,6 @@ object distDomMod extends js.Object {
     /* projectorOptions */ js.UndefOr[maquetteLib.distInterfacesMod.ProjectionOptions], 
     maquetteLib.distInterfacesMod.ProjectionOptions
   ] = js.native
-  var dom: maquetteLib.Anon_Replace = js.native
+  var dom: maquetteLib.Anon_Append = js.native
 }
 

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class World ()
   extends p2Lib.p2Mod.p2Ns.World {
-  def this(options: p2Lib.Anon_IslandSplit) = this()
+  def this(options: p2Lib.Anon_Broadphase) = this()
   /* CompleteClass */
   override def emit(event: js.Any): p2Lib.p2Mod.p2Ns.EventEmitter = js.native
   /* CompleteClass */

@@ -53,7 +53,7 @@ trait SpotFleetRequestState extends js.Object {
   val launchSpecifications: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IamInstanceProfileArnEbsOptimized]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AmiAssociatePublicIpAddress]
       ]
     ]
   ] = js.undefined

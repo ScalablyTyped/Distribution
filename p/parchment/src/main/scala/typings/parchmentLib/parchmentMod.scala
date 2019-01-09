@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("parchment", JSImport.Namespace)
 @js.native
 object parchmentMod extends js.Object {
-  var default: parchmentLib.Anon_Register = js.native
+  var default: parchmentLib.Anon_Attributor = js.native
 }
 

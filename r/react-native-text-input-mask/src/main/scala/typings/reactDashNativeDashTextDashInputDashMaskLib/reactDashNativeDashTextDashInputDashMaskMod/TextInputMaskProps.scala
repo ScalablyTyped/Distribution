@@ -114,7 +114,7 @@ trait TextInputMaskProps
     */
   var onContentSizeChange: js.UndefOr[
     js.Function1[
-      /* event */ reactDashNativeDashTextDashInputDashMaskLib.Anon_NativeEventAnonContentSize, 
+      /* event */ reactDashNativeDashTextDashInputDashMaskLib.Anon_NativeEventAnonContentSizeAnonHeight, 
       scala.Unit
     ]
   ] = js.native
@@ -123,7 +123,7 @@ trait TextInputMaskProps
     */
   var onEndEditing: js.UndefOr[
     js.Function1[
-      /* event */ reactDashNativeDashTextDashInputDashMaskLib.Anon_NativeEventAnonTextString, 
+      /* event */ reactDashNativeDashTextDashInputDashMaskLib.Anon_NativeEventAnonText, 
       scala.Unit
     ]
   ] = js.native
@@ -177,7 +177,7 @@ trait TextInputMaskProps
     */
   var onSubmitEditing: js.UndefOr[
     js.Function1[
-      /* event */ reactDashNativeDashTextDashInputDashMaskLib.Anon_NativeEventAnonTextString, 
+      /* event */ reactDashNativeDashTextDashInputDashMaskLib.Anon_NativeEventAnonText, 
       scala.Unit
     ]
   ] = js.native
@@ -207,7 +207,7 @@ trait TextInputMaskProps
     * The start and end of the text input's selection. Set start and end to
     * the same value to position the cursor.
     */
-  var selection: js.UndefOr[reactDashNativeDashTextDashInputDashMaskLib.Anon_Start] = js.native
+  var selection: js.UndefOr[reactDashNativeDashTextDashInputDashMaskLib.Anon_End] = js.native
   /**
     * The highlight (and cursor on ios) color of the text input
     */

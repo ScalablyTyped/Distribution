@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typescriptDashServicesLib.TypeScriptNs.IClassElementSyntax because Already inherited)*/
-@JSGlobal("TypeScript.IndexMemberDeclarationSyntax")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typescriptDashServicesLib.TypeScriptNs.IClassElementSyntax because Already inherited */ @JSGlobal("TypeScript.IndexMemberDeclarationSyntax")
 @js.native
 class IndexMemberDeclarationSyntax protected () extends SyntaxNode {
   def this(modifiers: ISyntaxList, indexSignature: IndexSignatureSyntax, semicolonToken: ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()

@@ -22,7 +22,7 @@ trait ZeroClipboardCommon extends js.Object {
     * @param  {string} name
     * @return {any}
     */
-  def emit(data: zeroclipboardLib.Anon_Type): js.Any = js.native
+  def emit(data: zeroclipboardLib.Anon_Name): js.Any = js.native
   /**
     * Dispatch an event to all registered listeners. The emission of some types of events will result in side effects.
     * @param  {string} eventType
@@ -58,7 +58,7 @@ trait ZeroClipboardCommon extends js.Object {
     * Retrieves a copy of the map of registered listener functions/objects for ALL event types.
     * @return {Object}
     */
-  def handlers(): zeroclipboardLib.Anon_AftercopyReady = js.native
+  def handlers(): zeroclipboardLib.Anon_AftercopyBeforecopy = js.native
   /**
     * Retrieves a copy of the registered listener functions/objects for the given eventType.
     * @param  {string} eventType

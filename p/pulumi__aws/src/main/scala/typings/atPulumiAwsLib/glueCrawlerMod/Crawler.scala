@@ -41,7 +41,7 @@ class Crawler protected ()
   /**
     * List of nested JBDC target arguments. See below.
     */
-  val jdbcTargets: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Exclusions]]] = js.native
+  val jdbcTargets: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ConnectionName]]] = js.native
   /**
     * Name of the crawler.
     */
@@ -53,7 +53,7 @@ class Crawler protected ()
   /**
     * List nested Amazon S3 target arguments. See below.
     */
-  val s3Targets: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ExclusionsPath]]] = js.native
+  val s3Targets: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Exclusions]]] = js.native
   /**
     * A cron expression used to specify the schedule. For more information, see [Time-Based Schedules for Jobs and Crawlers](https://docs.aws.amazon.com/glue/latest/dg/monitor-data-warehouse-schedule.html). For example, to run something every day at 12:15 UTC, you would specify: `cron(15 12 * * ? *)`.
     */

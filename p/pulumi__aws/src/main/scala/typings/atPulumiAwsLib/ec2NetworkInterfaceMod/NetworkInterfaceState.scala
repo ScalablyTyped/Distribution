@@ -11,7 +11,9 @@ trait NetworkInterfaceState extends js.Object {
     */
   val attachments: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DeviceIndexInstance]]
+      js.Array[
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AttachmentIdDeviceIndexInstance]
+      ]
     ]
   ] = js.undefined
   /**

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-weui", "Gallery")
 @js.native
 object GalleryNs extends js.Object {
-  val defaultProps: reactDashWeuiLib.Anon_Src = js.native
+  val defaultProps: reactDashWeuiLib.Anon_Show = js.native
   @JSName("propTypes")
   @js.native
   object propTypesNs extends js.Object {

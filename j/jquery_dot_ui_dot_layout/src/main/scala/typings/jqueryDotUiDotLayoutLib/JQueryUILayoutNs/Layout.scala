@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Layout extends js.Object {
   var options: Options = js.native
-  var panes: jqueryDotUiDotLayoutLib.Anon_WestNorth = js.native
-  var state: jqueryDotUiDotLayoutLib.Anon_West = js.native
+  var panes: jqueryDotUiDotLayoutLib.Anon_East = js.native
+  var state: jqueryDotUiDotLayoutLib.Anon_EastNorth = js.native
   def addCloseBtn(selector: java.lang.String, pane: java.lang.String): jqueryDotUiDotLayoutLib.JQuery = js.native
   def addOpenBtn(selector: java.lang.String, pane: java.lang.String): jqueryDotUiDotLayoutLib.JQuery = js.native
   def addPinBtn(selector: java.lang.String, pane: java.lang.String): jqueryDotUiDotLayoutLib.JQuery = js.native

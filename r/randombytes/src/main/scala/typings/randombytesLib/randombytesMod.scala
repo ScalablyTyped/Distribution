@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("randombytes", JSImport.Namespace)
 @js.native
 object randombytesMod
-  extends org.scalablytyped.runtime.TopLevel[Anon_Size]
+  extends org.scalablytyped.runtime.TopLevel[Anon_Buf]
 

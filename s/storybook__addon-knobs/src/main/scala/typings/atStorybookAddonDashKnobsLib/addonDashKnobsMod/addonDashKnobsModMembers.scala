@@ -102,7 +102,7 @@ object addonDashKnobsModMembers extends js.Object {
   def text(name: java.lang.String, value: java.lang.String, groupId: java.lang.String): java.lang.String = js.native
   def text(name: java.lang.String, value: scala.Null, groupId: java.lang.String): java.lang.String = js.native
   def withKnobs(storyFn: atStorybookReactLib.reactMod.RenderFunction, context: StoryContext): reactLib.reactMod.ReactNs.ReactElement[WrapStoryProps] = js.native
-  def withKnobsOptions(options: atStorybookAddonDashKnobsLib.Anon_Timestamps): js.Function2[
+  def withKnobsOptions(options: atStorybookAddonDashKnobsLib.Anon_Debounce): js.Function2[
     /* storyFn */ atStorybookReactLib.reactMod.RenderFunction, 
     /* context */ StoryContext, 
     reactLib.reactMod.ReactNs.ReactElement[WrapStoryProps]

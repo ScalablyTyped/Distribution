@@ -24,14 +24,14 @@ class OrbitControls protected () extends js.Object {
   // API
   var enabled: scala.Boolean = js.native
   var keyPanSpeed: scala.Double = js.native
-  var keys: threeLib.Anon_RIGHTUP = js.native
+  var keys: threeLib.Anon_BOTTOM = js.native
   var maxAzimuthAngle: scala.Double = js.native
   var maxDistance: scala.Double = js.native
   var maxPolarAngle: scala.Double = js.native
   var minAzimuthAngle: scala.Double = js.native
   var minDistance: scala.Double = js.native
   var minPolarAngle: scala.Double = js.native
-  var mouseButtons: threeLib.Anon_ZOOM = js.native
+  var mouseButtons: threeLib.Anon_ORBIT = js.native
   var `object`: threeLib.threeDashCoreMod.Camera = js.native
   var rotateSpeed: scala.Double = js.native
   var screenSpacePanning: scala.Boolean = js.native
@@ -39,7 +39,7 @@ class OrbitControls protected () extends js.Object {
   var zoomSpeed: scala.Double = js.native
   // EventDispatcher mixins
   def addEventListener(`type`: java.lang.String, listener: js.Function1[/* event */ js.Any, scala.Unit]): scala.Unit = js.native
-  def dispatchEvent(event: threeLib.Anon_Type): scala.Unit = js.native
+  def dispatchEvent(event: threeLib.Anon_Target): scala.Unit = js.native
   def dispose(): scala.Unit = js.native
   def dollyIn(dollyScale: scala.Double): scala.Unit = js.native
   def dollyOut(dollyScale: scala.Double): scala.Unit = js.native

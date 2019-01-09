@@ -12,12 +12,12 @@ trait Color extends js.Object {
   def equals(color: Color): scala.Boolean
   def getAlpha(): scala.Double
   def getCMYK(): CMYK
-  def getChannels(): jqueryDotColorpickerLib.Anon_S
+  def getChannels(): jqueryDotColorpickerLib.Anon_AB
   def getHSL(): HSL
   def getHSV(): HSV
   def getLAB(): LAB
   def getRGB(): RGB
-  def getSpaces(): jqueryDotColorpickerLib.Anon_Rgb
+  def getSpaces(): jqueryDotColorpickerLib.Anon_Cmyk
   def limit(steps: scala.Double): scala.Unit
   def normalize(): Color
   def setAlpha(a: scala.Double): Color

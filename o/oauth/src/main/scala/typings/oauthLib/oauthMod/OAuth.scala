@@ -17,7 +17,7 @@ class OAuth protected () extends js.Object {
   var NONCE_CHARS: js.Array[java.lang.String] = js.native
   var _accessUrl: java.lang.String = js.native
   var _authorize_callback: java.lang.String = js.native
-  var _clientOptions: oauthLib.Anon_RequestTokenHttpMethod = js.native
+  var _clientOptions: oauthLib.Anon_AccessTokenHttpMethod = js.native
   var _consumerKey: java.lang.String = js.native
   var _consumerSecret: java.lang.String = js.native
   var _headers: nodeLib.httpMod.OutgoingHttpHeaders = js.native
@@ -227,7 +227,7 @@ class OAuth protected () extends js.Object {
     post_content_type: java.lang.String,
     callback: dataCallback
   ): nodeLib.httpMod.ClientRequest = js.native
-  def setClientOptions(options: oauthLib.Anon_RequestTokenHttpMethod): scala.Unit = js.native
+  def setClientOptions(options: oauthLib.Anon_AccessTokenHttpMethod): scala.Unit = js.native
   def signUrl(url: java.lang.String, oauth_token: java.lang.String, oauth_token_secret: java.lang.String): java.lang.String = js.native
   def signUrl(
     url: java.lang.String,

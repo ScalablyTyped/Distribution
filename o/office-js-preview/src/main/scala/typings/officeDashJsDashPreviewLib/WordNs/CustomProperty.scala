@@ -64,7 +64,7 @@ class CustomProperty ()
   def load(): CustomProperty = js.native
   def load(option: java.lang.String): CustomProperty = js.native
   def load(option: js.Array[java.lang.String]): CustomProperty = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): CustomProperty = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): CustomProperty = js.native
   def load(option: officeDashJsDashPreviewLib.WordNs.InterfacesNs.CustomPropertyLoadOptions): CustomProperty = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: CustomProperty): scala.Unit = js.native

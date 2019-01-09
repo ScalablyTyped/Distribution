@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PerformanceWatchdog ()
   extends cesiumLib.cesiumMod.CesiumNs.PerformanceWatchdog {
-  def this(options: cesiumLib.Anon_LowFrameRateMessage) = this()
+  def this(options: cesiumLib.Anon_ContainerLowFrameRateMessage) = this()
   /* CompleteClass */
   override var container: stdLib.Element = js.native
   /* CompleteClass */

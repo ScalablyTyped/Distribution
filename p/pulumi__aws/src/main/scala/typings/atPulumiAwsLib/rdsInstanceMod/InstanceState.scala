@@ -242,7 +242,9 @@ trait InstanceState extends js.Object {
   /**
     * Restore from a Percona Xtrabackup in S3.  See [Importing Data into an Amazon RDS MySQL DB Instance](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.html)
     */
-  val s3Import: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SourceEngineVersion]] = js.undefined
+  val s3Import: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketNameBucketPrefixIngestionRole]
+  ] = js.undefined
   /**
     * List of DB Security Groups to
     * associate. Only used for [DB Instances on the _EC2-Classic_

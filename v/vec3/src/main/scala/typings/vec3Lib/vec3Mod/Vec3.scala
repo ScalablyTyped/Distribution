@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Vec3 protected () extends js.Object {
   def this(locationStr: java.lang.String) = this()
   def this(location: js.Array[scala.Double]) = this()
-  def this(location: vec3Lib.Anon_Z) = this()
+  def this(location: vec3Lib.Anon_X) = this()
   def this(x: scala.Double, y: scala.Double, z: scala.Double) = this()
   def abs(): Vec3 = js.native
   def add(other: Vec3): Vec3 = js.native

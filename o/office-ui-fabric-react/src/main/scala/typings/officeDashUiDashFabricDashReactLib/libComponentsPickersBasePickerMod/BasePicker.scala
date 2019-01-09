@@ -19,9 +19,9 @@ class BasePicker[T, P /* <: officeDashUiDashFabricDashReactLib.libComponentsPick
   var _id: js.Any = js.native
   var currentPromise: js.UndefOr[js.Thenable[_]] = js.native
   @JSName("focusZone")
-  var focusZone_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentValueCurrent = js.native
+  var focusZone_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentCurrentValue = js.native
   @JSName("input")
-  var input_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentValueCurrentIAutofill = js.native
+  var input_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentCurrent = js.native
   /** Gets the current value of the input. */
   /* CompleteClass */
   override var items: js.UndefOr[js.Array[T]] = js.native
@@ -31,7 +31,7 @@ class BasePicker[T, P /* <: officeDashUiDashFabricDashReactLib.libComponentsPick
   var root_Original: officeDashUiDashFabricDashReactLib.Anon_Component = js.native
   var selection: officeDashUiDashFabricDashReactLib.libUtilitiesSelectionMod.Selection = js.native
   @JSName("suggestionElement")
-  var suggestionElement_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentValue[T] = js.native
+  var suggestionElement_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentCurrentValueNull[T] = js.native
   var suggestionStore: officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.SuggestionsController[T] = js.native
   /* private */ def _getTextFromItem(item: js.Any): js.Any = js.native
   /* private */ def _getTextFromItem(item: js.Any, currentValue: js.Any): js.Any = js.native

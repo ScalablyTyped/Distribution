@@ -18,7 +18,7 @@ object default extends js.Object {
   var Group_Original: reactLib.reactMod.ReactNs.SFC[antdLib.libButtonButtonDashGroupMod.ButtonGroupProps] = js.native
   var __ANT_BUTTON: scala.Boolean = js.native
   var defaultProps: antdLib.Anon_Block = js.native
-  var propTypes: antdLib.Anon_OnClick = js.native
+  var propTypes: antdLib.Anon_ArgsBlock = js.native
   def Group(props: antdLib.libButtonButtonDashGroupMod.ButtonGroupProps with reactLib.Anon_Children): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
     props: antdLib.libButtonButtonDashGroupMod.ButtonGroupProps with reactLib.Anon_Children,
@@ -27,6 +27,6 @@ object default extends js.Object {
   def getDerivedStateFromProps(
     nextProps: antdLib.libButtonButtonMod.ButtonProps,
     prevState: antdLib.libButtonButtonMod.ButtonState
-  ): antdLib.Anon_HasTwoCNChar | scala.Null = js.native
+  ): antdLib.Anon_False | scala.Null = js.native
 }
 

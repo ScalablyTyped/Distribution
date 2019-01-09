@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("gfc", JSImport.Namespace)
 @js.native
 object gfcModMembers extends js.Object {
-  def apply(): js.Promise[gfcLib.Anon_Stdout] = js.native
-  def apply(cwd: java.lang.String): js.Promise[gfcLib.Anon_Stdout] = js.native
+  def apply(): js.Promise[gfcLib.Anon_Stderr] = js.native
+  def apply(cwd: java.lang.String): js.Promise[gfcLib.Anon_Stderr] = js.native
   def apply(
     cwd: java.lang.String,
     callback: js.Function3[
@@ -22,7 +22,7 @@ object gfcModMembers extends js.Object {
   def apply(
     cwd: java.lang.String,
     options: gfcLib.gfcMod.gitFirstCommitNs.Options[gfcLib.gfcMod.gitFirstCommitNs.ExecOptionsWithEncoding]
-  ): js.Promise[gfcLib.Anon_Stdout] = js.native
+  ): js.Promise[gfcLib.Anon_Stderr] = js.native
   def apply(
     cwd: java.lang.String,
     options: gfcLib.gfcMod.gitFirstCommitNs.Options[gfcLib.gfcMod.gitFirstCommitNs.ExecOptionsWithEncoding],
@@ -35,7 +35,7 @@ object gfcModMembers extends js.Object {
   ): scala.Unit = js.native
   def apply(
     options: gfcLib.gfcMod.gitFirstCommitNs.Options[gfcLib.gfcMod.gitFirstCommitNs.ExecOptionsWithEncoding]
-  ): js.Promise[gfcLib.Anon_Stdout] = js.native
+  ): js.Promise[gfcLib.Anon_Stderr] = js.native
   def sync(): java.lang.String | nodeLib.Buffer = js.native
   def sync(cwd: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
   def sync(

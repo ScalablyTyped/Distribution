@@ -19,18 +19,38 @@ object childUnderscoreProcessModMembers extends js.Object {
       scala.Unit
     ]
   ): ChildProcess = js.native
+  // fallback if nothing else matches. Worst case is always `string | Buffer`.
+  def exec(command: java.lang.String, options: nodeLib.Anon_EncodingNull with ExecOptions): ChildProcess = js.native
+  // `options` with an `encoding` whose type is `string` means stdout/stderr could either be `Buffer` or `string`.
+  // There is no guarantee the `encoding` is unknown as `string` is a superset of `BufferEncoding`.
+  def exec(command: java.lang.String, options: nodeLib.Anon_Encoding with ExecOptions): ChildProcess = js.native
   // `options` with well known `encoding` means stdout/stderr are definitely `string`.
   def exec(command: java.lang.String, options: nodeLib.Anon_EncodingBufferEncoding with ExecOptions): ChildProcess = js.native
   // `options` with `"buffer"` or `null` for `encoding` means stdout/stderr are definitely `Buffer`.
-  def exec(command: java.lang.String, options: nodeLib.Anon_EncodingBuffer with ExecOptions): ChildProcess = js.native
-  // `options` with an `encoding` whose type is `string` means stdout/stderr could either be `Buffer` or `string`.
-  // There is no guarantee the `encoding` is unknown as `string` is a superset of `BufferEncoding`.
-  def exec(command: java.lang.String, options: nodeLib.Anon_EncodingString with ExecOptions): ChildProcess = js.native
-  // fallback if nothing else matches. Worst case is always `string | Buffer`.
-  def exec(command: java.lang.String, options: nodeLib.Anon_EncodingStringNull with ExecOptions): ChildProcess = js.native
+  def exec(command: java.lang.String, options: nodeLib.Anon_BufferEncoding with ExecOptions): ChildProcess = js.native
   def exec(
     command: java.lang.String,
-    options: nodeLib.Anon_EncodingStringNull with ExecOptions,
+    options: nodeLib.Anon_BufferEncoding with ExecOptions,
+    callback: js.Function3[
+      /* error */ ExecException | scala.Null, 
+      /* stdout */ nodeLib.Buffer, 
+      /* stderr */ nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): ChildProcess = js.native
+  def exec(
+    command: java.lang.String,
+    options: nodeLib.Anon_Encoding with ExecOptions,
+    callback: js.Function3[
+      /* error */ ExecException | scala.Null, 
+      /* stdout */ java.lang.String | nodeLib.Buffer, 
+      /* stderr */ java.lang.String | nodeLib.Buffer, 
+      scala.Unit
+    ]
+  ): ChildProcess = js.native
+  def exec(
+    command: java.lang.String,
+    options: nodeLib.Anon_EncodingNull with ExecOptions,
     callback: js.Function3[
       /* error */ ExecException | scala.Null, 
       /* stdout */ java.lang.String | nodeLib.Buffer, 
@@ -45,26 +65,6 @@ object childUnderscoreProcessModMembers extends js.Object {
       /* error */ ExecException | scala.Null, 
       /* stdout */ java.lang.String, 
       /* stderr */ java.lang.String, 
-      scala.Unit
-    ]
-  ): ChildProcess = js.native
-  def exec(
-    command: java.lang.String,
-    options: nodeLib.Anon_EncodingBuffer with ExecOptions,
-    callback: js.Function3[
-      /* error */ ExecException | scala.Null, 
-      /* stdout */ nodeLib.Buffer, 
-      /* stderr */ nodeLib.Buffer, 
-      scala.Unit
-    ]
-  ): ChildProcess = js.native
-  def exec(
-    command: java.lang.String,
-    options: nodeLib.Anon_EncodingString with ExecOptions,
-    callback: js.Function3[
-      /* error */ ExecException | scala.Null, 
-      /* stdout */ java.lang.String | nodeLib.Buffer, 
-      /* stderr */ java.lang.String | nodeLib.Buffer, 
       scala.Unit
     ]
   ): ChildProcess = js.native
@@ -115,12 +115,12 @@ object childUnderscoreProcessModMembers extends js.Object {
   def execFile(
     file: java.lang.String,
     args: js.Array[java.lang.String],
-    options: nodeLib.Anon_EncodingStringNull with ExecFileOptions
+    options: nodeLib.Anon_EncodingNull with ExecFileOptions
   ): ChildProcess = js.native
   def execFile(
     file: java.lang.String,
     args: js.Array[java.lang.String],
-    options: nodeLib.Anon_EncodingStringNull with ExecFileOptions,
+    options: nodeLib.Anon_EncodingNull with ExecFileOptions,
     callback: js.Function3[
       /* error */ nodeLib.Error | scala.Null, 
       /* stdout */ java.lang.String | nodeLib.Buffer, 
@@ -185,7 +185,7 @@ object childUnderscoreProcessModMembers extends js.Object {
   def execFile(
     file: java.lang.String,
     args: js.UndefOr[scala.Nothing],
-    options: nodeLib.Anon_EncodingStringNull with ExecFileOptions
+    options: nodeLib.Anon_EncodingNull with ExecFileOptions
   ): ChildProcess = js.native
   def execFile(
     file: java.lang.String,
@@ -241,11 +241,7 @@ object childUnderscoreProcessModMembers extends js.Object {
       scala.Unit
     ]
   ): ChildProcess = js.native
-  def execFile(
-    file: java.lang.String,
-    args: scala.Null,
-    options: nodeLib.Anon_EncodingStringNull with ExecFileOptions
-  ): ChildProcess = js.native
+  def execFile(file: java.lang.String, args: scala.Null, options: nodeLib.Anon_EncodingNull with ExecFileOptions): ChildProcess = js.native
   def execFile(
     file: java.lang.String,
     args: scala.Null,
@@ -300,11 +296,11 @@ object childUnderscoreProcessModMembers extends js.Object {
       scala.Unit
     ]
   ): ChildProcess = js.native
-  def execFile(file: java.lang.String, options: nodeLib.Anon_EncodingStringNull with ExecFileOptions): ChildProcess = js.native
+  def execFile(file: java.lang.String, options: nodeLib.Anon_EncodingNull with ExecFileOptions): ChildProcess = js.native
   // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def execFile(
     file: java.lang.String,
-    options: nodeLib.Anon_EncodingStringNull with ExecFileOptions,
+    options: nodeLib.Anon_EncodingNull with ExecFileOptions,
     callback: js.Function3[
       /* error */ nodeLib.Error | scala.Null, 
       /* stdout */ java.lang.String | nodeLib.Buffer, 

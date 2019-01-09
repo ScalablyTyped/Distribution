@@ -10,7 +10,7 @@ trait Transaction extends js.Object {
   var custom: js.UndefOr[java.lang.String] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
   var invoice_number: js.UndefOr[java.lang.String] = js.undefined
-  var item_list: js.UndefOr[paypalDashRestDashSdkLib.Anon_Shippingphonenumber] = js.undefined
+  var item_list: js.UndefOr[paypalDashRestDashSdkLib.Anon_Items] = js.undefined
   var note_to_payee: js.UndefOr[java.lang.String] = js.undefined
   var notify_url: js.UndefOr[java.lang.String] = js.undefined
   var order_url: js.UndefOr[java.lang.String] = js.undefined

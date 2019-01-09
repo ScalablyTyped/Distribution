@@ -50,7 +50,7 @@ trait WindowOptions extends js.Object {
   /**
     random the new created window position, it only works when options x,y value both are -1
     **/
-  var createRandomOffset: js.UndefOr[jqueryDotWindowLib.Anon_Y] = js.undefined
+  var createRandomOffset: js.UndefOr[jqueryDotWindowLib.Anon_X] = js.undefined
   /**
     to describe the customized button display and callback function
     **/

@@ -70,7 +70,7 @@ class DiagramModel ()
   ): scala.Unit = js.native
   def removeNode(node: java.lang.String): scala.Unit = js.native
   def removeNode(node: stormDashReactDashDiagramsLib.distSrcModelsNodeModelMod.NodeModel): scala.Unit = js.native
-  def serializeDiagram(): stormDashReactDashDiagramsLib.Anon_Links = js.native
+  def serializeDiagram(): stormDashReactDashDiagramsLib.Anon_GridSize = js.native
   def setGridSize(): scala.Unit = js.native
   def setGridSize(size: scala.Double): scala.Unit = js.native
   def setOffset(offsetX: scala.Double, offsetY: scala.Double): scala.Unit = js.native

@@ -37,7 +37,7 @@ class Task protected ()
   /**
     * Configuration block containing option that controls the default behavior when you start an execution of this DataSync Task. For each individual task execution, you can override these options by specifying an overriding configuration in those executions.
     */
-  val options: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_PosixPermissions]] = js.native
+  val options: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Atime]] = js.native
   /**
     * Amazon Resource Name (ARN) of source DataSync Location.
     */

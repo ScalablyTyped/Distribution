@@ -109,7 +109,7 @@ class AutoFilter ()
   def load(): AutoFilter = js.native
   def load(option: java.lang.String): AutoFilter = js.native
   def load(option: js.Array[java.lang.String]): AutoFilter = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): AutoFilter = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): AutoFilter = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.AutoFilterLoadOptions): AutoFilter = js.native
   /**
     *

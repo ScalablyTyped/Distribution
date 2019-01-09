@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UIAutoComplete extends js.Object {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: juiLib.Anon_Target): this.type = js.native
+  def apply(selector: js.Any, options: juiLib.Anon_Event): this.type = js.native
   def close(): scala.Unit = js.native
   /**
     * Gets filtered words subject to autofill

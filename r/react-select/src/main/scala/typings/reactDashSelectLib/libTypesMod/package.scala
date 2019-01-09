@@ -24,7 +24,7 @@ package object libTypesMod {
     /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
     scala.Unit
   ]
-  type OptionProps = PropsWithInnerRef with reactDashSelectLib.Anon_IsFocused
+  type OptionProps = PropsWithInnerRef with reactDashSelectLib.Anon_Data
   type OptionsType[OptionType] = js.Array[OptionType]
   type ValueType[OptionType] = js.UndefOr[OptionType | OptionsType[OptionType] | scala.Null]
 }

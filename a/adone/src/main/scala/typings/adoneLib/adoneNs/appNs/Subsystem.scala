@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Subsystem ()
   extends adoneLib.adoneNs.eventNs.AsyncEmitter {
-  def this(options: adoneLib.Anon_NameString) = this()
+  def this(options: adoneLib.Anon_Name) = this()
   val isOwned: scala.Boolean = js.native
   val name: js.UndefOr[java.lang.String] = js.native
   val parent: js.UndefOr[Subsystem] = js.native

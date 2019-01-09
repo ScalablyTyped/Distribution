@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object protractorDashBrowserDashLogsModMembers extends js.Object {
   def default(
-    browser: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ProtractorBrowser */ js.Any
+    browser: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProtractorBrowser */ js.Any
   ): BrowserLogs = js.native
   def default(
-    browser: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ProtractorBrowser */ js.Any,
+    browser: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProtractorBrowser */ js.Any,
     options: BrowserLogOptions
   ): BrowserLogs = js.native
 }

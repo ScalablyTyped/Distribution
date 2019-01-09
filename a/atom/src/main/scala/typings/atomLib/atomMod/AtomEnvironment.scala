@@ -62,7 +62,7 @@ trait AtomEnvironment extends js.Object {
     *
     *  Returns the chosen button index number if the buttons option was an array.
     */
-  def confirm(options: atomLib.Anon_Message): scala.Unit = js.native
+  def confirm(options: atomLib.Anon_Buttons): scala.Unit = js.native
   /**
     *  A flexible way to open a dialog akin to an alert dialog. If a callback
     *  is provided, then the confirmation will work asynchronously, which is
@@ -74,7 +74,7 @@ trait AtomEnvironment extends js.Object {
     *
     *  Returns the chosen button index number if the buttons option was an array.
     */
-  def confirm(options: atomLib.Anon_MessageButtons): scala.Double = js.native
+  def confirm(options: atomLib.Anon_ButtonsDetailedMessage): scala.Double = js.native
   /**
     *  A flexible way to open a dialog akin to an alert dialog. If a callback
     *  is provided, then the confirmation will work asynchronously, which is
@@ -104,7 +104,7 @@ trait AtomEnvironment extends js.Object {
   /** Get the load settings for the current window. */
   def getLoadSettings(): WindowLoadSettings = js.native
   /** Get the position of current window. */
-  def getPosition(): atomLib.Anon_Y = js.native
+  def getPosition(): atomLib.Anon_X = js.native
   /**
     *  Gets the release channel of the Atom application.
     *  Returns the release channel, which can be 'dev', 'beta', or 'stable'.
@@ -144,7 +144,7 @@ trait AtomEnvironment extends js.Object {
   // Managing the Atom Window
   /** Open a new Atom window using the given options. */
   def open(): scala.Unit = js.native
-  def open(params: atomLib.Anon_PathsToOpen): scala.Unit = js.native
+  def open(params: atomLib.Anon_DevMode): scala.Unit = js.native
   // Managing the Dev Tools
   /** Open the dev tools for the current window. */
   def openDevTools(): js.Promise[scala.Null] = js.native

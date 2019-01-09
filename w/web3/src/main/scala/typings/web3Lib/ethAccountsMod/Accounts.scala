@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Accounts extends js.Object {
-  var wallet: web3Lib.Anon_Clear = js.native
+  var wallet: web3Lib.Anon_Account = js.native
   def create(): Account = js.native
   def create(entropy: java.lang.String): Account = js.native
   def decrypt(privateKey: PrivateKey, password: java.lang.String): Account = js.native

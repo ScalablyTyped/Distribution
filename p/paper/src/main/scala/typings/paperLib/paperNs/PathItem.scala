@@ -103,7 +103,7 @@ class PathItem () extends Item {
     * @param options.insert - whether the resulting item should be inserted back into the scene graph, above both paths involved in the operation.
     */
   def exclude(path: PathItem): PathItem = js.native
-  def exclude(path: PathItem, options: paperLib.Anon_InsertBoolean): PathItem = js.native
+  def exclude(path: PathItem, options: paperLib.Anon_Insert): PathItem = js.native
   /**
     * Flattens the curves in path items to a sequence of straight lines, by subdividing them enough times until the specified maximum error is met.
     * @param flatness [optional] - the maximum error between the flattened lines and the original curves. default: 0.25
@@ -221,7 +221,7 @@ class PathItem () extends Item {
     * @param options.to - the segment or curve to which the handles of the path shall be processed (inclusive). This can either be a segment index, or a segment or curve object that is part of the path. If the passed number is negative, the index is wrapped around the end of the path.
     */
   def smooth(): scala.Unit = js.native
-  def smooth(options: paperLib.Anon_Type): scala.Unit = js.native
+  def smooth(options: paperLib.Anon_Factor): scala.Unit = js.native
   /**
     * Subtracts the geometry of the specified path from this path's geometry and returns the result as a new path item.
     * @param path - the path to subtract
@@ -238,7 +238,7 @@ class PathItem () extends Item {
     * @param options.insert - whether the resulting item should be inserted back into the scene graph, above both paths involved in the operation.
     */
   def unite(path: PathItem): PathItem = js.native
-  def unite(path: PathItem, options: paperLib.Anon_InsertBoolean): PathItem = js.native
+  def unite(path: PathItem, options: paperLib.Anon_Insert): PathItem = js.native
 }
 
 @JSGlobal("paper.PathItem")

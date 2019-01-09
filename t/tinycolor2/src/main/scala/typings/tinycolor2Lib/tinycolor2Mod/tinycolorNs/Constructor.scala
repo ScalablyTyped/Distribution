@@ -19,12 +19,12 @@ org.scalablytyped.runtime.Instantiable0[Instance]
     * key: hex value
     * value: string name ex. hexnames["f00"] --> "red"
     */
-  var hexNames: tinycolor2Lib.Anon_8b0000 = js.native
+  var hexNames: tinycolor2Lib.Anon_000000080 = js.native
   /**
     * key: 'real' color name
     * value: hex value ex. names["red"] --> "f00"
     */
-  var names: tinycolor2Lib.Anon_Snow = js.native
+  var names: tinycolor2Lib.Anon_000 = js.native
   def apply(): Instance = js.native
   def apply(color: ColorInput): Instance = js.native
   def apply(color: ColorInput, opts: ConstructorOptions): Instance = js.native

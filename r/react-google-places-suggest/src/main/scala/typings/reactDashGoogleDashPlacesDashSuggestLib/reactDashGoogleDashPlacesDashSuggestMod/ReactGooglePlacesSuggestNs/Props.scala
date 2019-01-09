@@ -20,7 +20,7 @@ trait Props extends js.Object {
       reactLib.reactMod.Global.JSXNs.Element | java.lang.String
     ]
   ] = js.undefined
-  var googleMaps: reactDashGoogleDashPlacesDashSuggestLib.Anon_LatLng
+  var googleMaps: reactDashGoogleDashPlacesDashSuggestLib.Anon_Adsense
   var onSelectSuggest: js.UndefOr[
     js.Function2[/* geocodedPrediction */ GeocodedPrediction, /* originalPrediction */ Prediction, _]
   ] = js.undefined

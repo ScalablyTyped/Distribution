@@ -9,10 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object fluxibleDashAddonsDashReactMod extends js.Object {
   def connectToStores(
-    Component: org.scalablytyped.runtime.Instantiable1[
-      /* props */ stdLib.Readonly[js.Object], 
-      reactLib.reactMod.Component[js.Object, js.Object, js.Object]
-    ],
+    Component: fluxibleDashAddonsDashReactLib.Anon_ContextType,
     stores: js.Array[
       (org.scalablytyped.runtime.Instantiable1[
         /* dispatcher */ dispatchrLib.dispatchrMod.DispatcherInterface, 
@@ -20,15 +17,9 @@ object fluxibleDashAddonsDashReactMod extends js.Object {
       ]) | java.lang.String
     ],
     getStateFromStores: js.Function2[/* context */ fluxibleLib.fluxibleMod.ComponentContext, /* props */ js.Any, _]
-  ): org.scalablytyped.runtime.Instantiable1[
-    /* props */ stdLib.Readonly[js.Object], 
-    reactLib.reactMod.Component[js.Object, js.Object, js.Object]
-  ] = js.native
+  ): fluxibleDashAddonsDashReactLib.Anon_ContextType = js.native
   def connectToStores(
-    Component: org.scalablytyped.runtime.Instantiable1[
-      /* props */ stdLib.Readonly[js.Object], 
-      reactLib.reactMod.Component[js.Object, js.Object, js.Object]
-    ],
+    Component: fluxibleDashAddonsDashReactLib.Anon_ContextType,
     stores: js.Array[
       (org.scalablytyped.runtime.Instantiable1[
         /* dispatcher */ dispatchrLib.dispatchrMod.DispatcherInterface, 
@@ -37,28 +28,8 @@ object fluxibleDashAddonsDashReactMod extends js.Object {
     ],
     getStateFromStores: js.Function2[/* context */ fluxibleLib.fluxibleMod.ComponentContext, /* props */ js.Any, _],
     customContextTypes: js.Any
-  ): org.scalablytyped.runtime.Instantiable1[
-    /* props */ stdLib.Readonly[js.Object], 
-    reactLib.reactMod.Component[js.Object, js.Object, js.Object]
-  ] = js.native
-  def provideContext(
-    Component: org.scalablytyped.runtime.Instantiable1[
-      /* props */ stdLib.Readonly[js.Object], 
-      reactLib.reactMod.Component[js.Object, js.Object, js.Object]
-    ]
-  ): org.scalablytyped.runtime.Instantiable1[
-    /* props */ stdLib.Readonly[js.Object], 
-    reactLib.reactMod.Component[js.Object, js.Object, js.Object]
-  ] = js.native
-  def provideContext(
-    Component: org.scalablytyped.runtime.Instantiable1[
-      /* props */ stdLib.Readonly[js.Object], 
-      reactLib.reactMod.Component[js.Object, js.Object, js.Object]
-    ],
-    customContextTypes: js.Any
-  ): org.scalablytyped.runtime.Instantiable1[
-    /* props */ stdLib.Readonly[js.Object], 
-    reactLib.reactMod.Component[js.Object, js.Object, js.Object]
-  ] = js.native
+  ): fluxibleDashAddonsDashReactLib.Anon_ContextType = js.native
+  def provideContext(Component: fluxibleDashAddonsDashReactLib.Anon_ContextType): fluxibleDashAddonsDashReactLib.Anon_ContextType = js.native
+  def provideContext(Component: fluxibleDashAddonsDashReactLib.Anon_ContextType, customContextTypes: js.Any): fluxibleDashAddonsDashReactLib.Anon_ContextType = js.native
 }
 

@@ -14,7 +14,7 @@ package object uiNs {
       /* repeated */ js.Any, 
       angularLib.angularMod.angularNs.IPromise[
         js.UndefOr[
-          /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify IState */ js.Any
+          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify IState */ js.Any
         ]
       ]
     ]

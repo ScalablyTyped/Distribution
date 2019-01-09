@@ -88,7 +88,7 @@ package object JQueryNs {
     * @see \`{@link https://learn.jquery.com/events/event-extensions/#special-event-hooks }\`
     */
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type SpecialEventHook[TTarget, TData] = jqueryLib.Anon_NoBubble | jqueryLib.Anon_BindType | jqueryLib.Anon_DelegateType | (jqueryLib.Anon_Setup[TTarget, TData]) | jqueryLib.Anon_Teardown[TTarget] | (jqueryLib.Anon_Add[TTarget, TData]) | (jqueryLib.Anon_Remove[TTarget, TData]) | (jqueryLib.Anon_Trigger[TTarget, TData]) | (jqueryLib.Anon_Default[TTarget, TData]) | (jqueryLib.Anon_Handle[TTarget, TData]) | jqueryLib.Anon_PreDispatch[TTarget] | jqueryLib.Anon_PostDispatch[TTarget] | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  type SpecialEventHook[TTarget, TData] = jqueryLib.Anon_NoBubble | jqueryLib.Anon_BindType | jqueryLib.Anon_DelegateType | (jqueryLib.Anon_Data[TTarget, TData]) | jqueryLib.Anon_False[TTarget] | (jqueryLib.Anon_Add[TTarget, TData]) | (jqueryLib.Anon_HandleObj[TTarget, TData]) | (jqueryLib.Anon_DataEvent[TTarget, TData]) | (jqueryLib.Anon_DataDefault[TTarget, TData]) | (jqueryLib.Anon_DataEventHandle[TTarget, TData]) | jqueryLib.Anon_Event[TTarget] | jqueryLib.Anon_EventPostDispatch[TTarget] | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   // #endregion
   // region Speed
   // #region Speed
@@ -121,7 +121,7 @@ package object JQueryNs {
   // region Val hooks
   // #region Val hooks
   // Workaround for TypeScript 2.3 which does not have support for weak types handling.
-  type ValHook[TElement] = jqueryLib.Anon_GetElem[TElement] | jqueryLib.Anon_SetElem[TElement] | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
+  type ValHook[TElement] = jqueryLib.Anon_Elem[TElement] | jqueryLib.Anon_ElemSet[TElement] | org.scalablytyped.runtime.StringDictionary[scala.Nothing]
   // #endregion
   type _Falsy = js.UndefOr[
     jqueryLib.jqueryLibNumbers.`false` | scala.Null | jqueryLib.jqueryLibNumbers.`0` | jqueryLib.jqueryLibStrings.Empty | stdLib.HTMLAllCollection

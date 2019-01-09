@@ -17,7 +17,7 @@ trait Eth extends js.Object {
   var Iban: web3Lib.ethTypesMod.Iban = js.native
   var abi: web3Lib.ethAbiMod.ABI = js.native
   var accounts: web3Lib.ethAccountsMod.Accounts = js.native
-  var compile: web3Lib.Anon_Serpent = js.native
+  var compile: web3Lib.Anon_Callback = js.native
   var currentProvider: web3Lib.providersMod.Provider = js.native
   var defaultAccount: java.lang.String = js.native
   var defaultBlock: web3Lib.ethTypesMod.BlockType = js.native
@@ -37,16 +37,16 @@ trait Eth extends js.Object {
   def getAccounts(): js.Promise[js.Array[java.lang.String]] = js.native
   def getAccounts(cb: web3Lib.typesMod.Callback[js.Array[java.lang.String]]): js.Promise[js.Array[java.lang.String]] = js.native
   def getBalance(address: java.lang.String): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BigNumber */ _
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BigNumber */ _
   ] = js.native
   def getBalance(address: java.lang.String, defaultBlock: web3Lib.ethTypesMod.BlockType): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BigNumber */ _
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BigNumber */ _
   ] = js.native
   def getBalance(
     address: java.lang.String,
     defaultBlock: web3Lib.ethTypesMod.BlockType,
     cb: web3Lib.typesMod.Callback[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BigNumber */ _
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BigNumber */ _
     ]
   ): scala.Unit = js.native
   def getBlock(number: web3Lib.ethTypesMod.BlockType): js.Promise[web3Lib.ethTypesMod.Block] = js.native
@@ -81,22 +81,22 @@ trait Eth extends js.Object {
   def getGasPrice(cb: web3Lib.typesMod.Callback[scala.Double]): js.Promise[scala.Double] = js.native
   def getHashrate(): js.Promise[scala.Double] = js.native
   def getHashrate(cb: web3Lib.typesMod.Callback[scala.Double]): js.Promise[scala.Double] = js.native
-  def getPastLogs(options: web3Lib.Anon_FromBlock): js.Promise[js.Array[web3Lib.typesMod.Log]] = js.native
-  def getPastLogs(options: web3Lib.Anon_FromBlock, cb: web3Lib.typesMod.Callback[js.Array[web3Lib.typesMod.Log]]): js.Promise[js.Array[web3Lib.typesMod.Log]] = js.native
+  def getPastLogs(options: web3Lib.Anon_Address): js.Promise[js.Array[web3Lib.typesMod.Log]] = js.native
+  def getPastLogs(options: web3Lib.Anon_Address, cb: web3Lib.typesMod.Callback[js.Array[web3Lib.typesMod.Log]]): js.Promise[js.Array[web3Lib.typesMod.Log]] = js.native
   def getProtocolVersion(): js.Promise[java.lang.String] = js.native
   def getProtocolVersion(cb: web3Lib.typesMod.Callback[java.lang.String]): js.Promise[java.lang.String] = js.native
   def getStorageAt(
     address: java.lang.String,
-    position: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BigNumber */ js.Any
+    position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BigNumber */ js.Any
   ): js.Promise[java.lang.String] = js.native
   def getStorageAt(
     address: java.lang.String,
-    position: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BigNumber */ js.Any,
+    position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BigNumber */ js.Any,
     defaultBlock: web3Lib.ethTypesMod.BlockType
   ): js.Promise[java.lang.String] = js.native
   def getStorageAt(
     address: java.lang.String,
-    position: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BigNumber */ js.Any,
+    position: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BigNumber */ js.Any,
     defaultBlock: web3Lib.ethTypesMod.BlockType,
     cb: web3Lib.typesMod.Callback[java.lang.String]
   ): js.Promise[java.lang.String] = js.native

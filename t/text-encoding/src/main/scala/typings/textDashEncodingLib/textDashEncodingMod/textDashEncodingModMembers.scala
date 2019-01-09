@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("text-encoding", JSImport.Namespace)
 @js.native
 object textDashEncodingModMembers extends js.Object {
-  var TextDecoder: textDashEncodingLib.Anon_Label = js.native
-  var TextEncoder: textDashEncodingLib.Anon_UtfLabel = js.native
+  var TextDecoder: textDashEncodingLib.Anon_EncodingLabel = js.native
+  var TextEncoder: textDashEncodingLib.Anon_Encoding = js.native
 }
 

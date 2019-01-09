@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ trait MacConfiguration extends js.Object {
   /**
     * Paths of any extra binaries that need to be signed.
@@ -92,8 +92,8 @@ import scala.scalajs.js.annotation._
     */
   val target: js.UndefOr[
     (js.Array[
-      MacOsTargetName | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify TargetConfiguration */ _)
-    ]) | MacOsTargetName | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify TargetConfiguration */ js.Any) | scala.Null
+      MacOsTargetName | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetConfiguration */ _)
+    ]) | MacOsTargetName | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TargetConfiguration */ js.Any) | scala.Null
   ] = js.undefined
   /**
     * Whether to sign app for development or for distribution.

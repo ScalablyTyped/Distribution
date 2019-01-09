@@ -13,7 +13,9 @@ trait DirectoryArgs extends js.Object {
   /**
     * Connector related information about the directory. Fields documented below.
     */
-  val connectSettings: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CustomerDnsIps]] = js.undefined
+  val connectSettings: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CustomerDnsIpsCustomerUsername]
+  ] = js.undefined
   /**
     * A textual description for the directory.
     */
@@ -55,6 +57,6 @@ trait DirectoryArgs extends js.Object {
   /**
     * VPC related information about the directory. Fields documented below.
     */
-  val vpcSettings: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_VpcId]] = js.undefined
+  val vpcSettings: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_SubnetIdsVpcId]] = js.undefined
 }
 

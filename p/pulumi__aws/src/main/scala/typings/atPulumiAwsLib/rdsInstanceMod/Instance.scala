@@ -250,7 +250,7 @@ class Instance protected ()
   /**
     * Restore from a Percona Xtrabackup in S3.  See [Importing Data into an Amazon RDS MySQL DB Instance](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/MySQL.Procedural.Importing.html)
     */
-  val s3Import: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SourceEngineVersionBucketPrefix]] = js.native
+  val s3Import: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketNameBucketPrefix]] = js.native
   /**
     * List of DB Security Groups to
     * associate. Only used for [DB Instances on the _EC2-Classic_

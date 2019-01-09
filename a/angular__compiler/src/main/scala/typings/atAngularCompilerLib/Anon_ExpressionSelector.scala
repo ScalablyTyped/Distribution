@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ExpressionSelector extends js.Object {
-  var expression: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
+  var expression: js.Any
   var selector: java.lang.String
 }
 

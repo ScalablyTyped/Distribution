@@ -9,5 +9,5 @@ package object CarouselNs {
   type CarouselProps = (reactDashBootstrapLib.reactDashBootstrapMod.Omit[
     reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libCarouselMod.Carousel], 
     reactDashBootstrapLib.reactDashBootstrapLibStrings.wrap
-  ]) with reactDashBootstrapLib.Anon_BsSize
+  ]) with reactDashBootstrapLib.Anon_ActiveIndex
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("photonui.Widget")
 @js.native
 class Widget () extends Base {
-  var absolutePosition: photonuiLib.Anon_Y = js.native
+  var absolutePosition: photonuiLib.Anon_X = js.native
    // readonly
   var contextMenu: PopupWindow = js.native
   var contextMenuName: java.lang.String = js.native

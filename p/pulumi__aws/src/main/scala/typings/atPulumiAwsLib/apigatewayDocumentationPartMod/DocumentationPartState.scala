@@ -9,7 +9,7 @@ trait DocumentationPartState extends js.Object {
   /**
     * The location of the targeted API entity of the to-be-created documentation part. See below.
     */
-  val location: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_StatusCodeMethod]] = js.undefined
+  val location: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_MethodName]] = js.undefined
   /**
     * A content map of API-specific key-value pairs describing the targeted API entity. The map must be encoded as a JSON string, e.g., "{ \"description\": \"The API does ...\" }". Only Swagger-compliant key-value pairs can be exported and, hence, published.
     */

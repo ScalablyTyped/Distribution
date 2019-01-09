@@ -25,8 +25,8 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var autoscaling: js.UndefOr[awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.apiVersion] = js.undefined
   var autoscalingplans: js.UndefOr[awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.apiVersion] = js.undefined
   var batch: js.UndefOr[awsDashSdkLib.clientsBatchMod.BatchNs.apiVersion] = js.undefined
-  var budgets: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify AWS.Budgets.Types.apiVersion */ js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify AWS.Budgets.Types.apiVersion */ js.Any
+  var budgets: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.Budgets.Types.apiVersion */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.Budgets.Types.apiVersion */ js.Any
   ] = js.undefined
   var chime: js.UndefOr[awsDashSdkLib.clientsChimeMod.ChimeNs.apiVersion] = js.undefined
   var cloud9: js.UndefOr[awsDashSdkLib.clientsCloud9Mod.Cloud9Ns.apiVersion] = js.undefined

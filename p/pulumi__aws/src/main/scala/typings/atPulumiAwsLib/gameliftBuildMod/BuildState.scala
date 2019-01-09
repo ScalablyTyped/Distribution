@@ -17,7 +17,7 @@ trait BuildState extends js.Object {
   /**
     * Information indicating where your game build files are stored. See below.
     */
-  val storageLocation: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RoleArnKey]] = js.undefined
+  val storageLocation: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketKeyRoleArn]] = js.undefined
   /**
     * Version that is associated with this build.
     */

@@ -25,7 +25,7 @@ class InstanceGroup protected ()
   /**
     * One or more `ebs_config` blocks as defined below. Changing this forces a new resource to be created.
     */
-  val ebsConfigs: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_VolumesPerInstanceType]]] = js.native
+  val ebsConfigs: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Iops]]] = js.native
   /**
     * Indicates whether an Amazon EBS volume is EBS-optimized. Changing this forces a new resource to be created.
     */

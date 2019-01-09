@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Permalink protected () extends js.Object {
   def this(rule: java.lang.String) = this()
-  def this(rule: java.lang.String, options: hexoDashUtilLib.Anon_Segments) = this()
+  def this(rule: java.lang.String, options: hexoDashUtilLib.Anon_NameSegments) = this()
   var params: js.Array[java.lang.String] = js.native
   var regex: stdLib.RegExp = js.native
   var rule: java.lang.String = js.native

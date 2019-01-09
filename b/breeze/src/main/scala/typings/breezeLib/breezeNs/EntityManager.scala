@@ -107,9 +107,9 @@ class EntityManager () extends js.Object {
   def hasChanges(entityTypeNames: js.Array[EntityType | java.lang.String]): scala.Boolean = js.native
   def hasChanges(entityType: EntityType): scala.Boolean = js.native
   def importEntities(exportedData: js.Object): breezeLib.Anon_Entities = js.native
-  def importEntities(exportedData: js.Object, config: breezeLib.Anon_MetadataVersionFn): breezeLib.Anon_Entities = js.native
+  def importEntities(exportedData: js.Object, config: breezeLib.Anon_Any): breezeLib.Anon_Entities = js.native
   def importEntities(exportedString: java.lang.String): breezeLib.Anon_Entities = js.native
-  def importEntities(exportedString: java.lang.String, config: breezeLib.Anon_MetadataVersionFn): breezeLib.Anon_Entities = js.native
+  def importEntities(exportedString: java.lang.String, config: breezeLib.Anon_Any): breezeLib.Anon_Entities = js.native
   def rejectChanges(): js.Array[Entity] = js.native
   def saveChanges(): js.Promise[SaveResult] = js.native
   def saveChanges(entities: js.Array[Entity]): js.Promise[SaveResult] = js.native
@@ -128,8 +128,8 @@ class EntityManager () extends js.Object {
 @js.native
 object EntityManager extends js.Object {
   def importEntities(exportedData: js.Object): breezeLib.breezeNs.EntityManager = js.native
-  def importEntities(exportedData: js.Object, config: breezeLib.Anon_MetadataVersionFn): breezeLib.breezeNs.EntityManager = js.native
+  def importEntities(exportedData: js.Object, config: breezeLib.Anon_Any): breezeLib.breezeNs.EntityManager = js.native
   def importEntities(exportedString: java.lang.String): breezeLib.breezeNs.EntityManager = js.native
-  def importEntities(exportedString: java.lang.String, config: breezeLib.Anon_MetadataVersionFn): breezeLib.breezeNs.EntityManager = js.native
+  def importEntities(exportedString: java.lang.String, config: breezeLib.Anon_Any): breezeLib.breezeNs.EntityManager = js.native
 }
 

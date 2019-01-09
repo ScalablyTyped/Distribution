@@ -17,6 +17,6 @@ object libComponentsIndicatorsModMembers extends js.Object {
   def CrossIcon(props: js.Any): js.Any = js.native
   def DownChevron(props: js.Any): js.Any = js.native
   def indicatorSeparatorCSS(state: SeparatorState): reactLib.reactMod.ReactNs.CSSProperties = js.native
-  def loadingIndicatorCSS(state: reactDashSelectLib.Anon_Size): reactLib.reactMod.ReactNs.CSSProperties = js.native
+  def loadingIndicatorCSS(state: reactDashSelectLib.Anon_IsFocused): reactLib.reactMod.ReactNs.CSSProperties = js.native
 }
 

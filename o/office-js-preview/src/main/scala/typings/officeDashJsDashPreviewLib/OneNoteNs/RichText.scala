@@ -69,7 +69,7 @@ class RichText ()
   def load(): RichText = js.native
   def load(option: java.lang.String): RichText = js.native
   def load(option: js.Array[java.lang.String]): RichText = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): RichText = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): RichText = js.native
   def load(option: officeDashJsDashPreviewLib.OneNoteNs.InterfacesNs.RichTextLoadOptions): RichText = js.native
   def toJSON(): officeDashJsDashPreviewLib.OneNoteNs.InterfacesNs.RichTextData = js.native
   /**

@@ -23,7 +23,7 @@ class Trigger protected ()
     * The name for the repository. This needs to be less than 100 characters.
     */
   val repositoryName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val triggers: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_NameCustomData]] = js.native
+  val triggers: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Branches]] = js.native
 }
 
 @JSImport("@pulumi/aws/codecommit/trigger", "Trigger")

@@ -69,7 +69,7 @@ object scriptNs extends js.Object {
     name: java.lang.String,
     `type`: java.lang.String,
     defaultValue: js.Any,
-    options: playcanvasLib.Anon_Enumerations
+    options: playcanvasLib.Anon_Color
   ): scala.Unit = js.native
   /**
     * @function

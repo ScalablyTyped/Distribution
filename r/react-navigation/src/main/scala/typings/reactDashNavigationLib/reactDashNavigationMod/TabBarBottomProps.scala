@@ -21,7 +21,7 @@ trait TabBarBottomProps extends js.Object {
   var style: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
   var tabStyle: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
   def getLabel(scene: TabScene): reactLib.reactMod.ReactNs.ReactNode | java.lang.String
-  def getOnPress(previousScene: NavigationRoute[NavigationParams], scene: TabScene): js.Function1[/* args */ reactDashNavigationLib.Anon_PreviousScene, scala.Unit]
+  def getOnPress(previousScene: NavigationRoute[NavigationParams], scene: TabScene): js.Function1[/* args */ reactDashNavigationLib.Anon_IndexJumpToIndex, scala.Unit]
   def getTestIDProps(scene: TabScene): js.Function1[/* scene */ TabScene, _]
   def jumpToIndex(index: scala.Double): scala.Unit
   def renderIcon(scene: TabScene): reactLib.reactMod.ReactNs.ReactNode

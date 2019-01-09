@@ -153,7 +153,7 @@ object AWSNs extends js.Object {
     */
   class Budgets ()
     extends awsDashSdkLib.awsDashSdkMod.Budgets {
-    def this(options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Budgets.Types.ClientConfiguration */ js.Any) = this()
+    def this(options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Budgets.Types.ClientConfiguration */ js.Any) = this()
   }
   
   @js.native

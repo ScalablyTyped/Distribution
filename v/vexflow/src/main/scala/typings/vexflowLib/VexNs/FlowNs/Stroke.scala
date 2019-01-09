@@ -15,6 +15,6 @@ class Stroke protected () extends Modifier {
 @JSGlobal("Vex.Flow.Stroke")
 @js.native
 object Stroke extends js.Object {
-  def format(strokes: js.Array[vexflowLib.VexNs.FlowNs.Stroke], state: vexflowLib.Anon_Rightshift): scala.Boolean = js.native
+  def format(strokes: js.Array[vexflowLib.VexNs.FlowNs.Stroke], state: vexflowLib.Anon_Leftshift): scala.Boolean = js.native
 }
 

@@ -9,7 +9,7 @@ trait PrivateUserOrOrg extends UserOrOrg {
   var collaborators: scala.Double
   var disk_usage: scala.Double
   var owned_private_repos: scala.Double
-  var plan: typedDashGithubDashApiLib.Anon_Privaterepos
+  var plan: typedDashGithubDashApiLib.Anon_Collaborators
   var private_gists: scala.Double
   var total_private_repos: scala.Double
 }

@@ -13,6 +13,6 @@ object lessDashMiddlewareMod extends js.Object {
     * and by extension the Express JS framework
     */
   def apply(source: java.lang.String): expressLib.expressMod.eNs.RequestHandler = js.native
-  def apply(source: java.lang.String, options: lessDashMiddlewareLib.Anon_Dest): expressLib.expressMod.eNs.RequestHandler = js.native
+  def apply(source: java.lang.String, options: lessDashMiddlewareLib.Anon_CacheFile): expressLib.expressMod.eNs.RequestHandler = js.native
 }
 

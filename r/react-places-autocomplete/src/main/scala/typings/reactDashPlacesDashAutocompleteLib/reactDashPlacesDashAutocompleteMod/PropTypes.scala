@@ -20,7 +20,7 @@ trait PropTypes extends js.Object {
   var onSelect: js.UndefOr[
     js.Function2[/* address */ java.lang.String, /* placeID */ java.lang.String, scala.Unit]
   ] = js.undefined
-  var searchOptions: js.UndefOr[reactDashPlacesDashAutocompleteLib.Anon_Location] = js.undefined
+  var searchOptions: js.UndefOr[reactDashPlacesDashAutocompleteLib.Anon_Bounds] = js.undefined
   var shouldFetchSuggestions: js.UndefOr[scala.Boolean] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined
   def children(opts: stdLib.Readonly[reactDashPlacesDashAutocompleteLib.Anon_GetInputProps]): reactLib.reactMod.ReactNs.ReactNode

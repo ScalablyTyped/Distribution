@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PerInstanceColorAppearance ()
   extends cesiumLib.cesiumMod.CesiumNs.PerInstanceColorAppearance {
-  def this(options: cesiumLib.Anon_VertexShaderSourceFaceForward) = this()
+  def this(options: cesiumLib.Anon_ClosedFaceForwardFlat) = this()
   /* CompleteClass */
   override val closed: scala.Boolean = js.native
   /* CompleteClass */

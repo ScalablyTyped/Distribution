@@ -17,7 +17,7 @@ class DataReaderLoadOperation ()
   /* CompleteClass */
   override var id: scala.Double = js.native
   @JSName("operation")
-  var operation_DataReaderLoadOperation: winrtLib.Anon_Completed = js.native
+  var operation_DataReaderLoadOperation: winrtLib.Anon_AsyncInfoAsyncStatusCompletedGetResultsAsyncOperationCompletedHandlerIAsyncOperationNumber = js.native
   /* CompleteClass */
   override var status: winrtLib.WindowsNs.FoundationNs.AsyncStatus = js.native
   /* InferMemberOverrides */

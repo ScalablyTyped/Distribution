@@ -10,7 +10,7 @@ trait Option extends js.Object {
     * [DEPRECATED]: You should use a 'paths' options of browserify.
     */
   var aliases: js.UndefOr[Aliases] = js.undefined
-  var options: js.UndefOr[gulpDashCoffeeifyLib.Anon_Paths] = js.undefined
+  var options: js.UndefOr[gulpDashCoffeeifyLib.Anon_Debug] = js.undefined
   /**
     * [DEPRECATED]
     */

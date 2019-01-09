@@ -29,7 +29,7 @@ class Directory protected ()
   /**
     * Connector related information about the directory. Fields documented below.
     */
-  val connectSettings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CustomerDnsIpsVpcId]] = js.native
+  val connectSettings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CustomerDnsIps]] = js.native
   /**
     * A textual description for the directory.
     */
@@ -77,7 +77,7 @@ class Directory protected ()
   /**
     * VPC related information about the directory. Fields documented below.
     */
-  val vpcSettings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_VpcIdSubnetIds]] = js.native
+  val vpcSettings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SubnetIds]] = js.native
 }
 
 @JSImport("@pulumi/aws/directoryservice/directory", "Directory")

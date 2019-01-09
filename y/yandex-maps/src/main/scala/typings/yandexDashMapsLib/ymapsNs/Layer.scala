@@ -19,7 +19,6 @@ class Layer protected ()
     ]) = this()
   /* CompleteClass */
   override var events: IEventManager = js.native
-  var options: IOptionManager = js.native
   /* CompleteClass */
   override def fromClientPixels(clientPixelPoint: js.Array[scala.Double]): js.Array[scala.Double] = js.native
   /* CompleteClass */

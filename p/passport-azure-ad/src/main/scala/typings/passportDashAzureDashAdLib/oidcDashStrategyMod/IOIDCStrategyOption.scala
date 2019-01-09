@@ -9,7 +9,7 @@ trait IOIDCStrategyOption
   extends passportDashAzureDashAdLib.commonMod.IBaseStrategyOption {
   var allowHttpForRedirectUrl: js.UndefOr[scala.Boolean] = js.undefined
   var clientSecret: js.UndefOr[java.lang.String] = js.undefined
-  var cookieEncryptionKeys: js.UndefOr[js.Array[passportDashAzureDashAdLib.Anon_Key]] = js.undefined
+  var cookieEncryptionKeys: js.UndefOr[js.Array[passportDashAzureDashAdLib.Anon_Iv]] = js.undefined
   var nonceLifetime: js.UndefOr[scala.Double] = js.undefined
   var nonceMaxAmount: js.UndefOr[scala.Double] = js.undefined
   var privatePEMKey: js.UndefOr[java.lang.String] = js.undefined

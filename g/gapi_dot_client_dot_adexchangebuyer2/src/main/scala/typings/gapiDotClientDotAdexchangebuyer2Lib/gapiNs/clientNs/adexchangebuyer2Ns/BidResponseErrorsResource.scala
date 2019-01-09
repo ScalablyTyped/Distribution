@@ -11,7 +11,7 @@ trait BidResponseErrorsResource extends js.Object {
     * responses affected for each reason.
     */
   def list(
-    request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPageSizePrettyPrintBearertokenPageToken
+    request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetId
   ): gapiDotClientLib.gapiNs.clientNs.Request[ListBidResponseErrorsResponse]
 }
 

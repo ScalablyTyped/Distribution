@@ -70,7 +70,7 @@ trait IOrder
   /**
     * The timestamps at which the order status was updated
     */
-  var status_transitions: stripeLib.Anon_Fulfiled
+  var status_transitions: stripeLib.Anon_Canceled
   var updated: scala.Double
 }
 

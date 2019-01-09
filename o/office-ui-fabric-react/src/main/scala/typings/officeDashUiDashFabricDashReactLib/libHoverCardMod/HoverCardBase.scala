@@ -15,6 +15,6 @@ class HoverCardBase protected ()
 @JSImport("office-ui-fabric-react/lib/HoverCard", "HoverCardBase")
 @js.native
 object HoverCardBase extends js.Object {
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_InstantOpenOnClick = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_CardDismissDelay = js.native
 }
 

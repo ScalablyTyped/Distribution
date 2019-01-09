@@ -19,7 +19,7 @@ trait LegendOptions extends js.Object {
     * step defines the max step the lagend has (e.g. If 2 set and legend has 3 legend item, the legend 2 columns).
     */
   var inset: js.UndefOr[c3Lib.Anon_Anchor] = js.undefined
-  var item: js.UndefOr[c3Lib.Anon_Tile] = js.undefined
+  var item: js.UndefOr[c3Lib.Anon_Id] = js.undefined
   /**
     * Padding between legend elements.
     */

@@ -19,7 +19,7 @@ trait TabBarTopProps extends js.Object {
   var tabBarPosition: java.lang.String
   var upperCaseLabel: scala.Boolean
   def getLabel(scene: TabScene): reactLib.reactMod.ReactNs.ReactNode | java.lang.String
-  def getOnPress(previousScene: NavigationRoute[NavigationParams], scene: TabScene): js.Function1[/* args */ reactDashNavigationLib.Anon_PreviousScene, scala.Unit]
+  def getOnPress(previousScene: NavigationRoute[NavigationParams], scene: TabScene): js.Function1[/* args */ reactDashNavigationLib.Anon_IndexJumpToIndex, scala.Unit]
   def jumpToIndex(index: scala.Double): scala.Unit
   def renderIcon(scene: TabScene): reactLib.reactMod.ReactNs.ReactElement[_]
 }

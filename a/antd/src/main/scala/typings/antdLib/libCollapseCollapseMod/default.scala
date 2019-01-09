@@ -13,6 +13,6 @@ class default () extends Collapse
 @js.native
 object default extends js.Object {
   var Panel: org.scalablytyped.runtime.Instantiable0[antdLib.libCollapseCollapsePanelMod.default] = js.native
-  var defaultProps: antdLib.Anon_OpenAnimation = js.native
+  var defaultProps: antdLib.Anon_Bordered = js.native
 }
 

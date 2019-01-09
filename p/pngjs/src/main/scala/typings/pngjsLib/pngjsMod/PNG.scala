@@ -55,7 +55,7 @@ class PNG ()
 @JSImport("pngjs", "PNG")
 @js.native
 object PNG extends js.Object {
-  var sync: pngjsLib.Anon_Write = js.native
+  var sync: pngjsLib.Anon_Buffer = js.native
   def adjustGamma(src: pngjsLib.pngjsMod.PNG): scala.Unit = js.native
   def bitblt(
     src: pngjsLib.pngjsMod.PNG,

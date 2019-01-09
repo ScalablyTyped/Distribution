@@ -18,7 +18,7 @@ class Vector3 protected ()
     *   * y - the y value
     *   * z - the z value
     */
-  def this(options: roslibLib.Anon_Z) = this()
+  def this(options: roslibLib.Anon_X) = this()
   // getters
   /* CompleteClass */
   override var x: scala.Double = js.native

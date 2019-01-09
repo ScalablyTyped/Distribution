@@ -29,11 +29,11 @@ trait Cypress extends js.Object {
     * @example
     *    Cypress.Blob.method()
     */
-  var Blob: cypressLib.BlobUtilNs.BlobUtilStatic = js.native
+  var Blob: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BlobUtil.BlobUtilStatic */ js.Any = js.native
   /**
     * @see https://on.cypress.io/api/commands
     */
-  var Commands: cypressLib.Anon_Overwrite = js.native
+  var Commands: cypressLib.Anon_Add = js.native
   /**
     * @see https://on.cypress.io/cookies
     */
@@ -46,15 +46,15 @@ trait Cypress extends js.Object {
     * @example
     *   new Cypress.Promise((resolve, reject) => { ... })
     */
-  var Promise: cypressLib.BluebirdNs.BluebirdStatic = js.native
+  var Promise: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Bluebird.BluebirdStatic */ js.Any = js.native
   /**
     * @see https://on.cypress.io/api/screenshot-api
     */
-  var Screenshot: cypressLib.Anon_Defaults = js.native
+  var Screenshot: cypressLib.Anon_DefaultsOptions = js.native
   /**
     * @see https://on.cypress.io/api/api-server
     */
-  var Server: cypressLib.Anon_DefaultsOptions = js.native
+  var Server: cypressLib.Anon_Defaults = js.native
   /**
     * Lodash library
     *
@@ -79,13 +79,13 @@ trait Cypress extends js.Object {
   /**
     * @see https://on.cypress.io/dom
     */
-  var dom: cypressLib.Anon_IsHidden = js.native
+  var dom: cypressLib.Anon_Element = js.native
   /**
     * Cypress automatically includes minimatch and exposes it as Cypress.minimatch.
     *
     * @see https://on.cypress.io/minimatch
     */
-  var minimatch: cypressLib.MimimatchNs.MimimatchStatic = js.native
+  var minimatch: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Mimimatch.MimimatchStatic */ js.Any = js.native
   /**
     * Cypress automatically includes moment.js and exposes it as Cypress.moment.
     *
@@ -94,8 +94,7 @@ trait Cypress extends js.Object {
     * @example
     *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
     */
-  @JSName("moment")
-  var moment_Original: cypressLib.MomentNs.MomentStatic = js.native
+  var moment: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Moment.MomentStatic */ js.Any = js.native
   /**
     * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
     * @see https://on.cypress.io/catalog-of-events#App-Events
@@ -636,76 +635,6 @@ trait Cypress extends js.Object {
     * @see https://on.cypress.io/cypress-log
     */
   def log(options: stdLib.Partial[LogConfig]): Log = js.native
-  /**
-    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
-    *
-    * @see https://on.cypress.io/moment
-    * @see http://momentjs.com/
-    * @example
-    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
-    */
-  def moment(): momentLib.momentMod.momentNs.Moment = js.native
-  /**
-    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
-    *
-    * @see https://on.cypress.io/moment
-    * @see http://momentjs.com/
-    * @example
-    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
-    */
-  def moment(inp: momentLib.momentMod.momentNs.MomentInput): momentLib.momentMod.momentNs.Moment = js.native
-  /**
-    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
-    *
-    * @see https://on.cypress.io/moment
-    * @see http://momentjs.com/
-    * @example
-    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
-    */
-  def moment(
-    inp: momentLib.momentMod.momentNs.MomentInput,
-    format: momentLib.momentMod.momentNs.MomentFormatSpecification
-  ): momentLib.momentMod.momentNs.Moment = js.native
-  /**
-    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
-    *
-    * @see https://on.cypress.io/moment
-    * @see http://momentjs.com/
-    * @example
-    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
-    */
-  def moment(
-    inp: momentLib.momentMod.momentNs.MomentInput,
-    format: momentLib.momentMod.momentNs.MomentFormatSpecification,
-    language: java.lang.String
-  ): momentLib.momentMod.momentNs.Moment = js.native
-  /**
-    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
-    *
-    * @see https://on.cypress.io/moment
-    * @see http://momentjs.com/
-    * @example
-    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
-    */
-  def moment(
-    inp: momentLib.momentMod.momentNs.MomentInput,
-    format: momentLib.momentMod.momentNs.MomentFormatSpecification,
-    language: java.lang.String,
-    strict: scala.Boolean
-  ): momentLib.momentMod.momentNs.Moment = js.native
-  /**
-    * Cypress automatically includes moment.js and exposes it as Cypress.moment.
-    *
-    * @see https://on.cypress.io/moment
-    * @see http://momentjs.com/
-    * @example
-    *    const todaysDate = Cypress.moment().format("MMM DD, YYYY")
-    */
-  def moment(
-    inp: momentLib.momentMod.momentNs.MomentInput,
-    format: momentLib.momentMod.momentNs.MomentFormatSpecification,
-    strict: scala.Boolean
-  ): momentLib.momentMod.momentNs.Moment = js.native
   /**
     * Fires when cy finishes running and executing your command. Useful for debugging and understanding how commands are handled.
     * @see https://on.cypress.io/catalog-of-events#App-Events

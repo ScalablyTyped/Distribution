@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("fullcalendar", JSImport.Namespace)
 @js.native
 object fullcalendarModMembers extends js.Object {
-  val EventSourceParser: fullcalendarLib.Anon_SourceClasses = js.native
+  val EventSourceParser: fullcalendarLib.Anon_Calendar = js.native
   val Promise: fullcalendarLib.Anon_Construct = js.native
   val internalApiVersion: /* 12 */ scala.Double = js.native
   val moment: js.Any = js.native
@@ -41,7 +41,7 @@ object fullcalendarModMembers extends js.Object {
   def getScrollbarWidths(el: js.Any): js.Any = js.native
   def getViewConfig(viewName: js.Any): js.Any = js.native
   def htmlEscape(s: js.Any): java.lang.String = js.native
-  def intersectRects(rect1: js.Any, rect2: js.Any): fullcalendarLib.fullcalendarLibNumbers.`false` | fullcalendarLib.Anon_BottomTop = js.native
+  def intersectRects(rect1: js.Any, rect2: js.Any): fullcalendarLib.fullcalendarLibNumbers.`false` | fullcalendarLib.Anon_BottomLeft = js.native
   def isInt(n: js.Any): scala.Boolean = js.native
   def locale(localeCode: js.Any, newFcOptions: js.Any): scala.Unit = js.native
   def log(args: js.Any*): js.Any = js.native

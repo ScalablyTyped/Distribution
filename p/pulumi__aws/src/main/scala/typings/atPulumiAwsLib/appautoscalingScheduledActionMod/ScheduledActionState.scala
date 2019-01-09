@@ -29,7 +29,7 @@ trait ScheduledActionState extends js.Object {
   /**
     * The new minimum and maximum capacity. You can set both values or just one. See below
     */
-  val scalableTargetAction: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_MinCapacityMaxCapacity]] = js.undefined
+  val scalableTargetAction: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_MaxCapacityMinCapacity]] = js.undefined
   /**
     * The schedule for this action. The following formats are supported: At expressions - at(yyyy-mm-ddThh:mm:ss), Rate expressions - rate(valueunit), Cron expressions - cron(fields). In UTC. Documentation can be found in the parameter at: [AWS Application Auto Scaling API Reference](https://docs.aws.amazon.com/ApplicationAutoScaling/latest/APIReference/API_PutScheduledAction.html#ApplicationAutoScaling-PutScheduledAction-request-Schedule)
     */

@@ -19,7 +19,7 @@ trait EncryptedData extends js.Object {
     * @param {*} parameters Parameters neccessary for encryption
     * @returns {Promise}
     */
-  def encrypt(parameters: pkijsLib.Anon_HmacHashAlgorithm): js.Thenable[stdLib.ArrayBuffer]
+  def encrypt(parameters: pkijsLib.Anon_ContentEncryptionAlgorithm): js.Thenable[stdLib.ArrayBuffer]
   def fromSchema(schema: js.Any): scala.Unit
   def toJSON(): js.Any
   def toSchema(): js.Any

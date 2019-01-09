@@ -27,7 +27,7 @@ abstract class PnpObjectCollection ()
     * Retrieves multiple elements in a single pass through the iterator.
     * @param startIndex The index from which to start retrieval.
     */
-  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValuePnpObject = js.native
+  def getMany(startIndex: scala.Double): winrtDashUwpLib.Anon_ItemsReturnValueNumberPnpObject = js.native
   def indexOf(value: PnpObject, extra: js.Any*): winrtDashUwpLib.Anon_Index = js.native
   /**
     * Retrieves the index of the specified item.

@@ -40,7 +40,7 @@ object menusNsMembers extends js.Object {
     */
   val onShown: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function2[
-      /* info */ firefoxDashWebextDashBrowserLib.Anon_MediaTypeLinkUrl, 
+      /* info */ firefoxDashWebextDashBrowserLib.Anon_ContextsEditable, 
       /* tab */ firefoxDashWebextDashBrowserLib.browserNs.tabsNs.Tab, 
       scala.Unit
     ]
@@ -53,9 +53,9 @@ object menusNsMembers extends js.Object {
     *     item, details will be available in `runtime.lastError`.
     * @returns The ID of the newly created item.
     */
-  def create(createProperties: firefoxDashWebextDashBrowserLib.Anon_DocumentUrlPatternsViewTypesVisible): scala.Double | java.lang.String = js.native
+  def create(createProperties: firefoxDashWebextDashBrowserLib.Anon_CheckedCommand): scala.Double | java.lang.String = js.native
   def create(
-    createProperties: firefoxDashWebextDashBrowserLib.Anon_DocumentUrlPatternsViewTypesVisible,
+    createProperties: firefoxDashWebextDashBrowserLib.Anon_CheckedCommand,
     callback: js.Function0[scala.Unit]
   ): scala.Double | java.lang.String = js.native
   /**
@@ -68,7 +68,7 @@ object menusNsMembers extends js.Object {
     * Show the matching menu items from this extension instead of the default menu. This should be called during a
     * 'contextmenu' DOM event handler, and only applies to the menu that opens after this event.
     */
-  def overrideContext(contextOptions: firefoxDashWebextDashBrowserLib.Anon_BookmarkIdShowDefaults): scala.Unit = js.native
+  def overrideContext(contextOptions: firefoxDashWebextDashBrowserLib.Anon_BookmarkIdContext): scala.Unit = js.native
   /**
     * Updates the extension items in the shown menu, including changes that have been made since the menu was shown.
     * Has no effect if the menu is hidden. Rebuilding a shown menu is an expensive operation, only invoke this method
@@ -85,7 +85,7 @@ object menusNsMembers extends js.Object {
   def removeAll(): js.Promise[scala.Unit] = js.native
   def update(
     id: java.lang.String,
-    updateProperties: firefoxDashWebextDashBrowserLib.Anon_DocumentUrlPatternsViewTypesVisibleChecked
+    updateProperties: firefoxDashWebextDashBrowserLib.Anon_CheckedContextsDocumentUrlPatterns
   ): js.Promise[scala.Unit] = js.native
   /**
     * Updates a previously created context menu item.
@@ -94,7 +94,7 @@ object menusNsMembers extends js.Object {
     */
   def update(
     id: scala.Double,
-    updateProperties: firefoxDashWebextDashBrowserLib.Anon_DocumentUrlPatternsViewTypesVisibleChecked
+    updateProperties: firefoxDashWebextDashBrowserLib.Anon_CheckedContextsDocumentUrlPatterns
   ): js.Promise[scala.Unit] = js.native
 }
 

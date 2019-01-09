@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object fuzzaldrinDashPlusMod {
-  type IFilterOptions = IOptions with fuzzaldrinDashPlusLib.Anon_MaxInners
+  type IFilterOptions = IOptions with fuzzaldrinDashPlusLib.Anon_Key
 }

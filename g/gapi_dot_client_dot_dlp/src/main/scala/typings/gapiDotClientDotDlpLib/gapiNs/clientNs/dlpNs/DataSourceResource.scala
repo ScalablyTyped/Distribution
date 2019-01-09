@@ -10,6 +10,6 @@ trait DataSourceResource extends js.Object {
     * Schedules a job to compute risk analysis metrics over content in a Google
     * Cloud Platform repository.
     */
-  def analyze(request: gapiDotClientDotDlpLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunningOperation]
+  def analyze(request: gapiDotClientDotDlpLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunningOperation]
 }
 

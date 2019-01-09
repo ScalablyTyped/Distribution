@@ -12,8 +12,12 @@ trait SliderProps extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
   var min: js.UndefOr[scala.Double] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValueEvent, scala.Unit]] = js.undefined
-  var onSlideEnd: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValueEvent, scala.Unit]] = js.undefined
+  var onChange: js.UndefOr[
+    js.Function1[/* e */ primereactLib.Anon_OriginalEventValueEventNumber_1602871684, scala.Unit]
+  ] = js.undefined
+  var onSlideEnd: js.UndefOr[
+    js.Function1[/* e */ primereactLib.Anon_OriginalEventValueEventNumber_1602871684, scala.Unit]
+  ] = js.undefined
   var orientation: js.UndefOr[java.lang.String] = js.undefined
   var range: js.UndefOr[scala.Boolean] = js.undefined
   var step: js.UndefOr[scala.Double] = js.undefined

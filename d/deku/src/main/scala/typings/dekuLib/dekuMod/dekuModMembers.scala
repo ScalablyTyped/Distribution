@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("deku", JSImport.Namespace)
 @js.native
 object dekuModMembers extends js.Object {
-  var h: dekuLib.Anon_Type = js.native
+  var h: dekuLib.Anon_Attributes = js.native
   /**
   	 * Create a DOM renderer using a container element.
   	 * Everything will be rendered inside of that container.

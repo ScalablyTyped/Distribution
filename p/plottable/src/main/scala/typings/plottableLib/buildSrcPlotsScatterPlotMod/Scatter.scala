@@ -27,7 +27,7 @@ class Scatter[X, Y] ()
   /* private */ def _createLabelContainer(labelArea: js.Any, labelContainerOrigin: js.Any, labelOrigin: js.Any, measurement: js.Any): js.Any = js.native
   /* private */ def _drawLabel(datum: js.Any, index: js.Any, dataset: js.Any, attrToProjector: js.Any): js.Any = js.native
   /* protected */ def _drawLabels(): scala.Unit = js.native
-  /* protected */ def _entityBounds(entity: ILightweightScatterPlotEntity): plottableLib.Anon_YX = js.native
+  /* protected */ def _entityBounds(entity: ILightweightScatterPlotEntity): plottableLib.Anon_HeightWidthXY = js.native
   /* protected */ def _entityVisibleOnPlot(entity: ILightweightScatterPlotEntity, bounds: plottableLib.buildSrcCoreInterfacesMod.Bounds): scala.Boolean = js.native
   /**
     * Get whether bar labels are enabled.

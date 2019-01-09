@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintCustomItemListOptionDetails")
 @js.native
 class PrintCustomItemListOptionDetails () extends IPrintCustomItemListOptionDetails {
-  var displayName: java.lang.String = js.native
+  /* CompleteClass */
+  override var displayName: java.lang.String = js.native
   /* CompleteClass */
   override var errorText: java.lang.String = js.native
   /* CompleteClass */

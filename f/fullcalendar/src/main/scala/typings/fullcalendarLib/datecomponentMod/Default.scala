@@ -34,7 +34,7 @@ abstract class Default ()
   def buildGotoAnchorHtml(gotoOptions: js.Any, attrs: js.Any, innerHtml: js.Any): java.lang.String = js.native
   def callChildren(methodName: js.Any, args: js.Any): scala.Unit = js.native
   def componentFootprintToSegs(componentFootprint: js.Any): js.Array[_] = js.native
-  def computeDayRange(unzonedRange: js.Any): fullcalendarLib.Anon_Start = js.native
+  def computeDayRange(unzonedRange: js.Any): fullcalendarLib.Anon_End = js.native
   def currentRangeAs(unit: js.Any): js.Any = js.native
   def eventFootprintToSegs(eventFootprint: js.Any): js.Any = js.native
   def eventFootprintsToSegs(eventFootprints: js.Any): js.Array[_] = js.native

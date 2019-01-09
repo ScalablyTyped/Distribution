@@ -14,6 +14,15 @@ import scala.scalajs.js.annotation._
   *
   * Each extension can provide two combinations of interfaces for showdown.
   */
-/* RemoveMultipleInheritance: Dropped parents List(showdownLib.showdownMod.ShowdownNs.FilterExtension because Would inherit conflicting mutable fields List(`type`))*/
-trait ShowdownExtension extends RegexReplaceExtension
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- showdownLib.showdownMod.ShowdownNs.FilterExtension because var conflicts: `type`. Inlined filter */ trait ShowdownExtension extends RegexReplaceExtension {
+  var filter: js.UndefOr[
+    js.Function3[
+      /* text */ java.lang.String, 
+      /* converter */ Converter, 
+      /* options */ js.UndefOr[ConverterOptions], 
+      java.lang.String
+    ]
+  ] = js.undefined
+}
 

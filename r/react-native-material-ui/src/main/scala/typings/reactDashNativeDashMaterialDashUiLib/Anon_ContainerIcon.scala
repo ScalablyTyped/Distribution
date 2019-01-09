@@ -12,5 +12,8 @@ trait Anon_ContainerIcon extends js.Object {
   var icon: js.UndefOr[
     reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiMod.ViewStyle
   ] = js.undefined
+  var label: js.UndefOr[
+    reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiMod.TextStyle
+  ] = js.undefined
 }
 

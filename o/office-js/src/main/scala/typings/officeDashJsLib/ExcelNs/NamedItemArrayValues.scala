@@ -47,7 +47,7 @@ class NamedItemArrayValues ()
   def load(): NamedItemArrayValues = js.native
   def load(option: java.lang.String): NamedItemArrayValues = js.native
   def load(option: js.Array[java.lang.String]): NamedItemArrayValues = js.native
-  def load(option: officeDashJsLib.Anon_Select): NamedItemArrayValues = js.native
+  def load(option: officeDashJsLib.Anon_Expand): NamedItemArrayValues = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.NamedItemArrayValuesLoadOptions): NamedItemArrayValues = js.native
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.NamedItemArrayValuesData = js.native
 }

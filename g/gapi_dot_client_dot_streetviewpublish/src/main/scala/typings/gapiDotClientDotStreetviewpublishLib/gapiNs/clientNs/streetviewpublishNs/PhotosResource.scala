@@ -43,9 +43,7 @@ trait PhotosResource extends js.Object {
     * GetPhoto
     * for specific failures that can occur per photo.
     */
-  def batchGet(
-    request: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUser
-  ): gapiDotClientLib.gapiNs.clientNs.Request[BatchGetPhotosResponse]
+  def batchGet(request: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[BatchGetPhotosResponse]
   /**
     * Updates the metadata of Photos, such
     * as pose, place association, connections, etc. Changing the pixels of photos
@@ -80,6 +78,6 @@ trait PhotosResource extends js.Object {
     * Lists all the Photos that belong to
     * the user.
     */
-  def list(request: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListPhotosResponse]
+  def list(request: gapiDotClientDotStreetviewpublishLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListPhotosResponse]
 }
 

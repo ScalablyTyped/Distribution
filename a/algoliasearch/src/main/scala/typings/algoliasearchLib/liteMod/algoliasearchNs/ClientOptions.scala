@@ -19,7 +19,7 @@ trait ClientOptions extends js.Object {
     * write: array of read hosts to use to call  servers, computed automatically
     * https://github.com/algolia/algoliasearch-client-js#client-options
     */
-  var hosts: js.UndefOr[algoliasearchLib.Anon_Write] = js.undefined
+  var hosts: js.UndefOr[algoliasearchLib.Anon_Read] = js.undefined
   /**
     * (node only) httpAgent instance to use when communicating with  servers.
     * https://github.com/algolia/algoliasearch-client-js#client-options

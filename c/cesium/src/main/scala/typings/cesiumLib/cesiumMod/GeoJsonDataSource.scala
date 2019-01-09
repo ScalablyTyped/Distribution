@@ -46,10 +46,10 @@ object GeoJsonDataSource extends js.Object {
   var stroke: cesiumLib.cesiumMod.CesiumNs.Color = js.native
   var strokeWidth: scala.Double = js.native
   def load(data: cesiumLib.cesiumMod.CesiumNs.Resource): js.Promise[cesiumLib.cesiumMod.CesiumNs.GeoJsonDataSource] = js.native
-  def load(data: cesiumLib.cesiumMod.CesiumNs.Resource, options: cesiumLib.Anon_Stroke): js.Promise[cesiumLib.cesiumMod.CesiumNs.GeoJsonDataSource] = js.native
+  def load(data: cesiumLib.cesiumMod.CesiumNs.Resource, options: cesiumLib.Anon_ClampToGround): js.Promise[cesiumLib.cesiumMod.CesiumNs.GeoJsonDataSource] = js.native
   def load(data: java.lang.String): js.Promise[cesiumLib.cesiumMod.CesiumNs.GeoJsonDataSource] = js.native
-  def load(data: java.lang.String, options: cesiumLib.Anon_Stroke): js.Promise[cesiumLib.cesiumMod.CesiumNs.GeoJsonDataSource] = js.native
+  def load(data: java.lang.String, options: cesiumLib.Anon_ClampToGround): js.Promise[cesiumLib.cesiumMod.CesiumNs.GeoJsonDataSource] = js.native
   def load(data: js.Object): js.Promise[cesiumLib.cesiumMod.CesiumNs.GeoJsonDataSource] = js.native
-  def load(data: js.Object, options: cesiumLib.Anon_Stroke): js.Promise[cesiumLib.cesiumMod.CesiumNs.GeoJsonDataSource] = js.native
+  def load(data: js.Object, options: cesiumLib.Anon_ClampToGround): js.Promise[cesiumLib.cesiumMod.CesiumNs.GeoJsonDataSource] = js.native
 }
 

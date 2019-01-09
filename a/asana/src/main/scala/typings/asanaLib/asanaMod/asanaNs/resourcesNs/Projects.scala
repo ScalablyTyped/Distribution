@@ -79,11 +79,9 @@ trait Projects extends Resource {
     * @param dispatchOptions?
     * @return
     */
+  def create(data: asanaLib.asanaMod.asanaNs.resourcesNs.ProjectsNs.CreateParams with asanaLib.Anon_Workspace): bluebirdLib.bluebirdMod.namespaced[asanaLib.asanaMod.asanaNs.resourcesNs.ProjectsNs.Type] = js.native
   def create(
-    data: asanaLib.asanaMod.asanaNs.resourcesNs.ProjectsNs.CreateParams with asanaLib.Anon_WorkspaceNumber
-  ): bluebirdLib.bluebirdMod.namespaced[asanaLib.asanaMod.asanaNs.resourcesNs.ProjectsNs.Type] = js.native
-  def create(
-    data: asanaLib.asanaMod.asanaNs.resourcesNs.ProjectsNs.CreateParams with asanaLib.Anon_WorkspaceNumber,
+    data: asanaLib.asanaMod.asanaNs.resourcesNs.ProjectsNs.CreateParams with asanaLib.Anon_Workspace,
     dispatchOptions: js.Any
   ): bluebirdLib.bluebirdMod.namespaced[asanaLib.asanaMod.asanaNs.resourcesNs.ProjectsNs.Type] = js.native
   /**

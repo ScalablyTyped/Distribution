@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distSdkInternalUnitsMod.IStructuralUnit because Already inherited)*/
-@JSImport("mendixmodelsdk/dist/sdk/internal/units", "StructuralUnit")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- mendixmodelsdkLib.distSdkInternalUnitsMod.IStructuralUnit because Already inherited */ @JSImport("mendixmodelsdk/dist/sdk/internal/units", "StructuralUnit")
 @js.native
 abstract class StructuralUnit protected () extends AbstractUnit {
   def this(model: mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, _ignoredIsPartial: scala.Boolean, container: IStructuralUnit) = this()

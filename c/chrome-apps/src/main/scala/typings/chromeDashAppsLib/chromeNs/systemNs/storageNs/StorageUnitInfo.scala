@@ -24,11 +24,11 @@ trait StorageUnitInfo extends js.Object {
     * @see enum StorageUnitType
     */
   var `type`: chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_REMOVABLE, 
+    chromeDashAppsLib.Anon_FIXED, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_REMOVABLE[keyof chrome-apps.Anon_REMOVABLE] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_FIXED[keyof chrome-apps.Anon_FIXED] */ js.Any
     ]
   ]
 }

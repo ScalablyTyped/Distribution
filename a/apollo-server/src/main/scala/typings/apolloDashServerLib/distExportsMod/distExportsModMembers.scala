@@ -108,9 +108,9 @@ object distExportsModMembers extends js.Object {
   def makeExecutableSchema[TContext](
     hasTypeDefsResolversConnectorsLoggerAllowUndefinedInResolveResolverValidationOptionsDirectiveResolversSchemaDirectivesParseOptionsInheritResolversFromInterfaces: graphqlDashToolsLib.distInterfacesMod.IExecutableSchemaDefinition[TContext]
   ): graphqlLib.graphqlMod.GraphQLSchema = js.native
-  def makeRemoteExecutableSchema(hasSchemaLinkFetcherCreateResolver: graphqlDashToolsLib.Anon_Fetcher): graphqlLib.graphqlMod.GraphQLSchema = js.native
+  def makeRemoteExecutableSchema(hasSchemaLinkFetcherCreateResolver: graphqlDashToolsLib.Anon_ArgName): graphqlLib.graphqlMod.GraphQLSchema = js.native
   def mergeSchemas(
-    hasSchemasOnTypeConflictResolversSchemaDirectivesInheritResolversFromInterfaces: graphqlDashToolsLib.Anon_Resolvers
+    hasSchemasOnTypeConflictResolversSchemaDirectivesInheritResolversFromInterfaces: graphqlDashToolsLib.Anon_InheritResolversFromInterfaces
   ): graphqlLib.graphqlMod.GraphQLSchema = js.native
   def mockServer(
     schema: graphqlDashToolsLib.distInterfacesMod.ITypeDefinitions,

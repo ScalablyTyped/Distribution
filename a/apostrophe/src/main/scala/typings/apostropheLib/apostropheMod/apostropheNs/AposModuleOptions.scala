@@ -12,7 +12,7 @@ trait AposModuleOptions[C] extends js.Object {
   var beforeConstruct: js.UndefOr[js.Function2[/* self */ js.Any, /* options */ js.Any, _]] = js.undefined
   var defer: js.UndefOr[scala.Boolean] = js.undefined
   var extend: AposCoreModules | C
-  var filters: js.UndefOr[apostropheLib.Anon_Projection] = js.undefined
+  var filters: js.UndefOr[apostropheLib.Anon_Key] = js.undefined
   var label: java.lang.String
   var name: js.UndefOr[java.lang.String] = js.undefined
   var playerData: js.UndefOr[apostropheLib.apostropheLibNumbers.`false` | js.Array[java.lang.String]] = js.undefined

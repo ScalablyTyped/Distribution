@@ -22,7 +22,7 @@ trait IUtilDomMisc extends js.Object {
   	 * Returns offset for a given element
   	 * @param element Element to get offset for
   	 */
-  def getElementOffset(element: stdLib.HTMLElement): fabricLib.Anon_Left = js.native
+  def getElementOffset(element: stdLib.HTMLElement): fabricLib.Anon_LeftRight = js.native
   /**
   	 * Returns style attribute value of a given element
   	 * @param element Element to get style attribute for
@@ -40,7 +40,7 @@ trait IUtilDomMisc extends js.Object {
   	 * @param element Element to operate on
   	 * @param upperCanvasEl Upper canvas element
   	 */
-  def getScrollLeftTop(element: stdLib.HTMLElement, upperCanvasEl: stdLib.HTMLElement): fabricLib.Anon_Left = js.native
+  def getScrollLeftTop(element: stdLib.HTMLElement, upperCanvasEl: stdLib.HTMLElement): fabricLib.Anon_LeftRight = js.native
   /**
   	 * Creates specified element with specified attributes
   	 * @param tagName Type of an element to create

@@ -12,11 +12,11 @@ trait PlotParams extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var config: js.UndefOr[
     stdLib.Partial[
-      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.Config */ _
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.Config */ _
     ]
   ] = js.undefined
   var data: js.Array[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.Data */ _
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.Data */ _
   ]
   /**
     * Assign the graph div to window.gd for debugging
@@ -28,7 +28,7 @@ trait PlotParams extends js.Object {
   var divId: js.UndefOr[java.lang.String] = js.undefined
   var frames: js.UndefOr[js.Array[Frame]] = js.undefined
   var layout: stdLib.Partial[
-    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.Layout */ _
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.Layout */ _
   ]
   var onAfterExport: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onAfterPlot: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -36,7 +36,7 @@ trait PlotParams extends js.Object {
   var onAnimatingFrame: js.UndefOr[
     js.Function1[
       /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.FrameAnimationEvent */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.FrameAnimationEvent */ _
       ], 
       scala.Unit
     ]
@@ -47,7 +47,7 @@ trait PlotParams extends js.Object {
   var onButtonClicked: js.UndefOr[
     js.Function1[
       /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.ButtonClickEvent */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.ButtonClickEvent */ _
       ], 
       scala.Unit
     ]
@@ -55,7 +55,7 @@ trait PlotParams extends js.Object {
   var onClick: js.UndefOr[
     js.Function1[
       /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.PlotMouseEvent */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotMouseEvent */ _
       ], 
       scala.Unit
     ]
@@ -63,7 +63,7 @@ trait PlotParams extends js.Object {
   var onClickAnnotation: js.UndefOr[
     js.Function1[
       /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.ClickAnnotationEvent */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.ClickAnnotationEvent */ _
       ], 
       scala.Unit
     ]
@@ -79,7 +79,7 @@ trait PlotParams extends js.Object {
   var onHover: js.UndefOr[
     js.Function1[
       /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.PlotMouseEvent */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotMouseEvent */ _
       ], 
       scala.Unit
     ]
@@ -99,7 +99,7 @@ trait PlotParams extends js.Object {
   var onLegendClick: js.UndefOr[
     js.Function1[
       /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.LegendClickEvent */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.LegendClickEvent */ _
       ], 
       scala.Boolean
     ]
@@ -107,7 +107,7 @@ trait PlotParams extends js.Object {
   var onLegendDoubleClick: js.UndefOr[
     js.Function1[
       /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.LegendClickEvent */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.LegendClickEvent */ _
       ], 
       scala.Boolean
     ]
@@ -128,7 +128,7 @@ trait PlotParams extends js.Object {
   var onRelayout: js.UndefOr[
     js.Function1[
       /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.PlotRelayoutEvent */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotRelayoutEvent */ _
       ], 
       scala.Unit
     ]
@@ -136,7 +136,7 @@ trait PlotParams extends js.Object {
   var onRestyle: js.UndefOr[
     js.Function1[
       /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.PlotRestyleEvent */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotRestyleEvent */ _
       ], 
       scala.Unit
     ]
@@ -144,7 +144,7 @@ trait PlotParams extends js.Object {
   var onSelected: js.UndefOr[
     js.Function1[
       /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.PlotSelectionEvent */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotSelectionEvent */ _
       ], 
       scala.Unit
     ]
@@ -152,7 +152,7 @@ trait PlotParams extends js.Object {
   var onSelecting: js.UndefOr[
     js.Function1[
       /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.PlotSelectionEvent */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotSelectionEvent */ _
       ], 
       scala.Unit
     ]
@@ -160,7 +160,7 @@ trait PlotParams extends js.Object {
   var onSliderChange: js.UndefOr[
     js.Function1[
       /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.SliderChangeEvent */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.SliderChangeEvent */ _
       ], 
       scala.Unit
     ]
@@ -168,7 +168,7 @@ trait PlotParams extends js.Object {
   var onSliderEnd: js.UndefOr[
     js.Function1[
       /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.SliderEndEvent */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.SliderEndEvent */ _
       ], 
       scala.Unit
     ]
@@ -176,7 +176,7 @@ trait PlotParams extends js.Object {
   var onSliderStart: js.UndefOr[
     js.Function1[
       /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.SliderStartEvent */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.SliderStartEvent */ _
       ], 
       scala.Unit
     ]
@@ -186,7 +186,7 @@ trait PlotParams extends js.Object {
   var onUnhover: js.UndefOr[
     js.Function1[
       /* event */ stdLib.Readonly[
-        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Plotly.PlotMouseEvent */ _
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Plotly.PlotMouseEvent */ _
       ], 
       scala.Unit
     ]

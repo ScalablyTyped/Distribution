@@ -43,7 +43,7 @@ class Runtime ()
   def load(): Runtime = js.native
   def load(option: java.lang.String): Runtime = js.native
   def load(option: js.Array[java.lang.String]): Runtime = js.native
-  def load(option: officeDashJsDashPreviewLib.Anon_Select): Runtime = js.native
+  def load(option: officeDashJsDashPreviewLib.Anon_Expand): Runtime = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.RuntimeLoadOptions): Runtime = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     *

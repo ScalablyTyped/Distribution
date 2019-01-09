@@ -14,9 +14,7 @@ trait InstanceGroupState extends js.Object {
     * One or more `ebs_config` blocks as defined below. Changing this forces a new resource to be created.
     */
   val ebsConfigs: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_VolumesPerInstance]]
-    ]
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IopsSize]]]
   ] = js.undefined
   /**
     * Indicates whether an Amazon EBS volume is EBS-optimized. Changing this forces a new resource to be created.

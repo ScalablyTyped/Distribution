@@ -34,7 +34,7 @@ trait JQuery extends js.Object {
     * @return void
     */
   def UIEditList(): scala.Unit = js.native
-  def UIEditList(options: Anon_EditLabel): scala.Unit = js.native
+  def UIEditList(options: Anon_CallbackDeletable): scala.Unit = js.native
   /**
     * This method allows the user to use a segmented control to toggle a set of panels. It is executed on the segmented control.
     * The options id is the contain of the panels. The options callback is to execute when the user toggles a panel.
@@ -68,7 +68,7 @@ trait JQuery extends js.Object {
     * @return void
     */
   def UISelectList(): scala.Unit = js.native
-  def UISelectList(options: Anon_Callback): scala.Unit = js.native
+  def UISelectList(options: Anon_CallbackName): scala.Unit = js.native
   /**
     * Create a stepper control by executing it on a span with the class "stepper". Possible options: {start: 0, end: 10, defaultValue: 3}.
     *

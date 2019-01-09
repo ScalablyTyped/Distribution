@@ -31,7 +31,7 @@ trait ApiKeyState extends js.Object {
     */
   val stageKeys: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_StageNameRestApi]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RestApiStageName]]
     ]
   ] = js.undefined
   /**

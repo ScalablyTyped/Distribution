@@ -30,6 +30,6 @@ class EventManager () extends js.Object {
     delegate: delegationStrategy,
     disposable: aureliaDashBindingLib.aureliaDashBindingLibNumbers.`true`
   ): Disposable = js.native
-  def registerElementConfig(config: aureliaDashBindingLib.Anon_TagName): scala.Unit = js.native
+  def registerElementConfig(config: aureliaDashBindingLib.Anon_Properties): scala.Unit = js.native
 }
 

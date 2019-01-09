@@ -17,7 +17,7 @@ object certificateProviderNsMembers extends js.Object {
     * The type of code being requested by the extension with requestPin function.
     * @enum
     */
-  val PinRequestType: chromeDashAppsLib.Anon_PUK = js.native
+  val PinRequestType: chromeDashAppsLib.Anon_PIN = js.native
   /**
     * This event fires every time the browser requests the current list of
     * certificates provided by this app. The app must call *reportCallback*

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 object reactDashNativeDashKeychainModMembers extends js.Object {
   def canImplyAuthentication(): js.Promise[scala.Boolean] = js.native
   def canImplyAuthentication(options: Options): js.Promise[scala.Boolean] = js.native
-  def getGenericPassword(): js.Promise[scala.Boolean | reactDashNativeDashKeychainLib.Anon_Username] = js.native
-  def getGenericPassword(serviceOrOptions: java.lang.String): js.Promise[scala.Boolean | reactDashNativeDashKeychainLib.Anon_Username] = js.native
-  def getGenericPassword(serviceOrOptions: Options): js.Promise[scala.Boolean | reactDashNativeDashKeychainLib.Anon_Username] = js.native
+  def getGenericPassword(): js.Promise[scala.Boolean | reactDashNativeDashKeychainLib.Anon_Password] = js.native
+  def getGenericPassword(serviceOrOptions: java.lang.String): js.Promise[scala.Boolean | reactDashNativeDashKeychainLib.Anon_Password] = js.native
+  def getGenericPassword(serviceOrOptions: Options): js.Promise[scala.Boolean | reactDashNativeDashKeychainLib.Anon_Password] = js.native
   def getInternetCredentials(server: java.lang.String): js.Promise[UserCredentials] = js.native
   def getSupportedBiometryType(): js.Promise[java.lang.String | scala.Null] = js.native
   def requestSharedWebCredentials(): js.Promise[SharedWebCredentials] = js.native

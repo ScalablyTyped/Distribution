@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object yesqlMod extends js.Object {
   def apply(dir: java.lang.String): java.lang.String = js.native
-  def apply(dir: java.lang.String, options: yesqlLib.Anon_Type): java.lang.String = js.native
-  def mysql(query: java.lang.String): js.Function1[/* data */ js.Object, yesqlLib.Anon_Values] = js.native
+  def apply(dir: java.lang.String, options: yesqlLib.Anon_Mysql): java.lang.String = js.native
+  def mysql(query: java.lang.String): js.Function1[/* data */ js.Object, yesqlLib.Anon_Sql] = js.native
   def pg(query: java.lang.String): js.Function1[/* data */ js.Object, yesqlLib.Anon_Text] = js.native
 }
 

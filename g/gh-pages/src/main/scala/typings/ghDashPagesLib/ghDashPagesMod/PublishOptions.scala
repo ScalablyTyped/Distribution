@@ -19,6 +19,6 @@ trait PublishOptions extends js.Object {
   var silent: js.UndefOr[scala.Boolean] = js.undefined
   var src: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var tag: js.UndefOr[java.lang.String] = js.undefined
-  var user: js.UndefOr[scala.Null | ghDashPagesLib.Anon_Name] = js.undefined
+  var user: js.UndefOr[scala.Null | ghDashPagesLib.Anon_Email] = js.undefined
 }
 

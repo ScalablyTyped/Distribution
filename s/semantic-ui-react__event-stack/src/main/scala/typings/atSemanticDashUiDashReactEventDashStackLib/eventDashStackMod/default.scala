@@ -13,7 +13,7 @@ class default ()
 @JSImport("@semantic-ui-react/event-stack", "default")
 @js.native
 object default extends js.Object {
-  var defaultProps: atSemanticDashUiDashReactEventDashStackLib.Anon_TargetPool = js.native
-  var propTypes: atSemanticDashUiDashReactEventDashStackLib.Anon_Target = js.native
+  var defaultProps: atSemanticDashUiDashReactEventDashStackLib.Anon_Pool = js.native
+  var propTypes: atSemanticDashUiDashReactEventDashStackLib.Anon_Args = js.native
 }
 

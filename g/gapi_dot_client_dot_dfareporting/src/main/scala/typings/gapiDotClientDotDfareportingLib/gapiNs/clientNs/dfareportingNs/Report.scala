@@ -19,7 +19,7 @@ trait Report extends js.Object {
   /** The filename used when generating report files for this report. */
   var fileName: js.UndefOr[java.lang.String] = js.undefined
   /** The report criteria for a report of type "FLOODLIGHT". */
-  var floodlightCriteria: js.UndefOr[gapiDotClientDotDfareportingLib.Anon_FloodlightConfigId] = js.undefined
+  var floodlightCriteria: js.UndefOr[gapiDotClientDotDfareportingLib.Anon_CustomRichMediaEvents] = js.undefined
   /**
     * The output format of the report. If not specified, default format is "CSV". Note that the actual format in the completed report file might differ if
     * for instance the report's size exceeds the format's capabilities. "CSV" will then be the fallback format.
@@ -36,11 +36,11 @@ trait Report extends js.Object {
   /** The user profile id of the owner of this report. */
   var ownerProfileId: js.UndefOr[java.lang.String] = js.undefined
   /** The report criteria for a report of type "PATH_TO_CONVERSION". */
-  var pathToConversionCriteria: js.UndefOr[gapiDotClientDotDfareportingLib.Anon_FloodlightConfigIdConversionDimensions] = js.undefined
+  var pathToConversionCriteria: js.UndefOr[gapiDotClientDotDfareportingLib.Anon_ActivityFilters] = js.undefined
   /** The report criteria for a report of type "REACH". */
-  var reachCriteria: js.UndefOr[gapiDotClientDotDfareportingLib.Anon_EnableAllDimensionCombinations] = js.undefined
+  var reachCriteria: js.UndefOr[gapiDotClientDotDfareportingLib.Anon_ActivitiesCustomRichMediaEvents] = js.undefined
   /** The report's schedule. Can only be set if the report's 'dateRange' is a relative date range and the relative date range is not "TODAY". */
-  var schedule: js.UndefOr[gapiDotClientDotDfareportingLib.Anon_ExpirationDate] = js.undefined
+  var schedule: js.UndefOr[gapiDotClientDotDfareportingLib.Anon_Active] = js.undefined
   /** The subaccount ID to which this report belongs if applicable. */
   var subAccountId: js.UndefOr[java.lang.String] = js.undefined
   /** The type of the report. */

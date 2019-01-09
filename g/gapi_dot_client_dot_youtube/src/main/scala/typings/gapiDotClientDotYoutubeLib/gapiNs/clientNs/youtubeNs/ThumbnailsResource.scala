@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait ThumbnailsResource extends js.Object {
   /** Uploads a custom video thumbnail to YouTube and sets it for a video. */
-  def set(request: gapiDotClientDotYoutubeLib.Anon_VideoId): gapiDotClientLib.gapiNs.clientNs.Request[ThumbnailSetResponse]
+  def set(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtokenOnBehalfOfContentOwnerPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[ThumbnailSetResponse]
 }
 

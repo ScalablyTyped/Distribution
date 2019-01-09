@@ -204,14 +204,14 @@ object SceneLoader extends js.Object {
     * @param pluginExtension the extension used to determine the plugin
     * @returns The loaded list of imported meshes, particle systems, skeletons, and animation groups
     */
-  def ImportMeshAsync(meshNames: js.Any, rootUrl: java.lang.String): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
-  def ImportMeshAsync(meshNames: js.Any, rootUrl: java.lang.String, sceneFilename: java.lang.String): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
+  def ImportMeshAsync(meshNames: js.Any, rootUrl: java.lang.String): js.Promise[babylonjsLib.Anon_AnimationGroups] = js.native
+  def ImportMeshAsync(meshNames: js.Any, rootUrl: java.lang.String, sceneFilename: java.lang.String): js.Promise[babylonjsLib.Anon_AnimationGroups] = js.native
   def ImportMeshAsync(
     meshNames: js.Any,
     rootUrl: java.lang.String,
     sceneFilename: java.lang.String,
     scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]
-  ): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
+  ): js.Promise[babylonjsLib.Anon_AnimationGroups] = js.native
   def ImportMeshAsync(
     meshNames: js.Any,
     rootUrl: java.lang.String,
@@ -220,7 +220,7 @@ object SceneLoader extends js.Object {
     onProgress: babylonjsLib.BABYLONNs.Nullable[
       js.Function1[/* event */ babylonjsLib.BABYLONNs.SceneLoaderProgressEvent, scala.Unit]
     ]
-  ): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
+  ): js.Promise[babylonjsLib.Anon_AnimationGroups] = js.native
   def ImportMeshAsync(
     meshNames: js.Any,
     rootUrl: java.lang.String,
@@ -230,7 +230,7 @@ object SceneLoader extends js.Object {
       js.Function1[/* event */ babylonjsLib.BABYLONNs.SceneLoaderProgressEvent, scala.Unit]
     ],
     pluginExtension: babylonjsLib.BABYLONNs.Nullable[java.lang.String]
-  ): js.Promise[babylonjsLib.Anon_ParticleSystems] = js.native
+  ): js.Promise[babylonjsLib.Anon_AnimationGroups] = js.native
   /**
     * Gets a boolean indicating that the given extension can be loaded
     * @param extension defines the extension to load

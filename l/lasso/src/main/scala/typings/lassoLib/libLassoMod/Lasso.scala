@@ -17,7 +17,7 @@ trait Lasso
   var lassoResource_Original: LassoResource = js.native
   var writer: lassoLib.libWritersMod.Writer = js.native
   def addTransform(transform: js.Any): scala.Unit = js.native
-  def buildLassoCacheKey(lassoContext: lassoLib.libLassoContextMod.default): lassoLib.Anon_Value = js.native
+  def buildLassoCacheKey(lassoContext: lassoLib.libLassoContextMod.default): lassoLib.Anon_Parts = js.native
   def buildPageBundles(options: js.Any, lassoContext: lassoLib.libLassoContextMod.default, callback: Callback): scala.Unit = js.native
   def createAppBundleMappings(bundleSetConfig: js.Any, lassoContext: lassoLib.libLassoContextMod.default, callback: Callback): js.Any = js.native
   def createLassoContext(): lassoLib.libLassoContextMod.default = js.native

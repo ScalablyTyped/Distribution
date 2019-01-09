@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class BillboardGraphics ()
   extends cesiumLib.cesiumMod.CesiumNs.BillboardGraphics {
-  def this(options: cesiumLib.Anon_EyeOffset) = this()
+  def this(options: cesiumLib.Anon_AlignedAxis) = this()
 }
 

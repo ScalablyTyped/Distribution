@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(mongooseLib.mongooseMod.ModelProperties because Would inherit conflicting mutable fields List(schema))*/
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- mongooseLib.mongooseMod.ModelProperties because var conflicts: schema. Inlined base, baseModelName, collection, db, discriminators, modelName */ @js.native
 trait Document
   extends nodeLib.NodeJSNs.EventEmitter
      with MongooseDocument {
@@ -15,6 +15,21 @@ trait Document
     * If you're using another key, you will have to access it using []: doc[_myVersionKey]
     */
   var __v: js.UndefOr[scala.Double] = js.native
+  /** Base Mongoose instance the model uses. */
+  var base: mongooseLib.Anon_Args = js.native
+  /**
+    * If this is a discriminator model, baseModelName is the
+    * name of the base model.
+    */
+  var baseModelName: js.UndefOr[java.lang.String] = js.native
+  /** Collection the model uses. */
+  var collection: Collection = js.native
+  /** Connection the model uses. */
+  var db: Connection = js.native
+  /** Registered discriminators for this model. */
+  var discriminators: js.Any = js.native
+  /** The name of the model */
+  var modelName: java.lang.String = js.native
   /** Signal that we desire an increment of this documents version. */
   def increment(): this.type = js.native
   /** whether mongoose thinks this doc is deleted. */

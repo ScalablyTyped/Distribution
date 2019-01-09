@@ -15,8 +15,8 @@ object BusyIndicatorNs extends js.Object {
     * @param oListener Object on which to call the given function.
     * @returns <code>this</code> to allow method chaining
     */
-  def attachClose(fnFunction: js.Any): openui5Lib.Anon_Show = js.native
-  def attachClose(fnFunction: js.Any, oListener: js.Any): openui5Lib.Anon_Show = js.native
+  def attachClose(fnFunction: js.Any): openui5Lib.Anon_AttachClose = js.native
+  def attachClose(fnFunction: js.Any, oListener: js.Any): openui5Lib.Anon_AttachClose = js.native
   /**
     * Registers a handler for the "open" event.
     * @param fnFunction The function to call, when the event occurs. This           function will be
@@ -24,22 +24,22 @@ object BusyIndicatorNs extends js.Object {
     * @param oListener Object on which to call the given function.
     * @returns <code>this</code> to allow method chaining
     */
-  def attachOpen(fnFunction: js.Any): openui5Lib.Anon_Show = js.native
-  def attachOpen(fnFunction: js.Any, oListener: js.Any): openui5Lib.Anon_Show = js.native
+  def attachOpen(fnFunction: js.Any): openui5Lib.Anon_AttachClose = js.native
+  def attachOpen(fnFunction: js.Any, oListener: js.Any): openui5Lib.Anon_AttachClose = js.native
   /**
     * Unregisters a handler for the "close" event
     * @param fnFunction The callback function to unregister
     * @param oListener Object on which the given function had to be called.
     * @returns <code>this</code> to allow method chaining
     */
-  def detachClose(fnFunction: js.Any, oListener: js.Any): openui5Lib.Anon_Show = js.native
+  def detachClose(fnFunction: js.Any, oListener: js.Any): openui5Lib.Anon_AttachClose = js.native
   /**
     * Unregisters a handler for the "open" event
     * @param fnFunction The callback function to unregister
     * @param oListener Object on which the given function had to be called.
     * @returns <code>this</code> to allow method chaining
     */
-  def detachOpen(fnFunction: js.Any, oListener: js.Any): openui5Lib.Anon_Show = js.native
+  def detachOpen(fnFunction: js.Any, oListener: js.Any): openui5Lib.Anon_AttachClose = js.native
   /**
     * Removes the BusyIndicator from the screen
     */

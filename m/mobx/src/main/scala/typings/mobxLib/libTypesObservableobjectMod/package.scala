@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libTypesObservableobjectMod {
-  type IObjectDidChange = mobxLib.Anon_ObjectTypeAdd | mobxLib.Anon_NameObject | mobxLib.Anon_ObjectOldValueType
-  type IObjectWillChange = mobxLib.Anon_ObjectType | mobxLib.Anon_ObjectTypeRemove
+  type IObjectDidChange = mobxLib.Anon_AddName | mobxLib.Anon_NameNewValue | mobxLib.Anon_NameObject
+  type IObjectWillChange = mobxLib.Anon_AddNameNewValue | mobxLib.Anon_NameObjectRemove
 }

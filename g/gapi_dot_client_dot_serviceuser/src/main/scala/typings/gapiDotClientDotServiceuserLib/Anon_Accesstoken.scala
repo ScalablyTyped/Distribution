@@ -21,15 +21,15 @@ trait Anon_Accesstoken extends js.Object {
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Name of the consumer and the service to enable for that consumer.
+    *
+    * A valid path would be:
+    * - /v1/projects/my-project/services/servicemanagement.googleapis.com:enable
+    */
+  var name: java.lang.String
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
-  /** Requested size of the next page of data. */
-  var pageSize: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * Token identifying which result to start with; returned by a previous list
-    * call.
-    */
-  var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
   /** Returns response with indentations and line breaks. */

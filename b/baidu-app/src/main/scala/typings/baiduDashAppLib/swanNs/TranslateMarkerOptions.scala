@@ -12,7 +12,7 @@ trait TranslateMarkerOptions
   	// 指定marker移动到的目标点
   var autoRotate: scala.Boolean
   	// 指定 marker
-  var destination: baiduDashAppLib.Anon_Latitude
+  var destination: baiduDashAppLib.Anon_LatitudeLongitude
   	// marker 的旋转角度
   var duration: js.UndefOr[scala.Double] = js.undefined
   var markerId: scala.Double

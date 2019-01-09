@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object codemirrorModMembers extends js.Object {
   var Doc: codemirrorLib.codemirrorMod.CodeMirrorNs.DocConstructor = js.native
-  var Pass: codemirrorLib.Anon_ToString = js.native
+  var Pass: codemirrorLib.Anon_CodeMirrorPASS = js.native
   var Pos: codemirrorLib.codemirrorMod.CodeMirrorNs.PositionConstructor = js.native
   val TernServer: codemirrorLib.codemirrorMod.CodeMirrorNs.TernConstructor = js.native
   var commands: js.Any = js.native
@@ -85,7 +85,7 @@ object codemirrorModMembers extends js.Object {
     */
   def getMode[T](config: codemirrorLib.codemirrorMod.CodeMirrorNs.EditorConfiguration, mode: js.Any): codemirrorLib.codemirrorMod.CodeMirrorNs.Mode[T] = js.native
   /** Given a state object, returns a {state, mode} object with the inner mode and its state for the current position. */
-  def innerMode(mode: codemirrorLib.codemirrorMod.CodeMirrorNs.Mode[_], state: js.Any): codemirrorLib.Anon_StateMode = js.native
+  def innerMode(mode: codemirrorLib.codemirrorMod.CodeMirrorNs.Mode[_], state: js.Any): codemirrorLib.Anon_Mode = js.native
   def off(element: js.Any, eventName: java.lang.String, handler: js.Function): scala.Unit = js.native
   @JSName("off")
   def off_beforeChange(

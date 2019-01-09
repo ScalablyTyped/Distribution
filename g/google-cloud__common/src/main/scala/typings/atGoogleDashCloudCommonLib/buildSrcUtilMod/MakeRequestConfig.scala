@@ -18,11 +18,11 @@ trait MakeRequestConfig extends js.Object {
     */
   var maxRetries: js.UndefOr[scala.Double] = js.undefined
   var request: js.UndefOr[
-    requestLib.requestMod.requestNs.RequestAPI[
+    atGoogleDashCloudCommonLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
       requestLib.requestMod.requestNs.Request, 
       requestLib.requestMod.requestNs.CoreOptions, 
       requestLib.requestMod.requestNs.RequiredUriUrl
-    ]
+    ])
   ] = js.undefined
   var retries: js.UndefOr[scala.Double] = js.undefined
   var shouldRetryFn: js.UndefOr[

@@ -15,6 +15,6 @@ trait V1beta1Resource extends js.Object {
     * prepared to refresh this key when they encounter an error registering an
     * Eddystone-EID beacon.
     */
-  def getEidparams(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[EphemeralIdRegistrationParams]
+  def getEidparams(request: gapiDotClientDotProximitybeaconLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[EphemeralIdRegistrationParams]
 }
 

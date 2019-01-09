@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRoute extends js.Object {
   var path: java.lang.String
   var stack: js.Any

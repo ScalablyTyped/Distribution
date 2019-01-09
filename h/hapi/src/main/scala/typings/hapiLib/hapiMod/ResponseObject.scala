@@ -128,7 +128,7 @@ trait ResponseObject
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-responseetagtag-options)
     */
   def etag(tag: java.lang.String): ResponseObject = js.native
-  def etag(tag: java.lang.String, options: hapiLib.Anon_Weak): ResponseObject = js.native
+  def etag(tag: java.lang.String, options: hapiLib.Anon_Vary): ResponseObject = js.native
   /**
     * Sets an HTTP header where:
     * @param name - the header name.

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * @deprecated
- */
+  * @deprecated
+  */
 @js.native
 trait NodeBuffer
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[scala.Double] {

@@ -29,7 +29,7 @@ class LifecyclePolicy protected ()
   /**
     * See the `policy_details` configuration block. Max of 1.
     */
-  val policyDetails: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_SchedulesResourceTypes] = js.native
+  val policyDetails: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_KeyResourceTypes] = js.native
   /**
     * Whether the lifecycle policy should be enabled or disabled. `ENABLED` or `DISABLED` are valid values. Defaults to `ENABLED`.
     */

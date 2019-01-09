@@ -40,7 +40,7 @@ class Serializer () extends js.Object {
     */
   def register[T](
     `type`: adoneLib.adoneNs.dataNs.mpakNs.INs.Type,
-    constructor: adoneLib.Anon_Args[T],
+    constructor: adoneLib.Anon_ArgsAny[T],
     encode: js.Function2[/* x */ T, /* buf */ adoneLib.adoneNs.collectionNs.ByteArray, scala.Unit],
     decode: js.Function1[/* buf */ adoneLib.adoneNs.collectionNs.ByteArray, T]
   ): this.type = js.native

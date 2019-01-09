@@ -20,6 +20,6 @@ class ResourceMapMapView ()
   /* CompleteClass */
   override def lookup(key: java.lang.String): ResourceMap = js.native
   /* CompleteClass */
-  override def split(): winrtLib.Anon_SecondFirstIMapViewK[java.lang.String, ResourceMap] = js.native
+  override def split(): winrtLib.Anon_First[java.lang.String, ResourceMap] = js.native
 }
 

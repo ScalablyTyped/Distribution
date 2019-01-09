@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait MetagameResource extends js.Object {
   /** Return the metagame configuration data for the calling application. */
-  def getMetagameConfig(request: gapiDotClientDotGamesLib.Anon_ConsistencyTokenPrettyPrintQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[MetagameConfig]
+  def getMetagameConfig(request: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFields): gapiDotClientLib.gapiNs.clientNs.Request[MetagameConfig]
   /** List play data aggregated per category for the player corresponding to playerId. */
-  def listCategoriesByPlayer(request: gapiDotClientDotGamesLib.Anon_Collection): gapiDotClientLib.gapiNs.clientNs.Request[CategoryListResponse]
+  def listCategoriesByPlayer(request: gapiDotClientDotGamesLib.Anon_AltCollection): gapiDotClientLib.gapiNs.clientNs.Request[CategoryListResponse]
 }
 

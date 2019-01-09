@@ -91,7 +91,7 @@ trait ToastrOptions extends js.Object {
   /**
   	 * If specified, you must provide all classes.
   	 */
-  var iconClasses: js.UndefOr[Anon_Warning] = js.undefined
+  var iconClasses: js.UndefOr[Anon_Error] = js.undefined
   /**
   	 * CSS class the message element will be given.
   	 * @default toast-message

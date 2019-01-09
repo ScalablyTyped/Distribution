@@ -5,11 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Anon_Label extends js.Object {
-  var attribute: java.lang.String
-  var id: java.lang.String
-  var index: java.lang.String
-  var label: java.lang.String
-  var value: reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.RefinementValue
+  var label: java.lang.String = js.native
+  @JSName("value")
+  var value_Original: reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.RefinementValue = js.native
+  def value(searchState: reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.SearchState): reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.SearchState = js.native
 }
 

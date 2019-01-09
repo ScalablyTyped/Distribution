@@ -21,7 +21,7 @@ class RuleGroup protected ()
   /**
     * A list of activated rules, see below
     */
-  val activatedRules: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionType]]] = js.native
+  val activatedRules: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionPriority]]] = js.native
   /**
     * A friendly name for the metrics from the rule group
     */

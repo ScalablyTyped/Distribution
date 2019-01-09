@@ -256,7 +256,7 @@ trait IDetailsListProps
     ]
   ] = js.undefined
   /** Event names and corresponding callbacks that will be registered to rendered row elements. */
-  var rowElementEventMap: js.UndefOr[js.Array[officeDashUiDashFabricDashReactLib.Anon_EventNameCallback]] = js.undefined
+  var rowElementEventMap: js.UndefOr[js.Array[officeDashUiDashFabricDashReactLib.Anon_Callback]] = js.undefined
   /** Optional selection model to track selection state.  */
   var selection: js.UndefOr[officeDashUiDashFabricDashReactLib.libUtilitiesSelectionInterfacesMod.ISelection] = js.undefined
   /** Controls how/if the details list manages selection. Options include none, single, multiple */

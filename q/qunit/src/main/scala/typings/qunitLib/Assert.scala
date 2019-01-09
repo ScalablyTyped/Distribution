@@ -198,7 +198,7 @@ trait Assert extends js.Object {
     *
     * @param assertionResult The assertion result
     */
-  def pushResult(assertResult: Anon_Result): scala.Unit = js.native
+  def pushResult(assertResult: Anon_Actual): scala.Unit = js.native
   def raises(block: js.Function0[scala.Unit]): scala.Unit = js.native
   def raises(block: js.Function0[scala.Unit], expected: js.Any): scala.Unit = js.native
   def raises(block: js.Function0[scala.Unit], expected: js.Any, message: js.Any): scala.Unit = js.native

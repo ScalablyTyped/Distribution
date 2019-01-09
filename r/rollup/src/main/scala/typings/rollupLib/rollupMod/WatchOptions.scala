@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait WatchOptions extends js.Object {
   var alwaysStat: js.UndefOr[scala.Boolean] = js.undefined
   var atomic: js.UndefOr[scala.Boolean | scala.Double] = js.undefined
-  var awaitWriteFinish: js.UndefOr[rollupLib.Anon_StabilityThreshold | scala.Boolean] = js.undefined
+  var awaitWriteFinish: js.UndefOr[rollupLib.Anon_PollInterval | scala.Boolean] = js.undefined
   var binaryInterval: js.UndefOr[scala.Double] = js.undefined
   var cwd: js.UndefOr[java.lang.String] = js.undefined
   var depth: js.UndefOr[scala.Double] = js.undefined

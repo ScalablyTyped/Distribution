@@ -47,7 +47,7 @@ trait Stripe extends js.Object {
     */
   var recipients: stripeLib.stripeMod.StripeNs.resourcesNs.Recipients = js.native
   var refunds: stripeLib.stripeMod.StripeNs.resourcesNs.Refunds = js.native
-  var resources: stripeLib.Anon_BitcoinReceivers = js.native
+  var resources: stripeLib.Anon_Accounts = js.native
   var skus: stripeLib.stripeMod.StripeNs.resourcesNs.SKUs = js.native
   var subscriptionItems: stripeLib.stripeMod.StripeNs.resourcesNs.SubscriptionItems = js.native
   var subscriptions: stripeLib.stripeMod.StripeNs.resourcesNs.Subscriptions = js.native

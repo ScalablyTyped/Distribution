@@ -22,7 +22,7 @@ trait Pane extends js.Object {
   def activatePreviousItem(): scala.Unit = js.native
   /** Add the given item to the pane. */
   def addItem(item: js.Object): js.Object = js.native
-  def addItem(item: js.Object, options: atomLib.Anon_PendingIndex): js.Object = js.native
+  def addItem(item: js.Object, options: atomLib.Anon_Index): js.Object = js.native
   /** Add the given items to the pane. */
   def addItems(items: js.Array[js.Object]): js.Array[js.Object] = js.native
   def addItems(items: js.Array[js.Object], index: scala.Double): js.Array[js.Object] = js.native
@@ -133,16 +133,16 @@ trait Pane extends js.Object {
   def saveItems(): scala.Unit = js.native
   /** Creates a new pane below the receiver. */
   def splitDown(): Pane = js.native
-  def splitDown(params: atomLib.Anon_Items): Pane = js.native
+  def splitDown(params: atomLib.Anon_CopyActiveItem): Pane = js.native
   // Splitting
   /** Create a new pane to the left of this pane. */
   def splitLeft(): Pane = js.native
-  def splitLeft(params: atomLib.Anon_Items): Pane = js.native
+  def splitLeft(params: atomLib.Anon_CopyActiveItem): Pane = js.native
   /** Create a new pane to the right of this pane. */
   def splitRight(): Pane = js.native
-  def splitRight(params: atomLib.Anon_Items): Pane = js.native
+  def splitRight(params: atomLib.Anon_CopyActiveItem): Pane = js.native
   /** Creates a new pane above the receiver. */
   def splitUp(): Pane = js.native
-  def splitUp(params: atomLib.Anon_Items): Pane = js.native
+  def splitUp(params: atomLib.Anon_CopyActiveItem): Pane = js.native
 }
 

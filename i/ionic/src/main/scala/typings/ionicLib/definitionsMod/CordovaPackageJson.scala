@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait CordovaPackageJson
   extends atIonicCliDashFrameworkLib.definitionsMod.PackageJson {
-  var cordova: ionicLib.Anon_Plugins
+  var cordova: ionicLib.Anon_Key
 }
 

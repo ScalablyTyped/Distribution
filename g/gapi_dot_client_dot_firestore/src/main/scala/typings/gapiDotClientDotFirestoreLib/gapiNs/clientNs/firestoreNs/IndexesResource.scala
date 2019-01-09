@@ -21,12 +21,12 @@ trait IndexesResource extends js.Object {
     *
     * Indexes with a single field cannot be created.
     */
-  def create(request: gapiDotClientDotFirestoreLib.Anon_ParentAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+  def create(request: gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Deletes an index. */
-  def delete(request: gapiDotClientDotFirestoreLib.Anon_NameAccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+  def delete(request: gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyName): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /** Gets an index. */
-  def get(request: gapiDotClientDotFirestoreLib.Anon_NameAccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Index]
+  def get(request: gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyName): gapiDotClientLib.gapiNs.clientNs.Request[Index]
   /** Lists the indexes that match the specified filters. */
-  def list(request: gapiDotClientDotFirestoreLib.Anon_ParentAccesstokenPageSizePrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[ListIndexesResponse]
+  def list(request: gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter): gapiDotClientLib.gapiNs.clientNs.Request[ListIndexesResponse]
 }
 

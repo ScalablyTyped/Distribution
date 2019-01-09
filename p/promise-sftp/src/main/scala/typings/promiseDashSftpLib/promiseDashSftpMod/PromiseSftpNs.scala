@@ -291,6 +291,6 @@ object PromiseSftpNs extends js.Object {
   /**
     * Options for SftpPromise#connect()
     */
-  type Options = ssh2Lib.ssh2Mod.ConnectConfig with promiseDashSftpLib.Anon_ConnTimeout
+  type Options = ssh2Lib.ssh2Mod.ConnectConfig with promiseDashSftpLib.Anon_AutoReconnect
 }
 

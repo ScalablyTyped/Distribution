@@ -17,7 +17,7 @@ object utilsNs extends js.Object {
   def lang(filePath: java.lang.String): atFrctlFractalLib.Anon_Color = js.native
   def md5(str: java.lang.String): java.lang.String = js.native
   def mergeProp(prop: js.Any, upstream: js.Any): js.Any = js.native
-  def parseArgv(): atFrctlFractalLib.Anon_Command = js.native
+  def parseArgv(): atFrctlFractalLib.Anon_Args = js.native
   def relUrlPath(toPath: java.lang.String, fromPath: java.lang.String): java.lang.String = js.native
   def relUrlPath(toPath: java.lang.String, fromPath: java.lang.String, opts: js.Any): java.lang.String = js.native
   def slugify(str: java.lang.String): java.lang.String = js.native

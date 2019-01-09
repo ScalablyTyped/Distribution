@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Instance extends js.Object {
-  var file: uploadcareLib.Anon_Upload
-  var files: uploadcareLib.Anon_StoreUuid
+  var file: uploadcareLib.Anon_Callback
+  var files: uploadcareLib.Anon_CallbackErr
 }
 

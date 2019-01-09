@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typescriptDashServicesLib.TypeScriptNs.INameSyntax because Already inherited)*/
-@JSGlobal("TypeScript.QualifiedNameSyntax")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- typescriptDashServicesLib.TypeScriptNs.INameSyntax because Already inherited */ @JSGlobal("TypeScript.QualifiedNameSyntax")
 @js.native
 class QualifiedNameSyntax protected () extends SyntaxNode {
   def this(left: INameSyntax, dotToken: ISyntaxToken, right: ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()

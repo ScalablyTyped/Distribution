@@ -18,7 +18,7 @@ object settingsNsMembers extends js.Object {
   var PRECISION: java.lang.String = js.native
   var PRECISION_FRAGMENT: java.lang.String = js.native
   var PRECISION_VERTEX: java.lang.String = js.native
-  val RENDER_OPTIONS: pixiDotJsLib.Anon_Legacy = js.native
+  val RENDER_OPTIONS: pixiDotJsLib.Anon_Antialias = js.native
   var RESOLUTION: scala.Double = js.native
   var RETINA_PREFIX: stdLib.RegExp = js.native
   var SCALE_MODE: scala.Double = js.native

@@ -11,7 +11,7 @@ trait Heuristics extends js.Object {
   var diagonal_Original: Heuristic = js.native
   @JSName("manhattan")
   var manhattan_Original: Heuristic = js.native
-  def diagonal(pos0: Anon_Y, pos1: Anon_Y): scala.Double = js.native
-  def manhattan(pos0: Anon_Y, pos1: Anon_Y): scala.Double = js.native
+  def diagonal(pos0: Anon_X, pos1: Anon_X): scala.Double = js.native
+  def manhattan(pos0: Anon_X, pos1: Anon_X): scala.Double = js.native
 }
 

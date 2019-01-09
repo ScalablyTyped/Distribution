@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 class Budgets ()
   extends awsDashSdkLib.clientsBudgetsMod.namespaced {
-  def this(options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Budgets.Types.ClientConfiguration */ js.Any) = this()
+  def this(options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Budgets.Types.ClientConfiguration */ js.Any) = this()
 }
 

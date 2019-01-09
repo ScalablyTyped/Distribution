@@ -13,6 +13,6 @@ class Grid ()
 @JSImport("react-virtualized/dist/commonjs/Grid", "Grid")
 @js.native
 object Grid extends js.Object {
-  var defaultProps: reactDashVirtualizedLib.Anon_TabIndex0 = js.native
+  var defaultProps: reactDashVirtualizedLib.Anon_01 = js.native
 }
 

@@ -167,12 +167,12 @@ class Database () extends Options {
     cb: js.Function2[/* err */ stdLib.Error, /* stmt */ ODBCStatement, scala.Unit]
   ): scala.Unit = js.native
   def prepareSync(sql: java.lang.String): ODBCStatement = js.native
-  def query(query: ibmUnderscoreDbLib.Anon_Sql): js.Promise[js.Array[_]] = js.native
+  def query(query: ibmUnderscoreDbLib.Anon_Params): js.Promise[js.Array[_]] = js.native
   def query(
-    query: ibmUnderscoreDbLib.Anon_Sql,
+    query: ibmUnderscoreDbLib.Anon_Params,
     cb: js.Function2[/* err */ stdLib.Error, /* res */ js.Array[_], scala.Unit]
   ): scala.Unit = js.native
-  def query(query: ibmUnderscoreDbLib.Anon_Sql, params: js.Array[_]): js.Promise[js.Array[_]] = js.native
+  def query(query: ibmUnderscoreDbLib.Anon_Params, params: js.Array[_]): js.Promise[js.Array[_]] = js.native
   def query(query: java.lang.String): js.Promise[js.Array[_]] = js.native
   def query(
     query: java.lang.String,
@@ -185,7 +185,7 @@ class Database () extends Options {
     cb: js.Function2[/* err */ stdLib.Error, /* res */ js.Array[_], scala.Unit]
   ): scala.Unit = js.native
   def queryResult(
-    query: ibmUnderscoreDbLib.Anon_Sql,
+    query: ibmUnderscoreDbLib.Anon_Params,
     cb: js.Function2[/* err */ stdLib.Error, /* res */ ODBCResult, scala.Unit]
   ): scala.Unit = js.native
   def queryResult(query: java.lang.String): js.Promise[ODBCResult] = js.native
@@ -199,13 +199,13 @@ class Database () extends Options {
     params: js.Array[_],
     cb: js.Function2[/* err */ stdLib.Error, /* res */ ODBCResult, scala.Unit]
   ): scala.Unit = js.native
-  def queryResultSync(query: ibmUnderscoreDbLib.Anon_Sql): ODBCResult = js.native
-  def queryResultSync(query: ibmUnderscoreDbLib.Anon_Sql, params: js.Array[_]): ODBCResult = js.native
+  def queryResultSync(query: ibmUnderscoreDbLib.Anon_Params): ODBCResult = js.native
+  def queryResultSync(query: ibmUnderscoreDbLib.Anon_Params, params: js.Array[_]): ODBCResult = js.native
   def queryResultSync(query: java.lang.String): ODBCResult = js.native
   def queryResultSync(query: java.lang.String, params: js.Array[_]): ODBCResult = js.native
   def queryStream(sql: java.lang.String, params: js.Array[_]): js.Any = js.native
-  def querySync(query: ibmUnderscoreDbLib.Anon_Sql): js.Array[_] = js.native
-  def querySync(query: ibmUnderscoreDbLib.Anon_Sql, params: js.Array[_]): js.Array[_] = js.native
+  def querySync(query: ibmUnderscoreDbLib.Anon_Params): js.Array[_] = js.native
+  def querySync(query: ibmUnderscoreDbLib.Anon_Params, params: js.Array[_]): js.Array[_] = js.native
   def querySync(query: java.lang.String): js.Array[_] = js.native
   def querySync(query: java.lang.String, params: js.Array[_]): js.Array[_] = js.native
   def rollbackTransaction(): js.Promise[scala.Unit] = js.native

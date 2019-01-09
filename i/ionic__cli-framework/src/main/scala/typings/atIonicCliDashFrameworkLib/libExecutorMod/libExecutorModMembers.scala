@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object libExecutorModMembers extends js.Object {
   val EXECUTOR_OPS: ExecutorOperations = js.native
   def execute[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[I, O] */, I /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput */, O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](
-    hasNamespaceArgvEnvRest: atIonicCliDashFrameworkLib.Anon_Namespace[N] with (stdLib.Partial[BaseExecutorDeps[C, N, M, I, O]])
+    hasNamespaceArgvEnvRest: atIonicCliDashFrameworkLib.Anon_Argv[N] with (stdLib.Partial[BaseExecutorDeps[C, N, M, I, O]])
   ): js.Promise[scala.Unit] = js.native
 }
 

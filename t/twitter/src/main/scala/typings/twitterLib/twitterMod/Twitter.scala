@@ -10,11 +10,11 @@ trait Twitter extends js.Object {
   val VERSION: java.lang.String = js.native
   val allow_promise: scala.Boolean = js.native
   @JSName("request")
-  val request_Original: requestLib.requestMod.requestNs.RequestAPI[
+  val request_Original: (requestLib.requestMod.requestNs.RequestAPI[
     requestLib.requestMod.requestNs.Request, 
     requestLib.requestMod.requestNs.CoreOptions, 
     requestLib.requestMod.requestNs.RequiredUriUrl
-  ] = js.native
+  ]) with twitterLib.Anon_Request = js.native
   def get(path: java.lang.String): js.Promise[twitterLib.twitterMod.TwitterNs.ResponseData] = js.native
   def get(path: java.lang.String, callback: twitterLib.twitterMod.TwitterNs.Callback): scala.Unit = js.native
   def get(path: java.lang.String, params: twitterLib.twitterMod.TwitterNs.RequestParams): js.Promise[twitterLib.twitterMod.TwitterNs.ResponseData] = js.native

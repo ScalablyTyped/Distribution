@@ -15,11 +15,11 @@ trait PlatformInfo extends js.Object {
     * @see enum PlatformArch
     */
   var arch: chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_MIPS, 
+    chromeDashAppsLib.Anon_ARM, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_MIPS[keyof chrome-apps.Anon_MIPS] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ARM[keyof chrome-apps.Anon_ARM] */ js.Any
     ]
   ]
   /**
@@ -27,11 +27,11 @@ trait PlatformInfo extends js.Object {
     * @see enum PlatformNaclArch
     */
   var nacl_arch: chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_MIPS, 
+    chromeDashAppsLib.Anon_ARM, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_MIPS[keyof chrome-apps.Anon_MIPS] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ARM[keyof chrome-apps.Anon_ARM] */ js.Any
     ]
   ]
   /**
@@ -39,11 +39,11 @@ trait PlatformInfo extends js.Object {
     * @see enum PlatformOs
     */
   var os: chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_MAC, 
+    chromeDashAppsLib.Anon_ANDROID, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_MAC[keyof chrome-apps.Anon_MAC] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ANDROID[keyof chrome-apps.Anon_ANDROID] */ js.Any
     ]
   ]
 }

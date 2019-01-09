@@ -21,6 +21,8 @@ trait DeploymentConfigArgs extends js.Object {
   /**
     * A traffic_routing_config block. Traffic Routing Config is documented below.
     */
-  val trafficRoutingConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypeTimeBasedCanary]] = js.undefined
+  val trafficRoutingConfig: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TimeBasedCanaryTimeBasedLinear]
+  ] = js.undefined
 }
 

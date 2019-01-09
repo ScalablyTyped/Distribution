@@ -29,7 +29,7 @@ class RouteTable protected ()
   /**
     * A list of route objects. Their keys are documented below.
     */
-  val routes: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_InstanceIdGatewayIdVpcPeeringConnectionId]] = js.native
+  val routes: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_CidrBlock]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */

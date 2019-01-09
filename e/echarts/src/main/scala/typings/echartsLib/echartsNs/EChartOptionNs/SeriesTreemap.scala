@@ -128,7 +128,7 @@ trait SeriesTreemap extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.breadcrumb
     */
-  var breadcrumb: js.UndefOr[echartsLib.Anon_EmptyItemWidth] = js.undefined
+  var breadcrumb: js.UndefOr[echartsLib.Anon_Bottom] = js.undefined
   /**
     * Children will not be shown when area size of a node is smaller
     * than this value (unit: px square).
@@ -311,7 +311,9 @@ trait SeriesTreemap extends js.Object {
   /**
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.emphasis
     */
-  var emphasis: js.UndefOr[echartsLib.Anon_UpperLabelItemStyle] = js.undefined
+  var emphasis: js.UndefOr[
+    echartsLib.Anon_ItemStyleLabelUpperLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis
+  ] = js.undefined
   /**
     * Height of treemap component.
     *
@@ -351,7 +353,7 @@ trait SeriesTreemap extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.itemStyle
     */
-  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorSaturationColorSaturation] = js.undefined
+  var itemStyle: js.UndefOr[echartsLib.Anon_BorderColorBorderColorSaturationBorderWidth] = js.undefined
   /**
     * `label` decribes the style of the label in each node.
     *
@@ -375,7 +377,7 @@ trait SeriesTreemap extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.label
     */
   var label: js.UndefOr[
-    echartsLib.Anon_ShadowOffsetXBackgroundColorShowEllipsisAlignTextBorderWidthVerticalAlign
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamilyFontSize
   ] = js.undefined
   /**
     * When `leafDepth` is set, the feature "drill down" is enabled,
@@ -509,7 +511,7 @@ trait SeriesTreemap extends js.Object {
     * []
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.levels
     */
-  var levels: js.UndefOr[echartsLib.Anon_VisualMax] = js.undefined
+  var levels: js.UndefOr[echartsLib.Anon_ChildrenVisibleMin] = js.undefined
   /**
     * Series name used for displaying in
     * [tooltip](https://ecomfe.github.io/echarts-doc/public/en/option.html#tooltip)
@@ -574,7 +576,7 @@ trait SeriesTreemap extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.silent
     */
-  var silent: js.UndefOr[echartsLib.Anon_Children] = js.undefined
+  var silent: js.UndefOr[echartsLib.Anon_ChildrenLink] = js.undefined
   /**
     * The expected square ratio.
     * Layout would approach the ratio as close as possible.
@@ -592,7 +594,7 @@ trait SeriesTreemap extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.tooltip
     */
-  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColor] = js.undefined
+  var tooltip: js.UndefOr[echartsLib.Anon_BackgroundColorBorderColor] = js.undefined
   /**
     * Distance between treemap component and the top side of the container.
     *
@@ -660,7 +662,9 @@ trait SeriesTreemap extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-treemap.upperLabel
     */
-  var upperLabel: js.UndefOr[echartsLib.Anon_ShadowOffsetXBackgroundColorShowEllipsis] = js.undefined
+  var upperLabel: js.UndefOr[
+    echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsisFontFamilyFontSizeFontStyle
+  ] = js.undefined
   /**
     * A node will not be shown when its area size is smaller than this
     * value (unit: px square).

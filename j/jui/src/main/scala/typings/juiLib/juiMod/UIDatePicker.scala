@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait UIDatePicker extends js.Object {
   def apply(selector: js.Any): this.type = js.native
-  def apply(selector: js.Any, options: juiLib.Anon_Format): this.type = js.native
+  def apply(selector: js.Any, options: juiLib.Anon_Daily): this.type = js.native
   /**
     * Selects a date corresponding to the time added to the currently selected date
     *

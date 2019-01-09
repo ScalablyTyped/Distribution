@@ -64,7 +64,7 @@ trait PushNotificationIOSStatic extends js.Object {
   @JSName("addEventListener")
   def addEventListener_registrationError(
     `type`: reactDashNativeLib.reactDashNativeLibStrings.registrationError,
-    handler: js.Function1[/* error */ reactDashNativeLib.Anon_Details, scala.Unit]
+    handler: js.Function1[/* error */ reactDashNativeLib.Anon_Code, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Cancels all scheduled localNotifications
@@ -120,7 +120,7 @@ trait PushNotificationIOSStatic extends js.Object {
   def removeEventListener(
     `type`: PushNotificationEventName,
     handler: js.Function1[
-      (/* error */ reactDashNativeLib.Anon_Details) | (/* notification */ PushNotification) | (/* deviceToken */ java.lang.String), 
+      (/* error */ reactDashNativeLib.Anon_Code) | (/* notification */ PushNotification) | (/* deviceToken */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native

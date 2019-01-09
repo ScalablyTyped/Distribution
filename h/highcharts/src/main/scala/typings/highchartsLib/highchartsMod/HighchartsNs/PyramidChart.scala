@@ -65,7 +65,7 @@ trait PyramidChart extends SeriesChart {
     * A wrapper object for all the series options in specific states.
     */
   @JSName("states")
-  var states_PyramidChart: js.UndefOr[highchartsLib.Anon_Hover] = js.undefined
+  var states_PyramidChart: js.UndefOr[highchartsLib.Anon_HoverPieStates] = js.undefined
   /**
     * The width of the pyramid compared to the width of the plot area, or the pixel width if it is a number.
     * @default '90%'

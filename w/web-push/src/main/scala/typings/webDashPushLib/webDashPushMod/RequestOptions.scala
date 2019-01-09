@@ -14,6 +14,6 @@ trait RequestOptions extends js.Object {
    // the type of push encoding to use (e.g. 'aesgcm', by default, or 'aes128gcm').
   var proxy: js.UndefOr[java.lang.String] = js.undefined
    // can be a GCM API key to be used for this request and this request only. This overrides any API key set via setGCMAPIKey().
-  var vapidDetails: js.UndefOr[webDashPushLib.Anon_PublicKey] = js.undefined
+  var vapidDetails: js.UndefOr[webDashPushLib.Anon_PrivateKey] = js.undefined
 }
 

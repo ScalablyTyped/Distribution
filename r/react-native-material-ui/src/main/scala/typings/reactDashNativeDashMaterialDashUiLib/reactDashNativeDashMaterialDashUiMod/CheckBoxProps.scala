@@ -10,7 +10,7 @@ trait CheckBoxProps extends js.Object {
   var checkedIcon: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var label: java.lang.String
-  var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_ContainerIconLabel] = js.undefined
+  var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_ContainerIcon] = js.undefined
   var uncheckedIcon: js.UndefOr[java.lang.String] = js.undefined
   var value: java.lang.String | scala.Double
   def onCheck(checked: scala.Boolean): scala.Unit

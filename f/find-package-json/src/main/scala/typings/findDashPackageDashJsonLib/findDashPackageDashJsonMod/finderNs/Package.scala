@@ -9,7 +9,7 @@ trait Package
   extends /* k */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var author: js.UndefOr[Person] = js.undefined
   var bin: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
-  var bugs: js.UndefOr[findDashPackageDashJsonLib.Anon_Url | findDashPackageDashJsonLib.Anon_UrlEmail] = js.undefined
+  var bugs: js.UndefOr[findDashPackageDashJsonLib.Anon_Email | findDashPackageDashJsonLib.Anon_EmailUrl] = js.undefined
   var bundleDependencies: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var contributors: js.UndefOr[js.Array[Person]] = js.undefined
   var dependencies: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined

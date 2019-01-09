@@ -1,0 +1,13 @@
+package typings
+package antdLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_E extends js.Object {
+  var hideRequiredMark: scala.Boolean
+  var layout: antdLib.antdLibStrings.`inline` | antdLib.antdLibStrings.horizontal | antdLib.antdLibStrings.vertical
+  def onSubmit(e: reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLFormElement]): scala.Unit
+}
+

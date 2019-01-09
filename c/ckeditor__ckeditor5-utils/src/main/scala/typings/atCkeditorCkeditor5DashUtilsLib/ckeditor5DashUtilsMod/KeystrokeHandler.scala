@@ -18,7 +18,7 @@ class KeystrokeHandler () extends js.Object {
   def set(
     keystroke: java.lang.String,
     callback: js.Function2[/* keyEvtData */ KeystrokeInfo, /* cancel */ js.Function0[scala.Unit], scala.Unit],
-    options: atCkeditorCkeditor5DashUtilsLib.Anon_PriorityPriorityString
+    options: atCkeditorCkeditor5DashUtilsLib.Anon_Priority
   ): scala.Unit = js.native
   def set(
     keystroke: js.Array[java.lang.String | scala.Double],
@@ -27,7 +27,7 @@ class KeystrokeHandler () extends js.Object {
   def set(
     keystroke: js.Array[java.lang.String | scala.Double],
     callback: js.Function2[/* keyEvtData */ KeystrokeInfo, /* cancel */ js.Function0[scala.Unit], scala.Unit],
-    options: atCkeditorCkeditor5DashUtilsLib.Anon_PriorityPriorityString
+    options: atCkeditorCkeditor5DashUtilsLib.Anon_Priority
   ): scala.Unit = js.native
 }
 

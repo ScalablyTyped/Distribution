@@ -10,6 +10,6 @@ trait GetShareInfoOptions
   /** shareTicket */
   var shareTicket: java.lang.String
   @JSName("success")
-  def success_MGetShareInfoOptions(res: weixinDashAppLib.Anon_ErrMsgEncryptedData): scala.Unit
+  def success_MGetShareInfoOptions(res: weixinDashAppLib.Anon_EncryptedData): scala.Unit
 }
 

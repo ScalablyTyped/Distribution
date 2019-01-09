@@ -11,7 +11,7 @@ trait SelectButtonProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEvent, scala.Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
   var optionLabel: js.UndefOr[java.lang.String] = js.undefined
   var options: js.UndefOr[js.Array[_]] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined

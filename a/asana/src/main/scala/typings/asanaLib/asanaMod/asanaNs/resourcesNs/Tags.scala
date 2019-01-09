@@ -35,9 +35,9 @@ trait Tags extends Resource {
     * @param dispatchOptions?
     * @return
     */
-  def create(data: asanaLib.asanaMod.asanaNs.resourcesNs.TagsNs.Type with asanaLib.Anon_Workspace): bluebirdLib.bluebirdMod.namespaced[asanaLib.asanaMod.asanaNs.resourcesNs.TagsNs.Type] = js.native
+  def create(data: asanaLib.asanaMod.asanaNs.resourcesNs.TagsNs.Type with asanaLib.Anon_WorkspaceString): bluebirdLib.bluebirdMod.namespaced[asanaLib.asanaMod.asanaNs.resourcesNs.TagsNs.Type] = js.native
   def create(
-    data: asanaLib.asanaMod.asanaNs.resourcesNs.TagsNs.Type with asanaLib.Anon_Workspace,
+    data: asanaLib.asanaMod.asanaNs.resourcesNs.TagsNs.Type with asanaLib.Anon_WorkspaceString,
     dispatchOptions: js.Any
   ): bluebirdLib.bluebirdMod.namespaced[asanaLib.asanaMod.asanaNs.resourcesNs.TagsNs.Type] = js.native
   /**

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CompilePipeMetadata protected ()
   extends atAngularCompilerLib.srcCompilerMod.CompilePipeMetadata {
-  def this(hasTypeNamePure: atAngularCompilerLib.Anon_TypeName) = this()
+  def this(hasTypeNamePure: atAngularCompilerLib.Anon_Name) = this()
 }
 

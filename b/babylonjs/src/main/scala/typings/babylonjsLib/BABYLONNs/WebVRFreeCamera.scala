@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
   * The WebVR camera is Babylon's simple interface to interaction with Windows Mixed Reality, HTC Vive and Oculus Rift.
   * @example http://doc.babylonjs.com/how_to/webvr_camera
   */
-/* RemoveMultipleInheritance: Dropped parents List(babylonjsLib.BABYLONNs.PoseControlled because Would inherit conflicting mutable fields List(position, rotationQuaternion))*/
-@JSGlobal("BABYLON.WebVRFreeCamera")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- babylonjsLib.BABYLONNs.PoseControlled because var conflicts: position, rotationQuaternion. Inlined devicePosition, deviceRotationQuaternion, rawPose, deviceScaleFactor, updateFromDevice */ @JSGlobal("BABYLON.WebVRFreeCamera")
 @js.native
 class WebVRFreeCamera protected () extends FreeCamera {
   /**
@@ -61,7 +61,7 @@ class WebVRFreeCamera protected () extends FreeCamera {
   /**
     * Represents device position in babylon space.
     */
-  var devicePosition: Vector3 = js.native
+  var devicePosition: js.UndefOr[Vector3] | Vector3 = js.native
   /**
     * Represents device rotation in babylon space.
     */
@@ -128,6 +128,10 @@ class WebVRFreeCamera protected () extends FreeCamera {
   /**
     * Updates the poseControlled values based on the input device pose.
     * @param poseData Pose coming from the device
+    */
+  /**
+    * Updates the poseControlled values based on the input device pose.
+    * @param poseData the pose data to update the object with
     */
   def updateFromDevice(poseData: DevicePose): scala.Unit = js.native
   /**

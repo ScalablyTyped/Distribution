@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 trait LicenseAssignmentsResource extends js.Object {
   /** Revoke License. */
-  def delete(request: gapiDotClientDotLicensingLib.Anon_PrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+  def delete(request: gapiDotClientDotLicensingLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   /** Get license assignment of a particular product and sku for a user */
-  def get(request: gapiDotClientDotLicensingLib.Anon_PrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignment]
+  def get(request: gapiDotClientDotLicensingLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignment]
   /** Assign License. */
-  def insert(request: gapiDotClientDotLicensingLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignment]
+  def insert(request: gapiDotClientDotLicensingLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignment]
   /** List license assignments for given product of the customer. */
-  def listForProduct(request: gapiDotClientDotLicensingLib.Anon_MaxResultsPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignmentList]
+  def listForProduct(request: gapiDotClientDotLicensingLib.Anon_AltCustomerId): gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignmentList]
   /** List license assignments for given product and sku of the customer. */
-  def listForProductAndSku(request: gapiDotClientDotLicensingLib.Anon_MaxResults): gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignmentList]
+  def listForProductAndSku(request: gapiDotClientDotLicensingLib.Anon_AltCustomerIdFields): gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignmentList]
   /** Assign License. This method supports patch semantics. */
-  def patch(request: gapiDotClientDotLicensingLib.Anon_PrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignment]
+  def patch(request: gapiDotClientDotLicensingLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignment]
   /** Assign License. */
-  def update(request: gapiDotClientDotLicensingLib.Anon_PrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignment]
+  def update(request: gapiDotClientDotLicensingLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[LicenseAssignment]
 }
 

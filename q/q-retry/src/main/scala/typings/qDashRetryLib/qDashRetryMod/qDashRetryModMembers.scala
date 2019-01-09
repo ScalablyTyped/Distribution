@@ -100,7 +100,7 @@ object qDashRetryModMembers extends js.Object {
   def nfbind[T](nodeFunction: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Function1[/* repeated */ js.Any, qLib.qMod.QNs.Promise[T]] = js.native
   def nfcall[T](nodeFunction: js.Function1[/* repeated */ js.Any, _], args: js.Any*): qLib.qMod.QNs.Promise[T] = js.native
   def ninvoke[T](nodeModule: js.Any, functionName: java.lang.String, args: js.Any*): qLib.qMod.QNs.Promise[T] = js.native
-  def noConflict(): qLib.Anon_Promise = js.native
+  def noConflict(): qLib.Anon_All = js.native
   def npost[T](nodeModule: js.Any, functionName: java.lang.String, args: js.Array[_]): qLib.qMod.QNs.Promise[T] = js.native
   def nsend[T](nodeModule: js.Any, functionName: java.lang.String, args: js.Any*): qLib.qMod.QNs.Promise[T] = js.native
   def promised[T](callback: js.Function1[/* repeated */ js.Any, T]): js.Function1[/* repeated */ js.Any, qLib.qMod.QNs.Promise[T]] = js.native

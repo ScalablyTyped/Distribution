@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSGlobal("gsap")
 @js.native
 object gsapNsMembers extends js.Object {
-  val Power0: org.scalablytyped.runtime.Instantiable0[Linear] = js.native
-  val Power1: org.scalablytyped.runtime.Instantiable0[Quad] = js.native
-  val Power2: org.scalablytyped.runtime.Instantiable0[Cubic] = js.native
-  val Power3: org.scalablytyped.runtime.Instantiable0[Quart] = js.native
-  val Power4: org.scalablytyped.runtime.Instantiable0[Quint] = js.native
-  val Strong: org.scalablytyped.runtime.Instantiable0[Quint] = js.native
+  val Power0: gsapLib.Anon_Ease = js.native
+  val Power1: gsapLib.Anon_EaseIn = js.native
+  val Power2: gsapLib.Anon_EaseInEaseInOut = js.native
+  val Power3: gsapLib.Anon_EaseInEaseInOutEaseOut = js.native
+  val Power4: gsapLib.Anon_EaseInEaseInOutEaseOutQuint = js.native
+  val Strong: gsapLib.Anon_EaseInEaseInOutEaseOutQuint = js.native
 }
 

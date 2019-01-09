@@ -16,7 +16,7 @@ class Connection () extends js.Object {
   def database(name: java.lang.String): Database = js.native
   def databases(Callback: Callback): scala.Unit = js.native
   def info(callback: Callback): scala.Unit = js.native
-  def replicate(options: cradleLib.Anon_Continuous, callback: Callback): scala.Unit = js.native
+  def replicate(options: cradleLib.Anon_Cancel, callback: Callback): scala.Unit = js.native
   def stats(callback: Callback): scala.Unit = js.native
   def uuids(callback: Callback): scala.Unit = js.native
   def uuids(count: scala.Double, callback: Callback): scala.Unit = js.native

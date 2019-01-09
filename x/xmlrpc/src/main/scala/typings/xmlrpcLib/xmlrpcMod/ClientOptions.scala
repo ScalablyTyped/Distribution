@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ClientOptions extends js.Object {
-  var basic_auth: js.UndefOr[xmlrpcLib.Anon_User] = js.undefined
+  var basic_auth: js.UndefOr[xmlrpcLib.Anon_Pass] = js.undefined
   var cookies: js.UndefOr[scala.Boolean] = js.undefined
   var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined

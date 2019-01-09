@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait Anon_IncludeSelf extends js.Object {
   var includeSelf: scala.Boolean
+  var parentFirst: scala.Boolean
 }
 

@@ -61,7 +61,7 @@ trait TimelineOptions extends js.Object {
   var throttleRedraw: js.UndefOr[scala.Double] = js.undefined
   var timeAxis: js.UndefOr[TimelineTimeAxisOption] = js.undefined
   var tooltip: js.UndefOr[TimelineTooltipOption] = js.undefined
-  var tooltipOnItemUpdateTime: js.UndefOr[scala.Boolean | visLib.Anon_Template] = js.undefined
+  var tooltipOnItemUpdateTime: js.UndefOr[scala.Boolean | visLib.Anon_Item] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   var verticalScroll: js.UndefOr[scala.Boolean] = js.undefined
   var visibleFrameTemplate: js.UndefOr[TimelineOptionsTemplateFunction] = js.undefined

@@ -21,12 +21,7 @@ class Global protected () extends js.Object {
     /* sortOrder */ js.UndefOr[/* sortOrder */ java.lang.String], 
     OrderByStatement
   ] = js.native
-  var Predicate: org.scalablytyped.runtime.Instantiable3[
-    /* propertyOrValueOrPredicate */ js.Any, 
-    /* valueOrOperator */ js.UndefOr[/* valueOrOperator */ js.Any], 
-    /* value */ js.UndefOr[/* value */ js.Any], 
-    Predicate
-  ] = js.native
+  var Predicate: angularDashOdataDashResourcesLib.Anon_And = js.native
   var Property: org.scalablytyped.runtime.Instantiable1[/* value */ java.lang.String, Property] = js.native
   var Provider: Provider[_] = js.native
   var Value: org.scalablytyped.runtime.Instantiable2[/* value */ js.Any, /* type */ js.UndefOr[/* type */ java.lang.String], Value] = js.native

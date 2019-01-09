@@ -10,7 +10,7 @@ trait APIGatewayEventRequestContext extends js.Object {
   var apiId: java.lang.String
   var authorizer: js.UndefOr[AuthResponseContext | scala.Null] = js.undefined
   var httpMethod: java.lang.String
-  var identity: awsDashLambdaLib.Anon_CognitoIdentityPoolId
+  var identity: awsDashLambdaLib.Anon_AccessKey
   var path: java.lang.String
   var requestId: java.lang.String
   var requestTimeEpoch: scala.Double

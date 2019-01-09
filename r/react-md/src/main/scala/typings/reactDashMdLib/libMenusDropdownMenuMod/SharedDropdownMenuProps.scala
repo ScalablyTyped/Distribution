@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait SharedDropdownMenuProps
   extends reactDashMdLib.libMenusMenuMod.BaseMenuProps {
   var cascading: js.UndefOr[scala.Boolean] = js.undefined
-  var cascadingAnchor: js.UndefOr[reactDashMdLib.Anon_Y] = js.undefined
+  var cascadingAnchor: js.UndefOr[reactDashMdLib.Anon_XY] = js.undefined
   var cascadingZDepth: js.UndefOr[scala.Double] = js.undefined
   var defaultVisible: js.UndefOr[scala.Boolean] = js.undefined
   var menuItems: js.UndefOr[

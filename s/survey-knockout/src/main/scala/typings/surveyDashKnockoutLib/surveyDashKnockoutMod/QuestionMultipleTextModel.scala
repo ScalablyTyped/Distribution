@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(surveyDashKnockoutLib.surveyDashKnockoutMod.IMultipleTextData because Would inherit conflicting mutable fields List(isPage, isReadOnly, isVisible, name, parent))*/
-@JSImport("survey-knockout", "QuestionMultipleTextModel")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- surveyDashKnockoutLib.surveyDashKnockoutMod.IMultipleTextData because var conflicts: isPage, isReadOnly, isVisible, name, parent. Inlined getSurvey, getTextProcessor, getAllValues, getMultipleTextValue, setMultipleTextValue, getIsRequiredText */ @JSImport("survey-knockout", "QuestionMultipleTextModel")
 @js.native
 class QuestionMultipleTextModel protected () extends Question {
   def this(name: java.lang.String) = this()
@@ -45,5 +45,7 @@ class QuestionMultipleTextModel protected () extends Question {
   def getTextProcessor(): ITextProcessor = js.native
   /* protected */ def onItemValueChanged(): scala.Unit = js.native
   def setMultipleTextValue(name: java.lang.String, value: js.Any): scala.Unit = js.native
+  @JSName("setMultipleTextValue")
+  def setMultipleTextValue_Any(name: java.lang.String, value: js.Any): js.Any = js.native
 }
 

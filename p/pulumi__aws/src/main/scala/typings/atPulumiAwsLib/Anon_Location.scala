@@ -6,12 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Location extends js.Object {
-  var auths: js.UndefOr[js.Array[Anon_Resource]] = js.undefined
-  var buildspec: js.UndefOr[java.lang.String] = js.undefined
-  var gitCloneDepth: js.UndefOr[scala.Double] = js.undefined
-  var insecureSsl: js.UndefOr[scala.Boolean] = js.undefined
   var location: js.UndefOr[java.lang.String] = js.undefined
-  var reportBuildStatus: js.UndefOr[scala.Boolean] = js.undefined
-  var `type`: java.lang.String
+  var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 

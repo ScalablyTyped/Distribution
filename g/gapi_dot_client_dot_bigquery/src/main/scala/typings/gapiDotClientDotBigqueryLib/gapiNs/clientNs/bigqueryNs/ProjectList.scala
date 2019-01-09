@@ -13,7 +13,7 @@ trait ProjectList extends js.Object {
   /** A token to request the next page of results. */
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Projects to which you have at least READ access. */
-  var projects: js.UndefOr[js.Array[gapiDotClientDotBigqueryLib.Anon_ProjectReference]] = js.undefined
+  var projects: js.UndefOr[js.Array[gapiDotClientDotBigqueryLib.Anon_FriendlyName]] = js.undefined
   /** The total number of projects in the list. */
   var totalItems: js.UndefOr[scala.Double] = js.undefined
 }

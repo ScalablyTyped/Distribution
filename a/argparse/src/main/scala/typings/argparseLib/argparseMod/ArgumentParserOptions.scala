@@ -11,7 +11,7 @@ trait ArgumentParserOptions extends js.Object {
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined
   var epilog: js.UndefOr[java.lang.String] = js.undefined
-  var formatterClass: js.UndefOr[argparseLib.Anon_HelpFormatter] = js.undefined
+  var formatterClass: js.UndefOr[argparseLib.Anon_ArgumentDefaultsHelpFormatter] = js.undefined
   var parents: js.UndefOr[js.Array[ArgumentParser]] = js.undefined
   var prefixChars: js.UndefOr[java.lang.String] = js.undefined
   var prog: js.UndefOr[java.lang.String] = js.undefined

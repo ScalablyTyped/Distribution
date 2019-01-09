@@ -29,7 +29,7 @@ class S3Location protected ()
   /**
     * Configuration block containing information for connecting to S3.
     */
-  val s3Config: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BucketAccessRoleArnString] = js.native
+  val s3Config: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BucketAccessRoleArn] = js.native
   /**
     * Prefix to perform actions as source or destination.
     */

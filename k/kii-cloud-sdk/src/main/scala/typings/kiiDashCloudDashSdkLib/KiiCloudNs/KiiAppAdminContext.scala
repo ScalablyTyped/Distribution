@@ -131,7 +131,7 @@ class KiiAppAdminContext () extends js.Object {
     *     );
     */
   def findUserByEmail(email: java.lang.String): js.Promise[js.Tuple2[KiiAppAdminContext, KiiUser]] = js.native
-  def findUserByEmail(email: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureAdminContext): js.Promise[js.Tuple2[KiiAppAdminContext, KiiUser]] = js.native
+  def findUserByEmail(email: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_AdminContextAnErrorString): js.Promise[js.Tuple2[KiiAppAdminContext, KiiUser]] = js.native
   /**
     * Find registered KiiUser with the phone.<br>
     * If there are no user registers with the specified phone or if there are but not verified phone yet,
@@ -205,7 +205,7 @@ class KiiAppAdminContext () extends js.Object {
     *     );
     */
   def findUserByPhone(phone: java.lang.String): js.Promise[js.Tuple2[KiiAppAdminContext, KiiUser]] = js.native
-  def findUserByPhone(phone: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureAdminContext): js.Promise[js.Tuple2[KiiAppAdminContext, KiiUser]] = js.native
+  def findUserByPhone(phone: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_AdminContextAnErrorString): js.Promise[js.Tuple2[KiiAppAdminContext, KiiUser]] = js.native
   /**
     * Find registered KiiUser with the user name.<br>
     * If there are no user registers with the specified user name, callbacks.failure or reject callback of promise will be called.<br>
@@ -277,7 +277,7 @@ class KiiAppAdminContext () extends js.Object {
     *     );
     */
   def findUserByUsername(username: java.lang.String): js.Promise[js.Tuple2[KiiAppAdminContext, KiiUser]] = js.native
-  def findUserByUsername(username: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureAdminContext): js.Promise[js.Tuple2[KiiAppAdminContext, KiiUser]] = js.native
+  def findUserByUsername(username: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_AdminContextAnErrorString): js.Promise[js.Tuple2[KiiAppAdminContext, KiiUser]] = js.native
   /**
     * Creates a reference to a group operated by app admin using group's ID.
     *     <br><br>
@@ -420,8 +420,8 @@ class KiiAppAdminContext () extends js.Object {
     *     );
     */
   def listTopics(): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
-  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorString): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
-  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_FailureAnErrorString, paginationKey: java.lang.String): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
+  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorString): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
+  def listTopics(callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorString, paginationKey: java.lang.String): js.Promise[js.Tuple2[js.Array[KiiTopic], java.lang.String]] = js.native
   /**
     * Load thing with thing ID by app admin.
     * Method interface is same as {@link KiiThing#loadWithThingID()}.
@@ -468,7 +468,7 @@ class KiiAppAdminContext () extends js.Object {
     *     );
     */
   def loadThingWithThingID(thingID: java.lang.String): js.Promise[KiiThing] = js.native
-  def loadThingWithThingID(thingID: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessThing): js.Promise[KiiThing] = js.native
+  def loadThingWithThingID(thingID: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureSuccess): js.Promise[KiiThing] = js.native
   /**
     * Load thing with vendor thing ID by app admin.
     * Method interface is same as {@link KiiThing#loadWithVendorThingID()}.
@@ -515,7 +515,7 @@ class KiiAppAdminContext () extends js.Object {
     *     );
     */
   def loadThingWithVendorThingID(vendorThingID: java.lang.String): js.Promise[KiiThing] = js.native
-  def loadThingWithVendorThingID(vendorThingID: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessThing): js.Promise[KiiThing] = js.native
+  def loadThingWithVendorThingID(vendorThingID: java.lang.String, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureSuccess): js.Promise[KiiThing] = js.native
   /**
     * Creates a reference to an object operated by app admin using object`s URI.
     *
@@ -593,7 +593,7 @@ class KiiAppAdminContext () extends js.Object {
     groupName: java.lang.String,
     user: java.lang.String,
     members: js.Array[KiiUser],
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureTheGroup
+    callbacks: kiiDashCloudDashSdkLib.Anon_AddMembersArray
   ): js.Promise[KiiAppAdminContext] = js.native
   /**
     * Register user/group as owner of specified thing by app admin.
@@ -647,11 +647,7 @@ class KiiAppAdminContext () extends js.Object {
     *     );
     */
   def registerOwnerWithThingID[T /* <: KiiUser | KiiGroup */](thingID: java.lang.String, owner: T): js.Promise[T] = js.native
-  def registerOwnerWithThingID[T /* <: KiiUser | KiiGroup */](
-    thingID: java.lang.String,
-    owner: T,
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessGroup[T]
-  ): js.Promise[T] = js.native
+  def registerOwnerWithThingID[T /* <: KiiUser | KiiGroup */](thingID: java.lang.String, owner: T, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroup[T]): js.Promise[T] = js.native
   /**
     * Register user/group as owner of specified thing by app admin.
     *
@@ -706,7 +702,7 @@ class KiiAppAdminContext () extends js.Object {
   def registerOwnerWithVendorThingID[T /* <: KiiUser | KiiGroup */](
     vendorThingID: java.lang.String,
     owner: T,
-    callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessGroup[T]
+    callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureGroup[T]
   ): js.Promise[T] = js.native
   /**
     * Register thing by app admin.
@@ -777,7 +773,7 @@ class KiiAppAdminContext () extends js.Object {
     *     );
     */
   def registerThing(fields: KiiThingFields): js.Promise[KiiThing] = js.native
-  def registerThing(fields: KiiThingFields, callbacks: kiiDashCloudDashSdkLib.Anon_FailureErrorSuccessThing): js.Promise[KiiThing] = js.native
+  def registerThing(fields: KiiThingFields, callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureSuccess): js.Promise[KiiThing] = js.native
   /**
     * Creates a reference to a thing operated by app admin.
     *

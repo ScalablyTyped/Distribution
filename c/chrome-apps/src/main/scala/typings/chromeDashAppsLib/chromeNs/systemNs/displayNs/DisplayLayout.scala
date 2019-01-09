@@ -21,11 +21,11 @@ trait DisplayLayout extends js.Object {
     * @see enum DisplayPosition
     */
   var position: chromeDashAppsLib.chromeNs.ToStringLiteral[
-    chromeDashAppsLib.Anon_RIGHT, 
+    chromeDashAppsLib.Anon_BOTTOM, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_RIGHT[keyof chrome-apps.Anon_RIGHT] */ js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_BOTTOM[keyof chrome-apps.Anon_BOTTOM] */ js.Any
     ]
   ]
 }

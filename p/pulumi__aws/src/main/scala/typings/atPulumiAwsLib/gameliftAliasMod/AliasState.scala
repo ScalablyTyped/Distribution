@@ -21,6 +21,6 @@ trait AliasState extends js.Object {
   /**
     * Specifies the fleet and/or routing type to use for the alias.
     */
-  val routingStrategy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FleetId]] = js.undefined
+  val routingStrategy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FleetIdMessage]] = js.undefined
 }
 

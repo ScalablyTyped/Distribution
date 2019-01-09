@@ -13,12 +13,12 @@ trait StripePaymentRequest extends js.Object {
   @JSName("on")
   def on_shippingaddresschange(
     event: stripeDashV3Lib.stripeDashV3LibStrings.shippingaddresschange,
-    handler: js.Function1[/* response */ stripeDashV3Lib.Anon_ShippingAddress, scala.Unit]
+    handler: js.Function1[/* response */ stripeDashV3Lib.Anon_Options, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
   def on_shippingoptionchange(
     event: stripeDashV3Lib.stripeDashV3LibStrings.shippingoptionchange,
-    handler: js.Function1[/* response */ stripeDashV3Lib.Anon_UpdateWith, scala.Unit]
+    handler: js.Function1[/* response */ stripeDashV3Lib.Anon_OptionsShippingOption, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
   def on_source(
