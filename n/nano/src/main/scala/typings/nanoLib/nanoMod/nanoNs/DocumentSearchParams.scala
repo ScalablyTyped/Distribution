@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait DocumentSearchParams extends js.Object {
   // A bookmark that was received from a previous search. Used for pagination.
   var bookmark: js.UndefOr[java.lang.String] = js.undefined
-  // An array of field names for which facet counts are requested. 
+  // An array of field names for which facet counts are requested.
   var counts: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   // Filters the result set using key value pairs supplied to the drilldown parameter.
   var drilldown: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -17,7 +17,7 @@ trait DocumentSearchParams extends js.Object {
   var group_field: js.UndefOr[java.lang.String] = js.undefined
   // The maximum group count when used in conjunction with group_field.
   var group_limit: js.UndefOr[scala.Double] = js.undefined
-  // Defines the order of the groups in a search when used with group_field. 
+  // Defines the order of the groups in a search when used with group_field.
   var group_sort: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   // Which fields are to be highlighted.
   var highlight_fields: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -41,7 +41,7 @@ trait DocumentSearchParams extends js.Object {
   var query: js.UndefOr[java.lang.String] = js.undefined
   // Defines ranges for faceted numeric search fields.
   var ranges: js.UndefOr[js.Object] = js.undefined
-  // Specifies the sort order of the results. 
+  // Specifies the sort order of the results.
   var sort: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   // Do not wait for the index to finish building to return results.
   var stale: js.UndefOr[scala.Boolean] = js.undefined

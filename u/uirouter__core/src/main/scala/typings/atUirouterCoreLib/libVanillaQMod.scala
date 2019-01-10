@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object libVanillaQMod extends js.Object {
   @JSName("$q")
-  val $q: js.Any = js.native
+  val $q: atUirouterCoreLib.libCommonCoreservicesMod.$QLike = js.native
 }
 

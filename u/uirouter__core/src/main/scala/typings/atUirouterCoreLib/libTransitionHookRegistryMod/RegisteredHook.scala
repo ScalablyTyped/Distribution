@@ -73,7 +73,10 @@ class RegisteredHook protected () extends js.Object {
     * @returns an IMatchingNodes object, or null. If an IMatchingNodes object is returned, its values
     * are the matching [[PathNode]]s for each [[HookMatchCriterion]] (to, from, exiting, retained, entering)
     */
-  def matches(treeChanges: atUirouterCoreLib.libTransitionInterfaceMod.TreeChanges): atUirouterCoreLib.libTransitionInterfaceMod.IMatchingNodes = js.native
+  def matches(
+    treeChanges: atUirouterCoreLib.libTransitionInterfaceMod.TreeChanges,
+    transition: atUirouterCoreLib.libTransitionTransitionMod.Transition
+  ): atUirouterCoreLib.libTransitionInterfaceMod.IMatchingNodes = js.native
   def removeHookFromRegistry(hook: RegisteredHook): scala.Unit = js.native
 }
 

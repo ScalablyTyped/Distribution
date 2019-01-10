@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "anydb-sql-migrations"
-version := "2.3.1-4af442"
+version := "2.4.0-4af442"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

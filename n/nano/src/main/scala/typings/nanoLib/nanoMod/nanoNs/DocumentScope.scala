@@ -140,10 +140,8 @@ trait DocumentScope[D] extends js.Object {
   def list(params: DocumentListParams, callback: Callback[DocumentListResponse[D]]): js.Promise[DocumentListResponse[D]] = js.native
   // http://docs.couchdb.org/en/latest/api/database/bulk-api.html#get--db-_all_docs
   def listAsStream(): requestLib.requestMod.requestNs.Request = js.native
-  def listAsStream(callback: Callback[requestLib.requestMod.requestNs.Request]): requestLib.requestMod.requestNs.Request = js.native
   // http://docs.couchdb.org/en/latest/api/database/bulk-api.html#get--db-_all_docs
   def listAsStream(params: DocumentListParams): requestLib.requestMod.requestNs.Request = js.native
-  def listAsStream(params: DocumentListParams, callback: Callback[requestLib.requestMod.requestNs.Request]): requestLib.requestMod.requestNs.Request = js.native
   // http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate
   def replicate(target: java.lang.String, options: js.Any): js.Promise[DatabaseReplicateResponse] = js.native
   def replicate(target: java.lang.String, options: js.Any, callback: Callback[DatabaseReplicateResponse]): js.Promise[DatabaseReplicateResponse] = js.native
@@ -162,12 +160,6 @@ trait DocumentScope[D] extends js.Object {
     callback: Callback[DocumentSearchResponse[V]]
   ): js.Promise[DocumentSearchResponse[V]] = js.native
   def searchAsStream[V](designname: java.lang.String, searchname: java.lang.String, params: DocumentSearchParams): requestLib.requestMod.requestNs.Request = js.native
-  def searchAsStream[V](
-    designname: java.lang.String,
-    searchname: java.lang.String,
-    params: DocumentSearchParams,
-    callback: Callback[DocumentSearchResponse[V]]
-  ): requestLib.requestMod.requestNs.Request = js.native
   // http://docs.couchdb.org/en/latest/api/server/authn.html#get--_session
   def session(): js.Promise[DatabaseSessionResponse] = js.native
   def session(callback: Callback[DatabaseSessionResponse]): js.Promise[DatabaseSessionResponse] = js.native
@@ -230,20 +222,9 @@ trait DocumentScope[D] extends js.Object {
   // http://docs.couchdb.org/en/latest/api/ddoc/views.html#get--db-_design-ddoc-_view-view
   // http://docs.couchdb.org/en/latest/api/ddoc/views.html#post--db-_design-ddoc-_view-view
   def viewAsStream[V](designname: java.lang.String, viewname: java.lang.String): requestLib.requestMod.requestNs.Request = js.native
-  def viewAsStream[V](
-    designname: java.lang.String,
-    viewname: java.lang.String,
-    callback: Callback[DocumentViewResponse[V, D]]
-  ): requestLib.requestMod.requestNs.Request = js.native
   // http://docs.couchdb.org/en/latest/api/ddoc/views.html#get--db-_design-ddoc-_view-view
   // http://docs.couchdb.org/en/latest/api/ddoc/views.html#post--db-_design-ddoc-_view-view
   def viewAsStream[V](designname: java.lang.String, viewname: java.lang.String, params: DocumentViewParams): requestLib.requestMod.requestNs.Request = js.native
-  def viewAsStream[V](
-    designname: java.lang.String,
-    viewname: java.lang.String,
-    params: DocumentViewParams,
-    callback: Callback[DocumentViewResponse[V, D]]
-  ): requestLib.requestMod.requestNs.Request = js.native
   // http://docs.couchdb.org/en/latest/api/ddoc/render.html#db-design-design-doc-list-list-name-view-name
   def viewWithList(designname: java.lang.String, viewname: java.lang.String, listname: java.lang.String): js.Promise[_] = js.native
   def viewWithList(

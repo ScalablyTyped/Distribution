@@ -10,6 +10,6 @@ trait IPlainCardProps
   /**
     *  Render function to populate compact content area
     */
-  var onRenderPlainCard: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[IPlainCardProps]] = js.undefined
+  var onRenderPlainCard: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[_]] = js.undefined
 }
 

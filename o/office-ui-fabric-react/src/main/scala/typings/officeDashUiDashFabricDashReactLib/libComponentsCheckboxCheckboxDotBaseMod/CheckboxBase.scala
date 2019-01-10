@@ -24,7 +24,7 @@ class CheckboxBase protected ()
   var _classNames: js.Any = js.native
   var _id: js.Any = js.native
   var _onBlur: js.Any = js.native
-  var _onClick: js.Any = js.native
+  var _onChange: js.Any = js.native
   var _onFocus: js.Any = js.native
   var _onRenderLabel: js.Any = js.native
   /** Gets the current checked state. */

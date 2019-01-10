@@ -53,7 +53,13 @@ trait Plugin extends js.Object {
       scala.Unit | js.Promise[scala.Unit]
     ]
   ] = js.undefined
-  var options: js.UndefOr[js.Function1[/* options */ InputOptions, InputOptions | scala.Unit | scala.Null]] = js.undefined
+  var options: js.UndefOr[
+    js.ThisFunction1[
+      /* this */ MinimalPluginContext, 
+      /* options */ InputOptions, 
+      InputOptions | scala.Unit | scala.Null
+    ]
+  ] = js.undefined
   var outro: js.UndefOr[AddonHook] = js.undefined
   var renderChunk: js.UndefOr[RenderChunkHook] = js.undefined
   var renderError: js.UndefOr[
@@ -72,5 +78,12 @@ trait Plugin extends js.Object {
   /** @deprecated */
   var transformChunk: js.UndefOr[TransformChunkHook] = js.undefined
   var watchChange: js.UndefOr[js.Function1[/* id */ java.lang.String, scala.Unit]] = js.undefined
+  var writeBundle: js.UndefOr[
+    js.ThisFunction1[
+      /* this */ PluginContext, 
+      /* bundle */ OutputBundle, 
+      scala.Unit | js.Promise[scala.Unit]
+    ]
+  ] = js.undefined
 }
 

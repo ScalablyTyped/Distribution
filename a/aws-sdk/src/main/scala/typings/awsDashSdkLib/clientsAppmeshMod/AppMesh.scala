@@ -361,7 +361,7 @@ trait AppMesh
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Describes an existing cluster.
+    * Describes an existing service mesh.
     */
   def describeMesh(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DescribeMeshOutput, 
@@ -378,7 +378,7 @@ trait AppMesh
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Describes an existing cluster.
+    * Describes an existing service mesh.
     */
   def describeMesh(params: awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DescribeMeshInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAppmeshMod.AppMeshNs.DescribeMeshOutput, 

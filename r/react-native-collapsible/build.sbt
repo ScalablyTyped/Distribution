@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-collapsible"
-version := "1.4.0-5a80ed"
+version := "1.4.0-4f863b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-82546d",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-ff1a88",
   "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-8bb0ba",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190108Z-79a05b",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190108Z-d8162f",
   "org.scalablytyped" %%% "std" % "3.2.2-f3cc98")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

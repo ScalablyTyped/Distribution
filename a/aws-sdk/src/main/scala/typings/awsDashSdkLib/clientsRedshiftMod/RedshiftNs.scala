@@ -335,6 +335,11 @@ object RedshiftNs extends js.Object {
     var VpcSecurityGroups: js.UndefOr[VpcSecurityGroupMembershipList] = js.undefined
   }
   
+  trait ClusterAssociatedToSchedule extends js.Object {
+    var ClusterIdentifier: js.UndefOr[String] = js.undefined
+    var ScheduleAssociationState: js.UndefOr[ScheduleState] = js.undefined
+  }
+  
   trait ClusterCredentials extends js.Object {
     /**
       * A temporary password that authorizes the user name returned by DbUser to log on to the database DbName. 
@@ -1264,7 +1269,7 @@ object RedshiftNs extends js.Object {
   
   trait DescribeClusterSnapshotsMessage extends js.Object {
     /**
-      * A value that indicates whether to return snapshots only for an existing cluster. Table-level restore can be performed only using a snapshot of an existing cluster, that is, a cluster that has not been deleted.    If ClusterExists is set to true, ClusterIdentifier is required.   If ClusterExists is set to false and ClusterIdentifier is not specified, all snapshots associated with deleted clusters (orphaned snapshots) are returned.    If ClusterExists is set to false and ClusterIdentifier is specified for a deleted cluster, snapshots associated with that cluster are returned.   If ClusterExists is set to false and ClusterIdentifier is specified for an existing cluster, no snapshots are returned.   
+      * A value that indicates whether to return snapshots only for an existing cluster. Table-level restore can be performed only using a snapshot of an existing cluster, that is, a cluster that has not been deleted. If ClusterExists is set to true, ClusterIdentifier is required.
       */
     var ClusterExists: js.UndefOr[BooleanOptional] = js.undefined
     /**
@@ -3207,6 +3212,8 @@ object RedshiftNs extends js.Object {
   }
   
   trait SnapshotSchedule extends js.Object {
+    var AssociatedClusterCount: js.UndefOr[IntegerOptional] = js.undefined
+    var AssociatedClusters: js.UndefOr[AssociatedClusterList] = js.undefined
     var NextInvocations: js.UndefOr[ScheduledSnapshotTimeList] = js.undefined
     /**
       * A list of ScheduleDefinitions
@@ -5224,6 +5231,7 @@ object RedshiftNs extends js.Object {
   
   val TypesNs: this.type = js.native
   type AccountsWithRestoreAccessList = js.Array[AccountWithRestoreAccess]
+  type AssociatedClusterList = js.Array[ClusterAssociatedToSchedule]
   type AttributeList = js.Array[AccountAttribute]
   type AttributeNameList = js.Array[String]
   type AttributeValueList = js.Array[AttributeValueTarget]

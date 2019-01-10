@@ -25,14 +25,10 @@ trait IExpandingCardProps
   /**
     *  Render function to populate compact content area
     */
-  var onRenderCompactCard: js.UndefOr[
-    atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[IExpandingCardProps]
-  ] = js.undefined
+  var onRenderCompactCard: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[_]] = js.undefined
   /**
     *  Render function to populate expanded content area
     */
-  var onRenderExpandedCard: js.UndefOr[
-    atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[IExpandingCardProps]
-  ] = js.undefined
+  var onRenderExpandedCard: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[_]] = js.undefined
 }
 

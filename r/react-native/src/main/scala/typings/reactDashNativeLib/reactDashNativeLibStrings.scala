@@ -442,6 +442,9 @@ object reactDashNativeLibStrings {
   sealed trait date extends js.Object
   
   @js.native
+  sealed trait dateSetAction extends js.Object
+  
+  @js.native
   sealed trait datetime extends js.Object
   
   @js.native
@@ -464,6 +467,9 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait disk extends js.Object
+  
+  @js.native
+  sealed trait dismissedAction extends js.Object
   
   @js.native
   sealed trait document extends js.Object
@@ -1003,6 +1009,9 @@ object reactDashNativeLibStrings {
   sealed trait time extends js.Object
   
   @js.native
+  sealed trait timeSetAction extends js.Object
+  
+  @js.native
   sealed trait timeout extends js.Object
   
   @js.native
@@ -1231,6 +1240,7 @@ object reactDashNativeLibStrings {
   def `dark-content`: `dark-content` = "dark-content".asInstanceOf[`dark-content`]
   def dashed: dashed = "dashed".asInstanceOf[dashed]
   def date: date = "date".asInstanceOf[date]
+  def dateSetAction: dateSetAction = "dateSetAction".asInstanceOf[dateSetAction]
   def datetime: datetime = "datetime".asInstanceOf[datetime]
   def `decimal-pad`: `decimal-pad` = "decimal-pad".asInstanceOf[`decimal-pad`]
   def default: default = "default".asInstanceOf[default]
@@ -1239,6 +1249,7 @@ object reactDashNativeLibStrings {
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   def disk: disk = "disk".asInstanceOf[disk]
+  def dismissedAction: dismissedAction = "dismissedAction".asInstanceOf[dismissedAction]
   def document: document = "document".asInstanceOf[document]
   def done: done = "done".asInstanceOf[done]
   def dotted: dotted = "dotted".asInstanceOf[dotted]
@@ -1418,6 +1429,7 @@ object reactDashNativeLibStrings {
   def telephoneNumber: telephoneNumber = "telephoneNumber".asInstanceOf[telephoneNumber]
   def text: text = "text".asInstanceOf[text]
   def time: time = "time".asInstanceOf[time]
+  def timeSetAction: timeSetAction = "timeSetAction".asInstanceOf[timeSetAction]
   def timeout: timeout = "timeout".asInstanceOf[timeout]
   def top: top = "top".asInstanceOf[top]
   def `top-rated`: `top-rated` = "top-rated".asInstanceOf[`top-rated`]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-svg-charts"
-version := "5.0-dt-20181105Z-9a1471"
+version := "5.0-dt-20181105Z-dfe468"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,8 +18,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "pegjs" % "v0.10.0-dt-20180522Z-88db3a",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-ff1a88",
   "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-8bb0ba",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190108Z-79a05b",
-  "org.scalablytyped" %%% "react-native-svg" % "8.0.10-a3e10c",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190108Z-d8162f",
+  "org.scalablytyped" %%% "react-native-svg" % "8.0.10-400b4c",
   "org.scalablytyped" %%% "std" % "3.2.2-f3cc98")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

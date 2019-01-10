@@ -54,6 +54,7 @@ trait ComponentNameToClassKey extends js.Object {
   var MuiInputBase: atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseClassKey
   var MuiInputLabel: atMaterialDashUiCoreLib.inputlabelInputLabelMod.InputLabelClassKey
   var MuiLinearProgress: atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
+  var MuiLink: atMaterialDashUiCoreLib.linkLinkMod.LinkClassKey
   var MuiList: atMaterialDashUiCoreLib.listListMod.ListClassKey
   var MuiListItem: atMaterialDashUiCoreLib.listitemListItemMod.ListItemClassKey
   var MuiListItemAvatar: atMaterialDashUiCoreLib.listitemavatarListItemAvatarMod.ListItemAvatarClassKey

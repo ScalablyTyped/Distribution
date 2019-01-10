@@ -20,13 +20,17 @@ class FocusTrapZone ()
   var _previouslyFocusedElementInTrapZone: js.UndefOr[js.Any] = js.native
   var _previouslyFocusedElementOutsideTrapZone: js.Any = js.native
   var _root: js.Any = js.native
+  /* private */ def _bringFocusIntoZone(): js.Any = js.native
   /* private */ def _forceClickInTrap(ev: js.Any): js.Any = js.native
   /* private */ def _forceFocusInTrap(ev: js.Any): js.Any = js.native
+  /* private */ def _returnFocusToInitiator(): js.Any = js.native
   /* private */ def _updateEventHandlers(newProps: js.Any): js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MFocusTrapZone(): scala.Unit = js.native
-  @JSName("componentWillMount")
-  def componentWillMount_MFocusTrapZone(): scala.Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MFocusTrapZone(
+    prevProps: officeDashUiDashFabricDashReactLib.libComponentsFocusTrapZoneFocusTrapZoneDotTypesMod.IFocusTrapZoneProps
+  ): scala.Unit = js.native
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MFocusTrapZone(
     nextProps: officeDashUiDashFabricDashReactLib.libComponentsFocusTrapZoneFocusTrapZoneDotTypesMod.IFocusTrapZoneProps

@@ -127,6 +127,8 @@ trait Anon_ACMACMPCA extends js.Object {
   val DirectoryServiceNs: Anon_DirectoryService = js.native
   var Discovery: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Discovery] = js.native
   val DiscoveryNs: Anon_Discovery = js.native
+  var DocDB: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.DocDB] = js.native
+  val DocDBNs: Anon_DocDB = js.native
   var DynamoDB: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.DynamoDB] = js.native
   val DynamoDBNs: Anon_ConverterDocumentClient = js.native
   var DynamoDBStreams: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.DynamoDBStreams] = js.native

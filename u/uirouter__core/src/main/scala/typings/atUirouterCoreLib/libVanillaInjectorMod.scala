@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object libVanillaInjectorMod extends js.Object {
   @JSName("$injector")
-  val $injector: js.Any = js.native
+  val $injector: atUirouterCoreLib.libCommonCoreservicesMod.$InjectorLike = js.native
 }
 

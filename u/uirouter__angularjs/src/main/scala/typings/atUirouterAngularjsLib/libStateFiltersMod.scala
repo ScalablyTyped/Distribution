@@ -12,5 +12,19 @@ object libStateFiltersMod extends js.Object {
   def $IncludedByStateFilter($state: atUirouterCoreLib.coreMod.StateService): js.Any = js.native
   @JSName("$IsStateFilter")
   def $IsStateFilter($state: atUirouterCoreLib.coreMod.StateService): js.Any = js.native
+  @JSName("$IncludedByStateFilter")
+  @js.native
+  object $IncludedByStateFilterNs extends js.Object {
+    @JSName("$inject")
+    var $inject: js.Array[java.lang.String] = js.native
+  }
+  
+  @JSName("$IsStateFilter")
+  @js.native
+  object $IsStateFilterNs extends js.Object {
+    @JSName("$inject")
+    var $inject: js.Array[java.lang.String] = js.native
+  }
+  
 }
 

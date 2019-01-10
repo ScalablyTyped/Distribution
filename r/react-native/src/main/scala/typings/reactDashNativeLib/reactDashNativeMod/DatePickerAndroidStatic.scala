@@ -10,11 +10,11 @@ trait DatePickerAndroidStatic extends js.Object {
   /**
     * A date has been selected.
     */
-  var dateSetAction: java.lang.String = js.native
+  var dateSetAction: reactDashNativeLib.reactDashNativeLibStrings.dateSetAction = js.native
   /**
     * The dialog has been dismissed.
     */
-  var dismissedAction: java.lang.String = js.native
+  var dismissedAction: reactDashNativeLib.reactDashNativeLibStrings.dismissedAction = js.native
   /**
     * Opens the standard Android date picker dialog.
     *

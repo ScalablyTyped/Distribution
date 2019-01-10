@@ -9,11 +9,11 @@ trait TimePickerAndroidStatic extends js.Object {
   /**
     * The dialog has been dismissed.
     */
-  var dismissedAction: java.lang.String
+  var dismissedAction: reactDashNativeLib.reactDashNativeLibStrings.dismissedAction
   /**
     * A time has been selected.
     */
-  var timeSetAction: java.lang.String
+  var timeSetAction: reactDashNativeLib.reactDashNativeLibStrings.timeSetAction
   /**
     * Opens the standard Android time picker dialog.
     *
@@ -33,6 +33,6 @@ trait TimePickerAndroidStatic extends js.Object {
     * still be resolved with action being `TimePickerAndroid.dismissedAction` and all the other keys
     * being undefined. **Always** check whether the `action` before reading the values.
     */
-  def open(options: reactDashNativeLib.TimePickerAndroidOpenOptions): js.Promise[reactDashNativeLib.Anon_Action]
+  def open(options: TimePickerAndroidOpenOptions): js.Promise[TimePickerAndroidOpenReturn]
 }
 

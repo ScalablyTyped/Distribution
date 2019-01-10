@@ -15,10 +15,8 @@ trait DatabaseScope extends js.Object {
   def changes(name: java.lang.String, params: DatabaseChangesParams, callback: Callback[DatabaseChangesResponse]): js.Promise[DatabaseChangesResponse] = js.native
   // http://docs.couchdb.org/en/latest/api/database/changes.html#get--db-_changes
   def changesAsStream(name: java.lang.String): requestLib.requestMod.requestNs.Request = js.native
-  def changesAsStream(name: java.lang.String, callback: Callback[DatabaseChangesResponse]): requestLib.requestMod.requestNs.Request = js.native
   // http://docs.couchdb.org/en/latest/api/database/compact.html#post--db-_compact
   def changesAsStream(name: java.lang.String, params: DatabaseChangesParams): requestLib.requestMod.requestNs.Request = js.native
-  def changesAsStream(name: java.lang.String, params: DatabaseChangesParams, callback: Callback[DatabaseChangesResponse]): requestLib.requestMod.requestNs.Request = js.native
   def compact(name: java.lang.String): js.Promise[OkResponse] = js.native
   def compact(name: java.lang.String, callback: Callback[OkResponse]): js.Promise[OkResponse] = js.native
   // http://docs.couchdb.org/en/latest/api/database/compact.html#post--db-_compact
@@ -44,7 +42,6 @@ trait DatabaseScope extends js.Object {
   def list(): js.Promise[js.Array[java.lang.String]] = js.native
   def list(callback: Callback[js.Array[java.lang.String]]): js.Promise[js.Array[java.lang.String]] = js.native
   def listAsStream(): requestLib.requestMod.requestNs.Request = js.native
-  def listAsStream(callback: Callback[js.Array[java.lang.String]]): requestLib.requestMod.requestNs.Request = js.native
   // http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate
   def replicate[D](source: java.lang.String, target: java.lang.String): js.Promise[DatabaseReplicateResponse] = js.native
   def replicate[D](source: java.lang.String, target: java.lang.String, callback: Callback[DatabaseReplicateResponse]): js.Promise[DatabaseReplicateResponse] = js.native

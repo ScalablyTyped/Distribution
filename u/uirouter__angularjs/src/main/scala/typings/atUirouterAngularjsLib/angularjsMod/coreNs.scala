@@ -364,9 +364,9 @@ object coreNs extends js.Object {
   }
   
   @JSName("$injector")
-  val $injector: js.Any = js.native
+  val $injector: atUirouterCoreLib.libCommonCoreservicesMod.$InjectorLike = js.native
   @JSName("$q")
-  val $q: js.Any = js.native
+  val $q: atUirouterCoreLib.libCommonCoreservicesMod.$QLike = js.native
   val NATIVE_INJECTOR_TOKEN: java.lang.String = js.native
   var defaultResolvePolicy: atUirouterCoreLib.libResolveInterfaceMod.ResolvePolicy = js.native
   var defaultTransOpts: atUirouterCoreLib.libTransitionInterfaceMod.TransitionOptions = js.native
@@ -534,7 +534,8 @@ object coreNs extends js.Object {
   ): org.scalablytyped.runtime.StringDictionary[U] = js.native
   def matchState(
     state: atUirouterCoreLib.libStateStateObjectMod.StateObject,
-    criterion: atUirouterCoreLib.libTransitionInterfaceMod.HookMatchCriterion
+    criterion: atUirouterCoreLib.libTransitionInterfaceMod.HookMatchCriterion,
+    transition: atUirouterCoreLib.libTransitionTransitionMod.Transition
   ): scala.Boolean = js.native
   def maxLength(max: scala.Double, str: java.lang.String): java.lang.String = js.native
   def memoryLocationPlugin(router: atUirouterCoreLib.libRouterMod.UIRouter): atUirouterCoreLib.libVanillaInterfaceMod.LocationPlugin = js.native

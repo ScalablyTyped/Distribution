@@ -59,22 +59,7 @@ trait Attachment extends js.Object {
     attname: java.lang.String,
     att: js.Any,
     contenttype: java.lang.String,
-    callback: Callback[DocumentInsertResponse]
-  ): requestLib.requestMod.requestNs.Request = js.native
-  def insertAsStream(
-    docname: java.lang.String,
-    attname: java.lang.String,
-    att: js.Any,
-    contenttype: java.lang.String,
     params: js.Any
-  ): requestLib.requestMod.requestNs.Request = js.native
-  def insertAsStream(
-    docname: java.lang.String,
-    attname: java.lang.String,
-    att: js.Any,
-    contenttype: java.lang.String,
-    params: js.Any,
-    callback: Callback[DocumentInsertResponse]
   ): requestLib.requestMod.requestNs.Request = js.native
 }
 

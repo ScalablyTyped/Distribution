@@ -9,34 +9,34 @@ import scala.scalajs.js.annotation._
 @js.native
 object stylesModMembers extends js.Object {
   val MuiThemeProvider: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.stylesMuiThemeProviderMod.MuiThemeProviderProps] = js.native
-  def createGenerateClassName(): js.Any = js.native
-  def createGenerateClassName(options: atMaterialDashUiCoreLib.stylesCreateGenerateClassNameMod.GenerateClassNameOptions): js.Any = js.native
+  def createGenerateClassName(): jssLib.jssMod.GenerateClassName[_] = js.native
+  def createGenerateClassName(options: atMaterialDashUiCoreLib.stylesCreateGenerateClassNameMod.GenerateClassNameOptions): jssLib.jssMod.GenerateClassName[_] = js.native
   def createMuiTheme(): atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme = js.native
   def createMuiTheme(options: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.ThemeOptions): atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme = js.native
   def createStyles[C /* <: java.lang.String */](styles: atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[C]): atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[C] = js.native
-  def jssPreset(): js.Any = js.native
-  def withStyles[ClassKey /* <: java.lang.String */, Options /* <: atMaterialDashUiCoreLib.stylesWithStylesMod.WithStylesOptions */](style: atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[ClassKey]): atMaterialDashUiCoreLib.coreMod.PropInjector[
+  def jssPreset(): jssLib.jssMod.JSSOptions = js.native
+  def withStyles[ClassKey /* <: java.lang.String */, Options /* <: atMaterialDashUiCoreLib.stylesWithStylesMod.WithStylesOptions[ClassKey] */](style: atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[ClassKey]): atMaterialDashUiCoreLib.coreMod.PropInjector[
     atMaterialDashUiCoreLib.stylesWithStylesMod.WithStyles[
       ClassKey, 
       /* import warning: ImportType.apply Failed type conversion: Options['withTheme'] */ js.Any
     ], 
     atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ClassKey]
   ] = js.native
-  def withStyles[ClassKey /* <: java.lang.String */, Options /* <: atMaterialDashUiCoreLib.stylesWithStylesMod.WithStylesOptions */](style: atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRulesCallback[ClassKey]): atMaterialDashUiCoreLib.coreMod.PropInjector[
+  def withStyles[ClassKey /* <: java.lang.String */, Options /* <: atMaterialDashUiCoreLib.stylesWithStylesMod.WithStylesOptions[ClassKey] */](style: atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRulesCallback[ClassKey]): atMaterialDashUiCoreLib.coreMod.PropInjector[
     atMaterialDashUiCoreLib.stylesWithStylesMod.WithStyles[
       ClassKey, 
       /* import warning: ImportType.apply Failed type conversion: Options['withTheme'] */ js.Any
     ], 
     atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ClassKey]
   ] = js.native
-  def withStyles[ClassKey /* <: java.lang.String */, Options /* <: atMaterialDashUiCoreLib.stylesWithStylesMod.WithStylesOptions */](style: atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRulesCallback[ClassKey], options: Options): atMaterialDashUiCoreLib.coreMod.PropInjector[
+  def withStyles[ClassKey /* <: java.lang.String */, Options /* <: atMaterialDashUiCoreLib.stylesWithStylesMod.WithStylesOptions[ClassKey] */](style: atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRulesCallback[ClassKey], options: Options): atMaterialDashUiCoreLib.coreMod.PropInjector[
     atMaterialDashUiCoreLib.stylesWithStylesMod.WithStyles[
       ClassKey, 
       /* import warning: ImportType.apply Failed type conversion: Options['withTheme'] */ js.Any
     ], 
     atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ClassKey]
   ] = js.native
-  def withStyles[ClassKey /* <: java.lang.String */, Options /* <: atMaterialDashUiCoreLib.stylesWithStylesMod.WithStylesOptions */](style: atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[ClassKey], options: Options): atMaterialDashUiCoreLib.coreMod.PropInjector[
+  def withStyles[ClassKey /* <: java.lang.String */, Options /* <: atMaterialDashUiCoreLib.stylesWithStylesMod.WithStylesOptions[ClassKey] */](style: atMaterialDashUiCoreLib.stylesWithStylesMod.StyleRules[ClassKey], options: Options): atMaterialDashUiCoreLib.coreMod.PropInjector[
     atMaterialDashUiCoreLib.stylesWithStylesMod.WithStyles[
       ClassKey, 
       /* import warning: ImportType.apply Failed type conversion: Options['withTheme'] */ js.Any

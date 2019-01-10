@@ -24,8 +24,7 @@ trait DocumentListParams extends js.Object {
   // Return only documents that match the specified key.
   var key: js.UndefOr[java.lang.String] = js.undefined
   // Return only documents that match the specified keys.
-  var keys: js.UndefOr[java.lang.String] = js.undefined
-   // This can be string[] too ???
+  var keys: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   // Limit the number of the returned documents to the specified number.
   var limit: js.UndefOr[scala.Double] = js.undefined
   // Skip this number of records before starting to return the results. Default is 0.

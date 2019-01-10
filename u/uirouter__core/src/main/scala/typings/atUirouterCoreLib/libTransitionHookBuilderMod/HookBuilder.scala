@@ -34,7 +34,8 @@ class HookBuilder protected () extends js.Object {
     */
   def getMatchingHooks(
     hookType: atUirouterCoreLib.libTransitionTransitionEventTypeMod.TransitionEventType,
-    treeChanges: atUirouterCoreLib.libTransitionInterfaceMod.TreeChanges
+    treeChanges: atUirouterCoreLib.libTransitionInterfaceMod.TreeChanges,
+    transition: atUirouterCoreLib.libTransitionTransitionMod.Transition
   ): js.Array[atUirouterCoreLib.libTransitionHookRegistryMod.RegisteredHook] = js.native
 }
 

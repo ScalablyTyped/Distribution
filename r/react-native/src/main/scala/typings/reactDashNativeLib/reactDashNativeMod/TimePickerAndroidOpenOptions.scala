@@ -1,5 +1,5 @@
 package typings
-package reactDashNativeLib
+package reactDashNativeLib.reactDashNativeMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`

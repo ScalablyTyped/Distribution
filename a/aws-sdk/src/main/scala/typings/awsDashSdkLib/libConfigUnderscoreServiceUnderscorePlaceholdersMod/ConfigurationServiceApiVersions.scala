@@ -66,6 +66,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var discovery: js.UndefOr[awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.apiVersion] = js.undefined
   var dlm: js.UndefOr[awsDashSdkLib.clientsDlmMod.DLMNs.apiVersion] = js.undefined
   var dms: js.UndefOr[awsDashSdkLib.clientsDmsMod.DMSNs.apiVersion] = js.undefined
+  var docdb: js.UndefOr[awsDashSdkLib.clientsDocdbMod.DocDBNs.apiVersion] = js.undefined
   var dynamodb: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.apiVersion] = js.undefined
   var dynamodbstreams: js.UndefOr[awsDashSdkLib.clientsDynamodbstreamsMod.DynamoDBStreamsNs.apiVersion] = js.undefined
   var ec2: js.UndefOr[awsDashSdkLib.clientsEc2Mod.EC2Ns.apiVersion] = js.undefined

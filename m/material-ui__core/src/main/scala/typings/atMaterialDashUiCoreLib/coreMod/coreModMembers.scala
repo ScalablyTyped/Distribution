@@ -78,6 +78,7 @@ object coreModMembers extends js.Object {
   val InputBase: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseProps] = js.native
   val InputLabel: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputlabelInputLabelMod.InputLabelProps] = js.native
   val LinearProgress: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressProps] = js.native
+  val Link: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.linkLinkMod.LinkProps] = js.native
   val List: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listListMod.ListProps] = js.native
   val ListItem: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listitemListItemMod.ListItemProps] = js.native
   val ListItemAvatar: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listitemavatarListItemAvatarMod.ListItemAvatarProps] = js.native

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object libVanillaModMembers extends js.Object {
   @JSName("$injector")
-  val $injector: js.Any = js.native
+  val $injector: atUirouterCoreLib.libCommonCoreservicesMod.$InjectorLike = js.native
   @JSName("$q")
-  val $q: js.Any = js.native
+  val $q: atUirouterCoreLib.libCommonCoreservicesMod.$QLike = js.native
   def buildUrl(loc: atUirouterCoreLib.libCommonCoreservicesMod.LocationServices): java.lang.String = js.native
   def getParams(queryString: java.lang.String): js.Any = js.native
   def hashLocationPlugin(router: atUirouterCoreLib.libRouterMod.UIRouter): atUirouterCoreLib.libVanillaInterfaceMod.LocationPlugin = js.native

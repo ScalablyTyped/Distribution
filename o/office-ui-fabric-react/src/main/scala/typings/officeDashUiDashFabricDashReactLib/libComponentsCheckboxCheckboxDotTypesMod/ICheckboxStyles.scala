@@ -15,6 +15,11 @@ trait ICheckboxStyles extends js.Object {
     */
   var checkmark: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IStyle] = js.undefined
   /**
+    * INTERNAL: This is mostly an internal implementation detail which you should avoid styling.
+    * This refers to the <input type="checkbox"> element that is typically hidden and not rendered on screen.
+    */
+  var input: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IStyle] = js.undefined
+  /**
     * Style for the label part (contains the customized checkbox + text) when enabled.
     */
   var label: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IStyle] = js.undefined

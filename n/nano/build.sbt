@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nano"
-version := "7.1.1-1ccdd1"
+version := "8.0.0-02e04c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

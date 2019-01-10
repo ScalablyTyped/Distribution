@@ -32,6 +32,7 @@ package object reactDashNativeMod {
   type ComponentProvider = js.Function0[reactLib.reactMod.ReactNs.ComponentType[js.Any]]
   type ConnectionType = reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.wifi | reactDashNativeLib.reactDashNativeLibStrings.cell | reactDashNativeLib.reactDashNativeLibStrings.unknown | reactDashNativeLib.reactDashNativeLibStrings.NONE | reactDashNativeLib.reactDashNativeLibStrings.MOBILE | reactDashNativeLib.reactDashNativeLibStrings.WIFI | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_MMS | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_SUPL | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_DUN | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_HIPRI | reactDashNativeLib.reactDashNativeLibStrings.WIMAX | reactDashNativeLib.reactDashNativeLibStrings.BLUETOOTH | reactDashNativeLib.reactDashNativeLibStrings.DUMMY | reactDashNativeLib.reactDashNativeLibStrings.ETHERNET | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_FOTA | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_IMS | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_CBS | reactDashNativeLib.reactDashNativeLibStrings.WIFI_P2P | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_IA | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_EMERGENCY | reactDashNativeLib.reactDashNativeLibStrings.PROXY | reactDashNativeLib.reactDashNativeLibStrings.VPN | reactDashNativeLib.reactDashNativeLibStrings.UNKNOWN
   type DatePickerAndroid = DatePickerAndroidStatic
+  type DatePickerAndroidOpenReturn = DatePickerAndroidDateSetAction | DatePickerAndroidDismissedAction
   type DatePickerIOSComponent = reactLib.reactMod.Component[DatePickerIOSProps, js.Object, js.Any]
   type DrawerLayoutAndroidComponent = reactLib.reactMod.Component[DrawerLayoutAndroidProps, js.Object, js.Any]
   type DrawerSlideEvent = NativeSyntheticEvent[NativeTouchEvent]
@@ -222,6 +223,7 @@ package object reactDashNativeMod {
     */
   type TextInputComponent = reactLib.reactMod.Component[TextInputProps, js.Object, js.Any]
   type TimePickerAndroid = TimePickerAndroidStatic
+  type TimePickerAndroidOpenReturn = TimePickerAndroidTimeSetAction | TimePickerAndroidDismissedAction
   type ToastAndroid = ToastAndroidStatic
   /**
     * React component that wraps the Android-only [`Toolbar` widget][0]. A Toolbar can display a logo,

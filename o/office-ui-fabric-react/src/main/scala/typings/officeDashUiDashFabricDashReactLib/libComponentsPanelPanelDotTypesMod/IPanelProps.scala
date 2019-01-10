@@ -43,9 +43,9 @@ trait IPanelProps
     officeDashUiDashFabricDashReactLib.libComponentsFocusTrapZoneFocusTrapZoneDotTypesMod.IFocusTrapZoneProps
   ] = js.undefined
   /**
-    * Indicates whether Panel should force focus inside the focus trap zone
+    * Indicates whether Panel should force focus inside the focus trap zone.
+    * If not explicitly specified, behavior aligns with FocusTrapZone's default behavior.
     * Deprecated, use `focusTrapZoneProps`.
-    * @defaultvalue true
     * @deprecated Use `focusTrapZoneProps`.
     */
   var forceFocusInsideTrap: js.UndefOr[scala.Boolean] = js.undefined

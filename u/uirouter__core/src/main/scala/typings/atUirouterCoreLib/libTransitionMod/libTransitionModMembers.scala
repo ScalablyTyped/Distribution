@@ -21,7 +21,8 @@ object libTransitionModMembers extends js.Object {
   ] = js.native
   def matchState(
     state: atUirouterCoreLib.libStateStateObjectMod.StateObject,
-    criterion: atUirouterCoreLib.libTransitionInterfaceMod.HookMatchCriterion
+    criterion: atUirouterCoreLib.libTransitionInterfaceMod.HookMatchCriterion,
+    transition: atUirouterCoreLib.libTransitionTransitionMod.Transition
   ): scala.Boolean = js.native
 }
 

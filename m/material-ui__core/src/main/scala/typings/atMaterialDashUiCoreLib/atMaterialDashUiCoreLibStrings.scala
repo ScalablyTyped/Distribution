@@ -106,6 +106,9 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait alternativeLabel extends js.Object
   
   @js.native
+  sealed trait always extends js.Object
+  
+  @js.native
   sealed trait anchorEl extends js.Object
   
   @js.native
@@ -697,6 +700,9 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait inherit extends js.Object
   
   @js.native
+  sealed trait `inline` extends js.Object
+  
+  @js.native
   sealed trait input extends js.Object
   
   @js.native
@@ -1285,6 +1291,15 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait underline extends js.Object
   
   @js.native
+  sealed trait underlineAlways extends js.Object
+  
+  @js.native
+  sealed trait underlineHover extends js.Object
+  
+  @js.native
+  sealed trait underlineNone extends js.Object
+  
+  @js.native
   sealed trait unmountOnExit extends js.Object
   
   @js.native
@@ -1350,6 +1365,7 @@ object atMaterialDashUiCoreLibStrings {
   def alignLeft: alignLeft = "alignLeft".asInstanceOf[alignLeft]
   def alignRight: alignRight = "alignRight".asInstanceOf[alignRight]
   def alternativeLabel: alternativeLabel = "alternativeLabel".asInstanceOf[alternativeLabel]
+  def always: always = "always".asInstanceOf[always]
   def anchorEl: anchorEl = "anchorEl".asInstanceOf[anchorEl]
   def anchorOriginBottomCenter: anchorOriginBottomCenter = "anchorOriginBottomCenter".asInstanceOf[anchorOriginBottomCenter]
   def anchorOriginBottomLeft: anchorOriginBottomLeft = "anchorOriginBottomLeft".asInstanceOf[anchorOriginBottomLeft]
@@ -1547,6 +1563,7 @@ object atMaterialDashUiCoreLibStrings {
   def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
   def indicator: indicator = "indicator".asInstanceOf[indicator]
   def inherit: inherit = "inherit".asInstanceOf[inherit]
+  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   def input: input = "input".asInstanceOf[input]
   def inputAdornedEnd: inputAdornedEnd = "inputAdornedEnd".asInstanceOf[inputAdornedEnd]
   def inputAdornedStart: inputAdornedStart = "inputAdornedStart".asInstanceOf[inputAdornedStart]
@@ -1743,6 +1760,9 @@ object atMaterialDashUiCoreLibStrings {
   def touchRipple: touchRipple = "touchRipple".asInstanceOf[touchRipple]
   def transition: transition = "transition".asInstanceOf[transition]
   def underline: underline = "underline".asInstanceOf[underline]
+  def underlineAlways: underlineAlways = "underlineAlways".asInstanceOf[underlineAlways]
+  def underlineHover: underlineHover = "underlineHover".asInstanceOf[underlineHover]
+  def underlineNone: underlineNone = "underlineNone".asInstanceOf[underlineNone]
   def unmountOnExit: unmountOnExit = "unmountOnExit".asInstanceOf[unmountOnExit]
   def up: up = "up".asInstanceOf[up]
   def vertical: vertical = "vertical".asInstanceOf[vertical]

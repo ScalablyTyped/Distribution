@@ -17,7 +17,10 @@ package object libTransitionInterfaceMod {
     /* options */ js.UndefOr[HookRegOptions], 
     js.Function
   ]
-  type IStateMatch = atUirouterCoreLib.libCommonCommonMod.Predicate[atUirouterCoreLib.libStateStateObjectMod.StateObject]
+  type IStateMatch = atUirouterCoreLib.libCommonCommonMod.PredicateBinary[
+    atUirouterCoreLib.libStateStateObjectMod.StateObject, 
+    atUirouterCoreLib.libTransitionTransitionMod.Transition
+  ]
   type TransitionCreateHookFn = js.Function1[
     /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
     scala.Unit

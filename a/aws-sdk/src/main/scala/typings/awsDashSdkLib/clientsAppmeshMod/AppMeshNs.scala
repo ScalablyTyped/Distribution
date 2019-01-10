@@ -275,33 +275,35 @@ object AppMeshNs extends js.Object {
       * The number of consecutive successful health checks that must occur before declaring
       listener healthy.
       */
-    var healthyThreshold: js.UndefOr[NonNegativeInt] = js.undefined
+    var healthyThreshold: HealthCheckThreshold
     /**
       * The time period in milliseconds between each health check execution.
       */
-    var intervalMillis: js.UndefOr[DurationMillis] = js.undefined
+    var intervalMillis: HealthCheckIntervalMillis
     /**
-      * The destination path for the health check request.
+      * The destination path for the health check request. This is only required if the
+      specified protocol is HTTP; if the protocol is TCP, then this parameter is ignored.
       */
     var path: js.UndefOr[String] = js.undefined
     /**
-      * The destination port for the health check request.
+      * The destination port for the health check request. This port must match the port defined
+      in the PortMapping for the listener.
       */
     var port: js.UndefOr[PortNumber] = js.undefined
     /**
       * The protocol for the health check request.
       */
-    var protocol: js.UndefOr[PortProtocol] = js.undefined
+    var protocol: PortProtocol
     /**
       * The amount of time to wait when receiving a response from the health check, in
       milliseconds.
       */
-    var timeoutMillis: js.UndefOr[DurationMillis] = js.undefined
+    var timeoutMillis: HealthCheckTimeoutMillis
     /**
       * The number of consecutive failed health checks that must occur before declaring a
       virtual node unhealthy. 
       */
-    var unhealthyThreshold: js.UndefOr[NonNegativeInt] = js.undefined
+    var unhealthyThreshold: HealthCheckThreshold
   }
   
   trait HttpRoute extends js.Object {
@@ -502,9 +504,6 @@ object AppMeshNs extends js.Object {
   trait Listener extends js.Object {
     /**
       * The health check information for the listener.
-      
-      Listener health checks are not available during the App Mesh preview.
-      
       */
     var healthCheck: js.UndefOr[HealthCheckPolicy] = js.undefined
     /**
@@ -574,11 +573,11 @@ object AppMeshNs extends js.Object {
       */
     var arn: js.UndefOr[Arn] = js.undefined
     /**
-      * The Unix epoch timestamp in seconds for when the cluster was created.
+      * The Unix epoch timestamp in seconds for when the resource was created.
       */
     var createdAt: js.UndefOr[Timestamp] = js.undefined
     /**
-      * The Unix epoch timestamp in seconds for when the cluster was last updated.
+      * The Unix epoch timestamp in seconds for when the resource was last updated.
       */
     var lastUpdatedAt: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -919,7 +918,7 @@ object AppMeshNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteVirtualRouterOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Describes an existing cluster.
+      * Describes an existing service mesh.
       */
     def describeMesh(): awsDashSdkLib.libRequestMod.Request[DescribeMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeMesh(
@@ -930,7 +929,7 @@ object AppMeshNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Describes an existing cluster.
+      * Describes an existing service mesh.
       */
     def describeMesh(params: DescribeMeshInput): awsDashSdkLib.libRequestMod.Request[DescribeMeshOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeMesh(
@@ -1385,7 +1384,9 @@ object AppMeshNs extends js.Object {
   type Arn = java.lang.String
   type Backends = js.Array[ServiceName]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type DurationMillis = scala.Double
+  type HealthCheckIntervalMillis = scala.Double
+  type HealthCheckThreshold = scala.Double
+  type HealthCheckTimeoutMillis = scala.Double
   type ListMeshesLimit = scala.Double
   type ListRoutesLimit = scala.Double
   type ListVirtualNodesLimit = scala.Double
@@ -1394,7 +1395,6 @@ object AppMeshNs extends js.Object {
   type Long = scala.Double
   type MeshList = js.Array[MeshRef]
   type MeshStatusCode = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.INACTIVE | java.lang.String
-  type NonNegativeInt = scala.Double
   type PercentInt = scala.Double
   type PortNumber = scala.Double
   type PortProtocol = awsDashSdkLib.awsDashSdkLibStrings.http | awsDashSdkLib.awsDashSdkLibStrings.tcp | java.lang.String

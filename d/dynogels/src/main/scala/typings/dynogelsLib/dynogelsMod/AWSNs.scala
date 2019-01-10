@@ -548,6 +548,15 @@ object AWSNs extends js.Object {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
+  class DocDB ()
+    extends awsDashSdkLib.awsDashSdkMod.DocDB {
+    def this(options: awsDashSdkLib.clientsDocdbMod.DocDBNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class DynamoDB ()
     extends awsDashSdkLib.awsDashSdkMod.DynamoDB {
     def this(options: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ClientConfiguration) = this()
@@ -2873,6 +2882,27 @@ object AWSNs extends js.Object {
     @JSName("Discovery")
     @js.native
     object DiscoveryNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("DocDB")
+  @js.native
+  object DocDBNs extends js.Object {
+    @js.native
+    /**
+      * Constructs a service object. This object has one method for each API operation.
+      */
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.DocDBNs.Types {
+      def this(options: awsDashSdkLib.clientsDocdbMod.DocDBNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("DocDB")
+    @js.native
+    object DocDBNs extends js.Object {
       val TypesNs: this.type = js.native
     }
     

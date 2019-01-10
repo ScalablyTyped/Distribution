@@ -19,6 +19,7 @@ import scala.scalajs.js.annotation._
   var headlineMapping: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.TypographyProps with js.Any
   ] = js.undefined
+  var `inline`: js.UndefOr[scala.Boolean] = js.undefined
   var noWrap: js.UndefOr[scala.Boolean] = js.undefined
   var paragraph: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

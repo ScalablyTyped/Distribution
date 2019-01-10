@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait PluginContext extends js.Object {
+trait PluginContext extends MinimalPluginContext {
   var cache: PluginCache = js.native
   @JSName("isExternal")
   var isExternal_Original: IsExternal = js.native
-  var meta: PluginContextMeta = js.native
   var moduleIds: nodeLib.IterableIterator[java.lang.String] = js.native
   @JSName("resolveId")
   var resolveId_Original: ResolveIdHook = js.native
