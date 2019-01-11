@@ -25,6 +25,9 @@ class Worksheet ()
     * [Api set: ExcelApi 1.1]
     */
   val charts: ChartCollection = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Worksheet: RequestContext = js.native
   /**
     *
     * Gets an object that can be used to manipulate frozen panes on the worksheet. Read-only.
@@ -363,6 +366,10 @@ class Worksheet ()
   ): scala.Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Worksheet): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.Worksheet object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.WorksheetData = js.native
 }
 

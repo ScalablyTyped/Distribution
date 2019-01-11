@@ -46,7 +46,7 @@ object AggregationFunction extends js.Object {
   
   /**
     *
-    * Aggregate using the count of numbers in the data, equivalent to the COUNTA function.
+    * Aggregate using the count of numbers in the data, equivalent to the COUNT function.
     *
     */
   @js.native

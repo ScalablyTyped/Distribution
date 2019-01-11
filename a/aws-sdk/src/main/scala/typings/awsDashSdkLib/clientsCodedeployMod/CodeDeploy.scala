@@ -131,7 +131,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *   This method works, but is considered deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. 
+    *   This method works, but is deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. 
     */
   def batchGetDeploymentInstances(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentInstancesOutput, 
@@ -148,7 +148,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *   This method works, but is considered deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. 
+    *   This method works, but is deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. 
     */
   def batchGetDeploymentInstances(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentInstancesInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentInstancesOutput, 
@@ -166,7 +166,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Returns an array of targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances.   The type of targets returned depends on the deployment's compute platform:     EC2/On-premises - Information about EC2 instance targets.     AWS Lambda - Information about Lambda functions targets.     Amazon ECS - Information about ECS service targets.   
+    *  Returns an array of targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances.   The type of targets returned depends on the deployment's compute platform:     EC2/On-premises: Information about EC2 instance targets.     AWS Lambda: Information about Lambda functions targets.     Amazon ECS: Information about Amazon ECS service targets.   
     */
   def batchGetDeploymentTargets(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentTargetsOutput, 
@@ -183,7 +183,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Returns an array of targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances.   The type of targets returned depends on the deployment's compute platform:     EC2/On-premises - Information about EC2 instance targets.     AWS Lambda - Information about Lambda functions targets.     Amazon ECS - Information about ECS service targets.   
+    *  Returns an array of targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances.   The type of targets returned depends on the deployment's compute platform:     EC2/On-premises: Information about EC2 instance targets.     AWS Lambda: Information about Lambda functions targets.     Amazon ECS: Information about Amazon ECS service targets.   
     */
   def batchGetDeploymentTargets(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentTargetsInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.BatchGetDeploymentTargetsOutput, 
@@ -391,7 +391,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a deployment group to which application revisions will be deployed.
+    * Creates a deployment group to which application revisions are deployed.
     */
   def createDeploymentGroup(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.CreateDeploymentGroupOutput, 
@@ -408,7 +408,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a deployment group to which application revisions will be deployed.
+    * Creates a deployment group to which application revisions are deployed.
     */
   def createDeploymentGroup(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.CreateDeploymentGroupInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.CreateDeploymentGroupOutput, 
@@ -856,7 +856,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the applications registered with the applicable IAM user or AWS account.
+    * Lists the applications registered with the IAM user or AWS account.
     */
   def listApplications(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListApplicationsOutput, 
@@ -873,7 +873,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the applications registered with the applicable IAM user or AWS account.
+    * Lists the applications registered with the IAM user or AWS account.
     */
   def listApplications(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListApplicationsInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListApplicationsOutput, 
@@ -891,7 +891,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the deployment configurations with the applicable IAM user or AWS account.
+    * Lists the deployment configurations with the IAM user or AWS account.
     */
   def listDeploymentConfigs(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentConfigsOutput, 
@@ -908,7 +908,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the deployment configurations with the applicable IAM user or AWS account.
+    * Lists the deployment configurations with the IAM user or AWS account.
     */
   def listDeploymentConfigs(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentConfigsInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentConfigsOutput, 
@@ -926,7 +926,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the deployment groups for an application registered with the applicable IAM user or AWS account.
+    * Lists the deployment groups for an application registered with the IAM user or AWS account.
     */
   def listDeploymentGroups(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentGroupsOutput, 
@@ -943,7 +943,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the deployment groups for an application registered with the applicable IAM user or AWS account.
+    * Lists the deployment groups for an application registered with the IAM user or AWS account.
     */
   def listDeploymentGroups(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentGroupsInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentGroupsOutput, 
@@ -961,7 +961,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *   The newer BatchGetDeploymentTargets should be used instead because it works with all compute types. ListDeploymentInstances throws an exception if it is used with a compute platform other than EC2/On-premises or AWS Lambda.    Lists the instance for a deployment associated with the applicable IAM user or AWS account. 
+    *   The newer BatchGetDeploymentTargets should be used instead because it works with all compute types. ListDeploymentInstances throws an exception if it is used with a compute platform other than EC2/On-premises or AWS Lambda.    Lists the instance for a deployment associated with the IAM user or AWS account. 
     */
   def listDeploymentInstances(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentInstancesOutput, 
@@ -978,7 +978,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *   The newer BatchGetDeploymentTargets should be used instead because it works with all compute types. ListDeploymentInstances throws an exception if it is used with a compute platform other than EC2/On-premises or AWS Lambda.    Lists the instance for a deployment associated with the applicable IAM user or AWS account. 
+    *   The newer BatchGetDeploymentTargets should be used instead because it works with all compute types. ListDeploymentInstances throws an exception if it is used with a compute platform other than EC2/On-premises or AWS Lambda.    Lists the instance for a deployment associated with the IAM user or AWS account. 
     */
   def listDeploymentInstances(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentInstancesInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentInstancesOutput, 
@@ -1031,7 +1031,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the deployments in a deployment group for an application registered with the applicable IAM user or AWS account.
+    * Lists the deployments in a deployment group for an application registered with the IAM user or AWS account.
     */
   def listDeployments(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentsOutput, 
@@ -1048,7 +1048,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the deployments in a deployment group for an application registered with the applicable IAM user or AWS account.
+    * Lists the deployments in a deployment group for an application registered with the IAM user or AWS account.
     */
   def listDeployments(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentsInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListDeploymentsOutput, 
@@ -1101,7 +1101,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Gets a list of names for one or more on-premises instances. Unless otherwise specified, both registered and deregistered on-premises instance names will be listed. To list only registered or deregistered on-premises instance names, use the registration status parameter.
+    * Gets a list of names for one or more on-premises instances. Unless otherwise specified, both registered and deregistered on-premises instance names are listed. To list only registered or deregistered on-premises instance names, use the registration status parameter.
     */
   def listOnPremisesInstances(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListOnPremisesInstancesOutput, 
@@ -1118,7 +1118,7 @@ trait CodeDeploy
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Gets a list of names for one or more on-premises instances. Unless otherwise specified, both registered and deregistered on-premises instance names will be listed. To list only registered or deregistered on-premises instance names, use the registration status parameter.
+    * Gets a list of names for one or more on-premises instances. Unless otherwise specified, both registered and deregistered on-premises instance names are listed. To list only registered or deregistered on-premises instance names, use the registration status parameter.
     */
   def listOnPremisesInstances(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListOnPremisesInstancesInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.ListOnPremisesInstancesOutput, 
@@ -1216,14 +1216,14 @@ trait CodeDeploy
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * In a blue/green deployment, overrides any specified wait time and starts terminating instances immediately after the traffic routing is completed.
+    * In a blue/green deployment, overrides any specified wait time and starts terminating instances immediately after the traffic routing is complete.
     */
   def skipWaitTimeForInstanceTermination(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def skipWaitTimeForInstanceTermination(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * In a blue/green deployment, overrides any specified wait time and starts terminating instances immediately after the traffic routing is completed.
+    * In a blue/green deployment, overrides any specified wait time and starts terminating instances immediately after the traffic routing is complete.
     */
   def skipWaitTimeForInstanceTermination(params: awsDashSdkLib.clientsCodedeployMod.CodeDeployNs.SkipWaitTimeForInstanceTerminationInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def skipWaitTimeForInstanceTermination(

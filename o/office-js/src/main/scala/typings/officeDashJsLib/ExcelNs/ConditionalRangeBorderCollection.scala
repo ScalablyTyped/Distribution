@@ -22,6 +22,9 @@ class ConditionalRangeBorderCollection ()
     * [Api set: ExcelApi 1.6]
     */
   val bottom: ConditionalRangeBorder = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ConditionalRangeBorderCollection: RequestContext = js.native
   /**
     *
     * Number of border objects in the collection. Read-only.
@@ -108,6 +111,10 @@ class ConditionalRangeBorderCollection ()
   def load(option: java.lang.String): ConditionalRangeBorderCollection = js.native
   def load(option: js.Array[java.lang.String]): ConditionalRangeBorderCollection = js.native
   def load(option: officeDashJsLib.OfficeExtensionNs.LoadOption): ConditionalRangeBorderCollection = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original `Excel.ConditionalRangeBorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeBorderCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.ConditionalRangeBorderCollectionData = js.native
 }
 

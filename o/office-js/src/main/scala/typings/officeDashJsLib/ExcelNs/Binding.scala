@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Binding ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Binding: RequestContext = js.native
   /**
     *
     * Represents binding identifier. Read-only.
@@ -95,6 +98,10 @@ class Binding ()
   def load(option: js.Array[java.lang.String]): Binding = js.native
   def load(option: officeDashJsLib.Anon_Expand): Binding = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.BindingLoadOptions): Binding = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.Binding object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.BindingData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.BindingData = js.native
 }
 

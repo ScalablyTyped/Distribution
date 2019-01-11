@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class RangeBorderCollection ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_RangeBorderCollection: RequestContext = js.native
   /**
     *
     * Number of border objects in the collection. Read-only.
@@ -88,6 +91,10 @@ class RangeBorderCollection ()
   def load(option: java.lang.String): RangeBorderCollection = js.native
   def load(option: js.Array[java.lang.String]): RangeBorderCollection = js.native
   def load(option: officeDashJsLib.OfficeExtensionNs.LoadOption): RangeBorderCollection = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original `Excel.RangeBorderCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RangeBorderCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.RangeBorderCollectionData = js.native
 }
 

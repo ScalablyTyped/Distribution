@@ -14,10 +14,10 @@ trait ToastOptions
   		 */
   var duration: js.UndefOr[scala.Double] = js.undefined
   /**
-  		 * 图标，只支持"success"、"loading"
+  		 * 图标，只支持 "success", "loading", "none"
   		 */
   var icon: js.UndefOr[
-    weixinDashAppLib.weixinDashAppLibStrings.success | weixinDashAppLib.weixinDashAppLibStrings.loading
+    weixinDashAppLib.weixinDashAppLibStrings.success | weixinDashAppLib.weixinDashAppLibStrings.loading | weixinDashAppLib.weixinDashAppLibStrings.none
   ] = js.undefined
   /**
   		 * 自定义图标的本地路径，image 的优先级高于 icon

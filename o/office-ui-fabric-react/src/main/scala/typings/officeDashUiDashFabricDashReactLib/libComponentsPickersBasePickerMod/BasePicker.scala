@@ -18,20 +18,22 @@ class BasePicker[T, P /* <: officeDashUiDashFabricDashReactLib.libComponentsPick
   var _ariaMap: IPickerAriaIds = js.native
   var _id: js.Any = js.native
   var currentPromise: js.UndefOr[js.Thenable[_]] = js.native
-  @JSName("focusZone")
-  var focusZone_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentCurrentValue = js.native
-  @JSName("input")
-  var input_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentCurrent = js.native
+  var focusZone: reactLib.reactMod.ReactNs.RefObject[
+    officeDashUiDashFabricDashReactLib.libComponentsFocusZoneFocusZoneDotTypesMod.IFocusZone
+  ] = js.native
+  var input: reactLib.reactMod.ReactNs.RefObject[
+    officeDashUiDashFabricDashReactLib.libComponentsAutofillAutofillDotTypesMod.IAutofill
+  ] = js.native
   /** Gets the current value of the input. */
   /* CompleteClass */
   override var items: js.UndefOr[js.Array[T]] = js.native
   @JSName("items")
   val items_BasePicker: js.Array[T] = js.native
-  @JSName("root")
-  var root_Original: officeDashUiDashFabricDashReactLib.Anon_Component = js.native
+  var root: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement] = js.native
   var selection: officeDashUiDashFabricDashReactLib.libUtilitiesSelectionMod.Selection = js.native
-  @JSName("suggestionElement")
-  var suggestionElement_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentCurrentValueNull[T] = js.native
+  var suggestionElement: reactLib.reactMod.ReactNs.RefObject[
+    officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestions[T]
+  ] = js.native
   var suggestionStore: officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.SuggestionsController[T] = js.native
   /* private */ def _getTextFromItem(item: js.Any): js.Any = js.native
   /* private */ def _getTextFromItem(item: js.Any, currentValue: js.Any): js.Any = js.native
@@ -72,15 +74,9 @@ class BasePicker[T, P /* <: officeDashUiDashFabricDashReactLib.libComponentsPick
   /** Set focus to the input */
   /* CompleteClass */
   override def focusInput(): scala.Unit = js.native
-  /* protected */ def focusZone(): scala.Unit = js.native
-  /* protected */ def focusZone(
-    component: officeDashUiDashFabricDashReactLib.libComponentsFocusZoneFocusZoneDotTypesMod.IFocusZone
-  ): scala.Unit = js.native
   /* protected */ def getActiveDescendant(): js.UndefOr[java.lang.String] = js.native
   /* protected */ def getSuggestionsAlert(): js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.native
   /* protected */ def getSuggestionsAlert(suggestionAlertClassName: java.lang.String): js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.native
-  /* protected */ def input(): scala.Unit = js.native
-  /* protected */ def input(component: officeDashUiDashFabricDashReactLib.libComponentsAutofillAutofillDotTypesMod.IAutofill): scala.Unit = js.native
   /* protected */ def onBackspace(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
   /* protected */ def onChange(): scala.Unit = js.native
   /* protected */ def onChange(items: js.Array[T]): scala.Unit = js.native
@@ -125,12 +121,6 @@ class BasePicker[T, P /* <: officeDashUiDashFabricDashReactLib.libComponentsPick
   /* protected */ def resetFocus(): scala.Unit = js.native
   /* protected */ def resetFocus(index: scala.Double): scala.Unit = js.native
   /* protected */ def resolveNewValue(updatedValue: java.lang.String, suggestions: js.Array[T]): scala.Unit = js.native
-  /* protected */ def root(): scala.Unit = js.native
-  /* protected */ def root(component: reactLib.HTMLDivElement): scala.Unit = js.native
-  /* protected */ def suggestionElement(): scala.Unit = js.native
-  /* protected */ def suggestionElement(
-    component: officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsMod.Suggestions[T]
-  ): scala.Unit = js.native
   /* protected */ def updateSuggestions(suggestions: js.Array[_]): scala.Unit = js.native
   /* protected */ def updateSuggestionsList(suggestions: js.Array[T]): scala.Unit = js.native
   /* protected */ def updateSuggestionsList(suggestions: js.Array[T], updatedValue: java.lang.String): scala.Unit = js.native

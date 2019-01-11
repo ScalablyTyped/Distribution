@@ -171,12 +171,5 @@ trait ChartData extends js.Object {
     * [Api set: ExcelApi 1.1]
     */
   var width: js.UndefOr[scala.Double] = js.undefined
-  /**
-    *
-    * The worksheet containing the current chart. Read-only.
-    *
-    * [Api set: ExcelApi 1.2]
-    */
-  var worksheet: js.UndefOr[WorksheetData] = js.undefined
 }
 

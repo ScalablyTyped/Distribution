@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fork-ts-checker-webpack-plugin"
-version := "0.5.2-8ee779"
+version := "0.5.2-d7c6fe"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -29,7 +29,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-729b1c",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-e50996",
   "org.scalablytyped" %%% "tslib" % "1.9.3-d3fc19",
-  "org.scalablytyped" %%% "tslint" % "5.12.0-3298c9",
+  "org.scalablytyped" %%% "tslint" % "5.12.1-e40c73",
   "org.scalablytyped" %%% "tsutils" % "2.29.0-b5a7fd",
   "org.scalablytyped" %%% "typescript" % "3.2.2-12aee5",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-bd0e3f",

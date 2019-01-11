@@ -45,5 +45,13 @@ object geoDashViewportModMembers extends js.Object {
     maxzoom: scala.Double,
     tileSize: scala.Double
   ): GeoViewport = js.native
+  def viewport(
+    bounds: BoundingBox,
+    dimensions: js.Tuple2[scala.Double, scala.Double],
+    minzoom: scala.Double,
+    maxzoom: scala.Double,
+    tileSize: scala.Double,
+    allowFloat: scala.Boolean
+  ): GeoViewport = js.native
 }
 

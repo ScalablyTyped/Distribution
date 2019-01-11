@@ -14,26 +14,18 @@ class Suggestions[T] protected ()
     ] {
   def this(suggestionsProps: officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionsProps[T]) = this()
   var SuggestionsItemOfProperType: js.Any = js.native
+  var _classNames: js.Any = js.native
   var _forceResolve: js.Any = js.native
-  @JSName("_forceResolveButton")
-  var _forceResolveButton_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentCurrentValueIButton = js.native
+  var _forceResolveButton: reactLib.reactMod.ReactNs.RefObject[officeDashUiDashFabricDashReactLib.libComponentsButtonButtonDotTypesMod.IButton] = js.native
   var _getMoreResults: js.Any = js.native
   var _onClickTypedSuggestionsItem: js.Any = js.native
   var _onRemoveTypedSuggestionsItem: js.Any = js.native
   var _refocusOnSuggestions: js.Any = js.native
-  @JSName("_searchForMoreButton")
-  var _searchForMoreButton_Original: officeDashUiDashFabricDashReactLib.Anon_ComponentCurrentValueIButton = js.native
-  @JSName("_selectedElement")
-  var _selectedElement_Original: officeDashUiDashFabricDashReactLib.Anon_Component = js.native
+  var _searchForMoreButton: reactLib.reactMod.ReactNs.RefObject[officeDashUiDashFabricDashReactLib.libComponentsButtonButtonDotTypesMod.IButton] = js.native
+  var _selectedElement: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement] = js.native
   var _shouldShowForceResolve: js.Any = js.native
   var activeSelectedElement: js.Any = js.native
-  /* protected */ def _forceResolveButton(): scala.Unit = js.native
-  /* protected */ def _forceResolveButton(component: officeDashUiDashFabricDashReactLib.libComponentsButtonButtonDotTypesMod.IButton): scala.Unit = js.native
   /* private */ def _renderSuggestions(): js.Any = js.native
-  /* protected */ def _searchForMoreButton(): scala.Unit = js.native
-  /* protected */ def _searchForMoreButton(component: officeDashUiDashFabricDashReactLib.libComponentsButtonButtonDotTypesMod.IButton): scala.Unit = js.native
-  /* protected */ def _selectedElement(): scala.Unit = js.native
-  /* protected */ def _selectedElement(component: reactLib.HTMLDivElement): scala.Unit = js.native
   @JSName("componentDidMount")
   def componentDidMount_MSuggestions(): scala.Unit = js.native
   @JSName("componentDidUpdate")

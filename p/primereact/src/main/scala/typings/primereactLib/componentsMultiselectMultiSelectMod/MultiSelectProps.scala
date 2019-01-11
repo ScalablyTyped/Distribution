@@ -9,9 +9,9 @@ trait MultiSelectProps extends js.Object {
   var appendTo: js.UndefOr[reactLib.HTMLElement] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var dataKey: js.UndefOr[java.lang.String] = js.undefined
-  var defaultLabel: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var filter: js.UndefOr[scala.Boolean] = js.undefined
+  var fixedPlaceholder: js.UndefOr[scala.Boolean] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var itemTemplate: js.UndefOr[
     js.Function1[/* item */ js.Any, js.UndefOr[reactLib.reactMod.Global.JSXNs.Element]]
@@ -19,6 +19,7 @@ trait MultiSelectProps extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* e */ primereactLib.Anon_OriginalEventValue, scala.Unit]] = js.undefined
   var optionLabel: js.UndefOr[java.lang.String] = js.undefined
   var options: js.UndefOr[js.Array[_]] = js.undefined
+  var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var scrollHeight: js.UndefOr[java.lang.String] = js.undefined
   var selectedItemTemplate: js.UndefOr[
     js.Function1[/* value */ js.Any, js.UndefOr[reactLib.reactMod.Global.JSXNs.Element]]

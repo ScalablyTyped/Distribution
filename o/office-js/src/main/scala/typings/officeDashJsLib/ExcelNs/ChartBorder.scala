@@ -22,6 +22,9 @@ class ChartBorder ()
     * [Api set: ExcelApi 1.7]
     */
   var color: java.lang.String = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ChartBorder: RequestContext = js.native
   /**
     *
     * Represents the line style of the border. See Excel.ChartLineStyle for details.
@@ -81,6 +84,10 @@ class ChartBorder ()
     properties: officeDashJsLib.ExcelNs.InterfacesNs.ChartBorderUpdateData,
     options: officeDashJsLib.OfficeExtensionNs.UpdateOptions
   ): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.ChartBorder object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartBorderData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.ChartBorderData = js.native
 }
 

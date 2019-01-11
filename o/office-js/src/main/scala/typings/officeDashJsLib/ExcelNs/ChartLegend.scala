@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ChartLegend ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ChartLegend: RequestContext = js.native
   /**
     *
     * Represents the formatting of a chart legend, which includes fill and font formatting. Read-only.
@@ -123,6 +126,10 @@ class ChartLegend ()
     properties: officeDashJsLib.ExcelNs.InterfacesNs.ChartLegendUpdateData,
     options: officeDashJsLib.OfficeExtensionNs.UpdateOptions
   ): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.ChartLegend object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.ChartLegendData = js.native
 }
 

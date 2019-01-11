@@ -29,6 +29,9 @@ class ChartFont ()
     * [Api set: ExcelApi 1.1]
     */
   var color: java.lang.String = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ChartFont: RequestContext = js.native
   /**
     *
     * Represents the italic status of the font.
@@ -95,6 +98,10 @@ class ChartFont ()
     properties: officeDashJsLib.ExcelNs.InterfacesNs.ChartFontUpdateData,
     options: officeDashJsLib.OfficeExtensionNs.UpdateOptions
   ): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.ChartFont object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartFontData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.ChartFontData = js.native
 }
 

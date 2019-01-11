@@ -22,6 +22,9 @@ class ChartAreaFormat ()
     * [Api set: ExcelApi 1.7]
     */
   val border: ChartBorder = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ChartAreaFormat: RequestContext = js.native
   /**
     *
     * Represents the fill format of an object, which includes background formatting information. Read-only.
@@ -74,6 +77,10 @@ class ChartAreaFormat ()
     properties: officeDashJsLib.ExcelNs.InterfacesNs.ChartAreaFormatUpdateData,
     options: officeDashJsLib.OfficeExtensionNs.UpdateOptions
   ): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.ChartAreaFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAreaFormatData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.ChartAreaFormatData = js.native
 }
 

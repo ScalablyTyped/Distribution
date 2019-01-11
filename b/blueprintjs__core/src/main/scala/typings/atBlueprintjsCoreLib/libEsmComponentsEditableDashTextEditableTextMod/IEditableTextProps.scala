@@ -62,6 +62,10 @@ trait IEditableTextProps
     * @default false
     */
   var selectAllOnFocus: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * The type of input that should be shown, when not `multiline`.
+    */
+  var `type`: js.UndefOr[java.lang.String] = js.undefined
   /** Text value of controlled input. */
   var value: js.UndefOr[java.lang.String] = js.undefined
 }

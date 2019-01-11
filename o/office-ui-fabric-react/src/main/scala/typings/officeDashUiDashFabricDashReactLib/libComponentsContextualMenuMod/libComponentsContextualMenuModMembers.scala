@@ -22,6 +22,10 @@ object libComponentsContextualMenuModMembers extends js.Object {
   ): scala.Boolean = js.native
   def getSubmenuItems(
     item: officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuItem
-  ): js.Any = js.native
+  ): js.UndefOr[
+    js.Array[
+      officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuItem
+    ]
+  ] = js.native
 }
 

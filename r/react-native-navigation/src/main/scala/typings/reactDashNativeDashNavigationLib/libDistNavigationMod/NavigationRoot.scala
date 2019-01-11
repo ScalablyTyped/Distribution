@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-navigation/lib/dist/Navigation", "NavigationRoot")
 @js.native
 class NavigationRoot () extends js.Object {
-  val Element: reactLib.reactMod.ReactNs.ComponentType[reactDashNativeDashNavigationLib.Anon_ElementId] = js.native
-  val TouchablePreview: reactLib.reactMod.ReactNs.ComponentType[_] = js.native
+  val Element: reactDashNativeDashNavigationLib.Anon_DefaultProps = js.native
+  val TouchablePreview: reactDashNativeDashNavigationLib.Anon_DefaultPropsPeeking = js.native
   val commands: js.Any = js.native
   val commandsObserver: js.Any = js.native
   val componentEventsObserver: js.Any = js.native
@@ -20,7 +20,7 @@ class NavigationRoot () extends js.Object {
   val layoutTreeParser: js.Any = js.native
   val nativeCommandsSender: js.Any = js.native
   val nativeEventsReceiver: js.Any = js.native
-  val store: reactDashNativeDashNavigationLib.libDistComponentsStoreMod.Store = js.native
+  val store: js.Any = js.native
   val uniqueIdProvider: js.Any = js.native
   /**
     * Constants coming from native

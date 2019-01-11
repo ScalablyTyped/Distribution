@@ -622,6 +622,12 @@ object officeDashJsLibStrings {
   sealed trait Linear extends js.Object
   
   @js.native
+  sealed trait LinkedEntityFinanceIcon extends js.Object
+  
+  @js.native
+  sealed trait LinkedEntityMapIcon extends js.Object
+  
+  @js.native
   sealed trait List extends js.Object
   
   @js.native
@@ -1492,6 +1498,8 @@ object officeDashJsLibStrings {
   def LessThanOrEqualTo: LessThanOrEqualTo = "LessThanOrEqualTo".asInstanceOf[LessThanOrEqualTo]
   def Line: Line = "Line".asInstanceOf[Line]
   def Linear: Linear = "Linear".asInstanceOf[Linear]
+  def LinkedEntityFinanceIcon: LinkedEntityFinanceIcon = "LinkedEntityFinanceIcon".asInstanceOf[LinkedEntityFinanceIcon]
+  def LinkedEntityMapIcon: LinkedEntityMapIcon = "LinkedEntityMapIcon".asInstanceOf[LinkedEntityMapIcon]
   def List: List = "List".asInstanceOf[List]
   def Local: Local = "Local".asInstanceOf[Local]
   def Logarithmic: Logarithmic = "Logarithmic".asInstanceOf[Logarithmic]

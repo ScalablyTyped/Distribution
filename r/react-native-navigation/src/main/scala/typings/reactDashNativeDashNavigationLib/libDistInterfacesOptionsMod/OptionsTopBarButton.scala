@@ -28,6 +28,10 @@ trait OptionsTopBarButton extends js.Object {
     */
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Set the button font family
+    */
+  var fontFamily: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Set the button icon
     */
   var icon: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ImageRequireSource] = js.undefined
@@ -35,6 +39,10 @@ trait OptionsTopBarButton extends js.Object {
     * Button id for reference press event
     */
   var id: java.lang.String
+  /**
+    * (iOS only) Set the button as an iOS system icon
+    */
+  var systemItem: js.UndefOr[SystemItemIcon] = js.undefined
   /**
     * Set testID for reference in E2E tests
     */

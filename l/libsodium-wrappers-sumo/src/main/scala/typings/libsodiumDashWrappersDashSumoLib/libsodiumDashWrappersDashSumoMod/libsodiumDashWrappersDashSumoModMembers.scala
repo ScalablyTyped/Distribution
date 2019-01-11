@@ -40,6 +40,9 @@ object libsodiumDashWrappersDashSumoModMembers extends js.Object {
   val crypto_box_SEALBYTES: scala.Double = js.native
   val crypto_box_SECRETKEYBYTES: scala.Double = js.native
   val crypto_box_SEEDBYTES: scala.Double = js.native
+  val crypto_box_curve25519xchacha20poly1305_NONCEBYTES: scala.Double = js.native
+  val crypto_box_curve25519xchacha20poly1305_PUBLICKEYBYTES: scala.Double = js.native
+  val crypto_box_curve25519xchacha20poly1305_SECRETKEYBYTES: scala.Double = js.native
   val crypto_core_hchacha20_CONSTBYTES: scala.Double = js.native
   val crypto_core_hchacha20_INPUTBYTES: scala.Double = js.native
   val crypto_core_hchacha20_KEYBYTES: scala.Double = js.native
@@ -523,6 +526,47 @@ object libsodiumDashWrappersDashSumoModMembers extends js.Object {
   ): stdLib.Uint8Array = js.native
   @JSName("crypto_box_beforenm")
   def crypto_box_beforenm_Uint8Array(publicKey: stdLib.Uint8Array, privateKey: stdLib.Uint8Array): stdLib.Uint8Array = js.native
+  def crypto_box_curve25519xchacha20poly1305_keypair(publicKey: stdLib.Uint8Array, secretKey: stdLib.Uint8Array): libsodiumDashWrappersLib.libsodiumDashWrappersMod.KeyPair = js.native
+  def crypto_box_curve25519xchacha20poly1305_keypair(
+    publicKey: stdLib.Uint8Array,
+    secretKey: stdLib.Uint8Array,
+    outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.StringOutputFormat
+  ): libsodiumDashWrappersLib.libsodiumDashWrappersMod.StringKeyPair = js.native
+  def crypto_box_curve25519xchacha20poly1305_keypair(
+    publicKey: stdLib.Uint8Array,
+    secretKey: stdLib.Uint8Array,
+    outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.Uint8ArrayOutputFormat
+  ): libsodiumDashWrappersLib.libsodiumDashWrappersMod.KeyPair = js.native
+  @JSName("crypto_box_curve25519xchacha20poly1305_keypair")
+  def crypto_box_curve25519xchacha20poly1305_keypair_StringKeyPair(publicKey: stdLib.Uint8Array, secretKey: stdLib.Uint8Array): libsodiumDashWrappersLib.libsodiumDashWrappersMod.StringKeyPair = js.native
+  def crypto_box_curve25519xchacha20poly1305_seal(message: stdLib.Uint8Array, publicKey: stdLib.Uint8Array): java.lang.String = js.native
+  def crypto_box_curve25519xchacha20poly1305_seal(
+    message: stdLib.Uint8Array,
+    publicKey: stdLib.Uint8Array,
+    outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.StringOutputFormat
+  ): java.lang.String = js.native
+  def crypto_box_curve25519xchacha20poly1305_seal(
+    message: stdLib.Uint8Array,
+    publicKey: stdLib.Uint8Array,
+    outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.Uint8ArrayOutputFormat
+  ): stdLib.Uint8Array = js.native
+  @JSName("crypto_box_curve25519xchacha20poly1305_seal")
+  def crypto_box_curve25519xchacha20poly1305_seal_Uint8Array(message: stdLib.Uint8Array, publicKey: stdLib.Uint8Array): stdLib.Uint8Array = js.native
+  def crypto_box_curve25519xchacha20poly1305_seal_open(ciphertext: stdLib.Uint8Array, publicKey: stdLib.Uint8Array, secretKey: stdLib.Uint8Array): java.lang.String = js.native
+  def crypto_box_curve25519xchacha20poly1305_seal_open(
+    ciphertext: stdLib.Uint8Array,
+    publicKey: stdLib.Uint8Array,
+    secretKey: stdLib.Uint8Array,
+    outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.StringOutputFormat
+  ): java.lang.String = js.native
+  def crypto_box_curve25519xchacha20poly1305_seal_open(
+    ciphertext: stdLib.Uint8Array,
+    publicKey: stdLib.Uint8Array,
+    secretKey: stdLib.Uint8Array,
+    outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.Uint8ArrayOutputFormat
+  ): stdLib.Uint8Array = js.native
+  @JSName("crypto_box_curve25519xchacha20poly1305_seal_open")
+  def crypto_box_curve25519xchacha20poly1305_seal_open_Uint8Array(ciphertext: stdLib.Uint8Array, publicKey: stdLib.Uint8Array, secretKey: stdLib.Uint8Array): stdLib.Uint8Array = js.native
   def crypto_box_detached(
     message: java.lang.String,
     nonce: stdLib.Uint8Array,
@@ -1688,10 +1732,6 @@ object libsodiumDashWrappersDashSumoModMembers extends js.Object {
   def crypto_secretstream_xchacha20poly1305_keygen(outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.Uint8ArrayOutputFormat): stdLib.Uint8Array = js.native
   @JSName("crypto_secretstream_xchacha20poly1305_keygen")
   def crypto_secretstream_xchacha20poly1305_keygen_Uint8Array(): stdLib.Uint8Array = js.native
-  def crypto_secretstream_xchacha20poly1305_pull(): libsodiumDashWrappersLib.Anon_Message = js.native
-  def crypto_secretstream_xchacha20poly1305_pull(
-    state_address: libsodiumDashWrappersLib.libsodiumDashWrappersMod.secretstream_xchacha20poly1305_state_address
-  ): libsodiumDashWrappersLib.Anon_Message = js.native
   def crypto_secretstream_xchacha20poly1305_pull(
     state_address: libsodiumDashWrappersLib.libsodiumDashWrappersMod.secretstream_xchacha20poly1305_state_address,
     cipher: java.lang.String
@@ -1793,12 +1833,6 @@ object libsodiumDashWrappersDashSumoModMembers extends js.Object {
     outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.Uint8ArrayOutputFormat
   ): libsodiumDashWrappersLib.Anon_Message = js.native
   @JSName("crypto_secretstream_xchacha20poly1305_pull")
-  def crypto_secretstream_xchacha20poly1305_pull_Anon_MessageTag(): libsodiumDashWrappersLib.Anon_MessageTag = js.native
-  @JSName("crypto_secretstream_xchacha20poly1305_pull")
-  def crypto_secretstream_xchacha20poly1305_pull_Anon_MessageTag(
-    state_address: libsodiumDashWrappersLib.libsodiumDashWrappersMod.secretstream_xchacha20poly1305_state_address
-  ): libsodiumDashWrappersLib.Anon_MessageTag = js.native
-  @JSName("crypto_secretstream_xchacha20poly1305_pull")
   def crypto_secretstream_xchacha20poly1305_pull_Anon_MessageTag(
     state_address: libsodiumDashWrappersLib.libsodiumDashWrappersMod.secretstream_xchacha20poly1305_state_address,
     cipher: java.lang.String
@@ -1832,10 +1866,6 @@ object libsodiumDashWrappersDashSumoModMembers extends js.Object {
     cipher: stdLib.Uint8Array,
     ad: stdLib.Uint8Array
   ): libsodiumDashWrappersLib.Anon_MessageTag = js.native
-  def crypto_secretstream_xchacha20poly1305_push(): java.lang.String = js.native
-  def crypto_secretstream_xchacha20poly1305_push(
-    state_address: libsodiumDashWrappersLib.libsodiumDashWrappersMod.secretstream_xchacha20poly1305_state_address
-  ): java.lang.String = js.native
   def crypto_secretstream_xchacha20poly1305_push(
     state_address: libsodiumDashWrappersLib.libsodiumDashWrappersMod.secretstream_xchacha20poly1305_state_address,
     message_chunk: java.lang.String
@@ -1983,12 +2013,6 @@ object libsodiumDashWrappersDashSumoModMembers extends js.Object {
     ad: stdLib.Uint8Array,
     tag: scala.Double,
     outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.Uint8ArrayOutputFormat
-  ): stdLib.Uint8Array = js.native
-  @JSName("crypto_secretstream_xchacha20poly1305_push")
-  def crypto_secretstream_xchacha20poly1305_push_Uint8Array(): stdLib.Uint8Array = js.native
-  @JSName("crypto_secretstream_xchacha20poly1305_push")
-  def crypto_secretstream_xchacha20poly1305_push_Uint8Array(
-    state_address: libsodiumDashWrappersLib.libsodiumDashWrappersMod.secretstream_xchacha20poly1305_state_address
   ): stdLib.Uint8Array = js.native
   @JSName("crypto_secretstream_xchacha20poly1305_push")
   def crypto_secretstream_xchacha20poly1305_push_Uint8Array(
@@ -2299,6 +2323,21 @@ object libsodiumDashWrappersDashSumoModMembers extends js.Object {
   ): scala.Unit = js.native
   def crypto_sign_verify_detached(signature: stdLib.Uint8Array, message: java.lang.String, publicKey: stdLib.Uint8Array): scala.Boolean = js.native
   def crypto_sign_verify_detached(signature: stdLib.Uint8Array, message: stdLib.Uint8Array, publicKey: stdLib.Uint8Array): scala.Boolean = js.native
+  def crypto_stream_chacha20(outLength: scala.Double, key: stdLib.Uint8Array, nonce: stdLib.Uint8Array): java.lang.String = js.native
+  def crypto_stream_chacha20(
+    outLength: scala.Double,
+    key: stdLib.Uint8Array,
+    nonce: stdLib.Uint8Array,
+    outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.StringOutputFormat
+  ): java.lang.String = js.native
+  def crypto_stream_chacha20(
+    outLength: scala.Double,
+    key: stdLib.Uint8Array,
+    nonce: stdLib.Uint8Array,
+    outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.Uint8ArrayOutputFormat
+  ): stdLib.Uint8Array = js.native
+  @JSName("crypto_stream_chacha20")
+  def crypto_stream_chacha20_Uint8Array(outLength: scala.Double, key: stdLib.Uint8Array, nonce: stdLib.Uint8Array): stdLib.Uint8Array = js.native
   def crypto_stream_chacha20_ietf_xor(input_message: java.lang.String, nonce: stdLib.Uint8Array, key: stdLib.Uint8Array): java.lang.String = js.native
   def crypto_stream_chacha20_ietf_xor(
     input_message: java.lang.String,

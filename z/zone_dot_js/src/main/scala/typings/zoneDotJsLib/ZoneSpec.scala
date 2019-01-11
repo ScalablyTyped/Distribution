@@ -122,8 +122,8 @@ trait ZoneSpec extends js.Object {
       /* targetZone */ Zone, 
       /* delegate */ js.Function, 
       /* applyThis */ js.Any, 
-      /* applyArgs */ js.Array[_], 
-      /* source */ java.lang.String, 
+      /* applyArgs */ js.UndefOr[js.Array[_]], 
+      /* source */ js.UndefOr[java.lang.String], 
       _
     ]
   ] = js.undefined
@@ -134,7 +134,7 @@ trait ZoneSpec extends js.Object {
       /* targetZone */ Zone, 
       /* task */ Task, 
       /* applyThis */ js.Any, 
-      /* applyArgs */ js.Any, 
+      /* applyArgs */ js.UndefOr[js.Array[_]], 
       _
     ]
   ] = js.undefined

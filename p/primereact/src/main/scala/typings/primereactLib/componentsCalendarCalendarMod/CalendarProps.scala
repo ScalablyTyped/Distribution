@@ -16,6 +16,8 @@ trait CalendarProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var disabledDates: js.UndefOr[js.Array[stdLib.Date]] = js.undefined
   var disabledDays: js.UndefOr[js.Array[scala.Double]] = js.undefined
+  var footerTemplate: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  var headerTemplate: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
   var hideOnDateTimeSelect: js.UndefOr[scala.Boolean] = js.undefined
   var hourFormat: js.UndefOr[java.lang.String] = js.undefined
   var icon: js.UndefOr[java.lang.String] = js.undefined

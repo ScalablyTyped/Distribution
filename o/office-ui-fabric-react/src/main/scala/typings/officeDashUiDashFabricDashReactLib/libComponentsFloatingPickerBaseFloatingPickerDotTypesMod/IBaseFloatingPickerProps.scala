@@ -24,7 +24,7 @@ trait IBaseFloatingPickerProps[T]
     js.Function2[
       /* input */ java.lang.String, 
       /* isValid */ scala.Boolean, 
-      officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[T]
+      officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionModel[T]
     ]
   ] = js.native
   /**

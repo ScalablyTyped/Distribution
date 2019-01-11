@@ -9,13 +9,14 @@ import scala.scalajs.js.annotation._
 trait ISuggestionsProps[T]
   extends reactLib.reactMod.ReactNs.Props[js.Any] {
   /**
-    * The CSS classname of the suggestions root.
+    * The CSS className of the suggestions root.
     */
   var className: js.UndefOr[java.lang.String] = js.native
   /**
-    * Gets the component ref.
+    * Optional callback to access the ISuggestions interface. Use this instead of ref for accessing
+    * the public methods and properties of the component.
     */
-  var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[js.Object]] = js.native
+  var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[ISuggestions[T]]] = js.native
   /**
     * The callback that should be called when the user attempts to use the input text as as item
     */
@@ -34,7 +35,7 @@ trait ISuggestionsProps[T]
   var isMostRecentlyUsedVisible: js.UndefOr[scala.Boolean] = js.native
   /**
     * Indicates if the text in resultsFooter or resultsFooterFull should be shown at the end of the suggestion list.
-    * @defaultvalue true.
+    * @defaultvalue true
     */
   var isResultsFooterVisible: js.UndefOr[scala.Boolean] = js.native
   /**
@@ -51,7 +52,7 @@ trait ISuggestionsProps[T]
     */
   var moreSuggestionsAvailable: js.UndefOr[scala.Boolean] = js.native
   /**
-    * The text that should appear at the top of the most recenty used box.
+    * The text that should appear at the top of the most recently used box.
     */
   var mostRecentlyUsedHeaderText: js.UndefOr[java.lang.String] = js.native
   /**
@@ -122,7 +123,7 @@ trait ISuggestionsProps[T]
     */
   var searchForMoreText: js.UndefOr[java.lang.String] = js.native
   /**
-    * The text to display while searching for more results in a limited sugesstions list.
+    * The text to display while searching for more results in a limited suggestions list.
     */
   var searchingText: js.UndefOr[java.lang.String] = js.native
   /**
@@ -133,18 +134,20 @@ trait ISuggestionsProps[T]
     * Indicates whether to show a button with each suggestion to remove that suggestion.
     */
   var showRemoveButtons: js.UndefOr[scala.Boolean] = js.native
+  /** Call to provide customized styling that will layer on top of the variant rules. */
+  var styles: js.UndefOr[
+    atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[js.Object, js.Object]
+  ] = js.native
   /**
     * The list of Suggestions that will be displayed
     */
-  var suggestions: js.Array[
-    officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[T]
-  ] = js.native
+  var suggestions: js.Array[ISuggestionModel[T]] = js.native
   /**
     * Screen reader message to read when there are suggestions available.
     */
   var suggestionsAvailableAlertText: js.UndefOr[java.lang.String] = js.native
   /**
-    * The CSS classname of the suggestionslist
+    * The CSS className of the suggestions list
     */
   var suggestionsClassName: js.UndefOr[java.lang.String] = js.native
   /**
@@ -156,14 +159,16 @@ trait ISuggestionsProps[T]
     */
   var suggestionsHeaderText: js.UndefOr[java.lang.String] = js.native
   /**
-    * the classname of the suggestionitem.
+    * The className of the suggestion item.
     */
   var suggestionsItemClassName: js.UndefOr[java.lang.String] = js.native
   /**
-    * The string that will be used as the suggestionsListId. Will be used by the basepicker to keep track of the list
-    * for aria.
+    * The string that will be used as the suggestionsListId.
+    * Will be used by the BasePicker to keep track of the list for aria.
     */
   var suggestionsListId: js.UndefOr[java.lang.String] = js.native
+  /** Theme provided by High-Order Component. */
+  var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.native
   /**
     * What should occur when a suggestion is clicked
     */

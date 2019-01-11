@@ -59,6 +59,14 @@ object IconSet extends js.Object {
     extends officeDashJsLib.ExcelNs.IconSet
   
   @js.native
+  sealed trait linkedEntityFinanceIcon
+    extends officeDashJsLib.ExcelNs.IconSet
+  
+  @js.native
+  sealed trait linkedEntityMapIcon
+    extends officeDashJsLib.ExcelNs.IconSet
+  
+  @js.native
   sealed trait threeArrows
     extends officeDashJsLib.ExcelNs.IconSet
   
@@ -109,6 +117,8 @@ object IconSet extends js.Object {
   /* "FourRedToBlack" */ val fourRedToBlack: fourRedToBlack with java.lang.String = js.native
   /* "FourTrafficLights" */ val fourTrafficLights: fourTrafficLights with java.lang.String = js.native
   /* "Invalid" */ val invalid: invalid with java.lang.String = js.native
+  /* "LinkedEntityFinanceIcon" */ val linkedEntityFinanceIcon: linkedEntityFinanceIcon with java.lang.String = js.native
+  /* "LinkedEntityMapIcon" */ val linkedEntityMapIcon: linkedEntityMapIcon with java.lang.String = js.native
   /* "ThreeArrows" */ val threeArrows: threeArrows with java.lang.String = js.native
   /* "ThreeArrowsGray" */ val threeArrowsGray: threeArrowsGray with java.lang.String = js.native
   /* "ThreeFlags" */ val threeFlags: threeFlags with java.lang.String = js.native

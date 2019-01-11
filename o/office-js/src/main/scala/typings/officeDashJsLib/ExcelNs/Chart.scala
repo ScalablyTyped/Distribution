@@ -27,7 +27,8 @@ class Chart ()
   val axes: ChartAxes = js.native
   /**
     *
-    * Returns or sets a ChartCategoryLabelLevel enumeration constant referring to the level of where the category labels are being sourced from. Read/Write.
+    * Returns or sets a ChartCategoryLabelLevel enumeration constant referring to
+    the level of where the category labels are being sourced from. Read/Write.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -39,6 +40,9 @@ class Chart ()
     * [Api set: ExcelApi 1.7]
     */
   var chartType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 83 */ js.Any = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Chart: RequestContext = js.native
   /**
     *
     * Represents the datalabels on the chart. Read-only.
@@ -143,7 +147,8 @@ class Chart ()
   val series: ChartSeriesCollection = js.native
   /**
     *
-    * Returns or sets a ChartSeriesNameLevel enumeration constant referring to the level of where the series names are being sourced from. Read/Write.
+    * Returns or sets a ChartSeriesNameLevel enumeration constant referring to
+    the level of where the series names are being sourced from. Read/Write.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -305,6 +310,10 @@ class Chart ()
   def setPosition(startCell: Range): scala.Unit = js.native
   def setPosition(startCell: Range, endCell: java.lang.String): scala.Unit = js.native
   def setPosition(startCell: Range, endCell: Range): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.Chart object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.ChartData = js.native
 }
 

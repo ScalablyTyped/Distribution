@@ -15,7 +15,7 @@ trait Zone extends js.Object {
     *
     * @returns {Zone} The parent Zone.
     */
-  var parent: Zone = js.native
+  var parent: Zone | scala.Null = js.native
   /**
     * Allows the zone to intercept canceling of scheduled Task.
     *
@@ -51,7 +51,7 @@ trait Zone extends js.Object {
     * @param key The key to use for identification of the returned zone.
     * @returns {Zone} The Zone which defines the `key`, `null` if not found.
     */
-  def getZoneWith(key: java.lang.String): Zone = js.native
+  def getZoneWith(key: java.lang.String): Zone | scala.Null = js.native
   /**
     * Invokes a function in a given zone.
     *
@@ -105,6 +105,14 @@ trait Zone extends js.Object {
     * @param customSchedule
     * @param customCancel
     */
+  def scheduleEventTask(source: java.lang.String, callback: js.Function): EventTask = js.native
+  def scheduleEventTask(source: java.lang.String, callback: js.Function, data: TaskData): EventTask = js.native
+  def scheduleEventTask(
+    source: java.lang.String,
+    callback: js.Function,
+    data: TaskData,
+    customSchedule: js.Function1[/* task */ Task, scala.Unit]
+  ): EventTask = js.native
   def scheduleEventTask(
     source: java.lang.String,
     callback: js.Function,
@@ -121,6 +129,14 @@ trait Zone extends js.Object {
     * @param customSchedule
     * @param customCancel
     */
+  def scheduleMacroTask(source: java.lang.String, callback: js.Function): MacroTask = js.native
+  def scheduleMacroTask(source: java.lang.String, callback: js.Function, data: TaskData): MacroTask = js.native
+  def scheduleMacroTask(
+    source: java.lang.String,
+    callback: js.Function,
+    data: TaskData,
+    customSchedule: js.Function1[/* task */ Task, scala.Unit]
+  ): MacroTask = js.native
   def scheduleMacroTask(
     source: java.lang.String,
     callback: js.Function,

@@ -19,7 +19,7 @@ trait IBaseSelectedItemsListProps[T]
     js.Function2[
       /* input */ java.lang.String, 
       /* ValidationState */ officeDashUiDashFabricDashReactLib.libComponentsPickersBasePickerDotTypesMod.ValidationState, 
-      officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[T]
+      officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionModel[T]
     ]
   ] = js.undefined
   /**

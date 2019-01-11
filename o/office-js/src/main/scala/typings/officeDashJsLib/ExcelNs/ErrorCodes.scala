@@ -64,6 +64,10 @@ object ErrorCodes extends js.Object {
     extends officeDashJsLib.ExcelNs.ErrorCodes
   
   @js.native
+  sealed trait nonBlankCellOffSheet
+    extends officeDashJsLib.ExcelNs.ErrorCodes
+  
+  @js.native
   sealed trait notImplemented
     extends officeDashJsLib.ExcelNs.ErrorCodes
   
@@ -84,6 +88,7 @@ object ErrorCodes extends js.Object {
   /* "InvalidSelection" */ val invalidSelection: invalidSelection with java.lang.String = js.native
   /* "ItemAlreadyExists" */ val itemAlreadyExists: itemAlreadyExists with java.lang.String = js.native
   /* "ItemNotFound" */ val itemNotFound: itemNotFound with java.lang.String = js.native
+  /* "NonBlankCellOffSheet" */ val nonBlankCellOffSheet: nonBlankCellOffSheet with java.lang.String = js.native
   /* "NotImplemented" */ val notImplemented: notImplemented with java.lang.String = js.native
   /* "UnsupportedOperation" */ val unsupportedOperation: unsupportedOperation with java.lang.String = js.native
   @JSBracketAccess

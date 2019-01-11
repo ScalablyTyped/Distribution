@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular__core"
-version := "7.2.0-07f995"
+version := "7.2.0-2b1fc6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rxjs" % "6.3.3-3de002",
   "org.scalablytyped" %%% "std" % "3.2.2-f3cc98",
   "org.scalablytyped" %%% "tslib" % "1.9.3-d3fc19",
-  "org.scalablytyped" %%% "zone_dot_js" % "0.8.26-6aa699")
+  "org.scalablytyped" %%% "zone_dot_js" % "0.8.27-e4baec")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

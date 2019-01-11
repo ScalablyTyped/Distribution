@@ -29,6 +29,9 @@ class ChartSeries ()
     * [Api set: ExcelApi 1.7]
     */
   var chartType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 83 */ js.Any = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ChartSeries: RequestContext = js.native
   /**
     *
     * Represents a collection of all dataLabels in the series.
@@ -177,7 +180,7 @@ class ChartSeries ()
     *
     * [Api set: ExcelApi 1.8]
     */
-  var splitType: officeDashJsLib.officeDashJsLibStrings.SplitByPosition | officeDashJsLib.officeDashJsLibStrings.SplitByValue | officeDashJsLib.officeDashJsLibStrings.SplitByPercentValue | officeDashJsLib.officeDashJsLibStrings.SplitByCustomSplit = js.native
+  var splitType: ChartSplitType | officeDashJsLib.officeDashJsLibStrings.SplitByPosition | officeDashJsLib.officeDashJsLibStrings.SplitByValue | officeDashJsLib.officeDashJsLibStrings.SplitByPercentValue | officeDashJsLib.officeDashJsLibStrings.SplitByCustomSplit = js.native
   /**
     *
     * Represents a collection of trendlines in the series. Read-only.
@@ -264,6 +267,10 @@ class ChartSeries ()
     * @param sourceData The Range object corresponding to the source data.
     */
   def setXAxisValues(sourceData: Range): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.ChartSeries object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.ChartSeriesData = js.native
 }
 

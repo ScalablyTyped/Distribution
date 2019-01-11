@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ChartAxisTitle ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ChartAxisTitle: RequestContext = js.native
   /**
     *
     * Represents the formatting of chart axis title. Read-only.
@@ -83,6 +86,10 @@ class ChartAxisTitle ()
     * @param formula a string that present the formula to set
     */
   def setFormula(formula: java.lang.String): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.ChartAxisTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.ChartAxisTitleData = js.native
 }
 

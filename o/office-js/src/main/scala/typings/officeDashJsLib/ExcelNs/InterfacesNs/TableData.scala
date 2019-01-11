@@ -105,12 +105,5 @@ trait TableData extends js.Object {
     * [Api set: ExcelApi 1.1]
     */
   var style: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    *
-    * The worksheet containing the current table. Read-only.
-    *
-    * [Api set: ExcelApi 1.2]
-    */
-  var worksheet: js.UndefOr[WorksheetData] = js.undefined
 }
 

@@ -212,23 +212,23 @@ object SageMakerNs extends js.Object {
   
   trait CodeRepositorySummary extends js.Object {
     /**
-      * The Amazon Resource Name (ARN) of the git repository.
+      * The Amazon Resource Name (ARN) of the Git repository.
       */
     var CodeRepositoryArn: CodeRepositoryArn
     /**
-      * The name of the git repository.
+      * The name of the Git repository.
       */
     var CodeRepositoryName: EntityName
     /**
-      * The date and time that the git repository was created.
+      * The date and time that the Git repository was created.
       */
     var CreationTime: CreationTime
     /**
-      * Configuration details for the git repository, including the URL where it is located and the ARN of the AWS Secrets Manager secret that contains the credentials used to access the repository.
+      * Configuration details for the Git repository, including the URL where it is located and the ARN of the AWS Secrets Manager secret that contains the credentials used to access the repository.
       */
     var GitConfig: js.UndefOr[GitConfig] = js.undefined
     /**
-      * The date and time that the git repository was last modified.
+      * The date and time that the Git repository was last modified.
       */
     var LastModifiedTime: LastModifiedTime
   }
@@ -342,7 +342,7 @@ object SageMakerNs extends js.Object {
       */
     var AlgorithmName: EntityName
     /**
-      * Whether to certify the algorithm so that it can be listed in AWS Marektplace.
+      * Whether to certify the algorithm so that it can be listed in AWS Marketplace.
       */
     var CertifyForMarketplace: js.UndefOr[CertifyForMarketplace] = js.undefined
     /**
@@ -368,7 +368,7 @@ object SageMakerNs extends js.Object {
   
   trait CreateCodeRepositoryInput extends js.Object {
     /**
-      * The name of the git repository. The name must have 1 to 63 characters. Valid characters are a-z, A-Z, 0-9, and - (hyphen).
+      * The name of the Git repository. The name must have 1 to 63 characters. Valid characters are a-z, A-Z, 0-9, and - (hyphen).
       */
     var CodeRepositoryName: EntityName
     /**
@@ -480,7 +480,7 @@ object SageMakerNs extends js.Object {
       */
     var TrainingJobDefinition: HyperParameterTrainingJobDefinition
     /**
-      * Specifies configuration for starting the hyperparameter tuning job using one or more previous tuning jobs as a starting point. The results of previous tuning jobs are used to inform which combinations of hyperparameters to search over in the new tuning job. All training jobs launched by the new hyperparameter tuning job are evaluated by using the objective metric. If you specify IDENTICAL_DATA_AND_ALGORITHM as the WarmStartType for the warm start configuration, the training job that performs the best in the new tuning job is compared to the best training jobs from the parent tuning jobs. From these, the training job that performs the best as measured by the objective metric is returned as the overall best training job.  All training jobs launched by parent hyperparameter tuning jobs and the new hyperparameter tuning jobs count against the limit of training jobs for the tuning job. 
+      * Specifies the configuration for starting the hyperparameter tuning job using one or more previous tuning jobs as a starting point. The results of previous tuning jobs are used to inform which combinations of hyperparameters to search over in the new tuning job. All training jobs launched by the new hyperparameter tuning job are evaluated by using the objective metric. If you specify IDENTICAL_DATA_AND_ALGORITHM as the WarmStartType value for the warm start configuration, the training job that performs the best in the new tuning job is compared to the best training jobs from the parent tuning jobs. From these, the training job that performs the best as measured by the objective metric is returned as the overall best training job.  All training jobs launched by parent hyperparameter tuning jobs and the new hyperparameter tuning jobs count against the limit of training jobs for the tuning job. 
       */
     var WarmStartConfig: js.UndefOr[HyperParameterTuningJobWarmStartConfig] = js.undefined
   }
@@ -616,15 +616,15 @@ object SageMakerNs extends js.Object {
   
   trait CreateNotebookInstanceInput extends js.Object {
     /**
-      * A list of Elastic Inference (EI) instance types to associate with this notebook instance. Currently, only one instance type can be associated with a notebook intance. For more information, see Using Elastic Inference in Amazon SageMaker.
+      * A list of Elastic Inference (EI) instance types to associate with this notebook instance. Currently, only one instance type can be associated with a notebook instance. For more information, see Using Elastic Inference in Amazon SageMaker.
       */
     var AcceleratorTypes: js.UndefOr[NotebookInstanceAcceleratorTypes] = js.undefined
     /**
-      * An array of up to 3 git repositories to associate with the notebook instance. These can be either the names of git repositories stored as resources in your account, or the URL of git repositories in AWS CodeCommit or in any other git repository. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
+      * An array of up to three Git repositories to associate with the notebook instance. These can be either the names of Git repositories stored as resources in your account, or the URL of Git repositories in AWS CodeCommit or in any other Git repository. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
       */
     var AdditionalCodeRepositories: js.UndefOr[AdditionalCodeRepositoryNamesOrUrls] = js.undefined
     /**
-      * A git repository to associate with the notebook instance as its default code repository. This can be either the name of a git repository stored as a resource in your account, or the URL of a git repository in AWS CodeCommit or in any other git repository. When you open a notebook instance, it opens in the directory that contains this repository. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
+      * A Git repository to associate with the notebook instance as its default code repository. This can be either the name of a Git repository stored as a resource in your account, or the URL of a Git repository in AWS CodeCommit or in any other Git repository. When you open a notebook instance, it opens in the directory that contains this repository. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
       */
     var DefaultCodeRepository: js.UndefOr[CodeRepositoryNameOrUrl] = js.undefined
     /**
@@ -722,7 +722,11 @@ object SageMakerNs extends js.Object {
       */
     var AlgorithmSpecification: AlgorithmSpecification
     /**
-      * Isolates the training container. No inbound or outbound network calls can be made, except for calls between peers within a training cluster for distributed training. If network isolation is used for training jobs that are configured to use a VPC, Amazon SageMaker downloads and uploads customer data and model artifacts through the specifed VPC, but the training container does not have network access.  The Semantic Segmentation built-in algorithm does not support network isolation. 
+      * To encrypt all communications between ML compute instances in distributed training, choose True,. Encryption provides greater security for distributed training, but training can take longer because of additional communications between ML compute instances.
+      */
+    var EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined
+    /**
+      * Isolates the training container. No inbound or outbound network calls can be made, except for calls between peers within a training cluster for distributed training. If you enable network isolation for training jobs that are configured to use a VPC, Amazon SageMaker downloads and uploads customer data and model artifacts through the specified VPC, but the training container does not have network access.  The Semantic Segmentation built-in algorithm does not support network isolation. 
       */
     var EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined
     /**
@@ -772,7 +776,7 @@ object SageMakerNs extends js.Object {
   
   trait CreateTransformJobRequest extends js.Object {
     /**
-      * Determines the number of records included in a single mini-batch. SingleRecord means only one record is used per mini-batch. MultiRecord means a mini-batch is set to contain as many records that can fit within the MaxPayloadInMB limit. Batch transform will automatically split your input data into whatever payload size is specified if you set SplitType to Line and BatchStrategy to MultiRecord. There's no need to split the dataset into smaller files or to use larger payload sizes unless the records in your dataset are very large.
+      * Determines the number of records to include in a mini-batch. If you want to include only one record in a mini-batch, specify SingleRecord.. If you want mini-batches to contain a maximum of the number of records specified in the MaxPayloadInMB parameter, specify MultiRecord.  If you set SplitType to Line and BatchStrategy to MultiRecord, a batch transform automatically splits your input data into the specified payload size. There's no need to split the dataset into smaller files or to use larger payload sizes unless the records in your dataset are very large.
       */
     var BatchStrategy: js.UndefOr[BatchStrategy] = js.undefined
     /**
@@ -780,7 +784,7 @@ object SageMakerNs extends js.Object {
       */
     var Environment: js.UndefOr[TransformEnvironmentMap] = js.undefined
     /**
-      * The maximum number of parallel requests that can be sent to each instance in a transform job. This is good for algorithms that implement multiple workers on larger instances . The default value is 1. To allow Amazon SageMaker to determine the appropriate number for MaxConcurrentTransforms, set the value to 0.
+      * The maximum number of parallel requests that can be sent to an algorithm container on an instance. This is good for algorithms that implement multiple workers on larger instances . The default value is 1. To allow Amazon SageMaker to determine the appropriate number for MaxConcurrentTransforms, do not set the value in the API.
       */
     var MaxConcurrentTransforms: js.UndefOr[MaxConcurrentTransforms] = js.undefined
     /**
@@ -792,7 +796,7 @@ object SageMakerNs extends js.Object {
       */
     var ModelName: ModelName
     /**
-      * An array of key-value pairs. Adding tags is optional. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide.
+      * (Optional) An array of key-value pairs. For more information, see Using Cost Allocation Tags in the AWS Billing and Cost Management User Guide.
       */
     var Tags: js.UndefOr[TagList] = js.undefined
     /**
@@ -862,7 +866,7 @@ object SageMakerNs extends js.Object {
   
   trait DeleteCodeRepositoryInput extends js.Object {
     /**
-      * The name of the git repository to delete.
+      * The name of the Git repository to delete.
       */
     var CodeRepositoryName: EntityName
   }
@@ -980,7 +984,7 @@ object SageMakerNs extends js.Object {
       */
     var AlgorithmStatusDetails: AlgorithmStatusDetails
     /**
-      * Whether the algorithm is certified to be listed in AWS Marektplace.
+      * Whether the algorithm is certified to be listed in AWS Marketplace.
       */
     var CertifyForMarketplace: js.UndefOr[CertifyForMarketplace] = js.undefined
     /**
@@ -1007,18 +1011,18 @@ object SageMakerNs extends js.Object {
   
   trait DescribeCodeRepositoryInput extends js.Object {
     /**
-      * The name of the git repository to describe.
+      * The name of the Git repository to describe.
       */
     var CodeRepositoryName: EntityName
   }
   
   trait DescribeCodeRepositoryOutput extends js.Object {
     /**
-      * The Amazon Resource Name (ARN) of the git repository.
+      * The Amazon Resource Name (ARN) of the Git repository.
       */
     var CodeRepositoryArn: CodeRepositoryArn
     /**
-      * The name of the git repository.
+      * The name of the Git repository.
       */
     var CodeRepositoryName: EntityName
     /**
@@ -1456,7 +1460,7 @@ object SageMakerNs extends js.Object {
       */
     var AcceleratorTypes: js.UndefOr[NotebookInstanceAcceleratorTypes] = js.undefined
     /**
-      * An array of up to 3 git repositories associated with the notebook instance. These can be either the names of git repositories stored as resources in your account, or the URL of git repositories in AWS CodeCommit or in any other git repository. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
+      * An array of up to three Git repositories associated with the notebook instance. These can be either the names of Git repositories stored as resources in your account, or the URL of Git repositories in AWS CodeCommit or in any other Git repository. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
       */
     var AdditionalCodeRepositories: js.UndefOr[AdditionalCodeRepositoryNamesOrUrls] = js.undefined
     /**
@@ -1464,7 +1468,7 @@ object SageMakerNs extends js.Object {
       */
     var CreationTime: js.UndefOr[CreationTime] = js.undefined
     /**
-      * The git repository associated with the notebook instance as its default code repository. This can be either the name of a git repository stored as a resource in your account, or the URL of a git repository in AWS CodeCommit or in any other git repository. When you open a notebook instance, it opens in the directory that contains this repository. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
+      * The Git repository associated with the notebook instance as its default code repository. This can be either the name of a Git repository stored as a resource in your account, or the URL of a Git repository in AWS CodeCommit or in any other Git repository. When you open a notebook instance, it opens in the directory that contains this repository. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
       */
     var DefaultCodeRepository: js.UndefOr[CodeRepositoryNameOrUrl] = js.undefined
     /**
@@ -1472,7 +1476,7 @@ object SageMakerNs extends js.Object {
       */
     var DirectInternetAccess: js.UndefOr[DirectInternetAccess] = js.undefined
     /**
-      * If status is failed, the reason it failed.
+      * If status is Failed, the reason it failed.
       */
     var FailureReason: js.UndefOr[FailureReason] = js.undefined
     /**
@@ -1480,7 +1484,7 @@ object SageMakerNs extends js.Object {
       */
     var InstanceType: js.UndefOr[InstanceType] = js.undefined
     /**
-      *  AWS KMS key ID Amazon SageMaker uses to encrypt data when storing it on the ML storage volume attached to the instance. 
+      * The AWS KMS key ID Amazon SageMaker uses to encrypt data when storing it on the ML storage volume attached to the instance. 
       */
     var KmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
     /**
@@ -1488,7 +1492,7 @@ object SageMakerNs extends js.Object {
       */
     var LastModifiedTime: js.UndefOr[LastModifiedTime] = js.undefined
     /**
-      *  Network interface IDs that Amazon SageMaker created at the time of creating the instance. 
+      * The network interface IDs that Amazon SageMaker created at the time of creating the instance. 
       */
     var NetworkInterfaceId: js.UndefOr[NetworkInterfaceId] = js.undefined
     /**
@@ -1500,7 +1504,7 @@ object SageMakerNs extends js.Object {
       */
     var NotebookInstanceLifecycleConfigName: js.UndefOr[NotebookInstanceLifecycleConfigName] = js.undefined
     /**
-      *  Name of the Amazon SageMaker notebook instance. 
+      * The name of the Amazon SageMaker notebook instance. 
       */
     var NotebookInstanceName: js.UndefOr[NotebookInstanceName] = js.undefined
     /**
@@ -1508,7 +1512,7 @@ object SageMakerNs extends js.Object {
       */
     var NotebookInstanceStatus: js.UndefOr[NotebookInstanceStatus] = js.undefined
     /**
-      *  Amazon Resource Name (ARN) of the IAM role associated with the instance. 
+      * The Amazon Resource Name (ARN) of the IAM role associated with the instance. 
       */
     var RoleArn: js.UndefOr[RoleArn] = js.undefined
     /**
@@ -1560,7 +1564,11 @@ object SageMakerNs extends js.Object {
       */
     var CreationTime: Timestamp
     /**
-      * If True, inbound or outbound network calls can be made, except for calls between peers within a training cluster for distributed training. If network isolation is used for training jobs that are configured to use a VPC, Amazon SageMaker downloads and uploads customer data and model artifacts through the specifed VPC, but the training container does not have network access.  The Semantic Segmentation built-in algorithm does not support network isolation. 
+      * To encrypt all communications between ML compute instances in distributed training, specify True. Encryption provides greater security for distributed training, but training take longer because of the additional communications between ML compute instances.
+      */
+    var EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined
+    /**
+      * If you want to allow inbound or outbound network calls, except for calls between peers within a training cluster for distributed training, choose True. If you enable network isolation for training jobs that are configured to use a VPC, Amazon SageMaker downloads and uploads customer data and model artifacts through the specified VPC, but the training container does not have network access.  The Semantic Segmentation built-in algorithm does not support network isolation. 
       */
     var EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined
     /**
@@ -1654,7 +1662,7 @@ object SageMakerNs extends js.Object {
   
   trait DescribeTransformJobResponse extends js.Object {
     /**
-      * SingleRecord means only one record was used per a batch. MultiRecord means batches contained as many records that could possibly fit within the MaxPayloadInMB limit.
+      *  If you want to include only one record in a batch, specify SingleRecord.. If you want batches to contain a maximum of the number of records specified in the MaxPayloadInMB parameter, specify MultiRecord.S
       */
     var BatchStrategy: js.UndefOr[BatchStrategy] = js.undefined
     /**
@@ -1678,7 +1686,7 @@ object SageMakerNs extends js.Object {
       */
     var MaxConcurrentTransforms: js.UndefOr[MaxConcurrentTransforms] = js.undefined
     /**
-      * The maximum payload size , in MB used in the transform job.
+      * The maximum payload size, in MB, used in the transform job.
       */
     var MaxPayloadInMB: js.UndefOr[MaxPayloadInMB] = js.undefined
     /**
@@ -1686,7 +1694,7 @@ object SageMakerNs extends js.Object {
       */
     var ModelName: ModelName
     /**
-      * Indicates when the transform job is Completed, Stopped, or Failed. You are billed for the time interval between this time and the value of TransformStartTime.
+      * Indicates when the transform job has been completed, or has stopped or failed. You are billed for the time interval between this time and the value of TransformStartTime.
       */
     var TransformEndTime: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -1839,11 +1847,11 @@ object SageMakerNs extends js.Object {
   
   trait GitConfig extends js.Object {
     /**
-      * The default beach for the git repository.
+      * The default branch for the Git repository.
       */
     var Branch: js.UndefOr[Branch] = js.undefined
     /**
-      * The URL where the git repository is located.
+      * The URL where the Git repository is located.
       */
     var RepositoryUrl: GitConfigUrl
     /**
@@ -1966,6 +1974,10 @@ object SageMakerNs extends js.Object {
       */
     var AlgorithmSpecification: HyperParameterAlgorithmSpecification
     /**
+      * To encrypt all communications between ML compute instances in distributed training, specify True. Encryption provides greater security for distributed training, but training take longer because of the additional communications between ML compute instances.
+      */
+    var EnableInterContainerTrafficEncryption: js.UndefOr[Boolean] = js.undefined
+    /**
       * Isolates the training container. No inbound or outbound network calls can be made, except for calls between peers within a training cluster for distributed training. If network isolation is used for training jobs that are configured to use a VPC, Amazon SageMaker downloads and uploads customer data and model artifacts through the specified VPC, but the training container does not have network access.  The Semantic Segmentation built-in algorithm does not support network isolation. 
       */
     var EnableNetworkIsolation: js.UndefOr[Boolean] = js.undefined
@@ -2017,7 +2029,7 @@ object SageMakerNs extends js.Object {
       */
     var ObjectiveStatus: js.UndefOr[ObjectiveStatus] = js.undefined
     /**
-      * The date and time that the training job ended.
+      * Specifies the time when the training job ends on training instances. You are billed for the time interval between the value of TrainingStartTime and this time. For successful jobs and stopped jobs, this is the time after model artifacts are uploaded. For failed jobs, this is the time when Amazon SageMaker detects a job failure.
       */
     var TrainingEndTime: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -2444,31 +2456,31 @@ object SageMakerNs extends js.Object {
   
   trait ListCodeRepositoriesInput extends js.Object {
     /**
-      * A filter that returns only git repositories that were created after the specified time.
+      * A filter that returns only Git repositories that were created after the specified time.
       */
     var CreationTimeAfter: js.UndefOr[CreationTime] = js.undefined
     /**
-      * A filter that returns only git repositories that were created before the specified time.
+      * A filter that returns only Git repositories that were created before the specified time.
       */
     var CreationTimeBefore: js.UndefOr[CreationTime] = js.undefined
     /**
-      * A filter that returns only git repositories that were last modified after the specified time.
+      * A filter that returns only Git repositories that were last modified after the specified time.
       */
     var LastModifiedTimeAfter: js.UndefOr[Timestamp] = js.undefined
     /**
-      * A filter that returns only git repositories that were last modified before the specified time.
+      * A filter that returns only Git repositories that were last modified before the specified time.
       */
     var LastModifiedTimeBefore: js.UndefOr[Timestamp] = js.undefined
     /**
-      * The maximum number of git repositories to return in the response.
+      * The maximum number of Git repositories to return in the response.
       */
     var MaxResults: js.UndefOr[MaxResults] = js.undefined
     /**
-      * A string in the git repositories name. This filter returns only repositories whose name contains the specified string.
+      * A string in the Git repositories name. This filter returns only repositories whose name contains the specified string.
       */
     var NameContains: js.UndefOr[CodeRepositoryNameContains] = js.undefined
     /**
-      * If the result of a ListCodeRepositoriesOutput request was truncated, the response includes a NextToken. To get the next set of git repositories, use the token in the next request.
+      * If the result of a ListCodeRepositoriesOutput request was truncated, the response includes a NextToken. To get the next set of Git repositories, use the token in the next request.
       */
     var NextToken: js.UndefOr[NextToken] = js.undefined
     /**
@@ -2483,11 +2495,11 @@ object SageMakerNs extends js.Object {
   
   trait ListCodeRepositoriesOutput extends js.Object {
     /**
-      * Gets a list of summaries of the git repositories. Each summary specifies the following values for the repository:    Name   Amazon Resource Name (ARN)   Creation time   Last modified time   Configuration information, including the URL location of the repository and the ARN of the AWS Secrets Manager secret that contains the credentials used to access the repository.     
+      * Gets a list of summaries of the Git repositories. Each summary specifies the following values for the repository:    Name   Amazon Resource Name (ARN)   Creation time   Last modified time   Configuration information, including the URL location of the repository and the ARN of the AWS Secrets Manager secret that contains the credentials used to access the repository.  
       */
     var CodeRepositorySummaryList: CodeRepositorySummaryList
     /**
-      * If the result of a ListCodeRepositoriesOutput request was truncated, the response includes a NextToken. To get the next set of git repositories, use the token in the next request.
+      * If the result of a ListCodeRepositoriesOutput request was truncated, the response includes a NextToken. To get the next set of Git repositories, use the token in the next request.
       */
     var NextToken: js.UndefOr[NextToken] = js.undefined
   }
@@ -2932,7 +2944,7 @@ object SageMakerNs extends js.Object {
   
   trait ListNotebookInstancesInput extends js.Object {
     /**
-      * A filter that returns only notebook instances with associated with the specified git respository.
+      * A filter that returns only notebook instances with associated with the specified git repository.
       */
     var AdditionalCodeRepositoryEquals: js.UndefOr[CodeRepositoryNameOrUrl] = js.undefined
     /**
@@ -2944,7 +2956,7 @@ object SageMakerNs extends js.Object {
       */
     var CreationTimeBefore: js.UndefOr[CreationTime] = js.undefined
     /**
-      * A string in the name or URL of a git repository associated with this notebook instance. This filter returns only notebook instances associated with a git repository with a name that contains the specified string.
+      * A string in the name or URL of a Git repository associated with this notebook instance. This filter returns only notebook instances associated with a git repository with a name that contains the specified string.
       */
     var DefaultCodeRepositoryContains: js.UndefOr[CodeRepositoryContains] = js.undefined
     /**
@@ -2964,7 +2976,7 @@ object SageMakerNs extends js.Object {
       */
     var NameContains: js.UndefOr[NotebookInstanceNameContains] = js.undefined
     /**
-      *  If the previous call to the ListNotebookInstances is truncated, the response includes a NextToken. You can use this token in your subsequent ListNotebookInstances request to fetch the next set of notebook instances.    You might specify a filter or a sort order in your request. When response is truncated, you must use the same values for the filer and sort order in the next request.  
+      *  If the previous call to the ListNotebookInstances is truncated, the response includes a NextToken. You can use this token in your subsequent ListNotebookInstances request to fetch the next set of notebook instances.   You might specify a filter or a sort order in your request. When response is truncated, you must use the same values for the filer and sort order in the next request.  
       */
     var NextToken: js.UndefOr[NextToken] = js.undefined
     /**
@@ -3416,7 +3428,7 @@ object SageMakerNs extends js.Object {
   
   trait NotebookInstanceSummary extends js.Object {
     /**
-      * An array of up to 3 git repositories associated with the notebook instance. These can be either the names of git repositories stored as resources in your account, or the URL of git repositories in AWS CodeCommit or in any other git repository. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
+      * An array of up to three Git repositories associated with the notebook instance. These can be either the names of Git repositories stored as resources in your account, or the URL of Git repositories in AWS CodeCommit or in any other Git repository. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
       */
     var AdditionalCodeRepositories: js.UndefOr[AdditionalCodeRepositoryNamesOrUrls] = js.undefined
     /**
@@ -3424,7 +3436,7 @@ object SageMakerNs extends js.Object {
       */
     var CreationTime: js.UndefOr[CreationTime] = js.undefined
     /**
-      * The git repository associated with the notebook instance as its default code repository. This can be either the name of a git repository stored as a resource in your account, or the URL of a git repository in AWS CodeCommit or in any other git repository. When you open a notebook instance, it opens in the directory that contains this repository. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
+      * The Git repository associated with the notebook instance as its default code repository. This can be either the name of a Git repository stored as a resource in your account, or the URL of a Git repository in AWS CodeCommit or in any other Git repository. When you open a notebook instance, it opens in the directory that contains this repository. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
       */
     var DefaultCodeRepository: js.UndefOr[CodeRepositoryNameOrUrl] = js.undefined
     /**
@@ -3616,7 +3628,7 @@ object SageMakerNs extends js.Object {
       */
     var Task: RenderableTask
     /**
-      * A Templateobject containing the worker UI template to render.
+      * A Template object containing the worker UI template to render.
       */
     var UiTemplate: UiTemplate
   }
@@ -3858,7 +3870,7 @@ object SageMakerNs extends js.Object {
   
   trait StoppingCondition extends js.Object {
     /**
-      * The maximum length of time, in seconds, that the training job can run. If model training does not complete during this time, Amazon SageMaker ends the job. If value is not specified, default value is 1 day. Maximum value is 5 days.
+      * The maximum length of time, in seconds, that the training job can run. If model training does not complete during this time, Amazon SageMaker ends the job. If value is not specified, default value is 1 day. Maximum value is 28 days.
       */
     var MaxRuntimeInSeconds: js.UndefOr[MaxRuntimeInSeconds] = js.undefined
   }
@@ -4106,7 +4118,7 @@ object SageMakerNs extends js.Object {
       */
     var TrainingChannels: ChannelSpecifications
     /**
-      * The Amazon Amazon ECR registry path of the Docker image that contains the training algorithm.
+      * The Amazon ECR registry path of the Docker image that contains the training algorithm.
       */
     var TrainingImage: Image
     /**
@@ -4127,7 +4139,7 @@ object SageMakerNs extends js.Object {
   
   trait TransformInput extends js.Object {
     /**
-      * Compressing data helps save on storage space. If your transform data is compressed, specify the compression type. Amazon SageMaker automatically decompresses the data for the transform job accordingly. The default value is None.
+      * If your transform data is compressed, specify the compression type. Amazon SageMaker automatically decompresses the data for the transform job accordingly. The default value is None.
       */
     var CompressionType: js.UndefOr[CompressionType] = js.undefined
     /**
@@ -4135,11 +4147,11 @@ object SageMakerNs extends js.Object {
       */
     var ContentType: js.UndefOr[ContentType] = js.undefined
     /**
-      * Describes the location of the channel data, meaning the S3 location of the input data that the model can consume.
+      * Describes the location of the channel data, which is, the S3 location of the input data that the model can consume.
       */
     var DataSource: TransformDataSource
     /**
-      * The method to use to split the transform job's data files into smaller batches. Splitting is necessary when the total size of each object is too large to fit in a single request. You can also use data splitting to improve performance by processing multiple concurrent mini-batches. The default value for SplitType is None, which indicates that input data files are not split, and request payloads contain the entire contents of an input object. Set the value of this parameter to Line to split records on a newline character boundary. SplitType also supports a number of record-oriented binary data formats. When splitting is enabled, the size of a mini-batch depends on the values of the BatchStrategy and MaxPayloadInMB parameters. When the value of BatchStrategy is MultiRecord, Amazon SageMaker sends the maximum number of records in each request, up to the MaxPayloadInMB limit. If the value of BatchStrategy is SingleRecord, Amazon SageMaker sends individual records in each request.  Some data formats represent a record as a binary payload wrapped with extra padding bytes. When splitting is applied to a binary data format, padding is removed if the value of BatchStrategy is set to SingleRecord. Padding is not removed if the value of BatchStrategy is set to MultiRecord.  For more information about the RecordIO data format, see Data Format in the MXNet documentation. For more information about the TFRecord fofmat, see Consuming TFRecord data in the TensorFlow documentation.
+      * The method to use to split the transform job's data into smaller batches. If you don't want to split the data, specify None. If you want to split records on a newline character boundary, specify Line. To split records according to the RecordIO format, specify RecordIO. The default value is None.  Amazon SageMaker sends the maximum number of records per batch in each request up to the MaxPayloadInMB limit. For more information, see RecordIO data format.  For information about the RecordIO format, see Data Format. 
       */
     var SplitType: js.UndefOr[SplitType] = js.undefined
   }
@@ -4212,7 +4224,7 @@ object SageMakerNs extends js.Object {
       */
     var Accept: js.UndefOr[Accept] = js.undefined
     /**
-      * Defines how to assemble the results of the transform job as a single S3 object. You should select a format that is most convenient to you. To concatenate the results in binary format, specify None. To add a newline character at the end of every transformed record, specify Line.
+      * Defines how to assemble the results of the transform job as a single S3 object. Choose a format that is most convenient to you. To concatenate the results in binary format, specify None. To add a newline character at the end of every transformed record, specify Line.
       */
     var AssembleWith: js.UndefOr[AssemblyType] = js.undefined
     /**
@@ -4220,7 +4232,7 @@ object SageMakerNs extends js.Object {
       */
     var KmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
     /**
-      * The Amazon S3 path where you want Amazon SageMaker to store the results of the transform job. For example, s3://bucket-name/key-name-prefix. For every S3 object used as input for the transform job, the transformed data is stored in a corresponding subfolder in the location under the output prefix. For example, the input data s3://bucket-name/input-name-prefix/dataset01/data.csv will have the transformed data stored at s3://bucket-name/key-name-prefix/dataset01/, based on the original name, as a series of .part files (.part0001, part0002, etc).
+      * The Amazon S3 path where you want Amazon SageMaker to store the results of the transform job. For example, s3://bucket-name/key-name-prefix. For every S3 object used as input for the transform job, the transformed data is stored in a corresponding subfolder in the location under the output prefix. For example, for the input data s3://bucket-name/input-name-prefix/dataset01/data.csv the transformed data is stored at s3://bucket-name/key-name-prefix/dataset01/. This is based on the original name, as a series of .part files (.part0001, part0002, etc.).
       */
     var S3OutputPath: S3Uri
   }
@@ -4295,7 +4307,7 @@ object SageMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateAlgorithmOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Create a git repository as a resource in your Amazon SageMaker account. You can associate the repository with notebook instances so that you can use git source control for the notebooks you create. The git repository is a resource in your Amazon SageMaker account, so it can be associated with more than one notebook instance, and it persists independently from the lifecycle of any notebook instances it is associated with. The repository can be hosted either in AWS CodeCommit or in any other git repository.
+      * Creates a Git repository as a resource in your Amazon SageMaker account. You can associate the repository with notebook instances so that you can use Git source control for the notebooks you create. The Git repository is a resource in your Amazon SageMaker account, so it can be associated with more than one notebook instance, and it persists independently from the lifecycle of any notebook instances it is associated with. The repository can be hosted either in AWS CodeCommit or in any other Git repository.
       */
     def createCodeRepository(): awsDashSdkLib.libRequestMod.Request[CreateCodeRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createCodeRepository(
@@ -4306,7 +4318,7 @@ object SageMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateCodeRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Create a git repository as a resource in your Amazon SageMaker account. You can associate the repository with notebook instances so that you can use git source control for the notebooks you create. The git repository is a resource in your Amazon SageMaker account, so it can be associated with more than one notebook instance, and it persists independently from the lifecycle of any notebook instances it is associated with. The repository can be hosted either in AWS CodeCommit or in any other git repository.
+      * Creates a Git repository as a resource in your Amazon SageMaker account. You can associate the repository with notebook instances so that you can use Git source control for the notebooks you create. The Git repository is a resource in your Amazon SageMaker account, so it can be associated with more than one notebook instance, and it persists independently from the lifecycle of any notebook instances it is associated with. The repository can be hosted either in AWS CodeCommit or in any other Git repository.
       */
     def createCodeRepository(params: CreateCodeRepositoryInput): awsDashSdkLib.libRequestMod.Request[CreateCodeRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createCodeRepository(
@@ -4632,14 +4644,14 @@ object SageMakerNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deletes the specified git repository from your account.
+      * Deletes the specified Git repository from your account.
       */
     def deleteCodeRepository(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def deleteCodeRepository(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deletes the specified git repository from your account.
+      * Deletes the specified Git repository from your account.
       */
     def deleteCodeRepository(params: DeleteCodeRepositoryInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def deleteCodeRepository(
@@ -4806,7 +4818,7 @@ object SageMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeAlgorithmOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Gets details about the specified git repository.
+      * Gets details about the specified Git repository.
       */
     def describeCodeRepository(): awsDashSdkLib.libRequestMod.Request[DescribeCodeRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeCodeRepository(
@@ -4817,7 +4829,7 @@ object SageMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeCodeRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Gets details about the specified git repository.
+      * Gets details about the specified Git repository.
       */
     def describeCodeRepository(params: DescribeCodeRepositoryInput): awsDashSdkLib.libRequestMod.Request[DescribeCodeRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeCodeRepository(
@@ -5174,7 +5186,7 @@ object SageMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListAlgorithmsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Gets a list of the git repositories in your account.
+      * Gets a list of the Git repositories in your account.
       */
     def listCodeRepositories(): awsDashSdkLib.libRequestMod.Request[ListCodeRepositoriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listCodeRepositories(
@@ -5185,7 +5197,7 @@ object SageMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListCodeRepositoriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Gets a list of the git repositories in your account.
+      * Gets a list of the Git repositories in your account.
       */
     def listCodeRepositories(params: ListCodeRepositoriesInput): awsDashSdkLib.libRequestMod.Request[ListCodeRepositoriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listCodeRepositories(
@@ -5712,7 +5724,7 @@ object SageMakerNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Updates the specified git repository with the specified values.
+      * Updates the specified Git repository with the specified values.
       */
     def updateCodeRepository(): awsDashSdkLib.libRequestMod.Request[UpdateCodeRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateCodeRepository(
@@ -5723,7 +5735,7 @@ object SageMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateCodeRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Updates the specified git repository with the specified values.
+      * Updates the specified Git repository with the specified values.
       */
     def updateCodeRepository(params: UpdateCodeRepositoryInput): awsDashSdkLib.libRequestMod.Request[UpdateCodeRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateCodeRepository(
@@ -5735,7 +5747,7 @@ object SageMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateCodeRepositoryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      *  Deploys the new EndpointConfig specified in the request, switches to using newly created endpoint, and then deletes resources provisioned for the endpoint using the previous EndpointConfig (there is no availability loss).  When Amazon SageMaker receives the request, it sets the endpoint status to Updating. After updating the endpoint, it sets the status to InService. To check the status of an endpoint, use the DescribeEndpoint API.   You cannot update an endpoint with the current EndpointConfig. To update an endpoint, you must create a new EndpointConfig. 
+      * Deploys the new EndpointConfig specified in the request, switches to using newly created endpoint, and then deletes resources provisioned for the endpoint using the previous EndpointConfig (there is no availability loss).  When Amazon SageMaker receives the request, it sets the endpoint status to Updating. After updating the endpoint, it sets the status to InService. To check the status of an endpoint, use the DescribeEndpoint API.   You cannot update an endpoint with the current EndpointConfig. To update an endpoint, you must create a new EndpointConfig. 
       */
     def updateEndpoint(): awsDashSdkLib.libRequestMod.Request[UpdateEndpointOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateEndpoint(
@@ -5746,7 +5758,7 @@ object SageMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateEndpointOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      *  Deploys the new EndpointConfig specified in the request, switches to using newly created endpoint, and then deletes resources provisioned for the endpoint using the previous EndpointConfig (there is no availability loss).  When Amazon SageMaker receives the request, it sets the endpoint status to Updating. After updating the endpoint, it sets the status to InService. To check the status of an endpoint, use the DescribeEndpoint API.   You cannot update an endpoint with the current EndpointConfig. To update an endpoint, you must create a new EndpointConfig. 
+      * Deploys the new EndpointConfig specified in the request, switches to using newly created endpoint, and then deletes resources provisioned for the endpoint using the previous EndpointConfig (there is no availability loss).  When Amazon SageMaker receives the request, it sets the endpoint status to Updating. After updating the endpoint, it sets the status to InService. To check the status of an endpoint, use the DescribeEndpoint API.   You cannot update an endpoint with the current EndpointConfig. To update an endpoint, you must create a new EndpointConfig. 
       */
     def updateEndpoint(params: UpdateEndpointInput): awsDashSdkLib.libRequestMod.Request[UpdateEndpointOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateEndpoint(
@@ -6106,7 +6118,7 @@ object SageMakerNs extends js.Object {
   
   trait UpdateCodeRepositoryInput extends js.Object {
     /**
-      * The name of the git repository to update.
+      * The name of the Git repository to update.
       */
     var CodeRepositoryName: EntityName
     /**
@@ -6117,7 +6129,7 @@ object SageMakerNs extends js.Object {
   
   trait UpdateCodeRepositoryOutput extends js.Object {
     /**
-      * The ARN of the git repository.
+      * The ARN of the Git repository.
       */
     var CodeRepositoryArn: CodeRepositoryArn
   }
@@ -6164,11 +6176,11 @@ object SageMakerNs extends js.Object {
       */
     var AcceleratorTypes: js.UndefOr[NotebookInstanceAcceleratorTypes] = js.undefined
     /**
-      * An array of up to 3 git repositories to associate with the notebook instance. These can be either the names of git repositories stored as resources in your account, or the URL of git repositories in AWS CodeCommit or in any other git repository.. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
+      * An array of up to three Git repositories to associate with the notebook instance. These can be either the names of Git repositories stored as resources in your account, or the URL of Git repositories in AWS CodeCommit or in any other Git repository.. These repositories are cloned at the same level as the default repository of your notebook instance. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
       */
     var AdditionalCodeRepositories: js.UndefOr[AdditionalCodeRepositoryNamesOrUrls] = js.undefined
     /**
-      * The git repository to associate with the notebook instance as its default code repository. This can be either the name of a git repository stored as a resource in your account, or the URL of a git repository in AWS CodeCommit or in any other git repository. When you open a notebook instance, it opens in the directory that contains this repository. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
+      * The Git repository to associate with the notebook instance as its default code repository. This can be either the name of a Git repository stored as a resource in your account, or the URL of a Git repository in AWS CodeCommit or in any other Git repository. When you open a notebook instance, it opens in the directory that contains this repository. For more information, see Associating Git Repositories with Amazon SageMaker Notebook Instances.
       */
     var DefaultCodeRepository: js.UndefOr[CodeRepositoryNameOrUrl] = js.undefined
     /**
@@ -6176,11 +6188,11 @@ object SageMakerNs extends js.Object {
       */
     var DisassociateAcceleratorTypes: js.UndefOr[DisassociateNotebookInstanceAcceleratorTypes] = js.undefined
     /**
-      * A list of names or URLs of the default git repositories to remove from this notebook instance.
+      * A list of names or URLs of the default Git repositories to remove from this notebook instance.
       */
     var DisassociateAdditionalCodeRepositories: js.UndefOr[DisassociateAdditionalCodeRepositories] = js.undefined
     /**
-      * The name or URL of the default git repository to remove from this notebook instance.
+      * The name or URL of the default Git repository to remove from this notebook instance.
       */
     var DisassociateDefaultCodeRepository: js.UndefOr[DisassociateDefaultCodeRepository] = js.undefined
     /**

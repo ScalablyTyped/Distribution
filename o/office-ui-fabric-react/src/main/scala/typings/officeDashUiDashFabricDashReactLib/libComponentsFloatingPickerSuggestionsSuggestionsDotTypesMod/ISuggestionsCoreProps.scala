@@ -50,7 +50,7 @@ trait ISuggestionsCoreProps[T]
     * The list of Suggestions that will be displayed
     */
   var suggestions: js.Array[
-    officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[T]
+    officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionModel[T]
   ] = js.native
   /**
     * Screen reader message to read when there are suggestions available.

@@ -44,13 +44,6 @@ trait PivotTableData extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * The PivotLayout describing the layout and visual structure of the PivotTable.
-    *
-    * [Api set: ExcelApi 1.8]
-    */
-  var layout: js.UndefOr[PivotLayoutData] = js.undefined
-  /**
-    *
     * Name of the PivotTable.
     *
     * [Api set: ExcelApi 1.3]
@@ -63,12 +56,5 @@ trait PivotTableData extends js.Object {
     * [Api set: ExcelApi 1.8]
     */
   var rowHierarchies: js.UndefOr[js.Array[RowColumnPivotHierarchyData]] = js.undefined
-  /**
-    *
-    * The worksheet containing the current PivotTable.
-    *
-    * [Api set: ExcelApi 1.3]
-    */
-  var worksheet: js.UndefOr[WorksheetData] = js.undefined
 }
 

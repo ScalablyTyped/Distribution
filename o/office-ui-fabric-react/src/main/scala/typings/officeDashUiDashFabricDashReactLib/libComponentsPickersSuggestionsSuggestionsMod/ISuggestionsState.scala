@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ISuggestionsState extends js.Object {
-  var selectedActionType: SuggestionActionType
+  var selectedActionType: officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsDotTypesMod.SuggestionActionType
 }
 

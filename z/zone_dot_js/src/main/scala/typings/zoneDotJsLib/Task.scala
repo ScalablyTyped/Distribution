@@ -29,9 +29,16 @@ trait Task extends js.Object {
     */
   var callback: js.Function
   /**
+    * Represents the default work which needs to be done to un-schedule the Task from the VM. Not all
+    * Tasks are cancelable, and therefore this method is optional.
+    *
+    * A zone may chose to intercept this function and perform its own un-scheduling.
+    */
+  var cancelFn: js.UndefOr[js.Function1[/* task */ Task, scala.Unit]] = js.undefined
+  /**
     * Task specific options associated with the current task. This is passed to the `scheduleFn`.
     */
-  var data: TaskData
+  var data: js.UndefOr[TaskData] = js.undefined
   /**
     * The Function to be used by the VM upon entering the [Task]. This function will delegate to
     * [Zone.runTask] and delegate to `callback`.
@@ -41,6 +48,12 @@ trait Task extends js.Object {
     * Number of times the task has been executed, or -1 if canceled.
     */
   var runCount: scala.Double
+  /**
+    * Represents the default work which needs to be done to schedule the Task by the VM.
+    *
+    * A zone may choose to intercept this function and perform its own scheduling.
+    */
+  var scheduleFn: js.UndefOr[js.Function1[/* task */ Task, scala.Unit]] = js.undefined
   /**
     * Debug string representing the API which requested the scheduling of the task.
     */
@@ -59,23 +72,10 @@ trait Task extends js.Object {
     */
   val zone: Zone
   /**
-    * Represents the default work which needs to be done to un-schedule the Task from the VM. Not all
-    * Tasks are cancelable, and therefore this method is optional.
-    *
-    * A zone may chose to intercept this function and perform its own un-scheduling.
-    */
-  def cancelFn(task: Task): scala.Unit
-  /**
     * Cancel the scheduling request. This method can be called from `ZoneSpec.onScheduleTask` to
     * cancel the current scheduling interception. Once canceled the task can be discarded or
     * rescheduled using `Zone.scheduleTask` on a different zone.
     */
   def cancelScheduleRequest(): scala.Unit
-  /**
-    * Represents the default work which needs to be done to schedule the Task by the VM.
-    *
-    * A zone may choose to intercept this function and perform its own scheduling.
-    */
-  def scheduleFn(task: Task): scala.Unit
 }
 

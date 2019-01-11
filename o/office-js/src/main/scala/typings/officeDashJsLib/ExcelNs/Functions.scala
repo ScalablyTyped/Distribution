@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Functions ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Functions: RequestContext = js.native
   def abs(number: FunctionResult[_]): FunctionResult[scala.Double] = js.native
   def abs(number: Range): FunctionResult[scala.Double] = js.native
   def abs(number: RangeReference): FunctionResult[scala.Double] = js.native
@@ -5677,6 +5680,10 @@ class Functions ()
   def timevalue(timeText: Range): FunctionResult[scala.Double] = js.native
   def timevalue(timeText: RangeReference): FunctionResult[scala.Double] = js.native
   def timevalue(timeText: scala.Double): FunctionResult[scala.Double] = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.Functions object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.FunctionsData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
     *

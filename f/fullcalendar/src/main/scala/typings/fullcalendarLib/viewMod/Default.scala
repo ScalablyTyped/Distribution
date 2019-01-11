@@ -89,7 +89,7 @@ abstract class Default protected ()
   def triggerBaseUnrendered(): scala.Unit = js.native
   def triggerDayClick(footprint: js.Any, dayEl: js.Any, ev: js.Any): scala.Unit = js.native
   def triggerEventDrop(eventInstance: js.Any, dateDelta: js.Any, undoFunc: js.Any, el: js.Any, ev: js.Any): scala.Unit = js.native
-  def triggerEventResize(eventInstance: js.Any, durationDelta: js.Any, undoFunc: js.Any, el: js.Any, ev: js.Any): scala.Unit = js.native
+  def triggerEventResize(eventInstance: js.Any, resizeDelta: js.Any, undoFunc: js.Any, el: js.Any, ev: js.Any): scala.Unit = js.native
   def triggerExternalDrop(singleEventDef: js.Any, isEvent: js.Any, el: js.Any, ev: js.Any, ui: js.Any): scala.Unit = js.native
   def triggerSelect(footprint: js.Any): scala.Unit = js.native
   def triggerSelect(footprint: js.Any, ev: js.Any): scala.Unit = js.native

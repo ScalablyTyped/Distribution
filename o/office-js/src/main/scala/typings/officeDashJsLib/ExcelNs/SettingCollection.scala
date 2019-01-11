@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class SettingCollection ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_SettingCollection: RequestContext = js.native
   /** Gets the loaded child items in this collection. */
   val items: js.Array[Setting] = js.native
   /**
@@ -88,6 +91,10 @@ class SettingCollection ()
   def load(option: java.lang.String): SettingCollection = js.native
   def load(option: js.Array[java.lang.String]): SettingCollection = js.native
   def load(option: officeDashJsLib.OfficeExtensionNs.LoadOption): SettingCollection = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original `Excel.SettingCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.SettingCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.SettingCollectionData = js.native
 }
 

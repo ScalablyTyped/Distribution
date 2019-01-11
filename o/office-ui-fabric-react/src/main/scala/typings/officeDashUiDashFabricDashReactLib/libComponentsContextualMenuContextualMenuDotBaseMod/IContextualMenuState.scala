@@ -13,6 +13,7 @@ trait IContextualMenuState extends js.Object {
   ] = js.undefined
   var contextualMenuTarget: js.UndefOr[reactLib.Element] = js.undefined
   var dismissedMenuItemKey: js.UndefOr[java.lang.String] = js.undefined
+  /** True if the menu was expanded by mouse click OR hover (as opposed to by keyboard) */
   var expandedByMouseClick: js.UndefOr[scala.Boolean] = js.undefined
   var expandedMenuItemKey: js.UndefOr[java.lang.String] = js.undefined
   var positions: js.UndefOr[js.Any] = js.undefined

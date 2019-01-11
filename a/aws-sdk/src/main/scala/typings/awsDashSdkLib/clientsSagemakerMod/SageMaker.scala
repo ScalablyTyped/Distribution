@@ -81,7 +81,7 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Create a git repository as a resource in your Amazon SageMaker account. You can associate the repository with notebook instances so that you can use git source control for the notebooks you create. The git repository is a resource in your Amazon SageMaker account, so it can be associated with more than one notebook instance, and it persists independently from the lifecycle of any notebook instances it is associated with. The repository can be hosted either in AWS CodeCommit or in any other git repository.
+    * Creates a Git repository as a resource in your Amazon SageMaker account. You can associate the repository with notebook instances so that you can use Git source control for the notebooks you create. The Git repository is a resource in your Amazon SageMaker account, so it can be associated with more than one notebook instance, and it persists independently from the lifecycle of any notebook instances it is associated with. The repository can be hosted either in AWS CodeCommit or in any other Git repository.
     */
   def createCodeRepository(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCodeRepositoryOutput, 
@@ -98,7 +98,7 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Create a git repository as a resource in your Amazon SageMaker account. You can associate the repository with notebook instances so that you can use git source control for the notebooks you create. The git repository is a resource in your Amazon SageMaker account, so it can be associated with more than one notebook instance, and it persists independently from the lifecycle of any notebook instances it is associated with. The repository can be hosted either in AWS CodeCommit or in any other git repository.
+    * Creates a Git repository as a resource in your Amazon SageMaker account. You can associate the repository with notebook instances so that you can use Git source control for the notebooks you create. The Git repository is a resource in your Amazon SageMaker account, so it can be associated with more than one notebook instance, and it persists independently from the lifecycle of any notebook instances it is associated with. The repository can be hosted either in AWS CodeCommit or in any other Git repository.
     */
   def createCodeRepository(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCodeRepositoryInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.CreateCodeRepositoryOutput, 
@@ -586,14 +586,14 @@ trait SageMaker
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the specified git repository from your account.
+    * Deletes the specified Git repository from your account.
     */
   def deleteCodeRepository(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCodeRepository(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Deletes the specified git repository from your account.
+    * Deletes the specified Git repository from your account.
     */
   def deleteCodeRepository(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DeleteCodeRepositoryInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def deleteCodeRepository(
@@ -796,7 +796,7 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Gets details about the specified git repository.
+    * Gets details about the specified Git repository.
     */
   def describeCodeRepository(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCodeRepositoryOutput, 
@@ -813,7 +813,7 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Gets details about the specified git repository.
+    * Gets details about the specified Git repository.
     */
   def describeCodeRepository(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCodeRepositoryInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.DescribeCodeRepositoryOutput, 
@@ -1356,7 +1356,7 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Gets a list of the git repositories in your account.
+    * Gets a list of the Git repositories in your account.
     */
   def listCodeRepositories(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCodeRepositoriesOutput, 
@@ -1373,7 +1373,7 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Gets a list of the git repositories in your account.
+    * Gets a list of the Git repositories in your account.
     */
   def listCodeRepositories(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCodeRepositoriesInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ListCodeRepositoriesOutput, 
@@ -2128,7 +2128,7 @@ trait SageMaker
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Updates the specified git repository with the specified values.
+    * Updates the specified Git repository with the specified values.
     */
   def updateCodeRepository(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateCodeRepositoryOutput, 
@@ -2145,7 +2145,7 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Updates the specified git repository with the specified values.
+    * Updates the specified Git repository with the specified values.
     */
   def updateCodeRepository(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateCodeRepositoryInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateCodeRepositoryOutput, 
@@ -2163,7 +2163,7 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Deploys the new EndpointConfig specified in the request, switches to using newly created endpoint, and then deletes resources provisioned for the endpoint using the previous EndpointConfig (there is no availability loss).  When Amazon SageMaker receives the request, it sets the endpoint status to Updating. After updating the endpoint, it sets the status to InService. To check the status of an endpoint, use the DescribeEndpoint API.   You cannot update an endpoint with the current EndpointConfig. To update an endpoint, you must create a new EndpointConfig. 
+    * Deploys the new EndpointConfig specified in the request, switches to using newly created endpoint, and then deletes resources provisioned for the endpoint using the previous EndpointConfig (there is no availability loss).  When Amazon SageMaker receives the request, it sets the endpoint status to Updating. After updating the endpoint, it sets the status to InService. To check the status of an endpoint, use the DescribeEndpoint API.   You cannot update an endpoint with the current EndpointConfig. To update an endpoint, you must create a new EndpointConfig. 
     */
   def updateEndpoint(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateEndpointOutput, 
@@ -2180,7 +2180,7 @@ trait SageMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  Deploys the new EndpointConfig specified in the request, switches to using newly created endpoint, and then deletes resources provisioned for the endpoint using the previous EndpointConfig (there is no availability loss).  When Amazon SageMaker receives the request, it sets the endpoint status to Updating. After updating the endpoint, it sets the status to InService. To check the status of an endpoint, use the DescribeEndpoint API.   You cannot update an endpoint with the current EndpointConfig. To update an endpoint, you must create a new EndpointConfig. 
+    * Deploys the new EndpointConfig specified in the request, switches to using newly created endpoint, and then deletes resources provisioned for the endpoint using the previous EndpointConfig (there is no availability loss).  When Amazon SageMaker receives the request, it sets the endpoint status to Updating. After updating the endpoint, it sets the status to InService. To check the status of an endpoint, use the DescribeEndpoint API.   You cannot update an endpoint with the current EndpointConfig. To update an endpoint, you must create a new EndpointConfig. 
     */
   def updateEndpoint(params: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateEndpointInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsSagemakerMod.SageMakerNs.UpdateEndpointOutput, 

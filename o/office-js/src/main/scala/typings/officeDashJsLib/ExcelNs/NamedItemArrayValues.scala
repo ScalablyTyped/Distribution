@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class NamedItemArrayValues ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_NamedItemArrayValues: RequestContext = js.native
   /**
     *
     * Represents the types for each item in the named item array
@@ -49,6 +52,10 @@ class NamedItemArrayValues ()
   def load(option: js.Array[java.lang.String]): NamedItemArrayValues = js.native
   def load(option: officeDashJsLib.Anon_Expand): NamedItemArrayValues = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.NamedItemArrayValuesLoadOptions): NamedItemArrayValues = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.NamedItemArrayValues object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.NamedItemArrayValuesData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.NamedItemArrayValuesData = js.native
 }
 

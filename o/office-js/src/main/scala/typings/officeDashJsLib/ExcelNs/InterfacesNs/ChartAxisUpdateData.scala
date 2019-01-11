@@ -35,15 +35,6 @@ trait ChartAxisUpdateData extends js.Object {
     officeDashJsLib.ExcelNs.ChartAxisCategoryType | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.TextAxis | officeDashJsLib.officeDashJsLibStrings.DateAxis
   ] = js.undefined
   /**
-    * [DEPRECATED; kept for back-compat with existing first-party solutions]. Please use `Position` instead.
-    * Represents the specified axis where the other axis crosses. See Excel.ChartAxisPosition for details.
-    *
-    * [Api set: ExcelApi 1.7]
-    */
-  var crosses: js.UndefOr[
-    officeDashJsLib.ExcelNs.ChartAxisPosition | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.Maximum | officeDashJsLib.officeDashJsLibStrings.Minimum | officeDashJsLib.officeDashJsLibStrings.Custom
-  ] = js.undefined
-  /**
     *
     * Represents the axis display unit. See Excel.ChartAxisDisplayUnit for details.
     *

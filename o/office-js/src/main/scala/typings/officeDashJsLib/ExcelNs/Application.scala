@@ -22,6 +22,9 @@ class Application ()
     * [Api set: ExcelApi 1.1 for get, 1.8 for set]
     */
   var calculationMode: CalculationMode | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.AutomaticExceptTables | officeDashJsLib.officeDashJsLibStrings.Manual = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Application: RequestContext = js.native
   /**
     *
     * Recalculate all currently opened workbooks in Excel.
@@ -90,6 +93,10 @@ class Application ()
     * [Api set: ExcelApi 1.6]
     */
   def suspendApiCalculationUntilNextSync(): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.ApplicationData = js.native
 }
 

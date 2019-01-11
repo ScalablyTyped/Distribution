@@ -52,6 +52,26 @@ trait Options extends js.Object {
     * Configure the bottom tabs
     */
   var bottomTabs: js.UndefOr[OptionsBottomTabs] = js.undefined
+  /**
+    * Custom Transition used for animate shared element between two screens
+    * Example:
+    ```js
+    Navigation.push(this.props.componentId, {
+    component: {
+    name: 'second.screen',
+    options: {
+    customTransition: {
+    animations: [
+    { type: 'sharedElement', fromId: 'image1', toId: 'image2', startDelay: 0, springVelocity: 0.2, duration: 0.5 }
+    ],
+    duration: 0.8
+    }
+    }
+    }
+    });
+    ```
+    */
+  var customTransition: js.UndefOr[OptionsCustomTransition] = js.undefined
   var fab: js.UndefOr[OptionsFab] = js.undefined
   /**
     * Configure the layout
@@ -61,6 +81,12 @@ trait Options extends js.Object {
     * Configure the presentation style of the modal
     */
   var modalPresentationStyle: js.UndefOr[OptionsModalPresentationStyle] = js.undefined
+  /**
+    * Configure the transition style of the modal
+    *
+    * #### (Android specific)
+    */
+  var modalTransitionStyle: js.UndefOr[OptionsModalTransitionStyle] = js.undefined
   /**
     * Configure the overlay
     */

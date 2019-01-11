@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class WorksheetProtection ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_WorksheetProtection: RequestContext = js.native
   /**
     *
     * Sheet protection options. Read-only.
@@ -61,6 +64,10 @@ class WorksheetProtection ()
   def protect(): scala.Unit = js.native
   def protect(options: WorksheetProtectionOptions): scala.Unit = js.native
   def protect(options: WorksheetProtectionOptions, password: java.lang.String): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.WorksheetProtection object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorksheetProtectionData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.WorksheetProtectionData = js.native
   /**
     *

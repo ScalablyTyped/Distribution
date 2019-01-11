@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class StyleCollection ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_StyleCollection: RequestContext = js.native
   /** 
     * WARNING: The StyleCollection items array has a known issue when loading items from the collection. Do not use `StyleCollection.items`, any `load()` method, and the `toJSON()` method.
     */

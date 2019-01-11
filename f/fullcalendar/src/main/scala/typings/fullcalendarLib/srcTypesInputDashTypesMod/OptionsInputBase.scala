@@ -74,7 +74,7 @@ trait OptionsInputBase extends js.Object {
     ]
   ] = js.undefined
   var eventAllow: js.UndefOr[
-    js.Function2[/* dropInfo */ DropInfo, /* draggedEvent */ stdLib.Event, scala.Boolean]
+    js.Function2[/* dropInfo */ DropInfo, /* draggedEvent */ EventObjectInput, scala.Boolean]
   ] = js.undefined
   var eventBackgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var eventBorderColor: js.UndefOr[java.lang.String] = js.undefined
@@ -252,6 +252,7 @@ trait OptionsInputBase extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
+  var selectAllow: js.UndefOr[js.Function1[/* selectInfo */ SelectInfo, scala.Boolean]] = js.undefined
   var selectConstraint: js.UndefOr[ConstraintInput] = js.undefined
   var selectHelper: js.UndefOr[scala.Boolean] = js.undefined
   var selectOverlap: js.UndefOr[scala.Boolean | (js.Function1[/* event */ EventObjectInput, scala.Boolean])] = js.undefined

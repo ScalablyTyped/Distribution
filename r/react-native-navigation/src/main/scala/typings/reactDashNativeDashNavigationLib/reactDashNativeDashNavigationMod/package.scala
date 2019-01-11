@@ -7,4 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashNavigationMod {
   type OptionsModalPresentationStyle = reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalPresentationStyle
+  type OptionsModalTransitionStyle = reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsModalTransitionStyle
 }

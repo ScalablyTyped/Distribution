@@ -46,7 +46,8 @@ object Linter extends js.Object {
   def findConfigurationPath(suppliedConfigFilePath: scala.Null, inputFilePath: java.lang.String): js.UndefOr[java.lang.String] = js.native
   /**
     * Returns a list of source file names from a TypeScript program. This includes all referenced
-    * files and excludes declaration (".d.ts") files.
+    * files and excludes declaration (".d.ts") files, as well as JSON files, to avoid problems with
+    * `resolveJsonModule`.
     */
   def getFileNames(program: typescriptLib.typescriptMod.tsNs.Program): js.Array[java.lang.String] = js.native
   def getRulesDirectories(): js.Array[java.lang.String] = js.native

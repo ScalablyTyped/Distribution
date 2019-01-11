@@ -67,19 +67,5 @@ trait NamedItemData extends js.Object {
     * [Api set: ExcelApi 1.1]
     */
   var visible: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-    *
-    * Returns the worksheet on which the named item is scoped to. Throws an error if the item is scoped to the workbook instead.
-    *
-    * [Api set: ExcelApi 1.4]
-    */
-  var worksheet: js.UndefOr[WorksheetData] = js.undefined
-  /**
-    *
-    * Returns the worksheet on which the named item is scoped to. Returns a null object if the item is scoped to the workbook instead.
-    *
-    * [Api set: ExcelApi 1.4]
-    */
-  var worksheetOrNullObject: js.UndefOr[WorksheetData] = js.undefined
 }
 

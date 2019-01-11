@@ -17,13 +17,14 @@ class ResizeSensor ()
   def componentDidUpdate_MResizeSensor(prevProps: IResizeSensorProps): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MResizeSensor(): scala.Unit = js.native
+  /* private */ def getElement(): js.Any = js.native
   /**
-    * Observe the given element, if defined and different from the currently
+    * Observe the DOM element, if defined and different from the currently
     * observed element. Pass `force` argument to skip element checks and always
     * re-observe.
     */
-  /* private */ def observeElement(element: js.Any): js.Any = js.native
-  /* private */ def observeElement(element: js.Any, force: js.Any): js.Any = js.native
+  /* private */ def observeElement(): js.Any = js.native
+  /* private */ def observeElement(force: js.Any): js.Any = js.native
 }
 
 @JSImport("@blueprintjs/core/lib/esm/components/resize-sensor/resizeSensor", "ResizeSensor")

@@ -44,22 +44,6 @@ trait ChartAxisData extends js.Object {
     officeDashJsLib.ExcelNs.ChartAxisCategoryType | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.TextAxis | officeDashJsLib.officeDashJsLibStrings.DateAxis
   ] = js.undefined
   /**
-    * [DEPRECATED; kept for back-compat with existing first-party solutions]. Please use `Position` instead.
-    * Represents the specified axis where the other axis crosses. See Excel.ChartAxisPosition for details.
-    *
-    * [Api set: ExcelApi 1.7]
-    */
-  var crosses: js.UndefOr[
-    officeDashJsLib.ExcelNs.ChartAxisPosition | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.Maximum | officeDashJsLib.officeDashJsLibStrings.Minimum | officeDashJsLib.officeDashJsLibStrings.Custom
-  ] = js.undefined
-  /**
-    * [DEPRECATED; kept for back-compat with existing first-party solutions]. Please use `PositionAt` instead.
-    * Represents the specified axis where the other axis crosses at. Read Only. Set to this property should use SetCrossesAt(double) method.
-    *
-    * [Api set: ExcelApi 1.7]
-    */
-  var crossesAt: js.UndefOr[scala.Double] = js.undefined
-  /**
     *
     * Represents the custom axis display unit value. Read-only. To set this property, please use the SetCustomDisplayUnit(double) method.
     *

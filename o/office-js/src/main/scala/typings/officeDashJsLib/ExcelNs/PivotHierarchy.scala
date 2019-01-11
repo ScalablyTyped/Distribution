@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class PivotHierarchy ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_PivotHierarchy: RequestContext = js.native
   /**
     *
     * Returns the PivotFields associated with the PivotHierarchy.
@@ -74,6 +77,10 @@ class PivotHierarchy ()
   ): scala.Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: PivotHierarchy): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.PivotHierarchy object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotHierarchyData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.PivotHierarchyData = js.native
 }
 

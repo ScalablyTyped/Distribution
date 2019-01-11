@@ -1458,6 +1458,10 @@ object IotNs extends js.Object {
       */
     var ruleName: RuleName
     /**
+      * Metadata which can be used to manage the topic rule.  For URI Request parameters use format: ...key1=value1&amp;key2=value2... For the CLI command-line parameter use format: --tags "key1=value1&amp;key2=value2..." For the cli-input-json file use format: "tags": "key1=value1&amp;key2=value2..." 
+      */
+    var tags: js.UndefOr[String] = js.undefined
+    /**
       * The rule payload.
       */
     var topicRulePayload: TopicRulePayload
@@ -2361,11 +2365,11 @@ object IotNs extends js.Object {
     /**
       * Specifies the DynamoDB table to which the message data will be written. For example:  { "dynamoDBv2": { "roleArn": "aws:iam:12341251:my-role" "putItem": { "tableName": "my-table" } } }  Each attribute in the message payload will be written to a separate column in the DynamoDB database.
       */
-    var putItem: js.UndefOr[PutItemInput] = js.undefined
+    var putItem: PutItemInput
     /**
       * The ARN of the IAM role that grants access to the DynamoDB table.
       */
-    var roleArn: js.UndefOr[AwsArn] = js.undefined
+    var roleArn: AwsArn
   }
   
   trait EffectivePolicy extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class ComponentEventsObserver protected () extends js.Object {
   def this(nativeEventsReceiver: reactDashNativeDashNavigationLib.libDistAdaptersNativeEventsReceiverMod.NativeEventsReceiver) = this()
   var alreadyRegistered: js.Any = js.native
-  val listeners: js.Any = js.native
+  var listeners: js.Any = js.native
   val nativeEventsReceiver: js.Any = js.native
   var triggerOnAllListenersByComponentId: js.Any = js.native
   def bindComponent(component: reactLib.reactMod.Component[_, js.Object, _]): reactDashNativeDashNavigationLib.libDistInterfacesEventSubscriptionMod.EventSubscription = js.native

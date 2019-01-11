@@ -17,6 +17,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class CustomXmlPartScopedCollection ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_CustomXmlPartScopedCollection: RequestContext = js.native
   /** Gets the loaded child items in this collection. */
   val items: js.Array[CustomXmlPart] = js.native
   /**
@@ -83,6 +86,10 @@ class CustomXmlPartScopedCollection ()
   def load(option: java.lang.String): CustomXmlPartScopedCollection = js.native
   def load(option: js.Array[java.lang.String]): CustomXmlPartScopedCollection = js.native
   def load(option: officeDashJsLib.OfficeExtensionNs.LoadOption): CustomXmlPartScopedCollection = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original `Excel.CustomXmlPartScopedCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CustomXmlPartScopedCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.CustomXmlPartScopedCollectionData = js.native
 }
 

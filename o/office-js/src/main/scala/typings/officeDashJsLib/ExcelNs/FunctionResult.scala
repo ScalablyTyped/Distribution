@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class FunctionResult[T] ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_FunctionResult: RequestContext = js.native
   /**
     *
     * Error value (such as "#DIV/0") representing the error. If the error string is not set, then the function succeeded, and its result is written to the Value field. The error is always in the English locale.
@@ -49,6 +52,10 @@ class FunctionResult[T] ()
   def load(option: js.Array[java.lang.String]): FunctionResult[T] = js.native
   def load(option: officeDashJsLib.Anon_Expand): FunctionResult[T] = js.native
   def load(option: officeDashJsLib.ExcelNs.InterfacesNs.FunctionResultLoadOptions): FunctionResult[T] = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original FunctionResult<T> object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Interfaces.FunctionResultData<T>`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.FunctionResultData[T] = js.native
 }
 

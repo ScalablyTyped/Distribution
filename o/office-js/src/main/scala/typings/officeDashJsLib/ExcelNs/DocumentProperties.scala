@@ -43,6 +43,9 @@ class DocumentProperties ()
     * [Api set: ExcelApi 1.7]
     */
   var company: java.lang.String = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_DocumentProperties: RequestContext = js.native
   /**
     *
     * Gets the creation date of the workbook. Read only.
@@ -137,6 +140,10 @@ class DocumentProperties ()
     properties: officeDashJsLib.ExcelNs.InterfacesNs.DocumentPropertiesUpdateData,
     options: officeDashJsLib.OfficeExtensionNs.UpdateOptions
   ): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.DocumentProperties object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.DocumentPropertiesData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.DocumentPropertiesData = js.native
 }
 

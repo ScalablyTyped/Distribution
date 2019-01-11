@@ -24,7 +24,7 @@ trait IBasePickerProps[T]
     js.Function2[
       /* input */ java.lang.String, 
       /* ValidationState */ ValidationState, 
-      officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[T] | T
+      officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionModel[T] | T
     ]
   ] = js.native
   /**

@@ -190,12 +190,5 @@ trait RangeData extends js.Object {
     * [Api set: ExcelApi 1.1]
     */
   var values: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
-  /**
-    *
-    * The worksheet containing the current range. Read-only.
-    *
-    * [Api set: ExcelApi 1.1]
-    */
-  var worksheet: js.UndefOr[WorksheetData] = js.undefined
 }
 

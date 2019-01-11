@@ -9,7 +9,7 @@ trait ISuggestionsControlState[T] extends js.Object {
   var selectedFooterIndex: scala.Double
   var selectedHeaderIndex: scala.Double
   var suggestions: js.Array[
-    officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[T]
+    officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionModel[T]
   ]
 }
 

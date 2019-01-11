@@ -169,7 +169,7 @@ trait ChartSeriesUpdateData extends js.Object {
     * [Api set: ExcelApi 1.8]
     */
   var splitType: js.UndefOr[
-    officeDashJsLib.officeDashJsLibStrings.SplitByPosition | officeDashJsLib.officeDashJsLibStrings.SplitByValue | officeDashJsLib.officeDashJsLibStrings.SplitByPercentValue | officeDashJsLib.officeDashJsLibStrings.SplitByCustomSplit
+    officeDashJsLib.ExcelNs.ChartSplitType | officeDashJsLib.officeDashJsLibStrings.SplitByPosition | officeDashJsLib.officeDashJsLibStrings.SplitByValue | officeDashJsLib.officeDashJsLibStrings.SplitByPercentValue | officeDashJsLib.officeDashJsLibStrings.SplitByCustomSplit
   ] = js.undefined
   /**
     *

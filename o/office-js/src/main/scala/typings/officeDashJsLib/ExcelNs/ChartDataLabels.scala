@@ -22,6 +22,9 @@ class ChartDataLabels ()
     * [Api set: ExcelApi 1.8]
     */
   var autoText: scala.Boolean = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ChartDataLabels: RequestContext = js.native
   /**
     *
     * Represents the format of chart data labels, which includes fill and font formatting. Read-only.
@@ -31,7 +34,8 @@ class ChartDataLabels ()
   val format: ChartDataLabelFormat = js.native
   /**
     *
-    * Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details. This property is valid only when TextOrientation of data label is 0.
+    * Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
+    This property is valid only when TextOrientation of data label is 0.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -108,7 +112,8 @@ class ChartDataLabels ()
   var textOrientation: scala.Double = js.native
   /**
     *
-    * Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details. This property is valid only when TextOrientation of data label is -90, 90, or 180.
+    * Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details.
+    This property is valid only when TextOrientation of data label is 90, -90 or 180.
     *
     * [Api set: ExcelApi 1.8]
     */
@@ -151,6 +156,10 @@ class ChartDataLabels ()
     properties: officeDashJsLib.ExcelNs.InterfacesNs.ChartDataLabelsUpdateData,
     options: officeDashJsLib.OfficeExtensionNs.UpdateOptions
   ): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.ChartDataLabels object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartDataLabelsData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.ChartDataLabelsData = js.native
 }
 

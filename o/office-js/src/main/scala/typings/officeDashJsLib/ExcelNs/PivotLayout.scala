@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class PivotLayout ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_PivotLayout: RequestContext = js.native
   /**
     *
     * This property indicates the PivotLayoutType of all fields on the PivotTable. If fields have different states, this will be null.
@@ -116,6 +119,10 @@ class PivotLayout ()
   ): scala.Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: PivotLayout): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.PivotLayout object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.PivotLayoutData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.PivotLayoutData = js.native
 }
 

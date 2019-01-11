@@ -36,21 +36,27 @@ import scala.scalajs.js.annotation._
   *  Note: The ZoneDelegate treats ZoneSpec as class. This allows the ZoneSpec to use its `this` to
   *  store internal state.
   */
+@js.native
 trait ZoneDelegate extends js.Object {
-  var zone: Zone
-  def cancelTask(targetZone: Zone, task: Task): js.Any
-  def fork(targetZone: Zone, zoneSpec: ZoneSpec): Zone
-  def handleError(targetZone: Zone, error: js.Any): scala.Boolean
-  def hasTask(targetZone: Zone, isEmpty: HasTaskState): scala.Unit
-  def intercept(targetZone: Zone, callback: js.Function, source: java.lang.String): js.Function
+  var zone: Zone = js.native
+  def cancelTask(targetZone: Zone, task: Task): js.Any = js.native
+  def fork(targetZone: Zone, zoneSpec: ZoneSpec): Zone = js.native
+  def handleError(targetZone: Zone, error: js.Any): scala.Boolean = js.native
+  def hasTask(targetZone: Zone, isEmpty: HasTaskState): scala.Unit = js.native
+  def intercept(targetZone: Zone, callback: js.Function, source: java.lang.String): js.Function = js.native
+  def invoke(targetZone: Zone, callback: js.Function): js.Any = js.native
+  def invoke(targetZone: Zone, callback: js.Function, applyThis: js.Any): js.Any = js.native
+  def invoke(targetZone: Zone, callback: js.Function, applyThis: js.Any, applyArgs: js.Array[_]): js.Any = js.native
   def invoke(
     targetZone: Zone,
     callback: js.Function,
     applyThis: js.Any,
     applyArgs: js.Array[_],
     source: java.lang.String
-  ): js.Any
-  def invokeTask(targetZone: Zone, task: Task, applyThis: js.Any, applyArgs: js.Any): js.Any
-  def scheduleTask(targetZone: Zone, task: Task): Task
+  ): js.Any = js.native
+  def invokeTask(targetZone: Zone, task: Task): js.Any = js.native
+  def invokeTask(targetZone: Zone, task: Task, applyThis: js.Any): js.Any = js.native
+  def invokeTask(targetZone: Zone, task: Task, applyThis: js.Any, applyArgs: js.Array[_]): js.Any = js.native
+  def scheduleTask(targetZone: Zone, task: Task): Task = js.native
 }
 

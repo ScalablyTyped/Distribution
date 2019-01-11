@@ -142,6 +142,15 @@ object EventType extends js.Object {
   
   /**
     *
+    * WorkbookAutoSaveSettingChanged represents the type of event registered on workbook, and occurs when there is an auto save setting change.
+    *
+    */
+  @js.native
+  sealed trait workbookAutoSaveSettingChanged
+    extends officeDashJsLib.ExcelNs.EventType
+  
+  /**
+    *
     * WorksheetActivated represents the type of event registered on Worksheet or WorksheetCollection, and occurs when worksheet activates.
     *
     */
@@ -205,6 +214,15 @@ object EventType extends js.Object {
   
   /**
     *
+    * WorksheetFormatChanged represents the type of event registered on worksheet, and occurs when there is a format changed.
+    *
+    */
+  @js.native
+  sealed trait worksheetFormatChanged
+    extends officeDashJsLib.ExcelNs.EventType
+  
+  /**
+    *
     * WorksheetSelectionChanged represents the type of event registered on Worksheet, and occurs when selection changes.
     *
     */
@@ -226,6 +244,7 @@ object EventType extends js.Object {
   /* "TableSelectionChanged" */ val tableSelectionChanged: tableSelectionChanged with java.lang.String = js.native
   /* "VisualChange" */ val visualChange: visualChange with java.lang.String = js.native
   /* "VisualSelectionChanged" */ val visualSelectionChanged: visualSelectionChanged with java.lang.String = js.native
+  /* "WorkbookAutoSaveSettingChanged" */ val workbookAutoSaveSettingChanged: workbookAutoSaveSettingChanged with java.lang.String = js.native
   /* "WorksheetActivated" */ val worksheetActivated: worksheetActivated with java.lang.String = js.native
   /* "WorksheetAdded" */ val worksheetAdded: worksheetAdded with java.lang.String = js.native
   /* "WorksheetCalculated" */ val worksheetCalculated: worksheetCalculated with java.lang.String = js.native
@@ -233,6 +252,7 @@ object EventType extends js.Object {
   /* "WorksheetDeactivated" */ val worksheetDeactivated: worksheetDeactivated with java.lang.String = js.native
   /* "WorksheetDeleted" */ val worksheetDeleted: worksheetDeleted with java.lang.String = js.native
   /* "WorksheetFiltered" */ val worksheetFiltered: worksheetFiltered with java.lang.String = js.native
+  /* "WorksheetFormatChanged" */ val worksheetFormatChanged: worksheetFormatChanged with java.lang.String = js.native
   /* "WorksheetSelectionChanged" */ val worksheetSelectionChanged: worksheetSelectionChanged with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[officeDashJsLib.ExcelNs.EventType with java.lang.String] = js.native

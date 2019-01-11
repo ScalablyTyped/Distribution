@@ -17,7 +17,7 @@ class SuggestionsCore[T] protected ()
   var _selectedElement: reactLib.HTMLDivElement = js.native
   var currentIndex: scala.Double = js.native
   var currentSuggestion: js.UndefOr[
-    officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[T]
+    officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionModel[T]
   ] = js.native
   val selectedElement: js.UndefOr[reactLib.HTMLDivElement] = js.native
   /* private */ def _onClickTypedSuggestionsItem(item: js.Any, index: js.Any): js.Any = js.native
@@ -25,8 +25,8 @@ class SuggestionsCore[T] protected ()
   @JSName("componentDidUpdate")
   def componentDidUpdate_MSuggestionsCore(): scala.Unit = js.native
   def deselectAllSuggestions(): scala.Unit = js.native
-  def getCurrentItem(): officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[T] = js.native
-  def getSuggestionAtIndex(index: scala.Double): officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[T] = js.native
+  def getCurrentItem(): officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionModel[T] = js.native
+  def getSuggestionAtIndex(index: scala.Double): officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionModel[T] = js.native
   def hasSuggestionSelected(): scala.Boolean = js.native
   /**
     * Increments the selected suggestion index

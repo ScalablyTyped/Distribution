@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ChartLegendEntryCollection ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ChartLegendEntryCollection: RequestContext = js.native
   /** Gets the loaded child items in this collection. */
   val items: js.Array[ChartLegendEntry] = js.native
   /**
@@ -55,6 +58,10 @@ class ChartLegendEntryCollection ()
   def load(option: java.lang.String): ChartLegendEntryCollection = js.native
   def load(option: js.Array[java.lang.String]): ChartLegendEntryCollection = js.native
   def load(option: officeDashJsLib.OfficeExtensionNs.LoadOption): ChartLegendEntryCollection = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original `Excel.ChartLegendEntryCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartLegendEntryCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.ChartLegendEntryCollectionData = js.native
 }
 

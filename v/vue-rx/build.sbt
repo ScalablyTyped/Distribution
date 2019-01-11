@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-rx"
-version := "6.0.1-d9be6e"
+version := "6.1.0-d9be6e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

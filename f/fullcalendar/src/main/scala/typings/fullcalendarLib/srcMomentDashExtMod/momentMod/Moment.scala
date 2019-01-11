@@ -9,6 +9,6 @@ trait Moment extends js.Object {
   def hasTime(): scala.Boolean
   def stripTime(): js.Any
   def stripZone(): js.Any
-  def time(): momentLib.momentMod.momentNs.Duration
+  def time(): fullcalendarLib.srcMomentDashExtMod.MomentExtDuration
 }
 

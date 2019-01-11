@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/pickers", "SuggestionsItem")
 @js.native
 class SuggestionsItem[T] ()
-  extends officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsMod.SuggestionsItem[T]
+  extends officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsItemMod.SuggestionsItem[T]
 

@@ -22,6 +22,9 @@ class ConditionalRangeFormat ()
     * [Api set: ExcelApi 1.6]
     */
   val borders: ConditionalRangeBorderCollection = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ConditionalRangeFormat: RequestContext = js.native
   /**
     *
     * Returns the fill object defined on the overall conditional format range. Read-only.
@@ -81,6 +84,10 @@ class ConditionalRangeFormat ()
     properties: officeDashJsLib.ExcelNs.InterfacesNs.ConditionalRangeFormatUpdateData,
     options: officeDashJsLib.OfficeExtensionNs.UpdateOptions
   ): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.ConditionalRangeFormat object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ConditionalRangeFormatData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.ExcelNs.InterfacesNs.ConditionalRangeFormatData = js.native
 }
 

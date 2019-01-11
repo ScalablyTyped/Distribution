@@ -36,14 +36,14 @@ object CodeDeployNs extends js.Object {
       */
     var enabled: js.UndefOr[Boolean] = js.undefined
     /**
-      * Indicates whether a deployment should continue if information about the current state of alarms cannot be retrieved from Amazon CloudWatch. The default value is false.   true: The deployment will proceed even if alarm status information can't be retrieved from Amazon CloudWatch.   false: The deployment will stop if alarm status information can't be retrieved from Amazon CloudWatch.  
+      * Indicates whether a deployment should continue if information about the current state of alarms cannot be retrieved from Amazon CloudWatch. The default value is false.   true: The deployment proceeds even if alarm status information can't be retrieved from Amazon CloudWatch.   false: The deployment stops if alarm status information can't be retrieved from Amazon CloudWatch.  
       */
     var ignorePollAlarmFailure: js.UndefOr[Boolean] = js.undefined
   }
   
   trait AppSpecContent extends js.Object {
     /**
-      *  The YAML-formatted or JSON-formatted revision string.   For an AWS Lambda deployment the content includes a Lambda function name, the alias for its original version, and the alias for its replacement version. The deployment shifts traffic from the original version of the Lambda function to the replacement version.   For an Amazon ECS deployment the content includes the task name, information about the load balancer that serves traffic to the container, and more.   For both types of deployments, the content can specify Lambda functions that run at specified hooks, such as BeforeInstall, during a deployment. 
+      *  The YAML-formatted or JSON-formatted revision string.   For an AWS Lambda deployment, the content includes a Lambda function name, the alias for its original version, and the alias for its replacement version. The deployment shifts traffic from the original version of the Lambda function to the replacement version.   For an Amazon ECS deployment, the content includes the task name, information about the load balancer that serves traffic to the container, and more.   For both types of deployments, the content can specify Lambda functions that run at specified hooks, such as BeforeInstall, during a deployment. 
       */
     var content: js.UndefOr[RawStringContent] = js.undefined
     /**
@@ -74,7 +74,7 @@ object CodeDeployNs extends js.Object {
       */
     var gitHubAccountName: js.UndefOr[GitHubAccountTokenName] = js.undefined
     /**
-      * True if the user has authenticated with GitHub for the specified application; otherwise, false.
+      * True if the user has authenticated with GitHub for the specified application. Otherwise, false.
       */
     var linkedToGitHub: js.UndefOr[Boolean] = js.undefined
   }
@@ -118,7 +118,7 @@ object CodeDeployNs extends js.Object {
       */
     var applicationName: js.UndefOr[ApplicationName] = js.undefined
     /**
-      * Information about errors that may have occurred during the API call.
+      * Information about errors that might have occurred during the API call.
       */
     var errorMessage: js.UndefOr[ErrorMessage] = js.undefined
     /**
@@ -147,7 +147,7 @@ object CodeDeployNs extends js.Object {
       */
     var applicationName: ApplicationName
     /**
-      * The deployment groups' names.
+      * The names of the deployment groups.
       */
     var deploymentGroupNames: DeploymentGroupsList
   }
@@ -158,7 +158,7 @@ object CodeDeployNs extends js.Object {
       */
     var deploymentGroupsInfo: js.UndefOr[DeploymentGroupInfoList] = js.undefined
     /**
-      * Information about errors that may have occurred during the API call.
+      * Information about errors that might have occurred during the API call.
       */
     var errorMessage: js.UndefOr[ErrorMessage] = js.undefined
   }
@@ -169,14 +169,14 @@ object CodeDeployNs extends js.Object {
       */
     var deploymentId: DeploymentId
     /**
-      * The unique IDs of instances of the deployment.
+      * The unique IDs of instances used in the deployment.
       */
     var instanceIds: InstancesList
   }
   
   trait BatchGetDeploymentInstancesOutput extends js.Object {
     /**
-      * Information about errors that may have occurred during the API call.
+      * Information about errors that might have occurred during the API call.
       */
     var errorMessage: js.UndefOr[ErrorMessage] = js.undefined
     /**
@@ -191,14 +191,14 @@ object CodeDeployNs extends js.Object {
       */
     var deploymentId: js.UndefOr[DeploymentId] = js.undefined
     /**
-      *  The unique IDs of the deployment targets. The compute platform of the deployment determines the type of the targets and their formats.     For deployments that use the EC2/On-premises compute platform, the target IDs are EC2 or on-premises instances IDs and their target type is instanceTarget.     For deployments that use the AWS Lambda compute platform, the target IDs are the names of Lambda functions and their target type is instanceTarget.     For deployments that use the Amazon ECS compute platform, the target IDs are pairs of Amazon ECS clusters and services specified using the format &lt;clustername&gt;:&lt;servicename&gt;. Their target type is ecsTarget.   
+      *  The unique IDs of the deployment targets. The compute platform of the deployment determines the type of the targets and their formats.     For deployments that use the EC2/On-premises compute platform, the target IDs are EC2 or on-premises instances IDs, and their target type is instanceTarget.     For deployments that use the AWS Lambda compute platform, the target IDs are the names of Lambda functions, and their target type is instanceTarget.     For deployments that use the Amazon ECS compute platform, the target IDs are pairs of Amazon ECS clusters and services specified using the format &lt;clustername&gt;:&lt;servicename&gt;. Their target type is ecsTarget.   
       */
     var targetIds: js.UndefOr[TargetIdList] = js.undefined
   }
   
   trait BatchGetDeploymentTargetsOutput extends js.Object {
     /**
-      *  A list of target objects for a deployment. Each target object contains details about the target, such as its status and lifecycle events. The type of the target objects depends on the deployment' compute platform.     EC2/On-premises - Each target object is an EC2 or on-premises instance.     AWS Lambda - The target object is a specific version of an AWS Lambda function.     Amazon ECS - The target object is an Amazon ECS service.   
+      *  A list of target objects for a deployment. Each target object contains details about the target, such as its status and lifecycle events. The type of the target objects depends on the deployment' compute platform.     EC2/On-premises: Each target object is an EC2 or on-premises instance.     AWS Lambda: The target object is a specific version of an AWS Lambda function.     Amazon ECS: The target object is an Amazon ECS service.   
       */
     var deploymentTargets: js.UndefOr[DeploymentTargetList] = js.undefined
   }
@@ -307,7 +307,7 @@ object CodeDeployNs extends js.Object {
       */
     var minimumHealthyHosts: js.UndefOr[MinimumHealthyHosts] = js.undefined
     /**
-      * The configuration that specifies how the deployment traffic will be routed.
+      * The configuration that specifies how the deployment traffic is routed.
       */
     var trafficRoutingConfig: js.UndefOr[TrafficRoutingConfig] = js.undefined
   }
@@ -325,7 +325,7 @@ object CodeDeployNs extends js.Object {
       */
     var alarmConfiguration: js.UndefOr[AlarmConfiguration] = js.undefined
     /**
-      * The name of an AWS CodeDeploy application associated with the applicable IAM user or AWS account.
+      * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.
       */
     var applicationName: ApplicationName
     /**
@@ -333,7 +333,7 @@ object CodeDeployNs extends js.Object {
       */
     var autoRollbackConfiguration: js.UndefOr[AutoRollbackConfiguration] = js.undefined
     /**
-      * A list of associated Auto Scaling groups.
+      * A list of associated Amazon EC2 Auto Scaling groups.
       */
     var autoScalingGroups: js.UndefOr[AutoScalingGroupNameList] = js.undefined
     /**
@@ -341,7 +341,7 @@ object CodeDeployNs extends js.Object {
       */
     var blueGreenDeploymentConfiguration: js.UndefOr[BlueGreenDeploymentConfiguration] = js.undefined
     /**
-      * If specified, the deployment configuration name can be either one of the predefined configurations provided with AWS CodeDeploy or a custom deployment configuration that you create by calling the create deployment configuration operation. CodeDeployDefault.OneAtATime is the default deployment configuration. It is used if a configuration isn't specified for the deployment or the deployment group. For more information about the predefined deployment configurations in AWS CodeDeploy, see Working with Deployment Groups in AWS CodeDeploy in the AWS CodeDeploy User Guide.
+      * If specified, the deployment configuration name can be either one of the predefined configurations provided with AWS CodeDeploy or a custom deployment configuration that you create by calling the create deployment configuration operation. CodeDeployDefault.OneAtATime is the default deployment configuration. It is used if a configuration isn't specified for the deployment or deployment group. For more information about the predefined deployment configurations in AWS CodeDeploy, see Working with Deployment Groups in AWS CodeDeploy in the AWS CodeDeploy User Guide.
       */
     var deploymentConfigName: js.UndefOr[DeploymentConfigName] = js.undefined
     /**
@@ -353,15 +353,15 @@ object CodeDeployNs extends js.Object {
       */
     var deploymentStyle: js.UndefOr[DeploymentStyle] = js.undefined
     /**
-      * The Amazon EC2 tags on which to filter. The deployment group will include EC2 instances with any of the specified tags. Cannot be used in the same call as ec2TagSet.
+      * The Amazon EC2 tags on which to filter. The deployment group includes EC2 instances with any of the specified tags. Cannot be used in the same call as ec2TagSet.
       */
     var ec2TagFilters: js.UndefOr[EC2TagFilterList] = js.undefined
     /**
-      * Information about groups of tags applied to EC2 instances. The deployment group will include only EC2 instances identified by all the tag groups. Cannot be used in the same call as ec2TagFilters.
+      * Information about groups of tags applied to EC2 instances. The deployment group includes only EC2 instances identified by all the tag groups. Cannot be used in the same call as ec2TagFilters.
       */
     var ec2TagSet: js.UndefOr[EC2TagSet] = js.undefined
     /**
-      *  The target ECS services in the deployment group. This only applies to deployment groups that use the Amazon ECS compute platform. A target ECS service is specified as an Amazon ECS cluster and service name pair using the format &lt;clustername&gt;:&lt;servicename&gt;. 
+      *  The target Amazon ECS services in the deployment group. This applies only to deployment groups that use the Amazon ECS compute platform. A target Amazon ECS service is specified as an Amazon ECS cluster and service name pair using the format &lt;clustername&gt;:&lt;servicename&gt;. 
       */
     var ecsServices: js.UndefOr[ECSServiceList] = js.undefined
     /**
@@ -369,11 +369,11 @@ object CodeDeployNs extends js.Object {
       */
     var loadBalancerInfo: js.UndefOr[LoadBalancerInfo] = js.undefined
     /**
-      * The on-premises instance tags on which to filter. The deployment group will include on-premises instances with any of the specified tags. Cannot be used in the same call as OnPremisesTagSet.
+      * The on-premises instance tags on which to filter. The deployment group includes on-premises instances with any of the specified tags. Cannot be used in the same call as OnPremisesTagSet.
       */
     var onPremisesInstanceTagFilters: js.UndefOr[TagFilterList] = js.undefined
     /**
-      * Information about groups of tags applied to on-premises instances. The deployment group will include only on-premises instances identified by all the tag groups. Cannot be used in the same call as onPremisesInstanceTagFilters.
+      * Information about groups of tags applied to on-premises instances. The deployment group includes only on-premises instances identified by all of the tag groups. Cannot be used in the same call as onPremisesInstanceTagFilters.
       */
     var onPremisesTagSet: js.UndefOr[OnPremisesTagSet] = js.undefined
     /**
@@ -395,7 +395,7 @@ object CodeDeployNs extends js.Object {
   
   trait CreateDeploymentInput extends js.Object {
     /**
-      * The name of an AWS CodeDeploy application associated with the applicable IAM user or AWS account.
+      * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.
       */
     var applicationName: ApplicationName
     /**
@@ -403,7 +403,7 @@ object CodeDeployNs extends js.Object {
       */
     var autoRollbackConfiguration: js.UndefOr[AutoRollbackConfiguration] = js.undefined
     /**
-      * The name of a deployment configuration associated with the applicable IAM user or AWS account. If not specified, the value configured in the deployment group will be used as the default. If the deployment group does not have a deployment configuration associated with it, then CodeDeployDefault.OneAtATime will be used by default.
+      * The name of a deployment configuration associated with the IAM user or AWS account. If not specified, the value configured in the deployment group is used as the default. If the deployment group does not have a deployment configuration associated with it, CodeDeployDefault.OneAtATime is used by default.
       */
     var deploymentConfigName: js.UndefOr[DeploymentConfigName] = js.undefined
     /**
@@ -419,7 +419,7 @@ object CodeDeployNs extends js.Object {
       */
     var fileExistsBehavior: js.UndefOr[FileExistsBehavior] = js.undefined
     /**
-      *  If set to true, then if the deployment causes the ApplicationStop deployment lifecycle event to an instance to fail, the deployment to that instance will not be considered to have failed at that point and will continue on to the BeforeInstall deployment lifecycle event.   If set to false or not specified, then if the deployment causes the ApplicationStop deployment lifecycle event to fail to an instance, the deployment to that instance will stop, and the deployment to that instance will be considered to have failed. 
+      *  If set to true, then if the deployment causes the ApplicationStop deployment lifecycle event to an instance to fail, the deployment to that instance is considered to have failed at that point and continues on to the BeforeInstall deployment lifecycle event.   If set to false or not specified, then if the deployment causes the ApplicationStop deployment lifecycle event to fail to an instance, the deployment to that instance stops, and the deployment to that instance is considered to have failed. 
       */
     var ignoreApplicationStopFailures: js.UndefOr[Boolean] = js.undefined
     /**
@@ -427,7 +427,7 @@ object CodeDeployNs extends js.Object {
       */
     var revision: js.UndefOr[RevisionLocation] = js.undefined
     /**
-      *  Information about the instances that will belong to the replacement environment in a blue/green deployment. 
+      *  Information about the instances that belong to the replacement environment in a blue/green deployment. 
       */
     var targetInstances: js.UndefOr[TargetInstances] = js.undefined
     /**
@@ -445,25 +445,25 @@ object CodeDeployNs extends js.Object {
   
   trait DeleteApplicationInput extends js.Object {
     /**
-      * The name of an AWS CodeDeploy application associated with the applicable IAM user or AWS account.
+      * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.
       */
     var applicationName: ApplicationName
   }
   
   trait DeleteDeploymentConfigInput extends js.Object {
     /**
-      * The name of a deployment configuration associated with the applicable IAM user or AWS account.
+      * The name of a deployment configuration associated with the IAM user or AWS account.
       */
     var deploymentConfigName: DeploymentConfigName
   }
   
   trait DeleteDeploymentGroupInput extends js.Object {
     /**
-      * The name of an AWS CodeDeploy application associated with the applicable IAM user or AWS account.
+      * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.
       */
     var applicationName: ApplicationName
     /**
-      * The name of an existing deployment group for the specified application.
+      * The name of a deployment group for the specified application.
       */
     var deploymentGroupName: DeploymentGroupName
   }
@@ -511,7 +511,7 @@ object CodeDeployNs extends js.Object {
       */
     var minimumHealthyHosts: js.UndefOr[MinimumHealthyHosts] = js.undefined
     /**
-      * The configuration specifying how the deployment traffic will be routed. Only deployments with a Lambda compute platform can specify this.
+      * The configuration that specifies how the deployment traffic is routed. Only deployments with a Lambda compute platform can specify this.
       */
     var trafficRoutingConfig: js.UndefOr[TrafficRoutingConfig] = js.undefined
   }
@@ -562,11 +562,11 @@ object CodeDeployNs extends js.Object {
       */
     var ec2TagFilters: js.UndefOr[EC2TagFilterList] = js.undefined
     /**
-      * Information about groups of tags applied to an EC2 instance. The deployment group includes only EC2 instances identified by all the tag groups. Cannot be used in the same call as ec2TagFilters.
+      * Information about groups of tags applied to an EC2 instance. The deployment group includes only EC2 instances identified by all of the tag groups. Cannot be used in the same call as ec2TagFilters.
       */
     var ec2TagSet: js.UndefOr[EC2TagSet] = js.undefined
     /**
-      *  The target ECS services in the deployment group. This only applies to deployment groups that use the Amazon ECS compute platform. A target ECS service is specified as an Amazon ECS cluster and service name pair using the format &lt;clustername&gt;:&lt;servicename&gt;. 
+      *  The target Amazon ECS services in the deployment group. This applies only to deployment groups that use the Amazon ECS compute platform. A target Amazon ECS service is specified as an Amazon ECS cluster and service name pair using the format &lt;clustername&gt;:&lt;servicename&gt;. 
       */
     var ecsServices: js.UndefOr[ECSServiceList] = js.undefined
     /**
@@ -621,7 +621,7 @@ object CodeDeployNs extends js.Object {
       */
     var blueGreenDeploymentConfiguration: js.UndefOr[BlueGreenDeploymentConfiguration] = js.undefined
     /**
-      * A timestamp indicating when the deployment was complete.
+      * A timestamp that indicates when the deployment was complete.
       */
     var completeTime: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -629,11 +629,11 @@ object CodeDeployNs extends js.Object {
       */
     var computePlatform: js.UndefOr[ComputePlatform] = js.undefined
     /**
-      * A timestamp indicating when the deployment was created.
+      * A timestamp that indicates when the deployment was created.
       */
     var createTime: js.UndefOr[Timestamp] = js.undefined
     /**
-      * The means by which the deployment was created:   user: A user created the deployment.   autoscaling: Auto Scaling created the deployment.   codeDeployRollback: A rollback process created the deployment.  
+      * The means by which the deployment was created:   user: A user created the deployment.   autoscaling: Amazon EC2 Auto Scaling created the deployment.   codeDeployRollback: A rollback process created the deployment.  
       */
     var creator: js.UndefOr[DeploymentCreator] = js.undefined
     /**
@@ -673,11 +673,11 @@ object CodeDeployNs extends js.Object {
       */
     var fileExistsBehavior: js.UndefOr[FileExistsBehavior] = js.undefined
     /**
-      * If true, then if the deployment causes the ApplicationStop deployment lifecycle event to an instance to fail, the deployment to that instance will not be considered to have failed at that point and will continue on to the BeforeInstall deployment lifecycle event. If false or not specified, then if the deployment causes the ApplicationStop deployment lifecycle event to an instance to fail, the deployment to that instance will stop, and the deployment to that instance will be considered to have failed.
+      * If true, then if the deployment causes the ApplicationStop deployment lifecycle event to an instance to fail, the deployment to that instance is not considered to have failed at that point and continues on to the BeforeInstall deployment lifecycle event. If false or not specified, then if the deployment causes the ApplicationStop deployment lifecycle event to an instance to fail, the deployment to that instance stops, and the deployment to that instance is considered to have failed.
       */
     var ignoreApplicationStopFailures: js.UndefOr[Boolean] = js.undefined
     /**
-      * Indicates whether the wait period set for the termination of instances in the original environment has started. Status is 'false' if the KEEP_ALIVE option is specified; otherwise, 'true' as soon as the termination wait period starts.
+      * Indicates whether the wait period set for the termination of instances in the original environment has started. Status is 'false' if the KEEP_ALIVE option is specified. Otherwise, 'true' as soon as the termination wait period starts.
       */
     var instanceTerminationWaitTimeStarted: js.UndefOr[Boolean] = js.undefined
     /**
@@ -697,7 +697,7 @@ object CodeDeployNs extends js.Object {
       */
     var rollbackInfo: js.UndefOr[RollbackInfo] = js.undefined
     /**
-      * A timestamp indicating when the deployment was deployed to the deployment group. In some cases, the reported value of the start time may be later than the complete time. This is due to differences in the clock settings of back-end servers that participate in the deployment process.
+      * A timestamp that indicates when the deployment was deployed to the deployment group. In some cases, the reported value of the start time might be later than the complete time. This is due to differences in the clock settings of backend servers that participate in the deployment process.
       */
     var startTime: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -747,7 +747,7 @@ object CodeDeployNs extends js.Object {
       */
     var actionOnTimeout: js.UndefOr[DeploymentReadyAction] = js.undefined
     /**
-      * The number of minutes to wait before the status of a blue/green deployment changed to Stopped if rerouting is not started manually. Applies only to the STOP_DEPLOYMENT option for actionOnTimeout
+      * The number of minutes to wait before the status of a blue/green deployment is changed to Stopped if rerouting is not started manually. Applies only to the STOP_DEPLOYMENT option for actionOnTimeout
       */
     var waitTimeInMinutes: js.UndefOr[Duration] = js.undefined
   }
@@ -765,7 +765,7 @@ object CodeDeployNs extends js.Object {
   
   trait DeploymentTarget extends js.Object {
     /**
-      *  The deployment type which is specific to the deployment's compute platform. 
+      *  The deployment type that is specific to the deployment's compute platform. 
       */
     var deploymentTargetType: js.UndefOr[DeploymentTargetType] = js.undefined
     /**
@@ -825,18 +825,18 @@ object CodeDeployNs extends js.Object {
   
   trait EC2TagSet extends js.Object {
     /**
-      * A list containing other lists of EC2 instance tag groups. In order for an instance to be included in the deployment group, it must be identified by all the tag groups in the list.
+      * A list that contains other lists of EC2 instance tag groups. For an instance to be included in the deployment group, it must be identified by all of the tag groups in the list.
       */
     var ec2TagSetList: js.UndefOr[EC2TagSetList] = js.undefined
   }
   
   trait ECSService extends js.Object {
     /**
-      *  The name of the cluster that the ECS service is associated with. 
+      *  The name of the cluster that the Amazon ECS service is associated with. 
       */
     var clusterName: js.UndefOr[ECSClusterName] = js.undefined
     /**
-      *  The name of the target ECS service. 
+      *  The name of the target Amazon ECS service. 
       */
     var serviceName: js.UndefOr[ECSServiceName] = js.undefined
   }
@@ -874,7 +874,7 @@ object CodeDeployNs extends js.Object {
   
   trait ECSTaskSet extends js.Object {
     /**
-      *  The number of tasks in a task set. During a deployment that uses the Amazon ECS compute type, CodeDeploy asks Amazon ECS to create a new task set and uses this value to determine how many tasks to create. After the updated task set is created, CodeDeploy shifts traffic to the new task set. 
+      *  The number of tasks in a task set. During a deployment that uses the Amazon ECS compute type, CodeDeploy instructs Amazon ECS to create a new task set and uses this value to determine how many tasks to create. After the updated task set is created, CodeDeploy shifts traffic to the new task set. 
       */
     var desiredCount: js.UndefOr[ECSTaskSetCount] = js.undefined
     /**
@@ -890,7 +890,7 @@ object CodeDeployNs extends js.Object {
       */
     var runningCount: js.UndefOr[ECSTaskSetCount] = js.undefined
     /**
-      *  The status of the task set. There are three valid task set statuses:     PRIMARY - indicates the task set is serving production traffic.     ACTIVE - indicates the task set is not serving production traffic.     DRAINING - indicates the tasks in the task set are being stopped and their corresponding targets are being deregistered from their target group.   
+      *  The status of the task set. There are three valid task set statuses:     PRIMARY: Indicates the task set is serving production traffic.     ACTIVE: Indicates the task set is not serving production traffic.     DRAINING: Indicates the tasks in the task set are being stopped and their corresponding targets are being deregistered from their target group.   
       */
     var status: js.UndefOr[ECSTaskSetStatus] = js.undefined
     /**
@@ -909,14 +909,14 @@ object CodeDeployNs extends js.Object {
   
   trait ELBInfo extends js.Object {
     /**
-      * For blue/green deployments, the name of the load balancer that will be used to route traffic from original instances to replacement instances in a blue/green deployment. For in-place deployments, the name of the load balancer that instances are deregistered from so they are not serving traffic during a deployment, and then re-registered with after the deployment completes.
+      * For blue/green deployments, the name of the load balancer that is used to route traffic from original instances to replacement instances in a blue/green deployment. For in-place deployments, the name of the load balancer that instances are deregistered from so they are not serving traffic during a deployment, and then re-registered with after the deployment is complete.
       */
     var name: js.UndefOr[ELBName] = js.undefined
   }
   
   trait ErrorInformation extends js.Object {
     /**
-      * For information about additional error codes, see Error Codes for AWS CodeDeploy in the AWS CodeDeploy User Guide. The error code:   APPLICATION_MISSING: The application was missing. This error code will most likely be raised if the application is deleted after the deployment is created but before it is started.   DEPLOYMENT_GROUP_MISSING: The deployment group was missing. This error code will most likely be raised if the deployment group is deleted after the deployment is created but before it is started.   HEALTH_CONSTRAINTS: The deployment failed on too many instances to be successfully deployed within the instance health constraints specified.   HEALTH_CONSTRAINTS_INVALID: The revision cannot be successfully deployed within the instance health constraints specified.   IAM_ROLE_MISSING: The service role cannot be accessed.   IAM_ROLE_PERMISSIONS: The service role does not have the correct permissions.   INTERNAL_ERROR: There was an internal error.   NO_EC2_SUBSCRIPTION: The calling account is not subscribed to the Amazon EC2 service.   NO_INSTANCES: No instance were specified, or no instance can be found.   OVER_MAX_INSTANCES: The maximum number of instance was exceeded.   THROTTLED: The operation was throttled because the calling account exceeded the throttling limits of one or more AWS services.   TIMEOUT: The deployment has timed out.   REVISION_MISSING: The revision ID was missing. This error code will most likely be raised if the revision is deleted after the deployment is created but before it is started.  
+      * For more information, see Error Codes for AWS CodeDeploy in the AWS CodeDeploy User Guide. The error code:   APPLICATION_MISSING: The application was missing. This error code is most likely raised if the application is deleted after the deployment is created, but before it is started.   DEPLOYMENT_GROUP_MISSING: The deployment group was missing. This error code is most likely raised if the deployment group is deleted after the deployment is created, but before it is started.   HEALTH_CONSTRAINTS: The deployment failed on too many instances to be successfully deployed within the instance health constraints specified.   HEALTH_CONSTRAINTS_INVALID: The revision cannot be successfully deployed within the instance health constraints specified.   IAM_ROLE_MISSING: The service role cannot be accessed.   IAM_ROLE_PERMISSIONS: The service role does not have the correct permissions.   INTERNAL_ERROR: There was an internal error.   NO_EC2_SUBSCRIPTION: The calling account is not subscribed to Amazon EC2.   NO_INSTANCES: No instances were specified, or no instances can be found.   OVER_MAX_INSTANCES: The maximum number of instances was exceeded.   THROTTLED: The operation was throttled because the calling account exceeded the throttling limits of one or more AWS services.   TIMEOUT: The deployment has timed out.   REVISION_MISSING: The revision ID was missing. This error code is most likely raised if the revision is deleted after the deployment is created, but before it is started.  
       */
     var code: js.UndefOr[ErrorCode] = js.undefined
     /**
@@ -950,7 +950,7 @@ object CodeDeployNs extends js.Object {
   
   trait GetApplicationInput extends js.Object {
     /**
-      * The name of an AWS CodeDeploy application associated with the applicable IAM user or AWS account.
+      * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.
       */
     var applicationName: ApplicationName
   }
@@ -990,7 +990,7 @@ object CodeDeployNs extends js.Object {
   
   trait GetDeploymentConfigInput extends js.Object {
     /**
-      * The name of a deployment configuration associated with the applicable IAM user or AWS account.
+      * The name of a deployment configuration associated with the IAM user or AWS account.
       */
     var deploymentConfigName: DeploymentConfigName
   }
@@ -1004,11 +1004,11 @@ object CodeDeployNs extends js.Object {
   
   trait GetDeploymentGroupInput extends js.Object {
     /**
-      * The name of an AWS CodeDeploy application associated with the applicable IAM user or AWS account.
+      * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.
       */
     var applicationName: ApplicationName
     /**
-      * The name of an existing deployment group for the specified application.
+      * The name of a deployment group for the specified application.
       */
     var deploymentGroupName: DeploymentGroupName
   }
@@ -1022,7 +1022,7 @@ object CodeDeployNs extends js.Object {
   
   trait GetDeploymentInput extends js.Object {
     /**
-      *  The unique ID of a deployment associated with the applicable IAM user or AWS account. 
+      *  The unique ID of a deployment associated with the IAM user or AWS account. 
       */
     var deploymentId: DeploymentId
   }
@@ -1065,7 +1065,7 @@ object CodeDeployNs extends js.Object {
   
   trait GetDeploymentTargetOutput extends js.Object {
     /**
-      *  A deployment target that contains information about a deployment such as its status, lifecyle events, and when it was updated last. It also contains metadata about the deployment target. The deployment target metadata depends on the deployment target's type (instanceTarget, lambdaTarget, or ecsTarget). 
+      *  A deployment target that contains information about a deployment such as its status, lifecyle events, and when it was last updated. It also contains metadata about the deployment target. The deployment target metadata depends on the deployment target's type (instanceTarget, lambdaTarget, or ecsTarget). 
       */
     var deploymentTarget: js.UndefOr[DeploymentTarget] = js.undefined
   }
@@ -1147,7 +1147,7 @@ object CodeDeployNs extends js.Object {
       */
     var instanceType: js.UndefOr[InstanceType] = js.undefined
     /**
-      * A timestamp indicating when the instance information was last updated.
+      * A timestamp that indicaties when the instance information was last updated.
       */
     var lastUpdatedAt: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -1220,7 +1220,7 @@ object CodeDeployNs extends js.Object {
   
   trait LastDeploymentInfo extends js.Object {
     /**
-      * A timestamp indicating when the most recent deployment to the deployment group started.
+      * A timestamp that indicates when the most recent deployment to the deployment group started.
       */
     var createTime: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -1228,7 +1228,7 @@ object CodeDeployNs extends js.Object {
       */
     var deploymentId: js.UndefOr[DeploymentId] = js.undefined
     /**
-      * A timestamp indicating when the most recent deployment to the deployment group completed.
+      * A timestamp that indicates when the most recent deployment to the deployment group was complete.
       */
     var endTime: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -1243,7 +1243,7 @@ object CodeDeployNs extends js.Object {
       */
     var diagnostics: js.UndefOr[Diagnostics] = js.undefined
     /**
-      * A timestamp indicating when the deployment lifecycle event ended.
+      * A timestamp that indicates when the deployment lifecycle event ended.
       */
     var endTime: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -1251,7 +1251,7 @@ object CodeDeployNs extends js.Object {
       */
     var lifecycleEventName: js.UndefOr[LifecycleEventName] = js.undefined
     /**
-      * A timestamp indicating when the deployment lifecycle event started.
+      * A timestamp that indicates when the deployment lifecycle event started.
       */
     var startTime: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -1262,7 +1262,7 @@ object CodeDeployNs extends js.Object {
   
   trait ListApplicationRevisionsInput extends js.Object {
     /**
-      *  The name of an AWS CodeDeploy application associated with the applicable IAM user or AWS account. 
+      *  The name of an AWS CodeDeploy application associated with the IAM user or AWS account. 
       */
     var applicationName: ApplicationName
     /**
@@ -1282,18 +1282,18 @@ object CodeDeployNs extends js.Object {
       */
     var s3KeyPrefix: js.UndefOr[S3Key] = js.undefined
     /**
-      * The column name to use to sort the list results:   registerTime: Sort by the time the revisions were registered with AWS CodeDeploy.   firstUsedTime: Sort by the time the revisions were first used in a deployment.   lastUsedTime: Sort by the time the revisions were last used in a deployment.    If not specified or set to null, the results will be returned in an arbitrary order. 
+      * The column name to use to sort the list results:   registerTime: Sort by the time the revisions were registered with AWS CodeDeploy.   firstUsedTime: Sort by the time the revisions were first used in a deployment.   lastUsedTime: Sort by the time the revisions were last used in a deployment.    If not specified or set to null, the results are returned in an arbitrary order. 
       */
     var sortBy: js.UndefOr[ApplicationRevisionSortBy] = js.undefined
     /**
-      *  The order in which to sort the list results:    ascending: ascending order.   descending: descending order.   If not specified, the results will be sorted in ascending order. If set to null, the results will be sorted in an arbitrary order.
+      *  The order in which to sort the list results:    ascending: ascending order.   descending: descending order.   If not specified, the results are sorted in ascending order. If set to null, the results are sorted in an arbitrary order.
       */
     var sortOrder: js.UndefOr[SortOrder] = js.undefined
   }
   
   trait ListApplicationRevisionsOutput extends js.Object {
     /**
-      * If a large amount of information is returned, an identifier will also be returned. It can be used in a subsequent list application revisions call to return the next set of application revisions in the list.
+      * If a large amount of information is returned, an identifier is also returned. It can be used in a subsequent list application revisions call to return the next set of application revisions in the list.
       */
     var nextToken: js.UndefOr[NextToken] = js.undefined
     /**
@@ -1315,7 +1315,7 @@ object CodeDeployNs extends js.Object {
       */
     var applications: js.UndefOr[ApplicationsList] = js.undefined
     /**
-      * If a large amount of information is returned, an identifier is also returned. It can be used in a subsequent list applications call to return the next set of applications, will also be returned. in the list.
+      * If a large amount of information is returned, an identifier is also returned. It can be used in a subsequent list applications call to return the next set of applications in the list.
       */
     var nextToken: js.UndefOr[NextToken] = js.undefined
   }
@@ -1340,7 +1340,7 @@ object CodeDeployNs extends js.Object {
   
   trait ListDeploymentGroupsInput extends js.Object {
     /**
-      * The name of an AWS CodeDeploy application associated with the applicable IAM user or AWS account.
+      * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.
       */
     var applicationName: ApplicationName
     /**
@@ -1355,7 +1355,7 @@ object CodeDeployNs extends js.Object {
       */
     var applicationName: js.UndefOr[ApplicationName] = js.undefined
     /**
-      * A list of corresponding deployment group names.
+      * A list of deployment group names.
       */
     var deploymentGroups: js.UndefOr[DeploymentGroupsList] = js.undefined
     /**
@@ -1370,7 +1370,7 @@ object CodeDeployNs extends js.Object {
       */
     var deploymentId: DeploymentId
     /**
-      * A subset of instances to list by status:   Pending: Include those instance with pending deployments.   InProgress: Include those instance where deployments are still in progress.   Succeeded: Include those instances with successful deployments.   Failed: Include those instance with failed deployments.   Skipped: Include those instance with skipped deployments.   Unknown: Include those instance with deployments in an unknown state.  
+      * A subset of instances to list by status:   Pending: Include those instances with pending deployments.   InProgress: Include those instances where deployments are still in progress.   Succeeded: Include those instances with successful deployments.   Failed: Include those instances with failed deployments.   Skipped: Include those instances with skipped deployments.   Unknown: Include those instances with deployments in an unknown state.  
       */
     var instanceStatusFilter: js.UndefOr[InstanceStatusList] = js.undefined
     /**
@@ -1411,7 +1411,7 @@ object CodeDeployNs extends js.Object {
   
   trait ListDeploymentTargetsOutput extends js.Object {
     /**
-      *  If a large amount of information is returned, a token identifier will also be returned. It can be used in a subsequent ListDeploymentTargets call to return the next set of deployment targets in the list. 
+      *  If a large amount of information is returned, a token identifier is also returned. It can be used in a subsequent ListDeploymentTargets call to return the next set of deployment targets in the list. 
       */
     var nextToken: js.UndefOr[NextToken] = js.undefined
     /**
@@ -1422,7 +1422,7 @@ object CodeDeployNs extends js.Object {
   
   trait ListDeploymentsInput extends js.Object {
     /**
-      * The name of an AWS CodeDeploy application associated with the applicable IAM user or AWS account.
+      * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.
       */
     var applicationName: js.UndefOr[ApplicationName] = js.undefined
     /**
@@ -1430,7 +1430,7 @@ object CodeDeployNs extends js.Object {
       */
     var createTimeRange: js.UndefOr[TimeRange] = js.undefined
     /**
-      * The name of an existing deployment group for the specified application.
+      * The name of a deployment group for the specified application.
       */
     var deploymentGroupName: js.UndefOr[DeploymentGroupName] = js.undefined
     /**
@@ -1482,7 +1482,7 @@ object CodeDeployNs extends js.Object {
       */
     var registrationStatus: js.UndefOr[RegistrationStatus] = js.undefined
     /**
-      * The on-premises instance tags that will be used to restrict the corresponding on-premises instance names returned.
+      * The on-premises instance tags that are used to restrict the on-premises instance names returned.
       */
     var tagFilters: js.UndefOr[TagFilterList] = js.undefined
   }
@@ -1500,11 +1500,11 @@ object CodeDeployNs extends js.Object {
   
   trait LoadBalancerInfo extends js.Object {
     /**
-      * An array containing information about the load balancer to use for load balancing in a deployment. In Elastic Load Balancing, load balancers are used with Classic Load Balancers.   Adding more than one load balancer to the array is not supported.  
+      * An array that contains information about the load balancer to use for load balancing in a deployment. In Elastic Load Balancing, load balancers are used with Classic Load Balancers.   Adding more than one load balancer to the array is not supported.  
       */
     var elbInfoList: js.UndefOr[ELBInfoList] = js.undefined
     /**
-      * An array containing information about the target group to use for load balancing in a deployment. In Elastic Load Balancing, target groups are used with Application Load Balancers.   Adding more than one target group to the array is not supported.  
+      * An array that contains information about the target group to use for load balancing in a deployment. In Elastic Load Balancing, target groups are used with Application Load Balancers.   Adding more than one target group to the array is not supported.  
       */
     var targetGroupInfoList: js.UndefOr[TargetGroupInfoList] = js.undefined
     /**
@@ -1515,7 +1515,7 @@ object CodeDeployNs extends js.Object {
   
   trait MinimumHealthyHosts extends js.Object {
     /**
-      * The minimum healthy instance type:   HOST_COUNT: The minimum number of healthy instance as an absolute value.   FLEET_PERCENT: The minimum number of healthy instance as a percentage of the total number of instance in the deployment.   In an example of nine instance, if a HOST_COUNT of six is specified, deploy to up to three instances at a time. The deployment will be successful if six or more instances are deployed to successfully; otherwise, the deployment fails. If a FLEET_PERCENT of 40 is specified, deploy to up to five instance at a time. The deployment will be successful if four or more instance are deployed to successfully; otherwise, the deployment fails.  In a call to the get deployment configuration operation, CodeDeployDefault.OneAtATime will return a minimum healthy instance type of MOST_CONCURRENCY and a value of 1. This means a deployment to only one instance at a time. (You cannot set the type to MOST_CONCURRENCY, only to HOST_COUNT or FLEET_PERCENT.) In addition, with CodeDeployDefault.OneAtATime, AWS CodeDeploy will try to ensure that all instances but one are kept in a healthy state during the deployment. Although this allows one instance at a time to be taken offline for a new deployment, it also means that if the deployment to the last instance fails, the overall deployment still succeeds.  For more information, see AWS CodeDeploy Instance Health in the AWS CodeDeploy User Guide.
+      * The minimum healthy instance type:   HOST_COUNT: The minimum number of healthy instance as an absolute value.   FLEET_PERCENT: The minimum number of healthy instance as a percentage of the total number of instance in the deployment.   In an example of nine instance, if a HOST_COUNT of six is specified, deploy to up to three instances at a time. The deployment is successful if six or more instances are deployed to successfully. Otherwise, the deployment fails. If a FLEET_PERCENT of 40 is specified, deploy to up to five instance at a time. The deployment is successful if four or more instance are deployed to successfully. Otherwise, the deployment fails.  In a call to the get deployment configuration operation, CodeDeployDefault.OneAtATime returns a minimum healthy instance type of MOST_CONCURRENCY and a value of 1. This means a deployment to only one instance at a time. (You cannot set the type to MOST_CONCURRENCY, only to HOST_COUNT or FLEET_PERCENT.) In addition, with CodeDeployDefault.OneAtATime, AWS CodeDeploy attempts to ensure that all instances but one are kept in a healthy state during the deployment. Although this allows one instance at a time to be taken offline for a new deployment, it also means that if the deployment to the last instance fails, the overall deployment is still successful.  For more information, see AWS CodeDeploy Instance Health in the AWS CodeDeploy User Guide.
       */
     var `type`: js.UndefOr[MinimumHealthyHostsType] = js.undefined
     /**
@@ -1526,7 +1526,7 @@ object CodeDeployNs extends js.Object {
   
   trait OnPremisesTagSet extends js.Object {
     /**
-      * A list containing other lists of on-premises instance tag groups. In order for an instance to be included in the deployment group, it must be identified by all the tag groups in the list.
+      * A list that contains other lists of on-premises instance tag groups. For an instance to be included in the deployment group, it must be identified by all of the tag groups in the list.
       */
     var onPremisesTagSetList: js.UndefOr[OnPremisesTagSetList] = js.undefined
   }
@@ -1566,7 +1566,7 @@ object CodeDeployNs extends js.Object {
   
   trait RegisterApplicationRevisionInput extends js.Object {
     /**
-      * The name of an AWS CodeDeploy application associated with the applicable IAM user or AWS account.
+      * The name of an AWS CodeDeploy application associated with the IAM user or AWS account.
       */
     var applicationName: ApplicationName
     /**
@@ -1626,7 +1626,7 @@ object CodeDeployNs extends js.Object {
       */
     var gitHubLocation: js.UndefOr[GitHubLocation] = js.undefined
     /**
-      * The type of application revision:   S3: An application revision stored in Amazon S3.   GitHub: An application revision stored in GitHub (EC2/On-premises deployments only)   String: A YAML-formatted or JSON-formatted string (AWS Lambda deployments only)  
+      * The type of application revision:   S3: An application revision stored in Amazon S3.   GitHub: An application revision stored in GitHub (EC2/On-premises deployments only).   String: A YAML-formatted or JSON-formatted string (AWS Lambda deployments only).  
       */
     var revisionType: js.UndefOr[RevisionLocationType] = js.undefined
     /**
@@ -1645,7 +1645,7 @@ object CodeDeployNs extends js.Object {
       */
     var rollbackDeploymentId: js.UndefOr[DeploymentId] = js.undefined
     /**
-      * Information describing the status of a deployment rollback; for example, whether the deployment can't be rolled back, is in progress, failed, or succeeded. 
+      * Information that describes the status of a deployment rollback (for example, whether the deployment can't be rolled back, is in progress, failed, or succeeded). 
       */
     var rollbackMessage: js.UndefOr[Description] = js.undefined
     /**
@@ -1664,7 +1664,7 @@ object CodeDeployNs extends js.Object {
       */
     var bundleType: js.UndefOr[BundleType] = js.undefined
     /**
-      * The ETag of the Amazon S3 object that represents the bundled artifacts for the application revision. If the ETag is not specified as an input parameter, ETag validation of the object will be skipped.
+      * The ETag of the Amazon S3 object that represents the bundled artifacts for the application revision. If the ETag is not specified as an input parameter, ETag validation of the object is skipped.
       */
     var eTag: js.UndefOr[ETag] = js.undefined
     /**
@@ -1672,7 +1672,7 @@ object CodeDeployNs extends js.Object {
       */
     var key: js.UndefOr[S3Key] = js.undefined
     /**
-      * A specific version of the Amazon S3 object that represents the bundled artifacts for the application revision. If the version is not specified, the system will use the most recent version by default.
+      * A specific version of the Amazon S3 object that represents the bundled artifacts for the application revision. If the version is not specified, the system uses the most recent version by default.
       */
     var version: js.UndefOr[VersionId] = js.undefined
   }
@@ -1737,7 +1737,7 @@ object CodeDeployNs extends js.Object {
   
   trait TargetGroupInfo extends js.Object {
     /**
-      * For blue/green deployments, the name of the target group that instances in the original environment are deregistered from, and instances in the replacement environment registered with. For in-place deployments, the name of the target group that instances are deregistered from, so they are not serving traffic during a deployment, and then re-registered with after the deployment completes. 
+      * For blue/green deployments, the name of the target group that instances in the original environment are deregistered from, and instances in the replacement environment are registered with. For in-place deployments, the name of the target group that instances are deregistered from, so they are not serving traffic during a deployment, and then re-registered with after the deployment is complete. 
       */
     var name: js.UndefOr[TargetGroupName] = js.undefined
   }
@@ -1748,11 +1748,11 @@ object CodeDeployNs extends js.Object {
       */
     var prodTrafficRoute: js.UndefOr[TrafficRoute] = js.undefined
     /**
-      *  One pair of target groups. One is associated with the original task set. The second target is associated with the task set that serves traffic after the deployment completes. 
+      *  One pair of target groups. One is associated with the original task set. The second is associated with the task set that serves traffic after the deployment is complete. 
       */
     var targetGroups: js.UndefOr[TargetGroupInfoList] = js.undefined
     /**
-      *  An optional path used by a load balancer to route test traffic after an Amazon ECS deployment. Validation can happen while test traffic is served during a deployment. 
+      *  An optional path used by a load balancer to route test traffic after an Amazon ECS deployment. Validation can occur while test traffic is served during a deployment. 
       */
     var testTrafficRoute: js.UndefOr[TrafficRoute] = js.undefined
   }
@@ -1932,7 +1932,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentGroupsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      *   This method works, but is considered deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. 
+      *   This method works, but is deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. 
       */
     def batchGetDeploymentInstances(): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def batchGetDeploymentInstances(
@@ -1943,7 +1943,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      *   This method works, but is considered deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. 
+      *   This method works, but is deprecated. Use BatchGetDeploymentTargets instead.    Returns an array of instances associated with a deployment. This method works with EC2/On-premises and AWS Lambda compute platforms. The newer BatchGetDeploymentTargets works with all compute platforms. 
       */
     def batchGetDeploymentInstances(params: BatchGetDeploymentInstancesInput): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def batchGetDeploymentInstances(
@@ -1955,7 +1955,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      *  Returns an array of targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances.   The type of targets returned depends on the deployment's compute platform:     EC2/On-premises - Information about EC2 instance targets.     AWS Lambda - Information about Lambda functions targets.     Amazon ECS - Information about ECS service targets.   
+      *  Returns an array of targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances.   The type of targets returned depends on the deployment's compute platform:     EC2/On-premises: Information about EC2 instance targets.     AWS Lambda: Information about Lambda functions targets.     Amazon ECS: Information about Amazon ECS service targets.   
       */
     def batchGetDeploymentTargets(): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentTargetsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def batchGetDeploymentTargets(
@@ -1966,7 +1966,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentTargetsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      *  Returns an array of targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances.   The type of targets returned depends on the deployment's compute platform:     EC2/On-premises - Information about EC2 instance targets.     AWS Lambda - Information about Lambda functions targets.     Amazon ECS - Information about ECS service targets.   
+      *  Returns an array of targets associated with a deployment. This method works with all compute types and should be used instead of the deprecated BatchGetDeploymentInstances.   The type of targets returned depends on the deployment's compute platform:     EC2/On-premises: Information about EC2 instance targets.     AWS Lambda: Information about Lambda functions targets.     Amazon ECS: Information about Amazon ECS service targets.   
       */
     def batchGetDeploymentTargets(params: BatchGetDeploymentTargetsInput): awsDashSdkLib.libRequestMod.Request[BatchGetDeploymentTargetsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def batchGetDeploymentTargets(
@@ -2108,7 +2108,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDeploymentConfigOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a deployment group to which application revisions will be deployed.
+      * Creates a deployment group to which application revisions are deployed.
       */
     def createDeploymentGroup(): awsDashSdkLib.libRequestMod.Request[CreateDeploymentGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createDeploymentGroup(
@@ -2119,7 +2119,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDeploymentGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a deployment group to which application revisions will be deployed.
+      * Creates a deployment group to which application revisions are deployed.
       */
     def createDeploymentGroup(params: CreateDeploymentGroupInput): awsDashSdkLib.libRequestMod.Request[CreateDeploymentGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createDeploymentGroup(
@@ -2429,7 +2429,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListApplicationRevisionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists the applications registered with the applicable IAM user or AWS account.
+      * Lists the applications registered with the IAM user or AWS account.
       */
     def listApplications(): awsDashSdkLib.libRequestMod.Request[ListApplicationsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listApplications(
@@ -2440,7 +2440,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListApplicationsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists the applications registered with the applicable IAM user or AWS account.
+      * Lists the applications registered with the IAM user or AWS account.
       */
     def listApplications(params: ListApplicationsInput): awsDashSdkLib.libRequestMod.Request[ListApplicationsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listApplications(
@@ -2452,7 +2452,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListApplicationsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists the deployment configurations with the applicable IAM user or AWS account.
+      * Lists the deployment configurations with the IAM user or AWS account.
       */
     def listDeploymentConfigs(): awsDashSdkLib.libRequestMod.Request[ListDeploymentConfigsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listDeploymentConfigs(
@@ -2463,7 +2463,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListDeploymentConfigsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists the deployment configurations with the applicable IAM user or AWS account.
+      * Lists the deployment configurations with the IAM user or AWS account.
       */
     def listDeploymentConfigs(params: ListDeploymentConfigsInput): awsDashSdkLib.libRequestMod.Request[ListDeploymentConfigsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listDeploymentConfigs(
@@ -2475,7 +2475,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListDeploymentConfigsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists the deployment groups for an application registered with the applicable IAM user or AWS account.
+      * Lists the deployment groups for an application registered with the IAM user or AWS account.
       */
     def listDeploymentGroups(): awsDashSdkLib.libRequestMod.Request[ListDeploymentGroupsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listDeploymentGroups(
@@ -2486,7 +2486,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListDeploymentGroupsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists the deployment groups for an application registered with the applicable IAM user or AWS account.
+      * Lists the deployment groups for an application registered with the IAM user or AWS account.
       */
     def listDeploymentGroups(params: ListDeploymentGroupsInput): awsDashSdkLib.libRequestMod.Request[ListDeploymentGroupsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listDeploymentGroups(
@@ -2498,7 +2498,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListDeploymentGroupsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      *   The newer BatchGetDeploymentTargets should be used instead because it works with all compute types. ListDeploymentInstances throws an exception if it is used with a compute platform other than EC2/On-premises or AWS Lambda.    Lists the instance for a deployment associated with the applicable IAM user or AWS account. 
+      *   The newer BatchGetDeploymentTargets should be used instead because it works with all compute types. ListDeploymentInstances throws an exception if it is used with a compute platform other than EC2/On-premises or AWS Lambda.    Lists the instance for a deployment associated with the IAM user or AWS account. 
       */
     def listDeploymentInstances(): awsDashSdkLib.libRequestMod.Request[ListDeploymentInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listDeploymentInstances(
@@ -2509,7 +2509,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListDeploymentInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      *   The newer BatchGetDeploymentTargets should be used instead because it works with all compute types. ListDeploymentInstances throws an exception if it is used with a compute platform other than EC2/On-premises or AWS Lambda.    Lists the instance for a deployment associated with the applicable IAM user or AWS account. 
+      *   The newer BatchGetDeploymentTargets should be used instead because it works with all compute types. ListDeploymentInstances throws an exception if it is used with a compute platform other than EC2/On-premises or AWS Lambda.    Lists the instance for a deployment associated with the IAM user or AWS account. 
       */
     def listDeploymentInstances(params: ListDeploymentInstancesInput): awsDashSdkLib.libRequestMod.Request[ListDeploymentInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listDeploymentInstances(
@@ -2544,7 +2544,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListDeploymentTargetsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists the deployments in a deployment group for an application registered with the applicable IAM user or AWS account.
+      * Lists the deployments in a deployment group for an application registered with the IAM user or AWS account.
       */
     def listDeployments(): awsDashSdkLib.libRequestMod.Request[ListDeploymentsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listDeployments(
@@ -2555,7 +2555,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListDeploymentsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists the deployments in a deployment group for an application registered with the applicable IAM user or AWS account.
+      * Lists the deployments in a deployment group for an application registered with the IAM user or AWS account.
       */
     def listDeployments(params: ListDeploymentsInput): awsDashSdkLib.libRequestMod.Request[ListDeploymentsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listDeployments(
@@ -2590,7 +2590,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListGitHubAccountTokenNamesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Gets a list of names for one or more on-premises instances. Unless otherwise specified, both registered and deregistered on-premises instance names will be listed. To list only registered or deregistered on-premises instance names, use the registration status parameter.
+      * Gets a list of names for one or more on-premises instances. Unless otherwise specified, both registered and deregistered on-premises instance names are listed. To list only registered or deregistered on-premises instance names, use the registration status parameter.
       */
     def listOnPremisesInstances(): awsDashSdkLib.libRequestMod.Request[ListOnPremisesInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listOnPremisesInstances(
@@ -2601,7 +2601,7 @@ object CodeDeployNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListOnPremisesInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Gets a list of names for one or more on-premises instances. Unless otherwise specified, both registered and deregistered on-premises instance names will be listed. To list only registered or deregistered on-premises instance names, use the registration status parameter.
+      * Gets a list of names for one or more on-premises instances. Unless otherwise specified, both registered and deregistered on-premises instance names are listed. To list only registered or deregistered on-premises instance names, use the registration status parameter.
       */
     def listOnPremisesInstances(params: ListOnPremisesInstancesInput): awsDashSdkLib.libRequestMod.Request[ListOnPremisesInstancesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listOnPremisesInstances(
@@ -2681,14 +2681,14 @@ object CodeDeployNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * In a blue/green deployment, overrides any specified wait time and starts terminating instances immediately after the traffic routing is completed.
+      * In a blue/green deployment, overrides any specified wait time and starts terminating instances immediately after the traffic routing is complete.
       */
     def skipWaitTimeForInstanceTermination(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def skipWaitTimeForInstanceTermination(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * In a blue/green deployment, overrides any specified wait time and starts terminating instances immediately after the traffic routing is completed.
+      * In a blue/green deployment, overrides any specified wait time and starts terminating instances immediately after the traffic routing is complete.
       */
     def skipWaitTimeForInstanceTermination(params: SkipWaitTimeForInstanceTerminationInput): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def skipWaitTimeForInstanceTermination(
@@ -2807,7 +2807,7 @@ object CodeDeployNs extends js.Object {
       */
     var alarmConfiguration: js.UndefOr[AlarmConfiguration] = js.undefined
     /**
-      * The application name corresponding to the deployment group to update.
+      * The application name that corresponds to the deployment group to update.
       */
     var applicationName: ApplicationName
     /**
@@ -2839,11 +2839,11 @@ object CodeDeployNs extends js.Object {
       */
     var ec2TagFilters: js.UndefOr[EC2TagFilterList] = js.undefined
     /**
-      * Information about groups of tags applied to on-premises instances. The deployment group will include only EC2 instances identified by all the tag groups.
+      * Information about groups of tags applied to on-premises instances. The deployment group includes only EC2 instances identified by all the tag groups.
       */
     var ec2TagSet: js.UndefOr[EC2TagSet] = js.undefined
     /**
-      *  The target ECS services in the deployment group. This only applies to deployment groups that use the Amazon ECS compute platform. A target ECS service is specified as an Amazon ECS cluster and service name pair using the format &lt;clustername&gt;:&lt;servicename&gt;. 
+      *  The target Amazon ECS services in the deployment group. This applies only to deployment groups that use the Amazon ECS compute platform. A target Amazon ECS service is specified as an Amazon ECS cluster and service name pair using the format &lt;clustername&gt;:&lt;servicename&gt;. 
       */
     var ecsServices: js.UndefOr[ECSServiceList] = js.undefined
     /**
@@ -2859,7 +2859,7 @@ object CodeDeployNs extends js.Object {
       */
     var onPremisesInstanceTagFilters: js.UndefOr[TagFilterList] = js.undefined
     /**
-      * Information about an on-premises instance tag set. The deployment group will include only on-premises instances identified by all the tag groups.
+      * Information about an on-premises instance tag set. The deployment group includes only on-premises instances identified by all the tag groups.
       */
     var onPremisesTagSet: js.UndefOr[OnPremisesTagSet] = js.undefined
     /**

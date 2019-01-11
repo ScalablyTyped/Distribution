@@ -35,8 +35,14 @@ object keyboardjsModMembers extends js.Object {
   def getContext(): java.lang.String = js.native
   def pause(): scala.Unit = js.native
   def pressKey(keyCombo: java.lang.String): scala.Unit = js.native
+  def pressKey(keyCombo: java.lang.String, event: keyboardjsLib.keyboardjsMod.keyboardjsNs.KeyEvent): scala.Unit = js.native
+  def pressKey(keyCombo: scala.Double): scala.Unit = js.native
+  def pressKey(keyCombo: scala.Double, event: keyboardjsLib.keyboardjsMod.keyboardjsNs.KeyEvent): scala.Unit = js.native
   def releaseAllKeys(): scala.Unit = js.native
   def releaseKey(keyCombo: java.lang.String): scala.Unit = js.native
+  def releaseKey(keyCombo: java.lang.String, event: keyboardjsLib.keyboardjsMod.keyboardjsNs.KeyEvent): scala.Unit = js.native
+  def releaseKey(keyCombo: scala.Double): scala.Unit = js.native
+  def releaseKey(keyCombo: scala.Double, event: keyboardjsLib.keyboardjsMod.keyboardjsNs.KeyEvent): scala.Unit = js.native
   def reset(): scala.Unit = js.native
   def resume(): scala.Unit = js.native
   def setContext(identifier: java.lang.String): scala.Unit = js.native

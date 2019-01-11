@@ -25,6 +25,10 @@ trait IMenuItemProps
     */
   var label: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * A space-delimited list of class names to pass along to the right-aligned label wrapper element.
+    */
+  var labelClassName: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Right-aligned label content, useful for displaying hotkeys.
     */
   var labelElement: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
@@ -54,6 +58,10 @@ trait IMenuItemProps
   var tagName: js.UndefOr[
     /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ java.lang.String
   ] = js.undefined
+  /**
+    * A space-delimited list of class names to pass along to the text wrapper element.
+    */
+  var textClassName: js.UndefOr[java.lang.String] = js.undefined
   /** Item text, required for usability. */
   @JSName("text")
   var text_IMenuItemProps: reactLib.reactMod.ReactNs.ReactNode

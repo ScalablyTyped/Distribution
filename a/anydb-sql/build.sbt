@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "anydb-sql"
-version := "0.7.0-a91226"
+version := "0.7.1-7d6a02"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "any-db" % "2.1.0-dt-20180214Z-132f67",
   "org.scalablytyped" %%% "any-db-transaction" % "2.2.1-dt-20180214Z-5ca13b",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-a33d29",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20181203Z-010a28",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2aa425",
+  "org.scalablytyped" %%% "node-sql-2" % "0.78.0-24e6aa",
   "org.scalablytyped" %%% "sqlite3" % "3.1-dt-20180322Z-46ca0d",
   "org.scalablytyped" %%% "std" % "3.2.2-f3cc98")
 publishArtifact in packageDoc := false

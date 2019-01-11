@@ -15,7 +15,7 @@ trait ZoneType extends js.Object {
   /**
     * @returns {Task} The task associated with the current execution.
     */
-  var currentTask: Task
+  var currentTask: Task | scala.Null
   /**
     *  Return the root zone.
     */

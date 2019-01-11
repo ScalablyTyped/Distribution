@@ -157,6 +157,9 @@ object officeDashUiDashFabricDashReactLibStrings {
   sealed trait start extends js.Object
   
   @js.native
+  sealed trait suggestionsClassName extends js.Object
+  
+  @js.native
   sealed trait theme extends js.Object
   
   @js.native
@@ -221,6 +224,7 @@ object officeDashUiDashFabricDashReactLibStrings {
   def shrink: shrink = "shrink".asInstanceOf[shrink]
   def square: square = "square".asInstanceOf[square]
   def start: start = "start".asInstanceOf[start]
+  def suggestionsClassName: suggestionsClassName = "suggestionsClassName".asInstanceOf[suggestionsClassName]
   def theme: theme = "theme".asInstanceOf[theme]
   def top: top = "top".asInstanceOf[top]
   def topOffsetFixed: topOffsetFixed = "topOffsetFixed".asInstanceOf[topOffsetFixed]

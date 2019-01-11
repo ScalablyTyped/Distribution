@@ -9,13 +9,6 @@ import scala.scalajs.js.annotation._
 trait WorkbookData extends js.Object {
   /**
     *
-    * Represents the Excel application instance that contains this workbook. Read-only.
-    *
-    * [Api set: ExcelApi 1.1]
-    */
-  var application: js.UndefOr[ApplicationData] = js.undefined
-  /**
-    *
     * Represents a collection of bindings that are part of the workbook. Read-only.
     *
     * [Api set: ExcelApi 1.1]

@@ -767,7 +767,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     name: java.lang.String,
     currentValidationState: officeDashUiDashFabricDashReactLib.libComponentsPickersBasePickerDotTypesMod.ValidationState
   ): officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerMod.IGenericItem with officeDashUiDashFabricDashReactLib.Anon_Key_2068182360 = js.native
-  def createItem(name: java.lang.String, isValid: scala.Boolean): officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[
+  def createItem(name: java.lang.String, isValid: scala.Boolean): officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsDotTypesMod.ISuggestionModel[
     officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
   ] = js.native
   def createRef[T](): atUifabricUtilitiesLib.libCreateRefMod.RefObject[T] = js.native
@@ -1070,7 +1070,11 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   ): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor | scala.Null = js.native
   def getSubmenuItems(
     item: officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuItem
-  ): js.Any = js.native
+  ): js.UndefOr[
+    js.Array[
+      officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuItem
+    ]
+  ] = js.native
   def getTheme(): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def getTheme(depComments: scala.Boolean): atUifabricStylingLib.libInterfacesIThemeMod.ITheme = js.native
   def getThemedContext(context: atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext): atUifabricUtilitiesLib.libCustomizerMod.ICustomizerContext = js.native
