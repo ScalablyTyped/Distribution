@@ -1,8 +1,7 @@
 package typings.reactLib
 
 import typings.reactLib.reactMod.ReactNs._
-import typings.reactLib.reactMod.reactModMembers
-import typings.stdLib.stdLibMembers.{console, Object}
+import typings.stdLib.^.{console, Object}
 import typings.{reactLib, stdLib}
 
 import scala.language.{higherKinds, implicitConversions}

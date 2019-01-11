@@ -2,8 +2,8 @@ package typings.reactLib
 
 import org.scalablytyped.runtime.{Instantiable1, Instantiable2}
 import typings.reactLib.reactMod.ReactNs._
-import typings.reactLib.reactMod.reactModMembers
-import typings.stdLib.stdLibMembers.{Object, console}
+import typings.reactLib.reactMod.^
+import typings.stdLib.^.{Object, console}
 import typings.{reactLib, stdLib}
 
 import scala.language.{higherKinds, implicitConversions}
@@ -50,10 +50,10 @@ object dsl {
       )
 
     @inline def noprops(children: ReactNode*): ReactElement[P[E]] =
-      reactModMembers.createElement[P[E], E](tpe, fullProps(null), children: _*)
+      ^.createElement[P[E], E](tpe, fullProps(null), children: _*)
 
     @inline def props(props: P[E], children: ReactNode*): ReactElement[P[E]] =
-      reactModMembers.createElement[P[E], E](tpe, fullProps(props), children: _*)
+      ^.createElement[P[E], E](tpe, fullProps(props), children: _*)
   }
 
   lazy val a = new BuildIntrinsic[AnchorHTMLAttributes, stdLib.HTMLAnchorElement]("a")
@@ -291,14 +291,14 @@ object dsl {
           _ref.asInstanceOf[js.Any],
           children)
 
-      reactModMembers.createElement(ctor, fullProps(props), children: _*)
+      ^.createElement(ctor, fullProps(props), children: _*)
     }
 
     @inline def noprops(children: ReactNode*): ReactElement[P] = {
       if (LinkingInfo.developmentMode && js.isUndefined(ctor))
         console.warn("Component was undefined", _key.asInstanceOf[js.Any], _ref.asInstanceOf[js.Any], children)
 
-      reactModMembers.createElement(ctor, fullProps(null), children: _*)
+      ^.createElement(ctor, fullProps(null), children: _*)
     }
   }
 }

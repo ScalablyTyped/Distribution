@@ -1,6 +1,6 @@
 package typings.reactDashReduxLib
 
-import typings.reactDashReduxLib.reactDashReduxMod.reactDashReduxModMembers.connect
+import typings.reactDashReduxLib.reactDashReduxMod.^.connect
 import typings.reactLib.reactMod.ReactNs.FC
 import typings.reduxLib.reduxMod.{Action, Dispatch, Store}
 
