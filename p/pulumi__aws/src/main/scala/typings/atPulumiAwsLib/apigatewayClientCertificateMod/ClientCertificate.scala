@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/apigateway/clientCertificate", "ClientCertificate")
 @js.native
 class ClientCertificate protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ClientCertificate resource with the given unique name, arguments, and options.
     *
@@ -22,19 +22,19 @@ class ClientCertificate protected ()
   /**
     * The date when the client certificate was created.
     */
-  val createdDate: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val createdDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The description of the client certificate.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The date when the client certificate will expire.
     */
-  val expirationDate: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val expirationDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The PEM-encoded public key of the client certificate.
     */
-  val pemEncodedCertificate: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val pemEncodedCertificate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/apigateway/clientCertificate", "ClientCertificate")

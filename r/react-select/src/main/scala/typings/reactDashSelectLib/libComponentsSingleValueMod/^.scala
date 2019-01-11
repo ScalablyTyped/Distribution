@@ -1,0 +1,15 @@
+package typings
+package reactDashSelectLib.libComponentsSingleValueMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("react-select/lib/components/SingleValue", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val SingleValue: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsSingleValueMod.SingleValueProps[js.Any]] = js.native
+  val default: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsSingleValueMod.SingleValueProps[js.Any]] = js.native
+  def css(props: reactDashSelectLib.libComponentsSingleValueMod.SingleValueProps[_]): reactLib.reactMod.ReactNs.CSSProperties = js.native
+}
+

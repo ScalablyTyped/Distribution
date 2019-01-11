@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/s3/bucketNotification", "BucketNotification")
 @js.native
 class BucketNotification protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a BucketNotification resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class BucketNotification protected ()
   /**
     * The name of the bucket to put notification configuration.
     */
-  val bucket: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val bucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Used to configure notifications to a Lambda Function (documented below).
     */
-  val lambdaFunctions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefix]]] = js.native
+  val lambdaFunctions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefix]]] = js.native
   /**
     * The notification configuration to SQS Queue (documented below).
     */
-  val queues: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffix]]] = js.native
+  val queues: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffix]]] = js.native
   /**
     * The notification configuration to SNS Topic (documented below).
     */
-  val topics: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffixId]]] = js.native
+  val topics: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffixId]]] = js.native
 }
 
 @JSImport("@pulumi/aws/s3/bucketNotification", "BucketNotification")

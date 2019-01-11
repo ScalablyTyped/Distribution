@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/licensemanager/association", "Association")
 @js.native
 class Association protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Association resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class Association protected ()
   /**
     * ARN of the license configuration.
     */
-  val licenseConfigurationArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val licenseConfigurationArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * ARN of the resource associated with the license configuration.
     */
-  val resourceArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val resourceArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/licensemanager/association", "Association")

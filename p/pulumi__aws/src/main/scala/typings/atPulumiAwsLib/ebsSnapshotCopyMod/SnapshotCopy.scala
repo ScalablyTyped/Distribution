@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ebs/snapshotCopy", "SnapshotCopy")
 @js.native
 class SnapshotCopy protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SnapshotCopy resource with the given unique name, arguments, and options.
     *
@@ -23,40 +23,40 @@ class SnapshotCopy protected ()
     * * `source_snapshot_id` The ARN of the copied snapshot.
     * * `source_region` The region of the source snapshot.
     */
-  val dataEncryptionKeyId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val dataEncryptionKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A description of what the snapshot is.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Whether the snapshot is encrypted.
     */
-  val encrypted: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val encrypted: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The ARN for the KMS encryption key.
     * * `source_snapshot_id` The ARN for the snapshot to be copied.
     * * `source_region` The region of the source snapshot.
     */
-  val kmsKeyId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val kmsKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Value from an Amazon-maintained list (`amazon`, `aws-marketplace`, `microsoft`) of snapshot owners.
     */
-  val ownerAlias: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val ownerAlias: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The AWS account ID of the snapshot owner.
     */
-  val ownerId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val sourceRegion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val sourceSnapshotId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val ownerId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val sourceRegion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val sourceSnapshotId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags for the snapshot.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
-  val volumeId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val volumeId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The size of the drive in GiBs.
     */
-  val volumeSize: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val volumeSize: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
 }
 
 @JSImport("@pulumi/aws/ebs/snapshotCopy", "SnapshotCopy")

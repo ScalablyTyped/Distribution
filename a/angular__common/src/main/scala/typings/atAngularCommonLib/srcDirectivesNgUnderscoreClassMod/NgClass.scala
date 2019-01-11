@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgClass protected ()
   extends atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.DoCheck {
-  def this(_iterableDiffers: atAngularCoreLib.coreMod.IterableDiffers, _keyValueDiffers: atAngularCoreLib.coreMod.KeyValueDiffers, _ngEl: atAngularCoreLib.coreMod.ElementRef[_], _renderer: atAngularCoreLib.coreMod.Renderer2) = this()
+  def this(_iterableDiffers: atAngularCoreLib.atAngularCoreMod.IterableDiffers, _keyValueDiffers: atAngularCoreLib.atAngularCoreMod.KeyValueDiffers, _ngEl: atAngularCoreLib.atAngularCoreMod.ElementRef[_], _renderer: atAngularCoreLib.atAngularCoreMod.Renderer2) = this()
   /**
     * Applies a collection of CSS classes to the DOM element.
     *

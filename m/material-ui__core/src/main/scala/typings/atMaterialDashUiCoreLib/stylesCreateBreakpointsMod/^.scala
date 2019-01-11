@@ -1,0 +1,14 @@
+package typings
+package atMaterialDashUiCoreLib.stylesCreateBreakpointsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@material-ui/core/styles/createBreakpoints", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val keys: js.Array[atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoint] = js.native
+  def default(options: atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.BreakpointsOptions): atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoints = js.native
+}
+

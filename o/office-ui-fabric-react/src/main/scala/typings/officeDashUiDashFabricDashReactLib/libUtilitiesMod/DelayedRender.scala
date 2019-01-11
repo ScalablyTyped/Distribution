@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/Utilities", "DelayedRender")
 @js.native
 class DelayedRender protected ()
-  extends atUifabricUtilitiesLib.utilitiesMod.DelayedRender {
+  extends atUifabricUtilitiesLib.atUifabricUtilitiesMod.DelayedRender {
   def this(props: atUifabricUtilitiesLib.libDelayedRenderMod.IDelayedRenderProps) = this()
 }
 

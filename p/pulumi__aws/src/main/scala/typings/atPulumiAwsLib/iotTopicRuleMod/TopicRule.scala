@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iot/topicRule", "TopicRule")
 @js.native
 class TopicRule protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a TopicRule resource with the given unique name, arguments, and options.
     *
@@ -21,38 +21,38 @@ class TopicRule protected ()
   /**
     * The ARN of the topic rule
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val cloudwatchAlarm: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AlarmName]] = js.native
-  val cloudwatchMetric: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_MetricName]] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val cloudwatchAlarm: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AlarmName]] = js.native
+  val cloudwatchMetric: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_MetricName]] = js.native
   /**
     * The description of the rule.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val dynamodb: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_HashKeyField]] = js.native
-  val elasticsearch: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EndpointId]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val dynamodb: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_HashKeyField]] = js.native
+  val elasticsearch: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_EndpointId]] = js.native
   /**
     * Specifies whether the rule is enabled.
     */
-  val enabled: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
-  val firehose: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeliveryStreamName]] = js.native
-  val kinesis: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_PartitionKey]] = js.native
-  val lambda: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_FunctionArn]] = js.native
+  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val firehose: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeliveryStreamName]] = js.native
+  val kinesis: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_PartitionKey]] = js.native
+  val lambda: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_FunctionArn]] = js.native
   /**
     * The name of the rule.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val republish: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArn]] = js.native
-  val s3: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketName]] = js.native
-  val sns: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_MessageFormat]] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val republish: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArn]] = js.native
+  val s3: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BucketName]] = js.native
+  val sns: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_MessageFormat]] = js.native
   /**
     * The SQL statement used to query the topic. For more information, see AWS IoT SQL Reference (http://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html#aws-iot-sql-reference) in the AWS IoT Developer Guide.
     */
-  val sql: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val sql: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The version of the SQL rules engine to use when evaluating the rule.
     */
-  val sqlVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val sqs: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_QueueUrl]] = js.native
+  val sqlVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val sqs: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_QueueUrl]] = js.native
 }
 
 @JSImport("@pulumi/aws/iot/topicRule", "TopicRule")

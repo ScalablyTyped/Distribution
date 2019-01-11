@@ -79,7 +79,7 @@ class NgModel protected ()
     * Event emitter for producing the `ngModelChange` event after
     * the view model updates.
     */
-  var update: atAngularCoreLib.coreMod.EventEmitter[js.Object] = js.native
+  var update: atAngularCoreLib.atAngularCoreMod.EventEmitter[js.Object] = js.native
   /**
     * @description
     * Internal reference to the view model value.

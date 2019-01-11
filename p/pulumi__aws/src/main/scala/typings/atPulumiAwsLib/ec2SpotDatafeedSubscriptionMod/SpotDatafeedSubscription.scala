@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/spotDatafeedSubscription", "SpotDatafeedSubscription")
 @js.native
 class SpotDatafeedSubscription protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SpotDatafeedSubscription resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class SpotDatafeedSubscription protected ()
   /**
     * The Amazon S3 bucket in which to store the Spot instance data feed.
     */
-  val bucket: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val bucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Path of folder inside bucket to place spot pricing data.
     */
-  val prefix: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val prefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/spotDatafeedSubscription", "SpotDatafeedSubscription")

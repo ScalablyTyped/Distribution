@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cloudwatch/eventTarget", "EventTarget")
 @js.native
 class EventTarget protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a EventTarget resource with the given unique name, arguments, and options.
     *
@@ -21,52 +21,52 @@ class EventTarget protected ()
   /**
     * The Amazon Resource Name (ARN) associated of the target.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Parameters used when you are using the rule to invoke an Amazon Batch Job. Documented below. A maximum of 1 are allowed.
     */
-  val batchTarget: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ArraySize]] = js.native
+  val batchTarget: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ArraySize]] = js.native
   /**
     * Parameters used when you are using the rule to invoke Amazon ECS Task. Documented below. A maximum of 1 are allowed.
     */
-  val ecsTarget: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Group]] = js.native
+  val ecsTarget: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Group]] = js.native
   /**
     * Valid JSON text passed to the target.
     */
-  val input: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val input: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The value of the [JSONPath](http://goessner.net/articles/JsonPath/)
     * that is used for extracting part of the matched event when passing it to the target.
     */
-  val inputPath: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val inputPath: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Parameters used when you are providing a custom input to a target based on certain event data.
     */
-  val inputTransformer: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_InputPaths]] = js.native
+  val inputTransformer: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_InputPaths]] = js.native
   /**
     * Parameters used when you are using the rule to invoke an Amazon Kinesis Stream. Documented below. A maximum of 1 are allowed.
     */
-  val kinesisTarget: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_PartitionKeyPath]] = js.native
+  val kinesisTarget: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_PartitionKeyPath]] = js.native
   /**
     * The Amazon Resource Name (ARN) of the IAM role to be used for this target when the rule is triggered. Required if `ecs_target` is used.
     */
-  val roleArn: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the rule you want to add targets to.
     */
-  val rule: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val rule: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Parameters used when you are using the rule to invoke Amazon EC2 Run Command. Documented below. A maximum of 5 are allowed.
     */
-  val runCommandTargets: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_KeyValues]]] = js.native
+  val runCommandTargets: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_KeyValues]]] = js.native
   /**
     * Parameters used when you are using the rule to invoke an Amazon SQS Queue. Documented below. A maximum of 1 are allowed.
     */
-  val sqsTarget: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_MessageGroupId]] = js.native
+  val sqsTarget: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_MessageGroupId]] = js.native
   /**
     * The unique target assignment ID.  If missing, will generate a random, unique id.
     */
-  val targetId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val targetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cloudwatch/eventTarget", "EventTarget")

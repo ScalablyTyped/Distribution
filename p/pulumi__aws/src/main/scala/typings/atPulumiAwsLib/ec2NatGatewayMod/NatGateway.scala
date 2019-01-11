@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/natGateway", "NatGateway")
 @js.native
 class NatGateway protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a NatGateway resource with the given unique name, arguments, and options.
     *
@@ -21,27 +21,27 @@ class NatGateway protected ()
   /**
     * The Allocation ID of the Elastic IP address for the gateway.
     */
-  val allocationId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val allocationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ENI ID of the network interface created by the NAT gateway.
     */
-  val networkInterfaceId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val networkInterfaceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The private IP address of the NAT Gateway.
     */
-  val privateIp: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val privateIp: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The public IP address of the NAT Gateway.
     */
-  val publicIp: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val publicIp: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The Subnet ID of the subnet in which to place the gateway.
     */
-  val subnetId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/natGateway", "NatGateway")

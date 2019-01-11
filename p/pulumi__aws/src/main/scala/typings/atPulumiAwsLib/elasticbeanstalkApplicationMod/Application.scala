@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/elasticbeanstalk/application", "Application")
 @js.native
 class Application protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Application resource with the given unique name, arguments, and options.
     *
@@ -19,15 +19,15 @@ class Application protected ()
   def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: ApplicationArgs) = this()
   def this(name: java.lang.String, args: ApplicationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val appversionLifecycle: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeleteSourceFromS3]] = js.native
+  val appversionLifecycle: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeleteSourceFromS3]] = js.native
   /**
     * Short description of the application
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the application, must be unique within your account
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/elasticbeanstalk/application", "Application")

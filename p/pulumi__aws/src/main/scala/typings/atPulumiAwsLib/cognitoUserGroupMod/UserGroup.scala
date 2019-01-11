@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cognito/userGroup", "UserGroup")
 @js.native
 class UserGroup protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a UserGroup resource with the given unique name, arguments, and options.
     *
@@ -21,23 +21,23 @@ class UserGroup protected ()
   /**
     * The description of the user group.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the user group.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The precedence of the user group.
     */
-  val precedence: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val precedence: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The ARN of the IAM role to be associated with the user group.
     */
-  val roleArn: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The user pool ID.
     */
-  val userPoolId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val userPoolId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cognito/userGroup", "UserGroup")

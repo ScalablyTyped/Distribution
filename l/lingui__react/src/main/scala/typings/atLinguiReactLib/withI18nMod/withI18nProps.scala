@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait withI18nProps extends js.Object {
-  var i18n: atLinguiCoreLib.coreMod.I18n
+  var i18n: atLinguiCoreLib.atLinguiCoreMod.I18n
 }
 

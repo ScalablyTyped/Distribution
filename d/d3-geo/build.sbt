@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "d3-geo"
-version := "1.10-dt-20180514Z-bbd8c2"
+version := "1.10-dt-20180514Z-8e6e83"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20180619Z-5d845b",
-  "org.scalablytyped" %%% "std" % "3.2.2-f3cc98")
+  "org.scalablytyped" %%% "geojson" % "7946.0-dt-20180619Z-c15177",
+  "org.scalablytyped" %%% "std" % "3.2.2-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

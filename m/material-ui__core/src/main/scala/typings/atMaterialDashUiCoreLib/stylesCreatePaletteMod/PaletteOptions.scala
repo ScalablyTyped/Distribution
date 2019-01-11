@@ -18,6 +18,6 @@ trait PaletteOptions extends js.Object {
   var secondary: js.UndefOr[PaletteColorOptions] = js.undefined
   var text: js.UndefOr[stdLib.Partial[TypeText]] = js.undefined
   var tonalOffset: js.UndefOr[scala.Double] = js.undefined
-  var `type`: js.UndefOr[atMaterialDashUiCoreLib.coreMod.PaletteType] = js.undefined
+  var `type`: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PaletteType] = js.undefined
 }
 

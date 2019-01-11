@@ -10,27 +10,27 @@ import scala.scalajs.js.annotation._
 object topAppBarNs extends js.Object {
   @js.native
   class MDCFixedTopAppBarFoundation ()
-    extends atMaterialTopDashAppDashBarLib.topDashAppDashBarMod.MDCFixedTopAppBarFoundation
+    extends atMaterialTopDashAppDashBarLib.atMaterialTopDashAppDashBarMod.MDCFixedTopAppBarFoundation
   
   @js.native
   class MDCShortTopAppBarFoundation ()
-    extends atMaterialTopDashAppDashBarLib.topDashAppDashBarMod.MDCShortTopAppBarFoundation
+    extends atMaterialTopDashAppDashBarLib.atMaterialTopDashAppDashBarMod.MDCShortTopAppBarFoundation
   
   @js.native
   class MDCTopAppBar ()
-    extends atMaterialTopDashAppDashBarLib.topDashAppDashBarMod.MDCTopAppBar
+    extends atMaterialTopDashAppDashBarLib.atMaterialTopDashAppDashBarMod.MDCTopAppBar
   
   @js.native
   class MDCTopAppBarBaseFoundation ()
-    extends atMaterialTopDashAppDashBarLib.topDashAppDashBarMod.MDCTopAppBarBaseFoundation
+    extends atMaterialTopDashAppDashBarLib.atMaterialTopDashAppDashBarMod.MDCTopAppBarBaseFoundation
   
   @js.native
   class MDCTopAppBarFoundation ()
-    extends atMaterialTopDashAppDashBarLib.topDashAppDashBarMod.MDCTopAppBarFoundation
+    extends atMaterialTopDashAppDashBarLib.atMaterialTopDashAppDashBarMod.MDCTopAppBarFoundation
   
   @js.native
   object MDCTopAppBar extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialTopDashAppDashBarLib.topDashAppDashBarMod.MDCTopAppBar = js.native
+    def attachTo(root: stdLib.Element): atMaterialTopDashAppDashBarLib.atMaterialTopDashAppDashBarMod.MDCTopAppBar = js.native
   }
   
   @js.native

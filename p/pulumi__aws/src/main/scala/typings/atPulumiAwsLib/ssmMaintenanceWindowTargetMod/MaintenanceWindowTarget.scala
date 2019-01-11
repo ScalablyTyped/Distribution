@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ssm/maintenanceWindowTarget", "MaintenanceWindowTarget")
 @js.native
 class MaintenanceWindowTarget protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a MaintenanceWindowTarget resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class MaintenanceWindowTarget protected ()
   /**
     * User-provided value that will be included in any CloudWatch events raised while running tasks for these targets in this Maintenance Window.
     */
-  val ownerInformation: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val ownerInformation: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The type of target being registered with the Maintenance Window. Possible values `INSTANCE`.
     */
-  val resourceType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val resourceType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The targets (either instances or tags). Instances are specified using Key=instanceids,Values=instanceid1,instanceid2. Tags are specified using Key=tag name,Values=tag value.
     */
-  val targets: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_KeyValues]] = js.native
+  val targets: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_KeyValues]] = js.native
   /**
     * The Id of the maintenance window to register the target with.
     */
-  val windowId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val windowId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ssm/maintenanceWindowTarget", "MaintenanceWindowTarget")

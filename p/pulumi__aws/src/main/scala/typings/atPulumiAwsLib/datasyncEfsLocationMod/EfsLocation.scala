@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/datasync/efsLocation", "EfsLocation")
 @js.native
 class EfsLocation protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a EfsLocation resource with the given unique name, arguments, and options.
     *
@@ -21,24 +21,24 @@ class EfsLocation protected ()
   /**
     * Amazon Resource Name (ARN) of the DataSync Location.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Configuration block containing EC2 configurations for connecting to the EFS File System.
     */
-  val ec2Config: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_SecurityGroupArns] = js.native
+  val ec2Config: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_SecurityGroupArns] = js.native
   /**
     * Amazon Resource Name (ARN) of EFS File System.
     */
-  val efsFileSystemArn: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val efsFileSystemArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
   /**
     * Subdirectory to perform actions as source or destination. Default `/`.
     */
-  val subdirectory: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val subdirectory: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
-  val uri: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val uri: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/datasync/efsLocation", "EfsLocation")

@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class UrlRouterProvider protected () extends js.Object {
   /** @hidden */
-  def this(/** @hidden */ router: atUirouterCoreLib.coreMod.UIRouter) = this()
+  def this(/** @hidden */ router: atUirouterCoreLib.atUirouterCoreMod.UIRouter) = this()
   var router: js.Any = js.native
   /** @hidden */
   @JSName("$get")
-  def $get(): atUirouterCoreLib.coreMod.UrlRouter = js.native
+  def $get(): atUirouterCoreLib.atUirouterCoreMod.UrlRouter = js.native
   /**
     * Disables monitoring of the URL.
     *
@@ -107,10 +107,10 @@ class UrlRouterProvider protected () extends js.Object {
     */
   def rule(ruleFn: RawNg1RuleFunction): UrlRouterProvider = js.native
   def when(
-    what: atUirouterCoreLib.coreMod.UrlMatcher,
+    what: atUirouterCoreLib.atUirouterCoreMod.UrlMatcher,
     handler: atUirouterCoreLib.libCommonCommonMod.IInjectable
   ): this.type = js.native
-  def when(what: atUirouterCoreLib.coreMod.UrlMatcher, handler: java.lang.String): this.type = js.native
+  def when(what: atUirouterCoreLib.atUirouterCoreMod.UrlMatcher, handler: java.lang.String): this.type = js.native
   def when(what: java.lang.String, handler: atUirouterCoreLib.libCommonCommonMod.IInjectable): this.type = js.native
   def when(what: java.lang.String, handler: java.lang.String): this.type = js.native
   def when(what: stdLib.RegExp, handler: atUirouterCoreLib.libCommonCommonMod.IInjectable): this.type = js.native
@@ -158,6 +158,6 @@ class UrlRouterProvider protected () extends js.Object {
 @JSImport("@uirouter/angularjs/lib/urlRouterProvider", "UrlRouterProvider")
 @js.native
 object UrlRouterProvider extends js.Object {
-  def injectableHandler(router: atUirouterCoreLib.coreMod.UIRouter, handler: js.Any): atUirouterCoreLib.libUrlInterfaceMod.UrlRuleHandlerFn = js.native
+  def injectableHandler(router: atUirouterCoreLib.atUirouterCoreMod.UIRouter, handler: js.Any): atUirouterCoreLib.libUrlInterfaceMod.UrlRuleHandlerFn = js.native
 }
 

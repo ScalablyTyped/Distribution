@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class KeyValuePipe protected ()
   extends atAngularCommonLib.srcCommonMod.KeyValuePipe {
-  def this(differs: atAngularCoreLib.coreMod.KeyValueDiffers) = this()
+  def this(differs: atAngularCoreLib.atAngularCoreMod.KeyValueDiffers) = this()
 }
 

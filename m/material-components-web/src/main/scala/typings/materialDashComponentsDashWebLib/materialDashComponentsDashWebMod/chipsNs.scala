@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
 object chipsNs extends js.Object {
   @js.native
   class MDCChip ()
-    extends atMaterialChipsLib.chipsMod.MDCChip
+    extends atMaterialChipsLib.atMaterialChipsMod.MDCChip
   
   @js.native
   class MDCChipFoundation ()
-    extends atMaterialChipsLib.chipsMod.MDCChipFoundation
+    extends atMaterialChipsLib.atMaterialChipsMod.MDCChipFoundation
   
   @js.native
   class MDCChipSet ()
-    extends atMaterialChipsLib.chipsMod.MDCChipSet
+    extends atMaterialChipsLib.atMaterialChipsMod.MDCChipSet
   
   @js.native
   class MDCChipSetFoundation ()
-    extends atMaterialChipsLib.chipsMod.MDCChipSetFoundation
+    extends atMaterialChipsLib.atMaterialChipsMod.MDCChipSetFoundation
   
   @js.native
   object MDCChip extends js.Object {

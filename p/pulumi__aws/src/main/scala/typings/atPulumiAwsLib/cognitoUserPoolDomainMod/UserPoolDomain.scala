@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cognito/userPoolDomain", "UserPoolDomain")
 @js.native
 class UserPoolDomain protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a UserPoolDomain resource with the given unique name, arguments, and options.
     *
@@ -21,31 +21,31 @@ class UserPoolDomain protected ()
   /**
     * The AWS account ID for the user pool owner.
     */
-  val awsAccountId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val awsAccountId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ARN of an ISSUED ACM certificate in us-east-1 for a custom domain.
     */
-  val certificateArn: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificateArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ARN of the CloudFront distribution.
     */
-  val cloudfrontDistributionArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val cloudfrontDistributionArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The domain string.
     */
-  val domain: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val domain: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The S3 bucket where the static files for this domain are stored.
     */
-  val s3Bucket: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val s3Bucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The user pool ID.
     */
-  val userPoolId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val userPoolId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The app version.
     */
-  val version: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cognito/userPoolDomain", "UserPoolDomain")

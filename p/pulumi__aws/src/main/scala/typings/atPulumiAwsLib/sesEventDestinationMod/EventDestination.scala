@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ses/eventDestination", "EventDestination")
 @js.native
 class EventDestination protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a EventDestination resource with the given unique name, arguments, and options.
     *
@@ -21,31 +21,31 @@ class EventDestination protected ()
   /**
     * CloudWatch destination for the events
     */
-  val cloudwatchDestinations: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DefaultValueDimensionName]]] = js.native
+  val cloudwatchDestinations: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DefaultValueDimensionName]]] = js.native
   /**
     * The name of the configuration set
     */
-  val configurationSetName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val configurationSetName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * If true, the event destination will be enabled
     */
-  val enabled: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Send the events to a kinesis firehose destination
     */
-  val kinesisDestination: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArnStreamArn]] = js.native
+  val kinesisDestination: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_RoleArnStreamArn]] = js.native
   /**
     * A list of matching types. May be any of `"send"`, `"reject"`, `"bounce"`, `"complaint"`, `"delivery"`, `"open"`, `"click"`, or `"renderingFailure"`.
     */
-  val matchingTypes: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val matchingTypes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The name of the event destination
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Send the events to an SNS Topic destination
     */
-  val snsDestination: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TopicArn]] = js.native
+  val snsDestination: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TopicArn]] = js.native
 }
 
 @JSImport("@pulumi/aws/ses/eventDestination", "EventDestination")

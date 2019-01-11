@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IProject extends js.Object {
-  val config: atIonicCliDashFrameworkLib.cliDashFrameworkMod.BaseConfig[IProjectConfig] = js.native
+  val config: atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.BaseConfig[IProjectConfig] = js.native
   val details: ionicLib.libProjectMod.ProjectDetailsResult = js.native
   val directory: java.lang.String = js.native
   val filePath: java.lang.String = js.native

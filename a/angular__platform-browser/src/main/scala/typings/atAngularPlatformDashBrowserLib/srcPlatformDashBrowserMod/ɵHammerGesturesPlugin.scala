@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ɵHammerGesturesPlugin protected ()
   extends atAngularPlatformDashBrowserLib.srcPrivateUnderscoreExportMod.ɵHammerGesturesPlugin {
-  def this(doc: js.Any, _config: atAngularPlatformDashBrowserLib.srcDomEventsHammerUnderscoreGesturesMod.HammerGestureConfig, console: atAngularCoreLib.coreMod.ɵConsole) = this()
-  def this(doc: js.Any, _config: atAngularPlatformDashBrowserLib.srcDomEventsHammerUnderscoreGesturesMod.HammerGestureConfig, console: atAngularCoreLib.coreMod.ɵConsole, loader: atAngularPlatformDashBrowserLib.srcDomEventsHammerUnderscoreGesturesMod.HammerLoader) = this()
+  def this(doc: js.Any, _config: atAngularPlatformDashBrowserLib.srcDomEventsHammerUnderscoreGesturesMod.HammerGestureConfig, console: atAngularCoreLib.atAngularCoreMod.ɵConsole) = this()
+  def this(doc: js.Any, _config: atAngularPlatformDashBrowserLib.srcDomEventsHammerUnderscoreGesturesMod.HammerGestureConfig, console: atAngularCoreLib.atAngularCoreMod.ɵConsole, loader: atAngularPlatformDashBrowserLib.srcDomEventsHammerUnderscoreGesturesMod.HammerLoader) = this()
 }
 

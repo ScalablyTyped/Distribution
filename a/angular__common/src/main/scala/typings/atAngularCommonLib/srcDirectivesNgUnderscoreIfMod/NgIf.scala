@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/common/src/directives/ng_if", "NgIf")
 @js.native
 class NgIf protected () extends js.Object {
-  def this(_viewContainer: atAngularCoreLib.coreMod.ViewContainerRef, templateRef: atAngularCoreLib.coreMod.TemplateRef[NgIfContext]) = this()
+  def this(_viewContainer: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, templateRef: atAngularCoreLib.atAngularCoreMod.TemplateRef[NgIfContext]) = this()
   var _context: js.Any = js.native
   var _elseTemplateRef: js.Any = js.native
   var _elseViewRef: js.Any = js.native
@@ -17,8 +17,8 @@ class NgIf protected () extends js.Object {
   var _updateView: js.Any = js.native
   var _viewContainer: js.Any = js.native
   var ngIf: js.Any = js.native
-  var ngIfElse: atAngularCoreLib.coreMod.TemplateRef[NgIfContext] | scala.Null = js.native
-  var ngIfThen: atAngularCoreLib.coreMod.TemplateRef[NgIfContext] | scala.Null = js.native
+  var ngIfElse: atAngularCoreLib.atAngularCoreMod.TemplateRef[NgIfContext] | scala.Null = js.native
+  var ngIfThen: atAngularCoreLib.atAngularCoreMod.TemplateRef[NgIfContext] | scala.Null = js.native
 }
 
 @JSImport("@angular/common/src/directives/ng_if", "NgIf")

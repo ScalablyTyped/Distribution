@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iam/policyAttachment", "PolicyAttachment")
 @js.native
 class PolicyAttachment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a PolicyAttachment resource with the given unique name, arguments, and options.
     *
@@ -21,23 +21,23 @@ class PolicyAttachment protected ()
   /**
     * The group(s) the policy should be applied to
     */
-  val groups: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.iamGroupMod.Group]]] = js.native
+  val groups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.iamGroupMod.Group]]] = js.native
   /**
     * The name of the attachment. This cannot be an empty string.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ARN of the policy you want to apply
     */
-  val policyArn: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val policyArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
   /**
     * The role(s) the policy should be applied to
     */
-  val roles: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.iamRoleMod.Role]]] = js.native
+  val roles: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.iamRoleMod.Role]]] = js.native
   /**
     * The user(s) the policy should be applied to
     */
-  val users: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.iamUserMod.User]]] = js.native
+  val users: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.iamUserMod.User]]] = js.native
 }
 
 @JSImport("@pulumi/aws/iam/policyAttachment", "PolicyAttachment")

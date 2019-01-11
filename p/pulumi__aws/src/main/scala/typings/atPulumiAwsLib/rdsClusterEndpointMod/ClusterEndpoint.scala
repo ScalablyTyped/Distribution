@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/rds/clusterEndpoint", "ClusterEndpoint")
 @js.native
 class ClusterEndpoint protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ClusterEndpoint resource with the given unique name, arguments, and options.
     *
@@ -21,31 +21,31 @@ class ClusterEndpoint protected ()
   /**
     * Amazon Resource Name (ARN) of cluster
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The identifier to use for the new endpoint. This parameter is stored as a lowercase string.
     */
-  val clusterEndpointIdentifier: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val clusterEndpointIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The cluster identifier.
     */
-  val clusterIdentifier: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val clusterIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The type of the endpoint. One of: READER , ANY .
     */
-  val customEndpointType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val customEndpointType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A custom endpoint for the Aurora cluster
     */
-  val endpoint: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val endpoint: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * List of DB instance identifiers that aren't part of the custom endpoint group. All other eligible instances are reachable through the custom endpoint. Only relevant if the list of static members is empty. Conflicts with `static_members`.
     */
-  val excludedMembers: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val excludedMembers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * List of DB instance identifiers that are part of the custom endpoint group. Conflicts with `excluded_members`.
     */
-  val staticMembers: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val staticMembers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
 }
 
 @JSImport("@pulumi/aws/rds/clusterEndpoint", "ClusterEndpoint")

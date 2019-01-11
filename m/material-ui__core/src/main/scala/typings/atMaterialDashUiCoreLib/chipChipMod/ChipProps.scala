@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   var avatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var clickable: js.UndefOr[scala.Boolean] = js.undefined
-  var color: js.UndefOr[atMaterialDashUiCoreLib.coreMod.PropTypesNs.Color] = js.undefined
+  var color: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[ChipProps]] = js.undefined
   var deleteIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined

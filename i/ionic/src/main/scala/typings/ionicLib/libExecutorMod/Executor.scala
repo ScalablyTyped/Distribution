@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("ionic/lib/executor", "Executor")
 @js.native
 class Executor protected ()
-  extends atIonicCliDashFrameworkLib.cliDashFrameworkMod.AbstractExecutor[
+  extends atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.AbstractExecutor[
       ionicLib.definitionsMod.ICommand, 
       ionicLib.definitionsMod.INamespace, 
       ionicLib.definitionsMod.CommandMetadata, 

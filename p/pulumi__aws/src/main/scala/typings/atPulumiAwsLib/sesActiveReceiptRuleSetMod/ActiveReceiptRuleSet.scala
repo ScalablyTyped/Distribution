@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ses/activeReceiptRuleSet", "ActiveReceiptRuleSet")
 @js.native
 class ActiveReceiptRuleSet protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ActiveReceiptRuleSet resource with the given unique name, arguments, and options.
     *
@@ -21,7 +21,7 @@ class ActiveReceiptRuleSet protected ()
   /**
     * The name of the rule set
     */
-  val ruleSetName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val ruleSetName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ses/activeReceiptRuleSet", "ActiveReceiptRuleSet")

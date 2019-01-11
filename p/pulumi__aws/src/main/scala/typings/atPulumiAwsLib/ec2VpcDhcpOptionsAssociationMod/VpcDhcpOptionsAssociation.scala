@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/vpcDhcpOptionsAssociation", "VpcDhcpOptionsAssociation")
 @js.native
 class VpcDhcpOptionsAssociation protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a VpcDhcpOptionsAssociation resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class VpcDhcpOptionsAssociation protected ()
   /**
     * The ID of the DHCP Options Set to associate to the VPC.
     */
-  val dhcpOptionsId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val dhcpOptionsId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the VPC to which we would like to associate a DHCP Options Set.
     */
-  val vpcId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/vpcDhcpOptionsAssociation", "VpcDhcpOptionsAssociation")

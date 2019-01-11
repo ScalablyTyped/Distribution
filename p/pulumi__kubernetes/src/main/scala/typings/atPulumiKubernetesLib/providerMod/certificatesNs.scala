@@ -16,7 +16,7 @@ object certificatesNs extends js.Object {
       */
     @js.native
     class CertificateSigningRequest protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a certificates.v1beta1.CertificateSigningRequest resource with the given unique name, arguments, and options.
         *
@@ -34,25 +34,25 @@ object certificatesNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * The certificate request itself and any additional information.
         */
-      val spec: atPulumiPulumiLib.pulumiMod.Output[
+      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             atPulumiKubernetesLib.typesOutputMod.certificatesNs.v1beta1Ns.CertificateSigningRequestSpec
           ] = js.native
       /**
         * Derived information about the request.
         */
-      val status: atPulumiPulumiLib.pulumiMod.Output[
+      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             atPulumiKubernetesLib.typesOutputMod.certificatesNs.v1beta1Ns.CertificateSigningRequestStatus
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.certificatesNs.v1beta1Ns.CertificateSigningRequest = js.native
@@ -60,7 +60,7 @@ object certificatesNs extends js.Object {
     
     @js.native
     class CertificateSigningRequestList protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a certificates.v1beta1.CertificateSigningRequestList resource with the given unique name, arguments, and options.
         *
@@ -78,8 +78,8 @@ object certificatesNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-      val items: atPulumiPulumiLib.pulumiMod.Output[
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val items: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             js.Array[
               atPulumiKubernetesLib.typesOutputMod.certificatesNs.v1beta1Ns.CertificateSigningRequest
             ]
@@ -90,8 +90,8 @@ object certificatesNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.certificatesNs.v1beta1Ns.CertificateSigningRequestList = js.native
     }
     

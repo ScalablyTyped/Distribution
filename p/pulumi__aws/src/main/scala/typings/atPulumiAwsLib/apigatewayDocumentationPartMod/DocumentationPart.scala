@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/apigateway/documentationPart", "DocumentationPart")
 @js.native
 class DocumentationPart protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a DocumentationPart resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class DocumentationPart protected ()
   /**
     * The location of the targeted API entity of the to-be-created documentation part. See below.
     */
-  val location: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_Method] = js.native
+  val location: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Method] = js.native
   /**
     * A content map of API-specific key-value pairs describing the targeted API entity. The map must be encoded as a JSON string, e.g., "{ \"description\": \"The API does ...\" }". Only Swagger-compliant key-value pairs can be exported and, hence, published.
     */
-  val properties: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val properties: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the associated Rest API
     */
-  val restApiId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val restApiId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/apigateway/documentationPart", "DocumentationPart")

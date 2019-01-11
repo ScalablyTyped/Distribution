@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/datasync/s3Location", "S3Location")
 @js.native
 class S3Location protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a S3Location resource with the given unique name, arguments, and options.
     *
@@ -21,24 +21,24 @@ class S3Location protected ()
   /**
     * Amazon Resource Name (ARN) of the DataSync Location.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Amazon Resource Name (ARN) of the S3 Bucket.
     */
-  val s3BucketArn: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val s3BucketArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
   /**
     * Configuration block containing information for connecting to S3.
     */
-  val s3Config: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BucketAccessRoleArn] = js.native
+  val s3Config: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_BucketAccessRoleArn] = js.native
   /**
     * Prefix to perform actions as source or destination.
     */
-  val subdirectory: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val subdirectory: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
-  val uri: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val uri: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/datasync/s3Location", "S3Location")

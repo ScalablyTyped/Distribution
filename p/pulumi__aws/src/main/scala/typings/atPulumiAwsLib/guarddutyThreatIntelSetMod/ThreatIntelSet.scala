@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/guardduty/threatIntelSet", "ThreatIntelSet")
 @js.native
 class ThreatIntelSet protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ThreatIntelSet resource with the given unique name, arguments, and options.
     *
@@ -21,23 +21,23 @@ class ThreatIntelSet protected ()
   /**
     * Specifies whether GuardDuty is to start using the uploaded ThreatIntelSet.
     */
-  val activate: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
+  val activate: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
   /**
     * The detector ID of the GuardDuty.
     */
-  val detectorId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val detectorId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The format of the file that contains the ThreatIntelSet. Valid values: `TXT` | `STIX` | `OTX_CSV` | `ALIEN_VAULT` | `PROOF_POINT` | `FIRE_EYE`
     */
-  val format: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val format: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The URI of the file that contains the ThreatIntelSet.
     */
-  val location: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val location: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The friendly name to identify the ThreatIntelSet.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/guardduty/threatIntelSet", "ThreatIntelSet")

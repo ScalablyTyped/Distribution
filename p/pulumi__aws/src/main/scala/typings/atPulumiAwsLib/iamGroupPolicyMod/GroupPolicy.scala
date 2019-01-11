@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iam/groupPolicy", "GroupPolicy")
 @js.native
 class GroupPolicy protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a GroupPolicy resource with the given unique name, arguments, and options.
     *
@@ -21,21 +21,21 @@ class GroupPolicy protected ()
   /**
     * The IAM group to attach to the policy.
     */
-  val group: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val group: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the policy. If omitted, Terraform will
     * assign a random, unique name.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified
     * prefix. Conflicts with `name`.
     */
-  val namePrefix: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val namePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The policy document. This is a JSON formatted string. For more information about building IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html)
     */
-  val policy: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/iam/groupPolicy", "GroupPolicy")

@@ -67,7 +67,9 @@ trait BucketObjectState extends js.Object {
   /**
     * The path to a file that will be read and uploaded as raw bytes for the object content.
     */
-  val source: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.pulumiMod.assetNs.Asset]] = js.undefined
+  val source: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.atPulumiPulumiMod.assetNs.Asset]
+  ] = js.undefined
   /**
     * Specifies the desired [Storage Class](http://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html)
     * for the object. Can be either "`STANDARD`", "`REDUCED_REDUNDANCY`", "`ONEZONE_IA`", "`INTELLIGENT_TIERING`", "`GLACIER`", or "`STANDARD_IA`". Defaults to "`STANDARD`".

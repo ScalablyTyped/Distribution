@@ -26,7 +26,7 @@ import scala.scalajs.js.annotation._
   var id: js.UndefOr[java.lang.String] = js.undefined
   var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_]] = js.undefined
   var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var margin: js.UndefOr[atMaterialDashUiCoreLib.coreMod.PropTypesNs.Margin] = js.undefined
+  var margin: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Margin] = js.undefined
   var multiline: js.UndefOr[scala.Boolean] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[

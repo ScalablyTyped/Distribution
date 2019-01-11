@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object formFieldNs extends js.Object {
   @js.native
   class MDCFormField ()
-    extends atMaterialFormDashFieldLib.formDashFieldMod.MDCFormField
+    extends atMaterialFormDashFieldLib.atMaterialFormDashFieldMod.MDCFormField
   
   @js.native
   class MDCFormFieldFoundation ()
-    extends atMaterialFormDashFieldLib.formDashFieldMod.MDCFormFieldFoundation
+    extends atMaterialFormDashFieldLib.atMaterialFormDashFieldMod.MDCFormFieldFoundation
   
   @js.native
   object MDCFormField extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialFormDashFieldLib.formDashFieldMod.MDCFormField = js.native
+    def attachTo(root: stdLib.Element): atMaterialFormDashFieldLib.atMaterialFormDashFieldMod.MDCFormField = js.native
   }
   
   @js.native

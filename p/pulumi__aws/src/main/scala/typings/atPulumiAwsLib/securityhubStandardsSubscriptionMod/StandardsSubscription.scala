@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/securityhub/standardsSubscription", "StandardsSubscription")
 @js.native
 class StandardsSubscription protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a StandardsSubscription resource with the given unique name, arguments, and options.
     *
@@ -21,7 +21,7 @@ class StandardsSubscription protected ()
   /**
     * The ARN of a standard - see below.
     */
-  val standardsArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val standardsArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/securityhub/standardsSubscription", "StandardsSubscription")

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/devicefarm/project", "Project")
 @js.native
 class Project protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Project resource with the given unique name, arguments, and options.
     *
@@ -22,11 +22,11 @@ class Project protected ()
   /**
     * The Amazon Resource Name of this project
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the project
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/devicefarm/project", "Project")

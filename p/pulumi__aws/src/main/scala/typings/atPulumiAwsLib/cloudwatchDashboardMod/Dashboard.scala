@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cloudwatch/dashboard", "Dashboard")
 @js.native
 class Dashboard protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Dashboard resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class Dashboard protected ()
   /**
     * The Amazon Resource Name (ARN) of the dashboard.
     */
-  val dashboardArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val dashboardArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The detailed information about the dashboard, including what widgets are included and their location on the dashboard. You can read more about the body structure in the [documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CloudWatch-Dashboard-Body-Structure.html).
     */
-  val dashboardBody: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val dashboardBody: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the dashboard.
     */
-  val dashboardName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val dashboardName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cloudwatch/dashboard", "Dashboard")

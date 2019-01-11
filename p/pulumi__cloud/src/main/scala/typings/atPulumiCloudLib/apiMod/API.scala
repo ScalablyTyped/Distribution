@@ -51,7 +51,7 @@ trait API extends js.Object {
   def post(path: java.lang.String, handlers: RouteHandler*): scala.Unit = js.native
   def proxy(
     path: java.lang.String,
-    target: atPulumiPulumiLib.pulumiMod.Output[atPulumiCloudLib.serviceMod.Endpoint]
+    target: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiCloudLib.serviceMod.Endpoint]
   ): scala.Unit = js.native
   /**
     * proxy forwards an HTTP request to a target URL or Endpoint.

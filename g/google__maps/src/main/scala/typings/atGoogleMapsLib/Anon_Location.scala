@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Location extends js.Object {
   /** Contains a `latitude` and `longitude` value. */
-  var location: atGoogleMapsLib.mapsMod.LatLngLiteralVerbose
+  var location: atGoogleMapsLib.atGoogleMapsMod.LatLngLiteralVerbose
   /**
     * An integer that indicates the corresponding value in the original request.
     * Each point in the request maps to at most two segmentsin the response:

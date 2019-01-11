@@ -30,3 +30,4 @@
 [error] PhaseRunner.scala:86 Failure, [react-dnd => InFile(/home/tso/tmp/tso-cache/npm/node_modules/react-dnd/lib/DragDropContext.d.ts): Parse error at 13.94 ''global'' expected but ',' found] [id => react-mosaic-component, phase => typescript] 
 [error] PhaseRunner.scala:86 Failure, [react-dnd => InFile(/home/tso/tmp/tso-cache/npm/node_modules/react-dnd/lib/DragDropContext.d.ts): Parse error at 13.94 ''global'' expected but ',' found] [id => react-mosaic-component, phase => scala.js] 
 [error] PhaseRunner.scala:86 Failure, [react-dnd => InFile(/home/tso/tmp/tso-cache/npm/node_modules/react-dnd/lib/DragDropContext.d.ts): Parse error at 13.94 ''global'' expected but ',' found] [id => react-mosaic-component, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [react-dnd => InFile(/home/tso/tmp/tso-cache/npm/node_modules/react-dnd/lib/DragDropContext.d.ts): Parse error at 13.94 ''global'' expected but ',' found] [id => react-mosaic-component, phase => publish] 

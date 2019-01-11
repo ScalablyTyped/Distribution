@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/redshift/subnetGroup", "SubnetGroup")
 @js.native
 class SubnetGroup protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SubnetGroup resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class SubnetGroup protected ()
   /**
     * The description of the Redshift Subnet group. Defaults to "Managed by Terraform".
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the Redshift Subnet group.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * An array of VPC subnet IDs.
     */
-  val subnetIds: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val subnetIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 @JSImport("@pulumi/aws/redshift/subnetGroup", "SubnetGroup")

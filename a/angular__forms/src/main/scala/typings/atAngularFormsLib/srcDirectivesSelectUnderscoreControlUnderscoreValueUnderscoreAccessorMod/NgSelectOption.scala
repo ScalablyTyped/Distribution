@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgSelectOption protected ()
   extends atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnDestroy {
-  def this(_element: atAngularCoreLib.coreMod.ElementRef[_], _renderer: atAngularCoreLib.coreMod.Renderer2, _select: SelectControlValueAccessor) = this()
+  def this(_element: atAngularCoreLib.atAngularCoreMod.ElementRef[_], _renderer: atAngularCoreLib.atAngularCoreMod.Renderer2, _select: SelectControlValueAccessor) = this()
   var _element: js.Any = js.native
   var _renderer: js.Any = js.native
   var _select: js.Any = js.native

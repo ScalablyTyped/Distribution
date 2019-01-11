@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/servicediscovery/privateDnsNamespace", "PrivateDnsNamespace")
 @js.native
 class PrivateDnsNamespace protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a PrivateDnsNamespace resource with the given unique name, arguments, and options.
     *
@@ -21,23 +21,23 @@ class PrivateDnsNamespace protected ()
   /**
     * The ARN that Amazon Route 53 assigns to the namespace when you create it.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The description that you specify for the namespace when you create it.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ID for the hosted zone that Amazon Route 53 creates when you create a namespace.
     */
-  val hostedZone: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val hostedZone: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the namespace.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of VPC that you want to associate the namespace with.
     */
-  val vpc: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpc: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/servicediscovery/privateDnsNamespace", "PrivateDnsNamespace")

@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object radioNs extends js.Object {
   @js.native
   class MDCRadio ()
-    extends atMaterialRadioLib.radioMod.MDCRadio
+    extends atMaterialRadioLib.atMaterialRadioMod.MDCRadio
   
   @js.native
   class MDCRadioFoundation ()
-    extends atMaterialRadioLib.radioMod.MDCRadioFoundation
+    extends atMaterialRadioLib.atMaterialRadioMod.MDCRadioFoundation
   
   @js.native
   object MDCRadio extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialRadioLib.radioMod.MDCRadio = js.native
+    def attachTo(root: stdLib.Element): atMaterialRadioLib.atMaterialRadioMod.MDCRadio = js.native
   }
   
   @js.native

@@ -52,7 +52,7 @@ class FormControlDirective protected ()
   @JSName("path")
   val path_FormControlDirective: js.Array[java.lang.String] = js.native
   /** @deprecated as of v6 */
-  var update: atAngularCoreLib.coreMod.EventEmitter[js.Object] = js.native
+  var update: atAngularCoreLib.atAngularCoreMod.EventEmitter[js.Object] = js.native
   /**
     * @description
     * Internal reference to the view model value.

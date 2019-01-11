@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/sfn/activity", "Activity")
 @js.native
 class Activity protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Activity resource with the given unique name, arguments, and options.
     *
@@ -22,11 +22,11 @@ class Activity protected ()
   /**
     * The date the activity was created.
     */
-  val creationDate: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val creationDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the activity to create.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/sfn/activity", "Activity")

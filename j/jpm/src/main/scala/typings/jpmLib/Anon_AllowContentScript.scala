@@ -23,7 +23,7 @@ trait Anon_AllowContentScript extends js.Object {
   var onHide: js.UndefOr[js.Function0[_]] = js.undefined
   var onMessage: js.UndefOr[js.Function1[/* message */ java.lang.String, _]] = js.undefined
   var onShow: js.UndefOr[js.Function0[_]] = js.undefined
-  var position: js.UndefOr[jpmLib.panelMod.PanelPosition] = js.undefined
+  var position: js.UndefOr[jpmLib.sdkPanelMod.PanelPosition] = js.undefined
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 

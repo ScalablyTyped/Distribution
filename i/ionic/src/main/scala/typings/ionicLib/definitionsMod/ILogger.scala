@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ILogger
-  extends atIonicCliDashFrameworkLib.cliDashFrameworkMod.Logger {
+  extends atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.Logger {
   @JSName("ok")
   var ok_Original: LogFn = js.native
   @JSName("rawmsg")

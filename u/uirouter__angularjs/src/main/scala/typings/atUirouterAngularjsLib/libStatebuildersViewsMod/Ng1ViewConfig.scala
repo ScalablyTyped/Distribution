@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Ng1ViewConfig protected ()
   extends atUirouterCoreLib.libViewInterfaceMod.ViewConfig {
-  def this(path: js.Array[atUirouterCoreLib.coreMod.PathNode], viewDecl: atUirouterAngularjsLib.libInterfaceMod.Ng1ViewDeclaration, factory: atUirouterAngularjsLib.libTemplateFactoryMod.TemplateFactory) = this()
+  def this(path: js.Array[atUirouterCoreLib.atUirouterCoreMod.PathNode], viewDecl: atUirouterAngularjsLib.libInterfaceMod.Ng1ViewDeclaration, factory: atUirouterAngularjsLib.libTemplateFactoryMod.TemplateFactory) = this()
   /* CompleteClass */
   @JSName("$id")
   override var $id: scala.Double = js.native
@@ -23,7 +23,7 @@ class Ng1ViewConfig protected ()
   /* CompleteClass */
   override var path: js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode] = js.native
   @JSName("path")
-  var path_Ng1ViewConfig: js.Array[atUirouterCoreLib.coreMod.PathNode] = js.native
+  var path_Ng1ViewConfig: js.Array[atUirouterCoreLib.atUirouterCoreMod.PathNode] = js.native
   var template: java.lang.String = js.native
   /** The normalized view declaration from [[State.views]] */
   /* CompleteClass */
@@ -35,8 +35,8 @@ class Ng1ViewConfig protected ()
     *
     * @returns {Function|Promise.<Function>} Returns a controller, or a promise that resolves to a controller.
     */
-  def getController(context: atUirouterCoreLib.coreMod.ResolveContext): atUirouterCoreLib.libCommonCommonMod.IInjectable | java.lang.String | (js.Promise[atUirouterCoreLib.libCommonCommonMod.IInjectable | java.lang.String]) = js.native
-  def getTemplate(uiView: js.Any, context: atUirouterCoreLib.coreMod.ResolveContext): java.lang.String = js.native
+  def getController(context: atUirouterCoreLib.atUirouterCoreMod.ResolveContext): atUirouterCoreLib.libCommonCommonMod.IInjectable | java.lang.String | (js.Promise[atUirouterCoreLib.libCommonCommonMod.IInjectable | java.lang.String]) = js.native
+  def getTemplate(uiView: js.Any, context: atUirouterCoreLib.atUirouterCoreMod.ResolveContext): java.lang.String = js.native
   /** Fetches templates, runs dynamic (controller|template)Provider code, lazy loads Components, etc */
   /* CompleteClass */
   override def load(): js.Promise[atUirouterCoreLib.libViewInterfaceMod.ViewConfig] = js.native

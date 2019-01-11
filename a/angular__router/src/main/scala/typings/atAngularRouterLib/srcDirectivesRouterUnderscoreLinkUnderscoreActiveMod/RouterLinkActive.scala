@@ -11,15 +11,15 @@ class RouterLinkActive protected ()
   extends atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnChanges
      with atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnDestroy
      with atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.AfterContentInit {
-  def this(router: atAngularRouterLib.srcRouterMod.Router, element: atAngularCoreLib.coreMod.ElementRef[_], renderer: atAngularCoreLib.coreMod.Renderer2, cdr: atAngularCoreLib.coreMod.ChangeDetectorRef) = this()
+  def this(router: atAngularRouterLib.srcRouterMod.Router, element: atAngularCoreLib.atAngularCoreMod.ElementRef[_], renderer: atAngularCoreLib.atAngularCoreMod.Renderer2, cdr: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef) = this()
   var cdr: js.Any = js.native
   var classes: js.Any = js.native
   var element: js.Any = js.native
   var hasActiveLinks: js.Any = js.native
   val isActive: scala.Boolean = js.native
   var isLinkActive: js.Any = js.native
-  var links: atAngularCoreLib.coreMod.QueryList[atAngularRouterLib.srcDirectivesRouterUnderscoreLinkMod.RouterLink] = js.native
-  var linksWithHrefs: atAngularCoreLib.coreMod.QueryList[atAngularRouterLib.srcDirectivesRouterUnderscoreLinkMod.RouterLinkWithHref] = js.native
+  var links: atAngularCoreLib.atAngularCoreMod.QueryList[atAngularRouterLib.srcDirectivesRouterUnderscoreLinkMod.RouterLink] = js.native
+  var linksWithHrefs: atAngularCoreLib.atAngularCoreMod.QueryList[atAngularRouterLib.srcDirectivesRouterUnderscoreLinkMod.RouterLinkWithHref] = js.native
   var renderer: js.Any = js.native
   var router: js.Any = js.native
   var routerLinkActive: js.Array[java.lang.String] | java.lang.String = js.native

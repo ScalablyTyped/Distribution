@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ses/domainIdentity", "DomainIdentity")
 @js.native
 class DomainIdentity protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a DomainIdentity resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class DomainIdentity protected ()
   /**
     * The ARN of the domain identity.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The domain name to assign to SES
     */
-  val domain: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val domain: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A code which when added to the domain as a TXT record
     * will signal to SES that the owner of the domain has authorised SES to act on
@@ -35,7 +35,7 @@ class DomainIdentity protected ()
     * more about verifying domains in Amazon SES in the [AWS SES
     * docs](http://docs.aws.amazon.com/ses/latest/DeveloperGuide/verify-domains.html).
     */
-  val verificationToken: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val verificationToken: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ses/domainIdentity", "DomainIdentity")

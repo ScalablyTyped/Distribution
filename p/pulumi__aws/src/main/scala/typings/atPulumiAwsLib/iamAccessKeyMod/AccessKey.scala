@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iam/accessKey", "AccessKey")
 @js.native
 class AccessKey protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a AccessKey resource with the given unique name, arguments, and options.
     *
@@ -23,38 +23,38 @@ class AccessKey protected ()
     * > **NOTE:** The encrypted secret may be decrypted using the command line,
     * for example: `terraform output encrypted_secret | base64 --decode | keybase pgp decrypt`.
     */
-  val encryptedSecret: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val encryptedSecret: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The fingerprint of the PGP key used to encrypt
     * the secret
     */
-  val keyFingerprint: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val keyFingerprint: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Either a base-64 encoded PGP public key, or a
     * keybase username in the form `keybase:some_person_that_exists`.
     */
-  val pgpKey: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val pgpKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The secret access key. Note that this will be written
     * to the state file. Please supply a `pgp_key` instead, which will prevent the
     * secret from being stored in plain text
     */
-  val secret: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val secret: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The secret access key converted into an SES SMTP
     * password by applying [AWS's documented conversion
     * algorithm](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/smtp-credentials.html#smtp-credentials-convert).
     */
-  val sesSmtpPassword: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val sesSmtpPassword: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * "Active" or "Inactive". Keys are initially active, but can be made
     * inactive by other means.
     */
-  val status: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The IAM user to associate with this access key.
     */
-  val user: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val user: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/iam/accessKey", "AccessKey")

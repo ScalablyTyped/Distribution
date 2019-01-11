@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgStyle protected ()
   extends atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.DoCheck {
-  def this(_differs: atAngularCoreLib.coreMod.KeyValueDiffers, _ngEl: atAngularCoreLib.coreMod.ElementRef[_], _renderer: atAngularCoreLib.coreMod.Renderer2) = this()
+  def this(_differs: atAngularCoreLib.atAngularCoreMod.KeyValueDiffers, _ngEl: atAngularCoreLib.atAngularCoreMod.ElementRef[_], _renderer: atAngularCoreLib.atAngularCoreMod.Renderer2) = this()
   var _applyChanges: js.Any = js.native
   var _differ: js.Any = js.native
   var _differs: js.Any = js.native

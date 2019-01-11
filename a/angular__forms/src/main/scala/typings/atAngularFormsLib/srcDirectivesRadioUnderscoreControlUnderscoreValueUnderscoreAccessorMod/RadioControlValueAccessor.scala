@@ -11,7 +11,7 @@ class RadioControlValueAccessor protected ()
   extends atAngularFormsLib.srcDirectivesControlUnderscoreValueUnderscoreAccessorMod.ControlValueAccessor
      with atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnDestroy
      with atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnInit {
-  def this(_renderer: atAngularCoreLib.coreMod.Renderer2, _elementRef: atAngularCoreLib.coreMod.ElementRef[_], _registry: RadioControlRegistry, _injector: atAngularCoreLib.coreMod.Injector) = this()
+  def this(_renderer: atAngularCoreLib.atAngularCoreMod.Renderer2, _elementRef: atAngularCoreLib.atAngularCoreMod.ElementRef[_], _registry: RadioControlRegistry, _injector: atAngularCoreLib.atAngularCoreMod.Injector) = this()
   var _checkName: js.Any = js.native
   var _elementRef: js.Any = js.native
   var _injector: js.Any = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/dax/parameterGroup", "ParameterGroup")
 @js.native
 class ParameterGroup protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ParameterGroup resource with the given unique name, arguments, and options.
     *
@@ -22,15 +22,15 @@ class ParameterGroup protected ()
   /**
     * A description of the parameter group.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the parameter group.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The parameters of the parameter group.
     */
-  val parameters: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Name]] = js.native
+  val parameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Name]] = js.native
 }
 
 @JSImport("@pulumi/aws/dax/parameterGroup", "ParameterGroup")

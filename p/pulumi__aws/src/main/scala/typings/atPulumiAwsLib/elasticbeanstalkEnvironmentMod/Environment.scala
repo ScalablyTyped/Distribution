@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/elasticbeanstalk/environment", "Environment")
 @js.native
 class Environment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Environment resource with the given unique name, arguments, and options.
     *
@@ -23,104 +23,104 @@ class Environment protected ()
     * are a combination of default settings and their overrides from `setting` in
     * the configuration.
     */
-  val allSettings: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_NameNamespace]] = js.native
+  val allSettings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_NameNamespace]] = js.native
   /**
     * Name of the application that contains the version
     * to be deployed
     */
-  val application: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.elasticbeanstalkApplicationMod.Application] = js.native
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val application: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.elasticbeanstalkApplicationMod.Application] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The autoscaling groups used by this environment.
     */
-  val autoscalingGroups: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val autoscalingGroups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * Fully qualified DNS name for the Environment.
     */
-  val cname: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val cname: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Prefix to use for the fully qualified DNS name of
     * the Environment.
     */
-  val cnamePrefix: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val cnamePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Short description of the Environment
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Instances used by this environment.
     */
-  val instances: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val instances: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * Launch configurations in use by this environment.
     */
-  val launchConfigurations: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val launchConfigurations: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * Elastic load balancers in use by this environment.
     */
-  val loadBalancers: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val loadBalancers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * A unique name for this Environment. This name is used
     * in the application URL
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The [ARN][2] of the Elastic Beanstalk [Platform][3]
     * to use in deployment
     */
-  val platformArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val platformArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The time between polling the AWS API to
     * check if changes have been applied. Use this to adjust the rate of API calls
     * for any `create` or `update` action. Minimum `10s`, maximum `180s`. Omit this to
     * use the default behavior, which is an exponential backoff
     */
-  val pollInterval: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val pollInterval: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * SQS queues in use by this environment.
     */
-  val queues: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val queues: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * Option settings to configure the new Environment. These
     * override specific values that are set as defaults. The format is detailed
     * below in Option Settings
     */
-  val settings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameNamespace]]] = js.native
+  val settings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_NameNamespace]]] = js.native
   /**
     * A solution stack to base your environment
     * off of. Example stacks can be found in the [Amazon API documentation][1]
     */
-  val solutionStackName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val solutionStackName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A set of tags to apply to the Environment.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The name of the Elastic Beanstalk Configuration
     * template to use in deployment
     */
-  val templateName: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val templateName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Elastic Beanstalk Environment tier. Valid values are `Worker`
     * or `WebServer`. If tier is left blank `WebServer` will be used.
     */
-  val tier: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val tier: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Autoscaling triggers in use by this environment.
     */
-  val triggers: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val triggers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The name of the Elastic Beanstalk Application Version
     * to use in deployment.
     */
-  val version: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersion] = js.native
+  val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersion] = js.native
   /**
     * The maximum
     * [duration](https://golang.org/pkg/time/#ParseDuration) that Terraform should
     * wait for an Elastic Beanstalk Environment to be in a ready state before timing
     * out.
     */
-  val waitForReadyTimeout: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val waitForReadyTimeout: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/elasticbeanstalk/environment", "Environment")

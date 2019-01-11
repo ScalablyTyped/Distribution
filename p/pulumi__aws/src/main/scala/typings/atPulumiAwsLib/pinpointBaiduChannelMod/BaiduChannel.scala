@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/pinpoint/baiduChannel", "BaiduChannel")
 @js.native
 class BaiduChannel protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a BaiduChannel resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class BaiduChannel protected ()
   /**
     * Platform credential API key from Baidu.
     */
-  val apiKey: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val apiKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The application ID.
     */
-  val applicationId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val applicationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Specifies whether to enable the channel. Defaults to `true`.
     */
-  val enabled: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Platform credential Secret key from Baidu.
     */
-  val secretKey: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val secretKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/pinpoint/baiduChannel", "BaiduChannel")

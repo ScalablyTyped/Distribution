@@ -11,7 +11,7 @@ class EventManager protected () extends js.Object {
   /**
     * Initializes an instance of the event-manager service.
     */
-  def this(plugins: js.Array[EventManagerPlugin], _zone: atAngularCoreLib.coreMod.NgZone) = this()
+  def this(plugins: js.Array[EventManagerPlugin], _zone: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   var _eventNameToPlugin: js.Any = js.native
   var _plugins: js.Any = js.native
   var _zone: js.Any = js.native
@@ -38,6 +38,6 @@ class EventManager protected () extends js.Object {
   /**
     * Retrieves the compilation zone in which event listeners are registered.
     */
-  def getZone(): atAngularCoreLib.coreMod.NgZone = js.native
+  def getZone(): atAngularCoreLib.atAngularCoreMod.NgZone = js.native
 }
 

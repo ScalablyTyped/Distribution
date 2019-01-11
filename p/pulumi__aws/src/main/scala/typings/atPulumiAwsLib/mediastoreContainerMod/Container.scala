@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/mediastore/container", "Container")
 @js.native
 class Container protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Container resource with the given unique name, arguments, and options.
     *
@@ -22,15 +22,15 @@ class Container protected ()
   /**
     * The ARN of the container.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The DNS endpoint of the container.
     */
-  val endpoint: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val endpoint: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the container. Must contain alphanumeric characters or underscores.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/mediastore/container", "Container")

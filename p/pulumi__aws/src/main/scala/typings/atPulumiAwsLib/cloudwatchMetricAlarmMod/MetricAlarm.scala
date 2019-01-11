@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cloudwatch/metricAlarm", "MetricAlarm")
 @js.native
 class MetricAlarm protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a MetricAlarm resource with the given unique name, arguments, and options.
     *
@@ -21,31 +21,31 @@ class MetricAlarm protected ()
   /**
     * Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
     */
-  val actionsEnabled: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val actionsEnabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Number (ARN).
     */
-  val alarmActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val alarmActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The description for the alarm.
     */
-  val alarmDescription: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val alarmDescription: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ARN of the cloudwatch metric alarm.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`.
     */
-  val comparisonOperator: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val comparisonOperator: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The number of datapoints that must be breaching to trigger the alarm.
     */
-  val datapointsToAlarm: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val datapointsToAlarm: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The dimensions for the alarm's associated metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
     */
-  val dimensions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val dimensions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * Used only for alarms
     * based on percentiles. If you specify `ignore`, the alarm state will not
@@ -54,58 +54,58 @@ class MetricAlarm protected ()
     * evaluated and possibly change state no matter how many data points are available.
     * The following values are supported: `ignore`, and `evaluate`.
     */
-  val evaluateLowSampleCountPercentiles: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val evaluateLowSampleCountPercentiles: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The number of periods over which data is compared to the specified threshold.
     */
-  val evaluationPeriods: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val evaluationPeriods: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
     */
-  val extendedStatistic: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val extendedStatistic: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Number (ARN).
     */
-  val insufficientDataActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val insufficientDataActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The name for the alarm's associated metric.
     * See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
     */
-  val metricName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val metricName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The descriptive name for the alarm. This name must be unique within the user's AWS account
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The namespace for the alarm's associated metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
     * See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
     */
-  val namespace: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val namespace: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Number (ARN).
     */
-  val okActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val okActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The period in seconds over which the specified `statistic` is applied.
     */
-  val period: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val period: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * The statistic to apply to the alarm's associated metric.
     * Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
     */
-  val statistic: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val statistic: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The value against which the specified statistic is compared.
     */
-  val threshold: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val threshold: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
     */
-  val treatMissingData: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val treatMissingData: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The unit for the alarm's associated metric.
     */
-  val unit: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val unit: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/cloudwatch/metricAlarm", "MetricAlarm")

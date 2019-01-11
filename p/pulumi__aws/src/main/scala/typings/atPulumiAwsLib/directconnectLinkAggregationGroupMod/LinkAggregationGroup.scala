@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/directconnect/linkAggregationGroup", "LinkAggregationGroup")
 @js.native
 class LinkAggregationGroup protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a LinkAggregationGroup resource with the given unique name, arguments, and options.
     *
@@ -21,31 +21,31 @@ class LinkAggregationGroup protected ()
   /**
     * The ARN of the LAG.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The bandwidth of the individual physical connections bundled by the LAG. Available values: 1Gbps, 10Gbps. Case sensitive.
     */
-  val connectionsBandwidth: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val connectionsBandwidth: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A boolean that indicates all connections associated with the LAG should be deleted so that the LAG can be destroyed without error. These objects are *not* recoverable.
     */
-  val forceDestroy: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val forceDestroy: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The AWS Direct Connect location in which the LAG should be allocated. See [DescribeLocations](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLocations.html) for the list of AWS Direct Connect locations. Use `locationCode`.
     */
-  val location: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val location: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the LAG.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The number of physical connections initially provisioned and bundled by the LAG. Use `aws_dx_connection` and `aws_dx_connection_association` resources instead. Default connections will be removed as part of LAG creation automatically in future versions.
     */
-  val numberOfConnections: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val numberOfConnections: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 @JSImport("@pulumi/aws/directconnect/linkAggregationGroup", "LinkAggregationGroup")

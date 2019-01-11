@@ -11,7 +11,7 @@ trait Anon_CursorDoc[T] extends js.Object {
     hook: js.Function4[
       /* userId */ java.lang.String, 
       /* selector */ meteorDashTypingsLib.MongoNs.Selector, 
-      /* options */ meteorDashCollectionDashHooksLib.mongoMod.CollectionHooksNs.ModifierOptions, 
+      /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
       /* cursor */ meteorDashTypingsLib.MongoNs.Cursor[T], 
       scala.Unit
     ]
@@ -20,7 +20,7 @@ trait Anon_CursorDoc[T] extends js.Object {
     hook: js.Function4[
       /* userId */ java.lang.String, 
       /* selector */ meteorDashTypingsLib.MongoNs.Selector, 
-      /* options */ meteorDashCollectionDashHooksLib.mongoMod.CollectionHooksNs.ModifierOptions, 
+      /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
       /* doc */ T, 
       scala.Unit
     ]
@@ -33,7 +33,7 @@ trait Anon_CursorDoc[T] extends js.Object {
       /* doc */ T, 
       /* fieldNames */ js.Array[java.lang.String], 
       /* modifier */ meteorDashTypingsLib.MongoNs.Modifier, 
-      /* options */ meteorDashCollectionDashHooksLib.mongoMod.CollectionHooksNs.ModifierOptions, 
+      /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -43,10 +43,10 @@ trait Anon_CursorDoc[T] extends js.Object {
       /* doc */ T, 
       /* fieldNames */ js.Array[java.lang.String], 
       /* modifier */ meteorDashTypingsLib.MongoNs.Modifier, 
-      /* options */ meteorDashCollectionDashHooksLib.mongoMod.CollectionHooksNs.ModifierOptions, 
+      /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
       scala.Unit
     ],
-    options: meteorDashCollectionDashHooksLib.mongoMod.CollectionHooksNs.HookOptionValue
+    options: meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.HookOptionValue
   ): scala.Unit = js.native
   def upsert(
     hook: js.Function5[
@@ -54,7 +54,7 @@ trait Anon_CursorDoc[T] extends js.Object {
       /* doc */ T, 
       /* selector */ meteorDashTypingsLib.MongoNs.Selector, 
       /* modifier */ meteorDashTypingsLib.MongoNs.Modifier, 
-      /* options */ meteorDashCollectionDashHooksLib.mongoMod.CollectionHooksNs.ModifierOptions, 
+      /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
       scala.Unit
     ]
   ): scala.Unit = js.native

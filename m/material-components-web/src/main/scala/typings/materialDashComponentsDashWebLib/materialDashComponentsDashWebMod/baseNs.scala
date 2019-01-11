@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 object baseNs extends js.Object {
   @js.native
   class MDCComponent[A, F /* <: atMaterialBaseLib.foundationMod.default[A] */] protected ()
-    extends atMaterialBaseLib.baseMod.MDCComponent[A, F] {
+    extends atMaterialBaseLib.atMaterialBaseMod.MDCComponent[A, F] {
     def this(root: stdLib.Element) = this()
     def this(root: stdLib.Element, foundation: F, args: js.Any*) = this()
   }
   
   @js.native
   class MDCFoundation[A] protected ()
-    extends atMaterialBaseLib.baseMod.MDCFoundation[A] {
+    extends atMaterialBaseLib.atMaterialBaseMod.MDCFoundation[A] {
     def this(adapter: A) = this()
   }
   

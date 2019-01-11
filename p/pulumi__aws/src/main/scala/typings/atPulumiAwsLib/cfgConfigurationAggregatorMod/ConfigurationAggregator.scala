@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cfg/configurationAggregator", "ConfigurationAggregator")
 @js.native
 class ConfigurationAggregator protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ConfigurationAggregator resource with the given unique name, arguments, and options.
     *
@@ -22,19 +22,19 @@ class ConfigurationAggregator protected ()
   /**
     * The account(s) to aggregate config data from as documented below.
     */
-  val accountAggregationSource: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AccountIds]] = js.native
+  val accountAggregationSource: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AccountIds]] = js.native
   /**
     * The ARN of the aggregator
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the configuration aggregator.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The organization to aggregate config data from as documented below.
     */
-  val organizationAggregationSource: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllRegions]] = js.native
+  val organizationAggregationSource: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllRegions]] = js.native
 }
 
 @JSImport("@pulumi/aws/cfg/configurationAggregator", "ConfigurationAggregator")

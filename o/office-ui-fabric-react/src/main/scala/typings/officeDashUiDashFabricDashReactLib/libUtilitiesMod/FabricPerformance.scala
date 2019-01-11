@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/Utilities", "FabricPerformance")
 @js.native
 class FabricPerformance ()
-  extends atUifabricUtilitiesLib.utilitiesMod.FabricPerformance
+  extends atUifabricUtilitiesLib.atUifabricUtilitiesMod.FabricPerformance
 
 @JSImport("office-ui-fabric-react/lib/Utilities", "FabricPerformance")
 @js.native

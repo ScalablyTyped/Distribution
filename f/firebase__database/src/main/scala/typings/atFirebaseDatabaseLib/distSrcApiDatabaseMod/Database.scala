@@ -17,7 +17,7 @@ class Database protected ()
   @JSName("INTERNAL")
   var INTERNAL_Database: DatabaseInternals = js.native
   /* CompleteClass */
-  override var app: atFirebaseAppDashTypesLib.appDashTypesMod.FirebaseApp = js.native
+  override var app: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp = js.native
   var `repo_`: js.Any = js.native
   var `root_`: js.Any = js.native
   /**

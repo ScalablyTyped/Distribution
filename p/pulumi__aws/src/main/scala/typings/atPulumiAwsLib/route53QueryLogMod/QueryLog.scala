@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/route53/queryLog", "QueryLog")
 @js.native
 class QueryLog protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a QueryLog resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class QueryLog protected ()
   /**
     * CloudWatch log group ARN to send query logs.
     */
-  val cloudwatchLogGroupArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val cloudwatchLogGroupArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Route53 hosted zone ID to enable query logs.
     */
-  val zoneId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val zoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/route53/queryLog", "QueryLog")

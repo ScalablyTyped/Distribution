@@ -1,0 +1,13 @@
+package typings
+package knockoutDashPagingLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobalScope
+@js.native
+object ^ extends js.Object {
+  var ko: knockoutDashPagingLib.KnockoutStatic = js.native
+}
+

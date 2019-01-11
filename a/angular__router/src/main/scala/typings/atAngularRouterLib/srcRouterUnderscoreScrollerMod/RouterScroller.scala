@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class RouterScroller protected ()
   extends atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnDestroy {
-  def this(router: atAngularRouterLib.srcRouterMod.Router, /** @docsNotRequired */ viewportScroller: atAngularCommonLib.commonMod.ViewportScroller) = this()
-  def this(router: atAngularRouterLib.srcRouterMod.Router, /** @docsNotRequired */ viewportScroller: atAngularCommonLib.commonMod.ViewportScroller, options: atAngularRouterLib.Anon_AnchorScrolling) = this()
+  def this(router: atAngularRouterLib.srcRouterMod.Router, /** @docsNotRequired */ viewportScroller: atAngularCommonLib.atAngularCommonMod.ViewportScroller) = this()
+  def this(router: atAngularRouterLib.srcRouterMod.Router, /** @docsNotRequired */ viewportScroller: atAngularCommonLib.atAngularCommonMod.ViewportScroller, options: atAngularRouterLib.Anon_AnchorScrolling) = this()
   var consumeScrollEvents: js.Any = js.native
   var createScrollEvents: js.Any = js.native
   var lastId: js.Any = js.native
@@ -22,7 +22,7 @@ class RouterScroller protected ()
   var scheduleScrollEvent: js.Any = js.native
   var scrollEventsSubscription: js.Any = js.native
   var store: js.Any = js.native
-  /** @docsNotRequired */ val viewportScroller: atAngularCommonLib.commonMod.ViewportScroller = js.native
+  /** @docsNotRequired */ val viewportScroller: atAngularCommonLib.atAngularCommonMod.ViewportScroller = js.native
   def init(): scala.Unit = js.native
   /**
     * A callback method that performs custom clean-up, invoked immediately

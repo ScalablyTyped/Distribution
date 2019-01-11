@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2transitgateway/vpcAttachment", "VpcAttachment")
 @js.native
 class VpcAttachment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a VpcAttachment resource with the given unique name, arguments, and options.
     *
@@ -21,39 +21,39 @@ class VpcAttachment protected ()
   /**
     * Whether DNS support is enabled. Valid values: `disable`, `enable`. Default value: `enable`.
     */
-  val dnsSupport: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val dnsSupport: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Whether IPv6 support is enabled. Valid values: `disable`, `enable`. Default value: `disable`.
     */
-  val ipv6Support: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val ipv6Support: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Identifiers of EC2 Subnets.
     */
-  val subnetIds: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val subnetIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * Key-value tags for the EC2 Transit Gateway VPC Attachment.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
   /**
     * Boolean whether the VPC Attachment should be associated with the EC2 Transit Gateway association default route table. Default value: `true`.
     */
-  val transitGatewayDefaultRouteTableAssociation: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val transitGatewayDefaultRouteTableAssociation: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Boolean whether the VPC Attachment should propagate routes with the EC2 Transit Gateway propagation default route table. Default value: `true`.
     */
-  val transitGatewayDefaultRouteTablePropagation: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val transitGatewayDefaultRouteTablePropagation: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Identifier of EC2 Transit Gateway.
     */
-  val transitGatewayId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val transitGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Identifier of EC2 VPC.
     */
-  val vpcId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Identifier of the AWS account that owns the EC2 VPC.
     */
-  val vpcOwnerId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcOwnerId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2transitgateway/vpcAttachment", "VpcAttachment")

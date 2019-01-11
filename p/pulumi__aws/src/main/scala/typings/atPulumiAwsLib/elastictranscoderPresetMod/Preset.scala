@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/elastictranscoder/preset", "Preset")
 @js.native
 class Preset protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Preset resource with the given unique name, arguments, and options.
     *
@@ -18,42 +18,42 @@ class Preset protected ()
     */
   def this(name: java.lang.String, args: PresetArgs) = this()
   def this(name: java.lang.String, args: PresetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Audio parameters object (documented below).
     */
-  val audio: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AudioPackingMode]] = js.native
+  val audio: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AudioPackingMode]] = js.native
   /**
     * Codec options for the audio parameters (documented below)
     */
-  val audioCodecOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BitDepth]] = js.native
+  val audioCodecOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BitDepth]] = js.native
   /**
     * The container type for the output file. Valid values are `flac`, `flv`, `fmp4`, `gif`, `mp3`, `mp4`, `mpg`, `mxf`, `oga`, `ogg`, `ts`, and `webm`.
     */
-  val container: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val container: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A description of the preset (maximum 255 characters)
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the preset. (maximum 40 characters)
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Thumbnail parameters object (documented below)
     */
-  val thumbnails: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AspectRatio]] = js.native
-  val `type`: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val thumbnails: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AspectRatio]] = js.native
+  val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Video parameters object (documented below)
     */
-  val video: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AspectRatioBitRate]] = js.native
-  val videoCodecOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val video: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AspectRatioBitRate]] = js.native
+  val videoCodecOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * Watermark parameters for the video parameters (documented below)
     * * `video_codec_options` (Optional, Forces new resource) Codec options for the video parameters
     */
-  val videoWatermarks: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_HorizontalAlign]]] = js.native
+  val videoWatermarks: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_HorizontalAlign]]] = js.native
 }
 
 @JSImport("@pulumi/aws/elastictranscoder/preset", "Preset")

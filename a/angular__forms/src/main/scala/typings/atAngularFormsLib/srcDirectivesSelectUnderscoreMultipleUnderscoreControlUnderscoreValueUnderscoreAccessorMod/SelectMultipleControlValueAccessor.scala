@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SelectMultipleControlValueAccessor protected ()
   extends atAngularFormsLib.srcDirectivesControlUnderscoreValueUnderscoreAccessorMod.ControlValueAccessor {
-  def this(_renderer: atAngularCoreLib.coreMod.Renderer2, _elementRef: atAngularCoreLib.coreMod.ElementRef[_]) = this()
+  def this(_renderer: atAngularCoreLib.atAngularCoreMod.Renderer2, _elementRef: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
   var _compareWith: js.Any = js.native
   var _elementRef: js.Any = js.native
   var _renderer: js.Any = js.native

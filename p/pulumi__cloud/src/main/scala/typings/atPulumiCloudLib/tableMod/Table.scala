@@ -10,11 +10,11 @@ trait Table extends js.Object {
   /**
     * The name of the primary key.
     */
-  val primaryKey: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val primaryKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The type of the primary key.
     */
-  val primaryKeyType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val primaryKeyType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Deletes a documents from the table.
     *

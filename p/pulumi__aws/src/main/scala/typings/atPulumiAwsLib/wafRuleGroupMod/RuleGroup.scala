@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/waf/ruleGroup", "RuleGroup")
 @js.native
 class RuleGroup protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a RuleGroup resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class RuleGroup protected ()
   /**
     * A list of activated rules, see below
     */
-  val activatedRules: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionPriority]]] = js.native
+  val activatedRules: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionPriority]]] = js.native
   /**
     * A friendly name for the metrics from the rule group
     */
-  val metricName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val metricName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A friendly name of the rule group
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/waf/ruleGroup", "RuleGroup")

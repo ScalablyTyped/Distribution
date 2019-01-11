@@ -27,3 +27,4 @@
 [error] PhaseRunner.scala:86 Failure, [ember-data => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember-data/index.d.ts): Parse error at 859.28 '')'' expected but 'as' found] [id => ember-data, phase => typescript] 
 [error] PhaseRunner.scala:86 Failure, [ember-data => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember-data/index.d.ts): Parse error at 859.28 '')'' expected but 'as' found] [id => ember-data, phase => scala.js] 
 [error] PhaseRunner.scala:86 Failure, [ember-data => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember-data/index.d.ts): Parse error at 859.28 '')'' expected but 'as' found] [id => ember-data, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [ember-data => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ember-data/index.d.ts): Parse error at 859.28 '')'' expected but 'as' found] [id => ember-data, phase => publish] 

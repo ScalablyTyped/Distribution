@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ses/mailFrom", "MailFrom")
 @js.native
 class MailFrom protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a MailFrom resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class MailFrom protected ()
   /**
     * The action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. Defaults to `UseDefaultValue`. See the [SES API documentation](https://docs.aws.amazon.com/ses/latest/APIReference/API_SetIdentityMailFromDomain.html) for more information.
     */
-  val behaviorOnMxFailure: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val behaviorOnMxFailure: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Verified domain name to generate DKIM tokens for.
     */
-  val domain: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val domain: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Subdomain (of above domain) which is to be used as MAIL FROM address (Required for DMARC validation)
     */
-  val mailFromDomain: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val mailFromDomain: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ses/mailFrom", "MailFrom")

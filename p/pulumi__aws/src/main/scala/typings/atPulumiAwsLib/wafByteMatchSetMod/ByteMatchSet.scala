@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/waf/byteMatchSet", "ByteMatchSet")
 @js.native
 class ByteMatchSet protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ByteMatchSet resource with the given unique name, arguments, and options.
     *
@@ -24,11 +24,11 @@ class ByteMatchSet protected ()
     * with ASCII characters) that you want to search for in web requests,
     * the location in requests that you want to search, and other settings.
     */
-  val byteMatchTuples: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatch]]] = js.native
+  val byteMatchTuples: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatch]]] = js.native
   /**
     * The name or description of the Byte Match Set.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/waf/byteMatchSet", "ByteMatchSet")

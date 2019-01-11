@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/apigateway/model", "Model")
 @js.native
 class Model protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Model resource with the given unique name, arguments, and options.
     *
@@ -21,23 +21,23 @@ class Model protected ()
   /**
     * The content type of the model
     */
-  val contentType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val contentType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The description of the model
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the model
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the associated REST API
     */
-  val restApi: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = js.native
+  val restApi: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = js.native
   /**
     * The schema of the model in a JSON form
     */
-  val schema: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val schema: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/apigateway/model", "Model")

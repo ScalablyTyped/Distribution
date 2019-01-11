@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/Utilities", "AutoScroll")
 @js.native
 class AutoScroll protected ()
-  extends atUifabricUtilitiesLib.utilitiesMod.AutoScroll {
+  extends atUifabricUtilitiesLib.atUifabricUtilitiesMod.AutoScroll {
   def this(element: reactLib.HTMLElement) = this()
 }
 

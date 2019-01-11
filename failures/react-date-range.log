@@ -4,7 +4,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(react-date-range)) [id => react-date-range, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(react-date-range) [id => react-date-range, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => react-date-range, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:36 Processing react-date-range [id => react-date-range, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:40 Processing react-date-range [id => react-date-range, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => react-date-range, phase => scala.js] 
 [error] package.scala:9 type Moment is not a member of package typings.momentDashTimezoneLib.momentDashTimezoneMod,   type AnyDate = java.lang.String | momentDashTimezoneLib.momentDashTimezoneMod.Moment [id => react-date-range, phase => build] 
 [error] package.scala:10 type Moment is not a member of package typings.momentDashTimezoneLib.momentDashTimezoneMod,   type DateFunc = js.Function1[/* now */ momentDashTimezoneLib.momentDashTimezoneMod.Moment, AnyDate] [id => react-date-range, phase => build] 
@@ -19,3 +19,4 @@
 [error] Range.scala:10 type Moment is not a member of package typings.momentDashTimezoneLib.momentDashTimezoneMod,   var endDate: js.UndefOr[momentDashTimezoneLib.momentDashTimezoneMod.Moment] = js.undefined [id => react-date-range, phase => build] 
 [error] Range.scala:12 type Moment is not a member of package typings.momentDashTimezoneLib.momentDashTimezoneMod,   var startDate: js.UndefOr[momentDashTimezoneLib.momentDashTimezoneMod.Moment] = js.undefined [id => react-date-range, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [react-date-range => Compilation failed] [id => react-date-range, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [react-date-range => Compilation failed] [id => react-date-range, phase => publish] 

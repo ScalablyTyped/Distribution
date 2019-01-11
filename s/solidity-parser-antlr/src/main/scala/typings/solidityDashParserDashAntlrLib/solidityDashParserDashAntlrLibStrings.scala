@@ -82,10 +82,10 @@ object solidityDashParserDashAntlrLibStrings {
   sealed trait `>>=` extends js.Object
   
   @js.native
-  sealed trait `^` extends js.Object
+  sealed trait `^=` extends js.Object
   
   @js.native
-  sealed trait `^=` extends js.Object
+  sealed trait `^` extends js.Object
   
   @js.native
   sealed trait `private` extends js.Object
@@ -127,8 +127,8 @@ object solidityDashParserDashAntlrLibStrings {
   def `>=`: `>=` = ">=".asInstanceOf[`>=`]
   def `>>`: `>>` = ">>".asInstanceOf[`>>`]
   def `>>=`: `>>=` = ">>=".asInstanceOf[`>>=`]
-  def `^`: `^` = "^".asInstanceOf[`^`]
   def `^=`: `^=` = "^=".asInstanceOf[`^=`]
+  def `^`: `^` = "^".asInstanceOf[`^`]
   def `private`: `private` = "private".asInstanceOf[`private`]
   def public: public = "public".asInstanceOf[public]
   def `|`: `|` = "|".asInstanceOf[`|`]

@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object notchedOutlineNs extends js.Object {
   @js.native
   class MDCNotchedOutline ()
-    extends atMaterialNotchedDashOutlineLib.notchedDashOutlineMod.MDCNotchedOutline
+    extends atMaterialNotchedDashOutlineLib.atMaterialNotchedDashOutlineMod.MDCNotchedOutline
   
   @js.native
   class MDCNotchedOutlineFoundation ()
-    extends atMaterialNotchedDashOutlineLib.notchedDashOutlineMod.MDCNotchedOutlineFoundation
+    extends atMaterialNotchedDashOutlineLib.atMaterialNotchedDashOutlineMod.MDCNotchedOutlineFoundation
   
   @js.native
   object MDCNotchedOutline extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialNotchedDashOutlineLib.notchedDashOutlineMod.MDCNotchedOutline = js.native
+    def attachTo(root: stdLib.Element): atMaterialNotchedDashOutlineLib.atMaterialNotchedDashOutlineMod.MDCNotchedOutline = js.native
   }
   
   @js.native

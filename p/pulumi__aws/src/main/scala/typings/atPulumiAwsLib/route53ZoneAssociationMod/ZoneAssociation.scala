@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/route53/zoneAssociation", "ZoneAssociation")
 @js.native
 class ZoneAssociation protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ZoneAssociation resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class ZoneAssociation protected ()
   /**
     * The VPC to associate with the private hosted zone.
     */
-  val vpcId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The VPC's region. Defaults to the region of the AWS provider.
     */
-  val vpcRegion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcRegion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The private hosted zone to associate.
     */
-  val zoneId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val zoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/route53/zoneAssociation", "ZoneAssociation")

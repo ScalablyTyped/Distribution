@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object linearProgressNs extends js.Object {
   @js.native
   class MDCLinearProgress ()
-    extends atMaterialLinearDashProgressLib.linearDashProgressMod.MDCLinearProgress
+    extends atMaterialLinearDashProgressLib.atMaterialLinearDashProgressMod.MDCLinearProgress
   
   @js.native
   class MDCLinearProgressFoundation ()
-    extends atMaterialLinearDashProgressLib.linearDashProgressMod.MDCLinearProgressFoundation
+    extends atMaterialLinearDashProgressLib.atMaterialLinearDashProgressMod.MDCLinearProgressFoundation
   
   @js.native
   object MDCLinearProgress extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialLinearDashProgressLib.linearDashProgressMod.MDCLinearProgress = js.native
+    def attachTo(root: stdLib.Element): atMaterialLinearDashProgressLib.atMaterialLinearDashProgressMod.MDCLinearProgress = js.native
   }
   
   @js.native

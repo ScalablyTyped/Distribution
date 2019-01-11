@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iot/thing", "Thing")
 @js.native
 class Thing protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Thing resource with the given unique name, arguments, and options.
     *
@@ -22,27 +22,27 @@ class Thing protected ()
   /**
     * The ARN of the thing.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Map of attributes of the thing.
     */
-  val attributes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val attributes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The default client ID.
     */
-  val defaultClientId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val defaultClientId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the thing.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The thing type name.
     */
-  val thingTypeName: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val thingTypeName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The current version of the thing record in the registry.
     */
-  val version: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
 }
 
 @JSImport("@pulumi/aws/iot/thing", "Thing")

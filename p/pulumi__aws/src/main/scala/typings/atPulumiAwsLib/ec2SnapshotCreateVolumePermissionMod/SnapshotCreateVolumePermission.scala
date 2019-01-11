@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/snapshotCreateVolumePermission", "SnapshotCreateVolumePermission")
 @js.native
 class SnapshotCreateVolumePermission protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SnapshotCreateVolumePermission resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class SnapshotCreateVolumePermission protected ()
   /**
     * An AWS Account ID to add create volume permissions
     */
-  val accountId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val accountId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A snapshot ID
     */
-  val snapshotId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val snapshotId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/snapshotCreateVolumePermission", "SnapshotCreateVolumePermission")

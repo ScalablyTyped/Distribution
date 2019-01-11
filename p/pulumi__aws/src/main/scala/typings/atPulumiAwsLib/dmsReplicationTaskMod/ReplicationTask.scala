@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/dms/replicationTask", "ReplicationTask")
 @js.native
 class ReplicationTask protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ReplicationTask resource with the given unique name, arguments, and options.
     *
@@ -21,43 +21,43 @@ class ReplicationTask protected ()
   /**
     * The Unix timestamp integer for the start of the Change Data Capture (CDC) operation.
     */
-  val cdcStartTime: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val cdcStartTime: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The migration type. Can be one of `full-load | cdc | full-load-and-cdc`.
     */
-  val migrationType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val migrationType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The Amazon Resource Name (ARN) of the replication instance.
     */
-  val replicationInstanceArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val replicationInstanceArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The Amazon Resource Name (ARN) for the replication task.
     */
-  val replicationTaskArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val replicationTaskArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The replication task identifier.
     */
-  val replicationTaskId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val replicationTaskId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * An escaped JSON string that contains the task settings. For a complete list of task settings, see [Task Settings for AWS Database Migration Service Tasks](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.TaskSettings.html).
     */
-  val replicationTaskSettings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val replicationTaskSettings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The Amazon Resource Name (ARN) string that uniquely identifies the source endpoint.
     */
-  val sourceEndpointArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val sourceEndpointArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * An escaped JSON string that contains the table mappings. For information on table mapping see [Using Table Mapping with an AWS Database Migration Service Task to Select and Filter Data](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.TableMapping.html)
     */
-  val tableMappings: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val tableMappings: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The Amazon Resource Name (ARN) string that uniquely identifies the target endpoint.
     */
-  val targetEndpointArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val targetEndpointArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/dms/replicationTask", "ReplicationTask")

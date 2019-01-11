@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/apigateway/method", "Method")
 @js.native
 class Method protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Method resource with the given unique name, arguments, and options.
     *
@@ -21,29 +21,29 @@ class Method protected ()
   /**
     * Specify if the method requires an API key
     */
-  val apiKeyRequired: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val apiKeyRequired: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The type of authorization used for the method (`NONE`, `CUSTOM`, `AWS_IAM`, `COGNITO_USER_POOLS`)
     */
-  val authorization: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val authorization: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The authorization scopes used when the authorization is `COGNITO_USER_POOLS`
     */
-  val authorizationScopes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val authorizationScopes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The authorizer id to be used when the authorization is `CUSTOM` or `COGNITO_USER_POOLS`
     */
-  val authorizerId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val authorizerId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The HTTP Method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`, `ANY`)
     */
-  val httpMethod: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val httpMethod: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A map of the API models used for the request's content type
     * where key is the content type (e.g. `application/json`)
     * and value is either `Error`, `Empty` (built-in models) or `aws_api_gateway_model`'s `name`.
     */
-  val requestModels: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val requestModels: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
   /**
     * A map of request query string parameters and headers that should be passed to the integration.
     * For example:
@@ -55,23 +55,23 @@ class Method protected ()
     * ```
     * would define that the header `X-Some-Header` and the query string `some-query-param` must be provided on the request, or
     */
-  val requestParameters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Boolean]]] = js.native
+  val requestParameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Boolean]]] = js.native
   /**
     * **Deprecated**, use `request_parameters` instead.
     */
-  val requestParametersInJson: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val requestParametersInJson: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ID of a `aws_api_gateway_request_validator`
     */
-  val requestValidatorId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val requestValidatorId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The API resource ID
     */
-  val resourceId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val resourceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the associated REST API
     */
-  val restApi: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = js.native
+  val restApi: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = js.native
 }
 
 @JSImport("@pulumi/aws/apigateway/method", "Method")

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/opsworks/stack", "Stack")
 @js.native
 class Stack protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Stack resource with the given unique name, arguments, and options.
     *
@@ -21,100 +21,100 @@ class Stack protected ()
   /**
     * If set to `"LATEST"`, OpsWorks will automatically install the latest version.
     */
-  val agentVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val agentVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * If `manage_berkshelf` is enabled, the version of Berkshelf to use.
     */
-  val berkshelfVersion: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val berkshelfVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Color to paint next to the stack's resources in the OpsWorks console.
     */
-  val color: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val color: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Name of the configuration manager to use. Defaults to "Chef".
     */
-  val configurationManagerName: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val configurationManagerName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Version of the configuration manager to use. Defaults to "11.4".
     */
-  val configurationManagerVersion: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val configurationManagerVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * When `use_custom_cookbooks` is set, provide this sub-object as
     * described below.
     */
-  val customCookbooksSources: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_PasswordRevisionSshKey]] = js.native
+  val customCookbooksSources: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_PasswordRevisionSshKey]] = js.native
   /**
     * Custom JSON attributes to apply to the entire stack.
     */
-  val customJson: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val customJson: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Name of the availability zone where instances will be created
     * by default. This is required unless you set `vpc_id`.
     */
-  val defaultAvailabilityZone: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val defaultAvailabilityZone: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ARN of an IAM Instance Profile that created instances
     * will have by default.
     */
-  val defaultInstanceProfileArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val defaultInstanceProfileArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Name of OS that will be installed on instances by default.
     */
-  val defaultOs: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val defaultOs: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Name of the type of root device instances will have by default.
     */
-  val defaultRootDeviceType: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val defaultRootDeviceType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Name of the SSH keypair that instances will have by default.
     */
-  val defaultSshKeyName: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val defaultSshKeyName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Id of the subnet in which instances will be created by default. Mandatory
     * if `vpc_id` is set, and forbidden if it isn't.
     */
-  val defaultSubnetId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val defaultSubnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Keyword representing the naming scheme that will be used for instance hostnames
     * within this stack.
     */
-  val hostnameTheme: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val hostnameTheme: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Boolean value controlling whether Opsworks will run Berkshelf for this stack.
     */
-  val manageBerkshelf: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val manageBerkshelf: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The name of the stack.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the region where the stack will exist.
     */
-  val region: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val region: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ARN of an IAM role that the OpsWorks service will act as.
     */
-  val serviceRoleArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val stackEndpoint: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val serviceRoleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val stackEndpoint: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * Boolean value controlling whether the custom cookbook settings are
     * enabled.
     */
-  val useCustomCookbooks: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val useCustomCookbooks: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Boolean value controlling whether the standard OpsWorks
     * security groups apply to created instances.
     */
-  val useOpsworksSecurityGroups: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val useOpsworksSecurityGroups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The id of the VPC that this stack belongs to.
     */
-  val vpcId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/opsworks/stack", "Stack")

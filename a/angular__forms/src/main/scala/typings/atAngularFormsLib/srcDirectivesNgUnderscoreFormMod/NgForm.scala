@@ -40,7 +40,7 @@ class NgForm protected ()
     * @description
     * Event emitter for the "ngSubmit" event
     */
-  var ngSubmit: atAngularCoreLib.coreMod.EventEmitter[js.Object] = js.native
+  var ngSubmit: atAngularCoreLib.atAngularCoreMod.EventEmitter[js.Object] = js.native
   /**
     * @description
     * Tracks options for the `NgForm` instance.

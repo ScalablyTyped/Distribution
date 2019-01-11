@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/batch/computeEnvironment", "ComputeEnvironment")
 @js.native
 class ComputeEnvironment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ComputeEnvironment resource with the given unique name, arguments, and options.
     *
@@ -21,40 +21,40 @@ class ComputeEnvironment protected ()
   /**
     * The Amazon Resource Name (ARN) of the compute environment.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed.
     */
-  val computeEnvironmentName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val computeEnvironmentName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
     */
-  val computeResources: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BidPercentage]] = js.native
-  val eccClusterArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val computeResources: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BidPercentage]] = js.native
+  val eccClusterArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
     */
-  val ecsClusterArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val ecsClusterArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
     */
-  val serviceRole: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val serviceRole: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
     */
-  val state: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val state: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The current status of the compute environment (for example, CREATING or VALID).
     */
-  val status: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A short, human-readable string to provide additional details about the current status of the compute environment.
     */
-  val statusReason: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val statusReason: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The type of compute environment. Valid items are `EC2` or `SPOT`.
     */
-  val `type`: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/batch/computeEnvironment", "ComputeEnvironment")

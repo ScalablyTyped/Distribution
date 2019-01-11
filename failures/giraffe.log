@@ -19,7 +19,7 @@
 [debug] InferReturnTypes.scala:29 Inferred return type [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclNamespace(Contrib) / TsDeclClass(Controller) / TsMemberFunction(unbind))] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_TModel) [id => giraffe, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(Giraffe) / TsDeclClass(Collection) / TsMemberProperty(model) / TsTypeObject())] 
 [debug] PhaseRunner.scala:82 Success [id => giraffe, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:36 Processing giraffe [id => giraffe, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:40 Processing giraffe [id => giraffe, phase => scala.js] 
 [info ] CompleteClass.scala:58 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(Collection)] 
 [info ] CompleteClass.scala:58 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(Model)] 
 [info ] CompleteClass.scala:58 Completed implementations Vector(app) [id => giraffe, phase => scala.js, this => Name(giraffeLib) / Name(GiraffeNs) / Name(Router)] 
@@ -43,3 +43,4 @@
   variable initialize in trait GiraffeObject of type scala.scalajs.js.UndefOr[scala.scalajs.js.Function0[scala.scalajs.js.Any]]
 (Note: this can be resolved by declaring an override in class View.), class View[TModel /* <: Model */] () [id => giraffe, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [giraffe => Compilation failed] [id => giraffe, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [giraffe => Compilation failed] [id => giraffe, phase => publish] 

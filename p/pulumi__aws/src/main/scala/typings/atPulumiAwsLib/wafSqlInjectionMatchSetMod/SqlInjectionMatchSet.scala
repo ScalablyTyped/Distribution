@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/waf/sqlInjectionMatchSet", "SqlInjectionMatchSet")
 @js.native
 class SqlInjectionMatchSet protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SqlInjectionMatchSet resource with the given unique name, arguments, and options.
     *
@@ -22,11 +22,11 @@ class SqlInjectionMatchSet protected ()
   /**
     * The name or description of the SizeConstraintSet.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The parts of web requests that you want AWS WAF to inspect for malicious SQL code and, if you want AWS WAF to inspect a header, the name of the header.
     */
-  val sqlInjectionMatchTuples: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatchTextTransformation]]] = js.native
+  val sqlInjectionMatchTuples: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatchTextTransformation]]] = js.native
 }
 
 @JSImport("@pulumi/aws/waf/sqlInjectionMatchSet", "SqlInjectionMatchSet")

@@ -3,3 +3,4 @@
 [error] PhaseRunner.scala:86 Failure, [steamid => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/steamid/index.d.ts): Parse error at 95.17 ''}'' expected but '.' found] [id => steamid, phase => typescript] 
 [error] PhaseRunner.scala:86 Failure, [steamid => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/steamid/index.d.ts): Parse error at 95.17 ''}'' expected but '.' found] [id => steamid, phase => scala.js] 
 [error] PhaseRunner.scala:86 Failure, [steamid => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/steamid/index.d.ts): Parse error at 95.17 ''}'' expected but '.' found] [id => steamid, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [steamid => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/steamid/index.d.ts): Parse error at 95.17 ''}'' expected but '.' found] [id => steamid, phase => publish] 

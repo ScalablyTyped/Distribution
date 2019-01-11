@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cloudwatch/logMetricFilter", "LogMetricFilter")
 @js.native
 class LogMetricFilter protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a LogMetricFilter resource with the given unique name, arguments, and options.
     *
@@ -21,21 +21,21 @@ class LogMetricFilter protected ()
   /**
     * The name of the log group to associate the metric filter with.
     */
-  val logGroupName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val logGroupName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A block defining collection of information
     * needed to define how metric data gets emitted. See below.
     */
-  val metricTransformation: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DefaultValue] = js.native
+  val metricTransformation: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_DefaultValue] = js.native
   /**
     * A name for the metric filter.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
     * for extracting metric data out of ingested log events.
     */
-  val pattern: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val pattern: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cloudwatch/logMetricFilter", "LogMetricFilter")

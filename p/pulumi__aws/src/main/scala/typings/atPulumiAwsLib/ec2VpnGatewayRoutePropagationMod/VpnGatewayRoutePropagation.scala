@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/vpnGatewayRoutePropagation", "VpnGatewayRoutePropagation")
 @js.native
 class VpnGatewayRoutePropagation protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a VpnGatewayRoutePropagation resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class VpnGatewayRoutePropagation protected ()
   /**
     * The id of the `aws_route_table` to propagate routes into.
     */
-  val routeTableId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val routeTableId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The id of the `aws_vpn_gateway` to propagate routes from.
     */
-  val vpnGatewayId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpnGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/vpnGatewayRoutePropagation", "VpnGatewayRoutePropagation")

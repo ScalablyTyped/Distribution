@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object libStateFiltersMod extends js.Object {
   @JSName("$IncludedByStateFilter")
-  def $IncludedByStateFilter($state: atUirouterCoreLib.coreMod.StateService): js.Any = js.native
+  def $IncludedByStateFilter($state: atUirouterCoreLib.atUirouterCoreMod.StateService): js.Any = js.native
   @JSName("$IsStateFilter")
-  def $IsStateFilter($state: atUirouterCoreLib.coreMod.StateService): js.Any = js.native
+  def $IsStateFilter($state: atUirouterCoreLib.atUirouterCoreMod.StateService): js.Any = js.native
   @JSName("$IncludedByStateFilter")
   @js.native
   object $IncludedByStateFilterNs extends js.Object {

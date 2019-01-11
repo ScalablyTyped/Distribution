@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object toolbarNs extends js.Object {
   @js.native
   class MDCToolbar ()
-    extends atMaterialToolbarLib.toolbarMod.MDCToolbar
+    extends atMaterialToolbarLib.atMaterialToolbarMod.MDCToolbar
   
   @js.native
   class MDCToolbarFoundation ()
-    extends atMaterialToolbarLib.toolbarMod.MDCToolbarFoundation
+    extends atMaterialToolbarLib.atMaterialToolbarMod.MDCToolbarFoundation
   
   @js.native
   object MDCToolbar extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialToolbarLib.toolbarMod.MDCToolbar = js.native
+    def attachTo(root: stdLib.Element): atMaterialToolbarLib.atMaterialToolbarMod.MDCToolbar = js.native
   }
   
   @js.native

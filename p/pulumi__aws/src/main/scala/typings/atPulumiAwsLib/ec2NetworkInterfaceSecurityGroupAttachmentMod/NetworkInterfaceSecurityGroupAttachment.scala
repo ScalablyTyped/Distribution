@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment", "NetworkInterfaceSecurityGroupAttachment")
 @js.native
 class NetworkInterfaceSecurityGroupAttachment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a NetworkInterfaceSecurityGroupAttachment resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class NetworkInterfaceSecurityGroupAttachment protected ()
   /**
     * The ID of the network interface to attach to.
     */
-  val networkInterfaceId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val networkInterfaceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the security group.
     */
-  val securityGroupId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val securityGroupId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment", "NetworkInterfaceSecurityGroupAttachment")

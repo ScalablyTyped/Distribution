@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/lightsail/domain", "Domain")
 @js.native
 class Domain protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Domain resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class Domain protected ()
   /**
     * The ARN of the Lightsail domain
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the Lightsail domain to manage
     */
-  val domainName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val domainName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/lightsail/domain", "Domain")

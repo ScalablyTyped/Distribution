@@ -12,7 +12,7 @@ trait Anon_AttachmentsBcc extends js.Object {
   var from: js.UndefOr[java.lang.String] = js.undefined
   var headers: js.UndefOr[js.Object] = js.undefined
   var html: js.UndefOr[java.lang.String] = js.undefined
-  var mailComposer: js.UndefOr[meteorDashTypingsLib.emailMod.MailComposer] = js.undefined
+  var mailComposer: js.UndefOr[meteorDashTypingsLib.meteorEmailMod.MailComposer] = js.undefined
   var replyTo: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var subject: js.UndefOr[java.lang.String] = js.undefined
   var text: js.UndefOr[java.lang.String] = js.undefined

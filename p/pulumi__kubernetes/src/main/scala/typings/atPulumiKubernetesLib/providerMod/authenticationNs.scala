@@ -17,7 +17,7 @@ object authenticationNs extends js.Object {
       */
     @js.native
     class TokenReview protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a authentication.v1.TokenReview resource with the given unique name, arguments, and options.
         *
@@ -35,23 +35,23 @@ object authenticationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated
         */
-      val spec: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.authenticationNs.v1Ns.TokenReviewSpec] = js.native
+      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.authenticationNs.v1Ns.TokenReviewSpec] = js.native
       /**
         * Status is filled in by the server and indicates whether the request can be authenticated.
         */
-      val status: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.authenticationNs.v1Ns.TokenReviewStatus] = js.native
+      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.authenticationNs.v1Ns.TokenReviewStatus] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.authenticationNs.v1Ns.TokenReview = js.native
     }
     
@@ -86,7 +86,7 @@ object authenticationNs extends js.Object {
       */
     @js.native
     class TokenReview protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a authentication.v1beta1.TokenReview resource with the given unique name, arguments, and options.
         *
@@ -104,23 +104,23 @@ object authenticationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated
         */
-      val spec: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.authenticationNs.v1beta1Ns.TokenReviewSpec] = js.native
+      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.authenticationNs.v1beta1Ns.TokenReviewSpec] = js.native
       /**
         * Status is filled in by the server and indicates whether the request can be authenticated.
         */
-      val status: atPulumiPulumiLib.pulumiMod.Output[
+      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             atPulumiKubernetesLib.typesOutputMod.authenticationNs.v1beta1Ns.TokenReviewStatus
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.authenticationNs.v1beta1Ns.TokenReview = js.native

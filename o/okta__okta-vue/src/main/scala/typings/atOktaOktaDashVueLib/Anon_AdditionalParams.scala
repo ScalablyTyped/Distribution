@@ -20,7 +20,7 @@ trait Anon_AdditionalParams extends js.Object {
   def loginRedirect(fromUri: java.lang.String): scala.Unit = js.native
   def loginRedirect(
     fromUri: java.lang.String,
-    additionalParams: atOktaOktaDashVueLib.oktaDashVueMod.OktaVuePluginNs.OktaOpenIDOptions
+    additionalParams: atOktaOktaDashVueLib.atOktaOktaDashVueMod.OktaVuePluginNs.OktaOpenIDOptions
   ): scala.Unit = js.native
   def logout(): js.Promise[scala.Unit] = js.native
 }

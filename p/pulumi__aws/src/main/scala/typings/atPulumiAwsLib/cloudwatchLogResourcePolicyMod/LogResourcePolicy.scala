@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cloudwatch/logResourcePolicy", "LogResourcePolicy")
 @js.native
 class LogResourcePolicy protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a LogResourcePolicy resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class LogResourcePolicy protected ()
   /**
     * Details of the resource policy, including the identity of the principal that is enabled to put logs to this account. This is formatted as a JSON string. Maximum length of 5120 characters.
     */
-  val policyDocument: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val policyDocument: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Name of the resource policy.
     */
-  val policyName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val policyName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cloudwatch/logResourcePolicy", "LogResourcePolicy")

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_AttachTo extends js.Object {
   var attachTo: js.UndefOr[
-    jpmLib.pageDashModMod.attachmentMode | js.Array[jpmLib.pageDashModMod.attachmentMode]
+    jpmLib.sdkPageDashModMod.attachmentMode | js.Array[jpmLib.sdkPageDashModMod.attachmentMode]
   ] = js.undefined
   var contentScript: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var contentScriptFile: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

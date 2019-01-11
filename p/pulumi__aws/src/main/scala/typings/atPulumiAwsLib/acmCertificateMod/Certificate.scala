@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/acm/certificate", "Certificate")
 @js.native
 class Certificate protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Certificate resource with the given unique name, arguments, and options.
     *
@@ -22,44 +22,44 @@ class Certificate protected ()
   /**
     * The ARN of the certificate
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The certificate's PEM-formatted public key
     */
-  val certificateBody: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificateBody: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The certificate's PEM-formatted chain
     */
-  val certificateChain: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificateChain: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A domain name for which the certificate should be issued
     */
-  val domainName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val domainName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A list of attributes to feed into other resources to complete certificate validation. Can have more than one element, e.g. if SANs are defined. Only set if `DNS`-validation was used.
     */
-  val domainValidationOptions: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DomainName]] = js.native
+  val domainValidationOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_DomainName]] = js.native
   /**
     * The certificate's PEM-formatted private key
     */
-  val privateKey: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val privateKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A list of domains that should be SANs in the issued certificate
     */
-  val subjectAlternativeNames: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val subjectAlternativeNames: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * A list of addresses that received a validation E-Mail. Only set if `EMAIL`-validation was used.
     */
-  val validationEmails: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val validationEmails: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * Which method to use for validation. `DNS` or `EMAIL` are valid, `NONE` can be used for certificates that were imported into ACM and then into Terraform.
     * * Importing an existing certificate
     */
-  val validationMethod: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val validationMethod: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/acm/certificate", "Certificate")

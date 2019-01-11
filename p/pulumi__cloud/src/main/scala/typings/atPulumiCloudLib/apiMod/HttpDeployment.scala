@@ -11,10 +11,10 @@ trait HttpDeployment extends js.Object {
     * previous call to attachCustomDomain on the API.  Each name
     * should be mapped using a DNS A record.
     */
-  var customDomainNames: js.Array[atPulumiPulumiLib.pulumiMod.Output[java.lang.String]]
+  var customDomainNames: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]]
   /**
     * The URL at which the HttpDeployment is available to the Internet.
     */
-  var url: atPulumiPulumiLib.pulumiMod.Output[java.lang.String]
+  var url: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]
 }
 

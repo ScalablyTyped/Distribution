@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iam/userGroupMembership", "UserGroupMembership")
 @js.native
 class UserGroupMembership protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a UserGroupMembership resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class UserGroupMembership protected ()
   /**
     * A list of [IAM Groups][1] to add the user to
     */
-  val groups: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val groups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The name of the [IAM User][2] to add to groups
     */
-  val user: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val user: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/iam/userGroupMembership", "UserGroupMembership")

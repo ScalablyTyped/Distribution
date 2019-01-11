@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/pinpoint/admChannel", "AdmChannel")
 @js.native
 class AdmChannel protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a AdmChannel resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class AdmChannel protected ()
   /**
     * The application ID.
     */
-  val applicationId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val applicationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Client ID (part of OAuth Credentials) obtained via Amazon Developer Account.
     */
-  val clientId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val clientId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Client Secret (part of OAuth Credentials) obtained via Amazon Developer Account.
     */
-  val clientSecret: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val clientSecret: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Specifies whether to enable the channel. Defaults to `true`.
     */
-  val enabled: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
 @JSImport("@pulumi/aws/pinpoint/admChannel", "AdmChannel")

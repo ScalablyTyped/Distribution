@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/route", "Route")
 @js.native
 class Route protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Route resource with the given unique name, arguments, and options.
     *
@@ -21,47 +21,47 @@ class Route protected ()
   /**
     * The destination CIDR block.
     */
-  val destinationCidrBlock: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val destinationCidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The destination IPv6 CIDR block.
     */
-  val destinationIpv6CidrBlock: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val destinationPrefixListId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val destinationIpv6CidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val destinationPrefixListId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Identifier of a VPC Egress Only Internet Gateway.
     */
-  val egressOnlyGatewayId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val egressOnlyGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Identifier of a VPC internet gateway or a virtual private gateway.
     */
-  val gatewayId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val gatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Identifier of an EC2 instance.
     */
-  val instanceId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val instanceOwnerId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val instanceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val instanceOwnerId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Identifier of a VPC NAT gateway.
     */
-  val natGatewayId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val natGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Identifier of an EC2 network interface.
     */
-  val networkInterfaceId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val origin: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val networkInterfaceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val origin: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the routing table.
     */
-  val routeTableId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val state: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val routeTableId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val state: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Identifier of an EC2 Transit Gateway.
     */
-  val transitGatewayId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val transitGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Identifier of a VPC peering connection.
     */
-  val vpcPeeringConnectionId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val vpcPeeringConnectionId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/route", "Route")

@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object lineRippleNs extends js.Object {
   @js.native
   class MDCLineRipple ()
-    extends atMaterialLineDashRippleLib.lineDashRippleMod.MDCLineRipple
+    extends atMaterialLineDashRippleLib.atMaterialLineDashRippleMod.MDCLineRipple
   
   @js.native
   class MDCLineRippleFoundation ()
-    extends atMaterialLineDashRippleLib.lineDashRippleMod.MDCLineRippleFoundation
+    extends atMaterialLineDashRippleLib.atMaterialLineDashRippleMod.MDCLineRippleFoundation
   
   @js.native
   object MDCLineRipple extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialLineDashRippleLib.lineDashRippleMod.MDCLineRipple = js.native
+    def attachTo(root: stdLib.Element): atMaterialLineDashRippleLib.atMaterialLineDashRippleMod.MDCLineRipple = js.native
   }
   
   @js.native

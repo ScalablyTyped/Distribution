@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/vpnGateway", "VpnGateway")
 @js.native
 class VpnGateway protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a VpnGateway resource with the given unique name, arguments, and options.
     *
@@ -22,19 +22,19 @@ class VpnGateway protected ()
   /**
     * The Autonomous System Number (ASN) for the Amazon side of the gateway. If you don't specify an ASN, the virtual private gateway is created with the default ASN.
     */
-  val amazonSideAsn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val amazonSideAsn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The Availability Zone for the virtual private gateway.
     */
-  val availabilityZone: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val availabilityZone: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The VPC ID to create in.
     */
-  val vpcId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/vpnGateway", "VpnGateway")

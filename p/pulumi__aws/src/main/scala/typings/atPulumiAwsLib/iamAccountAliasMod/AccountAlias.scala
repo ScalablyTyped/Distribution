@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iam/accountAlias", "AccountAlias")
 @js.native
 class AccountAlias protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a AccountAlias resource with the given unique name, arguments, and options.
     *
@@ -21,7 +21,7 @@ class AccountAlias protected ()
   /**
     * The account alias
     */
-  val accountAlias: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val accountAlias: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/iam/accountAlias", "AccountAlias")

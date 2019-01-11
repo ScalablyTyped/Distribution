@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgTemplateOutlet protected ()
   extends atAngularCommonLib.srcDirectivesNgUnderscoreTemplateUnderscoreOutletMod.NgTemplateOutlet {
-  def this(_viewContainerRef: atAngularCoreLib.coreMod.ViewContainerRef) = this()
+  def this(_viewContainerRef: atAngularCoreLib.atAngularCoreMod.ViewContainerRef) = this()
 }
 

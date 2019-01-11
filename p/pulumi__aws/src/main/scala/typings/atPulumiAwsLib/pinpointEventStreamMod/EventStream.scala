@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/pinpoint/eventStream", "EventStream")
 @js.native
 class EventStream protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a EventStream resource with the given unique name, arguments, and options.
     *
@@ -18,9 +18,9 @@ class EventStream protected ()
     */
   def this(name: java.lang.String, args: EventStreamArgs) = this()
   def this(name: java.lang.String, args: EventStreamArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val applicationId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val destinationStreamArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val roleArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val applicationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val destinationStreamArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/pinpoint/eventStream", "EventStream")

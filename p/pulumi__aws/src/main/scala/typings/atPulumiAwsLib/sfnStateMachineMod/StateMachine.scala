@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/sfn/stateMachine", "StateMachine")
 @js.native
 class StateMachine protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a StateMachine resource with the given unique name, arguments, and options.
     *
@@ -21,23 +21,23 @@ class StateMachine protected ()
   /**
     * The date the state machine was created.
     */
-  val creationDate: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val creationDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The Amazon States Language definition of the state machine.
     */
-  val definition: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val definition: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the state machine.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The Amazon Resource Name (ARN) of the IAM role to use for this state machine.
     */
-  val roleArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The current status of the state machine. Either "ACTIVE" or "DELETING".
     */
-  val status: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/sfn/stateMachine", "StateMachine")

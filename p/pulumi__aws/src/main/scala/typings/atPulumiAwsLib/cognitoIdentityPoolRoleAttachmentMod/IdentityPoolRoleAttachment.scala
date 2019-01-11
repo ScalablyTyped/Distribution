@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cognito/identityPoolRoleAttachment", "IdentityPoolRoleAttachment")
 @js.native
 class IdentityPoolRoleAttachment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a IdentityPoolRoleAttachment resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class IdentityPoolRoleAttachment protected ()
   /**
     * An identity pool ID in the format REGION:GUID.
     */
-  val identityPoolId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val identityPoolId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A List of Role Mapping.
     */
-  val roleMappings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AmbiguousRoleResolution]]] = js.native
+  val roleMappings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AmbiguousRoleResolution]]] = js.native
   /**
     * The map of roles associated with this pool. For a given role, the key will be either "authenticated" or "unauthenticated" and the value will be the Role ARN.
     */
-  val roles: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_Authenticated] = js.native
+  val roles: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Authenticated] = js.native
 }
 
 @JSImport("@pulumi/aws/cognito/identityPoolRoleAttachment", "IdentityPoolRoleAttachment")

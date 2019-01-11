@@ -13,7 +13,9 @@ trait FunctionState extends js.Object {
   /**
     * The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
     */
-  val code: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.pulumiMod.assetNs.Archive]] = js.undefined
+  val code: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.atPulumiPulumiMod.assetNs.Archive]
+  ] = js.undefined
   /**
     * Nested block to configure the function's *dead letter queue*. See details below.
     */

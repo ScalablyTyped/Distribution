@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cloud9/environmentEC2", "EnvironmentEC2")
 @js.native
 class EnvironmentEC2 protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a EnvironmentEC2 resource with the given unique name, arguments, and options.
     *
@@ -21,35 +21,35 @@ class EnvironmentEC2 protected ()
   /**
     * The ARN of the environment.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The number of minutes until the running instance is shut down after the environment has last been used.
     */
-  val automaticStopTimeMinutes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val automaticStopTimeMinutes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The description of the environment.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The type of instance to connect to the environment, e.g. `t2.micro`.
     */
-  val instanceType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val instanceType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the environment.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ARN of the environment owner. This can be ARN of any AWS IAM principal. Defaults to the environment's creator.
     */
-  val ownerArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val ownerArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the subnet in Amazon VPC that AWS Cloud9 will use to communicate with the Amazon EC2 instance.
     */
-  val subnetId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The type of the environment (e.g. `ssh` or `ec2`)
     */
-  val `type`: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cloud9/environmentEC2", "EnvironmentEC2")

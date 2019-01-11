@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object srcConfigMod {
   type LoadChildren = java.lang.String | LoadChildrenCallback
   type LoadChildrenCallback = js.Function0[
-    atAngularCoreLib.srcTypeMod.Type[js.Any] | atAngularCoreLib.coreMod.NgModuleFactory[js.Any] | js.Promise[atAngularCoreLib.srcTypeMod.Type[js.Any]] | rxjsLib.rxjsMod.Observable[atAngularCoreLib.srcTypeMod.Type[js.Any]]
+    atAngularCoreLib.srcTypeMod.Type[js.Any] | atAngularCoreLib.atAngularCoreMod.NgModuleFactory[js.Any] | js.Promise[atAngularCoreLib.srcTypeMod.Type[js.Any]] | rxjsLib.rxjsMod.Observable[atAngularCoreLib.srcTypeMod.Type[js.Any]]
   ]
   type QueryParamsHandling = atAngularRouterLib.atAngularRouterLibStrings.merge | atAngularRouterLib.atAngularRouterLibStrings.preserve | atAngularRouterLib.atAngularRouterLibStrings.Empty
   type Routes = js.Array[Route]

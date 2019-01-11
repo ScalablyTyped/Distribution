@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iam/userPolicyAttachment", "UserPolicyAttachment")
 @js.native
 class UserPolicyAttachment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a UserPolicyAttachment resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class UserPolicyAttachment protected ()
   /**
     * The ARN of the policy you want to apply
     */
-  val policyArn: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val policyArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
   /**
     * The user the policy should be applied to
     */
-  val user: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.iamUserMod.User] = js.native
+  val user: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.iamUserMod.User] = js.native
 }
 
 @JSImport("@pulumi/aws/iam/userPolicyAttachment", "UserPolicyAttachment")

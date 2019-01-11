@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ses/domainIdentityVerification", "DomainIdentityVerification")
 @js.native
 class DomainIdentityVerification protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a DomainIdentityVerification resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class DomainIdentityVerification protected ()
   /**
     * The ARN of the domain identity.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The domain name of the SES domain identity to verify.
     */
-  val domain: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val domain: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ses/domainIdentityVerification", "DomainIdentityVerification")

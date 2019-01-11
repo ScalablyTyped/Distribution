@@ -3,3 +3,4 @@
 [error] PhaseRunner.scala:86 Failure, [steam-client => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/steam-client/index.d.ts): Parse error at 2284.35 ''}'' expected but '|' found] [id => steam-client, phase => typescript] 
 [error] PhaseRunner.scala:86 Failure, [steam-client => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/steam-client/index.d.ts): Parse error at 2284.35 ''}'' expected but '|' found] [id => steam-client, phase => scala.js] 
 [error] PhaseRunner.scala:86 Failure, [steam-client => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/steam-client/index.d.ts): Parse error at 2284.35 ''}'' expected but '|' found] [id => steam-client, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [steam-client => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/steam-client/index.d.ts): Parse error at 2284.35 ''}'' expected but '|' found] [id => steam-client, phase => publish] 

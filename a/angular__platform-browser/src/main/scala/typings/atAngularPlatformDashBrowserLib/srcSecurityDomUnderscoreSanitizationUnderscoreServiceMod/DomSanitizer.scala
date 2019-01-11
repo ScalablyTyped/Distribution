@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@angular/platform-browser/src/security/dom_sanitization_service", "DomSanitizer")
 @js.native
 abstract class DomSanitizer ()
-  extends atAngularCoreLib.coreMod.Sanitizer {
+  extends atAngularCoreLib.atAngularCoreMod.Sanitizer {
   /**
     * Bypass security and trust the given value to be safe HTML. Only use this when the bound HTML
     * is unsafe (e.g. contains `<script>` tags) and the code should be executed. The sanitizer will

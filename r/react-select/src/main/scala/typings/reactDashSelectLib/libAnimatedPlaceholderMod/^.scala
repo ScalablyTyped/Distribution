@@ -1,0 +1,22 @@
+package typings
+package reactDashSelectLib.libAnimatedPlaceholderMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("react-select/lib/animated/Placeholder", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def AnimatedPlaceholder[OptionType](
+    WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsPlaceholderMod.PlaceholderProps[OptionType]]
+  ): reactLib.reactMod.ReactNs.ComponentType[
+    reactDashSelectLib.libAnimatedPlaceholderMod.AnimatedPlaceholderProps[OptionType]
+  ] = js.native
+  def default[OptionType](
+    WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsPlaceholderMod.PlaceholderProps[OptionType]]
+  ): reactLib.reactMod.ReactNs.ComponentType[
+    reactDashSelectLib.libAnimatedPlaceholderMod.AnimatedPlaceholderProps[OptionType]
+  ] = js.native
+}
+

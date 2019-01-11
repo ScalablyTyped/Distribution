@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/elasticloadbalancing/attachment", "Attachment")
 @js.native
 class Attachment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Attachment resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class Attachment protected ()
   /**
     * The name of the ELB.
     */
-  val elb: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val elb: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Instance ID to place in the ELB pool.
     */
-  val instance: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val instance: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/elasticloadbalancing/attachment", "Attachment")

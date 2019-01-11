@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/kms/key", "Key")
 @js.native
 class Key protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Key resource with the given unique name, arguments, and options.
     *
@@ -22,42 +22,42 @@ class Key protected ()
   /**
     * The Amazon Resource Name (ARN) of the key.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Duration in days after which the key is deleted
     * after destruction of the resource, must be between 7 and 30 days. Defaults to 30 days.
     */
-  val deletionWindowInDays: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val deletionWindowInDays: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The description of the key as viewed in AWS console.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Specifies whether [key rotation](http://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html)
     * is enabled. Defaults to false.
     */
-  val enableKeyRotation: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enableKeyRotation: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Specifies whether the key is enabled. Defaults to true.
     */
-  val isEnabled: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val isEnabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The globally unique identifier for the key.
     */
-  val keyId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val keyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Specifies the intended use of the key.
     * Defaults to ENCRYPT_DECRYPT, and only symmetric encryption and decryption are supported.
     */
-  val keyUsage: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val keyUsage: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A valid policy JSON document. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
     */
-  val policy: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the object.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 @JSImport("@pulumi/aws/kms/key", "Key")

@@ -16,7 +16,7 @@ object admissionregistrationNs extends js.Object {
       */
     @js.native
     class InitializerConfiguration protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a admissionregistration.v1alpha1.InitializerConfiguration resource with the given unique name, arguments, and options.
         *
@@ -34,14 +34,14 @@ object admissionregistrationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Initializers is a list of resources and their default initializers Order-sensitive. When
         * merging multiple InitializerConfigurations, we sort the initializers from different
         * InitializerConfigurations by the name of the InitializerConfigurations; the order of the
         * initializers from the same InitializerConfiguration is preserved.
         */
-      val initializers: atPulumiPulumiLib.pulumiMod.Output[
+      val initializers: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             js.Array[
               atPulumiKubernetesLib.typesOutputMod.admissionregistrationNs.v1alpha1Ns.Initializer
             ]
@@ -52,12 +52,12 @@ object admissionregistrationNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Standard object metadata; More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.admissionregistrationNs.v1alpha1Ns.InitializerConfiguration = js.native
     }
     
@@ -66,7 +66,7 @@ object admissionregistrationNs extends js.Object {
       */
     @js.native
     class InitializerConfigurationList protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a admissionregistration.v1alpha1.InitializerConfigurationList resource with the given unique name, arguments, and options.
         *
@@ -84,11 +84,11 @@ object admissionregistrationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * List of InitializerConfiguration.
         */
-      val items: atPulumiPulumiLib.pulumiMod.Output[
+      val items: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             js.Array[
               atPulumiKubernetesLib.typesOutputMod.admissionregistrationNs.v1alpha1Ns.InitializerConfiguration
             ]
@@ -99,12 +99,12 @@ object admissionregistrationNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.admissionregistrationNs.v1alpha1Ns.InitializerConfigurationList = js.native
     }
     
@@ -157,7 +157,7 @@ object admissionregistrationNs extends js.Object {
       */
     @js.native
     class MutatingWebhookConfiguration protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a admissionregistration.v1beta1.MutatingWebhookConfiguration resource with the given unique name, arguments, and options.
         *
@@ -175,23 +175,23 @@ object admissionregistrationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Standard object metadata; More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Webhooks is a list of webhooks and the affected resources and operations.
         */
-      val webhooks: atPulumiPulumiLib.pulumiMod.Output[
+      val webhooks: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             js.Array[atPulumiKubernetesLib.typesOutputMod.admissionregistrationNs.v1beta1Ns.Webhook]
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfiguration = js.native
@@ -202,7 +202,7 @@ object admissionregistrationNs extends js.Object {
       */
     @js.native
     class MutatingWebhookConfigurationList protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a admissionregistration.v1beta1.MutatingWebhookConfigurationList resource with the given unique name, arguments, and options.
         *
@@ -220,11 +220,11 @@ object admissionregistrationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * List of MutatingWebhookConfiguration.
         */
-      val items: atPulumiPulumiLib.pulumiMod.Output[
+      val items: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             js.Array[
               atPulumiKubernetesLib.typesOutputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfiguration
             ]
@@ -235,12 +235,12 @@ object admissionregistrationNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfigurationList = js.native
     }
     
@@ -250,7 +250,7 @@ object admissionregistrationNs extends js.Object {
       */
     @js.native
     class ValidatingWebhookConfiguration protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a admissionregistration.v1beta1.ValidatingWebhookConfiguration resource with the given unique name, arguments, and options.
         *
@@ -268,23 +268,23 @@ object admissionregistrationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Standard object metadata; More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Webhooks is a list of webhooks and the affected resources and operations.
         */
-      val webhooks: atPulumiPulumiLib.pulumiMod.Output[
+      val webhooks: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             js.Array[atPulumiKubernetesLib.typesOutputMod.admissionregistrationNs.v1beta1Ns.Webhook]
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfiguration = js.native
@@ -295,7 +295,7 @@ object admissionregistrationNs extends js.Object {
       */
     @js.native
     class ValidatingWebhookConfigurationList protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a admissionregistration.v1beta1.ValidatingWebhookConfigurationList resource with the given unique name, arguments, and options.
         *
@@ -313,11 +313,11 @@ object admissionregistrationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * List of ValidatingWebhookConfiguration.
         */
-      val items: atPulumiPulumiLib.pulumiMod.Output[
+      val items: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             js.Array[
               atPulumiKubernetesLib.typesOutputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfiguration
             ]
@@ -328,12 +328,12 @@ object admissionregistrationNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfigurationList = js.native
     }
     

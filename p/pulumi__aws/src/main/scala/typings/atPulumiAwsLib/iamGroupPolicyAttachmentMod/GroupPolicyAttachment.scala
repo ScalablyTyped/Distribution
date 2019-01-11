@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iam/groupPolicyAttachment", "GroupPolicyAttachment")
 @js.native
 class GroupPolicyAttachment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a GroupPolicyAttachment resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class GroupPolicyAttachment protected ()
   /**
     * The group the policy should be applied to
     */
-  val group: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.iamGroupMod.Group] = js.native
+  val group: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.iamGroupMod.Group] = js.native
   /**
     * The ARN of the policy you want to apply
     */
-  val policyArn: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val policyArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
 }
 
 @JSImport("@pulumi/aws/iam/groupPolicyAttachment", "GroupPolicyAttachment")

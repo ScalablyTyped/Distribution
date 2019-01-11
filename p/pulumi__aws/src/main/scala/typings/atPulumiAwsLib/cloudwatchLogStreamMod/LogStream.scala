@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cloudwatch/logStream", "LogStream")
 @js.native
 class LogStream protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a LogStream resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class LogStream protected ()
   /**
     * The Amazon Resource Name (ARN) specifying the log stream.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the log group under which the log stream is to be created.
     */
-  val logGroupName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val logGroupName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the log stream. Must not be longer than 512 characters and must not contain `:`
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cloudwatch/logStream", "LogStream")

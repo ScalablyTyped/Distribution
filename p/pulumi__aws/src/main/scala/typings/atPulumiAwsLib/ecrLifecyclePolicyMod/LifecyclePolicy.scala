@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ecr/lifecyclePolicy", "LifecyclePolicy")
 @js.native
 class LifecyclePolicy protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a LifecyclePolicy resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class LifecyclePolicy protected ()
   /**
     * The policy document. This is a JSON formatted string. See more details about [Policy Parameters](http://docs.aws.amazon.com/AmazonECR/latest/userguide/LifecyclePolicies.html#lifecycle_policy_parameters) in the official AWS docs. For more information about building IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
     */
-  val policy: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The registry ID where the repository was created.
     */
-  val registryId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val registryId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Name of the repository to apply the policy.
     */
-  val repository: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val repository: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ecr/lifecyclePolicy", "LifecyclePolicy")

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/apigateway/documentationVersion", "DocumentationVersion")
 @js.native
 class DocumentationVersion protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a DocumentationVersion resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class DocumentationVersion protected ()
   /**
     * The description of the API documentation version.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ID of the associated Rest API
     */
-  val restApiId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val restApiId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The version identifier of the API documentation snapshot.
     */
-  val version: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/apigateway/documentationVersion", "DocumentationVersion")

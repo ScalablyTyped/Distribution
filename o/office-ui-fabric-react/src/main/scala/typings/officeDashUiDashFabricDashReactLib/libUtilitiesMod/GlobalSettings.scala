@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/Utilities", "GlobalSettings")
 @js.native
 class GlobalSettings ()
-  extends atUifabricUtilitiesLib.utilitiesMod.GlobalSettings
+  extends atUifabricUtilitiesLib.atUifabricUtilitiesMod.GlobalSettings
 
 @JSImport("office-ui-fabric-react/lib/Utilities", "GlobalSettings")
 @js.native

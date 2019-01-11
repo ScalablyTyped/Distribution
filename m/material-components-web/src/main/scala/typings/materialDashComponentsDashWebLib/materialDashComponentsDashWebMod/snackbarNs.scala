@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object snackbarNs extends js.Object {
   @js.native
   class MDCSnackbar ()
-    extends atMaterialSnackbarLib.snackbarMod.MDCSnackbar
+    extends atMaterialSnackbarLib.atMaterialSnackbarMod.MDCSnackbar
   
   @js.native
   class MDCSnackbarFoundation ()
-    extends atMaterialSnackbarLib.snackbarMod.MDCSnackbarFoundation
+    extends atMaterialSnackbarLib.atMaterialSnackbarMod.MDCSnackbarFoundation
   
   @js.native
   object MDCSnackbar extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialSnackbarLib.snackbarMod.MDCSnackbar = js.native
+    def attachTo(root: stdLib.Element): atMaterialSnackbarLib.atMaterialSnackbarMod.MDCSnackbar = js.native
   }
   
   @js.native

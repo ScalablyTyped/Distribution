@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/directconnect/gateway", "Gateway")
 @js.native
 class Gateway protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Gateway resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class Gateway protected ()
   /**
     * The ASN to be configured on the Amazon side of the connection. The ASN must be in the private range of 64,512 to 65,534 or 4,200,000,000 to 4,294,967,294.
     */
-  val amazonSideAsn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val amazonSideAsn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the connection.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/directconnect/gateway", "Gateway")

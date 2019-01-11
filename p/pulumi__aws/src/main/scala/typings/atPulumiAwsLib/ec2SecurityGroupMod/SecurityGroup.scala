@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/securityGroup", "SecurityGroup")
 @js.native
 class SecurityGroup protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SecurityGroup resource with the given unique name, arguments, and options.
     *
@@ -22,38 +22,38 @@ class SecurityGroup protected ()
   /**
     * The ARN of the security group
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The security group description. Defaults to
     * "Managed by Terraform". Cannot be "". __NOTE__: This field maps to the AWS
     * `GroupDescription` attribute, for which there is no Update API. If you'd like
     * to classify your security groups in a way that can be updated, use `tags`.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Can be specified multiple times for each
     * egress rule. Each egress block supports fields documented below.
     */
-  val egress: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_CidrBlocks]] = js.native
+  val egress: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_CidrBlocks]] = js.native
   /**
     * Can be specified multiple times for each
     * ingress rule. Each ingress block supports fields documented below.
     */
-  val ingress: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_CidrBlocks]] = js.native
+  val ingress: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_CidrBlocks]] = js.native
   /**
     * The name of the security group. If omitted, Terraform will
     * assign a random, unique name
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified
     * prefix. Conflicts with `name`.
     */
-  val namePrefix: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val namePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The owner ID.
     */
-  val ownerId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val ownerId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Instruct Terraform to revoke all of the
     * Security Groups attached ingress and egress rules before deleting the rule
@@ -63,15 +63,15 @@ class SecurityGroup protected ()
     * the security groups from being destroyed without removing the dependency first.
     * Default `false`
     */
-  val revokeRulesOnDelete: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val revokeRulesOnDelete: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The VPC ID.
     */
-  val vpcId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/securityGroup", "SecurityGroup")

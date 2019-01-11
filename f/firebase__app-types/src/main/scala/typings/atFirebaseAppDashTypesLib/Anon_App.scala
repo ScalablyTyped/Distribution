@@ -13,7 +13,7 @@ trait Anon_App extends js.Object {
     *
     * DO NOT call this constuctor directly (use firebase.app() instead).
     */
-  var App: org.scalablytyped.runtime.Instantiable0[atFirebaseAppDashTypesLib.appDashTypesMod.FirebaseApp] = js.native
+  var App: org.scalablytyped.runtime.Instantiable0[atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp] = js.native
   /**
     * Retrieve an instance of a FirebaseApp.
     *
@@ -21,7 +21,7 @@ trait Anon_App extends js.Object {
     *
     * @param name The optional name of the app to return ('[DEFAULT]' if omitted)
     */
-  def apply(): atFirebaseAppDashTypesLib.appDashTypesMod.FirebaseApp = js.native
-  def apply(name: java.lang.String): atFirebaseAppDashTypesLib.appDashTypesMod.FirebaseApp = js.native
+  def apply(): atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp = js.native
+  def apply(name: java.lang.String): atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp = js.native
 }
 

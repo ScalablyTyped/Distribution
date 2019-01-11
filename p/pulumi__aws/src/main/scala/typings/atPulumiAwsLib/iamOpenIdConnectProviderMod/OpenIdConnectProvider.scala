@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iam/openIdConnectProvider", "OpenIdConnectProvider")
 @js.native
 class OpenIdConnectProvider protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a OpenIdConnectProvider resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class OpenIdConnectProvider protected ()
   /**
     * The ARN assigned by AWS for this provider.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A list of client IDs (also known as audiences). When a mobile or web app registers with an OpenID Connect provider, they establish a value that identifies the application. (This is the value that's sent as the client_id parameter on OAuth requests.)
     */
-  val clientIdLists: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val clientIdLists: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * A list of server certificate thumbprints for the OpenID Connect (OIDC) identity provider's server certificate(s).
     */
-  val thumbprintLists: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val thumbprintLists: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The URL of the identity provider. Corresponds to the _iss_ claim.
     */
-  val url: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val url: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/iam/openIdConnectProvider", "OpenIdConnectProvider")

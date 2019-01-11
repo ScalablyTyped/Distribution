@@ -4,10 +4,11 @@
 [warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(p-lazy) [id => p-lazy, phase => typescript] 
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => p-lazy, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(p-lazy) / TsDeclInterface(PLazy))] 
 [debug] PhaseRunner.scala:82 Success [id => p-lazy, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:36 Processing p-lazy [id => p-lazy, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:40 Processing p-lazy [id => p-lazy, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => p-lazy, phase => scala.js] 
 [error] namespaced.scala:11 class Promise is inherited twice,   extends js.Promise[T] [id => p-lazy, phase => build] 
 [error] namespaced.scala:12 class Promise is inherited twice,      with PLazy[T] [id => p-lazy, phase => build] 
 [error] namespaced.scala:11 not enough arguments for constructor Promise: (executor: scala.scalajs.js.Function2[scala.scalajs.js.Function1[T | scala.scalajs.js.Thenable[T], _], scala.scalajs.js.Function1[Any, _], _])scala.scalajs.js.Promise[T].
 Unspecified value parameter executor.,   extends js.Promise[T] [id => p-lazy, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [p-lazy => Compilation failed] [id => p-lazy, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [p-lazy => Compilation failed] [id => p-lazy, phase => publish] 

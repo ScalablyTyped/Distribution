@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/lightsail/staticIpAttachment", "StaticIpAttachment")
 @js.native
 class StaticIpAttachment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a StaticIpAttachment resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class StaticIpAttachment protected ()
   /**
     * The name of the Lightsail instance to attach the IP to
     */
-  val instanceName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val instanceName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the allocated static IP
     */
-  val staticIpName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val staticIpName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/lightsail/staticIpAttachment", "StaticIpAttachment")

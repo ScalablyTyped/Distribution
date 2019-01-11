@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2transitgateway/route", "Route")
 @js.native
 class Route protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Route resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class Route protected ()
   /**
     * IPv4 CIDR range used for destination matches. Routing decisions are based on the most specific match.
     */
-  val destinationCidrBlock: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val destinationCidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Identifier of EC2 Transit Gateway Attachment.
     */
-  val transitGatewayAttachmentId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val transitGatewayAttachmentId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Identifier of EC2 Transit Gateway Route Table.
     */
-  val transitGatewayRouteTableId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val transitGatewayRouteTableId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2transitgateway/route", "Route")

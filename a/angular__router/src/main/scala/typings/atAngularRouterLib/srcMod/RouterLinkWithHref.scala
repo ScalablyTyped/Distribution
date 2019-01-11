@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class RouterLinkWithHref protected ()
   extends atAngularRouterLib.srcDirectivesRouterUnderscoreLinkMod.RouterLinkWithHref {
-  def this(router: atAngularRouterLib.srcRouterMod.Router, route: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRoute, locationStrategy: atAngularCommonLib.commonMod.LocationStrategy) = this()
+  def this(router: atAngularRouterLib.srcRouterMod.Router, route: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRoute, locationStrategy: atAngularCommonLib.atAngularCommonMod.LocationStrategy) = this()
 }
 

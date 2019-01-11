@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/acmpca/certificateAuthority", "CertificateAuthority")
 @js.native
 class CertificateAuthority protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a CertificateAuthority resource with the given unique name, arguments, and options.
     *
@@ -21,55 +21,55 @@ class CertificateAuthority protected ()
   /**
     * Amazon Resource Name (ARN) of the certificate authority.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Base64-encoded certificate authority (CA) certificate. Only available after the certificate authority certificate has been imported.
     */
-  val certificate: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val certificate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Nested argument containing algorithms and certificate subject information. Defined below.
     */
-  val certificateAuthorityConfiguration: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_KeyAlgorithm] = js.native
+  val certificateAuthorityConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_KeyAlgorithm] = js.native
   /**
     * Base64-encoded certificate chain that includes any intermediate certificates and chains up to root on-premises certificate that you used to sign your private CA certificate. The chain does not include your private CA certificate. Only available after the certificate authority certificate has been imported.
     */
-  val certificateChain: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val certificateChain: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The base64 PEM-encoded certificate signing request (CSR) for your private CA certificate.
     */
-  val certificateSigningRequest: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val certificateSigningRequest: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Boolean value that specifies whether certificate revocation lists (CRLs) are enabled. Defaults to `false`.
     */
-  val enabled: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Date and time after which the certificate authority is not valid. Only available after the certificate authority certificate has been imported.
     */
-  val notAfter: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val notAfter: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Date and time before which the certificate authority is not valid. Only available after the certificate authority certificate has been imported.
     */
-  val notBefore: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val notBefore: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Nested argument containing revocation configuration. Defined below.
     */
-  val revocationConfiguration: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CrlConfiguration]] = js.native
+  val revocationConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CrlConfiguration]] = js.native
   /**
     * Serial number of the certificate authority. Only available after the certificate authority certificate has been imported.
     */
-  val serial: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val serial: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Status of the certificate authority.
     */
-  val status: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Specifies a key-value map of user-defined tags that are attached to the certificate authority.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The type of the certificate authority. Currently, this must be `SUBORDINATE`.
     */
-  val `type`: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/acmpca/certificateAuthority", "CertificateAuthority")

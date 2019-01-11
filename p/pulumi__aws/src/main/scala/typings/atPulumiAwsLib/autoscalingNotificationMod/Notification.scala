@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/autoscaling/notification", "Notification")
 @js.native
 class Notification protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Notification resource with the given unique name, arguments, and options.
     *
@@ -21,16 +21,16 @@ class Notification protected ()
   /**
     * A list of AutoScaling Group Names
     */
-  val groupNames: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val groupNames: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * A list of Notification Types that trigger
     * notifications. Acceptable values are documented [in the AWS documentation here][1]
     */
-  val notifications: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType]] = js.native
+  val notifications: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType]] = js.native
   /**
     * The Topic ARN for notifications to be sent through
     */
-  val topicArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val topicArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/autoscaling/notification", "Notification")

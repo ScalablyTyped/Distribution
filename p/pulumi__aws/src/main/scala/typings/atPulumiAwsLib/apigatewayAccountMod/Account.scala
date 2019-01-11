@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/apigateway/account", "Account")
 @js.native
 class Account protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Account resource with the given unique name, arguments, and options.
     *
@@ -24,11 +24,11 @@ class Account protected ()
     * See more [in AWS Docs](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-stage-settings.html#how-to-stage-settings-console).
     * Logging & monitoring can be enabled/disabled and otherwise tuned on the API Gateway Stage level.
     */
-  val cloudwatchRoleArn: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val cloudwatchRoleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Account-Level throttle settings. See exported fields below.
     */
-  val throttleSettings: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BurstLimit] = js.native
+  val throttleSettings: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_BurstLimit] = js.native
 }
 
 @JSImport("@pulumi/aws/apigateway/account", "Account")

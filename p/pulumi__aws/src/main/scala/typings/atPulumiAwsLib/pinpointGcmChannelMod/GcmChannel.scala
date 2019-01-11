@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/pinpoint/gcmChannel", "GcmChannel")
 @js.native
 class GcmChannel protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a GcmChannel resource with the given unique name, arguments, and options.
     *
@@ -18,9 +18,9 @@ class GcmChannel protected ()
     */
   def this(name: java.lang.String, args: GcmChannelArgs) = this()
   def this(name: java.lang.String, args: GcmChannelArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val apiKey: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val applicationId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val enabled: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val apiKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val applicationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
 @JSImport("@pulumi/aws/pinpoint/gcmChannel", "GcmChannel")

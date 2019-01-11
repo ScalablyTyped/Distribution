@@ -30,7 +30,7 @@ class TemplateFactory ()
   def fromComponentProvider(
     provider: atUirouterCoreLib.libCommonCommonMod.IInjectable,
     params: js.Any,
-    context: atUirouterCoreLib.coreMod.ResolveContext
+    context: atUirouterCoreLib.atUirouterCoreMod.ResolveContext
   ): js.Promise[_] = js.native
   /**
     * Creates a template from a configuration object.
@@ -48,7 +48,7 @@ class TemplateFactory ()
   def fromConfig(
     config: atUirouterAngularjsLib.libInterfaceMod.Ng1ViewDeclaration,
     params: js.Any,
-    context: atUirouterCoreLib.coreMod.ResolveContext
+    context: atUirouterCoreLib.atUirouterCoreMod.ResolveContext
   ): js.Promise[atUirouterAngularjsLib.Anon_Component] = js.native
   /**
     * Creates a template by invoking an injectable provider function.
@@ -61,7 +61,7 @@ class TemplateFactory ()
   def fromProvider(
     provider: atUirouterCoreLib.libCommonCommonMod.IInjectable,
     params: js.Any,
-    context: atUirouterCoreLib.coreMod.ResolveContext
+    context: atUirouterCoreLib.atUirouterCoreMod.ResolveContext
   ): js.Promise[_] = js.native
   def fromString(template: angularLib.angularMod.Global.Function): js.Any = js.native
   def fromString(
@@ -106,12 +106,12 @@ class TemplateFactory ()
     */
   def makeComponentTemplate(
     uiView: angularLib.angularMod.angularNs.IAugmentedJQuery,
-    context: atUirouterCoreLib.coreMod.ResolveContext,
+    context: atUirouterCoreLib.atUirouterCoreMod.ResolveContext,
     component: java.lang.String
   ): java.lang.String = js.native
   def makeComponentTemplate(
     uiView: angularLib.angularMod.angularNs.IAugmentedJQuery,
-    context: atUirouterCoreLib.coreMod.ResolveContext,
+    context: atUirouterCoreLib.atUirouterCoreMod.ResolveContext,
     component: java.lang.String,
     bindings: js.Any
   ): java.lang.String = js.native

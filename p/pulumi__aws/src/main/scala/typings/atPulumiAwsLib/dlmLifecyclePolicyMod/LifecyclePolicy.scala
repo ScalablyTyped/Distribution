@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/dlm/lifecyclePolicy", "LifecyclePolicy")
 @js.native
 class LifecyclePolicy protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a LifecyclePolicy resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class LifecyclePolicy protected ()
   /**
     * A description for the DLM lifecycle policy.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ARN of an IAM role that is able to be assumed by the DLM service.
     */
-  val executionRoleArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val executionRoleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * See the `policy_details` configuration block. Max of 1.
     */
-  val policyDetails: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_KeyResourceTypes] = js.native
+  val policyDetails: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_KeyResourceTypes] = js.native
   /**
     * Whether the lifecycle policy should be enabled or disabled. `ENABLED` or `DISABLED` are valid values. Defaults to `ENABLED`.
     */
-  val state: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val state: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/dlm/lifecyclePolicy", "LifecyclePolicy")

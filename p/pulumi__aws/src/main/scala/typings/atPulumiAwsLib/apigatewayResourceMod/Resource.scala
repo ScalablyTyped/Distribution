@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/apigateway/resource", "Resource")
 @js.native
 class Resource protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Resource resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class Resource protected ()
   /**
     * The ID of the parent API resource
     */
-  val parentId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val parentId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The complete path for this API resource, including all parent paths.
     */
-  val path: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val path: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The last path segment of this API resource.
     */
-  val pathPart: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val pathPart: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the associated REST API
     */
-  val restApi: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = js.native
+  val restApi: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = js.native
 }
 
 @JSImport("@pulumi/aws/apigateway/resource", "Resource")

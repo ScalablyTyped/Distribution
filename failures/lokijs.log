@@ -51,7 +51,7 @@
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Fs) [id => lokijs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(LokiConstructor) / TsDeclVar(persistenceAdapters) / TsTypeObject())] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Fs) [id => lokijs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(lokijs) / TsDeclVar(persistenceAdapters) / TsTypeObject())] 
 [debug] PhaseRunner.scala:82 Success [id => lokijs, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:36 Processing lokijs [id => lokijs, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:40 Processing lokijs [id => lokijs, phase => scala.js] 
 [info ] CompleteClass.scala:58 Completed implementations Vector(loadDatabase) [id => lokijs, phase => scala.js, this => Name(lokijsLib) / Name(LokiFsAdapter)] 
 [info ] CompleteClass.scala:58 Completed implementations Vector(loadDatabase) [id => lokijs, phase => scala.js, this => Name(lokijsLib) / Name(LokiMemoryAdapter)] 
 [info ] CompleteClass.scala:58 Completed implementations Vector(loadDatabase) [id => lokijs, phase => scala.js, this => Name(lokijsLib) / Name(LokiPartitioningAdapter)] 
@@ -59,3 +59,4 @@
 [error] Collection.scala:186 Raw JS setters must return Unit,   def calculateRange_$eq(op: lokijsLib.lokijsLibStrings.DOLLAReq, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native [id => lokijs, phase => build] 
 [error] Collection.scala:186 Raw JS setters must have exactly one argument,   def calculateRange_$eq(op: lokijsLib.lokijsLibStrings.DOLLAReq, prop: java.lang.String, `val`: js.Any): js.Array[scala.Double] = js.native [id => lokijs, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [lokijs => Compilation failed] [id => lokijs, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [lokijs => Compilation failed] [id => lokijs, phase => publish] 

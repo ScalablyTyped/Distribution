@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/lightsail/staticIp", "StaticIp")
 @js.native
 class StaticIp protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a StaticIp resource with the given unique name, arguments, and options.
     *
@@ -22,19 +22,19 @@ class StaticIp protected ()
   /**
     * The ARN of the Lightsail static IP
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The allocated static IP address
     */
-  val ipAddress: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val ipAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name for the allocated static IP
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The support code.
     */
-  val supportCode: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val supportCode: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/lightsail/staticIp", "StaticIp")

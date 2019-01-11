@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/Utilities", "EventGroup")
 @js.native
 class EventGroup protected ()
-  extends atUifabricUtilitiesLib.utilitiesMod.EventGroup {
+  extends atUifabricUtilitiesLib.atUifabricUtilitiesMod.EventGroup {
   /** parent: the context in which events attached to non-HTMLElements are called */
   def this(parent: js.Any) = this()
 }

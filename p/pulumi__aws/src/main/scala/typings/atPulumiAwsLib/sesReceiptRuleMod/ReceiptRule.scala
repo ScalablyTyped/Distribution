@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ses/receiptRule", "ReceiptRule")
 @js.native
 class ReceiptRule protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ReceiptRule resource with the given unique name, arguments, and options.
     *
@@ -21,59 +21,59 @@ class ReceiptRule protected ()
   /**
     * A list of Add Header Action blocks. Documented below.
     */
-  val addHeaderActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_HeaderName]]] = js.native
+  val addHeaderActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_HeaderName]]] = js.native
   /**
     * The name of the rule to place this rule after
     */
-  val after: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val after: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A list of Bounce Action blocks. Documented below.
     */
-  val bounceActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Message]]] = js.native
+  val bounceActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Message]]] = js.native
   /**
     * If true, the rule will be enabled
     */
-  val enabled: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
+  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
   /**
     * A list of Lambda Action blocks. Documented below.
     */
-  val lambdaActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FunctionArnInvocationType]]] = js.native
+  val lambdaActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FunctionArnInvocationType]]] = js.native
   /**
     * The name of the rule
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A list of email addresses
     */
-  val recipients: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val recipients: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The name of the rule set
     */
-  val ruleSetName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val ruleSetName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A list of S3 Action blocks. Documented below.
     */
-  val s3Actions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_BucketNameKmsKeyArn]]] = js.native
+  val s3Actions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_BucketNameKmsKeyArn]]] = js.native
   /**
     * If true, incoming emails will be scanned for spam and viruses
     */
-  val scanEnabled: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
+  val scanEnabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
   /**
     * A list of SNS Action blocks. Documented below.
     */
-  val snsActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Position]]] = js.native
+  val snsActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Position]]] = js.native
   /**
     * A list of Stop Action blocks. Documented below.
     */
-  val stopActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_PositionScope]]] = js.native
+  val stopActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_PositionScope]]] = js.native
   /**
     * Require or Optional
     */
-  val tlsPolicy: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val tlsPolicy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A list of WorkMail Action blocks. Documented below.
     */
-  val workmailActions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_OrganizationArn]]] = js.native
+  val workmailActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_OrganizationArn]]] = js.native
 }
 
 @JSImport("@pulumi/aws/ses/receiptRule", "ReceiptRule")

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iam/instanceProfile", "InstanceProfile")
 @js.native
 class InstanceProfile protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a InstanceProfile resource with the given unique name, arguments, and options.
     *
@@ -22,37 +22,37 @@ class InstanceProfile protected ()
   /**
     * The ARN assigned by AWS to the instance profile.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The creation timestamp of the instance profile.
     */
-  val createDate: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val createDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The profile's name. If omitted, Terraform will assign a random, unique name.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
     */
-  val namePrefix: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val namePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Path in which to create the profile.
     */
-  val path: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val path: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The role name to include in the profile.
     */
-  val role: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.iamRoleMod.Role] = js.native
+  val role: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.iamRoleMod.Role] = js.native
   /**
     *
     * A list of role names to include in the profile.  The current default is 1.  If you see an error message similar to `Cannot exceed quota for InstanceSessionsPerInstanceProfile: 1`, then you must contact AWS support and ask for a limit increase.
     * WARNING: This is deprecated since [version 0.9.3 (April 12, 2017)](https://github.com/hashicorp/terraform/blob/master/CHANGELOG.md#093-april-12-2017), as >= 2 roles are not possible. See [issue #11575](https://github.com/hashicorp/terraform/issues/11575).
     */
-  val roles: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.iamRoleMod.Role]] = js.native
+  val roles: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.iamRoleMod.Role]] = js.native
   /**
     * The [unique ID][1] assigned by AWS.
     */
-  val uniqueId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val uniqueId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/iam/instanceProfile", "InstanceProfile")

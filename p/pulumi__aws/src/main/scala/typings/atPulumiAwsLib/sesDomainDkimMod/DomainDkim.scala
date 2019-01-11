@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ses/domainDkim", "DomainDkim")
 @js.native
 class DomainDkim protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a DomainDkim resource with the given unique name, arguments, and options.
     *
@@ -26,11 +26,11 @@ class DomainDkim protected ()
     * Find out more about verifying domains in Amazon SES
     * in the [AWS SES docs](http://docs.aws.amazon.com/ses/latest/DeveloperGuide/easy-dkim-dns-records.html).
     */
-  val dkimTokens: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val dkimTokens: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * Verified domain name to generate DKIM tokens for.
     */
-  val domain: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val domain: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ses/domainDkim", "DomainDkim")

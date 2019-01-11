@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/organizations/policyAttachment", "PolicyAttachment")
 @js.native
 class PolicyAttachment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a PolicyAttachment resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class PolicyAttachment protected ()
   /**
     * The unique identifier (ID) of the policy that you want to attach to the target.
     */
-  val policyId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val policyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The unique identifier (ID) of the root, organizational unit, or account number that you want to attach the policy to.
     */
-  val targetId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val targetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/organizations/policyAttachment", "PolicyAttachment")

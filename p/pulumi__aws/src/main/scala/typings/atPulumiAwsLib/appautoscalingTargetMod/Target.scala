@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/appautoscaling/target", "Target")
 @js.native
 class Target protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Target resource with the given unique name, arguments, and options.
     *
@@ -21,28 +21,28 @@ class Target protected ()
   /**
     * The max capacity of the scalable target.
     */
-  val maxCapacity: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val maxCapacity: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * The min capacity of the scalable target.
     */
-  val minCapacity: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val minCapacity: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * The resource type and unique identifier string for the resource associated with the scaling policy. Documentation can be found in the `ResourceId` parameter at: [AWS Application Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
     */
-  val resourceId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val resourceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ARN of the IAM role that allows Application
     * AutoScaling to modify your scalable target on your behalf.
     */
-  val roleArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The scalable dimension of the scalable target. Documentation can be found in the `ScalableDimension` parameter at: [AWS Application Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
     */
-  val scalableDimension: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val scalableDimension: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The AWS service namespace of the scalable target. Documentation can be found in the `ServiceNamespace` parameter at: [AWS Application Auto Scaling API Reference](https://docs.aws.amazon.com/autoscaling/application/APIReference/API_RegisterScalableTarget.html#API_RegisterScalableTarget_RequestParameters)
     */
-  val serviceNamespace: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val serviceNamespace: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/appautoscaling/target", "Target")

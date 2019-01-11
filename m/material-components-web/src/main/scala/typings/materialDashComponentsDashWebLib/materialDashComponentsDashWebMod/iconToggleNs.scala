@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object iconToggleNs extends js.Object {
   @js.native
   class MDCIconToggle ()
-    extends atMaterialIconDashToggleLib.iconDashToggleMod.MDCIconToggle
+    extends atMaterialIconDashToggleLib.atMaterialIconDashToggleMod.MDCIconToggle
   
   @js.native
   class MDCIconToggleFoundation ()
-    extends atMaterialIconDashToggleLib.iconDashToggleMod.MDCIconToggleFoundation
+    extends atMaterialIconDashToggleLib.atMaterialIconDashToggleMod.MDCIconToggleFoundation
   
   @js.native
   object MDCIconToggle extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialIconDashToggleLib.iconDashToggleMod.MDCIconToggle = js.native
+    def attachTo(root: stdLib.Element): atMaterialIconDashToggleLib.atMaterialIconDashToggleMod.MDCIconToggle = js.native
   }
   
   @js.native

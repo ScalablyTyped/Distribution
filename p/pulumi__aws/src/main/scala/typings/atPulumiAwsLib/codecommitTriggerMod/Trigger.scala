@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/codecommit/trigger", "Trigger")
 @js.native
 class Trigger protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Trigger resource with the given unique name, arguments, and options.
     *
@@ -18,12 +18,12 @@ class Trigger protected ()
     */
   def this(name: java.lang.String, args: TriggerArgs) = this()
   def this(name: java.lang.String, args: TriggerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val configurationId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val configurationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name for the repository. This needs to be less than 100 characters.
     */
-  val repositoryName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val triggers: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Branches]] = js.native
+  val repositoryName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val triggers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Branches]] = js.native
 }
 
 @JSImport("@pulumi/aws/codecommit/trigger", "Trigger")

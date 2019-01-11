@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@material/drawer/temporary", "MDCTemporaryDrawer")
 @js.native
 class MDCTemporaryDrawer ()
-  extends atMaterialBaseLib.baseMod.MDCComponent[
+  extends atMaterialBaseLib.atMaterialBaseMod.MDCComponent[
       atMaterialDrawerLib.slidableAdapterMod.MDCSlidableDrawerAdapter, 
       atMaterialDrawerLib.temporaryFoundationMod.default
     ] {

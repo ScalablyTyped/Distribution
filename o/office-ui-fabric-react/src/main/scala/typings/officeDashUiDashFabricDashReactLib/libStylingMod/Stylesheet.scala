@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/Styling", "Stylesheet")
 @js.native
 class Stylesheet ()
-  extends atUifabricStylingLib.stylingMod.Stylesheet {
+  extends atUifabricStylingLib.atUifabricStylingMod.Stylesheet {
   def this(config: atUifabricMergeDashStylesLib.libStylesheetMod.IStyleSheetConfig) = this()
 }
 

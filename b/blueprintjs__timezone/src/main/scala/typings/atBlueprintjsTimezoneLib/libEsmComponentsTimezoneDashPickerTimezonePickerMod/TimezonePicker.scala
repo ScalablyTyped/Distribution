@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezonePicker", "TimezonePicker")
 @js.native
 class TimezonePicker protected ()
-  extends atBlueprintjsCoreLib.coreMod.AbstractPureComponent[ITimezonePickerProps, ITimezonePickerState] {
+  extends atBlueprintjsCoreLib.atBlueprintjsCoreMod.AbstractPureComponent[ITimezonePickerProps, ITimezonePickerState] {
   def this(props: ITimezonePickerProps) = this()
   def this(props: ITimezonePickerProps, context: js.Any) = this()
   var filterItems: js.Any = js.native

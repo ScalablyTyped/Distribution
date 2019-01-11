@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancerBackendServerPolicy", "LoadBalancerBackendServerPolicy")
 @js.native
 class LoadBalancerBackendServerPolicy protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a LoadBalancerBackendServerPolicy resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class LoadBalancerBackendServerPolicy protected ()
   /**
     * The instance port to apply the policy to.
     */
-  val instancePort: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val instancePort: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * The load balancer to attach the policy to.
     */
-  val loadBalancerName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val loadBalancerName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * List of Policy Names to apply to the backend server.
     */
-  val policyNames: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val policyNames: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
 }
 
 @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancerBackendServerPolicy", "LoadBalancerBackendServerPolicy")

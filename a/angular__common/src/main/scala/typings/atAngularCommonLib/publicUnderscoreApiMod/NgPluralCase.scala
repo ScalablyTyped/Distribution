@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgPluralCase protected ()
   extends atAngularCommonLib.srcCommonMod.NgPluralCase {
-  def this(value: java.lang.String, template: atAngularCoreLib.coreMod.TemplateRef[js.Object], viewContainer: atAngularCoreLib.coreMod.ViewContainerRef, ngPlural: atAngularCommonLib.srcDirectivesNgUnderscorePluralMod.NgPlural) = this()
+  def this(value: java.lang.String, template: atAngularCoreLib.atAngularCoreMod.TemplateRef[js.Object], viewContainer: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, ngPlural: atAngularCommonLib.srcDirectivesNgUnderscorePluralMod.NgPlural) = this()
 }
 

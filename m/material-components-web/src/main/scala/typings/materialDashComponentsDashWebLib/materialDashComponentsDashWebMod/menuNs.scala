@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object menuNs extends js.Object {
   @js.native
   class MDCMenu ()
-    extends atMaterialMenuLib.menuMod.MDCMenu
+    extends atMaterialMenuLib.atMaterialMenuMod.MDCMenu
   
   @js.native
   class MDCMenuFoundation ()
-    extends atMaterialMenuLib.menuMod.MDCMenuFoundation
+    extends atMaterialMenuLib.atMaterialMenuMod.MDCMenuFoundation
   
   @js.native
   object MDCMenu extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialMenuLib.menuMod.MDCMenu = js.native
+    def attachTo(root: stdLib.Element): atMaterialMenuLib.atMaterialMenuMod.MDCMenu = js.native
   }
   
   @js.native

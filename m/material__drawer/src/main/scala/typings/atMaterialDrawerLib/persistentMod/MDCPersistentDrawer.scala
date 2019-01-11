@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@material/drawer/persistent", "MDCPersistentDrawer")
 @js.native
 class MDCPersistentDrawer ()
-  extends atMaterialBaseLib.baseMod.MDCComponent[
+  extends atMaterialBaseLib.atMaterialBaseMod.MDCComponent[
       atMaterialDrawerLib.slidableAdapterMod.MDCSlidableDrawerAdapter, 
       atMaterialDrawerLib.persistentFoundationMod.default
     ] {

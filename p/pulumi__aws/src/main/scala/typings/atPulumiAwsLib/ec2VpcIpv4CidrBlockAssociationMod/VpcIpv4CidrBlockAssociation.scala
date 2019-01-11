@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation", "VpcIpv4CidrBlockAssociation")
 @js.native
 class VpcIpv4CidrBlockAssociation protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a VpcIpv4CidrBlockAssociation resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class VpcIpv4CidrBlockAssociation protected ()
   /**
     * The additional IPv4 CIDR block to associate with the VPC.
     */
-  val cidrBlock: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val cidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the VPC to make the association with.
     */
-  val vpcId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/vpcIpv4CidrBlockAssociation", "VpcIpv4CidrBlockAssociation")

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/vpnGatewayAttachment", "VpnGatewayAttachment")
 @js.native
 class VpnGatewayAttachment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a VpnGatewayAttachment resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class VpnGatewayAttachment protected ()
   /**
     * The ID of the VPC.
     */
-  val vpcId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the Virtual Private Gateway.
     */
-  val vpnGatewayId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpnGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/vpnGatewayAttachment", "VpnGatewayAttachment")

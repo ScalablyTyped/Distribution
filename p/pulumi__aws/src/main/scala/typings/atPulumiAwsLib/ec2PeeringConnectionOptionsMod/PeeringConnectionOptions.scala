@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/peeringConnectionOptions", "PeeringConnectionOptions")
 @js.native
 class PeeringConnectionOptions protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a PeeringConnectionOptions resource with the given unique name, arguments, and options.
     *
@@ -23,17 +23,17 @@ class PeeringConnectionOptions protected ()
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options to be set for the VPC that accepts
     * the peering connection (a maximum of one).
     */
-  val accepter: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpc] = js.native
+  val accepter: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpc] = js.native
   /**
     * A optional configuration block that allows for [VPC Peering Connection]
     * (http://docs.aws.amazon.com/AmazonVPC/latest/PeeringGuide) options to be set for the VPC that requests
     * the peering connection (a maximum of one).
     */
-  val requester: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpc] = js.native
+  val requester: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpc] = js.native
   /**
     * The ID of the requester VPC peering connection.
     */
-  val vpcPeeringConnectionId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcPeeringConnectionId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/peeringConnectionOptions", "PeeringConnectionOptions")

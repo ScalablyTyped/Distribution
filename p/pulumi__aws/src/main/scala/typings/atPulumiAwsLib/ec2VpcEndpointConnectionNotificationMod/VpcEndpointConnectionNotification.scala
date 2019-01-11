@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/vpcEndpointConnectionNotification", "VpcEndpointConnectionNotification")
 @js.native
 class VpcEndpointConnectionNotification protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a VpcEndpointConnectionNotification resource with the given unique name, arguments, and options.
     *
@@ -21,27 +21,27 @@ class VpcEndpointConnectionNotification protected ()
   /**
     * One or more endpoint [events](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_CreateVpcEndpointConnectionNotification.html#API_CreateVpcEndpointConnectionNotification_RequestParameters) for which to receive notifications.
     */
-  val connectionEvents: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val connectionEvents: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The ARN of the SNS topic for the notifications.
     */
-  val connectionNotificationArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val connectionNotificationArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The type of notification.
     */
-  val notificationType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val notificationType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The state of the notification.
     */
-  val state: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val state: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the VPC Endpoint to receive notifications for.
     */
-  val vpcEndpointId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val vpcEndpointId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ID of the VPC Endpoint Service to receive notifications for.
     */
-  val vpcEndpointServiceId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val vpcEndpointServiceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/vpcEndpointConnectionNotification", "VpcEndpointConnectionNotification")

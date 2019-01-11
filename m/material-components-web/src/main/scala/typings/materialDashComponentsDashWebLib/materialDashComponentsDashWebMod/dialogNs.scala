@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object dialogNs extends js.Object {
   @js.native
   class MDCDialog ()
-    extends atMaterialDialogLib.dialogMod.MDCDialog
+    extends atMaterialDialogLib.atMaterialDialogMod.MDCDialog
   
   @js.native
   class MDCDialogFoundation ()
-    extends atMaterialDialogLib.dialogMod.MDCDialogFoundation
+    extends atMaterialDialogLib.atMaterialDialogMod.MDCDialogFoundation
   
   @js.native
   object MDCDialog extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialDialogLib.dialogMod.MDCDialog = js.native
+    def attachTo(root: stdLib.Element): atMaterialDialogLib.atMaterialDialogMod.MDCDialog = js.native
   }
   
   @js.native

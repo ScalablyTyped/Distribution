@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/gamelift/alias", "Alias")
 @js.native
 class Alias protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Alias resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class Alias protected ()
   /**
     * Alias ARN.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Description of the alias.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Name of the alias.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Specifies the fleet and/or routing type to use for the alias.
     */
-  val routingStrategy: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_FleetId] = js.native
+  val routingStrategy: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_FleetId] = js.native
 }
 
 @JSImport("@pulumi/aws/gamelift/alias", "Alias")

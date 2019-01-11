@@ -1,0 +1,19 @@
+package typings
+package blowDashHttpDashStatusesLib.blowDashHttpDashStatusesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("blow-http-statuses", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val Codes: blowDashHttpDashStatusesLib.Anon_Accepted = js.native
+  val Messages: blowDashHttpDashStatusesLib.Anon_100 = js.native
+  def isEmpty(code: js.Any): scala.Boolean = js.native
+  def isRedirect(code: js.Any): scala.Boolean = js.native
+  def isRetry(code: js.Any): scala.Boolean = js.native
+  def status(codeOrLiteral: java.lang.String): blowDashHttpDashStatusesLib.blowDashHttpDashStatusesMod.IStatus = js.native
+  def status(codeOrLiteral: scala.Double): blowDashHttpDashStatusesLib.blowDashHttpDashStatusesMod.IStatus = js.native
+}
+

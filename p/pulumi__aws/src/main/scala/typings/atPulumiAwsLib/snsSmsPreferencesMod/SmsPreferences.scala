@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/sns/smsPreferences", "SmsPreferences")
 @js.native
 class SmsPreferences protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SmsPreferences resource with the given unique name, arguments, and options.
     *
@@ -22,27 +22,27 @@ class SmsPreferences protected ()
   /**
     * A string, such as your business brand, that is displayed as the sender on the receiving device.
     */
-  val defaultSenderId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val defaultSenderId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The type of SMS message that you will send by default. Possible values are: Promotional, Transactional
     */
-  val defaultSmsType: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val defaultSmsType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ARN of the IAM role that allows Amazon SNS to write logs about SMS deliveries in CloudWatch Logs.
     */
-  val deliveryStatusIamRoleArn: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val deliveryStatusIamRoleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The percentage of successful SMS deliveries for which Amazon SNS will write logs in CloudWatch Logs. The value must be between 0 and 100.
     */
-  val deliveryStatusSuccessSamplingRate: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val deliveryStatusSuccessSamplingRate: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The maximum amount in USD that you are willing to spend each month to send SMS messages.
     */
-  val monthlySpendLimit: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val monthlySpendLimit: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the Amazon S3 bucket to receive daily SMS usage reports from Amazon SNS.
     */
-  val usageReportS3Bucket: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val usageReportS3Bucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/sns/smsPreferences", "SmsPreferences")

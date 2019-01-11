@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cfg/recorderStatus", "RecorderStatus")
 @js.native
 class RecorderStatus protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a RecorderStatus resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class RecorderStatus protected ()
   /**
     * Whether the configuration recorder should be enabled or disabled.
     */
-  val isEnabled: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
+  val isEnabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
   /**
     * The name of the recorder
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cfg/recorderStatus", "RecorderStatus")

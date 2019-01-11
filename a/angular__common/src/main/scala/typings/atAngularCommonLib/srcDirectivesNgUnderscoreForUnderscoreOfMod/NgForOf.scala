@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgForOf[T] protected ()
   extends atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.DoCheck {
-  def this(_viewContainer: atAngularCoreLib.coreMod.ViewContainerRef, _template: atAngularCoreLib.coreMod.TemplateRef[NgForOfContext[T]], _differs: atAngularCoreLib.coreMod.IterableDiffers) = this()
+  def this(_viewContainer: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, _template: atAngularCoreLib.atAngularCoreMod.TemplateRef[NgForOfContext[T]], _differs: atAngularCoreLib.atAngularCoreMod.IterableDiffers) = this()
   var _applyChanges: js.Any = js.native
   var _differ: js.Any = js.native
   var _differs: js.Any = js.native
@@ -20,7 +20,7 @@ class NgForOf[T] protected ()
   var _trackByFn: js.Any = js.native
   var _viewContainer: js.Any = js.native
   var ngForOf: atAngularCoreLib.srcChangeUnderscoreDetectionDiffersIterableUnderscoreDiffersMod.NgIterable[T] = js.native
-  var ngForTemplate: atAngularCoreLib.coreMod.TemplateRef[NgForOfContext[T]] = js.native
+  var ngForTemplate: atAngularCoreLib.atAngularCoreMod.TemplateRef[NgForOfContext[T]] = js.native
   @JSName("ngForTrackBy")
   var ngForTrackBy_Original: atAngularCoreLib.srcChangeUnderscoreDetectionDiffersIterableUnderscoreDiffersMod.TrackByFunction[T] = js.native
   /**

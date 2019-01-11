@@ -18,7 +18,7 @@ trait Anon_AllowMultipleInstances extends js.Object {
   /**
     * Just used for testing to start from a fresh namespace.
     */
-  def createFirebaseNamespace(): atFirebaseAppDashTypesLib.appDashTypesMod.FirebaseNamespace = js.native
+  def createFirebaseNamespace(): atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseNamespace = js.native
   /**
     * Create a Subscribe function.  A proxy Observer is created so that
     * events can be sent to single Observer to be fanned out automatically.
@@ -80,6 +80,9 @@ trait Anon_AllowMultipleInstances extends js.Object {
   /*
     * Convert service name to factory name to use.
     */
-  def useAsService(app: atFirebaseAppDashTypesLib.appDashTypesMod.FirebaseApp, serviceName: java.lang.String): java.lang.String | scala.Null = js.native
+  def useAsService(
+    app: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp,
+    serviceName: java.lang.String
+  ): java.lang.String | scala.Null = js.native
 }
 

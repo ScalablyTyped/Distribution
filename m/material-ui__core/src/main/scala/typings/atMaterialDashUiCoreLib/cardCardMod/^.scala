@@ -1,0 +1,13 @@
+package typings
+package atMaterialDashUiCoreLib.cardCardMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@material-ui/core/Card/Card", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val default: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.cardCardMod.CardProps] = js.native
+}
+

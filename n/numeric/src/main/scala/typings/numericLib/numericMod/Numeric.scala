@@ -133,12 +133,12 @@ trait Numeric extends js.Object {
   def LUsolve(lup: numericLib.Anon_LU, vector: numericLib.Vector): numericLib.Vector = js.native
   def QRFrancis(x: numericLib.Matrix): numericLib.Anon_B = js.native
   def QRFrancis(x: numericLib.Matrix, maxiter: scala.Double): numericLib.Anon_B = js.native
-  def `^`(x: numericLib.Scalar, y: numericLib.Scalar, args: (numericLib.Scalar | numericLib.Vector)*): numericLib.Vector = js.native
-  def `^`(x: numericLib.Scalar, y: numericLib.Vector, args: (numericLib.Scalar | numericLib.Vector)*): numericLib.Vector = js.native
-  def `^`(x: numericLib.Vector, y: numericLib.Scalar, args: (numericLib.Scalar | numericLib.Vector)*): numericLib.Vector = js.native
-  def `^`(x: numericLib.Vector, y: numericLib.Vector, args: (numericLib.Scalar | numericLib.Vector)*): numericLib.Vector = js.native
-  def `^`[T /* <: numericLib.MultidimensionalMatrix */](x: T, y: T, args: (numericLib.Scalar | T)*): T = js.native
-  def `^`[T /* <: numericLib.MultidimensionalMatrix */](x: T, y: numericLib.Scalar, args: (numericLib.Scalar | T)*): T = js.native
+  def ^(x: numericLib.Scalar, y: numericLib.Scalar, args: (numericLib.Scalar | numericLib.Vector)*): numericLib.Vector = js.native
+  def ^(x: numericLib.Scalar, y: numericLib.Vector, args: (numericLib.Scalar | numericLib.Vector)*): numericLib.Vector = js.native
+  def ^(x: numericLib.Vector, y: numericLib.Scalar, args: (numericLib.Scalar | numericLib.Vector)*): numericLib.Vector = js.native
+  def ^(x: numericLib.Vector, y: numericLib.Vector, args: (numericLib.Scalar | numericLib.Vector)*): numericLib.Vector = js.native
+  def ^[T /* <: numericLib.MultidimensionalMatrix */](x: T, y: T, args: (numericLib.Scalar | T)*): T = js.native
+  def ^[T /* <: numericLib.MultidimensionalMatrix */](x: T, y: numericLib.Scalar, args: (numericLib.Scalar | T)*): T = js.native
   @JSName("^")
   def `^_Scalar`(x: numericLib.Scalar, y: numericLib.Scalar, args: numericLib.Scalar*): numericLib.Scalar = js.native
   // Pointwise Math.abs(x)

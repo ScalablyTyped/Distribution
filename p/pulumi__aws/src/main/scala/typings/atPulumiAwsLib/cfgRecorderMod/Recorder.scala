@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cfg/recorder", "Recorder")
 @js.native
 class Recorder protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Recorder resource with the given unique name, arguments, and options.
     *
@@ -21,17 +21,17 @@ class Recorder protected ()
   /**
     * The name of the recorder. Defaults to `default`. Changing it recreates the resource.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Recording group - see below.
     */
-  val recordingGroup: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AllSupported] = js.native
+  val recordingGroup: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_AllSupported] = js.native
   /**
     * Amazon Resource Name (ARN) of the IAM role.
     * used to make read or write requests to the delivery channel and to describe the AWS resources associated with the account.
     * See [AWS Docs](http://docs.aws.amazon.com/config/latest/developerguide/iamrole-permissions.html) for more details.
     */
-  val roleArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cfg/recorder", "Recorder")

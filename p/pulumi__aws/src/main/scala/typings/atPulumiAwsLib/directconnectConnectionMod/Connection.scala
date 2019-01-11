@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/directconnect/connection", "Connection")
 @js.native
 class Connection protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Connection resource with the given unique name, arguments, and options.
     *
@@ -21,27 +21,27 @@ class Connection protected ()
   /**
     * The ARN of the connection.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The bandwidth of the connection. Available values: 1Gbps, 10Gbps. Case sensitive.
     */
-  val bandwidth: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val bandwidth: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Boolean value representing if jumbo frames have been enabled for this connection.
     */
-  val jumboFrameCapable: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
+  val jumboFrameCapable: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
   /**
     * The AWS Direct Connect location where the connection is located. See [DescribeLocations](https://docs.aws.amazon.com/directconnect/latest/APIReference/API_DescribeLocations.html) for the list of AWS Direct Connect locations. Use `locationCode`.
     */
-  val location: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val location: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the connection.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 @JSImport("@pulumi/aws/directconnect/connection", "Connection")

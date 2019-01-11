@@ -16,7 +16,7 @@ object coordinationNs extends js.Object {
       */
     @js.native
     class Lease protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a coordination.v1beta1.Lease resource with the given unique name, arguments, and options.
         *
@@ -34,23 +34,23 @@ object coordinationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Specification of the Lease. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      val spec: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.coordinationNs.v1beta1Ns.LeaseSpec] = js.native
+      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.coordinationNs.v1beta1Ns.LeaseSpec] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.coordinationNs.v1beta1Ns.Lease = js.native
     }
     
@@ -59,7 +59,7 @@ object coordinationNs extends js.Object {
       */
     @js.native
     class LeaseList protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a coordination.v1beta1.LeaseList resource with the given unique name, arguments, and options.
         *
@@ -77,23 +77,23 @@ object coordinationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Items is a list of schema objects.
         */
-      val items: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiKubernetesLib.typesOutputMod.coordinationNs.v1beta1Ns.Lease]] = js.native
+      val items: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiKubernetesLib.typesOutputMod.coordinationNs.v1beta1Ns.Lease]] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.coordinationNs.v1beta1Ns.LeaseList = js.native
     }
     

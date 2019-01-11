@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cfg/rule", "Rule")
 @js.native
 class Rule protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Rule resource with the given unique name, arguments, and options.
     *
@@ -21,37 +21,37 @@ class Rule protected ()
   /**
     * The ARN of the config rule
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Description of the rule
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A string in JSON format that is passed to the AWS Config rule Lambda function.
     */
-  val inputParameters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val inputParameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The frequency that you want AWS Config to run evaluations for a rule that
     * is triggered periodically. If specified, requires `message_type` to be `ScheduledNotification`.
     */
-  val maximumExecutionFrequency: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val maximumExecutionFrequency: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the rule
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the config rule
     */
-  val ruleId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val ruleId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Scope defines which resources can trigger an evaluation for the rule as documented below.
     */
-  val scope: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ComplianceResourceId]] = js.native
+  val scope: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ComplianceResourceId]] = js.native
   /**
     * Source specifies the rule owner, the rule identifier, and the notifications that cause
     * the function to evaluate your AWS resources as documented below.
     */
-  val source: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_Owner] = js.native
+  val source: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Owner] = js.native
 }
 
 @JSImport("@pulumi/aws/cfg/rule", "Rule")

@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 class NgComponentOutlet protected ()
   extends atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnChanges
      with atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnDestroy {
-  def this(_viewContainerRef: atAngularCoreLib.coreMod.ViewContainerRef) = this()
+  def this(_viewContainerRef: atAngularCoreLib.atAngularCoreMod.ViewContainerRef) = this()
   var _componentRef: js.Any = js.native
   var _moduleRef: js.Any = js.native
   var _viewContainerRef: js.Any = js.native
   var ngComponentOutlet: atAngularCoreLib.srcTypeMod.Type[_] = js.native
   var ngComponentOutletContent: js.Array[js.Array[_]] = js.native
-  var ngComponentOutletInjector: atAngularCoreLib.coreMod.Injector = js.native
-  var ngComponentOutletNgModuleFactory: atAngularCoreLib.coreMod.NgModuleFactory[_] = js.native
+  var ngComponentOutletInjector: atAngularCoreLib.atAngularCoreMod.Injector = js.native
+  var ngComponentOutletNgModuleFactory: atAngularCoreLib.atAngularCoreMod.NgModuleFactory[_] = js.native
   /**
     * A callback method that is invoked immediately after the
     * default change detector has checked data-bound properties

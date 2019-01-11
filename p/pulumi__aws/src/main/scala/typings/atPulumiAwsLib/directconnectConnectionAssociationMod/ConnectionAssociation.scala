@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/directconnect/connectionAssociation", "ConnectionAssociation")
 @js.native
 class ConnectionAssociation protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ConnectionAssociation resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class ConnectionAssociation protected ()
   /**
     * The ID of the connection.
     */
-  val connectionId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val connectionId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the LAG with which to associate the connection.
     */
-  val lagId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val lagId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/directconnect/connectionAssociation", "ConnectionAssociation")

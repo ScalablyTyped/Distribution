@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/appsync/apiKey", "ApiKey")
 @js.native
 class ApiKey protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ApiKey resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class ApiKey protected ()
   /**
     * The ID of the associated AppSync API
     */
-  val apiId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val apiId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The API key description. Defaults to "Managed by Terraform".
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * RFC3339 string representation of the expiry date. Rounded down to nearest hour. By default, it is 7 days from the date of creation.
     */
-  val expires: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val expires: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The API key
     */
-  val key: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val key: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/appsync/apiKey", "ApiKey")

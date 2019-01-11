@@ -62,7 +62,7 @@
 [info ] ResolveTypeQueries.scala:125 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(CollectionEvent)))) [id => ecol, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ecol/lib/sets/TreeMultiSetCollection) / TsExport() / TsExporteeTree() / TsDeclNamespace(TreeMultiSetCollection) / TsDeclVar(Event) / TsTypeQuery())] 
 [info ] ResolveTypeQueries.scala:125 Resolved TsTypeQuery(TsQIdent(List(TsIdentSimple(CollectionEvent)))) [id => ecol, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(ecol/lib/sets/TreeSetCollection) / TsExport() / TsExporteeTree() / TsDeclNamespace(TreeSetCollection) / TsDeclVar(Event) / TsTypeQuery())] 
 [debug] PhaseRunner.scala:82 Success [id => ecol, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:36 Processing ecol [id => ecol, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:40 Processing ecol [id => ecol, phase => scala.js] 
 [info ] RemoveMultipleInheritance.scala:47 Dropped parents 
 - ecolLib.libBasicICollectionMod.ICollection because Inheritance from two classes [id => ecol, phase => scala.js, this => Name(ecolLib) / Name(libLinearDequeCollectionMod) / Name(DequeCollection)] 
 [info ] RemoveMultipleInheritance.scala:47 Dropped parents 
@@ -91,3 +91,4 @@
 [debug] PhaseRunner.scala:82 Success [id => ecol, phase => scala.js] 
 [warn ] PhaseRunner.scala:68 Failed because of, [tstl => Compilation failed] [id => ecol, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [tstl => Compilation failed] [id => ecol, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [tstl => Compilation failed] [id => ecol, phase => publish] 

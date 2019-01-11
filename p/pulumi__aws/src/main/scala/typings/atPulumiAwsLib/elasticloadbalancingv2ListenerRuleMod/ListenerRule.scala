@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/elasticloadbalancingv2/listenerRule", "ListenerRule")
 @js.native
 class ListenerRule protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ListenerRule resource with the given unique name, arguments, and options.
     *
@@ -21,23 +21,23 @@ class ListenerRule protected ()
   /**
     * An Action block. Action blocks are documented below.
     */
-  val actions: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_AuthenticateCognito]] = js.native
+  val actions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_AuthenticateCognito]] = js.native
   /**
     * The ARN of the rule (matches `id`)
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A Condition block. Condition blocks are documented below.
     */
-  val conditions: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Field]] = js.native
+  val conditions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Field]] = js.native
   /**
     * The ARN of the listener to which to attach the rule.
     */
-  val listenerArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val listenerArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The priority for the rule between `1` and `50000`. Leaving it unset will automatically set the rule with next available priority after currently existing highest rule. A listener can't have multiple rules with the same priority.
     */
-  val priority: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val priority: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
 }
 
 @JSImport("@pulumi/aws/elasticloadbalancingv2/listenerRule", "ListenerRule")

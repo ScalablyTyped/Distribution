@@ -16,7 +16,7 @@ object apiregistrationNs extends js.Object {
       */
     @js.native
     class APIService protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a apiregistration.v1.APIService resource with the given unique name, arguments, and options.
         *
@@ -34,23 +34,23 @@ object apiregistrationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec contains information for locating and communicating with a server
         */
-      val spec: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.apiregistrationNs.v1Ns.APIServiceSpec] = js.native
+      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.apiregistrationNs.v1Ns.APIServiceSpec] = js.native
       /**
         * Status contains derived information about an API server
         */
-      val status: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.apiregistrationNs.v1Ns.APIServiceStatus] = js.native
+      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.apiregistrationNs.v1Ns.APIServiceStatus] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.apiregistrationNs.v1Ns.APIService = js.native
     }
     
@@ -59,7 +59,7 @@ object apiregistrationNs extends js.Object {
       */
     @js.native
     class APIServiceList protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a apiregistration.v1.APIServiceList resource with the given unique name, arguments, and options.
         *
@@ -77,16 +77,16 @@ object apiregistrationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-      val items: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiKubernetesLib.typesOutputMod.apiregistrationNs.v1Ns.APIService]] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val items: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiKubernetesLib.typesOutputMod.apiregistrationNs.v1Ns.APIService]] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.apiregistrationNs.v1Ns.APIServiceList = js.native
     }
     
@@ -138,7 +138,7 @@ object apiregistrationNs extends js.Object {
       */
     @js.native
     class APIService protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a apiregistration.v1beta1.APIService resource with the given unique name, arguments, and options.
         *
@@ -156,23 +156,23 @@ object apiregistrationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec contains information for locating and communicating with a server
         */
-      val spec: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.apiregistrationNs.v1beta1Ns.APIServiceSpec] = js.native
+      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.apiregistrationNs.v1beta1Ns.APIServiceSpec] = js.native
       /**
         * Status contains derived information about an API server
         */
-      val status: atPulumiPulumiLib.pulumiMod.Output[
+      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             atPulumiKubernetesLib.typesOutputMod.apiregistrationNs.v1beta1Ns.APIServiceStatus
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.apiregistrationNs.v1beta1Ns.APIService = js.native
@@ -183,7 +183,7 @@ object apiregistrationNs extends js.Object {
       */
     @js.native
     class APIServiceList protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a apiregistration.v1beta1.APIServiceList resource with the given unique name, arguments, and options.
         *
@@ -201,8 +201,8 @@ object apiregistrationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-      val items: atPulumiPulumiLib.pulumiMod.Output[
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val items: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             js.Array[atPulumiKubernetesLib.typesOutputMod.apiregistrationNs.v1beta1Ns.APIService]
           ] = js.native
       /**
@@ -211,8 +211,8 @@ object apiregistrationNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.apiregistrationNs.v1beta1Ns.APIServiceList = js.native
     }
     

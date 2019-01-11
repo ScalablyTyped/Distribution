@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/networkAcl", "NetworkAcl")
 @js.native
 class NetworkAcl protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a NetworkAcl resource with the given unique name, arguments, and options.
     *
@@ -21,32 +21,32 @@ class NetworkAcl protected ()
   /**
     * Specifies an egress rule. Parameters defined below.
     */
-  val egress: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ActionCidrBlock]] = js.native
+  val egress: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ActionCidrBlock]] = js.native
   /**
     * Specifies an ingress rule. Parameters defined below.
     */
-  val ingress: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ActionCidrBlock]] = js.native
+  val ingress: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ActionCidrBlock]] = js.native
   /**
     * The ID of the AWS account that owns the network ACL.
     */
-  val ownerId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val ownerId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the associated Subnet. This
     * attribute is deprecated, please use the `subnet_ids` attribute instead
     */
-  val subnetId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A list of Subnet IDs to apply the ACL to
     */
-  val subnetIds: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val subnetIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The ID of the associated VPC.
     */
-  val vpcId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/networkAcl", "NetworkAcl")

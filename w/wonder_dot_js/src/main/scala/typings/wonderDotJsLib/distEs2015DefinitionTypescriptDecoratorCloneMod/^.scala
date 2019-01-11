@@ -1,0 +1,39 @@
+package typings
+package wonderDotJsLib.distEs2015DefinitionTypescriptDecoratorCloneMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("wonder.js/dist/es2015/definition/typescript/decorator/clone", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def cloneAttributeAsBasicType(): js.Function2[/* target */ js.Any, /* memberName */ java.lang.String | js.Symbol, scala.Unit] = js.native
+  def cloneAttributeAsBasicType(
+    configData: wonderDotJsLib.distEs2015DefinitionTypescriptDecoratorCloneMod.CloneAttributeAsBasicTypeConfigData
+  ): js.Function2[/* target */ js.Any, /* memberName */ java.lang.String | js.Symbol, scala.Unit] = js.native
+  def cloneAttributeAsCloneable(): js.Function2[/* target */ js.Any, /* memberName */ java.lang.String | js.Symbol, scala.Unit] = js.native
+  def cloneAttributeAsCloneable(
+    configData: wonderDotJsLib.distEs2015DefinitionTypescriptDecoratorCloneMod.CloneAttributeAsCloneableConfigData
+  ): js.Function2[/* target */ js.Any, /* memberName */ java.lang.String | js.Symbol, scala.Unit] = js.native
+  def cloneAttributeAsCustomType(
+    cloneFunc: js.Function4[
+      /* source */ js.Any, 
+      /* target */ js.Any, 
+      /* memberName */ java.lang.String, 
+      /* cloneData */ js.Any, 
+      scala.Unit
+    ]
+  ): js.Function2[/* target */ js.Any, /* memberName */ java.lang.String | js.Symbol, scala.Unit] = js.native
+  def cloneAttributeAsCustomType(
+    cloneFunc: js.Function4[
+      /* source */ js.Any, 
+      /* target */ js.Any, 
+      /* memberName */ java.lang.String, 
+      /* cloneData */ js.Any, 
+      scala.Unit
+    ],
+    configData: wonderDotJsLib.distEs2015DefinitionTypescriptDecoratorCloneMod.CloneAttributeAsCustomTypeConfigData
+  ): js.Function2[/* target */ js.Any, /* memberName */ java.lang.String | js.Symbol, scala.Unit] = js.native
+}
+

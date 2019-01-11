@@ -1,0 +1,17 @@
+package typings
+package formDashSerializeLib.formDashSerializeMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("form-serialize", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def apply(form: stdLib.HTMLFormElement): java.lang.String = js.native
+  def apply(
+    form: stdLib.HTMLFormElement,
+    options: formDashSerializeLib.formDashSerializeMod.OptionsHash | formDashSerializeLib.formDashSerializeLibNumbers.`true`
+  ): formDashSerializeLib.formDashSerializeMod.ResultHash = js.native
+}
+

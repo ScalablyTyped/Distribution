@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/applicationloadbalancing/listener", "Listener")
 @js.native
 class Listener protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Listener resource with the given unique name, arguments, and options.
     *
@@ -21,31 +21,31 @@ class Listener protected ()
   /**
     * The ARN of the listener (matches `id`)
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ARN of the default SSL server certificate. Exactly one certificate is required if the protocol is HTTPS. For adding additional SSL certificates, see the [`aws_lb_listener_certificate` resource](https://www.terraform.io/docs/providers/aws/r/lb_listener_certificate.html).
     */
-  val certificateArn: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificateArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * An Action block. Action blocks are documented below.
     */
-  val defaultAction: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AuthenticateCognito] = js.native
+  val defaultAction: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_AuthenticateCognito] = js.native
   /**
     * The ARN of the load balancer.
     */
-  val loadBalancerArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val loadBalancerArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The port. Specify a value from `1` to `65535` or `#{port}`. Defaults to `#{port}`.
     */
-  val port: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val port: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * The protocol. Valid values are `HTTP`, `HTTPS`, or `#{protocol}`. Defaults to `#{protocol}`.
     */
-  val protocol: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val protocol: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the SSL Policy for the listener. Required if `protocol` is `HTTPS`.
     */
-  val sslPolicy: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val sslPolicy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/applicationloadbalancing/listener", "Listener")

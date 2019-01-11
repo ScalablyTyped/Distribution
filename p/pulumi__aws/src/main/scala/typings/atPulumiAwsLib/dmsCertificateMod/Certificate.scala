@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/dms/certificate", "Certificate")
 @js.native
 class Certificate protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Certificate resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class Certificate protected ()
   /**
     * The Amazon Resource Name (ARN) for the certificate.
     */
-  val certificateArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val certificateArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The certificate identifier.
     */
-  val certificateId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val certificateId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The contents of the .pem X.509 certificate file for the certificate. Either `certificate_pem` or `certificate_wallet` must be set.
     */
-  val certificatePem: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificatePem: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The contents of the Oracle Wallet certificate for use with SSL. Either `certificate_pem` or `certificate_wallet` must be set.
     */
-  val certificateWallet: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificateWallet: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/dms/certificate", "Certificate")

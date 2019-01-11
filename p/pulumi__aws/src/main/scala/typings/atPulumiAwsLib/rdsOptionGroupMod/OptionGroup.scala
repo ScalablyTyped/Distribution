@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/rds/optionGroup", "OptionGroup")
 @js.native
 class OptionGroup protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a OptionGroup resource with the given unique name, arguments, and options.
     *
@@ -21,35 +21,35 @@ class OptionGroup protected ()
   /**
     * The ARN of the db option group.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Specifies the name of the engine that this option group should be associated with.
     */
-  val engineName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val engineName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Specifies the major version of the engine that this option group should be associated with.
     */
-  val majorEngineVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val majorEngineVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The Name of the setting.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `name`. Must be lowercase, to match as it is stored in AWS.
     */
-  val namePrefix: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val namePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The description of the option group. Defaults to "Managed by Terraform".
     */
-  val optionGroupDescription: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val optionGroupDescription: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A list of Options to apply.
     */
-  val options: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DbSecurityGroupMemberships]]] = js.native
+  val options: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DbSecurityGroupMemberships]]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 @JSImport("@pulumi/aws/rds/optionGroup", "OptionGroup")

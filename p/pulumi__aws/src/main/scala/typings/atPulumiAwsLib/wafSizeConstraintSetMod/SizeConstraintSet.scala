@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/waf/sizeConstraintSet", "SizeConstraintSet")
 @js.native
 class SizeConstraintSet protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SizeConstraintSet resource with the given unique name, arguments, and options.
     *
@@ -22,11 +22,11 @@ class SizeConstraintSet protected ()
   /**
     * The name or description of the Size Constraint Set.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Specifies the parts of web requests that you want to inspect the size of.
     */
-  val sizeConstraints: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ComparisonOperator]]] = js.native
+  val sizeConstraints: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ComparisonOperator]]] = js.native
 }
 
 @JSImport("@pulumi/aws/waf/sizeConstraintSet", "SizeConstraintSet")

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/batch/jobDefinition", "JobDefinition")
 @js.native
 class JobDefinition protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a JobDefinition resource with the given unique name, arguments, and options.
     *
@@ -21,37 +21,37 @@ class JobDefinition protected ()
   /**
     * The Amazon Resource Name of the job definition.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A valid [container properties](http://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html)
     * provided as a single valid JSON document. This parameter is required if the `type` parameter is `container`.
     */
-  val containerProperties: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val containerProperties: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Specifies the name of the job definition.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Specifies the parameter substitution placeholders to set in the job definition.
     */
-  val parameters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val parameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
   /**
     * Specifies the retry strategy to use for failed jobs that are submitted with this job definition.
     * Maximum number of `retry_strategy` is `1`.  Defined below.
     */
-  val retryStrategy: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Attempts]] = js.native
+  val retryStrategy: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Attempts]] = js.native
   /**
     * The revision of the job definition.
     */
-  val revision: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val revision: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * Specifies the timeout for jobs so that if a job runs longer, AWS Batch terminates the job. Maximum number of `timeout` is `1`. Defined below.
     */
-  val timeout: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AttemptDurationSeconds]] = js.native
+  val timeout: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AttemptDurationSeconds]] = js.native
   /**
     * The type of job definition.  Must be `container`
     */
-  val `type`: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/batch/jobDefinition", "JobDefinition")

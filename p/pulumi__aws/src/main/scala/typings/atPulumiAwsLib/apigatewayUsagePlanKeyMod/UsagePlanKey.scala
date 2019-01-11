@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/apigateway/usagePlanKey", "UsagePlanKey")
 @js.native
 class UsagePlanKey protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a UsagePlanKey resource with the given unique name, arguments, and options.
     *
@@ -21,23 +21,23 @@ class UsagePlanKey protected ()
   /**
     * The identifier of the API key resource.
     */
-  val keyId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val keyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The type of the API key resource. Currently, the valid key type is API_KEY.
     */
-  val keyType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val keyType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of a usage plan key.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The Id of the usage plan resource representing to associate the key to.
     */
-  val usagePlanId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val usagePlanId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The value of a usage plan key.
     */
-  val value: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val value: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/apigateway/usagePlanKey", "UsagePlanKey")

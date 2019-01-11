@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/networkInterface", "NetworkInterface")
 @js.native
 class NetworkInterface protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a NetworkInterface resource with the given unique name, arguments, and options.
     *
@@ -21,37 +21,37 @@ class NetworkInterface protected ()
   /**
     * Block to define the attachment of the ENI. Documented below.
     */
-  val attachments: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_AttachmentIdDeviceIndex]] = js.native
+  val attachments: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_AttachmentIdDeviceIndex]] = js.native
   /**
     * A description for the network interface.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val privateDnsName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val privateIp: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val privateDnsName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val privateIp: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * List of private IPs to assign to the ENI.
     */
-  val privateIps: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val privateIps: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * Number of private IPs to assign to the ENI.
     */
-  val privateIpsCount: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val privateIpsCount: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * List of security group IDs to assign to the ENI.
     */
-  val securityGroups: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val securityGroups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * Whether to enable source destination checking for the ENI. Default true.
     */
-  val sourceDestCheck: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val sourceDestCheck: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Subnet ID to create the ENI in.
     */
-  val subnetId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/networkInterface", "NetworkInterface")

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/storagegateway/cache", "Cache")
 @js.native
 class Cache protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Cache resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class Cache protected ()
   /**
     * Local disk identifier. For example, `pci-0000:03:00.0-scsi-0:0:0:0`.
     */
-  val diskId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val diskId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The Amazon Resource Name (ARN) of the gateway.
     */
-  val gatewayArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val gatewayArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/storagegateway/cache", "Cache")

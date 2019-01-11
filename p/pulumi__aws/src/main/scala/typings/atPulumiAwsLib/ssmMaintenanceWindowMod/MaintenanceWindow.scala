@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ssm/maintenanceWindow", "MaintenanceWindow")
 @js.native
 class MaintenanceWindow protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a MaintenanceWindow resource with the given unique name, arguments, and options.
     *
@@ -21,24 +21,24 @@ class MaintenanceWindow protected ()
   /**
     * Whether targets must be registered with the Maintenance Window before tasks can be defined for those targets.
     */
-  val allowUnassociatedTargets: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val allowUnassociatedTargets: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The number of hours before the end of the Maintenance Window that Systems Manager stops scheduling new tasks for execution.
     */
-  val cutoff: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val cutoff: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * The duration of the Maintenance Window in hours.
     */
-  val duration: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
-  val enabled: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val duration: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The name of the maintenance window.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The schedule of the Maintenance Window in the form of a [cron](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-maintenance-cron.html) or rate expression.
     */
-  val schedule: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val schedule: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ssm/maintenanceWindow", "MaintenanceWindow")

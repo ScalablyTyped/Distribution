@@ -14,6 +14,6 @@ trait Anon_Credentials extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
   var username: js.UndefOr[java.lang.String] = js.undefined
   var usernameField: js.UndefOr[java.lang.String] = js.undefined
-  def onComplete(credentials: js.Array[jpmLib.passwordsMod.Credential]): js.Any
+  def onComplete(credentials: js.Array[jpmLib.sdkPasswordsMod.Credential]): js.Any
 }
 

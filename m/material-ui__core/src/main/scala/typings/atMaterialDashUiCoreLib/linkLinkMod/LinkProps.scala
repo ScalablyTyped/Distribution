@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var block: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var color: js.UndefOr[atMaterialDashUiCoreLib.coreMod.PropTypesNs.Color] = js.undefined
+  var color: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[LinkProps]] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var underline: js.UndefOr[

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/apigateway/response", "Response")
 @js.native
 class Response protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Response resource with the given unique name, arguments, and options.
     *
@@ -21,23 +21,23 @@ class Response protected ()
   /**
     * A map specifying the templates used to transform the response body.
     */
-  val responseParameters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val responseParameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
   /**
     * A map specifying the parameters (paths, query strings and headers) of the Gateway Response.
     */
-  val responseTemplates: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val responseTemplates: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
   /**
     * The response type of the associated GatewayResponse.
     */
-  val responseType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val responseType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The string identifier of the associated REST API.
     */
-  val restApiId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val restApiId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The HTTP status code of the Gateway Response.
     */
-  val statusCode: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val statusCode: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/apigateway/response", "Response")

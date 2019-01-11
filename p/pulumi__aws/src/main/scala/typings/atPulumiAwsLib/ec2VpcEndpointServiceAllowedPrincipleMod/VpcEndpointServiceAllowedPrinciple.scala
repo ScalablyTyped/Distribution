@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple", "VpcEndpointServiceAllowedPrinciple")
 @js.native
 class VpcEndpointServiceAllowedPrinciple protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a VpcEndpointServiceAllowedPrinciple resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class VpcEndpointServiceAllowedPrinciple protected ()
   /**
     * The ARN of the principal to allow permissions.
     */
-  val principalArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val principalArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the VPC endpoint service to allow permission.
     */
-  val vpcEndpointServiceId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcEndpointServiceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple", "VpcEndpointServiceAllowedPrinciple")

@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object gridListNs extends js.Object {
   @js.native
   class MDCGridList ()
-    extends atMaterialGridDashListLib.gridDashListMod.MDCGridList
+    extends atMaterialGridDashListLib.atMaterialGridDashListMod.MDCGridList
   
   @js.native
   class MDCGridListFoundation ()
-    extends atMaterialGridDashListLib.gridDashListMod.MDCGridListFoundation
+    extends atMaterialGridDashListLib.atMaterialGridDashListMod.MDCGridListFoundation
   
   @js.native
   object MDCGridList extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialGridDashListLib.gridDashListMod.MDCGridList = js.native
+    def attachTo(root: stdLib.Element): atMaterialGridDashListLib.atMaterialGridDashListMod.MDCGridList = js.native
   }
   
   @js.native

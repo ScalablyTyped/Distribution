@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/directoryservice/conditionalForwader", "ConditionalForwader")
 @js.native
 class ConditionalForwader protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ConditionalForwader resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class ConditionalForwader protected ()
   /**
     * The id of directory.
     */
-  val directoryId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val directoryId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A list of forwarder IP addresses.
     */
-  val dnsIps: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val dnsIps: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The fully qualified domain name of the remote domain for which forwarders will be used.
     */
-  val remoteDomainName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val remoteDomainName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/directoryservice/conditionalForwader", "ConditionalForwader")

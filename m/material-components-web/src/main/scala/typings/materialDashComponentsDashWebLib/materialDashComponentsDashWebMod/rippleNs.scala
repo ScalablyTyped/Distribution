@@ -10,21 +10,21 @@ import scala.scalajs.js.annotation._
 object rippleNs extends js.Object {
   @js.native
   class MDCRipple ()
-    extends atMaterialRippleLib.rippleMod.MDCRipple
+    extends atMaterialRippleLib.atMaterialRippleMod.MDCRipple
   
   @js.native
   class MDCRippleFoundation ()
-    extends atMaterialRippleLib.rippleMod.MDCRippleFoundation
+    extends atMaterialRippleLib.atMaterialRippleMod.MDCRippleFoundation
   
   @js.native
   class RippleCapableSurface ()
-    extends atMaterialRippleLib.rippleMod.RippleCapableSurface
+    extends atMaterialRippleLib.atMaterialRippleMod.RippleCapableSurface
   
   @js.native
   object MDCRipple extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialRippleLib.rippleMod.MDCRipple = js.native
-    def attachTo(root: stdLib.Element, options: atMaterialRippleLib.Anon_IsUnbounded): atMaterialRippleLib.rippleMod.MDCRipple = js.native
-    def createAdapter(instance: atMaterialRippleLib.rippleMod.RippleCapableSurface): atMaterialRippleLib.adapterMod.MDCRippleAdapter = js.native
+    def attachTo(root: stdLib.Element): atMaterialRippleLib.atMaterialRippleMod.MDCRipple = js.native
+    def attachTo(root: stdLib.Element, options: atMaterialRippleLib.Anon_IsUnbounded): atMaterialRippleLib.atMaterialRippleMod.MDCRipple = js.native
+    def createAdapter(instance: atMaterialRippleLib.atMaterialRippleMod.RippleCapableSurface): atMaterialRippleLib.adapterMod.MDCRippleAdapter = js.native
   }
   
   @js.native

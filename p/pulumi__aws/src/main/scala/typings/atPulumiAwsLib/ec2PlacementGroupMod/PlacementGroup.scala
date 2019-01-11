@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/placementGroup", "PlacementGroup")
 @js.native
 class PlacementGroup protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a PlacementGroup resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class PlacementGroup protected ()
   /**
     * The name of the placement group.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The placement strategy.
     */
-  val strategy: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.ec2PlacementStrategyMod.PlacementStrategy] = js.native
+  val strategy: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.ec2PlacementStrategyMod.PlacementStrategy] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/placementGroup", "PlacementGroup")

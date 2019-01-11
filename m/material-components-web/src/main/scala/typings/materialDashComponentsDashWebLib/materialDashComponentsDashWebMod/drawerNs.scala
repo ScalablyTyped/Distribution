@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
 object drawerNs extends js.Object {
   @js.native
   class MDCPersistentDrawer ()
-    extends atMaterialDrawerLib.drawerMod.MDCPersistentDrawer
+    extends atMaterialDrawerLib.atMaterialDrawerMod.MDCPersistentDrawer
   
   @js.native
   class MDCPersistentDrawerFoundation ()
-    extends atMaterialDrawerLib.drawerMod.MDCPersistentDrawerFoundation
+    extends atMaterialDrawerLib.atMaterialDrawerMod.MDCPersistentDrawerFoundation
   
   @js.native
   class MDCTemporaryDrawer ()
-    extends atMaterialDrawerLib.drawerMod.MDCTemporaryDrawer
+    extends atMaterialDrawerLib.atMaterialDrawerMod.MDCTemporaryDrawer
   
   @js.native
   class MDCTemporaryDrawerFoundation ()
-    extends atMaterialDrawerLib.drawerMod.MDCTemporaryDrawerFoundation
+    extends atMaterialDrawerLib.atMaterialDrawerMod.MDCTemporaryDrawerFoundation
   
   @js.native
   object MDCPersistentDrawer extends js.Object {

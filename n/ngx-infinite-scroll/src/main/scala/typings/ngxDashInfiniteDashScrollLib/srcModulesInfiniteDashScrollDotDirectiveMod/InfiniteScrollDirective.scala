@@ -11,7 +11,7 @@ class InfiniteScrollDirective protected ()
   extends atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnDestroy
      with atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnChanges
      with atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.AfterViewInit {
-  def this(element: atAngularCoreLib.coreMod.ElementRef[_], zone: atAngularCoreLib.coreMod.NgZone) = this()
+  def this(element: atAngularCoreLib.atAngularCoreMod.ElementRef[_], zone: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
   var alwaysCallback: scala.Boolean = js.native
   var disposeScroller: js.Any = js.native
   var element: js.Any = js.native
@@ -24,8 +24,8 @@ class InfiniteScrollDirective protected ()
   var infiniteScrollThrottle: scala.Double = js.native
   var infiniteScrollUpDistance: scala.Double = js.native
   var scrollWindow: scala.Boolean = js.native
-  var scrolled: atAngularCoreLib.coreMod.EventEmitter[ngxDashInfiniteDashScrollLib.srcModelsMod.InfiniteScrollEvent] = js.native
-  var scrolledUp: atAngularCoreLib.coreMod.EventEmitter[ngxDashInfiniteDashScrollLib.srcModelsMod.InfiniteScrollEvent] = js.native
+  var scrolled: atAngularCoreLib.atAngularCoreMod.EventEmitter[ngxDashInfiniteDashScrollLib.srcModelsMod.InfiniteScrollEvent] = js.native
+  var scrolledUp: atAngularCoreLib.atAngularCoreMod.EventEmitter[ngxDashInfiniteDashScrollLib.srcModelsMod.InfiniteScrollEvent] = js.native
   var zone: js.Any = js.native
   def destroyScroller(): scala.Unit = js.native
   def handleOnScroll(hasTypePayload: ngxDashInfiniteDashScrollLib.srcModelsMod.IInfiniteScrollAction): scala.Unit = js.native

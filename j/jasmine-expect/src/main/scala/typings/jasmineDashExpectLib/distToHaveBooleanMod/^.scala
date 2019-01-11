@@ -1,0 +1,13 @@
+package typings
+package jasmineDashExpectLib.distToHaveBooleanMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("jasmine-expect/dist/toHaveBoolean", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val toHaveBoolean: jasmineDashExpectLib.distToHaveBooleanMod.ToHaveBoolean = js.native
+}
+

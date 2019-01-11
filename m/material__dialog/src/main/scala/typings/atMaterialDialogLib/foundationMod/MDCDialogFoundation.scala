@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait MDCDialogFoundation
-  extends atMaterialBaseLib.baseMod.MDCFoundation[atMaterialDialogLib.adapterMod.MDCDialogAdapter] {
+  extends atMaterialBaseLib.atMaterialBaseMod.MDCFoundation[atMaterialDialogLib.adapterMod.MDCDialogAdapter] {
   def accept(shouldNotify: scala.Boolean): scala.Unit = js.native
   def cancel(shouldNotify: scala.Boolean): scala.Unit = js.native
   def close(): scala.Unit = js.native

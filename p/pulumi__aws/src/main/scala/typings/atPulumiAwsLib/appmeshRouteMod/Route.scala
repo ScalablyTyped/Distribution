@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/appmesh/route", "Route")
 @js.native
 class Route protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Route resource with the given unique name, arguments, and options.
     *
@@ -21,28 +21,28 @@ class Route protected ()
   /**
     * The ARN of the route.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The creation date of the route.
     */
-  val createdDate: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val createdDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The last update date of the route.
     */
-  val lastUpdatedDate: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val lastUpdatedDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the service mesh in which to create the route.
     */
-  val meshName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val meshName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name to use for the route.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The route specification to apply.
     */
-  val spec: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_HttpRoute] = js.native
-  val virtualRouterName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_HttpRoute] = js.native
+  val virtualRouterName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/appmesh/route", "Route")

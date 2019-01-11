@@ -24,9 +24,9 @@ object srcUtilsCollectionMod extends js.Object {
     obj: org.scalablytyped.runtime.StringDictionary[A],
     fn: js.Function2[/* k */ java.lang.String, /* a */ A, rxjsLib.rxjsMod.Observable[B]]
   ): rxjsLib.rxjsMod.Observable[org.scalablytyped.runtime.StringDictionary[B]] = js.native
-  def wrapIntoObservable[T](value: T): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.coreMod.NgModuleFactory[T]] = js.native
-  def wrapIntoObservable[T](value: atAngularCoreLib.coreMod.NgModuleFactory[T]): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.coreMod.NgModuleFactory[T]] = js.native
-  def wrapIntoObservable[T](value: js.Promise[T]): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.coreMod.NgModuleFactory[T]] = js.native
-  def wrapIntoObservable[T](value: rxjsLib.rxjsMod.Observable[T]): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.coreMod.NgModuleFactory[T]] = js.native
+  def wrapIntoObservable[T](value: T): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.atAngularCoreMod.NgModuleFactory[T]] = js.native
+  def wrapIntoObservable[T](value: atAngularCoreLib.atAngularCoreMod.NgModuleFactory[T]): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.atAngularCoreMod.NgModuleFactory[T]] = js.native
+  def wrapIntoObservable[T](value: js.Promise[T]): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.atAngularCoreMod.NgModuleFactory[T]] = js.native
+  def wrapIntoObservable[T](value: rxjsLib.rxjsMod.Observable[T]): rxjsLib.rxjsMod.Observable[T | atAngularCoreLib.atAngularCoreMod.NgModuleFactory[T]] = js.native
 }
 

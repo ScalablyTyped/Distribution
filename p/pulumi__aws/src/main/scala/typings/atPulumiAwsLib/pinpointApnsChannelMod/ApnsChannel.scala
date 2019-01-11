@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/pinpoint/apnsChannel", "ApnsChannel")
 @js.native
 class ApnsChannel protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ApnsChannel resource with the given unique name, arguments, and options.
     *
@@ -18,15 +18,15 @@ class ApnsChannel protected ()
     */
   def this(name: java.lang.String, args: ApnsChannelArgs) = this()
   def this(name: java.lang.String, args: ApnsChannelArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val applicationId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val bundleId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val certificate: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val defaultAuthenticationMethod: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val enabled: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
-  val privateKey: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val teamId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val tokenKey: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val tokenKeyId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val applicationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val bundleId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val certificate: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val defaultAuthenticationMethod: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val privateKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val teamId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val tokenKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val tokenKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/pinpoint/apnsChannel", "ApnsChannel")

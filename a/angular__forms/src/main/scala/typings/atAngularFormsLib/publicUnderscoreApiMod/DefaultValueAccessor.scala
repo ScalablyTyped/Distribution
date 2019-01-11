@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class DefaultValueAccessor protected ()
   extends atAngularFormsLib.srcFormsMod.DefaultValueAccessor {
-  def this(_renderer: atAngularCoreLib.coreMod.Renderer2, _elementRef: atAngularCoreLib.coreMod.ElementRef[_], _compositionMode: scala.Boolean) = this()
+  def this(_renderer: atAngularCoreLib.atAngularCoreMod.Renderer2, _elementRef: atAngularCoreLib.atAngularCoreMod.ElementRef[_], _compositionMode: scala.Boolean) = this()
 }
 

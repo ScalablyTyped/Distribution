@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/transfer/sshKey", "SshKey")
 @js.native
 class SshKey protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SshKey resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class SshKey protected ()
   /**
     * The public key portion of an SSH key pair.
     */
-  val body: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val body: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The Server ID of the Transfer Server (e.g. `s-12345678`)
     */
-  val serverId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val serverId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the user account that is assigned to one or more servers.
     */
-  val userName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val userName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/transfer/sshKey", "SshKey")

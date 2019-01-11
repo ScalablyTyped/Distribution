@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/elasticache/subnetGroup", "SubnetGroup")
 @js.native
 class SubnetGroup protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SubnetGroup resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class SubnetGroup protected ()
   /**
     * Description for the cache subnet group. Defaults to "Managed by Terraform".
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Name for the cache subnet group. Elasticache converts this name to lowercase.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * List of VPC Subnet IDs for the cache subnet group
     */
-  val subnetIds: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val subnetIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/elasticache/subnetGroup", "SubnetGroup")

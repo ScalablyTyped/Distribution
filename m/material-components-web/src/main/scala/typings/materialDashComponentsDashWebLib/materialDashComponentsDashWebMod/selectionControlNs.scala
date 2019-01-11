@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object selectionControlNs extends js.Object {
   @js.native
   class MDCSelectionControl ()
-    extends atMaterialSelectionDashControlLib.selectionDashControlMod.MDCSelectionControl
+    extends atMaterialSelectionDashControlLib.atMaterialSelectionDashControlMod.MDCSelectionControl
   
 }
 

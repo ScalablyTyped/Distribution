@@ -13,10 +13,10 @@ class Repo protected () extends js.Object {
     * @param {boolean} forceRestClient
     * @param {!FirebaseApp} app
     */
-  def this(`repoInfo_`: atFirebaseDatabaseLib.distSrcCoreRepoInfoMod.RepoInfo, forceRestClient: scala.Boolean, app: atFirebaseAppDashTypesLib.appDashTypesMod.FirebaseApp) = this()
+  def this(`repoInfo_`: atFirebaseDatabaseLib.distSrcCoreRepoInfoMod.RepoInfo, forceRestClient: scala.Boolean, app: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp) = this()
   var __database: js.Any = js.native
   var `abortTransactions_`: js.Any = js.native
-  var app: atFirebaseAppDashTypesLib.appDashTypesMod.FirebaseApp = js.native
+  var app: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp = js.native
   var dataUpdateCount: scala.Double = js.native
   val database: atFirebaseDatabaseLib.distSrcApiDatabaseMod.Database = js.native
   var `eventQueue_`: js.Any = js.native

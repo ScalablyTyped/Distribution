@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "react-draggable-list"
-version := "4.0.1-c0c6a9"
+version := "4.0.1-24ae6b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-82546d",
-  "org.scalablytyped" %%% "immutability-helper" % "2.9.0-cf4bd8",
-  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-8159b9",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-ff1a88",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-8bb0ba",
-  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20180806Z-af8313",
-  "org.scalablytyped" %%% "react-multi-ref" % "1.0.0-a4ce93",
-  "org.scalablytyped" %%% "std" % "3.2.2-f3cc98")
+  "org.scalablytyped" %%% "csstype" % "2.5.8-61e37d",
+  "org.scalablytyped" %%% "immutability-helper" % "2.9.0-1d234a",
+  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-5edd6b",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-692895",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-e34099",
+  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20180806Z-e58535",
+  "org.scalablytyped" %%% "react-multi-ref" % "1.0.0-106b77",
+  "org.scalablytyped" %%% "std" % "3.2.2-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/wafregional/regexMatchSet", "RegexMatchSet")
 @js.native
 class RegexMatchSet protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a RegexMatchSet resource with the given unique name, arguments, and options.
     *
@@ -22,12 +22,12 @@ class RegexMatchSet protected ()
   /**
     * The name or description of the Regex Match Set.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The regular expression pattern that you want AWS WAF to search for in web requests,
     * the location in requests that you want AWS WAF to search, and other settings. See below.
     */
-  val regexMatchTuples: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatchRegexPatternSetId]]] = js.native
+  val regexMatchTuples: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatchRegexPatternSetId]]] = js.native
 }
 
 @JSImport("@pulumi/aws/wafregional/regexMatchSet", "RegexMatchSet")

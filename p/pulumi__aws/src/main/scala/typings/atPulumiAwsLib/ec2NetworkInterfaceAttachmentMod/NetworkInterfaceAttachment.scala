@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/networkInterfaceAttachment", "NetworkInterfaceAttachment")
 @js.native
 class NetworkInterfaceAttachment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a NetworkInterfaceAttachment resource with the given unique name, arguments, and options.
     *
@@ -21,23 +21,23 @@ class NetworkInterfaceAttachment protected ()
   /**
     * The ENI Attachment ID.
     */
-  val attachmentId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val attachmentId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Network interface index (int).
     */
-  val deviceIndex: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val deviceIndex: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * Instance ID to attach.
     */
-  val instanceId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val instanceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * ENI ID to attach.
     */
-  val networkInterfaceId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val networkInterfaceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The status of the Network Interface Attachment.
     */
-  val status: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/networkInterfaceAttachment", "NetworkInterfaceAttachment")

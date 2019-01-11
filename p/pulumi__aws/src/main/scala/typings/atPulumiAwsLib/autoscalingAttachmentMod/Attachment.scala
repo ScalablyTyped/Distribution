@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/autoscaling/attachment", "Attachment")
 @js.native
 class Attachment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Attachment resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class Attachment protected ()
   /**
     * The ARN of an ALB Target Group.
     */
-  val albTargetGroupArn: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val albTargetGroupArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Name of ASG to associate with the ELB.
     */
-  val autoscalingGroupName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val autoscalingGroupName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the ELB.
     */
-  val elb: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val elb: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/autoscaling/attachment", "Attachment")

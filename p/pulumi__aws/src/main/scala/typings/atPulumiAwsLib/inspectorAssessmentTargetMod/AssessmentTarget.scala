@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/inspector/assessmentTarget", "AssessmentTarget")
 @js.native
 class AssessmentTarget protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a AssessmentTarget resource with the given unique name, arguments, and options.
     *
@@ -21,13 +21,13 @@ class AssessmentTarget protected ()
   /**
     * The target assessment ARN.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the assessment target.
     * * `resource_group_arn` (Required )- The resource group ARN stating tags for instance matching.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val resourceGroupArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val resourceGroupArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/inspector/assessmentTarget", "AssessmentTarget")

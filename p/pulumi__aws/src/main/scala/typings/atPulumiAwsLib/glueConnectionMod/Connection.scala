@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/glue/connection", "Connection")
 @js.native
 class Connection protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Connection resource with the given unique name, arguments, and options.
     *
@@ -21,31 +21,31 @@ class Connection protected ()
   /**
     * The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
     */
-  val catalogId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val catalogId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A map of key-value pairs used as parameters for this connection.
     */
-  val connectionProperties: atPulumiPulumiLib.pulumiMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  val connectionProperties: atPulumiPulumiLib.atPulumiPulumiMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
     * The type of the connection. Defaults to `JBDC`.
     */
-  val connectionType: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val connectionType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Description of the connection.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A list of criteria that can be used in selecting this connection.
     */
-  val matchCriterias: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val matchCriterias: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The name of the connection.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
     */
-  val physicalConnectionRequirements: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AvailabilityZoneSecurityGroupIdLists]] = js.native
+  val physicalConnectionRequirements: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AvailabilityZoneSecurityGroupIdLists]] = js.native
 }
 
 @JSImport("@pulumi/aws/glue/connection", "Connection")

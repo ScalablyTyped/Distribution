@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object checkboxNs extends js.Object {
   @js.native
   class MDCCheckbox ()
-    extends atMaterialCheckboxLib.checkboxMod.MDCCheckbox
+    extends atMaterialCheckboxLib.atMaterialCheckboxMod.MDCCheckbox
   
   @js.native
   class MDCCheckboxFoundation ()
-    extends atMaterialCheckboxLib.checkboxMod.MDCCheckboxFoundation
+    extends atMaterialCheckboxLib.atMaterialCheckboxMod.MDCCheckboxFoundation
   
   @js.native
   object MDCCheckbox extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialCheckboxLib.checkboxMod.MDCCheckbox = js.native
+    def attachTo(root: stdLib.Element): atMaterialCheckboxLib.atMaterialCheckboxMod.MDCCheckbox = js.native
   }
   
   @js.native

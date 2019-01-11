@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   var children: reactLib.reactMod.ReactNs.ReactNode
   var className: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[
-    atMaterialDashUiCoreLib.coreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error
+    atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error
   ] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[BadgeProps]] = js.undefined
   var invisible: js.UndefOr[scala.Boolean] = js.undefined

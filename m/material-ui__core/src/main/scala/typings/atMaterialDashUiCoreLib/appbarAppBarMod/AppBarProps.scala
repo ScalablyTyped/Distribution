@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 - Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Paper.PaperProps, @material-ui/core.@material-ui/core/AppBar/AppBar.AppBarClassKey, never>) */ trait AppBarProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[AppBarClassKey] {
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var color: js.UndefOr[atMaterialDashUiCoreLib.coreMod.PropTypesNs.Color] = js.undefined
+  var color: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color] = js.undefined
   var position: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.fixed | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.absolute | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.sticky | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.static | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.relative
   ] = js.undefined

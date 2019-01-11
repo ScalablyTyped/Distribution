@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/datasync/nfsLocation", "NfsLocation")
 @js.native
 class NfsLocation protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a NfsLocation resource with the given unique name, arguments, and options.
     *
@@ -21,24 +21,24 @@ class NfsLocation protected ()
   /**
     * Amazon Resource Name (ARN) of the DataSync Location.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Configuration block containing information for connecting to the NFS File System.
     */
-  val onPremConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AgentArns] = js.native
+  val onPremConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_AgentArns] = js.native
   /**
     * Specifies the IP address or DNS name of the NFS server. The DataSync Agent(s) use this to mount the NFS server.
     */
-  val serverHostname: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val serverHostname: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Subdirectory to perform actions as source or destination. Should be exported by the NFS server.
     */
-  val subdirectory: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val subdirectory: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
-  val uri: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val uri: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/datasync/nfsLocation", "NfsLocation")

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgComponentOutlet protected ()
   extends atAngularCommonLib.srcCommonMod.NgComponentOutlet {
-  def this(_viewContainerRef: atAngularCoreLib.coreMod.ViewContainerRef) = this()
+  def this(_viewContainerRef: atAngularCoreLib.atAngularCoreMod.ViewContainerRef) = this()
 }
 

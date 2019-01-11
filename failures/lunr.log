@@ -3,3 +3,4 @@
 [error] PhaseRunner.scala:86 Failure, [lunr => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/lunr/index.d.ts): Parse error at 540.25 ''}'' expected but '<' found] [id => lunr, phase => typescript] 
 [error] PhaseRunner.scala:86 Failure, [lunr => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/lunr/index.d.ts): Parse error at 540.25 ''}'' expected but '<' found] [id => lunr, phase => scala.js] 
 [error] PhaseRunner.scala:86 Failure, [lunr => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/lunr/index.d.ts): Parse error at 540.25 ''}'' expected but '<' found] [id => lunr, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [lunr => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/lunr/index.d.ts): Parse error at 540.25 ''}'' expected but '<' found] [id => lunr, phase => publish] 

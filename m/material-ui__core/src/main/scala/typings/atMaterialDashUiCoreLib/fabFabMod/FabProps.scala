@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 - Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, @material-ui/core.@material-ui/core/Fab/Fab.FabClassKey, 'component'>) */ trait FabProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[FabClassKey] {
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var color: js.UndefOr[atMaterialDashUiCoreLib.coreMod.PropTypesNs.Color] = js.undefined
+  var color: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[FabProps]] = js.undefined
   var disableFocusRipple: js.UndefOr[scala.Boolean] = js.undefined
   var disableRipple: js.UndefOr[scala.Boolean] = js.undefined

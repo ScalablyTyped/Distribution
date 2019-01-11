@@ -10,27 +10,27 @@ import scala.scalajs.js.annotation._
 object tabsNs extends js.Object {
   @js.native
   class MDCTab ()
-    extends atMaterialTabsLib.tabsMod.MDCTab
+    extends atMaterialTabsLib.atMaterialTabsMod.MDCTab
   
   @js.native
   class MDCTabBar ()
-    extends atMaterialTabsLib.tabsMod.MDCTabBar
+    extends atMaterialTabsLib.atMaterialTabsMod.MDCTabBar
   
   @js.native
   class MDCTabBarFoundation ()
-    extends atMaterialTabsLib.tabsMod.MDCTabBarFoundation
+    extends atMaterialTabsLib.atMaterialTabsMod.MDCTabBarFoundation
   
   @js.native
   class MDCTabBarScroller ()
-    extends atMaterialTabsLib.tabsMod.MDCTabBarScroller
+    extends atMaterialTabsLib.atMaterialTabsMod.MDCTabBarScroller
   
   @js.native
   class MDCTabBarScrollerFoundation ()
-    extends atMaterialTabsLib.tabsMod.MDCTabBarScrollerFoundation
+    extends atMaterialTabsLib.atMaterialTabsMod.MDCTabBarScrollerFoundation
   
   @js.native
   class MDCTabFoundation ()
-    extends atMaterialTabsLib.tabsMod.MDCTabFoundation
+    extends atMaterialTabsLib.atMaterialTabsMod.MDCTabFoundation
   
   @js.native
   object MDCTab extends js.Object {

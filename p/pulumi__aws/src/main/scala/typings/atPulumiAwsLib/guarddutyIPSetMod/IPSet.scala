@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/guardduty/iPSet", "IPSet")
 @js.native
 class IPSet protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a IPSet resource with the given unique name, arguments, and options.
     *
@@ -21,23 +21,23 @@ class IPSet protected ()
   /**
     * Specifies whether GuardDuty is to start using the uploaded IPSet.
     */
-  val activate: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
+  val activate: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
   /**
     * The detector ID of the GuardDuty.
     */
-  val detectorId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val detectorId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The format of the file that contains the IPSet. Valid values: `TXT` | `STIX` | `OTX_CSV` | `ALIEN_VAULT` | `PROOF_POINT` | `FIRE_EYE`
     */
-  val format: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val format: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The URI of the file that contains the IPSet.
     */
-  val location: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val location: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The friendly name to identify the IPSet.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/guardduty/iPSet", "IPSet")

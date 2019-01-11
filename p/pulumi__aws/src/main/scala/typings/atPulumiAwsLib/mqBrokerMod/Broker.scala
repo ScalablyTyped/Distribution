@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/mq/broker", "Broker")
 @js.native
 class Broker protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Broker resource with the given unique name, arguments, and options.
     *
@@ -22,39 +22,39 @@ class Broker protected ()
     * Specifies whether any broker modifications
     * are applied immediately, or during the next maintenance window. Default is `false`.
     */
-  val applyImmediately: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val applyImmediately: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The ARN of the broker.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Enables automatic upgrades to new minor versions for brokers, as Apache releases the versions.
     */
-  val autoMinorVersionUpgrade: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val autoMinorVersionUpgrade: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The name of the broker.
     */
-  val brokerName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val brokerName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Configuration of the broker. See below.
     */
-  val configuration: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_IdRevision] = js.native
+  val configuration: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_IdRevision] = js.native
   /**
     * The deployment mode of the broker. Supported: `SINGLE_INSTANCE` and `ACTIVE_STANDBY_MULTI_AZ`. Defaults to `SINGLE_INSTANCE`.
     */
-  val deploymentMode: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val deploymentMode: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The type of broker engine. Currently, Amazon MQ supports only `ActiveMQ`.
     */
-  val engineType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val engineType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The version of the broker engine. Currently, Amazon MQ supports only `5.15.0` or `5.15.6`.
     */
-  val engineVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val engineVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The broker's instance type. e.g. `mq.t2.micro` or `mq.m4.large`
     */
-  val hostInstanceType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val hostInstanceType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A list of information about allocated brokers (both active & standby).
     * * `instances.0.console_url` - The URL of the broker's [ActiveMQ Web Console](http://activemq.apache.org/web-console.html).
@@ -66,31 +66,31 @@ class Broker protected ()
     * * `mqtt+ssl://broker-id.mq.us-west-2.amazonaws.com:8883`
     * * `wss://broker-id.mq.us-west-2.amazonaws.com:61619`
     */
-  val instances: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ConsoleUrl]] = js.native
+  val instances: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ConsoleUrl]] = js.native
   /**
     * Logging configuration of the broker. See below.
     */
-  val logs: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Audit]] = js.native
+  val logs: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Audit]] = js.native
   /**
     * Maintenance window start time. See below.
     */
-  val maintenanceWindowStartTime: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DayOfWeek] = js.native
+  val maintenanceWindowStartTime: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_DayOfWeek] = js.native
   /**
     * Whether to enable connections from applications outside of the VPC that hosts the broker's subnets.
     */
-  val publiclyAccessible: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val publiclyAccessible: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The list of security group IDs assigned to the broker.
     */
-  val securityGroups: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val securityGroups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The list of subnet IDs in which to launch the broker. A `SINGLE_INSTANCE` deployment requires one subnet. An `ACTIVE_STANDBY_MULTI_AZ` deployment requires two subnets.
     */
-  val subnetIds: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val subnetIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The list of all ActiveMQ usernames for the specified broker. See below.
     */
-  val users: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ConsoleAccess]] = js.native
+  val users: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ConsoleAccess]] = js.native
 }
 
 @JSImport("@pulumi/aws/mq/broker", "Broker")

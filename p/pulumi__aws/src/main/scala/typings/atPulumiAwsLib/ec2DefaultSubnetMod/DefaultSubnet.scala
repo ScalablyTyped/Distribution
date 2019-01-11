@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/defaultSubnet", "DefaultSubnet")
 @js.native
 class DefaultSubnet protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a DefaultSubnet resource with the given unique name, arguments, and options.
     *
@@ -18,37 +18,37 @@ class DefaultSubnet protected ()
     */
   def this(name: java.lang.String, args: DefaultSubnetArgs) = this()
   def this(name: java.lang.String, args: DefaultSubnetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val assignIpv6AddressOnCreation: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
-  val availabilityZone: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val availabilityZoneId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val assignIpv6AddressOnCreation: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
+  val availabilityZone: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val availabilityZoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The CIDR block for the subnet.
     */
-  val cidrBlock: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val cidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The IPv6 CIDR block.
     */
-  val ipv6CidrBlock: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val ipv6CidrBlockAssociationId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val ipv6CidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ipv6CidrBlockAssociationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Specify true to indicate
     * that instances launched into the subnet should be assigned
     * a public IP address.
     */
-  val mapPublicIpOnLaunch: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
+  val mapPublicIpOnLaunch: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
   /**
     * The ID of the AWS account that owns the subnet.
     */
-  val ownerId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val ownerId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The VPC ID.
     */
-  val vpcId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/defaultSubnet", "DefaultSubnet")

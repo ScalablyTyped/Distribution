@@ -5,7 +5,7 @@
 [warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(rx.wamp) [id => rx.wamp, phase => typescript] 
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => rx.wamp, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(rx.wamp) / TsAugmentedModule(rx) / TsDeclInterface(ObservableStatic))] 
 [debug] PhaseRunner.scala:82 Success [id => rx.wamp, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:36 Processing rx.wamp [id => rx.wamp, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:40 Processing rx.wamp [id => rx.wamp, phase => scala.js] 
 [info ] InferMemberOverrides.scala:84 added override methods List(Name(publish)) [id => rx.wamp, phase => scala.js, this => Name(rxDotWampLib) / Name(rxDotWampMod) / Name(IPubSubSubject)] 
 [debug] PhaseRunner.scala:82 Success [id => rx.wamp, phase => scala.js] 
 [error] IObservableWampStatic.scala:13 type Observable is not a member of package typings.rxLib.rxMod,     rxLib.rxMod.Observable[TResult] [id => rx.wamp, phase => build] 
@@ -35,3 +35,4 @@
 [error] IPubSubSubject.scala:22 type Observable is not a member of package typings.rxLib.rxMod,   var observable: rxLib.rxMod.Observable[IWampEvent] = js.native [id => rx.wamp, phase => build] 
 [error] IPubSubSubject.scala:23 type Observer is not a member of package typings.rxLib.rxMod,   var observer: rxLib.rxMod.Observer[IWampEvent] = js.native [id => rx.wamp, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [rx.wamp => Compilation failed] [id => rx.wamp, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [rx.wamp => Compilation failed] [id => rx.wamp, phase => publish] 

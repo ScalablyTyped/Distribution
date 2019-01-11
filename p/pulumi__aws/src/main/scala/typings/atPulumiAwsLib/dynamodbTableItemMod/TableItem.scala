@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/dynamodb/tableItem", "TableItem")
 @js.native
 class TableItem protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a TableItem resource with the given unique name, arguments, and options.
     *
@@ -21,20 +21,20 @@ class TableItem protected ()
   /**
     * Hash key to use for lookups and identification of the item
     */
-  val hashKey: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val hashKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * JSON representation of a map of attribute name/value pairs, one for each attribute.
     * Only the primary key attributes are required; you can optionally provide other attribute name-value pairs for the item.
     */
-  val item: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val item: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Range key to use for lookups and identification of the item. Required if there is range key defined in the table.
     */
-  val rangeKey: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val rangeKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the table to contain the item.
     */
-  val tableName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val tableName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/dynamodb/tableItem", "TableItem")

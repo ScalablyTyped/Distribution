@@ -1,0 +1,12 @@
+package typings
+package atCkeditorCkeditor5DashUtilsLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object atCkeditorCkeditor5DashUtilsMod {
+  type ArrayRelation = atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibStrings.extension | atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibStrings.same | atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibStrings.prefix
+  type Change = atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibStrings.equal | atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibStrings.insert | atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibStrings.delete
+  type PriorityString = atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibStrings.highest | atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibStrings.high | atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibStrings.normal | atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibStrings.low | atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibStrings.lowest
+}

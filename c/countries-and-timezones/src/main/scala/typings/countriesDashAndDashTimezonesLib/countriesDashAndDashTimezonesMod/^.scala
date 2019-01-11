@@ -1,0 +1,16 @@
+package typings
+package countriesDashAndDashTimezonesLib.countriesDashAndDashTimezonesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("countries-and-timezones", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def getAllCountries(): js.Array[countriesDashAndDashTimezonesLib.countriesDashAndDashTimezonesMod.Country] = js.native
+  def getAllTimezones(): js.Array[countriesDashAndDashTimezonesLib.countriesDashAndDashTimezonesMod.Timezone] = js.native
+  def getCountriesForTimezone(timezoneId: java.lang.String): js.Array[countriesDashAndDashTimezonesLib.countriesDashAndDashTimezonesMod.Country] = js.native
+  def getTimezonesForCountry(countryId: java.lang.String): js.Array[countriesDashAndDashTimezonesLib.countriesDashAndDashTimezonesMod.Timezone] = js.native
+}
+

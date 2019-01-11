@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ssm/patchGroup", "PatchGroup")
 @js.native
 class PatchGroup protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a PatchGroup resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class PatchGroup protected ()
   /**
     * The ID of the patch baseline to register the patch group with.
     */
-  val baselineId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val baselineId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the patch group that should be registered with the patch baseline.
     */
-  val patchGroup: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val patchGroup: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ssm/patchGroup", "PatchGroup")

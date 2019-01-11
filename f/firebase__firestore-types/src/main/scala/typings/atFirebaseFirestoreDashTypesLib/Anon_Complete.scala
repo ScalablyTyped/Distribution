@@ -9,13 +9,13 @@ trait Anon_Complete extends js.Object {
   var complete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var error: js.UndefOr[
     js.Function1[
-      /* error */ atFirebaseFirestoreDashTypesLib.firestoreDashTypesMod.FirestoreError, 
+      /* error */ atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirestoreError, 
       scala.Unit
     ]
   ] = js.undefined
   var next: js.UndefOr[
     js.Function1[
-      /* snapshot */ atFirebaseFirestoreDashTypesLib.firestoreDashTypesMod.DocumentSnapshot, 
+      /* snapshot */ atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.DocumentSnapshot, 
       scala.Unit
     ]
   ] = js.undefined

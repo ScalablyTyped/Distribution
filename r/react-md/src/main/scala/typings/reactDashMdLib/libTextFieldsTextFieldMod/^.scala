@@ -1,0 +1,13 @@
+package typings
+package reactDashMdLib.libTextFieldsTextFieldMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("react-md/lib/TextFields/TextField", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val default: reactDashMdLib.libTextFieldsTextFieldMod.TextFieldComponent = js.native
+}
+

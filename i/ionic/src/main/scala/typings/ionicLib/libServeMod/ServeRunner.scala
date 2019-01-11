@@ -31,7 +31,7 @@ abstract class ServeRunner[T /* <: ionicLib.definitionsMod.ServeOptions */] ()
   def selectExternalIP(options: T): js.Promise[
     js.Tuple2[
       java.lang.String, 
-      js.Array[atIonicUtilsDashNetworkLib.utilsDashNetworkMod.NetworkInterface]
+      js.Array[atIonicUtilsDashNetworkLib.atIonicUtilsDashNetworkMod.NetworkInterface]
     ]
   ] = js.native
   def serveProject(options: T): js.Promise[ionicLib.definitionsMod.ServeDetails] = js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/s3/inventory", "Inventory")
 @js.native
 class Inventory protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Inventory resource with the given unique name, arguments, and options.
     *
@@ -21,35 +21,35 @@ class Inventory protected ()
   /**
     * The S3 bucket configuration where inventory results are published (documented below).
     */
-  val bucket: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val bucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Destination bucket where inventory list files are written (documented below).
     */
-  val destination: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BucketAnonAccountId] = js.native
+  val destination: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_BucketAnonAccountId] = js.native
   /**
     * Specifies whether the inventory is enabled or disabled.
     */
-  val enabled: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Object filtering that accepts a prefix (documented below).
     */
-  val filter: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_PrefixString]] = js.native
+  val filter: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_PrefixString]] = js.native
   /**
     * Object filtering that accepts a prefix (documented below). Can be `All` or `Current`.
     */
-  val includedObjectVersions: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val includedObjectVersions: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Unique identifier of the inventory configuration for the bucket.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Contains the optional fields that are included in the inventory results.
     */
-  val optionalFields: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val optionalFields: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * Contains the frequency for generating inventory results (documented below).
     */
-  val schedule: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_Frequency] = js.native
+  val schedule: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Frequency] = js.native
 }
 
 @JSImport("@pulumi/aws/s3/inventory", "Inventory")

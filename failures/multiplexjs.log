@@ -5,10 +5,11 @@
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclInterface(String))] 
 [info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Args) [id => multiplexjs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclNamespace(multiplex) / TsDeclInterface(Enumerable) / TsMemberFunction(ofType) / TsFunSig() / TsFunParam() / TsTypeObject())] 
 [debug] PhaseRunner.scala:82 Success [id => multiplexjs, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:36 Processing multiplexjs [id => multiplexjs, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:40 Processing multiplexjs [id => multiplexjs, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => multiplexjs, phase => scala.js] 
 [error] Lookup.scala:17 name clash between defined and inherited member:
 def contains(value: typings.multiplexjsLib.multiplexNs.Grouping[TKey,TElement]): Boolean in trait Enumerable and
 def contains(key: TKey): Boolean at line 17
 have same type after erasure: (value: Object)Boolean,   def contains(key: TKey): scala.Boolean = js.native [id => multiplexjs, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [multiplexjs => Compilation failed] [id => multiplexjs, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [multiplexjs => Compilation failed] [id => multiplexjs, phase => publish] 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/provider", "Provider")
 @js.native
 class Provider protected ()
-  extends atPulumiPulumiLib.pulumiMod.ProviderResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.ProviderResource {
   /**
     * Create a Provider resource with the given unique name, arguments, and options.
     *

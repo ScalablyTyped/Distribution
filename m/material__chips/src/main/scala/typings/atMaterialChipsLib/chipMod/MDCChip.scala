@@ -13,7 +13,7 @@ class MDCChip ()
       atMaterialChipsLib.chipFoundationMod.default
     ] {
   val foundation: atMaterialChipsLib.chipFoundationMod.default = js.native
-  val ripple: atMaterialRippleLib.rippleMod.MDCRipple = js.native
+  val ripple: atMaterialRippleLib.atMaterialRippleMod.MDCRipple = js.native
   /**
     * Returns true if the chip is selected.
     */

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/wafregional/webAclAssociation", "WebAclAssociation")
 @js.native
 class WebAclAssociation protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a WebAclAssociation resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class WebAclAssociation protected ()
   /**
     * Application Load Balancer ARN to associate with.
     */
-  val resourceArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val resourceArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the WAF Regional WebACL to create an association.
     */
-  val webAclId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val webAclId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/wafregional/webAclAssociation", "WebAclAssociation")

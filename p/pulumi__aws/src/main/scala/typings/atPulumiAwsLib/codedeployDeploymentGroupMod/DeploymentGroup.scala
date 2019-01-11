@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/codedeploy/deploymentGroup", "DeploymentGroup")
 @js.native
 class DeploymentGroup protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a DeploymentGroup resource with the given unique name, arguments, and options.
     *
@@ -21,63 +21,63 @@ class DeploymentGroup protected ()
   /**
     * Configuration block of alarms associated with the deployment group (documented below).
     */
-  val alarmConfiguration: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Alarms]] = js.native
+  val alarmConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Alarms]] = js.native
   /**
     * The name of the application.
     */
-  val appName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val appName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Configuration block of the automatic rollback configuration associated with the deployment group (documented below).
     */
-  val autoRollbackConfiguration: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Enabled]] = js.native
+  val autoRollbackConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Enabled]] = js.native
   /**
     * Autoscaling groups associated with the deployment group.
     */
-  val autoscalingGroups: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val autoscalingGroups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * Configuration block of the blue/green deployment options for a deployment group (documented below).
     */
-  val blueGreenDeploymentConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DeploymentReadyOption] = js.native
+  val blueGreenDeploymentConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_DeploymentReadyOption] = js.native
   /**
     * The name of the group's deployment config. The default is "CodeDeployDefault.OneAtATime".
     */
-  val deploymentConfigName: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val deploymentConfigName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the deployment group.
     */
-  val deploymentGroupName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val deploymentGroupName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Configuration block of the type of deployment, either in-place or blue/green, you want to run and whether to route deployment traffic behind a load balancer (documented below).
     */
-  val deploymentStyle: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DeploymentOption] = js.native
+  val deploymentStyle: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_DeploymentOption] = js.native
   /**
     * Tag filters associated with the deployment group. See the AWS docs for details.
     */
-  val ec2TagFilters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_KeyTypeValueString]]] = js.native
+  val ec2TagFilters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_KeyTypeValueString]]] = js.native
   /**
     * Configuration block(s) of Tag filters associated with the deployment group, which are also referred to as tag groups (documented below). See the AWS docs for details.
     */
-  val ec2TagSets: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Ec2TagFilters]]] = js.native
+  val ec2TagSets: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Ec2TagFilters]]] = js.native
   /**
     * Configuration block(s) of the ECS services for a deployment group (documented below).
     */
-  val ecsService: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ClusterName]] = js.native
+  val ecsService: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ClusterName]] = js.native
   /**
     * Single configuration block of the load balancer to use in a blue/green deployment (documented below).
     */
-  val loadBalancerInfo: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_ElbInfos] = js.native
+  val loadBalancerInfo: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_ElbInfos] = js.native
   /**
     * On premise tag filters associated with the group. See the AWS docs for details.
     */
-  val onPremisesInstanceTagFilters: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_KeyTypeValueString]]] = js.native
+  val onPremisesInstanceTagFilters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_KeyTypeValueString]]] = js.native
   /**
     * The service role ARN that allows deployments.
     */
-  val serviceRoleArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val serviceRoleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Configuration block(s) of the triggers for the deployment group (documented below).
     */
-  val triggerConfigurations: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_TriggerEvents]]] = js.native
+  val triggerConfigurations: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_TriggerEvents]]] = js.native
 }
 
 @JSImport("@pulumi/aws/codedeploy/deploymentGroup", "DeploymentGroup")

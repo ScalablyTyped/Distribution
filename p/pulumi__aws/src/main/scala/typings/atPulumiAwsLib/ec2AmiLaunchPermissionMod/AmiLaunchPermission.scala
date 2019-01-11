@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/amiLaunchPermission", "AmiLaunchPermission")
 @js.native
 class AmiLaunchPermission protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a AmiLaunchPermission resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class AmiLaunchPermission protected ()
   /**
     * An AWS Account ID to add launch permissions.
     */
-  val accountId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val accountId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A region-unique name for the AMI.
     */
-  val imageId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val imageId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/amiLaunchPermission", "AmiLaunchPermission")

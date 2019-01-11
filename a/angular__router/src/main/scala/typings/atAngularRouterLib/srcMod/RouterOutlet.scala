@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class RouterOutlet protected ()
   extends atAngularRouterLib.srcDirectivesRouterUnderscoreOutletMod.RouterOutlet {
-  def this(parentContexts: atAngularRouterLib.srcRouterUnderscoreOutletUnderscoreContextMod.ChildrenOutletContexts, location: atAngularCoreLib.coreMod.ViewContainerRef, resolver: atAngularCoreLib.coreMod.ComponentFactoryResolver, name: java.lang.String, changeDetector: atAngularCoreLib.coreMod.ChangeDetectorRef) = this()
+  def this(parentContexts: atAngularRouterLib.srcRouterUnderscoreOutletUnderscoreContextMod.ChildrenOutletContexts, location: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, resolver: atAngularCoreLib.atAngularCoreMod.ComponentFactoryResolver, name: java.lang.String, changeDetector: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef) = this()
 }
 

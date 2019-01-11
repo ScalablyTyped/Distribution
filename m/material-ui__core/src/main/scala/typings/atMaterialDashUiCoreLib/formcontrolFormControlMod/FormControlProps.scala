@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var error: js.UndefOr[scala.Boolean] = js.undefined
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
-  var margin: js.UndefOr[atMaterialDashUiCoreLib.coreMod.PropTypesNs.Margin] = js.undefined
+  var margin: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Margin] = js.undefined
   var onBlur: js.UndefOr[reactLib.reactMod.ReactNs.EventHandler[_]] = js.undefined
   var onFocus: js.UndefOr[reactLib.reactMod.ReactNs.EventHandler[_]] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined

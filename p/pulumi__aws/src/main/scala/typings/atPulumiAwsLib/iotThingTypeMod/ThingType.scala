@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iot/thingType", "ThingType")
 @js.native
 class ThingType protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ThingType resource with the given unique name, arguments, and options.
     *
@@ -22,16 +22,16 @@ class ThingType protected ()
   /**
     * The ARN of the created AWS IoT Thing Type.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Whether the thing type is deprecated. If true, no new things could be associated with this type.
     */
-  val deprecated: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val deprecated: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The name of the thing type.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val properties: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Description]] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val properties: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Description]] = js.native
 }
 
 @JSImport("@pulumi/aws/iot/thingType", "ThingType")

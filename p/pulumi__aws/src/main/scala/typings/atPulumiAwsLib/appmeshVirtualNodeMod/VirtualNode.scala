@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/appmesh/virtualNode", "VirtualNode")
 @js.native
 class VirtualNode protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a VirtualNode resource with the given unique name, arguments, and options.
     *
@@ -21,27 +21,27 @@ class VirtualNode protected ()
   /**
     * The ARN of the virtual node.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The creation date of the virtual node.
     */
-  val createdDate: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val createdDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The last update date of the virtual node.
     */
-  val lastUpdatedDate: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val lastUpdatedDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the service mesh in which to create the virtual node.
     */
-  val meshName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val meshName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name to use for the virtual node.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The virtual node specification to apply.
     */
-  val spec: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_Backends] = js.native
+  val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Backends] = js.native
 }
 
 @JSImport("@pulumi/aws/appmesh/virtualNode", "VirtualNode")

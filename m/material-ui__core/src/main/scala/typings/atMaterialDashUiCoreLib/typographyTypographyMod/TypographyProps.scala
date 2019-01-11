@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in std.Exclude<keyof react.react.HTMLAttributes<react.HTMLElement>, 'classes' | never> ]: react.react.HTMLAttributes<react.HTMLElement>[P]}
 - Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLElement>, @material-ui/core.@material-ui/core/Typography/Typography.TypographyClassKey, never>) */ trait TypographyProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TypographyClassKey] {
-  var align: js.UndefOr[atMaterialDashUiCoreLib.coreMod.PropTypesNs.Alignment] = js.undefined
+  var align: js.UndefOr[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Alignment] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[
-    atMaterialDashUiCoreLib.coreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.textPrimary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.textSecondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error
+    atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.textPrimary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.textSecondary | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error
   ] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[TypographyProps]] = js.undefined
   var gutterBottom: js.UndefOr[scala.Boolean] = js.undefined

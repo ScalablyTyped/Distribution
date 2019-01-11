@@ -1,0 +1,122 @@
+package typings
+package domoLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobalScope
+@js.native
+object ^ extends js.Object {
+  var A: domoLib.Domo = js.native
+  var ABBR: domoLib.Domo = js.native
+  var ACRONYM: domoLib.Domo = js.native
+  var ADDRESS: domoLib.Domo = js.native
+  var AREA: domoLib.Domo = js.native
+  var ARTICLE: domoLib.Domo = js.native
+  var ASIDE: domoLib.Domo = js.native
+  var AUDIO: domoLib.Domo = js.native
+  var B: domoLib.Domo = js.native
+  var BDI: domoLib.Domo = js.native
+  var BDO: domoLib.Domo = js.native
+  var BIG: domoLib.Domo = js.native
+  var BLOCKQUOTE: domoLib.Domo = js.native
+  var BODY: domoLib.Domo = js.native
+  var BR: domoLib.Domo = js.native
+  var BUTTON: domoLib.Domo = js.native
+  var CANVAS: domoLib.Domo = js.native
+  var CAPTION: domoLib.Domo = js.native
+  var CITE: domoLib.Domo = js.native
+  var CODE: domoLib.Domo = js.native
+  var COL: domoLib.Domo = js.native
+  var COLGROUP: domoLib.Domo = js.native
+  var COMMAND: domoLib.Domo = js.native
+  var DATALIST: domoLib.Domo = js.native
+  var DD: domoLib.Domo = js.native
+  var DEL: domoLib.Domo = js.native
+  var DETAILS: domoLib.Domo = js.native
+  var DFN: domoLib.Domo = js.native
+  var DIV: domoLib.Domo = js.native
+  var DL: domoLib.Domo = js.native
+  var DT: domoLib.Domo = js.native
+  var EM: domoLib.Domo = js.native
+  var EMBED: domoLib.Domo = js.native
+  var FIELDSET: domoLib.Domo = js.native
+  var FIGCAPTION: domoLib.Domo = js.native
+  var FIGURE: domoLib.Domo = js.native
+  var FOOTER: domoLib.Domo = js.native
+  var FORM: domoLib.Domo = js.native
+  var FRAME: domoLib.Domo = js.native
+  var FRAMESET: domoLib.Domo = js.native
+  var H1: domoLib.Domo = js.native
+  var H2: domoLib.Domo = js.native
+  var H3: domoLib.Domo = js.native
+  var H4: domoLib.Domo = js.native
+  var H5: domoLib.Domo = js.native
+  var H6: domoLib.Domo = js.native
+  var HEAD: domoLib.Domo = js.native
+  var HEADER: domoLib.Domo = js.native
+  var HGROUP: domoLib.Domo = js.native
+  var HR: domoLib.Domo = js.native
+  var HTML: domoLib.Domo = js.native
+  var I: domoLib.Domo = js.native
+  var IFRAME: domoLib.Domo = js.native
+  var IMG: domoLib.Domo = js.native
+  var INPUT: domoLib.Domo = js.native
+  var INS: domoLib.Domo = js.native
+  var KBD: domoLib.Domo = js.native
+  var KEYGEN: domoLib.Domo = js.native
+  var LABEL: domoLib.Domo = js.native
+  var LEGEND: domoLib.Domo = js.native
+  var LI: domoLib.Domo = js.native
+  var LINK: domoLib.Domo = js.native
+  var MAP: domoLib.Domo = js.native
+  var MARK: domoLib.Domo = js.native
+  var META: domoLib.Domo = js.native
+  var METER: domoLib.Domo = js.native
+  var NAV: domoLib.Domo = js.native
+  var NOSCRIPT: domoLib.Domo = js.native
+  var OBJECT: domoLib.Domo = js.native
+  var OL: domoLib.Domo = js.native
+  var OPTGROUP: domoLib.Domo = js.native
+  var OPTION: domoLib.Domo = js.native
+  var OUTPUT: domoLib.Domo = js.native
+  var P: domoLib.Domo = js.native
+  var PARAM: domoLib.Domo = js.native
+  var PRE: domoLib.Domo = js.native
+  var PROGRESS: domoLib.Domo = js.native
+  var Q: domoLib.Domo = js.native
+  var RP: domoLib.Domo = js.native
+  var RT: domoLib.Domo = js.native
+  var RUBY: domoLib.Domo = js.native
+  var SAMP: domoLib.Domo = js.native
+  var SCRIPT: domoLib.Domo = js.native
+  var SECTION: domoLib.Domo = js.native
+  var SELECT: domoLib.Domo = js.native
+  var SMALL: domoLib.Domo = js.native
+  var SOURCE: domoLib.Domo = js.native
+  var SPAN: domoLib.Domo = js.native
+  var SPLIT: domoLib.Domo = js.native
+  var STRONG: domoLib.Domo = js.native
+  var STYLE: domoLib.Domo = js.native
+  var SUB: domoLib.Domo = js.native
+  var SUMMARY: domoLib.Domo = js.native
+  var SUP: domoLib.Domo = js.native
+  var TABLE: domoLib.Domo = js.native
+  var TBODY: domoLib.Domo = js.native
+  var TD: domoLib.Domo = js.native
+  var TEXTAREA: domoLib.Domo = js.native
+  var TFOOT: domoLib.Domo = js.native
+  var TH: domoLib.Domo = js.native
+  var THEAD: domoLib.Domo = js.native
+  var TIME: domoLib.Domo = js.native
+  var TITLE: domoLib.Domo = js.native
+  var TR: domoLib.Domo = js.native
+  var TRACK: domoLib.Domo = js.native
+  var TT: domoLib.Domo = js.native
+  var UL: domoLib.Domo = js.native
+  var VAR: domoLib.Domo = js.native
+  var VIDEO: domoLib.Domo = js.native
+  var WBR: domoLib.Domo = js.native
+}
+

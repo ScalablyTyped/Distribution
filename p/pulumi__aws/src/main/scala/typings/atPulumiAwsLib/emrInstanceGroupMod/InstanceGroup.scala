@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/emr/instanceGroup", "InstanceGroup")
 @js.native
 class InstanceGroup protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a InstanceGroup resource with the given unique name, arguments, and options.
     *
@@ -21,29 +21,29 @@ class InstanceGroup protected ()
   /**
     * ID of the EMR Cluster to attach to. Changing this forces a new resource to be created.
     */
-  val clusterId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val clusterId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * One or more `ebs_config` blocks as defined below. Changing this forces a new resource to be created.
     */
-  val ebsConfigs: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Iops]]] = js.native
+  val ebsConfigs: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Iops]]] = js.native
   /**
     * Indicates whether an Amazon EBS volume is EBS-optimized. Changing this forces a new resource to be created.
     */
-  val ebsOptimized: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val ebsOptimized: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Target number of instances for the instance group. Defaults to 0.
     */
-  val instanceCount: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val instanceCount: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The EC2 instance type for all instances in the instance group. Changing this forces a new resource to be created.
     */
-  val instanceType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val instanceType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Human friendly name given to the instance group. Changing this forces a new resource to be created.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val runningInstanceCount: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
-  val status: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val runningInstanceCount: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/emr/instanceGroup", "InstanceGroup")

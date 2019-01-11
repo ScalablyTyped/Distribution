@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancerCookieStickinessPolicy", "LoadBalancerCookieStickinessPolicy")
 @js.native
 class LoadBalancerCookieStickinessPolicy protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a LoadBalancerCookieStickinessPolicy resource with the given unique name, arguments, and options.
     *
@@ -22,22 +22,22 @@ class LoadBalancerCookieStickinessPolicy protected ()
     * The time period after which
     * the session cookie should be considered stale, expressed in seconds.
     */
-  val cookieExpirationPeriod: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val cookieExpirationPeriod: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The load balancer port to which the policy
     * should be applied. This must be an active listener on the load
     * balancer.
     */
-  val lbPort: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val lbPort: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * The load balancer to which the policy
     * should be attached.
     */
-  val loadBalancer: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val loadBalancer: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the stickiness policy.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancerCookieStickinessPolicy", "LoadBalancerCookieStickinessPolicy")

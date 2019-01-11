@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/mediastore/containerPolicy", "ContainerPolicy")
 @js.native
 class ContainerPolicy protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ContainerPolicy resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class ContainerPolicy protected ()
   /**
     * The name of the container.
     */
-  val containerName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val containerName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The contents of the policy. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
     */
-  val policy: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/mediastore/containerPolicy", "ContainerPolicy")

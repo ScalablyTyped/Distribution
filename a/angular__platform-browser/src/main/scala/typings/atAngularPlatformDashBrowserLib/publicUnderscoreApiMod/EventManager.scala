@@ -14,6 +14,6 @@ class EventManager protected ()
     */
   def this(plugins: js.Array[
       atAngularPlatformDashBrowserLib.srcDomEventsEventUnderscoreManagerMod.EventManagerPlugin
-    ], _zone: atAngularCoreLib.coreMod.NgZone) = this()
+    ], _zone: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
 }
 

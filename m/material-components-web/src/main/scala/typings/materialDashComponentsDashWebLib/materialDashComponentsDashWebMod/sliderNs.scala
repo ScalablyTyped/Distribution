@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object sliderNs extends js.Object {
   @js.native
   class MDCSlider ()
-    extends atMaterialSliderLib.sliderMod.MDCSlider
+    extends atMaterialSliderLib.atMaterialSliderMod.MDCSlider
   
   @js.native
   class MDCSliderFoundation ()
-    extends atMaterialSliderLib.sliderMod.MDCSliderFoundation
+    extends atMaterialSliderLib.atMaterialSliderMod.MDCSliderFoundation
   
   @js.native
   object MDCSlider extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialSliderLib.sliderMod.MDCSlider = js.native
+    def attachTo(root: stdLib.Element): atMaterialSliderLib.atMaterialSliderMod.MDCSlider = js.native
   }
   
   @js.native

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cfg/deliveryChannel", "DeliveryChannel")
 @js.native
 class DeliveryChannel protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a DeliveryChannel resource with the given unique name, arguments, and options.
     *
@@ -21,23 +21,23 @@ class DeliveryChannel protected ()
   /**
     * The name of the delivery channel. Defaults to `default`. Changing it recreates the resource.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the S3 bucket used to store the configuration history.
     */
-  val s3BucketName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val s3BucketName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The prefix for the specified S3 bucket.
     */
-  val s3KeyPrefix: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val s3KeyPrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Options for how AWS Config delivers configuration snapshots. See below
     */
-  val snapshotDeliveryProperties: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeliveryFrequency]] = js.native
+  val snapshotDeliveryProperties: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_DeliveryFrequency]] = js.native
   /**
     * The ARN of the SNS topic that AWS Config delivers notifications to.
     */
-  val snsTopicArn: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val snsTopicArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/cfg/deliveryChannel", "DeliveryChannel")

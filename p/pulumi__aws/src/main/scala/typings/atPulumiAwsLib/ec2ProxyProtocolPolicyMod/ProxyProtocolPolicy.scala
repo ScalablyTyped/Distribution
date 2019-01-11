@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/proxyProtocolPolicy", "ProxyProtocolPolicy")
 @js.native
 class ProxyProtocolPolicy protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ProxyProtocolPolicy resource with the given unique name, arguments, and options.
     *
@@ -22,12 +22,12 @@ class ProxyProtocolPolicy protected ()
     * List of instance ports to which the policy
     * should be applied. This can be specified if the protocol is SSL or TCP.
     */
-  val instancePorts: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val instancePorts: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The load balancer to which the policy
     * should be attached.
     */
-  val loadBalancer: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val loadBalancer: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/proxyProtocolPolicy", "ProxyProtocolPolicy")

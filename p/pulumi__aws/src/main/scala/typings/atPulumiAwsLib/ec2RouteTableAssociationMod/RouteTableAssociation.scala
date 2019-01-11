@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/routeTableAssociation", "RouteTableAssociation")
 @js.native
 class RouteTableAssociation protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a RouteTableAssociation resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class RouteTableAssociation protected ()
   /**
     * The ID of the routing table to associate with.
     */
-  val routeTableId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val routeTableId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The subnet ID to create an association.
     */
-  val subnetId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/routeTableAssociation", "RouteTableAssociation")

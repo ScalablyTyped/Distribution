@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cfg/aggregateAuthorization", "AggregateAuthorization")
 @js.native
 class AggregateAuthorization protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a AggregateAuthorization resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class AggregateAuthorization protected ()
   /**
     * Account ID
     */
-  val accountId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val accountId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ARN of the authorization
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Region
     */
-  val region: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val region: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cfg/aggregateAuthorization", "AggregateAuthorization")

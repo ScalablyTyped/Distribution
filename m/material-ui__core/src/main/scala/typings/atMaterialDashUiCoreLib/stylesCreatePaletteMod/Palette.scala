@@ -15,12 +15,12 @@ trait Palette extends js.Object {
   var contrastThreshold: scala.Double = js.native
   var divider: TypeDivider = js.native
   var error: PaletteColor = js.native
-  var grey: atMaterialDashUiCoreLib.coreMod.Color = js.native
+  var grey: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.Color = js.native
   var primary: PaletteColor = js.native
   var secondary: PaletteColor = js.native
   var text: TypeText = js.native
   var tonalOffset: scala.Double = js.native
-  var `type`: atMaterialDashUiCoreLib.coreMod.PaletteType = js.native
+  var `type`: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PaletteType = js.native
   def augmentColor(color: ColorPartial): scala.Unit = js.native
   def augmentColor(color: ColorPartial, mainShade: java.lang.String): scala.Unit = js.native
   def augmentColor(color: ColorPartial, mainShade: java.lang.String, lightShade: java.lang.String): scala.Unit = js.native

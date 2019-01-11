@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/dms/replicationSubnetGroup", "ReplicationSubnetGroup")
 @js.native
 class ReplicationSubnetGroup protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ReplicationSubnetGroup resource with the given unique name, arguments, and options.
     *
@@ -18,27 +18,27 @@ class ReplicationSubnetGroup protected ()
     */
   def this(name: java.lang.String, args: ReplicationSubnetGroupArgs) = this()
   def this(name: java.lang.String, args: ReplicationSubnetGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val replicationSubnetGroupArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val replicationSubnetGroupArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The description for the subnet group.
     */
-  val replicationSubnetGroupDescription: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val replicationSubnetGroupDescription: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name for the replication subnet group. This value is stored as a lowercase string.
     */
-  val replicationSubnetGroupId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val replicationSubnetGroupId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A list of the EC2 subnet IDs for the subnet group.
     */
-  val subnetIds: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val subnetIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The ID of the VPC the subnet group is in.
     */
-  val vpcId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/dms/replicationSubnetGroup", "ReplicationSubnetGroup")

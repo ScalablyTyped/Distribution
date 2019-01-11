@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/appmesh/mesh", "Mesh")
 @js.native
 class Mesh protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Mesh resource with the given unique name, arguments, and options.
     *
@@ -22,19 +22,19 @@ class Mesh protected ()
   /**
     * The ARN of the service mesh.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The creation date of the service mesh.
     */
-  val createdDate: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val createdDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The last update date of the service mesh.
     */
-  val lastUpdatedDate: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val lastUpdatedDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name to use for the service mesh.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/appmesh/mesh", "Mesh")

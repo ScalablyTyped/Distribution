@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object selectNs extends js.Object {
   @js.native
   class MDCSelect ()
-    extends atMaterialSelectLib.selectMod.MDCSelect
+    extends atMaterialSelectLib.atMaterialSelectMod.MDCSelect
   
   @js.native
   class MDCSelectFoundation ()
-    extends atMaterialSelectLib.selectMod.MDCSelectFoundation
+    extends atMaterialSelectLib.atMaterialSelectMod.MDCSelectFoundation
   
   @js.native
   object MDCSelect extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialSelectLib.selectMod.MDCSelect = js.native
+    def attachTo(root: stdLib.Element): atMaterialSelectLib.atMaterialSelectMod.MDCSelect = js.native
   }
   
   @js.native

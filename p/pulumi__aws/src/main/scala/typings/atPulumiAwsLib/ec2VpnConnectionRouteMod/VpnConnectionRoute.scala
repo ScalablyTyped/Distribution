@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/vpnConnectionRoute", "VpnConnectionRoute")
 @js.native
 class VpnConnectionRoute protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a VpnConnectionRoute resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class VpnConnectionRoute protected ()
   /**
     * The CIDR block associated with the local subnet of the customer network.
     */
-  val destinationCidrBlock: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val destinationCidrBlock: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the VPN connection.
     */
-  val vpnConnectionId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpnConnectionId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/vpnConnectionRoute", "VpnConnectionRoute")

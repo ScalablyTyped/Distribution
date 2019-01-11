@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RouterPreloader protected ()
   extends atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnDestroy {
-  def this(router: atAngularRouterLib.srcRouterMod.Router, moduleLoader: atAngularCoreLib.coreMod.NgModuleFactoryLoader, compiler: atAngularCoreLib.coreMod.Compiler, injector: atAngularCoreLib.coreMod.Injector, preloadingStrategy: PreloadingStrategy) = this()
+  def this(router: atAngularRouterLib.srcRouterMod.Router, moduleLoader: atAngularCoreLib.atAngularCoreMod.NgModuleFactoryLoader, compiler: atAngularCoreLib.atAngularCoreMod.Compiler, injector: atAngularCoreLib.atAngularCoreMod.Injector, preloadingStrategy: PreloadingStrategy) = this()
   var injector: js.Any = js.native
   var loader: js.Any = js.native
   var preloadConfig: js.Any = js.native

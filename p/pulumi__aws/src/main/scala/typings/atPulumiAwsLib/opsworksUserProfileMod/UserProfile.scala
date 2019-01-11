@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/opsworks/userProfile", "UserProfile")
 @js.native
 class UserProfile protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a UserProfile resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class UserProfile protected ()
   /**
     * Whether users can specify their own SSH public key through the My Settings page
     */
-  val allowSelfManagement: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val allowSelfManagement: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The users public key
     */
-  val sshPublicKey: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val sshPublicKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ssh username, with witch this user wants to log in
     */
-  val sshUsername: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val sshUsername: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The user's IAM ARN
     */
-  val userArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val userArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/opsworks/userProfile", "UserProfile")

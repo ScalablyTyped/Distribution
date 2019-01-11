@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/applicationloadbalancing/targetGroupAttachment", "TargetGroupAttachment")
 @js.native
 class TargetGroupAttachment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a TargetGroupAttachment resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class TargetGroupAttachment protected ()
   /**
     * The Availability Zone where the IP address of the target is to be registered.
     */
-  val availabilityZone: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val availabilityZone: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The port on which targets receive traffic.
     */
-  val port: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val port: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * The ARN of the target group with which to register targets
     */
-  val targetGroupArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val targetGroupArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the target. This is the Instance ID for an instance, or the container ID for an ECS container. If the target type is ip, specify an IP address. If the target type is lambda, specify the arn of lambda.
     */
-  val targetId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val targetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/applicationloadbalancing/targetGroupAttachment", "TargetGroupAttachment")

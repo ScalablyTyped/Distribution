@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 object floatingLabelNs extends js.Object {
   @js.native
   class MDCFloatingLabel ()
-    extends atMaterialFloatingDashLabelLib.floatingDashLabelMod.MDCFloatingLabel
+    extends atMaterialFloatingDashLabelLib.atMaterialFloatingDashLabelMod.MDCFloatingLabel
   
   @js.native
   class MDCFloatingLabelFoundation ()
-    extends atMaterialFloatingDashLabelLib.floatingDashLabelMod.MDCFloatingLabelFoundation
+    extends atMaterialFloatingDashLabelLib.atMaterialFloatingDashLabelMod.MDCFloatingLabelFoundation
   
   @js.native
   object MDCFloatingLabel extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialFloatingDashLabelLib.floatingDashLabelMod.MDCFloatingLabel = js.native
+    def attachTo(root: stdLib.Element): atMaterialFloatingDashLabelLib.atMaterialFloatingDashLabelMod.MDCFloatingLabel = js.native
   }
   
   @js.native

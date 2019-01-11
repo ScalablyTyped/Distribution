@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/inspector/assessmentTemplate", "AssessmentTemplate")
 @js.native
 class AssessmentTemplate protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a AssessmentTemplate resource with the given unique name, arguments, and options.
     *
@@ -21,23 +21,23 @@ class AssessmentTemplate protected ()
   /**
     * The template assessment ARN.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The duration of the inspector run.
     */
-  val duration: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val duration: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * The name of the assessment template.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The rules to be used during the run.
     */
-  val rulesPackageArns: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val rulesPackageArns: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The assessment target ARN to attach the template to.
     */
-  val targetArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val targetArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/inspector/assessmentTemplate", "AssessmentTemplate")

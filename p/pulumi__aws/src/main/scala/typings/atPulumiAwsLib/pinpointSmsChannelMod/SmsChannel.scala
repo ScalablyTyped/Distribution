@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/pinpoint/smsChannel", "SmsChannel")
 @js.native
 class SmsChannel protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SmsChannel resource with the given unique name, arguments, and options.
     *
@@ -18,12 +18,12 @@ class SmsChannel protected ()
     */
   def this(name: java.lang.String, args: SmsChannelArgs) = this()
   def this(name: java.lang.String, args: SmsChannelArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-  val applicationId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val enabled: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
-  val promotionalMessagesPerSecond: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
-  val senderId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val shortCode: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val transactionalMessagesPerSecond: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val applicationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val promotionalMessagesPerSecond: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val senderId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val shortCode: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val transactionalMessagesPerSecond: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
 }
 
 @JSImport("@pulumi/aws/pinpoint/smsChannel", "SmsChannel")

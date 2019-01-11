@@ -16,7 +16,7 @@ object apiextensionsNs extends js.Object {
     */
   @js.native
   class CustomResource protected ()
-    extends atPulumiPulumiLib.pulumiMod.CustomResource {
+    extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
     /**
       * Create a CustomResource resource with the given unique name, arguments, and options.
       *
@@ -33,19 +33,19 @@ object apiextensionsNs extends js.Object {
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
       */
-    val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+    val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may
       * infer this from the endpoint the client submits requests to. Cannot be updated. In
       * CamelCase. More info:
       * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
       */
-    val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+    val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
     /**
       * Standard object metadata; More info:
       * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
       */
-    val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+    val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
     def getInputs(): CustomResourceArgs = js.native
   }
   
@@ -77,7 +77,7 @@ object apiextensionsNs extends js.Object {
       */
     @js.native
     class CustomResourceDefinition protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a apiextensions.v1beta1.CustomResourceDefinition resource with the given unique name, arguments, and options.
         *
@@ -95,25 +95,25 @@ object apiextensionsNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec describes how the user wants the resources to appear
         */
-      val spec: atPulumiPulumiLib.pulumiMod.Output[
+      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             atPulumiKubernetesLib.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionSpec
           ] = js.native
       /**
         * Status indicates the actual state of the CustomResourceDefinition
         */
-      val status: atPulumiPulumiLib.pulumiMod.Output[
+      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             atPulumiKubernetesLib.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionStatus
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition = js.native
@@ -124,7 +124,7 @@ object apiextensionsNs extends js.Object {
       */
     @js.native
     class CustomResourceDefinitionList protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a apiextensions.v1beta1.CustomResourceDefinitionList resource with the given unique name, arguments, and options.
         *
@@ -142,11 +142,11 @@ object apiextensionsNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Items individual CustomResourceDefinitions
         */
-      val items: atPulumiPulumiLib.pulumiMod.Output[
+      val items: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             js.Array[
               atPulumiKubernetesLib.typesOutputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition
             ]
@@ -157,8 +157,8 @@ object apiextensionsNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionList = js.native
     }
     

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Priority extends js.Object {
   var priority: js.UndefOr[
-    atCkeditorCkeditor5DashUtilsLib.ckeditor5DashUtilsMod.PriorityString | scala.Double
+    atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.PriorityString | scala.Double
   ] = js.undefined
 }
 

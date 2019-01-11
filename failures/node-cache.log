@@ -4,8 +4,9 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(node-cache)) [id => node-cache, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(node-cache) [id => node-cache, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => node-cache, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:36 Processing node-cache [id => node-cache, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:40 Processing node-cache [id => node-cache, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => node-cache, phase => scala.js] 
 [error] NodeCache.scala:13 overriding method getTtl_Boolean in trait NodeCache of type (key: typings.nodeDashCacheLib.Key)Boolean;
  method getTtl_Boolean needs `override' modifier,   def getTtl_Boolean(key: nodeDashCacheLib.Key): scala.Boolean = js.native [id => node-cache, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [node-cache => Compilation failed] [id => node-cache, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [node-cache => Compilation failed] [id => node-cache, phase => publish] 

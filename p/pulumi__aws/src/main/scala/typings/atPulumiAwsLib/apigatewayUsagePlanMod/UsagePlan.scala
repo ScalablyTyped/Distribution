@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/apigateway/usagePlan", "UsagePlan")
 @js.native
 class UsagePlan protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a UsagePlan resource with the given unique name, arguments, and options.
     *
@@ -22,27 +22,27 @@ class UsagePlan protected ()
   /**
     * The associated API stages of the usage plan.
     */
-  val apiStages: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ApiId]]] = js.native
+  val apiStages: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ApiId]]] = js.native
   /**
     * The description of a usage plan.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the usage plan.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The AWS Markeplace product identifier to associate with the usage plan as a SaaS product on AWS Marketplace.
     */
-  val productCode: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val productCode: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The quota settings of the usage plan.
     */
-  val quotaSettings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Limit]] = js.native
+  val quotaSettings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Limit]] = js.native
   /**
     * The throttling limits of the usage plan.
     */
-  val throttleSettings: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BurstLimitRateLimitNumber]] = js.native
+  val throttleSettings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BurstLimitRateLimitNumber]] = js.native
 }
 
 @JSImport("@pulumi/aws/apigateway/usagePlan", "UsagePlan")

@@ -17,7 +17,7 @@ object schedulingNs extends js.Object {
       */
     @js.native
     class PriorityClass protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a scheduling.v1alpha1.PriorityClass resource with the given unique name, arguments, and options.
         *
@@ -35,12 +35,12 @@ object schedulingNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * description is an arbitrary string that usually provides guidelines on when this priority
         * class should be used.
         */
-      val description: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * globalDefault specifies whether this PriorityClass should be considered as the default
         * priority for pods that do not have any priority class. Only one PriorityClass can be marked
@@ -48,24 +48,24 @@ object schedulingNs extends js.Object {
         * `globalDefault` field set to true, the smallest value of such global default
         * PriorityClasses will be used as the default priority.
         */
-      val globalDefault: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
+      val globalDefault: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * The value of this priority class. This is the actual priority that pods receive when they
         * have the name of this class in their pod spec.
         */
-      val value: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+      val value: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.schedulingNs.v1alpha1Ns.PriorityClass = js.native
     }
     
@@ -74,7 +74,7 @@ object schedulingNs extends js.Object {
       */
     @js.native
     class PriorityClassList protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a scheduling.v1alpha1.PriorityClassList resource with the given unique name, arguments, and options.
         *
@@ -92,11 +92,11 @@ object schedulingNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * items is the list of PriorityClasses
         */
-      val items: atPulumiPulumiLib.pulumiMod.Output[
+      val items: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             js.Array[atPulumiKubernetesLib.typesOutputMod.schedulingNs.v1alpha1Ns.PriorityClass]
           ] = js.native
       /**
@@ -105,12 +105,12 @@ object schedulingNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.schedulingNs.v1alpha1Ns.PriorityClassList = js.native
     }
     
@@ -164,7 +164,7 @@ object schedulingNs extends js.Object {
       */
     @js.native
     class PriorityClass protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a scheduling.v1beta1.PriorityClass resource with the given unique name, arguments, and options.
         *
@@ -182,12 +182,12 @@ object schedulingNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * description is an arbitrary string that usually provides guidelines on when this priority
         * class should be used.
         */
-      val description: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * globalDefault specifies whether this PriorityClass should be considered as the default
         * priority for pods that do not have any priority class. Only one PriorityClass can be marked
@@ -195,24 +195,24 @@ object schedulingNs extends js.Object {
         * `globalDefault` field set to true, the smallest value of such global default
         * PriorityClasses will be used as the default priority.
         */
-      val globalDefault: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
+      val globalDefault: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * The value of this priority class. This is the actual priority that pods receive when they
         * have the name of this class in their pod spec.
         */
-      val value: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+      val value: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.schedulingNs.v1beta1Ns.PriorityClass = js.native
     }
     
@@ -221,7 +221,7 @@ object schedulingNs extends js.Object {
       */
     @js.native
     class PriorityClassList protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a scheduling.v1beta1.PriorityClassList resource with the given unique name, arguments, and options.
         *
@@ -239,11 +239,11 @@ object schedulingNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * items is the list of PriorityClasses
         */
-      val items: atPulumiPulumiLib.pulumiMod.Output[
+      val items: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             js.Array[atPulumiKubernetesLib.typesOutputMod.schedulingNs.v1beta1Ns.PriorityClass]
           ] = js.native
       /**
@@ -252,12 +252,12 @@ object schedulingNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.schedulingNs.v1beta1Ns.PriorityClassList = js.native
     }
     

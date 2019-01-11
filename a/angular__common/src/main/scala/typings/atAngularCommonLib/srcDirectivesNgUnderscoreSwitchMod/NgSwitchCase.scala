@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgSwitchCase protected ()
   extends atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.DoCheck {
-  def this(viewContainer: atAngularCoreLib.coreMod.ViewContainerRef, templateRef: atAngularCoreLib.coreMod.TemplateRef[js.Object], ngSwitch: NgSwitch) = this()
+  def this(viewContainer: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, templateRef: atAngularCoreLib.atAngularCoreMod.TemplateRef[js.Object], ngSwitch: NgSwitch) = this()
   var _view: js.Any = js.native
   var ngSwitch: js.Any = js.native
   var ngSwitchCase: js.Any = js.native

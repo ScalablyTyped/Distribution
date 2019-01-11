@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ssm/resourceDataSync", "ResourceDataSync")
 @js.native
 class ResourceDataSync protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ResourceDataSync resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class ResourceDataSync protected ()
   /**
     * Name for the configuration.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Amazon S3 configuration details for the sync.
     */
-  val s3Destination: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_BucketNameKmsKeyArnPrefix] = js.native
+  val s3Destination: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_BucketNameKmsKeyArnPrefix] = js.native
 }
 
 @JSImport("@pulumi/aws/ssm/resourceDataSync", "ResourceDataSync")

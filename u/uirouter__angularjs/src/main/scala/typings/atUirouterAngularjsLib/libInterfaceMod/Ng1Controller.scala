@@ -55,7 +55,7 @@ trait Ng1Controller extends js.Object {
     * @param transition the new Transition that is about to exit the component's state
     * @return a HookResult, or a promise for a HookResult
     */
-  def uiCanExit(transition: atUirouterCoreLib.coreMod.Transition): atUirouterCoreLib.libTransitionInterfaceMod.HookResult
+  def uiCanExit(transition: atUirouterCoreLib.atUirouterCoreMod.Transition): atUirouterCoreLib.libTransitionInterfaceMod.HookResult
   /**
     * This callback is called when parameter values have changed.
     *
@@ -81,6 +81,6 @@ trait Ng1Controller extends js.Object {
     * });
     * ```
     */
-  def uiOnParamsChanged(newValues: js.Any, $transition$: atUirouterCoreLib.coreMod.Transition): scala.Unit
+  def uiOnParamsChanged(newValues: js.Any, $transition$: atUirouterCoreLib.atUirouterCoreMod.Transition): scala.Unit
 }
 

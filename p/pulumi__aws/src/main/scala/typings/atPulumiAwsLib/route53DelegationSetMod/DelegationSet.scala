@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/route53/delegationSet", "DelegationSet")
 @js.native
 class DelegationSet protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a DelegationSet resource with the given unique name, arguments, and options.
     *
@@ -23,12 +23,12 @@ class DelegationSet protected ()
     * A list of authoritative name servers for the hosted zone
     * (effectively a list of NS records).
     */
-  val nameServers: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val nameServers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * This is a reference name used in Caller Reference
     * (helpful for identifying single delegation set amongst others)
     */
-  val referenceName: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val referenceName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/route53/delegationSet", "DelegationSet")

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait _FirebaseApp
-  extends atFirebaseAppDashTypesLib.appDashTypesMod.FirebaseApp {
+  extends atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp {
   var INTERNAL: FirebaseAppInternals = js.native
 }
 

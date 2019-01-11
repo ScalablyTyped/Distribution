@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/directconnect/gatewayAssociation", "GatewayAssociation")
 @js.native
 class GatewayAssociation protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a GatewayAssociation resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class GatewayAssociation protected ()
   /**
     * The ID of the Direct Connect Gateway.
     */
-  val dxGatewayId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val dxGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the VGW with which to associate the gateway.
     */
-  val vpnGatewayId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpnGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/directconnect/gatewayAssociation", "GatewayAssociation")

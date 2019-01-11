@@ -10,7 +10,7 @@ trait Anon_DocFieldNames[T] extends js.Object {
     hook: js.Function3[
       /* userId */ java.lang.String, 
       /* selector */ meteorDashTypingsLib.MongoNs.Selector, 
-      /* options */ meteorDashCollectionDashHooksLib.mongoMod.CollectionHooksNs.ModifierOptions, 
+      /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
       scala.Unit
     ]
   ): scala.Unit
@@ -18,7 +18,7 @@ trait Anon_DocFieldNames[T] extends js.Object {
     hook: js.Function3[
       /* userId */ java.lang.String, 
       /* selector */ meteorDashTypingsLib.MongoNs.Selector, 
-      /* options */ meteorDashCollectionDashHooksLib.mongoMod.CollectionHooksNs.ModifierOptions, 
+      /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
       scala.Unit
     ]
   ): scala.Unit
@@ -30,7 +30,7 @@ trait Anon_DocFieldNames[T] extends js.Object {
       /* doc */ T, 
       /* fieldNames */ js.Array[java.lang.String], 
       /* modifier */ meteorDashTypingsLib.MongoNs.Modifier, 
-      /* options */ meteorDashCollectionDashHooksLib.mongoMod.CollectionHooksNs.ModifierOptions, 
+      /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
       scala.Unit
     ]
   ): scala.Unit
@@ -40,7 +40,7 @@ trait Anon_DocFieldNames[T] extends js.Object {
       /* doc */ T, 
       /* selector */ meteorDashTypingsLib.MongoNs.Selector, 
       /* modifier */ meteorDashTypingsLib.MongoNs.Modifier, 
-      /* options */ meteorDashCollectionDashHooksLib.mongoMod.CollectionHooksNs.ModifierOptions, 
+      /* options */ meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.ModifierOptions, 
       scala.Unit
     ]
   ): scala.Unit

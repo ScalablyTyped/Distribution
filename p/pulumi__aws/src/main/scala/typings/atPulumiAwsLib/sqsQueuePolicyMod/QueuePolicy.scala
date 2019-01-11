@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/sqs/queuePolicy", "QueuePolicy")
 @js.native
 class QueuePolicy protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a QueuePolicy resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class QueuePolicy protected ()
   /**
     * The JSON policy for the SQS queue. For more information about building AWS IAM policy documents with Terraform, see the [AWS IAM Policy Document Guide](https://www.terraform.io/docs/providers/aws/guides/iam-policy-documents.html).
     */
-  val policy: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The URL of the SQS Queue to which to attach the policy
     */
-  val queueUrl: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val queueUrl: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/sqs/queuePolicy", "QueuePolicy")

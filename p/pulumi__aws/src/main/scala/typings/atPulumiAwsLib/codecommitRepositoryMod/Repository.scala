@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/codecommit/repository", "Repository")
 @js.native
 class Repository protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Repository resource with the given unique name, arguments, and options.
     *
@@ -21,31 +21,31 @@ class Repository protected ()
   /**
     * The ARN of the repository
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The URL to use for cloning the repository over HTTPS.
     */
-  val cloneUrlHttp: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val cloneUrlHttp: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The URL to use for cloning the repository over SSH.
     */
-  val cloneUrlSsh: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val cloneUrlSsh: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The default branch of the repository. The branch specified here needs to exist.
     */
-  val defaultBranch: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val defaultBranch: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The description of the repository. This needs to be less than 1000 characters
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ID of the repository
     */
-  val repositoryId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val repositoryId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name for the repository. This needs to be less than 100 characters.
     */
-  val repositoryName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val repositoryName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/codecommit/repository", "Repository")

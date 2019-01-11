@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcBrowserServerDashTransitionMod extends js.Object {
   val SERVER_TRANSITION_PROVIDERS: js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider] = js.native
-  val TRANSITION_ID: atAngularCoreLib.coreMod.InjectionToken[js.Object] = js.native
-  def appInitializerFactory(transitionId: java.lang.String, document: js.Any, injector: atAngularCoreLib.coreMod.Injector): js.Function0[scala.Unit] = js.native
+  val TRANSITION_ID: atAngularCoreLib.atAngularCoreMod.InjectionToken[js.Object] = js.native
+  def appInitializerFactory(
+    transitionId: java.lang.String,
+    document: js.Any,
+    injector: atAngularCoreLib.atAngularCoreMod.Injector
+  ): js.Function0[scala.Unit] = js.native
 }
 

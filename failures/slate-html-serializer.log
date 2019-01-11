@@ -5,3 +5,4 @@
 [error] PhaseRunner.scala:86 Failure, [slate => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/slate/index.d.ts): Parse error at 16.44 '')'' expected but '{' found] [id => slate-html-serializer, phase => typescript] 
 [error] PhaseRunner.scala:86 Failure, [slate => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/slate/index.d.ts): Parse error at 16.44 '')'' expected but '{' found] [id => slate-html-serializer, phase => scala.js] 
 [error] PhaseRunner.scala:86 Failure, [slate => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/slate/index.d.ts): Parse error at 16.44 '')'' expected but '{' found] [id => slate-html-serializer, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [slate => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/slate/index.d.ts): Parse error at 16.44 '')'' expected but '{' found] [id => slate-html-serializer, phase => publish] 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2transitgateway/routeTable", "RouteTable")
 @js.native
 class RouteTable protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a RouteTable resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class RouteTable protected ()
   /**
     * Boolean whether this is the default association route table for the EC2 Transit Gateway.
     */
-  val defaultAssociationRouteTable: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
+  val defaultAssociationRouteTable: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
   /**
     * Boolean whether this is the default propagation route table for the EC2 Transit Gateway.
     */
-  val defaultPropagationRouteTable: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
+  val defaultPropagationRouteTable: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
   /**
     * Key-value tags for the EC2 Transit Gateway Route Table.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
   /**
     * Identifier of EC2 Transit Gateway.
     */
-  val transitGatewayId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val transitGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2transitgateway/routeTable", "RouteTable")

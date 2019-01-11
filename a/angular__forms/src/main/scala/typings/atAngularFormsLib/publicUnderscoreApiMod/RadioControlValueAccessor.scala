@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class RadioControlValueAccessor protected ()
   extends atAngularFormsLib.srcFormsMod.RadioControlValueAccessor {
-  def this(_renderer: atAngularCoreLib.coreMod.Renderer2, _elementRef: atAngularCoreLib.coreMod.ElementRef[_], _registry: atAngularFormsLib.srcDirectivesRadioUnderscoreControlUnderscoreValueUnderscoreAccessorMod.RadioControlRegistry, _injector: atAngularCoreLib.coreMod.Injector) = this()
+  def this(_renderer: atAngularCoreLib.atAngularCoreMod.Renderer2, _elementRef: atAngularCoreLib.atAngularCoreMod.ElementRef[_], _registry: atAngularFormsLib.srcDirectivesRadioUnderscoreControlUnderscoreValueUnderscoreAccessorMod.RadioControlRegistry, _injector: atAngularCoreLib.atAngularCoreMod.Injector) = this()
 }
 

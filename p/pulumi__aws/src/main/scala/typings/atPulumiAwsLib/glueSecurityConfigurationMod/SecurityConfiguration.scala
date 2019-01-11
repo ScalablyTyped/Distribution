@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/glue/securityConfiguration", "SecurityConfiguration")
 @js.native
 class SecurityConfiguration protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SecurityConfiguration resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class SecurityConfiguration protected ()
   /**
     * Configuration block containing encryption configuration. Detailed below.
     */
-  val encryptionConfiguration: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_CloudwatchEncryption] = js.native
+  val encryptionConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_CloudwatchEncryption] = js.native
   /**
     * Name of the security configuration.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/glue/securityConfiguration", "SecurityConfiguration")

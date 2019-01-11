@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class AsyncPipe protected ()
   extends atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnDestroy
      with atAngularCoreLib.srcChangeUnderscoreDetectionPipeUnderscoreTransformMod.PipeTransform {
-  def this(_ref: atAngularCoreLib.coreMod.ChangeDetectorRef) = this()
+  def this(_ref: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef) = this()
   var _dispose: js.Any = js.native
   var _latestReturnedValue: js.Any = js.native
   var _latestValue: js.Any = js.native

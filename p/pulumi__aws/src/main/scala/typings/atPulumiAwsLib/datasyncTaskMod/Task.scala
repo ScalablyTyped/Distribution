@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/datasync/task", "Task")
 @js.native
 class Task protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Task resource with the given unique name, arguments, and options.
     *
@@ -21,31 +21,31 @@ class Task protected ()
   /**
     * Amazon Resource Name (ARN) of the DataSync Task.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Amazon Resource Name (ARN) of the CloudWatch Log Group that is used to monitor and log events in the sync task.
     */
-  val cloudwatchLogGroupArn: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.arnMod.ARN]] = js.native
+  val cloudwatchLogGroupArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.arnMod.ARN]] = js.native
   /**
     * Amazon Resource Name (ARN) of destination DataSync Location.
     */
-  val destinationLocationArn: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val destinationLocationArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
   /**
     * Name of the DataSync Task.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Configuration block containing option that controls the default behavior when you start an execution of this DataSync Task. For each individual task execution, you can override these options by specifying an overriding configuration in those executions.
     */
-  val options: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Atime]] = js.native
+  val options: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Atime]] = js.native
   /**
     * Amazon Resource Name (ARN) of source DataSync Location.
     */
-  val sourceLocationArn: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val sourceLocationArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
   /**
     * Key-value pairs of resource tags to assign to the DataSync Task.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
 }
 
 @JSImport("@pulumi/aws/datasync/task", "Task")

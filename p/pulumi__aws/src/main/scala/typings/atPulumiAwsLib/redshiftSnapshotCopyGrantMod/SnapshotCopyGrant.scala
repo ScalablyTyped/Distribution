@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/redshift/snapshotCopyGrant", "SnapshotCopyGrant")
 @js.native
 class SnapshotCopyGrant protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SnapshotCopyGrant resource with the given unique name, arguments, and options.
     *
@@ -21,12 +21,12 @@ class SnapshotCopyGrant protected ()
   /**
     * The unique identifier for the customer master key (CMK) that the grant applies to. Specify the key ID or the Amazon Resource Name (ARN) of the CMK. To specify a CMK in a different AWS account, you must use the key ARN. If not specified, the default key is used.
     */
-  val kmsKeyId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val kmsKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A friendly name for identifying the grant.
     */
-  val snapshotCopyGrantName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val snapshotCopyGrantName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 @JSImport("@pulumi/aws/redshift/snapshotCopyGrant", "SnapshotCopyGrant")

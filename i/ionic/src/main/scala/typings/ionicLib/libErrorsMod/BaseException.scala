@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("ionic/lib/errors", "BaseException")
 @js.native
 class BaseException ()
-  extends atIonicCliDashFrameworkLib.cliDashFrameworkMod.BaseError
+  extends atIonicCliDashFrameworkLib.atIonicCliDashFrameworkMod.BaseError
 

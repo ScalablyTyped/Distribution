@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/vpcEndpointRouteTableAssociation", "VpcEndpointRouteTableAssociation")
 @js.native
 class VpcEndpointRouteTableAssociation protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a VpcEndpointRouteTableAssociation resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class VpcEndpointRouteTableAssociation protected ()
   /**
     * Identifier of the EC2 Route Table to be associated with the VPC Endpoint.
     */
-  val routeTableId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val routeTableId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Identifier of the VPC Endpoint with which the EC2 Route Table will be associated.
     */
-  val vpcEndpointId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcEndpointId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/vpcEndpointRouteTableAssociation", "VpcEndpointRouteTableAssociation")

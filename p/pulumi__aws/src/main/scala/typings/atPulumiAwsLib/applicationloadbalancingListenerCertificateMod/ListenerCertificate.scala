@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/applicationloadbalancing/listenerCertificate", "ListenerCertificate")
 @js.native
 class ListenerCertificate protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ListenerCertificate resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class ListenerCertificate protected ()
   /**
     * The ARN of the certificate to attach to the listener.
     */
-  val certificateArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val certificateArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ARN of the listener to which to attach the certificate.
     */
-  val listenerArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val listenerArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/applicationloadbalancing/listenerCertificate", "ListenerCertificate")

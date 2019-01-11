@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cloudwatch/eventPermission", "EventPermission")
 @js.native
 class EventPermission protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a EventPermission resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class EventPermission protected ()
   /**
     * The action that you are enabling the other account to perform. Defaults to `events:PutEvents`.
     */
-  val action: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val action: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Configuration block to limit the event bus permissions you are granting to only accounts that fulfill the condition. Specified below.
     */
-  val condition: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_KeyType]] = js.native
+  val condition: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_KeyType]] = js.native
   /**
     * The 12-digit AWS account ID that you are permitting to put events to your default event bus. Specify `*` to permit any account to put events to your default event bus, optionally limited by `condition`.
     */
-  val principal: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val principal: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * An identifier string for the external account that you are granting permissions to.
     */
-  val statementId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val statementId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cloudwatch/eventPermission", "EventPermission")

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/mq/configuration", "Configuration")
 @js.native
 class Configuration protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Configuration resource with the given unique name, arguments, and options.
     *
@@ -21,33 +21,33 @@ class Configuration protected ()
   /**
     * The ARN of the configuration.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The broker configuration in XML format.
     * See [official docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-broker-configuration-parameters.html)
     * for supported parameters and format of the XML.
     */
-  val data: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val data: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The description of the configuration.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The type of broker engine.
     */
-  val engineType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val engineType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The version of the broker engine.
     */
-  val engineVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val engineVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The latest revision of the configuration.
     */
-  val latestRevision: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val latestRevision: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * The name of the configuration
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/mq/configuration", "Configuration")

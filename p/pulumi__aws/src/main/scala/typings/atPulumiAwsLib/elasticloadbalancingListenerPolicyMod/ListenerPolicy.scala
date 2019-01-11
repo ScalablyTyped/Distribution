@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/elasticloadbalancing/listenerPolicy", "ListenerPolicy")
 @js.native
 class ListenerPolicy protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ListenerPolicy resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class ListenerPolicy protected ()
   /**
     * The load balancer to attach the policy to.
     */
-  val loadBalancerName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val loadBalancerName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The load balancer listener port to apply the policy to.
     */
-  val loadBalancerPort: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val loadBalancerPort: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * List of Policy Names to apply to the backend server.
     */
-  val policyNames: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val policyNames: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
 }
 
 @JSImport("@pulumi/aws/elasticloadbalancing/listenerPolicy", "ListenerPolicy")

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/lightsail/instance", "Instance")
 @js.native
 class Instance protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Instance resource with the given unique name, arguments, and options.
     *
@@ -26,42 +26,42 @@ class Instance protected ()
     * * `key_pair_name`
     * * `user_data`
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The Availability Zone in which to create your
     * instance (see list below)
     */
-  val availabilityZone: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val availabilityZone: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID for a virtual private server image
     * (see list below)
     */
-  val blueprintId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val blueprintId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The bundle of specification information (see list below)
     */
-  val bundleId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val cpuCount: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
-  val createdAt: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val ipv6Address: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val isStaticIp: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
+  val bundleId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val cpuCount: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  val createdAt: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ipv6Address: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val isStaticIp: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
   /**
     * The name of your key pair. Created in the
     * Lightsail console (cannot use `aws_key_pair` at this time)
     */
-  val keyPairName: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val keyPairName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the Lightsail Instance
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val privateIpAddress: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val publicIpAddress: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-  val ramSize: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val privateIpAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val publicIpAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  val ramSize: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * launch script to configure server with additional user data
     */
-  val userData: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
-  val username: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val userData: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val username: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/lightsail/instance", "Instance")

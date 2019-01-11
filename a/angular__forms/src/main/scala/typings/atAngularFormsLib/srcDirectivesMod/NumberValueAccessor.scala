@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class NumberValueAccessor protected ()
   extends atAngularFormsLib.srcDirectivesNumberUnderscoreValueUnderscoreAccessorMod.NumberValueAccessor {
-  def this(_renderer: atAngularCoreLib.coreMod.Renderer2, _elementRef: atAngularCoreLib.coreMod.ElementRef[_]) = this()
+  def this(_renderer: atAngularCoreLib.atAngularCoreMod.Renderer2, _elementRef: atAngularCoreLib.atAngularCoreMod.ElementRef[_]) = this()
 }
 

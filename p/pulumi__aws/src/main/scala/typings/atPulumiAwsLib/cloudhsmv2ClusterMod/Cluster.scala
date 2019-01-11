@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cloudhsmv2/cluster", "Cluster")
 @js.native
 class Cluster protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Cluster resource with the given unique name, arguments, and options.
     *
@@ -26,36 +26,36 @@ class Cluster protected ()
     * * `cluster_certificates.0.hsm_certificate` - The HSM certificate issued (signed) by the HSM hardware.
     * * `cluster_certificates.0.manufacturer_hardware_certificate` - The HSM hardware certificate issued (signed) by the hardware manufacturer.
     */
-  val clusterCertificates: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_AwsHardwareCertificate] = js.native
+  val clusterCertificates: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_AwsHardwareCertificate] = js.native
   /**
     * The id of the CloudHSM cluster.
     */
-  val clusterId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val clusterId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The state of the cluster.
     */
-  val clusterState: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val clusterState: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The type of HSM module in the cluster. Currently, only hsm1.medium is supported.
     */
-  val hsmType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val hsmType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the security group associated with the CloudHSM cluster.
     */
-  val securityGroupId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val securityGroupId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The id of Cloud HSM v2 cluster backup to be restored.
     */
-  val sourceBackupIdentifier: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val sourceBackupIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The IDs of subnets in which cluster will operate.
     */
-  val subnetIds: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  val subnetIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The id of the VPC that the CloudHSM cluster resides in.
     */
-  val vpcId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cloudhsmv2/cluster", "Cluster")

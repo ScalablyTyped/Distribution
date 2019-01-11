@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cloudwatch/logDestination", "LogDestination")
 @js.native
 class LogDestination protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a LogDestination resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class LogDestination protected ()
   /**
     * The Amazon Resource Name (ARN) specifying the log destination.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A name for the log destination
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ARN of an IAM role that grants Amazon CloudWatch Logs permissions to put data into the target
     */
-  val roleArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ARN of the target Amazon Kinesis stream or Amazon Lambda resource for the destination
     */
-  val targetArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val targetArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cloudwatch/logDestination", "LogDestination")

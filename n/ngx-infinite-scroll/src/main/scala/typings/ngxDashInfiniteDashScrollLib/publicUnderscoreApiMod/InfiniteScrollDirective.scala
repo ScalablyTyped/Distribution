@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class InfiniteScrollDirective protected ()
   extends ngxDashInfiniteDashScrollLib.srcNgxDashInfiniteDashScrollMod.InfiniteScrollDirective {
-  def this(element: atAngularCoreLib.coreMod.ElementRef[_], zone: atAngularCoreLib.coreMod.NgZone) = this()
+  def this(element: atAngularCoreLib.atAngularCoreMod.ElementRef[_], zone: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
 }
 

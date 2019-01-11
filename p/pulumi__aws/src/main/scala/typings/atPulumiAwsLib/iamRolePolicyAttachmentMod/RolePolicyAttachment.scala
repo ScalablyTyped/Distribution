@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iam/rolePolicyAttachment", "RolePolicyAttachment")
 @js.native
 class RolePolicyAttachment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a RolePolicyAttachment resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class RolePolicyAttachment protected ()
   /**
     * The ARN of the policy you want to apply
     */
-  val policyArn: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val policyArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
   /**
     * The role the policy should be applied to
     */
-  val role: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.iamRoleMod.Role] = js.native
+  val role: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.iamRoleMod.Role] = js.native
 }
 
 @JSImport("@pulumi/aws/iam/rolePolicyAttachment", "RolePolicyAttachment")

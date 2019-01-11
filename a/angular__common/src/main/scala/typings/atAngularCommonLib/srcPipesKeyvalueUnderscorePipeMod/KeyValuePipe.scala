@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class KeyValuePipe protected ()
   extends atAngularCoreLib.srcChangeUnderscoreDetectionPipeUnderscoreTransformMod.PipeTransform {
-  def this(differs: atAngularCoreLib.coreMod.KeyValueDiffers) = this()
+  def this(differs: atAngularCoreLib.atAngularCoreMod.KeyValueDiffers) = this()
   var differ: js.Any = js.native
   val differs: js.Any = js.native
   var keyValues: js.Any = js.native

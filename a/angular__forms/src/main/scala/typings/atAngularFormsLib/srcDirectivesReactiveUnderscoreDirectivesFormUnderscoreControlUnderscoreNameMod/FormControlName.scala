@@ -62,7 +62,7 @@ class FormControlName protected ()
   @JSName("path")
   val path_FormControlName: js.Array[java.lang.String] = js.native
   /** @deprecated as of v6 */
-  var update: atAngularCoreLib.coreMod.EventEmitter[js.Object] = js.native
+  var update: atAngularCoreLib.atAngularCoreMod.EventEmitter[js.Object] = js.native
   /**
     * @description
     * Async validator function composed of all the async validators registered with this

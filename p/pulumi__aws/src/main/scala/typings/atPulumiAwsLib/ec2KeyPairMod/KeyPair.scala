@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/keyPair", "KeyPair")
 @js.native
 class KeyPair protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a KeyPair resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class KeyPair protected ()
   /**
     * The MD5 public key fingerprint as specified in section 4 of RFC 4716.
     */
-  val fingerprint: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val fingerprint: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name for the key pair.
     */
-  val keyName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val keyName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `key_name`.
     */
-  val keyNamePrefix: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val keyNamePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The public key material.
     */
-  val publicKey: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val publicKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/keyPair", "KeyPair")

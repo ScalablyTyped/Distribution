@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/macie/memberAccountAssociation", "MemberAccountAssociation")
 @js.native
 class MemberAccountAssociation protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a MemberAccountAssociation resource with the given unique name, arguments, and options.
     *
@@ -21,7 +21,7 @@ class MemberAccountAssociation protected ()
   /**
     * The ID of the AWS account that you want to associate with Amazon Macie as a member account.
     */
-  val memberAccountId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val memberAccountId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/macie/memberAccountAssociation", "MemberAccountAssociation")

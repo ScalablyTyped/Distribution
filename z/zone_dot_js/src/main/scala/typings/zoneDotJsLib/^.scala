@@ -1,0 +1,13 @@
+package typings
+package zoneDotJsLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobalScope
+@js.native
+object ^ extends js.Object {
+  val Zone: zoneDotJsLib.ZoneType = js.native
+}
+

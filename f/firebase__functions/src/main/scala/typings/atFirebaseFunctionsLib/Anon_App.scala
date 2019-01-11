@@ -7,8 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_App extends js.Object {
-  var Functions: org.scalablytyped.runtime.Instantiable0[atFirebaseFunctionsDashTypesLib.functionsDashTypesMod.FirebaseFunctions] = js.native
-  def apply(): atFirebaseFunctionsDashTypesLib.functionsDashTypesMod.FirebaseFunctions = js.native
-  def apply(app: atFirebaseFunctionsLib.functionsMod.appDashTypesMod.FirebaseApp): atFirebaseFunctionsDashTypesLib.functionsDashTypesMod.FirebaseFunctions = js.native
+  var Functions: org.scalablytyped.runtime.Instantiable0[
+    atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FirebaseFunctions
+  ] = js.native
+  def apply(): atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FirebaseFunctions = js.native
+  def apply(app: atFirebaseFunctionsLib.atFirebaseFunctionsMod.atFirebaseAppDashTypesMod.FirebaseApp): atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FirebaseFunctions = js.native
 }
 

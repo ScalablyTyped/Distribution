@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/Utilities", "BaseComponent")
 @js.native
 class BaseComponent[TProps /* <: atUifabricUtilitiesLib.libBaseComponentMod.IBaseProps[_] */, TState] protected ()
-  extends atUifabricUtilitiesLib.utilitiesMod.BaseComponent[TProps, TState] {
+  extends atUifabricUtilitiesLib.atUifabricUtilitiesMod.BaseComponent[TProps, TState] {
   /**
     * BaseComponent constructor
     * @param props - The props for the component.

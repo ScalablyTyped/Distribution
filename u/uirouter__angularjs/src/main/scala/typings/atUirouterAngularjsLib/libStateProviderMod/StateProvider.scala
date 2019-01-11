@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@uirouter/angularjs/lib/stateProvider", "StateProvider")
 @js.native
 class StateProvider protected () extends js.Object {
-  def this(stateRegistry: atUirouterCoreLib.coreMod.StateRegistry, stateService: atUirouterCoreLib.coreMod.StateService) = this()
+  def this(stateRegistry: atUirouterCoreLib.atUirouterCoreMod.StateRegistry, stateService: atUirouterCoreLib.atUirouterCoreMod.StateService) = this()
   var stateRegistry: js.Any = js.native
   var stateService: js.Any = js.native
   /**

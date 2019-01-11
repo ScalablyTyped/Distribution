@@ -10,34 +10,34 @@ import scala.scalajs.js.annotation._
 object textFieldNs extends js.Object {
   @js.native
   class MDCTextField ()
-    extends atMaterialTextfieldLib.textfieldMod.MDCTextField
+    extends atMaterialTextfieldLib.atMaterialTextfieldMod.MDCTextField
   
   @js.native
   class MDCTextFieldFoundation protected ()
-    extends atMaterialTextfieldLib.textfieldMod.MDCTextFieldFoundation {
+    extends atMaterialTextfieldLib.atMaterialTextfieldMod.MDCTextFieldFoundation {
     def this(adapter: atMaterialTextfieldLib.adapterMod.MDCTextFieldAdapter) = this()
     def this(adapter: atMaterialTextfieldLib.adapterMod.MDCTextFieldAdapter, foundationMap: atMaterialTextfieldLib.adapterMod.FoundationMapType) = this()
   }
   
   @js.native
   class MDCTextFieldHelperText ()
-    extends atMaterialTextfieldLib.textfieldMod.MDCTextFieldHelperText
+    extends atMaterialTextfieldLib.atMaterialTextfieldMod.MDCTextFieldHelperText
   
   @js.native
   class MDCTextFieldHelperTextFoundation ()
-    extends atMaterialTextfieldLib.textfieldMod.MDCTextFieldHelperTextFoundation
+    extends atMaterialTextfieldLib.atMaterialTextfieldMod.MDCTextFieldHelperTextFoundation
   
   @js.native
   class MDCTextFieldIcon ()
-    extends atMaterialTextfieldLib.textfieldMod.MDCTextFieldIcon
+    extends atMaterialTextfieldLib.atMaterialTextfieldMod.MDCTextFieldIcon
   
   @js.native
   class MDCTextFieldIconFoundation ()
-    extends atMaterialTextfieldLib.textfieldMod.MDCTextFieldIconFoundation
+    extends atMaterialTextfieldLib.atMaterialTextfieldMod.MDCTextFieldIconFoundation
   
   @js.native
   object MDCTextField extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialTextfieldLib.textfieldMod.MDCTextField = js.native
+    def attachTo(root: stdLib.Element): atMaterialTextfieldLib.atMaterialTextfieldMod.MDCTextField = js.native
   }
   
   @js.native

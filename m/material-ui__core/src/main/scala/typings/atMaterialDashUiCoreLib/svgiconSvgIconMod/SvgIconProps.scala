@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SvgIconClassKey] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[
-    atMaterialDashUiCoreLib.coreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.action | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.disabled | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error
+    atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.action | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.disabled | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.error
   ] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[SvgIconProps]] = js.undefined
   var fontSize: js.UndefOr[

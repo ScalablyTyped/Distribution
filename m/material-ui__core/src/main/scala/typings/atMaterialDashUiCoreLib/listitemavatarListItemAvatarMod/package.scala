@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 package object listitemavatarListItemAvatarMod {
   type ListItemAvatarClassKey = atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.root | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.icon
-  type ListItemAvatarProps = atMaterialDashUiCoreLib.coreMod.StandardProps[js.Object, ListItemAvatarClassKey, scala.Nothing]
+  type ListItemAvatarProps = atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.StandardProps[js.Object, ListItemAvatarClassKey, scala.Nothing]
 }

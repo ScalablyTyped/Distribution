@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/elasticloadbalancing/sslNegotiationPolicy", "SslNegotiationPolicy")
 @js.native
 class SslNegotiationPolicy protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SslNegotiationPolicy resource with the given unique name, arguments, and options.
     *
@@ -21,22 +21,22 @@ class SslNegotiationPolicy protected ()
   /**
     * An SSL Negotiation policy attribute. Each has two properties:
     */
-  val attributes: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Name]]] = js.native
+  val attributes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Name]]] = js.native
   /**
     * The load balancer port to which the policy
     * should be applied. This must be an active listener on the load
     * balancer.
     */
-  val lbPort: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val lbPort: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * The load balancer to which the policy
     * should be attached.
     */
-  val loadBalancer: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val loadBalancer: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the attribute
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/elasticloadbalancing/sslNegotiationPolicy", "SslNegotiationPolicy")

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/inspector/resourceGroup", "ResourceGroup")
 @js.native
 class ResourceGroup protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ResourceGroup resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class ResourceGroup protected ()
   /**
     * The resource group ARN.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The tags on your EC2 Instance.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
 }
 
 @JSImport("@pulumi/aws/inspector/resourceGroup", "ResourceGroup")

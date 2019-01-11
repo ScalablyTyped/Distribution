@@ -70,8 +70,8 @@ trait Anon_Alert extends js.Object {
   def monkeyPatch(
     module: js.Object,
     methodName: java.lang.String,
-    options: atBandagedbdBdapiLib.bdapiMod.MonkeyPatchOptions
-  ): atBandagedbdBdapiLib.bdapiMod.CancelPatch = js.native
+    options: atBandagedbdBdapiLib.atBandagedbdBdapiMod.MonkeyPatchOptions
+  ): atBandagedbdBdapiLib.atBandagedbdBdapiMod.CancelPatch = js.native
   /**
   	 * Adds a listener for when the node is removed from the document body.
   	 */
@@ -89,7 +89,7 @@ trait Anon_Alert extends js.Object {
   	 * Shows a simple toast message similar to on Android. An example of the `success` toast can be seen [here](https://i.zackrauen.com/zIagVa.png).
   	 */
   def showToast(content: java.lang.String): scala.Unit = js.native
-  def showToast(content: java.lang.String, options: atBandagedbdBdapiLib.bdapiMod.ToastOptions): scala.Unit = js.native
+  def showToast(content: java.lang.String, options: atBandagedbdBdapiLib.atBandagedbdBdapiMod.ToastOptions): scala.Unit = js.native
   /**
   	 * Wraps a function in a try catch block.
   	 */

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/elasticsearch/domainPolicy", "DomainPolicy")
 @js.native
 class DomainPolicy protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a DomainPolicy resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class DomainPolicy protected ()
   /**
     * IAM policy document specifying the access policies for the domain
     */
-  val accessPolicies: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val accessPolicies: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Name of the domain.
     */
-  val domainName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val domainName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/elasticsearch/domainPolicy", "DomainPolicy")

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iam/userLoginProfile", "UserLoginProfile")
 @js.native
 class UserLoginProfile protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a UserLoginProfile resource with the given unique name, arguments, and options.
     *
@@ -21,31 +21,31 @@ class UserLoginProfile protected ()
   /**
     * The encrypted password, base64 encoded.
     */
-  val encryptedPassword: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val encryptedPassword: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The fingerprint of the PGP key used to encrypt
     * the password
     */
-  val keyFingerprint: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val keyFingerprint: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The length of the generated
     * password.
     */
-  val passwordLength: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val passwordLength: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
     * Whether the
     * user should be forced to reset the generated password on first login.
     */
-  val passwordResetRequired: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val passwordResetRequired: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Either a base-64 encoded PGP public key, or a
     * keybase username in the form `keybase:username`.
     */
-  val pgpKey: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val pgpKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The IAM user's name.
     */
-  val user: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val user: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/iam/userLoginProfile", "UserLoginProfile")

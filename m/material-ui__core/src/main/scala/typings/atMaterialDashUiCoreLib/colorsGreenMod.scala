@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("@material-ui/core/colors/green", JSImport.Namespace)
 @js.native
 object colorsGreenMod extends js.Object {
-  val default: atMaterialDashUiCoreLib.coreMod.Color = js.native
+  val default: atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.Color = js.native
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/serverless/function", "Function")
 @js.native
 class Function protected ()
-  extends atPulumiPulumiLib.pulumiMod.ComponentResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.ComponentResource {
   /**
     * @param func Deprecated.  Pass the function as [options.func] or [options.factoryFunc] instead.
     */

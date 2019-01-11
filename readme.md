@@ -11,13 +11,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               180677      7035080       678643      2160879      4195558
+ Scala               180695      7047616       678679      2160905      4208032
  Markdown              5773        58860         1133            0        57727
  JSON                     5           29            0            0           29
  Makefile                 2           25            6            0           19
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               186458      7094000       679782      2160879      4253339
+ Total               186476      7106536       679818      2160905      4265813
 --------------------------------------------------------------------------------
 
 ```
@@ -83,7 +83,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201901110735")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201901110155")
 ```
 
 ### `build.sbt`
@@ -209,6 +209,29 @@ package object myapp {
   type Avatar = typings.materialDashUiLib.avatarMod.default
   val React = typings.reactLib.ReactDsl
 }
+```
+
+### Whatsup with the hats?
+
+Scala package objects are [broken](https://github.com/scala-js/scala-js/issues/1892) when used as javascript facades.
+For that reason, and to be forwards compatible with scala.js 1.0, we package up top level members in objects.
+
+The scheme is like this:
+```scala
+package typings
+package stdLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSGlobalScope
+@js.native
+object ^ extends js.Object {
+  val Array: stdLib.ArrayConstructor = js.native
+  // ...
+}
+// usage: typings.stdLib.^.Array.newInstance(1)
 ```
 
 ### Whatsup with those version strings?

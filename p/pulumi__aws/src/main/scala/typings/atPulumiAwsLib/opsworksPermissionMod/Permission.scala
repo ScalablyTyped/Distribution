@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/opsworks/permission", "Permission")
 @js.native
 class Permission protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Permission resource with the given unique name, arguments, and options.
     *
@@ -21,23 +21,23 @@ class Permission protected ()
   /**
     * Whether the user is allowed to use SSH to communicate with the instance
     */
-  val allowSsh: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
+  val allowSsh: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
   /**
     * Whether the user is allowed to use sudo to elevate privileges
     */
-  val allowSudo: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
+  val allowSudo: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
   /**
     * The users permission level. Mus be one of `deny`, `show`, `deploy`, `manage`, `iam_only`
     */
-  val level: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val level: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The stack to set the permissions for
     */
-  val stackId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val stackId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The user's IAM ARN to set permissions for
     */
-  val userArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val userArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/opsworks/permission", "Permission")

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgIf protected ()
   extends atAngularCommonLib.srcCommonMod.NgIf {
-  def this(_viewContainer: atAngularCoreLib.coreMod.ViewContainerRef, templateRef: atAngularCoreLib.coreMod.TemplateRef[atAngularCommonLib.srcDirectivesNgUnderscoreIfMod.NgIfContext]) = this()
+  def this(_viewContainer: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, templateRef: atAngularCoreLib.atAngularCoreMod.TemplateRef[atAngularCommonLib.srcDirectivesNgUnderscoreIfMod.NgIfContext]) = this()
 }
 
 @JSImport("@angular/common/public_api", "NgIf")

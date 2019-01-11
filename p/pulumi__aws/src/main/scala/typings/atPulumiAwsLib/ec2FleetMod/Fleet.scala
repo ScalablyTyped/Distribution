@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/fleet", "Fleet")
 @js.native
 class Fleet protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Fleet resource with the given unique name, arguments, and options.
     *
@@ -21,43 +21,43 @@ class Fleet protected ()
   /**
     * Whether running instances should be terminated if the total target capacity of the EC2 Fleet is decreased below the current size of the EC2. Valid values: `no-termination`, `termination`. Defaults to `termination`.
     */
-  val excessCapacityTerminationPolicy: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val excessCapacityTerminationPolicy: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * Nested argument containing EC2 Launch Template configurations. Defined below.
     */
-  val launchTemplateConfig: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZone] = js.native
+  val launchTemplateConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_LaunchTemplateSpecificationOverridesAnonAvailabilityZone] = js.native
   /**
     * Nested argument containing On-Demand configurations. Defined below.
     */
-  val onDemandOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllocationStrategy]] = js.native
+  val onDemandOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllocationStrategy]] = js.native
   /**
     * Whether EC2 Fleet should replace unhealthy instances. Defaults to `false`.
     */
-  val replaceUnhealthyInstances: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val replaceUnhealthyInstances: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Nested argument containing Spot configurations. Defined below.
     */
-  val spotOptions: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllocationStrategyInstanceInterruptionBehavior]] = js.native
+  val spotOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllocationStrategyInstanceInterruptionBehavior]] = js.native
   /**
     * Map of Fleet tags. To tag instances at launch, specify the tags in the Launch Template.
     */
-  val tags: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
   /**
     * Nested argument containing target capacity configurations. Defined below.
     */
-  val targetCapacitySpecification: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_DefaultTargetCapacityType] = js.native
+  val targetCapacitySpecification: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_DefaultTargetCapacityType] = js.native
   /**
     * Whether to terminate instances for an EC2 Fleet if it is deleted successfully. Defaults to `false`.
     */
-  val terminateInstances: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val terminateInstances: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * Whether running instances should be terminated when the EC2 Fleet expires. Defaults to `false`.
     */
-  val terminateInstancesWithExpiration: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val terminateInstancesWithExpiration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The type of request. Indicates whether the EC2 Fleet only requests the target capacity, or also attempts to maintain it. Valid values: `maintain`, `request`. Defaults to `maintain`.
     */
-  val `type`: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/fleet", "Fleet")

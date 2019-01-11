@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/mainRouteTableAssociation", "MainRouteTableAssociation")
 @js.native
 class MainRouteTableAssociation protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a MainRouteTableAssociation resource with the given unique name, arguments, and options.
     *
@@ -21,16 +21,16 @@ class MainRouteTableAssociation protected ()
   /**
     * Used internally, see __Notes__ below
     */
-  val originalRouteTableId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val originalRouteTableId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the Route Table to set as the new
     * main route table for the target VPC
     */
-  val routeTableId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val routeTableId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the VPC whose main route table should be set
     */
-  val vpcId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/mainRouteTableAssociation", "MainRouteTableAssociation")

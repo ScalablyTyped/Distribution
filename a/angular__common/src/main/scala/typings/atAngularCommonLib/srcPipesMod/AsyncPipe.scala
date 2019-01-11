@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class AsyncPipe protected ()
   extends atAngularCommonLib.srcPipesAsyncUnderscorePipeMod.AsyncPipe {
-  def this(_ref: atAngularCoreLib.coreMod.ChangeDetectorRef) = this()
+  def this(_ref: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef) = this()
 }
 

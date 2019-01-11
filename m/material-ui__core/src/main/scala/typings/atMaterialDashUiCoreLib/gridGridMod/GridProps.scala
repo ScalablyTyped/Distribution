@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   var alignItems: js.UndefOr[GridItemsAlignment] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[
-    java.lang.String | (reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.coreMod.Omit[GridProps, StrippedProps]])
+    java.lang.String | (reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.Omit[GridProps, StrippedProps]])
   ] = js.undefined
   var container: js.UndefOr[scala.Boolean] = js.undefined
   var direction: js.UndefOr[GridDirection] = js.undefined

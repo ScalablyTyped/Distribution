@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class RouterLinkActive protected ()
   extends atAngularRouterLib.srcDirectivesRouterUnderscoreLinkUnderscoreActiveMod.RouterLinkActive {
-  def this(router: atAngularRouterLib.srcRouterMod.Router, element: atAngularCoreLib.coreMod.ElementRef[_], renderer: atAngularCoreLib.coreMod.Renderer2, cdr: atAngularCoreLib.coreMod.ChangeDetectorRef) = this()
+  def this(router: atAngularRouterLib.srcRouterMod.Router, element: atAngularCoreLib.atAngularCoreMod.ElementRef[_], renderer: atAngularCoreLib.atAngularCoreMod.Renderer2, cdr: atAngularCoreLib.atAngularCoreMod.ChangeDetectorRef) = this()
 }
 

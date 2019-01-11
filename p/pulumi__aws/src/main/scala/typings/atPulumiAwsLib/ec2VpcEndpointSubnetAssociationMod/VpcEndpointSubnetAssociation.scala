@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/vpcEndpointSubnetAssociation", "VpcEndpointSubnetAssociation")
 @js.native
 class VpcEndpointSubnetAssociation protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a VpcEndpointSubnetAssociation resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class VpcEndpointSubnetAssociation protected ()
   /**
     * The ID of the subnet to be associated with the VPC endpoint.
     */
-  val subnetId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the VPC endpoint with which the subnet will be associated.
     */
-  val vpcEndpointId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val vpcEndpointId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/vpcEndpointSubnetAssociation", "VpcEndpointSubnetAssociation")

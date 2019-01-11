@@ -17,7 +17,7 @@ object autoscalingNs extends js.Object {
       */
     @js.native
     class CrossVersionObjectReference protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a autoscaling.v1.CrossVersionObjectReference resource with the given unique name, arguments, and options.
         *
@@ -32,16 +32,16 @@ object autoscalingNs extends js.Object {
       /**
         * API version of the referent
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind of the referent; More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names
         */
-      val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.autoscalingNs.v1Ns.CrossVersionObjectReference = js.native
     }
     
@@ -50,7 +50,7 @@ object autoscalingNs extends js.Object {
       */
     @js.native
     class HorizontalPodAutoscaler protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a autoscaling.v1.HorizontalPodAutoscaler resource with the given unique name, arguments, and options.
         *
@@ -68,30 +68,30 @@ object autoscalingNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Standard object metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * behaviour of autoscaler. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
         */
-      val spec: atPulumiPulumiLib.pulumiMod.Output[
+      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerSpec
           ] = js.native
       /**
         * current information about the autoscaler.
         */
-      val status: atPulumiPulumiLib.pulumiMod.Output[
+      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerStatus
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.autoscalingNs.v1Ns.HorizontalPodAutoscaler = js.native
@@ -102,7 +102,7 @@ object autoscalingNs extends js.Object {
       */
     @js.native
     class HorizontalPodAutoscalerList protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a autoscaling.v1.HorizontalPodAutoscalerList resource with the given unique name, arguments, and options.
         *
@@ -120,11 +120,11 @@ object autoscalingNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * list of horizontal pod autoscaler objects.
         */
-      val items: atPulumiPulumiLib.pulumiMod.Output[
+      val items: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             js.Array[atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v1Ns.HorizontalPodAutoscaler]
           ] = js.native
       /**
@@ -133,11 +133,11 @@ object autoscalingNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Standard list metadata.
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerList = js.native
     }
     
@@ -146,7 +146,7 @@ object autoscalingNs extends js.Object {
       */
     @js.native
     class Scale protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a autoscaling.v1.Scale resource with the given unique name, arguments, and options.
         *
@@ -164,30 +164,30 @@ object autoscalingNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Standard object metadata; More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * defines the behavior of the scale. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
         */
-      val spec: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v1Ns.ScaleSpec] = js.native
+      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v1Ns.ScaleSpec] = js.native
       /**
         * current status of the scale. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
         * Read-only.
         */
-      val status: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v1Ns.ScaleStatus] = js.native
+      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v1Ns.ScaleStatus] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.autoscalingNs.v1Ns.Scale = js.native
     }
     
@@ -279,7 +279,7 @@ object autoscalingNs extends js.Object {
       */
     @js.native
     class CrossVersionObjectReference protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a autoscaling.v2beta1.CrossVersionObjectReference resource with the given unique name, arguments, and options.
         *
@@ -294,16 +294,16 @@ object autoscalingNs extends js.Object {
       /**
         * API version of the referent
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind of the referent; More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names
         */
-      val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta1Ns.CrossVersionObjectReference = js.native
     }
     
@@ -314,7 +314,7 @@ object autoscalingNs extends js.Object {
       */
     @js.native
     class HorizontalPodAutoscaler protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a autoscaling.v2beta1.HorizontalPodAutoscaler resource with the given unique name, arguments, and options.
         *
@@ -332,30 +332,30 @@ object autoscalingNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * metadata is the standard object metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * spec is the specification for the behaviour of the autoscaler. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
         */
-      val spec: atPulumiPulumiLib.pulumiMod.Output[
+      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerSpec
           ] = js.native
       /**
         * status is the current information about the autoscaler.
         */
-      val status: atPulumiPulumiLib.pulumiMod.Output[
+      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerStatus
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscaler = js.native
@@ -366,7 +366,7 @@ object autoscalingNs extends js.Object {
       */
     @js.native
     class HorizontalPodAutoscalerList protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a autoscaling.v2beta1.HorizontalPodAutoscalerList resource with the given unique name, arguments, and options.
         *
@@ -384,11 +384,11 @@ object autoscalingNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * items is the list of horizontal pod autoscaler objects.
         */
-      val items: atPulumiPulumiLib.pulumiMod.Output[
+      val items: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             js.Array[
               atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscaler
             ]
@@ -399,11 +399,11 @@ object autoscalingNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * metadata is the standard list metadata.
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerList = js.native
     }
     
@@ -478,7 +478,7 @@ object autoscalingNs extends js.Object {
       */
     @js.native
     class CrossVersionObjectReference protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a autoscaling.v2beta2.CrossVersionObjectReference resource with the given unique name, arguments, and options.
         *
@@ -493,16 +493,16 @@ object autoscalingNs extends js.Object {
       /**
         * API version of the referent
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind of the referent; More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds"
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names
         */
-      val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta2Ns.CrossVersionObjectReference = js.native
     }
     
@@ -513,7 +513,7 @@ object autoscalingNs extends js.Object {
       */
     @js.native
     class HorizontalPodAutoscaler protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a autoscaling.v2beta2.HorizontalPodAutoscaler resource with the given unique name, arguments, and options.
         *
@@ -531,30 +531,30 @@ object autoscalingNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * metadata is the standard object metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * spec is the specification for the behaviour of the autoscaler. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
         */
-      val spec: atPulumiPulumiLib.pulumiMod.Output[
+      val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerSpec
           ] = js.native
       /**
         * status is the current information about the autoscaler.
         */
-      val status: atPulumiPulumiLib.pulumiMod.Output[
+      val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerStatus
           ] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler = js.native
@@ -565,7 +565,7 @@ object autoscalingNs extends js.Object {
       */
     @js.native
     class HorizontalPodAutoscalerList protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a autoscaling.v2beta2.HorizontalPodAutoscalerList resource with the given unique name, arguments, and options.
         *
@@ -583,11 +583,11 @@ object autoscalingNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * items is the list of horizontal pod autoscaler objects.
         */
-      val items: atPulumiPulumiLib.pulumiMod.Output[
+      val items: atPulumiPulumiLib.atPulumiPulumiMod.Output[
             js.Array[
               atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler
             ]
@@ -598,11 +598,11 @@ object autoscalingNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * metadata is the standard list metadata.
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerList = js.native
     }
     

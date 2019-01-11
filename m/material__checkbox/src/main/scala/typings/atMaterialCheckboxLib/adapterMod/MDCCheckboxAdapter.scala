@@ -10,7 +10,7 @@ trait MDCCheckboxAdapter extends js.Object {
   def deregisterAnimationEndHandler(handler: stdLib.EventListener): scala.Unit
   def deregisterChangeHandler(handler: stdLib.EventListener): scala.Unit
   def forceLayout(): scala.Unit
-  def getNativeControl(): atMaterialSelectionDashControlLib.selectionDashControlMod.MDCSelectionControlState
+  def getNativeControl(): atMaterialSelectionDashControlLib.atMaterialSelectionDashControlMod.MDCSelectionControlState
   def isAttachedToDOM(): scala.Boolean
   def registerAnimationEndHandler(handler: stdLib.EventListener): scala.Unit
   def registerChangeHandler(handler: stdLib.EventListener): scala.Unit

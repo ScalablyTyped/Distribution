@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/securityhub/productSubscription", "ProductSubscription")
 @js.native
 class ProductSubscription protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ProductSubscription resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class ProductSubscription protected ()
   /**
     * The ARN of a resource that represents your subscription to the product that generates the findings that you want to import into Security Hub.
     */
-  val arn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ARN of the product that generates findings that you want to import into Security Hub - see below.
     */
-  val productArn: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val productArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/securityhub/productSubscription", "ProductSubscription")

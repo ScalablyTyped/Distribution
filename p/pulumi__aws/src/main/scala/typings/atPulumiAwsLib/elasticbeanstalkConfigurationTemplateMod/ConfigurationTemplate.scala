@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/elasticbeanstalk/configurationTemplate", "ConfigurationTemplate")
 @js.native
 class ConfigurationTemplate protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ConfigurationTemplate resource with the given unique name, arguments, and options.
     *
@@ -21,30 +21,30 @@ class ConfigurationTemplate protected ()
   /**
     * name of the application to associate with this configuration template
     */
-  val application: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val application: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Short description of the Template
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ID of the environment used with this configuration template
     */
-  val environmentId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val environmentId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * A unique name for this Template.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Option settings to configure the new Environment. These
     * override specific values that are set as defaults. The format is detailed
     * below in Option Settings
     */
-  val settings: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiAwsLib.Anon_NameNamespace]] = js.native
+  val settings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_NameNamespace]] = js.native
   /**
     * A solution stack to base your Template
     * off of. Example stacks can be found in the [Amazon API documentation][1]
     */
-  val solutionStackName: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val solutionStackName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/elasticbeanstalk/configurationTemplate", "ConfigurationTemplate")

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/directconnect/bgpPeer", "BgpPeer")
 @js.native
 class BgpPeer protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a BgpPeer resource with the given unique name, arguments, and options.
     *
@@ -21,33 +21,33 @@ class BgpPeer protected ()
   /**
     * The address family for the BGP peer. `ipv4 ` or `ipv6`.
     */
-  val addressFamily: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val addressFamily: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The IPv4 CIDR address to use to send traffic to Amazon.
     * Required for IPv4 BGP peers on public virtual interfaces.
     */
-  val amazonAddress: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val amazonAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
     */
-  val bgpAsn: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val bgpAsn: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * The authentication key for BGP configuration.
     */
-  val bgpAuthKey: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val bgpAuthKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The Up/Down state of the BGP peer.
     */
-  val bgpStatus: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val bgpStatus: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The IPv4 CIDR destination address to which Amazon should send traffic.
     * Required for IPv4 BGP peers on public virtual interfaces.
     */
-  val customerAddress: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val customerAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of the Direct Connect virtual interface on which to create the BGP peer.
     */
-  val virtualInterfaceId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val virtualInterfaceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/directconnect/bgpPeer", "BgpPeer")

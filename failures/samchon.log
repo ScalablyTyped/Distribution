@@ -311,7 +311,7 @@
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(samchon, templates, slave, SlaveSystem)) [id => samchon, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(samchon) [id => samchon, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => samchon, phase => typescript] 
-[warn ] Phase2ToScalaJs.scala:36 Processing samchon [id => samchon, phase => scala.js] 
+[warn ] Phase2ToScalaJs.scala:40 Processing samchon [id => samchon, phase => scala.js] 
 [info ] RemoveDuplicateInheritance.scala:62 Dropped parents QualifiedName(List(Name(samchonLib), Name(protocolServerIServerMod), Name(IServer))) at Name(samchonLib) / Name(protocolServerBaseDedicatedWorkerServerBaseMod) / Name(DedicatedWorkerServerBase) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(samchonLib), Name(protocolServerIServerMod), Name(IServer))),List(),NoComments)) [id => samchon, phase => scala.js, this => Name(samchonLib) / Name(protocolServerBaseDedicatedWorkerServerBaseMod) / Name(DedicatedWorkerServerBase)] 
 [info ] RemoveDuplicateInheritance.scala:62 Dropped parents QualifiedName(List(Name(samchonLib), Name(protocolServerIServerMod), Name(IServer))) at Name(samchonLib) / Name(protocolServerBaseServerBaseMod) / Name(ServerBase) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(samchonLib), Name(protocolServerIServerMod), Name(IServer))),List(),NoComments)) [id => samchon, phase => scala.js, this => Name(samchonLib) / Name(protocolServerBaseServerBaseMod) / Name(ServerBase)] 
 [info ] RemoveDuplicateInheritance.scala:62 Dropped parents QualifiedName(List(Name(samchonLib), Name(protocolServerIServerMod), Name(IServer))) at Name(samchonLib) / Name(protocolServerBaseSharedWorkerServerBaseMod) / Name(SharedWorkerServerBase) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(samchonLib), Name(protocolServerIServerMod), Name(IServer))),List(),NoComments)) [id => samchon, phase => scala.js, this => Name(samchonLib) / Name(protocolServerBaseSharedWorkerServerBaseMod) / Name(SharedWorkerServerBase)] 
@@ -398,3 +398,4 @@
 [debug] PhaseRunner.scala:82 Success [id => samchon, phase => scala.js] 
 [warn ] PhaseRunner.scala:68 Failed because of, [tstl => Compilation failed] [id => samchon, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [tstl => Compilation failed] [id => samchon, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [tstl => Compilation failed] [id => samchon, phase => publish] 

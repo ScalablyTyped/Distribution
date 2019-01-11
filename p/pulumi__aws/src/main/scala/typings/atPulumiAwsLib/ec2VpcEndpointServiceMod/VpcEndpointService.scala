@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/vpcEndpointService", "VpcEndpointService")
 @js.native
 class VpcEndpointService protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a VpcEndpointService resource with the given unique name, arguments, and options.
     *
@@ -21,39 +21,39 @@ class VpcEndpointService protected ()
   /**
     * Whether or not VPC endpoint connection requests to the service must be accepted by the service owner - `true` or `false`.
     */
-  val acceptanceRequired: atPulumiPulumiLib.pulumiMod.Output[scala.Boolean] = js.native
+  val acceptanceRequired: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
   /**
     * The ARNs of one or more principals allowed to discover the endpoint service.
     */
-  val allowedPrincipals: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val allowedPrincipals: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The Availability Zones in which the service is available.
     */
-  val availabilityZones: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val availabilityZones: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The DNS names for the service.
     */
-  val baseEndpointDnsNames: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val baseEndpointDnsNames: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The ARNs of one or more Network Load Balancers for the endpoint service.
     */
-  val networkLoadBalancerArns: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val networkLoadBalancerArns: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
     * The private DNS name for the service.
     */
-  val privateDnsName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val privateDnsName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The service name.
     */
-  val serviceName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val serviceName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The service type, `Gateway` or `Interface`.
     */
-  val serviceType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val serviceType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The state of the VPC endpoint service.
     */
-  val state: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val state: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/vpcEndpointService", "VpcEndpointService")

@@ -1,0 +1,14 @@
+package typings
+package sweetalertLib.typingsModulesOptionsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("sweetalert/typings/modules/options", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def getOpts(params: (java.lang.String | stdLib.Partial[sweetalertLib.typingsModulesOptionsMod.SwalOptions])*): sweetalertLib.typingsModulesOptionsMod.SwalOptions = js.native
+  def setDefaults(opts: js.Object): scala.Unit = js.native
+}
+

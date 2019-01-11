@@ -9,6 +9,6 @@ trait Anon_IgnoreElementEnd extends js.Object {
   var ignoreElementEnd: scala.Boolean
   var shallow: scala.Boolean
   var singleCharacters: scala.Boolean
-  var startPosition: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.Position
+  var startPosition: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.Position
 }
 

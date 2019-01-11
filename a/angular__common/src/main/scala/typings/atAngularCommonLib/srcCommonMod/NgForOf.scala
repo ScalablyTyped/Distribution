@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgForOf[T] protected ()
   extends atAngularCommonLib.srcDirectivesNgUnderscoreForUnderscoreOfMod.NgForOf[T] {
-  def this(_viewContainer: atAngularCoreLib.coreMod.ViewContainerRef, _template: atAngularCoreLib.coreMod.TemplateRef[atAngularCommonLib.srcDirectivesNgUnderscoreForUnderscoreOfMod.NgForOfContext[T]], _differs: atAngularCoreLib.coreMod.IterableDiffers) = this()
+  def this(_viewContainer: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, _template: atAngularCoreLib.atAngularCoreMod.TemplateRef[atAngularCommonLib.srcDirectivesNgUnderscoreForUnderscoreOfMod.NgForOfContext[T]], _differs: atAngularCoreLib.atAngularCoreMod.IterableDiffers) = this()
 }
 
 @JSImport("@angular/common/src/common", "NgForOf")

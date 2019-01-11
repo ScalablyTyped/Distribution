@@ -17,7 +17,7 @@ object eventsNs extends js.Object {
       */
     @js.native
     class Event protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a events.v1beta1.Event resource with the given unique name, arguments, and options.
         *
@@ -32,78 +32,78 @@ object eventsNs extends js.Object {
       /**
         * What action was taken/failed regarding to the regarding object.
         */
-      val action: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val action: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Deprecated field assuring backward compatibility with core.v1 Event type
         */
-      val deprecatedCount: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+      val deprecatedCount: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
       /**
         * Deprecated field assuring backward compatibility with core.v1 Event type
         */
-      val deprecatedFirstTimestamp: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val deprecatedFirstTimestamp: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Deprecated field assuring backward compatibility with core.v1 Event type
         */
-      val deprecatedLastTimestamp: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val deprecatedLastTimestamp: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Deprecated field assuring backward compatibility with core.v1 Event type
         */
-      val deprecatedSource: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.EventSource] = js.native
+      val deprecatedSource: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.EventSource] = js.native
       /**
         * Required. Time when this Event was first observed.
         */
-      val eventTime: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val eventTime: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Optional. A human-readable description of the status of this operation. Maximal length of
         * the note is 1kB, but libraries should be prepared to handle values up to 64kB.
         */
-      val note: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val note: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Why the action was taken.
         */
-      val reason: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val reason: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * The object this Event is about. In most cases it's an Object reporting controller
         * implements. E.g. ReplicaSetController implements ReplicaSets and this event is emitted
         * because it acts on some changes in a ReplicaSet object.
         */
-      val regarding: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.ObjectReference] = js.native
+      val regarding: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.ObjectReference] = js.native
       /**
         * Optional secondary object for more complex actions. E.g. when regarding object triggers a
         * creation or deletion of related object.
         */
-      val related: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.ObjectReference] = js.native
+      val related: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.ObjectReference] = js.native
       /**
         * Name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`.
         */
-      val reportingController: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val reportingController: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * ID of the controller instance, e.g. `kubelet-xyzf`.
         */
-      val reportingInstance: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val reportingInstance: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Data about the Event series this event represents or nil if it's a singleton Event.
         */
-      val series: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.eventsNs.v1beta1Ns.EventSeries] = js.native
+      val series: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.eventsNs.v1beta1Ns.EventSeries] = js.native
       /**
         * Type of this event (Normal, Warning), new types could be added in the future.
         */
-      val `type`: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.eventsNs.v1beta1Ns.Event = js.native
     }
     
@@ -112,7 +112,7 @@ object eventsNs extends js.Object {
       */
     @js.native
     class EventList protected ()
-      extends atPulumiPulumiLib.pulumiMod.CustomResource {
+      extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
       /**
         * Create a events.v1beta1.EventList resource with the given unique name, arguments, and options.
         *
@@ -130,23 +130,23 @@ object eventsNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Items is a list of schema objects.
         */
-      val items: atPulumiPulumiLib.pulumiMod.Output[js.Array[atPulumiKubernetesLib.typesOutputMod.eventsNs.v1beta1Ns.Event]] = js.native
+      val items: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiKubernetesLib.typesOutputMod.eventsNs.v1beta1Ns.Event]] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
-      val metadata: atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
+      val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.eventsNs.v1beta1Ns.EventList = js.native
     }
     

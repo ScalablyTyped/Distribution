@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ɵDomEventsPlugin protected ()
   extends atAngularPlatformDashBrowserLib.srcDomEventsDomUnderscoreEventsMod.DomEventsPlugin {
-  def this(doc: js.Any, ngZone: atAngularCoreLib.coreMod.NgZone) = this()
-  def this(doc: js.Any, ngZone: atAngularCoreLib.coreMod.NgZone, platformId: js.Object) = this()
+  def this(doc: js.Any, ngZone: atAngularCoreLib.atAngularCoreMod.NgZone) = this()
+  def this(doc: js.Any, ngZone: atAngularCoreLib.atAngularCoreMod.NgZone, platformId: js.Object) = this()
 }
 

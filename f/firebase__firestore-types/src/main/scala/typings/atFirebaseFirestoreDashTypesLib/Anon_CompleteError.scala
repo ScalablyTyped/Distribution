@@ -10,7 +10,7 @@ trait Anon_CompleteError extends js.Object {
   var error: js.UndefOr[js.Function1[/* error */ stdLib.Error, scala.Unit]] = js.undefined
   var next: js.UndefOr[
     js.Function1[
-      /* snapshot */ atFirebaseFirestoreDashTypesLib.firestoreDashTypesMod.DocumentSnapshot, 
+      /* snapshot */ atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.DocumentSnapshot, 
       scala.Unit
     ]
   ] = js.undefined

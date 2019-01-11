@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/Utilities", "Customizer")
 @js.native
 class Customizer ()
-  extends atUifabricUtilitiesLib.utilitiesMod.Customizer
+  extends atUifabricUtilitiesLib.atUifabricUtilitiesMod.Customizer
 

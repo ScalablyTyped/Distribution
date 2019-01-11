@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgSelectOption protected ()
   extends atAngularFormsLib.srcDirectivesSelectUnderscoreControlUnderscoreValueUnderscoreAccessorMod.NgSelectOption {
-  def this(_element: atAngularCoreLib.coreMod.ElementRef[_], _renderer: atAngularCoreLib.coreMod.Renderer2, _select: atAngularFormsLib.srcDirectivesSelectUnderscoreControlUnderscoreValueUnderscoreAccessorMod.SelectControlValueAccessor) = this()
+  def this(_element: atAngularCoreLib.atAngularCoreMod.ElementRef[_], _renderer: atAngularCoreLib.atAngularCoreMod.Renderer2, _select: atAngularFormsLib.srcDirectivesSelectUnderscoreControlUnderscoreValueUnderscoreAccessorMod.SelectControlValueAccessor) = this()
 }
 

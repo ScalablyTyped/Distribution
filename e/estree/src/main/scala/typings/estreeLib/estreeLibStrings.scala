@@ -310,10 +310,10 @@ object estreeLibStrings {
   sealed trait YieldExpression extends js.Object
   
   @js.native
-  sealed trait `^` extends js.Object
+  sealed trait `^=` extends js.Object
   
   @js.native
-  sealed trait `^=` extends js.Object
+  sealed trait `^` extends js.Object
   
   @js.native
   sealed trait const extends js.Object
@@ -473,8 +473,8 @@ object estreeLibStrings {
   def WhileStatement: WhileStatement = "WhileStatement".asInstanceOf[WhileStatement]
   def WithStatement: WithStatement = "WithStatement".asInstanceOf[WithStatement]
   def YieldExpression: YieldExpression = "YieldExpression".asInstanceOf[YieldExpression]
-  def `^`: `^` = "^".asInstanceOf[`^`]
   def `^=`: `^=` = "^=".asInstanceOf[`^=`]
+  def `^`: `^` = "^".asInstanceOf[`^`]
   def const: const = "const".asInstanceOf[const]
   def constructor: constructor = "constructor".asInstanceOf[constructor]
   def delete: delete = "delete".asInstanceOf[delete]

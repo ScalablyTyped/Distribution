@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cloudwatch/logDestinationPolicy", "LogDestinationPolicy")
 @js.native
 class LogDestinationPolicy protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a LogDestinationPolicy resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class LogDestinationPolicy protected ()
   /**
     * The policy document. This is a JSON formatted string.
     */
-  val accessPolicy: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val accessPolicy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A name for the subscription filter
     */
-  val destinationName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val destinationName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cloudwatch/logDestinationPolicy", "LogDestinationPolicy")

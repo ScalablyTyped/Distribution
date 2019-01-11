@@ -1,0 +1,14 @@
+package typings
+package jsonschemaLib.jsonschemaMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("jsonschema", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def validate(instance: js.Any, schema: js.Any): jsonschemaLib.jsonschemaMod.ValidatorResult = js.native
+  def validate(instance: js.Any, schema: js.Any, options: jsonschemaLib.jsonschemaMod.Options): jsonschemaLib.jsonschemaMod.ValidatorResult = js.native
+}
+

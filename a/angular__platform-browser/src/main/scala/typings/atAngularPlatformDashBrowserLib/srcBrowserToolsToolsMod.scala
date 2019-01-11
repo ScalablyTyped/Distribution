@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcBrowserToolsToolsMod extends js.Object {
   def disableDebugTools(): scala.Unit = js.native
-  def enableDebugTools[T](ref: atAngularCoreLib.coreMod.ComponentRef[T]): atAngularCoreLib.coreMod.ComponentRef[T] = js.native
+  def enableDebugTools[T](ref: atAngularCoreLib.atAngularCoreMod.ComponentRef[T]): atAngularCoreLib.atAngularCoreMod.ComponentRef[T] = js.native
 }
 

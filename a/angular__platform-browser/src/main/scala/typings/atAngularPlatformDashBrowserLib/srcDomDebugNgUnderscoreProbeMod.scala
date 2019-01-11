@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcDomDebugNgUnderscoreProbeMod extends js.Object {
   val ELEMENT_PROBE_PROVIDERS: js.Array[atAngularCoreLib.srcDiProviderMod.Provider] = js.native
-  def _createNgProbe(coreTokens: js.Array[atAngularCoreLib.coreMod.NgProbeToken]): js.Any = js.native
+  def _createNgProbe(coreTokens: js.Array[atAngularCoreLib.atAngularCoreMod.NgProbeToken]): js.Any = js.native
   def inspectNativeElement(element: js.Any): atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugNode | scala.Null = js.native
 }
 

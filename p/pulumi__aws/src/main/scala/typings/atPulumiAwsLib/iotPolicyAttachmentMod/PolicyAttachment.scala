@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iot/policyAttachment", "PolicyAttachment")
 @js.native
 class PolicyAttachment protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a PolicyAttachment resource with the given unique name, arguments, and options.
     *
@@ -21,11 +21,11 @@ class PolicyAttachment protected ()
   /**
     * The name of the policy to attach.
     */
-  val policy: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The identity to which the policy is attached.
     */
-  val target: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
+  val target: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
 }
 
 @JSImport("@pulumi/aws/iot/policyAttachment", "PolicyAttachment")

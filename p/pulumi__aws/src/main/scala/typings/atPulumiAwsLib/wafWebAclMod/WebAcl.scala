@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/waf/webAcl", "WebAcl")
 @js.native
 class WebAcl protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a WebAcl resource with the given unique name, arguments, and options.
     *
@@ -21,19 +21,19 @@ class WebAcl protected ()
   /**
     * The action that you want AWS WAF to take when a request doesn't match the criteria in any of the rules that are associated with the web ACL.
     */
-  val defaultAction: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.Anon_TypeString] = js.native
+  val defaultAction: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_TypeString] = js.native
   /**
     * The name or description for the Amazon CloudWatch metric of this web ACL.
     */
-  val metricName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val metricName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name or description of the web ACL.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The rules to associate with the web ACL and the settings for each rule.
     */
-  val rules: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionOverrideAction]]] = js.native
+  val rules: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionOverrideAction]]] = js.native
 }
 
 @JSImport("@pulumi/aws/waf/webAcl", "WebAcl")

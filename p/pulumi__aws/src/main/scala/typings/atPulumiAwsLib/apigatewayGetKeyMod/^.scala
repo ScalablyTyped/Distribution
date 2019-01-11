@@ -1,0 +1,17 @@
+package typings
+package atPulumiAwsLib.apigatewayGetKeyMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@pulumi/aws/apigateway/getKey", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def getKey(args: atPulumiAwsLib.apigatewayGetKeyMod.GetKeyArgs): js.Promise[atPulumiAwsLib.apigatewayGetKeyMod.GetKeyResult] = js.native
+  def getKey(
+    args: atPulumiAwsLib.apigatewayGetKeyMod.GetKeyArgs,
+    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
+  ): js.Promise[atPulumiAwsLib.apigatewayGetKeyMod.GetKeyResult] = js.native
+}
+

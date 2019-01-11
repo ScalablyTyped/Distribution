@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class RouterLinkWithHref protected ()
   extends atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnChanges
      with atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnDestroy {
-  def this(router: atAngularRouterLib.srcRouterMod.Router, route: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRoute, locationStrategy: atAngularCommonLib.commonMod.LocationStrategy) = this()
+  def this(router: atAngularRouterLib.srcRouterMod.Router, route: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRoute, locationStrategy: atAngularCommonLib.atAngularCommonMod.LocationStrategy) = this()
   var commands: js.Any = js.native
   var fragment: java.lang.String = js.native
   var href: java.lang.String = js.native

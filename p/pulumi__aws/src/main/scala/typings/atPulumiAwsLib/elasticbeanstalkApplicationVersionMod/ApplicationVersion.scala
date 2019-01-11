@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/elasticbeanstalk/applicationVersion", "ApplicationVersion")
 @js.native
 class ApplicationVersion protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ApplicationVersion resource with the given unique name, arguments, and options.
     *
@@ -21,28 +21,28 @@ class ApplicationVersion protected ()
   /**
     * Name of the Beanstalk Application the version is associated with.
     */
-  val application: atPulumiPulumiLib.pulumiMod.Output[atPulumiAwsLib.elasticbeanstalkApplicationMod.Application] = js.native
+  val application: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.elasticbeanstalkApplicationMod.Application] = js.native
   /**
     * S3 bucket that contains the Application Version source bundle.
     */
-  val bucket: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val bucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Short description of the Application Version.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * On delete, force an Application Version to be deleted when it may be in use
     * by multiple Elastic Beanstalk Environments.
     */
-  val forceDelete: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val forceDelete: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * S3 object that is the Application Version source bundle.
     */
-  val key: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val key: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * A unique name for the this Application Version.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/elasticbeanstalk/applicationVersion", "ApplicationVersion")

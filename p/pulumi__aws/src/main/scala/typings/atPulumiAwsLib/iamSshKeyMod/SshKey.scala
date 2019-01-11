@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/iam/sshKey", "SshKey")
 @js.native
 class SshKey protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SshKey resource with the given unique name, arguments, and options.
     *
@@ -21,27 +21,27 @@ class SshKey protected ()
   /**
     * Specifies the public key encoding format to use in the response. To retrieve the public key in ssh-rsa format, use `SSH`. To retrieve the public key in PEM format, use `PEM`.
     */
-  val encoding: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val encoding: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The MD5 message digest of the SSH public key.
     */
-  val fingerprint: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val fingerprint: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The SSH public key. The public key must be encoded in ssh-rsa format or PEM format.
     */
-  val publicKey: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val publicKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The unique identifier for the SSH public key.
     */
-  val sshPublicKeyId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val sshPublicKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The status to assign to the SSH public key. Active means the key can be used for authentication with an AWS CodeCommit repository. Inactive means the key cannot be used. Default is `active`.
     */
-  val status: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the IAM user to associate the SSH public key with.
     */
-  val username: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val username: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/iam/sshKey", "SshKey")

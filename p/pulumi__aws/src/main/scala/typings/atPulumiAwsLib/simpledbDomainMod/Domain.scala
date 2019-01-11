@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/simpledb/domain", "Domain")
 @js.native
 class Domain protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Domain resource with the given unique name, arguments, and options.
     *
@@ -22,7 +22,7 @@ class Domain protected ()
   /**
     * The name of the SimpleDB domain
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/simpledb/domain", "Domain")

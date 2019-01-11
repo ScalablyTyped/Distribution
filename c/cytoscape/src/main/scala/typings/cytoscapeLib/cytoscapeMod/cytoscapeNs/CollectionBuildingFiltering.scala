@@ -100,8 +100,8 @@ trait CollectionBuildingFiltering[TIn, TOut] extends js.Object {
   def `.`(eles: Selector): CollectionReturnValue = js.native
   def `\\`(eles: CollectionArgument): CollectionReturnValue = js.native
   def `\\`(eles: Selector): CollectionReturnValue = js.native
-  def `^`(eles: CollectionArgument): CollectionReturnValue = js.native
-  def `^`(eles: Selector): CollectionReturnValue = js.native
+  def ^(eles: CollectionArgument): CollectionReturnValue = js.native
+  def ^(eles: Selector): CollectionReturnValue = js.native
   def abscomp(): CollectionReturnValue = js.native
   /**
     * Get all elements in the graph that are not in the calling collection.

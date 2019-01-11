@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object expansionpanelactionsExpansionPanelActionsMod {
   type ExpansionPanelActionsClassKey = atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.root | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.action
-  type ExpansionPanelActionsProps = atMaterialDashUiCoreLib.coreMod.StandardProps[
+  type ExpansionPanelActionsProps = atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.StandardProps[
     reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
     ExpansionPanelActionsClassKey, 
     scala.Nothing

@@ -8,3 +8,4 @@
 [error] PhaseRunner.scala:86 Failure, [react-dnd => InFile(/home/tso/tmp/tso-cache/npm/node_modules/react-dnd/lib/DragDropContext.d.ts): Parse error at 13.94 ''global'' expected but ',' found] [id => react-sortable-tree, phase => typescript] 
 [error] PhaseRunner.scala:86 Failure, [react-dnd => InFile(/home/tso/tmp/tso-cache/npm/node_modules/react-dnd/lib/DragDropContext.d.ts): Parse error at 13.94 ''global'' expected but ',' found] [id => react-sortable-tree, phase => scala.js] 
 [error] PhaseRunner.scala:86 Failure, [react-dnd => InFile(/home/tso/tmp/tso-cache/npm/node_modules/react-dnd/lib/DragDropContext.d.ts): Parse error at 13.94 ''global'' expected but ',' found] [id => react-sortable-tree, phase => build] 
+[error] PhaseRunner.scala:86 Failure, [react-dnd => InFile(/home/tso/tmp/tso-cache/npm/node_modules/react-dnd/lib/DragDropContext.d.ts): Parse error at 13.94 ''global'' expected but ',' found] [id => react-sortable-tree, phase => publish] 

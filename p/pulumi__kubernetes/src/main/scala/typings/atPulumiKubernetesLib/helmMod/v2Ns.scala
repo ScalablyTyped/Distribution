@@ -26,7 +26,7 @@ object v2Ns extends js.Object {
   
   @js.native
   class Chart protected ()
-    extends atPulumiKubernetesLib.kubernetesMod.yamlNs.CollectionComponentResource {
+    extends atPulumiKubernetesLib.atPulumiKubernetesMod.yamlNs.CollectionComponentResource {
     def this(releaseName: java.lang.String, config: ChartOpts) = this()
     def this(releaseName: java.lang.String, config: LocalChartOpts) = this()
     def this(releaseName: java.lang.String, config: ChartOpts, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
@@ -34,16 +34,16 @@ object v2Ns extends js.Object {
     def parseTemplate(
       yamlStream: java.lang.String,
       transformations: js.Array[js.Function1[/* o */ _, scala.Unit]],
-      dependsOn: js.Array[atPulumiPulumiLib.pulumiMod.Resource]
-    ): atPulumiPulumiLib.pulumiMod.Output[
-        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.CustomResource]
+      dependsOn: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Resource]
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.CustomResource]
       ] = js.native
     def parseTemplate(
       yamlStream: java.lang.String,
       transformations: js.UndefOr[scala.Nothing],
-      dependsOn: js.Array[atPulumiPulumiLib.pulumiMod.Resource]
-    ): atPulumiPulumiLib.pulumiMod.Output[
-        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.CustomResource]
+      dependsOn: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Resource]
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.CustomResource]
       ] = js.native
   }
   

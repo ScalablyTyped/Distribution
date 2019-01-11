@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/cloudhsmv2/hsm", "Hsm")
 @js.native
 class Hsm protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a Hsm resource with the given unique name, arguments, and options.
     *
@@ -21,31 +21,31 @@ class Hsm protected ()
   /**
     * The IDs of AZ in which HSM module will be located. Do not use together with subnet_id.
     */
-  val availabilityZone: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val availabilityZone: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of Cloud HSM v2 cluster to which HSM will be added.
     */
-  val clusterId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val clusterId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The id of the ENI interface allocated for HSM module.
     */
-  val hsmEniId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val hsmEniId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The id of the HSM module.
     */
-  val hsmId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val hsmId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The state of the HSM module.
     */
-  val hsmState: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val hsmState: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The IP address of HSM module. Must be within the CIDR of selected subnet.
     */
-  val ipAddress: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val ipAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The ID of subnet in which HSM module will be located.
     */
-  val subnetId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/cloudhsmv2/hsm", "Hsm")

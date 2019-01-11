@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ses/receiptFilter", "ReceiptFilter")
 @js.native
 class ReceiptFilter protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a ReceiptFilter resource with the given unique name, arguments, and options.
     *
@@ -21,15 +21,15 @@ class ReceiptFilter protected ()
   /**
     * The IP address or address range to filter, in CIDR notation
     */
-  val cidr: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val cidr: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the filter
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Block or Allow
     */
-  val policy: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ses/receiptFilter", "ReceiptFilter")

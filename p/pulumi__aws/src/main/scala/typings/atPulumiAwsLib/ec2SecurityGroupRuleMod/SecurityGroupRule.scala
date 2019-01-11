@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/securityGroupRule", "SecurityGroupRule")
 @js.native
 class SecurityGroupRule protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SecurityGroupRule resource with the given unique name, arguments, and options.
     *
@@ -21,51 +21,51 @@ class SecurityGroupRule protected ()
   /**
     * List of CIDR blocks. Cannot be specified with `source_security_group_id`.
     */
-  val cidrBlocks: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val cidrBlocks: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * Description of the rule.
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The start port (or ICMP type number if protocol is "icmp").
     */
-  val fromPort: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val fromPort: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * List of IPv6 CIDR blocks.
     */
-  val ipv6CidrBlocks: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val ipv6CidrBlocks: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * List of prefix list IDs (for allowing access to VPC endpoints).
     * Only valid with `egress`.
     */
-  val prefixListIds: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  val prefixListIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
     * The protocol. If not icmp, tcp, udp, or all use the [protocol number](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml)
     */
-  val protocol: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val protocol: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The security group to apply this rule to.
     */
-  val securityGroupId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val securityGroupId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * If true, the security group itself will be added as
     * a source to this ingress rule.
     */
-  val self: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  val self: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**
     * The security group id to allow access to/from,
     * depending on the `type`. Cannot be specified with `cidr_blocks`.
     */
-  val sourceSecurityGroupId: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val sourceSecurityGroupId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The end port (or ICMP code if protocol is "icmp").
     */
-  val toPort: atPulumiPulumiLib.pulumiMod.Output[scala.Double] = js.native
+  val toPort: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * The type of rule being created. Valid options are `ingress` (inbound)
     * or `egress` (outbound).
     */
-  val `type`: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/securityGroupRule", "SecurityGroupRule")

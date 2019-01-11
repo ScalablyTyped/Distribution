@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NgTemplateOutlet protected ()
   extends atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.OnChanges {
-  def this(_viewContainerRef: atAngularCoreLib.coreMod.ViewContainerRef) = this()
+  def this(_viewContainerRef: atAngularCoreLib.atAngularCoreMod.ViewContainerRef) = this()
   var _hasContextShapeChanged: js.Any = js.native
   /**
     * We need to re-create existing embedded view if:
@@ -25,7 +25,7 @@ class NgTemplateOutlet protected ()
   var _updateExistingContext: js.Any = js.native
   var _viewContainerRef: js.Any = js.native
   var _viewRef: js.Any = js.native
-  var ngTemplateOutlet: atAngularCoreLib.coreMod.TemplateRef[_] = js.native
+  var ngTemplateOutlet: atAngularCoreLib.atAngularCoreMod.TemplateRef[_] = js.native
   var ngTemplateOutletContext: js.Object = js.native
   /**
     * A callback method that is invoked immediately after the

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/ec2/flowLog", "FlowLog")
 @js.native
 class FlowLog protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a FlowLog resource with the given unique name, arguments, and options.
     *
@@ -21,35 +21,35 @@ class FlowLog protected ()
   /**
     * Elastic Network Interface ID to attach to
     */
-  val eniId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val eniId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ARN for the IAM role that's used to post flow logs to a CloudWatch Logs log group
     */
-  val iamRoleArn: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val iamRoleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The ARN of the logging destination.
     */
-  val logDestination: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val logDestination: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The type of the logging destination. Valid values: `cloud-watch-logs`, `s3`. Default: `cloud-watch-logs`.
     */
-  val logDestinationType: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val logDestinationType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * *Deprecated:* Use `log_destination` instead. The name of the CloudWatch log group.
     */
-  val logGroupName: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val logGroupName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Subnet ID to attach to
     */
-  val subnetId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The type of traffic to capture. Valid values: `ACCEPT`,`REJECT`, `ALL`.
     */
-  val trafficType: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val trafficType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * VPC ID to attach to
     */
-  val vpcId: atPulumiPulumiLib.pulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/ec2/flowLog", "FlowLog")

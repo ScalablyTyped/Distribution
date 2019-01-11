@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DefaultValueAccessor protected ()
   extends atAngularFormsLib.srcDirectivesControlUnderscoreValueUnderscoreAccessorMod.ControlValueAccessor {
-  def this(_renderer: atAngularCoreLib.coreMod.Renderer2, _elementRef: atAngularCoreLib.coreMod.ElementRef[_], _compositionMode: scala.Boolean) = this()
+  def this(_renderer: atAngularCoreLib.atAngularCoreMod.Renderer2, _elementRef: atAngularCoreLib.atAngularCoreMod.ElementRef[_], _compositionMode: scala.Boolean) = this()
   /** Whether the user is creating a composition string (IME events). */
   var _composing: js.Any = js.native
   var _compositionMode: js.Any = js.native

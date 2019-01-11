@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "playerframework"
-version := "0.0-unknown-dt-20181116Z-5574e0"
+version := "0.0-unknown-dt-20181116Z-9ce67a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.2.2-f3cc98",
-  "org.scalablytyped" %%% "winrt" % "0.0-unknown-dt-20180214Z-b9d8f5")
+  "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
+  "org.scalablytyped" %%% "winrt" % "0.0-unknown-dt-20180214Z-9aefd3")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

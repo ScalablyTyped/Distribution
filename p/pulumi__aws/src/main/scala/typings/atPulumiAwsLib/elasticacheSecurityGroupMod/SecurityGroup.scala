@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@pulumi/aws/elasticache/securityGroup", "SecurityGroup")
 @js.native
 class SecurityGroup protected ()
-  extends atPulumiPulumiLib.pulumiMod.CustomResource {
+  extends atPulumiPulumiLib.atPulumiPulumiMod.CustomResource {
   /**
     * Create a SecurityGroup resource with the given unique name, arguments, and options.
     *
@@ -21,16 +21,16 @@ class SecurityGroup protected ()
   /**
     * description for the cache security group. Defaults to "Managed by Terraform".
     */
-  val description: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val description: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Name for the cache security group. This value is stored as a lowercase string.
     */
-  val name: atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * List of EC2 security group names to be
     * authorized for ingress to the cache security group
     */
-  val securityGroupNames: atPulumiPulumiLib.pulumiMod.Output[js.Array[java.lang.String]] = js.native
+  val securityGroupNames: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/elasticache/securityGroup", "SecurityGroup")
