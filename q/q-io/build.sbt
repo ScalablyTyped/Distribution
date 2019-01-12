@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "q-io"
-version := "0.0-unknown-dt-20180214Z-936e3a"
+version := "0.0-unknown-dt-20180214Z-908307"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

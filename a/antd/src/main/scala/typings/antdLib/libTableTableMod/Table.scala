@@ -15,7 +15,6 @@ trait Table[T]
   var CheckboxPropsCache: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var columns: js.Array[antdLib.libTableInterfaceMod.ColumnProps[T]] = js.native
   var components: antdLib.libTableInterfaceMod.TableComponents = js.native
-  var getColumnTitle: js.Any = js.native
   var row: reactLib.reactMod.ReactNs.ComponentType[_] = js.native
   var store: antdLib.libTableCreateStoreMod.Store = js.native
   @JSName("componentWillReceiveProps")

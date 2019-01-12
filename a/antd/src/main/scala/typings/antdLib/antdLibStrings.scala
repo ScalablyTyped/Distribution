@@ -43,7 +43,7 @@ object antdLibStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT12DOT1` extends js.Object
+  sealed trait `3DOT12DOT2` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -1080,7 +1080,7 @@ object antdLibStrings {
   def `-webkit-isolate`: `-webkit-isolate` = "-webkit-isolate".asInstanceOf[`-webkit-isolate`]
   def `-webkit-optimize-contrast`: `-webkit-optimize-contrast` = "-webkit-optimize-contrast".asInstanceOf[`-webkit-optimize-contrast`]
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
-  def `3DOT12DOT1`: `3DOT12DOT1` = "3.12.1".asInstanceOf[`3DOT12DOT1`]
+  def `3DOT12DOT2`: `3DOT12DOT2` = "3.12.2".asInstanceOf[`3DOT12DOT2`]
   def AM: AM = "AM".asInstanceOf[AM]
   def Empty: Empty = "".asInstanceOf[Empty]
   def PM: PM = "PM".asInstanceOf[PM]

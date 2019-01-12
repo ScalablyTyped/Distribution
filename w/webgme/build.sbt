@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webgme"
-version := "2.34.0-c1b36f"
+version := "2.34.0-743f6b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

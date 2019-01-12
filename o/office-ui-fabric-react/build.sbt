@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "office-ui-fabric-react"
-version := "6.124.1-273a75"
+version := "6.124.1-2caebb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,10 +14,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-552d91",
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
   "org.scalablytyped" %%% "tslib" % "1.9.3-cc9481",
-  "org.scalablytyped" %%% "uifabric__icons" % "6.3.0-ee892c",
+  "org.scalablytyped" %%% "uifabric__icons" % "6.3.0-4f6f17",
   "org.scalablytyped" %%% "uifabric__merge-styles" % "6.15.0-b7a19c",
   "org.scalablytyped" %%% "uifabric__set-version" % "1.1.3-8359fa",
-  "org.scalablytyped" %%% "uifabric__styling" % "6.40.0-a25712",
+  "org.scalablytyped" %%% "uifabric__styling" % "6.40.0-7a0882",
   "org.scalablytyped" %%% "uifabric__utilities" % "6.27.2-295e5a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

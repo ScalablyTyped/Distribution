@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-restify-mw"
-version := "0.7-dt-20181022Z-9dbea4"
+version := "0.7-dt-20181022Z-90412e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

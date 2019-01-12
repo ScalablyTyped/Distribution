@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "actioncable"
-version := "5.2-dt-20180927Z-f054b0"
+version := "5.2-dt-20180927Z-b4aec0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

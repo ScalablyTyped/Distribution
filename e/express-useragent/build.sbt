@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-useragent"
-version := "0.2.4-dt-20180214Z-42ba50"
+version := "0.2.4-dt-20180214Z-2da733"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

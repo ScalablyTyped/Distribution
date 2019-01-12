@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-hapi"
-version := "0.7-dt-20181022Z-8f629e"
+version := "0.7-dt-20181022Z-510be1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blue-tape"
-version := "v0.1.11-dt-20180712Z-9aab82"
+version := "v0.1.11-dt-20180712Z-080c6d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

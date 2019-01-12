@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-auth-wrapper"
-version := "2.0-dt-20181122Z-00afb2"
+version := "2.0-dt-20181122Z-162d5e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

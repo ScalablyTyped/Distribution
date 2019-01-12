@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-router-bootstrap"
-version := "0.24-dt-20180531Z-ec46a5"
+version := "0.24-dt-20180531Z-dbef01"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

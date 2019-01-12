@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Checkbox
-  extends reactLib.reactMod.Component[CheckboxProps, js.Object, js.Object] {
+  extends reactLib.reactMod.Component[CheckboxProps, js.Object, js.Any] {
   var rcCheckbox: js.Any = js.native
   def blur(): scala.Unit = js.native
   def focus(): scala.Unit = js.native

@@ -10,7 +10,7 @@ trait Tag
   extends reactLib.reactMod.Component[TagProps, TagState, js.Any] {
   @JSName("state")
   var state_Tag: antdLib.Anon_VisibleBoolean = js.native
-  def animationEnd(): scala.Unit = js.native
+  def animationEnd(`_`: java.lang.String, existed: scala.Boolean): scala.Unit = js.native
   def getTagClassName(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): java.lang.String = js.native
   def getTagStyle(): antdLib.Anon_BackgroundColor | antdLib.Anon_Absolute = js.native
   def handleIconClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent]): scala.Unit = js.native

@@ -2,7 +2,7 @@
 
 # ScalablyTyped - The Javascript ecosystem for Scala.js!
 
-This is the home of Scala.js typings for **6089** Javascript libraries,
+This is the home of Scala.js typings for **6088** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -11,13 +11,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               180478      7045881       678092      2160905      4206884
+ Scala               180431      7045742       678025      2161008      4206709
  Markdown              5773        58881         1138            0        57743
  JSON                     5           29            0            0           29
  Makefile                 2           25            6            0           19
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               186259      7104822       679236      2160905      4264681
+ Total               186212      7104683       679169      2161008      4264506
 --------------------------------------------------------------------------------
 
 ```
@@ -83,7 +83,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201901120330")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201901120550")
 ```
 
 ### `build.sbt`
@@ -213,8 +213,11 @@ package object myapp {
 
 ### Whatsup with the hats?
 
-Scala package objects are [broken](https://github.com/scala-js/scala-js/issues/1892) when used as javascript facades.
-For that reason, and to be forwards compatible with scala.js 1.0, we package up top level members in objects.
+We normally convert typescript namespaces and modules into scala packages.
+
+In idiomatic scala top level members inside would be placed into package objects,
+but those are unfortunately [broken](https://github.com/scala-js/scala-js/issues/1892) when used as javascript facades.
+For that reason we put them into objects called `^`.
 
 The scheme is like this:
 ```scala
@@ -233,6 +236,11 @@ object ^ extends js.Object {
 }
 // usage: typings.stdLib.^.Array.newInstance(1)
 ```
+
+Note that this is the "normal" container format.
+If a container doesn't introduce new types (or if a namespace is exported in a module),
+the "compact" format is used instead where everything goes into an object.
+
 
 ### Whatsup with those version strings?
 

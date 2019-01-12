@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "highcharts"
-version := "5.0-dt-20181207Z-1d68c2"
+version := "5.0-dt-20181207Z-0560e8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

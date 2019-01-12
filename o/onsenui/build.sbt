@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "onsenui"
-version := "2.10.6-6b1f9e"
+version := "2.10.6-b71120"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "chokidar" % "1.7-dt-20180226Z-c4aa11",
-  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-32e609",
+  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-98d341",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-e3598d",
   "org.scalablytyped" %%% "glob-stream" % "v6.1.0-dt-20180214Z-e44fee",
   "org.scalablytyped" %%% "gulp" % "4.0-dt-20180214Z-bc4522",

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "diffie-hellman"
-version := "5.0-dt-20181128Z-91c78b"
+version := "5.0-dt-20181128Z-f930c7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

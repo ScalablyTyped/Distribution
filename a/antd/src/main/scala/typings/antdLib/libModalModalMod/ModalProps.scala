@@ -21,6 +21,8 @@ trait ModalProps extends js.Object {
   var destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined
   /** 底部内容*/
   var footer: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  /** 强制渲染 Modal*/
+  var forceRender: js.UndefOr[scala.Boolean] = js.undefined
   var getContainer: js.UndefOr[
     js.Function1[/* instance */ reactLib.reactMod.ReactNs.ReactInstance, reactLib.HTMLElement]
   ] = js.undefined

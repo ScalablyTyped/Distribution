@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-routers"
-version := "1.0.1-be7cbf"
+version := "1.0.1-03a988"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

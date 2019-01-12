@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ngeohash"
-version := "v0.6.0-dt-20181122Z-785377"
+version := "v0.6.0-dt-20181122Z-501b1e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

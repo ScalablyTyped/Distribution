@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-dnd-test-backend"
-version := "7.0.2-7fd5f0"
+version := "7.0.2-2ef543"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

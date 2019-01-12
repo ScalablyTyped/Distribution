@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "angularfire"
-version := "0.8.2-dt-20181124Z-678108"
+version := "0.8.2-dt-20181124Z-48cbf2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20181217Z-378b11",
-  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-32e609",
-  "org.scalablytyped" %%% "firebase" % "5.7.3-484f7c",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20181217Z-5f18b8",
+  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-98d341",
+  "org.scalablytyped" %%% "firebase" % "5.7.3-d0a226",
   "org.scalablytyped" %%% "firebase__app" % "0.3.6-eecdee",
   "org.scalablytyped" %%% "firebase__app-types" % "0.3.2-6475ae",
   "org.scalablytyped" %%% "firebase__auth" % "0.9.1-3f9065",
@@ -22,7 +22,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__logger" % "0.1.3-47ffb1",
   "org.scalablytyped" %%% "firebase__messaging" % "0.3.8-b7340b",
   "org.scalablytyped" %%% "firebase__messaging-types" % "0.2.3-f3d9fe",
-  "org.scalablytyped" %%% "firebase__polyfill" % "0.3.4-ff54cb",
+  "org.scalablytyped" %%% "firebase__polyfill" % "0.3.4-8dc622",
   "org.scalablytyped" %%% "firebase__storage" % "0.2.5-d6625c",
   "org.scalablytyped" %%% "firebase__storage-types" % "0.2.3-4017b6",
   "org.scalablytyped" %%% "firebase__util" % "0.2.4-e266d2",

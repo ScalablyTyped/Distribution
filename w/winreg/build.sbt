@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "winreg"
-version := "v1.2.0-dt-20180214Z-1b8ec9"
+version := "v1.2.0-dt-20180214Z-e7f9c8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

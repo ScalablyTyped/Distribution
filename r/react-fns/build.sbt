@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-fns"
-version := "1.4.0-5fa32c"
+version := "1.4.0-7dbd6b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

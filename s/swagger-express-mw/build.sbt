@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "swagger-express-mw"
-version := "0.7-dt-20181022Z-ec3768"
+version := "0.7-dt-20181022Z-c98111"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

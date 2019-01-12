@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lasso"
-version := "2.4-dt-20180214Z-3f5fca"
+version := "2.4-dt-20180214Z-c17131"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

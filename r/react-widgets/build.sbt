@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-widgets"
-version := "4.2-dt-20181016Z-0acd03"
+version := "4.2-dt-20181016Z-3e45c3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -15,3 +15,8 @@ object CompilerNs extends js.Object {
   
 }
 
+/** @deprecated */
+@JSImport("webpack", "compiler")
+@js.native
+object compilerNs extends js.Object
+

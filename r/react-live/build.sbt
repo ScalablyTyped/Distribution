@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "react-live"
-version := "1.12.0-7feb5a"
+version := "1.12.0-ca4fb7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-32e609",
+  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-98d341",
   "org.scalablytyped" %%% "create-react-context" % "0.2.2-fb7893",
   "org.scalablytyped" %%% "csstype" % "2.5.8-61e37d",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2be335",

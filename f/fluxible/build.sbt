@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fluxible"
-version := "1.4-dt-20181009Z-2266c0"
+version := "1.4-dt-20181009Z-f6c043"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

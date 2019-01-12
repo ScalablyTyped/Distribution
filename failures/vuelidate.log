@@ -14,6 +14,6 @@
 [debug] PhaseRunner.scala:82 Success [id => vuelidate, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing vuelidate [id => vuelidate, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => vuelidate, phase => scala.js] 
-[error] RuleDecl.scala:9 illegal cyclic reference involving trait RuleDecl,   extends /* rule */ org.scalablytyped.runtime.StringDictionary[ValidationDecl | GroupDecl | AsyncDecl | NestedDecl] [id => vuelidate, phase => build] 
+[error] Validation.scala:2 vuelidateMod is already defined as object vuelidateMod, package vuelidateLib.vuelidateMod [id => vuelidate, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [vuelidate => Compilation failed] [id => vuelidate, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [vuelidate => Compilation failed] [id => vuelidate, phase => publish] 
