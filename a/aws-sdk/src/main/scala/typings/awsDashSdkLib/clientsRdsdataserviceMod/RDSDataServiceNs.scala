@@ -78,23 +78,23 @@ object RDSDataServiceNs extends js.Object {
     /**
       * ARN of the db credentials in AWS Secret Store or the friendly secret name
       */
-    var awsSecretStoreArn: String
+    var awsSecretStoreArn: Arn
     /**
       * Target DB name
       */
-    var database: js.UndefOr[String] = js.undefined
+    var database: js.UndefOr[DbName] = js.undefined
     /**
       * ARN of the target db cluster or instance
       */
-    var dbClusterOrInstanceArn: String
+    var dbClusterOrInstanceArn: Arn
     /**
       * Target Schema name
       */
-    var schema: js.UndefOr[String] = js.undefined
+    var schema: js.UndefOr[DbName] = js.undefined
     /**
       * SQL statement(s) to be executed. Statements can be chained by using semicolons
       */
-    var sqlStatements: String
+    var sqlStatements: SqlStatement
   }
   
   trait ExecuteSqlResponse extends js.Object {
@@ -225,16 +225,19 @@ object RDSDataServiceNs extends js.Object {
   }
   
   val TypesNs: this.type = js.native
+  type Arn = java.lang.String
   type ArrayValues = js.Array[Value]
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ColumnMetadataList = js.Array[ColumnMetadata]
+  type DbName = java.lang.String
   type Double = scala.Double
   type Float = scala.Double
   type Integer = scala.Double
   type Long = scala.Double
   type Records = js.Array[Record]
   type Row = js.Array[Value]
+  type SqlStatement = java.lang.String
   type SqlStatementResults = js.Array[SqlStatementResult]
   type String = java.lang.String
   type _Blob = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsRdsdataserviceMod.Blob | java.lang.String

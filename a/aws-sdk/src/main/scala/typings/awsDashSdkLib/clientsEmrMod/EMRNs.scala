@@ -601,7 +601,7 @@ object EMRNs extends js.Object {
       */
     var AdditionalMasterSecurityGroups: js.UndefOr[StringList] = js.undefined
     /**
-      * A list of additional Amazon EC2 security group IDs for the slave nodes.
+      * A list of additional Amazon EC2 security group IDs for the core and task nodes.
       */
     var AdditionalSlaveSecurityGroups: js.UndefOr[StringList] = js.undefined
     /**
@@ -621,7 +621,7 @@ object EMRNs extends js.Object {
       */
     var EmrManagedMasterSecurityGroup: js.UndefOr[String] = js.undefined
     /**
-      * The identifier of the Amazon EC2 security group for the slave nodes.
+      * The identifier of the Amazon EC2 security group for the core and task nodes.
       */
     var EmrManagedSlaveSecurityGroup: js.UndefOr[String] = js.undefined
     /**
@@ -1302,7 +1302,7 @@ object EMRNs extends js.Object {
       */
     var AdditionalMasterSecurityGroups: js.UndefOr[SecurityGroupsList] = js.undefined
     /**
-      * A list of additional Amazon EC2 security group IDs for the slave nodes.
+      * A list of additional Amazon EC2 security group IDs for the core and task nodes.
       */
     var AdditionalSlaveSecurityGroups: js.UndefOr[SecurityGroupsList] = js.undefined
     /**
@@ -1322,7 +1322,7 @@ object EMRNs extends js.Object {
       */
     var EmrManagedMasterSecurityGroup: js.UndefOr[XmlStringMaxLen256] = js.undefined
     /**
-      * The identifier of the Amazon EC2 security group for the slave nodes.
+      * The identifier of the Amazon EC2 security group for the core and task nodes.
       */
     var EmrManagedSlaveSecurityGroup: js.UndefOr[XmlStringMaxLen256] = js.undefined
     /**
@@ -1358,7 +1358,7 @@ object EMRNs extends js.Object {
       */
     var ServiceAccessSecurityGroup: js.UndefOr[XmlStringMaxLen256] = js.undefined
     /**
-      * The EC2 instance type of the slave nodes.
+      * The EC2 instance type of the core and task nodes.
       */
     var SlaveInstanceType: js.UndefOr[InstanceType] = js.undefined
     /**
@@ -1381,7 +1381,7 @@ object EMRNs extends js.Object {
       */
     var HadoopVersion: js.UndefOr[XmlStringMaxLen256] = js.undefined
     /**
-      * The number of Amazon EC2 instances in the cluster. If the value is 1, the same instance serves as both the master and slave node. If the value is greater than 1, one instance is the master node and all others are slave nodes.
+      * The number of Amazon EC2 instances in the cluster. If the value is 1, the same instance serves as both the master and core and task node. If the value is greater than 1, one instance is the master node and all others are core and task nodes.
       */
     var InstanceCount: Integer
     /**
@@ -1413,7 +1413,7 @@ object EMRNs extends js.Object {
       */
     var Placement: js.UndefOr[PlacementType] = js.undefined
     /**
-      * The Amazon EC2 slave node instance type.
+      * The Amazon EC2 core and task node instance type.
       */
     var SlaveInstanceType: InstanceType
     /**
@@ -1752,7 +1752,7 @@ object EMRNs extends js.Object {
       */
     var AmiVersion: js.UndefOr[XmlStringMaxLen256] = js.undefined
     /**
-      * For Amazon EMR releases 4.0 and later. A list of applications for the cluster. Valid values are: "Hadoop", "Hive", "Mahout", "Pig", and "Spark." They are case insensitive.
+      * Applies to Amazon EMR releases 4.0 and later. A case-insensitive list of applications for Amazon EMR to install and configure when launching the cluster. For a list of applications available for each Amazon EMR release version, see the Amazon EMR Release Guide.
       */
     var Applications: js.UndefOr[ApplicationList] = js.undefined
     /**
@@ -1968,7 +1968,7 @@ object EMRNs extends js.Object {
       */
     var BlockDurationMinutes: js.UndefOr[WholeNumber] = js.undefined
     /**
-      * The action to take when TargetSpotCapacity has not been fulfilled when the TimeoutDurationMinutes has expired. Spot instances are not uprovisioned within the Spot provisioining timeout. Valid values are TERMINATE_CLUSTER and SWITCH_TO_ON_DEMAND. SWITCH_TO_ON_DEMAND specifies that if no Spot instances are available, On-Demand Instances should be provisioned to fulfill any remaining Spot capacity.
+      * The action to take when TargetSpotCapacity has not been fulfilled when the TimeoutDurationMinutes has expired; that is, when all Spot instances could not be provisioned within the Spot provisioning timeout. Valid values are TERMINATE_CLUSTER and SWITCH_TO_ON_DEMAND. SWITCH_TO_ON_DEMAND specifies that if no Spot instances are available, On-Demand Instances should be provisioned to fulfill any remaining Spot capacity.
       */
     var TimeoutAction: SpotProvisioningTimeoutAction
     /**
@@ -1979,7 +1979,7 @@ object EMRNs extends js.Object {
   
   trait Step extends js.Object {
     /**
-      * This specifies what action to take when the cluster step fails. Possible values are TERMINATE_CLUSTER, CANCEL_AND_WAIT, and CONTINUE.
+      * The action to take when the cluster step fails. Possible values are TERMINATE_CLUSTER, CANCEL_AND_WAIT, and CONTINUE. TERMINATE_JOB_FLOW is provided for backward compatibility. We recommend using TERMINATE_CLUSTER instead.
       */
     var ActionOnFailure: js.UndefOr[ActionOnFailure] = js.undefined
     /**
@@ -2002,7 +2002,7 @@ object EMRNs extends js.Object {
   
   trait StepConfig extends js.Object {
     /**
-      * The action to take if the step fails.
+      * The action to take when the cluster step fails. Possible values are TERMINATE_CLUSTER, CANCEL_AND_WAIT, and CONTINUE. TERMINATE_JOB_FLOW is provided for backward compatibility. We recommend using TERMINATE_CLUSTER instead.
       */
     var ActionOnFailure: js.UndefOr[ActionOnFailure] = js.undefined
     /**
@@ -2081,7 +2081,7 @@ object EMRNs extends js.Object {
   
   trait StepSummary extends js.Object {
     /**
-      * This specifies what action to take when the cluster step fails. Possible values are TERMINATE_CLUSTER, CANCEL_AND_WAIT, and CONTINUE.
+      * The action to take when the cluster step fails. Possible values are TERMINATE_CLUSTER, CANCEL_AND_WAIT, and CONTINUE. TERMINATE_JOB_FLOW is available for backward compatibility. We recommend using TERMINATE_CLUSTER instead.
       */
     var ActionOnFailure: js.UndefOr[ActionOnFailure] = js.undefined
     /**

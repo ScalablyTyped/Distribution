@@ -1,0 +1,205 @@
+package typings
+package webixLib.webixMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("webix", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  var ActiveContent: webixLib.webixMod.ActiveContent = js.native
+  var AtomDataLoader: webixLib.webixMod.AtomDataLoader = js.native
+  var AtomRender: webixLib.webixMod.AtomRender = js.native
+  var AutoScroll: webixLib.webixMod.AutoScroll = js.native
+  var AutoTooltip: webixLib.webixMod.AutoTooltip = js.native
+  var BaseBind: webixLib.webixMod.BaseBind = js.native
+  var BindSource: webixLib.webixMod.BindSource = js.native
+  var Canvas: webixLib.webixMod.Canvas = js.native
+  var CodeParser: webixLib.webixMod.CodeParser = js.native
+  var CollectionBind: webixLib.webixMod.CollectionBind = js.native
+  var ContextHelper: webixLib.webixMod.ContextHelper = js.native
+  var CopyPaste: webixLib.webixMod.CopyPaste = js.native
+  var CustomPrint: webixLib.webixMod.CustomPrint = js.native
+  var CustomScroll: webixLib.webixMod.CustomScroll = js.native
+  var DataCollection: webixLib.webixMod.DataCollectionFactory = js.native
+  var DataDriver: webixLib.webixMod.DataDriver = js.native
+  var DataLoader: webixLib.webixMod.DataLoader = js.native
+  var DataMarks: webixLib.webixMod.DataMarks = js.native
+  var DataMove: webixLib.webixMod.DataMove = js.native
+  var DataProcessor: webixLib.webixMod.DataProcessor = js.native
+  var DataRecord: webixLib.webixMod.DataRecordFactory = js.native
+  var DataState: webixLib.webixMod.DataState = js.native
+  var DataStore: webixLib.webixMod.DataStore = js.native
+  var DataValue: webixLib.webixMod.DataValueFactory = js.native
+  var Date: webixLib.webixMod.Date = js.native
+  var Destruction: webixLib.webixMod.Destruction = js.native
+  var DragControl: webixLib.webixMod.DragControl = js.native
+  var DragItem: webixLib.webixMod.DragItem = js.native
+  var DragOrder: webixLib.webixMod.DragOrder = js.native
+  var EditAbility: webixLib.webixMod.EditAbility = js.native
+  var EventSystem: webixLib.webixMod.EventSystem = js.native
+  var FlexLayout: webixLib.webixMod.FlexLayout = js.native
+  var Group: webixLib.webixMod.Group = js.native
+  var GroupMethods: webixLib.webixMod.GroupMethods = js.native
+  var GroupStore: webixLib.webixMod.GroupStore = js.native
+  var HTMLOptions: webixLib.webixMod.HTMLOptions = js.native
+  var HtmlMap: webixLib.webixMod.HtmlMap = js.native
+  var IdSpace: webixLib.webixMod.IdSpace = js.native
+  var KanbanView: webixLib.webixMod.KanbanView = js.native
+  var KeysNavigation: webixLib.webixMod.KeysNavigation = js.native
+  var MapCollection: webixLib.webixMod.MapCollection = js.native
+  var Modality: webixLib.webixMod.Modality = js.native
+  var MouseEvents: webixLib.webixMod.MouseEvents = js.native
+  var Movable: webixLib.webixMod.Movable = js.native
+  var NavigationButtons: webixLib.webixMod.NavigationButtons = js.native
+  var Number: webixLib.webixMod.Number = js.native
+  var OverlayBox: webixLib.webixMod.OverlayBox = js.native
+  var PagingAbility: webixLib.webixMod.PagingAbility = js.native
+  var PowerArray: webixLib.webixMod.PowerArray = js.native
+  var ProgressBar: webixLib.webixMod.ProgressBar = js.native
+  var RecordBind: webixLib.webixMod.RecordBind = js.native
+  var RenderStack: webixLib.webixMod.RenderStack = js.native
+  var ResizeArea: webixLib.webixMod.ResizeArea = js.native
+  var Scrollable: webixLib.webixMod.Scrollable = js.native
+  var SelectionModel: webixLib.webixMod.SelectionModel = js.native
+  var Settings: webixLib.webixMod.Settings = js.native
+  var SingleRender: webixLib.webixMod.SingleRender = js.native
+  var Sparklines: webixLib.webixMod.Sparklines = js.native
+  var TablePaste: webixLib.webixMod.TablePaste = js.native
+  var Touch: webixLib.webixMod.Touch = js.native
+  var TreeAPI: webixLib.webixMod.TreeAPI = js.native
+  var TreeClick: webixLib.webixMod.TreeClick = js.native
+  var TreeCollection: webixLib.webixMod.TreeCollectionFactory = js.native
+  var TreeDataLoader: webixLib.webixMod.TreeDataLoader = js.native
+  var TreeDataMove: webixLib.webixMod.TreeDataMove = js.native
+  var TreeRenderStack: webixLib.webixMod.TreeRenderStack = js.native
+  var TreeStateCheckbox: webixLib.webixMod.TreeStateCheckbox = js.native
+  var TreeStore: webixLib.webixMod.TreeStore = js.native
+  var TreeTablePaste: webixLib.webixMod.TreeTablePaste = js.native
+  var TreeType: webixLib.webixMod.TreeType = js.native
+  var UIManager: webixLib.webixMod.UIManager = js.native
+  var Undo: webixLib.webixMod.Undo = js.native
+  var UploadDriver: webixLib.webixMod.UploadDriver = js.native
+  var VRenderStack: webixLib.webixMod.VRenderStack = js.native
+  var ValidateCollection: webixLib.webixMod.ValidateCollection = js.native
+  var ValidateData: webixLib.webixMod.ValidateData = js.native
+  var ValueBind: webixLib.webixMod.ValueBind = js.native
+  var Values: webixLib.webixMod.Values = js.native
+  var VirtualRenderStack: webixLib.webixMod.VirtualRenderStack = js.native
+  var clipbuffer: webixLib.webixMod.clipbuffer = js.native
+  var codebase: java.lang.String = js.native
+  var color: webixLib.webixMod.color = js.native
+  var csv: webixLib.webixMod.csv = js.native
+  var editors: webixLib.webixMod.editors = js.native
+  var env: webixLib.webixMod.env = js.native
+  var history: webixLib.webixMod.history = js.native
+  var html: webixLib.webixMod.html = js.native
+  var i18n: webixLib.webixMod.i18n = js.native
+  var locale: webixLib.webixMod.locale = js.native
+  var markup: webixLib.webixMod.markup = js.native
+  var name: java.lang.String = js.native
+  var promise: webixLib.webixMod.promise = js.native
+  var rules: webixLib.webixMod.rules = js.native
+  var storage: webixLib.webixMod.storage = js.native
+  var version: java.lang.String = js.native
+  @JSName("$$")
+  def $$(id: java.lang.String): webixLib.webixMod.uiNs.baseview = js.native
+  @JSName("$$")
+  def $$(id: stdLib.Event): webixLib.webixMod.uiNs.baseview = js.native
+  @JSName("$$")
+  def $$(id: stdLib.HTMLElement): webixLib.webixMod.uiNs.baseview = js.native
+  def ajax(): webixLib.webixMod._ajax = js.native
+  def alert(text: js.Any): stdLib.HTMLElement = js.native
+  def alert(text: js.Any, `type`: java.lang.String): stdLib.HTMLElement = js.native
+  def alert(text: js.Any, `type`: java.lang.String, callback: webixLib.WebixCallback): stdLib.HTMLElement = js.native
+  def alert(text: js.Any, `type`: webixLib.WebixCallback): stdLib.HTMLElement = js.native
+  def alert(text: js.Any, `type`: webixLib.WebixCallback, callback: webixLib.WebixCallback): stdLib.HTMLElement = js.native
+  def animate(html_element: stdLib.HTMLElement, animation: js.Any): scala.Unit = js.native
+  def attachEvent(`type`: java.lang.String, functor: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
+  def attachEvent(`type`: java.lang.String, functor: webixLib.WebixCallback, id: java.lang.String): java.lang.String | scala.Double = js.native
+  def bind(code: webixLib.WebixCallback, master: js.Any): webixLib.WebixCallback = js.native
+  def blockEvent(): scala.Unit = js.native
+  def callEvent(name: java.lang.String, params: js.Array[_]): scala.Boolean = js.native
+  def clone(source: js.Any): js.Any = js.native
+  def confirm(text: js.Any): stdLib.HTMLElement = js.native
+  def confirm(text: js.Any, `type`: java.lang.String): stdLib.HTMLElement = js.native
+  def confirm(text: js.Any, `type`: java.lang.String, callback: webixLib.WebixCallback): stdLib.HTMLElement = js.native
+  def confirm(text: js.Any, `type`: webixLib.WebixCallback): stdLib.HTMLElement = js.native
+  def confirm(text: js.Any, `type`: webixLib.WebixCallback, callback: webixLib.WebixCallback): stdLib.HTMLElement = js.native
+  def copy(source: js.Any): js.Any = js.native
+  def delay(code: webixLib.WebixCallback): scala.Double = js.native
+  def delay(code: webixLib.WebixCallback, owner: js.Any): scala.Double = js.native
+  def delay(code: webixLib.WebixCallback, owner: js.Any, params: js.Array[_]): scala.Double = js.native
+  def delay(code: webixLib.WebixCallback, owner: js.Any, params: js.Array[_], delay: scala.Double): scala.Double = js.native
+  def detachEvent(id: java.lang.String): scala.Unit = js.native
+  def dp(name: java.lang.String): js.Any = js.native
+  def editStop(): scala.Unit = js.native
+  def event(node: java.lang.String, event: java.lang.String, handler: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
+  def event(node: java.lang.String, event: java.lang.String, handler: webixLib.WebixCallback, context: js.Any): java.lang.String | scala.Double = js.native
+  def event(node: stdLib.HTMLElement, event: java.lang.String, handler: webixLib.WebixCallback): java.lang.String | scala.Double = js.native
+  def event(
+    node: stdLib.HTMLElement,
+    event: java.lang.String,
+    handler: webixLib.WebixCallback,
+    context: js.Any
+  ): java.lang.String | scala.Double = js.native
+  def eventRemove(id: java.lang.String): scala.Unit = js.native
+  def eventRemove(id: scala.Double): scala.Unit = js.native
+  def exec(code: java.lang.String): scala.Unit = js.native
+  def extend(target: js.Any, source: js.Any): js.Any = js.native
+  def extend(target: js.Any, source: js.Any, overwrite: scala.Boolean): js.Any = js.native
+  def hasEvent(name: java.lang.String): scala.Boolean = js.native
+  def isArray(check: js.Any): scala.Boolean = js.native
+  def isDate(check: js.Any): scala.Boolean = js.native
+  def isUndefined(check: js.Any): scala.Boolean = js.native
+  def jsonp(url: java.lang.String): scala.Unit = js.native
+  def jsonp(url: java.lang.String, params: js.Any): scala.Unit = js.native
+  def jsonp(url: java.lang.String, params: js.Any, callback: webixLib.WebixCallback): scala.Unit = js.native
+  def jsonp(url: java.lang.String, params: js.Any, callback: webixLib.WebixCallback, master: js.Any): scala.Unit = js.native
+  def mapEvent(map: js.Any): scala.Unit = js.native
+  def message(content: js.Any): scala.Unit = js.native
+  def message(content: js.Any, `type`: java.lang.String): scala.Unit = js.native
+  def message(content: js.Any, `type`: java.lang.String, expire: scala.Double): scala.Unit = js.native
+  def message(content: js.Any, `type`: java.lang.String, expire: scala.Double, id: java.lang.String): scala.Unit = js.native
+  def message(content: js.Any, `type`: java.lang.String, expire: scala.Double, id: scala.Double): scala.Unit = js.native
+  def modalbox(text: js.Any): stdLib.HTMLElement = js.native
+  def modalbox(text: js.Any, `type`: java.lang.String): stdLib.HTMLElement = js.native
+  def modalbox(text: js.Any, `type`: java.lang.String, callback: webixLib.WebixCallback): stdLib.HTMLElement = js.native
+  def modalbox(text: js.Any, `type`: webixLib.WebixCallback): stdLib.HTMLElement = js.native
+  def modalbox(text: js.Any, `type`: webixLib.WebixCallback, callback: webixLib.WebixCallback): stdLib.HTMLElement = js.native
+  def once(code: webixLib.WebixCallback): scala.Unit = js.native
+  def print(view: js.Any): scala.Unit = js.native
+  def print(view: js.Any, options: js.Any): scala.Unit = js.native
+  def proto(target: js.Any, mixins: js.Any*): js.Any = js.native
+  def protoUI(target: js.Any, mixins: js.Any*): js.Any = js.native
+  def proxy(`type`: java.lang.String, source: java.lang.String): js.Any = js.native
+  def ready(code: webixLib.WebixCallback): scala.Unit = js.native
+  def remote(): scala.Unit = js.native
+  def require(url: js.Any): js.Promise[_] = js.native
+  def require(url: js.Any, callback: webixLib.WebixCallback): js.Promise[_] = js.native
+  def require(url: js.Any, callback: webixLib.WebixCallback, master: js.Any): js.Promise[_] = js.native
+  def send(url: java.lang.String, values: js.Any, method: java.lang.String, target: java.lang.String): scala.Unit = js.native
+  def single(source: webixLib.WebixCallback): webixLib.WebixCallback = js.native
+  def stringify(obj: js.Any): java.lang.String = js.native
+  def template(template: java.lang.String): webixLib.WebixCallback = js.native
+  def toArray(array: js.Array[_]): js.Array[_] = js.native
+  def toCSV(id: js.Any): js.Any = js.native
+  def toCSV(id: js.Any, options: js.Any): js.Any = js.native
+  def toExcel(id: js.Any): js.Any = js.native
+  def toExcel(id: js.Any, options: js.Any): js.Any = js.native
+  def toFunctor(name: java.lang.String): webixLib.WebixCallback = js.native
+  def toNode(id: java.lang.String): stdLib.HTMLElement = js.native
+  def toPDF(id: js.Any): js.Any = js.native
+  def toPDF(id: js.Any, options: js.Any): js.Any = js.native
+  def toPNG(id: js.Any): js.Any = js.native
+  def toPNG(id: js.Any, options: js.Any): js.Any = js.native
+  def `type`(config: js.Any): scala.Unit = js.native
+  def ui(config: js.Any): webixLib.webixMod.uiNs.baseview = js.native
+  def ui(config: js.Any, parent: js.Any): webixLib.webixMod.uiNs.baseview = js.native
+  def ui(config: js.Any, parent: js.Any, replacement: js.Any): webixLib.webixMod.uiNs.baseview = js.native
+  def uid(): scala.Double = js.native
+  def unblockEvent(): scala.Unit = js.native
+  def wrap(target: webixLib.WebixCallback, source: webixLib.WebixCallback): webixLib.WebixCallback = js.native
+}
+
