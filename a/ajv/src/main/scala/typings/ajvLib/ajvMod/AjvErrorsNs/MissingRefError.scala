@@ -1,5 +1,5 @@
 package typings
-package ajvLib.ajvMod
+package ajvLib.ajvMod.AjvErrorsNs
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`

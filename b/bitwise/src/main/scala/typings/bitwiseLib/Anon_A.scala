@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Anon_AndBits extends js.Object {
-  def and(buffer1: nodeLib.Buffer, buffer2: nodeLib.Buffer): nodeLib.Buffer = js.native
-  def and(buffer1: nodeLib.Buffer, buffer2: nodeLib.Buffer, isLooping: scala.Boolean): nodeLib.Buffer = js.native
+trait Anon_A extends js.Object {
+  def and(a: nodeLib.Buffer, b: nodeLib.Buffer): nodeLib.Buffer = js.native
+  def and(a: nodeLib.Buffer, b: nodeLib.Buffer, isLooping: scala.Boolean): nodeLib.Buffer = js.native
   def create(
     bits: js.Array[
       /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_bitwise/types.Bit */ _
@@ -27,13 +27,13 @@ trait Anon_AndBits extends js.Object {
     ],
     offset: scala.Double
   ): scala.Unit = js.native
-  def nand(buffer1: nodeLib.Buffer, buffer2: nodeLib.Buffer): nodeLib.Buffer = js.native
-  def nand(buffer1: nodeLib.Buffer, buffer2: nodeLib.Buffer, isLooping: scala.Boolean): nodeLib.Buffer = js.native
-  def nor(buffer1: nodeLib.Buffer, buffer2: nodeLib.Buffer): nodeLib.Buffer = js.native
-  def nor(buffer1: nodeLib.Buffer, buffer2: nodeLib.Buffer, isLooping: scala.Boolean): nodeLib.Buffer = js.native
+  def nand(a: nodeLib.Buffer, b: nodeLib.Buffer): nodeLib.Buffer = js.native
+  def nand(a: nodeLib.Buffer, b: nodeLib.Buffer, isLooping: scala.Boolean): nodeLib.Buffer = js.native
+  def nor(a: nodeLib.Buffer, b: nodeLib.Buffer): nodeLib.Buffer = js.native
+  def nor(a: nodeLib.Buffer, b: nodeLib.Buffer, isLooping: scala.Boolean): nodeLib.Buffer = js.native
   def not(buffer: nodeLib.Buffer): nodeLib.Buffer = js.native
-  def or(buffer1: nodeLib.Buffer, buffer2: nodeLib.Buffer): nodeLib.Buffer = js.native
-  def or(buffer1: nodeLib.Buffer, buffer2: nodeLib.Buffer, isLooping: scala.Boolean): nodeLib.Buffer = js.native
+  def or(a: nodeLib.Buffer, b: nodeLib.Buffer): nodeLib.Buffer = js.native
+  def or(a: nodeLib.Buffer, b: nodeLib.Buffer, isLooping: scala.Boolean): nodeLib.Buffer = js.native
   def read(buffer: nodeLib.Buffer): js.Array[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_bitwise/types.Bit */ _
   ] = js.native
@@ -49,9 +49,9 @@ trait Anon_AndBits extends js.Object {
   def readUInt(buffer: nodeLib.Buffer): scala.Double = js.native
   def readUInt(buffer: nodeLib.Buffer, offset: scala.Double): scala.Double = js.native
   def readUInt(buffer: nodeLib.Buffer, offset: scala.Double, length: scala.Double): scala.Double = js.native
-  def xnor(buffer1: nodeLib.Buffer, buffer2: nodeLib.Buffer): nodeLib.Buffer = js.native
-  def xnor(buffer1: nodeLib.Buffer, buffer2: nodeLib.Buffer, isLooping: scala.Boolean): nodeLib.Buffer = js.native
-  def xor(buffer1: nodeLib.Buffer, buffer2: nodeLib.Buffer): nodeLib.Buffer = js.native
-  def xor(buffer1: nodeLib.Buffer, buffer2: nodeLib.Buffer, isLooping: scala.Boolean): nodeLib.Buffer = js.native
+  def xnor(a: nodeLib.Buffer, b: nodeLib.Buffer): nodeLib.Buffer = js.native
+  def xnor(a: nodeLib.Buffer, b: nodeLib.Buffer, isLooping: scala.Boolean): nodeLib.Buffer = js.native
+  def xor(a: nodeLib.Buffer, b: nodeLib.Buffer): nodeLib.Buffer = js.native
+  def xor(a: nodeLib.Buffer, b: nodeLib.Buffer, isLooping: scala.Boolean): nodeLib.Buffer = js.native
 }
 

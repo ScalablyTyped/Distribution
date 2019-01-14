@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-route"
-version := "3.2-dt-20180625Z-857907"
+version := "3.2-dt-20180625Z-eceafa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20180214Z-7f96e5",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-6294fd",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2be335",
-  "org.scalablytyped" %%% "path-to-regexp" % "2.4.0-e7209b",
+  "org.scalablytyped" %%% "path-to-regexp" % "3.0.0-d6ad91",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-d115b2",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-91019c",
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1")

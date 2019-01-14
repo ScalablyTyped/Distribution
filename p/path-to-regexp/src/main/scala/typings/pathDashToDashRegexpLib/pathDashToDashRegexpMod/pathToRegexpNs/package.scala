@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 package object pathToRegexpNs {
   type Path = java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp])
-  type PathFunction = js.Function2[
-    /* data */ js.UndefOr[js.Object], 
+  type PathFunction[P /* <: js.Object */] = js.Function2[
+    /* data */ js.UndefOr[P], 
     /* options */ js.UndefOr[PathFunctionOptions], 
     java.lang.String
   ]

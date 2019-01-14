@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "app-builder-lib"
-version := "20.38.4-2600e4"
+version := "20.38.4-930b06"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "7zip-bin" % "4.1.0-af3dc6",
-  "org.scalablytyped" %%% "ajv" % "6.6.2-958b1c",
+  "org.scalablytyped" %%% "ajv" % "6.7.0-b81c67",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-b48f67",
   "org.scalablytyped" %%% "app-builder-bin" % "2.6.1-c60a57",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-6bd481",
@@ -40,7 +40,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "normalize-package-data" % "2.4-dt-20180214Z-6377b0",
   "org.scalablytyped" %%% "plist" % "3.0-dt-20181029Z-a29dd6",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-1e0ea5",
-  "org.scalablytyped" %%% "read-config-file" % "3.2.0-5d3551",
+  "org.scalablytyped" %%% "read-config-file" % "3.2.0-a36a46",
   "org.scalablytyped" %%% "sanitize-filename" % "v1.1.1-dt-20180214Z-1e11ee",
   "org.scalablytyped" %%% "sax" % "1.x-dt-20180616Z-3eb7b5",
   "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-6f52c3",

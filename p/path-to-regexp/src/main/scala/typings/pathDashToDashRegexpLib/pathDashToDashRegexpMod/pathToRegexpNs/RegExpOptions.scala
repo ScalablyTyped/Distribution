@@ -30,5 +30,9 @@ trait RegExpOptions extends js.Object {
     * When `true` the regexp allows an optional trailing delimiter to match. (default: `false`)
     */
   var strict: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * List of characters to consider delimiters when parsing. (default: `undefined`, any character)
+    */
+  var whitelist: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 

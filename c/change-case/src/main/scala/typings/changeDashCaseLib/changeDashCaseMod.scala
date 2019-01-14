@@ -26,6 +26,10 @@ object changeDashCaseMod extends js.Object {
   def header(value: java.lang.String, locale: java.lang.String): java.lang.String = js.native
   def headerCase(value: java.lang.String): java.lang.String = js.native
   def headerCase(value: java.lang.String, locale: java.lang.String): java.lang.String = js.native
+  def hyphen(value: java.lang.String): java.lang.String = js.native
+  def hyphen(value: java.lang.String, locale: java.lang.String): java.lang.String = js.native
+  def hyphenCase(value: java.lang.String): java.lang.String = js.native
+  def hyphenCase(value: java.lang.String, locale: java.lang.String): java.lang.String = js.native
   def isLower(value: java.lang.String): scala.Boolean = js.native
   def isLower(value: java.lang.String, locale: java.lang.String): scala.Boolean = js.native
   def isLowerCase(value: java.lang.String): scala.Boolean = js.native
@@ -34,6 +38,10 @@ object changeDashCaseMod extends js.Object {
   def isUpper(value: java.lang.String, locale: java.lang.String): java.lang.String = js.native
   def isUpperCase(value: java.lang.String): java.lang.String = js.native
   def isUpperCase(value: java.lang.String, locale: java.lang.String): java.lang.String = js.native
+  def kebab(value: java.lang.String): java.lang.String = js.native
+  def kebab(value: java.lang.String, locale: java.lang.String): java.lang.String = js.native
+  def kebabCase(value: java.lang.String): java.lang.String = js.native
+  def kebabCase(value: java.lang.String, locale: java.lang.String): java.lang.String = js.native
   def lcFirst(value: java.lang.String): java.lang.String = js.native
   def lcFirst(value: java.lang.String, locale: java.lang.String): java.lang.String = js.native
   def lower(value: java.lang.String): java.lang.String = js.native

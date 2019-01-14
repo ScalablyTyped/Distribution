@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "electron-builder"
-version := "20.38.4-5d5c4f"
+version := "20.38.4-8b9389"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "7zip-bin" % "4.1.0-af3dc6",
-  "org.scalablytyped" %%% "ajv" % "6.6.2-958b1c",
+  "org.scalablytyped" %%% "ajv" % "6.7.0-b81c67",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-b48f67",
   "org.scalablytyped" %%% "app-builder-bin" % "2.6.1-c60a57",
-  "org.scalablytyped" %%% "app-builder-lib" % "20.38.4-2600e4",
+  "org.scalablytyped" %%% "app-builder-lib" % "20.38.4-930b06",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-6bd481",
   "org.scalablytyped" %%% "bluebird-lst" % "1.0.6-58dc1d",
   "org.scalablytyped" %%% "builder-util" % "9.6.1-5e8d46",
@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-528543",
   "org.scalablytyped" %%% "compare-version" % "v0.1.2-dt-20180214Z-79a5ba",
   "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-315ade",
-  "org.scalablytyped" %%% "dmg-builder" % "6.5.3-5ed70f",
+  "org.scalablytyped" %%% "dmg-builder" % "6.5.3-5cff17",
   "org.scalablytyped" %%% "dotenv" % "6.1-dt-20181101Z-be1c74",
   "org.scalablytyped" %%% "dotenv-expand" % "4.2.0-663bd0",
   "org.scalablytyped" %%% "ejs" % "2.6-dt-20181126Z-cec9a8",
@@ -43,7 +43,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "normalize-package-data" % "2.4-dt-20180214Z-6377b0",
   "org.scalablytyped" %%% "plist" % "3.0-dt-20181029Z-a29dd6",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-1e0ea5",
-  "org.scalablytyped" %%% "read-config-file" % "3.2.0-5d3551",
+  "org.scalablytyped" %%% "read-config-file" % "3.2.0-a36a46",
   "org.scalablytyped" %%% "sanitize-filename" % "v1.1.1-dt-20180214Z-1e11ee",
   "org.scalablytyped" %%% "sax" % "1.x-dt-20180616Z-3eb7b5",
   "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-6f52c3",

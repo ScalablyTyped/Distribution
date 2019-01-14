@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "ajv-errors"
-version := "1.0-dt-20181017Z-50a386"
+version := "1.0-dt-20181017Z-c9b4a9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ajv" % "6.6.2-958b1c",
+  "org.scalablytyped" %%% "ajv" % "6.7.0-b81c67",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-a47544",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-42ebaa",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-1e0ea5",

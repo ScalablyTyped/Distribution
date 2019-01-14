@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bignumber_dot_js"
-version := "8.0.1-a433ca"
+version := "8.0.2-a433ca"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

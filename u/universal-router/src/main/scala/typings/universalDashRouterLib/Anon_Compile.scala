@@ -18,17 +18,17 @@ trait Anon_Compile extends js.Object {
     keys: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Key],
     options: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.RegExpOptions with pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.ParseOptions
   ): stdLib.RegExp = js.native
-  def compile(path: java.lang.String): pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.PathFunction = js.native
-  def compile(
+  def compile[P /* <: js.Object */](path: java.lang.String): pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.PathFunction[P] = js.native
+  def compile[P /* <: js.Object */](
     path: java.lang.String,
     options: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.ParseOptions
-  ): pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.PathFunction = js.native
+  ): pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.PathFunction[P] = js.native
   def parse(path: java.lang.String): js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Token] = js.native
   def parse(
     path: java.lang.String,
     options: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.ParseOptions
   ): js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Token] = js.native
-  def tokensToFunction(tokens: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Token]): pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.PathFunction = js.native
+  def tokensToFunction[P /* <: js.Object */](tokens: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Token]): pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.PathFunction[P] = js.native
   def tokensToRegExp(tokens: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Token]): stdLib.RegExp = js.native
   def tokensToRegExp(
     tokens: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Token],
