@@ -2220,6 +2220,8 @@ trait Anon_A extends js.Object {
     point: js.Tuple2[scala.Double, scala.Double]
   ): scala.Boolean = js.native
   def geoDistance(a: js.Tuple2[scala.Double, scala.Double], b: js.Tuple2[scala.Double, scala.Double]): scala.Double = js.native
+  def geoEqualEarth(): d3DashGeoLib.d3DashGeoMod.GeoProjection = js.native
+  def geoEqualEarthRaw(): d3DashGeoLib.d3DashGeoMod.GeoRawProjection = js.native
   def geoEquirectangular(): d3DashGeoLib.d3DashGeoMod.GeoProjection = js.native
   def geoEquirectangularRaw(): d3DashGeoLib.d3DashGeoMod.GeoRawProjection = js.native
   def geoGnomonic(): d3DashGeoLib.d3DashGeoMod.GeoProjection = js.native

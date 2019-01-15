@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait ValidationError extends js.Object {
   val context: Context
-  val value: mixed
+  val value: js.Any
 }
 

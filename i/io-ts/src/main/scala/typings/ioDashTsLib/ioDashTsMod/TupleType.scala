@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("io-ts", "TupleType")
 @js.native
-class TupleType[RTS /* <: fpDashTsLib.libArrayMod.Global.Array[Any] */, A, O, I] protected () extends Type[A, O, I] {
-  def this(name: java.lang.String, is: Is[A], validate: Validate[I, A], encode: Encode[A, O], types: RTS) = this()
+class TupleType[CS /* <: fpDashTsLib.libArrayMod.Global.Array[Any] */, A, O, I] protected () extends Type[A, O, I] {
+  def this(name: java.lang.String, is: Is[A], validate: Validate[I, A], encode: Encode[A, O], types: CS) = this()
   val _tag: ioDashTsLib.ioDashTsLibStrings.TupleType = js.native
-  val types: RTS = js.native
+  val types: CS = js.native
 }
 

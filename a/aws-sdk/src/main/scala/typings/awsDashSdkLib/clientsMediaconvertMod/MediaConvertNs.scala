@@ -11,7 +11,7 @@ object MediaConvertNs extends js.Object {
   trait AacSettings extends js.Object {
     var AudioDescriptionBroadcasterMix: js.UndefOr[AacAudioDescriptionBroadcasterMix] = js.undefined
     /**
-      * Average bitrate in bits/second. Defaults and valid values depend on rate control mode and profile.
+      * Average bitrate in bits/second. The set of valid values for this setting is: 6000, 8000, 10000, 12000, 14000, 16000, 20000, 24000, 28000, 32000, 40000, 48000, 56000, 64000, 80000, 96000, 112000, 128000, 160000, 192000, 224000, 256000, 288000, 320000, 384000, 448000, 512000, 576000, 640000, 768000, 896000, 1024000. The value you set is also constrained by the values you choose for Profile (codecProfile), Bitrate control mode (codingMode), and Sample rate (sampleRate). Default values depend on Bitrate control mode and Profile.
       */
     var Bitrate: js.UndefOr[__integerMin6000Max1024000] = js.undefined
     var CodecProfile: js.UndefOr[AacCodecProfile] = js.undefined
@@ -44,6 +44,13 @@ object MediaConvertNs extends js.Object {
       * Sample rate in hz. Sample rate is always 48000.
       */
     var SampleRate: js.UndefOr[__integerMin48000Max48000] = js.undefined
+  }
+  
+  trait AccelerationSettings extends js.Object {
+    /**
+      * Acceleration configuration for the job.
+      */
+    var Mode: AccelerationMode
   }
   
   trait AiffSettings extends js.Object {
@@ -205,6 +212,10 @@ object MediaConvertNs extends js.Object {
       */
     var FontResolution: js.UndefOr[__integerMin96Max600] = js.undefined
     /**
+      * Provide the font script, using an ISO 15924 script code, if the LanguageCode is not sufficient for determining the script type. Where LanguageCode or CustomLanguageCode is sufficient, use "AUTOMATIC" or leave unset. This is used to help determine the appropriate font for rendering burn-in captions.
+      */
+    var FontScript: js.UndefOr[FontScript] = js.undefined
+    /**
       * A positive integer indicates the exact font size in points. Set to 0 for automatic font size selection. All burn-in and DVB-Sub font settings must match.
       */
     var FontSize: js.UndefOr[__integerMin0Max96] = js.undefined
@@ -252,12 +263,12 @@ object MediaConvertNs extends js.Object {
       */
     var CaptionSelectorName: js.UndefOr[__stringMin1] = js.undefined
     /**
-      * Indicates the language of the caption output track, using the ISO 639-2 or ISO 639-3 three-letter language code
+      * Indicates the language of the caption output track, using the ISO 639-2 or ISO 639-3 three-letter language code. For most captions output formats, the encoder puts this language information in the output captions metadata. If your output captions format is DVB-Sub or Burn in, the encoder uses this language information to choose the font language for rendering the captions text.
       */
     var CustomLanguageCode: js.UndefOr[__stringMin3Max3PatternAZaZ3] = js.undefined
     var DestinationSettings: js.UndefOr[CaptionDestinationSettings] = js.undefined
     /**
-      * Indicates the language of the caption output track.
+      * Specify the language of this captions output track. For most captions output formats, the encoder puts this language information in the output captions metadata. If your output captions format is DVB-Sub or Burn in, the encoder uses this language information to choose the font language for rendering the captions text.
       */
     var LanguageCode: js.UndefOr[LanguageCode] = js.undefined
     /**
@@ -268,12 +279,12 @@ object MediaConvertNs extends js.Object {
   
   trait CaptionDescriptionPreset extends js.Object {
     /**
-      * Indicates the language of the caption output track, using the ISO 639-2 or ISO 639-3 three-letter language code
+      * Indicates the language of the caption output track, using the ISO 639-2 or ISO 639-3 three-letter language code. For most captions output formats, the encoder puts this language information in the output captions metadata. If your output captions format is DVB-Sub or Burn in, the encoder uses this language information to choose the font language for rendering the captions text.
       */
     var CustomLanguageCode: js.UndefOr[__stringMin3Max3PatternAZaZ3] = js.undefined
     var DestinationSettings: js.UndefOr[CaptionDestinationSettings] = js.undefined
     /**
-      * Indicates the language of the caption output track.
+      * Specify the language of this captions output track. For most captions output formats, the encoder puts this language information in the output captions metadata. If your output captions format is DVB-Sub or Burn in, the encoder uses this language information to choose the font language for rendering the captions text.
       */
     var LanguageCode: js.UndefOr[LanguageCode] = js.undefined
     /**
@@ -286,6 +297,7 @@ object MediaConvertNs extends js.Object {
     var BurninDestinationSettings: js.UndefOr[BurninDestinationSettings] = js.undefined
     var DestinationType: js.UndefOr[CaptionDestinationType] = js.undefined
     var DvbSubDestinationSettings: js.UndefOr[DvbSubDestinationSettings] = js.undefined
+    var EmbeddedDestinationSettings: js.UndefOr[EmbeddedDestinationSettings] = js.undefined
     var SccDestinationSettings: js.UndefOr[SccDestinationSettings] = js.undefined
     var TeletextDestinationSettings: js.UndefOr[TeletextDestinationSettings] = js.undefined
     var TtmlDestinationSettings: js.UndefOr[TtmlDestinationSettings] = js.undefined
@@ -310,6 +322,7 @@ object MediaConvertNs extends js.Object {
     var FileSourceSettings: js.UndefOr[FileSourceSettings] = js.undefined
     var SourceType: js.UndefOr[CaptionSourceType] = js.undefined
     var TeletextSourceSettings: js.UndefOr[TeletextSourceSettings] = js.undefined
+    var TrackSourceSettings: js.UndefOr[TrackSourceSettings] = js.undefined
   }
   
   trait ChannelMapping extends js.Object {
@@ -386,6 +399,9 @@ object MediaConvertNs extends js.Object {
       * Contrast level.
       */
     var Contrast: js.UndefOr[__integerMin1Max100] = js.undefined
+    /**
+      * Use the HDR master display (Hdr10Metadata) settings to correct HDR metadata or to provide missing metadata. Note that these settings are not color correction.
+      */
     var Hdr10Metadata: js.UndefOr[Hdr10Metadata] = js.undefined
     /**
       * Hue in degrees.
@@ -407,6 +423,10 @@ object MediaConvertNs extends js.Object {
   }
   
   trait CreateJobRequest extends js.Object {
+    /**
+      * This is a beta feature. If you are interested in using this feature, please contact AWS customer support.
+      */
+    var AccelerationSettings: js.UndefOr[AccelerationSettings] = js.undefined
     var BillingTagsSource: js.UndefOr[BillingTagsSource] = js.undefined
     /**
       * Idempotency token for CreateJob operation.
@@ -436,6 +456,10 @@ object MediaConvertNs extends js.Object {
   }
   
   trait CreateJobTemplateRequest extends js.Object {
+    /**
+      * This is a beta feature. If you are interested in using this feature please contact AWS customer support.
+      */
+    var AccelerationSettings: js.UndefOr[AccelerationSettings] = js.undefined
     /**
       * Optional. A category for the job template you are creating
       */
@@ -666,6 +690,10 @@ object MediaConvertNs extends js.Object {
       */
     var FontResolution: js.UndefOr[__integerMin96Max600] = js.undefined
     /**
+      * Provide the font script, using an ISO 15924 script code, if the LanguageCode is not sufficient for determining the script type. Where LanguageCode or CustomLanguageCode is sufficient, use "AUTOMATIC" or leave unset. This is used to help determine the appropriate font for rendering DVB-Sub captions.
+      */
+    var FontScript: js.UndefOr[FontScript] = js.undefined
+    /**
       * A positive integer indicates the exact font size in points. Set to 0 for automatic font size selection. All burn-in and DVB-Sub font settings must match.
       */
     var FontSize: js.UndefOr[__integerMin0Max96] = js.undefined
@@ -759,6 +787,13 @@ object MediaConvertNs extends js.Object {
     var StereoDownmix: js.UndefOr[Eac3StereoDownmix] = js.undefined
     var SurroundExMode: js.UndefOr[Eac3SurroundExMode] = js.undefined
     var SurroundMode: js.UndefOr[Eac3SurroundMode] = js.undefined
+  }
+  
+  trait EmbeddedDestinationSettings extends js.Object {
+    /**
+      * Ignore this setting unless your input captions are SCC format and your output container is MXF. With this combination of input captions format and output container, you can optionally use this setting to replace the input channel number with the track number that you specify. If you don't specify an output track number, the system uses the input channel number for the output channel number. This setting applies to each output individually. Channels must be unique and may only be combined in the following combinations: (1+3, 2+4, 1+4, 2+3).
+      */
+    var Destination608ChannelNumber: js.UndefOr[__integerMin1Max4] = js.undefined
   }
   
   trait EmbeddedSourceSettings extends js.Object {
@@ -895,11 +930,11 @@ object MediaConvertNs extends js.Object {
     var FramerateControl: js.UndefOr[H264FramerateControl] = js.undefined
     var FramerateConversionAlgorithm: js.UndefOr[H264FramerateConversionAlgorithm] = js.undefined
     /**
-      * When you use the API for transcode jobs that use framerate conversion, specify the framerate as a fraction. For example,  24000 / 1001 = 23.976 fps. Use FramerateDenominator to specify the denominator of this fraction. In this example, use 1001 for the value of FramerateDenominator. When you use the console for transcode jobs that use framerate conversion, provide the value as a decimal number for Framerate. In this example, specify 23.976.
+      * When you use the API for transcode jobs that use frame rate conversion, specify the frame rate as a fraction. For example,  24000 / 1001 = 23.976 fps. Use FramerateDenominator to specify the denominator of this fraction. In this example, use 1001 for the value of FramerateDenominator. When you use the console for transcode jobs that use frame rate conversion, provide the value as a decimal number for Framerate. In this example, specify 23.976.
       */
     var FramerateDenominator: js.UndefOr[__integerMin1Max2147483647] = js.undefined
     /**
-      * Framerate numerator - framerate is a fraction, e.g. 24000 / 1001 = 23.976 fps.
+      * Frame rate numerator - frame rate is a fraction, e.g. 24000 / 1001 = 23.976 fps.
       */
     var FramerateNumerator: js.UndefOr[__integerMin1Max2147483647] = js.undefined
     var GopBReference: js.UndefOr[H264GopBReference] = js.undefined
@@ -998,11 +1033,11 @@ object MediaConvertNs extends js.Object {
     var FramerateControl: js.UndefOr[H265FramerateControl] = js.undefined
     var FramerateConversionAlgorithm: js.UndefOr[H265FramerateConversionAlgorithm] = js.undefined
     /**
-      * Framerate denominator.
+      * Frame rate denominator.
       */
     var FramerateDenominator: js.UndefOr[__integerMin1Max2147483647] = js.undefined
     /**
-      * Framerate numerator - framerate is a fraction, e.g. 24000 / 1001 = 23.976 fps.
+      * Frame rate numerator - frame rate is a fraction, e.g. 24000 / 1001 = 23.976 fps.
       */
     var FramerateNumerator: js.UndefOr[__integerMin1Max2147483647] = js.undefined
     var GopBReference: js.UndefOr[H265GopBReference] = js.undefined
@@ -1262,15 +1297,15 @@ object MediaConvertNs extends js.Object {
     var CaptionSelectors: js.UndefOr[__mapOfCaptionSelector] = js.undefined
     var DeblockFilter: js.UndefOr[InputDeblockFilter] = js.undefined
     /**
-      * If the input file is encrypted, decryption settings to decrypt the media file
+      * Settings for decrypting any input files that are encrypted.
       */
     var DecryptionSettings: js.UndefOr[InputDecryptionSettings] = js.undefined
     var DenoiseFilter: js.UndefOr[InputDenoiseFilter] = js.undefined
     /**
-      * Use Input (fileInput) to define the source file used in the transcode job. There can be multiple inputs in a job. These inputs are concantenated, in the order they are specified in the job, to create the output.
+      * Specify the source file for your transcoding job. You can use multiple inputs in a single job. The service concatenates these inputs, in the order that you specify them in the job, to create the outputs. If your input format is IMF, specify your input by providing the path to your CPL. For example, "s3://bucket/vf/cpl.xml". If the CPL is in an incomplete IMP, make sure to use *Supplemental IMPs* (SupplementalImps) to specify any supplemental IMPs that contain assets referenced by the CPL.
       */
     var FileInput: js.UndefOr[
-        __stringPatternS3MM2VVMMPPEEGGAAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MM
+        __stringPatternS3MM2VVMMPPEEGGAAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLL
       ] = js.undefined
     var FilterEnable: js.UndefOr[InputFilterEnable] = js.undefined
     /**
@@ -1278,7 +1313,7 @@ object MediaConvertNs extends js.Object {
       */
     var FilterStrength: js.UndefOr[__integerMinNegative5Max5] = js.undefined
     /**
-      * Enable the Image inserter (ImageInserter) feature to include a graphic overlay on your video. Enable or disable this feature for each input individually. This setting is disabled by default.
+      * Enable the image inserter feature to include a graphic overlay on your video. Enable or disable this feature for each input individually. This setting is disabled by default.
       */
     var ImageInserter: js.UndefOr[ImageInserter] = js.undefined
     /**
@@ -1290,6 +1325,10 @@ object MediaConvertNs extends js.Object {
       */
     var ProgramNumber: js.UndefOr[__integerMin1Max2147483647] = js.undefined
     var PsiControl: js.UndefOr[InputPsiControl] = js.undefined
+    /**
+      * Provide a list of any necessary supplemental IMPs. You need supplemental IMPs if the CPL that you're using for your input is in an incomplete IMP. Specify either the supplemental IMP directories with a trailing slash or the ASSETMAP.xml files. For example ["s3://bucket/ov/", "s3://bucket/vf2/ASSETMAP.xml"]. You don't need to specify the IMP that contains your input CPL, because the service automatically detects it.
+      */
+    var SupplementalImps: js.UndefOr[__listOf__stringPatternS3ASSETMAPXml] = js.undefined
     var TimecodeSource: js.UndefOr[InputTimecodeSource] = js.undefined
     var VideoSelector: js.UndefOr[VideoSelector] = js.undefined
   }
@@ -1342,7 +1381,7 @@ object MediaConvertNs extends js.Object {
       */
     var FilterStrength: js.UndefOr[__integerMinNegative5Max5] = js.undefined
     /**
-      * Enable the Image inserter (ImageInserter) feature to include a graphic overlay on your video. Enable or disable this feature for each input individually. This setting is disabled by default.
+      * Enable the image inserter feature to include a graphic overlay on your video. Enable or disable this feature for each input individually. This setting is disabled by default.
       */
     var ImageInserter: js.UndefOr[ImageInserter] = js.undefined
     /**
@@ -1360,11 +1399,11 @@ object MediaConvertNs extends js.Object {
   
   trait InsertableImage extends js.Object {
     /**
-      * Set the time, in milliseconds, for the image to remain on the output video.
+      * Specify the time, in milliseconds, for the image to remain on the output video. This duration includes fade-in time but not fade-out time.
       */
     var Duration: js.UndefOr[__integerMin0Max2147483647] = js.undefined
     /**
-      * Set the length of time, in milliseconds, between the Start time that you specify for the image insertion and the time that the image appears at full opacity. Full opacity is the level that you specify for the opacity setting. If you don't specify a value for Fade-in, the image will appear abruptly at the overlay start time.
+      * Specify the length of time, in milliseconds, between the Start time that you specify for the image insertion and the time that the image appears at full opacity. Full opacity is the level that you specify for the opacity setting. If you don't specify a value for Fade-in, the image will appear abruptly at the overlay start time.
       */
     var FadeIn: js.UndefOr[__integerMin0Max2147483647] = js.undefined
     /**
@@ -1376,15 +1415,15 @@ object MediaConvertNs extends js.Object {
       */
     var Height: js.UndefOr[__integerMin0Max2147483647] = js.undefined
     /**
-      * Use Image location (imageInserterInput) to specify the Amazon S3 location of the image to be inserted into the output. Use a PNG or TGA file that fits inside the video frame.
+      * Specify the Amazon S3 location of the image that you want to overlay on the video. Use a PNG or TGA file.
       */
     var ImageInserterInput: js.UndefOr[__stringMin14PatternS3BmpBMPPngPNGTgaTGA] = js.undefined
     /**
-      * Use Left (ImageX) to set the distance, in pixels, between the inserted image and the left edge of the video frame. Required for any image overlay that you specify.
+      * Specify the distance, in pixels, between the inserted image and the left edge of the video frame. Required for any image overlay that you specify.
       */
     var ImageX: js.UndefOr[__integerMin0Max2147483647] = js.undefined
     /**
-      * Use Top (ImageY) to set the distance, in pixels, between the overlaid image and the top edge of the video frame. Required for any image overlay that you specify.
+      * Specify the distance, in pixels, between the overlaid image and the top edge of the video frame. Required for any image overlay that you specify.
       */
     var ImageY: js.UndefOr[__integerMin0Max2147483647] = js.undefined
     /**
@@ -1396,7 +1435,7 @@ object MediaConvertNs extends js.Object {
       */
     var Opacity: js.UndefOr[__integerMin0Max100] = js.undefined
     /**
-      * Use Start time (StartTime) to specify the video timecode when the image is inserted in the output. This must be in timecode (HH:MM:SS:FF or HH:MM:SS;FF) format.
+      * Specify the timecode of the frame that you want the overlay to first appear on. This must be in timecode (HH:MM:SS:FF or HH:MM:SS;FF) format. Remember to take into account your timecode source settings.
       */
     var StartTime: js.UndefOr[__stringPattern01D20305D205D] = js.undefined
     /**
@@ -1406,6 +1445,10 @@ object MediaConvertNs extends js.Object {
   }
   
   trait Job extends js.Object {
+    /**
+      * Acceleration settings for job execution.
+      */
+    var AccelerationSettings: js.UndefOr[AccelerationSettings] = js.undefined
     /**
       * An identifier for this resource that is unique within all of AWS.
       */
@@ -1482,6 +1525,10 @@ object MediaConvertNs extends js.Object {
   }
   
   trait JobTemplate extends js.Object {
+    /**
+      * Acceleration settings for job execution.
+      */
+    var AccelerationSettings: js.UndefOr[AccelerationSettings] = js.undefined
     /**
       * An identifier for this resource that is unique within all of AWS.
       */
@@ -1694,6 +1741,7 @@ object MediaConvertNs extends js.Object {
     var EbpAudioInterval: js.UndefOr[M2tsEbpAudioInterval] = js.undefined
     var EbpPlacement: js.UndefOr[M2tsEbpPlacement] = js.undefined
     var EsRateInPes: js.UndefOr[M2tsEsRateInPes] = js.undefined
+    var ForceTsVideoEbpOrder: js.UndefOr[M2tsForceTsVideoEbpOrder] = js.undefined
     /**
       * The length in seconds of each fragment. Only used with EBP markers.
       */
@@ -1819,7 +1867,7 @@ object MediaConvertNs extends js.Object {
   
   trait MotionImageInserter extends js.Object {
     /**
-      * If your motion graphic asset is a .mov file, keep this setting unspecified. If your motion graphic asset is a series of .png files, specify the framerate of the overlay in frames per second, as a fraction. For example, specify 24 fps as 24/1. Make sure that the number of images in your series matches the framerate and your intended overlay duration. For example, if you want a 30-second overlay at 30 fps, you should have 900 .png images. This overlay framerate doesn't need to match the framerate of the underlying video.
+      * If your motion graphic asset is a .mov file, keep this setting unspecified. If your motion graphic asset is a series of .png files, specify the frame rate of the overlay in frames per second, as a fraction. For example, specify 24 fps as 24/1. Make sure that the number of images in your series matches the frame rate and your intended overlay duration. For example, if you want a 30-second overlay at 30 fps, you should have 900 .png images. This overlay frame rate doesn't need to match the frame rate of the underlying video.
       */
     var Framerate: js.UndefOr[MotionImageInsertionFramerate] = js.undefined
     /**
@@ -1846,11 +1894,11 @@ object MediaConvertNs extends js.Object {
   
   trait MotionImageInsertionFramerate extends js.Object {
     /**
-      * The bottom of the fraction that expresses your overlay framerate. For example, if your framerate is 24 fps, set this value to 1.
+      * The bottom of the fraction that expresses your overlay frame rate. For example, if your frame rate is 24 fps, set this value to 1.
       */
     var FramerateDenominator: js.UndefOr[__integerMin1Max17895697] = js.undefined
     /**
-      * The top of the fraction that expresses your overlay framerate. For example, if your framerate is 24 fps, set this value to 24.
+      * The top of the fraction that expresses your overlay frame rate. For example, if your frame rate is 24 fps, set this value to 24.
       */
     var FramerateNumerator: js.UndefOr[__integerMin1Max2147483640] = js.undefined
   }
@@ -1914,11 +1962,11 @@ object MediaConvertNs extends js.Object {
     var FramerateControl: js.UndefOr[Mpeg2FramerateControl] = js.undefined
     var FramerateConversionAlgorithm: js.UndefOr[Mpeg2FramerateConversionAlgorithm] = js.undefined
     /**
-      * Framerate denominator.
+      * Frame rate denominator.
       */
     var FramerateDenominator: js.UndefOr[__integerMin1Max1001] = js.undefined
     /**
-      * Framerate numerator - framerate is a fraction, e.g. 24000 / 1001 = 23.976 fps.
+      * Frame rate numerator - frame rate is a fraction, e.g. 24000 / 1001 = 23.976 fps.
       */
     var FramerateNumerator: js.UndefOr[__integerMin24Max60000] = js.undefined
     /**
@@ -1987,7 +2035,7 @@ object MediaConvertNs extends js.Object {
     var Destination: js.UndefOr[__stringPatternS3] = js.undefined
     var Encryption: js.UndefOr[MsSmoothEncryptionSettings] = js.undefined
     /**
-      * Use Fragment length (FragmentLength) to specify the mp4 fragment sizes in seconds. Fragment length must be compatible with GOP size and framerate.
+      * Use Fragment length (FragmentLength) to specify the mp4 fragment sizes in seconds. Fragment length must be compatible with GOP size and frame rate.
       */
     var FragmentLength: js.UndefOr[__integerMin1Max2147483647] = js.undefined
     var ManifestEncoding: js.UndefOr[MsSmoothManifestEncoding] = js.undefined
@@ -2165,11 +2213,11 @@ object MediaConvertNs extends js.Object {
     var FramerateControl: js.UndefOr[ProresFramerateControl] = js.undefined
     var FramerateConversionAlgorithm: js.UndefOr[ProresFramerateConversionAlgorithm] = js.undefined
     /**
-      * Framerate denominator.
+      * Frame rate denominator.
       */
     var FramerateDenominator: js.UndefOr[__integerMin1Max2147483647] = js.undefined
     /**
-      * When you use the API for transcode jobs that use framerate conversion, specify the framerate as a fraction. For example,  24000 / 1001 = 23.976 fps. Use FramerateNumerator to specify the numerator of this fraction. In this example, use 24000 for the value of FramerateNumerator.
+      * When you use the API for transcode jobs that use frame rate conversion, specify the frame rate as a fraction. For example,  24000 / 1001 = 23.976 fps. Use FramerateNumerator to specify the numerator of this fraction. In this example, use 24000 for the value of FramerateNumerator.
       */
     var FramerateNumerator: js.UndefOr[__integerMin1Max2147483647] = js.undefined
     var InterlaceMode: js.UndefOr[ProresInterlaceMode] = js.undefined
@@ -2325,7 +2373,7 @@ object MediaConvertNs extends js.Object {
     /**
       * Optional AWS Certificate Manager ARN for a certificate to send to the keyprovider. The certificate holds a key used by the keyprovider to encrypt the keys in its response.
       */
-    var CertificateArn: js.UndefOr[__stringPatternArnAwsAcm] = js.undefined
+    var CertificateArn: js.UndefOr[__stringPatternArnAwsUsGovAcm] = js.undefined
     /**
       * The SPEKE-compliant server uses Resource ID (ResourceId) to identify content.
       */
@@ -2400,7 +2448,7 @@ object MediaConvertNs extends js.Object {
   
   trait TimecodeConfig extends js.Object {
     /**
-      * If you use an editing platform that relies on an anchor timecode, use Anchor Timecode (Anchor) to specify a timecode that will match the input video frame to the output video frame. Use 24-hour format with frame number, (HH:MM:SS:FF) or (HH:MM:SS;FF). This setting ignores framerate conversion. System behavior for Anchor Timecode varies depending on your setting for Source (TimecodeSource). * If Source (TimecodeSource) is set to Specified Start (SPECIFIEDSTART), the first input frame is the specified value in Start Timecode (Start). Anchor Timecode (Anchor) and Start Timecode (Start) are used calculate output timecode. * If Source (TimecodeSource) is set to Start at 0 (ZEROBASED)  the  first frame is 00:00:00:00. * If Source (TimecodeSource) is set to Embedded (EMBEDDED), the  first frame is the timecode value on the first input frame of the input.
+      * If you use an editing platform that relies on an anchor timecode, use Anchor Timecode (Anchor) to specify a timecode that will match the input video frame to the output video frame. Use 24-hour format with frame number, (HH:MM:SS:FF) or (HH:MM:SS;FF). This setting ignores frame rate conversion. System behavior for Anchor Timecode varies depending on your setting for Source (TimecodeSource). * If Source (TimecodeSource) is set to Specified Start (SPECIFIEDSTART), the first input frame is the specified value in Start Timecode (Start). Anchor Timecode (Anchor) and Start Timecode (Start) are used calculate output timecode. * If Source (TimecodeSource) is set to Start at 0 (ZEROBASED)  the  first frame is 00:00:00:00. * If Source (TimecodeSource) is set to Embedded (EMBEDDED), the  first frame is the timecode value on the first input frame of the input.
       */
     var Anchor: js.UndefOr[__stringPattern010920405090509092] = js.undefined
     var Source: js.UndefOr[TimecodeSource] = js.undefined
@@ -2434,6 +2482,13 @@ object MediaConvertNs extends js.Object {
       * The time, in Unix epoch format, that you submitted the job.
       */
     var SubmitTime: js.UndefOr[__timestampUnix] = js.undefined
+  }
+  
+  trait TrackSourceSettings extends js.Object {
+    /**
+      * Use this setting to select a single captions track from a source. Track numbers correspond to the order in the captions source file. For IMF sources, track numbering is based on the order that the captions appear in the CPL. For example, use 1 to select the captions asset that is listed first in the CPL. To include more than one captions track in your job outputs, create multiple input captions selectors. Specify one track per selector.
+      */
+    var TrackNumber: js.UndefOr[__integerMin1Max2147483647] = js.undefined
   }
   
   trait TtmlDestinationSettings extends js.Object {
@@ -3029,6 +3084,10 @@ object MediaConvertNs extends js.Object {
   
   trait UpdateJobTemplateRequest extends js.Object {
     /**
+      * This is a beta feature. If you are interested in using this feature, please contact AWS customer support.
+      */
+    var AccelerationSettings: js.UndefOr[AccelerationSettings] = js.undefined
+    /**
       * The new category for the job template, if you are changing it.
       */
     var Category: js.UndefOr[__string] = js.undefined
@@ -3112,7 +3171,7 @@ object MediaConvertNs extends js.Object {
     var CodecSettings: js.UndefOr[VideoCodecSettings] = js.undefined
     var ColorMetadata: js.UndefOr[ColorMetadata] = js.undefined
     /**
-      * Applies only if your input aspect ratio is different from your output aspect ratio. Use Input cropping rectangle (Crop) to specify the  video area the service will include in the output. This will crop the input source, causing video pixels to be removed on encode. Do not use this setting if you have enabled Stretch to output (stretchToOutput) in your output settings.
+      * Applies only if your input aspect ratio is different from your output aspect ratio. Use Input cropping rectangle (Crop) to specify the  video area the service will include in the output. This will crop the input source, causing video pixels to be removed on encode. If you crop your input frame size to smaller than your output frame size, make sure to specify the behavior you want in your output setting "Scaling behavior".
       */
     var Crop: js.UndefOr[Rectangle] = js.undefined
     var DropFrameTimecode: js.UndefOr[DropFrameTimecode] = js.undefined
@@ -3234,6 +3293,7 @@ object MediaConvertNs extends js.Object {
   type Ac3DynamicRangeCompressionProfile = awsDashSdkLib.awsDashSdkLibStrings.FILM_STANDARD | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
   type Ac3LfeFilter = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
   type Ac3MetadataControl = awsDashSdkLib.awsDashSdkLibStrings.FOLLOW_INPUT | awsDashSdkLib.awsDashSdkLibStrings.USE_CONFIGURED | java.lang.String
+  type AccelerationMode = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
   type AfdSignaling = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.AUTO | awsDashSdkLib.awsDashSdkLibStrings.FIXED | java.lang.String
   type AntiAlias = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
   type AudioCodec = awsDashSdkLib.awsDashSdkLibStrings.AAC | awsDashSdkLib.awsDashSdkLibStrings.MP2 | awsDashSdkLib.awsDashSdkLibStrings.WAV | awsDashSdkLib.awsDashSdkLibStrings.AIFF | awsDashSdkLib.awsDashSdkLibStrings.AC3 | awsDashSdkLib.awsDashSdkLibStrings.EAC3 | awsDashSdkLib.awsDashSdkLibStrings.PASSTHROUGH | java.lang.String
@@ -3253,7 +3313,7 @@ object MediaConvertNs extends js.Object {
   type BurninSubtitleShadowColor = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.BLACK | awsDashSdkLib.awsDashSdkLibStrings.WHITE | java.lang.String
   type BurninSubtitleTeletextSpacing = awsDashSdkLib.awsDashSdkLibStrings.FIXED_GRID | awsDashSdkLib.awsDashSdkLibStrings.PROPORTIONAL | java.lang.String
   type CaptionDestinationType = awsDashSdkLib.awsDashSdkLibStrings.BURN_IN | awsDashSdkLib.awsDashSdkLibStrings.DVB_SUB | awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED | awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED_PLUS_SCTE20 | awsDashSdkLib.awsDashSdkLibStrings.SCTE20_PLUS_EMBEDDED | awsDashSdkLib.awsDashSdkLibStrings.SCC | awsDashSdkLib.awsDashSdkLibStrings.SRT | awsDashSdkLib.awsDashSdkLibStrings.SMI | awsDashSdkLib.awsDashSdkLibStrings.TELETEXT | awsDashSdkLib.awsDashSdkLibStrings.TTML | awsDashSdkLib.awsDashSdkLibStrings.WEBVTT | java.lang.String
-  type CaptionSourceType = awsDashSdkLib.awsDashSdkLibStrings.ANCILLARY | awsDashSdkLib.awsDashSdkLibStrings.DVB_SUB | awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED | awsDashSdkLib.awsDashSdkLibStrings.SCTE20 | awsDashSdkLib.awsDashSdkLibStrings.SCC | awsDashSdkLib.awsDashSdkLibStrings.TTML | awsDashSdkLib.awsDashSdkLibStrings.STL | awsDashSdkLib.awsDashSdkLibStrings.SRT | awsDashSdkLib.awsDashSdkLibStrings.SMI | awsDashSdkLib.awsDashSdkLibStrings.TELETEXT | awsDashSdkLib.awsDashSdkLibStrings.NULL_SOURCE | java.lang.String
+  type CaptionSourceType = awsDashSdkLib.awsDashSdkLibStrings.ANCILLARY | awsDashSdkLib.awsDashSdkLibStrings.DVB_SUB | awsDashSdkLib.awsDashSdkLibStrings.EMBEDDED | awsDashSdkLib.awsDashSdkLibStrings.SCTE20 | awsDashSdkLib.awsDashSdkLibStrings.SCC | awsDashSdkLib.awsDashSdkLibStrings.TTML | awsDashSdkLib.awsDashSdkLibStrings.STL | awsDashSdkLib.awsDashSdkLibStrings.SRT | awsDashSdkLib.awsDashSdkLibStrings.SMI | awsDashSdkLib.awsDashSdkLibStrings.TELETEXT | awsDashSdkLib.awsDashSdkLibStrings.NULL_SOURCE | awsDashSdkLib.awsDashSdkLibStrings.IMSC | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type CmafClientCache = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
   type CmafCodecSpecification = awsDashSdkLib.awsDashSdkLibStrings.RFC_6381 | awsDashSdkLib.awsDashSdkLibStrings.RFC_4281 | java.lang.String
@@ -3304,6 +3364,7 @@ object MediaConvertNs extends js.Object {
   type EmbeddedConvert608To708 = awsDashSdkLib.awsDashSdkLibStrings.UPCONVERT | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
   type F4vMoovPlacement = awsDashSdkLib.awsDashSdkLibStrings.PROGRESSIVE_DOWNLOAD | awsDashSdkLib.awsDashSdkLibStrings.NORMAL | java.lang.String
   type FileSourceConvert608To708 = awsDashSdkLib.awsDashSdkLibStrings.UPCONVERT | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
+  type FontScript = awsDashSdkLib.awsDashSdkLibStrings.AUTOMATIC | awsDashSdkLib.awsDashSdkLibStrings.HANS | awsDashSdkLib.awsDashSdkLibStrings.HANT | java.lang.String
   type H264AdaptiveQuantization = awsDashSdkLib.awsDashSdkLibStrings.OFF | awsDashSdkLib.awsDashSdkLibStrings.LOW | awsDashSdkLib.awsDashSdkLibStrings.MEDIUM | awsDashSdkLib.awsDashSdkLibStrings.HIGH | awsDashSdkLib.awsDashSdkLibStrings.HIGHER | awsDashSdkLib.awsDashSdkLibStrings.MAX | java.lang.String
   type H264CodecLevel = awsDashSdkLib.awsDashSdkLibStrings.AUTO | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_1_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_1_2 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_1_3 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_2 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_2_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_2_2 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_3 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_3_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_3_2 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_4 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_4_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_4_2 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_5 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_5_1 | awsDashSdkLib.awsDashSdkLibStrings.LEVEL_5_2 | java.lang.String
   type H264CodecProfile = awsDashSdkLib.awsDashSdkLibStrings.BASELINE | awsDashSdkLib.awsDashSdkLibStrings.HIGH | awsDashSdkLib.awsDashSdkLibStrings.HIGH_10BIT | awsDashSdkLib.awsDashSdkLibStrings.HIGH_422 | awsDashSdkLib.awsDashSdkLibStrings.HIGH_422_10BIT | awsDashSdkLib.awsDashSdkLibStrings.MAIN | java.lang.String
@@ -3381,6 +3442,7 @@ object MediaConvertNs extends js.Object {
   type M2tsEbpAudioInterval = awsDashSdkLib.awsDashSdkLibStrings.VIDEO_AND_FIXED_INTERVALS | awsDashSdkLib.awsDashSdkLibStrings.VIDEO_INTERVAL | java.lang.String
   type M2tsEbpPlacement = awsDashSdkLib.awsDashSdkLibStrings.VIDEO_AND_AUDIO_PIDS | awsDashSdkLib.awsDashSdkLibStrings.VIDEO_PID | java.lang.String
   type M2tsEsRateInPes = awsDashSdkLib.awsDashSdkLibStrings.INCLUDE | awsDashSdkLib.awsDashSdkLibStrings.EXCLUDE | java.lang.String
+  type M2tsForceTsVideoEbpOrder = awsDashSdkLib.awsDashSdkLibStrings.FORCE | awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | java.lang.String
   type M2tsNielsenId3 = awsDashSdkLib.awsDashSdkLibStrings.INSERT | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
   type M2tsPcrControl = awsDashSdkLib.awsDashSdkLibStrings.PCR_EVERY_PES_PACKET | awsDashSdkLib.awsDashSdkLibStrings.CONFIGURED_PCR_PERIOD | java.lang.String
   type M2tsRateMode = awsDashSdkLib.awsDashSdkLibStrings.VBR | awsDashSdkLib.awsDashSdkLibStrings.CBR | java.lang.String
@@ -3548,6 +3610,7 @@ object MediaConvertNs extends js.Object {
   type __listOf__string = js.Array[__string]
   type __listOf__stringMin1 = js.Array[__stringMin1]
   type __listOf__stringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = js.Array[__stringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12]
+  type __listOf__stringPatternS3ASSETMAPXml = js.Array[__stringPatternS3ASSETMAPXml]
   type __string = java.lang.String
   type __stringMin0 = java.lang.String
   type __stringMin1 = java.lang.String
@@ -3570,13 +3633,14 @@ object MediaConvertNs extends js.Object {
   type __stringPattern09aFAF809aFAF409aFAF409aFAF409aFAF12 = java.lang.String
   type __stringPatternAZaZ0902 = java.lang.String
   type __stringPatternAZaZ0932 = java.lang.String
-  type __stringPatternArnAwsAcm = java.lang.String
+  type __stringPatternArnAwsUsGovAcm = java.lang.String
   type __stringPatternDD = java.lang.String
   type __stringPatternHttps = java.lang.String
   type __stringPatternIdentityAZaZ26AZaZ09163 = java.lang.String
   type __stringPatternS3 = java.lang.String
-  type __stringPatternS3MM2VVMMPPEEGGAAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MM = java.lang.String
+  type __stringPatternS3ASSETMAPXml = java.lang.String
   type __stringPatternS3MM2VVMMPPEEGGAAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMAAAACCAAIIFFFFMMPP2AACC3EECC3DDTTSSEE = java.lang.String
+  type __stringPatternS3MM2VVMMPPEEGGAAVVIIMMPP4FFLLVVMMPPTTMMPPGGMM4VVTTRRPPFF4VVMM2TTSSTTSS264HH264MMKKVVMMOOVVMMTTSSMM2TTWWMMVVAASSFFVVOOBB3GGPP3GGPPPPMMXXFFDDIIVVXXXXVVIIDDRRAAWWDDVVGGXXFFMM1VV3GG2VVMMFFMM3UU8LLCCHHGGXXFFMMPPEEGG2MMXXFFMMPPEEGG2MMXXFFHHDDWWAAVVYY4MMXXMMLL = java.lang.String
   type __stringPatternWS = java.lang.String
   type __timestampUnix = stdLib.Date
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-08-29` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String

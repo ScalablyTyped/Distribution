@@ -186,6 +186,41 @@ trait StorageGateway
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Connects a volume to an iSCSI connection and then attaches the volume to the specified gateway. Detaching and attaching a volume enables you to recover your data from one gateway to a different gateway without creating a snapshot. It also makes it easier to move your volumes from an on-premises gateway to a gateway hosted on an Amazon EC2 instance.
+    */
+  def attachVolume(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.AttachVolumeOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def attachVolume(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.AttachVolumeOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.AttachVolumeOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Connects a volume to an iSCSI connection and then attaches the volume to the specified gateway. Detaching and attaching a volume enables you to recover your data from one gateway to a different gateway without creating a snapshot. It also makes it easier to move your volumes from an on-premises gateway to a gateway hosted on an Amazon EC2 instance.
+    */
+  def attachVolume(params: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.AttachVolumeInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.AttachVolumeOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def attachVolume(
+    params: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.AttachVolumeInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.AttachVolumeOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.AttachVolumeOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Cancels archiving of a virtual tape to the virtual tape shelf (VTS) after the archiving process is initiated. This operation is only supported in the tape gateway type.
     */
   def cancelArchival(): awsDashSdkLib.libRequestMod.Request[
@@ -1410,6 +1445,41 @@ trait StorageGateway
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DescribeWorkingStorageOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Disconnects a volume from an iSCSI connection and then detaches the volume from the specified gateway. Detaching and attaching a volume enables you to recover your data from one gateway to a different gateway without creating a snapshot. It also makes it easier to move your volumes from an on-premises gateway to a gateway hosted on an Amazon EC2 instance.
+    */
+  def detachVolume(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DetachVolumeOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def detachVolume(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DetachVolumeOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DetachVolumeOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Disconnects a volume from an iSCSI connection and then detaches the volume from the specified gateway. Detaching and attaching a volume enables you to recover your data from one gateway to a different gateway without creating a snapshot. It also makes it easier to move your volumes from an on-premises gateway to a gateway hosted on an Amazon EC2 instance.
+    */
+  def detachVolume(params: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DetachVolumeInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DetachVolumeOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def detachVolume(
+    params: awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DetachVolumeInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DetachVolumeOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsStoragegatewayMod.StorageGatewayNs.DetachVolumeOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

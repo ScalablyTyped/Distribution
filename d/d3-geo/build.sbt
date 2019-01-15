@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-geo"
-version := "1.10-dt-20180514Z-8e6e83"
+version := "1.11-dt-20190103Z-ca7f26"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

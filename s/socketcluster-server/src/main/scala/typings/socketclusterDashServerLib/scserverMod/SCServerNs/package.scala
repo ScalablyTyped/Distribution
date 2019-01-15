@@ -54,4 +54,10 @@ package object SCServerNs {
     /* channel */ java.lang.String, 
     scala.Unit
   ]
+  type verifyHandshakeFunction = js.Function3[
+    /* success */ scala.Boolean, 
+    /* errorCode */ js.UndefOr[scala.Double], 
+    /* errorMessage */ js.UndefOr[java.lang.String], 
+    scala.Unit
+  ]
 }

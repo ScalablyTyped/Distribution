@@ -4780,6 +4780,12 @@ object awsDashSdkLibStrings {
   sealed trait HANDSHAKE extends js.Object
   
   @js.native
+  sealed trait HANS extends js.Object
+  
+  @js.native
+  sealed trait HANT extends js.Object
+  
+  @js.native
   sealed trait HAPPY extends js.Object
   
   @js.native
@@ -5096,6 +5102,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait IMPORTING extends js.Object
+  
+  @js.native
+  sealed trait IMSC extends js.Object
   
   @js.native
   sealed trait IN extends js.Object
@@ -16021,6 +16030,8 @@ object awsDashSdkLibStrings {
   def H323: H323 = "H323".asInstanceOf[H323]
   def HANDLE_TIME: HANDLE_TIME = "HANDLE_TIME".asInstanceOf[HANDLE_TIME]
   def HANDSHAKE: HANDSHAKE = "HANDSHAKE".asInstanceOf[HANDSHAKE]
+  def HANS: HANS = "HANS".asInstanceOf[HANS]
+  def HANT: HANT = "HANT".asInstanceOf[HANT]
   def HAPPY: HAPPY = "HAPPY".asInstanceOf[HAPPY]
   def HARD: HARD = "HARD".asInstanceOf[HARD]
   def HASH: HASH = "HASH".asInstanceOf[HASH]
@@ -16127,6 +16138,7 @@ object awsDashSdkLibStrings {
   def IMPORT: IMPORT = "IMPORT".asInstanceOf[IMPORT]
   def IMPORTED: IMPORTED = "IMPORTED".asInstanceOf[IMPORTED]
   def IMPORTING: IMPORTING = "IMPORTING".asInstanceOf[IMPORTING]
+  def IMSC: IMSC = "IMSC".asInstanceOf[IMSC]
   def IN: IN = "IN".asInstanceOf[IN]
   def INACTIVE: INACTIVE = "INACTIVE".asInstanceOf[INACTIVE]
   def INBOUND: INBOUND = "INBOUND".asInstanceOf[INBOUND]

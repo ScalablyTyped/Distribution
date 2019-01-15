@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class AnyDictionaryType ()
   extends Type[
-      org.scalablytyped.runtime.StringDictionary[mixed], 
-      org.scalablytyped.runtime.StringDictionary[mixed], 
-      mixed
+      org.scalablytyped.runtime.StringDictionary[js.Any], 
+      org.scalablytyped.runtime.StringDictionary[js.Any], 
+      js.Any
     ] {
   val _tag: ioDashTsLib.ioDashTsLibStrings.AnyDictionaryType = js.native
 }

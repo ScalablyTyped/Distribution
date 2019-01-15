@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "plotly_dot_js"
-version := "1.42-dt-20181217Z-83ccc9"
+version := "1.42-dt-20181217Z-3affaa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "d3" % "5.5-dt-20181216Z-72ee1a",
+  "org.scalablytyped" %%% "d3" % "5.7-dt-20190103Z-8073b7",
   "org.scalablytyped" %%% "d3-array" % "1.2-dt-20181015Z-f253aa",
   "org.scalablytyped" %%% "d3-axis" % "1.0-dt-20180917Z-67294a",
   "org.scalablytyped" %%% "d3-brush" % "1.0-dt-20181117Z-aaa374",
@@ -21,7 +21,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-fetch" % "1.1-dt-20181228Z-a49d17",
   "org.scalablytyped" %%% "d3-force" % "1.1-dt-20180514Z-4225a6",
   "org.scalablytyped" %%% "d3-format" % "1.3-dt-20180510Z-a1fee8",
-  "org.scalablytyped" %%% "d3-geo" % "1.10-dt-20180514Z-8e6e83",
+  "org.scalablytyped" %%% "d3-geo" % "1.11-dt-20190103Z-ca7f26",
   "org.scalablytyped" %%% "d3-hierarchy" % "1.1-dt-20181208Z-acdb79",
   "org.scalablytyped" %%% "d3-interpolate" % "1.3-dt-20180917Z-3ac916",
   "org.scalablytyped" %%% "d3-path" % "1.0-dt-20180514Z-2dd015",

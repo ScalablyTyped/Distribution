@@ -7,17 +7,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait HttpRx extends js.Object {
-  def delete(url: java.lang.String): rxjsLib.rxjsMod.Observable[_] = js.native
-  def delete(url: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): rxjsLib.rxjsMod.Observable[_] = js.native
-  def get(url: java.lang.String): rxjsLib.rxjsMod.Observable[_] = js.native
-  def get(url: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): rxjsLib.rxjsMod.Observable[_] = js.native
-  def head(url: java.lang.String): rxjsLib.rxjsMod.Observable[_] = js.native
-  def head(url: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): rxjsLib.rxjsMod.Observable[_] = js.native
-  def patch(url: java.lang.String): rxjsLib.rxjsMod.Observable[_] = js.native
-  def patch(url: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): rxjsLib.rxjsMod.Observable[_] = js.native
-  def post(url: java.lang.String): rxjsLib.rxjsMod.Observable[_] = js.native
-  def post(url: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): rxjsLib.rxjsMod.Observable[_] = js.native
-  def put(url: java.lang.String): rxjsLib.rxjsMod.Observable[_] = js.native
-  def put(url: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): rxjsLib.rxjsMod.Observable[_] = js.native
+  def delete(url: java.lang.String): rxjsLib.rxjsMod.Observable[ResponseWrapper] = js.native
+  def delete(url: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): rxjsLib.rxjsMod.Observable[ResponseWrapper] = js.native
+  def get(url: java.lang.String): rxjsLib.rxjsMod.Observable[ResponseWrapper] = js.native
+  def get(url: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): rxjsLib.rxjsMod.Observable[ResponseWrapper] = js.native
+  def head(url: java.lang.String): rxjsLib.rxjsMod.Observable[ResponseWrapper] = js.native
+  def head(url: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): rxjsLib.rxjsMod.Observable[ResponseWrapper] = js.native
+  def patch(url: java.lang.String): rxjsLib.rxjsMod.Observable[ResponseWrapper] = js.native
+  def patch(url: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): rxjsLib.rxjsMod.Observable[ResponseWrapper] = js.native
+  def post(url: java.lang.String): rxjsLib.rxjsMod.Observable[ResponseWrapper] = js.native
+  def post(url: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): rxjsLib.rxjsMod.Observable[ResponseWrapper] = js.native
+  def put(url: java.lang.String): rxjsLib.rxjsMod.Observable[ResponseWrapper] = js.native
+  def put(url: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): rxjsLib.rxjsMod.Observable[ResponseWrapper] = js.native
 }
 

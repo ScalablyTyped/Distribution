@@ -21,14 +21,6 @@ trait ITextFieldProps
     */
   var autoAdjustHeight: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Whether the input field should have autocomplete enabled.
-    * This tells the browser to display options based on earlier typed values.
-    */
-  @JSName("autoComplete")
-  var autoComplete_ITextFieldProps: js.UndefOr[
-    officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.on | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.off
-  ] = js.undefined
-  /**
     * Whether or not the text field is borderless.
     * @defaultvalue false
     */

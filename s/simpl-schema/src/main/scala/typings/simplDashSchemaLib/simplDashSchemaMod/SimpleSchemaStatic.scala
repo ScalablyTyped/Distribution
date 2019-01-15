@@ -27,6 +27,7 @@ trait SimpleSchemaStatic
   def allowsKey(key: js.Any): java.lang.String = js.native
   def clean(doc: js.Any): js.Any = js.native
   def clean(doc: js.Any, options: CleanOption): js.Any = js.native
+  def extendOptions(options: js.Array[java.lang.String]): scala.Unit = js.native
   def getDefinition(key: java.lang.String): js.Any = js.native
   def getDefinition(key: java.lang.String, propList: js.Any): js.Any = js.native
   def getDefinition(key: java.lang.String, propList: js.Any, functionContext: js.Any): js.Any = js.native

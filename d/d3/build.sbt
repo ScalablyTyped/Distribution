@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3"
-version := "5.5-dt-20181216Z-72ee1a"
+version := "5.7-dt-20190103Z-8073b7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-fetch" % "1.1-dt-20181228Z-a49d17",
   "org.scalablytyped" %%% "d3-force" % "1.1-dt-20180514Z-4225a6",
   "org.scalablytyped" %%% "d3-format" % "1.3-dt-20180510Z-a1fee8",
-  "org.scalablytyped" %%% "d3-geo" % "1.10-dt-20180514Z-8e6e83",
+  "org.scalablytyped" %%% "d3-geo" % "1.11-dt-20190103Z-ca7f26",
   "org.scalablytyped" %%% "d3-hierarchy" % "1.1-dt-20181208Z-acdb79",
   "org.scalablytyped" %%% "d3-interpolate" % "1.3-dt-20180917Z-3ac916",
   "org.scalablytyped" %%% "d3-path" % "1.0-dt-20180514Z-2dd015",

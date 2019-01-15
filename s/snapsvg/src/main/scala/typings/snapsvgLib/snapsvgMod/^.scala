@@ -176,6 +176,7 @@ object ^ extends js.Object {
   def rgb2hsl(r: scala.Double, g: scala.Double, b: scala.Double): snapsvgLib.snapsvgMod.SnapNs.HSL = js.native
   def select(query: java.lang.String): snapsvgLib.snapsvgMod.SnapNs.Element = js.native
   def selectAll(query: java.lang.String): js.Any = js.native
+  def set(els: snapsvgLib.snapsvgMod.SnapNs.Element*): snapsvgLib.snapsvgMod.SnapNs.Set = js.native
   def sin(angle: scala.Double): scala.Double = js.native
   def snapTo(values: js.Array[scala.Double], value: scala.Double): scala.Double = js.native
   def snapTo(values: js.Array[scala.Double], value: scala.Double, tolerance: scala.Double): scala.Double = js.native

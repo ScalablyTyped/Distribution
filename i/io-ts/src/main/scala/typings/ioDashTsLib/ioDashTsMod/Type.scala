@@ -27,7 +27,7 @@ class Type[A, O, I] protected ()
   /* CompleteClass */
   override def encode(a: A): O = js.native
   /** a custom type guard */
-  def is(m: mixed): /* is A */ scala.Boolean = js.native
+  def is(u: js.Any): /* is A */ scala.Boolean = js.native
   def pipe[B, IB, A /* <: IB */, OB /* <: A */](`this`: Type[A, O, I], ab: Type[B, OB, IB]): Type[B, O, I] = js.native
   def pipe[B, IB, A /* <: IB */, OB /* <: A */](`this`: Type[A, O, I], ab: Type[B, OB, IB], name: java.lang.String): Type[B, O, I] = js.native
   /* CompleteClass */

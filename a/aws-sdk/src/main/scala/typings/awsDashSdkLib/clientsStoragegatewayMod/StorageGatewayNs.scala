@@ -91,6 +91,40 @@ object StorageGatewayNs extends js.Object {
     var GatewayARN: js.UndefOr[GatewayARN] = js.undefined
   }
   
+  trait AttachVolumeInput extends js.Object {
+    /**
+      * The unique device ID or other distinguishing data that identifies the local disk used to create the volume. This value is only required when you are attaching a stored volume.
+      */
+    var DiskId: js.UndefOr[DiskId] = js.undefined
+    /**
+      * The Amazon Resource Name (ARN) of the gateway that you want to attach the volume to.
+      */
+    var GatewayARN: GatewayARN
+    /**
+      * The network interface of the gateway on which to expose the iSCSI target. Only IPv4 addresses are accepted. Use DescribeGatewayInformation to get a list of the network interfaces available on a gateway.  Valid Values: A valid IP address.
+      */
+    var NetworkInterfaceId: NetworkInterfaceId
+    /**
+      * The name of the iSCSI target used by an initiator to connect to a volume and used as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume. The target name must be unique across all volumes on a gateway. If you don't specify a value, Storage Gateway uses the value that was previously used for this volume as the new target name.
+      */
+    var TargetName: js.UndefOr[TargetName] = js.undefined
+    /**
+      * The Amazon Resource Name (ARN) of the volume to attach to the specified gateway.
+      */
+    var VolumeARN: VolumeARN
+  }
+  
+  trait AttachVolumeOutput extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the volume target, which includes the iSCSI name for the initiator that was used to connect to the target.
+      */
+    var TargetARN: js.UndefOr[TargetARN] = js.undefined
+    /**
+      * The Amazon Resource Name (ARN) of the volume that was attached to the gateway.
+      */
+    var VolumeARN: js.UndefOr[VolumeARN] = js.undefined
+  }
+  
   trait CachediSCSIVolume extends js.Object {
     /**
       * The date the volume was created. Volumes created prior to March 28, 2017 don’t have this time stamp.
@@ -102,9 +136,17 @@ object StorageGatewayNs extends js.Object {
       */
     var SourceSnapshotId: js.UndefOr[SnapshotId] = js.undefined
     /**
+      * The name of the iSCSI target that is used by an initiator to connect to a volume and used as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume.
+      */
+    var TargetName: js.UndefOr[TargetName] = js.undefined
+    /**
       * The Amazon Resource Name (ARN) of the storage volume.
       */
     var VolumeARN: js.UndefOr[VolumeARN] = js.undefined
+    /**
+      * A value that indicates whether a storage volume is attached to or detached from a gateway.
+      */
+    var VolumeAttachmentStatus: js.UndefOr[VolumeAttachmentStatus] = js.undefined
     /**
       * The unique identifier of the volume, e.g. vol-AE4B946D.
       */
@@ -229,7 +271,7 @@ object StorageGatewayNs extends js.Object {
   
   trait CreateCachediSCSIVolumeOutput extends js.Object {
     /**
-      * he Amazon Resource Name (ARN) of the volume target that includes the iSCSI name that initiators can use to connect to the target.
+      * The Amazon Resource Name (ARN) of the volume target, which includes the iSCSI name that initiators can use to connect to the target.
       */
     var TargetARN: js.UndefOr[TargetARN] = js.undefined
     /**
@@ -437,7 +479,7 @@ object StorageGatewayNs extends js.Object {
   
   trait CreateStorediSCSIVolumeOutput extends js.Object {
     /**
-      * he Amazon Resource Name (ARN) of the volume target that includes the iSCSI name that initiators can use to connect to the target.
+      * The Amazon Resource Name (ARN) of the volume target, which includes the iSCSI name that initiators can use to connect to the target.
       */
     var TargetARN: js.UndefOr[TargetARN] = js.undefined
     /**
@@ -954,6 +996,24 @@ object StorageGatewayNs extends js.Object {
     var WorkingStorageUsedInBytes: js.UndefOr[long] = js.undefined
   }
   
+  trait DetachVolumeInput extends js.Object {
+    /**
+      * Set to true to forcibly remove the iSCSI connection of the target volume and detach the volume. The default is false. If this value is set to false, you must manually disconnect the iSCSI connection from the target volume.
+      */
+    var ForceDetach: js.UndefOr[Boolean] = js.undefined
+    /**
+      * The Amazon Resource Name (ARN) of the volume to detach from the gateway.
+      */
+    var VolumeARN: VolumeARN
+  }
+  
+  trait DetachVolumeOutput extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the volume that was detached.
+      */
+    var VolumeARN: js.UndefOr[VolumeARN] = js.undefined
+  }
+  
   trait DeviceiSCSIAttributes extends js.Object {
     /**
       * Indicates whether mutual CHAP is enabled for the iSCSI target.
@@ -986,7 +1046,7 @@ object StorageGatewayNs extends js.Object {
   
   trait Disk extends js.Object {
     /**
-      * The iSCSI Qualified Name (IQN) that is defined for a disk. This field is not included in the response if the local disk is not defined as an iSCSI target. The format of this field is targetIqn::LUNNumber::region-volumeId. 
+      * The iSCSI qualified name (IQN) that is defined for a disk. This field is not included in the response if the local disk is not defined as an iSCSI target. The format of this field is targetIqn::LUNNumber::region-volumeId. 
       */
     var DiskAllocationResource: js.UndefOr[java.lang.String] = js.undefined
     var DiskAllocationType: js.UndefOr[DiskAllocationType] = js.undefined
@@ -1046,13 +1106,21 @@ object StorageGatewayNs extends js.Object {
   
   trait JoinDomainInput extends js.Object {
     /**
+      * List of IPv4 addresses, NetBIOS names, or host names of your domain server. If you need to specify the port number include it after the colon (“:”). For example, mydc.mydomain.com:389.
+      */
+    var DomainControllers: js.UndefOr[Hosts] = js.undefined
+    /**
       * The name of the domain that you want the gateway to join.
       */
     var DomainName: DomainName
     /**
-      * The unique Amazon Resource Name (ARN) of the file gateway you want to add to the Active Directory domain. 
+      * The Amazon Resource Name (ARN) of the gateway. Use the ListGateways operation to return a list of gateways for your account and region.
       */
     var GatewayARN: GatewayARN
+    /**
+      * The organizational unit (OU) is a container with an Active Directory that can hold users, groups, computers, and other OUs and this parameter specifies the OU that the gateway will join within the AD domain.
+      */
+    var OrganizationalUnit: js.UndefOr[OrganizationalUnit] = js.undefined
     /**
       * Sets the password of the user who has permission to add the gateway to the Active Directory domain.
       */
@@ -1295,7 +1363,13 @@ object StorageGatewayNs extends js.Object {
   }
   
   trait RefreshCacheInput extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the file share you want to refresh.
+      */
     var FileShareARN: FileShareARN
+    /**
+      * A comma-separated list of the paths of folders to refresh in the cache. The default is ["/"]. The default refreshes objects and folders at the root of the Amazon S3 bucket. If Recursive is set to "true", the entire S3 bucket that the file share has access to is refreshed.
+      */
     var FolderList: js.UndefOr[FolderList] = js.undefined
     /**
       * A value that specifies whether to recursively refresh folders in the cache. The refresh includes folders that were in the cache the last time the gateway listed the folder's contents. If this value set to "true", each folder that is listed in FolderList is recursively updated. Otherwise, subfolders listed in FolderList are not refreshed. Only objects that are in folders listed directly under FolderList are found and used for the update. The default is "true".
@@ -1469,9 +1543,17 @@ object StorageGatewayNs extends js.Object {
       */
     var SourceSnapshotId: js.UndefOr[SnapshotId] = js.undefined
     /**
+      * The name of the iSCSI target that is used by an initiator to connect to a volume and used as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume.
+      */
+    var TargetName: js.UndefOr[TargetName] = js.undefined
+    /**
       * The Amazon Resource Name (ARN) of the storage volume.
       */
     var VolumeARN: js.UndefOr[VolumeARN] = js.undefined
+    /**
+      * A value that indicates whether a storage volume is attached to, detached from, or is in the process of detaching from a gateway.
+      */
+    var VolumeAttachmentStatus: js.UndefOr[VolumeAttachmentStatus] = js.undefined
     /**
       * The ID of the local disk that was specified in the CreateStorediSCSIVolume operation.
       */
@@ -1734,6 +1816,29 @@ object StorageGatewayNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[AddWorkingStorageOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Connects a volume to an iSCSI connection and then attaches the volume to the specified gateway. Detaching and attaching a volume enables you to recover your data from one gateway to a different gateway without creating a snapshot. It also makes it easier to move your volumes from an on-premises gateway to a gateway hosted on an Amazon EC2 instance.
+      */
+    def attachVolume(): awsDashSdkLib.libRequestMod.Request[AttachVolumeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def attachVolume(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AttachVolumeOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AttachVolumeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Connects a volume to an iSCSI connection and then attaches the volume to the specified gateway. Detaching and attaching a volume enables you to recover your data from one gateway to a different gateway without creating a snapshot. It also makes it easier to move your volumes from an on-premises gateway to a gateway hosted on an Amazon EC2 instance.
+      */
+    def attachVolume(params: AttachVolumeInput): awsDashSdkLib.libRequestMod.Request[AttachVolumeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def attachVolume(
+      params: AttachVolumeInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ AttachVolumeOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[AttachVolumeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Cancels archiving of a virtual tape to the virtual tape shelf (VTS) after the archiving process is initiated. This operation is only supported in the tape gateway type.
       */
@@ -2539,6 +2644,29 @@ object StorageGatewayNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeWorkingStorageOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Disconnects a volume from an iSCSI connection and then detaches the volume from the specified gateway. Detaching and attaching a volume enables you to recover your data from one gateway to a different gateway without creating a snapshot. It also makes it easier to move your volumes from an on-premises gateway to a gateway hosted on an Amazon EC2 instance.
+      */
+    def detachVolume(): awsDashSdkLib.libRequestMod.Request[DetachVolumeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def detachVolume(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DetachVolumeOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DetachVolumeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Disconnects a volume from an iSCSI connection and then detaches the volume from the specified gateway. Detaching and attaching a volume enables you to recover your data from one gateway to a different gateway without creating a snapshot. It also makes it easier to move your volumes from an on-premises gateway to a gateway hosted on an Amazon EC2 instance.
+      */
+    def detachVolume(params: DetachVolumeInput): awsDashSdkLib.libRequestMod.Request[DetachVolumeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def detachVolume(
+      params: DetachVolumeInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DetachVolumeOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DetachVolumeOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Disables a tape gateway when the gateway is no longer functioning. For example, if your gateway VM is damaged, you can disable the gateway so you can recover virtual tapes. Use this operation for a tape gateway that is not reachable or not functioning. This operation is only supported in the tape gateway type.  Once a gateway is disabled it cannot be enabled. 
       */
@@ -3457,6 +3585,7 @@ object StorageGatewayNs extends js.Object {
       * The Amazon Resource Name (ARN) for the storage volume. For example, the following is a valid ARN:  arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/volume/vol-1122AABB   Valid Values: 50 to 500 lowercase letters, numbers, periods (.), and hyphens (-).
       */
     var VolumeARN: js.UndefOr[VolumeARN] = js.undefined
+    var VolumeAttachmentStatus: js.UndefOr[VolumeAttachmentStatus] = js.undefined
     /**
       * The unique identifier assigned to the volume. This ID becomes part of the volume Amazon Resource Name (ARN), which you use as input for other operations.  Valid Values: 50 to 500 lowercase letters, numbers, periods (.), and hyphens (-).
       */
@@ -3544,6 +3673,8 @@ object StorageGatewayNs extends js.Object {
   type GatewayTimezone = java.lang.String
   type GatewayType = java.lang.String
   type Gateways = js.Array[GatewayInfo]
+  type Host = java.lang.String
+  type Hosts = js.Array[Host]
   type HourOfDay = scala.Double
   type IPV4AddressCIDR = java.lang.String
   type Initiator = java.lang.String
@@ -3562,6 +3693,7 @@ object StorageGatewayNs extends js.Object {
   type NotificationId = java.lang.String
   type NumTapesToCreate = scala.Double
   type ObjectACL = awsDashSdkLib.awsDashSdkLibStrings.`private` | awsDashSdkLib.awsDashSdkLibStrings.`public-read` | awsDashSdkLib.awsDashSdkLibStrings.`public-read-write` | awsDashSdkLib.awsDashSdkLibStrings.`authenticated-read` | awsDashSdkLib.awsDashSdkLibStrings.`bucket-owner-read` | awsDashSdkLib.awsDashSdkLibStrings.`bucket-owner-full-control` | awsDashSdkLib.awsDashSdkLibStrings.`aws-exec-read` | java.lang.String
+  type OrganizationalUnit = java.lang.String
   type Path = java.lang.String
   type PermissionId = scala.Double
   type PermissionMode = java.lang.String
@@ -3606,6 +3738,7 @@ object StorageGatewayNs extends js.Object {
   type VTLDevices = js.Array[VTLDevice]
   type VolumeARN = java.lang.String
   type VolumeARNs = js.Array[VolumeARN]
+  type VolumeAttachmentStatus = java.lang.String
   type VolumeId = java.lang.String
   type VolumeInfos = js.Array[VolumeInfo]
   type VolumeRecoveryPointInfos = js.Array[VolumeRecoveryPointInfo]

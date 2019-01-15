@@ -50,12 +50,13 @@ trait Converter extends js.Object {
   def makeHtml(text: java.lang.String): java.lang.String = js.native
   /**
     * Converts an HTML string into a markdown string
-    * @param src
+    *
+    * @param src The input text (HTML)
     * @param [HTMLParser] A WHATWG DOM and HTML parser, such as JSDOM. If none is supplied, window.document will be used.
-    * @returns {string}
+    * @returns The output markdown
     */
   def makeMarkdown(src: java.lang.String): java.lang.String = js.native
-  def makeMarkdown(src: java.lang.String, HTMLParser: js.Any): java.lang.String = js.native
+  def makeMarkdown(src: java.lang.String, HTMLParser: stdLib.HTMLDocument): java.lang.String = js.native
   /**
     * Remove an extension from THIS converter.
     *

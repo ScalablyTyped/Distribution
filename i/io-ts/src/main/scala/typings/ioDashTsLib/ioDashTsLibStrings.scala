@@ -70,19 +70,31 @@ object ioDashTsLibStrings {
   sealed trait OutputOfProps extends js.Object
   
   @js.native
+  sealed trait PartialC extends js.Object
+  
+  @js.native
   sealed trait PartialType extends js.Object
   
   @js.native
   sealed trait ReadonlyArrayType extends js.Object
   
   @js.native
+  sealed trait ReadonlyC extends js.Object
+  
+  @js.native
   sealed trait ReadonlyType extends js.Object
+  
+  @js.native
+  sealed trait RecordC extends js.Object
   
   @js.native
   sealed trait RecursiveType extends js.Object
   
   @js.native
   sealed trait RefinementType extends js.Object
+  
+  @js.native
+  sealed trait StrictC extends js.Object
   
   @js.native
   sealed trait StrictType extends js.Object
@@ -95,6 +107,9 @@ object ioDashTsLibStrings {
   
   @js.native
   sealed trait TupleType extends js.Object
+  
+  @js.native
+  sealed trait TypeC extends js.Object
   
   @js.native
   sealed trait TypeOfDictionary extends js.Object
@@ -138,15 +153,20 @@ object ioDashTsLibStrings {
   def OutputOfDictionary: OutputOfDictionary = "OutputOfDictionary".asInstanceOf[OutputOfDictionary]
   def OutputOfPartialProps: OutputOfPartialProps = "OutputOfPartialProps".asInstanceOf[OutputOfPartialProps]
   def OutputOfProps: OutputOfProps = "OutputOfProps".asInstanceOf[OutputOfProps]
+  def PartialC: PartialC = "PartialC".asInstanceOf[PartialC]
   def PartialType: PartialType = "PartialType".asInstanceOf[PartialType]
   def ReadonlyArrayType: ReadonlyArrayType = "ReadonlyArrayType".asInstanceOf[ReadonlyArrayType]
+  def ReadonlyC: ReadonlyC = "ReadonlyC".asInstanceOf[ReadonlyC]
   def ReadonlyType: ReadonlyType = "ReadonlyType".asInstanceOf[ReadonlyType]
+  def RecordC: RecordC = "RecordC".asInstanceOf[RecordC]
   def RecursiveType: RecursiveType = "RecursiveType".asInstanceOf[RecursiveType]
   def RefinementType: RefinementType = "RefinementType".asInstanceOf[RefinementType]
+  def StrictC: StrictC = "StrictC".asInstanceOf[StrictC]
   def StrictType: StrictType = "StrictType".asInstanceOf[StrictType]
   def StringType: StringType = "StringType".asInstanceOf[StringType]
   def TaggedProps: TaggedProps = "TaggedProps".asInstanceOf[TaggedProps]
   def TupleType: TupleType = "TupleType".asInstanceOf[TupleType]
+  def TypeC: TypeC = "TypeC".asInstanceOf[TypeC]
   def TypeOfDictionary: TypeOfDictionary = "TypeOfDictionary".asInstanceOf[TypeOfDictionary]
   def TypeOfPartialProps: TypeOfPartialProps = "TypeOfPartialProps".asInstanceOf[TypeOfPartialProps]
   def TypeOfProps: TypeOfProps = "TypeOfProps".asInstanceOf[TypeOfProps]

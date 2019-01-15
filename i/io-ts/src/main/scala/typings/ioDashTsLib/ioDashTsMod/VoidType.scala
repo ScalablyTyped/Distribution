@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("io-ts", "VoidType")
 @js.native
 class VoidType ()
-  extends Type[scala.Unit, scala.Unit, mixed] {
+  extends Type[scala.Unit, scala.Unit, js.Any] {
   val _tag: ioDashTsLib.ioDashTsLibStrings.VoidType = js.native
 }
 

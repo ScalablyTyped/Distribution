@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("io-ts", "UndefinedType")
 @js.native
 class UndefinedType ()
-  extends Type[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing], mixed] {
+  extends Type[js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing], js.Any] {
   val _tag: ioDashTsLib.ioDashTsLibStrings.UndefinedType = js.native
 }
 
