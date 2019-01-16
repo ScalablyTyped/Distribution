@@ -24,6 +24,14 @@ trait WorksheetData extends js.Object {
   var charts: js.UndefOr[js.Array[ChartData]] = js.undefined
   /**
     *
+    * Returns a collection of all the Comments objects on the worksheet. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var comments: js.UndefOr[js.Array[CommentData]] = js.undefined
+  /**
+    *
     * Gets or sets the enableCalculation property of the worksheet.
     True if Excel recalculates the worksheet when necessary. False if Excel doesn't recalculate the sheet.
     *
@@ -113,6 +121,14 @@ trait WorksheetData extends js.Object {
     * [Api set: ExcelApi 1.8]
     */
   var showHeadings: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Returns collection of slicers that are part of the worksheet. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var slicers: js.UndefOr[js.Array[SlicerData]] = js.undefined
   /**
     *
     * Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.

@@ -61,12 +61,28 @@ trait ShapeUpdateData extends js.Object {
   var left: js.UndefOr[scala.Double] = js.undefined
   /**
     *
+    * Returns the line formatting of the shape object.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var lineFormat: js.UndefOr[ShapeLineFormatUpdateData] = js.undefined
+  /**
+    *
     * Represents if the aspect ratio locked, in boolean, of the shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var lockAspectRatio: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Represents the name of the shape.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var name: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
     * Represents the placment, value that represents the way the object is attached to the cells below it.

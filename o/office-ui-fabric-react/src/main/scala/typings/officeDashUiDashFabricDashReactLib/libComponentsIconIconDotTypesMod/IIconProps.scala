@@ -43,5 +43,6 @@ trait IIconProps
   var styles: js.UndefOr[
     atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[IIconStyleProps, IIconStyles]
   ] = js.undefined
+  var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
 }
 

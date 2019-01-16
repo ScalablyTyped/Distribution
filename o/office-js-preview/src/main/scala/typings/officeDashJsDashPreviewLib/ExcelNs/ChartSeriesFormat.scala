@@ -20,7 +20,7 @@ class ChartSeriesFormat ()
   var context_ChartSeriesFormat: RequestContext = js.native
   /**
     *
-    * Represents the fill format of a chart series, which includes background formating information. Read-only.
+    * Represents the fill format of a chart series, which includes background formatting information. Read-only.
     *
     * [Api set: ExcelApi 1.1]
     */

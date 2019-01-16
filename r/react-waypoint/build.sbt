@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-waypoint"
-version := "8.1.0-0d50e0"
+version := "8.1.0-ecae73"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-61e37d",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-692895",
   "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-e34099",
-  "org.scalablytyped" %%% "react-is" % "16.5-dt-20181113Z-0b2a14",
+  "org.scalablytyped" %%% "react-is" % "16.7-dt-20190110Z-086aa0",
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

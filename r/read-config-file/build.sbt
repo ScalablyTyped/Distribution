@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "read-config-file"
-version := "3.2.0-a36a46"
+version := "3.2.1-7ad7c0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

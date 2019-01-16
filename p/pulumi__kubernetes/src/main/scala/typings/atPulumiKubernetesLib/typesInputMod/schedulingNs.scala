@@ -22,7 +22,11 @@ object schedulingNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      var apiVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var apiVersion: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[
+              atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1`
+            ]
+          ] = js.undefined
       /**
         * description is an arbitrary string that usually provides guidelines on when this priority
         * class should be used.
@@ -42,7 +46,9 @@ object schedulingNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var kind: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClass]
+          ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -67,7 +73,11 @@ object schedulingNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      var apiVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var apiVersion: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[
+              atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1`
+            ]
+          ] = js.undefined
       /**
         * items is the list of PriorityClasses
         */
@@ -78,7 +88,9 @@ object schedulingNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var kind: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClassList]
+          ] = js.undefined
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -106,7 +118,11 @@ object schedulingNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      var apiVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var apiVersion: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[
+              atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1`
+            ]
+          ] = js.undefined
       /**
         * description is an arbitrary string that usually provides guidelines on when this priority
         * class should be used.
@@ -126,7 +142,9 @@ object schedulingNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var kind: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClass]
+          ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -151,7 +169,11 @@ object schedulingNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      var apiVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var apiVersion: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[
+              atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1`
+            ]
+          ] = js.undefined
       /**
         * items is the list of PriorityClasses
         */
@@ -162,7 +184,9 @@ object schedulingNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var kind: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClassList]
+          ] = js.undefined
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata

@@ -14,16 +14,7 @@ import scala.scalajs.js.annotation._
   		 * 类似于mixins和traits的组件间代码复用机制
   		 * 参见 [behaviors](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/custom-component/behaviors.html)
   		 */
-  var behaviors: js.UndefOr[
-    js.Array[
-      (ComponentOptions[
-        Component[js.Object, js.Object], 
-        DefaultData[Component[js.Object, js.Object]], 
-        DefaultMethods[Component[js.Object, js.Object]], 
-        PropsDefinition[DefaultProps]
-      ]) | java.lang.String
-    ]
-  ] = js.undefined
+  var behaviors: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
   		 * 组件的内部数据，和 properties 一同用于组件的模版渲染
   		 */

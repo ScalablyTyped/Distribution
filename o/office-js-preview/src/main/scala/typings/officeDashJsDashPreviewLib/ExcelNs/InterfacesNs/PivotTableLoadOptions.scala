@@ -16,6 +16,14 @@ trait PivotTableLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * True if the PivotTable should use custom lists when sorting.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var enableDataValueEditing: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * Id of the PivotTable. Read-only.
     *
     * [Api set: ExcelApi 1.5]

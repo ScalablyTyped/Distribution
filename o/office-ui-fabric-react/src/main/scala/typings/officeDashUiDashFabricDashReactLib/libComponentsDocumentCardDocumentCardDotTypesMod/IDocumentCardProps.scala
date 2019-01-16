@@ -16,7 +16,11 @@ trait IDocumentCardProps
     */
   var accentColor: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Optional class for document card.
+    * Child components to render within the card.
+    */
+  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  /**
+    * Optional override class name
     */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -39,6 +43,16 @@ trait IDocumentCardProps
     * @defaultvalue When `onClick` is provided, default role will be 'button'. When `onClickHref` is provided, default role will be 'link'.
     */
   var role: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Call to provide customized styling that will layer on top of the variant rules
+    */
+  var styles: js.UndefOr[
+    atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[IDocumentCardStyleProps, IDocumentCardStyles]
+  ] = js.undefined
+  /**
+    * Theme provided by HOC.
+    */
+  var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
     * The type of DocumentCard to display.
     * @defaultvalue DocumentCardType.normal

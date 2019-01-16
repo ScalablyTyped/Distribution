@@ -15,7 +15,7 @@ trait ConfigMap extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */
-  val apiVersion: java.lang.String
+  val apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1
   /**
     * BinaryData contains the binary data. Each key must consist of alphanumeric characters, '-',
     * '_' or '.'. BinaryData can contain byte sequences that are not in the UTF-8 range. The keys
@@ -36,7 +36,7 @@ trait ConfigMap extends js.Object {
     * CamelCase. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
     */
-  val kind: java.lang.String
+  val kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ConfigMap
   /**
     * Standard object's metadata. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata

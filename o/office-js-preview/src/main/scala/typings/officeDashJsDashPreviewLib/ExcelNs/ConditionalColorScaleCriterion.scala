@@ -28,7 +28,7 @@ trait ConditionalColorScaleCriterion extends js.Object {
   var formula: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * What the icon conditional formula should be based on.
+    * What the criterion conditional formula should be based on.
     *
     * [Api set: ExcelApi 1.6]
     */

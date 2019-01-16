@@ -82,7 +82,7 @@ object ^ extends js.Object {
   def sizeHeight(args: js.Any*): js.Any = js.native
   def sizeWidth(args: js.Any*): js.Any = js.native
   def space(args: js.Any*): js.Any = js.native
-  def style(args: styledDashSystemLib.styledDashSystemMod.LowLevelStylefunctionArguments): js.Any = js.native
+  def style(args: styledDashSystemLib.styledDashSystemMod.LowLevelStylefunctionArguments): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   def textAlign(args: js.Any*): js.Any = js.native
   def textColor(args: js.Any*): js.Any = js.native
   def textStyle(args: js.Any*): js.Any = js.native

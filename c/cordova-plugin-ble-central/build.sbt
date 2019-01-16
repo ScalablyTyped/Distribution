@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-plugin-ble-central"
-version := "1.1.2-dt-20180214Z-e7c8e8"
+version := "1.2.2-dt-20190115Z-2d8b58"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

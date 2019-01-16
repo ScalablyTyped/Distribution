@@ -20,6 +20,6 @@ trait GraphQLUnionTypeConfig[TSource, TContext] extends js.Object {
     * Object type.
     */
   var resolveType: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[GraphQLTypeResolver[TSource, TContext]]] = js.undefined
-  var types: Thunk[js.Array[GraphQLObjectType]]
+  var types: Thunk[js.Array[GraphQLObjectType[_, _]]]
 }
 

@@ -22,7 +22,7 @@ trait ControllerRevision extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */
-  val apiVersion: java.lang.String
+  val apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`
   /**
     * Data is the serialized representation of the state.
     */
@@ -33,7 +33,7 @@ trait ControllerRevision extends js.Object {
     * CamelCase. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
     */
-  val kind: java.lang.String
+  val kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevision
   /**
     * Standard object's metadata. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata

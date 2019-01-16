@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class QuestionSelectBase protected () extends Question {
   def this(name: java.lang.String) = this()
-  var cachedValue: js.Any = js.native
+  var cachedValue: scala.Boolean = js.native
   /**
     * The list of items. Every item has value and text. If text is empty, the value is rendered. The item text supports markdown.
     * @see choicesByUrl

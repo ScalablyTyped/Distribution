@@ -49,14 +49,14 @@ object storageNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClass] = js.native
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -116,7 +116,7 @@ object storageNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`] = js.native
       /**
         * Items is the list of StorageClasses
         */
@@ -127,7 +127,7 @@ object storageNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClassList] = js.native
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -162,14 +162,14 @@ object storageNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment] = js.native
       /**
         * Standard object metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -211,7 +211,7 @@ object storageNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`] = js.native
       /**
         * Items is the list of VolumeAttachments
         */
@@ -222,7 +222,7 @@ object storageNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList] = js.native
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -250,8 +250,14 @@ object storageNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.StorageClass = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.StorageClass = js.native
     }
     
     /**
@@ -269,8 +275,14 @@ object storageNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.StorageClassList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.StorageClassList = js.native
     }
     
     /**
@@ -291,8 +303,14 @@ object storageNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.VolumeAttachment = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.VolumeAttachment = js.native
     }
     
     /**
@@ -310,8 +328,14 @@ object storageNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.VolumeAttachmentList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.VolumeAttachmentList = js.native
     }
     
   }
@@ -345,14 +369,14 @@ object storageNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1`] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment] = js.native
       /**
         * Standard object metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -394,7 +418,7 @@ object storageNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1`] = js.native
       /**
         * Items is the list of VolumeAttachments
         */
@@ -407,7 +431,7 @@ object storageNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList] = js.native
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -434,8 +458,14 @@ object storageNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1alpha1Ns.VolumeAttachment = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.storageNs.v1alpha1Ns.VolumeAttachment = js.native
     }
     
     /**
@@ -453,8 +483,14 @@ object storageNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1alpha1Ns.VolumeAttachmentList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.storageNs.v1alpha1Ns.VolumeAttachmentList = js.native
     }
     
   }
@@ -500,14 +536,14 @@ object storageNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClass] = js.native
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -567,7 +603,7 @@ object storageNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`] = js.native
       /**
         * Items is the list of StorageClasses
         */
@@ -578,7 +614,7 @@ object storageNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClassList] = js.native
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -613,14 +649,14 @@ object storageNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment] = js.native
       /**
         * Standard object metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -662,7 +698,7 @@ object storageNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`] = js.native
       /**
         * Items is the list of VolumeAttachments
         */
@@ -675,7 +711,7 @@ object storageNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList] = js.native
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
@@ -703,8 +739,14 @@ object storageNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.StorageClass = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.StorageClass = js.native
     }
     
     /**
@@ -722,8 +764,14 @@ object storageNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.StorageClassList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.StorageClassList = js.native
     }
     
     /**
@@ -744,8 +792,14 @@ object storageNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.VolumeAttachment = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.VolumeAttachment = js.native
     }
     
     /**
@@ -763,8 +817,14 @@ object storageNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.VolumeAttachmentList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.VolumeAttachmentList = js.native
     }
     
   }

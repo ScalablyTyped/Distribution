@@ -12,7 +12,7 @@ trait TableHeaderColumnProps
   	 * generated automatically after a row insertion. If a function given, you can customize the value by yourself and
   	 * remember to return the value for the cell from the function.
   	 */
-  var autovalue: js.UndefOr[scala.Boolean | js.Function0[_]] = js.undefined
+  var autoValue: js.UndefOr[scala.Boolean | js.Function0[_]] = js.undefined
   /**
   	 * Allow user to render a custom sort caret. You should give a function and should return a JSX.
   	 * This function takes two arguments: order and fieldName.

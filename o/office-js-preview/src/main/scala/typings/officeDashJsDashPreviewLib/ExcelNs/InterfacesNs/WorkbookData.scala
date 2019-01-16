@@ -122,6 +122,14 @@ trait WorkbookData extends js.Object {
   var settings: js.UndefOr[js.Array[SettingData]] = js.undefined
   /**
     *
+    * Represents a collection of Slicers associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var slicers: js.UndefOr[js.Array[SlicerData]] = js.undefined
+  /**
+    *
     * Represents a collection of styles associated with the workbook. Read-only.
     *
     * [Api set: ExcelApi 1.7]

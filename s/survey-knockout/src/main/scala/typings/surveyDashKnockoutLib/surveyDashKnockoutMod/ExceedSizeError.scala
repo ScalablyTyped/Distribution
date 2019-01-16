@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class ExceedSizeError protected () extends SurveyError {
   def this(maxSize: scala.Double) = this()
-  def this(maxSize: scala.Double, locOwner: ILocalizableOwner) = this()
+  def this(maxSize: scala.Double, errorOwner: ISurveyErrorOwner) = this()
 }
 

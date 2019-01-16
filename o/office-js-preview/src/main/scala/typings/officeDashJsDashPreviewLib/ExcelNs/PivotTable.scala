@@ -34,6 +34,14 @@ class PivotTable ()
   val dataHierarchies: DataPivotHierarchyCollection = js.native
   /**
     *
+    * True if the PivotTable should use custom lists when sorting.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var enableDataValueEditing: scala.Boolean = js.native
+  /**
+    *
     * The Filter Pivot Hierarchies of the PivotTable.
     *
     * [Api set: ExcelApi 1.8]

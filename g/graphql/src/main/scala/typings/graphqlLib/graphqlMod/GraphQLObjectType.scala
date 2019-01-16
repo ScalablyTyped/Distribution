@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("graphql", "GraphQLObjectType")
 @js.native
-class GraphQLObjectType protected ()
-  extends graphqlLib.typeMod.GraphQLObjectType {
-  def this(config: graphqlLib.typeDefinitionMod.GraphQLObjectTypeConfig[_, _]) = this()
+class GraphQLObjectType[TSource, TContext] protected ()
+  extends graphqlLib.typeMod.GraphQLObjectType[TSource, TContext] {
+  def this(config: graphqlLib.typeDefinitionMod.GraphQLObjectTypeConfig[TSource, TContext]) = this()
 }
 

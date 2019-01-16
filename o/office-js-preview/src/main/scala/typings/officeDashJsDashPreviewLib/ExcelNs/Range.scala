@@ -233,6 +233,18 @@ class Range ()
     * [Api set: ExcelApi 1.1]
     */
   val worksheet: Worksheet = js.native
+  def autoFill(destinationRange: java.lang.String): scala.Unit = js.native
+  def autoFill(
+    destinationRange: java.lang.String,
+    autoFillType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillDefault | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillCopy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillSeries | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillFormats | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillValues | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillDays | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillWeekdays | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillMonths | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillYears | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LinearTrend | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GrowthTrend | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FlashFill
+  ): scala.Unit = js.native
+  def autoFill(destinationRange: java.lang.String, autoFillType: AutoFillType): scala.Unit = js.native
+  def autoFill(destinationRange: Range): scala.Unit = js.native
+  def autoFill(
+    destinationRange: Range,
+    autoFillType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillDefault | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillCopy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillSeries | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillFormats | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillValues | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillDays | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillWeekdays | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillMonths | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillYears | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LinearTrend | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GrowthTrend | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FlashFill
+  ): scala.Unit = js.native
+  def autoFill(destinationRange: Range, autoFillType: AutoFillType): scala.Unit = js.native
   /**
     *
     * Calculates a range of cells on a worksheet.
@@ -601,6 +613,14 @@ class Range ()
   def getCell(row: scala.Double, column: scala.Double): Range = js.native
   /**
     *
+    * Returns a 2D array, encapsulating the data for each cell's font, fill, borders, alignment, and other properties.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getCellProperties(cellPropertiesLoadOptions: CellPropertiesLoadOptions): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[js.Array[CellProperties]]] = js.native
+  /**
+    *
     * Gets a column contained in the range.
     *
     * [Api set: ExcelApi 1.1]
@@ -608,6 +628,14 @@ class Range ()
     * @param column Column number of the range to be retrieved. Zero-indexed.
     */
   def getColumn(column: scala.Double): Range = js.native
+  /**
+    *
+    * Returns a single-dimensional array, encapsulating the data for each column's font, fill, borders, alignment, and other properties.  For properties that are not consistent across each cell within a given column, null will be returned.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getColumnProperties(columnPropertiesLoadOptions: ColumnPropertiesLoadOptions): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[ColumnProperties]] = js.native
   /**
     *
     * Gets a certain number of columns to the right of the current Range object.
@@ -719,6 +747,14 @@ class Range ()
     * @param row Row number of the range to be retrieved. Zero-indexed.
     */
   def getRow(row: scala.Double): Range = js.native
+  /**
+    *
+    * Returns a single-dimensional array, encapsulating the data for each row's font, fill, borders, alignment, and other properties.  For properties that are not consistent across each cell within a given row, null will be returned.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getRowProperties(rowPropertiesLoadOptions: RowPropertiesLoadOptions): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[js.Array[RowProperties]] = js.native
   /**
     *
     * Gets a certain number of rows above the current Range object.
@@ -1057,12 +1093,36 @@ class Range ()
   def set(properties: Range): scala.Unit = js.native
   /**
     *
+    * Updates the range based on a 2D array of cell properties , encapsulating things like font, fill, borders, alignment, and so forth.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def setCellProperties(cellPropertiesData: js.Array[js.Array[SettableCellProperties]]): scala.Unit = js.native
+  /**
+    *
+    * Updates the range based on a single-dimensional array of column properties, encapsulating things like font, fill, borders, alignment, and so forth.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def setColumnProperties(columnPropertiesData: js.Array[SettableColumnProperties]): scala.Unit = js.native
+  /**
+    *
     * Set a range to be recalculated when the next recalculation occurs.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   def setDirty(): scala.Unit = js.native
+  /**
+    *
+    * Updates the range based on a single-dimensional array of row properties, encapsulating things like font, fill, borders, alignment, and so forth.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def setRowProperties(rowPropertiesData: js.Array[SettableRowProperties]): scala.Unit = js.native
   /**
     *
     * Displays the card for an active cell if it has rich value content.

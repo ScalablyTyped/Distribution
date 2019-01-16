@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "bootstrap3-dialog"
-version := "1.35-dt-20181015Z-77c6a8"
+version := "1.35-dt-20181015Z-026bd7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181219Z-1d30f0",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-1d30f0",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-e7e832",
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1")
 publishArtifact in packageDoc := false

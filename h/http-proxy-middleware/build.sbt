@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "http-proxy-middleware"
-version := "0.19-dt-20181214Z-774f30"
+version := "0.19-dt-20190114Z-fb5b74"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

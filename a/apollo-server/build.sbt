@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server"
-version := "2.3.1-783359"
+version := "2.3.1-4eb088"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,18 +8,18 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-cbfc67",
   "org.scalablytyped" %%% "apollo-datasource" % "0.2.1-38cfd5",
-  "org.scalablytyped" %%% "apollo-engine-reporting" % "0.2.0-07d1c5",
+  "org.scalablytyped" %%% "apollo-engine-reporting" % "0.2.0-1d2c31",
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.2.0-1af0ad",
   "org.scalablytyped" %%% "apollo-env" % "0.2.5-a524b6",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.6-cd9314",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.6-2140a4",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.2.1-145a8d",
-  "org.scalablytyped" %%% "apollo-server-core" % "2.3.1-c9286b",
+  "org.scalablytyped" %%% "apollo-server-core" % "2.3.1-6ec161",
   "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-1491ac",
-  "org.scalablytyped" %%% "apollo-server-errors" % "2.2.0-b200c4",
-  "org.scalablytyped" %%% "apollo-server-express" % "2.3.1-a9252c",
-  "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.2.1-d775ee",
-  "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-a360c0",
-  "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.2.9-e8ed9a",
+  "org.scalablytyped" %%% "apollo-server-errors" % "2.2.0-503171",
+  "org.scalablytyped" %%% "apollo-server-express" % "2.3.1-c266a1",
+  "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.2.1-85c1f9",
+  "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-51333a",
+  "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.2.9-8f9289",
   "org.scalablytyped" %%% "apollographql__graphql-playground-html" % "1.6.6-d580a6",
   "org.scalablytyped" %%% "async-retry" % "1.2-dt-20180601Z-42ddd4",
   "org.scalablytyped" %%% "backo2" % "1.0-dt-20180601Z-4fbb23",
@@ -32,10 +32,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express" % "4.16-dt-20180603Z-8f4d08",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-af1292",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-42ebaa",
-  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181231Z-d3e2e1",
-  "org.scalablytyped" %%% "graphql-subscriptions" % "1.0.0-dc6eab",
-  "org.scalablytyped" %%% "graphql-tag" % "2.10.0-50e235",
-  "org.scalablytyped" %%% "graphql-tools" % "4.0.3-ade5e9",
+  "org.scalablytyped" %%% "graphql" % "14.0-dt-20190107Z-53c658",
+  "org.scalablytyped" %%% "graphql-subscriptions" % "1.0.0-5b17e6",
+  "org.scalablytyped" %%% "graphql-tag" % "2.10.0-45dced",
+  "org.scalablytyped" %%% "graphql-tools" % "4.0.3-d6fde8",
   "org.scalablytyped" %%% "iterall" % "1.2.2-d67a65",
   "org.scalablytyped" %%% "json-stable-stringify" % "1.0-dt-20180214Z-bffb33",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20181203Z-5a27ec",
@@ -58,7 +58,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-d115b2",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-91019c",
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
-  "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.15-7ab71c",
+  "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.15-198b5c",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-e21f3d",
   "org.scalablytyped" %%% "type-is" % "1.6-dt-20180214Z-048913",
   "org.scalablytyped" %%% "util_dot_promisify" % "1.0-dt-20180214Z-e1edf0",

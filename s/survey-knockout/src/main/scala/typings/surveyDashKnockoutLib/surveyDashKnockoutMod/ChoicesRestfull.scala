@@ -13,7 +13,7 @@ class ChoicesRestfull () extends Base {
   val isRunning: scala.Boolean = js.native
   val isWaitingForParameters: scala.Boolean = js.native
   val itemValueType: java.lang.String = js.native
-  var owner: Base = js.native
+  var owner: IQuestion = js.native
   var path: java.lang.String = js.native
   var processedPath: java.lang.String = js.native
   var processedUrl: java.lang.String = js.native

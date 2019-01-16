@@ -27,6 +27,7 @@ class MatrixDropdownColumn protected ()
   var name: java.lang.String = js.native
   var readOnly: scala.Boolean = js.native
   var requiredErrorText: java.lang.String = js.native
+  var requiredIf: java.lang.String = js.native
   val templateQuestion: Question = js.native
   var title: java.lang.String = js.native
   var validators: js.Array[SurveyValidator] = js.native

@@ -21,14 +21,14 @@ trait DataValidationErrorAlert extends js.Object {
   var message: java.lang.String
   /**
     *
-    * It determines show error alert dialog or not when users enter invalid data, it defaults to true.
+    * Determines whether to show an error alert dialog or not when a user enters invalid data. The default is true.
     *
     * [Api set: ExcelApi 1.8]
     */
   var showAlert: scala.Boolean
   /**
     *
-    * Represents Data validation alert type, please see Excel.DataValidationAlertStyle for details.
+    * Represents data validation alert type, please see Excel.DataValidationAlertStyle for details.
     *
     * [Api set: ExcelApi 1.8]
     */

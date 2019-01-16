@@ -12,7 +12,7 @@ sealed trait CoercionType extends js.Object
   * Specifies how to coerce data returned or set by the invoked method.
   *
   * @remarks
-  * PowerPoint supports only `Office.CoercionType.Text`, `Office.CoercionType.Image`, and `Office.CoercionType.SlideRange`.
+  * PowerPoint supports only `Office.CoercionType.Text`, `Office.CoercionType.Image`, `Office.CoercionType.SlideRange`, and `Office.CoercionType.XmlSvg`.
   * 
   * Project supports only `Office.CoercionType.Text`.
   * 
@@ -101,6 +101,14 @@ object CoercionType extends js.Object {
   sealed trait Text
     extends officeDashJsDashPreviewLib.OfficeNs.CoercionType
   
+  /**
+    * Data is returned or set as XML data containing an SVG image.
+    * Note: Only applies to data in Excel, Word, and PowerPoint.
+    */
+  @js.native
+  sealed trait XmlSvg
+    extends officeDashJsDashPreviewLib.OfficeNs.CoercionType
+  
   val Html: Html with java.lang.String = js.native
   val Image: Image with java.lang.String = js.native
   val Matrix: Matrix with java.lang.String = js.native
@@ -108,6 +116,7 @@ object CoercionType extends js.Object {
   val SlideRange: SlideRange with java.lang.String = js.native
   val Table: Table with java.lang.String = js.native
   val Text: Text with java.lang.String = js.native
+  val XmlSvg: XmlSvg with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[officeDashJsDashPreviewLib.OfficeNs.CoercionType with java.lang.String] = js.native
 }

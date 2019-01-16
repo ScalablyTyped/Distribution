@@ -26,7 +26,7 @@ trait LinkingStatic extends EventEmitter {
     * If the app launch was triggered by an app link with, it will give the link url, otherwise it will give null
     * NOTE: To support deep linking on Android, refer http://developer.android.com/training/app-indexing/deep-linking.html#handling-intents
     */
-  def getInitialURL(): js.Promise[java.lang.String] = js.native
+  def getInitialURL(): js.Promise[java.lang.String | scala.Null] = js.native
   /**
     * Try to open the given url with any of the installed apps.
     * You can use other URLs, like a location (e.g. "geo:37.484847,-122.148386"), a contact, or any other URL that can be opened with the installed apps.

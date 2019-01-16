@@ -9,6 +9,14 @@ import scala.scalajs.js.annotation._
 trait PivotLayoutUpdateData extends js.Object {
   /**
     *
+    * True if formatting will be automatically formatted when it’s refreshed or when fields are moved
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var autoFormat: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * True if the field list should be shown or hidden from the UI.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -24,6 +32,14 @@ trait PivotLayoutUpdateData extends js.Object {
   var layoutType: js.UndefOr[
     officeDashJsDashPreviewLib.ExcelNs.PivotLayoutType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Compact | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Tabular | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Outline
   ] = js.undefined
+  /**
+    *
+    * True if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var preserveFormatting: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * True if the PivotTable report shows grand totals for columns.

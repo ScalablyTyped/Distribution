@@ -44,7 +44,7 @@ object ^ extends js.Object {
   def getContextEntry(key: java.lang.String, `type`: ioDashTsLib.ioDashTsMod.Decoder[_, _]): ioDashTsLib.ioDashTsMod.ContextEntry = js.native
   def getDefaultContext(`type`: ioDashTsLib.ioDashTsMod.Decoder[_, _]): ioDashTsLib.ioDashTsMod.Context = js.native
   def getFunctionName(f: js.Function): java.lang.String = js.native
-  def getTagValue[Tag /* <: java.lang.String */](tag: Tag): js.Function1[/* type */ ioDashTsLib.ioDashTsMod.Tagged[Tag, _, _], ioDashTsLib.LiteralValue] = js.native
+  def getIndexRecord(types: fpDashTsLib.libArrayMod.Global.Array[ioDashTsLib.ioDashTsMod.Mixed]): ioDashTsLib.ioDashTsMod.IndexRecord = js.native
   def getValidationError(value: js.Any, context: ioDashTsLib.ioDashTsMod.Context): ioDashTsLib.ioDashTsMod.ValidationError = js.native
   def identity[A](a: A): A = js.native
   def interface[P /* <: ioDashTsLib.ioDashTsMod.Props */](props: P): ioDashTsLib.ioDashTsMod.TypeC[P] = js.native
@@ -57,10 +57,6 @@ object ^ extends js.Object {
   def intersection[A /* <: ioDashTsLib.ioDashTsMod.Mixed */, B /* <: ioDashTsLib.ioDashTsMod.Mixed */, C /* <: ioDashTsLib.ioDashTsMod.Mixed */, D /* <: ioDashTsLib.ioDashTsMod.Mixed */](types: js.Tuple4[A, B, C, D], name: java.lang.String): ioDashTsLib.ioDashTsMod.IntersectionC[js.Tuple4[A, B, C, D]] = js.native
   def intersection[A /* <: ioDashTsLib.ioDashTsMod.Mixed */, B /* <: ioDashTsLib.ioDashTsMod.Mixed */, C /* <: ioDashTsLib.ioDashTsMod.Mixed */, D /* <: ioDashTsLib.ioDashTsMod.Mixed */, E /* <: ioDashTsLib.ioDashTsMod.Mixed */](types: js.Tuple5[A, B, C, D, E]): ioDashTsLib.ioDashTsMod.IntersectionC[js.Tuple5[A, B, C, D, E]] = js.native
   def intersection[A /* <: ioDashTsLib.ioDashTsMod.Mixed */, B /* <: ioDashTsLib.ioDashTsMod.Mixed */, C /* <: ioDashTsLib.ioDashTsMod.Mixed */, D /* <: ioDashTsLib.ioDashTsMod.Mixed */, E /* <: ioDashTsLib.ioDashTsMod.Mixed */](types: js.Tuple5[A, B, C, D, E], name: java.lang.String): ioDashTsLib.ioDashTsMod.IntersectionC[js.Tuple5[A, B, C, D, E]] = js.native
-  def isTagged[Tag /* <: java.lang.String */](tag: Tag): js.Function1[
-    /* type */ ioDashTsLib.ioDashTsMod.Mixed, 
-    /* is io-ts.io-ts.Tagged<Tag, any, any> */ scala.Boolean
-  ] = js.native
   def keyof[D /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](keys: D): ioDashTsLib.ioDashTsMod.KeyofC[D] = js.native
   def keyof[D /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](keys: D, name: java.lang.String): ioDashTsLib.ioDashTsMod.KeyofC[D] = js.native
   def literal[V /* <: ioDashTsLib.LiteralValue */](value: V): ioDashTsLib.ioDashTsMod.LiteralC[V] = js.native

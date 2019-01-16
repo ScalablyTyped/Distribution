@@ -295,24 +295,6 @@ object coreNs extends js.Object {
     }
     
     /**
-      * ObjectReference contains enough information to let you inspect or modify the referred object.
-      */
-    @js.native
-    class ObjectReference protected ()
-      extends atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ObjectReference {
-      /**
-        * Create a core.v1.ObjectReference resource with the given unique name, arguments, and options.
-        *
-        * @param name The _unique_ name of the resource.
-        * @param args The arguments to use to populate this resource's properties.
-        * @param opts A bag of options that control this resource's behavior.
-        */
-      def this(name: java.lang.String) = this()
-      def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ObjectReference) = this()
-      def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ObjectReference, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
-    }
-    
-    /**
       * PersistentVolume (PV) is a storage resource provisioned by an administrator. It is analogous
       * to a node. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes
       */
@@ -659,8 +641,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Binding = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Binding = js.native
     }
     
     /**
@@ -678,8 +666,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ComponentStatus = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ComponentStatus = js.native
     }
     
     /**
@@ -697,8 +691,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ComponentStatusList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ComponentStatusList = js.native
     }
     
     /**
@@ -716,8 +716,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ConfigMap = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ConfigMap = js.native
     }
     
     /**
@@ -735,8 +741,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ConfigMapList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ConfigMapList = js.native
     }
     
     /**
@@ -765,8 +777,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Endpoints = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Endpoints = js.native
     }
     
     /**
@@ -784,8 +802,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.EndpointsList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.EndpointsList = js.native
     }
     
     /**
@@ -803,8 +827,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Event = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Event = js.native
     }
     
     /**
@@ -822,8 +852,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.EventList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.EventList = js.native
     }
     
     /**
@@ -841,8 +877,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.LimitRange = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.LimitRange = js.native
     }
     
     /**
@@ -860,8 +902,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.LimitRangeList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.LimitRangeList = js.native
     }
     
     /**
@@ -879,8 +927,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Namespace = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Namespace = js.native
     }
     
     /**
@@ -898,8 +952,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.NamespaceList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.NamespaceList = js.native
     }
     
     /**
@@ -918,8 +978,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Node = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Node = js.native
     }
     
     /**
@@ -937,27 +1003,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.NodeList = js.native
-    }
-    
-    /**
-      * ObjectReference contains enough information to let you inspect or modify the referred object.
-      */
-    @js.native
-    object ObjectReference extends js.Object {
-      /**
-        * Get the state of an existing `ObjectReference` resource, as identified by `id`.
-        * Typically this ID  is of the form <namespace>/<name>; if <namespace> is omitted, then (per
-        * Kubernetes convention) the ID becomes default/<name>.
-        *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrive. Takes the form
-        *  <namespace>/<name> or <name>.
-        */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ObjectReference = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.NodeList = js.native
     }
     
     /**
@@ -976,8 +1029,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolume = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolume = js.native
     }
     
     /**
@@ -995,8 +1054,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeClaim = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeClaim = js.native
     }
     
     /**
@@ -1014,8 +1079,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeClaimList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeClaimList = js.native
     }
     
     /**
@@ -1033,8 +1104,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeList = js.native
     }
     
     /**
@@ -1053,8 +1130,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Pod = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Pod = js.native
     }
     
     /**
@@ -1072,8 +1155,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodList = js.native
     }
     
     /**
@@ -1091,8 +1180,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodTemplate = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodTemplate = js.native
     }
     
     /**
@@ -1110,8 +1205,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodTemplateList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodTemplateList = js.native
     }
     
     /**
@@ -1129,8 +1230,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ReplicationController = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ReplicationController = js.native
     }
     
     /**
@@ -1148,8 +1255,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ReplicationControllerList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ReplicationControllerList = js.native
     }
     
     /**
@@ -1167,8 +1280,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ResourceQuota = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ResourceQuota = js.native
     }
     
     /**
@@ -1186,8 +1305,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ResourceQuotaList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ResourceQuotaList = js.native
     }
     
     /**
@@ -1206,8 +1331,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Secret = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Secret = js.native
     }
     
     /**
@@ -1225,8 +1356,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.SecretList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.SecretList = js.native
     }
     
     /**
@@ -1246,8 +1383,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Service = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Service = js.native
     }
     
     /**
@@ -1267,8 +1410,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceAccount = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceAccount = js.native
     }
     
     /**
@@ -1286,8 +1435,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceAccountList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceAccountList = js.native
     }
     
     /**
@@ -1305,8 +1460,14 @@ object coreNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceList = js.native
     }
     
   }

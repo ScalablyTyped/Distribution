@@ -36,14 +36,14 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LocalSubjectAccessReview] = js.native
       val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated.  spec.namespace must be equal to
@@ -86,14 +86,14 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectAccessReview] = js.native
       val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated.  user and groups must be empty
@@ -140,14 +140,14 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectRulesReview] = js.native
       val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated.
@@ -187,14 +187,14 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SubjectAccessReview] = js.native
       val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated
@@ -228,8 +228,14 @@ object authorizationNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.LocalSubjectAccessReview = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.LocalSubjectAccessReview = js.native
     }
     
     /**
@@ -249,8 +255,14 @@ object authorizationNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SelfSubjectAccessReview = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SelfSubjectAccessReview = js.native
     }
     
     /**
@@ -275,8 +287,14 @@ object authorizationNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SelfSubjectRulesReview = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SelfSubjectRulesReview = js.native
     }
     
     /**
@@ -294,8 +312,14 @@ object authorizationNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SubjectAccessReview = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SubjectAccessReview = js.native
     }
     
   }
@@ -328,14 +352,16 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+            atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
+          ] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LocalSubjectAccessReview] = js.native
       val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated.  spec.namespace must be equal to
@@ -378,14 +404,16 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+            atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
+          ] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectAccessReview] = js.native
       val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated.  user and groups must be empty
@@ -432,14 +460,16 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+            atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
+          ] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectRulesReview] = js.native
       val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated.
@@ -479,14 +509,16 @@ object authorizationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+            atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
+          ] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SubjectAccessReview] = js.native
       val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec holds information about the request being evaluated
@@ -520,8 +552,14 @@ object authorizationNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.LocalSubjectAccessReview = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.LocalSubjectAccessReview = js.native
     }
     
     /**
@@ -541,8 +579,14 @@ object authorizationNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SelfSubjectAccessReview = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SelfSubjectAccessReview = js.native
     }
     
     /**
@@ -567,8 +611,14 @@ object authorizationNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SelfSubjectRulesReview = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SelfSubjectRulesReview = js.native
     }
     
     /**
@@ -586,8 +636,14 @@ object authorizationNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SubjectAccessReview = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SubjectAccessReview = js.native
     }
     
   }

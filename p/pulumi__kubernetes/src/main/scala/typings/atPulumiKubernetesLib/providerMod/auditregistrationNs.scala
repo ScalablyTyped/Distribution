@@ -34,14 +34,16 @@ object auditregistrationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+            atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1`
+          ] = js.native
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.AuditSink] = js.native
       val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
       /**
         * Spec defines the audit configuration spec
@@ -75,7 +77,9 @@ object auditregistrationNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val apiVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[
+            atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1`
+          ] = js.native
       /**
         * List of audit configurations.
         */
@@ -88,7 +92,7 @@ object auditregistrationNs extends js.Object {
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+      val kind: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.AuditSinkList] = js.native
       val metadata: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
       def getInputs(): atPulumiKubernetesLib.typesInputMod.auditregistrationNs.v1alpha1Ns.AuditSinkList = js.native
     }
@@ -108,8 +112,14 @@ object auditregistrationNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.auditregistrationNs.v1alpha1Ns.AuditSink = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.auditregistrationNs.v1alpha1Ns.AuditSink = js.native
     }
     
     /**
@@ -127,8 +137,14 @@ object auditregistrationNs extends js.Object {
         * @param name _Unique_ name used to register this resource with Pulumi.
         * @param id An ID for the Kubernetes resource to retrive. Takes the form
         *  <namespace>/<name> or <name>.
+        * @param opts Uniquely specifies a CustomResource to select.
         */
       def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.auditregistrationNs.v1alpha1Ns.AuditSinkList = js.native
+      def get(
+        name: java.lang.String,
+        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
+      ): atPulumiKubernetesLib.providerMod.auditregistrationNs.v1alpha1Ns.AuditSinkList = js.native
     }
     
   }

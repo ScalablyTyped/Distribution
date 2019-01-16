@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IQuestion extends IElement {
+trait IQuestion
+  extends IElement
+     with ISurveyErrorOwner {
   var hasTitle: scala.Boolean
   var value: js.Any
   def clearUnusedValues(): js.Any

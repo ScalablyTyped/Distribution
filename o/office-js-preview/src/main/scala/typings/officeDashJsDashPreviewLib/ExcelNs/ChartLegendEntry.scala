@@ -20,14 +20,14 @@ class ChartLegendEntry ()
   var context_ChartLegendEntry: RequestContext = js.native
   /**
     *
-    * Represents the height of the legendEntry on the chart Legend.
+    * Represents the height of the legendEntry on the chart legend.
     *
     * [Api set: ExcelApi 1.8]
     */
   val height: scala.Double = js.native
   /**
     *
-    * Represents the index of the LegendEntry in the Chart Legend.
+    * Represents the index of the legendEntry in the chart legend.
     *
     * [Api set: ExcelApi 1.8]
     */

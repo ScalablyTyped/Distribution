@@ -27,7 +27,7 @@ class ChartTitleFormat ()
   var context_ChartTitleFormat: RequestContext = js.native
   /**
     *
-    * Represents the fill format of an object, which includes background formating information. Read-only.
+    * Represents the fill format of an object, which includes background formatting information. Read-only.
     *
     * [Api set: ExcelApi 1.1]
     */

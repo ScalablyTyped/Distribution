@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class CustomError protected () extends SurveyError {
   def this(text: java.lang.String) = this()
-  def this(text: java.lang.String, locOwner: ILocalizableOwner) = this()
+  def this(text: java.lang.String, errorOwner: ISurveyErrorOwner) = this()
 }
 

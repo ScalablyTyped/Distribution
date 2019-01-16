@@ -394,6 +394,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait CurrentSize extends js.Object
   
   @js.native
+  sealed trait Curve extends js.Object
+  
+  @js.native
   sealed trait Custom extends js.Object
   
   @js.native
@@ -443,6 +446,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait DataOnly extends js.Object
+  
+  @js.native
+  sealed trait DataSourceOrder extends js.Object
   
   @js.native
   sealed trait DataValidations extends js.Object
@@ -572,6 +578,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait EdgeTop extends js.Object
+  
+  @js.native
+  sealed trait Elbow extends js.Object
   
   @js.native
   sealed trait Ellipsis extends js.Object
@@ -709,6 +718,33 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Fill extends js.Object
   
   @js.native
+  sealed trait FillCopy extends js.Object
+  
+  @js.native
+  sealed trait FillDays extends js.Object
+  
+  @js.native
+  sealed trait FillDefault extends js.Object
+  
+  @js.native
+  sealed trait FillFormats extends js.Object
+  
+  @js.native
+  sealed trait FillMonths extends js.Object
+  
+  @js.native
+  sealed trait FillSeries extends js.Object
+  
+  @js.native
+  sealed trait FillValues extends js.Object
+  
+  @js.native
+  sealed trait FillWeekdays extends js.Object
+  
+  @js.native
+  sealed trait FillYears extends js.Object
+  
+  @js.native
   sealed trait Filter extends js.Object
   
   @js.native
@@ -743,6 +779,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait FixedValue extends js.Object
+  
+  @js.native
+  sealed trait FlashFill extends js.Object
   
   @js.native
   sealed trait Float extends js.Object
@@ -842,6 +881,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait Group extends js.Object
+  
+  @js.native
+  sealed trait GrowthTrend extends js.Object
   
   @js.native
   sealed trait Hairline extends js.Object
@@ -1027,6 +1069,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait LinearGradient extends js.Object
   
   @js.native
+  sealed trait LinearTrend extends js.Object
+  
+  @js.native
   sealed trait LinkedEntityFinanceIcon extends js.Object
   
   @js.native
@@ -1052,6 +1097,15 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait LogicalText extends js.Object
+  
+  @js.native
+  sealed trait LongDash extends js.Object
+  
+  @js.native
+  sealed trait LongDashDot extends js.Object
+  
+  @js.native
+  sealed trait LongDashDotDot extends js.Object
   
   @js.native
   sealed trait Low extends js.Object
@@ -1585,6 +1639,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Square extends js.Object
   
   @js.native
+  sealed trait SquareDot extends js.Object
+  
+  @js.native
   sealed trait StDev extends js.Object
   
   @js.native
@@ -1615,6 +1672,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Stop extends js.Object
   
   @js.native
+  sealed trait Straight extends js.Object
+  
+  @js.native
   sealed trait String extends js.Object
   
   @js.native
@@ -1625,6 +1685,15 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait Svg extends js.Object
+  
+  @js.native
+  sealed trait SystemDash extends js.Object
+  
+  @js.native
+  sealed trait SystemDashDot extends js.Object
+  
+  @js.native
+  sealed trait SystemDot extends js.Object
   
   @js.native
   sealed trait Table extends js.Object
@@ -1687,6 +1756,12 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Thick extends js.Object
   
   @js.native
+  sealed trait ThickBetweenThin extends js.Object
+  
+  @js.native
+  sealed trait ThickThin extends js.Object
+  
+  @js.native
   sealed trait ThickThinLarge extends js.Object
   
   @js.native
@@ -1697,6 +1772,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait Thin extends js.Object
+  
+  @js.native
+  sealed trait ThinThick extends js.Object
   
   @js.native
   sealed trait ThinThickLarge extends js.Object
@@ -1715,6 +1793,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait ThinThickThinSmall extends js.Object
+  
+  @js.native
+  sealed trait ThinThin extends js.Object
   
   @js.native
   sealed trait ThisMonth extends js.Object
@@ -2127,6 +2208,7 @@ object officeDashJsDashPreviewLibStrings {
   def Cross: Cross = "Cross".asInstanceOf[Cross]
   def Csheet: Csheet = "Csheet".asInstanceOf[Csheet]
   def CurrentSize: CurrentSize = "CurrentSize".asInstanceOf[CurrentSize]
+  def Curve: Curve = "Curve".asInstanceOf[Curve]
   def Custom: Custom = "Custom".asInstanceOf[Custom]
   def Dash: Dash = "Dash".asInstanceOf[Dash]
   def DashDot: DashDot = "DashDot".asInstanceOf[DashDot]
@@ -2144,6 +2226,7 @@ object officeDashJsDashPreviewLibStrings {
   def Data: Data = "Data".asInstanceOf[Data]
   def DataBar: DataBar = "DataBar".asInstanceOf[DataBar]
   def DataOnly: DataOnly = "DataOnly".asInstanceOf[DataOnly]
+  def DataSourceOrder: DataSourceOrder = "DataSourceOrder".asInstanceOf[DataSourceOrder]
   def DataValidations: DataValidations = "DataValidations".asInstanceOf[DataValidations]
   def Date: Date = "Date".asInstanceOf[Date]
   def DateAxis: DateAxis = "DateAxis".asInstanceOf[DateAxis]
@@ -2187,6 +2270,7 @@ object officeDashJsDashPreviewLibStrings {
   def EdgeLeft: EdgeLeft = "EdgeLeft".asInstanceOf[EdgeLeft]
   def EdgeRight: EdgeRight = "EdgeRight".asInstanceOf[EdgeRight]
   def EdgeTop: EdgeTop = "EdgeTop".asInstanceOf[EdgeTop]
+  def Elbow: Elbow = "Elbow".asInstanceOf[Elbow]
   def Ellipsis: Ellipsis = "Ellipsis".asInstanceOf[Ellipsis]
   def Emf: Emf = "Emf".asInstanceOf[Emf]
   def Empty: Empty = "".asInstanceOf[Empty]
@@ -2232,6 +2316,15 @@ object officeDashJsDashPreviewLibStrings {
   def FanfoldStdGerman: FanfoldStdGerman = "FanfoldStdGerman".asInstanceOf[FanfoldStdGerman]
   def FanfoldUS: FanfoldUS = "FanfoldUS".asInstanceOf[FanfoldUS]
   def Fill: Fill = "Fill".asInstanceOf[Fill]
+  def FillCopy: FillCopy = "FillCopy".asInstanceOf[FillCopy]
+  def FillDays: FillDays = "FillDays".asInstanceOf[FillDays]
+  def FillDefault: FillDefault = "FillDefault".asInstanceOf[FillDefault]
+  def FillFormats: FillFormats = "FillFormats".asInstanceOf[FillFormats]
+  def FillMonths: FillMonths = "FillMonths".asInstanceOf[FillMonths]
+  def FillSeries: FillSeries = "FillSeries".asInstanceOf[FillSeries]
+  def FillValues: FillValues = "FillValues".asInstanceOf[FillValues]
+  def FillWeekdays: FillWeekdays = "FillWeekdays".asInstanceOf[FillWeekdays]
+  def FillYears: FillYears = "FillYears".asInstanceOf[FillYears]
   def Filter: Filter = "Filter".asInstanceOf[Filter]
   def FirstAndDefault: FirstAndDefault = "FirstAndDefault".asInstanceOf[FirstAndDefault]
   def FirstOddAndEven: FirstOddAndEven = "FirstOddAndEven".asInstanceOf[FirstOddAndEven]
@@ -2244,6 +2337,7 @@ object officeDashJsDashPreviewLibStrings {
   def FiveQuarters: FiveQuarters = "FiveQuarters".asInstanceOf[FiveQuarters]
   def FiveRating: FiveRating = "FiveRating".asInstanceOf[FiveRating]
   def FixedValue: FixedValue = "FixedValue".asInstanceOf[FixedValue]
+  def FlashFill: FlashFill = "FlashFill".asInstanceOf[FlashFill]
   def Float: Float = "Float".asInstanceOf[Float]
   def Folio: Folio = "Folio".asInstanceOf[Folio]
   def FontColor: FontColor = "FontColor".asInstanceOf[FontColor]
@@ -2277,6 +2371,7 @@ object officeDashJsDashPreviewLibStrings {
   def Grey75: Grey75 = "Grey75".asInstanceOf[Grey75]
   def Grid: Grid = "Grid".asInstanceOf[Grid]
   def Group: Group = "Group".asInstanceOf[Group]
+  def GrowthTrend: GrowthTrend = "GrowthTrend".asInstanceOf[GrowthTrend]
   def Hairline: Hairline = "Hairline".asInstanceOf[Hairline]
   def Header: Header = "Header".asInstanceOf[Header]
   def Heavy: Heavy = "Heavy".asInstanceOf[Heavy]
@@ -2338,6 +2433,7 @@ object officeDashJsDashPreviewLibStrings {
   def Line: Line = "Line".asInstanceOf[Line]
   def Linear: Linear = "Linear".asInstanceOf[Linear]
   def LinearGradient: LinearGradient = "LinearGradient".asInstanceOf[LinearGradient]
+  def LinearTrend: LinearTrend = "LinearTrend".asInstanceOf[LinearTrend]
   def LinkedEntityFinanceIcon: LinkedEntityFinanceIcon = "LinkedEntityFinanceIcon".asInstanceOf[LinkedEntityFinanceIcon]
   def LinkedEntityMapIcon: LinkedEntityMapIcon = "LinkedEntityMapIcon".asInstanceOf[LinkedEntityMapIcon]
   def List: List = "List".asInstanceOf[List]
@@ -2347,6 +2443,9 @@ object officeDashJsDashPreviewLibStrings {
   def LogicalNumbers: LogicalNumbers = "LogicalNumbers".asInstanceOf[LogicalNumbers]
   def LogicalNumbersText: LogicalNumbersText = "LogicalNumbersText".asInstanceOf[LogicalNumbersText]
   def LogicalText: LogicalText = "LogicalText".asInstanceOf[LogicalText]
+  def LongDash: LongDash = "LongDash".asInstanceOf[LongDash]
+  def LongDashDot: LongDashDot = "LongDashDot".asInstanceOf[LongDashDot]
+  def LongDashDotDot: LongDashDotDot = "LongDashDotDot".asInstanceOf[LongDashDotDot]
   def Low: Low = "Low".asInstanceOf[Low]
   def LowerLetter: LowerLetter = "LowerLetter".asInstanceOf[LowerLetter]
   def LowerRoman: LowerRoman = "LowerRoman".asInstanceOf[LowerRoman]
@@ -2524,6 +2623,7 @@ object officeDashJsDashPreviewLibStrings {
   def SplitByPosition: SplitByPosition = "SplitByPosition".asInstanceOf[SplitByPosition]
   def SplitByValue: SplitByValue = "SplitByValue".asInstanceOf[SplitByValue]
   def Square: Square = "Square".asInstanceOf[Square]
+  def SquareDot: SquareDot = "SquareDot".asInstanceOf[SquareDot]
   def StDev: StDev = "StDev".asInstanceOf[StDev]
   def StError: StError = "StError".asInstanceOf[StError]
   def StandardDeviation: StandardDeviation = "StandardDeviation".asInstanceOf[StandardDeviation]
@@ -2534,10 +2634,14 @@ object officeDashJsDashPreviewLibStrings {
   def Statement: Statement = "Statement".asInstanceOf[Statement]
   def StatusBar: StatusBar = "StatusBar".asInstanceOf[StatusBar]
   def Stop: Stop = "Stop".asInstanceOf[Stop]
+  def Straight: Straight = "Straight".asInstanceOf[Straight]
   def String: String = "String".asInstanceOf[String]
   def StrokeCount: StrokeCount = "StrokeCount".asInstanceOf[StrokeCount]
   def Sum: Sum = "Sum".asInstanceOf[Sum]
   def Svg: Svg = "Svg".asInstanceOf[Svg]
+  def SystemDash: SystemDash = "SystemDash".asInstanceOf[SystemDash]
+  def SystemDashDot: SystemDashDot = "SystemDashDot".asInstanceOf[SystemDashDot]
+  def SystemDot: SystemDot = "SystemDot".asInstanceOf[SystemDot]
   def Table: Table = "Table".asInstanceOf[Table]
   def TableAdded: TableAdded = "TableAdded".asInstanceOf[TableAdded]
   def TableCell: TableCell = "TableCell".asInstanceOf[TableCell]
@@ -2558,16 +2662,20 @@ object officeDashJsDashPreviewLibStrings {
   def TextLength: TextLength = "TextLength".asInstanceOf[TextLength]
   def ThaiDistributed: ThaiDistributed = "ThaiDistributed".asInstanceOf[ThaiDistributed]
   def Thick: Thick = "Thick".asInstanceOf[Thick]
+  def ThickBetweenThin: ThickBetweenThin = "ThickBetweenThin".asInstanceOf[ThickBetweenThin]
+  def ThickThin: ThickThin = "ThickThin".asInstanceOf[ThickThin]
   def ThickThinLarge: ThickThinLarge = "ThickThinLarge".asInstanceOf[ThickThinLarge]
   def ThickThinMed: ThickThinMed = "ThickThinMed".asInstanceOf[ThickThinMed]
   def ThickThinSmall: ThickThinSmall = "ThickThinSmall".asInstanceOf[ThickThinSmall]
   def Thin: Thin = "Thin".asInstanceOf[Thin]
+  def ThinThick: ThinThick = "ThinThick".asInstanceOf[ThinThick]
   def ThinThickLarge: ThinThickLarge = "ThinThickLarge".asInstanceOf[ThinThickLarge]
   def ThinThickMed: ThinThickMed = "ThinThickMed".asInstanceOf[ThinThickMed]
   def ThinThickSmall: ThinThickSmall = "ThinThickSmall".asInstanceOf[ThinThickSmall]
   def ThinThickThinLarge: ThinThickThinLarge = "ThinThickThinLarge".asInstanceOf[ThinThickThinLarge]
   def ThinThickThinMed: ThinThickThinMed = "ThinThickThinMed".asInstanceOf[ThinThickThinMed]
   def ThinThickThinSmall: ThinThickThinSmall = "ThinThickThinSmall".asInstanceOf[ThinThickThinSmall]
+  def ThinThin: ThinThin = "ThinThin".asInstanceOf[ThinThin]
   def ThisMonth: ThisMonth = "ThisMonth".asInstanceOf[ThisMonth]
   def ThisQuarter: ThisQuarter = "ThisQuarter".asInstanceOf[ThisQuarter]
   def ThisWeek: ThisWeek = "ThisWeek".asInstanceOf[ThisWeek]

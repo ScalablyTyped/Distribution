@@ -30,7 +30,13 @@ class EventGroup protected () extends js.Object {
     target: js.Any,
     eventName: java.lang.String,
     callback: js.Function1[/* args */ js.UndefOr[js.Any], scala.Unit],
-    useCapture: scala.Boolean
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  def off(
+    target: js.Any,
+    eventName: java.lang.String,
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], scala.Unit],
+    options: stdLib.AddEventListenerOptions
   ): scala.Unit = js.native
   /** On the target, attach an event whose handler will be called in the context of the parent
     * of this instance of EventGroup.
@@ -44,7 +50,13 @@ class EventGroup protected () extends js.Object {
     target: js.Any,
     eventName: java.lang.String,
     callback: js.Function1[/* args */ js.UndefOr[js.Any], scala.Unit],
-    useCapture: scala.Boolean
+    options: scala.Boolean
+  ): scala.Unit = js.native
+  def on(
+    target: js.Any,
+    eventName: java.lang.String,
+    callback: js.Function1[/* args */ js.UndefOr[js.Any], scala.Unit],
+    options: stdLib.AddEventListenerOptions
   ): scala.Unit = js.native
   /** On the target, attach a set of events, where the events object is a name to function mapping. */
   def onAll(

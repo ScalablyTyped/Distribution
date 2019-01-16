@@ -140,6 +140,10 @@ object EventType extends js.Object {
   sealed trait visualSelectionChanged
     extends officeDashJsDashPreviewLib.ExcelNs.EventType
   
+  @js.native
+  sealed trait wacoperationEvent
+    extends officeDashJsDashPreviewLib.ExcelNs.EventType
+  
   /**
     *
     * WorkbookAutoSaveSettingChanged represents the type of event registered on workbook, and occurs when there is an auto save setting change.
@@ -244,6 +248,7 @@ object EventType extends js.Object {
   /* "TableSelectionChanged" */ val tableSelectionChanged: tableSelectionChanged with java.lang.String = js.native
   /* "VisualChange" */ val visualChange: visualChange with java.lang.String = js.native
   /* "VisualSelectionChanged" */ val visualSelectionChanged: visualSelectionChanged with java.lang.String = js.native
+  /* "WACOperationEvent" */ val wacoperationEvent: wacoperationEvent with java.lang.String = js.native
   /* "WorkbookAutoSaveSettingChanged" */ val workbookAutoSaveSettingChanged: workbookAutoSaveSettingChanged with java.lang.String = js.native
   /* "WorksheetActivated" */ val worksheetActivated: worksheetActivated with java.lang.String = js.native
   /* "WorksheetAdded" */ val worksheetAdded: worksheetAdded with java.lang.String = js.native

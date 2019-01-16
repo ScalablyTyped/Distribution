@@ -23,7 +23,7 @@ object ^ extends js.Object {
   def loadConfig[T](request: readDashConfigDashFileLib.readDashConfigDashFileMod.ReadConfigRequest): js.Promise[
     readDashConfigDashFileLib.readDashConfigDashFileMod.ReadConfigResult[T] | scala.Null
   ] = js.native
-  def loadEnv(envFile: java.lang.String): js.Promise[org.scalablytyped.runtime.StringDictionary[java.lang.String] | scala.Null] = js.native
+  def loadEnv(envFile: java.lang.String): js.Promise[dotenvLib.dotenvMod.DotenvParseOutput | scala.Null] = js.native
   def loadParentConfig[T](
     request: readDashConfigDashFileLib.readDashConfigDashFileMod.ReadConfigRequest,
     spec: java.lang.String

@@ -13,7 +13,6 @@ class SurveyModel ()
      with ISurveyData
      with ISurveyImpl
      with ISurveyTriggerOwner
-     with ILocalizableOwner
      with /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   def this(jsonObj: js.Any) = this()
   /**
@@ -362,6 +361,16 @@ class SurveyModel ()
     * @see QuestionPanelDynamicModel.panels
     */
   var onDynamicPanelRemoved: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
+  /**
+    * Use the event to change the default error text.
+    * <br/> sender the survey object that fires the event
+    * <br/> options.text an error text
+    * <br/> options.error an instance of SurveyError object
+    * <br/> options.name the error name. The following error name are available:
+    * required, requireoneanswer, requirenumeric, exceedsize, webrequest, webrequestempty, otherempty,
+    * uploadingfile, requiredinallrowserror, minrowcounterror, keyduplicationerror, custom
+    */
+  var onErrorCustomText: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   /**
     * Use this event to change the question title in the code.
     * <br/> sender the survey object that fires the event
@@ -1035,6 +1044,7 @@ class SurveyModel ()
   def getCorrectedAnswerCount(): scala.Double = js.native
   def getCorrectedAnswers(): scala.Double = js.native
   def getDataValueCore(valuesHash: js.Any, key: java.lang.String): js.Any = js.native
+  def getErrorCustomText(text: java.lang.String, error: SurveyError): java.lang.String = js.native
   /* CompleteClass */
   override def getFilteredProperties(): js.Any = js.native
   /* CompleteClass */
@@ -1045,10 +1055,8 @@ class SurveyModel ()
   def getInCorrectedAnswerCount(): scala.Double = js.native
   def getInCorrectedAnswers(): scala.Double = js.native
   def getLocString(str: java.lang.String): js.Any = js.native
-  /* CompleteClass */
-  override def getLocale(): java.lang.String = js.native
-  /* CompleteClass */
-  override def getMarkdownHtml(text: java.lang.String): java.lang.String = js.native
+  def getLocale(): java.lang.String = js.native
+  def getMarkdownHtml(text: java.lang.String): java.lang.String = js.native
   /* CompleteClass */
   override def getObjects(pages: js.Array[java.lang.String], questions: js.Array[java.lang.String]): js.Array[_] = js.native
   def getPage(index: scala.Double): PageModel = js.native
@@ -1087,8 +1095,7 @@ class SurveyModel ()
     */
   def getPlainData(): js.Array[_] = js.native
   def getPlainData(options: surveyDashKnockoutLib.Anon_IncludeEmpty): js.Array[_] = js.native
-  /* CompleteClass */
-  override def getProcessedText(text: java.lang.String): java.lang.String = js.native
+  def getProcessedText(text: java.lang.String): java.lang.String = js.native
   /**
     * Returns the progress that a user made by answering on the survey.
     */

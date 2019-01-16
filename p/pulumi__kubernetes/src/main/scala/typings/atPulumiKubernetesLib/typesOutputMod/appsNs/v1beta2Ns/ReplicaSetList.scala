@@ -15,7 +15,7 @@ trait ReplicaSetList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */
-  val apiVersion: java.lang.String
+  val apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`
   /**
     * List of ReplicaSets. More info:
     * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller
@@ -27,7 +27,7 @@ trait ReplicaSetList extends js.Object {
     * CamelCase. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
     */
-  val kind: java.lang.String
+  val kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSetList
   /**
     * Standard list metadata. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds

@@ -81,7 +81,7 @@ trait ReplicationGroupArgs extends js.Object {
   /**
     * The replication group identifier. This parameter is stored as a lowercase string.
     */
-  val replicationGroupId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val replicationGroupId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   /**
     * One or more Amazon VPC security groups associated with this replication group. Use this parameter only when you are creating a replication group in an Amazon Virtual Private Cloud
     */

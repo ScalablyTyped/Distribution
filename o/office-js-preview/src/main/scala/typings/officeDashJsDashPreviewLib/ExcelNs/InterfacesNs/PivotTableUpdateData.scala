@@ -9,6 +9,14 @@ import scala.scalajs.js.annotation._
 trait PivotTableUpdateData extends js.Object {
   /**
     *
+    * True if the PivotTable should use custom lists when sorting.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var enableDataValueEditing: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * Name of the PivotTable.
     *
     * [Api set: ExcelApi 1.3]

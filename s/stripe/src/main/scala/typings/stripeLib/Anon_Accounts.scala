@@ -44,7 +44,7 @@ trait Anon_Accounts extends js.Object {
   var Tokens: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Tokens]
   var TransferReversals: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.TransferReversals]
   var Transfers: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Transfers]
-  var UsageRecordSummarys: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.UsageRecordSummarys]
+  var UsageRecordSummaries: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.UsageRecordSummaries]
   var UsageRecords: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.UsageRecords]
   var WebHooks: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.WebHooks]
 }

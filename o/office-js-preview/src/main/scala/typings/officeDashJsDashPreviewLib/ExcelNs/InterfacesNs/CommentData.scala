@@ -9,6 +9,14 @@ import scala.scalajs.js.annotation._
 trait CommentData extends js.Object {
   /**
     *
+    * Get/Set the content.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var content: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    *
     * Represents the comment identifier. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]

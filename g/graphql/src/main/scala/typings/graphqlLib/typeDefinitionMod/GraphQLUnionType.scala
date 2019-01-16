@@ -14,7 +14,7 @@ class GraphQLUnionType protected () extends js.Object {
   var extensionASTNodes: graphqlLib.tsutilsMaybeMod.Maybe[js.Array[graphqlLib.languageAstMod.UnionTypeExtensionNode]] = js.native
   var name: java.lang.String = js.native
   var resolveType: graphqlLib.tsutilsMaybeMod.Maybe[GraphQLTypeResolver[_, _]] = js.native
-  def getTypes(): js.Array[GraphQLObjectType] = js.native
+  def getTypes(): js.Array[GraphQLObjectType[_, _]] = js.native
   def inspect(): java.lang.String = js.native
   def toJSON(): java.lang.String = js.native
 }

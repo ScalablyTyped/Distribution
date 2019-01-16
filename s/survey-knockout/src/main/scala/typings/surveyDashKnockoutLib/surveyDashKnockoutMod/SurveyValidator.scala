@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("survey-knockout", "SurveyValidator")
 @js.native
 class SurveyValidator () extends Base {
+  var errorOwner: ISurveyErrorOwner = js.native
   val isValidateAllValues: scala.Boolean = js.native
-  var locOwner: ILocalizableOwner = js.native
   val locText: LocalizableString = js.native
   var text: java.lang.String = js.native
   /* protected */ def createCustomError(name: java.lang.String): SurveyError = js.native

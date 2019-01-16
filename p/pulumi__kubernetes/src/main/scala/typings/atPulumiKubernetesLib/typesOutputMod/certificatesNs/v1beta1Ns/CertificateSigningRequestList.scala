@@ -12,7 +12,7 @@ trait CertificateSigningRequestList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */
-  val apiVersion: java.lang.String
+  val apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1`
   val items: js.Array[CertificateSigningRequest]
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may
@@ -20,7 +20,7 @@ trait CertificateSigningRequestList extends js.Object {
     * CamelCase. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
     */
-  val kind: java.lang.String
+  val kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CertificateSigningRequestList
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 

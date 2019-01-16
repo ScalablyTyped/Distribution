@@ -11,14 +11,14 @@ import scala.scalajs.js.annotation._
 trait ShowAsRule extends js.Object {
   /**
     *
-    * The Base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.
+    * The base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.
     *
     * [Api set: ExcelApi 1.8]
     */
   var baseField: js.UndefOr[PivotField] = js.undefined
   /**
     *
-    * The Base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null.
+    * The base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null.
     *
     * [Api set: ExcelApi 1.8]
     */

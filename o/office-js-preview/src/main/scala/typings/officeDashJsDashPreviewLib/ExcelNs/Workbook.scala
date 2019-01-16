@@ -173,6 +173,14 @@ class Workbook ()
   val settings: SettingCollection = js.native
   /**
     *
+    * Represents a collection of Slicers associated with the workbook. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val slicers: SlicerCollection = js.native
+  /**
+    *
     * Represents a collection of styles associated with the workbook. Read-only.
     *
     * [Api set: ExcelApi 1.7]
@@ -247,6 +255,22 @@ class Workbook ()
     * @beta
     */
   def getActiveChartOrNullObject(): Chart = js.native
+  /**
+    *
+    * Gets the currently active slicer in the workbook. If there is no active slicer, will throw exception when invoke this statement.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getActiveSlicer(): Slicer = js.native
+  /**
+    *
+    * Gets the currently active slicer in the workbook. If there is no active slicer, will return null object
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getActiveSlicerOrNullObject(): Slicer = js.native
   /**
     *
     * True if the workbook is being edited by multiple users (co-authoring).
@@ -324,6 +348,15 @@ class Workbook ()
   ): scala.Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Workbook): scala.Unit = js.native
+  /**
+    *
+    * Occurs when a WAC operation occurs.
+    *
+    * [Api set: WACOperationEvents 1.1]
+    *
+    * @eventproperty
+    * @beta
+    */
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.Workbook object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.WorkbookData`) that contains shallow copies of any loaded child properties from the original object.

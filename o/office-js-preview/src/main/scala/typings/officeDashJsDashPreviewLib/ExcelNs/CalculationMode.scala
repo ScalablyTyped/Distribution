@@ -14,14 +14,29 @@ sealed trait CalculationMode extends js.Object
 @JSGlobal("Excel.CalculationMode")
 @js.native
 object CalculationMode extends js.Object {
+  /**
+    *
+    * The default recalculation behavior where Excel calculates new formula results every time the relevant data is changed.
+    *
+    */
   @js.native
   sealed trait automatic
     extends officeDashJsDashPreviewLib.ExcelNs.CalculationMode
   
+  /**
+    *
+    * Calculates new formula results every time the relevant data is changed, unless the formula is in a data table.
+    *
+    */
   @js.native
   sealed trait automaticExceptTables
     extends officeDashJsDashPreviewLib.ExcelNs.CalculationMode
   
+  /**
+    *
+    * Calculations only occur when the user or add-in requests them.
+    *
+    */
   @js.native
   sealed trait manual
     extends officeDashJsDashPreviewLib.ExcelNs.CalculationMode

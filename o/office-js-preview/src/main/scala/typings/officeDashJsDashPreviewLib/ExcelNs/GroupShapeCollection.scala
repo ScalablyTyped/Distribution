@@ -31,14 +31,24 @@ class GroupShapeCollection ()
   def getCount(): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
   /**
     *
-    * Returns a shape identified by the shape id. Read-only.
+    * Gets a shape using its name.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param shapeId The identifier for the shape.
+    * @param name Name of the shape to be retrieved.
     */
-  def getItem(shapeId: java.lang.String): Shape = js.native
+  def getItem(name: java.lang.String): Shape = js.native
+  /**
+    *
+    * Gets a shape based on its position in the collection.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param index Index value of the object to be retrieved. Zero-indexed.
+    */
+  def getItemAt(index: scala.Double): Shape = js.native
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *

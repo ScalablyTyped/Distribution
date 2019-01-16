@@ -15,7 +15,7 @@ trait ControllerRevisionList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */
-  val apiVersion: java.lang.String
+  val apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`
   /**
     * Items is the list of ControllerRevisions
     */
@@ -26,7 +26,7 @@ trait ControllerRevisionList extends js.Object {
     * CamelCase. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
     */
-  val kind: java.lang.String
+  val kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList
   /**
     * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
     */

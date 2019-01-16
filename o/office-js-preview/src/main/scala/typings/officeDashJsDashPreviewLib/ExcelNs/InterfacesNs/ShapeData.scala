@@ -69,6 +69,22 @@ trait ShapeData extends js.Object {
   var left: js.UndefOr[scala.Double] = js.undefined
   /**
     *
+    * Represents the level of the specified shape. Level 0 means the shape is not part of any group, level 1 means the shape is part of a top-level group, etc.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var level: js.UndefOr[scala.Double] = js.undefined
+  /**
+    *
+    * Returns the line formatting of the shape object. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var lineFormat: js.UndefOr[ShapeLineFormatData] = js.undefined
+  /**
+    *
     * Represents if the aspect ratio locked, in boolean, of the shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -77,7 +93,7 @@ trait ShapeData extends js.Object {
   var lockAspectRatio: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the name of the shape. Read-only.
+    * Represents the name of the shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -118,7 +134,7 @@ trait ShapeData extends js.Object {
     * @beta
     */
   var `type`: js.UndefOr[
-    officeDashJsDashPreviewLib.ExcelNs.ShapeType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Image | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GeometricShape | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Group
+    officeDashJsDashPreviewLib.ExcelNs.ShapeType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Image | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GeometricShape | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Group | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Line
   ] = js.undefined
   /**
     *

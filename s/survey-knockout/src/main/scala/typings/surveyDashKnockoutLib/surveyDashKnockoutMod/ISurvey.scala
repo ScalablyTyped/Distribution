@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ISurvey extends ITextProcessor {
+trait ISurvey
+  extends ISurveyErrorOwner
+     with ITextProcessor {
   var areInvisibleElementsShowing: scala.Boolean
   var clearValueOnDisableItems: scala.Boolean
   var currentPage: IPage

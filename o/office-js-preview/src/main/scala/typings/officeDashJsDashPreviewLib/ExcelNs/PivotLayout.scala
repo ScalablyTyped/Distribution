@@ -15,6 +15,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class PivotLayout ()
   extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject {
+  /**
+    *
+    * True if formatting will be automatically formatted when it’s refreshed or when fields are moved
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var autoFormat: scala.Boolean = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_PivotLayout: RequestContext = js.native
@@ -33,6 +41,14 @@ class PivotLayout ()
     * [Api set: ExcelApi 1.8]
     */
   var layoutType: PivotLayoutType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Compact | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Tabular | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Outline = js.native
+  /**
+    *
+    * True if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var preserveFormatting: scala.Boolean = js.native
   /**
     *
     * True if the PivotTable report shows grand totals for columns.

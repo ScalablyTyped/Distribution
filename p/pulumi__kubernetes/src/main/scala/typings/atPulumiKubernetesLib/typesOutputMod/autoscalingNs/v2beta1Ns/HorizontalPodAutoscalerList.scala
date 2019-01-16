@@ -15,7 +15,7 @@ trait HorizontalPodAutoscalerList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */
-  val apiVersion: java.lang.String
+  val apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1`
   /**
     * items is the list of horizontal pod autoscaler objects.
     */
@@ -26,7 +26,7 @@ trait HorizontalPodAutoscalerList extends js.Object {
     * CamelCase. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
     */
-  val kind: java.lang.String
+  val kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.HorizontalPodAutoscalerList
   /**
     * metadata is the standard list metadata.
     */

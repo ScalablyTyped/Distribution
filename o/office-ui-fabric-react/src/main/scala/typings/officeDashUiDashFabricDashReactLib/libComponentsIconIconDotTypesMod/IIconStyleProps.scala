@@ -11,5 +11,6 @@ trait IIconStyleProps extends js.Object {
   var isImage: scala.Boolean
   var isPlaceholder: scala.Boolean
   var styles: js.UndefOr[stdLib.Partial[IIconStyles]] = js.undefined
+  var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
 }
 

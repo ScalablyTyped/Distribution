@@ -14,11 +14,8 @@ class TeachingBubbleBase protected ()
     ] {
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsTeachingBubbleTeachingBubbleDotTypesMod.ITeachingBubbleProps) = this()
   var _defaultCalloutProps: js.Any = js.native
-  @JSName("rootElement")
-  var rootElement_Original: officeDashUiDashFabricDashReactLib.Anon_Component = js.native
+  var rootElement: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement] = js.native
   def focus(): scala.Unit = js.native
-  def rootElement(): scala.Unit = js.native
-  def rootElement(component: reactLib.HTMLDivElement): scala.Unit = js.native
 }
 
 @JSImport("office-ui-fabric-react/lib/components/TeachingBubble/TeachingBubble.base", "TeachingBubbleBase")

@@ -203,7 +203,7 @@ class ChartAxis ()
   var position: ChartAxisPosition | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Maximum | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Minimum | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Custom = js.native
   /**
     *
-    * Represents the specified axis position where the other axis crosses at. Read Only. Set to this property should use SetPositionAt(double) method.
+    * Represents the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property.
     *
     * [Api set: ExcelApi 1.8]
     */

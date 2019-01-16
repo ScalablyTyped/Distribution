@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class StyleCollection ()
   extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_StyleCollection: RequestContext = js.native
   /** Gets the loaded child items in this collection. */
   val items: js.Array[Style] = js.native
   /**
@@ -28,6 +31,14 @@ class StyleCollection ()
   def add(name: java.lang.String): scala.Unit = js.native
   /**
     *
+    * Gets the number of styles in the collection.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getCount(): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
+  /**
+    *
     * Gets a style by name.
     *
     * [Api set: ExcelApi 1.7]
@@ -35,6 +46,16 @@ class StyleCollection ()
     * @param name Name of the style to be retrieved.
     */
   def getItem(name: java.lang.String): Style = js.native
+  /**
+    *
+    * Gets a style based on its position in the collection.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param index Index value of the object to be retrieved. Zero-indexed.
+    */
+  def getItemAt(index: scala.Double): Style = js.native
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *
@@ -57,6 +78,10 @@ class StyleCollection ()
   def load(option: java.lang.String): StyleCollection = js.native
   def load(option: js.Array[java.lang.String]): StyleCollection = js.native
   def load(option: officeDashJsDashPreviewLib.OfficeExtensionNs.LoadOption): StyleCollection = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original `Excel.StyleCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.StyleCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    */
   def toJSON(): officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.StyleCollectionData = js.native
 }
 

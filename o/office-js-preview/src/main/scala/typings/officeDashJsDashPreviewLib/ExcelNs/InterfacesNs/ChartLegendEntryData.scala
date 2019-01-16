@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 trait ChartLegendEntryData extends js.Object {
   /**
     *
-    * Represents the height of the legendEntry on the chart Legend.
+    * Represents the height of the legendEntry on the chart legend.
     *
     * [Api set: ExcelApi 1.8]
     */
   var height: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Represents the index of the LegendEntry in the Chart Legend.
+    * Represents the index of the legendEntry in the chart legend.
     *
     * [Api set: ExcelApi 1.8]
     */

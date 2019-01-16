@@ -13,9 +13,13 @@ trait GraphQLSchemaConfig extends GraphQLSchemaValidationOptions {
   var extensionASTNodes: js.UndefOr[
     graphqlLib.tsutilsMaybeMod.Maybe[js.Array[graphqlLib.languageAstMod.SchemaExtensionNode]]
   ] = js.undefined
-  var mutation: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLObjectType]] = js.undefined
-  var query: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLObjectType]
-  var subscription: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLObjectType]] = js.undefined
+  var mutation: js.UndefOr[
+    graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _]]
+  ] = js.undefined
+  var query: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _]]
+  var subscription: js.UndefOr[
+    graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _]]
+  ] = js.undefined
   var types: js.UndefOr[
     graphqlLib.tsutilsMaybeMod.Maybe[js.Array[graphqlLib.typeDefinitionMod.GraphQLNamedType]]
   ] = js.undefined

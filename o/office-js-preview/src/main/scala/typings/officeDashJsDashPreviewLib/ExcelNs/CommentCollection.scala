@@ -21,6 +21,33 @@ class CommentCollection ()
   var context_CommentCollection: RequestContext = js.native
   /** Gets the loaded child items in this collection. */
   val items: js.Array[Comment] = js.native
+  def add(content: java.lang.String, cellAddress: java.lang.String): Comment = js.native
+  def add(content: java.lang.String, cellAddress: java.lang.String, contentType: ContentType): Comment = js.native
+  /**
+    *
+    * Creates a new comment(comment thread) based on the cell location and content. Invalid argument will be thrown if the location is larger than one cell.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param content The comment content.
+    * @param cellAddress Cell to insert comment to. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
+    * @param contentType Optional. Type of the comment content
+    */
+  def add(content: java.lang.String, cellAddress: Range): Comment = js.native
+  def add(content: java.lang.String, cellAddress: Range, contentType: ContentType): Comment = js.native
+  @JSName("add")
+  def add_Plain(
+    content: java.lang.String,
+    cellAddress: java.lang.String,
+    contentType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Plain
+  ): Comment = js.native
+  @JSName("add")
+  def add_Plain(
+    content: java.lang.String,
+    cellAddress: Range,
+    contentType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Plain
+  ): Comment = js.native
   /**
     *
     * Gets the number of comments in the collection.
@@ -49,6 +76,27 @@ class CommentCollection ()
     * @param index Index value of the object to be retrieved. Zero-indexed.
     */
   def getItemAt(index: scala.Double): Comment = js.native
+  def getItemByCell(cellAddress: java.lang.String): Comment = js.native
+  /**
+    *
+    * Gets a comment on the specific cell in the collection.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param cellAddress Cell which the comment is on. May be an Excel Range object, or a string. If string, must contain the full address, including the sheet name
+    */
+  def getItemByCell(cellAddress: Range): Comment = js.native
+  /**
+    *
+    * Gets a comment related to its reply ID in the collection.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param replyId The identifier of comment reply.
+    */
+  def getItemByReplyId(replyId: java.lang.String): Comment = js.native
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *

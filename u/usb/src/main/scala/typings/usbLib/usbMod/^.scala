@@ -88,6 +88,7 @@ object ^ extends js.Object {
   def findByIds(vid: scala.Double, pid: scala.Double): usbLib.usbMod.Device = js.native
   def getDeviceList(): js.Array[usbLib.usbMod.Device] = js.native
   def on(event: java.lang.String, callback: js.Function1[/* device */ usbLib.usbMod.Device, scala.Unit]): scala.Unit = js.native
+  def removeListener(event: java.lang.String, callback: js.Function1[/* device */ usbLib.usbMod.Device, scala.Unit]): scala.Unit = js.native
   def setDebugLevel(level: scala.Double): scala.Unit = js.native
 }
 

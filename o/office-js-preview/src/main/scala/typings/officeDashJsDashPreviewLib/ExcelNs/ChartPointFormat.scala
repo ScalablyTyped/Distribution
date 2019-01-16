@@ -27,7 +27,7 @@ class ChartPointFormat ()
   var context_ChartPointFormat: RequestContext = js.native
   /**
     *
-    * Represents the fill format of a chart, which includes background formating information. Read-only.
+    * Represents the fill format of a chart, which includes background formatting information. Read-only.
     *
     * [Api set: ExcelApi 1.1]
     */

@@ -29,7 +29,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfigurationList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfigurationList`,
       name: java.lang.String,
@@ -43,7 +45,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfigurationList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.InitializerConfigurationList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfigurationList`,
       name: java.lang.String,
@@ -54,7 +56,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfigurationList`,
       namespace: java.lang.String,
@@ -70,7 +74,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.InitializerConfigurationList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfigurationList`,
       namespace: java.lang.String,
@@ -87,7 +91,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfiguration`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfiguration`,
       name: java.lang.String,
@@ -101,7 +107,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfiguration`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.InitializerConfiguration] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfiguration`,
       name: java.lang.String,
@@ -112,7 +118,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfiguration`,
       namespace: java.lang.String,
@@ -128,7 +136,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.InitializerConfiguration] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfiguration`,
       namespace: java.lang.String,
@@ -139,7 +147,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
       name: java.lang.String,
@@ -153,7 +163,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.MutatingWebhookConfigurationList
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
       name: java.lang.String,
@@ -164,7 +176,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
       namespace: java.lang.String,
@@ -180,7 +194,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.MutatingWebhookConfigurationList
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfigurationList`,
       namespace: java.lang.String,
@@ -191,12 +207,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.MutatingWebhookConfiguration] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration`,
       name: java.lang.String,
@@ -214,13 +232,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.MutatingWebhookConfiguration] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/MutatingWebhookConfiguration`,
       namespace: java.lang.String,
@@ -239,7 +259,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`,
       name: java.lang.String,
@@ -253,7 +275,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ValidatingWebhookConfigurationList
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`,
       name: java.lang.String,
@@ -264,7 +288,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`,
       namespace: java.lang.String,
@@ -280,7 +306,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ValidatingWebhookConfigurationList
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfigurationList`,
       namespace: java.lang.String,
@@ -291,12 +319,16 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfiguration`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfiguration`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ValidatingWebhookConfiguration
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfiguration`,
       name: java.lang.String,
@@ -314,13 +346,17 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfiguration`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ValidatingWebhookConfiguration
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1/ValidatingWebhookConfiguration`,
       namespace: java.lang.String,
@@ -339,7 +375,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList`,
       name: java.lang.String,
@@ -353,7 +391,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CustomResourceDefinitionList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList`,
       name: java.lang.String,
@@ -364,7 +402,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList`,
       namespace: java.lang.String,
@@ -380,7 +420,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CustomResourceDefinitionList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinitionList`,
       namespace: java.lang.String,
@@ -391,12 +431,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CustomResourceDefinition] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`,
       name: java.lang.String,
@@ -421,13 +463,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CustomResourceDefinition] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1/CustomResourceDefinition`,
       namespace: java.lang.String,
@@ -454,7 +498,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1/APIServiceList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1/APIServiceList`,
       name: java.lang.String,
@@ -464,7 +510,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1/APIServiceList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIServiceList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1/APIServiceList`,
       name: java.lang.String,
@@ -475,7 +521,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1/APIServiceList`,
       namespace: java.lang.String,
@@ -487,7 +535,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIServiceList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1/APIServiceList`,
       namespace: java.lang.String,
@@ -498,12 +546,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1/APIService`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1/APIService`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIService] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1/APIService`,
       name: java.lang.String,
@@ -524,13 +574,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1/APIService`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIService] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1/APIService`,
       namespace: java.lang.String,
@@ -553,7 +605,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1beta1/APIServiceList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1beta1/APIServiceList`,
       name: java.lang.String,
@@ -565,7 +619,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1beta1/APIServiceList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIServiceList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1beta1/APIServiceList`,
       name: java.lang.String,
@@ -576,7 +630,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1beta1/APIServiceList`,
       namespace: java.lang.String,
@@ -590,7 +646,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIServiceList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1beta1/APIServiceList`,
       namespace: java.lang.String,
@@ -601,12 +657,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1beta1/APIService`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1beta1/APIService`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIService] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1beta1/APIService`,
       name: java.lang.String,
@@ -629,13 +687,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1beta1/APIService`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIService] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistration/v1beta1/APIService`,
       namespace: java.lang.String,
@@ -660,7 +720,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1/APIServiceList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1/APIServiceList`,
       name: java.lang.String,
@@ -670,7 +732,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1/APIServiceList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIServiceList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1/APIServiceList`,
       name: java.lang.String,
@@ -681,7 +743,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1/APIServiceList`,
       namespace: java.lang.String,
@@ -693,7 +757,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIServiceList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1/APIServiceList`,
       namespace: java.lang.String,
@@ -704,12 +768,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1/APIService`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1/APIService`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIService] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1/APIService`,
       name: java.lang.String,
@@ -730,13 +796,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1/APIService`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIService] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1/APIService`,
       namespace: java.lang.String,
@@ -759,7 +827,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1/APIServiceList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1/APIServiceList`,
       name: java.lang.String,
@@ -771,7 +841,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1/APIServiceList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIServiceList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1/APIServiceList`,
       name: java.lang.String,
@@ -782,7 +852,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1/APIServiceList`,
       namespace: java.lang.String,
@@ -796,7 +868,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIServiceList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1/APIServiceList`,
       namespace: java.lang.String,
@@ -807,12 +879,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1/APIService`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1/APIService`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIService] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1/APIService`,
       name: java.lang.String,
@@ -835,13 +909,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1/APIService`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIService] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1/APIService`,
       namespace: java.lang.String,
@@ -866,7 +942,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ControllerRevisionList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ControllerRevisionList`,
       name: java.lang.String,
@@ -876,7 +952,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ControllerRevisionList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ControllerRevisionList`,
       name: java.lang.String,
@@ -887,7 +963,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ControllerRevisionList`,
       namespace: java.lang.String,
@@ -899,7 +975,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ControllerRevisionList`,
       namespace: java.lang.String,
@@ -910,7 +986,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ControllerRevision`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ControllerRevision`,
       name: java.lang.String,
@@ -920,7 +996,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ControllerRevision`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevision] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ControllerRevision`,
       name: java.lang.String,
@@ -936,7 +1012,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ControllerRevision`,
       namespace: java.lang.String,
@@ -948,7 +1024,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevision] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ControllerRevision`,
       namespace: java.lang.String,
@@ -965,7 +1041,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DaemonSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DaemonSetList`,
       name: java.lang.String,
@@ -975,7 +1051,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DaemonSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DaemonSetList`,
       name: java.lang.String,
@@ -986,7 +1062,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DaemonSetList`,
       namespace: java.lang.String,
@@ -998,7 +1074,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DaemonSetList`,
       namespace: java.lang.String,
@@ -1009,12 +1085,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DaemonSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DaemonSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DaemonSet`,
       name: java.lang.String,
@@ -1035,13 +1111,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DaemonSet`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DaemonSet`,
       namespace: java.lang.String,
@@ -1064,7 +1140,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DeploymentList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DeploymentList`,
       name: java.lang.String,
@@ -1074,7 +1150,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DeploymentList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DeploymentList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DeploymentList`,
       name: java.lang.String,
@@ -1085,7 +1161,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DeploymentList`,
       namespace: java.lang.String,
@@ -1097,7 +1173,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DeploymentList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/DeploymentList`,
       namespace: java.lang.String,
@@ -1108,12 +1184,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/Deployment`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/Deployment`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Deployment] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/Deployment`,
       name: java.lang.String,
@@ -1134,13 +1210,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/Deployment`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Deployment] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/Deployment`,
       namespace: java.lang.String,
@@ -1163,7 +1239,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ReplicaSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ReplicaSetList`,
       name: java.lang.String,
@@ -1173,7 +1249,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ReplicaSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ReplicaSetList`,
       name: java.lang.String,
@@ -1184,7 +1260,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ReplicaSetList`,
       namespace: java.lang.String,
@@ -1196,7 +1272,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ReplicaSetList`,
       namespace: java.lang.String,
@@ -1207,12 +1283,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ReplicaSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ReplicaSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ReplicaSet`,
       name: java.lang.String,
@@ -1233,13 +1309,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ReplicaSet`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/ReplicaSet`,
       namespace: java.lang.String,
@@ -1262,7 +1338,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/StatefulSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/StatefulSetList`,
       name: java.lang.String,
@@ -1272,7 +1348,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/StatefulSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/StatefulSetList`,
       name: java.lang.String,
@@ -1283,7 +1359,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/StatefulSetList`,
       namespace: java.lang.String,
@@ -1295,7 +1371,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/StatefulSetList`,
       namespace: java.lang.String,
@@ -1306,12 +1382,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/StatefulSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/StatefulSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/StatefulSet`,
       name: java.lang.String,
@@ -1332,13 +1408,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/StatefulSet`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1/StatefulSet`,
       namespace: java.lang.String,
@@ -1361,7 +1437,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/ControllerRevisionList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/ControllerRevisionList`,
       name: java.lang.String,
@@ -1373,7 +1449,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/ControllerRevisionList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/ControllerRevisionList`,
       name: java.lang.String,
@@ -1384,7 +1460,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/ControllerRevisionList`,
       namespace: java.lang.String,
@@ -1398,7 +1474,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/ControllerRevisionList`,
       namespace: java.lang.String,
@@ -1409,7 +1485,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/ControllerRevision`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/ControllerRevision`,
       name: java.lang.String,
@@ -1419,7 +1495,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/ControllerRevision`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevision] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/ControllerRevision`,
       name: java.lang.String,
@@ -1435,7 +1511,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/ControllerRevision`,
       namespace: java.lang.String,
@@ -1447,7 +1523,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevision] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/ControllerRevision`,
       namespace: java.lang.String,
@@ -1464,7 +1540,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentList`,
       name: java.lang.String,
@@ -1474,7 +1550,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DeploymentList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentList`,
       name: java.lang.String,
@@ -1485,7 +1561,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentList`,
       namespace: java.lang.String,
@@ -1497,7 +1573,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DeploymentList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentList`,
       namespace: java.lang.String,
@@ -1505,74 +1581,15 @@ object yamlNs extends js.Object {
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
     def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentRollback`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentRollback`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentRollback`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentRollback`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.rollback_to
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.appsNs.v1beta1Ns.RollbackConfig] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentRollback`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.updated_annotations
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
-        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]]
-      ] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentRollback`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentRollback`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentRollback`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentRollback`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.rollback_to
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.appsNs.v1beta1Ns.RollbackConfig] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentRollback`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.updated_annotations
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
-        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]]
-      ] = js.native
-    def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Deployment`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Deployment`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Deployment] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Deployment`,
       name: java.lang.String,
@@ -1593,13 +1610,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Deployment`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Deployment] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Deployment`,
       namespace: java.lang.String,
@@ -1619,65 +1636,10 @@ object yamlNs extends js.Object {
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.status
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.appsNs.v1beta1Ns.DeploymentStatus] = js.native
     def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.spec
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.appsNs.v1beta1Ns.ScaleSpec] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.status
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.appsNs.v1beta1Ns.ScaleStatus] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.spec
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.appsNs.v1beta1Ns.ScaleSpec] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.status
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.appsNs.v1beta1Ns.ScaleStatus] = js.native
-    def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/StatefulSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/StatefulSetList`,
       name: java.lang.String,
@@ -1687,7 +1649,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/StatefulSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/StatefulSetList`,
       name: java.lang.String,
@@ -1698,7 +1660,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/StatefulSetList`,
       namespace: java.lang.String,
@@ -1710,7 +1672,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/StatefulSetList`,
       namespace: java.lang.String,
@@ -1721,12 +1683,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/StatefulSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/StatefulSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/StatefulSet`,
       name: java.lang.String,
@@ -1747,13 +1709,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/StatefulSet`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/StatefulSet`,
       namespace: java.lang.String,
@@ -1776,7 +1738,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ControllerRevisionList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ControllerRevisionList`,
       name: java.lang.String,
@@ -1788,7 +1750,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ControllerRevisionList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ControllerRevisionList`,
       name: java.lang.String,
@@ -1799,7 +1761,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ControllerRevisionList`,
       namespace: java.lang.String,
@@ -1813,7 +1775,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ControllerRevisionList`,
       namespace: java.lang.String,
@@ -1824,7 +1786,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ControllerRevision`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ControllerRevision`,
       name: java.lang.String,
@@ -1834,7 +1796,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ControllerRevision`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevision] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ControllerRevision`,
       name: java.lang.String,
@@ -1850,7 +1812,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ControllerRevision`,
       namespace: java.lang.String,
@@ -1862,7 +1824,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevision] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ControllerRevision`,
       namespace: java.lang.String,
@@ -1879,7 +1841,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DaemonSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DaemonSetList`,
       name: java.lang.String,
@@ -1889,7 +1851,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DaemonSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DaemonSetList`,
       name: java.lang.String,
@@ -1900,7 +1862,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DaemonSetList`,
       namespace: java.lang.String,
@@ -1912,7 +1874,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DaemonSetList`,
       namespace: java.lang.String,
@@ -1923,12 +1885,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DaemonSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DaemonSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DaemonSet`,
       name: java.lang.String,
@@ -1949,13 +1911,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DaemonSet`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DaemonSet`,
       namespace: java.lang.String,
@@ -1978,7 +1940,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DeploymentList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DeploymentList`,
       name: java.lang.String,
@@ -1988,7 +1950,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DeploymentList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DeploymentList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DeploymentList`,
       name: java.lang.String,
@@ -1999,7 +1961,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DeploymentList`,
       namespace: java.lang.String,
@@ -2011,7 +1973,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DeploymentList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/DeploymentList`,
       namespace: java.lang.String,
@@ -2022,12 +1984,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Deployment`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Deployment`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Deployment] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Deployment`,
       name: java.lang.String,
@@ -2048,13 +2010,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Deployment`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Deployment] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Deployment`,
       namespace: java.lang.String,
@@ -2077,7 +2039,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ReplicaSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ReplicaSetList`,
       name: java.lang.String,
@@ -2087,7 +2049,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ReplicaSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ReplicaSetList`,
       name: java.lang.String,
@@ -2098,7 +2060,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ReplicaSetList`,
       namespace: java.lang.String,
@@ -2110,7 +2072,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ReplicaSetList`,
       namespace: java.lang.String,
@@ -2121,12 +2083,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ReplicaSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ReplicaSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ReplicaSet`,
       name: java.lang.String,
@@ -2147,13 +2109,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ReplicaSet`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/ReplicaSet`,
       namespace: java.lang.String,
@@ -2173,65 +2135,10 @@ object yamlNs extends js.Object {
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.status
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.appsNs.v1beta2Ns.ReplicaSetStatus] = js.native
     def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.spec
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.appsNs.v1beta2Ns.ScaleSpec] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.status
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.appsNs.v1beta2Ns.ScaleStatus] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.spec
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.appsNs.v1beta2Ns.ScaleSpec] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.status
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.appsNs.v1beta2Ns.ScaleStatus] = js.native
-    def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/StatefulSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/StatefulSetList`,
       name: java.lang.String,
@@ -2241,7 +2148,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/StatefulSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/StatefulSetList`,
       name: java.lang.String,
@@ -2252,7 +2159,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/StatefulSetList`,
       namespace: java.lang.String,
@@ -2264,7 +2171,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/StatefulSetList`,
       namespace: java.lang.String,
@@ -2275,12 +2182,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/StatefulSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/StatefulSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/StatefulSet`,
       name: java.lang.String,
@@ -2301,13 +2208,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/StatefulSet`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/StatefulSet`,
       namespace: java.lang.String,
@@ -2330,7 +2237,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList`,
       name: java.lang.String,
@@ -2342,7 +2251,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.AuditSinkList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList`,
       name: java.lang.String,
@@ -2353,7 +2262,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList`,
       namespace: java.lang.String,
@@ -2367,7 +2278,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.AuditSinkList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1/AuditSinkList`,
       namespace: java.lang.String,
@@ -2378,12 +2289,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1/AuditSink`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1/AuditSink`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.AuditSink] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1/AuditSink`,
       name: java.lang.String,
@@ -2401,13 +2314,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1/AuditSink`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.AuditSink] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1/AuditSink`,
       namespace: java.lang.String,
@@ -2426,12 +2341,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1/TokenReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1/TokenReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.TokenReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1/TokenReview`,
       name: java.lang.String,
@@ -2452,13 +2369,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1/TokenReview`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.TokenReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1/TokenReview`,
       namespace: java.lang.String,
@@ -2481,12 +2400,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1beta1/TokenReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1beta1/TokenReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.TokenReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1beta1/TokenReview`,
       name: java.lang.String,
@@ -2509,13 +2430,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1beta1/TokenReview`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.TokenReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1beta1/TokenReview`,
       namespace: java.lang.String,
@@ -2540,12 +2463,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/LocalSubjectAccessReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/LocalSubjectAccessReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LocalSubjectAccessReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/LocalSubjectAccessReview`,
       name: java.lang.String,
@@ -2570,13 +2493,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/LocalSubjectAccessReview`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LocalSubjectAccessReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/LocalSubjectAccessReview`,
       namespace: java.lang.String,
@@ -2603,12 +2526,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/SelfSubjectAccessReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/SelfSubjectAccessReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectAccessReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/SelfSubjectAccessReview`,
       name: java.lang.String,
@@ -2633,13 +2556,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/SelfSubjectAccessReview`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectAccessReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/SelfSubjectAccessReview`,
       namespace: java.lang.String,
@@ -2666,12 +2589,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/SelfSubjectRulesReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/SelfSubjectRulesReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectRulesReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/SelfSubjectRulesReview`,
       name: java.lang.String,
@@ -2696,13 +2619,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/SelfSubjectRulesReview`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectRulesReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/SelfSubjectRulesReview`,
       namespace: java.lang.String,
@@ -2729,12 +2652,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/SubjectAccessReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/SubjectAccessReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SubjectAccessReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/SubjectAccessReview`,
       name: java.lang.String,
@@ -2759,13 +2682,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/SubjectAccessReview`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SubjectAccessReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1/SubjectAccessReview`,
       namespace: java.lang.String,
@@ -2792,12 +2715,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/LocalSubjectAccessReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/LocalSubjectAccessReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LocalSubjectAccessReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/LocalSubjectAccessReview`,
       name: java.lang.String,
@@ -2822,13 +2747,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/LocalSubjectAccessReview`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LocalSubjectAccessReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/LocalSubjectAccessReview`,
       namespace: java.lang.String,
@@ -2855,12 +2782,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/SelfSubjectAccessReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/SelfSubjectAccessReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectAccessReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/SelfSubjectAccessReview`,
       name: java.lang.String,
@@ -2885,13 +2814,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/SelfSubjectAccessReview`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectAccessReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/SelfSubjectAccessReview`,
       namespace: java.lang.String,
@@ -2918,12 +2849,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/SelfSubjectRulesReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/SelfSubjectRulesReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectRulesReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/SelfSubjectRulesReview`,
       name: java.lang.String,
@@ -2948,13 +2881,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/SelfSubjectRulesReview`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectRulesReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/SelfSubjectRulesReview`,
       namespace: java.lang.String,
@@ -2981,12 +2916,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SubjectAccessReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview`,
       name: java.lang.String,
@@ -3011,13 +2948,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SubjectAccessReview] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1/SubjectAccessReview`,
       namespace: java.lang.String,
@@ -3041,43 +2980,10 @@ object yamlNs extends js.Object {
         atPulumiKubernetesLib.typesOutputMod.authorizationNs.v1beta1Ns.SubjectAccessReviewStatus
       ] = js.native
     def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/CrossVersionObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/CrossVersionObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/CrossVersionObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/CrossVersionObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/CrossVersionObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/CrossVersionObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/HorizontalPodAutoscalerList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/HorizontalPodAutoscalerList`,
       name: java.lang.String,
@@ -3089,7 +2995,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/HorizontalPodAutoscalerList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.HorizontalPodAutoscalerList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/HorizontalPodAutoscalerList`,
       name: java.lang.String,
@@ -3100,7 +3006,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/HorizontalPodAutoscalerList`,
       namespace: java.lang.String,
@@ -3114,7 +3020,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.HorizontalPodAutoscalerList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/HorizontalPodAutoscalerList`,
       namespace: java.lang.String,
@@ -3125,12 +3031,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/HorizontalPodAutoscaler`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/HorizontalPodAutoscaler`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.HorizontalPodAutoscaler] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/HorizontalPodAutoscaler`,
       name: java.lang.String,
@@ -3155,13 +3061,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/HorizontalPodAutoscaler`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.HorizontalPodAutoscaler] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/HorizontalPodAutoscaler`,
       namespace: java.lang.String,
@@ -3185,98 +3091,10 @@ object yamlNs extends js.Object {
         atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerStatus
       ] = js.native
     def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.spec
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v1Ns.ScaleSpec] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.status
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v1Ns.ScaleStatus] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.spec
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v1Ns.ScaleSpec] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.status
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v1Ns.ScaleStatus] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/CrossVersionObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/CrossVersionObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/CrossVersionObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/CrossVersionObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/CrossVersionObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/CrossVersionObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/HorizontalPodAutoscalerList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/HorizontalPodAutoscalerList`,
       name: java.lang.String,
@@ -3290,7 +3108,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/HorizontalPodAutoscalerList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.HorizontalPodAutoscalerList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/HorizontalPodAutoscalerList`,
       name: java.lang.String,
@@ -3301,7 +3119,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/HorizontalPodAutoscalerList`,
       namespace: java.lang.String,
@@ -3317,7 +3135,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.HorizontalPodAutoscalerList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/HorizontalPodAutoscalerList`,
       namespace: java.lang.String,
@@ -3328,12 +3146,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/HorizontalPodAutoscaler`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/HorizontalPodAutoscaler`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.HorizontalPodAutoscaler] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/HorizontalPodAutoscaler`,
       name: java.lang.String,
@@ -3358,13 +3176,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/HorizontalPodAutoscaler`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.HorizontalPodAutoscaler] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/HorizontalPodAutoscaler`,
       namespace: java.lang.String,
@@ -3388,43 +3206,10 @@ object yamlNs extends js.Object {
         atPulumiKubernetesLib.typesOutputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerStatus
       ] = js.native
     def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/CrossVersionObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/CrossVersionObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/CrossVersionObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/CrossVersionObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/CrossVersionObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/CrossVersionObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/HorizontalPodAutoscalerList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/HorizontalPodAutoscalerList`,
       name: java.lang.String,
@@ -3438,7 +3223,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/HorizontalPodAutoscalerList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.HorizontalPodAutoscalerList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/HorizontalPodAutoscalerList`,
       name: java.lang.String,
@@ -3449,7 +3234,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/HorizontalPodAutoscalerList`,
       namespace: java.lang.String,
@@ -3465,7 +3250,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.HorizontalPodAutoscalerList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/HorizontalPodAutoscalerList`,
       namespace: java.lang.String,
@@ -3476,12 +3261,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/HorizontalPodAutoscaler`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/HorizontalPodAutoscaler`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.HorizontalPodAutoscaler] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/HorizontalPodAutoscaler`,
       name: java.lang.String,
@@ -3506,13 +3291,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/HorizontalPodAutoscaler`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.HorizontalPodAutoscaler] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/HorizontalPodAutoscaler`,
       namespace: java.lang.String,
@@ -3539,7 +3324,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1/JobList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1/JobList`,
       name: java.lang.String,
@@ -3549,7 +3334,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1/JobList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.JobList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1/JobList`,
       name: java.lang.String,
@@ -3560,7 +3345,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1/JobList`,
       namespace: java.lang.String,
@@ -3572,7 +3357,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.JobList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1/JobList`,
       namespace: java.lang.String,
@@ -3583,12 +3368,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1/Job`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1/Job`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Job] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1/Job`,
       name: java.lang.String,
@@ -3609,13 +3394,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1/Job`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Job] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1/Job`,
       namespace: java.lang.String,
@@ -3638,7 +3423,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1/CronJobList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1/CronJobList`,
       name: java.lang.String,
@@ -3648,7 +3433,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1/CronJobList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CronJobList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1/CronJobList`,
       name: java.lang.String,
@@ -3659,7 +3444,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1/CronJobList`,
       namespace: java.lang.String,
@@ -3671,7 +3456,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CronJobList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1/CronJobList`,
       namespace: java.lang.String,
@@ -3682,12 +3467,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1/CronJob`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1/CronJob`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CronJob] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1/CronJob`,
       name: java.lang.String,
@@ -3708,13 +3493,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1/CronJob`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CronJob] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1beta1/CronJob`,
       namespace: java.lang.String,
@@ -3737,7 +3522,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v2alpha1/CronJobList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v2alpha1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v2alpha1/CronJobList`,
       name: java.lang.String,
@@ -3747,7 +3532,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v2alpha1/CronJobList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CronJobList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v2alpha1/CronJobList`,
       name: java.lang.String,
@@ -3758,7 +3543,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v2alpha1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v2alpha1/CronJobList`,
       namespace: java.lang.String,
@@ -3770,7 +3555,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CronJobList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v2alpha1/CronJobList`,
       namespace: java.lang.String,
@@ -3781,12 +3566,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v2alpha1/CronJob`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v2alpha1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v2alpha1/CronJob`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CronJob] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v2alpha1/CronJob`,
       name: java.lang.String,
@@ -3807,13 +3592,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v2alpha1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v2alpha1/CronJob`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CronJob] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v2alpha1/CronJob`,
       namespace: java.lang.String,
@@ -3836,7 +3621,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequestList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequestList`,
       name: java.lang.String,
@@ -3850,7 +3637,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequestList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CertificateSigningRequestList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequestList`,
       name: java.lang.String,
@@ -3861,7 +3648,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequestList`,
       namespace: java.lang.String,
@@ -3877,7 +3666,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CertificateSigningRequestList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequestList`,
       namespace: java.lang.String,
@@ -3888,12 +3677,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequest`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequest`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CertificateSigningRequest] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequest`,
       name: java.lang.String,
@@ -3918,13 +3709,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequest`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CertificateSigningRequest] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1/CertificateSigningRequest`,
       namespace: java.lang.String,
@@ -3951,7 +3744,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1/LeaseList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1/LeaseList`,
       name: java.lang.String,
@@ -3961,7 +3756,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1/LeaseList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LeaseList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1/LeaseList`,
       name: java.lang.String,
@@ -3972,7 +3767,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1/LeaseList`,
       namespace: java.lang.String,
@@ -3984,7 +3781,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LeaseList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1/LeaseList`,
       namespace: java.lang.String,
@@ -3995,12 +3792,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1/Lease`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1/Lease`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Lease] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1/Lease`,
       name: java.lang.String,
@@ -4016,13 +3815,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1/Lease`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Lease] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`coordinationDOTk8sDOTio/v1beta1/Lease`,
       namespace: java.lang.String,
@@ -4036,87 +3837,10 @@ object yamlNs extends js.Object {
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.spec
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.coordinationNs.v1beta1Ns.LeaseSpec] = js.native
     def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.field_path
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.namespace
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.resource_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.uid
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.field_path
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.namespace
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.resource_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.uid
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1/EventList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1/EventList`,
       name: java.lang.String,
@@ -4126,7 +3850,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1/EventList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.EventList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1/EventList`,
       name: java.lang.String,
@@ -4137,7 +3861,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1/EventList`,
       namespace: java.lang.String,
@@ -4149,7 +3873,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.EventList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1/EventList`,
       namespace: java.lang.String,
@@ -4170,7 +3894,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1/Event`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1/Event`,
       name: java.lang.String,
@@ -4200,7 +3924,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1/Event`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Event] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1/Event`,
       name: java.lang.String,
@@ -4258,7 +3982,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1/Event`,
       namespace: java.lang.String,
@@ -4294,7 +4018,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Event] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1/Event`,
       namespace: java.lang.String,
@@ -4347,7 +4071,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DaemonSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DaemonSetList`,
       name: java.lang.String,
@@ -4357,7 +4081,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DaemonSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DaemonSetList`,
       name: java.lang.String,
@@ -4368,7 +4092,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DaemonSetList`,
       namespace: java.lang.String,
@@ -4380,7 +4104,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DaemonSetList`,
       namespace: java.lang.String,
@@ -4391,12 +4115,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DaemonSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DaemonSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DaemonSet`,
       name: java.lang.String,
@@ -4417,13 +4141,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DaemonSet`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DaemonSet`,
       namespace: java.lang.String,
@@ -4446,7 +4170,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentList`,
       name: java.lang.String,
@@ -4456,7 +4180,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DeploymentList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentList`,
       name: java.lang.String,
@@ -4467,7 +4191,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentList`,
       namespace: java.lang.String,
@@ -4479,7 +4203,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DeploymentList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentList`,
       namespace: java.lang.String,
@@ -4487,74 +4211,15 @@ object yamlNs extends js.Object {
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
     def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentRollback`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentRollback`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentRollback`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentRollback`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.rollback_to
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.extensionsNs.v1beta1Ns.RollbackConfig] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentRollback`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.updated_annotations
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
-        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]]
-      ] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentRollback`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentRollback`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentRollback`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentRollback`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.rollback_to
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.extensionsNs.v1beta1Ns.RollbackConfig] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentRollback`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.updated_annotations
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
-        org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]]
-      ] = js.native
-    def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Deployment`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Deployment`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Deployment] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Deployment`,
       name: java.lang.String,
@@ -4575,13 +4240,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Deployment`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Deployment] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Deployment`,
       namespace: java.lang.String,
@@ -4604,7 +4269,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/IngressList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/IngressList`,
       name: java.lang.String,
@@ -4614,7 +4279,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/IngressList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.IngressList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/IngressList`,
       name: java.lang.String,
@@ -4625,7 +4290,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/IngressList`,
       namespace: java.lang.String,
@@ -4637,7 +4302,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.IngressList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/IngressList`,
       namespace: java.lang.String,
@@ -4648,12 +4313,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Ingress`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Ingress`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Ingress] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Ingress`,
       name: java.lang.String,
@@ -4674,13 +4339,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Ingress`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Ingress] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Ingress`,
       namespace: java.lang.String,
@@ -4703,7 +4368,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/NetworkPolicyList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/NetworkPolicyList`,
       name: java.lang.String,
@@ -4715,7 +4380,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/NetworkPolicyList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NetworkPolicyList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/NetworkPolicyList`,
       name: java.lang.String,
@@ -4726,7 +4391,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/NetworkPolicyList`,
       namespace: java.lang.String,
@@ -4740,7 +4405,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NetworkPolicyList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/NetworkPolicyList`,
       namespace: java.lang.String,
@@ -4751,12 +4416,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/NetworkPolicy`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/NetworkPolicy`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NetworkPolicy] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/NetworkPolicy`,
       name: java.lang.String,
@@ -4772,13 +4437,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/NetworkPolicy`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NetworkPolicy] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/NetworkPolicy`,
       namespace: java.lang.String,
@@ -4795,7 +4460,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/PodSecurityPolicyList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/PodSecurityPolicyList`,
       name: java.lang.String,
@@ -4807,7 +4472,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/PodSecurityPolicyList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodSecurityPolicyList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/PodSecurityPolicyList`,
       name: java.lang.String,
@@ -4818,7 +4483,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/PodSecurityPolicyList`,
       namespace: java.lang.String,
@@ -4832,7 +4497,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodSecurityPolicyList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/PodSecurityPolicyList`,
       namespace: java.lang.String,
@@ -4843,12 +4508,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/PodSecurityPolicy`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/PodSecurityPolicy`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodSecurityPolicy] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/PodSecurityPolicy`,
       name: java.lang.String,
@@ -4866,13 +4531,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/PodSecurityPolicy`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodSecurityPolicy] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/PodSecurityPolicy`,
       namespace: java.lang.String,
@@ -4891,7 +4556,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/ReplicaSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/ReplicaSetList`,
       name: java.lang.String,
@@ -4901,7 +4566,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/ReplicaSetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/ReplicaSetList`,
       name: java.lang.String,
@@ -4912,7 +4577,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/ReplicaSetList`,
       namespace: java.lang.String,
@@ -4924,7 +4589,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/ReplicaSetList`,
       namespace: java.lang.String,
@@ -4935,12 +4600,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/ReplicaSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/ReplicaSet`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/ReplicaSet`,
       name: java.lang.String,
@@ -4961,13 +4626,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/ReplicaSet`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSet] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/ReplicaSet`,
       namespace: java.lang.String,
@@ -4987,131 +4652,10 @@ object yamlNs extends js.Object {
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.status
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.extensionsNs.v1beta1Ns.ReplicaSetStatus] = js.native
     def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.spec
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.extensionsNs.v1beta1Ns.ScaleSpec] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Scale`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.status
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.extensionsNs.v1beta1Ns.ScaleStatus] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.spec
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.extensionsNs.v1beta1Ns.ScaleSpec] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.status
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.extensionsNs.v1beta1Ns.ScaleStatus] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`meta/v1/OwnerReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`meta/v1/OwnerReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.block_owner_deletion
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`meta/v1/OwnerReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.controller
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`meta/v1/OwnerReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`meta/v1/OwnerReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`meta/v1/OwnerReference`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.uid
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`meta/v1/OwnerReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`meta/v1/OwnerReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.block_owner_deletion
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`meta/v1/OwnerReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.controller
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`meta/v1/OwnerReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`meta/v1/OwnerReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`meta/v1/OwnerReference`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.uid
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1/NetworkPolicyList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1/NetworkPolicyList`,
       name: java.lang.String,
@@ -5121,7 +4665,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1/NetworkPolicyList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NetworkPolicyList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1/NetworkPolicyList`,
       name: java.lang.String,
@@ -5132,7 +4676,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1/NetworkPolicyList`,
       namespace: java.lang.String,
@@ -5144,7 +4688,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NetworkPolicyList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1/NetworkPolicyList`,
       namespace: java.lang.String,
@@ -5155,12 +4699,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1/NetworkPolicy`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1/NetworkPolicy`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NetworkPolicy] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1/NetworkPolicy`,
       name: java.lang.String,
@@ -5176,13 +4720,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1/NetworkPolicy`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NetworkPolicy] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1/NetworkPolicy`,
       namespace: java.lang.String,
@@ -5196,54 +4740,10 @@ object yamlNs extends js.Object {
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.spec
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.networkingNs.v1Ns.NetworkPolicySpec] = js.native
     def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/Eviction`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/Eviction`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.delete_options
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.DeleteOptions] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/Eviction`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/Eviction`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/Eviction`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/Eviction`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.delete_options
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.DeleteOptions] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/Eviction`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/Eviction`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
-    def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodDisruptionBudgetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodDisruptionBudgetList`,
       name: java.lang.String,
@@ -5255,7 +4755,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodDisruptionBudgetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodDisruptionBudgetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodDisruptionBudgetList`,
       name: java.lang.String,
@@ -5266,7 +4766,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodDisruptionBudgetList`,
       namespace: java.lang.String,
@@ -5280,7 +4780,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodDisruptionBudgetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodDisruptionBudgetList`,
       namespace: java.lang.String,
@@ -5291,12 +4791,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodDisruptionBudget`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodDisruptionBudget`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodDisruptionBudget] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodDisruptionBudget`,
       name: java.lang.String,
@@ -5319,13 +4819,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodDisruptionBudget`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodDisruptionBudget] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodDisruptionBudget`,
       namespace: java.lang.String,
@@ -5350,7 +4850,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodSecurityPolicyList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodSecurityPolicyList`,
       name: java.lang.String,
@@ -5362,7 +4862,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodSecurityPolicyList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodSecurityPolicyList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodSecurityPolicyList`,
       name: java.lang.String,
@@ -5373,7 +4873,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodSecurityPolicyList`,
       namespace: java.lang.String,
@@ -5387,7 +4887,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodSecurityPolicyList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodSecurityPolicyList`,
       namespace: java.lang.String,
@@ -5398,12 +4898,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodSecurityPolicy`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodSecurityPolicy`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodSecurityPolicy] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodSecurityPolicy`,
       name: java.lang.String,
@@ -5419,13 +4919,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodSecurityPolicy`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodSecurityPolicy] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodSecurityPolicy`,
       namespace: java.lang.String,
@@ -5439,54 +4939,12 @@ object yamlNs extends js.Object {
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.spec
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.policyNs.v1beta1Ns.PodSecurityPolicySpec] = js.native
     def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbac/v1alpha1/Subject`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbac/v1alpha1/Subject`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbac/v1alpha1/Subject`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbac/v1alpha1/Subject`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.namespace
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbac/v1alpha1/Subject`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbac/v1alpha1/Subject`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbac/v1alpha1/Subject`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbac/v1alpha1/Subject`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.namespace
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBindingList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBindingList`,
       name: java.lang.String,
@@ -5496,7 +4954,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBindingList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleBindingList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBindingList`,
       name: java.lang.String,
@@ -5507,7 +4965,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBindingList`,
       namespace: java.lang.String,
@@ -5519,7 +4979,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleBindingList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBindingList`,
       namespace: java.lang.String,
@@ -5530,12 +4990,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBinding`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBinding`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleBinding] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBinding`,
       name: java.lang.String,
@@ -5556,13 +5018,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBinding`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleBinding] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleBinding`,
       namespace: java.lang.String,
@@ -5585,7 +5049,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleList`,
       name: java.lang.String,
@@ -5595,7 +5061,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleList`,
       name: java.lang.String,
@@ -5606,7 +5072,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleList`,
       namespace: java.lang.String,
@@ -5618,7 +5086,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRoleList`,
       namespace: java.lang.String,
@@ -5634,12 +5102,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRole`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRole`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRole] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRole`,
       name: java.lang.String,
@@ -5661,13 +5131,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRole`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRole] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRole`,
       namespace: java.lang.String,
@@ -5684,7 +5156,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleBindingList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleBindingList`,
       name: java.lang.String,
@@ -5694,7 +5168,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleBindingList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleBindingList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleBindingList`,
       name: java.lang.String,
@@ -5705,7 +5179,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleBindingList`,
       namespace: java.lang.String,
@@ -5717,7 +5193,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleBindingList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleBindingList`,
       namespace: java.lang.String,
@@ -5728,12 +5204,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleBinding`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleBinding`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleBinding] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleBinding`,
       name: java.lang.String,
@@ -5754,13 +5232,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleBinding`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleBinding] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleBinding`,
       namespace: java.lang.String,
@@ -5783,7 +5263,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleList`,
       name: java.lang.String,
@@ -5793,7 +5275,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleList`,
       name: java.lang.String,
@@ -5804,7 +5286,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleList`,
       namespace: java.lang.String,
@@ -5816,7 +5300,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/RoleList`,
       namespace: java.lang.String,
@@ -5827,12 +5311,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/Role`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/Role`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Role] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/Role`,
       name: java.lang.String,
@@ -5848,13 +5334,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/Role`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Role] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/Role`,
       namespace: java.lang.String,
@@ -5871,7 +5359,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBindingList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBindingList`,
       name: java.lang.String,
@@ -5883,7 +5373,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBindingList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleBindingList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBindingList`,
       name: java.lang.String,
@@ -5894,7 +5384,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBindingList`,
       namespace: java.lang.String,
@@ -5908,7 +5400,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleBindingList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBindingList`,
       namespace: java.lang.String,
@@ -5919,12 +5411,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBinding`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBinding`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleBinding] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBinding`,
       name: java.lang.String,
@@ -5945,13 +5439,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBinding`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleBinding] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleBinding`,
       namespace: java.lang.String,
@@ -5974,7 +5470,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList`,
       name: java.lang.String,
@@ -5984,7 +5482,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList`,
       name: java.lang.String,
@@ -5995,7 +5493,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList`,
       namespace: java.lang.String,
@@ -6007,7 +5507,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRoleList`,
       namespace: java.lang.String,
@@ -6023,12 +5523,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRole] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole`,
       name: java.lang.String,
@@ -6050,13 +5552,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRole] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/ClusterRole`,
       namespace: java.lang.String,
@@ -6073,7 +5577,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList`,
       name: java.lang.String,
@@ -6083,7 +5589,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleBindingList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList`,
       name: java.lang.String,
@@ -6094,7 +5600,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList`,
       namespace: java.lang.String,
@@ -6106,7 +5614,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleBindingList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBindingList`,
       namespace: java.lang.String,
@@ -6117,12 +5625,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleBinding] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding`,
       name: java.lang.String,
@@ -6143,13 +5653,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleBinding] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleBinding`,
       namespace: java.lang.String,
@@ -6172,7 +5684,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList`,
       name: java.lang.String,
@@ -6182,7 +5696,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList`,
       name: java.lang.String,
@@ -6193,7 +5707,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList`,
       namespace: java.lang.String,
@@ -6205,7 +5721,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/RoleList`,
       namespace: java.lang.String,
@@ -6216,12 +5732,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Role] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role`,
       name: java.lang.String,
@@ -6237,13 +5755,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Role] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1alpha1/Role`,
       namespace: java.lang.String,
@@ -6260,7 +5780,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBindingList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBindingList`,
       name: java.lang.String,
@@ -6272,7 +5794,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBindingList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleBindingList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBindingList`,
       name: java.lang.String,
@@ -6283,7 +5805,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBindingList`,
       namespace: java.lang.String,
@@ -6297,7 +5821,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleBindingList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBindingList`,
       namespace: java.lang.String,
@@ -6308,12 +5832,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleBinding] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding`,
       name: java.lang.String,
@@ -6334,13 +5860,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleBinding] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleBinding`,
       namespace: java.lang.String,
@@ -6363,7 +5891,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList`,
       name: java.lang.String,
@@ -6373,7 +5903,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList`,
       name: java.lang.String,
@@ -6384,7 +5914,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList`,
       namespace: java.lang.String,
@@ -6396,7 +5928,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRoleList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRoleList`,
       namespace: java.lang.String,
@@ -6412,12 +5944,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRole] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole`,
       name: java.lang.String,
@@ -6439,13 +5973,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ClusterRole] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/ClusterRole`,
       namespace: java.lang.String,
@@ -6462,7 +5998,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList`,
       name: java.lang.String,
@@ -6472,7 +6010,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleBindingList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList`,
       name: java.lang.String,
@@ -6483,7 +6021,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList`,
       namespace: java.lang.String,
@@ -6495,7 +6035,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleBindingList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBindingList`,
       namespace: java.lang.String,
@@ -6506,12 +6046,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleBinding] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding`,
       name: java.lang.String,
@@ -6532,13 +6074,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleBinding] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleBinding`,
       namespace: java.lang.String,
@@ -6561,7 +6105,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`,
       name: java.lang.String,
@@ -6571,7 +6117,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`,
       name: java.lang.String,
@@ -6582,7 +6128,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`,
       namespace: java.lang.String,
@@ -6594,7 +6142,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.RoleList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/RoleList`,
       namespace: java.lang.String,
@@ -6605,12 +6153,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Role] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`,
       name: java.lang.String,
@@ -6626,13 +6176,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Role] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1beta1/Role`,
       namespace: java.lang.String,
@@ -6649,7 +6201,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClassList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClassList`,
       name: java.lang.String,
@@ -6661,7 +6215,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClassList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClassList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClassList`,
       name: java.lang.String,
@@ -6672,7 +6226,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClassList`,
       namespace: java.lang.String,
@@ -6686,7 +6242,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClassList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClassList`,
       namespace: java.lang.String,
@@ -6697,7 +6253,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClass`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClass`,
       name: java.lang.String,
@@ -6712,7 +6270,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClass`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClass] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClass`,
       name: java.lang.String,
@@ -6728,7 +6286,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClass`,
       namespace: java.lang.String,
@@ -6746,7 +6306,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClass] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1/PriorityClass`,
       namespace: java.lang.String,
@@ -6763,7 +6323,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClassList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClassList`,
       name: java.lang.String,
@@ -6775,7 +6337,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClassList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClassList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClassList`,
       name: java.lang.String,
@@ -6786,7 +6348,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClassList`,
       namespace: java.lang.String,
@@ -6800,7 +6364,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClassList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClassList`,
       namespace: java.lang.String,
@@ -6811,7 +6375,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClass`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClass`,
       name: java.lang.String,
@@ -6826,7 +6392,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClass`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClass] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClass`,
       name: java.lang.String,
@@ -6842,7 +6408,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClass`,
       namespace: java.lang.String,
@@ -6860,7 +6428,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClass] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1/PriorityClass`,
       namespace: java.lang.String,
@@ -6877,7 +6445,9 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1/PodPresetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1/PodPresetList`,
       name: java.lang.String,
@@ -6887,7 +6457,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1/PodPresetList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodPresetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1/PodPresetList`,
       name: java.lang.String,
@@ -6898,7 +6468,9 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1/PodPresetList`,
       namespace: java.lang.String,
@@ -6910,7 +6482,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodPresetList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1/PodPresetList`,
       namespace: java.lang.String,
@@ -6921,12 +6493,14 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1/PodPreset`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1/PodPreset`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodPreset] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1/PodPreset`,
       name: java.lang.String,
@@ -6942,13 +6516,15 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
+        atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1`
+      ] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1/PodPreset`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodPreset] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1/PodPreset`,
       namespace: java.lang.String,
@@ -6965,7 +6541,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/StorageClassList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/StorageClassList`,
       name: java.lang.String,
@@ -6975,7 +6551,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/StorageClassList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClassList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/StorageClassList`,
       name: java.lang.String,
@@ -6986,7 +6562,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/StorageClassList`,
       namespace: java.lang.String,
@@ -6998,7 +6574,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClassList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/StorageClassList`,
       namespace: java.lang.String,
@@ -7019,12 +6595,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/StorageClass`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/StorageClass`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClass] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/StorageClass`,
       name: java.lang.String,
@@ -7074,13 +6650,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/StorageClass`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClass] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/StorageClass`,
       namespace: java.lang.String,
@@ -7123,7 +6699,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/VolumeAttachmentList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/VolumeAttachmentList`,
       name: java.lang.String,
@@ -7133,7 +6709,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/VolumeAttachmentList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/VolumeAttachmentList`,
       name: java.lang.String,
@@ -7144,7 +6720,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/VolumeAttachmentList`,
       namespace: java.lang.String,
@@ -7156,7 +6732,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/VolumeAttachmentList`,
       namespace: java.lang.String,
@@ -7167,12 +6743,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/VolumeAttachment`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/VolumeAttachment`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/VolumeAttachment`,
       name: java.lang.String,
@@ -7193,13 +6769,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/VolumeAttachment`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1/VolumeAttachment`,
       namespace: java.lang.String,
@@ -7222,7 +6798,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList`,
       name: java.lang.String,
@@ -7234,7 +6810,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList`,
       name: java.lang.String,
@@ -7245,7 +6821,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList`,
       namespace: java.lang.String,
@@ -7259,7 +6835,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1/VolumeAttachmentList`,
       namespace: java.lang.String,
@@ -7270,12 +6846,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1/VolumeAttachment`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1/VolumeAttachment`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1/VolumeAttachment`,
       name: java.lang.String,
@@ -7296,13 +6872,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1/VolumeAttachment`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1/VolumeAttachment`,
       namespace: java.lang.String,
@@ -7325,7 +6901,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/StorageClassList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/StorageClassList`,
       name: java.lang.String,
@@ -7335,7 +6911,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/StorageClassList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClassList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/StorageClassList`,
       name: java.lang.String,
@@ -7346,7 +6922,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/StorageClassList`,
       namespace: java.lang.String,
@@ -7358,7 +6934,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClassList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/StorageClassList`,
       namespace: java.lang.String,
@@ -7379,12 +6955,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/StorageClass`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/StorageClass`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClass] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/StorageClass`,
       name: java.lang.String,
@@ -7434,13 +7010,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/StorageClass`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClass] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/StorageClass`,
       namespace: java.lang.String,
@@ -7483,7 +7059,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/VolumeAttachmentList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/VolumeAttachmentList`,
       name: java.lang.String,
@@ -7495,7 +7071,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/VolumeAttachmentList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/VolumeAttachmentList`,
       name: java.lang.String,
@@ -7506,7 +7082,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/VolumeAttachmentList`,
       namespace: java.lang.String,
@@ -7520,7 +7096,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/VolumeAttachmentList`,
       namespace: java.lang.String,
@@ -7531,12 +7107,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/VolumeAttachment`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/VolumeAttachment`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/VolumeAttachment`,
       name: java.lang.String,
@@ -7557,13 +7133,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/VolumeAttachment`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1/VolumeAttachment`,
       namespace: java.lang.String,
@@ -7583,214 +7159,15 @@ object yamlNs extends js.Object {
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.status
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.storageNs.v1beta1Ns.VolumeAttachmentStatus] = js.native
     def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroupList`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroupList`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.groups
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.APIGroup]] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroupList`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroupList`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroupList`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.groups
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.APIGroup]] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroupList`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroup`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroup`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroup`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroup`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.preferred_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.GroupVersionForDiscovery] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroup`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.server_address_by_client_cid_rs
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
-        js.Array[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ServerAddressByClientCIDR]
-      ] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroup`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.versions
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
-        js.Array[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.GroupVersionForDiscovery]
-      ] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroup`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroup`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroup`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.name
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroup`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.preferred_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.GroupVersionForDiscovery] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroup`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.server_address_by_client_cid_rs
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
-        js.Array[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ServerAddressByClientCIDR]
-      ] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroup`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.versions
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
-        js.Array[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.GroupVersionForDiscovery]
-      ] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIResourceList`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIResourceList`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.group_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIResourceList`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIResourceList`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.resources
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.APIResource]] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIResourceList`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIResourceList`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.group_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIResourceList`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIResourceList`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.resources
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.APIResource]] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIVersions`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIVersions`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIVersions`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.server_address_by_client_cid_rs
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
-        js.Array[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ServerAddressByClientCIDR]
-      ] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIVersions`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.versions
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIVersions`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIVersions`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIVersions`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.server_address_by_client_cid_rs
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
-        js.Array[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ServerAddressByClientCIDR]
-      ] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIVersions`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.versions
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
-    def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Binding`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Binding`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Binding] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Binding`,
       name: java.lang.String,
@@ -7806,13 +7183,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Binding`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Binding] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Binding`,
       namespace: java.lang.String,
@@ -7829,7 +7206,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ComponentStatusList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ComponentStatusList`,
       name: java.lang.String,
@@ -7839,7 +7216,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ComponentStatusList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ComponentStatusList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ComponentStatusList`,
       name: java.lang.String,
@@ -7850,7 +7227,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ComponentStatusList`,
       namespace: java.lang.String,
@@ -7862,7 +7239,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ComponentStatusList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ComponentStatusList`,
       namespace: java.lang.String,
@@ -7873,7 +7250,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ComponentStatus`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ComponentStatus`,
       name: java.lang.String,
@@ -7883,7 +7260,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ComponentStatus`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ComponentStatus] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ComponentStatus`,
       name: java.lang.String,
@@ -7894,7 +7271,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ComponentStatus`,
       namespace: java.lang.String,
@@ -7906,7 +7283,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ComponentStatus] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ComponentStatus`,
       namespace: java.lang.String,
@@ -7917,7 +7294,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ConfigMapList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ConfigMapList`,
       name: java.lang.String,
@@ -7927,7 +7304,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ConfigMapList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ConfigMapList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ConfigMapList`,
       name: java.lang.String,
@@ -7938,7 +7315,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ConfigMapList`,
       namespace: java.lang.String,
@@ -7950,7 +7327,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ConfigMapList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ConfigMapList`,
       namespace: java.lang.String,
@@ -7961,7 +7338,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ConfigMap`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ConfigMap`,
       name: java.lang.String,
@@ -7978,7 +7355,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ConfigMap`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ConfigMap] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ConfigMap`,
       name: java.lang.String,
@@ -7989,7 +7366,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ConfigMap`,
       namespace: java.lang.String,
@@ -8009,7 +7386,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ConfigMap] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ConfigMap`,
       namespace: java.lang.String,
@@ -8017,87 +7394,10 @@ object yamlNs extends js.Object {
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta] = js.native
     def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.dry_run
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.grace_period_seconds
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.orphan_dependents
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.preconditions
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.Preconditions] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.propagation_policy
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.dry_run
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.grace_period_seconds
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.orphan_dependents
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.preconditions
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.Preconditions] = js.native
-    def getResourceProperty(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      namespace: java.lang.String,
-      name: java.lang.String,
-      property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.propagation_policy
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-    def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/EndpointsList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/EndpointsList`,
       name: java.lang.String,
@@ -8107,7 +7407,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/EndpointsList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.EndpointsList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/EndpointsList`,
       name: java.lang.String,
@@ -8118,7 +7418,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/EndpointsList`,
       namespace: java.lang.String,
@@ -8130,7 +7430,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.EndpointsList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/EndpointsList`,
       namespace: java.lang.String,
@@ -8141,12 +7441,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Endpoints`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Endpoints`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Endpoints] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Endpoints`,
       name: java.lang.String,
@@ -8162,13 +7462,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Endpoints`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Endpoints] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Endpoints`,
       namespace: java.lang.String,
@@ -8185,7 +7485,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/EventList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/EventList`,
       name: java.lang.String,
@@ -8195,7 +7495,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/EventList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.EventList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/EventList`,
       name: java.lang.String,
@@ -8206,7 +7506,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/EventList`,
       namespace: java.lang.String,
@@ -8218,7 +7518,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.EventList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/EventList`,
       namespace: java.lang.String,
@@ -8239,7 +7539,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Event`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Event`,
       name: java.lang.String,
@@ -8264,7 +7564,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Event`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Event] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Event`,
       name: java.lang.String,
@@ -8327,7 +7627,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Event`,
       namespace: java.lang.String,
@@ -8357,7 +7657,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Event] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Event`,
       namespace: java.lang.String,
@@ -8416,7 +7716,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/LimitRangeList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/LimitRangeList`,
       name: java.lang.String,
@@ -8426,7 +7726,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/LimitRangeList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LimitRangeList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/LimitRangeList`,
       name: java.lang.String,
@@ -8437,7 +7737,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/LimitRangeList`,
       namespace: java.lang.String,
@@ -8449,7 +7749,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LimitRangeList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/LimitRangeList`,
       namespace: java.lang.String,
@@ -8460,12 +7760,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/LimitRange`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/LimitRange`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LimitRange] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/LimitRange`,
       name: java.lang.String,
@@ -8481,13 +7781,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/LimitRange`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LimitRange] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/LimitRange`,
       namespace: java.lang.String,
@@ -8504,7 +7804,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/NamespaceList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/NamespaceList`,
       name: java.lang.String,
@@ -8514,7 +7814,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/NamespaceList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NamespaceList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/NamespaceList`,
       name: java.lang.String,
@@ -8525,7 +7825,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/NamespaceList`,
       namespace: java.lang.String,
@@ -8537,7 +7837,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NamespaceList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/NamespaceList`,
       namespace: java.lang.String,
@@ -8548,12 +7848,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Namespace`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Namespace`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Namespace] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Namespace`,
       name: java.lang.String,
@@ -8574,13 +7874,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Namespace`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Namespace] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Namespace`,
       namespace: java.lang.String,
@@ -8603,7 +7903,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/NodeList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/NodeList`,
       name: java.lang.String,
@@ -8613,7 +7913,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/NodeList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NodeList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/NodeList`,
       name: java.lang.String,
@@ -8624,7 +7924,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/NodeList`,
       namespace: java.lang.String,
@@ -8636,7 +7936,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NodeList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/NodeList`,
       namespace: java.lang.String,
@@ -8647,12 +7947,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Node`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Node`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Node] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Node`,
       name: java.lang.String,
@@ -8673,13 +7973,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Node`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Node] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Node`,
       namespace: java.lang.String,
@@ -8702,7 +8002,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeClaimList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeClaimList`,
       name: java.lang.String,
@@ -8712,7 +8012,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeClaimList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolumeClaimList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeClaimList`,
       name: java.lang.String,
@@ -8723,7 +8023,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeClaimList`,
       namespace: java.lang.String,
@@ -8735,7 +8035,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolumeClaimList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeClaimList`,
       namespace: java.lang.String,
@@ -8746,12 +8046,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeClaim`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeClaim`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolumeClaim] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeClaim`,
       name: java.lang.String,
@@ -8772,13 +8072,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeClaim`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolumeClaim] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeClaim`,
       namespace: java.lang.String,
@@ -8801,7 +8101,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeList`,
       name: java.lang.String,
@@ -8811,7 +8111,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolumeList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeList`,
       name: java.lang.String,
@@ -8822,7 +8122,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeList`,
       namespace: java.lang.String,
@@ -8834,7 +8134,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolumeList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolumeList`,
       namespace: java.lang.String,
@@ -8845,12 +8145,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolume`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolume`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolume] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolume`,
       name: java.lang.String,
@@ -8871,13 +8171,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolume`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolume] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PersistentVolume`,
       namespace: java.lang.String,
@@ -8900,7 +8200,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodList`,
       name: java.lang.String,
@@ -8910,7 +8210,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodList`,
       name: java.lang.String,
@@ -8921,7 +8221,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodList`,
       namespace: java.lang.String,
@@ -8933,7 +8233,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodList`,
       namespace: java.lang.String,
@@ -8944,7 +8244,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodTemplateList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodTemplateList`,
       name: java.lang.String,
@@ -8954,7 +8254,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodTemplateList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodTemplateList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodTemplateList`,
       name: java.lang.String,
@@ -8965,7 +8265,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodTemplateList`,
       namespace: java.lang.String,
@@ -8977,7 +8277,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodTemplateList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodTemplateList`,
       namespace: java.lang.String,
@@ -8988,12 +8288,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodTemplate`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodTemplate`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodTemplate] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodTemplate`,
       name: java.lang.String,
@@ -9009,13 +8309,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodTemplate`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodTemplate] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/PodTemplate`,
       namespace: java.lang.String,
@@ -9032,12 +8332,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Pod`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Pod`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Pod] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Pod`,
       name: java.lang.String,
@@ -9058,13 +8358,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Pod`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Pod] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Pod`,
       namespace: java.lang.String,
@@ -9087,7 +8387,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ReplicationControllerList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ReplicationControllerList`,
       name: java.lang.String,
@@ -9097,7 +8397,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ReplicationControllerList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicationControllerList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ReplicationControllerList`,
       name: java.lang.String,
@@ -9108,7 +8408,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ReplicationControllerList`,
       namespace: java.lang.String,
@@ -9120,7 +8420,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicationControllerList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ReplicationControllerList`,
       namespace: java.lang.String,
@@ -9131,12 +8431,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ReplicationController`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ReplicationController`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicationController] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ReplicationController`,
       name: java.lang.String,
@@ -9157,13 +8457,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ReplicationController`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicationController] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ReplicationController`,
       namespace: java.lang.String,
@@ -9186,7 +8486,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ResourceQuotaList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ResourceQuotaList`,
       name: java.lang.String,
@@ -9196,7 +8496,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ResourceQuotaList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ResourceQuotaList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ResourceQuotaList`,
       name: java.lang.String,
@@ -9207,7 +8507,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ResourceQuotaList`,
       namespace: java.lang.String,
@@ -9219,7 +8519,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ResourceQuotaList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ResourceQuotaList`,
       namespace: java.lang.String,
@@ -9230,12 +8530,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ResourceQuota`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ResourceQuota`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ResourceQuota] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ResourceQuota`,
       name: java.lang.String,
@@ -9256,13 +8556,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ResourceQuota`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ResourceQuota] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ResourceQuota`,
       namespace: java.lang.String,
@@ -9285,7 +8585,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/SecretList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/SecretList`,
       name: java.lang.String,
@@ -9295,7 +8595,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/SecretList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SecretList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/SecretList`,
       name: java.lang.String,
@@ -9306,7 +8606,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/SecretList`,
       namespace: java.lang.String,
@@ -9318,7 +8618,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SecretList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/SecretList`,
       namespace: java.lang.String,
@@ -9334,7 +8634,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Secret`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Secret`,
       name: java.lang.String,
@@ -9344,7 +8644,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Secret`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Secret] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Secret`,
       name: java.lang.String,
@@ -9368,7 +8668,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Secret`,
       namespace: java.lang.String,
@@ -9380,7 +8680,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Secret] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Secret`,
       namespace: java.lang.String,
@@ -9399,7 +8699,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceAccountList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceAccountList`,
       name: java.lang.String,
@@ -9409,7 +8709,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceAccountList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ServiceAccountList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceAccountList`,
       name: java.lang.String,
@@ -9420,7 +8720,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceAccountList`,
       namespace: java.lang.String,
@@ -9432,7 +8732,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ServiceAccountList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceAccountList`,
       namespace: java.lang.String,
@@ -9443,7 +8743,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceAccount`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceAccount`,
       name: java.lang.String,
@@ -9458,7 +8758,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceAccount`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ServiceAccount] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceAccount`,
       name: java.lang.String,
@@ -9474,7 +8774,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceAccount`,
       namespace: java.lang.String,
@@ -9492,7 +8792,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ServiceAccount] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceAccount`,
       namespace: java.lang.String,
@@ -9509,7 +8809,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceList`,
       name: java.lang.String,
@@ -9519,7 +8819,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceList`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ServiceList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceList`,
       name: java.lang.String,
@@ -9530,7 +8830,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceList`,
       namespace: java.lang.String,
@@ -9542,7 +8842,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ServiceList] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/ServiceList`,
       namespace: java.lang.String,
@@ -9553,12 +8853,12 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Service`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Service`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Service] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Service`,
       name: java.lang.String,
@@ -9579,13 +8879,13 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Service`,
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Service] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Service`,
       namespace: java.lang.String,
@@ -9608,7 +8908,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Status`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Status`,
       name: java.lang.String,
@@ -9623,7 +8923,7 @@ object yamlNs extends js.Object {
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Status`,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Status] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Status`,
       name: java.lang.String,
@@ -9649,7 +8949,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.api_version
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Status`,
       namespace: java.lang.String,
@@ -9667,7 +8967,7 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String,
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.kind
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Status] = js.native
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Status`,
       namespace: java.lang.String,
@@ -10061,28 +9361,6 @@ object yamlNs extends js.Object {
       name: java.lang.String
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.appsNs.v1beta1Ns.DeploymentList] = js.native
     @JSName("getResource")
-    def `getResource_apps/v1beta1/DeploymentRollback`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentRollback`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.appsNs.v1beta1Ns.DeploymentRollback] = js.native
-    @JSName("getResource")
-    def `getResource_apps/v1beta1/DeploymentRollback`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/DeploymentRollback`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.appsNs.v1beta1Ns.DeploymentRollback] = js.native
-    @JSName("getResource")
-    def `getResource_apps/v1beta1/Scale`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Scale`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.appsNs.v1beta1Ns.Scale] = js.native
-    @JSName("getResource")
-    def `getResource_apps/v1beta1/Scale`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.appsNs.v1beta1Ns.Scale] = js.native
-    @JSName("getResource")
     def `getResource_apps/v1beta1/StatefulSet`(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1/StatefulSet`,
       name: java.lang.String
@@ -10192,17 +9470,6 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.appsNs.v1beta2Ns.ReplicaSetList] = js.native
-    @JSName("getResource")
-    def `getResource_apps/v1beta2/Scale`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Scale`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.appsNs.v1beta2Ns.Scale] = js.native
-    @JSName("getResource")
-    def `getResource_apps/v1beta2/Scale`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.appsNs.v1beta2Ns.Scale] = js.native
     @JSName("getResource")
     def `getResource_apps/v1beta2/StatefulSet`(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2/StatefulSet`,
@@ -10370,17 +9637,6 @@ object yamlNs extends js.Object {
       name: java.lang.String
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SubjectAccessReview] = js.native
     @JSName("getResource")
-    def `getResource_autoscaling/v1/CrossVersionObjectReference`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/CrossVersionObjectReference`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.autoscalingNs.v1Ns.CrossVersionObjectReference] = js.native
-    @JSName("getResource")
-    def `getResource_autoscaling/v1/CrossVersionObjectReference`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/CrossVersionObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.autoscalingNs.v1Ns.CrossVersionObjectReference] = js.native
-    @JSName("getResource")
     def `getResource_autoscaling/v1/HorizontalPodAutoscaler`(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/HorizontalPodAutoscaler`,
       name: java.lang.String
@@ -10402,32 +9658,6 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerList] = js.native
-    @JSName("getResource")
-    def `getResource_autoscaling/v1/Scale`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/Scale`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.autoscalingNs.v1Ns.Scale] = js.native
-    @JSName("getResource")
-    def `getResource_autoscaling/v1/Scale`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.autoscalingNs.v1Ns.Scale] = js.native
-    @JSName("getResource")
-    def `getResource_autoscaling/v2beta1/CrossVersionObjectReference`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/CrossVersionObjectReference`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
-        atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta1Ns.CrossVersionObjectReference
-      ] = js.native
-    @JSName("getResource")
-    def `getResource_autoscaling/v2beta1/CrossVersionObjectReference`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/CrossVersionObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
-        atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta1Ns.CrossVersionObjectReference
-      ] = js.native
     @JSName("getResource")
     def `getResource_autoscaling/v2beta1/HorizontalPodAutoscaler`(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta1/HorizontalPodAutoscaler`,
@@ -10457,21 +9687,6 @@ object yamlNs extends js.Object {
       name: java.lang.String
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
         atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerList
-      ] = js.native
-    @JSName("getResource")
-    def `getResource_autoscaling/v2beta2/CrossVersionObjectReference`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/CrossVersionObjectReference`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
-        atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.CrossVersionObjectReference
-      ] = js.native
-    @JSName("getResource")
-    def `getResource_autoscaling/v2beta2/CrossVersionObjectReference`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`autoscaling/v2beta2/CrossVersionObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[
-        atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.CrossVersionObjectReference
       ] = js.native
     @JSName("getResource")
     def `getResource_autoscaling/v2beta2/HorizontalPodAutoscaler`(
@@ -10622,17 +9837,6 @@ object yamlNs extends js.Object {
       name: java.lang.String
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.coordinationNs.v1beta1Ns.LeaseList] = js.native
     @JSName("getResource")
-    def `getResource_core/v1/ObjectReference`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ObjectReference] = js.native
-    @JSName("getResource")
-    def `getResource_core/v1/ObjectReference`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`core/v1/ObjectReference`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ObjectReference] = js.native
-    @JSName("getResource")
     def `getResource_eventsk8sio/v1beta1/Event`(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1/Event`,
       name: java.lang.String
@@ -10698,17 +9902,6 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.DeploymentList] = js.native
-    @JSName("getResource")
-    def `getResource_extensions/v1beta1/DeploymentRollback`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentRollback`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.DeploymentRollback] = js.native
-    @JSName("getResource")
-    def `getResource_extensions/v1beta1/DeploymentRollback`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/DeploymentRollback`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.DeploymentRollback] = js.native
     @JSName("getResource")
     def `getResource_extensions/v1beta1/Ingress`(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Ingress`,
@@ -10798,28 +9991,6 @@ object yamlNs extends js.Object {
       name: java.lang.String
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.ReplicaSetList] = js.native
     @JSName("getResource")
-    def `getResource_extensions/v1beta1/Scale`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Scale`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.Scale] = js.native
-    @JSName("getResource")
-    def `getResource_extensions/v1beta1/Scale`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1/Scale`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.Scale] = js.native
-    @JSName("getResource")
-    def `getResource_meta/v1/OwnerReference`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`meta/v1/OwnerReference`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.metaNs.v1Ns.OwnerReference] = js.native
-    @JSName("getResource")
-    def `getResource_meta/v1/OwnerReference`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`meta/v1/OwnerReference`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.metaNs.v1Ns.OwnerReference] = js.native
-    @JSName("getResource")
     def `getResource_networkingk8sio/v1/NetworkPolicy`(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1/NetworkPolicy`,
       name: java.lang.String
@@ -10841,17 +10012,6 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.networkingNs.v1Ns.NetworkPolicyList] = js.native
-    @JSName("getResource")
-    def `getResource_policy/v1beta1/Eviction`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/Eviction`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.Eviction] = js.native
-    @JSName("getResource")
-    def `getResource_policy/v1beta1/Eviction`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/Eviction`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.Eviction] = js.native
     @JSName("getResource")
     def `getResource_policy/v1beta1/PodDisruptionBudget`(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1/PodDisruptionBudget`,
@@ -10896,17 +10056,6 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodSecurityPolicyList] = js.native
-    @JSName("getResource")
-    def `getResource_rbac/v1alpha1/Subject`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbac/v1alpha1/Subject`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.Subject] = js.native
-    @JSName("getResource")
-    def `getResource_rbac/v1alpha1/Subject`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbac/v1alpha1/Subject`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.Subject] = js.native
     @JSName("getResource")
     def `getResource_rbacauthorizationk8sio/v1/ClusterRole`(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`rbacDOTauthorizationDOTk8sDOTio/v1/ClusterRole`,
@@ -11348,50 +10497,6 @@ object yamlNs extends js.Object {
       name: java.lang.String
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.VolumeAttachmentList] = js.native
     @JSName("getResource")
-    def `getResource_v1/APIGroup`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroup`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.metaNs.v1Ns.APIGroup] = js.native
-    @JSName("getResource")
-    def `getResource_v1/APIGroup`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroup`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.metaNs.v1Ns.APIGroup] = js.native
-    @JSName("getResource")
-    def `getResource_v1/APIGroupList`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroupList`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.metaNs.v1Ns.APIGroupList] = js.native
-    @JSName("getResource")
-    def `getResource_v1/APIGroupList`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIGroupList`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.metaNs.v1Ns.APIGroupList] = js.native
-    @JSName("getResource")
-    def `getResource_v1/APIResourceList`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIResourceList`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.metaNs.v1Ns.APIResourceList] = js.native
-    @JSName("getResource")
-    def `getResource_v1/APIResourceList`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIResourceList`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.metaNs.v1Ns.APIResourceList] = js.native
-    @JSName("getResource")
-    def `getResource_v1/APIVersions`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIVersions`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.metaNs.v1Ns.APIVersions] = js.native
-    @JSName("getResource")
-    def `getResource_v1/APIVersions`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/APIVersions`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.metaNs.v1Ns.APIVersions] = js.native
-    @JSName("getResource")
     def `getResource_v1/Binding`(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Binding`,
       name: java.lang.String
@@ -11446,17 +10551,6 @@ object yamlNs extends js.Object {
       namespace: java.lang.String,
       name: java.lang.String
     ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ConfigMapList] = js.native
-    @JSName("getResource")
-    def `getResource_v1/DeleteOptions`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.metaNs.v1Ns.DeleteOptions] = js.native
-    @JSName("getResource")
-    def `getResource_v1/DeleteOptions`(
-      groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/DeleteOptions`,
-      namespace: java.lang.String,
-      name: java.lang.String
-    ): atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiKubernetesLib.providerMod.metaNs.v1Ns.DeleteOptions] = js.native
     @JSName("getResource")
     def `getResource_v1/Endpoints`(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`v1/Endpoints`,
@@ -11790,7 +10884,12 @@ object yamlNs extends js.Object {
   }
   
   trait ConfigFileOpts extends js.Object {
+    /** Path or a URL that uniquely identifies a file. */
     var file: js.UndefOr[java.lang.String] = js.undefined
+    /**
+      * A set of transformations to apply to Kubernetes resource definitions before registering
+      * with engine.
+      */
     var transformations: js.UndefOr[js.Array[js.Function1[/* o */ _, scala.Unit]]] = js.undefined
   }
   
@@ -11817,14 +10916,26 @@ object yamlNs extends js.Object {
   }
   
   trait ConfigGroupOpts extends js.Object {
+    /** Set of paths or a URLs that uniquely identify files. */
     var files: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
+    /** JavaScript objects represeting Kubernetes resources. */
     var objs: js.UndefOr[js.Array[_] | js.Any] = js.undefined
+    /**
+      * A set of transformations to apply to Kubernetes resource definitions before registering
+      * with engine.
+      */
     var transformations: js.UndefOr[js.Array[js.Function1[/* o */ _, scala.Unit]]] = js.undefined
+    /** YAML text containing Kubernetes resource definitions. */
     var yaml: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
   }
   
   trait ConfigOpts extends js.Object {
+    /** JavaScript objects represeting Kubernetes resources. */
     var objs: js.Array[_]
+    /**
+      * A set of transformations to apply to Kubernetes resource definitions before registering
+      * with engine.
+      */
     var transformations: js.UndefOr[js.Array[js.Function1[/* o */ _, scala.Unit]]] = js.undefined
   }
   

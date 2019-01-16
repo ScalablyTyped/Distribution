@@ -537,6 +537,10 @@ trait Document extends js.Object {
     *     <td>PowerPoint and PowerPoint Online</td>
     *     <td>`Office.CoercionType.SlideRange`</td>
     *   </tr>
+    *   <tr>
+    *     <td>Excel, PowerPoint, and Word</td>
+    *     <td>`Office.CoercionType.XmlSvg`</td>
+    *   </tr>
     * </table>
     * 
     * **Support details**
@@ -1068,6 +1072,10 @@ trait Document extends js.Object {
     *   <tr>
     *     <td>PowerPoint and PowerPoint Online</td>
     *     <td>`Office.CoercionType.SlideRange`</td>
+    *   </tr>
+    *   <tr>
+    *     <td>Excel, PowerPoint, and Word</td>
+    *     <td>`Office.CoercionType.XmlSvg`</td>
     *   </tr>
     * </table>
     * 

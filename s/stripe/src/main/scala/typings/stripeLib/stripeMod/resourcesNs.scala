@@ -197,8 +197,8 @@ object resourcesNs extends js.Object {
     extends stripeLib.stripeMod.StripeNs.resourcesNs.Transfers
   
   @js.native
-  class UsageRecordSummarys ()
-    extends stripeLib.stripeMod.StripeNs.resourcesNs.UsageRecordSummarys
+  class UsageRecordSummaries ()
+    extends stripeLib.stripeMod.StripeNs.resourcesNs.UsageRecordSummaries
   
   @js.native
   class UsageRecords ()

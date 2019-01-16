@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "app-builder-lib"
-version := "20.38.4-930b06"
+version := "20.38.5-384c85"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,11 +9,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "7zip-bin" % "4.1.0-af3dc6",
   "org.scalablytyped" %%% "ajv" % "6.7.0-b81c67",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-b48f67",
-  "org.scalablytyped" %%% "app-builder-bin" % "2.6.1-c60a57",
+  "org.scalablytyped" %%% "app-builder-bin" % "2.6.3-c60a57",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-6bd481",
   "org.scalablytyped" %%% "bluebird-lst" % "1.0.6-58dc1d",
-  "org.scalablytyped" %%% "builder-util" % "9.6.1-5e8d46",
-  "org.scalablytyped" %%% "builder-util-runtime" % "8.1.0-311dac",
+  "org.scalablytyped" %%% "builder-util" % "9.6.2-b7d90f",
+  "org.scalablytyped" %%% "builder-util-runtime" % "8.1.1-311dac",
   "org.scalablytyped" %%% "chalk" % "2.4.2-953bc3",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-528543",
   "org.scalablytyped" %%% "compare-version" % "v0.1.2-dt-20180214Z-79a5ba",
@@ -21,8 +21,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "dotenv" % "6.1-dt-20181101Z-be1c74",
   "org.scalablytyped" %%% "dotenv-expand" % "4.2.0-663bd0",
   "org.scalablytyped" %%% "ejs" % "2.6-dt-20181126Z-cec9a8",
-  "org.scalablytyped" %%% "electron-osx-sign" % "0.4.11-0ba1a3",
-  "org.scalablytyped" %%% "electron-publish" % "20.38.3-89e934",
+  "org.scalablytyped" %%% "electron-osx-sign" % "0.4.11-0dc67a",
+  "org.scalablytyped" %%% "electron-publish" % "20.38.5-6318f1",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-86d5f2",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-a47544",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-42ebaa",
@@ -30,6 +30,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "fs-extra-p" % "7.0.0-57e80f",
   "org.scalablytyped" %%% "hosted-git-info" % "2.7-dt-20181031Z-d6df7b",
   "org.scalablytyped" %%% "is-ci" % "1.1-dt-20180416Z-0dea14",
+  "org.scalablytyped" %%% "isbinaryfile" % "4.0.0-96859a",
   "org.scalablytyped" %%% "js-yaml" % "3.11-dt-20181220Z-06ecaa",
   "org.scalablytyped" %%% "json5" % "0.0-unknown-dt-20180813Z-ef4759",
   "org.scalablytyped" %%% "lazy-val" % "1.0.3-58f732",
@@ -40,7 +41,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "normalize-package-data" % "2.4-dt-20180214Z-6377b0",
   "org.scalablytyped" %%% "plist" % "3.0-dt-20181029Z-a29dd6",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-1e0ea5",
-  "org.scalablytyped" %%% "read-config-file" % "3.2.0-a36a46",
+  "org.scalablytyped" %%% "read-config-file" % "3.2.1-7ad7c0",
   "org.scalablytyped" %%% "sanitize-filename" % "v1.1.1-dt-20180214Z-1e11ee",
   "org.scalablytyped" %%% "sax" % "1.x-dt-20180616Z-3eb7b5",
   "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-6f52c3",

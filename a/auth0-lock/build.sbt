@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "auth0-lock"
-version := "11.4-dt-20181030Z-1e4d2a"
+version := "11.4-dt-20190114Z-f9fe21"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

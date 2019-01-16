@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pulumi__kubernetes"
-version := "v0.18.0-dd7404"
+version := "0.19.0-40fe89"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,6 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "diff" % "3.5-dt-20181102Z-cf9880",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-e3598d",
   "org.scalablytyped" %%% "google-protobuf" % "3.2-dt-20180214Z-41bfc9",
+  "org.scalablytyped" %%% "got" % "9.3-dt-20181230Z-e69d48",
   "org.scalablytyped" %%% "grpc" % "1.17.0-cb415b",
   "org.scalablytyped" %%% "js-yaml" % "3.11-dt-20181220Z-06ecaa",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20181203Z-5a27ec",
@@ -42,6 +43,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "source-map-support" % "0.4-dt-20180523Z-e778dd",
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
   "org.scalablytyped" %%% "tmp" % "0.0-dt-20180214Z-0dd4e3",
+  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20181015Z-a404a3",
   "org.scalablytyped" %%% "ts-node" % "7.0.1-f38a37",
   "org.scalablytyped" %%% "typescript" % "3.2.2-a775a5",
   "org.scalablytyped" %%% "upath" % "1.1.0-4ad812")

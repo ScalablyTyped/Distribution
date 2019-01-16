@@ -15,7 +15,7 @@ trait NamespaceList extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */
-  val apiVersion: java.lang.String
+  val apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1
   /**
     * Items is the list of Namespace objects in the list. More info:
     * https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
@@ -27,7 +27,7 @@ trait NamespaceList extends js.Object {
     * CamelCase. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
     */
-  val kind: java.lang.String
+  val kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NamespaceList
   /**
     * Standard list metadata. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds

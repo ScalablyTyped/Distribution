@@ -40,6 +40,14 @@ class CommentReplyCollection ()
   ): CommentReply = js.native
   /**
     *
+    * Gets the number of comment replies in the collection.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getCount(): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
+  /**
+    *
     * Returns a comment reply identified by its ID. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -48,6 +56,16 @@ class CommentReplyCollection ()
     * @param commentReplyId The identifier for the comment reply.
     */
   def getItem(commentReplyId: java.lang.String): CommentReply = js.native
+  /**
+    *
+    * Gets a comment reply based on its position in the collection.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param index Index value of the object to be retrieved. Zero-indexed.
+    */
+  def getItemAt(index: scala.Double): CommentReply = js.native
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *

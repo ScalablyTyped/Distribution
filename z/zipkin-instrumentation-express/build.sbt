@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zipkin-instrumentation-express"
-version := "0.11-dt-20181114Z-433f32"
+version := "0.11-dt-20181114Z-22ca10"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-d115b2",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-91019c",
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
-  "org.scalablytyped" %%% "zipkin" % "0.15.0-fdfee9")
+  "org.scalablytyped" %%% "zipkin" % "0.16.0-fdfee9")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

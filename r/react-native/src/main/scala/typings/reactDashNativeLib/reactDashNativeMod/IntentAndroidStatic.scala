@@ -19,7 +19,7 @@ trait IntentAndroidStatic extends js.Object {
     Refer http://developer.android.com/training/app-indexing/deep-linking.html#handling-intents
     @deprecated
     */
-  def getInitialURL(callback: js.Function1[/* url */ java.lang.String, scala.Unit]): scala.Unit
+  def getInitialURL(callback: js.Function1[/* url */ java.lang.String | scala.Null, scala.Unit]): scala.Unit
   /**
     * Starts a corresponding external activity for the given URL.
     For example, if the URL is "https://www.facebook.com", the system browser will be opened, or the "choose application" dialog will be shown.

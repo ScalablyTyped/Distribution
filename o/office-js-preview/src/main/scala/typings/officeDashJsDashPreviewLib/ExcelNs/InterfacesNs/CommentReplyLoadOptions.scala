@@ -17,6 +17,14 @@ trait CommentReplyLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * Get/Set the content.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var content: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * Represents the comment reply identifier. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]

@@ -30,7 +30,7 @@ trait DataValidationUpdateData extends js.Object {
   var prompt: js.UndefOr[officeDashJsDashPreviewLib.ExcelNs.DataValidationPrompt] = js.undefined
   /**
     *
-    * Data Validation rule that contains different type of data validation criteria.
+    * Data validation rule that contains different type of data validation criteria.
     *
     * [Api set: ExcelApi 1.8]
     */

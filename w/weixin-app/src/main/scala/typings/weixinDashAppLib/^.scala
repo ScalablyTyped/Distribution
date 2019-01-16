@@ -21,16 +21,16 @@ object ^ extends js.Object {
     * 每个组件可以引用多个 behavior
     * behavior 也可以引用其他 behavior
     */
-  def Behavior[D, M, P](): weixinDashAppLib.wxNs.ExtendedComponent[weixinDashAppLib.wxNs.Component[D, P], D, M, P] = js.native
+  def Behavior[D, M, P](): java.lang.String = js.native
   def Behavior[D, M, P](
     options: weixinDashAppLib.wxNs.ThisTypedComponentOptionsWithRecordProps[weixinDashAppLib.wxNs.Component[D, P], D, M, P]
-  ): weixinDashAppLib.wxNs.ExtendedComponent[weixinDashAppLib.wxNs.Component[D, P], D, M, P] = js.native
+  ): java.lang.String = js.native
   // #endregion
   // #region Compontent组件
-  def Component[D, M, P](): weixinDashAppLib.wxNs.ExtendedComponent[weixinDashAppLib.wxNs.Component[D, P], D, M, P] = js.native
+  def Component[D, M, P](): java.lang.String = js.native
   def Component[D, M, P](
     options: weixinDashAppLib.wxNs.ThisTypedComponentOptionsWithRecordProps[weixinDashAppLib.wxNs.Component[D, P], D, M, P]
-  ): weixinDashAppLib.wxNs.ExtendedComponent[weixinDashAppLib.wxNs.Component[D, P], D, M, P] = js.native
+  ): java.lang.String = js.native
   // #endregion
   // #region Page
   /**

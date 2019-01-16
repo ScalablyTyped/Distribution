@@ -314,7 +314,7 @@ trait BN extends js.Object {
     */
   def toNumber(): scala.Double = js.native
   /**
-    * @description  Convert number to red
+    * @description Convert number to red
     */
   def toRed(reductionContext: ReductionContext): RedBN = js.native
   def toString(base: scala.Double): java.lang.String = js.native

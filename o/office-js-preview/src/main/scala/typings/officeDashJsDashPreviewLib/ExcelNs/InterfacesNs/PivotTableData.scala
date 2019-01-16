@@ -23,6 +23,14 @@ trait PivotTableData extends js.Object {
   var dataHierarchies: js.UndefOr[js.Array[DataPivotHierarchyData]] = js.undefined
   /**
     *
+    * True if the PivotTable should use custom lists when sorting.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var enableDataValueEditing: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * The Filter Pivot Hierarchies of the PivotTable.
     *
     * [Api set: ExcelApi 1.8]

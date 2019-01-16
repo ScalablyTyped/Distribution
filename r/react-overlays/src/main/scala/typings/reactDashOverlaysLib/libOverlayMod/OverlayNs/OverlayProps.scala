@@ -5,14 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- reactDashOverlaysLib.libPositionMod.PositionNs.PositionProps because var conflicts: container. Inlined target, containerPadding, placement, shouldUpdatePosition */ trait OverlayProps
+trait OverlayProps
   extends reactDashOverlaysLib.reactDashOverlaysMod.TransitionCallbacks
      with reactDashOverlaysLib.libPortalMod.PortalNs.PortalProps {
   /**
-    * Minimum spacing in pixels between container border and component border
+    * Enables the Popper.js `flip` modifier, allowing the Overlay to
+    * automatically adjust it's placement in case of overlap with the viewport or toggle.
     */
-  var containerPadding: js.UndefOr[scala.Double] = js.undefined
+  var flip: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * A Callback fired by the Overlay when it wishes to be hidden.
     *
@@ -25,29 +25,33 @@ import scala.scalajs.js.annotation._
       _
     ]
   ] = js.undefined
+  /** Specify where the overlay element is positioned in relation to the target element */
+  var placement: js.UndefOr[Placements] = js.undefined
   /**
-    * How to position the component relative to the target
+    * A set of popper options and props passed directly to react-popper's Popper component.
     */
-  var placement: js.UndefOr[
-    reactDashOverlaysLib.reactDashOverlaysLibStrings.top | reactDashOverlaysLib.reactDashOverlaysLibStrings.right | reactDashOverlaysLib.reactDashOverlaysLibStrings.bottom | reactDashOverlaysLib.reactDashOverlaysLibStrings.left
-  ] = js.undefined
+  var popperConfig: js.UndefOr[js.Object] = js.undefined
   /**
     * Specify whether the overlay should trigger `onHide` when the user clicks outside the overlay
     */
   var rootClose: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Whether the position should be changed on each update
+    * Specify disabled for disable RootCloseWrapper
     */
-  var shouldUpdatePosition: js.UndefOr[scala.Boolean] = js.undefined
+  var rootCloseDisabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Specify event for toggling overlay
+    */
+  var rootCloseEvent: js.UndefOr[
+    reactDashOverlaysLib.reactDashOverlaysLibStrings.click | reactDashOverlaysLib.reactDashOverlaysLibStrings.mousedown
+  ] = js.undefined
   /**
     * Set the visibility of the Overlay
     */
   var show: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-    * A node, element, or function that returns either. The child will be
-    * be positioned next to the `target` specified.
-    */
-  var target: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | js.Function] = js.undefined
+  var target: js.UndefOr[
+    reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance]
+  ] = js.undefined
   /**
     * A `react-transition-group@2.0.0` `<Transition/>` component
     * used to animate the overlay as it changes visibility.
@@ -55,5 +59,10 @@ import scala.scalajs.js.annotation._
   var transition: js.UndefOr[
     reactLib.reactMod.ReactNs.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]
   ] = js.undefined
+  /**
+    * A render prop that returns an element to overlay and position. See
+    * the [react-popper documentation](https://github.com/FezVrasta/react-popper#children) for more info.
+    */
+  def children(renderProps: OverlayRenderProps): reactLib.reactMod.ReactNs.ReactElement[_]
 }
 

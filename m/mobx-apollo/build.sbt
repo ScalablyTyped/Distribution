@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "mobx-apollo"
-version := "0.0-dt-20181017Z-105974"
+version := "0.0-dt-20181017Z-4340ec"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-cache" % "1.1.22-7fef72",
-  "org.scalablytyped" %%% "apollo-client" % "2.4.8-d5219b",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.6-cd9314",
-  "org.scalablytyped" %%% "apollo-link-dedup" % "1.0.13-7be22a",
-  "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-a360c0",
+  "org.scalablytyped" %%% "apollo-cache" % "1.1.22-4382b5",
+  "org.scalablytyped" %%% "apollo-client" % "2.4.8-fa5573",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.6-2140a4",
+  "org.scalablytyped" %%% "apollo-link-dedup" % "1.0.13-14648d",
+  "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-51333a",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-42ebaa",
-  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181231Z-d3e2e1",
+  "org.scalablytyped" %%% "graphql" % "14.0-dt-20190107Z-53c658",
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-e21f3d",
   "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-1f070e",

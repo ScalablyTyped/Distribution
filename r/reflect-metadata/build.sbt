@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "reflect-metadata"
-version := "0.1.12-2ac193"
+version := "0.1.13-2ac193"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

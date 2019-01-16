@@ -15,7 +15,7 @@ trait Status extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */
-  val apiVersion: java.lang.String
+  val apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1
   /**
     * Suggested HTTP return code for this status, 0 if not set.
     */
@@ -32,7 +32,7 @@ trait Status extends js.Object {
     * CamelCase. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
     */
-  val kind: java.lang.String
+  val kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Status
   /**
     * A human-readable description of the status of this operation.
     */

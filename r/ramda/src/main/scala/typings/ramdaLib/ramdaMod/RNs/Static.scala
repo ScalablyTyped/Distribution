@@ -807,6 +807,25 @@ trait Static extends js.Object {
     * Returns all but the last element of a list or string.
     */
   def init[T](list: js.Array[T]): js.Array[T] = js.native
+  def innerJoin[T1, T2](pred: js.Function2[/* a */ T1, /* b */ T2, scala.Boolean]): js.Function2[/* list1 */ js.Array[T1], /* list2 */ js.Array[T2], js.Array[T1]] = js.native
+  def innerJoin[T1, T2](pred: js.Function2[/* a */ T1, /* b */ T2, scala.Boolean], list1: js.Array[T1]): js.Function1[/* list2 */ js.Array[T2], js.Array[T1]] = js.native
+  /**
+    * Takes a predicate `pred`, a list `xs`, and a list `ys`, and returns a list
+    * `xs'` comprising each of the elements of `xs` which is equal to one or more
+    * elements of `ys` according to `pred`.
+    *
+    * `pred` must be a binary function expecting an element from each list.
+    *
+    * `xs`, `ys`, and `xs'` are treated as sets, semantically, so ordering should
+    * not be significant, but since `xs'` is ordered the implementation guarantees
+    * that its values are in the same order as they appear in `xs`. Duplicates are
+    * not removed, so `xs'` may contain duplicates if `xs` contains duplicates.
+    */
+  def innerJoin[T1, T2](
+    pred: js.Function2[/* a */ T1, /* b */ T2, scala.Boolean],
+    list1: js.Array[T1],
+    list2: js.Array[T2]
+  ): js.Array[T1] = js.native
   def insert(index: scala.Double): js.Function2[/* elt */ js.Any, /* list */ js.Array[_], js.Array[_]] = js.native
   def insert[T](index: scala.Double, elt: T): js.Function1[/* list */ js.Array[T], js.Array[T]] = js.native
   /**

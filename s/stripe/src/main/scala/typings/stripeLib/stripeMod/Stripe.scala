@@ -53,7 +53,7 @@ trait Stripe extends js.Object {
   var subscriptions: stripeLib.stripeMod.StripeNs.resourcesNs.Subscriptions = js.native
   var tokens: stripeLib.stripeMod.StripeNs.resourcesNs.Tokens = js.native
   var transfers: stripeLib.stripeMod.StripeNs.resourcesNs.Transfers = js.native
-  var usageRecordSummarys: stripeLib.stripeMod.StripeNs.resourcesNs.UsageRecordSummarys = js.native
+  var usageRecordSummaries: stripeLib.stripeMod.StripeNs.resourcesNs.UsageRecordSummaries = js.native
   var usageRecords: stripeLib.stripeMod.StripeNs.resourcesNs.UsageRecords = js.native
   var webhooks: stripeLib.stripeMod.StripeNs.resourcesNs.WebHooks = js.native
   def getClientUserAgent(response: js.Function1[/* userAgent */ java.lang.String, scala.Unit]): scala.Unit = js.native

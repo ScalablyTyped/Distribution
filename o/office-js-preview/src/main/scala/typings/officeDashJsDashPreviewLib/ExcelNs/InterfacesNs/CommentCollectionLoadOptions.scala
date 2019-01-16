@@ -17,6 +17,14 @@ trait CommentCollectionLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * For EACH ITEM in the collection: Get/Set the content.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var content: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * For EACH ITEM in the collection: Represents the comment identifier. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]

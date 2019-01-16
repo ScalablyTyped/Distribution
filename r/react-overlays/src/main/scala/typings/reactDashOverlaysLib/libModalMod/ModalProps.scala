@@ -22,14 +22,6 @@ trait ModalProps
     */
   var backdrop: js.UndefOr[scala.Boolean | reactDashOverlaysLib.reactDashOverlaysLibStrings.static] = js.undefined
   /**
-    * A css class or classes for the backdrop component.
-    */
-  var backdropClassName: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * A style object for the backdrop component.
-    */
-  var backdropStyle: js.UndefOr[js.Object] = js.undefined
-  /**
     * A `react-transition-group@2.0.0` `<Transition/>` component used
     * to control animations for the backdrop components.
     */
@@ -65,7 +57,7 @@ trait ModalProps
   /**
     * A callback fired when the escape key, if specified in `keyboard`, is pressed.
     */
-  var onEscapeKeyUp: js.UndefOr[js.Function] = js.undefined
+  var onEscapeKeyDown: js.UndefOr[js.Function] = js.undefined
   /**
     * A callback fired when either the backdrop is clicked, or the escape key is pressed.
     *
@@ -86,6 +78,15 @@ trait ModalProps
     * ```
     */
   var renderBackdrop: js.UndefOr[js.Function1[/* props */ js.Any, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
+  /**
+    * A function that returns the dialog component. Useful for custom
+    * rendering. **Note:** the component should make sure to apply the provided ref.
+    *
+    * ```js
+    *  renderDialog={props => <MyDialog {...props} />}
+    * ```
+    */
+  var renderDialog: js.UndefOr[js.Function1[/* props */ js.Any, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
   /**
     * When `true` The modal will restore focus to previously focused element once
     * modal is hidden

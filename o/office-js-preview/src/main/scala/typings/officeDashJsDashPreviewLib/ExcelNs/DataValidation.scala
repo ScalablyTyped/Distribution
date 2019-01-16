@@ -41,7 +41,7 @@ class DataValidation ()
   var prompt: DataValidationPrompt = js.native
   /**
     *
-    * Data Validation rule that contains different type of data validation criteria.
+    * Data validation rule that contains different type of data validation criteria.
     *
     * [Api set: ExcelApi 1.8]
     */

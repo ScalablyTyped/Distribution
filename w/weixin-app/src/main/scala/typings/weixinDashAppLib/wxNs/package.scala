@@ -36,7 +36,6 @@ package object wxNs {
   type DefaultProps = js.Object | (stdLib.Record[java.lang.String, js.Any])
   type EncodeBitRate = weixinDashAppLib.weixinDashAppLibNumbers.`8000` | weixinDashAppLib.weixinDashAppLibNumbers.`11025` | weixinDashAppLib.weixinDashAppLibNumbers.`12000` | weixinDashAppLib.weixinDashAppLibNumbers.`16000` | weixinDashAppLib.weixinDashAppLibNumbers.`22050` | weixinDashAppLib.weixinDashAppLibNumbers.`24000` | weixinDashAppLib.weixinDashAppLibNumbers.`32000` | weixinDashAppLib.weixinDashAppLibNumbers.`44100` | weixinDashAppLib.weixinDashAppLibNumbers.`48000`
   type EventType = weixinDashAppLib.weixinDashAppLibStrings.input | weixinDashAppLib.weixinDashAppLibStrings.form | weixinDashAppLib.weixinDashAppLibStrings.submit | weixinDashAppLib.weixinDashAppLibStrings.scroll | TouchEventType | TransitionEventType | weixinDashAppLib.weixinDashAppLibStrings.tap | weixinDashAppLib.weixinDashAppLibStrings.longpress
-  type ExtendedComponent[Instance /* <: Component[Data, Props] */, Data, Methods, Props] = (CombinedInstance[Instance, Data, Methods, Props]) with (Component[Data, Props])
   type FormEvent = BuiltInEvent[weixinDashAppLib.weixinDashAppLibStrings.form, weixinDashAppLib.Anon_Name]
   // #endregion
   // #region 媒体API列表
@@ -64,7 +63,7 @@ package object wxNs {
   type Scope = weixinDashAppLib.weixinDashAppLibStrings.scopeDOTuserInfo | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTuserLocation | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTaddress | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTinvoiceTitle | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTinvoice | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTwerun | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTrecord | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTwritePhotosAlbum | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTcamera
   type ScrollEvent = BuiltInEvent[weixinDashAppLib.weixinDashAppLibStrings.scroll, js.Object]
   type TapEvent = TouchEvent[weixinDashAppLib.weixinDashAppLibStrings.tap]
-  type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props] */, Data, Methods, Props] = js.Object with (ComponentOptions[V, Data | (js.ThisFunction0[/* this */ V, Data]), Methods, Props]) with (stdLib.ThisType[CombinedInstance[V, Data, Methods, stdLib.Readonly[Props]]])
+  type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props] */, Data, Methods, Props] = js.Object with (ComponentOptions[V, Data, Methods, Props]) with (stdLib.ThisType[CombinedInstance[V, Data, Methods, stdLib.Readonly[Props]]])
   // 界面-----动画
   type TimingFunction = weixinDashAppLib.weixinDashAppLibStrings.linear | weixinDashAppLib.weixinDashAppLibStrings.ease | weixinDashAppLib.weixinDashAppLibStrings.`ease-in` | weixinDashAppLib.weixinDashAppLibStrings.`ease-in-out` | weixinDashAppLib.weixinDashAppLibStrings.`ease-out` | weixinDashAppLib.weixinDashAppLibStrings.`step-start` | weixinDashAppLib.weixinDashAppLibStrings.`step-end`
   type TouchCancelEvent = TouchEvent[weixinDashAppLib.weixinDashAppLibStrings.touchcancel]

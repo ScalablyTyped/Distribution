@@ -16,6 +16,14 @@ trait PivotLayoutLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * True if formatting will be automatically formatted when it’s refreshed or when fields are moved
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var autoFormat: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * True if the field list should be shown or hidden from the UI.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -29,6 +37,14 @@ trait PivotLayoutLoadOptions extends js.Object {
     * [Api set: ExcelApi 1.8]
     */
   var layoutType: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * True if formatting is preserved when the report is refreshed or recalculated by operations such as pivoting, sorting, or changing page field items.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var preserveFormatting: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
     * True if the PivotTable report shows grand totals for columns.

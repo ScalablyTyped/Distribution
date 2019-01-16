@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ISelectionZoneProps
-  extends reactLib.reactMod.ReactNs.Props[SelectionZone] {
+  extends reactLib.reactMod.ReactNs.ClassAttributes[SelectionZone] {
   var componentRef: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var disableAutoSelectOnInputElements: js.UndefOr[scala.Boolean] = js.undefined
   var enterModalOnTouch: js.UndefOr[scala.Boolean] = js.undefined

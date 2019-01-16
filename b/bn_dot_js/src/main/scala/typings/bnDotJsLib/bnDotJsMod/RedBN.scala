@@ -5,29 +5,67 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait RedBN extends js.Object {
-  def fromRed(): BN
-  def redAdd(b: RedBN): RedBN
-  def redIAdd(b: RedBN): RedBN
-  def redIMul(b: RedBN): RedBN
-  def redISqr(): RedBN
-  def redISub(b: RedBN): RedBN
+/**
+  * Big-Number class with additionnal methods that are using modular
+  * operation.
+  */
+@js.native
+trait RedBN extends BN {
   /**
-    * @description  modular inverse of the number
+    * @description Convert back a number using a reduction context
     */
-  def redInvm(): RedBN
-  def redMul(b: RedBN): RedBN
-  def redNeg(): RedBN
+  def fromRed(): BN = js.native
+  /**
+    * @description modular addition
+    */
+  def redAdd(b: BN): RedBN = js.native
+  /**
+    * @description in-place modular addition
+    */
+  def redIAdd(b: BN): RedBN = js.native
+  /**
+    * @description in-place modular multiplication
+    */
+  def redIMul(b: BN): RedBN = js.native
+  /**
+    * @description in-place modular square
+    */
+  def redISqr(): RedBN = js.native
+  /**
+    * @description in-place modular subtraction
+    */
+  def redISub(b: BN): RedBN = js.native
+  /**
+    * @description modular inverse of the number
+    */
+  def redInvm(): RedBN = js.native
+  /**
+    * @description modular multiplication
+    */
+  def redMul(b: BN): RedBN = js.native
+  /**
+    * @description modular negation
+    */
+  def redNeg(): RedBN = js.native
   /**
     * @description modular exponentiation
     */
-  def redPow(b: RedBN): RedBN
-  def redShl(num: scala.Double): RedBN
-  def redSqr(): RedBN
+  def redPow(b: BN): RedBN = js.native
   /**
-    * @description square root modulo reduction context's prime
+    * @description modular shift left
     */
-  def redSqrt(): RedBN
-  def redSub(b: RedBN): RedBN
+  def redShl(num: scala.Double): RedBN = js.native
+  /**
+    * @description modular square
+    */
+  def redSqr(): RedBN = js.native
+  /**
+    * @description modular square root
+    */
+  def redSqrt(): RedBN = js.native
+  /**
+    * @description modular subtraction
+    */
+  def redSub(b: BN): RedBN = js.native
 }
 

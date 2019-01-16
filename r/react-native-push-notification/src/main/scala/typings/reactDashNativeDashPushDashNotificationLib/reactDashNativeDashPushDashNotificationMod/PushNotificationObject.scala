@@ -23,6 +23,7 @@ class PushNotificationObject () extends js.Object {
   var number: js.UndefOr[java.lang.String] = js.native
   var ongoing: js.UndefOr[scala.Boolean] = js.native
   var playSound: js.UndefOr[scala.Boolean] = js.native
+  var priority: js.UndefOr[PriorityType] = js.native
   var repeatType: js.UndefOr[RepeatType] = js.native
   var smallIcon: js.UndefOr[java.lang.String] = js.native
   var soundName: js.UndefOr[java.lang.String] = js.native

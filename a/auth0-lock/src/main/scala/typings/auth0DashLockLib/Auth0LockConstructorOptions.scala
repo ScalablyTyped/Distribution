@@ -25,7 +25,7 @@ trait Auth0LockConstructorOptions extends js.Object {
   var closable: js.UndefOr[scala.Boolean] = js.undefined
   var configurationBaseUrl: js.UndefOr[java.lang.String] = js.undefined
   var container: js.UndefOr[java.lang.String] = js.undefined
-  var defaultADUsernameFromEmailPrefix: js.UndefOr[java.lang.String] = js.undefined
+  var defaultADUsernameFromEmailPrefix: js.UndefOr[scala.Boolean] = js.undefined
   var defaultDatabaseConnection: js.UndefOr[java.lang.String] = js.undefined
   var defaultEnterpriseConnection: js.UndefOr[java.lang.String] = js.undefined
   var flashMessage: js.UndefOr[Auth0LockFlashMessageOptions] = js.undefined

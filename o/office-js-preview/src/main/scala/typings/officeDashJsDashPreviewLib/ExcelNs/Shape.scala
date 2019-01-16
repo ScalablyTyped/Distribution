@@ -103,6 +103,30 @@ class Shape ()
   var left: scala.Double = js.native
   /**
     *
+    * Represents the level of the specified shape. Level 0 means the shape is not part of any group, level 1 means the shape is part of a top-level group, etc.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val level: scala.Double = js.native
+  /**
+    *
+    * Returns the line object for the shape object. Error will be thrown, if the shape object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val line: Line = js.native
+  /**
+    *
+    * Returns the line formatting of the shape object. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val lineFormat: ShapeLineFormat = js.native
+  /**
+    *
     * Represents if the aspect ratio locked, in boolean, of the shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -111,12 +135,12 @@ class Shape ()
   var lockAspectRatio: scala.Boolean = js.native
   /**
     *
-    * Represents the name of the shape. Read-only.
+    * Represents the name of the shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  val name: java.lang.String = js.native
+  var name: java.lang.String = js.native
   /**
     *
     * Occurs when the shape is activated.
@@ -137,6 +161,14 @@ class Shape ()
     * @beta
     */
   val onDeactivated: officeDashJsDashPreviewLib.OfficeExtensionNs.EventHandlers[ShapeDeactivatedEventArgs] = js.native
+  /**
+    *
+    * Represents the parent group of the specified shape.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val parentGroup: Shape = js.native
   /**
     *
     * Represents the placment, value that represents the way the object is attached to the cells below it.
@@ -177,7 +209,7 @@ class Shape ()
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  val `type`: ShapeType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Image | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GeometricShape | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Group = js.native
+  val `type`: ShapeType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Image | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GeometricShape | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Group | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Line = js.native
   /**
     *
     * Represents the visibility, in boolean, of the specified shape.

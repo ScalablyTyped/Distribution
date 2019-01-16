@@ -21,6 +21,13 @@ class ChoiceGroupBase protected ()
   var _onChange: js.Any = js.native
   var _onFocus: js.Any = js.native
   var changedVars: js.Any = js.native
+  /**
+    * Gets the current checked option.
+    */
+  /* CompleteClass */
+  override var checkedOption: js.UndefOr[
+    officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupDotTypesMod.IChoiceGroupOption
+  ] = js.native
   var focusedVars: js.Any = js.native
   /* private */ def _getKeyChecked(props: js.Any): js.Any = js.native
   @JSName("componentWillReceiveProps")

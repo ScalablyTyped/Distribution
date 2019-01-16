@@ -16,6 +16,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class CommentReply ()
   extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject {
+  /**
+    *
+    * Get/Set the content.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var content: java.lang.String = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_CommentReply: RequestContext = js.native
@@ -44,6 +52,14 @@ class CommentReply ()
     */
   def delete(): scala.Unit = js.native
   /**
+    *
+    * Get its parent comment of this reply.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def getParentComment(): Comment = js.native
+  /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *
     * @remarks
@@ -63,6 +79,24 @@ class CommentReply ()
   def load(option: js.Array[java.lang.String]): CommentReply = js.native
   def load(option: officeDashJsDashPreviewLib.Anon_Expand): CommentReply = js.native
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.CommentReplyLoadOptions): CommentReply = js.native
+  /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
+  def set(properties: CommentReply): scala.Unit = js.native
+  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+    *
+    * @remarks
+    *
+    * This method has the following additional signature:
+    *
+    * `set(properties: Excel.CommentReply): void`
+    *
+    * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+    * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+    */
+  def set(properties: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.CommentReplyUpdateData): scala.Unit = js.native
+  def set(
+    properties: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.CommentReplyUpdateData,
+    options: officeDashJsDashPreviewLib.OfficeExtensionNs.UpdateOptions
+  ): scala.Unit = js.native
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.CommentReply object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.CommentReplyData`) that contains shallow copies of any loaded child properties from the original object.

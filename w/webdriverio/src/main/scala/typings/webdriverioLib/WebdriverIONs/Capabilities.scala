@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Capabilities extends js.Object {
   var acceptInsecureCerts: js.UndefOr[scala.Boolean] = js.undefined
-  var browserName: java.lang.String
+  var browserName: js.UndefOr[java.lang.String] = js.undefined
   var browserVersion: js.UndefOr[java.lang.String] = js.undefined
   // wdio-sauce-service specific
   var build: js.UndefOr[java.lang.String] = js.undefined

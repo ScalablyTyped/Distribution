@@ -14,7 +14,8 @@ import scala.scalajs.js.annotation._
 trait BasicDataValidation extends js.Object {
   /**
     *
-    * Gets or sets the Formula1, i.e. minimum value or value depending of the operator.
+    * Specifies the right-hand operand when the operator property is set to a binary operator such as GreaterThan (the left-hand operand is the value the user tries to enter in the cell). With the ternary operators Between and NotBetween, specifies the lower bound operand.
+    For example, setting formula1 to 10 and operator to GreaterThan means that valid data for the range must be greater than 10.
     When setting the value, it can be passed in as a number, a range object, or a string formula (where the string is either a stringified number, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
     When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
     *
@@ -23,7 +24,7 @@ trait BasicDataValidation extends js.Object {
   var formula1: java.lang.String | scala.Double | Range
   /**
     *
-    * Gets or sets the Formula2, i.e. maximum value or value depending of the operator.
+    * With the ternary operators Between and NotBetween, specifies the upper bound operand. Is not used with the binary operators, such as GreaterThan.
     When setting the value, it can be passed in as a number, a range object, or a string formula (where the string is either a stringified number, a cell reference like "=A1", or a formula like "=MIN(A1, B1)").
     When retrieving the value, it will always be returned as a string formula, for example: "=10", "=A1", "=SUM(A1:B5)", etc.
     *

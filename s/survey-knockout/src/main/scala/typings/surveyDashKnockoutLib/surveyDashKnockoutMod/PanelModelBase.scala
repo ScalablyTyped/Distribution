@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class PanelModelBase ()
   extends SurveyElement
      with IConditionRunner
-     with ILocalizableOwner {
+     with ISurveyErrorOwner {
   def this(name: java.lang.String) = this()
   val cssClasses: js.Any = js.native
   val depth: scala.Double = js.native
@@ -182,6 +182,8 @@ class PanelModelBase ()
     * @param name the element name
     */
   def getElementByName(name: java.lang.String): IElement = js.native
+  /* CompleteClass */
+  override def getErrorCustomText(text: java.lang.String, error: SurveyError): java.lang.String = js.native
   def getFirstQuestionToFocus(): Question = js.native
   def getFirstQuestionToFocus(withError: scala.Boolean): Question = js.native
   def getIsPageVisible(exceptionQuestion: IQuestion): scala.Boolean = js.native

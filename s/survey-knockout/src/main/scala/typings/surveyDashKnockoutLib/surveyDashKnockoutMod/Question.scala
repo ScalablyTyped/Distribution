@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class Question protected ()
   extends SurveyElement
-     with ILocalizableOwner
      with IValidatorOwner
      with /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   def this(name: java.lang.String) = this()
@@ -144,6 +143,13 @@ class Question protected ()
     */
   var requiredErrorText: java.lang.String = js.native
   /**
+    * An expression that returns true or false. If it returns true the Question becomes required and an end-user has to answer it.
+    * If it returns false the Question then an end-user may not answer it the Question maybe empty.
+    * The library runs the expression on survey start and on changing a question value. If the property is empty then isRequired property is used.
+    * @see isRequired
+    */
+  var requiredIf: java.lang.String = js.native
+  /**
     * Returns the char/string for a required question.
     * @see SurveyModel.requiredText
     */
@@ -255,16 +261,18 @@ class Question protected ()
     */
   def getDisplayValue(keysAsText: scala.Boolean): js.Any = js.native
   /* protected */ def getDisplayValueCore(keyAsText: scala.Boolean): js.Any = js.native
+  def getErrorCustomText(text: java.lang.String, error: SurveyError): java.lang.String = js.native
   /* protected */ def getFirstErrorInputElementId(): java.lang.String = js.native
   /* protected */ def getFirstInputElementId(): java.lang.String = js.native
-  /* CompleteClass */
-  override def getLocale(): java.lang.String = js.native
-  /* CompleteClass */
-  override def getMarkdownHtml(text: java.lang.String): java.lang.String = js.native
+  /**
+    * Returns the current survey locale
+    * @see SurveyModel.locale
+    */
+  def getLocale(): java.lang.String = js.native
+  def getMarkdownHtml(text: java.lang.String): java.lang.String = js.native
   def getOthersMaxLength(): js.Any = js.native
   def getPanel(): IPanel = js.native
-  /* CompleteClass */
-  override def getProcessedText(text: java.lang.String): java.lang.String = js.native
+  def getProcessedText(text: java.lang.String): java.lang.String = js.native
   /* protected */ def getProcessedTextValue(textValue: TextPreProcessorValue): scala.Unit = js.native
   /* protected */ def getQuestionTitleTemplate(): java.lang.String = js.native
   /* protected */ def getRootCss(classes: js.Any): js.Any = js.native

@@ -11,10 +11,10 @@ object utilitiesGetOperationRootTypeMod extends js.Object {
   def getOperationRootType(
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     operation: graphqlLib.languageAstMod.OperationDefinitionNode
-  ): graphqlLib.typeDefinitionMod.GraphQLObjectType = js.native
+  ): graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _] = js.native
   def getOperationRootType(
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     operation: graphqlLib.languageAstMod.OperationTypeDefinitionNode
-  ): graphqlLib.typeDefinitionMod.GraphQLObjectType = js.native
+  ): graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _] = js.native
 }
 

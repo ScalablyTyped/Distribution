@@ -22,7 +22,7 @@ abstract class SchemaVisitor () extends js.Object {
   ): graphqlLib.typeDefinitionMod.GraphQLInputField | scala.Unit | scala.Null = js.native
   def visitInputObject(`object`: graphqlLib.graphqlMod.GraphQLInputObjectType): graphqlLib.graphqlMod.GraphQLInputObjectType | scala.Unit | scala.Null = js.native
   def visitInterface(iface: graphqlLib.graphqlMod.GraphQLInterfaceType): graphqlLib.graphqlMod.GraphQLInterfaceType | scala.Unit | scala.Null = js.native
-  def visitObject(`object`: graphqlLib.graphqlMod.GraphQLObjectType): graphqlLib.graphqlMod.GraphQLObjectType | scala.Unit | scala.Null = js.native
+  def visitObject(`object`: graphqlLib.graphqlMod.GraphQLObjectType[_, _]): (graphqlLib.graphqlMod.GraphQLObjectType[_, _]) | scala.Unit | scala.Null = js.native
   def visitScalar(scalar: graphqlLib.graphqlMod.GraphQLScalarType): graphqlLib.graphqlMod.GraphQLScalarType | scala.Unit | scala.Null = js.native
   def visitSchema(schema: graphqlLib.graphqlMod.GraphQLSchema): scala.Unit = js.native
   def visitUnion(union: graphqlLib.graphqlMod.GraphQLUnionType): graphqlLib.graphqlMod.GraphQLUnionType | scala.Unit | scala.Null = js.native

@@ -21,7 +21,7 @@ trait DataValidationPrompt extends js.Object {
   var message: java.lang.String
   /**
     *
-    * It determines showing the prompt or not when user selects a cell with the data validation.
+    * Determines whether or not to show the prompt when user selects a cell with data validation.
     *
     * [Api set: ExcelApi 1.8]
     */

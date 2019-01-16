@@ -99,6 +99,30 @@ trait ShapeLoadOptions extends js.Object {
   var left: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * Represents the level of the specified shape. Level 0 means the shape is not part of any group, level 1 means the shape is part of a top-level group, etc.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var level: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Returns the line object for the shape object. Error will be thrown, if the shape object is other shape type (Like, GeometricShape, SmartArt, etc.) rather than Image.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var line: js.UndefOr[LineLoadOptions] = js.undefined
+  /**
+    *
+    * Returns the line formatting of the shape object.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var lineFormat: js.UndefOr[ShapeLineFormatLoadOptions] = js.undefined
+  /**
+    *
     * Represents if the aspect ratio locked, in boolean, of the shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -107,12 +131,20 @@ trait ShapeLoadOptions extends js.Object {
   var lockAspectRatio: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the name of the shape. Read-only.
+    * Represents the name of the shape.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   var name: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Represents the parent group of the specified shape.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var parentGroup: js.UndefOr[ShapeLoadOptions] = js.undefined
   /**
     *
     * Represents the placment, value that represents the way the object is attached to the cells below it.

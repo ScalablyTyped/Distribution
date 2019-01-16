@@ -83,6 +83,51 @@ class ShapeCollection ()
   def addImage(base64ImageString: java.lang.String): Shape = js.native
   /**
     *
+    * Adds a line to worksheet. Returns a Shape object that represents the new line.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param startLeft The distance, in points, from the start left of the line to the left side of the worksheet.
+    * @param startTop The distance, in points, from the start top of the line to the top of the worksheet.
+    * @param endLeft The distance, in points, from the end left of the line to the left of the worksheet.
+    * @param endTop The distance, in points, from the end top of the line to the top of the worksheet.
+    * @param connectorType Represents the connector type. See Excel.ConnectorType for details.
+    */
+  def addLine(startLeft: scala.Double, startTop: scala.Double, endLeft: scala.Double, endTop: scala.Double): Shape = js.native
+  def addLine(
+    startLeft: scala.Double,
+    startTop: scala.Double,
+    endLeft: scala.Double,
+    endTop: scala.Double,
+    connectorType: ConnectorType
+  ): Shape = js.native
+  @JSName("addLine")
+  def addLine_Curve(
+    startLeft: scala.Double,
+    startTop: scala.Double,
+    endLeft: scala.Double,
+    endTop: scala.Double,
+    connectorType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Curve
+  ): Shape = js.native
+  @JSName("addLine")
+  def addLine_Elbow(
+    startLeft: scala.Double,
+    startTop: scala.Double,
+    endLeft: scala.Double,
+    endTop: scala.Double,
+    connectorType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Elbow
+  ): Shape = js.native
+  @JSName("addLine")
+  def addLine_Straight(
+    startLeft: scala.Double,
+    startTop: scala.Double,
+    endLeft: scala.Double,
+    endTop: scala.Double,
+    connectorType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Straight
+  ): Shape = js.native
+  /**
+    *
     * Creates an SVG from a XML string and adds it to worksheet. Returns a Shape object that represents the new Image.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -112,14 +157,24 @@ class ShapeCollection ()
   def getCount(): officeDashJsDashPreviewLib.OfficeExtensionNs.ClientResult[scala.Double] = js.native
   /**
     *
-    * Returns a shape identified by the shape id. Read-only.
+    * Gets a shape using its name.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param shapeId The identifier for the shape.
+    * @param name Name of the shape to be retrieved.
     */
-  def getItem(shapeId: java.lang.String): Shape = js.native
+  def getItem(name: java.lang.String): Shape = js.native
+  /**
+    *
+    * Gets a shape based on its position in the collection.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param index Index value of the object to be retrieved. Zero-indexed.
+    */
+  def getItemAt(index: scala.Double): Shape = js.native
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *

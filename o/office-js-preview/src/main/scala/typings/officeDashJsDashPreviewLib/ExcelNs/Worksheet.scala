@@ -30,6 +30,14 @@ class Worksheet ()
     * [Api set: ExcelApi 1.1]
     */
   val charts: ChartCollection = js.native
+  /**
+    *
+    * Returns a collection of all the Comments objects on the worksheet. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val comments: CommentCollection = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Worksheet: RequestContext = js.native
@@ -196,6 +204,14 @@ class Worksheet ()
     * [Api set: ExcelApi 1.8]
     */
   var showHeadings: scala.Boolean = js.native
+  /**
+    *
+    * Returns collection of slicers that are part of the worksheet. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val slicers: SlicerCollection = js.native
   /**
     *
     * Returns the standard (default) height of all the rows in the worksheet, in points. Read-only.

@@ -1,5 +1,5 @@
 ```
-// Type definitions for react-redux 6.0
+// Type definitions for react-redux 7.0
 // Project: https://github.com/reduxjs/react-redux
 // Definitions by: Qubo <https://github.com/tkqubo>,
 //                 Kenzie Togami <https://github.com/kenzierocks>,
@@ -13,6 +13,7 @@
 //                 Johann Rakotoharisoa <https://github.com/jrakotoharisoa>
 //                 Anatoli Papirovski <https://github.com/apapirovski>
 //                 Boris Sergeyev <https://github.com/surgeboris>
+//                 Søren Bruus Frank <https://github.com/soerenbf>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.0
 // Known Issue:

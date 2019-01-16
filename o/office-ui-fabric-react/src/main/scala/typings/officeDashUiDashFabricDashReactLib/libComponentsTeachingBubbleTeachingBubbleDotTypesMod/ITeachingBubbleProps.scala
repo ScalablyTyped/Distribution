@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ITeachingBubbleProps
-  extends reactLib.reactMod.ReactNs.Props[
+  extends reactLib.reactMod.ReactNs.ClassAttributes[
       officeDashUiDashFabricDashReactLib.libComponentsTeachingBubbleTeachingBubbleDotBaseMod.TeachingBubbleBase | officeDashUiDashFabricDashReactLib.libComponentsTeachingBubbleTeachingBubbleContentDotBaseMod.TeachingBubbleContentBase
     ]
      with officeDashUiDashFabricDashReactLib.libCommonIAccessiblePopupPropsMod.IAccessiblePopupProps {

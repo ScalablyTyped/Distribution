@@ -7,6 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait ConnectOptions extends js.Object {
   /**
+    * The react context to get the store from.
+    *
+    * @default ReactReduxContext
+    */
+  var context: js.UndefOr[
+    reactLib.reactMod.ReactNs.Context[ReactReduxContextValue[_, reduxLib.reduxMod.AnyAction]]
+  ] = js.undefined
+  /**
     * Computes the connector component's displayName property relative to that of the wrapped component. Usually
     * overridden by wrapper functions.
     *

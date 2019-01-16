@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-overlays"
-version := "0.8-dt-20181016Z-2eb0f5"
+version := "1.1-dt-20190115Z-2d6622"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

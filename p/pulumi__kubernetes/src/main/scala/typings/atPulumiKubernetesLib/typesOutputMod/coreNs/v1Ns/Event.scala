@@ -19,7 +19,7 @@ trait Event extends js.Object {
     * values. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
     */
-  val apiVersion: java.lang.String
+  val apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1
   /**
     * The number of times this event has occurred.
     */
@@ -42,7 +42,7 @@ trait Event extends js.Object {
     * CamelCase. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
     */
-  val kind: java.lang.String
+  val kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Event
   /**
     * The time at which the most recent occurrence of this event was recorded.
     */

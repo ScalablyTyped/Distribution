@@ -17,8 +17,10 @@ object ^ extends js.Object {
     *
     * @param base64File Optional. The base64 encoded .xlsx file. The default value is null.
     */
-  def createWorkbook(): js.Promise[js.Object] = js.native
-  def createWorkbook(base64: java.lang.String): js.Promise[js.Object] = js.native
+  def createWorkbook(): js.Promise[scala.Unit] = js.native
+  def createWorkbook(base64: java.lang.String): js.Promise[scala.Unit] = js.native
+  def getDataCommonPostprocess(response: js.Any, callArgs: js.Any): js.Any = js.native
+  def postprocessBindingDescriptor(response: js.Any): js.Any = js.native
   /**
     * Executes a batch script that performs actions on the Excel object model, using a new RequestContext. When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
     * @param batch - A function that takes in a RequestContext and returns a promise (typically, just the result of "context.sync()"). The context parameter facilitates requests to the Excel application. Since the Office add-in and the Excel application run in two different processes, the RequestContext is required to get access to the Excel object model from the add-in.
