@@ -117,6 +117,12 @@ trait VictoryPieProps
     */
   var padAngle: js.UndefOr[scala.Double] = js.undefined
   /**
+    * Specifies the radius of the chart. If this property is not provided it is computed
+    * from width, height, and padding props
+    *
+    */
+  var radius: js.UndefOr[scala.Double] = js.undefined
+  /**
     * The overall start angle of the pie in degrees. This prop is used in conjunction with
     * endAngle to create a pie that spans only a segment of a circle.
     */

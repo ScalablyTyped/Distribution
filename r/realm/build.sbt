@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "realm"
-version := "2.22.0-5405ac"
+version := "2.22.0-d62aab"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-ca4bc1",
   "org.scalablytyped" %%% "command-line-args" % "5.0-dt-20180503Z-9c2317",
   "org.scalablytyped" %%% "decompress" % "4.2-dt-20180610Z-fb7270",
-  "org.scalablytyped" %%% "deepmerge" % "3.0.0-7dc6b6",
+  "org.scalablytyped" %%% "deepmerge" % "3.1.0-627e6b",
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-efd843",
   "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20180706Z-95ed7f",
   "org.scalablytyped" %%% "ini" % "v1.3.3-dt-20181121Z-a469f4",

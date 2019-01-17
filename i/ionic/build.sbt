@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic"
-version := "4.8.0-44ad6f"
+version := "4.8.0-d62750"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-b48f67",
   "org.scalablytyped" %%% "chalk" % "2.4.2-953bc3",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-528543",
-  "org.scalablytyped" %%% "cookiejar" % "2.1-dt-20180706Z-92fbf7",
+  "org.scalablytyped" %%% "cookiejar" % "2.1-dt-20190116Z-5210b2",
   "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-315ade",
   "org.scalablytyped" %%% "diff" % "3.5-dt-20181102Z-cf9880",
   "org.scalablytyped" %%% "elementtree" % "0.1-dt-20180830Z-b0abff",
@@ -49,7 +49,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
   "org.scalablytyped" %%% "string-width" % "2.0-dt-20180530Z-e3ad98",
   "org.scalablytyped" %%% "strip-ansi" % "3.0-dt-20180214Z-4e63f4",
-  "org.scalablytyped" %%% "superagent" % "3.8-dt-20181230Z-82f639",
+  "org.scalablytyped" %%% "superagent" % "3.8-dt-20181230Z-853111",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-f611fa",
   "org.scalablytyped" %%% "tar" % "4.0-dt-20180214Z-737a3b",
   "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-48a958",

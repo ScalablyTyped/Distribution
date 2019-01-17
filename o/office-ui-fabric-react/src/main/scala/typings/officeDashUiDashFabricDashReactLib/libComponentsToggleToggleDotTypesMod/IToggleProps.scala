@@ -31,6 +31,12 @@ trait IToggleProps
     */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Whether the label (not the onText/offText) should be positioned inline with the toggle control.
+    * Left (right in RTL) side when on/off text provided VS right (left in RTL) side when no on/off text.
+    * Caution: when not providing on/off text user may get confused in differentiating the on/off states of the toggle.
+    */
+  var inlineLabel: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Optional keytip for this toggle
     */
   var keytipProps: js.UndefOr[
@@ -46,6 +52,7 @@ trait IToggleProps
   var offAriaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Text to display when toggle is OFF.
+    * Caution: when not providing on/off text user may get confused in differentiating the on/off states of the toggle.
     */
   var offText: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -69,6 +76,7 @@ trait IToggleProps
   var onChanged: js.UndefOr[js.Function1[/* checked */ scala.Boolean, scala.Unit]] = js.undefined
   /**
     * Text to display when toggle is ON.
+    * Caution: when not providing on/off text user may get confused in differentiating the on/off states of the toggle.
     */
   var onText: js.UndefOr[java.lang.String] = js.undefined
   /**

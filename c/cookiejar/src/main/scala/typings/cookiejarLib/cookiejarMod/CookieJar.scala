@@ -21,7 +21,7 @@ class CookieJar () extends js.Object {
     * grab all cookies matching this access_info
     * @param accessInfo CookieAccessInfo
     */
-  def getCookies(accessInfo: CookieAccessInfo): js.Array[Cookie] = js.native
+  def getCookies(accessInfo: CookieAccessInfo): js.Array[Cookie] with cookiejarLib.Anon_ToValueString = js.native
   def setCookie(cookie: Cookie): Cookie | cookiejarLib.cookiejarLibNumbers.`false` = js.native
   def setCookie(cookie: Cookie, requestDomain: java.lang.String): Cookie | cookiejarLib.cookiejarLibNumbers.`false` = js.native
   def setCookie(cookie: Cookie, requestDomain: java.lang.String, requestPath: java.lang.String): Cookie | cookiejarLib.cookiejarLibNumbers.`false` = js.native

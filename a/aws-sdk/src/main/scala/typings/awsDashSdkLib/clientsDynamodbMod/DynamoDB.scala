@@ -361,7 +361,7 @@ trait DynamoDB
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * 
+    * Returns the regional endpoint information.
     */
   def describeEndpoints(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DescribeEndpointsResponse, 
@@ -378,7 +378,7 @@ trait DynamoDB
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * 
+    * Returns the regional endpoint information.
     */
   def describeEndpoints(params: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DescribeEndpointsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DescribeEndpointsResponse, 

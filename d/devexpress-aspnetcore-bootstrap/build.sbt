@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "devexpress-aspnetcore-bootstrap"
-version := "181.3-dt-20180517Z-39cbdf"
+version := "181.3-dt-20180517Z-6b95b9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

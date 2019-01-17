@@ -71,10 +71,14 @@ package object reactLib {
   type HTMLUListElement = HTMLElement
   type HTMLVideoElement = HTMLElement
   type HTMLWebViewElement = HTMLElement
+  // naked 'any' type in a conditional type will short circuit and union both the then/else branches
+  // so boolean is only resolved for T = any
+  type IsExactlyAny[T] = reactLib.reactLibNumbers.`false` | reactLib.reactLibNumbers.`true`
   type KeyboardEvent = Event
-  // Declared props take priority over inferred props
+  // Try to resolve ill-defined props like for JS users: props can be any, or sometimes objects with properties of type any
+  // If props is type any, use propTypes definitions, otherwise for each `any` property of props, use the propTypes type
   // If declared props have indexed properties, ignore inferred props entirely as keyof gets widened
-  type MergePropTypes[P, T] = P with (stdLib.Pick[T, stdLib.Exclude[java.lang.String, java.lang.String]])
+  type MergePropTypes[P, T] = (reactLib.reactLibStrings.MergePropTypes with P with (stdLib.Pick[T, stdLib.Exclude[java.lang.String, java.lang.String]])) | T
   type MouseEvent = Event
   type NativeAnimationEvent = AnimationEvent
   type NativeClipboardEvent = ClipboardEvent

@@ -388,7 +388,7 @@ object CostExplorerNs extends js.Object {
       */
     var Granularity: js.UndefOr[Granularity] = js.undefined
     /**
-      * You can group the data by the following attributes:   AZ   CACHE_ENGINE   DATABASE_ENGINE   DEPLOYMENT_OPTION   INSTANCE_TYPE   LINKED_ACCOUNT   OPERATING_SYSTEM   PLATFORM   REGION   TAG   TENANCY  
+      * You can group the data by the following attributes:   AZ   CACHE_ENGINE   DATABASE_ENGINE   DEPLOYMENT_OPTION   INSTANCE_TYPE   LINKED_ACCOUNT   OPERATING_SYSTEM   PLATFORM   REGION   TENANCY  
       */
     var GroupBy: js.UndefOr[GroupDefinitions] = js.undefined
     var Metrics: js.UndefOr[MetricNames] = js.undefined

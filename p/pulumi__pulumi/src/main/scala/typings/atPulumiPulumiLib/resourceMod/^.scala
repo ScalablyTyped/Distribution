@@ -126,6 +126,8 @@ object ^ extends js.Object {
       atPulumiPulumiLib.resourceMod.Unwrap[T8]
     ]
   ] = js.native
+  def concat(params: atPulumiPulumiLib.resourceMod.Input[_]*): atPulumiPulumiLib.resourceMod.Output[java.lang.String] = js.native
+  def interpolate(literals: stdLib.TemplateStringsArray, placeholders: atPulumiPulumiLib.resourceMod.Input[_]*): atPulumiPulumiLib.resourceMod.Output[java.lang.String] = js.native
   def output[T](): atPulumiPulumiLib.resourceMod.Output[atPulumiPulumiLib.resourceMod.Unwrap[js.UndefOr[T]]] = js.native
   def output[T](`val`: atPulumiPulumiLib.resourceMod.Input[T]): atPulumiPulumiLib.resourceMod.Output[atPulumiPulumiLib.resourceMod.Unwrap[T]] = js.native
 }

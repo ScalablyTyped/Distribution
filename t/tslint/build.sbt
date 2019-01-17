@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tslint"
-version := "5.12.1-0f5b4c"
+version := "5.12.1-1d6d10"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -23,8 +23,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-f611fa",
   "org.scalablytyped" %%% "tslib" % "1.9.3-cc9481",
-  "org.scalablytyped" %%% "tsutils" % "2.29.0-1e708d",
-  "org.scalablytyped" %%% "typescript" % "3.2.2-a775a5")
+  "org.scalablytyped" %%% "tsutils" % "2.29.0-c2fe1d",
+  "org.scalablytyped" %%% "typescript" % "3.2.2-65de7b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

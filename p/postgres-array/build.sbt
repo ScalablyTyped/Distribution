@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "postgres-array"
-version := "1.0.3-972da2"
+version := "2.0.0-972da2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

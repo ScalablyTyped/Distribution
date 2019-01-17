@@ -5,6 +5,7 @@
 //                 Arne Schubert <https://github.com/atd-schubert>
 //                 Jeff Jacobson <https://github.com/JeffJacobson>
 //                 Ilia Choly <https://github.com/icholy>
+//                 Dan Vanderkam <https://github.com/danvk>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 // Note: as of the RFC 7946 version of GeoJSON, Coordinate Reference Systems

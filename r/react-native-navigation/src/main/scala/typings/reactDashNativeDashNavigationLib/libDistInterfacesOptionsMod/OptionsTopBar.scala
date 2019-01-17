@@ -56,6 +56,11 @@ trait OptionsTopBar extends js.Object {
     */
   var height: js.UndefOr[AndroidDensityNumber] = js.undefined
   /**
+    * Controls Hiding NavBar on focus UISearchBar
+    * #### (iOS 11+ specific)
+    */
+  var hideNavBarOnFocusSearchBar: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Top bar will hide and show based on users scroll direction
     */
   var hideOnScroll: js.UndefOr[scala.Boolean] = js.undefined

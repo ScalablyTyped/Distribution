@@ -21,7 +21,7 @@ trait ISpinnerProps
     * @default "div"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ java.lang.String
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ java.lang.String
   ] = js.undefined
   /**
     * A value between 0 and 1 (inclusive) representing how far along the operation is.

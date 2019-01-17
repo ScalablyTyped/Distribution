@@ -78,15 +78,6 @@ class BootstrapSparkline () extends Control {
     ]
   ): this.type = js.native
   @JSName("off")
-  def off_init(
-    eventName: devexpressDashAspnetcoreDashBootstrapLib.devexpressDashAspnetcoreDashBootstrapLibStrings.init,
-    callback: js.ThisFunction1[
-      /* this */ this.type, 
-      /* args */ js.UndefOr[BootstrapChartEventArgsBase | EventArgs], 
-      scala.Unit
-    ]
-  ): this.type = js.native
-  @JSName("off")
   def off_optionChanged(
     eventName: devexpressDashAspnetcoreDashBootstrapLib.devexpressDashAspnetcoreDashBootstrapLibStrings.optionChanged
   ): this.type = js.native
@@ -160,15 +151,6 @@ class BootstrapSparkline () extends Control {
     ]
   ): this.type = js.native
   @JSName("on")
-  def on_init(
-    eventName: devexpressDashAspnetcoreDashBootstrapLib.devexpressDashAspnetcoreDashBootstrapLibStrings.init,
-    callback: js.ThisFunction1[
-      /* this */ this.type, 
-      /* args */ js.UndefOr[BootstrapChartEventArgsBase | EventArgs], 
-      scala.Unit
-    ]
-  ): this.type = js.native
-  @JSName("on")
   def on_optionChanged(
     eventName: devexpressDashAspnetcoreDashBootstrapLib.devexpressDashAspnetcoreDashBootstrapLibStrings.optionChanged,
     callback: js.ThisFunction1[
@@ -226,15 +208,6 @@ class BootstrapSparkline () extends Control {
     callback: js.ThisFunction1[
       /* this */ this.type, 
       /* args */ js.UndefOr[BootstrapChartErrorEventArgs], 
-      scala.Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_init(
-    eventName: devexpressDashAspnetcoreDashBootstrapLib.devexpressDashAspnetcoreDashBootstrapLibStrings.init,
-    callback: js.ThisFunction1[
-      /* this */ this.type, 
-      /* args */ js.UndefOr[BootstrapChartEventArgsBase | EventArgs], 
       scala.Unit
     ]
   ): this.type = js.native

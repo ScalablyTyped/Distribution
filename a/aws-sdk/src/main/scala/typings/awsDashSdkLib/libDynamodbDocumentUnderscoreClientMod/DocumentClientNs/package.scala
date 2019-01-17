@@ -22,8 +22,8 @@ package object DocumentClientNs {
   type BackupSizeBytes = scala.Double
   type BackupStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | java.lang.String
   type BackupSummaries = js.Array[BackupSummary]
-  type BackupType = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | java.lang.String
-  type BackupTypeFilter = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
+  type BackupType = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.AWS_BACKUP | java.lang.String
+  type BackupTypeFilter = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.AWS_BACKUP | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
   type BackupsInputLimit = scala.Double
   type BillingMode = awsDashSdkLib.awsDashSdkLibStrings.PROVISIONED | awsDashSdkLib.awsDashSdkLibStrings.PAY_PER_REQUEST | java.lang.String
   type BinaryAttributeValue = nodeLib.Buffer | stdLib.Uint8Array | Blob | java.lang.String

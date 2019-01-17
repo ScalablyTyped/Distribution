@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Point extends GeometryObject {
+trait Point extends GeoJsonObject {
   var coordinates: Position
   @JSName("type")
   var type_Point: geojsonLib.geojsonLibStrings.Point

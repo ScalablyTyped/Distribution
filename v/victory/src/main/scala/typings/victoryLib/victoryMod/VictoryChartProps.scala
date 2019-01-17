@@ -77,6 +77,6 @@ trait VictoryChartProps extends VictoryCommonProps {
     * components within chart.
     * @example {border: "1px solid #ccc", margin: "2%", maxWidth: "40%"}
     */
-  var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var style: js.UndefOr[stdLib.Pick[VictoryStyleInterface, victoryLib.victoryLibStrings.parent]] = js.undefined
 }
 

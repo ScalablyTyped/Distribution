@@ -71,10 +71,11 @@ trait AnalyticsJS extends js.Object {
     identify, track or page. That way you can listen to those events and run
     your own custom code. */
   def on(event: java.lang.String, callback: segmentDashAnalyticsLib.Anon_Event): scala.Unit = js.native
-  def page(): scala.Unit = js.native
-  def page(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /* The page method lets you record page views on your website, along with
     optional extra information about the page being viewed. */
+  def page(): scala.Unit = js.native
+  def page(callback: js.Function0[scala.Unit]): scala.Unit = js.native
+  def page(category: java.lang.String): scala.Unit = js.native
   def page(category: java.lang.String, name: java.lang.String): scala.Unit = js.native
   def page(category: java.lang.String, name: java.lang.String, properties: js.Object): scala.Unit = js.native
   def page(category: java.lang.String, name: java.lang.String, properties: js.Object, options: SegmentOpts): scala.Unit = js.native
@@ -85,7 +86,6 @@ trait AnalyticsJS extends js.Object {
     options: SegmentOpts,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
-  def page(name: java.lang.String): scala.Unit = js.native
   def page(name: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def page(name: java.lang.String, properties: js.Object): scala.Unit = js.native
   def page(name: java.lang.String, properties: js.Object, callback: js.Function0[scala.Unit]): scala.Unit = js.native

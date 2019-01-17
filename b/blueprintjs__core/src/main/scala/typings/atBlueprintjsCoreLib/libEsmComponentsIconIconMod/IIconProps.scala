@@ -52,7 +52,7 @@ trait IIconProps
     * @default "span"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ java.lang.String
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ java.lang.String
   ] = js.undefined
   /**
     * Description string. This string does not appear in normal browsers, but

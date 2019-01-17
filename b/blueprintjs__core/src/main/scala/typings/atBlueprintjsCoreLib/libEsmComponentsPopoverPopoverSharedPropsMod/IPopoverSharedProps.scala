@@ -112,7 +112,7 @@ trait IPopoverSharedProps
     * @default "span"
     */
   var targetTagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ java.lang.String
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ java.lang.String
   ] = js.undefined
   /**
     * HTML tag name for the wrapper element, which also receives the
@@ -120,7 +120,7 @@ trait IPopoverSharedProps
     * @default "span"
     */
   var wrapperTagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ java.lang.String
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ java.lang.String
   ] = js.undefined
 }
 

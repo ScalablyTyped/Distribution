@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Type[A, O, I] protected ()
   extends Decoder[I, A]
      with Encoder[A, O] {
-  def this(/** a unique name for this runtime type */
+  def this(/** a unique name for this codec */
   name: java.lang.String, /** a custom type guard */
   is: Is[A], /** succeeds if a value of type I can be decoded to a value of type A */
   validate: Validate[I, A], /** converts a value of type A to a value of type O */

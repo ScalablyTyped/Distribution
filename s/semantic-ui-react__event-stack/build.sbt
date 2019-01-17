@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-react__event-stack"
-version := "3.0.1-122939"
+version := "3.0.1-706e8d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "exenv" % "1.2-dt-20180321Z-f1069b",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2be335",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-692895",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-e34099",
-  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-552d91",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-334a51",
+  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-557855",
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

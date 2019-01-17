@@ -13,6 +13,7 @@ class Router protected () extends js.Object {
     */
   def this(rootComponentType: atAngularCoreLib.srcTypeMod.Type[_], urlSerializer: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlSerializer, rootContexts: atAngularRouterLib.srcRouterUnderscoreOutletUnderscoreContextMod.ChildrenOutletContexts, location: atAngularCommonLib.atAngularCommonMod.Location, injector: atAngularCoreLib.atAngularCoreMod.Injector, loader: atAngularCoreLib.atAngularCoreMod.NgModuleFactoryLoader, compiler: atAngularCoreLib.atAngularCoreMod.Compiler, config: atAngularRouterLib.srcConfigMod.Routes) = this()
   def this(rootComponentType: scala.Null, urlSerializer: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlSerializer, rootContexts: atAngularRouterLib.srcRouterUnderscoreOutletUnderscoreContextMod.ChildrenOutletContexts, location: atAngularCommonLib.atAngularCommonMod.Location, injector: atAngularCoreLib.atAngularCoreMod.Injector, loader: atAngularCoreLib.atAngularCoreMod.NgModuleFactoryLoader, compiler: atAngularCoreLib.atAngularCoreMod.Compiler, config: atAngularRouterLib.srcConfigMod.Routes) = this()
+  var browserUrlTree: js.Any = js.native
   var config: atAngularRouterLib.srcConfigMod.Routes = js.native
   var configLoader: js.Any = js.native
   var console: js.Any = js.native

@@ -485,30 +485,18 @@ class HTMLWebViewElement () extends HTMLElement {
   @JSName("addEventListener")
   def addEventListener_close(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.close,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.CloseEvent) | (/* ev */ stdLib.Event), 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ chromeDashAppsLib.WebViewNs.EventsNs.CloseEvent, _]
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_close(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.close,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.CloseEvent) | (/* ev */ stdLib.Event), 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ chromeDashAppsLib.WebViewNs.EventsNs.CloseEvent, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_close(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.close,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.CloseEvent) | (/* ev */ stdLib.Event), 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ chromeDashAppsLib.WebViewNs.EventsNs.CloseEvent, _],
     options: stdLib.AddEventListenerOptions
   ): scala.Unit = js.native
   @JSName("addEventListener")
@@ -1234,7 +1222,7 @@ class HTMLWebViewElement () extends HTMLElement {
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.loadstart,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      (/* ev */ stdLib.Event) | (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent), 
+      /* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent, 
       _
     ]
   ): scala.Unit = js.native
@@ -1243,7 +1231,7 @@ class HTMLWebViewElement () extends HTMLElement {
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.loadstart,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      (/* ev */ stdLib.Event) | (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent), 
+      /* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent, 
       _
     ],
     options: scala.Boolean
@@ -1253,7 +1241,7 @@ class HTMLWebViewElement () extends HTMLElement {
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.loadstart,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      (/* ev */ stdLib.Event) | (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent), 
+      /* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent, 
       _
     ],
     options: stdLib.AddEventListenerOptions
@@ -2635,30 +2623,18 @@ class HTMLWebViewElement () extends HTMLElement {
   @JSName("removeEventListener")
   def removeEventListener_close(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.close,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.CloseEvent) | (/* ev */ stdLib.Event), 
-      _
-    ]
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ chromeDashAppsLib.WebViewNs.EventsNs.CloseEvent, _]
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.close,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.CloseEvent) | (/* ev */ stdLib.Event), 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ chromeDashAppsLib.WebViewNs.EventsNs.CloseEvent, _],
     options: scala.Boolean
   ): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_close(
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.close,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.CloseEvent) | (/* ev */ stdLib.Event), 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ chromeDashAppsLib.WebViewNs.EventsNs.CloseEvent, _],
     options: stdLib.EventListenerOptions
   ): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -3384,7 +3360,7 @@ class HTMLWebViewElement () extends HTMLElement {
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.loadstart,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      (/* ev */ stdLib.Event) | (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent), 
+      /* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent, 
       _
     ]
   ): scala.Unit = js.native
@@ -3393,7 +3369,7 @@ class HTMLWebViewElement () extends HTMLElement {
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.loadstart,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      (/* ev */ stdLib.Event) | (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent), 
+      /* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent, 
       _
     ],
     options: scala.Boolean
@@ -3403,7 +3379,7 @@ class HTMLWebViewElement () extends HTMLElement {
     `type`: chromeDashAppsLib.chromeDashAppsLibStrings.loadstart,
     listener: js.ThisFunction1[
       /* this */ HTMLElement, 
-      (/* ev */ stdLib.Event) | (/* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent), 
+      /* ev */ chromeDashAppsLib.WebViewNs.EventsNs.LoadStartEvent, 
       _
     ],
     options: stdLib.EventListenerOptions

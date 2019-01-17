@@ -24,6 +24,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var athena: js.UndefOr[awsDashSdkLib.clientsAthenaMod.AthenaNs.apiVersion] = js.undefined
   var autoscaling: js.UndefOr[awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.apiVersion] = js.undefined
   var autoscalingplans: js.UndefOr[awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.apiVersion] = js.undefined
+  var backup: js.UndefOr[awsDashSdkLib.clientsBackupMod.BackupNs.apiVersion] = js.undefined
   var batch: js.UndefOr[awsDashSdkLib.clientsBatchMod.BatchNs.apiVersion] = js.undefined
   var budgets: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.Budgets.Types.apiVersion */ js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.Budgets.Types.apiVersion */ js.Any

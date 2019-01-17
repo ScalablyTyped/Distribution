@@ -27,8 +27,8 @@ class EventEmitter[T] ()
     */
   def emit(): scala.Unit = js.native
   def emit(value: T): scala.Unit = js.native
-  def subscribe(generatorOrNext: js.Any): js.Any = js.native
-  def subscribe(generatorOrNext: js.Any, error: js.Any): js.Any = js.native
-  def subscribe(generatorOrNext: js.Any, error: js.Any, complete: js.Any): js.Any = js.native
+  def subscribe(generatorOrNext: js.Any): rxjsLib.rxjsMod.Subscription = js.native
+  def subscribe(generatorOrNext: js.Any, error: js.Any): rxjsLib.rxjsMod.Subscription = js.native
+  def subscribe(generatorOrNext: js.Any, error: js.Any, complete: js.Any): rxjsLib.rxjsMod.Subscription = js.native
 }
 

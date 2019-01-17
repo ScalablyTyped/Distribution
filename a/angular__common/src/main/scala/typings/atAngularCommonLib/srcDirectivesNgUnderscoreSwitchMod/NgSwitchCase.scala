@@ -12,6 +12,9 @@ class NgSwitchCase protected ()
   def this(viewContainer: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, templateRef: atAngularCoreLib.atAngularCoreMod.TemplateRef[js.Object], ngSwitch: NgSwitch) = this()
   var _view: js.Any = js.native
   var ngSwitch: js.Any = js.native
+  /**
+    * Stores the HTML template to be selected on match.
+    */
   var ngSwitchCase: js.Any = js.native
   /**
     * A callback method that performs change-detection, invoked

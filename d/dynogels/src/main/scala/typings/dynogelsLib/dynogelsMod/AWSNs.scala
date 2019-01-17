@@ -142,6 +142,15 @@ object AWSNs extends js.Object {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
+  class Backup ()
+    extends awsDashSdkLib.awsDashSdkMod.Backup {
+    def this(options: awsDashSdkLib.clientsBackupMod.BackupNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Batch ()
     extends awsDashSdkLib.awsDashSdkMod.Batch {
     def this(options: awsDashSdkLib.clientsBatchMod.BatchNs.ClientConfiguration) = this()
@@ -2059,6 +2068,27 @@ object AWSNs extends js.Object {
     @JSName("AutoScalingPlans")
     @js.native
     object AutoScalingPlansNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("Backup")
+  @js.native
+  object BackupNs extends js.Object {
+    @js.native
+    /**
+      * Constructs a service object. This object has one method for each API operation.
+      */
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.BackupNs.Types {
+      def this(options: awsDashSdkLib.clientsBackupMod.BackupNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("Backup")
+    @js.native
+    object BackupNs extends js.Object {
       val TypesNs: this.type = js.native
     }
     

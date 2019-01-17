@@ -39,7 +39,7 @@ object DynamoDBNs extends js.Object {
       */
     var BS: js.UndefOr[BinarySetAttributeValue] = js.undefined
     /**
-      * An attribute of type List. For example:  "L": ["Cookies", "Coffee", 3.14159] 
+      * An attribute of type List. For example:  "L": [ {"S": "Cookies"} , {"S": "Coffee"}, {"N", "3.14159"}] 
       */
     var L: js.UndefOr[ListAttributeValue] = js.undefined
     /**
@@ -226,7 +226,7 @@ object DynamoDBNs extends js.Object {
       */
     var BackupStatus: BackupStatus
     /**
-      * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.   
+      * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.     AWS_BACKUP - On-demand backup created by you from AWS Backup service.  
       */
     var BackupType: BackupType
   }
@@ -257,7 +257,7 @@ object DynamoDBNs extends js.Object {
       */
     var BackupStatus: js.UndefOr[BackupStatus] = js.undefined
     /**
-      * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.   
+      * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.     AWS_BACKUP - On-demand backup created by you from AWS Backup service.  
       */
     var BackupType: js.UndefOr[BackupType] = js.undefined
     /**
@@ -521,7 +521,7 @@ object DynamoDBNs extends js.Object {
       */
     var BillingMode: js.UndefOr[BillingMode] = js.undefined
     /**
-      * One or more global secondary indexes (the maximum is five) to be created on the table. Each global secondary index in the array includes the following:    IndexName - The name of the global secondary index. Must be unique only for this table.     KeySchema - Specifies the key schema for the global secondary index.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - Only the specified table attributes are projected into the index. The list of projected attributes are in NonKeyAttributes.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 20. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.      ProvisionedThroughput - The provisioned throughput settings for the global secondary index, consisting of read and write capacity units.  
+      * One or more global secondary indexes (the maximum is 20) to be created on the table. Each global secondary index in the array includes the following:    IndexName - The name of the global secondary index. Must be unique only for this table.     KeySchema - Specifies the key schema for the global secondary index.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - Only the specified table attributes are projected into the index. The list of projected attributes are in NonKeyAttributes.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 100. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.      ProvisionedThroughput - The provisioned throughput settings for the global secondary index, consisting of read and write capacity units.  
       */
     var GlobalSecondaryIndexes: js.UndefOr[GlobalSecondaryIndexList] = js.undefined
     /**
@@ -529,7 +529,7 @@ object DynamoDBNs extends js.Object {
       */
     var KeySchema: KeySchema
     /**
-      * One or more local secondary indexes (the maximum is five) to be created on the table. Each index is scoped to a given partition key value. There is a 10 GB size limit per partition key value; otherwise, the size of a local secondary index is unconstrained. Each local secondary index in the array includes the following:    IndexName - The name of the local secondary index. Must be unique only for this table.     KeySchema - Specifies the key schema for the local secondary index. The key schema must begin with the same partition key as the table.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - Only the specified table attributes are projected into the index. The list of projected attributes are in NonKeyAttributes.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 20. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.    
+      * One or more local secondary indexes (the maximum is 5) to be created on the table. Each index is scoped to a given partition key value. There is a 10 GB size limit per partition key value; otherwise, the size of a local secondary index is unconstrained. Each local secondary index in the array includes the following:    IndexName - The name of the local secondary index. Must be unique only for this table.     KeySchema - Specifies the key schema for the local secondary index. The key schema must begin with the same partition key as the table.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - Only the specified table attributes are projected into the index. The list of projected attributes are in NonKeyAttributes.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 100. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.    
       */
     var LocalSecondaryIndexes: js.UndefOr[LocalSecondaryIndexList] = js.undefined
     /**
@@ -719,6 +719,9 @@ object DynamoDBNs extends js.Object {
   trait DescribeEndpointsRequest extends js.Object
   
   trait DescribeEndpointsResponse extends js.Object {
+    /**
+      * List of endpoints.
+      */
     var Endpoints: Endpoints
   }
   
@@ -1010,7 +1013,13 @@ object DynamoDBNs extends js.Object {
   }
   
   trait Endpoint extends js.Object {
+    /**
+      * IP address of the endpoint.
+      */
     var Address: String
+    /**
+      * Endpoint cache time to live (TTL) value.
+      */
     var CachePeriodInMinutes: Long
   }
   
@@ -2533,7 +2542,7 @@ object DynamoDBNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeContinuousBackupsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * 
+      * Returns the regional endpoint information.
       */
     def describeEndpoints(): awsDashSdkLib.libRequestMod.Request[DescribeEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeEndpoints(
@@ -2544,7 +2553,7 @@ object DynamoDBNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * 
+      * Returns the regional endpoint information.
       */
     def describeEndpoints(params: DescribeEndpointsRequest): awsDashSdkLib.libRequestMod.Request[DescribeEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeEndpoints(
@@ -3663,7 +3672,7 @@ object DynamoDBNs extends js.Object {
         */
       var BackupStatus: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.BackupStatus
       /**
-        * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.   
+        * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.     AWS_BACKUP - On-demand backup created by you from AWS Backup service.  
         */
       var BackupType: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.BackupType
     }
@@ -3700,7 +3709,7 @@ object DynamoDBNs extends js.Object {
             awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.BackupStatus
           ] = js.undefined
       /**
-        * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.   
+        * BackupType:    USER - You create and manage these using the on-demand backup feature.    SYSTEM - If you delete a table with point-in-time recovery enabled, a SYSTEM backup is automatically created and is retained for 35 days (at no additional cost). System backups allow you to restore the deleted table to the state it was in just before the point of deletion.     AWS_BACKUP - On-demand backup created by you from AWS Backup service.  
         */
       var BackupType: js.UndefOr[awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.BackupType] = js.undefined
       /**
@@ -4041,7 +4050,7 @@ object DynamoDBNs extends js.Object {
             awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.BillingMode
           ] = js.undefined
       /**
-        * One or more global secondary indexes (the maximum is five) to be created on the table. Each global secondary index in the array includes the following:    IndexName - The name of the global secondary index. Must be unique only for this table.     KeySchema - Specifies the key schema for the global secondary index.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - Only the specified table attributes are projected into the index. The list of projected attributes are in NonKeyAttributes.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 20. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.      ProvisionedThroughput - The provisioned throughput settings for the global secondary index, consisting of read and write capacity units.  
+        * One or more global secondary indexes (the maximum is 20) to be created on the table. Each global secondary index in the array includes the following:    IndexName - The name of the global secondary index. Must be unique only for this table.     KeySchema - Specifies the key schema for the global secondary index.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - Only the specified table attributes are projected into the index. The list of projected attributes are in NonKeyAttributes.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 100. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.      ProvisionedThroughput - The provisioned throughput settings for the global secondary index, consisting of read and write capacity units.  
         */
       var GlobalSecondaryIndexes: js.UndefOr[
             awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.GlobalSecondaryIndexList
@@ -4051,7 +4060,7 @@ object DynamoDBNs extends js.Object {
         */
       var KeySchema: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.KeySchema
       /**
-        * One or more local secondary indexes (the maximum is five) to be created on the table. Each index is scoped to a given partition key value. There is a 10 GB size limit per partition key value; otherwise, the size of a local secondary index is unconstrained. Each local secondary index in the array includes the following:    IndexName - The name of the local secondary index. Must be unique only for this table.     KeySchema - Specifies the key schema for the local secondary index. The key schema must begin with the same partition key as the table.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - Only the specified table attributes are projected into the index. The list of projected attributes are in NonKeyAttributes.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 20. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.    
+        * One or more local secondary indexes (the maximum is 5) to be created on the table. Each index is scoped to a given partition key value. There is a 10 GB size limit per partition key value; otherwise, the size of a local secondary index is unconstrained. Each local secondary index in the array includes the following:    IndexName - The name of the local secondary index. Must be unique only for this table.     KeySchema - Specifies the key schema for the local secondary index. The key schema must begin with the same partition key as the table.    Projection - Specifies attributes that are copied (projected) from the table into the index. These are in addition to the primary key attributes and index key attributes, which are automatically projected. Each attribute specification is composed of:    ProjectionType - One of the following:    KEYS_ONLY - Only the index and primary keys are projected into the index.    INCLUDE - Only the specified table attributes are projected into the index. The list of projected attributes are in NonKeyAttributes.    ALL - All of the table attributes are projected into the index.      NonKeyAttributes - A list of one or more non-key attribute names that are projected into the secondary index. The total count of attributes provided in NonKeyAttributes, summed across all of the secondary indexes, must not exceed 100. If you project the same attribute into two different indexes, this counts as two distinct attributes when determining the total.    
         */
       var LocalSecondaryIndexes: js.UndefOr[
             awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.LocalSecondaryIndexList
@@ -4289,6 +4298,9 @@ object DynamoDBNs extends js.Object {
     trait DescribeEndpointsRequest extends js.Object
     
     trait DescribeEndpointsResponse extends js.Object {
+      /**
+        * List of endpoints.
+        */
       var Endpoints: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Endpoints
     }
     
@@ -4402,7 +4414,13 @@ object DynamoDBNs extends js.Object {
     }
     
     trait Endpoint extends js.Object {
+      /**
+        * IP address of the endpoint.
+        */
       var Address: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.String
+      /**
+        * Endpoint cache time to live (TTL) value.
+        */
       var CachePeriodInMinutes: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Long
     }
     
@@ -6356,8 +6374,8 @@ object DynamoDBNs extends js.Object {
     type BackupSummaries = js.Array[
         awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.BackupSummary
       ]
-    type BackupType = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | java.lang.String
-    type BackupTypeFilter = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
+    type BackupType = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.AWS_BACKUP | java.lang.String
+    type BackupTypeFilter = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.AWS_BACKUP | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
     type BackupsInputLimit = scala.Double
     type BillingMode = awsDashSdkLib.awsDashSdkLibStrings.PROVISIONED | awsDashSdkLib.awsDashSdkLibStrings.PAY_PER_REQUEST | java.lang.String
     type BinaryAttributeValue = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.Blob | java.lang.String
@@ -6546,8 +6564,8 @@ object DynamoDBNs extends js.Object {
   type BackupSizeBytes = scala.Double
   type BackupStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | java.lang.String
   type BackupSummaries = js.Array[BackupSummary]
-  type BackupType = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | java.lang.String
-  type BackupTypeFilter = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
+  type BackupType = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.AWS_BACKUP | java.lang.String
+  type BackupTypeFilter = awsDashSdkLib.awsDashSdkLibStrings.USER | awsDashSdkLib.awsDashSdkLibStrings.SYSTEM | awsDashSdkLib.awsDashSdkLibStrings.AWS_BACKUP | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
   type BackupsInputLimit = scala.Double
   type BillingMode = awsDashSdkLib.awsDashSdkLibStrings.PROVISIONED | awsDashSdkLib.awsDashSdkLibStrings.PAY_PER_REQUEST | java.lang.String
   type BinaryAttributeValue = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsDynamodbMod.Blob | java.lang.String

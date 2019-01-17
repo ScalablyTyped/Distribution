@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Feature[G /* <: GeometryObject | scala.Null */, P] extends GeoJsonObject {
+trait Feature[G /* <: Geometry | scala.Null */, P] extends GeoJsonObject {
   /**
     * The feature's geometry
     */

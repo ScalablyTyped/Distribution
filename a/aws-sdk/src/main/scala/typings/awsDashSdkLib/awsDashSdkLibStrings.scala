@@ -559,6 +559,9 @@ object awsDashSdkLibStrings {
   sealed trait `2018-11-14` extends js.Object
   
   @js.native
+  sealed trait `2018-11-15` extends js.Object
+  
+  @js.native
   sealed trait `2018-11-29` extends js.Object
   
   @js.native
@@ -596,6 +599,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait ABORTED extends js.Object
+  
+  @js.native
+  sealed trait ABORTING extends js.Object
   
   @js.native
   sealed trait ABSOLUTE extends js.Object
@@ -1333,6 +1339,9 @@ object awsDashSdkLibStrings {
   sealed trait AWSWAF extends js.Object
   
   @js.native
+  sealed trait AWS_BACKUP extends js.Object
+  
+  @js.native
   sealed trait AWS_CLOUDHSM extends js.Object
   
   @js.native
@@ -1652,6 +1661,18 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait BACKING_UP extends js.Object
+  
+  @js.native
+  sealed trait BACKUP_JOB_COMPLETED extends js.Object
+  
+  @js.native
+  sealed trait BACKUP_JOB_STARTED extends js.Object
+  
+  @js.native
+  sealed trait BACKUP_PLAN_CREATED extends js.Object
+  
+  @js.native
+  sealed trait BACKUP_PLAN_MODIFIED extends js.Object
   
   @js.native
   sealed trait BAD_REQUEST_BODY extends js.Object
@@ -2204,6 +2225,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait COIN_MINER extends js.Object
+  
+  @js.native
+  sealed trait COLD extends js.Object
   
   @js.native
   sealed trait COLLECTING_DATA extends js.Object
@@ -7375,6 +7399,9 @@ object awsDashSdkLibStrings {
   sealed trait PART extends js.Object
   
   @js.native
+  sealed trait PARTIAL extends js.Object
+  
+  @js.native
   sealed trait PARTIAL_UPFRONT extends js.Object
   
   @js.native
@@ -8116,6 +8143,9 @@ object awsDashSdkLibStrings {
   sealed trait RECOVERING extends js.Object
   
   @js.native
+  sealed trait RECOVERY_POINT_MODIFIED extends js.Object
+  
+  @js.native
   sealed trait RECURRING extends js.Object
   
   @js.native
@@ -8384,6 +8414,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait RESTORE_FROM_LATEST_SNAPSHOT extends js.Object
+  
+  @js.native
+  sealed trait RESTORE_JOB_COMPLETED extends js.Object
+  
+  @js.native
+  sealed trait RESTORE_JOB_STARTED extends js.Object
   
   @js.native
   sealed trait RESTORING extends js.Object
@@ -9455,6 +9491,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait STRING extends js.Object
+  
+  @js.native
+  sealed trait STRINGEQUALS extends js.Object
   
   @js.native
   sealed trait STRING_FROM_SET extends js.Object
@@ -11027,6 +11066,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait WAIT_FOR_SERVER extends js.Object
+  
+  @js.native
+  sealed trait WARM extends js.Object
   
   @js.native
   sealed trait WARN extends js.Object
@@ -14623,6 +14665,7 @@ object awsDashSdkLibStrings {
   def `2018-11-05`: `2018-11-05` = "2018-11-05".asInstanceOf[`2018-11-05`]
   def `2018-11-09`: `2018-11-09` = "2018-11-09".asInstanceOf[`2018-11-09`]
   def `2018-11-14`: `2018-11-14` = "2018-11-14".asInstanceOf[`2018-11-14`]
+  def `2018-11-15`: `2018-11-15` = "2018-11-15".asInstanceOf[`2018-11-15`]
   def `2018-11-29`: `2018-11-29` = "2018-11-29".asInstanceOf[`2018-11-29`]
   def `237`: `237` = "237".asInstanceOf[`237`]
   def `28DOT4`: `28DOT4` = "28.4".asInstanceOf[`28DOT4`]
@@ -14636,6 +14679,7 @@ object awsDashSdkLibStrings {
   def ABANDON: ABANDON = "ABANDON".asInstanceOf[ABANDON]
   def ABANDON_TIME: ABANDON_TIME = "ABANDON_TIME".asInstanceOf[ABANDON_TIME]
   def ABORTED: ABORTED = "ABORTED".asInstanceOf[ABORTED]
+  def ABORTING: ABORTING = "ABORTING".asInstanceOf[ABORTING]
   def ABSOLUTE: ABSOLUTE = "ABSOLUTE".asInstanceOf[ABSOLUTE]
   def ABSOLUTE_VALUE: ABSOLUTE_VALUE = "ABSOLUTE_VALUE".asInstanceOf[ABSOLUTE_VALUE]
   def AC3: AC3 = "AC3".asInstanceOf[AC3]
@@ -14881,6 +14925,7 @@ object awsDashSdkLibStrings {
   def AWSIoT: AWSIoT = "AWSIoT".asInstanceOf[AWSIoT]
   def AWSManagedPolicy: AWSManagedPolicy = "AWSManagedPolicy".asInstanceOf[AWSManagedPolicy]
   def AWSWAF: AWSWAF = "AWSWAF".asInstanceOf[AWSWAF]
+  def AWS_BACKUP: AWS_BACKUP = "AWS_BACKUP".asInstanceOf[AWS_BACKUP]
   def AWS_CLOUDHSM: AWS_CLOUDHSM = "AWS_CLOUDHSM".asInstanceOf[AWS_CLOUDHSM]
   def AWS_IAM: AWS_IAM = "AWS_IAM".asInstanceOf[AWS_IAM]
   def AWS_KMS: AWS_KMS = "AWS_KMS".asInstanceOf[AWS_KMS]
@@ -14988,6 +15033,10 @@ object awsDashSdkLibStrings {
   def B: B = "B".asInstanceOf[B]
   def BACKDOOR: BACKDOOR = "BACKDOOR".asInstanceOf[BACKDOOR]
   def BACKING_UP: BACKING_UP = "BACKING_UP".asInstanceOf[BACKING_UP]
+  def BACKUP_JOB_COMPLETED: BACKUP_JOB_COMPLETED = "BACKUP_JOB_COMPLETED".asInstanceOf[BACKUP_JOB_COMPLETED]
+  def BACKUP_JOB_STARTED: BACKUP_JOB_STARTED = "BACKUP_JOB_STARTED".asInstanceOf[BACKUP_JOB_STARTED]
+  def BACKUP_PLAN_CREATED: BACKUP_PLAN_CREATED = "BACKUP_PLAN_CREATED".asInstanceOf[BACKUP_PLAN_CREATED]
+  def BACKUP_PLAN_MODIFIED: BACKUP_PLAN_MODIFIED = "BACKUP_PLAN_MODIFIED".asInstanceOf[BACKUP_PLAN_MODIFIED]
   def BAD_REQUEST_BODY: BAD_REQUEST_BODY = "BAD_REQUEST_BODY".asInstanceOf[BAD_REQUEST_BODY]
   def BAD_REQUEST_PARAMETERS: BAD_REQUEST_PARAMETERS = "BAD_REQUEST_PARAMETERS".asInstanceOf[BAD_REQUEST_PARAMETERS]
   def BAIDU: BAIDU = "BAIDU".asInstanceOf[BAIDU]
@@ -15172,6 +15221,7 @@ object awsDashSdkLibStrings {
   def COGNITO_IDENTITY_POOL: COGNITO_IDENTITY_POOL = "COGNITO_IDENTITY_POOL".asInstanceOf[COGNITO_IDENTITY_POOL]
   def COGNITO_USER_POOLS: COGNITO_USER_POOLS = "COGNITO_USER_POOLS".asInstanceOf[COGNITO_USER_POOLS]
   def COIN_MINER: COIN_MINER = "COIN_MINER".asInstanceOf[COIN_MINER]
+  def COLD: COLD = "COLD".asInstanceOf[COLD]
   def COLLECTING_DATA: COLLECTING_DATA = "COLLECTING_DATA".asInstanceOf[COLLECTING_DATA]
   def COLOR: COLOR = "COLOR".asInstanceOf[COLOR]
   def COLUMN: COLUMN = "COLUMN".asInstanceOf[COLUMN]
@@ -16895,6 +16945,7 @@ object awsDashSdkLibStrings {
   def PARENT_HANDSHAKE: PARENT_HANDSHAKE = "PARENT_HANDSHAKE".asInstanceOf[PARENT_HANDSHAKE]
   def PARSING_FAILED: PARSING_FAILED = "PARSING_FAILED".asInstanceOf[PARSING_FAILED]
   def PART: PART = "PART".asInstanceOf[PART]
+  def PARTIAL: PARTIAL = "PARTIAL".asInstanceOf[PARTIAL]
   def PARTIAL_UPFRONT: PARTIAL_UPFRONT = "PARTIAL_UPFRONT".asInstanceOf[PARTIAL_UPFRONT]
   def PASSED: PASSED = "PASSED".asInstanceOf[PASSED]
   def PASSTHROUGH: PASSTHROUGH = "PASSTHROUGH".asInstanceOf[PASSTHROUGH]
@@ -17142,6 +17193,7 @@ object awsDashSdkLibStrings {
   def RECEIVE: RECEIVE = "RECEIVE".asInstanceOf[RECEIVE]
   def RECORD_TYPE: RECORD_TYPE = "RECORD_TYPE".asInstanceOf[RECORD_TYPE]
   def RECOVERING: RECOVERING = "RECOVERING".asInstanceOf[RECOVERING]
+  def RECOVERY_POINT_MODIFIED: RECOVERY_POINT_MODIFIED = "RECOVERY_POINT_MODIFIED".asInstanceOf[RECOVERY_POINT_MODIFIED]
   def RECURRING: RECURRING = "RECURRING".asInstanceOf[RECURRING]
   def RECURSIVE: RECURSIVE = "RECURSIVE".asInstanceOf[RECURSIVE]
   def RECYCLED: RECYCLED = "RECYCLED".asInstanceOf[RECYCLED]
@@ -17232,6 +17284,8 @@ object awsDashSdkLibStrings {
   def RESPONSE_HEADER: RESPONSE_HEADER = "RESPONSE_HEADER".asInstanceOf[RESPONSE_HEADER]
   def RESTORE_FROM_CUSTOM_SNAPSHOT: RESTORE_FROM_CUSTOM_SNAPSHOT = "RESTORE_FROM_CUSTOM_SNAPSHOT".asInstanceOf[RESTORE_FROM_CUSTOM_SNAPSHOT]
   def RESTORE_FROM_LATEST_SNAPSHOT: RESTORE_FROM_LATEST_SNAPSHOT = "RESTORE_FROM_LATEST_SNAPSHOT".asInstanceOf[RESTORE_FROM_LATEST_SNAPSHOT]
+  def RESTORE_JOB_COMPLETED: RESTORE_JOB_COMPLETED = "RESTORE_JOB_COMPLETED".asInstanceOf[RESTORE_JOB_COMPLETED]
+  def RESTORE_JOB_STARTED: RESTORE_JOB_STARTED = "RESTORE_JOB_STARTED".asInstanceOf[RESTORE_JOB_STARTED]
   def RESTORING: RESTORING = "RESTORING".asInstanceOf[RESTORING]
   def RESTRICTED_AUTHOR: RESTRICTED_AUTHOR = "RESTRICTED_AUTHOR".asInstanceOf[RESTRICTED_AUTHOR]
   def RESTRICTED_READER: RESTRICTED_READER = "RESTRICTED_READER".asInstanceOf[RESTRICTED_READER]
@@ -17589,6 +17643,7 @@ object awsDashSdkLibStrings {
   def STRETCH_TO_OUTPUT: STRETCH_TO_OUTPUT = "STRETCH_TO_OUTPUT".asInstanceOf[STRETCH_TO_OUTPUT]
   def STRICT: STRICT = "STRICT".asInstanceOf[STRICT]
   def STRING: STRING = "STRING".asInstanceOf[STRING]
+  def STRINGEQUALS: STRINGEQUALS = "STRINGEQUALS".asInstanceOf[STRINGEQUALS]
   def STRING_FROM_SET: STRING_FROM_SET = "STRING_FROM_SET".asInstanceOf[STRING_FROM_SET]
   def STRING_LENGTH: STRING_LENGTH = "STRING_LENGTH".asInstanceOf[STRING_LENGTH]
   def SUBDIRECTORY_PER_STREAM: SUBDIRECTORY_PER_STREAM = "SUBDIRECTORY_PER_STREAM".asInstanceOf[SUBDIRECTORY_PER_STREAM]
@@ -18113,6 +18168,7 @@ object awsDashSdkLibStrings {
   def WAITING: WAITING = "WAITING".asInstanceOf[WAITING]
   def WAITING_FOR_DATA_COLLECTION: WAITING_FOR_DATA_COLLECTION = "WAITING_FOR_DATA_COLLECTION".asInstanceOf[WAITING_FOR_DATA_COLLECTION]
   def WAIT_FOR_SERVER: WAIT_FOR_SERVER = "WAIT_FOR_SERVER".asInstanceOf[WAIT_FOR_SERVER]
+  def WARM: WARM = "WARM".asInstanceOf[WARM]
   def WARN: WARN = "WARN".asInstanceOf[WARN]
   def WARNED: WARNED = "WARNED".asInstanceOf[WARNED]
   def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]

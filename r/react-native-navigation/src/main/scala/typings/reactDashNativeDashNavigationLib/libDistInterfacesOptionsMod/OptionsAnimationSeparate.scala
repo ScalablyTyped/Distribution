@@ -18,5 +18,20 @@ trait OptionsAnimationSeparate extends js.Object {
     * Configure animations for the top bar
     */
   var topBar: js.UndefOr[OptionsAnimationPropertiesId] = js.undefined
+  /**
+    * Wait for the View to render before start animation
+    * Example:
+    ```js
+    animations: {
+    push: {
+    waitForRender: true
+    },
+    showModal: {
+    waitForRender: true
+    }
+    }
+    ```
+    */
+  var waitForRender: js.UndefOr[scala.Boolean] = js.undefined
 }
 

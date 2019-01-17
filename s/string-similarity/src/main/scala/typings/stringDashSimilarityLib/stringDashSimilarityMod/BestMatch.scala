@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait BestMatch extends js.Object {
   var bestMatch: Rating
+  var bestMatchIndex: scala.Double
   var ratings: js.Array[Rating]
 }
 

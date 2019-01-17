@@ -22,6 +22,9 @@ object reactLibStrings {
   sealed trait I extends js.Object
   
   @js.native
+  sealed trait MergePropTypes extends js.Object
+  
+  @js.native
   sealed trait ReactPropTypes extends js.Object
   
   @js.native
@@ -284,6 +287,7 @@ object reactLibStrings {
   def Anon_TypeAny: Anon_TypeAny = "Anon_TypeAny".asInstanceOf[Anon_TypeAny]
   def Empty: Empty = "".asInstanceOf[Empty]
   def I: I = "I".asInstanceOf[I]
+  def MergePropTypes: MergePropTypes = "MergePropTypes".asInstanceOf[MergePropTypes]
   def ReactPropTypes: ReactPropTypes = "ReactPropTypes".asInstanceOf[ReactPropTypes]
   def WeakValidationMap: WeakValidationMap = "WeakValidationMap".asInstanceOf[WeakValidationMap]
   def a: a = "a".asInstanceOf[a]

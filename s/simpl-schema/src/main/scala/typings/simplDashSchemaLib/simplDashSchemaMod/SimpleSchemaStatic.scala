@@ -46,6 +46,7 @@ trait SimpleSchemaStatic
   def schema(key: java.lang.String): SchemaDefinition | js.Array[SchemaDefinition] = js.native
   def validate(obj: js.Any): scala.Unit = js.native
   def validate(obj: js.Any, options: ValidationOption): scala.Unit = js.native
+  def validator(): js.Function0[scala.Boolean] = js.native
   def validator(options: ValidationOption): js.Function0[scala.Boolean] = js.native
 }
 

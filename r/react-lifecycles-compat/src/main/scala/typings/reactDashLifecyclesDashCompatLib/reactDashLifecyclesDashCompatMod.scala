@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-lifecycles-compat", JSImport.Namespace)
 @js.native
 object reactDashLifecyclesDashCompatMod extends js.Object {
-  def polyfill[P](Comp: reactLib.reactMod.ReactNs.ComponentType[P]): reactLib.reactMod.ReactNs.ComponentType[P] = js.native
+  def polyfill[T /* <: reactLib.reactMod.ReactNs.ComponentType[_] */](Comp: T): T with reactDashLifecyclesDashCompatLib.reactDashLifecyclesDashCompatLibStrings.polyfill = js.native
 }
 

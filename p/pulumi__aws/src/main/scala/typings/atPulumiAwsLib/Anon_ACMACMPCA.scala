@@ -36,6 +36,8 @@ trait Anon_ACMACMPCA extends js.Object {
   val AutoScalingNs: Anon_AutoScaling = js.native
   var AutoScalingPlans: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.AutoScalingPlans] = js.native
   val AutoScalingPlansNs: Anon_AutoScalingPlans = js.native
+  var Backup: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Backup] = js.native
+  val BackupNs: Anon_Backup = js.native
   var Batch: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Batch] = js.native
   val BatchNs: Anon_Batch = js.native
   var Budgets: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.Budgets] = js.native

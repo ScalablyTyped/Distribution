@@ -26,6 +26,7 @@ abstract class ConfigurationServicePlaceholders () extends js.Object {
   var athena: js.UndefOr[awsDashSdkLib.clientsAthenaMod.AthenaNs.ClientConfiguration] = js.native
   var autoscaling: js.UndefOr[awsDashSdkLib.clientsAutoscalingMod.AutoScalingNs.ClientConfiguration] = js.native
   var autoscalingplans: js.UndefOr[awsDashSdkLib.clientsAutoscalingplansMod.AutoScalingPlansNs.ClientConfiguration] = js.native
+  var backup: js.UndefOr[awsDashSdkLib.clientsBackupMod.BackupNs.ClientConfiguration] = js.native
   var batch: js.UndefOr[awsDashSdkLib.clientsBatchMod.BatchNs.ClientConfiguration] = js.native
   var budgets: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.Budgets.Types.ClientConfiguration */ js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AWS.Budgets.Types.ClientConfiguration */ js.Any

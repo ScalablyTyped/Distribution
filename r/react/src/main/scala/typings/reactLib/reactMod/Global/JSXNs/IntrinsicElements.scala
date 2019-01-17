@@ -21,6 +21,7 @@ trait IntrinsicElements extends js.Object {
   ]
   var animate: reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGElement]
    // TODO: It is SVGAnimateElement but is not in TypeScript's lib.dom.d.ts for now.
+  var animateMotion: reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGElement]
   var animateTransform: reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGElement]
   var area: reactLib.reactMod.ReactNs.DetailedHTMLProps[
     reactLib.reactMod.ReactNs.AreaHTMLAttributes[reactLib.HTMLAreaElement], 
@@ -321,6 +322,7 @@ trait IntrinsicElements extends js.Object {
     reactLib.reactMod.ReactNs.MeterHTMLAttributes[reactLib.HTMLElement], 
     reactLib.HTMLElement
   ]
+  var mpath: reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGElement]
   var nav: reactLib.reactMod.ReactNs.DetailedHTMLProps[
     reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement], 
     reactLib.HTMLElement

@@ -24,25 +24,25 @@ object ^ extends js.Object {
   val unknown: ioDashTsLib.ioDashTsMod.UnknownC = js.native
   val void: ioDashTsLib.ioDashTsMod.VoidC = js.native
   val voidType: ioDashTsLib.ioDashTsMod.VoidC = js.native
-  def alias[A, O, P, I](`type`: ioDashTsLib.ioDashTsMod.InterfaceType[P, A, O, I]): js.Function0[ioDashTsLib.ioDashTsMod.InterfaceType[_, _, _, I]] = js.native
-  def alias[A, O, P, I](`type`: ioDashTsLib.ioDashTsMod.PartialType[P, A, O, I]): js.Function0[ioDashTsLib.ioDashTsMod.PartialType[_, _, _, I]] = js.native
-  def alias[A, O, P, I](`type`: ioDashTsLib.ioDashTsMod.StrictType[P, A, O, I]): js.Function0[ioDashTsLib.ioDashTsMod.StrictType[_, _, _, I]] = js.native
+  def alias[A, O, P, I](codec: ioDashTsLib.ioDashTsMod.InterfaceType[P, A, O, I]): js.Function0[ioDashTsLib.ioDashTsMod.InterfaceType[_, _, _, I]] = js.native
+  def alias[A, O, P, I](codec: ioDashTsLib.ioDashTsMod.PartialType[P, A, O, I]): js.Function0[ioDashTsLib.ioDashTsMod.PartialType[_, _, _, I]] = js.native
+  def alias[A, O, P, I](codec: ioDashTsLib.ioDashTsMod.StrictType[P, A, O, I]): js.Function0[ioDashTsLib.ioDashTsMod.StrictType[_, _, _, I]] = js.native
   def appendContext(
     c: ioDashTsLib.ioDashTsMod.Context,
     key: java.lang.String,
-    `type`: ioDashTsLib.ioDashTsMod.Decoder[_, _]
+    decoder: ioDashTsLib.ioDashTsMod.Decoder[_, _]
   ): ioDashTsLib.ioDashTsMod.Context = js.native
-  def array[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](`type`: C): ioDashTsLib.ioDashTsMod.ArrayC[C] = js.native
-  def array[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](`type`: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.ArrayC[C] = js.native
-  def clean[A, O, I](`type`: ioDashTsLib.ioDashTsMod.Type[A, O, I]): ioDashTsLib.ioDashTsMod.Type[A, O, I] = js.native
+  def array[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](codec: C): ioDashTsLib.ioDashTsMod.ArrayC[C] = js.native
+  def array[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](codec: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.ArrayC[C] = js.native
+  def clean[A, O, I](codec: ioDashTsLib.ioDashTsMod.Type[A, O, I]): ioDashTsLib.ioDashTsMod.Type[A, O, I] = js.native
   def dictionary[D /* <: ioDashTsLib.ioDashTsMod.Mixed */, C /* <: ioDashTsLib.ioDashTsMod.Mixed */](domain: D, codomain: C): ioDashTsLib.ioDashTsMod.RecordC[D, C] = js.native
   def dictionary[D /* <: ioDashTsLib.ioDashTsMod.Mixed */, C /* <: ioDashTsLib.ioDashTsMod.Mixed */](domain: D, codomain: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.RecordC[D, C] = js.native
-  def exact[C /* <: ioDashTsLib.ioDashTsMod.HasProps */](`type`: C): ioDashTsLib.ioDashTsMod.ExactC[C] = js.native
-  def exact[C /* <: ioDashTsLib.ioDashTsMod.HasProps */](`type`: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.ExactC[C] = js.native
+  def exact[C /* <: ioDashTsLib.ioDashTsMod.HasProps */](codec: C): ioDashTsLib.ioDashTsMod.ExactC[C] = js.native
+  def exact[C /* <: ioDashTsLib.ioDashTsMod.HasProps */](codec: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.ExactC[C] = js.native
   def failure[T](value: js.Any, context: ioDashTsLib.ioDashTsMod.Context): fpDashTsLib.libEitherMod.Either[ioDashTsLib.ioDashTsMod.Errors, T] = js.native
   def failures[T](errors: ioDashTsLib.ioDashTsMod.Errors): fpDashTsLib.libEitherMod.Either[ioDashTsLib.ioDashTsMod.Errors, T] = js.native
-  def getContextEntry(key: java.lang.String, `type`: ioDashTsLib.ioDashTsMod.Decoder[_, _]): ioDashTsLib.ioDashTsMod.ContextEntry = js.native
-  def getDefaultContext(`type`: ioDashTsLib.ioDashTsMod.Decoder[_, _]): ioDashTsLib.ioDashTsMod.Context = js.native
+  def getContextEntry(key: java.lang.String, decoder: ioDashTsLib.ioDashTsMod.Decoder[_, _]): ioDashTsLib.ioDashTsMod.ContextEntry = js.native
+  def getDefaultContext(decoder: ioDashTsLib.ioDashTsMod.Decoder[_, _]): ioDashTsLib.ioDashTsMod.Context = js.native
   def getFunctionName(f: js.Function): java.lang.String = js.native
   def getIndexRecord(types: fpDashTsLib.libArrayMod.Global.Array[ioDashTsLib.ioDashTsMod.Mixed]): ioDashTsLib.ioDashTsMod.IndexRecord = js.native
   def getValidationError(value: js.Any, context: ioDashTsLib.ioDashTsMod.Context): ioDashTsLib.ioDashTsMod.ValidationError = js.native
@@ -63,19 +63,19 @@ object ^ extends js.Object {
   def literal[V /* <: ioDashTsLib.LiteralValue */](value: V, name: java.lang.String): ioDashTsLib.ioDashTsMod.LiteralC[V] = js.native
   def partial[P /* <: ioDashTsLib.ioDashTsMod.Props */](props: P): ioDashTsLib.ioDashTsMod.PartialC[P] = js.native
   def partial[P /* <: ioDashTsLib.ioDashTsMod.Props */](props: P, name: java.lang.String): ioDashTsLib.ioDashTsMod.PartialC[P] = js.native
-  def readonly[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](`type`: C): ioDashTsLib.ioDashTsMod.ReadonlyC[C] = js.native
-  def readonly[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](`type`: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.ReadonlyC[C] = js.native
-  def readonlyArray[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](`type`: C): ioDashTsLib.ioDashTsMod.ReadonlyArrayC[C] = js.native
-  def readonlyArray[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](`type`: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.ReadonlyArrayC[C] = js.native
+  def readonly[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](codec: C): ioDashTsLib.ioDashTsMod.ReadonlyC[C] = js.native
+  def readonly[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](codec: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.ReadonlyC[C] = js.native
+  def readonlyArray[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](codec: C): ioDashTsLib.ioDashTsMod.ReadonlyArrayC[C] = js.native
+  def readonlyArray[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](codec: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.ReadonlyArrayC[C] = js.native
   def recursion[A, O, I, C /* <: ioDashTsLib.ioDashTsMod.Type[A, O, I] */](name: java.lang.String, definition: js.Function1[/* self */ C, C]): ioDashTsLib.ioDashTsMod.RecursiveType[C, A, O, I] = js.native
   @JSName("refinement")
   def refinement__A[C /* <: ioDashTsLib.ioDashTsMod.Any */](
-    `type`: C,
+    codec: C,
     predicate: fpDashTsLib.libFunctionMod.Predicate[/* import warning: ImportType.apply Failed type conversion: C['_A'] */ js.Any]
   ): ioDashTsLib.ioDashTsMod.RefinementC[C] = js.native
   @JSName("refinement")
   def refinement__A[C /* <: ioDashTsLib.ioDashTsMod.Any */](
-    `type`: C,
+    codec: C,
     predicate: fpDashTsLib.libFunctionMod.Predicate[/* import warning: ImportType.apply Failed type conversion: C['_A'] */ js.Any],
     name: java.lang.String
   ): ioDashTsLib.ioDashTsMod.RefinementC[C] = js.native

@@ -104,6 +104,13 @@ trait VictoryGroupProps
     */
   var horizontal: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * The offset prop determines the number of pixels each element in a group should
+    * be offset from its original position of the on the independent axis. In the
+    * case of groups of bars, this number should be equal to the width of the bar
+    * plus the desired spacing between bars.
+    */
+  var offset: js.UndefOr[scala.Double] = js.undefined
+  /**
     * The style prop specifies styles for your grouped chart. These styles will be
     * applied to all grouped children
     */

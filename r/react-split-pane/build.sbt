@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-split-pane"
-version := "0.1.85-ae45b7"
+version := "0.1.85-14e551"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,9 +9,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-61e37d",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2be335",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-692895",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-e34099",
-  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-552d91",
-  "org.scalablytyped" %%% "react-lifecycles-compat" % "3.0-dt-20190114Z-c7e769",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-334a51",
+  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-557855",
+  "org.scalablytyped" %%% "react-lifecycles-compat" % "3.0-dt-20190116Z-305ce9",
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

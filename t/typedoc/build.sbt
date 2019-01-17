@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typedoc"
-version := "0.14.1-83b1b3"
+version := "0.14.2-1267d4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "progress" % "2.0-dt-20181213Z-d4c14b",
   "org.scalablytyped" %%% "shelljs" % "0.8-dt-20181206Z-854571",
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
-  "org.scalablytyped" %%% "typescript" % "3.2.2-a775a5")
+  "org.scalablytyped" %%% "typescript" % "3.2.2-65de7b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

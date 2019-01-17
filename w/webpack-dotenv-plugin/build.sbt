@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webpack-dotenv-plugin"
-version := "2.0-dt-20180306Z-002f45"
+version := "2.0-dt-20180306Z-7e6ee4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-db8d14",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-11a316",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20181221Z-930290")
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190116Z-559b24")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

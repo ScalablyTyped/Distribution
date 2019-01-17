@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-draggable-list"
-version := "4.0.1-24ae6b"
+version := "4.0.1-e9adf4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "immutability-helper" % "2.9.0-1d234a",
   "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-5edd6b",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-692895",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-e34099",
-  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20180806Z-e58535",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-334a51",
+  "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20180806Z-5b38aa",
   "org.scalablytyped" %%% "react-multi-ref" % "1.0.0-106b77",
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1")
 publishArtifact in packageDoc := false

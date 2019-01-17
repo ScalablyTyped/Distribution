@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dva"
-version := "2.4.1-c7280a"
+version := "2.4.1-9a72d6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,12 +12,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "isomorphic-fetch" % "0.0-dt-20180214Z-276dc8",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2be335",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-692895",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-e34099",
-  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-552d91",
-  "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190108Z-d31c36",
-  "org.scalablytyped" %%% "react-router" % "4.4-dt-20190103Z-7dc784",
-  "org.scalablytyped" %%% "react-router-dom" % "4.3-dt-20181211Z-908624",
-  "org.scalablytyped" %%% "react-router-redux" % "5.0-dt-20181122Z-e31efa",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-334a51",
+  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-557855",
+  "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190108Z-345bec",
+  "org.scalablytyped" %%% "react-router" % "4.4-dt-20190103Z-163d46",
+  "org.scalablytyped" %%% "react-router-dom" % "4.3-dt-20181211Z-547e51",
+  "org.scalablytyped" %%% "react-router-redux" % "5.0-dt-20181122Z-325e74",
   "org.scalablytyped" %%% "redux" % "4.0.1-44220d",
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-e21f3d")

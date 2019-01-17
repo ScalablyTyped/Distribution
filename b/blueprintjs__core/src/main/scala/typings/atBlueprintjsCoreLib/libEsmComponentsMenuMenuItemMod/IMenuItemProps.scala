@@ -56,7 +56,7 @@ trait IMenuItemProps
     * @default "a"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ java.lang.String
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ java.lang.String
   ] = js.undefined
   /**
     * A space-delimited list of class names to pass along to the text wrapper element.

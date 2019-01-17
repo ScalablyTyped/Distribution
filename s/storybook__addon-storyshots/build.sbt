@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__addon-storyshots"
-version := "3.4-dt-20181219Z-5e3113"
+version := "3.4-dt-20181219Z-20e8b6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,9 +10,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2be335",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-692895",
   "org.scalablytyped" %%% "puppeteer" % "1.11-dt-20181204Z-7a362b",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-e34099",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-334a51",
   "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
-  "org.scalablytyped" %%% "storybook__react" % "4.0-dt-20181106Z-47d5df",
+  "org.scalablytyped" %%% "storybook__react" % "4.0-dt-20181106Z-333ec0",
   "org.scalablytyped" %%% "webpack-env" % "1.13-dt-20180412Z-b8d477")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

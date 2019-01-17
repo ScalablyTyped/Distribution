@@ -19,6 +19,14 @@ trait IToggleStyleProps extends js.Object {
     */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Whether label should be positioned inline with the toggle.
+    */
+  var inlineLabel: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Whether the user did not specify a on/off text. Influencing only when inlineLabel is used.
+    */
+  var onOffMissing: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Theme values.
     */
   var theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme

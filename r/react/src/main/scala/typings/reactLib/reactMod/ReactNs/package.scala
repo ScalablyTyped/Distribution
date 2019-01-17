@@ -31,7 +31,7 @@ package object ReactNs {
     * NOTE: prefer ComponentPropsWithRef, if the ref is forwarded,
     * or ComponentPropsWithoutRef when refs are not supported.
     */
-  type ComponentProps[T /* <: ReactType[_] */] = js.Object | (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements[T] */ js.Any)
+  type ComponentProps[T /* <: java.lang.String */] = js.Object | (/* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements[T] */ js.Any)
   type ComponentPropsWithRef[T /* <: ReactType[_] */] = PropsWithRef[ComponentProps[T]] | (PropsWithoutRef[_] with RefAttributes[stdLib.InstanceType[T]])
   type ComponentPropsWithoutRef[T /* <: ReactType[_] */] = PropsWithoutRef[ComponentProps[T]]
   type ComponentState = js.Any
@@ -94,6 +94,7 @@ package object ReactNs {
   // The identity check is done with the SameValue algorithm (Object.is), which is stricter than ===
   // TODO (TypeScript 3.0): ReadonlyArray<unknown>
   type InputIdentityList = js.Array[js.Any]
+  type JSXElementConstructor[P] = (js.Function1[/* props */ P, ReactElement[js.Any] | scala.Null]) | (org.scalablytyped.runtime.Instantiable1[/* props */ P, Component[P, js.Any, js.Any]])
   type Key = java.lang.String | scala.Double
   type KeyboardEventHandler[T] = EventHandler[KeyboardEvent[T]]
   type LegacyRef[T] = java.lang.String | Ref[T]

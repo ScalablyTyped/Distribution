@@ -100,15 +100,6 @@ class BootstrapPolarChart () extends Control {
     ]
   ): this.type = js.native
   @JSName("off")
-  def off_init(
-    eventName: devexpressDashAspnetcoreDashBootstrapLib.devexpressDashAspnetcoreDashBootstrapLibStrings.init,
-    callback: js.ThisFunction1[
-      /* this */ this.type, 
-      /* args */ js.UndefOr[BootstrapChartEventArgsBase | EventArgs], 
-      scala.Unit
-    ]
-  ): this.type = js.native
-  @JSName("off")
   def off_legendClick(
     eventName: devexpressDashAspnetcoreDashBootstrapLib.devexpressDashAspnetcoreDashBootstrapLibStrings.legendClick
   ): this.type = js.native
@@ -295,15 +286,6 @@ class BootstrapPolarChart () extends Control {
     ]
   ): this.type = js.native
   @JSName("on")
-  def on_init(
-    eventName: devexpressDashAspnetcoreDashBootstrapLib.devexpressDashAspnetcoreDashBootstrapLibStrings.init,
-    callback: js.ThisFunction1[
-      /* this */ this.type, 
-      /* args */ js.UndefOr[BootstrapChartEventArgsBase | EventArgs], 
-      scala.Unit
-    ]
-  ): this.type = js.native
-  @JSName("on")
   def on_legendClick(
     eventName: devexpressDashAspnetcoreDashBootstrapLib.devexpressDashAspnetcoreDashBootstrapLibStrings.legendClick,
     callback: js.ThisFunction1[
@@ -446,15 +428,6 @@ class BootstrapPolarChart () extends Control {
     callback: js.ThisFunction1[
       /* this */ this.type, 
       /* args */ js.UndefOr[BootstrapChartErrorEventArgs], 
-      scala.Unit
-    ]
-  ): this.type = js.native
-  @JSName("once")
-  def once_init(
-    eventName: devexpressDashAspnetcoreDashBootstrapLib.devexpressDashAspnetcoreDashBootstrapLibStrings.init,
-    callback: js.ThisFunction1[
-      /* this */ this.type, 
-      /* args */ js.UndefOr[BootstrapChartEventArgsBase | EventArgs], 
       scala.Unit
     ]
   ): this.type = js.native

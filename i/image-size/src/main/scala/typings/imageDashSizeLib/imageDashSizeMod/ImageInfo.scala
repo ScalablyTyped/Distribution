@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ImageInfo extends js.Object {
   var height: scala.Double
+  var orientation: js.UndefOr[scala.Double] = js.undefined
   var `type`: java.lang.String
   var width: scala.Double
 }

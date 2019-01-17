@@ -12,5 +12,7 @@ class RecursiveType[C /* <: Any */, A, O, I] protected () extends Type[A, O, I] 
   val _tag: ioDashTsLib.ioDashTsLibStrings.RecursiveType = js.native
   var runDefinition: js.Any = js.native
   val `type`: C = js.native
+  /** @internal */
+  def getIndexRecord(): IndexRecord = js.native
 }
 

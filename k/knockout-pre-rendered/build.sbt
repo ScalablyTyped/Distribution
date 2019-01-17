@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knockout-pre-rendered"
-version := "0.10.1-3d6edf"
+version := "0.11.0-3d6edf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

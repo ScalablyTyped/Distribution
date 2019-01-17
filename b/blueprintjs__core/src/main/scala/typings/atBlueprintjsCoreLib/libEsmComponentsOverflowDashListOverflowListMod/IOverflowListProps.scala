@@ -49,7 +49,7 @@ trait IOverflowListProps[T]
     * @default "div"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 170 */ java.lang.String
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ java.lang.String
   ] = js.undefined
   /**
     * Callback invoked to render the overflowed items. Unlike
