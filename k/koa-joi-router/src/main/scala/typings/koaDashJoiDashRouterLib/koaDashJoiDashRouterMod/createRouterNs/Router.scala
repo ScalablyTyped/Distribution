@@ -18,31 +18,34 @@ trait Router extends js.Object {
   var param: js.Function2[
     /* param */ java.lang.String, 
     /* middleware */ koaDashRouterLib.koaDashRouterMod.RouterNs.IParamMiddleware, 
-    koaDashRouterLib.koaDashRouterMod.Router
+    koaDashRouterLib.koaDashRouterMod.Router[_, js.Object]
   ] = js.native
   @JSName("patch")
   var patch_Original: Method = js.native
   @JSName("post")
   var post_Original: Method = js.native
-  var prefix: js.Function1[/* prefix */ java.lang.String, koaDashRouterLib.koaDashRouterMod.Router] = js.native
+  var prefix: js.Function1[
+    /* prefix */ java.lang.String, 
+    koaDashRouterLib.koaDashRouterMod.Router[_, js.Object]
+  ] = js.native
   @JSName("put")
   var put_Original: Method = js.native
   var routes: js.Array[Spec] = js.native
   var use: (js.Function1[
-    /* repeated */ koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware, 
-    koaDashRouterLib.koaDashRouterMod.Router
+    /* repeated */ koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[_, js.Object], 
+    koaDashRouterLib.koaDashRouterMod.Router[_, js.Object]
   ]) | (js.Function2[
     /* path */ java.lang.String, 
-    /* repeated */ koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware, 
-    koaDashRouterLib.koaDashRouterMod.Router
+    /* repeated */ koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[_, js.Object], 
+    koaDashRouterLib.koaDashRouterMod.Router[_, js.Object]
   ]) | (js.Function2[
     /* path */ js.Array[java.lang.String], 
-    /* repeated */ koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware, 
-    koaDashRouterLib.koaDashRouterMod.Router
+    /* repeated */ koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[_, js.Object], 
+    koaDashRouterLib.koaDashRouterMod.Router[_, js.Object]
   ]) | (js.Function2[
     /* path */ stdLib.RegExp, 
-    /* repeated */ koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware, 
-    koaDashRouterLib.koaDashRouterMod.Router
+    /* repeated */ koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[_, js.Object], 
+    koaDashRouterLib.koaDashRouterMod.Router[_, js.Object]
   ]) = js.native
   def delete(path: java.lang.String, handlerOrConfig: js.Object, handlers: Handler*): Router = js.native
   def delete(path: java.lang.String, handlerOrConfig: Handler, handlers: Handler*): Router = js.native

@@ -1,36 +1,36 @@
 organization := "org.scalablytyped"
 name := "react-native-goby"
-version := "0.0.5-b1710a"
+version := "0.0.5-f33f89"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-61e37d",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-e3598d",
-  "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180808Z-7125d2",
-  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-696dbe",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2be335",
-  "org.scalablytyped" %%% "plist" % "3.0-dt-20181029Z-a29dd6",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-692895",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-334a51",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190115Z-3fac8a",
-  "org.scalablytyped" %%% "rx" % "4.1-dt-20180214Z-ab4c1e",
-  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20180214Z-42cbcd",
-  "org.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180214Z-390e4d",
-  "org.scalablytyped" %%% "rx-lite" % "4.0-dt-20181017Z-30a111",
-  "org.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20180214Z-e6c363",
-  "org.scalablytyped" %%% "rx-lite-async" % "4.0-dt-20181116Z-f57cf9",
-  "org.scalablytyped" %%% "rx-lite-backpressure" % "4.0-dt-20180214Z-f9f5e1",
-  "org.scalablytyped" %%% "rx-lite-coincidence" % "4.0-dt-20180214Z-221d8f",
-  "org.scalablytyped" %%% "rx-lite-experimental" % "4.0-dt-20180214Z-d00d43",
-  "org.scalablytyped" %%% "rx-lite-joinpatterns" % "4.0-dt-20180214Z-d5b6cc",
-  "org.scalablytyped" %%% "rx-lite-testing" % "4.0-dt-20180214Z-2ebb12",
-  "org.scalablytyped" %%% "rx-lite-time" % "4.0-dt-20180214Z-8c9e58",
-  "org.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20180214Z-44e374",
-  "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-48a958",
-  "org.scalablytyped" %%% "xmlbuilder" % "0.0-unknown-dt-20180925Z-f4d178")
+  "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-0b7a31",
+  "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180808Z-87829e",
+  "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-db2a02",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
+  "org.scalablytyped" %%% "plist" % "3.0-dt-20181029Z-80be6e",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-73addc",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190115Z-56e436",
+  "org.scalablytyped" %%% "rx" % "4.1-dt-20180214Z-8e2ba2",
+  "org.scalablytyped" %%% "rx-core" % "4.0-dt-20180214Z-dd641d",
+  "org.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180214Z-c800a8",
+  "org.scalablytyped" %%% "rx-lite" % "4.0-dt-20181017Z-5dc046",
+  "org.scalablytyped" %%% "rx-lite-aggregates" % "4.0-dt-20180214Z-2daeb9",
+  "org.scalablytyped" %%% "rx-lite-async" % "4.0-dt-20181116Z-74213f",
+  "org.scalablytyped" %%% "rx-lite-backpressure" % "4.0-dt-20180214Z-048ab1",
+  "org.scalablytyped" %%% "rx-lite-coincidence" % "4.0-dt-20180214Z-d5be3d",
+  "org.scalablytyped" %%% "rx-lite-experimental" % "4.0-dt-20180214Z-b2cd51",
+  "org.scalablytyped" %%% "rx-lite-joinpatterns" % "4.0-dt-20180214Z-01c4ae",
+  "org.scalablytyped" %%% "rx-lite-testing" % "4.0-dt-20180214Z-ce7493",
+  "org.scalablytyped" %%% "rx-lite-time" % "4.0-dt-20180214Z-658d5c",
+  "org.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20180214Z-14b60c",
+  "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-1bd3fa",
+  "org.scalablytyped" %%% "xmlbuilder" % "0.0-unknown-dt-20180925Z-517132")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

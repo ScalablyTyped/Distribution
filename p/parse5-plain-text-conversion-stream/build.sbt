@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "parse5-plain-text-conversion-stream"
-version := "5.0-dt-20180606Z-6bbaef"
+version := "5.0-dt-20180606Z-66ec06"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2be335",
-  "org.scalablytyped" %%% "parse5" % "5.0-dt-20180611Z-0c3e07",
-  "org.scalablytyped" %%% "parse5-parser-stream" % "5.0-dt-20180606Z-57a877",
-  "org.scalablytyped" %%% "std" % "3.2.2-2926f1")
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
+  "org.scalablytyped" %%% "parse5" % "5.0-dt-20180611Z-148eff",
+  "org.scalablytyped" %%% "parse5-parser-stream" % "5.0-dt-20180606Z-94ba4a",
+  "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

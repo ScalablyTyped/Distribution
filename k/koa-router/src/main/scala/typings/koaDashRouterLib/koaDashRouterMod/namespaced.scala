@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 /**
   * Create a new router.
   */
-class namespaced () extends Router {
+class namespaced[StateT, CustomT] () extends Router[StateT, CustomT] {
   def this(opt: koaDashRouterLib.koaDashRouterMod.RouterNs.IRouterOptions) = this()
 }
 

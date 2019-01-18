@@ -13,7 +13,7 @@ trait Layer extends js.Object {
   var paramNames: js.Array[ParamName] = js.native
   var path: java.lang.String = js.native
   var regexp: stdLib.RegExp = js.native
-  var stack: js.Array[IMiddleware] = js.native
+  var stack: js.Array[IMiddleware[_, js.Object]] = js.native
   /**
     * Returns array of regexp url path captures.
     */
@@ -25,7 +25,7 @@ trait Layer extends js.Object {
   /**
     * Run validations on route named parameters.
     */
-  def param(param: java.lang.String, fn: IMiddleware): Layer = js.native
+  def param(param: java.lang.String, fn: IMiddleware[_, js.Object]): Layer = js.native
   /**
     * Returns map of URL parameters for given `path` and `paramNames`.
     */

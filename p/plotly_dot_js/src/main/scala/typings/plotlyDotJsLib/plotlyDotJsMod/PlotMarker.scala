@@ -13,6 +13,7 @@ trait PlotMarker extends js.Object {
    // Drawing.symbolList
   var color: Color | js.Array[Color]
   var colorbar: stdLib.Partial[ColorBar]
+  var colors: js.Array[Color]
   var colorscale: java.lang.String | js.Array[java.lang.String] | (js.Array[js.Array[java.lang.String | scala.Double]])
   var gradient: plotlyDotJsLib.Anon_Color
   var line: stdLib.Partial[ScatterMarkerLine]

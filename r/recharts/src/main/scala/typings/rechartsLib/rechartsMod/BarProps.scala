@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in keyof recharts.recharts.PresentationAttributes<number, number> ]:? recharts.recharts.PresentationAttributes<number, number>[P]} */ trait BarProps
   extends EventAttributes
      with Animatable {
+  var background: js.UndefOr[
+    scala.Boolean | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_] | js.Object
+  ] = js.undefined
   var barSize: js.UndefOr[scala.Double] = js.undefined
    // As the source code states, dataKey will replace valueKey in 1.1.0 and it'll be required (it's already required in current implementation).
   var className: js.UndefOr[java.lang.String] = js.undefined

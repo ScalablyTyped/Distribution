@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PackageDefinition
-  extends /* index */ org.scalablytyped.runtime.StringDictionary[ServiceDefinition]
+  extends /* index */ org.scalablytyped.runtime.StringDictionary[AnyDefinition]
 

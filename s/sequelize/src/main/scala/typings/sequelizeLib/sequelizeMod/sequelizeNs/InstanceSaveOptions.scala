@@ -13,6 +13,7 @@ trait InstanceSaveOptions
      with LoggingOptions
      with ReturningOptions
      with SearchPathOptions {
+  var hooks: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * If true, the updatedAt timestamp will not be updated.
     *

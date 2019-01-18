@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "redux-testkit"
-version := "1.0-dt-20181020Z-94cedd"
+version := "1.0-dt-20181020Z-923342"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "redux" % "4.0.1-44220d",
-  "org.scalablytyped" %%% "redux-thunk" % "2.3.0-7e540d",
-  "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
-  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-e21f3d")
+  "org.scalablytyped" %%% "redux" % "4.0.1-0f174c",
+  "org.scalablytyped" %%% "redux-thunk" % "2.3.0-43f96c",
+  "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
+  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-bc5916")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,0 +1,71 @@
+[debug] PhaseRunner.scala:82 Success [id => hellojs, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/hellojs/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/hellojs),TsIdentLibrarySimple(hellojs)),TsIdentModule(None,List(hellojs))) [id => hellojs, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(hellojs)) [id => hellojs, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(hellojs) [id => hellojs, phase => typescript] 
+[info ] ExtractInterfaces.scala:37 Extracted anonymous interface TsIdentSimple(Anon_Code) [id => hellojs, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(hellojs) / TsDeclNamespace(hello) / TsDeclInterface(HelloJSUtils) / TsMemberFunction(error) / TsFunSig() / TsTypeObject())] 
+[debug] PhaseRunner.scala:82 Success [id => hellojs, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:40 Processing hellojs [id => hellojs, phase => scala.js] 
+[debug] PhaseRunner.scala:82 Success [id => hellojs, phase => scala.js] 
+[warn ] Phase3CompileBloop.scala:197 Built hellojs in 565 ms [id => hellojs, phase => build] 
+[info ] Phase3CompileBloop.scala:205 published local, [/home/tso/.ivy2/local/org.scalablytyped/hellojs_sjs0.6_2.12/1.16-dt-20180401Z-ebc3c0/jars/hellojs_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/hellojs_sjs0.6_2.12/1.16-dt-20180401Z-ebc3c0/srcs/hellojs_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/hellojs_sjs0.6_2.12/1.16-dt-20180401Z-ebc3c0/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/hellojs_sjs0.6_2.12/1.16-dt-20180401Z-ebc3c0/poms/hellojs_sjs0.6_2.12.pom] [id => hellojs, phase => build] 
+[debug] PhaseRunner.scala:82 Success [id => hellojs, phase => build] 
+[error] PhaseRes.scala:76 Caught exception: java.net.ConnectException: https://api.bintray.com:443 [id => hellojs, phase => publish] java.util.concurrent.ExecutionException: java.net.ConnectException: https://api.bintray.com:443
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.abort(NettyResponseFuture.java:229)
+	at com.ning.http.client.providers.netty.request.NettyConnectListener.onFutureFailure(NettyConnectListener.java:107)
+	at com.ning.http.client.providers.netty.request.NettyConnectListener.operationComplete(NettyConnectListener.java:115)
+	at org.jboss.netty.channel.DefaultChannelFuture.notifyListener(DefaultChannelFuture.java:409)
+	at org.jboss.netty.channel.DefaultChannelFuture.addListener(DefaultChannelFuture.java:145)
+	at com.ning.http.client.providers.netty.request.NettyRequestSender.sendRequestWithNewChannel(NettyRequestSender.java:284)
+	at com.ning.http.client.providers.netty.request.NettyRequestSender.sendRequestWithCertainForceConnect(NettyRequestSender.java:140)
+	at com.ning.http.client.providers.netty.request.NettyRequestSender.sendRequest(NettyRequestSender.java:115)
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider.execute(NettyAsyncHttpProvider.java:87)
+	at com.ning.http.client.AsyncHttpClient.executeRequest(AsyncHttpClient.java:486)
+	at dispatch.HttpExecutor.apply(execution.scala:47)
+	at dispatch.HttpExecutor.apply$(execution.scala:44)
+	at dispatch.Http.apply(execution.scala:12)
+	at dispatch.HttpExecutor.apply(execution.scala:42)
+	at dispatch.HttpExecutor.apply$(execution.scala:40)
+	at dispatch.Http.apply(execution.scala:12)
+	at bintry.Requests.request(Client.scala:42)
+	at bintry.Methods$Repo$Package$MvnUpload.apply(Methods.scala:318)
+	at com.olvind.tso.importer.build.BinTrayPublisher.$anonfun$publish$2(BinTrayPublisher.scala:77)
+	at com.olvind.tso.importer.build.BinTrayPublisher.retry(BinTrayPublisher.scala:69)
+	at com.olvind.tso.importer.build.BinTrayPublisher$$anonfun$retry$1.applyOrElse(BinTrayPublisher.scala:70)
+	at com.olvind.tso.importer.build.BinTrayPublisher$$anonfun$retry$1.applyOrElse(BinTrayPublisher.scala:69)
+	at scala.concurrent.Future.$anonfun$recoverWith$1(Future.scala:417)
+	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(ForkJoinTask.java:1402)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: java.net.ConnectException: https://api.bintray.com:443
+	at com.ning.http.client.providers.netty.request.NettyConnectListener.onFutureFailure(NettyConnectListener.java:103)
+	... 28 more
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink.connect(NioClientSocketPipelineSink.java:108)
+	at org.jboss.netty.channel.socket.nio.NioClientSocketPipelineSink.eventSunk(NioClientSocketPipelineSink.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:779)
+	at com.ning.http.client.providers.netty.channel.SslInitializer.connectRequested(SslInitializer.java:48)
+	at org.jboss.netty.channel.SimpleChannelDownstreamHandler.handleDownstream(SimpleChannelDownstreamHandler.java:88)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:784)
+	at org.jboss.netty.handler.codec.oneone.OneToOneEncoder.handleDownstream(OneToOneEncoder.java:54)
+	at org.jboss.netty.handler.codec.http.HttpClientCodec.handleDownstream(HttpClientCodec.java:97)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendDownstream(DefaultChannelPipeline.java:784)
+	at org.jboss.netty.handler.stream.ChunkedWriteHandler.handleDownstream(ChunkedWriteHandler.java:109)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:591)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendDownstream(DefaultChannelPipeline.java:582)
+	at org.jboss.netty.channel.Channels.connect(Channels.java:634)
+	at org.jboss.netty.channel.AbstractChannel.connect(AbstractChannel.java:216)
+	at org.jboss.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:229)
+	at org.jboss.netty.bootstrap.ClientBootstrap.connect(ClientBootstrap.java:182)
+	at com.ning.http.client.providers.netty.request.NettyRequestSender.connect(NettyRequestSender.java:371)
+	at com.ning.http.client.providers.netty.request.NettyRequestSender.sendRequestWithNewChannel(NettyRequestSender.java:283)
+	... 24 more
+
+[error] PhaseRunner.scala:86 Failure, [hellojs => java.util.concurrent.ExecutionException: java.net.ConnectException: https://api.bintray.com:443] [id => hellojs, phase => publish] 

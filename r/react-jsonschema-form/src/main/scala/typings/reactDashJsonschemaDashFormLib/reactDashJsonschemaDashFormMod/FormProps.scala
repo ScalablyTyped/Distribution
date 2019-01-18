@@ -14,6 +14,7 @@ trait FormProps[T] extends js.Object {
   var action: js.UndefOr[java.lang.String] = js.undefined
   var autocomplete: js.UndefOr[java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
+  var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var enctype: js.UndefOr[java.lang.String] = js.undefined
   var fields: js.UndefOr[org.scalablytyped.runtime.StringDictionary[Field]] = js.undefined
   var formContext: js.UndefOr[js.Any] = js.undefined

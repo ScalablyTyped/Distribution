@@ -16,9 +16,9 @@ object ^ extends js.Object {
   val anySeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
   val concatSeries: i2cDashBusLib.Anon_ArrCallbackIteratorArray = js.native
   val detectSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncResultCallback = js.native
-  val eachOf: i2cDashBusLib.Anon_CallbackIterator = js.native
-  val eachOfLimit: i2cDashBusLib.Anon_CallbackIteratorLimit = js.native
-  val eachOfSeries: i2cDashBusLib.Anon_CallbackIterator = js.native
+  val eachOf: i2cDashBusLib.Anon_Callback = js.native
+  val eachOfLimit: i2cDashBusLib.Anon_CallbackIterator = js.native
+  val eachOfSeries: i2cDashBusLib.Anon_Callback = js.native
   val eachSeries: i2cDashBusLib.Anon_Arr = js.native
   val everySeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
   val filterSeries: i2cDashBusLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
@@ -29,7 +29,7 @@ object ^ extends js.Object {
   val foldr: i2cDashBusLib.Anon_ArrCallbackIteratorMemo = js.native
   val forEach: i2cDashBusLib.Anon_Arr = js.native
   val forEachLimit: i2cDashBusLib.Anon_ArrCallback = js.native
-  val forEachOfSeries: i2cDashBusLib.Anon_CallbackIterator = js.native
+  val forEachOfSeries: i2cDashBusLib.Anon_Callback = js.native
   val forEachSeries: i2cDashBusLib.Anon_Arr = js.native
   val inject: i2cDashBusLib.Anon_ArrCallbackIteratorMemo = js.native
   val mapSeries: i2cDashBusLib.Anon_ArrCallbackIterator = js.native

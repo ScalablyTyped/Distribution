@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "semantic-ui-react"
-version := "0.84.0-b2c87a"
+version := "0.84.0-01f493"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-6d1ba2",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-61e37d",
-  "org.scalablytyped" %%% "exenv" % "1.2-dt-20180321Z-f1069b",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20181203Z-5a27ec",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2be335",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-692895",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-334a51",
-  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-557855",
-  "org.scalablytyped" %%% "semantic-ui-react__event-stack" % "3.0.1-706e8d",
-  "org.scalablytyped" %%% "shallowequal" % "1.1-dt-20181231Z-d5a0ce",
-  "org.scalablytyped" %%% "std" % "3.2.2-2926f1")
+  "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-8c0e09",
+  "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
+  "org.scalablytyped" %%% "exenv" % "1.2-dt-20180321Z-c49f58",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-c48db4",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-73addc",
+  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-99d6f9",
+  "org.scalablytyped" %%% "semantic-ui-react__event-stack" % "3.0.1-20510b",
+  "org.scalablytyped" %%% "shallowequal" % "1.1-dt-20181231Z-1bbd3d",
+  "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

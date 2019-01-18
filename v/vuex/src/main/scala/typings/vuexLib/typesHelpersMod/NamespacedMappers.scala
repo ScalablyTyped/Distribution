@@ -18,12 +18,7 @@ trait NamespacedMappers extends js.Object {
   def mapActions(map: js.Array[java.lang.String]): Dictionary[ActionMethod] = js.native
   def mapActions(
     map: Dictionary[
-      java.lang.String | (js.ThisFunction2[
-        /* this */ vueLib.typesVueMod.VueConstructor[vueLib.typesVueMod.Vue], 
-        /* fn */ vuexLib.typesMod.Dispatch, 
-        /* repeated */ _, 
-        _
-      ])
+      java.lang.String | (js.ThisFunction2[/* this */ CustomVue, /* fn */ vuexLib.typesMod.Dispatch, /* repeated */ _, _])
     ]
   ): Dictionary[ActionMethod] = js.native
   def mapGetters(map: js.Array[java.lang.String]): Dictionary[Computed] = js.native
@@ -31,26 +26,12 @@ trait NamespacedMappers extends js.Object {
   def mapMutations(map: js.Array[java.lang.String]): Dictionary[MutationMethod] = js.native
   def mapMutations(
     map: Dictionary[
-      java.lang.String | (js.ThisFunction2[
-        /* this */ vueLib.typesVueMod.VueConstructor[vueLib.typesVueMod.Vue], 
-        /* fn */ vuexLib.typesMod.Commit, 
-        /* repeated */ _, 
-        _
-      ])
+      java.lang.String | (js.ThisFunction2[/* this */ CustomVue, /* fn */ vuexLib.typesMod.Commit, /* repeated */ _, _])
     ]
   ): Dictionary[MutationMethod] = js.native
   def mapState(map: js.Array[java.lang.String]): Dictionary[Computed] = js.native
   def mapState(map: Dictionary[java.lang.String]): Dictionary[Computed] = js.native
   @JSName("mapState")
-  def mapState_S[S](
-    map: Dictionary[
-      js.ThisFunction2[
-        /* this */ vueLib.typesVueMod.VueConstructor[vueLib.typesVueMod.Vue], 
-        /* state */ S, 
-        /* getters */ _, 
-        _
-      ]
-    ]
-  ): Dictionary[Computed] = js.native
+  def mapState_S[S](map: Dictionary[js.ThisFunction2[/* this */ CustomVue, /* state */ S, /* getters */ _, _]]): Dictionary[Computed] = js.native
 }
 

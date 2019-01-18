@@ -24,6 +24,8 @@ trait Layout extends js.Object {
   var orientation: scala.Double
   var paper_bgcolor: Color
   var plot_bgcolor: Color
+   // TODO
+  var radialaxis: stdLib.Partial[Axis]
   var scene: stdLib.Partial[Scene]
   var separators: java.lang.String
   var shapes: js.Array[stdLib.Partial[Shape]]

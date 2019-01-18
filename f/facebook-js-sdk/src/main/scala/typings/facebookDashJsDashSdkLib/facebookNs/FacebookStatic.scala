@@ -41,10 +41,9 @@ trait FacebookStatic extends js.Object {
     * As such, this method should only be called after a user click event, otherwise
     * the popup window will be blocked by most browsers.
     *
-    * @param callback function to handle the response.
     * @param options optional ILoginOption to add params such as scope.
     */
-  def login(callback: js.Function1[/* response */ StatusResponse, scala.Unit], options: LoginOptions): scala.Unit = js.native
+  def login(): scala.Unit = js.native
   /**
     * Use this function to log the user in
     *
@@ -52,13 +51,16 @@ trait FacebookStatic extends js.Object {
     * As such, this method should only be called after a user click event, otherwise
     * the popup window will be blocked by most browsers.
     *
+    * @param callback function to handle the response.
     * @param options optional ILoginOption to add params such as scope.
     */
+  def login(callback: js.Function1[/* response */ StatusResponse, scala.Unit]): scala.Unit = js.native
+  def login(callback: js.Function1[/* response */ StatusResponse, scala.Unit], options: LoginOptions): scala.Unit = js.native
   def login(options: LoginOptions): scala.Unit = js.native
   /**
     * The method FB.logout() logs the user out of your site and, in some cases, Facebook.
     *
-    * @param callback function to handle the response
+    * @param callback optional function to handle the response
     */
   def logout(): scala.Unit = js.native
   def logout(callback: js.Function1[/* response */ StatusResponse, scala.Unit]): scala.Unit = js.native

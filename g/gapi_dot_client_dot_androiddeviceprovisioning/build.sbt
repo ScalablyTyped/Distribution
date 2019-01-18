@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "gapi_dot_client_dot_androiddeviceprovisioning"
-version := "1.0-dt-20180214Z-82317e"
+version := "1.0-dt-20180214Z-0117f4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "gapi_dot_client" % "1.0-dt-20180214Z-99ce27",
-  "org.scalablytyped" %%% "std" % "3.2.2-2926f1")
+  "org.scalablytyped" %%% "gapi_dot_client" % "1.0-dt-20180214Z-c27b80",
+  "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

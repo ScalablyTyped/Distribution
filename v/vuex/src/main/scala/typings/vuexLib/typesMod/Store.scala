@@ -32,14 +32,15 @@ class Store[S] protected () extends js.Object {
   def registerModule[T](path: js.Array[java.lang.String], module: Module[T, S], options: ModuleOptions): scala.Unit = js.native
   def replaceState(state: S): scala.Unit = js.native
   def subscribe[P /* <: MutationPayload */](fn: js.Function2[/* mutation */ P, /* state */ S, _]): js.Function0[scala.Unit] = js.native
+  def subscribeAction[P /* <: ActionPayload */](fn: SubscribeActionOptions[P, S]): js.Function0[scala.Unit] = js.native
   def unregisterModule(path: java.lang.String): scala.Unit = js.native
   def unregisterModule(path: js.Array[java.lang.String]): scala.Unit = js.native
   def watch[T](
-    getter: js.Function1[/* state */ S, T],
+    getter: js.Function2[/* state */ S, /* getters */ js.Any, T],
     cb: js.Function2[/* value */ T, /* oldValue */ T, scala.Unit]
   ): js.Function0[scala.Unit] = js.native
   def watch[T](
-    getter: js.Function1[/* state */ S, T],
+    getter: js.Function2[/* state */ S, /* getters */ js.Any, T],
     cb: js.Function2[/* value */ T, /* oldValue */ T, scala.Unit],
     options: vueLib.typesOptionsMod.WatchOptions
   ): js.Function0[scala.Unit] = js.native

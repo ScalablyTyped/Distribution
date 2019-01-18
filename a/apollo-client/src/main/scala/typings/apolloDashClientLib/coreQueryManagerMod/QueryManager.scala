@@ -112,12 +112,12 @@ class QueryManager[TStore] protected () extends js.Object {
     document: graphqlLib.languageAstMod.DocumentNode,
     options: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables]
   ): js.Function0[scala.Unit] = js.native
-  def watchQuery[T](
+  def watchQuery[T, TVariables](
     options: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables]
-  ): apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables] = js.native
-  def watchQuery[T](
+  ): apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, TVariables] = js.native
+  def watchQuery[T, TVariables](
     options: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables],
     shouldSubscribe: scala.Boolean
-  ): apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables] = js.native
+  ): apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, TVariables] = js.native
 }
 

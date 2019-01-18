@@ -379,13 +379,17 @@ object LightsailNs extends js.Object {
   
   trait CreateDiskSnapshotRequest extends js.Object {
     /**
-      * The unique name of the source disk (e.g., my-source-disk).
+      * The unique name of the source disk (e.g., Disk-Virginia-1).  This parameter cannot be defined together with the instance name parameter. The disk name and instance name parameters are mutually exclusive. 
       */
-    var diskName: ResourceName
+    var diskName: js.UndefOr[ResourceName] = js.undefined
     /**
       * The name of the destination disk snapshot (e.g., my-disk-snapshot) based on the source disk.
       */
     var diskSnapshotName: ResourceName
+    /**
+      * The unique name of the source instance (e.g., Amazon_Linux-512MB-Virginia-1). When this is defined, a snapshot of the instance's system volume is created.  This parameter cannot be defined together with the disk name parameter. The instance name and disk name parameters are mutually exclusive. 
+      */
+    var instanceName: js.UndefOr[ResourceName] = js.undefined
     /**
       * The tag keys and optional values to add to the resource during create. To tag a resource after it has been created, see the tag resource operation.
       */
@@ -1099,13 +1103,21 @@ object LightsailNs extends js.Object {
       */
     var createdAt: js.UndefOr[IsoDate] = js.undefined
     /**
-      * The Amazon Resource Name (ARN) of the source disk from which you are creating the disk snapshot.
+      * The Amazon Resource Name (ARN) of the source disk from which the disk snapshot was created.
       */
     var fromDiskArn: js.UndefOr[NonEmptyString] = js.undefined
     /**
-      * The unique name of the source disk from which you are creating the disk snapshot.
+      * The unique name of the source disk from which the disk snapshot was created.
       */
     var fromDiskName: js.UndefOr[ResourceName] = js.undefined
+    /**
+      * The Amazon Resource Name (ARN) of the source instance from which the disk (system volume) snapshot was created.
+      */
+    var fromInstanceArn: js.UndefOr[NonEmptyString] = js.undefined
+    /**
+      * The unique name of the source instance from which the disk (system volume) snapshot was created.
+      */
+    var fromInstanceName: js.UndefOr[ResourceName] = js.undefined
     /**
       * The AWS Region and Availability Zone where the disk snapshot was created.
       */
@@ -2297,7 +2309,7 @@ object LightsailNs extends js.Object {
       */
     var instanceType: NonEmptyString
     /**
-      * The port configuration to use for the new Amazon EC2 instance. The following configuration options are available:   DEFAULT — Use the default firewall settings from the image.   INSTANCE — Use the firewall settings from the source Lightsail instance.   NONE — Default to Amazon EC2.  
+      * The port configuration to use for the new Amazon EC2 instance. The following configuration options are available:   DEFAULT — Use the default firewall settings from the image.   INSTANCE — Use the firewall settings from the source Lightsail instance.   NONE — Default to Amazon EC2.   CLOSED — All ports closed.  
       */
     var portInfoSource: PortInfoSourceType
     /**
@@ -3724,7 +3736,7 @@ object LightsailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDiskFromSnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending. The create disk snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+      * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending. You can also use this operation to create a snapshot of an instance's system volume. You might want to do this, for example, to recover data from the system volume of a botched instance or to create a backup of the system volume like you would for a block storage disk. To create a snapshot of a system volume, just define the instance name parameter when issuing the snapshot command, and a snapshot of the defined instance's system volume will be created. After the snapshot is available, you can create a block storage disk from the snapshot and attach it to a running instance to access the data on the disk. The create disk snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
       */
     def createDiskSnapshot(): awsDashSdkLib.libRequestMod.Request[CreateDiskSnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createDiskSnapshot(
@@ -3735,7 +3747,7 @@ object LightsailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDiskSnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending. The create disk snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
+      * Creates a snapshot of a block storage disk. You can use snapshots for backups, to make copies of disks, and to save data before shutting down a Lightsail instance. You can take a snapshot of an attached disk that is in use; however, snapshots only capture data that has been written to your disk at the time the snapshot command is issued. This may exclude any data that has been cached by any applications or the operating system. If you can pause any file systems on the disk long enough to take a snapshot, your snapshot should be complete. Nevertheless, if you cannot pause all file writes to the disk, you should unmount the disk from within the Lightsail instance, issue the create disk snapshot command, and then remount the disk to ensure a consistent and complete snapshot. You may remount and use your disk while the snapshot status is pending. You can also use this operation to create a snapshot of an instance's system volume. You might want to do this, for example, to recover data from the system volume of a botched instance or to create a backup of the system volume like you would for a block storage disk. To create a snapshot of a system volume, just define the instance name parameter when issuing the snapshot command, and a snapshot of the defined instance's system volume will be created. After the snapshot is available, you can create a block storage disk from the snapshot and attach it to a running instance to access the data on the disk. The create disk snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.
       */
     def createDiskSnapshot(params: CreateDiskSnapshotRequest): awsDashSdkLib.libRequestMod.Request[CreateDiskSnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createDiskSnapshot(
@@ -4345,7 +4357,7 @@ object LightsailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DownloadDefaultKeyPairResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Exports a Amazon Lightsail instance or block storage disk snapshot to Amazon Elastic Compute Cloud (Amazon EC2). This operation results in an export snapshot record that can be used with the create cloud formation stack operation to create new Amazon EC2 instances. Exported instance snapshots appear in Amazon EC2 as Amazon Machine Images (AMIs), and the instance system disk appears as an Amazon Elastic Block Store (Amazon EBS) volume. Exported disk snapshots appear in Amazon EC2 as Amazon EBS volumes. Snapshots are exported to the same Amazon Web Services Region in Amazon EC2 as the source Lightsail snapshot.  The export snapshot operation supports tag-based access control via resource tags applied to the resource identified by sourceSnapshotName. For more information, see the Lightsail Dev Guide.  Use the get instance snapshots or get disk snapshots operations to get a list of snapshots that you can export to Amazon EC2. 
+      * Exports an Amazon Lightsail instance or block storage disk snapshot to Amazon Elastic Compute Cloud (Amazon EC2). This operation results in an export snapshot record that can be used with the create cloud formation stack operation to create new Amazon EC2 instances. Exported instance snapshots appear in Amazon EC2 as Amazon Machine Images (AMIs), and the instance system disk appears as an Amazon Elastic Block Store (Amazon EBS) volume. Exported disk snapshots appear in Amazon EC2 as Amazon EBS volumes. Snapshots are exported to the same Amazon Web Services Region in Amazon EC2 as the source Lightsail snapshot.  The export snapshot operation supports tag-based access control via resource tags applied to the resource identified by sourceSnapshotName. For more information, see the Lightsail Dev Guide.  Use the get instance snapshots or get disk snapshots operations to get a list of snapshots that you can export to Amazon EC2. 
       */
     def exportSnapshot(): awsDashSdkLib.libRequestMod.Request[ExportSnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def exportSnapshot(
@@ -4356,7 +4368,7 @@ object LightsailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ExportSnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Exports a Amazon Lightsail instance or block storage disk snapshot to Amazon Elastic Compute Cloud (Amazon EC2). This operation results in an export snapshot record that can be used with the create cloud formation stack operation to create new Amazon EC2 instances. Exported instance snapshots appear in Amazon EC2 as Amazon Machine Images (AMIs), and the instance system disk appears as an Amazon Elastic Block Store (Amazon EBS) volume. Exported disk snapshots appear in Amazon EC2 as Amazon EBS volumes. Snapshots are exported to the same Amazon Web Services Region in Amazon EC2 as the source Lightsail snapshot.  The export snapshot operation supports tag-based access control via resource tags applied to the resource identified by sourceSnapshotName. For more information, see the Lightsail Dev Guide.  Use the get instance snapshots or get disk snapshots operations to get a list of snapshots that you can export to Amazon EC2. 
+      * Exports an Amazon Lightsail instance or block storage disk snapshot to Amazon Elastic Compute Cloud (Amazon EC2). This operation results in an export snapshot record that can be used with the create cloud formation stack operation to create new Amazon EC2 instances. Exported instance snapshots appear in Amazon EC2 as Amazon Machine Images (AMIs), and the instance system disk appears as an Amazon Elastic Block Store (Amazon EBS) volume. Exported disk snapshots appear in Amazon EC2 as Amazon EBS volumes. Snapshots are exported to the same Amazon Web Services Region in Amazon EC2 as the source Lightsail snapshot.  The export snapshot operation supports tag-based access control via resource tags applied to the resource identified by sourceSnapshotName. For more information, see the Lightsail Dev Guide.  Use the get instance snapshots or get disk snapshots operations to get a list of snapshots that you can export to Amazon EC2. 
       */
     def exportSnapshot(params: ExportSnapshotRequest): awsDashSdkLib.libRequestMod.Request[ExportSnapshotResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def exportSnapshot(
@@ -5440,7 +5452,7 @@ object LightsailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutInstancePublicPortsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Restarts a specific instance. When your Amazon Lightsail instance is finished rebooting, Lightsail assigns a new public IP address. To use the same IP address after restarting, create a static IP address and attach it to the instance. The reboot instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
+      * Restarts a specific instance. The reboot instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
       */
     def rebootInstance(): awsDashSdkLib.libRequestMod.Request[RebootInstanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def rebootInstance(
@@ -5451,7 +5463,7 @@ object LightsailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[RebootInstanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Restarts a specific instance. When your Amazon Lightsail instance is finished rebooting, Lightsail assigns a new public IP address. To use the same IP address after restarting, create a static IP address and attach it to the instance. The reboot instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
+      * Restarts a specific instance. The reboot instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
       */
     def rebootInstance(params: RebootInstanceRequest): awsDashSdkLib.libRequestMod.Request[RebootInstanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def rebootInstance(
@@ -5509,7 +5521,7 @@ object LightsailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ReleaseStaticIpResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation. The start instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
+      * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Lightsail Dev Guide.  The start instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
       */
     def startInstance(): awsDashSdkLib.libRequestMod.Request[StartInstanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def startInstance(
@@ -5520,7 +5532,7 @@ object LightsailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartInstanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation. The start instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
+      * Starts a specific Amazon Lightsail instance from a stopped state. To restart an instance, use the reboot instance operation.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Lightsail Dev Guide.  The start instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
       */
     def startInstance(params: StartInstanceRequest): awsDashSdkLib.libRequestMod.Request[StartInstanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def startInstance(
@@ -5555,7 +5567,7 @@ object LightsailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartRelationalDatabaseResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Stops a specific Amazon Lightsail instance that is currently running. The stop instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
+      * Stops a specific Amazon Lightsail instance that is currently running.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Lightsail Dev Guide.  The stop instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
       */
     def stopInstance(): awsDashSdkLib.libRequestMod.Request[StopInstanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def stopInstance(
@@ -5566,7 +5578,7 @@ object LightsailNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopInstanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Stops a specific Amazon Lightsail instance that is currently running. The stop instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
+      * Stops a specific Amazon Lightsail instance that is currently running.  When you start a stopped instance, Lightsail assigns a new public IP address to the instance. To use the same IP address after stopping and starting an instance, create a static IP address and attach it to the instance. For more information, see the Lightsail Dev Guide.  The stop instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.
       */
     def stopInstance(params: StopInstanceRequest): awsDashSdkLib.libRequestMod.Request[StopInstanceResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def stopInstance(
@@ -5957,7 +5969,7 @@ object LightsailNs extends js.Object {
   type Port = scala.Double
   type PortAccessType = awsDashSdkLib.awsDashSdkLibStrings.Public | awsDashSdkLib.awsDashSdkLibStrings.Private | java.lang.String
   type PortInfoList = js.Array[PortInfo]
-  type PortInfoSourceType = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | awsDashSdkLib.awsDashSdkLibStrings.INSTANCE | awsDashSdkLib.awsDashSdkLibStrings.NONE | java.lang.String
+  type PortInfoSourceType = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | awsDashSdkLib.awsDashSdkLibStrings.INSTANCE | awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.CLOSED | java.lang.String
   type PortList = js.Array[Port]
   type PortState = awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.closed | java.lang.String
   type RecordState = awsDashSdkLib.awsDashSdkLibStrings.Started | awsDashSdkLib.awsDashSdkLibStrings.Succeeded | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String

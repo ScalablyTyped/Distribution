@@ -1875,6 +1875,18 @@ object PinpointNs extends js.Object {
   
   trait Event extends js.Object {
     /**
+      * The package name associated with the app that's recording the event.
+      */
+    var AppPackageName: js.UndefOr[__string] = js.undefined
+    /**
+      * The title of the app that's recording the event.
+      */
+    var AppTitle: js.UndefOr[__string] = js.undefined
+    /**
+      * The version number of the app that's recording the event.
+      */
+    var AppVersionCode: js.UndefOr[__string] = js.undefined
+    /**
       * Custom attributes that are associated with the event you're adding or updating.
       */
     var Attributes: js.UndefOr[MapOf__string] = js.undefined
@@ -1890,6 +1902,10 @@ object PinpointNs extends js.Object {
       * Custom metrics related to the event.
       */
     var Metrics: js.UndefOr[MapOf__double] = js.undefined
+    /**
+      * The name of the SDK that's being used to record the event.
+      */
+    var SdkName: js.UndefOr[__string] = js.undefined
     /**
       * Information about the session in which the event occurred.
       */

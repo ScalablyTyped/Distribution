@@ -14,11 +14,13 @@ trait MethodDefinition[RequestType, ResponseType] extends js.Object {
   @JSName("requestSerialize")
   var requestSerialize_Original: Serialize[RequestType] = js.native
   var requestStream: scala.Boolean = js.native
+  var requestType: MessageTypeDefinition = js.native
   @JSName("responseDeserialize")
   var responseDeserialize_Original: Deserialize[ResponseType] = js.native
   @JSName("responseSerialize")
   var responseSerialize_Original: Serialize[ResponseType] = js.native
   var responseStream: scala.Boolean = js.native
+  var responseType: MessageTypeDefinition = js.native
   def requestDeserialize(bytes: nodeLib.Buffer): RequestType = js.native
   def requestSerialize(value: RequestType): nodeLib.Buffer = js.native
   def responseDeserialize(bytes: nodeLib.Buffer): ResponseType = js.native

@@ -9,6 +9,7 @@
 //                 Joe Flateau      <https://github.com/joeflateau>
 //                 Nikita Koryabkin <https://github.com/Apologiz>
 //                 timhwang21       <https://github.com/timhwang21>
+//                 supaiku0         <https://github.com/supaiku0>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.6
 ```

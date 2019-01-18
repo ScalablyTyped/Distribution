@@ -82,6 +82,10 @@ trait IColumn extends js.Object {
     */
   var isIconOnly: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Indicates whether a dropdown menu is open so that the appropriate ARIA attributes are rendered.
+    */
+  var isMenuOpen: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Determines if the column can render multi-line text.
     */
   var isMultiline: js.UndefOr[scala.Boolean] = js.undefined

@@ -18,18 +18,6 @@ package object wxNs {
   type CompassChangeCallback = js.Function1[/* res */ CompassData, scala.Unit]
   type CompassOptions = BaseOptions[js.Any, js.Any]
   type CustomEvent[T /* <: java.lang.String */, Detail] = BaseEvent[T, Detail]
-  /**
-  	 * There are two valid ways to define the type of data / properties:
-  	 *
-  	 * 1. { name: valueType }
-  	 * 2. { name: { type: valueType, value?: value } }
-  	 *
-  	 * and this conditional type will extract that out so the call-site will typecheck.
-  	 *
-  	 * Note this is different from PropOptions as it is the definitions you passed to Component function
-  	 * whereas this type is for call-site.
-  	 */
-  type DataValueType[Def] = js.Any
   // #endregion
   // #region Compontent组件
   type DefaultData[V] = js.Object | (js.ThisFunction0[/* this */ V, js.Object])
@@ -53,6 +41,18 @@ package object wxNs {
   type PaymentSignType = weixinDashAppLib.weixinDashAppLibStrings.MD5 | weixinDashAppLib.weixinDashAppLibStrings.`HMAC-SHA256`
   type Prop[T] = js.Function0[T] | weixinDashAppLib.Anon_Args[T]
   type PropValidator[T] = PropOptions[T] | Prop[T] | js.Array[Prop[T]]
+  /**
+  	 * There are two valid ways to define the type of data / properties:
+  	 *
+  	 * 1. { name: valueType }
+  	 * 2. { name: { type: valueType, value?: value } }
+  	 *
+  	 * and this conditional type will extract that out so the call-site will typecheck.
+  	 *
+  	 * Note this is different from PropOptions as it is the definitions you passed to Component function
+  	 * whereas this type is for call-site.
+  	 */
+  type PropValueType[Def] = js.Any
   type PropsDefinition[T] = ArrayPropsDefinition[T] | RecordPropsDefinition[T]
   type RecordPropsDefinition[T] = weixinDashAppLib.weixinDashAppLibStrings.RecordPropsDefinition with T
   type RemoveSavedFileOptions = GetSavedFileInfoOptions

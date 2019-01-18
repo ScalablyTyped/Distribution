@@ -21,9 +21,23 @@ trait Job[T] extends js.Object {
   var finishedOn: js.UndefOr[scala.Double] = js.native
   var id: JobId = js.native
   /**
+    * The named processor name
+    */
+  var name: java.lang.String = js.native
+  /**
     * When this job was started (unix milliseconds)
     */
   var processedOn: js.UndefOr[scala.Double] = js.native
+  /**
+    * Which queue this job was part of
+    */
+  var queue: Queue[T] = js.native
+  var returnvalue: js.Any = js.native
+  /**
+    * The stacktrace for any errors
+    */
+  var stacktrace: js.Array[java.lang.String] = js.native
+  var timestamp: scala.Double = js.native
   /**
     * Ensure this job is never ran again even if attemptsMade is less than job.attempts.
     */

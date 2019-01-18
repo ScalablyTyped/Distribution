@@ -13,6 +13,6 @@ trait CallbackNode extends js.Object {
   var next: CallbackNode | scala.Null = js.native
   var prev: CallbackNode | scala.Null = js.native
   var priorityLevel: scala.Double = js.native
-  def callback(deadline: Deadline): FrameCallbackType | scala.Unit = js.native
+  def callback(): FrameCallbackType | scala.Unit = js.native
 }
 

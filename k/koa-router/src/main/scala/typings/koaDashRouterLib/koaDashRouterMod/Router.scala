@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Router extends js.Object {
+trait Router[StateT, CustomT] extends js.Object {
   var params: js.Object = js.native
   var stack: js.Array[koaDashRouterLib.koaDashRouterMod.RouterNs.Layer] = js.native
   /**
@@ -15,121 +15,157 @@ trait Router extends js.Object {
   def all(
     name: java.lang.String,
     path: java.lang.String,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def all(
     name: java.lang.String,
     path: stdLib.RegExp,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def all(path: java.lang.String, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def all(
+    path: java.lang.String,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def all(
     path: js.Array[java.lang.String | stdLib.RegExp],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def all(path: stdLib.RegExp, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def all(
+    path: stdLib.RegExp,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   /**
     * Returns separate middleware for responding to `OPTIONS` requests with
     * an `Allow` header containing the allowed methods, as well as responding
     * with `405 Method Not Allowed` and `501 Not Implemented` as appropriate.
     */
-  def allowedMethods(): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
-  def allowedMethods(options: koaDashRouterLib.koaDashRouterMod.RouterNs.IRouterAllowedMethodsOptions): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
+  def allowedMethods(): koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT] = js.native
+  def allowedMethods(options: koaDashRouterLib.koaDashRouterMod.RouterNs.IRouterAllowedMethodsOptions): koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT] = js.native
   /**
     * Alias for `router.delete()` because delete is a reserved word
     */
   def del(
     name: java.lang.String,
     path: java.lang.String,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def del(
     name: java.lang.String,
     path: stdLib.RegExp,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def del(path: java.lang.String, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def del(
+    path: java.lang.String,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def del(
     path: js.Array[java.lang.String | stdLib.RegExp],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def del(path: stdLib.RegExp, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def del(
+    path: stdLib.RegExp,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   /**
     * HTTP delete method
     */
   def delete(
     name: java.lang.String,
     path: java.lang.String,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def delete(
     name: java.lang.String,
     path: stdLib.RegExp,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def delete(path: java.lang.String, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def delete(
+    path: java.lang.String,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def delete(
     path: js.Array[java.lang.String | stdLib.RegExp],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def delete(path: stdLib.RegExp, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def delete(
+    path: stdLib.RegExp,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   /**
     * HTTP get method
     */
   def get(
     name: java.lang.String,
     path: java.lang.String,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def get(
     name: java.lang.String,
     path: stdLib.RegExp,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def get(path: java.lang.String, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def get(
+    path: java.lang.String,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def get(
     path: js.Array[java.lang.String | stdLib.RegExp],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def get(path: stdLib.RegExp, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def get(
+    path: stdLib.RegExp,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   /**
     * HTTP head method
     */
   def head(
     name: java.lang.String,
     path: java.lang.String,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def head(
     name: java.lang.String,
     path: stdLib.RegExp,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def head(path: java.lang.String, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def head(
+    path: java.lang.String,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def head(
     path: js.Array[java.lang.String | stdLib.RegExp],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def head(path: stdLib.RegExp, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def head(
+    path: stdLib.RegExp,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   /**
     * HTTP link method
     */
   def link(
     name: java.lang.String,
     path: java.lang.String,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def link(
     name: java.lang.String,
     path: stdLib.RegExp,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def link(path: java.lang.String, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def link(
+    path: java.lang.String,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def link(
     path: js.Array[java.lang.String | stdLib.RegExp],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def link(path: stdLib.RegExp, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def link(
+    path: stdLib.RegExp,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   /**
     * Match given `path` and return corresponding routes.
     */
@@ -137,121 +173,145 @@ trait Router extends js.Object {
   /**
     * Returns router middleware which dispatches a route matching the request.
     */
-  def middleware(): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
+  def middleware(): koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT] = js.native
   /**
     * HTTP options method
     */
   def options(
     name: java.lang.String,
     path: java.lang.String,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def options(
     name: java.lang.String,
     path: stdLib.RegExp,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def options(path: java.lang.String, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def options(
+    path: java.lang.String,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def options(
     path: js.Array[java.lang.String | stdLib.RegExp],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def options(path: stdLib.RegExp, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def options(
+    path: stdLib.RegExp,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   /**
     * Run middleware for named route parameters. Useful for auto-loading or validation.
     */
-  def param(param: java.lang.String, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IParamMiddleware): Router = js.native
+  def param(param: java.lang.String, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IParamMiddleware): Router[StateT, CustomT] = js.native
   /**
     * HTTP path method
     */
   def patch(
     name: java.lang.String,
     path: java.lang.String,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def patch(
     name: java.lang.String,
     path: stdLib.RegExp,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def patch(path: java.lang.String, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def patch(
+    path: java.lang.String,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def patch(
     path: js.Array[java.lang.String | stdLib.RegExp],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def patch(path: stdLib.RegExp, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def patch(
+    path: stdLib.RegExp,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   /**
     * HTTP post method
     */
   def post(
     name: java.lang.String,
     path: java.lang.String,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def post(
     name: java.lang.String,
     path: stdLib.RegExp,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def post(path: java.lang.String, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def post(
+    path: java.lang.String,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def post(
     path: js.Array[java.lang.String | stdLib.RegExp],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def post(path: stdLib.RegExp, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def post(
+    path: stdLib.RegExp,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   /**
     * Set the path prefix for a Router instance that was already initialized.
     */
-  def prefix(prefix: java.lang.String): Router = js.native
+  def prefix(prefix: java.lang.String): Router[StateT, CustomT] = js.native
   /**
     * HTTP put method
     */
   def put(
     name: java.lang.String,
     path: java.lang.String,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def put(
     name: java.lang.String,
     path: stdLib.RegExp,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def put(path: java.lang.String, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def put(
+    path: java.lang.String,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def put(
     path: js.Array[java.lang.String | stdLib.RegExp],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def put(path: stdLib.RegExp, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def put(
+    path: stdLib.RegExp,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   /**
     * Redirect `source` to `destination` URL with optional 30x status `code`.
     *
     * Both `source` and `destination` can be route names.
     */
-  def redirect(source: java.lang.String, destination: java.lang.String): Router = js.native
-  def redirect(source: java.lang.String, destination: java.lang.String, code: scala.Double): Router = js.native
+  def redirect(source: java.lang.String, destination: java.lang.String): Router[StateT, CustomT] = js.native
+  def redirect(source: java.lang.String, destination: java.lang.String, code: scala.Double): Router[StateT, CustomT] = js.native
   /**
     * Create and register a route.
     */
   def register(
     path: java.lang.String,
     methods: js.Array[java.lang.String],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware
+    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT]
   ): koaDashRouterLib.koaDashRouterMod.RouterNs.Layer = js.native
   def register(
     path: java.lang.String,
     methods: js.Array[java.lang.String],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware,
+    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT],
     opts: js.Object
   ): koaDashRouterLib.koaDashRouterMod.RouterNs.Layer = js.native
   def register(
     path: stdLib.RegExp,
     methods: js.Array[java.lang.String],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware
+    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT]
   ): koaDashRouterLib.koaDashRouterMod.RouterNs.Layer = js.native
   def register(
     path: stdLib.RegExp,
     methods: js.Array[java.lang.String],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware,
+    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT],
     opts: js.Object
   ): koaDashRouterLib.koaDashRouterMod.RouterNs.Layer = js.native
   /**
@@ -263,26 +323,32 @@ trait Router extends js.Object {
   /**
     * Returns router middleware which dispatches a route matching the request.
     */
-  def routes(): koaLib.koaMod.ApplicationNs.Middleware[_, js.Object] = js.native
+  def routes(): koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT] = js.native
   /**
     * HTTP unlink method
     */
   def unlink(
     name: java.lang.String,
     path: java.lang.String,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def unlink(
     name: java.lang.String,
     path: stdLib.RegExp,
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def unlink(path: java.lang.String, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def unlink(
+    path: java.lang.String,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def unlink(
     path: js.Array[java.lang.String | stdLib.RegExp],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def unlink(path: stdLib.RegExp, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def unlink(
+    path: stdLib.RegExp,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   /**
     * Generate URL for route. Takes either map of named `params` or series of
     * arguments (for regular expression routes)
@@ -323,12 +389,18 @@ trait Router extends js.Object {
     * sequentially, requests start at the first middleware and work their way
     * "down" the middleware stack.
     */
-  def use(middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
-  def use(path: java.lang.String, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+  def use(middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*): Router[StateT, CustomT] = js.native
+  def use(
+    path: java.lang.String,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
   def use(
     path: js.Array[java.lang.String],
-    middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*
-  ): Router = js.native
-  def use(path: stdLib.RegExp, middleware: koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware*): Router = js.native
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
+  def use(
+    path: stdLib.RegExp,
+    middleware: (koaDashRouterLib.koaDashRouterMod.RouterNs.IMiddleware[StateT, CustomT])*
+  ): Router[StateT, CustomT] = js.native
 }
 

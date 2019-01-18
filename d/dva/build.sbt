@@ -1,26 +1,26 @@
 organization := "org.scalablytyped"
 name := "dva"
-version := "2.4.1-9a72d6"
+version := "2.4.1-9b97e8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-61e37d",
-  "org.scalablytyped" %%% "history" % "4.7.2-dt-20181017Z-06a130",
-  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-5edd6b",
-  "org.scalablytyped" %%% "isomorphic-fetch" % "0.0-dt-20180214Z-276dc8",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2be335",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-692895",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-334a51",
-  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-557855",
-  "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190108Z-345bec",
-  "org.scalablytyped" %%% "react-router" % "4.4-dt-20190103Z-163d46",
-  "org.scalablytyped" %%% "react-router-dom" % "4.3-dt-20181211Z-547e51",
-  "org.scalablytyped" %%% "react-router-redux" % "5.0-dt-20181122Z-325e74",
-  "org.scalablytyped" %%% "redux" % "4.0.1-44220d",
-  "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
-  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-e21f3d")
+  "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
+  "org.scalablytyped" %%% "history" % "4.7.2-dt-20181017Z-ee6730",
+  "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-fd94ae",
+  "org.scalablytyped" %%% "isomorphic-fetch" % "0.0-dt-20180214Z-b3a807",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-73addc",
+  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-99d6f9",
+  "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190108Z-53d9ad",
+  "org.scalablytyped" %%% "react-router" % "4.4-dt-20190103Z-2e3673",
+  "org.scalablytyped" %%% "react-router-dom" % "4.3-dt-20181211Z-ff70f0",
+  "org.scalablytyped" %%% "react-router-redux" % "5.0-dt-20181122Z-702c33",
+  "org.scalablytyped" %%% "redux" % "4.0.1-0f174c",
+  "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
+  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-bc5916")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

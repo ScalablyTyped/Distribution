@@ -823,6 +823,9 @@ object plotlyDotJsLibStrings {
   sealed trait picture extends js.Object
   
   @js.native
+  sealed trait pie extends js.Object
+  
+  @js.native
   sealed trait pixel extends js.Object
   
   @js.native
@@ -1031,6 +1034,9 @@ object plotlyDotJsLibStrings {
   
   @js.native
   sealed trait scattergl extends js.Object
+  
+  @js.native
+  sealed trait scatterpolar extends js.Object
   
   @js.native
   sealed trait scatterternary extends js.Object
@@ -1715,6 +1721,7 @@ object plotlyDotJsLibStrings {
   def percent: percent = "percent".asInstanceOf[percent]
   def persian: persian = "persian".asInstanceOf[persian]
   def picture: picture = "picture".asInstanceOf[picture]
+  def pie: pie = "pie".asInstanceOf[pie]
   def pixel: pixel = "pixel".asInstanceOf[pixel]
   def pixels: pixels = "pixels".asInstanceOf[pixels]
   def plotly_afterexport: plotly_afterexport = "plotly_afterexport".asInstanceOf[plotly_afterexport]
@@ -1785,6 +1792,7 @@ object plotlyDotJsLibStrings {
   def scatter3d: scatter3d = "scatter3d".asInstanceOf[scatter3d]
   def scattergeo: scattergeo = "scattergeo".asInstanceOf[scattergeo]
   def scattergl: scattergl = "scattergl".asInstanceOf[scattergl]
+  def scatterpolar: scatterpolar = "scatterpolar".asInstanceOf[scatterpolar]
   def scatterternary: scatterternary = "scatterternary".asInstanceOf[scatterternary]
   def script: script = "script".asInstanceOf[script]
   def sd: sd = "sd".asInstanceOf[sd]

@@ -14,9 +14,11 @@ trait PlotData extends js.Object {
   var error_y: ErrorBar
   var fill: plotlyDotJsLib.plotlyDotJsLibStrings.none | plotlyDotJsLib.plotlyDotJsLibStrings.tozeroy | plotlyDotJsLib.plotlyDotJsLibStrings.tozerox | plotlyDotJsLib.plotlyDotJsLibStrings.tonexty | plotlyDotJsLib.plotlyDotJsLibStrings.tonextx | plotlyDotJsLib.plotlyDotJsLibStrings.toself | plotlyDotJsLib.plotlyDotJsLibStrings.tonext
   var fillcolor: java.lang.String
+  var hole: scala.Double
   var hoverinfo: plotlyDotJsLib.plotlyDotJsLibStrings.all | plotlyDotJsLib.plotlyDotJsLibStrings.name | plotlyDotJsLib.plotlyDotJsLibStrings.none | plotlyDotJsLib.plotlyDotJsLibStrings.skip | plotlyDotJsLib.plotlyDotJsLibStrings.text | plotlyDotJsLib.plotlyDotJsLibStrings.x | plotlyDotJsLib.plotlyDotJsLibStrings.`x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`x+y+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`y+x+z+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+y+x+name` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y+text` | plotlyDotJsLib.plotlyDotJsLibStrings.`z+x+y+name`
   var hoverlabel: stdLib.Partial[Label]
   var hoveron: plotlyDotJsLib.plotlyDotJsLibStrings.points | plotlyDotJsLib.plotlyDotJsLibStrings.fills
+  var labels: js.Array[Datum]
   var legendgroup: java.lang.String
   var line: stdLib.Partial[ScatterLine]
   var `line.color`: Color
@@ -42,10 +44,13 @@ trait PlotData extends js.Object {
   var mode: plotlyDotJsLib.plotlyDotJsLibStrings.lines | plotlyDotJsLib.plotlyDotJsLibStrings.markers | plotlyDotJsLib.plotlyDotJsLibStrings.text | plotlyDotJsLib.plotlyDotJsLibStrings.`lines+markers` | plotlyDotJsLib.plotlyDotJsLibStrings.`text+markers` | plotlyDotJsLib.plotlyDotJsLibStrings.`text+lines` | plotlyDotJsLib.plotlyDotJsLibStrings.`text+lines+markers` | plotlyDotJsLib.plotlyDotJsLibStrings.none
   var name: java.lang.String
   var orientation: plotlyDotJsLib.plotlyDotJsLibStrings.v | plotlyDotJsLib.plotlyDotJsLibStrings.h
+  var r: js.Array[Datum]
   var text: java.lang.String | js.Array[java.lang.String]
+  var theta: js.Array[Datum]
   var transforms: js.Array[DataTransform]
   var transpose: scala.Boolean
-  var `type`: plotlyDotJsLib.plotlyDotJsLibStrings.bar | plotlyDotJsLib.plotlyDotJsLibStrings.box | plotlyDotJsLib.plotlyDotJsLibStrings.candlestick | plotlyDotJsLib.plotlyDotJsLibStrings.choropleth | plotlyDotJsLib.plotlyDotJsLibStrings.contour | plotlyDotJsLib.plotlyDotJsLibStrings.heatmap | plotlyDotJsLib.plotlyDotJsLibStrings.histogram | plotlyDotJsLib.plotlyDotJsLibStrings.mesh3d | plotlyDotJsLib.plotlyDotJsLibStrings.ohlc | plotlyDotJsLib.plotlyDotJsLibStrings.parcoords | plotlyDotJsLib.plotlyDotJsLibStrings.pointcloud | plotlyDotJsLib.plotlyDotJsLibStrings.scatter | plotlyDotJsLib.plotlyDotJsLibStrings.scatter3d | plotlyDotJsLib.plotlyDotJsLibStrings.scattergeo | plotlyDotJsLib.plotlyDotJsLibStrings.scattergl | plotlyDotJsLib.plotlyDotJsLibStrings.scatterternary | plotlyDotJsLib.plotlyDotJsLibStrings.surface
+  var `type`: plotlyDotJsLib.plotlyDotJsLibStrings.bar | plotlyDotJsLib.plotlyDotJsLibStrings.box | plotlyDotJsLib.plotlyDotJsLibStrings.candlestick | plotlyDotJsLib.plotlyDotJsLibStrings.choropleth | plotlyDotJsLib.plotlyDotJsLibStrings.contour | plotlyDotJsLib.plotlyDotJsLibStrings.heatmap | plotlyDotJsLib.plotlyDotJsLibStrings.histogram | plotlyDotJsLib.plotlyDotJsLibStrings.mesh3d | plotlyDotJsLib.plotlyDotJsLibStrings.ohlc | plotlyDotJsLib.plotlyDotJsLibStrings.parcoords | plotlyDotJsLib.plotlyDotJsLibStrings.pie | plotlyDotJsLib.plotlyDotJsLibStrings.pointcloud | plotlyDotJsLib.plotlyDotJsLibStrings.scatter | plotlyDotJsLib.plotlyDotJsLibStrings.scatter3d | plotlyDotJsLib.plotlyDotJsLibStrings.scattergeo | plotlyDotJsLib.plotlyDotJsLibStrings.scattergl | plotlyDotJsLib.plotlyDotJsLibStrings.scatterpolar | plotlyDotJsLib.plotlyDotJsLibStrings.scatterternary | plotlyDotJsLib.plotlyDotJsLibStrings.surface
+  var values: js.Array[Datum]
   var visible: scala.Boolean | plotlyDotJsLib.plotlyDotJsLibStrings.legendonly
   var x: js.Array[Datum] | js.Array[js.Array[Datum]] | TypedArray
   var xaxis: java.lang.String

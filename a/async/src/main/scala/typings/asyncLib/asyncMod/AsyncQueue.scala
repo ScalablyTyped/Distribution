@@ -22,6 +22,7 @@ trait AsyncQueue[T] extends js.Object {
   def push[R, E](task: T, callback: AsyncResultCallback[R, E]): scala.Unit = js.native
   def push[R, E](task: js.Array[T]): scala.Unit = js.native
   def push[R, E](task: js.Array[T], callback: AsyncResultCallback[R, E]): scala.Unit = js.native
+  def remove(filter: js.Function1[/* node */ DataContainer[T], scala.Boolean]): scala.Unit = js.native
   def resume(): scala.Unit = js.native
   def running(): scala.Double = js.native
   def saturated(): js.Any = js.native
@@ -30,6 +31,6 @@ trait AsyncQueue[T] extends js.Object {
   def unshift[E](task: T, callback: ErrorCallback[E]): scala.Unit = js.native
   def unshift[E](task: js.Array[T]): scala.Unit = js.native
   def unshift[E](task: js.Array[T], callback: ErrorCallback[E]): scala.Unit = js.native
-  def workersList(): js.Array[asyncLib.Anon_Callback[T]] = js.native
+  def workersList[TWorker /* <: DataContainer[T] */, CallbackContainer](): js.Array[TWorker] = js.native
 }
 

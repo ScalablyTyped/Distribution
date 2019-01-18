@@ -28,16 +28,16 @@ object lodashLibStrings {
   sealed trait LodashMapValues extends js.Object
   
   @js.native
+  sealed trait LodashMapValues2x1 extends js.Object
+  
+  @js.native
+  sealed trait LodashMapValues2x2 extends js.Object
+  
+  @js.native
   sealed trait LodashMapValues3x1 extends js.Object
   
   @js.native
-  sealed trait LodashMapValues3x2 extends js.Object
-  
-  @js.native
-  sealed trait LodashMapValues4x1 extends js.Object
-  
-  @js.native
-  sealed trait LodashMapValues7x1 extends js.Object
+  sealed trait LodashMapValues6x1 extends js.Object
   
   @js.native
   sealed trait PartialDeep extends js.Object
@@ -55,10 +55,10 @@ object lodashLibStrings {
   def LoDashImplicitWrapper: LoDashImplicitWrapper = "LoDashImplicitWrapper".asInstanceOf[LoDashImplicitWrapper]
   def LoDashStatic: LoDashStatic = "LoDashStatic".asInstanceOf[LoDashStatic]
   def LodashMapValues: LodashMapValues = "LodashMapValues".asInstanceOf[LodashMapValues]
+  def LodashMapValues2x1: LodashMapValues2x1 = "LodashMapValues2x1".asInstanceOf[LodashMapValues2x1]
+  def LodashMapValues2x2: LodashMapValues2x2 = "LodashMapValues2x2".asInstanceOf[LodashMapValues2x2]
   def LodashMapValues3x1: LodashMapValues3x1 = "LodashMapValues3x1".asInstanceOf[LodashMapValues3x1]
-  def LodashMapValues3x2: LodashMapValues3x2 = "LodashMapValues3x2".asInstanceOf[LodashMapValues3x2]
-  def LodashMapValues4x1: LodashMapValues4x1 = "LodashMapValues4x1".asInstanceOf[LodashMapValues4x1]
-  def LodashMapValues7x1: LodashMapValues7x1 = "LodashMapValues7x1".asInstanceOf[LodashMapValues7x1]
+  def LodashMapValues6x1: LodashMapValues6x1 = "LodashMapValues6x1".asInstanceOf[LodashMapValues6x1]
   def PartialDeep: PartialDeep = "PartialDeep".asInstanceOf[PartialDeep]
   def asc: asc = "asc".asInstanceOf[asc]
   def desc: desc = "desc".asInstanceOf[desc]

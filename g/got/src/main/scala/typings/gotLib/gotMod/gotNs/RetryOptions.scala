@@ -6,6 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait RetryOptions extends js.Object {
+  /**
+    * Allowed error codes.
+    */
+  var errorCodes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var maxRetryAfter: js.UndefOr[scala.Double] = js.undefined
   var methods: js.UndefOr[
     js.Array[

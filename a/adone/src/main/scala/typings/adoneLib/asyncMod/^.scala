@@ -16,9 +16,9 @@ object ^ extends js.Object {
   val anySeries: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
   val concatSeries: asyncLib.Anon_ArrCallbackIteratorArray = js.native
   val detectSeries: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncResultCallback = js.native
-  val eachOf: asyncLib.Anon_CallbackIterator = js.native
-  val eachOfLimit: asyncLib.Anon_CallbackIteratorLimit = js.native
-  val eachOfSeries: asyncLib.Anon_CallbackIterator = js.native
+  val eachOf: asyncLib.Anon_Callback = js.native
+  val eachOfLimit: asyncLib.Anon_CallbackIterator = js.native
+  val eachOfSeries: asyncLib.Anon_Callback = js.native
   val eachSeries: asyncLib.Anon_Arr = js.native
   val everySeries: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIteratorAsyncBooleanResultCallback = js.native
   val filterSeries: asyncLib.Anon_ArrCallbackIteratorAsyncBooleanIterator = js.native
@@ -29,7 +29,7 @@ object ^ extends js.Object {
   val foldr: asyncLib.Anon_ArrCallbackIteratorMemo = js.native
   val forEach: asyncLib.Anon_Arr = js.native
   val forEachLimit: asyncLib.Anon_ArrCallback = js.native
-  val forEachOfSeries: asyncLib.Anon_CallbackIterator = js.native
+  val forEachOfSeries: asyncLib.Anon_Callback = js.native
   val forEachSeries: asyncLib.Anon_Arr = js.native
   val inject: asyncLib.Anon_ArrCallbackIteratorMemo = js.native
   val mapSeries: asyncLib.Anon_ArrCallbackIterator = js.native

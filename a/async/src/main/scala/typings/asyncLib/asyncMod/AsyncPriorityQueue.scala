@@ -26,6 +26,6 @@ trait AsyncPriorityQueue[T] extends js.Object {
   def running(): scala.Double = js.native
   def saturated(): js.Any = js.native
   def unsaturated(): scala.Unit = js.native
-  def workersList(): js.Array[asyncLib.Anon_CallbackData[T]] = js.native
+  def workersList[TWorker /* <: DataContainer[T] */, CallbackContainer, PriorityContainer](): js.Array[TWorker] = js.native
 }
 

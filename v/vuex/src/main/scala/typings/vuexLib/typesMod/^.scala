@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("vuex/types", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: vuexLib.Anon_Install = js.native
+  val default: vuexLib.Anon_Args = js.native
   val mapActions: vuexLib.typesHelpersMod.Mapper[vuexLib.typesHelpersMod.ActionMethod] with vuexLib.typesHelpersMod.MapperWithNamespace[vuexLib.typesHelpersMod.ActionMethod] with (vuexLib.typesHelpersMod.FunctionMapper[vuexLib.typesMod.Dispatch, vuexLib.typesHelpersMod.ActionMethod]) with (vuexLib.typesHelpersMod.FunctionMapperWithNamespace[vuexLib.typesMod.Dispatch, vuexLib.typesHelpersMod.ActionMethod]) = js.native
   val mapGetters: vuexLib.typesHelpersMod.Mapper[vuexLib.typesHelpersMod.Computed] with vuexLib.typesHelpersMod.MapperWithNamespace[vuexLib.typesHelpersMod.Computed] = js.native
   val mapMutations: vuexLib.typesHelpersMod.Mapper[vuexLib.typesHelpersMod.MutationMethod] with vuexLib.typesHelpersMod.MapperWithNamespace[vuexLib.typesHelpersMod.MutationMethod] with (vuexLib.typesHelpersMod.FunctionMapper[vuexLib.typesMod.Commit, vuexLib.typesHelpersMod.MutationMethod]) with (vuexLib.typesHelpersMod.FunctionMapperWithNamespace[vuexLib.typesMod.Commit, vuexLib.typesHelpersMod.MutationMethod]) = js.native

@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "angular__animations"
-version := "7.2.1-d1b9fd"
+version := "7.2.1-6137f2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular__core" % "7.2.1-c037c9",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-2be335",
-  "org.scalablytyped" %%% "rxjs" % "6.3.3-08fcfc",
-  "org.scalablytyped" %%% "std" % "3.2.2-2926f1",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-cc9481",
-  "org.scalablytyped" %%% "zone_dot_js" % "0.8.28-6288c5")
+  "org.scalablytyped" %%% "angular__core" % "7.2.1-75ffe7",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
+  "org.scalablytyped" %%% "rxjs" % "6.3.3-6ba20f",
+  "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-688770",
+  "org.scalablytyped" %%% "zone_dot_js" % "0.8.28-6e36e5")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

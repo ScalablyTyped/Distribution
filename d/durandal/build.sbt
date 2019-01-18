@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "durandal"
-version := "2.1.0-dt-20181015Z-f0ba86"
+version := "2.1.0-dt-20181015Z-7a697f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-1d30f0",
-  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190102Z-e6e058",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-e7e832",
-  "org.scalablytyped" %%% "std" % "3.2.2-2926f1")
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-f7f24f",
+  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190102Z-ef5c46",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-b20ceb",
+  "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -13,7 +13,7 @@ trait Component[D, P] extends js.Object {
   /**
   		 * 组件数据，包括内部数据和属性值
   		 */
-  var data: weixinDashAppLib.weixinDashAppLibStrings.Component with js.Any = js.native
+  var data: D with weixinDashAppLib.weixinDashAppLibStrings.Component with P = js.native
   /**
   		 * 节点dataset
   		 */
@@ -29,7 +29,7 @@ trait Component[D, P] extends js.Object {
   /**
   		 * 组件数据，包括内部数据和属性值（与 data 一致）
   		 */
-  var properties: weixinDashAppLib.weixinDashAppLibStrings.Component with js.Any = js.native
+  var properties: D with weixinDashAppLib.weixinDashAppLibStrings.Component with P = js.native
   /**
   		 * 节点布局交叉状态API可用于监听两个或多个组件节点在布局位置上的相交状态。这一组API常常可以用于推断某些节点是否可以被用户看见、有多大比例可以被用户看见。
   		 * https://developers.weixin.qq.com/miniprogram/dev/api/intersection-observer.html

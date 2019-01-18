@@ -12,7 +12,7 @@ object mdNs extends js.Object {
   trait MessageDigest extends js.Object {
     def digest(): nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteStringBuffer = js.native
     def update(msg: java.lang.String): MessageDigest = js.native
-    def update(msg: java.lang.String, encoding: Encoding): MessageDigest = js.native
+    def update(msg: java.lang.String, encoding: nodeDashForgeLib.nodeDashForgeMod.Encoding): MessageDigest = js.native
   }
   
   @JSName("md5")
@@ -39,6 +39,5 @@ object mdNs extends js.Object {
     def create(): nodeDashForgeLib.nodeDashForgeMod.mdNs.MessageDigest = js.native
   }
   
-  type Encoding = nodeDashForgeLib.nodeDashForgeLibStrings.raw | nodeDashForgeLib.nodeDashForgeLibStrings.utf8
 }
 

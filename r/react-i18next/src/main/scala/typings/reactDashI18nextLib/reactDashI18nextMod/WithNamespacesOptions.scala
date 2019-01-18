@@ -13,6 +13,6 @@ trait WithNamespacesOptions extends ReactI18NextOptions {
     ])
   ] = js.undefined
   @JSName("wait")
-  var wait_FWithNamespacesOptions: scala.Boolean
+  var wait_FWithNamespacesOptions: js.UndefOr[scala.Boolean] = js.undefined
 }
 
