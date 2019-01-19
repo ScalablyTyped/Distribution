@@ -15,6 +15,6 @@ object mongooseDashAutoDashIncrementMod extends js.Object {
   /**
     * The function to use when invoking the plugin on a custom schema.
     */
-  def plugin(schema: mongooseLib.mongooseMod.Schema, options: js.Object): scala.Unit = js.native
+  def plugin(schema: mongooseLib.mongooseMod.Schema[_], options: js.Object): scala.Unit = js.native
 }
 

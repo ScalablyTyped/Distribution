@@ -45,7 +45,6 @@ trait Area[Datum] extends js.Object {
   /**
     * Sets the curve factory and returns this area generator.
     *
-    *
     * @param curve A valid curve factory.
     */
   def curve(curve: CurveFactory): this.type = js.native
@@ -74,7 +73,7 @@ trait Area[Datum] extends js.Object {
     * As a result, the generated area may have several discrete segments.
     *
     * Note that if an area segment consists of only a single point, it may appear invisible unless rendered with rounded or square line caps.
-    * In addition, some curves such as curveCardinalOpen only render a visible segment if it contains multiple points
+    * In addition, some curves such as curveCardinalOpen only render a visible segment if it contains multiple points.
     *
     * @param defined An accessor function which returns a boolean value. The accessor will be invoked for each defined element in the input data array,
     * being passed the element d, the index i, and the array data as three arguments.
@@ -93,9 +92,9 @@ trait Area[Datum] extends js.Object {
     * As a result, the generated area may have several discrete segments.
     *
     * Note that if an area segment consists of only a single point, it may appear invisible unless rendered with rounded or square line caps.
-    * In addition, some curves such as curveCardinalOpen only render a visible segment if it contains multiple points
+    * In addition, some curves such as curveCardinalOpen only render a visible segment if it contains multiple points.
     *
-    * @param defined A boolean constant
+    * @param defined A boolean constant.
     */
   def defined(defined: scala.Boolean): this.type = js.native
   /**
@@ -238,7 +237,6 @@ trait Area[Datum] extends js.Object {
     * two-element array of numbers.
     *
     * If the y1 accessor is null, the previously-computed y0 value is reused for the y1 value.
-    *
     */
   def y1(): (js.Function3[/* d */ Datum, /* index */ scala.Double, /* data */ js.Array[Datum], scala.Double]) | scala.Null = js.native
   /**

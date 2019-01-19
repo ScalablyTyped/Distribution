@@ -122,7 +122,7 @@ trait LineRadial[Datum] extends js.Object {
     * Note that if a radial line segment consists of only a single point, it may appear invisible unless rendered with rounded or square line caps.
     * In addition, some curves such as curveCardinalOpen only render a visible segment if it contains multiple points.
     *
-    * @param defined A boolean constant
+    * @param defined A boolean constant.
     */
   def defined(defined: scala.Boolean): this.type = js.native
   /**

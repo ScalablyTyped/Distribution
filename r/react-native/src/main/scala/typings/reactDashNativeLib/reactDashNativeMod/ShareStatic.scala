@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ShareStatic extends js.Object {
-  var dismissedAction: java.lang.String = js.native
-  var sharedAction: java.lang.String = js.native
+  var dismissedAction: reactDashNativeLib.reactDashNativeLibStrings.dismissedAction = js.native
+  var sharedAction: reactDashNativeLib.reactDashNativeLibStrings.sharedAction = js.native
   /**
     * Open a dialog to share text content.
     *
@@ -41,7 +41,7 @@ trait ShareStatic extends js.Object {
     * - `dialogTitle`
     *
     */
-  def share(content: ShareContent): js.Promise[js.Object] = js.native
-  def share(content: ShareContent, options: ShareOptions): js.Promise[js.Object] = js.native
+  def share(content: ShareContent): js.Promise[ShareAction] = js.native
+  def share(content: ShareContent, options: ShareOptions): js.Promise[ShareAction] = js.native
 }
 

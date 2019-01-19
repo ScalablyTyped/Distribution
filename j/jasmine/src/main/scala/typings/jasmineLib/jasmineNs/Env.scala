@@ -7,13 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Env extends js.Object {
-  var clearInterval: scala.Unit = js.native
-  var clearTimeout: scala.Unit = js.native
   var currentSpec: Spec = js.native
   var matchersClass: Matchers[_] = js.native
-  var setInterval: js.Any = js.native
-  var setTimeout: js.Any = js.native
-  var updateInterval: scala.Double = js.native
   def addCustomEqualityTester(equalityTester: CustomEqualityTester): scala.Unit = js.native
   def addMatchers(matchers: CustomMatcherFactories): scala.Unit = js.native
   def addReporter(reporter: CustomReporter): scala.Unit = js.native

@@ -29,6 +29,9 @@ class Document ()
     * [Api set: WordApi 1.1]
     */
   val contentControls: ContentControlCollection = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Document: RequestContext = js.native
   /**
     *
     * Gets the properties of the document. Read-only.

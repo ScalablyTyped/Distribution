@@ -119,7 +119,6 @@ trait Pie[This, Datum] extends js.Object {
     * @param comparator The value comparator takes two arguments a and b which are values derived from the input data array using the value accessor, not the data elements.
     * If the arc for a should be before the arc for b, then the comparator must return a number less than zero;
     * if the arc for a should be after the arc for b, then the comparator must return a number greater than zero; returning zero means that the relative order of a and b is unspecified.
-    *
     */
   def sortValues(comparator: js.Function2[/* a */ scala.Double, /* b */ scala.Double, scala.Double]): this.type = js.native
   /**
@@ -175,7 +174,6 @@ trait Pie[This, Datum] extends js.Object {
   /**
     * Returns the current value accessor, which defaults to a function returning the first argument passed into it.
     * The default value accessor assumes that the input data are numbers, or that they are coercible to numbers using valueOf.
-    *
     */
   def value(): js.Function3[/* d */ Datum, /* i */ scala.Double, /* data */ js.Array[Datum], scala.Double] = js.native
   /**
@@ -184,7 +182,6 @@ trait Pie[This, Datum] extends js.Object {
     * When a pie is generated, the value accessor will be invoked for each element in the input data array.
     * The default value accessor assumes that the input data are numbers, or that they are coercible to numbers using valueOf.
     * If your data are not simply numbers, then you should specify an accessor that returns the corresponding numeric value for a given datum.
-    *
     *
     * @param value A value accessor function, which is invoked for each element in the input data array, being passed the element d, the index i, and the array data as three arguments.
     * It returns a numeric value.

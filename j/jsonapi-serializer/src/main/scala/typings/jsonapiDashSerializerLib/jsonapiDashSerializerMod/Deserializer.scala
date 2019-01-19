@@ -1,0 +1,13 @@
+package typings
+package jsonapiDashSerializerLib.jsonapiDashSerializerMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait Deserializer extends js.Object {
+  def deserialize(data: js.Any): js.Promise[_] = js.native
+  def deserialize(data: js.Any, callback: Callback): scala.Unit = js.native
+}
+

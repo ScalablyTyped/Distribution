@@ -178,7 +178,7 @@ class Item () extends js.Object {
     * The shadow’s offset.
     * Default - 0
     */
-  var shadowOffset: scala.Double = js.native
+  var shadowOffset: scala.Double | js.Array[scala.Double] | paperLib.Anon_X | Point = js.native
   /**
     * The bounding rectangle of the item including stroke width.
     */

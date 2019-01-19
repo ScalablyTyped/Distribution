@@ -15,7 +15,7 @@
 //                 Troy Zarger <https://github.com/tzarger>
 //                 Ifiok Jr. <https://github.com/ifiokjr>
 //                 Simon Schick <https://github.com/SimonSchick>
-//                 Slava Yultyyev Schick <https://github.com/yultyyev>
+//                 Slava Yultyyev <https://github.com/yultyyev>
 //                 Corey Psoinos <https://github.com/cpsoinos>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2

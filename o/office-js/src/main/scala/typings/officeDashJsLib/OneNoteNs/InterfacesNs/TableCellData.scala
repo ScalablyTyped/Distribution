@@ -30,13 +30,6 @@ trait TableCellData extends js.Object {
   var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.undefined
   /**
     *
-    * Gets the parent row of the cell. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var parentRow: js.UndefOr[TableRowData] = js.undefined
-  /**
-    *
     * Gets the index of the cell's row in the table. Read-only.
     *
     * [Api set: OneNoteApi 1.1]

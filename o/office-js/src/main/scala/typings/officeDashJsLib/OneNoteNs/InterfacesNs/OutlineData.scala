@@ -16,13 +16,6 @@ trait OutlineData extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Gets the PageContent object that contains the Outline. This object defines the position of the Outline on the page. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var pageContent: js.UndefOr[PageContentData] = js.undefined
-  /**
-    *
     * Gets the collection of Paragraph objects in the Outline. Read-only.
     *
     * [Api set: OneNoteApi 1.1]

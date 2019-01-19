@@ -523,7 +523,7 @@ trait Mailbox extends js.Object {
     userContext: js.Any
   ): scala.Unit = js.native
   /**
-    * Removes an event handler for a supported event.
+    * Removes the event handlers for a supported event type.
     *
     * Currently, the only supported event type is `Office.EventType.ItemChanged`. In Preview, `Office.EventType.OfficeThemeChanged` is also supported.
     *
@@ -536,21 +536,14 @@ trait Mailbox extends js.Object {
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
     * @param eventType The event that should revoke the handler.
-    * @param handler The function to handle the event. The function must accept a single parameter, which is an object literal. 
-    *                The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
     * @param options Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
-  def removeHandlerAsync(eventType: EventType, handler: js.Function1[/* type */ EventType, scala.Unit]): scala.Unit = js.native
+  def removeHandlerAsync(eventType: EventType): scala.Unit = js.native
+  def removeHandlerAsync(eventType: EventType, options: AsyncContextOptions): scala.Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
-    handler: js.Function1[/* type */ EventType, scala.Unit],
-    options: AsyncContextOptions
-  ): scala.Unit = js.native
-  def removeHandlerAsync(
-    eventType: EventType,
-    handler: js.Function1[/* type */ EventType, scala.Unit],
     options: AsyncContextOptions,
     callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native

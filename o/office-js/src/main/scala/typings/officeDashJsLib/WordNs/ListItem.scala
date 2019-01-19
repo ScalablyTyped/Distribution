@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ListItem ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ListItem: RequestContext = js.native
   /**
     *
     * Gets or sets the level of the item in the list.

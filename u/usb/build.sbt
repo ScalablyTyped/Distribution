@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "usb"
-version := "1.1-dt-20190113Z-cb539a"
+version := "1.5-dt-20190117Z-725b7d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -44,20 +44,6 @@ trait ImageData extends js.Object {
   var ocrData: js.UndefOr[officeDashJsDashPreviewLib.OneNoteNs.ImageOcrData] = js.undefined
   /**
     *
-    * Gets the PageContent object that contains the Image. Throws if the Image is not a direct child of a PageContent. This object defines the position of the Image on the page. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var pageContent: js.UndefOr[PageContentData] = js.undefined
-  /**
-    *
-    * Gets the Paragraph object that contains the Image. Throws if the Image is not a direct child of a Paragraph. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var paragraph: js.UndefOr[ParagraphData] = js.undefined
-  /**
-    *
     * Gets or sets the width of the Image layout.
     *
     * [Api set: OneNoteApi 1.1]

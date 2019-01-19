@@ -9,13 +9,6 @@ import scala.scalajs.js.annotation._
 trait DocumentData extends js.Object {
   /**
     *
-    * Gets or sets a value that indicates that, when opening a new document, whether it is allowed to close this document even if this document is untitled. True to close, false otherwise.
-    *
-    * [Api set: WordApi]
-    */
-  var allowCloseOnUntitled: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-    *
     * Gets the body object of the document. The body is the text that excludes headers, footers, footnotes, textboxes, etc.. Read-only.
     *
     * [Api set: WordApi 1.1]

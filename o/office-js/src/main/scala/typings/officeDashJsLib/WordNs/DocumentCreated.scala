@@ -29,6 +29,9 @@ class DocumentCreated ()
     * [Api set: WordApiHiddenDocument 1.3]
     */
   val contentControls: ContentControlCollection = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_DocumentCreated: RequestContext = js.native
   /**
     *
     * Gets the properties of the document. Read-only.

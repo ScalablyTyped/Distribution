@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait MutationStoreValue extends js.Object {
   var error: stdLib.Error | scala.Null
   var loading: scala.Boolean
-  var mutationString: java.lang.String
+  var mutation: graphqlLib.languageAstMod.DocumentNode
   var variables: js.Object
 }
 

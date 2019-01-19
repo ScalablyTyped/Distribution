@@ -11,6 +11,7 @@
 //                 Dmitry Motovilov <https://github.com/funthing>
 //                 Oleg Repin <https://github.com/iamolegga>
 //                 Ting-Wai To <https://github.com/tingwai-to>
+//                 Alex Petty <https://github.com/pettyalex>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 /* =================== USAGE ===================

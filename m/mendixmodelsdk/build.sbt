@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mendixmodelsdk"
-version := "4.18.0-8c96e2"
+version := "4.18.0-e098f6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-ac9f89",
   "org.scalablytyped" %%% "deep-equal" % "1.0-dt-20180214Z-8db044",
-  "org.scalablytyped" %%% "eventsource" % "1.0-dt-20180522Z-0b1b3a",
+  "org.scalablytyped" %%% "eventsource" % "1.1-dt-20190114Z-2f3135",
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-0051a6",
   "org.scalablytyped" %%% "mobx" % "5.8.0-6898ac",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",

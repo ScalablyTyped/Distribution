@@ -10,6 +10,9 @@ object rechartsLibStrings {
   sealed trait alignmentBaseline extends js.Object
   
   @js.native
+  sealed trait area extends js.Object
+  
+  @js.native
   sealed trait auto extends js.Object
   
   @js.native
@@ -77,6 +80,9 @@ object rechartsLibStrings {
   
   @js.native
   sealed trait dataMin extends js.Object
+  
+  @js.native
+  sealed trait diameter extends js.Object
   
   @js.native
   sealed trait diamond extends js.Object
@@ -418,6 +424,7 @@ object rechartsLibStrings {
   sealed trait wye extends js.Object
   
   def alignmentBaseline: alignmentBaseline = "alignmentBaseline".asInstanceOf[alignmentBaseline]
+  def area: area = "area".asInstanceOf[area]
   def auto: auto = "auto".asInstanceOf[auto]
   def band: band = "band".asInstanceOf[band]
   def baselineShift: baselineShift = "baselineShift".asInstanceOf[baselineShift]
@@ -441,6 +448,7 @@ object rechartsLibStrings {
   def cursor: cursor = "cursor".asInstanceOf[cursor]
   def dataMax: dataMax = "dataMax".asInstanceOf[dataMax]
   def dataMin: dataMin = "dataMin".asInstanceOf[dataMin]
+  def diameter: diameter = "diameter".asInstanceOf[diameter]
   def diamond: diamond = "diamond".asInstanceOf[diamond]
   def direction: direction = "direction".asInstanceOf[direction]
   def discard: discard = "discard".asInstanceOf[discard]

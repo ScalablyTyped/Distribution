@@ -30,13 +30,6 @@ trait TableRowData extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Gets the parent table. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var parentTable: js.UndefOr[TableData] = js.undefined
-  /**
-    *
     * Gets the index of the row in its parent table. Read-only.
     *
     * [Api set: OneNoteApi 1.1]

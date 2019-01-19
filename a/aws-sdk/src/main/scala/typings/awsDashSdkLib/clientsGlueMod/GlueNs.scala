@@ -796,7 +796,7 @@ object GlueNs extends js.Object {
   
   trait CreateJobRequest extends js.Object {
     /**
-      * The number of AWS Glue data processing units (DPUs) to allocate to this Job. From 2 to 100 DPUs can be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page.
+      * This parameter is deprecated. Use MaxCapacity instead. The number of AWS Glue data processing units (DPUs) to allocate to this Job. From 2 to 100 DPUs can be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page.
       */
     var AllocatedCapacity: js.UndefOr[IntegerValue] = js.undefined
     /**
@@ -823,6 +823,10 @@ object GlueNs extends js.Object {
       * This field is reserved for future use.
       */
     var LogUri: js.UndefOr[UriString] = js.undefined
+    /**
+      * AWS Glue supports running jobs on a JobCommand.Name="pythonshell" with allocated processing as low as 0.0625 DPU, which can be specified using MaxCapacity. Glue ETL jobs running in any other way cannot have fractional DPU allocations.
+      */
+    var MaxCapacity: js.UndefOr[NullableDouble] = js.undefined
     /**
       * The maximum number of times to retry this job if it fails.
       */
@@ -2231,7 +2235,7 @@ object GlueNs extends js.Object {
   
   trait Job extends js.Object {
     /**
-      * The number of AWS Glue data processing units (DPUs) allocated to runs of this job. From 2 to 100 DPUs can be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page.
+      * This field is deprecated, use MaxCapacity instead. The number of AWS Glue data processing units (DPUs) allocated to runs of this job. From 2 to 100 DPUs can be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page. 
       */
     var AllocatedCapacity: js.UndefOr[IntegerValue] = js.undefined
     /**
@@ -2266,6 +2270,10 @@ object GlueNs extends js.Object {
       * This field is reserved for future use.
       */
     var LogUri: js.UndefOr[UriString] = js.undefined
+    /**
+      * AWS Glue supports running jobs on a JobCommand.Name="pythonshell" with allocated processing as low as 0.0625 DPU, which can be specified using MaxCapacity. Glue ETL jobs running in any other way cannot have fractional DPU allocations.
+      */
+    var MaxCapacity: js.UndefOr[NullableDouble] = js.undefined
     /**
       * The maximum number of times to retry this job after a JobRun fails.
       */
@@ -2328,7 +2336,7 @@ object GlueNs extends js.Object {
   
   trait JobCommand extends js.Object {
     /**
-      * The name of the job command: this must be glueetl.
+      * The name of the job command: this must be glueetl, for an Apache Spark ETL job, or pythonshell, for a Python shell job.
       */
     var Name: js.UndefOr[GenericString] = js.undefined
     /**
@@ -2339,7 +2347,7 @@ object GlueNs extends js.Object {
   
   trait JobRun extends js.Object {
     /**
-      * The number of AWS Glue data processing units (DPUs) allocated to this JobRun. From 2 to 100 DPUs can be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page.
+      * This field is deprecated, use MaxCapacity instead. The number of AWS Glue data processing units (DPUs) allocated to this JobRun. From 2 to 100 DPUs can be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page.
       */
     var AllocatedCapacity: js.UndefOr[IntegerValue] = js.undefined
     /**
@@ -2383,6 +2391,10 @@ object GlueNs extends js.Object {
       */
     var LogGroupName: js.UndefOr[GenericString] = js.undefined
     /**
+      * AWS Glue supports running jobs on a JobCommand.Name="pythonshell" with allocated processing as low as 0.0625 DPU, which can be specified using MaxCapacity. Glue ETL jobs running in any other way cannot have fractional DPU allocations.
+      */
+    var MaxCapacity: js.UndefOr[NullableDouble] = js.undefined
+    /**
       * Specifies configuration properties of a job run notification.
       */
     var NotificationProperty: js.UndefOr[NotificationProperty] = js.undefined
@@ -2414,7 +2426,7 @@ object GlueNs extends js.Object {
   
   trait JobUpdate extends js.Object {
     /**
-      * The number of AWS Glue data processing units (DPUs) to allocate to this Job. From 2 to 100 DPUs can be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page.
+      * This field is deprecated. Use MaxCapacity instead. The number of AWS Glue data processing units (DPUs) to allocate to this Job. From 2 to 100 DPUs can be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page.
       */
     var AllocatedCapacity: js.UndefOr[IntegerValue] = js.undefined
     /**
@@ -2441,6 +2453,10 @@ object GlueNs extends js.Object {
       * This field is reserved for future use.
       */
     var LogUri: js.UndefOr[UriString] = js.undefined
+    /**
+      * AWS Glue supports running jobs on a JobCommand.Name="pythonshell" with allocated processing as low as 0.0625 DPU, which can be specified using MaxCapacity. Glue ETL jobs running in any other way cannot have fractional DPU allocations.
+      */
+    var MaxCapacity: js.UndefOr[NullableDouble] = js.undefined
     /**
       * The maximum number of times to retry this job if it fails.
       */
@@ -2872,7 +2888,7 @@ object GlueNs extends js.Object {
   
   trait StartJobRunRequest extends js.Object {
     /**
-      * The number of AWS Glue data processing units (DPUs) to allocate to this JobRun. From 2 to 100 DPUs can be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page.
+      * This field is deprecated, use MaxCapacity instead. The number of AWS Glue data processing units (DPUs) to allocate to this JobRun. From 2 to 100 DPUs can be allocated; the default is 10. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page.
       */
     var AllocatedCapacity: js.UndefOr[IntegerValue] = js.undefined
     /**
@@ -2887,6 +2903,10 @@ object GlueNs extends js.Object {
       * The ID of a previous JobRun to retry.
       */
     var JobRunId: js.UndefOr[IdString] = js.undefined
+    /**
+      * AWS Glue supports running jobs on a JobCommand.Name="pythonshell" with allocated processing as low as 0.0625 DPU, which can be specified using MaxCapacity. Glue ETL jobs running in any other way cannot have fractional DPU allocations.
+      */
+    var MaxCapacity: js.UndefOr[NullableDouble] = js.undefined
     /**
       * Specifies configuration properties of a job run notification.
       */
@@ -5666,6 +5686,7 @@ object GlueNs extends js.Object {
   type NonNegativeDouble = scala.Double
   type NonNegativeInteger = scala.Double
   type NotifyDelayAfter = scala.Double
+  type NullableDouble = scala.Double
   type OrderList = js.Array[Order]
   type PageSize = scala.Double
   type ParametersMapValue = java.lang.String

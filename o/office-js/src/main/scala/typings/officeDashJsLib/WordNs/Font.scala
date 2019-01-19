@@ -29,6 +29,9 @@ class Font ()
     * [Api set: WordApi 1.1]
     */
   var color: java.lang.String = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Font: RequestContext = js.native
   /**
     *
     * Gets or sets a value that indicates whether the font has a double strikethrough. True if the font is formatted as double strikethrough text, otherwise, false.

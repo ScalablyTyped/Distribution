@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dotenv-webpack"
-version := "1.5-dt-20180409Z-87c964"
+version := "1.7-dt-20190118Z-944f7d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

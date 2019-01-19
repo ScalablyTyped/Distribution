@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait PieArcDatum[T] extends js.Object {
   /**
-    * The input datum; the corresponding element in the input data array of the Pie generator
+    * The input datum; the corresponding element in the input data array of the Pie generator.
     */
   var data: T
   /**

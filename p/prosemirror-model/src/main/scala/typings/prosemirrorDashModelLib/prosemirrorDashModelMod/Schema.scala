@@ -21,7 +21,7 @@ class Schema[N /* <: java.lang.String */, M /* <: java.lang.String */] protected
   /**
     * A map from mark names to mark type objects.
     */
-  var marks: prosemirrorDashModelLib.prosemirrorDashModelLibStrings.Schema with js.Any with (org.scalablytyped.runtime.StringDictionary[NodeType[Schema[N, M]]]) = js.native
+  var marks: prosemirrorDashModelLib.prosemirrorDashModelLibStrings.Schema with js.Any with (org.scalablytyped.runtime.StringDictionary[MarkType[Schema[N, M]]]) = js.native
   /**
     * An object mapping the schema's node names to node type objects.
     */

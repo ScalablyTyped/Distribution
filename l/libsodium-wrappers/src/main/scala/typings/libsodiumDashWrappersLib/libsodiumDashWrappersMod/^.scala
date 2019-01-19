@@ -1833,6 +1833,7 @@ object ^ extends js.Object {
   def crypto_stream_keygen(outputFormat: libsodiumDashWrappersLib.libsodiumDashWrappersMod.Uint8ArrayOutputFormat): stdLib.Uint8Array = js.native
   @JSName("crypto_stream_keygen")
   def crypto_stream_keygen_Uint8Array(): stdLib.Uint8Array = js.native
+  def from_base64(input: java.lang.String): stdLib.Uint8Array = js.native
   def from_base64(
     input: java.lang.String,
     variant: libsodiumDashWrappersLib.libsodiumDashWrappersMod.base64_variants
@@ -1875,10 +1876,12 @@ object ^ extends js.Object {
   def randombytes_uniform(upper_bound: scala.Double): scala.Double = js.native
   def sodium_version_string(): java.lang.String = js.native
   def symbols(): js.Array[java.lang.String] = js.native
+  def to_base64(input: java.lang.String): java.lang.String = js.native
   def to_base64(
     input: java.lang.String,
     variant: libsodiumDashWrappersLib.libsodiumDashWrappersMod.base64_variants
   ): java.lang.String = js.native
+  def to_base64(input: stdLib.Uint8Array): java.lang.String = js.native
   def to_base64(
     input: stdLib.Uint8Array,
     variant: libsodiumDashWrappersLib.libsodiumDashWrappersMod.base64_variants

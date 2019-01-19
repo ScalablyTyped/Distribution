@@ -29,6 +29,9 @@ class InlinePicture ()
     * [Api set: WordApi 1.1]
     */
   var altTextTitle: java.lang.String = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_InlinePicture: RequestContext = js.native
   /**
     *
     * Gets or sets a number that describes the height of the inline image.
@@ -158,7 +161,7 @@ class InlinePicture ()
   def getRange_Whole(rangeLocation: officeDashJsLib.officeDashJsLibStrings.Whole): Range = js.native
   /**
     *
-    * Inserts a break at the specified location in the main document. 
+    * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.2]
     *
@@ -171,7 +174,7 @@ class InlinePicture ()
   ): scala.Unit = js.native
   /**
     *
-    * Inserts a break at the specified location in the main document. 
+    * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.2]
     *
@@ -188,7 +191,7 @@ class InlinePicture ()
   def insertContentControl(): ContentControl = js.native
   /**
     *
-    * Inserts a document at the specified location. 
+    * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.2]
     *
@@ -200,7 +203,7 @@ class InlinePicture ()
   def insertFileFromBase64_After(base64File: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.After): Range = js.native
   /**
     *
-    * Inserts a document at the specified location. 
+    * Inserts a document at the specified location. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.2]
     *
@@ -217,7 +220,7 @@ class InlinePicture ()
   def insertFileFromBase64_Start(base64File: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.Start): Range = js.native
   /**
     *
-    * Inserts HTML at the specified location. 
+    * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.2]
     *
@@ -229,7 +232,7 @@ class InlinePicture ()
   def insertHtml_After(html: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.After): Range = js.native
   /**
     *
-    * Inserts HTML at the specified location. 
+    * Inserts HTML at the specified location. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.2]
     *
@@ -281,7 +284,7 @@ class InlinePicture ()
   def insertInlinePictureFromBase64_Start(base64EncodedImage: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.Start): InlinePicture = js.native
   /**
     *
-    * Inserts OOXML at the specified location.  
+    * Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.2]
     *
@@ -293,7 +296,7 @@ class InlinePicture ()
   def insertOoxml_After(ooxml: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.After): Range = js.native
   /**
     *
-    * Inserts OOXML at the specified location.  
+    * Inserts OOXML at the specified location.  The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.2]
     *
@@ -310,7 +313,7 @@ class InlinePicture ()
   def insertOoxml_Start(ooxml: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.Start): Range = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. 
+    * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.2]
     *
@@ -322,7 +325,7 @@ class InlinePicture ()
   def insertParagraph_After(paragraphText: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.After): Paragraph = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. 
+    * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.2]
     *
@@ -339,7 +342,7 @@ class InlinePicture ()
   def insertParagraph_Start(paragraphText: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.Start): Paragraph = js.native
   /**
     *
-    * Inserts text at the specified location. 
+    * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.2]
     *
@@ -351,7 +354,7 @@ class InlinePicture ()
   def insertText_After(text: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.After): Range = js.native
   /**
     *
-    * Inserts text at the specified location. 
+    * Inserts text at the specified location. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.2]
     *

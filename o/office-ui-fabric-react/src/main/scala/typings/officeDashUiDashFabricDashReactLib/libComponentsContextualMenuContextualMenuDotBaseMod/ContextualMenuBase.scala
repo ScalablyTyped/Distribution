@@ -157,7 +157,13 @@ class ContextualMenuBase protected ()
     hasCheckmarks: js.Any,
     hasIcons: js.Any
   ): js.Any = js.native
-  /* private */ def _renderSectionItem(item: js.Any, menuClassNames: js.Any, index: js.Any, hasCheckmarks: js.Any, hasIcons: js.Any): js.Any = js.native
+  /* private */ def _renderSectionItem(
+    sectionItem: js.Any,
+    menuClassNames: js.Any,
+    index: js.Any,
+    hasCheckmarks: js.Any,
+    hasIcons: js.Any
+  ): js.Any = js.native
   /* private */ def _renderSeparator(index: js.Any, classNames: js.Any): js.Any = js.native
   /* private */ def _renderSeparator(index: js.Any, classNames: js.Any, top: js.Any): js.Any = js.native
   /* private */ def _renderSeparator(index: js.Any, classNames: js.Any, top: js.Any, fromSection: js.Any): js.Any = js.native

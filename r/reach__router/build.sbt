@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "reach__router"
-version := "1.2-dt-20181102Z-3c7d51"
+version := "1.2-dt-20190114Z-a1743e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

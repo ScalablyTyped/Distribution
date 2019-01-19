@@ -15,7 +15,7 @@ trait CameraProps
   var flashMode: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   /** Distance to plane of sharpest focus. A value between `0` and `1`. `0`: infinity focus, `1`: focus as close as possible. Default: `0`. For Android this is available only for some devices and when `useCamera2Api` is set to `true`. */
   var focusDepth: js.UndefOr[scala.Double] = js.undefined
-  var onBarCodeRead: js.UndefOr[BarCodeReadCallback] = js.undefined
+  var onBarCodeScanned: js.UndefOr[BarCodeScannedCallback] = js.undefined
   var onCameraReady: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onFacesDetected: js.UndefOr[js.Function1[/* options */ expoLib.Anon_Faces, scala.Unit]] = js.undefined
   var onMountError: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

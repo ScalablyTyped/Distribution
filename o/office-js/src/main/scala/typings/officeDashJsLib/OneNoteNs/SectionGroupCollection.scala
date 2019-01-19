@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class SectionGroupCollection ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_SectionGroupCollection: RequestContext = js.native
   /**
     *
     * Returns the number of section groups in the collection. Read-only.
@@ -74,6 +77,10 @@ class SectionGroupCollection ()
   def load(option: java.lang.String): SectionGroupCollection = js.native
   def load(option: js.Array[java.lang.String]): SectionGroupCollection = js.native
   def load(option: officeDashJsLib.OfficeExtensionNs.LoadOption): SectionGroupCollection = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original `OneNote.SectionGroupCollection` object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.SectionGroupCollectionData`) that contains an "items" array with shallow copies of any loaded properties from the collection's items.
+    */
   def toJSON(): officeDashJsLib.OneNoteNs.InterfacesNs.SectionGroupCollectionData = js.native
   /**
     * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.

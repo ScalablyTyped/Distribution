@@ -943,12 +943,22 @@ trait MathJsStatic extends js.Object {
     */
   def factorial(n: scala.Double): scala.Double | BigNumber | MathArray | Matrix = js.native
   def filter(
+    x: js.Array[java.lang.String],
+    test: js.Function3[
+      /* value */ js.Any, 
+      /* index */ js.Any, 
+      /* matrix */ Matrix | MathArray | js.Array[java.lang.String], 
+      scala.Boolean
+    ]
+  ): Matrix | MathArray = js.native
+  def filter(x: js.Array[java.lang.String], test: stdLib.RegExp): Matrix | MathArray = js.native
+  def filter(
     x: MathArray,
     test: js.Function3[
       /* value */ js.Any, 
       /* index */ js.Any, 
-      /* matrix */ Matrix | MathArray, 
-      Matrix | MathArray
+      /* matrix */ Matrix | MathArray | js.Array[java.lang.String], 
+      scala.Boolean
     ]
   ): Matrix | MathArray = js.native
   def filter(x: MathArray, test: stdLib.RegExp): Matrix | MathArray = js.native
@@ -966,8 +976,8 @@ trait MathJsStatic extends js.Object {
     test: js.Function3[
       /* value */ js.Any, 
       /* index */ js.Any, 
-      /* matrix */ Matrix | MathArray, 
-      Matrix | MathArray
+      /* matrix */ Matrix | MathArray | js.Array[java.lang.String], 
+      scala.Boolean
     ]
   ): Matrix | MathArray = js.native
   def filter(x: Matrix, test: stdLib.RegExp): Matrix | MathArray = js.native

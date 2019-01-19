@@ -30,6 +30,7 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var legendType: js.UndefOr[LegendType] = js.undefined
   var maxRadius: js.UndefOr[scala.Double] = js.undefined
+  var midAngle: js.UndefOr[scala.Double] = js.undefined
   var minAngle: js.UndefOr[scala.Double] = js.undefined
   var nameKey: js.UndefOr[
     java.lang.String | scala.Double | (js.Function1[/* dataObject */ js.Any, scala.Double])

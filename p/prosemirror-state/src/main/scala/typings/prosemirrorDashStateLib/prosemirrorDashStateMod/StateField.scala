@@ -30,7 +30,7 @@ trait StateField[T, S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sche
     * coming after this one.
     */
   @JSName("apply")
-  def apply(tr: Transaction[_], value: T, oldState: EditorState[S], newState: EditorState[S]): T
+  def apply(tr: Transaction[S], value: T, oldState: EditorState[S], newState: EditorState[S]): T
   /**
     * Initialize the value of the field. `config` will be the object
     * passed to [`EditorState.create`](#state.EditorState^create). Note

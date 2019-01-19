@@ -13,7 +13,7 @@ class QueryManager[TStore] protected () extends js.Object {
   var clientAwareness: js.Any = js.native
   var dataStore: apolloDashClientLib.dataStoreMod.DataStore[TStore] = js.native
   var deduplicator: js.Any = js.native
-  var fetchQueryPromises: js.Any = js.native
+  var fetchQueryRejectFns: js.Any = js.native
   var fetchRequest: js.Any = js.native
   var generateRequestId: js.Any = js.native
   var getObservableQueryPromises: js.Any = js.native
@@ -30,11 +30,6 @@ class QueryManager[TStore] protected () extends js.Object {
   var refetchQueryByName: js.Any = js.native
   var scheduler: apolloDashClientLib.schedulerSchedulerMod.QueryScheduler[TStore] = js.native
   var setQuery: js.Any = js.native
-  def addFetchQueryPromise[T](
-    requestId: scala.Double,
-    resolve: js.Function1[/* result */ apolloDashClientLib.coreTypesMod.ApolloQueryResult[T], scala.Unit],
-    reject: js.Function1[/* error */ stdLib.Error, scala.Unit]
-  ): scala.Unit = js.native
   def addObservableQuery[T](
     queryId: java.lang.String,
     observableQuery: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables]
@@ -93,7 +88,6 @@ class QueryManager[TStore] protected () extends js.Object {
   ): apolloDashClientLib.coreTypesMod.QueryListener = js.native
   def reFetchObservableQueries(): js.Promise[js.Array[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]]] = js.native
   def reFetchObservableQueries(includeStandby: scala.Boolean): js.Promise[js.Array[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]]] = js.native
-  def removeFetchQueryPromise(requestId: scala.Double): scala.Unit = js.native
   def removeObservableQuery(queryId: java.lang.String): scala.Unit = js.native
   def removeQuery(queryId: java.lang.String): scala.Unit = js.native
   def resetStore(): js.Promise[js.Array[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]]] = js.native
@@ -105,6 +99,7 @@ class QueryManager[TStore] protected () extends js.Object {
     options: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables],
     listener: apolloDashClientLib.coreTypesMod.QueryListener
   ): java.lang.String = js.native
+  def stop(): scala.Unit = js.native
   def stopQuery(queryId: java.lang.String): scala.Unit = js.native
   def stopQueryInStore(queryId: java.lang.String): scala.Unit = js.native
   def updateQueryWatch(

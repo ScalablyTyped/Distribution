@@ -22,6 +22,9 @@ class TableBorder ()
     * [Api set: WordApi 1.3]
     */
   var color: java.lang.String = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_TableBorder: RequestContext = js.native
   /**
     *
     * Gets or sets the type of the table border.

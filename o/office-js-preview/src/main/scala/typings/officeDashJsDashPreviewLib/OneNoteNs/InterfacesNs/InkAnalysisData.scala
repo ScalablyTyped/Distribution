@@ -21,12 +21,5 @@ trait InkAnalysisData extends js.Object {
     * [Api set: OneNoteApi 1.1]
     */
   var page: js.UndefOr[PageData] = js.undefined
-  /**
-    *
-    * Gets the ink analysis paragraphs in this page. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var paragraphs: js.UndefOr[js.Array[InkAnalysisParagraphData]] = js.undefined
 }
 

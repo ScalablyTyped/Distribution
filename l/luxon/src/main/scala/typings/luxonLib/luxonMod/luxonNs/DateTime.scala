@@ -90,6 +90,10 @@ trait DateTime extends js.Object {
   def toObject(): DateObject = js.native
   def toObject(options: luxonLib.Anon_IncludeConfig): DateObject = js.native
   def toRFC2822(): java.lang.String = js.native
+  def toRelative(): java.lang.String | scala.Null = js.native
+  def toRelative(options: ToRelativeOptions): java.lang.String | scala.Null = js.native
+  def toRelativeCalendar(): java.lang.String | scala.Null = js.native
+  def toRelativeCalendar(options: ToRelativeCalendarOptions): java.lang.String | scala.Null = js.native
   def toSQL(): java.lang.String = js.native
   def toSQL(options: ToSQLOptions): java.lang.String = js.native
   def toSQLDate(): java.lang.String = js.native

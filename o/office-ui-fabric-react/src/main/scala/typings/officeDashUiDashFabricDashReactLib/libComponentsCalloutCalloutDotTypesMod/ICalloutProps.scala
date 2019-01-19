@@ -148,6 +148,11 @@ trait ICalloutProps
     */
   var preventDismissOnLostFocus: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * If true then the callout will not dismiss on resize
+    * @defaultvalue false
+    */
+  var preventDismissOnResize: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * If true then the callout will not dismiss on scroll
     * @defaultvalue false
     */

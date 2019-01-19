@@ -29,6 +29,9 @@ class Page ()
     * [Api set:  1.1]
     */
   val comments: CommentCollection = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Page: RequestContext = js.native
   /**
     *
     * Returns the height of the page. Read-only.

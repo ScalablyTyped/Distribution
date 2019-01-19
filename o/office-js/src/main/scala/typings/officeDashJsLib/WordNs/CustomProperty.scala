@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class CustomProperty ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_CustomProperty: RequestContext = js.native
   /**
     *
     * Gets the key of the custom property. Read only.

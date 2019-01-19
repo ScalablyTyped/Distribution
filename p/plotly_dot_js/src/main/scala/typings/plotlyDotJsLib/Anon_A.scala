@@ -1840,27 +1840,137 @@ trait Anon_A extends js.Object {
     */
   def cubehelix(h: scala.Double, s: scala.Double, l: scala.Double): d3DashColorLib.d3DashColorMod.CubehelixColor = js.native
   def cubehelix(h: scala.Double, s: scala.Double, l: scala.Double, opacity: scala.Double): d3DashColorLib.d3DashColorMod.CubehelixColor = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveBasis(context: d3DashPathLib.d3DashPathMod.Path): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveBasis(context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveBasisClosed(context: d3DashPathLib.d3DashPathMod.Path): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveBasisClosed(context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveBasisOpen(context: d3DashPathLib.d3DashPathMod.Path): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveBasisOpen(context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveLinear(context: d3DashPathLib.d3DashPathMod.Path): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveLinear(context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveLinearClosed(context: d3DashPathLib.d3DashPathMod.Path): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveLinearClosed(context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveMonotoneX(context: d3DashPathLib.d3DashPathMod.Path): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveMonotoneX(context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveMonotoneY(context: d3DashPathLib.d3DashPathMod.Path): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveMonotoneY(context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveNatural(context: d3DashPathLib.d3DashPathMod.Path): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveNatural(context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveStep(context: d3DashPathLib.d3DashPathMod.Path): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveStep(context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveStepAfter(context: d3DashPathLib.d3DashPathMod.Path): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveStepAfter(context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveStepBefore(context: d3DashPathLib.d3DashPathMod.Path): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
+  /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
   def curveStepBefore(context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D): d3DashShapeLib.d3DashShapeMod.CurveGenerator = js.native
   def customEvent[Context, Result](
     event: d3DashSelectionLib.d3DashSelectionMod.BaseEvent,

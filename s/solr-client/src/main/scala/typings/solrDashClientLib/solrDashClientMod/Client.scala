@@ -40,16 +40,16 @@ trait Client extends js.Object {
     options: Options,
     callback: js.Function2[/* err */ nodeLib.Error, /* data */ js.Object, scala.Unit]
   ): nodeLib.httpMod.ClientRequest = js.native
-  def deleteById(id: java.lang.String): nodeLib.httpMod.ClientRequest = js.native
-  def deleteById(id: java.lang.String, options: Options): nodeLib.httpMod.ClientRequest = js.native
-  def deleteById(
+  def deleteByID(id: java.lang.String): nodeLib.httpMod.ClientRequest = js.native
+  def deleteByID(id: java.lang.String, options: Options): nodeLib.httpMod.ClientRequest = js.native
+  def deleteByID(
     id: java.lang.String,
     options: Options,
     callback: js.Function2[/* err */ nodeLib.Error, /* data */ js.Object, scala.Unit]
   ): nodeLib.httpMod.ClientRequest = js.native
-  def deleteById(id: scala.Double): nodeLib.httpMod.ClientRequest = js.native
-  def deleteById(id: scala.Double, options: Options): nodeLib.httpMod.ClientRequest = js.native
-  def deleteById(
+  def deleteByID(id: scala.Double): nodeLib.httpMod.ClientRequest = js.native
+  def deleteByID(id: scala.Double, options: Options): nodeLib.httpMod.ClientRequest = js.native
+  def deleteByID(
     id: scala.Double,
     options: Options,
     callback: js.Function2[/* err */ nodeLib.Error, /* data */ js.Object, scala.Unit]

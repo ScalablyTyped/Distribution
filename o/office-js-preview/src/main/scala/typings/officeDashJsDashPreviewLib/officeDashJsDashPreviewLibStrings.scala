@@ -913,6 +913,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait Hour extends js.Object
   
   @js.native
+  sealed trait Html extends js.Object
+  
+  @js.native
   sealed trait HundredMillions extends js.Object
   
   @js.native
@@ -2381,6 +2384,7 @@ object officeDashJsDashPreviewLibStrings {
   def Hollow: Hollow = "Hollow".asInstanceOf[Hollow]
   def Horizontal: Horizontal = "Horizontal".asInstanceOf[Horizontal]
   def Hour: Hour = "Hour".asInstanceOf[Hour]
+  def Html: Html = "Html".asInstanceOf[Html]
   def HundredMillions: HundredMillions = "HundredMillions".asInstanceOf[HundredMillions]
   def HundredThousands: HundredThousands = "HundredThousands".asInstanceOf[HundredThousands]
   def Hundreds: Hundreds = "Hundreds".asInstanceOf[Hundreds]

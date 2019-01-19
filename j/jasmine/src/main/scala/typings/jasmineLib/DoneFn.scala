@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/** Action method that should be called when the async work is complete */
+/**
+  * Action method that should be called when the async work is complete.
+  */
 @js.native
 trait DoneFn
   extends js.Function {

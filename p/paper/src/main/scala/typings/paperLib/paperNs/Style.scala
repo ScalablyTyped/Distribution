@@ -76,7 +76,7 @@ class Style () extends js.Object {
     * The shadow's offset.
     * Default: 0
     */
-  var shadowOffset: js.UndefOr[Point] = js.native
+  var shadowOffset: js.UndefOr[scala.Double | js.Array[scala.Double] | paperLib.Anon_X | Point] = js.native
   /**
     * The shape to be used at the beginning and end of open Path items, when they have a stroke.
     * Values: 'round', 'square', 'butt'

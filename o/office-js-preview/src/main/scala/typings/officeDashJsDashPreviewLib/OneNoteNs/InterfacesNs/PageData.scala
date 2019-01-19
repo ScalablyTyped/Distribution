@@ -51,13 +51,6 @@ trait PageData extends js.Object {
   var pageLevel: js.UndefOr[scala.Double] = js.undefined
   /**
     *
-    * Gets the section that contains the page. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var parentSection: js.UndefOr[SectionData] = js.undefined
-  /**
-    *
     * Gets or sets the title of the page.
     *
     * [Api set: OneNoteApi 1.1]

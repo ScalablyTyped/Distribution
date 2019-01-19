@@ -16,7 +16,7 @@ trait Validator[A] extends js.Object {
   var lang: java.lang.String = js.native
   var messages: ErrorMessages = js.native
   var numericRules: js.Array[java.lang.String] = js.native
-  var rules: js.Any = js.native
+  var rules: Rules = js.native
   def attributeFormatter(attribute: js.Any): js.Any = js.native
   def check(): scala.Boolean = js.native
   def checkAsync(): scala.Unit = js.native

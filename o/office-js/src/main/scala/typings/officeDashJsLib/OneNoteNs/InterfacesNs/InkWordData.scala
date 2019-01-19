@@ -23,13 +23,6 @@ trait InkWordData extends js.Object {
   var languageId: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * The parent paragraph containing the ink word. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var paragraph: js.UndefOr[ParagraphData] = js.undefined
-  /**
-    *
     * The words that were recognized in this ink word, in order of likelihood. Read-only.
     *
     * [Api set: OneNoteApi 1.1]

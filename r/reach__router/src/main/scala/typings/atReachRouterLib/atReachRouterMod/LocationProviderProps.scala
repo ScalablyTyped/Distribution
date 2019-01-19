@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait LocationProviderProps extends js.Object {
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | LocationProviderRenderFn] = js.undefined
-  var history: History
+  var history: js.UndefOr[History] = js.undefined
 }
 

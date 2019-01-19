@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait Anon_KeyOptions
   extends org.scalablytyped.runtime.Instantiable2[
       /* key */ java.lang.String, 
-      /* schema */ mongooseLib.mongooseMod.Schema, 
+      /* schema */ mongooseLib.mongooseMod.Schema[js.Any], 
       mongooseLib.mongooseMod.SchemaNs.TypesNs.DocumentArray
     ]
      with org.scalablytyped.runtime.Instantiable3[
       /* key */ java.lang.String, 
-      /* schema */ mongooseLib.mongooseMod.Schema, 
+      /* schema */ mongooseLib.mongooseMod.Schema[js.Any], 
       /* options */ js.Any, 
       mongooseLib.mongooseMod.SchemaNs.TypesNs.DocumentArray
     ] {

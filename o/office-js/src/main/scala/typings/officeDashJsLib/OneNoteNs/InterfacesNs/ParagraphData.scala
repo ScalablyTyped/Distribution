@@ -30,46 +30,11 @@ trait ParagraphData extends js.Object {
   var inkWords: js.UndefOr[js.Array[InkWordData]] = js.undefined
   /**
     *
-    * Gets the Outline object that contains the Paragraph. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var outline: js.UndefOr[OutlineData] = js.undefined
-  /**
-    *
     * The collection of paragraphs under this paragraph. Read only
     *
     * [Api set: OneNoteApi 1.1]
     */
   var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.undefined
-  /**
-    *
-    * Gets the parent paragraph object. Throws if a parent paragraph does not exist. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var parentParagraph: js.UndefOr[ParagraphData] = js.undefined
-  /**
-    *
-    * Gets the parent paragraph object. Returns null if a parent paragraph does not exist. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var parentParagraphOrNull: js.UndefOr[ParagraphData] = js.undefined
-  /**
-    *
-    * Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, throws ItemNotFound. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var parentTableCell: js.UndefOr[TableCellData] = js.undefined
-  /**
-    *
-    * Gets the TableCell object that contains the Paragraph if one exists. If parent is not a TableCell, returns null. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var parentTableCellOrNull: js.UndefOr[TableCellData] = js.undefined
   /**
     *
     * Gets the RichText object in the Paragraph. Throws an exception if ParagraphType is not RichText. Read-only

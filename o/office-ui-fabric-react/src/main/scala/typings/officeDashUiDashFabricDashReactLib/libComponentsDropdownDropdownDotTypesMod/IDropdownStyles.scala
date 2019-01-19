@@ -14,7 +14,7 @@ trait IDropdownStyles extends js.Object {
   var caretDownWrapper: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   /** Refers to the actual Dropdown element. */
   var dropdown: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
-  /** Refers to the dropdown seperator. */
+  /** Refers to the dropdown separator. */
   var dropdownDivider: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   /** Refers to the individual dropdown item. */
   var dropdownItem: atUifabricMergeDashStylesLib.libIStyleMod.IStyle

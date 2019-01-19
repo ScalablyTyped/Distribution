@@ -46,18 +46,18 @@ trait Mongoose extends js.Object {
   def disconnect(fn: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]): scala.Null = js.native
   def get(key: java.lang.String): js.Any = js.native
   def model[T /* <: Document */](name: java.lang.String): Model[T, js.Object] = js.native
-  def model[T /* <: Document */](name: java.lang.String, schema: Schema): Model[T, js.Object] = js.native
-  def model[T /* <: Document */](name: java.lang.String, schema: Schema, collection: java.lang.String): Model[T, js.Object] = js.native
-  def model[T /* <: Document */](name: java.lang.String, schema: Schema, collection: java.lang.String, skipInit: scala.Boolean): Model[T, js.Object] = js.native
+  def model[T /* <: Document */](name: java.lang.String, schema: Schema[_]): Model[T, js.Object] = js.native
+  def model[T /* <: Document */](name: java.lang.String, schema: Schema[_], collection: java.lang.String): Model[T, js.Object] = js.native
+  def model[T /* <: Document */](name: java.lang.String, schema: Schema[_], collection: java.lang.String, skipInit: scala.Boolean): Model[T, js.Object] = js.native
   def modelNames(): js.Array[java.lang.String] = js.native
   @JSName("model")
   def model_TDocumentUModelU[T /* <: Document */, U /* <: Model[T, js.Object] */](name: java.lang.String): U = js.native
   @JSName("model")
-  def model_TDocumentUModelU[T /* <: Document */, U /* <: Model[T, js.Object] */](name: java.lang.String, schema: Schema): U = js.native
+  def model_TDocumentUModelU[T /* <: Document */, U /* <: Model[T, js.Object] */](name: java.lang.String, schema: Schema[_]): U = js.native
   @JSName("model")
-  def model_TDocumentUModelU[T /* <: Document */, U /* <: Model[T, js.Object] */](name: java.lang.String, schema: Schema, collection: java.lang.String): U = js.native
+  def model_TDocumentUModelU[T /* <: Document */, U /* <: Model[T, js.Object] */](name: java.lang.String, schema: Schema[_], collection: java.lang.String): U = js.native
   @JSName("model")
-  def model_TDocumentUModelU[T /* <: Document */, U /* <: Model[T, js.Object] */](name: java.lang.String, schema: Schema, collection: java.lang.String, skipInit: scala.Boolean): U = js.native
+  def model_TDocumentUModelU[T /* <: Document */, U /* <: Model[T, js.Object] */](name: java.lang.String, schema: Schema[_], collection: java.lang.String, skipInit: scala.Boolean): U = js.native
   def plugin(fn: js.Function): /* import warning: ImportType.apply Failed type conversion: typeof mongoose */ js.Any = js.native
   def plugin[T](fn: js.Function, opts: T): /* import warning: ImportType.apply Failed type conversion: typeof mongoose */ js.Any = js.native
   def pluralize(): js.Function1[/* str */ java.lang.String, java.lang.String] = js.native

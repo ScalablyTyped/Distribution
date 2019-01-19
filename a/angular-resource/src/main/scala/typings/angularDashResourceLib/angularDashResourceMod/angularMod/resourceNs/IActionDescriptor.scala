@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait IActionDescriptor extends js.Object {
   var cache: js.UndefOr[scala.Boolean | angularLib.angularMod.angularNs.ICacheObject] = js.undefined
   var cancellable: js.UndefOr[scala.Boolean] = js.undefined
+  var hasBody: js.UndefOr[scala.Boolean] = js.undefined
   var headers: js.UndefOr[js.Any] = js.undefined
   var interceptor: js.UndefOr[IResourceInterceptor] = js.undefined
   var isArray: js.UndefOr[scala.Boolean] = js.undefined

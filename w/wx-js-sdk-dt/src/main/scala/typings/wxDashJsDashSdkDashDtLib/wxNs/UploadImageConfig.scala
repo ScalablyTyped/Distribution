@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UploadImageConfig extends js.Object {
+trait UploadImageConfig extends WxBaseRequestConfig {
   /**
     * 默认为1，显示进度提示
     */
@@ -17,6 +17,7 @@ trait UploadImageConfig extends js.Object {
   /**
     * res: var serverId = res.serverId;  返回图片的服务器端 ID
     */
-  def success(res: js.Any): scala.Unit
+  @JSName("success")
+  def success_MUploadImageConfig(res: js.Any): scala.Unit
 }
 

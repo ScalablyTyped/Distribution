@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IMenuService extends js.Object {
+  def close(): scala.Unit = js.native
   def hide(): angularLib.angularMod.angularNs.IPromise[_] = js.native
   def hide(response: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
   def hide(response: js.Any, options: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native

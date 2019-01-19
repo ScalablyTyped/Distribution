@@ -21,12 +21,5 @@ trait FloatingInkData extends js.Object {
     * [Api set: OneNoteApi 1.1]
     */
   var inkStrokes: js.UndefOr[js.Array[InkStrokeData]] = js.undefined
-  /**
-    *
-    * Gets the PageContent parent of the FloatingInk object. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var pageContent: js.UndefOr[PageContentData] = js.undefined
 }
 

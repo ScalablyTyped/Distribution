@@ -38,7 +38,7 @@ object ^ extends js.Object {
     */
   def config(setting: wxDashJsDashSdkDashDtLib.wxNs.WxConfig): scala.Unit = js.native
   def downloadImage(config: wxDashJsDashSdkDashDtLib.wxNs.DownLoadImageConfig): scala.Unit = js.native
-  def downloadVoice(config: wxDashJsDashSdkDashDtLib.wxNs.downloadVoiceConfig): scala.Unit = js.native
+  def downloadVoice(config: wxDashJsDashSdkDashDtLib.wxNs.DownloadVoiceConfig): scala.Unit = js.native
   /**
     * 配置微信初始化失败后的回调
     * @param err 失败回调
@@ -66,18 +66,22 @@ object ^ extends js.Object {
   def hideMenuItems(config: wxDashJsDashSdkDashDtLib.wxNs.MenuItemsConfig): scala.Unit = js.native
   /**
     * 获取“分享给朋友”按钮点击状态及自定义分享内容接口
+    * @deprecated
     */
   def onMenuShareAppMessage(setting: wxDashJsDashSdkDashDtLib.wxNs.SharedAppMessage): scala.Unit = js.native
   /**
     * “分享到QQ”按钮点击状态及自定义分享内容接口
+    * @deprecated
     */
   def onMenuShareQQ(config: wxDashJsDashSdkDashDtLib.wxNs.MenuShareQQ): scala.Unit = js.native
   /**
     * 获取“分享到QQ空间”按钮点击状态及自定义分享内容接口
+    * @deprecated
     */
   def onMenuShareQZone(config: wxDashJsDashSdkDashDtLib.wxNs.MenuShareWeibo): scala.Unit = js.native
   /**
     * 获取“分享到朋友圈”按钮点击状态及自定义分享内容接口
+    * @deprecated
     */
   def onMenuShareTimeline(setting: wxDashJsDashSdkDashDtLib.wxNs.ShareTimelineConfig): scala.Unit = js.native
   /**
@@ -162,6 +166,16 @@ object ^ extends js.Object {
     * 识别音频并返回识别结果接口
     */
   def translateVoice(config: wxDashJsDashSdkDashDtLib.wxNs.UploadVoiceConfig): scala.Unit = js.native
+  /**
+    * “分享给朋友”及“分享到QQ”
+    * @param config
+    */
+  def updateAppMessageShareData(config: wxDashJsDashSdkDashDtLib.wxNs.ShareToUserConfig): scala.Unit = js.native
+  /**
+    * “分享到朋友圈”及“分享到QQ空间”
+    * @param config
+    */
+  def updateTimelineShareData(config: wxDashJsDashSdkDashDtLib.wxNs.ShareToTimelineConfig): scala.Unit = js.native
   /**
     * 上传图片
     */

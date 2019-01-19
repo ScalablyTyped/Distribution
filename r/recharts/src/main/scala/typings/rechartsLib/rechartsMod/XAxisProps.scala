@@ -29,6 +29,7 @@ trait XAxisProps extends EventAttributes {
   var reversed: js.UndefOr[scala.Boolean] = js.undefined
   var scale: js.UndefOr[ScaleType | RechartsFunction] = js.undefined
   var stroke: js.UndefOr[java.lang.String] = js.undefined
+  var textAnchor: js.UndefOr[java.lang.String] = js.undefined
   var tick: js.UndefOr[
     scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactNs.ReactElement[_]
   ] = js.undefined

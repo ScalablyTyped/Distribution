@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Office")
 @js.native
 object ^ extends js.Object {
-  /**
-    * Provides a container for APIs that are still in Preview, not released for use in production add-ins.
-    */
-  var Preview: officeDashJsLib.Anon_StartCustomFunctions = js.native
   /** A Promise object. Promises can be chained via ".then", and errors can be caught via ".catch". 
     * When a browser-provided native Promise implementation is available, Office.Promise will switch to use the native Promise instead.
     */

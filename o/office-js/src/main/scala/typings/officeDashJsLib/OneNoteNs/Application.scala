@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Application ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Application: RequestContext = js.native
   /**
     *
     * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one notebook at a time is open in the application instance. Read-only.
@@ -133,6 +136,10 @@ class Application ()
     * @param url The client url of the page to open.
     */
   def navigateToPageWithClientUrl(url: java.lang.String): Page = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original OneNote.Application object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ApplicationData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.OneNoteNs.InterfacesNs.ApplicationData = js.native
 }
 

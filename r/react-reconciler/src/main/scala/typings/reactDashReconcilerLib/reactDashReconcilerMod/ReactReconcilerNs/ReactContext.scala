@@ -16,6 +16,7 @@ trait ReactContext[T] extends js.Object {
   var _currentRenderer2: js.UndefOr[js.Object | scala.Null] = js.undefined
   var _currentValue: T
   var _currentValue2: T
+  var _threadCount: scala.Double
   def unstable_read(): T
 }
 

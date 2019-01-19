@@ -9,5 +9,5 @@ import scala.scalajs.js.annotation._
   * Intellisense for Schema definitions
   */
 trait SchemaDefinition
-  extends /* path */ org.scalablytyped.runtime.StringDictionary[SchemaTypeOpts[_] | Schema | SchemaType]
+  extends /* path */ org.scalablytyped.runtime.StringDictionary[SchemaTypeOpts[_] | Schema[_] | SchemaType]
 

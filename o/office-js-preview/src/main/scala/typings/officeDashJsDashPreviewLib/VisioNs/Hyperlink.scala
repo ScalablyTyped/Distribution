@@ -22,6 +22,9 @@ class Hyperlink ()
     * [Api set:  1.1]
     */
   val address: java.lang.String = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Hyperlink: RequestContext = js.native
   /**
     *
     * Gets the description of a hyperlink. Read-only.

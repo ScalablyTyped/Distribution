@@ -32,12 +32,12 @@ class EditorState[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
   /**
     * Start a [transaction](#state.Transaction) from this state.
     */
-  var tr: Transaction[_] = js.native
+  var tr: Transaction[S] = js.native
   /**
     * Apply the given transaction to produce a new state.
     */
   @JSName("apply")
-  def apply(tr: Transaction[_]): EditorState[S] = js.native
+  def apply(tr: Transaction[S]): EditorState[S] = js.native
   /**
     * Verbose variant of [`apply`](#state.EditorState.apply) that
     * returns the precise transactions that were applied (which might
@@ -45,7 +45,7 @@ class EditorState[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
     * hooks](#state.PluginSpec.filterTransaction) of
     * plugins) along with the new state.
     */
-  def applyTransaction(tr: Transaction[_]): prosemirrorDashStateLib.Anon_State[S] = js.native
+  def applyTransaction(tr: Transaction[S]): prosemirrorDashStateLib.Anon_State[S] = js.native
   /**
     * Create a new state based on this one, but with an adjusted set of
     * active plugins. State fields that exist in both sets of plugins

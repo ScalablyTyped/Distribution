@@ -30,6 +30,8 @@ trait Anon_AltFieldsIgnoreDefaultVisibility extends js.Object {
     * Overrides userIp if both are provided.
     */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
+  /** Resource Parameter for folder creation */
+  var resource: js.UndefOr[js.Any] = js.undefined
   /** Whether the requesting application supports Team Drives. */
   var supportsTeamDrives: js.UndefOr[scala.Boolean] = js.undefined
   /** Whether to use the uploaded content as indexable text. */

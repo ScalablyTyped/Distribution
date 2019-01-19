@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "inert"
-version := "5.1-dt-20181022Z-4ef29c"
+version := "5.1-dt-20181022Z-7b306b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "boom" % "7.2-dt-20181116Z-34ff31",
-  "org.scalablytyped" %%% "catbox" % "10.0-dt-20181111Z-60b9fe",
-  "org.scalablytyped" %%% "hapi" % "17.8-dt-20181212Z-9e7376",
+  "org.scalablytyped" %%% "catbox" % "10.0-dt-20190118Z-974f2c",
+  "org.scalablytyped" %%% "hapi" % "17.8-dt-20190118Z-7d290a",
   "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-80f03c",
   "org.scalablytyped" %%% "joi" % "14.0-dt-20181211Z-34f834",
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20180214Z-8d1804",

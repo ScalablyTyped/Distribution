@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 trait Series[Datum, Key]
   extends stdLib.Array[SeriesPoint[Datum]] {
   /**
-    * Index of the series in the series array returned by stack generator
+    * Index of the series in the series array returned by stack generator.
     */
   var index: scala.Double = js.native
   /**
-    * Key of the series
+    * Key of the series.
     */
   var key: Key = js.native
 }

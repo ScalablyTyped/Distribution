@@ -22,6 +22,9 @@ class Table ()
     * [Api set: WordApi 1.3]
     */
   var alignment: Alignment | officeDashJsLib.officeDashJsLibStrings.Mixed | officeDashJsLib.officeDashJsLibStrings.Unknown | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Centered | officeDashJsLib.officeDashJsLibStrings.Right | officeDashJsLib.officeDashJsLibStrings.Justified = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Table: RequestContext = js.native
   /**
     *
     * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.
@@ -539,7 +542,7 @@ class Table ()
   def insertContentControl(): ContentControl = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. 
+    * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.3]
     *
@@ -551,7 +554,7 @@ class Table ()
   def insertParagraph_After(paragraphText: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.After): Paragraph = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. 
+    * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.3]
     *
@@ -568,7 +571,7 @@ class Table ()
   def insertParagraph_Start(paragraphText: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.Start): Paragraph = js.native
   /**
     *
-    * Inserts a table with the specified number of rows and columns. 
+    * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.3]
     *
@@ -599,7 +602,7 @@ class Table ()
   ): Table = js.native
   /**
     *
-    * Inserts a table with the specified number of rows and columns. 
+    * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.3]
     *

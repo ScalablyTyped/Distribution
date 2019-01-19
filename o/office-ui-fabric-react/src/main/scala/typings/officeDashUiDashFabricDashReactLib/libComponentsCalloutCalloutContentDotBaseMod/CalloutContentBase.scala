@@ -28,6 +28,7 @@ class CalloutContentBase protected ()
   /* private */ def _arePositionsEqual(positions: js.Any, newPosition: js.Any): js.Any = js.native
   /* private */ def _comparePositions(oldPositions: js.Any, newPositions: js.Any): js.Any = js.native
   /* protected */ def _dismissOnLostFocus(ev: reactLib.Event): scala.Unit = js.native
+  /* protected */ def _dismissOnResize(ev: reactLib.Event): scala.Unit = js.native
   /* protected */ def _dismissOnScroll(ev: reactLib.Event): scala.Unit = js.native
   /* private */ def _getBeakPosition(): js.Any = js.native
   /* private */ def _getBounds(): js.Any = js.native

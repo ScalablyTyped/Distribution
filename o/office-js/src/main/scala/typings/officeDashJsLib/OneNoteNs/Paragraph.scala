@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Paragraph ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Paragraph: RequestContext = js.native
   /**
     *
     * Gets the ID of the Paragraph object. Read-only.
@@ -341,6 +344,10 @@ class Paragraph ()
   ): scala.Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Paragraph): scala.Unit = js.native
+  /**
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original OneNote.Paragraph object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `OneNote.Interfaces.ParagraphData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsLib.OneNoteNs.InterfacesNs.ParagraphData = js.native
   /**
     * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.

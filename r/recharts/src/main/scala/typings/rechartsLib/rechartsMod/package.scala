@@ -12,7 +12,6 @@ package object rechartsMod {
   type AxisInterval = scala.Double | rechartsLib.rechartsLibStrings.preserveStart | rechartsLib.rechartsLibStrings.preserveEnd | rechartsLib.rechartsLibStrings.preserveStartEnd
   type BBoxUpdateCallback = js.Function1[/* box */ rechartsLib.Anon_HeightWidth, scala.Unit]
   type BarChartProps = CategoricalChartWrapper[LayoutType] with EventAttributes
-  type CellProps = stdLib.Partial[PresentationAttributes[scala.Double, scala.Double]]
   type ComposedChartProps = CategoricalChartWrapper[LayoutType] with EventAttributes
   type ContentRenderer[P] = js.Function1[/* props */ P, reactLib.reactMod.ReactNs.ReactNode]
   type CoordinatesGenerator = js.Function1[/* arg */ rechartsLib.Anon_Height, js.Array[scala.Double]]

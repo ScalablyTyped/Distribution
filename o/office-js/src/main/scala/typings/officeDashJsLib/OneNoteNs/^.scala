@@ -17,13 +17,6 @@ object ^ extends js.Object {
     * Executes a batch script that performs actions on the OneNote object model, using the request context of a previously-created API object.
     * @param object - A previously-created API object. The batch will use the same request context as the passed-in object, which means that any changes applied to the object will be picked up by "context.sync()".
     * @param batch - A function that takes in an OneNote.RequestContext and returns a promise (typically, just the result of "context.sync()"). When the promise is resolved, any tracked objects that were automatically allocated during execution will be released.
-    * 
-    * @remarks
-    * In addition to this signature, the method also has the following signatures:
-    * 
-    * `run<T>(batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;`
-    * 
-    * `run<T>(objects: OfficeExtension.ClientObject[], batch: (context: OneNote.RequestContext) => Promise<T>): Promise<T>;`
     */
   def run[T](
     `object`: officeDashJsLib.OfficeExtensionNs.ClientObject,

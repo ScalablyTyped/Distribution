@@ -32,6 +32,20 @@ class Device () extends js.Object {
       scala.Unit
     ]
   ): Device = js.native
+  def getBosDescriptor(
+    callback: js.Function2[
+      /* error */ js.UndefOr[java.lang.String], 
+      /* descriptor */ js.UndefOr[BosDescriptor], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  def getCapabilities(
+    callback: js.Function2[
+      /* error */ js.UndefOr[java.lang.String], 
+      /* capabilities */ js.UndefOr[js.Array[Capability]], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   def getStringDescriptor(
     desc_index: scala.Double,
     callback: js.Function2[

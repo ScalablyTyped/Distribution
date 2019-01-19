@@ -48,6 +48,7 @@ trait BaseFiberRootProperties extends js.Object {
   var pendingChildren: js.Any
   var pendingCommitExpirationTime: ExpirationTime
   var pendingContext: js.Object | scala.Null
+  var pingCache: (stdLib.WeakMap[Thenable, stdLib.Set[ExpirationTime]]) | (stdLib.Map[Thenable, stdLib.Set[ExpirationTime]]) | scala.Null
   // Timeout handle returned by setTimeout. Used to cancel a pending timeout, if
   // it's superseded by a new one.
   var timeoutHandle: js.Any

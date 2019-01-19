@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "solr-client"
-version := "0.7-dt-20180523Z-45896f"
+version := "0.7-dt-20190109Z-7acbe1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

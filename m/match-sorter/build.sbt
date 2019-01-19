@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "match-sorter"
-version := "2.2-dt-20180702Z-caf6de"
+version := "2.3-dt-20190117Z-6b94cd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

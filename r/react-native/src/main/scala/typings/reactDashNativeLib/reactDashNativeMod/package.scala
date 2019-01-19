@@ -192,6 +192,7 @@ package object reactDashNativeMod {
   type SegmentedControlIOSComponent = reactLib.reactMod.Component[SegmentedControlIOSProps, js.Object, js.Any]
   type Settings = SettingsStatic
   type Share = ShareStatic
+  type ShareAction = ShareSharedAction | ShareDismissedAction
   type ShareContent = reactDashNativeLib.Anon_Message | reactDashNativeLib.Anon_Title
   /**
     * A component used to select a single value from a range of values.

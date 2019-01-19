@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "sqs-consumer"
-version := "3.8-dt-20180214Z-db6b3b"
+version := "3.8-dt-20180214Z-22263f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "aws-sdk" % "2.390.0-e9fecb",
+  "org.scalablytyped" %%% "aws-sdk" % "2.391.0-81e44f",
   "org.scalablytyped" %%% "events" % "1.2-dt-20180226Z-b3b26c",
   "org.scalablytyped" %%% "jmespath" % "0.15-dt-20180214Z-b22fa9",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",

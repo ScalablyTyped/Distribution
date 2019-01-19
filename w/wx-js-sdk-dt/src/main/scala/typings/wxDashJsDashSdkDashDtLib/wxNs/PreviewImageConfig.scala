@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * 显示照片预览用的配置对象
   */
-trait PreviewImageConfig extends js.Object {
+trait PreviewImageConfig extends WxBaseRequestConfig {
   /**
     * 当前显示图片的 http 链接
     */

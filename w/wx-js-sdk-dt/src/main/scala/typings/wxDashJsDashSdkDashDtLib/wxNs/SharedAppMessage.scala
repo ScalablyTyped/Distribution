@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * 消息分享对象
+  * @deprecated
   */
 trait SharedAppMessage extends ShareTimelineConfig {
   /**

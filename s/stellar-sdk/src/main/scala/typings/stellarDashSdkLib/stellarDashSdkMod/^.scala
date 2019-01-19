@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("stellar-sdk", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val AuthImmutableFlag: stellarDashSdkLib.stellarDashSdkLibNumbers.`4` = js.native
+  val AuthRequiredFlag: stellarDashSdkLib.stellarDashSdkLibNumbers.`1` = js.native
+  val AuthRevocableFlag: stellarDashSdkLib.stellarDashSdkLibNumbers.`2` = js.native
   val FastSigning: scala.Boolean = js.native
   val MemoHash: /* hash */ java.lang.String = js.native
   val MemoID: /* id */ java.lang.String = js.native

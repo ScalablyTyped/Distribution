@@ -23,13 +23,6 @@ trait RichTextData extends js.Object {
   var languageId: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Gets the Paragraph object that contains the RichText object. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var paragraph: js.UndefOr[ParagraphData] = js.undefined
-  /**
-    *
     * Gets the text content of the RichText object. Read-only.
     *
     * [Api set: OneNoteApi 1.1]

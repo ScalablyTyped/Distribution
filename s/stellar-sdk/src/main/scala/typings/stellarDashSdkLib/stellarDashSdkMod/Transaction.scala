@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("stellar-sdk", "Transaction")
 @js.native
-class Transaction protected ()
-  extends stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Transaction {
+class Transaction[TMemo /* <: stellarDashBaseLib.stellarDashBaseMod.Memo[stellarDashBaseLib.stellarDashBaseMod.MemoType] */, TOps /* <: js.Array[stellarDashBaseLib.stellarDashBaseMod.Operation] */] protected ()
+  extends stellarDashBaseLib.stellarDashBaseMod.Transaction[TMemo, TOps] {
   def this(envelope: java.lang.String) = this()
-  def this(envelope: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.xdrNs.TransactionEnvelope) = this()
+  def this(envelope: stellarDashBaseLib.stellarDashBaseMod.xdrNs.TransactionEnvelope) = this()
 }
 

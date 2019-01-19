@@ -27,7 +27,16 @@ object ^ extends js.Object {
   def arrayUnshift(form: java.lang.String, field: java.lang.String, value: js.Any): reduxDashFormLib.libActionsMod.FormAction = js.native
   def autofill(form: java.lang.String, field: java.lang.String, value: js.Any): reduxDashFormLib.libActionsMod.FormAction = js.native
   def blur(form: java.lang.String, field: java.lang.String, value: js.Any): reduxDashFormLib.libActionsMod.FormAction = js.native
+  def blur(form: java.lang.String, field: java.lang.String, value: js.Any, touch: scala.Boolean): reduxDashFormLib.libActionsMod.FormAction = js.native
   def change(form: java.lang.String, field: java.lang.String, value: js.Any): reduxDashFormLib.libActionsMod.FormAction = js.native
+  def change(form: java.lang.String, field: java.lang.String, value: js.Any, touch: scala.Boolean): reduxDashFormLib.libActionsMod.FormAction = js.native
+  def change(
+    form: java.lang.String,
+    field: java.lang.String,
+    value: js.Any,
+    touch: scala.Boolean,
+    persistentSubmitErrors: scala.Boolean
+  ): reduxDashFormLib.libActionsMod.FormAction = js.native
   def clearAsyncError(form: java.lang.String, field: java.lang.String): reduxDashFormLib.libActionsMod.FormAction = js.native
   def clearFields(
     form: java.lang.String,

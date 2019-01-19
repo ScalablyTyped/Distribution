@@ -25,7 +25,14 @@ trait Options extends js.Object {
     *
     * @default undefined
     */
-  var functions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Function0[scala.Unit]]] = js.undefined
+  var functions: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[
+      js.Function1[
+        /* repeated */ sassLib.sassMod.typesNs.SassType, 
+        sassLib.sassMod.typesNs.SassType | scala.Unit
+      ]
+    ]
+  ] = js.undefined
   /**
     * Handles when the @import directive is encountered.
     *

@@ -72,17 +72,21 @@ object ^ extends js.Object {
   def expectAsync[T, U](actual: js.Promise[T]): jasmineLib.jasmineNs.AsyncMatchers[T, U] = js.native
   /**
     * Explicitly mark a spec as failed.
-    * @param e
+    * @param e Reason for the failure
     */
   def fail(): scala.Unit = js.native
   def fail(e: js.Any): scala.Unit = js.native
+  /**
+    * A focused `describe`. If suites or specs are focused, only those that are focused will be executed.
+    * @param description Textual description of the group
+    * @param specDefinitions Function for Jasmine to invoke that will define inner suites a specs
+    */
   def fdescribe(description: java.lang.String, specDefinitions: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
-    * A focused it
-    * If suites or specs are focused, only those that are focused will be executed.
-    * @param expectation
-    * @param assertion
-    * @param timeout
+    * A focused `it`. If suites or specs are focused, only those that are focused will be executed.
+    * @param expectation Textual description of what this spec is checking
+    * @param assertion Function that contains the code of your test. If not provided the test will be pending.
+    * @param timeout Custom timeout for an async spec.
     */
   def fit(expectation: java.lang.String): scala.Unit = js.native
   def fit(expectation: java.lang.String, assertion: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit]): scala.Unit = js.native
@@ -108,28 +112,27 @@ object ^ extends js.Object {
   /**
     * Mark a spec as pending, expectation results will be ignored.
     * If you call the function pending anywhere in the spec body, no matter the expectations, the spec will be marked pending.
-    * @param reason
-    * @returns {}
+    * @param reason Reason the spec is pending.
     */
   def pending(): scala.Unit = js.native
   def pending(reason: java.lang.String): scala.Unit = js.native
   def runs(asyncMethod: js.Function): scala.Unit = js.native
   /**
     * Install a spy onto an existing object.
-    * @param object The object upon which to install the Spy
-    * @param method The name of the method to replace with a Spy.
+    * @param object The object upon which to install the `Spy`.
+    * @param method The name of the method to replace with a `Spy`.
     */
   def spyOn[T](`object`: T, method: java.lang.String): jasmineLib.jasmineNs.Spy = js.native
   /**
     * Installs spies on all writable and configurable properties of an object.
-    * @param object The object upon which to install the Spies
+    * @param object The object upon which to install the `Spy`s.
     */
   def spyOnAllFunctions(`object`: js.Object): jasmineLib.jasmineNs.Spy = js.native
   /**
-    * Install a spy on a property onto an existing object.
-    * @param object The object upon which to install the Spy
-    * @param property The name of the property to replace with a Spy
-    * @param accessType The access type (get|set) of the property to Spy on.
+    * Install a spy on a property installed with `Object.defineProperty` onto an existing object.
+    * @param object The object upon which to install the `Spy`.
+    * @param property The name of the property to replace with a `Spy`.
+    * @param accessType The access type (get|set) of the property to `Spy` on.
     */
   def spyOnProperty[T](`object`: T, property: java.lang.String): jasmineLib.jasmineNs.Spy = js.native
   @JSName("spyOnProperty")
@@ -141,7 +144,18 @@ object ^ extends js.Object {
   def waitsFor(latchMethod: js.Function0[scala.Boolean]): scala.Unit = js.native
   def waitsFor(latchMethod: js.Function0[scala.Boolean], failureMessage: java.lang.String): scala.Unit = js.native
   def waitsFor(latchMethod: js.Function0[scala.Boolean], failureMessage: java.lang.String, timeout: scala.Double): scala.Unit = js.native
+  /**
+    * A temporarily disabled `describe`. Specs within an xdescribe will be marked pending and not executed.
+    * @param description Textual description of the group
+    * @param specDefinitions Function for Jasmine to invoke that will define inner suites a specs
+    */
   def xdescribe(description: java.lang.String, specDefinitions: js.Function0[scala.Unit]): scala.Unit = js.native
+  /**
+    * A temporarily disabled `it`. The spec will report as pending and will not be executed.
+    * @param expectation Textual description of what this spec is checking
+    * @param assertion Function that contains the code of your test. If not provided the test will be pending.
+    * @param timeout Custom timeout for an async spec.
+    */
   def xit(expectation: java.lang.String): scala.Unit = js.native
   def xit(expectation: java.lang.String, assertion: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit]): scala.Unit = js.native
   def xit(

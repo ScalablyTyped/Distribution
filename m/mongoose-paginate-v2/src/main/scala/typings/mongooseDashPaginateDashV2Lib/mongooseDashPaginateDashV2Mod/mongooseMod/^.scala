@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def model(name: java.lang.String): mongooseDashPaginateDashV2Lib.mongooseDashPaginateDashV2Mod.mongooseMod.PaginateModel[_] = js.native
-  def model(name: java.lang.String, schema: mongooseLib.mongooseMod.Schema): mongooseDashPaginateDashV2Lib.mongooseDashPaginateDashV2Mod.mongooseMod.PaginateModel[_] = js.native
-  def model(name: java.lang.String, schema: mongooseLib.mongooseMod.Schema, collection: java.lang.String): mongooseDashPaginateDashV2Lib.mongooseDashPaginateDashV2Mod.mongooseMod.PaginateModel[_] = js.native
+  def model(name: java.lang.String, schema: mongooseLib.mongooseMod.Schema[_]): mongooseDashPaginateDashV2Lib.mongooseDashPaginateDashV2Mod.mongooseMod.PaginateModel[_] = js.native
+  def model(name: java.lang.String, schema: mongooseLib.mongooseMod.Schema[_], collection: java.lang.String): mongooseDashPaginateDashV2Lib.mongooseDashPaginateDashV2Mod.mongooseMod.PaginateModel[_] = js.native
   def model(
     name: java.lang.String,
-    schema: mongooseLib.mongooseMod.Schema,
+    schema: mongooseLib.mongooseMod.Schema[_],
     collection: java.lang.String,
     skipInit: scala.Boolean
   ): mongooseDashPaginateDashV2Lib.mongooseDashPaginateDashV2Mod.mongooseMod.PaginateModel[_] = js.native

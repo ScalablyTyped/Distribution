@@ -5,6 +5,7 @@
 //                 Stepan Burguchev <https://github.com/xsburg>
 //                 Geir Sagberg <https://github.com/geirsagberg>
 //                 Richard Honor <https://github.com/RMHonor>
+//                 Paul Huynh <https://github.com/pheromonez>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

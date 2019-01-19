@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * @deprecated
+  */
 trait MenuShareQQ extends ShareTimelineConfig {
   /**
     * 分享描述

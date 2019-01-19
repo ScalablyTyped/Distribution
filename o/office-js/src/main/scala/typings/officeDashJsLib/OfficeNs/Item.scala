@@ -309,7 +309,7 @@ trait Item extends js.Object {
     userContext: js.Any
   ): scala.Unit = js.native
   /**
-    * Removes an event handler for a supported event.
+    * Removes the event handlers for a supported event type.
     * 
     * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
     * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
@@ -324,26 +324,19 @@ trait Item extends js.Object {
     * 
     * In addition to this signature, the method also has the following signature:
     * 
-    * `removeHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
+    * `removeHandlerAsync(eventType: Office.EventType, callback?: (result: AsyncResult<void>) => void): void;`
     * 
     * @param eventType The event that should revoke the handler.
-    * @param handler The function to handle the event. The function must accept a single parameter, which is an object literal. 
-    *                The type property on the parameter will match the eventType parameter passed to removeHandlerAsync.
     * @param options Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
     *                 asyncResult, which is an Office.AsyncResult object.
     */
-  def removeHandlerAsync(eventType: EventType, handler: js.Any): scala.Unit = js.native
+  def removeHandlerAsync(eventType: EventType): scala.Unit = js.native
+  def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
+  def removeHandlerAsync(eventType: EventType, options: js.Any): scala.Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
-    handler: js.Any,
-    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
-  ): scala.Unit = js.native
-  def removeHandlerAsync(eventType: EventType, handler: js.Any, options: js.Any): scala.Unit = js.native
-  def removeHandlerAsync(
-    eventType: EventType,
-    handler: js.Any,
     options: js.Any,
     callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native

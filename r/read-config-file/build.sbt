@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "read-config-file"
-version := "3.2.1-b0f635"
+version := "3.2.1-f9d7a9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-c8d4b8",
   "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20180706Z-3bc3c3",
   "org.scalablytyped" %%% "fs-extra-p" % "7.0.0-24020e",
-  "org.scalablytyped" %%% "js-yaml" % "3.11-dt-20181220Z-0e3b7c",
+  "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-8bc5c9",
   "org.scalablytyped" %%% "json5" % "0.0-unknown-dt-20180813Z-8c7f39",
   "org.scalablytyped" %%% "lazy-val" % "1.0.3-b9e391",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",

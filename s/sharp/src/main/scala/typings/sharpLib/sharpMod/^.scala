@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val bool: sharpLib.sharpMod.sharpNs.BoolEnum = js.native
+  val fit: sharpLib.sharpMod.sharpNs.FitEnum = js.native
   /** Object containing nested boolean values representing the available input and output formats/methods. */
   val format: sharpLib.sharpMod.sharpNs.FormatEnum = js.native
   //#endregion

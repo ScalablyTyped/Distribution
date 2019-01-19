@@ -23,6 +23,13 @@ trait DocumentViewUpdateData extends js.Object {
   var disablePan: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * Disable PanZoomWindow.
+    *
+    * [Api set:  1.1]
+    */
+  var disablePanZoomWindow: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * Disable Zoom.
     *
     * [Api set:  1.1]

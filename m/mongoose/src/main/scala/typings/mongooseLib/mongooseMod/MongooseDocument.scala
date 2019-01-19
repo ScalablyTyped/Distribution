@@ -18,7 +18,7 @@ trait MongooseDocument extends MongooseDocumentOptionals {
   /** Boolean flag specifying if the document is new. */
   var isNew: scala.Boolean = js.native
   /** The documents schema. */
-  var schema: Schema = js.native
+  var schema: Schema[_] = js.native
   /** Checks if a path is set to its default. */
   @JSName("$isDefault")
   def $isDefault(): scala.Boolean = js.native

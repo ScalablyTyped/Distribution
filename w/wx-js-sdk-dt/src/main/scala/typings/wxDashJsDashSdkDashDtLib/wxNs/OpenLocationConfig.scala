@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OpenLocationConfig extends js.Object {
+trait OpenLocationConfig extends WxBaseRequestConfig {
   /**
     * 地址详情说明
     */

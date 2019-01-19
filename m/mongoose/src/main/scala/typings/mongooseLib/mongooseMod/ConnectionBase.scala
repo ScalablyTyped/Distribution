@@ -88,16 +88,16 @@ trait ConnectionBase
     * @returns The compiled model
     */
   def model[T /* <: Document */](name: java.lang.String): Model[T, js.Object] = js.native
-  def model[T /* <: Document */](name: java.lang.String, schema: Schema): Model[T, js.Object] = js.native
-  def model[T /* <: Document */](name: java.lang.String, schema: Schema, collection: java.lang.String): Model[T, js.Object] = js.native
+  def model[T /* <: Document */](name: java.lang.String, schema: Schema[_]): Model[T, js.Object] = js.native
+  def model[T /* <: Document */](name: java.lang.String, schema: Schema[_], collection: java.lang.String): Model[T, js.Object] = js.native
   /** Returns an array of model names created on this connection. */
   def modelNames(): js.Array[java.lang.String] = js.native
   @JSName("model")
   def model_TDocumentUModelU[T /* <: Document */, U /* <: Model[T, js.Object] */](name: java.lang.String): U = js.native
   @JSName("model")
-  def model_TDocumentUModelU[T /* <: Document */, U /* <: Model[T, js.Object] */](name: java.lang.String, schema: Schema): U = js.native
+  def model_TDocumentUModelU[T /* <: Document */, U /* <: Model[T, js.Object] */](name: java.lang.String, schema: Schema[_]): U = js.native
   @JSName("model")
-  def model_TDocumentUModelU[T /* <: Document */, U /* <: Model[T, js.Object] */](name: java.lang.String, schema: Schema, collection: java.lang.String): U = js.native
+  def model_TDocumentUModelU[T /* <: Document */, U /* <: Model[T, js.Object] */](name: java.lang.String, schema: Schema[_], collection: java.lang.String): U = js.native
   /**
     * Opens the connection to MongoDB.
     * @deprecated open() is deprecated in mongoose >= 4.11.0

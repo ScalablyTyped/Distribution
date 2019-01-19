@@ -29,6 +29,9 @@ class TableRow ()
     * [Api set: WordApi 1.3]
     */
   val cells: TableCellCollection = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_TableRow: RequestContext = js.native
   /**
     *
     * Gets the font. Use this to get and set font name, size, color, and other properties. Read-only.

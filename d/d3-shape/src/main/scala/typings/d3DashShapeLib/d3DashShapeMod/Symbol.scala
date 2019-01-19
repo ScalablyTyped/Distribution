@@ -70,7 +70,6 @@ trait Symbol[This, Datum] extends js.Object {
   /**
     * Sets the symbol type to the specified symbol type and returns this symbol generator.
     *
-    *
     * @param type A constant symbol type.
     */
   def `type`(`type`: SymbolType): this.type = js.native

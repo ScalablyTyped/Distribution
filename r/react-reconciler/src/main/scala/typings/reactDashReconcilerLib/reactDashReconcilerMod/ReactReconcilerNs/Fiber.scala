@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// react-ronciler/ReactFiber
+// react-reconciler/ReactFiber
 // A Fiber is work on a Component that needs to be done or was done. There can
 // be more than one per component.
 trait Fiber extends js.Object {

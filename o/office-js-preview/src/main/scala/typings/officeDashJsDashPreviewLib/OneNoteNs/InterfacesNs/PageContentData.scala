@@ -44,13 +44,6 @@ trait PageContentData extends js.Object {
   var outline: js.UndefOr[OutlineData] = js.undefined
   /**
     *
-    * Gets the page that contains the PageContent object. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var parentPage: js.UndefOr[PageData] = js.undefined
-  /**
-    *
     * Gets or sets the top (Y-axis) position of the PageContent object.
     *
     * [Api set: OneNoteApi 1.1]

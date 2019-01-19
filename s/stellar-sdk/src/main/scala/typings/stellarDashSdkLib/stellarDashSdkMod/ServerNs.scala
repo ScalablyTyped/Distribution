@@ -13,21 +13,27 @@ object ServerNs extends js.Object {
     def accountId(id: java.lang.String): this.type = js.native
   }
   
-  @js.native
-  trait AccountMergeOperationRecord extends BaseOperationRecord {
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.AccountMergeOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined into */ @js.native
+  trait AccountMergeOperationRecord
+    extends BaseOperationRecord[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+        ] {
     var into: java.lang.String = js.native
-    @JSName("type")
-    var type_AccountMergeOperationRecord: stellarDashSdkLib.stellarDashSdkLibStrings.account_merge = js.native
   }
   
   @js.native
-  trait AccountRecord extends Record {
+  trait AccountRecord
+    extends stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] {
     var account_id: java.lang.String = js.native
-    var balances: js.Array[BalanceLine[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.ASSET_TYPE]] = js.native
+    var balances: js.Array[
+        stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BalanceLine[stellarDashBaseLib.stellarDashBaseMod.AssetType]
+      ] = js.native
     var data_attr: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
     @JSName("effects")
     var effects_Original: CallCollectionFunction[EffectRecord] = js.native
-    var flags: stellarDashSdkLib.Anon_Authrequired = js.native
+    var flags: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.Flags = js.native
     var id: java.lang.String = js.native
     @JSName("offers")
     var offers_Original: CallCollectionFunction[OfferRecord] = js.native
@@ -39,7 +45,7 @@ object ServerNs extends js.Object {
     var sequence: scala.Double = js.native
     var signers: js.Array[stellarDashSdkLib.Anon_Publickey] = js.native
     var subentry_count: scala.Double = js.native
-    var thresholds: stellarDashSdkLib.Anon_Highthreshold = js.native
+    var thresholds: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.AccountThresholds = js.native
     @JSName("trades")
     var trades_Original: CallCollectionFunction[TradeRecord] = js.native
     def data(options: stellarDashSdkLib.Anon_Value): js.Promise[stellarDashSdkLib.Anon_Value] = js.native
@@ -59,33 +65,39 @@ object ServerNs extends js.Object {
   class AccountResponse protected () extends AccountRecord {
     def this(response: AccountRecord) = this()
     /* CompleteClass */
-    override var _links: org.scalablytyped.runtime.StringDictionary[RecordLink] = js.native
+    override var _links: stellarDashSdkLib.stellarDashSdkLibStrings.BaseResponse with js.Any = js.native
     @JSName("_links")
-    var _links_AccountResponse: org.scalablytyped.runtime.StringDictionary[stellarDashSdkLib.Anon_Href] = js.native
+    var _links_AccountResponse: stellarDashSdkLib.stellarDashSdkLibStrings.AccountResponse with js.Any = js.native
     var inflation_destination: js.UndefOr[js.Any] = js.native
+    @JSName("signers")
+    var signers_AccountResponse: js.Array[stellarDashSdkLib.stellarDashSdkMod.HorizonNs.AccountSigner] = js.native
     def accountId(): java.lang.String = js.native
     def incrementSequenceNumber(): scala.Unit = js.native
     def sequenceNumber(): java.lang.String = js.native
   }
   
-  @js.native
-  trait AllowTrustOperationRecord extends BaseOperationRecord {
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.AllowTrustOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined asset_type, asset_code, asset_issuer, authorize, trustee, trustor */ @js.native
+  trait AllowTrustOperationRecord
+    extends BaseOperationRecord[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+        ] {
     var asset_code: java.lang.String = js.native
     var asset_issuer: java.lang.String = js.native
-    var asset_type: java.lang.String = js.native
+    var asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetType = js.native
     var authorize: scala.Boolean = js.native
     var trustee: java.lang.String = js.native
     var trustor: java.lang.String = js.native
-    @JSName("type")
-    var type_AllowTrustOperationRecord: stellarDashSdkLib.stellarDashSdkLibStrings.allow_trust = js.native
   }
   
-  trait AssetRecord extends Record {
+  trait AssetRecord
+    extends stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] {
     var amount: java.lang.String
     var asset_code: java.lang.String
     var asset_issuer: java.lang.String
-    var asset_type: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.ASSET_TYPE
-    var flags: stellarDashSdkLib.Anon_Authrequired
+    var asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit4 | stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit12
+    var flags: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.Flags
     var num_accounts: scala.Double
     var paging_token: java.lang.String
   }
@@ -96,36 +108,19 @@ object ServerNs extends js.Object {
     def forIssuer(value: java.lang.String): this.type = js.native
   }
   
-  trait BalanceLineAsset[T /* <: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.ASSET_TYPE */] extends js.Object {
-    var asset_code: java.lang.String
-    var asset_issuer: java.lang.String
-    var asset_type: T
-    var balance: java.lang.String
-    var limit: java.lang.String
-  }
-  
-  trait BalanceLineNative extends js.Object {
-    var asset_type: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.ASSET_TYPE
-    var balance: java.lang.String
-  }
-  
   @js.native
-  trait BaseOperationRecord extends Record {
+  trait BaseOperationRecord[T /* <: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType */, TI /* <: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI */]
+    extends stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseOperationResponse[T, TI] {
     @JSName("effects")
     var effects_Original: CallCollectionFunction[EffectRecord] = js.native
-    var id: java.lang.String = js.native
-    var paging_token: java.lang.String = js.native
     @JSName("precedes")
     var precedes_Original: CallFunction[OperationRecord] = js.native
     @JSName("self")
     var self_Original: CallFunction[OperationRecord] = js.native
-    var source_account: java.lang.String = js.native
     @JSName("succeeds")
     var succeeds_Original: CallFunction[OperationRecord] = js.native
     @JSName("transaction")
     var transaction_Original: CallFunction[TransactionRecord] = js.native
-    var `type`: java.lang.String = js.native
-    var type_i: scala.Double = js.native
     def effects(): js.Promise[CollectionRecord[EffectRecord]] = js.native
     def effects(options: CallFunctionTemplateOptions): js.Promise[CollectionRecord[EffectRecord]] = js.native
     def precedes(): js.Promise[OperationRecord] = js.native
@@ -134,15 +129,18 @@ object ServerNs extends js.Object {
     def transaction(): js.Promise[TransactionRecord] = js.native
   }
   
-  @js.native
-  trait BumpSequenceOperationRecord extends BaseOperationRecord {
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BumpSequenceOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined bump_to */ @js.native
+  trait BumpSequenceOperationRecord
+    extends BaseOperationRecord[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+        ] {
     var bump_to: java.lang.String = js.native
-    @JSName("type")
-    var type_BumpSequenceOperationRecord: stellarDashSdkLib.stellarDashSdkLibStrings.bump_sequence = js.native
   }
   
   @js.native
-  abstract class CallBuilder[T /* <: Record */] protected () extends js.Object {
+  abstract class CallBuilder[T /* <: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] */] protected () extends js.Object {
     def this(serverUrl: java.lang.String) = this()
     def call(): js.Promise[CollectionPage[T]] = js.native
     def cursor(cursor: java.lang.String): this.type = js.native
@@ -164,37 +162,43 @@ object ServerNs extends js.Object {
       ] = js.undefined
   }
   
-  @js.native
-  trait ChangeTrustOperationRecord extends BaseOperationRecord {
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.ChangeTrustOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined asset_type, asset_code, asset_issuer, trustee, trustor, limit */ @js.native
+  trait ChangeTrustOperationRecord
+    extends BaseOperationRecord[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+        ] {
     var asset_code: java.lang.String = js.native
     var asset_issuer: java.lang.String = js.native
-    var asset_type: java.lang.String = js.native
+    var asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit4 | stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit12 = js.native
     var limit: java.lang.String = js.native
     var trustee: java.lang.String = js.native
     var trustor: java.lang.String = js.native
-    @JSName("type")
-    var type_ChangeTrustOperationRecord: stellarDashSdkLib.stellarDashSdkLibStrings.change_trust = js.native
   }
   
-  trait CollectionPage[T /* <: Record */] extends js.Object {
+  trait CollectionPage[T /* <: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] */] extends js.Object {
     var records: js.Array[T]
     def next(): js.Promise[CollectionPage[T]]
     def prev(): js.Promise[CollectionPage[T]]
   }
   
   /* Due to a bug with the recursive function requests */
-  trait CollectionRecord[T /* <: Record */] extends js.Object {
+  trait CollectionRecord[T /* <: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] */] extends js.Object {
     var _embedded: stellarDashSdkLib.Anon_Records[T]
     var _links: stellarDashSdkLib.Anon_Next
   }
   
-  @js.native
-  trait CreateAccountOperationRecord extends BaseOperationRecord {
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.CreateAccountOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined account, funder, starting_balance */ @js.native
+  trait CreateAccountOperationRecord
+    extends BaseOperationRecord[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+        ] {
     var account: java.lang.String = js.native
     var funder: java.lang.String = js.native
     var starting_balance: java.lang.String = js.native
-    @JSName("type")
-    var type_CreateAccountOperationRecord: stellarDashSdkLib.stellarDashSdkLibStrings.create_account = js.native
   }
   
   @js.native
@@ -205,7 +209,8 @@ object ServerNs extends js.Object {
     def forTransaction(transactionId: java.lang.String): this.type = js.native
   }
   
-  trait EffectRecord extends Record {
+  trait EffectRecord
+    extends stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] {
     var account: java.lang.String
     var amount: js.UndefOr[js.Any] = js.undefined
     var operation: js.UndefOr[CallFunction[OperationRecord]] = js.undefined
@@ -218,16 +223,18 @@ object ServerNs extends js.Object {
   }
   
   @js.native
-  trait InflationOperationRecord extends BaseOperationRecord {
-    @JSName("type")
-    var type_InflationOperationRecord: stellarDashSdkLib.stellarDashSdkLibStrings.inflation = js.native
-  }
+  trait InflationOperationRecord
+    extends BaseOperationRecord[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+        ]
   
   @js.native
   abstract class LedgerCallBuilder () extends CallBuilder[LedgerRecord]
   
   @js.native
-  trait LedgerRecord extends Record {
+  trait LedgerRecord
+    extends stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] {
     var base_fee: scala.Double = js.native
     var base_fee_in_stroops: scala.Double = js.native
     var base_reserve: java.lang.String = js.native
@@ -262,43 +269,50 @@ object ServerNs extends js.Object {
     def transactions(options: CallFunctionTemplateOptions): js.Promise[CollectionRecord[TransactionRecord]] = js.native
   }
   
-  @js.native
-  trait ManageDataOperationRecord extends BaseOperationRecord {
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.ManageDataOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined name, value */ @js.native
+  trait ManageDataOperationRecord
+    extends BaseOperationRecord[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+        ] {
     var name: java.lang.String = js.native
-    @JSName("type")
-    var type_ManageDataOperationRecord: stellarDashSdkLib.stellarDashSdkLibStrings.manage_data = js.native
     var value: nodeLib.Buffer = js.native
   }
   
-  @js.native
-  trait ManageOfferOperationRecord extends BaseOperationRecord {
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.ManageOfferOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined offer_id, amount, buying_asset_type, buying_asset_code, buying_asset_issuer, price, price_r, selling_asset_type, selling_asset_code, selling_asset_issuer */ @js.native
+  trait ManageOfferOperationRecord
+    extends BaseOperationRecord[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+        ] {
     var amount: java.lang.String = js.native
     var buying_asset_code: js.UndefOr[java.lang.String] = js.native
     var buying_asset_issuer: js.UndefOr[java.lang.String] = js.native
-    var buying_asset_type: java.lang.String = js.native
+    var buying_asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetType = js.native
     var offer_id: scala.Double = js.native
     var price: java.lang.String = js.native
-    var price_r: stellarDashSdkLib.Anon_Denominator = js.native
+    var price_r: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.PriceR = js.native
     var selling_asset_code: js.UndefOr[java.lang.String] = js.native
     var selling_asset_issuer: js.UndefOr[java.lang.String] = js.native
-    var selling_asset_type: java.lang.String = js.native
-    @JSName("type")
-    var type_ManageOfferOperationRecord: stellarDashSdkLib.stellarDashSdkLibStrings.manage_offer = js.native
+    var selling_asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetType = js.native
   }
   
   @js.native
   abstract class OfferCallBuilder () extends CallBuilder[OfferRecord]
   
-  trait OfferRecord extends Record {
+  trait OfferRecord
+    extends stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] {
     var amount: java.lang.String
-    var buying: stellarDashSdkLib.stellarDashSdkMod.Asset
+    var buying: stellarDashBaseLib.stellarDashBaseMod.Asset
     var id: java.lang.String
     var paging_token: java.lang.String
     var price: java.lang.String
-    var price_r: stellarDashSdkLib.Anon_Denominator
+    var price_r: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.PriceR
     var seller: js.UndefOr[CallFunction[AccountRecord]] = js.undefined
     var seller_attr: java.lang.String
-    var selling: stellarDashSdkLib.stellarDashSdkMod.Asset
+    var selling: stellarDashBaseLib.stellarDashBaseMod.Asset
   }
   
   @js.native
@@ -315,47 +329,54 @@ object ServerNs extends js.Object {
   @js.native
   abstract class OrderbookCallBuilder () extends CallBuilder[OrderbookRecord]
   
-  trait OrderbookRecord extends Record {
+  trait OrderbookRecord
+    extends stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] {
     var asks: js.Array[stellarDashSdkLib.Anon_Amount]
     var bids: js.Array[stellarDashSdkLib.Anon_Amount]
-    var buying: stellarDashSdkLib.stellarDashSdkMod.Asset
-    var selling: stellarDashSdkLib.stellarDashSdkMod.Asset
+    var buying: stellarDashBaseLib.stellarDashBaseMod.Asset
+    var selling: stellarDashBaseLib.stellarDashBaseMod.Asset
   }
   
-  @js.native
-  trait PassiveOfferOperationRecord extends BaseOperationRecord {
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.PassiveOfferOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined offer_id, amount, buying_asset_type, buying_asset_code, buying_asset_issuer, price, price_r, selling_asset_type, selling_asset_code, selling_asset_issuer */ @js.native
+  trait PassiveOfferOperationRecord
+    extends BaseOperationRecord[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+        ] {
     var amount: java.lang.String = js.native
     var buying_asset_code: js.UndefOr[java.lang.String] = js.native
     var buying_asset_issuer: js.UndefOr[java.lang.String] = js.native
-    var buying_asset_type: java.lang.String = js.native
+    var buying_asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetType = js.native
     var offer_id: scala.Double = js.native
     var price: java.lang.String = js.native
-    var price_r: stellarDashSdkLib.Anon_Denominator = js.native
+    var price_r: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.PriceR = js.native
     var selling_asset_code: js.UndefOr[java.lang.String] = js.native
     var selling_asset_issuer: js.UndefOr[java.lang.String] = js.native
-    var selling_asset_type: java.lang.String = js.native
-    @JSName("type")
-    var type_PassiveOfferOperationRecord: stellarDashSdkLib.stellarDashSdkLibStrings.create_passive_offer = js.native
+    var selling_asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetType = js.native
   }
   
   @js.native
   abstract class PathCallBuilder () extends CallBuilder[PaymentPathRecord]
   
-  @js.native
-  trait PathPaymentOperationRecord extends BaseOperationRecord {
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.PathPaymentOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined from, to, asset_type, asset_code, asset_issuer, amount, source_asset_type, source_asset_code, source_asset_issuer, source_max, source_amount */ @js.native
+  trait PathPaymentOperationRecord
+    extends BaseOperationRecord[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+        ] {
     var amount: java.lang.String = js.native
     var asset_code: js.UndefOr[java.lang.String] = js.native
     var asset_issuer: js.UndefOr[java.lang.String] = js.native
-    var asset_type: java.lang.String = js.native
+    var asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetType = js.native
     var from: java.lang.String = js.native
     var source_amount: java.lang.String = js.native
     var source_asset_code: js.UndefOr[java.lang.String] = js.native
     var source_asset_issuer: js.UndefOr[java.lang.String] = js.native
-    var source_asset_type: java.lang.String = js.native
+    var source_asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetType = js.native
     var source_max: java.lang.String = js.native
     var to: java.lang.String = js.native
-    @JSName("type")
-    var type_PathPaymentOperationRecord: stellarDashSdkLib.stellarDashSdkLibStrings.path_payment = js.native
   }
   
   @js.native
@@ -365,25 +386,29 @@ object ServerNs extends js.Object {
     def forTransaction(transactionId: java.lang.String): this.type = js.native
   }
   
-  @js.native
-  trait PaymentOperationRecord extends BaseOperationRecord {
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.PaymentOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined from, to, asset_type, asset_code, asset_issuer, amount */ @js.native
+  trait PaymentOperationRecord
+    extends BaseOperationRecord[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+        ] {
     var amount: java.lang.String = js.native
     var asset_code: js.UndefOr[java.lang.String] = js.native
     var asset_issuer: js.UndefOr[java.lang.String] = js.native
-    var asset_type: java.lang.String = js.native
+    var asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetType = js.native
     var from: java.lang.String = js.native
     @JSName("receiver")
     var receiver_Original: CallFunction[AccountRecord] = js.native
     @JSName("sender")
     var sender_Original: CallFunction[AccountRecord] = js.native
     var to: java.lang.String = js.native
-    @JSName("type")
-    var type_PaymentOperationRecord: stellarDashSdkLib.stellarDashSdkLibStrings.payment = js.native
     def receiver(): js.Promise[AccountRecord] = js.native
     def sender(): js.Promise[AccountRecord] = js.native
   }
   
-  trait PaymentPathRecord extends Record {
+  trait PaymentPathRecord
+    extends stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] {
     var destination_amount: java.lang.String
     var destination_asset_code: java.lang.String
     var destination_asset_issuer: java.lang.String
@@ -395,17 +420,13 @@ object ServerNs extends js.Object {
     var source_asset_type: java.lang.String
   }
   
-  trait Record extends js.Object {
-    var _links: org.scalablytyped.runtime.StringDictionary[RecordLink]
-  }
-  
-  trait RecordLink extends js.Object {
-    var href: java.lang.String
-    var templated: js.UndefOr[scala.Boolean] = js.undefined
-  }
-  
-  @js.native
-  trait SetOptionsOperationRecord extends BaseOperationRecord {
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - stellarDashSdkLib.stellarDashSdkMod.HorizonNs.SetOptionsOperationResponse because var conflicts: _links, created_at, id, paging_token, source_account, transaction_hash, `type`, type_i. Inlined signer_key, signer_weight, master_key_weight, low_threshold, med_threshold, high_threshold, home_domain, set_flags, set_flags_s, clear_flags, clear_flags_s */ @js.native
+  trait SetOptionsOperationRecord
+    extends BaseOperationRecord[
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
+          stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
+        ] {
     var clear_flags: js.Array[
         stellarDashSdkLib.stellarDashSdkLibNumbers.`1` | stellarDashSdkLib.stellarDashSdkLibNumbers.`2`
       ] = js.native
@@ -425,14 +446,13 @@ object ServerNs extends js.Object {
       ] = js.native
     var signer_key: js.UndefOr[java.lang.String] = js.native
     var signer_weight: js.UndefOr[scala.Double] = js.native
-    @JSName("type")
-    var type_SetOptionsOperationRecord: stellarDashSdkLib.stellarDashSdkLibStrings.set_options = js.native
   }
   
   @js.native
   abstract class TradeAggregationCallBuilder () extends CallBuilder[TradeAggregationRecord]
   
-  trait TradeAggregationRecord extends Record {
+  trait TradeAggregationRecord
+    extends stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] {
     var avg: java.lang.String
     var base_volume: java.lang.String
     var close: java.lang.String
@@ -445,7 +465,8 @@ object ServerNs extends js.Object {
   }
   
   @js.native
-  trait TradeRecord extends Record {
+  trait TradeRecord
+    extends stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] {
     @JSName("base")
     var base_Original: CallFunction[AccountRecord] = js.native
     var base_account: java.lang.String = js.native
@@ -474,8 +495,8 @@ object ServerNs extends js.Object {
   @js.native
   abstract class TradesCallBuilder () extends CallBuilder[TradeRecord] {
     def forAssetPair(
-      base: stellarDashSdkLib.stellarDashSdkMod.Asset,
-      counter: stellarDashSdkLib.stellarDashSdkMod.Asset
+      base: stellarDashBaseLib.stellarDashBaseMod.Asset,
+      counter: stellarDashBaseLib.stellarDashBaseMod.Asset
     ): this.type = js.native
     def forOffer(offerId: java.lang.String): this.type = js.native
   }
@@ -488,38 +509,22 @@ object ServerNs extends js.Object {
     def transaction(transactionId: java.lang.String): this.type = js.native
   }
   
-  @js.native
-  trait TransactionRecord extends Record {
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped {[ P in stellar-sdk.Diff<keyof stellar-sdk.stellar-sdk.Horizon.TransactionResponse, 'ledger'> ]: stellar-sdk.stellar-sdk.Horizon.TransactionResponse[P]} */ @js.native
+  trait TransactionRecord extends js.Object {
     @JSName("account")
     var account_Original: CallFunction[AccountRecord] = js.native
-    var created_at: java.lang.String = js.native
     @JSName("effects")
     var effects_Original: CallCollectionFunction[EffectRecord] = js.native
-    var envelope: js.Any = js.native
-    var envelope_xdr: java.lang.String = js.native
-    var fee_paid: scala.Double = js.native
-    var hash: java.lang.String = js.native
-    var id: java.lang.String = js.native
     @JSName("ledger")
     var ledger_Original: CallFunction[LedgerRecord] = js.native
     var ledger_attr: scala.Double = js.native
-    var max_fee: scala.Double = js.native
-    var memo: java.lang.String = js.native
-    var memo_type: js.Any = js.native
-    var operation_count: scala.Double = js.native
     @JSName("operations")
     var operations_Original: CallCollectionFunction[OperationRecord] = js.native
-    var paging_token: java.lang.String = js.native
     @JSName("precedes")
     var precedes_Original: CallFunction[TransactionRecord] = js.native
-    var result_code: scala.Double = js.native
-    var result_code_s: java.lang.String = js.native
-    var result_meta_xdr: java.lang.String = js.native
-    var result_xdr: java.lang.String = js.native
     @JSName("self")
     var self_Original: CallFunction[TransactionRecord] = js.native
-    var source_account: java.lang.String = js.native
-    var source_account_sequence: java.lang.String = js.native
     @JSName("succeeds")
     var succeeds_Original: CallFunction[TransactionRecord] = js.native
     def account(): js.Promise[AccountRecord] = js.native
@@ -533,12 +538,11 @@ object ServerNs extends js.Object {
     def succeeds(): js.Promise[TransactionRecord] = js.native
   }
   
-  type BalanceLine[T /* <: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.ASSET_TYPE */] = BalanceLineNative | BalanceLineAsset[stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.ASSET_TYPE] | BalanceLineAsset[T]
-  type CallCollectionFunction[T /* <: Record */] = js.Function1[
+  type CallCollectionFunction[T /* <: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] */] = js.Function1[
     /* options */ js.UndefOr[CallFunctionTemplateOptions], 
     js.Promise[CollectionRecord[T]]
   ]
-  type CallFunction[T /* <: Record */] = js.Function0[js.Promise[T]]
+  type CallFunction[T /* <: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] */] = js.Function0[js.Promise[T]]
   type OperationRecord = CreateAccountOperationRecord | PaymentOperationRecord | PathPaymentOperationRecord | ManageOfferOperationRecord | PassiveOfferOperationRecord | SetOptionsOperationRecord | ChangeTrustOperationRecord | AllowTrustOperationRecord | AccountMergeOperationRecord | InflationOperationRecord | ManageDataOperationRecord | BumpSequenceOperationRecord
 }
 

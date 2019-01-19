@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UploadVoiceConfig extends js.Object {
+trait UploadVoiceConfig extends WxBaseRequestConfig {
   var isShowProgressTips: js.UndefOr[scala.Double] = js.undefined
   var localId: java.lang.String
-  def success(res: js.Any): scala.Unit
+  @JSName("success")
+  def success_MUploadVoiceConfig(res: js.Any): scala.Unit
 }
 

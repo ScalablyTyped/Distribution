@@ -30,13 +30,6 @@ trait TableData extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Gets the Paragraph object that contains the Table object. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var paragraph: js.UndefOr[ParagraphData] = js.undefined
-  /**
-    *
     * Gets the number of rows in the table.
     *
     * [Api set: OneNoteApi 1.1]

@@ -41,6 +41,7 @@ trait ApolloClient[TCacheShape]
   def reFetchObservableQueries(includeStandby: scala.Boolean): js.Promise[js.Array[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]]] | js.Promise[scala.Null] = js.native
   def resetStore(): js.Promise[js.Array[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]] | scala.Null] = js.native
   def restore(serializedState: TCacheShape): apolloDashCacheLib.apolloDashCacheMod.ApolloCache[TCacheShape] = js.native
+  def stop(): scala.Unit = js.native
   def subscribe[T, TVariables](options: apolloDashClientLib.coreWatchQueryOptionsMod.SubscriptionOptions[TVariables]): apolloDashClientLib.utilObservableMod.Observable[T] = js.native
   def watchQuery[T, TVariables](options: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[TVariables]): apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, TVariables] = js.native
 }

@@ -6,11 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object d3DashShapeMod {
-  type CurveFactory = js.Function1[
+  type CurveFactory = /**
+    * Returns a curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
+  js.Function1[
     /* context */ d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D | d3DashPathLib.d3DashPathMod.Path, 
     CurveGenerator
   ]
-  type CurveFactoryLineOnly = js.Function1[
+  type CurveFactoryLineOnly = /**
+    * Returns a "lines only" curve generator which renders to the specified context.
+    *
+    * @param context A rendering context.
+    */
+  js.Function1[
     /* context */ d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D | d3DashPathLib.d3DashPathMod.Path, 
     CurveGeneratorLineOnly
   ]

@@ -22,6 +22,9 @@ class Section ()
     * [Api set: WordApi 1.1]
     */
   val body: Body = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Section: RequestContext = js.native
   /**
     *
     * Gets one of the section's footers.

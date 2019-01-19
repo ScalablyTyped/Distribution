@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class DocumentView ()
   extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_DocumentView: RequestContext = js.native
   /**
     *
     * Disable Hyperlinks.
@@ -29,6 +32,13 @@ class DocumentView ()
     * [Api set:  1.1]
     */
   var disablePan: scala.Boolean = js.native
+  /**
+    *
+    * Disable PanZoomWindow.
+    *
+    * [Api set:  1.1]
+    */
+  var disablePanZoomWindow: scala.Boolean = js.native
   /**
     *
     * Disable Zoom.

@@ -7,10 +7,13 @@ import scala.scalajs.js.annotation._
 
 object stellarDashSdkLibStrings {
   @js.native
-  sealed trait account_merge extends js.Object
+  sealed trait AccountResponse extends js.Object
   
   @js.native
-  sealed trait allow_trust extends js.Object
+  sealed trait BaseResponse extends js.Object
+  
+  @js.native
+  sealed trait account extends js.Object
   
   @js.native
   sealed trait asc extends js.Object
@@ -22,77 +25,58 @@ object stellarDashSdkLibStrings {
   sealed trait auth_revocable_flag extends js.Object
   
   @js.native
-  sealed trait bump_sequence extends js.Object
-  
-  @js.native
-  sealed trait change_trust extends js.Object
-  
-  @js.native
-  sealed trait create_account extends js.Object
-  
-  @js.native
-  sealed trait create_passive_offer extends js.Object
+  sealed trait data extends js.Object
   
   @js.native
   sealed trait desc extends js.Object
   
   @js.native
-  sealed trait ed25519 extends js.Object
+  sealed trait effects extends js.Object
   
   @js.native
-  sealed trait hash extends js.Object
+  sealed trait ledger extends js.Object
   
   @js.native
-  sealed trait id extends js.Object
+  sealed trait offers extends js.Object
   
   @js.native
-  sealed trait inflation extends js.Object
+  sealed trait operations extends js.Object
   
   @js.native
-  sealed trait manage_data extends js.Object
+  sealed trait payments extends js.Object
   
   @js.native
-  sealed trait manage_offer extends js.Object
+  sealed trait precedes extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait succeeds extends js.Object
   
   @js.native
-  sealed trait path_payment extends js.Object
+  sealed trait trades extends js.Object
   
   @js.native
-  sealed trait payment extends js.Object
+  sealed trait transaction extends js.Object
   
   @js.native
-  sealed trait `return` extends js.Object
+  sealed trait transactions extends js.Object
   
-  @js.native
-  sealed trait set_options extends js.Object
-  
-  @js.native
-  sealed trait text extends js.Object
-  
-  def account_merge: account_merge = "account_merge".asInstanceOf[account_merge]
-  def allow_trust: allow_trust = "allow_trust".asInstanceOf[allow_trust]
+  def AccountResponse: AccountResponse = "AccountResponse".asInstanceOf[AccountResponse]
+  def BaseResponse: BaseResponse = "BaseResponse".asInstanceOf[BaseResponse]
+  def account: account = "account".asInstanceOf[account]
   def asc: asc = "asc".asInstanceOf[asc]
   def auth_required_flag: auth_required_flag = "auth_required_flag".asInstanceOf[auth_required_flag]
   def auth_revocable_flag: auth_revocable_flag = "auth_revocable_flag".asInstanceOf[auth_revocable_flag]
-  def bump_sequence: bump_sequence = "bump_sequence".asInstanceOf[bump_sequence]
-  def change_trust: change_trust = "change_trust".asInstanceOf[change_trust]
-  def create_account: create_account = "create_account".asInstanceOf[create_account]
-  def create_passive_offer: create_passive_offer = "create_passive_offer".asInstanceOf[create_passive_offer]
+  def data: data = "data".asInstanceOf[data]
   def desc: desc = "desc".asInstanceOf[desc]
-  def ed25519: ed25519 = "ed25519".asInstanceOf[ed25519]
-  def hash: hash = "hash".asInstanceOf[hash]
-  def id: id = "id".asInstanceOf[id]
-  def inflation: inflation = "inflation".asInstanceOf[inflation]
-  def manage_data: manage_data = "manage_data".asInstanceOf[manage_data]
-  def manage_offer: manage_offer = "manage_offer".asInstanceOf[manage_offer]
-  def none: none = "none".asInstanceOf[none]
-  def path_payment: path_payment = "path_payment".asInstanceOf[path_payment]
-  def payment: payment = "payment".asInstanceOf[payment]
-  def `return`: `return` = "return".asInstanceOf[`return`]
-  def set_options: set_options = "set_options".asInstanceOf[set_options]
-  def text: text = "text".asInstanceOf[text]
+  def effects: effects = "effects".asInstanceOf[effects]
+  def ledger: ledger = "ledger".asInstanceOf[ledger]
+  def offers: offers = "offers".asInstanceOf[offers]
+  def operations: operations = "operations".asInstanceOf[operations]
+  def payments: payments = "payments".asInstanceOf[payments]
+  def precedes: precedes = "precedes".asInstanceOf[precedes]
+  def succeeds: succeeds = "succeeds".asInstanceOf[succeeds]
+  def trades: trades = "trades".asInstanceOf[trades]
+  def transaction: transaction = "transaction".asInstanceOf[transaction]
+  def transactions: transactions = "transactions".asInstanceOf[transactions]
 }
 

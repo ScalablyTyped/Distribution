@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "weapp-api"
-version := "0.0-unknown-dt-20181219Z-7700da"
+version := "0.0-unknown-dt-20190111Z-9ba2ea"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

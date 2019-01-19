@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_CalloutClassName extends js.Object {
   /**
-    * Optional custom classname for the callout that displays in larger viewports, hosting the Dropdown options.
+    * Optional custom className for the callout that displays in larger viewports, hosting the Dropdown options.
     * This is primarily provided for backwards compatibility.
     */
   var calloutClassName: js.UndefOr[java.lang.String] = js.undefined
@@ -30,7 +30,7 @@ trait Anon_CalloutClassName extends js.Object {
     */
   var isRenderingPlaceholder: scala.Boolean
   /**
-    * Optional custom classname for the panel that displays in small viewports, hosting the Dropdown options.
+    * Optional custom className for the panel that displays in small viewports, hosting the Dropdown options.
     * This is primarily provided for backwards compatibility.
     */
   var panelClassName: js.UndefOr[java.lang.String] = js.undefined

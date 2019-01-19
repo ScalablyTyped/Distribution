@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sharp"
-version := "0.21-dt-20181015Z-0a4087"
+version := "0.21-dt-20190109Z-6b6499"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

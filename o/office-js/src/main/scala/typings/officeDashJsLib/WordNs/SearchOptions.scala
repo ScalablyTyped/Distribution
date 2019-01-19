@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class SearchOptions ()
   extends officeDashJsLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_SearchOptions: RequestContext = js.native
   /**
     *
     * Gets or sets a value that indicates whether to ignore all punctuation characters between words. Corresponds to the Ignore punctuation check box in the Find and Replace dialog box.

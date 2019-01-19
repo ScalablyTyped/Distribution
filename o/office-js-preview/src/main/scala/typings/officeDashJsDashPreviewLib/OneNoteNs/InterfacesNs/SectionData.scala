@@ -44,32 +44,11 @@ trait SectionData extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Gets the notebook that contains the section. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var notebook: js.UndefOr[NotebookData] = js.undefined
-  /**
-    *
     * The collection of pages in the section. Read only
     *
     * [Api set: OneNoteApi 1.1]
     */
   var pages: js.UndefOr[js.Array[PageData]] = js.undefined
-  /**
-    *
-    * Gets the section group that contains the section. Throws ItemNotFound if the section is a direct child of the notebook. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var parentSectionGroup: js.UndefOr[SectionGroupData] = js.undefined
-  /**
-    *
-    * Gets the section group that contains the section. Returns null if the section is a direct child of the notebook. Read-only.
-    *
-    * [Api set: OneNoteApi 1.1]
-    */
-  var parentSectionGroupOrNull: js.UndefOr[SectionGroupData] = js.undefined
   /**
     *
     * The web url of the page. Read only

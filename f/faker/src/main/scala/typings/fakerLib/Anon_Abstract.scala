@@ -37,6 +37,14 @@ trait Anon_Abstract extends js.Object {
   def imageUrl(width: scala.Double): java.lang.String = js.native
   def imageUrl(width: scala.Double, height: scala.Double): java.lang.String = js.native
   def imageUrl(width: scala.Double, height: scala.Double, category: java.lang.String): java.lang.String = js.native
+  def imageUrl(width: scala.Double, height: scala.Double, category: java.lang.String, randomize: scala.Boolean): java.lang.String = js.native
+  def imageUrl(
+    width: scala.Double,
+    height: scala.Double,
+    category: java.lang.String,
+    randomize: scala.Boolean,
+    https: scala.Boolean
+  ): java.lang.String = js.native
   def nature(): java.lang.String = js.native
   def nature(width: scala.Double): java.lang.String = js.native
   def nature(width: scala.Double, height: scala.Double): java.lang.String = js.native

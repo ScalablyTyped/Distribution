@@ -22,6 +22,9 @@ class Comment ()
     * [Api set:  1.1]
     */
   var author: java.lang.String = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Comment: RequestContext = js.native
   /**
     *
     * A string that specifies the date when the comment was created.

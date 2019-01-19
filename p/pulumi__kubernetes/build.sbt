@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pulumi__kubernetes"
-version := "0.19.0-30b65c"
+version := "0.19.0-96869d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "google-protobuf" % "3.2-dt-20180214Z-de95e4",
   "org.scalablytyped" %%% "got" % "9.4-dt-20190108Z-51ccc9",
   "org.scalablytyped" %%% "grpc" % "1.17.0-98d9cc",
-  "org.scalablytyped" %%% "js-yaml" % "3.11-dt-20181220Z-0e3b7c",
+  "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-8bc5c9",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-c48db4",
   "org.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20180723Z-e12b56",
   "org.scalablytyped" %%% "lodash_dot_clone" % "4.5-dt-20180723Z-595256",

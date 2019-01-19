@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "app-builder-lib"
-version := "20.38.5-083823"
+version := "20.38.5-6e731d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "app-builder-bin" % "2.6.3-2cd20d",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-a8dc26",
   "org.scalablytyped" %%% "bluebird-lst" % "1.0.6-86df11",
-  "org.scalablytyped" %%% "builder-util" % "9.6.2-513212",
+  "org.scalablytyped" %%% "builder-util" % "9.6.2-8cb09d",
   "org.scalablytyped" %%% "builder-util-runtime" % "8.1.1-2b2741",
   "org.scalablytyped" %%% "chalk" % "2.4.2-aa77e5",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-786ea5",
@@ -22,7 +22,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "dotenv-expand" % "4.2.0-52ab1b",
   "org.scalablytyped" %%% "ejs" % "2.6-dt-20181126Z-6afd7b",
   "org.scalablytyped" %%% "electron-osx-sign" % "0.4.11-8059a5",
-  "org.scalablytyped" %%% "electron-publish" % "20.38.5-5bd5ab",
+  "org.scalablytyped" %%% "electron-publish" % "20.38.5-997bf3",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-433270",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-ceddfc",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-c8d4b8",
@@ -31,7 +31,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "hosted-git-info" % "2.7-dt-20181031Z-6e7b88",
   "org.scalablytyped" %%% "is-ci" % "1.1-dt-20180416Z-c77ed0",
   "org.scalablytyped" %%% "isbinaryfile" % "4.0.0-a5800a",
-  "org.scalablytyped" %%% "js-yaml" % "3.11-dt-20181220Z-0e3b7c",
+  "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-8bc5c9",
   "org.scalablytyped" %%% "json5" % "0.0-unknown-dt-20180813Z-8c7f39",
   "org.scalablytyped" %%% "lazy-val" % "1.0.3-b9e391",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-2342ad",
@@ -41,7 +41,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "normalize-package-data" % "2.4-dt-20180214Z-8d7875",
   "org.scalablytyped" %%% "plist" % "3.0-dt-20181029Z-80be6e",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-6755f9",
-  "org.scalablytyped" %%% "read-config-file" % "3.2.1-b0f635",
+  "org.scalablytyped" %%% "read-config-file" % "3.2.1-f9d7a9",
   "org.scalablytyped" %%% "sanitize-filename" % "v1.1.1-dt-20180214Z-4aae76",
   "org.scalablytyped" %%% "sax" % "1.x-dt-20180616Z-2af35f",
   "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-d66e0c",

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ChooseCardConfig extends js.Object {
+trait ChooseCardConfig extends WxBaseRequestConfig {
   /**
     * 卡券Id
     */
@@ -33,7 +33,8 @@ trait ChooseCardConfig extends js.Object {
   /**
     * var cardList= res.cardList; 用户选中的卡券列表信息
     */
-  var success: js.UndefOr[js.Function1[/* res */ wxDashJsDashSdkDashDtLib.Anon_CardList, scala.Unit]] = js.undefined
+  @JSName("success")
+  var success_ChooseCardConfig: js.UndefOr[js.Function1[/* res */ wxDashJsDashSdkDashDtLib.Anon_CardList, scala.Unit]] = js.undefined
   /**
     * 卡券签名时间戳
     */

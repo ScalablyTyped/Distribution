@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("stellar-sdk", "TransactionBuilder")
 @js.native
 class TransactionBuilder protected ()
-  extends stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.TransactionBuilder {
-  def this(sourceAccount: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Account) = this()
-  def this(sourceAccount: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.Account, options: stellarDashSdkLib.stellarDashSdkMod.StellarBaseNs.TransactionBuilderNs.TransactionBuilderOptions) = this()
+  extends stellarDashBaseLib.stellarDashBaseMod.TransactionBuilder {
+  def this(sourceAccount: stellarDashBaseLib.stellarDashBaseMod.Account) = this()
+  def this(sourceAccount: stellarDashBaseLib.stellarDashBaseMod.Account, options: stellarDashBaseLib.stellarDashBaseMod.TransactionBuilderNs.TransactionBuilderOptions) = this()
 }
 

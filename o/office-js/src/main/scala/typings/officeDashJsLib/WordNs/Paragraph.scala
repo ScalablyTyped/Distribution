@@ -29,6 +29,9 @@ class Paragraph ()
     * [Api set: WordApi 1.1]
     */
   val contentControls: ContentControlCollection = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Paragraph: RequestContext = js.native
   /**
     *
     * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
@@ -258,7 +261,7 @@ class Paragraph ()
   def detachFromList(): scala.Unit = js.native
   /**
     *
-    * Gets the HTML representation of the paragraph object.
+    * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
     *
     * [Api set: WordApi 1.1]
     */
@@ -333,7 +336,7 @@ class Paragraph ()
   def getTextRanges(endingMarks: js.Array[java.lang.String], trimSpacing: scala.Boolean): RangeCollection = js.native
   /**
     *
-    * Inserts a break at the specified location in the main document. 
+    * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.1]
     *
@@ -346,7 +349,7 @@ class Paragraph ()
   ): scala.Unit = js.native
   /**
     *
-    * Inserts a break at the specified location in the main document. 
+    * Inserts a break at the specified location in the main document. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.1]
     *
@@ -485,7 +488,7 @@ class Paragraph ()
   def insertOoxml_Start(ooxml: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.Start): Range = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. 
+    * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.1]
     *
@@ -497,7 +500,7 @@ class Paragraph ()
   def insertParagraph_After(paragraphText: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.After): Paragraph = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. 
+    * Inserts a paragraph at the specified location. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.1]
     *
@@ -514,7 +517,7 @@ class Paragraph ()
   def insertParagraph_Start(paragraphText: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.Start): Paragraph = js.native
   /**
     *
-    * Inserts a table with the specified number of rows and columns. 
+    * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.3]
     *
@@ -545,7 +548,7 @@ class Paragraph ()
   ): Table = js.native
   /**
     *
-    * Inserts a table with the specified number of rows and columns. 
+    * Inserts a table with the specified number of rows and columns. The insertLocation value can be 'Before' or 'After'.
     *
     * [Api set: WordApi 1.3]
     *

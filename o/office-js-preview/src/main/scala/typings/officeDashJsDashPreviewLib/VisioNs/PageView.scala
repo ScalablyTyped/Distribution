@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class PageView ()
   extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_PageView: RequestContext = js.native
   /**
     *
     * Get and set Page's Zoom level. The value can be between 10 and 400 and denotes the percentage of zoom.

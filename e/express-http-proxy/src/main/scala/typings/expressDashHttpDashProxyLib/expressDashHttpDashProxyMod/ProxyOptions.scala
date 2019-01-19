@@ -14,5 +14,15 @@ trait ProxyOptions extends js.Object {
     ]
   ] = js.undefined
   var proxyReqPathResolver: js.UndefOr[js.Function1[/* req */ expressLib.expressMod.eNs.Request, java.lang.String]] = js.undefined
+  var userResHeaderDecorator: js.UndefOr[
+    js.Function5[
+      /* headers */ nodeLib.httpMod.IncomingHttpHeaders, 
+      /* userReq */ expressLib.expressMod.eNs.Request, 
+      /* userRes */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response, 
+      /* proxyReq */ expressLib.expressMod.eNs.Request, 
+      /* proxyRes */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response, 
+      nodeLib.httpMod.OutgoingHttpHeaders
+    ]
+  ] = js.undefined
 }
 

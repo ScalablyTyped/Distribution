@@ -32,6 +32,6 @@ trait Options extends js.Object {
   var watch: js.UndefOr[scala.Boolean] = js.undefined
   var watchDirectory: js.UndefOr[java.lang.String] = js.undefined
   var watchIgnoreDotFiles: js.UndefOr[scala.Boolean] = js.undefined
-  var watchIgnorePatters: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var watchIgnorePatterns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 

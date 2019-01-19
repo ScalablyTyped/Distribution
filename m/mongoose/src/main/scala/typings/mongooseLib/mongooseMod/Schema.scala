@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
   * http://mongoosejs.com/docs/api.html#schema-js
   */
 @js.native
-trait Schema
+trait Schema[T]
   extends nodeLib.eventsMod.EventEmitter {
   /** Object of currently defined methods on this schema. */
-  var methods: js.Any = js.native
+  var methods: mongooseLib.mongooseLibStrings.Schema with T = js.native
   /** The original object passed to the schema constructor */
   var obj: js.Any = js.native
   /** Object of currently defined query helpers on this schema. */
@@ -49,12 +49,12 @@ trait Schema
     * instance methods to schema virtuals, statics, and methods.
     */
   def loadClass(model: js.Function): this.type = js.native
-  def method(methodObj: org.scalablytyped.runtime.StringDictionary[js.Function]): this.type = js.native
+  def method(methodObj: mongooseLib.mongooseLibStrings.Schema with T): this.type = js.native
   /**
     * Adds an instance method to documents constructed from Models compiled from this schema.
     * If a hash of name/fn pairs is passed as the only argument, each name/fn pair will be added as methods.
     */
-  def method(method: java.lang.String, fn: js.Function): this.type = js.native
+  def method[F /* <: java.lang.String */](method: F, fn: /* import warning: ImportType.apply Failed type conversion: T[F] */ js.Any): this.type = js.native
   /**
     * Gets/sets schema paths.
     * Sets a path (if arity 2)

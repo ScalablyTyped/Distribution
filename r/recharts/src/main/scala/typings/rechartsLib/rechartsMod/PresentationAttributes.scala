@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
   var colorRendering: java.lang.String
   var dx: scala.Double
   var dy: scala.Double
+  var fill: java.lang.String
   var fillOpacity: scala.Double | java.lang.String
   var fontSize: scala.Double | java.lang.String
   var fontSizeAdjust: scala.Double | java.lang.String

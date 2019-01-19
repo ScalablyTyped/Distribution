@@ -12,6 +12,7 @@ trait Anon_7 extends js.Object {
   var isBeakVisible: scala.Boolean
   var minPagePadding: scala.Double
   var preventDismissOnLostFocus: scala.Boolean
+  var preventDismissOnResize: scala.Boolean
   var preventDismissOnScroll: scala.Boolean
 }
 

@@ -101,7 +101,7 @@ trait Stack[This, Datum, Key] extends js.Object {
   def value(): js.Function4[
     /* d */ Datum, 
     /* key */ Key, 
-    /* j */ scala.Double, 
+    /* i */ scala.Double, 
     /* data */ js.Array[Datum], 
     scala.Double
   ] = js.native
@@ -115,7 +115,7 @@ trait Stack[This, Datum, Key] extends js.Object {
     value: js.Function4[
       /* d */ Datum, 
       /* key */ Key, 
-      /* j */ scala.Double, 
+      /* i */ scala.Double, 
       /* data */ js.Array[Datum], 
       scala.Double
     ]

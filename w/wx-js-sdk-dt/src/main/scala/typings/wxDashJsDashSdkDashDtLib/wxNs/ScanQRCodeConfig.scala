@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ScanQRCodeConfig extends js.Object {
+trait ScanQRCodeConfig extends WxBaseRequestConfig {
   /**
     * 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
     */
@@ -17,6 +17,7 @@ trait ScanQRCodeConfig extends js.Object {
   /**
     * resultStr 是当 needResult 为 1 时，扫码返回的结果
     */
-  var success: js.UndefOr[js.Function1[/* res */ wxDashJsDashSdkDashDtLib.Anon_ResultStr, scala.Unit]] = js.undefined
+  @JSName("success")
+  var success_ScanQRCodeConfig: js.UndefOr[js.Function1[/* res */ wxDashJsDashSdkDashDtLib.Anon_ResultStr, scala.Unit]] = js.undefined
 }
 

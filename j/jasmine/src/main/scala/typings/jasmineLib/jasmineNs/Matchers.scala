@@ -22,7 +22,6 @@ trait Matchers[T]
     *
     * @param expected the actual value to be === to the expected value.
     * @param expectationFailOutput
-    * @returns {}
     */
   def toBe(expected: Expected[T]): scala.Boolean = js.native
   def toBe(expected: Expected[T], expectationFailOutput: js.Any): scala.Boolean = js.native
@@ -58,7 +57,6 @@ trait Matchers[T]
     *
     * @param expected the actual value to be equal to the expected, using deep equality comparison.
     * @param expectationFailOutput
-    * @returns {}
     */
   def toEqual(expected: Expected[T]): scala.Boolean = js.native
   def toEqual(expected: Expected[T], expectationFailOutput: js.Any): scala.Boolean = js.native

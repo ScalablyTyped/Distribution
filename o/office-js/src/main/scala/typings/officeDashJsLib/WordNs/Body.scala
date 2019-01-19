@@ -22,6 +22,9 @@ class Body ()
     * [Api set: WordApi 1.1]
     */
   val contentControls: ContentControlCollection = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Body: RequestContext = js.native
   /**
     *
     * Gets the text format of the body. Use this to get and set font name, size, color and other properties. Read-only.
@@ -136,7 +139,7 @@ class Body ()
   def clear(): scala.Unit = js.native
   /**
     *
-    * Gets the HTML representation of the body object.
+    * Gets an HTML representation of the body object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `Body.getOoxml()` and convert the returned XML to HTML.
     *
     * [Api set: WordApi 1.1]
     */

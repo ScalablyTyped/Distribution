@@ -58,6 +58,9 @@ object stripeLibStrings {
   sealed trait active extends js.Object
   
   @js.native
+  sealed trait adjustment extends js.Object
+  
+  @js.native
   sealed trait alipay_account extends js.Object
   
   @js.native
@@ -77,6 +80,12 @@ object stripeLibStrings {
   
   @js.native
   sealed trait `application/octet-stream` extends js.Object
+  
+  @js.native
+  sealed trait application_fee extends js.Object
+  
+  @js.native
+  sealed trait application_fee_refund extends js.Object
   
   @js.native
   sealed trait approved extends js.Object
@@ -337,6 +346,9 @@ object stripeLibStrings {
   sealed trait needs_response extends js.Object
   
   @js.native
+  sealed trait network_cost extends js.Object
+  
+  @js.native
   sealed trait `new` extends js.Object
   
   @js.native
@@ -370,7 +382,13 @@ object stripeLibStrings {
   sealed trait past_due extends js.Object
   
   @js.native
+  sealed trait payment extends js.Object
+  
+  @js.native
   sealed trait payout extends js.Object
+  
+  @js.native
+  sealed trait payout_failure extends js.Object
   
   @js.native
   sealed trait pdf extends js.Object
@@ -401,6 +419,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait range extends js.Object
+  
+  @js.native
+  sealed trait refund extends js.Object
   
   @js.native
   sealed trait refunded extends js.Object
@@ -452,6 +473,9 @@ object stripeLibStrings {
   
   @js.native
   sealed trait stripe_account extends js.Object
+  
+  @js.native
+  sealed trait stripe_fee extends js.Object
   
   @js.native
   sealed trait subscription extends js.Object
@@ -587,6 +611,7 @@ object stripeLibStrings {
   def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
   def Visa: Visa = "Visa".asInstanceOf[Visa]
   def active: active = "active".asInstanceOf[active]
+  def adjustment: adjustment = "adjustment".asInstanceOf[adjustment]
   def alipay_account: alipay_account = "alipay_account".asInstanceOf[alipay_account]
   def all: all = "all".asInstanceOf[all]
   def android_pay: android_pay = "android_pay".asInstanceOf[android_pay]
@@ -594,6 +619,8 @@ object stripeLibStrings {
   def apple_pay: apple_pay = "apple_pay".asInstanceOf[apple_pay]
   def application: application = "application".asInstanceOf[application]
   def `application/octet-stream`: `application/octet-stream` = "application/octet-stream".asInstanceOf[`application/octet-stream`]
+  def application_fee: application_fee = "application_fee".asInstanceOf[application_fee]
+  def application_fee_refund: application_fee_refund = "application_fee_refund".asInstanceOf[application_fee_refund]
   def approved: approved = "approved".asInstanceOf[approved]
   def approved_by_network: approved_by_network = "approved_by_network".asInstanceOf[approved_by_network]
   def authorized: authorized = "authorized".asInstanceOf[authorized]
@@ -680,6 +707,7 @@ object stripeLibStrings {
   def month: month = "month".asInstanceOf[month]
   def monthly: monthly = "monthly".asInstanceOf[monthly]
   def needs_response: needs_response = "needs_response".asInstanceOf[needs_response]
+  def network_cost: network_cost = "network_cost".asInstanceOf[network_cost]
   def `new`: `new` = "new".asInstanceOf[`new`]
   def not_sent_to_network: not_sent_to_network = "not_sent_to_network".asInstanceOf[not_sent_to_network]
   def now: now = "now".asInstanceOf[now]
@@ -691,7 +719,9 @@ object stripeLibStrings {
   def paid: paid = "paid".asInstanceOf[paid]
   def pass: pass = "pass".asInstanceOf[pass]
   def past_due: past_due = "past_due".asInstanceOf[past_due]
+  def payment: payment = "payment".asInstanceOf[payment]
   def payout: payout = "payout".asInstanceOf[payout]
+  def payout_failure: payout_failure = "payout_failure".asInstanceOf[payout_failure]
   def pdf: pdf = "pdf".asInstanceOf[pdf]
   def pending: pending = "pending".asInstanceOf[pending]
   def per_unit: per_unit = "per_unit".asInstanceOf[per_unit]
@@ -702,6 +732,7 @@ object stripeLibStrings {
   def product_not_received: product_not_received = "product_not_received".asInstanceOf[product_not_received]
   def product_unacceptable: product_unacceptable = "product_unacceptable".asInstanceOf[product_unacceptable]
   def range: range = "range".asInstanceOf[range]
+  def refund: refund = "refund".asInstanceOf[refund]
   def refunded: refunded = "refunded".asInstanceOf[refunded]
   def refunded_as_fraud: refunded_as_fraud = "refunded_as_fraud".asInstanceOf[refunded_as_fraud]
   def repeating: repeating = "repeating".asInstanceOf[repeating]
@@ -719,6 +750,7 @@ object stripeLibStrings {
   def sku: sku = "sku".asInstanceOf[sku]
   def standard: standard = "standard".asInstanceOf[standard]
   def stripe_account: stripe_account = "stripe_account".asInstanceOf[stripe_account]
+  def stripe_fee: stripe_fee = "stripe_fee".asInstanceOf[stripe_fee]
   def subscription: subscription = "subscription".asInstanceOf[subscription]
   def subscription_canceled: subscription_canceled = "subscription_canceled".asInstanceOf[subscription_canceled]
   def subscription_cycle: subscription_cycle = "subscription_cycle".asInstanceOf[subscription_cycle]

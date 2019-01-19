@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "electron-publish"
-version := "20.38.5-5bd5ab"
+version := "20.38.5-997bf3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "app-builder-bin" % "2.6.3-2cd20d",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-a8dc26",
   "org.scalablytyped" %%% "bluebird-lst" % "1.0.6-86df11",
-  "org.scalablytyped" %%% "builder-util" % "9.6.2-513212",
+  "org.scalablytyped" %%% "builder-util" % "9.6.2-8cb09d",
   "org.scalablytyped" %%% "builder-util-runtime" % "8.1.1-2b2741",
   "org.scalablytyped" %%% "chalk" % "2.4.2-aa77e5",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-786ea5",
@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20180706Z-3bc3c3",
   "org.scalablytyped" %%% "fs-extra-p" % "7.0.0-24020e",
   "org.scalablytyped" %%% "is-ci" % "1.1-dt-20180416Z-c77ed0",
-  "org.scalablytyped" %%% "js-yaml" % "3.11-dt-20181220Z-0e3b7c",
+  "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-8bc5c9",
   "org.scalablytyped" %%% "lazy-val" % "1.0.3-b9e391",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-2342ad",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",

@@ -97,13 +97,13 @@ class Selection[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_
     * Replace the selection with a slice or, if no slice is given,
     * delete the selection. Will append to the given transaction.
     */
-  def replace(tr: Transaction[_]): scala.Unit = js.native
-  def replace(tr: Transaction[_], content: prosemirrorDashModelLib.prosemirrorDashModelMod.Slice[S]): scala.Unit = js.native
+  def replace(tr: Transaction[S]): scala.Unit = js.native
+  def replace(tr: Transaction[S], content: prosemirrorDashModelLib.prosemirrorDashModelMod.Slice[S]): scala.Unit = js.native
   /**
     * Replace the selection with the given node, appending the changes
     * to the given transaction.
     */
-  def replaceWith(tr: Transaction[_], node: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S]): scala.Unit = js.native
+  def replaceWith(tr: Transaction[S], node: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S]): scala.Unit = js.native
   /**
     * Convert the selection to a JSON representation. When implementing
     * this for a custom selection class, make sure to give the object a

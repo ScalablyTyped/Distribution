@@ -87,17 +87,20 @@ trait Anon_ArrayInsert extends js.Object {
     reduxDashFormLib.libActionsMod.FormAction
   ] = js.native
   @JSName("blur")
-  var blur_Original: js.Function3[
+  var blur_Original: js.Function4[
     /* form */ java.lang.String, 
     /* field */ java.lang.String, 
     /* value */ js.Any, 
+    /* touch */ js.UndefOr[scala.Boolean], 
     reduxDashFormLib.libActionsMod.FormAction
   ] = js.native
   @JSName("change")
-  var change_Original: js.Function3[
+  var change_Original: js.Function5[
     /* form */ java.lang.String, 
     /* field */ java.lang.String, 
     /* value */ js.Any, 
+    /* touch */ js.UndefOr[scala.Boolean], 
+    /* persistentSubmitErrors */ js.UndefOr[scala.Boolean], 
     reduxDashFormLib.libActionsMod.FormAction
   ] = js.native
   @JSName("clearAsyncError")
@@ -207,7 +210,16 @@ trait Anon_ArrayInsert extends js.Object {
   def arrayUnshift(form: java.lang.String, field: java.lang.String, value: js.Any): reduxDashFormLib.libActionsMod.FormAction = js.native
   def autofill(form: java.lang.String, field: java.lang.String, value: js.Any): reduxDashFormLib.libActionsMod.FormAction = js.native
   def blur(form: java.lang.String, field: java.lang.String, value: js.Any): reduxDashFormLib.libActionsMod.FormAction = js.native
+  def blur(form: java.lang.String, field: java.lang.String, value: js.Any, touch: scala.Boolean): reduxDashFormLib.libActionsMod.FormAction = js.native
   def change(form: java.lang.String, field: java.lang.String, value: js.Any): reduxDashFormLib.libActionsMod.FormAction = js.native
+  def change(form: java.lang.String, field: java.lang.String, value: js.Any, touch: scala.Boolean): reduxDashFormLib.libActionsMod.FormAction = js.native
+  def change(
+    form: java.lang.String,
+    field: java.lang.String,
+    value: js.Any,
+    touch: scala.Boolean,
+    persistentSubmitErrors: scala.Boolean
+  ): reduxDashFormLib.libActionsMod.FormAction = js.native
   def clearAsyncError(form: java.lang.String, field: java.lang.String): reduxDashFormLib.libActionsMod.FormAction = js.native
   def clearFields(
     form: java.lang.String,

@@ -36,6 +36,9 @@ class TableCell ()
     * [Api set: WordApi 1.3]
     */
   var columnWidth: scala.Double = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_TableCell: RequestContext = js.native
   /**
     *
     * Gets and sets the horizontal alignment of the cell. The value can be 'Left', 'Centered', 'Right', or 'Justified'.

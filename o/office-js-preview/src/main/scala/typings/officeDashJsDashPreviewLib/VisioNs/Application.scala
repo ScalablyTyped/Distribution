@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Application ()
   extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Application: RequestContext = js.native
   /**
     *
     * Show or hide the iFrame application borders.

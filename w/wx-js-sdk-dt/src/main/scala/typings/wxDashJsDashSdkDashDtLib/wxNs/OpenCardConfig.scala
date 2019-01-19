@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * 需要打开的卡券列表
   */
-trait OpenCardConfig extends js.Object {
+trait OpenCardConfig extends WxBaseRequestConfig {
   var cardList: js.Array[OpenCardObj]
 }
 

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object mongooseLibStrings {
   @js.native
+  sealed trait Schema extends js.Object
+  
+  @js.native
   sealed trait _id extends js.Object
   
   @js.native
@@ -129,6 +132,7 @@ object mongooseLibStrings {
   @js.native
   sealed trait writeConcern extends js.Object
   
+  def Schema: Schema = "Schema".asInstanceOf[Schema]
   def _id: _id = "_id".asInstanceOf[_id]
   def aggregate: aggregate = "aggregate".asInstanceOf[aggregate]
   def autoIndex: autoIndex = "autoIndex".asInstanceOf[autoIndex]

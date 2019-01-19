@@ -15,6 +15,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ShapeDataItem ()
   extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject {
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ShapeDataItem: RequestContext = js.native
   /**
     *
     * A string that specifies the format of the shape data item. Read-only.

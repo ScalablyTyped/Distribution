@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "forever-monitor"
-version := "1.7-dt-20180222Z-b807e7"
+version := "1.7-dt-20190108Z-d62a38"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -50,6 +50,9 @@ class DocumentProperties ()
     * [Api set: WordApi 1.3]
     */
   var company: java.lang.String = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_DocumentProperties: RequestContext = js.native
   /**
     *
     * Gets the creation date of the document. Read only.

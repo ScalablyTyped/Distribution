@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait OpenProductSpecificViewConfig extends js.Object {
+trait OpenProductSpecificViewConfig extends WxBaseRequestConfig {
   /**
     * 商品id
     */

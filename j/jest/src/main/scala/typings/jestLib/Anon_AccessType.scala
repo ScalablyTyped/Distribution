@@ -95,8 +95,8 @@ trait Anon_AccessType extends js.Object {
     */
   def requireMock(moduleName: java.lang.String): js.Any = js.native
   /**
-    * Clears the mock.calls and mock.instances properties of all mocks.
-    * Equivalent to calling .mockClear() on every mocked function.
+    * Resets the state of all mocks.
+    * Equivalent to calling .mockReset() on every mocked function.
     */
   def resetAllMocks(): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native
   /**

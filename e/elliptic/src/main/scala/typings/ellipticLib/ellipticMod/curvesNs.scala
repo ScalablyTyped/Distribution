@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 object curvesNs extends js.Object {
   @js.native
   class PresetCurve protected () extends js.Object {
+     // ?
     def this(options: ellipticLib.ellipticMod.curvesNs.PresetCurveNs.Options) = this()
     var g: js.Any = js.native
     var hash: js.Any = js.native

@@ -946,6 +946,9 @@ object reactDashNativeLibStrings {
   sealed trait sentences extends js.Object
   
   @js.native
+  sealed trait sharedAction extends js.Object
+  
+  @js.native
   sealed trait simple extends js.Object
   
   @js.native
@@ -1408,6 +1411,7 @@ object reactDashNativeLibStrings {
   def selected: selected = "selected".asInstanceOf[selected]
   def send: send = "send".asInstanceOf[send]
   def sentences: sentences = "sentences".asInstanceOf[sentences]
+  def sharedAction: sharedAction = "sharedAction".asInstanceOf[sharedAction]
   def simple: simple = "simple".asInstanceOf[simple]
   def slide: slide = "slide".asInstanceOf[slide]
   def small: small = "small".asInstanceOf[small]

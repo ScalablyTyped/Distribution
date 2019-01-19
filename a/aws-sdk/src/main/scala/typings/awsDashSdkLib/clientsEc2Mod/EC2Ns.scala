@@ -25330,7 +25330,7 @@ object EC2Ns extends js.Object {
   type InstanceStatusDetailsList = js.Array[InstanceStatusDetails]
   type InstanceStatusEventList = js.Array[InstanceStatusEvent]
   type InstanceStatusList = js.Array[InstanceStatus]
-  type InstanceType = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 179 */ js.Any
+  type InstanceType = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
   type InstanceTypeList = js.Array[InstanceType]
   type Integer = scala.Double
   type InterfacePermissionType = awsDashSdkLib.awsDashSdkLibStrings.`INSTANCE-ATTACH` | awsDashSdkLib.awsDashSdkLibStrings.`EIP-ASSOCIATE` | java.lang.String

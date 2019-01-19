@@ -17,6 +17,8 @@ trait DumpOptions extends js.Object {
   var indent: js.UndefOr[scala.Double] = js.undefined
   /** set max line width. (default: 80) */
   var lineWidth: js.UndefOr[scala.Double] = js.undefined
+  /** when true, will not add an indentation level to array elements */
+  var noArrayIndent: js.UndefOr[scala.Boolean] = js.undefined
   /** if true don't try to be compatible with older yaml versions. Currently: don't quote "yes", "no" and so on, as required for YAML 1.1 (default: false) */
   var noCompatMode: js.UndefOr[scala.Boolean] = js.undefined
   /** if true, don't convert duplicate objects into references (default: false) */

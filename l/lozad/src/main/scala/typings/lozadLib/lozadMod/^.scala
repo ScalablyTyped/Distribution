@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(): lozadLib.lozadMod.lozadNs.Observer = js.native
-  def apply(selector: java.lang.String): lozadLib.lozadMod.lozadNs.Observer = js.native
-  def apply(selector: java.lang.String, options: lozadLib.lozadMod.lozadNs.Option): lozadLib.lozadMod.lozadNs.Observer = js.native
+  def apply(selector: lozadLib.lozadMod.lozadNs.Selector): lozadLib.lozadMod.lozadNs.Observer = js.native
+  def apply(selector: lozadLib.lozadMod.lozadNs.Selector, options: lozadLib.lozadMod.lozadNs.Option): lozadLib.lozadMod.lozadNs.Observer = js.native
 }
 

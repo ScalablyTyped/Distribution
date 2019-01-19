@@ -16,10 +16,10 @@ trait PluginSpec[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
     */
   var appendTransaction: js.UndefOr[
     (js.Function3[
-      /* transactions */ js.Array[Transaction[_]], 
+      /* transactions */ js.Array[Transaction[S]], 
       /* oldState */ EditorState[S], 
       /* newState */ EditorState[S], 
-      js.UndefOr[Transaction[_] | scala.Null | scala.Unit]
+      js.UndefOr[Transaction[S] | scala.Null | scala.Unit]
     ]) | scala.Null
   ] = js.undefined
   /**
@@ -28,7 +28,7 @@ trait PluginSpec[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
     * returning false).
     */
   var filterTransaction: js.UndefOr[
-    (js.Function2[/* p1 */ Transaction[_], /* p2 */ EditorState[S], scala.Boolean]) | scala.Null
+    (js.Function2[/* p1 */ Transaction[S], /* p2 */ EditorState[S], scala.Boolean]) | scala.Null
   ] = js.undefined
   /**
     * Can be used to make this a keyed plugin. You can have only one
@@ -47,9 +47,7 @@ trait PluginSpec[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
     * Allows a plugin to define a [state field](#state.StateField), an
     * extra slot in the state object in which it can keep its own data.
     */
-  var state: js.UndefOr[
-    (StateField[_, prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _]]) | scala.Null
-  ] = js.undefined
+  var state: js.UndefOr[(StateField[_, S]) | scala.Null] = js.undefined
   /**
     * When the plugin needs to interact with the editor view, or
     * set something up in the DOM, use this field. The function

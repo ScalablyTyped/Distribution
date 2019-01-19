@@ -12,6 +12,7 @@ trait Parameters extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
   var href: js.UndefOr[js.Any] = js.undefined
   var id: js.UndefOr[js.Any] = js.undefined
+  var load: js.UndefOr[js.Function1[/* template */ Template, scala.Unit]] = js.undefined
   var macros: js.UndefOr[js.Any] = js.undefined
   var method: js.UndefOr[js.Any] = js.undefined
   var name: js.UndefOr[js.Any] = js.undefined

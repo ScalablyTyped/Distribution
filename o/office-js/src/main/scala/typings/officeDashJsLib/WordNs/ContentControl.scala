@@ -50,6 +50,9 @@ class ContentControl ()
     * [Api set: WordApi 1.1]
     */
   val contentControls: ContentControlCollection = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_ContentControl: RequestContext = js.native
   /**
     *
     * Gets the text format of the content control. Use this to get and set font name, size, color, and other properties. Read-only.
@@ -136,7 +139,7 @@ class ContentControl ()
   val parentTableOrNullObject: Table = js.native
   /**
     *
-    * Gets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
+    * Gets or sets the placeholder text of the content control. Dimmed text will be displayed when the content control is empty.
     *
     * [Api set: WordApi 1.1]
     */
@@ -222,7 +225,7 @@ class ContentControl ()
   def delete(keepContent: scala.Boolean): scala.Unit = js.native
   /**
     *
-    * Gets the HTML representation of the content control object.
+    * Gets an HTML representation of the content control object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word Online, etc.). If you need exact fidelity, or consistency across platforms, use `ContentControl.getOoxml()` and convert the returned XML to HTML.
     *
     * [Api set: WordApi 1.1]
     */
@@ -414,7 +417,7 @@ class ContentControl ()
   def insertOoxml_Start(ooxml: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.Start): Range = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety.
+    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
     *
     * [Api set: WordApi 1.1]
     *
@@ -426,7 +429,7 @@ class ContentControl ()
   def insertParagraph_After(paragraphText: java.lang.String, insertLocation: officeDashJsLib.officeDashJsLibStrings.After): Paragraph = js.native
   /**
     *
-    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'. This method is only supported if the content control encompasses one or more paragraphs in entirety.
+    * Inserts a paragraph at the specified location. The insertLocation value can be 'Start', 'End', 'Before', or 'After'.
     *
     * [Api set: WordApi 1.1]
     *

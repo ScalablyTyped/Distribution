@@ -238,11 +238,8 @@ trait HostConfig[Type, Props, Container, Instance, TextInstance, HydratableInsta
     hostContext: HostContext
   ): scala.Null | UpdatePayload = js.native
   def resetAfterCommit(containerInfo: Container): scala.Unit = js.native
-  def scheduleDeferredCallback(callback: js.Function1[/* deadline */ Deadline, scala.Unit]): js.Any = js.native
-  def scheduleDeferredCallback(
-    callback: js.Function1[/* deadline */ Deadline, scala.Unit],
-    options: reactDashReconcilerLib.Anon_Timeout
-  ): js.Any = js.native
+  def scheduleDeferredCallback(callback: js.Function0[_]): js.Any = js.native
+  def scheduleDeferredCallback(callback: js.Function0[_], options: reactDashReconcilerLib.Anon_Timeout): js.Any = js.native
   def setTimeout(handler: js.Function1[/* repeated */ js.Any, scala.Unit], timeout: scala.Double): TimeoutHandle | NoTimeout = js.native
   def shouldDeprioritizeSubtree(`type`: Type, props: Props): scala.Boolean = js.native
   def shouldSetTextContent(`type`: Type, props: Props): scala.Boolean = js.native

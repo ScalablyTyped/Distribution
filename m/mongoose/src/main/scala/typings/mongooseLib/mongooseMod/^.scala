@@ -36,11 +36,11 @@ object ^ extends js.Object {
   def disconnect(fn: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]): scala.Null = js.native
   def get(key: java.lang.String): js.Any = js.native
   def model[T /* <: mongooseLib.mongooseMod.Document */](name: java.lang.String): mongooseLib.mongooseMod.Model[T, js.Object] = js.native
-  def model[T /* <: mongooseLib.mongooseMod.Document */](name: java.lang.String, schema: mongooseLib.mongooseMod.Schema): mongooseLib.mongooseMod.Model[T, js.Object] = js.native
-  def model[T /* <: mongooseLib.mongooseMod.Document */](name: java.lang.String, schema: mongooseLib.mongooseMod.Schema, collection: java.lang.String): mongooseLib.mongooseMod.Model[T, js.Object] = js.native
+  def model[T /* <: mongooseLib.mongooseMod.Document */](name: java.lang.String, schema: mongooseLib.mongooseMod.Schema[_]): mongooseLib.mongooseMod.Model[T, js.Object] = js.native
+  def model[T /* <: mongooseLib.mongooseMod.Document */](name: java.lang.String, schema: mongooseLib.mongooseMod.Schema[_], collection: java.lang.String): mongooseLib.mongooseMod.Model[T, js.Object] = js.native
   def model[T /* <: mongooseLib.mongooseMod.Document */](
     name: java.lang.String,
-    schema: mongooseLib.mongooseMod.Schema,
+    schema: mongooseLib.mongooseMod.Schema[_],
     collection: java.lang.String,
     skipInit: scala.Boolean
   ): mongooseLib.mongooseMod.Model[T, js.Object] = js.native
@@ -48,13 +48,13 @@ object ^ extends js.Object {
   @JSName("model")
   def model_TDocumentUModelU[T /* <: mongooseLib.mongooseMod.Document */, U /* <: mongooseLib.mongooseMod.Model[T, js.Object] */](name: java.lang.String): U = js.native
   @JSName("model")
-  def model_TDocumentUModelU[T /* <: mongooseLib.mongooseMod.Document */, U /* <: mongooseLib.mongooseMod.Model[T, js.Object] */](name: java.lang.String, schema: mongooseLib.mongooseMod.Schema): U = js.native
+  def model_TDocumentUModelU[T /* <: mongooseLib.mongooseMod.Document */, U /* <: mongooseLib.mongooseMod.Model[T, js.Object] */](name: java.lang.String, schema: mongooseLib.mongooseMod.Schema[_]): U = js.native
   @JSName("model")
-  def model_TDocumentUModelU[T /* <: mongooseLib.mongooseMod.Document */, U /* <: mongooseLib.mongooseMod.Model[T, js.Object] */](name: java.lang.String, schema: mongooseLib.mongooseMod.Schema, collection: java.lang.String): U = js.native
+  def model_TDocumentUModelU[T /* <: mongooseLib.mongooseMod.Document */, U /* <: mongooseLib.mongooseMod.Model[T, js.Object] */](name: java.lang.String, schema: mongooseLib.mongooseMod.Schema[_], collection: java.lang.String): U = js.native
   @JSName("model")
   def model_TDocumentUModelU[T /* <: mongooseLib.mongooseMod.Document */, U /* <: mongooseLib.mongooseMod.Model[T, js.Object] */](
     name: java.lang.String,
-    schema: mongooseLib.mongooseMod.Schema,
+    schema: mongooseLib.mongooseMod.Schema[_],
     collection: java.lang.String,
     skipInit: scala.Boolean
   ): U = js.native

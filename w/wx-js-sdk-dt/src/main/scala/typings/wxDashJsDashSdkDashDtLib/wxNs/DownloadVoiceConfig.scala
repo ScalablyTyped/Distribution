@@ -1,0 +1,23 @@
+package typings
+package wxDashJsDashSdkDashDtLib.wxNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait DownloadVoiceConfig extends WxBaseRequestConfig {
+  /**
+    * 默认为1，显示进度提示
+    */
+  var isShowProgressTips: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * 需要下载的音频的服务器端 ID，由 uploadVoice 接口获得
+    */
+  var serverId: java.lang.String
+  /**
+    * 下载成功回调
+    */
+  @JSName("success")
+  def success_MDownloadVoiceConfig(res: js.Any): scala.Unit
+}
+

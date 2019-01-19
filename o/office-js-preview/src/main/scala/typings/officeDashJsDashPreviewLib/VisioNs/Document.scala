@@ -22,6 +22,9 @@ class Document ()
     * [Api set:  1.1]
     */
   val application: Application = js.native
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Document: RequestContext = js.native
   /**
     *
     * Occurs when the data is refreshed in the diagram.

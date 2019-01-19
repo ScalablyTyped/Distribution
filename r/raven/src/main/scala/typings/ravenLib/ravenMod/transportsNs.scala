@@ -27,6 +27,7 @@ object transportsNs extends js.Object {
     var method: js.UndefOr[ravenLib.ravenLibStrings.POST | ravenLib.ravenLibStrings.GET] = js.undefined
     var path: js.UndefOr[java.lang.String] = js.undefined
     var port: js.UndefOr[scala.Double] = js.undefined
+    var rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined
   }
   
   @js.native

@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ClassName extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
+  var containerClassName: js.UndefOr[java.lang.String] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var onEnd: js.UndefOr[js.Function1[/* event */ Anon_Data, scala.Unit]] = js.undefined
   var onError: js.UndefOr[js.Function1[/* event */ Anon_Data, scala.Unit]] = js.undefined

@@ -22,6 +22,6 @@ trait ModelProperties extends js.Object {
   /** The name of the model */
   var modelName: java.lang.String
   /** Schema the model uses. */
-  var schema: Schema
+  var schema: Schema[_]
 }
 

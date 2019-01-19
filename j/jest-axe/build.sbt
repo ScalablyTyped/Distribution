@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "jest-axe"
-version := "2.2-dt-20181028Z-c2c7c9"
+version := "2.2-dt-20181028Z-cd730b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "axe-core" % "3.1.2-247025",
-  "org.scalablytyped" %%% "jest" % "23.3-dt-20190106Z-77af7f",
+  "org.scalablytyped" %%% "jest" % "23.3-dt-20190115Z-694c49",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

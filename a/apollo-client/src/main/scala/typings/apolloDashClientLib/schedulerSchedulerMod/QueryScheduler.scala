@@ -42,6 +42,7 @@ class QueryScheduler[TCacheShape] protected () extends js.Object {
     queryId: java.lang.String,
     listener: apolloDashClientLib.coreTypesMod.QueryListener
   ): java.lang.String = js.native
+  def stop(): scala.Unit = js.native
   def stopPollingQuery(queryId: java.lang.String): scala.Unit = js.native
 }
 

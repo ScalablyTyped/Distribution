@@ -41,7 +41,7 @@ trait Anon_Array extends js.Object {
     * http://mongoosejs.com/docs/api.html#schema-embedded-js
     */
   var Embedded: org.scalablytyped.runtime.Instantiable3[
-    /* schema */ mongooseLib.mongooseMod.Schema, 
+    /* schema */ mongooseLib.mongooseMod.Schema[js.Any], 
     /* key */ java.lang.String, 
     /* options */ js.UndefOr[/* options */ js.Any], 
     mongooseLib.mongooseMod.SchemaNs.TypesNs.Embedded
