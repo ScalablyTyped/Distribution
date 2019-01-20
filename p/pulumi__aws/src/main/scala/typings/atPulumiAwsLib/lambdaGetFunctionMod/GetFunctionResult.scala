@@ -43,6 +43,10 @@ trait GetFunctionResult extends js.Object {
     */
   val lastModified: java.lang.String
   /**
+    * A list of Lambda Layer ARNs attached to your Lambda Function.
+    */
+  val layers: js.Array[java.lang.String]
+  /**
     * Amount of memory in MB your Lambda Function can use at runtime.
     */
   val memorySize: scala.Double

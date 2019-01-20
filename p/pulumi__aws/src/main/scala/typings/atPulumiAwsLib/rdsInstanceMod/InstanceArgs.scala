@@ -55,9 +55,7 @@ trait InstanceArgs extends js.Object {
     */
   val characterSetName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   /**
-    * On delete, copy all Instance
-    * `tags` to the final snapshot (if `final_snapshot_identifier` is specified).
-    * Default is `false`.
+    * Copy all Instance `tags` to snapshots. Default is `false`.
     */
   val copyTagsToSnapshot: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
   /**

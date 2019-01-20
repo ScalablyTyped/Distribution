@@ -65,6 +65,11 @@ object elasticbeanstalkNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.elasticbeanstalkEnvironmentMod.EnvironmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  def getApplication(args: atPulumiAwsLib.elasticbeanstalkGetApplicationMod.GetApplicationArgs): js.Promise[atPulumiAwsLib.elasticbeanstalkGetApplicationMod.GetApplicationResult] = js.native
+  def getApplication(
+    args: atPulumiAwsLib.elasticbeanstalkGetApplicationMod.GetApplicationArgs,
+    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
+  ): js.Promise[atPulumiAwsLib.elasticbeanstalkGetApplicationMod.GetApplicationResult] = js.native
   def getHostedZone(): js.Promise[atPulumiAwsLib.elasticbeanstalkGetHostedZoneMod.GetHostedZoneResult] = js.native
   def getHostedZone(args: atPulumiAwsLib.elasticbeanstalkGetHostedZoneMod.GetHostedZoneArgs): js.Promise[atPulumiAwsLib.elasticbeanstalkGetHostedZoneMod.GetHostedZoneResult] = js.native
   def getHostedZone(

@@ -33,6 +33,12 @@ trait FunctionArgs extends js.Object {
     */
   val kmsKeyArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   /**
+    * List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
+    */
+  val layers: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+  ] = js.undefined
+  /**
     * Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
     */
   val memorySize: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined

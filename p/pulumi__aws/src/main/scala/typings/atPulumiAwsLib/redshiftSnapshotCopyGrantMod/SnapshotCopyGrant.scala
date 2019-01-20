@@ -26,6 +26,9 @@ class SnapshotCopyGrant protected ()
     * A friendly name for identifying the grant.
     */
   val snapshotCopyGrantName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 

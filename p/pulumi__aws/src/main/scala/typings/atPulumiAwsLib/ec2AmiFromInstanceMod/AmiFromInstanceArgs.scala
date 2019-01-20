@@ -47,6 +47,9 @@ trait AmiFromInstanceArgs extends js.Object {
     * The id of the instance to use as the basis of the AMI.
     */
   val sourceInstanceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  /**
+    * A mapping of tags to assign to the resource.
+    */
   val tags: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.undefined

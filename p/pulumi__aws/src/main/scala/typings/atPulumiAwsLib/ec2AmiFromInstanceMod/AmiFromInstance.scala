@@ -81,6 +81,9 @@ class AmiFromInstance protected ()
     * for created instances. No other value is supported at this time.
     */
   val sriovNetSupport: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * Keyword to choose what virtualization mode created instances

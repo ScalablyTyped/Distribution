@@ -31,6 +31,9 @@ trait GetGroupResult extends js.Object {
     * id is the provider-assigned unique ID for this managed resource.
     */
   val id: java.lang.String
+  /**
+    * The name of the associated launch configuration.
+    */
   val launchConfiguration: java.lang.String
   /**
     * One or more load balancers associated with the group.

@@ -14,6 +14,9 @@ trait SnapshotCopyGrantArgs extends js.Object {
     * A friendly name for identifying the grant.
     */
   val snapshotCopyGrantName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  /**
+    * A mapping of tags to assign to the resource.
+    */
   val tags: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.undefined

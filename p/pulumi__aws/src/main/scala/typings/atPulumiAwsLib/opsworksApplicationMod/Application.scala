@@ -21,7 +21,7 @@ class Application protected ()
   /**
     * SCM configuration of the app as described below.
     */
-  val appSources: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Password]] = js.native
+  val appSources: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_PasswordRevision]] = js.native
   /**
     * Run bundle install when deploying for application of type `rails`.
     */

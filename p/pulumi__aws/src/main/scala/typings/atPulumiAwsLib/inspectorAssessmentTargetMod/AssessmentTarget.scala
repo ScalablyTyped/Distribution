@@ -16,6 +16,7 @@ class AssessmentTarget protected ()
     * @param args The arguments to use to populate this resource's properties.
     * @param opts A bag of options that control this resource's behavior.
     */
+  def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: AssessmentTargetArgs) = this()
   def this(name: java.lang.String, args: AssessmentTargetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
@@ -24,10 +25,12 @@ class AssessmentTarget protected ()
   val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The name of the assessment target.
-    * * `resource_group_arn` (Required )- The resource group ARN stating tags for instance matching.
     */
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
-  val resourceGroupArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  /**
+    * Inspector Resource Group Amazon Resource Name (ARN) stating tags for instance matching. If not specified, all EC2 instances in the current AWS account and region are included in the assessment target.
+    */
+  val resourceGroupArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/inspector/assessmentTarget", "AssessmentTarget")

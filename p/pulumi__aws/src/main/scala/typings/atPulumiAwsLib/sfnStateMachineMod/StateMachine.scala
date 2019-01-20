@@ -38,6 +38,10 @@ class StateMachine protected ()
     * The current status of the state machine. Either "ACTIVE" or "DELETING".
     */
   val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
 @JSImport("@pulumi/aws/sfn/stateMachine", "StateMachine")

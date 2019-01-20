@@ -11,6 +11,7 @@ trait Anon_AutoscalingPolicyBidPrice extends js.Object {
   var ebsConfigs: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Anon_IopsSize]]]
   ] = js.undefined
+  var id: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   var instanceCount: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
   var instanceRole: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
   var instanceType: atPulumiPulumiLib.resourceMod.Input[java.lang.String]

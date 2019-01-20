@@ -86,8 +86,7 @@ class SpotFleetRequest protected ()
     */
   val targetCapacity: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
-    * A list of `aws_alb_target_group` ARNs, for use with
-    * Application Load Balancing.
+    * A list of `aws_alb_target_group` ARNs, for use with Application Load Balancing.
     */
   val targetGroupArns: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**

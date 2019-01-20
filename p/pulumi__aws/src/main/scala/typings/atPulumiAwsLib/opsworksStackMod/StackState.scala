@@ -34,7 +34,7 @@ trait StackState extends js.Object {
   val customCookbooksSources: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PasswordRevisionSshKeyType]
+        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PasswordRevisionSshKeyTypeUrl]
       ]
     ]
   ] = js.undefined

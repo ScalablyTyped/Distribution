@@ -43,6 +43,9 @@ trait ClusterState extends js.Object {
   val subnetIds: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
   ] = js.undefined
+  /**
+    * A mapping of tags to assign to the resource.
+    */
   val tags: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.undefined

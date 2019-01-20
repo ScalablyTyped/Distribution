@@ -26,5 +26,11 @@ trait StateMachineState extends js.Object {
     * The current status of the state machine. Either "ACTIVE" or "DELETING".
     */
   val status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
+  ] = js.undefined
 }
 

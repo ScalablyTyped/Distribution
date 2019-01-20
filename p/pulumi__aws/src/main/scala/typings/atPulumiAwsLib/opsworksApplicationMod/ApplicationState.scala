@@ -11,7 +11,7 @@ trait ApplicationState extends js.Object {
     */
   val appSources: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PasswordRevision]]
+      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PasswordRevisionSshKey]]
     ]
   ] = js.undefined
   /**

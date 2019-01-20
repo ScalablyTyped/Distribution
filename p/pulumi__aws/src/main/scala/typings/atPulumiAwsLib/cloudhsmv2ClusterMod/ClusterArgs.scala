@@ -18,6 +18,9 @@ trait ClusterArgs extends js.Object {
     * The IDs of subnets in which cluster will operate.
     */
   val subnetIds: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+  /**
+    * A mapping of tags to assign to the resource.
+    */
   val tags: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.undefined

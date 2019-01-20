@@ -88,6 +88,9 @@ trait AmiCopyState extends js.Object {
     * for created instances. No other value is supported at this time.
     */
   val sriovNetSupport: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  /**
+    * A mapping of tags to assign to the resource.
+    */
   val tags: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.undefined

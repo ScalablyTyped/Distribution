@@ -18,5 +18,11 @@ trait StateMachineArgs extends js.Object {
     * The Amazon Resource Name (ARN) of the IAM role to use for this state machine.
     */
   val roleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  /**
+    * Key-value mapping of resource tags
+    */
+  val tags: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
+  ] = js.undefined
 }
 

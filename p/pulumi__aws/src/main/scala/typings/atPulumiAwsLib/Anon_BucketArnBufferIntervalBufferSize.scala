@@ -12,6 +12,7 @@ trait Anon_BucketArnBufferIntervalBufferSize extends js.Object {
   var cloudwatchLoggingOptions: Anon_EnabledLogGroupName
   var compressionFormat: js.UndefOr[java.lang.String] = js.undefined
   var dataFormatConversionConfiguration: js.UndefOr[Anon_EnabledInputFormatConfiguration] = js.undefined
+  var errorOutputPrefix: js.UndefOr[java.lang.String] = js.undefined
   var kmsKeyArn: js.UndefOr[java.lang.String] = js.undefined
   var prefix: js.UndefOr[java.lang.String] = js.undefined
   var processingConfiguration: js.UndefOr[Anon_EnabledProcessors] = js.undefined

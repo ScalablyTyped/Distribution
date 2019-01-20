@@ -18,6 +18,6 @@ object ^ extends js.Object {
   def pwnedPassword(password: java.lang.String): js.Promise[scala.Double] = js.native
   def pwnedPasswordRange(prefix: java.lang.String): js.Promise[js.Array[hibpLib.hibpMod.PwnedPasswordSuffix]] = js.native
   def search(account: java.lang.String): js.Promise[hibpLib.hibpMod.SearchResults] = js.native
-  def search(account: java.lang.String, breachOptions: hibpLib.Anon_Domain): js.Promise[hibpLib.hibpMod.SearchResults] = js.native
+  def search(account: java.lang.String, breachOptions: hibpLib.Anon_DomainTruncate): js.Promise[hibpLib.hibpMod.SearchResults] = js.native
 }
 

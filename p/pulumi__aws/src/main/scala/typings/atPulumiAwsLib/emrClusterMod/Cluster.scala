@@ -46,7 +46,7 @@ class Cluster protected ()
   /**
     * Number of Amazon EC2 instances used to execute the job flow. EMR will use one node as the cluster's master node and use the remainder of the nodes (`core_instance_count`-1) as core nodes. Cannot be specified if `instance_groups` is set. Default `1`
     */
-  val coreInstanceCount: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
+  val coreInstanceCount: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
     * The EC2 instance type of the slave nodes. Cannot be specified if `instance_groups` is set
     */
@@ -66,7 +66,7 @@ class Cluster protected ()
   /**
     * A list of `instance_group` objects for each instance group in the cluster. Exactly one of `master_instance_type` and `instance_group` must be specified. If `instance_group` is set, then it must contain a configuration block for at least the `MASTER` instance group type (as well as any additional instance groups). Defined below
     */
-  val instanceGroups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_AutoscalingPolicy]]] = js.native
+  val instanceGroups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_AutoscalingPolicy]] = js.native
   /**
     * Switch on/off run cluster with no steps or when all steps are complete (default is on)
     */
@@ -82,7 +82,7 @@ class Cluster protected ()
   /**
     * The EC2 instance type of the master node. Exactly one of `master_instance_type` and `instance_group` must be specified.
     */
-  val masterInstanceType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  val masterInstanceType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * The public DNS name of the master EC2 instance.
     */

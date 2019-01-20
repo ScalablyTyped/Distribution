@@ -12,9 +12,11 @@ trait AssessmentTargetState extends js.Object {
   val arn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   /**
     * The name of the assessment target.
-    * * `resource_group_arn` (Required )- The resource group ARN stating tags for instance matching.
     */
   val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  /**
+    * Inspector Resource Group Amazon Resource Name (ARN) stating tags for instance matching. If not specified, all EC2 instances in the current AWS account and region are included in the assessment target.
+    */
   val resourceGroupArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }
 

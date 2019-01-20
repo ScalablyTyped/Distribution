@@ -30,7 +30,14 @@ class MaintenanceWindow protected ()
     * The duration of the Maintenance Window in hours.
     */
   val duration: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  /**
+    * Whether the maintenance window is enabled. Default: `true`.
+    */
   val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  /**
+    * Timestamp in [ISO-8601 extended format](https://www.iso.org/iso-8601-date-and-time-format.html) when to no longer run the maintenance window.
+    */
+  val endDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
     * The name of the maintenance window.
     */
@@ -39,6 +46,14 @@ class MaintenanceWindow protected ()
     * The schedule of the Maintenance Window in the form of a [cron](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-maintenance-cron.html) or rate expression.
     */
   val schedule: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  /**
+    * Timezone for schedule in [Internet Assigned Numbers Authority (IANA) Time Zone Database format](https://www.iana.org/time-zones). For example: `America/Los_Angeles`, `etc/UTC`, or `Asia/Seoul`.
+    */
+  val scheduleTimezone: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
+  /**
+    * Timestamp in [ISO-8601 extended format](https://www.iso.org/iso-8601-date-and-time-format.html) when to begin the maintenance window.
+    */
+  val startDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
 @JSImport("@pulumi/aws/ssm/maintenanceWindow", "MaintenanceWindow")

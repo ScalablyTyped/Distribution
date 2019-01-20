@@ -51,6 +51,9 @@ class Cluster protected ()
     * The IDs of subnets in which cluster will operate.
     */
   val subnetIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
+  /**
+    * A mapping of tags to assign to the resource.
+    */
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
   /**
     * The id of the VPC that the CloudHSM cluster resides in.

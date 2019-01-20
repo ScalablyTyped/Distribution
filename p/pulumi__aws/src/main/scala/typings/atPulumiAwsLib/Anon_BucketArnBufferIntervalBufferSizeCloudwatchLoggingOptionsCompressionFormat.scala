@@ -14,6 +14,7 @@ trait Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptionsCompressionF
   var dataFormatConversionConfiguration: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[Anon_EnabledInputFormatConfigurationOutputFormatConfiguration]
   ] = js.undefined
+  var errorOutputPrefix: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   var kmsKeyArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   var prefix: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   var processingConfiguration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[Anon_EnabledProcessorsAnonParametersType]] = js.undefined

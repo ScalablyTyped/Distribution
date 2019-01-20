@@ -54,6 +54,9 @@ trait AmiCopyArgs extends js.Object {
     * same as the AWS provider region in order to create a copy within the same region.
     */
   val sourceAmiRegion: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  /**
+    * A mapping of tags to assign to the resource.
+    */
   val tags: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.undefined

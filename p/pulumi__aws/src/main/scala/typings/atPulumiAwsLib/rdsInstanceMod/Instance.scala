@@ -80,9 +80,7 @@ class Instance protected ()
     */
   val characterSetName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
-    * On delete, copy all Instance
-    * `tags` to the final snapshot (if `final_snapshot_identifier` is specified).
-    * Default is `false`.
+    * Copy all Instance `tags` to snapshots. Default is `false`.
     */
   val copyTagsToSnapshot: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**

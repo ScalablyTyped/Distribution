@@ -16,6 +16,7 @@ class AssessmentTarget protected ()
     * @param args The arguments to use to populate this resource's properties.
     * @param opts A bag of options that control this resource's behavior.
     */
+  def this(name: java.lang.String) = this()
   def this(name: java.lang.String, args: atPulumiAwsLib.inspectorAssessmentTargetMod.AssessmentTargetArgs) = this()
   def this(name: java.lang.String, args: atPulumiAwsLib.inspectorAssessmentTargetMod.AssessmentTargetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }

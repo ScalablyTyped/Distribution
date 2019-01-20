@@ -55,6 +55,10 @@ class Function protected ()
     */
   val lastModified: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
+    * List of Lambda Layer Version ARNs (maximum of 5) to attach to your Lambda Function. See [Lambda Layers][10]
+    */
+  val layers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
+  /**
     * Amount of memory in MB your Lambda Function can use at runtime. Defaults to `128`. See [Limits][5]
     */
   val memorySize: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native

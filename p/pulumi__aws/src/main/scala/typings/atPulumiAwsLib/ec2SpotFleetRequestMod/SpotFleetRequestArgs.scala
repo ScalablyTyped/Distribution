@@ -75,8 +75,7 @@ trait SpotFleetRequestArgs extends js.Object {
     */
   val targetCapacity: atPulumiPulumiLib.resourceMod.Input[scala.Double]
   /**
-    * A list of `aws_alb_target_group` ARNs, for use with
-    * Application Load Balancing.
+    * A list of `aws_alb_target_group` ARNs, for use with Application Load Balancing.
     */
   val targetGroupArns: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
