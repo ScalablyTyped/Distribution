@@ -10,12 +10,15 @@ package object ObjectionNs {
   type As[QM /* <: Model */, RM, RV] = js.Function1[/* alias */ java.lang.String, QueryBuilder[QM, RM, RV]]
   type BluebirdMapper[T, Result] = js.Function2[/* item */ T, /* index */ scala.Double, Result]
   type ColumnRef = java.lang.String | Raw | Reference | (QueryBuilder[js.Any, js.Array[js.Any], js.Array[js.Any]])
+  type DeepPartialGraph[T] = T | DeepPartialGraphModel[T] | (DeepPartialGraphArray[/* import warning: ImportType.apply Failed type conversion: T[number] */ js.Any])
+  type DeepPartialGraphModel[T] = (GraphModel[objectionLib.objectionLibStrings.DeepPartialGraphModel with T]) | stdLib.Partial[T]
   type Distinct[QM /* <: Model */, RM, RV] = ColumnNamesMethod[QM, RM, RV]
   /**
     * @see http://vincit.github.io/objection.js/#fieldexpression
     */
   type FieldExpression = java.lang.String
   type FilterFunction[QM /* <: Model */] = js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
+  type GraphModel[T] = (objectionLib.Anon_DbRef with T) | (objectionLib.Anon_DbRefId with objectionLib.objectionLibStrings.GraphModel with js.Any) | (objectionLib.Anon_DbRefIdRef with objectionLib.objectionLibStrings.GraphModel with js.Any)
   type Id = java.lang.String | scala.Double
   type IdOrIds = Id | Ids
   type Ids = js.Array[Id]
@@ -38,6 +41,7 @@ package object ObjectionNs {
     QueryBuilder[QM1, RM1, RV1]
   ]
   type NodeStyleCallback = js.Function2[/* err */ js.Any, /* result */ js.UndefOr[js.Any], scala.Unit]
+  type NonFunctionPropertyNames[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: K}[keyof T] */ js.Any
   type OrderBy[QM /* <: Model */, RM, RV] = js.Function2[
     /* column */ ColumnRef, 
     /* direction */ js.UndefOr[java.lang.String], 

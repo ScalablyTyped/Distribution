@@ -40,10 +40,11 @@ trait TableProps[T] extends js.Object {
   var loading: js.UndefOr[scala.Boolean | antdLib.libSpinMod.SpinProps] = js.undefined
   var locale: js.UndefOr[TableLocale] = js.undefined
   var onChange: js.UndefOr[
-    js.Function3[
+    js.Function4[
       /* pagination */ antdLib.libPaginationPaginationMod.PaginationConfig, 
       /* filters */ stdLib.Record[java.lang.String, js.Array[java.lang.String]], 
       /* sorter */ SorterResult[T], 
+      /* extra */ TableCurrentDataSource[T], 
       scala.Unit
     ]
   ] = js.undefined

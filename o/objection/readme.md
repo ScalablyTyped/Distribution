@@ -9,6 +9,7 @@
 // * Drew R. <https://github.com/drew-r>
 // * Karl Blomster <https://github.com/kblomster>
 // * And many others: See <https://github.com/Vincit/objection.js/blob/master/typings/objection/index.d.ts>
+// TypeScript Version: 2.8
 // PLEASE NOTE, the generic type symbols in this file follow this definition:
 //   QM - queried model
 //   RM - candidate result model or model array

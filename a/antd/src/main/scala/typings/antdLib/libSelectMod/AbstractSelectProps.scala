@@ -31,7 +31,9 @@ trait AbstractSelectProps extends js.Object {
       _
     ])
   ] = js.undefined
-  var getPopupContainer: js.UndefOr[js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement]] = js.undefined
+  var getPopupContainer: js.UndefOr[
+    js.Function1[/* triggerNode */ js.UndefOr[reactLib.Element], reactLib.HTMLElement]
+  ] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var loading: js.UndefOr[scala.Boolean] = js.undefined
   var notFoundContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | scala.Null] = js.undefined

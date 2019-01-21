@@ -28,6 +28,10 @@ trait AdvancedSettings extends js.Object {
     */
   var lockDuration: js.UndefOr[scala.Double] = js.undefined
   /**
+    * Interval in milliseconds on which to acquire the job lock.
+    */
+  var lockRenewTime: js.UndefOr[scala.Double] = js.undefined
+  /**
     * Max amount of times a stalled job will be re-processed
     */
   var maxStalledCount: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait UpsertOptions extends js.Object {
+trait UpsertGraphOptions extends js.Object {
   var insertMissing: js.UndefOr[scala.Boolean | js.Array[java.lang.String]] = js.undefined
   var noDelete: js.UndefOr[scala.Boolean | js.Array[java.lang.String]] = js.undefined
   var noInsert: js.UndefOr[scala.Boolean | js.Array[java.lang.String]] = js.undefined

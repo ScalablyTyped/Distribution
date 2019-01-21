@@ -54,7 +54,9 @@ trait Anon_Absolute extends js.Object {
   var MozBinding: js.UndefOr[java.lang.String] = js.undefined
   var MozBorderBottomColors: js.UndefOr[java.lang.String] = js.undefined
   var MozBorderEndColor: js.UndefOr[java.lang.String] = js.undefined
-  var MozBorderEndStyle: js.UndefOr[java.lang.String] = js.undefined
+  var MozBorderEndStyle: js.UndefOr[
+    antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.dotted | antdLib.antdLibStrings.double | antdLib.antdLibStrings.groove | antdLib.antdLibStrings.inset | antdLib.antdLibStrings.outset | antdLib.antdLibStrings.ridge | antdLib.antdLibStrings.solid
+  ] = js.undefined
   var MozBorderEndWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var MozBorderImage: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var MozBorderLeftColors: js.UndefOr[java.lang.String] = js.undefined
@@ -65,7 +67,9 @@ trait Anon_Absolute extends js.Object {
   var MozBorderRadiusTopright: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var MozBorderRightColors: js.UndefOr[java.lang.String] = js.undefined
   var MozBorderStartColor: js.UndefOr[java.lang.String] = js.undefined
-  var MozBorderStartStyle: js.UndefOr[java.lang.String] = js.undefined
+  var MozBorderStartStyle: js.UndefOr[
+    antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.dotted | antdLib.antdLibStrings.double | antdLib.antdLibStrings.groove | antdLib.antdLibStrings.inset | antdLib.antdLibStrings.outset | antdLib.antdLibStrings.ridge | antdLib.antdLibStrings.solid
+  ] = js.undefined
   var MozBorderTopColors: js.UndefOr[java.lang.String] = js.undefined
   var MozBoxAlign: js.UndefOr[
     antdLib.antdLibStrings.start | antdLib.antdLibStrings.center | antdLib.antdLibStrings.end | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.stretch | antdLib.antdLibStrings.baseline
@@ -438,11 +442,15 @@ trait Anon_Absolute extends js.Object {
   var border: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var borderBlockEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var borderBlockEndColor: js.UndefOr[java.lang.String] = js.undefined
-  var borderBlockEndStyle: js.UndefOr[java.lang.String] = js.undefined
+  var borderBlockEndStyle: js.UndefOr[
+    antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.dotted | antdLib.antdLibStrings.double | antdLib.antdLibStrings.groove | antdLib.antdLibStrings.inset | antdLib.antdLibStrings.outset | antdLib.antdLibStrings.ridge | antdLib.antdLibStrings.solid
+  ] = js.undefined
   var borderBlockEndWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var borderBlockStart: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var borderBlockStartColor: js.UndefOr[java.lang.String] = js.undefined
-  var borderBlockStartStyle: js.UndefOr[java.lang.String] = js.undefined
+  var borderBlockStartStyle: js.UndefOr[
+    antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.dotted | antdLib.antdLibStrings.double | antdLib.antdLibStrings.groove | antdLib.antdLibStrings.inset | antdLib.antdLibStrings.outset | antdLib.antdLibStrings.ridge | antdLib.antdLibStrings.solid
+  ] = js.undefined
   var borderBlockStartWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var borderBottom: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var borderBottomColor: js.UndefOr[java.lang.String] = js.undefined
@@ -464,11 +472,15 @@ trait Anon_Absolute extends js.Object {
   var borderImageWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var borderInlineEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var borderInlineEndColor: js.UndefOr[java.lang.String] = js.undefined
-  var borderInlineEndStyle: js.UndefOr[java.lang.String] = js.undefined
+  var borderInlineEndStyle: js.UndefOr[
+    antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.dotted | antdLib.antdLibStrings.double | antdLib.antdLibStrings.groove | antdLib.antdLibStrings.inset | antdLib.antdLibStrings.outset | antdLib.antdLibStrings.ridge | antdLib.antdLibStrings.solid
+  ] = js.undefined
   var borderInlineEndWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var borderInlineStart: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var borderInlineStartColor: js.UndefOr[java.lang.String] = js.undefined
-  var borderInlineStartStyle: js.UndefOr[java.lang.String] = js.undefined
+  var borderInlineStartStyle: js.UndefOr[
+    antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.dashed | antdLib.antdLibStrings.dotted | antdLib.antdLibStrings.double | antdLib.antdLibStrings.groove | antdLib.antdLibStrings.inset | antdLib.antdLibStrings.outset | antdLib.antdLibStrings.ridge | antdLib.antdLibStrings.solid
+  ] = js.undefined
   var borderInlineStartWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var borderLeft: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var borderLeftColor: js.UndefOr[java.lang.String] = js.undefined
@@ -705,6 +717,7 @@ trait Anon_Absolute extends js.Object {
     scala.Double | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
   var lineHeight: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var lineHeightStep: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var listStyle: js.UndefOr[java.lang.String] = js.undefined
   var listStyleImage: js.UndefOr[java.lang.String] = js.undefined
   var listStylePosition: js.UndefOr[
@@ -760,6 +773,7 @@ trait Anon_Absolute extends js.Object {
     antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.color | antdLib.antdLibStrings.`color-burn` | antdLib.antdLibStrings.`color-dodge` | antdLib.antdLibStrings.darken | antdLib.antdLibStrings.difference | antdLib.antdLibStrings.exclusion | antdLib.antdLibStrings.`hard-light` | antdLib.antdLibStrings.hue | antdLib.antdLibStrings.lighten | antdLib.antdLibStrings.luminosity | antdLib.antdLibStrings.multiply | antdLib.antdLibStrings.overlay | antdLib.antdLibStrings.saturation | antdLib.antdLibStrings.screen | antdLib.antdLibStrings.`soft-light`
   ] = js.undefined
   var motion: js.UndefOr[java.lang.String] = js.undefined
+  var motionDistance: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var motionOffset: js.UndefOr[java.lang.String] = js.undefined
   var motionPath: js.UndefOr[java.lang.String] = js.undefined
   var motionRotation: js.UndefOr[java.lang.String] = js.undefined
@@ -889,11 +903,17 @@ trait Anon_Absolute extends js.Object {
     antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.contain | antdLib.antdLibStrings.cover | antdLib.antdLibStrings.fill | antdLib.antdLibStrings.`scale-down`
   ] = js.undefined
   var objectPosition: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var offset: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var offsetAnchor: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var offsetBlockEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var offsetBlockStart: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var offsetDistance: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var offsetInlineEnd: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var offsetInlineStart: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var offsetPath: js.UndefOr[java.lang.String] = js.undefined
   var offsetPosition: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var offsetRotate: js.UndefOr[java.lang.String] = js.undefined
+  var offsetRotation: js.UndefOr[java.lang.String] = js.undefined
   var opacity: js.UndefOr[
     scala.Double | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined
@@ -918,7 +938,7 @@ trait Anon_Absolute extends js.Object {
   ] = js.undefined
   var overflowInline: js.UndefOr[java.lang.String] = js.undefined
   var overflowWrap: js.UndefOr[
-    antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.`break-word`
+    antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.anywhere | antdLib.antdLibStrings.`break-word`
   ] = js.undefined
   var overflowX: js.UndefOr[
     antdLib.antdLibStrings.auto | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.hidden | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.scroll | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.clip
@@ -1008,9 +1028,6 @@ trait Anon_Absolute extends js.Object {
   var scrollSnapDestination: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var scrollSnapPointsX: js.UndefOr[java.lang.String] = js.undefined
   var scrollSnapPointsY: js.UndefOr[java.lang.String] = js.undefined
-  var scrollSnapStop: js.UndefOr[
-    antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.always
-  ] = js.undefined
   var scrollSnapType: js.UndefOr[java.lang.String] = js.undefined
   var scrollSnapTypeX: js.UndefOr[
     antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.mandatory | antdLib.antdLibStrings.proximity
@@ -1019,7 +1036,9 @@ trait Anon_Absolute extends js.Object {
     antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.mandatory | antdLib.antdLibStrings.proximity
   ] = js.undefined
   var scrollbarColor: js.UndefOr[java.lang.String] = js.undefined
-  var scrollbarWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var scrollbarWidth: js.UndefOr[
+    antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.thin
+  ] = js.undefined
   var shapeImageThreshold: js.UndefOr[
     scala.Double | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset
   ] = js.undefined

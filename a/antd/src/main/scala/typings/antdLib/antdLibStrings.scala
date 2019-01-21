@@ -43,7 +43,7 @@ object antdLibStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT12DOT3` extends js.Object
+  sealed trait `3DOT12DOT4` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -95,6 +95,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait always extends js.Object
+  
+  @js.native
+  sealed trait anywhere extends js.Object
   
   @js.native
   sealed trait ascend extends js.Object
@@ -949,6 +952,9 @@ object antdLibStrings {
   sealed trait `text-before-edge` extends js.Object
   
   @js.native
+  sealed trait thin extends js.Object
+  
+  @js.native
   sealed trait `titling-caps` extends js.Object
   
   @js.native
@@ -1080,7 +1086,7 @@ object antdLibStrings {
   def `-webkit-isolate`: `-webkit-isolate` = "-webkit-isolate".asInstanceOf[`-webkit-isolate`]
   def `-webkit-optimize-contrast`: `-webkit-optimize-contrast` = "-webkit-optimize-contrast".asInstanceOf[`-webkit-optimize-contrast`]
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
-  def `3DOT12DOT3`: `3DOT12DOT3` = "3.12.3".asInstanceOf[`3DOT12DOT3`]
+  def `3DOT12DOT4`: `3DOT12DOT4` = "3.12.4".asInstanceOf[`3DOT12DOT4`]
   def AM: AM = "AM".asInstanceOf[AM]
   def Empty: Empty = "".asInstanceOf[Empty]
   def PM: PM = "PM".asInstanceOf[PM]
@@ -1098,6 +1104,7 @@ object antdLibStrings {
   def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
   def alternate: alternate = "alternate".asInstanceOf[alternate]
   def always: always = "always".asInstanceOf[always]
+  def anywhere: anywhere = "anywhere".asInstanceOf[anywhere]
   def ascend: ascend = "ascend".asInstanceOf[ascend]
   def auto: auto = "auto".asInstanceOf[auto]
   def avoid: avoid = "avoid".asInstanceOf[avoid]
@@ -1381,6 +1388,7 @@ object antdLibStrings {
   def text: text = "text".asInstanceOf[text]
   def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
   def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
+  def thin: thin = "thin".asInstanceOf[thin]
   def `titling-caps`: `titling-caps` = "titling-caps".asInstanceOf[`titling-caps`]
   def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
   def top: top = "top".asInstanceOf[top]

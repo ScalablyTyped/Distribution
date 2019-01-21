@@ -70,9 +70,9 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   @JSName("rightOuterJoinRelation")
   var rightOuterJoinRelation_Original: JoinRelation = js.native
   @JSName("upsertGraphAndFetch")
-  var upsertGraphAndFetch_Original: Upsert[QM] = js.native
+  var upsertGraphAndFetch_Original: UpsertGraphAndFetch[QM] = js.native
   @JSName("upsertGraph")
-  var upsertGraph_Original: Upsert[QM] = js.native
+  var upsertGraph_Original: UpsertGraph[QM] = js.native
   @JSName("whereJsonHasAll")
   var whereJsonHasAll_Original: WhereJsonExpression[QM, RM, RV] = js.native
   @JSName("whereJsonHasAny")
@@ -171,30 +171,30 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def insertAndFetch(modelOrObject: stdLib.Partial[QM]): QueryBuilder[QM, QM, QM] = js.native
   def insertAndFetch(modelsOrObjects: js.Array[stdLib.Partial[QM]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   def insertGraph(): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  def insertGraph(modelOrObject: stdLib.Partial[QM]): QueryBuilder[QM, QM, QM] = js.native
-  def insertGraph(modelOrObject: stdLib.Partial[QM], options: InsertGraphOptions): QueryBuilder[QM, QM, QM] = js.native
-  def insertGraph(modelsOrObjects: js.Array[stdLib.Partial[QM]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  def insertGraph(modelsOrObjects: js.Array[stdLib.Partial[QM]], options: InsertGraphOptions): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def insertGraph(modelOrObject: DeepPartialGraph[QM]): QueryBuilder[QM, QM, QM] = js.native
+  def insertGraph(modelOrObject: DeepPartialGraph[QM], options: InsertGraphOptions): QueryBuilder[QM, QM, QM] = js.native
+  def insertGraph(modelsOrObjects: js.Array[DeepPartialGraph[QM]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def insertGraph(modelsOrObjects: js.Array[DeepPartialGraph[QM]], options: InsertGraphOptions): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   def insertGraphAndFetch(): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  def insertGraphAndFetch(modelOrObject: stdLib.Partial[QM]): QueryBuilder[QM, QM, QM] = js.native
-  def insertGraphAndFetch(modelOrObject: stdLib.Partial[QM], options: InsertGraphOptions): QueryBuilder[QM, QM, QM] = js.native
-  def insertGraphAndFetch(modelsOrObjects: js.Array[stdLib.Partial[QM]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  def insertGraphAndFetch(modelsOrObjects: js.Array[stdLib.Partial[QM]], options: InsertGraphOptions): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def insertGraphAndFetch(modelOrObject: DeepPartialGraph[QM]): QueryBuilder[QM, QM, QM] = js.native
+  def insertGraphAndFetch(modelOrObject: DeepPartialGraph[QM], options: InsertGraphOptions): QueryBuilder[QM, QM, QM] = js.native
+  def insertGraphAndFetch(modelsOrObjects: js.Array[DeepPartialGraph[QM]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def insertGraphAndFetch(modelsOrObjects: js.Array[DeepPartialGraph[QM]], options: InsertGraphOptions): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   @JSName("insertGraph")
   def `insertGraph_<this>`(): this.type = js.native
   /**
     * insertWithRelated is an alias for insertGraph.
     */
   def insertWithRelated(): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  def insertWithRelated(modelOrObject: stdLib.Partial[QM]): QueryBuilder[QM, QM, QM] = js.native
-  def insertWithRelated(modelOrObject: stdLib.Partial[QM], options: InsertGraphOptions): QueryBuilder[QM, QM, QM] = js.native
-  def insertWithRelated(modelsOrObjects: js.Array[stdLib.Partial[QM]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  def insertWithRelated(modelsOrObjects: js.Array[stdLib.Partial[QM]], options: InsertGraphOptions): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def insertWithRelated(modelOrObject: DeepPartialGraph[QM]): QueryBuilder[QM, QM, QM] = js.native
+  def insertWithRelated(modelOrObject: DeepPartialGraph[QM], options: InsertGraphOptions): QueryBuilder[QM, QM, QM] = js.native
+  def insertWithRelated(modelsOrObjects: js.Array[DeepPartialGraph[QM]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def insertWithRelated(modelsOrObjects: js.Array[DeepPartialGraph[QM]], options: InsertGraphOptions): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   def insertWithRelatedAndFetch(): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  def insertWithRelatedAndFetch(modelOrObject: stdLib.Partial[QM]): QueryBuilder[QM, QM, QM] = js.native
-  def insertWithRelatedAndFetch(modelOrObject: stdLib.Partial[QM], options: InsertGraphOptions): QueryBuilder[QM, QM, QM] = js.native
-  def insertWithRelatedAndFetch(modelsOrObjects: js.Array[stdLib.Partial[QM]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  def insertWithRelatedAndFetch(modelsOrObjects: js.Array[stdLib.Partial[QM]], options: InsertGraphOptions): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def insertWithRelatedAndFetch(modelOrObject: DeepPartialGraph[QM]): QueryBuilder[QM, QM, QM] = js.native
+  def insertWithRelatedAndFetch(modelOrObject: DeepPartialGraph[QM], options: InsertGraphOptions): QueryBuilder[QM, QM, QM] = js.native
+  def insertWithRelatedAndFetch(modelsOrObjects: js.Array[DeepPartialGraph[QM]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def insertWithRelatedAndFetch(modelsOrObjects: js.Array[DeepPartialGraph[QM]], options: InsertGraphOptions): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   /**
     * insertWithRelated is an alias for insertGraph.
     */
@@ -302,15 +302,15 @@ trait QueryBuilderBase[QM /* <: Model */, RM, RV] extends QueryInterface[QM, RM,
   def updateAndFetch(modelOrObject: PartialUpdate[QM]): QueryBuilder[QM, QM, QM] = js.native
   def updateAndFetchById(id: Id, modelOrObject: PartialUpdate[QM]): QueryBuilder[QM, QM, QM] = js.native
   def upsertGraph(): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  def upsertGraph(modelOrObject: stdLib.Partial[QM]): QueryBuilder[QM, QM, QM] = js.native
-  def upsertGraph(modelOrObject: stdLib.Partial[QM], options: UpsertOptions): QueryBuilder[QM, QM, QM] = js.native
-  def upsertGraph(modelsOrObjects: js.Array[stdLib.Partial[QM]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  def upsertGraph(modelsOrObjects: js.Array[stdLib.Partial[QM]], options: UpsertOptions): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def upsertGraph(modelOrObject: DeepPartialGraph[QM]): QueryBuilder[QM, QM, QM] = js.native
+  def upsertGraph(modelOrObject: DeepPartialGraph[QM], options: UpsertGraphOptions): QueryBuilder[QM, QM, QM] = js.native
+  def upsertGraph(modelsOrObjects: js.Array[DeepPartialGraph[QM]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def upsertGraph(modelsOrObjects: js.Array[DeepPartialGraph[QM]], options: UpsertGraphOptions): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   def upsertGraphAndFetch(): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  def upsertGraphAndFetch(modelOrObject: stdLib.Partial[QM]): QueryBuilder[QM, QM, QM] = js.native
-  def upsertGraphAndFetch(modelOrObject: stdLib.Partial[QM], options: UpsertOptions): QueryBuilder[QM, QM, QM] = js.native
-  def upsertGraphAndFetch(modelsOrObjects: js.Array[stdLib.Partial[QM]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  def upsertGraphAndFetch(modelsOrObjects: js.Array[stdLib.Partial[QM]], options: UpsertOptions): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def upsertGraphAndFetch(modelOrObject: DeepPartialGraph[QM]): QueryBuilder[QM, QM, QM] = js.native
+  def upsertGraphAndFetch(modelOrObject: DeepPartialGraph[QM], options: UpsertGraphOptions): QueryBuilder[QM, QM, QM] = js.native
+  def upsertGraphAndFetch(modelsOrObjects: js.Array[DeepPartialGraph[QM]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
+  def upsertGraphAndFetch(modelsOrObjects: js.Array[DeepPartialGraph[QM]], options: UpsertGraphOptions): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   def whereComposite(column: js.Array[ColumnRef], operator: java.lang.String, value: js.Array[Value]): this.type = js.native
   def whereComposite(
     column: js.Array[ColumnRef],

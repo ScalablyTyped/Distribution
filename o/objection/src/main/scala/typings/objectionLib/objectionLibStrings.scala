@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 object objectionLibStrings {
   @js.native
+  sealed trait DeepPartialGraphModel extends js.Object
+  
+  @js.native
+  sealed trait GraphModel extends js.Object
+  
+  @js.native
   sealed trait InvalidGraph extends js.Object
   
   @js.native
@@ -21,6 +27,8 @@ object objectionLibStrings {
   @js.native
   sealed trait UnallowedRelation extends js.Object
   
+  def DeepPartialGraphModel: DeepPartialGraphModel = "DeepPartialGraphModel".asInstanceOf[DeepPartialGraphModel]
+  def GraphModel: GraphModel = "GraphModel".asInstanceOf[GraphModel]
   def InvalidGraph: InvalidGraph = "InvalidGraph".asInstanceOf[InvalidGraph]
   def ModelValidation: ModelValidation = "ModelValidation".asInstanceOf[ModelValidation]
   def PartialUpdate: PartialUpdate = "PartialUpdate".asInstanceOf[PartialUpdate]

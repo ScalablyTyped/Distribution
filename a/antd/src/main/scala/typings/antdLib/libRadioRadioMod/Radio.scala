@@ -11,6 +11,7 @@ trait Radio
   var rcCheckbox: js.Any = js.native
   def blur(): scala.Unit = js.native
   def focus(): scala.Unit = js.native
+  def onChange(e: antdLib.libRadioInterfaceMod.RadioChangeEvent): scala.Unit = js.native
   def renderRadio(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def saveCheckbox(node: js.Any): scala.Unit = js.native
   @JSName("shouldComponentUpdate")

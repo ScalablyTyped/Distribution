@@ -12,6 +12,8 @@ trait TreeSelectProps
   var filterTreeNode: js.UndefOr[
     js.Function2[/* inputValue */ java.lang.String, /* treeNode */ js.Any, scala.Boolean]
   ] = js.undefined
+  @JSName("getPopupContainer")
+  var getPopupContainer_TreeSelectProps: js.UndefOr[js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement]] = js.undefined
   var labelInValue: js.UndefOr[scala.Boolean] = js.undefined
   var loadData: js.UndefOr[js.Function1[/* node */ js.Any, scala.Unit]] = js.undefined
   var maxTagCount: js.UndefOr[scala.Double] = js.undefined
