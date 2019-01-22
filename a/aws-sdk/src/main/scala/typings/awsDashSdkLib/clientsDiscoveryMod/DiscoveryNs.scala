@@ -90,6 +90,35 @@ object DiscoveryNs extends js.Object {
   
   trait AssociateConfigurationItemsToApplicationResponse extends js.Object
   
+  trait BatchDeleteImportDataError extends js.Object {
+    /**
+      * The type of error that occurred for a specific import task.
+      */
+    var errorCode: js.UndefOr[BatchDeleteImportDataErrorCode] = js.undefined
+    /**
+      * The description of the error that occurred for a specific import task.
+      */
+    var errorDescription: js.UndefOr[BatchDeleteImportDataErrorDescription] = js.undefined
+    /**
+      * The unique import ID associated with the error that occurred.
+      */
+    var importTaskId: js.UndefOr[ImportTaskIdentifier] = js.undefined
+  }
+  
+  trait BatchDeleteImportDataRequest extends js.Object {
+    /**
+      * The IDs for the import tasks that you want to delete.
+      */
+    var importTaskIds: ToDeleteIdentifierList
+  }
+  
+  trait BatchDeleteImportDataResponse extends js.Object {
+    /**
+      * Error messages returned for each import task that you deleted as a response for this command.
+      */
+    var errors: js.UndefOr[BatchDeleteImportDataErrorList] = js.undefined
+  }
+  
   trait ClientApiVersions extends js.Object {
     /**
       * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
@@ -149,7 +178,7 @@ object DiscoveryNs extends js.Object {
       */
     var status: js.UndefOr[ContinuousExportStatus] = js.undefined
     /**
-      * Contains information about any errors that may have occurred.
+      * Contains information about any errors that have occurred. This data type can have the following values:   ACCESS_DENIED - You don’t have permission to start Data Exploration in Amazon Athena. Contact your AWS administrator for help. For more information, see Setting Up AWS Application Discovery Service in the Application Discovery Service User Guide.   DELIVERY_STREAM_LIMIT_FAILURE - You reached the limit for Amazon Kinesis Data Firehose delivery streams. Reduce the number of streams or request a limit increase and try again. For more information, see Kinesis Data Streams Limits in the Amazon Kinesis Data Streams Developer Guide.   FIREHOSE_ROLE_MISSING - The Data Exploration feature is in an error state because your IAM User is missing the AWSApplicationDiscoveryServiceFirehose role. Turn on Data Exploration in Amazon Athena and try again. For more information, see Step 3: Provide Application Discovery Service Access to Non-Administrator Users by Attaching Policies in the Application Discovery Service User Guide.   FIREHOSE_STREAM_DOES_NOT_EXIST - The Data Exploration feature is in an error state because your IAM User is missing one or more of the Kinesis data delivery streams.   INTERNAL_FAILURE - The Data Exploration feature is in an error state because of an internal failure. Try again later. If this problem persists, contact AWS Support.   S3_BUCKET_LIMIT_FAILURE - You reached the limit for Amazon S3 buckets. Reduce the number of Amazon S3 buckets or request a limit increase and try again. For more information, see Bucket Restrictions and Limitations in the Amazon Simple Storage Service Developer Guide.  
       */
     var statusDetail: js.UndefOr[StringMax255] = js.undefined
     /**
@@ -402,6 +431,32 @@ object DiscoveryNs extends js.Object {
     var nextToken: js.UndefOr[NextToken] = js.undefined
   }
   
+  trait DescribeImportTasksRequest extends js.Object {
+    /**
+      * An array of name-value pairs that you provide to filter the results for the DescribeImportTask request to a specific subset of results. Currently, wildcard values aren't supported for filters.
+      */
+    var filters: js.UndefOr[DescribeImportTasksFilterList] = js.undefined
+    /**
+      * The maximum number of results that you want this request to return, up to 100.
+      */
+    var maxResults: js.UndefOr[DescribeImportTasksMaxResults] = js.undefined
+    /**
+      * The token to request a specific page of results.
+      */
+    var nextToken: js.UndefOr[NextToken] = js.undefined
+  }
+  
+  trait DescribeImportTasksResponse extends js.Object {
+    /**
+      * The token to request the next page of results.
+      */
+    var nextToken: js.UndefOr[NextToken] = js.undefined
+    /**
+      * A returned array of import tasks that match any applied filters, up to the specified number of maximum results.
+      */
+    var tasks: js.UndefOr[ImportTaskList] = js.undefined
+  }
+  
   trait DescribeTagsRequest extends js.Object {
     /**
       * You can filter the list using a key-value format. You can separate these items by using logical operators. Allowed filters include tagKey, tagValue, and configurationId. 
@@ -540,6 +595,72 @@ object DiscoveryNs extends js.Object {
       * The number of servers mapped to tags.
       */
     var serversMappedtoTags: js.UndefOr[Long] = js.undefined
+  }
+  
+  trait ImportTask extends js.Object {
+    /**
+      * The total number of application records in the import file that failed to be imported.
+      */
+    var applicationImportFailure: js.UndefOr[Integer] = js.undefined
+    /**
+      * The total number of application records in the import file that were successfully imported.
+      */
+    var applicationImportSuccess: js.UndefOr[Integer] = js.undefined
+    /**
+      * A unique token used to prevent the same import request from occurring more than once. If you didn't provide a token, a token was automatically generated when the import task request was sent.
+      */
+    var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
+    /**
+      * A link to a compressed archive folder (in the ZIP format) that contains an error log and a file of failed records. You can use these two files to quickly identify records that failed, why they failed, and correct those records. Afterward, you can upload the corrected file to your Amazon S3 bucket and create another import task request. This field also includes authorization information so you can confirm the authenticity of the compressed archive before you download it. If some records failed to be imported we recommend that you correct the records in the failed entries file and then imports that failed entries file. This prevents you frmo having to correct and update the larger original file and attempt importing it again.
+      */
+    var errorsAndFailedEntriesZip: js.UndefOr[S3PresignedUrl] = js.undefined
+    /**
+      * The time that the import task request finished, presented in the Unix time stamp format.
+      */
+    var importCompletionTime: js.UndefOr[TimeStamp] = js.undefined
+    /**
+      * The time that the import task request was deleted, presented in the Unix time stamp format.
+      */
+    var importDeletedTime: js.UndefOr[TimeStamp] = js.undefined
+    /**
+      * The time that the import task request was made, presented in the Unix time stamp format.
+      */
+    var importRequestTime: js.UndefOr[TimeStamp] = js.undefined
+    /**
+      * The unique ID for a specific import task. These IDs aren't globally unique, but they are unique within an AWS account.
+      */
+    var importTaskId: js.UndefOr[ImportTaskIdentifier] = js.undefined
+    /**
+      * The URL for your import file that you've uploaded to Amazon S3.
+      */
+    var importUrl: js.UndefOr[ImportURL] = js.undefined
+    /**
+      * A descriptive name for an import task. You can use this name to filter future requests related to this import task, such as identifying applications and servers that were included in this import task. We recommend that you use a meaningful name for each import task.
+      */
+    var name: js.UndefOr[ImportTaskName] = js.undefined
+    /**
+      * The total number of server records in the import file that failed to be imported.
+      */
+    var serverImportFailure: js.UndefOr[Integer] = js.undefined
+    /**
+      * The total number of server records in the import file that were successfully imported.
+      */
+    var serverImportSuccess: js.UndefOr[Integer] = js.undefined
+    /**
+      * The status of the import task. An import can have the status of IMPORT_COMPLETE and still have some records fail to import from the overall request. More information can be found in the downloadable archive defined in the errorsAndFailedEntriesZip field, or in the Migration Hub management console.
+      */
+    var status: js.UndefOr[ImportStatus] = js.undefined
+  }
+  
+  trait ImportTaskFilter extends js.Object {
+    /**
+      * The name, status, or import task ID for a specific import task.
+      */
+    var name: js.UndefOr[ImportTaskFilterName] = js.undefined
+    /**
+      * An array of strings that you can provide to match against a specific name, status, or import task ID to filter the results for your import task queries.
+      */
+    var values: js.UndefOr[ImportTaskFilterValueList] = js.undefined
   }
   
   trait ListConfigurationsRequest extends js.Object {
@@ -716,6 +837,28 @@ object DiscoveryNs extends js.Object {
     var exportId: js.UndefOr[ConfigurationsExportId] = js.undefined
   }
   
+  trait StartImportTaskRequest extends js.Object {
+    /**
+      * Optional. A unique token that you can provide to prevent the same import request from occurring more than once. If you don't provide a token, a token is automatically generated. Sending more than one StartImportTask request with the same client request token will return information about the original import task with that client request token.
+      */
+    var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
+    /**
+      * The URL for your import file that you've uploaded to Amazon S3.  If you're using the AWS CLI, this URL is structured as follows: s3://BucketName/ImportFileName.CSV  
+      */
+    var importUrl: ImportURL
+    /**
+      * A descriptive name for this request. You can use this name to filter future requests related to this import task, such as identifying applications and servers that were included in this import task. We recommend that you use a meaningful name for each import task.
+      */
+    var name: ImportTaskName
+  }
+  
+  trait StartImportTaskResponse extends js.Object {
+    /**
+      * An array of information related to the import task request including status information, times, IDs, the Amazon S3 Object URL for the import file, and more. 
+      */
+    var task: js.UndefOr[ImportTask] = js.undefined
+  }
+  
   trait StopContinuousExportRequest extends js.Object {
     /**
       * The unique ID assigned to this export.
@@ -810,6 +953,29 @@ object DiscoveryNs extends js.Object {
         AssociateConfigurationItemsToApplicationResponse, 
         awsDashSdkLib.libErrorMod.AWSError
       ] = js.native
+    /**
+      * Deletes one or more import tasks, each identified by their import ID. Each import task has a number of records that can identify servers or applications.  AWS Application Discovery Service has built-in matching logic that will identify when discovered servers match existing entries that you've previously discovered, the information for the already-existing discovered server is updated. When you delete an import task that contains records that were used to match, the information in those matched records that comes from the deleted records will also be deleted.
+      */
+    def batchDeleteImportData(): awsDashSdkLib.libRequestMod.Request[BatchDeleteImportDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def batchDeleteImportData(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchDeleteImportDataResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchDeleteImportDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes one or more import tasks, each identified by their import ID. Each import task has a number of records that can identify servers or applications.  AWS Application Discovery Service has built-in matching logic that will identify when discovered servers match existing entries that you've previously discovered, the information for the already-existing discovered server is updated. When you delete an import task that contains records that were used to match, the information in those matched records that comes from the deleted records will also be deleted.
+      */
+    def batchDeleteImportData(params: BatchDeleteImportDataRequest): awsDashSdkLib.libRequestMod.Request[BatchDeleteImportDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def batchDeleteImportData(
+      params: BatchDeleteImportDataRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchDeleteImportDataResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchDeleteImportDataResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Creates an application with the given name and description.
       */
@@ -926,7 +1092,7 @@ object DiscoveryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeAgentsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves attributes for a list of configuration item IDs.  All of the supplied IDs must be for the same asset type from one of the follwoing:   server   application   process   connection   Output fields are specific to the asset type specified. For example, the output for a server configuration item includes a list of attributes about the server, such as host name, operating system, number of network cards, etc. For a complete list of outputs for each asset type, see Using the DescribeConfigurations Action. 
+      * Retrieves attributes for a list of configuration item IDs.  All of the supplied IDs must be for the same asset type from one of the following:   server   application   process   connection   Output fields are specific to the asset type specified. For example, the output for a server configuration item includes a list of attributes about the server, such as host name, operating system, number of network cards, etc. For a complete list of outputs for each asset type, see Using the DescribeConfigurations Action. 
       */
     def describeConfigurations(): awsDashSdkLib.libRequestMod.Request[DescribeConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeConfigurations(
@@ -937,7 +1103,7 @@ object DiscoveryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves attributes for a list of configuration item IDs.  All of the supplied IDs must be for the same asset type from one of the follwoing:   server   application   process   connection   Output fields are specific to the asset type specified. For example, the output for a server configuration item includes a list of attributes about the server, such as host name, operating system, number of network cards, etc. For a complete list of outputs for each asset type, see Using the DescribeConfigurations Action. 
+      * Retrieves attributes for a list of configuration item IDs.  All of the supplied IDs must be for the same asset type from one of the following:   server   application   process   connection   Output fields are specific to the asset type specified. For example, the output for a server configuration item includes a list of attributes about the server, such as host name, operating system, number of network cards, etc. For a complete list of outputs for each asset type, see Using the DescribeConfigurations Action. 
       */
     def describeConfigurations(params: DescribeConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[DescribeConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeConfigurations(
@@ -1017,6 +1183,29 @@ object DiscoveryNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeExportTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Returns an array of import tasks for your account, including status information, times, IDs, the Amazon S3 Object URL for the import file, and more.
+      */
+    def describeImportTasks(): awsDashSdkLib.libRequestMod.Request[DescribeImportTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def describeImportTasks(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeImportTasksResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeImportTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Returns an array of import tasks for your account, including status information, times, IDs, the Amazon S3 Object URL for the import file, and more.
+      */
+    def describeImportTasks(params: DescribeImportTasksRequest): awsDashSdkLib.libRequestMod.Request[DescribeImportTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def describeImportTasks(
+      params: DescribeImportTasksRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DescribeImportTasksResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DescribeImportTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Retrieves a list of configuration items that have tags as specified by the key-value pairs, name and value, passed to the optional parameter filters. There are three valid tag filter names:   tagKey   tagValue   configurationId   Also, all configuration items associated with your user account that have tags can be listed if you call DescribeTags as is without passing any parameters.
       */
@@ -1225,6 +1414,29 @@ object DiscoveryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartExportTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Starts an import task, which allows you to import details of your on-premises environment directly into AWS without having to use the Application Discovery Service (ADS) tools such as the Discovery Connector or Discovery Agent. This gives you the option to perform migration assessment and planning directly from your imported data, including the ability to group your devices as applications and track their migration status. To start an import request, do this:   Download the specially formatted comma separated value (CSV) import template, which you can find here: https://s3-us-west-2.amazonaws.com/templates-7cffcf56-bd96-4b1c-b45b-a5b42f282e46/import_template.csv.   Fill out the template with your server and application data.   Upload your import file to an Amazon S3 bucket, and make a note of it's Object URL. Your import file must be in the CSV format.   Use the console or the StartImportTask command with the AWS CLI or one of the AWS SDKs to import the records from your file.   For more information, including step-by-step procedures, see Migration Hub Import in the AWS Application Discovery Service User Guide.  There are limits to the number of import tasks you can create (and delete) in an AWS account. For more information, see AWS Application Discovery Service Limits in the AWS Application Discovery Service User Guide. 
+      */
+    def startImportTask(): awsDashSdkLib.libRequestMod.Request[StartImportTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def startImportTask(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StartImportTaskResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StartImportTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Starts an import task, which allows you to import details of your on-premises environment directly into AWS without having to use the Application Discovery Service (ADS) tools such as the Discovery Connector or Discovery Agent. This gives you the option to perform migration assessment and planning directly from your imported data, including the ability to group your devices as applications and track their migration status. To start an import request, do this:   Download the specially formatted comma separated value (CSV) import template, which you can find here: https://s3-us-west-2.amazonaws.com/templates-7cffcf56-bd96-4b1c-b45b-a5b42f282e46/import_template.csv.   Fill out the template with your server and application data.   Upload your import file to an Amazon S3 bucket, and make a note of it's Object URL. Your import file must be in the CSV format.   Use the console or the StartImportTask command with the AWS CLI or one of the AWS SDKs to import the records from your file.   For more information, including step-by-step procedures, see Migration Hub Import in the AWS Application Discovery Service User Guide.  There are limits to the number of import tasks you can create (and delete) in an AWS account. For more information, see AWS Application Discovery Service Limits in the AWS Application Discovery Service User Guide. 
+      */
+    def startImportTask(params: StartImportTaskRequest): awsDashSdkLib.libRequestMod.Request[StartImportTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def startImportTask(
+      params: StartImportTaskRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ StartImportTaskResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[StartImportTaskResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Stop the continuous flow of agent's discovered data into Amazon Athena.
       */
     def stopContinuousExport(): awsDashSdkLib.libRequestMod.Request[StopContinuousExportResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -1321,9 +1533,13 @@ object DiscoveryNs extends js.Object {
   type AgentsInfo = js.Array[AgentInfo]
   type ApplicationId = java.lang.String
   type ApplicationIdsList = js.Array[ApplicationId]
+  type BatchDeleteImportDataErrorCode = awsDashSdkLib.awsDashSdkLibStrings.NOT_FOUND | awsDashSdkLib.awsDashSdkLibStrings.INTERNAL_SERVER_ERROR | java.lang.String
+  type BatchDeleteImportDataErrorDescription = java.lang.String
+  type BatchDeleteImportDataErrorList = js.Array[BatchDeleteImportDataError]
   type Boolean = scala.Boolean
   type BoxedInteger = scala.Double
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  type ClientRequestToken = java.lang.String
   type Condition = java.lang.String
   type ConfigurationId = java.lang.String
   type ConfigurationIdList = js.Array[ConfigurationId]
@@ -1339,6 +1555,8 @@ object DiscoveryNs extends js.Object {
   type DatabaseName = java.lang.String
   type DescribeConfigurationsAttributes = js.Array[DescribeConfigurationsAttribute]
   type DescribeContinuousExportsMaxResults = scala.Double
+  type DescribeImportTasksFilterList = js.Array[ImportTaskFilter]
+  type DescribeImportTasksMaxResults = scala.Double
   type ExportDataFormat = awsDashSdkLib.awsDashSdkLibStrings.CSV | awsDashSdkLib.awsDashSdkLibStrings.GRAPHML | java.lang.String
   type ExportDataFormats = js.Array[ExportDataFormat]
   type ExportFilters = js.Array[ExportFilter]
@@ -1351,12 +1569,21 @@ object DiscoveryNs extends js.Object {
   type FilterValue = java.lang.String
   type FilterValues = js.Array[FilterValue]
   type Filters = js.Array[Filter]
+  type ImportStatus = awsDashSdkLib.awsDashSdkLibStrings.IMPORT_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.IMPORT_COMPLETE | awsDashSdkLib.awsDashSdkLibStrings.IMPORT_FAILED | awsDashSdkLib.awsDashSdkLibStrings.IMPORT_FAILED_SERVER_LIMIT_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.IMPORT_FAILED_RECORD_LIMIT_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.DELETE_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.DELETE_COMPLETE | awsDashSdkLib.awsDashSdkLibStrings.DELETE_FAILED | awsDashSdkLib.awsDashSdkLibStrings.DELETE_FAILED_LIMIT_EXCEEDED | java.lang.String
+  type ImportTaskFilterName = awsDashSdkLib.awsDashSdkLibStrings.IMPORT_TASK_ID | awsDashSdkLib.awsDashSdkLibStrings.STATUS | awsDashSdkLib.awsDashSdkLibStrings.NAME | java.lang.String
+  type ImportTaskFilterValue = java.lang.String
+  type ImportTaskFilterValueList = js.Array[ImportTaskFilterValue]
+  type ImportTaskIdentifier = java.lang.String
+  type ImportTaskList = js.Array[ImportTask]
+  type ImportTaskName = java.lang.String
+  type ImportURL = java.lang.String
   type Integer = scala.Double
   type Long = scala.Double
   type NeighborDetailsList = js.Array[NeighborConnectionDetail]
   type NextToken = java.lang.String
   type OrderByList = js.Array[OrderByElement]
   type S3Bucket = java.lang.String
+  type S3PresignedUrl = java.lang.String
   type String = java.lang.String
   type StringMax255 = java.lang.String
   type TagFilters = js.Array[TagFilter]
@@ -1364,6 +1591,7 @@ object DiscoveryNs extends js.Object {
   type TagSet = js.Array[Tag]
   type TagValue = java.lang.String
   type TimeStamp = stdLib.Date
+  type ToDeleteIdentifierList = js.Array[ImportTaskIdentifier]
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2015-11-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
   type orderString = awsDashSdkLib.awsDashSdkLibStrings.ASC | awsDashSdkLib.awsDashSdkLibStrings.DESC | java.lang.String
 }

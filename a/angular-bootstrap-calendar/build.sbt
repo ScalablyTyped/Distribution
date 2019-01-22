@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "angular-bootstrap-calendar"
-version := "0.0-unknown-dt-20180214Z-4892c3"
+version := "0.0-unknown-dt-20180214Z-66e1f1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "angular" % "1.6-dt-20181217Z-6e38d5",
-  "org.scalablytyped" %%% "moment" % "2.23.0-3073eb",
+  "org.scalablytyped" %%% "moment" % "2.24.0-68abed",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

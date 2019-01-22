@@ -16,7 +16,7 @@ class Suggest[T] protected ()
 @JSImport("@blueprintjs/select", "Suggest")
 @js.native
 object Suggest extends js.Object {
-  var defaultProps: atBlueprintjsSelectLib.Anon_CloseOnSelect = js.native
+  var defaultProps: stdLib.Partial[atBlueprintjsSelectLib.libEsmComponentsSelectSuggestMod.ISuggestProps[_]] = js.native
   var displayName: java.lang.String = js.native
   def ofType[T](): org.scalablytyped.runtime.Instantiable1[
     /* props */ atBlueprintjsSelectLib.libEsmComponentsSelectSuggestMod.ISuggestProps[T], 

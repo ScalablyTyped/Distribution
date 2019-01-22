@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typed-github-api"
-version := "1.2.6-4744eb"
+version := "1.2.6-ddf386"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "is-stream" % "1.1-dt-20180214Z-110fbc",
   "org.scalablytyped" %%% "logform" % "1.2-dt-20180214Z-845012",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-2342ad",
-  "org.scalablytyped" %%% "moment" % "2.23.0-3073eb",
+  "org.scalablytyped" %%% "moment" % "2.24.0-68abed",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
   "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181119Z-66b2ff",
   "org.scalablytyped" %%% "one-time" % "0.0-dt-20181231Z-823163",

@@ -43,7 +43,7 @@ class QueryList[T] protected ()
   /* private */ def getItemsParentPadding(): js.Any = js.native
   /**
     * Get the next enabled item, moving in the given direction from the start
-    * index. An `undefined` return value means no suitable item was found.
+    * index. A `null` return value means no suitable item was found.
     * @param direction amount to move in each iteration, typically +/-1
     */
   /* private */ def getNextActiveItem(direction: js.Any): js.Any = js.native

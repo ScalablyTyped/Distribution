@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 package object libComponentsPickersBasePickerDotTypesMod {
   type IBasePickerStyleProps = (stdLib.Pick[
     IBasePickerProps[_], 
-    officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.theme | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.className
+    officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.theme | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.className | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.disabled
   ]) with officeDashUiDashFabricDashReactLib.Anon_InputClassName
 }

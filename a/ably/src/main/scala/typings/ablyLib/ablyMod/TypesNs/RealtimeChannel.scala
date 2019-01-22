@@ -38,5 +38,6 @@ trait RealtimeChannel extends EventEmitter[channelEventCallback, ChannelEvent, C
   def unsubscribe(eventOrCallback: messageCallback[Message], listener: messageCallback[Message]): scala.Unit = js.native
   def unsubscribe(eventOrCallback: java.lang.String): scala.Unit = js.native
   def unsubscribe(eventOrCallback: java.lang.String, listener: messageCallback[Message]): scala.Unit = js.native
+  def whenState(targetState: ChannelState, callback: channelEventCallback): scala.Unit = js.native
 }
 

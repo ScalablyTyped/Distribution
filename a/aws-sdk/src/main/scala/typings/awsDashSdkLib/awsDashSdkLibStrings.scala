@@ -2989,6 +2989,9 @@ object awsDashSdkLibStrings {
   sealed trait DELETE_FAILED_FAS_EXPIRED extends js.Object
   
   @js.native
+  sealed trait DELETE_FAILED_LIMIT_EXCEEDED extends js.Object
+  
+  @js.native
   sealed trait DELETE_FROM_DATABASE extends js.Object
   
   @js.native
@@ -5128,6 +5131,24 @@ object awsDashSdkLibStrings {
   sealed trait IMPORTING extends js.Object
   
   @js.native
+  sealed trait IMPORT_COMPLETE extends js.Object
+  
+  @js.native
+  sealed trait IMPORT_FAILED extends js.Object
+  
+  @js.native
+  sealed trait IMPORT_FAILED_RECORD_LIMIT_EXCEEDED extends js.Object
+  
+  @js.native
+  sealed trait IMPORT_FAILED_SERVER_LIMIT_EXCEEDED extends js.Object
+  
+  @js.native
+  sealed trait IMPORT_IN_PROGRESS extends js.Object
+  
+  @js.native
+  sealed trait IMPORT_TASK_ID extends js.Object
+  
+  @js.native
   sealed trait IMSC extends js.Object
   
   @js.native
@@ -5306,6 +5327,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait INTERNAL_FAILURE extends js.Object
+  
+  @js.native
+  sealed trait INTERNAL_SERVER_ERROR extends js.Object
   
   @js.native
   sealed trait INTERNAL_SERVICE_ERROR extends js.Object
@@ -6851,6 +6875,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait NOT_EXIST extends js.Object
+  
+  @js.native
+  sealed trait NOT_FOUND extends js.Object
   
   @js.native
   sealed trait NOT_IMPORTED extends js.Object
@@ -15475,6 +15502,7 @@ object awsDashSdkLibStrings {
   def DELETE_DOMAIN: DELETE_DOMAIN = "DELETE_DOMAIN".asInstanceOf[DELETE_DOMAIN]
   def DELETE_FAILED: DELETE_FAILED = "DELETE_FAILED".asInstanceOf[DELETE_FAILED]
   def DELETE_FAILED_FAS_EXPIRED: DELETE_FAILED_FAS_EXPIRED = "DELETE_FAILED_FAS_EXPIRED".asInstanceOf[DELETE_FAILED_FAS_EXPIRED]
+  def DELETE_FAILED_LIMIT_EXCEEDED: DELETE_FAILED_LIMIT_EXCEEDED = "DELETE_FAILED_LIMIT_EXCEEDED".asInstanceOf[DELETE_FAILED_LIMIT_EXCEEDED]
   def DELETE_FROM_DATABASE: DELETE_FROM_DATABASE = "DELETE_FROM_DATABASE".asInstanceOf[DELETE_FROM_DATABASE]
   def DELETE_IN_PROGRESS: DELETE_IN_PROGRESS = "DELETE_IN_PROGRESS".asInstanceOf[DELETE_IN_PROGRESS]
   def DELETE_NAMESPACE: DELETE_NAMESPACE = "DELETE_NAMESPACE".asInstanceOf[DELETE_NAMESPACE]
@@ -16188,6 +16216,12 @@ object awsDashSdkLibStrings {
   def IMPORT: IMPORT = "IMPORT".asInstanceOf[IMPORT]
   def IMPORTED: IMPORTED = "IMPORTED".asInstanceOf[IMPORTED]
   def IMPORTING: IMPORTING = "IMPORTING".asInstanceOf[IMPORTING]
+  def IMPORT_COMPLETE: IMPORT_COMPLETE = "IMPORT_COMPLETE".asInstanceOf[IMPORT_COMPLETE]
+  def IMPORT_FAILED: IMPORT_FAILED = "IMPORT_FAILED".asInstanceOf[IMPORT_FAILED]
+  def IMPORT_FAILED_RECORD_LIMIT_EXCEEDED: IMPORT_FAILED_RECORD_LIMIT_EXCEEDED = "IMPORT_FAILED_RECORD_LIMIT_EXCEEDED".asInstanceOf[IMPORT_FAILED_RECORD_LIMIT_EXCEEDED]
+  def IMPORT_FAILED_SERVER_LIMIT_EXCEEDED: IMPORT_FAILED_SERVER_LIMIT_EXCEEDED = "IMPORT_FAILED_SERVER_LIMIT_EXCEEDED".asInstanceOf[IMPORT_FAILED_SERVER_LIMIT_EXCEEDED]
+  def IMPORT_IN_PROGRESS: IMPORT_IN_PROGRESS = "IMPORT_IN_PROGRESS".asInstanceOf[IMPORT_IN_PROGRESS]
+  def IMPORT_TASK_ID: IMPORT_TASK_ID = "IMPORT_TASK_ID".asInstanceOf[IMPORT_TASK_ID]
   def IMSC: IMSC = "IMSC".asInstanceOf[IMSC]
   def IN: IN = "IN".asInstanceOf[IN]
   def INACTIVE: INACTIVE = "INACTIVE".asInstanceOf[INACTIVE]
@@ -16248,6 +16282,7 @@ object awsDashSdkLibStrings {
   def INTERLACED: INTERLACED = "INTERLACED".asInstanceOf[INTERLACED]
   def INTERNAL_ERROR: INTERNAL_ERROR = "INTERNAL_ERROR".asInstanceOf[INTERNAL_ERROR]
   def INTERNAL_FAILURE: INTERNAL_FAILURE = "INTERNAL_FAILURE".asInstanceOf[INTERNAL_FAILURE]
+  def INTERNAL_SERVER_ERROR: INTERNAL_SERVER_ERROR = "INTERNAL_SERVER_ERROR".asInstanceOf[INTERNAL_SERVER_ERROR]
   def INTERNAL_SERVICE_ERROR: INTERNAL_SERVICE_ERROR = "INTERNAL_SERVICE_ERROR".asInstanceOf[INTERNAL_SERVICE_ERROR]
   def INTERNET: INTERNET = "INTERNET".asInstanceOf[INTERNET]
   def INTERPOLATE: INTERPOLATE = "INTERPOLATE".asInstanceOf[INTERPOLATE]
@@ -16763,6 +16798,7 @@ object awsDashSdkLibStrings {
   def NOT_EQUAL: NOT_EQUAL = "NOT_EQUAL".asInstanceOf[NOT_EQUAL]
   def NOT_EQUALS: NOT_EQUALS = "NOT_EQUALS".asInstanceOf[NOT_EQUALS]
   def NOT_EXIST: NOT_EXIST = "NOT_EXIST".asInstanceOf[NOT_EXIST]
+  def NOT_FOUND: NOT_FOUND = "NOT_FOUND".asInstanceOf[NOT_FOUND]
   def NOT_IMPORTED: NOT_IMPORTED = "NOT_IMPORTED".asInstanceOf[NOT_IMPORTED]
   def NOT_IN: NOT_IN = "NOT_IN".asInstanceOf[NOT_IN]
   def NOT_INDICATED: NOT_INDICATED = "NOT_INDICATED".asInstanceOf[NOT_INDICATED]

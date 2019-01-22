@@ -19,6 +19,5 @@ trait EventEmitter[CallbackType, EventType, StateType] extends js.Object {
   def on(eventOrCallback: js.Array[EventType], callback: CallbackType): scala.Unit = js.native
   def once(eventOrCallback: CallbackType | EventType): scala.Unit = js.native
   def once(eventOrCallback: CallbackType | EventType, callback: CallbackType): scala.Unit = js.native
-  def whenState(targetState: StateType, currentState: StateType, callback: CallbackType): scala.Unit = js.native
 }
 

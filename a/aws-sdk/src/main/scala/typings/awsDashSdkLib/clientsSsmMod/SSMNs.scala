@@ -121,6 +121,10 @@ object SSMNs extends js.Object {
       */
     var AssociationVersion: js.UndefOr[AssociationVersion] = js.undefined
     /**
+      * Specify the target for the association. This target is required for associations that use an Automation document and target resources by using rate controls.
+      */
+    var AutomationTargetParameterName: js.UndefOr[AutomationTargetParameterName] = js.undefined
+    /**
       * The severity level that is assigned to the association.
       */
     var ComplianceSeverity: js.UndefOr[AssociationComplianceSeverity] = js.undefined
@@ -413,6 +417,9 @@ object SSMNs extends js.Object {
   }
   
   trait AttachmentInformation extends js.Object {
+    /**
+      * The name of the attachment.
+      */
     var Name: js.UndefOr[AttachmentName] = js.undefined
   }
   
@@ -551,7 +558,7 @@ object SSMNs extends js.Object {
       */
     var AutomationExecutionStatus: js.UndefOr[AutomationExecutionStatus] = js.undefined
     /**
-      * Use this filter with DescribeAutomationExecution. Specify either Local of CrossAccount. CrossAccount is an Automation that executes in multiple AWS Regions and accounts. For more information, see Concurrently Executing Automations in Multiple AWS Regions and Accounts in the AWS Systems Manager User Guide. 
+      * Use this filter with DescribeAutomationExecutions. Specify either Local or CrossAccount. CrossAccount is an Automation that executes in multiple AWS Regions and accounts. For more information, see Concurrently Executing Automations in Multiple AWS Regions and Accounts in the AWS Systems Manager User Guide. 
       */
     var AutomationType: js.UndefOr[AutomationType] = js.undefined
     /**
@@ -1069,6 +1076,10 @@ object SSMNs extends js.Object {
       */
     var AssociationName: js.UndefOr[AssociationName] = js.undefined
     /**
+      * Specify the target for the association. This target is required for associations that use an Automation document and target resources by using rate controls.
+      */
+    var AutomationTargetParameterName: js.UndefOr[AutomationTargetParameterName] = js.undefined
+    /**
       * The severity level to assign to the association.
       */
     var ComplianceSeverity: js.UndefOr[AssociationComplianceSeverity] = js.undefined
@@ -1126,6 +1137,10 @@ object SSMNs extends js.Object {
       * Specify a descriptive name for the association.
       */
     var AssociationName: js.UndefOr[AssociationName] = js.undefined
+    /**
+      * Specify the target for the association. This target is required for associations that use an Automation document and target resources by using rate controls.
+      */
+    var AutomationTargetParameterName: js.UndefOr[AutomationTargetParameterName] = js.undefined
     /**
       * The severity level to assign to the association.
       */
@@ -5098,7 +5113,7 @@ object SSMNs extends js.Object {
   
   trait PatchSource extends js.Object {
     /**
-      * The value of the yum repo configuration. For example:  cachedir=/var/cache/yum/$basesearch   $releasever   keepcache=0   debuglevel=2 
+      * The value of the yum repo configuration. For example:  [main]   cachedir=/var/cache/yum/$basesearch$releasever   keepcache=0   debuglevel=2 
       */
     var Configuration: PatchSourceConfiguration
     /**
@@ -8611,6 +8626,10 @@ object SSMNs extends js.Object {
       */
     var AssociationVersion: js.UndefOr[AssociationVersion] = js.undefined
     /**
+      * Specify the target for the association. This target is required for associations that use an Automation document and target resources by using rate controls.
+      */
+    var AutomationTargetParameterName: js.UndefOr[AutomationTargetParameterName] = js.undefined
+    /**
       * The severity level to assign to the association.
       */
     var ComplianceSeverity: js.UndefOr[AssociationComplianceSeverity] = js.undefined
@@ -9186,6 +9205,7 @@ object SSMNs extends js.Object {
   type AutomationParameterKey = java.lang.String
   type AutomationParameterValue = java.lang.String
   type AutomationParameterValueList = js.Array[AutomationParameterValue]
+  type AutomationTargetParameterName = java.lang.String
   type AutomationType = awsDashSdkLib.awsDashSdkLibStrings.CrossAccount | awsDashSdkLib.awsDashSdkLibStrings.Local | java.lang.String
   type BaselineDescription = java.lang.String
   type BaselineId = java.lang.String

@@ -7,15 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait ITimezonePickerProps
   extends atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps {
-  /** Props to spread to the target `Button`. */
+  /**
+    * Props to spread to the target `Button`.
+    * This prop will be ignored if `children` is provided.
+    */
   var buttonProps: js.UndefOr[
     stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsButtonAbstractButtonMod.IButtonProps]
   ] = js.undefined
-  /**
-    * This component does not support children.
-    * Use `value`, `valueDisplayFormat` and `buttonProps` to customize the button child.
-    */
-  var children: js.UndefOr[scala.Nothing] = js.undefined
   /**
     * The date to use when formatting timezone offsets.
     * An offset date is necessary to account for DST, but typically the default value of `now` will be sufficient.
@@ -24,6 +22,7 @@ trait ITimezonePickerProps
   var date: js.UndefOr[stdLib.Date] = js.undefined
   /**
     * Whether this component is non-interactive.
+    * This prop will be ignored if `children` is provided.
     * @default false
     */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
@@ -38,6 +37,7 @@ trait ITimezonePickerProps
   ] = js.undefined
   /**
     * Text to show when no timezone has been selected (`value === undefined`).
+    * This prop will be ignored if `children` is provided.
     * @default "Select timezone..."
     */
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
@@ -57,6 +57,7 @@ trait ITimezonePickerProps
   var value: js.UndefOr[java.lang.String]
   /**
     * Format to use when displaying the selected (or default) timezone within the target element.
+    * This prop will be ignored if `children` is provided.
     * @default TimezoneDisplayFormat.OFFSET
     */
   var valueDisplayFormat: js.UndefOr[

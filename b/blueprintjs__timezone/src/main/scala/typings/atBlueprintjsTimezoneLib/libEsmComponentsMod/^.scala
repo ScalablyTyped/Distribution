@@ -9,5 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val TimezoneDisplayFormat: atBlueprintjsTimezoneLib.Anon_ABBREVIATION = js.native
+  def getTimezoneMetadata(timezone: java.lang.String): atBlueprintjsTimezoneLib.libEsmComponentsTimezoneDashPickerTimezoneMetadataMod.ITimezoneMetadata = js.native
+  def getTimezoneMetadata(timezone: java.lang.String, date: stdLib.Date): atBlueprintjsTimezoneLib.libEsmComponentsTimezoneDashPickerTimezoneMetadataMod.ITimezoneMetadata = js.native
 }
 

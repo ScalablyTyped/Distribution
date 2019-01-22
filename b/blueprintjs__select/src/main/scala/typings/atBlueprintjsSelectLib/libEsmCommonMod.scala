@@ -8,6 +8,27 @@ import scala.scalajs.js.annotation._
 @JSImport("@blueprintjs/select/lib/esm/common", JSImport.Namespace)
 @js.native
 object libEsmCommonMod extends js.Object {
+  def executeItemsEqual[T](): scala.Boolean = js.native
+  def executeItemsEqual[T](
+    itemsEqualProp: atBlueprintjsSelectLib.libEsmCommonListItemsPropsMod.ItemsEqualProp[T] | js.UndefOr[scala.Nothing],
+    itemA: T
+  ): scala.Boolean = js.native
+  def executeItemsEqual[T](
+    itemsEqualProp: atBlueprintjsSelectLib.libEsmCommonListItemsPropsMod.ItemsEqualProp[T] | js.UndefOr[scala.Nothing],
+    itemA: T,
+    itemB: T
+  ): scala.Boolean = js.native
+  def executeItemsEqual[T](
+    itemsEqualProp: atBlueprintjsSelectLib.libEsmCommonListItemsPropsMod.ItemsEqualProp[T] | js.UndefOr[scala.Nothing],
+    itemA: js.UndefOr[scala.Nothing],
+    itemB: T
+  ): scala.Boolean = js.native
+  def executeItemsEqual[T](
+    itemsEqualProp: atBlueprintjsSelectLib.libEsmCommonListItemsPropsMod.ItemsEqualProp[T] | js.UndefOr[scala.Nothing],
+    itemA: scala.Null,
+    itemB: T
+  ): scala.Boolean = js.native
+  def executeItemsEqual[T](itemsEqualProp: atBlueprintjsSelectLib.libEsmCommonListItemsPropsMod.ItemsEqualProp[T]): scala.Boolean = js.native
   def renderFilteredItems(props: atBlueprintjsSelectLib.libEsmCommonItemListRendererMod.IItemListRendererProps[_]): reactLib.reactMod.ReactNs.ReactNode = js.native
   def renderFilteredItems(
     props: atBlueprintjsSelectLib.libEsmCommonItemListRendererMod.IItemListRendererProps[_],

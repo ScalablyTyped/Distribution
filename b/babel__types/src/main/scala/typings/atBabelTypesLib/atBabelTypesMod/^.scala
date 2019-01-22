@@ -1387,6 +1387,8 @@ object ^ extends js.Object {
   def isTSFunctionType(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.TSFunctionType */ scala.Boolean = js.native
   def isTSImportEqualsDeclaration(node: js.Object): /* is @babel/types.@babel/types.TSImportEqualsDeclaration */ scala.Boolean = js.native
   def isTSImportEqualsDeclaration(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.TSImportEqualsDeclaration */ scala.Boolean = js.native
+  def isTSImportType(node: js.Object): /* is @babel/types.@babel/types.TSImportType */ scala.Boolean = js.native
+  def isTSImportType(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.TSImportType */ scala.Boolean = js.native
   def isTSIndexSignature(node: js.Object): /* is @babel/types.@babel/types.TSIndexSignature */ scala.Boolean = js.native
   def isTSIndexSignature(node: js.Object, opts: js.Object): /* is @babel/types.@babel/types.TSIndexSignature */ scala.Boolean = js.native
   def isTSIndexedAccessType(node: js.Object): /* is @babel/types.@babel/types.TSIndexedAccessType */ scala.Boolean = js.native
@@ -2831,6 +2833,21 @@ object ^ extends js.Object {
     moduleReference: atBabelTypesLib.atBabelTypesMod.TSExternalModuleReference,
     isExport: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.TSImportEqualsDeclaration = js.native
+  def tsImportType(argument: atBabelTypesLib.atBabelTypesMod.StringLiteral): atBabelTypesLib.atBabelTypesMod.TSImportType = js.native
+  def tsImportType(
+    argument: atBabelTypesLib.atBabelTypesMod.StringLiteral,
+    qualifier: atBabelTypesLib.atBabelTypesMod.TSEntityName
+  ): atBabelTypesLib.atBabelTypesMod.TSImportType = js.native
+  def tsImportType(
+    argument: atBabelTypesLib.atBabelTypesMod.StringLiteral,
+    qualifier: atBabelTypesLib.atBabelTypesMod.TSEntityName,
+    typeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation
+  ): atBabelTypesLib.atBabelTypesMod.TSImportType = js.native
+  def tsImportType(
+    argument: atBabelTypesLib.atBabelTypesMod.StringLiteral,
+    qualifier: scala.Null,
+    typeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation
+  ): atBabelTypesLib.atBabelTypesMod.TSImportType = js.native
   def tsIndexSignature(parameters: js.Array[atBabelTypesLib.atBabelTypesMod.Identifier]): atBabelTypesLib.atBabelTypesMod.TSIndexSignature = js.native
   def tsIndexSignature(
     parameters: js.Array[atBabelTypesLib.atBabelTypesMod.Identifier],
@@ -3329,6 +3346,7 @@ object ^ extends js.Object {
     typeAnnotation: atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation
   ): atBabelTypesLib.atBabelTypesMod.TSTypePredicate = js.native
   def tsTypeQuery(exprName: atBabelTypesLib.atBabelTypesMod.TSEntityName): atBabelTypesLib.atBabelTypesMod.TSTypeQuery = js.native
+  def tsTypeQuery(exprName: atBabelTypesLib.atBabelTypesMod.TSImportType): atBabelTypesLib.atBabelTypesMod.TSTypeQuery = js.native
   def tsTypeReference(typeName: atBabelTypesLib.atBabelTypesMod.TSEntityName): atBabelTypesLib.atBabelTypesMod.TSTypeReference = js.native
   def tsTypeReference(
     typeName: atBabelTypesLib.atBabelTypesMod.TSEntityName,

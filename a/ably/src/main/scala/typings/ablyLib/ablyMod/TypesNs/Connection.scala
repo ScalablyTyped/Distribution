@@ -17,5 +17,6 @@ trait Connection extends EventEmitter[connectionEventCallback, ConnectionEvent, 
   def connect(): scala.Unit = js.native
   def ping(): scala.Unit = js.native
   def ping(callback: js.Function2[/* error */ ErrorInfo, /* responseTime */ scala.Double, scala.Unit]): scala.Unit = js.native
+  def whenState(targetState: ConnectionState, callback: connectionEventCallback): scala.Unit = js.native
 }
 

@@ -48,6 +48,41 @@ trait Discovery
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Deletes one or more import tasks, each identified by their import ID. Each import task has a number of records that can identify servers or applications.  AWS Application Discovery Service has built-in matching logic that will identify when discovered servers match existing entries that you've previously discovered, the information for the already-existing discovered server is updated. When you delete an import task that contains records that were used to match, the information in those matched records that comes from the deleted records will also be deleted.
+    */
+  def batchDeleteImportData(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.BatchDeleteImportDataResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def batchDeleteImportData(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.BatchDeleteImportDataResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.BatchDeleteImportDataResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Deletes one or more import tasks, each identified by their import ID. Each import task has a number of records that can identify servers or applications.  AWS Application Discovery Service has built-in matching logic that will identify when discovered servers match existing entries that you've previously discovered, the information for the already-existing discovered server is updated. When you delete an import task that contains records that were used to match, the information in those matched records that comes from the deleted records will also be deleted.
+    */
+  def batchDeleteImportData(params: awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.BatchDeleteImportDataRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.BatchDeleteImportDataResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def batchDeleteImportData(
+    params: awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.BatchDeleteImportDataRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.BatchDeleteImportDataResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.BatchDeleteImportDataResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Creates an application with the given name and description.
     */
   def createApplication(): awsDashSdkLib.libRequestMod.Request[
@@ -223,7 +258,7 @@ trait Discovery
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves attributes for a list of configuration item IDs.  All of the supplied IDs must be for the same asset type from one of the follwoing:   server   application   process   connection   Output fields are specific to the asset type specified. For example, the output for a server configuration item includes a list of attributes about the server, such as host name, operating system, number of network cards, etc. For a complete list of outputs for each asset type, see Using the DescribeConfigurations Action. 
+    * Retrieves attributes for a list of configuration item IDs.  All of the supplied IDs must be for the same asset type from one of the following:   server   application   process   connection   Output fields are specific to the asset type specified. For example, the output for a server configuration item includes a list of attributes about the server, such as host name, operating system, number of network cards, etc. For a complete list of outputs for each asset type, see Using the DescribeConfigurations Action. 
     */
   def describeConfigurations(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.DescribeConfigurationsResponse, 
@@ -240,7 +275,7 @@ trait Discovery
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves attributes for a list of configuration item IDs.  All of the supplied IDs must be for the same asset type from one of the follwoing:   server   application   process   connection   Output fields are specific to the asset type specified. For example, the output for a server configuration item includes a list of attributes about the server, such as host name, operating system, number of network cards, etc. For a complete list of outputs for each asset type, see Using the DescribeConfigurations Action. 
+    * Retrieves attributes for a list of configuration item IDs.  All of the supplied IDs must be for the same asset type from one of the following:   server   application   process   connection   Output fields are specific to the asset type specified. For example, the output for a server configuration item includes a list of attributes about the server, such as host name, operating system, number of network cards, etc. For a complete list of outputs for each asset type, see Using the DescribeConfigurations Action. 
     */
   def describeConfigurations(params: awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.DescribeConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.DescribeConfigurationsResponse, 
@@ -360,6 +395,41 @@ trait Discovery
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.DescribeExportTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Returns an array of import tasks for your account, including status information, times, IDs, the Amazon S3 Object URL for the import file, and more.
+    */
+  def describeImportTasks(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.DescribeImportTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def describeImportTasks(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.DescribeImportTasksResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.DescribeImportTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Returns an array of import tasks for your account, including status information, times, IDs, the Amazon S3 Object URL for the import file, and more.
+    */
+  def describeImportTasks(params: awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.DescribeImportTasksRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.DescribeImportTasksResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def describeImportTasks(
+    params: awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.DescribeImportTasksRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.DescribeImportTasksResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.DescribeImportTasksResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -659,6 +729,41 @@ trait Discovery
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.StartExportTaskResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Starts an import task, which allows you to import details of your on-premises environment directly into AWS without having to use the Application Discovery Service (ADS) tools such as the Discovery Connector or Discovery Agent. This gives you the option to perform migration assessment and planning directly from your imported data, including the ability to group your devices as applications and track their migration status. To start an import request, do this:   Download the specially formatted comma separated value (CSV) import template, which you can find here: https://s3-us-west-2.amazonaws.com/templates-7cffcf56-bd96-4b1c-b45b-a5b42f282e46/import_template.csv.   Fill out the template with your server and application data.   Upload your import file to an Amazon S3 bucket, and make a note of it's Object URL. Your import file must be in the CSV format.   Use the console or the StartImportTask command with the AWS CLI or one of the AWS SDKs to import the records from your file.   For more information, including step-by-step procedures, see Migration Hub Import in the AWS Application Discovery Service User Guide.  There are limits to the number of import tasks you can create (and delete) in an AWS account. For more information, see AWS Application Discovery Service Limits in the AWS Application Discovery Service User Guide. 
+    */
+  def startImportTask(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.StartImportTaskResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def startImportTask(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.StartImportTaskResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.StartImportTaskResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Starts an import task, which allows you to import details of your on-premises environment directly into AWS without having to use the Application Discovery Service (ADS) tools such as the Discovery Connector or Discovery Agent. This gives you the option to perform migration assessment and planning directly from your imported data, including the ability to group your devices as applications and track their migration status. To start an import request, do this:   Download the specially formatted comma separated value (CSV) import template, which you can find here: https://s3-us-west-2.amazonaws.com/templates-7cffcf56-bd96-4b1c-b45b-a5b42f282e46/import_template.csv.   Fill out the template with your server and application data.   Upload your import file to an Amazon S3 bucket, and make a note of it's Object URL. Your import file must be in the CSV format.   Use the console or the StartImportTask command with the AWS CLI or one of the AWS SDKs to import the records from your file.   For more information, including step-by-step procedures, see Migration Hub Import in the AWS Application Discovery Service User Guide.  There are limits to the number of import tasks you can create (and delete) in an AWS account. For more information, see AWS Application Discovery Service Limits in the AWS Application Discovery Service User Guide. 
+    */
+  def startImportTask(params: awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.StartImportTaskRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.StartImportTaskResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def startImportTask(
+    params: awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.StartImportTaskRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.StartImportTaskResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.StartImportTaskResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

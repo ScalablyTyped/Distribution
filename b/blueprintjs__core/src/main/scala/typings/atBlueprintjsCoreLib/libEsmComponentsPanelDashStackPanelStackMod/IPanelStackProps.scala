@@ -11,7 +11,7 @@ trait IPanelStackProps
     * The initial panel to show on mount. This panel cannot be removed from the
     * stack and will appear when the stack is empty.
     */
-  var initialPanel: atBlueprintjsCoreLib.libEsmComponentsPanelDashStackPanelPropsMod.IPanel[js.Object]
+  var initialPanel: atBlueprintjsCoreLib.libEsmComponentsPanelDashStackPanelPropsMod.IPanel[_]
   /**
     * Callback invoked when the user presses the back button or a panel invokes
     * the `closePanel()` injected prop method.

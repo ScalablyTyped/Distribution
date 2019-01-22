@@ -43,11 +43,6 @@ trait CarouselProps extends js.Object {
     */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * When set to true, disable keyboard controls
-    * @default false
-    */
-  var disableKeyboardControls: js.UndefOr[scala.Boolean] = js.undefined
-  /**
     * Enable mouse swipe/dragging
     */
   var dragging: js.UndefOr[scala.Boolean] = js.undefined
@@ -61,6 +56,11 @@ trait CarouselProps extends js.Object {
     * @see https://github.com/d3/d3-ease
     */
   var edgeEasing: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * When set to true, disable keyboard controls
+    * @default false
+    */
+  var enableKeyboardControls: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Used to set overflow style property on slider frame
     * @default 'hidden'

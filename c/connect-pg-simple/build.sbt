@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "connect-pg-simple"
-version := "4.2-dt-20180214Z-82d929"
+version := "4.2-dt-20180214Z-e22b35"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,10 +12,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-970fa5",
   "org.scalablytyped" %%% "express-session" % "1.15-dt-20180901Z-6df3d6",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-2342ad",
-  "org.scalablytyped" %%% "moment" % "2.23.0-3073eb",
+  "org.scalablytyped" %%% "moment" % "2.24.0-68abed",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
-  "org.scalablytyped" %%% "pg" % "7.4-dt-20181008Z-5d1270",
-  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180214Z-c56f1e",
+  "org.scalablytyped" %%% "pg" % "7.4-dt-20181008Z-3a7a0a",
+  "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180214Z-bb8050",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-a57469",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-c3aa54",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")

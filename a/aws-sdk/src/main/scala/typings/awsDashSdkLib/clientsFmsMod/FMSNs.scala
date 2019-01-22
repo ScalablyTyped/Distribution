@@ -44,6 +44,10 @@ object FMSNs extends js.Object {
   
   trait DeletePolicyRequest extends js.Object {
     /**
+      * If True, the request will also delete all web ACLs in this policy. Associated resources will no longer be protected by web ACLs in this policy.
+      */
+    var DeleteAllPolicyResources: js.UndefOr[Boolean] = js.undefined
+    /**
       * The ID of the policy that you want to delete. PolicyId is returned by PutPolicy and by ListPolicies.
       */
     var PolicyId: PolicyId
@@ -159,7 +163,7 @@ object FMSNs extends js.Object {
   
   trait ListMemberAccountsRequest extends js.Object {
     /**
-      * Specifies the number of member account IDs that you want AWS Firewall Manager to return for this request. If you have more IDs than the number that you specify for MaxResults, the response includes a NextToken value that you can use to get another batch of member account IDs. The maximum value for MaxResults is 100.
+      * Specifies the number of member account IDs that you want AWS Firewall Manager to return for this request. If you have more IDs than the number that you specify for MaxResults, the response includes a NextToken value that you can use to get another batch of member account IDs.
       */
     var MaxResults: js.UndefOr[PaginationMaxResults] = js.undefined
     /**
@@ -203,7 +207,7 @@ object FMSNs extends js.Object {
   
   trait Policy extends js.Object {
     /**
-      * Specifies the AWS account IDs to exclude from the policy. The IncludeMap values are evaluated first, with all of the appropriate account IDs added to the policy. Then the accounts listed in ExcludeMap are removed, resulting in the final list of accounts to add to the policy. The key to the map is ACCOUNT. For example, a valid ExcludeMap would be {“ACCOUNT” : [“accountID1”, “accountID2”]}.
+      * Specifies the AWS account IDs to exclude from the policy. The IncludeMap values are evaluated first, with all the appropriate account IDs added to the policy. Then the accounts listed in ExcludeMap are removed, resulting in the final list of accounts to add to the policy. The key to the map is ACCOUNT. For example, a valid ExcludeMap would be {“ACCOUNT” : [“accountID1”, “accountID2”]}.
       */
     var ExcludeMap: js.UndefOr[CustomerPolicyScopeMap] = js.undefined
     /**
@@ -211,7 +215,7 @@ object FMSNs extends js.Object {
       */
     var ExcludeResourceTags: Boolean
     /**
-      * Specifies the AWS account IDs to include in the policy. If IncludeMap is null, all accounts in the AWS Organization are included in the policy. If IncludeMap is not null, only values listed in IncludeMap will be included in the policy. The key to the map is ACCOUNT. For example, a valid IncludeMap would be {“ACCOUNT” : [“accountID1”, “accountID2”]}.
+      * Specifies the AWS account IDs to include in the policy. If IncludeMap is null, all accounts in the organization in AWS Organizations are included in the policy. If IncludeMap is not null, only values listed in IncludeMap are included in the policy. The key to the map is ACCOUNT. For example, a valid IncludeMap would be {“ACCOUNT” : [“accountID1”, “accountID2”]}.
       */
     var IncludeMap: js.UndefOr[CustomerPolicyScopeMap] = js.undefined
     /**
@@ -254,7 +258,7 @@ object FMSNs extends js.Object {
       */
     var ExpiredAt: js.UndefOr[TimeStamp] = js.undefined
     /**
-      * Details about problems with dependent services, such as AWS WAF or AWS Config, that are causing a resource to be non-compliant. The details include the name of the dependent service and the error message recieved indicating the problem with the service.
+      * Details about problems with dependent services, such as AWS WAF or AWS Config, that are causing a resource to be non-compliant. The details include the name of the dependent service and the error message received that indicates the problem with the service.
       */
     var IssueInfoMap: js.UndefOr[IssueInfoMap] = js.undefined
     /**
@@ -281,7 +285,7 @@ object FMSNs extends js.Object {
       */
     var EvaluationResults: js.UndefOr[EvaluationResults] = js.undefined
     /**
-      * Details about problems with dependent services, such as AWS WAF or AWS Config, that are causing a resource to be non-compliant. The details include the name of the dependent service and the error message recieved indicating the problem with the service.
+      * Details about problems with dependent services, such as AWS WAF or AWS Config, that are causing a resource to be non-compliant. The details include the name of the dependent service and the error message received that indicates the problem with the service.
       */
     var IssueInfoMap: js.UndefOr[IssueInfoMap] = js.undefined
     /**
@@ -435,14 +439,14 @@ object FMSNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Disassociates the account that has been set as the AWS Firewall Manager administrator account. You will need to submit an AssociateAdminAccount request to set a new account as the AWS Firewall administrator.
+      * Disassociates the account that has been set as the AWS Firewall Manager administrator account. To set a different account as the administrator account, you must submit an AssociateAdminAccount request .
       */
     def disassociateAdminAccount(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def disassociateAdminAccount(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Disassociates the account that has been set as the AWS Firewall Manager administrator account. You will need to submit an AssociateAdminAccount request to set a new account as the AWS Firewall administrator.
+      * Disassociates the account that has been set as the AWS Firewall Manager administrator account. To set a different account as the administrator account, you must submit an AssociateAdminAccount request .
       */
     def disassociateAdminAccount(params: DisassociateAdminAccountRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def disassociateAdminAccount(

@@ -10,7 +10,7 @@ trait IListItemsProps[T]
   extends atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps {
   /**
     * The currently focused item for keyboard interactions, or `null` to
-    * indicate that no item is active. If omitted, this prop will be
+    * indicate that no item is active. If omitted or `undefined`, this prop will be
     * uncontrolled (managed by the component's state). Use `onActiveItemChange`
     * to listen for updates.
     */
@@ -62,6 +62,20 @@ trait IListItemsProps[T]
   var itemRenderer_Original: atBlueprintjsSelectLib.libEsmCommonItemRendererMod.ItemRenderer[T] = js.native
   /** Array of items in the list. */
   var items: js.Array[T] = js.native
+  /**
+    * Specifies how to test if two items are equal. By default, simple strict
+    * equality (`===`) is used to compare two items.
+    *
+    * If your items have a unique identifier field, simply provide the name of
+    * a property on the item that can be compared with strict equality to
+    * determine equivalence: `itemsEqual="id"` will check `a.id === b.id`.
+    *
+    * If more complex comparison logic is required, provide an equality
+    * comparator function that returns `true` if the two items are equal. The
+    * arguments to this function will never be `null` or `undefined`, as those
+    * values are handled before calling the function.
+    */
+  var itemsEqual: js.UndefOr[ItemsEqualProp[T]] = js.native
   /**
     * React content to render when filtering items returns zero results.
     * If omitted, nothing will be rendered in this case.

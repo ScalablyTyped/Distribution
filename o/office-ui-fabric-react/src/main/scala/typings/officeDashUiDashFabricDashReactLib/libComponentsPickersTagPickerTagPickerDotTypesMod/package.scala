@@ -13,7 +13,7 @@ package object libComponentsPickersTagPickerTagPickerDotTypesMod {
     ]
   ]) with (stdLib.Pick[
     ITagItemProps, 
-    officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.className | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.selected
+    officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.className | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.selected | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.disabled
   ]) with js.Object
   type ITagItemSuggestionStyleProps = (stdLib.Required[
     stdLib.Pick[

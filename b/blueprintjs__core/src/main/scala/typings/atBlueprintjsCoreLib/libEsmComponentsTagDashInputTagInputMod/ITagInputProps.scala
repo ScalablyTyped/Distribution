@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ITagInputProps
-  extends atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps {
+  extends atBlueprintjsCoreLib.libEsmCommonPropsMod.IIntentProps
+     with atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps {
   /**
     * If true, `onAdd` will be invoked when the input loses focus.
     * Otherwise, `onAdd` is only invoked when `enter` is pressed.

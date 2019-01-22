@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IItemListRendererProps[T] extends js.Object {
-  /** The currently focused item (for keyboard interactions). */
+  /**
+    * The currently focused item (for keyboard interactions), or `null` to
+    * indicate that no item is active.
+    */
   var activeItem: T | scala.Null = js.native
   /**
     * Array of items filtered by `itemListPredicate` or `itemPredicate`.

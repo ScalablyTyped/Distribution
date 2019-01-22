@@ -23,6 +23,7 @@ class List protected ()
   var _measureVersion: js.Any = js.native
   var _onRenderPage: js.Any = js.native
   var _pageCache: js.Any = js.native
+  var _pageRefs: js.Any = js.native
   var _requiredRect: js.Any = js.native
   var _requiredWindowsAhead: js.Any = js.native
   var _requiredWindowsBehind: js.Any = js.native

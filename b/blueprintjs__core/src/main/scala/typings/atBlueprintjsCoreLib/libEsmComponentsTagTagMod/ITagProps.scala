@@ -14,6 +14,11 @@ import scala.scalajs.js.annotation._
     * @default false
     */
   var active: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Whether the tag should take up the full width of its container.
+    * @default false
+    */
+  var fill: js.UndefOr[scala.Boolean] = js.undefined
   /** Name of a Blueprint UI icon (or an icon element) to render before the children. */
   var icon: js.UndefOr[
     atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement

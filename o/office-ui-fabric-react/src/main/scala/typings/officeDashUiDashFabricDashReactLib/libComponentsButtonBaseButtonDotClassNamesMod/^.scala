@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("office-ui-fabric-react/lib/components/Button/BaseButton.classNames", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val ButtonGlobalClassNames: officeDashUiDashFabricDashReactLib.Anon_MsButton = js.native
   def getBaseButtonClassNames(
     theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme,
     styles: officeDashUiDashFabricDashReactLib.libComponentsButtonButtonDotTypesMod.IButtonStyles,

@@ -18,6 +18,8 @@ trait ISuggestProps[T]
     * This prop is ignored if `selectedItem` is used to control the state.
     */
   var defaultSelectedItem: js.UndefOr[T] = js.native
+  /** Whether the input field should be disabled. */
+  var disabled: js.UndefOr[scala.Boolean] = js.native
   /**
     * Props to spread to the query `InputGroup`. To control this input, use
     * `query` and `onQueryChange` instead of `inputProps.value` and
@@ -36,8 +38,14 @@ trait ISuggestProps[T]
     stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps] with js.Object
   ] = js.native
   /**
+    * Whether the active item should be reset to the first matching item _when
+    * the popover closes_. The query will also be reset to the empty string.
+    * @default false
+    */
+  var resetOnClose: js.UndefOr[scala.Boolean] = js.native
+  /**
     * The currently selected item, or `null` to indicate that no item is selected.
-    * If omitted, this prop will be uncontrolled (managed by the component's state).
+    * If omitted or `undefined`, this prop will be uncontrolled (managed by the component's state).
     * Use `onItemSelect` to listen for updates.
     */
   var selectedItem: js.UndefOr[T | scala.Null] = js.native

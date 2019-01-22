@@ -34,7 +34,7 @@ package object atBabelTypesMod {
   type Method = ObjectMethod | ClassMethod | ClassPrivateMethod
   type ModuleDeclaration = ExportAllDeclaration | ExportDefaultDeclaration | ExportNamedDeclaration | ImportDeclaration
   type ModuleSpecifier = ExportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier | ImportSpecifier | ExportDefaultSpecifier | ExportNamespaceSpecifier
-  type Node = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 266 */ js.Any
+  type Node = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 267 */ js.Any
   type NumberLiteral = NumericLiteral
   type ObjectMember = ObjectMethod | ObjectProperty
   type Pattern = AssignmentPattern | ArrayPattern | ObjectPattern
@@ -48,7 +48,7 @@ package object atBabelTypesMod {
   type SpreadProperty = SpreadElement
   type Statement = BlockStatement | BreakStatement | ContinueStatement | DebuggerStatement | DoWhileStatement | EmptyStatement | ExpressionStatement | ForInStatement | ForStatement | FunctionDeclaration | IfStatement | LabeledStatement | ReturnStatement | SwitchStatement | ThrowStatement | TryStatement | VariableDeclaration | WhileStatement | WithStatement | ClassDeclaration | ExportAllDeclaration | ExportDefaultDeclaration | ExportNamedDeclaration | ForOfStatement | ImportDeclaration | DeclareClass | DeclareFunction | DeclareInterface | DeclareModule | DeclareModuleExports | DeclareTypeAlias | DeclareOpaqueType | DeclareVariable | DeclareExportDeclaration | DeclareExportAllDeclaration | InterfaceDeclaration | OpaqueType | TypeAlias | TSDeclareFunction | TSInterfaceDeclaration | TSTypeAliasDeclaration | TSEnumDeclaration | TSModuleDeclaration | TSImportEqualsDeclaration | TSExportAssignment | TSNamespaceExportDeclaration
   type TSEntityName = Identifier | TSQualifiedName
-  type TSType = TSAnyKeyword | TSUnknownKeyword | TSNumberKeyword | TSObjectKeyword | TSBooleanKeyword | TSStringKeyword | TSSymbolKeyword | TSVoidKeyword | TSUndefinedKeyword | TSNullKeyword | TSNeverKeyword | TSThisType | TSFunctionType | TSConstructorType | TSTypeReference | TSTypePredicate | TSTypeQuery | TSTypeLiteral | TSArrayType | TSTupleType | TSOptionalType | TSRestType | TSUnionType | TSIntersectionType | TSConditionalType | TSInferType | TSParenthesizedType | TSTypeOperator | TSIndexedAccessType | TSMappedType | TSLiteralType | TSExpressionWithTypeArguments
+  type TSType = TSAnyKeyword | TSUnknownKeyword | TSNumberKeyword | TSObjectKeyword | TSBooleanKeyword | TSStringKeyword | TSSymbolKeyword | TSVoidKeyword | TSUndefinedKeyword | TSNullKeyword | TSNeverKeyword | TSThisType | TSFunctionType | TSConstructorType | TSTypeReference | TSTypePredicate | TSTypeQuery | TSTypeLiteral | TSArrayType | TSTupleType | TSOptionalType | TSRestType | TSUnionType | TSIntersectionType | TSConditionalType | TSInferType | TSParenthesizedType | TSTypeOperator | TSIndexedAccessType | TSMappedType | TSLiteralType | TSExpressionWithTypeArguments | TSImportType
   type TSTypeElement = TSCallSignatureDeclaration | TSConstructSignatureDeclaration | TSPropertySignature | TSMethodSignature | TSIndexSignature
   type Terminatorless = BreakStatement | ContinueStatement | ReturnStatement | ThrowStatement | YieldExpression | AwaitExpression
   type TraversalAncestors = js.Array[atBabelTypesLib.Anon_Index]

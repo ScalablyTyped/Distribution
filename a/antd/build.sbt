@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "antd"
-version := "3.12.4-025422"
+version := "3.12.4-36b649"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,16 +15,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
   "org.scalablytyped" %%% "enquire_dot_js" % "2.1-dt-20180328Z-da961e",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-c48db4",
-  "org.scalablytyped" %%% "moment" % "2.23.0-3073eb",
+  "org.scalablytyped" %%% "moment" % "2.24.0-68abed",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
   "org.scalablytyped" %%% "raf" % "3.4-dt-20190103Z-0f3580",
-  "org.scalablytyped" %%% "rc-calendar" % "9.10.4-2f86f0",
+  "org.scalablytyped" %%% "rc-calendar" % "9.10.4-ba6008",
   "org.scalablytyped" %%% "rc-dialog" % "7.3.0-2435c5",
   "org.scalablytyped" %%% "rc-progress" % "2.2-dt-20181116Z-95ad78",
   "org.scalablytyped" %%% "rc-select" % "v5.9.0-dt-20180823Z-6be56f",
   "org.scalablytyped" %%% "rc-slider" % "8.6-dt-20180822Z-903d42",
-  "org.scalablytyped" %%% "rc-time-picker" % "3.4-dt-20181102Z-c06509",
+  "org.scalablytyped" %%% "rc-time-picker" % "3.4-dt-20181102Z-8a92c8",
   "org.scalablytyped" %%% "rc-tooltip" % "3.7-dt-20181121Z-25c6ae",
   "org.scalablytyped" %%% "rc-tree" % "1.11-dt-20180803Z-fea8b3",
   "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-73addc",

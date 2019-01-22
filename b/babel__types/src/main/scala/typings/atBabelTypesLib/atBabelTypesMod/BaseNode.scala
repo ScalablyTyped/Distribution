@@ -13,7 +13,7 @@ trait BaseNode extends js.Object {
   var start: scala.Double | scala.Null
   var trailingComments: js.Array[Comment] | scala.Null
   var `type`: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 220 */ java.lang.String
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 221 */ java.lang.String
   ]
 }
 

@@ -547,6 +547,9 @@ object atBabelTypesLibStrings {
   sealed trait TSImportEqualsDeclaration extends js.Object
   
   @js.native
+  sealed trait TSImportType extends js.Object
+  
+  @js.native
   sealed trait TSIndexSignature extends js.Object
   
   @js.native
@@ -1008,6 +1011,7 @@ object atBabelTypesLibStrings {
   def TSExternalModuleReference: TSExternalModuleReference = "TSExternalModuleReference".asInstanceOf[TSExternalModuleReference]
   def TSFunctionType: TSFunctionType = "TSFunctionType".asInstanceOf[TSFunctionType]
   def TSImportEqualsDeclaration: TSImportEqualsDeclaration = "TSImportEqualsDeclaration".asInstanceOf[TSImportEqualsDeclaration]
+  def TSImportType: TSImportType = "TSImportType".asInstanceOf[TSImportType]
   def TSIndexSignature: TSIndexSignature = "TSIndexSignature".asInstanceOf[TSIndexSignature]
   def TSIndexedAccessType: TSIndexedAccessType = "TSIndexedAccessType".asInstanceOf[TSIndexedAccessType]
   def TSInferType: TSInferType = "TSInferType".asInstanceOf[TSInferType]

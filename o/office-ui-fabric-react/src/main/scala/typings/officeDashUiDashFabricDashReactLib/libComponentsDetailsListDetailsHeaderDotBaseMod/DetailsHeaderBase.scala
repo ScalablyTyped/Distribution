@@ -96,10 +96,6 @@ class DetailsHeaderBase protected ()
   def componentDidUpdate_MDetailsHeaderBase(
     prevProps: officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsHeaderDotTypesMod.IDetailsHeaderBaseProps
   ): scala.Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MDetailsHeaderBase(
-    newProps: officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsHeaderDotTypesMod.IDetailsHeaderBaseProps
-  ): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MDetailsHeaderBase(): scala.Unit = js.native
   /* CompleteClass */
@@ -110,5 +106,9 @@ class DetailsHeaderBase protected ()
 @js.native
 object DetailsHeaderBase extends js.Object {
   var defaultProps: officeDashUiDashFabricDashReactLib.Anon_CollapseAllVisibility = js.native
+  def getDerivedStateFromProps(
+    newProps: officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsHeaderDotTypesMod.IDetailsHeaderBaseProps,
+    prevState: officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsHeaderDotBaseMod.IDetailsHeaderState
+  ): officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsHeaderDotBaseMod.IDetailsHeaderState = js.native
 }
 

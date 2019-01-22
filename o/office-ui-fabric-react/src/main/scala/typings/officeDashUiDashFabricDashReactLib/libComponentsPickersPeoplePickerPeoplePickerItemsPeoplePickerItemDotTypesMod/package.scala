@@ -13,7 +13,7 @@ package object libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItem
     ]
   ]) with (stdLib.Pick[
     IPeoplePickerItemSelectedProps, 
-    officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.className | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.selected
+    officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.className | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.selected | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.disabled
   ]) with officeDashUiDashFabricDashReactLib.Anon_Invalid
   type IPeoplePickerItemSuggestionStyleProps = (stdLib.Required[
     stdLib.Pick[

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object AppStreamNs extends js.Object {
   trait Application extends js.Object {
     /**
-      * The application name for display.
+      * The application name to display.
       */
     var DisplayName: js.UndefOr[String] = js.undefined
     /**
@@ -193,7 +193,7 @@ object AppStreamNs extends js.Object {
       */
     var ComputeCapacity: ComputeCapacity
     /**
-      * The description for display.
+      * The description to display.
       */
     var Description: js.UndefOr[Description] = js.undefined
     /**
@@ -201,11 +201,11 @@ object AppStreamNs extends js.Object {
       */
     var DisconnectTimeoutInSeconds: js.UndefOr[Integer] = js.undefined
     /**
-      * The fleet name for display.
+      * The fleet name to display.
       */
     var DisplayName: js.UndefOr[DisplayName] = js.undefined
     /**
-      * The information needed to join a Microsoft Active Directory domain.
+      * The name of the directory and organizational unit (OU) to use to join the fleet to a Microsoft Active Directory domain. 
       */
     var DomainJoinInfo: js.UndefOr[DomainJoinInfo] = js.undefined
     /**
@@ -237,6 +237,10 @@ object AppStreamNs extends js.Object {
       */
     var Name: Name
     /**
+      * The tags to associate with the fleet. A tag is a key-value pair (the value is optional). For example, Environment=Test, or, if you do not specify a value, Environment=.  If you do not specify a value, we set the value to an empty string. For more information, see Tagging Your Resources in the Amazon AppStream 2.0 Developer Guide.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
+    /**
       * The VPC configuration for the fleet.
       */
     var VpcConfig: js.UndefOr[VpcConfig] = js.undefined
@@ -255,15 +259,15 @@ object AppStreamNs extends js.Object {
       */
     var AppstreamAgentVersion: js.UndefOr[AppstreamAgentVersion] = js.undefined
     /**
-      * The description for display.
+      * The description to display.
       */
     var Description: js.UndefOr[Description] = js.undefined
     /**
-      * The image builder name for display.
+      * The image builder name to display.
       */
     var DisplayName: js.UndefOr[DisplayName] = js.undefined
     /**
-      * The information needed to join a Microsoft Active Directory domain.
+      * The name of the directory and organizational unit (OU) to use to join the image builder to a Microsoft Active Directory domain. 
       */
     var DomainJoinInfo: js.UndefOr[DomainJoinInfo] = js.undefined
     /**
@@ -275,7 +279,7 @@ object AppStreamNs extends js.Object {
       */
     var ImageArn: js.UndefOr[Arn] = js.undefined
     /**
-      * The name of the image used to create the builder.
+      * The name of the image used to create the image builder.
       */
     var ImageName: js.UndefOr[String] = js.undefined
     /**
@@ -286,6 +290,10 @@ object AppStreamNs extends js.Object {
       * A unique name for the image builder.
       */
     var Name: Name
+    /**
+      * The tags to associate with the image builder. A tag is a key-value pair (the value is optional). For example, Environment=Test, or, if you do not specify a value, Environment=.  If you do not specify a value, we set the value to an empty string. For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Developer Guide.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
     /**
       * The VPC configuration for the image builder. You can specify only one subnet.
       */
@@ -327,11 +335,11 @@ object AppStreamNs extends js.Object {
       */
     var ApplicationSettings: js.UndefOr[ApplicationSettings] = js.undefined
     /**
-      * The description for display.
+      * The description to display.
       */
     var Description: js.UndefOr[Description] = js.undefined
     /**
-      * The stack name for display.
+      * The stack name to display.
       */
     var DisplayName: js.UndefOr[DisplayName] = js.undefined
     /**
@@ -350,6 +358,10 @@ object AppStreamNs extends js.Object {
       * The storage connectors to enable.
       */
     var StorageConnectors: js.UndefOr[StorageConnectorList] = js.undefined
+    /**
+      * The tags to associate with the stack. A tag is a key-value pair (the value is optional). For example, Environment=Test, or, if you do not specify a value, Environment=.  If you do not specify a value, we set the value to an empty string. For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Developer Guide.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
     /**
       * The actions that are enabled or disabled for users during their streaming sessions. By default, these actions are enabled. 
       */
@@ -381,7 +393,7 @@ object AppStreamNs extends js.Object {
       */
     var StackName: String
     /**
-      * The ID of the user.
+      * The identifier of the user.
       */
     var UserId: StreamingUrlUserId
     /**
@@ -464,7 +476,7 @@ object AppStreamNs extends js.Object {
       */
     var Name: Name
     /**
-      * The 12-digit ID of the AWS account for which to delete image permissions.
+      * The 12-digit identifier of the AWS account for which to delete image permissions.
       */
     var SharedAccountId: AwsAccountId
   }
@@ -595,7 +607,7 @@ object AppStreamNs extends js.Object {
       */
     var NextToken: js.UndefOr[String] = js.undefined
     /**
-      * The 12-digit ID of one or more AWS accounts with which the image is shared.
+      * The 12-digit identifier of one or more AWS accounts with which the image is shared.
       */
     var SharedAwsAccountIds: js.UndefOr[AwsAccountIdList] = js.undefined
   }
@@ -671,7 +683,7 @@ object AppStreamNs extends js.Object {
       */
     var StackName: String
     /**
-      * The user ID.
+      * The user identifier.
       */
     var UserId: js.UndefOr[UserId] = js.undefined
   }
@@ -840,7 +852,7 @@ object AppStreamNs extends js.Object {
   
   trait ExpireSessionRequest extends js.Object {
     /**
-      * The ID of the streaming session.
+      * The identifier of the streaming session.
       */
     var SessionId: String
   }
@@ -861,7 +873,7 @@ object AppStreamNs extends js.Object {
       */
     var CreatedTime: js.UndefOr[Timestamp] = js.undefined
     /**
-      * The description for display.
+      * The description to display.
       */
     var Description: js.UndefOr[String] = js.undefined
     /**
@@ -869,11 +881,11 @@ object AppStreamNs extends js.Object {
       */
     var DisconnectTimeoutInSeconds: js.UndefOr[Integer] = js.undefined
     /**
-      * The fleet name for display.
+      * The fleet name to display.
       */
     var DisplayName: js.UndefOr[String] = js.undefined
     /**
-      * The information needed to join a Microsoft Active Directory domain.
+      * The name of the directory and organizational unit (OU) to use to join the fleet to a Microsoft Active Directory domain. 
       */
     var DomainJoinInfo: js.UndefOr[DomainJoinInfo] = js.undefined
     /**
@@ -951,11 +963,11 @@ object AppStreamNs extends js.Object {
       */
     var CreatedTime: js.UndefOr[Timestamp] = js.undefined
     /**
-      * The description for display.
+      * The description to display.
       */
     var Description: js.UndefOr[String] = js.undefined
     /**
-      * The image name for display.
+      * The image name to display.
       */
     var DisplayName: js.UndefOr[String] = js.undefined
     /**
@@ -994,7 +1006,7 @@ object AppStreamNs extends js.Object {
   
   trait ImageBuilder extends js.Object {
     /**
-      * The version of the AppStream 2.0 agent that is currently being used by this image builder. 
+      * The version of the AppStream 2.0 agent that is currently being used by the image builder. 
       */
     var AppstreamAgentVersion: js.UndefOr[AppstreamAgentVersion] = js.undefined
     /**
@@ -1006,15 +1018,15 @@ object AppStreamNs extends js.Object {
       */
     var CreatedTime: js.UndefOr[Timestamp] = js.undefined
     /**
-      * The description for display.
+      * The description to display.
       */
     var Description: js.UndefOr[String] = js.undefined
     /**
-      * The image builder name for display.
+      * The image builder name to display.
       */
     var DisplayName: js.UndefOr[String] = js.undefined
     /**
-      * The information needed to join a Microsoft Active Directory domain.
+      * The name of the directory and organizational unit (OU) to use to join the image builder to a Microsoft Active Directory domain. 
       */
     var DomainJoinInfo: js.UndefOr[DomainJoinInfo] = js.undefined
     /**
@@ -1196,7 +1208,7 @@ object AppStreamNs extends js.Object {
       */
     var FleetName: String
     /**
-      * The ID of the streaming session.
+      * The identifier of the streaming session.
       */
     var Id: String
     /**
@@ -1223,7 +1235,7 @@ object AppStreamNs extends js.Object {
       */
     var imagePermissions: ImagePermissions
     /**
-      * The 12-digit ID of the AWS account with which the image is shared.
+      * The 12-digit identifier of the AWS account with which the image is shared.
       */
     var sharedAccountId: AwsAccountId
   }
@@ -1242,11 +1254,11 @@ object AppStreamNs extends js.Object {
       */
     var CreatedTime: js.UndefOr[Timestamp] = js.undefined
     /**
-      * The description for display.
+      * The description to display.
       */
     var Description: js.UndefOr[String] = js.undefined
     /**
-      * The stack name for display.
+      * The stack name to display.
       */
     var DisplayName: js.UndefOr[String] = js.undefined
     /**
@@ -1342,7 +1354,7 @@ object AppStreamNs extends js.Object {
       */
     var ConnectorType: StorageConnectorType
     /**
-      * The names of the domains for the G Suite account.
+      * The names of the domains for the account.
       */
     var Domains: js.UndefOr[DomainList] = js.undefined
     /**
@@ -1902,7 +1914,7 @@ object AppStreamNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeImagesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves a list that describes the streaming sessions for a specified stack and fleet. If a user ID is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
+      * Retrieves a list that describes the streaming sessions for a specified stack and fleet. If a UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
       */
     def describeSessions(): awsDashSdkLib.libRequestMod.Request[DescribeSessionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeSessions(
@@ -1913,7 +1925,7 @@ object AppStreamNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeSessionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves a list that describes the streaming sessions for a specified stack and fleet. If a user ID is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
+      * Retrieves a list that describes the streaming sessions for a specified stack and fleet. If a UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
       */
     def describeSessions(params: DescribeSessionsRequest): awsDashSdkLib.libRequestMod.Request[DescribeSessionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeSessions(
@@ -1971,7 +1983,7 @@ object AppStreamNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeUserStackAssociationsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves a list that describes one or more specified users in the user pool, if user names are provided. Otherwise, all users in the user pool are described.
+      * Retrieves a list that describes one or more specified users in the user pool.
       */
     def describeUsers(): awsDashSdkLib.libRequestMod.Request[DescribeUsersResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeUsers(
@@ -1982,7 +1994,7 @@ object AppStreamNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeUsersResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves a list that describes one or more specified users in the user pool, if user names are provided. Otherwise, all users in the user pool are described.
+      * Retrieves a list that describes one or more specified users in the user pool.
       */
     def describeUsers(params: DescribeUsersRequest): awsDashSdkLib.libRequestMod.Request[DescribeUsersResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeUsers(
@@ -2491,7 +2503,7 @@ object AppStreamNs extends js.Object {
       */
     var DeleteVpcConfig: js.UndefOr[Boolean] = js.undefined
     /**
-      * The description for display.
+      * The description to display.
       */
     var Description: js.UndefOr[Description] = js.undefined
     /**
@@ -2499,11 +2511,11 @@ object AppStreamNs extends js.Object {
       */
     var DisconnectTimeoutInSeconds: js.UndefOr[Integer] = js.undefined
     /**
-      * The fleet name for display.
+      * The fleet name to display.
       */
     var DisplayName: js.UndefOr[DisplayName] = js.undefined
     /**
-      * The information needed to join a Microsoft Active Directory domain.
+      * The name of the directory and organizational unit (OU) to use to join the fleet to a Microsoft Active Directory domain. 
       */
     var DomainJoinInfo: js.UndefOr[DomainJoinInfo] = js.undefined
     /**
@@ -2553,7 +2565,7 @@ object AppStreamNs extends js.Object {
       */
     var Name: Name
     /**
-      * The 12-digit ID of the AWS account for which you want add or update image permissions.
+      * The 12-digit identifier of the AWS account for which you want add or update image permissions.
       */
     var SharedAccountId: AwsAccountId
   }
@@ -2574,15 +2586,15 @@ object AppStreamNs extends js.Object {
       */
     var DeleteStorageConnectors: js.UndefOr[Boolean] = js.undefined
     /**
-      * The description for display.
+      * The description to display.
       */
     var Description: js.UndefOr[Description] = js.undefined
     /**
-      * The stack name for display.
+      * The stack name to display.
       */
     var DisplayName: js.UndefOr[DisplayName] = js.undefined
     /**
-      * The URL that users are redirected to after they click the Send Feedback link. If no URL is specified, no Send Feedback link is displayed.
+      * The URL that users are redirected to after they choose the Send Feedback link. If no URL is specified, no Send Feedback link is displayed.
       */
     var FeedbackURL: js.UndefOr[FeedbackURL] = js.undefined
     /**
@@ -2692,11 +2704,11 @@ object AppStreamNs extends js.Object {
   
   trait VpcConfig extends js.Object {
     /**
-      * The security groups for the fleet.
+      * The identifiers of the security groups for the fleet or image builder.
       */
     var SecurityGroupIds: js.UndefOr[SecurityGroupIdList] = js.undefined
     /**
-      * The subnets to which a network interface is established from the fleet instance.
+      * The identifiers of the subnets to which a network interface is attached from the fleet instance or image builder instance. Fleet instances use one or two subnets. Image builder instances use one subnet.
       */
     var SubnetIds: js.UndefOr[SubnetIdList] = js.undefined
   }

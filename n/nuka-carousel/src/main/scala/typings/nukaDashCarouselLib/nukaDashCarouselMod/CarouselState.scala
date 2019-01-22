@@ -22,10 +22,10 @@ trait CarouselState extends js.Object {
     * Current frame width
     */
   var frameWidth: scala.Double
+  var isWrappingAround: scala.Boolean
   /**
     * Current left value
     */
-  var isWrappingAround: scala.Boolean
   var left: scala.Double
   var pauseOnHover: scala.Boolean
   var resetWrapAroundPosition: scala.Boolean

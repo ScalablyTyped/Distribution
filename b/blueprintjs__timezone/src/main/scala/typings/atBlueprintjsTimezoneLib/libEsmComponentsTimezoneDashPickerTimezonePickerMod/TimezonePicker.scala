@@ -20,6 +20,9 @@ class TimezonePicker protected ()
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MTimezonePicker(nextProps: ITimezonePickerProps): scala.Unit = js.native
   /* private */ def renderButton(): js.Any = js.native
+  /* protected */ def validateProps(
+    props: atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps with atBlueprintjsTimezoneLib.Anon_Children
+  ): scala.Unit = js.native
 }
 
 @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezonePicker", "TimezonePicker")

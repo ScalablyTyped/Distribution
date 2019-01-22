@@ -1859,11 +1859,11 @@ trait DMS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Waits for the testConnectionSucceeds state by periodically calling the underlying DMS.testConnectionoperation every 5 seconds (at most 60 times). Wait until testing connection succeeds.
+    * Waits for the testConnectionSucceeds state by periodically calling the underlying DMS.describeConnectionsoperation every 5 seconds (at most 60 times). Wait until testing connection succeeds.
     */
   @JSName("waitFor")
   def waitFor_testConnectionSucceeds(state: awsDashSdkLib.awsDashSdkLibStrings.testConnectionSucceeds): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionResponse, 
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeConnectionsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   @JSName("waitFor")
@@ -1871,35 +1871,35 @@ trait DMS
     state: awsDashSdkLib.awsDashSdkLibStrings.testConnectionSucceeds,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionResponse, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeConnectionsResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionResponse, 
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeConnectionsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Waits for the testConnectionSucceeds state by periodically calling the underlying DMS.testConnectionoperation every 5 seconds (at most 60 times). Wait until testing connection succeeds.
+    * Waits for the testConnectionSucceeds state by periodically calling the underlying DMS.describeConnectionsoperation every 5 seconds (at most 60 times). Wait until testing connection succeeds.
     */
   @JSName("waitFor")
   def waitFor_testConnectionSucceeds(
     state: awsDashSdkLib.awsDashSdkLibStrings.testConnectionSucceeds,
-    params: awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionMessage with awsDashSdkLib.Anon_Waiter
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeConnectionsMessage with awsDashSdkLib.Anon_Waiter
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionResponse, 
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeConnectionsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   @JSName("waitFor")
   def waitFor_testConnectionSucceeds(
     state: awsDashSdkLib.awsDashSdkLibStrings.testConnectionSucceeds,
-    params: awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionMessage with awsDashSdkLib.Anon_Waiter,
+    params: awsDashSdkLib.clientsDmsMod.DMSNs.DescribeConnectionsMessage with awsDashSdkLib.Anon_Waiter,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionResponse, 
+      /* data */ awsDashSdkLib.clientsDmsMod.DMSNs.DescribeConnectionsResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsDmsMod.DMSNs.TestConnectionResponse, 
+    awsDashSdkLib.clientsDmsMod.DMSNs.DescribeConnectionsResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
 }

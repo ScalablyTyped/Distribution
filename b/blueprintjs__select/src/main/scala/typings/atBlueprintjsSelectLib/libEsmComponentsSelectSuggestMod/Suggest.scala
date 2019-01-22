@@ -18,8 +18,9 @@ class Suggest[T] protected ()
   var handleItemSelect: js.Any = js.native
   var handlePopoverInteraction: js.Any = js.native
   var handlePopoverOpened: js.Any = js.native
-  var input: js.UndefOr[js.Any] = js.native
-  var queryList: js.UndefOr[js.Any] = js.native
+  var handlePopoverOpening: js.Any = js.native
+  var input: js.Any = js.native
+  var queryList: js.Any = js.native
   var refHandlers: js.Any = js.native
   var renderQueryList: js.Any = js.native
   var selectText: js.Any = js.native
@@ -33,7 +34,7 @@ class Suggest[T] protected ()
 @JSImport("@blueprintjs/select/lib/esm/components/select/suggest", "Suggest")
 @js.native
 object Suggest extends js.Object {
-  var defaultProps: atBlueprintjsSelectLib.Anon_CloseOnSelect = js.native
+  var defaultProps: stdLib.Partial[atBlueprintjsSelectLib.libEsmComponentsSelectSuggestMod.ISuggestProps[_]] = js.native
   var displayName: java.lang.String = js.native
   def ofType[T](): org.scalablytyped.runtime.Instantiable1[
     /* props */ atBlueprintjsSelectLib.libEsmComponentsSelectSuggestMod.ISuggestProps[T], 
