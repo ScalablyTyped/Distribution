@@ -19,7 +19,7 @@ object yogNs extends js.Object {
     @JSName("express")
     var express_Original: (js.Function0[
         expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Express
-      ]) with yog2DashKernelLib.Anon_E = js.native
+      ]) with yog2DashKernelLib.Anon_Application = js.native
     var log: yogDashLogLib.yogDashLogMod.Logger = js.native
     // 当 yog.conf.promise.overrideRAL 为true时，可以当作promise使用
     var ral: yog2DashKernelLib.Anon_AppendExtPath | yog2DashKernelLib.Anon_Name = js.native

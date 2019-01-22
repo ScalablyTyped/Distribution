@@ -336,6 +336,7 @@ class Question protected ()
   /* protected */ def setNewComment(newValue: java.lang.String): scala.Unit = js.native
   /* protected */ def setNewValue(newValue: js.Any): scala.Unit = js.native
   /* protected */ def setNewValueInData(newValue: js.Any): scala.Unit = js.native
+  /* protected */ def setValueCore(newValue: js.Any): scala.Unit = js.native
   def supportComment(): scala.Boolean = js.native
   def supportGoNextPageAutomatic(): scala.Boolean = js.native
   def supportOther(): scala.Boolean = js.native

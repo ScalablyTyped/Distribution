@@ -50,11 +50,6 @@ trait Options extends js.Object {
   var standard: js.UndefOr[filesizeLib.filesizeLibStrings.iec | filesizeLib.filesizeLibStrings.jedec] = js.undefined
   /**
     * Dictionary of SI/JEDEC symbols to replace for localization, defaults to english if no match is found
-    * @deprecated: use `symbols`
-    */
-  var suffixes: js.UndefOr[SiJedec] = js.undefined
-  /**
-    * Dictionary of SI/JEDEC symbols to replace for localization, defaults to english if no match is found
     */
   var symbols: js.UndefOr[SiJedec] = js.undefined
   /**

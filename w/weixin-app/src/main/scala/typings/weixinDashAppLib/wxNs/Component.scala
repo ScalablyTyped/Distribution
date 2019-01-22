@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 	 * Component实例方法
 	 */
 @js.native
-trait Component[D, P] extends js.Object {
+trait Component[D, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] extends js.Object {
   /**
   		 * 组件数据，包括内部数据和属性值
   		 */
-  var data: D with weixinDashAppLib.weixinDashAppLibStrings.Component with P = js.native
+  var data: D with UnboxBehaviorsData[B] with weixinDashAppLib.weixinDashAppLibStrings.Component with js.Any = js.native
   /**
   		 * 节点dataset
   		 */
@@ -29,7 +29,7 @@ trait Component[D, P] extends js.Object {
   /**
   		 * 组件数据，包括内部数据和属性值（与 data 一致）
   		 */
-  var properties: D with weixinDashAppLib.weixinDashAppLibStrings.Component with P = js.native
+  var properties: D with UnboxBehaviorsData[B] with weixinDashAppLib.weixinDashAppLibStrings.Component with js.Any = js.native
   /**
   		 * 节点布局交叉状态API可用于监听两个或多个组件节点在布局位置上的相交状态。这一组API常常可以用于推断某些节点是否可以被用户看见、有多大比例可以被用户看见。
   		 * https://developers.weixin.qq.com/miniprogram/dev/api/intersection-observer.html
@@ -53,12 +53,12 @@ trait Component[D, P] extends js.Object {
   /**
   		 * selector  使用选择器选择组件实例节点，返回匹配到的全部组件实例对象组成的数组
   		 */
-  def selectAllComponents(selector: java.lang.String): js.Array[Component[_, _]] = js.native
+  def selectAllComponents(selector: java.lang.String): js.Array[Component[_, _, js.Array[js.Any]]] = js.native
   /**
   		 * 使用选择器选择组件实例节点
   		 * 返回匹配到的第一个组件实例对象
   		 */
-  def selectComponent(selector: java.lang.String): Component[_, _] = js.native
+  def selectComponent(selector: java.lang.String): Component[_, _, js.Array[js.Any]] = js.native
   /**
   		 * 将数据从逻辑层发送到视图层，同时改变对应的 this.data 的值
   		 * 1. 直接修改 this.data 而不调用 this.setData 是无法改变页面的状态的，还会造成数据不一致。

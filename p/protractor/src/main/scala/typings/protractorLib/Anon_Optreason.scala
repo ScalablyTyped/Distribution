@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Optreason
   extends org.scalablytyped.runtime.Instantiable1[
       /* resolver */ js.Function2[
-        /* resolve */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IFulfilledCallback[js.Object], 
+        /* resolve */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IFulfilledCallback[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
         /* reject */ seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IRejectedCallback, 
         scala.Unit
       ], 

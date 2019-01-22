@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "knockback"
-version := "0.0-unknown-dt-20180214Z-862e34"
+version := "0.0-unknown-dt-20180214Z-dca15e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "backbone" % "1.3.3-dt-20181124Z-c8a765",
+  "org.scalablytyped" %%% "backbone" % "1.3.3-dt-20181124Z-a8327a",
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-f7f24f",
   "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190102Z-ef5c46",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-b20ceb",

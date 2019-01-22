@@ -17,7 +17,7 @@ trait SamlConfig extends js.Object {
   var cacheProvider: js.UndefOr[CacheProvider] = js.undefined
   // Core
   var callbackUrl: js.UndefOr[java.lang.String] = js.undefined
-  var cert: js.UndefOr[java.lang.String] = js.undefined
+  var cert: js.UndefOr[java.lang.String | js.Array[java.lang.String] | CertCallback] = js.undefined
   var decryptionPvk: js.UndefOr[java.lang.String] = js.undefined
   var disableRequestedAuthnContext: js.UndefOr[scala.Boolean] = js.undefined
   var entryPoint: java.lang.String

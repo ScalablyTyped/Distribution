@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-loader"
-version := "15.5.1-ffbeb3"
+version := "15.5.1-25bf5a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,14 +8,14 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-ec2bbb",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20180214Z-3be82b",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-a8dc26",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-232ecf",
   "org.scalablytyped" %%% "chalk" % "2.4.2-aa77e5",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-786ea5",
-  "org.scalablytyped" %%% "consolidate" % "0.0-unknown-dt-20180712Z-eb7a4c",
+  "org.scalablytyped" %%% "consolidate" % "0.0-unknown-dt-20180712Z-cb1991",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-433270",
   "org.scalablytyped" %%% "hash-sum" % "1.0-dt-20180822Z-63bb88",
   "org.scalablytyped" %%% "js-base64" % "2.3-dt-20180214Z-326cdb",
-  "org.scalablytyped" %%% "loader-utils" % "1.1-dt-20180306Z-17ce5c",
+  "org.scalablytyped" %%% "loader-utils" % "1.1-dt-20180306Z-8b3f24",
   "org.scalablytyped" %%% "lru-cache" % "4.1-dt-20180530Z-60874b",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
   "org.scalablytyped" %%% "postcss" % "5.2.18-c92611",
@@ -25,8 +25,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-394486",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-1d4d44",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-280313",
-  "org.scalablytyped" %%% "vue__component-compiler-utils" % "2.4.0-1adb85",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190116Z-1ebcb9")
+  "org.scalablytyped" %%% "vue__component-compiler-utils" % "2.4.0-31b6de",
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190116Z-2b3f1b")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

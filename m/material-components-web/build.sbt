@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material-components-web"
-version := "0.35-dt-20180511Z-49e171"
+version := "0.43-dt-20190119Z-bc0ca8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,13 +11,15 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "material__checkbox" % "0.35-dt-20180511Z-8f876d",
   "org.scalablytyped" %%% "material__chips" % "0.35-dt-20180511Z-bfea15",
   "org.scalablytyped" %%% "material__dialog" % "0.35-dt-20180511Z-01e88e",
-  "org.scalablytyped" %%% "material__drawer" % "0.35-dt-20180511Z-c9ed3d",
+  "org.scalablytyped" %%% "material__dom" % "0.43-dt-20190119Z-b46159",
+  "org.scalablytyped" %%% "material__drawer" % "0.43-dt-20190119Z-c44988",
   "org.scalablytyped" %%% "material__floating-label" % "0.35-dt-20180511Z-24504d",
   "org.scalablytyped" %%% "material__form-field" % "0.35-dt-20180511Z-858af9",
   "org.scalablytyped" %%% "material__grid-list" % "0.35-dt-20180511Z-0ed731",
   "org.scalablytyped" %%% "material__icon-toggle" % "0.35-dt-20180511Z-0f4b6f",
   "org.scalablytyped" %%% "material__line-ripple" % "0.35-dt-20180511Z-700f0d",
   "org.scalablytyped" %%% "material__linear-progress" % "0.35-dt-20180511Z-daf152",
+  "org.scalablytyped" %%% "material__list" % "0.43-dt-20190119Z-053bc5",
   "org.scalablytyped" %%% "material__menu" % "0.35-dt-20180809Z-1f3cdd",
   "org.scalablytyped" %%% "material__notched-outline" % "0.35-dt-20180511Z-be99bf",
   "org.scalablytyped" %%% "material__radio" % "0.35-dt-20180511Z-1bff03",

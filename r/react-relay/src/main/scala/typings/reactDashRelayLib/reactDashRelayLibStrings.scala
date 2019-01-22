@@ -34,6 +34,9 @@ object reactDashRelayLibStrings {
   sealed trait MappedFragmentProps extends js.Object
   
   @js.native
+  sealed trait NETWORK_ONLY extends js.Object
+  
+  @js.native
   sealed trait NETWORK_QUERY_ERROR extends js.Object
   
   @js.native
@@ -50,6 +53,9 @@ object reactDashRelayLibStrings {
   
   @js.native
   sealed trait STORE_FOUND_REQUIRED extends js.Object
+  
+  @js.native
+  sealed trait STORE_THEN_NETWORK extends js.Object
   
   @js.native
   sealed trait UNCOMMITTED extends js.Object
@@ -72,12 +78,14 @@ object reactDashRelayLibStrings {
   def COMMIT_FAILED: COMMIT_FAILED = "COMMIT_FAILED".asInstanceOf[COMMIT_FAILED]
   def COMMIT_QUEUED: COMMIT_QUEUED = "COMMIT_QUEUED".asInstanceOf[COMMIT_QUEUED]
   def MappedFragmentProps: MappedFragmentProps = "MappedFragmentProps".asInstanceOf[MappedFragmentProps]
+  def NETWORK_ONLY: NETWORK_ONLY = "NETWORK_ONLY".asInstanceOf[NETWORK_ONLY]
   def NETWORK_QUERY_ERROR: NETWORK_QUERY_ERROR = "NETWORK_QUERY_ERROR".asInstanceOf[NETWORK_QUERY_ERROR]
   def NETWORK_QUERY_RECEIVED_ALL: NETWORK_QUERY_RECEIVED_ALL = "NETWORK_QUERY_RECEIVED_ALL".asInstanceOf[NETWORK_QUERY_RECEIVED_ALL]
   def NETWORK_QUERY_RECEIVED_REQUIRED: NETWORK_QUERY_RECEIVED_REQUIRED = "NETWORK_QUERY_RECEIVED_REQUIRED".asInstanceOf[NETWORK_QUERY_RECEIVED_REQUIRED]
   def NETWORK_QUERY_START: NETWORK_QUERY_START = "NETWORK_QUERY_START".asInstanceOf[NETWORK_QUERY_START]
   def STORE_FOUND_ALL: STORE_FOUND_ALL = "STORE_FOUND_ALL".asInstanceOf[STORE_FOUND_ALL]
   def STORE_FOUND_REQUIRED: STORE_FOUND_REQUIRED = "STORE_FOUND_REQUIRED".asInstanceOf[STORE_FOUND_REQUIRED]
+  def STORE_THEN_NETWORK: STORE_THEN_NETWORK = "STORE_THEN_NETWORK".asInstanceOf[STORE_THEN_NETWORK]
   def UNCOMMITTED: UNCOMMITTED = "UNCOMMITTED".asInstanceOf[UNCOMMITTED]
   def backward: backward = "backward".asInstanceOf[backward]
   def forward: forward = "forward".asInstanceOf[forward]

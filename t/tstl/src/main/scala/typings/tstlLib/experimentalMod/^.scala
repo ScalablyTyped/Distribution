@@ -1,0 +1,36 @@
+package typings
+package tstlLib.experimentalMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("tstl/experimental", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  val barrier: org.scalablytyped.runtime.Instantiable1[/* size */ scala.Double, tstlLib.experimentalThreadBarrierMod.Barrier] = js.native
+  val flex_barrier: org.scalablytyped.runtime.Instantiable2[
+    /* size */ scala.Double, 
+    /* complete */ js.UndefOr[/* complete */ js.Function0[scala.Double]], 
+    tstlLib.experimentalThreadFlexBarrierMod.FlexBarrier
+  ] = js.native
+  val latch: org.scalablytyped.runtime.Instantiable1[/* size */ scala.Double, tstlLib.experimentalThreadLatchMod.Latch] = js.native
+  val semaphore: org.scalablytyped.runtime.Instantiable1[/* size */ scala.Double, tstlLib.experimentalThreadSemaphoreMod.Semaphore] = js.native
+  val timed_semaphore: org.scalablytyped.runtime.Instantiable1[
+    /* size */ scala.Double, 
+    tstlLib.experimentalThreadTimedSemaphoreMod.TimedSemaphore
+  ] = js.native
+  def erase[T, Container /* <: stdLib.Pick[
+    tstlLib.baseDisposableIListAlgorithmMod._IListAlgorithm[T, Container], 
+    tstlLib.tstlLibStrings.remove_if
+  ] */](contaier: Container, `val`: T): scala.Unit = js.native
+  @JSName("erase")
+  def erase_TContainerIContainerIteratorReadonly[T, Container /* <: tstlLib.experimentalAlgorithmMod.IContainer[T, Iterator] */, Iterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, Iterator]] */](container: Container, `val`: T): scala.Unit = js.native
+  def erase_if[T, Container /* <: stdLib.Pick[
+    tstlLib.baseDisposableIListAlgorithmMod._IListAlgorithm[T, Container], 
+    tstlLib.tstlLibStrings.remove_if
+  ] */](contaier: Container, predicator: js.Function1[/* val */ T, scala.Boolean]): scala.Unit = js.native
+  @JSName("erase_if")
+  def erase_if_TContainerIContainerIteratorReadonly[T, Container /* <: tstlLib.experimentalAlgorithmMod.IContainer[T, Iterator] */, Iterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, Iterator]] */](container: Container, predicator: js.Function1[/* val */ T, scala.Boolean]): scala.Unit = js.native
+}
+

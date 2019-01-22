@@ -12,8 +12,8 @@ class Scheduler protected ()
   def this(SchedulerAction: org.scalablytyped.runtime.Instantiable2[
       /* scheduler */ rxjsLib.internalSchedulerMod.Scheduler, 
       /* work */ js.ThisFunction1[
-        /* this */ rxjsLib.internalTypesMod.SchedulerAction[js.Object], 
-        /* state */ js.UndefOr[js.Object], 
+        /* this */ rxjsLib.internalTypesMod.SchedulerAction[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
         scala.Unit
       ], 
       rxjsLib.internalSchedulerActionMod.Action[js.Object]
@@ -21,8 +21,8 @@ class Scheduler protected ()
   def this(SchedulerAction: org.scalablytyped.runtime.Instantiable2[
       /* scheduler */ rxjsLib.internalSchedulerMod.Scheduler, 
       /* work */ js.ThisFunction1[
-        /* this */ rxjsLib.internalTypesMod.SchedulerAction[js.Object], 
-        /* state */ js.UndefOr[js.Object], 
+        /* this */ rxjsLib.internalTypesMod.SchedulerAction[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* state */ js.UndefOr[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
         scala.Unit
       ], 
       rxjsLib.internalSchedulerActionMod.Action[js.Object]

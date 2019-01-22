@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait QueryRendererProps[T /* <: relayDashRuntimeLib.relayDashRuntimeMod.OperationBase */] extends js.Object {
   var cacheConfig: js.UndefOr[relayDashRuntimeLib.relayDashRuntimeMod.CacheConfig] = js.undefined
+  var dataFrom: js.UndefOr[
+    reactDashRelayLib.reactDashRelayLibStrings.NETWORK_ONLY | reactDashRelayLib.reactDashRelayLibStrings.STORE_THEN_NETWORK
+  ] = js.undefined
   var environment: relayDashRuntimeLib.relayDashRuntimeMod.Environment
   var query: js.UndefOr[relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode | scala.Null] = js.undefined
   var rerunParamExperimental: js.UndefOr[relayDashRuntimeLib.relayDashRuntimeMod.RerunParam] = js.undefined

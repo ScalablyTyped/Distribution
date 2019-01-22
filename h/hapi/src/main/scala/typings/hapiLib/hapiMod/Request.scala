@@ -106,10 +106,9 @@ trait Request
     */
   val preResponses: hapiLib.hapiMod.UtilNs.Dictionary[_] = js.native
   /**
-    * By default the object outputted from node's URL parse() method. Might also be set indirectly via request.setUrl in which case it may be a string (if url is set to an object with the query
-    * attribute as an unparsed string).
+    * By default the object outputted from node's URL parse() method.
     */
-  val query: RequestQuery | java.lang.String = js.native
+  val query: RequestQuery = js.native
   /**
     * An object containing the Node HTTP server objects. Direct interaction with these raw objects is not recommended.
     * * req - the node request object.
@@ -119,9 +118,10 @@ trait Request
   /**
     * Access: read / write (see limitations below).
     * The response object when set. The object can be modified but must not be assigned another object. To replace the response with another from within an extension point, use reply(response) to
-    * override with a different response. Contains null when no response has been set (e.g. when a request terminates prematurely when the client disconnects).
+    * override with a different response.
+    * In case of an aborted request the status code will be set to `disconnectStatusCode`.
     */
-  var response: ResponseObject | boomLib.boomMod.namespaced[_] | scala.Null = js.native
+  var response: ResponseObject | boomLib.boomMod.namespaced[_] = js.native
   /**
     * The request route information object and method
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestroute)
@@ -140,7 +140,7 @@ trait Request
   /**
     * The parsed request URI.
     */
-  val url: nodeLib.urlMod.Url = js.native
+  val url: nodeLib.urlMod.URL = js.native
   /**
     * Returns `true` when the request is active and processing should continue and `false` when the
     *  request terminated early or completed its lifecycle. Useful when request processing is a
@@ -199,7 +199,7 @@ trait Request
     */
   def setUrl(url: java.lang.String): scala.Unit = js.native
   def setUrl(url: java.lang.String, stripTrailingSlash: scala.Boolean): scala.Unit = js.native
-  def setUrl(url: nodeLib.urlMod.Url): scala.Unit = js.native
-  def setUrl(url: nodeLib.urlMod.Url, stripTrailingSlash: scala.Boolean): scala.Unit = js.native
+  def setUrl(url: nodeLib.urlMod.URL): scala.Unit = js.native
+  def setUrl(url: nodeLib.urlMod.URL, stripTrailingSlash: scala.Boolean): scala.Unit = js.native
 }
 

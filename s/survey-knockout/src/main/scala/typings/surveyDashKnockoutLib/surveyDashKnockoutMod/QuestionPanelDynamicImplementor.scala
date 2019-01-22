@@ -20,7 +20,6 @@ class QuestionPanelDynamicImplementor protected () extends QuestionImplementor {
   var koIsRange: js.Any = js.native
   var koNextPanelClick: js.Any = js.native
   var koPanel: js.Any = js.native
-  var koPanels: js.Any = js.native
   var koPrevPanelClick: js.Any = js.native
   var koRangeMax: js.Any = js.native
   var koRangeValue: js.Any = js.native

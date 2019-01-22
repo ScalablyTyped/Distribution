@@ -18,6 +18,11 @@ trait PageEventObj extends js.Object {
     * Puppeteer can respond to the dialog via Dialog's accept or dismiss methods.
     */
   var dialog: Dialog
+  /**
+    * Emitted when the initial HTML document has been completely loaded and parsed,
+    * without waiting for stylesheets, images, and subframes to finish loading.
+    */
+  var domcontentloaded: scala.Nothing
   /** Emitted when the page crashes. */
   var error: nodeLib.Error
   /** Emitted when a frame is attached. */

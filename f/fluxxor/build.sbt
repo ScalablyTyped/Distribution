@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fluxxor"
-version := "1.5.2-dt-20180803Z-32c96e"
+version := "1.5.2-dt-20180803Z-5547d0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

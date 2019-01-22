@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yog2-kernel"
-version := "1.9-dt-20181121Z-f22f09"
+version := "1.9-dt-20181121Z-15d7f2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,17 +8,17 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-e9bff8",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-014b69",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20180603Z-3859d1",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190108Z-fdb83d",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-970fa5",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-c48db4",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-2342ad",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
-  "org.scalablytyped" %%% "node-ral" % "0.18-dt-20181121Z-7c1f69",
+  "org.scalablytyped" %%% "node-ral" % "0.18-dt-20181121Z-8bf9d3",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-a57469",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-c3aa54",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
-  "org.scalablytyped" %%% "yog-bigpipe" % "0.4-dt-20180214Z-a428e4",
-  "org.scalablytyped" %%% "yog-log" % "0.1-dt-20181121Z-35f8fe")
+  "org.scalablytyped" %%% "yog-bigpipe" % "0.4-dt-20180214Z-f3be12",
+  "org.scalablytyped" %%% "yog-log" % "0.1-dt-20181121Z-86eef3")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

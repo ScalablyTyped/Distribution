@@ -93,7 +93,7 @@ class SMTPServer ()
   ): scala.Unit = js.native
   /** Override this */
   def onData(
-    stream: nodeLib.streamMod.Readable,
+    stream: SMTPServerDataStream,
     session: SMTPServerSession,
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native

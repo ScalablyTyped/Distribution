@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webpack-serve"
-version := "2.0-dt-20180712Z-43dc2f"
+version := "2.0-dt-20180712Z-2e8934"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,12 +10,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20180214Z-3be82b",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-e9bff8",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-014b69",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20180214Z-e4335a",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20180603Z-3859d1",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20180214Z-d8af3e",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190108Z-fdb83d",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-970fa5",
   "org.scalablytyped" %%% "http-assert" % "1.4-dt-20181225Z-8d272c",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-1f56f8",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20181231Z-90d701",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20181231Z-582d71",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20180214Z-38662f",
   "org.scalablytyped" %%% "loglevel" % "1.5-dt-20180214Z-48de0b",
   "org.scalablytyped" %%% "memory-fs" % "0.3.0-dt-20180919Z-63a0f4",
@@ -27,9 +27,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-1d4d44",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-280313",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190116Z-1ebcb9",
-  "org.scalablytyped" %%% "webpack-dev-middleware" % "2.0-dt-20180709Z-d36c52",
-  "org.scalablytyped" %%% "webpack-hot-client" % "4.0-dt-20180621Z-8e9717")
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190116Z-2b3f1b",
+  "org.scalablytyped" %%% "webpack-dev-middleware" % "2.0-dt-20180709Z-4c21eb",
+  "org.scalablytyped" %%% "webpack-hot-client" % "4.0-dt-20180621Z-a90ce8")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

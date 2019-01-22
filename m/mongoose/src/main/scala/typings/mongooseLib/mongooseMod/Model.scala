@@ -522,6 +522,16 @@ org.scalablytyped.runtime.Instantiable0[T]
     options: mongooseLib.Anon_Ordered with ModelOptions,
     callback: js.Function2[/* error */ js.Any, /* docs */ js.Array[T], scala.Unit]
   ): js.Promise[js.Array[T]] = js.native
+  def listIndexes(): js.Promise[scala.Unit] = js.native
+  /**
+    * Lists the indexes currently defined in MongoDB. This may or may not be
+    * the same as the indexes defined in your schema depending on whether you
+    * use the [`autoIndex` option](/docs/guide.html#autoIndex) and if you
+    * build indexes manually.
+    * @param cb optional callback
+    * @return Returns `undefined` if callback is specified, returns a promise if no callback.
+    */
+  def listIndexes(callback: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native
   /**
     * Executes a mapReduce command.
     * @param o an object specifying map-reduce options
@@ -576,6 +586,19 @@ org.scalablytyped.runtime.Instantiable0[T]
     replacement: js.Any,
     callback: js.Function2[/* err */ js.Any, /* raw */ js.Any, scala.Unit]
   ): Query[_] with QueryHelpers = js.native
+  def syncIndexes(options: js.Object): js.Promise[scala.Unit] = js.native
+  def syncIndexes(options: js.Object, callback: js.Function1[/* err */ js.Any, scala.Unit]): scala.Unit = js.native
+  /**
+    * Makes the indexes in MongoDB match the indexes defined in this model's
+    * schema. This function will drop any indexes that are not defined in
+    * the model's schema except the `_id` index, and build any indexes that
+    * are in your schema but not in MongoDB.
+    * @param options options to pass to `ensureIndexes()`
+    * @param callback optional callback
+    * @return Returns `undefined` if callback is specified, returns a promise if no callback.
+    */
+  @JSName("syncIndexes")
+  def syncIndexes_Unit(options: js.Object): scala.Unit = js.native
   /**
     * Translate any aliases fields/conditions so the final query or document object is pure
     * @param raw fields/conditions that may contain aliased keys

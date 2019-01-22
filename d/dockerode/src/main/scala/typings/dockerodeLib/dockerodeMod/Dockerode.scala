@@ -140,10 +140,10 @@ trait Dockerode extends js.Object {
   def listTasks(callback: dockerodeLib.Callback[js.Array[_]]): scala.Unit = js.native
   def listTasks(options: js.Object): js.Promise[js.Array[_]] = js.native
   def listTasks(options: js.Object, callback: dockerodeLib.Callback[js.Array[_]]): scala.Unit = js.native
-  def listVolumes(): js.Promise[js.Array[_]] = js.native
-  def listVolumes(callback: dockerodeLib.Callback[js.Array[_]]): scala.Unit = js.native
-  def listVolumes(options: js.Object): js.Promise[js.Array[_]] = js.native
-  def listVolumes(options: js.Object, callback: dockerodeLib.Callback[js.Array[_]]): scala.Unit = js.native
+  def listVolumes(): js.Promise[dockerodeLib.Anon_Volumes] = js.native
+  def listVolumes(callback: dockerodeLib.Callback[dockerodeLib.Anon_Volumes]): scala.Unit = js.native
+  def listVolumes(options: js.Object): js.Promise[dockerodeLib.Anon_Volumes] = js.native
+  def listVolumes(options: js.Object, callback: dockerodeLib.Callback[dockerodeLib.Anon_Volumes]): scala.Unit = js.native
   def loadImage(file: java.lang.String): js.Promise[nodeLib.NodeJSNs.ReadableStream] = js.native
   def loadImage(file: java.lang.String, callback: dockerodeLib.Callback[nodeLib.NodeJSNs.ReadableStream]): scala.Unit = js.native
   def loadImage(file: java.lang.String, options: js.Object): js.Promise[nodeLib.NodeJSNs.ReadableStream] = js.native

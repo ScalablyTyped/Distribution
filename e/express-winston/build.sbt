@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "express-winston"
-version := "3.0-dt-20180831Z-9ee276"
+version := "3.0-dt-20180831Z-cf2031"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "async" % "2.4-dt-20190117Z-89bc8b",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-e9bff8",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-014b69",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20180603Z-3859d1",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190108Z-fdb83d",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-970fa5",
   "org.scalablytyped" %%% "is-stream" % "1.1-dt-20180214Z-110fbc",
   "org.scalablytyped" %%% "logform" % "1.2-dt-20180214Z-845012",

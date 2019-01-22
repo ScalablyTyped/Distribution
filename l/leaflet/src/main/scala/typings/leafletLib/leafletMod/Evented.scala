@@ -131,6 +131,7 @@ abstract class Evented () extends Class {
     * Note that if you passed a custom context to on, you must pass the same context
     * to off in order to remove the listener.
     */
+  def removeEventListener(`type`: java.lang.String): this.type = js.native
   def removeEventListener(`type`: java.lang.String, fn: LeafletEventHandlerFn): this.type = js.native
   def removeEventListener(`type`: java.lang.String, fn: LeafletEventHandlerFn, context: js.Any): this.type = js.native
   /**

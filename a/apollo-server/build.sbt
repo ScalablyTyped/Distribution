@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server"
-version := "2.3.1-52088b"
+version := "2.3.1-a4efd3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollo-server-core" % "2.3.1-96f2a3",
   "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-cba34a",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.2.0-0b5ebe",
-  "org.scalablytyped" %%% "apollo-server-express" % "2.3.1-88a9a5",
+  "org.scalablytyped" %%% "apollo-server-express" % "2.3.1-bd6c34",
   "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.2.1-329388",
   "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-c9719d",
   "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.2.9-384523",
@@ -26,10 +26,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-e9bff8",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-014b69",
   "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-1e7c9f",
-  "org.scalablytyped" %%% "cors" % "2.8-dt-20180423Z-f1ab4f",
+  "org.scalablytyped" %%% "cors" % "2.8-dt-20180423Z-762c11",
   "org.scalablytyped" %%% "deprecated-decorator" % "0.1.6-7670bf",
   "org.scalablytyped" %%% "eventemitter3" % "3.1.0-c99994",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20180603Z-3859d1",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190108Z-fdb83d",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-970fa5",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-c8d4b8",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20190107Z-b6e998",

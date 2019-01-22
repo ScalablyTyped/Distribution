@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 	 * Component组件参数
 	 */
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof weixin-app.wx.Lifetimes ]:? weixin-app.wx.Lifetimes[P]} */ trait ComponentOptions[Instance /* <: Component[Data, Props] */, Data, Methods, Props] extends js.Object {
+- Dropped {[ P in keyof weixin-app.wx.Lifetimes ]:? weixin-app.wx.Lifetimes[P]} */ trait ComponentOptions[Instance /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] extends js.Object {
   /**
   		 * 类似于mixins和traits的组件间代码复用机制
   		 * 参见 [behaviors](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/custom-component/behaviors.html)
   		 */
-  var behaviors: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var behaviors: js.UndefOr[Behaviors] = js.undefined
   /**
   		 * 组件的内部数据，和 properties 一同用于组件的模版渲染
   		 */

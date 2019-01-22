@@ -37,6 +37,7 @@ trait DateTime extends js.Object {
   var weekdayShort: java.lang.String = js.native
   var weeksInWeekYear: scala.Double = js.native
   var year: scala.Double = js.native
+  var zone: Zone = js.native
   var zoneName: java.lang.String = js.native
   def diff(other: DateTime): Duration = js.native
   def diff(other: DateTime, unit: js.Array[DurationUnit]): Duration = js.native
@@ -51,7 +52,7 @@ trait DateTime extends js.Object {
   def endOf(unit: DurationUnit): DateTime = js.native
   def equals(other: DateTime): scala.Boolean = js.native
   def get(
-    unit: luxonLib.luxonLibStrings.day | luxonLib.luxonLibStrings.daysInMonth | luxonLib.luxonLibStrings.daysInYear | luxonLib.luxonLibStrings.hour | luxonLib.luxonLibStrings.invalidReason | luxonLib.luxonLibStrings.isInDST | luxonLib.luxonLibStrings.isInLeapYear | luxonLib.luxonLibStrings.isOffsetFixed | luxonLib.luxonLibStrings.isValid | luxonLib.luxonLibStrings.locale | luxonLib.luxonLibStrings.millisecond | luxonLib.luxonLibStrings.minute | luxonLib.luxonLibStrings.month | luxonLib.luxonLibStrings.monthLong | luxonLib.luxonLibStrings.monthShort | luxonLib.luxonLibStrings.numberingSystem | luxonLib.luxonLibStrings.offset | luxonLib.luxonLibStrings.offsetNameLong | luxonLib.luxonLibStrings.offsetNameShort | luxonLib.luxonLibStrings.ordinal | luxonLib.luxonLibStrings.outputCalendar | luxonLib.luxonLibStrings.quarter | luxonLib.luxonLibStrings.second | luxonLib.luxonLibStrings.weekNumber | luxonLib.luxonLibStrings.weekYear | luxonLib.luxonLibStrings.weekday | luxonLib.luxonLibStrings.weekdayLong | luxonLib.luxonLibStrings.weekdayShort | luxonLib.luxonLibStrings.weeksInWeekYear | luxonLib.luxonLibStrings.year | luxonLib.luxonLibStrings.zoneName
+    unit: luxonLib.luxonLibStrings.day | luxonLib.luxonLibStrings.daysInMonth | luxonLib.luxonLibStrings.daysInYear | luxonLib.luxonLibStrings.hour | luxonLib.luxonLibStrings.invalidReason | luxonLib.luxonLibStrings.isInDST | luxonLib.luxonLibStrings.isInLeapYear | luxonLib.luxonLibStrings.isOffsetFixed | luxonLib.luxonLibStrings.isValid | luxonLib.luxonLibStrings.locale | luxonLib.luxonLibStrings.millisecond | luxonLib.luxonLibStrings.minute | luxonLib.luxonLibStrings.month | luxonLib.luxonLibStrings.monthLong | luxonLib.luxonLibStrings.monthShort | luxonLib.luxonLibStrings.numberingSystem | luxonLib.luxonLibStrings.offset | luxonLib.luxonLibStrings.offsetNameLong | luxonLib.luxonLibStrings.offsetNameShort | luxonLib.luxonLibStrings.ordinal | luxonLib.luxonLibStrings.outputCalendar | luxonLib.luxonLibStrings.quarter | luxonLib.luxonLibStrings.second | luxonLib.luxonLibStrings.weekNumber | luxonLib.luxonLibStrings.weekYear | luxonLib.luxonLibStrings.weekday | luxonLib.luxonLibStrings.weekdayLong | luxonLib.luxonLibStrings.weekdayShort | luxonLib.luxonLibStrings.weeksInWeekYear | luxonLib.luxonLibStrings.year | luxonLib.luxonLibStrings.zoneName | luxonLib.luxonLibStrings.zone
   ): scala.Double = js.native
   def hasSame(other: DateTime, unit: DurationUnit): scala.Boolean = js.native
   def minus(duration: Duration): DateTime = js.native
@@ -99,6 +100,7 @@ trait DateTime extends js.Object {
   def toSQLDate(): java.lang.String = js.native
   def toSQLTime(): java.lang.String = js.native
   def toSQLTime(options: ToSQLOptions): java.lang.String = js.native
+  def toSeconds(): scala.Double = js.native
   def toUTC(): DateTime = js.native
   def toUTC(offset: scala.Double): DateTime = js.native
   def toUTC(offset: scala.Double, options: ZoneOptions): DateTime = js.native

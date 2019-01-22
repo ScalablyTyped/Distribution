@@ -34,6 +34,9 @@ object dockerodeLibStrings {
   sealed trait gelf extends js.Object
   
   @js.native
+  sealed trait global extends js.Object
+  
+  @js.native
   sealed trait http extends js.Object
   
   @js.native
@@ -44,6 +47,9 @@ object dockerodeLibStrings {
   
   @js.native
   sealed trait `json-file` extends js.Object
+  
+  @js.native
+  sealed trait local extends js.Object
   
   @js.native
   sealed trait none extends js.Object
@@ -87,10 +93,12 @@ object dockerodeLibStrings {
   def etwlogs: etwlogs = "etwlogs".asInstanceOf[etwlogs]
   def fluentd: fluentd = "fluentd".asInstanceOf[fluentd]
   def gelf: gelf = "gelf".asInstanceOf[gelf]
+  def global: global = "global".asInstanceOf[global]
   def http: http = "http".asInstanceOf[http]
   def https: https = "https".asInstanceOf[https]
   def journald: journald = "journald".asInstanceOf[journald]
   def `json-file`: `json-file` = "json-file".asInstanceOf[`json-file`]
+  def local: local = "local".asInstanceOf[local]
   def none: none = "none".asInstanceOf[none]
   def `private`: `private` = "private".asInstanceOf[`private`]
   def rprivate: rprivate = "rprivate".asInstanceOf[rprivate]

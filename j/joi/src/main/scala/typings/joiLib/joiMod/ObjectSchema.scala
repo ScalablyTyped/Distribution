@@ -76,6 +76,12 @@ trait ObjectSchema extends AnySchema {
     */
   def or(peers: java.lang.String*): this.type = js.native
   def or(peers: js.Array[java.lang.String]): this.type = js.native
+  /**
+    * Defines an exclusive relationship between a set of keys where only one is allowed but none are required where:
+    * `peers` - the exclusive key names that must not appear together but where none are required.
+    */
+  def oxor(peers: java.lang.String*): this.type = js.native
+  def oxor(peers: js.Array[java.lang.String]): this.type = js.native
   def pattern(pattern: SchemaLike, schema: SchemaLike): this.type = js.native
   /**
     * Specify validation rules for unknown keys matching a pattern.

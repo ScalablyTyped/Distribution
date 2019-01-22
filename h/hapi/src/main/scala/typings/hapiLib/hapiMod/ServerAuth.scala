@@ -62,13 +62,13 @@ trait ServerAuth extends js.Object {
     * Tests a request against an authentication strategy where:
     * @param strategy - the strategy name registered with server.auth.strategy().
     * @param request - the request object.
-    * @return Return value: the authentication credentials object if authentication was successful, otherwise throws an error.
+    * @return an object containing the authentication credentials and artifacts if authentication was successful, otherwise throws an error.
     * Note that the test() method does not take into account the route authentication configuration. It also does not
     * perform payload authentication. It is limited to the basic strategy authentication execution. It does not
     * include verifying scope, entity, or other route properties.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-serverauthteststrategy-request)
     */
-  def test(strategy: java.lang.String, request: Request): js.Promise[AuthCredentials] = js.native
+  def test(strategy: java.lang.String, request: Request): js.Promise[AuthenticationData] = js.native
   /**
     * Verify a request's authentication credentials against an authentication strategy.
     * Returns nothing if verification was successful, otherwise throws an error.

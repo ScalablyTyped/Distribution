@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation._
 trait Anon_All
   extends org.scalablytyped.runtime.Instantiable1[
       /* executor */ js.Function2[
-        /* resolve */ js.Function1[/* value */ js.UndefOr[rsvpLib.rsvpMod.RSVPNs.Arg[js.Object]], scala.Unit], 
+        /* resolve */ js.Function1[
+          /* value */ js.UndefOr[
+            rsvpLib.rsvpMod.RSVPNs.Arg[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
+          ], 
+          scala.Unit
+        ], 
         /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 
         scala.Unit
       ], 
@@ -17,7 +22,12 @@ trait Anon_All
     ]
      with org.scalablytyped.runtime.Instantiable2[
       /* executor */ js.Function2[
-        /* resolve */ js.Function1[/* value */ js.UndefOr[rsvpLib.rsvpMod.RSVPNs.Arg[js.Object]], scala.Unit], 
+        /* resolve */ js.Function1[
+          /* value */ js.UndefOr[
+            rsvpLib.rsvpMod.RSVPNs.Arg[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any]
+          ], 
+          scala.Unit
+        ], 
         /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 
         scala.Unit
       ], 

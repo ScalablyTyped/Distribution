@@ -9,7 +9,12 @@ import scala.scalajs.js.annotation._
 trait Anon_A1
   extends org.scalablytyped.runtime.Instantiable1[
       /* callback */ js.Function3[
-        /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[js.Object | js.Thenable[js.Object]], scala.Unit], 
+        /* resolve */ js.Function1[
+          /* thenableOrResult */ js.UndefOr[
+            (/* import warning: RewrittenClass.unapply cls $anonfun was tparam R */ js.Any) | (js.Thenable[/* import warning: RewrittenClass.unapply cls $anonfun was tparam R */ js.Any])
+          ], 
+          scala.Unit
+        ], 
         /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit], 
         /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[scala.Unit], scala.Unit]], 
         scala.Unit

@@ -14,6 +14,13 @@ trait AnySchema extends JoiObject {
   def allow(values: js.Any*): this.type = js.native
   def allow(values: js.Array[_]): this.type = js.native
   /**
+    * By default, some Joi methods to function properly need to rely on the Joi instance they are attached to because
+    * they use `this` internally.
+    * So `Joi.string()` works but if you extract the function from it and call `string()` it won't.
+    * `bind()` creates a new Joi instance where all the functions relying on `this` are bound to the Joi instance.
+    */
+  def bind(): this.type = js.native
+  /**
     * Returns a new type that is the result of adding the rules of one type to another.
     */
   def concat(schema: this.type): this.type = js.native
@@ -57,6 +64,7 @@ trait AnySchema extends JoiObject {
   def equal(values: js.Any*): this.type = js.native
   def equal(values: js.Array[_]): this.type = js.native
   def error(err: ValidationErrorFunction): this.type = js.native
+  def error(err: ValidationErrorFunction, options: ErrorOptions): this.type = js.native
   /**
     * Overrides the default joi error with a custom error if the rule fails where:
     * @param err - can be:
@@ -76,6 +84,7 @@ trait AnySchema extends JoiObject {
     * option has been set to `false`).
     */
   def error(err: stdLib.Error): this.type = js.native
+  def error(err: stdLib.Error, options: ErrorOptions): this.type = js.native
   /**
     * Annotates the key with an example value, must be valid.
     */

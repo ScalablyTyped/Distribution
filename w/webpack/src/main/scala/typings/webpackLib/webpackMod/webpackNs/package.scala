@@ -59,6 +59,7 @@ package object webpackNs {
   type RuleSetQuery = java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]
   type RuleSetUse = RuleSetUseItem | js.Array[RuleSetUseItem] | (js.Function1[/* data */ js.Any, RuleSetUseItem | js.Array[RuleSetUseItem]])
   type RuleSetUseItem = java.lang.String | RuleSetLoader | (js.Function1[/* data */ js.Any, java.lang.String | RuleSetLoader])
+  type SingleEntryPlugin = Plugin
   type SourceMapDevToolPlugin = Plugin
   /** @deprecated use webpack.SourceMapDevToolPlugin.Options */
   type SourceMapDevToolPluginOptions = webpackLib.webpackMod.webpackNs.SourceMapDevToolPluginNs.Options

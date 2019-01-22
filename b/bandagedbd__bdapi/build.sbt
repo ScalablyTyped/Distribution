@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bandagedbd__bdapi"
-version := "0.2-dt-20190107Z-adfd01"
+version := "0.2-dt-20190107Z-178457"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

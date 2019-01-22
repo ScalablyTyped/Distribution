@@ -7,8 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait HexOptions extends js.Object {
   /**
-    * hex decoded representation must be byte aligned
+    * hex decoded representation must be byte aligned.
+    * @default false
     */
-  var byteAligned: scala.Boolean
+  var byteAligned: js.UndefOr[scala.Boolean] = js.undefined
 }
 

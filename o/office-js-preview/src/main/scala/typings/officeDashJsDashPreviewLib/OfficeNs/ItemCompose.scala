@@ -375,7 +375,7 @@ trait ItemCompose extends Item {
     *
     * @param attachmentId The identifier of the attachment to remove.
     * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
-    *                 type {@link Offfice.AsyncResult}. 
+    *                 type {@link Office.AsyncResult}. 
     *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
     */
   def removeAttachmentAsync(

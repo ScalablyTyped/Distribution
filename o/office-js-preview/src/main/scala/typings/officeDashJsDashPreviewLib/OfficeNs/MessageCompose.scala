@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- officeDashJsDashPreviewLib.OfficeNs.ItemCompose because var conflicts: body, dateTimeCreated, dateTimeModifed, itemType, notificationMessages, recurrence, seriesId. Inlined subject, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, close, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getSelectedDataAsync, getSelectedDataAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, saveAsync, saveAsync, saveAsync, saveAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync */ @js.native
+- officeDashJsDashPreviewLib.OfficeNs.ItemCompose because var conflicts: body, dateTimeCreated, dateTimeModified, itemType, notificationMessages, recurrence, seriesId. Inlined subject, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, close, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getSelectedDataAsync, getSelectedDataAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, saveAsync, saveAsync, saveAsync, saveAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync */ @js.native
 trait MessageCompose extends Message {
   /**
     * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.
@@ -707,7 +707,7 @@ trait MessageCompose extends Message {
     *
     * @param attachmentId The identifier of the attachment to remove.
     * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
-    *                 type {@link Offfice.AsyncResult}. 
+    *                 type {@link Office.AsyncResult}. 
     *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
     */
   def removeAttachmentAsync(

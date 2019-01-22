@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "anydb-sql"
-version := "0.7.1-b0f017"
+version := "0.7.1-8885d2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "any-db" % "2.1.0-dt-20180214Z-c3d7f0",
   "org.scalablytyped" %%% "any-db-transaction" % "2.2.1-dt-20180214Z-24335c",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-a8dc26",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-232ecf",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-c48db4",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
   "org.scalablytyped" %%% "node-sql-2" % "0.78.0-f13111",

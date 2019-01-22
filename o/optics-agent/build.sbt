@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "optics-agent"
-version := "1.1-dt-20181022Z-aa47da"
+version := "1.1-dt-20181022Z-bc682b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,16 +11,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "boom" % "7.2-dt-20181116Z-34ff31",
   "org.scalablytyped" %%% "catbox" % "10.0-dt-20190118Z-974f2c",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-014b69",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20180214Z-e4335a",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20180603Z-3859d1",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20180214Z-d8af3e",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190108Z-fdb83d",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-970fa5",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20190107Z-b6e998",
-  "org.scalablytyped" %%% "hapi" % "17.8-dt-20190118Z-7d290a",
+  "org.scalablytyped" %%% "hapi" % "18.0-dt-20190119Z-85ed0a",
   "org.scalablytyped" %%% "http-assert" % "1.4-dt-20181225Z-8d272c",
   "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-80f03c",
-  "org.scalablytyped" %%% "joi" % "14.0-dt-20181211Z-34f834",
+  "org.scalablytyped" %%% "joi" % "14.3-dt-20190121Z-b10f91",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-1f56f8",
-  "org.scalablytyped" %%% "koa" % "2.x-dt-20181231Z-90d701",
+  "org.scalablytyped" %%% "koa" % "2.x-dt-20181231Z-582d71",
   "org.scalablytyped" %%% "koa-compose" % "3.2-dt-20180214Z-38662f",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-2342ad",
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20180214Z-8d1804",

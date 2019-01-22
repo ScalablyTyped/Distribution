@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Args extends js.Object {
   var Store: org.scalablytyped.runtime.Instantiable1[
-    /* options */ vuexLib.typesMod.StoreOptions[js.Object], 
+    /* options */ vuexLib.typesMod.StoreOptions[/* import warning: RewrittenClass.unapply cls $anonfun was tparam S */ js.Any], 
     vuexLib.typesMod.Store[js.Object]
   ] = js.native
   @JSName("createNamespacedHelpers")

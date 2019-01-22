@@ -60,6 +60,12 @@ trait Anon_BannerPluginCompilation extends js.Object {
     webpackLib.webpackMod.ProvidePlugin
   ] = js.native
   var ResolvePlugin: org.scalablytyped.runtime.Instantiable0[webpackLib.webpackMod.ResolvePlugin] = js.native
+  var SingleEntryPlugin: org.scalablytyped.runtime.Instantiable3[
+    /* context */ java.lang.String, 
+    /* entry */ java.lang.String, 
+    /* name */ java.lang.String, 
+    webpackLib.webpackMod.SingleEntryPlugin
+  ] = js.native
   var SourceMapDevToolPlugin: org.scalablytyped.runtime.Instantiable0[webpackLib.webpackMod.SourceMapDevToolPlugin] = js.native
   val SourceMapDevToolPluginNs: js.Any = js.native
   var SplitChunksPlugin: org.scalablytyped.runtime.Instantiable0[webpackLib.webpackMod.SplitChunksPlugin] = js.native

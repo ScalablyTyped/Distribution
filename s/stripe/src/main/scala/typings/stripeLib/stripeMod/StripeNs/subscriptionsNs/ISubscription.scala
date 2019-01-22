@@ -33,7 +33,7 @@ trait ISubscription
     * cancel_at_period_end, canceled_at will still reflect the date of the initial cancellation request, not the end of the
     * subscription period when the subscription is automatically moved to a canceled state.
     */
-  var canceled_at: scala.Double
+  var canceled_at: scala.Double | scala.Null
   var created: scala.Double
   /**
     * End of the current period that the subscription has been invoiced for. At the end of this period, a new invoice will be created.
@@ -51,7 +51,7 @@ trait ISubscription
     * Describes the current discount applied to this subscription, if there is one. When billing, a discount applied to a
     * subscription overrides a discount applied on a customer-wide basis.
     */
-  var discount: stripeLib.stripeMod.StripeNs.couponsNs.IDiscount
+  var discount: stripeLib.stripeMod.StripeNs.couponsNs.IDiscount | scala.Null
   /**
     * If the subscription has ended (either because it was canceled or because the customer was switched to a subscription
     * to a new plan), the date the subscription ended
@@ -93,10 +93,10 @@ trait ISubscription
   /**
     * If the subscription has a trial, the end of that trial.
     */
-  var trial_end: scala.Double
+  var trial_end: scala.Double | scala.Null
   /**
     * If the subscription has a trial, the beginning of that trial.
     */
-  var trial_start: scala.Double
+  var trial_start: scala.Double | scala.Null
 }
 

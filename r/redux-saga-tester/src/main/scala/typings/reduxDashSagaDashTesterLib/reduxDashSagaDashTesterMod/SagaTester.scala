@@ -36,7 +36,7 @@ trait SagaTester[StateType /* <: js.Object */] extends js.Object {
   /**
     * Starts execution of the provided saga.
     */
-  def start(saga: SagaFunction, args: js.Any*): reduxDashSagaLib.reduxDashSagaMod.Task = js.native
+  def start(saga: SagaFunction, args: js.Any*): atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Task = js.native
   /**
     * Assigns the newState into the current state. (Only works with the default reducer.)
     */

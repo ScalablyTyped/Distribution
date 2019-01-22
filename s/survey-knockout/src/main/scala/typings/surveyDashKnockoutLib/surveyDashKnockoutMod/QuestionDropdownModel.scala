@@ -14,5 +14,9 @@ class QuestionDropdownModel protected () extends QuestionSelectBase {
     * Use this property to set the options caption different from the default value. The default value is taken from localization strings.
     */
   var optionsCaption: java.lang.String = js.native
+  /**
+    * This flag controls whether to show options caption item ('Choose...').
+    */
+  var showOptionsCaption: scala.Boolean = js.native
 }
 

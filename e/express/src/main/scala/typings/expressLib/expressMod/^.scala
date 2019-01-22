@@ -9,10 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   /**
+    * These are the exposed prototypes.
+    */
+  var application: expressLib.expressMod.eNs.Application = js.native
+  /**
     * This is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.
     * @since 4.16.0
     */
   var json: expressLib.Anon_Options = js.native
+  var request: expressLib.expressMod.eNs.Request = js.native
+  var response: expressLib.expressMod.eNs.Response = js.native
   /**
     * This is a built-in middleware function in Express. It serves static files and is based on serve-static.
     */

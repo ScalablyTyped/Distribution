@@ -8,6 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ArraySchema extends AnySchema {
   /**
+    * Verifies that an assertion passes for at least one item in the array, where:
+    * `schema` - the validation rules required to satisfy the assertion. If the `schema` includes references, they are resolved against
+    * the array item being tested, not the value of the `ref` target.
+    */
+  def assertItem(schema: SchemaLike): this.type = js.native
+  /**
     * List the types allowed for the array values.
     * type can be an array of values, or multiple values can be passed as individual arguments.
     * If a given type is .required() then there must be a matching item in the array.

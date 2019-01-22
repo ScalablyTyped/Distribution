@@ -25,6 +25,7 @@ trait DesiredCapabilities extends Capabilities {
   // Read-only capabilities
   var cssSelectorsEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var databaseEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  var deviceName: js.UndefOr[java.lang.String] = js.undefined
   var dontInjectRegex: js.UndefOr[stdLib.RegExp] = js.undefined
   var elementScrollBehavior: js.UndefOr[scala.Double] = js.undefined
   var enableElementCacheCleanup: js.UndefOr[scala.Boolean] = js.undefined

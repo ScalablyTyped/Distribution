@@ -9,12 +9,21 @@ import scala.scalajs.js.annotation._
 trait Anon_MergeOptions
   extends org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.streamNs.coreNs.Stream[js.Object, js.Object]]
      with org.scalablytyped.runtime.Instantiable1[
-      /* source */ adoneLib.adoneNs.streamNs.coreNs.INs.Source[js.Object, js.Object], 
+      /* source */ adoneLib.adoneNs.streamNs.coreNs.INs.Source[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam S */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+      ], 
       adoneLib.adoneNs.streamNs.coreNs.Stream[js.Object, js.Object]
     ]
      with org.scalablytyped.runtime.Instantiable2[
-      /* source */ adoneLib.adoneNs.streamNs.coreNs.INs.Source[js.Object, js.Object], 
-      /* options */ adoneLib.adoneNs.streamNs.coreNs.INs.ConstructorOptions[js.Object, js.Object], 
+      /* source */ adoneLib.adoneNs.streamNs.coreNs.INs.Source[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam S */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+      ], 
+      /* options */ adoneLib.adoneNs.streamNs.coreNs.INs.ConstructorOptions[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam S */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
+      ], 
       adoneLib.adoneNs.streamNs.coreNs.Stream[js.Object, js.Object]
     ] {
    // ??

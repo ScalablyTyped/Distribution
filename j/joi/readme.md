@@ -1,5 +1,5 @@
 ```
-// Type definitions for joi 14.0
+// Type definitions for joi 14.3
 // Project: https://github.com/hapijs/joi
 // Definitions by: Bart van der Schoor <https://github.com/Bartvds>
 //                 Laurence Dougal Myers <https://github.com/laurence-myers>

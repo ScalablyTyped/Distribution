@@ -50,6 +50,8 @@ object DateTime extends js.Object {
   def fromRFC2822(text: java.lang.String, options: luxonLib.luxonMod.luxonNs.DateTimeOptions): luxonLib.luxonMod.luxonNs.DateTime = js.native
   def fromSQL(text: java.lang.String): luxonLib.luxonMod.luxonNs.DateTime = js.native
   def fromSQL(text: java.lang.String, options: luxonLib.luxonMod.luxonNs.DateTimeOptions): luxonLib.luxonMod.luxonNs.DateTime = js.native
+  def fromSeconds(seconds: scala.Double): luxonLib.luxonMod.luxonNs.DateTime = js.native
+  def fromSeconds(seconds: scala.Double, options: luxonLib.luxonMod.luxonNs.DateTimeOptions): luxonLib.luxonMod.luxonNs.DateTime = js.native
   /**
     * @deprecated since 0.3.0. Use fromFormat instead
     */

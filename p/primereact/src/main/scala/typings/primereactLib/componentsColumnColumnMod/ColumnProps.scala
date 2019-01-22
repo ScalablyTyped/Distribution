@@ -16,6 +16,7 @@ trait ColumnProps extends js.Object {
     js.Function1[/* props */ js.Any, js.UndefOr[reactLib.reactMod.Global.JSXNs.Element]]
   ] = js.undefined
   var editorValidator: js.UndefOr[js.Function1[/* props */ js.Any, scala.Boolean]] = js.undefined
+  var editorValidatorEvent: js.UndefOr[java.lang.String] = js.undefined
   var expander: js.UndefOr[scala.Boolean] = js.undefined
   var field: js.UndefOr[java.lang.String] = js.undefined
   var filter: js.UndefOr[scala.Boolean] = js.undefined

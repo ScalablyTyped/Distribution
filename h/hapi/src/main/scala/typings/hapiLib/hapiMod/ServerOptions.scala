@@ -46,7 +46,7 @@ trait ServerOptions extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptionscache)
     */
   var cache: js.UndefOr[
-    catboxLib.catboxMod.EnginePrototype[_] | ServerOptionsCache | js.Array[ServerOptionsCache]
+    CacheProvider[catboxLib.catboxMod.ClientOptions] | ServerOptionsCache | js.Array[ServerOptionsCache]
   ] = js.undefined
   /**
     * Default value: { minBytes: 1024 }.
@@ -109,6 +109,10 @@ trait ServerOptions extends js.Object {
     * If port is a string containing a '/' character, it is used as a UNIX domain socket path. If it starts with '\.\pipe', it is used as a Windows named pipe.
     */
   var port: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  /**
+    * Query parameter configuration.
+    */
+  var query: js.UndefOr[hapiLib.Anon_Parser] = js.undefined
   /**
     * Default value: { isCaseSensitive: true, stripTrailingSlash: false }.
     * Controls how incoming request URIs are matched against the routing table:

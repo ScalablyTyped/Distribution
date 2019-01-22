@@ -83,7 +83,7 @@ trait IInvoice
     * An arbitrary string attached to the object. Often useful for displaying to users.
     */
   var description: java.lang.String
-  var discount: stripeLib.stripeMod.StripeNs.couponsNs.IDiscount
+  var discount: stripeLib.stripeMod.StripeNs.couponsNs.IDiscount | scala.Null
   /**
     * The date on which payment for this invoice is due. This value will be null for invoices where billing=charge_automatically.
     */

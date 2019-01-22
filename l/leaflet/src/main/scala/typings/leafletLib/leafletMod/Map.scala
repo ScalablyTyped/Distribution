@@ -98,6 +98,8 @@ class Map protected () extends Evented {
   def openTooltip(content: Content, latlng: LatLngExpression, options: TooltipOptions): this.type = js.native
   def openTooltip(tooltip: Tooltip): this.type = js.native
   def panBy(offset: PointExpression): this.type = js.native
+  def panInside(latLng: LatLngExpression): this.type = js.native
+  def panInside(latLng: LatLngExpression, options: PanInsideOptions): this.type = js.native
   def panInsideBounds(bounds: LatLngBoundsExpression): this.type = js.native
   def panInsideBounds(bounds: LatLngBoundsExpression, options: PanOptions): this.type = js.native
   def panTo(latlng: LatLngExpression): this.type = js.native

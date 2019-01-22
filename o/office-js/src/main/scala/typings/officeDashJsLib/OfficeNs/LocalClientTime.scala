@@ -46,7 +46,7 @@ trait LocalClientTime extends js.Object {
     */
   var timezoneOffset: scala.Double
   /**
-    * Integer value repesenting the year.
+    * Integer value representing the year.
     */
   var year: scala.Double
 }

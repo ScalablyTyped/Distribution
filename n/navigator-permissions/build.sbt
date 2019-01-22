@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "navigator-permissions"
-version := "0.1-dt-20190104Z-c40105"
+version := "0.1-dt-20190108Z-eee09e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

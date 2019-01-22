@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Page[D, P] extends Component[D, P] {
+trait Page[D, P]
+  extends Component[D, P, js.Array[js.Any]] {
   /**
   		 * 强制更新
   		 */

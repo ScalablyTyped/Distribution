@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   * You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- officeDashJsLib.OfficeNs.ItemRead because var conflicts: body, dateTimeCreated, dateTimeModifed, itemType, notificationMessages, recurrence, seriesId. Inlined attachments, itemClass, itemId, normalizedSubject, subject, displayReplyAllForm, displayReplyAllForm, displayReplyForm, displayReplyForm, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getEntities, getEntitiesByType, getFilteredEntitiesByName, getRegExMatches, getRegExMatchesByName, getSelectedEntities, getSelectedRegExMatches */ @js.native
+- officeDashJsLib.OfficeNs.ItemRead because var conflicts: body, dateTimeCreated, dateTimeModified, itemType, notificationMessages, recurrence, seriesId. Inlined attachments, itemClass, itemId, normalizedSubject, subject, displayReplyAllForm, displayReplyAllForm, displayReplyForm, displayReplyForm, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getEntities, getEntitiesByType, getFilteredEntitiesByName, getRegExMatches, getRegExMatchesByName, getSelectedEntities, getSelectedRegExMatches */ @js.native
 trait MessageRead extends Message {
   /**
     * Gets the item's attachments as an array.

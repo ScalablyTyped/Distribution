@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-navigation-material-bottom-tabs"
-version := "0.3-dt-20180808Z-22c035"
+version := "0.3-dt-20180808Z-efa62c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
   "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-73addc",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190115Z-c293a8",
-  "org.scalablytyped" %%% "react-navigation" % "3.0-dt-20181219Z-f9df8a",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190122Z-11dd82",
+  "org.scalablytyped" %%% "react-navigation" % "3.0-dt-20181219Z-cf748d",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

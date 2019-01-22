@@ -213,9 +213,9 @@ object ^ extends js.Object {
   	 * @version 1.6.0
   	 */
   def createInnerAudioContext(): weixinDashAppLib.wxNs.InnerAudioContext = js.native
-  def createIntersectionObserver(context: weixinDashAppLib.wxNs.Component[_, _]): weixinDashAppLib.wxNs.IntersectionObserver = js.native
+  def createIntersectionObserver(context: weixinDashAppLib.wxNs.Component[_, _, js.Array[js.Any]]): weixinDashAppLib.wxNs.IntersectionObserver = js.native
   def createIntersectionObserver(
-    context: weixinDashAppLib.wxNs.Component[_, _],
+    context: weixinDashAppLib.wxNs.Component[_, _, js.Array[js.Any]],
     options: weixinDashAppLib.wxNs.CreateIntersectionObserverOption
   ): weixinDashAppLib.wxNs.IntersectionObserver = js.native
   /**

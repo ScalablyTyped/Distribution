@@ -21,15 +21,31 @@ object ^ extends js.Object {
     * 每个组件可以引用多个 behavior
     * behavior 也可以引用其他 behavior
     */
-  def Behavior[D, M, P](): java.lang.String = js.native
-  def Behavior[D, M, P](
-    options: weixinDashAppLib.wxNs.ThisTypedComponentOptionsWithRecordProps[weixinDashAppLib.wxNs.Component[D, P], D, M, P]
-  ): java.lang.String = js.native
+  def Behavior[D, M, P, B /* <: js.Array[
+    (weixinDashAppLib.wxNs.Behavior[js.Object, js.Object, js.Object]) | java.lang.String
+  ] */](): weixinDashAppLib.wxNs.Behavior[
+    D with weixinDashAppLib.wxNs.UnboxBehaviorsData[B], 
+    P with weixinDashAppLib.wxNs.UnboxBehaviorsProps[B], 
+    M with weixinDashAppLib.wxNs.UnboxBehaviorsMethods[B]
+  ] = js.native
+  def Behavior[D, M, P, B /* <: js.Array[
+    (weixinDashAppLib.wxNs.Behavior[js.Object, js.Object, js.Object]) | java.lang.String
+  ] */](
+    options: weixinDashAppLib.wxNs.ThisTypedComponentOptionsWithRecordProps[weixinDashAppLib.wxNs.Component[D, P, B], D, M, P, B]
+  ): weixinDashAppLib.wxNs.Behavior[
+    D with weixinDashAppLib.wxNs.UnboxBehaviorsData[B], 
+    P with weixinDashAppLib.wxNs.UnboxBehaviorsProps[B], 
+    M with weixinDashAppLib.wxNs.UnboxBehaviorsMethods[B]
+  ] = js.native
   // #endregion
   // #region Compontent组件
-  def Component[D, M, P](): java.lang.String = js.native
-  def Component[D, M, P](
-    options: weixinDashAppLib.wxNs.ThisTypedComponentOptionsWithRecordProps[weixinDashAppLib.wxNs.Component[D, P], D, M, P]
+  def Component[D, M, P, B /* <: js.Array[
+    (weixinDashAppLib.wxNs.Behavior[js.Object, js.Object, js.Object]) | java.lang.String
+  ] */](): java.lang.String = js.native
+  def Component[D, M, P, B /* <: js.Array[
+    (weixinDashAppLib.wxNs.Behavior[js.Object, js.Object, js.Object]) | java.lang.String
+  ] */](
+    options: weixinDashAppLib.wxNs.ThisTypedComponentOptionsWithRecordProps[weixinDashAppLib.wxNs.Component[D, P, B], D, M, P, B]
   ): java.lang.String = js.native
   // #endregion
   // #region Page

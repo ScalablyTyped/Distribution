@@ -22,8 +22,8 @@ trait PriorityQueueOptions[T] extends js.Object {
     */
   var strategy: js.UndefOr[
     org.scalablytyped.runtime.Instantiable1[
-      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias js-priority-queue.js-priority-queue.PriorityQueue.PriorityQueueOptions<T> */ /* options */ js.UndefOr[
-        /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias js-priority-queue.js-priority-queue.PriorityQueue.PriorityQueueOptions<T> */ /* options */ js.Object
+      /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias js-priority-queue.js-priority-queue.PriorityQueue.PriorityQueueOptions<any> */ /* options */ js.UndefOr[
+        /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias js-priority-queue.js-priority-queue.PriorityQueue.PriorityQueueOptions<any> */ /* options */ js.Object
       ], 
       jsDashPriorityDashQueueLib.jsDashPriorityDashQueueMod.AbstractPriorityQueue[js.Object]
     ]

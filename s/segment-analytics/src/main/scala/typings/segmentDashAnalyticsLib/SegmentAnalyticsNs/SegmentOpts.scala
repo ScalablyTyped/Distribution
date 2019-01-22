@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 // Generic options object with integrations
 trait SegmentOpts extends js.Object {
   var anonymousId: js.UndefOr[java.lang.String] = js.undefined
+  var context: js.UndefOr[js.Object] = js.undefined
   var integrations: js.UndefOr[js.Any] = js.undefined
 }
 

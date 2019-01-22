@@ -390,7 +390,7 @@ object ^ extends js.Object {
   def ɵangular_packages_core_core_g(): java.lang.String = js.native
   def ɵangular_packages_core_core_h(
     ElementRefToken: org.scalablytyped.runtime.Instantiable1[
-      /* nativeElement */ js.Object, 
+      /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* nativeElement */ js.Any, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
     tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
@@ -399,7 +399,7 @@ object ^ extends js.Object {
   def ɵangular_packages_core_core_i[T](
     TemplateRefToken: org.scalablytyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object]],
     ElementRefToken: org.scalablytyped.runtime.Instantiable1[
-      /* nativeElement */ js.Object, 
+      /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* nativeElement */ js.Any, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
     hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,

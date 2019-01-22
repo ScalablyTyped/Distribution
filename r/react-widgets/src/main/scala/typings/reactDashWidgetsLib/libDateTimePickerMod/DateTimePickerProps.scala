@@ -37,6 +37,10 @@ trait DateTimePickerProps
     */
   var dateIcon: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.undefined
   /**
+    * Default current date
+    */
+  var defaultCurrentDate: js.UndefOr[stdLib.Date] = js.undefined
+  /**
     * The defaultOpen prop can be used to set an
     * initialization value for uncontrolled widgets.
     */

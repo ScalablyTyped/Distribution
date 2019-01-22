@@ -7,56 +7,52 @@ import scala.scalajs.js.annotation._
 
 object atMaterialDrawerLibStrings {
   @js.native
-  sealed trait `--mdc-temporary-drawer-opacity` extends js.Object
+  sealed trait `DOTmdc-drawer-app-content` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-drawer--persistent DOTmdc-drawer__drawer` extends js.Object
+  sealed trait `DOTmdc-drawer-scrim` extends js.Object
   
   @js.native
-  sealed trait `DOTmdc-drawer--temporary DOTmdc-drawer__drawer` extends js.Object
+  sealed trait `MDCDrawer:closed` extends js.Object
   
   @js.native
-  sealed trait `MDCPersistentDrawer:close` extends js.Object
+  sealed trait `MDCDrawer:opened` extends js.Object
   
   @js.native
-  sealed trait `MDCPersistentDrawer:open` extends js.Object
+  sealed trait `mdc-drawer` extends js.Object
   
   @js.native
-  sealed trait `MDCTemporaryDrawer:close` extends js.Object
+  sealed trait `mdc-drawer--animate` extends js.Object
   
   @js.native
-  sealed trait `MDCTemporaryDrawer:open` extends js.Object
+  sealed trait `mdc-drawer--closing` extends js.Object
   
   @js.native
-  sealed trait `a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex], [contenteditable]` extends js.Object
+  sealed trait `mdc-drawer--dismissible` extends js.Object
   
   @js.native
-  sealed trait `mdc-drawer--animating` extends js.Object
+  sealed trait `mdc-drawer--modal` extends js.Object
   
   @js.native
   sealed trait `mdc-drawer--open` extends js.Object
   
   @js.native
-  sealed trait `mdc-drawer--persistent` extends js.Object
+  sealed trait `mdc-drawer--opening` extends js.Object
   
   @js.native
-  sealed trait `mdc-drawer--temporary` extends js.Object
+  sealed trait onActivate extends js.Object
   
-  @js.native
-  sealed trait `mdc-drawer-scroll-lock` extends js.Object
-  
-  def `--mdc-temporary-drawer-opacity`: `--mdc-temporary-drawer-opacity` = "--mdc-temporary-drawer-opacity".asInstanceOf[`--mdc-temporary-drawer-opacity`]
-  def `DOTmdc-drawer--persistent DOTmdc-drawer__drawer`: `DOTmdc-drawer--persistent DOTmdc-drawer__drawer` = ".mdc-drawer--persistent .mdc-drawer__drawer".asInstanceOf[`DOTmdc-drawer--persistent DOTmdc-drawer__drawer`]
-  def `DOTmdc-drawer--temporary DOTmdc-drawer__drawer`: `DOTmdc-drawer--temporary DOTmdc-drawer__drawer` = ".mdc-drawer--temporary .mdc-drawer__drawer".asInstanceOf[`DOTmdc-drawer--temporary DOTmdc-drawer__drawer`]
-  def `MDCPersistentDrawer:close`: `MDCPersistentDrawer:close` = "MDCPersistentDrawer:close".asInstanceOf[`MDCPersistentDrawer:close`]
-  def `MDCPersistentDrawer:open`: `MDCPersistentDrawer:open` = "MDCPersistentDrawer:open".asInstanceOf[`MDCPersistentDrawer:open`]
-  def `MDCTemporaryDrawer:close`: `MDCTemporaryDrawer:close` = "MDCTemporaryDrawer:close".asInstanceOf[`MDCTemporaryDrawer:close`]
-  def `MDCTemporaryDrawer:open`: `MDCTemporaryDrawer:open` = "MDCTemporaryDrawer:open".asInstanceOf[`MDCTemporaryDrawer:open`]
-  def `a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex], [contenteditable]`: `a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex], [contenteditable]` = "a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex], [contenteditable]".asInstanceOf[`a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex], [contenteditable]`]
-  def `mdc-drawer--animating`: `mdc-drawer--animating` = "mdc-drawer--animating".asInstanceOf[`mdc-drawer--animating`]
+  def `DOTmdc-drawer-app-content`: `DOTmdc-drawer-app-content` = ".mdc-drawer-app-content".asInstanceOf[`DOTmdc-drawer-app-content`]
+  def `DOTmdc-drawer-scrim`: `DOTmdc-drawer-scrim` = ".mdc-drawer-scrim".asInstanceOf[`DOTmdc-drawer-scrim`]
+  def `MDCDrawer:closed`: `MDCDrawer:closed` = "MDCDrawer:closed".asInstanceOf[`MDCDrawer:closed`]
+  def `MDCDrawer:opened`: `MDCDrawer:opened` = "MDCDrawer:opened".asInstanceOf[`MDCDrawer:opened`]
+  def `mdc-drawer`: `mdc-drawer` = "mdc-drawer".asInstanceOf[`mdc-drawer`]
+  def `mdc-drawer--animate`: `mdc-drawer--animate` = "mdc-drawer--animate".asInstanceOf[`mdc-drawer--animate`]
+  def `mdc-drawer--closing`: `mdc-drawer--closing` = "mdc-drawer--closing".asInstanceOf[`mdc-drawer--closing`]
+  def `mdc-drawer--dismissible`: `mdc-drawer--dismissible` = "mdc-drawer--dismissible".asInstanceOf[`mdc-drawer--dismissible`]
+  def `mdc-drawer--modal`: `mdc-drawer--modal` = "mdc-drawer--modal".asInstanceOf[`mdc-drawer--modal`]
   def `mdc-drawer--open`: `mdc-drawer--open` = "mdc-drawer--open".asInstanceOf[`mdc-drawer--open`]
-  def `mdc-drawer--persistent`: `mdc-drawer--persistent` = "mdc-drawer--persistent".asInstanceOf[`mdc-drawer--persistent`]
-  def `mdc-drawer--temporary`: `mdc-drawer--temporary` = "mdc-drawer--temporary".asInstanceOf[`mdc-drawer--temporary`]
-  def `mdc-drawer-scroll-lock`: `mdc-drawer-scroll-lock` = "mdc-drawer-scroll-lock".asInstanceOf[`mdc-drawer-scroll-lock`]
+  def `mdc-drawer--opening`: `mdc-drawer--opening` = "mdc-drawer--opening".asInstanceOf[`mdc-drawer--opening`]
+  def onActivate: onActivate = "onActivate".asInstanceOf[onActivate]
 }
 

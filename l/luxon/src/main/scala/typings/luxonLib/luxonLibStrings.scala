@@ -142,6 +142,9 @@ object luxonLibStrings {
   sealed trait years extends js.Object
   
   @js.native
+  sealed trait zone extends js.Object
+  
+  @js.native
   sealed trait zoneName extends js.Object
   
   def `2-digit`: `2-digit` = "2-digit".asInstanceOf[`2-digit`]
@@ -189,6 +192,7 @@ object luxonLibStrings {
   def weeksInWeekYear: weeksInWeekYear = "weeksInWeekYear".asInstanceOf[weeksInWeekYear]
   def year: year = "year".asInstanceOf[year]
   def years: years = "years".asInstanceOf[years]
+  def zone: zone = "zone".asInstanceOf[zone]
   def zoneName: zoneName = "zoneName".asInstanceOf[zoneName]
 }
 

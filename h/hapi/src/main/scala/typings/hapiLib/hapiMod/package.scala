@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object hapiMod {
   type CachePolicyOptions[T] = catboxLib.catboxMod.PolicyOptionVariants[T] with hapiLib.Anon_Cache
+  type CacheProvider[T /* <: catboxLib.catboxMod.ClientOptions */] = catboxLib.catboxMod.EnginePrototype[js.Any] | hapiLib.Anon_Constructor[T]
   type DecorateName = java.lang.String | js.Symbol
   type DecorationMethod[T] = js.ThisFunction1[/* this */ T, /* repeated */ js.Any, js.Any]
   type Dependencies = java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String]

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa"
-version := "2.x-dt-20181231Z-90d701"
+version := "2.x-dt-20181231Z-582d71"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-5b430c",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-e9bff8",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-014b69",
-  "org.scalablytyped" %%% "cookies" % "0.7-dt-20180214Z-e4335a",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20180603Z-3859d1",
+  "org.scalablytyped" %%% "cookies" % "0.7-dt-20180214Z-d8af3e",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190108Z-fdb83d",
   "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-970fa5",
   "org.scalablytyped" %%% "http-assert" % "1.4-dt-20181225Z-8d272c",
   "org.scalablytyped" %%% "keygrip" % "1.0-dt-20180214Z-1f56f8",

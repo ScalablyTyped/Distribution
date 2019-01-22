@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Queue[T] extends js.Object {
   /**
+    * The name of the queue
+    */
+  var name: java.lang.String = js.native
+  /**
     * Creates a new job and adds it to the queue.
     * If the queue is empty the job will be executed directly,
     * otherwise it will be placed in the queue and executed as soon as possible.

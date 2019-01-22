@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "guardian__prosemirror-invisibles"
-version := "0.1-dt-20181213Z-56e173"
+version := "1.0-dt-20190109Z-a2f315"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

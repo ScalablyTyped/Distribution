@@ -11,7 +11,14 @@ trait Anon_AAVLTree extends js.Object {
     */
   var AVLTree: org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[
-      /* options */ adoneLib.adoneNs.collectionNs.INs.BinarySearchTreeNs.ConstructorOptions[js.Object, js.Object, adoneLib.adoneNs.collectionNs.AVLTree[js.Object, js.Object]]
+      /* options */ adoneLib.adoneNs.collectionNs.INs.BinarySearchTreeNs.ConstructorOptions[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any, 
+        adoneLib.adoneNs.collectionNs.AVLTree[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
+        ]
+      ]
     ], 
     adoneLib.adoneNs.collectionNs.AVLTree[js.Object, js.Object]
   ]
@@ -32,9 +39,12 @@ trait Anon_AAVLTree extends js.Object {
   var BinarySearchTree: org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[
       /* options */ adoneLib.adoneNs.collectionNs.INs.BinarySearchTreeNs.ConstructorOptions[
-        js.Object, 
-        js.Object, 
-        adoneLib.adoneNs.collectionNs.BinarySearchTree[js.Object, js.Object]
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any, 
+        adoneLib.adoneNs.collectionNs.BinarySearchTree[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
+        ]
       ]
     ], 
     adoneLib.adoneNs.collectionNs.BinarySearchTree[js.Object, js.Object]
@@ -53,16 +63,26 @@ trait Anon_AAVLTree extends js.Object {
     */
   var DefaultMap: org.scalablytyped.runtime.Instantiable2[
     /* factory */ js.UndefOr[
-      /* factory */ (js.Function1[/* key */ js.Object, js.Object]) | org.scalablytyped.runtime.StringDictionary[js.Object]
+      /* factory */ (js.Function1[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* key */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
+      ]) | (org.scalablytyped.runtime.StringDictionary[/* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any])
     ], 
-    /* iterable */ js.UndefOr[/* iterable */ nodeLib.Iterable[js.Tuple2[js.Object, js.Object]]], 
+    /* iterable */ js.UndefOr[
+      /* iterable */ nodeLib.Iterable[
+        js.Tuple2[
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
+        ]
+      ]
+    ], 
     adoneLib.adoneNs.collectionNs.DefaultMap[js.Object, js.Object]
   ]
   /**
     * Represents a faster LRU cache but with less functionality
     */
   var FastLRU: org.scalablytyped.runtime.Instantiable1[
-    /* options */ js.UndefOr[/* options */ Anon_Dispose[js.Object, js.Object]], 
+    /* options */ js.UndefOr[/* options */ Anon_DisposeKey], 
     adoneLib.adoneNs.collectionNs.FastLRU[js.Object, js.Object]
   ]
   val INs: Anon_BinarySearchTree
@@ -71,7 +91,10 @@ trait Anon_AAVLTree extends js.Object {
     */
   var LRU: org.scalablytyped.runtime.Instantiable1[
     /* options */ js.UndefOr[
-      /* options */ adoneLib.adoneNs.collectionNs.INs.LRUNs.ConstructorOptions[js.Object, js.Object]
+      /* options */ adoneLib.adoneNs.collectionNs.INs.LRUNs.ConstructorOptions[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
+      ]
     ], 
     adoneLib.adoneNs.collectionNs.LRU[js.Object, js.Object]
   ]
@@ -97,13 +120,29 @@ trait Anon_AAVLTree extends js.Object {
     * Represents a fully persistent red-black tree
     */
   var RedBlackTree: org.scalablytyped.runtime.Instantiable2[
-    /* compare */ js.UndefOr[/* compare */ js.Function2[/* a */ js.Object, /* b */ js.Object, scala.Double]], 
-    /* root */ js.UndefOr[/* root */ adoneLib.adoneNs.collectionNs.RedBlackTree[js.Object, js.Object]], 
+    /* compare */ js.UndefOr[
+      /* compare */ js.Function2[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* a */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* b */ js.Any, 
+        scala.Double
+      ]
+    ], 
+    /* root */ js.UndefOr[
+      /* root */ adoneLib.adoneNs.collectionNs.RedBlackTree[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam V */ js.Any
+      ]
+    ], 
     adoneLib.adoneNs.collectionNs.RedBlackTree[js.Object, js.Object]
   ]
   var RefcountedCache: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.collectionNs.RefcountedCache[js.Object]]
   var Set: org.scalablytyped.runtime.Instantiable1[
-    /* key */ js.UndefOr[/* key */ js.Function1[/* x */ js.Object, js.Any]], 
+    /* key */ js.UndefOr[
+      /* key */ js.Function1[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* x */ js.Any, 
+        js.Any
+      ]
+    ], 
     adoneLib.adoneNs.collectionNs.Set[js.Object]
   ]
   /**
@@ -115,7 +154,12 @@ trait Anon_AAVLTree extends js.Object {
     */
   var TimeMap: org.scalablytyped.runtime.Instantiable2[
     /* timeout */ js.UndefOr[/* timeout */ scala.Double], 
-    /* callback */ js.UndefOr[/* callback */ js.Function1[/* key */ js.Object, scala.Unit]], 
+    /* callback */ js.UndefOr[
+      /* callback */ js.Function1[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam K */ /* key */ js.Any, 
+        scala.Unit
+      ]
+    ], 
     adoneLib.adoneNs.collectionNs.TimeMap[js.Object, js.Object]
   ]
 }

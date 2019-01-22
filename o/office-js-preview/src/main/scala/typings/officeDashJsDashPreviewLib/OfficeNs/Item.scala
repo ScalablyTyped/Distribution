@@ -55,7 +55,7 @@ trait Item extends js.Object {
     *
     * Note: This member is not supported in Outlook for iOS or Outlook for Android.
     */
-  var dateTimeModifed: stdLib.Date = js.native
+  var dateTimeModified: stdLib.Date = js.native
   /**
     * Gets the type of item that an instance represents.
     *

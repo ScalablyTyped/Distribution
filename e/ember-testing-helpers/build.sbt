@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ember-testing-helpers"
-version := "0.0-unknown-dt-20180214Z-c71867"
+version := "0.0-unknown-dt-20180214Z-93b4da"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-f7f24f",
-  "org.scalablytyped" %%% "rsvp" % "4.0-dt-20180626Z-19ddc4",
+  "org.scalablytyped" %%% "rsvp" % "4.0-dt-20180626Z-40332a",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-b20ceb",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false

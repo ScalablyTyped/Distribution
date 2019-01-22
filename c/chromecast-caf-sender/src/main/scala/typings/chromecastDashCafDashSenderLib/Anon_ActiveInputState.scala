@@ -44,7 +44,7 @@ trait Anon_ActiveInputState extends js.Object {
   var RemotePlayerChangedEvent: org.scalablytyped.runtime.Instantiable3[
     /* type */ chromecastDashCafDashSenderLib.castNs.frameworkNs.RemotePlayerEventType, 
     /* field */ java.lang.String, 
-    /* value */ js.Object, 
+    /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* value */ js.Any, 
     chromecastDashCafDashSenderLib.castNs.frameworkNs.RemotePlayerChangedEvent[js.Object]
   ]
   var RemotePlayerController: org.scalablytyped.runtime.Instantiable1[

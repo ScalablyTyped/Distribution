@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "js-priority-queue"
-version := "0.0-unknown-dt-20180214Z-75e093"
+version := "0.0-unknown-dt-20180214Z-ec50b6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

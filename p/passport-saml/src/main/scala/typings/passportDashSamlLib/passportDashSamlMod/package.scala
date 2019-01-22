@@ -6,6 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object passportDashSamlMod {
+  type CertCallback = js.Function1[
+    /* callback */ js.Function2[
+      /* err */ nodeLib.Error | scala.Null, 
+      /* cert */ js.UndefOr[java.lang.String | js.Array[java.lang.String]], 
+      scala.Unit
+    ], 
+    scala.Unit
+  ]
   type VerifiedCallback = js.Function3[
     /* err */ nodeLib.Error | scala.Null, 
     /* user */ js.Object, 

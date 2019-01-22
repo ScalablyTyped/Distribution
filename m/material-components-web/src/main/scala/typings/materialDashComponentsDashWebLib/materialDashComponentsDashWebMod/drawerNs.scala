@@ -9,60 +9,40 @@ import scala.scalajs.js.annotation._
 @js.native
 object drawerNs extends js.Object {
   @js.native
-  class MDCPersistentDrawer ()
-    extends atMaterialDrawerLib.atMaterialDrawerMod.MDCPersistentDrawer
-  
-  @js.native
-  class MDCPersistentDrawerFoundation ()
-    extends atMaterialDrawerLib.atMaterialDrawerMod.MDCPersistentDrawerFoundation
-  
-  @js.native
-  class MDCTemporaryDrawer ()
-    extends atMaterialDrawerLib.atMaterialDrawerMod.MDCTemporaryDrawer
-  
-  @js.native
-  class MDCTemporaryDrawerFoundation ()
-    extends atMaterialDrawerLib.atMaterialDrawerMod.MDCTemporaryDrawerFoundation
-  
-  @js.native
-  object MDCPersistentDrawer extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialDrawerLib.persistentMod.MDCPersistentDrawer = js.native
+  class MDCDismissibleDrawerFoundation protected ()
+    extends atMaterialDrawerLib.atMaterialDrawerMod.MDCDismissibleDrawerFoundation {
+    def this(adapter: atMaterialDrawerLib.adapterMod.MDCDrawerAdapter) = this()
   }
   
   @js.native
-  object MDCPersistentDrawerFoundation extends js.Object {
-    val cssClasses: atMaterialDrawerLib.persistentConstantsMod.cssClasses = js.native
-    val defaultAdapter: atMaterialDrawerLib.slidableAdapterMod.MDCSlidableDrawerAdapter = js.native
-    val strings: atMaterialDrawerLib.persistentConstantsMod.strings = js.native
+  class MDCDrawer protected ()
+    extends atMaterialDrawerLib.atMaterialDrawerMod.MDCDrawer {
+    def this(args: js.Any*) = this()
   }
   
   @js.native
-  object MDCTemporaryDrawer extends js.Object {
-    def attachTo(root: stdLib.Element): atMaterialDrawerLib.temporaryMod.MDCTemporaryDrawer = js.native
+  class MDCModalDrawerFoundation ()
+    extends atMaterialDrawerLib.atMaterialDrawerMod.MDCModalDrawerFoundation
+  
+  @js.native
+  object MDCDismissibleDrawerFoundation extends js.Object {
+    val cssClasses: atMaterialDrawerLib.constantsMod.cssClasses = js.native
+    val defaultAdapter: atMaterialDrawerLib.adapterMod.MDCDrawerAdapter = js.native
+    val strings: atMaterialDrawerLib.constantsMod.strings = js.native
   }
   
   @js.native
-  object MDCTemporaryDrawerFoundation extends js.Object {
-    val cssClasses: atMaterialDrawerLib.temporaryConstantsMod.cssClasses = js.native
-    val defaultAdapter: atMaterialDrawerLib.slidableAdapterMod.MDCSlidableDrawerAdapter = js.native
-    val strings: atMaterialDrawerLib.temporaryConstantsMod.strings = js.native
+  object MDCDrawer extends js.Object {
+    def attachTo(root: stdLib.Element): atMaterialDrawerLib.atMaterialDrawerMod.MDCDrawer = js.native
   }
   
   @JSName("util")
   @js.native
   object utilNs extends js.Object {
-    def applyPassive(): scala.Boolean | atMaterialDrawerLib.Anon_Passive = js.native
-    def applyPassive(globalObj: stdLib.Window): scala.Boolean | atMaterialDrawerLib.Anon_Passive = js.native
-    def applyPassive(globalObj: stdLib.Window, forceRefresh: scala.Boolean): scala.Boolean | atMaterialDrawerLib.Anon_Passive = js.native
-    def getTransformPropertyName(): java.lang.String = js.native
-    def getTransformPropertyName(globalObj: stdLib.Window): java.lang.String = js.native
-    def getTransformPropertyName(globalObj: stdLib.Window, forceRefresh: scala.Boolean): java.lang.String = js.native
-    def remapEvent(eventName: java.lang.String): java.lang.String = js.native
-    def remapEvent(eventName: java.lang.String, globalObj: stdLib.Window): java.lang.String = js.native
-    def restoreElementTabState(el: stdLib.Element): scala.Unit = js.native
-    def saveElementTabState(el: stdLib.Element): scala.Unit = js.native
-    def supportsCssCustomProperties(): scala.Boolean = js.native
-    def supportsCssCustomProperties(globalObj: stdLib.Window): scala.Boolean = js.native
+    def createFocusTrapInstance(
+      surfaceEl: stdLib.Element,
+      focusTrapFactory: js.Function0[atMaterialDrawerLib.focusDashTrapMod.FocusTrap]
+    ): atMaterialDrawerLib.focusDashTrapMod.FocusTrap = js.native
   }
   
 }

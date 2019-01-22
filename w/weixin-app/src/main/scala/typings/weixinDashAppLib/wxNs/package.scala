@@ -9,12 +9,13 @@ package object wxNs {
   type AccelerometerChangeCallback = js.Function1[/* res */ AccelerometerData, scala.Unit]
   type AccelerometerOptions = BaseOptions[js.Any, js.Any]
   type ArrayPropsDefinition[T] = js.Array[java.lang.String]
+  type ArrayType[T /* <: js.Array[_] */] = js.Any
   type AuthModes = weixinDashAppLib.weixinDashAppLibStrings.fingerPrint | weixinDashAppLib.weixinDashAppLibStrings.facial | weixinDashAppLib.weixinDashAppLibStrings.speech
   type BuiltInEvent[T /* <: EventType */, Detail] = BaseEvent[T, Detail]
   type CameraDevice = weixinDashAppLib.weixinDashAppLibStrings.front | weixinDashAppLib.weixinDashAppLibStrings.back
   type CheckSessionOption = BaseOptions[js.Any, js.Any]
   // CombinedInstance models the `this`, i.e. instance type for (user defined) component
-  type CombinedInstance[Instance /* <: Component[Data, Props] */, Data, Methods, Props] = Methods with Instance
+  type CombinedInstance[Instance /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = Methods with Instance with UnboxBehaviorsMethods[Behaviors]
   type CompassChangeCallback = js.Function1[/* res */ CompassData, scala.Unit]
   type CompassOptions = BaseOptions[js.Any, js.Any]
   type CustomEvent[T /* <: java.lang.String */, Detail] = BaseEvent[T, Detail]
@@ -63,7 +64,7 @@ package object wxNs {
   type Scope = weixinDashAppLib.weixinDashAppLibStrings.scopeDOTuserInfo | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTuserLocation | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTaddress | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTinvoiceTitle | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTinvoice | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTwerun | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTrecord | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTwritePhotosAlbum | weixinDashAppLib.weixinDashAppLibStrings.scopeDOTcamera
   type ScrollEvent = BuiltInEvent[weixinDashAppLib.weixinDashAppLibStrings.scroll, js.Object]
   type TapEvent = TouchEvent[weixinDashAppLib.weixinDashAppLibStrings.tap]
-  type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props] */, Data, Methods, Props] = js.Object with (ComponentOptions[V, Data, Methods, Props]) with (stdLib.ThisType[CombinedInstance[V, Data, Methods, stdLib.Readonly[Props]]])
+  type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props, Behaviors] */, Data, Methods, Props, Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = js.Object with (ComponentOptions[V, Data, Methods, Props, Behaviors]) with (stdLib.ThisType[CombinedInstance[V, Data, Methods, stdLib.Readonly[Props], Behaviors]])
   // 界面-----动画
   type TimingFunction = weixinDashAppLib.weixinDashAppLibStrings.linear | weixinDashAppLib.weixinDashAppLibStrings.ease | weixinDashAppLib.weixinDashAppLibStrings.`ease-in` | weixinDashAppLib.weixinDashAppLibStrings.`ease-in-out` | weixinDashAppLib.weixinDashAppLibStrings.`ease-out` | weixinDashAppLib.weixinDashAppLibStrings.`step-start` | weixinDashAppLib.weixinDashAppLibStrings.`step-end`
   type TouchCancelEvent = TouchEvent[weixinDashAppLib.weixinDashAppLibStrings.touchcancel]
@@ -73,6 +74,13 @@ package object wxNs {
   type TouchMoveEvent = TouchEvent[weixinDashAppLib.weixinDashAppLibStrings.touchmove]
   type TouchStartEvent = TouchEvent[weixinDashAppLib.weixinDashAppLibStrings.touchstart]
   type TransitionEventType = weixinDashAppLib.weixinDashAppLibStrings.transitionend | weixinDashAppLib.weixinDashAppLibStrings.animationstart | weixinDashAppLib.weixinDashAppLibStrings.animationiteration | weixinDashAppLib.weixinDashAppLibStrings.animationend
+  type UnboxBehaviorData[T] = js.Object | (/* import warning: ImportType.apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_DATA'] */ js.Any)
+  type UnboxBehaviorMethod[T] = js.Object | (/* import warning: ImportType.apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_METHODS'] */ js.Any)
+  type UnboxBehaviorProps[T] = js.Object | (/* import warning: ImportType.apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_PROPS'] */ js.Any)
+  type UnboxBehaviorsData[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = UnionToIntersection[UnboxBehaviorData[ArrayType[Behaviors]]]
+  type UnboxBehaviorsMethods[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = UnionToIntersection[UnboxBehaviorMethod[ArrayType[Behaviors]]]
+  type UnboxBehaviorsProps[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = UnionToIntersection[UnboxBehaviorProps[ArrayType[Behaviors]]]
+  type UnionToIntersection[U] = js.Any
   type VideoSourceType = weixinDashAppLib.weixinDashAppLibStrings.album | weixinDashAppLib.weixinDashAppLibStrings.camera
   // 设备-----网络状态
   type networkType = weixinDashAppLib.weixinDashAppLibStrings.`2g` | weixinDashAppLib.weixinDashAppLibStrings.`3g` | weixinDashAppLib.weixinDashAppLibStrings.`4g` | weixinDashAppLib.weixinDashAppLibStrings.wifi | weixinDashAppLib.weixinDashAppLibStrings.unknown | weixinDashAppLib.weixinDashAppLibStrings.none

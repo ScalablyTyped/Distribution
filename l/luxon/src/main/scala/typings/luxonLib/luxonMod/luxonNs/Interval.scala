@@ -28,6 +28,7 @@ trait Interval extends js.Object {
   def isEmpty(): scala.Boolean = js.native
   def length(): scala.Double = js.native
   def length(unit: DurationUnit): scala.Double = js.native
+  def mapEndpoints(cb: js.Function1[/* d */ DateTime, DateTime]): Interval = js.native
   def overlaps(other: Interval): scala.Boolean = js.native
   def set(values: IntervalObject): Interval = js.native
   def splitAt(dateTimes: DateTime*): js.Array[Interval] = js.native

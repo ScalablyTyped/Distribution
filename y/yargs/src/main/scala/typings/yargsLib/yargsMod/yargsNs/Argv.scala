@@ -284,7 +284,7 @@ trait Argv[T] extends js.Object {
     * 'positional' should be called in a command's builder function, and is not
     * available on the top-level yargs instance. If so, it will throw an error.
     */
-  def positional(key: java.lang.String, opt: PositionalOptions): Argv[T] = js.native
+  def positional[K /* <: java.lang.String */, O /* <: PositionalOptions */](key: K, opt: O): Argv[(Omit[T, K]) with yargsLib.yargsLibStrings.Argv with js.Any] = js.native
   def recommendCommands(): Argv[T] = js.native
   def require(key: java.lang.String, msg: java.lang.String): Argv[T] = js.native
   def require(key: java.lang.String, required: scala.Boolean): Argv[T] = js.native

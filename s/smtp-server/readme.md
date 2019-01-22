@@ -1,5 +1,5 @@
 ```
-// Type definitions for smtp-server 3.4
+// Type definitions for smtp-server 3.5
 // Project: https://github.com/nodemailer/smtp-server
 // Definitions by: markisme <https://github.com/markisme>
 //                 taisiias <https://github.com/Taisiias>

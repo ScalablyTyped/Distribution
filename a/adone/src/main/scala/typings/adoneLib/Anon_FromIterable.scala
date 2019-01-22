@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_FromIterable
   extends org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.collectionNs.PriorityQueue[js.Object]]
      with org.scalablytyped.runtime.Instantiable1[
-      /* options */ adoneLib.adoneNs.collectionNs.INs.PriorityQueueNs.ConstructorOptions[js.Object], 
+      /* options */ adoneLib.adoneNs.collectionNs.INs.PriorityQueueNs.ConstructorOptions[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
       adoneLib.adoneNs.collectionNs.PriorityQueue[js.Object]
     ] {
   /**

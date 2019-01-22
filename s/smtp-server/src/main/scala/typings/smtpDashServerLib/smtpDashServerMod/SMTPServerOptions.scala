@@ -143,7 +143,7 @@ trait SMTPServerOptions
     */
   var onData: js.UndefOr[
     js.Function3[
-      /* stream */ nodeLib.streamMod.Readable, 
+      /* stream */ SMTPServerDataStream, 
       /* session */ SMTPServerSession, 
       /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
       scala.Unit

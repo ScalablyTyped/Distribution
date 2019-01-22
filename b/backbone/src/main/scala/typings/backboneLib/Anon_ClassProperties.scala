@@ -11,12 +11,16 @@ trait Anon_ClassProperties
       backboneLib.backboneMod.BackboneNs.Collection[backboneLib.backboneMod.BackboneNs.Model]
     ]
      with org.scalablytyped.runtime.Instantiable2[
-      (/* models */ js.Array[backboneLib.backboneMod.BackboneNs.Model]) | (/* models */ js.Array[js.Object]), 
+      (/* models */ js.Array[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam TModel */ js.Any
+      ]) | (/* models */ js.Array[js.Object]), 
       /* options */ js.Any, 
       backboneLib.backboneMod.BackboneNs.Collection[backboneLib.backboneMod.BackboneNs.Model]
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* models */ js.Array[backboneLib.backboneMod.BackboneNs.Model]) | (/* models */ js.Array[js.Object]), 
+      (/* models */ js.Array[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam TModel */ js.Any
+      ]) | (/* models */ js.Array[js.Object]), 
       backboneLib.backboneMod.BackboneNs.Collection[backboneLib.backboneMod.BackboneNs.Model]
     ] {
   /**

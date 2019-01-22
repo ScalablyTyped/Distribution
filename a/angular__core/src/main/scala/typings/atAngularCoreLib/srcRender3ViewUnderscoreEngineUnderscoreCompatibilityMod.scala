@@ -13,7 +13,7 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityMod extends js.Objec
       atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef
     ],
     ElementRefToken: org.scalablytyped.runtime.Instantiable1[
-      /* nativeElement */ js.Object, 
+      /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* nativeElement */ js.Any, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
     hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TContainerNode,
@@ -24,7 +24,7 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityMod extends js.Objec
       atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef
     ],
     ElementRefToken: org.scalablytyped.runtime.Instantiable1[
-      /* nativeElement */ js.Object, 
+      /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* nativeElement */ js.Any, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
     hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TElementContainerNode,
@@ -35,7 +35,7 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityMod extends js.Objec
       atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef
     ],
     ElementRefToken: org.scalablytyped.runtime.Instantiable1[
-      /* nativeElement */ js.Object, 
+      /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* nativeElement */ js.Any, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
     hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TElementNode,
@@ -43,7 +43,7 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityMod extends js.Objec
   ): atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef = js.native
   def createElementRef(
     ElementRefToken: org.scalablytyped.runtime.Instantiable1[
-      /* nativeElement */ js.Object, 
+      /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* nativeElement */ js.Any, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
     tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
@@ -52,7 +52,7 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityMod extends js.Objec
   def createTemplateRef[T](
     TemplateRefToken: org.scalablytyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object]],
     ElementRefToken: org.scalablytyped.runtime.Instantiable1[
-      /* nativeElement */ js.Object, 
+      /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* nativeElement */ js.Any, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ],
     hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
@@ -66,7 +66,7 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityMod extends js.Objec
   def injectChangeDetectorRef(): atAngularCoreLib.srcChangeUnderscoreDetectionChangeUnderscoreDetectorUnderscoreRefMod.ChangeDetectorRef = js.native
   def injectElementRef(
     ElementRefToken: org.scalablytyped.runtime.Instantiable1[
-      /* nativeElement */ js.Object, 
+      /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* nativeElement */ js.Any, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ]
   ): atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[_] = js.native
@@ -74,7 +74,7 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityMod extends js.Objec
   def injectTemplateRef[T](
     TemplateRefToken: org.scalablytyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object]],
     ElementRefToken: org.scalablytyped.runtime.Instantiable1[
-      /* nativeElement */ js.Object, 
+      /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* nativeElement */ js.Any, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ]
   ): atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[T] | scala.Null = js.native
@@ -83,7 +83,7 @@ object srcRender3ViewUnderscoreEngineUnderscoreCompatibilityMod extends js.Objec
       atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef
     ],
     ElementRefToken: org.scalablytyped.runtime.Instantiable1[
-      /* nativeElement */ js.Object, 
+      /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* nativeElement */ js.Any, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
     ]
   ): atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef = js.native

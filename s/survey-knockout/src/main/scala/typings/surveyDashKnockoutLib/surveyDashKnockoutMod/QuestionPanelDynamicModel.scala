@@ -103,7 +103,7 @@ class QuestionPanelDynamicModel protected ()
     * @see renderMode
     */
   val isRenderModeList: scala.Boolean = js.native
-  val items: js.Array[QuestionPanelDynamicItem] = js.native
+  val items: js.Array[ISurveyData] = js.native
   /**
     * The duplication value error text. Set it to show the text different from the default.
     * @see keyName
@@ -248,14 +248,13 @@ class QuestionPanelDynamicModel protected ()
     */
   def addPanelUI(): PanelModel = js.native
   /* protected */ def createAndSetupNewPanelObject(): PanelModel = js.native
-  /* protected */ def createNewItem(): QuestionPanelDynamicItem = js.native
   /* protected */ def createNewPanel(): PanelModel = js.native
   /* protected */ def createNewPanelObject(): PanelModel = js.native
   def currentIndexChangedCallback(): scala.Unit = js.native
   /* CompleteClass */
-  override def getItemIndex(item: QuestionPanelDynamicItem): scala.Double = js.native
+  override def getItemIndex(item: ISurveyData): scala.Double = js.native
   /* CompleteClass */
-  override def getPanelItemData(item: QuestionPanelDynamicItem): js.Any = js.native
+  override def getPanelItemData(item: ISurveyData): js.Any = js.native
   /* CompleteClass */
   override def getSurvey(): ISurvey = js.native
   /**
@@ -287,7 +286,7 @@ class QuestionPanelDynamicModel protected ()
   def renderModeChangedCallback(): scala.Unit = js.native
   /* protected */ def runPanelsCondition(values: HashTable[_], properties: HashTable[_]): scala.Unit = js.native
   /* CompleteClass */
-  override def setPanelItemData(item: QuestionPanelDynamicItem, name: java.lang.String, `val`: js.Any): js.Any = js.native
+  override def setPanelItemData(item: ISurveyData, name: java.lang.String, `val`: js.Any): js.Any = js.native
 }
 
 @JSImport("survey-knockout", "QuestionPanelDynamicModel")

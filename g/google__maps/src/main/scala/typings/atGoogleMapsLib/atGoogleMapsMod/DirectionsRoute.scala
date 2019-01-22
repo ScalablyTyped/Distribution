@@ -34,7 +34,7 @@ trait DirectionsRoute extends js.Object {
     * contains a single `points` object that holds an encoded polyline representation of the route.
     * This polyline is an approximate (smoothed) path of the resulting directions.
     */
-  var overview_polyline: java.lang.String
+  var overview_polyline: atGoogleMapsLib.Anon_Points
   /** contains a short textual description for the route, suitable for naming and disambiguating the route from alternatives. */
   var summary: java.lang.String
   /** contains an array of warnings to be displayed when showing these directions. You must handle and display these warnings yourself. */

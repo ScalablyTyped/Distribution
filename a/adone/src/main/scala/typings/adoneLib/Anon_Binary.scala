@@ -22,7 +22,7 @@ trait Anon_Binary extends js.Object {
   val Timestamp: adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Scalar[stdLib.Date]
   var Type: org.scalablytyped.runtime.Instantiable2[
     /* tag */ java.lang.String, 
-    /* options */ adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.TypeOptions[js.Object], 
+    /* options */ adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.TypeOptions[/* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any], 
     adoneLib.adoneNs.dataNs.yamlNs.typeNs.Type[js.Object]
   ]
   val jsNs: Anon_ArgsFunction

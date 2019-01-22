@@ -139,7 +139,7 @@ trait Scope
   def intercept(uri: stdLib.RegExp, method: java.lang.String, requestBody: stdLib.RegExp): Interceptor = js.native
   def intercept(uri: stdLib.RegExp, method: java.lang.String, requestBody: stdLib.RegExp, options: Options): Interceptor = js.native
   def isDone(): scala.Boolean = js.native
-  def log(out: js.Function0[scala.Unit]): this.type = js.native
+  def log(out: js.Function2[/* message */ js.Any, /* repeated */ js.Any, scala.Unit]): this.type = js.native
   def matchHeader(name: java.lang.String, value: java.lang.String): this.type = js.native
   def matchHeader(name: java.lang.String, value: nockLib.Anon_Value): this.type = js.native
   def matchHeader(name: java.lang.String, value: stdLib.RegExp): this.type = js.native

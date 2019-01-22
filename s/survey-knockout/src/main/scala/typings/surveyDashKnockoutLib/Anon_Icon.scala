@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 trait Anon_Icon extends js.Object {
   var icon: java.lang.String
   var item: java.lang.String
+  var locationBottom: java.lang.String
+  var locationTop: java.lang.String
   var root: java.lang.String
 }
 

@@ -334,6 +334,13 @@ object ProjectTaskFields extends js.Object {
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectTaskFields
   
   /**
+    * The start date for the baseline task.
+    */
+  @js.native
+  sealed trait Baseline3Start
+    extends officeDashJsDashPreviewLib.OfficeNs.ProjectTaskFields
+  
+  /**
     * The total person-hours scheduled for the baseline task, in minutes.
     */
   @js.native
@@ -786,13 +793,6 @@ object ProjectTaskFields extends js.Object {
     */
   @js.native
   sealed trait BaselineWork
-    extends officeDashJsDashPreviewLib.OfficeNs.ProjectTaskFields
-  
-  /**
-    * The start date for the baseline task.
-    */
-  @js.native
-  sealed trait Basline3Start
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectTaskFields
   
   /**
@@ -2065,6 +2065,7 @@ object ProjectTaskFields extends js.Object {
   val Baseline3Finish: Baseline3Finish with java.lang.String = js.native
   val Baseline3FixedCost: Baseline3FixedCost with java.lang.String = js.native
   val Baseline3FixedCostAccrual: Baseline3FixedCostAccrual with java.lang.String = js.native
+  val Baseline3Start: Baseline3Start with java.lang.String = js.native
   val Baseline3Work: Baseline3Work with java.lang.String = js.native
   val Baseline4BudgetCost: Baseline4BudgetCost with java.lang.String = js.native
   val Baseline4BudgetWork: Baseline4BudgetWork with java.lang.String = js.native
@@ -2129,7 +2130,6 @@ object ProjectTaskFields extends js.Object {
   val BaselineFixedCostAccrual: BaselineFixedCostAccrual with java.lang.String = js.native
   val BaselineStart: BaselineStart with java.lang.String = js.native
   val BaselineWork: BaselineWork with java.lang.String = js.native
-  val Basline3Start: Basline3Start with java.lang.String = js.native
   val BudgetCost: BudgetCost with java.lang.String = js.native
   val BudgetFixedCost: BudgetFixedCost with java.lang.String = js.native
   val BudgetFixedWork: BudgetFixedWork with java.lang.String = js.native

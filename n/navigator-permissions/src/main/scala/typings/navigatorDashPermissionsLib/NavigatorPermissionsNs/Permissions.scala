@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   *
   * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Permissions}
   */
+@js.native
 trait Permissions extends js.Object {
   /**
     * The `Permissions.query()` method of the `Permissions` interface returns
@@ -36,21 +37,22 @@ trait Permissions extends js.Object {
     ]) | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`background-sync`] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.camera] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`clipboard-read`] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`clipboard-write`] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.geolocation] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.gyroscope] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.magnetometer] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.microphone] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.notifications] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`payment-handler`] | (PermissionDescriptor[
       navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`persistent-storage`
     ]) | MidiPermissionDescriptor | PushPermissionDescriptor
-  ): js.Promise[PermissionStatus]
+  ): js.Promise[PermissionStatus] = js.native
+  def revoke(permissionDescriptor: MidiPermissionDescriptor): js.Promise[PermissionStatus] = js.native
+  def revoke(permissionDescriptor: PushPermissionDescriptor): js.Promise[PermissionStatus] = js.native
   /**
     * The `Permissions.revoke()` method of the `Permissions` interface reverts a
     * currently set permission back to its default state, which is usually `prompt`.
     *
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/API/Permissions/revoke}
     */
-  def revoke(
-    permissionDescriptor: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.accelerometer] | (PermissionDescriptor[
-      navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`accessibility-events`
-    ]) | (PermissionDescriptor[
-      navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`ambient-light-sensor`
-    ]) | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`background-sync`] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.camera] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`clipboard-read`] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`clipboard-write`] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.geolocation] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.gyroscope] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.magnetometer] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.microphone] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.notifications] | PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`payment-handler`] | (PermissionDescriptor[
-      navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`persistent-storage`
-    ]) | MidiPermissionDescriptor | PushPermissionDescriptor
-  ): js.Promise[PermissionStatus]
+  @JSName("revoke")
+  def revoke_geolocation(
+    permissionDescriptor: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.geolocation]
+  ): js.Promise[PermissionStatus] = js.native
+  @JSName("revoke")
+  def revoke_notifications(
+    permissionDescriptor: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.notifications]
+  ): js.Promise[PermissionStatus] = js.native
 }
 

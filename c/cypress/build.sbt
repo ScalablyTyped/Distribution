@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cypress"
-version := "3.1.4-8d4657"
+version := "3.1.4-dee0f8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-ec2bbb",
   "org.scalablytyped" %%% "blob-util" % "1.3-dt-20180214Z-41858b",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-a8dc26",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-232ecf",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-ac9f89",
   "org.scalablytyped" %%% "chai" % "4.1-dt-20181019Z-48eeb6",
   "org.scalablytyped" %%% "chai-jquery" % "1.1.1-dt-20181023Z-9bf914",

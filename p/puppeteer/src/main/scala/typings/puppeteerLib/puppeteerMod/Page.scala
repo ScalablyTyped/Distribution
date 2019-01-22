@@ -126,6 +126,18 @@ trait Page
     * @param handler The callback function.
     */
   @JSName("on")
+  def on_domcontentloaded(
+    eventName: puppeteerLib.puppeteerLibStrings.domcontentloaded,
+    handler: js.Function2[/* e */ scala.Nothing, /* repeated */ js.Any, scala.Unit]
+  ): this.type = js.native
+  /**
+    * Adds the listener function to the end of the listeners array for the event named `eventName`.
+    * No checks are made to see if the listener has already been added. Multiple calls passing the same combination of
+    * `eventName` and listener will result in the listener being added, and called, multiple times.
+    * @param event The name of the event.
+    * @param handler The callback function.
+    */
+  @JSName("on")
   def on_error(
     eventName: puppeteerLib.puppeteerLibStrings.error,
     handler: js.Function2[/* e */ nodeLib.Error, /* repeated */ js.Any, scala.Unit]
@@ -306,6 +318,17 @@ trait Page
   def once_dialog(
     eventName: puppeteerLib.puppeteerLibStrings.dialog,
     handler: js.Function2[/* e */ Dialog, /* repeated */ js.Any, scala.Unit]
+  ): this.type = js.native
+  /**
+    * Adds a one time listener function for the event named `eventName`.
+    * The next time `eventName` is triggered, this listener is removed and then invoked.
+    * @param event The name of the event.
+    * @param handler The callback function.
+    */
+  @JSName("once")
+  def once_domcontentloaded(
+    eventName: puppeteerLib.puppeteerLibStrings.domcontentloaded,
+    handler: js.Function2[/* e */ scala.Nothing, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   /**
     * Adds a one time listener function for the event named `eventName`.

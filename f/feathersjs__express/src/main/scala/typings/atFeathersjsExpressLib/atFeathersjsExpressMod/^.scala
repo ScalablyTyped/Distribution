@@ -15,7 +15,7 @@ object ^ extends js.Object {
   var json: expressLib.Anon_Options = js.native
   val original: (js.Function0[
     expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Express
-  ]) with atFeathersjsExpressLib.Anon_E = js.native
+  ]) with atFeathersjsExpressLib.Anon_Application = js.native
   val rest: atFeathersjsExpressLib.Anon_Formatter = js.native
   /**
     * This is a built-in middleware function in Express. It serves static files and is based on serve-static.

@@ -7,6 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait RouteOptionsResponse extends js.Object {
   /**
+    * The default HTTP status code used to set a response error when the request is closed or aborted before the
+    * response is fully transmitted.
+    * Value can be any integer greater or equal to 400.
+    * The default value 499 is based on the non-standard nginx "CLIENT CLOSED REQUEST" error.
+    * The value is only used for logging as the request has already ended.
+    * @default 499
+    */
+  var disconnectStatusCode: js.UndefOr[scala.Double] = js.undefined
+  /**
     * Default value: 200.
     * The default HTTP status code when the payload is considered empty. Value can be 200 or 204. Note that a 200 status code is converted to a 204 only at the time of response transmission (the
     * response status code will remain 200 throughout the request lifecycle unless manually set).

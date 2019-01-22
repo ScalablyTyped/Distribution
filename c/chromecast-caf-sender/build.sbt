@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "chromecast-caf-sender"
-version := "1.0-dt-20180921Z-dc96ef"
+version := "1.0-dt-20180921Z-dc66a9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

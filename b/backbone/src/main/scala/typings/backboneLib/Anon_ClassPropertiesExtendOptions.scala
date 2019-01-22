@@ -11,7 +11,9 @@ trait Anon_ClassPropertiesExtendOptions
       backboneLib.backboneMod.BackboneNs.View[backboneLib.backboneMod.BackboneNs.Model]
     ]
      with org.scalablytyped.runtime.Instantiable1[
-      /* options */ backboneLib.backboneMod.BackboneNs.ViewOptions[backboneLib.backboneMod.BackboneNs.Model], 
+      /* options */ backboneLib.backboneMod.BackboneNs.ViewOptions[
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam TModel */ js.Any
+      ], 
       backboneLib.backboneMod.BackboneNs.View[backboneLib.backboneMod.BackboneNs.Model]
     ] {
   /**

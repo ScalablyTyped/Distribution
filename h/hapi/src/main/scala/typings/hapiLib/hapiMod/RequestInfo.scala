@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 trait RequestInfo extends js.Object {
   /** the request preferred encoding. */
   var acceptEncoding: java.lang.String
+  /** request processing completion timestamp (0 is still processing). */
+  var completed: scala.Double
   /** if CORS is enabled for the route, contains the following: */
   var cors: hapiLib.Anon_IsOriginMatch
   /** content of the HTTP 'Host' header (e.g. 'example.com:8080'). */

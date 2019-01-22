@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "segment-analytics"
-version := "0.0-unknown-dt-20190111Z-d3c394"
+version := "0.0-unknown-dt-20190122Z-8c75a9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
