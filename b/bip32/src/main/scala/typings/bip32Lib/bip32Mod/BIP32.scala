@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BIP32 protected () extends js.Object {
   protected def this(d: nodeLib.Buffer, Q: nodeLib.Buffer, chainCode: nodeLib.Buffer, network: NetworkType) = this()
+  var chainCode: nodeLib.Buffer = js.native
   var depth: scala.Double = js.native
   var fingerprint: nodeLib.Buffer = js.native
   var identifier: nodeLib.Buffer = js.native

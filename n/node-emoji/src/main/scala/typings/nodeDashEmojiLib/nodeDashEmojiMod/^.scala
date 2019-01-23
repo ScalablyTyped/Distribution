@@ -23,9 +23,16 @@ object ^ extends js.Object {
   def get(emoji: java.lang.String): java.lang.String = js.native
   def hasEmoji(str: java.lang.String): scala.Boolean = js.native
   def random(): nodeDashEmojiLib.nodeDashEmojiMod.Emoji = js.native
+  def replace(str: java.lang.String, replacement: java.lang.String): java.lang.String = js.native
+  def replace(str: java.lang.String, replacement: java.lang.String, cleanSpaces: scala.Boolean): java.lang.String = js.native
   def replace(
     str: java.lang.String,
-    callback: js.Function1[/* emoji */ nodeDashEmojiLib.nodeDashEmojiMod.Emoji, java.lang.String]
+    replacement: js.Function1[/* emoji */ nodeDashEmojiLib.nodeDashEmojiMod.Emoji, java.lang.String]
+  ): java.lang.String = js.native
+  def replace(
+    str: java.lang.String,
+    replacement: js.Function1[/* emoji */ nodeDashEmojiLib.nodeDashEmojiMod.Emoji, java.lang.String],
+    cleanSpaces: scala.Boolean
   ): java.lang.String = js.native
   def search(searchTerm: java.lang.String): js.Array[nodeDashEmojiLib.nodeDashEmojiMod.Emoji] = js.native
   def strip(str: java.lang.String): java.lang.String = js.native

@@ -7,37 +7,16 @@ import scala.scalajs.js.annotation._
 
 object inboxsdkLibStrings {
   @js.native
-  sealed trait ALL_MAIL extends js.Object
-  
-  @js.native
-  sealed trait ANY_LIST extends js.Object
-  
-  @js.native
   sealed trait CHAT extends js.Object
   
   @js.native
-  sealed trait CHATS extends js.Object
-  
-  @js.native
   sealed trait COLLAPSED extends js.Object
-  
-  @js.native
-  sealed trait CONTACT extends js.Object
-  
-  @js.native
-  sealed trait CONTACTS extends js.Object
   
   @js.native
   sealed trait CREATE extends js.Object
   
   @js.native
   sealed trait CUSTOM extends js.Object
-  
-  @js.native
-  sealed trait DONE extends js.Object
-  
-  @js.native
-  sealed trait DRAFTS extends js.Object
   
   @js.native
   sealed trait DROPDOWN_BUTTON extends js.Object
@@ -52,16 +31,7 @@ object inboxsdkLibStrings {
   sealed trait ICON_BUTTON extends js.Object
   
   @js.native
-  sealed trait IMPORTANT extends js.Object
-  
-  @js.native
-  sealed trait INBOX extends js.Object
-  
-  @js.native
   sealed trait INBOX_STATE extends js.Object
-  
-  @js.native
-  sealed trait LABEL extends js.Object
   
   @js.native
   sealed trait LINK extends js.Object
@@ -91,13 +61,7 @@ object inboxsdkLibStrings {
   sealed trait PRIMARY_ACTION extends js.Object
   
   @js.native
-  sealed trait REMINDERS extends js.Object
-  
-  @js.native
   sealed trait ROW extends js.Object
-  
-  @js.native
-  sealed trait SEARCH extends js.Object
   
   @js.native
   sealed trait SECONDARY_ACTION extends js.Object
@@ -106,25 +70,10 @@ object inboxsdkLibStrings {
   sealed trait SEND_ACTION extends js.Object
   
   @js.native
-  sealed trait SENT extends js.Object
-  
-  @js.native
   sealed trait SETTINGS extends js.Object
   
   @js.native
-  sealed trait SNOOZED extends js.Object
-  
-  @js.native
-  sealed trait SPAM extends js.Object
-  
-  @js.native
-  sealed trait STARRED extends js.Object
-  
-  @js.native
   sealed trait THREAD extends js.Object
-  
-  @js.native
-  sealed trait TRASH extends js.Object
   
   @js.native
   sealed trait UNKNOWN extends js.Object
@@ -231,25 +180,15 @@ object inboxsdkLibStrings {
   @js.native
   sealed trait viewStateChange extends js.Object
   
-  def ALL_MAIL: ALL_MAIL = "ALL_MAIL".asInstanceOf[ALL_MAIL]
-  def ANY_LIST: ANY_LIST = "ANY_LIST".asInstanceOf[ANY_LIST]
   def CHAT: CHAT = "CHAT".asInstanceOf[CHAT]
-  def CHATS: CHATS = "CHATS".asInstanceOf[CHATS]
   def COLLAPSED: COLLAPSED = "COLLAPSED".asInstanceOf[COLLAPSED]
-  def CONTACT: CONTACT = "CONTACT".asInstanceOf[CONTACT]
-  def CONTACTS: CONTACTS = "CONTACTS".asInstanceOf[CONTACTS]
   def CREATE: CREATE = "CREATE".asInstanceOf[CREATE]
   def CUSTOM: CUSTOM = "CUSTOM".asInstanceOf[CUSTOM]
-  def DONE: DONE = "DONE".asInstanceOf[DONE]
-  def DRAFTS: DRAFTS = "DRAFTS".asInstanceOf[DRAFTS]
   def DROPDOWN_BUTTON: DROPDOWN_BUTTON = "DROPDOWN_BUTTON".asInstanceOf[DROPDOWN_BUTTON]
   def EXPANDED: EXPANDED = "EXPANDED".asInstanceOf[EXPANDED]
   def HIDDEN: HIDDEN = "HIDDEN".asInstanceOf[HIDDEN]
   def ICON_BUTTON: ICON_BUTTON = "ICON_BUTTON".asInstanceOf[ICON_BUTTON]
-  def IMPORTANT: IMPORTANT = "IMPORTANT".asInstanceOf[IMPORTANT]
-  def INBOX: INBOX = "INBOX".asInstanceOf[INBOX]
   def INBOX_STATE: INBOX_STATE = "INBOX_STATE".asInstanceOf[INBOX_STATE]
-  def LABEL: LABEL = "LABEL".asInstanceOf[LABEL]
   def LINK: LINK = "LINK".asInstanceOf[LINK]
   def LIST: LIST = "LIST".asInstanceOf[LIST]
   def MANAGE: MANAGE = "MANAGE".asInstanceOf[MANAGE]
@@ -259,18 +198,11 @@ object inboxsdkLibStrings {
   def NAVIGATION: NAVIGATION = "NAVIGATION".asInstanceOf[NAVIGATION]
   def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
   def PRIMARY_ACTION: PRIMARY_ACTION = "PRIMARY_ACTION".asInstanceOf[PRIMARY_ACTION]
-  def REMINDERS: REMINDERS = "REMINDERS".asInstanceOf[REMINDERS]
   def ROW: ROW = "ROW".asInstanceOf[ROW]
-  def SEARCH: SEARCH = "SEARCH".asInstanceOf[SEARCH]
   def SECONDARY_ACTION: SECONDARY_ACTION = "SECONDARY_ACTION".asInstanceOf[SECONDARY_ACTION]
   def SEND_ACTION: SEND_ACTION = "SEND_ACTION".asInstanceOf[SEND_ACTION]
-  def SENT: SENT = "SENT".asInstanceOf[SENT]
   def SETTINGS: SETTINGS = "SETTINGS".asInstanceOf[SETTINGS]
-  def SNOOZED: SNOOZED = "SNOOZED".asInstanceOf[SNOOZED]
-  def SPAM: SPAM = "SPAM".asInstanceOf[SPAM]
-  def STARRED: STARRED = "STARRED".asInstanceOf[STARRED]
   def THREAD: THREAD = "THREAD".asInstanceOf[THREAD]
-  def TRASH: TRASH = "TRASH".asInstanceOf[TRASH]
   def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   def activate: activate = "activate".asInstanceOf[activate]
   def bccContactAdded: bccContactAdded = "bccContactAdded".asInstanceOf[bccContactAdded]

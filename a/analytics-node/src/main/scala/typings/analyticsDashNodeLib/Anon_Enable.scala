@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Anon_Enable extends js.Object {
   var enable: js.UndefOr[scala.Boolean] = js.undefined
-  var flushAfter: js.UndefOr[scala.Double] = js.undefined
   var flushAt: js.UndefOr[scala.Double] = js.undefined
+  var flushInterval: js.UndefOr[scala.Double] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined
 }
 

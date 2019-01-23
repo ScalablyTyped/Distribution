@@ -21,10 +21,14 @@ object fetchDashMockLibStrings {
   @js.native
   sealed trait PUT extends js.Object
   
+  @js.native
+  sealed trait always extends js.Object
+  
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   def GET: GET = "GET".asInstanceOf[GET]
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   def POST: POST = "POST".asInstanceOf[POST]
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  def always: always = "always".asInstanceOf[always]
 }
 

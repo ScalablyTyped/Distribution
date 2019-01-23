@@ -1,5 +1,5 @@
 ```
-// Type definitions for Segment's analytics.js for Node.js
+// Type definitions for analytics-node 3.1
 // Project: https://segment.com/docs/libraries/node/
 // Definitions by: Andrew Fong <https://github.com/fongandrew>
 //                 Thomas Thiebaud <https://github.com/thomasthiebaud>

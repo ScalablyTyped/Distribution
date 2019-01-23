@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server-express"
-version := "2.3.1-bd6c34"
+version := "2.3.1-d5b8d0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -25,11 +25,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-e9bff8",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-014b69",
   "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-1e7c9f",
-  "org.scalablytyped" %%% "cors" % "2.8-dt-20180423Z-762c11",
+  "org.scalablytyped" %%% "cors" % "2.8-dt-20180423Z-e03278",
   "org.scalablytyped" %%% "deprecated-decorator" % "0.1.6-7670bf",
   "org.scalablytyped" %%% "eventemitter3" % "3.1.0-c99994",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190108Z-fdb83d",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-970fa5",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-fc1b93",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-eee1c1",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-c8d4b8",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20190107Z-b6e998",
   "org.scalablytyped" %%% "graphql-subscriptions" % "1.0.0-de2bdf",
@@ -55,7 +55,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "protobufjs__pool" % "1.1.0-9eee98",
   "org.scalablytyped" %%% "protobufjs__utf8" % "1.1.0-2cdf20",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-a57469",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-c3aa54",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-f9c9b0",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
   "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.15-c7f02a",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-bc5916",

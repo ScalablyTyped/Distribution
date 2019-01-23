@@ -754,6 +754,9 @@ object reactDashNativeLibStrings {
   sealed trait never_ask_again extends js.Object
   
   @js.native
+  sealed trait newPassword extends js.Object
+  
+  @js.native
   sealed trait next extends js.Object
   
   @js.native
@@ -794,6 +797,9 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait `on-drag` extends js.Object
+  
+  @js.native
+  sealed trait oneTimeCode extends js.Object
   
   @js.native
   sealed trait `only-if-cached` extends js.Object
@@ -1347,6 +1353,7 @@ object reactDashNativeLibStrings {
   def navigate: navigate = "navigate".asInstanceOf[navigate]
   def never: never = "never".asInstanceOf[never]
   def never_ask_again: never_ask_again = "never_ask_again".asInstanceOf[never_ask_again]
+  def newPassword: newPassword = "newPassword".asInstanceOf[newPassword]
   def next: next = "next".asInstanceOf[next]
   def nickname: nickname = "nickname".asInstanceOf[nickname]
   def no: no = "no".asInstanceOf[no]
@@ -1361,6 +1368,7 @@ object reactDashNativeLibStrings {
   def numeric: numeric = "numeric".asInstanceOf[numeric]
   def omit: omit = "omit".asInstanceOf[omit]
   def `on-drag`: `on-drag` = "on-drag".asInstanceOf[`on-drag`]
+  def oneTimeCode: oneTimeCode = "oneTimeCode".asInstanceOf[oneTimeCode]
   def `only-if-cached`: `only-if-cached` = "only-if-cached".asInstanceOf[`only-if-cached`]
   def opaque: opaque = "opaque".asInstanceOf[opaque]
   def opaqueredirect: opaqueredirect = "opaqueredirect".asInstanceOf[opaqueredirect]

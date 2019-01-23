@@ -9,17 +9,9 @@ trait Options extends js.Object {
   var React: singleDashSpaDashReactLib.Anon_A
   var ReactDOM: singleDashSpaDashReactLib.Anon_AB
   var domElementGetter: js.UndefOr[js.Function0[reactLib.Element]] = js.undefined
-  var loadRootComponent: js.UndefOr[
-    js.Function0[
-      js.Promise[
-        reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-      ]
-    ]
-  ] = js.undefined
+  var loadRootComponent: js.UndefOr[js.Function0[js.Promise[reactLib.reactMod.ReactNs.ComponentClass[_, _]]]] = js.undefined
   var parcelCanUpdate: js.UndefOr[scala.Boolean] = js.undefined
-  var rootComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
+  var rootComponent: js.UndefOr[reactLib.reactMod.ReactNs.ComponentClass[_, _]] = js.undefined
   var suppressComponentDidCatchWarning: js.UndefOr[scala.Boolean] = js.undefined
 }
 

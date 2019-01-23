@@ -40,10 +40,13 @@ class Image protected () extends Object {
   	 */
   var meetOrSlice: js.UndefOr[java.lang.String] = js.native
   /**
-  	 * Applies filters assigned to this image (from "filters" array)
-  	 * @param callback Callback is invoked when all filters have been applied and new image is generated
+  	 * Applies filters assigned to this image (from "filters" array) or from filter param
+  	 * @param {Array} filters to be applied
+  	 * @return {thisArg} return the fabric.Image object
+  	 * @chainable
   	 */
-  def applyFilters(callback: js.Function): scala.Unit = js.native
+  def applyFilters(): Image = js.native
+  def applyFilters(filters: js.Array[IBaseFilter]): Image = js.native
   def clone(callback: js.Function): scala.Unit = js.native
   def clone(callback: js.Function, propertiesToInclude: js.Array[java.lang.String]): scala.Unit = js.native
   /**

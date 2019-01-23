@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait IBlendFilter extends IBaseFilter {
+trait IBlendImageFilter extends IBaseFilter {
   /**
   	 * Applies filter to canvas element
   	 * @param canvasEl Canvas element to apply filter to

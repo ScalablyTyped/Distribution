@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait RouterInstance extends js.Object {
+  var NativeListRouteIDs: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof NativeListRouteIDs */ js.Any = js.native
+  var NativeRouteIDs: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof NativeRouteIDs */ js.Any = js.native
   def createLink(routeID: NativeRouteIDs, params: RouteParams): java.lang.String = js.native
   def createLink(routeID: java.lang.String, params: RouteParams): java.lang.String = js.native
   def getCurrentRouteView(): RouteView = js.native

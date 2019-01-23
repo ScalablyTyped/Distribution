@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait FetchMockStatic extends js.Object {
   var MATCHED: fetchDashMockLib.fetchDashMockLibNumbers.`true` = js.native
   var UNMATCHED: fetchDashMockLib.fetchDashMockLibNumbers.`false` = js.native
+  var config: fetchDashMockLib.Anon_Always = js.native
   /**
     * Returns a Boolean indicating whether any calls to fetch matched the
     * given filter.
@@ -47,14 +48,6 @@ trait FetchMockStatic extends js.Object {
   def `catch`(): this.type = js.native
   def `catch`(response: MockResponse): this.type = js.native
   def `catch`(response: MockResponseFunction): this.type = js.native
-  /**
-    * Set some global config options, which include
-    * sendAsJson [default `true`] - by default fetchMock will
-    * convert objects to JSON before sending. This is overrideable
-    * for each call but for some scenarios, e.g. when dealing with a
-    * lot of array buffers, it can be useful to default to `false`
-    */
-  def configure(opts: js.Object): scala.Unit = js.native
   /**
     * Replaces fetch() with a stub which records its calls, grouped by
     * route, and optionally returns a mocked Response object or passes the

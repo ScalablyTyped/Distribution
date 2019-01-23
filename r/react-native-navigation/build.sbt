@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-navigation"
-version := "2.7.1-8e2200"
+version := "2.7.1-e42ad2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
   "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-73addc",
   "org.scalablytyped" %%% "react-lifecycles-compat" % "3.0-dt-20190116Z-da9d84",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190122Z-11dd82",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190122Z-d0fff4",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
   "org.scalablytyped" %%% "tslib" % "1.9.3-688770")
 publishArtifact in packageDoc := false

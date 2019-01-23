@@ -260,6 +260,7 @@ class Object3D () extends EventDispatcher {
     * Updates global transform of the object and its children.
     */
   def updateMatrixWorld(force: scala.Boolean): scala.Unit = js.native
+  def updateWorldMatrix(updateParents: scala.Boolean, updateChildren: scala.Boolean): scala.Unit = js.native
   /**
     * Updates the vector from world space to local space.
     * @param vector A world vector.

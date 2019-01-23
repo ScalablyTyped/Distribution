@@ -10,9 +10,10 @@ import scala.scalajs.js.annotation._
 ////////////////////////////////////////////////////////////
 trait IAllFilters extends js.Object {
   var BaseFilter: fabricLib.Anon_Options
-  var Blend: fabricLib.Anon_FromObject
-  var Brightness: fabricLib.Anon_FromObjectObject
-  var Convolute: fabricLib.Anon_FromObjectObjectOptions
+  var BlendColor: fabricLib.Anon_FromObject
+  var BlendImage: fabricLib.Anon_FromObjectObject
+  var Brightness: fabricLib.Anon_FromObjectObjectOptions
+  var Convolute: fabricLib.Anon_FromObjectObjectOptionsAnonMatrix
   var GradientTransparency: fabricLib.Anon_FromObjectObjectOptionsAnonThreshold
   var Grayscale: fabricLib.Anon_FromObjectObjectOptionsAny
   var Invert: fabricLib.Anon_FromObjectObjectOptionsAnyIInvertFilter

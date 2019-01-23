@@ -47,6 +47,6 @@ trait FeathersAuthenticationJWTOptions extends js.Object {
   /**
     * a passport-jwt option determining where to parse the JWT
     */
-  def jwtFromRequest(req: expressLib.expressMod.eNs.Request): java.lang.String = js.native
+  def jwtFromRequest(req: expressLib.expressMod.eNs.Request): java.lang.String | scala.Null = js.native
 }
 

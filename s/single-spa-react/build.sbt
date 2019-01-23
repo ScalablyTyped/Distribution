@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "single-spa-react"
-version := "2.8-dt-20181016Z-e54d61"
+version := "2.8-dt-20190121Z-1ee747"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

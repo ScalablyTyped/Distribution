@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "connect-pg-simple"
-version := "4.2-dt-20180214Z-a31027"
+version := "4.2-dt-20180214Z-596bdd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,16 +8,16 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-e9bff8",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-014b69",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190108Z-fdb83d",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20180604Z-970fa5",
-  "org.scalablytyped" %%% "express-session" % "1.15-dt-20180901Z-3a4e98",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-fc1b93",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-eee1c1",
+  "org.scalablytyped" %%% "express-session" % "1.15-dt-20180901Z-2ab093",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-2342ad",
   "org.scalablytyped" %%% "moment" % "2.24.0-68abed",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
   "org.scalablytyped" %%% "pg" % "7.4-dt-20181008Z-3a7a0a",
   "org.scalablytyped" %%% "pg-types" % "1.11-dt-20180214Z-bb8050",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-a57469",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-c3aa54",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-f9c9b0",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

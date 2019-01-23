@@ -163,6 +163,7 @@ trait Application
   def engine(ext: java.lang.String, fn: js.Function): Application = js.native
   def get(name: java.lang.String): js.Any = js.native
   def get(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
+  def get(path: PathParams, subApplication: Application): this.type = js.native
   /**
     * Initialize the server.
     *
@@ -256,5 +257,6 @@ trait Application
   def set(setting: java.lang.String, `val`: js.Any): Application = js.native
   def use(handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
   def use(path: PathParams, handlers: (RequestHandler | RequestHandlerParams)*): this.type = js.native
+  def use(path: PathParams, subApplication: Application): this.type = js.native
 }
 
