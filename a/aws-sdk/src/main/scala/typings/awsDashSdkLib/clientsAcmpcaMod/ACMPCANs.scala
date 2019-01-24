@@ -183,6 +183,10 @@ object ACMPCANs extends js.Object {
       * Contains a Boolean value that you can use to enable a certification revocation list (CRL) for the CA, the name of the S3 bucket to which ACM PCA will write the CRL, and an optional CNAME alias that you can use to hide the name of your bucket in the CRL Distribution Points extension of your CA certificate. For more information, see the CrlConfiguration structure. 
       */
     var RevocationConfiguration: js.UndefOr[RevocationConfiguration] = js.undefined
+    /**
+      * Key-value pairs that will be attached to the new private CA. You can associate up to 50 tags with a private CA.
+      */
+    var Tags: js.UndefOr[TagList] = js.undefined
   }
   
   trait CreateCertificateAuthorityResponse extends js.Object {

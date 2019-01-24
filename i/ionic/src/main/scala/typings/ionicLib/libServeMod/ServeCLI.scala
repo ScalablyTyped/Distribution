@@ -13,6 +13,10 @@ abstract class ServeCLI[T /* <: ServeCLIOptions */] protected ()
   var _resolvedProgram: js.UndefOr[js.Any] = js.native
   val e: ServeRunnerDeps = js.native
   /**
+    * If true, the Serve CLI will not prompt to be installed.
+    */
+  val global: scala.Boolean = js.native
+  /**
     * The pretty name of this Serve CLI.
     */
   val name: java.lang.String = js.native
@@ -60,6 +64,7 @@ abstract class ServeCLI[T /* <: ServeCLIOptions */] protected ()
   def once_ready(event: ionicLib.ionicLibStrings.ready, handler: js.Function0[scala.Unit]): this.type = js.native
   /* protected */ def promptToInstall(): js.Promise[scala.Boolean] = js.native
   /* protected */ def resolveProgram(): js.Promise[java.lang.String] = js.native
+  def resolveScript(): js.Promise[js.UndefOr[java.lang.String]] = js.native
   def serve(options: T): js.Promise[scala.Unit] = js.native
   /* protected */ def spawn(options: T): js.Promise[scala.Unit] = js.native
   /* protected */ def spawnWrapper(options: T): js.Promise[scala.Unit] = js.native

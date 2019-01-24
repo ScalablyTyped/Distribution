@@ -107,7 +107,7 @@ class Vector3 () extends Vector {
   def min(v: Vector3): this.type = js.native
   def multiply(v: Vector3): this.type = js.native
   def multiplyVectors(a: Vector3, b: Vector3): this.type = js.native
-  def project(camrea: Camera): this.type = js.native
+  def project(camera: Camera): this.type = js.native
   def projectOnPlane(planeNormal: Vector3): this.type = js.native
   def projectOnVector(v: Vector3): this.type = js.native
   def reflect(vector: Vector3): this.type = js.native

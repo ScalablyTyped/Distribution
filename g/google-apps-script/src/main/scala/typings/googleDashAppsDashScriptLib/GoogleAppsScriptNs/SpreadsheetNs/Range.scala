@@ -114,6 +114,8 @@ trait Range extends js.Object {
   def getNumRows(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getNumberFormat(): java.lang.String = js.native
   def getNumberFormats(): js.Array[js.Array[java.lang.String]] = js.native
+  def getRichTextValue(): RichTextValue = js.native
+  def getRichTextValues(): js.Array[js.Array[RichTextValue]] = js.native
   def getRow(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getRowIndex(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getSheet(): Sheet = js.native
@@ -121,6 +123,8 @@ trait Range extends js.Object {
   def getTextDirections(): js.Array[js.Array[TextDirection]] = js.native
   def getTextRotation(): TextRotation = js.native
   def getTextRotations(): js.Array[js.Array[TextRotation]] = js.native
+  def getTextStyle(): TextStyle = js.native
+  def getTextStyles(): js.Array[js.Array[TextStyle]] = js.native
   def getValue(): js.Object = js.native
   def getValues(): js.Array[js.Array[js.Object]] = js.native
   def getVerticalAlignment(): java.lang.String = js.native
@@ -207,12 +211,16 @@ trait Range extends js.Object {
   def setNotes(notes: js.Array[js.Array[js.Object]]): Range = js.native
   def setNumberFormat(numberFormat: java.lang.String): Range = js.native
   def setNumberFormats(numberFormats: js.Array[js.Array[js.Object]]): Range = js.native
+  def setRichTextValue(value: RichTextValue): Range = js.native
+  def setRichTextValues(values: js.Array[js.Array[RichTextValue]]): Range = js.native
   def setShowHyperlink(showHyperlink: scala.Boolean): Range = js.native
   def setTextDirection(direction: TextDirection): Range = js.native
   def setTextDirections(directions: js.Array[js.Array[TextDirection]]): Range = js.native
   def setTextRotation(degrees: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): Range = js.native
   def setTextRotation(rotation: TextRotation): Range = js.native
   def setTextRotations(rotations: js.Array[js.Array[TextRotation]]): Range = js.native
+  def setTextStyle(style: TextStyle): Range = js.native
+  def setTextStyles(styles: js.Array[js.Array[TextStyle]]): Range = js.native
   def setValue(value: js.Object): Range = js.native
   def setValues(values: js.Array[js.Array[js.Object]]): Range = js.native
   def setVerticalAlignment(alignment: java.lang.String): Range = js.native

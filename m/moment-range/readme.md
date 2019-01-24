@@ -5,5 +5,6 @@
 //                 Wilgert Velinga <https://github.com/wilgert>
 //                 Juan Francisco Adame <https://github.com/franjuan>
 //                 MartynasZilinskas <https://github.com/MartynasZilinskas>
+//                 Che Coxshall <https://github.com/chemass>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

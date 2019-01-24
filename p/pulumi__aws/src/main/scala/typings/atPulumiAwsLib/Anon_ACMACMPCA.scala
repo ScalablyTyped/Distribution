@@ -401,6 +401,8 @@ trait Anon_ACMACMPCA extends js.Object {
   val WebIdentityCredentialsNs: js.Any = js.native
   var WorkDocs: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.WorkDocs] = js.native
   val WorkDocsNs: Anon_TypesWorkDocs = js.native
+  var WorkLink: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.WorkLink] = js.native
+  val WorkLinkNs: Anon_TypesWorkLink = js.native
   var WorkMail: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.WorkMail] = js.native
   val WorkMailNs: Anon_TypesWorkMail = js.native
   var WorkSpaces: org.scalablytyped.runtime.Instantiable0[awsDashSdkLib.awsDashSdkMod.WorkSpaces] = js.native

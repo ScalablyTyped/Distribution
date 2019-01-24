@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wavesurfer_dot_js"
-version := "2.0-dt-20181024Z-a866f6"
+version := "2.0-dt-20190123Z-629921"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

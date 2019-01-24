@@ -13,6 +13,7 @@ trait WaveSurferParams extends js.Object {
   var backend: js.UndefOr[java.lang.String] = js.undefined
   var barGap: js.UndefOr[scala.Double] = js.undefined
   var barHeight: js.UndefOr[scala.Double] = js.undefined
+  var barWidth: js.UndefOr[scala.Double] = js.undefined
   var closeAudioContext: js.UndefOr[scala.Boolean] = js.undefined
   var container: java.lang.String | stdLib.HTMLElement
   var cursorColor: js.UndefOr[java.lang.String] = js.undefined

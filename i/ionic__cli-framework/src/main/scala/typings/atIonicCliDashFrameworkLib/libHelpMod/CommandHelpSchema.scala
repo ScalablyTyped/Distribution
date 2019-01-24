@@ -9,6 +9,7 @@ trait CommandHelpSchema extends js.Object {
   val aliases: js.Array[java.lang.String]
   val description: java.lang.String
   val exampleCommands: js.Array[java.lang.String]
+  val footnotes: js.Array[CommandHelpSchemaFootnote]
   val groups: js.Array[java.lang.String]
   val inputs: js.Array[CommandHelpSchemaInput]
   val name: java.lang.String

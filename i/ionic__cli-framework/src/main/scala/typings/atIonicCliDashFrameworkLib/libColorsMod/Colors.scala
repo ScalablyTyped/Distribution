@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Colors extends js.Object {
   /**
+    * Used to mark text as ancillary or supportive.
+    */
+  @JSName("ancillary")
+  var ancillary_Original: ColorFunction = js.native
+  /**
     * Used to mark text as failed.
     */
   @JSName("failure")
@@ -33,6 +38,10 @@ trait Colors extends js.Object {
     */
   @JSName("weak")
   var weak_Original: ColorFunction = js.native
+  /**
+    * Used to mark text as ancillary or supportive.
+    */
+  def ancillary(text: java.lang.String*): java.lang.String = js.native
   /**
     * Used to mark text as failed.
     */

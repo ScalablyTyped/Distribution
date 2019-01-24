@@ -541,6 +541,9 @@ object awsDashSdkLibStrings {
   sealed trait `2018-09-05` extends js.Object
   
   @js.native
+  sealed trait `2018-09-25` extends js.Object
+  
+  @js.native
   sealed trait `2018-10-01` extends js.Object
   
   @js.native
@@ -4121,6 +4124,12 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait FAILED_RESOURCE_GONE extends js.Object
+  
+  @js.native
+  sealed trait FAILED_TO_CREATE extends js.Object
+  
+  @js.native
+  sealed trait FAILED_TO_DELETE extends js.Object
   
   @js.native
   sealed trait FAILING extends js.Object
@@ -9179,6 +9188,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SIGNAL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED extends js.Object
+  
+  @js.native
+  sealed trait SIGNED_OUT extends js.Object
   
   @js.native
   sealed trait SIGN_IN extends js.Object
@@ -14686,6 +14698,7 @@ object awsDashSdkLibStrings {
   def `2018-08-08`: `2018-08-08` = "2018-08-08".asInstanceOf[`2018-08-08`]
   def `2018-08-20`: `2018-08-20` = "2018-08-20".asInstanceOf[`2018-08-20`]
   def `2018-09-05`: `2018-09-05` = "2018-09-05".asInstanceOf[`2018-09-05`]
+  def `2018-09-25`: `2018-09-25` = "2018-09-25".asInstanceOf[`2018-09-25`]
   def `2018-10-01`: `2018-10-01` = "2018-10-01".asInstanceOf[`2018-10-01`]
   def `2018-10-26`: `2018-10-26` = "2018-10-26".asInstanceOf[`2018-10-26`]
   def `2018-10-30`: `2018-10-30` = "2018-10-30".asInstanceOf[`2018-10-30`]
@@ -15880,6 +15893,8 @@ object awsDashSdkLibStrings {
   def FAILED_ACTIONS: FAILED_ACTIONS = "FAILED_ACTIONS".asInstanceOf[FAILED_ACTIONS]
   def FAILED_CREATION: FAILED_CREATION = "FAILED_CREATION".asInstanceOf[FAILED_CREATION]
   def FAILED_RESOURCE_GONE: FAILED_RESOURCE_GONE = "FAILED_RESOURCE_GONE".asInstanceOf[FAILED_RESOURCE_GONE]
+  def FAILED_TO_CREATE: FAILED_TO_CREATE = "FAILED_TO_CREATE".asInstanceOf[FAILED_TO_CREATE]
+  def FAILED_TO_DELETE: FAILED_TO_DELETE = "FAILED_TO_DELETE".asInstanceOf[FAILED_TO_DELETE]
   def FAILING: FAILING = "FAILING".asInstanceOf[FAILING]
   def FAILURE: FAILURE = "FAILURE".asInstanceOf[FAILURE]
   def FAIL_ON_CONFLICT: FAIL_ON_CONFLICT = "FAIL_ON_CONFLICT".asInstanceOf[FAIL_ON_CONFLICT]
@@ -17566,6 +17581,7 @@ object awsDashSdkLibStrings {
   def SHUTTING_DOWN: SHUTTING_DOWN = "SHUTTING_DOWN".asInstanceOf[SHUTTING_DOWN]
   def SIGN: SIGN = "SIGN".asInstanceOf[SIGN]
   def SIGNAL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED: SIGNAL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED = "SIGNAL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED".asInstanceOf[SIGNAL_EXTERNAL_WORKFLOW_EXECUTION_RATE_EXCEEDED]
+  def SIGNED_OUT: SIGNED_OUT = "SIGNED_OUT".asInstanceOf[SIGNED_OUT]
   def SIGN_IN: SIGN_IN = "SIGN_IN".asInstanceOf[SIGN_IN]
   def SIGN_UP: SIGN_UP = "SIGN_UP".asInstanceOf[SIGN_UP]
   def SIMPLE: SIMPLE = "SIMPLE".asInstanceOf[SIMPLE]

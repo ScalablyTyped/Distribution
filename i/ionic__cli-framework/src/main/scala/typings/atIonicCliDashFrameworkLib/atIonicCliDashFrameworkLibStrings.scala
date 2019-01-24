@@ -46,6 +46,9 @@ object atIonicCliDashFrameworkLibStrings {
   sealed trait json extends js.Object
   
   @js.native
+  sealed trait link extends js.Object
+  
+  @js.native
   sealed trait list extends js.Object
   
   @js.native
@@ -70,6 +73,9 @@ object atIonicCliDashFrameworkLibStrings {
   sealed trait terminal extends js.Object
   
   @js.native
+  sealed trait text extends js.Object
+  
+  @js.native
   sealed trait tick extends js.Object
   
   def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
@@ -85,6 +91,7 @@ object atIonicCliDashFrameworkLibStrings {
   def help: help = "help".asInstanceOf[help]
   def input: input = "input".asInstanceOf[input]
   def json: json = "json".asInstanceOf[json]
+  def link: link = "link".asInstanceOf[link]
   def list: list = "list".asInstanceOf[list]
   def next: next = "next".asInstanceOf[next]
   def `operation-rpc`: `operation-rpc` = "operation-rpc".asInstanceOf[`operation-rpc`]
@@ -93,6 +100,7 @@ object atIonicCliDashFrameworkLibStrings {
   def `rpc-response`: `rpc-response` = "rpc-response".asInstanceOf[`rpc-response`]
   def success: success = "success".asInstanceOf[success]
   def terminal: terminal = "terminal".asInstanceOf[terminal]
+  def text: text = "text".asInstanceOf[text]
   def tick: tick = "tick".asInstanceOf[tick]
 }
 

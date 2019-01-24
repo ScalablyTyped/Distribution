@@ -9,6 +9,22 @@
 // Project: https://developers.google.com/apps-script/
 // Definitions by: grant <https://github.com/grant/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-01-23
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-01-23
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2018-07-11
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2018-12-26
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // Type definitions for Google Apps Script 2018-12-26
 // Project: https://developers.google.com/apps-script/
 // Definitions by: motemen <https://github.com/motemen/>
@@ -21,6 +37,22 @@
 // Project: https://developers.google.com/apps-script/
 // Definitions by: motemen <https://github.com/motemen/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-01-23
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2018-07-11
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2018-07-11
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2018-12-26
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // Type definitions for Google Apps Script 2018-12-26
 // Project: https://developers.google.com/apps-script/
 // Definitions by: motemen <https://github.com/motemen/>
@@ -34,6 +66,38 @@
 // Definitions by: motemen <https://github.com/motemen/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // Type definitions for Google Apps Script 2018-07-11
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2018-07-11
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2018-07-11
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2018-07-11
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2018-07-11
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2018-07-11
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2018-07-11
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2018-12-26
+// Project: https://developers.google.com/apps-script/
+// Definitions by: motemen <https://github.com/motemen/>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// Type definitions for Google Apps Script 2019-01-23
 // Project: https://developers.google.com/apps-script/
 // Definitions by: motemen <https://github.com/motemen/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
@@ -41,71 +105,7 @@
 // Project: https://developers.google.com/apps-script/
 // Definitions by: motemen <https://github.com/motemen/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-07-11
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-07-11
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-12-26
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-12-26
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-12-26
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-07-11
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-07-11
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-07-11
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-07-11
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-07-11
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-07-11
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-07-11
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-07-11
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-12-26
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-07-11
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2019-01-06
-// Project: https://developers.google.com/apps-script/
-// Definitions by: motemen <https://github.com/motemen/>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// Type definitions for Google Apps Script 2018-12-26
+// Type definitions for Google Apps Script 2019-01-23
 // Project: https://developers.google.com/apps-script/
 // Definitions by: motemen <https://github.com/motemen/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

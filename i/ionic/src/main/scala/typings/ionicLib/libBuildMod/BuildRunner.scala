@@ -23,6 +23,7 @@ abstract class BuildRunner[T /* <: ionicLib.definitionsMod.BuildOptions[_] */] (
   ): T = js.native
   def determineEngineFromCommandLine(options: atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions): java.lang.String = js.native
   def getCommandMetadata(): js.Promise[stdLib.Partial[ionicLib.definitionsMod.CommandMetadata]] = js.native
+  def getPkgManagerBuildCLI(): PkgManagerBuildCLI = js.native
   /* CompleteClass */
   override def run(options: T): js.Promise[scala.Unit] = js.native
 }

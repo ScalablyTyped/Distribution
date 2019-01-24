@@ -1,11 +1,12 @@
 organization := "org.scalablytyped"
 name := "xhr"
-version := "2.5.0-96bb2a"
+version := "2.5.0-1016f6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "is-function" % "1.0-dt-20190123Z-8c8e86",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
   "org.scalablytyped" %%% "xtend" % "4.0.1-dt-20180214Z-996100")
 publishArtifact in packageDoc := false

@@ -100,6 +100,9 @@ object reactstrapLibStrings {
   sealed trait submit extends js.Object
   
   @js.native
+  sealed trait switch extends js.Object
+  
+  @js.native
   sealed trait tel extends js.Object
   
   @js.native
@@ -151,6 +154,7 @@ object reactstrapLibStrings {
   def sm: sm = "sm".asInstanceOf[sm]
   def static: static = "static".asInstanceOf[static]
   def submit: submit = "submit".asInstanceOf[submit]
+  def switch: switch = "switch".asInstanceOf[switch]
   def tel: tel = "tel".asInstanceOf[tel]
   def text: text = "text".asInstanceOf[text]
   def textarea: textarea = "textarea".asInstanceOf[textarea]

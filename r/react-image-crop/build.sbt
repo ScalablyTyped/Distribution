@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-image-crop"
-version := "3.0-dt-20180803Z-0ae28d"
+version := "6.0-dt-20190117Z-aa1489"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -9,6 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class Strategy protected ()
   extends passportLib.passportMod.passportNs.Strategy {
+  def this(options: StrategyOptionWithRequest, verify: js.Function5[
+      /* req */ expressLib.expressMod.eNs.Request, 
+      /* accessToken */ java.lang.String, 
+      /* refreshToken */ java.lang.String, 
+      /* profile */ Profile, 
+      /* done */ js.Function2[/* error */ js.Any, /* user */ js.UndefOr[js.Any], scala.Unit], 
+      scala.Unit
+    ]) = this()
   def this(options: StrategyOption, verify: js.Function4[
       /* accessToken */ java.lang.String, 
       /* refreshToken */ java.lang.String, 

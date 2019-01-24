@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "twilio-video"
-version := "2.0-dt-20180920Z-bc4018"
+version := "2.0-dt-20190123Z-45f39b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

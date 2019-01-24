@@ -913,6 +913,14 @@ trait IRawStyleBase extends IRawFontStyle {
     */
   var mixBlendMode: js.UndefOr[ICSSRule | IMixBlendModes] = js.undefined
   /**
+    * The ‘object-fit’ property specifies how the contents of a replaced element should
+    * be fitted to the box established by its used height and width.
+    * See CSS 3 object-fit property https://www.w3.org/TR/css3-images/#the-object-fit
+    */
+  var objectFit: js.UndefOr[
+    ICSSRule | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.cover | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.contain | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.fill | atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.none
+  ] = js.undefined
+  /**
     * Specifies the transparency of an element.
     * See CSS 3 opacity property https://drafts.csswg.org/css-color-3/#opacity
     */

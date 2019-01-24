@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Metadata extends js.Object {
   var description: js.UndefOr[java.lang.String] = js.undefined
+  var footnotes: js.UndefOr[js.Array[Footnote]] = js.undefined
   var groups: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var name: java.lang.String
   var summary: java.lang.String

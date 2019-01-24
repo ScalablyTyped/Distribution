@@ -16,6 +16,8 @@ package object definitionsMod {
     atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput, 
     CommandMetadataOption
   ]
+  type CustomBuildOptions = BuildOptions[ionicLib.ionicLibStrings.custom]
+  type CustomServeOptions = ServeOptions
   type DistTag = ionicLib.ionicLibStrings.testing | ionicLib.ionicLibStrings.canary | ionicLib.ionicLibStrings.latest
   type FeatureId = ionicLib.ionicLibStrings.`ssl-commands`
   type HookContext = BaseHookContext with HookInput

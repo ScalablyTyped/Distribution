@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/discover/dist/comm", "CommServer")
 @js.native
 class CommServer protected ()
-  extends nodeLib.eventsMod.EventEmitter
-     with ICommServerEventEmitter {
+  extends nodeLib.eventsMod.EventEmitter {
   def this(namespace: java.lang.String, /**
     * Unique identifier of the publisher.
     */
@@ -29,6 +28,16 @@ class CommServer protected ()
     */
   var port: scala.Double = js.native
   var server: js.UndefOr[wsLib.wsMod.Server] = js.native
+  @JSName("on")
+  def on_connect(
+    event: atIonicDiscoverLib.atIonicDiscoverLibStrings.connect,
+    listener: js.Function1[/* data */ CommServerConnectionPayload, scala.Unit]
+  ): this.type = js.native
+  @JSName("on")
+  def on_error(
+    event: atIonicDiscoverLib.atIonicDiscoverLibStrings.error,
+    listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+  ): this.type = js.native
   def start(): js.Promise[scala.Unit] = js.native
   def stop(): js.Promise[scala.Unit] = js.native
 }

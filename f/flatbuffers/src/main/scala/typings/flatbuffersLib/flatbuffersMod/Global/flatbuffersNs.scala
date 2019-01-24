@@ -42,6 +42,11 @@ object flatbuffersNs extends js.Object {
       */
     def asUint8Array(): stdLib.Uint8Array = js.native
     /**
+      * Reset all the state in this FlatBufferBuilder
+      * so it can be reused to construct another buffer.
+      */
+    def clear(): scala.Unit = js.native
+    /**
       * Conveniance function for creating Long objects.
       */
     def createLong(low: scala.Double, high: scala.Double): Long = js.native
@@ -186,6 +191,7 @@ object flatbuffersNs extends js.Object {
     def __vector_len(offset: scala.Double): scala.Double = js.native
     def bytes(): stdLib.Uint8Array = js.native
     def capacity(): scala.Double = js.native
+    def clear(): scala.Unit = js.native
     /**
       * Conveniance function for creating Long objects.
       */

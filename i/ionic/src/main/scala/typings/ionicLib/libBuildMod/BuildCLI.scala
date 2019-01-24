@@ -12,6 +12,10 @@ abstract class BuildCLI[T /* <: js.Object */] protected () extends js.Object {
   var _resolvedProgram: js.UndefOr[js.Any] = js.native
   val e: BuildRunnerDeps = js.native
   /**
+    * If true, the Build CLI will not prompt to be installed.
+    */
+  val global: scala.Boolean = js.native
+  /**
     * The pretty name of this Build CLI.
     */
   val name: java.lang.String = js.native
@@ -36,6 +40,7 @@ abstract class BuildCLI[T /* <: js.Object */] protected () extends js.Object {
   /* protected */ def buildArgs(options: T): js.Promise[js.Array[java.lang.String]] = js.native
   /* protected */ def promptToInstall(): js.Promise[scala.Boolean] = js.native
   /* protected */ def resolveProgram(): js.Promise[java.lang.String] = js.native
+  def resolveScript(): js.Promise[js.UndefOr[java.lang.String]] = js.native
   /* protected */ def run(options: T): js.Promise[scala.Unit] = js.native
   /* protected */ def runWrapper(options: T): js.Promise[scala.Unit] = js.native
 }

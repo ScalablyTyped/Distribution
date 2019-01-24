@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("spected", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var default: spectedLib.spectedMod.Spected = js.native
+  def default[ROOTINPUT, SPEC /* <: spectedLib.spectedMod.SpecValue[ROOTINPUT, ROOTINPUT] */](spec: SPEC, input: ROOTINPUT): spectedLib.spectedMod.Result[ROOTINPUT, SPEC] = js.native
 }
 

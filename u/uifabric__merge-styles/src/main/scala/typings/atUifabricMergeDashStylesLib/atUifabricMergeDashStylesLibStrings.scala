@@ -124,6 +124,9 @@ object atUifabricMergeDashStylesLibStrings {
   sealed trait contents extends js.Object
   
   @js.native
+  sealed trait cover extends js.Object
+  
+  @js.native
   sealed trait darken extends js.Object
   
   @js.native
@@ -143,6 +146,9 @@ object atUifabricMergeDashStylesLibStrings {
   
   @js.native
   sealed trait `extra-expanded` extends js.Object
+  
+  @js.native
+  sealed trait fill extends js.Object
   
   @js.native
   sealed trait `first baseline` extends js.Object
@@ -537,6 +543,7 @@ object atUifabricMergeDashStylesLibStrings {
   def contain: contain = "contain".asInstanceOf[contain]
   def `content-box`: `content-box` = "content-box".asInstanceOf[`content-box`]
   def contents: contents = "contents".asInstanceOf[contents]
+  def cover: cover = "cover".asInstanceOf[cover]
   def darken: darken = "darken".asInstanceOf[darken]
   def difference: difference = "difference".asInstanceOf[difference]
   def end: end = "end".asInstanceOf[end]
@@ -544,6 +551,7 @@ object atUifabricMergeDashStylesLibStrings {
   def expanded: expanded = "expanded".asInstanceOf[expanded]
   def `extra-condensed`: `extra-condensed` = "extra-condensed".asInstanceOf[`extra-condensed`]
   def `extra-expanded`: `extra-expanded` = "extra-expanded".asInstanceOf[`extra-expanded`]
+  def fill: fill = "fill".asInstanceOf[fill]
   def `first baseline`: `first baseline` = "first baseline".asInstanceOf[`first baseline`]
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   def flex: flex = "flex".asInstanceOf[flex]

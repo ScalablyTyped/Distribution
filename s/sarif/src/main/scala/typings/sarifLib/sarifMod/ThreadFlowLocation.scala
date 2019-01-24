@@ -1,0 +1,53 @@
+package typings
+package sarifLib.sarifMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait ThreadFlowLocation extends js.Object {
+  /**
+    * An integer representing the temporal order in which execution reached this location.
+    */
+  var executionOrder: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * The Coordinated Universal Time (UTC) date and time at which this location was executed.
+    */
+  var executionTimeUtc: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Specifies the importance of this location in understanding the code flow in which it occurs. The order from
+    * most to least important is "essential", "important", "unimportant". Default: "important".
+    */
+  var importance: js.UndefOr[sarifLib.sarifMod.ThreadFlowLocationNs.importance] = js.undefined
+  /**
+    * A string describing the type of this location.
+    */
+  var kind: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The code location.
+    */
+  var location: js.UndefOr[Location] = js.undefined
+  /**
+    * The name of the module that contains the code that is executing.
+    */
+  var module: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * An integer representing a containment hierarchy within the thread flow
+    */
+  var nestingLevel: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * Key/value pairs that provide additional information about the threadflow location.
+    */
+  var properties: js.UndefOr[PropertyBag] = js.undefined
+  /**
+    * The call stack leading to this location.
+    */
+  var stack: js.UndefOr[Stack] = js.undefined
+  /**
+    * A dictionary, each of whose keys specifies a variable or expression, the associated value of which represents
+    * the variable or expression value. For an annotation of kind 'continuation', for example, this dictionary
+    * might hold the current assumed values of a set of global variables.
+    */
+  var state: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
+}
+

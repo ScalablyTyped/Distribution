@@ -767,7 +767,7 @@ trait Stream[R]
   		 *   console.log(err); // => SyntaxError: Unexpected token z
   		 * });
   		 */
-  def through[R, U](f: js.Function1[/* x */ R, U]): Stream[U] = js.native
+  def through[R, U](f: js.Function1[/* x */ R, U]): U = js.native
   /**
   		 * Collects all values from a Stream into an Array and calls a function with
   		 * once with the result. This function causes a **thunk**.

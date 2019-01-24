@@ -67,6 +67,24 @@ trait UIManagerStatic extends js.Object {
     */
   def setLayoutAnimationEnabledExperimental(value: scala.Boolean): scala.Unit = js.native
   /**
+    * Used to display an Android PopupMenu. If a menu item is pressed, the success callback will
+    * be called with the following arguments:
+    *
+    *  - item - the menu item.
+    *  - index - index of the pressed item in array. Returns `undefined` if cancelled.
+    *
+    * To obtain a native node handle for a component, you can use
+    * `React.findNodeHandle(component)`.
+    *
+    * Note that this works only on Android
+    */
+  def showPopupMenu(
+    node: scala.Double,
+    items: js.Array[java.lang.String],
+     /* currently unused */ error: js.Function0[scala.Unit],
+    success: js.Function2[/* item */ java.lang.String, /* index */ js.UndefOr[scala.Double], scala.Unit]
+  ): scala.Unit = js.native
+  /**
     * Capture an image of the screen, window or an individual view. The image
     * will be stored in a temporary file that will only exist for as long as the
     * app is running.

@@ -20,6 +20,13 @@ trait OnClickData extends js.Object {
   /**
     * Optional.
     * Since Chrome 35.
+    * The ID of the frame of the element where the context menu was
+    * clicked, if it was in a frame.
+    */
+  var frameId: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * Optional.
+    * Since Chrome 35.
     * The URL of the frame of the element where the context menu was clicked, if it was in a frame.
     */
   var frameUrl: js.UndefOr[java.lang.String] = js.undefined

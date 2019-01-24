@@ -196,6 +196,7 @@ trait ConfigurationServiceApiVersions extends js.Object {
   var waf: js.UndefOr[awsDashSdkLib.clientsWafMod.WAFNs.apiVersion] = js.undefined
   var wafregional: js.UndefOr[awsDashSdkLib.clientsWafregionalMod.WAFRegionalNs.apiVersion] = js.undefined
   var workdocs: js.UndefOr[awsDashSdkLib.clientsWorkdocsMod.WorkDocsNs.apiVersion] = js.undefined
+  var worklink: js.UndefOr[awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.apiVersion] = js.undefined
   var workmail: js.UndefOr[awsDashSdkLib.clientsWorkmailMod.WorkMailNs.apiVersion] = js.undefined
   var workspaces: js.UndefOr[awsDashSdkLib.clientsWorkspacesMod.WorkSpacesNs.apiVersion] = js.undefined
   var xray: js.UndefOr[awsDashSdkLib.clientsXrayMod.XRayNs.apiVersion] = js.undefined

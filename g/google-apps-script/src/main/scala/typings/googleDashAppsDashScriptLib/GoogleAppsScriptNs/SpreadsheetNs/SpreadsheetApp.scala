@@ -44,6 +44,8 @@ trait SpreadsheetApp extends js.Object {
   def newConditionalFormatRule(): ConditionalFormatRuleBuilder = js.native
   def newDataValidation(): DataValidationBuilder = js.native
   def newFilterCriteria(): FilterCriteriaBuilder = js.native
+  def newRichTextValue(): RichTextValueBuilder = js.native
+  def newTextStyle(): TextStyleBuilder = js.native
   def open(file: googleDashAppsDashScriptLib.GoogleAppsScriptNs.DriveNs.File): Spreadsheet = js.native
   def openById(id: java.lang.String): Spreadsheet = js.native
   def openByUrl(url: java.lang.String): Spreadsheet = js.native

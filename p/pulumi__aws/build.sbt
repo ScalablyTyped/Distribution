@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "pulumi__aws"
-version := "v0.16.7-697531"
+version := "v0.16.7-0873f0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "arrify" % "1.0-dt-20180509Z-a40bdc",
-  "org.scalablytyped" %%% "aws-sdk" % "2.392.0-a864a8",
+  "org.scalablytyped" %%% "aws-sdk" % "2.393.0-5eb7b9",
   "org.scalablytyped" %%% "buffer-from" % "1.1-dt-20180616Z-c5a3f6",
   "org.scalablytyped" %%% "builtin-modules" % "2.0-dt-20180214Z-5bd474",
   "org.scalablytyped" %%% "diff" % "3.5-dt-20181102Z-3266eb",
-  "org.scalablytyped" %%% "events" % "1.2-dt-20180226Z-b3b26c",
+  "org.scalablytyped" %%% "events" % "3.0-dt-20190114Z-746165",
   "org.scalablytyped" %%% "google-protobuf" % "3.2-dt-20180214Z-de95e4",
   "org.scalablytyped" %%% "grpc" % "1.17.0-98d9cc",
   "org.scalablytyped" %%% "jmespath" % "0.15-dt-20180214Z-b22fa9",

@@ -41,5 +41,11 @@ trait CreateProperties extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
   /** Optional. The type of menu item. Defaults to 'normal' if not specified.  */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Optional.
+    * Since Chrome 62.
+    * Whether the item is visible in the menu.
+    */
+  var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 

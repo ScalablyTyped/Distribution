@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic"
-version := "4.8.0-071696"
+version := "4.9.0-0359a8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,8 +17,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20180706Z-3bc3c3",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-0b7a31",
   "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180808Z-87829e",
-  "org.scalablytyped" %%% "ionic__cli-framework" % "1.5.3-a4042e",
-  "org.scalablytyped" %%% "ionic__discover" % "1.0.10-10d2f7",
+  "org.scalablytyped" %%% "ionic__cli-framework" % "1.6.0-6f358d",
+  "org.scalablytyped" %%% "ionic__discover" % "1.0.11-5519a1",
   "org.scalablytyped" %%% "ionic__utils-fs" % "1.0.0-bcc32f",
   "org.scalablytyped" %%% "ionic__utils-network" % "0.0.6-47b6ee",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-c48db4",

@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("luxon", "Zone")
 @js.native
-class Zone ()
-  extends luxonLib.luxonMod.luxonNs.Zone {
-  /* CompleteClass */
-  override def equals(other: luxonLib.luxonMod.luxonNs.Zone): scala.Boolean = js.native
-  /* CompleteClass */
-  override def offset(ts: scala.Double): scala.Double = js.native
+class Zone () extends js.Object {
+  def equals(other: Zone): scala.Boolean = js.native
+  def offset(ts: scala.Double): scala.Double = js.native
 }
 
 @JSImport("luxon", "Zone")
@@ -23,6 +20,6 @@ object Zone extends js.Object {
   var `type`: java.lang.String = js.native
   var universal: scala.Boolean = js.native
   def offsetName(ts: scala.Double): java.lang.String = js.native
-  def offsetName(ts: scala.Double, options: luxonLib.luxonMod.luxonNs.ZoneOffsetOptions): java.lang.String = js.native
+  def offsetName(ts: scala.Double, options: luxonLib.luxonMod.ZoneOffsetOptions): java.lang.String = js.native
 }
 

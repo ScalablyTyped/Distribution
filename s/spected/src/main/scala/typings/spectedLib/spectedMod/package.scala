@@ -6,8 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object spectedMod {
-  type ErrorMsg = java.lang.String | (js.Function2[/* value */ js.Any, /* field */ java.lang.String, java.lang.String])
-  type Predicate = js.Function2[/* value */ js.Any, /* inputs */ js.Any, scala.Boolean]
-  type SpecValue = (js.Array[js.Tuple2[Predicate, ErrorMsg]]) | (js.Function1[/* value */ js.Any, js.Any]) | Spec
-  type Spected = js.Function2[/* spec */ Spec, /* input */ js.Any, Result]
+  type Result[INPUT, SPEC] = spectedLib.spectedLibStrings.Result with js.Any
+  type Spec[INPUT, ROOTINPUT] = js.Tuple2[spectedLib.Predicate[INPUT, ROOTINPUT], spectedLib.ErrorMsg[INPUT]]
+  type SpecArray[INPUT, ROOTINPUT] = js.Array[Spec[INPUT, ROOTINPUT]]
+  type SpecFunction[INPUT, ROOTINPUT] = (js.Function1[/* value */ INPUT, SpecArray[INPUT, ROOTINPUT]]) | (js.Function1[/* value */ INPUT, SpecObject[INPUT, ROOTINPUT]]) | (js.Function1[/* value */ INPUT, js.Array[SpecArray[js.Any, ROOTINPUT]]])
+  type SpecObject[INPUT, ROOTINPUT] = stdLib.Partial[spectedLib.spectedLibStrings.SpecObject with INPUT]
+  type SpecValue[INPUT, ROOTINPUT] = (SpecArray[INPUT, ROOTINPUT]) | (SpecFunction[INPUT, ROOTINPUT]) | (SpecObject[INPUT, ROOTINPUT])
 }

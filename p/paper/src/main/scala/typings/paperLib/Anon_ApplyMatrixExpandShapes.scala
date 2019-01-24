@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_ApplyMatrixExpandShapes extends js.Object {
   var applyMatrix: js.UndefOr[paperLib.paperNs.Matrix] = js.undefined
   var expandShapes: js.UndefOr[scala.Boolean] = js.undefined
-  var insert: js.UndefOr[paperLib.paperLibNumbers.`true`] = js.undefined
+  var insert: js.UndefOr[scala.Boolean] = js.undefined
   var onError: js.UndefOr[
     js.Function2[/* message */ java.lang.String, /* status */ scala.Double, scala.Unit]
   ] = js.undefined

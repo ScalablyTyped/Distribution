@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
 trait ArraySchema[T]
   extends Schema[js.Array[T]] {
   def compact(): ArraySchema[T] = js.native
-  def compact(rejector: js.Function1[/* value */ js.Any, scala.Boolean]): ArraySchema[T] = js.native
+  def compact(
+    rejector: js.Function3[/* value */ T, /* index */ scala.Double, /* array */ js.Array[T], scala.Boolean]
+  ): ArraySchema[T] = js.native
   def ensure(): ArraySchema[T] = js.native
   def max(limit: scala.Double): ArraySchema[T] = js.native
   def max(limit: scala.Double, message: TestOptionsMessage): ArraySchema[T] = js.native

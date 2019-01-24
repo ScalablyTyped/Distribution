@@ -33,11 +33,11 @@ trait Utils extends js.Object {
   def fromWei(`val`: java.lang.String, unit: Unit): java.lang.String = js.native
   def fromWei(
     `val`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BigNumber */ js.Any
-  ): js.Any = js.native
+  ): java.lang.String = js.native
   def fromWei(
     `val`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BigNumber */ js.Any,
     unit: Unit
-  ): js.Any = js.native
+  ): java.lang.String = js.native
   def fromWei(`val`: scala.Double): java.lang.String = js.native
   def fromWei(`val`: scala.Double, unit: Unit): java.lang.String = js.native
   def hexToAscii(`val`: java.lang.String): java.lang.String = js.native

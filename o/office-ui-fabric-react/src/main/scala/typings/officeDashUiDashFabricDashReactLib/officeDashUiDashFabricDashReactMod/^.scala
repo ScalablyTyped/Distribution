@@ -150,6 +150,9 @@ object ^ extends js.Object {
   def DocumentCardDetails(
     props: officeDashUiDashFabricDashReactLib.libComponentsDocumentCardDocumentCardDetailsDotTypesMod.IDocumentCardDetailsProps
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def DocumentCardImage(
+    props: officeDashUiDashFabricDashReactLib.libComponentsDocumentCardDocumentCardImageDotTypesMod.IDocumentCardImageProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def DocumentCardLocation(
     props: officeDashUiDashFabricDashReactLib.libComponentsDocumentCardDocumentCardLocationDotTypesMod.IDocumentCardLocationProps
   ): reactLib.reactMod.Global.JSXNs.Element = js.native

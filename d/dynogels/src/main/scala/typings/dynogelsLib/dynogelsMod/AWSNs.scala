@@ -1755,6 +1755,15 @@ object AWSNs extends js.Object {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
+  class WorkLink ()
+    extends awsDashSdkLib.awsDashSdkMod.WorkLink {
+    def this(options: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ClientConfiguration) = this()
+  }
+  
+  @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class WorkMail ()
     extends awsDashSdkLib.awsDashSdkMod.WorkMail {
     def this(options: awsDashSdkLib.clientsWorkmailMod.WorkMailNs.ClientConfiguration) = this()
@@ -5519,6 +5528,27 @@ object AWSNs extends js.Object {
     @JSName("WorkDocs")
     @js.native
     object WorkDocsNs extends js.Object {
+      val TypesNs: this.type = js.native
+    }
+    
+  }
+  
+  @JSName("WorkLink")
+  @js.native
+  object WorkLinkNs extends js.Object {
+    @js.native
+    /**
+      * Constructs a service object. This object has one method for each API operation.
+      */
+    class Types ()
+      extends awsDashSdkLib.awsDashSdkMod.WorkLinkNs.Types {
+      def this(options: awsDashSdkLib.clientsWorklinkMod.WorkLinkNs.ClientConfiguration) = this()
+    }
+    
+    val TypesNs: this.type = js.native
+    @JSName("WorkLink")
+    @js.native
+    object WorkLinkNs extends js.Object {
       val TypesNs: this.type = js.native
     }
     

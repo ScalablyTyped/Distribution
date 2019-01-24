@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "anydb-sql-migrations"
-version := "2.4.1-804f34"
+version := "2.4.1-533e8f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node-sql-2" % "0.78.0-f13111",
   "org.scalablytyped" %%% "sqlite3" % "3.1-dt-20180322Z-dc8773",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
-  "org.scalablytyped" %%% "yargs" % "12.0-dt-20190121Z-1cec73")
+  "org.scalablytyped" %%% "yargs" % "12.0-dt-20190124Z-1cec73")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

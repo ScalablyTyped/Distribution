@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "react-draggable-list"
-version := "4.0.1-08ae0c"
+version := "4.0.1-71c622"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
-  "org.scalablytyped" %%% "immutability-helper" % "2.9.0-d71ab6",
+  "org.scalablytyped" %%% "immutability-helper" % "3.0.0-d71ab6",
   "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-fd94ae",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
   "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-73addc",
