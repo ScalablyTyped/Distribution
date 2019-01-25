@@ -41,15 +41,23 @@ trait JQuery extends js.Object {
   @JSName("data")
   def data_kendoDatePicker(key: kendoDashUiLib.kendoDashUiLibStrings.kendoDatePicker): kendoDashUiLib.kendoNs.uiNs.DatePicker = js.native
   @JSName("data")
+  def data_kendoDateRangePicker(key: kendoDashUiLib.kendoDashUiLibStrings.kendoDateRangePicker): kendoDashUiLib.kendoNs.uiNs.DateRangePicker = js.native
+  @JSName("data")
   def data_kendoDateTimePicker(key: kendoDashUiLib.kendoDashUiLibStrings.kendoDateTimePicker): kendoDashUiLib.kendoNs.uiNs.DateTimePicker = js.native
   @JSName("data")
   def data_kendoDiagram(key: kendoDashUiLib.kendoDashUiLibStrings.kendoDiagram): kendoDashUiLib.kendoNs.datavizNs.uiNs.Diagram = js.native
   @JSName("data")
   def data_kendoDialog(key: kendoDashUiLib.kendoDashUiLibStrings.kendoDialog): kendoDashUiLib.kendoNs.uiNs.Dialog = js.native
   @JSName("data")
+  def data_kendoDraggable(key: kendoDashUiLib.kendoDashUiLibStrings.kendoDraggable): kendoDashUiLib.kendoNs.uiNs.Draggable = js.native
+  @JSName("data")
   def data_kendoDropDownList(key: kendoDashUiLib.kendoDashUiLibStrings.kendoDropDownList): kendoDashUiLib.kendoNs.uiNs.DropDownList = js.native
   @JSName("data")
   def data_kendoDropDownTree(key: kendoDashUiLib.kendoDashUiLibStrings.kendoDropDownTree): kendoDashUiLib.kendoNs.uiNs.DropDownTree = js.native
+  @JSName("data")
+  def data_kendoDropTarget(key: kendoDashUiLib.kendoDashUiLibStrings.kendoDropTarget): kendoDashUiLib.kendoNs.uiNs.DropTarget = js.native
+  @JSName("data")
+  def data_kendoDropTargetArea(key: kendoDashUiLib.kendoDashUiLibStrings.kendoDropTargetArea): kendoDashUiLib.kendoNs.uiNs.DropTargetArea = js.native
   @JSName("data")
   def data_kendoEditor(key: kendoDashUiLib.kendoDashUiLibStrings.kendoEditor): kendoDashUiLib.kendoNs.uiNs.Editor = js.native
   @JSName("data")
@@ -119,6 +127,8 @@ trait JQuery extends js.Object {
   @JSName("data")
   def data_kendoMultiSelect(key: kendoDashUiLib.kendoDashUiLibStrings.kendoMultiSelect): kendoDashUiLib.kendoNs.uiNs.MultiSelect = js.native
   @JSName("data")
+  def data_kendoMultiViewCalendar(key: kendoDashUiLib.kendoDashUiLibStrings.kendoMultiViewCalendar): kendoDashUiLib.kendoNs.uiNs.MultiViewCalendar = js.native
+  @JSName("data")
   def data_kendoNotification(key: kendoDashUiLib.kendoDashUiLibStrings.kendoNotification): kendoDashUiLib.kendoNs.uiNs.Notification = js.native
   @JSName("data")
   def data_kendoNumericTextBox(key: kendoDashUiLib.kendoDashUiLibStrings.kendoNumericTextBox): kendoDashUiLib.kendoNs.uiNs.NumericTextBox = js.native
@@ -147,6 +157,8 @@ trait JQuery extends js.Object {
   @JSName("data")
   def data_kendoScheduler(key: kendoDashUiLib.kendoDashUiLibStrings.kendoScheduler): kendoDashUiLib.kendoNs.uiNs.Scheduler = js.native
   @JSName("data")
+  def data_kendoScrollView(key: kendoDashUiLib.kendoDashUiLibStrings.kendoScrollView): kendoDashUiLib.kendoNs.uiNs.ScrollView = js.native
+  @JSName("data")
   def data_kendoSlider(key: kendoDashUiLib.kendoDashUiLibStrings.kendoSlider): kendoDashUiLib.kendoNs.uiNs.Slider = js.native
   @JSName("data")
   def data_kendoSortable(key: kendoDashUiLib.kendoDashUiLibStrings.kendoSortable): kendoDashUiLib.kendoNs.uiNs.Sortable = js.native
@@ -158,6 +170,8 @@ trait JQuery extends js.Object {
   def data_kendoSpreadsheet(key: kendoDashUiLib.kendoDashUiLibStrings.kendoSpreadsheet): kendoDashUiLib.kendoNs.uiNs.Spreadsheet = js.native
   @JSName("data")
   def data_kendoStockChart(key: kendoDashUiLib.kendoDashUiLibStrings.kendoStockChart): kendoDashUiLib.kendoNs.datavizNs.uiNs.StockChart = js.native
+  @JSName("data")
+  def data_kendoSwitch(key: kendoDashUiLib.kendoDashUiLibStrings.kendoSwitch): kendoDashUiLib.kendoNs.uiNs.Switch = js.native
   @JSName("data")
   def data_kendoTabStrip(key: kendoDashUiLib.kendoDashUiLibStrings.kendoTabStrip): kendoDashUiLib.kendoNs.uiNs.TabStrip = js.native
   @JSName("data")
@@ -212,6 +226,8 @@ trait JQuery extends js.Object {
   def kendoDateInput(options: kendoDashUiLib.kendoNs.uiNs.DateInputOptions): JQuery = js.native
   def kendoDatePicker(): JQuery = js.native
   def kendoDatePicker(options: kendoDashUiLib.kendoNs.uiNs.DatePickerOptions): JQuery = js.native
+  def kendoDateRangePicker(): JQuery = js.native
+  def kendoDateRangePicker(options: kendoDashUiLib.kendoNs.uiNs.DateRangePickerOptions): JQuery = js.native
   def kendoDateTimePicker(): JQuery = js.native
   def kendoDateTimePicker(options: kendoDashUiLib.kendoNs.uiNs.DateTimePickerOptions): JQuery = js.native
   def kendoDiagram(): JQuery = js.native
@@ -296,6 +312,8 @@ trait JQuery extends js.Object {
   def kendoMultiColumnComboBox(options: kendoDashUiLib.kendoNs.uiNs.MultiColumnComboBoxOptions): JQuery = js.native
   def kendoMultiSelect(): JQuery = js.native
   def kendoMultiSelect(options: kendoDashUiLib.kendoNs.uiNs.MultiSelectOptions): JQuery = js.native
+  def kendoMultiViewCalendar(): JQuery = js.native
+  def kendoMultiViewCalendar(options: kendoDashUiLib.kendoNs.uiNs.MultiViewCalendarOptions): JQuery = js.native
   def kendoNotification(): JQuery = js.native
   def kendoNotification(options: kendoDashUiLib.kendoNs.uiNs.NotificationOptions): JQuery = js.native
   def kendoNumericTextBox(): JQuery = js.native
@@ -324,6 +342,8 @@ trait JQuery extends js.Object {
   def kendoResponsivePanel(options: kendoDashUiLib.kendoNs.uiNs.ResponsivePanelOptions): JQuery = js.native
   def kendoScheduler(): JQuery = js.native
   def kendoScheduler(options: kendoDashUiLib.kendoNs.uiNs.SchedulerOptions): JQuery = js.native
+  def kendoScrollView(): JQuery = js.native
+  def kendoScrollView(options: kendoDashUiLib.kendoNs.uiNs.ScrollViewOptions): JQuery = js.native
   def kendoSlider(): JQuery = js.native
   def kendoSlider(options: kendoDashUiLib.kendoNs.uiNs.SliderOptions): JQuery = js.native
   def kendoSortable(): JQuery = js.native
@@ -336,6 +356,8 @@ trait JQuery extends js.Object {
   def kendoSpreadsheet(options: kendoDashUiLib.kendoNs.uiNs.SpreadsheetOptions): JQuery = js.native
   def kendoStockChart(): JQuery = js.native
   def kendoStockChart(options: kendoDashUiLib.kendoNs.datavizNs.uiNs.StockChartOptions): JQuery = js.native
+  def kendoSwitch(): JQuery = js.native
+  def kendoSwitch(options: kendoDashUiLib.kendoNs.uiNs.SwitchOptions): JQuery = js.native
   def kendoTabStrip(): JQuery = js.native
   def kendoTabStrip(options: kendoDashUiLib.kendoNs.uiNs.TabStripOptions): JQuery = js.native
   def kendoTimePicker(): JQuery = js.native

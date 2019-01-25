@@ -41,6 +41,7 @@ object ^ extends js.Object {
   def exact[C /* <: ioDashTsLib.ioDashTsMod.HasProps */](codec: C): ioDashTsLib.ioDashTsMod.ExactC[C] = js.native
   def exact[C /* <: ioDashTsLib.ioDashTsMod.HasProps */](codec: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.ExactC[C] = js.native
   def failure[T](value: js.Any, context: ioDashTsLib.ioDashTsMod.Context): fpDashTsLib.libEitherMod.Either[ioDashTsLib.ioDashTsMod.Errors, T] = js.native
+  def failure[T](value: js.Any, context: ioDashTsLib.ioDashTsMod.Context, message: java.lang.String): fpDashTsLib.libEitherMod.Either[ioDashTsLib.ioDashTsMod.Errors, T] = js.native
   def failures[T](errors: ioDashTsLib.ioDashTsMod.Errors): fpDashTsLib.libEitherMod.Either[ioDashTsLib.ioDashTsMod.Errors, T] = js.native
   def getContextEntry(key: java.lang.String, decoder: ioDashTsLib.ioDashTsMod.Decoder[_, _]): ioDashTsLib.ioDashTsMod.ContextEntry = js.native
   def getDefaultContext(decoder: ioDashTsLib.ioDashTsMod.Decoder[_, _]): ioDashTsLib.ioDashTsMod.Context = js.native

@@ -27,7 +27,7 @@ class ChartPlotAreaFormat ()
   var context_ChartPlotAreaFormat: RequestContext = js.native
   /**
     *
-    * Represents the fill format of an object, which includes background formating information.
+    * Represents the fill format of an object, which includes background formatting information.
     *
     * [Api set: ExcelApi 1.8]
     */

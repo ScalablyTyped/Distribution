@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mongoose-auto-increment"
-version := "5.0.1-dt-20180214Z-f8e4b2"
+version := "5.0.1-dt-20180214Z-5131e6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "bson" % "1.0.6-dt-20180721Z-a2e4d8",
   "org.scalablytyped" %%% "mongodb" % "v3.1-dt-20190110Z-553fa0",
-  "org.scalablytyped" %%% "mongoose" % "5.3.4-dt-20190121Z-754396",
+  "org.scalablytyped" %%% "mongoose" % "5.3.4-dt-20190121Z-e83ca3",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false

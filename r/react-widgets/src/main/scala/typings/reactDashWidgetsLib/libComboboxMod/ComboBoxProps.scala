@@ -14,6 +14,11 @@ trait ComboBoxProps
     */
   var busy: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * An optional ReactNode to override the spinner gif element when the busy property
+    * is set to true.
+    */
+  var busySpinner: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  /**
     * Use in conjunction with the filter prop. Filter the list without regard for case. This
     * only applies to non function values for filter
     */

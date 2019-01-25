@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait ChartDataLabelsUpdateData extends js.Object {
   /**
     *
-    * Represents whether data labels automatically generates appropriate text based on context.
+    * Represents whether data labels automatically generate appropriate text based on context.
     *
     * [Api set: ExcelApi 1.8]
     */

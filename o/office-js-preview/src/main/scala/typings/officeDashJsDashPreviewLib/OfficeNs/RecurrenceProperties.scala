@@ -5,6 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Represents the properties of the recurrence.
+  * 
+  * [Api set: Mailbox 1.7]
+  * 
+  * @remarks
+  * 
+  * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+  * 
+  * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+  */
 trait RecurrenceProperties extends js.Object {
   /**
     * Represents the day of the month.

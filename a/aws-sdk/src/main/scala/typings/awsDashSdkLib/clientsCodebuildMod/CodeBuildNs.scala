@@ -777,13 +777,21 @@ object CodeBuildNs extends js.Object {
       */
     var environmentVariables: js.UndefOr[EnvironmentVariables] = js.undefined
     /**
-      * The ID of the Docker image to use for this build project.
+      * The image tag or image digest that identifies the Docker image to use for this build project. Use the following formats:   For an image tag: registry/repository:tag. For example, to specify an image with the tag "latest," use registry/repository:latest.   For an image digest: registry/repository@digest. For example, to specify an image with the digest "sha256:cbbf2f9a99b47fc460d422812b6a5adff7dfee951d8fa2e4a98caa0382cfbdbf," use registry/repository@sha256:cbbf2f9a99b47fc460d422812b6a5adff7dfee951d8fa2e4a98caa0382cfbdbf.  
       */
     var image: NonEmptyString
+    /**
+      *  The type of credentials AWS CodeBuild uses to pull images in your build. There are two valid values:     CODEBUILD specifies that AWS CodeBuild uses its own credentials. This requires that you modify your ECR repository policy to trust AWS CodeBuild's service principal.     SERVICE_ROLE specifies that AWS CodeBuild uses your build project's service role.     When you use a cross-account or private registry image, you must use SERVICE_ROLE credentials. When you use an AWS CodeBuild curated image, you must use CODEBUILD credentials. 
+      */
+    var imagePullCredentialsType: js.UndefOr[ImagePullCredentialsType] = js.undefined
     /**
       * Enables running the Docker daemon inside a Docker container. Set to true only if the build project is be used to build Docker images, and the specified build environment image is not provided by AWS CodeBuild with Docker support. Otherwise, all associated builds that attempt to interact with the Docker daemon fail. You must also start the Docker daemon so that builds can interact with it. One way to do this is to initialize the Docker daemon during the install phase of your build spec by running the following build commands. (Do not run these commands if the specified build environment image is provided by AWS CodeBuild with Docker support.) If the operating system's base image is Ubuntu Linux:  - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://0.0.0.0:2375 --storage-driver=overlay&amp; - timeout 15 sh -c "until docker info; do echo .; sleep 1; done"  If the operating system's base image is Alpine Linux, add the -t argument to timeout:  - nohup /usr/local/bin/dockerd --host=unix:///var/run/docker.sock --host=tcp://0.0.0.0:2375 --storage-driver=overlay&amp; - timeout 15 -t sh -c "until docker info; do echo .; sleep 1; done" 
       */
     var privilegedMode: js.UndefOr[WrapperBoolean] = js.undefined
+    /**
+      *  The credentials for access to a private registry.
+      */
+    var registryCredential: js.UndefOr[RegistryCredential] = js.undefined
     /**
       * The type of build environment to use for related builds.
       */
@@ -834,6 +842,17 @@ object CodeBuildNs extends js.Object {
       * The source version for the corresponding source identifier. If specified, must be one of:   For AWS CodeCommit: the commit ID to use.   For GitHub: the commit ID, pull request ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a pull request ID is specified, it must use the format pr/pull-request-ID (for example, pr/25). If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Bitbucket: the commit ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Amazon Simple Storage Service (Amazon S3): the version ID of the object that represents the build input ZIP file to use.  
       */
     var sourceVersion: String
+  }
+  
+  trait RegistryCredential extends js.Object {
+    /**
+      *  The Amazon Resource Name (ARN) or name of credentials created using AWS Secrets Manager.    The credential can use the name of the credentials only if they exist in your current region.  
+      */
+    var credential: NonEmptyString
+    /**
+      *  The service that created the credentials to access a private Docker registry. The valid value, SECRETS_MANAGER, is for AWS Secrets Manager. 
+      */
+    var credentialProvider: CredentialProviderType
   }
   
   trait S3LogsConfig extends js.Object {
@@ -915,6 +934,10 @@ object CodeBuildNs extends js.Object {
       */
     var imageOverride: js.UndefOr[NonEmptyString] = js.undefined
     /**
+      *  The type of credentials AWS CodeBuild uses to pull images in your build. There are two valid values:     CODEBUILD specifies that AWS CodeBuild uses its own credentials. This requires that you modify your ECR repository policy to trust AWS CodeBuild's service principal.    SERVICE_ROLE specifies that AWS CodeBuild uses your build project's service role.     When using a cross-account or private registry image, you must use SERVICE_ROLE credentials. When using an AWS CodeBuild curated image, you must use CODEBUILD credentials. 
+      */
+    var imagePullCredentialsTypeOverride: js.UndefOr[ImagePullCredentialsType] = js.undefined
+    /**
       * Enable this flag to override the insecure SSL setting that is specified in the build project. The insecure SSL setting determines whether to ignore SSL warnings while connecting to the project source code. This override applies only if the build's source is GitHub Enterprise.
       */
     var insecureSslOverride: js.UndefOr[WrapperBoolean] = js.undefined
@@ -934,6 +957,10 @@ object CodeBuildNs extends js.Object {
       *  The number of minutes a build is allowed to be queued before it times out. 
       */
     var queuedTimeoutInMinutesOverride: js.UndefOr[TimeOut] = js.undefined
+    /**
+      *  The credentials for access to a private registry. 
+      */
+    var registryCredentialOverride: js.UndefOr[RegistryCredential] = js.undefined
     /**
       *  Set to true to report to your source provider the status of a build's start and completion. If you use this option with a source provider other than GitHub, GitHub Enterprise, or Bitbucket, an invalidInputException is thrown. 
       */
@@ -1593,6 +1620,7 @@ object CodeBuildNs extends js.Object {
   type CacheType = awsDashSdkLib.awsDashSdkLibStrings.NO_CACHE | awsDashSdkLib.awsDashSdkLibStrings.S3 | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ComputeType = awsDashSdkLib.awsDashSdkLibStrings.BUILD_GENERAL1_SMALL | awsDashSdkLib.awsDashSdkLibStrings.BUILD_GENERAL1_MEDIUM | awsDashSdkLib.awsDashSdkLibStrings.BUILD_GENERAL1_LARGE | java.lang.String
+  type CredentialProviderType = awsDashSdkLib.awsDashSdkLibStrings.SECRETS_MANAGER | java.lang.String
   type EnvironmentImages = js.Array[EnvironmentImage]
   type EnvironmentLanguages = js.Array[EnvironmentLanguage]
   type EnvironmentPlatforms = js.Array[EnvironmentPlatform]
@@ -1600,6 +1628,7 @@ object CodeBuildNs extends js.Object {
   type EnvironmentVariableType = awsDashSdkLib.awsDashSdkLibStrings.PLAINTEXT | awsDashSdkLib.awsDashSdkLibStrings.PARAMETER_STORE | java.lang.String
   type EnvironmentVariables = js.Array[EnvironmentVariable]
   type GitCloneDepth = scala.Double
+  type ImagePullCredentialsType = awsDashSdkLib.awsDashSdkLibStrings.CODEBUILD | awsDashSdkLib.awsDashSdkLibStrings.SERVICE_ROLE | java.lang.String
   type ImageVersions = js.Array[String]
   type KeyInput = java.lang.String
   type LanguageType = awsDashSdkLib.awsDashSdkLibStrings.JAVA | awsDashSdkLib.awsDashSdkLibStrings.PYTHON | awsDashSdkLib.awsDashSdkLibStrings.NODE_JS | awsDashSdkLib.awsDashSdkLibStrings.RUBY | awsDashSdkLib.awsDashSdkLibStrings.GOLANG | awsDashSdkLib.awsDashSdkLibStrings.DOCKER | awsDashSdkLib.awsDashSdkLibStrings.ANDROID | awsDashSdkLib.awsDashSdkLibStrings.DOTNET | awsDashSdkLib.awsDashSdkLibStrings.BASE | awsDashSdkLib.awsDashSdkLibStrings.PHP | java.lang.String

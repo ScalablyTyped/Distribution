@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "electron-builder"
-version := "20.38.5-327f05"
+version := "20.38.5-f9f338"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -56,7 +56,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "update-notifier" % "2.5-dt-20181023Z-742136",
   "org.scalablytyped" %%% "uri-js" % "4.2.2-c4241a",
   "org.scalablytyped" %%% "xmlbuilder" % "0.0-unknown-dt-20180925Z-517132",
-  "org.scalablytyped" %%% "yargs" % "12.0-dt-20190124Z-1cec73")
+  "org.scalablytyped" %%% "yargs" % "12.0-dt-20190124Z-7f6a8f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

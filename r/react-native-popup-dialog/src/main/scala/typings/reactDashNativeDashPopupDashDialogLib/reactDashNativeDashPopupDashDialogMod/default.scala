@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-native-popup-dialog", JSImport.Default)
 @js.native
-class default () extends PopupDialog
+class default () extends Dialog
 

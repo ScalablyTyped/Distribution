@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Surface ()
   extends kendoDashUiLib.kendoNs.Observable {
   def this(options: SurfaceOptions) = this()
+  var element: kendoDashUiLib.JQuery = js.native
   var options: SurfaceOptions = js.native
   def clear(): scala.Unit = js.native
   def draw(element: Element): scala.Unit = js.native

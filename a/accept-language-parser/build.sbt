@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "accept-language-parser"
-version := "1.5-dt-20180425Z-e8cbf4"
+version := "1.5-dt-20190124Z-29c0b7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

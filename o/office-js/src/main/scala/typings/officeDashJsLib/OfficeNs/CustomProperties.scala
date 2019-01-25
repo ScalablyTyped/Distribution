@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
 trait CustomProperties extends js.Object {
   /**
     * Returns the value of the specified custom property.
-    * @param name The name of the custom property to be returned.
+    * @param name - The name of the custom property to be returned.
     * @returns The value of the specified custom property.
     *
     * [Api set: Mailbox 1.0]
@@ -39,7 +39,7 @@ trait CustomProperties extends js.Object {
     * Removes the specified property from the custom property collection.
     *
     * To make the removal of the property permanent, you must call the saveAsync method of the CustomProperties object.
-    * @param name The name of the property to be removed.
+    * @param name - The name of the property to be removed.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -61,9 +61,9 @@ trait CustomProperties extends js.Object {
     * If the add-in calls saveAsync while in the disconnected state, saveAsync would return an error. 
     * Your callback method should handle this error accordingly.
     *
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
-    * @param asyncContext Optional. Any state data that is passed to the callback method.
+    * @param asyncContext - Optional. Any state data that is passed to the callback method.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -91,8 +91,8 @@ trait CustomProperties extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param name The name of the property to be set.
-    * @param value The value of the property to be set.
+    * @param name - The name of the property to be set.
+    * @param value - The value of the property to be set.
     */
   def set(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
 }

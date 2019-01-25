@@ -41,6 +41,21 @@ object RDSNs extends js.Object {
     var RoleArn: String
   }
   
+  trait AddRoleToDBInstanceMessage extends js.Object {
+    /**
+      * The name of the DB instance to associate the IAM role with.
+      */
+    var DBInstanceIdentifier: String
+    /**
+      * The name of the feature for the DB instance that the IAM role is to be associated with. For the list of supported feature names, see DBEngineVersion. 
+      */
+    var FeatureName: String
+    /**
+      * The Amazon Resource Name (ARN) of the IAM role to associate with the DB instance, for example arn:aws:iam::123456789012:role/AccessRole. 
+      */
+    var RoleArn: String
+  }
+  
   trait AddSourceIdentifierToSubscriptionMessage extends js.Object {
     /**
       * The identifier of the event source to be added. Constraints:   If the source type is a DB instance, then a DBInstanceIdentifier must be supplied.   If the source type is a DB security group, a DBSecurityGroupName must be supplied.   If the source type is a DB parameter group, a DBParameterGroupName must be supplied.   If the source type is a DB snapshot, a DBSnapshotIdentifier must be supplied.  
@@ -1544,6 +1559,10 @@ object RDSNs extends js.Object {
       */
     var SupportedEngineModes: js.UndefOr[EngineModeList] = js.undefined
     /**
+      *  A list of features supported by the DB engine. Supported feature names include the following.    s3Import  
+      */
+    var SupportedFeatureNames: js.UndefOr[FeatureNameList] = js.undefined
+    /**
       * A list of the time zones supported by this engine for the Timezone parameter of the CreateDBInstance action. 
       */
     var SupportedTimezones: js.UndefOr[SupportedTimezonesList] = js.undefined
@@ -1577,6 +1596,10 @@ object RDSNs extends js.Object {
       * Specifies the allocated storage size specified in gibibytes.
       */
     var AllocatedStorage: js.UndefOr[Integer] = js.undefined
+    /**
+      *  The AWS Identity and Access Management (IAM) roles associated with the DB instance. 
+      */
+    var AssociatedRoles: js.UndefOr[DBInstanceRoles] = js.undefined
     /**
       * Indicates that minor version patches are applied automatically.
       */
@@ -1914,6 +1937,21 @@ object RDSNs extends js.Object {
       *  An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords . 
       */
     var Marker: js.UndefOr[String] = js.undefined
+  }
+  
+  trait DBInstanceRole extends js.Object {
+    /**
+      * The name of the feature associated with the AWS Identity and Access Management (IAM) role. For the list of supported feature names, see DBEngineVersion. 
+      */
+    var FeatureName: js.UndefOr[String] = js.undefined
+    /**
+      * The Amazon Resource Name (ARN) of the IAM role that is associated with the DB instance.
+      */
+    var RoleArn: js.UndefOr[String] = js.undefined
+    /**
+      * Describes the state of association between the IAM role and the DB instance. The Status property returns one of the following values:    ACTIVE - the IAM role ARN is associated with the DB instance and can be used to access other AWS services on your behalf.    PENDING - the IAM role ARN is being associated with the DB instance.    INVALID - the IAM role ARN is associated with the DB instance, but the DB instance is unable to assume the IAM role in order to access other AWS services on your behalf.  
+      */
+    var Status: js.UndefOr[String] = js.undefined
   }
   
   trait DBInstanceStatusInfo extends js.Object {
@@ -3692,7 +3730,7 @@ object RDSNs extends js.Object {
       */
     var CACertificateIdentifier: js.UndefOr[String] = js.undefined
     /**
-      * The configuration setting for the log types to be enabled for export to CloudWatch Logs for a specific DB instance.
+      * The configuration setting for the log types to be enabled for export to CloudWatch Logs for a specific DB instance. A change to the CloudwatchLogsExportConfiguration parameter is always applied to the DB instance immediately. Therefore, the ApplyImmediately parameter has no effect.
       */
     var CloudwatchLogsExportConfiguration: js.UndefOr[CloudwatchLogsExportConfiguration] = js.undefined
     /**
@@ -4639,6 +4677,21 @@ object RDSNs extends js.Object {
     var DBClusterIdentifier: String
     /**
       * The Amazon Resource Name (ARN) of the IAM role to disassociate from the Aurora DB cluster, for example arn:aws:iam::123456789012:role/AuroraAccessRole.
+      */
+    var RoleArn: String
+  }
+  
+  trait RemoveRoleFromDBInstanceMessage extends js.Object {
+    /**
+      * The name of the DB instance to disassociate the IAM role from.
+      */
+    var DBInstanceIdentifier: String
+    /**
+      * The name of the feature for the DB instance that the IAM role is to be disassociated from. For the list of supported feature names, see DBEngineVersion. 
+      */
+    var FeatureName: String
+    /**
+      * The Amazon Resource Name (ARN) of the IAM role to disassociate from the DB instance, for example arn:aws:iam::123456789012:role/AccessRole.
       */
     var RoleArn: String
   }
@@ -5744,18 +5797,33 @@ object RDSNs extends js.Object {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-      * Associates an Identity and Access Management (IAM) role from an Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf in the Amazon Aurora User Guide.
+      * Associates an Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf in the Amazon Aurora User Guide.
       */
     def addRoleToDBCluster(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def addRoleToDBCluster(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Associates an Identity and Access Management (IAM) role from an Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf in the Amazon Aurora User Guide.
+      * Associates an Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf in the Amazon Aurora User Guide.
       */
     def addRoleToDBCluster(params: AddRoleToDBClusterMessage): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def addRoleToDBCluster(
       params: AddRoleToDBClusterMessage,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Associates an AWS Identity and Access Management (IAM) role with a DB instance.
+      */
+    def addRoleToDBInstance(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def addRoleToDBInstance(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Associates an AWS Identity and Access Management (IAM) role with a DB instance.
+      */
+    def addRoleToDBInstance(params: AddRoleToDBInstanceMessage): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def addRoleToDBInstance(
+      params: AddRoleToDBInstanceMessage,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
@@ -7757,18 +7825,33 @@ object RDSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[RemoveFromGlobalClusterResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Disassociates an Identity and Access Management (IAM) role from an Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf  in the Amazon Aurora User Guide.
+      * Disassociates an AWS Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf  in the Amazon Aurora User Guide.
       */
     def removeRoleFromDBCluster(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def removeRoleFromDBCluster(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Disassociates an Identity and Access Management (IAM) role from an Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf  in the Amazon Aurora User Guide.
+      * Disassociates an AWS Identity and Access Management (IAM) role from an Amazon Aurora DB cluster. For more information, see Authorizing Amazon Aurora MySQL to Access Other AWS Services on Your Behalf  in the Amazon Aurora User Guide.
       */
     def removeRoleFromDBCluster(params: RemoveRoleFromDBClusterMessage): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def removeRoleFromDBCluster(
       params: RemoveRoleFromDBClusterMessage,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Disassociates an AWS Identity and Access Management (IAM) role from a DB instance.
+      */
+    def removeRoleFromDBInstance(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def removeRoleFromDBInstance(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Disassociates an AWS Identity and Access Management (IAM) role from a DB instance.
+      */
+    def removeRoleFromDBInstance(params: RemoveRoleFromDBInstanceMessage): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def removeRoleFromDBInstance(
+      params: RemoveRoleFromDBInstanceMessage,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
@@ -8340,6 +8423,7 @@ object RDSNs extends js.Object {
   type DBEngineVersionList = js.Array[DBEngineVersion]
   type DBInstanceAutomatedBackupList = js.Array[DBInstanceAutomatedBackup]
   type DBInstanceList = js.Array[DBInstance]
+  type DBInstanceRoles = js.Array[DBInstanceRole]
   type DBInstanceStatusInfoList = js.Array[DBInstanceStatusInfo]
   type DBParameterGroupList = js.Array[DBParameterGroup]
   type DBParameterGroupStatusList = js.Array[DBParameterGroupStatus]
@@ -8360,6 +8444,7 @@ object RDSNs extends js.Object {
   type EventCategoriesMapList = js.Array[EventCategoriesMap]
   type EventList = js.Array[Event]
   type EventSubscriptionsList = js.Array[EventSubscription]
+  type FeatureNameList = js.Array[String]
   type FilterList = js.Array[Filter]
   type FilterValueList = js.Array[String]
   type GlobalClusterList = js.Array[GlobalCluster]

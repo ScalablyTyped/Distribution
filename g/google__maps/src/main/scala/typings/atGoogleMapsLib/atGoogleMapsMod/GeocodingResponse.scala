@@ -10,7 +10,7 @@ trait GeocodingResponse[STATUSES] extends js.Object {
     * When the geocoder returns a status code other than `OK`, there may be an additional `error_message` field
     * within the Geocoding response object. This field contains more detailed information about the reasons behind the given status code.
     */
-  var error_meesage: java.lang.String
+  var error_message: java.lang.String
   /**
     * contains an array of geocoded address information and geometry information.
     *

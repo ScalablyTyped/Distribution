@@ -2191,6 +2191,9 @@ object awsDashSdkLibStrings {
   sealed trait CNAME extends js.Object
   
   @js.native
+  sealed trait CODEBUILD extends js.Object
+  
+  @js.native
   sealed trait CODECOMMIT extends js.Object
   
   @js.native
@@ -9019,6 +9022,9 @@ object awsDashSdkLibStrings {
   sealed trait SECOND_DAY extends js.Object
   
   @js.native
+  sealed trait SECRETS_MANAGER extends js.Object
+  
+  @js.native
   sealed trait SECTION extends js.Object
   
   @js.native
@@ -9119,6 +9125,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait SERVICE_MANAGED extends js.Object
+  
+  @js.native
+  sealed trait SERVICE_ROLE extends js.Object
   
   @js.native
   sealed trait SETUP extends js.Object
@@ -10187,6 +10196,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait TITLE extends js.Object
+  
+  @js.native
+  sealed trait TLS extends js.Object
   
   @js.native
   sealed trait TLS_WEB_CLIENT_AUTHENTICATION extends js.Object
@@ -15248,6 +15260,7 @@ object awsDashSdkLibStrings {
   def CMD_LINE: CMD_LINE = "CMD_LINE".asInstanceOf[CMD_LINE]
   def CMFC: CMFC = "CMFC".asInstanceOf[CMFC]
   def CNAME: CNAME = "CNAME".asInstanceOf[CNAME]
+  def CODEBUILD: CODEBUILD = "CODEBUILD".asInstanceOf[CODEBUILD]
   def CODECOMMIT: CODECOMMIT = "CODECOMMIT".asInstanceOf[CODECOMMIT]
   def CODEPIPELINE: CODEPIPELINE = "CODEPIPELINE".asInstanceOf[CODEPIPELINE]
   def CODE_DEPLOY: CODE_DEPLOY = "CODE_DEPLOY".asInstanceOf[CODE_DEPLOY]
@@ -17524,6 +17537,7 @@ object awsDashSdkLibStrings {
   def SECONDARY: SECONDARY = "SECONDARY".asInstanceOf[SECONDARY]
   def SECONDS: SECONDS = "SECONDS".asInstanceOf[SECONDS]
   def SECOND_DAY: SECOND_DAY = "SECOND_DAY".asInstanceOf[SECOND_DAY]
+  def SECRETS_MANAGER: SECRETS_MANAGER = "SECRETS_MANAGER".asInstanceOf[SECRETS_MANAGER]
   def SECTION: SECTION = "SECTION".asInstanceOf[SECTION]
   def SECURITY: SECURITY = "SECURITY".asInstanceOf[SECURITY]
   def SECURITY_GROUPS_NOT_FOUND: SECURITY_GROUPS_NOT_FOUND = "SECURITY_GROUPS_NOT_FOUND".asInstanceOf[SECURITY_GROUPS_NOT_FOUND]
@@ -17558,6 +17572,7 @@ object awsDashSdkLibStrings {
   def SERVICE_LEVEL: SERVICE_LEVEL = "SERVICE_LEVEL".asInstanceOf[SERVICE_LEVEL]
   def SERVICE_LOG: SERVICE_LOG = "SERVICE_LOG".asInstanceOf[SERVICE_LOG]
   def SERVICE_MANAGED: SERVICE_MANAGED = "SERVICE_MANAGED".asInstanceOf[SERVICE_MANAGED]
+  def SERVICE_ROLE: SERVICE_ROLE = "SERVICE_ROLE".asInstanceOf[SERVICE_ROLE]
   def SETUP: SETUP = "SETUP".asInstanceOf[SETUP]
   def SEVEN_DAYS: SEVEN_DAYS = "SEVEN_DAYS".asInstanceOf[SEVEN_DAYS]
   def SEVERITY: SEVERITY = "SEVERITY".asInstanceOf[SEVERITY]
@@ -17914,6 +17929,7 @@ object awsDashSdkLibStrings {
   def TIMESTAMP: TIMESTAMP = "TIMESTAMP".asInstanceOf[TIMESTAMP]
   def TIME_STAMPING: TIME_STAMPING = "TIME_STAMPING".asInstanceOf[TIME_STAMPING]
   def TITLE: TITLE = "TITLE".asInstanceOf[TITLE]
+  def TLS: TLS = "TLS".asInstanceOf[TLS]
   def TLS_WEB_CLIENT_AUTHENTICATION: TLS_WEB_CLIENT_AUTHENTICATION = "TLS_WEB_CLIENT_AUTHENTICATION".asInstanceOf[TLS_WEB_CLIENT_AUTHENTICATION]
   def TLS_WEB_SERVER_AUTHENTICATION: TLS_WEB_SERVER_AUTHENTICATION = "TLS_WEB_SERVER_AUTHENTICATION".asInstanceOf[TLS_WEB_SERVER_AUTHENTICATION]
   def TLSv1: TLSv1 = "TLSv1".asInstanceOf[TLSv1]

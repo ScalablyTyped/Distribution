@@ -135,24 +135,24 @@ class NavigationRoot () extends js.Object {
     * Reset the app to a new layout
     */
   def setRoot(layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.LayoutRoot): js.Promise[_] = js.native
-  def setStackRoot(
+  def setStackRoot[P](
     componentId: java.lang.String,
-    layout: js.Array[reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[js.Object]]
+    layout: js.Array[reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[P]]
   ): js.Promise[_] = js.native
   /**
     * Sets new root component to stack.
     */
-  def setStackRoot(
+  def setStackRoot[P](
     componentId: java.lang.String,
-    layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[js.Object]
+    layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[P]
   ): js.Promise[_] = js.native
   /**
     * Show a screen as a modal.
     */
-  def showModal(layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[js.Object]): js.Promise[_] = js.native
+  def showModal[P](layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[P]): js.Promise[_] = js.native
   /**
     * Show overlay on top of the entire app
     */
-  def showOverlay(layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[js.Object]): js.Promise[_] = js.native
+  def showOverlay[P](layout: reactDashNativeDashNavigationLib.libDistInterfacesLayoutMod.Layout[P]): js.Promise[_] = js.native
 }
 

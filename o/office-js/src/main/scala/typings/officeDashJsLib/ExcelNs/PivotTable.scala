@@ -10,9 +10,6 @@ import scala.scalajs.js.annotation._
   * Represents an Excel PivotTable.
   *
   * [Api set: ExcelApi 1.3]
-  * 
-  * @remarks
-  * Our {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-pivottables | how-to guide on working with PivotTables} has detailed walkthroughs, images, and code samples.
   */
 @JSGlobal("Excel.PivotTable")
 @js.native

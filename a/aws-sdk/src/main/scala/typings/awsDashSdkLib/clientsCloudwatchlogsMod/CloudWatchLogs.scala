@@ -881,7 +881,7 @@ trait CloudWatchLogs
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Schedules a query of a log group using CloudWatch Logs Insights. You specify the log group to query, the query string to use, and the time to query. For more information, see CloudWatch Logs Insights Query Syntax.
+    * Schedules a query of a log group using CloudWatch Logs Insights. You specify the log group and time range to query, and the query string to use. For more information, see CloudWatch Logs Insights Query Syntax.
     */
   def startQuery(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCloudwatchlogsMod.CloudWatchLogsNs.StartQueryResponse, 
@@ -898,7 +898,7 @@ trait CloudWatchLogs
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Schedules a query of a log group using CloudWatch Logs Insights. You specify the log group to query, the query string to use, and the time to query. For more information, see CloudWatch Logs Insights Query Syntax.
+    * Schedules a query of a log group using CloudWatch Logs Insights. You specify the log group and time range to query, and the query string to use. For more information, see CloudWatch Logs Insights Query Syntax.
     */
   def startQuery(params: awsDashSdkLib.clientsCloudwatchlogsMod.CloudWatchLogsNs.StartQueryRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCloudwatchlogsMod.CloudWatchLogsNs.StartQueryResponse, 

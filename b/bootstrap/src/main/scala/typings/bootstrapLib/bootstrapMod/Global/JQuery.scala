@@ -11,8 +11,8 @@ trait JQuery[TElement] extends js.Object {
     * If no _method_ is specified, makes an alert listen for click events on descendant elements which have the `data-dismiss="alert"` attribute.
     * (Not necessary when using the data-api's auto-initialization.)
     * Otherwise, call the method on the alert element:
-    * * `close` — Closes an alert by removing it from the DOM. If the `.fade` and `.show` classes are present on the element, the alert will fade out before it is removed.
-    * * `dispose` — Destroys an element's alert.
+    * * `close` – Closes an alert by removing it from the DOM. If the `.fade` and `.show` classes are present on the element, the alert will fade out before it is removed.
+    * * `dispose` – Destroys an element's alert.
     */
   def alert(): this.type = js.native
   @JSName("alert")
@@ -23,8 +23,8 @@ trait JQuery[TElement] extends js.Object {
   def button_dispose(action: bootstrapLib.bootstrapLibStrings.dispose): this.type = js.native
   /**
     * Call a method on the button element:
-    * * `toggle` — Toggles push state. Gives the button the appearance that it has been activated.
-    * * `dispose` — Destroys an element's button.
+    * * `toggle` – Toggles push state. Gives the button the appearance that it has been activated.
+    * * `dispose` – Destroys an element's button.
     */
   @JSName("button")
   def button_toggle(action: bootstrapLib.bootstrapLibStrings.toggle): this.type = js.native
@@ -36,12 +36,12 @@ trait JQuery[TElement] extends js.Object {
   def carousel(options: bootstrapLib.bootstrapMod.CarouselOption): this.type = js.native
   /**
     * Call a method on the carousel element:
-    * * `cycle` — Cycles through the carousel items from left to right.
-    * * `pause` — Stops the carousel from cycling through items.
-    * * _number_ — Cycles the carousel to a particular frame (0 based, similar to an array).
-    * * `prev` — Cycles to the previous item.
-    * * `next` — Cycles to the next item.
-    * * `dispose` — Destroys an element's carousel.
+    * * `cycle` – Cycles through the carousel items from left to right.
+    * * `pause` – Stops the carousel from cycling through items.
+    * * _number_ – Cycles the carousel to a particular frame (0 based, similar to an array).
+    * * `prev` – Cycles to the previous item.
+    * * `next` – Cycles to the next item.
+    * * `dispose` – Destroys an element's carousel.
     *
     * Returns to the caller before the target item has been shown (i.e. before the `slid.bs.carousel` event occurs).
     */
@@ -90,7 +90,7 @@ trait JQuery[TElement] extends js.Object {
     * Call a method on the dropdown element:
     * * `toggle` – Toggles the dropdown menu of a given navbar or tabbed navigation.
     * * `update` – Updates the position of an element's dropdown.
-    * * `dispose` — Destroys an element's dropdown.
+    * * `dispose` – Destroys an element's dropdown.
     */
   @JSName("dropdown")
   def dropdown_toggle(action: bootstrapLib.bootstrapLibStrings.toggle): this.type = js.native
@@ -147,7 +147,7 @@ trait JQuery[TElement] extends js.Object {
   def popover_hide(action: bootstrapLib.bootstrapLibStrings.hide): this.type = js.native
   /**
     * Call a method on the popover element:
-    * * `show` – Reveals an element's popover.
+    * * `show` – Reveals an element's popover. Popovers whose both title and content are zero-length are never displayed.
     * * `hide` – Hides an element's popover.
     * * `toggle` – Toggles an element's popover.
     * * `dispose` – Hides and destroys an element's popover.
@@ -158,7 +158,7 @@ trait JQuery[TElement] extends js.Object {
     * * `update` – Updates the position of an element's popover.
     *
     * Returns to the caller before the popover has actually been shown or hidden (i.e. before the `shown.bs.popover` or `hidden.bs.popover` event occurs).
-    * This is considered a "manual" triggering of the popover. Popovers whose both title and content are zero-length are never displayed.
+    * This is considered a "manual" triggering of the popover.
     */
   @JSName("popover")
   def popover_show(action: bootstrapLib.bootstrapLibStrings.show): this.type = js.native
@@ -237,7 +237,7 @@ trait JQuery[TElement] extends js.Object {
   def tooltip_hide(action: bootstrapLib.bootstrapLibStrings.hide): this.type = js.native
   /**
     * Call a method on the tooltip element:
-    * * `show` – Reveals an element's tooltip.
+    * * `show` – Reveals an element's tooltip. Tooltips with zero-length titles are never displayed.
     * * `hide` – Hides an element's tooltip.
     * * `toggle` – Toggles an element's tooltip.
     * * `dispose` – Hides and destroys an element's tooltip.

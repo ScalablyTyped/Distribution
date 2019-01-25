@@ -205,7 +205,7 @@ trait ChartAxisLoadOptions extends js.Object {
   var position: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the specified axis position where the other axis crosses at. Read Only. Set to this property should use SetPositionAt(double) method.
+    * Represents the specified axis position where the other axis crosses at. You should use the SetPositionAt(double) method to set this property.
     *
     * [Api set: ExcelApi 1.8]
     */

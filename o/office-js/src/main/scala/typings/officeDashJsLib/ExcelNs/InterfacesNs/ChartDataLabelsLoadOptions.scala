@@ -16,7 +16,7 @@ trait ChartDataLabelsLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents whether data labels automatically generates appropriate text based on context.
+    * Represents whether data labels automatically generate appropriate text based on context.
     *
     * [Api set: ExcelApi 1.8]
     */

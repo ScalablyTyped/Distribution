@@ -29,7 +29,7 @@ trait GridColumn extends js.Object {
   var groupFooterTemplate: js.UndefOr[java.lang.String | js.Function] = js.undefined
   var groupHeaderColumnTemplate: js.UndefOr[java.lang.String | js.Function] = js.undefined
   var groupHeaderTemplate: js.UndefOr[java.lang.String | js.Function] = js.undefined
-  var groupable: js.UndefOr[scala.Boolean] = js.undefined
+  var groupable: js.UndefOr[scala.Boolean | GridColumnGroupable] = js.undefined
   var headerAttributes: js.UndefOr[js.Any] = js.undefined
   var headerTemplate: js.UndefOr[java.lang.String | js.Function] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined

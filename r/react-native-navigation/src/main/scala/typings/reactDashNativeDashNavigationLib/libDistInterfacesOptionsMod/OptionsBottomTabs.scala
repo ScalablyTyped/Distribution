@@ -46,6 +46,13 @@ trait OptionsBottomTabs extends js.Object {
     */
   var hideShadow: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Set when tabs are attached to hierarchy consequently when the
+    * RootView's constructor is called.
+    */
+  var tabsAttachMode: js.UndefOr[
+    reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.together | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.afterInitialTab | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.onSwitchToTab
+  ] = js.undefined
+  /**
     * Set a testID to reference the bottom tabs
     */
   var testID: js.UndefOr[java.lang.String] = js.undefined

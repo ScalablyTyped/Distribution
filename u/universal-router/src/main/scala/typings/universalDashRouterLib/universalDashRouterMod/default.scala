@@ -17,25 +17,13 @@ class default[C /* <: Context */, R] protected () extends UniversalRouter[C, R] 
 @JSImport("universal-router", JSImport.Default)
 @js.native
 object default extends js.Object {
-  /**
-    * `path-to-regexp` function
-    */
   @JSName("pathToRegexp")
   var pathToRegexp_Original: universalDashRouterLib.Anon_Compile = js.native
-  /**
-    * `path-to-regexp` function
-    */
   def pathToRegexp(path: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Path): stdLib.RegExp = js.native
-  /**
-    * `path-to-regexp` function
-    */
   def pathToRegexp(
     path: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Path,
     keys: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Key]
   ): stdLib.RegExp = js.native
-  /**
-    * `path-to-regexp` function
-    */
   def pathToRegexp(
     path: pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Path,
     keys: js.Array[pathDashToDashRegexpLib.pathDashToDashRegexpMod.pathToRegexpNs.Key],

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-rev-replace"
-version := "v0.2.1-dt-20181015Z-40224b"
+version := "v0.2.1-dt-20190124Z-40224b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

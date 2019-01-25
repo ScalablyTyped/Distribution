@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
 trait CustomDataValidation extends js.Object {
   /**
     *
-    * Custom data validation formula, it is to create special rules, such as preventing duplicates, or limiting the total in a range of cells.
+    * A custom data validation formula. This creates special input rules, such as preventing duplicates, or limiting the total in a range of cells.
     *
     * [Api set: ExcelApi 1.8]
     */

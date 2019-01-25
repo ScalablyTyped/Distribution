@@ -64,7 +64,7 @@ object StateChangeTypes extends js.Object {
     extends downshiftLib.downshiftMod.StateChangeTypes
   
   @js.native
-  sealed trait touchStart
+  sealed trait touchEnd
     extends downshiftLib.downshiftMod.StateChangeTypes
   
   @js.native
@@ -84,7 +84,7 @@ object StateChangeTypes extends js.Object {
   /* "__autocomplete_keydown_escape__" */ val keyDownEscape: keyDownEscape with java.lang.String = js.native
   /* "__autocomplete_keydown_space_button__" */ val keyDownSpaceButton: keyDownSpaceButton with java.lang.String = js.native
   /* "__autocomplete_mouseup__" */ val mouseUp: mouseUp with java.lang.String = js.native
-  /* "__autocomplete_touchstart__" */ val touchStart: touchStart with java.lang.String = js.native
+  /* "__autocomplete_touchend__" */ val touchEnd: touchEnd with java.lang.String = js.native
   /* "__autocomplete_unknown__" */ val unknown: unknown with java.lang.String = js.native
   @JSBracketAccess
   def apply(value: java.lang.String): js.UndefOr[downshiftLib.downshiftMod.StateChangeTypes with java.lang.String] = js.native

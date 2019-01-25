@@ -23,9 +23,9 @@ trait Location extends js.Object {
     * The getAsync method starts an asynchronous call to the Exchange server to get the location of an appointment. 
     * The location of the appointment is provided as a string in the asyncResult.value property.
     *
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     *
     * [Api set: Mailbox 1.1]
@@ -37,7 +37,7 @@ trait Location extends js.Object {
     * 
     * In addition to this signature, the method also has the following signature:
     * 
-    * `getAsync(callback: (result: AsyncResult<string>) => void): void;`
+    * `getAsync(callback: (result: Office.AsyncResult<string>) => void): void;`
     * 
     */
   def getAsync(): scala.Unit = js.native
@@ -47,7 +47,7 @@ trait Location extends js.Object {
     * The getAsync method starts an asynchronous call to the Exchange server to get the location of an appointment. 
     * The location of the appointment is provided as a string in the asyncResult.value property.
     *
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     *
     * [Api set: Mailbox 1.1]
@@ -69,10 +69,10 @@ trait Location extends js.Object {
     * The setAsync method starts an asynchronous call to the Exchange server to set the location of an appointment. 
     * Setting the location of an appointment overwrites the current location.
     *
-    * @param location The location of the appointment. The string is limited to 255 characters.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param location - The location of the appointment. The string is limited to 255 characters.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. If setting the location fails, the asyncResult.error property will contain an error code.
     *
     * [Api set: Mailbox 1.1]
@@ -90,7 +90,7 @@ trait Location extends js.Object {
     * 
     * `setAsync(location: string, options: Office.AsyncContextOptions): void;`
     * 
-    * `setAsync(location: string, callback: (result: AsyncResult<void>) => void): void;`
+    * `setAsync(location: string, callback: (result: Office.AsyncResult<void>) => void): void;`
     */
   def setAsync(location: java.lang.String): scala.Unit = js.native
   /**
@@ -99,8 +99,8 @@ trait Location extends js.Object {
     * The setAsync method starts an asynchronous call to the Exchange server to set the location of an appointment. 
     * Setting the location of an appointment overwrites the current location.
     *
-    * @param location The location of the appointment. The string is limited to 255 characters.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param location - The location of the appointment. The string is limited to 255 characters.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. If setting the location fails, the asyncResult.error property will contain an error code.
     *
     * [Api set: Mailbox 1.1]

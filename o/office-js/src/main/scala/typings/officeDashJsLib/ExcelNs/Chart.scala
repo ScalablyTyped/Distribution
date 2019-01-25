@@ -10,9 +10,6 @@ import scala.scalajs.js.annotation._
   * Represents a chart object in a workbook.
   *
   * [Api set: ExcelApi 1.1]
-  * 
-  * @remarks
-  * Our {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-charts | how-to guide on working with charts} has detailed walkthroughs, images, and code samples.
   */
 @JSGlobal("Excel.Chart")
 @js.native
@@ -162,7 +159,7 @@ class Chart ()
   var showAllFieldButtons: scala.Boolean = js.native
   /**
     *
-    * Represents whether to to show the data labels when the value is greater than the maximum value on the value axis.
+    * Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
     If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
     This property applies to 2-D charts only.
     *
@@ -178,7 +175,7 @@ class Chart ()
   var style: scala.Double = js.native
   /**
     *
-    * Represents the title of the specified chart, including the text, visibility, position, and formating of the title. Read-only.
+    * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title. Read-only.
     *
     * [Api set: ExcelApi 1.1]
     */

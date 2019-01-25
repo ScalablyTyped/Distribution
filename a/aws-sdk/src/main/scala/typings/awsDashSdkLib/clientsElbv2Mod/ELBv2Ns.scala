@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 object ELBv2Ns extends js.Object {
   trait Action extends js.Object {
     /**
-      * [HTTPS listener] Information for using Amazon Cognito to authenticate users. Specify only when Type is authenticate-cognito.
+      * [HTTPS listeners] Information for using Amazon Cognito to authenticate users. Specify only when Type is authenticate-cognito.
       */
     var AuthenticateCognitoConfig: js.UndefOr[AuthenticateCognitoActionConfig] = js.undefined
     /**
-      * [HTTPS listener] Information about an identity provider that is compliant with OpenID Connect (OIDC). Specify only when Type is authenticate-oidc.
+      * [HTTPS listeners] Information about an identity provider that is compliant with OpenID Connect (OIDC). Specify only when Type is authenticate-oidc.
       */
     var AuthenticateOidcConfig: js.UndefOr[AuthenticateOidcActionConfig] = js.undefined
     /**
@@ -204,11 +204,11 @@ object ELBv2Ns extends js.Object {
   
   trait CreateListenerInput extends js.Object {
     /**
-      * [HTTPS listeners] The default SSL server certificate. You must provide exactly one certificate. Set CertificateArn to the certificate ARN but do not set IsDefault. To create a certificate list, use AddListenerCertificates.
+      * [HTTPS and TLS listeners] The default SSL server certificate. You must provide exactly one certificate. Set CertificateArn to the certificate ARN but do not set IsDefault. To create a certificate list, use AddListenerCertificates.
       */
     var Certificates: js.UndefOr[CertificateList] = js.undefined
     /**
-      * The actions for the default rule. The rule must include one forward action or one or more fixed-response actions. If the action type is forward, you specify a target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer or TCP for a Network Load Balancer. [HTTPS listener] If the action type is authenticate-oidc, you authenticate users through an identity provider that is OpenID Connect (OIDC) compliant. [HTTPS listener] If the action type is authenticate-cognito, you authenticate users through the user pools supported by Amazon Cognito. [Application Load Balancer] If the action type is redirect, you redirect specified client requests from one URL to another. [Application Load Balancer] If the action type is fixed-response, you drop specified client requests and return a custom HTTP response.
+      * The actions for the default rule. The rule must include one forward action or one or more fixed-response actions. If the action type is forward, you specify a target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer. The protocol of the target group must be TCP or TLS for a Network Load Balancer. [HTTPS listeners] If the action type is authenticate-oidc, you authenticate users through an identity provider that is OpenID Connect (OIDC) compliant. [HTTPS listeners] If the action type is authenticate-cognito, you authenticate users through the user pools supported by Amazon Cognito. [Application Load Balancer] If the action type is redirect, you redirect specified client requests from one URL to another. [Application Load Balancer] If the action type is fixed-response, you drop specified client requests and return a custom HTTP response.
       */
     var DefaultActions: Actions
     /**
@@ -220,11 +220,11 @@ object ELBv2Ns extends js.Object {
       */
     var Port: Port
     /**
-      * The protocol for connections from clients to the load balancer. For Application Load Balancers, the supported protocols are HTTP and HTTPS. For Network Load Balancers, the supported protocol is TCP.
+      * The protocol for connections from clients to the load balancer. For Application Load Balancers, the supported protocols are HTTP and HTTPS. For Network Load Balancers, the supported protocols are TCP and TLS.
       */
     var Protocol: ProtocolEnum
     /**
-      * [HTTPS listeners] The security policy that defines which ciphers and protocols are supported. The default is the current predefined security policy.
+      * [HTTPS and TLS listeners] The security policy that defines which ciphers and protocols are supported. The default is the current predefined security policy.
       */
     var SslPolicy: js.UndefOr[SslPolicyName] = js.undefined
   }
@@ -280,7 +280,7 @@ object ELBv2Ns extends js.Object {
   
   trait CreateRuleInput extends js.Object {
     /**
-      * The actions. Each rule must include exactly one of the following types of actions: forward, fixed-response, or redirect. If the action type is forward, you specify a target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer or TCP for a Network Load Balancer. [HTTPS listener] If the action type is authenticate-oidc, you authenticate users through an identity provider that is OpenID Connect (OIDC) compliant. [HTTPS listener] If the action type is authenticate-cognito, you authenticate users through the user pools supported by Amazon Cognito. [Application Load Balancer] If the action type is redirect, you redirect specified client requests from one URL to another. [Application Load Balancer] If the action type is fixed-response, you drop specified client requests and return a custom HTTP response.
+      * The actions. Each rule must include exactly one of the following types of actions: forward, fixed-response, or redirect. If the action type is forward, you specify a target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer. The protocol of the target group must be TCP or TLS for a Network Load Balancer. [HTTPS listeners] If the action type is authenticate-oidc, you authenticate users through an identity provider that is OpenID Connect (OIDC) compliant. [HTTPS listeners] If the action type is authenticate-cognito, you authenticate users through the user pools supported by Amazon Cognito. [Application Load Balancer] If the action type is redirect, you redirect specified client requests from one URL to another. [Application Load Balancer] If the action type is fixed-response, you drop specified client requests and return a custom HTTP response.
       */
     var Actions: Actions
     /**
@@ -322,7 +322,7 @@ object ELBv2Ns extends js.Object {
       */
     var HealthCheckPort: js.UndefOr[HealthCheckPort] = js.undefined
     /**
-      * The protocol the load balancer uses when performing health checks on targets. The TCP protocol is supported only if the protocol of the target group is TCP. For Application Load Balancers, the default is HTTP. For Network Load Balancers, the default is TCP.
+      * The protocol the load balancer uses when performing health checks on targets. For Application Load Balancers, the default is HTTP. For Network Load Balancers, the default is TCP. The TCP protocol is supported for health checks only if the protocol of the target group is TCP or TLS. The TLS protocol is not supported for health checks.
       */
     var HealthCheckProtocol: js.UndefOr[ProtocolEnum] = js.undefined
     /**
@@ -346,7 +346,7 @@ object ELBv2Ns extends js.Object {
       */
     var Port: js.UndefOr[Port] = js.undefined
     /**
-      * The protocol to use for routing traffic to the targets. For Application Load Balancers, the supported protocols are HTTP and HTTPS. For Network Load Balancers, the supported protocol is TCP. If the target is a Lambda function, this parameter does not apply.
+      * The protocol to use for routing traffic to the targets. For Application Load Balancers, the supported protocols are HTTP and HTTPS. For Network Load Balancers, the supported protocols are TCP and TLS. If the target is a Lambda function, this parameter does not apply.
       */
     var Protocol: js.UndefOr[ProtocolEnum] = js.undefined
     /**
@@ -705,7 +705,7 @@ object ELBv2Ns extends js.Object {
   
   trait Listener extends js.Object {
     /**
-      * The SSL server certificate. You must provide a certificate if the protocol is HTTPS.
+      * The SSL server certificate. You must provide a certificate if the protocol is HTTPS or TLS.
       */
     var Certificates: js.UndefOr[CertificateList] = js.undefined
     /**
@@ -827,11 +827,11 @@ object ELBv2Ns extends js.Object {
   
   trait ModifyListenerInput extends js.Object {
     /**
-      * [HTTPS listeners] The default SSL server certificate. You must provide exactly one certificate. Set CertificateArn to the certificate ARN but do not set IsDefault. To create a certificate list, use AddListenerCertificates.
+      * [HTTPS and TLS listeners] The default SSL server certificate. You must provide exactly one certificate. Set CertificateArn to the certificate ARN but do not set IsDefault. To create a certificate list, use AddListenerCertificates.
       */
     var Certificates: js.UndefOr[CertificateList] = js.undefined
     /**
-      * The actions for the default rule. The rule must include one forward action or one or more fixed-response actions. If the action type is forward, you specify a target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer or TCP for a Network Load Balancer. [HTTPS listener] If the action type is authenticate-oidc, you authenticate users through an identity provider that is OpenID Connect (OIDC) compliant. [HTTPS listener] If the action type is authenticate-cognito, you authenticate users through the user pools supported by Amazon Cognito. [Application Load Balancer] If the action type is redirect, you redirect specified client requests from one URL to another. [Application Load Balancer] If the action type is fixed-response, you drop specified client requests and return a custom HTTP response.
+      * The actions for the default rule. The rule must include one forward action or one or more fixed-response actions. If the action type is forward, you specify a target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer. The protocol of the target group must be TCP or TLS for a Network Load Balancer. [HTTPS listeners] If the action type is authenticate-oidc, you authenticate users through an identity provider that is OpenID Connect (OIDC) compliant. [HTTPS listeners] If the action type is authenticate-cognito, you authenticate users through the user pools supported by Amazon Cognito. [Application Load Balancer] If the action type is redirect, you redirect specified client requests from one URL to another. [Application Load Balancer] If the action type is fixed-response, you drop specified client requests and return a custom HTTP response.
       */
     var DefaultActions: js.UndefOr[Actions] = js.undefined
     /**
@@ -843,11 +843,11 @@ object ELBv2Ns extends js.Object {
       */
     var Port: js.UndefOr[Port] = js.undefined
     /**
-      * The protocol for connections from clients to the load balancer. Application Load Balancers support HTTP and HTTPS and Network Load Balancers support TCP.
+      * The protocol for connections from clients to the load balancer. Application Load Balancers support the HTTP and HTTPS protocols. Network Load Balancers support the TCP and TLS protocols.
       */
     var Protocol: js.UndefOr[ProtocolEnum] = js.undefined
     /**
-      * [HTTPS listeners] The security policy that defines which protocols and ciphers are supported. For more information, see Security Policies in the Application Load Balancers Guide.
+      * [HTTPS and TLS listeners] The security policy that defines which protocols and ciphers are supported. For more information, see Security Policies in the Application Load Balancers Guide.
       */
     var SslPolicy: js.UndefOr[SslPolicyName] = js.undefined
   }
@@ -879,7 +879,7 @@ object ELBv2Ns extends js.Object {
   
   trait ModifyRuleInput extends js.Object {
     /**
-      * The actions. If the action type is forward, you specify a target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer or TCP for a Network Load Balancer. [HTTPS listener] If the action type is authenticate-oidc, you authenticate users through an identity provider that is OpenID Connect (OIDC) compliant. [HTTPS listener] If the action type is authenticate-cognito, you authenticate users through the user pools supported by Amazon Cognito. [Application Load Balancer] If the action type is redirect, you redirect specified client requests from one URL to another. [Application Load Balancer] If the action type is fixed-response, you drop specified client requests and return a custom HTTP response.
+      * The actions. If the action type is forward, you specify a target group. The protocol of the target group must be HTTP or HTTPS for an Application Load Balancer. The protocol of the target group must be TCP or TLS for a Network Load Balancer. [HTTPS listeners] If the action type is authenticate-oidc, you authenticate users through an identity provider that is OpenID Connect (OIDC) compliant. [HTTPS listeners] If the action type is authenticate-cognito, you authenticate users through the user pools supported by Amazon Cognito. [Application Load Balancer] If the action type is redirect, you redirect specified client requests from one URL to another. [Application Load Balancer] If the action type is fixed-response, you drop specified client requests and return a custom HTTP response.
       */
     var Actions: js.UndefOr[Actions] = js.undefined
     /**
@@ -935,7 +935,7 @@ object ELBv2Ns extends js.Object {
       */
     var HealthCheckPort: js.UndefOr[HealthCheckPort] = js.undefined
     /**
-      * The protocol the load balancer uses when performing health checks on targets. The TCP protocol is supported only if the protocol of the target group is TCP. If the protocol of the target group is TCP, you can't modify this setting.
+      * The protocol the load balancer uses when performing health checks on targets. The TCP protocol is supported for health checks only if the protocol of the target group is TCP or TLS. The TLS protocol is not supported for health checks. If the protocol of the target group is TCP, you can't modify this setting.
       */
     var HealthCheckProtocol: js.UndefOr[ProtocolEnum] = js.undefined
     /**
@@ -1327,7 +1327,7 @@ object ELBv2Ns extends js.Object {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-      * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
+      * Adds the specified certificate to the specified HTTPS listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
       */
     def addListenerCertificates(): awsDashSdkLib.libRequestMod.Request[AddListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def addListenerCertificates(
@@ -1338,7 +1338,7 @@ object ELBv2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AddListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
+      * Adds the specified certificate to the specified HTTPS listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
       */
     def addListenerCertificates(params: AddListenerCertificatesInput): awsDashSdkLib.libRequestMod.Request[AddListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def addListenerCertificates(
@@ -1595,7 +1595,7 @@ object ELBv2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeAccountLimitsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Describes the certificates for the specified secure listener.
+      * Describes the certificates for the specified HTTPS listener.
       */
     def describeListenerCertificates(): awsDashSdkLib.libRequestMod.Request[DescribeListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeListenerCertificates(
@@ -1606,7 +1606,7 @@ object ELBv2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Describes the certificates for the specified secure listener.
+      * Describes the certificates for the specified HTTPS listener.
       */
     def describeListenerCertificates(params: DescribeListenerCertificatesInput): awsDashSdkLib.libRequestMod.Request[DescribeListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeListenerCertificates(
@@ -1825,7 +1825,7 @@ object ELBv2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeTargetHealthOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Modifies the specified properties of the specified listener. Any properties that you do not specify retain their current values. However, changing the protocol from HTTPS to HTTP removes the security policy and SSL certificate properties. If you change the protocol from HTTP to HTTPS, you must add the security policy and server certificate.
+      * Modifies the specified properties of the specified listener. Any properties that you do not specify retain their current values. However, changing the protocol from HTTPS to HTTP, or from TLS to TCP, removes the security policy and server certificate properties. If you change the protocol from HTTP to HTTPS, or from TCP to TLS, you must add the security policy and server certificate properties.
       */
     def modifyListener(): awsDashSdkLib.libRequestMod.Request[ModifyListenerOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def modifyListener(
@@ -1836,7 +1836,7 @@ object ELBv2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ModifyListenerOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Modifies the specified properties of the specified listener. Any properties that you do not specify retain their current values. However, changing the protocol from HTTPS to HTTP removes the security policy and SSL certificate properties. If you change the protocol from HTTP to HTTPS, you must add the security policy and server certificate.
+      * Modifies the specified properties of the specified listener. Any properties that you do not specify retain their current values. However, changing the protocol from HTTPS to HTTP, or from TLS to TCP, removes the security policy and server certificate properties. If you change the protocol from HTTP to HTTPS, or from TCP to TLS, you must add the security policy and server certificate properties.
       */
     def modifyListener(params: ModifyListenerInput): awsDashSdkLib.libRequestMod.Request[ModifyListenerOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def modifyListener(
@@ -1963,7 +1963,7 @@ object ELBv2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[RegisterTargetsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Removes the specified certificate from the specified secure listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
+      * Removes the specified certificate from the specified HTTPS listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
       */
     def removeListenerCertificates(): awsDashSdkLib.libRequestMod.Request[RemoveListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def removeListenerCertificates(
@@ -1974,7 +1974,7 @@ object ELBv2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[RemoveListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Removes the specified certificate from the specified secure listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
+      * Removes the specified certificate from the specified HTTPS listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
       */
     def removeListenerCertificates(params: RemoveListenerCertificatesInput): awsDashSdkLib.libRequestMod.Request[RemoveListenerCertificatesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def removeListenerCertificates(
@@ -2336,7 +2336,7 @@ object ELBv2Ns extends js.Object {
   type PageSize = scala.Double
   type Path = java.lang.String
   type Port = scala.Double
-  type ProtocolEnum = awsDashSdkLib.awsDashSdkLibStrings.HTTP | awsDashSdkLib.awsDashSdkLibStrings.HTTPS | awsDashSdkLib.awsDashSdkLibStrings.TCP | java.lang.String
+  type ProtocolEnum = awsDashSdkLib.awsDashSdkLibStrings.HTTP | awsDashSdkLib.awsDashSdkLibStrings.HTTPS | awsDashSdkLib.awsDashSdkLibStrings.TCP | awsDashSdkLib.awsDashSdkLibStrings.TLS | java.lang.String
   type RedirectActionHost = java.lang.String
   type RedirectActionPath = java.lang.String
   type RedirectActionPort = java.lang.String

@@ -11,6 +11,7 @@ trait UserData extends js.Object {
   var email_verified: js.UndefOr[scala.Boolean] = js.undefined
   var family_name: js.UndefOr[java.lang.String] = js.undefined
   var given_name: js.UndefOr[java.lang.String] = js.undefined
+  var name: js.UndefOr[java.lang.String] = js.undefined
   var password: js.UndefOr[java.lang.String] = js.undefined
   var phone_number: js.UndefOr[java.lang.String] = js.undefined
   var phone_verified: js.UndefOr[scala.Boolean] = js.undefined

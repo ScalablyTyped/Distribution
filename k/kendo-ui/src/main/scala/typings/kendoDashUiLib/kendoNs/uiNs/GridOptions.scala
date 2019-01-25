@@ -65,6 +65,6 @@ trait GridOptions extends js.Object {
   var selectable: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var sort: js.UndefOr[js.Function1[/* e */ GridSortEvent, scala.Unit]] = js.undefined
   var sortable: js.UndefOr[scala.Boolean | GridSortable] = js.undefined
-  var toolbar: js.UndefOr[js.Array[GridToolbarItem]] = js.undefined
+  var toolbar: js.UndefOr[js.Array[java.lang.String | GridToolbarItem]] = js.undefined
 }
 

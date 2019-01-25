@@ -19,7 +19,7 @@ trait Anon_BlurButton extends js.Object {
   var keyDownEscape: downshiftLib.downshiftMod.StateChangeTypes
   var keyDownSpaceButton: downshiftLib.downshiftMod.StateChangeTypes
   var mouseUp: downshiftLib.downshiftMod.StateChangeTypes
-  var touchStart: downshiftLib.downshiftMod.StateChangeTypes
+  var touchEnd: downshiftLib.downshiftMod.StateChangeTypes
   var unknown: downshiftLib.downshiftMod.StateChangeTypes
 }
 

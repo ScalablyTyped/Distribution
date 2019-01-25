@@ -41,7 +41,7 @@ trait RoamingSettings extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param name The case-sensitive name of the setting to retrieve.
+    * @param name - The case-sensitive name of the setting to retrieve.
     * @returns Type: String | Number | Boolean | Object | Array
     */
   def get(name: java.lang.String): js.Any = js.native
@@ -55,7 +55,7 @@ trait RoamingSettings extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param name The case-sensitive name of the setting to remove.
+    * @param name - The case-sensitive name of the setting to remove.
     */
   def remove(name: java.lang.String): scala.Unit = js.native
   /**
@@ -72,7 +72,7 @@ trait RoamingSettings extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
   def saveAsync(): scala.Unit = js.native
@@ -94,8 +94,8 @@ trait RoamingSettings extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param name The case-sensitive name of the setting to set or create.
-    * @param value Specifies the value to be stored.
+    * @param name - The case-sensitive name of the setting to set or create.
+    * @param value - Specifies the value to be stored.
     */
   def set(name: java.lang.String, value: js.Any): scala.Unit = js.native
 }

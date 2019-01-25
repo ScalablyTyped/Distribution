@@ -20,10 +20,10 @@ trait Anon_ActionSheet extends js.Object {
   var NavBar: Anon_ElementExtendFnOptionsProtoNavBar
   var Pane: Anon_ElementExtendFnOptionsProtoObjectPane
   var PopOver: Anon_ElementExtendFnOptionsProtoObjectPopOver
-  var ScrollView: Anon_ElementExtendFnOptionsProtoObjectScrollView
+  var ScrollView: Anon_ElementExtendFnOptionsProtoObjectScrollViewScrollViewOptions
   var Scroller: Anon_ElementExtendFnOptionsProtoObjectScroller
   var SplitView: Anon_ElementExtendFnOptionsProtoObjectSplitView
-  var Switch: Anon_ElementExtendFnOptionsProtoObjectSwitch
+  var Switch: Anon_ElementExtendFnOptionsProtoObjectSwitchSwitchOptions
   var TabStrip: Anon_ElementExtendFnOptionsProtoObjectTabStripTabStripOptions
   var View: Anon_ElementExtendFnOptionsProtoObjectView
   var Widget: org.scalablytyped.runtime.Instantiable0[kendoDashUiLib.kendoNs.mobileNs.uiNs.Widget]

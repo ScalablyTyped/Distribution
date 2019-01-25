@@ -10,9 +10,6 @@ import scala.scalajs.js.annotation._
   * An Excel worksheet is a grid of cells. It can contain data, tables, charts, etc.
   *
   * [Api set: ExcelApi 1.1]
-  * 
-  * @remarks 
-  * Our {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-worksheets | how-to guide on working with worksheets} has detailed walkthroughs and code samples.
   */
 @JSGlobal("Excel.Worksheet")
 @js.native

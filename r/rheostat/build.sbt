@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rheostat"
-version := "2.1-dt-20180806Z-a8cc0f"
+version := "3.0-dt-20190115Z-e35e3d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

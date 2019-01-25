@@ -36,18 +36,12 @@ trait Eth extends js.Object {
   def estimateGas(tx: web3Lib.ethTypesMod.Tx, callback: web3Lib.typesMod.Callback[scala.Double]): js.Promise[scala.Double] = js.native
   def getAccounts(): js.Promise[js.Array[java.lang.String]] = js.native
   def getAccounts(cb: web3Lib.typesMod.Callback[js.Array[java.lang.String]]): js.Promise[js.Array[java.lang.String]] = js.native
-  def getBalance(address: java.lang.String): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BigNumber */ _
-  ] = js.native
-  def getBalance(address: java.lang.String, defaultBlock: web3Lib.ethTypesMod.BlockType): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BigNumber */ _
-  ] = js.native
+  def getBalance(address: java.lang.String): js.Promise[java.lang.String] = js.native
+  def getBalance(address: java.lang.String, defaultBlock: web3Lib.ethTypesMod.BlockType): js.Promise[java.lang.String] = js.native
   def getBalance(
     address: java.lang.String,
     defaultBlock: web3Lib.ethTypesMod.BlockType,
-    cb: web3Lib.typesMod.Callback[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BigNumber */ _
-    ]
+    cb: web3Lib.typesMod.Callback[java.lang.String]
   ): scala.Unit = js.native
   def getBlock(number: web3Lib.ethTypesMod.BlockType): js.Promise[web3Lib.ethTypesMod.Block] = js.native
   def getBlock(number: web3Lib.ethTypesMod.BlockType, returnTransactionObjects: scala.Boolean): js.Promise[web3Lib.ethTypesMod.Block] = js.native

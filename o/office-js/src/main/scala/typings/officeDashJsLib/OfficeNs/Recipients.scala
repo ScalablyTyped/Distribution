@@ -41,12 +41,12 @@ trait Recipients extends js.Object {
     * 
     * `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`
     * 
-    * `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult<void>) => void): void;`
+    * `addAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: Office.AsyncResult<void>) => void): void;`
     *
-    * @param recipients The recipients to add to the recipients list.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param recipients - The recipients to add to the recipients list.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. If adding the recipients fails, the asyncResult.error property will contain an error code.
     */
   def addAsync(recipients: js.Array[java.lang.String | EmailUser | EmailAddressDetails]): scala.Unit = js.native
@@ -70,8 +70,8 @@ trait Recipients extends js.Object {
     *
     * <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.</td></tr></table>
     *
-    * @param recipients The recipients to add to the recipients list.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param recipients - The recipients to add to the recipients list.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. If adding the recipients fails, the asyncResult.error property will contain an error code.
     */
   def addAsync(
@@ -99,7 +99,7 @@ trait Recipients extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
     *
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     *                 The `value` property of the result is an array of EmailAddressDetails objects.
     */
@@ -118,11 +118,11 @@ trait Recipients extends js.Object {
     * 
     * In addition to this signature, this method also has the following signature:
     * 
-    * `getAsync(callback: (result: AsyncResult<Office.EmailAddressDetails[]>) => void): void;`
+    * `getAsync(callback: (result: Office.AsyncResult<EmailAddressDetails[]>) => void): void;`
     *
-    * @param options An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     *                 The `value` property of the result is an array of EmailAddressDetails objects.
     */
@@ -158,12 +158,12 @@ trait Recipients extends js.Object {
     * 
     * `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], options: Office.AsyncContextOptions): void;`
     * 
-    * `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: AsyncResult<void>) => void): void;`
+    * `setAsync(recipients: (string | EmailUser | EmailAddressDetails)[], callback: (result: Office.AsyncResult<void>) => void): void;`
     *
-    * @param recipients The recipients to add to the recipients list.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param recipients - The recipients to add to the recipients list.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     *                 If setting the recipients fails the asyncResult.error property will contain a code that indicates any error that occurred 
     *                 while adding the data.
@@ -191,8 +191,8 @@ trait Recipients extends js.Object {
     *
     * <tr><td>Errors</td><td>NumberOfRecipientsExceeded - The number of recipients exceeded 100 entries.</td></tr></table>
     *
-    * @param recipients The recipients to add to the recipients list.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param recipients - The recipients to add to the recipients list.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. 
     *                 If setting the recipients fails the asyncResult.error property will contain a code that indicates any error that occurred 
     *                 while adding the data.

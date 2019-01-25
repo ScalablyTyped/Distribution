@@ -8,11 +8,14 @@ import scala.scalajs.js.annotation._
 @JSGlobal("kendo.date")
 @js.native
 object dateNs extends js.Object {
+  var MS_PER_DAY: scala.Double = js.native
+  var MS_PER_HOUR: scala.Double = js.native
+  var MS_PER_MINUTE: scala.Double = js.native
   def addDays(targetDate: stdLib.Date, numberOfDaysToAdd: scala.Double): stdLib.Date = js.native
   def dayOfWeek(targetDate: stdLib.Date, dayOfWeek: scala.Double, direction: scala.Double): stdLib.Date = js.native
   def firstDayOfMonth(targetDate: stdLib.Date): stdLib.Date = js.native
   def getDate(date: stdLib.Date): stdLib.Date = js.native
-  def getMilliseconds(targetDate: stdLib.Date): stdLib.Date = js.native
+  def getMilliseconds(targetDate: stdLib.Date): scala.Double = js.native
   def isInDateRange(targetDate: stdLib.Date, lowerLimitDate: stdLib.Date, upperLimitDate: stdLib.Date): scala.Boolean = js.native
   def isInTimeRange(targetDate: stdLib.Date, lowerLimitDate: stdLib.Date, upperLimitDate: stdLib.Date): scala.Boolean = js.native
   def isToday(targetDate: stdLib.Date): scala.Boolean = js.native

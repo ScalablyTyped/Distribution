@@ -8,6 +8,7 @@
 //                 Tim Chen <https://github.com/timc13>
 //                 Pat Gaffney <https://github.com/patrickrgaffney>
 //                 Prabodh Tiwari <https://github.com/prabodht>
+//                 Georg Steinmetz <https://github.com/georg94>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.9
 ```

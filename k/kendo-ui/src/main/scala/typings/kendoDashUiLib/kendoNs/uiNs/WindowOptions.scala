@@ -15,7 +15,7 @@ trait WindowOptions extends js.Object {
   var content: js.UndefOr[java.lang.String | WindowContent] = js.undefined
   var deactivate: js.UndefOr[js.Function1[/* e */ WindowEvent, scala.Unit]] = js.undefined
   var dragend: js.UndefOr[js.Function1[/* e */ WindowEvent, scala.Unit]] = js.undefined
-  var draggable: js.UndefOr[scala.Boolean] = js.undefined
+  var draggable: js.UndefOr[scala.Boolean | WindowDraggable] = js.undefined
   var dragstart: js.UndefOr[js.Function1[/* e */ WindowEvent, scala.Unit]] = js.undefined
   var error: js.UndefOr[js.Function1[/* e */ WindowErrorEvent, scala.Unit]] = js.undefined
   var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined
@@ -26,7 +26,7 @@ trait WindowOptions extends js.Object {
   var minHeight: js.UndefOr[scala.Double] = js.undefined
   var minWidth: js.UndefOr[scala.Double] = js.undefined
   var minimize: js.UndefOr[js.Function1[/* e */ WindowEvent, scala.Unit]] = js.undefined
-  var modal: js.UndefOr[scala.Boolean] = js.undefined
+  var modal: js.UndefOr[scala.Boolean | WindowModal] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var open: js.UndefOr[js.Function1[/* e */ WindowEvent, scala.Unit]] = js.undefined
   var pinned: js.UndefOr[scala.Boolean] = js.undefined
@@ -35,6 +35,7 @@ trait WindowOptions extends js.Object {
   var resizable: js.UndefOr[scala.Boolean] = js.undefined
   var resize: js.UndefOr[js.Function1[/* e */ WindowEvent, scala.Unit]] = js.undefined
   var scrollable: js.UndefOr[scala.Boolean] = js.undefined
+  var size: js.UndefOr[java.lang.String] = js.undefined
   var title: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
   var visible: js.UndefOr[scala.Boolean] = js.undefined
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined

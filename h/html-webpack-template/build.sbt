@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "html-webpack-template"
-version := "6.0-dt-20180306Z-16c6e7"
+version := "6.0-dt-20180306Z-f8065f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20180214Z-3be82b",
-  "org.scalablytyped" %%% "clean-css" % "v3.4.9-dt-20180214Z-1f2323",
-  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20181017Z-67ef2a",
-  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20181121Z-c032f0",
+  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190124Z-32ee70",
+  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190124Z-446c5c",
+  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20181121Z-12bb12",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
   "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20180214Z-a03586",
   "org.scalablytyped" %%% "source-map" % "0.7.3-1d8315",

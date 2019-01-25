@@ -18,7 +18,7 @@ object scryptDashJsMod extends js.Object {
     callback: js.Function3[
       /* error */ js.UndefOr[nodeLib.Error | scala.Null], 
       /* progress */ scala.Double, 
-      /* key */ js.UndefOr[java.lang.String], 
+      /* key */ js.UndefOr[js.Array[scala.Double]], 
       scala.Unit
     ]
   ): scala.Unit = js.native

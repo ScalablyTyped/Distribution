@@ -46,6 +46,11 @@ trait Sharp
     */
   def convolve(kernel: Kernel): Sharp = js.native
   /**
+    * Ensure alpha channel, if missing. The added alpha channel will be fully opaque. This is a no-op if the image already has an alpha channel.
+    * @returns A sharp instance that can be used to chain operations
+    */
+  def ensureAlpha(): Sharp = js.native
+  /**
     * Extends/pads the edges of the image with the provided background colour.
     * This operation will always occur after resizing and extraction, if any.
     * @param extend single pixel count to add to all edges or an Object with per-edge counts
@@ -226,6 +231,7 @@ trait Sharp
     * @throws {Error} Invalid parameters
     * @returns A sharp instance that can be used to chain operations
     */
+  def overlayWith(): Sharp = js.native
   def overlayWith(image: java.lang.String): Sharp = js.native
   def overlayWith(image: java.lang.String, options: OverlayOptions): Sharp = js.native
   def overlayWith(image: nodeLib.Buffer): Sharp = js.native

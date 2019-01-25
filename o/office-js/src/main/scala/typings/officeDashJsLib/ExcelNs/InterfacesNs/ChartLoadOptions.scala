@@ -137,7 +137,7 @@ trait ChartLoadOptions extends js.Object {
   var showAllFieldButtons: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents whether to to show the data labels when the value is greater than the maximum value on the value axis.
+    * Represents whether to show the data labels when the value is greater than the maximum value on the value axis.
     If value axis became smaller than the size of data points, you can use this property to set whether to show the data labels.
     This property applies to 2-D charts only.
     *
@@ -153,7 +153,7 @@ trait ChartLoadOptions extends js.Object {
   var style: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Represents the title of the specified chart, including the text, visibility, position, and formating of the title.
+    * Represents the title of the specified chart, including the text, visibility, position, and formatting of the title.
     *
     * [Api set: ExcelApi 1.1]
     */

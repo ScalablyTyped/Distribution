@@ -5,6 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * The InternetHeaders object represents properties that are preserved after the message item leaves Exchange and is converted to a MIME message. 
+  * These properties are stored as x-headers in the MIME message.
+  * 
+  * InternetHeaders are stored as key/value pairs on a per-item basis.
+  *
+  * [Api set: Mailbox Preview]
+  *
+  * @remarks
+  * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+  *
+  * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+  * 
+  * @beta
+  */
 @js.native
 trait InternetHeaders extends js.Object {
   /**
@@ -20,13 +35,13 @@ trait InternetHeaders extends js.Object {
     * 
     * In addition to this signature, this method also has the following signature:
     * 
-    * `getAsync(names: string[], callback: (result: AsyncResult<Office.InternetHeaders>) => void): void;`
+    * `getAsync(names: string[], callback: (result: Office.AsyncResult<InternetHeaders>) => void): void;`
     * 
-    * @param names The names of the internet headers to be returned.
-    * @param options Optional. An object literal that contains one or more of the following properties:
+    * @param names - The names of the internet headers to be returned.
+    * @param options - Optional. An object literal that contains one or more of the following properties:
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
-    *                 asyncResult, which is an Office.AsyncResult object.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+    *                asyncResult, which is an Office.AsyncResult object.
     * 
     * @beta
     */
@@ -53,13 +68,13 @@ trait InternetHeaders extends js.Object {
     * 
     * In addition to this signature, this method also has the following signature:
     * 
-    * `removeAsync(names: string[], callback: (result: AsyncResult<Office.Body>) => void): void;`
+    * `removeAsync(names: string[], callback: (result: Office.AsyncResult<Body>) => void): void;`
     * 
-    * @param names The names of the internet headers to be removed.
-    * @param options Optional. An object literal that contains one or more of the following properties:
+    * @param names - The names of the internet headers to be removed.
+    * @param options - Optional. An object literal that contains one or more of the following properties:
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
-    *                 asyncResult, which is an Office.AsyncResult object.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+    *                asyncResult, which is an Office.AsyncResult object.
     * 
     * @beta
     */
@@ -89,13 +104,13 @@ trait InternetHeaders extends js.Object {
     *
     * In addition to this signature, this method also has the following signatures:
     * 
-    * `setAsync(headers: string, callback: (result: AsyncResult<void>) => void): void;`
+    * `setAsync(headers: string, callback: (result: Office.AsyncResult<void>) => void): void;`
     * 
-    * @param headers The names and corresponding values of the headers to be set. Should be a dictionary object with keys being the names of the 
+    * @param headers - The names and corresponding values of the headers to be set. Should be a dictionary object with keys being the names of the 
     *                internet headers and values being the values of the internet headers.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
     *                  Any errors encountered will be provided in the asyncResult.error property.
     * 
     * @beta

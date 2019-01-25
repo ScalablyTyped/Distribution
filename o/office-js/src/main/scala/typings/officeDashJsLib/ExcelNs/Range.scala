@@ -10,9 +10,6 @@ import scala.scalajs.js.annotation._
   * Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc.
   *
   * [Api set: ExcelApi 1.1]
-  * 
-  * @remarks
-  * Our {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-ranges | how-to guide on working with ranges} has detailed walkthroughs, images, and code samples.
   */
 @JSGlobal("Excel.Range")
 @js.native

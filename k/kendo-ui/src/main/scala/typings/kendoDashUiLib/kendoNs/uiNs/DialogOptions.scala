@@ -20,10 +20,11 @@ trait DialogOptions extends js.Object {
   var messages: js.UndefOr[DialogMessages] = js.undefined
   var minHeight: js.UndefOr[scala.Double] = js.undefined
   var minWidth: js.UndefOr[scala.Double] = js.undefined
-  var modal: js.UndefOr[scala.Boolean] = js.undefined
+  var modal: js.UndefOr[scala.Boolean | DialogModal] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var open: js.UndefOr[js.Function1[/* e */ DialogEvent, scala.Unit]] = js.undefined
   var show: js.UndefOr[js.Function1[/* e */ DialogEvent, scala.Unit]] = js.undefined
+  var size: js.UndefOr[java.lang.String] = js.undefined
   var title: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
   var visible: js.UndefOr[scala.Boolean] = js.undefined
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined

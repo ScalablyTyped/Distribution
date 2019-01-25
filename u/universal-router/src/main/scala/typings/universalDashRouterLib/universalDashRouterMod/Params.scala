@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Params
-  extends /* _ */ org.scalablytyped.runtime.StringDictionary[js.Any]
+  extends /* paramName */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

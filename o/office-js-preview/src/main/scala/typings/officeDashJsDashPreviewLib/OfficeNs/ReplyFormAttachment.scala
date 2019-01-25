@@ -5,6 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * A file or item attachment. Used when displaying a reply form.
+  */
 trait ReplyFormAttachment extends js.Object {
   /**
     * Only used if type is set to file. If true, indicates that the attachment will be shown inline in the message body, and should not be 

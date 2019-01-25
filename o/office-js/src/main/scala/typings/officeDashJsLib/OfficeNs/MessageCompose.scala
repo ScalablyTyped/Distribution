@@ -128,15 +128,15 @@ trait MessageCompose extends Message {
     * 
     * `addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;`
     * 
-    * `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult<string>) => void): void;`
+    * `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: Office.AsyncResult<string>) => void): void;`
     *
-    * @param uri The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
-    * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
+    * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     *        isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the 
     *        attachment list.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. 
     *                 If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of 
     *                 the error.
@@ -163,16 +163,16 @@ trait MessageCompose extends Message {
     * 
     * `addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;`
     * 
-    * `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: AsyncResult<string>) => void): void;`
+    * `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: Office.AsyncResult<string>) => void): void;`
     *
-    * @param uri The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
-    * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
+    * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     *        isInline: If true, indicates that the attachment will be shown inline in the message body, and should not be displayed in the 
     *        attachment list.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
-    *                 type asyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    *                 type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. 
     *                 If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of 
     *                 the error.
     */
@@ -193,9 +193,9 @@ trait MessageCompose extends Message {
     *
     * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
     *
-    * @param uri The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
-    * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
+    * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. 
     *                 If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of 
     *                 the error.
@@ -216,9 +216,9 @@ trait MessageCompose extends Message {
     *
     * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
     *
-    * @param uri The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
-    * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
+    * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. 
     *                 If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of 
     *                 the error.
@@ -238,7 +238,7 @@ trait MessageCompose extends Message {
   /**
     * Adds a file to a message or appointment as an attachment.
     *
-    * The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the AsyncResult.value object.
+    * The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the asyncResult.value object.
     *
     * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
     *
@@ -251,12 +251,12 @@ trait MessageCompose extends Message {
     *
     * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
     * 
-    * @param base64File The base64 encoded content of an image or file to be added to an email or event.
-    * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param base64File - The base64 encoded content of an image or file to be added to an email or event.
+    * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     *        isInline: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of type asyncResult. 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
     *                  On success, the attachment identifier will be provided in the asyncResult.value property. 
     *                  If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
     * 
@@ -298,14 +298,14 @@ trait MessageCompose extends Message {
     * 
     * `addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`
     * 
-    * `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult<string>) => void): void;`
+    * `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: Office.AsyncResult<string>) => void): void;`
     *
-    * @param itemId The Exchange identifier of the item to attach. The maximum length is 100 characters.
-    * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-    * @param options An object literal that contains one or more of the following properties.
+    * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
+    * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+    * @param options - An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
-    *                 type AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    *                 type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. 
     *                 If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of 
     *                 the error.
     */
@@ -337,13 +337,13 @@ trait MessageCompose extends Message {
     * 
     * `addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`
     * 
-    * `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: AsyncResult<string>) => void): void;`
+    * `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: Office.AsyncResult<string>) => void): void;`
     *
-    * @param itemId The Exchange identifier of the item to attach. The maximum length is 100 characters.
-    * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-    * @param options An object literal that contains one or more of the following properties.
+    * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
+    * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+    * @param options - An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. 
     *                 If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of 
     *                 the error.
@@ -371,9 +371,9 @@ trait MessageCompose extends Message {
     *
     * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
     *
-    * @param itemId The Exchange identifier of the item to attach. The maximum length is 100 characters.
-    * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
+    * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. 
     *                 If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of 
     *                 the error.
@@ -400,9 +400,9 @@ trait MessageCompose extends Message {
     *
     * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
     *
-    * @param itemId The Exchange identifier of the item to attach. The maximum length is 100 characters.
-    * @param attachmentName The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
+    * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. On success, the attachment identifier will be provided in the asyncResult.value property. 
     *                 If adding the attachment fails, the asyncResult object will contain an Error object that provides a description of 
     *                 the error.
@@ -469,9 +469,9 @@ trait MessageCompose extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
     * 
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. If the call fails, the asyncResult.error property will contain and error code with the reason for 
     *                 the failure.
     * 
@@ -503,9 +503,9 @@ trait MessageCompose extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
     *
-    * @param coercionType Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. 
+    * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. 
     *                     If HTML, the method returns the selected text, whether it is plaintext or HTML.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
   /**
@@ -528,9 +528,9 @@ trait MessageCompose extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
     *
-    * @param coercionType Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. 
+    * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. 
     *                     If HTML, the method returns the selected text, whether it is plaintext or HTML.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
   def getSelectedDataAsync(coercionType: CoercionType, callback: js.Function1[/* result */ AsyncResult[_], scala.Unit]): scala.Unit = js.native
@@ -554,11 +554,11 @@ trait MessageCompose extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
     *
-    * @param coercionType Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. 
+    * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. 
     *                     If HTML, the method returns the selected text, whether it is plaintext or HTML.
-    * @param options An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
   /**
@@ -581,11 +581,11 @@ trait MessageCompose extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
     *
-    * @param coercionType Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. 
+    * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. 
     *                     If HTML, the method returns the selected text, whether it is plaintext or HTML.
-    * @param options An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
   def getSelectedDataAsync(
@@ -618,12 +618,12 @@ trait MessageCompose extends Message {
     * 
     * `removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;`
     * 
-    * `removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;`
+    * `removeAttachmentAsync(attachmentId: string, callback: (result: Office.AsyncResult<void>) => void): void;`
     *
-    * @param attachmentId The identifier of the attachment to remove.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param attachmentId - The identifier of the attachment to remove.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. 
     *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
     */
@@ -652,12 +652,12 @@ trait MessageCompose extends Message {
     * 
     * `removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;`
     * 
-    * `removeAttachmentAsync(attachmentId: string, callback: (result: AsyncResult<void>) => void): void;`
+    * `removeAttachmentAsync(attachmentId: string, callback: (result: Office.AsyncResult<void>) => void): void;`
     *
-    * @param attachmentId The identifier of the attachment to remove.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param attachmentId - The identifier of the attachment to remove.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. 
     *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
     */
@@ -681,8 +681,8 @@ trait MessageCompose extends Message {
     *
     * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
     *
-    * @param attachmentId The identifier of the attachment to remove.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param attachmentId - The identifier of the attachment to remove.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. 
     *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
     */
@@ -705,9 +705,9 @@ trait MessageCompose extends Message {
     *
     * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
     *
-    * @param attachmentId The identifier of the attachment to remove.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
-    *                 type {@link Office.AsyncResult}. 
+    * @param attachmentId - The identifier of the attachment to remove.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    *                 type Office.AsyncResult. 
     *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
     */
   def removeAttachmentAsync(
@@ -757,11 +757,11 @@ trait MessageCompose extends Message {
     * 
     * `saveAsync(options: Office.AsyncContextOptions): void;`
     * 
-    * `saveAsync(callback: (result: AsyncResult<void>) => void): void;`
+    * `saveAsync(callback: (result: Office.AsyncResult<void>) => void): void;`
     *
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. 
     */
   /**
@@ -801,11 +801,11 @@ trait MessageCompose extends Message {
     * 
     * `saveAsync(options: Office.AsyncContextOptions): void;`
     * 
-    * `saveAsync(callback: (result: AsyncResult<void>) => void): void;`
+    * `saveAsync(callback: (result: Office.AsyncResult<void>) => void): void;`
     *
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. 
     *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
     */
@@ -841,7 +841,7 @@ trait MessageCompose extends Message {
     *
     * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
     *
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. 
     */
   /**
@@ -875,7 +875,7 @@ trait MessageCompose extends Message {
     *
     * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
     *
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. 
     *                 If removing the attachment fails, the asyncResult.error property will contain an error code with the reason for the failure.
     */
@@ -908,11 +908,11 @@ trait MessageCompose extends Message {
     * 
     * `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
     * 
-    * `setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
+    * `setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
     *
-    * @param data The data to be inserted. Data is not to exceed 1,000,000 characters. 
+    * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
     *             If more than 1,000,000 characters are passed in, an ArgumentOutOfRange exception is thrown.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     *        coercionType: If text, the current style is applied in Outlook Web App and Outlook. 
     *        If the field is an HTML editor, only the text data is inserted, even if the data is HTML. 
@@ -920,7 +920,7 @@ trait MessageCompose extends Message {
     *        applied in Outlook. If the field is a text field, an InvalidDataFormat error is returned. 
     *        If coercionType is not set, the result depends on the field: if the field is HTML then HTML is used; 
     *        if the field is text, then plain text is used.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
   /**
@@ -946,11 +946,11 @@ trait MessageCompose extends Message {
     * 
     * `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
     * 
-    * `setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
+    * `setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
     *
-    * @param data The data to be inserted. Data is not to exceed 1,000,000 characters. 
+    * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
     *             If more than 1,000,000 characters are passed in, an ArgumentOutOfRange exception is thrown.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     *        coercionType: If text, the current style is applied in Outlook Web App and Outlook. 
     *        If the field is an HTML editor, only the text data is inserted, even if the data is HTML. 
@@ -959,7 +959,7 @@ trait MessageCompose extends Message {
     *        If the field is a text field, an InvalidDataFormat error is returned. 
     *        If coercionType is not set, the result depends on the field: if the field is HTML then HTML is used; 
     *        if the field is text, then plain text is used.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. 
     */
   def setSelectedDataAsync(data: java.lang.String): scala.Unit = js.native
@@ -980,10 +980,10 @@ trait MessageCompose extends Message {
     *
     * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
     *
-    * @param data The data to be inserted. Data is not to exceed 1,000,000 characters. 
+    * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
     *             If more than 1,000,000 characters are passed in, an ArgumentOutOfRange exception is thrown.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
-    *                 typeOffice.AsyncResult.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    *                 type Office.AsyncResult.
     */
   /**
     * Asynchronously inserts data into the body or subject of a message.
@@ -1002,9 +1002,9 @@ trait MessageCompose extends Message {
     *
     * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
     *
-    * @param data The data to be inserted. Data is not to exceed 1,000,000 characters. 
+    * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
     *             If more than 1,000,000 characters are passed in, an ArgumentOutOfRange exception is thrown.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. 
     */
   def setSelectedDataAsync(data: java.lang.String, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native

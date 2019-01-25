@@ -100,10 +100,10 @@ org.scalablytyped.runtime.Instantiable0[T]
     */
   def createIndexes(): js.Promise[scala.Unit] = js.native
   def createIndexes(cb: js.Function1[/* err */ js.Any, scala.Unit]): js.Promise[scala.Unit] = js.native
-  def deleteMany(conditions: js.Any): Query[_] with QueryHelpers = js.native
-  def deleteMany(conditions: js.Any, callback: js.Function1[/* err */ js.Any, scala.Unit]): Query[_] with QueryHelpers = js.native
-  def deleteOne(conditions: js.Any): Query[_] with QueryHelpers = js.native
-  def deleteOne(conditions: js.Any, callback: js.Function1[/* err */ js.Any, scala.Unit]): Query[_] with QueryHelpers = js.native
+  def deleteMany(conditions: js.Any): Query[mongodbLib.Anon_N] with QueryHelpers = js.native
+  def deleteMany(conditions: js.Any, callback: js.Function1[/* err */ js.Any, scala.Unit]): Query[mongodbLib.Anon_N] with QueryHelpers = js.native
+  def deleteOne(conditions: js.Any): Query[mongodbLib.Anon_N] with QueryHelpers = js.native
+  def deleteOne(conditions: js.Any, callback: js.Function1[/* err */ js.Any, scala.Unit]): Query[mongodbLib.Anon_N] with QueryHelpers = js.native
   /**
     * Adds a discriminator type.
     * @param name discriminator model name
@@ -574,8 +574,8 @@ org.scalablytyped.runtime.Instantiable0[T]
     callback: js.Function2[/* err */ js.Any, /* res */ T, scala.Unit]
   ): js.Promise[T] = js.native
   /** Removes documents from the collection. */
-  def remove(conditions: js.Any): Query[_] with QueryHelpers = js.native
-  def remove(conditions: js.Any, callback: js.Function1[/* err */ js.Any, scala.Unit]): Query[_] with QueryHelpers = js.native
+  def remove(conditions: js.Any): Query[mongodbLib.Anon_N] with QueryHelpers = js.native
+  def remove(conditions: js.Any, callback: js.Function1[/* err */ js.Any, scala.Unit]): Query[mongodbLib.Anon_N] with QueryHelpers = js.native
   /**
     * Same as update(), except MongoDB replace the existing document with the given document (no atomic operators like $set).
     * This function triggers the following middleware: replaceOne

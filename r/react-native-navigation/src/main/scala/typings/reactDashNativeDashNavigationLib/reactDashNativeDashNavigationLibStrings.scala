@@ -16,6 +16,9 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait add extends js.Object
   
   @js.native
+  sealed trait afterInitialTab extends js.Object
+  
+  @js.native
   sealed trait alwaysHide extends js.Object
   
   @js.native
@@ -97,6 +100,9 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait light extends js.Object
   
   @js.native
+  sealed trait onSwitchToTab extends js.Object
+  
+  @js.native
   sealed trait organize extends js.Object
   
   @js.native
@@ -145,6 +151,9 @@ object reactDashNativeDashNavigationLibStrings {
   sealed trait stop extends js.Object
   
   @js.native
+  sealed trait together extends js.Object
+  
+  @js.native
   sealed trait top extends js.Object
   
   @js.native
@@ -162,6 +171,7 @@ object reactDashNativeDashNavigationLibStrings {
   def accelerate: accelerate = "accelerate".asInstanceOf[accelerate]
   def action: action = "action".asInstanceOf[action]
   def add: add = "add".asInstanceOf[add]
+  def afterInitialTab: afterInitialTab = "afterInitialTab".asInstanceOf[afterInitialTab]
   def alwaysHide: alwaysHide = "alwaysHide".asInstanceOf[alwaysHide]
   def alwaysShow: alwaysShow = "alwaysShow".asInstanceOf[alwaysShow]
   def auto: auto = "auto".asInstanceOf[auto]
@@ -189,6 +199,7 @@ object reactDashNativeDashNavigationLibStrings {
   def leading: leading = "leading".asInstanceOf[leading]
   def left: left = "left".asInstanceOf[left]
   def light: light = "light".asInstanceOf[light]
+  def onSwitchToTab: onSwitchToTab = "onSwitchToTab".asInstanceOf[onSwitchToTab]
   def organize: organize = "organize".asInstanceOf[organize]
   def overlay: overlay = "overlay".asInstanceOf[overlay]
   def pause: pause = "pause".asInstanceOf[pause]
@@ -205,6 +216,7 @@ object reactDashNativeDashNavigationLibStrings {
   def sharedElement: sharedElement = "sharedElement".asInstanceOf[sharedElement]
   def showWhenActive: showWhenActive = "showWhenActive".asInstanceOf[showWhenActive]
   def stop: stop = "stop".asInstanceOf[stop]
+  def together: together = "together".asInstanceOf[together]
   def top: top = "top".asInstanceOf[top]
   def trailing: trailing = "trailing".asInstanceOf[trailing]
   def trash: trash = "trash".asInstanceOf[trash]

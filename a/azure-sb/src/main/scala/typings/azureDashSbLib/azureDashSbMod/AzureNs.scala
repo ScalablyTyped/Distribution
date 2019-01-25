@@ -101,6 +101,19 @@ object AzureNs extends js.Object {
       var customProperties: js.UndefOr[Dictionary[_]] = js.undefined
     }
     
+    trait NotificationHubInstallation extends js.Object {
+      val expirationTime: js.UndefOr[java.lang.String] = js.undefined
+      val expiredPushChannel: js.UndefOr[java.lang.String] = js.undefined
+      var installationId: java.lang.String
+      val lastActiveOn: js.UndefOr[java.lang.String] = js.undefined
+      val lastUpdate: js.UndefOr[java.lang.String] = js.undefined
+      var platform: azureDashSbLib.azureDashSbLibStrings.apns | azureDashSbLib.azureDashSbLibStrings.wns | azureDashSbLib.azureDashSbLibStrings.mpns | azureDashSbLib.azureDashSbLibStrings.adm | azureDashSbLib.azureDashSbLibStrings.gcm
+      var pushChannel: java.lang.String
+      var secondaryTile: js.UndefOr[org.scalablytyped.runtime.StringDictionary[azureDashSbLib.Anon_PushChannel]] = js.undefined
+      var tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+      var templates: js.UndefOr[org.scalablytyped.runtime.StringDictionary[azureDashSbLib.Anon_Body]] = js.undefined
+    }
+    
     trait NotificationHubRegistration extends js.Object {
       var BodyTemplate: js.UndefOr[js.Any] = js.undefined
       var ChannelUri: js.UndefOr[java.lang.String] = js.undefined

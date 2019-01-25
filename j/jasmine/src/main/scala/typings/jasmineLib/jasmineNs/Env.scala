@@ -13,16 +13,16 @@ trait Env extends js.Object {
   def addMatchers(matchers: CustomMatcherFactories): scala.Unit = js.native
   def addReporter(reporter: CustomReporter): scala.Unit = js.native
   def addReporter(reporter: Reporter): scala.Unit = js.native
-  def afterAll(afterAllFunction: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit]): scala.Unit = js.native
-  def afterAll(afterAllFunction: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit], timeout: scala.Double): scala.Unit = js.native
-  def afterEach(afterEachFunction: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit]): scala.Unit = js.native
-  def afterEach(afterEachFunction: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit], timeout: scala.Double): scala.Unit = js.native
+  def afterAll(afterAllFunction: jasmineLib.ImplementationCallback): scala.Unit = js.native
+  def afterAll(afterAllFunction: jasmineLib.ImplementationCallback, timeout: scala.Double): scala.Unit = js.native
+  def afterEach(afterEachFunction: jasmineLib.ImplementationCallback): scala.Unit = js.native
+  def afterEach(afterEachFunction: jasmineLib.ImplementationCallback, timeout: scala.Double): scala.Unit = js.native
   def allowRespy(allow: scala.Boolean): scala.Unit = js.native
-  def beforeAll(beforeAllFunction: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit]): scala.Unit = js.native
-  def beforeAll(beforeAllFunction: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit], timeout: scala.Double): scala.Unit = js.native
+  def beforeAll(beforeAllFunction: jasmineLib.ImplementationCallback): scala.Unit = js.native
+  def beforeAll(beforeAllFunction: jasmineLib.ImplementationCallback, timeout: scala.Double): scala.Unit = js.native
   // ddescribe(description: string, specDefinitions: () => void): Suite; Not a part of jasmine. Angular team adds these
-  def beforeEach(beforeEachFunction: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit]): scala.Unit = js.native
-  def beforeEach(beforeEachFunction: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit], timeout: scala.Double): scala.Unit = js.native
+  def beforeEach(beforeEachFunction: jasmineLib.ImplementationCallback): scala.Unit = js.native
+  def beforeEach(beforeEachFunction: jasmineLib.ImplementationCallback, timeout: scala.Double): scala.Unit = js.native
   def clearReporters(): scala.Unit = js.native
   def `compareObjects_`(
     a: js.Any,

@@ -10,5 +10,10 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def apply(): pinoDashHttpLib.pinoDashHttpMod.PinoHttpNs.HttpLogger = js.native
   def apply(opts: pinoDashHttpLib.pinoDashHttpMod.PinoHttpNs.Options): pinoDashHttpLib.pinoDashHttpMod.PinoHttpNs.HttpLogger = js.native
+  def apply(
+    opts: pinoDashHttpLib.pinoDashHttpMod.PinoHttpNs.Options,
+    stream: pinoLib.pinoMod.PNs.DestinationStream
+  ): pinoDashHttpLib.pinoDashHttpMod.PinoHttpNs.HttpLogger = js.native
+  def apply(stream: pinoLib.pinoMod.PNs.DestinationStream): pinoDashHttpLib.pinoDashHttpMod.PinoHttpNs.HttpLogger = js.native
 }
 

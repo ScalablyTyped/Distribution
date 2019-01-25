@@ -130,7 +130,7 @@ trait ChartSeriesCollectionLoadOptions extends js.Object {
   var name: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between – 100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
+    * For EACH ITEM in the collection: Specifies how bars and columns are positioned. Can be a value between –100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
     *
     * [Api set: ExcelApi 1.8]
     */

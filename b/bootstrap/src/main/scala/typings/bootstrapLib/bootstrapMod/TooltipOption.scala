@@ -65,10 +65,11 @@ trait TooltipOption extends js.Object {
   var offset: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
     * How to position the tooltip or popover - auto | top | bottom | left | right.
-    * When auto is specified, it will dynamically reorient the tooltip or popover.
+    * When "auto" is specified, it will dynamically reorient the tooltip or popover.
+    *
     * When a function is used to determine the placement, it is called with
     * the tooltip or popover DOM node as its first argument and the triggering element DOM node as its second.
-    * The this context is set to the tooltip or popover instance.
+    * The `this` context is set to the tooltip or popover instance.
     *
     * @default tooltip: "top", popover: "right"
     */
@@ -88,8 +89,9 @@ trait TooltipOption extends js.Object {
     */
   var selector: js.UndefOr[java.lang.String | bootstrapLib.bootstrapLibNumbers.`false`] = js.undefined
   /**
-    * Base HTML to use when creating the tooltip or popover. The tooltip's (resp., popover's) title will be injected into
-    * the `.tooltip-inner` (resp., `.popover-header`). The `.arrow` will become the tooltip's (resp., popover's) arrow.
+    * Base HTML to use when creating the tooltip or popover.
+    * The tooltip's (resp., popover's) title will be injected into the `.tooltip-inner` (resp., `.popover-header`).
+    * The `.arrow` will become the tooltip's (resp., popover's) arrow.
     * The outermost wrapper element should have the `.tooltip` (resp., .popover) class and `role="tooltip"`.
     *
     * @default '<div class="tooltip" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
@@ -98,7 +100,7 @@ trait TooltipOption extends js.Object {
   var template: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Default title value if title attribute isn't present.
-    * If a function is given, it will be called with its this reference set to the element
+    * If a function is given, it will be called with its `this` reference set to the element
     * that the tooltip or popover is attached to.
     *
     * @default ""

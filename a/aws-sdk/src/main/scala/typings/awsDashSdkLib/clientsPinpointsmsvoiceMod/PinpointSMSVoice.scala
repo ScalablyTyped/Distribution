@@ -192,6 +192,41 @@ trait PinpointSMSVoice
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * List all of the configuration sets associated with your Amazon Pinpoint account in the current region.
+    */
+  def listConfigurationSets(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listConfigurationSets(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * List all of the configuration sets associated with your Amazon Pinpoint account in the current region.
+    */
+  def listConfigurationSets(params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listConfigurationSets(
+    params: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ListConfigurationSetsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Create a new voice message and send it to a recipient's phone number.
     */
   def sendVoiceMessage(): awsDashSdkLib.libRequestMod.Request[

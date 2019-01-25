@@ -22,6 +22,7 @@ trait EditorOptions extends js.Object {
   var pasteCleanup: js.UndefOr[EditorPasteCleanup] = js.undefined
   var pdf: js.UndefOr[EditorPdf] = js.undefined
   var pdfExport: js.UndefOr[js.Function1[/* e */ EditorPdfExportEvent, scala.Unit]] = js.undefined
+  var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var resizable: js.UndefOr[scala.Boolean | EditorResizable] = js.undefined
   var select: js.UndefOr[js.Function1[/* e */ EditorEvent, scala.Unit]] = js.undefined
   var serialization: js.UndefOr[EditorSerialization] = js.undefined

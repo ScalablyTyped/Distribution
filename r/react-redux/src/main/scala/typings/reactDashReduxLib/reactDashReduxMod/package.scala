@@ -53,7 +53,7 @@ package object reactDashReduxMod {
   ]
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
   type ResolveThunks[TDispatchProps] = TDispatchProps | (reactDashReduxLib.reactDashReduxLibStrings.ResolveThunks with TDispatchProps)
-  type Selector[S, TProps, TOwnProps] = js.Function2[/* state */ S, /* ownProps */ TOwnProps, TProps]
+  type Selector[S, TProps, TOwnProps] = (js.Function2[/* state */ S, /* ownProps */ TOwnProps, TProps]) | (js.Function1[/* state */ S, TProps])
   type SelectorFactory[S, TProps, TOwnProps, TFactoryOptions] = js.Function2[
     /* dispatch */ reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.Action[js.Any]], 
     /* factoryOptions */ TFactoryOptions, 

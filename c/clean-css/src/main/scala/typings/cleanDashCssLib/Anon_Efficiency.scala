@@ -6,13 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Efficiency extends js.Object {
-  // A ratio of output size to input size (e.g. 25% if content was reduced from 100 bytes to 75 bytes)
+  /**
+    * `(originalSize - minifiedSize) / originalSize`, e.g. 0.25 if size is reduced from 100 bytes to 75 bytes
+    */
   var efficiency: scala.Double
-  // Optimized content size
+  /**
+    * Optimized content size
+    */
   var minifiedSize: scala.Double
-  // Original content size (after import inlining)
+  /**
+    * Original content size after import inlining
+    */
   var originalSize: scala.Double
-  // Time spent on optimizations
+  /**
+    * Time spent on optimizations in milliseconds
+    */
   var timeSpent: scala.Double
 }
 

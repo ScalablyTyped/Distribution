@@ -14,30 +14,35 @@ object ^ extends js.Object {
     * @param action Function that contains the code to teardown your specs.
     * @param timeout Custom timeout for an async afterAll
     */
-  def afterAll(action: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit]): scala.Unit = js.native
-  def afterAll(action: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit], timeout: scala.Double): scala.Unit = js.native
+  def afterAll(action: jasmineLib.ImplementationCallback): scala.Unit = js.native
+  def afterAll(action: jasmineLib.ImplementationCallback, timeout: scala.Double): scala.Unit = js.native
   /**
     * Run some shared teardown after each of the specs in the describe in which it is called.
     * @param action Function that contains the code to teardown your specs.
     * @param timeout Custom timeout for an async afterEach.
     */
-  def afterEach(action: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit]): scala.Unit = js.native
-  def afterEach(action: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit], timeout: scala.Double): scala.Unit = js.native
+  def afterEach(action: jasmineLib.ImplementationCallback): scala.Unit = js.native
+  def afterEach(action: jasmineLib.ImplementationCallback, timeout: scala.Double): scala.Unit = js.native
   /**
     * Run some shared setup once before all of the specs in the describe are run.
     * Note: Be careful, sharing the setup from a beforeAll makes it easy to accidentally leak state between your specs so that they erroneously pass or fail.
     * @param action Function that contains the code to setup your specs.
     * @param timeout Custom timeout for an async beforeAll.
     */
-  def beforeAll(action: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit]): scala.Unit = js.native
-  def beforeAll(action: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit], timeout: scala.Double): scala.Unit = js.native
+  def beforeAll(action: jasmineLib.ImplementationCallback): scala.Unit = js.native
+  def beforeAll(action: jasmineLib.ImplementationCallback, timeout: scala.Double): scala.Unit = js.native
   /**
     * Run some shared setup before each of the specs in the describe in which it is called.
     * @param action Function that contains the code to setup your specs.
     * @param timeout Custom timeout for an async beforeEach.
     */
-  def beforeEach(action: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit]): scala.Unit = js.native
-  def beforeEach(action: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit], timeout: scala.Double): scala.Unit = js.native
+  def beforeEach(action: jasmineLib.ImplementationCallback): scala.Unit = js.native
+  def beforeEach(action: jasmineLib.ImplementationCallback, timeout: scala.Double): scala.Unit = js.native
+  /**
+    * Create a group of specs (often called a suite).
+    * @param description Textual description of the group
+    * @param specDefinitions Function for Jasmine to invoke that will define inner suites a specs
+    */
   def describe(description: java.lang.String, specDefinitions: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
     * Create an expectation for a spec.
@@ -89,12 +94,8 @@ object ^ extends js.Object {
     * @param timeout Custom timeout for an async spec.
     */
   def fit(expectation: java.lang.String): scala.Unit = js.native
-  def fit(expectation: java.lang.String, assertion: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit]): scala.Unit = js.native
-  def fit(
-    expectation: java.lang.String,
-    assertion: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit],
-    timeout: scala.Double
-  ): scala.Unit = js.native
+  def fit(expectation: java.lang.String, assertion: jasmineLib.ImplementationCallback): scala.Unit = js.native
+  def fit(expectation: java.lang.String, assertion: jasmineLib.ImplementationCallback, timeout: scala.Double): scala.Unit = js.native
   /**
     * Define a single spec. A spec should contain one or more expectations that test the state of the code.
     * A spec whose expectations all succeed will be passing and a spec with any failures will fail.
@@ -103,12 +104,8 @@ object ^ extends js.Object {
     * @param timeout Custom timeout for an async spec.
     */
   def it(expectation: java.lang.String): scala.Unit = js.native
-  def it(expectation: java.lang.String, assertion: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit]): scala.Unit = js.native
-  def it(
-    expectation: java.lang.String,
-    assertion: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit],
-    timeout: scala.Double
-  ): scala.Unit = js.native
+  def it(expectation: java.lang.String, assertion: jasmineLib.ImplementationCallback): scala.Unit = js.native
+  def it(expectation: java.lang.String, assertion: jasmineLib.ImplementationCallback, timeout: scala.Double): scala.Unit = js.native
   /**
     * Mark a spec as pending, expectation results will be ignored.
     * If you call the function pending anywhere in the spec body, no matter the expectations, the spec will be marked pending.
@@ -157,11 +154,7 @@ object ^ extends js.Object {
     * @param timeout Custom timeout for an async spec.
     */
   def xit(expectation: java.lang.String): scala.Unit = js.native
-  def xit(expectation: java.lang.String, assertion: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit]): scala.Unit = js.native
-  def xit(
-    expectation: java.lang.String,
-    assertion: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit],
-    timeout: scala.Double
-  ): scala.Unit = js.native
+  def xit(expectation: java.lang.String, assertion: jasmineLib.ImplementationCallback): scala.Unit = js.native
+  def xit(expectation: java.lang.String, assertion: jasmineLib.ImplementationCallback, timeout: scala.Double): scala.Unit = js.native
 }
 

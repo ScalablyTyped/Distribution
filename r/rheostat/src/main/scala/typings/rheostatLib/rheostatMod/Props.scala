@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait Props extends Events {
   var algorithm: js.UndefOr[Algorithm] = js.undefined
+  var autoAdjustVerticalPosition: js.UndefOr[scala.Boolean] = js.undefined
+  var background: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var handle: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined

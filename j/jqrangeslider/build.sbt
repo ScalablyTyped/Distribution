@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "jqrangeslider"
-version := "5.7.2-dt-20180214Z-8c78b2"
+version := "5.7.2-dt-20180214Z-8c3f8d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "jquery" % "3.3-dt-20190108Z-f7f24f",
-  "org.scalablytyped" %%% "jqueryui" % "1.12-dt-20181116Z-edaea0",
+  "org.scalablytyped" %%% "jqueryui" % "1.12-dt-20190124Z-dd6f59",
   "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-b20ceb",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false

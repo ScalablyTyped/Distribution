@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait PopoverOption extends TooltipOption {
   /**
-    * Default content value if data-content attribute isn't present.
-    * If a function is given, it will be called with its this reference
+    * Default content value if `data-content` attribute isn't present.
+    * If a function is given, it will be called with its `this` reference
     * set to the element that the popover is attached to.
     *
     * @default ""

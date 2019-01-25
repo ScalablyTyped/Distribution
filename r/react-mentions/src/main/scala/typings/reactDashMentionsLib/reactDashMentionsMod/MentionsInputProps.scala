@@ -13,6 +13,9 @@ trait MentionsInputProps extends js.Object {
   var children: reactLib.reactMod.ReactNs.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactNs.ReactElement[MentionProps]]
   var className: js.UndefOr[java.lang.String] = js.undefined
   var displayTransform: js.UndefOr[DisplayTransformFunc] = js.undefined
+  var inputRef: js.UndefOr[
+    reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLTextAreaElement] | reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLInputElement]
+  ] = js.undefined
   var markup: js.UndefOr[java.lang.String] = js.undefined
   var onBlur: js.UndefOr[
     js.Function2[

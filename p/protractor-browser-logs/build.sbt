@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "protractor-browser-logs"
-version := "1.0-dt-20180214Z-da1840"
+version := "1.0-dt-20180214Z-0379de"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,13 +17,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-0051a6",
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-0b7a31",
   "org.scalablytyped" %%% "ini" % "v1.3.3-dt-20181121Z-b5c644",
-  "org.scalablytyped" %%% "jasmine" % "3.3-dt-20190108Z-9d37fa",
-  "org.scalablytyped" %%% "jasminewd2" % "2.0-dt-20181026Z-512ad6",
+  "org.scalablytyped" %%% "jasmine" % "3.3-dt-20190118Z-ad02dd",
+  "org.scalablytyped" %%% "jasminewd2" % "2.0-dt-20181026Z-ef0732",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-db2a02",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20180214Z-fff6c3",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
   "org.scalablytyped" %%% "optimist" % "0.0-unknown-dt-20180214Z-c67775",
-  "org.scalablytyped" %%% "protractor" % "5.4.2-86d4b5",
+  "org.scalablytyped" %%% "protractor" % "5.4.2-87abfa",
   "org.scalablytyped" %%% "q" % "1.5-dt-20181124Z-74c955",
   "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-0bc71a",
   "org.scalablytyped" %%% "rimraf" % "2.0-dt-20180214Z-21db36",

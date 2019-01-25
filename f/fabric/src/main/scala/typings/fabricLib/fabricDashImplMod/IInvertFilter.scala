@@ -5,11 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IInvertFilter extends js.Object {
+@js.native
+trait IInvertFilter extends IBaseFilter {
   /**
   	 * Applies filter to canvas element
   	 * @param canvasEl Canvas element to apply filter to
   	 */
-  def applyTo(canvasEl: stdLib.HTMLCanvasElement): scala.Unit
+  def applyTo(canvasEl: stdLib.HTMLCanvasElement): scala.Unit = js.native
 }
 

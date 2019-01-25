@@ -55,6 +55,9 @@ object kendoDashUiLibStrings {
   sealed trait kendoDatePicker extends js.Object
   
   @js.native
+  sealed trait kendoDateRangePicker extends js.Object
+  
+  @js.native
   sealed trait kendoDateTimePicker extends js.Object
   
   @js.native
@@ -64,10 +67,19 @@ object kendoDashUiLibStrings {
   sealed trait kendoDialog extends js.Object
   
   @js.native
+  sealed trait kendoDraggable extends js.Object
+  
+  @js.native
   sealed trait kendoDropDownList extends js.Object
   
   @js.native
   sealed trait kendoDropDownTree extends js.Object
+  
+  @js.native
+  sealed trait kendoDropTarget extends js.Object
+  
+  @js.native
+  sealed trait kendoDropTargetArea extends js.Object
   
   @js.native
   sealed trait kendoEditor extends js.Object
@@ -172,6 +184,9 @@ object kendoDashUiLibStrings {
   sealed trait kendoMultiSelect extends js.Object
   
   @js.native
+  sealed trait kendoMultiViewCalendar extends js.Object
+  
+  @js.native
   sealed trait kendoNotification extends js.Object
   
   @js.native
@@ -214,6 +229,9 @@ object kendoDashUiLibStrings {
   sealed trait kendoScheduler extends js.Object
   
   @js.native
+  sealed trait kendoScrollView extends js.Object
+  
+  @js.native
   sealed trait kendoSlider extends js.Object
   
   @js.native
@@ -230,6 +248,9 @@ object kendoDashUiLibStrings {
   
   @js.native
   sealed trait kendoStockChart extends js.Object
+  
+  @js.native
+  sealed trait kendoSwitch extends js.Object
   
   @js.native
   sealed trait kendoTabStrip extends js.Object
@@ -280,11 +301,15 @@ object kendoDashUiLibStrings {
   def kendoContextMenu: kendoContextMenu = "kendoContextMenu".asInstanceOf[kendoContextMenu]
   def kendoDateInput: kendoDateInput = "kendoDateInput".asInstanceOf[kendoDateInput]
   def kendoDatePicker: kendoDatePicker = "kendoDatePicker".asInstanceOf[kendoDatePicker]
+  def kendoDateRangePicker: kendoDateRangePicker = "kendoDateRangePicker".asInstanceOf[kendoDateRangePicker]
   def kendoDateTimePicker: kendoDateTimePicker = "kendoDateTimePicker".asInstanceOf[kendoDateTimePicker]
   def kendoDiagram: kendoDiagram = "kendoDiagram".asInstanceOf[kendoDiagram]
   def kendoDialog: kendoDialog = "kendoDialog".asInstanceOf[kendoDialog]
+  def kendoDraggable: kendoDraggable = "kendoDraggable".asInstanceOf[kendoDraggable]
   def kendoDropDownList: kendoDropDownList = "kendoDropDownList".asInstanceOf[kendoDropDownList]
   def kendoDropDownTree: kendoDropDownTree = "kendoDropDownTree".asInstanceOf[kendoDropDownTree]
+  def kendoDropTarget: kendoDropTarget = "kendoDropTarget".asInstanceOf[kendoDropTarget]
+  def kendoDropTargetArea: kendoDropTargetArea = "kendoDropTargetArea".asInstanceOf[kendoDropTargetArea]
   def kendoEditor: kendoEditor = "kendoEditor".asInstanceOf[kendoEditor]
   def kendoFilterMenu: kendoFilterMenu = "kendoFilterMenu".asInstanceOf[kendoFilterMenu]
   def kendoFlatColorPicker: kendoFlatColorPicker = "kendoFlatColorPicker".asInstanceOf[kendoFlatColorPicker]
@@ -319,6 +344,7 @@ object kendoDashUiLibStrings {
   def kendoMobileView: kendoMobileView = "kendoMobileView".asInstanceOf[kendoMobileView]
   def kendoMultiColumnComboBox: kendoMultiColumnComboBox = "kendoMultiColumnComboBox".asInstanceOf[kendoMultiColumnComboBox]
   def kendoMultiSelect: kendoMultiSelect = "kendoMultiSelect".asInstanceOf[kendoMultiSelect]
+  def kendoMultiViewCalendar: kendoMultiViewCalendar = "kendoMultiViewCalendar".asInstanceOf[kendoMultiViewCalendar]
   def kendoNotification: kendoNotification = "kendoNotification".asInstanceOf[kendoNotification]
   def kendoNumericTextBox: kendoNumericTextBox = "kendoNumericTextBox".asInstanceOf[kendoNumericTextBox]
   def kendoPager: kendoPager = "kendoPager".asInstanceOf[kendoPager]
@@ -333,12 +359,14 @@ object kendoDashUiLibStrings {
   def kendoRangeSlider: kendoRangeSlider = "kendoRangeSlider".asInstanceOf[kendoRangeSlider]
   def kendoResponsivePanel: kendoResponsivePanel = "kendoResponsivePanel".asInstanceOf[kendoResponsivePanel]
   def kendoScheduler: kendoScheduler = "kendoScheduler".asInstanceOf[kendoScheduler]
+  def kendoScrollView: kendoScrollView = "kendoScrollView".asInstanceOf[kendoScrollView]
   def kendoSlider: kendoSlider = "kendoSlider".asInstanceOf[kendoSlider]
   def kendoSortable: kendoSortable = "kendoSortable".asInstanceOf[kendoSortable]
   def kendoSparkline: kendoSparkline = "kendoSparkline".asInstanceOf[kendoSparkline]
   def kendoSplitter: kendoSplitter = "kendoSplitter".asInstanceOf[kendoSplitter]
   def kendoSpreadsheet: kendoSpreadsheet = "kendoSpreadsheet".asInstanceOf[kendoSpreadsheet]
   def kendoStockChart: kendoStockChart = "kendoStockChart".asInstanceOf[kendoStockChart]
+  def kendoSwitch: kendoSwitch = "kendoSwitch".asInstanceOf[kendoSwitch]
   def kendoTabStrip: kendoTabStrip = "kendoTabStrip".asInstanceOf[kendoTabStrip]
   def kendoTimePicker: kendoTimePicker = "kendoTimePicker".asInstanceOf[kendoTimePicker]
   def kendoToolBar: kendoToolBar = "kendoToolBar".asInstanceOf[kendoToolBar]

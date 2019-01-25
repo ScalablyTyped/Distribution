@@ -98,7 +98,5 @@ trait Utils extends js.Object {
     `val`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BigNumber */ js.Any,
     unit: Unit
   ): js.Any = js.native
-  def toWei(`val`: scala.Double): java.lang.String = js.native
-  def toWei(`val`: scala.Double, unit: Unit): java.lang.String = js.native
 }
 

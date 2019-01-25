@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-popup-dialog"
-version := "0.16-dt-20181103Z-a620c4"
+version := "0.16-dt-20190124Z-db31b2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -136,7 +136,7 @@ trait MessageRead extends Message {
     *
     * The itemId property is not available in compose mode. 
     * If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier 
-    * in the AsyncResult.value parameter in the callback function.
+    * in the asyncResult.value parameter in the callback function.
     *
     * Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. 
     * The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. 
@@ -238,7 +238,7 @@ trait MessageRead extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
     *
-    * @param formData A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
+    * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
     *  OR
     * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function
     */
@@ -263,7 +263,7 @@ trait MessageRead extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
     *
-    * @param formData A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
+    * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
     *  OR
     * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function
     */
@@ -290,7 +290,7 @@ trait MessageRead extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
     *
-    * @param formData A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
+    * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
     * OR
     * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
     */
@@ -315,7 +315,7 @@ trait MessageRead extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
     *
-    * @param formData A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
+    * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
     * OR
     * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
     */
@@ -355,7 +355,7 @@ trait MessageRead extends Message {
     *
     * [Api set: Mailbox 1.0]
     *
-    * @param entityType One of the EntityType enumeration values.
+    * @param entityType - One of the EntityType enumeration values.
     * 
     * @returns
     * If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. 
@@ -421,7 +421,7 @@ trait MessageRead extends Message {
     *
     * [Api set: Mailbox 1.0]
     * 
-    * @param entityType One of the EntityType enumeration values.
+    * @param entityType - One of the EntityType enumeration values.
     *
     * @returns
     * If the value passed in entityType is not a valid member of the EntityType enumeration, the method returns null. 
@@ -496,7 +496,7 @@ trait MessageRead extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
     *
-    * @param name The name of the ItemHasKnownEntity rule element that defines the filter to match.
+    * @param name - The name of the ItemHasKnownEntity rule element that defines the filter to match.
     * @returns If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the name parameter, 
     * the method returns null. 
     * If the name parameter does match an ItemHasKnownEntity element in the manifest, but there are no entities in the current item that match, 
@@ -518,7 +518,7 @@ trait MessageRead extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
     *
-    * @param name The name of the ItemHasKnownEntity rule element that defines the filter to match.
+    * @param name - The name of the ItemHasKnownEntity rule element that defines the filter to match.
     * @returns If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the name parameter, 
     * the method returns null. 
     * If the name parameter does match an ItemHasKnownEntity element in the manifest, but there are no entities in the current item that match, 
@@ -606,7 +606,7 @@ trait MessageRead extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
     *
-    * @param name The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
+    * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
     */
   /**
     * Returns string values in the selected item that match the named regular expression defined in the manifest XML file.
@@ -631,7 +631,7 @@ trait MessageRead extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
     *
-    * @param name The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
+    * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
     */
   def getRegExMatchesByName(name: java.lang.String): js.Array[java.lang.String] = js.native
   /**
@@ -647,7 +647,7 @@ trait MessageRead extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
     *
-    * @param name The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
+    * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
     */
   /**
     * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
@@ -662,7 +662,7 @@ trait MessageRead extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
     *
-    * @param name The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
+    * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
     */
   def getSelectedEntities(): Entities = js.native
   /**

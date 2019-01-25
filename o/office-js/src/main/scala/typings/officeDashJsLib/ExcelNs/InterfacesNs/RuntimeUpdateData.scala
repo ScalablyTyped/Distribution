@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait RuntimeUpdateData extends js.Object {
   /**
     *
-    * Turn on/off JavaScript events in current taskpane or content add-in.
+    * Toggle JavaScript events in the current task pane or content add-in.
     *
     * [Api set: ExcelApi 1.8]
     */

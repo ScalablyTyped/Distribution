@@ -14,6 +14,7 @@ trait ImageProps
   var preserveAspectRatio: js.UndefOr[java.lang.String] = js.undefined
   var width: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
   var x: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var xlinkHref: js.UndefOr[js.Any] = js.undefined
   var y: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
 }
 

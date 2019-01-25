@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_ElementExtendFnOptionsProtoObjectScrollView
-  extends org.scalablytyped.runtime.Instantiable1[/* element */ stdLib.Element, kendoDashUiLib.kendoNs.mobileNs.uiNs.ScrollView]
+  extends org.scalablytyped.runtime.Instantiable1[/* element */ stdLib.Element, kendoDashUiLib.kendoNs.uiNs.ScrollView]
      with org.scalablytyped.runtime.Instantiable2[
       /* element */ stdLib.Element, 
-      /* options */ kendoDashUiLib.kendoNs.mobileNs.uiNs.ScrollViewOptions, 
-      kendoDashUiLib.kendoNs.mobileNs.uiNs.ScrollView
+      /* options */ kendoDashUiLib.kendoNs.uiNs.ScrollViewOptions, 
+      kendoDashUiLib.kendoNs.uiNs.ScrollView
     ] {
-  var fn: kendoDashUiLib.kendoNs.mobileNs.uiNs.ScrollView = js.native
-  def extend(proto: js.Object): kendoDashUiLib.kendoNs.mobileNs.uiNs.ScrollView = js.native
+  var fn: kendoDashUiLib.kendoNs.uiNs.ScrollView = js.native
+  def extend(proto: js.Object): kendoDashUiLib.kendoNs.uiNs.ScrollView = js.native
 }
 

@@ -10,9 +10,6 @@ import scala.scalajs.js.annotation._
   * Represents an Excel table.
   *
   * [Api set: ExcelApi 1.1]
-  * 
-  * @remarks
-  * Our {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-tables | how-to guide on working with tables} has detailed walkthroughs, images, and code samples.
   */
 @JSGlobal("Excel.Table")
 @js.native

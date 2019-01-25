@@ -56,6 +56,7 @@ class DataSource ()
   def read(): kendoDashUiLib.JQueryPromise[_] = js.native
   def read(data: js.Any): kendoDashUiLib.JQueryPromise[_] = js.native
   def remove(model: ObservableObject): scala.Unit = js.native
+  def skip(): scala.Double = js.native
   def sort(): js.Array[DataSourceSortItem] = js.native
   def sort(sort: js.Array[DataSourceSortItem]): scala.Unit = js.native
   def sort(sort: DataSourceSortItem): scala.Unit = js.native

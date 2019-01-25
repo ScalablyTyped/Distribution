@@ -11,7 +11,7 @@ trait ELBv2
   @JSName("config")
   var config_ELBv2: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ClientConfiguration = js.native
   /**
-    * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
+    * Adds the specified certificate to the specified HTTPS listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
     */
   def addListenerCertificates(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.AddListenerCertificatesOutput, 
@@ -28,7 +28,7 @@ trait ELBv2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
+    * Adds the specified certificate to the specified HTTPS listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.
     */
   def addListenerCertificates(params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.AddListenerCertificatesInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.AddListenerCertificatesOutput, 
@@ -431,7 +431,7 @@ trait ELBv2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Describes the certificates for the specified secure listener.
+    * Describes the certificates for the specified HTTPS listener.
     */
   def describeListenerCertificates(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeListenerCertificatesOutput, 
@@ -448,7 +448,7 @@ trait ELBv2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Describes the certificates for the specified secure listener.
+    * Describes the certificates for the specified HTTPS listener.
     */
   def describeListenerCertificates(params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeListenerCertificatesInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.DescribeListenerCertificatesOutput, 
@@ -781,7 +781,7 @@ trait ELBv2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Modifies the specified properties of the specified listener. Any properties that you do not specify retain their current values. However, changing the protocol from HTTPS to HTTP removes the security policy and SSL certificate properties. If you change the protocol from HTTP to HTTPS, you must add the security policy and server certificate.
+    * Modifies the specified properties of the specified listener. Any properties that you do not specify retain their current values. However, changing the protocol from HTTPS to HTTP, or from TLS to TCP, removes the security policy and server certificate properties. If you change the protocol from HTTP to HTTPS, or from TCP to TLS, you must add the security policy and server certificate properties.
     */
   def modifyListener(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyListenerOutput, 
@@ -798,7 +798,7 @@ trait ELBv2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Modifies the specified properties of the specified listener. Any properties that you do not specify retain their current values. However, changing the protocol from HTTPS to HTTP removes the security policy and SSL certificate properties. If you change the protocol from HTTP to HTTPS, you must add the security policy and server certificate.
+    * Modifies the specified properties of the specified listener. Any properties that you do not specify retain their current values. However, changing the protocol from HTTPS to HTTP, or from TLS to TCP, removes the security policy and server certificate properties. If you change the protocol from HTTP to HTTPS, or from TCP to TLS, you must add the security policy and server certificate properties.
     */
   def modifyListener(params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyListenerInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.ModifyListenerOutput, 
@@ -991,7 +991,7 @@ trait ELBv2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Removes the specified certificate from the specified secure listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
+    * Removes the specified certificate from the specified HTTPS listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
     */
   def removeListenerCertificates(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.RemoveListenerCertificatesOutput, 
@@ -1008,7 +1008,7 @@ trait ELBv2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Removes the specified certificate from the specified secure listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
+    * Removes the specified certificate from the specified HTTPS listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.
     */
   def removeListenerCertificates(params: awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.RemoveListenerCertificatesInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsElbv2Mod.ELBv2Ns.RemoveListenerCertificatesOutput, 

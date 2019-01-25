@@ -12,6 +12,7 @@ class ButtonGroup protected () extends Widget {
   def this(element: stdLib.Element, options: ButtonGroupOptions) = this()
   @JSName("options")
   var options_ButtonGroup: ButtonGroupOptions = js.native
+  var selectedIndices: js.Array[scala.Double] = js.native
   var wrapper: kendoDashUiLib.JQuery = js.native
   def badge(button: java.lang.String, value: java.lang.String): java.lang.String = js.native
   def badge(button: java.lang.String, value: scala.Boolean): java.lang.String = js.native

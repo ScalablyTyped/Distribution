@@ -340,6 +340,7 @@ trait Argv[T] extends js.Object {
   def skipValidation(key: java.lang.String): Argv[T] = js.native
   def skipValidation(key: js.Array[java.lang.String]): Argv[T] = js.native
   def strict(): Argv[T] = js.native
+  def strict(enabled: scala.Boolean): Argv[T] = js.native
   def string[K /* <: java.lang.String */](key: K): Argv[(Omit[T, K]) with yargsLib.yargsLibStrings.Argv with T] = js.native
   def string[K /* <: java.lang.String */](key: js.Array[K]): Argv[(Omit[T, K]) with yargsLib.yargsLibStrings.Argv with T] = js.native
   // Intended to be used with '.wrap()'

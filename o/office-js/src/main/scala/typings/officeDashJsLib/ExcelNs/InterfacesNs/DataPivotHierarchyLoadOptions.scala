@@ -51,7 +51,7 @@ trait DataPivotHierarchyLoadOptions extends js.Object {
   var position: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * Determines whether the data should be sown as a specific summary calculation or not.
+    * Determines whether the data should be shown as a specific summary calculation or not.
     *
     * [Api set: ExcelApi 1.8]
     */

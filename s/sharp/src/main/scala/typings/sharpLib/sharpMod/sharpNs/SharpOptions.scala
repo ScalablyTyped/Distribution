@@ -11,9 +11,10 @@ trait SharpOptions extends js.Object {
   /** Number representing the DPI for vector images. (optional, default 72) */
   var density: js.UndefOr[scala.Double] = js.undefined
   /**
-    * By default apply a "best effort" to decode images, even if the data is corrupt or invalid.
-    * Set this flag to true if you'd rather halt processing and raise an error when loading invalid images.
-    * (optional, default false)
+    * By default halt processing and raise an error when loading invalid images.
+    * Set this flag to false if you'd rather apply a "best effort" to decode images,
+    * even if the data is corrupt or invalid. (optional, default true)
+    * (optional, default true)
     */
   var failOnError: js.UndefOr[scala.Boolean] = js.undefined
   /** Page number to extract for multi-page input (GIF, TIFF). (optional, default 0) */

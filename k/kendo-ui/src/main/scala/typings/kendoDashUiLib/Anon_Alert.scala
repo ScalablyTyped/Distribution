@@ -20,6 +20,7 @@ trait Anon_Alert extends js.Object {
   var ContextMenu: Anon_ElementExtendFnOptionsProtoContextMenu = js.native
   var DateInput: Anon_ElementExtendFnOptionsProtoDateInput = js.native
   var DatePicker: Anon_ElementExtendFnOptionsProtoDatePicker = js.native
+  var DateRangePicker: Anon_ElementExtendFnOptionsProtoDateRangePicker = js.native
   var DateTimePicker: Anon_ElementExtendFnOptionsProtoDateTimePicker = js.native
   var Dialog: Anon_ElementExtendFnOptionsProtoDialog = js.native
   var Draggable: org.scalablytyped.runtime.Instantiable2[
@@ -47,6 +48,7 @@ trait Anon_Alert extends js.Object {
   var Menu: Anon_ElementExtendFnOptionsProtoMenu = js.native
   var MultiColumnComboBox: Anon_ElementExtendFnOptionsProtoMultiColumnComboBox = js.native
   var MultiSelect: Anon_ElementExtendFnOptionsProtoMultiSelect = js.native
+  var MultiViewCalendar: Anon_ElementExtendFnOptionsProtoMultiViewCalendar = js.native
   var Notification: Anon_ElementExtendFnOptionsProtoNotification = js.native
   var NumericTextBox: Anon_ElementExtendFnOptionsProtoNumericTextBox = js.native
   var Pager: Anon_ElementExtendFnOptionsProtoObject = js.native
@@ -59,10 +61,12 @@ trait Anon_Alert extends js.Object {
   var RangeSlider: Anon_ElementExtendFnOptionsProtoObjectRangeSlider = js.native
   var ResponsivePanel: Anon_ElementExtendFnOptionsProtoObjectResponsivePanel = js.native
   var Scheduler: Anon_ElementExtendFnOptionsProtoObjectScheduler = js.native
+  var ScrollView: Anon_ElementExtendFnOptionsProtoObjectScrollView = js.native
   var Slider: Anon_ElementExtendFnOptionsProtoObjectSlider = js.native
   var Sortable: Anon_ElementExtendFnOptionsProtoObjectSortable = js.native
   var Splitter: Anon_ElementExtendFnOptionsProtoObjectSplitter = js.native
   var Spreadsheet: Anon_ElementExtendFnOptionsProtoObjectSpreadsheet = js.native
+  var Switch: Anon_ElementExtendFnOptionsProtoObjectSwitch = js.native
   var TabStrip: Anon_ElementExtendFnOptionsProtoObjectTabStrip = js.native
   var TimePicker: Anon_ElementExtendFnOptionsProtoObjectTimePicker = js.native
   var ToolBar: Anon_ElementExtendFnOptionsProtoObjectToolBar = js.native

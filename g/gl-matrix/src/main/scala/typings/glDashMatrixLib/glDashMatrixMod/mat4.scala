@@ -742,6 +742,63 @@ object mat4 extends js.Object {
     b: glDashMatrixLib.glDashMatrixMod.mat4
   ): glDashMatrixLib.glDashMatrixMod.mat4 = js.native
   /**
+    * Generates a matrix that makes something look at something else.
+    *
+    * @param out mat4 frustum matrix will be written into
+    * @param eye Position of the viewer
+    * @param target Point the viewer is looking at
+    * @param up vec3 pointing up
+    * @returns out
+    */
+  def targetTo(
+    out: glDashMatrixLib.glDashMatrixMod.mat4,
+    eye: glDashMatrixLib.glDashMatrixMod.vec3,
+    target: glDashMatrixLib.glDashMatrixMod.vec3,
+    up: glDashMatrixLib.glDashMatrixMod.vec3
+  ): glDashMatrixLib.glDashMatrixMod.mat4 = js.native
+  def targetTo(
+    out: glDashMatrixLib.glDashMatrixMod.mat4,
+    eye: glDashMatrixLib.glDashMatrixMod.vec3,
+    target: glDashMatrixLib.glDashMatrixMod.vec3,
+    up: js.Array[scala.Double]
+  ): glDashMatrixLib.glDashMatrixMod.mat4 = js.native
+  def targetTo(
+    out: glDashMatrixLib.glDashMatrixMod.mat4,
+    eye: glDashMatrixLib.glDashMatrixMod.vec3,
+    target: js.Array[scala.Double],
+    up: glDashMatrixLib.glDashMatrixMod.vec3
+  ): glDashMatrixLib.glDashMatrixMod.mat4 = js.native
+  def targetTo(
+    out: glDashMatrixLib.glDashMatrixMod.mat4,
+    eye: glDashMatrixLib.glDashMatrixMod.vec3,
+    target: js.Array[scala.Double],
+    up: js.Array[scala.Double]
+  ): glDashMatrixLib.glDashMatrixMod.mat4 = js.native
+  def targetTo(
+    out: glDashMatrixLib.glDashMatrixMod.mat4,
+    eye: js.Array[scala.Double],
+    target: glDashMatrixLib.glDashMatrixMod.vec3,
+    up: glDashMatrixLib.glDashMatrixMod.vec3
+  ): glDashMatrixLib.glDashMatrixMod.mat4 = js.native
+  def targetTo(
+    out: glDashMatrixLib.glDashMatrixMod.mat4,
+    eye: js.Array[scala.Double],
+    target: glDashMatrixLib.glDashMatrixMod.vec3,
+    up: js.Array[scala.Double]
+  ): glDashMatrixLib.glDashMatrixMod.mat4 = js.native
+  def targetTo(
+    out: glDashMatrixLib.glDashMatrixMod.mat4,
+    eye: js.Array[scala.Double],
+    target: js.Array[scala.Double],
+    up: glDashMatrixLib.glDashMatrixMod.vec3
+  ): glDashMatrixLib.glDashMatrixMod.mat4 = js.native
+  def targetTo(
+    out: glDashMatrixLib.glDashMatrixMod.mat4,
+    eye: js.Array[scala.Double],
+    target: js.Array[scala.Double],
+    up: js.Array[scala.Double]
+  ): glDashMatrixLib.glDashMatrixMod.mat4 = js.native
+  /**
     * Translate a mat4 by the given vector
     *
     * @param out the receiving matrix

@@ -69,7 +69,9 @@ class TimelineLite () extends SimpleTimeline {
   /** Removes a label from the timeline and returns the time of that label. */
   def removeLabel(label: java.lang.String): js.Any = js.native
   /** Jumps to a specific time (or label) without affecting whether or not the instance is paused or reversed. */
+  def seek(position: java.lang.String): TimelineLite = js.native
   def seek(position: java.lang.String, supressEvents: scala.Boolean): TimelineLite = js.native
+  def seek(position: scala.Double): TimelineLite = js.native
   def seek(position: scala.Double, supressEvents: scala.Boolean): TimelineLite = js.native
   /**
     * Adds a zero-duration tween to the end of the timeline (or elsewhere using the "position" parameter) that sets values immediately (when the virtual playhead reaches that

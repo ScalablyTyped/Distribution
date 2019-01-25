@@ -49,6 +49,9 @@ object log4jsLibStrings {
   sealed trait multiprocess extends js.Object
   
   @js.native
+  sealed trait noLogFilter extends js.Object
+  
+  @js.native
   sealed trait pattern extends js.Object
   
   @js.native
@@ -77,6 +80,7 @@ object log4jsLibStrings {
   def messagePassThrough: messagePassThrough = "messagePassThrough".asInstanceOf[messagePassThrough]
   def multiFile: multiFile = "multiFile".asInstanceOf[multiFile]
   def multiprocess: multiprocess = "multiprocess".asInstanceOf[multiprocess]
+  def noLogFilter: noLogFilter = "noLogFilter".asInstanceOf[noLogFilter]
   def pattern: pattern = "pattern".asInstanceOf[pattern]
   def recording: recording = "recording".asInstanceOf[recording]
   def stderr: stderr = "stderr".asInstanceOf[stderr]

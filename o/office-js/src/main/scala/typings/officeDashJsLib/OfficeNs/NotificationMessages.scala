@@ -22,13 +22,13 @@ trait NotificationMessages extends js.Object {
     *
     * There are a maximum of 5 notifications per message. Setting more will return a NumberOfNotificationMessagesExceeded error.
     *
-    * @param key  A developer-specified key used to reference this notification message. 
+    * @param key - A developer-specified key used to reference this notification message. 
     *             Developers can use it to modify this message later. It can't be longer than 32 characters.
-    * @param JSONmessage A JSON object that contains the notification message to be added to the item. 
+    * @param JSONmessage - A JSON object that contains the notification message to be added to the item. 
     *                    It contains a NotificationMessageDetails object.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     *
     * [Api set: Mailbox 1.3]
@@ -44,7 +44,7 @@ trait NotificationMessages extends js.Object {
     * 
     * `addAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions): void;`
     * 
-    * `addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult<void>) => void): void;`
+    * `addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: Office.AsyncResult<void>) => void): void;`
     * 
     */
   def addAsync(key: java.lang.String, JSONmessage: NotificationMessageDetails): scala.Unit = js.native
@@ -53,11 +53,11 @@ trait NotificationMessages extends js.Object {
     *
     * There are a maximum of 5 notifications per message. Setting more will return a NumberOfNotificationMessagesExceeded error.
     *
-    * @param key  A developer-specified key used to reference this notification message. Developers can use it to modify this message later. 
+    * @param key - A developer-specified key used to reference this notification message. Developers can use it to modify this message later. 
     *             It can't be longer than 32 characters.
-    * @param JSONmessage A JSON object that contains the notification message to be added to the item. 
+    * @param JSONmessage - A JSON object that contains the notification message to be added to the item. 
     *                    It contains a NotificationMessageDetails object.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     *
     * [Api set: Mailbox 1.3]
@@ -91,11 +91,11 @@ trait NotificationMessages extends js.Object {
     * 
     * In addition to this signature, this method also has the following signature:
     * 
-    * `getAllAsync(callback: (result: AsyncResult<Office.NotificationMessageDetails[]>) => void): void;`
+    * `getAllAsync(callback: (result: Office.AsyncResult<NotificationMessageDetails[]>) => void): void;`
     *
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
     *                 The `value` property of the result is an array of NotificationMessageDetails objects.
     */
   def getAllAsync(): scala.Unit = js.native
@@ -109,7 +109,7 @@ trait NotificationMessages extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
     *                 The `value` property of the result is an array of NotificationMessageDetails objects.
     */
   def getAllAsync(callback: js.Function1[/* result */ AsyncResult[js.Array[NotificationMessageDetails]], scala.Unit]): scala.Unit = js.native
@@ -134,12 +134,12 @@ trait NotificationMessages extends js.Object {
     * 
     * `removeAsync(key: string, options: Office.AsyncContextOptions): void;`
     * 
-    * `removeAsync(key: string, callback: (result: AsyncResult<void>) => void): void;`
+    * `removeAsync(key: string, callback: (result: Office.AsyncResult<void>) => void): void;`
     *
-    * @param key The key for the notification message to remove.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param key - The key for the notification message to remove.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
   def removeAsync(key: java.lang.String): scala.Unit = js.native
@@ -153,8 +153,8 @@ trait NotificationMessages extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param key The key for the notification message to remove.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param key - The key for the notification message to remove.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
   def removeAsync(key: java.lang.String, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
@@ -182,14 +182,14 @@ trait NotificationMessages extends js.Object {
     * 
     * `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions): void;`
     * 
-    * `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: AsyncResult<void>) => void): void;`
+    * `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: Office.AsyncResult<void>) => void): void;`
     *
-    * @param key The key for the notification message to replace. It can't be longer than 32 characters.
-    * @param JSONmessage A JSON object that contains the new notification message to replace the existing message. 
+    * @param key - The key for the notification message to replace. It can't be longer than 32 characters.
+    * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message. 
     *                    It contains a NotificationMessageDetails object.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
   def replaceAsync(key: java.lang.String, JSONmessage: NotificationMessageDetails): scala.Unit = js.native
@@ -205,10 +205,10 @@ trait NotificationMessages extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param key The key for the notification message to replace. It can't be longer than 32 characters.
-    * @param JSONmessage A JSON object that contains the new notification message to replace the existing message. 
+    * @param key - The key for the notification message to replace. It can't be longer than 32 characters.
+    * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message. 
     *                    It contains a NotificationMessageDetails object.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
   def replaceAsync(

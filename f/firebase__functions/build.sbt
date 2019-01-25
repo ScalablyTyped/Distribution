@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "firebase__functions"
-version := "0.3.5-b32e15"
+version := "0.3.6-259fe8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "firebase__app" % "0.3.7-3b917f",
-  "org.scalablytyped" %%% "firebase__app-types" % "0.3.2-99e1ce",
-  "org.scalablytyped" %%% "firebase__functions-types" % "0.2.1-43cf9a",
-  "org.scalablytyped" %%% "firebase__messaging-types" % "0.2.3-047c5b",
-  "org.scalablytyped" %%% "firebase__util" % "0.2.5-940c18",
+  "org.scalablytyped" %%% "firebase__app" % "0.3.8-e62e9f",
+  "org.scalablytyped" %%% "firebase__app-types" % "0.3.3-c894b1",
+  "org.scalablytyped" %%% "firebase__functions-types" % "0.2.2-43cf9a",
+  "org.scalablytyped" %%% "firebase__messaging-types" % "0.2.4-93fb51",
+  "org.scalablytyped" %%% "firebase__util" % "0.2.6-940c18",
   "org.scalablytyped" %%% "isomorphic-fetch" % "0.0-dt-20180214Z-b3a807",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
   "org.scalablytyped" %%% "tslib" % "1.9.3-688770")

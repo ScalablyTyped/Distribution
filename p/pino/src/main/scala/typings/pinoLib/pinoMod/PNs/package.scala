@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object PNs {
+  type DestinationStream = nodeLib.streamMod.Writable | nodeLib.streamMod.Duplex | nodeLib.streamMod.Transform | nodeLib.NodeJSNs.WritableStream | sonicDashBoomLib.sonicDashBoomMod.namespaced
   type Level = pinoLib.pinoLibStrings.fatal | pinoLib.pinoLibStrings.error | pinoLib.pinoLibStrings.warn | pinoLib.pinoLibStrings.info | pinoLib.pinoLibStrings.debug | pinoLib.pinoLibStrings.trace
   type LevelChangeEventListener = js.Function4[
     /* lvl */ LevelWithSilent | java.lang.String, 

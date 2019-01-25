@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ModalOption extends js.Object {
   /**
     * Includes a modal-backdrop element.
-    * Alternatively, specify static for a backdrop which doesn't close the modal on click.
+    * Alternatively, specify `static` for a backdrop which doesn't close the modal on click.
     *
     * @default true
     */

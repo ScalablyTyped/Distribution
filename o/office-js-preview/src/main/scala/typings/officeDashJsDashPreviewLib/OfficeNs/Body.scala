@@ -36,12 +36,12 @@ trait Body extends js.Object {
     * 
     * In addition to this signature, this method also has the following signature:
     * 
-    * `getAsync(coercionType: Office.CoercionType, callback: (result: AsyncResult<string>) => void): void;`
+    * `getAsync(coercionType: Office.CoercionType, callback: (result: Office.AsyncResult<string>) => void): void;`
     * 
-    * @param coercionType The format for the returned body.
-    * @param options Optional. An object literal that contains one or more of the following properties:
+    * @param coercionType - The format for the returned body.
+    * @param options - Optional. An object literal that contains one or more of the following properties:
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
     *                  The body is provided in the requested format in the asyncResult.value property.
     */
   def getAsync(coercionType: CoercionType): scala.Unit = js.native
@@ -61,8 +61,8 @@ trait Body extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param coercionType The format for the returned body.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
+    * @param coercionType - The format for the returned body.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
     *                  The body is provided in the requested format in the asyncResult.value property.
     */
   def getAsync(
@@ -85,9 +85,9 @@ trait Body extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
     *
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
     *                  The content type is returned as one of the CoercionType values in the asyncResult.value property.
     */
   def getTypeAsync(): scala.Unit = js.native
@@ -118,15 +118,15 @@ trait Body extends js.Object {
     * 
     * `prependAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
     * 
-    * `prependAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
+    * `prependAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
     * 
     * `prependAsync(data: string): void;`
     *
-    * @param data The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     *        coercionType: The desired format for the body. The string in the data parameter will be converted to this format.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
     *                  Any errors encountered will be provided in the asyncResult.error property.
     */
   def prependAsync(data: java.lang.String): scala.Unit = js.native
@@ -146,8 +146,8 @@ trait Body extends js.Object {
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
     * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr></table>
     *
-    * @param data The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
+    * @param data - The string to be inserted at the beginning of the body. The string is limited to 1,000,000 characters.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
     *                  Any errors encountered will be provided in the asyncResult.error property.
     */
   def prependAsync(data: java.lang.String, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
@@ -180,15 +180,15 @@ trait Body extends js.Object {
     * 
     * `setAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
     * 
-    * `setAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
+    * `setAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
     * 
     * `setAsync(data: string): void;`
     *
-    * @param data The string that will replace the existing body. The string is limited to 1,000,000 characters.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     *        coercionType: The desired format for the body. The string in the data parameter will be converted to this format.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
     *                  Any errors encountered will be provided in the asyncResult.error property.
     */
   def setAsync(data: java.lang.String): scala.Unit = js.native
@@ -211,8 +211,8 @@ trait Body extends js.Object {
     *
     * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
     *
-    * @param data The string that will replace the existing body. The string is limited to 1,000,000 characters.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
+    * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
     *                  Any errors encountered will be provided in the asyncResult.error property.
     */
   def setAsync(data: java.lang.String, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
@@ -245,15 +245,15 @@ trait Body extends js.Object {
     * 
     * `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
     * 
-    * `setSelectedDataAsync(data: string, callback: (result: AsyncResult<void>) => void): void;`
+    * `setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
     * 
     * `setSelectedDataAsync(data: string): void;`
     *         
-    * @param data The string that will replace the existing body. The string is limited to 1,000,000 characters.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     *        coercionType: The desired format for the body. The string in the data parameter will be converted to this format.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
     *                  Any errors encountered will be provided in the asyncResult.error property.
     */
   def setSelectedDataAsync(data: java.lang.String): scala.Unit = js.native
@@ -276,8 +276,8 @@ trait Body extends js.Object {
     *
     * <tr><td>Errors</td><td>DataExceedsMaximumSize - The data parameter is longer than 1,000,000 characters.</td></tr><tr><td></td><td>InvalidFormatError - The options.coercionType parameter is set to Office.CoercionType.Html and the message body is in plain text.</td></tr></table>
     *
-    * @param data The string that will replace the existing body. The string is limited to 1,000,000 characters.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
+    * @param data - The string that will replace the existing body. The string is limited to 1,000,000 characters.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
     *                  Any errors encountered will be provided in the asyncResult.error property.
     */
   def setSelectedDataAsync(data: java.lang.String, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native

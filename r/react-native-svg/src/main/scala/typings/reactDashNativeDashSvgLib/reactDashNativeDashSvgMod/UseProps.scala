@@ -10,5 +10,6 @@ trait UseProps extends CommonPathProps {
   var href: java.lang.String
   var opacity: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
   var width: js.UndefOr[java.lang.String] = js.undefined
+  var xlinkHref: js.UndefOr[java.lang.String] = js.undefined
 }
 

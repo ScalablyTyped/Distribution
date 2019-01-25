@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "azure-sb"
-version := "0.0-unknown-dt-20181119Z-6e6737"
+version := "0.0-unknown-dt-20190115Z-9905a2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -16,6 +16,7 @@ trait UI extends js.Object {
   var keyCode: KeyCode = js.native
   var menu: Menu = js.native
   var progressbar: Progressbar = js.native
+  var selectmenu: SelectMenu = js.native
   var slider: Slider = js.native
   var spinner: Spinner = js.native
   var tabs: Tabs = js.native

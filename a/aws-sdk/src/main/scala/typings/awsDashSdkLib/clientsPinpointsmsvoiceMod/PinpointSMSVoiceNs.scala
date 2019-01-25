@@ -126,6 +126,28 @@ object PinpointSMSVoiceNs extends js.Object {
     var IamRoleArn: js.UndefOr[String] = js.undefined
   }
   
+  trait ListConfigurationSetsRequest extends js.Object {
+    /**
+      * A token returned from a previous call to the API that indicates the position in the list of results.
+      */
+    var NextToken: js.UndefOr[__string] = js.undefined
+    /**
+      * Used to specify the number of items that should be returned in the response.
+      */
+    var PageSize: js.UndefOr[__string] = js.undefined
+  }
+  
+  trait ListConfigurationSetsResponse extends js.Object {
+    /**
+      * An object that contains a list of configuration sets for your account in the current region.
+      */
+    var ConfigurationSets: js.UndefOr[ConfigurationSets] = js.undefined
+    /**
+      * A token returned from a previous call to ListConfigurationSets to indicate the position in the list of configuration sets.
+      */
+    var NextToken: js.UndefOr[NextTokenString] = js.undefined
+  }
+  
   trait PlainTextMessageType extends js.Object {
     /**
       * The language to use when delivering the message. For a complete list of supported languages, see the Amazon Polly Developer Guide.
@@ -311,6 +333,29 @@ object PinpointSMSVoiceNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetConfigurationSetEventDestinationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * List all of the configuration sets associated with your Amazon Pinpoint account in the current region.
+      */
+    def listConfigurationSets(): awsDashSdkLib.libRequestMod.Request[ListConfigurationSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listConfigurationSets(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListConfigurationSetsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListConfigurationSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * List all of the configuration sets associated with your Amazon Pinpoint account in the current region.
+      */
+    def listConfigurationSets(params: ListConfigurationSetsRequest): awsDashSdkLib.libRequestMod.Request[ListConfigurationSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listConfigurationSets(
+      params: ListConfigurationSetsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListConfigurationSetsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListConfigurationSetsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Create a new voice message and send it to a recipient's phone number.
       */
     def sendVoiceMessage(): awsDashSdkLib.libRequestMod.Request[SendVoiceMessageResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -381,9 +426,11 @@ object PinpointSMSVoiceNs extends js.Object {
   val TypesNs: this.type = js.native
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
+  type ConfigurationSets = js.Array[WordCharactersWithDelimiters]
   type EventDestinations = js.Array[EventDestination]
   type EventType = awsDashSdkLib.awsDashSdkLibStrings.INITIATED_CALL | awsDashSdkLib.awsDashSdkLibStrings.RINGING | awsDashSdkLib.awsDashSdkLibStrings.ANSWERED | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED_CALL | awsDashSdkLib.awsDashSdkLibStrings.BUSY | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.NO_ANSWER | java.lang.String
   type EventTypes = js.Array[EventType]
+  type NextTokenString = java.lang.String
   type NonEmptyString = java.lang.String
   type String = java.lang.String
   type WordCharactersWithDelimiters = java.lang.String

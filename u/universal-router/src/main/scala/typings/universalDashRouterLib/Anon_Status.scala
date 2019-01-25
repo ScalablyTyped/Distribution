@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Status extends js.Object {
-  var status: scala.Double
+  var status: js.UndefOr[scala.Double] = js.undefined
 }
 

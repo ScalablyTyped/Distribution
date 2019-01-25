@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase__polyfill"
-version := "0.3.4-e16411"
+version := "0.3.5-e16411"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

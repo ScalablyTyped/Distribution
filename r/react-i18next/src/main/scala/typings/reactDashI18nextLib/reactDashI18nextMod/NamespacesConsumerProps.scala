@@ -10,6 +10,9 @@ trait NamespacesConsumerProps extends ReactI18NextOptions {
   var initialI18nStore: js.UndefOr[js.Object] = js.undefined
   var initialLanguage: js.UndefOr[java.lang.String] = js.undefined
   var ns: js.UndefOr[reactDashI18nextLib.Namespace] = js.undefined
-  def children(t: js.Any, options: reactDashI18nextLib.Anon_I18n): reactLib.reactMod.ReactNs.ReactNode
+  def children(
+    t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify i18next.TFunction */ js.Any,
+    options: reactDashI18nextLib.Anon_I18n
+  ): reactLib.reactMod.ReactNs.ReactNode
 }
 

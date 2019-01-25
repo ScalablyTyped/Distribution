@@ -16,14 +16,14 @@ trait ChartLegendEntryCollectionLoadOptions extends js.Object {
   var $all: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents the height of the legendEntry on the chart Legend.
+    * For EACH ITEM in the collection: Represents the height of the legendEntry on the chart legend.
     *
     * [Api set: ExcelApi 1.8]
     */
   var height: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * For EACH ITEM in the collection: Represents the index of the LegendEntry in the Chart Legend.
+    * For EACH ITEM in the collection: Represents the index of the legendEntry in the chart legend.
     *
     * [Api set: ExcelApi 1.8]
     */

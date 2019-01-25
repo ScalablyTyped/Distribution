@@ -144,15 +144,15 @@ trait Item extends js.Object {
     * 
     * In addition to this signature, the method also has the following signature:
     * 
-    * `addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: AsyncResult<void>) => void): void;`
+    * `addHandlerAsync(eventType: Office.EventType, handler: any, callback?: (result: Office.AsyncResult<void>) => void): void;`
     * 
-    * @param eventType The event that should invoke the handler.
-    * @param handler The function to handle the event. The function must accept a single parameter, which is an object literal. 
+    * @param eventType - The event that should invoke the handler.
+    * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. 
     *                The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
-    *                 asyncResult, which is an Office.AsyncResult object.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+    *                asyncResult, which is an Office.AsyncResult object.
     */
   def addHandlerAsync(eventType: EventType, handler: js.Any): scala.Unit = js.native
   def addHandlerAsync(
@@ -168,7 +168,7 @@ trait Item extends js.Object {
     callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   /**
-    * Gets an attachment from a message or appointment and returns it as an `Office.AttachmentContent` object.
+    * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
     * 
     * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
     * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
@@ -186,11 +186,11 @@ trait Item extends js.Object {
     * 
     * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
     * 
-    * @param attachmentId The identifier of the attachment you want to get. 
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param attachmentId - The identifier of the attachment you want to get. 
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
-    *                 asyncResult, which is an Office.AsyncResult object. If the call fails, the asyncResult.error property will contain and error code 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+    *                asyncResult, which is an Office.AsyncResult object. If the call fails, the asyncResult.error property will contain and error code 
     *                 with the reason for the failure.
     * 
     * @beta
@@ -218,12 +218,12 @@ trait Item extends js.Object {
     * 
     * In addition to this signature, the method also has the following signature:
     * 
-    * `getInitializationContextAsync(callback?: (result: AsyncResult<string>) => void): void;`
+    * `getInitializationContextAsync(callback?: (result: Office.AsyncResult<string>) => void): void;`
     * 
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
-    *                 asyncResult, which is an Office.AsyncResult object. 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+    *                asyncResult, which is an Office.AsyncResult object. 
     *                 On success, the initialization data is provided in the asyncResult.value property as a string. 
     *                 If there is no initialization context, the asyncResult object will contain an Error object with its code property 
     *                 set to 9020 and its name property set to GenericResponseError.
@@ -246,7 +246,7 @@ trait Item extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     * 
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     *                 The `value` property of the result is the properties of the shared item.
     * 
@@ -265,11 +265,11 @@ trait Item extends js.Object {
     * 
     * In addition to this signature, this method also has the following signature:
     * 
-    * `getAsync(callback: (result: AsyncResult<Office.SharedProperties>) => void): void;`
+    * `getAsync(callback: (result: Office.AsyncResult<SharedProperties>) => void): void;`
     *
-    * @param options An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     *                 The `value` property of the result is the properties of the shared item.
     * 
@@ -298,9 +298,9 @@ trait Item extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
-    * @param userContext Optional. Developers can provide any object they wish to access in the callback function. 
+    * @param userContext - Optional. Developers can provide any object they wish to access in the callback function. 
     *                    This object can be accessed by the asyncResult.asyncContext property in the callback function.
     */
   def loadCustomPropertiesAsync(callback: js.Function1[/* result */ AsyncResult[CustomProperties], scala.Unit]): scala.Unit = js.native
@@ -324,13 +324,13 @@ trait Item extends js.Object {
     * 
     * In addition to this signature, the method also has the following signature:
     * 
-    * `removeHandlerAsync(eventType: Office.EventType, callback?: (result: AsyncResult<void>) => void): void;`
+    * `removeHandlerAsync(eventType: Office.EventType, callback?: (result: Office.AsyncResult<void>) => void): void;`
     * 
-    * @param eventType The event that should revoke the handler.
-    * @param options Optional. An object literal that contains one or more of the following properties.
+    * @param eventType - The event that should revoke the handler.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
-    *                 asyncResult, which is an Office.AsyncResult object.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+    *                asyncResult, which is an Office.AsyncResult object.
     */
   def removeHandlerAsync(eventType: EventType): scala.Unit = js.native
   def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native

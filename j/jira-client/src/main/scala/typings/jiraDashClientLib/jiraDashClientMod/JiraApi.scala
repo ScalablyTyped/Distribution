@@ -273,7 +273,7 @@ trait JiraApi extends js.Object {
   ): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
   def listComponents(project: java.lang.String): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
   def listFieldOptions(fieldKey: java.lang.String): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
-  def listFields(): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
+  def listFields(): js.Promise[js.Array[jiraDashClientLib.jiraDashClientMod.JiraApiNs.FieldObject]] = js.native
   def listIssueTypes(): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
   def listPriorities(): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native
   def listProjects(): js.Promise[jiraDashClientLib.jiraDashClientMod.JiraApiNs.JsonResponse] = js.native

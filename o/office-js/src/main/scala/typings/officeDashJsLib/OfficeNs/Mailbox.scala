@@ -118,11 +118,11 @@ trait Mailbox extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param eventType The event that should invoke the handler.
-    * @param handler The function to handle the event. The function must accept a single parameter, which is an object literal. 
+    * @param eventType - The event that should invoke the handler.
+    * @param handler - The function to handle the event. The function must accept a single parameter, which is an object literal. 
     *                The type property on the parameter will match the eventType parameter passed to addHandlerAsync.
-    * @param options Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param options - Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
   def addHandlerAsync(eventType: EventType, handler: js.Function1[/* type */ EventType, scala.Unit]): scala.Unit = js.native
@@ -153,8 +153,8 @@ trait Mailbox extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param itemId An item ID formatted for the Outlook REST APIs.
-    * @param restVersion A value indicating the version of the Outlook REST API used to retrieve the item ID.
+    * @param itemId - An item ID formatted for the Outlook REST APIs.
+    * @param restVersion - A value indicating the version of the Outlook REST API used to retrieve the item ID.
     */
   def convertToEwsId(itemId: java.lang.String, restVersion: officeDashJsLib.OfficeNs.MailboxEnumsNs.RestVersion): java.lang.String = js.native
   /**
@@ -178,7 +178,7 @@ trait Mailbox extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param timeValue A Date object.
+    * @param timeValue - A Date object.
     */
   def convertToLocalClientTime(timeValue: stdLib.Date): LocalClientTime = js.native
   /**
@@ -198,8 +198,8 @@ trait Mailbox extends js.Object {
     * {@link https://docs.microsoft.com/previous-versions/office/office-365-api/api/version-2.0/mail-rest-operations | Outlook Mail API} or the {@link https://graph.microsoft.io/ | Microsoft Graph}. 
     * The convertToRestId method converts an EWS-formatted ID into the proper format for REST.
     *
-    * @param itemId An item ID formatted for Exchange Web Services (EWS)
-    * @param restVersion A value indicating the version of the Outlook REST API that the converted ID will be used with.
+    * @param itemId - An item ID formatted for Exchange Web Services (EWS)
+    * @param restVersion - A value indicating the version of the Outlook REST API that the converted ID will be used with.
     */
   def convertToRestId(itemId: java.lang.String, restVersion: officeDashJsLib.OfficeNs.MailboxEnumsNs.RestVersion): java.lang.String = js.native
   /**
@@ -216,7 +216,7 @@ trait Mailbox extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param input The local time value to convert.
+    * @param input - The local time value to convert.
     * @returns A Date object with the time expressed in UTC.
     */
   def convertToUtcClientTime(input: LocalClientTime): stdLib.Date = js.native
@@ -245,7 +245,7 @@ trait Mailbox extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param itemId The Exchange Web Services (EWS) identifier for an existing calendar appointment.
+    * @param itemId - The Exchange Web Services (EWS) identifier for an existing calendar appointment.
     */
   def displayAppointmentForm(itemId: java.lang.String): scala.Unit = js.native
   /**
@@ -271,7 +271,7 @@ trait Mailbox extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param itemId The Exchange Web Services (EWS) identifier for an existing message.
+    * @param itemId - The Exchange Web Services (EWS) identifier for an existing message.
     */
   def displayMessageForm(itemId: java.lang.String): scala.Unit = js.native
   /**
@@ -300,7 +300,7 @@ trait Mailbox extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
     *
-    * @param parameters An AppointmentForm describing the new appointment. All properties are optional.
+    * @param parameters - An AppointmentForm describing the new appointment. All properties are optional.
     */
   def displayNewAppointmentForm(parameters: AppointmentForm): scala.Unit = js.native
   /**
@@ -319,7 +319,7 @@ trait Mailbox extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
     *
-    * @param parameters A dictionary containing all values to be filled in for the user in the new form. All parameters are optional.
+    * @param parameters - A dictionary containing all values to be filled in for the user in the new form. All parameters are optional.
     * 
     *        toRecipients: An array of strings containing the email addresses or an array containing an {@link Office.EmailAddressDetails} object 
     *        for each of the recipients on the To line. The array is limited to a maximum of 100 entries.
@@ -372,7 +372,7 @@ trait Mailbox extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose and read</td></tr></table>
     *
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of type AsyncResult. 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
     *                 The token is provided as a string in the `asyncResult.value` property.
     *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
     */
@@ -416,14 +416,14 @@ trait Mailbox extends js.Object {
     * 
     * In addition to this signature, the method has the following signatures:
     * 
-    * `getCallbackTokenAsync(callback: (result: AsyncResult<string>) => void): void;`
+    * `getCallbackTokenAsync(callback: (result: Office.AsyncResult<string>) => void): void;`
     * 
-    * `getCallbackTokenAsync(callback: (result: AsyncResult<string>) => void, userContext?: any): void;`
+    * `getCallbackTokenAsync(callback: (result: Office.AsyncResult<string>) => void, userContext?: any): void;`
     *
-    * @param options An object literal that contains one or more of the following properties.
+    * @param options - An object literal that contains one or more of the following properties.
     *        isRest: Determines if the token provided will be used for the Outlook REST APIs or Exchange Web Services. Default value is false.
     *        asyncContext: Any state data that is passed to the asynchronous method.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property.
     *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
     */
@@ -447,11 +447,11 @@ trait Mailbox extends js.Object {
     * The getUserIdentityTokenAsync method returns a token that you can use to identify and 
     * {@link https://docs.microsoft.com/outlook/add-ins/authentication | authenticate the add-in and user with a third-party system}.
     *
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     *                 The token is provided as a string in the `asyncResult.value` property.
     *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
-    * @param userContext Optional. Any state data that is passed to the asynchronous method.|
+    * @param userContext - Optional. Any state data that is passed to the asynchronous method.|
     */
   def getUserIdentityTokenAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   def getUserIdentityTokenAsync(
@@ -504,11 +504,11 @@ trait Mailbox extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose and read</td></tr></table>
     *
-    * @param data The EWS request.
-    * @param callback When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
+    * @param data - The EWS request.
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
     *                 The `value` property of the result is the XML of the EWS request provided as a string. 
     *                 If the result exceeds 1 MB in size, an error message is returned instead.
-    * @param userContext Optional. Any state data that is passed to the asynchronous method.
+    * @param userContext - Optional. Any state data that is passed to the asynchronous method.
     */
   def makeEwsRequestAsync(data: js.Any, callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   def makeEwsRequestAsync(
@@ -529,9 +529,9 @@ trait Mailbox extends js.Object {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
     *
-    * @param eventType The event that should revoke the handler.
-    * @param options Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.
-    * @param callback Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param eventType - The event that should revoke the handler.
+    * @param options - Optional. Provides an option for preserving context data of any type, unchanged, for use in a callback.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
   def removeHandlerAsync(eventType: EventType): scala.Unit = js.native

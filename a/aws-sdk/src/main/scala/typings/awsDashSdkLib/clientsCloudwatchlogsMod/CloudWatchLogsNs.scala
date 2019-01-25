@@ -1041,7 +1041,7 @@ object CloudWatchLogsNs extends js.Object {
   
   trait StartQueryRequest extends js.Object {
     /**
-      * The time to end this query, if it is still running. Specified as epoch time, the number of seconds since January 1, 1970, 00:00:00 UTC.
+      * The end of the time range to query. Specified as epoch time, the number of seconds since January 1, 1970, 00:00:00 UTC.
       */
     var endTime: Timestamp
     /**
@@ -1057,7 +1057,7 @@ object CloudWatchLogsNs extends js.Object {
       */
     var queryString: QueryString
     /**
-      * The time to start the query. Specified as epoch time, the number of seconds since January 1, 1970, 00:00:00 UTC.
+      * The beginning of the time range to query. Specified as epoch time, the number of seconds since January 1, 1970, 00:00:00 UTC.
       */
     var startTime: Timestamp
   }
@@ -1797,7 +1797,7 @@ object CloudWatchLogsNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Schedules a query of a log group using CloudWatch Logs Insights. You specify the log group to query, the query string to use, and the time to query. For more information, see CloudWatch Logs Insights Query Syntax.
+      * Schedules a query of a log group using CloudWatch Logs Insights. You specify the log group and time range to query, and the query string to use. For more information, see CloudWatch Logs Insights Query Syntax.
       */
     def startQuery(): awsDashSdkLib.libRequestMod.Request[StartQueryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def startQuery(
@@ -1808,7 +1808,7 @@ object CloudWatchLogsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartQueryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Schedules a query of a log group using CloudWatch Logs Insights. You specify the log group to query, the query string to use, and the time to query. For more information, see CloudWatch Logs Insights Query Syntax.
+      * Schedules a query of a log group using CloudWatch Logs Insights. You specify the log group and time range to query, and the query string to use. For more information, see CloudWatch Logs Insights Query Syntax.
       */
     def startQuery(params: StartQueryRequest): awsDashSdkLib.libRequestMod.Request[StartQueryResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def startQuery(

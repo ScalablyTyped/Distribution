@@ -11,5 +11,6 @@ trait TextPathProps extends TextSpecificProps {
   var midLine: TextPathMidLine
   var spacing: js.UndefOr[TextPathSpacing] = js.undefined
   var startOffset: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
+  var xlinkHref: js.UndefOr[java.lang.String] = js.undefined
 }
 

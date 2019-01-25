@@ -13,11 +13,11 @@ trait NotificationHubService extends js.Object {
   var mpns: azureDashSbLib.libMpnserviceMod.namespaced = js.native
   var wns: azureDashSbLib.libWnsserviceMod.namespaced = js.native
   def createOrUpdateInstallation(
-    installation: java.lang.String,
+    installation: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.NotificationHubInstallation,
     callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): scala.Unit = js.native
   def createOrUpdateInstallation(
-    installation: java.lang.String,
+    installation: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.NotificationHubInstallation,
     options: js.Any,
     callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Callback */ js.Any
   ): scala.Unit = js.native
