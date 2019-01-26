@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material-ui__core"
-version := "3.9.0-2a8bb1"
+version := "3.9.0-7bc587"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -25,7 +25,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-99d6f9",
   "org.scalablytyped" %%% "react-event-listener" % "0.4-dt-20180803Z-b8e735",
   "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20181219Z-3a0a19",
-  "org.scalablytyped" %%% "recompose" % "0.30-dt-20181212Z-e5136c",
+  "org.scalablytyped" %%% "recompose" % "0.30-dt-20190120Z-45f3c5",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-bc5916",
   "org.scalablytyped" %%% "warning" % "3.0.0-dt-20180214Z-9bcf7b")

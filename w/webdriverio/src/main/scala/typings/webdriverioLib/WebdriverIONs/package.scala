@@ -6,11 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object WebdriverIONs {
-  type Axis = webdriverioLib.webdriverioLibStrings.x | webdriverioLib.webdriverioLibStrings.y
-  type ElementId = java.lang.String
-  type LocatorStrategy = (webdriverioLib.webdriverioLibStrings.`css selector`) | (webdriverioLib.webdriverioLibStrings.`link text`) | (webdriverioLib.webdriverioLibStrings.`partial link text`) | (webdriverioLib.webdriverioLibStrings.`tag name`) | webdriverioLib.webdriverioLibStrings.xpath
-  type LoggingPreferenceType = webdriverioLib.webdriverioLibStrings.OFF | webdriverioLib.webdriverioLibStrings.SEVERE | webdriverioLib.webdriverioLibStrings.WARNING | webdriverioLib.webdriverioLibStrings.INFO | webdriverioLib.webdriverioLibStrings.CONFIG | webdriverioLib.webdriverioLibStrings.FINE | webdriverioLib.webdriverioLibStrings.FINER | webdriverioLib.webdriverioLibStrings.FINEST | webdriverioLib.webdriverioLibStrings.ALL
-  type Method = webdriverioLib.webdriverioLibStrings.POST | webdriverioLib.webdriverioLibStrings.GET | webdriverioLib.webdriverioLibStrings.DELETE
-  type PageLoadingStrategy = webdriverioLib.webdriverioLibStrings.none | webdriverioLib.webdriverioLibStrings.eager | webdriverioLib.webdriverioLibStrings.normal
-  type Timeouts = webdriverioLib.webdriverioLibStrings.script | webdriverioLib.webdriverioLibStrings.pageLoad | webdriverioLib.webdriverioLibStrings.`implicit`
+  type ActionTypes = webdriverioLib.webdriverioLibStrings.press | webdriverioLib.webdriverioLibStrings.longPress | webdriverioLib.webdriverioLibStrings.tap | webdriverioLib.webdriverioLibStrings.moveTo | webdriverioLib.webdriverioLibStrings.wait | webdriverioLib.webdriverioLibStrings.release
+  type Call = js.Function1[/* callback */ js.Function, js.Any]
+  type Config = Options with (Omit[
+    webdriverLib.WebDriverNs.Options, 
+    webdriverioLib.webdriverioLibStrings.capabilities
+  ]) with Hooks
+  type Execute = js.Function2[
+    /* script */ java.lang.String | (js.Function1[/* repeated */ js.Any, js.Any]), 
+    /* repeated */ js.Any, 
+    js.Any
+  ]
+  type ExecuteAsync = js.Function2[
+    /* script */ java.lang.String | (js.Function1[/* repeated */ js.Any, js.Any]), 
+    /* repeated */ js.Any, 
+    js.Any
+  ]
+  type LocationParam = webdriverioLib.webdriverioLibStrings.x | webdriverioLib.webdriverioLibStrings.y
+  type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
+  type SizeParam = webdriverioLib.webdriverioLibStrings.width | webdriverioLib.webdriverioLibStrings.height
+  type TouchActions = java.lang.String | TouchAction | js.Array[TouchAction]
 }

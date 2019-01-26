@@ -85,7 +85,7 @@ object MediaLiveNs extends js.Object {
   
   trait ArchiveGroupSettings extends js.Object {
     /**
-      * A directory and base filename where archive files should be written.  If the base filename portion of the URI is left blank, the base filename of the first input will be automatically inserted.
+      * A directory and base filename where archive files should be written.
       */
     var Destination: OutputLocationRef
     /**
@@ -1405,6 +1405,27 @@ object MediaLiveNs extends js.Object {
     var ReferenceActionName: __string
   }
   
+  trait FrameCaptureGroupSettings extends js.Object {
+    /**
+      * The destination for the frame capture files. Either the URI for an Amazon S3 bucket and object, plus a file name prefix (for example, s3ssl://sportsDelivery/highlights/20180820/curling_) or the URI for a MediaStore container, plus a file name prefix (for example, mediastoressl://sportsDelivery/20180820/curling_). The final file names consist of the prefix from the destination field (for example, "curling_") + name modifier + the counter (5 digits, starting from 00001) + extension (which is always .jpg).  For example, curlingLow.00001.jpg
+      */
+    var Destination: OutputLocationRef
+  }
+  
+  trait FrameCaptureOutputSettings extends js.Object {
+    /**
+      * Required if the output group contains more than one output. This modifier forms part of the output file name.
+      */
+    var NameModifier: js.UndefOr[__string] = js.undefined
+  }
+  
+  trait FrameCaptureSettings extends js.Object {
+    /**
+      * The frequency, in seconds, for capturing frames for inclusion in the output.  For example, "10" means capture a frame every 10 seconds.
+      */
+    var CaptureInterval: __integerMin1Max3600
+  }
+  
   trait GlobalConfiguration extends js.Object {
     /**
       * Value to set the initial audio gain for the Live Event.
@@ -1472,11 +1493,11 @@ object MediaLiveNs extends js.Object {
     /**
       * Framerate denominator.
       */
-    var FramerateDenominator: js.UndefOr[__integer] = js.undefined
+    var FramerateDenominator: js.UndefOr[__integerMin1] = js.undefined
     /**
       * Framerate numerator - framerate is a fraction, e.g. 24000 / 1001 = 23.976 fps.
       */
-    var FramerateNumerator: js.UndefOr[__integer] = js.undefined
+    var FramerateNumerator: js.UndefOr[__integerMin1] = js.undefined
     /**
       * Documentation update needed
       */
@@ -1703,6 +1724,10 @@ object MediaLiveNs extends js.Object {
       * Parameters that control interactions with the CDN.
       */
     var HlsCdnSettings: js.UndefOr[HlsCdnSettings] = js.undefined
+    /**
+      * If enabled, writes out I-Frame only playlists in addition to media playlists.
+      */
+    var IFrameOnlyPlaylists: js.UndefOr[IFrameOnlyPlaylistType] = js.undefined
     /**
       * If mode is "live", the number of segments to retain in the manifest (.m3u8) file. This number must be less than or equal to keepSegments. If mode is "vod", this parameter has no effect.
       */
@@ -2789,6 +2814,7 @@ object MediaLiveNs extends js.Object {
   
   trait OutputGroupSettings extends js.Object {
     var ArchiveGroupSettings: js.UndefOr[ArchiveGroupSettings] = js.undefined
+    var FrameCaptureGroupSettings: js.UndefOr[FrameCaptureGroupSettings] = js.undefined
     var HlsGroupSettings: js.UndefOr[HlsGroupSettings] = js.undefined
     var MsSmoothGroupSettings: js.UndefOr[MsSmoothGroupSettings] = js.undefined
     var RtmpGroupSettings: js.UndefOr[RtmpGroupSettings] = js.undefined
@@ -2801,6 +2827,7 @@ object MediaLiveNs extends js.Object {
   
   trait OutputSettings extends js.Object {
     var ArchiveOutputSettings: js.UndefOr[ArchiveOutputSettings] = js.undefined
+    var FrameCaptureOutputSettings: js.UndefOr[FrameCaptureOutputSettings] = js.undefined
     var HlsOutputSettings: js.UndefOr[HlsOutputSettings] = js.undefined
     var MsSmoothOutputSettings: js.UndefOr[MsSmoothOutputSettings] = js.undefined
     var RtmpOutputSettings: js.UndefOr[RtmpOutputSettings] = js.undefined
@@ -4137,6 +4164,7 @@ object MediaLiveNs extends js.Object {
   }
   
   trait VideoCodecSettings extends js.Object {
+    var FrameCaptureSettings: js.UndefOr[FrameCaptureSettings] = js.undefined
     var H264Settings: js.UndefOr[H264Settings] = js.undefined
   }
   
@@ -4146,7 +4174,7 @@ object MediaLiveNs extends js.Object {
       */
     var CodecSettings: js.UndefOr[VideoCodecSettings] = js.undefined
     /**
-      * Output video height (in pixels). Leave blank to use source video height. If left blank, width must also be unspecified.
+      * Output video height, in pixels. Must be an even number. For most codecs, you can leave this field and width blank in order to use the height and width (resolution) from the source. Note, however, that leaving blank is not recommended. For the Frame Capture codec, height and width are required.
       */
     var Height: js.UndefOr[__integer] = js.undefined
     /**
@@ -4154,19 +4182,19 @@ object MediaLiveNs extends js.Object {
       */
     var Name: __string
     /**
-      * Indicates how to respond to the AFD values in the input stream. Setting to "respond" causes input video to be clipped, depending on AFD value, input display aspect ratio and output display aspect ratio.
+      * Indicates how to respond to the AFD values in the input stream. RESPOND causes input video to be clipped, depending on the AFD value, input display aspect ratio, and output display aspect ratio, and (except for FRAMECAPTURE codec) includes the values in the output. PASSTHROUGH (does not apply to FRAMECAPTURE codec) ignores the AFD values and includes the values in the output, so input video is not clipped. NONE ignores the AFD values and does not include the values through to the output, so input video is not clipped.
       */
     var RespondToAfd: js.UndefOr[VideoDescriptionRespondToAfd] = js.undefined
     /**
-      * When set to "stretchToOutput", automatically configures the output position to stretch the video to the specified output resolution. This option will override any position value.
+      * STRETCHTOOUTPUT configures the output position to stretch the video to the specified output resolution (height and width). This option will override any position value. DEFAULT may insert black boxes (pillar boxes or letter boxes) around the video to provide the specified output resolution.
       */
     var ScalingBehavior: js.UndefOr[VideoDescriptionScalingBehavior] = js.undefined
     /**
-      * Changes the width of the anti-alias filter kernel used for scaling. Only applies if scaling is being performed and antiAlias is set to true. 0 is the softest setting, 100 the sharpest, and 50 recommended for most content.
+      * Changes the strength of the anti-alias filter used for scaling. 0 is the softest setting, 100 is the sharpest. A setting of 50 is recommended for most content.
       */
     var Sharpness: js.UndefOr[__integerMin0Max100] = js.undefined
     /**
-      * Output video width (in pixels). Leave out to use source video width.  If left out, height must also be left out. Display aspect ratio is always preserved by letterboxing or pillarboxing when necessary.
+      * Output video width, in pixels. Must be an even number. For most codecs, you can leave this field and height blank in order to use the height and width (resolution) from the source. Note, however, that leaving blank is not recommended. For the Frame Capture codec, height and width are required.
       */
     var Width: js.UndefOr[__integer] = js.undefined
   }
@@ -4309,6 +4337,7 @@ object MediaLiveNs extends js.Object {
   type HlsTimedMetadataId3Frame = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.PRIV | awsDashSdkLib.awsDashSdkLibStrings.TDRL | java.lang.String
   type HlsTsFileMode = awsDashSdkLib.awsDashSdkLibStrings.SEGMENTED_FILES | awsDashSdkLib.awsDashSdkLibStrings.SINGLE_FILE | java.lang.String
   type HlsWebdavHttpTransferMode = awsDashSdkLib.awsDashSdkLibStrings.CHUNKED | awsDashSdkLib.awsDashSdkLibStrings.NON_CHUNKED | java.lang.String
+  type IFrameOnlyPlaylistType = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.STANDARD | java.lang.String
   type InputCodec = awsDashSdkLib.awsDashSdkLibStrings.MPEG2 | awsDashSdkLib.awsDashSdkLibStrings.AVC | awsDashSdkLib.awsDashSdkLibStrings.HEVC | java.lang.String
   type InputDeblockFilter = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
   type InputDenoiseFilter = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
@@ -4421,6 +4450,7 @@ object MediaLiveNs extends js.Object {
   type __integerMin1Max20 = scala.Double
   type __integerMin1Max31 = scala.Double
   type __integerMin1Max32 = scala.Double
+  type __integerMin1Max3600 = scala.Double
   type __integerMin1Max4 = scala.Double
   type __integerMin1Max5 = scala.Double
   type __integerMin1Max6 = scala.Double

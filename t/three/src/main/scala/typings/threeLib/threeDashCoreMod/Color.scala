@@ -104,5 +104,7 @@ class Color () extends js.Object {
   def toArray(): js.Array[scala.Double] = js.native
   def toArray(array: js.Array[scala.Double]): js.Array[scala.Double] = js.native
   def toArray(array: js.Array[scala.Double], offset: scala.Double): js.Array[scala.Double] = js.native
+  def toArray(xyz: stdLib.ArrayLike[scala.Double]): stdLib.ArrayLike[scala.Double] = js.native
+  def toArray(xyz: stdLib.ArrayLike[scala.Double], offset: scala.Double): stdLib.ArrayLike[scala.Double] = js.native
 }
 

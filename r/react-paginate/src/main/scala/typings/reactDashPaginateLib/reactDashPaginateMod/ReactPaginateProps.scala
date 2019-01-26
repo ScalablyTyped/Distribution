@@ -23,6 +23,10 @@ trait ReactPaginateProps extends js.Object {
     */
   var breakLabel: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
+    * The classname on tag `a` of the ellipsis element.
+    */
+  var breakLinkClassName: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The classname of the pagination container.
     */
   var containerClassName: js.UndefOr[java.lang.String] = js.undefined

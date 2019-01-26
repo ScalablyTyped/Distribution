@@ -66,6 +66,10 @@ object ^ extends js.Object {
   def getContext[TContext](contextTypes: reactLib.reactMod.ReactNs.ValidationMap[TContext]): recomposeLib.recomposeMod.InferableComponentEnhancer[TContext] = js.native
   def getDisplayName(component: reactLib.reactMod.ReactNs.ComponentType[_]): java.lang.String = js.native
   def hoistStatics[TProps](hoc: recomposeLib.recomposeMod.InferableComponentEnhancer[TProps]): recomposeLib.recomposeMod.InferableComponentEnhancer[TProps] = js.native
+  def hoistStatics[TProps](
+    hoc: recomposeLib.recomposeMod.InferableComponentEnhancer[TProps],
+    blacklist: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
+  ): recomposeLib.recomposeMod.InferableComponentEnhancer[TProps] = js.native
   def isClassComponent(value: js.Any): scala.Boolean = js.native
   def lifecycle[TProps, TState, TInstance](
     spec: (recomposeLib.recomposeMod.ReactLifeCycleFunctions[TProps, TState, TInstance]) with TInstance

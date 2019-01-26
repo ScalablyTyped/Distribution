@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("apollo-server-caching", "InMemoryLRUCache")
 @js.native
-class InMemoryLRUCache ()
-  extends apolloDashServerDashCachingLib.distInMemoryLRUCacheMod.InMemoryLRUCache {
+class InMemoryLRUCache[V] ()
+  extends apolloDashServerDashCachingLib.distInMemoryLRUCacheMod.InMemoryLRUCache[V] {
   def this(hasMaxSize: apolloDashServerDashCachingLib.Anon_MaxSize) = this()
 }
 

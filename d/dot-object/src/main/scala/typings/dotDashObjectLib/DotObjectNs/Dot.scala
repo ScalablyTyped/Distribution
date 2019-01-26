@@ -166,6 +166,20 @@ trait Dot extends js.Object {
     */
   def remove(path: java.lang.String, obj: js.Any): js.Any = js.native
   /**
+    *
+    * Replace/merge an object to an existing object property
+    *
+    * @param {String} path dotted path
+    * @param {Object} v object to be set
+    * @param {Object} obj object to be modified
+    * @param {Boolean} merge optional merge
+    */
+  def set(path: java.lang.String, v: js.Any, obj: js.Object): scala.Unit = js.native
+  def set(path: java.lang.String, v: js.Any, obj: js.Object, merge: scala.Boolean): scala.Unit = js.native
+  /**
+    *
+    * Replace/create with a string
+    *
     * @param {String} path dotted path
     * @param {String} v value to be set
     * @param {Object} obj object to be modified

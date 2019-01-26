@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "pulumi__aws"
-version := "v0.16.7-4b7e9a"
+version := "v0.16.7-556e29"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "arrify" % "1.0-dt-20180509Z-a40bdc",
-  "org.scalablytyped" %%% "aws-sdk" % "2.394.0-59499f",
+  "org.scalablytyped" %%% "aws-sdk" % "2.395.0-d30578",
   "org.scalablytyped" %%% "buffer-from" % "1.1-dt-20180616Z-c5a3f6",
   "org.scalablytyped" %%% "builtin-modules" % "2.0-dt-20180214Z-5bd474",
   "org.scalablytyped" %%% "diff" % "3.5-dt-20181102Z-3266eb",
@@ -36,7 +36,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "protobufjs__path" % "1.1.2-87da94",
   "org.scalablytyped" %%% "protobufjs__pool" % "1.1.0-9eee98",
   "org.scalablytyped" %%% "protobufjs__utf8" % "1.1.0-2cdf20",
-  "org.scalablytyped" %%% "pulumi__pulumi" % "0.16.11-69f2cf",
+  "org.scalablytyped" %%% "pulumi__pulumi" % "0.16.12-69f2cf",
   "org.scalablytyped" %%% "read-package-tree" % "5.2-dt-20180512Z-09bf58",
   "org.scalablytyped" %%% "require-from-string" % "1.2-dt-20180214Z-d23486",
   "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180507Z-4089ba",

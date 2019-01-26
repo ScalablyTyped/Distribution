@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-typedoc"
-version := "2.2.1-2f4598"
+version := "2.2.1-124f06"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -19,9 +19,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
   "org.scalablytyped" %%% "plugin-error" % "0.1-dt-20180214Z-339dfc",
   "org.scalablytyped" %%% "progress" % "2.0-dt-20181213Z-36ed9c",
-  "org.scalablytyped" %%% "shelljs" % "0.8-dt-20181206Z-19ba5e",
+  "org.scalablytyped" %%% "shelljs" % "0.8-dt-20190125Z-1fd4f2",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
-  "org.scalablytyped" %%% "typedoc" % "0.14.2-c3729b",
+  "org.scalablytyped" %%% "typedoc" % "0.14.2-41b312",
   "org.scalablytyped" %%% "typescript" % "3.2.4-3dde35")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

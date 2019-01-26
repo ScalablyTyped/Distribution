@@ -197,9 +197,18 @@ class Vector2 () extends Vector {
     * Returns an array [x, y], or copies x and y into the provided array.
     * @param array (optional) array to store the vector to. If this is not provided, a new array will be created.
     * @param offset (optional) optional offset into the array.
+    * @return The created or provided array.
     */
   def toArray(): js.Array[scala.Double] = js.native
   def toArray(array: js.Array[scala.Double]): js.Array[scala.Double] = js.native
   def toArray(array: js.Array[scala.Double], offset: scala.Double): js.Array[scala.Double] = js.native
+  /**
+    * Copies x and y into the provided array-like.
+    * @param array array-like to store the vector to.
+    * @param offset (optional) optional offset into the array.
+    * @return The provided array-like.
+    */
+  def toArray(array: stdLib.ArrayLike[scala.Double]): stdLib.ArrayLike[scala.Double] = js.native
+  def toArray(array: stdLib.ArrayLike[scala.Double], offset: scala.Double): stdLib.ArrayLike[scala.Double] = js.native
 }
 

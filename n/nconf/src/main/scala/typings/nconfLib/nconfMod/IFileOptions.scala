@@ -11,6 +11,7 @@ trait IFileOptions extends js.Object {
   var format: js.UndefOr[IFormat] = js.undefined
   var json_spacing: js.UndefOr[scala.Double] = js.undefined
   var search: js.UndefOr[scala.Boolean] = js.undefined
+  var secure: js.UndefOr[ISecureFileOptions] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 

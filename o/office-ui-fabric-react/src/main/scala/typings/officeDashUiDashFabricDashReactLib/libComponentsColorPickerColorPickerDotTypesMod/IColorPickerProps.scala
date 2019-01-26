@@ -13,11 +13,11 @@ trait IColorPickerProps
     */
   var alphaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The setting of whether to hide the alpha control slider.
+    * Whether to hide the alpha control slider.
     */
   var alphaSliderHidden: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Label for the blue textfield.
+    * Label for the blue text field.
     * @defaultvalue Blue
     */
   var blueLabel: js.UndefOr[java.lang.String] = js.undefined
@@ -30,17 +30,17 @@ trait IColorPickerProps
     */
   var color: java.lang.String
   /**
-    * Label for the green textfield.
+    * Label for the green text field.
     * @defaultvalue Green
     */
   var greenLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Label for the hex textfield.
+    * Label for the hex text field.
     * @defaultvalue Hex
     */
   var hexLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Callback issued when the user changes the color.
+    * Callback for when the user changes the color.
     */
   var onColorChanged: js.UndefOr[
     js.Function2[
@@ -50,7 +50,7 @@ trait IColorPickerProps
     ]
   ] = js.undefined
   /**
-    * Label for the red textfield.
+    * Label for the red text field.
     * @defaultvalue Red
     */
   var redLabel: js.UndefOr[java.lang.String] = js.undefined

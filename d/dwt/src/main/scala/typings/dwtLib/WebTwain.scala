@@ -5,10 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/**
-  * @class
-  */
-// properties (get/set) / sync functions
 @js.native
 trait WebTwain extends js.Object {
   var Addon: WebTwainAddon = js.native
@@ -1680,6 +1676,32 @@ trait WebTwain extends js.Object {
     ]
   ): scala.Boolean = js.native
   /**
+    * Uploads the images specified by the indices to the HTTP server.
+    * @method WebTwain#HTTPUpload
+    * @param {string} url the url where the images are sent in a POST request.
+    * @param {Array} indices indices specifies which images are to be uploaded.
+    * @param {EnumDWT_ImageType} enumImageType the image format in which the images are to be uploaded.
+    * @param {EnumDWT_UploadDataFormat} dataFormat whether to upload the images as binary or a base64-based string.
+    * @param {string} fileName the file name
+    * @param {function} asyncSuccessFunc the function to call when the upload succeeds. Please refer to the function prototype OnSuccess.
+    * @param {function} asyncFailureFunc the function to call when the upload fails. Please refer to the function prototype OnFailure.
+    * @return {boolean}
+    */
+  def HTTPUpload(
+    url: java.lang.String,
+    indices: js.Array[scala.Double],
+    enumImageType: EnumDWT_ImageType,
+    dataFormat: EnumDWT_UploadDataFormat,
+    fileName: java.lang.String,
+    asyncSuccessFunc: js.Function1[/* httppostresponsestring */ java.lang.String, scala.Unit],
+    asyncFailureFunc: js.Function3[
+      /* errorCode */ scala.Double, 
+      /* errorString */ java.lang.String, 
+      /* httppostresponsestring */ java.lang.String, 
+      scala.Unit
+    ]
+  ): scala.Boolean = js.native
+  /**
     * Uploads all images in the buffer to the HTTP server through the HTTP Post method as a Multi-Page TIFF.
     * @method WebTwain#HTTPUploadAllThroughPostAsMultiPageTIFF
     * @param {string} HTTPServer  the name of the HTTP server.
@@ -2720,6 +2742,9 @@ trait WebTwain extends js.Object {
     * @return {boolean}
     */
   def ShowImageEditor(): scala.Boolean = js.native
+  def ShowImageEditor(divID: java.lang.String): scala.Boolean = js.native
+  def ShowImageEditor(divID: java.lang.String, divWidth: scala.Double): scala.Boolean = js.native
+  def ShowImageEditor(divID: java.lang.String, divWidth: scala.Double, divHeight: scala.Double): scala.Boolean = js.native
   /**
     * [Deprecated.] Shows the GUI of Image Editor with custom settings.
     * @method WebTwain#ShowImageEditorEx

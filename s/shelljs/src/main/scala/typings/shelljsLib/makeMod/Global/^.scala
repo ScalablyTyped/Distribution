@@ -12,7 +12,7 @@ object ^ extends js.Object {
     /* repeated */ java.lang.String | js.Array[java.lang.String], 
     shelljsLib.shelljsMod.ShellString
   ] = js.native
-  val cd: js.Function1[/* dir */ js.UndefOr[java.lang.String], scala.Unit] = js.native
+  val cd: js.Function1[/* dir */ js.UndefOr[java.lang.String], shelljsLib.shelljsMod.ShellString] = js.native
   val chmod: shelljsLib.Anon_FileMode = js.native
   val config: shelljsLib.shelljsMod.ShellConfig = js.native
   val cp: shelljsLib.Anon_Dest = js.native
@@ -37,8 +37,8 @@ object ^ extends js.Object {
   val rm: shelljsLib.Anon_Files = js.native
   val sed: shelljsLib.Anon_File = js.native
   val set: js.Function1[/* options */ java.lang.String, scala.Unit] = js.native
-  val sort: shelljsLib.Anon_FilesOptionsArrayShellString = js.native
-  val tail: shelljsLib.Anon_FilesOptionsArrayShellStringString = js.native
+  val sort: shelljsLib.Anon_Files = js.native
+  val tail: shelljsLib.Anon_FilesOptionsArrayShellString = js.native
   val target: shelljsLib.Anon_All = js.native
   val tempdir: js.Function0[shelljsLib.shelljsMod.ShellString] = js.native
   val touch: shelljsLib.Anon_FilesOptionsArray = js.native

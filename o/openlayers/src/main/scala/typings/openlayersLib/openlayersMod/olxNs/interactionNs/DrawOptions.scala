@@ -18,6 +18,7 @@ trait DrawOptions extends js.Object {
   var minPoints: js.UndefOr[scala.Double] = js.undefined
   var snapTolerance: js.UndefOr[scala.Double] = js.undefined
   var source: js.UndefOr[openlayersLib.openlayersMod.sourceNs.Vector] = js.undefined
+  var stopClick: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[
     openlayersLib.openlayersMod.styleNs.Style | js.Array[openlayersLib.openlayersMod.styleNs.Style] | openlayersLib.openlayersMod.StyleFunction
   ] = js.undefined

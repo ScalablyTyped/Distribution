@@ -293,6 +293,20 @@ object MediaConnectNs extends js.Object {
     var NextToken: js.UndefOr[__string] = js.undefined
   }
   
+  trait ListTagsForResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the resource that you want to view tags for.
+      */
+    var ResourceArn: __string
+  }
+  
+  trait ListTagsForResourceResponse extends js.Object {
+    /**
+      * A map from tag keys to values. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
+      */
+    var Tags: js.UndefOr[__mapOf__string] = js.undefined
+  }
+  
   trait ListedEntitlement extends js.Object {
     /**
       * The ARN of the entitlement.
@@ -539,6 +553,17 @@ object MediaConnectNs extends js.Object {
     var Status: js.UndefOr[Status] = js.undefined
   }
   
+  trait TagResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the resource that you want to add tags to.
+      */
+    var ResourceArn: __string
+    /**
+      * A map from tag keys to values. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
+      */
+    var Tags: __mapOf__string
+  }
+  
   trait Transport extends js.Object {
     /**
       * The smoothing max bitrate for RTP and RTP-FEC streams.
@@ -729,6 +754,29 @@ object MediaConnectNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListFlowsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Lists all tags associated with the resource.
+      */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists all tags associated with the resource.
+      */
+    def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      params: ListTagsForResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Removes an output from an existing flow. This request can be made only on an output that does not have an entitlement associated with it. If the output has an entitlement, you must revoke the entitlement instead. When an entitlement is revoked from a flow, the service automatically removes the associated output.
       */
     def removeFlowOutput(): awsDashSdkLib.libRequestMod.Request[RemoveFlowOutputResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -821,6 +869,36 @@ object MediaConnectNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopFlowResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Associates the specified tags to a resource. If the request does not mention an existing tag associated with the resource, that tag is not changed.
+      */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Associates the specified tags to a resource. If the request does not mention an existing tag associated with the resource, that tag is not changed.
+      */
+    def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      params: TagResourceRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the specified tags from a resource.
+      */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the specified tags from a resource.
+      */
+    def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      params: UntagResourceRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * You can change an entitlement's description, subscribers, and encryption. If you change the subscribers, the service will remove the outputs that are are used by the subscribers that are removed.
       */
     def updateFlowEntitlement(): awsDashSdkLib.libRequestMod.Request[UpdateFlowEntitlementResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -889,6 +967,17 @@ object MediaConnectNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateFlowSourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  }
+  
+  trait UntagResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the resource that you want to remove tags from.
+      */
+    var ResourceArn: __string
+    /**
+      * The keys of the tags to be removed.
+      */
+    var TagKeys: __listOf__string
   }
   
   trait UpdateEncryption extends js.Object {
@@ -1049,6 +1138,9 @@ object MediaConnectNs extends js.Object {
       */
     var Source: js.UndefOr[Source] = js.undefined
   }
+  
+  trait __mapOf__string
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[__string]
   
   val TypesNs: this.type = js.native
   type Algorithm = awsDashSdkLib.awsDashSdkLibStrings.aes128 | awsDashSdkLib.awsDashSdkLibStrings.aes192 | awsDashSdkLib.awsDashSdkLibStrings.aes256 | java.lang.String

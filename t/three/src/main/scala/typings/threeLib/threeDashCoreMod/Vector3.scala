@@ -143,9 +143,23 @@ class Vector3 () extends Vector {
     * Sets this vector to a - b.
     */
   def subVectors(a: Vector3, b: Vector3): this.type = js.native
+  /**
+    * Returns an array [x, y, z], or copies x, y and z into the provided array.
+    * @param array (optional) array to store the vector to. If this is not provided, a new array will be created.
+    * @param offset (optional) optional offset into the array.
+    * @return The created or provided array.
+    */
   def toArray(): js.Array[scala.Double] = js.native
   def toArray(xyz: js.Array[scala.Double]): js.Array[scala.Double] = js.native
   def toArray(xyz: js.Array[scala.Double], offset: scala.Double): js.Array[scala.Double] = js.native
+  /**
+    * Copies x, y and z into the provided array-like.
+    * @param array array-like to store the vector to.
+    * @param offset (optional) optional offset into the array.
+    * @return The provided array-like.
+    */
+  def toArray(xyz: stdLib.ArrayLike[scala.Double]): stdLib.ArrayLike[scala.Double] = js.native
+  def toArray(xyz: stdLib.ArrayLike[scala.Double], offset: scala.Double): stdLib.ArrayLike[scala.Double] = js.native
   def transformDirection(m: Matrix4): this.type = js.native
   def unproject(camera: Camera): this.type = js.native
 }

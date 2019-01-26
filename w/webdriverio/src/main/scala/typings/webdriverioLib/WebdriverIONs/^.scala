@@ -8,10 +8,9 @@ import scala.scalajs.js.annotation._
 @JSGlobal("WebdriverIO")
 @js.native
 object ^ extends js.Object {
-  val VERSION: java.lang.String = js.native
-  def multiremote(options: webdriverioLib.WebdriverIONs.MultiRemoteOptions): webdriverioLib.WebdriverIONs.Client[scala.Unit] = js.native
-  def remote(): webdriverioLib.WebdriverIONs.Client[scala.Unit] = js.native
-  def remote(options: webdriverioLib.WebdriverIONs.Options): webdriverioLib.WebdriverIONs.Client[scala.Unit] = js.native
-  def remote(options: webdriverioLib.WebdriverIONs.Options, modifier: js.Function1[/* repeated */ js.Any, _]): webdriverioLib.WebdriverIONs.Client[scala.Unit] = js.native
+  def multiremote(options: js.Any): webdriverLib.WebDriverNs.Client[scala.Unit] = js.native
+  def remote(): webdriverLib.WebDriverNs.Client[scala.Unit] with webdriverioLib.WebdriverIONs.Browser[scala.Unit] = js.native
+  def remote(options: webdriverLib.WebDriverNs.Options): webdriverLib.WebDriverNs.Client[scala.Unit] with webdriverioLib.WebdriverIONs.Browser[scala.Unit] = js.native
+  def remote(options: webdriverLib.WebDriverNs.Options, modifier: js.Function1[/* repeated */ js.Any, _]): webdriverLib.WebDriverNs.Client[scala.Unit] with webdriverioLib.WebdriverIONs.Browser[scala.Unit] = js.native
 }
 

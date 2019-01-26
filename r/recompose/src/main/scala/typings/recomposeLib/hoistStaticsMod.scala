@@ -10,5 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object hoistStaticsMod extends js.Object {
   def default[TProps](hoc: recomposeLib.recomposeMod.InferableComponentEnhancer[TProps]): recomposeLib.recomposeMod.InferableComponentEnhancer[TProps] = js.native
+  def default[TProps](
+    hoc: recomposeLib.recomposeMod.InferableComponentEnhancer[TProps],
+    blacklist: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
+  ): recomposeLib.recomposeMod.InferableComponentEnhancer[TProps] = js.native
 }
 

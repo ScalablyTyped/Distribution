@@ -39,7 +39,9 @@ object ^ extends js.Object {
   val IsFocusVisibleClassName: /* ms-Fabric--isFocusVisible */ java.lang.String = js.native
   val KeyCodes: atUifabricUtilitiesLib.Anon_100 = js.native
   val Link: reactLib.reactMod.ReactNs.StatelessComponent[officeDashUiDashFabricDashReactLib.libComponentsLinkLinkDotTypesMod.ILinkProps] = js.native
+  val MAX_COLOR_ALPHA: /* 100 */ scala.Double = js.native
   val MAX_COLOR_HUE: /* 359 */ scala.Double = js.native
+  val MAX_COLOR_RGB: /* 255 */ scala.Double = js.native
   val MAX_COLOR_RGBA: /* 255 */ scala.Double = js.native
   val MAX_COLOR_SATURATION: /* 100 */ scala.Double = js.native
   val MAX_COLOR_VALUE: /* 100 */ scala.Double = js.native
@@ -321,6 +323,8 @@ object ^ extends js.Object {
       officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuItem
     ]
   ): scala.Boolean = js.native
+  def clamp(value: scala.Double, max: scala.Double): scala.Double = js.native
+  def clamp(value: scala.Double, max: scala.Double, min: scala.Double): scala.Double = js.native
   def classNamesFunction[TStyleProps /* <: js.Object */, TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */](): js.Function2[
     /* getStyles */ js.UndefOr[
       atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[TStyleProps, TStyleSet]
@@ -790,6 +794,8 @@ object ^ extends js.Object {
     styleSet3: officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibNumbers.`false`,
     styleSet4: officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibNumbers.`false`
   ): atUifabricMergeDashStylesLib.libIStyleSetMod.IConcatenatedStyleSet[TStyleSet1 with TStyleSet2 with TStyleSet3 with TStyleSet4 with TStyleSet5] = js.native
+  def correctHSV(color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IHSV): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IHSV = js.native
+  def correctRGB(color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IRGB): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IRGB = js.native
   def createArray[T](size: scala.Double, getItem: js.Function1[/* index */ scala.Double, T]): js.Array[T] = js.native
   def createFontStyles(): atUifabricStylingLib.libInterfacesIFontStylesMod.IFontStyles = js.native
   def createFontStyles(localeCode: java.lang.String): atUifabricStylingLib.libInterfacesIFontStylesMod.IFontStyles = js.native
@@ -856,7 +862,9 @@ object ^ extends js.Object {
   ): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor | scala.Null = js.native
   def getChildren(parent: reactLib.HTMLElement): js.Array[reactLib.HTMLElement] = js.native
   def getChildren(parent: reactLib.HTMLElement, allowVirtualChildren: scala.Boolean): js.Array[reactLib.HTMLElement] = js.native
-  def getColorFromRGBA(rgba: officeDashUiDashFabricDashReactLib.Anon_A): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
+  def getColorFromHSV(hsv: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IHSV): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
+  def getColorFromHSV(hsv: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IHSV, a: scala.Double): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
+  def getColorFromRGBA(rgba: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IRGB): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
   def getColorFromString(inputColor: java.lang.String): js.UndefOr[officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor] = js.native
   def getContrastRatio(
     color1: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor,
@@ -1129,7 +1137,7 @@ object ^ extends js.Object {
   def hsl2hsv(h: scala.Double, s: scala.Double, l: scala.Double): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IHSV = js.native
   def hsl2rgb(h: scala.Double, s: scala.Double, l: scala.Double): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IRGB = js.native
   def hsv2hex(h: scala.Double, s: scala.Double, v: scala.Double): java.lang.String = js.native
-  def hsv2hsl(h: scala.Double, s: scala.Double, v: scala.Double): officeDashUiDashFabricDashReactLib.Anon_H = js.native
+  def hsv2hsl(h: scala.Double, s: scala.Double, v: scala.Double): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IHSL = js.native
   def hsv2rgb(h: scala.Double, s: scala.Double, v: scala.Double): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IRGB = js.native
   def initializeFocusRects(): scala.Unit = js.native
   def initializeFocusRects(window: stdLib.Window): scala.Unit = js.native
@@ -1534,6 +1542,30 @@ object ^ extends js.Object {
   def unregisterIcons(iconNames: js.Array[java.lang.String]): scala.Unit = js.native
   def updateA(color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor, a: scala.Double): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
   def updateH(color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor, h: scala.Double): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
+  @JSName("updateRGB")
+  def updateRGB_a(
+    color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor,
+    component: officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.a,
+    value: scala.Double
+  ): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
+  @JSName("updateRGB")
+  def updateRGB_b(
+    color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor,
+    component: officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.b,
+    value: scala.Double
+  ): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
+  @JSName("updateRGB")
+  def updateRGB_g(
+    color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor,
+    component: officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.g,
+    value: scala.Double
+  ): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
+  @JSName("updateRGB")
+  def updateRGB_r(
+    color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor,
+    component: officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.r,
+    value: scala.Double
+  ): officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor = js.native
   def updateSV(
     color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor,
     s: scala.Double,

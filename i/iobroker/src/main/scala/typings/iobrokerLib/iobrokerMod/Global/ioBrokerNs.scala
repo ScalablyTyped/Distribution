@@ -1604,8 +1604,12 @@ object ioBrokerNs extends js.Object {
     def subscribeForeignObjects(pattern: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     /** Subscribe to changes of states (which might not belong to this adapter) */
     def subscribeForeignStates(pattern: java.lang.String): scala.Unit = js.native
+    def subscribeForeignStates(pattern: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def subscribeForeignStates(pattern: java.lang.String, options: js.Any): scala.Unit = js.native
     def subscribeForeignStates(pattern: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
+    /** Subscribe to changes of states (which might not belong to this adapter) */
+    def subscribeForeignStatesAsync(pattern: java.lang.String): js.Promise[scala.Unit] = js.native
+    def subscribeForeignStatesAsync(pattern: java.lang.String, options: js.Any): js.Promise[scala.Unit] = js.native
     // ==============================
     // subscriptions
     /** Subscribe to changes of objects in this instance */
@@ -1614,8 +1618,12 @@ object ioBrokerNs extends js.Object {
     def subscribeObjects(pattern: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     /** Subscribe to changes of states in this instance */
     def subscribeStates(pattern: java.lang.String): scala.Unit = js.native
+    def subscribeStates(pattern: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def subscribeStates(pattern: java.lang.String, options: js.Any): scala.Unit = js.native
     def subscribeStates(pattern: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
+    /** Subscribe to changes of states in this instance */
+    def subscribeStatesAsync(pattern: java.lang.String): js.Promise[scala.Unit] = js.native
+    def subscribeStatesAsync(pattern: java.lang.String, options: js.Any): js.Promise[scala.Unit] = js.native
     // TODO: getCertificates cannot be represented with promises right now
     /**
       * Terminates the adapter execution but does not disable the adapter
@@ -1650,8 +1658,15 @@ object ioBrokerNs extends js.Object {
       * @param pattern - Must match the pattern used to subscribe
       */
     def unsubscribeForeignStates(pattern: java.lang.String): scala.Unit = js.native
+    def unsubscribeForeignStates(pattern: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def unsubscribeForeignStates(pattern: java.lang.String, options: js.Any): scala.Unit = js.native
     def unsubscribeForeignStates(pattern: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
+    /**
+      * Subscribe from changes of states (which might not belong to this adapter)
+      * @param pattern - Must match the pattern used to subscribe
+      */
+    def unsubscribeForeignStatesAsync(pattern: java.lang.String): js.Promise[scala.Unit] = js.native
+    def unsubscribeForeignStatesAsync(pattern: java.lang.String, options: js.Any): js.Promise[scala.Unit] = js.native
     /** Unsubscribe from changes of objects in this instance */
     def unsubscribeObjects(pattern: java.lang.String): scala.Unit = js.native
     def unsubscribeObjects(pattern: java.lang.String, options: js.Any): scala.Unit = js.native
@@ -1661,8 +1676,15 @@ object ioBrokerNs extends js.Object {
       * @param pattern - Must match the pattern used to subscribe
       */
     def unsubscribeStates(pattern: java.lang.String): scala.Unit = js.native
+    def unsubscribeStates(pattern: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def unsubscribeStates(pattern: java.lang.String, options: js.Any): scala.Unit = js.native
     def unsubscribeStates(pattern: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
+    /**
+      * Subscribe from changes of states in this instance
+      * @param pattern - Must match the pattern used to subscribe
+      */
+    def unsubscribeStatesAsync(pattern: java.lang.String): js.Promise[scala.Unit] = js.native
+    def unsubscribeStatesAsync(pattern: java.lang.String, options: js.Any): js.Promise[scala.Unit] = js.native
     /**
       * Updates the adapter config with new values. Only a subset of the configuration has to be provided,
       * since merging with the existing config is done automatically.

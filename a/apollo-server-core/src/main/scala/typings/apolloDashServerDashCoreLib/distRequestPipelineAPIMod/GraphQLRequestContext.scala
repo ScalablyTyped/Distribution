@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GraphQLRequestContext[TContext] extends js.Object {
-  val cache: apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache
+  val cache: apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache[java.lang.String]
   val context: TContext
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   val document: js.UndefOr[graphqlLib.languageAstMod.DocumentNode] = js.undefined

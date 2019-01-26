@@ -134,6 +134,7 @@ trait SinonSandbox extends js.Object {
     * Works exactly like sinon.spy
     */
   def spy[T](obj: T, method: java.lang.String): SinonSpy = js.native
+  def spy[T](obj: T, method: java.lang.String, types: js.Array[java.lang.String]): SinonSpy = js.native
   /**
     * Creates an anonymous stub function
     */

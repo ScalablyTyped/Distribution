@@ -15,6 +15,18 @@ trait Anon_011011 extends js.Object {
   def _finalizePositionData(
     positionedElement: officeDashUiDashFabricDashReactLib.libUtilitiesPositioningPositioningMod.IElementPosition,
     hostElement: reactLib.HTMLElement,
+    bounds: js.UndefOr[scala.Nothing],
+    coverTarget: scala.Boolean
+  ): officeDashUiDashFabricDashReactLib.libUtilitiesPositioningPositioningDotTypesMod.IPositionedData = js.native
+  def _finalizePositionData(
+    positionedElement: officeDashUiDashFabricDashReactLib.libUtilitiesPositioningPositioningMod.IElementPosition,
+    hostElement: reactLib.HTMLElement,
+    bounds: officeDashUiDashFabricDashReactLib.libUtilitiesPositioningPositioningMod.Rectangle
+  ): officeDashUiDashFabricDashReactLib.libUtilitiesPositioningPositioningDotTypesMod.IPositionedData = js.native
+  def _finalizePositionData(
+    positionedElement: officeDashUiDashFabricDashReactLib.libUtilitiesPositioningPositioningMod.IElementPosition,
+    hostElement: reactLib.HTMLElement,
+    bounds: officeDashUiDashFabricDashReactLib.libUtilitiesPositioningPositioningMod.Rectangle,
     coverTarget: scala.Boolean
   ): officeDashUiDashFabricDashReactLib.libUtilitiesPositioningPositioningDotTypesMod.IPositionedData = js.native
   def _getMaxHeightFromTargetRectangle(

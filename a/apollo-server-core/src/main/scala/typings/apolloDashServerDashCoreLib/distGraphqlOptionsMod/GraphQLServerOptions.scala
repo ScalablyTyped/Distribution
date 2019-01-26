@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
-  var cache: js.UndefOr[apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache] = js.undefined
+  var cache: js.UndefOr[
+    apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache[java.lang.String]
+  ] = js.undefined
   var cacheControl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.UndefOr[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any
   ] = js.undefined

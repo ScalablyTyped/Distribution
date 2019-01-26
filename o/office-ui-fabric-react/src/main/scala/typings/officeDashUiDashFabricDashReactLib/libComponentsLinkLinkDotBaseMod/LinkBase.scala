@@ -15,8 +15,8 @@ class LinkBase ()
      with officeDashUiDashFabricDashReactLib.libComponentsLinkLinkDotTypesMod.ILink {
   var _link: js.Any = js.native
   var _onClick: js.Any = js.native
+  /* private */ def _adjustPropsForRootType(RootType: js.Any, props: js.Any): js.Any = js.native
   /* private */ def _getRootType(props: js.Any): js.Any = js.native
-  /* private */ def _removeInvalidPropsForRootType(RootType: js.Any, props: js.Any): js.Any = js.native
   /** Sets focus to the link. */
   /* CompleteClass */
   override def focus(): scala.Unit = js.native

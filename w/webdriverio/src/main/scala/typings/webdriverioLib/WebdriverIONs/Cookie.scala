@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 trait Cookie extends js.Object {
   var domain: js.UndefOr[java.lang.String] = js.undefined
   var expiry: js.UndefOr[scala.Double] = js.undefined
-  var httpOnly: js.UndefOr[scala.Boolean] = js.undefined
+  var isHttpOnly: js.UndefOr[scala.Boolean] = js.undefined
+  var isSecure: js.UndefOr[scala.Boolean] = js.undefined
   var name: java.lang.String
   var path: js.UndefOr[java.lang.String] = js.undefined
-  var secure: js.UndefOr[scala.Boolean] = js.undefined
   var value: java.lang.String
 }
 

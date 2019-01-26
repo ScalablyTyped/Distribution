@@ -14,7 +14,10 @@ class Tween () extends js.Object {
   def delay(amount: scala.Double): Tween = js.native
   def easing(easing: js.Function1[/* k */ scala.Double, scala.Double]): Tween = js.native
   def end(): Tween = js.native
+  def getId(): scala.Double = js.native
+  def group(group: Group): Tween = js.native
   def interpolation(interpolation: js.Function2[/* v */ js.Array[scala.Double], /* k */ scala.Double, scala.Double]): Tween = js.native
+  def isPlaying(): scala.Boolean = js.native
   def onComplete(callback: js.Function1[/* object */ js.UndefOr[js.Any], scala.Unit]): Tween = js.native
   def onStart(callback: js.Function1[/* object */ js.UndefOr[js.Any], scala.Unit]): Tween = js.native
   def onStop(callback: js.Function1[/* object */ js.UndefOr[js.Any], scala.Unit]): Tween = js.native
