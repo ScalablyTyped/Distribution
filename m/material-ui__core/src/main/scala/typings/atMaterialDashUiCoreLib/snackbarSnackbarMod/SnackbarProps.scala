@@ -17,7 +17,9 @@ import scala.scalajs.js.annotation._
   var ContentProps: js.UndefOr[
     stdLib.Partial[atMaterialDashUiCoreLib.snackbarcontentSnackbarContentMod.SnackbarContentProps]
   ] = js.undefined
-  var TransitionComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var TransitionComponent: js.UndefOr[
+    reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]
+  ] = js.undefined
   var TransitionProps: js.UndefOr[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = js.undefined
   var action: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var anchorOrigin: js.UndefOr[SnackbarOrigin] = js.undefined

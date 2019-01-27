@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StackProps extends js.Object {
   var a11yTitle: js.UndefOr[java.lang.String] = js.undefined
   var alignSelf: js.UndefOr[

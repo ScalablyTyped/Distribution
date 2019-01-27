@@ -19,8 +19,10 @@ trait ModalFuncProps extends js.Object {
   var iconClassName: js.UndefOr[java.lang.String] = js.undefined
   var iconType: js.UndefOr[java.lang.String] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined
+  var mask: js.UndefOr[scala.Boolean] = js.undefined
   var maskClosable: js.UndefOr[scala.Boolean] = js.undefined
   var maskStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var maskTransitionName: js.UndefOr[java.lang.String] = js.undefined
   var okButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
   var okCancel: js.UndefOr[scala.Boolean] = js.undefined
   var okText: js.UndefOr[java.lang.String] = js.undefined
@@ -30,6 +32,7 @@ trait ModalFuncProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var transitionName: js.UndefOr[java.lang.String] = js.undefined
   var `type`: js.UndefOr[java.lang.String] = js.undefined
   var visible: js.UndefOr[scala.Boolean] = js.undefined
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined

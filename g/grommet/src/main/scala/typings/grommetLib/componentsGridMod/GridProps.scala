@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridProps extends js.Object {
   var a11yTitle: js.UndefOr[java.lang.String] = js.undefined
   var align: js.UndefOr[
@@ -17,12 +16,15 @@ trait GridProps extends js.Object {
   var alignSelf: js.UndefOr[
     grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch
   ] = js.undefined
-  var areas: js.UndefOr[js.Array[grommetLib.Anon_NameStart]] = js.undefined
+  var areas: js.UndefOr[js.Array[grommetLib.Anon_End]] = js.undefined
+  var as: js.UndefOr[java.lang.String] = js.undefined
   var columns: js.UndefOr[
-    grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.full | grommetLib.grommetLibStrings.`1/2` | grommetLib.grommetLibStrings.`1/3` | grommetLib.grommetLibStrings.`2/3` | grommetLib.grommetLibStrings.`1/4` | grommetLib.grommetLibStrings.`2/4` | grommetLib.grommetLibStrings.`3/4` | grommetLib.grommetLibStrings.flex | grommetLib.grommetLibStrings.auto | js.Array[grommetLib.grommetLibStrings.auto] | js.Array[java.lang.String] | grommetLib.Anon_Count | java.lang.String
+    (js.Array[
+      grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.full | grommetLib.grommetLibStrings.`1/2` | grommetLib.grommetLibStrings.`1/3` | grommetLib.grommetLibStrings.`2/3` | grommetLib.grommetLibStrings.`1/4` | grommetLib.grommetLibStrings.`2/4` | grommetLib.grommetLibStrings.`3/4` | grommetLib.grommetLibStrings.flex | grommetLib.grommetLibStrings.auto | js.Array[grommetLib.grommetLibStrings.auto] | java.lang.String
+    ]) | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_12 | java.lang.String
   ] = js.undefined
   var fill: js.UndefOr[
-    grommetLib.grommetLibStrings.horizontal | grommetLib.grommetLibStrings.vertical | grommetLib.grommetLibStrings.`true` | grommetLib.grommetLibStrings.`false`
+    grommetLib.grommetLibStrings.horizontal | grommetLib.grommetLibStrings.vertical | scala.Boolean
   ] = js.undefined
   var gap: js.UndefOr[
     grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.none | grommetLib.Anon_Column | java.lang.String
@@ -38,7 +40,9 @@ trait GridProps extends js.Object {
     grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String
   ] = js.undefined
   var rows: js.UndefOr[
-    grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.full | grommetLib.grommetLibStrings.`1/2` | grommetLib.grommetLibStrings.`1/3` | grommetLib.grommetLibStrings.`2/3` | grommetLib.grommetLibStrings.`1/4` | grommetLib.grommetLibStrings.`2/4` | grommetLib.grommetLibStrings.`3/4` | grommetLib.grommetLibStrings.flex | grommetLib.grommetLibStrings.auto | js.Array[grommetLib.grommetLibStrings.auto] | js.Array[java.lang.String] | java.lang.String
+    (js.Array[
+      grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.full | grommetLib.grommetLibStrings.`1/2` | grommetLib.grommetLibStrings.`1/3` | grommetLib.grommetLibStrings.`2/3` | grommetLib.grommetLibStrings.`1/4` | grommetLib.grommetLibStrings.`2/4` | grommetLib.grommetLibStrings.`3/4` | grommetLib.grommetLibStrings.flex | grommetLib.grommetLibStrings.auto | js.Array[grommetLib.grommetLibStrings.auto] | java.lang.String
+    ]) | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String
   ] = js.undefined
   var tag: js.UndefOr[java.lang.String] = js.undefined
 }

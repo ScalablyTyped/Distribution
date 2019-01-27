@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 - Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLDivElement>, @material-ui/core.@material-ui/core/Tooltip/Tooltip.TooltipClassKey, 'title'>) */ trait TooltipProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[TooltipClassKey] {
   var PopperProps: js.UndefOr[js.Object] = js.undefined
-  var TransitionComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var TransitionComponent: js.UndefOr[
+    reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]
+  ] = js.undefined
   var TransitionProps: js.UndefOr[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = js.undefined
   var children: reactLib.reactMod.ReactNs.ReactElement[_]
   var className: js.UndefOr[java.lang.String] = js.undefined

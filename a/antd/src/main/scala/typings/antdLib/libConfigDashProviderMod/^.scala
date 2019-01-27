@@ -14,7 +14,7 @@ object ^ extends js.Object {
   ] = js.native
   def withConfigConsumer[ExportProps /* <: antdLib.libConfigDashProviderMod.BasicExportProps */](config: antdLib.libConfigDashProviderMod.ConsumerConfig): js.Function1[
     /* Component */ antdLib.libConfigDashProviderMod.IReactComponent[_], 
-    reactLib.reactMod.ReactNs.FunctionComponent[ExportProps]
+    reactLib.reactMod.ReactNs.FunctionComponent[ExportProps] with js.Any
   ] = js.native
 }
 

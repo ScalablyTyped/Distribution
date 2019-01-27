@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HtmlSpecimenProps extends js.Object {
   var children: java.lang.String
   var dark: js.UndefOr[scala.Boolean] = js.undefined

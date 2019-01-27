@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jasmine-enzyme"
-version := "3.6-dt-20180803Z-de0ae1"
+version := "3.6-dt-20180803Z-81ac53"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
   "org.scalablytyped" %%% "jasmine" % "3.3-dt-20190118Z-ad02dd",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-73addc",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190126Z-a37585",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

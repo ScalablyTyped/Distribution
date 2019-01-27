@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-player"
-version := "1.9.1-bd6655"
+version := "1.9.3-117db5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
   "org.scalablytyped" %%% "deepmerge" % "3.1.0-ecde1e",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-73addc",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190126Z-a37585",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

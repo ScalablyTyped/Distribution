@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SpeedDialClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var ButtonProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.buttonButtonMod.ButtonProps]] = js.undefined
-  var TransitionComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var TransitionComponent: js.UndefOr[
+    reactLib.reactMod.ReactNs.ComponentType[reactDashTransitionDashGroupLib.transitionMod.TransitionProps]
+  ] = js.undefined
   var TransitionProps: js.UndefOr[reactDashTransitionDashGroupLib.transitionMod.TransitionProps] = js.undefined
   var ariaLabel: java.lang.String
   var direction: js.UndefOr[

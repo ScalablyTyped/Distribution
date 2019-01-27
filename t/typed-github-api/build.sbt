@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typed-github-api"
-version := "1.2.6-42369e"
+version := "1.2.6-db374a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -28,8 +28,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
   "org.scalablytyped" %%% "triple-beam" % "1.3-dt-20180828Z-ae8e92",
   "org.scalablytyped" %%% "typescript-event-handler" % "1.0.0-4484e1",
-  "org.scalablytyped" %%% "winston" % "3.1.0-1809c7",
-  "org.scalablytyped" %%% "winston-transport" % "4.2.0-b44294")
+  "org.scalablytyped" %%% "winston" % "3.2.0-8990d0",
+  "org.scalablytyped" %%% "winston-transport" % "4.3.0-b44294")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

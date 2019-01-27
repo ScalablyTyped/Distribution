@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableCellProps extends js.Object {
   var plain: js.UndefOr[scala.Boolean] = js.undefined
   var scope: js.UndefOr[grommetLib.grommetLibStrings.col | grommetLib.grommetLibStrings.row] = js.undefined

@@ -109,6 +109,7 @@ package object ReactNs {
   type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
   type PureComponent[P, S, SS] = Component[P, S, SS]
   type ReactChild = ReactElement[js.Any] | ReactText
+  type ReactComponentElement[T /* <: java.lang.String */, P] = ReactElement[P]
   type ReactEventHandler[T] = EventHandler[SyntheticEvent[T, reactLib.Event]]
   type ReactFragment = js.Object | ReactNodeArray
   // ReactHTML for ReactHTMLElement

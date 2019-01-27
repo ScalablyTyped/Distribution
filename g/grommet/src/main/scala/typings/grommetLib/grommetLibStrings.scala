@@ -148,6 +148,9 @@ object grommetLibStrings {
   sealed trait curved extends js.Object
   
   @js.native
+  sealed trait dashed extends js.Object
+  
+  @js.native
   sealed trait digital extends js.Object
   
   @js.native
@@ -155,6 +158,12 @@ object grommetLibStrings {
   
   @js.native
   sealed trait document extends js.Object
+  
+  @js.native
+  sealed trait dotted extends js.Object
+  
+  @js.native
+  sealed trait double extends js.Object
   
   @js.native
   sealed trait end extends js.Object
@@ -187,6 +196,9 @@ object grommetLibStrings {
   sealed trait full extends js.Object
   
   @js.native
+  sealed trait groove extends js.Object
+  
+  @js.native
   sealed trait grow extends js.Object
   
   @js.native
@@ -200,6 +212,9 @@ object grommetLibStrings {
   
   @js.native
   sealed trait hours extends js.Object
+  
+  @js.native
+  sealed trait inset extends js.Object
   
   @js.native
   sealed trait jiggle extends js.Object
@@ -232,9 +247,6 @@ object grommetLibStrings {
   sealed trait minutes extends js.Object
   
   @js.native
-  sealed trait narrow extends js.Object
-  
-  @js.native
   sealed trait none extends js.Object
   
   @js.native
@@ -242,6 +254,9 @@ object grommetLibStrings {
   
   @js.native
   sealed trait off extends js.Object
+  
+  @js.native
+  sealed trait outset extends js.Object
   
   @js.native
   sealed trait over extends js.Object
@@ -263,6 +278,9 @@ object grommetLibStrings {
   
   @js.native
   sealed trait reset extends js.Object
+  
+  @js.native
+  sealed trait ridge extends js.Object
   
   @js.native
   sealed trait right extends js.Object
@@ -298,6 +316,9 @@ object grommetLibStrings {
   sealed trait small extends js.Object
   
   @js.native
+  sealed trait solid extends js.Object
+  
+  @js.native
   sealed trait start extends js.Object
   
   @js.native
@@ -322,9 +343,6 @@ object grommetLibStrings {
   sealed trait `top-right` extends js.Object
   
   @js.native
-  sealed trait `true` extends js.Object
-  
-  @js.native
   sealed trait vertical extends js.Object
   
   @js.native
@@ -332,9 +350,6 @@ object grommetLibStrings {
   
   @js.native
   sealed trait weak extends js.Object
-  
-  @js.native
-  sealed trait wide extends js.Object
   
   @js.native
   sealed trait window extends js.Object
@@ -404,9 +419,12 @@ object grommetLibStrings {
   def contain: contain = "contain".asInstanceOf[contain]
   def cover: cover = "cover".asInstanceOf[cover]
   def curved: curved = "curved".asInstanceOf[curved]
+  def dashed: dashed = "dashed".asInstanceOf[dashed]
   def digital: digital = "digital".asInstanceOf[digital]
   def direct: direct = "direct".asInstanceOf[direct]
   def document: document = "document".asInstanceOf[document]
+  def dotted: dotted = "dotted".asInstanceOf[dotted]
+  def double: double = "double".asInstanceOf[double]
   def end: end = "end".asInstanceOf[end]
   def fadeIn: fadeIn = "fadeIn".asInstanceOf[fadeIn]
   def fadeOut: fadeOut = "fadeOut".asInstanceOf[fadeOut]
@@ -417,11 +435,13 @@ object grommetLibStrings {
   def flex: flex = "flex".asInstanceOf[flex]
   def forward: forward = "forward".asInstanceOf[forward]
   def full: full = "full".asInstanceOf[full]
+  def groove: groove = "groove".asInstanceOf[groove]
   def grow: grow = "grow".asInstanceOf[grow]
   def hair: hair = "hair".asInstanceOf[hair]
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   def hours: hours = "hours".asInstanceOf[hours]
+  def inset: inset = "inset".asInstanceOf[inset]
   def jiggle: jiggle = "jiggle".asInstanceOf[jiggle]
   def large: large = "large".asInstanceOf[large]
   def last: last = "last".asInstanceOf[last]
@@ -432,10 +452,10 @@ object grommetLibStrings {
   def middle: middle = "middle".asInstanceOf[middle]
   def min: min = "min".asInstanceOf[min]
   def minutes: minutes = "minutes".asInstanceOf[minutes]
-  def narrow: narrow = "narrow".asInstanceOf[narrow]
   def none: none = "none".asInstanceOf[none]
   def normal: normal = "normal".asInstanceOf[normal]
   def off: off = "off".asInstanceOf[off]
+  def outset: outset = "outset".asInstanceOf[outset]
   def over: over = "over".asInstanceOf[over]
   def polite: polite = "polite".asInstanceOf[polite]
   def pulse: pulse = "pulse".asInstanceOf[pulse]
@@ -443,6 +463,7 @@ object grommetLibStrings {
   def rectilinear: rectilinear = "rectilinear".asInstanceOf[rectilinear]
   def replace: replace = "replace".asInstanceOf[replace]
   def reset: reset = "reset".asInstanceOf[reset]
+  def ridge: ridge = "ridge".asInstanceOf[ridge]
   def right: right = "right".asInstanceOf[right]
   def row: row = "row".asInstanceOf[row]
   def `row-responsive`: `row-responsive` = "row-responsive".asInstanceOf[`row-responsive`]
@@ -454,6 +475,7 @@ object grommetLibStrings {
   def slideRight: slideRight = "slideRight".asInstanceOf[slideRight]
   def slideUp: slideUp = "slideUp".asInstanceOf[slideUp]
   def small: small = "small".asInstanceOf[small]
+  def solid: solid = "solid".asInstanceOf[solid]
   def start: start = "start".asInstanceOf[start]
   def stretch: stretch = "stretch".asInstanceOf[stretch]
   def strong: strong = "strong".asInstanceOf[strong]
@@ -462,11 +484,9 @@ object grommetLibStrings {
   def top: top = "top".asInstanceOf[top]
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
-  def `true`: `true` = "true".asInstanceOf[`true`]
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   def visible: visible = "visible".asInstanceOf[visible]
   def weak: weak = "weak".asInstanceOf[weak]
-  def wide: wide = "wide".asInstanceOf[wide]
   def window: window = "window".asInstanceOf[window]
   def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
   def xsmall: xsmall = "xsmall".asInstanceOf[xsmall]

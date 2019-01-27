@@ -20,9 +20,9 @@ trait SlideProps extends BaseProps {
   var progressColor: js.UndefOr[java.lang.String] = js.undefined
   var slideIndex: js.UndefOr[scala.Double] = js.undefined
   var state: js.UndefOr[java.lang.String] = js.undefined
-  var transition: js.UndefOr[js.Array[transitionType]] = js.undefined
+  var transition: js.UndefOr[coreDashJsLib.Array[transitionType]] = js.undefined
   var transitionDuration: js.UndefOr[scala.Double] = js.undefined
-  var transitionIn: js.UndefOr[js.Array[transitionType]] = js.undefined
-  var transitionOut: js.UndefOr[js.Array[transitionType]] = js.undefined
+  var transitionIn: js.UndefOr[coreDashJsLib.Array[transitionType]] = js.undefined
+  var transitionOut: js.UndefOr[coreDashJsLib.Array[transitionType]] = js.undefined
 }
 

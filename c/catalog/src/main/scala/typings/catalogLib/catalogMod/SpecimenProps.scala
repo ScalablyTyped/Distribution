@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpecimenProps extends js.Object {
   var rawBody: js.UndefOr[java.lang.String] = js.undefined
   var rawOptions: js.UndefOr[java.lang.String] = js.undefined

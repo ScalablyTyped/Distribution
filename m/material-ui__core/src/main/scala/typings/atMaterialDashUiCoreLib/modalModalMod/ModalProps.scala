@@ -14,6 +14,7 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var BackdropProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
+  var closeAfterTransition: js.UndefOr[scala.Boolean] = js.undefined
   var container: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance] | scala.Null
   ] = js.undefined

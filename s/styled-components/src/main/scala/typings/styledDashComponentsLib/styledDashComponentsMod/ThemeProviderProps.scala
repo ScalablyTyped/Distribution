@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
-trait ThemeProviderProps[T /* <: js.Object */] extends js.Object {
+trait ThemeProviderProps[T /* <: js.Object */, U /* <: js.Object */] extends js.Object {
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactChild] = js.undefined
    // only one child is allowed, goes through React.Children.only
-  var theme: T | (js.Function1[/* theme */ T, T])
+  var theme: T | (js.Function1[/* theme */ U, T])
 }
 

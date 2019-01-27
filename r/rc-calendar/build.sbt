@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-calendar"
-version := "9.10.4-ba6008"
+version := "9.10.4-9e6cac"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,8 +10,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
   "org.scalablytyped" %%% "moment" % "2.24.0-68abed",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-73addc",
-  "org.scalablytyped" %%% "react-lifecycles-compat" % "3.0-dt-20190116Z-da9d84",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190126Z-a37585",
+  "org.scalablytyped" %%% "react-lifecycles-compat" % "3.0-dt-20190116Z-649ae5",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Theme extends js.Object {
   var background: java.lang.String
   var baseFontSize: scala.Double
@@ -15,7 +14,7 @@ trait Theme extends js.Object {
   var checkerboardPatternDark: java.lang.String
   var checkerboardPatternLight: java.lang.String
   var codeColor: java.lang.String
-  var codeStyles: ScalablyTyped.runtime.StringDictionary[ScalablyTyped.runtime.StringDictionary[java.lang.String]]
+  var codeStyles: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
   var fontFamily: java.lang.String
   var fontHeading: java.lang.String
   var fontMono: java.lang.String

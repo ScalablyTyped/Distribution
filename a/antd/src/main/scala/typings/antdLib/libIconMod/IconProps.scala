@@ -11,8 +11,10 @@ trait IconProps extends js.Object {
   var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var role: js.UndefOr[java.lang.String] = js.undefined
+  var rotate: js.UndefOr[scala.Double] = js.undefined
   var spin: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var tabIndex: js.UndefOr[scala.Double] = js.undefined
   var theme: js.UndefOr[ThemeType] = js.undefined
   var title: js.UndefOr[java.lang.String] = js.undefined
   var twoToneColor: js.UndefOr[java.lang.String] = js.undefined

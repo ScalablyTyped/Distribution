@@ -28,7 +28,7 @@ abstract class Component[P /* <: stdLib.Record[java.lang.String, _] */, S /* <: 
   ] = js.native
   val context: C = js.native
   var getChildContext: js.UndefOr[js.Function0[js.Function0[stdLib.Record[java.lang.String, _]]]] = js.native
-  val props: P = js.native
+  val props: P with inkLib.Anon_Children = js.native
   var shouldComponentUpdate: js.UndefOr[
     js.Function2[
       /* import warning: ImportType.apply Failed type conversion: this['props'] */ /* nextProps */ js.Any, 
@@ -37,7 +37,7 @@ abstract class Component[P /* <: stdLib.Record[java.lang.String, _] */, S /* <: 
     ]
   ] = js.native
   var state: S = js.native
-  def render(props: js.Object, state: js.Object, context: js.Object): InkElement = js.native
+  def render(props: js.Object with inkLib.Anon_Children, state: js.Object, context: js.Object): InkElement = js.native
   def setState(nextState: stdLib.Partial[js.Object]): scala.Unit = js.native
   def setState(nextState: stdLib.Partial[js.Object], callback: js.Function0[scala.Unit]): scala.Unit = js.native
   @JSName("setState")

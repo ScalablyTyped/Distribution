@@ -22,8 +22,8 @@ trait WrappedFormUtils extends js.Object {
   def getFieldsError(): js.Object = js.native
   def getFieldsError(names: js.Array[java.lang.String]): js.Object = js.native
   /** 获取一组输入控件的值，如不传入参数，则获取全部组件的值 */
-  def getFieldsValue(): js.Object = js.native
-  def getFieldsValue(fieldNames: js.Array[java.lang.String]): js.Object = js.native
+  def getFieldsValue(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def getFieldsValue(fieldNames: js.Array[java.lang.String]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def isFieldTouched(name: java.lang.String): scala.Boolean = js.native
   /** 判断一个输入控件是否在校验状态*/
   def isFieldValidating(name: java.lang.String): scala.Boolean = js.native

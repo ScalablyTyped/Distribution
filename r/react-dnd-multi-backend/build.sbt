@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-dnd-multi-backend"
-version := "3.0-dt-20180803Z-bd3915"
+version := "3.0-dt-20180803Z-0335d4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-fd94ae",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-c48db4",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-73addc",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190126Z-a37585",
   "org.scalablytyped" %%% "redux" % "4.0.1-0f174c",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-bc5916")

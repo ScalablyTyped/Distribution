@@ -138,6 +138,7 @@ object winstonNs extends js.Object {
     def alert(message: java.lang.String, callback: LogCallback): Logger = js.native
     def alert(message: java.lang.String, meta: js.Any*): Logger = js.native
     def alert(message: java.lang.String, meta: js.Any, callback: LogCallback): Logger = js.native
+    def child(options: js.Object): Logger = js.native
     def clear(): Logger = js.native
     def close(): Logger = js.native
     def configure(options: LoggerOptions): scala.Unit = js.native
@@ -246,7 +247,9 @@ object winstonNs extends js.Object {
     @JSName("prependOnceListener")
     override def prependOnceListener_error(event: nodeLib.nodeLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
     def profile(id: java.lang.String): Logger = js.native
+    def profile(id: java.lang.String, meta: LogEntry): Logger = js.native
     def profile(id: scala.Double): Logger = js.native
+    def profile(id: scala.Double, meta: LogEntry): Logger = js.native
     def prompt(infoObject: js.Object): Logger = js.native
     def prompt(message: java.lang.String, callback: LogCallback): Logger = js.native
     def prompt(message: java.lang.String, meta: js.Any*): Logger = js.native
@@ -476,6 +479,7 @@ object winstonNs extends js.Object {
       
       trait ConsoleTransportOptions
         extends winstonDashTransportLib.winstonDashTransportMod.TransportStreamNs.TransportStreamOptions {
+        var consoleWarnLevels: js.UndefOr[js.Array[java.lang.String]] = js.undefined
         var debugStdout: js.UndefOr[scala.Boolean] = js.undefined
         var eol: js.UndefOr[java.lang.String] = js.undefined
         var stderrLevels: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -562,9 +566,13 @@ object winstonNs extends js.Object {
       
       trait Transports extends js.Object {
         var Console: winstonLib.libWinstonTransportsMod.winstonNs.ConsoleTransportInstance
+        var ConsoleTransportOptions: winstonLib.libWinstonTransportsMod.winstonNs.ConsoleTransportOptions
         var File: winstonLib.libWinstonTransportsMod.winstonNs.FileTransportInstance
+        var FileTransportOptions: winstonLib.libWinstonTransportsMod.winstonNs.FileTransportOptions
         var Http: winstonLib.libWinstonTransportsMod.winstonNs.HttpTransportInstance
+        var HttpTransportOptions: winstonLib.libWinstonTransportsMod.winstonNs.HttpTransportOptions
         var Stream: winstonLib.libWinstonTransportsMod.winstonNs.StreamTransportInstance
+        var StreamTransportOptions: winstonLib.libWinstonTransportsMod.winstonNs.StreamTransportOptions
       }
       
     }

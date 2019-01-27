@@ -1,16 +1,16 @@
-organization := "com.scalablytyped"
+organization := "org.scalablytyped"
 name := "styled-components"
-version := "4.1-dt-20181116Z-bae8cb"
-scalaVersion := "2.12.7"
+version := "4.1-dt-20190116Z-a5cc2a"
+scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "runtime" % "1.0.0-M1",
-  "com.scalablytyped" %%% "csstype" % "2.5.7-eccde3",
-  "com.scalablytyped" %%% "node" % "10.12-dt-20181116Z-cadd20",
-  "com.scalablytyped" %%% "prop-types" % "15.5-dt-20180927Z-7b533e",
-  "com.scalablytyped" %%% "react" % "16.7-dt-20181116Z-44bb36",
-  "com.scalablytyped" %%% "std" % "3.1.3-0b55f4",
-  "org.scala-js" %%% "scalajs-dom" % "0.9.6")
+  "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
+  "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190126Z-a37585",
+  "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

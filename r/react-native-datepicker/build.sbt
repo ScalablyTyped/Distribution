@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-datepicker"
-version := "1.7-dt-20190102Z-ea8160"
+version := "1.7-dt-20190102Z-e52add"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
   "org.scalablytyped" %%% "moment" % "2.24.0-68abed",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-73addc",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190122Z-823560",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190126Z-a37585",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190122Z-63830b",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

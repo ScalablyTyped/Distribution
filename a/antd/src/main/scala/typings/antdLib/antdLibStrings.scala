@@ -43,7 +43,7 @@ object antdLibStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT12DOT4` extends js.Object
+  sealed trait `3DOT13DOT0` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -266,6 +266,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait contextMenu extends js.Object
+  
+  @js.native
+  sealed trait countdown extends js.Object
   
   @js.native
   sealed trait cover extends js.Object
@@ -629,6 +632,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait nowrap extends js.Object
+  
+  @js.native
+  sealed trait number extends js.Object
   
   @js.native
   sealed trait ok extends js.Object
@@ -1086,7 +1092,7 @@ object antdLibStrings {
   def `-webkit-isolate`: `-webkit-isolate` = "-webkit-isolate".asInstanceOf[`-webkit-isolate`]
   def `-webkit-optimize-contrast`: `-webkit-optimize-contrast` = "-webkit-optimize-contrast".asInstanceOf[`-webkit-optimize-contrast`]
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
-  def `3DOT12DOT4`: `3DOT12DOT4` = "3.12.4".asInstanceOf[`3DOT12DOT4`]
+  def `3DOT13DOT0`: `3DOT13DOT0` = "3.13.0".asInstanceOf[`3DOT13DOT0`]
   def AM: AM = "AM".asInstanceOf[AM]
   def Empty: Empty = "".asInstanceOf[Empty]
   def PM: PM = "PM".asInstanceOf[PM]
@@ -1160,6 +1166,7 @@ object antdLibStrings {
   def contain: contain = "contain".asInstanceOf[contain]
   def `content-box`: `content-box` = "content-box".asInstanceOf[`content-box`]
   def contextMenu: contextMenu = "contextMenu".asInstanceOf[contextMenu]
+  def countdown: countdown = "countdown".asInstanceOf[countdown]
   def cover: cover = "cover".asInstanceOf[cover]
   def `crisp-edges`: `crisp-edges` = "crisp-edges".asInstanceOf[`crisp-edges`]
   def crispEdges: crispEdges = "crispEdges".asInstanceOf[crispEdges]
@@ -1281,6 +1288,7 @@ object antdLibStrings {
   def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   def normal: normal = "normal".asInstanceOf[normal]
   def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
+  def number: number = "number".asInstanceOf[number]
   def ok: ok = "ok".asInstanceOf[ok]
   def onChange: onChange = "onChange".asInstanceOf[onChange]
   def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]

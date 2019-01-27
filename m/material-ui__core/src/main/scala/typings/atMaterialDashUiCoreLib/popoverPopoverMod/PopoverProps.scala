@@ -15,7 +15,9 @@ import scala.scalajs.js.annotation._
     ]
   ] = js.undefined
   var PaperProps: js.UndefOr[stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps]] = js.undefined
-  var TransitionComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var TransitionComponent: js.UndefOr[
+    reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]
+  ] = js.undefined
   var TransitionProps: js.UndefOr[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = js.undefined
   var action: js.UndefOr[js.Function1[/* actions */ PopoverActions, scala.Unit]] = js.undefined
   var anchorEl: js.UndefOr[

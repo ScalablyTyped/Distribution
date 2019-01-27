@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ConfigConsumerProps extends js.Object {
+  var autoInsertSpaceInButton: js.UndefOr[scala.Boolean] = js.native
+  var csp: js.UndefOr[CSPConfig] = js.native
   var getPopupContainer: js.UndefOr[
     js.Function1[/* triggerNode */ js.UndefOr[reactLib.HTMLElement], reactLib.HTMLElement]
   ] = js.native

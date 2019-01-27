@@ -23,7 +23,7 @@ trait Button
     event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLButtonElement | reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent]
   ): scala.Unit = js.native
   def isNeedInserted(): scala.Boolean = js.native
-  def renderButton(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderButton(hasGetPrefixClsAutoInsertSpaceInButton: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def saveButtonRef(): scala.Unit = js.native
   def saveButtonRef(node: reactLib.HTMLElement): scala.Unit = js.native
 }

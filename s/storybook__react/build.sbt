@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__react"
-version := "4.0-dt-20181106Z-6759f2"
+version := "4.0-dt-20181106Z-8cf488"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
   "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20190116Z-73addc",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190126Z-a37585",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
   "org.scalablytyped" %%% "webpack-env" % "1.13-dt-20180412Z-1e44c3")
 publishArtifact in packageDoc := false

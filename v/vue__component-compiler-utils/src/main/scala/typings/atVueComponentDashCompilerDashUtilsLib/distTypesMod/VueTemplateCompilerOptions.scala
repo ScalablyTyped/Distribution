@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait VueTemplateCompilerOptions extends js.Object {
   var modules: js.UndefOr[js.Array[js.Object]] = js.undefined
+  var outputSourceRange: js.UndefOr[scala.Boolean] = js.undefined
 }
 

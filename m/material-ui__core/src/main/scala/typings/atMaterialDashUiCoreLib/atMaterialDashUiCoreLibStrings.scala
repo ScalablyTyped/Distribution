@@ -175,9 +175,6 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait bar2Buffer extends js.Object
   
   @js.native
-  sealed trait bar2Determinate extends js.Object
-  
-  @js.native
   sealed trait bar2Indeterminate extends js.Object
   
   @js.native
@@ -1249,6 +1246,9 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait titlePositionTop extends js.Object
   
   @js.native
+  sealed trait titleWrap extends js.Object
+  
+  @js.native
   sealed trait titleWrapActionPosLeft extends js.Object
   
   @js.native
@@ -1391,7 +1391,6 @@ object atMaterialDashUiCoreLibStrings {
   def bar1Determinate: bar1Determinate = "bar1Determinate".asInstanceOf[bar1Determinate]
   def bar1Indeterminate: bar1Indeterminate = "bar1Indeterminate".asInstanceOf[bar1Indeterminate]
   def bar2Buffer: bar2Buffer = "bar2Buffer".asInstanceOf[bar2Buffer]
-  def bar2Determinate: bar2Determinate = "bar2Determinate".asInstanceOf[bar2Determinate]
   def bar2Indeterminate: bar2Indeterminate = "bar2Indeterminate".asInstanceOf[bar2Indeterminate]
   def barColorPrimary: barColorPrimary = "barColorPrimary".asInstanceOf[barColorPrimary]
   def barColorSecondary: barColorSecondary = "barColorSecondary".asInstanceOf[barColorSecondary]
@@ -1749,6 +1748,7 @@ object atMaterialDashUiCoreLibStrings {
   def title: title = "title".asInstanceOf[title]
   def titlePositionBottom: titlePositionBottom = "titlePositionBottom".asInstanceOf[titlePositionBottom]
   def titlePositionTop: titlePositionTop = "titlePositionTop".asInstanceOf[titlePositionTop]
+  def titleWrap: titleWrap = "titleWrap".asInstanceOf[titleWrap]
   def titleWrapActionPosLeft: titleWrapActionPosLeft = "titleWrapActionPosLeft".asInstanceOf[titleWrapActionPosLeft]
   def titleWrapActionPosRight: titleWrapActionPosRight = "titleWrapActionPosRight".asInstanceOf[titleWrapActionPosRight]
   def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]

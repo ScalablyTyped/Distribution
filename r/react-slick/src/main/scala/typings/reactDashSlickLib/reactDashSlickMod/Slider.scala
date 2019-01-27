@@ -11,6 +11,8 @@ trait Slider
   def slickGoTo(slideNumber: scala.Double): scala.Unit = js.native
   def slickGoTo(slideNumber: scala.Double, dontAnimate: scala.Boolean): scala.Unit = js.native
   def slickNext(): scala.Unit = js.native
+  def slickPause(): scala.Unit = js.native
+  def slickPlay(): scala.Unit = js.native
   def slickPrev(): scala.Unit = js.native
 }
 

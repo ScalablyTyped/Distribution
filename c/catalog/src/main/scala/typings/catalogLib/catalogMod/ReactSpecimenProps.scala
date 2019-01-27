@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactSpecimenProps extends js.Object {
   var children: reactLib.reactMod.ReactNs.ReactNode | java.lang.String
   var dark: js.UndefOr[scala.Boolean] = js.undefined

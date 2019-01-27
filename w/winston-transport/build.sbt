@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "winston-transport"
-version := "4.2.0-b44294"
+version := "4.3.0-b44294"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
