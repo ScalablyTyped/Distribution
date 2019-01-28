@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ElementObject extends js.Object {
-  var element: reactLib.reactMod.Global.JSXNs.Element | reactLib.reactMod.ReactNs.ReactType[_]
+  var element: reactLib.reactMod.ReactNs.ReactElement[js.Object] | reactLib.reactMod.ReactNs.ReactType[_]
 }
 

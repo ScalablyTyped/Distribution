@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-elements", "SearchBar")
 @js.native
 class SearchBar ()
-  extends reactLib.reactMod.Component[SearchBarProps, js.Any, js.Any] {
+  extends reactLib.reactMod.Component[reactDashNativeDashElementsLib.SearchBarProps, js.Any, js.Any] {
   /**
     * Holds reference to the stored input.
     */
@@ -20,7 +20,7 @@ class SearchBar ()
   /**
     * Call clear on the TextInput
     */
-  def clearText(): scala.Unit = js.native
+  def clear(): scala.Unit = js.native
   /**
     * Call focus on the TextInput
     */

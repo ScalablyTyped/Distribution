@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("react-native-elements", "FormLabel")
+@JSImport("react-native-elements", "Overlay")
 @js.native
-class FormLabel ()
-  extends reactLib.reactMod.Component[FormLabelProps, js.Any, js.Any]
+class Overlay ()
+  extends reactLib.reactMod.Component[OverlayProps, js.Object, js.Any]
 

@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("react-native-elements", "FormValidationMessage")
+@JSImport("react-native-elements", "AirbnbRating")
 @js.native
-class FormValidationMessage ()
-  extends reactLib.reactMod.Component[FormValidationMessageProps, js.Any, js.Any]
+class AirbnbRating ()
+  extends reactDashNativeDashRatingsLib.reactDashNativeDashRatingsMod.AirbnbRating
 

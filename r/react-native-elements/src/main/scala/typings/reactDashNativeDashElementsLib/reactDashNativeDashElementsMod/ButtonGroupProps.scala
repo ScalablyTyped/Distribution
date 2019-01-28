@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait ButtonGroupProps extends js.Object {
   /**
+    * Choose other button component such as TouchableOpacity
+    *
+    * @default TouchableHighlight
+    */
+  var Component: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[_]] = js.undefined
+  /**
     * Determines what the opacity of the wrapped view should be when touch is active.
     */
   var activeOpacity: js.UndefOr[scala.Double] = js.undefined
@@ -21,14 +27,6 @@ trait ButtonGroupProps extends js.Object {
     */
   var buttons: js.Array[java.lang.String] | js.Array[ElementObject]
   /**
-    * Choose other button component such as TouchableOpacity
-    *
-    * @default TouchableHighlight
-    */
-  var component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
-  /**
     * Border radius for the container
     */
   var containerBorderRadius: js.UndefOr[scala.Double] = js.undefined
@@ -39,11 +37,37 @@ trait ButtonGroupProps extends js.Object {
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   /**
-    * Disables the currently selected button if true
+    * Controls if buttons are disabled
+    *
+    * Setting `true` makes all of them disabled, while using an array only makes those indices disabled
     *
     * @default false
     */
-  var disableSelected: js.UndefOr[scala.Boolean] = js.undefined
+  var disabled: js.UndefOr[scala.Boolean | js.Array[scala.Double]] = js.undefined
+  /**
+    * Styling for each selected button when disabled
+    */
+  var disabledSelectedStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
+  ] = js.undefined
+  /**
+    * Styling for the text of each selected button when disabled
+    */
+  var disabledSelectedTextStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
+  ] = js.undefined
+  /**
+    * Styling for each button when disabled
+    */
+  var disabledStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
+  ] = js.undefined
+  /**
+    * Styling for the text of each button when disabled
+    */
+  var disabledTextStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
+  ] = js.undefined
   /**
     * inherited styling	object { width, color }	update the styling of the interior border of the list of buttons
     */
@@ -66,15 +90,29 @@ trait ButtonGroupProps extends js.Object {
     */
   var onShowUnderlay: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
-    * Specify color for selected state of button
+    * Allows the user to select multiple items
+    *
+    * @default false
+    */
+  var selectMultiple: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Specify styling selected button
     *
     * @default 'white'
     */
-  var selectedBackgroundColor: js.UndefOr[java.lang.String] = js.undefined
+  var selectedButtonStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
+  ] = js.undefined
   /**
     * Current selected index of array of buttons
     */
   var selectedIndex: scala.Double
+  /**
+    * The indexes that are selected. Used with 'selectMultiple'
+    *
+    * @default []
+    */
+  var selectedIndexes: js.UndefOr[js.Array[scala.Double]] = js.undefined
   /**
     * Specify specific styling for text in the selected state
     */

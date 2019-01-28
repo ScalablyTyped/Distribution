@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-elements", "ButtonGroup")
 @js.native
 class ButtonGroup ()
-  extends reactLib.reactMod.Component[ButtonGroupProps, js.Any, js.Any]
+  extends reactLib.reactMod.Component[ButtonGroupProps, js.Object, js.Any]
 

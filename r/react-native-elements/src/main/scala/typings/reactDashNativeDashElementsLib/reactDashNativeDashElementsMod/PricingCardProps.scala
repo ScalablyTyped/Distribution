@@ -12,16 +12,9 @@ trait PricingCardProps extends js.Object {
     */
   var button: ButtonInformation
   /**
-    * Specify button font family
-    *
-    * System font (iOS)
-    * Sans Serif (android)
-    */
-  var buttonFont: js.UndefOr[java.lang.String] = js.undefined
-  /**
     * Color scheme for button & title
     */
-  var color: java.lang.String
+  var color: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Outer component styling
     */
@@ -33,12 +26,11 @@ trait PricingCardProps extends js.Object {
     */
   var info: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-    * Specify pricing information font family
-    *
-    * System font bold (iOS)
-    * Sans Serif Bold (android)
+    * component info text style
     */
-  var infoFont: js.UndefOr[java.lang.String] = js.undefined
+  var infoStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
+  ] = js.undefined
   /**
     * Function to be run when button is pressed
     */
@@ -48,23 +40,21 @@ trait PricingCardProps extends js.Object {
     */
   var price: java.lang.String
   /**
-    * Specify pricing font family
-    *
-    * System font (font weight 700) (iOS)
-    * Sans Serif Bold (android)
+    * component pricing text style
     */
-  var pricingFont: js.UndefOr[java.lang.String] = js.undefined
+  var pricingStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
+  ] = js.undefined
   /**
     * Title
     */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Specify title font family
-    *
-    * System font (font weight 800) (iOS)
-    * Sans Serif Black (android)
+    * component title style
     */
-  var titleFont: js.UndefOr[java.lang.String] = js.undefined
+  var titleStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
+  ] = js.undefined
   /**
     * Inner wrapper component styling
     */

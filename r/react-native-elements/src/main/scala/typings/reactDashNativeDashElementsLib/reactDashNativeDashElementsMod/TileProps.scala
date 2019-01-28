@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait TileProps extends js.Object {
   /**
+    * Specify a different component as the Image component
+    * @default React Native BackgroundImage component
+    */
+  var ImageComponent: js.UndefOr[
+    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
+  ] = js.undefined
+  /**
     * Number passed to control opacity on press
     *
     * @default 0.2

@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 trait SocialIconProps extends js.Object {
   /**
+    * Component Type of button
+    *
+    * @default TouchableHighlight
+    */
+  var Component: js.UndefOr[
+    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
+  ] = js.undefined
+  /**
     * Creates button
     *
     * @default false
     */
   var button: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-    * Component Type of button
-    *
-    * @default TouchableHighlight
-    */
-  var component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
   /**
     * Disable button
     *

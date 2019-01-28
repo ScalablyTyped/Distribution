@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-elements", "Divider")
 @js.native
 class Divider ()
-  extends reactLib.reactMod.Component[DividerProps, js.Any, js.Any]
+  extends reactLib.reactMod.Component[DividerProps, js.Object, js.Any]
 

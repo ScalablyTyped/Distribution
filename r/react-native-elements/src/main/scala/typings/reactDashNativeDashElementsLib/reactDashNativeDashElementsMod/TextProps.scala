@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped any */ trait TextProps extends js.Object {
   /**
-    * font family name
-    */
-  var fontFamily: js.UndefOr[java.lang.String] = js.undefined
-  /**
     * font size 40
     */
   var h1: js.UndefOr[scala.Boolean] = js.undefined

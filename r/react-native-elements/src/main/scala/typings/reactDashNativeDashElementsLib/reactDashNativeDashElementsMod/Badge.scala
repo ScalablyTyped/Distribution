@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native-elements", "Badge")
 @js.native
 class Badge ()
-  extends reactLib.reactMod.Component[BadgeProps, js.Any, js.Any]
+  extends reactLib.reactMod.Component[BadgeProps, js.Object, js.Any]
 

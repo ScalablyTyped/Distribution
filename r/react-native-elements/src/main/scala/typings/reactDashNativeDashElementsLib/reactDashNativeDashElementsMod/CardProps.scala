@@ -42,20 +42,6 @@ trait CardProps extends js.Object {
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
   /**
-    * Flex direction (row or column)
-    *
-    * @default 'column'
-    */
-  var flexDirection: js.UndefOr[
-    reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.column | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.row
-  ] = js.undefined
-  /**
-    * Specify different font family
-    *
-    * @default System font bold (iOS), Sans Serif Bold (android)
-    */
-  var fontFamily: js.UndefOr[java.lang.String] = js.undefined
-  /**
     * Add an image as the heading with the image prop
     */
   var image: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ImageURISource] = js.undefined
@@ -80,7 +66,7 @@ trait CardProps extends js.Object {
   /**
     * Card title
     */
-  var title: js.UndefOr[java.lang.String] = js.undefined
+  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
   /**
     * Additional title styling (if title provided)
     */

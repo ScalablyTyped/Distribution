@@ -7,19 +7,21 @@ import scala.scalajs.js.annotation._
 
 trait BadgeProps extends js.Object {
   /**
-    * Override the default badge contents, mutually exclusive with 'value' property
-    */
-  var children: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.undefined
-  /**
-    * Custom component to replace the badge outer component
+    * Custom component to replace the badge component
     *
     * @default View (if onPress then TouchableOpacity)
     */
-  var component: js.UndefOr[
+  var Component: js.UndefOr[
     reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
   ] = js.undefined
   /**
-    * Style for the outer badge component
+    * Additional styling for badge (background) view component
+    */
+  var badgeStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
+  ] = js.undefined
+  /**
+    * Style for the container
     */
   var containerStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
@@ -28,6 +30,14 @@ trait BadgeProps extends js.Object {
     * Function called when pressed on the badge
     */
   var onPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  /**
+    * Determines color of the indicator
+    *
+    * @default primary
+    */
+  var status: js.UndefOr[
+    reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.primary | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.success | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.warning | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.error
+  ] = js.undefined
   /**
     * Style for the text in the badge
     */
@@ -39,12 +49,6 @@ trait BadgeProps extends js.Object {
     *
     * @default null
     */
-  var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  /**
-    * Style for the outer-most badge component
-    */
-  var wrapperStyle: js.UndefOr[
-    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
-  ] = js.undefined
+  var value: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
 }
 

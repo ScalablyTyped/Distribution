@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait CheckBoxProps extends js.Object {
   /**
+    *  Specify React Native component for main button
+    */
+  var Component: js.UndefOr[
+    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
+  ] = js.undefined
+  /**
     * Aligns checkbox to center
     *
     *  @default false
@@ -29,17 +35,11 @@ trait CheckBoxProps extends js.Object {
     *
     * @default 'check-square-o'
     */
-  var checkedIcon: js.UndefOr[java.lang.String] = js.undefined
+  var checkedIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
   /**
     * Specify a custom checked message
     */
   var checkedTitle: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    *  Specify React Native component for main button
-    */
-  var component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
   /**
     * Style of main container
     */
@@ -86,6 +86,12 @@ trait CheckBoxProps extends js.Object {
     */
   var right: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Size of the checkbox
+    *
+    * @default 24
+    */
+  var size: js.UndefOr[scala.Double] = js.undefined
+  /**
     * style of text
     */
   var textStyle: js.UndefOr[
@@ -94,7 +100,7 @@ trait CheckBoxProps extends js.Object {
   /**
     * Title of checkbox
     */
-  var title: js.UndefOr[java.lang.String | reactLib.reactMod.Global.JSXNs.Element] = js.undefined
+  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
   /**
     * Default unchecked color
     * @default '#bfbfbf'
@@ -105,6 +111,12 @@ trait CheckBoxProps extends js.Object {
     *
     * @default 'square-o'
     */
-  var uncheckedIcon: js.UndefOr[java.lang.String] = js.undefined
+  var uncheckedIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
+  /**
+    * Style of container that wraps the check box and text
+    */
+  var wrapperStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
+  ] = js.undefined
 }
 

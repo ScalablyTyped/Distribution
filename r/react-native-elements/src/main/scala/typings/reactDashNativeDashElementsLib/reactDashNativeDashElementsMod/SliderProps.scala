@@ -77,6 +77,14 @@ trait SliderProps extends js.Object {
     */
   var onValueChange: js.UndefOr[js.Function1[/* value */ scala.Double, scala.Unit]] = js.undefined
   /**
+    * Choose the orientation
+    *
+    * @default horizontal
+    */
+  var orientation: js.UndefOr[
+    reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.horizontal | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.vertical
+  ] = js.undefined
+  /**
     * Step value of the slider. The value should be between 0 and maximumValue - minimumValue)
     *
     * @default 0

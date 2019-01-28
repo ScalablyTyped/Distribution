@@ -7,6 +7,21 @@ import scala.scalajs.js.annotation._
 
 trait AvatarProps extends js.Object {
   /**
+    * Component for enclosing element (eg: TouchableHighlight, View, etc)
+    *
+    * @default TouchableOpacity
+    */
+  var Component: js.UndefOr[
+    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
+  ] = js.undefined
+  /**
+    * Image Component of Avatar
+    * @default React Native default Image component
+    */
+  var ImageComponent: js.UndefOr[
+    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
+  ] = js.undefined
+  /**
     * Opacity when pressed
     *
     * @default 0.2
@@ -17,25 +32,17 @@ trait AvatarProps extends js.Object {
     */
   var avatarStyle: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ImageStyle] = js.undefined
   /**
-    * Component for enclosing element (eg: TouchableHighlight, View, etc)
-    *
-    * @default TouchableOpacity
-    */
-  var component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
-  /**
     * Styling for outer container
     */
   var containerStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   /**
-    * Height for the Avatar
+    * Edit button for the avatar
     *
-    * @default 34
+    * @default "{size: null, iconName: 'mode-edit', iconType: 'material', iconColor: '#fff', underlayColor: '#000', style: null}"
     */
-  var height: js.UndefOr[scala.Double] = js.undefined
+  var editButton: js.UndefOr[stdLib.Partial[IconProps]] = js.undefined
   /**
     * Icon for the avatar
     */
@@ -47,13 +54,17 @@ trait AvatarProps extends js.Object {
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
   /**
-    * Large sized icon
+    * Optional properties to pass to the image if provided e.g "resizeMode"
     */
-  var large: js.UndefOr[scala.Boolean] = js.undefined
+  var imageProps: js.UndefOr[
+    stdLib.Partial[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ImageProperties */ _
+    ]
+  ] = js.undefined
   /**
-    * Medium sized icon
+    * Callback function when pressing Edit button
     */
-  var medium: js.UndefOr[scala.Boolean] = js.undefined
+  var onEditPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
     * Callback function when long pressing component
     */
@@ -69,15 +80,34 @@ trait AvatarProps extends js.Object {
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   /**
+    * Style for the placeholder
+    */
+  var placeholderStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
+  ] = js.undefined
+  /**
+    * Render a content inside placeholder
+    */
+  var renderPlaceholderContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
+  /**
     * Determines the shape of avatar
     *
     * @default false
     */
   var rounded: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Small sized icon
+    * If to show the edit button or not
+    *
+    * @default false
     */
-  var small: js.UndefOr[scala.Boolean] = js.undefined
+  var showEditButton: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Size of Avatar
+    * @default "small"
+    */
+  var size: js.UndefOr[
+    reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.small | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.medium | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.large | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.xlarge | scala.Double
+  ] = js.undefined
   /**
     * Image source
     */
@@ -92,15 +122,5 @@ trait AvatarProps extends js.Object {
   var titleStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
-  /**
-    * Width for the Avatar
-    *
-    * @default 34
-    */
-  var width: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * Extra-large sized icon
-    */
-  var xlarge: js.UndefOr[scala.Boolean] = js.undefined
 }
 

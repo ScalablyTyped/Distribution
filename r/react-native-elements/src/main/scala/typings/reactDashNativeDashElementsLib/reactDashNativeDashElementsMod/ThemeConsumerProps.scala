@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("react-native-elements", "List")
-@js.native
-class List ()
-  extends reactLib.reactMod.Component[ListProps, js.Any, js.Any]
+trait ThemeConsumerProps[T] extends js.Object {
+  def children(props: ThemeProps[T]): reactLib.reactMod.ReactNs.ReactChild
+}
 

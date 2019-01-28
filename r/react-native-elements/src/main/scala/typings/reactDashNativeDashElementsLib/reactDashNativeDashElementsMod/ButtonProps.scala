@@ -5,31 +5,43 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ButtonProps
-  extends reactDashNativeLib.reactDashNativeMod.TouchableWithoutFeedbackProps {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- reactDashNativeLib.reactDashNativeMod.TouchableNativeFeedbackProps because var conflicts: accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityStates, accessibilityTraits, accessible, delayLongPress, delayPressIn, delayPressOut, disabled, hitSlop, importantForAccessibility, onAccessibilityTap, onLayout, onLongPress, onMagicTap, onPress, onPressIn, onPressOut, pressRetentionOffset, style, testID. Inlined background, useForeground */ trait ButtonProps
+  extends reactDashNativeLib.reactDashNativeMod.TouchableOpacityProps {
   /**
-    * Styling for loading spinner
+    * Specify other touchable such as TouchableOpacity/TouchableNativeFeedback
     *
-    * @default null
+    * Default is TouchableOpacity on IOS and TouchableNativeFeedback on Android
     */
-  var activityIndicatorStyle: js.UndefOr[
-    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
+  var TouchableComponent: js.UndefOr[
+    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
   ] = js.undefined
   /**
-    * Background color of button
+    * Specify a different component as the background for the button.
+    * Useful for if you want to make a button with a gradient background.
     *
-    * @default #397af8
+    * @default View
     */
-  var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
+  var ViewComponent: js.UndefOr[
+    reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]
+  ] = js.undefined
   /**
-    * Adds border radius to button
-    *  (Note: if you set this, don't forget to also set borderRadius to containerViewStyle prop, otherwise unexpected behaviour might occur)
-    *
-    * @default 0
+    * Determines the type of background drawable that's going to be used to display feedback.
+    * It takes an object with type property and extra data depending on the type.
+    * It's recommended to use one of the following static methods to generate that dictionary:
+    *      1) TouchableNativeFeedback.SelectableBackground() - will create object that represents android theme's
+    *         default background for selectable elements (?android:attr/selectableItemBackground)
+    *      2) TouchableNativeFeedback.SelectableBackgroundBorderless() - will create object that represent android
+    *         theme's default background for borderless selectable elements
+    *         (?android:attr/selectableItemBackgroundBorderless). Available on android API level 21+
+    *      3) TouchableNativeFeedback.Ripple(color, borderless) - will create object that represents ripple drawable
+    *         with specified color (as a string). If property borderless evaluates to true the ripple will render
+    *         outside of the view bounds (see native actionbar buttons as an example of that behavior). This background
+    *         type is available on Android API level 21+
     */
-  var borderRadius: js.UndefOr[scala.Double] = js.undefined
+  var background: js.UndefOr[reactDashNativeLib.BackgroundPropType] = js.undefined
   /**
-    * Additional styling for button component
+    * Additional styling for button (background) view component
     *
     * @default null
     */
@@ -37,82 +49,45 @@ trait ButtonProps
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   /**
-    * Font color
-    *
-    * @default #fff
-    */
-  var color: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * Specify other component such as TouchableOpacity or other
-    *
-    * @default TouchableHighlight (iOS), TouchableNativeFeedback (android)
-    */
-  var component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
-  /**
     * Styling for Component container
     *
     * @default null
     */
-  var containerViewStyle: js.UndefOr[
+  var containerStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   /**
-    * Disabled button styling
-    *
-    * @default null
+    * Style of the button when disabled
     */
   var disabledStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   /**
-    * Disabled button text styling
-    *
-    * @default null
+    * Style of the title when the button is disabled
     */
-  var disabledTextStyle: js.UndefOr[
+  var disabledTitleStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
   /**
-    * Specify different font family
-    *
-    * @default System font (iOS), Sans Serif (android)
+    * Icon to show in the button
     */
-  var fontFamily: js.UndefOr[java.lang.String] = js.undefined
+  var icon: js.UndefOr[IconNode] = js.undefined
   /**
-    * Font size
-    *
-    * @default 18
+    * Style for the container around the icon
     */
-  var fontSize: js.UndefOr[scala.Double] = js.undefined
+  var iconContainerStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
+  ] = js.undefined
   /**
-    * Specify font weight for title
-    *
-    * @default null
-    */
-  var fontWeight: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * Icon configuration
-    */
-  var icon: js.UndefOr[ButtonIcon] = js.undefined
-  /**
-    * Specify other icon component instead of default. The component will have all values from the icon prop
-    *
-    * @default MaterialIcon
-    * @see https://github.com/oblador/react-native-vector-icons#icon-component
-    */
-  var iconComponent: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.undefined
-  /**
-    * Icon configuration for icon on right side of title
-    */
-  var iconRight: js.UndefOr[ButtonIcon] = js.undefined
-  /**
-    * Makes button large
+    * If to show the icon on the right
     *
     * @default false
     */
-  var large: js.UndefOr[scala.Boolean] = js.undefined
+  var iconRight: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Object of props to be applied to the linearGradient view(ViewComponent)
+    */
+  var linearGradientProps: js.UndefOr[js.Object] = js.undefined
   /**
     * Display a loading spinner
     *
@@ -120,44 +95,47 @@ trait ButtonProps
     */
   var loading: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Display the spinner to the right
-    *
-    * @default false
+    * Additional props to applied to the ActivityIndicator
     */
-  var loadingRight: js.UndefOr[scala.Boolean] = js.undefined
+  var loadingProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActivityIndicatorProperties */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ActivityIndicatorProperties */ js.Any
+  ] = js.undefined
   /**
-    * onLongPress method
+    * Additional style to applied to the ActivityIndicator
     */
-  @JSName("onLongPress")
-  var onLongPress_ButtonProps: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var loadingStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
+  ] = js.undefined
   /**
-    * Flag to add raised button styling
+    * If the button has raised styling
     *
     * @default false
     */
   var raised: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Text styling
-    *
-    * @default null
+    * Button title
     */
-  var textStyle: js.UndefOr[
+  var title: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Optional props for the title inside the button
+    */
+  var titleProps: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ js.Any
+  ] = js.undefined
+  /**
+    * Title styling
+    */
+  var titleStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
   /**
-    * Button title
-    */
-  var title: java.lang.String
-  /**
-    * Underlay color for button press
+    * Type of button
     *
-    * @default transparent
+    * @default solid
     */
-  var underlayColor: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * onPress method
-    */
-  @JSName("onPress")
-  def onPress_MButtonProps(): scala.Unit
+  var `type`: js.UndefOr[
+    reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.solid | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.clear | reactDashNativeDashElementsLib.reactDashNativeDashElementsLibStrings.outline
+  ] = js.undefined
+  var useForeground: js.UndefOr[scala.Boolean] = js.undefined
 }
 

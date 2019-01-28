@@ -7,21 +7,33 @@ import scala.scalajs.js.annotation._
 
 trait IconProps extends js.Object {
   /**
+    * View if no onPress method is defined, TouchableHighlight if onPress method is defined	React Native component	update React Native Component
+    */
+  var Component: js.UndefOr[
+    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
+  ] = js.undefined
+  /**
     * Color of icon
     *
     * @default 'black'
     */
   var color: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * View if no onPress method is defined, TouchableHighlight if onPress method is defined	React Native component	update React Native Component
-    */
-  var component: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.undefined
-  /**
     * Add styling to container holding icon
     */
   var containerStyle: js.UndefOr[
+    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
+  ] = js.undefined
+  /**
+    * Disables the Icon
+    *
+    * Only works if `onPress` passed in
+    */
+  var disabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Styles for the Icon when disabled
+    */
+  var disabledStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   /**
