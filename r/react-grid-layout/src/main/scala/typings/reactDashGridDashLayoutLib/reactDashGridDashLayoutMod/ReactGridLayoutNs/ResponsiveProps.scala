@@ -11,15 +11,11 @@ trait ResponsiveProps extends CoreProps {
     *
     * Breakpoint names are arbitrary but must match in the cols and layouts objects.
     */
-  var breakpoints: js.UndefOr[
-    reactDashGridDashLayoutLib.reactDashGridDashLayoutLibStrings.ResponsiveProps with js.Any
-  ] = js.undefined
+  var breakpoints: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Double]] = js.undefined
   /**
     * Number of cols. This is a breakpoint -> cols map, e.g. `{lg: 12, md: 10, ...}`.
     */
-  var cols: js.UndefOr[
-    reactDashGridDashLayoutLib.reactDashGridDashLayoutLibStrings.ResponsiveProps with js.Any
-  ] = js.undefined
+  var cols: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Double]] = js.undefined
   /**
     * layouts is an object mapping breakpoints to layouts.
     *

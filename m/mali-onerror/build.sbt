@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "mali-onerror"
-version := "0.1-dt-20181120Z-198cad"
+version := "0.1-dt-20181120Z-4c4095"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "grpc" % "1.17.0-98d9cc",
+  "org.scalablytyped" %%% "grpc" % "1.17.0-845764",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-c48db4",
   "org.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20180723Z-e12b56",
   "org.scalablytyped" %%% "lodash_dot_clone" % "4.5-dt-20180723Z-595256",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20180425Z-99178b",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
-  "org.scalablytyped" %%% "protobufjs" % "6.8.8-ed1824",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190128Z-23a585",
+  "org.scalablytyped" %%% "protobufjs" % "6.8.8-e01f75",
   "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-14f98a",
   "org.scalablytyped" %%% "protobufjs__base64" % "1.1.2-3c3a8c",
   "org.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-3e5519",

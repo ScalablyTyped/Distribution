@@ -48,6 +48,10 @@ trait ICoachmarkProps
     */
   var beakWidth: js.UndefOr[scala.Double] = js.undefined
   /**
+    * If provided, additional class name to provide on the root element.
+    */
+  var className: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The starting collapsed state for the Coachmark.  Use `isCollapsed` instead.
     * @defaultvalue true
     * @deprecated Use `isCollapsed` instead.
@@ -145,6 +149,10 @@ trait ICoachmarkProps
   var teachingBubbleRef: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsTeachingBubbleTeachingBubbleDotTypesMod.ITeachingBubble
   ] = js.undefined
+  /**
+    * Theme provided by higher order component.
+    */
+  var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
     * The width of the Coachmark.
     * @deprecated No longer used.

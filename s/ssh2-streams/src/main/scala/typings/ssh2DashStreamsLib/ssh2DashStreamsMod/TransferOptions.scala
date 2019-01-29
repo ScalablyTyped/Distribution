@@ -15,6 +15,10 @@ trait TransferOptions extends js.Object {
     */
   var concurrency: js.UndefOr[scala.Double] = js.undefined
   /**
+    * Integer or string representing the file mode to set for the uploaded file.
+    */
+  var mode: js.UndefOr[scala.Double | java.lang.String] = js.undefined
+  /**
     * Called every time a part of a file was transferred
     */
   var step: js.UndefOr[

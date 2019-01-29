@@ -12,8 +12,11 @@ object ^ extends js.Object {
   val Dictionary: ioDashTsLib.ioDashTsMod.UnknownRecordC = js.native
   val Function: ioDashTsLib.ioDashTsMod.FunctionC = js.native
   val Integer: ioDashTsLib.ioDashTsMod.RefinementC[ioDashTsLib.ioDashTsMod.NumberC] = js.native
+  val UnknownArray: ioDashTsLib.ioDashTsMod.UnknownArrayC = js.native
+  val UnknownRecord: ioDashTsLib.ioDashTsMod.UnknownRecordC = js.native
   val any: ioDashTsLib.ioDashTsMod.AnyC = js.native
   val boolean: ioDashTsLib.ioDashTsMod.BooleanC = js.native
+  val dictionary: ioDashTsLib.Anon_Codomain = js.native
   val emptyIndexRecord: ioDashTsLib.ioDashTsMod.IndexRecord = js.native
   val never: ioDashTsLib.ioDashTsMod.NeverC = js.native
   val `null`: ioDashTsLib.ioDashTsMod.NullC = js.native
@@ -36,8 +39,6 @@ object ^ extends js.Object {
   def array[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](codec: C): ioDashTsLib.ioDashTsMod.ArrayC[C] = js.native
   def array[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](codec: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.ArrayC[C] = js.native
   def clean[A, O, I](codec: ioDashTsLib.ioDashTsMod.Type[A, O, I]): ioDashTsLib.ioDashTsMod.Type[A, O, I] = js.native
-  def dictionary[D /* <: ioDashTsLib.ioDashTsMod.Mixed */, C /* <: ioDashTsLib.ioDashTsMod.Mixed */](domain: D, codomain: C): ioDashTsLib.ioDashTsMod.RecordC[D, C] = js.native
-  def dictionary[D /* <: ioDashTsLib.ioDashTsMod.Mixed */, C /* <: ioDashTsLib.ioDashTsMod.Mixed */](domain: D, codomain: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.RecordC[D, C] = js.native
   def exact[C /* <: ioDashTsLib.ioDashTsMod.HasProps */](codec: C): ioDashTsLib.ioDashTsMod.ExactC[C] = js.native
   def exact[C /* <: ioDashTsLib.ioDashTsMod.HasProps */](codec: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.ExactC[C] = js.native
   def failure[T](value: js.Any, context: ioDashTsLib.ioDashTsMod.Context): fpDashTsLib.libEitherMod.Either[ioDashTsLib.ioDashTsMod.Errors, T] = js.native
@@ -69,6 +70,8 @@ object ^ extends js.Object {
   def readonly[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](codec: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.ReadonlyC[C] = js.native
   def readonlyArray[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](codec: C): ioDashTsLib.ioDashTsMod.ReadonlyArrayC[C] = js.native
   def readonlyArray[C /* <: ioDashTsLib.ioDashTsMod.Mixed */](codec: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.ReadonlyArrayC[C] = js.native
+  def record[D /* <: ioDashTsLib.ioDashTsMod.Mixed */, C /* <: ioDashTsLib.ioDashTsMod.Mixed */](domain: D, codomain: C): ioDashTsLib.ioDashTsMod.RecordC[D, C] = js.native
+  def record[D /* <: ioDashTsLib.ioDashTsMod.Mixed */, C /* <: ioDashTsLib.ioDashTsMod.Mixed */](domain: D, codomain: C, name: java.lang.String): ioDashTsLib.ioDashTsMod.RecordC[D, C] = js.native
   def recursion[A, O, I, C /* <: ioDashTsLib.ioDashTsMod.Type[A, O, I] */](name: java.lang.String, definition: js.Function1[/* self */ C, C]): ioDashTsLib.ioDashTsMod.RecursiveType[C, A, O, I] = js.native
   @JSName("refinement")
   def refinement__A[C /* <: ioDashTsLib.ioDashTsMod.Any */](

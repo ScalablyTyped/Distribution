@@ -119,8 +119,8 @@ trait MessageRead extends Message {
     *   </tr>
     *   <tr>
     *     <td>Appointment items</td>
-    *     <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurence.</td>
-    *     <td>IPM.Appointment,IPM.Appointment.Occurence</td>
+    *     <td>These are calendar items of the item class IPM.Appointment or IPM.Appointment.Occurrence.</td>
+    *     <td>IPM.Appointment,IPM.Appointment.Occurrence</td>
     *   </tr>
     *   <tr>
     *     <td>Message items</td>

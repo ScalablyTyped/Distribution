@@ -15,6 +15,7 @@ class CircuitBreaker protected ()
   val group: java.lang.String = js.native
   val halfOpen: scala.Boolean = js.native
   val hystrixStats: HystrixStats = js.native
+  val isShutdown: scala.Boolean = js.native
   val name: java.lang.String = js.native
   val opened: scala.Boolean = js.native
   val pendingClose: scala.Boolean = js.native
@@ -32,5 +33,6 @@ class CircuitBreaker protected ()
   def healthCheck(func: js.Function1[/* repeated */ js.Any, js.Promise[_]]): scala.Unit = js.native
   def healthCheck(func: js.Function1[/* repeated */ js.Any, js.Promise[_]], interval: scala.Double): scala.Unit = js.native
   def open(): scala.Unit = js.native
+  def shutdown(): scala.Unit = js.native
 }
 

@@ -6,11 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Transaction extends js.Object {
-  def apply(params: js.Any*): js.Any = js.native
-  def default(params: js.Any*): js.Any = js.native
-  def deferred(params: js.Any*): js.Any = js.native
-  def exclusive(params: js.Any*): js.Any = js.native
-  def immediate(params: js.Any*): js.Any = js.native
+trait Transaction[F /* <: betterDashSqlite3Lib.VariableArgFunction */] extends js.Object {
+  def apply(
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param params because its type ArgumentTypes<F> is not an array type */ params: betterDashSqlite3Lib.ArgumentTypes[F]
+  ): js.Any = js.native
+  def default(
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param params because its type ArgumentTypes<F> is not an array type */ params: betterDashSqlite3Lib.ArgumentTypes[F]
+  ): js.Any = js.native
+  def deferred(
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param params because its type ArgumentTypes<F> is not an array type */ params: betterDashSqlite3Lib.ArgumentTypes[F]
+  ): js.Any = js.native
+  def exclusive(
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param params because its type ArgumentTypes<F> is not an array type */ params: betterDashSqlite3Lib.ArgumentTypes[F]
+  ): js.Any = js.native
+  def immediate(
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param params because its type ArgumentTypes<F> is not an array type */ params: betterDashSqlite3Lib.ArgumentTypes[F]
+  ): js.Any = js.native
 }
 

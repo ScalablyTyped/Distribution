@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_ArgsChildrenComponentName extends js.Object {
   var children: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
+  var onSubscriptionComplete: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
   var onSubscriptionData: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
   var shouldResubscribe: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean | (js.Function1[/* repeated */ _, _])] = js.native
   @JSName("subscription")

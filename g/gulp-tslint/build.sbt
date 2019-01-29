@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-tslint"
-version := "8.1.3-6c5dfd"
+version := "8.1.3-944c75"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,22 +11,22 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "builtin-modules" % "2.0-dt-20180214Z-5bd474",
   "org.scalablytyped" %%% "chalk" % "2.4.2-aa77e5",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-786ea5",
-  "org.scalablytyped" %%% "commander" % "2.19.0-012a2c",
-  "org.scalablytyped" %%% "diff" % "3.5-dt-20181102Z-3266eb",
+  "org.scalablytyped" %%% "commander" % "2.19.0-13b951",
+  "org.scalablytyped" %%% "diff" % "4.0-dt-20190121Z-ec63f0",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-433270",
   "org.scalablytyped" %%% "fancy-log" % "1.3-dt-20180214Z-c1258d",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-0b7a31",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-e3ca52",
   "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-8bc5c9",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-db2a02",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190128Z-23a585",
   "org.scalablytyped" %%% "plugin-error" % "0.1-dt-20180214Z-339dfc",
-  "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180507Z-4089ba",
+  "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180507Z-1d69c8",
   "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-d66e0c",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-394486",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-1bd3fa",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-d3939b",
   "org.scalablytyped" %%% "tslib" % "1.9.3-688770",
-  "org.scalablytyped" %%% "tslint" % "5.12.1-e5c0d1",
+  "org.scalablytyped" %%% "tslint" % "5.12.1-16f6c0",
   "org.scalablytyped" %%% "tsutils" % "2.29.0-9e4ceb",
   "org.scalablytyped" %%% "typescript" % "3.2.4-3dde35")
 publishArtifact in packageDoc := false

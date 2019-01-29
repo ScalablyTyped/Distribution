@@ -415,7 +415,7 @@ class Item () extends js.Object {
     svg: java.lang.String,
     onLoad: js.Function2[/* item */ this.type, /* svg */ java.lang.String, scala.Unit]
   ): Item = js.native
-  def importSVG(svg: java.lang.String, options: paperLib.Anon_ApplyMatrixExpandShapes): Item = js.native
+  def importSVG(svg: java.lang.String, options: paperLib.Anon_ApplyMatrix): Item = js.native
   /**
     * Converts the provided SVG content into Paper.js items and adds them to the active layer of this project.
     * Note that the project is not cleared first. You can call project.clear() to do so.
@@ -432,7 +432,7 @@ class Item () extends js.Object {
     svg: stdLib.SVGElement,
     onLoad: js.Function2[/* item */ this.type, /* svg */ java.lang.String, scala.Unit]
   ): Item = js.native
-  def importSVG(svg: stdLib.SVGElement, options: paperLib.Anon_ApplyMatrixExpandShapes): Item = js.native
+  def importSVG(svg: stdLib.SVGElement, options: paperLib.Anon_ApplyMatrix): Item = js.native
   /**
     * Inserts this item above the specified item.
     * @param item - the item above which it should be inserted

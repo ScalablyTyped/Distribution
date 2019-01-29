@@ -95,8 +95,8 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
     * @returns When no item is found, null is returned when a single item was requested,
     * and and empty Array is returned in case of multiple id's.
     */
-  def get(id: IdType): T = js.native
-  def get(id: IdType, options: DataSelectionOptions[T]): T = js.native
+  def get(id: IdType): T | scala.Null = js.native
+  def get(id: IdType, options: DataSelectionOptions[T]): T | scala.Null = js.native
   def get(options: DataSelectionOptions[T]): js.Array[T] = js.native
   /**
     * Get the DataSet itself.
@@ -120,8 +120,8 @@ class DataSet[T /* <: DataItem | DataGroup | Node | Edge */] () extends js.Objec
     * @param [options] Optional options.
     * @returns The mapped items.
     */
-  def map(callback: js.Function2[/* item */ T, /* id */ IdType, _]): js.Array[_] = js.native
-  def map(callback: js.Function2[/* item */ T, /* id */ IdType, _], options: DataSelectionOptions[T]): js.Array[_] = js.native
+  def map[M](callback: js.Function2[/* item */ T, /* id */ IdType, M]): js.Array[M] = js.native
+  def map[M](callback: js.Function2[/* item */ T, /* id */ IdType, M], options: DataSelectionOptions[T]): js.Array[M] = js.native
   /**
     * Find the item with maximum value of specified field.
     *

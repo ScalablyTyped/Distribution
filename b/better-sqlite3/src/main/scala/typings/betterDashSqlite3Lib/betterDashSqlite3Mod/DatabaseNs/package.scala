@@ -18,5 +18,5 @@ package object DatabaseNs {
     betterDashSqlite3Lib.betterDashSqlite3Mod.SqliteError
   ]
   type Statement = betterDashSqlite3Lib.betterDashSqlite3Mod.BetterSqlite3Ns.Statement
-  type Transaction = betterDashSqlite3Lib.betterDashSqlite3Mod.BetterSqlite3Ns.Transaction
+  type Transaction = betterDashSqlite3Lib.betterDashSqlite3Mod.BetterSqlite3Ns.Transaction[betterDashSqlite3Lib.VariableArgFunction]
 }

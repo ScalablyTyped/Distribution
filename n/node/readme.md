@@ -33,6 +33,7 @@
 //                 Zane Hannan AU <https://github.com/ZaneHannanAU>
 //                 Jeremie Rodriguez <https://github.com/jeremiergz>
 //                 Samuel Ainsworth <https://github.com/samuela>
+//                 Kyle Uehlein <https://github.com/kuehlein>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 /** inspector module types */
 // tslint:disable-next-line:dt-header

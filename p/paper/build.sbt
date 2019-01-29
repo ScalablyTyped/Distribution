@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "paper"
-version := "v0.11.8-dt-20190124Z-435611"
+version := "v0.11.8-dt-20190128Z-241960"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

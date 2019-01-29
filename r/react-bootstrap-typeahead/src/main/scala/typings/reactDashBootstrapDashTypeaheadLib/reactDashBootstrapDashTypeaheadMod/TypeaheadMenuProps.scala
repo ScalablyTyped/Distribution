@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TypeaheadMenuProps[T] extends js.Object {
-  var text: java.lang.String
-}
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadMenuPropsPick ]: react-bootstrap-typeahead.react-bootstrap-typeahead.AllTypeaheadOwnAndInjectedProps<react-bootstrap-typeahead.react-bootstrap-typeahead.AllTypeaheadOwnAndInjectedProps<T>>[P]} */ trait TypeaheadMenuProps[T /* <: TypeaheadModel */] extends MenuProps
 

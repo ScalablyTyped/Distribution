@@ -10,5 +10,6 @@ package object needleNs {
   type NeedleCallback = needleLib.needleMod.coreNs.NeedleCallback
   type NeedleHttpVerbs = needleLib.needleMod.coreNs.NeedleHttpVerbs
   type NeedleOptions = needleLib.needleMod.coreNs.NeedleOptions
+  type NeedleResponse = needleLib.needleMod.coreNs.NeedleResponse
   type ReadableStream = needleLib.needleMod.coreNs.ReadableStream
 }

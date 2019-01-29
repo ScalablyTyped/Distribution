@@ -23,8 +23,11 @@ trait JSONTreeProps
   var isCustomNode: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
   var keyPath: js.UndefOr[js.Array[java.lang.String | scala.Double]] = js.undefined
   var labelRenderer: js.UndefOr[
-    js.Function1[
-      /* raw */ js.Tuple2[java.lang.String, java.lang.String], 
+    js.Function4[
+      /* keyPath */ js.Array[java.lang.String], 
+      /* nodeType */ js.UndefOr[java.lang.String], 
+      /* expanded */ js.UndefOr[scala.Boolean], 
+      /* expandable */ js.UndefOr[scala.Boolean], 
       reactLib.reactMod.Global.JSXNs.Element
     ]
   ] = js.undefined

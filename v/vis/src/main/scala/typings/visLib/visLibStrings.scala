@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 object visLibStrings {
   @js.native
+  sealed trait Array extends js.Object
+  
+  @js.native
+  sealed trait Object extends js.Object
+  
+  @js.native
   sealed trait afterDrawing extends js.Object
   
   @js.native
@@ -306,6 +312,8 @@ object visLibStrings {
   @js.native
   sealed trait zoom extends js.Object
   
+  def Array: Array = "Array".asInstanceOf[Array]
+  def Object: Object = "Object".asInstanceOf[Object]
   def afterDrawing: afterDrawing = "afterDrawing".asInstanceOf[afterDrawing]
   def animationFinished: animationFinished = "animationFinished".asInstanceOf[animationFinished]
   def auto: auto = "auto".asInstanceOf[auto]

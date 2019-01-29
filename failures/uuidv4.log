@@ -1,0 +1,66 @@
+[debug] PhaseRunner.scala:82 Success [id => uuidv4, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/uuidv4/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/uuidv4),TsIdentLibrarySimple(uuidv4)),TsIdentModule(None,List(uuidv4))) [id => uuidv4, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(uuidv4)) [id => uuidv4, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(uuidv4) [id => uuidv4, phase => typescript] 
+[debug] PhaseRunner.scala:82 Success [id => uuidv4, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:40 Processing uuidv4 [id => uuidv4, phase => scala.js] 
+[debug] PhaseRunner.scala:82 Success [id => uuidv4, phase => scala.js] 
+[warn ] Phase3CompileBloop.scala:178 Using cached build of uuidv4 [id => uuidv4, phase => build] 
+[debug] PhaseRunner.scala:82 Success [id => uuidv4, phase => build] 
+[error] PhaseRes.scala:76 Caught exception: dispatch.StatusCode: Unexpected response status: 404 [id => uuidv4, phase => publish] java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 404
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:218)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.markAsDone(HttpProtocol.java:204)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.finishUpdate(HttpProtocol.java:189)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.handleChunk(HttpProtocol.java:457)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.handle(HttpProtocol.java:480)
+	at com.ning.http.client.providers.netty.handler.Processor.messageReceived(Processor.java:89)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.stream.ChunkedWriteHandler.handleUpstream(ChunkedWriteHandler.java:142)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:135)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.handler.codec.http.HttpClientCodec.handleUpstream(HttpClientCodec.java:92)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: dispatch.StatusCode: Unexpected response status: 404
+	at com.olvind.tso.importer.build.BinTrayPublisher$Handle$.$anonfun$createOrConflict$1(BinTrayPublisher.scala:38)
+	at com.olvind.tso.importer.build.BinTrayPublisher$Handle$.$anonfun$createOrConflict$1$adapted(BinTrayPublisher.scala:34)
+	at dispatch.FunctionHandler.onCompleted(handlers.scala:26)
+	at com.ning.http.client.AsyncCompletionHandler.onCompleted(AsyncCompletionHandler.java:55)
+	at com.olvind.tso.importer.build.Caching$WrappedHandler.onCompleted(BinTrayPublisher.scala:139)
+	at com.olvind.tso.importer.build.Caching$WrappedHandler.onCompleted(BinTrayPublisher.scala:139)
+	at com.olvind.tso.importer.build.Caching$Client$StoringHandler$1$.onCompleted(BinTrayPublisher.scala:114)
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.getContent(NettyResponseFuture.java:177)
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:212)
+	... 42 more
+
+[error] PhaseRunner.scala:86 Failure, [uuidv4 => java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 404] [id => uuidv4, phase => publish] 

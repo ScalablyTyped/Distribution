@@ -15,6 +15,10 @@ trait ICoachmarkStyleProps extends js.Object {
     */
   var beaconColorTwo: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * ClassName to provide on the root style area.
+    */
+  var className: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Is the Coachmark collapsed.
     * Deprecated, use `isCollapsed` instead.
     * @deprecated Use `isCollapsed` instead.
@@ -57,6 +61,10 @@ trait ICoachmarkStyleProps extends js.Object {
     * Is the component taking measurements
     */
   var isMeasuring: scala.Boolean
+  /**
+    * Current theme.
+    */
+  var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
     * Transform origin for teaching bubble content
     */

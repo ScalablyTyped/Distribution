@@ -470,6 +470,13 @@ trait ByteBuffer extends js.Object {
     */
   def writeInt8(value: scala.Double): ByteBuffer = js.native
   def writeInt8(value: scala.Double, offset: scala.Double): ByteBuffer = js.native
+  def writeLong(value: longLib.longMod.namespaced): ByteBuffer = js.native
+  def writeLong(value: longLib.longMod.namespaced, offset: scala.Double): ByteBuffer = js.native
+  /**
+    * Write a 64bit signed integer. This is an alias of ByteBuffer#writeInt64.
+    */
+  def writeLong(value: scala.Double): ByteBuffer = js.native
+  def writeLong(value: scala.Double, offset: scala.Double): ByteBuffer = js.native
   /**
     * Writes a 16bit signed integer. This is an alias of ByteBuffer#writeInt16.
     */

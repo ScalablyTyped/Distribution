@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AuthorizeOptions extends js.Object {
+  var acccessType: js.UndefOr[java.lang.String] = js.undefined
+  var approvalPrompt: js.UndefOr[java.lang.String] = js.undefined
   var audience: js.UndefOr[java.lang.String] = js.undefined
   var clientID: js.UndefOr[java.lang.String] = js.undefined
   var connection: js.UndefOr[java.lang.String] = js.undefined

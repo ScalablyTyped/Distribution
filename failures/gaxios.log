@@ -1,0 +1,74 @@
+[info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(node)) for TsIdentLibrarySimple(gaxios) [id => gaxios, phase => typescript, file => ../build/src/common.d.ts] 
+[debug] PhaseRunner.scala:82 Success [id => gaxios, phase => typescript] 
+[debug] PhaseRunner.scala:82 Success [id => gaxios, phase => typescript] 
+[debug] PhaseRunner.scala:82 Success [id => gaxios, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/gaxios/build/src/common.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/gaxios),TsIdentLibrarySimple(gaxios)),TsIdentModule(None,List(gaxios, build, src, common))) [id => gaxios, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(gaxios, build, src, common)) [id => gaxios, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/gaxios/build/src/gaxios.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/gaxios),TsIdentLibrarySimple(gaxios)),TsIdentModule(None,List(gaxios, build, src, gaxios))) [id => gaxios, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(gaxios, build, src, gaxios)) [id => gaxios, phase => typescript] 
+[info ] Phase1ReadTypescript.scala:160 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/npm/node_modules/gaxios/build/src/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/npm/node_modules/gaxios),TsIdentLibrarySimple(gaxios)),TsIdentModule(None,List(gaxios))) [id => gaxios, phase => typescript] 
+[info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(gaxios)) [id => gaxios, phase => typescript] 
+[warn ] Phase1ReadTypescript.scala:200 Processing TsIdentLibrarySimple(gaxios) [id => gaxios, phase => typescript] 
+[warn ] QualifyReferences.scala:32 Couldn't qualify imported_gaxios/build/src/common.GaxiosResponse<T> [id => gaxios, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(gaxios) / TsExport() / TsExporteeTree() / TsDeclFunction(request) / TsFunSig() / TsTypeRef() / TsTypeRef())] 
+[debug] PhaseRunner.scala:82 Success [id => gaxios, phase => typescript] 
+[warn ] Phase2ToScalaJs.scala:40 Processing gaxios [id => gaxios, phase => scala.js] 
+[debug] PhaseRunner.scala:82 Success [id => gaxios, phase => scala.js] 
+[warn ] Phase3CompileBloop.scala:178 Using cached build of gaxios [id => gaxios, phase => build] 
+[debug] PhaseRunner.scala:82 Success [id => gaxios, phase => build] 
+[error] PhaseRes.scala:76 Caught exception: dispatch.StatusCode: Unexpected response status: 404 [id => gaxios, phase => publish] java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 404
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:218)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.markAsDone(HttpProtocol.java:204)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.finishUpdate(HttpProtocol.java:189)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.handleChunk(HttpProtocol.java:457)
+	at com.ning.http.client.providers.netty.handler.HttpProtocol.handle(HttpProtocol.java:480)
+	at com.ning.http.client.providers.netty.handler.Processor.messageReceived(Processor.java:89)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.stream.ChunkedWriteHandler.handleUpstream(ChunkedWriteHandler.java:142)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.handler.codec.http.HttpContentDecoder.messageReceived(HttpContentDecoder.java:135)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:459)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:536)
+	at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:435)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.handler.codec.http.HttpClientCodec.handleUpstream(HttpClientCodec.java:92)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:791)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:296)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.unfoldAndFireMessageReceived(FrameDecoder.java:462)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.callDecode(FrameDecoder.java:443)
+	at org.jboss.netty.handler.codec.frame.FrameDecoder.messageReceived(FrameDecoder.java:303)
+	at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:70)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:564)
+	at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:559)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:268)
+	at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:255)
+	at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:88)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.process(AbstractNioWorker.java:108)
+	at org.jboss.netty.channel.socket.nio.AbstractNioSelector.run(AbstractNioSelector.java:337)
+	at org.jboss.netty.channel.socket.nio.AbstractNioWorker.run(AbstractNioWorker.java:89)
+	at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:178)
+	at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:108)
+	at org.jboss.netty.util.internal.DeadLockProofWorker$1.run(DeadLockProofWorker.java:42)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: dispatch.StatusCode: Unexpected response status: 404
+	at com.olvind.tso.importer.build.BinTrayPublisher$Handle$.$anonfun$createOrConflict$1(BinTrayPublisher.scala:38)
+	at com.olvind.tso.importer.build.BinTrayPublisher$Handle$.$anonfun$createOrConflict$1$adapted(BinTrayPublisher.scala:34)
+	at dispatch.FunctionHandler.onCompleted(handlers.scala:26)
+	at com.ning.http.client.AsyncCompletionHandler.onCompleted(AsyncCompletionHandler.java:55)
+	at com.olvind.tso.importer.build.Caching$WrappedHandler.onCompleted(BinTrayPublisher.scala:139)
+	at com.olvind.tso.importer.build.Caching$WrappedHandler.onCompleted(BinTrayPublisher.scala:139)
+	at com.olvind.tso.importer.build.Caching$Client$StoringHandler$1$.onCompleted(BinTrayPublisher.scala:114)
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.getContent(NettyResponseFuture.java:177)
+	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:212)
+	... 42 more
+
+[error] PhaseRunner.scala:86 Failure, [gaxios => java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 404] [id => gaxios, phase => publish] 

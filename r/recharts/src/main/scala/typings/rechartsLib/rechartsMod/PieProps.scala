@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
   var hide: js.UndefOr[scala.Boolean] = js.undefined
   var innerRadius: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var label: js.UndefOr[
-    rechartsLib.Anon_OffsetRadius | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_] | scala.Boolean
+    rechartsLib.Anon_OffsetRadius | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[PieLabelRenderProps] | scala.Boolean
   ] = js.undefined
   var labelLine: js.UndefOr[
     js.Object | (ContentRenderer[LineProps with js.Any]) | reactLib.reactMod.ReactNs.ReactElement[_] | scala.Boolean

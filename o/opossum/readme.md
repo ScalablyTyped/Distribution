@@ -1,5 +1,5 @@
 ```
-// Type definitions for opossum 1.9
+// Type definitions for opossum 1.10
 // Project: https://github.com/nodeshift/opossum
 // Definitions by: Quinn Langille <https://github.com/quinnlangille>
 //                 Willy Zhang <https://github.com/merufm>

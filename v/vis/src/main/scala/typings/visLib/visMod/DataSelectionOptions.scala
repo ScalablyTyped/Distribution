@@ -26,14 +26,14 @@ trait DataSelectionOptions[T] extends js.Object {
   /**
     * Order the items by a field name or custom sort function.
     */
-  var order: js.UndefOr[java.lang.String | js.Any] = js.undefined
+  var order: js.UndefOr[java.lang.String | (js.Function2[/* a */ T, /* b */ T, scala.Double])] = js.undefined
   /**
     * Determine the type of output of the get function.
     * Allowed values are 'Array' | 'Object'.
     * The default returnType is an Array.
     * The Object type will return a JSON object with the ID's as keys.
     */
-  var returnType: js.UndefOr[java.lang.String] = js.undefined
+  var returnType: js.UndefOr[visLib.visLibStrings.Array | visLib.visLibStrings.Object] = js.undefined
   /**
     * An object containing field names as key, and data types as value.
     * By default, the type of the properties of an item are left unchanged.

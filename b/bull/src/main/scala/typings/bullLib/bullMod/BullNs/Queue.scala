@@ -96,6 +96,11 @@ trait Queue[T] extends js.Object {
     * If the specified job cannot be located, the promise callback parameter will be set to null.
     */
   def getJob(jobId: JobId): js.Promise[Job[T] | scala.Null] = js.native
+  def getJobCountByTypes(types: java.lang.String): js.Promise[JobCounts] = js.native
+  /**
+    * Returns a promise that resolves with the job counts for the given queue of the given types.
+    */
+  def getJobCountByTypes(types: js.Array[java.lang.String]): js.Promise[JobCounts] = js.native
   /**
     * Returns a promise that resolves with the job counts for the given queue.
     */

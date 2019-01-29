@@ -9,6 +9,7 @@
 //                 Vincent Pizzo <https://github.com/vincentjames501>
 //                 Robert Bullen <https://github.com/robertbullen>
 //                 Yusuke Sato <https://github.com/sat0yu>
+//                 Dan Rumney <https://github.com/dancrumb>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

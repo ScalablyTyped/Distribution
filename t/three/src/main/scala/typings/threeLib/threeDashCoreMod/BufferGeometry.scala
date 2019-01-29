@@ -32,6 +32,7 @@ class BufferGeometry () extends EventDispatcher {
     */
   var offsets: js.Any = js.native
   var `type`: java.lang.String = js.native
+  var userData: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var uuid: java.lang.String = js.native
   def addAttribute(name: java.lang.String, attribute: BufferAttribute): BufferGeometry = js.native
   def addAttribute(name: java.lang.String, attribute: InterleavedBufferAttribute): BufferGeometry = js.native

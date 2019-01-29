@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 trait Subscription[TData, TVariables]
   extends reactLib.reactMod.Component[SubscriptionProps[TData, TVariables], SubscriptionState[TData], js.Any] {
   var client: js.Any = js.native
+  var completeSubscription: js.Any = js.native
   var endSubscription: js.Any = js.native
   var getInitialState: js.Any = js.native
   var initialize: js.Any = js.native

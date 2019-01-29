@@ -11,6 +11,7 @@ trait SubscriptionProps[TData, TVariables] extends js.Object {
   ] = js.undefined
   var client: js.UndefOr[apolloDashClientLib.apolloDashClientMod.default[js.Object]] = js.undefined
   var fetchPolicy: js.UndefOr[apolloDashClientLib.coreWatchQueryOptionsMod.FetchPolicy] = js.undefined
+  var onSubscriptionComplete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onSubscriptionData: js.UndefOr[js.Function1[/* options */ OnSubscriptionDataOptions[TData], _]] = js.undefined
   var shouldResubscribe: js.UndefOr[js.Any] = js.undefined
   var subscription: graphqlLib.languageAstMod.DocumentNode

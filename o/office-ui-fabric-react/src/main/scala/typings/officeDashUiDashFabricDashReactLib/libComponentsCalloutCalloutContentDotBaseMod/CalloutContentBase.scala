@@ -13,6 +13,7 @@ class CalloutContentBase protected ()
       ICalloutState
     ] {
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsCalloutCalloutDotTypesMod.ICalloutProps) = this()
+  var _blockResetHeight: js.Any = js.native
   var _bounds: js.Any = js.native
   var _calloutElement: js.Any = js.native
   var _classNames: js.Any = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ngreact"
-version := "v0.3.0-dt-20180721Z-b0c482"
+version := "v0.3.0-dt-20180721Z-15bd14"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "angular" % "1.6-dt-20181217Z-6e38d5",
   "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20190126Z-a37585",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20190128Z-cfd22c",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

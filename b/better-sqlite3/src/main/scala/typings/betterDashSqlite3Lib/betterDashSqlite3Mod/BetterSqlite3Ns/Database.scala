@@ -35,6 +35,6 @@ trait Database extends js.Object {
     options: betterDashSqlite3Lib.betterDashSqlite3Mod.DatabaseNs.PragmaOptions
   ): js.Any = js.native
   def prepare(source: java.lang.String): Statement = js.native
-  def transaction(fn: js.Function1[/* repeated */ js.Any, _]): Transaction = js.native
+  def transaction[F /* <: betterDashSqlite3Lib.VariableArgFunction */](fn: F): Transaction[F] = js.native
 }
 

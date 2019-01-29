@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "libxslt"
-version := "0.7-dt-20180608Z-68f0b4"
+version := "0.7-dt-20180608Z-8e3597"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "libxmljs" % "0.18-dt-20180910Z-eb19db",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
+  "org.scalablytyped" %%% "libxmljs" % "0.18-dt-20180910Z-0940b0",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190128Z-23a585",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

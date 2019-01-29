@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "obelisk_dot_js"
-version := "v1.1.0-dt-20181116Z-b69182"
+version := "1.2-dt-20190126Z-aa9d2d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object appMod {
-  type App[P] = reactLib.reactMod.Component[
+  type App[P, S] = reactLib.reactMod.Component[
     P with DefaultAppIProps with AppProps[nextDashServerLib.routerMod.DefaultQuery], 
-    js.Object, 
+    S, 
     js.Any
   ]
   type AppComponentContext = NextAppContext[nextDashServerLib.routerMod.DefaultQuery]

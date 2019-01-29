@@ -17,7 +17,7 @@ trait File extends js.Object {
   /**
     * the filename that the user reports for the file
     */
-  var originalFileName: java.lang.String
+  var originalFilename: java.lang.String
   /**
     * the absolute path of the uploaded file on disk
     */

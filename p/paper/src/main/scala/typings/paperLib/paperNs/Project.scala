@@ -151,7 +151,7 @@ class Project protected () extends js.Object {
     svg: java.lang.String,
     onLoad: js.Function2[/* item */ Item, /* svg */ java.lang.String, scala.Unit]
   ): Item = js.native
-  def importSVG(svg: java.lang.String, options: paperLib.Anon_ApplyMatrixExpandShapes): Item = js.native
+  def importSVG(svg: java.lang.String, options: paperLib.Anon_ApplyMatrix): Item = js.native
   /**
     * Converts the provided SVG content into Paper.js items and adds them to the active layer of this project.
     * Note that the project is not cleared first. You can call project.clear() to do so.
@@ -168,7 +168,7 @@ class Project protected () extends js.Object {
     svg: stdLib.SVGElement,
     onLoad: js.Function2[/* item */ Item, /* svg */ java.lang.String, scala.Unit]
   ): Item = js.native
-  def importSVG(svg: stdLib.SVGElement, options: paperLib.Anon_ApplyMatrixExpandShapes): Item = js.native
+  def importSVG(svg: stdLib.SVGElement, options: paperLib.Anon_ApplyMatrix): Item = js.native
   /**
     * Inserts the specified layer at the specified index in this project’s layers list.
     */

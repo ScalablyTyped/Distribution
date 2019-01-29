@@ -11,6 +11,7 @@ trait ExecFileOptions extends js.Object {
   var gid: js.UndefOr[scala.Double] = js.undefined
   var killSignal: js.UndefOr[java.lang.String] = js.undefined
   var maxBuffer: js.UndefOr[scala.Double] = js.undefined
+  var shell: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var timeout: js.UndefOr[scala.Double] = js.undefined
   var uid: js.UndefOr[scala.Double] = js.undefined
   var windowsHide: js.UndefOr[scala.Boolean] = js.undefined

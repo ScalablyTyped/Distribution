@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-loader"
-version := "15.6.2-e60fd2"
+version := "15.6.2-7089e2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,13 +11,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-232ecf",
   "org.scalablytyped" %%% "chalk" % "2.4.2-aa77e5",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-786ea5",
-  "org.scalablytyped" %%% "consolidate" % "0.0-unknown-dt-20180712Z-cb1991",
+  "org.scalablytyped" %%% "consolidate" % "0.0-unknown-dt-20180712Z-7dd599",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-433270",
   "org.scalablytyped" %%% "hash-sum" % "1.0-dt-20180822Z-63bb88",
   "org.scalablytyped" %%% "js-base64" % "2.3-dt-20180214Z-326cdb",
-  "org.scalablytyped" %%% "loader-utils" % "1.1-dt-20180306Z-8b3f24",
+  "org.scalablytyped" %%% "loader-utils" % "1.1-dt-20180306Z-86872d",
   "org.scalablytyped" %%% "lru-cache" % "4.1-dt-20180530Z-60874b",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-7438ae",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190128Z-23a585",
   "org.scalablytyped" %%% "postcss" % "5.2.18-c92611",
   "org.scalablytyped" %%% "prettier" % "1.15-dt-20181124Z-abea46",
   "org.scalablytyped" %%% "source-map" % "0.7.3-1d8315",
@@ -25,8 +25,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-394486",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-1d4d44",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-280313",
-  "org.scalablytyped" %%% "vue__component-compiler-utils" % "2.5.1-2cece3",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190116Z-2b3f1b")
+  "org.scalablytyped" %%% "vue__component-compiler-utils" % "2.5.1-72d3a7",
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190116Z-eb1462")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
