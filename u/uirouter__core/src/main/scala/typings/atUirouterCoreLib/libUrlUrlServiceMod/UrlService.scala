@@ -119,7 +119,7 @@ class UrlService protected ()
     * @return a function that de-registers the callback
     */
   @JSName("onChange")
-  def onChange_MUrlService(callback: js.Function): js.Function = js.native
+  def onChange_MUrlService(callback: stdLib.EventListener): js.Function = js.native
   /**
     * Gets the current URL parts
     *

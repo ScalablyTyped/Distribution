@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-event-listener"
-version := "0.4-dt-20180803Z-090f26"
+version := "0.4-dt-20190123Z-aa35cc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

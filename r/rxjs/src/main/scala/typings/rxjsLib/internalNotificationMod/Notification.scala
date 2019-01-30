@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs/internal/Notification", "Notification")
 @js.native
 class Notification[T] protected () extends js.Object {
-  def this(kind: java.lang.String) = this()
-  def this(kind: java.lang.String, value: T) = this()
-  def this(kind: java.lang.String, value: T, error: js.Any) = this()
+  def this(kind: NotificationKind) = this()
+  def this(kind: NotificationKind, value: T) = this()
+  def this(kind: NotificationKind, value: T, error: js.Any) = this()
   var error: js.UndefOr[js.Any] = js.native
   var hasValue: scala.Boolean = js.native
-  var kind: java.lang.String = js.native
+  var kind: NotificationKind = js.native
   var value: js.UndefOr[T] = js.native
   def accept(nextOrObserver: js.Function1[/* value */ T, scala.Unit]): js.Any = js.native
   def accept(

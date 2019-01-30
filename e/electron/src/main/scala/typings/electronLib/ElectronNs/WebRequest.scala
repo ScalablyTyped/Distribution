@@ -53,14 +53,27 @@ class WebRequest () extends EventEmitter {
     * connection is made to the server, but before any http data is sent. The callback
     * has to be called with an response object.
     */
-  def onBeforeSendHeaders(filter: OnBeforeSendHeadersFilter, listener: js.Function): scala.Unit = js.native
+  def onBeforeSendHeaders(
+    filter: OnBeforeSendHeadersFilter,
+    listener: js.Function2[
+      /* details */ OnBeforeSendHeadersDetails, 
+      /* callback */ js.Function1[/* response */ OnBeforeSendHeadersResponse, scala.Unit], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   /**
     * The listener will be called with listener(details, callback) before sending an
     * HTTP request, once the request headers are available. This may occur after a TCP
     * connection is made to the server, but before any http data is sent. The callback
     * has to be called with an response object.
     */
-  def onBeforeSendHeaders(listener: js.Function): scala.Unit = js.native
+  def onBeforeSendHeaders(
+    listener: js.Function2[
+      /* details */ OnBeforeSendHeadersDetails, 
+      /* callback */ js.Function1[/* response */ OnBeforeSendHeadersResponse, scala.Unit], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   /**
     * The listener will be called with listener(details) when a request is completed.
     */
@@ -85,13 +98,26 @@ class WebRequest () extends EventEmitter {
     * headers of a request have been received. The callback has to be called with an
     * response object.
     */
-  def onHeadersReceived(filter: OnHeadersReceivedFilter, listener: js.Function): scala.Unit = js.native
+  def onHeadersReceived(
+    filter: OnHeadersReceivedFilter,
+    listener: js.Function2[
+      /* details */ OnHeadersReceivedDetails, 
+      /* callback */ js.Function1[/* response */ OnHeadersReceivedResponse, scala.Unit], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   /**
     * The listener will be called with listener(details, callback) when HTTP response
     * headers of a request have been received. The callback has to be called with an
     * response object.
     */
-  def onHeadersReceived(listener: js.Function): scala.Unit = js.native
+  def onHeadersReceived(
+    listener: js.Function2[
+      /* details */ OnHeadersReceivedDetails, 
+      /* callback */ js.Function1[/* response */ OnHeadersReceivedResponse, scala.Unit], 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   /**
     * The listener will be called with listener(details) when first byte of the
     * response body is received. For HTTP requests, this means that the status line

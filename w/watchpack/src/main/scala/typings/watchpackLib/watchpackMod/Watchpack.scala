@@ -24,6 +24,7 @@ trait Watchpack
   def close(): scala.Unit = js.native
   def getTimes(): org.scalablytyped.runtime.StringDictionary[scala.Double] = js.native
   def pause(): scala.Unit = js.native
+  def watch(files: js.Array[java.lang.String], directories: js.Array[java.lang.String]): scala.Unit = js.native
   def watch(
     files: js.Array[java.lang.String],
     directories: js.Array[java.lang.String],

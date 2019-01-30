@@ -12,11 +12,15 @@ class JsonObjectProperty protected () extends IObject {
   def this(name: java.lang.String, isRequired: scala.Boolean) = this()
   var alternativeName: java.lang.String = js.native
   var baseClassName: java.lang.String = js.native
+  /**
+    * Depricated, please use getChoices
+    */
   val choices: js.Array[_] = js.native
   var className: java.lang.String = js.native
   var classNamePart: java.lang.String = js.native
   var defaultValue: js.Any = js.native
   var defaultValueValue: js.Any = js.native
+  val hasChoices: scala.Boolean = js.native
   val hasToUseGetValue: java.lang.String | (js.Function1[/* obj */ js.Any, _]) = js.native
   val hasToUseSetValue: java.lang.String | (js.Function3[/* obj */ js.Any, /* value */ js.Any, /* jsonConv */ JsonObject, _]) = js.native
   var isArray: scala.Boolean = js.native

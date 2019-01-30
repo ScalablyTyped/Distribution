@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object defaultNs extends js.Object {
   def getConfig(): mermaidLib.mermaidAPIMod.mermaidAPINs.Config = js.native
-  def initalize(options: mermaidLib.mermaidAPIMod.mermaidAPINs.Config): scala.Unit = js.native
+  def initialize(options: mermaidLib.mermaidAPIMod.mermaidAPINs.Config): scala.Unit = js.native
   def parse(text: java.lang.String): js.Any = js.native
   /**
     * ##render

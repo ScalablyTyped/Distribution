@@ -17,5 +17,9 @@ object operatorShareReplayMod extends js.Object {
     windowTime: scala.Double,
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
   ): rxjsLib.rxjsMod.Observable[T] = js.native
+  def shareReplay[T](
+    `this`: rxjsLib.rxjsMod.Observable[T],
+    config: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ShareReplayConfig */ js.Any
+  ): rxjsLib.rxjsMod.Observable[T] = js.native
 }
 

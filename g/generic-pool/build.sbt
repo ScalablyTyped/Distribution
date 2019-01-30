@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "generic-pool"
-version := "3.1-dt-20181221Z-6e9167"
+version := "3.1-dt-20190122Z-d6b0ad"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

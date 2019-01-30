@@ -6,9 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Cwd extends js.Object {
+  /**
+    * Specify the working directory the folder is relative to
+    * Default is process.cwd()
+    */
   var cwd: js.UndefOr[java.lang.String] = js.undefined
-  var debounceDelay: js.UndefOr[scala.Double] = js.undefined
-  var interval: js.UndefOr[scala.Double] = js.undefined
-  var maxListeners: js.UndefOr[js.Function0[scala.Double]] = js.undefined
+  /**
+    * Specify the mode the directory should be created with
+    * Default is the process mode
+    */
+  var dirMode: js.UndefOr[scala.Double] = js.undefined
+  /** Specify the mode the directory should be created with. Default is the process mode */
+  var mode: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 

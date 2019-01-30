@@ -10,6 +10,7 @@ trait NavProps
   // Optional
   var activeHref: js.UndefOr[java.lang.String] = js.undefined
   var activeKey: js.UndefOr[js.Any] = js.undefined
+  var bsClass: js.UndefOr[java.lang.String] = js.undefined
   var bsSize: js.UndefOr[reactDashBootstrapLib.reactDashBootstrapMod.Sizes] = js.undefined
   var bsStyle: js.UndefOr[java.lang.String] = js.undefined
   var collapsible: js.UndefOr[scala.Boolean] = js.undefined

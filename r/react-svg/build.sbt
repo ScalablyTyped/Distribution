@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-svg"
-version := "7.2.5-0a8035"
+version := "7.2.6-0a8035"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

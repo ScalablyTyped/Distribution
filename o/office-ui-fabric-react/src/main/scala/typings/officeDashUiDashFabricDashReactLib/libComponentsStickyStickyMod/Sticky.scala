@@ -34,7 +34,7 @@ class Sticky protected ()
   val stickyContentTop: reactLib.HTMLDivElement | scala.Null = js.native
   /* private */ def _getBackground(): js.Any = js.native
   /* private */ def _getContentStyles(isSticky: js.Any): js.Any = js.native
-  /* private */ def _getNonStickyPlaceholderHeight(): js.Any = js.native
+  /* private */ def _getNonStickyPlaceholderHeightAndWidth(): js.Any = js.native
   /* private */ def _getStickyPlaceholderHeight(isSticky: js.Any): js.Any = js.native
   /* private */ def _setDistanceFromTop(distance: js.Any): js.Any = js.native
   def addSticky(stickyContent: reactLib.HTMLDivElement): scala.Unit = js.native

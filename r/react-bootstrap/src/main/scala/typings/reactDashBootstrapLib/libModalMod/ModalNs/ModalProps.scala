@@ -14,6 +14,7 @@ trait ModalProps
   var backdropClassName: js.UndefOr[java.lang.String] = js.undefined
   var backdropStyle: js.UndefOr[js.Any] = js.undefined
   var backdropTransitionTimeout: js.UndefOr[scala.Double] = js.undefined
+  var bsClass: js.UndefOr[java.lang.String] = js.undefined
   var bsSize: js.UndefOr[reactDashBootstrapLib.reactDashBootstrapMod.Sizes] = js.undefined
   var container: js.UndefOr[js.Any] = js.undefined
    // TODO: Add more specific type

@@ -291,6 +291,7 @@ object winstonNs extends js.Object {
   }
   
   trait LoggerOptions extends js.Object {
+    var defaultMeta: js.UndefOr[js.Any] = js.undefined
     var exceptionHandlers: js.UndefOr[js.Any] = js.undefined
     var exitOnError: js.UndefOr[js.Function | scala.Boolean] = js.undefined
     var format: js.UndefOr[logformLib.logformMod.Format] = js.undefined

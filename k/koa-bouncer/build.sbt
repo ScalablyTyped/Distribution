@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-bouncer"
-version := "6.0.4-dt-20181119Z-a5b9ba"
+version := "6.0.4-dt-20190129Z-29bbfc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -10,9 +10,6 @@ trait Rule extends js.Object {
     * You can have a token type that both matches tokens and contains error values.
     */
   var error: js.UndefOr[mooLib.mooLibNumbers.`true`] = js.undefined
-  var keywords: js.UndefOr[
-    org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
-  ] = js.undefined
   /**
     * Moo tracks detailed information about the input for you.
     * It will track line numbers, as long as you apply the `lineBreaks: true`
@@ -32,6 +29,11 @@ trait Rule extends js.Object {
     * Moves the lexer to a new state, and pushes the old state onto the stack.
     */
   var push: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Used for mapping one set of types to another.
+    * See https://github.com/no-context/moo#keywords for an example
+    */
+  var `type`: js.UndefOr[TypeMapper] = js.undefined
   /**
     * Moo doesn't allow capturing groups, but you can supply a transform function, value(),
     * which will be called on the value before storing it in the Token object.

@@ -10,6 +10,7 @@ package object internalTypesMod {
   type MonoTypeOperatorFunction[T] = OperatorFunction[T, T]
   type ObservableInput[T] = SubscribableOrPromise[T] | stdLib.ArrayLike[T] | stdLib.Iterable[T]
   type ObservableLike[T] = InteropObservable[T]
+  type ObservedValueOf[O] = js.Any
   type OperatorFunction[T, R] = UnaryFunction[
     rxjsLib.internalObservableMod.Observable[T], 
     rxjsLib.internalObservableMod.Observable[R]

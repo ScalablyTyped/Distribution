@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "diagnostic-channel-publishers"
-version := "0.2.1-60fa46"
+version := "0.2.2-60fa46"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

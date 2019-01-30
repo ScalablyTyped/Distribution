@@ -164,6 +164,7 @@ class StateService protected () extends js.Object {
     *
     * @returns {string} compiled state url
     */
+  def href(stateOrName: atUirouterCoreLib.libStateInterfaceMod.StateOrName): java.lang.String = js.native
   def href(
     stateOrName: atUirouterCoreLib.libStateInterfaceMod.StateOrName,
     params: atUirouterCoreLib.libParamsInterfaceMod.RawParams

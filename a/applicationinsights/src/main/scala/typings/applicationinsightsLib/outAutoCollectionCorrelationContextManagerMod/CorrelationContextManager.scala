@@ -12,8 +12,17 @@ class CorrelationContextManager () extends js.Object
 @JSImport("applicationinsights/out/AutoCollection/CorrelationContextManager", "CorrelationContextManager")
 @js.native
 object CorrelationContextManager extends js.Object {
+  var CONTEXT_NAME: js.Any = js.native
+  var cls: js.Any = js.native
   var enabled: js.Any = js.native
+  var forceClsHooked: js.Any = js.native
   var hasEverEnabled: js.Any = js.native
+  var session: js.Any = js.native
+  /**
+    * A TypeError is triggered by cls-hooked for node [8.0, 8.2)
+    * @internal Used in tests only
+    */
+  def canUseClsHooked(): scala.Boolean = js.native
   /**
     *  Disables the CorrelationContextManager.
     */
@@ -22,6 +31,7 @@ object CorrelationContextManager extends js.Object {
     *  Enables the CorrelationContextManager.
     */
   def enable(): scala.Unit = js.native
+  def enable(forceClsHooked: scala.Boolean): scala.Unit = js.native
   /**
     *  A helper to generate objects conforming to the CorrelationContext interface
     */
@@ -41,11 +51,13 @@ object CorrelationContextManager extends js.Object {
     */
   def getCurrentContext(): applicationinsightsLib.outAutoCollectionCorrelationContextManagerMod.CorrelationContext = js.native
   /**
-    *  Reports if the CorrelationContextManager is able to run in this environment
+    *  Reports if CorrelationContextManager is able to run in this environment
     */
   def isNodeVersionCompatible(): scala.Boolean = js.native
-  /* private */ def patchError(): js.Any = js.native
-  /* private */ def patchTimers(methodNames: js.Any): js.Any = js.native
+  /**
+    * Reset the namespace
+    */
+  def reset(): scala.Unit = js.native
   /**
     *  Runs a function inside a given Context.
     *  All logical children of the execution path that entered this Context
@@ -54,7 +66,12 @@ object CorrelationContextManager extends js.Object {
   def runWithContext(
     context: applicationinsightsLib.outAutoCollectionCorrelationContextManagerMod.CorrelationContext,
     fn: js.Function0[_]
-  ): scala.Unit = js.native
+  ): js.Any = js.native
+  /**
+    * We only want to use cls-hooked when it uses async_hooks api (8.2+), else
+    * use async-listener (plain -cls)
+    */
+  def shouldUseClsHooked(): scala.Boolean = js.native
   /**
     *  Patches a callback to restore the correct Context when getCurrentContext
     *  is run within it. This is necessary if automatic correlation fails to work
@@ -63,5 +80,9 @@ object CorrelationContextManager extends js.Object {
     *  The supplied callback will be given the same context that was present for
     *  the call to wrapCallback.  */
   def wrapCallback[T /* <: js.Function */](fn: T): T = js.native
+  /**
+    * Wrapper for cls-hooked bindEmitter method
+    */
+  def wrapEmitter(emitter: nodeLib.eventsMod.EventEmitter): scala.Unit = js.native
 }
 

@@ -26,6 +26,7 @@ trait Options extends js.Object {
   var soap12: js.UndefOr[scala.Boolean] = js.undefined
   var statusCode: js.UndefOr[js.Object] = js.undefined
   var success: js.UndefOr[js.Function1[/* SOAPResponse */ SOAPResponse, scala.Unit]] = js.undefined
+  var timeout: js.UndefOr[scala.Double] = js.undefined
   var url: js.UndefOr[java.lang.String] = js.undefined
   var wss: js.UndefOr[js.Object] = js.undefined
 }

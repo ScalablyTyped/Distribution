@@ -26,7 +26,7 @@ class Subscription ()
   override val closed: scala.Boolean = js.native
   /**
     * Adds a tear down to be called during the unsubscribe() of this
-    * Subscription.
+    * Subscription. Can also be used to add a child subscription.
     *
     * If the tear down being added is a subscription that is already
     * unsubscribed, is the same reference `add` is being called on, or is
@@ -34,6 +34,8 @@ class Subscription ()
     *
     * If this subscription is already in an `closed` state, the passed
     * tear down logic will be executed immediately.
+    *
+    * When a parent subscription is unsubscribed, any child subscriptions that were added to it are also unsubscribed.
     *
     * @param {TeardownLogic} teardown The additional logic to execute on
     * teardown.

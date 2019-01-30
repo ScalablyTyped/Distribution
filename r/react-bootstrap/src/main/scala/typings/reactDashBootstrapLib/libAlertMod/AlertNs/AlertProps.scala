@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AlertProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libAlertMod.Alert] {
+  var bsClass: js.UndefOr[java.lang.String] = js.undefined
   var bsSize: js.UndefOr[reactDashBootstrapLib.reactDashBootstrapMod.Sizes] = js.undefined
   var bsStyle: js.UndefOr[java.lang.String] = js.undefined
   var closeLabel: js.UndefOr[java.lang.String] = js.undefined

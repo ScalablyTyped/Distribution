@@ -40,6 +40,7 @@ object jsPlumbNs extends js.Object {
   trait ConnectParams extends js.Object {
     var anchor: js.UndefOr[AnchorSpec] = js.undefined
     var anchors: js.UndefOr[js.Tuple2[AnchorSpec, AnchorSpec]] = js.undefined
+    var connector: js.UndefOr[ConnectorSpec] = js.undefined
     var deleteEndpointsOnDetach: js.UndefOr[scala.Boolean] = js.undefined
     var detachable: js.UndefOr[scala.Boolean] = js.undefined
     var endpoint: js.UndefOr[EndpointSpec] = js.undefined
@@ -309,6 +310,8 @@ object jsPlumbNs extends js.Object {
     def getContainer(): stdLib.Element = js.native
     def getDefaultScope(): java.lang.String = js.native
     def getEndpoint(uuid: java.lang.String): Endpoint = js.native
+    def getEndpoints(element: java.lang.String): js.Array[Endpoint] = js.native
+    def getEndpoints(element: stdLib.Element): js.Array[Endpoint] = js.native
     def getHoverPaintStyle(): stdLib.Selection = js.native
     def getHoverPaintStyle(params: js.Object): stdLib.Selection = js.native
     def getHoverPaintStyle(params: js.Object, scope: java.lang.String): stdLib.Selection = js.native
@@ -337,10 +340,10 @@ object jsPlumbNs extends js.Object {
     def getSelector(context: Selector, spec: java.lang.String): scala.Unit = js.native
     def getSelector(context: stdLib.Element): scala.Unit = js.native
     def getSelector(context: stdLib.Element, spec: java.lang.String): scala.Unit = js.native
-    def getSourceScope(Element: java.lang.String): java.lang.String = js.native
-    def getSourceScope(Element: stdLib.Element): java.lang.String = js.native
-    def getTargetScope(Element: java.lang.String): java.lang.String = js.native
-    def getTargetScope(Element: stdLib.Element): java.lang.String = js.native
+    def getSourceScope(element: java.lang.String): java.lang.String = js.native
+    def getSourceScope(element: stdLib.Element): java.lang.String = js.native
+    def getTargetScope(element: java.lang.String): java.lang.String = js.native
+    def getTargetScope(element: stdLib.Element): java.lang.String = js.native
     def getType(id: java.lang.String, typeDescriptor: java.lang.String): js.Object = js.native
     def hide(el: Selector | java.lang.String): jsPlumbInstance = js.native
     def hide(el: Selector | java.lang.String, changeEndpoints: scala.Boolean): jsPlumbInstance = js.native

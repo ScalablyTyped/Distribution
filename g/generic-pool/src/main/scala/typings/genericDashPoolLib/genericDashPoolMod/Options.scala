@@ -14,7 +14,7 @@ trait Options extends js.Object {
   var max: js.UndefOr[scala.Double] = js.undefined
   var maxWaitingClients: js.UndefOr[scala.Double] = js.undefined
   var min: js.UndefOr[scala.Double] = js.undefined
-  var numTestsPerRun: js.UndefOr[scala.Double] = js.undefined
+  var numTestsPerEvictionRun: js.UndefOr[scala.Double] = js.undefined
   var priorityRange: js.UndefOr[scala.Double] = js.undefined
   var softIdleTimeoutMillis: js.UndefOr[scala.Double] = js.undefined
   var testOnBorrow: js.UndefOr[scala.Boolean] = js.undefined

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storybook__react"
-version := "4.0-dt-20181106Z-af5c95"
+version := "4.0-dt-20181106Z-fbdfd4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
   "org.scalablytyped" %%% "react" % "16.7-dt-20190128Z-cfd22c",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
-  "org.scalablytyped" %%% "webpack-env" % "1.13-dt-20180412Z-2eb7f6")
+  "org.scalablytyped" %%% "webpack-env" % "1.13-dt-20190129Z-9bed26")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

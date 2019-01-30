@@ -177,6 +177,18 @@ object ^ extends js.Object {
   def Fabric(props: officeDashUiDashFabricDashReactLib.libComponentsFabricFabricDotTypesMod.IFabricProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def Facepile(props: officeDashUiDashFabricDashReactLib.libComponentsFacepileFacepileDotTypesMod.IFacepileProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def Grid(props: officeDashUiDashFabricDashReactLib.libUtilitiesGridGridDotTypesMod.IGridProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def GroupFooter(
+    props: officeDashUiDashFabricDashReactLib.libComponentsGroupedListGroupFooterDotTypesMod.IGroupFooterProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def GroupHeader(
+    props: officeDashUiDashFabricDashReactLib.libComponentsGroupedListGroupHeaderDotTypesMod.IGroupHeaderProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def GroupShowAll(
+    props: officeDashUiDashFabricDashReactLib.libComponentsGroupedListGroupShowAllDotTypesMod.IGroupShowAllProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def GroupSpacer(
+    props: officeDashUiDashFabricDashReactLib.libComponentsGroupedListGroupSpacerDotTypesMod.IGroupSpacerProps
+  ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def GroupedList(
     props: officeDashUiDashFabricDashReactLib.libComponentsGroupedListGroupedListDotTypesMod.IGroupedListProps
   ): reactLib.reactMod.Global.JSXNs.Element = js.native

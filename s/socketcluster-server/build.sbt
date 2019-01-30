@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "socketcluster-server"
-version := "14.2-dt-20190114Z-fe8eb5"
+version := "14.2-dt-20190129Z-9d2a47"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

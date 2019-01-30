@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vinyl-fs"
-version := "2.4-dt-20181121Z-6b7c81"
+version := "2.4-dt-20190128Z-2a7f5d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

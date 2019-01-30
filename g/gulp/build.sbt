@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp"
-version := "4.0-dt-20180214Z-8b906e"
+version := "4.0-dt-20180214Z-078d32"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "undertaker" % "1.2-dt-20180217Z-d0d6d1",
   "org.scalablytyped" %%% "undertaker-registry" % "1.0-dt-20180214Z-8cb637",
   "org.scalablytyped" %%% "vinyl" % "2.0-dt-20181121Z-aecc29",
-  "org.scalablytyped" %%% "vinyl-fs" % "2.4-dt-20181121Z-6b7c81")
+  "org.scalablytyped" %%% "vinyl-fs" % "2.4-dt-20190128Z-2a7f5d")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

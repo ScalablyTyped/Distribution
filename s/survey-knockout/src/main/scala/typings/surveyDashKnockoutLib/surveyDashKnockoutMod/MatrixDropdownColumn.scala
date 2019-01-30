@@ -17,6 +17,7 @@ class MatrixDropdownColumn protected ()
   var colOwner: IMatrixColumnOwner = js.native
   var enableIf: java.lang.String = js.native
   val fullTitle: java.lang.String = js.native
+  val hasCondition: scala.Boolean = js.native
   var hasOther: scala.Boolean = js.native
   val index: scala.Double = js.native
   var isRequired: scala.Boolean = js.native

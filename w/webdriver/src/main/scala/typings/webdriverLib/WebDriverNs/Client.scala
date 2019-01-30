@@ -43,6 +43,7 @@ trait Client[T] extends js.Object {
   def elementClick(): js.UndefOr[scala.Nothing] = js.native
   def elementEquals(otherElementId: java.lang.String): scala.Boolean = js.native
   def elementSendKeys(text: java.lang.String): js.UndefOr[scala.Nothing] = js.native
+  def elementSendKeys(text: java.lang.String, value: js.Array[java.lang.String]): js.UndefOr[scala.Nothing] = js.native
   def elementSendKeys(value: js.Array[java.lang.String]): js.UndefOr[scala.Nothing] = js.native
   def elementSubmit(): js.UndefOr[scala.Nothing] = js.native
   def endCoverage(intent: java.lang.String, path: java.lang.String): js.UndefOr[scala.Nothing] = js.native

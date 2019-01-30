@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val Box: rebassLib.BoxClass = js.native
-  val Button: rebassLib.ButtonClass = js.native
-  val Card: rebassLib.CardClass = js.native
-  val Flex: rebassLib.FlexClass = js.native
-  val Heading: rebassLib.HeadingClass = js.native
-  val Image: rebassLib.ImageClass = js.native
-  val Link: rebassLib.LinkClass = js.native
-  val Text: rebassLib.TextClass = js.native
+  val Button: reactLib.reactMod.ReactNs.FunctionComponent[rebassLib.rebassMod.ButtonProps] = js.native
+  val Card: reactLib.reactMod.ReactNs.FunctionComponent[rebassLib.rebassMod.CardProps] = js.native
+  val Flex: reactLib.reactMod.ReactNs.FunctionComponent[rebassLib.rebassMod.FlexProps] = js.native
+  val Heading: reactLib.reactMod.ReactNs.FunctionComponent[rebassLib.rebassMod.HeadingProps] = js.native
+  val Image: reactLib.reactMod.ReactNs.FunctionComponent[rebassLib.rebassMod.ImageProps] = js.native
+  val Link: reactLib.reactMod.ReactNs.FunctionComponent[rebassLib.rebassMod.LinkProps] = js.native
+  val Text: reactLib.reactMod.ReactNs.FunctionComponent[rebassLib.rebassMod.TextProps] = js.native
 }
 

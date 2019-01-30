@@ -34,7 +34,9 @@ class Subject[T] ()
 @JSImport("rxjs/internal/Subject", "Subject")
 @js.native
 object Subject extends js.Object {
-  /**@nocollapse */
+  /**@nocollapse
+    * @deprecated use new Subject() instead
+    */
   var create: js.Function = js.native
 }
 

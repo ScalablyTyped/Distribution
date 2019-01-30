@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IGroupDividerProps extends js.Object {
+  /** Custom className */
+  var className: js.UndefOr[java.lang.String] = js.undefined
   /** Boolean value to indicate if the component should render in compact mode. Set to false by default */
   var compact: js.UndefOr[scala.Boolean] = js.undefined
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[js.Object]] = js.undefined
@@ -36,8 +38,12 @@ trait IGroupDividerProps extends js.Object {
   var loadingText: js.UndefOr[java.lang.String] = js.undefined
   /** Callback for when the group header is clicked. */
   var onGroupHeaderClick: js.UndefOr[js.Function1[/* group */ IGroup, scala.Unit]] = js.undefined
-  /** Override which allows the caller to provider a custom title. */
-  var onRenderTitle: js.UndefOr[atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[IGroupDividerProps]] = js.undefined
+  /** Override which allows the caller to provider a custom renderer for the GroupHeader title. */
+  var onRenderTitle: js.UndefOr[
+    atUifabricUtilitiesLib.libIRenderFunctionMod.IRenderFunction[
+      officeDashUiDashFabricDashReactLib.libComponentsGroupedListGroupHeaderDotTypesMod.IGroupHeaderProps
+    ]
+  ] = js.undefined
   /** Callback for when the group is expanded or collapsed. */
   var onToggleCollapse: js.UndefOr[js.Function1[/* group */ IGroup, scala.Unit]] = js.undefined
   /** Callback for when the group is selected. */
@@ -52,6 +58,8 @@ trait IGroupDividerProps extends js.Object {
   ] = js.undefined
   /** Text to display for the group "Show All" link. */
   var showAllLinkText: js.UndefOr[java.lang.String] = js.undefined
+  /** Theme provided by the Higher Order Component */
+  var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /** A reference to the viewport in which the header is rendered. */
   var viewport: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libUtilitiesDecoratorsWithViewportMod.IViewport

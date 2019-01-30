@@ -3,5 +3,6 @@
 // Project: https://github.com/wearefractal/vinyl-fs
 // Definitions by: vvakame <https://github.com/vvakame>
 //                 remisery <https://github.com/remisery>
+//                 TeamworkGuy2 <https://github.com/TeamworkGuy2>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

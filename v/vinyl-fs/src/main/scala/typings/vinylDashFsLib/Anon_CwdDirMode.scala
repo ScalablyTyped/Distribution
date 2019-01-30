@@ -16,7 +16,5 @@ trait Anon_CwdDirMode extends js.Object {
     * Default is the process mode
     */
   var dirMode: js.UndefOr[scala.Double] = js.undefined
-  /** Specify the mode the directory should be created with. Default is the process mode */
-  var mode: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 

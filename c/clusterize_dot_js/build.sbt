@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "clusterize_dot_js"
-version := "0.17-dt-20180214Z-1d7b39"
+version := "0.17-dt-20190123Z-082b8d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

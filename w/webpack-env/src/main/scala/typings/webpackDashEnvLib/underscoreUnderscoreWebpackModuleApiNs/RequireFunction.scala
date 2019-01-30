@@ -22,6 +22,41 @@ trait RequireFunction extends js.Object {
   def context(path: java.lang.String): RequireContext = js.native
   def context(path: java.lang.String, deep: scala.Boolean): RequireContext = js.native
   def context(path: java.lang.String, deep: scala.Boolean, filter: stdLib.RegExp): RequireContext = js.native
+  @JSName("context")
+  def context_eager(
+    path: java.lang.String,
+    deep: scala.Boolean,
+    filter: stdLib.RegExp,
+    mode: webpackDashEnvLib.webpackDashEnvLibStrings.eager
+  ): RequireContext = js.native
+  @JSName("context")
+  def context_lazy(
+    path: java.lang.String,
+    deep: scala.Boolean,
+    filter: stdLib.RegExp,
+    mode: webpackDashEnvLib.webpackDashEnvLibStrings.`lazy`
+  ): RequireContext = js.native
+  @JSName("context")
+  def `context_lazy-once`(
+    path: java.lang.String,
+    deep: scala.Boolean,
+    filter: stdLib.RegExp,
+    mode: webpackDashEnvLib.webpackDashEnvLibStrings.`lazy-once`
+  ): RequireContext = js.native
+  @JSName("context")
+  def context_sync(
+    path: java.lang.String,
+    deep: scala.Boolean,
+    filter: stdLib.RegExp,
+    mode: webpackDashEnvLib.webpackDashEnvLibStrings.sync
+  ): RequireContext = js.native
+  @JSName("context")
+  def context_weak(
+    path: java.lang.String,
+    deep: scala.Boolean,
+    filter: stdLib.RegExp,
+    mode: webpackDashEnvLib.webpackDashEnvLibStrings.weak
+  ): RequireContext = js.native
   /**
     * Download additional dependencies on demand. The paths array lists modules that should be available. When they are, callback is called. If the callback is a function expression, dependencies in that source part are extracted and also loaded on demand. A single request is fired to the server, except if all modules are already available.
     *

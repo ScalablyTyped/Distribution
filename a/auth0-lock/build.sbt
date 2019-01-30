@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "auth0-lock"
-version := "11.4-dt-20190114Z-0c5428"
+version := "11.4-dt-20190114Z-ab2324"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "auth0-js" % "8.11-dt-20190128Z-940e54",
+  "org.scalablytyped" %%% "auth0-js" % "8.11-dt-20190129Z-ad8b0c",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -138,6 +138,7 @@ object Observable extends js.Object {
     * @param {Function} subscribe? the subscriber function to be passed to the Observable constructor
     * @return {Observable} a new cold observable
     * @nocollapse
+    * @deprecated use new Observable() instead
     */
   var create: js.Function = js.native
   /**

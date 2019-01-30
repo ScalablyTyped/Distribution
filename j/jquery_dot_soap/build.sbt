@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_soap"
-version := "1.6.7-dt-20180214Z-d50108"
+version := "1.7-dt-20190129Z-b50b6e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

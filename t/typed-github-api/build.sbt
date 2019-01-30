@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typed-github-api"
-version := "1.2.6-bde8e0"
+version := "1.2.6-f2cc64"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -28,7 +28,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
   "org.scalablytyped" %%% "triple-beam" % "1.3-dt-20180828Z-ae8e92",
   "org.scalablytyped" %%% "typescript-event-handler" % "1.0.0-4484e1",
-  "org.scalablytyped" %%% "winston" % "3.2.0-5c71b9",
+  "org.scalablytyped" %%% "winston" % "3.2.1-8988f7",
   "org.scalablytyped" %%% "winston-transport" % "4.3.0-37736f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

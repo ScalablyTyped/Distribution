@@ -88,7 +88,7 @@ trait Gulp
     * Functions exactly like gulp.dest, but will create symlinks instead of copying a directory.
     * @param folder A folder path or a function that receives in a file and returns a folder path.
     */
-  def symlink(folder: java.lang.String, opts: vinylDashFsLib.Anon_CwdDirMode): nodeLib.NodeJSNs.ReadWriteStream = js.native
+  def symlink(folder: java.lang.String, opts: vinylDashFsLib.Anon_Cwd): nodeLib.NodeJSNs.ReadWriteStream = js.native
   /**
     * Functions exactly like gulp.dest, but will create symlinks instead of copying a directory.
     * @param folder A folder path or a function that receives in a file and returns a folder path.
@@ -100,7 +100,7 @@ trait Gulp
     */
   def symlink(
     getFolderPath: js.Function1[/* File */ vinylLib.vinylMod.File, java.lang.String],
-    opts: vinylDashFsLib.Anon_CwdDirModeNumber
+    opts: vinylDashFsLib.Anon_CwdDirMode
   ): nodeLib.NodeJSNs.ReadWriteStream = js.native
   /**
     * Takes a path string, an array of path strings, a glob string or an array of glob strings as globs to watch on the filesystem.

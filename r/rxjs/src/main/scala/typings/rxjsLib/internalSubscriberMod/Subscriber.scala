@@ -24,7 +24,6 @@ class Subscriber[T] ()
   def this(destinationOrNext: rxjsLib.internalTypesMod.PartialObserver[_], error: js.Function1[/* e */ js.UndefOr[js.Any], scala.Unit]) = this()
   def this(destinationOrNext: js.Function1[/* value */ T, scala.Unit], error: js.Function1[/* e */ js.UndefOr[js.Any], scala.Unit], complete: js.Function0[scala.Unit]) = this()
   def this(destinationOrNext: rxjsLib.internalTypesMod.PartialObserver[_], error: js.Function1[/* e */ js.UndefOr[js.Any], scala.Unit], complete: js.Function0[scala.Unit]) = this()
-  var _parentSubscription: js.Any = js.native
   var destination: rxjsLib.internalTypesMod.PartialObserver[_] | Subscriber[_] = js.native
   var isStopped: scala.Boolean = js.native
   /** @internal */ var syncErrorThrowable: scala.Boolean = js.native

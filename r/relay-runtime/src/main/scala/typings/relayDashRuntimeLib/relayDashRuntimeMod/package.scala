@@ -40,6 +40,7 @@ package object relayDashRuntimeMod {
     /* connectionArgs */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     relayDashRuntimeLib.relayDashRuntimeLibStrings.APPEND | relayDashRuntimeLib.relayDashRuntimeLibStrings.IGNORE | relayDashRuntimeLib.relayDashRuntimeLibStrings.PREPEND | relayDashRuntimeLib.relayDashRuntimeLibStrings.REFETCH | relayDashRuntimeLib.relayDashRuntimeLibStrings.REMOVE
   ]
+  type ReaderFragment = js.Object
   type ReadyStateChangeCallback = js.Function1[/* readyState */ ReadyState, scala.Unit]
   type RelayConcreteNode = js.Any
   type RelayContainer = js.Any

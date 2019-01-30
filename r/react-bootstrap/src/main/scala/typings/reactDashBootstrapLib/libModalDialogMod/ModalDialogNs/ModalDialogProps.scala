@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait ModalDialogProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libModalDialogMod.ModalDialog] {
+  var bsClass: js.UndefOr[java.lang.String] = js.undefined
+  var bsSize: js.UndefOr[reactDashBootstrapLib.reactDashBootstrapMod.Sizes] = js.undefined
   var onEnter: js.UndefOr[js.Function] = js.undefined
   var onEntered: js.UndefOr[js.Function] = js.undefined
   var onEntering: js.UndefOr[js.Function] = js.undefined

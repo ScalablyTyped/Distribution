@@ -1,7 +1,7 @@
 ```
-// Type definitions for Rebass 0.3.8
+// Type definitions for Rebass 3.0
 // Project: https://github.com/jxnblk/rebass
-// Definitions by: rhysd <https://rhysd.github.io>
+// Definitions by: rhysd <https://github.com/rhysd>
 //                 ryee-dev <https://github.com/ryee-dev>
 //                 jamesmckenzie <https://github.com/jamesmckenzie>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stripe"
-version := "6.19-dt-20190122Z-ed3299"
+version := "6.19-dt-20190122Z-fd958f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -16,6 +16,10 @@ object ^ extends js.Object {
       reactLib.reactMod.ReactNs.ReactElement[atStorybookAddonDashInfoLib.atStorybookAddonDashInfoMod.WrapStoryProps]
     ]
   ] = js.native
+  def withInfo(
+    story: atStorybookReactLib.atStorybookReactMod.RenderFunction,
+    context: atStorybookAddonDashInfoLib.Anon_Kind
+  ): stdLib.ReturnType[atStorybookReactLib.atStorybookReactMod.StoryDecorator] = js.native
   def withInfo(textOrOptions: atStorybookAddonDashInfoLib.atStorybookAddonDashInfoMod.Options): js.Function1[
     /* storyFn */ atStorybookReactLib.atStorybookReactMod.RenderFunction, 
     js.Function1[

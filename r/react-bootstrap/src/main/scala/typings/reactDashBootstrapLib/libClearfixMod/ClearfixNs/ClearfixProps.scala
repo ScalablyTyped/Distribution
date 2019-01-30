@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ClearfixProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libClearfixMod.Clearfix] {
+  var bsClass: js.UndefOr[java.lang.String] = js.undefined
   var componentClass: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var visibleLgBlock: js.UndefOr[scala.Boolean] = js.undefined
   var visibleMdBlock: js.UndefOr[scala.Boolean] = js.undefined

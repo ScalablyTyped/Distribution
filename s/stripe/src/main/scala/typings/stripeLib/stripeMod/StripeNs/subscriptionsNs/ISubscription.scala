@@ -65,9 +65,10 @@ trait ISubscription
   @JSName("object")
   var object_ISubscription: stripeLib.stripeLibStrings.subscription
   /**
-    * Hash describing the plan the customer is subscribed to
+    * Hash describing the plan the customer is subscribed to.  Only set if the subscription
+    * contains a single plan.
     */
-  var plan: stripeLib.stripeMod.StripeNs.plansNs.IPlan
+  var plan: js.UndefOr[stripeLib.stripeMod.StripeNs.plansNs.IPlan | scala.Null] = js.undefined
   /**
     * The number of subscriptions for the associated plan
     */

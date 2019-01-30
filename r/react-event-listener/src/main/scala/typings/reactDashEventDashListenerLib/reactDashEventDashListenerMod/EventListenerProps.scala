@@ -177,6 +177,8 @@ trait EventListenerProps extends js.Object {
   var onSeekingCapture: js.UndefOr[js.Function1[/* ev */ reactLib.Event, _]] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* ev */ reactLib.UIEvent, _]] = js.undefined
   var onSelectCapture: js.UndefOr[js.Function1[/* ev */ reactLib.UIEvent, _]] = js.undefined
+  var onSelectionChange: js.UndefOr[js.Function1[/* ev */ reactLib.Event, _]] = js.undefined
+  var onSelectionChangeCapture: js.UndefOr[js.Function1[/* ev */ reactLib.Event, _]] = js.undefined
   var onStalled: js.UndefOr[js.Function1[/* ev */ reactLib.Event, _]] = js.undefined
   var onStalledCapture: js.UndefOr[js.Function1[/* ev */ reactLib.Event, _]] = js.undefined
   var onStorage: js.UndefOr[js.Function1[/* ev */ stdLib.StorageEvent, _]] = js.undefined

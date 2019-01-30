@@ -27,7 +27,7 @@ trait DownshiftProps[Item] extends js.Object {
   var menuId: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[
-      /* selectedItem */ Item, 
+      /* selectedItem */ Item | scala.Null, 
       /* stateAndHelpers */ ControllerStateAndHelpers[Item], 
       scala.Unit
     ]
@@ -42,7 +42,7 @@ trait DownshiftProps[Item] extends js.Object {
   var onOuterClick: js.UndefOr[js.Function1[/* stateAndHelpers */ ControllerStateAndHelpers[Item], scala.Unit]] = js.undefined
   var onSelect: js.UndefOr[
     js.Function2[
-      /* selectedItem */ Item, 
+      /* selectedItem */ Item | scala.Null, 
       /* stateAndHelpers */ ControllerStateAndHelpers[Item], 
       scala.Unit
     ]

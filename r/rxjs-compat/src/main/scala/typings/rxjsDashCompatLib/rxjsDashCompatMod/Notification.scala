@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Notification[T] protected ()
   extends rxjsLib.rxjsMod.Notification[T] {
-  def this(kind: java.lang.String) = this()
-  def this(kind: java.lang.String, value: T) = this()
-  def this(kind: java.lang.String, value: T, error: js.Any) = this()
+  def this(kind: rxjsLib.internalNotificationMod.NotificationKind) = this()
+  def this(kind: rxjsLib.internalNotificationMod.NotificationKind, value: T) = this()
+  def this(kind: rxjsLib.internalNotificationMod.NotificationKind, value: T, error: js.Any) = this()
 }
 
 @JSImport("rxjs-compat", "Notification")
