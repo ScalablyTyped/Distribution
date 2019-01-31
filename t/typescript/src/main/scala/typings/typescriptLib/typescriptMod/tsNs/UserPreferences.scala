@@ -17,6 +17,7 @@ trait UserPreferences extends js.Object {
   ] = js.undefined
   val includeCompletionsForModuleExports: js.UndefOr[scala.Boolean] = js.undefined
   val includeCompletionsWithInsertText: js.UndefOr[scala.Boolean] = js.undefined
+  val providePrefixAndSuffixTextForRename: js.UndefOr[scala.Boolean] = js.undefined
   val quotePreference: js.UndefOr[
     typescriptLib.typescriptLibStrings.double | typescriptLib.typescriptLibStrings.single
   ] = js.undefined

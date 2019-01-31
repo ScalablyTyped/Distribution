@@ -22,6 +22,7 @@ trait Scanner extends js.Object {
   def lookAhead[T](callback: js.Function0[T]): T = js.native
   def reScanGreaterToken(): SyntaxKind = js.native
   def reScanJsxToken(): JsxTokenSyntaxKind = js.native
+  def reScanLessThanToken(): SyntaxKind = js.native
   def reScanSlashToken(): SyntaxKind = js.native
   def reScanTemplateToken(): SyntaxKind = js.native
   def scan(): SyntaxKind = js.native

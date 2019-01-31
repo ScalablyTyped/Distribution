@@ -17,7 +17,6 @@ trait BooleanSchema extends AnySchema {
   /**
     * Allows the values provided to truthy and falsy as well as the "true" and "false" default conversion
     * (when not in strict() mode) to be matched in a case insensitive manner.
-    * @param enabled
     */
   def insensitive(): this.type = js.native
   def insensitive(enabled: scala.Boolean): this.type = js.native

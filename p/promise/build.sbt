@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "promise"
-version := "7.3.1-ee1b1a"
+version := "7.3.1-c69e20"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "asap" % "2.0-dt-20180629Z-9b4e50",
-  "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
+  "org.scalablytyped" %%% "asap" % "2.0-dt-20180629Z-b127b8",
+  "org.scalablytyped" %%% "std" % "3.3.1-6e0314")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

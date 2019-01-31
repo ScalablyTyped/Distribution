@@ -105,7 +105,7 @@ trait Compressor
   def release(release: scala.Double): scala.Unit = js.native
   def release(release: scala.Double, time: scala.Double): scala.Unit = js.native
   /**
-    *   Set the parameters of a compressor.
+    *   Set the paramters of a compressor.
     *   @param attack The amount of time (in seconds) to
     *   reduce the gain by 10dB, default = .003, range 0 -
     *   1

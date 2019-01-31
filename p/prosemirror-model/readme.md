@@ -1,5 +1,5 @@
 ```
-// Type definitions for prosemirror-model 1.5
+// Type definitions for prosemirror-model 1.7
 // Project: https://github.com/ProseMirror/prosemirror-model
 // Definitions by: Bradley Ayers <https://github.com/bradleyayers>
 //                 David Hahn <https://github.com/davidka>

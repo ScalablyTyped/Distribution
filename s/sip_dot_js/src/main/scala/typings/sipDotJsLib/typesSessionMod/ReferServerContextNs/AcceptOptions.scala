@@ -9,6 +9,6 @@ trait AcceptOptions extends js.Object {
   /** If true, accept REFER request and automatically attempt to follow it. */
   var followRefer: js.UndefOr[scala.Boolean] = js.undefined
   /** If followRefer is true, options to following INVITE request. */
-  var inviteOptions: sipDotJsLib.typesSessionMod.InviteClientContextNs.Options
+  var inviteOptions: js.UndefOr[sipDotJsLib.typesSessionMod.InviteClientContextNs.Options] = js.undefined
 }
 

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "find-my-way"
-version := "1.17.0-32eccc"
+version := "1.17.0-2d0597"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-40209e",
-  "org.scalablytyped" %%% "safe-regex" % "1.1-dt-20180214Z-acce91",
-  "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
+  "org.scalablytyped" %%% "safe-regex" % "1.1-dt-20180214Z-ca98b2",
+  "org.scalablytyped" %%% "std" % "3.3.1-6e0314")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

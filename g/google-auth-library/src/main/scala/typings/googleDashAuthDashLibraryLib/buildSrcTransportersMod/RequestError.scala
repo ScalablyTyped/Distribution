@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait RequestError
-  extends axiosLib.axiosMod.AxiosError {
-  var errors: js.Array[nodeLib.Error]
+  extends gaxiosLib.gaxiosMod.GaxiosError[js.Any] {
+  var errors: js.Array[nodeLib.Error] = js.native
 }
 

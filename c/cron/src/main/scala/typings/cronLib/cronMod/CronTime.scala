@@ -12,11 +12,16 @@ class CronTime protected () extends js.Object {
     * Create a new ```CronTime```.
     * @param source The time to fire off your job. This can be in the form of cron syntax or a JS ```Date``` object.
     * @param zone Timezone name. You can check all timezones available at [Moment Timezone Website](http://momentjs.com/timezone/).
+    * @param utcOffset UTC offset. Don't use both ```zone``` and ```utcOffset``` together or weird things may happen.
     */
   def this(source: java.lang.String) = this()
   def this(source: stdLib.Date) = this()
   def this(source: java.lang.String, zone: java.lang.String) = this()
   def this(source: stdLib.Date, zone: java.lang.String) = this()
+  def this(source: java.lang.String, zone: java.lang.String, utcOffset: java.lang.String) = this()
+  def this(source: java.lang.String, zone: java.lang.String, utcOffset: scala.Double) = this()
+  def this(source: stdLib.Date, zone: java.lang.String, utcOffset: java.lang.String) = this()
+  def this(source: stdLib.Date, zone: java.lang.String, utcOffset: scala.Double) = this()
   /**
     * Get the number of milliseconds in the future at which to fire our callbacks.
     */

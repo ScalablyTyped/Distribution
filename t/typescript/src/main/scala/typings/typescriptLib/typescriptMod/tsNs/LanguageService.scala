@@ -27,6 +27,13 @@ trait LanguageService extends js.Object {
     findInStrings: scala.Boolean,
     findInComments: scala.Boolean
   ): js.UndefOr[js.Array[RenameLocation]] = js.native
+  def findRenameLocations(
+    fileName: java.lang.String,
+    position: scala.Double,
+    findInStrings: scala.Boolean,
+    findInComments: scala.Boolean,
+    providePrefixAndSuffixTextForRename: scala.Boolean
+  ): js.UndefOr[js.Array[RenameLocation]] = js.native
   def getApplicableRefactors(fileName: java.lang.String, positionOrRange: scala.Double): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(fileName: java.lang.String, positionOrRange: scala.Double, preferences: UserPreferences): js.Array[ApplicableRefactorInfo] = js.native
   def getApplicableRefactors(fileName: java.lang.String, positionOrRange: TextRange): js.Array[ApplicableRefactorInfo] = js.native
@@ -227,6 +234,7 @@ trait LanguageService extends js.Object {
   def getQuickInfoAtPosition(fileName: java.lang.String, position: scala.Double): js.UndefOr[QuickInfo] = js.native
   def getReferencesAtPosition(fileName: java.lang.String, position: scala.Double): js.UndefOr[js.Array[ReferenceEntry]] = js.native
   def getRenameInfo(fileName: java.lang.String, position: scala.Double): RenameInfo = js.native
+  def getRenameInfo(fileName: java.lang.String, position: scala.Double, options: RenameInfoOptions): RenameInfo = js.native
   /**
     * @deprecated Use getEncodedSemanticClassifications instead.
     */

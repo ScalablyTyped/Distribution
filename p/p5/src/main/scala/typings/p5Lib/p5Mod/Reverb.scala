@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   *   Reverb adds depth to a sound through a large
   *   number of decaying echoes. It creates the
   *   perception that sound is occurring in a physical
-  *   space. The p5.Reverb has parameters for Time (how
+  *   space. The p5.Reverb has paramters for Time (how
   *   long does the reverb last) and decayRate (how much
   *   the sound decays with each echo) that can be set
   *   with the .set() or .process() methods. The

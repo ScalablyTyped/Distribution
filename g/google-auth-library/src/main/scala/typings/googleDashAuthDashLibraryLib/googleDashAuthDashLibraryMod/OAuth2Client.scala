@@ -37,9 +37,13 @@ object OAuth2Client extends js.Object {
     */
   val `GOOGLE_OAUTH2_AUTH_BASE_URL_`: js.Any = js.native
   /**
-    * Google Sign on certificates.
+    * Google Sign on certificates in JWK format.
     */
-  val `GOOGLE_OAUTH2_FEDERATED_SIGNON_CERTS_URL_`: js.Any = js.native
+  val `GOOGLE_OAUTH2_FEDERATED_SIGNON_JWK_CERTS_URL_`: js.Any = js.native
+  /**
+    * Google Sign on certificates in PEM format.
+    */
+  val `GOOGLE_OAUTH2_FEDERATED_SIGNON_PEM_CERTS_URL_`: js.Any = js.native
   /**
     * The base endpoint to revoke tokens.
     */
@@ -57,5 +61,10 @@ object OAuth2Client extends js.Object {
     * Max Token Lifetime is one day in seconds
     */
   val `MAX_TOKEN_LIFETIME_SECS_`: js.Any = js.native
+  /**
+    * Generates an URL to revoke the given token.
+    * @param token The existing token to be revoked.
+    */
+  def getRevokeTokenUrl(token: java.lang.String): java.lang.String = js.native
 }
 

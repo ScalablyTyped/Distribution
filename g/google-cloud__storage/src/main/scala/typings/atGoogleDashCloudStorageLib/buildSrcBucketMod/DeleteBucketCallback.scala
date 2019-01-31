@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @js.native
-trait DeleteBucketCallback extends js.Object {
+@js.native
+trait DeleteBucketCallback
+  extends atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.DeleteCallback {
   def apply(err: nodeLib.Error, apiResponse: requestLib.requestMod.requestNs.Response): scala.Unit = js.native
   def apply(err: scala.Null, apiResponse: requestLib.requestMod.requestNs.Response): scala.Unit = js.native
 }

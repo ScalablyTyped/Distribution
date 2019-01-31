@@ -18,6 +18,7 @@ object Global extends js.Object {
   val BLEND: p5Lib.p5Mod.p5Ns.BLEND = js.native
   val BLUR: p5Lib.p5Mod.p5Ns.BLUR = js.native
   val BOLD: p5Lib.p5Mod.p5Ns.BOLD = js.native
+  val BOLDITALIC: p5Lib.p5Mod.p5Ns.BOLDITALIC = js.native
   val BOTTOM: p5Lib.p5Mod.p5Ns.BOTTOM = js.native
   val BURN: p5Lib.p5Mod.p5Ns.BURN = js.native
   val CENTER: p5Lib.p5Mod.p5Ns.CENTER = js.native
@@ -318,11 +319,11 @@ object Global extends js.Object {
     *   pixel at (1, 0). More generally, to set values for
     *   a pixel at (x, y):
     *
-    *   var d = pixelDensity(); for (var i = 0; i < d;
-    *   i++) { for (var j = 0; j < d; j++) { // loop over
-    *   idx = 4 * ((y * d + j) * width * d + (x * d + i));
-    *   pixels[idx] = r; pixels[idx+1] = g; pixels[idx+2]
-    *   = b; pixels[idx+3] = a; } }
+    *   let d = pixelDensity(); for (let i = 0; i < d;
+    *   i++) { for (let j = 0; j < d; j++) { // loop over
+    *   index = 4 * ((y * d + j) * width * d + (x * d +
+    *   i)); pixels[index] = r; pixels[index+1] = g;
+    *   pixels[index+2] = b; pixels[index+3] = a; } }
     *
     *   While the above method is complex, it is flexible
     *   enough to work with any pixelDensity. Note that
@@ -423,6 +424,12 @@ object Global extends js.Object {
     *   (laptops).
     */
   var touches: js.Array[js.Object] = js.native
+  /**
+    *   When a device is rotated, the axis that triggers
+    *   the deviceTurned() method is stored in the
+    *   turnAxis variable. The turnAxis variable is only
+    *   defined within the scope of deviceTurned().
+    */
   var turnAxis: java.lang.String = js.native
   /**
     *   System variable that stores the width of the
@@ -753,7 +760,7 @@ object Global extends js.Object {
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
-    *   background is light gray. This function is
+    *   background is transparent. This function is
     *   typically used within draw() to clear the display
     *   window at the beginning of each frame, but it can
     *   be used inside setup() to set the background on
@@ -787,7 +794,7 @@ object Global extends js.Object {
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
-    *   background is light gray. This function is
+    *   background is transparent. This function is
     *   typically used within draw() to clear the display
     *   window at the beginning of each frame, but it can
     *   be used inside setup() to set the background on
@@ -825,7 +832,7 @@ object Global extends js.Object {
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
-    *   background is light gray. This function is
+    *   background is transparent. This function is
     *   typically used within draw() to clear the display
     *   window at the beginning of each frame, but it can
     *   be used inside setup() to set the background on
@@ -862,7 +869,7 @@ object Global extends js.Object {
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
-    *   background is light gray. This function is
+    *   background is transparent. This function is
     *   typically used within draw() to clear the display
     *   window at the beginning of each frame, but it can
     *   be used inside setup() to set the background on
@@ -900,7 +907,7 @@ object Global extends js.Object {
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
-    *   background is light gray. This function is
+    *   background is transparent. This function is
     *   typically used within draw() to clear the display
     *   window at the beginning of each frame, but it can
     *   be used inside setup() to set the background on
@@ -941,7 +948,7 @@ object Global extends js.Object {
   /**
     *   The background() function sets the color used for
     *   the background of the p5.js canvas. The default
-    *   background is light gray. This function is
+    *   background is transparent. This function is
     *   typically used within draw() to clear the display
     *   window at the beginning of each frame, but it can
     *   be used inside setup() to set the background on
@@ -1457,6 +1464,18 @@ object Global extends js.Object {
     */
   def ceil(n: scala.Double): scala.Double = js.native
   /**
+    *   The .changed() function is called when the value
+    *   of an element changes. This can be used to attach
+    *   an element specific event listener.
+    *   @param fxn function to be fired when the value of
+    *   an element changes. if false is passed instead,
+    *   the previously firing function will no longer
+    *   fire.
+    *   @chainable
+    */
+  def changed(fxn: js.Function1[/* repeated */ js.Any, _]): p5Lib.p5Mod.namespaced = js.native
+  def changed(fxn: scala.Boolean): p5Lib.p5Mod.namespaced = js.native
+  /**
     *   Converts a number or string to its corresponding
     *   single-character string representation. If a
     *   string parameter is provided, it is first parsed
@@ -1483,6 +1502,23 @@ object Global extends js.Object {
     *   @return array of string representation of values
     */
   def char(ns: js.Array[_]): js.Array[java.lang.String] = js.native
+  /**
+    *   Draws a circle to the screen. A circle is a simple
+    *   closed shape. It is the set of all points in a
+    *   plane that are at a given distance from a given
+    *   point, the centre. This function is a special case
+    *   of the ellipse() function, where the width and
+    *   height of the ellipse are the same. Height and
+    *   width of the ellipse is equal to twice the radius
+    *   of the circle.. By default, the first two
+    *   parameters set the location of the centre of the
+    *   circle, the third sets the radius of the circle.
+    *   @param x x-coordinate of the centre of the circle.
+    *   @param y y-coordinate of the centre of the circle.
+    *   @param r radius of the circle.
+    *   @chainable
+    */
+  def circle(x: scala.Double, y: scala.Double, r: scala.Double): p5Lib.p5Mod.namespaced = js.native
   /**
     *   Clears the pixels within a buffer. This function
     *   only works on p5.Canvas objects created with the
@@ -2199,11 +2235,17 @@ object Global extends js.Object {
     *   recommended size is 16x16 or 32x32 pixels. The
     *   values for parameters x and y must be less than
     *   the dimensions of the image.
-    *   @param type either ARROW, CROSS, HAND, MOVE, TEXT,
-    *   or WAIT, or path for image
+    *   @param type Built-In: either ARROW, CROSS, HAND,
+    *   MOVE, TEXT and WAIT Native CSS properties: 'grab',
+    *   'progress', 'cell' etc. External: path for
+    *   cursor's images (Allowed File extensions: .cur,
+    *   .gif, .jpg, .jpeg, .png) For more information on
+    *   Native CSS cursors and url visit:
+    *   https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
     *   @param [x] the horizontal active spot of the
-    *   cursor
+    *   cursor (must be less than 32)
     *   @param [y] the vertical active spot of the cursor
+    *   (must be less than 32)
     */
   def cursor(`type`: java.lang.String): scala.Unit = js.native
   def cursor(`type`: java.lang.String, x: scala.Double): scala.Unit = js.native
@@ -2607,7 +2649,8 @@ object Global extends js.Object {
     *   The deviceMoved() function is called when the
     *   device is moved by more than the threshold value
     *   along X, Y or Z axis. The default threshold is set
-    *   to 0.5.
+    *   to 0.5. The threshold value can be changed using
+    *   setMoveThreshold().
     */
   def deviceMoved(): scala.Unit = js.native
   /**
@@ -2615,7 +2658,8 @@ object Global extends js.Object {
     *   device total acceleration changes of accelerationX
     *   and accelerationY values is more than the
     *   threshold value. The default threshold is set to
-    *   30.
+    *   30. The threshold value can be changed using
+    *   setShakeThreshold().
     */
   def deviceShaken(): scala.Unit = js.native
   /**
@@ -2764,6 +2808,7 @@ object Global extends js.Object {
     *   @param w width of the ellipse.
     *   @param h height of the ellipse.
     *   @param detail number of radial sectors to draw
+    *   (for WebGL mode)
     */
   def ellipse(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double, detail: scala.Double): scala.Unit = js.native
   /**
@@ -3161,10 +3206,14 @@ object Global extends js.Object {
     *   is easy, but not as fast as grabbing the data
     *   directly from pixels[]. The equivalent statement
     *   to get(x, y) using pixels[] with pixel density d
-    *   is  var x, y, d; // set these to the coordinates
-    *   var off = (y  width + x)  d * 4; var components =
-    *   [ pixels[off], pixels[off + 1], pixels[off + 2],
+    *   is
+    *
+    *   let x, y, d; // set these to the coordinates let
+    *   off = (y * width + x) * d * 4; let components = [
+    *   pixels[off], pixels[off + 1], pixels[off + 2],
     *   pixels[off + 3] ]; print(components);
+    *
+    *
     *
     *
     *   See the reference for pixels[] for more
@@ -3709,6 +3758,21 @@ object Global extends js.Object {
     */
   def imageMode(mode: p5Lib.p5Mod.p5Ns.IMAGE_MODE): scala.Unit = js.native
   /**
+    *   The .input() function is called when any user
+    *   input is detected with an element. The input event
+    *   is often used to detect keystrokes in a input
+    *   element, or changes on a slider element. This can
+    *   be used to attach an element specific event
+    *   listener.
+    *   @param fxn function to be fired when any user
+    *   input is detected within the element. if false is
+    *   passed instead, the previously firing function
+    *   will no longer fire.
+    *   @chainable
+    */
+  def input(fxn: js.Function1[/* repeated */ js.Any, _]): p5Lib.p5Mod.namespaced = js.native
+  def input(fxn: scala.Boolean): p5Lib.p5Mod.namespaced = js.native
+  /**
     *   Converts a boolean, string, or float to its
     *   integer representation. When an array of values is
     *   passed in, then an int array of the same length is
@@ -3769,12 +3833,12 @@ object Global extends js.Object {
     *   LEFT_ARROW, RIGHT_ARROW.
     *
     *
-    *   For ASCII keys that was pressed is stored in the
-    *   key variable. However, it does not distinguish
-    *   between uppercase and lowercase. For this reason,
-    *   it is recommended to use keyTyped() to read the
-    *   key variable, in which the case of the variable
-    *   will be distinguished.
+    *   For ASCII keys, the key that was pressed is stored
+    *   in the key variable. However, it does not
+    *   distinguish between uppercase and lowercase. For
+    *   this reason, it is recommended to use keyTyped()
+    *   to read the key variable, in which the case of the
+    *   variable will be distinguished.
     *
     *
     *   Because of how operating systems handle key
@@ -3822,13 +3886,16 @@ object Global extends js.Object {
     *   specific increment. The amt parameter is the
     *   amount to interpolate between the two values where
     *   0.0 equal to the first point, 0.1 is very near the
-    *   first point, 0.5 is half-way in between, etc. The
-    *   lerp function is convenient for creating motion
-    *   along a straight path and for drawing dotted
-    *   lines.
+    *   first point, 0.5 is half-way in between, and 1.0
+    *   is equal to the second point. If the value of amt
+    *   is more than 1.0 or less than 0.0, the number will
+    *   be calculated accordingly in the ratio of the two
+    *   given numbers. The lerp function is convenient for
+    *   creating motion along a straight path and for
+    *   drawing dotted lines.
     *   @param start first value
     *   @param stop second value
-    *   @param amt number between 0.0 and 1.0
+    *   @param amt number
     *   @return lerped value
     */
   def lerp(start: scala.Double, stop: scala.Double, amt: scala.Double): scala.Double = js.native
@@ -3926,7 +3993,7 @@ object Global extends js.Object {
     *   method is asynchronous, meaning it may not finish
     *   before the next line in your sketch is executed.
     *   The path to the font should be relative to the
-    *   HTML file that links in your sketch. Loading an
+    *   HTML file that links in your sketch. Loading fonts
     *   from a URL or other remote location may be blocked
     *   due to your browser's built-in security.
     *   @param path name of the file or url to load
@@ -4212,6 +4279,8 @@ object Global extends js.Object {
     *   - tsv - parse the table as tab-separated values
     *   - header - this table has a header (title) row
     *
+    *
+    *
     *   When passing in multiple options, pass them in as
     *   separate parameters, seperated by commas. For
     *   example:
@@ -4263,6 +4332,8 @@ object Global extends js.Object {
     *   - csv - parse the table as comma-separated values
     *   - tsv - parse the table as tab-separated values
     *   - header - this table has a header (title) row
+    *
+    *
     *
     *   When passing in multiple options, pass them in as
     *   separate parameters, seperated by commas. For
@@ -4656,6 +4727,14 @@ object Global extends js.Object {
     *   formatting floats, and one for formatting ints.
     *   The values for the digits, left, and right
     *   parameters should always be positive integers.
+    *   (NOTE): Be cautious when using left and right
+    *   parameters as it prepends numbers of 0's if the
+    *   parameter if greater than the current length of
+    *   the number. For example if number is 123.2 and
+    *   left parameter passed is 4 which is greater than
+    *   length of 123 (integer part) i.e 3 than result
+    *   will be 0123.2. Same case for right parameter i.e.
+    *   if right is 3 than the result will be 123.200.
     *   @param num the Number to format
     *   @param [left] number of digits to the left of the
     *   decimal point
@@ -4676,6 +4755,14 @@ object Global extends js.Object {
     *   formatting floats, and one for formatting ints.
     *   The values for the digits, left, and right
     *   parameters should always be positive integers.
+    *   (NOTE): Be cautious when using left and right
+    *   parameters as it prepends numbers of 0's if the
+    *   parameter if greater than the current length of
+    *   the number. For example if number is 123.2 and
+    *   left parameter passed is 4 which is greater than
+    *   length of 123 (integer part) i.e 3 than result
+    *   will be 0123.2. Same case for right parameter i.e.
+    *   if right is 3 than the result will be 123.200.
     *   @param nums the Numbers to format
     *   @param [left] number of digits to the left of the
     *   decimal point
@@ -4761,12 +4848,27 @@ object Global extends js.Object {
   def nfp(nums: js.Array[scala.Double], left: scala.Double, right: scala.Double): js.Array[java.lang.String] = js.native
   /**
     *   Utility function for formatting numbers into
-    *   strings. Similar to nf() but puts a " " (space) in
-    *   front of positive numbers and a "-" in front of
-    *   negative numbers. There are two versions: one for
-    *   formatting floats, and one for formatting ints.
-    *   The values for the digits, left, and right
-    *   parameters should always be positive integers.
+    *   strings. Similar to nf() but puts an additional
+    *   "_" (space) in front of positive numbers just in
+    *   case to align it with negative numbers which
+    *   includes "-" (minus) sign. The main usecase of
+    *   nfs() can be seen when one wants to align the
+    *   digits (place values) of a positive number with
+    *   some negative number (See the example to get a
+    *   clear picture). There are two versions: one for
+    *   formatting float, and one for formatting int. The
+    *   values for the digits, left, and right parameters
+    *   should always be positive integers. (IMP): The
+    *   result on the canvas basically the expected
+    *   alignment can vary based on the typeface you are
+    *   using. (NOTE): Be cautious when using left and
+    *   right parameters as it prepends numbers of 0's if
+    *   the parameter if greater than the current length
+    *   of the number. For example if number is 123.2 and
+    *   left parameter passed is 4 which is greater than
+    *   length of 123 (integer part) i.e 3 than result
+    *   will be 0123.2. Same case for right parameter i.e.
+    *   if right is 3 than the result will be 123.200.
     *   @param num the Number to format
     *   @param [left] number of digits to the left of the
     *   decimal point
@@ -4779,12 +4881,27 @@ object Global extends js.Object {
   def nfs(num: scala.Double, left: scala.Double, right: scala.Double): java.lang.String = js.native
   /**
     *   Utility function for formatting numbers into
-    *   strings. Similar to nf() but puts a " " (space) in
-    *   front of positive numbers and a "-" in front of
-    *   negative numbers. There are two versions: one for
-    *   formatting floats, and one for formatting ints.
-    *   The values for the digits, left, and right
-    *   parameters should always be positive integers.
+    *   strings. Similar to nf() but puts an additional
+    *   "_" (space) in front of positive numbers just in
+    *   case to align it with negative numbers which
+    *   includes "-" (minus) sign. The main usecase of
+    *   nfs() can be seen when one wants to align the
+    *   digits (place values) of a positive number with
+    *   some negative number (See the example to get a
+    *   clear picture). There are two versions: one for
+    *   formatting float, and one for formatting int. The
+    *   values for the digits, left, and right parameters
+    *   should always be positive integers. (IMP): The
+    *   result on the canvas basically the expected
+    *   alignment can vary based on the typeface you are
+    *   using. (NOTE): Be cautious when using left and
+    *   right parameters as it prepends numbers of 0's if
+    *   the parameter if greater than the current length
+    *   of the number. For example if number is 123.2 and
+    *   left parameter passed is 4 which is greater than
+    *   length of 123 (integer part) i.e 3 than result
+    *   will be 0123.2. Same case for right parameter i.e.
+    *   if right is 3 than the result will be 123.200.
     *   @param nums the Numbers to format
     *   @param [left] number of digits to the left of the
     *   decimal point
@@ -5095,7 +5212,7 @@ object Global extends js.Object {
     *   the point is determined by the current stroke.
     *   @param x the x-coordinate
     *   @param y the y-coordinate
-    *   @param [z] the z-coordinate (for WEBGL mode)
+    *   @param [z] the z-coordinate (for WebGL mode)
     *   @chainable
     */
   def point(x: scala.Double, y: scala.Double): p5Lib.p5Mod.namespaced = js.native
@@ -5477,9 +5594,9 @@ object Global extends js.Object {
     *   @param w width of the rectangle.
     *   @param h height of the rectangle.
     *   @param [detailX] number of segments in the
-    *   x-direction
+    *   x-direction (for WebGL mode)
     *   @param [detailY] number of segments in the
-    *   y-direction
+    *   y-direction (for WebGL mode)
     *   @chainable
     */
   def rect(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double): p5Lib.p5Mod.namespaced = js.native
@@ -5719,22 +5836,22 @@ object Global extends js.Object {
     *
     *
     *   // Saves canvas as an image save('myCanvas.jpg');
-    *   // Saves pImage as a png image var img =
+    *   // Saves pImage as a png image let img =
     *   createImage(10, 10); save(img, 'my.png'); // Saves
-    *   canvas as an image var cnv = createCanvas(100,
+    *   canvas as an image let cnv = createCanvas(100,
     *   100); save(cnv, 'myCanvas.jpg'); // Saves
-    *   p5.Renderer object as an image var gb =
+    *   p5.Renderer object as an image let gb =
     *   createGraphics(100, 100); save(gb,
-    *   'myGraphics.jpg'); var myTable = new p5.Table();
+    *   'myGraphics.jpg'); let myTable = new p5.Table();
     *   // Saves table as html file save(myTable,
     *   'myTable.html'); // Comma Separated Values
     *   save(myTable, 'myTable.csv'); // Tab Separated
-    *   Values save(myTable, 'myTable.tsv'); var myJSON =
+    *   Values save(myTable, 'myTable.tsv'); let myJSON =
     *   { a: 1, b: true }; // Saves pretty JSON
     *   save(myJSON, 'my.json'); // Optimizes JSON
     *   filesize save(myJSON, 'my.json', true); // Saves
     *   array of strings to a text file with line breaks
-    *   after each item var arrayOfStrings = ['a', 'b'];
+    *   after each item let arrayOfStrings = ['a', 'b'];
     *   save(arrayOfStrings, 'my.txt');
     *   @param [objectOrFilename] If filename is provided,
     *   will save canvas as an image with either png or
@@ -6339,6 +6456,54 @@ object Global extends js.Object {
     */
   def sqrt(n: scala.Double): scala.Double = js.native
   /**
+    *   Draws a square to the screen. A square is a
+    *   four-sided shape with every angle at ninety
+    *   degrees, and equal side size. This function is a
+    *   special case of the rect() function, where the
+    *   width and height are the same, and the parameter
+    *   is called "s" for side size. By default, the first
+    *   two parameters set the location of the upper-left
+    *   corner, the third sets the side size of the
+    *   square. The way these parameters are interpreted,
+    *   however, may be changed with the rectMode()
+    *   function.  The fourth, fifth, sixth and seventh
+    *   parameters, if specified, determine corner radius
+    *   for the top-left, top-right, lower-right and
+    *   lower-left corners, respectively. An omitted
+    *   corner radius parameter is set to the value of the
+    *   previously specified radius value in the parameter
+    *   list.
+    *   @param x x-coordinate of the square.
+    *   @param y y-coordinate of the square.
+    *   @param s side size of the square.
+    *   @param [tl] optional radius of top-left corner.
+    *   @param [tr] optional radius of top-right corner.
+    *   @param [br] optional radius of bottom-right
+    *   corner.
+    *   @param [bl] optional radius of bottom-left corner.
+    *   @chainable
+    */
+  def square(x: scala.Double, y: scala.Double, s: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def square(x: scala.Double, y: scala.Double, s: scala.Double, tl: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def square(x: scala.Double, y: scala.Double, s: scala.Double, tl: scala.Double, tr: scala.Double): p5Lib.p5Mod.namespaced = js.native
+  def square(
+    x: scala.Double,
+    y: scala.Double,
+    s: scala.Double,
+    tl: scala.Double,
+    tr: scala.Double,
+    br: scala.Double
+  ): p5Lib.p5Mod.namespaced = js.native
+  def square(
+    x: scala.Double,
+    y: scala.Double,
+    s: scala.Double,
+    tl: scala.Double,
+    tr: scala.Double,
+    br: scala.Double,
+    bl: scala.Double
+  ): p5Lib.p5Mod.namespaced = js.native
+  /**
     *   Converts a boolean, string or number to its string
     *   representation. When an array of values is passed
     *   in, then an array of strings of the same length is
@@ -6674,20 +6839,20 @@ object Global extends js.Object {
   def textSize(theSize: scala.Double): p5Lib.p5Mod.namespaced = js.native
   /**
     *   Sets/gets the style of the text for system fonts
-    *   to NORMAL, ITALIC, or BOLD. Note: this may be is
-    *   overridden by CSS styling. For non-system fonts
-    *   (opentype, truetype, etc.) please load styled
-    *   fonts instead.
+    *   to NORMAL, ITALIC, BOLD or BOLDITALIC. Note: this
+    *   may be is overridden by CSS styling. For
+    *   non-system fonts (opentype, truetype, etc.) please
+    *   load styled fonts instead.
     */
   def textStyle(): java.lang.String = js.native
   /**
     *   Sets/gets the style of the text for system fonts
-    *   to NORMAL, ITALIC, or BOLD. Note: this may be is
-    *   overridden by CSS styling. For non-system fonts
-    *   (opentype, truetype, etc.) please load styled
-    *   fonts instead.
+    *   to NORMAL, ITALIC, BOLD or BOLDITALIC. Note: this
+    *   may be is overridden by CSS styling. For
+    *   non-system fonts (opentype, truetype, etc.) please
+    *   load styled fonts instead.
     *   @param theStyle styling for text, either NORMAL,
-    *   ITALIC, or BOLD
+    *   ITALIC, BOLD or BOLDITALIC
     *   @chainable
     */
   def textStyle(theStyle: p5Lib.p5Mod.p5Ns.THE_STYLE): p5Lib.p5Mod.namespaced = js.native
@@ -6707,6 +6872,20 @@ object Global extends js.Object {
     */
   def texture(tex: p5Lib.p5Mod.Image): p5Lib.p5Mod.namespaced = js.native
   def texture(tex: p5Lib.p5Mod.MediaElement): p5Lib.p5Mod.namespaced = js.native
+  /**
+    *   Sets the coordinate space for texture mapping. The
+    *   default mode is IMAGE which refers to the actual
+    *   coordinates of the image. NORMAL refers to a
+    *   normalized space of values ranging from 0 to 1.
+    *   This function only works in WEBGL mode. With
+    *   IMAGE, if an image is 100 x 200 pixels, mapping
+    *   the image onto the entire size of a quad would
+    *   require the points (0,0) (100, 0) (100,200)
+    *   (0,200). The same mapping in NORMAL is (0,0) (1,0)
+    *   (1,1) (0,1).
+    *   @param mode either IMAGE or NORMAL
+    */
+  def textureMode(mode: p5Lib.p5Mod.p5Ns.TEXTURE_MODE): scala.Unit = js.native
   /**
     *   Sets the fill value for displaying images. Images
     *   can be tinted to specified colors or made

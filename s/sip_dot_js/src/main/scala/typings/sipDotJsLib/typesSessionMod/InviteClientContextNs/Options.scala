@@ -11,7 +11,7 @@ trait Options extends js.Object {
   /** If true, send INVITE without SDP. */
   var inviteWithoutSdp: js.UndefOr[scala.Boolean] = js.undefined
   /** Deprecated */
-  var params: js.UndefOr[sipDotJsLib.Anon_TodisplayName] = js.undefined
+  var params: js.UndefOr[sipDotJsLib.Anon_ToDisplayName] = js.undefined
   /** Options to pass to SessionDescriptionHandler's getDescription() and setDescription(). */
   var sessionDescriptionHandlerOptions: js.UndefOr[
     sipDotJsLib.typesSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerOptions

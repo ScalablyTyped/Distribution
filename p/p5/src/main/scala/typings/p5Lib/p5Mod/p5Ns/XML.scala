@@ -123,6 +123,13 @@ trait XML extends js.Object {
     */
   def removeChild(name: java.lang.String): scala.Unit = js.native
   def removeChild(name: scala.Double): scala.Unit = js.native
+  /**
+    *   Serializes the element into a string. This
+    *   function is useful for preparing the content to be
+    *   sent over a http request or saved to file.
+    *   @return Serialized string of the element
+    */
+  def serialize(): java.lang.String = js.native
   def setAttribute(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def setAttribute(name: java.lang.String, value: scala.Boolean): scala.Unit = js.native
   /**

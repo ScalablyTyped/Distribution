@@ -47,7 +47,7 @@ trait FrameBase extends Evalable {
     * @param fn Function to be evaluated in browser context
     * @param args Arguments to pass to `fn`
     */
-  def evaluate(fn: EvaluateFn, args: js.Any*): js.Promise[_] = js.native
+  def evaluate(fn: EvaluateFn, args: SerializableOrJSHandle*): js.Promise[_] = js.native
   /**
     * Evaluates a function in the page context.
     * If the function, passed to the page.evaluateHandle, returns a Promise, then page.evaluateHandle
@@ -56,7 +56,7 @@ trait FrameBase extends Evalable {
     * @param args The arguments to pass to the `fn`.
     * @returns A promise which resolves to return value of `fn`.
     */
-  def evaluateHandle(fn: EvaluateFn, args: js.Any*): js.Promise[JSHandle] = js.native
+  def evaluateHandle(fn: EvaluateFn, args: SerializableOrJSHandle*): js.Promise[JSHandle] = js.native
   /** This method fetches an element with selector and focuses it. */
   def focus(selector: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
@@ -121,19 +121,23 @@ trait FrameBase extends Evalable {
     */
   def waitFor(selector: java.lang.String): js.Promise[ElementHandle[stdLib.Element]] = js.native
   def waitFor(selector: java.lang.String, options: WaitForSelectorOptions): js.Promise[ElementHandle[stdLib.Element]] = js.native
-  def waitFor(selector: java.lang.String, options: WaitForSelectorOptions, args: js.Any*): js.Promise[_] = js.native
+  def waitFor(selector: java.lang.String, options: WaitForSelectorOptions, args: SerializableOrJSHandle*): js.Promise[_] = js.native
   /**
     * Shortcut for waitForFunction.
     */
   def waitFor(selector: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-  def waitFor(selector: js.Function1[/* repeated */ js.Any, _], options: WaitForSelectorOptions, args: js.Any*): js.Promise[_] = js.native
+  def waitFor(
+    selector: js.Function1[/* repeated */ js.Any, _],
+    options: WaitForSelectorOptions,
+    args: SerializableOrJSHandle*
+  ): js.Promise[_] = js.native
   /**
     * Allows waiting for various conditions.
     */
   def waitForFunction(fn: java.lang.String): js.Promise[_] = js.native
-  def waitForFunction(fn: java.lang.String, options: PageFnOptions, args: js.Any*): js.Promise[_] = js.native
+  def waitForFunction(fn: java.lang.String, options: PageFnOptions, args: SerializableOrJSHandle*): js.Promise[_] = js.native
   def waitForFunction(fn: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-  def waitForFunction(fn: js.Function1[/* repeated */ js.Any, _], options: PageFnOptions, args: js.Any*): js.Promise[_] = js.native
+  def waitForFunction(fn: js.Function1[/* repeated */ js.Any, _], options: PageFnOptions, args: SerializableOrJSHandle*): js.Promise[_] = js.native
   /**
     * Wait for the page navigation occur.
     * @param options The navigation parameters.

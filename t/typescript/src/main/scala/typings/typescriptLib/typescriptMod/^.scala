@@ -26,7 +26,7 @@ object ^ extends js.Object {
   ] = js.native
   /** The version of the TypeScript compiler release */
   val version: java.lang.String = js.native
-  val versionMajorMinor: /* 3.2 */ java.lang.String = js.native
+  val versionMajorMinor: /* 3.3 */ java.lang.String = js.native
   /**
     * Adds an EmitHelper to a node.
     */
@@ -1292,111 +1292,141 @@ object ^ extends js.Object {
     indexType: typescriptLib.typescriptMod.tsNs.TypeNode
   ): typescriptLib.typescriptMod.tsNs.IndexedAccessTypeNode = js.native
   def createInferTypeNode(typeParameter: typescriptLib.typescriptMod.tsNs.TypeParameterDeclaration): typescriptLib.typescriptMod.tsNs.InferTypeNode = js.native
-  def createInputFiles(javascript: java.lang.String, declaration: java.lang.String): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
-  def createInputFiles(javascript: java.lang.String, declaration: java.lang.String, javascriptMapPath: java.lang.String): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
+  def createInputFiles(javascriptText: java.lang.String, declarationText: java.lang.String): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInputFiles(
-    javascript: java.lang.String,
-    declaration: java.lang.String,
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
+    javascriptMapPath: java.lang.String
+  ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
+  def createInputFiles(
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: java.lang.String,
     javascriptMapText: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInputFiles(
-    javascript: java.lang.String,
-    declaration: java.lang.String,
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: java.lang.String,
     javascriptMapText: java.lang.String,
     declarationMapPath: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInputFiles(
-    javascript: java.lang.String,
-    declaration: java.lang.String,
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: java.lang.String,
     javascriptMapText: java.lang.String,
     declarationMapPath: java.lang.String,
     declarationMapText: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInputFiles(
-    javascript: java.lang.String,
-    declaration: java.lang.String,
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: java.lang.String,
     javascriptMapText: java.lang.String,
     declarationMapPath: js.UndefOr[scala.Nothing],
     declarationMapText: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInputFiles(
-    javascript: java.lang.String,
-    declaration: java.lang.String,
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: java.lang.String,
     javascriptMapText: js.UndefOr[scala.Nothing],
     declarationMapPath: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInputFiles(
-    javascript: java.lang.String,
-    declaration: java.lang.String,
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: java.lang.String,
     javascriptMapText: js.UndefOr[scala.Nothing],
     declarationMapPath: java.lang.String,
     declarationMapText: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInputFiles(
-    javascript: java.lang.String,
-    declaration: java.lang.String,
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: java.lang.String,
     javascriptMapText: js.UndefOr[scala.Nothing],
     declarationMapPath: js.UndefOr[scala.Nothing],
     declarationMapText: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInputFiles(
-    javascript: java.lang.String,
-    declaration: java.lang.String,
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: js.UndefOr[scala.Nothing],
     javascriptMapText: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInputFiles(
-    javascript: java.lang.String,
-    declaration: java.lang.String,
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: js.UndefOr[scala.Nothing],
     javascriptMapText: java.lang.String,
     declarationMapPath: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInputFiles(
-    javascript: java.lang.String,
-    declaration: java.lang.String,
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: js.UndefOr[scala.Nothing],
     javascriptMapText: java.lang.String,
     declarationMapPath: java.lang.String,
     declarationMapText: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInputFiles(
-    javascript: java.lang.String,
-    declaration: java.lang.String,
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: js.UndefOr[scala.Nothing],
     javascriptMapText: java.lang.String,
     declarationMapPath: js.UndefOr[scala.Nothing],
     declarationMapText: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInputFiles(
-    javascript: java.lang.String,
-    declaration: java.lang.String,
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: js.UndefOr[scala.Nothing],
     javascriptMapText: js.UndefOr[scala.Nothing],
     declarationMapPath: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInputFiles(
-    javascript: java.lang.String,
-    declaration: java.lang.String,
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: js.UndefOr[scala.Nothing],
     javascriptMapText: js.UndefOr[scala.Nothing],
     declarationMapPath: java.lang.String,
     declarationMapText: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInputFiles(
-    javascript: java.lang.String,
-    declaration: java.lang.String,
+    javascriptText: java.lang.String,
+    declarationText: java.lang.String,
     javascriptMapPath: js.UndefOr[scala.Nothing],
     javascriptMapText: js.UndefOr[scala.Nothing],
     declarationMapPath: js.UndefOr[scala.Nothing],
     declarationMapText: java.lang.String
+  ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
+    javascriptMapPath: java.lang.String,
+    declarationPath: java.lang.String
+  ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
+    javascriptMapPath: java.lang.String,
+    declarationPath: java.lang.String,
+    declarationMapPath: java.lang.String
+  ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    declarationPath: java.lang.String
+  ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
+  def createInputFiles(
+    readFileText: js.Function1[/* path */ java.lang.String, js.UndefOr[java.lang.String]],
+    javascriptPath: java.lang.String,
+    javascriptMapPath: js.UndefOr[scala.Nothing],
+    declarationPath: java.lang.String,
+    declarationMapPath: java.lang.String
   ): typescriptLib.typescriptMod.tsNs.InputFiles = js.native
   def createInterfaceDeclaration(
     decorators: js.UndefOr[js.Array[typescriptLib.typescriptMod.tsNs.Decorator]],
@@ -2977,6 +3007,16 @@ object ^ extends js.Object {
   def createUnparsedSourceFile(text: java.lang.String, mapPath: java.lang.String): typescriptLib.typescriptMod.tsNs.UnparsedSource = js.native
   def createUnparsedSourceFile(text: java.lang.String, mapPath: java.lang.String, map: java.lang.String): typescriptLib.typescriptMod.tsNs.UnparsedSource = js.native
   def createUnparsedSourceFile(text: java.lang.String, mapPath: js.UndefOr[scala.Nothing], map: java.lang.String): typescriptLib.typescriptMod.tsNs.UnparsedSource = js.native
+  @JSName("createUnparsedSourceFile")
+  def createUnparsedSourceFile_dts(
+    inputFile: typescriptLib.typescriptMod.tsNs.InputFiles,
+    `type`: typescriptLib.typescriptLibStrings.dts
+  ): typescriptLib.typescriptMod.tsNs.UnparsedSource = js.native
+  @JSName("createUnparsedSourceFile")
+  def createUnparsedSourceFile_js(
+    inputFile: typescriptLib.typescriptMod.tsNs.InputFiles,
+    `type`: typescriptLib.typescriptLibStrings.JS
+  ): typescriptLib.typescriptMod.tsNs.UnparsedSource = js.native
   def createVariableDeclaration(name: java.lang.String): typescriptLib.typescriptMod.tsNs.VariableDeclaration = js.native
   def createVariableDeclaration(name: java.lang.String, `type`: typescriptLib.typescriptMod.tsNs.TypeNode): typescriptLib.typescriptMod.tsNs.VariableDeclaration = js.native
   def createVariableDeclaration(

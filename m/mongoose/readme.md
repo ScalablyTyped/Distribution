@@ -18,6 +18,7 @@
 //                 stablio <https://github.com/stablio>
 //                 Emmanuel Gautier <https://github.com/emmanuelgautier>
 //                 Frontend Monster <https://github.com/frontendmonster>
+//                 Ming Chen <https://github.com/mingchen>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 ```

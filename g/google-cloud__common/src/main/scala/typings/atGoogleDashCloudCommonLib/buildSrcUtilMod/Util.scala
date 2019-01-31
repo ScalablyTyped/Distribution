@@ -84,7 +84,7 @@ class Util () extends js.Object {
     * (default: true)
     * @param {number=} config.maxRetries - Maximum number of automatic retries
     *     attempted before returning the error. (default: 3)
-    * @param {typeof r=} config.request - HTTP module for request calls.
+    * @param {object=} config.request - HTTP module for request calls.
     * @param {function} callback - The callback function.
     */
   def makeRequest(reqOpts: DecorateRequestOptions, config: MakeRequestConfig, callback: BodyResponseCallback): scala.Unit | Abortable = js.native
@@ -108,6 +108,16 @@ class Util () extends js.Object {
     options: MakeWritableStreamOptions,
     onComplete: js.Function
   ): scala.Unit = js.native
+  /**
+    * Given two parameters, figure out if this is either:
+    *  - Just a callback function
+    *  - An options object, and then a callback function
+    * @param optionsOrCallback An options object or callback.
+    * @param cb A potentially undefined callback.
+    */
+  def maybeOptionsOrCallback[T, C](): js.Tuple2[T, C] = js.native
+  def maybeOptionsOrCallback[T, C](optionsOrCallback: C | T): js.Tuple2[T, C] = js.native
+  def maybeOptionsOrCallback[T, C](optionsOrCallback: C | T, cb: C): js.Tuple2[T, C] = js.native
   /**
     * No op.
     *

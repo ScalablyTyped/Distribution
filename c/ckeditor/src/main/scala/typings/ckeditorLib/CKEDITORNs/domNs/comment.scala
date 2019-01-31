@@ -12,7 +12,6 @@ class comment protected () extends node {
   def this(comment: stdLib.Node) = this()
   def this(comment: java.lang.String, ownerDocument: document) = this()
   def this(comment: stdLib.Node, ownerDocument: document) = this()
-  val `type`: scala.Double = js.native
   def getOuterHtml(): java.lang.String = js.native
 }
 

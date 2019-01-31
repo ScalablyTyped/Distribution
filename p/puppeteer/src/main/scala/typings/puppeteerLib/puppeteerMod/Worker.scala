@@ -13,12 +13,18 @@ trait Worker extends js.Object {
     * If the function passed to the `worker.evaluate` returns a non-Serializable value,
     * then `worker.evaluate` resolves to `undefined`.
     */
-  def evaluate[T](pageFunction: js.Function1[/* repeated */ js.Any, T | js.Promise[T]], args: js.Any*): js.Promise[T]
+  def evaluate[T](
+    pageFunction: js.Function1[/* repeated */ js.Any, T | js.Promise[T]],
+    args: SerializableOrJSHandle*
+  ): js.Promise[T]
   /**
     * The only difference between `worker.evaluate` and `worker.evaluateHandle` is
     * that `worker.evaluateHandle` returns in-page object (JSHandle).
     */
-  def evaluateHandle[T](pageFunction: js.Function1[/* repeated */ js.Any, T | js.Promise[T]], args: js.Any*): js.Promise[T]
+  def evaluateHandle[T](
+    pageFunction: js.Function1[/* repeated */ js.Any, T | js.Promise[T]],
+    args: SerializableOrJSHandle*
+  ): js.Promise[T]
   def executionContext(): js.Promise[ExecutionContext]
   def url(): java.lang.String
 }

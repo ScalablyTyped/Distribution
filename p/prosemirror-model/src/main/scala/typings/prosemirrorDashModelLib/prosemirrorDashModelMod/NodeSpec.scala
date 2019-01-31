@@ -98,5 +98,10 @@ trait NodeSpec extends js.Object {
     * shouldn't override that in your text node spec.
     */
   var toDOM: js.UndefOr[(js.Function1[/* node */ ProsemirrorNode[_], DOMOutputSpec]) | scala.Null] = js.undefined
+  /**
+    * Defines the default way a node of this type should be serialized
+    * to a string representation for debugging (e.g. in error messages).
+    */
+  var toDebugString: js.UndefOr[(js.Function1[/* node */ ProsemirrorNode[_], java.lang.String]) | scala.Null] = js.undefined
 }
 

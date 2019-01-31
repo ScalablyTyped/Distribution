@@ -37,7 +37,7 @@ trait Evalable extends js.Object {
   def $$eval[R](
     selector: java.lang.String,
     pageFunction: js.Function2[/* elements */ js.Array[stdLib.Element], /* repeated */ js.Any, R | js.Promise[R]],
-    args: js.Any*
+    args: SerializableOrJSHandle*
   ): js.Promise[WrapElementHandle[R]] = js.native
   /**
     * This method runs `Array.from(document.querySelectorAll(selector))` within the context and passes it as the
@@ -141,7 +141,7 @@ trait Evalable extends js.Object {
   def $eval[R](
     selector: java.lang.String,
     pageFunction: js.Function2[/* element */ stdLib.Element, /* repeated */ js.Any, R | js.Promise[R]],
-    args: js.Any*
+    args: SerializableOrJSHandle*
   ): js.Promise[WrapElementHandle[R]] = js.native
   /**
     * This method runs `document.querySelector` within the context and passes it as the first argument to `pageFunction`.

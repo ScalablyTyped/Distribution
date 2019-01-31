@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "prosemirror-schema-basic"
-version := "1.0-dt-20181017Z-f489cc"
+version := "1.0-dt-20181017Z-b83d9a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "orderedmap" % "1.0-dt-20180214Z-cd3605",
-  "org.scalablytyped" %%% "prosemirror-model" % "1.5-dt-20190116Z-6ea611",
-  "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
+  "org.scalablytyped" %%% "orderedmap" % "1.0-dt-20180214Z-276335",
+  "org.scalablytyped" %%% "prosemirror-model" % "1.7-dt-20190130Z-9ca417",
+  "org.scalablytyped" %%% "std" % "3.3.1-6e0314")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

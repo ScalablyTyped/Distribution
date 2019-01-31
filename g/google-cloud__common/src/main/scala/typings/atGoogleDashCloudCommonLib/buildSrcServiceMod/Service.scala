@@ -43,6 +43,16 @@ class Service protected () extends js.Object {
     requestLib.requestMod.requestNs.RequiredUriUrl
   ]) = js.native
   /**
+    * Make an authenticated API request.
+    *
+    * @private
+    *
+    * @param {object} reqOpts - Request options that are passed to `request`.
+    * @param {string} reqOpts.uri - A URI relative to the baseUrl.
+    * @param {function} callback - The callback function passed to `request`.
+    */
+  var `request_`: js.Any = js.native
+  /**
     * Get and update the Service's project ID.
     *
     * @param {function} callback - The callback function.
@@ -76,7 +86,6 @@ class Service protected () extends js.Object {
     * @param {string} reqOpts.uri - A URI relative to the baseUrl.
     * @param {function} callback - The callback function passed to `request`.
     */
-  def request(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): js.Promise[requestLib.requestMod.requestNs.Response] = js.native
   def request(
     reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions,
     callback: atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback
@@ -105,16 +114,5 @@ class Service protected () extends js.Object {
     * @param {string} reqOpts.uri - A URI relative to the baseUrl.
     */
   def requestStream(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): requestLib.requestMod.requestNs.Request = js.native
-  /**
-    * Make an authenticated API request.
-    *
-    * @private
-    *
-    * @param {object} reqOpts - Request options that are passed to `request`.
-    * @param {string} reqOpts.uri - A URI relative to the baseUrl.
-    * @param {function} callback - The callback function passed to `request`.
-    */
-  def `request_`(reqOpts: StreamRequestOptions): requestLib.requestMod.requestNs.Request = js.native
-  def `request_`(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): js.Promise[requestLib.requestMod.requestNs.Response] = js.native
 }
 

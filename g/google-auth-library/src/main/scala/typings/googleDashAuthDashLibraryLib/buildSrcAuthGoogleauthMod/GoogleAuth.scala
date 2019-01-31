@@ -240,7 +240,7 @@ class GoogleAuth () extends js.Object {
     * HTTP request using the given options.
     * @param opts Axios request options for the HTTP request.
     */
-  def request[T](opts: axiosLib.axiosMod.AxiosRequestConfig): js.Promise[axiosLib.axiosMod.AxiosResponse[T]] = js.native
+  def request[T](opts: gaxiosLib.buildSrcCommonMod.GaxiosOptions): js.Promise[gaxiosLib.buildSrcCommonMod.GaxiosResponse[T]] = js.native
   /**
     * Sign the given data with the current private key, or go out
     * to the IAM API to sign it.

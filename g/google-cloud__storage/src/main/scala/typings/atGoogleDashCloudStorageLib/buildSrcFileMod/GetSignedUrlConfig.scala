@@ -10,7 +10,7 @@ trait GetSignedUrlConfig extends js.Object {
   var cname: js.UndefOr[java.lang.String] = js.undefined
   var contentMd5: js.UndefOr[java.lang.String] = js.undefined
   var contentType: js.UndefOr[java.lang.String] = js.undefined
-  var expires: scala.Double
+  var expires: java.lang.String | scala.Double | stdLib.Date
   var extensionHeaders: js.UndefOr[nodeLib.httpMod.OutgoingHttpHeaders] = js.undefined
   var promptSaveAs: js.UndefOr[java.lang.String] = js.undefined
   var responseDisposition: js.UndefOr[java.lang.String] = js.undefined

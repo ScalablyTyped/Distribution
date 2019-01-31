@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 // TODO: come in and tidy this up and make it fit better
 trait IChartistData extends js.Object {
   var labels: js.UndefOr[js.Array[java.lang.String] | js.Array[scala.Double] | js.Array[stdLib.Date]] = js.undefined
-  var series: js.Array[IChartistSeriesData] | js.Array[js.Array[IChartistData]] | js.Array[scala.Double] | js.Array[js.Array[scala.Double]]
+  var series: js.Array[IChartistSeriesData] | js.Array[js.Array[IChartistSeriesData]] | js.Array[js.Array[IChartistData]] | js.Array[scala.Double] | js.Array[js.Array[scala.Double]]
 }
 

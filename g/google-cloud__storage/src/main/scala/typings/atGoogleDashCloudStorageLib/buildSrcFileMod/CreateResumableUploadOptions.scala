@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CreateResumableUploadOptions extends js.Object {
-  var metadata: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.Any
-  ] = js.undefined
+  var metadata: js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata] = js.undefined
   var offset: js.UndefOr[scala.Double] = js.undefined
   var origin: js.UndefOr[java.lang.String] = js.undefined
   var predefinedAcl: js.UndefOr[PredefinedAcl] = js.undefined

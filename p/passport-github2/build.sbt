@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "passport-github2"
-version := "1.2-dt-20190117Z-4e4020"
+version := "1.2-dt-20190117Z-07c352"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-b38537",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-c7658c",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-02bf23",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-7910af",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-2342ad",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-40209e",
-  "org.scalablytyped" %%% "oauth" % "0.9-dt-20181015Z-0aecc4",
-  "org.scalablytyped" %%% "passport" % "1.0-dt-20181215Z-669bf8",
-  "org.scalablytyped" %%% "passport-oauth2" % "1.4-dt-20181204Z-5b66d8",
-  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-a57469",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-195cb6",
-  "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-4a385a",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-f52607",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-613b84",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-1d8801",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-5089c8",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
+  "org.scalablytyped" %%% "oauth" % "0.9-dt-20181015Z-b16bc2",
+  "org.scalablytyped" %%% "passport" % "1.0-dt-20181215Z-41b8ad",
+  "org.scalablytyped" %%% "passport-oauth2" % "1.4-dt-20181204Z-7e22c3",
+  "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-145d73",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-146c83",
+  "org.scalablytyped" %%% "std" % "3.3.1-6e0314")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

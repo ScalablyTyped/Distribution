@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "sw-precache-webpack-plugin"
-version := "0.11-dt-20180507Z-c2bbdf"
+version := "0.11-dt-20180507Z-ac6a79"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "anymatch" % "1.3-dt-20180214Z-3be82b",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-40209e",
-  "org.scalablytyped" %%% "path-to-regexp" % "3.0.0-262c6b",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-1d8315",
-  "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
-  "org.scalablytyped" %%% "sw-precache" % "5.2-dt-20180504Z-b9347e",
-  "org.scalablytyped" %%% "sw-toolbox" % "3.6.0-9a328b",
-  "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-1d4d44",
-  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-280313",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190116Z-40f11b")
+  "org.scalablytyped" %%% "anymatch" % "1.3-dt-20180214Z-92d399",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
+  "org.scalablytyped" %%% "path-to-regexp" % "3.0.0-fffb7f",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-4d6b96",
+  "org.scalablytyped" %%% "std" % "3.3.1-6e0314",
+  "org.scalablytyped" %%% "sw-precache" % "5.2-dt-20180504Z-1f7867",
+  "org.scalablytyped" %%% "sw-toolbox" % "3.6.0-d0052b",
+  "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-3bfc94",
+  "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-faabb7",
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190116Z-9d8df8")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

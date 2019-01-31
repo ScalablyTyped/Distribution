@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ServiceConfig extends js.Object {
   /**
+    * Reuse an existing GoogleAuth client instead of creating a new one.
+    */
+  var authClient: js.UndefOr[googleDashAuthDashLibraryLib.googleDashAuthDashLibraryMod.GoogleAuth] = js.native
+  /**
     * The base URL to make API requests to.
     */
   var baseUrl: java.lang.String = js.native

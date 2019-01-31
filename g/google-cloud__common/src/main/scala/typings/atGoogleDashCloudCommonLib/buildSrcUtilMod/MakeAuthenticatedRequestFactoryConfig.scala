@@ -9,6 +9,11 @@ import scala.scalajs.js.annotation._
 trait MakeAuthenticatedRequestFactoryConfig
   extends googleDashAuthDashLibraryLib.buildSrcAuthGoogleauthMod.GoogleAuthOptions {
   /**
+    * A pre-instantiated GoogleAuth client that should be used.
+    * A new will be created if this is not set.
+    */
+  var authClient: js.UndefOr[googleDashAuthDashLibraryLib.googleDashAuthDashLibraryMod.GoogleAuth] = js.native
+  /**
     * Automatically retry requests if the response is related to rate limits or
     * certain intermittent server errors. We will exponentially backoff
     * subsequent requests by default. (default: true)

@@ -1,27 +1,27 @@
 organization := "org.scalablytyped"
 name := "vue-server-renderer"
-version := "2.5.22-c0195b"
+version := "2.5.22-f08c02"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-ec2bbb",
-  "org.scalablytyped" %%% "chalk" % "2.4.2-aa77e5",
-  "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-786ea5",
-  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-433270",
-  "org.scalablytyped" %%% "hash-sum" % "1.0-dt-20180822Z-63bb88",
-  "org.scalablytyped" %%% "he" % "v1.1.1-dt-20180507Z-62eec6",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-c48db4",
-  "org.scalablytyped" %%% "lodash_dot_template" % "4.4-dt-20180723Z-2112a7",
-  "org.scalablytyped" %%% "lodash_dot_uniq" % "4.5-dt-20180723Z-50b6ec",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-40209e",
-  "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180507Z-b743c1",
-  "org.scalablytyped" %%% "serialize-javascript" % "1.5-dt-20181015Z-3a9e0a",
-  "org.scalablytyped" %%% "source-map" % "0.7.3-1d8315",
-  "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
-  "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-394486",
-  "org.scalablytyped" %%% "vue" % "2.5.22-e8dce6")
+  "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-21090e",
+  "org.scalablytyped" %%% "chalk" % "2.4.2-8e87c7",
+  "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-de46de",
+  "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-98c322",
+  "org.scalablytyped" %%% "hash-sum" % "1.0-dt-20180822Z-46a630",
+  "org.scalablytyped" %%% "he" % "v1.1.1-dt-20180507Z-1d5b2e",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-e5b16b",
+  "org.scalablytyped" %%% "lodash_dot_template" % "4.4-dt-20180723Z-bfe9a4",
+  "org.scalablytyped" %%% "lodash_dot_uniq" % "4.5-dt-20180723Z-4362be",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
+  "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180507Z-508cae",
+  "org.scalablytyped" %%% "serialize-javascript" % "1.5-dt-20181015Z-cba853",
+  "org.scalablytyped" %%% "source-map" % "0.7.3-4d6b96",
+  "org.scalablytyped" %%% "std" % "3.3.1-6e0314",
+  "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-efeb04",
+  "org.scalablytyped" %%% "vue" % "2.5.22-9075b7")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

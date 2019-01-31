@@ -20,6 +20,7 @@ package object p5Ns {
   type BLEND_MODE = BLEND | DARKEST | LIGHTEST | DIFFERENCE | MULTIPLY | EXCLUSION | SCREEN | REPLACE | OVERLAY | HARD_LIGHT | SOFT_LIGHT | DODGE | BURN | ADD | NORMAL
   type BLUR = p5Lib.p5LibStrings.blur
   type BOLD = p5Lib.p5LibStrings.bold
+  type BOLDITALIC = p5Lib.p5LibStrings.bolditalic
   type BOTTOM = p5Lib.p5LibStrings.bottom
   type BURN = p5Lib.p5LibStrings.`color-burn`
   type BandPass = p5Lib.p5Mod.Filter
@@ -30,7 +31,7 @@ package object p5Ns {
   type CORNER = p5Lib.p5LibStrings.corner
   type CORNERS = p5Lib.p5LibStrings.corners
   type CROSS = p5Lib.p5LibStrings.cross
-  type CURSOR_TYPE = ARROW | CROSS | HAND | MOVE | TEXT | WAIT
+  type CURSOR_TYPE = ARROW | CROSS | HAND | MOVE | TEXT
   type DARKEST = p5Lib.p5LibStrings.darkest
   type DEBUG_MODE = GRID | AXES
   type DEGREES = p5Lib.p5LibStrings.degrees
@@ -51,6 +52,7 @@ package object p5Ns {
   type HSB = p5Lib.p5LibStrings.hsb
   type HSL = p5Lib.p5LibStrings.hsl
   type HighPass = p5Lib.p5Mod.Filter
+  type IMAGE = p5Lib.p5LibStrings.image
   type IMAGE_MODE = CORNER | CORNERS | CENTER
   type INVERT = p5Lib.p5LibStrings.invert
   type ITALIC = p5Lib.p5LibStrings.italic
@@ -97,7 +99,8 @@ package object p5Ns {
   type SqrOsc = p5Lib.p5Mod.Oscillator
   type StringDict = p5Lib.p5Mod.TypedDict
   type TEXT = p5Lib.p5LibStrings.text
-  type THE_STYLE = NORMAL | ITALIC | BOLD
+  type TEXTURE_MODE = IMAGE | NORMAL
+  type THE_STYLE = NORMAL | ITALIC | BOLD | BOLDITALIC
   type THRESHOLD = p5Lib.p5LibStrings.threshold
   type TOP = p5Lib.p5LibStrings.top
   type TRIANGLES = p5Lib.p5LibNumbers.`0x0004`

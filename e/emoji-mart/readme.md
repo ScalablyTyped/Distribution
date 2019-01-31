@@ -2,7 +2,7 @@
 // The other exports on the components folder are not public API
 // Type definitions for emoji-mart 2.8
 // Project: https://github.com/missive/emoji-mart
-// Definitions by: Jessica Franco <https://github.com/Kovensky>
+// Definitions by: Jessica Franco <https://github.com/Jessidhia>
 //                 Nick Winans <https://github.com/Nicell>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8

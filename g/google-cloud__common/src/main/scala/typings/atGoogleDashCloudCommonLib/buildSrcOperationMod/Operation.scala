@@ -39,7 +39,7 @@ class Operation[T] protected ()
     *
     * @private
     */
-  /* protected */ def `poll_`(callback: atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.GetMetadataCallback): scala.Unit = js.native
+  /* protected */ def `poll_`(callback: atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.MetadataCallback): scala.Unit = js.native
   /**
     * Wraps the `complete` and `error` events in a Promise.
     *

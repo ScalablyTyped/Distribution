@@ -10,7 +10,7 @@ trait GetSignedPolicyOptions extends js.Object {
   var contentLengthRange: js.UndefOr[atGoogleDashCloudStorageLib.Anon_Max] = js.undefined
   @JSName("equals")
   var equals_FGetSignedPolicyOptions: js.UndefOr[js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]]] = js.undefined
-  var expires: stdLib.Date
+  var expires: java.lang.String | scala.Double | stdLib.Date
   var startsWith: js.UndefOr[js.Array[java.lang.String] | js.Array[js.Array[java.lang.String]]] = js.undefined
   var successRedirect: js.UndefOr[java.lang.String] = js.undefined
   var successStatus: js.UndefOr[java.lang.String] = js.undefined

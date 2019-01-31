@@ -25,28 +25,19 @@ import scala.scalajs.js.annotation._
   *
   * const notification = myBucket.notification('1');
   */
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any
-- Dropped any */ @JSImport("@google-cloud/storage/build/src/notification", "Notification")
+@JSImport("@google-cloud/storage/build/src/notification", "Notification")
 @js.native
-class Notification protected () extends js.Object {
+class Notification protected ()
+  extends atGoogleDashCloudCommonLib.atGoogleDashCloudCommonMod.ServiceObject[js.Any] {
   def this(bucket: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket, id: java.lang.String) = this()
-  def delete(): js.Promise[js.Array[requestLib.requestMod.requestNs.Response]] = js.native
-  def delete(callback: DeleteNotificationCallback): scala.Unit = js.native
   def delete(options: DeleteNotificationOptions): js.Promise[js.Array[requestLib.requestMod.requestNs.Response]] = js.native
   def delete(options: DeleteNotificationOptions, callback: DeleteNotificationCallback): scala.Unit = js.native
-  def get(): js.Promise[GetNotificationResponse] = js.native
-  def get(callback: GetNotificationCallback): scala.Unit = js.native
   def get(options: GetNotificationOptions): js.Promise[GetNotificationResponse] = js.native
   def get(options: GetNotificationOptions, callback: GetNotificationCallback): scala.Unit = js.native
-  def getMetadata(): js.Promise[GetNotificationMetadataResponse] = js.native
-  def getMetadata(
-    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GetMetadataCallback */ js.Any
-  ): scala.Unit = js.native
   def getMetadata(options: GetNotificationMetadataOptions): js.Promise[GetNotificationMetadataResponse] = js.native
   def getMetadata(
     options: GetNotificationMetadataOptions,
-    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GetMetadataCallback */ js.Any
+    callback: atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.MetadataCallback
   ): scala.Unit = js.native
 }
 

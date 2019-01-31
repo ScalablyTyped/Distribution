@@ -5,10 +5,52 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("@google-cloud/storage/build/src/storage", "Storage")
+@JSImport("@google-cloud/storage/build/src/storage", "Storage")
 @js.native
-class Storage () extends js.Object {
+/**
+  * @typedef {object} StorageOptions
+  * @property {string} [projectId] The project ID from the Google Developer's
+  *     Console, e.g. 'grape-spaceship-123'. We will also check the environment
+  *     variable `GCLOUD_PROJECT` for your project ID. If your app is running
+  * in an environment which supports {@link
+  * https://cloud.google.com/docs/authentication/production#providing_credentials_to_your_application
+  * Application Default Credentials}, your project ID will be detected
+  * automatically.
+  * @property {string} [keyFilename] Full path to the a .json, .pem, or .p12 key
+  *     downloaded from the Google Developers Console. If you provide a path to
+  * a JSON file, the `projectId` option above is not necessary. NOTE: .pem and
+  *     .p12 require you to specify the `email` option as well.
+  * @property {string} [email] Account email address. Required when using a .pem
+  *     or .p12 keyFilename.
+  * @property {object} [credentials] Credentials object.
+  * @property {string} [credentials.client_email]
+  * @property {string} [credentials.private_key]
+  * @property {boolean} [autoRetry=true] Automatically retry requests if the
+  *     response is related to rate limits or certain intermittent server
+  * errors. We will exponentially backoff subsequent requests by default.
+  * @property {number} [maxRetries=3] Maximum number of automatic retries
+  *     attempted before returning the error.
+  * @property {Constructor} [promise] Custom promise module to use instead of
+  *     native Promises.
+  */
+/**
+  * Constructs the Storage client.
+  *
+  * @example <caption>Create a client that uses Application Default Credentials
+  * (ADC)</caption> const {Storage} = require('@google-cloud/storage'); const
+  * storage = new Storage();
+  *
+  * @example <caption>Create a client with explicit credentials</caption>
+  * storage');/storage');
+  * const storage = new Storage({
+  *   projectId: 'your-project-id',
+  *   keyFilename: '/path/to/keyfile.json'
+  * });
+  *
+  * @param {StorageOptions} [options] Configuration options.
+  */
+class Storage ()
+  extends atGoogleDashCloudCommonLib.atGoogleDashCloudCommonMod.Service {
   def this(options: StorageOptions) = this()
   /**
     * Reference to {@link Storage.acl}.
@@ -54,6 +96,7 @@ class Storage () extends js.Object {
   def channel(id: java.lang.String, resourceId: java.lang.String): atGoogleDashCloudStorageLib.buildSrcChannelMod.Channel = js.native
   def createBucket(name: java.lang.String): js.Promise[CreateBucketResponse] = js.native
   def createBucket(name: java.lang.String, callback: BucketCallback): scala.Unit = js.native
+  def createBucket(name: java.lang.String, metadata: CreateBucketRequest): js.Promise[CreateBucketResponse] = js.native
   def createBucket(name: java.lang.String, metadata: CreateBucketRequest, callback: BucketCallback): scala.Unit = js.native
   def getBuckets(): js.Promise[GetBucketsResponse] = js.native
   def getBuckets(callback: GetBucketsCallback): scala.Unit = js.native
@@ -93,8 +136,7 @@ class Storage () extends js.Object {
   def getServiceAccount(options: GetServiceAccountOptions, callback: GetServiceAccountCallback): scala.Unit = js.native
 }
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("@google-cloud/storage/build/src/storage", "Storage")
+@JSImport("@google-cloud/storage/build/src/storage", "Storage")
 @js.native
 object Storage extends js.Object {
   /**

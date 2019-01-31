@@ -20,7 +20,9 @@ trait ParseConfig extends js.Object {
      // default: false
   var download: js.UndefOr[scala.Boolean] = js.undefined
            // default: false
-  var dynamicTyping: js.UndefOr[scala.Boolean] = js.undefined
+  var dynamicTyping: js.UndefOr[
+    scala.Boolean | (/* import warning: ImportType.apply Failed type conversion: {[headerName: string] : boolean, [columnNumber: number] : boolean} */ js.Any) | (js.Function1[/* field */ java.lang.String | scala.Double, scala.Boolean])
+  ] = js.undefined
                 // default: 0
   var encoding: js.UndefOr[java.lang.String] = js.undefined
    // default: undefined
@@ -33,7 +35,7 @@ trait ParseConfig extends js.Object {
   var header: js.UndefOr[scala.Boolean] = js.undefined
               // default: ","
   var newline: js.UndefOr[java.lang.String] = js.undefined
-         // default: false
+   // default: false
   var preview: js.UndefOr[scala.Double] = js.undefined
                 // default: "\r\n"
   var quoteChar: js.UndefOr[java.lang.String] = js.undefined

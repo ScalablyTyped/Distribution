@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SoundLoop extends js.Object {
   /**
-    *   Getters and Setters, setting any parameter will
+    *   Getters and Setters, setting any paramter will
     *   result in a change in the clock's frequency, that
     *   will be reflected after the next callback beats
     *   per minute (defaults to 60)

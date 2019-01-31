@@ -7,11 +7,8 @@ import scala.scalajs.js.annotation._
 
 package object relayDashRuntimeMod {
   type CSnapshot[TNode] = CSelector[TNode] with relayDashRuntimeLib.Anon_Data
-  type ConcreteBatchRequest = js.Any
-  type ConcreteFragment = js.Any
   type ConcreteFragmentDefinition = js.Object
   type ConcreteOperationDefinition = js.Object
-  type ConcreteRequest = js.Any
   type DataID = java.lang.String
   type ExecuteFunction = js.Function4[
     /* operation */ js.Object, 

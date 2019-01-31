@@ -12,6 +12,14 @@ trait JsonPropertyOptions extends js.Object {
     */
   var access: js.UndefOr[Access] = js.undefined
   /**
+    * Ignore the type of this property.
+    * This means that during the deserialization process the content of the
+    * json will be copied directly without any kind of check. The same thing
+    * during serialization.
+    * Default value: false
+    */
+  var ignoreType: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Indicates the name of the key on the JSON, this is very useful
     * if you need to have a different name on the class.
     * Eg. If you mark your private property with "_"

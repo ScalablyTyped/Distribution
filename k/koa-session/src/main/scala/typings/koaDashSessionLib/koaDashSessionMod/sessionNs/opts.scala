@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait opts extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof cookies.cookies.SetOption, 'maxAge'> ]: cookies.cookies.SetOption[P]} */ trait opts extends js.Object {
   /**
     * If your session store requires data or utilities from context, opts.ContextStore is alse supported.
     * ContextStore must be a class which claims three instance methods demonstrated above.
@@ -31,10 +32,6 @@ trait opts extends js.Object {
     */
   var encode: js.Function1[/* obj */ js.Object, java.lang.String]
   /**
-    * httpOnly or not (default true)
-    */
-  var httpOnly: scala.Boolean
-  /**
     * cookie key (default is koa:sess)
     */
   var key: java.lang.String
@@ -44,10 +41,6 @@ trait opts extends js.Object {
     * Warning: If a session cookie is stolen, this cookie will never expire
     */
   var maxAge: js.UndefOr[scala.Double | koaDashSessionLib.koaDashSessionLibStrings.session] = js.undefined
-  /**
-    * can overwrite or not (default true)
-    */
-  var overwrite: scala.Boolean
   /**
     * If you want to add prefix for all external session id, you can use options.prefix, it will not work if options.genid present.
     */
@@ -60,10 +53,6 @@ trait opts extends js.Object {
     * Force a session identifier cookie to be set on every response. The expiration is reset to the original maxAge, resetting the expiration countdown. default is false
     */
   var rolling: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-    * signed or not (default true)
-    */
-  var signed: scala.Boolean
   /**
     * You can store the session content in external stores(redis, mongodb or other DBs)
     */

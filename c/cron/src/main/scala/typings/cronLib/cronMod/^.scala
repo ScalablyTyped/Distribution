@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("cron", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var job: (js.Function7[
+  var job: (js.Function9[
     /* cronTime */ java.lang.String | stdLib.Date, 
     /* onTick */ js.Function0[scala.Unit], 
     /* onComplete */ js.UndefOr[js.Function0[scala.Unit]], 
@@ -16,6 +16,8 @@ object ^ extends js.Object {
     /* timeZone */ js.UndefOr[java.lang.String], 
     /* context */ js.UndefOr[js.Any], 
     /* runOnInit */ js.UndefOr[scala.Boolean], 
+    /* utcOffset */ js.UndefOr[java.lang.String | scala.Double], 
+    /* unrefTimeout */ js.UndefOr[scala.Boolean], 
     cronLib.cronMod.CronJob
   ]) | (js.Function1[/* options */ cronLib.cronMod.CronJobParameters, cronLib.cronMod.CronJob]) = js.native
   var sendAt: js.Function1[/* cronTime */ cronLib.cronMod.CronTime, stdLib.Date] = js.native

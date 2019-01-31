@@ -108,6 +108,10 @@ trait ObjectSchema extends AnySchema {
     */
   def requiredKeys(children: js.Array[java.lang.String]): this.type = js.native
   /**
+    * Requires the object to be a Joi schema instance.
+    */
+  def schema(): this.type = js.native
+  /**
     * Requires the object to be an instance of a given constructor.
     *
     * @param constructor - the constructor function that the object must be an instance of.

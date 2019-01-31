@@ -10,10 +10,19 @@ object sipDotJsLibStrings {
   sealed trait `SessionDescriptionHandler-created` extends js.Object
   
   @js.native
+  sealed trait UAC extends js.Object
+  
+  @js.native
+  sealed trait UAS extends js.Object
+  
+  @js.native
   sealed trait accepted extends js.Object
   
   @js.native
   sealed trait ack extends js.Object
+  
+  @js.native
+  sealed trait addStream extends js.Object
   
   @js.native
   sealed trait addTrack extends js.Object
@@ -32,6 +41,12 @@ object sipDotJsLibStrings {
   
   @js.native
   sealed trait dialog extends js.Object
+  
+  @js.native
+  sealed trait directionChanged extends js.Object
+  
+  @js.native
+  sealed trait dtmf extends js.Object
   
   @js.native
   sealed trait failed extends js.Object
@@ -118,6 +133,9 @@ object sipDotJsLibStrings {
   sealed trait referRequestAccepted extends js.Object
   
   @js.native
+  sealed trait referRequestProgress extends js.Object
+  
+  @js.native
   sealed trait referRequestRejected extends js.Object
   
   @js.native
@@ -157,6 +175,9 @@ object sipDotJsLibStrings {
   sealed trait terminated extends js.Object
   
   @js.native
+  sealed trait trackAdded extends js.Object
+  
+  @js.native
   sealed trait transactionDestroyed extends js.Object
   
   @js.native
@@ -175,14 +196,19 @@ object sipDotJsLibStrings {
   sealed trait userMediaRequest extends js.Object
   
   def `SessionDescriptionHandler-created`: `SessionDescriptionHandler-created` = "SessionDescriptionHandler-created".asInstanceOf[`SessionDescriptionHandler-created`]
+  def UAC: UAC = "UAC".asInstanceOf[UAC]
+  def UAS: UAS = "UAS".asInstanceOf[UAS]
   def accepted: accepted = "accepted".asInstanceOf[accepted]
   def ack: ack = "ack".asInstanceOf[ack]
+  def addStream: addStream = "addStream".asInstanceOf[addStream]
   def addTrack: addTrack = "addTrack".asInstanceOf[addTrack]
   def bye: bye = "bye".asInstanceOf[bye]
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   def confirmed: confirmed = "confirmed".asInstanceOf[confirmed]
   def connecting: connecting = "connecting".asInstanceOf[connecting]
   def dialog: dialog = "dialog".asInstanceOf[dialog]
+  def directionChanged: directionChanged = "directionChanged".asInstanceOf[directionChanged]
+  def dtmf: dtmf = "dtmf".asInstanceOf[dtmf]
   def failed: failed = "failed".asInstanceOf[failed]
   def getDescription: getDescription = "getDescription".asInstanceOf[getDescription]
   def iceCandidate: iceCandidate = "iceCandidate".asInstanceOf[iceCandidate]
@@ -210,6 +236,7 @@ object sipDotJsLibStrings {
   def referProgress: referProgress = "referProgress".asInstanceOf[referProgress]
   def referRejected: referRejected = "referRejected".asInstanceOf[referRejected]
   def referRequestAccepted: referRequestAccepted = "referRequestAccepted".asInstanceOf[referRequestAccepted]
+  def referRequestProgress: referRequestProgress = "referRequestProgress".asInstanceOf[referRequestProgress]
   def referRequestRejected: referRequestRejected = "referRequestRejected".asInstanceOf[referRequestRejected]
   def referRequested: referRequested = "referRequested".asInstanceOf[referRequested]
   def registered: registered = "registered".asInstanceOf[registered]
@@ -223,6 +250,7 @@ object sipDotJsLibStrings {
   def setDescription: setDescription = "setDescription".asInstanceOf[setDescription]
   def setRemoteDescription: setRemoteDescription = "setRemoteDescription".asInstanceOf[setRemoteDescription]
   def terminated: terminated = "terminated".asInstanceOf[terminated]
+  def trackAdded: trackAdded = "trackAdded".asInstanceOf[trackAdded]
   def transactionDestroyed: transactionDestroyed = "transactionDestroyed".asInstanceOf[transactionDestroyed]
   def transportCreated: transportCreated = "transportCreated".asInstanceOf[transportCreated]
   def unregistered: unregistered = "unregistered".asInstanceOf[unregistered]

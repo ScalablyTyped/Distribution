@@ -20,11 +20,10 @@ import scala.scalajs.js.annotation._
   * const storage = new Storage();
   * const channel = storage.channel('id', 'resource-id');
   */
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any
-- Dropped any */ @JSImport("@google-cloud/storage/build/src/channel", "Channel")
+@JSImport("@google-cloud/storage/build/src/channel", "Channel")
 @js.native
-class Channel protected () extends js.Object {
+class Channel protected ()
+  extends atGoogleDashCloudCommonLib.atGoogleDashCloudCommonMod.ServiceObject[js.Any] {
   def this(storage: atGoogleDashCloudStorageLib.buildSrcStorageMod.Storage, id: java.lang.String, resourceId: java.lang.String) = this()
   def stop(): js.Promise[requestLib.requestMod.requestNs.Response] = js.native
   def stop(callback: StopCallback): scala.Unit = js.native

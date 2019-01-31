@@ -26,19 +26,8 @@ trait Float64ArrayConstructor
   /**
     * Creates an array from an array-like or iterable object.
     * @param arrayLike An array-like or iterable object to convert to an array.
-    * @param mapfn A mapping function to call on every element of the array.
-    * @param thisArg Value of 'this' used to invoke the mapfn.
     */
   def from(arrayLike: ArrayLike[scala.Double]): Float64Array = js.native
-  def from(
-    arrayLike: ArrayLike[scala.Double],
-    mapfn: js.Function2[/* v */ scala.Double, /* k */ scala.Double, scala.Double]
-  ): Float64Array = js.native
-  def from(
-    arrayLike: ArrayLike[scala.Double],
-    mapfn: js.Function2[/* v */ scala.Double, /* k */ scala.Double, scala.Double],
-    thisArg: js.Any
-  ): Float64Array = js.native
   /**
     * Creates an array from an array-like or iterable object.
     * @param arrayLike An array-like or iterable object to convert to an array.
@@ -53,6 +42,18 @@ trait Float64ArrayConstructor
   def from(
     arrayLike: Iterable[scala.Double],
     mapfn: js.Function2[/* v */ scala.Double, /* k */ scala.Double, scala.Double],
+    thisArg: js.Any
+  ): Float64Array = js.native
+  /**
+    * Creates an array from an array-like or iterable object.
+    * @param arrayLike An array-like or iterable object to convert to an array.
+    * @param mapfn A mapping function to call on every element of the array.
+    * @param thisArg Value of 'this' used to invoke the mapfn.
+    */
+  def from[T](arrayLike: ArrayLike[T], mapfn: js.Function2[/* v */ T, /* k */ scala.Double, scala.Double]): Float64Array = js.native
+  def from[T](
+    arrayLike: ArrayLike[T],
+    mapfn: js.Function2[/* v */ T, /* k */ scala.Double, scala.Double],
     thisArg: js.Any
   ): Float64Array = js.native
   /**

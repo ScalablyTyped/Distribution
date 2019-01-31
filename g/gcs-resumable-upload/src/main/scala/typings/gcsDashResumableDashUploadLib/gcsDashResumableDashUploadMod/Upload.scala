@@ -49,6 +49,8 @@ class Upload protected ()
   var uri: js.UndefOr[java.lang.String] = js.native
   var uriProvidedManually: scala.Boolean = js.native
   var userProject: js.UndefOr[java.lang.String] = js.native
+  def createURI(): js.Promise[java.lang.String] = js.native
   def createURI(callback: CreateUriCallback): scala.Unit = js.native
+  /* protected */ def createURIAsync(): js.Promise[java.lang.String] = js.native
 }
 

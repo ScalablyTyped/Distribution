@@ -1,25 +1,25 @@
 organization := "org.scalablytyped"
 name := "redux-saga-tester"
-version := "1.0-dt-20181130Z-4d6074"
+version := "1.0-dt-20181130Z-9c0de3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-40209e",
-  "org.scalablytyped" %%% "redux" % "4.0.1-0f174c",
-  "org.scalablytyped" %%% "redux-saga" % "1.0.0-200ee1",
-  "org.scalablytyped" %%% "redux-saga__core" % "1.0.0-4cab19",
-  "org.scalablytyped" %%% "redux-saga__deferred" % "1.0.0-756e4f",
-  "org.scalablytyped" %%% "redux-saga__delay-p" % "1.0.0-975781",
-  "org.scalablytyped" %%% "redux-saga__is" % "1.0.0-eb8950",
-  "org.scalablytyped" %%% "redux-saga__symbols" % "1.0.0-365917",
-  "org.scalablytyped" %%% "redux-saga__types" % "1.0.0-d7b6c0",
-  "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
-  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-bc5916",
-  "org.scalablytyped" %%% "typescript-compare" % "0.0.2-2e5e2d",
-  "org.scalablytyped" %%% "typescript-logic" % "0.0.0-1d3ccf",
-  "org.scalablytyped" %%% "typescript-tuple" % "2.1.0-f70023")
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
+  "org.scalablytyped" %%% "redux" % "4.0.1-607317",
+  "org.scalablytyped" %%% "redux-saga" % "1.0.0-5582cb",
+  "org.scalablytyped" %%% "redux-saga__core" % "1.0.0-d90b95",
+  "org.scalablytyped" %%% "redux-saga__deferred" % "1.0.0-27fa7d",
+  "org.scalablytyped" %%% "redux-saga__delay-p" % "1.0.0-e8cb8f",
+  "org.scalablytyped" %%% "redux-saga__is" % "1.0.0-1778a5",
+  "org.scalablytyped" %%% "redux-saga__symbols" % "1.0.0-4fdab4",
+  "org.scalablytyped" %%% "redux-saga__types" % "1.0.0-10c299",
+  "org.scalablytyped" %%% "std" % "3.3.1-6e0314",
+  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-607a2a",
+  "org.scalablytyped" %%% "typescript-compare" % "0.0.2-3bf696",
+  "org.scalablytyped" %%% "typescript-logic" % "0.0.0-955b59",
+  "org.scalablytyped" %%% "typescript-tuple" % "2.1.0-8a32f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

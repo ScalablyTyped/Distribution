@@ -52,12 +52,6 @@ class Acl protected () extends AclRoleAccessorMethods {
   def this(options: AclOptions) = this()
   var default: Acl = js.native
   var pathPrefix: java.lang.String = js.native
-  @JSName("request_")
-  var request__Original: atGoogleDashCloudStorageLib.Anon_Request with (requestLib.requestMod.requestNs.RequestAPI[
-    requestLib.requestMod.requestNs.Request, 
-    requestLib.requestMod.requestNs.CoreOptions, 
-    requestLib.requestMod.requestNs.RequiredUriUrl
-  ]) = js.native
   def add(options: AddAclOptions): js.Promise[AddAclResponse] = js.native
   def add(options: AddAclOptions, callback: AddAclCallback): scala.Unit = js.native
   def delete(options: RemoveAclOptions): js.Promise[RemoveAclResponse] = js.native
@@ -84,24 +78,13 @@ class Acl protected () extends AclRoleAccessorMethods {
     * @param {function} callback Callback function.
     */
   def request(
-    reqOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DecorateRequestOptions */ js.Any,
-    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BodyResponseCallback */ js.Any
+    reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions,
+    callback: atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback
   ): scala.Unit = js.native
   def `request_`(
-    options: requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions
-  ): requestLib.requestMod.requestNs.Request = js.native
-  def `request_`(
-    options: requestLib.requestMod.requestNs.RequiredUriUrl with requestLib.requestMod.requestNs.CoreOptions,
-    callback: requestLib.requestMod.requestNs.RequestCallback
-  ): requestLib.requestMod.requestNs.Request = js.native
-  def `request_`(uri: java.lang.String): requestLib.requestMod.requestNs.Request = js.native
-  def `request_`(uri: java.lang.String, callback: requestLib.requestMod.requestNs.RequestCallback): requestLib.requestMod.requestNs.Request = js.native
-  def `request_`(uri: java.lang.String, options: requestLib.requestMod.requestNs.CoreOptions): requestLib.requestMod.requestNs.Request = js.native
-  def `request_`(
-    uri: java.lang.String,
-    options: requestLib.requestMod.requestNs.CoreOptions,
-    callback: requestLib.requestMod.requestNs.RequestCallback
-  ): requestLib.requestMod.requestNs.Request = js.native
+    reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions,
+    callback: atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback
+  ): scala.Unit = js.native
   def update(options: UpdateAclOptions): js.Promise[UpdateAclResponse] = js.native
   def update(options: UpdateAclOptions, callback: UpdateAclCallback): scala.Unit = js.native
 }

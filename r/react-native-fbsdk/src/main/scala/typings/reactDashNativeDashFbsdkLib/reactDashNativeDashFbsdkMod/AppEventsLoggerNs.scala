@@ -50,5 +50,11 @@ object AppEventsLoggerNs extends js.Object {
     * @platform Android
     */
   def setPushNotificationsRegistrationId(registrationId: java.lang.String): scala.Unit = js.native
+  def setUserID(): scala.Unit = js.native
+  /**
+    * Sets a custom user ID to associate with all app events.
+    * The userID is persisted until it is cleared by passing nil.
+    */
+  def setUserID(userID: java.lang.String): scala.Unit = js.native
 }
 

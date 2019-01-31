@@ -171,6 +171,10 @@ package object atSindresorhusIsLib {
   type NotificationDirection = atSindresorhusIsLib.atSindresorhusIsLibStrings.auto | atSindresorhusIsLib.atSindresorhusIsLibStrings.ltr | atSindresorhusIsLib.atSindresorhusIsLibStrings.rtl
   type NotificationPermission = atSindresorhusIsLib.atSindresorhusIsLibStrings.default | atSindresorhusIsLib.atSindresorhusIsLibStrings.denied | atSindresorhusIsLib.atSindresorhusIsLibStrings.granted
   type NotificationPermissionCallback = js.Function1[/* permission */ NotificationPermission, scala.Unit]
+  /**
+    * Removes the 'this' parameter from a function type.
+    */
+  type OmitThisParameter[T] = T | (js.Function1[/* args */ js.Any, js.Any])
   type OnBeforeUnloadEventHandler = OnBeforeUnloadEventHandlerNonNull | scala.Null
   type OnBeforeUnloadEventHandlerNonNull = js.Function1[/* event */ Event, java.lang.String | scala.Null]
   type OnErrorEventHandler = OnErrorEventHandlerNonNull | scala.Null
@@ -328,6 +332,10 @@ package object atSindresorhusIsLib {
   type TexImageSource = ImageBitmap | ImageData | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement
   type TextTrackKind = atSindresorhusIsLib.atSindresorhusIsLibStrings.subtitles | atSindresorhusIsLib.atSindresorhusIsLibStrings.captions | atSindresorhusIsLib.atSindresorhusIsLibStrings.descriptions | atSindresorhusIsLib.atSindresorhusIsLibStrings.chapters | atSindresorhusIsLib.atSindresorhusIsLibStrings.metadata
   type TextTrackMode = atSindresorhusIsLib.atSindresorhusIsLibStrings.disabled | atSindresorhusIsLib.atSindresorhusIsLibStrings.hidden | atSindresorhusIsLib.atSindresorhusIsLibStrings.showing
+  /**
+    * Extracts the type of the 'this' parameter of a function type, or 'unknown' if the function type has no 'this' parameter.
+    */
+  type ThisParameterType[T] = js.Any
   type TimerHandler = java.lang.String | Function
   type TouchType = atSindresorhusIsLib.atSindresorhusIsLibStrings.direct | atSindresorhusIsLib.atSindresorhusIsLibStrings.stylus
   type Transferable = ArrayBuffer | MessagePort | ImageBitmap

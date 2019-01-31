@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ trait GetBucketOptions extends js.Object {
+trait GetBucketOptions
+  extends atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.GetConfig {
   var userProject: js.UndefOr[java.lang.String] = js.undefined
 }
 

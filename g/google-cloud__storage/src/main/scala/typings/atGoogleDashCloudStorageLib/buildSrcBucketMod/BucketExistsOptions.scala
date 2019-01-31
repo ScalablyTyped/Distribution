@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BucketExistsOptions extends js.Object {
+trait BucketExistsOptions
+  extends atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.GetConfig {
   var userProject: js.UndefOr[java.lang.String] = js.undefined
 }
 

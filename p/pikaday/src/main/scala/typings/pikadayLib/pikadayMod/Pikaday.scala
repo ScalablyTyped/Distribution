@@ -76,18 +76,20 @@ trait Pikaday extends js.Object {
     * of the onSelect callback, allowing the date to be set silently.
     */
   def setDate(date: java.lang.String): scala.Unit = js.native
-  def setDate(date: java.lang.String, triggerOnSelect: scala.Boolean): scala.Unit = js.native
+  def setDate(date: java.lang.String, preventOnSelect: scala.Boolean): scala.Unit = js.native
   def setDate(date: stdLib.Date): scala.Unit = js.native
-  def setDate(date: stdLib.Date, triggerOnSelect: scala.Boolean): scala.Unit = js.native
+  def setDate(date: stdLib.Date, preventOnSelect: scala.Boolean): scala.Unit = js.native
   /**
     * Update the range end date. For using two Pikaday instances to select
     * a date range.
     */
   def setEndRange(date: stdLib.Date): scala.Unit = js.native
+  def setMaxDate(): scala.Unit = js.native
   /**
     * Update the maximum/latest date that can be selected.
     */
   def setMaxDate(date: stdLib.Date): scala.Unit = js.native
+  def setMinDate(): scala.Unit = js.native
   /**
     * Update the minimum/earliest date that can be selected.
     */

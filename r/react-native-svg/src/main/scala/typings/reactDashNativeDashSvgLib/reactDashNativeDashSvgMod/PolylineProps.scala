@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait PolylineProps extends CommonPathProps {
   var opacity: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
-  var points: java.lang.String | js.Array[_]
+  var points: java.lang.String | js.Array[reactDashNativeDashSvgLib.NumberProp]
 }
 

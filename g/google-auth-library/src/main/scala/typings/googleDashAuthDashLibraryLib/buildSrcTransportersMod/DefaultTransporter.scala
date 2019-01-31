@@ -14,21 +14,21 @@ class DefaultTransporter () extends js.Object {
   var processError: js.Any = js.native
   /**
     * Configures request options before making a request.
-    * @param opts AxiosRequestConfig options.
+    * @param opts GaxiosOptions options.
     * @return Configured options.
     */
-  def configure(): axiosLib.axiosMod.AxiosRequestConfig = js.native
-  def configure(opts: axiosLib.axiosMod.AxiosRequestConfig): axiosLib.axiosMod.AxiosRequestConfig = js.native
-  def request[T](opts: axiosLib.axiosMod.AxiosRequestConfig): scala.Unit = js.native
-  def request[T](opts: axiosLib.axiosMod.AxiosRequestConfig, callback: BodyResponseCallback[T]): scala.Unit = js.native
+  def configure(): gaxiosLib.buildSrcCommonMod.GaxiosOptions = js.native
+  def configure(opts: gaxiosLib.buildSrcCommonMod.GaxiosOptions): gaxiosLib.buildSrcCommonMod.GaxiosOptions = js.native
   /**
-    * Makes a request using Axios with given options.
-    * @param opts AxiosRequestConfig options.
-    * @param callback optional callback that contains AxiosResponse object.
-    * @return AxiosPromise, assuming no callback is passed.
+    * Makes a request using Gaxios with given options.
+    * @param opts GaxiosOptions options.
+    * @param callback optional callback that contains GaxiosResponse object.
+    * @return GaxiosPromise, assuming no callback is passed.
     */
+  def request[T](opts: gaxiosLib.buildSrcCommonMod.GaxiosOptions): gaxiosLib.buildSrcCommonMod.GaxiosPromise[T] = js.native
+  def request[T](opts: gaxiosLib.buildSrcCommonMod.GaxiosOptions, callback: BodyResponseCallback[T]): scala.Unit = js.native
   @JSName("request")
-  def request_TAxiosPromise[T](opts: axiosLib.axiosMod.AxiosRequestConfig): axiosLib.axiosMod.AxiosPromise[T] = js.native
+  def request_TUnit[T](opts: gaxiosLib.buildSrcCommonMod.GaxiosOptions): scala.Unit = js.native
 }
 
 @JSImport("google-auth-library/build/src/transporters", "DefaultTransporter")

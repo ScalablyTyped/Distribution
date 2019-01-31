@@ -57,8 +57,6 @@ trait CompilerHost extends ModuleResolutionHost {
   @JSName("getCurrentDirectory")
   def getCurrentDirectory_MCompilerHost(): java.lang.String = js.native
   def getDefaultLibFileName(options: CompilerOptions): java.lang.String = js.native
-  @JSName("getDirectories")
-  def getDirectories_MCompilerHost(path: java.lang.String): js.Array[java.lang.String] = js.native
   def getNewLine(): java.lang.String = js.native
   def getSourceFile(fileName: java.lang.String, languageVersion: ScriptTarget): js.UndefOr[SourceFile] = js.native
   def getSourceFile(
@@ -85,13 +83,6 @@ trait CompilerHost extends ModuleResolutionHost {
     data: java.lang.String,
     writeByteOrderMark: scala.Boolean,
     onError: js.Function1[/* message */ java.lang.String, scala.Unit],
-    sourceFiles: js.Array[SourceFile]
-  ): scala.Unit = js.native
-  def writeFile(
-    fileName: java.lang.String,
-    data: java.lang.String,
-    writeByteOrderMark: scala.Boolean,
-    onError: js.UndefOr[scala.Nothing],
     sourceFiles: js.Array[SourceFile]
   ): scala.Unit = js.native
 }

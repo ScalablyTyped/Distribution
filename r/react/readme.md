@@ -1,5 +1,5 @@
 ```
-// Type definitions for React 16.7
+// Type definitions for React 16.8
 // Project: http://facebook.github.io/react/
 // Definitions by: Asana <https://asana.com>
 //                 AssureSign <http://www.assuresign.com>
@@ -19,8 +19,9 @@
 //                 Olivier Pascal <https://github.com/pascaloliv>
 //                 Martin Hochel <https://github.com/hotell>
 //                 Frank Li <https://github.com/franklixuefei>
-//                 Jessica Franco <https://github.com/Kovensky>
+//                 Jessica Franco <https://github.com/Jessidhia>
 //                 Paul Sherman <https://github.com/pshrmn>
+//                 Sunil Pai <https://github.com/threepointone>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 /*

@@ -283,16 +283,16 @@ trait Anon_A extends js.Object {
   ): scala.Unit = js.native
   // NOTE: this does not accept strings, but this will have to be fixed by removing strings from type Ref<T>
   /**
-    * `useImperativeMethods` customizes the instance value that is exposed to parent components when using
+    * `useImperativeHandle` customizes the instance value that is exposed to parent components when using
     * `ref`. As always, imperative code using refs should be avoided in most cases.
     *
-    * `useImperativeMethods` should be used with `React.forwardRef`.
+    * `useImperativeHandle` should be used with `React.forwardRef`.
     *
     * @version experimental
-    * @see https://reactjs.org/docs/hooks-reference.html#useimperativemethods
+    * @see https://reactjs.org/docs/hooks-reference.html#useimperativehandle
     */
-  def useImperativeMethods[T, R /* <: T */](ref: reactLib.reactMod.ReactNs.Ref[T] | js.UndefOr[scala.Nothing], init: js.Function0[R]): scala.Unit = js.native
-  def useImperativeMethods[T, R /* <: T */](
+  def useImperativeHandle[T, R /* <: T */](ref: reactLib.reactMod.ReactNs.Ref[T] | js.UndefOr[scala.Nothing], init: js.Function0[R]): scala.Unit = js.native
+  def useImperativeHandle[T, R /* <: T */](
     ref: reactLib.reactMod.ReactNs.Ref[T] | js.UndefOr[scala.Nothing],
     init: js.Function0[R],
     inputs: reactLib.reactMod.ReactNs.InputIdentityList

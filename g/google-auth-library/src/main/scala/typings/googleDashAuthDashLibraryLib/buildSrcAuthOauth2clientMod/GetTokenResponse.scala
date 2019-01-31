@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GetTokenResponse extends js.Object {
-  var res: axiosLib.axiosMod.AxiosResponse[_] | scala.Null
+  var res: gaxiosLib.buildSrcCommonMod.GaxiosResponse[_] | scala.Null
   var tokens: googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.Credentials
 }
 

@@ -14,7 +14,6 @@ class element protected () extends node {
   def this(element: stdLib.HTMLElement, ownerDocument: document) = this()
   @JSName("$")
   val $_element: stdLib.HTMLElement = js.native
-  val `type`: scala.Double = js.native
   def addClass(className: java.lang.String): scala.Unit = js.native
   def append(node: node): node = js.native
   def append(node: node, toStart: scala.Boolean): node = js.native

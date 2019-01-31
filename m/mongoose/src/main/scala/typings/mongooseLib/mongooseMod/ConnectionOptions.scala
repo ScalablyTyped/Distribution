@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- mongooseLib.mongooseMod.ConnectionOpenSetOptions because var conflicts: auth, authMechanism, authSource, authdb, autoReconnect, bufferMaxEntries, checkServerIdentity, ciphers, connectTimeoutMS, db, dbName, domainsEnabled, ecdhCurve, fsync, haInterval, journal, keepAlive, monitoring, nativeParser, pass, poolSize, readPreference, readPreferencetags, reconnectInterval, reconnectTries, replicaSet, replset, rs_name, safe, server, servername, slaveOk, socketTimeoutMS, ssl, sslCA, sslCRL, sslCert, sslKey, sslPass, sslValidate, useCreateIndex, useFindAndModify, useNewUrlParser, user, w, wTimeoutMS. Inlined mongos, promiseLibrary, useMongoClient, bufferCommands */ trait ConnectionOptions extends ConnectionOpenOptions {
+- mongooseLib.mongooseMod.ConnectionOpenSetOptions because var conflicts: auth, authMechanism, authSource, authdb, autoReconnect, bufferMaxEntries, checkServerIdentity, ciphers, connectTimeoutMS, db, dbName, domainsEnabled, ecdhCurve, fsync, haInterval, journal, keepAlive, keepAliveInitialDelay, monitoring, nativeParser, pass, poolSize, readPreference, readPreferencetags, reconnectInterval, reconnectTries, replicaSet, replset, rs_name, safe, server, servername, slaveOk, socketTimeoutMS, ssl, sslCA, sslCRL, sslCert, sslKey, sslPass, sslValidate, useCreateIndex, useFindAndModify, useNewUrlParser, user, w, wTimeoutMS. Inlined mongos, promiseLibrary, useMongoClient, bufferCommands */ trait ConnectionOptions extends ConnectionOpenOptions {
   /** See http://mongoosejs.com/docs/guide.html#bufferCommands */
   var bufferCommands: js.UndefOr[scala.Boolean] = js.undefined
   /**

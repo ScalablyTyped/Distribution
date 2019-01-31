@@ -55,6 +55,12 @@ trait BuilderProgram extends js.Object {
     */
   def getCurrentDirectory(): java.lang.String = js.native
   /**
+    * Get the declaration diagnostics, for all source files if source file is not supplied
+    */
+  def getDeclarationDiagnostics(): js.Array[DiagnosticWithLocation] = js.native
+  def getDeclarationDiagnostics(sourceFile: SourceFile): js.Array[DiagnosticWithLocation] = js.native
+  def getDeclarationDiagnostics(sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[DiagnosticWithLocation] = js.native
+  /**
     * Get the diagnostics that dont belong to any file
     */
   def getGlobalDiagnostics(): js.Array[Diagnostic] = js.native

@@ -48,14 +48,12 @@ package object buildSrcFileMod {
   ]
   type GetFileMetadataCallback = js.Function3[
     /* err */ nodeLib.Error | scala.Null, 
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ /* metadata */ js.UndefOr[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.Any
-    ], 
+    /* metadata */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata], 
     /* apiResponse */ js.UndefOr[requestLib.requestMod.requestNs.Response], 
     scala.Unit
   ]
   type GetFileMetadataResponse = js.Tuple2[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.Any, 
+    atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata, 
     requestLib.requestMod.requestNs.Response
   ]
   type GetFileResponse = js.Tuple2[File, requestLib.requestMod.requestNs.Response]

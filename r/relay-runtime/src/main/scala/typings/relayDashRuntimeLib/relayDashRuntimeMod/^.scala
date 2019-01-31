@@ -33,6 +33,7 @@ object ^ extends js.Object {
     variables: relayDashRuntimeLib.relayDashRuntimeMod.Variables,
     cacheConfig: relayDashRuntimeLib.relayDashRuntimeMod.CacheConfig
   ): js.Promise[_] = js.native
+  def getRequest(taggedNode: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLTaggedNode): relayDashRuntimeLib.relayDashRuntimeMod.ConcreteRequest = js.native
   def requestRelaySubscription(
     environment: relayDashRuntimeLib.relayDashRuntimeMod.Environment,
     config: relayDashRuntimeLib.relayDashRuntimeMod.GraphQLSubscriptionConfig

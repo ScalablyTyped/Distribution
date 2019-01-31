@@ -67,6 +67,9 @@ object typescriptLibStrings {
   sealed trait double extends js.Object
   
   @js.native
+  sealed trait dts extends js.Object
+  
+  @js.native
   sealed trait `event::beginInstallTypes` extends js.Object
   
   @js.native
@@ -137,6 +140,7 @@ object typescriptLibStrings {
   def closeProject: closeProject = "closeProject".asInstanceOf[closeProject]
   def discover: discover = "discover".asInstanceOf[discover]
   def double: double = "double".asInstanceOf[double]
+  def dts: dts = "dts".asInstanceOf[dts]
   def `event::beginInstallTypes`: `event::beginInstallTypes` = "event::beginInstallTypes".asInstanceOf[`event::beginInstallTypes`]
   def `event::endInstallTypes`: `event::endInstallTypes` = "event::endInstallTypes".asInstanceOf[`event::endInstallTypes`]
   def `event::initializationFailed`: `event::initializationFailed` = "event::initializationFailed".asInstanceOf[`event::initializationFailed`]

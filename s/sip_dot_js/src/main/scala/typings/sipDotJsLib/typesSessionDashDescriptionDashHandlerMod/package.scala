@@ -11,5 +11,4 @@ package object typesSessionDashDescriptionDashHandlerMod {
     js.Promise[stdLib.RTCSessionDescriptionInit]
   ]
   type SessionDescriptionHandlerModifiers = js.Array[SessionDescriptionHandlerModifier]
-  type SessionDescriptionHandlerOptions = js.Object
 }

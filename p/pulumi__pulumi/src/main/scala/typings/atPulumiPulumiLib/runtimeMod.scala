@@ -12,6 +12,7 @@ object runtimeMod extends js.Object {
   val rootPulumiStackTypeName: /* pulumi:pulumi:Stack */ java.lang.String = js.native
   val specialArchiveSig: /* 0def7320c3a5731c473e5ecbe6d01bc7 */ java.lang.String = js.native
   val specialAssetSig: /* c44067f5952c0a294b673a41bacd8c17 */ java.lang.String = js.native
+  val specialSecretSig: /* 1b47061264138c4ac30d75fd1eb44270 */ java.lang.String = js.native
   val specialSigKey: /* 4dabf18193072939515e22adb298388d */ java.lang.String = js.native
   val unknownValue: /* 04da6b54-80e4-46f7-96ec-b56ff0331ba9 */ java.lang.String = js.native
   def allConfig(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
@@ -105,22 +106,20 @@ object runtimeMod extends js.Object {
   def serializeFunction(func: js.Function, args: atPulumiPulumiLib.runtimeClosureSerializeClosureMod.SerializeFunctionArgs): js.Promise[atPulumiPulumiLib.runtimeClosureSerializeClosureMod.SerializedFunction] = js.native
   def serializeFunctionAsync(func: js.Function): js.Promise[java.lang.String] = js.native
   def serializeFunctionAsync(func: js.Function, serialize: js.Function1[/* o */ js.Any, scala.Boolean]): js.Promise[java.lang.String] = js.native
-  def serializeProperties(label: java.lang.String, props: atPulumiPulumiLib.resourceMod.Inputs): js.Promise[stdLib.Record[java.lang.String, _]] = js.native
   def serializeProperties(
     label: java.lang.String,
     props: atPulumiPulumiLib.resourceMod.Inputs,
-    dependentResources: js.Array[atPulumiPulumiLib.resourceMod.Resource]
+    propertyDependencies: stdLib.Record[java.lang.String, js.Array[atPulumiPulumiLib.resourceMod.Resource]]
   ): js.Promise[stdLib.Record[java.lang.String, _]] = js.native
   def serializeProperty(
     ctx: java.lang.String,
     prop: atPulumiPulumiLib.resourceMod.Input[_],
     dependentResources: js.Array[atPulumiPulumiLib.resourceMod.Resource]
   ): js.Promise[_] = js.native
-  def serializeResourceProperties(label: java.lang.String, props: atPulumiPulumiLib.resourceMod.Inputs): js.Promise[stdLib.Record[java.lang.String, _]] = js.native
   def serializeResourceProperties(
     label: java.lang.String,
     props: atPulumiPulumiLib.resourceMod.Inputs,
-    dependentResources: js.Array[atPulumiPulumiLib.resourceMod.Resource]
+    propertyDependencies: stdLib.Record[java.lang.String, js.Array[atPulumiPulumiLib.resourceMod.Resource]]
   ): js.Promise[stdLib.Record[java.lang.String, _]] = js.native
   def setConfig(k: java.lang.String, v: java.lang.String): scala.Unit = js.native
   def setRootResource(res: atPulumiPulumiLib.resourceMod.ComponentResource): js.Promise[scala.Unit] = js.native

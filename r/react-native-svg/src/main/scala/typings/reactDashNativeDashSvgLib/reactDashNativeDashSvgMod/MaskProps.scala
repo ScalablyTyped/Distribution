@@ -10,7 +10,7 @@ trait MaskProps extends CommonPathProps {
   @JSName("id")
   var id_MaskProps: java.lang.String
   var maskContentUnits: js.UndefOr[TMaskUnits] = js.undefined
-  var maskTransform: js.UndefOr[java.lang.String] = js.undefined
+  var maskTransform: js.UndefOr[reactDashNativeDashSvgLib.ColumnMajorTransformMatrix | java.lang.String] = js.undefined
   var maskUnits: js.UndefOr[TMaskUnits] = js.undefined
   var width: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
 }

@@ -1,21 +1,21 @@
 organization := "org.scalablytyped"
 name := "objection"
-version := "1.5.3-826051"
+version := "1.5.3-19f2f6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ajv" % "6.7.0-3699e1",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-232ecf",
-  "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-ceddfc",
-  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-c8d4b8",
-  "org.scalablytyped" %%% "knex" % "0.15-dt-20181115Z-807c73",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-c48db4",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-40209e",
-  "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-6755f9",
-  "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
-  "org.scalablytyped" %%% "uri-js" % "4.2.2-c4241a")
+  "org.scalablytyped" %%% "ajv" % "6.7.0-9e8624",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-ef7d03",
+  "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-57e227",
+  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-ddf996",
+  "org.scalablytyped" %%% "knex" % "0.15-dt-20181115Z-8aed79",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-e5b16b",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
+  "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-82f2e3",
+  "org.scalablytyped" %%% "std" % "3.3.1-6e0314",
+  "org.scalablytyped" %%% "uri-js" % "4.2.2-df3f4a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

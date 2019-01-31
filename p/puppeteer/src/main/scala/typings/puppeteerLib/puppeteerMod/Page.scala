@@ -53,7 +53,7 @@ trait Page
     * @param fn The function to be evaluated in browser context.
     * @param args The arguments to pass to the `fn`.
     */
-  def evaluateOnNewDocument(fn: EvaluateFn, args: js.Any*): js.Promise[scala.Unit] = js.native
+  def evaluateOnNewDocument(fn: EvaluateFn, args: SerializableOrJSHandle*): js.Promise[scala.Unit] = js.native
   /**
     * The method adds a function called name on the page's `window` object.
     * When called, the function executes `puppeteerFunction` in node.js and returns a

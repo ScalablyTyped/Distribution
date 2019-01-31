@@ -5,6 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/**
+  * Connection optional settings.
+  *
+  * see
+  *   https://mongoosejs.com/docs/api.html#mongoose_Mongoose-connect
+  * and
+  *   http://mongodb.github.io/node-mongodb-native/3.0/api/MongoClient.html
+  * for all available options.
+  *
+  */
 trait ConnectionOptionsBase extends js.Object {
   /** options for authentication (see http://mongodb.github.com/node-mongodb-native/api-generated/db.html#authenticate) */
   var auth: js.UndefOr[js.Any] = js.undefined
@@ -21,7 +31,7 @@ trait ConnectionOptionsBase extends js.Object {
   var checkServerIdentity: js.UndefOr[scala.Boolean | js.Function] = js.undefined
   /** Passed directly through to tls.createSecureContext. See https://nodejs.org/dist/latest-v9.x/docs/api/tls.html#tls_tls_createsecurecontext_options for more info. */
   var ciphers: js.UndefOr[java.lang.String] = js.undefined
-  /** TCP Connection timeout setting (default: 0) */
+  /** TCP Connection timeout setting (default: 30000) */
   var connectTimeoutMS: js.UndefOr[scala.Double] = js.undefined
   /** passed to the connection db instance */
   var db: js.UndefOr[js.Any] = js.undefined
@@ -35,8 +45,10 @@ trait ConnectionOptionsBase extends js.Object {
   var haInterval: js.UndefOr[scala.Double] = js.undefined
   /** Specify a journal write concern (default: false). */
   var journal: js.UndefOr[scala.Boolean] = js.undefined
-  /** TCP KeepAlive on the socket with a X ms delay before start (default: 0). */
-  var keepAlive: js.UndefOr[scala.Double] = js.undefined
+  /** TCP Connection keep alive enabled (default: true) */
+  var keepAlive: js.UndefOr[scala.Boolean] = js.undefined
+  /** The number of milliseconds to wait before initiating keepAlive on the TCP socket (default 30000) */
+  var keepAliveInitialDelay: js.UndefOr[scala.Double] = js.undefined
   /** Triggers the server instance to call ismaster (default: true). */
   var monitoring: js.UndefOr[scala.Boolean] = js.undefined
   /** The current value of the parameter native_parser */
@@ -68,7 +80,7 @@ trait ConnectionOptionsBase extends js.Object {
   /** String containing the server name requested via TLS SNI. */
   var servername: js.UndefOr[java.lang.String] = js.undefined
   var slaveOk: js.UndefOr[js.Any] = js.undefined
-  /** TCP Socket timeout setting (default: 0) */
+  /** TCP Socket timeout setting (default: 360000) */
   var socketTimeoutMS: js.UndefOr[scala.Double] = js.undefined
   /** Use ssl connection (needs to have a mongod server with ssl support) (default: true) */
   var ssl: js.UndefOr[scala.Boolean] = js.undefined

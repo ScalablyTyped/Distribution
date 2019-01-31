@@ -14,7 +14,6 @@ class text protected () extends node {
   def this(text: stdLib.Text, ownerDocument: document) = this()
   @JSName("$")
   val $_text: stdLib.Text = js.native
-  val `type`: scala.Double = js.native
   def getLength(): scala.Double = js.native
   def getText(): java.lang.String = js.native
   def setText(text: java.lang.String): scala.Unit = js.native

@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Interceptor
-  extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any]
+trait Interceptor extends js.Object {
+  def request(opts: requestLib.requestMod.requestNs.Options): atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions
+}
 

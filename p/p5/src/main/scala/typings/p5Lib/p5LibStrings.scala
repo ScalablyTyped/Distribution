@@ -31,6 +31,9 @@ object p5LibStrings {
   sealed trait bold extends js.Object
   
   @js.native
+  sealed trait bolditalic extends js.Object
+  
+  @js.native
   sealed trait bottom extends js.Object
   
   @js.native
@@ -98,6 +101,9 @@ object p5LibStrings {
   
   @js.native
   sealed trait hsl extends js.Object
+  
+  @js.native
+  sealed trait image extends js.Object
   
   @js.native
   sealed trait invert extends js.Object
@@ -209,6 +215,7 @@ object p5LibStrings {
   def bevel: bevel = "bevel".asInstanceOf[bevel]
   def blur: blur = "blur".asInstanceOf[blur]
   def bold: bold = "bold".asInstanceOf[bold]
+  def bolditalic: bolditalic = "bolditalic".asInstanceOf[bolditalic]
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   def butt: butt = "butt".asInstanceOf[butt]
   def center: center = "center".asInstanceOf[center]
@@ -232,6 +239,7 @@ object p5LibStrings {
   def `hard-light`: `hard-light` = "hard-light".asInstanceOf[`hard-light`]
   def hsb: hsb = "hsb".asInstanceOf[hsb]
   def hsl: hsl = "hsl".asInstanceOf[hsl]
+  def image: image = "image".asInstanceOf[image]
   def invert: invert = "invert".asInstanceOf[invert]
   def italic: italic = "italic".asInstanceOf[italic]
   def landscape: landscape = "landscape".asInstanceOf[landscape]

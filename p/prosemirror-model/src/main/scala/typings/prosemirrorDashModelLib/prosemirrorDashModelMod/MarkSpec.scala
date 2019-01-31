@@ -43,6 +43,11 @@ trait MarkSpec extends js.Object {
     */
   var parseDOM: js.UndefOr[js.Array[ParseRule] | scala.Null] = js.undefined
   /**
+    * Determines whether marks of this type can span multiple adjacent
+    * nodes when serialized to DOM/HTML. Defaults to true.
+    */
+  var spanning: js.UndefOr[scala.Boolean | scala.Null] = js.undefined
+  /**
     * Defines the default way marks of this type should be serialized
     * to DOM/HTML.
     */

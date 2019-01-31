@@ -36,6 +36,16 @@ class ServiceObject[T] protected ()
     requestLib.requestMod.requestNs.RequiredUriUrl
   ]) = js.native
   /**
+    * Make an authenticated API request.
+    *
+    * @private
+    *
+    * @param {object} reqOpts - Request options that are passed to `request`.
+    * @param {string} reqOpts.uri - A URI relative to the baseUrl.
+    * @param {function} callback - The callback function passed to `request`.
+    */
+  var `request_`: js.Any = js.native
+  /**
     * Create the object.
     *
     * @param {object=} options - Configuration object.
@@ -57,6 +67,8 @@ class ServiceObject[T] protected ()
     */
   def delete(): js.Promise[js.Array[requestLib.requestMod.requestNs.Response]] = js.native
   def delete(callback: DeleteCallback): scala.Unit = js.native
+  def delete(options: DeleteOptions): js.Promise[js.Array[requestLib.requestMod.requestNs.Response]] = js.native
+  def delete(options: DeleteOptions, callback: DeleteCallback): scala.Unit = js.native
   /**
     * Check if the object exists.
     *
@@ -66,13 +78,15 @@ class ServiceObject[T] protected ()
     */
   def exists(): js.Promise[js.Array[scala.Boolean]] = js.native
   def exists(callback: ExistsCallback): scala.Unit = js.native
+  def exists(options: ExistsOptions): js.Promise[js.Array[scala.Boolean]] = js.native
+  def exists(options: ExistsOptions, callback: ExistsCallback): scala.Unit = js.native
   /**
     * Get the object if it exists. Optionally have the object created if an
     * options object is provided with `autoCreate: true`.
     *
-    * @param {object=} config - The configuration object that will be used to
+    * @param {object=} options - The configuration object that will be used to
     *     create the object if necessary.
-    * @param {boolean} config.autoCreate - Create the object if it doesn't already exist.
+    * @param {boolean} options.autoCreate - Create the object if it doesn't already exist.
     * @param {function} callback - The callback function.
     * @param {?error} callback.err - An error returned while making this request.
     * @param {object} callback.instance - The instance.
@@ -80,8 +94,8 @@ class ServiceObject[T] protected ()
     */
   def get(): js.Promise[GetResponse[T]] = js.native
   def get(callback: InstanceResponseCallback[T]): scala.Unit = js.native
-  def get(config: GetConfig with CreateOptions): js.Promise[GetResponse[T]] = js.native
-  def get(config: GetConfig with CreateOptions, callback: InstanceResponseCallback[T]): scala.Unit = js.native
+  def get(options: GetOrCreateOptions): js.Promise[GetResponse[T]] = js.native
+  def get(options: GetOrCreateOptions, callback: InstanceResponseCallback[T]): scala.Unit = js.native
   /**
     * Get the metadata of this object.
     *
@@ -90,8 +104,10 @@ class ServiceObject[T] protected ()
     * @param {object} callback.metadata - The metadata for this object.
     * @param {object} callback.apiResponse - The full API response.
     */
-  def getMetadata(): js.Promise[Metadata] = js.native
-  def getMetadata(callback: GetMetadataCallback): scala.Unit = js.native
+  def getMetadata(): js.Promise[MetadataResponse] = js.native
+  def getMetadata(callback: MetadataCallback): scala.Unit = js.native
+  def getMetadata(options: GetMetadataOptions): js.Promise[MetadataResponse] = js.native
+  def getMetadata(options: GetMetadataOptions, callback: MetadataCallback): scala.Unit = js.native
   /**
     * Make an authenticated API request.
     *
@@ -101,7 +117,7 @@ class ServiceObject[T] protected ()
     * @param {string} reqOpts.uri - A URI relative to the baseUrl.
     * @param {function} callback - The callback function passed to `request`.
     */
-  def request(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): js.Promise[requestLib.requestMod.requestNs.Response] = js.native
+  def request(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): js.Promise[RequestResponse] = js.native
   def request(
     reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions,
     callback: atGoogleDashCloudCommonLib.buildSrcUtilMod.BodyResponseCallback
@@ -131,25 +147,17 @@ class ServiceObject[T] protected ()
     */
   def requestStream(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): requestLib.requestMod.requestNs.Request = js.native
   /**
-    * Make an authenticated API request.
-    *
-    * @private
-    *
-    * @param {object} reqOpts - Request options that are passed to `request`.
-    * @param {string} reqOpts.uri - A URI relative to the baseUrl.
-    * @param {function} callback - The callback function passed to `request`.
-    */
-  def `request_`(reqOpts: atGoogleDashCloudCommonLib.buildSrcServiceMod.StreamRequestOptions): requestLib.requestMod.requestNs.Request = js.native
-  def `request_`(reqOpts: atGoogleDashCloudCommonLib.buildSrcUtilMod.DecorateRequestOptions): js.Promise[requestLib.requestMod.requestNs.Response] = js.native
-  /**
     * Set the metadata for this object.
     *
     * @param {object} metadata - The metadata to set on this object.
+    * @param {object=} options - Configuration options.
     * @param {function=} callback - The callback function.
     * @param {?error} callback.err - An error returned while making this request.
     * @param {object} callback.apiResponse - The full API response.
     */
   def setMetadata(metadata: Metadata): js.Promise[SetMetadataResponse] = js.native
-  def setMetadata(metadata: Metadata, callback: ResponseCallback): scala.Unit = js.native
+  def setMetadata(metadata: Metadata, callback: MetadataCallback): scala.Unit = js.native
+  def setMetadata(metadata: Metadata, options: SetMetadataOptions): js.Promise[SetMetadataResponse] = js.native
+  def setMetadata(metadata: Metadata, options: SetMetadataOptions, callback: MetadataCallback): scala.Unit = js.native
 }
 

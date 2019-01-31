@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait RefreshAccessTokenResponse extends js.Object {
   var credentials: googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.Credentials
-  var res: axiosLib.axiosMod.AxiosResponse[_] | scala.Null
+  var res: gaxiosLib.buildSrcCommonMod.GaxiosResponse[_] | scala.Null
 }
 

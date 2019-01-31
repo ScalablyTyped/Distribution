@@ -10,29 +10,35 @@ import scala.scalajs.js.annotation._
   * {@link Bucket#file}.
   *
   * @class
-  * @param {Bucket} bucket The Bucket instance this file is
-  *     attached to.
-  * @param {string} name The name of the remote file.
-  * @param {object} [options] Configuration options.
-  * @param {string} [options.encryptionKey] A custom encryption key.
-  * @param {number} [options.generation] Generation to scope the file to.
-  * @param {string} [options.kmsKeyName] Cloud KMS Key used to encrypt this
-  *     object, if the object is encrypted by such a key. Limited availability;
-  *     usable only by enabled projects.
-  * @param {string} [options.userProject] The ID of the project which will be
-  *     billed for all requests made from File object.
-  * @example
-  * const {Storage} = require('@google-cloud/storage');
-  * const storage = new Storage();
-  * const myBucket = storage.bucket('my-bucket');
-  *
-  * const file = myBucket.file('my-file');
   */
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any
-- Dropped any */ @JSImport("@google-cloud/storage/build/src/file", "File")
+@JSImport("@google-cloud/storage/build/src/file", "File")
 @js.native
-class File protected () extends js.Object {
+class File protected ()
+  extends atGoogleDashCloudCommonLib.atGoogleDashCloudCommonMod.ServiceObject[File] {
+  /**
+    * @typedef {object} FileOptions Options passed to the File constructor.
+    * @property {string} [encryptionKey] A custom encryption key.
+    * @property {number} [generation] Generation to scope the file to.
+    * @property {string} [kmsKeyName] Cloud KMS Key used to encrypt this
+    *     object, if the object is encrypted by such a key. Limited availability;
+    *     usable only by enabled projects.
+    * @property {string} [userProject] The ID of the project which will be
+    *     billed for all requests made from File object.
+    */
+  /**
+    * Constructs a file object.
+    *
+    * @param {Bucket} bucket The Bucket instance this file is
+    *     attached to.
+    * @param {string} name The name of the remote file.
+    * @param {FileOptions} [options] Configuration options.
+    * @example
+    * const {Storage} = require('@google-cloud/storage');
+    * const storage = new Storage();
+    * const myBucket = storage.bucket('my-bucket');
+    *
+    * const file = myBucket.file('my-file');
+    */
   def this(bucket: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket, name: java.lang.String) = this()
   def this(bucket: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket, name: java.lang.String, options: FileOptions) = this()
   /**
@@ -87,7 +93,8 @@ class File protected () extends js.Object {
   var generation: js.UndefOr[scala.Double] = js.native
   var kmsKeyName: js.UndefOr[java.lang.String] = js.native
   var name: java.lang.String = js.native
-  var requestQueryObject: js.UndefOr[atGoogleDashCloudStorageLib.Anon_Generation] = js.native
+  @JSName("parent")
+  var parent_File: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket = js.native
   var storage: atGoogleDashCloudStorageLib.buildSrcStorageMod.Storage = js.native
   var userProject: js.UndefOr[java.lang.String] = js.native
   def copy(destination: atGoogleDashCloudStorageLib.buildSrcBucketMod.Bucket): js.Promise[CopyResponse] = js.native
@@ -103,6 +110,26 @@ class File protected () extends js.Object {
   def copy(destination: java.lang.String): js.Promise[CopyResponse] = js.native
   def copy(destination: java.lang.String, callback: CopyCallback): scala.Unit = js.native
   def copy(destination: java.lang.String, options: CopyOptions, callback: CopyCallback): scala.Unit = js.native
+  /**
+    * @typedef {object} CreateReadStreamOptions Configuration options for File#createReadStream.
+    * @property {string} [userProject] The ID of the project which will be
+    *     billed for the request.
+    * @property {string|boolean} [validation] Possible values: `"md5"`,
+    *     `"crc32c"`, or `false`. By default, data integrity is validated with a
+    *     CRC32c checksum. You may use MD5 if preferred, but that hash is not
+    *     supported for composite objects. An error will be raised if MD5 is
+    *     specified but is not available. You may also choose to skip validation
+    *     completely, however this is **not recommended**.
+    * @property {number} [start] A byte offset to begin the file's download
+    *     from. Default is 0. NOTE: Byte ranges are inclusive; that is,
+    *     `options.start = 0` and `options.end = 999` represent the first 1000
+    *     bytes in a file or object. NOTE: when specifying a byte range, data
+    *     integrity is not available.
+    * @property {number} [end] A byte offset to stop reading the file at.
+    *     NOTE: Byte ranges are inclusive; that is, `options.start = 0` and
+    *     `options.end = 999` represent the first 1000 bytes in a file or object.
+    *     NOTE: when specifying a byte range, data integrity is not available.
+    */
   /**
     * Create a readable stream to read the contents of the remote file. It can be
     * piped to a writable stream or listened to for 'data' events to read a
@@ -121,24 +148,7 @@ class File protected () extends js.Object {
     * NOTE: Readable streams will emit the `end` event when the file is fully
     * downloaded.
     *
-    * @param {object} [options] Configuration options.
-    * @param {string} [options.userProject] The ID of the project which will be
-    *     billed for the request.
-    * @param {string|boolean} [options.validation] Possible values: `"md5"`,
-    *     `"crc32c"`, or `false`. By default, data integrity is validated with a
-    *     CRC32c checksum. You may use MD5 if preferred, but that hash is not
-    *     supported for composite objects. An error will be raised if MD5 is
-    *     specified but is not available. You may also choose to skip validation
-    *     completely, however this is **not recommended**.
-    * @param {number} [options.start] A byte offset to begin the file's download
-    *     from. Default is 0. NOTE: Byte ranges are inclusive; that is,
-    *     `options.start = 0` and `options.end = 999` represent the first 1000
-    *     bytes in a file or object. NOTE: when specifying a byte range, data
-    *     integrity is not available.
-    * @param {number} [options.end] A byte offset to stop reading the file at.
-    *     NOTE: Byte ranges are inclusive; that is, `options.start = 0` and
-    *     `options.end = 999` represent the first 1000 bytes in a file or object.
-    *     NOTE: when specifying a byte range, data integrity is not available.
+    * @param {CreateReadStreamOptions} [options] Configuration options.
     * @returns {ReadableStream}
     *
     * @example
@@ -197,6 +207,60 @@ class File protected () extends js.Object {
   def createResumableUpload(callback: CreateResumableUploadCallback): scala.Unit = js.native
   def createResumableUpload(options: CreateResumableUploadOptions): js.Promise[CreateResumableUploadResponse] = js.native
   def createResumableUpload(options: CreateResumableUploadOptions, callback: CreateResumableUploadCallback): scala.Unit = js.native
+  /**
+    * @typedef {object} CreateWriteStreamOptions Configuration options for File#createWriteStream().
+    * @property {string} [contentType] Alias for
+    *     `options.metadata.contentType`. If set to `auto`, the file name is used
+    *     to determine the contentType.
+    * @property {string|boolean} [gzip] If true, automatically gzip the file.
+    *     If set to `auto`, the contentType is used to determine if the file
+    * should be gzipped. This will set `options.metadata.contentEncoding` to
+    * `gzip` if necessary.
+    * @property {object} [metadata] See the examples below or
+    *     [Objects: insert request
+    * body](https://cloud.google.com/storage/docs/json_api/v1/objects/insert#request_properties_JSON)
+    *     for more details.
+    * @property {number} [offset] The starting byte of the upload stream, for
+    *     resuming an interrupted upload. Defaults to 0.
+    * @property {string} [predefinedAcl] Apply a predefined set of access
+    *     controls to this object.
+    *
+    *     Acceptable values are:
+    *     - **`authenticatedRead`** - Object owner gets `OWNER` access, and
+    *       `allAuthenticatedUsers` get `READER` access.
+    *
+    *     - **`bucketOwnerFullControl`** - Object owner gets `OWNER` access, and
+    *       project team owners get `OWNER` access.
+    *
+    *     - **`bucketOwnerRead`** - Object owner gets `OWNER` access, and project
+    *       team owners get `READER` access.
+    *
+    *     - **`private`** - Object owner gets `OWNER` access.
+    *
+    *     - **`projectPrivate`** - Object owner gets `OWNER` access, and project
+    *       team members get access according to their roles.
+    *
+    *     - **`publicRead`** - Object owner gets `OWNER` access, and `allUsers`
+    * get `READER` access.
+    * @property {boolean} [private] Make the uploaded file private. (Alias for
+    *     `options.predefinedAcl = 'private'`)
+    * @property {boolean} [public] Make the uploaded file public. (Alias for
+    *     `options.predefinedAcl = 'publicRead'`)
+    * @property {boolean} [resumable] Force a resumable upload. NOTE: When
+    *     working with streams, the file format and size is unknown until it's
+    *     completely consumed. Because of this, it's best for you to be explicit
+    *     for what makes sense given your input.
+    * @property {string} [uri] The URI for an already-created resumable
+    *     upload. See {@link File#createResumableUpload}.
+    * @property {string} [userProject] The ID of the project which will be
+    *     billed for the request.
+    * @property {string|boolean} [validation] Possible values: `"md5"`,
+    *     `"crc32c"`, or `false`. By default, data integrity is validated with a
+    *     CRC32c checksum. You may use MD5 if preferred, but that hash is not
+    *     supported for composite objects. An error will be raised if MD5 is
+    *     specified but is not available. You may also choose to skip validation
+    *     completely, however this is **not recommended**.
+    */
   /**
     * Create a writable stream to overwrite the contents of the file in your
     * bucket.
@@ -268,8 +332,7 @@ class File protected () extends js.Object {
     *
     * //-
     * // Downloading the file with `createReadStream` will automatically decode
-    * the
-    * // file.
+    * // the file.
     * //-
     *
     * //-
@@ -296,28 +359,12 @@ class File protected () extends js.Object {
     */
   def createWriteStream(): nodeLib.streamMod.Writable = js.native
   def createWriteStream(options: CreateWriteStreamOptions): nodeLib.streamMod.Writable = js.native
-  def delete(): js.Promise[DeleteFileResponse] = js.native
-  def delete(callback: DeleteFileCallback): scala.Unit = js.native
-  def delete(options: DeleteFileOptions): js.Promise[DeleteFileResponse] = js.native
-  def delete(options: DeleteFileOptions, callback: DeleteFileCallback): scala.Unit = js.native
   def download(): js.Promise[DownloadResponse] = js.native
   def download(callback: DownloadCallback): scala.Unit = js.native
   def download(options: DownloadOptions): js.Promise[DownloadResponse] = js.native
   def download(options: DownloadOptions, callback: DownloadCallback): scala.Unit = js.native
-  def exists(): js.Promise[FileExistsResponse] = js.native
-  def exists(callback: FileExistsCallback): scala.Unit = js.native
-  def exists(options: FileExistsOptions): js.Promise[FileExistsResponse] = js.native
-  def exists(options: FileExistsOptions, callback: FileExistsCallback): scala.Unit = js.native
-  def get(): js.Promise[GetFileResponse] = js.native
-  def get(callback: GetFileCallback): scala.Unit = js.native
-  def get(options: GetFileOptions): js.Promise[GetFileResponse] = js.native
-  def get(options: GetFileOptions, callback: GetFileCallback): scala.Unit = js.native
   def getExpirationDate(): js.Promise[GetExpirationDateResponse] = js.native
   def getExpirationDate(callback: GetExpirationDateCallback): scala.Unit = js.native
-  def getMetadata(): js.Promise[GetFileMetadataResponse] = js.native
-  def getMetadata(callback: GetFileMetadataCallback): scala.Unit = js.native
-  def getMetadata(options: GetFileMetadataOptions): js.Promise[GetFileMetadataResponse] = js.native
-  def getMetadata(options: GetFileMetadataOptions, callback: GetFileMetadataCallback): scala.Unit = js.native
   def getSignedPolicy(callback: GetSignedPolicyCallback): scala.Unit = js.native
   def getSignedPolicy(options: GetSignedPolicyOptions): js.Promise[GetSignedPolicyResponse] = js.native
   def getSignedPolicy(options: GetSignedPolicyOptions, callback: GetSignedPolicyCallback): scala.Unit = js.native
@@ -345,13 +392,6 @@ class File protected () extends js.Object {
   def move(destination: java.lang.String, callback: MoveCallback): scala.Unit = js.native
   def move(destination: java.lang.String, options: MoveOptions): js.Promise[MoveResponse] = js.native
   def move(destination: java.lang.String, options: MoveOptions, callback: MoveCallback): scala.Unit = js.native
-  def request(
-    reqOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DecorateRequestOptions */ js.Any
-  ): js.Promise[requestLib.requestMod.requestNs.Response] = js.native
-  def request(
-    reqOpts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify DecorateRequestOptions */ js.Any,
-    callback: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify BodyResponseCallback */ js.Any
-  ): scala.Unit = js.native
   def rotateEncryptionKey(): js.Promise[RotateEncryptionKeyResponse] = js.native
   def rotateEncryptionKey(callback: RotateEncryptionKeyCallback): scala.Unit = js.native
   def rotateEncryptionKey(options: RotateEncryptionKeyOptions): js.Promise[RotateEncryptionKeyResponse] = js.native
@@ -405,22 +445,6 @@ class File protected () extends js.Object {
     */
   def setEncryptionKey(encryptionKey: java.lang.String): this.type = js.native
   def setEncryptionKey(encryptionKey: nodeLib.Buffer): this.type = js.native
-  def setMetadata(
-    metadata: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.Any
-  ): js.Promise[SetFileMetadataResponse] = js.native
-  def setMetadata(
-    metadata: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.Any,
-    callback: SetFileMetadataCallback
-  ): scala.Unit = js.native
-  def setMetadata(
-    metadata: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.Any,
-    options: SetFileMetadataOptions
-  ): js.Promise[SetFileMetadataResponse] = js.native
-  def setMetadata(
-    metadata: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Metadata */ js.Any,
-    options: SetFileMetadataOptions,
-    callback: SetFileMetadataCallback
-  ): scala.Unit = js.native
   def setStorageClass(storageClass: java.lang.String): js.Promise[SetStorageClassResponse] = js.native
   def setStorageClass(storageClass: java.lang.String, callback: SetStorageClassCallback): scala.Unit = js.native
   def setStorageClass(storageClass: java.lang.String, options: SetStorageClassOptions): js.Promise[SetStorageClassResponse] = js.native

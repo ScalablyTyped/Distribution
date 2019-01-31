@@ -20,9 +20,9 @@ abstract class AuthClient ()
     ]
   ): this.type = js.native
   /**
-    * Provides an alternative Axios request implementation with auth credentials
+    * Provides an alternative Gaxios request implementation with auth credentials
     */
-  def request[T](opts: axiosLib.axiosMod.AxiosRequestConfig): axiosLib.axiosMod.AxiosPromise[T] = js.native
+  def request[T](opts: gaxiosLib.buildSrcCommonMod.GaxiosOptions): gaxiosLib.buildSrcCommonMod.GaxiosPromise[T] = js.native
   /**
     * Sets the auth credentials.
     */

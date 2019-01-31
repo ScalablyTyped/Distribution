@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class documentFragment protected () extends node {
   def this(nodeOrDoc: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
-  val `type`: scala.Double = js.native
   def insertAfterNode(node: node): scala.Unit = js.native
 }
 

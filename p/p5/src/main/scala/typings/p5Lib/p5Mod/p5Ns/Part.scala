@@ -13,7 +13,7 @@ trait Part extends js.Object {
     */
   def addPhrase(phrase: p5Lib.p5Mod.Phrase): scala.Unit = js.native
   /**
-    *   Returns the Beats Per Minute of this currently
+    *   Returns the tempo, in Beats Per Minute, of this
     *   part.
     */
   def getBPM(): scala.Double = js.native
@@ -36,7 +36,8 @@ trait Part extends js.Object {
     */
   def noLoop(): scala.Unit = js.native
   /**
-    *   Fire a callback function at every step.
+    *   Set the function that will be called at every
+    *   step. This will clear the previous function.
     *   @param callback The name of the callback you want
     *   to fire on every beat/tatum.
     */
@@ -53,9 +54,8 @@ trait Part extends js.Object {
     */
   def removePhrase(phraseName: java.lang.String): scala.Unit = js.native
   /**
-    *   Get a phrase from this part, based on the name it
-    *   was given when it was created. Now you can modify
-    *   its array.
+    *   Find all sequences with the specified name, and
+    *   replace their patterns with the specified array.
     *   @param sequence Array of values to pass into the
     *   callback at each step of the phrase.
     */
@@ -76,7 +76,9 @@ trait Part extends js.Object {
   def start(): scala.Unit = js.native
   def start(time: scala.Double): scala.Unit = js.native
   /**
-    *   Stop the part and cue it to step 0.
+    *   Stop the part and cue it to step 0. Playback will
+    *   resume from the begining of the Part when it is
+    *   played again.
     *   @param [time] seconds from now
     */
   def stop(): scala.Unit = js.native

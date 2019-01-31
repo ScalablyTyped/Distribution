@@ -49,18 +49,6 @@ trait Element extends js.Object {
   def center(): p5Lib.p5Mod.Element = js.native
   def center(align: java.lang.String): p5Lib.p5Mod.Element = js.native
   /**
-    *   The .changed() function is called when the value
-    *   of an element changes. This can be used to attach
-    *   an element specific event listener.
-    *   @param fxn function to be fired when the value of
-    *   an element changes. if false is passed instead,
-    *   the previously firing function will no longer
-    *   fire.
-    *   @chainable
-    */
-  def changed(fxn: js.Function1[/* repeated */ js.Any, _]): p5Lib.p5Mod.Element = js.native
-  def changed(fxn: scala.Boolean): p5Lib.p5Mod.Element = js.native
-  /**
     *   Attaches the element as a child to the parent
     *   specified. Accepts either a string ID, DOM node,
     *   or p5.Element. If no argument is specified, an
@@ -203,21 +191,6 @@ trait Element extends js.Object {
     */
   def id(id: java.lang.String): p5Lib.p5Mod.Element = js.native
   /**
-    *   The .input() function is called when any user
-    *   input is detected with an element. The input event
-    *   is often used to detect keystrokes in a input
-    *   element, or changes on a slider element. This can
-    *   be used to attach an element specific event
-    *   listener.
-    *   @param fxn function to be fired when any user
-    *   input is detected within the element. if false is
-    *   passed instead, the previously firing function
-    *   will no longer fire.
-    *   @chainable
-    */
-  def input(fxn: js.Function1[/* repeated */ js.Any, _]): p5Lib.p5Mod.Element = js.native
-  def input(fxn: scala.Boolean): p5Lib.p5Mod.Element = js.native
-  /**
     *   The .mouseClicked() function is called once after
     *   a mouse button is pressed and released over the
     *   element. Some mobile browsers may also trigger
@@ -329,7 +302,11 @@ trait Element extends js.Object {
     *   Accepts either a string ID, DOM node, or
     *   p5.Element. If no arguments given, parent node is
     *   returned. For more ways to position the canvas,
-    *   see the  positioning the canvas wiki page.
+    *   see the  positioning the canvas wiki page. All
+    *   above examples except for the first one require
+    *   the inclusion of the p5.dom library in your
+    *   index.html. See the using a library section for
+    *   information on how to include this library.
     */
   def parent(): p5Lib.p5Mod.Element = js.native
   /**
@@ -338,7 +315,11 @@ trait Element extends js.Object {
     *   Accepts either a string ID, DOM node, or
     *   p5.Element. If no arguments given, parent node is
     *   returned. For more ways to position the canvas,
-    *   see the  positioning the canvas wiki page.
+    *   see the  positioning the canvas wiki page. All
+    *   above examples except for the first one require
+    *   the inclusion of the p5.dom library in your
+    *   index.html. See the using a library section for
+    *   information on how to include this library.
     *   @param parent the ID, DOM node, or p5.Element of
     *   desired parent element
     *   @chainable

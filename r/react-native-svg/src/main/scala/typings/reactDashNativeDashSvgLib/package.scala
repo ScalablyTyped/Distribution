@@ -5,6 +5,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashNativeDashSvgLib {
+  /*
+    ColumnMajorTransformMatrix
+    [a, b, c, d, tx, ty]
+    This matrix can be visualized as:
+    ╔═      ═╗
+    ║ a c tx ║
+    ║ b d ty ║
+    ║ 0 0 1  ║
+    ╚═      ═╝
+  */
+  type ColumnMajorTransformMatrix = js.Array[scala.Double]
   // Common props
   type NumberProp = java.lang.String | scala.Double
+  // rgba values inside range 0 to 1 inclusive
+  // rgbaArray = [r, g, b, a]
+  type rgbaArray = js.Array[scala.Double]
 }

@@ -173,6 +173,10 @@ package object stdLib {
   type NotificationDirection = stdLib.stdLibStrings.auto | stdLib.stdLibStrings.ltr | stdLib.stdLibStrings.rtl
   type NotificationPermission = stdLib.stdLibStrings.default | stdLib.stdLibStrings.denied | stdLib.stdLibStrings.granted
   type NotificationPermissionCallback = js.Function1[/* permission */ NotificationPermission, scala.Unit]
+  /**
+    * Removes the 'this' parameter from a function type.
+    */
+  type OmitThisParameter[T] = T | (js.Function1[/* args */ js.Any, js.Any])
   type OnBeforeUnloadEventHandler = OnBeforeUnloadEventHandlerNonNull | scala.Null
   type OnBeforeUnloadEventHandlerNonNull = js.Function1[/* event */ Event, java.lang.String | scala.Null]
   type OnErrorEventHandler = OnErrorEventHandlerNonNull | scala.Null
@@ -329,6 +333,10 @@ package object stdLib {
   type TexImageSource = ImageBitmap | ImageData | HTMLImageElement | HTMLCanvasElement | HTMLVideoElement
   type TextTrackKind = stdLib.stdLibStrings.subtitles | stdLib.stdLibStrings.captions | stdLib.stdLibStrings.descriptions | stdLib.stdLibStrings.chapters | stdLib.stdLibStrings.metadata
   type TextTrackMode = stdLib.stdLibStrings.disabled | stdLib.stdLibStrings.hidden | stdLib.stdLibStrings.showing
+  /**
+    * Extracts the type of the 'this' parameter of a function type, or 'unknown' if the function type has no 'this' parameter.
+    */
+  type ThisParameterType[T] = js.Any
   type TimerHandler = java.lang.String | js.Function
   type TouchType = stdLib.stdLibStrings.direct | stdLib.stdLibStrings.stylus
   type Transferable = ArrayBuffer | MessagePort | ImageBitmap
