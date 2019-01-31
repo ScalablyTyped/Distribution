@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "expo__vector-icons"
-version := "6.2-dt-20181017Z-bd70f5"
+version := "6.2-dt-20181017Z-20cdae"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
   "org.scalablytyped" %%% "react" % "16.7-dt-20190128Z-cfd22c",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190122Z-3f1df3",
-  "org.scalablytyped" %%% "react-native-vector-icons" % "4.6-dt-20181108Z-bb1880",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190130Z-5379e5",
+  "org.scalablytyped" %%% "react-native-vector-icons" % "4.6-dt-20181108Z-c6fb5f",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "bunyan-config"
-version := "0.2.0-dt-20180214Z-80580a"
+version := "0.2.0-dt-20180214Z-59306e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20181009Z-3f2bcc",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190128Z-23a585",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20181009Z-66c89e",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-40209e",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

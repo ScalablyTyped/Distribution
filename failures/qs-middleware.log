@@ -5,8 +5,8 @@
 [debug] PhaseRunner.scala:82 Success [id => qs-middleware, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing qs-middleware [id => qs-middleware, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => qs-middleware, phase => scala.js] 
-[warn ] Phase3CompileBloop.scala:197 Built qs-middleware in 423 ms [id => qs-middleware, phase => build] 
-[info ] Phase3CompileBloop.scala:205 published local, [/home/tso/.ivy2/local/org.scalablytyped/qs-middleware_sjs0.6_2.12/1.0-dt-20190126Z-11b90d/jars/qs-middleware_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/qs-middleware_sjs0.6_2.12/1.0-dt-20190126Z-11b90d/srcs/qs-middleware_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/qs-middleware_sjs0.6_2.12/1.0-dt-20190126Z-11b90d/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/qs-middleware_sjs0.6_2.12/1.0-dt-20190126Z-11b90d/poms/qs-middleware_sjs0.6_2.12.pom] [id => qs-middleware, phase => build] 
+[warn ] Phase3CompileBloop.scala:197 Built qs-middleware in 293 ms [id => qs-middleware, phase => build] 
+[info ] Phase3CompileBloop.scala:205 published local, [/home/tso/.ivy2/local/org.scalablytyped/qs-middleware_sjs0.6_2.12/1.0-dt-20190126Z-9779b5/jars/qs-middleware_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/qs-middleware_sjs0.6_2.12/1.0-dt-20190126Z-9779b5/srcs/qs-middleware_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/qs-middleware_sjs0.6_2.12/1.0-dt-20190126Z-9779b5/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/qs-middleware_sjs0.6_2.12/1.0-dt-20190126Z-9779b5/poms/qs-middleware_sjs0.6_2.12.pom] [id => qs-middleware, phase => build] 
 [debug] PhaseRunner.scala:82 Success [id => qs-middleware, phase => build] 
 [error] PhaseRes.scala:76 Caught exception: dispatch.StatusCode: Unexpected response status: 404 [id => qs-middleware, phase => publish] java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 404
 	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:218)

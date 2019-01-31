@@ -13,7 +13,8 @@
 [debug] PhaseRunner.scala:82 Success [id => gaxios, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing gaxios [id => gaxios, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => gaxios, phase => scala.js] 
-[warn ] Phase3CompileBloop.scala:178 Using cached build of gaxios [id => gaxios, phase => build] 
+[warn ] Phase3CompileBloop.scala:197 Built gaxios in 450 ms [id => gaxios, phase => build] 
+[info ] Phase3CompileBloop.scala:205 published local, [/home/tso/.ivy2/local/org.scalablytyped/gaxios_sjs0.6_2.12/1.2.6-b30cc2/jars/gaxios_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/gaxios_sjs0.6_2.12/1.2.6-b30cc2/srcs/gaxios_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/gaxios_sjs0.6_2.12/1.2.6-b30cc2/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/gaxios_sjs0.6_2.12/1.2.6-b30cc2/poms/gaxios_sjs0.6_2.12.pom] [id => gaxios, phase => build] 
 [debug] PhaseRunner.scala:82 Success [id => gaxios, phase => build] 
 [error] PhaseRes.scala:76 Caught exception: dispatch.StatusCode: Unexpected response status: 404 [id => gaxios, phase => publish] java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 404
 	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:218)

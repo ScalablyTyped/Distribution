@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "btoa"
-version := "1.2-dt-20180507Z-12a5f3"
+version := "1.2-dt-20190124Z-292ae3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

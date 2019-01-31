@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply(
-    rawFetch: zipkinDashInstrumentationDashFetchLib.Anon_Init,
+    rawFetch: zipkinDashInstrumentationDashFetchLib.Anon_Code,
     options: zipkinDashInstrumentationDashFetchLib.zipkinDashInstrumentationDashFetchMod.Options
-  ): zipkinDashInstrumentationDashFetchLib.Anon_Init = js.native
+  ): zipkinDashInstrumentationDashFetchLib.Anon_Code = js.native
 }
 

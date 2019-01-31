@@ -31,9 +31,96 @@ object pkcs12Ns extends js.Object {
     def getBagsByLocalKeyId(localKeyId: java.lang.String, bagType: java.lang.String): js.Array[Bag]
   }
   
+  def generateKey(
+    password: java.lang.String,
+    salt: nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer,
+    id: nodeDashForgeLib.nodeDashForgeMod.Byte,
+    iter: scala.Double,
+    n: scala.Double
+  ): nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer = js.native
+  def generateKey(
+    password: java.lang.String,
+    salt: nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer,
+    id: nodeDashForgeLib.nodeDashForgeMod.Byte,
+    iter: scala.Double,
+    n: scala.Double,
+    md: nodeDashForgeLib.nodeDashForgeMod.mdNs.MessageDigest
+  ): nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer = js.native
+  def generateKey(
+    password: js.UndefOr[scala.Nothing],
+    salt: nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer,
+    id: nodeDashForgeLib.nodeDashForgeMod.Byte,
+    iter: scala.Double,
+    n: scala.Double
+  ): nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer = js.native
+  def generateKey(
+    password: js.UndefOr[scala.Nothing],
+    salt: nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer,
+    id: nodeDashForgeLib.nodeDashForgeMod.Byte,
+    iter: scala.Double,
+    n: scala.Double,
+    md: nodeDashForgeLib.nodeDashForgeMod.mdNs.MessageDigest
+  ): nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer = js.native
+  def generateKey(
+    password: scala.Null,
+    salt: nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer,
+    id: nodeDashForgeLib.nodeDashForgeMod.Byte,
+    iter: scala.Double,
+    n: scala.Double
+  ): nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer = js.native
+  def generateKey(
+    password: scala.Null,
+    salt: nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer,
+    id: nodeDashForgeLib.nodeDashForgeMod.Byte,
+    iter: scala.Double,
+    n: scala.Double,
+    md: nodeDashForgeLib.nodeDashForgeMod.mdNs.MessageDigest
+  ): nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer = js.native
   def pkcs12FromAsn1(obj: js.Any): Pkcs12Pfx = js.native
   def pkcs12FromAsn1(obj: js.Any, password: java.lang.String): Pkcs12Pfx = js.native
   def pkcs12FromAsn1(obj: js.Any, strict: scala.Boolean): Pkcs12Pfx = js.native
   def pkcs12FromAsn1(obj: js.Any, strict: scala.Boolean, password: java.lang.String): Pkcs12Pfx = js.native
+  def toPkcs12Asn1(
+    key: nodeDashForgeLib.nodeDashForgeMod.pkiNs.PrivateKey,
+    cert: js.Array[nodeDashForgeLib.nodeDashForgeMod.pkiNs.Certificate]
+  ): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
+  def toPkcs12Asn1(
+    key: nodeDashForgeLib.nodeDashForgeMod.pkiNs.PrivateKey,
+    cert: js.Array[nodeDashForgeLib.nodeDashForgeMod.pkiNs.Certificate],
+    password: java.lang.String
+  ): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
+  def toPkcs12Asn1(
+    key: nodeDashForgeLib.nodeDashForgeMod.pkiNs.PrivateKey,
+    cert: js.Array[nodeDashForgeLib.nodeDashForgeMod.pkiNs.Certificate],
+    password: java.lang.String,
+    options: nodeDashForgeLib.Anon_3des
+  ): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
+  def toPkcs12Asn1(
+    key: nodeDashForgeLib.nodeDashForgeMod.pkiNs.PrivateKey,
+    cert: js.Array[nodeDashForgeLib.nodeDashForgeMod.pkiNs.Certificate],
+    password: scala.Null,
+    options: nodeDashForgeLib.Anon_3des
+  ): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
+  def toPkcs12Asn1(
+    key: nodeDashForgeLib.nodeDashForgeMod.pkiNs.PrivateKey,
+    cert: nodeDashForgeLib.nodeDashForgeMod.pkiNs.Certificate
+  ): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
+  def toPkcs12Asn1(
+    key: nodeDashForgeLib.nodeDashForgeMod.pkiNs.PrivateKey,
+    cert: nodeDashForgeLib.nodeDashForgeMod.pkiNs.Certificate,
+    password: java.lang.String
+  ): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
+  def toPkcs12Asn1(
+    key: nodeDashForgeLib.nodeDashForgeMod.pkiNs.PrivateKey,
+    cert: nodeDashForgeLib.nodeDashForgeMod.pkiNs.Certificate,
+    password: java.lang.String,
+    options: nodeDashForgeLib.Anon_3des
+  ): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
+  def toPkcs12Asn1(
+    key: nodeDashForgeLib.nodeDashForgeMod.pkiNs.PrivateKey,
+    cert: nodeDashForgeLib.nodeDashForgeMod.pkiNs.Certificate,
+    password: scala.Null,
+    options: nodeDashForgeLib.Anon_3des
+  ): nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1 = js.native
 }
 

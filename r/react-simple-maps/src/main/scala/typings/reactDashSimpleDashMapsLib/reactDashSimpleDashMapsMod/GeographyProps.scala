@@ -65,7 +65,7 @@ trait GeographyProps extends js.Object {
     ]
   ] = js.undefined
   var precision: js.UndefOr[scala.Double] = js.undefined
-  var projection: js.UndefOr[js.Function1[/* point */ Point, scala.Unit]] = js.undefined
+  var projection: js.UndefOr[d3DashGeoLib.d3DashGeoMod.GeoProjection] = js.undefined
   var round: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactDashSimpleDashMapsLib.Anon_Default] = js.undefined
   var tabable: js.UndefOr[scala.Boolean] = js.undefined

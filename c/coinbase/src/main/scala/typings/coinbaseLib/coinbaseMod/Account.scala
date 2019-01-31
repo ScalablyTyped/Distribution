@@ -9,6 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class Account () extends Resource {
   /**
+    * Allow deposits
+    */
+  var allow_deposits: scala.Boolean = js.native
+  /**
+    * Allow withdrawls
+    */
+  var allow_withdrawals: scala.Boolean = js.native
+  /**
     * Balance
     */
   var balance: MoneyHash = js.native
@@ -28,6 +36,10 @@ class Account () extends Resource {
     * User or system defined name
     */
   var name: java.lang.String = js.native
+  /**
+    * Account worth in fiat.
+    */
+  var native_balance: MoneyHash = js.native
   /**
     * Primary account
     */
@@ -121,7 +133,10 @@ class Account () extends Resource {
     * Lists buys for an account.
     * Scope: wallet:buys:read
     */
-  def getBuys(cb: js.Function2[/* error */ stdLib.Error, /* result */ js.Array[Buy], scala.Unit]): scala.Unit = js.native
+  def getBuys(
+    opts: scala.Null,
+    cb: js.Function2[/* error */ stdLib.Error, /* result */ js.Array[Buy], scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Show an individual deposit.
     * Scope: wallet:deposits:read
@@ -143,7 +158,10 @@ class Account () extends Resource {
     * Lists sells for an account.
     * Scope: wallet:sells:read
     */
-  def getSells(cb: js.Function2[/* error */ stdLib.Error, /* result */ js.Array[Sell], scala.Unit]): scala.Unit = js.native
+  def getSells(
+    opts: scala.Null,
+    cb: js.Function2[/* error */ stdLib.Error, /* result */ js.Array[Sell], scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Show an individual transaction for an account
     * Scope: wallet:transactions:read

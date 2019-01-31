@@ -85,6 +85,8 @@ trait JWPlayer extends js.Object {
   @JSName("on")
   def on_captionsList(event: jwplayerLib.jwplayerLibStrings.captionsList, callback: EventCallback[CaptionsListParam]): scala.Unit = js.native
   @JSName("on")
+  def on_cast(event: jwplayerLib.jwplayerLibStrings.cast, callback: EventCallback[CastParam]): scala.Unit = js.native
+  @JSName("on")
   def on_controls(event: jwplayerLib.jwplayerLibStrings.controls, callback: EventCallback[ControlsParam]): scala.Unit = js.native
   @JSName("on")
   def on_error(event: jwplayerLib.jwplayerLibStrings.error, callback: EventCallback[ErrorParam]): scala.Unit = js.native
@@ -167,6 +169,8 @@ trait JWPlayer extends js.Object {
   ): scala.Unit = js.native
   @JSName("once")
   def once_captionsList(event: jwplayerLib.jwplayerLibStrings.captionsList, callback: EventCallback[CaptionsListParam]): scala.Unit = js.native
+  @JSName("once")
+  def once_cast(event: jwplayerLib.jwplayerLibStrings.cast, callback: EventCallback[CastParam]): scala.Unit = js.native
   @JSName("once")
   def once_controls(event: jwplayerLib.jwplayerLibStrings.controls, callback: EventCallback[ControlsParam]): scala.Unit = js.native
   @JSName("once")
@@ -272,6 +276,8 @@ trait JWPlayer extends js.Object {
   def trigger_captionsChanged(event: jwplayerLib.jwplayerLibStrings.captionsChanged, args: CaptionsChangedParam): scala.Unit = js.native
   @JSName("trigger")
   def trigger_captionsList(event: jwplayerLib.jwplayerLibStrings.captionsList, args: CaptionsListParam): scala.Unit = js.native
+  @JSName("trigger")
+  def trigger_cast(event: jwplayerLib.jwplayerLibStrings.cast, args: CastParam): scala.Unit = js.native
   @JSName("trigger")
   def trigger_controls(event: jwplayerLib.jwplayerLibStrings.controls, args: ControlsParam): scala.Unit = js.native
   @JSName("trigger")

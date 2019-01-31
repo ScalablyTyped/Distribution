@@ -30,7 +30,7 @@ class Repository () extends js.Object {
   /**
     * Create a blob from a buffer
     */
-  def createBlobFromBuffer(buffer: nodeLib.Buffer): nodegitLib.oidMod.Oid = js.native
+  def createBlobFromBuffer(buffer: nodeLib.Buffer): js.Promise[nodegitLib.oidMod.Oid] = js.native
   def createBranch(name: java.lang.String, commit: java.lang.String): js.Promise[nodegitLib.referenceMod.Reference] = js.native
   def createBranch(name: java.lang.String, commit: java.lang.String, force: scala.Boolean): js.Promise[nodegitLib.referenceMod.Reference] = js.native
   /**

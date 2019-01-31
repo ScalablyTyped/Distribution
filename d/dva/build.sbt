@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dva"
-version := "2.4.1-b71457"
+version := "2.4.1-1b6348"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,10 +10,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20181017Z-ee6730",
   "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-fd94ae",
   "org.scalablytyped" %%% "isomorphic-fetch" % "0.0-dt-20180214Z-b3a807",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190128Z-23a585",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-40209e",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
   "org.scalablytyped" %%% "react" % "16.7-dt-20190128Z-cfd22c",
-  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-9427a2",
+  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-40bb02",
   "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190124Z-00f73a",
   "org.scalablytyped" %%% "react-router" % "4.4-dt-20190103Z-3b9cc8",
   "org.scalablytyped" %%% "react-router-dom" % "4.3-dt-20181211Z-b21a03",

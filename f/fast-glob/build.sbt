@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast-glob"
-version := "2.2.4-7b97b3"
+version := "2.2.4-d96506"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,11 +10,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "glob-parent" % "3.1-dt-20180214Z-2b6028",
   "org.scalablytyped" %%% "glob-to-regexp" % "0.4-dt-20180607Z-4a762a",
   "org.scalablytyped" %%% "is-glob" % "4.0-dt-20180214Z-77cbaa",
-  "org.scalablytyped" %%% "merge2" % "1.1-dt-20180214Z-7ceed9",
+  "org.scalablytyped" %%% "merge2" % "1.1-dt-20180214Z-4eb92b",
   "org.scalablytyped" %%% "micromatch" % "3.1-dt-20180214Z-8fe84b",
-  "org.scalablytyped" %%% "mrmlnc__readdir-enhanced" % "2.2.1-15af2a",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190128Z-23a585",
-  "org.scalablytyped" %%% "nodelib__fs_dot_stat" % "1.1.3-d2eaa3",
+  "org.scalablytyped" %%% "mrmlnc__readdir-enhanced" % "2.2.1-3c24db",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-40209e",
+  "org.scalablytyped" %%% "nodelib__fs_dot_stat" % "1.1.3-ea3247",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

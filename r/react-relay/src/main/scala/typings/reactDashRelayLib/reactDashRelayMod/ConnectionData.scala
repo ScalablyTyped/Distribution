@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait ConnectionData extends js.Object {
   var edges: js.UndefOr[js.Array[_]] = js.undefined
-  var pageInfo: js.UndefOr[stdLib.Partial[PageInfo]] = js.undefined
+  var pageInfo: js.UndefOr[stdLib.Partial[PageInfo] | scala.Null] = js.undefined
 }
 

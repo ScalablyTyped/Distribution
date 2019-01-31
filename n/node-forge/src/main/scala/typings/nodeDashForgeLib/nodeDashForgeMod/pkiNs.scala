@@ -122,6 +122,7 @@ object pkiNs extends js.Object {
   def certificationRequestToPem(cert: Certificate): PEM = js.native
   def certificationRequestToPem(cert: Certificate, maxline: scala.Double): PEM = js.native
   def createCaStore(): CAStore = js.native
+  def createCaStore(certs: js.Array[Certificate | PEM]): CAStore = js.native
   def createCertificate(): Certificate = js.native
   def createCertificationRequest(): Certificate = js.native
   def decryptRsaPrivateKey(pem: PEM): PrivateKey = js.native

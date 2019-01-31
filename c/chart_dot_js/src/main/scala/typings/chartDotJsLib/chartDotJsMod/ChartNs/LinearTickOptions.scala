@@ -5,5 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LinearTickOptions extends TickOptions
+trait LinearTickOptions extends TickOptions {
+  var precision: js.UndefOr[scala.Double] = js.undefined
+}
 

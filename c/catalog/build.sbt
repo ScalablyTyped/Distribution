@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "catalog"
-version := "3.6.0-1730d9"
+version := "3.6.0-c266c2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -16,11 +16,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel-traverse" % "6.25-dt-20180611Z-b271d4",
   "org.scalablytyped" %%% "babel-types" % "7.0-dt-20180613Z-59877a",
   "org.scalablytyped" %%% "babylon" % "6.16-dt-20181029Z-b49145",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-34f287",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-b38537",
   "org.scalablytyped" %%% "chalk" % "2.4.2-aa77e5",
-  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190124Z-cda5ab",
+  "org.scalablytyped" %%% "clean-css" % "4.2-dt-20190130Z-d09277",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-786ea5",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-202759",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-c7658c",
   "org.scalablytyped" %%% "create-emotion" % "10.0.6-4b43dd",
   "org.scalablytyped" %%% "create-react-class" % "15.6-dt-20180806Z-1f56bd",
   "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
@@ -31,21 +31,21 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "emotion__sheet" % "0.9.2-dd3e6b",
   "org.scalablytyped" %%% "emotion__utils" % "0.11.1-d43e80",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-433270",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-0c8b00",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-cd70e8",
-  "org.scalablytyped" %%% "extract-text-webpack-plugin" % "3.0-dt-20180509Z-7dc4b3",
-  "org.scalablytyped" %%% "friendly-errors-webpack-plugin" % "0.1-dt-20180214Z-6b2af6",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-02bf23",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-7910af",
+  "org.scalablytyped" %%% "extract-text-webpack-plugin" % "3.0-dt-20180509Z-d75a41",
+  "org.scalablytyped" %%% "friendly-errors-webpack-plugin" % "0.1-dt-20180214Z-551eda",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20181017Z-ee6730",
-  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190124Z-9dad5f",
-  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20181121Z-a790e7",
-  "org.scalablytyped" %%% "http-proxy" % "1.16-dt-20180514Z-c9ff88",
-  "org.scalablytyped" %%% "http-proxy-middleware" % "0.19-dt-20190114Z-9cabcd",
+  "org.scalablytyped" %%% "html-minifier" % "3.5-dt-20190124Z-19064c",
+  "org.scalablytyped" %%% "html-webpack-plugin" % "3.2-dt-20181121Z-f5f3e1",
+  "org.scalablytyped" %%% "http-proxy" % "1.16-dt-20180514Z-dd6371",
+  "org.scalablytyped" %%% "http-proxy-middleware" % "0.19-dt-20190114Z-ee647b",
   "org.scalablytyped" %%% "js-base64" % "2.3-dt-20180214Z-326cdb",
   "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-8bc5c9",
   "org.scalablytyped" %%% "marked" % "0.6-dt-20190102Z-6138c1",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-2342ad",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190128Z-23a585",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181119Z-d86f0f",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-40209e",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190130Z-d4cb0b",
   "org.scalablytyped" %%% "postcss" % "5.2.18-c92611",
   "org.scalablytyped" %%% "prismjs" % "1.9-dt-20180214Z-fdff22",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
@@ -54,10 +54,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-a57469",
   "org.scalablytyped" %%% "react" % "16.7-dt-20190128Z-cfd22c",
   "org.scalablytyped" %%% "react-document-title" % "2.0-dt-20180803Z-36436b",
-  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-9427a2",
+  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-40bb02",
   "org.scalablytyped" %%% "react-router" % "4.4-dt-20190103Z-3b9cc8",
   "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20180214Z-a03586",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-22f3a9",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-195cb6",
   "org.scalablytyped" %%% "source-map" % "0.7.3-1d8315",
   "org.scalablytyped" %%% "srcset" % "1.0-dt-20190114Z-a53ec6",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
@@ -65,10 +65,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-394486",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-1d4d44",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-280313",
-  "org.scalablytyped" %%% "unfetch" % "3.1.2-e0daf6",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190116Z-eb1462",
-  "org.scalablytyped" %%% "webpack-dev-server" % "3.1-dt-20180917Z-460eee",
-  "org.scalablytyped" %%% "webpack-manifest-plugin" % "2.0-dt-20181216Z-216891")
+  "org.scalablytyped" %%% "unfetch" % "3.1.2-52a46f",
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190116Z-40f11b",
+  "org.scalablytyped" %%% "webpack-dev-server" % "3.1-dt-20180917Z-c2c4d7",
+  "org.scalablytyped" %%% "webpack-manifest-plugin" % "2.0-dt-20181216Z-c1140f")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

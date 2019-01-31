@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("commonmark", "Node")
 @js.native
 class Node protected () extends js.Object {
-  def this(nodeType: java.lang.String) = this()
-  def this(nodeType: java.lang.String, sourcepos: Position) = this()
+  def this(nodeType: NodeType) = this()
+  def this(nodeType: NodeType, sourcepos: Position) = this()
   /**
     * Setting the backing object of listType, listTight, listStat and listDelimiter directly.
     * Not needed unless creating list nodes directly. Should be fixed from v>0.22.1
@@ -92,7 +92,7 @@ class Node protected () extends js.Object {
     * (read-only): a String, one of text, softbreak, linebreak, emph, strong, html_inline, link, image, code, document, paragraph,
     * block_quote, item, list, heading, code_block, html_block, thematic_break.
     */
-  val `type`: commonmarkLib.commonmarkLibStrings.text | commonmarkLib.commonmarkLibStrings.softbreak | commonmarkLib.commonmarkLibStrings.linebreak | commonmarkLib.commonmarkLibStrings.emph | commonmarkLib.commonmarkLibStrings.strong | commonmarkLib.commonmarkLibStrings.html_inline | commonmarkLib.commonmarkLibStrings.link | commonmarkLib.commonmarkLibStrings.image | commonmarkLib.commonmarkLibStrings.code | commonmarkLib.commonmarkLibStrings.document | commonmarkLib.commonmarkLibStrings.paragraph | commonmarkLib.commonmarkLibStrings.block_quote | commonmarkLib.commonmarkLibStrings.item | commonmarkLib.commonmarkLibStrings.list | commonmarkLib.commonmarkLibStrings.heading | commonmarkLib.commonmarkLibStrings.code_block | commonmarkLib.commonmarkLibStrings.html_block | commonmarkLib.commonmarkLibStrings.thematic_break | commonmarkLib.commonmarkLibStrings.custom_inline | commonmarkLib.commonmarkLibStrings.custom_block = js.native
+  val `type`: NodeType = js.native
   /**
     * Append a Node child to the end of the Node's children.
     */

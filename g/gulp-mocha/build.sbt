@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "gulp-mocha"
-version := "0.0-unknown-dt-20180315Z-de5e54"
+version := "0.0-unknown-dt-20180315Z-5d046d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "mocha" % "5.2-dt-20180806Z-13e330",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190128Z-23a585",
+  "org.scalablytyped" %%% "mocha" % "5.2-dt-20180806Z-2da108",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-40209e",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

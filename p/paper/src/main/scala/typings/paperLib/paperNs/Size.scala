@@ -98,6 +98,32 @@ class Size protected () extends js.Object {
     * Returns a new size with rounded width and height values. The object itself is not modified!
     */
   def round(): Size = js.native
+  /**
+  		 * Sets the size using the numbers in the given array as dimensions.
+    * @param array - an array of numbers
+  		 */
+  def set(array: js.Array[scala.Double]): Size = js.native
+  /**
+  		 * Sets the size using the properties in the given object.
+    * @param object - the object literal containing properies (width:10, height:10 etc)
+  		 */
+  def set(`object`: js.Any): Size = js.native
+  /**
+    * Sets the size using the point.x and point.y values of the given Point object.
+    * @param point - the point from which to create a size
+    */
+  def set(point: Point): Size = js.native
+  /**
+  		 * Sets the size using the coordinates of the given Size object.
+    * @param size - the size to duplicate from
+    */
+  def set(size: Size): Size = js.native
+  /**
+  		 * Sets the size with the given width and height values.
+    * @param width - the width
+    * @param height - the height
+  		 */
+  def set(width: scala.Double, height: scala.Double): Size = js.native
   def subtract(size: js.Array[scala.Double]): Size = js.native
   /*
     * Returns a new size

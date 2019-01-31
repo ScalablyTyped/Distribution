@@ -75,8 +75,10 @@ trait MongooseDocument extends MongooseDocumentOptionals {
     * @param kind optional kind property for the error
     * @returns the current ValidationError, with all currently invalidated paths
     */
+  def invalidate(path: java.lang.String, errorMsg: java.lang.String): mongooseLib.mongooseMod.ErrorNs.ValidationError | scala.Boolean = js.native
   def invalidate(path: java.lang.String, errorMsg: java.lang.String, value: js.Any): mongooseLib.mongooseMod.ErrorNs.ValidationError | scala.Boolean = js.native
   def invalidate(path: java.lang.String, errorMsg: java.lang.String, value: js.Any, kind: java.lang.String): mongooseLib.mongooseMod.ErrorNs.ValidationError | scala.Boolean = js.native
+  def invalidate(path: java.lang.String, errorMsg: NativeError): mongooseLib.mongooseMod.ErrorNs.ValidationError | scala.Boolean = js.native
   def invalidate(path: java.lang.String, errorMsg: NativeError, value: js.Any): mongooseLib.mongooseMod.ErrorNs.ValidationError | scala.Boolean = js.native
   def invalidate(path: java.lang.String, errorMsg: NativeError, value: js.Any, kind: java.lang.String): mongooseLib.mongooseMod.ErrorNs.ValidationError | scala.Boolean = js.native
   /** Returns true if path was directly set and modified, else false. */

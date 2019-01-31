@@ -5,8 +5,7 @@
 [debug] PhaseRunner.scala:82 Success [id => defaults-deep, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing defaults-deep [id => defaults-deep, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => defaults-deep, phase => scala.js] 
-[warn ] Phase3CompileBloop.scala:197 Built defaults-deep in 362 ms [id => defaults-deep, phase => build] 
-[info ] Phase3CompileBloop.scala:205 published local, [/home/tso/.ivy2/local/org.scalablytyped/defaults-deep_sjs0.6_2.12/0.2-dt-20190129Z-995c14/jars/defaults-deep_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/defaults-deep_sjs0.6_2.12/0.2-dt-20190129Z-995c14/srcs/defaults-deep_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/defaults-deep_sjs0.6_2.12/0.2-dt-20190129Z-995c14/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/defaults-deep_sjs0.6_2.12/0.2-dt-20190129Z-995c14/poms/defaults-deep_sjs0.6_2.12.pom] [id => defaults-deep, phase => build] 
+[warn ] Phase3CompileBloop.scala:178 Using cached build of defaults-deep [id => defaults-deep, phase => build] 
 [debug] PhaseRunner.scala:82 Success [id => defaults-deep, phase => build] 
 [error] PhaseRes.scala:76 Caught exception: dispatch.StatusCode: Unexpected response status: 404 [id => defaults-deep, phase => publish] java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 404
 	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:218)

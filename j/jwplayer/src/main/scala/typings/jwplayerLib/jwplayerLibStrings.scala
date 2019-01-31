@@ -79,6 +79,9 @@ object jwplayerLibStrings {
   sealed trait captionsList extends js.Object
   
   @js.native
+  sealed trait cast extends js.Object
+  
+  @js.native
   sealed trait complete extends js.Object
   
   @js.native
@@ -210,6 +213,7 @@ object jwplayerLibStrings {
   def buffering: buffering = "buffering".asInstanceOf[buffering]
   def captionsChanged: captionsChanged = "captionsChanged".asInstanceOf[captionsChanged]
   def captionsList: captionsList = "captionsList".asInstanceOf[captionsList]
+  def cast: cast = "cast".asInstanceOf[cast]
   def complete: complete = "complete".asInstanceOf[complete]
   def controls: controls = "controls".asInstanceOf[controls]
   def displayClick: displayClick = "displayClick".asInstanceOf[displayClick]

@@ -63,5 +63,11 @@ object nodeFetchNs extends js.Object {
     def redirect(url: java.lang.String, status: scala.Double): nodeDashFetchLib.nodeDashFetchMod.Response = js.native
   }
   
+  @JSName("default")
+  @js.native
+  object defaultNs extends js.Object {
+    def isRedirect(code: scala.Double): scala.Boolean = js.native
+  }
+  
 }
 

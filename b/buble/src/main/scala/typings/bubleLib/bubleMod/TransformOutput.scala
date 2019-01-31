@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait TransformOutput extends js.Object {
   var code: java.lang.String
-  var map: bubleLib.Anon_ToString
+  var map: magicDashStringLib.magicDashStringMod.SourceMap
 }
 

@@ -68,7 +68,7 @@ trait Component extends Directive {
     */
   var preserveWhitespaces: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * One or more URLs for files containing CSS stylesheets to use
+    * One or more relative paths or absolute URLs for files containing CSS stylesheets to use
     * in this component.
     */
   var styleUrls: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -84,8 +84,8 @@ trait Component extends Directive {
     */
   var template: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The URL of a template file for an Angular component. If provided,
-    * do not supply an inline template using `template`.
+    * The relative path or absolute URL of a template file for an Angular component.
+    * If provided, do not supply an inline template using `template`.
     *
     */
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined

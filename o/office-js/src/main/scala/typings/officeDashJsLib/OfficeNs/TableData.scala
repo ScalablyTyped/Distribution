@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Represents the data in a table or a {@link Office.TableBinding}.
+  * Represents the data in a table or an {@link Office.TableBinding}.
   *
   * @remarks
   * <table><tr><td>Hosts</td><td>Excel, Word</td></tr>

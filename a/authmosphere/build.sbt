@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "authmosphere"
-version := "2.2.1-5608ef"
+version := "2.2.1-5f8822"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-34f287",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-202759",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-0c8b00",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-cd70e8",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-b38537",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-c7658c",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-02bf23",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-7910af",
   "org.scalablytyped" %%% "http-status" % "v0.2.1-dt-20180214Z-a4228e",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-2342ad",
-  "org.scalablytyped" %%% "nock" % "v9.3.3-dt-20190121Z-949506",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190128Z-23a585",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20181119Z-d86f0f",
+  "org.scalablytyped" %%% "nock" % "v9.3.3-dt-20190121Z-4d4f8c",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-40209e",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190130Z-d4cb0b",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-a57469",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-22f3a9",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-195cb6",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1",
-  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-8c9d6d")
+  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-a4f626")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

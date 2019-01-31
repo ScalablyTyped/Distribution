@@ -82,26 +82,27 @@ trait Actions extends js.Object {
     * Fires when an uncaught exception occurs in your application.
     * Cypress will fail the test when this fires.
     * Return `false` from this event and Cypress will not fail the test. Also useful for debugging purposes because the actual `error` instance is provided to you.
-    * @example
-    * // likely want to do this in a support file
-    * // so it's applied to all spec files
-    * // cypress/support/index.js
-    *
-    * Cypress.on('uncaught:exception', (err, runnable) => {
-    *   // returning false here prevents Cypress from
-    *   // failing the test
-    *   return false
-    * })
-    * // stub "window.alert" in a single test
-    * it('shows alert', () => {
-    *    const stub = cy.stub()
-    *    cy.on('window:alert', stub)
-    *    // trigger application code that calls alert(...)
-    *    .then(() => {
-    *      expect(stub).to.have.been.calledOnce
-    *    })
-    * })
     * @see https://on.cypress.io/catalog-of-events#App-Events
+    * @example
+    ```
+    // likely want to do this in a support file
+    // so it's applied to all spec files
+    // cypress/support/index.js
+    Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+    })
+    // stub "window.alert" in a single test
+    it('shows alert', () => {
+    const stub = cy.stub()
+    cy.on('window:alert', stub)
+    // trigger application code that calls alert(...)
+    .then(() => {
+    expect(stub).to.have.been.calledOnce
+    })
+    })
+    ```
     */
   def apply(
     action: cypressLib.cypressLibStrings.`uncaught:exception`,
@@ -132,13 +133,16 @@ trait Actions extends js.Object {
     * Fires when your app calls the global `window.alert()` method.
     * Cypress will auto accept alerts. You cannot change this behavior.
     * @example
-    *    const stub = cy.stub()
-    *    cy.on('window:alert', stub)
-    *    // assume the button calls window.alert()
-    *    cy.get('.my-button').click()
-    *    .then(() => {
-    *      expect(stub).to.have.been.calledOnce
-    *    })
+    ```
+    const stub = cy.stub()
+    cy.on('window:alert', stub)
+    // assume the button calls window.alert()
+    cy.get('.my-button')
+    .click()
+    .then(() => {
+    expect(stub).to.have.been.calledOnce
+    })
+    ```
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   def apply(
@@ -170,10 +174,12 @@ trait Actions extends js.Object {
     * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be cancelled.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     * @example
-    *    cy.on('window:confirm', (str) => {
-    *      console.log(str)
-    *      return false // simulate "Cancel"
-    *    })
+    ```
+    cy.on('window:confirm', (str) => {
+    console.log(str)
+    return false // simulate "Cancel"
+    })
+    ```
     */
   def apply(
     action: cypressLib.cypressLibStrings.`window:confirm`,

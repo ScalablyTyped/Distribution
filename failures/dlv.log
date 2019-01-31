@@ -5,8 +5,7 @@
 [debug] PhaseRunner.scala:82 Success [id => dlv, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing dlv [id => dlv, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => dlv, phase => scala.js] 
-[warn ] Phase3CompileBloop.scala:197 Built dlv in 381 ms [id => dlv, phase => build] 
-[info ] Phase3CompileBloop.scala:205 published local, [/home/tso/.ivy2/local/org.scalablytyped/dlv_sjs0.6_2.12/1.1-dt-20190127Z-b6dddc/jars/dlv_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/dlv_sjs0.6_2.12/1.1-dt-20190127Z-b6dddc/srcs/dlv_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/dlv_sjs0.6_2.12/1.1-dt-20190127Z-b6dddc/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/dlv_sjs0.6_2.12/1.1-dt-20190127Z-b6dddc/poms/dlv_sjs0.6_2.12.pom] [id => dlv, phase => build] 
+[warn ] Phase3CompileBloop.scala:178 Using cached build of dlv [id => dlv, phase => build] 
 [debug] PhaseRunner.scala:82 Success [id => dlv, phase => build] 
 [error] PhaseRes.scala:76 Caught exception: dispatch.StatusCode: Unexpected response status: 404 [id => dlv, phase => publish] java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 404
 	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:218)

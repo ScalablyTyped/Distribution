@@ -1,20 +1,20 @@
 package typings
-package cleanDashCssLib.cleanDashCssMod.CleanCSSNs
+package cleanDashCssLib.cleanDashCssMod
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * Options passed when initializing a new instance of CleanCSS
+  * Shared options passed when initializing a new instance of CleanCSS that returns either a promise or output
   */
-trait Options extends js.Object {
+trait OptionsBase extends js.Object {
   /**
     * Controls compatibility mode used; defaults to ie10+ using `'*'`.
     *  Compatibility hash exposes the following properties: `colors`, `properties`, `selectors`, and `units`
     */
   var compatibility: js.UndefOr[
-    cleanDashCssLib.cleanDashCssLibStrings.`*` | cleanDashCssLib.cleanDashCssLibStrings.ie9 | cleanDashCssLib.cleanDashCssLibStrings.ie8 | cleanDashCssLib.cleanDashCssLibStrings.ie7 | CompatibilityOptions
+    cleanDashCssLib.cleanDashCssLibStrings.`*` | cleanDashCssLib.cleanDashCssLibStrings.ie9 | cleanDashCssLib.cleanDashCssLibStrings.ie8 | cleanDashCssLib.cleanDashCssLibStrings.ie7 | cleanDashCssLib.cleanDashCssMod.CleanCSSNs.CompatibilityOptions
   ] = js.undefined
   /**
     * Controls a function for handling remote requests; Defaults to the build in `loadRemoteResource` function
@@ -37,7 +37,7 @@ trait Options extends js.Object {
     *  Format hash exposes the following properties: `breaks`, `breakWith`, `indentBy`, `indentWith`, `spaces`, and `wrapAt`.
     */
   var format: js.UndefOr[
-    cleanDashCssLib.cleanDashCssLibStrings.beautify | cleanDashCssLib.cleanDashCssLibStrings.`keep-breaks` | FormatOptions | cleanDashCssLib.cleanDashCssLibNumbers.`false`
+    cleanDashCssLib.cleanDashCssLibStrings.beautify | cleanDashCssLib.cleanDashCssLibStrings.`keep-breaks` | cleanDashCssLib.cleanDashCssMod.CleanCSSNs.FormatOptions | cleanDashCssLib.cleanDashCssLibNumbers.`false`
   ] = js.undefined
   /**
     * inline option whitelists which @import rules will be processed.  Defaults to `'local'`
@@ -63,7 +63,7 @@ trait Options extends js.Object {
     * Level hash exposes `1`, and `2`.
     */
   var level: js.UndefOr[
-    cleanDashCssLib.cleanDashCssLibNumbers.`0` | cleanDashCssLib.cleanDashCssLibNumbers.`1` | cleanDashCssLib.cleanDashCssLibNumbers.`2` | OptimizationsOptions
+    cleanDashCssLib.cleanDashCssLibNumbers.`0` | cleanDashCssLib.cleanDashCssLibNumbers.`1` | cleanDashCssLib.cleanDashCssLibNumbers.`2` | cleanDashCssLib.cleanDashCssMod.CleanCSSNs.OptimizationsOptions
   ] = js.undefined
   /**
     * Controls URL rebasing; defaults to `true`;
@@ -74,10 +74,6 @@ trait Options extends js.Object {
     * will live; defaults to the current directory;
     */
   var rebaseTo: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * If you prefer clean-css to return a Promise object then you need to explicitely ask for it; defaults to `false`
-    */
-  var returnPromise: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *  Controls whether an output source map is built; defaults to `false`
     */

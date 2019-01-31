@@ -6,8 +6,7 @@
 [debug] PhaseRunner.scala:82 Success [id => user-event, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing user-event [id => user-event, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => user-event, phase => scala.js] 
-[warn ] Phase3CompileBloop.scala:197 Built user-event in 379 ms [id => user-event, phase => build] 
-[info ] Phase3CompileBloop.scala:205 published local, [/home/tso/.ivy2/local/org.scalablytyped/user-event_sjs0.6_2.12/1.4-dt-20190128Z-35f53e/jars/user-event_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/user-event_sjs0.6_2.12/1.4-dt-20190128Z-35f53e/srcs/user-event_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/user-event_sjs0.6_2.12/1.4-dt-20190128Z-35f53e/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/user-event_sjs0.6_2.12/1.4-dt-20190128Z-35f53e/poms/user-event_sjs0.6_2.12.pom] [id => user-event, phase => build] 
+[warn ] Phase3CompileBloop.scala:178 Using cached build of user-event [id => user-event, phase => build] 
 [debug] PhaseRunner.scala:82 Success [id => user-event, phase => build] 
 [error] PhaseRes.scala:76 Caught exception: dispatch.StatusCode: Unexpected response status: 404 [id => user-event, phase => publish] java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 404
 	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:218)

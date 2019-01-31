@@ -12,7 +12,7 @@ trait QueryAutocompleteResult extends js.Object {
     * contains an `offset` value and a `length`.
     * These describe the location of the entered term in the prediction result text, so that the term can be highlighted if desired.
     */
-  var matched_substring: js.Array[PredictionSubstring]
+  var matched_substrings: js.Array[PredictionSubstring]
   /**
     * contains an array of terms identifying each section of the returned description
     * (a section of the description is generally terminated with a comma).

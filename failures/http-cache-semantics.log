@@ -6,8 +6,7 @@
 [warn ] Phase2ToScalaJs.scala:40 Processing http-cache-semantics [id => http-cache-semantics, phase => scala.js] 
 [info ] CompleteClass.scala:58 Completed implementations Vector(toObject, timeToLive, satisfiesWithoutRevalidation, revalidationHeaders, responseHeaders, storable, revalidatedPolicy) [id => http-cache-semantics, phase => scala.js, this => Name(httpDashCacheDashSemanticsLib) / Name(httpDashCacheDashSemanticsMod) / Name(namespaced)] 
 [debug] PhaseRunner.scala:82 Success [id => http-cache-semantics, phase => scala.js] 
-[warn ] Phase3CompileBloop.scala:197 Built http-cache-semantics in 362 ms [id => http-cache-semantics, phase => build] 
-[info ] Phase3CompileBloop.scala:205 published local, [/home/tso/.ivy2/local/org.scalablytyped/http-cache-semantics_sjs0.6_2.12/4.0-dt-20190127Z-c4cb5c/jars/http-cache-semantics_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/http-cache-semantics_sjs0.6_2.12/4.0-dt-20190127Z-c4cb5c/srcs/http-cache-semantics_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/http-cache-semantics_sjs0.6_2.12/4.0-dt-20190127Z-c4cb5c/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/http-cache-semantics_sjs0.6_2.12/4.0-dt-20190127Z-c4cb5c/poms/http-cache-semantics_sjs0.6_2.12.pom] [id => http-cache-semantics, phase => build] 
+[warn ] Phase3CompileBloop.scala:178 Using cached build of http-cache-semantics [id => http-cache-semantics, phase => build] 
 [debug] PhaseRunner.scala:82 Success [id => http-cache-semantics, phase => build] 
 [error] PhaseRes.scala:76 Caught exception: dispatch.StatusCode: Unexpected response status: 404 [id => http-cache-semantics, phase => publish] java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 404
 	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:218)

@@ -117,16 +117,27 @@ trait Cypress extends js.Object {
   var platform: java.lang.String = js.native
   /**
     * Currently executing spec file.
+    * @example
+    ```
+    Cypress.spec
+    // {
+    //  name: "config_passing_spec.coffee",
+    //  relative: "cypress/integration/config_passing_spec.coffee",
+    //  absolute: "/users/smith/projects/web/cypress/integration/config_passing_spec.coffee"
+    // }
+    ```
     */
   var spec: cypressLib.Anon_Absolute = js.native
   /**
     * Cypress version string. i.e. "1.1.2"
     * @see https://on.cypress.io/version
     * @example
-    *    expect(Cypress.version).to.be.a('string')
-    *    if (Cypress.version === '1.2.0') {
-    *       // test something specific
-    *    }
+    ```
+    expect(Cypress.version).to.be.a('string')
+    if (Cypress.version === '1.2.0') {
+    // test something specific
+    }
+    ```
     */
   var version: java.lang.String = js.native
   /**
@@ -476,126 +487,619 @@ trait Cypress extends js.Object {
     */
   def `_`[T](value: T): lodashLib.lodashMod.underscoreNs.LoDashImplicitWrapper[T] = js.native
   /**
+    * Returns all configuration objects.
     * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config()
+    // {defaultCommandTimeout: 10000, pageLoadTimeout: 30000, ...}
+    ```
     */
   def config(): ConfigOptions = js.native
+  /**
+    * Sets multiple configuration values at once.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config({
+    defaultCommandTimeout: 10000,
+    viewportHeight: 900
+    })
+    ```
+    */
   def config(Object: stdLib.Partial[ConfigOptions]): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_animationDistanceThreshold(key: cypressLib.cypressLibStrings.animationDistanceThreshold): scala.Double = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_animationDistanceThreshold(key: cypressLib.cypressLibStrings.animationDistanceThreshold, value: scala.Double): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_baseUrl(key: cypressLib.cypressLibStrings.baseUrl): java.lang.String | scala.Null = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_baseUrl(key: cypressLib.cypressLibStrings.baseUrl, value: java.lang.String): scala.Unit = js.native
   @JSName("config")
   def config_baseUrl_Unit(key: cypressLib.cypressLibStrings.baseUrl): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_chromeWebSecurity(key: cypressLib.cypressLibStrings.chromeWebSecurity): scala.Boolean = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_chromeWebSecurity(key: cypressLib.cypressLibStrings.chromeWebSecurity, value: scala.Boolean): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_defaultCommandTimeout(key: cypressLib.cypressLibStrings.defaultCommandTimeout): scala.Double = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_defaultCommandTimeout(key: cypressLib.cypressLibStrings.defaultCommandTimeout, value: scala.Double): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_env(key: cypressLib.cypressLibStrings.env): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_env(key: cypressLib.cypressLibStrings.env, value: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_execTimeout(key: cypressLib.cypressLibStrings.execTimeout): scala.Double = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_execTimeout(key: cypressLib.cypressLibStrings.execTimeout, value: scala.Double): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_fileServerFolder(key: cypressLib.cypressLibStrings.fileServerFolder): java.lang.String = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_fileServerFolder(key: cypressLib.cypressLibStrings.fileServerFolder, value: java.lang.String): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_fixturesFolder(key: cypressLib.cypressLibStrings.fixturesFolder): java.lang.String = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_fixturesFolder(key: cypressLib.cypressLibStrings.fixturesFolder, value: java.lang.String): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_ignoreTestFiles(key: cypressLib.cypressLibStrings.ignoreTestFiles): java.lang.String | js.Array[java.lang.String] = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_ignoreTestFiles(key: cypressLib.cypressLibStrings.ignoreTestFiles, value: java.lang.String): scala.Unit = js.native
   @JSName("config")
   def config_ignoreTestFiles(key: cypressLib.cypressLibStrings.ignoreTestFiles, value: js.Array[java.lang.String]): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_integrationFolder(key: cypressLib.cypressLibStrings.integrationFolder): java.lang.String = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_integrationFolder(key: cypressLib.cypressLibStrings.integrationFolder, value: java.lang.String): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_numTestsKeptInMemory(key: cypressLib.cypressLibStrings.numTestsKeptInMemory): scala.Double = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_numTestsKeptInMemory(key: cypressLib.cypressLibStrings.numTestsKeptInMemory, value: scala.Double): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_pageLoadTimeout(key: cypressLib.cypressLibStrings.pageLoadTimeout): scala.Double = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_pageLoadTimeout(key: cypressLib.cypressLibStrings.pageLoadTimeout, value: scala.Double): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_pluginsFile(key: cypressLib.cypressLibStrings.pluginsFile): java.lang.String = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_pluginsFile(key: cypressLib.cypressLibStrings.pluginsFile, value: java.lang.String): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_port(key: cypressLib.cypressLibStrings.port): scala.Double | scala.Null = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_port(key: cypressLib.cypressLibStrings.port, value: scala.Double): scala.Unit = js.native
   @JSName("config")
   def config_port_Unit(key: cypressLib.cypressLibStrings.port): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_reporter(key: cypressLib.cypressLibStrings.reporter): java.lang.String = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_reporter(key: cypressLib.cypressLibStrings.reporter, value: java.lang.String): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_requestTimeout(key: cypressLib.cypressLibStrings.requestTimeout): scala.Double = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_requestTimeout(key: cypressLib.cypressLibStrings.requestTimeout, value: scala.Double): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_responseTimeout(key: cypressLib.cypressLibStrings.responseTimeout): scala.Double = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_responseTimeout(key: cypressLib.cypressLibStrings.responseTimeout, value: scala.Double): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_screenshotsFolder(key: cypressLib.cypressLibStrings.screenshotsFolder): java.lang.String = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_screenshotsFolder(key: cypressLib.cypressLibStrings.screenshotsFolder, value: java.lang.String): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_supportFile(key: cypressLib.cypressLibStrings.supportFile): java.lang.String = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_supportFile(key: cypressLib.cypressLibStrings.supportFile, value: java.lang.String): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_trashAssetsBeforeRuns(key: cypressLib.cypressLibStrings.trashAssetsBeforeRuns): scala.Boolean = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_trashAssetsBeforeRuns(key: cypressLib.cypressLibStrings.trashAssetsBeforeRuns, value: scala.Boolean): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_video(key: cypressLib.cypressLibStrings.video): scala.Boolean = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_video(key: cypressLib.cypressLibStrings.video, value: scala.Boolean): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_videoCompression(key: cypressLib.cypressLibStrings.videoCompression): scala.Double = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_videoCompression(key: cypressLib.cypressLibStrings.videoCompression, value: scala.Double): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_videoUploadOnPasses(key: cypressLib.cypressLibStrings.videoUploadOnPasses): scala.Boolean = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_videoUploadOnPasses(key: cypressLib.cypressLibStrings.videoUploadOnPasses, value: scala.Boolean): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_videosFolder(key: cypressLib.cypressLibStrings.videosFolder): java.lang.String = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_videosFolder(key: cypressLib.cypressLibStrings.videosFolder, value: java.lang.String): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_viewportHeight(key: cypressLib.cypressLibStrings.viewportHeight): scala.Double = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_viewportHeight(key: cypressLib.cypressLibStrings.viewportHeight, value: scala.Double): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_viewportWidth(key: cypressLib.cypressLibStrings.viewportWidth): scala.Double = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_viewportWidth(key: cypressLib.cypressLibStrings.viewportWidth, value: scala.Double): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_waitForAnimations(key: cypressLib.cypressLibStrings.waitForAnimations): scala.Boolean = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_waitForAnimations(key: cypressLib.cypressLibStrings.waitForAnimations, value: scala.Boolean): scala.Unit = js.native
+  /**
+    * Returns one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('pageLoadTimeout')
+    // 60000
+    ```
+    */
   @JSName("config")
   def config_watchForFileChanges(key: cypressLib.cypressLibStrings.watchForFileChanges): scala.Boolean = js.native
+  /**
+    * Sets one configuration value.
+    * @see https://on.cypress.io/config
+    * @example
+    ```
+    Cypress.config('viewportWidth', 800)
+    ```
+    */
   @JSName("config")
   def config_watchForFileChanges(key: cypressLib.cypressLibStrings.watchForFileChanges, value: scala.Boolean): scala.Unit = js.native
   // no real way to type without generics
@@ -769,26 +1273,27 @@ trait Cypress extends js.Object {
     * Fires when an uncaught exception occurs in your application.
     * Cypress will fail the test when this fires.
     * Return `false` from this event and Cypress will not fail the test. Also useful for debugging purposes because the actual `error` instance is provided to you.
-    * @example
-    * // likely want to do this in a support file
-    * // so it's applied to all spec files
-    * // cypress/support/index.js
-    *
-    * Cypress.on('uncaught:exception', (err, runnable) => {
-    *   // returning false here prevents Cypress from
-    *   // failing the test
-    *   return false
-    * })
-    * // stub "window.alert" in a single test
-    * it('shows alert', () => {
-    *    const stub = cy.stub()
-    *    cy.on('window:alert', stub)
-    *    // trigger application code that calls alert(...)
-    *    .then(() => {
-    *      expect(stub).to.have.been.calledOnce
-    *    })
-    * })
     * @see https://on.cypress.io/catalog-of-events#App-Events
+    * @example
+    ```
+    // likely want to do this in a support file
+    // so it's applied to all spec files
+    // cypress/support/index.js
+    Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+    })
+    // stub "window.alert" in a single test
+    it('shows alert', () => {
+    const stub = cy.stub()
+    cy.on('window:alert', stub)
+    // trigger application code that calls alert(...)
+    .then(() => {
+    expect(stub).to.have.been.calledOnce
+    })
+    })
+    ```
     */
   /**
     * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
@@ -835,13 +1340,16 @@ trait Cypress extends js.Object {
     * Fires when your app calls the global `window.alert()` method.
     * Cypress will auto accept alerts. You cannot change this behavior.
     * @example
-    *    const stub = cy.stub()
-    *    cy.on('window:alert', stub)
-    *    // assume the button calls window.alert()
-    *    cy.get('.my-button').click()
-    *    .then(() => {
-    *      expect(stub).to.have.been.calledOnce
-    *    })
+    ```
+    const stub = cy.stub()
+    cy.on('window:alert', stub)
+    // assume the button calls window.alert()
+    cy.get('.my-button')
+    .click()
+    .then(() => {
+    expect(stub).to.have.been.calledOnce
+    })
+    ```
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   /**
@@ -889,10 +1397,12 @@ trait Cypress extends js.Object {
     * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be cancelled.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     * @example
-    *    cy.on('window:confirm', (str) => {
-    *      console.log(str)
-    *      return false // simulate "Cancel"
-    *    })
+    ```
+    cy.on('window:confirm', (str) => {
+    console.log(str)
+    return false // simulate "Cancel"
+    })
+    ```
     */
   /**
     * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
@@ -1063,26 +1573,27 @@ trait Cypress extends js.Object {
     * Fires when an uncaught exception occurs in your application.
     * Cypress will fail the test when this fires.
     * Return `false` from this event and Cypress will not fail the test. Also useful for debugging purposes because the actual `error` instance is provided to you.
-    * @example
-    * // likely want to do this in a support file
-    * // so it's applied to all spec files
-    * // cypress/support/index.js
-    *
-    * Cypress.on('uncaught:exception', (err, runnable) => {
-    *   // returning false here prevents Cypress from
-    *   // failing the test
-    *   return false
-    * })
-    * // stub "window.alert" in a single test
-    * it('shows alert', () => {
-    *    const stub = cy.stub()
-    *    cy.on('window:alert', stub)
-    *    // trigger application code that calls alert(...)
-    *    .then(() => {
-    *      expect(stub).to.have.been.calledOnce
-    *    })
-    * })
     * @see https://on.cypress.io/catalog-of-events#App-Events
+    * @example
+    ```
+    // likely want to do this in a support file
+    // so it's applied to all spec files
+    // cypress/support/index.js
+    Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+    })
+    // stub "window.alert" in a single test
+    it('shows alert', () => {
+    const stub = cy.stub()
+    cy.on('window:alert', stub)
+    // trigger application code that calls alert(...)
+    .then(() => {
+    expect(stub).to.have.been.calledOnce
+    })
+    })
+    ```
     */
   /**
     * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
@@ -1129,13 +1640,16 @@ trait Cypress extends js.Object {
     * Fires when your app calls the global `window.alert()` method.
     * Cypress will auto accept alerts. You cannot change this behavior.
     * @example
-    *    const stub = cy.stub()
-    *    cy.on('window:alert', stub)
-    *    // assume the button calls window.alert()
-    *    cy.get('.my-button').click()
-    *    .then(() => {
-    *      expect(stub).to.have.been.calledOnce
-    *    })
+    ```
+    const stub = cy.stub()
+    cy.on('window:alert', stub)
+    // assume the button calls window.alert()
+    cy.get('.my-button')
+    .click()
+    .then(() => {
+    expect(stub).to.have.been.calledOnce
+    })
+    ```
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   /**
@@ -1183,10 +1697,12 @@ trait Cypress extends js.Object {
     * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be cancelled.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     * @example
-    *    cy.on('window:confirm', (str) => {
-    *      console.log(str)
-    *      return false // simulate "Cancel"
-    *    })
+    ```
+    cy.on('window:confirm', (str) => {
+    console.log(str)
+    return false // simulate "Cancel"
+    })
+    ```
     */
   /**
     * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.

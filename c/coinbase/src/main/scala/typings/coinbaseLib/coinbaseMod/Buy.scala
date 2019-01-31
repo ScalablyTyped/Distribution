@@ -19,11 +19,19 @@ class Buy () extends Resource {
   /**
     * Fee associated to this buy
     */
-  var fee: MoneyHash = js.native
+  var fees: js.Array[Fee] = js.native
+  /**
+    * Hold period for transfer.
+    */
+  var hold_business_days: scala.Double = js.native
   /**
     * Was this buy executed instantly?
     */
   var instant: scala.Boolean = js.native
+  /**
+    * Is it the first buy for this symbol?
+    */
+  var is_first_buy: scala.Boolean = js.native
   /**
     * Associated payment method (e.g. a bank, fiat account)
     */
@@ -32,6 +40,10 @@ class Buy () extends Resource {
     * When a buy isn’t executed instantly, it will receive a payout date for the time it will be executed. ISO timestamp
     */
   var payout_at: js.UndefOr[java.lang.String] = js.native
+  /**
+    * Is there another action required to make the transfer pass?
+    */
+  var requires_completion_step: scala.Boolean = js.native
   /**
     * Resource type
     */
@@ -58,6 +70,10 @@ class Buy () extends Resource {
     * Associated transaction (e.g. a bank, fiat account)
     */
   var transaction: ResourceRef = js.native
+  /**
+    * Unit price of the base currency.
+    */
+  var unit_price: UnitPrice = js.native
   /**
     * Completes a buy that is created in commit: false state.
     * If the exchange rate has changed since the buy was created, this call will fail with the error “The exchange rate updated while you

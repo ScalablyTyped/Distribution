@@ -2917,15 +2917,19 @@ trait Chainable[Subject] extends js.Object {
     * @see https://on.cypress.io/variables-and-aliases
     * @see https://on.cypress.io/get
     * @example
-    *    // Get the aliased ‘todos’ elements
-    *    cy.get('ul#todos').as('todos')
-    *    //...hack hack hack...
-    *    // later retrieve the todos
-    *    cy.get('@todos')
+    ```
+    // Get the aliased ‘todos’ elements
+    cy.get('ul#todos').as('todos')
+    //...hack hack hack...
+    // later retrieve the todos
+    cy.get('@todos')
+    ```
     */
   def as(alias: java.lang.String): Chainable[Subject] = js.native
   /**
-    * Blur a focused element. This element must currently be in focus. If you want to ensure an element is focused before blurring, try using .focus() before .blur().
+    * Blur a focused element. This element must currently be in focus.
+    * If you want to ensure an element is focused before blurring,
+    * try using .focus() before .blur().
     *
     * @see https://on.cypress.io/blur
     */
@@ -3496,10 +3500,17 @@ trait Chainable[Subject] extends js.Object {
     * to clear localStorage inside a single test. Yields `localStorage` object.
     *
     * @see https://on.cypress.io/clearlocalstorage
+    * @param {string} [key] - name of a particular item to remove (optional).
     * @example
-    *    cy.clearLocalStorage().should(ls => {
-    *      expect(ls.getItem('prop1')).to.be.null
-    *    })
+    ```
+    // removes all local storage keys
+    cy.clearLocalStorage()
+    .should(ls => {
+    expect(ls.getItem('prop1')).to.be.null
+    })
+    // removes item "todos"
+    cy.clearLocalStorage("todos")
+    ```
     */
   def clearLocalStorage(): Chainable[stdLib.Storage] = js.native
   def clearLocalStorage(key: java.lang.String): Chainable[stdLib.Storage] = js.native
@@ -3507,9 +3518,12 @@ trait Chainable[Subject] extends js.Object {
     * Clear keys in local storage that match given regular expression.
     *
     * @see https://on.cypress.io/clearlocalstorage
+    * @param {RegExp} re - regular expression to match.
     * @example
-    *    // Clear all local storage matching /app-/
-    *    cy.clearLocalStorage(/app-/)
+    ```
+    // Clear all local storage matching /app-/
+    cy.clearLocalStorage(/app-/)
+    ```
     */
   def clearLocalStorage(re: stdLib.RegExp): Chainable[stdLib.Storage] = js.native
   /**
@@ -3526,7 +3540,8 @@ trait Chainable[Subject] extends js.Object {
   /**
     * Click a DOM element at specific corner / side.
     *
-    * @param {String} position The position where the click should be issued. The `center` position is the default position.
+    * @param {String} position - The position where the click should be issued.
+    * The `center` position is the default position.
     * @see https://on.cypress.io/click
     * @example
     *    cy.get('button').click('topRight')
@@ -3540,9 +3555,11 @@ trait Chainable[Subject] extends js.Object {
     * @param {number} y The distance in pixels from the element’s top to issue the click.
     * @see https://on.cypress.io/click
     * @example
-    *    // The click below will be issued inside of the element
-    *    // (15px from the left and 40px from the top).
-    *    cy.get('button').click(15, 40)
+    ```
+    // The click below will be issued inside of the element
+    // (15px from the left and 40px from the top).
+    cy.get('button').click(15, 40)
+    ```
     */
   def click(x: scala.Double, y: scala.Double): Chainable[Subject] = js.native
   def click(x: scala.Double, y: scala.Double, options: stdLib.Partial[ClickOptions]): Chainable[Subject] = js.native
@@ -10907,9 +10924,11 @@ trait Chainable[Subject] extends js.Object {
   def fixture[Contents](path: java.lang.String, options: stdLib.Partial[Timeoutable]): Chainable[Contents] = js.native
   // no log?
   /**
-    * Get the DOM element that is currently focused.
+    * Focus on a DOM element.
     *
     * @see https://on.cypress.io/focus
+    * @example
+    * cy.get('input').first().focus() // Focus on the first input
     */
   def focus(): Chainable[Subject] = js.native
   def focus(options: stdLib.Partial[Loggable with Timeoutable]): Chainable[Subject] = js.native
@@ -15751,26 +15770,27 @@ trait Chainable[Subject] extends js.Object {
     * Fires when an uncaught exception occurs in your application.
     * Cypress will fail the test when this fires.
     * Return `false` from this event and Cypress will not fail the test. Also useful for debugging purposes because the actual `error` instance is provided to you.
-    * @example
-    * // likely want to do this in a support file
-    * // so it's applied to all spec files
-    * // cypress/support/index.js
-    *
-    * Cypress.on('uncaught:exception', (err, runnable) => {
-    *   // returning false here prevents Cypress from
-    *   // failing the test
-    *   return false
-    * })
-    * // stub "window.alert" in a single test
-    * it('shows alert', () => {
-    *    const stub = cy.stub()
-    *    cy.on('window:alert', stub)
-    *    // trigger application code that calls alert(...)
-    *    .then(() => {
-    *      expect(stub).to.have.been.calledOnce
-    *    })
-    * })
     * @see https://on.cypress.io/catalog-of-events#App-Events
+    * @example
+    ```
+    // likely want to do this in a support file
+    // so it's applied to all spec files
+    // cypress/support/index.js
+    Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+    })
+    // stub "window.alert" in a single test
+    it('shows alert', () => {
+    const stub = cy.stub()
+    cy.on('window:alert', stub)
+    // trigger application code that calls alert(...)
+    .then(() => {
+    expect(stub).to.have.been.calledOnce
+    })
+    })
+    ```
     */
   /**
     * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
@@ -15817,13 +15837,16 @@ trait Chainable[Subject] extends js.Object {
     * Fires when your app calls the global `window.alert()` method.
     * Cypress will auto accept alerts. You cannot change this behavior.
     * @example
-    *    const stub = cy.stub()
-    *    cy.on('window:alert', stub)
-    *    // assume the button calls window.alert()
-    *    cy.get('.my-button').click()
-    *    .then(() => {
-    *      expect(stub).to.have.been.calledOnce
-    *    })
+    ```
+    const stub = cy.stub()
+    cy.on('window:alert', stub)
+    // assume the button calls window.alert()
+    cy.get('.my-button')
+    .click()
+    .then(() => {
+    expect(stub).to.have.been.calledOnce
+    })
+    ```
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   /**
@@ -15871,10 +15894,12 @@ trait Chainable[Subject] extends js.Object {
     * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be cancelled.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     * @example
-    *    cy.on('window:confirm', (str) => {
-    *      console.log(str)
-    *      return false // simulate "Cancel"
-    *    })
+    ```
+    cy.on('window:confirm', (str) => {
+    console.log(str)
+    return false // simulate "Cancel"
+    })
+    ```
     */
   /**
     * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
@@ -16045,26 +16070,27 @@ trait Chainable[Subject] extends js.Object {
     * Fires when an uncaught exception occurs in your application.
     * Cypress will fail the test when this fires.
     * Return `false` from this event and Cypress will not fail the test. Also useful for debugging purposes because the actual `error` instance is provided to you.
-    * @example
-    * // likely want to do this in a support file
-    * // so it's applied to all spec files
-    * // cypress/support/index.js
-    *
-    * Cypress.on('uncaught:exception', (err, runnable) => {
-    *   // returning false here prevents Cypress from
-    *   // failing the test
-    *   return false
-    * })
-    * // stub "window.alert" in a single test
-    * it('shows alert', () => {
-    *    const stub = cy.stub()
-    *    cy.on('window:alert', stub)
-    *    // trigger application code that calls alert(...)
-    *    .then(() => {
-    *      expect(stub).to.have.been.calledOnce
-    *    })
-    * })
     * @see https://on.cypress.io/catalog-of-events#App-Events
+    * @example
+    ```
+    // likely want to do this in a support file
+    // so it's applied to all spec files
+    // cypress/support/index.js
+    Cypress.on('uncaught:exception', (err, runnable) => {
+    // returning false here prevents Cypress from
+    // failing the test
+    return false
+    })
+    // stub "window.alert" in a single test
+    it('shows alert', () => {
+    const stub = cy.stub()
+    cy.on('window:alert', stub)
+    // trigger application code that calls alert(...)
+    .then(() => {
+    expect(stub).to.have.been.calledOnce
+    })
+    })
+    ```
     */
   /**
     * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
@@ -16111,13 +16137,16 @@ trait Chainable[Subject] extends js.Object {
     * Fires when your app calls the global `window.alert()` method.
     * Cypress will auto accept alerts. You cannot change this behavior.
     * @example
-    *    const stub = cy.stub()
-    *    cy.on('window:alert', stub)
-    *    // assume the button calls window.alert()
-    *    cy.get('.my-button').click()
-    *    .then(() => {
-    *      expect(stub).to.have.been.calledOnce
-    *    })
+    ```
+    const stub = cy.stub()
+    cy.on('window:alert', stub)
+    // assume the button calls window.alert()
+    cy.get('.my-button')
+    .click()
+    .then(() => {
+    expect(stub).to.have.been.calledOnce
+    })
+    ```
     * @see https://on.cypress.io/catalog-of-events#App-Events
     */
   /**
@@ -16165,10 +16194,12 @@ trait Chainable[Subject] extends js.Object {
     * Cypress will auto accept confirmations. Return `false` from this event and the confirmation will be cancelled.
     * @see https://on.cypress.io/catalog-of-events#App-Events
     * @example
-    *    cy.on('window:confirm', (str) => {
-    *      console.log(str)
-    *      return false // simulate "Cancel"
-    *    })
+    ```
+    cy.on('window:confirm', (str) => {
+    console.log(str)
+    return false // simulate "Cancel"
+    })
+    ```
     */
   /**
     * These events come from Cypress as it issues commands and reacts to their state. These are all useful to listen to for debugging purposes.
@@ -28899,9 +28930,17 @@ trait Chainable[Subject] extends js.Object {
     *    cy.location().then((loc) => {})   // Yields location object as first arg
     */
   def `then`(fn: js.ThisFunction1[/* this */ ObjectLike, /* currentSubject */ Subject, scala.Unit]): Chainable[Subject] = js.native
+  /**
+    * Enables you to work with the subject yielded from the previous command.
+    *
+    * @see https://on.cypress.io/then
+    * @example
+    *    cy.get('.nav').then(($nav) => {})  // Yields .nav as first arg
+    *    cy.location().then((loc) => {})   // Yields location object as first arg
+    */
   def `then`(
-    fn: js.ThisFunction1[/* this */ ObjectLike, /* currentSubject */ Subject, scala.Unit],
-    options: stdLib.Partial[Timeoutable]
+    options: stdLib.Partial[Timeoutable],
+    fn: js.ThisFunction1[/* this */ ObjectLike, /* currentSubject */ Subject, scala.Unit]
   ): Chainable[Subject] = js.native
   /**
     * Enables you to work with the subject yielded from the previous command.
@@ -28917,10 +28956,20 @@ trait Chainable[Subject] extends js.Object {
   def then_S[S](
     fn: js.ThisFunction1[/* this */ ObjectLike, /* currentSubject */ Subject, Chainable[S] | js.Thenable[S]]
   ): Chainable[S] = js.native
+  /**
+    * Enables you to work with the subject yielded from the previous command.
+    *
+    * @see https://on.cypress.io/then
+    */
+  /**
+    * Enables you to work with the subject yielded from the previous command / promise.
+    *
+    * @see https://on.cypress.io/then
+    */
   @JSName("then")
   def then_S[S](
-    fn: js.ThisFunction1[/* this */ ObjectLike, /* currentSubject */ Subject, Chainable[S] | js.Thenable[S]],
-    options: stdLib.Partial[Timeoutable]
+    options: stdLib.Partial[Timeoutable],
+    fn: js.ThisFunction1[/* this */ ObjectLike, /* currentSubject */ Subject, Chainable[S] | js.Thenable[S]]
   ): Chainable[S] = js.native
   /**
     * Enables you to work with the subject yielded from the previous command / promise.
@@ -28929,10 +28978,15 @@ trait Chainable[Subject] extends js.Object {
     */
   @JSName("then")
   def `then_S<union>`[S /* <: js.Object | js.Array[_] | java.lang.String | scala.Double | scala.Boolean */](fn: js.ThisFunction1[/* this */ ObjectLike, /* currentSubject */ Subject, S]): Chainable[S] = js.native
+  /**
+    * Enables you to work with the subject yielded from the previous command / promise.
+    *
+    * @see https://on.cypress.io/then
+    */
   @JSName("then")
   def `then_S<union>`[S /* <: js.Object | js.Array[_] | java.lang.String | scala.Double | scala.Boolean */](
-    fn: js.ThisFunction1[/* this */ ObjectLike, /* currentSubject */ Subject, S],
-    options: stdLib.Partial[Timeoutable]
+    options: stdLib.Partial[Timeoutable],
+    fn: js.ThisFunction1[/* this */ ObjectLike, /* currentSubject */ Subject, S]
   ): Chainable[S] = js.native
   /**
     * Move time after overriding a native time function with [cy.clock()](https://on.cypress.io/clock).
@@ -32166,6 +32220,20 @@ trait Chainable[Subject] extends js.Object {
     * Wait for a specific XHR to respond.
     *
     * @see https://on.cypress.io/wait
+    * @param {string} alias - Name of the alias to wait for.
+    *
+    ```
+    // Wait for the route aliased as 'getAccount' to respond
+    // without changing or stubbing its response
+    cy.server()
+    cy.route('/accounts/ *').as('getAccount')
+    cy.visit('/accounts/123')
+    cy.wait('@getAccount').then((xhr) => {
+    // we can now access the low level xhr
+    // that contains the request body,
+    // response body, status, etc
+    })
+    ```
     */
   def wait(alias: java.lang.String): Chainable[WaitXHR] = js.native
   def wait(alias: java.lang.String, options: stdLib.Partial[Loggable with Timeoutable with TimeoutableXHR]): Chainable[WaitXHR] = js.native
@@ -32173,6 +32241,23 @@ trait Chainable[Subject] extends js.Object {
     * Wait for list of XHR requests to complete.
     *
     * @see https://on.cypress.io/wait
+    * @param {string[]} aliases - An array of aliased routes as defined using the `.as()` command.
+    *
+    ```
+    // wait for 3 XHR requests to complete
+    cy.server()
+    cy.route('users/ *').as('getUsers')
+    cy.route('activities/ *').as('getActivities')
+    cy.route('comments/ *').as('getComments')
+    cy.visit('/dashboard')
+    cy.wait(['@getUsers', '@getActivities', '@getComments'])
+    .then((xhrs) => {
+    // xhrs will now be an array of matching XHR's
+    // xhrs[0] <-- getUsers
+    // xhrs[1] <-- getActivities
+    // xhrs[2] <-- getComments
+    })
+    ```
     */
   def wait(alias: js.Array[java.lang.String]): Chainable[js.Array[WaitXHR]] = js.native
   def wait(
@@ -32180,9 +32265,12 @@ trait Chainable[Subject] extends js.Object {
     options: stdLib.Partial[Loggable with Timeoutable with TimeoutableXHR]
   ): Chainable[js.Array[WaitXHR]] = js.native
   /**
-    * Wait for a number of milliseconds or wait for an aliased resource to resolve before moving on to the next command.
+    * Wait for a number of milliseconds.
+    * You almost never need to wait for an arbitrary period of time.
+    * There are always better ways to express this in Cypress, see the documentation.
     *
     * @see https://on.cypress.io/wait
+    * @param {number} ms - Milliseconds to wait.
     * @example
     *    cy.wait(1000) // wait for 1 second
     */
@@ -32193,11 +32281,13 @@ trait Chainable[Subject] extends js.Object {
     *
     * @see https://on.cypress.io/window
     * @example
-    *    cy.visit('http://localhost:8080/app')
-    *    cy.window().then(function(win){
-    *      // win is the remote window
-    *      // of the page at: http://localhost:8080/app
-    *    })
+    ```
+    cy.visit('http://localhost:8080/app')
+    cy.window().then(function(win){
+    // win is the remote window
+    // of the page at: http://localhost:8080/app
+    })
+    ```
     */
   def window(): Chainable[mochaLib.Window] = js.native
   def window(options: stdLib.Partial[Loggable with Timeoutable]): Chainable[mochaLib.Window] = js.native
@@ -32206,14 +32296,15 @@ trait Chainable[Subject] extends js.Object {
     * Useful when working within a particular group of elements such as a `<form>`.
     * @see https://on.cypress.io/within
     * @example
-    *    cy.get('form').within(($form) => {
-    *      // cy.get() will only search for elements within form,
-    *      // not within the entire document
-    *      cy.get('input[name="username"]').type('john')
-    *      cy.get('input[name="password"]').type('password')
-    *      cy.root().submit()
-    *    })
-    *
+    ```
+    cy.get('form').within(($form) => {
+    // cy.get() will only search for elements within form,
+    // not within the entire document
+    cy.get('input[name="username"]').type('john')
+    cy.get('input[name="password"]').type('password')
+    cy.root().submit()
+    })
+    ```
     */
   def within(fn: js.Function1[/* currentSubject */ Subject, scala.Unit]): Chainable[Subject] = js.native
   /**
@@ -32229,10 +32320,12 @@ trait Chainable[Subject] extends js.Object {
     *
     * @see https://on.cypress.io/wrap
     * @example
-    *    // Make assertions about object
-    *    cy.wrap({ amount: 10 })
-    *      .should('have.property', 'amount')
-    *      .and('eq', 10)
+    ```
+    // Make assertions about object
+    cy.wrap({ amount: 10 })
+    .should('have.property', 'amount')
+    .and('eq', 10)
+    ```
     */
   def wrap[S](`object`: S): Chainable[S] = js.native
   def wrap[S](`object`: S, options: stdLib.Partial[Loggable with Timeoutable]): Chainable[S] = js.native
@@ -32242,10 +32335,13 @@ trait Chainable[Subject] extends js.Object {
     *
     * @see https://on.cypress.io/wrap
     * @example
-    *    cy.get('form').within(($form) => {
-    *       // more commands
-    *       cy.wrap($form).should('have.class', 'form-container')
-    *    })
+    ```
+    // wraps DOM element
+    cy.get('form').within(($form) => {
+    // more commands
+    cy.wrap($form).should('have.class', 'form-container')
+    })
+    ```
     */
   @JSName("wrap")
   def wrap_ENode[E /* <: stdLib.Node */](element: E): Chainable[jqueryLib.JQuery[E]] = js.native
@@ -32256,9 +32352,11 @@ trait Chainable[Subject] extends js.Object {
     *
     * @see https://on.cypress.io/wrap
     * @example
-    *    cy.wrap(new Promise((resolve, reject) => {
-    *      setTimeout(resolve, 1000);
-    *    }).then(result => {})
+    ```
+    cy.wrap(new Promise((resolve, reject) => {
+    setTimeout(resolve, 1000);
+    }).then(result => {})
+    ```
     */
   @JSName("wrap")
   def wrap_FPromiseS[F /* <: js.Promise[S] */, S](promise: F): Chainable[S] = js.native
@@ -32268,6 +32366,12 @@ trait Chainable[Subject] extends js.Object {
     * Write to a file with the specified contents.
     *
     * @see https://on.cypress.io/writefile
+    ```
+    cy.writeFile('path/to/message.txt', 'Hello World')
+    .then((text) => {
+    expect(text).to.equal('Hello World') // true
+    })
+    ```
     */
   def writeFile[C /* <: FileContents */](filePath: java.lang.String, contents: C): Chainable[C] = js.native
   /**

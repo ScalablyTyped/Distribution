@@ -67,6 +67,10 @@ trait LoryOptions extends js.Object {
     */
   var infinite: js.UndefOr[scala.Boolean | scala.Double] = js.undefined
   /**
+    * the slide index to show when the slider is initialized (	default: 0 )
+    */
+  var initialIndex: js.UndefOr[scala.Double] = js.undefined
+  /**
     * if slider reached the last slide, with next click the slider goes back to the startindex (default: false).
     */
   var rewind: js.UndefOr[scala.Boolean] = js.undefined

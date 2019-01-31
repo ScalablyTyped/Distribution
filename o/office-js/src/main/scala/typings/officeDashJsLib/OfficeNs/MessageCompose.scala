@@ -30,7 +30,7 @@ trait MessageCompose extends Message {
     * Provides access to the Cc (carbon copy) recipients of a message. The type of object and level of access depends on the mode of the 
     * current item.
     *
-    * The cc property returns a {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of 
+    * The cc property returns an {@link Office.Recipients} object that provides methods to get or update the recipients on the Cc line of 
     * the message.
     *
     * [Api set: Mailbox 1.0]

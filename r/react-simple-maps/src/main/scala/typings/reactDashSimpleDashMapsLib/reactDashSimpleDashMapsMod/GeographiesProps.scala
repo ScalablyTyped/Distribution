@@ -9,7 +9,7 @@ trait GeographiesProps extends js.Object {
   var children: js.UndefOr[
     js.Function2[
       /* geographies */ js.Array[js.Object], 
-      /* projection */ js.Function1[/* point */ Point, scala.Unit], 
+      /* projection */ d3DashGeoLib.d3DashGeoMod.GeoProjection, 
       scala.Unit
     ]
   ] = js.undefined

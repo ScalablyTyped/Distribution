@@ -21,9 +21,11 @@ abstract class TemplateRef[C] () extends js.Object {
     */
   val elementRef: atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[_] = js.native
   /**
-    * Creates a view object and attaches it to the view container of the parent view.
-    * @param context The context for the new view, inherited from the anchor element.
-    * @returns The new view object.
+    * Instantiates an embedded view based on this template,
+    * and attaches it to the view container.
+    * @param context The data-binding context of the embedded view, as declared
+    * in the `<ng-template>` usage.
+    * @returns The new embedded view object.
     */
   def createEmbeddedView(context: C): atAngularCoreLib.srcLinkerViewUnderscoreRefMod.EmbeddedViewRef[C] = js.native
 }

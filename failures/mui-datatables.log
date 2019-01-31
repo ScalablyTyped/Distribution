@@ -9,8 +9,7 @@
 [debug] PhaseRunner.scala:82 Success [id => mui-datatables, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing mui-datatables [id => mui-datatables, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => mui-datatables, phase => scala.js] 
-[warn ] Phase3CompileBloop.scala:197 Built mui-datatables in 561 ms [id => mui-datatables, phase => build] 
-[info ] Phase3CompileBloop.scala:205 published local, [/home/tso/.ivy2/local/org.scalablytyped/mui-datatables_sjs0.6_2.12/2.0-dt-20190129Z-07295e/jars/mui-datatables_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/mui-datatables_sjs0.6_2.12/2.0-dt-20190129Z-07295e/srcs/mui-datatables_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/mui-datatables_sjs0.6_2.12/2.0-dt-20190129Z-07295e/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/mui-datatables_sjs0.6_2.12/2.0-dt-20190129Z-07295e/poms/mui-datatables_sjs0.6_2.12.pom] [id => mui-datatables, phase => build] 
+[warn ] Phase3CompileBloop.scala:178 Using cached build of mui-datatables [id => mui-datatables, phase => build] 
 [debug] PhaseRunner.scala:82 Success [id => mui-datatables, phase => build] 
 [error] PhaseRes.scala:76 Caught exception: dispatch.StatusCode: Unexpected response status: 404 [id => mui-datatables, phase => publish] java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 404
 	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:218)

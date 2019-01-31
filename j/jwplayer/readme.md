@@ -8,6 +8,7 @@
 //                 Benjamin Dobson <https://github.com/bpdsw>
 //                 Be Birchall <https://github.com/bebebebebe>
 //                 Daniel Cassidy <https://github.com/djcsdy>
+//                 Drew Wyatt <https://github.com/drewwyatt>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 // JW Player is the leading HTML5 & Flash video player, optimized for mobile and the desktop. Easy enough for beginners, advanced enough for pros.

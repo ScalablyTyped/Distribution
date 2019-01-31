@@ -24,6 +24,7 @@ trait EventParams extends js.Object {
   var bufferChange: BufferChangeParam
   var captionsChanged: CaptionsChangedParam
   var captionsList: CaptionsListParam
+  var cast: CastParam
   var controls: ControlsParam
   var error: ErrorParam
   var firstFrame: FirstFrameParam

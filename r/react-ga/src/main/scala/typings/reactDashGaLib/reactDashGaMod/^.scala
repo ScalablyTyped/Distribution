@@ -24,7 +24,9 @@ object ^ extends js.Object {
     fieldsObject: reactDashGaLib.reactDashGaMod.FieldsObject,
     trackerNames: reactDashGaLib.reactDashGaMod.TrackerNames
   ): scala.Unit = js.native
-  def ga(): js.Any = js.native
+  def ga(
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+  ): scala.Unit = js.native
   def initialize(trackers: js.Array[reactDashGaLib.reactDashGaMod.Tracker]): scala.Unit = js.native
   def initialize(
     trackers: js.Array[reactDashGaLib.reactDashGaMod.Tracker],
@@ -47,6 +49,7 @@ object ^ extends js.Object {
     trackerNames: reactDashGaLib.reactDashGaMod.TrackerNames,
     title: java.lang.String
   ): scala.Unit = js.native
+  def resetCalls(): scala.Unit = js.native
   def send(fieldsObject: reactDashGaLib.reactDashGaMod.FieldsObject): scala.Unit = js.native
   def send(
     fieldsObject: reactDashGaLib.reactDashGaMod.FieldsObject,

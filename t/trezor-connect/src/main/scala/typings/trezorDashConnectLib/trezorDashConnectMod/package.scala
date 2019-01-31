@@ -10,7 +10,7 @@ package object trezorDashConnectMod {
   type DeviceFirmwareStatus = trezorDashConnectLib.trezorDashConnectLibStrings.valid | trezorDashConnectLib.trezorDashConnectLibStrings.outdated | trezorDashConnectLib.trezorDashConnectLibStrings.required
   type DeviceMode = trezorDashConnectLib.trezorDashConnectLibStrings.normal | trezorDashConnectLib.trezorDashConnectLibStrings.bootloader | trezorDashConnectLib.trezorDashConnectLibStrings.initialize | trezorDashConnectLib.trezorDashConnectLibStrings.seedless
   type DeviceStatus = trezorDashConnectLib.trezorDashConnectLibStrings.available | trezorDashConnectLib.trezorDashConnectLibStrings.occupied | trezorDashConnectLib.trezorDashConnectLibStrings.used
-  type Output = RegularOutput | SendMaxOutput | OpReturnOutput
+  type Output = RegularOutput | InternalOutput | SendMaxOutput | OpReturnOutput
   type RequestLoginParams = CommonParams with (trezorDashConnectLib.Anon_Callback | LoginChallenge)
   type ResponseMessage[T] = Error | Success[T]
 }

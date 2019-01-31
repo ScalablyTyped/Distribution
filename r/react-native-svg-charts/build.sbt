@@ -1,14 +1,11 @@
 organization := "org.scalablytyped"
 name := "react-native-svg-charts"
-version := "5.0-dt-20181105Z-6194a1"
+version := "5.0-dt-20181105Z-46ec7e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "color" % "3.0-dt-20180214Z-c780a1",
-  "org.scalablytyped" %%% "color-convert" % "1.9-dt-20180214Z-f2e3de",
-  "org.scalablytyped" %%% "color-name" % "1.1-dt-20180214Z-786ea5",
   "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
   "org.scalablytyped" %%% "d3-path" % "1.0-dt-20180514Z-cd4c8c",
   "org.scalablytyped" %%% "d3-scale" % "2.1-dt-20181216Z-c8c3e8",
@@ -16,8 +13,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-time" % "1.0-dt-20180912Z-9f621b",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
   "org.scalablytyped" %%% "react" % "16.7-dt-20190128Z-cfd22c",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190122Z-3f1df3",
-  "org.scalablytyped" %%% "react-native-svg" % "9.0.6-cf028c",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190130Z-5379e5",
+  "org.scalablytyped" %%% "react-native-svg" % "9.0.7-8ec25b",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

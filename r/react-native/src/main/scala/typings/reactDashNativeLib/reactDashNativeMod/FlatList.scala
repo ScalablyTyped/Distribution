@@ -10,6 +10,10 @@ import scala.scalajs.js.annotation._
 class FlatList[ItemT] ()
   extends reactLib.reactMod.Component[FlatListProps[ItemT], js.Object, js.Any] {
   /**
+    * Displays the scroll indicators momentarily.
+    */
+  def flashScrollIndicators(): scala.Unit = js.native
+  /**
     * Exports some data, e.g. for perf investigations or analytics.
     */
   def getMetrics(): reactDashNativeLib.Anon_ContentLength = js.native

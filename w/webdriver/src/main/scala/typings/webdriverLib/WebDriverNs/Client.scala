@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 // appium types
 // jsonwp types
 // mjsonwp types
+// saucelabs types
 @js.native
 trait Client[T] extends js.Object {
   var capabilities: DesiredCapabilities = js.native
@@ -20,6 +21,7 @@ trait Client[T] extends js.Object {
   def acceptAlert(): js.UndefOr[scala.Nothing] = js.native
   def activateIME(engine: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def addCookie(cookie: js.Object): js.UndefOr[scala.Nothing] = js.native
+  def assertPerformance(assertOptions: js.Object): scala.Boolean = js.native
   def back(): js.UndefOr[scala.Nothing] = js.native
   def background(): js.UndefOr[scala.Nothing] = js.native
   def background(duration: scala.Double): js.UndefOr[scala.Nothing] = js.native
@@ -109,6 +111,7 @@ trait Client[T] extends js.Object {
   def getNetworkConnection(): scala.Double = js.native
   def getOrientation(): js.UndefOr[scala.Nothing] = js.native
   def getPageIndex(): js.UndefOr[scala.Nothing] = js.native
+  def getPageLogs(`type`: java.lang.String): js.Object = js.native
   def getPageSource(): js.UndefOr[scala.Nothing] = js.native
   def getPerformanceData(packageName: java.lang.String, dataType: java.lang.String, dataReadTimeout: scala.Double): js.UndefOr[scala.Nothing] = js.native
   def getPerformanceDataTypes(): js.UndefOr[scala.Nothing] = js.native
@@ -140,6 +143,7 @@ trait Client[T] extends js.Object {
     keyName: java.lang.String
   ): js.UndefOr[scala.Nothing] = js.native
   def installApp(appPath: java.lang.String): js.UndefOr[scala.Nothing] = js.native
+  def interceptRequest(rule: js.Object): js.UndefOr[scala.Nothing] = js.native
   def isAppInstalled(bundleId: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def isElementDisplayed(): scala.Boolean = js.native
   def isElementEnabled(): scala.Boolean = js.native
@@ -257,6 +261,8 @@ trait Client[T] extends js.Object {
   def takeElementScreenshot(): java.lang.String = js.native
   def takeElementScreenshot(scroll: scala.Boolean): java.lang.String = js.native
   def takeScreenshot(): java.lang.String = js.native
+  def throttleNetwork(condition: java.lang.String): js.UndefOr[scala.Nothing] = js.native
+  def throttleNetwork(condition: js.Object): js.UndefOr[scala.Nothing] = js.native
   def toggleAirplaneMode(): js.UndefOr[scala.Nothing] = js.native
   def toggleData(): js.UndefOr[scala.Nothing] = js.native
   def toggleEnrollTouchId(enabled: scala.Boolean): js.UndefOr[scala.Nothing] = js.native

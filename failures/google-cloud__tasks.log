@@ -23,7 +23,8 @@
 [debug] PhaseRunner.scala:82 Success [id => @google-cloud/tasks, phase => typescript] 
 [warn ] Phase2ToScalaJs.scala:40 Processing @google-cloud/tasks [id => @google-cloud/tasks, phase => scala.js] 
 [debug] PhaseRunner.scala:82 Success [id => @google-cloud/tasks, phase => scala.js] 
-[warn ] Phase3CompileBloop.scala:178 Using cached build of google-cloud__tasks [id => @google-cloud/tasks, phase => build] 
+[warn ] Phase3CompileBloop.scala:197 Built google-cloud__tasks in 750 ms [id => @google-cloud/tasks, phase => build] 
+[info ] Phase3CompileBloop.scala:205 published local, [/home/tso/.ivy2/local/org.scalablytyped/google-cloud__tasks_sjs0.6_2.12/0.2-dt-20190126Z-3786ba/jars/google-cloud__tasks_sjs0.6_2.12.jar, /home/tso/.ivy2/local/org.scalablytyped/google-cloud__tasks_sjs0.6_2.12/0.2-dt-20190126Z-3786ba/srcs/google-cloud__tasks_sjs0.6_2.12-sources.jar, /home/tso/.ivy2/local/org.scalablytyped/google-cloud__tasks_sjs0.6_2.12/0.2-dt-20190126Z-3786ba/ivys/ivy.xml, /home/tso/.ivy2/local/org.scalablytyped/google-cloud__tasks_sjs0.6_2.12/0.2-dt-20190126Z-3786ba/poms/google-cloud__tasks_sjs0.6_2.12.pom] [id => @google-cloud/tasks, phase => build] 
 [debug] PhaseRunner.scala:82 Success [id => @google-cloud/tasks, phase => build] 
 [error] PhaseRes.scala:76 Caught exception: dispatch.StatusCode: Unexpected response status: 404 [id => @google-cloud/tasks, phase => publish] java.util.concurrent.ExecutionException: dispatch.StatusCode: Unexpected response status: 404
 	at com.ning.http.client.providers.netty.future.NettyResponseFuture.done(NettyResponseFuture.java:218)

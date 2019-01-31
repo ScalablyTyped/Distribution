@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-material-dropdown"
-version := "0.11-dt-20190123Z-07de31"
+version := "0.11-dt-20190123Z-27e89e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-36deb1",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-e51e1e",
   "org.scalablytyped" %%% "react" % "16.7-dt-20190128Z-cfd22c",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190122Z-3f1df3",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190130Z-5379e5",
   "org.scalablytyped" %%% "std" % "3.2.4-2926f1")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

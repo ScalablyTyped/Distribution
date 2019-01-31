@@ -9,6 +9,6 @@ trait DecoratedPolicyOptions[T] extends PolicyOptions[T] {
   /**
     * @default false
     */
-  var getDecoratedValue: js.UndefOr[scala.Boolean] = js.undefined
+  var getDecoratedValue: js.UndefOr[scala.Boolean]
 }
 

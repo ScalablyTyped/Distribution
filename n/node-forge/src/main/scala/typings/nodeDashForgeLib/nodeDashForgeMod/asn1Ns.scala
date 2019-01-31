@@ -13,7 +13,7 @@ object asn1Ns extends js.Object {
     var constructed: scala.Boolean
     var tagClass: Class
     var `type`: Type
-    var value: js.Array[Asn1]
+    var value: nodeDashForgeLib.nodeDashForgeMod.Bytes | js.Array[Asn1]
   }
   
   @js.native
@@ -22,8 +22,13 @@ object asn1Ns extends js.Object {
   @js.native
   sealed trait Type extends js.Object
   
-  def create(tagClass: Class, `type`: Type, constructed: scala.Boolean, value: java.lang.String): Asn1 = js.native
   def create(tagClass: Class, `type`: Type, constructed: scala.Boolean, value: js.Array[Asn1]): Asn1 = js.native
+  def create(
+    tagClass: Class,
+    `type`: Type,
+    constructed: scala.Boolean,
+    value: nodeDashForgeLib.nodeDashForgeMod.Bytes
+  ): Asn1 = js.native
   def derToOid(der: nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteStringBuffer): nodeDashForgeLib.nodeDashForgeMod.OID = js.native
   def fromDer(bytes: nodeDashForgeLib.nodeDashForgeMod.Bytes): Asn1 = js.native
   def fromDer(bytes: nodeDashForgeLib.nodeDashForgeMod.Bytes, strict: scala.Boolean): Asn1 = js.native

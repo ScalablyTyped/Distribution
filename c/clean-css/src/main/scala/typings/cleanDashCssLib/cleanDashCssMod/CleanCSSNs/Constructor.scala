@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
 trait Constructor
   extends org.scalablytyped.runtime.Instantiable0[MinifierOutput]
      with org.scalablytyped.runtime.Instantiable1[
-      (/* options */ Options with cleanDashCssLib.Anon_ReturnPromise) | (/* options */ Options), 
+      (/* options */ OptionsOutput) | (/* options */ OptionsPromise), 
       MinifierOutput | MinifierPromise
     ]
 

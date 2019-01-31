@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "typed_dot_js"
-version := "2.0.9-efb091"
+version := "2.0.10-efb091"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

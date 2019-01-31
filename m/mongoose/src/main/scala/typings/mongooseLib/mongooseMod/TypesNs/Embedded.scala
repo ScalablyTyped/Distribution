@@ -12,13 +12,6 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Embedded
   extends mongooseLib.mongooseMod.MongooseDocument {
-  /**
-    * Marks a path as invalid, causing validation to fail.
-    * @param path the field to invalidate
-    * @param err error which states the reason path was invalid
-    */
-  def invalidate(path: java.lang.String, err: java.lang.String): scala.Boolean = js.native
-  def invalidate(path: java.lang.String, err: mongooseLib.mongooseMod.NativeError): scala.Boolean = js.native
   /** Returns the top level document of this sub-document. */
   def ownerDocument(): mongooseLib.mongooseMod.MongooseDocument = js.native
   /** Returns this sub-documents parent document. */
