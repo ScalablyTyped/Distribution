@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 
 trait Subscriptions
   extends /* socketId */ org.scalablytyped.runtime.NumberDictionary[
-      org.scalablytyped.runtime.StringDictionary[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any
-      ]
+      org.scalablytyped.runtime.StringDictionary[socketclusterDashServerLib.socketclusterDashServerMod.SCServerSocket]
     ]
 
