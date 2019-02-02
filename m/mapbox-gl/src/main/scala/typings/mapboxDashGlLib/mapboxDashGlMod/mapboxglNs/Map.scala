@@ -45,13 +45,7 @@ trait Map extends Evented {
   def addImage(name: java.lang.String, image: stdLib.ImageData, options: mapboxDashGlLib.Anon_PixelRatio): this.type = js.native
   def addLayer(layer: Layer): this.type = js.native
   def addLayer(layer: Layer, before: java.lang.String): this.type = js.native
-  def addSource(id: java.lang.String, source: GeoJSONSource): this.type = js.native
-  def addSource(id: java.lang.String, source: GeoJSONSourceRaw): this.type = js.native
-  def addSource(id: java.lang.String, source: ImageSource): this.type = js.native
-  def addSource(id: java.lang.String, source: RasterDemSource): this.type = js.native
-  def addSource(id: java.lang.String, source: RasterSource): this.type = js.native
-  def addSource(id: java.lang.String, source: VectorSource): this.type = js.native
-  def addSource(id: java.lang.String, source: VideoSource): this.type = js.native
+  def addSource(id: java.lang.String, source: AnySourceData): this.type = js.native
   def areTilesLoaded(): scala.Boolean = js.native
   def cameraForBounds(bounds: LngLatBoundsLike): js.UndefOr[CameraOptions] = js.native
   def cameraForBounds(bounds: LngLatBoundsLike, options: CameraForBoundsOptions): js.UndefOr[CameraOptions] = js.native
@@ -92,7 +86,7 @@ trait Map extends Evented {
   def getPaintProperty(layer: java.lang.String, name: java.lang.String): js.Any = js.native
   def getPitch(): scala.Double = js.native
   def getRenderWorldCopies(): scala.Boolean = js.native
-  def getSource(id: java.lang.String): VectorSource | RasterSource | RasterDemSource | GeoJSONSource | ImageSource | VideoSource = js.native
+  def getSource(id: java.lang.String): AnySourceImpl = js.native
   def getStyle(): Style = js.native
   def getZoom(): scala.Double = js.native
   def hasImage(name: java.lang.String): scala.Boolean = js.native

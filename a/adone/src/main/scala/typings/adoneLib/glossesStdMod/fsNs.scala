@@ -558,7 +558,7 @@ object fsNs extends js.Object {
   ): scala.Unit = js.native
   def mkdtemp(
     prefix: java.lang.String,
-    options: nodeLib.Anon_BufferEncoding_1560675869,
+    options: nodeLib.Anon_BufferEncoding,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* folder */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -568,7 +568,7 @@ object fsNs extends js.Object {
     */
   def mkdtemp(
     prefix: java.lang.String,
-    options: nodeLib.Anon_EncodingBufferEncodingNull,
+    options: nodeLib.Anon_EncodingBufferEncoding,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* folder */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   /**
@@ -606,8 +606,8 @@ object fsNs extends js.Object {
     * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def mkdtempSync(prefix: java.lang.String, options: nodeLib.Anon_BufferEncoding_1560675869): nodeLib.Buffer = js.native
-  def mkdtempSync(prefix: java.lang.String, options: nodeLib.Anon_EncodingBufferEncodingNull): java.lang.String = js.native
+  def mkdtempSync(prefix: java.lang.String, options: nodeLib.Anon_BufferEncoding): nodeLib.Buffer = js.native
+  def mkdtempSync(prefix: java.lang.String, options: nodeLib.Anon_EncodingBufferEncoding): java.lang.String = js.native
   def mkdtempSync(prefix: java.lang.String, options: nodeLib.Anon_EncodingNull): java.lang.String | nodeLib.Buffer = js.native
   def mkdtempSync(prefix: java.lang.String, options: nodeLib.BufferEncoding): java.lang.String = js.native
   /**
@@ -1108,7 +1108,7 @@ object fsNs extends js.Object {
     */
   def readlink(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_BufferEncoding_1560675869,
+    options: nodeLib.Anon_BufferEncoding,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* linkString */ nodeLib.Buffer, 
@@ -1122,7 +1122,7 @@ object fsNs extends js.Object {
     */
   def readlink(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_EncodingBufferEncodingNull,
+    options: nodeLib.Anon_EncodingBufferEncoding,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* linkString */ java.lang.String, 
@@ -1164,8 +1164,8 @@ object fsNs extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): nodeLib.Buffer = js.native
-  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): java.lang.String = js.native
+  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): nodeLib.Buffer = js.native
+  def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): java.lang.String = js.native
   def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): java.lang.String | nodeLib.Buffer = js.native
   def readlinkSync(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): java.lang.String = js.native
   /**
@@ -1224,7 +1224,7 @@ object fsNs extends js.Object {
     */
   def realpath(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_BufferEncoding_1560675869,
+    options: nodeLib.Anon_BufferEncoding,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* resolvedPath */ nodeLib.Buffer, 
@@ -1238,7 +1238,7 @@ object fsNs extends js.Object {
     */
   def realpath(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_EncodingBufferEncodingNull,
+    options: nodeLib.Anon_EncodingBufferEncoding,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* resolvedPath */ java.lang.String, 
@@ -1280,8 +1280,8 @@ object fsNs extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): nodeLib.Buffer = js.native
-  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): java.lang.String = js.native
+  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): nodeLib.Buffer = js.native
+  def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): java.lang.String = js.native
   def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): java.lang.String | nodeLib.Buffer = js.native
   def realpathSync(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): java.lang.String = js.native
   /**
@@ -2478,8 +2478,8 @@ object fsNs extends js.Object {
       * Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    def `__promisify__`(prefix: java.lang.String, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
-    def `__promisify__`(prefix: java.lang.String, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
+    def `__promisify__`(prefix: java.lang.String, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
+    def `__promisify__`(prefix: java.lang.String, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
     def `__promisify__`(prefix: java.lang.String, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     def `__promisify__`(prefix: java.lang.String, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     @JSName("__promisify__")
@@ -2654,8 +2654,8 @@ object fsNs extends js.Object {
       * Generates six random characters to be appended behind a required `prefix` to create a unique temporary directory.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
-    def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
+    def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
+    def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
     def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     def mkdtemp(prefix: java.lang.String, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     @JSName("mkdtemp")
@@ -2761,8 +2761,8 @@ object fsNs extends js.Object {
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[js.Array[nodeLib.Buffer]] = js.native
-    def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[js.Array[java.lang.String]] = js.native
+    def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): js.Promise[js.Array[nodeLib.Buffer]] = js.native
+    def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
     def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
     def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
     @JSName("readdir")
@@ -2779,8 +2779,8 @@ object fsNs extends js.Object {
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
-    def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
+    def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
+    def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
     def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     @JSName("readlink")
@@ -2797,8 +2797,8 @@ object fsNs extends js.Object {
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
-    def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
+    def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
+    def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
     def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     @JSName("realpath")
@@ -3063,8 +3063,8 @@ object fsNs extends js.Object {
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
+    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
+    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
     def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     @JSName("__promisify__")
@@ -3087,8 +3087,8 @@ object fsNs extends js.Object {
       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
       * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
       */
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
-    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
+    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
+    def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
     def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
     def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
     @JSName("__promisify__")
@@ -3121,7 +3121,7 @@ object fsNs extends js.Object {
     ): scala.Unit = js.native
     def native(
       path: nodeLib.fsMod.PathLike,
-      options: nodeLib.Anon_BufferEncoding_1560675869,
+      options: nodeLib.Anon_BufferEncoding,
       callback: js.Function2[
           /* err */ nodeLib.NodeJSNs.ErrnoException, 
           /* resolvedPath */ nodeLib.Buffer, 
@@ -3130,7 +3130,7 @@ object fsNs extends js.Object {
     ): scala.Unit = js.native
     def native(
       path: nodeLib.fsMod.PathLike,
-      options: nodeLib.Anon_EncodingBufferEncodingNull,
+      options: nodeLib.Anon_EncodingBufferEncoding,
       callback: js.Function2[
           /* err */ nodeLib.NodeJSNs.ErrnoException, 
           /* resolvedPath */ java.lang.String, 
@@ -3172,8 +3172,8 @@ object fsNs extends js.Object {
   object realpathSyncNs extends js.Object {
     def native(path: nodeLib.fsMod.PathLike): java.lang.String | nodeLib.Buffer = js.native
     def native(path: nodeLib.fsMod.PathLike, options: java.lang.String): java.lang.String | nodeLib.Buffer = js.native
-    def native(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): nodeLib.Buffer = js.native
-    def native(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): java.lang.String = js.native
+    def native(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): nodeLib.Buffer = js.native
+    def native(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): java.lang.String = js.native
     def native(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): java.lang.String | nodeLib.Buffer = js.native
     def native(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): java.lang.String = js.native
     @JSName("native")

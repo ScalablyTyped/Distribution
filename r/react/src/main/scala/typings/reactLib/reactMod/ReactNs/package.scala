@@ -44,6 +44,9 @@ package object ReactNs {
     /* repeated */ ReactNode, 
     DOMElement[P, T]
   ]
+  // The identity check is done with the SameValue algorithm (Object.is), which is stricter than ===
+  // TODO (TypeScript 3.0): ReadonlyArray<unknown>
+  type DependencyList = js.Array[js.Any]
   type DetailedHTMLProps[E /* <: HTMLAttributes[T] */, T] = ClassAttributes[T] with E
   // this technically does accept a second argument, but it's already under a deprecation warning
   // and it's not even released so probably better to not define it.
@@ -91,9 +94,6 @@ package object ReactNs {
   ]
   // tslint:disable-next-line:no-empty-interface
   type HTMLFactory[T /* <: reactLib.HTMLElement */] = DetailedHTMLFactory[AllHTMLAttributes[T], T]
-  // The identity check is done with the SameValue algorithm (Object.is), which is stricter than ===
-  // TODO (TypeScript 3.0): ReadonlyArray<unknown>
-  type InputIdentityList = js.Array[js.Any]
   type JSXElementConstructor[P] = (js.Function1[/* props */ P, ReactElement[js.Any] | scala.Null]) | (org.scalablytyped.runtime.Instantiable1[/* props */ P, Component[P, js.Any, js.Any]])
   type Key = java.lang.String | scala.Double
   type KeyboardEventHandler[T] = EventHandler[KeyboardEvent[T]]
@@ -131,6 +131,10 @@ package object ReactNs {
   type ReactType[P] = js.Any | ComponentType[P]
   // Unlike redux, the actions _can_ be anything
   type Reducer[S, A] = js.Function2[/* prevState */ S, /* action */ A, S]
+  type ReducerAction[R /* <: Reducer[_, _] */] = js.Any
+  // types used to try and prevent the compiler from reducing S
+  // to a supertype common with the second argument to useReducer()
+  type ReducerState[R /* <: Reducer[_, _] */] = js.Any
   type Ref[T] = (js.Function1[/* instance */ T | scala.Null, scala.Unit]) | RefObject[T] | scala.Null
   type Requireable[T] = propDashTypesLib.propDashTypesMod.Requireable[T]
   //

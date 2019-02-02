@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Response extends js.Object {
   var body: js.Any
-  var headers: stdLib.Record[java.lang.String, java.lang.String]
+  var headers: stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String]]
   var statusCode: js.UndefOr[scala.Double] = js.undefined
   def end(): stdLib.Readonly[Response]
   def getHeader(name: java.lang.String): java.lang.String | scala.Null

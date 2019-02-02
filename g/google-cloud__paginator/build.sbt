@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-cloud__paginator"
-version := "0.1.2-f41683"
+version := "0.1.2-86d652"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,11 +9,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "arrify" % "1.0-dt-20180509Z-e71a1f",
   "org.scalablytyped" %%% "extend" % "3.0-dt-20180214Z-949fff",
   "org.scalablytyped" %%% "is" % "0.0-unknown-dt-20181106Z-59b67e",
-  "org.scalablytyped" %%% "is-stream-ended" % "0.1.4-f430c8",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
-  "org.scalablytyped" %%% "split-array-stream" % "2.0.0-c46bd6",
+  "org.scalablytyped" %%% "is-stream-ended" % "0.1.4-6b65ec",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
+  "org.scalablytyped" %%% "split-array-stream" % "2.0.0-a87c9c",
   "org.scalablytyped" %%% "std" % "3.3.1-6e0314",
-  "org.scalablytyped" %%% "stream-events" % "1.0.5-c32d2e")
+  "org.scalablytyped" %%% "stream-events" % "1.0.5-3c4a06")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "pulumi__aws"
-version := "v0.16.7-31b539"
+version := "v0.16.7-b2a019"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "arrify" % "1.0-dt-20180509Z-e71a1f",
-  "org.scalablytyped" %%% "aws-sdk" % "2.395.0-d616da",
-  "org.scalablytyped" %%% "buffer-from" % "1.1-dt-20180616Z-b6b0ff",
+  "org.scalablytyped" %%% "aws-sdk" % "2.395.0-f8a05a",
+  "org.scalablytyped" %%% "buffer-from" % "1.1-dt-20180616Z-b12ca9",
   "org.scalablytyped" %%% "builtin-modules" % "2.0-dt-20180214Z-29365e",
-  "org.scalablytyped" %%% "diff" % "4.0-dt-20190121Z-a5f8f5",
+  "org.scalablytyped" %%% "diff" % "4.0-dt-20190129Z-642a22",
   "org.scalablytyped" %%% "events" % "3.0-dt-20190114Z-2e86e4",
   "org.scalablytyped" %%% "google-protobuf" % "3.2-dt-20180214Z-31d2fa",
-  "org.scalablytyped" %%% "grpc" % "1.17.0-88bcf4",
+  "org.scalablytyped" %%% "grpc" % "1.17.0-5c7c1b",
   "org.scalablytyped" %%% "jmespath" % "0.15-dt-20180214Z-88440d",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-e5b16b",
   "org.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20180723Z-8280c6",
@@ -22,10 +22,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "make-error" % "1.3.5-c9f607",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-5089c8",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20180214Z-94b6ad",
-  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-4e1e1b",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
+  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-bb0665",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
   "org.scalablytyped" %%% "normalize-package-data" % "2.4-dt-20180214Z-de7b50",
-  "org.scalablytyped" %%% "protobufjs" % "6.8.8-7966c6",
+  "org.scalablytyped" %%% "protobufjs" % "6.8.8-23aee0",
   "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-c09989",
   "org.scalablytyped" %%% "protobufjs__base64" % "1.1.2-991424",
   "org.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-e42de9",
@@ -36,18 +36,18 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "protobufjs__path" % "1.1.2-01c06c",
   "org.scalablytyped" %%% "protobufjs__pool" % "1.1.0-503643",
   "org.scalablytyped" %%% "protobufjs__utf8" % "1.1.0-6d707c",
-  "org.scalablytyped" %%% "pulumi__pulumi" % "0.16.14-0fc5e1",
+  "org.scalablytyped" %%% "pulumi__pulumi" % "0.16.14-f37695",
   "org.scalablytyped" %%% "read-package-tree" % "5.2-dt-20180512Z-f38bc6",
   "org.scalablytyped" %%% "require-from-string" % "1.2-dt-20180214Z-f2e9ff",
-  "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180507Z-508cae",
-  "org.scalablytyped" %%% "sax" % "1.x-dt-20180616Z-3ba963",
-  "org.scalablytyped" %%% "source-map-support" % "0.4-dt-20180523Z-2d6ab3",
+  "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180507Z-7da728",
+  "org.scalablytyped" %%% "sax" % "1.x-dt-20180616Z-fdcda0",
+  "org.scalablytyped" %%% "source-map-support" % "0.4-dt-20180523Z-0f4428",
   "org.scalablytyped" %%% "std" % "3.3.1-6e0314",
-  "org.scalablytyped" %%% "ts-node" % "7.0.1-904e62",
+  "org.scalablytyped" %%% "ts-node" % "7.0.1-bd3494",
   "org.scalablytyped" %%% "typescript" % "3.3.1-b7b6b0",
   "org.scalablytyped" %%% "upath" % "1.1.0-fd5a7a",
-  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-29e273",
-  "org.scalablytyped" %%% "xml2js" % "0.4-dt-20180606Z-3451e8",
+  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-dbdaa1",
+  "org.scalablytyped" %%% "xml2js" % "0.4-dt-20180606Z-d55f12",
   "org.scalablytyped" %%% "yn" % "3.0-dt-20190117Z-559b79")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

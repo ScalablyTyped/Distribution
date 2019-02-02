@@ -17,7 +17,7 @@ class CanvasSource ()
   override var `type`: mapboxDashGlLib.mapboxDashGlLibStrings.vector | mapboxDashGlLib.mapboxDashGlLibStrings.raster | mapboxDashGlLib.mapboxDashGlLibStrings.`raster-dem` | mapboxDashGlLib.mapboxDashGlLibStrings.geojson | mapboxDashGlLib.mapboxDashGlLibStrings.image | mapboxDashGlLib.mapboxDashGlLibStrings.video | mapboxDashGlLib.mapboxDashGlLibStrings.canvas = js.native
   /* CompleteClass */
   @JSName("type")
-  override var type_CanvasSource: mapboxDashGlLib.mapboxDashGlLibStrings.canvas = js.native
+  override var type_CanvasSourceRaw: mapboxDashGlLib.mapboxDashGlLibStrings.canvas = js.native
   /* CompleteClass */
   override def getCanvas(): stdLib.HTMLCanvasElement = js.native
   /* CompleteClass */

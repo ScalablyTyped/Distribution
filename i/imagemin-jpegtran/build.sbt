@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "imagemin-jpegtran"
-version := "5.0-dt-20180825Z-dc5a83"
+version := "5.0-dt-20180825Z-6542d5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "imagemin" % "6.0-dt-20180823Z-1e48de",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
+  "org.scalablytyped" %%% "imagemin" % "6.0-dt-20180823Z-04ef5f",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
   "org.scalablytyped" %%% "std" % "3.3.1-6e0314")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -2640,6 +2640,7 @@ object ^ extends js.Object {
   def stackOffsetNone(series: d3DashShapeLib.d3DashShapeMod.Series[_, _], order: js.Array[scala.Double]): scala.Unit = js.native
   def stackOffsetSilhouette(series: d3DashShapeLib.d3DashShapeMod.Series[_, _], order: js.Array[scala.Double]): scala.Unit = js.native
   def stackOffsetWiggle(series: d3DashShapeLib.d3DashShapeMod.Series[_, _], order: js.Array[scala.Double]): scala.Unit = js.native
+  def stackOrderAppearance(series: d3DashShapeLib.d3DashShapeMod.Series[_, _]): js.Array[scala.Double] = js.native
   def stackOrderAscending(series: d3DashShapeLib.d3DashShapeMod.Series[_, _]): js.Array[scala.Double] = js.native
   def stackOrderDescending(series: d3DashShapeLib.d3DashShapeMod.Series[_, _]): js.Array[scala.Double] = js.native
   def stackOrderInsideOut(series: d3DashShapeLib.d3DashShapeMod.Series[_, _]): js.Array[scala.Double] = js.native

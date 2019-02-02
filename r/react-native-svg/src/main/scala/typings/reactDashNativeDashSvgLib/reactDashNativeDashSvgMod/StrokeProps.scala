@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait StrokeProps extends js.Object {
-  var stroke: js.UndefOr[reactDashNativeDashSvgLib.rgbaArray | java.lang.String] = js.undefined
+  var stroke: js.UndefOr[
+    reactDashNativeDashSvgLib.int32ARGBColor | reactDashNativeDashSvgLib.rgbaArray | java.lang.String
+  ] = js.undefined
   var strokeDasharray: js.UndefOr[
     js.Array[reactDashNativeDashSvgLib.NumberProp] | reactDashNativeDashSvgLib.NumberProp
   ] = js.undefined

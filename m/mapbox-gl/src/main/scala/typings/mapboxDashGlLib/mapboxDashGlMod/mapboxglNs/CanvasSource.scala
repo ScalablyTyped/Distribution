@@ -5,11 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CanvasSource
-  extends Source
-     with CanvasSourceOptions {
-  @JSName("type")
-  var type_CanvasSource: mapboxDashGlLib.mapboxDashGlLibStrings.canvas
+trait CanvasSource extends CanvasSourceRaw {
   def getCanvas(): stdLib.HTMLCanvasElement
   def pause(): scala.Unit
   def play(): scala.Unit

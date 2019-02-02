@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "socketcluster"
-version := "14.0-dt-20181218Z-e55db8"
+version := "14.0-dt-20181218Z-fb441d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20181101Z-467e4e",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
-  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-cb14d3",
+  "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20181101Z-303d98",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
+  "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-bfca42",
   "org.scalablytyped" %%% "std" % "3.3.1-6e0314")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

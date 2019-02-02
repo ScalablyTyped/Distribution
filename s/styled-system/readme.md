@@ -1,5 +1,5 @@
 ```
-// Type definitions for styled-system 3.1
+// Type definitions for styled-system 3.2
 // Project: https://github.com/jxnblk/styled-system#readme
 // Definitions by: Marshall Bowers <https://github.com/maxdeviant>
 //                 Ben McCormick <https://github.com/phobon>
@@ -10,6 +10,7 @@
 //                 Adam Lavin <https://github.com/lavoaster>
 //                 Joachim Schuler <https://github.com/jschuler>
 //                 Adam Misiorny <https://github.com/adam187>
+//                 Sara F-P <https://github.com/gretzky>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

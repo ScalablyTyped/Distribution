@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "mock-knex"
-version := "0.3-dt-20180721Z-bde2e7"
+version := "0.3-dt-20180721Z-e891c8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-ef7d03",
-  "org.scalablytyped" %%% "knex" % "0.15-dt-20181115Z-8aed79",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
+  "org.scalablytyped" %%% "knex" % "0.15-dt-20181115Z-b7270b",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
   "org.scalablytyped" %%% "std" % "3.3.1-6e0314")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

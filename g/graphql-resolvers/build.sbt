@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-resolvers"
-version := "0.2-dt-20181024Z-30a094"
+version := "0.2-dt-20181024Z-6b49d4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,11 +11,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "deprecated-decorator" % "0.1.6-da91f3",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-ddf996",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20190107Z-5c65a8",
-  "org.scalablytyped" %%% "graphql-tools" % "4.0.4-63429c",
+  "org.scalablytyped" %%% "graphql-tools" % "4.0.4-92f0da",
   "org.scalablytyped" %%% "iterall" % "1.2.2-4373bf",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
   "org.scalablytyped" %%% "std" % "3.3.1-6e0314",
-  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-29e273",
+  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-dbdaa1",
   "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-0cbed1",
   "org.scalablytyped" %%% "zen-observable-ts" % "0.8.13-29c689")
 publishArtifact in packageDoc := false

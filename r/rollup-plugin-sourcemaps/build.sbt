@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rollup-plugin-sourcemaps"
-version := "0.4-dt-20190122Z-732909"
+version := "0.4-dt-20190122Z-79ddfc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "acorn" % "4.0-dt-20181219Z-5e3e32",
   "org.scalablytyped" %%% "estree" % "0.0-unknown-dt-20180417Z-9eedda",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
-  "org.scalablytyped" %%% "rollup" % "1.1.2-5db40a",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
+  "org.scalablytyped" %%% "rollup" % "1.1.2-beac00",
   "org.scalablytyped" %%% "std" % "3.3.1-6e0314")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

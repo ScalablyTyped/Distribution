@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SymbolLayout extends js.Object {
-  var `icon-allow-overlap`: js.UndefOr[scala.Boolean | StyleFunction] = js.undefined
+  var `icon-allow-overlap`: js.UndefOr[scala.Boolean | StyleFunction | Expression] = js.undefined
   var `icon-anchor`: js.UndefOr[Anchor | StyleFunction | Expression] = js.undefined
   var `icon-ignore-placement`: js.UndefOr[scala.Boolean] = js.undefined
   var `icon-image`: js.UndefOr[java.lang.String | StyleFunction | Expression] = js.undefined
@@ -36,7 +36,7 @@ trait SymbolLayout extends js.Object {
   ] = js.undefined
   var `text-allow-overlap`: js.UndefOr[scala.Boolean] = js.undefined
   var `text-anchor`: js.UndefOr[Anchor | StyleFunction | Expression] = js.undefined
-  var `text-field`: js.UndefOr[java.lang.String | StyleFunction] = js.undefined
+  var `text-field`: js.UndefOr[java.lang.String | StyleFunction | Expression] = js.undefined
   var `text-font`: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var `text-ignore-placement`: js.UndefOr[scala.Boolean] = js.undefined
   var `text-justify`: js.UndefOr[

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-first-router-link"
-version := "1.4-dt-20180806Z-84e5d9"
+version := "1.4-dt-20180806Z-956917"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.5.8-ae54dc",
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20181017Z-846ff9",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-d610b9",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190131Z-997ec6",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190201Z-1f77c5",
   "org.scalablytyped" %%% "redux" % "4.0.1-607317",
   "org.scalablytyped" %%% "redux-first-router" % "2.1-dt-20181128Z-177003",
   "org.scalablytyped" %%% "std" % "3.3.1-6e0314",

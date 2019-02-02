@@ -116,11 +116,12 @@ trait FrameBase extends Evalable {
     * @param duration The time to wait for.
     */
   def waitFor(duration: scala.Double): js.Promise[scala.Unit] = js.native
+  def waitFor(selector: java.lang.String): js.Promise[ElementHandle[stdLib.Element]] = js.native
+  def waitFor(selector: java.lang.String, options: WaitForSelectorOptions): js.Promise[ElementHandle[stdLib.Element]] = js.native
   /**
     * Shortcut for waitForSelector and waitForXPath
     */
-  def waitFor(selector: java.lang.String): js.Promise[ElementHandle[stdLib.Element]] = js.native
-  def waitFor(selector: java.lang.String, options: WaitForSelectorOptions): js.Promise[ElementHandle[stdLib.Element]] = js.native
+  def waitFor(selector: java.lang.String, options: WaitForSelectorOptionsHidden): js.Promise[ElementHandle[stdLib.Element] | scala.Null] = js.native
   def waitFor(selector: java.lang.String, options: WaitForSelectorOptions, args: SerializableOrJSHandle*): js.Promise[_] = js.native
   /**
     * Shortcut for waitForFunction.
@@ -146,6 +147,7 @@ trait FrameBase extends Evalable {
   def waitForNavigation(options: NavigationOptions): js.Promise[Response] = js.native
   def waitForSelector(selector: java.lang.String): js.Promise[ElementHandle[stdLib.Element]] = js.native
   def waitForSelector(selector: java.lang.String, options: WaitForSelectorOptions): js.Promise[ElementHandle[stdLib.Element]] = js.native
+  def waitForSelector(selector: java.lang.String, options: WaitForSelectorOptionsHidden): js.Promise[ElementHandle[stdLib.Element] | scala.Null] = js.native
   def waitForXPath(xpath: java.lang.String): js.Promise[ElementHandle[stdLib.Element]] = js.native
   def waitForXPath(xpath: java.lang.String, options: WaitForSelectorOptions): js.Promise[ElementHandle[stdLib.Element]] = js.native
 }

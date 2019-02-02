@@ -47,6 +47,13 @@ trait IObjectOptions extends js.Object {
   	 */
   var centeredScaling: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * A fabricObject that, without stroke define a clipping area with their shape. filled in black
+    * the clipPath object gets used when the object has rendered, and the context is placed in the center
+    * of the object cacheCanvas.
+    * If you want 0,0 of a clipPath to align with an object center, use clipPath.originX/Y to 'center'
+    */
+  var clipPath: js.UndefOr[Object] = js.undefined
+  /**
   	 * Function that determines clipping of an object (context is passed as a first argument)
   	 * Note that context origin is at the object's center point (not left/top corner)
   	 */
@@ -75,6 +82,10 @@ trait IObjectOptions extends js.Object {
   	 * Not used by fabric, just for convenience
   	 */
   var data: js.UndefOr[js.Any] = js.undefined
+  /**
+    * When set to `true`, object's cache will be rerendered next render call.
+    */
+  var dirty: js.UndefOr[scala.Boolean] = js.undefined
   /**
   	 * When set to `false`, an object can not be a target of events. All events propagate through it. Introduced in v1.3.4
   	 */

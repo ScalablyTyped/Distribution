@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-little-router"
-version := "15.1.2-3178b2"
+version := "15.1.2-4780e6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,13 +10,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20181017Z-846ff9",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-e5b16b",
   "org.scalablytyped" %%% "lodash_dot_assign" % "4.2-dt-20180723Z-b71e9b",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-d610b9",
   "org.scalablytyped" %%% "query-string" % "6.2-dt-20190103Z-6ee2d1",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190131Z-997ec6",
-  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-e377db",
-  "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190124Z-8195ae",
-  "org.scalablytyped" %%% "recompose" % "0.30-dt-20190120Z-1ad5e9",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190201Z-1f77c5",
+  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-9c8d5f",
+  "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190124Z-54ae68",
+  "org.scalablytyped" %%% "recompose" % "0.30-dt-20190120Z-c99608",
   "org.scalablytyped" %%% "redux" % "4.0.1-607317",
   "org.scalablytyped" %%% "std" % "3.3.1-6e0314",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-607a2a",

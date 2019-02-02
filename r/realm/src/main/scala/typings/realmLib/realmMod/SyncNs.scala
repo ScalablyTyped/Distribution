@@ -72,10 +72,21 @@ object SyncNs extends js.Object {
     extends realmLib.RealmNs.SyncNs.User
   
   def addListener(
+    config: realmLib.RealmNs.SyncNs.RealmListenerConfiguration,
+    eventName: realmLib.RealmNs.SyncNs.RealmListenerEventName,
+    changeCallback: js.Function1[
+      /* changeEvent */ realmLib.RealmNs.SyncNs.ChangeEvent, 
+      js.Promise[scala.Unit] | scala.Unit
+    ]
+  ): scala.Unit = js.native
+  /**
+    * @deprecated, to be removed in future versions
+    */
+  def addListener(
     serverURL: java.lang.String,
     adminUser: realmLib.RealmNs.SyncNs.User,
     regex: java.lang.String,
-    name: java.lang.String,
+    name: realmLib.RealmNs.SyncNs.RealmListenerEventName,
     changeCallback: js.Function1[
       /* changeEvent */ realmLib.RealmNs.SyncNs.ChangeEvent, 
       js.Promise[scala.Unit] | scala.Unit

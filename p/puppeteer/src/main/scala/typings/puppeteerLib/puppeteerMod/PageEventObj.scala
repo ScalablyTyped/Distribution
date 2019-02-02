@@ -40,6 +40,8 @@ trait PageEventObj extends js.Object {
   var metrics: puppeteerLib.Anon_Metrics
   /** Emitted when an uncaught exception happens within the page. */
   var pageerror: nodeLib.Error
+  /** Emitted when the page opens a new tab or window. */
+  var popup: Page
   /**
     * Emitted when a page issues a request. The request object is read-only.
     * In order to intercept and mutate requests, see page.setRequestInterceptionEnabled.

@@ -1,0 +1,24 @@
+package typings
+package atStorybookChannelsLib.atStorybookChannelsMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Channel extends js.Object {
+  def addListener(`type`: atStorybookChannelsLib.EventName, listener: atStorybookChannelsLib.Listener): scala.Unit
+  def addPeerListener(`type`: atStorybookChannelsLib.EventName, listener: atStorybookChannelsLib.Listener): scala.Unit
+  def emit(
+    `type`: atStorybookChannelsLib.EventName,
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
+  ): scala.Unit
+  def eventNames(): js.Array[atStorybookChannelsLib.EventName]
+  def listenerCount(`type`: atStorybookChannelsLib.EventName): scala.Double
+  def listeners(`type`: atStorybookChannelsLib.EventName): js.Array[atStorybookChannelsLib.Listener]
+  def on(`type`: atStorybookChannelsLib.EventName, listener: atStorybookChannelsLib.Listener): scala.Unit
+  def once(`type`: atStorybookChannelsLib.EventName, listener: atStorybookChannelsLib.Listener): scala.Unit
+  def prependListener(`type`: atStorybookChannelsLib.EventName, listener: atStorybookChannelsLib.Listener): scala.Unit
+  def removeAllListeners(`type`: atStorybookChannelsLib.EventName): scala.Unit
+  def removeListener(`type`: atStorybookChannelsLib.EventName, listener: atStorybookChannelsLib.Listener): scala.Unit
+}
+

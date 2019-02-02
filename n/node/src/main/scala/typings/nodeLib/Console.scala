@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// This needs to be global to avoid TS2403 in case lib.dom.d.ts is present in the same build
 @js.native
 trait Console extends js.Object {
   var Console: nodeLib.NodeJSNs.ConsoleConstructor = js.native

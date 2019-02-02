@@ -136,9 +136,6 @@ object xtermLibStrings {
   sealed trait IDBVersionChangeEvent extends js.Object
   
   @js.native
-  sealed trait JsArray extends js.Object
-  
-  @js.native
   sealed trait KeyboardEvent extends js.Object
   
   @js.native
@@ -386,9 +383,6 @@ object xtermLibStrings {
   
   @js.native
   sealed trait TransitionEvent extends js.Object
-  
-  @js.native
-  sealed trait TypedArray extends js.Object
   
   @js.native
   sealed trait UIEvent extends js.Object
@@ -2713,7 +2707,6 @@ object xtermLibStrings {
   def HRTF: HRTF = "HRTF".asInstanceOf[HRTF]
   def HashChangeEvent: HashChangeEvent = "HashChangeEvent".asInstanceOf[HashChangeEvent]
   def IDBVersionChangeEvent: IDBVersionChangeEvent = "IDBVersionChangeEvent".asInstanceOf[IDBVersionChangeEvent]
-  def JsArray: JsArray = "JsArray".asInstanceOf[JsArray]
   def KeyboardEvent: KeyboardEvent = "KeyboardEvent".asInstanceOf[KeyboardEvent]
   def ListeningStateChangedEvent: ListeningStateChangedEvent = "ListeningStateChangedEvent".asInstanceOf[ListeningStateChangedEvent]
   def MSCandidateWindowHide: MSCandidateWindowHide = "MSCandidateWindowHide".asInstanceOf[MSCandidateWindowHide]
@@ -2797,7 +2790,6 @@ object xtermLibStrings {
   def TouchEvent: TouchEvent = "TouchEvent".asInstanceOf[TouchEvent]
   def TrackEvent: TrackEvent = "TrackEvent".asInstanceOf[TrackEvent]
   def TransitionEvent: TransitionEvent = "TransitionEvent".asInstanceOf[TransitionEvent]
-  def TypedArray: TypedArray = "TypedArray".asInstanceOf[TypedArray]
   def UIEvent: UIEvent = "UIEvent".asInstanceOf[UIEvent]
   def UIEvents: UIEvents = "UIEvents".asInstanceOf[UIEvents]
   def USB: USB = "USB".asInstanceOf[USB]

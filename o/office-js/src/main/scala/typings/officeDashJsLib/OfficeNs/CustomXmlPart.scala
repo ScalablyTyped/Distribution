@@ -73,8 +73,6 @@ trait CustomXmlPart extends js.Object {
   /**
     * Deletes the Custom XML Part.
     *
-    * @remarks
-    *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
@@ -87,8 +85,6 @@ trait CustomXmlPart extends js.Object {
   ): scala.Unit = js.native
   /**
     * Asynchronously gets any CustomXmlNodes in this custom XML part which match the specified XPath.
-    *
-    * @remarks
     *
     * @param xPath An XPath expression that specifies the nodes you want returned. Required.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -109,8 +105,6 @@ trait CustomXmlPart extends js.Object {
   /**
     * Asynchronously gets the XML inside this custom XML part.
     *
-    * @remarks
-    *
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     *                  The `value` property of the result is a string that contains the XML of the referenced CustomXmlPart object.
@@ -124,8 +118,6 @@ trait CustomXmlPart extends js.Object {
   ): scala.Unit = js.native
   /**
     * Removes an event handler for the specified event type.
-    *
-    * @remarks
     *
     * @param eventType Specifies the type of event to remove. For a CustomXmlPart object, the eventType parameter can be specified as 
     *                  `Office.EventType.NodeDeleted`, `Office.EventType.NodeInserted`, and `Office.EventType.NodeReplaced`.

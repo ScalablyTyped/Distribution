@@ -29,6 +29,8 @@ trait Page
   def bringToFront(): js.Promise[scala.Unit] = js.native
   /** Get the browser the page belongs to. */
   def browser(): Browser = js.native
+  /** Get the browser context that the page belongs to. */
+  def browserContext(): BrowserContext = js.native
   /** Closes the current page. */
   def close(): js.Promise[scala.Unit] = js.native
   def close(options: PageCloseOptions): js.Promise[scala.Unit] = js.native
@@ -213,6 +215,18 @@ trait Page
   def on_pageerror(
     eventName: puppeteerLib.puppeteerLibStrings.pageerror,
     handler: js.Function2[/* e */ nodeLib.Error, /* repeated */ js.Any, scala.Unit]
+  ): this.type = js.native
+  /**
+    * Adds the listener function to the end of the listeners array for the event named `eventName`.
+    * No checks are made to see if the listener has already been added. Multiple calls passing the same combination of
+    * `eventName` and listener will result in the listener being added, and called, multiple times.
+    * @param event The name of the event.
+    * @param handler The callback function.
+    */
+  @JSName("on")
+  def on_popup(
+    eventName: puppeteerLib.puppeteerLibStrings.popup,
+    handler: js.Function2[/* e */ this.type, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   /**
     * Adds the listener function to the end of the listeners array for the event named `eventName`.
@@ -414,6 +428,17 @@ trait Page
     * @param handler The callback function.
     */
   @JSName("once")
+  def once_popup(
+    eventName: puppeteerLib.puppeteerLibStrings.popup,
+    handler: js.Function2[/* e */ this.type, /* repeated */ js.Any, scala.Unit]
+  ): this.type = js.native
+  /**
+    * Adds a one time listener function for the event named `eventName`.
+    * The next time `eventName` is triggered, this listener is removed and then invoked.
+    * @param event The name of the event.
+    * @param handler The callback function.
+    */
+  @JSName("once")
   def once_request(
     eventName: puppeteerLib.puppeteerLibStrings.request,
     handler: js.Function2[/* e */ Request, /* repeated */ js.Any, scala.Unit]
@@ -526,6 +551,24 @@ trait Page
     * - `page.waitForNavigation`
     */
   def setDefaultNavigationTimeout(timeout: scala.Double): scala.Unit = js.native
+  /**
+    * This setting will change the default maximum time for the following methods and related shortcuts:
+    * - `page.goBack`
+    * - `page.goForward`
+    * - `page.goto`
+    * - `page.reload`
+    * - `page.setContent`
+    * - `page.waitFor`
+    * - `page.waitForFunction`
+    * - `page.waitForNavigation`
+    * - `page.waitForRequest`
+    * - `page.waitForResponse`
+    * - `page.waitForSelector`
+    * - `page.waitForXPath`
+    *
+    * NOTE page.setDefaultNavigationTimeout takes priority over page.setDefaultTimeout
+    */
+  def setDefaultTimeout(timeout: scala.Double): scala.Unit = js.native
   /**
     * The extra HTTP headers will be sent with every request the page initiates.
     * @param headers An object containing additional http headers to be sent with every request. All header values must be strings.

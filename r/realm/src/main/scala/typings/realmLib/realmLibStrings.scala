@@ -58,6 +58,9 @@ object realmLibStrings {
   sealed trait any extends js.Object
   
   @js.native
+  sealed trait available extends js.Object
+  
+  @js.native
   sealed trait bool extends js.Object
   
   @js.native
@@ -74,6 +77,9 @@ object realmLibStrings {
   
   @js.native
   sealed trait debug extends js.Object
+  
+  @js.native
+  sealed trait delete extends js.Object
   
   @js.native
   sealed trait detail extends js.Object
@@ -164,12 +170,14 @@ object realmLibStrings {
   def adminToken: adminToken = "adminToken".asInstanceOf[adminToken]
   def all: all = "all".asInstanceOf[all]
   def any: any = "any".asInstanceOf[any]
+  def available: available = "available".asInstanceOf[available]
   def bool: bool = "bool".asInstanceOf[bool]
   def change: change = "change".asInstanceOf[change]
   def currentUser: currentUser = "currentUser".asInstanceOf[currentUser]
   def data: data = "data".asInstanceOf[data]
   def date: date = "date".asInstanceOf[date]
   def debug: debug = "debug".asInstanceOf[debug]
+  def delete: delete = "delete".asInstanceOf[delete]
   def detail: detail = "detail".asInstanceOf[detail]
   def double: double = "double".asInstanceOf[double]
   def download: download = "download".asInstanceOf[download]

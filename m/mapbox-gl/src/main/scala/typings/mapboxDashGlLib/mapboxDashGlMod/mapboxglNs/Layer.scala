@@ -19,9 +19,7 @@ trait Layer extends js.Object {
     BackgroundPaint | FillPaint | FillExtrusionPaint | LinePaint | SymbolPaint | RasterPaint | CirclePaint | HeatmapPaint | HillshadePaint
   ] = js.undefined
   var ref: js.UndefOr[java.lang.String] = js.undefined
-  var source: js.UndefOr[
-    java.lang.String | VectorSource | RasterSource | RasterDemSource | GeoJSONSource | ImageSource | VideoSource | GeoJSONSourceRaw
-  ] = js.undefined
+  var source: js.UndefOr[java.lang.String | AnySourceData] = js.undefined
   var `source-layer`: js.UndefOr[java.lang.String] = js.undefined
   var `type`: js.UndefOr[
     mapboxDashGlLib.mapboxDashGlLibStrings.fill | mapboxDashGlLib.mapboxDashGlLibStrings.line | mapboxDashGlLib.mapboxDashGlLibStrings.symbol | mapboxDashGlLib.mapboxDashGlLibStrings.circle | mapboxDashGlLib.mapboxDashGlLibStrings.`fill-extrusion` | mapboxDashGlLib.mapboxDashGlLibStrings.raster | mapboxDashGlLib.mapboxDashGlLibStrings.background | mapboxDashGlLib.mapboxDashGlLibStrings.heatmap | mapboxDashGlLib.mapboxDashGlLibStrings.hillshade

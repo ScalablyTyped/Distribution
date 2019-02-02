@@ -280,6 +280,9 @@ object puppeteerLibStrings {
   sealed trait png extends js.Object
   
   @js.native
+  sealed trait popup extends js.Object
+  
+  @js.native
   sealed trait print extends js.Object
   
   @js.native
@@ -460,6 +463,7 @@ object puppeteerLibStrings {
   def pageerror: pageerror = "pageerror".asInstanceOf[pageerror]
   def `payment-handler`: `payment-handler` = "payment-handler".asInstanceOf[`payment-handler`]
   def png: png = "png".asInstanceOf[png]
+  def popup: popup = "popup".asInstanceOf[popup]
   def print: print = "print".asInstanceOf[print]
   def profile: profile = "profile".asInstanceOf[profile]
   def profileEnd: profileEnd = "profileEnd".asInstanceOf[profileEnd]

@@ -15,17 +15,17 @@ trait SybaseConnection extends js.Object {
   def exec(
     query: java.lang.String,
     cb: js.Function2[/* err */ js.UndefOr[stdLib.Error], /* result */ js.Any, scala.Unit]
-  ): js.Any = js.native
+  ): scala.Unit = js.native
   def exec(
     query: java.lang.String,
     placeholders: js.Array[_],
     cb: js.Function2[/* err */ js.UndefOr[stdLib.Error], /* result */ js.Any, scala.Unit]
-  ): js.Any = js.native
+  ): scala.Unit = js.native
   def prepare(query: java.lang.String): Statement = js.native
   def prepare(
     query: java.lang.String,
     cb: js.Function2[/* err */ js.UndefOr[stdLib.Error], /* stmt */ Statement, scala.Unit]
-  ): js.Any = js.native
+  ): scala.Unit = js.native
   def rollback(cb: js.Function1[/* err */ js.UndefOr[stdLib.Error], scala.Unit]): scala.Unit = js.native
 }
 

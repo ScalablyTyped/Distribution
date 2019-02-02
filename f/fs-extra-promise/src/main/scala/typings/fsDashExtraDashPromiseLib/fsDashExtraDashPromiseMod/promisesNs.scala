@@ -156,8 +156,8 @@ object promisesNs extends js.Object {
     * Generates six random characters to be appended behind a required `prefix` to create a unique temporary directory.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
-  def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
+  def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
+  def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
   def mkdtemp(prefix: java.lang.String, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
   def mkdtemp(prefix: java.lang.String, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
   @JSName("mkdtemp")
@@ -266,8 +266,8 @@ object promisesNs extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[js.Array[nodeLib.Buffer]] = js.native
-  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[js.Array[java.lang.String]] = js.native
+  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): js.Promise[js.Array[nodeLib.Buffer]] = js.native
+  def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
   def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[js.Array[java.lang.String] | js.Array[nodeLib.Buffer]] = js.native
   def readdir(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[js.Array[java.lang.String]] = js.native
   @JSName("readdir")
@@ -287,8 +287,8 @@ object promisesNs extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
-  def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
+  def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
+  def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
   def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
   def readlink(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
   @JSName("readlink")
@@ -308,8 +308,8 @@ object promisesNs extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
-  def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
+  def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
+  def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
   def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
   def realpath(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
   @JSName("realpath")

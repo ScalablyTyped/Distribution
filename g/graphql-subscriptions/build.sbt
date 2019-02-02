@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-subscriptions"
-version := "1.0.0-f74b3b"
+version := "1.0.0-6c3dc7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20190107Z-5c65a8",
   "org.scalablytyped" %%% "iterall" % "1.2.2-4373bf",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
   "org.scalablytyped" %%% "std" % "3.3.1-6e0314")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

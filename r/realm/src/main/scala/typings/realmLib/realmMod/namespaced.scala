@@ -28,6 +28,10 @@ object namespaced extends js.Object {
   def automaticSyncConfiguration(): java.lang.String = js.native
   def automaticSyncConfiguration(user: realmLib.RealmNs.SyncNs.User): java.lang.String = js.native
   /**
+    * Copy all bundled Realm files to app's default file folder.
+    */
+  def copyBundledRealmFiles(): scala.Unit = js.native
+  /**
     * @param {Realm.ObjectSchema} object schema describing the object that should be created.
     * @returns {T}
     */

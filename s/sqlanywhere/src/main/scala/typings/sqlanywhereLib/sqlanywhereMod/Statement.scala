@@ -12,7 +12,7 @@ trait Statement extends js.Object {
   def exec(
     args: js.Array[_],
     cb: js.Function2[/* err */ js.UndefOr[stdLib.Error], /* rows */ js.Array[_], scala.Unit]
-  ): js.Any = js.native
+  ): scala.Unit = js.native
   def getMoreResults(): js.Array[_] = js.native
 }
 

@@ -230,34 +230,44 @@ object ^ extends js.Object {
     * `useCallback` will return a memoized version of the callback that only changes if one of the `inputs`
     * has changed.
     *
-    * @version experimental
+    * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#usecallback
     */
   // TODO (TypeScript 3.0): <T extends (...args: never[]) => unknown>
-  def useCallback[T /* <: js.Function1[/* repeated */ js.Any, _] */](callback: T, inputs: reactLib.reactMod.ReactNs.InputIdentityList): T = js.native
+  def useCallback[T /* <: js.Function1[/* repeated */ js.Any, _] */](callback: T, deps: reactLib.reactMod.ReactNs.DependencyList): T = js.native
   // This will technically work if you give a Consumer<T> or Provider<T> but it's deprecated and warns
   /**
     * Accepts a context object (the value returned from `React.createContext`) and returns the current
     * context value, as given by the nearest context provider for the given context.
     *
-    * @version experimental
+    * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#usecontext
     */
   def useContext[T](context: reactLib.reactMod.ReactNs.Context[T]): T = js.native
   /**
+    * `useDebugValue` can be used to display a label for custom hooks in React DevTools.
+    *
+    * NOTE: We don’t recommend adding debug values to every custom hook.
+    * It’s most valuable for custom hooks that are part of shared libraries.
+    *
+    * @version 16.8.0
+    * @see https://reactjs.org/docs/hooks-reference.html#usedebugvalue
+    */
+  // the name of the custom hook is itself derived from the function name at runtime:
+  // it's just the function name without the "use" prefix.
+  def useDebugValue[T](value: T): scala.Unit = js.native
+  def useDebugValue[T](value: T, format: js.Function1[/* value */ T, _]): scala.Unit = js.native
+  /**
     * Accepts a function that contains imperative, possibly effectful code.
     *
     * @param effect Imperative function that can return a cleanup function
-    * @param inputs If present, effect will only activate if the values in the list change.
+    * @param deps If present, effect will only activate if the values in the list change.
     *
-    * @version experimental
+    * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#useeffect
     */
   def useEffect(effect: reactLib.reactMod.ReactNs.EffectCallback): scala.Unit = js.native
-  def useEffect(
-    effect: reactLib.reactMod.ReactNs.EffectCallback,
-    inputs: reactLib.reactMod.ReactNs.InputIdentityList
-  ): scala.Unit = js.native
+  def useEffect(effect: reactLib.reactMod.ReactNs.EffectCallback, deps: reactLib.reactMod.ReactNs.DependencyList): scala.Unit = js.native
   // NOTE: this does not accept strings, but this will have to be fixed by removing strings from type Ref<T>
   /**
     * `useImperativeHandle` customizes the instance value that is exposed to parent components when using
@@ -265,14 +275,14 @@ object ^ extends js.Object {
     *
     * `useImperativeHandle` should be used with `React.forwardRef`.
     *
-    * @version experimental
+    * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#useimperativehandle
     */
   def useImperativeHandle[T, R /* <: T */](ref: reactLib.reactMod.ReactNs.Ref[T] | js.UndefOr[scala.Nothing], init: js.Function0[R]): scala.Unit = js.native
   def useImperativeHandle[T, R /* <: T */](
     ref: reactLib.reactMod.ReactNs.Ref[T] | js.UndefOr[scala.Nothing],
     init: js.Function0[R],
-    inputs: reactLib.reactMod.ReactNs.InputIdentityList
+    deps: reactLib.reactMod.ReactNs.DependencyList
   ): scala.Unit = js.native
   /**
     * The signature is identical to `useEffect`, but it fires synchronously after all DOM mutations.
@@ -284,16 +294,13 @@ object ^ extends js.Object {
     * If you’re migrating code from a class component, `useLayoutEffect` fires in the same phase as
     * `componentDidMount` and `componentDidUpdate`.
     *
-    * @version experimental
+    * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#uselayouteffect
     */
   def useLayoutEffect(effect: reactLib.reactMod.ReactNs.EffectCallback): scala.Unit = js.native
-  def useLayoutEffect(
-    effect: reactLib.reactMod.ReactNs.EffectCallback,
-    inputs: reactLib.reactMod.ReactNs.InputIdentityList
-  ): scala.Unit = js.native
+  def useLayoutEffect(effect: reactLib.reactMod.ReactNs.EffectCallback, deps: reactLib.reactMod.ReactNs.DependencyList): scala.Unit = js.native
   /**
-    * `useMemo` will only recompute the memoized value when one of the `inputs` has changed.
+    * `useMemo` will only recompute the memoized value when one of the `deps` has changed.
     *
     * Usage note: if calling `useMemo` with a referentially stable function, also give it as the input in
     * the second argument.
@@ -307,10 +314,10 @@ object ^ extends js.Object {
     * }
     * ```
     *
-    * @version experimental
+    * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#usememo
     */
-  def useMemo[T](factory: js.Function0[T], inputs: reactLib.reactMod.ReactNs.InputIdentityList): T = js.native
+  def useMemo[T](factory: js.Function0[T], deps: reactLib.reactMod.ReactNs.DependencyList): T = js.native
   /**
     * An alternative to `useState`.
     *
@@ -318,11 +325,44 @@ object ^ extends js.Object {
     * multiple sub-values. It also lets you optimize performance for components that trigger deep
     * updates because you can pass `dispatch` down instead of callbacks.
     *
-    * @version experimental
+    * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#usereducer
     */
-  def useReducer[S, A](reducer: reactLib.reactMod.ReactNs.Reducer[S, A], initialState: S): js.Tuple2[S, reactLib.reactMod.ReactNs.Dispatch[A]] = js.native
-  def useReducer[S, A](reducer: reactLib.reactMod.ReactNs.Reducer[S, A], initialState: S, initialAction: A): js.Tuple2[S, reactLib.reactMod.ReactNs.Dispatch[A]] = js.native
+  // I'm not sure if I keep this 2-ary or if I make it (2,3)-ary; it's currently (2,3)-ary.
+  // The Flow types do have an overload for 3-ary invocation with undefined initializer.
+  // NOTE: the documentation or any alphas aren't updated, this is current for master.
+  // NOTE 2: without the ReducerState indirection, TypeScript would reduce S to be the most common
+  // supertype between the reducer's return type and the initialState (or the initializer's return type),
+  // which would prevent autocompletion from ever working.
+  def useReducer[R /* <: reactLib.reactMod.ReactNs.Reducer[_, _] */](reducer: R, initialState: reactLib.reactMod.ReactNs.ReducerState[R]): js.Tuple2[
+    reactLib.reactMod.ReactNs.ReducerState[R], 
+    reactLib.reactMod.ReactNs.Dispatch[reactLib.reactMod.ReactNs.ReducerAction[R]]
+  ] = js.native
+  /**
+    * An alternative to `useState`.
+    *
+    * `useReducer` is usually preferable to `useState` when you have complex state logic that involves
+    * multiple sub-values. It also lets you optimize performance for components that trigger deep
+    * updates because you can pass `dispatch` down instead of callbacks.
+    *
+    * @version 16.8.0
+    * @see https://reactjs.org/docs/hooks-reference.html#usereducer
+    */
+  // overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
+  // If "I" matches ReducerState<R> exactly then the last overload will allow initializer to be ommitted.
+  // the last overload effectively behaves as if the identity function (x => x) is the initializer.
+  // overload for free "I"; all goes as long as initializer converts it into "ReducerState<R>".
+  def useReducer[R /* <: reactLib.reactMod.ReactNs.Reducer[_, _] */, I](
+    reducer: R,
+    initializerArg: (I with reactLib.reactMod.ReactNs.ReducerState[R]) | I,
+    initializer: js.Function1[
+      (/* arg */ I with reactLib.reactMod.ReactNs.ReducerState[R]) | (/* arg */ I), 
+      reactLib.reactMod.ReactNs.ReducerState[R]
+    ]
+  ): js.Tuple2[
+    reactLib.reactMod.ReactNs.ReducerState[R], 
+    reactLib.reactMod.ReactNs.Dispatch[reactLib.reactMod.ReactNs.ReducerAction[R]]
+  ] = js.native
   def useRef[T](): reactLib.reactMod.ReactNs.RefObject[T] = js.native
   // convenience overload for refs given as a ref prop as they typically start with a null value
   /**
@@ -335,7 +375,7 @@ object ^ extends js.Object {
     * Usage note: if you need the result of useRef to be directly mutable, include `| null` in the type
     * of the generic argument.
     *
-    * @version experimental
+    * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#useref
     */
   // TODO (TypeScript 3.0): <T extends unknown>
@@ -347,7 +387,7 @@ object ^ extends js.Object {
     * Note that `useRef()` is useful for more than the `ref` attribute. It’s handy for keeping any mutable
     * value around similar to how you’d use instance fields in classes.
     *
-    * @version experimental
+    * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#useref
     */
   // TODO (TypeScript 3.0): <T extends unknown>
@@ -356,7 +396,7 @@ object ^ extends js.Object {
   /**
     * Returns a stateful value, and a function to update it.
     *
-    * @version experimental
+    * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#usestate
     */
   def useState[S](initialState: S): js.Tuple2[S, reactLib.reactMod.ReactNs.Dispatch[reactLib.reactMod.ReactNs.SetStateAction[S]]] = js.native

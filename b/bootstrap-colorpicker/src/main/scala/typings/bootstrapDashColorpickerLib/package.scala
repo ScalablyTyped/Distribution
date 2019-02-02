@@ -1,0 +1,11 @@
+package typings
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+package object bootstrapDashColorpickerLib {
+  type ColorFormat = bootstrapDashColorpickerLib.bootstrapDashColorpickerLibStrings.hex | bootstrapDashColorpickerLib.bootstrapDashColorpickerLibStrings.rgb | bootstrapDashColorpickerLib.bootstrapDashColorpickerLibStrings.rgba
+  type ColorPickerAlignOptions = bootstrapDashColorpickerLib.bootstrapDashColorpickerLibStrings.right | bootstrapDashColorpickerLib.bootstrapDashColorpickerLibStrings.left
+  type ColorPickerEvents = bootstrapDashColorpickerLib.bootstrapDashColorpickerLibStrings.create | bootstrapDashColorpickerLib.bootstrapDashColorpickerLibStrings.showPicker | bootstrapDashColorpickerLib.bootstrapDashColorpickerLibStrings.hidePicker | bootstrapDashColorpickerLib.bootstrapDashColorpickerLibStrings.changeColor | bootstrapDashColorpickerLib.bootstrapDashColorpickerLibStrings.disable | bootstrapDashColorpickerLib.bootstrapDashColorpickerLibStrings.enable | bootstrapDashColorpickerLib.bootstrapDashColorpickerLibStrings.destroy
+}

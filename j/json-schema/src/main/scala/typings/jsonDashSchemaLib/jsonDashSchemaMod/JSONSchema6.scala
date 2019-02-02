@@ -11,9 +11,7 @@ trait JSONSchema6 extends js.Object {
   @JSName("$ref")
   var $ref: js.UndefOr[java.lang.String] = js.undefined
   @JSName("$schema")
-  var $schema: js.UndefOr[
-    jsonDashSchemaLib.jsonDashSchemaLibStrings.`http://json-schemaDOTorg/schema#` | jsonDashSchemaLib.jsonDashSchemaLibStrings.`http://json-schemaDOTorg/hyper-schema#` | jsonDashSchemaLib.jsonDashSchemaLibStrings.`http://json-schemaDOTorg/draft-06/schema#` | jsonDashSchemaLib.jsonDashSchemaLibStrings.`http://json-schemaDOTorg/draft-06/hyper-schema#`
-  ] = js.undefined
+  var $schema: js.UndefOr[JSONSchema6Version] = js.undefined
   /**
     * This keyword determines how child instances validate for arrays, and does not directly validate the immediate instance itself.
     * If "items" is an array of schemas, validation succeeds if every instance element

@@ -19,8 +19,8 @@ trait Anon_BufferCallback extends js.Object {
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
     * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
     */
-  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding_1560675869): js.Promise[nodeLib.Buffer] = js.native
-  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncodingNull): js.Promise[java.lang.String] = js.native
+  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_BufferEncoding): js.Promise[nodeLib.Buffer] = js.native
+  def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingBufferEncoding): js.Promise[java.lang.String] = js.native
   def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_EncodingNull): js.Promise[java.lang.String | nodeLib.Buffer] = js.native
   def `__promisify__`(path: nodeLib.fsMod.PathLike, options: nodeLib.BufferEncoding): js.Promise[java.lang.String] = js.native
   @JSName("__promisify__")
@@ -53,7 +53,7 @@ trait Anon_BufferCallback extends js.Object {
   ): scala.Unit = js.native
   def native(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_BufferEncoding_1560675869,
+    options: nodeLib.Anon_BufferEncoding,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* resolvedPath */ nodeLib.Buffer, 
@@ -62,7 +62,7 @@ trait Anon_BufferCallback extends js.Object {
   ): scala.Unit = js.native
   def native(
     path: nodeLib.fsMod.PathLike,
-    options: nodeLib.Anon_EncodingBufferEncodingNull,
+    options: nodeLib.Anon_EncodingBufferEncoding,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
       /* resolvedPath */ java.lang.String, 

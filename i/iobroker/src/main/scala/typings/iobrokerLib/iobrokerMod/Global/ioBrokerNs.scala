@@ -288,39 +288,39 @@ object ioBrokerNs extends js.Object {
       callback: SetObjectCallback
     ): scala.Unit = js.native
     /** Creates an object with type channel. It must be located under a device */
-    def createChannelAsync(parentDevice: java.lang.String, channelName: java.lang.String): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
-    def createChannelAsync(parentDevice: java.lang.String, channelName: java.lang.String, roleOrCommon: java.lang.String): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def createChannelAsync(parentDevice: java.lang.String, channelName: java.lang.String): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def createChannelAsync(parentDevice: java.lang.String, channelName: java.lang.String, roleOrCommon: java.lang.String): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     def createChannelAsync(
       parentDevice: java.lang.String,
       channelName: java.lang.String,
       roleOrCommon: java.lang.String,
       native: stdLib.Record[java.lang.String, _]
-    ): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     def createChannelAsync(
       parentDevice: java.lang.String,
       channelName: java.lang.String,
       roleOrCommon: java.lang.String,
       native: stdLib.Record[java.lang.String, _],
       options: js.Any
-    ): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     def createChannelAsync(
       parentDevice: java.lang.String,
       channelName: java.lang.String,
       roleOrCommon: stdLib.Partial[ChannelCommon]
-    ): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     def createChannelAsync(
       parentDevice: java.lang.String,
       channelName: java.lang.String,
       roleOrCommon: stdLib.Partial[ChannelCommon],
       native: stdLib.Record[java.lang.String, _]
-    ): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     def createChannelAsync(
       parentDevice: java.lang.String,
       channelName: java.lang.String,
       roleOrCommon: stdLib.Partial[ChannelCommon],
       native: stdLib.Record[java.lang.String, _],
       options: js.Any
-    ): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     // ==============================
     // devices and channels
     // tslint:disable:unified-signatures
@@ -354,19 +354,19 @@ object ioBrokerNs extends js.Object {
       callback: SetObjectCallback
     ): scala.Unit = js.native
     /** creates an object with type device */
-    def createDeviceAsync(deviceName: java.lang.String): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
-    def createDeviceAsync(deviceName: java.lang.String, common: stdLib.Partial[ObjectCommon]): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def createDeviceAsync(deviceName: java.lang.String): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def createDeviceAsync(deviceName: java.lang.String, common: stdLib.Partial[ObjectCommon]): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     def createDeviceAsync(
       deviceName: java.lang.String,
       common: stdLib.Partial[ObjectCommon],
       native: stdLib.Record[java.lang.String, _]
-    ): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     def createDeviceAsync(
       deviceName: java.lang.String,
       common: stdLib.Partial[ObjectCommon],
       native: stdLib.Record[java.lang.String, _],
       options: js.Any
-    ): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     /**
       * Creates a state and the corresponding object. It must be located in a channel under a device
       */
@@ -470,20 +470,20 @@ object ioBrokerNs extends js.Object {
     /**
       * Creates a state and the corresponding object. It must be located in a channel under a device
       */
-    def createStateAsync(parentDevice: java.lang.String, parentChannel: java.lang.String, stateName: java.lang.String): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def createStateAsync(parentDevice: java.lang.String, parentChannel: java.lang.String, stateName: java.lang.String): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     def createStateAsync(
       parentDevice: java.lang.String,
       parentChannel: java.lang.String,
       stateName: java.lang.String,
       roleOrCommon: java.lang.String
-    ): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     def createStateAsync(
       parentDevice: java.lang.String,
       parentChannel: java.lang.String,
       stateName: java.lang.String,
       roleOrCommon: java.lang.String,
       native: stdLib.Record[java.lang.String, _]
-    ): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     def createStateAsync(
       parentDevice: java.lang.String,
       parentChannel: java.lang.String,
@@ -491,20 +491,20 @@ object ioBrokerNs extends js.Object {
       roleOrCommon: java.lang.String,
       native: stdLib.Record[java.lang.String, _],
       options: js.Any
-    ): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     def createStateAsync(
       parentDevice: java.lang.String,
       parentChannel: java.lang.String,
       stateName: java.lang.String,
       roleOrCommon: stdLib.Partial[StateCommon]
-    ): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     def createStateAsync(
       parentDevice: java.lang.String,
       parentChannel: java.lang.String,
       stateName: java.lang.String,
       roleOrCommon: stdLib.Partial[StateCommon],
       native: stdLib.Record[java.lang.String, _]
-    ): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     def createStateAsync(
       parentDevice: java.lang.String,
       parentChannel: java.lang.String,
@@ -512,7 +512,7 @@ object ioBrokerNs extends js.Object {
       roleOrCommon: stdLib.Partial[StateCommon],
       native: stdLib.Record[java.lang.String, _],
       options: js.Any
-    ): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    ): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     /**
       * Deletes a given file
       * @param adapterName - adapter name. If adapter name is null, default will be the name of the current adapter.
@@ -717,16 +717,16 @@ object ioBrokerNs extends js.Object {
     def extendForeignObject(id: java.lang.String, objPart: PartialObject, options: js.Any): scala.Unit = js.native
     def extendForeignObject(id: java.lang.String, objPart: PartialObject, options: js.Any, callback: SetObjectCallback): scala.Unit = js.native
     /** Extend an object (which might not belong to this adapter) and create it if it might not exist */
-    def extendForeignObjectAsync(id: java.lang.String, objPart: PartialObject): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
-    def extendForeignObjectAsync(id: java.lang.String, objPart: PartialObject, options: js.Any): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def extendForeignObjectAsync(id: java.lang.String, objPart: PartialObject): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def extendForeignObjectAsync(id: java.lang.String, objPart: PartialObject, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     /** Extend an object and create it if it might not exist */
     def extendObject(id: java.lang.String, objPart: PartialObject): scala.Unit = js.native
     def extendObject(id: java.lang.String, objPart: PartialObject, callback: SetObjectCallback): scala.Unit = js.native
     def extendObject(id: java.lang.String, objPart: PartialObject, options: js.Any): scala.Unit = js.native
     def extendObject(id: java.lang.String, objPart: PartialObject, options: js.Any, callback: SetObjectCallback): scala.Unit = js.native
     /** Extend an object and create it if it might not exist */
-    def extendObjectAsync(id: java.lang.String, objPart: PartialObject): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
-    def extendObjectAsync(id: java.lang.String, objPart: PartialObject, options: js.Any): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def extendObjectAsync(id: java.lang.String, objPart: PartialObject): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def extendObjectAsync(id: java.lang.String, objPart: PartialObject, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     /**
       * Finds an object by its ID or name
       * @param type - common.type of the state
@@ -845,8 +845,8 @@ object ioBrokerNs extends js.Object {
     def getEnums(enumList: EnumList, callback: GetEnumsCallback): scala.Unit = js.native
     def getEnums(enumList: EnumList, options: js.Any, callback: GetEnumsCallback): scala.Unit = js.native
     /** Returns the enum tree, filtered by the optional enum name */
-    def getEnumsAsync(enumList: EnumList): js.Promise[CallbackReturnTypeOf[GetEnumsCallback]] = js.native
-    def getEnumsAsync(enumList: EnumList, options: js.Any): js.Promise[CallbackReturnTypeOf[GetEnumsCallback]] = js.native
+    def getEnumsAsync(enumList: EnumList): js.Promise[NonNullCallbackReturnTypeOf[GetEnumsCallback]] = js.native
+    def getEnumsAsync(enumList: EnumList, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[GetEnumsCallback]] = js.native
     // ==============================
     // foreign objects
     /** Reads an object (which might not belong to this adapter) from the object db */
@@ -996,10 +996,10 @@ object ioBrokerNs extends js.Object {
       * @param adapterName - adapter name. If adapter name is null, default will be the name of the current adapter.
       * @param path - path to directory without adapter name. E.g. If you want to read "/vis.0/main/views.json", here must be "/main/views.json" and _adapter must be equal to "vis.0".
       */
-    def readDirAsync(adapterName: java.lang.String, path: java.lang.String): js.Promise[CallbackReturnTypeOf[ReadDirCallback]] = js.native
-    def readDirAsync(adapterName: java.lang.String, path: java.lang.String, options: js.Any): js.Promise[CallbackReturnTypeOf[ReadDirCallback]] = js.native
-    def readDirAsync(adapterName: scala.Null, path: java.lang.String): js.Promise[CallbackReturnTypeOf[ReadDirCallback]] = js.native
-    def readDirAsync(adapterName: scala.Null, path: java.lang.String, options: js.Any): js.Promise[CallbackReturnTypeOf[ReadDirCallback]] = js.native
+    def readDirAsync(adapterName: java.lang.String, path: java.lang.String): js.Promise[NonNullCallbackReturnTypeOf[ReadDirCallback]] = js.native
+    def readDirAsync(adapterName: java.lang.String, path: java.lang.String, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[ReadDirCallback]] = js.native
+    def readDirAsync(adapterName: scala.Null, path: java.lang.String): js.Promise[NonNullCallbackReturnTypeOf[ReadDirCallback]] = js.native
+    def readDirAsync(adapterName: scala.Null, path: java.lang.String, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[ReadDirCallback]] = js.native
     def readFile(adapterName: java.lang.String, path: java.lang.String, callback: ReadFileCallback): scala.Unit = js.native
     def readFile(adapterName: java.lang.String, path: java.lang.String, options: js.Any, callback: ReadFileCallback): scala.Unit = js.native
     def readFile(adapterName: scala.Null, path: java.lang.String, callback: ReadFileCallback): scala.Unit = js.native
@@ -1145,24 +1145,24 @@ object ioBrokerNs extends js.Object {
       * @param binary The data to be written
       * @param options (optional) Some internal options.
       */
-    def setBinaryStateAsync(id: java.lang.String, binary: nodeLib.Buffer): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setBinaryStateAsync(id: java.lang.String, binary: nodeLib.Buffer, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setBinaryStateAsync(id: java.lang.String, binary: nodeLib.Buffer): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setBinaryStateAsync(id: java.lang.String, binary: nodeLib.Buffer, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
     /** Creates or overwrites an object (which might not belong to this adapter) in the object db */
     def setForeignObject(id: java.lang.String, obj: SettableObject): scala.Unit = js.native
     def setForeignObject(id: java.lang.String, obj: SettableObject, callback: SetObjectCallback): scala.Unit = js.native
     def setForeignObject(id: java.lang.String, obj: SettableObject, options: js.Any): scala.Unit = js.native
     def setForeignObject(id: java.lang.String, obj: SettableObject, options: js.Any, callback: SetObjectCallback): scala.Unit = js.native
     /** Creates or overwrites an object (which might not belong to this adapter) in the object db */
-    def setForeignObjectAsync(id: java.lang.String, obj: SettableObject): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
-    def setForeignObjectAsync(id: java.lang.String, obj: SettableObject, options: js.Any): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def setForeignObjectAsync(id: java.lang.String, obj: SettableObject): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def setForeignObjectAsync(id: java.lang.String, obj: SettableObject, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     /** Creates an object (which might not belong to this adapter) in the object db. Existing objects are not overwritten. */
     def setForeignObjectNotExists(id: java.lang.String, obj: SettableObject): scala.Unit = js.native
     def setForeignObjectNotExists(id: java.lang.String, obj: SettableObject, callback: SetObjectCallback): scala.Unit = js.native
     def setForeignObjectNotExists(id: java.lang.String, obj: SettableObject, options: js.Any): scala.Unit = js.native
     def setForeignObjectNotExists(id: java.lang.String, obj: SettableObject, options: js.Any, callback: SetObjectCallback): scala.Unit = js.native
     /** Creates an object (which might not belong to this adapter) in the object db. Existing objects are not overwritten. */
-    def setForeignObjectNotExistsAsync(id: java.lang.String, obj: SettableObject): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
-    def setForeignObjectNotExistsAsync(id: java.lang.String, obj: SettableObject, options: js.Any): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def setForeignObjectNotExistsAsync(id: java.lang.String, obj: SettableObject): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def setForeignObjectNotExistsAsync(id: java.lang.String, obj: SettableObject, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     def setForeignState(id: java.lang.String, state: State): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: State, ack: scala.Boolean): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: State, ack: scala.Boolean, callback: SetStateCallback): scala.Unit = js.native
@@ -1234,27 +1234,27 @@ object ioBrokerNs extends js.Object {
     def setForeignState(id: java.lang.String, state: stdLib.Partial[State], callback: SetStateCallback): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: stdLib.Partial[State], options: js.Any): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: stdLib.Partial[State], options: js.Any, callback: SetStateCallback): scala.Unit = js.native
-    def setForeignStateAsync(id: java.lang.String, state: State): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: State, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: State, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: State, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: State): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: State, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: State, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: State, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
     /** Writes a value (which might not belong to this adapter) into the states DB. */
-    def setForeignStateAsync(id: java.lang.String, state: java.lang.String): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: java.lang.String, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: scala.Double): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: scala.Double, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: stdLib.Partial[State]): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setForeignStateAsync(id: java.lang.String, state: stdLib.Partial[State], options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: java.lang.String): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: java.lang.String, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: scala.Double): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: scala.Double, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: stdLib.Partial[State]): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setForeignStateAsync(id: java.lang.String, state: stdLib.Partial[State], options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
     def setForeignStateChanged(id: java.lang.String, state: State): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: State, ack: scala.Boolean): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: State, ack: scala.Boolean, callback: SetStateChangedCallback): scala.Unit = js.native
@@ -1341,43 +1341,43 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateChangedCallback
     ): scala.Unit = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: State): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: State, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: State, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: State, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: State): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: State, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: State, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: State, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
     /** Writes a value (which might not belong to this adapter) into the states DB only if it has changed. */
-    def setForeignStateChangedAsync(id: java.lang.String, state: java.lang.String): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: java.lang.String, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Double): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Double, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State]): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setForeignStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State], options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: java.lang.String): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: java.lang.String, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Double): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: scala.Double, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State]): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setForeignStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State], options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
     /** Creates or overwrites an object in the object db */
     def setObject(id: java.lang.String, obj: SettableObject): scala.Unit = js.native
     def setObject(id: java.lang.String, obj: SettableObject, callback: SetObjectCallback): scala.Unit = js.native
     def setObject(id: java.lang.String, obj: SettableObject, options: js.Any): scala.Unit = js.native
     def setObject(id: java.lang.String, obj: SettableObject, options: js.Any, callback: SetObjectCallback): scala.Unit = js.native
     /** Creates or overwrites an object in the object db */
-    def setObjectAsync(id: java.lang.String, obj: SettableObject): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
-    def setObjectAsync(id: java.lang.String, obj: SettableObject, options: js.Any): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def setObjectAsync(id: java.lang.String, obj: SettableObject): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def setObjectAsync(id: java.lang.String, obj: SettableObject, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     /** Creates an object in the object db. Existing objects are not overwritten. */
     def setObjectNotExists(id: java.lang.String, obj: SettableObject): scala.Unit = js.native
     def setObjectNotExists(id: java.lang.String, obj: SettableObject, callback: SetObjectCallback): scala.Unit = js.native
     def setObjectNotExists(id: java.lang.String, obj: SettableObject, options: js.Any): scala.Unit = js.native
     def setObjectNotExists(id: java.lang.String, obj: SettableObject, options: js.Any, callback: SetObjectCallback): scala.Unit = js.native
     /** Creates an object in the object db. Existing objects are not overwritten. */
-    def setObjectNotExistsAsync(id: java.lang.String, obj: SettableObject): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
-    def setObjectNotExistsAsync(id: java.lang.String, obj: SettableObject, options: js.Any): js.Promise[CallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def setObjectNotExistsAsync(id: java.lang.String, obj: SettableObject): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
+    def setObjectNotExistsAsync(id: java.lang.String, obj: SettableObject, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetObjectCallback]] = js.native
     /** Sets a new password for the given user */
     def setPassword(user: java.lang.String, password: java.lang.String): scala.Unit = js.native
     def setPassword(
@@ -1470,27 +1470,27 @@ object ioBrokerNs extends js.Object {
     def setState(id: java.lang.String, state: stdLib.Partial[State], callback: SetStateCallback): scala.Unit = js.native
     def setState(id: java.lang.String, state: stdLib.Partial[State], options: js.Any): scala.Unit = js.native
     def setState(id: java.lang.String, state: stdLib.Partial[State], options: js.Any, callback: SetStateCallback): scala.Unit = js.native
-    def setStateAsync(id: java.lang.String, state: State): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: State, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: State, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: State, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: State): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: State, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: State, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: State, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
     /** Writes a value into the states DB. */
-    def setStateAsync(id: java.lang.String, state: java.lang.String): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: java.lang.String, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: scala.Double): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: scala.Double, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: stdLib.Partial[State]): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
-    def setStateAsync(id: java.lang.String, state: stdLib.Partial[State], options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: java.lang.String): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: java.lang.String, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: scala.Double): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: scala.Double, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: stdLib.Partial[State]): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
+    def setStateAsync(id: java.lang.String, state: stdLib.Partial[State], options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateCallback]] = js.native
     def setStateChanged(id: java.lang.String, state: State): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: State, ack: scala.Boolean): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: State, ack: scala.Boolean, callback: SetStateChangedCallback): scala.Unit = js.native
@@ -1577,27 +1577,27 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateChangedCallback
     ): scala.Unit = js.native
-    def setStateChangedAsync(id: java.lang.String, state: State): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: State, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: State, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: State, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: State): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: State, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: State, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: State, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
     /** Writes a value into the states DB only if it has changed. */
-    def setStateChangedAsync(id: java.lang.String, state: java.lang.String): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: java.lang.String, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: scala.Double): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: scala.Double, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State]): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean, options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
-    def setStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State], options: js.Any): js.Promise[CallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: java.lang.String): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: java.lang.String, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: java.lang.String, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: scala.Double): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: scala.Double, ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: scala.Double, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State]): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean, options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
+    def setStateChangedAsync(id: java.lang.String, state: stdLib.Partial[State], options: js.Any): js.Promise[NonNullCallbackReturnTypeOf[SetStateChangedCallback]] = js.native
     /** Subscribe to changes of objects (which might not belong to this adapter) */
     def subscribeForeignObjects(pattern: java.lang.String): scala.Unit = js.native
     def subscribeForeignObjects(pattern: java.lang.String, options: js.Any): scala.Unit = js.native
@@ -2837,7 +2837,8 @@ object ioBrokerNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[iobrokerLib.iobrokerMod.Global.ioBrokerNs.StateQuality with scala.Double] = js.native
   }
   
-  type CallbackReturnTypeOf[T /* <: js.Function1[/* repeated */ js.Any, _] */] = stdLib.Exclude[SecondParameterOf[T], js.UndefOr[scala.Null]]
+  /** Infers the return type from a callback-style API and and leaves null and undefined in */
+  type CallbackReturnTypeOf[T /* <: js.Function1[/* repeated */ js.Any, _] */] = SecondParameterOf[T]
   type ChownFileCallback = js.Function3[
     /* err */ java.lang.String | scala.Null, 
     /* entries */ js.UndefOr[js.Array[ChownFileResult]], 
@@ -2959,6 +2960,8 @@ object ioBrokerNs extends js.Object {
   type MessageCallback = js.Function1[/* response */ js.UndefOr[Message], scala.Unit]
   type MessageHandler = js.Function1[/* obj */ Message, scala.Unit]
   type MessagePayload = java.lang.String | (stdLib.Record[java.lang.String, js.Any])
+  /** Infers the return type from a callback-style API and strips out null and undefined */
+  type NonNullCallbackReturnTypeOf[T /* <: js.Function1[/* repeated */ js.Any, _] */] = stdLib.Exclude[SecondParameterOf[T], js.UndefOr[scala.Null]]
   type Object = StateObject | ChannelObject | DeviceObject | OtherObject
   type ObjectChangeHandler = js.Function2[/* id */ java.lang.String, /* obj */ js.UndefOr[Object | scala.Null], scala.Unit]
   type ObjectType = iobrokerLib.iobrokerLibStrings.state | iobrokerLib.iobrokerLibStrings.channel | iobrokerLib.iobrokerLibStrings.device

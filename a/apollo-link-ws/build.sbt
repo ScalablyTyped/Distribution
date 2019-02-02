@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-link-ws"
-version := "1.0.12-de9bbc"
+version := "1.0.14-128c72"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,11 +13,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-ddf996",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20190107Z-5c65a8",
   "org.scalablytyped" %%% "iterall" % "1.2.2-4373bf",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
   "org.scalablytyped" %%% "std" % "3.3.1-6e0314",
-  "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.15-09887b",
+  "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.15-ec939c",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-607a2a",
-  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-b07b2e",
+  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-43e6d0",
   "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-0cbed1",
   "org.scalablytyped" %%% "zen-observable-ts" % "0.8.13-29c689")
 publishArtifact in packageDoc := false

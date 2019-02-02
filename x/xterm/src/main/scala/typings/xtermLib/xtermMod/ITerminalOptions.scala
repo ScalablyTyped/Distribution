@@ -58,16 +58,6 @@ trait ITerminalOptions extends js.Object {
     */
   var enableBold: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * (EXPERIMENTAL) Defines which implementation to use for buffer lines.
-    *
-    * - 'JsArray': The default/stable implementation.
-    * - 'TypedArray': The new experimental implementation based on TypedArrays that is expected to
-    *   significantly boost performance and memory consumption. Use at your own risk.
-    *
-    * @deprecated This option will be removed in the future.
-    */
-  var experimentalBufferLineImpl: js.UndefOr[xtermLib.xtermLibStrings.JsArray | xtermLib.xtermLibStrings.TypedArray] = js.undefined
-  /**
     * What character atlas implementation to use. The character atlas caches drawn characters,
     * speeding up rendering significantly. However, it can introduce some minor rendering
     * artifacts.

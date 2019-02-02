@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "raw-body"
-version := "2.3.3-cd4518"
+version := "2.3.3-79af0f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "bytes" % "3.0-dt-20180214Z-df6701",
   "org.scalablytyped" %%% "http-errors" % "1.6-dt-20180214Z-03ddc7",
-  "org.scalablytyped" %%% "iconv-lite" % "0.4.24-75fe1d",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
+  "org.scalablytyped" %%% "iconv-lite" % "0.4.24-cc83e9",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
   "org.scalablytyped" %%% "std" % "3.3.1-6e0314")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

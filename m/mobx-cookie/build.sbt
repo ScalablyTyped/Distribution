@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mobx-cookie"
-version := "2.0.1-26fe7d"
+version := "2.0.1-e091f7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "js-cookie" % "2.2-dt-20180830Z-96757c",
   "org.scalablytyped" %%% "mobx" % "5.8.0-beec45",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-92720c",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
   "org.scalablytyped" %%% "std" % "3.3.1-6e0314")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

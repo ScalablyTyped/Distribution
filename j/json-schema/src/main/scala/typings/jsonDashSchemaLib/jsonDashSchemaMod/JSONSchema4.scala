@@ -13,9 +13,7 @@ trait JSONSchema4
   @JSName("$ref")
   var $ref: js.UndefOr[java.lang.String] = js.undefined
   @JSName("$schema")
-  var $schema: js.UndefOr[
-    jsonDashSchemaLib.jsonDashSchemaLibStrings.`http://json-schemaDOTorg/schema#` | jsonDashSchemaLib.jsonDashSchemaLibStrings.`http://json-schemaDOTorg/hyper-schema#` | jsonDashSchemaLib.jsonDashSchemaLibStrings.`http://json-schemaDOTorg/draft-04/schema#` | jsonDashSchemaLib.jsonDashSchemaLibStrings.`http://json-schemaDOTorg/draft-04/hyper-schema#` | jsonDashSchemaLib.jsonDashSchemaLibStrings.`http://json-schemaDOTorg/draft-03/schema#` | jsonDashSchemaLib.jsonDashSchemaLibStrings.`http://json-schemaDOTorg/draft-03/hyper-schema#` | java.lang.String
-  ] = js.undefined
+  var $schema: js.UndefOr[JSONSchema4Version] = js.undefined
   /**
     * May only be defined when "items" is defined, and is a tuple of JSONSchemas.
     *

@@ -13,6 +13,7 @@ trait Configuration extends js.Object {
   var deleteRealmIfMigrationNeeded: js.UndefOr[scala.Boolean] = js.undefined
   var disableFormatUpgrade: js.UndefOr[scala.Boolean] = js.undefined
   var encryptionKey: js.UndefOr[stdLib.ArrayBuffer | stdLib.ArrayBufferView | stdLib.Int8Array] = js.undefined
+  var fifoFilesFallbackPath: js.UndefOr[java.lang.String] = js.undefined
   var inMemory: js.UndefOr[scala.Boolean] = js.undefined
   var migration: js.UndefOr[
     js.Function2[/* oldRealm */ realmLib.Realm, /* newRealm */ realmLib.Realm, scala.Unit]

@@ -13,7 +13,7 @@ trait Anon_AddListener extends js.Object {
   // TODO: cluster.schedulingPolicy
   val settings: nodeLib.clusterMod.ClusterSettings = js.native
   val worker: nodeLib.clusterMod.Worker = js.native
-  val workers: org.scalablytyped.runtime.StringDictionary[js.UndefOr[nodeLib.clusterMod.Worker]] = js.native
+  val workers: /* import warning: ImportType.apply Failed type conversion: {[index: string] : node.cluster.Worker | undefined, [index: string] : node.cluster.Worker | undefined} */ js.Any = js.native
   /**
     * events.EventEmitter
     *   1. disconnect

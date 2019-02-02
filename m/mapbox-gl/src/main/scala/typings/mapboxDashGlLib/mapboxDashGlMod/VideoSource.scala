@@ -14,7 +14,7 @@ class VideoSource ()
   override var `type`: mapboxDashGlLib.mapboxDashGlLibStrings.vector | mapboxDashGlLib.mapboxDashGlLibStrings.raster | mapboxDashGlLib.mapboxDashGlLibStrings.`raster-dem` | mapboxDashGlLib.mapboxDashGlLibStrings.geojson | mapboxDashGlLib.mapboxDashGlLibStrings.image | mapboxDashGlLib.mapboxDashGlLibStrings.video | mapboxDashGlLib.mapboxDashGlLibStrings.canvas = js.native
   /* CompleteClass */
   @JSName("type")
-  override var type_VideoSource: mapboxDashGlLib.mapboxDashGlLibStrings.video = js.native
+  override var type_VideoSourceRaw: mapboxDashGlLib.mapboxDashGlLibStrings.video = js.native
   /* CompleteClass */
   override def getVideo(): stdLib.HTMLVideoElement = js.native
   /* CompleteClass */

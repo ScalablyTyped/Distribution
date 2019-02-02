@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ApplyPatchesOptions extends js.Object {
+trait ApplyPatchesOptions extends ApplyPatchOptions {
   def complete(err: js.Any): scala.Unit
   def loadFile(
     index: ParsedDiff,

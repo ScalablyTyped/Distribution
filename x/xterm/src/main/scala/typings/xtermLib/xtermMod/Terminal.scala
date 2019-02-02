@@ -17,26 +17,30 @@ class Terminal ()
      with IDisposable {
   def this(options: ITerminalOptions) = this()
   /**
-    * The number of columns in the terminal's viewport.
+    * The number of columns in the terminal's viewport. Use
+    * `ITerminalOptions.cols` to set this in the constructor and
+    * `Terminal.resize` for when the terminal exists.
     */
-  var cols: scala.Double = js.native
+  val cols: scala.Double = js.native
   /**
     * The element containing the terminal.
     */
-  var element: xtermLib.HTMLElement = js.native
+  val element: xtermLib.HTMLElement = js.native
   /**
     * (EXPERIMENTAL) Get all markers registered against the buffer. If the alt
     * buffer is active this will always return [].
     */
-  var markers: js.Array[IMarker] = js.native
+  val markers: js.Array[IMarker] = js.native
   /**
-    * The number of rows in the terminal's viewport.
+    * The number of rows in the terminal's viewport. Use
+    * `ITerminalOptions.rows` to set this in the constructor and
+    * `Terminal.resize` for when the terminal exists.
     */
-  var rows: scala.Double = js.native
+  val rows: scala.Double = js.native
   /**
     * The textarea that accepts input for the terminal.
     */
-  var textarea: xtermLib.HTMLTextAreaElement = js.native
+  val textarea: xtermLib.HTMLTextAreaElement = js.native
   /**
     * (EXPERIMENTAL) Adds a handler for CSI escape sequences.
     * @param flag The flag should be one-character string, which specifies the
@@ -74,7 +78,7 @@ class Terminal ()
     * should be processed by the terminal and what keys should not.
     * @param customKeyEventHandler The custom KeyboardEvent handler to attach.
     * This is a function that takes a KeyboardEvent, allowing consumers to stop
-    * propogation and/or prevent the default action. The function returns
+    * propagation and/or prevent the default action. The function returns
     * whether the event should be processed by xterm.js.
     */
   def attachCustomKeyEventHandler(customKeyEventHandler: js.Function1[/* event */ xtermLib.KeyboardEvent, scala.Boolean]): scala.Unit = js.native
@@ -348,7 +352,9 @@ class Terminal ()
     */
   def reset(): scala.Unit = js.native
   /**
-    * Resizes the terminal.
+    * Resizes the terminal. It's best practice to debounce calls to resize,
+    * this will help ensure that the pty can respond to the resize event
+    * before another one occurs.
     * @param x The number of columns to resize to.
     * @param y The number of rows to resize to.
     */

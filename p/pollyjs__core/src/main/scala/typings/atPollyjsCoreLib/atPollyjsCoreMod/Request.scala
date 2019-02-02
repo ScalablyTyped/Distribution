@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Request extends js.Object {
   var body: js.Any
   var hash: java.lang.String
-  var headers: stdLib.Record[java.lang.String, java.lang.String]
+  var headers: stdLib.Record[java.lang.String, java.lang.String | js.Array[java.lang.String]]
   var hostname: java.lang.String
   var method: java.lang.String
   var params: js.Any

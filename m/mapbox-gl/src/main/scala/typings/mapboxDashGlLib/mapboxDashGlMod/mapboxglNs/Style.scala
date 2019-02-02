@@ -14,7 +14,7 @@ trait Style extends js.Object {
   var metadata: js.UndefOr[js.Any] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var pitch: js.UndefOr[scala.Double] = js.undefined
-  var sources: js.UndefOr[js.Any] = js.undefined
+  var sources: js.UndefOr[Sources] = js.undefined
   var sprite: js.UndefOr[java.lang.String] = js.undefined
   var transition: js.UndefOr[Transition] = js.undefined
   var version: scala.Double

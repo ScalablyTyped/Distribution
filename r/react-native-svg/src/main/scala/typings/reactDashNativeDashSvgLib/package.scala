@@ -18,6 +18,9 @@ package object reactDashNativeDashSvgLib {
   type ColumnMajorTransformMatrix = js.Array[scala.Double]
   // Common props
   type NumberProp = java.lang.String | scala.Double
+  // argb values inside range 0x00 to 0xff inclusive
+  // int32ARGBColor = 0xaarrggbb
+  type int32ARGBColor = scala.Double
   // rgba values inside range 0 to 1 inclusive
   // rgbaArray = [r, g, b, a]
   type rgbaArray = js.Array[scala.Double]

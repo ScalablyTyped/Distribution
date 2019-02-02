@@ -7,9 +7,12 @@ import scala.scalajs.js.annotation._
 
 package object mapboxglNs {
   type Anchor = mapboxDashGlLib.mapboxDashGlLibStrings.center | mapboxDashGlLib.mapboxDashGlLibStrings.left | mapboxDashGlLib.mapboxDashGlLibStrings.right | mapboxDashGlLib.mapboxDashGlLibStrings.top | mapboxDashGlLib.mapboxDashGlLibStrings.bottom | mapboxDashGlLib.mapboxDashGlLibStrings.`top-left` | mapboxDashGlLib.mapboxDashGlLibStrings.`top-right` | mapboxDashGlLib.mapboxDashGlLibStrings.`bottom-left` | mapboxDashGlLib.mapboxDashGlLibStrings.`bottom-right`
+  type AnySourceData = GeoJSONSourceRaw | VideoSourceRaw | ImageSourceRaw | CanvasSourceRaw | VectorSource | RasterSource | RasterDemSource
+  type AnySourceImpl = GeoJSONSource | VideoSource | ImageSource | CanvasSource | VectorSource | RasterSource | RasterDemSource
   type AttributionControl = Control
   type Control = Evented
-  type Expression = js.Array[js.Any]
+  type Expression = js.Array[ExpressionName | js.Any]
+  type ExpressionName = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 72 */ java.lang.String
   type FullscreenControl = Control
   type LngLatBoundsLike = LngLatBounds | (js.Tuple2[LngLatLike, LngLatLike]) | (js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double])
   type LngLatLike = LngLat | mapboxDashGlLib.Anon_Lat | mapboxDashGlLib.Anon_LatLon | (js.Tuple2[scala.Double, scala.Double])

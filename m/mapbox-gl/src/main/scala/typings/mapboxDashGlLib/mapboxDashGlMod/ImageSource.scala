@@ -14,7 +14,7 @@ class ImageSource ()
   override var `type`: mapboxDashGlLib.mapboxDashGlLibStrings.vector | mapboxDashGlLib.mapboxDashGlLibStrings.raster | mapboxDashGlLib.mapboxDashGlLibStrings.`raster-dem` | mapboxDashGlLib.mapboxDashGlLibStrings.geojson | mapboxDashGlLib.mapboxDashGlLibStrings.image | mapboxDashGlLib.mapboxDashGlLibStrings.video | mapboxDashGlLib.mapboxDashGlLibStrings.canvas = js.native
   /* CompleteClass */
   @JSName("type")
-  override var type_ImageSource: mapboxDashGlLib.mapboxDashGlLibStrings.image = js.native
+  override var type_ImageSourceRaw: mapboxDashGlLib.mapboxDashGlLibStrings.image = js.native
   /* CompleteClass */
   override def setCoordinates(coordinates: js.Array[js.Array[scala.Double]]): this.type = js.native
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sqlanywhere"
-version := "1.0-dt-20180830Z-9cc793"
+version := "1.0-dt-20190201Z-a8ecc2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

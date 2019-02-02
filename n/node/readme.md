@@ -1,4 +1,8 @@
 ```
+/**
+ * Async Hooks module: https://nodejs.org/api/async_hooks.html
+ */
+// This needs to be global to avoid TS2403 in case lib.dom.d.ts is present in the same build
 // Type definitions for Node.js 10.12
 // Project: http://nodejs.org/
 // Definitions by: Microsoft TypeScript <https://github.com/Microsoft>
@@ -35,7 +39,10 @@
 //                 Samuel Ainsworth <https://github.com/samuela>
 //                 Kyle Uehlein <https://github.com/kuehlein>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-/** inspector module types */
+/**
+ * Async Hooks module: https://nodejs.org/api/async_hooks.html
+ */
+// This needs to be global to avoid TS2403 in case lib.dom.d.ts is present in the same build
 // tslint:disable-next-line:dt-header
 // Type definitions for inspector
 // These definitions are auto-generated.
@@ -44,7 +51,6 @@
 /**
  * The inspector module provides an API for interacting with the V8 inspector.
  */
-// tslint:disable-next-line:no-single-declare-module
 // tslint:disable-next-line:dt-header
 // Type definitions for inspector
 // These definitions are auto-generated.
@@ -53,5 +59,4 @@
 /**
  * The inspector module provides an API for interacting with the V8 inspector.
  */
-// tslint:disable-next-line:no-single-declare-module
 ```

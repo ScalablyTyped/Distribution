@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("jsforce/api/chatter", "Request")
 @js.native
 class Request[T] protected ()
-  extends stdLib.Promise[T] {
+  extends stdLib.PromiseLike[T] {
   def this(chatter: Chatter, params: RequestParams) = this()
-  @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
-  val toStringTag_Request: jsforceLib.jsforceLibStrings.Promise = js.native
   def batchParams(): BatchRequestParams = js.native
+  def `finally`(): js.Promise[T] = js.native
+  def `finally`(onfinally: js.Function0[scala.Unit]): js.Promise[T] = js.native
   def promise(): js.Promise[T] = js.native
   def stream(): nodeLib.streamMod.Stream = js.native
   def thenCall(): jsforceLib.queryMod.Query[T] = js.native

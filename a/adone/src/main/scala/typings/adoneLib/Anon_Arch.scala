@@ -40,6 +40,6 @@ trait Anon_Arch extends js.Object {
   def `type`(): java.lang.String = js.native
   def uptime(): scala.Double = js.native
   def userInfo(): nodeLib.Anon_Gid = js.native
-  def userInfo(options: nodeLib.Anon_Encoding): nodeLib.Anon_Gid = js.native
+  def userInfo(options: nodeLib.Anon_EncodingString): nodeLib.Anon_Gid = js.native
 }
 
